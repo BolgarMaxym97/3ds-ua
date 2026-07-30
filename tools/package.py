@@ -31,7 +31,7 @@ README_TXT = """3DS UA — український інтерфейс для Nint
 Видаліть з SD-карти папку: luma/titles/0004003000009802
 Або переключіть мову консолі на будь-яку, крім English.
 
-Повна інструкція: https://github.com/<user>/3ds-ua
+Повна інструкція: https://github.com/BolgarMaxym97/3ds-ua
 """
 
 
