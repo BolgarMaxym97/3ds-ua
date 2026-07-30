@@ -1,0 +1,154 @@
+{
+  "dlp_top_u": {
+    "en": "Download Play",
+    "ua": "Гра по завантаженню"
+  },
+  "dlp_top_comm_u1": {
+    "en": "Connect with nearby systems to download\ndemos and play wireless multiplayer titles.",
+    "ua": "З'єднайтеся з консолями поруч, щоб завантажити\nдемоверсії та грати в бездротовому режимі."
+  },
+  "dlp_top_3ds_u": {
+    "en": "Nintendo 3DS Download Play",
+    "ua": "Гра по завантаженню Nintendo 3DS"
+  },
+  "dlp_top_comm": {
+    "en": "Which kind of title do\nyou want to download?",
+    "ua": "Яку програму ви хочете\nзавантажити?"
+  },
+  "dlp_top_home": {
+    "en": ": Return to HOME Menu",
+    "ua": ": назад до меню HOME"
+  },
+  "dlp_top_none": {
+    "en": "No software found.",
+    "ua": "Програм не знайдено.."
+  },
+  "dlp_top_cancel": {
+    "en": " Back",
+    "ua": " Назад"
+  },
+  "dlp_top_cancel_00": {
+    "en": "Search Again",
+    "ua": "Шукати знову"
+  },
+  "dlp_ngname": {
+    "en": "???",
+    "ua": ""
+  },
+  "dlp_dlg_no_connect": {
+    "en": "Wireless communication is\ncurrently disabled. {t:1.0:1400}\n　　　　　　　　　　　　　{/t:1.0}\nPlease push the wireless\nswitch to enable wireless\ncommunication.",
+    "ua": "Бездротовий зв'язок\nзараз вимкнено. {t:1.0:1400}\n　　　　　　　　　　　　　{/t:1.0}\nПосуньте перемикач,\nщоб увімкнути бездротовий\nзв'язок."
+  },
+  "dlp_dlg_search": {
+    "en": "Searching for titles\nto download...",
+    "ua": "Пошук програм\nдля завантаження…"
+  },
+  "dlp_ngname_u": {
+    "en": "???",
+    "ua": ""
+  },
+  "dlp_dlg_single0": {
+    "en": "Download this title?{t:1.0:1400}\n{/t:1.0}\n{t:1.0:5500}{t:0.3:3c3c3cff}You will be able to play it\nuntil you turn the system off.{t:0.3:000000ff}{/t:1.0}",
+    "ua": "Завантажити цю програму?{t:1.0:1400}\n{/t:1.0}\n{t:1.0:5500}{t:0.3:3c3c3cff}Ви зможете грати в неї,\nпоки не вимкнете консоль.{t:0.3:000000ff}{/t:1.0}"
+  },
+  "dlp_dlg_2b_cance": {
+    "en": "Cancel",
+    "ua": "Скасувати"
+  },
+  "dlp_dlg_2b_ok": {
+    "en": "OK",
+    "ua": "OK"
+  },
+  "dlp_dlg_1b_ok": {
+    "en": "OK",
+    "ua": "OK"
+  },
+  "dlp_dlg_single1": {
+    "en": "Downloading...",
+    "ua": "Завантаження…"
+  },
+  "dlp_dlg_1b_cance": {
+    "en": "Cancel",
+    "ua": "Скасувати"
+  },
+  "dlp_dlg_single3": {
+    "en": "Please wait...",
+    "ua": "Зачекайте, будь ласка…"
+  },
+  "dlp_dlg_par0": {
+    "en": "Use of DS Download Play is\nrestricted by Parental\nControls.{t:1.0:1400}\n　　　　　　　　　　　　　{/t:1.0}\nTemporarily remove\nthis restriction?",
+    "ua": "Гру по завантаженню DS\nобмежено батьківським\nконтролем.{t:1.0:1400}\n　　　　　　　　　　　　　{/t:1.0}\nТимчасово зняти\nце обмеження?"
+  },
+  "dlp_dlg_par1": {
+    "en": "This software is restricted by\nthe Parental Controls age\nrating settings.{t:1.0:1400}\n　　　　　　　　　　　　　{/t:1.0}\nTemporarily remove\nthis restriction?",
+    "ua": "Цю програму обмежено\nвіковим рейтингом\nу батьківському контролі.{t:1.0:1400}\n　　　　　　　　　　　　　{/t:1.0}\nТимчасово зняти\nце обмеження?"
+  },
+  "dlp_dlg_par2": {
+    "en": "System updates are restricted \nby Parental Controls.{t:1.0:1400}\n{/t:1.0}\nEnter your PIN to\nupdate the system.",
+    "ua": "Оновлення системи обмежено\nбатьківським контролем.{t:1.0:1400}\n{/t:1.0}\nВведіть PIN-код, щоб\nоновити систему."
+  },
+  "dlp_dlg_par3": {
+    "en": "Would you like to launch this\nsoftware in 2D?\n{t:1.0:5500}{t:0.3:3c3c3cff}You must enter your\nPIN to launch it in 3D.{t:0.3:000000ff}{/t:1.0}",
+    "ua": "Запустити цю програму\nв режимі 2D?\n{t:1.0:5500}{t:0.3:3c3c3cff}Щоб запустити в 3D,\nпотрібен PIN-код.{t:0.3:000000ff}{/t:1.0}"
+  },
+  "dlp_dlg_par4": {
+    "en": "Failed to enter\nthe correct PIN.{t:1.0:1400}\n                    {/t:1.0}\nLaunching in 2D\ndisplay mode.",
+    "ua": "Введено неправильний\nPIN-код.{t:1.0:1400}\n                    {/t:1.0}\nЗапуск у режимі\n2D."
+  },
+  "dlp_dlg_par5": {
+    "en": "Would you like to launch this\nsoftware in 2D?\n{t:1.0:5500}{t:0.3:3c3c3cff}You must enter your PIN\nagain to launch it in 3D.{t:0.3:000000ff}{/t:1.0}",
+    "ua": "Запустити цю програму\nв режимі 2D?\n{t:1.0:5500}{t:0.3:3c3c3cff}Щоб запустити в 3D, введіть\nPIN-код ще раз.{t:0.3:000000ff}{/t:1.0}"
+  },
+  "dlp_dlg_2b_pin": {
+    "en": "Remove",
+    "ua": "Зняти"
+  },
+  "dlp_dlg_2b_3d": {
+    "en": "Start in 3D",
+    "ua": "Запуск у 3D"
+  },
+  "dlp_dlg_2b_2d": {
+    "en": "Start in 2D",
+    "ua": "Запуск у 2D"
+  },
+  "dlp_dlg_update0": {
+    "en": "A system update is required in\norder to start this software.{t:1.0:1400}\n　　　　　　　　　　　　　{/t:1.0}\nWould you like to perform\nthe update now?",
+    "ua": "Щоб запустити цю програму,\nпотрібне оновлення системи.{t:1.0:1400}\n　　　　　　　　　　　　　{/t:1.0}\nВиконати оновлення\nзараз?"
+  },
+  "dlp_dlg_update1": {
+    "en": "Battery power is running low.\nPlease plug in the AC adapter.\n\nOnce the battery has charged\nsufficiently, the update will\nbegin automatically.",
+    "ua": "Заряд батареї низький.\nПід'єднайте блок живлення.\n\nЯк тільки батарея достатньо\nзарядиться, оновлення\nпочнеться автоматично."
+  },
+  "dlp_dlg_1b_canc1": {
+    "en": "Cancel",
+    "ua": "Скасувати"
+  },
+  "dlp_dlg_update2": {
+    "en": "Updating. Please wait...{t:1.0:1400}\n{/t:1.0}\nDo not turn off the power.",
+    "ua": "Оновлення. Зачекайте…{t:1.0:1400}\n{/t:1.0}\nНе вимикайте живлення."
+  },
+  "dlp_dlg_update3": {
+    "en": "The system update \nis complete.{t:1.0:1400}\n{/t:1.0}\nThe system will\nnow be restarted.",
+    "ua": "Оновлення системи\nзавершено.{t:1.0:1400}\n{/t:1.0}\nЗараз систему буде\nперезапущено."
+  },
+  "dlp_dlg_update5": {
+    "en": "An error has occurred.\nUnable to update.{t:1.0:1400}\n{/t:1.0}\nThe system will\nnow be restarted.",
+    "ua": "Сталася помилка.\nНе вдалося оновити.{t:1.0:1400}\n{/t:1.0}\nЗараз систему буде\nперезапущено."
+  },
+  "dlp_dlg_update4": {
+    "en": "To ensure that the battery\ndoes not run out during\nthe system update, please\nkeep the Nintendo 3DS\nAC adapter plugged in.",
+    "ua": "Щоб батарея не розрядилася\nпід час оновлення системи,\nтримайте блок живлення\nNintendo 3DS\nпід'єднаним."
+  },
+  "dlp_dlg_update6": {
+    "en": "A system update is required\nto use this software.\n\nUpdate to\n%ls?",
+    "ua": "Щоб використати цю\nпрограму, потрібне\nоновлення системи.\n\nОновити до\n%ls?"
+  },
+  "dlp_dlg_update7": {
+    "en": "Please update the system\nfrom the System Settings.{t:1.0:1400}\n　　　　　　　　　　　　　{/t:1.0}\nSee \"System Update\" in the\nSystem Settings electronic\nmanual for more information.",
+    "ua": "Оновіть систему\nв системних налаштуваннях.{t:1.0:1400}\n　　　　　　　　　　　　　{/t:1.0}\nДокладніше — розділ\n«Оновлення системи»\nв електронному посібнику."
+  },
+  "dlp_dlg_error": {
+    "en": "The connection was\ninterrupted. Reconnect?\n{t:1.0:5500}{t:0.3:3c3c3cff}If the wireless LED is off,\npush the wireless switch.{t:0.3:000000ff}{/t:1.0}",
+    "ua": "З'єднання розірвано.\nПід'єднатися знову?\n{t:1.0:5500}{t:0.3:3c3c3cff}Якщо індикатор бездротового\nзв'язку не світиться,\nпосуньте перемикач.{t:0.3:000000ff}{/t:1.0}"
+  }
+}

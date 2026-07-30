@@ -1,0 +1,106 @@
+{
+  "BtnBack": {
+    "en": "Back",
+    "ua": "Назад"
+  },
+  "BtnBack_Picto": {
+    "en": "",
+    "ua": ""
+  },
+  "BtnBackLng": {
+    "en": "Back",
+    "ua": "Назад"
+  },
+  "BtnBackLng_Picto": {
+    "en": "",
+    "ua": ""
+  },
+  "BtnClose": {
+    "en": " Close",
+    "ua": " Закрити"
+  },
+  "BtnCloseLng": {
+    "en": " Close",
+    "ua": " Закрити"
+  },
+  "BtnLngSel": {
+    "en": "Language",
+    "ua": "Мова"
+  },
+  "BtnLngSel_Picto": {
+    "en": "",
+    "ua": ""
+  },
+  "BtnTextSize_Big": {
+    "en": "Enlarge",
+    "ua": "Збільшити"
+  },
+  "BtnTextSize_Picto": {
+    "en": "",
+    "ua": ""
+  },
+  "BtnTextSize_Small": {
+    "en": "Reduce",
+    "ua": "Зменшити"
+  },
+  "PageNum": {
+    "en": "Page",
+    "ua": "Стор."
+  },
+  "LngSelHeader": {
+    "en": "Language",
+    "ua": "Мова"
+  },
+  "LngSelBoardMessage": {
+    "en": "Change the language\nof the manual.",
+    "ua": "Змінити мову\nпосібника."
+  },
+  "LngSelBoardCurrentLng": {
+    "en": "Current:",
+    "ua": "Поточна::"
+  },
+  "LngSelDialogText_00": {
+    "en": "This will change the language\nof the manual text only.\nAre you sure?",
+    "ua": "Це змінить лише мову\nтексту посібника.\nПродовжити?"
+  },
+  "LngSelDialog_OK": {
+    "en": " Yes",
+    "ua": " Так"
+  },
+  "LngSelDialog_Cancel": {
+    "en": " No",
+    "ua": " Ні"
+  },
+  "LngSelDialogText_01": {
+    "en": "Language changed.",
+    "ua": "Мову змінено."
+  },
+  "LngSelDialogText_02": {
+    "en": "Changing the language, \nplease wait...",
+    "ua": "Зміна мови,\nзачекайте…"
+  },
+  "ContentsText": {
+    "en": "Contents",
+    "ua": "Зміст"
+  },
+  "BootMsg_Ebird": {
+    "en": "Instruction Manual",
+    "ua": "Посібник"
+  },
+  "BootMsg_HomeMenu": {
+    "en": "HOME Menu",
+    "ua": "Меню HOME"
+  },
+  "BootMsg_Browser": {
+    "en": "Internet Browser",
+    "ua": "Інтернет-браузер"
+  },
+  "LoadErrorMsg": {
+    "en": "",
+    "ua": ""
+  },
+  "LoadErrorMsgOK": {
+    "en": "",
+    "ua": ""
+  }
+}

@@ -18,7 +18,7 @@ from pathlib import Path
 
 sys.path.insert(0, str(Path(__file__).parent))
 import msbt as msbt_mod  # noqa: E402
-from lz11 import compress, decompress  # noqa: E402
+from store import open_store  # noqa: E402
 
 ROOT = Path(__file__).resolve().parent.parent
 
@@ -32,6 +32,46 @@ TITLES = {
         "tids": ["0004003000009802"],  # EUR; JPN 0004003000008202, USA 0004003000008F02 once tested
         "source_tid": "0004003000009802",
         "lang": "EU_English",
+    },
+    "keyboard": {
+        "tids": ["000400300000D002"],  # swkbd applet, EUR
+        "source_tid": "000400300000D002",
+        "lang": "EU_English",
+    },
+    "activity_log": {
+        "tids": ["0004001000022200"],
+        "source_tid": "0004001000022200",
+        "lang": "EU_English",
+    },
+    "download_play": {
+        "tids": ["0004001000022100"],
+        "source_tid": "0004001000022100",
+        "lang": "EU_English",
+    },
+    "manual": {
+        "tids": ["0004003000009B02"],  # Instruction Manual applet, EUR
+        "source_tid": "0004003000009B02",
+        "lang": "EU_English",
+    },
+    # `container`: the text lives inside an LZ11+darc archive instead of plain folders.
+    # `{lang}` in the path means one archive per language.
+    "system_settings": {
+        "tids": ["0004001000022000"],
+        "source_tid": "0004001000022000",
+        "lang": "EU_English",
+        "container": "message_EU_LZ.bin",
+        # Labels sharing one on-screen slot: the language picker rows and the
+        # rating-name rows are as wide as their longest sibling, not their own original.
+        "budget_groups": [
+            r"(?:eu|us|tw)_\w+",
+            r"par_(?:cob|oflc)_\d+",
+        ],
+    },
+    "mii_maker": {
+        "tids": ["0004001000022700"],
+        "source_tid": "0004001000022700",
+        "lang": "EU_English",
+        "container": "message/{lang}.arc",
     },
 }
 
@@ -53,17 +93,17 @@ def apply_homoglyphs(text: str, table: dict[str, str]) -> str:
 def build_title(name: str, table: dict[str, str]) -> list[str]:
     cfg = TITLES[name]
     lang = cfg["lang"]
-    src_romfs = ROOT / "work" / cfg["source_tid"] / "romfs"
+    romfs = ROOT / "work" / cfg["source_tid"] / "romfs"
+    store = open_store(cfg, romfs)
     strings_dir = ROOT / "src" / "strings" / name
 
-    written: list[str] = []
-    for json_file in sorted(strings_dir.glob("*.json")):
-        message_dir, file_stem = json_file.stem.split("__", 1)
-        original = _find_original(src_romfs / message_dir / lang, file_stem)
+    updates: dict[str, bytes] = {}
+    stats: list[str] = []
+    for key, data in sorted(store.read(lang).items()):
+        json_file = strings_dir / f"{key}.json"
+        if not json_file.exists():
+            continue
         entries = json.loads(json_file.read_text(encoding="utf-8"))
-
-        raw = original.read_bytes()
-        data = decompress(raw) if original.name.endswith("_LZ.bin") else raw
         msbt = msbt_mod.parse(data)
 
         translated = 0
@@ -75,24 +115,18 @@ def build_title(name: str, table: dict[str, str]) -> list[str]:
             msbt.texts[index] = apply_homoglyphs(entry["ua"], table)
             translated += 1
 
-        out_bytes = msbt_mod.build(msbt)
-        if original.name.endswith("_LZ.bin"):
-            out_bytes = compress(out_bytes)
+        updates[key] = msbt_mod.build(msbt)
+        stats.append(f"{key}: {translated}/{len(msbt.texts)} translated")
 
+    written: list[str] = []
+    for rel_path, blob in store.outputs(lang, updates).items():
         for tid in cfg["tids"]:
-            dest = ROOT / "dist" / "luma" / "titles" / tid / "romfs" / message_dir / lang / original.name
+            dest = ROOT / "dist" / "luma" / "titles" / tid / "romfs" / rel_path
             dest.parent.mkdir(parents=True, exist_ok=True)
-            dest.write_bytes(out_bytes)
-            written.append(f"{dest.relative_to(ROOT)} ({translated}/{len(msbt.texts)} translated, {len(out_bytes)} bytes)")
+            dest.write_bytes(blob)
+            written.append(f"{dest.relative_to(ROOT)} ({len(blob)} bytes)")
 
-    return written
-
-
-def _find_original(lang_dir: Path, file_stem: str) -> Path:
-    for candidate in lang_dir.iterdir():
-        if candidate.name.split(".")[0] == file_stem:
-            return candidate
-    raise FileNotFoundError(f"{file_stem} not found in {lang_dir}")
+    return stats + written
 
 
 def main() -> None:

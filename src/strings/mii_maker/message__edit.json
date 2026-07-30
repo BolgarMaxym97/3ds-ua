@@ -1,0 +1,1074 @@
+{
+  "first_text_00": {
+    "en": "Welcome to Mii Maker, where\nyou can create caricatures\nknown as Mii characters.",
+    "ua": "Вітаємо в Mii Maker, де\nможна створювати карикатури\nпід назвою Mii."
+  },
+  "first_text_01": {
+    "en": "Choose features to create\na Mii that looks like you.\nSome features can also be\nmoved, resized and rotated.",
+    "ua": "Виберіть риси, щоб створити\nMii, схожого на вас. Деякі\nриси також можна переміщати,\nзмінювати й обертати."
+  },
+  "first_text_02": {
+    "en": "You've created your Personal Mii!\n\nThis Mii is unique in that it\ncannot be erased. You can\nalways edit it later, though.",
+    "ua": "Ви створили свого особистого Mii!\n\nЦей Mii особливий: його не\nможна стерти. Але його завжди\nможна відредагувати."
+  },
+  "first_text_03": {
+    "en": "You can use Mii characters\nin games. Create Mii versions\nof your friends and family and\nthey can join in the fun, too!",
+    "ua": "Mii можна використовувати\nв іграх. Створіть Mii своїх\nдрузів і родини — вони теж\nдолучаться до розваг!"
+  },
+  "first_text_04": {
+    "en": "You can create a Mii based\non anyone you like, but first,\nlet's create your Personal Mii.",
+    "ua": "Ви можете створити Mii\nз будь-кого, але спершу\nстворімо ваш особистий Mii."
+  },
+  "first_text_05": {
+    "en": "Press HOME at any time to\nreturn to the HOME Menu.",
+    "ua": "Натисніть HOME будь-коли, щоб\nповернутися до меню HOME."
+  },
+  "editor_text_00": {
+    "en": "Select a gender.",
+    "ua": "Виберіть стать."
+  },
+  "editor_text_01": {
+    "en": "Select a skin tone.",
+    "ua": "Виберіть відтінок шкіри."
+  },
+  "editor_text_02": {
+    "en": "How would you like\nto create this Mii?",
+    "ua": "Як ви хочете\nстворити цього Mii?"
+  },
+  "editor_text_03": {
+    "en": "Select an eye colour.",
+    "ua": "Виберіть колір очей."
+  },
+  "editor_text_04": {
+    "en": "Select a hairstyle.",
+    "ua": "Виберіть зачіску."
+  },
+  "editor_text_05": {
+    "en": "Select a hair colour.",
+    "ua": "Виберіть колір волосся."
+  },
+  "editor_text_06": {
+    "en": "Creating Mii...",
+    "ua": "Створення Mii…"
+  },
+  "editor_text_07": {
+    "en": "Unable to detect a face.",
+    "ua": "Не вдалося розпізнати обличчя."
+  },
+  "editor_text_08": {
+    "en": "The subject's head should\ntouch the dotted lines at the\ntop and bottom of the frame.",
+    "ua": "Голова має торкатися\nпунктирних ліній угорі\nй унизу рамки."
+  },
+  "editor_text_09": {
+    "en": "Take a photo and the features of\nyour Mii will be filled in for you.",
+    "ua": "Зробіть фото — і риси вашого\nMii буде заповнено автоматично."
+  },
+  "editor_text_10": {
+    "en": "The Mii has been created!",
+    "ua": "Mii створено!"
+  },
+  "editor_text_11": {
+    "en": "Select a face.",
+    "ua": "Виберіть обличчя."
+  },
+  "editor_text_12": {
+    "en": "Save this Mii?",
+    "ua": "Зберегти цього Mii?"
+  },
+  "editor_text_13": {
+    "en": "Quit without saving?",
+    "ua": "Вийти без збереження?"
+  },
+  "editor_text_14": {
+    "en": "Turn sharing on for\nthis Mii and save it?",
+    "ua": "Увімкнути спільний доступ\nдля цього Mii і зберегти?"
+  },
+  "editor_text_15": {
+    "en": "Choose a favourite colour.",
+    "ua": "Виберіть улюблений колір."
+  },
+  "editor_text_16": {
+    "en": "Enter a birthday.",
+    "ua": "Введіть дату народження."
+  },
+  "editor_text_17": {
+    "en": "Month",
+    "ua": "Місяць"
+  },
+  "editor_text_18": {
+    "en": "Day",
+    "ua": "День"
+  },
+  "editor_text_20": {
+    "en": "",
+    "ua": ""
+  },
+  "editor_text_21": {
+    "en": "You can save up to 10 favourites.",
+    "ua": "Можна зберегти\nдо 10 улюблених."
+  },
+  "editor_text_22": {
+    "en": "You cannot remove your \nPersonal Mii from your\nfavourites.",
+    "ua": "Особистого Mii не можна\nвилучити зі списку\nулюблених."
+  },
+  "editor_text_23": {
+    "en": "The nickname and/or creator\nname for this Mii contains words\nthat others may find offensive and\nmay not be displayed on other\nusers' Nintendo 3DS systems.\n \nRefer to the Nintendo 3DS\nOperations Manual for details.",
+    "ua": "Псевдонім або ім'я автора цього\nMii містить слова, які інші можуть\nвважати образливими, тому його\nможе бути не показано на інших\nконсолях Nintendo 3DS.\n \nДокладніше — у посібнику\nз користування Nintendo 3DS."
+  },
+  "editor_text_25": {
+    "en": "Reset the position, orientation\nand size of this feature?",
+    "ua": "Скинути положення, поворот\nі розмір цієї риси?"
+  },
+  "editor_text_26": {
+    "en": "Reset the position and\nsize of this feature?",
+    "ua": "Скинути положення\nі розмір цієї риси?"
+  },
+  "editor_text_28": {
+    "en": "Saving...",
+    "ua": "Збереження…"
+  },
+  "editor_text_31": {
+    "en": "Feel free to change anything\nyou're not happy with!",
+    "ua": "Змінюйте все, що вам\nне до смаку!"
+  },
+  "editor_text_32": {
+    "en": "Top of Head",
+    "ua": "Верх голови"
+  },
+  "editor_text_33": {
+    "en": "Chin",
+    "ua": "Підборіддя"
+  },
+  "editor_text_34": {
+    "en": "Good Example",
+    "ua": "Добрий приклад"
+  },
+  "editor_text_35": {
+    "en": "Bad Example",
+    "ua": "Поганий приклад"
+  },
+  "editor_text_36": {
+    "en": "Take the photo from the front.",
+    "ua": "Фотографуйте спереду."
+  },
+  "editor_text_37": {
+    "en": "Enter a nickname.",
+    "ua": "Введіть псевдонім."
+  },
+  "editor_knack_00": {
+    "en": "Let's take the photo!",
+    "ua": "Фотографуємо!"
+  },
+  "editor_knack_01": {
+    "en": "Bright environment",
+    "ua": "Гарне освітлення"
+  },
+  "editor_knack_02": {
+    "en": "Plain background",
+    "ua": "Однотонне тло"
+  },
+  "editor_knack_03": {
+    "en": "Front view (neutral expression)",
+    "ua": "Вид спереду (нейтральний вираз)"
+  },
+  "editor_knack_04": {
+    "en": "Eyebrows unobstructed",
+    "ua": "Брови не закриті"
+  },
+  "editor_knack_05": {
+    "en": "For best results, take photo with:",
+    "ua": "Найкраще виходить, якщо є:"
+  },
+  "editor_prof_name": {
+    "en": "Nickname",
+    "ua": "Псевдонім"
+  },
+  "editor_prof_name_box": {
+    "en": "",
+    "ua": ""
+  },
+  "editor_prof_color": {
+    "en": "Favourite Colour",
+    "ua": "Улюблений колір"
+  },
+  "editor_prof_sex": {
+    "en": "Gender",
+    "ua": "Стать"
+  },
+  "editor_prof_male": {
+    "en": "Male",
+    "ua": "Чол."
+  },
+  "editor_prof_female": {
+    "en": "Female",
+    "ua": "Жін."
+  },
+  "editor_prof_birth": {
+    "en": "Birthday",
+    "ua": "Народження"
+  },
+  "editor_prof_birth_box": {
+    "en": "/",
+    "ua": ""
+  },
+  "editor_prof_birth_period": {
+    "en": "",
+    "ua": ""
+  },
+  "editor_prof_birth_box_00": {
+    "en": "",
+    "ua": ""
+  },
+  "editor_prof_birth_box_01": {
+    "en": "",
+    "ua": ""
+  },
+  "editor_prof_creator": {
+    "en": "Creator",
+    "ua": "Автор"
+  },
+  "editor_prof_creator_box": {
+    "en": "",
+    "ua": ""
+  },
+  "editor_prof_favorite": {
+    "en": "Favourite?",
+    "ua": "Улюблений?"
+  },
+  "editor_prof_copy": {
+    "en": "Copying",
+    "ua": "Копіювання"
+  },
+  "editor_prof_permit": {
+    "en": "Allow",
+    "ua": "Дозволити"
+  },
+  "editor_prof_decline": {
+    "en": "Don't Allow",
+    "ua": "Не дозволяти"
+  },
+  "editor_prof_open": {
+    "en": "Sharing",
+    "ua": "Спільне"
+  },
+  "editor_prof_open_yes": {
+    "en": "On",
+    "ua": "Увімк."
+  },
+  "editor_prof_open_no": {
+    "en": "Off",
+    "ua": "Вимк."
+  },
+  "editor_prof_other_01": {
+    "en": "Mii characters that can be copied\nby the recipient can also be edited\nand then sent on to other people.\n\nRefer to the Nintendo 3DS\nOperations Manual for details.",
+    "ua": "Mii, які отримувач може копіювати,\nтакож можна редагувати й надсилати\nіншим людям.\n\nДокладніше — у посібнику\nз користування Nintendo 3DS."
+  },
+  "editor_prof_other_02": {
+    "en": "When sending this Mii to other\npeople, do you want to allow\nthem to make a copy of it?",
+    "ua": "Коли ви надсилаєте цього Mii\nіншим людям, дозволити їм\nробити його копію?"
+  },
+  "editor_prof_other_03": {
+    "en": "Enable sharing for a Mii and, when you play\nwith others wirelessly, the Mii may remain\non their system after you finish playing\nand show up in supported games later.\n\nEven if you do not enable sharing\nfor a Mii, you will still be able to\nuse it when playing wirelessly.",
+    "ua": "Якщо увімкнути спільний доступ, під час\nбездротової гри з іншими ваш Mii може\nзалишитися на їхній консолі й пізніше\nз'явитися в іграх, які це підтримують.\n\nНавіть без спільного доступу ви\nзможете використовувати цього Mii\nу бездротовій грі."
+  },
+  "editor_prof_other_04": {
+    "en": "Share this Mii with others?",
+    "ua": "Поділитися цим Mii з іншими?"
+  },
+  "editor_prof_other_05": {
+    "en": "Enable sharing for a Mii and, when you play\nwith others wirelessly, the Mii may remain\non their system after you finish playing\nand show up in supported games later.\n\nFor details on how to change\nthese settings, refer to the\nNintendo 3DS Operations Manual.",
+    "ua": "Якщо увімкнути спільний доступ, під час\nбездротової гри з іншими ваш Mii може\nзалишитися на їхній консолі й пізніше\nз'явитися в іграх, які це підтримують.\n\nЯк змінити ці налаштування,\nдивіться в посібнику\nз користування Nintendo 3DS."
+  },
+  "editor_btn_reset": {
+    "en": "Reset",
+    "ua": "Скинути"
+  },
+  "editor_btn_next": {
+    "en": "Next",
+    "ua": "Далі"
+  },
+  "editor_btn_save": {
+    "en": "Save",
+    "ua": "Зберегти"
+  },
+  "editor_btn_save_yes": {
+    "en": "Yes",
+    "ua": "Так"
+  },
+  "editor_btn_save_no": {
+    "en": "No",
+    "ua": "Ні"
+  },
+  "editor_btn_quit": {
+    "en": "Quit",
+    "ua": "Вийти"
+  },
+  "editor_btn_quit_yes": {
+    "en": "Quit",
+    "ua": "Вийти"
+  },
+  "editor_btn_quit_no": {
+    "en": "Continue Editing",
+    "ua": "Далі редагувати"
+  },
+  "editor_btn_prof": {
+    "en": "Next",
+    "ua": "Далі"
+  },
+  "editor_btn_back": {
+    "en": "Back",
+    "ua": "Назад"
+  },
+  "editor_btn_dec_dlg": {
+    "en": "OK",
+    "ua": "OK"
+  },
+  "editor_btn_dec": {
+    "en": "OK",
+    "ua": "OK"
+  },
+  "editor_btn_clear": {
+    "en": "Clear",
+    "ua": "Очистити"
+  },
+  "editor_btn_cancel_dlg": {
+    "en": "",
+    "ua": ""
+  },
+  "editor_btn_back_dlg": {
+    "en": "Back",
+    "ua": "Назад"
+  },
+  "editor_btn_back_dlg_small": {
+    "en": "Back",
+    "ua": "Назад"
+  },
+  "editor_btn_ok": {
+    "en": "OK",
+    "ua": "OK"
+  },
+  "editor_btn_ok_dlg": {
+    "en": "OK",
+    "ua": "OK"
+  },
+  "editor_btn_male": {
+    "en": "Male",
+    "ua": "Чол."
+  },
+  "editor_btn_female": {
+    "en": "Female",
+    "ua": "Жін."
+  },
+  "editor_btn_other_yes": {
+    "en": "Allow",
+    "ua": "Дозволити"
+  },
+  "editor_btn_other_no": {
+    "en": "Don't Allow",
+    "ua": "Не дозволяти"
+  },
+  "editor_btn_normal": {
+    "en": "Start from Scratch",
+    "ua": "З нуля"
+  },
+  "editor_btn_auto": {
+    "en": "Create from Photo",
+    "ua": "З фото"
+  },
+  "editor_btn_photo": {
+    "en": " Take",
+    "ua": " Зняти"
+  },
+  "editor_btn_in_cam": {
+    "en": "Inner",
+    "ua": "Внутр."
+  },
+  "editor_btn_out_cam": {
+    "en": "Outer",
+    "ua": "Зовн."
+  },
+  "editor_btn_reshot": {
+    "en": "Retake",
+    "ua": "Перезняти"
+  },
+  "editor_btn_open_yes": {
+    "en": "Share",
+    "ua": "Поділитися"
+  },
+  "editor_btn_open_no": {
+    "en": "Don't Share",
+    "ua": "Не ділитися"
+  },
+  "editor_dialog_birth": {
+    "en": "/",
+    "ua": ""
+  },
+  "editor_dialog_birth_period": {
+    "en": "",
+    "ua": ""
+  },
+  "editor_dialog_birth_00": {
+    "en": "",
+    "ua": ""
+  },
+  "editor_dialog_birth_01": {
+    "en": "",
+    "ua": ""
+  },
+  "editor_page": {
+    "en": "",
+    "ua": ""
+  },
+  "editor_page_00": {
+    "en": "",
+    "ua": ""
+  },
+  "editor_page_01": {
+    "en": "",
+    "ua": ""
+  },
+  "plaza_btn_editor": {
+    "en": "   Create New Mii",
+    "ua": "   Створити Mii"
+  },
+  "plaza_btn_connect": {
+    "en": "Send/Receive",
+    "ua": "Надіслати/отримати"
+  },
+  "plaza_btn_code": {
+    "en": "    QR Code/Image Options",
+    "ua": "    QR-код / зображення"
+  },
+  "plaza_btn_find": {
+    "en": "   View Mii Characters",
+    "ua": "   Перегляд Mii"
+  },
+  "plaza_btn_back": {
+    "en": "Back",
+    "ua": "Назад"
+  },
+  "plaza_btn_delete": {
+    "en": "Erase",
+    "ua": "Стерти"
+  },
+  "plaza_btn_edit": {
+    "en": "Edit",
+    "ua": "Змінити"
+  },
+  "plaza_btn_ok_dlg": {
+    "en": "OK",
+    "ua": "OK"
+  },
+  "plaza_btn_back_dlg": {
+    "en": "Back",
+    "ua": "Назад"
+  },
+  "plaza_btn_sp_delete": {
+    "en": "Erase",
+    "ua": "Стерти"
+  },
+  "plaza_btn_delete_yes": {
+    "en": "Erase",
+    "ua": "Стерти"
+  },
+  "plaza_btn_delete_no": {
+    "en": "Don't Erase",
+    "ua": "Не стирати"
+  },
+  "plaza_btn_edit_yes": {
+    "en": "Yes",
+    "ua": "Так"
+  },
+  "plaza_btn_edit_no": {
+    "en": "No",
+    "ua": "Ні"
+  },
+  "plaza_opr_00": {
+    "en": "Control Guide",
+    "ua": "Керування"
+  },
+  "plaza_opr_01": {
+    "en": "",
+    "ua": ""
+  },
+  "plaza_opr_02": {
+    "en": " Scroll",
+    "ua": " Прокрутка"
+  },
+  "plaza_opr_03": {
+    "en": " Switch Room",
+    "ua": " Змінити кімнату"
+  },
+  "plaza_opr_04": {
+    "en": " Line Up",
+    "ua": " Вирівняти"
+  },
+  "plaza_opr_06": {
+    "en": " Blocked-User Settings",
+    "ua": " Заблоковані користувачі"
+  },
+  "plaza_opr_05": {
+    "en": "These controls can also be used\nafter selecting View Mii Characters.",
+    "ua": "Це керування також працює\nпісля вибору Перегляд Mii."
+  },
+  "plaza_first_00": {
+    "en": "This is where you view\nand edit Mii characters.",
+    "ua": "Тут можна дивитися\nй редагувати Mii."
+  },
+  "plaza_first_01": {
+    "en": "Slide Mii characters on\nthe Touch Screen to\nmove them between slots\nor to different rooms.",
+    "ua": "Проведіть по Mii на\nсенсорному дисплеї, щоб\nперемістити його між місцями\nабо до іншої кімнати."
+  },
+  "plaza_text_00": {
+    "en": "You cannot remove\nyour Personal Mii\nfrom your favourites.",
+    "ua": "Особистого Mii не можна\nвилучити зі списку\nулюблених."
+  },
+  "plaza_text_01": {
+    "en": "Are you sure you want\nto erase this Mii?",
+    "ua": "Ви впевнені, що хочете\nстерти цього Mii?"
+  },
+  "plaza_text_02": {
+    "en": "This Mii cannot be edited.",
+    "ua": "Цього Mii не можна редагувати."
+  },
+  "plaza_text_03": {
+    "en": "Creating extra data...\nDo not remove the SD Card.",
+    "ua": "Створення додаткових даних…\nНе виймайте карту SD."
+  },
+  "plaza_text_04": {
+    "en": "This is a Special Mii.\nAre you sure you\nwant to erase it?",
+    "ua": "Це особливий Mii.\nВи впевнені, що\nхочете його стерти?"
+  },
+  "plaza_text_05": {
+    "en": "You cannot edit Mii characters\nthat have been received\nfrom someone else and do\nnot have copying allowed.",
+    "ua": "Не можна редагувати Mii,\nотриманих від інших людей,\nякщо копіювання\nне дозволено."
+  },
+  "plaza_text_06": {
+    "en": "Do you want to create\na copy of this Mii\nthat you can edit?",
+    "ua": "Створити копію цього\nMii, яку ви зможете\nредагувати?"
+  },
+  "plaza_text_07": {
+    "en": "Select a Special Mii and press \nto take it to StreetPass Mii Plaza.",
+    "ua": "Виберіть особливого Mii\nі натисніть , щоб забрати його\nна Площу StreetPass Mii."
+  },
+  "plaza_text_08": {
+    "en": "Do you want to take this Mii\nto StreetPass Mii Plaza?",
+    "ua": "Забрати цього Mii\nна Площу StreetPass Mii?"
+  },
+  "plaza_text_09": {
+    "en": "You can only take a Mii with\ngold trousers (a Special Mii)\nto StreetPass Mii Plaza.",
+    "ua": "На Площу StreetPass Mii\nможна забрати лише Mii\nу золотих штанях (особливого)."
+  },
+  "plaza_text_10": {
+    "en": "You can have up\nto 10 favourites.",
+    "ua": "Улюблених може бути\nдо 10."
+  },
+  "plaza_text_11": {
+    "en": "Special Mii characters can be\ntaken to StreetPass Mii Plaza.\n\nTo do so, select a Special Mii\non the View Mii Characters\nscreen, then press .",
+    "ua": "Особливих Mii можна забрати\nна Площу StreetPass Mii.\n\nДля цього виберіть особливого\nMii на екрані Перегляд Mii,\nпотім натисніть ."
+  },
+  "plaza_text_12": {
+    "en": "There are no free slots,\nso you cannot create\nany new Mii characters.",
+    "ua": "Вільних місць немає,\nтому створити нових\nMii не можна."
+  },
+  "plaza_text_13": {
+    "en": "You cannot erase\nyour Personal Mii.",
+    "ua": "Особистого Mii\nне можна стерти."
+  },
+  "plaza_text_14": {
+    "en": "Zoom In",
+    "ua": "Збільшити"
+  },
+  "plaza_text_15": {
+    "en": "Zoom Out",
+    "ua": "Зменшити"
+  },
+  "plaza_text_16": {
+    "en": ": Return to HOME Menu",
+    "ua": ": назад до меню HOME"
+  },
+  "plaza_text_17": {
+    "en": "The Mii Maker save data was\ncorrupted and has been reset.",
+    "ua": "Дані Mii Maker були\nпошкоджені й скинуті."
+  },
+  "plaza_text_18": {
+    "en": "The Special Mii was taken\nto StreetPass Mii Plaza.",
+    "ua": "Особливого Mii забрано\nна Площу StreetPass Mii."
+  },
+  "plaza_text_19": {
+    "en": "The Mii Maker save data was\ncorrupted and has been repaired.",
+    "ua": "Дані Mii Maker були\nпошкоджені й відновлені."
+  },
+  "plaza_text_20": {
+    "en": "",
+    "ua": ""
+  },
+  "plaza_text_21": {
+    "en": "This Special Mii already exists\nin StreetPass Mii Plaza.",
+    "ua": "Цей особливий Mii уже є\nна Площі StreetPass Mii."
+  },
+  "code_text_00": {
+    "en": "Scan a QR Code of a Mii, or save a\nMii as either a QR Code or an image.",
+    "ua": "Скануйте QR-код Mii або збережіть\nMii як QR-код чи зображення."
+  },
+  "code_text_01": {
+    "en": "Searching for QR Code...\n\nAlign the code so that\nit lies within the frame.",
+    "ua": "Пошук QR-коду…\n\nРозташуйте код\nусередині рамки."
+  },
+  "code_text_02": {
+    "en": "SAMPLE",
+    "ua": "ЗРАЗОК"
+  },
+  "code_text_03": {
+    "en": "%ls has arrived!\n\nDo you want to save this Mii?",
+    "ua": "%ls прибув!\n\nЗберегти цього Mii?"
+  },
+  "code_text_05": {
+    "en": "Saved.",
+    "ua": "Збережено."
+  },
+  "code_text_06": {
+    "en": "You cannot receive this Mii\nbecause you already have an\nidentical Mii which you created.",
+    "ua": "Не можна отримати цього Mii,\nбо у вас уже є такий самий\nMii, створений вами."
+  },
+  "code_text_07": {
+    "en": "There are no free slots in\nwhich to receive this Mii.",
+    "ua": "Немає вільних місць,\nщоб отримати цього Mii."
+  },
+  "code_text_08": {
+    "en": "This QR Code does\nnot contain a Mii.",
+    "ua": "Цей QR-код не\nмістить Mii."
+  },
+  "code_text_09": {
+    "en": "This Mii already exists,\nso it will be overwritten.",
+    "ua": "Такий Mii уже є,\nтому його буде перезаписано."
+  },
+  "code_text_10": {
+    "en": "You cannot receive this Mii.",
+    "ua": "Не можна отримати цього Mii."
+  },
+  "code_text_13": {
+    "en": "Choose a Mii.",
+    "ua": "Виберіть Mii."
+  },
+  "code_text_14": {
+    "en": "Please be careful not\nto erase this Special Mii,\nas it can no longer be\nreceived via QR Code.",
+    "ua": "Будьте обережні, щоб не\nстерти цього особливого Mii:\nйого вже не можна\nотримати через QR-код."
+  },
+  "code_text_15": {
+    "en": "Which kind of image\nwould you like to save?",
+    "ua": "Яке зображення\nви хочете зберегти?"
+  },
+  "code_text_16": {
+    "en": "This Mii cannot be\nsaved as a QR Code.",
+    "ua": "Цього Mii не можна\nзберегти як QR-код."
+  },
+  "code_text_17": {
+    "en": "This Mii cannot be\nsaved as an image.",
+    "ua": "Цього Mii не можна\nзберегти як зображення."
+  },
+  "code_text_20": {
+    "en": "Saving as QR Code...",
+    "ua": "Збереження як QR-код…"
+  },
+  "code_text_21": {
+    "en": "Saving as image...",
+    "ua": "Збереження як зображення…"
+  },
+  "code_text_22": {
+    "en": "Saved to the SD Card.\n\nUse Nintendo 3DS Camera or\nother image-viewing software\nto view the saved image.",
+    "ua": "Збережено на карту SD.\n\nЩоб побачити збережене\nзображення, скористайтеся\nКамерою Nintendo 3DS."
+  },
+  "code_text_23": {
+    "en": "There is no SD Card inserted.\nPlease turn off the system\nand insert an SD Card into\nthe SD Card slot.",
+    "ua": "Карту SD не вставлено.\nВимкніть консоль\nі вставте карту SD\nу слот для карт SD."
+  },
+  "code_text_24": {
+    "en": "Unable to save.",
+    "ua": "Не вдалося зберегти."
+  },
+  "code_text_25": {
+    "en": "Cannot write to the SD Card.\n\nPlease turn off the power, move\nthe SD Card's write-protection\nswitch to the off position, then\nreinsert the SD Card.",
+    "ua": "Не можна записати на карту SD.\n\nВимкніть живлення, переведіть\nперемикач захисту від запису\nна карті SD у положення «вимк.»,\nпотім вставте карту знову."
+  },
+  "code_text_26": {
+    "en": "???",
+    "ua": ""
+  },
+  "code_text_27": {
+    "en": "",
+    "ua": ""
+  },
+  "code_text_30": {
+    "en": "No more pictures can be saved\nto the SD Card. Either delete\npictures to make space, or use\nan SD Card with more free space.",
+    "ua": "Більше зображень зберегти\nна карту SD не можна. Видаліть\nзображення або візьміть карту SD\nз більшим обсягом вільного місця."
+  },
+  "code_btn_encode": {
+    "en": "Save Mii as QR Code",
+    "ua": "Зберегти Mii як QR-код"
+  },
+  "code_btn_decode": {
+    "en": "Scan QR Code",
+    "ua": "Сканувати QR-код"
+  },
+  "code_btn_picture": {
+    "en": "Save Mii as Image",
+    "ua": "Зберегти як зображення"
+  },
+  "code_face_save": {
+    "en": "Face",
+    "ua": "Обличчя"
+  },
+  "code_body_save": {
+    "en": "Entire Mii",
+    "ua": "Увесь Mii"
+  },
+  "code_btn_cancel_base": {
+    "en": "Quit",
+    "ua": "Вийти"
+  },
+  "code_btn_back": {
+    "en": "Back",
+    "ua": "Назад"
+  },
+  "code_btn_back_dlg": {
+    "en": "Back",
+    "ua": "Назад"
+  },
+  "code_btn_ok": {
+    "en": "OK",
+    "ua": "OK"
+  },
+  "code_btn_ok_dlg": {
+    "en": "OK",
+    "ua": "OK"
+  },
+  "code_btn_save_yes": {
+    "en": "Save",
+    "ua": "Зберегти"
+  },
+  "code_btn_save_no": {
+    "en": "Don't Save",
+    "ua": "Не зберігати"
+  },
+  "code_btn_dec": {
+    "en": "OK",
+    "ua": "OK"
+  },
+  "connect_text_00": {
+    "en": "",
+    "ua": ""
+  },
+  "connect_text_01": {
+    "en": "What do you want to connect to?",
+    "ua": "До чого ви хочете під'єднатися?"
+  },
+  "connect_text_02": {
+    "en": "Wait for other players to connect\nto you, or search for players who\nare waiting for connections?",
+    "ua": "Чекати, поки інші гравці\nпід'єднаються до вас, чи шукати\nгравців, які чекають з'єднання?"
+  },
+  "connect_text_03": {
+    "en": "Searching for players...",
+    "ua": "Пошук гравців…"
+  },
+  "connect_text_04": {
+    "en": "Waiting for players...",
+    "ua": "Очікування гравців…"
+  },
+  "connect_text_05": {
+    "en": "Select the user you\nwish to connect to.",
+    "ua": "Виберіть користувача,\nдо якого хочете під'єднатися."
+  },
+  "connect_text_06": {
+    "en": "Connecting...",
+    "ua": "З'єднання…"
+  },
+  "connect_text_07": {
+    "en": "Connected to\n%ls.\nSelect a Mii to send.",
+    "ua": "Під'єднано до\n%ls.\nВиберіть Mii для надсилання."
+  },
+  "connect_text_08": {
+    "en": "Connected to\n%ls.",
+    "ua": "Під'єднано до\n%ls."
+  },
+  "connect_text_16": {
+    "en": "Sending...",
+    "ua": "Надсилання…"
+  },
+  "connect_text_17": {
+    "en": "Sent.",
+    "ua": "Надіслано."
+  },
+  "connect_text_18": {
+    "en": "Receiving...",
+    "ua": "Отримання…"
+  },
+  "connect_text_19": {
+    "en": "Received.",
+    "ua": "Отримано."
+  },
+  "connect_text_20": {
+    "en": "You cannot receive this\nMii because you already\nhave an identical Mii\nwhich you created.",
+    "ua": "Не можна отримати цього\nMii, бо у вас уже є\nтакий самий Mii,\nстворений вами."
+  },
+  "connect_text_21": {
+    "en": "You do not have any free\nslots, so you are unable to\nreceive any Mii characters.",
+    "ua": "У вас немає вільних місць,\nтому ви не можете\nотримувати Mii."
+  },
+  "connect_text_22": {
+    "en": "The nickname for this Mii was\nchanged because it could not\nbe used on Nintendo 3DS.",
+    "ua": "Псевдонім цього Mii змінено,\nбо його не можна було\nвикористати на Nintendo 3DS."
+  },
+  "connect_text_23": {
+    "en": "The recipient does not have\nany free slots in which\nto store Mii characters.",
+    "ua": "Отримувач не має вільних\nмісць для збереження Mii."
+  },
+  "connect_text_24": {
+    "en": "This Mii will not remain\non your system.\nIs this OK?",
+    "ua": "Цей Mii не залишиться\nна вашій консолі.\nПродовжити?"
+  },
+  "connect_text_35": {
+    "en": "This Mii already\nexists, so it will\nbe overwritten.",
+    "ua": "Такий Mii уже\nє, тому його буде\nперезаписано."
+  },
+  "connect_text_36": {
+    "en": "Unable to receive the Mii.",
+    "ua": "Не вдалося отримати Mii."
+  },
+  "connect_text_25": {
+    "en": "Unable to send this Mii.",
+    "ua": "Не вдалося надіслати\nцього Mii."
+  },
+  "connect_text_26": {
+    "en": "OK to disconnect now?",
+    "ua": "Роз'єднатися зараз?"
+  },
+  "connect_text_27": {
+    "en": "Please wait...",
+    "ua": "Зачекайте, будь ласка…"
+  },
+  "connect_text_28": {
+    "en": "A communication error occurred.",
+    "ua": "Сталася помилка зв'язку."
+  },
+  "connect_text_29": {
+    "en": "You have been disconnected.",
+    "ua": "З'єднання розірвано."
+  },
+  "connect_text_30": {
+    "en": "",
+    "ua": ""
+  },
+  "connect_text_31": {
+    "en": "",
+    "ua": ""
+  },
+  "connect_text_32": {
+    "en": "Waiting for a Mii to be sent...",
+    "ua": "Очікування надсилання Mii…"
+  },
+  "connect_text_33": {
+    "en": "",
+    "ua": ""
+  },
+  "connect_text_34": {
+    "en": "",
+    "ua": ""
+  },
+  "connect_text_37": {
+    "en": "Searching for a Wii console. In\nthe Mii Channel, select Connect\nto DS. If that option is not shown,\npress the A, B and 1 Buttons on\nthe Wii Remote in that order, then\npress and hold the 2 Button.",
+    "ua": "Пошук консолі Wii. У каналі Mii\nвиберіть Connect to DS. Якщо\nтакого пункту немає, натисніть на\nWii Remote кнопки A, B і 1 у цьому\nпорядку, потім натисніть\nі тримайте кнопку 2."
+  },
+  "connect_text_38": {
+    "en": "The recipient already\nhas this Special Mii,\nso it could not be sent.",
+    "ua": "Отримувач уже має\nцього особливого Mii,\nтому його не надіслано."
+  },
+  "connect_text_39": {
+    "en": "The nickname for this Mii\ncontains words that others\nmay find offensive and may\nnot be displayed in certain\ncircumstances.\n\nRefer to the Nintendo 3DS\nOperations Manual for details.",
+    "ua": "Псевдонім цього Mii містить\nслова, які інші можуть\nвважати образливими, тому\nйого може бути не показано\nв деяких випадках.\n\nДокладніше — у посібнику\nз користування Nintendo 3DS."
+  },
+  "connect_text_40": {
+    "en": "",
+    "ua": ""
+  },
+  "connect_text_41": {
+    "en": "",
+    "ua": ""
+  },
+  "connect_text_42": {
+    "en": "",
+    "ua": ""
+  },
+  "connect_text_43": {
+    "en": "",
+    "ua": ""
+  },
+  "connect_text_44": {
+    "en": "You do not have any free\nslots, so you are unable to\nreceive any Mii characters.",
+    "ua": "У вас немає вільних місць,\nтому ви не можете\nотримувати Mii."
+  },
+  "connect_text_45": {
+    "en": "You have no more free slots in\nwhich to save Mii characters.\nCommunications will now end.",
+    "ua": "Вільних місць для збереження\nMii більше немає.\nЗв'язок буде завершено."
+  },
+  "connect_text_46": {
+    "en": "Wireless communication is\ncurrently disabled. \n\nPlease push the wireless\nswitch to enable wireless\ncommunication.",
+    "ua": "Бездротовий зв'язок\nзараз вимкнено. \n\nПосуньте перемикач,\nщоб увімкнути бездротовий\nзв'язок."
+  },
+  "connect_btn_edit": {
+    "en": "Mii Maker",
+    "ua": "Mii Maker"
+  },
+  "connect_btn_ds": {
+    "en": "",
+    "ua": ""
+  },
+  "connect_btn_wii": {
+    "en": "Mii Channel (Wii)",
+    "ua": "Канал Mii (Wii)"
+  },
+  "connect_btn_call": {
+    "en": "Wait for Players",
+    "ua": "Чекати гравців"
+  },
+  "connect_btn_search": {
+    "en": "Search for Players",
+    "ua": "Шукати гравців"
+  },
+  "connect_btn_cancel": {
+    "en": "Cancel",
+    "ua": "Скасувати"
+  },
+  "connect_btn_cancel_dlg": {
+    "en": "Cancel",
+    "ua": "Скасувати"
+  },
+  "connect_btn_back_dlg": {
+    "en": "Back",
+    "ua": "Назад"
+  },
+  "connect_btn_receive": {
+    "en": "",
+    "ua": ""
+  },
+  "connect_btn_ok": {
+    "en": "OK",
+    "ua": "OK"
+  },
+  "connect_btn_send_ok": {
+    "en": "OK",
+    "ua": "OK"
+  },
+  "connect_btn_ok_dlg": {
+    "en": "OK",
+    "ua": "OK"
+  },
+  "connect_btn_send": {
+    "en": "Send",
+    "ua": "Надіслати"
+  },
+  "select_baloon_btn_box": {
+    "en": "",
+    "ua": ""
+  },
+  "select_baloon_box": {
+    "en": "",
+    "ua": ""
+  },
+  "list_text_00": {
+    "en": "You can add people who have\ncreated offensive Mii characters\nto the blocked-user list.\n\nRefer to the Nintendo 3DS\nOperations Manual for details.",
+    "ua": "Людей, які створили образливих\nMii, можна додати до списку\nзаблокованих користувачів.\n\nДокладніше — у посібнику\nз користування Nintendo 3DS."
+  },
+  "list_text_01": {
+    "en": "Do you want to manage your\nblocked-user settings?",
+    "ua": "Керувати налаштуваннями\nзаблокованих користувачів?"
+  },
+  "list_text_02": {
+    "en": "Select a Mii.",
+    "ua": "Виберіть Mii."
+  },
+  "list_text_03": {
+    "en": "Are you sure you want\nto block the user who\ncreated this Mii?",
+    "ua": "Ви впевнені, що хочете\nзаблокувати користувача,\nякий створив цього Mii?"
+  },
+  "list_text_04": {
+    "en": "This user has been blocked.",
+    "ua": "Користувача заблоковано."
+  },
+  "list_btn_start": {
+    "en": "Manage",
+    "ua": "Керувати"
+  },
+  "list_btn_cancel": {
+    "en": "Cancel",
+    "ua": "Скасувати"
+  },
+  "mii_name_0": {
+    "en": "Sarah",
+    "ua": "Оксана"
+  },
+  "mii_name_1": {
+    "en": "Patrick",
+    "ua": "Петро"
+  },
+  "mii_name_2": {
+    "en": "John",
+    "ua": "Іван"
+  },
+  "mii_name_3": {
+    "en": "Andy",
+    "ua": "Андрій"
+  },
+  "mii_name_4": {
+    "en": "Nick",
+    "ua": "Микола"
+  },
+  "mii_name_5": {
+    "en": "Ollie",
+    "ua": "Олег"
+  },
+  "mii_name_6": {
+    "en": "Rebecca",
+    "ua": "Ребекка"
+  },
+  "mii_name_7": {
+    "en": "Samantha",
+    "ua": "Соломія"
+  },
+  "mii_name_8": {
+    "en": "Lucy",
+    "ua": "Леся"
+  },
+  "mii_name_9": {
+    "en": "Alex",
+    "ua": "Олекса"
+  },
+  "mii_name_10": {
+    "en": "Polly",
+    "ua": "Поліна"
+  },
+  "mii_name_11": {
+    "en": "Sophie",
+    "ua": "Софія"
+  },
+  "ctr_name_01": {
+    "en": "Colin",
+    "ua": "Кирило"
+  },
+  "ctr_name_02": {
+    "en": "Jen",
+    "ua": "Женя"
+  },
+  "wii_name_01": {
+    "en": "Taylor",
+    "ua": "Тарас"
+  },
+  "editor_text_38": {
+    "en": "The nickname or creator name\nyou entered includes text that\ncannot be used.\n\nPlease enter a new nickname or\ncreator name.",
+    "ua": "Псевдонім або ім'я автора\nмістить текст, який не можна\nвикористати.\n\nВведіть інший псевдонім\nабо ім'я автора."
+  },
+  "editor_text_39": {
+    "en": "You must set Sharing to On for\nthe Personal Mii you have linked\nto your Nintendo Network ID.\n\nSharing cannot be set to Off for\nthis Personal Mii.",
+    "ua": "Для особистого Mii,\nпривʼязаного до вашого\nNintendo Network ID, спільний\nдоступ мусить бути увімкнений.\n\nВимкнути його для цього\nособистого Mii не можна."
+  }
+}

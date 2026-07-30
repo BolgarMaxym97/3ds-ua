@@ -1,0 +1,1030 @@
+{
+  "ok": {
+    "en": "OK",
+    "ua": "OK"
+  },
+  "back": {
+    "en": "",
+    "ua": ""
+  },
+  "cancel": {
+    "en": "Cancel",
+    "ua": "Скасувати"
+  },
+  "yes": {
+    "en": "Yes",
+    "ua": "Так"
+  },
+  "no": {
+    "en": "",
+    "ua": ""
+  },
+  "next": {
+    "en": "Next",
+    "ua": "Далі"
+  },
+  "erase": {
+    "en": "Delete",
+    "ua": "Стерти"
+  },
+  "decide": {
+    "en": "",
+    "ua": ""
+  },
+  "again": {
+    "en": "",
+    "ua": ""
+  },
+  "retry": {
+    "en": "",
+    "ua": ""
+  },
+  "soft_title": {
+    "en": "Activity Log",
+    "ua": "Журнал дій"
+  },
+  "top_date_format": {
+    "en": "%d/%M/%Y (%w)",
+    "ua": ""
+  },
+  "your_record": {
+    "en": "{t:1.0:5500}%s's Records{/t:1.0}",
+    "ua": "{t:1.0:5500}Записи %s{/t:1.0}"
+  },
+  "your_record_you": {
+    "en": "Your Records",
+    "ua": "Ваші записи"
+  },
+  "total_walking_steps": {
+    "en": "Steps",
+    "ua": "Кроки"
+  },
+  "total_walking_steps_format_sg": {
+    "en": "%ls",
+    "ua": ""
+  },
+  "total_walking_steps_format_pl": {
+    "en": "%ls",
+    "ua": ""
+  },
+  "total_played_softs": {
+    "en": "Titles Played",
+    "ua": "Зіграно програм"
+  },
+  "total_played_softs_format_sg": {
+    "en": "%ls",
+    "ua": ""
+  },
+  "total_played_softs_format_pl": {
+    "en": "%ls",
+    "ua": ""
+  },
+  "daily_record": {
+    "en": "Daily\nRecords",
+    "ua": "Щоденні\nзаписи"
+  },
+  "soft_record": {
+    "en": "Software\nLibrary",
+    "ua": "Бібліотека\nпрограм"
+  },
+  "return_to_home_menu": {
+    "en": ": Return to HOME Menu",
+    "ua": ": назад до меню HOME"
+  },
+  "return_to_top": {
+    "en": " Back",
+    "ua": " Назад"
+  },
+  "show_table": {
+    "en": "View as List",
+    "ua": "Списком"
+  },
+  "show_graph": {
+    "en": "View as Graph",
+    "ua": "Графіком"
+  },
+  "show_steps": {
+    "en": "Steps",
+    "ua": "Кроки"
+  },
+  "show_both": {
+    "en": "",
+    "ua": ""
+  },
+  "show_play_record": {
+    "en": "Play Time",
+    "ua": "Час гри"
+  },
+  "year_scale": {
+    "en": "Yearly",
+    "ua": "За рік"
+  },
+  "month_scale": {
+    "en": "Monthly",
+    "ua": "За місяць"
+  },
+  "week_scale": {
+    "en": "Weekly",
+    "ua": "За тиждень"
+  },
+  "day_scale": {
+    "en": "Daily",
+    "ua": "За день"
+  },
+  "view_this_day": {
+    "en": "Today",
+    "ua": "Сьогодні"
+  },
+  "view_this_week": {
+    "en": "This Week",
+    "ua": "Цей тиждень"
+  },
+  "view_this_month": {
+    "en": "This Month",
+    "ua": "Цей місяць"
+  },
+  "view_this_year": {
+    "en": "This Year",
+    "ua": "Цей рік"
+  },
+  "year_graduation_format": {
+    "en": "%Y",
+    "ua": ""
+  },
+  "month_graduation_format": {
+    "en": "%N\n%Y",
+    "ua": ""
+  },
+  "week_graduation_format": {
+    "en": "",
+    "ua": ""
+  },
+  "week_graduation_format_start": {
+    "en": "%d %n '%y\n",
+    "ua": ""
+  },
+  "week_graduation_format_end": {
+    "en": "to %d %n '%y",
+    "ua": "до %d %n '%y"
+  },
+  "day_graduation_format": {
+    "en": "%d/%M/%Y\n(%w)",
+    "ua": ""
+  },
+  "hour_graduation_format": {
+    "en": "",
+    "ua": ""
+  },
+  "minutes_graduation_format": {
+    "en": "",
+    "ua": ""
+  },
+  "month_1": {
+    "en": "01",
+    "ua": ""
+  },
+  "month_2": {
+    "en": "02",
+    "ua": ""
+  },
+  "month_3": {
+    "en": "03",
+    "ua": ""
+  },
+  "month_4": {
+    "en": "04",
+    "ua": ""
+  },
+  "month_5": {
+    "en": "05",
+    "ua": ""
+  },
+  "month_6": {
+    "en": "06",
+    "ua": ""
+  },
+  "month_7": {
+    "en": "07",
+    "ua": ""
+  },
+  "month_8": {
+    "en": "08",
+    "ua": ""
+  },
+  "month_9": {
+    "en": "09",
+    "ua": ""
+  },
+  "month_10": {
+    "en": "10",
+    "ua": ""
+  },
+  "month_11": {
+    "en": "11",
+    "ua": ""
+  },
+  "month_12": {
+    "en": "12",
+    "ua": ""
+  },
+  "month_full_1": {
+    "en": "January",
+    "ua": "січень"
+  },
+  "month_full_2": {
+    "en": "February",
+    "ua": "лютий"
+  },
+  "month_full_3": {
+    "en": "March",
+    "ua": "бер."
+  },
+  "month_full_4": {
+    "en": "April",
+    "ua": "квітень"
+  },
+  "month_full_5": {
+    "en": "May",
+    "ua": "травень"
+  },
+  "month_full_6": {
+    "en": "June",
+    "ua": "черв."
+  },
+  "month_full_7": {
+    "en": "July",
+    "ua": "лип."
+  },
+  "month_full_8": {
+    "en": "August",
+    "ua": "серпень"
+  },
+  "month_full_9": {
+    "en": "September",
+    "ua": "вересень"
+  },
+  "month_full_10": {
+    "en": "October",
+    "ua": "жовтень"
+  },
+  "month_full_11": {
+    "en": "November",
+    "ua": "листопад"
+  },
+  "month_full_12": {
+    "en": "December",
+    "ua": "грудень"
+  },
+  "month_abbr_1": {
+    "en": "Jan",
+    "ua": "січ"
+  },
+  "month_abbr_2": {
+    "en": "Feb",
+    "ua": "лют"
+  },
+  "month_abbr_3": {
+    "en": "Mar",
+    "ua": "бер"
+  },
+  "month_abbr_4": {
+    "en": "Apr",
+    "ua": "кві"
+  },
+  "month_abbr_5": {
+    "en": "May",
+    "ua": "тра"
+  },
+  "month_abbr_6": {
+    "en": "Jun",
+    "ua": "чер"
+  },
+  "month_abbr_7": {
+    "en": "Jul",
+    "ua": "лип"
+  },
+  "month_abbr_8": {
+    "en": "Aug",
+    "ua": "сер"
+  },
+  "month_abbr_9": {
+    "en": "Sep",
+    "ua": "вер"
+  },
+  "month_abbr_10": {
+    "en": "Oct",
+    "ua": "жов"
+  },
+  "month_abbr_11": {
+    "en": "Nov",
+    "ua": "лис"
+  },
+  "month_abbr_12": {
+    "en": "Dec",
+    "ua": "гру"
+  },
+  "day_1": {
+    "en": "01",
+    "ua": ""
+  },
+  "day_2": {
+    "en": "02",
+    "ua": ""
+  },
+  "day_3": {
+    "en": "03",
+    "ua": ""
+  },
+  "day_4": {
+    "en": "04",
+    "ua": ""
+  },
+  "day_5": {
+    "en": "05",
+    "ua": ""
+  },
+  "day_6": {
+    "en": "06",
+    "ua": ""
+  },
+  "day_7": {
+    "en": "07",
+    "ua": ""
+  },
+  "day_8": {
+    "en": "08",
+    "ua": ""
+  },
+  "day_9": {
+    "en": "09",
+    "ua": ""
+  },
+  "day_10": {
+    "en": "10",
+    "ua": ""
+  },
+  "day_11": {
+    "en": "11",
+    "ua": ""
+  },
+  "day_12": {
+    "en": "12",
+    "ua": ""
+  },
+  "day_13": {
+    "en": "13",
+    "ua": ""
+  },
+  "day_14": {
+    "en": "14",
+    "ua": ""
+  },
+  "day_15": {
+    "en": "15",
+    "ua": ""
+  },
+  "day_16": {
+    "en": "16",
+    "ua": ""
+  },
+  "day_17": {
+    "en": "17",
+    "ua": ""
+  },
+  "day_18": {
+    "en": "18",
+    "ua": ""
+  },
+  "day_19": {
+    "en": "19",
+    "ua": ""
+  },
+  "day_20": {
+    "en": "20",
+    "ua": ""
+  },
+  "day_21": {
+    "en": "21",
+    "ua": ""
+  },
+  "day_22": {
+    "en": "22",
+    "ua": ""
+  },
+  "day_23": {
+    "en": "23",
+    "ua": ""
+  },
+  "day_24": {
+    "en": "24",
+    "ua": ""
+  },
+  "day_25": {
+    "en": "25",
+    "ua": ""
+  },
+  "day_26": {
+    "en": "26",
+    "ua": ""
+  },
+  "day_27": {
+    "en": "27",
+    "ua": ""
+  },
+  "day_28": {
+    "en": "28",
+    "ua": ""
+  },
+  "day_29": {
+    "en": "29",
+    "ua": ""
+  },
+  "day_30": {
+    "en": "30",
+    "ua": ""
+  },
+  "day_31": {
+    "en": "31",
+    "ua": ""
+  },
+  "week_sun": {
+    "en": "{t:0.3:b43c50ff}Sun{t:0.3:000000ff}",
+    "ua": "{t:0.3:b43c50ff}Нд{t:0.3:000000ff}"
+  },
+  "week_mon": {
+    "en": "Mon",
+    "ua": "Пн"
+  },
+  "week_tue": {
+    "en": "Tue",
+    "ua": "Вт"
+  },
+  "week_wed": {
+    "en": "Wed",
+    "ua": "Ср"
+  },
+  "week_thu": {
+    "en": "Thu",
+    "ua": "Чт"
+  },
+  "week_fri": {
+    "en": "Fri",
+    "ua": "Пт"
+  },
+  "week_sat": {
+    "en": "{t:0.3:0078a0ff}Sat{t:0.3:000000ff}",
+    "ua": "{t:0.3:0078a0ff}Сб{t:0.3:000000ff}"
+  },
+  "am": {
+    "en": "",
+    "ua": ""
+  },
+  "pm": {
+    "en": "",
+    "ua": ""
+  },
+  "day_window_title": {
+    "en": "%d/%M/%Y (%w)",
+    "ua": ""
+  },
+  "week_window_title": {
+    "en": "",
+    "ua": ""
+  },
+  "week_window_title_2": {
+    "en": "",
+    "ua": ""
+  },
+  "week_window_title_start": {
+    "en": "%d/%M/%y - ",
+    "ua": ""
+  },
+  "week_window_title_end": {
+    "en": "%d/%M/%y",
+    "ua": ""
+  },
+  "month_window_title": {
+    "en": "%N %Y",
+    "ua": ""
+  },
+  "year_window_title": {
+    "en": "%Y",
+    "ua": ""
+  },
+  "soft_title_unknown": {
+    "en": "????????",
+    "ua": ""
+  },
+  "day_point_format": {
+    "en": "%H:%m",
+    "ua": ""
+  },
+  "week_point_format": {
+    "en": "%w %d",
+    "ua": ""
+  },
+  "month_point_format": {
+    "en": "",
+    "ua": ""
+  },
+  "month_point_format_10": {
+    "en": "10th",
+    "ua": "10"
+  },
+  "month_point_format_20": {
+    "en": "20th",
+    "ua": "20"
+  },
+  "month_point_format_28": {
+    "en": "28th",
+    "ua": "28"
+  },
+  "month_point_format_29": {
+    "en": "29th",
+    "ua": "29"
+  },
+  "month_point_format_30": {
+    "en": "30th",
+    "ua": "30"
+  },
+  "month_point_format_31": {
+    "en": "31st",
+    "ua": "31"
+  },
+  "year_point_format": {
+    "en": "%n",
+    "ua": ""
+  },
+  "walk_scale_origin_format": {
+    "en": "%d",
+    "ua": ""
+  },
+  "walk_scale_format": {
+    "en": "%d",
+    "ua": ""
+  },
+  "play_record_scale_origin_format_h": {
+    "en": "%Hhr",
+    "ua": "%Hгод"
+  },
+  "play_record_scale_format_h": {
+    "en": "%Hhr",
+    "ua": "%Hгод"
+  },
+  "play_record_scale_format_h_float": {
+    "en": "%.1fhr",
+    "ua": "%.1fгод"
+  },
+  "play_record_scale_origin_format_m": {
+    "en": "%dmin",
+    "ua": "%dхв"
+  },
+  "play_record_scale_format_m": {
+    "en": "%dmin",
+    "ua": "%dхв"
+  },
+  "view_sum_steps_day": {
+    "en": "Selected Day",
+    "ua": "Вибраний день"
+  },
+  "view_sum_steps_week": {
+    "en": "Selected Week",
+    "ua": "Вибраний тиждень"
+  },
+  "view_sum_steps_month": {
+    "en": "Selected Month",
+    "ua": "Вибраний місяць"
+  },
+  "view_sum_steps_year": {
+    "en": "Selected Year",
+    "ua": "Вибраний рік"
+  },
+  "total_sum_steps": {
+    "en": "",
+    "ua": ""
+  },
+  "total_sum_steps_day": {
+    "en": "Total As Of This Day",
+    "ua": "Усього на цей день"
+  },
+  "total_sum_steps_week": {
+    "en": "{t:1.1:6200}Total As Of This Week{/t:1.1}",
+    "ua": "{t:1.1:6200}Усього на цей тиждень{/t:1.1}"
+  },
+  "total_sum_steps_month": {
+    "en": "{t:1.1:5f00}Total As Of This Month{/t:1.1}",
+    "ua": "{t:1.1:5f00}Усього на цей місяць{/t:1.1}"
+  },
+  "total_sum_steps_year": {
+    "en": "Total As Of This Year",
+    "ua": "Усього на цей рік"
+  },
+  "sum_steps_separator": {
+    "en": ":",
+    "ua": ""
+  },
+  "digit_separator_o10000": {
+    "en": ",",
+    "ua": " "
+  },
+  "digit_separator_u10000": {
+    "en": ",",
+    "ua": " "
+  },
+  "view_sum_steps_num_sg": {
+    "en": "%ls step",
+    "ua": "%ls крок"
+  },
+  "view_sum_steps_num_pl": {
+    "en": "%ls steps",
+    "ua": "%ls кроків"
+  },
+  "total_sum_steps_num_sg": {
+    "en": "%ls step",
+    "ua": "%ls крок"
+  },
+  "total_sum_steps_num_pl": {
+    "en": "%ls steps",
+    "ua": "%ls кроків"
+  },
+  "walker_title": {
+    "en": "",
+    "ua": ""
+  },
+  "walker_title_separator": {
+    "en": "",
+    "ua": ""
+  },
+  "walker_name": {
+    "en": "",
+    "ua": ""
+  },
+  "view_sum_play": {
+    "en": "",
+    "ua": ""
+  },
+  "play_rank_1": {
+    "en": "",
+    "ua": ""
+  },
+  "play_rank_2": {
+    "en": "",
+    "ua": ""
+  },
+  "play_rank_3": {
+    "en": "",
+    "ua": ""
+  },
+  "no_data_yet": {
+    "en": "No records yet",
+    "ua": "Записів ще немає"
+  },
+  "no_data_day": {
+    "en": "No records for the\nselected day",
+    "ua": "Немає записів за\nвибраний день"
+  },
+  "no_data_week": {
+    "en": "No records for the\nselected week",
+    "ua": "Немає записів за\nвибраний тиждень"
+  },
+  "no_data_month": {
+    "en": "No records for the\nselected month",
+    "ua": "Немає записів за\nвибраний місяць"
+  },
+  "no_data_year": {
+    "en": "No records for the\nselected year",
+    "ua": "Немає записів за\nвибраний рік"
+  },
+  "mode_name_steps": {
+    "en": "Steps",
+    "ua": "Кроки"
+  },
+  "mode_name_play_time": {
+    "en": "Play Time",
+    "ua": "Час гри"
+  },
+  "table_title": {
+    "en": "",
+    "ua": ""
+  },
+  "table_title_day": {
+    "en": "Events for %ls",
+    "ua": "Події за %ls"
+  },
+  "table_title_week": {
+    "en": "Events for %ls",
+    "ua": "Події за %ls"
+  },
+  "table_title_month": {
+    "en": "Events for %ls",
+    "ua": "Події за %ls"
+  },
+  "table_title_year": {
+    "en": "Events for %ls",
+    "ua": "Події за %ls"
+  },
+  "table_steps": {
+    "en": "Steps",
+    "ua": "Кроки"
+  },
+  "table_play_total": {
+    "en": "Play Time",
+    "ua": "Час гри"
+  },
+  "table_play_sum": {
+    "en": "",
+    "ua": ""
+  },
+  "table_play_total_others": {
+    "en": "Other",
+    "ua": "Інше"
+  },
+  "table_steps_value": {
+    "en": "",
+    "ua": ""
+  },
+  "table_steps_value_sg": {
+    "en": "%ls",
+    "ua": ""
+  },
+  "table_steps_value_pl": {
+    "en": "%ls",
+    "ua": ""
+  },
+  "table_play_time_value": {
+    "en": "%H:%m",
+    "ua": ""
+  },
+  "table_play_time_count": {
+    "en": "",
+    "ua": ""
+  },
+  "table_play_time_count_sg": {
+    "en": "%ls title / ",
+    "ua": "%ls прогр. / "
+  },
+  "table_play_time_count_pl": {
+    "en": "%ls titles / ",
+    "ua": "%ls прогр. / "
+  },
+  "show_ranking": {
+    "en": "Charts",
+    "ua": "Рейтинги"
+  },
+  "show_ranking_sort": {
+    "en": "Sort By...",
+    "ua": "Сортувати…"
+  },
+  "soft_record_title": {
+    "en": "Software\nLibrary",
+    "ua": "Бібліотека\nпрограм"
+  },
+  "soft_record_total_sg": {
+    "en": "",
+    "ua": ""
+  },
+  "soft_record_total_pl": {
+    "en": "",
+    "ua": ""
+  },
+  "soft_record_name": {
+    "en": "",
+    "ua": ""
+  },
+  "soft_record_page_left": {
+    "en": "%d",
+    "ua": ""
+  },
+  "soft_record_page_right": {
+    "en": "%d",
+    "ua": ""
+  },
+  "soft_record_top_title": {
+    "en": "",
+    "ua": ""
+  },
+  "soft_record_top_icon": {
+    "en": "",
+    "ua": ""
+  },
+  "soft_record_top_platform_3DSWare": {
+    "en": "",
+    "ua": ""
+  },
+  "soft_record_top_platform_GB": {
+    "en": "",
+    "ua": ""
+  },
+  "soft_record_top_platform_GBC": {
+    "en": "",
+    "ua": ""
+  },
+  "soft_record_top_platform_AGB": {
+    "en": "",
+    "ua": ""
+  },
+  "soft_record_top_platform_3DS": {
+    "en": "",
+    "ua": ""
+  },
+  "soft_record_top_platform_DSiWare": {
+    "en": "",
+    "ua": ""
+  },
+  "soft_record_top_platform_DS": {
+    "en": "",
+    "ua": ""
+  },
+  "soft_record_top_platform_DSi": {
+    "en": "",
+    "ua": ""
+  },
+  "soft_record_top_platform_others": {
+    "en": "",
+    "ua": ""
+  },
+  "soft_record_top_play_time": {
+    "en": "Total Time Played",
+    "ua": "Усього часу гри"
+  },
+  "soft_record_top_play_count": {
+    "en": "No. Times Played",
+    "ua": "Кількість запусків"
+  },
+  "soft_record_top_play_average": {
+    "en": "Average Play Time",
+    "ua": "Середній час гри"
+  },
+  "soft_record_top_first_play": {
+    "en": "First Played",
+    "ua": "Перший запуск"
+  },
+  "soft_record_top_latest_play": {
+    "en": "Last Played",
+    "ua": "Останній запуск"
+  },
+  "soft_record_top_rating": {
+    "en": "",
+    "ua": ""
+  },
+  "soft_record_top_play_time_value": {
+    "en": "%H:%m",
+    "ua": ""
+  },
+  "soft_record_top_play_count_value": {
+    "en": "%ls",
+    "ua": ""
+  },
+  "soft_record_top_play_average_value": {
+    "en": "%H:%m",
+    "ua": ""
+  },
+  "soft_record_top_first_play_value": {
+    "en": "%d/%M/%Y",
+    "ua": ""
+  },
+  "soft_record_top_latest_play_value": {
+    "en": "%d/%M/%Y",
+    "ua": ""
+  },
+  "soft_record_top_rating_char": {
+    "en": "",
+    "ua": ""
+  },
+  "ranking_title_play_time": {
+    "en": "Total Time Played",
+    "ua": "Усього часу гри"
+  },
+  "ranking_title_play_count": {
+    "en": "No. Times Played",
+    "ua": "Кількість запусків"
+  },
+  "ranking_title_play_average": {
+    "en": "Average Play Time",
+    "ua": "Середній час гри"
+  },
+  "ranking_title_first_play": {
+    "en": "Date First Played",
+    "ua": "Дата першого запуску"
+  },
+  "ranking_title_latest_play": {
+    "en": "Date Last Played",
+    "ua": "Дата останнього запуску"
+  },
+  "ranking_rank": {
+    "en": "%d",
+    "ua": ""
+  },
+  "ordinal_1": {
+    "en": "%dst",
+    "ua": "%d-е"
+  },
+  "ordinal_2": {
+    "en": "%dnd",
+    "ua": "%d-е"
+  },
+  "ordinal_3": {
+    "en": "%drd",
+    "ua": "%d-е"
+  },
+  "ordinal_4": {
+    "en": "%dth",
+    "ua": "%d-е"
+  },
+  "days_ago": {
+    "en": "%d days ago",
+    "ua": "%d дн. тому"
+  },
+  "days_ago_yesterday": {
+    "en": "Yesterday",
+    "ua": "Учора"
+  },
+  "show_book": {
+    "en": "Back to Library",
+    "ua": "До бібліотеки"
+  },
+  "erase_icon1": {
+    "en": "Delete data for this software\nfrom your software library?{t:1.0:1400}\n{/t:1.0}\n{t:0.3:5a5a5aff}{t:1.0:5500}Data in Daily Records will not\nbe deleted. If you use this\nsoftware again, it will reappear\nin the software library.{/t:1.0}{t:0.3:000000ff}",
+    "ua": "Видалити дані цієї програми\nз бібліотеки програм?{t:1.0:1400}\n{/t:1.0}\n{t:0.3:5a5a5aff}{t:1.0:5500}Дані у Щоденних записах не\nбуде видалено. Якщо ви знову\nзапустите цю програму, вона\nповернеться до бібліотеки.{/t:1.0}{t:0.3:000000ff}"
+  },
+  "erase_icon2": {
+    "en": "Really delete data?",
+    "ua": "Справді видалити дані??"
+  },
+  "first_dialog_1": {
+    "en": "Welcome to Activity Log!{t:1.0:1400}\n{/t:1.0}\nHere, you can view play time\ndata and the number of steps\nyou've walked while carrying\nyour Nintendo 3DS system.",
+    "ua": "Вітаємо в Журналі дій!{t:1.0:1400}\n{/t:1.0}\nТут можна побачити дані про\nчас гри та кількість кроків,\nякі ви пройшли з вашою\nконсоллю Nintendo 3DS."
+  },
+  "first_dialog_2": {
+    "en": "Press HOME at any time to\nreturn to the HOME Menu.",
+    "ua": "Натисніть HOME, щоб\nповернутися до меню HOME."
+  },
+  "new_dialog_1": {
+    "en": "",
+    "ua": ""
+  },
+  "new_dialog_1_sg": {
+    "en": "A new title has\nbeen added to\nthe Software Library!",
+    "ua": "Нову програму\nдодано до\nбібліотеки програм!"
+  },
+  "new_dialog_1_pl": {
+    "en": "New titles have\nbeen added to\nthe Software Library!",
+    "ua": "Нові програми\nдодано до\nбібліотеки програм!"
+  },
+  "new_dialog_2": {
+    "en": "",
+    "ua": ""
+  },
+  "new_dialog_2_sg": {
+    "en": "Title Added",
+    "ua": "Програму додано"
+  },
+  "new_dialog_2_pl": {
+    "en": "Titles Added",
+    "ua": "Програми додано"
+  },
+  "daily_record_bonus_dialog": {
+    "en": "",
+    "ua": ""
+  },
+  "soft_record_bonus_dialog": {
+    "en": "",
+    "ua": ""
+  },
+  "erase_icon3": {
+    "en": "",
+    "ua": ""
+  },
+  "erase_icon4": {
+    "en": "",
+    "ua": ""
+  },
+  "erase_icon5": {
+    "en": "",
+    "ua": ""
+  },
+  "wait_dialog1": {
+    "en": "",
+    "ua": ""
+  },
+  "wait_dialog2": {
+    "en": "Loading records...\nPlease wait.{t:1.0:1400}\n{/t:1.0}\n{t:0.3:5a5a5aff}{t:1.0:5500}This may take up to a minute.{/t:1.0}{t:0.3:000000ff}",
+    "ua": "Завантаження записів…\nЗачекайте.{t:1.0:1400}\n{/t:1.0}\n{t:0.3:5a5a5aff}{t:1.0:5500}Це може тривати до хвилини.{/t:1.0}{t:0.3:000000ff}"
+  },
+  "wait_dialog3": {
+    "en": "Loading records...\nPlease wait.{t:1.0:1400}\n{/t:1.0}\n{t:0.3:5a5a5aff}{t:1.0:5500}This may take several minutes.{/t:1.0}{t:0.3:000000ff}",
+    "ua": "Завантаження записів…\nЗачекайте.{t:1.0:1400}\n{/t:1.0}\n{t:0.3:5a5a5aff}{t:1.0:5500}Це може тривати кілька хв.{/t:1.0}{t:0.3:000000ff}"
+  },
+  "mii_error": {
+    "en": "The Mii Maker save data was\ncorrupted and has been reset.",
+    "ua": "Дані Mii Maker були\nпошкоджені й скинуті.."
+  },
+  "friend_message_1": {
+    "en": "",
+    "ua": ""
+  },
+  "friend_message_2": {
+    "en": "",
+    "ua": ""
+  }
+}

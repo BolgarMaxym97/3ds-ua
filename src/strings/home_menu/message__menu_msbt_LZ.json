@@ -361,7 +361,7 @@
   },
   "lau_dlg_progress": {
     "en": "%d%% downloaded",
-    "ua": "Завантажено %d%%%%"
+    "ua": "Завантажено %d%%"
   },
   "lau_dlg_delete0": {
     "en": "",
@@ -1793,7 +1793,7 @@
   },
   "lau_2b_folder_name": {
     "en": "%d (New Folder)",
-    "ua": "%%d (нова))"
+    "ua": "%d (нова)"
   },
   "lau_2b_folder_noname": {
     "en": "(No name)",

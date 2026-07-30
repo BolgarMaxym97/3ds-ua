@@ -15,13 +15,14 @@ from pathlib import Path
 
 sys.path.insert(0, str(Path(__file__).parent))
 from build import TITLES, apply_homoglyphs, load_homoglyphs  # noqa: E402
+from msbt import parse as msbt_parse  # noqa: E402
+from store import open_store  # noqa: E402
 from validate import (  # noqa: E402
     WIDTH_LIMIT,
     WIDTH_SLACK,
     Budget,
     label_budgets,
     load_charset,
-    load_msbt,
     load_widths,
     pixel_width,
 )
@@ -30,22 +31,16 @@ ROOT = Path(__file__).resolve().parent.parent
 
 
 def list_label(name: str, label: str, widths: dict[int, int], budget: Budget) -> None:
-    """Print the label's text in every language folder of the title."""
+    """Print the label's text in every language the title ships."""
     cfg = TITLES[name]
-    romfs = ROOT / "work" / cfg["source_tid"] / "romfs"
+    store = open_store(cfg, ROOT / "work" / cfg["source_tid"] / "romfs")
 
-    for json_file in sorted((ROOT / "src" / "strings" / name).glob("*.json")):
-        message_dir, file_stem = json_file.stem.split("__", 1)
-        for lang_dir in sorted((romfs / message_dir).iterdir()):
-            if not lang_dir.is_dir():
-                continue
-            for candidate in lang_dir.iterdir():
-                if candidate.name.split(".")[0] != file_stem:
-                    continue
-                data = load_msbt(candidate)
-                if label in data.labels:
-                    text = data.texts[data.labels[label]]
-                    print(f"{lang_dir.name:16} {pixel_width(text, widths):5}px  {text!r}")
+    for lang in store.languages():
+        for data in store.read(lang).values():
+            msbt = msbt_parse(data)
+            if label in msbt.labels:
+                text = msbt.texts[msbt.labels[label]]
+                print(f"{lang:16} {pixel_width(text, widths):5}px  {text!r}")
 
     print(f"\nbudget: {budget.width_px}px wide, {budget.lines} lines")
 

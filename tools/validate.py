@@ -12,6 +12,12 @@ Rules (every violation is an error):
   3. more lines than the tallest official localisation would overflow the dialog
   4. a control tag that appears in no official localisation of that label is invented
   5. a malformed tag token
+  6. format specifiers (%d, %ls, %H, ...) differ from the original: the app would print
+     garbage or crash
+
+Labels that share one UI slot (e.g. every entry of the language list) can be grouped
+with `budget_groups` regexes in TITLES: the group's widest member sets the budget for
+all of them, because the slot must already fit the longest sibling.
 
 The budgets (width, height, allowed tags) are the maximum/union across ALL language
 folders of the title: the UI has to fit the longest official localisation, so that is
@@ -30,14 +36,17 @@ from pathlib import Path
 
 sys.path.insert(0, str(Path(__file__).parent))
 from build import TITLES, apply_homoglyphs, load_homoglyphs  # noqa: E402
-from lz11 import decompress  # noqa: E402
-from msbt import TOKEN_RE, Msbt  # noqa: E402
+from msbt import TOKEN_RE  # noqa: E402
 from msbt import parse as msbt_parse  # noqa: E402
+from store import open_store  # noqa: E402
 
 ROOT = Path(__file__).resolve().parent.parent
 WIDTH_LIMIT = 1.05  # headroom for renderer rounding
 WIDTH_SLACK = 4     # absolute slack, so wording is not rewritten over 1-2 pixels
 BRACE_RE = re.compile(r"\{[^}]*\}")
+# %% is a literal percent sign and must survive translation, so it is matched first;
+# a space is not part of the flags here - it would swallow the next word's first letter.
+FORMAT_RE = re.compile(r"%%|%[-+#0-9.]*(?:ls|lc|[a-zA-Z])")
 
 
 @dataclass
@@ -57,12 +66,6 @@ def load_widths() -> dict[int, int]:
     return {int(code, 16): width for code, width in data.items()}
 
 
-def load_msbt(path: Path) -> Msbt:
-    raw = path.read_bytes()
-    data = decompress(raw) if path.name.endswith("_LZ.bin") else raw
-    return msbt_parse(data)
-
-
 def strip_tags(text: str) -> str:
     return TOKEN_RE.sub("", text)
 
@@ -78,24 +81,30 @@ def pixel_width(text: str, widths: dict[int, int]) -> int:
 def label_budgets(name: str, widths: dict[int, int]) -> dict[str, Budget]:
     """Per-label budgets: max width and line count, union of tags across all languages."""
     cfg = TITLES[name]
-    romfs = ROOT / "work" / cfg["source_tid"] / "romfs"
+    store = open_store(cfg, ROOT / "work" / cfg["source_tid"] / "romfs")
     budgets: dict[str, Budget] = {}
 
-    for json_file in sorted((ROOT / "src" / "strings" / name).glob("*.json")):
-        message_dir, file_stem = json_file.stem.split("__", 1)
-        for lang_dir in sorted((romfs / message_dir).iterdir()):
-            if not lang_dir.is_dir():
-                continue
-            for candidate in lang_dir.iterdir():
-                if candidate.name.split(".")[0] != file_stem:
-                    continue
-                data = load_msbt(candidate)
-                for index, text in enumerate(data.texts):
-                    label = data.label_of(index) or f"__index_{index}"
-                    budget = budgets.setdefault(label, Budget())
-                    budget.width_px = max(budget.width_px, pixel_width(text, widths))
-                    budget.lines = max(budget.lines, text.count("\n") + 1)
-                    budget.tags |= set(TOKEN_RE.findall(text))
+    for lang in store.languages():
+        for data in store.read(lang).values():
+            msbt = msbt_parse(data)
+            for index, text in enumerate(msbt.texts):
+                label = msbt.label_of(index) or f"__index_{index}"
+                budget = budgets.setdefault(label, Budget())
+                budget.width_px = max(budget.width_px, pixel_width(text, widths))
+                budget.lines = max(budget.lines, text.count("\n") + 1)
+                budget.tags |= set(TOKEN_RE.findall(text))
+
+    for pattern in cfg.get("budget_groups", []):
+        group = [label for label in budgets if re.fullmatch(pattern, label)]
+        if len(group) < 2:
+            continue
+        shared = Budget(
+            width_px=max(budgets[label].width_px for label in group),
+            lines=max(budgets[label].lines for label in group),
+            tags=set().union(*(budgets[label].tags for label in group)),
+        )
+        for label in group:
+            budgets[label] = shared
 
     return budgets
 
@@ -117,6 +126,11 @@ def check_entry(
     for brace in BRACE_RE.findall(ua):
         if not TOKEN_RE.fullmatch(brace):
             problems.append(f"{label}: malformed tag token {brace!r}")
+
+    src_formats = sorted(FORMAT_RE.findall(entry.get("en", "")))
+    dst_formats = sorted(FORMAT_RE.findall(ua))
+    if src_formats != dst_formats:
+        problems.append(f"{label}: format specifiers {dst_formats} do not match the original {src_formats}")
 
     unknown = set(TOKEN_RE.findall(ua)) - budget.tags
     if unknown:

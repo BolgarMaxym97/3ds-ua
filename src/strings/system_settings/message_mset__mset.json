@@ -1,0 +1,5238 @@
+{
+  "base_button_0": {
+    "en": "",
+    "ua": ""
+  },
+  "base_1b_menu": {
+    "en": "",
+    "ua": ""
+  },
+  "base_1b_ok": {
+    "en": "OK",
+    "ua": "OK"
+  },
+  "base_1b_decide": {
+    "en": "OK",
+    "ua": "OK"
+  },
+  "base_1b_next": {
+    "en": "Next",
+    "ua": "Далі"
+  },
+  "base_2b_ok": {
+    "en": "OK",
+    "ua": "OK"
+  },
+  "base_2b_cancel": {
+    "en": "Cancel",
+    "ua": "Скасувати"
+  },
+  "base_2b_cancel_1": {
+    "en": "Cancel",
+    "ua": "Скасувати"
+  },
+  "base_2b_back": {
+    "en": "Back",
+    "ua": "Назад"
+  },
+  "base_2b_decide": {
+    "en": "OK",
+    "ua": "OK"
+  },
+  "base_2b_next": {
+    "en": "Next",
+    "ua": "Далі"
+  },
+  "base_2b_finish": {
+    "en": "Finish",
+    "ua": "Готово"
+  },
+  "base_2b_init": {
+    "en": "Format",
+    "ua": "Формат."
+  },
+  "base_2b_agree": {
+    "en": "",
+    "ua": ""
+  },
+  "base_2b_disagree": {
+    "en": "",
+    "ua": ""
+  },
+  "base_3b_decide": {
+    "en": "",
+    "ua": ""
+  },
+  "base_3b_cancel": {
+    "en": "Cancel",
+    "ua": "Скасувати"
+  },
+  "base_3b_again": {
+    "en": "Retry",
+    "ua": "Повторити"
+  },
+  "base_3b_ok": {
+    "en": "OK",
+    "ua": "OK"
+  },
+  "keyboard_decide": {
+    "en": "OK",
+    "ua": "OK"
+  },
+  "keyboard_cancel": {
+    "en": "Cancel",
+    "ua": "Скасувати"
+  },
+  "dialog_button_": {
+    "en": "",
+    "ua": ""
+  },
+  "dlg_1b_ok": {
+    "en": "OK",
+    "ua": "OK"
+  },
+  "dlg_1b_cancel": {
+    "en": "Cancel",
+    "ua": "Скасувати"
+  },
+  "dlg_1b_cancel2": {
+    "en": "Cancel",
+    "ua": "Скасувати"
+  },
+  "dlg_1b_retry": {
+    "en": "Retry",
+    "ua": "Повторити"
+  },
+  "dlg_2b_ok": {
+    "en": "OK",
+    "ua": "OK"
+  },
+  "dlg_2b_cancel": {
+    "en": "Cancel",
+    "ua": "Скасувати"
+  },
+  "dlg_2b_cancel2": {
+    "en": "Cancel",
+    "ua": "Скасувати"
+  },
+  "dlg_2b_continue": {
+    "en": "Continue",
+    "ua": "Продовжити"
+  },
+  "dlg_no_app": {
+    "en": "You must connect to the internet\nand perform a system update\nbefore you can use this function.",
+    "ua": "Щоб скористатися цією\nфункцією, потрібно\nпід'єднатися до Інтернету\nй оновити систему."
+  },
+  "top_": {
+    "en": "",
+    "ua": ""
+  },
+  "top_sysset_title": {
+    "en": "System Settings",
+    "ua": "Налаштування системи"
+  },
+  "top_btm_text": {
+    "en": " Close",
+    "ua": "Закрити"
+  },
+  "top_internet": {
+    "en": "Internet\nSettings",
+    "ua": "Інтернет-\nналаштування"
+  },
+  "dlg_top_internet_flw": {
+    "en": "This function requires wireless\ncommunication to be enabled.\n\nDo you want to enable\nwireless communication?",
+    "ua": "Ця функція потребує\nувімкненого бездротового\nзв'язку.\n\nУвімкнути бездротовий\nзв'язок?"
+  },
+  "dlg_top_internet_sac": {
+    "en": "This function requires wireless\ncommunication to be enabled.\n\nDo you want to enable\nwireless communication?",
+    "ua": "Ця функція потребує\nувімкненого бездротового\nзв'язку.\n\nУвімкнути бездротовий\nзв'язок?"
+  },
+  "dlg_top_internet_jan": {
+    "en": "This function requires wireless\ncommunication to be enabled.\n\nDo you want to enable\nwireless communication?",
+    "ua": "Ця функція потребує\nувімкненого бездротового\nзв'язку.\n\nУвімкнути бездротовий\nзв'язок?"
+  },
+  "dlg_top_net_on_flw": {
+    "en": "Enable",
+    "ua": "Увімкнути"
+  },
+  "dlg_top_net_on_sac": {
+    "en": "Enable",
+    "ua": "Увімкнути"
+  },
+  "dlg_top_net_on_jan": {
+    "en": "Enable",
+    "ua": "Увімкнути"
+  },
+  "dlg_top_net_off_flw": {
+    "en": "Back",
+    "ua": "Назад"
+  },
+  "dlg_top_net_off_sac": {
+    "en": "Back",
+    "ua": "Назад"
+  },
+  "dlg_top_net_off_jan": {
+    "en": "Back",
+    "ua": "Назад"
+  },
+  "top_settings": {
+    "en": "Other Settings",
+    "ua": "Інші\nналаштування"
+  },
+  "top_parental": {
+    "en": "Parental\nControls",
+    "ua": "Батьківський\nконтроль"
+  },
+  "top_software": {
+    "en": "Data\nManagement",
+    "ua": "Керування\nданими"
+  },
+  "top_nnid": {
+    "en": "Nintendo Network ID Settings",
+    "ua": "Налаштування Nintendo Network ID"
+  },
+  "dlg_nnid_cup": {
+    "en": "Connect to the internet and\nupdate your system to use\nthese settings.",
+    "ua": "Під'єднайтеся до Інтернету\nй оновіть систему, щоб\nвикористати ці налаштування."
+  },
+  "dlg_app_jump": {
+    "en": "Please wait...",
+    "ua": "Зачекайте, будь ласка…"
+  },
+  "page1": {
+    "en": "",
+    "ua": ""
+  },
+  "dlg_petit_u": {
+    "en": "You can also adjust settings\nfrom the HOME Menu.",
+    "ua": "Налаштування також можна\nзмінювати з меню HOME."
+  },
+  "settings_title": {
+    "en": "Other Settings",
+    "ua": "Інші налаштування"
+  },
+  "settings_comm_u": {
+    "en": "Select settings to adjust.",
+    "ua": "Виберіть налаштування для зміни."
+  },
+  "user_info": {
+    "en": "Profile",
+    "ua": "Профіль"
+  },
+  "date_time": {
+    "en": "Date & Time",
+    "ua": "Дата й час"
+  },
+  "touch": {
+    "en": "Touch Screen",
+    "ua": "Сенсорний дисплей"
+  },
+  "page2": {
+    "en": "",
+    "ua": ""
+  },
+  "analog_pad": {
+    "en": "Circle Pad",
+    "ua": "Circle Pad"
+  },
+  "mic_test": {
+    "en": "Mic Test",
+    "ua": "Тест мікрофона"
+  },
+  "3d_check": {
+    "en": "3D Calibration",
+    "ua": "Калібрування 3D"
+  },
+  "qtm": {
+    "en": "Super-Stable 3D",
+    "ua": "Стабільне 3D"
+  },
+  "about_flw": {
+    "en": "About this system",
+    "ua": "Про цю систему"
+  },
+  "about_jan": {
+    "en": "About this system",
+    "ua": "Про цю систему"
+  },
+  "page3": {
+    "en": "",
+    "ua": ""
+  },
+  "sound": {
+    "en": "Sound",
+    "ua": "Звук"
+  },
+  "ocam": {
+    "en": "Outer Cameras",
+    "ua": "Зовнішні камери"
+  },
+  "trans": {
+    "en": "System Transfer",
+    "ua": "Перенесення системи"
+  },
+  "page4": {
+    "en": "",
+    "ua": ""
+  },
+  "language": {
+    "en": "Language",
+    "ua": "Мова"
+  },
+  "update": {
+    "en": "System Update",
+    "ua": "Оновлення"
+  },
+  "initialize": {
+    "en": "Format System Memory",
+    "ua": "Форматування пам'яті"
+  },
+  "dlg_bright": {
+    "en": "Screen Brightness",
+    "ua": "Яскравість екрана"
+  },
+  "dlg_eco": {
+    "en": "Power-Saving Mode",
+    "ua": "Енергоощадний режим"
+  },
+  "dlg_wireless_s_flw": {
+    "en": "Wireless Communication",
+    "ua": "Бездротовий зв'язок"
+  },
+  "dlg_on": {
+    "en": "ON",
+    "ua": "УВІМК."
+  },
+  "dlg_off": {
+    "en": "OFF",
+    "ua": "ВИМК."
+  },
+  "user_info_set_": {
+    "en": "",
+    "ua": ""
+  },
+  "user_info_title": {
+    "en": "Profile",
+    "ua": "Профіль"
+  },
+  "user_name_u": {
+    "en": "User Name",
+    "ua": "Ім'я"
+  },
+  "region_u": {
+    "en": "Region",
+    "ua": "Регіон"
+  },
+  "birthday_u": {
+    "en": "Date of Birth",
+    "ua": "Народження"
+  },
+  "user_none_set_u": {
+    "en": "",
+    "ua": ""
+  },
+  "user_info_comm_u": {
+    "en": "Which settings would you like to adjust?",
+    "ua": "Які налаштування ви хочете змінити?"
+  },
+  "user_name_comm_u": {
+    "en": "Enter your user name. (Do not use your\nreal name as it will be viewed by others.)",
+    "ua": "Введіть ім'я користувача. (Не беріть\nсправжнє ім'я — його побачать інші.)"
+  },
+  "user_comm": {
+    "en": "Profile",
+    "ua": "Профіль"
+  },
+  "user_name": {
+    "en": "User Name",
+    "ua": "Ім'я користувача"
+  },
+  "region": {
+    "en": "Region Settings",
+    "ua": "Налаштування регіону"
+  },
+  "birthday": {
+    "en": "Date of Birth",
+    "ua": "Дата народження"
+  },
+  "ds_user_info": {
+    "en": "Nintendo DS Profile",
+    "ua": "Профіль Nintendo DS"
+  },
+  "dlg_user_name_ok": {
+    "en": "User name has been saved.",
+    "ua": "Ім'я користувача збережено."
+  },
+  "dlg_user_ngword": {
+    "en": "Your user name contains words\nthat others may find offensive\nand may not be displayed in\ncertain circumstances until\nyou change it.",
+    "ua": "Ваше ім'я користувача містить\nслова, які інші можуть вважати\nобразливими, тому його може\nбути не показано в деяких\nвипадках, поки ви його не зміните."
+  },
+  "dlg_user_name_ng": {
+    "en": "",
+    "ua": ""
+  },
+  "country_set_": {
+    "en": "",
+    "ua": ""
+  },
+  "country_comm_u": {
+    "en": "Select your country of residence.",
+    "ua": "Виберіть країну проживання."
+  },
+  "area_comm_u": {
+    "en": "Select your region.",
+    "ua": "Виберіть регіон."
+  },
+  "dlg_area_set": {
+    "en": "Region settings changed.",
+    "ua": "Налаштування регіону змінено."
+  },
+  "area_none": {
+    "en": "Do not set",
+    "ua": "Не задавати"
+  },
+  "dlg_area_set_1": {
+    "en": "",
+    "ua": ""
+  },
+  "dlg_region": {
+    "en": "You will need to reconfigure your\nParental Controls settings.\n\nIs this OK?",
+    "ua": "Вам доведеться заново задати\nбатьківський контроль.\n\nПродовжити?"
+  },
+  "dlg_region_00": {
+    "en": "If you change your country\nsettings, you will no longer be \nable to use services that require\na Nintendo Network ID, such as\nbrowsing Nintendo eShop or\nposting to Miiverse.",
+    "ua": "Якщо змінити налаштування\nкраїни, ви більше не зможете\nкористуватися сервісами, що\nпотребують Nintendo Network ID,\nнаприклад Nintendo eShop\nабо Miiverse."
+  },
+  "dlg_region_01": {
+    "en": "After changing your country\nsettings, you will also need to\nreconfigure the restrictions for\nsoftware ratings in Parental\nControls.",
+    "ua": "Після зміни налаштувань\nкраїни також потрібно буде\nзаново налаштувати обмеження\nвікових рейтингів у\nбатьківському контролі."
+  },
+  "birthday_set_": {
+    "en": "",
+    "ua": ""
+  },
+  "birthday_comm": {
+    "en": "Date of Birth",
+    "ua": "Дата народження"
+  },
+  "birthday_comm_u": {
+    "en": "Enter your date of birth.",
+    "ua": "Введіть дату народження."
+  },
+  "dlg_birthday_set": {
+    "en": "Your date of birth has been set.",
+    "ua": "Дату народження задано."
+  },
+  "datetime_set_": {
+    "en": "",
+    "ua": ""
+  },
+  "date_time_title": {
+    "en": "Date & Time",
+    "ua": "Дата й час"
+  },
+  "date_comm": {
+    "en": "Today's Date",
+    "ua": "Сьогоднішня дата"
+  },
+  "date_btn": {
+    "en": "Today's Date",
+    "ua": "Сьогоднішня дата"
+  },
+  "time_btn": {
+    "en": "Current Time",
+    "ua": "Поточний час"
+  },
+  "datetime_comm_u": {
+    "en": "Which would you like to change?",
+    "ua": "Що ви хочете змінити?"
+  },
+  "date_comm_u": {
+    "en": "Enter today's date.",
+    "ua": "Введіть сьогоднішню дату."
+  },
+  "time_comm": {
+    "en": "Current Time",
+    "ua": "Поточний час"
+  },
+  "time_comm_u": {
+    "en": "Enter the current time.",
+    "ua": "Введіть поточний час."
+  },
+  "year": {
+    "en": "Year",
+    "ua": "Рік"
+  },
+  "month": {
+    "en": "Month",
+    "ua": "Місяць"
+  },
+  "day": {
+    "en": "Day",
+    "ua": "День"
+  },
+  "hour": {
+    "en": "Hour",
+    "ua": "Година"
+  },
+  "minute": {
+    "en": "Minute",
+    "ua": "Хвилина"
+  },
+  "dlg_date_change": {
+    "en": "Changing the date may cause\ndata in applications such as the\nActivity Log to be deleted or\ndisplayed incorrectly.",
+    "ua": "Зміна дати може призвести до\nвидалення або неправильного\nпоказу даних у програмах,\nнаприклад у Журналі дій."
+  },
+  "dlg_datetime_set": {
+    "en": "",
+    "ua": ""
+  },
+  "dlg_date_set": {
+    "en": "The date has been set.",
+    "ua": "Дату задано."
+  },
+  "dlg_time_set": {
+    "en": "The time has been set.",
+    "ua": "Час задано."
+  },
+  "touch_set_": {
+    "en": "",
+    "ua": ""
+  },
+  "touch_title": {
+    "en": "Touch Screen",
+    "ua": "Сенсорний дисплей"
+  },
+  "touch_comm_u": {
+    "en": "Calibrate Touch Screen input.\n\nTouch the centre of  with the stylus.",
+    "ua": "Калібрування сенсорного дисплея.\n\nТоркніться стилусом центру ."
+  },
+  "touch_cancel": {
+    "en": "Press the B Button\nto cancel.",
+    "ua": "Натисніть кнопку B,\nщоб скасувати."
+  },
+  "touch_finish": {
+    "en": "Calibration complete.\nTouch  to test the calibration.",
+    "ua": "Калібрування завершено.\nТоркніться , щоб перевірити."
+  },
+  "dlg_touch_set": {
+    "en": "The Touch Screen has been\ncalibrated.",
+    "ua": "Сенсорний дисплей\nвідкалібровано."
+  },
+  "3d_set_": {
+    "en": "",
+    "ua": ""
+  },
+  "3d_title_u": {
+    "en": "3D Calibration",
+    "ua": "Калібрування 3D"
+  },
+  "3d_comm0": {
+    "en": "Ensure that the 3D depth slider\nto the right of the upper screen\nis at the top, then touch Next.",
+    "ua": "Переконайтеся, що повзунок\nглибини 3D праворуч від\nверхнього екрана вгорі,\nпотім торкніться Далі."
+  },
+  "dlg_3d": {
+    "en": "Move the 3D depth slider,\nlocated to the right of the upper\nscreen, all the way to the top.",
+    "ua": "Пересуньте повзунок глибини\n3D праворуч від верхнього\nекрана до самого верху."
+  },
+  "dlg_3d_qtm_on": {
+    "en": "Here you can activate the\nsuper-stable 3D function.\n\nWould you like to activate\nthis function?",
+    "ua": "Тут можна ввімкнути\nстабільне 3D.\n\nУвімкнути цю функцію?"
+  },
+  "3d_comm1_u_1": {
+    "en": "View the screen\nstraight-on.",
+    "ua": "Дивіться на екран\nпрямо."
+  },
+  "3d_comm1_u_2": {
+    "en": "Position the screen\n25-35cm from you.",
+    "ua": "Тримайте екран\nза 25-35 см."
+  },
+  "3d_comm1_u_2_spr": {
+    "en": "Position the screen\n30-40cm from you.",
+    "ua": "Тримайте екран\nза 30-40 см."
+  },
+  "3d_comm1_u_2_snk": {
+    "en": "Position the screen\n~30cm from you.",
+    "ua": "Тримайте екран\nза ~30 см."
+  },
+  "3d_comm1_u_2_csr": {
+    "en": "Position the screen\n~35cm from you.",
+    "ua": "Тримайте екран\nза ~35 см."
+  },
+  "3d_comm1": {
+    "en": "Hold the system as shown\nand, while keeping this\nposition, touch Next.",
+    "ua": "Тримайте систему як\nпоказано і, не змінюючи\nположення, торкніться Далі."
+  },
+  "3d_comm2": {
+    "en": "3D images will be displayed on\nthe upper screen.\n\nTouch Activate 3D.",
+    "ua": "На верхньому екрані буде\nпоказано 3D-зображення.\n\nТоркніться Увімкнути 3D."
+  },
+  "3d_display": {
+    "en": "Activate 3D",
+    "ua": "Увімкнути 3D"
+  },
+  "3d_comm3": {
+    "en": "A 3D image is being displayed\non the upper screen. Use the\n3D depth slider to the right of\nthe screen to adjust the\nintensity of the 3D effect.\n\nChoose a level that suits you,\nthen touch Done.",
+    "ua": "На верхньому екрані показано\n3D-зображення. Повзунком\nглибини 3D праворуч від\nекрана відрегулюйте силу\n3D-ефекту.\n\nВиберіть комфортний рівень,\nпотім торкніться Готово."
+  },
+  "3d_qtm_comm0": {
+    "en": "A 3D image is being displayed\non the upper screen. Use the\n3D depth slider to the right of\nthe screen to adjust the\nintensity of the 3D effect.\n\nNext, you can check your\nviewing range for 3D images.",
+    "ua": "На верхньому екрані показано\n3D-зображення. Повзунком\nглибини 3D праворуч від\nекрана відрегулюйте силу\n3D-ефекту.\n\nДалі можна перевірити\nдіапазон огляду 3D."
+  },
+  "dlg_3d_qtm3": {
+    "en": "You can see the position of your\nface on the upper screen.\n\nThe frame shows the range\nwithin which you will be able\nto view 3D images.",
+    "ua": "На верхньому екрані видно\nположення вашого обличчя.\n\nРамка показує діапазон,\nу якому ви зможете бачити\n3D-зображення."
+  },
+  "3d_qtm_comm2": {
+    "en": "Check that you can still see a\n3D image on the upper screen\nwhen you move your head or\nchange the viewing angle.",
+    "ua": "Перевірте, чи 3D-зображення\nна верхньому екрані видно й\nтоді, коли ви рухаєте головою\nчи змінюєте кут огляду."
+  },
+  "3d_qtm_details": {
+    "en": "What is super-stable 3D?",
+    "ua": "Що таке стабільне 3D?"
+  },
+  "dlg_3d_qtm_d0": {
+    "en": "Super-stable 3D is a function\nthat enables you to view 3D\nimages on the upper screen\nwithout having to keep your\nhead still. It works by tracking\nthe position of your eyes and\nadjusting the display.",
+    "ua": "Стабільне 3D — функція, яка\nдає змогу бачити 3D-зображення\nна верхньому екрані, не\nтримаючи голову нерухомо.\nВона відслідковує положення\nваших очей і підлаштовує\nзображення."
+  },
+  "dlg_3d_qtm_d1": {
+    "en": "The system uses the camera\nfunction to track your eyes.\n\nThis feature may not be\ncompatible with some software,\nincluding software that uses\nthe camera function.",
+    "ua": "Система відслідковує очі\nза допомогою камери.\n\nЦя функція може бути\nнесумісною з деякими\nпрограмами, зокрема тими,\nщо використовують камеру."
+  },
+  "3d_qtm_hints": {
+    "en": "Troubleshooting",
+    "ua": "Усунення проблем"
+  },
+  "dlg_3d_qtm_d2": {
+    "en": "Ensure the following while using\nthe super-stable 3D function:\n・ Only one person at a time is\n   viewing the screen\n・ Facial features are not hidden\n・ The inner camera is clean",
+    "ua": "Користуючись стабільним 3D,\nстежте за таким:\n・ на екран дивиться лише\n   одна людина\n・ обличчя не закрите\n・ внутрішня камера чиста"
+  },
+  "dlg_3d_qtm_d3": {
+    "en": "Everyone has a different way\nof viewing 3D images.\n\nIf the 3D image is out of focus,\ngo to System Settings ⇒ Other\nSettings ⇒ Super-Stable 3D\nand adjust the settings.",
+    "ua": "Кожен бачить 3D по-своєму.\n\nЯкщо 3D-зображення розмите,\nперейдіть у Налаштування\nсистеми ⇒ Інші налаштування\n⇒ Стабільне 3D і змініть\nналаштування."
+  },
+  "3d_qtm_u_chack": {
+    "en": "Super-stable 3D must be able to\ndetect a face to function properly.",
+    "ua": "Стабільне 3D працює лише тоді,\nколи система бачить обличчя."
+  },
+  "3d_base_2b_howto": {
+    "en": "Again",
+    "ua": "Знову"
+  },
+  "3d_base_2b_ok": {
+    "en": "Done",
+    "ua": "Готово"
+  },
+  "qtm_set_": {
+    "en": "",
+    "ua": ""
+  },
+  "qtm_title": {
+    "en": "Super-Stable 3D",
+    "ua": "Стабільне 3D"
+  },
+  "qtm_comm": {
+    "en": "Super-Stable 3D",
+    "ua": "Стабільне 3D"
+  },
+  "qtm_comm_u": {
+    "en": "Adjust the super-stable 3D settings.",
+    "ua": "Змініть налаштування\nстабільного 3D."
+  },
+  "qtm_on": {
+    "en": "ON",
+    "ua": "УВІМК."
+  },
+  "dlg_qtm_set_on": {
+    "en": "The super-stable 3D function\nhas been activated.",
+    "ua": "Стабільне 3D увімкнено."
+  },
+  "qtm_off": {
+    "en": "OFF",
+    "ua": "ВИМК."
+  },
+  "dlg_qtm_set_off": {
+    "en": "The super-stable 3D function\nhas been deactivated.",
+    "ua": "Стабільне 3D вимкнено."
+  },
+  "qtm_correction": {
+    "en": "Super-Stable 3D Calibration",
+    "ua": "Калібрування 3D"
+  },
+  "dlg_qtm_ready1": {
+    "en": "Only use the calibration function\nif you notice a problem with the\n3D images on the upper screen.\n\nMistakes made during calibration\nmight make the problem worse.",
+    "ua": "Калібруйте лише тоді, коли\nпомітили проблему з\n3D-зображенням на\nверхньому екрані.\n\nПомилки калібрування можуть\nпогіршити проблему."
+  },
+  "dlg_qtm_ready2": {
+    "en": "Before recalibrating, check that\nnone of the following is causing\nthe problem:\n・ Your features are hidden\n・ The camera is dirty/obstructed\n・ The inner camera is detecting\nsomeone else's face",
+    "ua": "Перед калібруванням\nперевірте, чи причина\nне в такому:\n・ обличчя закрите\n・ камера брудна чи закрита\n・ внутрішня камера бачить\nчуже обличчя"
+  },
+  "qtm_manual": {
+    "en": "Manual Setup",
+    "ua": "Вручну"
+  },
+  "qtm_init": {
+    "en": "Revert to \nDefault Settings",
+    "ua": "Відновити\nумовчання"
+  },
+  "qtm_comm_u_1": {
+    "en": "Calibrate super-stable 3D.\n\nEnsure that the 3D depth slider to the\nright of the upper screen is at the top.",
+    "ua": "Калібрування стабільного 3D.\n\nПовзунок глибини 3D праворуч\nвід верхнього екрана має бути вгорі."
+  },
+  "qtm_comm_u_chack1": {
+    "en": "Move the 3D depth slider\nall the way to the top.",
+    "ua": "Пересуньте повзунок глибини\n3D до самого верху."
+  },
+  "qtm_comm1": {
+    "en": "Adjust the value so that the\nwhole upper screen appears\nas clear as possible.",
+    "ua": "Підберіть значення так, щоб\nусь верхній екран був\nякомога чіткішим."
+  },
+  "qtm_comm2": {
+    "en": "Change your viewing angle\nslightly by moving your head\nleft and right, and check that\nthere are no double images or\nsimilar problems.\n\nFinish calibration?",
+    "ua": "Трохи змініть кут огляду,\nрухаючи головою вліво\nі вправо, і перевірте, чи немає\nподвійних зображень\nабо схожих проблем.\n\nЗавершити калібрування?"
+  },
+  "dlg_qtm_set": {
+    "en": "Super-stable 3D calibration\nis complete.",
+    "ua": "Калібрування стабільного 3D\nзавершено."
+  },
+  "ocam_set_": {
+    "en": "",
+    "ua": ""
+  },
+  "ocam_title": {
+    "en": "Outer Cameras",
+    "ua": "Зовнішні камери"
+  },
+  "ocam_comm_u": {
+    "en": "Use this function to correct any \nproblems with the 3D effect of the\nouter cameras.\nTouch Automatic Setup to begin. Use\nManual Setup when further adjustment\nof the vertical axis is required.",
+    "ua": "Ця функція виправляє проблеми\nз 3D-ефектом зовнішніх камер.\nТоркніться Автоматично, щоб почати.\nВручну — коли потрібно додатково\nвирівняти вертикальну вісь."
+  },
+  "ocam_comm_u_flw": {
+    "en": "Use this function to correct any \nproblems with the outer cameras.\nTouch Automatic Setup to begin. Use\nManual Setup when further adjustment\nof the vertical axis is required.",
+    "ua": "Ця функція виправляє проблеми\nіз зовнішніми камерами.\nТоркніться Автоматично, щоб почати.\nВручну — коли потрібно додатково\nвирівняти вертикальну вісь."
+  },
+  "ocam_comm_u_jan": {
+    "en": "Use this function to correct any \nproblems with the outer cameras.\nTouch Automatic Setup to begin. Use\nManual Setup when further adjustment\nof the vertical axis is required.",
+    "ua": "Ця функція виправляє проблеми\nіз зовнішніми камерами.\nТоркніться Автоматично, щоб почати.\nВручну — коли потрібно додатково\nвирівняти вертикальну вісь."
+  },
+  "ocam_dlg_par": {
+    "en": "Display of 3D images is restricted\nby Parental Controls, so this \nfunction cannot be used.",
+    "ua": "Показ 3D-зображень обмежено\nбатьківським контролем, тому\nця функція недоступна."
+  },
+  "ocam_auto": {
+    "en": "Automatic Setup",
+    "ua": "Автоматично"
+  },
+  "ocam_manual": {
+    "en": "Manual Setup",
+    "ua": "Вручну"
+  },
+  "ocam_init": {
+    "en": "Revert to default settings",
+    "ua": "Відновити умовчання"
+  },
+  "ocam_comm0": {
+    "en": "Orient the system as shown on\nthe upper screen, focus on\nsomething that is level and\ncentre it on screen.\n\nTouch Next when you're ready.",
+    "ua": "Розташуйте систему як\nпоказано на верхньому екрані,\nнаведіть її на щось рівне\nй розмістіть у центрі екрана.\n\nКоли готові, торкніться Далі."
+  },
+  "ocam_comm2": {
+    "en": "Only the vertical axis can be calibrated\nmanually. Touching the left and right\narrows can help to align the object.",
+    "ua": "Вручну можна калібрувати лише\nвертикальну вісь. Стрілки ліворуч\nі праворуч допомагають вирівняти."
+  },
+  "ocam_comm1_u": {
+    "en": "Approx. 25 cm",
+    "ua": "Прибл. 25 см"
+  },
+  "ocam_comm2_u": {
+    "en": "",
+    "ua": ""
+  },
+  "ocam_comm3_u": {
+    "en": "Over 20 metres",
+    "ua": "Понад 20 метрів"
+  },
+  "ocam_comm1": {
+    "en": "Use the L or R Button to take\na photo of the image you want\nto use during the calibration.\n\nFocus on something that is\nlevel, and centre it on screen.",
+    "ua": "Кнопкою L або R зробіть фото\nзображення, яке хочете\nвикористати для калібрування.\n\nНаведіть на щось рівне\nй розмістіть у центрі екрана."
+  },
+  "ocam_auto_comm0": {
+    "en": "Hold the system as shown on\nthe upper screen, keep it steady\nand focus on something in the\ndistance.\n\nTouch Next when you're ready.",
+    "ua": "Тримайте систему як показано\nна верхньому екрані, не рухайте\nїї й наведіть на щось\nдалеко.\n\nКоли готові, торкніться Далі."
+  },
+  "ocam_auto_comm1": {
+    "en": "Focus on something in the distance.\nCalibration will begin automatically\nonce all the lights are lit.",
+    "ua": "Наведіть на щось далеко.\nКалібрування почнеться автоматично,\nколи засвітяться всі індикатори."
+  },
+  "ocam_auto_comm2": {
+    "en": "Tips for Automatic Calibration",
+    "ua": "Поради для автокалібрування"
+  },
+  "ocam_auto_comm3": {
+    "en": "・ Ensure there is adequate contrast\n・ Avoid mixing near and far objects",
+    "ua": "・ Потрібен достатній контраст\n・ Не змішуйте близькі й далекі об'єкти"
+  },
+  "ocam_base_2b_3d": {
+    "en": "Test 3D",
+    "ua": "Тест 3D"
+  },
+  "ocam_base_2b_3d_flw": {
+    "en": "OK",
+    "ua": "OK"
+  },
+  "ocam_base_2b_3d_jan": {
+    "en": "OK",
+    "ua": "OK"
+  },
+  "dlg_ocam_ready1": {
+    "en": "Only use the calibration function\nif you notice a problem with the\n3D images seen through the \nouter cameras.\n\nMistakes made during calibration\nmight make the problem worse.",
+    "ua": "Калібруйте лише тоді, коли\nпомітили проблему з\n3D-зображенням із зовнішніх\nкамер.\n\nПомилки калібрування можуть\nпогіршити проблему."
+  },
+  "dlg_ocam_ready1_flw": {
+    "en": "Only use the calibration function\nif 3D images taken with the outer\ncameras look wrong when viewed\non a Nintendo 3DS system.\n\nMistakes made during calibration\nmight make the problem worse.",
+    "ua": "Калібруйте лише тоді, коли\n3D-зображення із зовнішніх\nкамер виглядають неправильно\nна системі Nintendo 3DS.\n\nПомилки калібрування можуть\nпогіршити проблему."
+  },
+  "dlg_ocam_ready1_jan": {
+    "en": "Only use the calibration function\nif 3D images taken with the outer\ncameras look wrong when viewed\non a Nintendo 3DS system.\n\nMistakes made during calibration\nmight make the problem worse.",
+    "ua": "Калібруйте лише тоді, коли\n3D-зображення із зовнішніх\nкамер виглядають неправильно\nна системі Nintendo 3DS.\n\nПомилки калібрування можуть\nпогіршити проблему."
+  },
+  "dlg_ocam_ready2": {
+    "en": "Make adjustments so the centred\nimages shown above overlap\ncompletely.",
+    "ua": "Налаштуйте так, щоб\nзображення вище повністю\nзбігалися."
+  },
+  "dlg_ocam_set": {
+    "en": "Outer camera calibration\ncomplete.",
+    "ua": "Калібрування зовнішніх камер\nзавершено."
+  },
+  "dlg_ocam_auto": {
+    "en": "Calibrating automatically...",
+    "ua": "Автоматичне калібрування…"
+  },
+  "dlg_ocam_check": {
+    "en": "Focus on something near and\ncheck that the 3D effect on the\nupper screen is clear.\n\nComplete calibration?",
+    "ua": "Наведіть на щось близьке\nй перевірте, чи 3D-ефект\nна верхньому екрані чіткий.\n\nЗавершити калібрування?"
+  },
+  "dlg_ocam_init": {
+    "en": "Reverting to default settings.\n\nConfirm that the calibration\nis correct on the next screen.",
+    "ua": "Відновлення умовчань.\n\nНа наступному екрані\nперевірте калібрування."
+  },
+  "trans_": {
+    "en": "",
+    "ua": ""
+  },
+  "dlg_trans_no": {
+    "en": "",
+    "ua": ""
+  },
+  "sound_set_": {
+    "en": "",
+    "ua": ""
+  },
+  "sound_title": {
+    "en": "Sound",
+    "ua": "Звук"
+  },
+  "sound_comm_u": {
+    "en": "Configure your system's sound\noutput setting.",
+    "ua": "Налаштуйте виведення звуку\nсистеми."
+  },
+  "surround": {
+    "en": "Surround",
+    "ua": "Об'ємний"
+  },
+  "stereo": {
+    "en": "Stereo",
+    "ua": "Стерео"
+  },
+  "mono": {
+    "en": "Mono",
+    "ua": "Моно"
+  },
+  "dlg_sound_ready_flw": {
+    "en": "The system's speaker is mono,\nso select the Mono setting\nwhen using the speaker.\n\nThe Surround and Stereo\nsettings can be used when\nlistening with headphones.",
+    "ua": "Динамік системи монофонічний,\nтож для нього вибирайте\nрежим Моно.\n\nРежими Об'ємний і Стерео\nможна використовувати\nз навушниками."
+  },
+  "dlg_surround_set": {
+    "en": "Changed to surround sound.",
+    "ua": "Змінено на об'ємний звук."
+  },
+  "dlg_stereo_set": {
+    "en": "Changed to stereo sound.",
+    "ua": "Змінено на стереозвук."
+  },
+  "dlg_mono_set": {
+    "en": "Changed to monaural sound.",
+    "ua": "Змінено на монозвук."
+  },
+  "analog_set_": {
+    "en": "",
+    "ua": ""
+  },
+  "analog_pad_title": {
+    "en": "Circle Pad",
+    "ua": "Circle Pad"
+  },
+  "analog_comm_u": {
+    "en": "Reset the neutral position\nof the Circle Pad.",
+    "ua": "Скиньте нейтральне положення\nCircle Pad."
+  },
+  "analog_comm1_u": {
+    "en": "Move the Circle Pad up, down, left\nand right, and check whether the\nfour triangles change colour.",
+    "ua": "Посуньте Circle Pad вгору, вниз,\nліворуч і праворуч і перевірте, чи\nчотири трикутники змінюють колір."
+  },
+  "analog_pad_comm": {
+    "en": "Rotate the Circle Pad slowly in\na large circle two to three\ntimes and then touch Next.",
+    "ua": "Повільно оберніть Circle Pad\nпо великому колу два-три\nрази, потім торкніться Далі."
+  },
+  "base_2b_pad_next": {
+    "en": "Next",
+    "ua": "Далі"
+  },
+  "analog_pad_comm1": {
+    "en": "Once all four triangles have\nchanged colour, touch OK.",
+    "ua": "Коли всі чотири трикутники\nзмінять колір, торкніться OK."
+  },
+  "dlg_analog_ready": {
+    "en": "If the Circle Pad doesn't respond\ncorrectly while in use, it may\nneed recalibrating.\n\nIncorrect calibration can lead\nto severely inaccurate controls.",
+    "ua": "Якщо Circle Pad реагує\nнеправильно, його може\nбути потрібно відкалібрувати.\n\nНеправильне калібрування\nсильно зіпсує керування."
+  },
+  "dlg_analog_ok": {
+    "en": "The neutral position of the\nCircle Pad has been reset.",
+    "ua": "Нейтральне положення\nCircle Pad скинуто."
+  },
+  "dlg_analog_ng": {
+    "en": "Calibration failed.\n\nPlease try again.",
+    "ua": "Калібрування не вдалося.\n\nСпробуйте ще раз."
+  },
+  "mic_test_": {
+    "en": "",
+    "ua": ""
+  },
+  "mic_test_title": {
+    "en": "Mic Test",
+    "ua": "Тест мікрофона"
+  },
+  "mic_test_comm_u": {
+    "en": "Use your voice to test\nthe microphone sensitivity.",
+    "ua": "Перевірте чутливість мікрофона\nсвоїм голосом."
+  },
+  "mic_testing": {
+    "en": "Speak into the microphone.",
+    "ua": "Говоріть у мікрофон."
+  },
+  "mic_test_comm": {
+    "en": "Check microphone sensitivity.",
+    "ua": "Перевірка чутливості мікрофона."
+  },
+  "dlg_mic_wait": {
+    "en": "",
+    "ua": ""
+  },
+  "language_set_": {
+    "en": "",
+    "ua": ""
+  },
+  "language_title": {
+    "en": "Language",
+    "ua": "Мова"
+  },
+  "language_comm_u": {
+    "en": "Select the language to use.",
+    "ua": "Виберіть мову."
+  },
+  "us_english": {
+    "en": "English",
+    "ua": "Українська"
+  },
+  "us_french": {
+    "en": "Français",
+    "ua": ""
+  },
+  "us_spanish": {
+    "en": "Español",
+    "ua": ""
+  },
+  "us_portuguese": {
+    "en": "Português",
+    "ua": ""
+  },
+  "eu_english": {
+    "en": "English",
+    "ua": "Українська"
+  },
+  "eu_french": {
+    "en": "Français",
+    "ua": ""
+  },
+  "eu_german": {
+    "en": "Deutsch",
+    "ua": ""
+  },
+  "eu_spanish": {
+    "en": "Español",
+    "ua": ""
+  },
+  "eu_italian": {
+    "en": "Italiano",
+    "ua": ""
+  },
+  "eu_dutch": {
+    "en": "Nederlands",
+    "ua": ""
+  },
+  "eu_portuguese": {
+    "en": "Português",
+    "ua": ""
+  },
+  "eu_russian": {
+    "en": "Русский",
+    "ua": ""
+  },
+  "tw_trad_chinese": {
+    "en": "繁体中国語",
+    "ua": ""
+  },
+  "tw_english": {
+    "en": "English",
+    "ua": "Українська"
+  },
+  "dlg_language_set": {
+    "en": "Language set to English.",
+    "ua": "Мову змінено на українську."
+  },
+  "ds_user_info_": {
+    "en": "",
+    "ua": ""
+  },
+  "ds_info_comm_u": {
+    "en": "Edit profile settings for Nintendo DS software.",
+    "ua": "Змініть профіль для програм Nintendo DS."
+  },
+  "ds_birthday_u": {
+    "en": "Date of Birth",
+    "ua": "Дата народження"
+  },
+  "ds_info_comm": {
+    "en": "Nintendo DS Profile",
+    "ua": "Профіль Nintendo DS"
+  },
+  "ds_comment": {
+    "en": "Message",
+    "ua": "Допис"
+  },
+  "ds_user_color": {
+    "en": "Colour",
+    "ua": "Колір"
+  },
+  "ds_base_1b_back": {
+    "en": "Back",
+    "ua": "Назад"
+  },
+  "ds_base_2b_cancel": {
+    "en": "Cancel",
+    "ua": "Скасувати"
+  },
+  "ds_base_2b_decide": {
+    "en": "OK",
+    "ua": "OK"
+  },
+  "ds_color_comm": {
+    "en": "Colour",
+    "ua": "Колір"
+  },
+  "dlg_ds_color_set": {
+    "en": "New colour saved.",
+    "ua": "Новий колір збережено."
+  },
+  "dlg_ds_comm_set": {
+    "en": "New message saved.",
+    "ua": "Нове повідомлення збережено."
+  },
+  "dlg_ds_user_info": {
+    "en": "Edit profile settings for\nNintendo DS/Nintendo DSi\nsoftware titles here.\n\nNot all software titles make use\nof these settings.",
+    "ua": "Тут можна змінити профіль для\nпрограм Nintendo DS та\nNintendo DSi.\n\nНе всі програми\nвикористовують ці налаштування."
+  },
+  "update_set_": {
+    "en": "",
+    "ua": ""
+  },
+  "update_title": {
+    "en": "System Update",
+    "ua": "Оновлення системи"
+  },
+  "update_comm_u": {
+    "en": "Update your system.",
+    "ua": "Оновіть систему."
+  },
+  "update_comm_u_flw": {
+    "en": "Update your system.",
+    "ua": "Оновіть систему."
+  },
+  "dlg_update_paren": {
+    "en": "",
+    "ua": ""
+  },
+  "update_comm": {
+    "en": "Connect to the internet\nand update the system?",
+    "ua": "Під'єднатися до Інтернету\nй оновити систему?"
+  },
+  "bgnup_comm": {
+    "en": "Ready to start system update.\nUpdate now?\n\nThe update can be performed\nwithout connecting to the\ninternet.",
+    "ua": "Усе готово до оновлення.\nОновити зараз?\n\nОновлення можна виконати\nбез під'єднання\nдо Інтернету."
+  },
+  "dlg_wireless": {
+    "en": "",
+    "ua": ""
+  },
+  "dlg_battery": {
+    "en": "Battery power is running low.\nPlease plug in the AC adapter.\n\nOnce the battery has charged\nsufficiently, the update will\nbegin automatically.",
+    "ua": "Заряд батареї низький.\nПід'єднайте блок живлення.\n\nЯк тільки батарея достатньо\nзарядиться, оновлення\nпочнеться автоматично."
+  },
+  "dlg_battery_flw": {
+    "en": "Battery power is running low.\nPlease plug in the AC adapter.\n\nOnce the battery has charged\nsufficiently, the update will\nbegin automatically.",
+    "ua": "Заряд батареї низький.\nПід'єднайте блок живлення.\n\nЯк тільки батарея достатньо\nзарядиться, оновлення\nпочнеться автоматично."
+  },
+  "dlg_battery2": {
+    "en": "Please plug in the AC adapter\nto ensure that the system\ndoes not lose power during\nthe update.",
+    "ua": "Під'єднайте блок живлення,\nщоб система не втратила\nживлення під час\nоновлення."
+  },
+  "dlg_update_test": {
+    "en": "Connecting to the internet.\n\nPlease wait...",
+    "ua": "Під'єднання до Інтернету.\n\nЗачекайте, будь ласка…"
+  },
+  "dlg_update_wait": {
+    "en": "Updating. Please wait...\n\nDo not turn off the power.",
+    "ua": "Оновлення. Зачекайте…\n\nНе вимикайте живлення."
+  },
+  "dlg_bgnup_wait": {
+    "en": "Updating. Please wait...\n\nDo not turn off the power.",
+    "ua": "Оновлення. Зачекайте…\n\nНе вимикайте живлення."
+  },
+  "dlg_eula": {
+    "en": "",
+    "ua": ""
+  },
+  "dlg_update_new": {
+    "en": "This system is up to date.",
+    "ua": "Система вже актуальна."
+  },
+  "dlg_update_err": {
+    "en": "An error has occurred.\nUnable to update.\n\nThe system will\nnow be restarted.",
+    "ua": "Сталася помилка.\nНе вдалося оновити.\n\nЗараз систему буде\nперезапущено."
+  },
+  "dlg_update_end": {
+    "en": "The system update\nis complete.\n\nThe system will\nnow be restarted.",
+    "ua": "Оновлення системи\nзавершено.\n\nЗараз систему буде\nперезапущено."
+  },
+  "update_jump": {
+    "en": "Configure your internet\nsettings?",
+    "ua": "Налаштувати інтернет-\nз'єднання?"
+  },
+  "update_jump_net": {
+    "en": "Set",
+    "ua": "Задати"
+  },
+  "dlg_server_err": {
+    "en": "",
+    "ua": ""
+  },
+  "initialize_set_": {
+    "en": "",
+    "ua": ""
+  },
+  "initialize_title": {
+    "en": "Format System Memory",
+    "ua": "Форматування пам'яті"
+  },
+  "initial_comm_u": {
+    "en": "Restore the system to its\nfactory default settings.",
+    "ua": "Відновити заводські\nналаштування системи."
+  },
+  "dlg_initial_pare": {
+    "en": "",
+    "ua": ""
+  },
+  "dlg_init_net_00": {
+    "en": "",
+    "ua": ""
+  },
+  "initial_comm": {
+    "en": "This will connect to the internet\nand check whether the system\ncan be formatted.\n\nIs this OK?",
+    "ua": "Система під'єднається\nдо Інтернету й перевірить,\nчи можна її форматувати.\n\nПродовжити?"
+  },
+  "Initial_comm_n0": {
+    "en": "This will remove the link to this\nNintendo Network ID.\n\nThe ID itself will not be deleted.\n\nYou can link to it again via \nNintendo Network ID Settings ⇒\nLink an Existing ID.",
+    "ua": "Це видалить привʼязку до цього\nNintendo Network ID.\n\nСам ID не буде видалено.\n\nПривʼязати його знову можна\nв налаштуваннях\nNintendo Network ID."
+  },
+  "Initial_comm_n1": {
+    "en": "The Nintendo Network ID linked\nto this system cannot be linked\nto other Nintendo 3DS systems.\n\nPlease select System Transfer\nif you wish to link the ID to\nanother system.",
+    "ua": "Nintendo Network ID, привʼяза-\nний до цієї системи, не можна\nпривʼязати до інших консолей\nNintendo 3DS.\n\nЩоб привʼязати ID до іншої\nсистеми, скористайтеся\nПеренесенням системи."
+  },
+  "Initialize0_comm": {
+    "en": "This will delete all downloaded\nsoftware and save data.\nSoftware saved to an SD Card\nwill no longer be usable.\n(Some data, such as photos\nsaved to the SD Card, will\nnot be deleted.)",
+    "ua": "Це видалить усі завантажені\nпрограми та збережені дані.\nПрограми з карти SD\nстануть непридатними.\n(Деякі дані, як-от фото\nна карті SD, видалено\nне буде.)"
+  },
+  "Initialize0_comm_sac": {
+    "en": "This will delete all downloaded\nsoftware and save data.\nSoftware saved to a microSD\ncard will no longer be usable.\n(Some data, such as photos\nsaved to the microSD card,\nwill not be deleted.)",
+    "ua": "Це видалить усі завантажені\nпрограми та збережені дані.\nПрограми, збережені на карті\nmicroSD, стануть непридатними.\n(Деякі дані, як-от фото\nна карті microSD, видалено\nне буде.)"
+  },
+  "Initialize0_comm_jan": {
+    "en": "This will delete all downloaded\nsoftware and save data.\nSoftware saved to a microSD\ncard will no longer be usable.\n(Some data, such as photos\nsaved to the microSD card,\nwill not be deleted.)",
+    "ua": "Це видалить усі завантажені\nпрограми та збережені дані.\nПрограми, збережені на карті\nmicroSD, стануть непридатними.\n(Деякі дані, як-от фото\nна карті microSD, видалено\nне буде.)"
+  },
+  "Initialize1_comm": {
+    "en": "If you wish to delete your\nNintendo eShop account, you\ncan do so by selecting Delete\nAccount in Nintendo eShop.",
+    "ua": "Якщо ви хочете видалити\nобліковий запис Nintendo\neShop, це можна зробити,\nвибравши Видалити обліковий\nзапис у Nintendo eShop."
+  },
+  "Initialize1_com0": {
+    "en": "",
+    "ua": ""
+  },
+  "Initialize3_comm": {
+    "en": "",
+    "ua": ""
+  },
+  "Initialize2_comm": {
+    "en": "",
+    "ua": ""
+  },
+  "dlg_initial_last": {
+    "en": "This process will delete ALL\ndata permanently.\n\nAre you sure you want to format?",
+    "ua": "Ця дія видалить УСІ\nдані назавжди.\n\nСправді форматувати?"
+  },
+  "dlg_init_wait_n": {
+    "en": "Connecting to the internet and\npreparing to format...\nPlease wait.\n\nDo not turn off the power.",
+    "ua": "Під'єднання до Інтернету\nй підготовка до форматування…\nЗачекайте.\n\nНе вимикайте живлення."
+  },
+  "dlg_init_n_err": {
+    "en": "An error has occurred.\nFormatting preparations\ncould not be completed.\n\nPlease try again.",
+    "ua": "Сталася помилка.\nПідготовку до форматування\nне завершено.\n\nСпробуйте ще раз."
+  },
+  "dlg_initial_wait": {
+    "en": "Formatting...\n\nPlease do not turn off the power.",
+    "ua": "Форматування…\n\nНе вимикайте живлення."
+  },
+  "dlg_initial_end": {
+    "en": "Formatting complete.",
+    "ua": "Форматування завершено."
+  },
+  "dlg_init_start": {
+    "en": "Format",
+    "ua": "Форматувати"
+  },
+  "parental_lock_": {
+    "en": "",
+    "ua": ""
+  },
+  "dlg_par_lock": {
+    "en": "Content is restricted by\nParental Controls.\n\nPlease enter your PIN to\nuse this feature.",
+    "ua": "Вміст обмежено\nбатьківським контролем.\n\nВведіть PIN-код, щоб\nскористатися цією функцією."
+  },
+  "dlg_parental_up": {
+    "en": "",
+    "ua": ""
+  },
+  "dlg_parental_ok": {
+    "en": "",
+    "ua": ""
+  },
+  "dlg_parental_ng": {
+    "en": "",
+    "ua": ""
+  },
+  "dlg_parental_err": {
+    "en": "",
+    "ua": ""
+  },
+  "bln_button_": {
+    "en": "",
+    "ua": ""
+  },
+  "bln_2b_yes": {
+    "en": "Yes",
+    "ua": "Так"
+  },
+  "bln_2b_no": {
+    "en": "No",
+    "ua": "Ні"
+  },
+  "bln_2b_home": {
+    "en": "Home",
+    "ua": "Удома"
+  },
+  "bln_2b_out": {
+    "en": "Other",
+    "ua": "Інше"
+  },
+  "bln_1b_ok": {
+    "en": "OK",
+    "ua": "OK"
+  },
+  "bln_1b_finish": {
+    "en": "Done",
+    "ua": "Готово"
+  },
+  "bln_1b_next": {
+    "en": "Next",
+    "ua": "Далі"
+  },
+  "bln_2b_self": {
+    "en": "Manual Setup",
+    "ua": "Вручну"
+  },
+  "bln_2b_ask": {
+    "en": "Tutorial",
+    "ua": "Навчання"
+  },
+  "bln_2b_cancel": {
+    "en": "",
+    "ua": ""
+  },
+  "bln_2b_read": {
+    "en": "Read Now",
+    "ua": "Читати"
+  },
+  "bln_2b_later": {
+    "en": "Read Later",
+    "ua": "Читати потім"
+  },
+  "bln_base_button_4": {
+    "en": "",
+    "ua": ""
+  },
+  "bln_base_next": {
+    "en": "Next",
+    "ua": "Далі"
+  },
+  "bln_base_detail": {
+    "en": "Details",
+    "ua": "Докладніше"
+  },
+  "bln_base_ok": {
+    "en": "OK",
+    "ua": "OK"
+  },
+  "base_2b_naviback": {
+    "en": "Back",
+    "ua": "Назад"
+  },
+  "net_base_button_1": {
+    "en": "",
+    "ua": ""
+  },
+  "base_2b_save": {
+    "en": "Save",
+    "ua": "Зберегти"
+  },
+  "base_2b_search": {
+    "en": "Try Again",
+    "ua": "Ще раз"
+  },
+  "base_3b_change": {
+    "en": "",
+    "ua": ""
+  },
+  "net_dlg_button_": {
+    "en": "",
+    "ua": ""
+  },
+  "dlg_2b_again": {
+    "en": "Again",
+    "ua": "Знову"
+  },
+  "dlg_2b_finish": {
+    "en": "Done",
+    "ua": "Готово"
+  },
+  "dlg_2b_access": {
+    "en": "",
+    "ua": ""
+  },
+  "dlg_2b_wait": {
+    "en": "",
+    "ua": ""
+  },
+  "dlg_2b_test": {
+    "en": "Test",
+    "ua": "Тест"
+  },
+  "dlg_2b_test_no": {
+    "en": "Don't test",
+    "ua": "Без тесту"
+  },
+  "dlg_2b_read": {
+    "en": "",
+    "ua": ""
+  },
+  "dlg_1b_next": {
+    "en": "Next",
+    "ua": "Далі"
+  },
+  "dlg_2b_next": {
+    "en": "Next",
+    "ua": "Далі"
+  },
+  "dlg_2b_later": {
+    "en": "Later",
+    "ua": "Пізніше"
+  },
+  "dlg_2b_set": {
+    "en": "Set up",
+    "ua": "Задати"
+  },
+  "dlg_2b_delete": {
+    "en": "Delete",
+    "ua": "Стерти"
+  },
+  "dlg_2b_halt": {
+    "en": "Exit",
+    "ua": "Вийти"
+  },
+  "net_top_": {
+    "en": "",
+    "ua": ""
+  },
+  "net_top_title": {
+    "en": "Internet Settings",
+    "ua": "Інтернет-налаштування"
+  },
+  "net_top_comm_u": {
+    "en": "Configure your internet settings.\n\nSelect settings to adjust.",
+    "ua": "Налаштуйте з'єднання з Інтернетом.\n\nВиберіть налаштування для зміни."
+  },
+  "net_bln_init0": {
+    "en": "Hello there!\n\nI'm here to help you configure\nyour internet settings.",
+    "ua": "Вітаю!\n\nЯ допоможу налаштувати\nз'єднання з Інтернетом."
+  },
+  "net_bln_init0_flw": {
+    "en": "Hello there!\n\nI'm here to help you configure\nyour internet settings.",
+    "ua": "Вітаю!\n\nЯ допоможу налаштувати\nз'єднання з Інтернетом."
+  },
+  "net_bln_init1": {
+    "en": "Before you can connect to the\ninternet you'll need to set up your\ninternet connection.\n\nTouch Connection Settings to\nget started.",
+    "ua": "Перед під'єднанням до Інтернету\nтреба налаштувати з'єднання.\n\nТоркніться Налаштування\nз'єднання, щоб почати."
+  },
+  "net_bln_init1_flw": {
+    "en": "Before you can connect to the\ninternet you'll need to set up your\ninternet connection.\n\nTouch Connection Settings to\nget started.",
+    "ua": "Перед під'єднанням до Інтернету\nтреба налаштувати з'єднання.\n\nТоркніться Налаштування\nз'єднання, щоб почати."
+  },
+  "net_bln_init2": {
+    "en": "If you're not sure what to do,\ntouch me with the stylus and\nI'll help you out.",
+    "ua": "Якщо не знаєте, що робити,\nторкніться мене стилусом —\nя допоможу."
+  },
+  "net_set": {
+    "en": "Connection Settings",
+    "ua": "Налаштування мережі"
+  },
+  "net_bg24": {
+    "en": "SpotPass",
+    "ua": "SpotPass"
+  },
+  "net_ds_card": {
+    "en": "Nintendo DS Connections",
+    "ua": "З'єднання Nintendo DS"
+  },
+  "net_option": {
+    "en": "Other Information",
+    "ua": "Інша інформація"
+  },
+  "net_dlg_wireless": {
+    "en": "This function requires wireless\ncommunication to be enabled.\n\nPlease push the wireless\nswitch to enable wireless\ncommunication.",
+    "ua": "Ця функція потребує\nувімкненого бездротового\nзв'язку.\n\nПосуньте перемикач, щоб\nувімкнути бездротовий зв'язок."
+  },
+  "net_dlg_ds": {
+    "en": "Configure your connection\nsettings for Nintendo DS\nsoftware.",
+    "ua": "Налаштуйте з'єднання\nдля програм Nintendo DS."
+  },
+  "net_dlg_parental": {
+    "en": "",
+    "ua": ""
+  },
+  "net_dlg_quit0": {
+    "en": "Do you want to close Internet\nSettings, or continue\nadjusting settings?",
+    "ua": "Закрити інтернет-налаштування\nчи продовжити\nналаштування?"
+  },
+  "net_dlg_quit1": {
+    "en": "On the next screen, touch\nBack at any time to finish.",
+    "ua": "На наступному екрані\nторкніться Назад, щоб завершити."
+  },
+  "net_set_": {
+    "en": "",
+    "ua": ""
+  },
+  "net_set_title": {
+    "en": "Connection Settings",
+    "ua": "Налаштування з'єднання"
+  },
+  "net_set_comm_u": {
+    "en": "Configure your internet connection\nsettings.",
+    "ua": "Налаштуйте з'єднання\nз Інтернетом."
+  },
+  "net_connect1_u": {
+    "en": "Connection 1",
+    "ua": "З'єднання 1"
+  },
+  "net_connect2_u": {
+    "en": "Connection 2",
+    "ua": "З'єднання 2"
+  },
+  "net_connect3_u": {
+    "en": "Connection 3",
+    "ua": "З'єднання 3"
+  },
+  "net_connect4_u": {
+    "en": "Nintendo Wi-Fi USB Connector",
+    "ua": "Nintendo Wi-Fi USB Connector"
+  },
+  "net_none_set_u": {
+    "en": "None",
+    "ua": "—"
+  },
+  "net_aoss0_set_u": {
+    "en": "AOSS",
+    "ua": ""
+  },
+  "net_aoss1_set_u": {
+    "en": "AOSS",
+    "ua": ""
+  },
+  "net_raku0_set_u": {
+    "en": "",
+    "ua": ""
+  },
+  "net_raku1_set_u": {
+    "en": "",
+    "ua": ""
+  },
+  "net_wps0_set_u": {
+    "en": "Wi-Fi Protected Setup",
+    "ua": ""
+  },
+  "net_wps1_set_u": {
+    "en": "Wi-Fi Protected Setup",
+    "ua": ""
+  },
+  "net_new_set": {
+    "en": "New Connection",
+    "ua": "Нове з'єднання"
+  },
+  "net_connect": {
+    "en": "Connection",
+    "ua": "З'єднання"
+  },
+  "net_new_comm_u": {
+    "en": "Select a connection method.",
+    "ua": "Виберіть спосіб з'єднання."
+  },
+  "net_bln_set0": {
+    "en": "First, we need to set up an internet\nconnection in New Connection.",
+    "ua": "Спершу треба налаштувати з'єднання\nз Інтернетом у Новому з'єднанні."
+  },
+  "net_bln_set1": {
+    "en": "Select New Connection to set up\na new internet connection, or select\nConnections 1, 2 or 3 to adjust\nthe configurations of those\nconnections.",
+    "ua": "Виберіть Нове з'єднання, щоб\nналаштувати нове з'єднання, або\nЗ'єднання 1, 2 чи 3, щоб змінити\nналаштування наявних\nз'єднань."
+  },
+  "net_bln_set2": {
+    "en": "You can save up to three connections.\n\nTo create a new connection,\nyou must delete another\nconnection configuration.",
+    "ua": "Можна зберегти до трьох з'єднань.\n\nЩоб створити нове,\nтреба видалити\nодне з наявних."
+  },
+  "net_bln_set_new": {
+    "en": "Would you like me to help\nyou set up your internet\nconnection?",
+    "ua": "Допомогти вам налаштувати\nз'єднання з Інтернетом?"
+  },
+  "net_bln_new_set": {
+    "en": "If you're unsure of what to select,\nreturn to the previous screen and\ntouch New Connection one more time.",
+    "ua": "Якщо не знаєте, що вибрати,\nповерніться назад і торкніться\nНове з'єднання ще раз."
+  },
+  "net_ap_search": {
+    "en": "Search for Access Point",
+    "ua": "Пошук точки доступу"
+  },
+  "net_wifi_usb": {
+    "en": "Nintendo Wi-Fi USB Connector",
+    "ua": "Nintendo Wi-Fi USB Connector"
+  },
+  "net_manual": {
+    "en": "Manual Setup",
+    "ua": "Налаштувати вручну"
+  },
+  "net_navi_": {
+    "en": "",
+    "ua": ""
+  },
+  "net_bln_set_nav": {
+    "en": "Please answer the following:\n\nWhere will you connect to\nthe internet?",
+    "ua": "Дайте відповідь:\n\nДе ви під'єднуватиметеся\nдо Інтернету?"
+  },
+  "net_bln_set_nav0": {
+    "en": "Do you have an access point\nat home you can use to\nconnect to the internet?",
+    "ua": "У вас є вдома точка доступу,\nяку можна використати для\nз'єднання з Інтернетом?"
+  },
+  "net_bln_set_nav1": {
+    "en": "Do you connect to this\naccess point wirelessly?",
+    "ua": "Ви під'єднуєтеся до цієї\nточки доступу бездротово?"
+  },
+  "net_bln_set_nav2": {
+    "en": "Which of the following\naccess points are you using?",
+    "ua": "Яку з цих точок\nдоступу ви використовуєте?"
+  },
+  "net_bln_no_corre": {
+    "en": "Don't know / None of these",
+    "ua": "Не знаю / жодної"
+  },
+  "net_bln_u_nav_t": {
+    "en": "To connect to a wireless access\npoint at a shop, station or other\nplace, touch Other.",
+    "ua": "Щоб під'єднатися до бездротової\nточки доступу в магазині, на станції\nчи в іншому місці, торкніться Інше."
+  },
+  "net_bln_u_nav0_0": {
+    "en": "Broadband Internet\nConnection",
+    "ua": "Широкосмугове\nз'єднання"
+  },
+  "net_bln_u_nav0_1": {
+    "en": "Modem,\nRouter, etc.",
+    "ua": "Модем,\nроутер тощо"
+  },
+  "net_bln_u_nav0_2": {
+    "en": "Computer",
+    "ua": "Комп'ютер"
+  },
+  "net_bln_u_nav0_t": {
+    "en": "If you already have a device\nthat is connected to the internet,\ntouch Yes.",
+    "ua": "Якщо у вас уже є пристрій,\nпід'єднаний до Інтернету,\nторкніться Так."
+  },
+  "net_bln_u_nav1_0": {
+    "en": "",
+    "ua": ""
+  },
+  "net_bln_u_nav1_1": {
+    "en": "Access Point\n(Wireless)",
+    "ua": "Точка доступу\n(бездротова)"
+  },
+  "net_bln_u_nav1_t": {
+    "en": "If you use wireless devices to\nconnect to the internet, you must\nhave a wireless access point.",
+    "ua": "Якщо ви під'єднуєтеся до Інтернету\nбездротовими пристроями, вам\nпотрібна бездротова точка доступу."
+  },
+  "net_bln_u_nav2": {
+    "en": "Check if one of the logos above\nappears either on the access point \nor the related documentation.",
+    "ua": "Перевірте, чи є один із логотипів\nвище на точці доступу або\nв документації до неї."
+  },
+  "net_env_navi_": {
+    "en": "",
+    "ua": ""
+  },
+  "net_bln_env_nav0": {
+    "en": "Sorry, but you cannot connect\nusing this setup. To connect\nyour system to the internet,\nyou need the following:",
+    "ua": "На жаль, із таким обладнанням\nпід'єднатися не вийде. Щоб\nз'єднати систему з Інтернетом,\nпотрібно таке:"
+  },
+  "net_bln_env_nav0_flw": {
+    "en": "Sorry, but you cannot connect\nusing this setup. To connect\nyour system to the internet,\nyou need the following:",
+    "ua": "На жаль, із таким обладнанням\nпід'єднатися не вийде. Щоб\nз'єднати систему з Інтернетом,\nпотрібно таке:"
+  },
+  "net_bln_env_pc": {
+    "en": "",
+    "ua": ""
+  },
+  "net_bln_env_nav2": {
+    "en": "Broadband internet\nconnection (ADSL,\ncable or fibre optic)",
+    "ua": "Широкосмугове\nз'єднання (ADSL,\nкабель чи оптика)"
+  },
+  "net_bln_env_nav3": {
+    "en": "Generic wireless\naccess point",
+    "ua": "Звичайна бездротова\nточка доступу"
+  },
+  "net_bln_env_nav4": {
+    "en": "Services that do not require\na connection configuration to\nconnect to the internet are\ndetailed in the System Settings\nelectronic manual.",
+    "ua": "Сервіси, які не потребують\nналаштування з'єднання,\nописані в електронному\nпосібнику з налаштувань\nсистеми."
+  },
+  "net_bln_env_nav4_flw": {
+    "en": "Services that do not require\na connection configuration to\nconnect to the internet are\ndetailed in the System Settings\nelectronic manual.",
+    "ua": "Сервіси, які не потребують\nналаштування з'єднання,\nописані в електронному\nпосібнику з налаштувань\nсистеми."
+  },
+  "net_bln_env_nav5": {
+    "en": "After you've set up the\nnecessary equipment, come\nback and try again.\n\nSee you then!",
+    "ua": "Коли підготуєте потрібне\nобладнання, повертайтеся\nі спробуйте знову.\n\nДо зустрічі!"
+  },
+  "net_bln_env_nav6": {
+    "en": "",
+    "ua": ""
+  },
+  "net_bln_env_nav7": {
+    "en": "",
+    "ua": ""
+  },
+  "net_bln_env3_2": {
+    "en": "",
+    "ua": ""
+  },
+  "net_bln_env3_t": {
+    "en": "A wireless access point is required\nto connect your Nintendo 3DS system\nto the internet. Wireless access points\nthat support AOSS™ or Wi-Fi Protected\nSetup™ connections are very easy to\nset up and use.",
+    "ua": "Щоб з'єднати Nintendo 3DS\nз Інтернетом, потрібна бездротова\nточка доступу. Точки з підтримкою\nAOSS™ або Wi-Fi Protected Setup™\nналаштовуються дуже просто."
+  },
+  "net_bln_env3_t_flw": {
+    "en": "A wireless access point is required\nto connect your Nintendo 2DS system\nto the internet. Wireless access points\nthat support AOSS™ or Wi-Fi Protected\nSetup™ connections are very easy to\nset up and use.",
+    "ua": "Щоб з'єднати Nintendo 2DS\nз Інтернетом, потрібна бездротова\nточка доступу. Точки з підтримкою\nAOSS™ або Wi-Fi Protected Setup™\nналаштовуються дуже просто."
+  },
+  "net_set_navi_": {
+    "en": "",
+    "ua": ""
+  },
+  "net_bln_set_ap": {
+    "en": "Okay, let's find and set up\nan access point.\n\nIf anything's unclear, please\ntouch me.",
+    "ua": "Гаразд, знайдемо\nй налаштуємо точку доступу.\n\nЯкщо щось незрозуміло,\nторкніться мене."
+  },
+  "net_bln_set_aoss": {
+    "en": "Okay, let's configure\na connection using AOSS.\n\nIf anything's unclear, please\ntouch me.",
+    "ua": "Гаразд, налаштуємо\nз'єднання через AOSS.\n\nЯкщо щось незрозуміло,\nторкніться мене."
+  },
+  "net_bln_set_aoss_00": {
+    "en": "",
+    "ua": ""
+  },
+  "net_bln_set_raku": {
+    "en": "",
+    "ua": ""
+  },
+  "net_bln_set_wps": {
+    "en": "Okay, let's configure a\nconnection using Wi-Fi\nProtected Setup.\nIf anything's unclear, please\ntouch me.",
+    "ua": "Гаразд, налаштуємо з'єднання\nчерез Wi-Fi Protected\nSetup.\nЯкщо щось незрозуміло,\nторкніться мене."
+  },
+  "net_serach_ap_": {
+    "en": "",
+    "ua": ""
+  },
+  "net_ap_title": {
+    "en": "Search for an Access Point",
+    "ua": "Пошук точки доступу"
+  },
+  "net_ap_comm_u0": {
+    "en": "Select the access point\nyou want to connect to.",
+    "ua": "Виберіть точку доступу,\nдо якої хочете під'єднатися."
+  },
+  "net_ap_comm_u1": {
+    "en": "",
+    "ua": ""
+  },
+  "net_ap_secu_key": {
+    "en": "",
+    "ua": ""
+  },
+  "net_ap_security": {
+    "en": "",
+    "ua": ""
+  },
+  "net_ap_none": {
+    "en": "",
+    "ua": ""
+  },
+  "net_ap_wep": {
+    "en": "Security: WEP",
+    "ua": "Безпека: WEP"
+  },
+  "net_ap_wpa_pt": {
+    "en": "Security: WPA-PSK (TKIP)",
+    "ua": "Безпека: WPA-PSK (TKIP)"
+  },
+  "net_ap_wpa2_pt": {
+    "en": "Security: WPA2-PSK (TKIP)",
+    "ua": "Безпека: WPA2-PSK (TKIP)"
+  },
+  "net_ap_wpa_pa": {
+    "en": "Security: WPA-PSK (AES)",
+    "ua": "Безпека: WPA-PSK (AES)"
+  },
+  "net_ap_wpa2_pa": {
+    "en": "Security: WPA2-PSK (AES)",
+    "ua": "Безпека: WPA2-PSK (AES)"
+  },
+  "net_ap_no_key": {
+    "en": "",
+    "ua": ""
+  },
+  "net_bln_ap_sear": {
+    "en": "Security Information",
+    "ua": "Про безпеку"
+  },
+  "net_bln_ap_sea00": {
+    "en": "Security settings disabled",
+    "ua": "Захист вимкнено"
+  },
+  "net_bln_ap_sea01": {
+    "en": "Security settings enabled\n(key required)",
+    "ua": "Захист увімкнено\n(потрібен ключ)"
+  },
+  "net_bln_ap_sea10": {
+    "en": "",
+    "ua": ""
+  },
+  "net_bln_ap_sea11": {
+    "en": "",
+    "ua": ""
+  },
+  "net_bln_ap_sea12": {
+    "en": "",
+    "ua": ""
+  },
+  "net_bln_ap_sea20": {
+    "en": "This shows the name, security type\nand signal strength of the access\npoints found.\n\nSelect the access point you want\nto connect to.",
+    "ua": "Тут показано назву, тип захисту\nй потужність сигналу знайдених\nточок доступу.\n\nВиберіть ту, до якої хочете\nпід'єднатися."
+  },
+  "net_bln_ap_secu": {
+    "en": "",
+    "ua": ""
+  },
+  "net_dlg_ap_searc": {
+    "en": "Searching for an access point...",
+    "ua": "Пошук точки доступу…"
+  },
+  "net_dlg_ap_set0": {
+    "en": "This access point will be saved\nas Connection %d.\n\nIs this OK?",
+    "ua": "Цю точку доступу буде\nзбережено як З'єднання %d.\n\nПродовжити?"
+  },
+  "net_dlg_ap_set1": {
+    "en": "Connection settings have been\nsaved.\n\nA connection test will now be\nperformed.",
+    "ua": "Налаштування з'єднання\nзбережено.\n\nЗараз буде виконано\nперевірку з'єднання."
+  },
+  "net_dlg_ap_found": {
+    "en": "Access point(s) found.",
+    "ua": "Точки доступу знайдено."
+  },
+  "net_dlg_ap_none": {
+    "en": "Could not find any access\npoints.\n\nChange your location, or\nconfirm that the access point\nis active, and try again.",
+    "ua": "Не вдалося знайти жодної\nточки доступу.\n\nЗмініть місце або\nпереконайтеся, що точка\nдоступу працює, і повторіть."
+  },
+  "net_dlg_ap_err": {
+    "en": "Unable to connect to this\naccess point as it uses\nWPA2-PSK (TKIP) security.\n\nPlease change the security\nsetting for the access point, or\nchoose a different access point.",
+    "ua": "Не можна під'єднатися до цієї\nточки доступу, бо вона\nвикористовує захист\nWPA2-PSK (TKIP).\n\nЗмініть налаштування захисту\nточки доступу або виберіть іншу."
+  },
+  "net_dlg_ap_ng": {
+    "en": "",
+    "ua": ""
+  },
+  "net_ap_security_": {
+    "en": "",
+    "ua": ""
+  },
+  "net_apsc_comm_u0": {
+    "en": "",
+    "ua": ""
+  },
+  "net_apsc_comm_u1": {
+    "en": "",
+    "ua": ""
+  },
+  "net_dlg_ssid_ng": {
+    "en": "The data you entered\nis incorrect.",
+    "ua": "Введені дані\nнеправильні."
+  },
+  "net_dlg_secu_ng": {
+    "en": "The data you entered is\nincorrect. Confirm that you\nhave the right security key for\nthe access point you are trying\nto connect to.",
+    "ua": "Введені дані неправильні.\nПереконайтеся, що ключ\nбезпеки відповідає точці\nдоступу, до якої ви\nнамагаєтеся під'єднатися."
+  },
+  "net_bln_security": {
+    "en": "Data passing between the access\npoint and the Nintendo 3DS system\nis encrypted.\n\nAES provides the strongest level\nof encryption, followed by TKIP,\nthen WEP.",
+    "ua": "Дані між точкою доступу\nі системою Nintendo 3DS\nшифруються.\n\nНайсильніше шифрування дає\nAES, далі TKIP, потім WEP."
+  },
+  "net_bln_security_flw": {
+    "en": "Data passing between the access\npoint and the Nintendo 2DS system\nis encrypted.\n\nAES provides the strongest level\nof encryption, followed by TKIP,\nthen WEP.",
+    "ua": "Дані між точкою доступу\nі системою Nintendo 2DS\nшифруються.\n\nНайсильніше шифрування дає\nAES, далі TKIP, потім WEP."
+  },
+  "net_secu_none": {
+    "en": "None",
+    "ua": "Немає"
+  },
+  "net_secu_wep": {
+    "en": "WEP",
+    "ua": ""
+  },
+  "net_secu_wpa_pt": {
+    "en": "WPA-PSK (TKIP)",
+    "ua": ""
+  },
+  "net_secu_wpa2_pt": {
+    "en": "WPA2-PSK (TKIP)",
+    "ua": ""
+  },
+  "net_secu_wpa_pa": {
+    "en": "WPA-PSK (AES)",
+    "ua": ""
+  },
+  "net_secu_wpa2_pa": {
+    "en": "WPA2-PSK (AES)",
+    "ua": ""
+  },
+  "net_aoss_": {
+    "en": "",
+    "ua": ""
+  },
+  "net_aoss_title": {
+    "en": "AOSS",
+    "ua": "AOSS"
+  },
+  "net_aoss_comm_u": {
+    "en": "AOSS Button",
+    "ua": "Кнопка AOSS"
+  },
+  "net_new_aoss": {
+    "en": "Confirm that you are using an\nAOSS-compatible access point,\nthen press the AOSS button on\nthe access point until the AOSS\nlight flashes. This process may\ntake up to 90 seconds.",
+    "ua": "Переконайтеся, що точка\nдоступу сумісна з AOSS, потім\nнатисніть на ній кнопку AOSS\nі тримайте, поки не заблимає\nіндикатор AOSS. Це може\nтривати до 90 секунд."
+  },
+  "net_bln_new_aoss": {
+    "en": "Do you know where to find\nthe button and the light?\n\nIf not, please refer to the\ninstruction booklet that came\nwith the access point.",
+    "ua": "Ви знаєте, де знайти\nкнопку й індикатор?\n\nЯкщо ні, дивіться інструкцію\nдо точки доступу."
+  },
+  "net_dlg_aoss_ok": {
+    "en": "AOSS configuration is complete.\nSaving as Connection %d.\n\nA connection test will now be\nperformed.",
+    "ua": "Налаштування AOSS завершено.\nЗбереження як З'єднання %d.\n\nЗараз буде виконано\nперевірку з'єднання."
+  },
+  "net_dlg_aoss_ng": {
+    "en": "AOSS configuration failed.\n\nIf the problem recurs, please\nwait for 5 minutes and try\nagain.",
+    "ua": "Налаштування AOSS не вдалося.\n\nЯкщо проблема повторюється,\nзачекайте 5 хвилин\nі спробуйте знову."
+  },
+  "net_raku_": {
+    "en": "",
+    "ua": ""
+  },
+  "net_raku_title": {
+    "en": "",
+    "ua": ""
+  },
+  "net_raku_comm_u0": {
+    "en": "",
+    "ua": ""
+  },
+  "net_raku_comm_u1": {
+    "en": "",
+    "ua": ""
+  },
+  "net_raku_comm_u2": {
+    "en": "",
+    "ua": ""
+  },
+  "net_new_raku0": {
+    "en": "",
+    "ua": ""
+  },
+  "net_new_raku1": {
+    "en": "",
+    "ua": ""
+  },
+  "net_bln_new_rak0": {
+    "en": "",
+    "ua": ""
+  },
+  "net_bln_new_rak1": {
+    "en": "",
+    "ua": ""
+  },
+  "net_dlg_raku_ok": {
+    "en": "",
+    "ua": ""
+  },
+  "net_dlg_raku_ng": {
+    "en": "",
+    "ua": ""
+  },
+  "net_wps_": {
+    "en": "",
+    "ua": ""
+  },
+  "net_wps_title": {
+    "en": "Wi-Fi Protected Setup",
+    "ua": "Wi-Fi Protected Setup"
+  },
+  "net_wps_comm_u0": {
+    "en": "Select a connection method that\nworks with your access point.",
+    "ua": "Виберіть спосіб з'єднання, який\nпідтримує ваша точка доступу."
+  },
+  "net_new_wps_push": {
+    "en": "Push-Button Connection",
+    "ua": "З'єднання кнопкою"
+  },
+  "net_new_wps_pin": {
+    "en": "PIN Connection",
+    "ua": "З'єднання за PIN"
+  },
+  "net_wps_comm_u1": {
+    "en": "Use PIN Connection.",
+    "ua": "Використати з'єднання за PIN."
+  },
+  "net_wps_comm_u2": {
+    "en": "Wi-Fi\nProtected\nSetup Button",
+    "ua": "Кнопка Wi-Fi\nProtected\nSetup"
+  },
+  "net_new_wps1": {
+    "en": "Confirm that the access point is\nWi-Fi Protected Setup-\ncompatible, then press and hold\nthe access point's Wi-Fi\nProtected Setup button until its\nwireless indicator LED blinks. It\nmay take up to two minutes to\ncomplete this setup.",
+    "ua": "Переконайтеся, що точка\nдоступу сумісна з Wi-Fi\nProtected Setup, потім натисніть\nі тримайте на ній кнопку Wi-Fi\nProtected Setup, поки не\nзаблимає індикатор мережі.\nЦе може тривати до\nдвох хвилин."
+  },
+  "net_new_wps2_0": {
+    "en": "PIN Code: %08d",
+    "ua": ""
+  },
+  "net_new_wps2_1": {
+    "en": "After entering the code into\nthe access point settings,\ntouch Next.",
+    "ua": "Після введення коду\nв налаштуваннях точки доступу\nторкніться Далі."
+  },
+  "net_new_wps3": {
+    "en": "Setting up Wi-Fi\nProtected Setup...\n\nIt may take up to two minutes\nto complete this setup.",
+    "ua": "Налаштування Wi-Fi\nProtected Setup…\n\nЦе може тривати\nдо двох хвилин."
+  },
+  "net_bln_new_wps0": {
+    "en": "There are two setup methods:\nPush-Button Connection, which\nrequires you to push the Wi-Fi\nProtected Setup button on the access\npoint, and PIN Connection, which\nrequires you to enter a PIN.",
+    "ua": "Є два способи: з'єднання кнопкою,\nде треба натиснути на точці доступу\nкнопку Wi-Fi Protected Setup, і\nз'єднання за PIN-кодом, де треба\nввести PIN."
+  },
+  "net_bln_new_wps1": {
+    "en": "Do you know where to find\nthe button and the light?\n\nIf not, please refer to the\ninstruction booklet that came\nwith the access point.",
+    "ua": "Ви знаєте, де знайти\nкнопку й індикатор?\n\nЯкщо ні, дивіться інструкцію\nдо точки доступу."
+  },
+  "net_bln_new_wps2": {
+    "en": "Follow the instructions in the\ninstruction booklet for your access\npoint to open the configuration\nscreen. Next, enter your PIN code.",
+    "ua": "За інструкцією до точки доступу\nвідкрийте екран налаштувань.\nПотім введіть свій PIN-код."
+  },
+  "net_bln_new_wps3": {
+    "en": "Setup takes a short while to complete.\n\nPlease wait for it to finish.",
+    "ua": "Налаштування триває недовго.\n\nЗачекайте, поки воно завершиться."
+  },
+  "net_dlg_wps_ok_00": {
+    "en": "",
+    "ua": ""
+  },
+  "net_dlg_wps_ok": {
+    "en": "Wi-Fi Protected Setup\nconfiguration complete.\nSaving as Connection %d.\n\nA connection test will now be\nperformed.",
+    "ua": "Налаштування Wi-Fi Protected\nSetup завершено.\nЗбереження як З'єднання %d.\n\nЗараз буде виконано\nперевірку з'єднання."
+  },
+  "net_dlg_wps_ng": {
+    "en": "Could not complete Wi-Fi\nProtected Setup configuration.\nCheck your access point\nsettings.\n\nFor help, check the instruction\nbooklet for your access point.",
+    "ua": "Не вдалося завершити\nналаштування Wi-Fi Protected\nSetup. Перевірте налаштування\nточки доступу.\n\nПо допомогу звертайтеся\nдо інструкції точки доступу."
+  },
+  "net_dlg_wps_ng_s": {
+    "en": "Unable to use Wi-Fi Protected\nSetup, because the access point\nsecurity is configured for WEP.\n\nPlease perform setup using a\ndifferent method, or change the\naccess point security settings.",
+    "ua": "Не можна використати Wi-Fi\nProtected Setup, бо захист точки\nдоступу налаштовано на WEP.\n\nВиконайте налаштування іншим\nспособом або змініть захист\nточки доступу."
+  },
+  "net_usb_": {
+    "en": "",
+    "ua": ""
+  },
+  "net_usb_title": {
+    "en": "Nintendo Wi-Fi USB Connector",
+    "ua": "Nintendo Wi-Fi USB Connector"
+  },
+  "net_new_usb_u0": {
+    "en": "Broadband Internet\nConnection",
+    "ua": "Широкосмугове\nз'єднання"
+  },
+  "net_new_usb_u1": {
+    "en": "Modem and/or\nRouter",
+    "ua": "Модем або\nроутер"
+  },
+  "net_new_usb_u2": {
+    "en": "Nintendo Wi-Fi USB\nConnector",
+    "ua": "Nintendo Wi-Fi USB\nConnector"
+  },
+  "net_new_usb_u3": {
+    "en": "Computer",
+    "ua": "Комп'ютер"
+  },
+  "net_new_usb0": {
+    "en": "Plug the Nintendo Wi-Fi USB\nConnector into the USB port of\nany computer connected to a\nbroadband internet connection.",
+    "ua": "Вставте Nintendo Wi-Fi USB\nConnector у USB-порт\nкомп'ютера з широкосмуговим\nз'єднанням з Інтернетом."
+  },
+  "net_new_usb1": {
+    "en": "Launch the Nintendo Wi-Fi USB\nConnector Registration Tool on\nyour computer.\n\nTouch Next once you are ready\nto connect.",
+    "ua": "Запустіть на комп'ютері\nNintendo Wi-Fi USB Connector\nRegistration Tool.\n\nКоли готові, торкніться Далі."
+  },
+  "net_new_usb2": {
+    "en": "Setting up...\n\nUse the Nintendo Wi-Fi USB\nConnector Registration Tool to\ngrant permission for this system\nto connect.",
+    "ua": "Налаштування…\n\nЗа допомогою Nintendo Wi-Fi\nUSB Connector Registration\nTool дозвольте цій системі\nпід'єднатися."
+  },
+  "net_new_usb2_flw": {
+    "en": "Setting up...\n\nUse the Nintendo Wi-Fi USB\nConnector Registration Tool to\ngrant permission for this system\nto connect.",
+    "ua": "Налаштування…\n\nЗа допомогою Nintendo Wi-Fi\nUSB Connector Registration\nTool дозвольте цій системі\nпід'єднатися."
+  },
+  "net_bln_new_usb0": {
+    "en": "The Nintendo Wi-Fi USB Connector\nis a portable access point that plugs\ninto a computer's USB port.",
+    "ua": "Nintendo Wi-Fi USB Connector —\nце портативна точка доступу, яка\nвставляється в USB-порт комп'ютера."
+  },
+  "net_bln_new_usb1": {
+    "en": "If you are not sure, refer to the\nNintendo Wi-Fi USB Connector\ninstruction booklet.",
+    "ua": "Якщо не впевнені, дивіться\nінструкцію до Nintendo Wi-Fi\nUSB Connector."
+  },
+  "net_bln_new_usb2": {
+    "en": "Can you see your Nintendo 3DS user\nname on the Nintendo Wi-Fi USB\nConnector Registration Tool screen?",
+    "ua": "Чи видно ім'я користувача вашої\nNintendo 3DS на екрані Nintendo\nWi-Fi USB Connector Registration Tool?"
+  },
+  "net_bln_new_usb2_flw": {
+    "en": "Can you see your Nintendo 2DS user\nname on the Nintendo Wi-Fi USB\nConnector Registration Tool screen?",
+    "ua": "Чи видно ім'я користувача вашої\nNintendo 2DS на екрані Nintendo\nWi-Fi USB Connector Registration Tool?"
+  },
+  "net_bln_new_usb3": {
+    "en": "If you encounter any problems,\nplease refer to the Nintendo Wi-Fi\nUSB Connector instruction booklet.",
+    "ua": "Якщо виникнуть проблеми,\nдивіться інструкцію до Nintendo\nWi-Fi USB Connector."
+  },
+  "net_dlg_usb_ok": {
+    "en": "Nintendo Wi-Fi USB Connector\nsetup is complete.\n\nA connection test will now be\nperformed.",
+    "ua": "Налаштування Nintendo Wi-Fi USB\nConnector завершено.\n\nЗараз буде виконано\nперевірку з'єднання."
+  },
+  "net_dlg_usb_ng": {
+    "en": "",
+    "ua": ""
+  },
+  "net_common_": {
+    "en": "",
+    "ua": ""
+  },
+  "net_edit_": {
+    "en": "",
+    "ua": ""
+  },
+  "net_edit_title": {
+    "en": "Edit Connection Settings",
+    "ua": "Зміна налаштувань з'єднання"
+  },
+  "net_edit_comm_u": {
+    "en": "Edit your connection settings.",
+    "ua": "Змініть налаштування з'єднання."
+  },
+  "net_edit_conn1_u": {
+    "en": "Connection 1",
+    "ua": "З'єднання 1"
+  },
+  "net_edit_conn2_u": {
+    "en": "Connection 2",
+    "ua": "З'єднання 2"
+  },
+  "net_edit_conn3_u": {
+    "en": "Connection 3",
+    "ua": "З'єднання 3"
+  },
+  "net_edit_ssid_u": {
+    "en": "SSID",
+    "ua": ""
+  },
+  "net_edit_secu_u": {
+    "en": "Security",
+    "ua": "Захист"
+  },
+  "net_edit_none_u": {
+    "en": "None",
+    "ua": "—"
+  },
+  "net_edit_wep_u": {
+    "en": "WEP",
+    "ua": ""
+  },
+  "net_edit_wpt_u": {
+    "en": "WPA-PSK (TKIP)",
+    "ua": ""
+  },
+  "net_edit_w2pt_u": {
+    "en": "WPA2-PSK (TKIP)",
+    "ua": ""
+  },
+  "net_edit_wpa_u": {
+    "en": "WPA-PSK (AES)",
+    "ua": ""
+  },
+  "net_edit_w2pa_u": {
+    "en": "WPA2-PSK (AES)",
+    "ua": ""
+  },
+  "net_edit_change": {
+    "en": "Change Settings",
+    "ua": "Змінити з'єднання"
+  },
+  "net_edit_delete": {
+    "en": "Delete Settings",
+    "ua": "Видалити з'єднання"
+  },
+  "net_edit_test": {
+    "en": "Connection Test",
+    "ua": "Перевірка з'єднання"
+  },
+  "net_edit_none": {
+    "en": "",
+    "ua": ""
+  },
+  "net_bln_edit_set": {
+    "en": "Touch Connection Test to confirm\nwhether or not Connection %d can\nconnect to the internet.",
+    "ua": "Торкніться Перевірка з'єднання,\nщоб дізнатися, чи може З'єднання %d\nпід'єднатися до Інтернету."
+  },
+  "net_fact_": {
+    "en": "",
+    "ua": ""
+  },
+  "net_fact_comm_u": {
+    "en": "Which connection setting would you like to\nchange?",
+    "ua": "Яке налаштування з'єднання ви хочете\nзмінити?"
+  },
+  "net_fact_conn1_u": {
+    "en": "Connection 1",
+    "ua": "З'єднання 1"
+  },
+  "net_fact_conn2_u": {
+    "en": "Connection 2",
+    "ua": "З'єднання 2"
+  },
+  "net_fact_conn3_u": {
+    "en": "Connection 3",
+    "ua": "З'єднання 3"
+  },
+  "net_fact_ip_u": {
+    "en": "IP Address:",
+    "ua": "IP-адреса:"
+  },
+  "net_fact_auto_u": {
+    "en": "Auto-obtain",
+    "ua": "Отримувати авто"
+  },
+  "net_fact_manu_u": {
+    "en": "Do not auto-obtain",
+    "ua": "Не отримувати авто"
+  },
+  "net_fact_dns_u": {
+    "en": "DNS:",
+    "ua": "DNS:"
+  },
+  "net_fact_proxy_u": {
+    "en": "Proxy:",
+    "ua": "Проксі:"
+  },
+  "net_fact_usprx_u": {
+    "en": "Use",
+    "ua": "Використ."
+  },
+  "net_fact_noprx_u": {
+    "en": "Don't use",
+    "ua": "Не використ."
+  },
+  "net_fact_mtu_u": {
+    "en": "MTU Value:",
+    "ua": "Значення MTU:"
+  },
+  "net_fact_ssid": {
+    "en": "SSID",
+    "ua": ""
+  },
+  "net_fact_secur": {
+    "en": "Security",
+    "ua": "Захист"
+  },
+  "net_fact_ip": {
+    "en": "IP Address",
+    "ua": "IP-адреса"
+  },
+  "net_fact_dns": {
+    "en": "DNS",
+    "ua": ""
+  },
+  "net_fact_proxy": {
+    "en": "Proxy Settings",
+    "ua": "Проксі"
+  },
+  "net_fact_mtu": {
+    "en": "MTU Value",
+    "ua": "Значення MTU"
+  },
+  "net_bln_fact_ch0": {
+    "en": "Select SSID to manually enter or edit\nthe access point's name.\n\nSelect Security to change the\nsecurity type used to connect\nto the access point.",
+    "ua": "Виберіть SSID, щоб вручну ввести\nчи змінити назву точки доступу.\n\nВиберіть Захист, щоб змінити тип\nзахисту для з'єднання\nз точкою доступу."
+  },
+  "net_bln_fact_ch1": {
+    "en": "These settings are intended for\nadvanced users.\n\nThese should only be configured\nwhen necessary, for example when\nrequested by the internet service\nprovider.",
+    "ua": "Ці налаштування — для досвідчених\nкористувачів.\n\nЗмінюйте їх лише за потреби,\nнаприклад на вимогу\nінтернет-провайдера."
+  },
+  "net_dlg_fact_sv": {
+    "en": "Settings for Connection %d\nhave now been saved.",
+    "ua": "Налаштування З'єднання %d\nзбережено."
+  },
+  "net_dlg_fact_set": {
+    "en": "Would you like to perform an \ninternet connection test?",
+    "ua": "Виконати перевірку\nз'єднання з Інтернетом?"
+  },
+  "net_dlg_fact_err": {
+    "en": "Enter the SSID.",
+    "ua": "Введіть SSID."
+  },
+  "net_dlg_fact_ng": {
+    "en": "If you change this setting now,\nyou will not be able to change\nit back to WPA2-PSK (TKIP).\n\nProceed?",
+    "ua": "Якщо змінити це налаштування\nзараз, повернути WPA2-PSK\n(TKIP) буде неможливо.\n\nПродовжити?"
+  },
+  "net_dlg_fact_no": {
+    "en": "",
+    "ua": ""
+  },
+  "net_ssid_comm_u": {
+    "en": "Enter the SSID.",
+    "ua": "Введіть SSID."
+  },
+  "net_dlg_ssid_ng_00": {
+    "en": "",
+    "ua": ""
+  },
+  "net_secu_": {
+    "en": "",
+    "ua": ""
+  },
+  "net_secu_cmm_u0": {
+    "en": "Select the security type.",
+    "ua": "Виберіть тип захисту."
+  },
+  "net_dlg_sec_tkip": {
+    "en": "Select the security type.",
+    "ua": "Виберіть тип захисту."
+  },
+  "net_secu_comm_u1": {
+    "en": "Enter the security key.",
+    "ua": "Введіть ключ безпеки."
+  },
+  "swkbd_guide_text": {
+    "en": "Enter the security key.",
+    "ua": "Введіть ключ безпеки."
+  },
+  "net_mtu_": {
+    "en": "",
+    "ua": ""
+  },
+  "net_mtu_comm_u": {
+    "en": "Enter the MTU value.",
+    "ua": "Введіть значення MTU."
+  },
+  "net_ip_": {
+    "en": "",
+    "ua": ""
+  },
+  "net_ip_comm_u": {
+    "en": "Auto-obtain IP address?",
+    "ua": "Отримувати IP-адресу автоматично?"
+  },
+  "net_ip_comm": {
+    "en": "Auto-Obtain IP Address",
+    "ua": "Автоотримання IP-адреси"
+  },
+  "net_do": {
+    "en": "Yes",
+    "ua": "Так"
+  },
+  "net_do_not": {
+    "en": "No",
+    "ua": "Ні"
+  },
+  "net_detail_set": {
+    "en": "Detailed Setup",
+    "ua": "Докладні налаштування"
+  },
+  "net_ip_address": {
+    "en": "IP Address",
+    "ua": "IP-адреса"
+  },
+  "net_ip_subnet": {
+    "en": "Subnet Mask",
+    "ua": "Маска підмережі"
+  },
+  "net_ip_gateway": {
+    "en": "Gateway",
+    "ua": "Шлюз"
+  },
+  "net_ipadd_comm_u": {
+    "en": "Please enter the IP address.",
+    "ua": "Введіть IP-адресу."
+  },
+  "net_ipsub_comm_u": {
+    "en": "Please enter the subnet mask.",
+    "ua": "Введіть маску підмережі."
+  },
+  "net_ipgat_comm_u": {
+    "en": "Please enter the gateway.",
+    "ua": "Введіть шлюз."
+  },
+  "net_bln_ip_chang": {
+    "en": "If you need to enter an IP address\nmanually, select No when asked\nabout auto-obtaining an address.",
+    "ua": "Якщо потрібно ввести IP-адресу\nвручну, виберіть Ні на питання\nпро автоотримання адреси."
+  },
+  "net_bln_ip0": {
+    "en": "Locate the settings for the network\nyou want to connect to and enter\nthe relevant information.",
+    "ua": "Знайдіть налаштування мережі,\nдо якої хочете під'єднатися,\nі введіть потрібні дані."
+  },
+  "net_bln_ip1": {
+    "en": "",
+    "ua": ""
+  },
+  "net_dlg_ip_ng": {
+    "en": "Settings are incorrect.\n\nCheck the entered address\nunder Detailed Setup.",
+    "ua": "Налаштування неправильні.\n\nПеревірте введену адресу\nв Докладних налаштуваннях."
+  },
+  "net_dlg_ip_in_ng": {
+    "en": "The address you entered is\nincorrect.\n\nPlease check the address.",
+    "ua": "Введена адреса\nнеправильна.\n\nПеревірте адресу."
+  },
+  "net_dlg_ip_set": {
+    "en": "The IP address auto-obtain\nsettings have been changed.\n\nIf auto-obtain settings are off,\nyou must perform DNS setup.\n\nWould you like to do so now?",
+    "ua": "Налаштування автоотримання\nIP-адреси змінено.\n\nЯкщо автоотримання вимкнено,\nтреба налаштувати DNS.\n\nЗробити це зараз?"
+  },
+  "net_dns_": {
+    "en": "",
+    "ua": ""
+  },
+  "net_dns_comm": {
+    "en": "Auto-Obtain DNS",
+    "ua": "Автоотримання DNS"
+  },
+  "net_dns_comm_u": {
+    "en": "Auto-obtain the DNS server address?",
+    "ua": "Отримувати адресу DNS автоматично?"
+  },
+  "net_dns_primary": {
+    "en": "Primary DNS",
+    "ua": "Основний DNS"
+  },
+  "net_dns_second": {
+    "en": "Secondary DNS",
+    "ua": "Додатковий DNS"
+  },
+  "net_prdns_comm_u": {
+    "en": "Please enter the primary DNS.",
+    "ua": "Введіть основний DNS."
+  },
+  "net_scdns_comm_u": {
+    "en": "Please enter the secondary DNS.",
+    "ua": "Введіть додатковий DNS."
+  },
+  "net_bln_dns_chan": {
+    "en": "If you need to enter DNS settings\nmanually, select No when asked\nabout auto-obtaining DNS.\n\nIf Auto-Obtain IP Address is off,\nAuto-Obtain DNS will be set to off too.",
+    "ua": "Якщо потрібно ввести DNS вручну,\nвиберіть Ні на питання\nпро автоотримання DNS.\n\nЯкщо автоотримання IP вимкнено,\nавтоотримання DNS теж вимкнеться."
+  },
+  "net_bln_dns": {
+    "en": "Enter the DNS server information\nprovided by your internet service\nprovider.",
+    "ua": "Введіть дані сервера DNS,\nнадані вашим\nінтернет-провайдером."
+  },
+  "net_dlg_dns_ng": {
+    "en": "Settings are incorrect.\n\nCheck the address you entered\nin Detailed Setup.",
+    "ua": "Налаштування неправильні.\n\nПеревірте введену адресу\nв Докладних налаштуваннях."
+  },
+  "net_proxy_": {
+    "en": "",
+    "ua": ""
+  },
+  "net_proxy_comm_u": {
+    "en": "Set up a proxy?",
+    "ua": "Налаштувати проксі?"
+  },
+  "net_proxy_comm": {
+    "en": "Proxy Settings",
+    "ua": "Налаштування проксі"
+  },
+  "net_proxy_server": {
+    "en": "Proxy Server",
+    "ua": "Сервер проксі"
+  },
+  "net_proxy_port": {
+    "en": "Port",
+    "ua": "Порт"
+  },
+  "net_port_comm_u": {
+    "en": "Enter the port number.",
+    "ua": "Введіть номер порту."
+  },
+  "net_serv_comm_u": {
+    "en": "Enter the proxy server.",
+    "ua": "Введіть сервер проксі."
+  },
+  "net_basic_comm": {
+    "en": "Use Basic Authentication",
+    "ua": "Базова автентифікація"
+  },
+  "net_use": {
+    "en": "Yes",
+    "ua": "Так"
+  },
+  "net_unused": {
+    "en": "No",
+    "ua": "Ні"
+  },
+  "net_bln_proxy_ch": {
+    "en": "You should only select Yes if you\nrequire the use of a proxy server.",
+    "ua": "Вибирайте Так лише тоді, коли вам\nсправді потрібен сервер проксі."
+  },
+  "net_bln_proxy_l": {
+    "en": "Enter the proxy server address and\nport number provided by your internet\nservice provider.",
+    "ua": "Введіть адресу сервера проксі\nй номер порту, надані вашим\nінтернет-провайдером."
+  },
+  "net_bln_proxy_r0": {
+    "en": "Select Yes if you need authentication\nwhen connecting to a proxy server.",
+    "ua": "Виберіть Так, якщо для з'єднання\nз проксі потрібна автентифікація."
+  },
+  "net_bln_proxy_r1": {
+    "en": "",
+    "ua": ""
+  },
+  "net_dlg_proxy_ng": {
+    "en": "A proxy server address\nhas not been entered.\n\nPlease enter a valid address.",
+    "ua": "Адресу сервера проксі\nне введено.\n\nВведіть правильну адресу."
+  },
+  "net_dlg_serv_ng": {
+    "en": "The proxy server address you\nentered is incorrect.\n\nPlease check the address\nagain.",
+    "ua": "Введена адреса сервера\nпроксі неправильна.\n\nПеревірте адресу\nще раз."
+  },
+  "net_basic_": {
+    "en": "",
+    "ua": ""
+  },
+  "net_basic_user": {
+    "en": "User Name",
+    "ua": "Ім'я користувача"
+  },
+  "net_basic_pass": {
+    "en": "Password",
+    "ua": "Пароль"
+  },
+  "net_user_comm_u": {
+    "en": "Please enter your user name.",
+    "ua": "Введіть ім'я користувача."
+  },
+  "net_pass_comm_u": {
+    "en": "Please enter your password.",
+    "ua": "Введіть пароль."
+  },
+  "net_bln_basic": {
+    "en": "Enter the user name and password\ngiven by your internet service provider\nto access the proxy server.",
+    "ua": "Введіть ім'я користувача й пароль\nдля доступу до сервера проксі,\nнадані інтернет-провайдером."
+  },
+  "net_delete_": {
+    "en": "",
+    "ua": ""
+  },
+  "net_dlg_delete0": {
+    "en": "Delete settings for\nConnection %d.\n\nOnce deleted, these settings\ncannot be recovered.\nAre you sure you want to\ncontinue?",
+    "ua": "Видалити налаштування\nЗ'єднання %d.\n\nПісля видалення їх\nне можна відновити.\nСправді продовжити?"
+  },
+  "net_dlg_delete1": {
+    "en": "Settings for Connection %d\nhave been deleted.",
+    "ua": "Налаштування З'єднання %d\nвидалено."
+  },
+  "net_test_": {
+    "en": "",
+    "ua": ""
+  },
+  "net_test_title": {
+    "en": "Connection Test",
+    "ua": "Перевірка з'єднання"
+  },
+  "net_testing": {
+    "en": "Testing connection...",
+    "ua": "Перевірка з'єднання…"
+  },
+  "net_bln_test_ok": {
+    "en": "Connection Test successful.\n\nUse a compatible software title\nto verify that data transmission\nwith other users is working.",
+    "ua": "Перевірку з'єднання пройдено.\n\nЩоб перевірити передачу\nданих з іншими, скористайтеся\nсумісною програмою."
+  },
+  "net_bln_test_ng": {
+    "en": "Connection Test failed.\n\nHere are details of the error.",
+    "ua": "Перевірка не пройшла.\n\nОсь подробиці помилки."
+  },
+  "net_test_ng": {
+    "en": "Connection Test failed.",
+    "ua": "Перевірка не пройшла."
+  },
+  "net_test_ng_try": {
+    "en": "Test Again",
+    "ua": "Ще раз"
+  },
+  "net_test_ng_set": {
+    "en": "Change Settings",
+    "ua": "Змінити"
+  },
+  "net_bln_test_eu": {
+    "en": "You must accept the terms of\nthe Nintendo 3DS Service User\nAgreement before you can\nconnect to the internet and\nuse online services.",
+    "ua": "Перед під'єднанням\nдо Інтернету й онлайн-сервісів\nтреба прийняти умови\nугоди користувача\nсервісів Nintendo 3DS."
+  },
+  "net_bln_test": {
+    "en": "This is a test to determine whether you\ncan connect to the internet or not.\n\nUse a compatible software title\nto verify that data transmission\nwith other users is working.",
+    "ua": "Це перевірка, чи можете ви\nпід'єднатися до Інтернету.\n\nЩоб перевірити передачу\nданих з іншими, скористайтеся\nсумісною програмою."
+  },
+  "net_bln_test_err": {
+    "en": "If this is a temporary connection error,\ntouch Test Again to try connecting one\nmore time.\n\nIf you don't know the security key,\nask the person who set up the access\npoint.",
+    "ua": "Якщо це тимчасова помилка з'єднання,\nторкніться Ще раз, щоб спробувати\nзнову.\n\nЯкщо ви не знаєте ключа безпеки,\nзапитайте того, хто налаштовував\nточку доступу."
+  },
+  "net_test_ng_": {
+    "en": "",
+    "ua": ""
+  },
+  "net_test_ctr_u": {
+    "en": "This system",
+    "ua": "Ця система"
+  },
+  "net_dlg_t_ssid_u": {
+    "en": "",
+    "ua": ""
+  },
+  "net_test_net_u": {
+    "en": "Internet",
+    "ua": "Інтернет"
+  },
+  "net_test_ap_u": {
+    "en": "Access Point",
+    "ua": "Точка доступу"
+  },
+  "net_test_sup_u": {
+    "en": "Support Code: %03d-%02d",
+    "ua": "Код підтримки: %03d-%02d"
+  },
+  "net_result_ok_u": {
+    "en": "Connection successful.",
+    "ua": "З'єднання успішне."
+  },
+  "net_result_ng_u": {
+    "en": "Could not connect.",
+    "ua": "Не вдалося під'єднатися."
+  },
+  "net_test_err_code": {
+    "en": "",
+    "ua": ""
+  },
+  "net_bg24_": {
+    "en": "",
+    "ua": ""
+  },
+  "net_bg24_title": {
+    "en": "SpotPass",
+    "ua": "SpotPass"
+  },
+  "net_bg24_comm_u0": {
+    "en": "Change settings for the SpotPass\nfeatures shown below.",
+    "ua": "Змініть налаштування функцій\nSpotPass, показаних нижче."
+  },
+  "net_bg24_get": {
+    "en": "Automatic Software\nDownloads",
+    "ua": "Автоматичне\nзавантаження програм"
+  },
+  "net_bg24_snd": {
+    "en": "Sending of\nUsage Information",
+    "ua": "Надсилання даних\nпро використання"
+  },
+  "net_bln_bg24_top": {
+    "en": "If you put your Nintendo 3DS\nsystem into Sleep Mode while\nnear an internet-connected\naccess point, SpotPass will\nconnect to the internet automatically.",
+    "ua": "Якщо перевести Nintendo 3DS\nу режим сну поблизу точки\nдоступу з Інтернетом, SpotPass\nпід'єднається до Інтернету\nавтоматично."
+  },
+  "net_bln_bg24_top_flw": {
+    "en": "If you put your Nintendo 2DS\nsystem into Sleep Mode while\nnear an internet-connected\naccess point, SpotPass will\nconnect to the internet automatically.",
+    "ua": "Якщо перевести Nintendo 2DS\nу режим сну поблизу точки\nдоступу з Інтернетом, SpotPass\nпід'єднається до Інтернету\nавтоматично."
+  },
+  "net_bg24_comm_u1": {
+    "en": "Choose whether you would like\nSpotPass to automatically download\nsoftware, such as free or trial software.",
+    "ua": "Виберіть, чи має SpotPass автоматично\nзавантажувати програми, наприклад\nбезплатні чи пробні."
+  },
+  "net_bg24_comm1": {
+    "en": "Do you want to use SpotPass \nto automatically download \nsoftware?",
+    "ua": "Використовувати SpotPass для\nавтоматичного завантаження\nпрограм?"
+  },
+  "net_on_get": {
+    "en": "Yes",
+    "ua": "Так"
+  },
+  "net_off_get": {
+    "en": "No",
+    "ua": "Ні"
+  },
+  "net_bln_bg24_get": {
+    "en": "Touch Yes and your Nintendo 3DS\nsystem will be able to download new\nsoftware when in Sleep Mode and\nin range of a usable access point.",
+    "ua": "Торкніться Так — і ваша Nintendo 3DS\nзможе завантажувати нові програми\nв режимі сну, коли поблизу\nє придатна точка доступу."
+  },
+  "net_bln_bg24_get_flw": {
+    "en": "Touch Yes and your Nintendo 2DS\nsystem will be able to download new\nsoftware when in Sleep Mode and\nin range of a usable access point.",
+    "ua": "Торкніться Так — і ваша Nintendo 2DS\nзможе завантажувати нові програми\nв режимі сну, коли поблизу\nє придатна точка доступу."
+  },
+  "net_bg24_comm_u2": {
+    "en": "Select No to opt out of the collection\nand use of your data to improve\nNintendo's products/services. Opting\nout while offline only affects future\ndata. Opting out while online also\nstops the usage of collected data.",
+    "ua": "Виберіть Ні, щоб відмовитися від збору\nй використання ваших даних для\nполіпшення продуктів Nintendo.\nВідмова без Інтернету стосується лише\nмайбутніх даних. Відмова з Інтернетом\nтакож спиняє використання зібраних."
+  },
+  "net_bg24_comm_u2_flw": {
+    "en": "Select No to opt out of the collection\nand use of your data to improve\nNintendo's products/services. Opting\nout while offline only affects future\ndata. Opting out while online also\nstops the usage of collected data.",
+    "ua": "Виберіть Ні, щоб відмовитися від збору\nй використання ваших даних для\nполіпшення продуктів Nintendo.\nВідмова без Інтернету стосується лише\nмайбутніх даних. Відмова з Інтернетом\nтакож спиняє використання зібраних."
+  },
+  "net_bg24_comm2": {
+    "en": "Send usage information\nvia SpotPass?",
+    "ua": "Надсилати дані про\nвикористання через SpotPass?"
+  },
+  "net_on_snd": {
+    "en": "Yes",
+    "ua": "Так"
+  },
+  "net_off_snd": {
+    "en": "No",
+    "ua": "Ні"
+  },
+  "net_bln_bg24_snd": {
+    "en": "Select Yes to send Nintendo\ninformation on how you use your\nsystem (such as play records) and\ndetails about your system settings.\nThis will help with the development\nof future products.",
+    "ua": "Виберіть Так, щоб надсилати Nintendo\nдані про те, як ви користуєтеся\nсистемою (наприклад, записи ігор),\nі про ваші налаштування.\nЦе допоможе в розробці\nмайбутніх продуктів."
+  },
+  "net_dlg_bg24_on": {
+    "en": "",
+    "ua": ""
+  },
+  "net_dlg_bg24_off": {
+    "en": "",
+    "ua": ""
+  },
+  "net_dlg_bg24_eu": {
+    "en": "You can always change this\nsetting later should you\nwish to receive software\nvia SpotPass in future.",
+    "ua": "Ви завжди можете змінити\nце налаштування пізніше,\nякщо захочете отримувати\nпрограми через SpotPass."
+  },
+  "net_dlg_bg24_set": {
+    "en": "SpotPass settings saved.",
+    "ua": "Налаштування SpotPass\nзбережено."
+  },
+  "net_dlg_bg24_eul": {
+    "en": "",
+    "ua": ""
+  },
+  "net_option_": {
+    "en": "",
+    "ua": ""
+  },
+  "net_option_title": {
+    "en": "Other Information",
+    "ua": "Інша інформація"
+  },
+  "net_optn_comm_u": {
+    "en": "Touch an option to confirm.",
+    "ua": "Торкніться пункту для перегляду."
+  },
+  "net_option_eula": {
+    "en": "User Agreement",
+    "ua": "Угода користувача"
+  },
+  "net_option_eula_flw": {
+    "en": "User Agreement",
+    "ua": "Угода користувача"
+  },
+  "net_option_mac": {
+    "en": "Confirm MAC address",
+    "ua": "MAC-адреса"
+  },
+  "net_bln_option": {
+    "en": "The Nintendo 3DS Service User\nAgreement and Privacy Policy is\nrequired to use online services.\nA MAC address is your system's \nunique network ID.\n\nYou can check your MAC address here.",
+    "ua": "Угода користувача сервісів\nNintendo 3DS і політика\nконфіденційності потрібні для\nонлайн-сервісів. MAC-адреса —\nунікальний мережевий ID системи.\n\nТут можна її переглянути."
+  },
+  "net_dlg_eula0": {
+    "en": "The Nintendo 3DS Service User\nAgreement and Privacy Policy\nhas been updated. \n\nWould you like to check it now?",
+    "ua": "Угоду користувача сервісів\nNintendo 3DS і політику\nконфіденційності оновлено.\n\nПереглянути зараз?"
+  },
+  "net_dlg_eula1": {
+    "en": "Display accepted Nintendo 3DS\nService User Agreement and\nPrivacy Policy.",
+    "ua": "Показати прийняту угоду\nкористувача сервісів\nNintendo 3DS і політику\nконфіденційності."
+  },
+  "net_dlg_noeula": {
+    "en": "You cannot view the user\nagreement as the network\nservices defined therein are\nunavailable in your region.",
+    "ua": "Ви не можете переглянути\nугоду користувача, бо описані\nв ній сервіси недоступні\nу вашому регіоні."
+  },
+  "net_mac_title": {
+    "en": "Check MAC Address",
+    "ua": "Перегляд MAC-адреси"
+  },
+  "net_mac_comm_u": {
+    "en": "This is the MAC address of your\nNintendo 3DS system.",
+    "ua": "Це MAC-адреса вашої\nсистеми Nintendo 3DS."
+  },
+  "net_mac_comm_u_flw": {
+    "en": "This is the MAC address of your\nNintendo 2DS system.",
+    "ua": "Це MAC-адреса вашої\nсистеми Nintendo 2DS."
+  },
+  "net_mac_address": {
+    "en": "MAC address",
+    "ua": "MAC-адреса"
+  },
+  "net_bln_mac": {
+    "en": "A MAC address is your system's\nunique network ID.\n\nYou can set wireless access points to\nonly accept connections from certain\nMAC addresses.",
+    "ua": "MAC-адреса — унікальний\nмережевий ID системи.\n\nБездротові точки доступу можна\nналаштувати так, щоб вони\nприймали з'єднання лише\nз певних MAC-адрес."
+  },
+  "dat_": {
+    "en": "",
+    "ua": ""
+  },
+  "dat_title_u": {
+    "en": "Data Management",
+    "ua": "Керування даними"
+  },
+  "dat_comm_u": {
+    "en": "Manage software data saved to the\nSystem Memory or SD Card, and\nchange data management settings.",
+    "ua": "Керуйте даними програм у пам'яті\nсистеми чи на карті SD і змінюйте\nналаштування керування даними."
+  },
+  "dat_comm_u_sac": {
+    "en": "Manage software data saved to the\nSystem Memory or microSD card, and\nchange data management settings.",
+    "ua": "Керуйте даними програм у пам'яті\nсистеми чи на карті microSD і змінюйте\nналаштування керування даними."
+  },
+  "dat_comm_u_jan": {
+    "en": "Manage software data saved to the\nSystem Memory or microSD card, and\nchange data management settings.",
+    "ua": "Керуйте даними програм у пам'яті\nсистеми чи на карті microSD і змінюйте\nналаштування керування даними."
+  },
+  "dat_data0": {
+    "en": "",
+    "ua": ""
+  },
+  "dat_data1": {
+    "en": "",
+    "ua": ""
+  },
+  "dat_mcopy": {
+    "en": "microSD Management",
+    "ua": "Керування microSD"
+  },
+  "dat_ce": {
+    "en": "StreetPass Management",
+    "ua": "Керування StreetPass"
+  },
+  "dat_ce_sac": {
+    "en": "StreetPass Management",
+    "ua": "Керування StreetPass"
+  },
+  "dat_ce_jan": {
+    "en": "StreetPass Management",
+    "ua": "Керування StreetPass"
+  },
+  "dat_blist_reset": {
+    "en": "Reset blocked-user settings",
+    "ua": "Скинути список заблокованих"
+  },
+  "dat_dlg_reset0": {
+    "en": "Reset blocked-user settings?\n\nOnce this has been reset, there\nwill be no restriction on data that\nwas previously blocked.",
+    "ua": "Скинути список заблокованих\nкористувачів?\n\nПісля скидання дані, які\nраніше блокувалися, більше\nне будуть обмежені."
+  },
+  "dat_dlg_3ds": {
+    "en": "",
+    "ua": ""
+  },
+  "dat_dlg_dsi": {
+    "en": "",
+    "ua": ""
+  },
+  "dat_dlg_reset1": {
+    "en": "Settings have been reset.",
+    "ua": "Налаштування скинуто."
+  },
+  "dlg_2b_reset": {
+    "en": "Reset",
+    "ua": "Скинути"
+  },
+  "dat_3ds_comm_u": {
+    "en": "Touch one of the options below.",
+    "ua": "Торкніться одного з пунктів нижче."
+  },
+  "dat_software": {
+    "en": "Software",
+    "ua": "Програми"
+  },
+  "dat_option": {
+    "en": "Extra Data",
+    "ua": "Додаткові дані"
+  },
+  "dat_contents": {
+    "en": "Add-on Content",
+    "ua": "Додатковий вміст"
+  },
+  "dat_backup": {
+    "en": "Save Data Backup",
+    "ua": "Резервні копії"
+  },
+  "dat_sof_title_u": {
+    "en": "Software Management",
+    "ua": "Керування програмами"
+  },
+  "dat_3ds_comm1_u": {
+    "en": "Manage Nintendo 3DS download\nsoftware, including save data.",
+    "ua": "Керуйте завантаженими програмами\nNintendo 3DS, зокрема збереженнями."
+  },
+  "dat_3ds_comm2_u": {
+    "en": "Manage extra data for\nNintendo 3DS software.",
+    "ua": "Керуйте додатковими даними\nпрограм Nintendo 3DS."
+  },
+  "dat_3ds_comm3_u": {
+    "en": "Manage add-on content and update\ndata for Nintendo 3DS software.",
+    "ua": "Керуйте додатковим вмістом\nі даними оновлень програм Nintendo 3DS."
+  },
+  "dat_3ds_comm": {
+    "en": "Software title list",
+    "ua": "Список програм"
+  },
+  "dat_nand_u": {
+    "en": "System Memory",
+    "ua": "Пам'ять системи"
+  },
+  "dat_sd_u": {
+    "en": "SD Card",
+    "ua": "Карта SD"
+  },
+  "dat_sd_u_sac": {
+    "en": "microSD Card",
+    "ua": "Карта microSD"
+  },
+  "dat_sd_u_jan": {
+    "en": "microSD Card",
+    "ua": "Карта microSD"
+  },
+  "dat_block_u": {
+    "en": "Open Blocks",
+    "ua": "Вільних блоків"
+  },
+  "dat_no_sd_u": {
+    "en": "No SD Card found.",
+    "ua": "Карту SD не знайдено."
+  },
+  "dat_no_sd_u_sac": {
+    "en": "No microSD card found.",
+    "ua": "Карту microSD не знайдено."
+  },
+  "dat_no_sd_u_jan": {
+    "en": "No microSD card found.",
+    "ua": "Карту microSD не знайдено."
+  },
+  "dat_ng_sd_u": {
+    "en": "Could not access SD Card.",
+    "ua": "Немає доступу до карти SD."
+  },
+  "dat_ng_sd_u_sac": {
+    "en": "Could not access\nmicroSD card.",
+    "ua": "Немає доступу\nдо карти microSD."
+  },
+  "dat_ng_sd_u_jan": {
+    "en": "Could not access\nmicroSD card.",
+    "ua": "Немає доступу\nдо карти microSD."
+  },
+  "dat_protect_u": {
+    "en": "Write-protection is enabled\non the SD Card.",
+    "ua": "Карту SD захищено\nвід запису."
+  },
+  "dat_nand": {
+    "en": "System Memory",
+    "ua": "Пам'ять системи"
+  },
+  "dat_sd": {
+    "en": "SD Card",
+    "ua": "Карта SD"
+  },
+  "dat_sd_sac": {
+    "en": "microSD Card",
+    "ua": "Карта microSD"
+  },
+  "dat_sd_jan": {
+    "en": "microSD Card",
+    "ua": "Карта microSD"
+  },
+  "dat_no_sd": {
+    "en": "No SD Card found.",
+    "ua": "Карту SD не знайдено."
+  },
+  "dat_no_sd_sac": {
+    "en": "No microSD card found.",
+    "ua": "Карту microSD не знайдено."
+  },
+  "dat_no_sd_jan": {
+    "en": "No microSD card found.",
+    "ua": "Карту microSD не знайдено."
+  },
+  "dat_ng_sd": {
+    "en": "Could not access SD Card.",
+    "ua": "Немає доступу до карти SD."
+  },
+  "dat_ng_sd_sac": {
+    "en": "Could not access microSD card.",
+    "ua": "Немає доступу до карти microSD."
+  },
+  "dat_ng_sd_jan": {
+    "en": "Could not access microSD card.",
+    "ua": "Немає доступу до карти microSD."
+  },
+  "dat_no_software": {
+    "en": "There is no accessible\nsoftware data.",
+    "ua": "Немає доступних\nданих програм."
+  },
+  "dat_writeprotect": {
+    "en": "Write-protection is enabled\non the SD Card.",
+    "ua": "Карту SD захищено\nвід запису."
+  },
+  "dat_dlg_sd_err": {
+    "en": "Could not access SD Card.",
+    "ua": "Немає доступу до карти SD."
+  },
+  "dat_dlg_sd_err_sac": {
+    "en": "Could not access microSD card.",
+    "ua": "Немає доступу\nдо карти microSD."
+  },
+  "dat_dlg_sd_err_jan": {
+    "en": "Could not access microSD card.",
+    "ua": "Немає доступу\nдо карти microSD."
+  },
+  "dat_soft_page": {
+    "en": "Software",
+    "ua": "Програми"
+  },
+  "dat_dlg_nand": {
+    "en": "System Memory",
+    "ua": "Пам'ять системи"
+  },
+  "dat_dlg_sd": {
+    "en": "SD Card",
+    "ua": "Карта SD"
+  },
+  "dat_dlg_sd_sac": {
+    "en": "microSD Card",
+    "ua": "Карта microSD"
+  },
+  "dat_dlg_sd_jan": {
+    "en": "microSD Card",
+    "ua": "Карта microSD"
+  },
+  "dat_dlg_ce": {
+    "en": "StreetPass Management",
+    "ua": "Керування StreetPass"
+  },
+  "dat_dlg_block": {
+    "en": "# of blocks",
+    "ua": "К-ть блоків"
+  },
+  "dat_dlg_1b_delet": {
+    "en": "Delete",
+    "ua": "Стерти"
+  },
+  "dat_dlg_2b_delet": {
+    "en": "Delete",
+    "ua": "Стерти"
+  },
+  "dat_dlg_2b_move": {
+    "en": "Copy",
+    "ua": "Копіювати"
+  },
+  "dat_dlg_1b_close": {
+    "en": "Close",
+    "ua": "Закрити"
+  },
+  "dat_dlg_1b_cancl": {
+    "en": "Cancel",
+    "ua": "Скасувати"
+  },
+  "dat_dlg_reset0sd": {
+    "en": "The SD Card software\nmanagement information is\ncorrupted. Reset it now?\n\nThis will delete all\nsoftware and save data.",
+    "ua": "Дані керування програмами\nна карті SD пошкоджено.\nСкинути їх зараз?\n\nЦе видалить усі програми\nй збереження."
+  },
+  "dat_dlg_reset0sd_sac": {
+    "en": "The microSD card software\nmanagement information is\ncorrupted. Reset it now?\n\nThis will delete all\nsoftware and save data.",
+    "ua": "Дані керування програмами\nна карті microSD пошкоджено.\nСкинути їх зараз?\n\nЦе видалить усі програми\nй збереження."
+  },
+  "dat_dlg_reset0sd_jan": {
+    "en": "The microSD card software\nmanagement information is\ncorrupted. Reset it now?\n\nThis will delete all\nsoftware and save data.",
+    "ua": "Дані керування програмами\nна карті microSD пошкоджено.\nСкинути їх зараз?\n\nЦе видалить усі програми\nй збереження."
+  },
+  "dat_dlg_reset1sd": {
+    "en": "Resetting...",
+    "ua": "Скидання…"
+  },
+  "dat_dlg_reset2sd": {
+    "en": "Reset complete. You can\nredownload your software\nusing Nintendo eShop.",
+    "ua": "Скидання завершено. Програми\nможна завантажити повторно\nв Nintendo eShop."
+  },
+  "dat_dlg_reset3sd": {
+    "en": "Failed to reset.",
+    "ua": "Не вдалося скинути."
+  },
+  "dat_dlg_no_sd": {
+    "en": "No SD Card found.",
+    "ua": "Карту SD не знайдено."
+  },
+  "dat_dlg_no_sd_sac": {
+    "en": "No microSD card found.",
+    "ua": "Карту microSD не знайдено."
+  },
+  "dat_dlg_no_sd_jan": {
+    "en": "No microSD card found.",
+    "ua": "Карту microSD не знайдено."
+  },
+  "dat_dlg_protect": {
+    "en": "Cannot write to the SD Card.\n\nPlease turn off the power, move\nthe SD Card's write-protection\nswitch to the off position, then\nreinsert the SD Card.",
+    "ua": "Не можна записати\nна карту SD.\n\nВимкніть живлення, переведіть\nперемикач захисту від запису\nна карті SD у «вимк.»,\nпотім вставте карту знову."
+  },
+  "dat_dlg_sd_no_sp": {
+    "en": "No more software can be saved\nto this SD Card, as doing so\nwould exceed the limit on the\nnumber of software titles that\ncan be saved on an SD Card.",
+    "ua": "Більше програм не можна\nзберегти на цю карту SD:\nбуде перевищено ліміт\nкількості програм на карті."
+  },
+  "dat_dlg_sd_no_sp_sac": {
+    "en": "No more software can be saved\nto this microSD card, as doing so\nwould exceed the limit on the\nnumber of software titles that\ncan be saved on a microSD card.",
+    "ua": "Більше програм не можна\nзберегти на цю карту microSD:\nбуде перевищено ліміт\nкількості програм на карті."
+  },
+  "dat_dlg_sd_no_sp_jan": {
+    "en": "No more software can be saved\nto this microSD card, as doing so\nwould exceed the limit on the\nnumber of software titles that\ncan be saved on a microSD card.",
+    "ua": "Більше програм не можна\nзберегти на цю карту microSD:\nбуде перевищено ліміт\nкількості програм на карті."
+  },
+  "dat_dlg_sd_full": {
+    "en": "There is not enough free space\non this SD Card.",
+    "ua": "На цій карті SD недостатньо\nвільного місця."
+  },
+  "dat_dlg_sd_full_sac": {
+    "en": "There is not enough free space\non this microSD card.",
+    "ua": "На цій карті microSD\nнедостатньо вільного місця."
+  },
+  "dat_dlg_sd_full_jan": {
+    "en": "There is not enough free space\non this microSD card.",
+    "ua": "На цій карті microSD\nнедостатньо вільного місця."
+  },
+  "dat_dlg_sd_check": {
+    "en": "Checking SD Card...",
+    "ua": "Перевірка карти SD…"
+  },
+  "dat_dlg_sd_check_sac": {
+    "en": "Checking microSD card...",
+    "ua": "Перевірка карти microSD…"
+  },
+  "dat_dlg_sd_check_jan": {
+    "en": "Checking microSD card...",
+    "ua": "Перевірка карти microSD…"
+  },
+  "dat_dlg_mov_nan1": {
+    "en": "Copying data to the SD Card...\n\nDo not remove the SD Card or\nturn off the power.",
+    "ua": "Копіювання даних на карту SD…\n\nНе виймайте карту SD\nі не вимикайте живлення."
+  },
+  "dat_dlg_mov_nan1_sac": {
+    "en": "Copying data to the\nmicroSD card...\n\nDo not remove the microSD\ncard or turn off the power.",
+    "ua": "Копіювання даних на карту\nmicroSD…\n\nНе виймайте карту microSD\nі не вимикайте живлення."
+  },
+  "dat_dlg_mov_nan1_jan": {
+    "en": "Copying data to the\nmicroSD card...\n\nDo not remove the microSD\ncard or turn off the power.",
+    "ua": "Копіювання даних на карту\nmicroSD…\n\nНе виймайте карту microSD\nі не вимикайте живлення."
+  },
+  "dat_dlg_mov_nan2": {
+    "en": "The software to be copied\nalready exists on the SD Card.\n\nOverwrite the software?",
+    "ua": "Програма, яку копіюють,\nуже є на карті SD.\n\nПерезаписати її?"
+  },
+  "dat_dlg_mov_nan2_sac": {
+    "en": "The software to be copied\nalready exists on the microSD\ncard.\n\nOverwrite the software?",
+    "ua": "Програма, яку копіюють,\nуже є на карті microSD.\n\nПерезаписати її?"
+  },
+  "dat_dlg_mov_nan2_jan": {
+    "en": "The software to be copied\nalready exists on the microSD\ncard.\n\nOverwrite the software?",
+    "ua": "Програма, яку копіюють,\nуже є на карті microSD.\n\nПерезаписати її?"
+  },
+  "dat_dlg_mov_nan3": {
+    "en": "If you overwrite this software,\nyou will not be able to use\nit on any other system.\n\nIs this OK?",
+    "ua": "Якщо перезаписати цю\nпрограму, ви не зможете\nвикористати її на іншій системі.\n\nПродовжити?"
+  },
+  "dat_dlg_mov_nan4": {
+    "en": "The data has been copied\nto the SD Card.",
+    "ua": "Дані скопійовано\nна карту SD."
+  },
+  "dat_dlg_mov_nan4_sac": {
+    "en": "The data has been copied\nto the microSD card.",
+    "ua": "Дані скопійовано\nна карту microSD."
+  },
+  "dat_dlg_mov_nan4_jan": {
+    "en": "The data has been copied\nto the microSD card.",
+    "ua": "Дані скопійовано\nна карту microSD."
+  },
+  "dat_dlg_mov_err": {
+    "en": "Data could not be copied.",
+    "ua": "Не вдалося скопіювати."
+  },
+  "dat_dlg_del_all": {
+    "en": "Delete Software and Save Data",
+    "ua": "Видалити програму\nй збереження"
+  },
+  "dat_dlg_del_bu": {
+    "en": "Create Save Data Backup\nand Delete Software",
+    "ua": "Створити резервну копію\nй видалити програму"
+  },
+  "dat_dlg_del_t": {
+    "en": "Delete Software",
+    "ua": "Видалити програму"
+  },
+  "dat_dlg_delete0": {
+    "en": "Delete this software\nand save data?\n\nOnce deleted, save data\ncannot be restored.\n\nIs this OK?",
+    "ua": "Видалити цю програму\nй збереження?\n\nПісля видалення збереження\nне можна відновити.\n\nПродовжити?"
+  },
+  "dat_dlg_delete1": {
+    "en": "Deleting...",
+    "ua": "Видалення…"
+  },
+  "dat_dlg_delete2": {
+    "en": "Could not delete the data.",
+    "ua": "Не вдалося видалити дані."
+  },
+  "dat_dlg_delete3": {
+    "en": "Delete extra data?\n\nOnce deleted, extra data\ncannot be restored.\nIs this OK?",
+    "ua": "Видалити додаткові дані?\n\nПісля видалення їх\nне можна відновити.\nПродовжити?"
+  },
+  "dat_dlg_delete4": {
+    "en": "Delete this add-on content?\n\nNote: Deleted add-on content\ncan be redownloaded.",
+    "ua": "Видалити цей додатковий вміст?\n\nПримітка: видалений вміст\nможна завантажити повторно."
+  },
+  "dat_dlg_delete5": {
+    "en": "Delete this update data?\n\nNote: Deleted update data\ncan be redownloaded.",
+    "ua": "Видалити ці дані оновлення?\n\nПримітка: видалені дані\nможна завантажити повторно."
+  },
+  "dat_dlg_delete6": {
+    "en": "Back up this software's \nsave data and delete the\nsoftware?",
+    "ua": "Створити резервну копію\nзбережень цієї програми\nй видалити її?"
+  },
+  "dat_dlg_delete7": {
+    "en": "Back up this software's save\ndata and delete the software?\n\nPlease use the SD Card\ncontaining backup data next\ntime you use this software.",
+    "ua": "Створити резервну копію\nзбережень і видалити програму?\n\nНаступного разу використайте\nкарту SD із цією копією."
+  },
+  "dat_dlg_delete7_sac": {
+    "en": "Back up this software's save\ndata and delete the software?\n\nPlease use the microSD card\ncontaining this backup data\nnext time you use this software.",
+    "ua": "Створити резервну копію\nзбережень і видалити програму?\n\nНаступного разу використайте\nкарту microSD із цією копією."
+  },
+  "dat_dlg_delete7_jan": {
+    "en": "Back up this software's save\ndata and delete the software?\n\nPlease use the microSD card\ncontaining this backup data\nnext time you use this software.",
+    "ua": "Створити резервну копію\nзбережень і видалити програму?\n\nНаступного разу використайте\nкарту microSD із цією копією."
+  },
+  "dat_bu_soft_u": {
+    "en": "Software to Back Up",
+    "ua": "Програма для копії"
+  },
+  "base_2b_newmake": {
+    "en": "Create",
+    "ua": "Створити"
+  },
+  "dat_dlg_esc_wait": {
+    "en": "Backing up save data and\ndeleting the software...\n\nDo not turn off the power or\nremove the SD Card.",
+    "ua": "Створення копії збережень\nі видалення програми…\n\nНе вимикайте живлення\nі не виймайте карту SD."
+  },
+  "dat_dlg_esc_wait_sac": {
+    "en": "Backing up save data and\ndeleting the software...\n\nDo not turn off the power or\nremove the microSD card.",
+    "ua": "Створення копії збережень\nі видалення програми…\n\nНе вимикайте живлення\nі не виймайте карту microSD."
+  },
+  "dat_dlg_esc_wait_jan": {
+    "en": "Backing up save data and\ndeleting the software...\n\nDo not turn off the power or\nremove the microSD card.",
+    "ua": "Створення копії збережень\nі видалення програми…\n\nНе вимикайте живлення\nі не виймайте карту microSD."
+  },
+  "dat_dlg_mov_dif0": {
+    "en": "This software cannot be copied.",
+    "ua": "Цю програму не можна\nскопіювати."
+  },
+  "dat_dlg_na_no_sp": {
+    "en": "No more software can be saved\nto the System Memory, as doing\nso would exceed the limit on the\nnumber of software titles that can\nbe saved to the System Memory.",
+    "ua": "Більше програм не можна\nзберегти в пам'яті системи:\nбуде перевищено ліміт\nкількості програм у пам'яті\nсистеми."
+  },
+  "dat_dlg_nand_f": {
+    "en": "There is not enough free space\nin the System Memory.",
+    "ua": "У пам'яті системи\nнедостатньо вільного місця."
+  },
+  "dat_dlg_mov_sd0": {
+    "en": "This will copy data to the\nSystem Memory.\n\nIs this OK?",
+    "ua": "Дані буде скопійовано\nв пам'ять системи.\n\nПродовжити?"
+  },
+  "dat_dlg_mov_sd1": {
+    "en": "Copying data to the System\nMemory.\nDo not remove the SD Card\nor turn off the power.",
+    "ua": "Копіювання даних у пам'ять\nсистеми.\nНе виймайте карту SD\nі не вимикайте живлення."
+  },
+  "dat_dlg_mov_sd1_sac": {
+    "en": "Copying data to the\nSystem Memory.\n\nDo not remove the microSD card\nor turn off the power.",
+    "ua": "Копіювання даних у пам'ять\nсистеми.\n\nНе виймайте карту microSD\nі не вимикайте живлення."
+  },
+  "dat_dlg_mov_sd1_jan": {
+    "en": "Copying data to the\nSystem Memory.\n\nDo not remove the microSD card\nor turn off the power.",
+    "ua": "Копіювання даних у пам'ять\nсистеми.\n\nНе виймайте карту microSD\nі не вимикайте живлення."
+  },
+  "dat_dlg_mov_sd2": {
+    "en": "The software to be copied\nalready exists in the System\nMemory.\nOverwrite the software?",
+    "ua": "Програма, яку копіюють,\nуже є в пам'яті\nсистеми.\nПерезаписати її?"
+  },
+  "dat_dlg_mov_sd3": {
+    "en": "The data has been copied\nto the System Memory.",
+    "ua": "Дані скопійовано\nв пам'ять системи."
+  },
+  "dat_dlg_extdata": {
+    "en": "Creating software\nmanagement information...\nPlease do not remove\nthe SD Card.",
+    "ua": "Створення даних керування\nпрограмами…\nНе виймайте\nкарту SD."
+  },
+  "dat_dlg_extdata_sac": {
+    "en": "Creating software\nmanagement information...\n\nPlease do not remove\nthe microSD card.",
+    "ua": "Створення даних керування\nпрограмами…\n\nНе виймайте\nкарту microSD."
+  },
+  "dat_dlg_extdata_jan": {
+    "en": "Creating software\nmanagement information...\n\nPlease do not remove\nthe microSD card.",
+    "ua": "Створення даних керування\nпрограмами…\n\nНе виймайте\nкарту microSD."
+  },
+  "dat_opt_title_u": {
+    "en": "Extra Data Management",
+    "ua": "Керування додатковими даними"
+  },
+  "dat_opt_page": {
+    "en": "Extra Data",
+    "ua": "Додаткові дані"
+  },
+  "dat_dlg_add": {
+    "en": "[Extra Data] ",
+    "ua": "[Додаткові дані] "
+  },
+  "dat_no_option": {
+    "en": "There is no extra data.",
+    "ua": "Додаткових даних немає."
+  },
+  "dat_con_title_u": {
+    "en": "Add-on Content Management",
+    "ua": "Керування додатковим вмістом"
+  },
+  "dat_con_page": {
+    "en": "Add-on Content",
+    "ua": "Додатковий вміст"
+  },
+  "dat_dlg_add_con": {
+    "en": "[Add-on Content] ",
+    "ua": "[Додатковий вміст] "
+  },
+  "dat_no_contents": {
+    "en": "There is no add-on content.",
+    "ua": "Додаткового вмісту немає."
+  },
+  "dat_dlg_mov_nan9": {
+    "en": "Some data cannot be\ncopied to the SD Card. \nCopy the data anyway?",
+    "ua": "Частину даних не можна\nскопіювати на карту SD.\nСкопіювати решту?"
+  },
+  "dat_dlg_mov_nan9_sac": {
+    "en": "Some data cannot be copied\nto the microSD card.\n\nCopy the data anyway?",
+    "ua": "Частину даних не можна\nскопіювати на карту microSD.\n\nСкопіювати решту?"
+  },
+  "dat_dlg_mov_nan9_jan": {
+    "en": "Some data cannot be copied\nto the microSD card.\n\nCopy the data anyway?",
+    "ua": "Частину даних не можна\nскопіювати на карту microSD.\n\nСкопіювати решту?"
+  },
+  "dat_dlg_patch": {
+    "en": "[Update Data] ",
+    "ua": "[Дані оновлення] "
+  },
+  "dat_bu_title_u": {
+    "en": "Save Data Backup Management",
+    "ua": "Керування резервними копіями"
+  },
+  "dat_bu_comm_u": {
+    "en": "Create or restore backups of \nsave data for Nintendo 3DS\ndownload software.",
+    "ua": "Створюйте або відновлюйте резервні\nкопії збережень завантажених\nпрограм Nintendo 3DS."
+  },
+  "dat_bu_comm0_u": {
+    "en": "You can back up save data for\nNintendo 3DS download software.",
+    "ua": "Можна створити резервну копію\nзбережень завантажених програм."
+  },
+  "dat_bu_comm1_u": {
+    "en": "Backed-up save data can be restored for\nuse with Nintendo 3DS software.",
+    "ua": "Збережену копію можна відновити\nдля програм Nintendo 3DS."
+  },
+  "dat_bu_comm2_u": {
+    "en": "Backup save data can be deleted.",
+    "ua": "Резервні копії можна видаляти."
+  },
+  "dat_bu_create": {
+    "en": "Backup",
+    "ua": "Створити"
+  },
+  "dat_bu_restore": {
+    "en": "Restore",
+    "ua": "Відновити"
+  },
+  "dat_bu_delete": {
+    "en": "Delete",
+    "ua": "Стерти"
+  },
+  "dat_dlg_bu_crng": {
+    "en": "Failed to create backup data\nmanagement information.",
+    "ua": "Не вдалося створити дані\nкерування резервними копіями."
+  },
+  "dat_dlg_bu_brkn": {
+    "en": "The backup data management\ninformation is corrupted.\nWould you like to create the\ninformation again?\nBackup data titles may not be\ndisplayed properly afterwards.",
+    "ua": "Дані керування резервними\nкопіями пошкоджено.\nСтворити їх знову?\nНазви резервних копій потім\nможе бути показано\nнеправильно."
+  },
+  "dat_bu_notitle": {
+    "en": "Could not display",
+    "ua": "Не вдалося показати"
+  },
+  "dat_dlg_bu_init": {
+    "en": "",
+    "ua": ""
+  },
+  "dat_dlg_bu_iniok": {
+    "en": "",
+    "ua": ""
+  },
+  "dat_dlg_bu_ining": {
+    "en": "",
+    "ua": ""
+  },
+  "dat_dlg_bu_mkext": {
+    "en": "Creating save data backup\nmanagement information...\n\nDo not remove the SD Card\nor turn off the power.",
+    "ua": "Створення даних керування\nрезервними копіями…\n\nНе виймайте карту SD\nі не вимикайте живлення."
+  },
+  "dat_dlg_bu_mkext_sac": {
+    "en": "Creating save data backup\nmanagement information...\n\nDo not remove the microSD card\nor turn off the power.",
+    "ua": "Створення даних керування\nрезервними копіями…\n\nНе виймайте карту microSD\nі не вимикайте живлення."
+  },
+  "dat_dlg_bu_mkext_jan": {
+    "en": "Creating save data backup\nmanagement information...\n\nDo not remove the microSD card\nor turn off the power.",
+    "ua": "Створення даних керування\nрезервними копіями…\n\nНе виймайте карту microSD\nі не вимикайте живлення."
+  },
+  "dat_bu_sub_soft": {
+    "en": "Select software to back up.",
+    "ua": "Виберіть програму."
+  },
+  "dat_bu_sub0": {
+    "en": "Select a save location.",
+    "ua": "Виберіть місце збереження."
+  },
+  "dat_no_backup": {
+    "en": "There is no backup data.",
+    "ua": "Резервних копій немає."
+  },
+  "dat_dlg_bu_cr0": {
+    "en": "This backup data will be\noverwritten.\n\nIs this OK?",
+    "ua": "Цю резервну копію\nбуде перезаписано.\n\nПродовжити?"
+  },
+  "dat_dlg_bu_cr1": {
+    "en": "Saving data...\n\nDo not remove the SD Card\nor turn off the power.",
+    "ua": "Збереження даних…\n\nНе виймайте карту SD\nі не вимикайте живлення."
+  },
+  "dat_dlg_bu_cr1_sac": {
+    "en": "Saving data...\n\nDo not remove the microSD card\nor turn off the power.",
+    "ua": "Збереження даних…\n\nНе виймайте карту microSD\nі не вимикайте живлення."
+  },
+  "dat_dlg_bu_cr1_jan": {
+    "en": "Saving data...\n\nDo not remove the microSD card\nor turn off the power.",
+    "ua": "Збереження даних…\n\nНе виймайте карту microSD\nі не вимикайте живлення."
+  },
+  "dat_dlg_bu_cr2": {
+    "en": "Saved.",
+    "ua": "Збережено."
+  },
+  "dat_dlg_bu_crerr": {
+    "en": "Data could not be saved.",
+    "ua": "Не вдалося зберегти дані."
+  },
+  "dat_bu_sub1": {
+    "en": "Select data to restore.",
+    "ua": "Виберіть дані для відновлення."
+  },
+  "dat_dlg_bu_re0": {
+    "en": "The backup data will be restored.\n\nSave data will be overwritten.\nIs this OK?",
+    "ua": "Резервну копію буде відновлено.\n\nЗбереження буде перезаписано.\nПродовжити?"
+  },
+  "dat_dlg_bu_re1": {
+    "en": "Restoring backup data...\n\nDo not remove the SD Card\nor turn off the power.",
+    "ua": "Відновлення резервної копії…\n\nНе виймайте карту SD\nі не вимикайте живлення."
+  },
+  "dat_dlg_bu_re1_sac": {
+    "en": "Restoring backup data...\n\nDo not remove the microSD card\nor turn off the power.",
+    "ua": "Відновлення резервної копії…\n\nНе виймайте карту microSD\nі не вимикайте живлення."
+  },
+  "dat_dlg_bu_re1_jan": {
+    "en": "Restoring backup data...\n\nDo not remove the microSD card\nor turn off the power.",
+    "ua": "Відновлення резервної копії…\n\nНе виймайте карту microSD\nі не вимикайте живлення."
+  },
+  "dat_dlg_bu_re2": {
+    "en": "The data has been restored.",
+    "ua": "Дані відновлено."
+  },
+  "dat_dlg_bu_re3": {
+    "en": "Could not find software to\nrestore save data to.\nYou can redownload your\nsoftware using Nintendo eShop.",
+    "ua": "Не знайдено програми, до якої\nвідновити збереження.\nПрограму можна завантажити\nповторно в Nintendo eShop."
+  },
+  "dat_dlg_bu_re4": {
+    "en": "",
+    "ua": ""
+  },
+  "dat_dlg_bu_re5": {
+    "en": "Restore this backup data?\n\nNote: After restoration, the\nbackup data will be deleted.",
+    "ua": "Відновити цю резервну копію?\n\nПримітка: після відновлення\nкопію буде видалено."
+  },
+  "dat_dlg_bu_reerr": {
+    "en": "Data could not be restored.",
+    "ua": "Не вдалося відновити дані."
+  },
+  "dat_bu_sub2": {
+    "en": "Select the data you want to delete.",
+    "ua": "Виберіть дані для видалення."
+  },
+  "dat_dlg_bu_de0": {
+    "en": "This backup data will be deleted.\n\nIs this OK?",
+    "ua": "Цю резервну копію\nбуде видалено.\n\nПродовжити?"
+  },
+  "dat_dlg_bu_nosav": {
+    "en": "There is no save data that can\nbe backed up.",
+    "ua": "Немає збережень, для яких\nможна створити копію."
+  },
+  "dat_dlg_bu_unsup": {
+    "en": "This software's save data\ncannot be backed up.",
+    "ua": "Для збережень цієї програми\nне можна створити копію."
+  },
+  "dat_dsi_title_u": {
+    "en": "Nintendo DSiWare Management",
+    "ua": "Керування Nintendo DSiWare"
+  },
+  "dat_dsi_page": {
+    "en": "Nintendo DSiWare",
+    "ua": "Nintendo DSiWare"
+  },
+  "dat_dlg_dsi_mov0": {
+    "en": "If you copy this software\nto the SD Card, you will\nbe unable to launch it.\n\nIs this OK?",
+    "ua": "Якщо скопіювати цю програму\nна карту SD, запустити її\nбуде неможливо.\n\nПродовжити?"
+  },
+  "dat_dlg_dsi_mov0_sac": {
+    "en": "If you copy this software\nto the microSD card, you will\nbe unable to launch it.\n\nIs this OK?",
+    "ua": "Якщо скопіювати цю програму\nна карту microSD, запустити її\nбуде неможливо.\n\nПродовжити?"
+  },
+  "dat_dlg_dsi_mov0_jan": {
+    "en": "If you copy this software\nto the microSD card, you will\nbe unable to launch it.\n\nIs this OK?",
+    "ua": "Якщо скопіювати цю програму\nна карту microSD, запустити її\nбуде неможливо.\n\nПродовжити?"
+  },
+  "dat_ce_title_u": {
+    "en": "StreetPass Management",
+    "ua": "Керування StreetPass"
+  },
+  "dat_ce_comm_u": {
+    "en": "Manage software titles using\nStreetPass functionality.",
+    "ua": "Керуйте програмами, які\nвикористовують StreetPass."
+  },
+  "dat_ce_comm": {
+    "en": "Titles using StreetPass",
+    "ua": "Програми зі StreetPass"
+  },
+  "dat_ce_page": {
+    "en": "StreetPass",
+    "ua": "StreetPass"
+  },
+  "dat_ce_number": {
+    "en": "Data Transmissions",
+    "ua": "Передач даних"
+  },
+  "dat_ce_optout": {
+    "en": "Deactivate StreetPass",
+    "ua": "Вимкнути StreetPass"
+  },
+  "dat_dlg_optout0": {
+    "en": "Deactivate StreetPass for this\nsoftware? Any unsaved data\nwill be lost.\n\n(Reactivate StreetPass from\nwithin the software to start\nusing StreetPass again.)",
+    "ua": "Вимкнути StreetPass для цієї\nпрограми? Незбережені дані\nбуде втрачено.\n\n(Щоб знову користуватися\nStreetPass, увімкніть його\nв самій програмі.)"
+  },
+  "dat_dlg_2b_optou": {
+    "en": "OK",
+    "ua": "OK"
+  },
+  "parental_": {
+    "en": "",
+    "ua": ""
+  },
+  "parental_title_u": {
+    "en": "Parental Controls",
+    "ua": "Батьківський контроль"
+  },
+  "par_top_comm_u": {
+    "en": "Parents or legal guardians can limit\naccess to certain Nintendo 3DS\nfeatures which they may deem\nunsuitable for their children. If you are\nunder the age of 18, talk to a parent\nor legal guardian about this.",
+    "ua": "Батьки чи опікуни можуть обмежити\nдоступ до деяких функцій системи,\nякі вважають непридатними для дітей.\nЯкщо вам менше 18 років, поговоріть\nпро це з батьками або опікуном."
+  },
+  "par_top_comm_u_n": {
+    "en": "Parents or legal guardians can limit\naccess to certain features which they\nmay deem unsuitable for their children.",
+    "ua": "Батьки чи опікуни можуть обмежити\nдоступ до деяких функцій,\nнепридатних для дітей."
+  },
+  "par_top_comm0": {
+    "en": "These settings allow parents or\nlegal guardians to limit access\nto game software, features\nallowing the exchange of\npersonal data, internet\nbrowsing, etc. Would you like to\nconfigure these settings now?",
+    "ua": "Ці налаштування дають батькам\nчи опікунам змогу обмежити\nдоступ до ігор, функцій обміну\nособистими даними, перегляду\nІнтернету тощо.\nНалаштувати їх зараз?"
+  },
+  "par_top_comm0_n": {
+    "en": "You may limit access to software\nwith unsuitable age ratings,\npurchasing from Nintendo\neShop, internet browsing, etc.\n\nPlease configure these \nsettings if a child will be using\nthe system.",
+    "ua": "Можна обмежити доступ до\nпрограм з непридатним віковим\nрейтингом, купівлі в eShop,\nперегляду Інтернету тощо.\n\nНалаштуйте це, якщо системою\nкористуватиметься дитина."
+  },
+  "base_2b_set": {
+    "en": "Set",
+    "ua": "Задати"
+  },
+  "par_top_comm1": {
+    "en": "Please ensure that a parent or\nguardian configures these\nsettings. These settings do not\napply to Nintendo DS software.",
+    "ua": "Ці налаштування має задавати\nбатько або опікун. Вони не\nстосуються програм\nNintendo DS."
+  },
+  "par_dlg_pin0": {
+    "en": "If you forget your PIN and\nthe answer to your secret\nquestion, you will be unable\nto remove Parental Controls\nrestrictions without first\nobtaining a master key.",
+    "ua": "Якщо ви забудете PIN-код\nі відповідь на секретне\nпитання, зняти обмеження\nбатьківського контролю буде\nнеможливо без отримання\nголовного ключа."
+  },
+  "par_pin_comm0": {
+    "en": "If you forget your PIN and\nthe answer to your secret\nquestion, you will be unable\nto remove Parental Controls\nrestrictions without first\nobtaining a master key.",
+    "ua": "Якщо ви забудете PIN-код\nі відповідь на секретне\nпитання, зняти обмеження\nбатьківського контролю буде\nнеможливо без отримання\nголовного ключа."
+  },
+  "dlg_2b_back": {
+    "en": "Back",
+    "ua": "Назад"
+  },
+  "par_pin_comm_u0": {
+    "en": "Choose a four-digit PIN.",
+    "ua": "Виберіть PIN-код із чотирьох цифр."
+  },
+  "par_pin_comm_u1": {
+    "en": "Please input the PIN again to confirm.",
+    "ua": "Введіть PIN-код ще раз\nдля підтвердження."
+  },
+  "par_dlg_pin1": {
+    "en": "Choose a four-digit PIN.",
+    "ua": "Виберіть PIN-код\nіз чотирьох цифр."
+  },
+  "par_dlg_pin1_n": {
+    "en": "Choose a four-digit PIN.",
+    "ua": "Виберіть PIN-код\nіз чотирьох цифр."
+  },
+  "par_dlg_pin2": {
+    "en": "Please input a four-digit PIN.",
+    "ua": "Введіть PIN-код\nіз чотирьох цифр."
+  },
+  "par_dlg_pin3": {
+    "en": "Please input the PIN again.",
+    "ua": "Введіть PIN-код ще раз."
+  },
+  "par_dlg_pin4": {
+    "en": "This PIN is incorrect.\n\nPlease input the correct PIN.",
+    "ua": "Неправильний PIN-код.\n\nВведіть правильний PIN-код."
+  },
+  "par_dlg_pin5": {
+    "en": "",
+    "ua": ""
+  },
+  "par_que_comm_u0": {
+    "en": "Select a secret question.",
+    "ua": "Виберіть секретне питання."
+  },
+  "par_dlg_que0": {
+    "en": "Select a secret question in\ncase you forget your PIN.",
+    "ua": "Виберіть секретне питання\nна випадок, якщо забудете PIN."
+  },
+  "par_question0": {
+    "en": "What did you call your\nfirst pet?",
+    "ua": "Як звали вашу\nпершу тварину?"
+  },
+  "par_question1": {
+    "en": "Where were you born?",
+    "ua": "Де ви народилися?"
+  },
+  "par_question2": {
+    "en": "What is your favourite\nsports team?",
+    "ua": "Яка ваша улюблена\nспортивна команда?"
+  },
+  "par_question3": {
+    "en": "What was your favourite\nbirthday present?",
+    "ua": "Який ваш улюблений\nподарунок?"
+  },
+  "par_question4": {
+    "en": "What is your favourite film?",
+    "ua": "Який ваш улюблений фільм?"
+  },
+  "par_question5": {
+    "en": "If you could go anywhere,\nwhere would you go?",
+    "ua": "Куди б ви поїхали,\nякби могли будь-куди?"
+  },
+  "par_question_q": {
+    "en": "(Create your own secret\nquestion)",
+    "ua": "(Створити власне\nсекретне питання)"
+  },
+  "par_que_comm_u10": {
+    "en": "Secret question:",
+    "ua": "Секретне питання:"
+  },
+  "par_question_u0": {
+    "en": "What did you call your first pet?",
+    "ua": "Як звали вашу першу тварину?"
+  },
+  "par_question_u1": {
+    "en": "Where were you born?",
+    "ua": "Де ви народилися?"
+  },
+  "par_question_u2": {
+    "en": "What is your favourite sports team?",
+    "ua": "Яка ваша улюблена команда?"
+  },
+  "par_question_u3": {
+    "en": "What was your favourite\nbirthday present?",
+    "ua": "Який ваш улюблений\nподарунок на день народження?"
+  },
+  "par_question_u4": {
+    "en": "What is your favourite film?",
+    "ua": "Який ваш улюблений фільм?"
+  },
+  "par_question_u5": {
+    "en": "If you could go anywhere,\nwhere would you go?",
+    "ua": "Куди б ви поїхали,\nякби могли будь-куди?"
+  },
+  "par_que_u_now": {
+    "en": "",
+    "ua": ""
+  },
+  "par_que_comm_u11": {
+    "en": "Please enter an answer to the secret\nquestion. Use at least four characters.",
+    "ua": "Введіть відповідь на секретне питання.\nМінімум чотири символи."
+  },
+  "par_que_comm_u12": {
+    "en": "Please enter an answer to the\nsecret question.",
+    "ua": "Введіть відповідь на секретне\nпитання."
+  },
+  "par_que_comm_u13": {
+    "en": "Please do not use questions with\nanswers which:\n\n• Could be guessed by others\n• You may be likely to forget\n• May change in the future",
+    "ua": "Не використовуйте питання,\nвідповіді на які:\n\n• інші можуть вгадати\n• ви можете забути\n• можуть змінитися"
+  },
+  "par_dlg_que1": {
+    "en": "Please enter an answer to the\nsecret question. Use at least four\ncharacters.",
+    "ua": "Введіть відповідь на секретне\nпитання. Мінімум\nчотири символи."
+  },
+  "par_dlg_que2": {
+    "en": "Please enter an answer to the\nsecret question. Use at least\nfour characters.",
+    "ua": "Введіть відповідь на секретне\nпитання. Мінімум\nчотири символи."
+  },
+  "par_dlg_que1_q": {
+    "en": "Please enter your secret\nquestion.",
+    "ua": "Введіть своє секретне\nпитання."
+  },
+  "par_dlg_que3_q": {
+    "en": "Please do not use questions with\nanswers which:\n\n• Could be guessed by others\n• You may be likely to forget\n• May change in the future",
+    "ua": "Не використовуйте питання,\nвідповіді на які:\n\n• інші можуть вгадати\n• ви можете забути\n• можуть змінитися"
+  },
+  "par_swkbd_guid_q": {
+    "en": "You can enter up to\n51 characters.",
+    "ua": "Можна ввести до\n51 символу."
+  },
+  "par_dlg_que2_q": {
+    "en": "Please make sure your secret\nquestion is at least four\ncharacters long.",
+    "ua": "Секретне питання має\nмістити щонайменше\nчотири символи."
+  },
+  "par_dlg_que4_q": {
+    "en": "Is this OK?",
+    "ua": "Продовжити?"
+  },
+  "par_dlg_que3": {
+    "en": "",
+    "ua": ""
+  },
+  "par_dlg_que4": {
+    "en": "PIN and secret question\nsetup complete.",
+    "ua": "PIN-код і секретне питання\nзадано."
+  },
+  "par_dlg_que5": {
+    "en": "Answer to secret question is\nincorrect.",
+    "ua": "Відповідь на секретне питання\nнеправильна."
+  },
+  "par_dlg_que5_n": {
+    "en": "You have entered an incorrect\nanswer.\n\nPlease check your spelling\nand remember that the answer\nis case sensitive.",
+    "ua": "Ви ввели неправильну\nвідповідь.\n\nПеревірте написання й\nпам'ятайте, що регістр\nмає значення."
+  },
+  "par_dlg_que5_1": {
+    "en": "You have entered an incorrect\nanswer.\n\nFor example, if your answer is\n\"Nintendo\", \"NINTENDO\" will\nnot be recognised.",
+    "ua": "Ви ввели неправильну\nвідповідь.\n\nНаприклад, якщо відповідь\n«Nintendo», то «NINTENDO»\nне буде розпізнано."
+  },
+  "par_dlg_que6": {
+    "en": "If the answer to your secret\nquestion is even slightly wrong,\nyou will not be granted access. If\nyou have forgotten your answer\nand your PIN, you will have to\ncontact Nintendo by telephone.\nDo you want to proceed?",
+    "ua": "Якщо відповідь на секретне\nпитання хоч трохи неправильна,\nдоступу не буде. Якщо ви забули\nі відповідь, і PIN-код, доведеться\nзв'язатися з Nintendo\nтелефоном.\nПродовжити?"
+  },
+  "par_dlg_que6_1": {
+    "en": "If the answer to your secret\nquestion is even slightly\nwrong, you will not be granted\naccess. Are you sure this is\ncorrect?",
+    "ua": "Якщо відповідь на секретне\nпитання хоч трохи\nнеправильна, доступу не буде.\nВи впевнені, що вона\nправильна?"
+  },
+  "par_dlg_que7": {
+    "en": "PIN and secret question\nsetup complete.\n\nTake care not to lose the PIN,\nas you will need it to configure\nParental Controls in the\nSystem Settings.",
+    "ua": "PIN-код і секретне питання\nзадано.\n\nНе втрачайте PIN-код: він\nпотрібен, щоб змінювати\nбатьківський контроль\nу налаштуваннях системи."
+  },
+  "par_dlg_que8": {
+    "en": "You will need this PIN in order\nto access certain important\nfunctions, including Internet\nSettings and Format System\nMemory.",
+    "ua": "Цей PIN-код буде потрібен для\nдоступу до важливих функцій,\nзокрема інтернет-налаштувань\nі форматування пам'яті\nсистеми."
+  },
+  "par_dlg_que8_n": {
+    "en": "You will need this PIN in order\nto access certain important\nfunctions, including Internet\nSettings and Format System\nMemory.",
+    "ua": "Цей PIN-код буде потрібен для\nдоступу до важливих функцій,\nзокрема інтернет-налаштувань\nі форматування пам'яті\nсистеми."
+  },
+  "par_top_comm2": {
+    "en": "Content is restricted by \nParental Controls. Would you like\nto change these settings?",
+    "ua": "Вміст обмежено батьківським\nконтролем. Змінити\nці налаштування?"
+  },
+  "par_top_change": {
+    "en": "Change",
+    "ua": "Змінити"
+  },
+  "par_top_forget": {
+    "en": "Forgot PIN",
+    "ua": "Забув PIN"
+  },
+  "dlg_2b_retry": {
+    "en": "Retry",
+    "ua": "Повторити"
+  },
+  "base_2b_change": {
+    "en": "Change",
+    "ua": "Змінити"
+  },
+  "keyboard_forgot": {
+    "en": "",
+    "ua": ""
+  },
+  "keyboard_forgot2": {
+    "en": "I Forgot",
+    "ua": "Не пам'ятаю"
+  },
+  "par_pin_comm_u2": {
+    "en": "Enter your four-digit PIN.",
+    "ua": "Введіть PIN-код\nіз чотирьох цифр."
+  },
+  "par_mas_comm_u0": {
+    "en": "Obtaining a master key.",
+    "ua": "Отримання головного ключа."
+  },
+  "par_mas_comm": {
+    "en": "If you forget your PIN and the\nanswer to your secret question, call\nthe number given in the Nintendo 3DS\nOperations Manual and provide the\nfollowing enquiry number. You will\nthen be issued a master key.",
+    "ua": "Якщо ви забули PIN-код і відповідь\nна секретне питання, зателефонуйте\nза номером із посібника Nintendo 3DS\nі назвіть наведений нижче номер\nзапиту. Вам видадуть головний ключ."
+  },
+  "par_mas_comm_n": {
+    "en": "Please contact your local customer\nsupport centre, quoting the enquiry\nnumber below, to be issued a master key.\nFor contact details, check the System\nSettings electronic manual or visit\nsupport.nintendo.com. Phone inquiries\nshould be made by a parent or guardian\nas age restrictions may apply.",
+    "ua": "Зверніться до місцевого центру\nпідтримки, назвавши номер запиту\nнижче, щоб отримати головний ключ.\nКонтакти є в електронному посібнику\nз налаштувань системи або на\nsupport.nintendo.com. Телефонувати\nмає батько або опікун, бо можливі\nвікові обмеження."
+  },
+  "par_mas_comm_flw": {
+    "en": "If you forget your PIN and the\nanswer to your secret question, call\nthe number given in the Nintendo 2DS\nOperations Manual and provide the\nfollowing enquiry number. You will\nthen be issued a master key.",
+    "ua": "Якщо ви забули PIN-код і відповідь\nна секретне питання, зателефонуйте\nза номером із посібника Nintendo 2DS\nі назвіть наведений нижче номер\nзапиту. Вам видадуть головний ключ."
+  },
+  "par_mas_comm_u1": {
+    "en": "Enter master key.",
+    "ua": "Введіть головний ключ."
+  },
+  "par_mas_number": {
+    "en": "Enquiry Number:",
+    "ua": "Номер запиту:"
+  },
+  "par_dlg_mas0": {
+    "en": "Enter five-digit master key.",
+    "ua": "Введіть головний ключ\nіз п'яти цифр."
+  },
+  "par_dlg_mas1": {
+    "en": "Master key is incorrect.",
+    "ua": "Головний ключ неправильний."
+  },
+  "par_mas_comm_u2": {
+    "en": "Please reset your PIN\nand email address.",
+    "ua": "Задайте новий PIN-код\nі електронну адресу."
+  },
+  "par_dlg_mas2": {
+    "en": "Master key confirmed.",
+    "ua": "Головний ключ підтверджено."
+  },
+  "par_mas_reset": {
+    "en": "Please choose a new PIN.\n\nIf you previously registered an\nemail address, the registration\nwill be deleted. Please register\nan email address again.",
+    "ua": "Виберіть новий PIN-код.\n\nЯкщо ви раніше реєстрували\nелектронну адресу, реєстрацію\nбуде видалено. Зареєструйте\nадресу знову."
+  },
+  "par_chan_comm_u0": {
+    "en": "Change the Parental Controls settings.",
+    "ua": "Змініть налаштування\nбатьківського контролю."
+  },
+  "par_change": {
+    "en": "Parental Controls\nSettings",
+    "ua": "Батьківський\nконтроль"
+  },
+  "par_chan_comm_u2": {
+    "en": "",
+    "ua": ""
+  },
+  "par_explain_noti": {
+    "en": "",
+    "ua": ""
+  },
+  "par_deletechange": {
+    "en": "",
+    "ua": ""
+  },
+  "par_change_mail": {
+    "en": "Change Email Address",
+    "ua": "Змінити ел. адресу"
+  },
+  "par_registe_mail": {
+    "en": "Register Email Address",
+    "ua": "Зареєструвати ел. адресу"
+  },
+  "par_delete": {
+    "en": "Clear Settings",
+    "ua": "Скинути налаштування"
+  },
+  "par_change_pin": {
+    "en": "Change PIN",
+    "ua": "Змінити PIN"
+  },
+  "base_2b_par_back": {
+    "en": "Back",
+    "ua": "Назад"
+  },
+  "par_chan_lock_u": {
+    "en": "Locked",
+    "ua": "Обмежено"
+  },
+  "par_chan_unloc_u": {
+    "en": "Unlocked",
+    "ua": "Без обмежень"
+  },
+  "par_chan_comm_u1": {
+    "en": "Touch the Parental Controls setting\nyou want to adjust.",
+    "ua": "Торкніться налаштування, яке\nхочете змінити."
+  },
+  "par_chan_co_u1_n": {
+    "en": "Touch the setting you want to adjust.",
+    "ua": "Торкніться налаштування,\nяке хочете змінити."
+  },
+  "base_2b_done": {
+    "en": "Done",
+    "ua": "Готово"
+  },
+  "par_rating": {
+    "en": "Software Rating ",
+    "ua": "Віковий рейтинг "
+  },
+  "par_browser": {
+    "en": "Internet Browser",
+    "ua": "Інтернет-браузер"
+  },
+  "par_shop": {
+    "en": "Nintendo 3DS\nShopping Services",
+    "ua": "Магазини\nNintendo 3DS"
+  },
+  "par_3d": {
+    "en": "Display of 3D Images ",
+    "ua": "Показ 3D-зображень "
+  },
+  "par_miiverse": {
+    "en": "Miiverse",
+    "ua": "Miiverse"
+  },
+  "par_photo": {
+    "en": "Sharing Images / Audio /\nVideo / Long Text Data",
+    "ua": "Обмін зображеннями /\nзвуком / відео / текстом"
+  },
+  "par_internet": {
+    "en": "Online Interaction ",
+    "ua": "Взаємодія онлайн "
+  },
+  "par_ce": {
+    "en": "StreetPass",
+    "ua": "StreetPass"
+  },
+  "par_friend": {
+    "en": "Friend Registration",
+    "ua": "Додавання друзів"
+  },
+  "par_dlplay": {
+    "en": "DS Download Play",
+    "ua": "Гра по завантаженню DS"
+  },
+  "par_movie": {
+    "en": "Viewing\nDistributed Videos",
+    "ua": "Перегляд\nвідео"
+  },
+  "par_coppacs": {
+    "en": "",
+    "ua": ""
+  },
+  "par_dlg_default": {
+    "en": "Please configure your\nParental Controls settings.\n\nRestrictions are currently\nset for all items.",
+    "ua": "Налаштуйте батьківський\nконтроль.\n\nЗараз обмеження задано\nдля всіх пунктів."
+  },
+  "par_dlg_change0": {
+    "en": "Any unsaved changes you\nhave made will be lost.\n\nIs this OK?",
+    "ua": "Незбережені зміни\nбуде втрачено.\n\nПродовжити?"
+  },
+  "par_dlg_change1": {
+    "en": "Settings saved.\n\nAs a precautionary measure,\ncertain functions are restricted\nby default. Refer to the\nOperations Manual for details.",
+    "ua": "Налаштування збережено.\n\nЗ обережності частину функцій\nобмежено за умовчанням.\nДокладніше — у посібнику\nз користування."
+  },
+  "par_dlg_chang1_n": {
+    "en": "Settings saved.\nAs a precautionary measure,\nfunctions such as System\nMemory formatting and internet\nsettings are restricted by default.\nRefer to the System Settings\nelectronic manual for details.",
+    "ua": "Налаштування збережено.\nЗ обережності такі функції, як\nформатування пам'яті системи\nй інтернет-налаштування,\nобмежено за умовчанням.\nДокладніше — в електронному\nпосібнику з налаштувань."
+  },
+  "st_dlg_filter": {
+    "en": "",
+    "ua": ""
+  },
+  "parental__60": {
+    "en": "",
+    "ua": ""
+  },
+  "par_dlg_delete": {
+    "en": "This will delete all Parental\nControls settings.\n\nOnce deleted, these settings\ncannot be recovered.\nAre you sure you want to\ncontinue?",
+    "ua": "Це видалить усі налаштування\nбатьківського контролю.\n\nПісля видалення їх не можна\nвідновити.\nСправді продовжити?"
+  },
+  "par_ratin_comm_u": {
+    "en": "Restricted rating icons are greyed out.",
+    "ua": "Обмежені рейтинги показано сірим."
+  },
+  "par_dlg_rating0": {
+    "en": "Choose a suitable software rating\nfor the user of this system.\n\nEach step to the right represents\na higher level of restriction.",
+    "ua": "Виберіть придатний віковий\nрейтинг для користувача\nцієї системи.\n\nКожен крок праворуч —\nсуворіше обмеження."
+  },
+  "par_dlg_rating1": {
+    "en": "If a title carries a software rating\nmatching those highlighted on\nthe upper screen, it can be\nlaunched.\n\nIs this OK?",
+    "ua": "Програму можна запустити,\nякщо її віковий рейтинг\nвідповідає позначеним\nна верхньому екрані.\n\nПродовжити?"
+  },
+  "par_brows_comm": {
+    "en": "Restrict use of the internet\nbrowser?",
+    "ua": "Обмежити користування\nінтернет-браузером?"
+  },
+  "par_brows_comm_u": {
+    "en": "The internet browser allows you to\nuse the internet to browse websites.",
+    "ua": "Інтернет-браузер дає змогу\nпереглядати сайти в Інтернеті."
+  },
+  "par_shop_comm": {
+    "en": "Restrict access to\nNintendo 3DS Shopping Services?",
+    "ua": "Обмежити доступ до\nмагазинів Nintendo 3DS?"
+  },
+  "par_shop_comm_u": {
+    "en": "Restrict the use of credit cards,\nfunding cards and online purchasing\nof content and services through the\nNintendo 3DS Shopping Services.",
+    "ua": "Обмежує використання кредитних\nі поповнюваних карток та купівлю\nвмісту й сервісів у магазинах\nNintendo 3DS."
+  },
+  "par_3d_comm": {
+    "en": "Restrict access to 3D images?",
+    "ua": "Обмежити показ 3D?"
+  },
+  "par_3d_comm_u": {
+    "en": "Restricts the display of 3D images\non the 3D Screen.\n\nAll 3D content in software for\nthis system will be displayed in 2D.",
+    "ua": "Обмежує показ 3D-зображень\nна 3D-екрані.\n\nУсе 3D у програмах для цієї\nсистеми буде показано у 2D."
+  },
+  "par_dlg_3d": {
+    "en": "You have chosen not to restrict\nthe display of 3D images.\n\nThe use of the 3D feature is not\nrecommended for children aged\nsix and under.",
+    "ua": "Ви вибрали не обмежувати\nпоказ 3D-зображень.\n\n3D не рекомендовано дітям\nвіком до шести років\nвключно."
+  },
+  "par_mvs_comm": {
+    "en": "Restrict the use of Miiverse?",
+    "ua": "Обмежити Miiverse?"
+  },
+  "par_mvs_comm_u": {
+    "en": "Restricts users from viewing or\nposting content on Miiverse.\n(The Restrict Posting setting does not\nprevent registered friends from\nexchanging messages.)",
+    "ua": "Обмежує перегляд і публікацію\nвмісту в Miiverse.\n(Обмеження публікації не заважає\nзареєстрованим друзям\nобмінюватися повідомленнями.)"
+  },
+  "par_photo_comm": {
+    "en": "Restrict the transmission of image,\naudio, video and long text data?",
+    "ua": "Обмежити передачу зображень,\nзвуку, відео й довгого тексту?"
+  },
+  "par_photo_comm_u": {
+    "en": "This restricts the transmission of data\nwhich may contain private information,\nsuch as images (including photos),\naudio, video and long text.\nNote: It does not restrict data sent by\nNintendo DS software or Miiverse.",
+    "ua": "Обмежує передачу даних, які можуть\nмістити приватні дані: зображень\n(зокрема фото), звуку, відео\nй довгого тексту.\nПримітка: не обмежує дані з програм\nNintendo DS чи Miiverse."
+  },
+  "par_photo_comm_0": {
+    "en": "",
+    "ua": ""
+  },
+  "par_dlg_photo": {
+    "en": "You have chosen not to restrict\nthe transmission of data.\n\nPlease ensure that children do\nnot give out personal information\nsuch as names and telephone\nnumbers when using the system.",
+    "ua": "Ви вибрали не обмежувати\nпередачу даних.\n\nПильнуйте, щоб діти не\nповідомляли особистих даних —\nімен, номерів телефонів —\nкористуючись системою."
+  },
+  "par_net_comm": {
+    "en": "Restrict Online Interaction with\nother users?",
+    "ua": "Обмежити взаємодію онлайн\nз іншими користувачами?"
+  },
+  "par_net_comm_u": {
+    "en": "This restricts all online communication\nin games and the exchange of certain\ngame data with other users over the\ninternet (excluding Nintendo DS\nsoftware titles and Miiverse).",
+    "ua": "Обмежує весь онлайн-зв'язок в іграх\nі обмін деякими даними ігор з іншими\nкористувачами через Інтернет\n(окрім програм Nintendo DS\nі Miiverse)."
+  },
+  "par_ce_comm": {
+    "en": "Restrict StreetPass functionality \nwith other users?",
+    "ua": "Обмежити роботу StreetPass\nз іншими користувачами?"
+  },
+  "par_ce_comm_u": {
+    "en": "This restricts the exchange of data\nbetween users via StreetPass\n(Nintendo 3DS software titles only).",
+    "ua": "Обмежує обмін даними між\nкористувачами через StreetPass\n(лише програми Nintendo 3DS)."
+  },
+  "par_fri_comm": {
+    "en": "Restrict the registration\nof new friends?",
+    "ua": "Обмежити додавання\nнових друзів?"
+  },
+  "par_fri_comm_u": {
+    "en": "Friend registration allows you and the\nregistered friends to see each other's\nonline status and current software title.\nYou may exchange messages and\nfreely exchange data that might\ncontain personal information.",
+    "ua": "Список друзів дає вам і друзям\nбачити стан одне одного в мережі\nй поточну програму. Ви можете\nобмінюватися повідомленнями й\nвільно обмінюватися даними, які\nможуть містити особисту інформацію."
+  },
+  "par_dlp_comm": {
+    "en": "Restrict the use of DS Download\nPlay?",
+    "ua": "Обмежити користування Грою\nпо завантаженню DS?"
+  },
+  "par_dlp_comm_u": {
+    "en": "DS Download Play allows you to\nconnect with nearby systems to\ndownload demos and play wireless\nmultiplayer titles.",
+    "ua": "Гра по завантаженню DS дає змогу\nз'єднуватися з консолями поблизу,\nщоб завантажувати демоверсії\nй грати в бездротовому режимі."
+  },
+  "par_movie_comm": {
+    "en": "Restrict the viewing of\ndistributed videos?",
+    "ua": "Обмежити перегляд\nвідео?"
+  },
+  "par_movie_comm_u": {
+    "en": "Restricts viewing of distributed videos\nto those suitable for all ages. This\nsetting does not apply to game-related\nvideos found on Nintendo eShop,\nwhich can be restricted using the\nseparate Software Rating setting.",
+    "ua": "Обмежує перегляд відео тими, що\nпридатні для будь-якого віку. Це\nне стосується відео про ігри\nв Nintendo eShop — їх обмежує\nокреме налаштування вікового\nрейтингу."
+  },
+  "par_mail_comm_u0": {
+    "en": "You can now register an email address,\nwhich will be used in the event that\nyou forget your PIN.",
+    "ua": "Тепер можна зареєструвати електронну\nадресу — вона знадобиться, якщо\nви забудете PIN-код."
+  },
+  "par_mail_comm0": {
+    "en": "You now have the option to\nregister an email address.\n\nIf you forget your PIN and the\nanswer to your secret question,\na master key to reset your PIN\ncan be sent to your registered\nemail address.",
+    "ua": "Тепер ви можете зареєструвати\nелектронну адресу.\n\nЯкщо ви забудете PIN-код\nі відповідь на секретне питання,\nголовний ключ для скидання\nPIN-коду можна надіслати\nна цю адресу."
+  },
+  "par_mail_comm_u1": {
+    "en": "Please enter an email address that\nonly parents or guardians can access.",
+    "ua": "Введіть електронну адресу, до якої\nмають доступ лише батьки чи опікуни."
+  },
+  "par_mail_comm_u2": {
+    "en": "Request a master key.",
+    "ua": "Запросити головний ключ."
+  },
+  "par_mail_comm_u3": {
+    "en": "If you are using a spam filter, please\nensure that your settings allow emails\nfrom @nintendo.net.",
+    "ua": "Якщо ви користуєтеся спам-фільтром,\nдозвольте листи з @nintendo.net."
+  },
+  "par_mail_comm1": {
+    "en": "Would you like to have a master\nkey sent to the email address\npartially displayed here?\n\nMake sure your settings allow\nemails from @nintendo.net.",
+    "ua": "Надіслати головний ключ\nна адресу, частково показану\nтут?\n\nПереконайтеся, що листи\nз @nintendo.net дозволені."
+  },
+  "par_mail_comm2": {
+    "en": "If you forget your PIN, a master\nkey to reset it will be sent to\nthe email address shown here.",
+    "ua": "Якщо ви забудете PIN-код,\nголовний ключ для скидання\nнадійде на показану тут\nелектронну адресу."
+  },
+  "par_mail_comm3": {
+    "en": "The following email address\nwill be registered:",
+    "ua": "Буде зареєстровано таку\nелектронну адресу:"
+  },
+  "par_mail_comm4": {
+    "en": "There may be an error in the\npart of your email address\nfollowing the @ mark.\nRegister this address?",
+    "ua": "Можливо, у частині адреси\nпісля знака @ є помилка.\nЗареєструвати цю адресу?"
+  },
+  "swkbd_guide_txt1": {
+    "en": "Enter your email address.",
+    "ua": "Введіть електронну адресу."
+  },
+  "swkbd_guide_txt2": {
+    "en": "Confirm your email address.",
+    "ua": "Підтвердьте електронну адресу."
+  },
+  "par_dlg_mail0": {
+    "en": "Please enter an email address\nthat only parents or guardians\ncan access.",
+    "ua": "Введіть електронну адресу,\nдо якої мають доступ лише\nбатьки чи опікуни."
+  },
+  "par_dlg_mail1": {
+    "en": "You will need to enter your email\naddress once more to confirm.",
+    "ua": "Введіть електронну адресу\nще раз для підтвердження."
+  },
+  "par_dlg_mail2": {
+    "en": "",
+    "ua": ""
+  },
+  "par_dlg_mail3": {
+    "en": "Registering email address...",
+    "ua": "Реєстрація електронної адреси…"
+  },
+  "par_dlg_mail4": {
+    "en": "Confirmation email sent.\n\nIf you do not receive the email\nwithin an hour, please check that\nthe address is correct and that\nyou can receive emails from\n@nintendo.net.",
+    "ua": "Лист підтвердження надіслано.\n\nЯкщо лист не надійде протягом\nгодини, перевірте адресу\nй те, чи дозволені листи\nз @nintendo.net."
+  },
+  "par_dlg_mail5": {
+    "en": "Master key sent. Please check\nyour email. If you do not receive\nthe email within an hour, contact\nyour local customer support\ncentre. For contact details, check\nthe Operations Manual or visit\nsupport.nintendo.com.",
+    "ua": "Головний ключ надіслано.\nПеревірте пошту. Якщо лист\nне надійде протягом години,\nзвернітеся до місцевого центру\nпідтримки. Контакти є в посібнику\nабо на support.nintendo.com."
+  },
+  "par_dlg_mail6": {
+    "en": "",
+    "ua": ""
+  },
+  "par_dlg_mail7": {
+    "en": "Sending master key...",
+    "ua": "Надсилання головного ключа…"
+  },
+  "par_dlg_mail8": {
+    "en": "Email address registered. \n\nThis console must be able to\nconnect to the internet in case\nyou need to have a master key\nsent. Please check that you have\nconfigured your internet settings.",
+    "ua": "Електронну адресу\nзареєстровано.\n\nЩоб отримати головний ключ,\nконсоль мусить мати доступ\nдо Інтернету. Перевірте\nінтернет-налаштування."
+  },
+  "par_dlg_mail9": {
+    "en": "",
+    "ua": ""
+  },
+  "par_dlg_mail10": {
+    "en": "The email addresses you have\nentered do not match.\n\nPlease check and try again.",
+    "ua": "Введені електронні адреси\nне збігаються.\n\nПеревірте й спробуйте знову."
+  },
+  "par_dlg_mail11": {
+    "en": "",
+    "ua": ""
+  },
+  "base_2b_register": {
+    "en": "Register",
+    "ua": "Реєстрація"
+  },
+  "base_2b_dntregis": {
+    "en": "Cancel",
+    "ua": "Скасувати"
+  },
+  "base_2b_correct": {
+    "en": "Change",
+    "ua": "Змінити"
+  },
+  "base_2b_keep": {
+    "en": "Register",
+    "ua": "Реєстрація"
+  },
+  "base_2b_send": {
+    "en": "OK",
+    "ua": "OK"
+  },
+  "base_2b_dontsend": {
+    "en": "",
+    "ua": ""
+  },
+  "par_notifi_comm_u0": {
+    "en": "",
+    "ua": ""
+  },
+  "par_bln_notifi0": {
+    "en": "",
+    "ua": ""
+  },
+  "par_bln_notifi1": {
+    "en": "",
+    "ua": ""
+  },
+  "par_bln_notifi2": {
+    "en": "",
+    "ua": ""
+  },
+  "par_bln_notifi3": {
+    "en": "",
+    "ua": ""
+  },
+  "par_bln_notifi4": {
+    "en": "",
+    "ua": ""
+  },
+  "par_bln_notifi5": {
+    "en": "",
+    "ua": ""
+  },
+  "par_bln_notifi6": {
+    "en": "",
+    "ua": ""
+  },
+  "bln_2b_register": {
+    "en": "",
+    "ua": ""
+  },
+  "bln_2b_dontregister": {
+    "en": "",
+    "ua": ""
+  },
+  "bln_2b_set": {
+    "en": "",
+    "ua": ""
+  },
+  "bln_base_more": {
+    "en": "",
+    "ua": ""
+  },
+  "par_dlg_rating2": {
+    "en": "",
+    "ua": ""
+  },
+  "par_ratin2_com_u": {
+    "en": "",
+    "ua": ""
+  },
+  "par_dlg_rating3": {
+    "en": "",
+    "ua": ""
+  },
+  "par_coppacs_comm": {
+    "en": "",
+    "ua": ""
+  },
+  "par_coppa_comm_u": {
+    "en": "",
+    "ua": ""
+  },
+  "par_coppa_help": {
+    "en": "",
+    "ua": ""
+  },
+  "par_dlg_help0": {
+    "en": "",
+    "ua": ""
+  },
+  "par_dlg_help1": {
+    "en": "",
+    "ua": ""
+  },
+  "par_dlg_coppa0": {
+    "en": "",
+    "ua": ""
+  },
+  "par_dlg_coppa1": {
+    "en": "",
+    "ua": ""
+  },
+  "par_dlg_coppa2": {
+    "en": "",
+    "ua": ""
+  },
+  "par_dlg_coppa3": {
+    "en": "",
+    "ua": ""
+  },
+  "dlg_2b_yes": {
+    "en": "",
+    "ua": ""
+  },
+  "dlg_2b_no": {
+    "en": "",
+    "ua": ""
+  },
+  "par_dlg_deleteng": {
+    "en": "These settings cannot be\ndeleted because the\nNintendo Network ID linked\nto this system is for someone\nunder the age of 13.",
+    "ua": "Ці налаштування не можна\nвидалити, бо Nintendo\nNetwork ID, привʼязаний\nдо цієї системи, належить\nособі, молодшій за 13 років."
+  },
+  "par_dlg_del_wait": {
+    "en": "The necessary data is missing.\nWith the internet connected,\nplease wait with the HOME\nMenu open, without activating\nSleep Mode. Then try\nselecting Clear Settings.",
+    "ua": "Потрібних даних немає.\nПід'єднайтеся до Інтернету\nй зачекайте з відкритим меню\nHOME, не переходячи в режим\nсну. Потім спробуйте\nСкинути налаштування."
+  },
+  "par_ok": {
+    "en": "Do not restrict",
+    "ua": "Без обмежень"
+  },
+  "par_ng": {
+    "en": "Restrict",
+    "ua": "Обмежити"
+  },
+  "par_mvs_ok": {
+    "en": "Do not restrict",
+    "ua": "Без обмежень"
+  },
+  "par_mvs_ng_p": {
+    "en": "Restrict Posting",
+    "ua": "Обмежити публікацію"
+  },
+  "par_mvs_ng_p_r": {
+    "en": "Restrict Viewing and Posting",
+    "ua": "Обмежити перегляд\nі публікацію"
+  },
+  "par_rating_any": {
+    "en": "None",
+    "ua": "Немає"
+  },
+  "par_cero_0001": {
+    "en": "18 years and above",
+    "ua": "Від 18 років"
+  },
+  "par_cero_0002": {
+    "en": "17 years and above",
+    "ua": "Від 17 років"
+  },
+  "par_cero_0003": {
+    "en": "15 years and above",
+    "ua": "Від 15 років"
+  },
+  "par_cero_0004": {
+    "en": "12 years and above",
+    "ua": "Від 12 років"
+  },
+  "par_cero_0005": {
+    "en": "All Ages\n(Educational, Database, etc.)",
+    "ua": "Будь-який вік\n(навчальні, довідкові тощо)"
+  },
+  "par_esrb_0001": {
+    "en": "",
+    "ua": ""
+  },
+  "par_esrb_0002": {
+    "en": "",
+    "ua": ""
+  },
+  "par_esrb_0003": {
+    "en": "",
+    "ua": ""
+  },
+  "par_esrb_0004": {
+    "en": "",
+    "ua": ""
+  },
+  "par_esrb_0005": {
+    "en": "",
+    "ua": ""
+  },
+  "par_esrb_0006": {
+    "en": "",
+    "ua": ""
+  },
+  "par_esrb_0007": {
+    "en": "",
+    "ua": ""
+  },
+  "par_esrb_0008": {
+    "en": "",
+    "ua": ""
+  },
+  "par_esrb_0009": {
+    "en": "",
+    "ua": ""
+  },
+  "par_esrb_0010": {
+    "en": "",
+    "ua": ""
+  },
+  "par_pegi_0001": {
+    "en": "Content suitable only for adults,\nthose aged 18 and above.",
+    "ua": "Вміст лише для дорослих,\nвід 18 років."
+  },
+  "par_pegi_0002": {
+    "en": "May include depictions of\nextreme violence, graphic\nsexual activity, discrimination,\nand glamorisation of drugs or\ncrime.",
+    "ua": "Може містити сцени\nнадмірного насильства,\nвідвертого сексу, дискримінації\nта романтизації наркотиків\nчи злочинів."
+  },
+  "par_pegi_0003": {
+    "en": "Content suitable for those aged\n16 and above.",
+    "ua": "Вміст для віку\nвід 16 років."
+  },
+  "par_pegi_0004": {
+    "en": "Realistic and sustained\nviolence may be permitted.\nThe game may show\nnon-graphic sexual activity as\nwell as erotic or sexual nudity.\nIt may also contain more\nextreme bad language, scenes\ndealing with drugs (including\ntobacco and alcohol), it may\nglamorise criminal activities,\nand may include gambling\nreferences.",
+    "ua": "Допускається реалістичне\nй тривале насильство. Гра\nможе показувати невідверті\nсексуальні сцени, еротичну\nчи сексуальну наготу. Може\nмістити грубішу лайку, сцени\nз наркотиками (тютюн,\nалкоголь), романтизувати\nзлочини й містити згадки\nпро азартні ігри."
+  },
+  "par_pegi_0005": {
+    "en": "Content suitable for those aged\n12 and above.",
+    "ua": "Вміст для віку\nвід 12 років."
+  },
+  "par_pegi_0006": {
+    "en": "Realistic violence towards\nfantasy characters, and\nnon-realistic violence to\nhuman or animal characters,\nmay be permitted. There may\nbe some sexual innuendo,\ndescriptions and images (but\nnothing too extreme) as well\nas some mild bad language.\nMay also contain gambling\nreferences.",
+    "ua": "Допускається реалістичне\nнасильство щодо\nфантастичних персонажів\nі нереалістичне — щодо людей\nчи тварин. Можливі сексуальні\nнатяки, описи й зображення\n(нічого надмірного), а також\nпомірна лайка. Може містити\nзгадки про азартні ігри."
+  },
+  "par_pegi_0007": {
+    "en": "Content suitable for those aged\n7 and above.",
+    "ua": "Вміст для віку\nвід 7 років."
+  },
+  "par_pegi_0008": {
+    "en": "Some content may be\nfrightening for very young\nchildren. Non-realistic violence\ntowards fantasy characters, or\nto non-detailed human and\nanimal characters, may be\npermitted. Parents may wish to\ncheck the game before they\nallow their young children to\nplay it.",
+    "ua": "Деякий вміст може налякати\nдуже малих дітей.\nДопускається нереалістичне\nнасильство щодо\nфантастичних персонажів або\nсхематичних людей і тварин.\nБатькам варто перевірити гру,\nперш ніж дозволити її\nмаленьким дітям."
+  },
+  "par_pegi_0009": {
+    "en": "Content suitable for all ages.",
+    "ua": "Вміст для будь-якого віку."
+  },
+  "par_pegi_0010": {
+    "en": "Some non-realistic violence\nin a comical, cartoon-like\ncontext, and nudity in a\nnon-sexual context, may be\npermitted.",
+    "ua": "Допускається помірне\nнереалістичне насильство\nв комічному, мультиплі-\nкаційному контексті та нагота\nв несексуальному контексті."
+  },
+  "par_pegipor_0001": {
+    "en": "Content suitable only for adults,\nthose aged 18 and above.",
+    "ua": "Вміст лише для дорослих,\nвід 18 років."
+  },
+  "par_pegipor_0002": {
+    "en": "May include depictions of\nextreme violence, graphic\nsexual activity, discrimination,\nand glamorisation of drugs or\ncrime.",
+    "ua": "Може містити сцени\nнадмірного насильства,\nвідвертого сексу, дискримінації\nта романтизації наркотиків\nчи злочинів."
+  },
+  "par_pegipor_0003": {
+    "en": "Content suitable for those aged\n16 and above.",
+    "ua": "Вміст для віку\nвід 16 років."
+  },
+  "par_pegipor_0004": {
+    "en": "Realistic and sustained\nviolence may be permitted.\nThe game may show\nnon-graphic sexual activity as\nwell as erotic or sexual nudity.\nIt may also contain more\nextreme bad language, scenes\ndealing with drugs (including\ntobacco and alcohol), it may\nglamorise criminal activities,\nand may include gambling\nreferences.",
+    "ua": "Допускається реалістичне\nй тривале насильство. Гра\nможе показувати невідверті\nсексуальні сцени, еротичну\nчи сексуальну наготу. Може\nмістити грубішу лайку, сцени\nз наркотиками (тютюн,\nалкоголь), романтизувати\nзлочини й містити згадки\nпро азартні ігри."
+  },
+  "par_pegipor_0005": {
+    "en": "Content suitable for those aged\n12 and above.",
+    "ua": "Вміст для віку\nвід 12 років."
+  },
+  "par_pegipor_0006": {
+    "en": "Realistic violence towards\nfantasy characters, and\nnon-realistic violence to\nhuman or animal characters,\nmay be permitted. There may\nbe some sexual innuendo,\ndescriptions and images (but\nnothing too extreme) as well\nas some mild bad language.\nMay also contain gambling\nreferences.",
+    "ua": "Допускається реалістичне\nнасильство щодо\nфантастичних персонажів\nі нереалістичне — щодо людей\nчи тварин. Можливі сексуальні\nнатяки, описи й зображення\n(нічого надмірного), а також\nпомірна лайка. Може містити\nзгадки про азартні ігри."
+  },
+  "par_pegipor_0007": {
+    "en": "Content suitable for those aged\n6 and above.",
+    "ua": "Вміст для віку\nвід 6 років."
+  },
+  "par_pegipor_0008": {
+    "en": "Some content may be\nfrightening for very young\nchildren. Non-realistic violence\ntowards fantasy characters, or\nto non-detailed human and\nanimal characters, may be\npermitted. Parents may wish to\ncheck the game before they\nallow their young children to\nplay it.",
+    "ua": "Деякий вміст може налякати\nдуже малих дітей.\nДопускається нереалістичне\nнасильство щодо\nфантастичних персонажів або\nсхематичних людей і тварин.\nБатькам варто перевірити гру,\nперш ніж дозволити її\nмаленьким дітям."
+  },
+  "par_pegipor_0009": {
+    "en": "Content suitable for all ages.",
+    "ua": "Вміст для будь-якого віку."
+  },
+  "par_pegipor_0010": {
+    "en": "Some non-realistic violence\nin a comical, cartoon-like\ncontext, and nudity in a\nnon-sexual context, may be\npermitted.",
+    "ua": "Допускається помірне\nнереалістичне насильство\nв комічному, мультиплі-\nкаційному контексті та нагота\nв несексуальному контексті."
+  },
+  "par_pegiuk_0001": {
+    "en": "Content suitable only for\nadults, those aged 18 and\nabove.",
+    "ua": "Вміст лише для дорослих,\nвід 18 років."
+  },
+  "par_pegiuk_0002": {
+    "en": "",
+    "ua": ""
+  },
+  "par_pegiuk_0003": {
+    "en": "Content suitable for those aged\n16 and above.",
+    "ua": "Вміст для віку\nвід 16 років."
+  },
+  "par_pegiuk_0004": {
+    "en": "Realistic and sustained\nviolence may be permitted.\nThe game may show\nnon-graphic sexual activity as\nwell as erotic or sexual nudity.\nIt may also contain more\nextreme bad language, scenes\ndealing with drugs (including\ntobacco and alcohol), it may\nglamorise criminal activities,\nand may include gambling\nreferences.",
+    "ua": "Допускається реалістичне\nй тривале насильство. Гра\nможе показувати невідверті\nсексуальні сцени, еротичну\nчи сексуальну наготу. Може\nмістити грубішу лайку, сцени\nз наркотиками (тютюн,\nалкоголь), романтизувати\nзлочини й містити згадки\nпро азартні ігри."
+  },
+  "par_pegiuk_0005": {
+    "en": "Titles rated 15 are suitable\nfor ages 15 and older.",
+    "ua": "Програми з рейтингом 15\nпридатні від 15 років."
+  },
+  "par_pegiuk_0006": {
+    "en": "",
+    "ua": ""
+  },
+  "par_pegiuk_0007": {
+    "en": "Content suitable for those aged\n12 and above.",
+    "ua": "Вміст для віку\nвід 12 років."
+  },
+  "par_pegiuk_0008": {
+    "en": "Realistic violence towards\nfantasy characters, and\nnon-realistic violence to\nhuman or animal characters,\nmay be permitted. There may\nbe some sexual innuendo,\ndescriptions and images (but\nnothing too extreme) as well\nas some mild bad language.\nMay also contain gambling\nreferences.",
+    "ua": "Допускається реалістичне\nнасильство щодо\nфантастичних персонажів\nі нереалістичне — щодо людей\nчи тварин. Можливі сексуальні\nнатяки, описи й зображення\n(нічого надмірного), а також\nпомірна лайка. Може містити\nзгадки про азартні ігри."
+  },
+  "par_pegiuk_0009": {
+    "en": "Parental Guidance - General\nviewing, but some scenes may\nbe unsuitable for young children.",
+    "ua": "Під наглядом батьків — загальний\nперегляд, але деякі сцени можуть\nбути непридатні для малих дітей."
+  },
+  "par_pegiuk_0010": {
+    "en": "Content should not disturb\na child aged around eight\nor older.",
+    "ua": "Вміст не має налякати\nдитину віком приблизно\nвід восьми років."
+  },
+  "par_pegiuk_0011": {
+    "en": "Content suitable for those aged\n7 and above.",
+    "ua": "Вміст для віку\nвід 7 років."
+  },
+  "par_pegiuk_0012": {
+    "en": "Some content may be\nfrightening for very young\nchildren. Non-realistic violence\ntowards fantasy characters, or\nto non-detailed human and\nanimal characters, may be\npermitted. Parents may wish to\ncheck the game before they\nallow their young children to\nplay it.",
+    "ua": "Деякий вміст може налякати\nдуже малих дітей.\nДопускається нереалістичне\nнасильство щодо\nфантастичних персонажів або\nсхематичних людей і тварин.\nБатькам варто перевірити гру,\nперш ніж дозволити її\nмаленьким дітям."
+  },
+  "par_pegiuk_0013": {
+    "en": "Universal",
+    "ua": "Універсальний"
+  },
+  "par_pegiuk_0014": {
+    "en": "Content should be suitable for\naudiences aged four years and\nover. Content rated 'Uc' is\nmainly suitable for pre-school\nchildren.",
+    "ua": "Вміст придатний для віку\nвід чотирьох років. Вміст\nз рейтингом «Uc» призначений\nпереважно для дітей\nдошкільного віку."
+  },
+  "par_pegiuk_0015": {
+    "en": "Content suitable for all ages.",
+    "ua": "Вміст для будь-якого віку."
+  },
+  "par_pegiuk_0016": {
+    "en": "Some non-realistic violence\nin a comical, cartoon-like\ncontext, and nudity in a\nnon-sexual context, may be\npermitted.",
+    "ua": "Допускається помірне\nнереалістичне насильство\nв комічному, мультиплі-\nкаційному контексті та нагота\nв несексуальному контексті."
+  },
+  "par_cob_0009": {
+    "en": "Restricted to 18 and over",
+    "ua": "Лише від 18 років"
+  },
+  "par_cob_0010": {
+    "en": "High impact content",
+    "ua": "Сильний вміст"
+  },
+  "par_cob_0001": {
+    "en": "Not suitable for people under 15",
+    "ua": "Не для осіб до 15 років"
+  },
+  "par_cob_0002": {
+    "en": "Strong content",
+    "ua": "Насичений"
+  },
+  "par_cob_0003": {
+    "en": "Recommended for mature\naudiences",
+    "ua": "Для дорослої\nаудиторії"
+  },
+  "par_cob_0004": {
+    "en": "Moderate content",
+    "ua": "Помірний вміст"
+  },
+  "par_cob_0005": {
+    "en": "Parental guidance recommended",
+    "ua": "Рекомендовано нагляд батьків"
+  },
+  "par_cob_0006": {
+    "en": "Mild content",
+    "ua": "Легкий вміст"
+  },
+  "par_cob_0007": {
+    "en": "General",
+    "ua": "Загальне"
+  },
+  "par_cob_0008": {
+    "en": "Very mild content",
+    "ua": "Дуже легкий"
+  },
+  "par_oflc_0001": {
+    "en": "Restricted",
+    "ua": "Обмежено"
+  },
+  "par_oflc_0002": {
+    "en": "Contains restricted content",
+    "ua": "Містить обмежений вміст"
+  },
+  "par_oflc_0003": {
+    "en": "Suitable for Mature Audiences",
+    "ua": "Для дорослої аудиторії"
+  },
+  "par_oflc_0004": {
+    "en": "Suitable for (but not restricted\nto) mature audiences 16 years\nand over",
+    "ua": "Придатний (але не обмежений)\nдля дорослої аудиторії\nвід 16 років"
+  },
+  "par_oflc_0005": {
+    "en": "Parental guidance recommended",
+    "ua": "Рекомендовано нагляд батьків"
+  },
+  "par_oflc_0006": {
+    "en": "Parental guidance\nrecommended for\nyounger audiences",
+    "ua": "Нагляд батьків\nдля молодших"
+  },
+  "par_oflc_0007": {
+    "en": "General",
+    "ua": "Загальне"
+  },
+  "par_oflc_0008": {
+    "en": "Suitable for general audiences",
+    "ua": "Придатний для загальної\nаудиторії"
+  },
+  "par_usk_0001": {
+    "en": "For adult audiences only\naccording to § 14 JuSchG\n(Section 14, Youth Protection\nLaw).",
+    "ua": "Лише для дорослої аудиторії\nзгідно з § 14 JuSchG\n(розділ 14 Закону про захист\nмолоді)."
+  },
+  "par_usk_0002": {
+    "en": "Only for adults of 18 years\nand above. The content may\naffect, but not threaten, the\ndevelopment or education of\nchildren and teenagers\ntowards being social and\nself-responsible members\nof society.",
+    "ua": "Лише для дорослих\nвід 18 років. Вміст може\nвпливати, але не загрожувати\nрозвитку чи вихованню дітей\nі підлітків як соціальних\nі відповідальних членів\nсуспільства."
+  },
+  "par_usk_0003": {
+    "en": "Suitable for ages 16 and older\naccording to § 14 JuSchG\n(Section 14, Youth Protection\nLaw).",
+    "ua": "Придатний для віку від 16 років\nзгідно з § 14 JuSchG\n(розділ 14 Закону про захист\nмолоді)."
+  },
+  "par_usk_0004": {
+    "en": "Content contains rapid\nweapon-based action which\nmay be directed against\nhumanoid characters, as well\nas game concepts which\nenable the player to\nexperience realistic simulations\nof fictional or historical warlike\nconflicts. The content\ndemands a degree of maturity\nof the player concerning social\ndiscernment and requires\ncritical reflection in regards\nto the player's interactive\nparticipation in the game.",
+    "ua": "Вміст містить швидкі дії\nзі зброєю, які можуть бути\nспрямовані проти\nлюдиноподібних персонажів,\nа також ігрові концепції, що\nдають гравцеві пережити\nреалістичні симуляції\nвигаданих чи історичних\nвоєнних конфліктів. Вміст\nвимагає певної зрілості\nгравця щодо соціального\nрозуміння й критичного\nставлення до власної участі\nв грі."
+  },
+  "par_usk_0005": {
+    "en": "Suitable for ages 12 and older\naccording to § 14 JuSchG\n(Section 14, Youth Protection\nLaw).",
+    "ua": "Придатний для віку від 12 років\nзгідно з § 14 JuSchG\n(розділ 14 Закону про захист\nмолоді)."
+  },
+  "par_usk_0006": {
+    "en": "Content is dominated by basic\npatterns which aggressively\nreinforce competition or\nemphasise the use of combat\nto solve tasks. Conceptually,\nthe game's appeal relies on\nthe player's technical interest\n(for either historical military\nequipment or a science-fiction\nuniverse) or motivation to play\nas a brave character in a\ncomplex saga and/or mythical\nworld. The violence in the\ngame takes place in scenarios\nunrelated to daily life.",
+    "ua": "У вмісті переважають схеми,\nякі активно підсилюють\nзмагання або підкреслюють\nбій як спосіб розв'язання\nзавдань. Гра приваблює\nтехнічним інтересом (до\nісторичної військової техніки\nчи науково-фантастичного\nсвіту) або мотивацією грати\nсміливим персонажем\nу складній сазі та/або\nміфічному світі. Насильство\nвідбувається в сценаріях,\nне пов'язаних із побутом."
+  },
+  "par_usk_0007": {
+    "en": "Suitable for ages 6 and older\naccording to § 14 JuSchG\n(Section 14, Youth Protection\nLaw).",
+    "ua": "Придатний для віку від 6 років\nзгідно з § 14 JuSchG\n(розділ 14 Закону про захист\nмолоді)."
+  },
+  "par_usk_0008": {
+    "en": "6 years and above - the game\nmay appear abstract,\ncomic-like or unreal in another\nway and may have settings\nthat might be scary to younger\nchildren, or the speed and the\ntasks of the game may be too\ndifficult for children under the\nage of six.",
+    "ua": "Від 6 років — гра може бути\nабстрактною, комічною або\nінакше нереалістичною,\nмати оточення, що може\nналякати молодших дітей, або\nмати надто високу швидкість\nі складні завдання для дітей\nвіком до шести років."
+  },
+  "par_usk_0009": {
+    "en": "Suitable for all audiences\naccording to § 14 JuSchG\n(Section 14, Youth Protection\nLaw).",
+    "ua": "Придатний для будь-якої\nаудиторії згідно з § 14 JuSchG\n(розділ 14 Закону про захист\nмолоді)."
+  },
+  "par_usk_0010": {
+    "en": "From the perspective of youth\nprotection, any game with this\nage rating is suitable for\nchildren of every age.\nHowever, younger children\nmay not be able to completely\nunderstand or master the\ngame.",
+    "ua": "З погляду захисту молоді гра\nз цим віковим рейтингом\nпридатна для дітей будь-якого\nвіку. Проте молодші діти\nможуть не до кінця\nзрозуміти гру\nчи опанувати її."
+  },
+  "par_grb_0001": {
+    "en": "",
+    "ua": ""
+  },
+  "par_grb_0002": {
+    "en": "",
+    "ua": ""
+  },
+  "par_grb_0003": {
+    "en": "",
+    "ua": ""
+  },
+  "par_grb_0004": {
+    "en": "",
+    "ua": ""
+  },
+  "par_cgsrr_0001": {
+    "en": "",
+    "ua": ""
+  },
+  "par_cgsrr_00015": {
+    "en": "",
+    "ua": ""
+  },
+  "par_cgsrr_0002": {
+    "en": "",
+    "ua": ""
+  },
+  "par_cgsrr_0003": {
+    "en": "",
+    "ua": ""
+  },
+  "par_cgsrr_0004": {
+    "en": "",
+    "ua": ""
+  },
+  "cop_birth0_comm": {
+    "en": "",
+    "ua": ""
+  },
+  "cop_birth0_com_u": {
+    "en": "",
+    "ua": ""
+  },
+  "cop_dlg_birth0": {
+    "en": "",
+    "ua": ""
+  },
+  "cop_dlg_connect": {
+    "en": "",
+    "ua": ""
+  },
+  "cop_pass_comm_u": {
+    "en": "",
+    "ua": ""
+  },
+  "cop_dlg_comm0": {
+    "en": "",
+    "ua": ""
+  },
+  "cop_dlg_comm0_flw": {
+    "en": "",
+    "ua": ""
+  },
+  "cop_dlg_comm1": {
+    "en": "",
+    "ua": ""
+  },
+  "cop_dlg_comm2": {
+    "en": "",
+    "ua": ""
+  },
+  "cop_dlg_comm3": {
+    "en": "",
+    "ua": ""
+  },
+  "cop_dlg_comm4": {
+    "en": "",
+    "ua": ""
+  },
+  "dlg_2b_get": {
+    "en": "",
+    "ua": ""
+  },
+  "cop_birth1_com_u": {
+    "en": "",
+    "ua": ""
+  },
+  "cop_dlg_birth1": {
+    "en": "",
+    "ua": ""
+  },
+  "cop_birth1_comm": {
+    "en": "",
+    "ua": ""
+  },
+  "cop_app_comm_u0": {
+    "en": "",
+    "ua": ""
+  },
+  "cop_app_comm_u1": {
+    "en": "",
+    "ua": ""
+  },
+  "cop_app_comm_u2": {
+    "en": "",
+    "ua": ""
+  },
+  "cop_app_comm_u3": {
+    "en": "",
+    "ua": ""
+  },
+  "cop_app_comm_u4": {
+    "en": "",
+    "ua": ""
+  },
+  "cop_dlg_name": {
+    "en": "",
+    "ua": ""
+  },
+  "cop_dlg_age_err": {
+    "en": "",
+    "ua": ""
+  },
+  "cop_dlg_sign": {
+    "en": "",
+    "ua": ""
+  },
+  "cop_sign_comm": {
+    "en": "",
+    "ua": ""
+  },
+  "cop_sign_delete": {
+    "en": "",
+    "ua": ""
+  },
+  "cop_dlg_sign_ng": {
+    "en": "",
+    "ua": ""
+  },
+  "cop_dlg_mail": {
+    "en": "",
+    "ua": ""
+  },
+  "cop_dlg_mail_ng": {
+    "en": "",
+    "ua": ""
+  },
+  "cop_2b_send": {
+    "en": "",
+    "ua": ""
+  },
+  "cop_confirm_comm": {
+    "en": "",
+    "ua": ""
+  },
+  "cop_dlg_send": {
+    "en": "",
+    "ua": ""
+  },
+  "cop_dlg_sending": {
+    "en": "",
+    "ua": ""
+  },
+  "cop_complete": {
+    "en": "",
+    "ua": ""
+  },
+  "cop_menu_comm_u": {
+    "en": "",
+    "ua": ""
+  },
+  "cop_input": {
+    "en": "",
+    "ua": ""
+  },
+  "cop_retry": {
+    "en": "",
+    "ua": ""
+  },
+  "cop_input_comm_u": {
+    "en": "",
+    "ua": ""
+  },
+  "cop_dlg_input": {
+    "en": "",
+    "ua": ""
+  },
+  "cop_dlg_code_ok0": {
+    "en": "",
+    "ua": ""
+  },
+  "cop_dlg_code_ok1": {
+    "en": "",
+    "ua": ""
+  },
+  "cop_dlg_code_ng": {
+    "en": "",
+    "ua": ""
+  },
+  "cop_dlg_cancel0": {
+    "en": "",
+    "ua": ""
+  },
+  "cop_dlg_cancel1": {
+    "en": "",
+    "ua": ""
+  },
+  "cop_dlg_cancel2": {
+    "en": "",
+    "ua": ""
+  },
+  "cop_dlg_deleteng": {
+    "en": "",
+    "ua": ""
+  },
+  "cop_error_81000": {
+    "en": "In order to use this service, a system\nupdate is required.\n\nTo perform a system update, select\nSystem Update from Other Settings\nin the System Settings.",
+    "ua": "Щоб скористатися цим сервісом,\nпотрібне оновлення системи.\n\nЩоб оновити систему, виберіть\nОновлення системи в Інших\nналаштуваннях."
+  },
+  "cop_error_81001": {
+    "en": "The server is currently undergoing\nmaintenance.\n\nPlease try again later.",
+    "ua": "Сервер зараз на\nтехнічному обслуговуванні.\n\nСпробуйте пізніше."
+  },
+  "cop_error_81109": {
+    "en": "",
+    "ua": ""
+  },
+  "cop_dlg_finish": {
+    "en": "",
+    "ua": ""
+  },
+  "st_first_u": {
+    "en": "",
+    "ua": ""
+  },
+  "st_us_lang_u0": {
+    "en": "",
+    "ua": ""
+  },
+  "st_us_lang_u1": {
+    "en": "Select a language.\nChoisissez la langue.\nElige un idioma.\nEscolha um idioma.",
+    "ua": ""
+  },
+  "st_eu_lang_u0": {
+    "en": "",
+    "ua": ""
+  },
+  "st_eu_lang_u1": {
+    "en": "Select a language.\nChoisissez la langue.\nSprache auswählen.\nElige un idioma.\nScegli la lingua.\nKies een taal.\nEscolha um idioma.\nВыберите язык.",
+    "ua": ""
+  },
+  "st_tw_lang_u1": {
+    "en": "請選擇使用的語言。\nSelect a language.",
+    "ua": ""
+  },
+  "start_title_u": {
+    "en": "Initial Settings",
+    "ua": "Початкові налашт."
+  },
+  "st_start_comm_u": {
+    "en": "You'll need to set up the system\nbefore playing any games.",
+    "ua": "Перед грою систему\nтреба налаштувати."
+  },
+  "st_start_comm": {
+    "en": "If a child will be using this\nsystem, please set it up\nfor them.",
+    "ua": "Якщо системою\nкористуватиметься дитина,\nналаштуйте її для неї."
+  },
+  "st_date_comm": {
+    "en": "Configure date and time\nsettings.",
+    "ua": "Налаштуйте дату\nй час."
+  },
+  "st_user_comm": {
+    "en": "Enter a user name.",
+    "ua": "Введіть ім'я користувача."
+  },
+  "st_birth_comm_u": {
+    "en": "Enter your date of birth.",
+    "ua": "Введіть дату народження."
+  },
+  "st_cntry_comm_u": {
+    "en": "Select your country of residence.",
+    "ua": "Виберіть країну проживання."
+  },
+  "st_area_comm_u": {
+    "en": "Select your region.",
+    "ua": "Виберіть регіон."
+  },
+  "st_net_comm_0": {
+    "en": "Configure your internet settings.",
+    "ua": "Налаштуйте з'єднання\nз Інтернетом."
+  },
+  "st_dlg_noeula": {
+    "en": "This system will receive\nsystem updates and other\nimportant notices from Nintendo\nvia the internet.",
+    "ua": "Ця система отримуватиме\nоновлення й інші важливі\nповідомлення від Nintendo\nчерез Інтернет."
+  },
+  "st_net_comm_1": {
+    "en": "",
+    "ua": ""
+  },
+  "st_net_comm_2": {
+    "en": "",
+    "ua": ""
+  },
+  "st_par_comm_0": {
+    "en": "For households with children,\nit is advised that you configure\nParental Controls settings.\n\n3D effects and wireless\ncommunication functions\ncan be restricted here.",
+    "ua": "Для родин з дітьми радимо\nналаштувати батьківський\nконтроль.\n\nТут можна обмежити 3D-ефекти\nй функції бездротового\nзв'язку."
+  },
+  "st_par_comm_0_flw": {
+    "en": "For households with children,\nit is advised that you configure\nParental Controls settings.\n\nWireless communication and\nlaunching of games can be\nrestricted here.",
+    "ua": "Для родин з дітьми радимо\nналаштувати батьківський\nконтроль.\n\nТут можна обмежити\nбездротовий зв'язок\nі запуск ігор."
+  },
+  "st_par_comm_1": {
+    "en": "Parents or legal guardians can\nlimit access to certain features\nwhich they may deem unsuitable\nfor their children.",
+    "ua": "Батьки чи опікуни можуть\nобмежити доступ до функцій,\nякі вважають непридатними\nдля дітей."
+  },
+  "st_par_comm_1_r": {
+    "en": "Some Items You Can Restrict\n・ Internet browsing            \n・ Online interaction            ",
+    "ua": "Що можна обмежити\n・ Перегляд Інтернету        \n・ Взаємодію онлайн          "
+  },
+  "st_par_comm": {
+    "en": "Configure Parental Controls\nsettings?",
+    "ua": "Налаштувати батьківський\nконтроль?"
+  },
+  "st_par_comm_0_u": {
+    "en": "Items You Can Restrict",
+    "ua": "Що можна обмежити"
+  },
+  "st_par_comm_1_u": {
+    "en": "• Internet browsing\n• Online interaction\n• Nintendo 3DS Shopping Services\n• Software with unsuitable age ratings\n• Display of 3D images ",
+    "ua": "• Перегляд Інтернету\n• Взаємодію онлайн\n• Магазини Nintendo 3DS\n• Програми з непридатним рейтингом\n• Показ 3D-зображень "
+  },
+  "st_par_comm_1_u_flw": {
+    "en": "• Internet browsing\n• Online interaction\n• Nintendo 3DS Shopping Services\n• Software with unsuitable age ratings",
+    "ua": "• Перегляд Інтернету\n• Взаємодію онлайн\n• Магазини Nintendo 3DS\n• Програми з непридатним рейтингом"
+  },
+  "st_par_comm_1_u_jan": {
+    "en": "• Internet browsing\n• Online interaction\n• Nintendo 3DS Shopping Services\n• Software with unsuitable age ratings",
+    "ua": "• Перегляд Інтернету\n• Взаємодію онлайн\n• Магазини Nintendo 3DS\n• Програми з непридатним рейтингом"
+  },
+  "st_par_comm_2": {
+    "en": "If children will be using this\nsystem, a parent or legal\nguardian should set up these\nrestrictions as required.",
+    "ua": "Якщо системою\nкористуватимуться діти, батько\nчи опікун має задати потрібні\nобмеження."
+  },
+  "st_par_coppacs": {
+    "en": "",
+    "ua": ""
+  },
+  "st_net_title_u": {
+    "en": "Internet Settings",
+    "ua": "Інтернет-налаштування"
+  },
+  "st_net_comm_u_0": {
+    "en": "Please confirm that you accept the\nuser agreement and acknowledge the\nprivacy policy.",
+    "ua": "Підтвердьте, що приймаєте угоду\nкористувача й ознайомилися\nз політикою конфіденційності."
+  },
+  "st_net_comm_u_0_no_use_label": {
+    "en": "",
+    "ua": ""
+  },
+  "st_net_comm_u": {
+    "en": "The Nintendo 3DS system allows you\nto use various online services.",
+    "ua": "Система Nintendo 3DS дає змогу\nкористуватися онлайн-сервісами."
+  },
+  "st_net_comm_u_flw": {
+    "en": "The Nintendo 2DS system allows you\nto use various online services.",
+    "ua": "Система Nintendo 2DS дає змогу\nкористуватися онлайн-сервісами."
+  },
+  "st_net_comm_u_sac": {
+    "en": "This system allows you to use\nvarious online services.\n\nAn internet connection is also required\nwhen transferring data from another\nNintendo 3DS system.",
+    "ua": "Ця система дає змогу користуватися\nрізними онлайн-сервісами.\n\nЗ'єднання з Інтернетом також потрібне\nпри перенесенні даних з іншої\nсистеми Nintendo 3DS."
+  },
+  "st_net_comm_u_jan": {
+    "en": "This system allows you to use\nvarious online services.\n\nAn internet connection is also required\nwhen transferring data from another\nNintendo 3DS system.",
+    "ua": "Ця система дає змогу користуватися\nрізними онлайн-сервісами.\n\nЗ'єднання з Інтернетом також потрібне\nпри перенесенні даних з іншої\nсистеми Nintendo 3DS."
+  },
+  "st_net_comm": {
+    "en": "Configure your internet\nsettings?",
+    "ua": "Налаштувати з'єднання\nз Інтернетом?"
+  },
+  "st_3d_comm": {
+    "en": "",
+    "ua": ""
+  },
+  "st_final": {
+    "en": "Your system has now been\nconfigured.\n\nPress HOME to open the\nHOME Menu.",
+    "ua": "Систему налаштовано.\n\nНатисніть HOME, щоб\nвідкрити меню HOME."
+  },
+  "st_final_title": {
+    "en": "Done",
+    "ua": "Готово"
+  },
+  "st_dlg_date": {
+    "en": "Date and time have been set.",
+    "ua": "Дату й час задано."
+  },
+  "st_dlg_user": {
+    "en": "Your profile has been set.",
+    "ua": "Профіль задано."
+  },
+  "st_dlg_net": {
+    "en": "Are you sure you want to exit\ninternet settings?",
+    "ua": "Справді вийти з\nінтернет-налаштувань?"
+  },
+  "st_dlg_parental": {
+    "en": "",
+    "ua": ""
+  },
+  "st_dlg_par_need1": {
+    "en": "Parental Controls are required\nbecause the Nintendo Network\nID linked to this system is for\nsomeone under the age of 13.\n\nPlease configure the appropriate\nParental Controls restrictions.",
+    "ua": "Батьківський контроль\nобов'язковий, бо Nintendo\nNetwork ID, привʼязаний до цієї\nсистеми, належить особі,\nмолодшій за 13 років.\n\nЗадайте потрібні обмеження."
+  },
+  "st_dlg_par1": {
+    "en": "Are you sure you want to exit\nParental Controls settings?",
+    "ua": "Справді вийти з налаштувань\nбатьківського контролю?"
+  },
+  "st_dlg_par2": {
+    "en": "Are you sure you want to exit\nwithout saving?",
+    "ua": "Справді вийти\nбез збереження?"
+  },
+  "st_dlg_3d": {
+    "en": "",
+    "ua": ""
+  },
+  "base_2b_later": {
+    "en": "",
+    "ua": ""
+  },
+  "base_2b_noset": {
+    "en": "",
+    "ua": ""
+  },
+  "base_2b_nocheck": {
+    "en": "",
+    "ua": ""
+  },
+  "st_btn_set": {
+    "en": "Set",
+    "ua": "Задати"
+  },
+  "st_btn_noset": {
+    "en": "Set Later",
+    "ua": "Пізніше"
+  },
+  "st_btn_noset_1": {
+    "en": "Do Not Set",
+    "ua": "Не задавати"
+  },
+  "st_dlg_mail": {
+    "en": "",
+    "ua": ""
+  },
+  "dlg_st_end": {
+    "en": "Saving settings...",
+    "ua": "Збереження налаштувань…"
+  },
+  "dlg_st_end_1": {
+    "en": "Saving initial settings...",
+    "ua": "Збереження початкових\nналаштувань…"
+  },
+  "st_trans_title_u": {
+    "en": "System Transfer",
+    "ua": "Перенесення системи"
+  },
+  "st_trans_comm_u": {
+    "en": "System Transfer allows you to transfer\nsoftware save data, your Nintendo\nNetwork ID and more from another\nNintendo 3DS system to this one.",
+    "ua": "Перенесення системи дає змогу\nперенести збереження програм,\nваш Nintendo Network ID та інше\nз іншої системи Nintendo 3DS на цю."
+  },
+  "st_trans_comm": {
+    "en": "Transfer data to this system\nfrom another Nintendo 3DS\nsystem?",
+    "ua": "Перенести дані на цю\nсистему з іншої системи\nNintendo 3DS?"
+  },
+  "st_btn_trans_go": {
+    "en": "Transfer",
+    "ua": "Перенести"
+  },
+  "st_btn_trans_no": {
+    "en": "Don't Transfer",
+    "ua": "Не переносити"
+  },
+  "dlg_st_trans_0": {
+    "en": "You should transfer data from\nyour old Nintendo 3DS system\nbefore playing on this system.\nOtherwise, save data created for\ndownloadable software on this\nsystem will become unusable\nafter the transfer.",
+    "ua": "Перенесіть дані зі старої\nсистеми Nintendo 3DS, перш ніж\nграти на цій. Інакше збереження,\nстворені на цій системі для\nзавантажених програм, стануть\nнепридатними після\nперенесення."
+  },
+  "dlg_st_trans_1": {
+    "en": "A system update is required\nin order to start the transfer.\n\nAfter the initial setup, go to\nSystem Settings ⇒ Other\nSettings ⇒ System Update.",
+    "ua": "Щоб почати перенесення,\nпотрібне оновлення системи.\n\nПісля початкового налаштування\nперейдіть у Налаштування\nсистеми ⇒ Інші налаштування\n⇒ Оновлення системи."
+  },
+  "last_ask_flw": {
+    "en": "OK",
+    "ua": "OK"
+  },
+  "last_later_flw": {
+    "en": "Later",
+    "ua": "Пізніше"
+  },
+  "last_next_flw": {
+    "en": "Next",
+    "ua": "Далі"
+  },
+  "last_prev_flw": {
+    "en": "Back",
+    "ua": "Назад"
+  },
+  "last_start_flw": {
+    "en": "Start",
+    "ua": "Почати"
+  },
+  "last_start_1_flw": {
+    "en": "OK",
+    "ua": "OK"
+  },
+  "last_entr_0_flw": {
+    "en": "Are you ready?\nAll right, let's get started!\nBut before that, can we tell\nyou a little bit about your\nNintendo 2DS system?",
+    "ua": "Готові?\nТоді почнімо!\nАле спершу — трохи\nрозповімо про вашу\nсистему Nintendo 2DS."
+  },
+  "last_entr_1_flw": {
+    "en": "There are a few differences\nbetween Nintendo 3DS and\nNintendo 2DS.",
+    "ua": "Між Nintendo 3DS\nі Nintendo 2DS є\nкілька відмінностей."
+  },
+  "last_entr_2_flw": {
+    "en": "I'd like to tell you a little\nbit about the Nintendo 2DS\nsystem...",
+    "ua": "Хочу трохи розповісти\nпро систему\nNintendo 2DS…"
+  },
+  "last_slp_0_flw": {
+    "en": "Sleep Mode is good if you\nwant to take a break or use\nStreetPass, and helps the\nbattery last longer.",
+    "ua": "Режим сну зручний, коли ви\nхочете зробити перерву або\nскористатися StreetPass, і\nподовжує роботу батареї."
+  },
+  "last_slp_1_flw": {
+    "en": "Move the sleep switch\nto the right to enable\nSleep Mode.",
+    "ua": "Посуньте перемикач\nрежиму сну праворуч,\nщоб увімкнути режим сну."
+  },
+  "last_3d_0_flw": {
+    "en": "The thing is, the Nintendo 2DS\ndoesn't support 3D visuals...",
+    "ua": "Річ у тім, що Nintendo 2DS\nне підтримує 3D…"
+  },
+  "last_3d_1_flw": {
+    "en": "But don't worry, you\ncan still use all your\nNintendo 3DS software.",
+    "ua": "Та не хвилюйтеся: ви\nвсе одно можете грати\nв усі програми Nintendo 3DS."
+  },
+  "last_wrls_0_flw": {
+    "en": "If you're, say, on a plane or\na place where wireless\ncommunication is prohibited,\nyou'll need to turn it off.",
+    "ua": "Якщо ви, скажімо, у літаку\nчи там, де бездротовий\nзв'язок заборонено,\nйого треба вимкнути."
+  },
+  "last_wrls_1_flw": {
+    "en": "Wireless communication can\nbe toggled on and off via the\nicon in the top-left corner of\nthe HOME Menu.",
+    "ua": "Бездротовий зв'язок можна\nвимикати й вмикати значком\nу верхньому лівому куті\nменю HOME."
+  },
+  "last_note_0_flw": {
+    "en": "There's more that I\nwant to tell you...",
+    "ua": "Я хочу розповісти\nще дещо…"
+  },
+  "last_note_1_flw": {
+    "en": "But rather than make you\nread it now, I'll send it to your\nNotifications. Check there for\nmore detailed information.",
+    "ua": "Але замість читати зараз,\nя надішлю це у ваші\nПовідомлення. Подробиці\nшукайте там."
+  },
+  "last_finish_flw": {
+    "en": "All right, let's\nget started!",
+    "ua": "Гаразд, почнімо!"
+  },
+  "last_cancel_flw": {
+    "en": "Have fun using\nNintendo 2DS!",
+    "ua": "Приємної гри\nна Nintendo 2DS!"
+  },
+  "last_3d_title_flw": {
+    "en": "Image Display",
+    "ua": "Показ зображення"
+  },
+  "last_slp_title_flw": {
+    "en": "Sleep Mode",
+    "ua": "Режим сну"
+  },
+  "last_wrls_title_flw": {
+    "en": "Wireless Communication",
+    "ua": "Бездротовий зв'язок"
+  },
+  "last_news_title_flw": {
+    "en": "Notifications List",
+    "ua": "Список повідомлень"
+  },
+  "3d_ok_u_0_flw": {
+    "en": "About This System",
+    "ua": "Про цю систему"
+  },
+  "3d_ok_u_0_jan": {
+    "en": "About This System",
+    "ua": "Про цю систему"
+  },
+  "3d_ok_u_1_flw": {
+    "en": "A note regarding the\nsystem's display.",
+    "ua": "Зауваження щодо\nекрана системи."
+  },
+  "3d_ok_u_1_jan": {
+    "en": "A note regarding the\nsystem's display.",
+    "ua": "Зауваження щодо\nекрана системи."
+  },
+  "3d_ok_d_flw": {
+    "en": "Although the Nintendo 2DS\nsystem can run all Nintendo 3DS\nsoftware, it cannot display 3D\nimages or video.",
+    "ua": "Хоч система Nintendo 2DS\nзапускає всі програми\nNintendo 3DS, вона не показує\n3D-зображення й відео."
+  },
+  "3d_ok_d_jan": {
+    "en": "While the New Nintendo 2DS XL\nsystem can run all Nintendo 3DS\nand New Nintendo 3DS software,\nit cannot display 3D images\nor video.",
+    "ua": "Хоч New Nintendo 2DS XL\nзапускає всі програми\nNintendo 3DS і New 3DS,\nвона не показує\n3D-зображення й відео."
+  },
+  "3d_ok_u_2_flw": {
+    "en": "Some information\nregarding Nintendo 2DS",
+    "ua": "Дещо про\nNintendo 2DS"
+  },
+  "3d_ok_u_2_jan": {
+    "en": "Some information regarding\nNew Nintendo 2DS XL",
+    "ua": "Дещо про\nNew Nintendo 2DS XL"
+  },
+  "3d_ok_d_2_flw": {
+    "en": "This system works in the same way\nas the Nintendo 3DS. You can enjoy\nall Nintendo 3DS online services\nand use all Nintendo 3DS software.\n\nAny reference to the Nintendo 3DS\nin software is applicable to the\nNintendo 2DS.",
+    "ua": "Ця система працює так само, як\nNintendo 3DS. Вам доступні всі\nонлайн-сервіси Nintendo 3DS\nі всі програми Nintendo 3DS.\n\nУсе, що в програмах сказано про\nNintendo 3DS, стосується\nі Nintendo 2DS."
+  },
+  "3d_ok_d_2_jan": {
+    "en": "This system works in the same way\nas the New Nintendo 3DS.\nYou can enjoy the same online\nservices and software as on a\nNew Nintendo 3DS system.\nAny reference to Nintendo 3DS or\nNew Nintendo 3DS in software is\napplicable to New Nintendo 2DS XL.",
+    "ua": "Ця система працює так само, як\nNew Nintendo 3DS.\nВам доступні ті самі онлайн-\nсервіси й програми, що й на\nNew Nintendo 3DS.\nУсе, що в програмах сказано про\nNintendo 3DS чи New Nintendo 3DS,\nстосується New Nintendo 2DS XL."
+  }
+}
