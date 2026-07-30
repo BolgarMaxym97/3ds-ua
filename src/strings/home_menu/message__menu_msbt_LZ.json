@@ -1,0 +1,2358 @@
+{
+  "lau_title_menu": {
+    "en": "HOME Menu",
+    "ua": "Меню HOME"
+  },
+  "lau_title_memo": {
+    "en": "Game Notes",
+    "ua": "Ігрові записи"
+  },
+  "lau_title_fri": {
+    "en": "Friend List",
+    "ua": "Список друзів"
+  },
+  "lau_title_news": {
+    "en": "Notifications",
+    "ua": "Повідомлення"
+  },
+  "lau_title_web": {
+    "en": "Internet Browser",
+    "ua": "Інтернет-браузер"
+  },
+  "lau_title_manu": {
+    "en": "Instruction Manual",
+    "ua": "Посібник"
+  },
+  "lau_title_camera": {
+    "en": "Activating camera...",
+    "ua": "Увімкнення камери…..."
+  },
+  "lau_isbn": {
+    "en": "",
+    "ua": ""
+  },
+  "lau_1b_start": {
+    "en": "Open",
+    "ua": "Запустити"
+  },
+  "lau_1b_ok": {
+    "en": "OK",
+    "ua": "OK"
+  },
+  "lau_2b_start": {
+    "en": "Open",
+    "ua": "Запустити"
+  },
+  "lau_1b_unwrap": {
+    "en": "Unwrap",
+    "ua": "Розпакувати"
+  },
+  "lau_2b_manual": {
+    "en": "Manual",
+    "ua": "Довідка"
+  },
+  "lau_3b_manual": {
+    "en": "Manual",
+    "ua": "Довідка"
+  },
+  "lau_pose_title_u": {
+    "en": "Suspended software",
+    "ua": "Призупинена програма"
+  },
+  "lau_rest_comm_u": {
+    "en": "HOME: Resume suspended software",
+    "ua": "HOME — продовжити"
+  },
+  "lau_3b_quit": {
+    "en": " Close",
+    "ua": " Закрити"
+  },
+  "lau_dlg_quit0": {
+    "en": "Would you like to close this\nsoftware?\n{t:1.0:5500}{t:0.3:3c3c3cff}(Any unsaved data will\nbe lost.){t:0.3:000000ff}{/t:1.0}",
+    "ua": "Закрити цю програму?\n{t:1.0:5500}{t:0.3:3c3c3cff}(Усі незбережені дані\nбуде втрачено.){t:0.3:000000ff}{/t:1.0}"
+  },
+  "lau_dlg_quit1": {
+    "en": "Close the suspended software\nand launch this one?\n{t:1.0:5500}{t:0.3:3c3c3cff}(Any unsaved data will\nbe lost.){t:0.3:000000ff}{/t:1.0}",
+    "ua": "Закрити призупинену\nпрограму й запустити цю?\n{t:1.0:5500}{t:0.3:3c3c3cff}(Усі незбережені дані\nбуде втрачено.){t:0.3:000000ff}{/t:1.0}"
+  },
+  "lau_dlg_quit2": {
+    "en": "Nintendo eShop is currently\nsuspended. Would you like\nto relaunch it?\n{t:1.0:5500}{t:0.3:3c3c3cff}(Data will be saved.){t:0.3:000000ff}{/t:1.0}",
+    "ua": "Сервіс Nintendo eShop\nзараз призупинено.\nПерезапустити його?\n{t:1.0:5500}{t:0.3:3c3c3cff}(Дані буде збережено.){t:0.3:000000ff}{/t:1.0}"
+  },
+  "lau_dlg_quit3": {
+    "en": "Close the suspended software\nand launch this one?\n{t:1.0:5500}{t:0.3:3c3c3cff}(Data will be saved.){t:0.3:000000ff}{/t:1.0}",
+    "ua": "Закрити призупинену\nпрограму й запустити цю?\n{t:1.0:5500}{t:0.3:3c3c3cff}(Дані буде збережено.){t:0.3:000000ff}{/t:1.0}"
+  },
+  "lau_dlg_quit4": {
+    "en": "Closing software...",
+    "ua": "Програма закривається.."
+  },
+  "lau_dlg_quit5": {
+    "en": "Closing suspended software...",
+    "ua": "Призупинена програма\nзакривається…..."
+  },
+  "lau_dlg_quit6": {
+    "en": "",
+    "ua": ""
+  },
+  "lau_dlg_quit7": {
+    "en": "",
+    "ua": ""
+  },
+  "lau_dlg_quit8": {
+    "en": "Close the suspended software\nand launch this one?",
+    "ua": "Закрити призупинену\nпрограму й запустити цю??"
+  },
+  "lau_dlg_quit9": {
+    "en": "Saving data and\nclosing software...",
+    "ua": "Збереження даних\nі закриття програми…..."
+  },
+  "lau_dlg_app_jump": {
+    "en": "Please wait...",
+    "ua": "Зачекайте, будь ласка…..."
+  },
+  "lau_dlg_pause": {
+    "en": "Software suspended.{t:1.0:1400}\n                    {/t:1.0}\nPress HOME to resume.{t:1.0:1400}\n                    {/t:1.0}\nTouch Close to close\nthe software.",
+    "ua": "Програму призупинено.{t:1.0:1400}\n                    {/t:1.0}\nНатисніть  HOME, щоб\nпродовжити.\nЩоб закрити програму,\nторкніться кнопки Закрити."
+  },
+  "lau_dlg_alart": {
+    "en": "Do not remove the Game Card\nwhile a card-based title is \nsuspended.",
+    "ua": "Не виймайте гральну\nкарту, коли гру на карті\nпризупинено."
+  },
+  "lau_dlg_card_error": {
+    "en": "The Game Card could\nnot be read.{t:1.0:1400}\n                    {/t:1.0}\nPlease remove and re-insert\nthe Game Card.",
+    "ua": "Не вдалося прочитати дані\nз гральної карти.{t:1.0:1400}\n                    {/t:1.0}\nВийміть гральну карту\nі вставте її знову."
+  },
+  "lau_dlg_cup_error": {
+    "en": "This Game Card\ncannot be used.",
+    "ua": "Цю гральну карту\nне можна використати.."
+  },
+  "lau_dlg_2b_canc0": {
+    "en": " Cancel",
+    "ua": " Скасувати"
+  },
+  "lau_dlg_2b_canc0_1": {
+    "en": "Cancel",
+    "ua": "Скасувати"
+  },
+  "lau_dlg_2b_ok": {
+    "en": " OK",
+    "ua": " OK"
+  },
+  "lau_dlg_2b_ok_touch": {
+    "en": "",
+    "ua": ""
+  },
+  "lau_dlg_2b_ok_y": {
+    "en": " OK",
+    "ua": " OK"
+  },
+  "lau_dlg_2b_canc1": {
+    "en": " Cancel",
+    "ua": " Скасувати"
+  },
+  "lau_dlg_2b_decide": {
+    "en": " OK",
+    "ua": " OK"
+  },
+  "lau_dlg_1b_decide": {
+    "en": " OK",
+    "ua": " OK"
+  },
+  "lau_dlg_2b_launch": {
+    "en": " Open",
+    "ua": " Відкрити"
+  },
+  "lau_dlg_2b_delete": {
+    "en": "Delete",
+    "ua": "Стерти"
+  },
+  "lau_2b_restart": {
+    "en": " Resume",
+    "ua": " Далі"
+  },
+  "lau_3b_restart": {
+    "en": " Resume",
+    "ua": " Далі"
+  },
+  "lau_sample_t_u": {
+    "en": "Uses remaining: %d",
+    "ua": "Залишилось запусків: %d"
+  },
+  "lau_sample_f_u": {
+    "en": "No limit on number of uses",
+    "ua": "Кількість запусків не обмежена"
+  },
+  "lau_sample_d_u": {
+    "en": "",
+    "ua": ""
+  },
+  "lau_dlg_sample0": {
+    "en": "This demo can no longer\nbe used.{t:1.0:1400}\n　　　　　　　　　　　　　{/t:1.0}\nLaunch Nintendo eShop in\norder to view information\nabout the full version?",
+    "ua": "Цю демоверсію більше\nне можна використовувати.{t:1.0:1400}\n　　　　　　　　　　　　　{/t:1.0}\nЗапустити Nintendo eShop,\nщоб побачити інформацію\nпро повну версію?"
+  },
+  "lau_dlg_2b_later": {
+    "en": "",
+    "ua": ""
+  },
+  "lau_dlg_sample1": {
+    "en": "Launch Nintendo eShop in\norder to view information\nabout the full version of\nthis software?",
+    "ua": "Запустити Nintendo eShop,\nщоб побачити\nінформацію про повну\nверсію цієї програми?"
+  },
+  "lau_dlg_sample2": {
+    "en": "Delete this demo?",
+    "ua": "Видалити цю демоверсію??"
+  },
+  "lau_dlg_sample3": {
+    "en": "Uses remaining: %d\n\nLaunch this demo?",
+    "ua": "Залишилось запусків: %d\n\nЗапустити цю демоверсію??"
+  },
+  "lau_dlg_sample4": {
+    "en": "Launch this demo?",
+    "ua": "Запустити цю демоверсію??"
+  },
+  "lau_dlg_b_sample": {
+    "en": "View Details for Full Version",
+    "ua": "Огляд повної версії"
+  },
+  "lau_2b_property": {
+    "en": "View Details",
+    "ua": "Огляд інформації"
+  },
+  "lau_2b_delete": {
+    "en": "Stop",
+    "ua": "{t:1.1:6000}Зупинити{/t:1.1}"
+  },
+  "lau_dlg_sam_del0": {
+    "en": "Deleting demo...",
+    "ua": "Видалення демоверсії…..."
+  },
+  "lau_dlg_sam_del1": {
+    "en": "Write-protection is enabled\non the SD Card.\nTurn off the power, move the\nSD Card's write-protection\nswitch to the off position,\nthen reinsert the SD Card.",
+    "ua": "Карту SD захищено\nвід запису.\nВимкніть систему,\nзніміть захист від запису\nз карти SD, потім\nвставте карту SD знову."
+  },
+  "lau_dlg_sam_del2": {
+    "en": "The demo has\nbeen deleted.",
+    "ua": "Демоверсію видалено.."
+  },
+  "lau_dlg_sam_del3": {
+    "en": "Could not delete the demo.",
+    "ua": "Не вдалося видалити\nцю демоверсію.."
+  },
+  "lau_dlg_bgdl0": {
+    "en": "",
+    "ua": ""
+  },
+  "lau_dlg_bgdl0_sd": {
+    "en": "Downloading. Do not remove\nthe SD Card. Close system\nto resume download.",
+    "ua": "Підготовка. Не виймайте\nкарту SD. Закрийте систему,\nщоб почати завантаження."
+  },
+  "lau_dlg_bgdl0_sd_sac": {
+    "en": "Downloading. Do not remove\nthe microSD card. Close\nsystem to resume download.",
+    "ua": "Підготовка. Не виймайте\nкарту microSD. Закрийте\nсистему, щоб почати завантаження."
+  },
+  "lau_dlg_bgdl0_sd_jan": {
+    "en": "Downloading. Do not remove\nthe microSD card. Close\nsystem to resume download.",
+    "ua": "Підготовка. Не виймайте\nкарту microSD. Закрийте\nсистему, щоб почати завантаження."
+  },
+  "lau_dlg_bgdl0_sd_flw": {
+    "en": "Downloading. Do not remove\nthe SD Card. Enter Sleep\nMode to resume download.",
+    "ua": "Підготовка. Не виймайте\nкарту SD. Щоб почати\nзавантаження, перейдіть\nу режим сну."
+  },
+  "lau_dlg_bgdl0_nand": {
+    "en": "Downloading.\nClose system to\nresume download.",
+    "ua": "Підготовка.\nЗакрийте систему,\nщоб почати завантаження.."
+  },
+  "lau_dlg_bgdl0_nand_flw": {
+    "en": "Downloading.\nEnter Sleep Mode to\nresume download.",
+    "ua": "Підготовка. Перейдіть\nу режим сну,\nщоб почати завантаження.."
+  },
+  "lau_dlg_bgdl1": {
+    "en": "Stop the download?\n\n{t:1.0:5500}{t:0.3:3c3c3cff}The software will still be\navailable for free download\nfrom Nintendo eShop.{t:0.3:000000ff}{/t:1.0}",
+    "ua": "Зупинити завантаження?\n\n{t:1.0:5500}{t:0.3:3c3c3cff}Ви все одно зможете\nбезплатно завантажити цю\nпрограму з Nintendo eShop.{t:0.3:000000ff}{/t:1.0}"
+  },
+  "lau_dlg_bgdl2": {
+    "en": "The software download\nhas failed. Please perform\na new download from\nwithin Nintendo eShop.",
+    "ua": "Не вдалося завантажити\nпрограму.\nЗавантажте програму\nще раз у Nintendo eShop."
+  },
+  "lau_dlg_bgdl3": {
+    "en": "Launch Nintendo eShop\nand download now?",
+    "ua": "Запустити Nintendo eShop\nі завантажити програму??"
+  },
+  "lau_dlg_bgdl4": {
+    "en": "Please wait...",
+    "ua": "Зачекайте, будь ласка…..."
+  },
+  "lau_dlg_bgdl5": {
+    "en": "Download stopped. Push the\nwireless switch to enable\nwireless communication.",
+    "ua": "Завантаження зупинено.\nПосуньте перемикач без-\nдротового режиму вгору."
+  },
+  "lau_dlg_bgdl5_flw": {
+    "en": "Download stopped.\nPlease enable wireless\ncommunication.",
+    "ua": "Завантаження зупинено.\nУвімкніть бездротовий\nрежим.."
+  },
+  "lau_dlg_bgdl5_sac": {
+    "en": "Download stopped.\nPlease enable wireless\ncommunication.",
+    "ua": "Завантаження зупинено.\nУвімкніть бездротовий\nрежим.."
+  },
+  "lau_dlg_bgdl5_jan": {
+    "en": "Download stopped.\nPlease enable wireless\ncommunication.",
+    "ua": "Завантаження зупинено.\nУвімкніть бездротовий\nрежим.."
+  },
+  "lau_dlg_bgdl6": {
+    "en": "{t:1.0:6200}Downloading update data. Do\nnot remove the SD Card. Close\nsystem to resume download.{/t:1.0}",
+    "ua": "{t:1.1:5700}Підготовка. Не виймайте карту\nSD. Закрийте систему, щоб почати\nзавантаження даних оновлення.{/t:1.1}"
+  },
+  "lau_dlg_bgdl6_sac": {
+    "en": "Downloading update data. Do\nnot remove the microSD card.\nClose system to resume\ndownload.",
+    "ua": "{t:1.1:5000}Підготовка. Не виймайте карту\nmicroSD. Закрийте систему, щоб\nпочати завантаження даних оновлення.{/t:1.1}"
+  },
+  "lau_dlg_bgdl6_jan": {
+    "en": "Downloading update data. Do\nnot remove the microSD card.\nClose system to resume\ndownload.",
+    "ua": "{t:1.1:5000}Підготовка. Не виймайте карту\nmicroSD. Закрийте систему, щоб\nпочати завантаження даних оновлення.{/t:1.1}"
+  },
+  "lau_dlg_bgdl6_flw": {
+    "en": "Downloading update data.\nDo not remove the SD Card.\nEnter Sleep Mode to\nresume download.",
+    "ua": "Підготовка. Не виймайте\nкарту SD. Перейдіть\nу режим сну, щоб\nпочати завантаження."
+  },
+  "lau_dlg_bgdl7": {
+    "en": "Stop the download?{t:1.0:1400}\n　　　　　　　　　　　　　{/t:1.0}\n{t:1.0:5500}{t:0.3:3c3c3cff}The update data will still be\navailable for free download\nfrom Nintendo eShop.{t:0.3:000000ff}{/t:1.0}",
+    "ua": "Зупинити завантаження?{t:1.0:1400}\n　　　　　　　　　　　　　{/t:1.0}\n{t:1.0:5500}{t:0.3:3c3c3cff}Ви все одно зможете\nбезплатно завантажити ці\nдані оновлення з\nNintendo eShop.{t:0.3:000000ff}{/t:1.0}"
+  },
+  "lau_dlg_bgdl8": {
+    "en": "The software or update data\ndownloads have failed.{t:1.0:1400}\n　　　　　　　　　　　　　{/t:1.0}\nPlease perform new\ndownloads from within\nNintendo eShop.",
+    "ua": "Не вдалося завантажити\nпрограму або дані\nоновлення.{t:1.0:1400}\n　　　　　　　　　　　　　{/t:1.0}\nВиконайте це завантаження\nще раз у Nintendo eShop."
+  },
+  "lau_dlg_bgdl9": {
+    "en": "The update data download\nhas failed. Please perform\na new download from\nwithin Nintendo eShop.",
+    "ua": "Не вдалося завантажити\nдані оновлення.\nВиконайте це завантаження\nще раз у Nintendo eShop."
+  },
+  "lau_dlg_bgdl10": {
+    "en": "The update data download\nwas successful.{t:1.0:1400}\n　　　　　　　　　　　　　{/t:1.0}\nYou can check the data under\nAdd-on Content Management\nin the System Settings.",
+    "ua": "Завантаження даних\nоновлення завершено.\nДані можна перевірити\nв розділі Додатковий\nконтент у системних\nналаштуваннях."
+  },
+  "lau_dlg_bgdl11": {
+    "en": "The software has\nbeen updated.",
+    "ua": "Програму оновлено.."
+  },
+  "lau_dlg_bgdl_btn_0": {
+    "en": " Complete Download Now",
+    "ua": " {t:1.0:6300}Завершити завантаження{/t:1.0}"
+  },
+  "lau_dlg_bgdl_btn_1": {
+    "en": " Sleep Mode Download",
+    "ua": " {t:1.0:5100}Завантажити в режимі сну{/t:1.0}"
+  },
+  "lau_dlg_fgdl0": {
+    "en": "Downloading...",
+    "ua": "Завантаження…..."
+  },
+  "lau_dlg_2b_dele": {
+    "en": "",
+    "ua": ""
+  },
+  "lau_dlg_2b_retry": {
+    "en": " Retry",
+    "ua": " Повтор"
+  },
+  "lau_dlg_error": {
+    "en": "",
+    "ua": ""
+  },
+  "lau_dlg_progress": {
+    "en": "%d%% downloaded",
+    "ua": "Завантажено %d%%%%"
+  },
+  "lau_dlg_delete0": {
+    "en": "",
+    "ua": ""
+  },
+  "lau_dlg_delete1": {
+    "en": "",
+    "ua": ""
+  },
+  "lau_battery_u": {
+    "en": "Battery power is running low.",
+    "ua": "Потрібно підзарядити батарею.."
+  },
+  "lau_zone_u": {
+    "en": "The Nintendo Zone service is available here.",
+    "ua": "Тут доступна Nintendo Zone.."
+  },
+  "lau_dlg_zone": {
+    "en": "The Nintendo Zone service\nis available at your location. \nTo use this service, touch the \nNintendo Zone viewer icon.",
+    "ua": "Ви можете скористатися\nсервісом Nintendo Zone.\nДля цього торкніться значка\nпрограми перегляду\nNintendo Zone."
+  },
+  "lau_dlg_no_spider": {
+    "en": "",
+    "ua": ""
+  },
+  "lau_dlg_no_spider1": {
+    "en": "You cannot launch the\ninternet browser at the\nsame time as the currently\nsuspended software.",
+    "ua": "Інтернет-браузер не можна\nзапустити, коли є\nпризупинена\nпрограма."
+  },
+  "lau_dlg_no_camera": {
+    "en": "The camera function cannot\nbe used because it is in use\nby the suspended software.",
+    "ua": "Функцію камери\nвикористовує призупинена\nпрограма, тому вона\nнедоступна."
+  },
+  "lau_dlg_no_capture": {
+    "en": "",
+    "ua": ""
+  },
+  "lau_dlg_no_upper_cap": {
+    "en": "You cannot take a screenshot\nof the upper screen while the\nsoftware is suspended.",
+    "ua": "Не можна зробити\nскриншот верхнього екрана,\nколи програму\nпризупинено."
+  },
+  "lau_dlg_no_app": {
+    "en": "You need to connect to the\ninternet and perform a system\nupdate before you can use\nthis function.\nOpen the System Settings and\nperform a system update?",
+    "ua": "Потрібно під'єднатися\nдо Інтернету й виконати\nоновлення системи.\nВідкрити системні\nналаштування й оновити\nсистему?"
+  },
+  "lau_dlg_no_app2": {
+    "en": "",
+    "ua": ""
+  },
+  "lau_dlg_no_camera1": {
+    "en": "",
+    "ua": ""
+  },
+  "lau_cambase": {
+    "en": "Press  +  to activate the camera.",
+    "ua": "Натисніть  + , щоб увімкнути камеру."
+  },
+  "lau_capture": {
+    "en": "Upper screenshot:  +   Lower screenshot:  + ",
+    "ua": "Скриншот верху: +  Скриншот низу: +"
+  },
+  "lau_capture1": {
+    "en": " + : Take a screenshot of both screens.",
+    "ua": " + : скриншот обох екранів."
+  },
+  "lau_capture_8": {
+    "en": " + : Take a screenshot of the Touch Screen.",
+    "ua": " + : скриншот сенсорного дисплея."
+  },
+  "lau_friend_u0": {
+    "en": "Friends online: %d",
+    "ua": "Друзів онлайн: %d"
+  },
+  "lau_friend_u1": {
+    "en": "Friends online: %d",
+    "ua": "Друзів онлайн: %d"
+  },
+  "lau_friend_u2": {
+    "en": "Friend online",
+    "ua": "Друг зараз онлайн"
+  },
+  "lau_friend_u3": {
+    "en": "",
+    "ua": ""
+  },
+  "lau_friend_u4": {
+    "en": "",
+    "ua": ""
+  },
+  "lau_dlg_pare0": {
+    "en": "Would you like to launch this\nsoftware in 2D?\n{t:1.0:5500}{t:0.3:3c3c3cff}You must enter your PIN to\nlaunch it in 3D.{t:0.3:000000ff}{/t:1.0}",
+    "ua": "Запустити програму в\nрежимі 2D?\n{t:1.0:5500}{t:0.3:3c3c3cff}Щоб запустити програму\nв режимі 3D, потрібно\nввести PIN-код.{t:0.3:000000ff}{/t:1.0}"
+  },
+  "lau_dlg_pare1": {
+    "en": "This software is restricted by\nthe Parental Controls Software\nRating settings.{t:1.0:1400}\n                    {/t:1.0}\nPlease enter your PIN to\nlaunch this software.",
+    "ua": "Програму обмежено\nбатьківським контролем.{t:1.0:1400}\n                    {/t:1.0}\nВведіть PIN-код, щоб\nзапустити цю програму."
+  },
+  "lau_dlg_pare1_ng": {
+    "en": "Content is restricted\nby Parental Controls.\n\nThis software cannot be\nlaunched.",
+    "ua": "Контент обмежено\nбатьківським контролем.\n\nЦю програму\nне можна запустити."
+  },
+  "lau_dlg_pare3": {
+    "en": "Use of the internet browser\nis restricted by Parental\nControls.{t:1.0:1400}\n                    {/t:1.0}\nPlease enter your PIN to\nlaunch this software.",
+    "ua": "Використання інтернет-\nбраузера обмежено\nбатьківським контролем.{t:1.0:1400}\n                    {/t:1.0}\nВведіть PIN-код, щоб\nзапустити цю програму."
+  },
+  "lau_dlg_pare4": {
+    "en": "Failed to enter\nthe correct PIN.{t:1.0:1400}\n                    {/t:1.0}\nLaunching in 2D\ndisplay mode.",
+    "ua": "Введено неправильний\nPIN-код.{t:1.0:1400}\n                    {/t:1.0}\nПрограму буде запущено\nв режимі 2D."
+  },
+  "lau_dlg_pare5": {
+    "en": "Would you like to launch this\nsoftware in 2D?\n{t:1.0:5500}{t:0.3:3c3c3cff}You must enter your PIN again\nto launch it in 3D.{t:0.3:000000ff}{/t:1.0}",
+    "ua": "Запустити програму в\nрежимі 2D?\n{t:1.0:5500}{t:0.3:3c3c3cff}Щоб запустити програму\nв режимі 3D, потрібно\nввести PIN-код ще раз.{t:0.3:000000ff}{/t:1.0}"
+  },
+  "lau_dlg_pare6": {
+    "en": "",
+    "ua": ""
+  },
+  "lau_dlg_2b_pare0": {
+    "en": "",
+    "ua": ""
+  },
+  "lau_dlg_2b_pare1": {
+    "en": " {t:1.1:5000}Launch in 2D{/t:1.1}",
+    "ua": " Режим 2D"
+  },
+  "lau_dlg_2b_pare2": {
+    "en": " {t:1.1:5000}Launch in 3D{/t:1.1}",
+    "ua": " Режим 3D"
+  },
+  "lau_no_gamecard": {
+    "en": "There is nothing inserted into\nthe Game Card slot.",
+    "ua": "Гральну карту не вставлено.."
+  },
+  "lau_title_memo_u": {
+    "en": "Game Notes",
+    "ua": "Ігрові записи"
+  },
+  "lau_title_fri_u": {
+    "en": "Friend List",
+    "ua": "Список друзів"
+  },
+  "lau_title_news_u": {
+    "en": "Notifications",
+    "ua": "Повідомлення"
+  },
+  "lau_title_web_u": {
+    "en": "Internet Browser",
+    "ua": "Інтернет-браузер"
+  },
+  "lau_title_mvs_u": {
+    "en": "Miiverse",
+    "ua": "Miiverse"
+  },
+  "lau_1b_petit_open": {
+    "en": "HOME Menu Settings",
+    "ua": "Налаштування HOME"
+  },
+  "lau_1b_icon_big": {
+    "en": "Enlarge Icons",
+    "ua": "Збільшити значки"
+  },
+  "lau_1b_icon_small": {
+    "en": "Shrink Icons",
+    "ua": "Зменшити значки"
+  },
+  "lau_1b_badge_plt": {
+    "en": "Place Badges",
+    "ua": "Причепити жетони"
+  },
+  "ptt_title_u": {
+    "en": "HOME Menu Settings",
+    "ua": "Налаштування HOME"
+  },
+  "ptt_menu_design": {
+    "en": "HOME Menu Design",
+    "ua": "Вигляд меню HOME"
+  },
+  "ptt_theme": {
+    "en": "Change Theme",
+    "ua": "Змінити тему"
+  },
+  "ptt_badge": {
+    "en": "Place Badges",
+    "ua": "Причепити\nжетони"
+  },
+  "ptt_menu_mhm": {
+    "en": "HOME Menu Layout",
+    "ua": "Вигляд меню HOME"
+  },
+  "ptt_mhm": {
+    "en": "Save/Load Layout",
+    "ua": "Зберегти/\nзавантажити вигляд"
+  },
+  "ptt_light_bright": {
+    "en": "Screen Brightness",
+    "ua": "Яскравість екрана"
+  },
+  "ptt_l_b_auto": {
+    "en": "Auto-Brightness",
+    "ua": "Автояскравість"
+  },
+  "ptt_light_off": {
+    "en": "OFF",
+    "ua": "Вимк.."
+  },
+  "ptt_light_on": {
+    "en": "ON",
+    "ua": "Увімк.."
+  },
+  "ptt_light_eco": {
+    "en": "Power-Saving Mode",
+    "ua": "{t:1.0:5d00}Енергоощадний режим{/t:1.0}"
+  },
+  "ptt_light_wireless": {
+    "en": "Wireless Communication",
+    "ua": "Бездротовий режим"
+  },
+  "ptt_light_wireless_sac": {
+    "en": "{t:1.0:5700}Wireless Communication/NFC{/t:1.0}",
+    "ua": "{t:1.0:5b00}Бездротовий режим / NFC{/t:1.0}"
+  },
+  "ptt_light_wireless_jan": {
+    "en": "{t:1.0:5700}Wireless Communication/NFC{/t:1.0}",
+    "ua": "{t:1.0:5b00}Бездротовий режим / NFC{/t:1.0}"
+  },
+  "ptt_menu_upload": {
+    "en": "Nintendo 3DS\nImage Share",
+    "ua": "Обмін зображен-\nнями Nintendo 3DS"
+  },
+  "ptt_menu_manual": {
+    "en": "HOME Menu \nElectronic Manual",
+    "ua": "Ел. посібник\nз меню HOME"
+  },
+  "ptt_mset": {
+    "en": "System Settings",
+    "ua": "{t:1.0:5300}Системні налашт.{/t:1.0}"
+  },
+  "ptt_tiger": {
+    "en": "Nintendo eShop",
+    "ua": "Nintendo eShop"
+  },
+  "ptt_cabinet_c": {
+    "en": "amiibo Settings",
+    "ua": "Налаштування amiibo"
+  },
+  "ptt_contactinfo": {
+    "en": "",
+    "ua": ""
+  },
+  "ptt_dlg_contactinfo": {
+    "en": "",
+    "ua": ""
+  },
+  "ptt_dlg_no_sd_generic": {
+    "en": "This feature cannot be used\nbecause there is no SD card\ninserted.",
+    "ua": "Цю функцію не можна\nвикористати, бо\nне вставлено карту SD."
+  },
+  "ptt_dlg_no_sd_generic_sac": {
+    "en": "This feature cannot be used\nbecause there is no microSD\ncard inserted.",
+    "ua": "Цю функцію не можна\nвикористати, бо\nне вставлено карту microSD."
+  },
+  "ptt_dlg_no_sd_generic_jan": {
+    "en": "This feature cannot be used\nbecause there is no microSD\ncard inserted.",
+    "ua": "Цю функцію не можна\nвикористати, бо\nне вставлено карту microSD."
+  },
+  "ptt_dlg_ng_sd_generic": {
+    "en": "This feature cannot be used\nbecause the SD card could\nnot be accessed.",
+    "ua": "Цю функцію не можна\nвикористати, бо\nне вдалося отримати\nдоступ до карти SD."
+  },
+  "ptt_dlg_ng_sd_generic_sac": {
+    "en": "This feature cannot be used\nbecause the microSD card\ncould not be accessed.",
+    "ua": "Цю функцію не можна\nвикористати, бо\nне вдалося отримати\nдоступ до карти microSD."
+  },
+  "ptt_dlg_ng_sd_generic_jan": {
+    "en": "This feature cannot be used\nbecause the microSD card\ncould not be accessed.",
+    "ua": "Цю функцію не можна\nвикористати, бо\nне вдалося отримати\nдоступ до карти microSD."
+  },
+  "ptt_dlg_sd_prote_generic": {
+    "en": "This feature cannot be used\nbecause the SD card is\nwrite-protected.",
+    "ua": "Цю функцію не можна\nвикористати, бо\nкарту SD захищено\nвід запису."
+  },
+  "ptt_dlg_no_sd": {
+    "en": "The theme-change feature\nis unavailable because\nthe SD card is not inserted.",
+    "ua": "Зміна теми недоступна,\nбо не вставлено\nкарту SD."
+  },
+  "ptt_dlg_no_sd_sac": {
+    "en": "The theme-change feature is\nunavailable because the\nmicroSD card is not inserted.",
+    "ua": "Зміна теми недоступна,\nбо не вставлено\nкарту microSD."
+  },
+  "ptt_dlg_no_sd_jan": {
+    "en": "The theme-change feature is\nunavailable because the\nmicroSD card is not inserted.",
+    "ua": "Зміна теми недоступна,\nбо не вставлено\nкарту microSD."
+  },
+  "ptt_dlg_ng_sd": {
+    "en": "The theme-change feature is\nunavailable because the\nSD card cannot be accessed.",
+    "ua": "Зміна теми недоступна,\nбо не вдалося\nотримати доступ\nдо карти SD."
+  },
+  "ptt_dlg_ng_sd_sac": {
+    "en": "The theme-change feature is\nunavailable because the\nmicroSD card cannot be\naccessed.",
+    "ua": "Зміна теми недоступна,\nбо не вдалося\nотримати доступ\nдо карти microSD."
+  },
+  "ptt_dlg_ng_sd_jan": {
+    "en": "The theme-change feature is\nunavailable because the\nmicroSD card cannot be\naccessed.",
+    "ua": "Зміна теми недоступна,\nбо не вдалося\nотримати доступ\nдо карти microSD."
+  },
+  "ptt_dlg_sd_prote": {
+    "en": "The theme-change feature\nis unavailable because\nwrite-protection is enabled\non the SD card.",
+    "ua": "Зміна теми недоступна, бо\nкарту SD захищено\nвід запису."
+  },
+  "ptt_dlg_sd_diff": {
+    "en": "Could not read themes\nfrom SD card.\n\nPlease try again.",
+    "ua": "Не вдалося прочитати\nдані тем з карти SD.\n\nСпробуйте ще раз."
+  },
+  "ptt_dlg_sd_diff_sac": {
+    "en": "Could not read themes\nfrom microSD card.\n\nPlease try again.",
+    "ua": "Не вдалося прочитати дані\nтем з карти microSD.\n\nСпробуйте ще раз."
+  },
+  "ptt_dlg_sd_diff_jan": {
+    "en": "Could not read themes\nfrom microSD card.\n\nPlease try again.",
+    "ua": "Не вдалося прочитати дані\nтем з карти microSD.\n\nСпробуйте ще раз."
+  },
+  "lau_light_bright": {
+    "en": "Screen Brightness",
+    "ua": "Яскравість екрана"
+  },
+  "lau_light_eco": {
+    "en": "Power-Saving Mode",
+    "ua": "Енергоощадний режим"
+  },
+  "lau_light_wireless_flw": {
+    "en": "Wireless Communication",
+    "ua": "Бездротовий режим"
+  },
+  "lau_light_on": {
+    "en": "ON",
+    "ua": "Увімк.."
+  },
+  "lau_light_off": {
+    "en": "OFF",
+    "ua": "Вимк.."
+  },
+  "lau_dlg_1b_ok": {
+    "en": " OK",
+    "ua": " OK"
+  },
+  "lau_theme_change": {
+    "en": "Please choose a theme.",
+    "ua": "Виберіть тему.."
+  },
+  "lau_theme_change_plu": {
+    "en": "Please choose some themes.",
+    "ua": "Виберіть улюблені теми.."
+  },
+  "lau_theme_shop_spbln": {
+    "en": "Add themes here.",
+    "ua": "Тут можна купити теми.."
+  },
+  "lau_theme_shop": {
+    "en": "Theme Shop",
+    "ua": "Магазин тем"
+  },
+  "lau_theme_shop_80": {
+    "en": "The Theme Shop can't be\nused at the same time as the\ncurrently suspended software.",
+    "ua": "Магазин тем не можна\nвикористати, коли є\nпризупинена\nпрограма."
+  },
+  "lau_theme_shop_fin": {
+    "en": "This service has concluded.\nThank you for using the\nservice.",
+    "ua": "Цей сервіс більше\nне надається.\nДякуємо, що користувалися\nцим сервісом."
+  },
+  "lau_theme_shop_error": {
+    "en": "Could not acquire data.",
+    "ua": "Не вдалося отримати дані.."
+  },
+  "lau_theme_red": {
+    "en": "Simple Red",
+    "ua": "Звичайна червона"
+  },
+  "lau_theme_blue": {
+    "en": "Simple Blue",
+    "ua": "Звичайна синя"
+  },
+  "lau_theme_yellow": {
+    "en": "Simple Yellow",
+    "ua": "Звичайна жовта"
+  },
+  "lau_theme_pink": {
+    "en": "Simple Pink",
+    "ua": "Звичайна рожева"
+  },
+  "lau_theme_black": {
+    "en": "Simple Black",
+    "ua": "Звичайна чорна"
+  },
+  "lau_theme_default": {
+    "en": "Default",
+    "ua": "За умовчанням"
+  },
+  "lau_theme_rand": {
+    "en": "Shuffle Favourites",
+    "ua": "Теми випадково"
+  },
+  "lau_theme_rand_title": {
+    "en": "Shuffle Favourite Themes",
+    "ua": "{t:1.0:5a00}Теми випадково{/t:1.0}"
+  },
+  "lau_theme_rand_u": {
+    "en": "The theme will shuffle randomly through the list\nafter putting the system in Sleep Mode from the\nHOME Menu, or when turning the power on.",
+    "ua": "Коли ви вмикаєте систему або переводите\nїї в режим сну в меню HOME, буде\nпоказано випадкову тему зі списку."
+  },
+  "lau_theme_dlg_up_data": {
+    "en": "Updating theme management\ninformation...{t:1.0:1400}\n {/t:1.0}\nDo not remove the SD card\nor turn off the power.",
+    "ua": "Оновлення даних\nкерування темами…{t:1.0:1400}\n {/t:1.0}\nНе вимикайте систему\nі не виймайте карту SD."
+  },
+  "lau_theme_dlg_up_data_sac": {
+    "en": "Updating theme management\ninformation...{t:1.0:1400}\n {/t:1.0}\nDo not remove the microSD\ncard or turn off the power.",
+    "ua": "Оновлення даних\nкерування темами…{t:1.0:1400}\n {/t:1.0}\nНе вимикайте систему і не\nвиймайте карту microSD."
+  },
+  "lau_theme_dlg_up_data_jan": {
+    "en": "Updating theme management\ninformation...{t:1.0:1400}\n {/t:1.0}\nDo not remove the microSD\ncard or turn off the power.",
+    "ua": "Оновлення даних\nкерування темами…{t:1.0:1400}\n {/t:1.0}\nНе вимикайте систему і не\nвиймайте карту microSD."
+  },
+  "lau_dlg_conf_setting": {
+    "en": "Is this setting OK?",
+    "ua": "Продовжити з цим\nналаштуванням??"
+  },
+  "lau_theme_arrange": {
+    "en": "Organise Themes",
+    "ua": "Упорядкувати теми"
+  },
+  "lau_theme_arrange_u": {
+    "en": "Touch and hold the stylus on a theme and\nthen slide up and down to move it.",
+    "ua": "Торкніться теми стилусом і тримайте\nїї, потім проведіть стилусом угору або\nвниз, щоб перемістити тему."
+  },
+  "lau_theme_delete": {
+    "en": "Delete Themes",
+    "ua": "Видалити теми"
+  },
+  "lau_theme_back": {
+    "en": " Cancel",
+    "ua": " Скасувати"
+  },
+  "lau_theme_delete_u": {
+    "en": "Select the theme you wish to delete.",
+    "ua": "Виберіть тему для видалення.."
+  },
+  "lau_theme_dlg_delete_0": {
+    "en": "Delete this theme?{t:1.0:1400}\n {/t:1.0}\n{t:1.0:5f00}You can redownload the\ntheme from the Theme Shop.{/t:1.0}",
+    "ua": "Видалити цю тему?{t:1.0:1400}\n {/t:1.0}\n{t:1.0:5f00}Цю тему можна завантажити\nповторно в магазині тем.{/t:1.0}"
+  },
+  "lau_theme_dlg_delete_1": {
+    "en": "Delete the theme you're\ncurrently using?{t:1.0:1400}\n {/t:1.0}\n{t:1.0:5f00}You can redownload the\ntheme from the Theme Shop.{/t:1.0}",
+    "ua": "Видалити тему, якою ви\nкористуєтеся\nзараз?{t:1.0:1400}\n {/t:1.0}\n{t:1.0:5f00}Цю тему можна завантажити\nповторно в магазині тем.{/t:1.0}"
+  },
+  "lau_theme_dlg_delete_rand": {
+    "en": "This theme is on your shuffle\nfavourites list. If you delete it,\nthe favourite theme settings\nwill also be lost.",
+    "ua": "Ця тема є у списку\nулюблених тем, що\nпоказуються випадково.\nЯкщо ви її видалите, буде\nвидалено всі налаштування\nулюблених тем."
+  },
+  "lau_theme_dlg_delete_done": {
+    "en": "Theme deleted.",
+    "ua": "Тему видалено.."
+  },
+  "lau_theme_exit_delete": {
+    "en": "",
+    "ua": ""
+  },
+  "lau_theme_change_thm_fail": {
+    "en": "Unable to change theme.",
+    "ua": "Не вдалося змінити тему.."
+  },
+  "tm_shop_title": {
+    "en": "Theme Shop",
+    "ua": "Магазин тем"
+  },
+  "tm_shop_title_new": {
+    "en": "New Themes",
+    "ua": "Нові теми"
+  },
+  "tm_shop_title_jenre_search": {
+    "en": "",
+    "ua": ""
+  },
+  "tm_shop_title_all": {
+    "en": "All Themes",
+    "ua": "Усі теми"
+  },
+  "tm_shop_title_pchsd": {
+    "en": "Purchased Themes",
+    "ua": "Придбані теми"
+  },
+  "tm_shop_note_pchsd": {
+    "en": "",
+    "ua": ""
+  },
+  "tm_shop_list_new_mark": {
+    "en": "",
+    "ua": ""
+  },
+  "tm_shop_list_bu_new": {
+    "en": "New Themes",
+    "ua": "Нові теми"
+  },
+  "tm_shop_list_bu_jenre_search": {
+    "en": "",
+    "ua": ""
+  },
+  "tm_shop_list_bu_other_collctns": {
+    "en": "View More",
+    "ua": "Дивитися далі"
+  },
+  "tm_shop_list_bu_all": {
+    "en": "All Themes",
+    "ua": "Усі теми"
+  },
+  "tm_shop_list_bu_pcsd": {
+    "en": "Purchased Themes",
+    "ua": "Придбані теми"
+  },
+  "tm_shop_list_bu_movie": {
+    "en": "View Theme Videos\nin Nintendo eShop",
+    "ua": "Дивитися відео про теми\nв Nintendo eShop"
+  },
+  "tm_shop_list_free": {
+    "en": "FREE",
+    "ua": "{t:1.0:5200}Безплатно{/t:1.0}"
+  },
+  "tm_shop_list_pchsd": {
+    "en": "Purchased",
+    "ua": "Куплено"
+  },
+  "tm_shop_dt_free": {
+    "en": "FREE",
+    "ua": "Безплатно"
+  },
+  "tm_shop_dt_bu_pchs": {
+    "en": "Proceed to Purchase",
+    "ua": "Перейти до купівлі"
+  },
+  "tm_shop_dt_bu_pchsd": {
+    "en": "Purchased",
+    "ua": "Куплено"
+  },
+  "tm_shop_dt_bu_dl": {
+    "en": "Download",
+    "ua": "Завантаж."
+  },
+  "tm_shop_dt_about_theme": {
+    "en": "",
+    "ua": ""
+  },
+  "tm_shop_dt_about_set": {
+    "en": "This product contains\n%d themes.",
+    "ua": "Кількість тем у цьому\nпродукті: %d.."
+  },
+  "tm_shop_dt_normal_wall": {
+    "en": "Normal wallpaper",
+    "ua": "Звичайні шпалери"
+  },
+  "tm_shop_dt_panorama_wall": {
+    "en": "Panoramic wallpaper",
+    "ua": "Панорамні шпалери"
+  },
+  "tm_shop_dt_anime_wall": {
+    "en": "Animated wallpaper",
+    "ua": "Анімовані\nшпалери"
+  },
+  "tm_shop_dt_recom_row": {
+    "en": "",
+    "ua": ""
+  },
+  "tm_shop_dt_custom_se": {
+    "en": "Original sound effects",
+    "ua": "Звукові ефекти"
+  },
+  "tm_shop_dt_custom_bgm": {
+    "en": "Original music",
+    "ua": "Музичний фон"
+  },
+  "tm_shop_dt_custom_se_bgm": {
+    "en": "Original sound effects\nOriginal music",
+    "ua": "Звукові ефекти\nМузичний фон"
+  },
+  "tm_shop_dt_help_wall": {
+    "en": "◇Panoramic wallpaper:\nScrolls left and right.{t:1.0:1400}\n {/t:1.0}\n◇Animated wallpaper:\nAnimates when scrolling\nthe screen.",
+    "ua": "◇ Панорамні шпалери:\nпрокручуються вліво\nі вправо.\n◇ Анімовані шпалери:\nрухаються під час\nпрокручування екрана."
+  },
+  "tm_shop_dt_help_sound": {
+    "en": "◇Original sound effects: \nChanges sounds heard when\npressing buttons, etc.{t:1.0:1400}\n {/t:1.0}\n◇Original music: \nChanges background music.",
+    "ua": "◇ Звукові ефекти:\nзмінюються звуки, які\nчутно при натисканні\nкнопок тощо.\n◇ Музичний фон:\nзмінюється музичний фон."
+  },
+  "tm_shop_dt_bgm_title": {
+    "en": "♪Music:",
+    "ua": "♪ Музичний фон::"
+  },
+  "tm_shop_dt_lang_disp": {
+    "en": "Buttons and other text will appear in\nthe language your system is set to.",
+    "ua": "Опції та інший текст буде\nпоказано мовою системи.."
+  },
+  "tm_shop_dt_bu_relat_app": {
+    "en": "View Related Software",
+    "ua": "{t:1.0:5700}Огляд пов'язаних програм{/t:1.0}"
+  },
+  "tm_shop_dt_copyright": {
+    "en": "Additional Information",
+    "ua": "Додаткова інформація"
+  },
+  "tm_shop_mn_bu_dlcode": {
+    "en": "Enter Download\nCode",
+    "ua": "Код завантаження"
+  },
+  "tm_shop_about_dlcode": {
+    "en": "If you have a download code for\na theme you can redeem it here.",
+    "ua": "Тут можна використати\nкод завантаження теми.."
+  },
+  "tm_shop_mn_bu_pchsd_theme": {
+    "en": "",
+    "ua": ""
+  },
+  "tm_shop_mn_bu_set_news": {
+    "en": "Notification Setting",
+    "ua": "Налашт. повідомлень"
+  },
+  "tm_shop_mn_bu_support": {
+    "en": "Customer Support",
+    "ua": "Технічна\nпідтримка клієнтів"
+  },
+  "tm_shop_dlg_support": {
+    "en": "Contact details of your local\nNintendo Customer Support\ncan be found at\nhttp://contact.nintendo.eu.",
+    "ua": "Контактні дані місцевої\nтехнічної підтримки\nклієнтів див. на сайті\nhttp://contact.nintendo.eu."
+  },
+  "tm_shop_dlg_about_news": {
+    "en": "Welcome to the Theme Shop!\n\nYou can get themes here by\npurchasing them or redeeming\ndownload codes.",
+    "ua": "Вітаємо\nв магазині тем!\n\nТут можна отримувати теми,\nкупуючи їх або використо-\nвуючи коди завантаження."
+  },
+  "tm_shop_dlg_ask_news": {
+    "en": "Receive notifications about the\nTheme Shop via SpotPass?\n(May include advertisements.)",
+    "ua": "Отримувати через SpotPass\nповідомлення про магазин\nтем? (Можуть містити рекламу.)"
+  },
+  "tm_shop_dlg_bu_want_news": {
+    "en": "Receive",
+    "ua": "Згода"
+  },
+  "tm_shop_dlg_bu_refu_news": {
+    "en": "Don't Receive",
+    "ua": "Відмова"
+  },
+  "tm_shop_dlg_save_set": {
+    "en": "Settings saved.\n\nYou can change these settings\nat any time.",
+    "ua": "Налаштування збережено.\n\nЦі налаштування можна\nзмінити будь-коли."
+  },
+  "lau_dlg_1b_next": {
+    "en": " Next",
+    "ua": " Далі"
+  },
+  "tm_shop_dlg_bu_back": {
+    "en": " Back",
+    "ua": " Назад"
+  },
+  "tm_shop_btm_bu_exit": {
+    "en": " Close",
+    "ua": " Закрити"
+  },
+  "tm_shop_bu_pre_p": {
+    "en": "Previous",
+    "ua": "{t:1.0:6300}Попередня{/t:1.0}"
+  },
+  "tm_shop_bu_next_p": {
+    "en": "Next",
+    "ua": "Наступна"
+  },
+  "tm_shop_dlg_create_data": {
+    "en": "Creating theme management\ninformation...{t:1.0:1400}\n {/t:1.0}\nDo not remove the SD card\nor turn off the power.",
+    "ua": "Створення даних\nкерування темами…{t:1.0:1400}\n {/t:1.0}\nНе вимикайте систему\nі не виймайте карту SD."
+  },
+  "tm_shop_dlg_create_data_sac": {
+    "en": "Creating theme management\ninformation...{t:1.0:1400}\n {/t:1.0}\nDo not remove the microSD\ncard or turn off the power.",
+    "ua": "Створення даних\nкерування темами…{t:1.0:1400}\n {/t:1.0}\nНе вимикайте систему і не\nвиймайте карту microSD."
+  },
+  "tm_shop_dlg_create_data_jan": {
+    "en": "Creating theme management\ninformation...{t:1.0:1400}\n {/t:1.0}\nDo not remove the microSD\ncard or turn off the power.",
+    "ua": "Створення даних\nкерування темами…{t:1.0:1400}\n {/t:1.0}\nНе вимикайте систему і не\nвиймайте карту microSD."
+  },
+  "tm_shop_dlg_save_data": {
+    "en": "",
+    "ua": ""
+  },
+  "tm_shop_dlg_save_data_sac": {
+    "en": "",
+    "ua": ""
+  },
+  "tm_shop_dlg_create_data_fail": {
+    "en": "Failed to create theme\nmanagement information.",
+    "ua": "Не вдалося створити дані\nкерування темами…..."
+  },
+  "tm_shop_dlg_local_thm_max": {
+    "en": "Unable to add more themes.{t:1.0:1400}\n {/t:1.0}\nPlease make space on your\nsystem by selecting Delete\nThemes on the Change Theme\nscreen, then try again.",
+    "ua": "Не можна додати\nнові теми.\nЗвільніть місце в системі,\nвибравши Видалити теми\nна екрані зміни тем,\nпотім спробуйте ще раз."
+  },
+  "tm_shop_dlg_local_thm_over": {
+    "en": "This feature cannot be used\nbecause you have %d too\nmany themes saved.\n\nDo you want to select a\ntheme to delete?",
+    "ua": "Цю функцію не можна\nвикористати, бо у вас\nзбережено надто багато\nтем. Зайвих тем: %d.\n\nВибрати тему для видалення?"
+  },
+  "tm_shop_dlg_contain_pcsd": {
+    "en": "You already own themes\ncontained in this item.{t:1.0:1400}\n {/t:1.0}\nProceed to purchase screen?",
+    "ua": "У вас уже є теми,\nякі містяться в цьому\nпродукті.{t:1.0:1400}\n {/t:1.0}\nПерейти на екран\nздійснення покупок?"
+  },
+  "tm_shop_dlg_jump_to_eshop": {
+    "en": "Launch Nintendo eShop?",
+    "ua": "Запустити Nintendo eShop??"
+  },
+  "tm_shop_dlg_price_changed": {
+    "en": "Information on this item\nmay have been updated.{t:1.0:1400}\n {/t:1.0}\nUpdated information can be\nviewed on the next screen.",
+    "ua": "Інформацію про цей\nпродукт, можливо,\nбуло оновлено.{t:1.0:1400}\n {/t:1.0}\nОновлену інформацію\nможна побачити\nна наступному екрані."
+  },
+  "tm_shop_dlg_change_thm_now_0": {
+    "en": "",
+    "ua": ""
+  },
+  "tm_shop_dlg_change_thm_now_1": {
+    "en": "",
+    "ua": ""
+  },
+  "tm_shop_dlg_empty_list": {
+    "en": "No information can be\ndisplayed.",
+    "ua": "Немає інформації\nдля показу.."
+  },
+  "tm_shop_not_sv_region": {
+    "en": "Nothing is available at present\nfor your current region setting.",
+    "ua": "Зараз для вашого\nрегіону немає\nдоступних елементів.."
+  },
+  "lau_dlg_no_badge": {
+    "en": "",
+    "ua": ""
+  },
+  "lau_dlg_no_center": {
+    "en": "",
+    "ua": ""
+  },
+  "plt_category_all": {
+    "en": "All Badges",
+    "ua": "Усі жетони"
+  },
+  "plt_count_category_u": {
+    "en": "Badges: %d",
+    "ua": "Жетонів: %d"
+  },
+  "plt_guide_back": {
+    "en": "Place a badge here\nto remove it.",
+    "ua": "Покладіть жетон сюди,\nщоб зняти його.."
+  },
+  "plt_guide_limit_badge": {
+    "en": "",
+    "ua": ""
+  },
+  "lau_dlg_limit_badge": {
+    "en": "You have reached the limit\nfor the types of badge\nthat can be placed on the\nHOME Menu.",
+    "ua": "Ви досягли максимальної\nкількості типів жетонів,\nякі можна причепити\nв меню HOME."
+  },
+  "plt_setting_folder": {
+    "en": "Place Badge\non Folder",
+    "ua": "Оздобити папку\nжетоном"
+  },
+  "plt_guide_back_folder": {
+    "en": "Move a badge over a folder\nto attach it to the front.",
+    "ua": "Покладіть жетон на папку,\nщоб причепити його до неї.."
+  },
+  "plt_setting_reset": {
+    "en": "Remove All Badges",
+    "ua": "Зняти всі жетони"
+  },
+  "plt_guide_reset": {
+    "en": "Remove all badges?\n(This won't affect\nthose in folders.)",
+    "ua": "Зняти всі жетони?\n(Крім жетонів\nу папках.).)"
+  },
+  "plt_guide_reset_folder": {
+    "en": "Remove all badges\nfrom this folder?",
+    "ua": "Зняти всі жетони\nв цій папці??"
+  },
+  "plt_setting_mhm": {
+    "en": "Save/Load Layout",
+    "ua": "Зберегти/\nзавантажити вигляд"
+  },
+  "plt_setting_theme": {
+    "en": "Change Theme",
+    "ua": "Змінити тему"
+  },
+  "plt_setting_b_ok": {
+    "en": "OK",
+    "ua": "OK"
+  },
+  "plt_setting_b_cancel": {
+    "en": "Cancel",
+    "ua": "Скасувати"
+  },
+  "lau_dlg_menu_no_badge": {
+    "en": "You cannot use this feature\nas you have no badges.",
+    "ua": "Ви не можете використати\nцю функцію, бо у вас\nнемає жетонів."
+  },
+  "mhm_current_u": {
+    "en": "Current HOME\nMenu layout:",
+    "ua": "Поточний вигляд::"
+  },
+  "mhm_title_u": {
+    "en": "Save/load HOME Menu layouts.",
+    "ua": "Збереження виглядів меню HOME.."
+  },
+  "mhm_save_4b": {
+    "en": " Save",
+    "ua": " {t:1.1:5200}Зберегти{/t:1.1}"
+  },
+  "mhm_load_4b": {
+    "en": " Load",
+    "ua": " {t:1.1:5200}Відновити{/t:1.1}"
+  },
+  "mhm_overwrite_4b": {
+    "en": " {t:1.1:5000}Overwrite{/t:1.1}",
+    "ua": " {t:1.1:5200}Замінити{/t:1.1}"
+  },
+  "lau_dlg_mhm_save": {
+    "en": "Do you want to overwrite\nthis HOME Menu layout\nwith the current layout?",
+    "ua": "Замінити цей вигляд меню\nHOME поточним??"
+  },
+  "lau_dlg_mhm_load": {
+    "en": "Do you really want to load\nthis HOME Menu layout?{t:1.0:1400}\n　　　　　　　　　　　　　{/t:1.0}\n{t:1.0:5500}{t:0.3:3c3c3cff}The current HOME Menu\nlayout will not be saved.{t:0.3:000000ff}{/t:1.0}",
+    "ua": "Справді завантажити\nцей вигляд меню HOME?{t:1.0:1400}\n　　　　　　　　　　　　　{/t:1.0}\n{t:1.0:5500}{t:0.3:3c3c3cff}Поточний вигляд меню HOME\nне буде збережено.{t:0.3:000000ff}{/t:1.0}"
+  },
+  "lau_dlg_mhm_delete": {
+    "en": "Are you sure you\nwant to delete this\nHOME Menu layout?",
+    "ua": "Справді видалити\nцей вигляд меню HOME??"
+  },
+  "lau_dlg_mhm_save_fail": {
+    "en": "Failed to save.",
+    "ua": "Не вдалося зберегти.."
+  },
+  "lau_dlg_mhm_load_fail": {
+    "en": "Failed to load.",
+    "ua": "Не вдалося завантажити.."
+  },
+  "lau_dlg_mhm_delete_fail": {
+    "en": "Failed to delete.",
+    "ua": "Не вдалося видалити.."
+  },
+  "lau_dlg_mhm_ng_softpose": {
+    "en": "You cannot use the HOME\nMenu layout feature while\nsoftware is suspended.",
+    "ua": "Вигляди меню HOME\nне можна використати,\nколи є призупинена\nпрограма."
+  },
+  "lau_dlg_mhm_create_data": {
+    "en": "Creating HOME Menu layout\nmanagement information...\nPlease do not turn off the\npower or remove the SD card.",
+    "ua": "Створення даних\nкерування виглядами\nменю HOME…\nНе вимикайте живлення\nі не виймайте карту SD."
+  },
+  "lau_dlg_mhm_create_data_sac": {
+    "en": "Creating HOME Menu layout\nmanagement information...\nPlease do not turn off\nthe power or remove the\nmicroSD card.",
+    "ua": "Створення даних\nкерування виглядами\nменю HOME…\nНе вимикайте живлення\nі не виймайте карту\nmicroSD."
+  },
+  "lau_dlg_mhm_create_data_jan": {
+    "en": "Creating HOME Menu layout\nmanagement information...\nPlease do not turn off\nthe power or remove the\nmicroSD card.",
+    "ua": "Створення даних\nкерування виглядами\nменю HOME…\nНе вимикайте живлення\nі не виймайте карту\nmicroSD."
+  },
+  "lau_dlg_mhm_create_data_fail": {
+    "en": "Failed to create HOME Menu\nlayout management\ninformation.",
+    "ua": "Не вдалося створити дані\nкерування виглядами\nменю HOME.."
+  },
+  "lau_dlg_mhm_sd_diff": {
+    "en": "Unable to load HOME Menu\nlayout management\ninformation from the SD card.\n\nPlease try again.",
+    "ua": "Не вдалося завантажити\nдані керування\nвиглядами меню HOME\nз карти SD.\n\nСпробуйте ще раз."
+  },
+  "lau_dlg_mhm_sd_diff_sac": {
+    "en": "Unable to load HOME Menu\nlayout management\ninformation from the\nmicroSD card.\n\nPlease try again.",
+    "ua": "Не вдалося завантажити\nдані керування\nвиглядами меню HOME\nз карти microSD.\n\nСпробуйте ще раз."
+  },
+  "lau_dlg_mhm_sd_diff_jan": {
+    "en": "Unable to load HOME Menu\nlayout management\ninformation from the\nmicroSD card.\n\nPlease try again.",
+    "ua": "Не вдалося завантажити\nдані керування\nвиглядами меню HOME\nз карти microSD.\n\nСпробуйте ще раз."
+  },
+  "lau_dlg_sd": {
+    "en": "Creating HOME Menu\nmanagement information...\nPlease do not remove\nthe SD Card.",
+    "ua": "Створення даних\nкерування меню HOME…\nНе виймайте карту SD."
+  },
+  "lau_dlg_sd_sac": {
+    "en": "Creating HOME Menu\nmanagement information...\nPlease do not remove\nthe microSD card.",
+    "ua": "Створення даних\nкерування меню HOME…\nНе виймайте карту\nmicroSD."
+  },
+  "lau_dlg_sd_jan": {
+    "en": "Creating HOME Menu\nmanagement information...\nPlease do not remove\nthe microSD card.",
+    "ua": "Створення даних\nкерування меню HOME…\nНе виймайте карту\nmicroSD."
+  },
+  "lau_dlg_delete_save": {
+    "en": "If you delete the HOME Menu\nmanagement information, data\nsuch as folder and software\nicon layouts will be lost.\n\nDo you want to continue?",
+    "ua": "Якщо ви видалите дані\nкерування меню HOME,\nбуде втрачено, зокрема,\nрозташування папок\nі значків програм.\nПродовжити?"
+  },
+  "lau_dlg_sd1": {
+    "en": "",
+    "ua": ""
+  },
+  "lau_dlg_sd1_sac": {
+    "en": "",
+    "ua": ""
+  },
+  "lau_dlg_sd_error": {
+    "en": "Could not create HOME Menu\nmanagement information\nas there is not enough\nspace on the SD Card.",
+    "ua": "Не вдалося створити дані\nкерування меню HOME,\nбо на карті SD\nнедостатньо вільного\nмісця."
+  },
+  "lau_dlg_sd_error_sac": {
+    "en": "Could not create HOME Menu\nmanagement information\nas there is not enough space\non the microSD card.",
+    "ua": "Не вдалося створити дані\nкерування меню HOME,\nбо на карті microSD\nнедостатньо вільного\nмісця."
+  },
+  "lau_dlg_sd_error_jan": {
+    "en": "Could not create HOME Menu\nmanagement information\nas there is not enough space\non the microSD card.",
+    "ua": "Не вдалося створити дані\nкерування меню HOME,\nбо на карті microSD\nнедостатньо вільного\nмісця."
+  },
+  "lau_dlg_no_sd": {
+    "en": "The SD Card has\nbeen removed.\n{t:1.0:5500}{t:0.3:3c3c3cff}Please turn off the power\nbefore removing SD Cards.{t:0.3:000000ff}{/t:1.0}",
+    "ua": "Карту SD вийнято.\n{t:1.0:5500}{t:0.3:3c3c3cff}Завжди вимикайте\nсистему перед\nвийманням карти SD.{t:0.3:000000ff}{/t:1.0}"
+  },
+  "lau_dlg_no_sd_sac": {
+    "en": "The microSD card has\nbeen removed.\n{t:1.0:5500}{t:0.3:3c3c3cff}Please turn off the power\nbefore removing microSD\ncards.{t:0.3:000000ff}{/t:1.0}",
+    "ua": "Карту microSD вийнято.\n{t:1.0:5500}{t:0.3:3c3c3cff}Завжди вимикайте\nсистему перед\nвийманням карт microSD.{t:0.3:000000ff}{/t:1.0}"
+  },
+  "lau_dlg_no_sd_jan": {
+    "en": "The microSD card has\nbeen removed.\n{t:1.0:5500}{t:0.3:3c3c3cff}Please turn off the power\nbefore removing microSD\ncards.{t:0.3:000000ff}{/t:1.0}",
+    "ua": "Карту microSD вийнято.\n{t:1.0:5500}{t:0.3:3c3c3cff}Завжди вимикайте\nсистему перед\nвийманням карт microSD.{t:0.3:000000ff}{/t:1.0}"
+  },
+  "lau_dlg_sd_prote": {
+    "en": "Write-protection is enabled\non the SD Card.{t:1.0:1400}\n　　　　　　　　　　　　　{/t:1.0}\nThe software on the SD Card\ncannot be displayed.",
+    "ua": "Карту SD захищено\nвід запису.{t:1.0:1400}\n　　　　　　　　　　　　　{/t:1.0}\nПрограми на карті SD\nне можуть бути показані."
+  },
+  "lau_dlg_ng_sd": {
+    "en": "Cannot display the software\non the SD Card. The SD Card\ncould not be accessed.",
+    "ua": "Не можна показати\nпрограми на карті SD.\nНе вдалося отримати доступ\nдо карти SD."
+  },
+  "lau_dlg_ng_sd_sac": {
+    "en": "Cannot display the software\non the microSD card. The\nmicroSD card could not be\naccessed.",
+    "ua": "Не можна показати\nпрограми на карті microSD.\nНе вдалося отримати доступ\nдо карти microSD."
+  },
+  "lau_dlg_ng_sd_jan": {
+    "en": "Cannot display the software\non the microSD card. The\nmicroSD card could not be\naccessed.",
+    "ua": "Не можна показати\nпрограми на карті microSD.\nНе вдалося отримати доступ\nдо карти microSD."
+  },
+  "lau_dlg_start_ng": {
+    "en": "The software title could not\nbe launched.{t:1.0:1400}\n　　　　　　　　　　　　　{/t:1.0}\nPlease download it again\nfrom Nintendo eShop.",
+    "ua": "Не вдалося запустити\nпрограму.{t:1.0:1400}\n　　　　　　　　　　　　　{/t:1.0}\nЗавантажте її\nще раз з Nintendo eShop."
+  },
+  "lau_dlg_ng_soft": {
+    "en": "This is New Nintendo 3DS\nsoftware and cannot be used\non this system.",
+    "ua": "Це програма\nNew Nintendo 3DS,\nїї не можна використати\nна цій системі."
+  },
+  "lau_dlg_ng_sd1": {
+    "en": "Could not access SD Card.",
+    "ua": "Не вдалося отримати доступ\nдо карти SD.."
+  },
+  "lau_dlg_ng_sd1_sac": {
+    "en": "Could not access\nmicroSD card.",
+    "ua": "Не вдалося отримати доступ\nдо карти microSD.."
+  },
+  "lau_dlg_ng_sd1_jan": {
+    "en": "Could not access\nmicroSD card.",
+    "ua": "Не вдалося отримати доступ\nдо карти microSD.."
+  },
+  "lau_dlg_ng_bgdl": {
+    "en": "This software title is currently\nbeing updated and cannot be\nlaunched at this time.",
+    "ua": "Програма оновлюється,\nтому зараз її не можна\nзапустити."
+  },
+  "lau_dlg_ng_ba": {
+    "en": "This software has backup data\nthat has not been restored.\n\nPlease launch from the\nHOME Menu.",
+    "ua": "У цієї програми є ще\nне відновлені дані\nрезервної копії.\n\nЗапустіть\nїї в меню HOME."
+  },
+  "lau_dlg_cap_no_sd": {
+    "en": "Unable to take a screenshot\nof the HOME Menu, as the\nSD card is not inserted.",
+    "ua": "Не вдається зробити скриншот\nменю HOME, бо\nне вставлено карту SD."
+  },
+  "lau_dlg_cap_no_sd_sac": {
+    "en": "Unable to take a screenshot\nof the HOME Menu, as the\nmicroSD card is not inserted.",
+    "ua": "Не вдається зробити скриншот\nменю HOME, бо\nне вставлено карту microSD."
+  },
+  "lau_dlg_cap_no_sd_jan": {
+    "en": "Unable to take a screenshot\nof the HOME Menu, as the\nmicroSD card is not inserted.",
+    "ua": "Не вдається зробити скриншот\nменю HOME, бо\nне вставлено карту microSD."
+  },
+  "lau_dlg_cap_sd_prote": {
+    "en": "Unable to take a screenshot\nof the HOME Menu because\nwrite-protection is enabled\non the SD card.",
+    "ua": "Не вдається зробити скриншот\nменю HOME, бо карту\nSD захищено від запису."
+  },
+  "lau_dlg_cap_sd_full": {
+    "en": "Unable to take a screenshot\nof the HOME Menu as there\nis not enough space on the\nSD card.",
+    "ua": "Не вдається зробити скриншот\nменю HOME, бо\nна карті SD недостатньо\nвільного місця."
+  },
+  "lau_dlg_cap_sd_full_sac": {
+    "en": "Unable to take a screenshot\nof the HOME Menu as there\nis not enough space on the\nmicroSD card.",
+    "ua": "Не вдається зробити скриншот\nменю HOME, бо на карті\nmicroSD недостатньо\nвільного місця."
+  },
+  "lau_dlg_cap_sd_full_jan": {
+    "en": "Unable to take a screenshot\nof the HOME Menu as there\nis not enough space on the\nmicroSD card.",
+    "ua": "Не вдається зробити скриншот\nменю HOME, бо на карті\nmicroSD недостатньо\nвільного місця."
+  },
+  "lau_dlg_cap_sd_full_ph": {
+    "en": "Unable to take a screenshot\nof the HOME Menu as the\nimage limit on the SD card\nhas been reached.",
+    "ua": "Не вдається зробити скриншот\nменю HOME, бо\nна карті SD вже збережено\nмаксимально можливу\nкількість зображень."
+  },
+  "lau_dlg_cap_sd_full_ph_sac": {
+    "en": "Unable to take a screenshot\nof the HOME Menu as the\nimage limit on the microSD\ncard has been reached.",
+    "ua": "Не вдається зробити скриншот\nменю HOME, бо\nна карті microSD вже\nзбережено максимально\nможливу кількість\nзображень."
+  },
+  "lau_dlg_cap_sd_full_ph_jan": {
+    "en": "Unable to take a screenshot\nof the HOME Menu as the\nimage limit on the microSD\ncard has been reached.",
+    "ua": "Не вдається зробити скриншот\nменю HOME, бо\nна карті microSD вже\nзбережено максимально\nможливу кількість\nзображень."
+  },
+  "lau_dlg_cap_ng_sd": {
+    "en": "Unable to take a screenshot\nof the HOME Menu because\nthe SD card cannot be \naccessed.",
+    "ua": "Не вдається зробити скриншот\nменю HOME, бо\nне вдалося отримати\nдоступ до карти SD."
+  },
+  "lau_dlg_cap_ng_sd_sac": {
+    "en": "Unable to take a screenshot\nof the HOME Menu as the\nmicroSD card cannot be\naccessed.",
+    "ua": "Не вдається зробити скриншот\nменю HOME, бо\nне вдалося отримати\nдоступ до карти microSD."
+  },
+  "lau_dlg_cap_ng_sd_jan": {
+    "en": "Unable to take a screenshot\nof the HOME Menu as the\nmicroSD card cannot be\naccessed.",
+    "ua": "Не вдається зробити скриншот\nменю HOME, бо\nне вдалося отримати\nдоступ до карти microSD."
+  },
+  "lau_dlg_cap_sd_miss": {
+    "en": "An SD card process failed.",
+    "ua": "Не вдалося прочитати\nдані з карти SD.."
+  },
+  "lau_dlg_cap_sd_miss_sac": {
+    "en": "A microSD card\nprocess failed.",
+    "ua": "Не вдалося прочитати\nдані з карти microSD.."
+  },
+  "lau_dlg_cap_sd_miss_jan": {
+    "en": "A microSD card\nprocess failed.",
+    "ua": "Не вдалося прочитати\nдані з карти microSD.."
+  },
+  "lau_dlg_motion0": {
+    "en": "Motion Sensor Calibration",
+    "ua": "{t:1.1:5a00}Калібрування сенсора руху{/t:1.1}"
+  },
+  "lau_dlg_motion1": {
+    "en": "Calibrate",
+    "ua": "Калібрувати"
+  },
+  "lau_dlg_motion2": {
+    "en": "Revert to default settings",
+    "ua": "Відновити налаштування\nза умовчанням"
+  },
+  "lau_dlg_motion3": {
+    "en": "Reverted to default settings.",
+    "ua": "Налаштування за умовчанням\nвідновлено.."
+  },
+  "lau_dlg_motion4": {
+    "en": "Place the system on a flat,\nstable surface, then touch OK.\n{t:1.0:5500}{t:0.3:3c3c3cff}Placing the system on an\ninclined surface may further\nincrease any inaccuracy of\nthe motion sensor.{t:0.3:000000ff}{/t:1.0}",
+    "ua": "Покладіть систему на плос-\nку стійку поверхню,\nпотім торкніться OK.\n{t:1.0:5500}{t:0.3:3c3c3cff}Похила поверхня\nможе збільшити похибку\nсенсора руху.{t:0.3:000000ff}{/t:1.0}"
+  },
+  "lau_dlg_motion5": {
+    "en": "Calibration complete.",
+    "ua": "Калібрування завершено.."
+  },
+  "lau_dlg_motion6": {
+    "en": "Calibration failed.{t:1.0:1400}\n　　　　　　　　　{/t:1.0}\nPlease try again.",
+    "ua": "Не вдалося виконати\nкалібрування.{t:1.0:1400}\n　　　　　　　　　{/t:1.0}\nСпробуйте\nще раз."
+  },
+  "lau_dlg_motion7": {
+    "en": "Reverting to default settings.{t:1.0:1400}\n　　　　　　　　　{/t:1.0}\nIs this OK?",
+    "ua": "Відновлення\nналаштувань за умовчанням.{t:1.0:1400}\n　　　　　　　　　{/t:1.0}\nПродовжити?"
+  },
+  "lau_dummy_title": {
+    "en": "",
+    "ua": ""
+  },
+  "lau_dlg_home0": {
+    "en": "",
+    "ua": ""
+  },
+  "lau_dlg_home1": {
+    "en": "",
+    "ua": ""
+  },
+  "lau_dlg_home2": {
+    "en": "",
+    "ua": ""
+  },
+  "lau_press_pow_u0": {
+    "en": "In Sleep Mode, the system can...",
+    "ua": "{t:1.1:5500}У режимі сну система може…{/t:1.1}"
+  },
+  "lau_press_pow_u1": {
+    "en": "・ Count your steps and\n　 collect Play Coins{t:1.0:1400}\n                    {/t:1.0}\n・ Use StreetPass{t:1.0:1400}\n                    {/t:1.0}\n・ Receive various content\n　 via SpotPass",
+    "ua": "・ Підраховувати ваші кроки\n　 і збирати ігрові монетки.{t:1.0:1400}\n                    {/t:1.0}\n・ Використовувати StreetPass.{t:1.0:1400}\n                    {/t:1.0}\n・ Отримувати різноманітний контент\n　 через SpotPass."
+  },
+  "lau_press_pow0": {
+    "en": "Software closed.",
+    "ua": "Програму закрито.."
+  },
+  "lau_b_sleep": {
+    "en": "",
+    "ua": ""
+  },
+  "lau_b_shutdown": {
+    "en": " Power Off",
+    "ua": " Вимкнути"
+  },
+  "lau_press_pow1": {
+    "en": ": Return to HOME Menu",
+    "ua": " — назад до меню HOME"
+  },
+  "lau_press_pow2": {
+    "en": "",
+    "ua": ""
+  },
+  "lau_press_pow3": {
+    "en": "",
+    "ua": ""
+  },
+  "lau_press_pow4": {
+    "en": "",
+    "ua": ""
+  },
+  "lau_press_pow5": {
+    "en": "Close the system to enter Sleep Mode.\nThe HOME Menu will appear when\nyou resume use.",
+    "ua": "{t:1.1:5000}Щоб перейти в режим сну, закрийте систему.\nКоли ви знову її відкриєте, з'явиться меню HOME.{/t:1.1}"
+  },
+  "lau_press_pow5_flw": {
+    "en": "Move the sleep switch to the right to\nenter Sleep Mode. The HOME Menu\nwill appear when you resume use.",
+    "ua": "Увімкніть режим сну за допомогою\nперемикача режиму сну. Після\nйого вимкнення з'явиться меню HOME."
+  },
+  "lau_dlg_cardupd0": {
+    "en": "A system update is required\nto use this software.\n\nUpdate to\n%ls?",
+    "ua": "Щоб використати цю\nпрограму, потрібне\nоновлення системи.\n\nОновити до версії\n%ls?"
+  },
+  "lau_dlg_cardupd1": {
+    "en": "Close any suspended software\nto initiate the update.",
+    "ua": "Закрийте призупинену\nпрограму, щоб почати\nоновлення."
+  },
+  "lau_dlg_cardupd2": {
+    "en": "",
+    "ua": ""
+  },
+  "lau_dlg_cardupd3": {
+    "en": "Please plug in the AC adapter\nto ensure that the system\ndoes not lose power during\nthe update.",
+    "ua": "Під'єднайте\nблок живлення, щоб система\nне розрядилася під час\nоновлення."
+  },
+  "lau_dlg_cardupd4": {
+    "en": "Updating. Please wait...{t:1.0:1400}\n                    {/t:1.0}\nDo not turn off the power.",
+    "ua": "Триває оновлення…\nЗачекайте, будь ласка.{t:1.0:1400}\n　　　　　　　　　　　　　{/t:1.0}\nНе вимикайте систему."
+  },
+  "lau_dlg_cardupd5": {
+    "en": "The system update\nis complete.{t:1.0:1400}\n                    {/t:1.0}\nThe system will\nnow be restarted.",
+    "ua": "Оновлення системи\nзавершено.{t:1.0:1400}\n                    {/t:1.0}\nЗараз систему буде\nперезапущено."
+  },
+  "lau_dlg_cardupd6": {
+    "en": "Battery power is running low.\nPlease plug in the AC adapter.{t:1.0:1400}\n                    {/t:1.0}\nOnce the battery has charged\nsufficiently, the update will\nbegin automatically.",
+    "ua": "Потрібно підзарядити\nбатарею. Під'єднайте\nблок живлення.\nЯк тілько батарея\nзарядиться, оновлення\nпочнеться автоматично."
+  },
+  "lau_dlg_cardupd6_flw": {
+    "en": "Battery power is running low.\nPlease plug in the AC adapter.{t:1.0:1400}\n                    {/t:1.0}\nOnce the battery has charged\nsufficiently, the update will\nbegin automatically.",
+    "ua": "Потрібно підзарядити\nбатарею. Під'єднайте\nблок живлення.\nЯк тільки батарея\nзарядиться, оновлення\nпочнеться автоматично."
+  },
+  "lau_dlg_cardupd7": {
+    "en": "An error has occurred.\nUnable to update.{t:1.0:1400}\n                    {/t:1.0}\nThe system will\nnow be restarted.",
+    "ua": "Сталася помилка.\nНе можна виконати\nоновлення.{t:1.0:1400}\n           {/t:1.0}\nЗараз систему буде\nперезапущено."
+  },
+  "lau_dlg_1b_cance": {
+    "en": " Cancel",
+    "ua": " Скасувати"
+  },
+  "lau_softupd_00": {
+    "en": "Software notification - Connect to the internet and touch Open to start updating.",
+    "ua": "Повідомлення про програму — під'єднайтеся до Інтернету й торкніться Запустити, щоб почати оновлення."
+  },
+  "lau_dlg_softupd_00": {
+    "en": "There is a software update\navailable.",
+    "ua": "Доступне оновлення\nпрограми.."
+  },
+  "lau_dlg_softupd_btn_2": {
+    "en": " Update",
+    "ua": " Оновити"
+  },
+  "lau_dlg_softupd_01": {
+    "en": "Software Update",
+    "ua": "Оновлення програми"
+  },
+  "lau_dlg_softupd_btn_3": {
+    "en": "Complete Download Now",
+    "ua": "Завершити завантаження"
+  },
+  "lau_dlg_softupd_btn_4": {
+    "en": "Confirm Details in\nNintendo eShop then\nDownload",
+    "ua": "Підтвердити інформацію\nв Nintendo eShop\nі почати завантаження"
+  },
+  "lau_dlg_softupd_02": {
+    "en": "This process may take a while.\n\nDo you want to continue?",
+    "ua": "Це може\nзайняти деякий час.\n\nПродовжити??"
+  },
+  "lau_dlg_softupd_2b_y": {
+    "en": " Nintendo eShop",
+    "ua": " Nintendo eShop"
+  },
+  "lau_dlg_softupd_2b_n": {
+    "en": " Launch software",
+    "ua": " Запустити програму"
+  },
+  "lau_dlg_softupd_03": {
+    "en": "This software requires an\nupdate to the latest version\nto proceed.",
+    "ua": "Цю програму потрібно\nоновити до останньої\nверсії, перш ніж\nпродовжити."
+  },
+  "lau_deliver_u": {
+    "en": "Ready to download software.",
+    "ua": "Усе готово для завантаження програми.."
+  },
+  "lau_bgdl_u": {
+    "en": "Enter Sleep Mode to finish downloading.",
+    "ua": "{t:1.0:5200}Перейдіть у режим сну, щоб завершити завантаження.{/t:1.0}"
+  },
+  "lau_bgdl": {
+    "en": "Download progress - %d%% downloaded. Put the system into Sleep Mode while connected to the internet to finish downloading software. You can also complete the download right away after touching View Details.",
+    "ua": "Перебіг завантаження: %d%% завантажено. Під'єднайтеся до Інтернету й переведіть систему в режим сну, щоб завершити завантаження. Також можна одразу завершити завантаження, торкнувшись Огляд інформації."
+  },
+  "lau_bgdl_err_u": {
+    "en": "{t:1.0:5500}An error occurred. Unable to complete download.{/t:1.0}",
+    "ua": "{t:1.0:5900}Сталася помилка. Не вдається завершити завантаження.{/t:1.0}"
+  },
+  "lau_bgdl_err": {
+    "en": "Download progress - An error occurred. Check View Details for more information.",
+    "ua": "Перебіг завантаження: сталася помилка. Торкніться Огляд інформації, щоб отримати додаткову інформацію."
+  },
+  "lau_dlg_bgdl_sd_full": {
+    "en": "Unable to complete download\nas there is not enough space\non the SD card.{t:1.0:1400}\n　{/t:1.0}\nPlease make more space.",
+    "ua": "Не можна завершити\nзавантаження, бо на карті\nSD недостатньо вільного\nмісця.{t:1.0:1400}\n　{/t:1.0}\nЗвільніть місце."
+  },
+  "lau_dlg_bgdl_sd_full_sac": {
+    "en": "Unable to complete download\nas there is not enough space\non the microSD card.{t:1.0:1400}\n　{/t:1.0}\nPlease make more space.",
+    "ua": "Не можна завершити\nзавантаження, бо на карті\nmicroSD недостатньо\nвільного місця.{t:1.0:1400}\n　{/t:1.0}\nЗвільніть місце."
+  },
+  "lau_dlg_bgdl_sd_full_jan": {
+    "en": "Unable to complete download\nas there is not enough space\non the microSD card.{t:1.0:1400}\n　{/t:1.0}\nPlease make more space.",
+    "ua": "Не можна завершити\nзавантаження, бо на карті\nmicroSD недостатньо\nвільного місця.{t:1.0:1400}\n　{/t:1.0}\nЗвільніть місце."
+  },
+  "lau_dlg_bgdl_nand_full": {
+    "en": "Unable to complete download\nas there is not enough space\nin the system memory.{t:1.0:1400}\n　{/t:1.0}\nPlease make more space.",
+    "ua": "Не можна завершити\nзавантаження, бо в памʼяті\nсистеми недостатньо\nвільного місця.{t:1.0:1400}\n　{/t:1.0}\nЗвільніть місце."
+  },
+  "lau_dlg_bgdl_sd_full_twl": {
+    "en": "Unable to complete download\nas you cannot have any more\nNintendo DSiWare titles.{t:1.0:1400}\n　{/t:1.0}\nPlease make more space.",
+    "ua": "Не можна завершити\nзавантаження, бо ви\nдосягли максимально\nдопустимої кількості\nпрограм Nintendo DSiWare.\nЗвільніть місце."
+  },
+  "lau_dlg_bgdl_sd_full_ctr": {
+    "en": "Unable to complete download\nas you've reached the\nmaximum limit allowed for\nNintendo 3DS software titles.{t:1.0:1400}\n　{/t:1.0}\nPlease make more space.",
+    "ua": "Не можна завершити\nзавантаження, бо ви\nдосягли максимально\nдопустимої кількості\nпрограм Nintendo 3DS.\nЗвільніть місце."
+  },
+  "lau_rsv_still": {
+    "en": "Download notification - Thank you for your purchase. Select Open to view distribution information.",
+    "ua": "Повідомлення про завантаження. Дякуємо за покупку! Виберіть Відкрити, щоб побачити інформацію про доступність."
+  },
+  "lau_dlg_rsv_still": {
+    "en": "Thank you for your purchase.{t:1.0:1400}\n　{/t:1.0}\nPlease wait until the software\nis released.",
+    "ua": "Дякуємо за покупку!{t:1.0:1400}\n　{/t:1.0}\nЗачекайте\nнастання дати\nвипуску програми."
+  },
+  "lau_dlg_rsv_still_offline": {
+    "en": "",
+    "ua": ""
+  },
+  "lau_rsv_ready": {
+    "en": "",
+    "ua": ""
+  },
+  "lau_dlg_rsv_ready": {
+    "en": "Distribution of the purchased\nitem has begun.{t:1.0:1400}\n　{/t:1.0}\nPlease launch Nintendo eShop\nand download the item.",
+    "ua": "Придбаний продукт\nтепер доступний.{t:1.0:1400}\n　{/t:1.0}\nЗапустіть Nintendo eShop,\nщоб завантажити продукт."
+  },
+  "lau_dlg_rsv_ready_offline": {
+    "en": "",
+    "ua": ""
+  },
+  "lau_rsv1_still": {
+    "en": "Distribution notification - Days until release: %d.",
+    "ua": "Повідомлення про доступність. Днів до випуску: %d.."
+  },
+  "lau_rsv1_ready": {
+    "en": "",
+    "ua": ""
+  },
+  "lau_rsv1_already": {
+    "en": "Distribution notification - The release date for the purchased item has passed. Please launch this software while connected to the internet to proceed.",
+    "ua": "Повідомлення про доступність. Дата випуску придбаного продукту настала. Щоб продовжити, під'єднайтеся до Інтернету й запустіть програму."
+  },
+  "lau_dlg_rsv1_already": {
+    "en": "This software can now\nbe launched.",
+    "ua": "Тепер цю програму\nможна запустити.."
+  },
+  "lau_dlg_rsv1_already_plural": {
+    "en": "Pre-purchased software\ncan now be launched.",
+    "ua": "Тепер передплачені\nпрограми можна запустити.."
+  },
+  "lau_dlg_rsv1_wait": {
+    "en": "Connecting to the internet\nand verifying distribution\ninformation...",
+    "ua": "Триває під'єднання\nдо Інтернету й перевірка\nінформації про доступність…"
+  },
+  "lau_dlg_rsv1_still_offline": {
+    "en": "Unable to verify distribution\ninformation.{t:1.0:1400}\n　{/t:1.0}\nPlease check your connection\nand try again.",
+    "ua": "Не можна перевірити\nінформацію про доступність.{t:1.0:1400}\n　{/t:1.0}\nПеревірте з'єднання\nі спробуйте ще раз."
+  },
+  "lau_dlg_rsv1_error": {
+    "en": "",
+    "ua": ""
+  },
+  "lau_dlg_rsv1_still_manual": {
+    "en": "Please wait until distribution\nhas begun.{t:1.0:1400}\n　{/t:1.0}\n{t:1.0:5500}You can view the electronic\nmanual for this software\nbefore it is released.{/t:1.0}",
+    "ua": "Зачекайте, поки програма\nстане доступною.\n{t:1.0:5500}Електронний посібник\nдо цієї програми можна\nпобачити до її виходу\nу продаж.{/t:1.0}"
+  },
+  "lau_dlg_bt0": {
+    "en": "New software has been added\nto the HOME Menu.",
+    "ua": "До меню HOME додано\nнову програму.."
+  },
+  "lau_dlg_download": {
+    "en": "",
+    "ua": ""
+  },
+  "lau_dlg_bt1": {
+    "en": "You need to download this\nsoftware from Nintendo eShop\nbefore you can use it.{t:1.0:1400}\n　　　　　　　　　　　　　{/t:1.0}\nLaunch Nintendo eShop now?",
+    "ua": "Щоб використати цю\nпрограму, потрібно спершу\nзавантажити її з\nNintendo eShop.\nЗапустити Nintendo eShop\nзараз?"
+  },
+  "lau_dlg_bt2": {
+    "en": "You need to perform a system\nupdate in the System Settings\nbefore you can launch\nthis software.{t:1.0:1400}\n　　　　　　　　　　　　　{/t:1.0}\nOpen the System Settings?",
+    "ua": "Щоб запустити цю\nпрограму, потрібно спершу\nоновити систему\nв системних\nналаштуваннях. Відкрити\nсистемні налаштування?"
+  },
+  "lau_dlg_bt3": {
+    "en": "Delete this icon?\n{t:1.0:5500}({t:0.3:3c3c3cff}You will still be able to\ndownload the software\nfrom Nintendo eShop later.){t:0.3:000000ff}{/t:1.0}",
+    "ua": "Видалити цей значок?\n{t:1.0:5500}({t:0.3:3c3c3cff}Ви все одно зможете\nзавантажити цю програму\nз Nintendo eShop пізніше.){t:0.3:000000ff}{/t:1.0}"
+  },
+  "lau_dlg_bt4": {
+    "en": "You can turn off automatic\nsoftware downloads under\nInternet Settings in the\nSystem Settings.",
+    "ua": "Ви можете вимкнути\nавтоматичне завантаження\nпрограм у розділі Інтернет-\nналаштування в системних\nналаштуваннях."
+  },
+  "lau_dlg_bt5": {
+    "en": "Are you sure you want to\ndelete this icon?",
+    "ua": "Справді видалити\nцей значок??"
+  },
+  "lau_dlg_bt6": {
+    "en": "Icon deleted.",
+    "ua": "Значок видалено.."
+  },
+  "lau_dlg_bt7": {
+    "en": "You've received software\nthrough SpotPass.{t:1.0:1400}\n　　　　　　　　　　　　　{/t:1.0}\n{t:1.0:5500}{t:0.3:3c3c3cff}To start the software,\nconnect to Nintendo eShop\nby touching the gift icon.{t:0.3:000000ff}{/t:1.0}",
+    "ua": "Через SpotPass\nотримано програму.{t:1.0:1400}\n　　　　　　　　　　　　　{/t:1.0}\n{t:1.0:5500}{t:0.3:3c3c3cff}Щоб запустити її, під'єднай-\nтеся до Nintendo eShop,\nторкнувшись значка дарунка.{t:0.3:000000ff}{/t:1.0}"
+  },
+  "lau_dlg_bt_eu0": {
+    "en": "Your system can now\noccasionally receive new\nsoftware via SpotPass when\nin Sleep Mode, should you\nchoose to continue using\nthis service.",
+    "ua": "Якщо ви продовжите кори-\nстуватися цим сервісом, ваша\nсистема час від часу\nотримуватиме нові про-\nграми через SpotPass, коли\nбуде в режимі сну."
+  },
+  "lau_dlg_bt_eu1": {
+    "en": "Would you like to continue\nusing this service and receive\nnew software via SpotPass?",
+    "ua": "Продовжити користуватися\nцим сервісом (ви будете\nотримувати нові програми\nчерез SpotPass)?"
+  },
+  "lau_dlg_bt_eu2": {
+    "en": "You have chosen not to\nreceive software via SpotPass.\nIf you wish to change this\nsetting later, you can do\nso under Internet Settings\nin the System Settings.",
+    "ua": "Ви відмовилися отримувати\nпрограми через SpotPass.\nЯкщо пізніше захочете\nїх отримувати, перейдіть\nдо Інтернет-налаштувань\nу системних налаштуваннях."
+  },
+  "lau_dlg_bt_eu3": {
+    "en": "You have chosen to receive\nsoftware via SpotPass.\nIf you wish to change this\nsetting later, you can do\nso under Internet Settings\nin the System Settings.",
+    "ua": "Ви будете отримувати\nпрограми через SpotPass.\nЯкщо пізніше захочете\nвід цього відмовитися,\nперейдіть до Інтернет-\nналаштувань у системних."
+  },
+  "lau_dlg_bt_eu4": {
+    "en": "Please wait...",
+    "ua": "Зачекайте, будь ласка…..."
+  },
+  "lau_dlg_2b_bt_eu0": {
+    "en": " Yes",
+    "ua": " Так"
+  },
+  "lau_dlg_2b_bt_eu1": {
+    "en": " No",
+    "ua": " Ні"
+  },
+  "lau_dlg_ntwupd0": {
+    "en": "Ready to start system update.\nUpdate now?\n{t:1.0:5500}{t:0.3:3c3c3cff}(It will be necessary to\nconnect to the internet.){t:0.3:000000ff}{/t:1.0}",
+    "ua": "Усе готово для оновлення\nсистеми. Виконати\nоновлення зараз?\n{t:1.0:5500}{t:0.3:3c3c3cff}(Потрібно під'єднатися\nдо Інтернету.){t:0.3:000000ff}{/t:1.0}"
+  },
+  "lau_dlg_ntwupd1": {
+    "en": "Ready to start system update.\nUpdate now?\n{t:1.0:5500}{t:0.3:3c3c3cff}(The update can be performed\nwithout connecting to the\ninternet.){t:0.3:000000ff}{/t:1.0}",
+    "ua": "Усе готово для оновлення\nсистеми. Виконати\nоновлення зараз?\n{t:1.0:5500}{t:0.3:3c3c3cff}(Оновлення можна\nвиконати без під'єднання\nдо Інтернету.){t:0.3:000000ff}{/t:1.0}"
+  },
+  "lau_dlg_ntwupd2": {
+    "en": "You can perform a system\nupdate later from the\nSystem Settings.",
+    "ua": "Ви можете оновити\nсистему пізніше\nв системних налаштуваннях."
+  },
+  "lau_dlg_ntwupd3": {
+    "en": "Close the suspended software\nand start the system update?",
+    "ua": "Закрити призупинену\nпрограму й оновити\nсистему?"
+  },
+  "lau_dlg_ntwupd4": {
+    "en": "Close the suspended software\nand start the system update?\n{t:1.0:5500}{t:0.3:3c3c3cff}(Data will be saved.){t:0.3:000000ff}{/t:1.0}",
+    "ua": "Закрити призупинену\nпрограму й оновити\nсистему?\n{t:1.0:5500}{t:0.3:3c3c3cff}(Дані буде збережено.){t:0.3:000000ff}{/t:1.0}"
+  },
+  "lau_dlg_ntwupd5": {
+    "en": "Close the suspended software\nand start the system update?\n{t:1.0:5500}{t:0.3:3c3c3cff}(Unsaved data will be lost.){t:0.3:000000ff}{/t:1.0}",
+    "ua": "Закрити призупинену\nпрограму й оновити\nсистему?\n{t:1.0:5500}{t:0.3:3c3c3cff}(Незбережені дані\nбуде втрачено.){t:0.3:000000ff}{/t:1.0}"
+  },
+  "lau_dlg_ntwupd6": {
+    "en": "Ready to start system update.\nUpdate now?\n{t:1.0:5500}{t:0.3:3c3c3cff}(You must update the system\nbefore this software or update\ndata download can complete.){t:0.3:000000ff}{/t:1.0}",
+    "ua": "Усе готово для оновлення\nсистеми. Виконати\nоновлення зараз?\n{t:1.0:5500}{t:0.3:3c3c3cff}(Щоб завершити завантажен-\nня програми / даних онов-\nлення, оновіть систему.){t:0.3:000000ff}{/t:1.0}"
+  },
+  "lau_dlg_ntwupd7": {
+    "en": "Ready to start system update.{t:1.0:1400}\n　　　　　　　　　　　　　{/t:1.0}\nThe system must restart\nbefore updating.\nContinue with the update?",
+    "ua": "Усе готово для оновлення\nсистеми.{t:1.0:1400}\n　　　　　　　　　　　　　{/t:1.0}\nПеред оновленням систему\nтреба перезапустити.\nПродовжити оновлення?"
+  },
+  "lau_dlg_ntwupd7_flw": {
+    "en": "Ready to start system update.{t:1.0:1400}\n　　　　　　　　　　　　　{/t:1.0}\nThe system must restart\nbefore updating.\nContinue with the update?",
+    "ua": "Усе готово для оновлення\nсистеми.{t:1.0:1400}\n　　　　　　　　　　　　　{/t:1.0}\nПеред оновленням систему\nтреба перезапустити.\nПродовжити оновлення?"
+  },
+  "lau_dlg_ntwupd8": {
+    "en": "{t:1.0:6100}Miiverse is now available.\nConnect to the internet and\nupdate your system to use\nthis feature.{/t:1.0}",
+    "ua": "Програма Miiverse\nтепер доступна.\nПід'єднатися до Інтернету\nй оновити систему,\nщоб користуватися\nцією програмою?"
+  },
+  "lau_dlg_app_hangup": {
+    "en": "An error has occurred,\nforcing the software to close.{t:1.0:1400}\n　　　　　　　　　　　　　{/t:1.0}\nThe system will now restart.{t:1.0:5500}\n{t:0.3:3c3c3cff}(Unsaved data may be lost.){t:0.3:000000ff}{/t:1.0}",
+    "ua": "Сталася помилка, через\nяку програму буде\nзакрито. Зараз систему\nбуде перезапущено.{t:1.0:5500}\n{t:0.3:3c3c3cff}(Незбережені дані\nможуть бути втрачені.){t:0.3:000000ff}{/t:1.0}"
+  },
+  "lau_dlg_applet_hangup": {
+    "en": "An error has occurred.{t:1.0:1400}\n　　　　　　　　　　　　　{/t:1.0}\nPlease save your data in any\nsoftware currently in use,\nthen restart the system.",
+    "ua": "Сталася помилка.{t:1.0:1400}\n　　　　　　　　　　　　　{/t:1.0}\nЗбережіть дані\nпрограм, які використовуєте,\nпотім перезапустіть\nсистему."
+  },
+  "lau_1b_make_folder": {
+    "en": "Create Folder",
+    "ua": "Створити папку"
+  },
+  "lau_2b_folder_setting": {
+    "en": "Settings",
+    "ua": "Опції"
+  },
+  "lau_2b_folder_open": {
+    "en": "Open",
+    "ua": "Відкрити"
+  },
+  "lau_2b_folder_name": {
+    "en": "%d (New Folder)",
+    "ua": "%%d (нова))"
+  },
+  "lau_2b_folder_noname": {
+    "en": "(No name)",
+    "ua": "((Без назви))"
+  },
+  "lau_dlg_folder_setting": {
+    "en": "Folder Settings",
+    "ua": "Налаштування папки"
+  },
+  "lau_dlg_folder_name": {
+    "en": "Rename",
+    "ua": "Перейменувати"
+  },
+  "lau_dlg_folder_badge": {
+    "en": "",
+    "ua": ""
+  },
+  "lau_dlg_folder_delete": {
+    "en": "Delete",
+    "ua": "Видалити"
+  },
+  "lau_dlg_folder_full": {
+    "en": "You cannot create\nany more folders.",
+    "ua": "Не можна\nстворити нові папки.."
+  },
+  "lau_dlg_folder_delete_01": {
+    "en": "",
+    "ua": ""
+  },
+  "lau_dlg_folder_delete_02": {
+    "en": "Folders containing data\ncannot be deleted.",
+    "ua": "Папки з даними\nвидалити не можна.."
+  },
+  "lau_dlg_folder_delete_03": {
+    "en": "",
+    "ua": ""
+  },
+  "lau_dlg_folder_error": {
+    "en": "This software cannot be\nmoved into a folder.",
+    "ua": "Цю програму не можна\nперемістити в папку.."
+  },
+  "lau_dlg_folder_icon_full": {
+    "en": "No more data can be moved\ninto this folder.",
+    "ua": "Не можна перемістити\nнові дані в цю папку.."
+  },
+  "lau_dlg_menu_icon_full": {
+    "en": "The limit for items that can be\ndisplayed on the HOME Menu\nhas been reached.\n\nNo more data can be added\nto the HOME Menu.",
+    "ua": "Досягнуто максимальної\nкількості елементів,\nякі можна показати\nв меню HOME.\nНе можна додати нові\nелементи до меню HOME."
+  },
+  "create_bu": {
+    "en": "Save Data Backup",
+    "ua": "{t:1.1:5700}Копіювання збережених даних{/t:1.1}"
+  },
+  "dat_dlg_bu_nosav": {
+    "en": "There is no save data that can\nbe backed up.",
+    "ua": "Немає збережених даних, для\nяких можна створити\nрезервну копію."
+  },
+  "dat_dlg_bu_unsup": {
+    "en": "",
+    "ua": ""
+  },
+  "dat_bu_sub0": {
+    "en": "Select a save location.",
+    "ua": "Виберіть місце збереження.."
+  },
+  "dat_no_backup": {
+    "en": "There is no backup data.",
+    "ua": "Немає резервної копії.."
+  },
+  "dat_dlg_bu_crng": {
+    "en": "Failed to create backup data\nmanagement information.",
+    "ua": "Не вдалося створити дані\nкерування резервними\nкопіями.."
+  },
+  "base_2b_newmake": {
+    "en": "Create",
+    "ua": "Створити"
+  },
+  "base_2b_cancel": {
+    "en": "Back",
+    "ua": "Назад"
+  },
+  "dat_dlg_bu_brkn": {
+    "en": "The backup data management\ninformation is corrupted.\nWould you like to create the\ninformation again?\n{t:1.0:5500}Backup data titles may not be\ndisplayed properly afterwards.{/t:1.0}",
+    "ua": "Дані керування резерв-\nними копіями пошкоджено.\nСтворити дані ще раз?\n{t:1.0:5a00}Можливо, після цього\nназви резервних копій\nбуде показано неправильно.{/t:1.0}"
+  },
+  "dat_bu_notitle": {
+    "en": "Could not display",
+    "ua": "Не вдалося показати"
+  },
+  "dat_dlg_bu_mkext": {
+    "en": "Creating save data backup\nmanagement information...\nDo not remove the SD Card\nor turn off the power.",
+    "ua": "Триває створення даних керу-\nвання резервними копіями…\nНе вимикайте систему\nі не виймайте карту SD."
+  },
+  "dat_dlg_bu_mkext_sac": {
+    "en": "Creating save data backup\nmanagement information...\n{t:1.0:5a00}Do not remove the microSD card\nor turn off the power.{/t:1.0}",
+    "ua": "Триває створення даних керу-\nвання резервними копіями…\n{t:1.0:5a00}Не вимикайте систему і не\nвиймайте карту microSD.{/t:1.0}"
+  },
+  "dat_dlg_bu_mkext_jan": {
+    "en": "Creating save data backup\nmanagement information...\n{t:1.0:5a00}Do not remove the microSD card\nor turn off the power.{/t:1.0}",
+    "ua": "Триває створення даних керу-\nвання резервними копіями…\n{t:1.0:5a00}Не вимикайте систему і не\nвиймайте карту microSD.{/t:1.0}"
+  },
+  "dat_dlg_bu_init": {
+    "en": "",
+    "ua": ""
+  },
+  "dat_dlg_bu_iniok": {
+    "en": "",
+    "ua": ""
+  },
+  "dat_dlg_bu_ining": {
+    "en": "",
+    "ua": ""
+  },
+  "dat_dlg_sd_full": {
+    "en": "There is not enough free\nspace on this SD Card.",
+    "ua": "На цій карті SD\nнедостатньо\nвільного місця.."
+  },
+  "dat_dlg_sd_full_sac": {
+    "en": "There is not enough free\nspace on this microSD card.",
+    "ua": "На цій карті microSD\nнедостатньо\nвільного місця.."
+  },
+  "dat_dlg_sd_full_jan": {
+    "en": "There is not enough free\nspace on this microSD card.",
+    "ua": "На цій карті microSD\nнедостатньо\nвільного місця.."
+  },
+  "dat_dlg_bu_cr0": {
+    "en": "The saved backup data\nwill be overwritten.\n\nIs this OK?",
+    "ua": "Збережену резервну\nкопію буде замінено.\n\nПродовжити??"
+  },
+  "dat_dlg_bu_cr1": {
+    "en": "Saving data...\n\nDo not remove the SD Card\nor turn off the power.",
+    "ua": "Триває збереження даних…\n\nНе вимикайте систему\nі не виймайте карту SD."
+  },
+  "dat_dlg_bu_cr1_sac": {
+    "en": "Saving data...\n\nDo not remove the microSD\ncard or turn off the power.",
+    "ua": "Триває збереження даних…\nНе вимикайте систему\nі не виймайте карту\nmicroSD."
+  },
+  "dat_dlg_bu_cr1_jan": {
+    "en": "Saving data...\n\nDo not remove the microSD\ncard or turn off the power.",
+    "ua": "Триває збереження даних…\nНе вимикайте систему\nі не виймайте карту\nmicroSD."
+  },
+  "dat_dlg_bu_cr2": {
+    "en": "Saved.\n\nSaved backup data can be\nrestored or deleted via\nData Management in the\nSystem Settings.",
+    "ua": "Збереження завершено.\nЗбережені дані з\nрезервної копії можна\nвідновити або видалити\nв Керування завантаженням\nу системних налаштуваннях."
+  },
+  "dat_dlg_bu_crerr": {
+    "en": "Data could not be saved.",
+    "ua": "Не вдалося зберегти\nдані.."
+  },
+  "dat_dlg_bu_re1": {
+    "en": "Restoring backup data...\nDo not remove the SD Card\nor turn off the power.",
+    "ua": "Триває відновлення\nданих…\nНе вимикайте систему\nі не виймайте карту SD."
+  },
+  "dat_dlg_bu_re1_sac": {
+    "en": "Restoring backup data...\nDo not remove the microSD\ncard or turn off the power.",
+    "ua": "Триває відновлення\nданих…\nНе вимикайте систему і не\nвиймайте карту microSD."
+  },
+  "dat_dlg_bu_re1_jan": {
+    "en": "Restoring backup data...\nDo not remove the microSD\ncard or turn off the power.",
+    "ua": "Триває відновлення\nданих…\nНе вимикайте систему і не\nвиймайте карту microSD."
+  },
+  "dat_dlg_bu_re2": {
+    "en": "The save data has been\nrestored from the backup.",
+    "ua": "Відновлення збережених\nданих з резервної копії\nзавершено."
+  },
+  "dat_dlg_bu_re3": {
+    "en": "The save data has been\nrestored from the backup.\n\n{t:1.0:5500}The restored backup data\nhas been deleted.{/t:1.0}",
+    "ua": "Відновлення збережених\nданих з резервної копії\nзавершено.\n\n{t:1.0:5500}Відновлені дані\nрезервної копії видалено.{/t:1.0}"
+  },
+  "dat_dlg_bu_reerr": {
+    "en": "The save data could not be\nrestored from the backup.",
+    "ua": "Не вдалося відновити\nзбережені дані\nз резервної копії."
+  },
+  "lau_dlg_mvs_f_u_01": {
+    "en": "",
+    "ua": ""
+  },
+  "lau_dlg_mvs_f_t_01": {
+    "en": "You can now share your game\nexperiences with people from\naround the world via Miiverse!\nTouch the top right icon to begin.",
+    "ua": "Тепер ви можете поділитися\nвраженнями від ігор з грав-\nцями з усього світу в Miiverse!\nТоркніться значка у верхньому\nправому куті, щоб почати."
+  },
+  "lau_dlg_mvs_f_u_02": {
+    "en": "",
+    "ua": ""
+  },
+  "lau_dlg_mvs_f_u_02_flw": {
+    "en": "",
+    "ua": ""
+  },
+  "lau_dlg_mvs_f_t_02": {
+    "en": "Connect to the internet and touch\nthe top right icon to share game\nexperiences with people from\naround the world via Miiverse!",
+    "ua": "Під'єднайтеся до Інтернету\nй торкніться значка у верхньому\nправому куті, щоб поділитися\nвраженнями від ігор з грав-\nцями з усього світу в Miiverse!"
+  },
+  "lau_dlg_mvs_pare": {
+    "en": "",
+    "ua": ""
+  },
+  "lau_dlg_no_mvs1": {
+    "en": "You cannot launch Miiverse\nat the same time as the\ncurrently suspended software.",
+    "ua": "Miiverse не можна\nзапустити, якщо в цей час\nпризупинено програму."
+  },
+  "lau_dlg_welc_theme_title": {
+    "en": "The Theme Shop is now open!",
+    "ua": "Відкрився магазин тем!!"
+  },
+  "lau_dlg_welc_theme_0": {
+    "en": "Changing the theme lets you\ncustomise your HOME Menu\nwith various designs and sounds.",
+    "ua": "Змінивши тему, ви можете оздобити\nменю HOME різними варіантами\nоформлення\nта звуками."
+  },
+  "lau_dlg_welc_theme_1": {
+    "en": "You can visit the shop by touching\nHOME Menu Settings in the\nupper left of the screen to change\nthemes.",
+    "ua": "Торкніться Налаштування HOME\nу верхньому лівому куті екрана, щоб\nперейти до магазину й змінити тему."
+  },
+  "lau_dlg_welc_theme_2": {
+    "en": "Decorate your HOME Menu\nby choosing different themes.",
+    "ua": "Оздоблюйте ваше\nменю HOME, вибираючи\nрізні теми.."
+  },
+  "lau_dlg_welc_theme_3": {
+    "en": "Try and discover your\nfavourite theme!",
+    "ua": "Виберіть вашу\nулюблену тему!!"
+  },
+  "lau_dlg_welc_theme_title_2": {
+    "en": "New theme feature added!",
+    "ua": "Додано нову функцію тем!!"
+  },
+  "lau_dlg_welc_theme_4": {
+    "en": "A \"Shuffle Favourites\" feature has\nbeen added for HOME Menu themes.",
+    "ua": "Для тем у меню HOME\nдодано функцію\nТеми у випадковому порядку."
+  },
+  "lau_dlg_welc_theme_5": {
+    "en": "Just add your favourite themes to a\nlist and the system will automatically\nshuffle through them. Useful if you\nhave trouble choosing which of your\nthemes you want to display!",
+    "ua": "Додайте улюблені теми до списку,\nі система показуватиме їх\nавтоматично у випадковому порядку.\nЦе зручно, якщо вам важко\nвибрати тему для показу."
+  },
+  "lau_dlg_welc_mhm_title_0": {
+    "en": "{t:1.0:5f00}HOME Menu layout feature added!{/t:1.0}",
+    "ua": "{t:1.0:5500}Додано функцію виглядів меню HOME!{/t:1.0}"
+  },
+  "lau_dlg_welc_mhm_0": {
+    "en": "You can save layouts for themes\nand icons, and swap between them.",
+    "ua": "Ви можете зберігати вигляди\nз різними темами й значками,\nа також переключатися між ними."
+  },
+  "lau_dlg_welc_mhm_1": {
+    "en": "Have fun creating custom HOME\nMenu layouts that suit you!",
+    "ua": "Створюйте власні\nвигляди меню HOME на свій смак!!"
+  },
+  "lau_dlg_1b_welc_next": {
+    "en": "Next",
+    "ua": "Далі"
+  },
+  "lau_news_ppu_title_sin": {
+    "en": "New notification received!",
+    "ua": "Отримано нове повідомлення!!"
+  },
+  "lau_news_ppu_title_plu": {
+    "en": "New notifications received!",
+    "ua": "Отримано нові повідомлення!!"
+  },
+  "lau_news_ppu_title_plu_over": {
+    "en": "",
+    "ua": ""
+  },
+  "lau_news_ppu_other_sin": {
+    "en": "+%d more",
+    "ua": "+ + ще %d"
+  },
+  "lau_news_ppu_other_plu": {
+    "en": "+%d more",
+    "ua": "+ + ще %d"
+  },
+  "lau_2b_start_news": {
+    "en": "Notifications",
+    "ua": "Повідомлення"
+  },
+  "lau_2b_start_app": {
+    "en": "Launch software",
+    "ua": "Запустити програму"
+  },
+  "lau_2b_start_theme_shop": {
+    "en": "Theme Shop",
+    "ua": "Магазин тем"
+  },
+  "lau_2b_close": {
+    "en": "Close",
+    "ua": "Закрити"
+  },
+  "lau_dlg_pre_menu_wait": {
+    "en": "Opening the HOME Menu...\nDo not turn off the power.",
+    "ua": "Відкривається меню HOME…\nНе вимикайте живлення.."
+  },
+  "manual_sample0": {
+    "en": "Software Title 1",
+    "ua": "Назва гри 1"
+  },
+  "manual_sample1": {
+    "en": "Software Title 2",
+    "ua": "Назва гри 2"
+  },
+  "manual_sample2": {
+    "en": "Software Title 3",
+    "ua": "Назва гри 3"
+  },
+  "manual_sample3": {
+    "en": "Software Title 4",
+    "ua": "Назва гри 4"
+  },
+  "manual_sample4": {
+    "en": "Software Title 5",
+    "ua": "Назва гри 5"
+  },
+  "manual_sample5": {
+    "en": "Colin",
+    "ua": "Оля"
+  },
+  "manual_sample6": {
+    "en": "Rebecca",
+    "ua": "Тарас"
+  },
+  "manual_sample7": {
+    "en": "Patrick",
+    "ua": "Сашко"
+  },
+  "manual_sample8": {
+    "en": "Sarah",
+    "ua": "Маша"
+  },
+  "manual_sample9": {
+    "en": "Let's play!",
+    "ua": "Давай зіграємо!!"
+  },
+  "manual_sample10": {
+    "en": "Look, everybody!",
+    "ua": "Усі готові??"
+  },
+  "manual_sample11": {
+    "en": "Hello!",
+    "ua": "Привіт!!"
+  },
+  "manual_sample12": {
+    "en": "Daniel",
+    "ua": "Петро"
+  },
+  "manual_sample13": {
+    "en": "",
+    "ua": ""
+  },
+  "manual_sample14": {
+    "en": "",
+    "ua": ""
+  },
+  "manual_sample15": {
+    "en": "Software Title 1",
+    "ua": "Назва гри 1"
+  },
+  "manual_sample16": {
+    "en": "You can now get online rankings\nfor the new stages! Go for gold!\n\nThe next stages will be \ndistributed in June.",
+    "ua": "Тепер ти можеш отримати\nонлайн-рейтинг за нові\nрівні! Стань першим!\n\nНові рівні будуть доступні\nу червні."
+  },
+  "manual_sample17": {
+    "en": "Access Point 1",
+    "ua": "Точка доступу 1"
+  },
+  "manual_sample18": {
+    "en": "Access Point 2",
+    "ua": "Точка доступу 2"
+  },
+  "manual_sample19": {
+    "en": "Access Point 3",
+    "ua": "Точка доступу 3"
+  },
+  "manual_sample20": {
+    "en": "",
+    "ua": ""
+  },
+  "new_tips0_title": {
+    "en": "About Notifications",
+    "ua": "Про повідомлення"
+  },
+  "new_tips0": {
+    "en": "Hello, and welcome to\nNotifications.\n\nHere, you'll receive notifications\nfrom various sources, such as:\n\n■ Games\n■ Nintendo\n■ StreetPass exchanges\n\nNew notifications are indicated by\nthe notification LED on the system\nturning blue (or green for\nStreetPass).\n\nAlso, an update mark will appear\non the software icon on the lower\nscreen of the HOME Menu when\na new notification arrives (see\nimage above).\n\nBe sure to come back here often\nto check your notifications!\n\nNintendo",
+    "ua": "Вітаємо! Ласкаво просимо\nдо розділу Повідомлення.\n\nТут ви можете отримувати\nповідомлення з таких\nджерел (і не тільки):\n\n• Ігри\n• Nintendo\n• StreetPass\n\nКоли ви отримаєте нове\nповідомлення, засвітиться\nсиній індикатор повідомлення (або\nзелений для режиму StreetPass).\n\nКрім цього, на нижньому екрані\nменю HOME на значку програми\nз'явиться позначка оновлення\n(див. мал. вище).\n\nЗаходьте сюди частіше і\nдивіться ваші повідомлення!\n\nNintendo"
+  },
+  "new_tips1_title": {
+    "en": "Using SD Cards",
+    "ua": "Про карти SD"
+  },
+  "new_tips1_title_sac": {
+    "en": "Using microSD Cards",
+    "ua": "Карти microSD"
+  },
+  "new_tips1_title_jan": {
+    "en": "Using microSD Cards",
+    "ua": "Карти microSD"
+  },
+  "new_tips1": {
+    "en": "The Nintendo 3DS system allows\nyou to store software titles, save\ndata and photo and audio data\non SD Cards.\n\nBefore removing or inserting an\nSD Card, please ensure that the\npower has been turned off first.\n\nAttempting to remove or insert\nan SD Card while the power is on\ncould result in data becoming\ncorrupted.\n\nNintendo",
+    "ua": "Система Nintendo 3DS дозволяє\nвам зберігати на картах SD ігри,\nзбережені дані ігор, а також\nфото- й аудіодані.\n\nПеред тим як вийняти або\nвставити карту SD, переконайтеся,\nщо система вимкнена.\n\nСпроба вийняти або вставити\nкарту SD, коли система\nувімкнена, може призвести\nдо пошкодження даних.\n\nNintendo"
+  },
+  "new_tips1_sac": {
+    "en": "This system allows you to store\nsoftware titles, save data, and\nphoto and audio data on\nmicroSD cards.\n\nBefore removing or inserting a\nmicroSD card, please ensure that\nthe power has been turned off first.\n\nAttempting to remove or insert\na microSD card while the power is\non could result in data becoming\ncorrupted.\n\nNote: The microSD card is already\ninserted in the microSD card slot\nwhen the system is purchased.\n\nNintendo",
+    "ua": "Ця система дозволяє вам\nзберігати на картах microSD\nпрограми, збережені дані,\nа також фото- й аудіодані.\n\nПеред тим як вийняти або\nвставити карту microSD,\nпереконайтеся, що система\nвимкнена.\n\nСпроба вийняти або вставити\nкарту microSD, коли система\nувімкнена, може призвести\nдо пошкодження даних.\n\nПримітка. При купівлі\nсистеми карта microSD уже\nвставлена в слот для карт\nmicroSD.\n\nNintendo"
+  },
+  "new_tips1_jan": {
+    "en": "This system allows you to store\nsoftware titles, save data, and\nphoto and audio data on\nmicroSD cards.\n\nBefore removing or inserting a\nmicroSD card, please ensure that\nthe power has been turned off first.\n\nAttempting to remove or insert\na microSD card while the power is\non could result in data becoming\ncorrupted.\n\nNote: The microSD card is already\ninserted in the microSD card slot\nwhen the system is purchased.\n\nNintendo",
+    "ua": "Ця система дозволяє вам\nзберігати на картах microSD\nпрограми, збережені дані,\nа також фото- й аудіодані.\n\nПеред тим як вийняти або\nвставити карту microSD,\nпереконайтеся, що система\nвимкнена.\n\nСпроба вийняти або вставити\nкарту microSD, коли система\nувімкнена, може призвести\nдо пошкодження даних.\n\nПримітка. При купівлі\nсистеми карта microSD уже\nвставлена в слот для карт\nmicroSD.\n\nNintendo"
+  },
+  "new_tips1_flw": {
+    "en": "The Nintendo 2DS system allows\nyou to store software titles, save\ndata and photo and audio data\non SD Cards.\n\nBefore removing or inserting an\nSD Card, please ensure that the\npower has been turned off first.\n\nAttempting to remove or insert\nan SD Card while the power is on\ncould result in data becoming\ncorrupted.\n\nNintendo",
+    "ua": "Система Nintendo 2DS дозволяє\nвам зберігати на картах SD ігри,\nзбережені дані ігор, а також\nфото- й аудіодані.\n\nПеред тим як вийняти або\nвставити карту SD, переконайтеся,\nщо система вимкнена.\n\nСпроба вийняти або вставити\nкарту SD, коли система\nувімкнена, може призвести\nдо пошкодження даних.\n\nNintendo"
+  },
+  "new_tips2_title": {
+    "en": "Sleep Mode",
+    "ua": "Режим сну"
+  },
+  "new_tips2": {
+    "en": "Close your system while\nthe power is on and it will\nenter Sleep Mode.\n\nIn Sleep Mode, the following\nfunctions are active:\n\n■ Counting steps\n■ Using StreetPass with\nNintendo 3DS software\n■ Receiving various kinds of data\nvia SpotPass\n\nYou can use Sleep Mode during\ngame play, but please note that\nthere are times where you may not\nbe able to use certain Sleep Mode\nfunctions, such as when playing\nNintendo DS software.\n\nNintendo",
+    "ua": "Якщо ви закриєте увімкнену\nсистему, вона перейде в режим\nсну.\n\nУ режимі сну працюють\nтакі функції:\n• підрахунок кроків;\n• використання режиму\n  StreetPass у програмах\n  Nintendo 3DS;\n• отримання різних типів\n  даних через SpotPass.\n\nВи можете переводити систему\nв режим сну під час\nгри, але зверніть увагу,\nщо деякі функції режиму\nсну можуть при цьому\nне працювати, зокрема це\nтрапляється, якщо запущено\nпрограму Nintendo DS.\n\nNintendo"
+  },
+  "new_tips2_flw": {
+    "en": "Move the sleep switch on your\nNintendo 2DS system to the\nright while the power is on to\nenter Sleep Mode.\n\nIn Sleep Mode, the system will:\n\n■ Count steps\n■ Enter a low-power state in\nwhich StreetPass and SpotPass\ncan be used\n■ Ignore button controls\n\nYou can use Sleep Mode during\ngame play, but please note that\nthere are times where you may not\nbe able to use certain Sleep Mode\nfunctions, such as when playing\nNintendo DS software.\n\nMove the sleep switch back\nto the left in order to continue\nfrom where you left off before\nentering Sleep Mode.\n\nNintendo",
+    "ua": "Посуньте перемикач режиму\nсну праворуч на увімкненій\nсистемі Nintendo 2DS, щоб\nперейти в режим сну.\n\nУ режимі сну система\nвиконуватиме такі\nфункції:\n• підрахунок кроків;\n• перехід у стан\n  зниженого енергоспожи-\n  вання, у якому можна ви-\n  користовувати режим StreetPass\n  і функцію SpotPass;\n• ігнорування керування\n  за допомогою кнопок.\n\nВи можете переводити систему\nв режим сну під час\nгри, але зверніть увагу, що\nдеякі функції режиму\nсну можуть при цьому\nне працювати, зокрема це\nтрапляється, якщо запущено\nпрограму Nintendo DS.\n\nПосуньте перемикач режиму\nсну знову ліворуч, щоб\nпродовжити з того місця,\nна якому ви перейшли в режим\nсну.\n\nNintendo"
+  },
+  "new_tips3_title": {
+    "en": "Pedometer",
+    "ua": "Крокомір"
+  },
+  "new_tips3": {
+    "en": "This system includes\na pedometer function.\n\nIf you close the system while the \npower is on and go for a walk, your\nsteps will be counted.\n\nThe number of steps you've taken\non any given day will be displayed\non the top screen of the\nHOME Menu as \"12121\" (see\nimage above).\n\nYour daily results will be recorded\nin the Activity Log, where they can\nbe viewed at any time.\n\nInclude your system in your\ndaily activities and see how many\nsteps you can reach!\n\nNintendo",
+    "ua": "Ця система має функцію\nкрокоміра.\n\nЯкщо ви закриєте систему, не\nвимикаючи її, і підете на\nпрогулянку, крокомір рахуватиме\nваші кроки.\n\nКількість кроків, пройдених вами\nза день, буде показано на\nверхньому екрані меню HOME\nтак: « 12121»\n(див. мал. вище).\n\nВаші щоденні результати\nбуде занесено до журналу\nдій, де ви можете їх\nподивитися будь-коли.\n\nЗробіть систему частиною\nвашого повсякденного життя\nі подивіться, скільки\nкроків ви зможете пройти!\n\nNintendo"
+  },
+  "new_tips3_flw": {
+    "en": "The Nintendo 2DS includes\na pedometer function.\n\nIf you put the system into\nSleep Mode and go for a walk,\nyour steps will be counted.\n\nThe number of steps you've taken\non any given day will be displayed\non the top screen of the\nHOME Menu as \"12121\" (see\nimage above).\n\nYour daily results will be recorded\nin the Activity Log, where they can\nbe viewed at any time.\n\nInclude your Nintendo 2DS in your\ndaily activities and see how many\nsteps you can reach!\n\nNintendo",
+    "ua": "Nintendo 2DS має функцію\nкрокоміра.\n\nЯкщо ви переведете систему\nв режим сну і підете на\nпрогулянку, крокомір рахуватиме\nваші кроки.\n\nКількість кроків, пройдених вами\nза день, буде показано на\nверхньому екрані меню HOME\nтак: « 12121»\n(див. мал. вище).\n\nВаші щоденні результати\nбуде занесено до журналу\nдій, де ви можете їх\nподивитися будь-коли.\n\nЗробіть Nintendo 2DS частиною\nвашого повсякденного життя\nі подивіться, скільки кроків ви\nзможете пройти!\n\nNintendo"
+  },
+  "new_tips4_title": {
+    "en": "Play Coins",
+    "ua": "Ігрові монетки"
+  },
+  "new_tips4": {
+    "en": "Congratulations, you've earned\nyour first Play Coin!\n\nEvery 100 steps you take with\nyour system will earn you\na Play Coin.\n\nYou can earn a maximum of\n10 Play Coins per day, and up\nto 300 in total.\n\nThe total number of Play Coins\nyou've earned will be displayed\non the top screen of the\nHOME Menu as \"123\" (see\nimage above).\n\nPlay Coins can be exchanged \nfor in-game items and other \nprivileges in StreetPass Mii Plaza, \nAR Games: Augmented Reality \nand other places.\n\nSo what are you waiting for? Start\nearning those coins!\n\nNintendo",
+    "ua": "Вітаємо! Ви отримали\nпершу ігрову монетку!\n\nЗа кожні 100 кроків, які\nви пройдете з вашою системою,\nви отримаєте одну ігрову\nмонетку.\n\nВи можете отримати максимум\n10 ігрових монеток на день\nі всього до 300 монеток.\n\nЗагальну кількість ваших ігрових\nмонеток буде показано на\nверхньому екрані меню HOME\nтак: « 123»\n(див. мал. вище).\n\nІгрові монетки можна обміняти\nна предмети в іграх та інші\nпривілеї на Площі\nStreetPass Mii, у програмі\nAR Games: Розширена\nреальність тощо.\n\nТож чого ви чекаєте?\nУперед, за монетками!\n\nNintendo"
+  },
+  "new_tips4_flw": {
+    "en": "Congratulations, you've earned\nyour first Play Coin!\n\nEvery 100 steps you take with\nyour Nintendo 2DS will earn you\na Play Coin.\n\nYou can earn a maximum of\n10 Play Coins per day, and up\nto 300 in total.\n\nThe total number of Play Coins\nyou've earned will be displayed\non the top screen of the\nHOME Menu as \" 123\" (see\nimage above).\n\nPlay Coins can be exchanged \nfor in-game items and other \nprivileges in StreetPass Mii Plaza, \nAR Games: Augmented Reality \nand other places.\n\nSo what are you waiting for? Start\nearning those coins!\n\nNintendo",
+    "ua": "Вітаємо! Ви отримали\nпершу ігрову монетку!\n\nЗа кожні 100 кроків, які\nви пройдете з Nintendo 2DS, ви\nотримаєте одну ігрову монетку.\n\nВи можете отримати максимум\n10 ігрових монеток на день\nі всього до 300 монеток.\n\nЗагальну кількість ваших ігрових\nмонеток буде показано на\nверхньому екрані меню HOME\nтак: « 123»\n(див. мал. вище).\n\nІгрові монетки можна обміняти\nна предмети в іграх та інші\nпривілеї на Площі\nStreetPass Mii, у програмі\nAR Games: Розширена\nреальність тощо.\n\nТож чого ви чекаєте?\nУперед, за монетками!\n\nNintendo"
+  },
+  "new_tips5_title": {
+    "en": "Using Nintendo DS Software",
+    "ua": "Ігри Nintendo DS"
+  },
+  "new_tips5": {
+    "en": "This information is for players using\nNintendo DS software.\n\nThe following functions will not be\navailable while playing Nintendo DS\nsoftware titles:\n\n■ StreetPass communication for \nNintendo 3DS software titles\n■ The transfer of data via SpotPass\n■ Friend list, Notifications, Game\nNotes and other HOME Menu\nfunctionality\n\nNintendo",
+    "ua": "Ця інформація для гравців,\nякі користуються програмами\nNintendo DS.\n\nЯкщо запущено програму\nNintendo DS, такі\nфункції будуть недоступні:\n\n• зв'язок у режимі\nStreetPass для ігор Nintendo 3DS;\n• передача даних через\nSpotPass;\n• список друзів, повідомлення,\nігрові записи та інші\nфункції меню HOME.\n\nNintendo"
+  },
+  "new_tips5_flw": {
+    "en": "This information is for players using\nNintendo DS software.\n\nThe following functions will not be\navailable while playing Nintendo DS\nsoftware titles:\n\n■ StreetPass communication for \nNintendo 3DS software titles\n■ The transfer of data via SpotPass\n■ Friend list, Notifications, Game\nNotes and other HOME Menu\nfunctionality\n\nNintendo",
+    "ua": "Інформація для тих, хто\nкористується програмами\nNintendo DS.\n\nЯкщо запущено програму\nNintendo DS, такі\nфункції будуть недоступні:\n\n• зв'язок у режимі\nStreetPass для ігор Nintendo 3DS;\n• передача даних через\nSpotPass;\n• список друзів, повідомлення,\nігрові записи та інші\nфункції меню HOME.\n\nNintendo"
+  },
+  "new_tips6_title": {
+    "en": "Touching and Sliding",
+    "ua": "Дотик і проведення"
+  },
+  "new_tips6": {
+    "en": "Touch and slide (see image above)\nhorizontally on the HOME Menu\nto scroll the screen and show\nmore icons.\n\nYou can touch and slide in areas\nother than the HOME Menu too.\nTake a look around and try it out!\n\nNintendo",
+    "ua": "Торкніться й проведіть стилусом\n(див. мал. вище) горизонтально\nпо меню HOME, щоб прокрутити\nекран і побачити інші значки.\n\nКрім меню HOME, ця функція\nдоступна й в інших місцях, тож\nроззирніться і спробуйте!\n\nNintendo"
+  },
+  "new_tips7_title": {
+    "en": "HOME Menu Settings",
+    "ua": "Налаштування меню HOME"
+  },
+  "new_tips7": {
+    "en": "Touch the icon in the upper-left\ncorner of the Touch Screen while\non the HOME Menu to open the\nHOME Menu Settings (see above\nimage).\n\nHere, you can perform the\nfollowing operations:\n\n■ Change HOME Menu themes\n■ Save/load HOME menu layouts\n■ Adjust screen brightness\n■ Toggle the power-saving mode\non and off\n\nPress HOME at any time when\nplaying a Nintendo 3DS software\ntitle to return to the HOME Menu.\n\nHOME Menu Settings also allows\nyou to access the following:\n\n■ Nintendo 3DS Image Share\n■ amiibo Settings\n■ Nintendo eShop\n■ System Settings\n\nThis is a useful function to\nremember.\n\nNintendo",
+    "ua": "Торкніться значка у верхньому\nлівому куті сенсорного дисплея\nв меню HOME, щоб відкрити\nналаштування меню HOME\n(див. мал. вище).\n\nТут ви можете виконати\nтакі дії:\n\n• змінити тему меню HOME;\n• зберегти/завантажити вигляд\nменю HOME;\n• відрегулювати яскравість екрана;\n• увімкнути й вимкнути\nенергоощадний режим.\n\nНатисніть  HOME будь-коли,\nколи запущено програму\nNintendo 3DS, щоб повернутися\nдо меню HOME.\n\nУ налаштуваннях меню HOME\nтакож можна отримати\nдоступ до такого:\n\n• сервіс Обмін зображеннями\n  Nintendo 3DS;\n• налаштування amiibo;\n• Nintendo eShop;\n• системні налаштування.\n\nЦе корисна функція, яку\nварто запам'ятати.\n\nNintendo"
+  },
+  "new_tips7_flw": {
+    "en": "Touch the icon in the upper-left\ncorner of the Touch Screen while\non the HOME Menu to open\nHOME Menu Settings (see above\nimage).\n\nHere, you can perform the\nfollowing operations:\n\n■ Change HOME Menu themes\n■ Save/load HOME Menu layouts\n■ Adjust screen brightness\n■ Toggle wireless communication\n\nPress HOME at any time when\nplaying a Nintendo 3DS software\ntitle to return to the HOME Menu.\n\nHOME Menu Settings also allows\nyou to access the following:\n\n■ Nintendo 3DS Image Share\n■ amiibo Settings\n■ Nintendo eShop\n■ System Settings\n\nThis is a useful function to\nremember.\n\nNintendo",
+    "ua": "Торкніться значка у верхньому\nлівому куті сенсорного дисплея\nв меню HOME, щоб відкрити\nналаштування меню HOME\n(див. мал. вище).\n\nТут ви можете виконати\nтакі дії:\n\n• змінити тему меню HOME;\n• зберегти/завантажити вигляд\nменю HOME;\n• відрегулювати яскравість екрана;\n• увімкнути й вимкнути\nбездротовий режим.\n\nНатисніть  HOME будь-коли,\nколи запущено програму\nNintendo 3DS, щоб повернутися\nдо меню HOME.\n\nУ налаштуваннях меню HOME\nтакож можна отримати\nдоступ до такого:\n\n• сервіс Обмін зображеннями\n  Nintendo 3DS;\n• налаштування amiibo;\n• Nintendo eShop;\n• системні налаштування.\n\nЦе корисна функція, яку\nварто запам'ятати.\n\nNintendo"
+  },
+  "new_tips7_sac": {
+    "en": "Touch HOME Menu Settings in\nthe upper-left corner of the\nTouch Screen while on the\nHOME Menu (see above image)\nto perform the following\noperations:\n\n■ Change the HOME Menu theme\n■ Save/load HOME Menu layouts\n■ Adjust screen brightness\n■ Toggle power-saving mode\n■ Toggle wireless communication\n\nPress HOME at any time when\nplaying a Nintendo 3DS software\ntitle to return to the HOME Menu\nand adjust the brightness.\n\nHOME Menu Settings also allows\nyou to access the following:\n\n■ Nintendo 3DS Image Share\n■ amiibo Settings\n■ Nintendo eShop\n■ The HOME Menu\nelectronic manual\n■ System Settings\n\nThis is a useful function to\nremember.\n\nNintendo",
+    "ua": "Торкніться Налаштування HOME\nу верхньому лівому куті сенсорного\nдисплея в меню HOME\n(див. мал. вище), щоб\nвиконати такі дії:\n\n• змінити тему меню HOME;\n• зберегти/завантажити вигляд\nменю HOME;\n• відрегулювати яскравість екрана;\n• увімкнути й вимкнути\n  енергоощадний режим;\n• увімкнути й вимкнути\n  бездротовий режим.\n\nНатисніть  HOME будь-коли,\nколи запущено програму\nNintendo 3DS, щоб повернутися\nдо меню HOME й відрегулювати\nяскравість.\n\nУ налаштуваннях меню HOME\nтакож можна отримати\nдоступ до такого:\n\n• сервіс Обмін зображеннями\n  Nintendo 3DS;\n• налаштування amiibo;\n• Nintendo eShop;\n• електронний посібник\n  з меню HOME;\n• системні налаштування.\n\nЦе корисна функція, яку\nварто запам'ятати.\n\nNintendo"
+  },
+  "new_tips7_jan": {
+    "en": "Touch HOME Menu Settings in\nthe upper-left corner of the\nTouch Screen while on the\nHOME Menu (see above image)\nto perform the following\noperations:\n\n■ Change the HOME Menu theme\n■ Save/load HOME Menu layouts\n■ Adjust screen brightness\n■ Toggle power-saving mode\n■ Toggle wireless communication\n\nPress HOME at any time when\nplaying a Nintendo 3DS software\ntitle to return to the HOME Menu\nand adjust the brightness.\n\nHOME Menu Settings also allows\nyou to access the following:\n\n■ Nintendo 3DS Image Share\n■ amiibo Settings\n■ Nintendo eShop\n■ The HOME Menu\nelectronic manual\n■ System Settings\n\nThis is a useful function to\nremember.\n\nNintendo",
+    "ua": "Торкніться Налаштування HOME\nу верхньому лівому куті сенсорного\nдисплея в меню HOME\n(див. мал. вище), щоб\nвиконати такі дії:\n\n• змінити тему меню HOME;\n• зберегти/завантажити вигляд\nменю HOME;\n• відрегулювати яскравість екрана;\n• увімкнути й вимкнути\n  енергоощадний режим;\n• увімкнути й вимкнути\n  бездротовий режим.\n\nНатисніть  HOME будь-коли,\nколи запущено програму\nNintendo 3DS, щоб повернутися\nдо меню HOME й відрегулювати\nяскравість.\n\nУ налаштуваннях меню HOME\nтакож можна отримати\nдоступ до такого:\n\n• сервіс Обмін зображеннями\n  Nintendo 3DS;\n• налаштування amiibo;\n• Nintendo eShop;\n• електронний посібник\n  з меню HOME;\n• системні налаштування.\n\nЦе корисна функція, яку\nварто запам'ятати.\n\nNintendo"
+  },
+  "new_tips8_title": {
+    "en": "",
+    "ua": ""
+  },
+  "new_tips8": {
+    "en": "",
+    "ua": ""
+  },
+  "new_tips9_title": {
+    "en": "",
+    "ua": ""
+  },
+  "new_tips9": {
+    "en": "",
+    "ua": ""
+  },
+  "new_tips10_title": {
+    "en": "",
+    "ua": ""
+  },
+  "new_tips10": {
+    "en": "",
+    "ua": ""
+  },
+  "new_tips11_title": {
+    "en": "HOME Menu Functionality",
+    "ua": "Функції меню HOME"
+  },
+  "new_tips11": {
+    "en": "Touch the icons in the upper-right\nof the Touch Screen on the\nHOME Menu to increase or\ndecrease the size of the\nsoftware icons displayed\n(see above image).\n\nChoose a style you like\nto personalise your\nHOME Menu view.\n\nNintendo",
+    "ua": "Торкніться значків у правому\nверхньому куті сенсорного дисплея\nв меню HOME, щоб збільшити\nабо зменшити розмір\nпоказаних значків\nпрограм (див. мал. вище).\n\nВи можете вибрати вигляд, який\nвам подобається, і змінити меню\nHOME на свій розсуд.\n\nNintendo"
+  },
+  "new_tips12_title": {
+    "en": "About the HOME Button",
+    "ua": "Про кнопку HOME"
+  },
+  "new_tips12": {
+    "en": "Press HOME while using\na software title to suspend that\ntitle and return to the HOME Menu.\n\nWhile the software is suspended,\nyou can view related Notifications\nand Game Notes from the\nHOME Menu.\n\nPress HOME once again to return\nto the software title.\n\nMaking use of HOME can\nprove to be quite handy.\n\nNintendo",
+    "ua": "Натисніть HOME під час\nгри, щоб\nпризупинити цю гру\nй повернутися до меню HOME.\n\nКоли гру призупинено,\nви можете дивитися\nпов'язані з нею повідомлення\nй ігрові записи з меню\nHOME.\n\nНатисніть HOME ще раз, щоб\nповернутися до гри.\n\nВикористання HOME може\nбути дуже зручним.\n\nNintendo"
+  },
+  "new_tips13_title": {
+    "en": "New Software via SpotPass",
+    "ua": "Програми через SpotPass"
+  },
+  "new_tips13": {
+    "en": "You can automatically receive\nsoftware on this system\nthrough SpotPass!\n\nPut your system into Sleep Mode\nwhile it can connect to the internet,\nand you might just find new\nsoftware added to the HOME Menu\nwhen you open the system again.\nKeep an eye out for new arrivals!\n\nNote: To receive software, go to\nthe System Settings, then select\nInternet Settings, SpotPass, and\nthen turn Automatic Software\nDownloads on.\n\nNintendo",
+    "ua": "Ви можете автоматично\nотримувати програми на цю\nсистему через SpotPass!\n\nПереведіть вашу систему в режим\nсну (вона має бути\nпід'єднана до Інтернету),\nі можливо, що, коли ви знову\nвідкриєте систему, в меню HOME\nбуде додано нові\nпрограми.\nНе пропустіть їх!\n\nПримітка. Щоб отримувати\nпрограми, перейдіть\nу системні налаштування, виберіть\nІнтернет-налаштування, SpotPass\nі увімкніть автоматичне\nзавантаження програм.\n\nNintendo"
+  },
+  "new_tips13_flw": {
+    "en": "You can automatically receive\nsoftware on your Nintendo 2DS\nsystem through SpotPass!\n\nPut your system into Sleep Mode\nwhile it can connect to the internet,\nand you might just find new\nsoftware added to the HOME Menu\nwhen you exit Sleep Mode. Keep\nan eye out for new arrivals!\n\nNote: To receive software, go to\nthe System Settings, then select\nInternet Settings, SpotPass, and\nthen turn Automatic Software\nDownloads on.\n\nNintendo",
+    "ua": "Ви можете автоматично\nотримувати програми на вашу\nсистему Nintendo 2DS через\nSpotPass!\n\nПереведіть вашу систему в режим\nсну (вона має бути\nпід'єднана до Інтернету),\nі можливо, що, коли ви знову\nвийдете з режиму сну,\nв меню HOME буде додано\nнові програми.\nНе пропустіть їх!\n\nПримітка. Щоб отримувати\nпрограми, перейдіть\nу системні налаштування, виберіть\nІнтернет-налаштування, SpotPass\nі увімкніть автоматичне\nзавантаження програм.\n\nNintendo"
+  },
+  "new_tips14_title": {
+    "en": "",
+    "ua": ""
+  },
+  "new_tips14": {
+    "en": "",
+    "ua": ""
+  },
+  "new_tips15_title": {
+    "en": "HOME Menu Screenshots",
+    "ua": "Скриншоти меню HOME"
+  },
+  "new_tips15": {
+    "en": "Screenshots can be posted directly\nfrom the HOME Menu to social\nnetworks.\n\n■ You can post a screenshot as\nfollows:\n\n- Open HOME Menu Settings\nusing the icon in the top left of the\nTouch Screen (see diagram above),\nselect \"Nintendo 3DS Image\nShare\" and follow the on-screen\ninstructions.\n\n- To post images, you'll need\naccess to the internet and login\ndetails for the relevant social\nnetworking site.\n\n- You can view the screenshots\nin Nintendo 3DS Camera using the\n\"View Photos/Videos\" option.\n\nNintendo",
+    "ua": "З меню HOME можна\nпублікувати скриншоти\nв соціальних мережах.\n\n• Скриншот можна опублікувати\nтаким способом.\n- Відкрийте Налаштування меню\nHOME за допомогою значка\nу верхньому лівому куті сенсорного\nдисплея (див. мал. вище),\nвиберіть Обмін зображеннями\nNintendo 3DS і виконуйте\nвказівки на екрані.\n\n- Для публікації зображень\nвам знадобиться з'єднання\nз Інтернетом і дані доступу\nдо соціальної мережі.\n\n- Скриншоти можна побачити\nу програмі Камера\nNintendo 3DS за допомогою опції\nПерегляд фото/відео.\n\nNintendo"
+  },
+  "new_tips16_title": {
+    "en": "You got your first badge!",
+    "ua": "Вітаємо з першим жетоном!!"
+  },
+  "new_tips16": {
+    "en": "With badges, you can further\ncustomise your HOME Menu\nand personalise your system.\n\nYou can open the badge box\nin the following ways:\n\n■ Open HOME Menu Settings\nusing the icon in the top left\nof the Touch Screen (see above)\nand select \"Place Badges\".\n■ Select a badge you have placed\nand touch it or press .\n\nAlso, \"Save/Load Layout\"\n(see above) lets you save multiple\nHOME Menu layouts and swap\nbetween them.\n\nTry decorating the HOME Menu\nhow you like by using different\nbadges and layouts!\n\nNintendo",
+    "ua": "За допомогою жетонів ви можете\nзмінити меню HOME на свій\nсмак і надати вашій системі\nіндивідуального вигляду.\n\nКоробку для жетонів можна\nвідкрити такими способами.\n\n• Відкрийте Налаштування меню\nHOME за допомогою значка\nу верхньому лівому куті сенсорного\nдисплея (див. мал. вище)\nі виберіть Причепити жетони.\n• Виберіть причеплений\nжетон, потім торкніться його або\nнатисніть .\n\nЗа допомогою опції Зберегти/\nзавантажити вигляд (мал. вище)\nви можете також зберігати\nрізні вигляди меню HOME\nі переключатися між ними.\n\nОздоблюйте меню HOME, як\nзабажаєте, використовуючи різні\nвигляди й жетони!\n\nNintendo"
+  }
+}

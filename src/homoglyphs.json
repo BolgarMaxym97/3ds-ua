@@ -1,0 +1,32 @@
+{
+  "_comment": "8 Ukrainian letters are missing from the 3DS system font (verified: assets/font_charset.txt, 7501 code points, Cyrillic is the 66-glyph JIS set). Substitution happens in build.py before the MSBT is assembled. The active variant is chosen by the 'default' key.",
+  "default": "greek",
+  "variants": {
+    "greek": {
+      "_comment": "є/Є -> Greek epsilon: keeps them distinct from 'е', looks foreign but reads unambiguously",
+      "і": "i",
+      "І": "I",
+      "ї": "ï",
+      "Ї": "Ï",
+      "є": "ε",
+      "Є": "Ε",
+      "ґ": "г",
+      "Ґ": "Г"
+    },
+    "cyrillic": {
+      "_comment": "є/Є -> 'е/Е': looks natural but loses Ukrainian orthography (мае, единий)",
+      "і": "i",
+      "І": "I",
+      "ї": "ï",
+      "Ї": "Ï",
+      "є": "е",
+      "Є": "Е",
+      "ґ": "г",
+      "Ґ": "Г"
+    }
+  },
+  "also_missing": {
+    "ʼ": "'",
+    "_comment": "the modifier apostrophe U+02BC is absent, so ASCII U+0027 is used"
+  }
+}
