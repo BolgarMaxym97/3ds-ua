@@ -35,7 +35,7 @@ from dataclasses import dataclass, field
 from pathlib import Path
 
 sys.path.insert(0, str(Path(__file__).parent))
-from build import TITLES, apply_homoglyphs, load_homoglyphs  # noqa: E402
+from build import TITLES, apply_homoglyphs, load_all_langs, load_homoglyphs  # noqa: E402
 from msbt import TOKEN_RE  # noqa: E402
 from msbt import parse as msbt_parse  # noqa: E402
 from store import open_store  # noqa: E402
@@ -161,7 +161,17 @@ def validate(
     total = translated = 0
     problems: list[str] = []
 
+    # _all_langs.json holds plain {label: text} written into every slot, so it is checked
+    # against the same budgets but without the en/ua entry shape.
+    for key, labels in load_all_langs(strings_dir).items():
+        for label, text in labels.items():
+            entry = {"en": "", "ua": text}
+            for problem in check_entry(label, entry, charset, table, widths, budgets.get(label, Budget())):
+                problems.append(f"_all_langs.json: {problem}")
+
     for json_file in sorted(strings_dir.glob("*.json")):
+        if json_file.name.startswith("_"):
+            continue
         entries = json.loads(json_file.read_text(encoding="utf-8"))
         for label, entry in entries.items():
             total += 1

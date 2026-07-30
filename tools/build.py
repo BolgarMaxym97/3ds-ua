@@ -7,6 +7,10 @@ Usage:
 How it works: the original MSBT from work/ is used as a template, texts are replaced
 with the JSON ones (empty `ua` keeps the original), homoglyph substitution is applied,
 the result is LZ11-packed into dist/luma/titles/<TID>/romfs/<same path>.
+
+An optional `_all_langs.json` next to a title's strings holds labels that go into EVERY
+language slot instead of only the replaced one - used so the language picker advertises
+Ukrainian whatever language the console currently runs.
 """
 
 from __future__ import annotations
@@ -90,6 +94,50 @@ def apply_homoglyphs(text: str, table: dict[str, str]) -> str:
     return text.translate(str.maketrans(table))
 
 
+def load_all_langs(strings_dir: Path) -> dict[str, dict[str, str]]:
+    """Labels that must appear in every language slot: {json key: {label: text}}."""
+    path = strings_dir / "_all_langs.json"
+    if not path.exists():
+        return {}
+    data = json.loads(path.read_text(encoding="utf-8"))
+    return {key: value for key, value in data.items() if not key.startswith("_")}
+
+
+def patch_other_langs(
+    store, cfg: dict, overrides: dict[str, dict[str, str]], table: dict[str, str]
+) -> list[str]:
+    """Apply cross-language overrides to every slot except the one build_title handles.
+
+    ContainerStore keeps a single parsed archive, so repeated outputs() calls accumulate
+    into the same file - that is what makes one shared container hold all eight patched
+    slots. The last returned blob therefore carries every language's change.
+    """
+    stats: list[str] = []
+    blobs: dict[str, bytes] = {}
+
+    for lang in store.languages():
+        if lang == cfg["lang"]:
+            continue
+        updates: dict[str, bytes] = {}
+        for key, data in store.read(lang).items():
+            labels = overrides.get(key)
+            if not labels:
+                continue
+            msbt = msbt_mod.parse(data)
+            patched = 0
+            for label, text in labels.items():
+                if label in msbt.labels:
+                    msbt.texts[msbt.labels[label]] = apply_homoglyphs(text, table)
+                    patched += 1
+            if patched:
+                updates[key] = msbt_mod.build(msbt)
+                stats.append(f"{key} [{lang}]: {patched} cross-language labels")
+        if updates:
+            blobs |= store.outputs(lang, updates)
+
+    return stats, blobs
+
+
 def build_title(name: str, table: dict[str, str]) -> list[str]:
     cfg = TITLES[name]
     lang = cfg["lang"]
@@ -97,8 +145,11 @@ def build_title(name: str, table: dict[str, str]) -> list[str]:
     store = open_store(cfg, romfs)
     strings_dir = ROOT / "src" / "strings" / name
 
+    all_langs = load_all_langs(strings_dir)
+    cross_stats, cross_blobs = patch_other_langs(store, cfg, all_langs, table)
+
     updates: dict[str, bytes] = {}
-    stats: list[str] = []
+    stats: list[str] = list(cross_stats)
     for key, data in sorted(store.read(lang).items()):
         json_file = strings_dir / f"{key}.json"
         if not json_file.exists():
@@ -115,11 +166,15 @@ def build_title(name: str, table: dict[str, str]) -> list[str]:
             msbt.texts[index] = apply_homoglyphs(entry["ua"], table)
             translated += 1
 
+        for label, text in all_langs.get(key, {}).items():
+            if label in msbt.labels:
+                msbt.texts[msbt.labels[label]] = apply_homoglyphs(text, table)
+
         updates[key] = msbt_mod.build(msbt)
         stats.append(f"{key}: {translated}/{len(msbt.texts)} translated")
 
     written: list[str] = []
-    for rel_path, blob in store.outputs(lang, updates).items():
+    for rel_path, blob in (cross_blobs | store.outputs(lang, updates)).items():
         for tid in cfg["tids"]:
             dest = ROOT / "dist" / "luma" / "titles" / tid / "romfs" / rel_path
             dest.parent.mkdir(parents=True, exist_ok=True)
