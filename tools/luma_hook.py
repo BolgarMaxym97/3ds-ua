@@ -92,6 +92,29 @@ HOOK_PATCHES: dict[str, dict] = {
         "mount_tail": 0x2F878,      # tail of MountSystemSaveData(), entered with r8 = result
         "globals_off": 0x2F8F0,
     },
+    # Friend List (friend), EUR, title version 6.
+    #
+    # Same shape as the Activity Log - no fsMountArchive, no DirectSdmc - but the stub uses
+    # the Manual's tighter variant, because this title has a mount function whose tail takes
+    # the result in r8 with `out` in sl on a 0x14 frame: MountSystemSaveData() at 0x4F58C,
+    # whose OpenArchive retry loop ends at 0x4F634. All three of this title's mount functions
+    # build the same archive object (vtable 0x201E4C), so any of their tails would do.
+    #
+    # The stub goes over throwFatalError(): the .text padding is 2724 bytes, far more than
+    # the 0x114 Luma needs for its own payload, so Luma takes the padding and leaves this
+    # function alone. No text.size override is needed - throwFatalError() is well inside the
+    # range findLayeredFsSymbols() scans.
+    "0004003000009F02": {
+        "title": "Friend List (friend) EUR",
+        "title_version": 6,
+        "code_sha256": "a5d86ac04922f63feb0c3cfcc8390867f358ba8b3a3970acb211be7b8d9f923e",
+        "variant": "sl_frame14",
+        "stub_off": 0x78904,     # throwFatalError(), which Luma leaves alone here
+        "stub_room": 284,        # bytes until the next function's `push`
+        "open_archive": 0x6E41C,  # the title's own FSUSER_OpenArchive IPC wrapper
+        "mount_tail": 0x4F634,   # tail of MountSystemSaveData(), entered with r8 = result
+        "globals_off": 0x4F6AC,  # literal holding the nn::fs globals base (+0x10 = fs:USER session)
+    },
     # Download Play (dlplay), EUR, title version 3.
     #
     # A different mechanism entirely - see ROMFS_FROM_SD below. This title cannot issue
@@ -144,6 +167,28 @@ FILE_PATH_SIZE_SLOT = 0x14
 ARCHIVE_SDMC = 9
 PATH_ASCII = 3
 ORIGINAL_SITE_WORD = 0xE3A03003  # mov r3, #3  -> the ARCHIVE_ROMFS each site starts from
+
+
+# GodMode9 names its output after the title and the mounted image, not after what the file
+# is, so a dump legitimately arrives as `0004003000009F02.dec.code` + `extheader.bin` or as
+# `code.bin` + `exthdr.bin`. Every tool resolves both through find_dump().
+CODE_NAMES = ("code.bin", "code.dec.bin", ".code")
+CODE_PATTERNS = ("*.code",)
+EXHEADER_NAMES = ("exheader.bin", "exthdr.bin", "extheader.bin")
+EXHEADER_PATTERNS = ("*.exthdr", "*exth*.bin")
+
+
+def find_dump(title_dir: Path, names: tuple[str, ...], patterns: tuple[str, ...]) -> Path | None:
+    """The first file in `title_dir` matching one of the accepted names, else None."""
+    for name in names:
+        candidate = title_dir / name
+        if candidate.is_file():
+            return candidate
+    for pattern in patterns:
+        matches = sorted(title_dir.glob(pattern))
+        if matches:
+            return matches[0]
+    return None
 
 
 def has_patch(tid: str) -> bool:

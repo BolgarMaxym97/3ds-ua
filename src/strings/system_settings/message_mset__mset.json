@@ -285,7 +285,7 @@
   },
   "initialize": {
     "en": "Format System Memory",
-    "ua": "Форматування пам'яті"
+    "ua": "Формат. пам'яті"
   },
   "dlg_bright": {
     "en": "Screen Brightness",
@@ -1141,7 +1141,7 @@
   },
   "initialize_title": {
     "en": "Format System Memory",
-    "ua": "Форматування пам'яті"
+    "ua": "Формат. пам'яті"
   },
   "initial_comm_u": {
     "en": "Restore the system to its\nfactory default settings.",

@@ -86,6 +86,15 @@ TITLES = {
         "ref_lang": "EU_English",
         "hook_patch": True,
     },
+    # Same shape as the Activity Log: no fsMountArchive in .text and no DirectSdmc, so Luma
+    # cannot hook it on its own - tools/luma_hook.py supplies both from the SD card.
+    "friend_list": {
+        "tids": ["0004003000009F02"],  # friend applet, EUR; JPN 0004003000008D02, USA 0004003000009602
+        "source_tid": "0004003000009F02",
+        "lang": "EU_Russian",
+        "ref_lang": "EU_English",
+        "hook_patch": True,
+    },
     # `container`: the text lives inside an LZ11+darc archive instead of plain folders.
     # `{lang}` in the path means one archive per language.
     "system_settings": {
@@ -199,12 +208,13 @@ def prepare_hook_patch(name: str, tid: str) -> tuple[dict[str, bytes], list[str]
         raise SystemExit(f"{name}: {tid} needs a hook patch but tools/luma_hook.py has no entry for it")
 
     dump = ROOT / "work" / tid
-    code, exheader = dump / "code.bin", dump / "exheader.bin"
-    missing = [p.relative_to(ROOT) for p in (code, exheader) if not p.is_file()]
+    code = luma_hook.find_dump(dump, luma_hook.CODE_NAMES, luma_hook.CODE_PATTERNS)
+    exheader = luma_hook.find_dump(dump, luma_hook.EXHEADER_NAMES, luma_hook.EXHEADER_PATTERNS)
+    missing = [what for what, path in (("code", code), ("exheader", exheader)) if path is None]
     if missing:
         raise SystemExit(
-            f"{name}: cannot build the LayeredFS hook for {tid}, missing "
-            f"{', '.join(str(p) for p in missing)} (see docs/dump-code.md)"
+            f"{name}: cannot build the LayeredFS hook for {tid}, no {' and no '.join(missing)} "
+            f"file in work/{tid}/ (see docs/dump-code.md)"
         )
 
     return luma_hook.generate(tid, code, exheader)

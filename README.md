@@ -53,6 +53,32 @@ SD:/luma/titles/0004001000022000/romfs/message_EU_LZ.bin
 
 Готово.
 
+### Що за папки в `luma/titles/`
+
+Ім'я папки — це Title ID (TID) системного титулу, який вона підміняє. Luma читає її лише тоді, коли запускається саме цей титул, тож зайвих папок у моді немає.
+
+| Папка (TID) | Титул | Що всередині |
+|---|---|---|
+| `0004003000009802` | Меню HOME | `romfs/` — LayeredFS |
+| `0004001000022000` | Налаштування системи | `romfs/` — LayeredFS |
+| `0004001000022700` | Mii Maker | `romfs/` — LayeredFS |
+| `0004001000022200` | Журнал дій | `romfs/` + `code.ips` + `exheader.bin` — LayeredFS з правкою коду |
+| `0004003000009B02` | Посібник | `romfs/` + `code.ips` + `exheader.bin` — LayeredFS з правкою коду |
+| `0004003000009F02` | Список друзів | `romfs/` + `code.ips` + `exheader.bin` — LayeredFS з правкою коду |
+| `0004001000022100` | Гра по завантаженню | `code.ips` + `exheader.bin` + `dlplay_romfs.bin` — без LayeredFS, повний образ romfs з SD |
+| `000400300000D002` | Екранна клавіатура | `code.ips` + `exheader.bin` + `swkbd_romfs.bin` — без LayeredFS, повний образ romfs з SD |
+
+Чому в останніх п'яти є `code.ips` і `exheader.bin` — див. [Що входить у реліз](#що-входить-у-реліз). Коротко: перші три титули Luma хукає сама, решті бракує прав і коду, які додає збірка.
+
+Папки `romfs` немає навмисно у Гри по завантаженню і клавіатури: сама її наявність зупиняє ці титули на екрані помилки.
+
+TID регіонозалежні. У релізі — **EUR**; для інших регіонів у тих самих папок інші імена:
+
+| Титул | EUR | USA | JPN |
+|---|---|---|---|
+| Меню HOME | `0004003000009802` | `0004003000008F02` | `0004003000008202` |
+| Список друзів | `0004003000009F02` | `0004003000009602` | `0004003000008D02` |
+
 ### Видалення
 
 Будь-який зі способів:
@@ -74,7 +100,7 @@ NAND не змінювався, тому видалення нічого не л
 | На клавіатурі `i` замість `і`, `ε` замість `є` | Так і має бути — та сама заміна, що й у решті інтерфейсу: цих літер у системному шрифті немає. Клавіші стоять на українських позиціях (`ы`→`і`, `ъ`→`ї`, `э`→`є`), а на місці `ё` тепер апостроф. |
 | `An exception occurred`, `Current process: loader` | Luma не змогла застосувати LayeredFS до титулу, який ви запускали, і зупинила консоль. Перейменуйте `SD:/luma/titles/<TID>/romfs` цього титулу на `_romfs` і перезавантажте — титул запуститься без перекладу. Напишіть в Issues з фото екрана помилки. |
 | HOME Menu не запускається | Видаліть `SD:/luma/titles/0004003000009802`. Напишіть в Issues, вказавши модель, регіон і версію системи. |
-| Титул крешить після встановлення | Переклади Журналу дій, Посібника, Гри по завантаженню й клавіатури містять правку коду титулу — під версії **2**, **5**, **3** і **4** відповідно (EUR). Ці білди стоять на всіх сучасних прошивках. Якщо у вас старіший, видаліть папку того титулу: `0004001000022200`, `0004003000009B02`, `0004001000022100`, `000400300000D002`. Решта перекладу працюватиме як була. |
+| Титул крешить після встановлення | Переклади Журналу дій, Посібника, Списку друзів, Гри по завантаженню й клавіатури містять правку коду титулу — під версії **2**, **5**, **6**, **3** і **4** відповідно (EUR). Ці білди стоять на всіх сучасних прошивках. Якщо у вас старіший, видаліть папку того титулу: `0004001000022200`, `0004003000009B02`, `0004003000009F02`, `0004001000022100`, `000400300000D002`. Решта перекладу працюватиме як була. |
 | Гра по завантаженню або клавіатура не завантажується | Видаліть `SD:/luma/titles/0004001000022100` чи `SD:/luma/titles/000400300000D002` **цілком**. Вони читають свій romfs з SD-карти, тому `code.ips` без відповідного `*_romfs.bin` їх ламає — видаляти частинами не можна. |
 | Порожні квадрати замість літер | Повідомте в Issues із фото — це баг, такого бути не повинно. |
 
@@ -119,6 +145,7 @@ NAND не змінювався, тому видалення нічого не л
 | Mii Maker | ✅ перекладено |
 | Журнал дій | ✅ перекладено, з правкою коду титулу — потрібна версія титулу 2 (див. нижче) |
 | Посібник | ✅ перекладено, з правкою коду титулу — потрібна версія титулу 5 (див. нижче) |
+| Список друзів | ✅ перекладено, з правкою коду титулу — потрібна версія титулу 6 (див. нижче) |
 | Гра по завантаженню | ✅ перекладено, повною підміною romfs — потрібна версія титулу 3 (див. нижче) |
 | Екранна клавіатура | ✅ перекладено, повною підміною romfs — потрібна версія титулу 4 (див. нижче) |
 
@@ -138,7 +165,7 @@ error:
 
 Luma шукає в коді титулу п'ять функцій FS. Чотири з них є всюди; бракує щоразу однієї — **`fsMountArchive`**, тієї, що монтує архів за його ID. Без неї Luma не має чим підключити папку на SD як архів `lf:`.
 
-Річ не в тому, що функція скомпільована незвично і сигнатура не збіглася. Її **немає взагалі**: в екранній клавіатурі і в грі по завантаженню в усьому коді нема жодного IPC-виклику `FSUSER_OpenArchive`, а в Журналі дій і Посібнику єдиний такий виклик захований усередині монтування extdata чи системного сейву з бінарним шляхом.
+Річ не в тому, що функція скомпільована незвично і сигнатура не збіглася. Її **немає взагалі**: в екранній клавіатурі і в грі по завантаженню в усьому коді нема жодного IPC-виклику `FSUSER_OpenArchive`, а в Журналі дій, Посібнику й Списку друзів єдиний такий виклик захований усередині монтування extdata чи системного сейву з бінарним шляхом.
 
 Корінь — в `exheader`, поле `accessInfo` (зсув 0x248):
 
@@ -150,6 +177,7 @@ Luma шукає в коді титулу п'ять функцій FS. Чотир
 | Журнал дій | `0x0000000000000001` | **нема** |
 | Гра по завантаженню | `0x0000000000000001` | **нема** |
 | Посібник | `0x0000000000000001` | **нема** |
+| Список друзів | `0x0000000000000001` | **нема** |
 
 Титули без права `DirectSdmc` не мають доступу до SD-карти, тому Nintendo просто не залінкувала в них код монтування SD. Працюють ті титули, у яких це право є.
 
@@ -157,12 +185,12 @@ Luma шукає в коді титулу п'ять функцій FS. Чотир
 
 | Титул | `OpenArchive` | `OpenFile` | `CloseArchive` | `OpenFileDirectly` |
 |---|---|---|---|---|
-| Журнал дій, Посібник | ✅ | ✅ | ✅ | ✅ |
+| Журнал дій, Посібник, Список друзів | ✅ | ✅ | ✅ | ✅ |
 | Гра по завантаженню, клавіатура | ❌ | ❌ | ❌ | ✅ |
 
 Двом останнім доступне рівно одне: відкрити файл напряму і читати його. Тому для них потрібен інший підхід.
 
-#### Як полагоджено Журнал дій і Посібник
+#### Як полагоджено Журнал дій, Посібник і Список друзів
 
 Обидві частини можна дати з SD-карти, бо завантажувач Luma виконує їх у такому порядку:
 
@@ -181,12 +209,15 @@ patchLayeredFs(...);                     // тут шукаються ті п'я
 
 Сигнатурні слова, за якими Luma знаходить стаб, лежать за безумовним переходом і ніколи не виконуються; робоча частина складає виклик `FSUSER_OpenArchive` і стрибає в хвіст рідного монтування титулу, який виділяє об'єкт архіву з правильним vtable.
 
-Місце під стаб у двох титулів різне:
+Місце під стаб у кожного титулу своє:
 
 | Титул | Куди лягає стаб |
 |---|---|
 | Журнал дій | поверх `throwFatalError()` — тієї функції, яку Luma сама затирає, коли їй бракує місця під власний payload. Тут місця вистачає, тож Luma її не чіпає. |
 | Посібник | у 88 байт padding'а в кінці `.text`. Тут `throwFatalError()` зайнята: padding менший за payload Luma (0x114), тож Luma забирає її собі. |
+| Список друзів | поверх `throwFatalError()`, як у Журналу: padding `.text` тут 2724 байти, Luma кладе payload туди й `throwFatalError()` не чіпає. |
+
+Стаб буває у двох варіантах — за тим, який регістр і який кадр стека чекає хвіст монтування, у який він стрибає: `r4`/кадр `0x28` (Журнал дій) або `sl`/кадр `0x14` з результатом у `r8` (Посібник, Список друзів). У Списку друзів усі три його функції монтування будують той самий об'єкт архіву (vtable `0x201E4C`), тож хвіст будь-якої з них підійшов би — узято `MountSystemSaveData()`.
 
 У Посібника є додаткова тонкість. `findLayeredFsSymbols()` сканує лише до `text.size`, а це 0xADFA8 — padding лишається за межею. Тому в його `exheader.bin` `text.size` округлено до 0xAE000. Це безкоштовно: завантажувач усюди рахує сторінки як `(size + 4095) >> 12`, і 0xADFA8, і 0xAE000 дають ті самі 174 сторінки — адреси секцій, розкладка `.code` і мапінг лишаються байт-у-байт тими самими.
 
@@ -195,6 +226,7 @@ patchLayeredFs(...);                     // тут шукаються ті п'я
 | Титул | `remaster_version` |
 |---|---|
 | Меню HOME (`menu`) | 29 |
+| **Список друзів (`friend`)** | **6** |
 | **Посібник (`ebird`)** | **5** |
 | **Клавіатура (`swkbd`)** | **4** |
 | **Гра по завантаженню (`dlplay`)** | **3** |
@@ -363,6 +395,32 @@ That is the entry that used to read `Русский`. It is labelled `Украї
 
 Done.
 
+### What each folder under `luma/titles/` is
+
+A folder name is the Title ID (TID) of the system title it overrides. Luma reads it only when that exact title launches, so nothing in the mod is spare.
+
+| Folder (TID) | Title | Contents |
+|---|---|---|
+| `0004003000009802` | HOME Menu | `romfs/` — LayeredFS |
+| `0004001000022000` | System Settings | `romfs/` — LayeredFS |
+| `0004001000022700` | Mii Maker | `romfs/` — LayeredFS |
+| `0004001000022200` | Activity Log | `romfs/` + `code.ips` + `exheader.bin` — LayeredFS plus a code patch |
+| `0004003000009B02` | Instruction Manual | `romfs/` + `code.ips` + `exheader.bin` — LayeredFS plus a code patch |
+| `0004003000009F02` | Friend List | `romfs/` + `code.ips` + `exheader.bin` — LayeredFS plus a code patch |
+| `0004001000022100` | Download Play | `code.ips` + `exheader.bin` + `dlplay_romfs.bin` — no LayeredFS, whole RomFS image off the SD card |
+| `000400300000D002` | Software Keyboard | `code.ips` + `exheader.bin` + `swkbd_romfs.bin` — no LayeredFS, whole RomFS image off the SD card |
+
+Why the last five carry `code.ips` and `exheader.bin`: see [What is in the release](#what-is-in-the-release). In short, Luma hooks the first three by itself; the rest lack the rights and the code the build supplies.
+
+Download Play and the Software Keyboard ship no `romfs` folder on purpose — its mere presence halts those titles on an exception screen.
+
+TIDs are region-specific. The release targets **EUR**; on other regions the same folders have different names:
+
+| Title | EUR | USA | JPN |
+|---|---|---|---|
+| HOME Menu | `0004003000009802` | `0004003000008F02` | `0004003000008202` |
+| Friend List | `0004003000009F02` | `0004003000009602` | `0004003000008D02` |
+
 ### Uninstalling
 
 Any of these:
@@ -384,7 +442,7 @@ NAND was never touched, so removal cannot break anything.
 | The keyboard shows `i` for `і`, `ε` for `є` | By design — the same substitution as everywhere else in the mod: those letters are not in the system font. The keys sit in their Ukrainian positions (`ы`→`і`, `ъ`→`ї`, `э`→`є`), and `ё` now carries the apostrophe. |
 | `An exception occurred`, `Current process: loader` | Luma could not apply LayeredFS to the title you launched and halted the console. Rename that title's `SD:/luma/titles/<TID>/romfs` to `_romfs` and reboot — the title then starts untranslated. Please open an Issue with a photo of the error screen. |
 | HOME Menu won't boot | Delete `SD:/luma/titles/0004003000009802` and open an Issue with your model, region and system version. |
-| A title crashes after installing | The Activity Log, Instruction Manual, Download Play and Software Keyboard translations carry a code patch — for versions **2**, **5**, **3** and **4** respectively (EUR). Those builds are on every modern firmware. If yours is older, delete that title's folder: `0004001000022200`, `0004003000009B02`, `0004001000022100`, `000400300000D002`. The rest of the mod keeps working. |
+| A title crashes after installing | The Activity Log, Instruction Manual, Friend List, Download Play and Software Keyboard translations carry a code patch — for versions **2**, **5**, **6**, **3** and **4** respectively (EUR). Those builds are on every modern firmware. If yours is older, delete that title's folder: `0004001000022200`, `0004003000009B02`, `0004003000009F02`, `0004001000022100`, `000400300000D002`. The rest of the mod keeps working. |
 | Download Play or the Software Keyboard will not load | Delete `SD:/luma/titles/0004001000022100` or `SD:/luma/titles/000400300000D002` **as a whole**. They read their RomFS off the SD card, so `code.ips` without the matching `*_romfs.bin` breaks them — they cannot be removed piecemeal. |
 | Empty boxes instead of letters | Please report with a photo — that's a bug. |
 
@@ -427,6 +485,7 @@ same entry that switches the keyboard to Cyrillic.
 | Mii Maker | ✅ translated |
 | Activity Log | ✅ translated, with a code patch — needs title version 2 (see below) |
 | Instruction Manual | ✅ translated, with a code patch — needs title version 5 (see below) |
+| Friend List | ✅ translated, with a code patch — needs title version 6 (see below) |
 | Download Play | ✅ translated, by replacing its whole RomFS — needs title version 3 (see below) |
 | Software Keyboard | ✅ translated, by replacing its whole RomFS — needs title version 4 (see below) |
 
@@ -455,9 +514,9 @@ attach the SD folder as the `lf:` archive.
 
 It is not that the function was compiled in an unusual way and the signature missed it. The
 function is **not there at all**: the Software Keyboard and Download Play contain no
-`FSUSER_OpenArchive` IPC call anywhere in their code, and in the Activity Log and the
-Instruction Manual the only one is buried inside an extdata or system-savedata mount that
-takes a binary path.
+`FSUSER_OpenArchive` IPC call anywhere in their code, and in the Activity Log, the
+Instruction Manual and the Friend List the only one is buried inside an extdata or
+system-savedata mount that takes a binary path.
 
 The root cause is in the exheader, `accessInfo` at offset 0x248:
 
@@ -469,6 +528,7 @@ The root cause is in the exheader, `accessInfo` at offset 0x248:
 | Activity Log | `0x0000000000000001` | **no** |
 | Download Play | `0x0000000000000001` | **no** |
 | Instruction Manual | `0x0000000000000001` | **no** |
+| Friend List | `0x0000000000000001` | **no** |
 
 Titles without `DirectSdmc` have no access to the SD card, so Nintendo never linked any
 SD-mounting code into them. The titles that work are the ones that hold that right.
@@ -477,13 +537,13 @@ How far that pruning went shows in the set of IPC commands each title can even i
 
 | Title | `OpenArchive` | `OpenFile` | `CloseArchive` | `OpenFileDirectly` |
 |---|---|---|---|---|
-| Activity Log, Instruction Manual | ✅ | ✅ | ✅ | ✅ |
+| Activity Log, Instruction Manual, Friend List | ✅ | ✅ | ✅ | ✅ |
 | Download Play, Software Keyboard | ❌ | ❌ | ❌ | ✅ |
 
 The last two can do exactly one thing: open a file directly and read it. They need a
 different approach.
 
-#### How the Activity Log and the Instruction Manual were fixed
+#### How the Activity Log, the Instruction Manual and the Friend List were fixed
 
 Both halves can be supplied from the SD card, because Luma's loader runs them in this order:
 
@@ -505,12 +565,19 @@ The signature words Luma finds the stub by sit behind an unconditional branch an
 execute; the working part assembles the `FSUSER_OpenArchive` call and jumps into the tail of
 the title's own mount routine, which allocates the archive object with the right vtable.
 
-Where the stub goes differs between the two:
+Where the stub goes differs per title:
 
 | Title | Where the stub lands |
 |---|---|
 | Activity Log | over `throwFatalError()` — the function Luma itself overwrites when it is short of room for its own payload. Here there is room, so Luma leaves it alone. |
 | Instruction Manual | in the 88 bytes of padding at the end of `.text`. Here `throwFatalError()` is taken: the padding is smaller than Luma's payload (0x114), so Luma claims the function for itself. |
+| Friend List | over `throwFatalError()`, as in the Activity Log: the `.text` padding is 2724 bytes, so Luma puts its payload there and leaves the function alone. |
+
+The stub comes in two variants, chosen by the register and stack frame the mount tail it
+jumps into expects: `r4` on a 0x28 frame (Activity Log), or `sl` on a 0x14 frame with the
+result in `r8` (Instruction Manual, Friend List). All three of the Friend List's mount
+functions build the same archive object (vtable `0x201E4C`), so any of their tails would
+have done — `MountSystemSaveData()` is the one used.
 
 The Instruction Manual needs one more thing. `findLayeredFsSymbols()` only scans up to
 `text.size`, which is 0xADFA8 and stops short of the padding, so its shipped `exheader.bin`
@@ -525,6 +592,7 @@ updated the title:
 | Title | `remaster_version` |
 |---|---|
 | HOME Menu (`menu`) | 29 |
+| **Friend List (`friend`)** | **6** |
 | **Instruction Manual (`ebird`)** | **5** |
 | **Software Keyboard (`swkbd`)** | **4** |
 | **Download Play (`dlplay`)** | **3** |

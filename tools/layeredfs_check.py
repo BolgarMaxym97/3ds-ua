@@ -199,22 +199,12 @@ def _find_throw_fatal_error(code: bytes, size: int) -> bool:
     return False
 
 
-def find_input(title_dir: Path, names: tuple[str, ...], patterns: tuple[str, ...]) -> Path | None:
-    for name in names:
-        candidate = title_dir / name
-        if candidate.is_file():
-            return candidate
-    for pattern in patterns:
-        matches = sorted(title_dir.glob(pattern))
-        if matches:
-            return matches[0]
-    return None
-
-
 def check(title_dir: Path) -> bool | None:
     """True/False for a verdict, None when there is no dump to judge - not the same thing."""
-    code_path = find_input(title_dir, ("code.bin", "code.dec.bin", ".code"), ("*.code",))
-    exheader_path = find_input(title_dir, ("exheader.bin", "exthdr.bin"), ("*.exthdr",))
+    code_path = luma_hook.find_dump(title_dir, luma_hook.CODE_NAMES, luma_hook.CODE_PATTERNS)
+    exheader_path = luma_hook.find_dump(
+        title_dir, luma_hook.EXHEADER_NAMES, luma_hook.EXHEADER_PATTERNS
+    )
     if code_path is None or exheader_path is None:
         missing = "code" if code_path is None else "exheader"
         print(f"{title_dir.name}: no {missing} file found, skipped (see docs/dump-code.md)")

@@ -1,0 +1,550 @@
+{
+  "fri_dlg_1b_ok": {
+    "en": " OK",
+    "ua": " OK"
+  },
+  "fri_dlg_2b_cance": {
+    "en": " Cancel",
+    "ua": " Скасувати"
+  },
+  "fri_dlg_2b_ok": {
+    "en": " OK",
+    "ua": " OK"
+  },
+  "fri_dlg_2b_back": {
+    "en": " Back",
+    "ua": " Назад"
+  },
+  "keyboard_cancel": {
+    "en": "Cancel",
+    "ua": "Скасувати"
+  },
+  "keyboard_decide": {
+    "en": "OK",
+    "ua": "OK"
+  },
+  "fri_title_fri": {
+    "en": "Friend List",
+    "ua": "Список друзів"
+  },
+  "fri_title_menu": {
+    "en": "HOME Menu",
+    "ua": "Меню HOME"
+  },
+  "fri_book": {
+    "en": "Friend List",
+    "ua": "Список друзів"
+  },
+  "fri_com_u": {
+    "en": "Registered friends can see\neach other's online status.{t:1.0:1400}\n{/t:1.0}\nThey can also view each\nother's status messages.",
+    "ua": "Зареєстровані друзі бачать,\nхто з них онлайн.{t:1.0:1400}\n                    {/t:1.0}\nТакож видно повідомлення\nодне одного."
+  },
+  "fri_card_on": {
+    "en": "Online",
+    "ua": "Онлайн"
+  },
+  "fri_card_off": {
+    "en": "Offline",
+    "ua": "Офлайн"
+  },
+  "fri_card_joinable": {
+    "en": "OK to Join",
+    "ua": "Набір учасн."
+  },
+  "fri_card_invited": {
+    "en": "",
+    "ua": ""
+  },
+  "fri_dlg_badmii": {
+    "en": "Your Personal Mii\nis corrupted.{t:1.0:1400}\n                    {/t:1.0}\nUse Mii Maker to create\na new Personal Mii.",
+    "ua": "Ваш персональний Mii\nпошкоджено.{t:1.0:1400}\n                    {/t:1.0}\nСтворіть новий\nу Редакторі Mii."
+  },
+  "fri_badmiiname": {
+    "en": "???",
+    "ua": ""
+  },
+  "fri_badmiiname_u": {
+    "en": "???",
+    "ua": ""
+  },
+  "fri_online_friends0": {
+    "en": "Friends online: %d",
+    "ua": "Друзі онлайн: %d"
+  },
+  "fri_offline": {
+    "en": "You are currently offline.",
+    "ua": "Ви зараз офлайн."
+  },
+  "fri_ap_error": {
+    "en": "You cannot go online using\nthe current access point.",
+    "ua": "Ви не можете вийти\nв Інтернет через поточну\nточку доступу."
+  },
+  "fri_add": {
+    "en": "Register Friend",
+    "ua": "Реєстрація друга"
+  },
+  "fri_option": {
+    "en": "Settings",
+    "ua": "Параметри"
+  },
+  "fri_base_1b_quit": {
+    "en": " Close",
+    "ua": " Закрити"
+  },
+  "fri_favorite_u": {
+    "en": "Favourite Title:",
+    "ua": "Улюблена гра:"
+  },
+  "fri_playing_u": {
+    "en": "Software in Use:",
+    "ua": "Зараз грає:"
+  },
+  "fri_no_title_u": {
+    "en": "Could not acquire\nthis software's title.",
+    "ua": "Назва програми\nнедоступна."
+  },
+  "fri_code": {
+    "en": "Friend Code:",
+    "ua": "Код друга:"
+  },
+  "fri_code_num": {
+    "en": "???? - ???? - ????",
+    "ua": ""
+  },
+  "fri_number": {
+    "en": "/",
+    "ua": ""
+  },
+  "fri_offline0": {
+    "en": "Online: %d minute ago",
+    "ua": "Онлайн: %d хв тому"
+  },
+  "fri_offline0_plu": {
+    "en": "Online: %d minutes ago",
+    "ua": "Онлайн: %d хв тому"
+  },
+  "fri_offline1": {
+    "en": "Online: %d hour ago",
+    "ua": "Онлайн: %d год тому"
+  },
+  "fri_offline1_plu": {
+    "en": "Online: %d hours ago",
+    "ua": "Онлайн: %d год тому"
+  },
+  "fri_offline2": {
+    "en": "Online: %d day ago",
+    "ua": "Онлайн: %d день тому"
+  },
+  "fri_offline2_plu": {
+    "en": "Online: %d days ago",
+    "ua": "Онлайн: %d дн. тому"
+  },
+  "fri_secret0": {
+    "en": "Hide online status",
+    "ua": "Приховати стан у мережі"
+  },
+  "fri_secret1": {
+    "en": "Hide titles being played",
+    "ua": "Приховати ігри, у які ви граєте"
+  },
+  "fri_join": {
+    "en": "Join Friend's Game",
+    "ua": "Приєднатися до гри"
+  },
+  "fri_dlg_joinerr0": {
+    "en": "Either no Game Card is\ninserted or write-protection\nis enabled on the SD Card.",
+    "ua": "Не вставлено гральну\nкарту або карту SD\nзахищено від запису."
+  },
+  "fri_dlg_joinerr1": {
+    "en": "Could not access the\nGame Card or SD Card.",
+    "ua": "Немає доступу до гральної\nкарти або карти SD."
+  },
+  "fri_dlg_joinerr2": {
+    "en": "No software management\ninformation for this title found\non the HOME Menu.{t:1.0:1400}\n                    {/t:1.0}\nReturning to the HOME Menu.",
+    "ua": "У меню HOME немає даних\nпро керування програмами\nдля цієї гри.{t:1.0:1400}\n                    {/t:1.0}\nПовернення до меню HOME."
+  },
+  "fri_dlg_joinerr3": {
+    "en": "You do not appear to have\nany software titles which allow\nyou to join this game.",
+    "ua": "У вас немає програм, які\nдозволяють приєднатися\nдо цієї гри."
+  },
+  "fri_join_applist": {
+    "en": "Choose a title to join in with.",
+    "ua": "Виберіть гру для участі."
+  },
+  "lau_dlg_quit1": {
+    "en": "Close the suspended software\nand launch this one?\n{t:1.0:5500}{t:0.3:3c3c3cff}(Any unsaved data will\nbe lost.){t:0.3:000000ff}{/t:1.0}",
+    "ua": "Закрити призупинену\nпрограму й запустити цю?\n{t:1.0:5500}{t:0.3:3c3c3cff}(Усі незбережені дані\nбуде втрачено.){t:0.3:000000ff}{/t:1.0}"
+  },
+  "lau_dlg_quit3": {
+    "en": "Close the suspended software\nand launch this one?\n{t:1.0:5500}{t:0.3:3c3c3cff}(Data will be saved.){t:0.3:000000ff}{/t:1.0}",
+    "ua": "Закрити призупинену\nпрограму й запустити цю?\n{t:1.0:5500}{t:0.3:3c3c3cff}(Дані буде збережено.){t:0.3:000000ff}{/t:1.0}"
+  },
+  "lau_dlg_quit5": {
+    "en": "Closing suspended software...",
+    "ua": "Призупинена програма\nзакривається…..."
+  },
+  "lau_dlg_quit8": {
+    "en": "Close the suspended software\nand launch this one?",
+    "ua": "Закрити призупинену\nпрограму й запустити цю??"
+  },
+  "lau_dlg_2b_canc0": {
+    "en": " Cancel",
+    "ua": " Скасувати"
+  },
+  "lau_dlg_2b_ok": {
+    "en": " OK",
+    "ua": " OK"
+  },
+  "lau_dlg_1b_ok": {
+    "en": " OK",
+    "ua": " OK"
+  },
+  "lau_dlg_launch": {
+    "en": "Join your friend's game?",
+    "ua": "Приєднатися до гри друга?"
+  },
+  "lau_dlg_pare0": {
+    "en": "Would you like to launch this\nsoftware in 2D?\n{t:1.0:5500}{t:0.3:3c3c3cff}You must enter your PIN to\nlaunch it in 3D.{t:0.3:000000ff}{/t:1.0}",
+    "ua": "Запустити програму в\nрежимі 2D?\n{t:1.0:5500}{t:0.3:3c3c3cff}Щоб запустити програму\nв режимі 3D, потрібно\nввести PIN-код.{t:0.3:000000ff}{/t:1.0}"
+  },
+  "lau_dlg_pare1": {
+    "en": "This software is restricted by\nthe Parental Controls Software\nRating settings.{t:1.0:1400}\n                    {/t:1.0}\nWould you like to temporarily\nremove this restriction?",
+    "ua": "Програму обмежено\nбатьківським контролем.{t:1.0:1400}\n                    {/t:1.0}\nТимчасово зняти це\nобмеження?"
+  },
+  "lau_dlg_pare4": {
+    "en": "Failed to enter\nthe correct PIN.{t:1.0:1400}\n                    {/t:1.0}\nLaunching in 2D\ndisplay mode.",
+    "ua": "Введено неправильний\nPIN-код.{t:1.0:1400}\n                    {/t:1.0}\nПрограму буде запущено\nв режимі 2D."
+  },
+  "lau_dlg_pare5": {
+    "en": "Would you like to launch this\nsoftware in 2D?\n{t:1.0:5500}{t:0.3:3c3c3cff}You must enter your PIN again\nto launch it in 3D.{t:0.3:000000ff}{/t:1.0}",
+    "ua": "Запустити програму в\nрежимі 2D?\n{t:1.0:5500}{t:0.3:3c3c3cff}Щоб запустити програму\nв режимі 3D, потрібно\nввести PIN-код ще раз.{t:0.3:000000ff}{/t:1.0}"
+  },
+  "lau_dlg_2b_pare0": {
+    "en": " Remove",
+    "ua": " Зняти"
+  },
+  "lau_dlg_2b_pare1": {
+    "en": " {t:1.1:5000}Launch in 2D{/t:1.1}",
+    "ua": " Режим 2D"
+  },
+  "lau_dlg_2b_pare2": {
+    "en": " {t:1.1:4b00}Launch in 3D{/t:1.1}",
+    "ua": " {t:1.1:4b00}Режим 3D{/t:1.1}"
+  },
+  "lau_dlg_cup_error": {
+    "en": "The Game Card could not\nbe read.{t:1.0:1400}\n                    {/t:1.0}\nPlease remove and re-insert\nthe Game Card.",
+    "ua": "Не вдалося прочитати дані\nз гральної карти.{t:1.0:1400}\n                    {/t:1.0}\nВийміть гральну карту\nй вставте її знову."
+  },
+  "lau_dlg_ng_sd1": {
+    "en": "Could not access SD Card.",
+    "ua": "Не вдалося отримати доступ\nдо карти SD.."
+  },
+  "fri_edit": {
+    "en": "Favourite Title",
+    "ua": "Улюблена гра"
+  },
+  "fri_twitt": {
+    "en": "Message",
+    "ua": "Статус"
+  },
+  "fri_twitt_none": {
+    "en": "No status message.",
+    "ua": "Немає статусу."
+  },
+  "fri_temp": {
+    "en": "Provisionally registered friend.",
+    "ua": "Друга зареєстровано умовно."
+  },
+  "fri_dlg_local": {
+    "en": "You cannot register\npeople as friends while\nsuspended software\nis using local wireless.",
+    "ua": "Не можна реєструвати\nдрузів, поки призупинена\nпрограма використовує\nлокальний бездротовий\nзв'язок."
+  },
+  "fri_dlg_ce": {
+    "en": "StreetPass is being used by\nthe suspended software.{t:1.0:1400}\n                    {/t:1.0}\nWould you like to temporarily\ndisable StreetPass and\nconnect to the internet?",
+    "ua": "Призупинена програма\nвикористовує StreetPass.{t:1.0:1400}\n                    {/t:1.0}\nТимчасово вимкнути\nStreetPass і підключитися\nдо Інтернету?"
+  },
+  "fri_dlg_ce2": {
+    "en": "StreetPass is being used by\nthe suspended software.{t:1.0:1400}\n                    {/t:1.0}\nWould you like to temporarily\ndisable StreetPass and\nregister a friend?",
+    "ua": "Призупинена програма\nвикористовує StreetPass.{t:1.0:1400}\n                    {/t:1.0}\nТимчасово вимкнути\nStreetPass і зареєструвати\nдруга?"
+  },
+  "fri_dlg_internet": {
+    "en": "The suspended title is\ncurrently using internet-based\ncommunications. Would you\nlike to disconnect from the\ninternet and register a friend?",
+    "ua": "Призупинена програма\nзараз використовує\nз'єднання з Інтернетом.\nВідключитися від Інтернету\nй зареєструвати друга?"
+  },
+  "fri_dlg_paren1": {
+    "en": "Friend Registration has been\nrestricted by Parental\nControls.{t:1.0:1400}\n                    {/t:1.0}\nWould you like to temporarily\nremove this restriction?",
+    "ua": "Реєстрацію друзів обмежено\nбатьківським контролем.{t:1.0:1400}\n                    {/t:1.0}\nТимчасово зняти це\nобмеження?"
+  },
+  "fri_dlg_paren2": {
+    "en": "Online Interaction has been \nrestricted by Parental \nControls. You cannot \ncorrespond with friends while \nthis restriction is active.",
+    "ua": "Спілкування через Інтернет\nобмежено батьківським\nконтролем. Поки діє це\nобмеження, ви не можете\nлистуватися з друзями."
+  },
+  "fri_dlg_paren3": {
+    "en": "Online Interaction has been \nrestricted by Parental \nControls. You cannot register \nfriends via the internet.",
+    "ua": "Спілкування через Інтернет\nобмежено батьківським\nконтролем. Ви не можете\nреєструвати друзів через\nІнтернет."
+  },
+  "fri_dlg_2b_pare0": {
+    "en": " Remove",
+    "ua": " Зняти"
+  },
+  "fri_edit_fav_com": {
+    "en": "Choose your favourite title",
+    "ua": "Виберіть улюблену гру."
+  },
+  "fri_edit_fav_none": {
+    "en": "Don't have one",
+    "ua": "Не вибрано"
+  },
+  "fri_base_2b_deci": {
+    "en": "Done",
+    "ua": "Готово"
+  },
+  "fri_base_2b_canc": {
+    "en": "Cancel",
+    "ua": "Скасувати"
+  },
+  "fri_dlg_edit_fav": {
+    "en": "Your settings have \nbeen saved.",
+    "ua": "Налаштування збережено."
+  },
+  "fri_opti_title": {
+    "en": "Settings",
+    "ua": "Параметри"
+  },
+  "fri_opti_sett": {
+    "en": "Friend notification settings",
+    "ua": "Налаштування повідомлень"
+  },
+  "fri_opti_dele": {
+    "en": "Delete Friend Card",
+    "ua": "Видалити картку друга"
+  },
+  "fri_dlg_paren0": {
+    "en": "Because Online Interaction\nhas been restricted by \nParental Controls, you cannot \nadjust notification settings.",
+    "ua": "Спілкування через Інтернет\nобмежено батьківським\nконтролем, тому не можна\nзмінити налаштування\nповідомлень."
+  },
+  "fri_set_comm_u": {
+    "en": "Use these options to notify\nfriends of your online status\nand the title you're currently\nplaying.\n{t:1.0:5500}{t:0.3:3c3c3cff}Enabling the first option will \nalso allow your friends to see \nwhen you last went offline.{t:0.3:000000ff}{/t:1.0}",
+    "ua": "Ці функції повідомляють\nдрузям ваш стан у мережі\nй те, у що ви граєте.\n{t:1.0:5500}{t:0.3:3c3c3cff}Якщо ввімкнути першу,\nдрузі також побачать, коли\nви були онлайн останній раз.{t:0.3:000000ff}{/t:1.0}"
+  },
+  "fri_set_set0": {
+    "en": "Show friends when you're online?",
+    "ua": "Показувати друзям, коли ви онлайн?"
+  },
+  "fri_set_set01": {
+    "en": "Yes",
+    "ua": "Так"
+  },
+  "fri_set_set02": {
+    "en": "No",
+    "ua": "Ні"
+  },
+  "fri_set_set1": {
+    "en": "Show friends what you're playing?",
+    "ua": "Показувати друзям, у що ви граєте?"
+  },
+  "fri_set_set11": {
+    "en": "Yes",
+    "ua": "Так"
+  },
+  "fri_set_set12": {
+    "en": "No",
+    "ua": "Ні"
+  },
+  "fri_dele_dele": {
+    "en": "Select a friend card to delete.",
+    "ua": "Виберіть картку друга,\nяку хочете видалити."
+  },
+  "fri_base_1b_canc": {
+    "en": "Quit",
+    "ua": "Вийти"
+  },
+  "fri_dlg_delete0": {
+    "en": "Deleting this friend card\nmeans you will no longer be\nfriends with this person {t:1.0:5500}{t:0.3:3c3c3cff}(they\nwill not receive a notification\nabout this).{t:0.3:000000ff}{/t:1.0}\nIs this OK?",
+    "ua": "Якщо видалити цю картку,\nви більше не будете\nдрузями.\n{t:1.0:5500}{t:0.3:3c3c3cff}Друг не отримає\nпро це повідомлення.{t:0.3:000000ff}{/t:1.0}\nПродовжити?"
+  },
+  "fri_dlg_2b_dele0": {
+    "en": " No",
+    "ua": " Ні"
+  },
+  "fri_dlg_2b_dele1": {
+    "en": " Yes",
+    "ua": " Так"
+  },
+  "fri_dlg_delete1": {
+    "en": "Friend card deleted.",
+    "ua": "Картку друга видалено."
+  },
+  "fri_dlg_delete2": {
+    "en": "Could not delete friend card.",
+    "ua": "Не вдалося видалити\nкартку друга."
+  },
+  "fri_add_title": {
+    "en": "Register Friend",
+    "ua": "Реєстрація друга"
+  },
+  "fri_add_neighbor": {
+    "en": "Local",
+    "ua": "Локально"
+  },
+  "fri_add_code": {
+    "en": "Internet",
+    "ua": "Інтернет"
+  },
+  "fri_dlg_full": {
+    "en": "Your friend list is full.{t:1.0:1400}\n                    {/t:1.0}\nYou cannot add any\nadditional friends.",
+    "ua": "У списку друзів немає\nмісця.{t:1.0:1400}\n                    {/t:1.0}\nВи не можете додати\nбільше друзів."
+  },
+  "fri_neig_ngname": {
+    "en": "???",
+    "ua": ""
+  },
+  "fri_neig_ngname_u": {
+    "en": "???",
+    "ua": ""
+  },
+  "fri_neig_comm0": {
+    "en": "Make sure that the person\nyou want to register also\nchooses Local.",
+    "ua": "Переконайтеся, що той,\nкого ви хочете зареєструвати,\nтакож вибрав Локально."
+  },
+  "fri_neig_comm1": {
+    "en": "Choose somebody to\nregister as a friend.",
+    "ua": "Виберіть, кого\nзареєструвати як друга."
+  },
+  "fri_dlg_neig_wai": {
+    "en": "Please wait...",
+    "ua": "Зачекайте..."
+  },
+  "fri_dlg_1b_cance": {
+    "en": " Cancel",
+    "ua": " Скасувати"
+  },
+  "fri_neig_error": {
+    "en": "Cannot find any friends\nto register.",
+    "ua": "Друзів для реєстрації\nне знайдено."
+  },
+  "fri_dlg_2b_retry": {
+    "en": " {t:1.1:5000}Search Again{/t:1.1}",
+    "ua": " {t:1.1:5000}Шукати знову{/t:1.1}"
+  },
+  "fri_code_comm_u0": {
+    "en": "Enter the friend code of\nthe person you would like\nto register here.",
+    "ua": "Введіть код друга, якого\nхочете зареєструвати."
+  },
+  "fri_dlg_code_err0": {
+    "en": "You cannot use Internet\nRegistration because you\nare not online.",
+    "ua": "Ви не можете реєструвати\nдрузів через Інтернет,\nбо ви офлайн."
+  },
+  "fri_dlg_neig_err": {
+    "en": "Disconnected from \n%ls.",
+    "ua": "Зв'язок із\n%ls\nперервано."
+  },
+  "fri_dlg_code_err1": {
+    "en": "The friend code is incorrect.",
+    "ua": "Неправильний код друга."
+  },
+  "fri_dlg_code_err2": {
+    "en": "The friend code has already\nbeen registered.",
+    "ua": "Цей код друга вже\nзареєстровано."
+  },
+  "fri_code_comm_u1": {
+    "en": "Enter the name of the\nperson you would like\nto register as a friend.",
+    "ua": "Введіть ім'я того, кого\nхочете зареєструвати\nяк друга."
+  },
+  "fri_code_comm_u2": {
+    "en": "Ensure your friend also\nadds your friend code.",
+    "ua": "Ваш друг також має\nдодати ваш код друга."
+  },
+  "fri_dlg_code0": {
+    "en": "Do you want to register{t:1.0:1400}\n                    {/t:1.0}\n%ls\n%ls{t:1.0:1400}\n                    {/t:1.0}\nas a friend?",
+    "ua": "Зареєструвати{t:1.0:1400}\n                    {/t:1.0}\n%ls\n%ls{t:1.0:1400}\n                    {/t:1.0}\nяк друга?"
+  },
+  "fri_dlg_code1": {
+    "en": "%ls has been\nregistered as a friend!",
+    "ua": "%ls\nзареєстровано як друга!"
+  },
+  "fri_dlg_code2": {
+    "en": "You are now friends with\n%ls!",
+    "ua": "Тепер ви друзі з\n%ls!"
+  },
+  "fri_dlg_code3": {
+    "en": "%ls has\nbeen fully registered as\na friend with the name\n%ls!",
+    "ua": "Користувача\n%ls\nзареєстровано як друга\nз ім'ям\n%ls!"
+  },
+  "fri_dlg_tutori00": {
+    "en": "Welcome to the friend list!{t:1.0:1400}\n                    {/t:1.0}\nHere you can register other \nusers as friends.",
+    "ua": "Вітаємо у списку друзів!{t:1.0:1400}\n                    {/t:1.0}\nТут ви можете реєструвати\nінших користувачів як друзів."
+  },
+  "fri_dlg_1b_next": {
+    "en": " Next",
+    "ua": " Далі"
+  },
+  "fri_dlg_tutori01": {
+    "en": "Registered friends can see\neach other's online status,\nand view each other's status\nmessages.",
+    "ua": "Зареєстровані друзі бачать\nстан одне одного в мережі\nй повідомлення одне\nодного."
+  },
+  "fri_dlg_tutori02": {
+    "en": "For Friend Registration, the\ntwo parties must exchange\ntheir friend cards.",
+    "ua": "Щоб зареєструвати друга,\nобидві сторони мають\nобмінятися картками друга."
+  },
+  "fri_dlg_tutori03": {
+    "en": "There are no Mii characters to\nadd to your friend card.{t:1.0:1400}\n                    {/t:1.0}\nPlease make a Mii for yourself\nin Mii Maker.",
+    "ua": "Немає персонального Mii\nдля вашої картки друга.{t:1.0:1400}\n                    {/t:1.0}\nСтворіть персонального Mii\nу Редакторі Mii."
+  },
+  "fri_dlg_tutori05": {
+    "en": "First, add your Favourite \nTitle to your friend card.",
+    "ua": "Спершу додайте улюблену\nгру до картки друга."
+  },
+  "fri_base_1b_deci": {
+    "en": "OK",
+    "ua": "OK"
+  },
+  "fri_dlg_tutori06": {
+    "en": "It's your very own friend card!",
+    "ua": "Це ваша картка друга!"
+  },
+  "fri_dlg_tutori07": {
+    "en": "Next, configure which\ninformation you would like\nto share with your friends.",
+    "ua": "Тепер визначте, якою\nінформацією поділитися\nз друзями."
+  },
+  "fri_dlg_tutori08": {
+    "en": "Would you like your friends\nto see when you're online\n(connected to the internet\nor otherwise)?\n{t:1.0:5500}{t:0.3:3c3c3cff}Enabling this option will also\nshow when you went offline.{t:0.3:000000ff}{/t:1.0}",
+    "ua": "Показувати друзям, коли ви\nонлайн (підключені до\nІнтернету чи ні)?\n{t:1.0:5500}{t:0.3:3c3c3cff}Ця функція також покаже,\nколи ви були онлайн\nостанній раз.{t:0.3:000000ff}{/t:1.0}"
+  },
+  "fri_dlg_tutori09": {
+    "en": "Would you like your friends\nto see which games you're\nplaying while you're online?",
+    "ua": "Показувати друзям, у які\nігри ви граєте, коли ви\nонлайн?"
+  },
+  "fri_dlg_tutori10": {
+    "en": "Settings saved.{t:1.0:1400}\n                    {/t:1.0}\nOnline status: %ls\nCurrent game: %ls\n{t:1.0:5500}{t:0.3:3c3c3cff}You can change these settings\nat any time.{t:0.3:000000ff}{/t:1.0}",
+    "ua": "Налаштування збережено.{t:1.0:1400}\n                    {/t:1.0}\nСтан у мережі: %ls\nПоточна гра: %ls\n{t:1.0:5500}{t:0.3:3c3c3cff}Ці налаштування можна\nзмінити будь-коли.{t:0.3:000000ff}{/t:1.0}"
+  },
+  "fri_dlg_tutori13": {
+    "en": "Show",
+    "ua": "Показати"
+  },
+  "fri_dlg_tutori14": {
+    "en": "Do not show",
+    "ua": "Приховати"
+  },
+  "fri_dlg_tutori12": {
+    "en": "Settings complete.{t:1.0:1400}\n                    {/t:1.0}\nYou can now register new\nfriends any time you like!",
+    "ua": "Налаштування завершено.{t:1.0:1400}\n                    {/t:1.0}\nТепер ви можете будь-коли\nреєструвати нових друзів!"
+  },
+  "fri_dlg_2b_tell": {
+    "en": " Yes",
+    "ua": " Так"
+  },
+  "fri_dlg_2b_secre": {
+    "en": " No",
+    "ua": " Ні"
+  },
+  "fri_dlg_cfl_error": {
+    "en": "The friend list cannot be\nopened at this time.{t:1.0:1400}\n　　　　　　　　　　　　　{/t:1.0}\nPlease close the suspended\nsoftware and try again.",
+    "ua": "Зараз неможливо відкрити\nсписок друзів.{t:1.0:1400}\n　　　　　　　　　　　　　{/t:1.0}\nЗакрийте призупинену\nпрограму й спробуйте знову."
+  },
+  "fri_dlg_error": {
+    "en": "Communication error.\nFor help, visit\nsupport.nintendo.com.",
+    "ua": "Помилка передавання\nданих. Докладніше:\nsupport.nintendo.com"
+  }
+}
