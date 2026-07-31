@@ -3,7 +3,7 @@ PY := python3
 
 HOME_MENU_TID := 0004003000009802
 FONT_TID := 0004009B00014002
-VERSION := 0.1.0
+VERSION := 0.6.0
 
 .PHONY: help extract font validate build all package clean sd
 
