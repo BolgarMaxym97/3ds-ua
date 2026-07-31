@@ -46,6 +46,7 @@ TEXT_VA = 0x100000
 # Exheader offsets: remaster version sits in the code set info, access info in the ARM11
 # local system capabilities block.
 REMASTER_VERSION_OFFSET = 0x0E
+TEXT_SIZE_OFFSET = 0x18
 ACCESS_INFO_OFFSET = 0x248
 DIRECT_SDMC_BIT = 7
 
@@ -60,11 +61,36 @@ HOOK_PATCHES: dict[str, dict] = {
         "title": "Activity Log (PLOG) EUR",
         "title_version": 2,
         "code_sha256": "a8a665bd0c807d9150b5024d3674d6c71088d7ef26c54af5f34ec98de439ca40",
-        "stub_off": 0xB3FCC,     # throwFatalError()
+        "variant": "r4_frame28",
+        "stub_off": 0xB3FCC,     # throwFatalError(), which Luma leaves alone here
         "stub_room": 416,        # bytes until the next function's `push`
         "open_archive": 0xD40C,  # the title's own FSUSER_OpenArchive IPC wrapper
         "mount_tail": 0xD2B4,    # tail of MountSharedExtData(): allocates and stores the object
         "globals_off": 0xD328,   # literal holding the nn::fs globals base (+0x10 = fs:USER session)
+    },
+    # Instruction Manual (ebird), EUR, title version 5.
+    #
+    # This one cannot use throwFatalError(): its .text padding is 88 bytes, less than the
+    # 0x114 Luma needs, so Luma claims throwFatalError() for its own payload and only 12
+    # bytes of it would survive. The stub goes into that 88-byte page padding instead - it
+    # is inside the mapped, executable .text pages and Luma has no use for it.
+    #
+    # findLayeredFsSymbols() only scans up to text.size, which stops short of the padding,
+    # so the shipped exheader also rounds text.size up to the page boundary. That is free:
+    # the loader derives everything from (size + 4095) >> 12, and 0xADFA8 and 0xAE000 both
+    # come to 174 pages, so section addresses, the .code layout and the mapping are all
+    # byte-for-byte what they were.
+    "0004003000009B02": {
+        "title": "Instruction Manual (ebird) EUR",
+        "title_version": 5,
+        "code_sha256": "cf4658f9f618a41f8d32ff7aed40d0ea565da78a2ace349cb93698ff5f7df5d8",
+        "variant": "sl_frame14",
+        "stub_off": 0xADFA8,        # start of the .text page padding
+        "stub_room": 88,            # up to the 0xAE000 page boundary
+        "text_size_override": 0xAE000,
+        "open_archive": 0x65FC8,
+        "mount_tail": 0x2F878,      # tail of MountSystemSaveData(), entered with r8 = result
+        "globals_off": 0x2F8F0,
     },
 }
 
@@ -81,35 +107,82 @@ def _b(src: int, dst: int) -> int:
     return 0xEA000000 | (((dst - src - 8) >> 2) & 0xFFFFFF)
 
 
-def build_stub(patch: dict, globals_value: int) -> bytes:
-    """Assemble the replacement fsMountArchive. See the module docstring for the layout."""
+SIGNATURE = (
+    0xE5970010,  # Luma's fsMountArchive signature, word 1
+    0xE1CD20D8,  #                                  word 2
+    0xE58D0000,  #                                  word 3
+)
+
+
+def _stub_r4_frame28(patch: dict, globals_value: int) -> list[int]:
+    """Tail takes the result in r0, `out` in r4, globals in r6, on a 0x28 frame."""
     s = patch["stub_off"]
-    words = [
-        0xE92D41F0,             # +00  push {r4,r5,r6,r7,r8,lr}   <- findFunctionStart lands here
-        _b(s + 0x04, s + 0x18),  # +04  b    +0x18                  skips the signature block
-        0xE5970010,             # +08  Luma's fsMountArchive signature, word 1 (never executed)
-        0xE1CD20D8,             # +0C                              word 2
-        0xE58D0000,             # +10                              word 3
-        0xE1A00000,             # +14  nop
-        0xE24DD028,             # +18  sub  sp, sp, #0x28          the frame mount_tail expects
-        0xE1A04000,             # +1C  mov  r4, r0                 r4 = out
-        0xE1A02001,             # +20  mov  r2, r1                 r2 = archiveId (9 = SDMC)
-        0xE3A03001,             # +24  mov  r3, #1                 r3 = PATH_EMPTY
-        0xE3A05000,             # +28  mov  r5, #0
-        0xE58D5018,             # +2C  str  r5, [sp, #0x18]        empty path = one NUL byte
-        0xE28D0018,             # +30  add  r0, sp, #0x18
-        0xE58D0000,             # +34  str  r0, [sp]               stack arg: path pointer
-        0xE3A00001,             # +38  mov  r0, #1
-        0xE58D0004,             # +3C  str  r0, [sp, #4]           stack arg: path size
-        0xE59F6014,             # +40  ldr  r6, [pc, #0x14]        r6 = nn::fs globals
-        0xE5960010,             # +44  ldr  r0, [r6, #0x10]        fs:USER session handle
-        0xE58D000C,             # +48  str  r0, [sp, #0xc]
-        0xE28D1010,             # +4C  add  r1, sp, #0x10          out: archive handle
-        0xE28D000C,             # +50  add  r0, sp, #0xc
+    return [
+        0xE92D41F0,              # +00  push {r4,r5,r6,r7,r8,lr}  <- findFunctionStart lands here
+        _b(s + 0x04, s + 0x18),  # +04  b    +0x18                 skips the signature block
+        *SIGNATURE,              # +08  never executed
+        0xE1A00000,              # +14  nop
+        0xE24DD028,              # +18  sub  sp, sp, #0x28         the frame mount_tail expects
+        0xE1A04000,              # +1C  mov  r4, r0                r4 = out
+        0xE1A02001,              # +20  mov  r2, r1                r2 = archiveId (9 = SDMC)
+        0xE3A03001,              # +24  mov  r3, #1                r3 = PATH_EMPTY
+        0xE3A05000,              # +28  mov  r5, #0
+        0xE58D5018,              # +2C  str  r5, [sp, #0x18]       empty path = one NUL byte
+        0xE28D0018,              # +30  add  r0, sp, #0x18
+        0xE58D0000,              # +34  str  r0, [sp]              stack arg: path pointer
+        0xE3A00001,              # +38  mov  r0, #1
+        0xE58D0004,              # +3C  str  r0, [sp, #4]          stack arg: path size
+        0xE59F6014,              # +40  ldr  r6, [pc, #0x14]       r6 = nn::fs globals
+        0xE5960010,              # +44  ldr  r0, [r6, #0x10]       fs:USER session handle
+        0xE58D000C,              # +48  str  r0, [sp, #0xc]
+        0xE28D1010,              # +4C  add  r1, sp, #0x10         out: archive handle
+        0xE28D000C,              # +50  add  r0, sp, #0xc
         _bl(s + 0x54, patch["open_archive"]),  # +54  bl FSUSER_OpenArchive wrapper
         _b(s + 0x58, patch["mount_tail"]),     # +58  b  shared mount tail
-        globals_value,          # +5C  literal
+        globals_value,           # +5C  literal
     ]
+
+
+def _stub_sl_frame14(patch: dict, globals_value: int) -> list[int]:
+    """Tail takes the result in r8, `out` in sl, globals in sb, on a 0x14 frame.
+
+    Tighter than the other variant because it has to fit in one page of .text padding:
+    the session is passed as `sb + 0x10` instead of being copied onto the stack, and the
+    two stack arguments go out in one `stm`.
+    """
+    s = patch["stub_off"]
+    return [
+        0xE92D4FF0,              # +00  push {r4,r5,r6,r7,r8,sb,sl,fp,lr}
+        _b(s + 0x04, s + 0x14),  # +04  b    +0x14
+        *SIGNATURE,              # +08  never executed
+        0xE24DD014,              # +14  sub  sp, sp, #0x14
+        0xE1A0A000,              # +18  mov  sl, r0                sl = out
+        0xE1A02001,              # +1C  mov  r2, r1                r2 = archiveId (9 = SDMC)
+        0xE3A03001,              # +20  mov  r3, #1                r3 = PATH_EMPTY
+        0xE59F9024,              # +24  ldr  sb, [pc, #0x24]       sb = nn::fs globals
+        0xE3A04000,              # +28  mov  r4, #0
+        0xE58D4010,              # +2C  str  r4, [sp, #0x10]       empty path = one NUL byte
+        0xE28D4010,              # +30  add  r4, sp, #0x10
+        0xE3A05001,              # +34  mov  r5, #1
+        0xE88D0030,              # +38  stm  sp, {r4, r5}          stack args: path, size
+        0xE28D1008,              # +3C  add  r1, sp, #8            out: archive handle
+        0xE2890010,              # +40  add  r0, sb, #0x10         &fs:USER session handle
+        _bl(s + 0x44, patch["open_archive"]),  # +44  bl FSUSER_OpenArchive wrapper
+        0xE1A08000,              # +48  mov  r8, r0                the tail reads the result in r8
+        _b(s + 0x4C, patch["mount_tail"]),     # +4C  b  shared mount tail
+        globals_value,           # +50  literal
+    ]
+
+
+STUB_VARIANTS = {
+    "r4_frame28": _stub_r4_frame28,
+    "sl_frame14": _stub_sl_frame14,
+}
+
+
+def build_stub(patch: dict, globals_value: int) -> bytes:
+    """Assemble the replacement fsMountArchive. See the module docstring for the layout."""
+    words = STUB_VARIANTS[patch["variant"]](patch, globals_value)
     return b"".join(struct.pack("<I", w) for w in words)
 
 
@@ -124,11 +197,29 @@ def make_ips(records: list[tuple[int, bytes]]) -> bytes:
     return bytes(out + b"EOF")
 
 
-def patch_exheader(exheader: bytes) -> bytes:
-    """Grant DirectSdmc, without which FS refuses to open ARCHIVE_SDMC for the title."""
+def patch_exheader(tid: str, exheader: bytes) -> bytes:
+    """Grant DirectSdmc, and widen text.size when the stub lives in the .text padding.
+
+    Without DirectSdmc, FS refuses to open ARCHIVE_SDMC for the title. The text.size bump
+    only ever rounds up to the page boundary the section already occupies, so it changes
+    nothing about the layout - it only brings the padding inside the range Luma scans.
+    """
+    patch = HOOK_PATCHES[tid.upper()]
     out = bytearray(exheader)
+
     access = struct.unpack_from("<Q", out, ACCESS_INFO_OFFSET)[0]
     struct.pack_into("<Q", out, ACCESS_INFO_OFFSET, access | (1 << DIRECT_SDMC_BIT))
+
+    override = patch.get("text_size_override")
+    if override is not None:
+        current = struct.unpack_from("<I", out, TEXT_SIZE_OFFSET)[0]
+        if override < current or (override + 0xFFF) >> 12 != (current + 0xFFF) >> 12:
+            raise RuntimeError(
+                f"text.size override 0x{override:X} changes the page count of 0x{current:X} "
+                f"- that would move .rodata and .data and corrupt the title"
+            )
+        struct.pack_into("<I", out, TEXT_SIZE_OFFSET, override)
+
     return bytes(out)
 
 
@@ -165,7 +256,6 @@ def generate(tid: str, code_path: Path, exheader_path: Path) -> tuple[dict[str, 
     patch = dict(HOOK_PATCHES[tid.upper()])
 
     exheader = exheader_path.read_bytes()
-    patch["text_size"] = struct.unpack_from("<I", exheader, 0x18)[0]
 
     # Version first, sha256 second: the version says *which* build this is in terms a
     # person can act on, the hash says whether it is byte-for-byte the one measured.
@@ -192,16 +282,24 @@ def generate(tid: str, code_path: Path, exheader_path: Path) -> tuple[dict[str, 
     stub = build_stub(patch, globals_value)
     if len(stub) > patch["stub_room"]:
         raise RuntimeError(f"stub is {len(stub)} bytes, only {patch['stub_room']} are free")
+
+    # Verify against the exheader we are about to ship, not the original: the scan range
+    # is text.size, and for a stub in the .text padding that is the widened value.
+    new_exheader = patch_exheader(tid, exheader)
+    patch["text_size"] = struct.unpack_from("<I", new_exheader, TEXT_SIZE_OFFSET)[0]
     _verify(patch, code, stub)
 
     files = {
         "code.ips": make_ips([(patch["stub_off"], stub)]),
-        "exheader.bin": patch_exheader(exheader),
+        "exheader.bin": new_exheader,
     }
+    widened = patch.get("text_size_override")
     log = [
         f"{patch['title']} title version {version}",
         f"code.ips: {len(stub)}-byte fsMountArchive at 0x{patch['stub_off']:X} "
         f"(va 0x{TEXT_VA + patch['stub_off']:X}), verified against Luma's symbol search",
-        f"exheader.bin: DirectSdmc granted",
+        "exheader.bin: DirectSdmc granted"
+        + (f", text.size 0x{struct.unpack_from('<I', exheader, TEXT_SIZE_OFFSET)[0]:X} -> "
+           f"0x{widened:X} (same {(widened + 0xFFF) >> 12}-page mapping)" if widened else ""),
     ]
     return files, log

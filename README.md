@@ -74,7 +74,7 @@ NAND не змінювався, тому видалення нічого не л
 | Клавіатура з російськими літерами | Так і має бути: це кирилична розкладка для введення тексту. Українських `і ї є ґ` у системному шрифті немає, тож замінити їх на клавішах неможливо. |
 | `An exception occurred`, `Current process: loader` | Luma не змогла застосувати LayeredFS до титулу, який ви запускали, і зупинила консоль. Перейменуйте `SD:/luma/titles/<TID>/romfs` цього титулу на `_romfs` і перезавантажте — титул запуститься без перекладу. Напишіть в Issues з фото екрана помилки. |
 | HOME Menu не запускається | Видаліть `SD:/luma/titles/0004003000009802`. Напишіть в Issues, вказавши модель, регіон і версію системи. |
-| Журнал дій крешить | Його переклад містить правку коду титулу, зроблену під **Журнал дій версії 2 (EUR)** — цей білд стоїть на всіх сучасних прошивках. Якщо у вас старіший, видаліть `SD:/luma/titles/0004001000022200`: решта перекладу працюватиме як була. |
+| Журнал дій або Посібник крешить | Їхній переклад містить правку коду титулу, зроблену під **Журнал дій версії 2** і **Посібник версії 5** (EUR) — ці білди стоять на всіх сучасних прошивках. Якщо у вас старіший, видаліть `SD:/luma/titles/0004001000022200` або `SD:/luma/titles/0004003000009B02`: решта перекладу працюватиме як була. |
 | Порожні квадрати замість літер | Повідомте в Issues із фото — це баг, такого бути не повинно. |
 
 ### Чому `i` замість `і`
@@ -100,11 +100,11 @@ NAND не змінювався, тому видалення нічого не л
 | Налаштування системи | ✅ перекладено |
 | Mii Maker | ✅ перекладено |
 | Журнал дій | ✅ перекладено, з правкою коду титулу — потрібна версія титулу 2 (див. нижче) |
+| Посібник | ✅ перекладено, з правкою коду титулу — потрібна версія титулу 5 (див. нижче) |
 | Екранна клавіатура | ⛔ не входить |
 | Гра по завантаженню | ⛔ не входить |
-| Посібник | ⛔ не входить |
 
-Три останні титули перекладені, але **не потрапляють в архів**: Luma не вміє під'єднати до них LayeredFS. Її завантажувач закінчує патч так:
+Два останні титули перекладені, але **не потрапляють в архів**: Luma не вміє під'єднати до них LayeredFS. Її завантажувач закінчує патч так:
 
 ```c
 if(isApp || isApplet) { ... if(!patchLayeredFs(...)) goto error; }
@@ -120,7 +120,7 @@ error:
 
 Luma шукає в коді титулу п'ять функцій FS. Чотири з них є всюди; бракує щоразу однієї — **`fsMountArchive`**, тієї, що монтує архів за його ID. Без неї Luma не має чим підключити папку на SD як архів `lf:`.
 
-Річ не в тому, що функція скомпільована незвично і сигнатура не збіглася. Її **немає взагалі**: в екранній клавіатурі в усьому коді нема жодного IPC-виклику `FSUSER_OpenArchive`, а в Журналі дій єдиний такий виклик захований усередині монтування extdata з бінарним шляхом.
+Річ не в тому, що функція скомпільована незвично і сигнатура не збіглася. Її **немає взагалі**: в екранній клавіатурі і в грі по завантаженню в усьому коді нема жодного IPC-виклику `FSUSER_OpenArchive`, а в Журналі дій і Посібнику єдиний такий виклик захований усередині монтування extdata чи системного сейву з бінарним шляхом.
 
 Корінь — в `exheader`, поле `accessInfo` (зсув 0x248):
 
@@ -130,10 +130,12 @@ Luma шукає в коді титулу п'ять функцій FS. Чотир
 | Mii Maker | `0x0000000000000081` | є |
 | Екранна клавіатура | `0x0000000000000001` | **нема** |
 | Журнал дій | `0x0000000000000001` | **нема** |
+| Гра по завантаженню | `0x0000000000000001` | **нема** |
+| Посібник | `0x0000000000000001` | **нема** |
 
 Титули без права `DirectSdmc` не мають доступу до SD-карти, тому Nintendo просто не залінкувала в них код монтування SD. Працюють ті титули, у яких це право є.
 
-#### Як полагоджено Журнал дій
+#### Як полагоджено Журнал дій і Посібник
 
 Обидві частини можна дати з SD-карти, бо завантажувач Luma виконує їх у такому порядку:
 
@@ -148,24 +150,35 @@ patchLayeredFs(...);                     // тут шукаються ті п'я
 | Файл | Що робить |
 |---|---|
 | `exheader.bin` | оригінальний exheader з піднятим бітом `DirectSdmc` |
-| `code.ips` | 96 байт: дописує `fsMountArchive`, якої в титулі не було |
+| `code.ips` | 84–96 байт: дописує `fsMountArchive`, якої в титулі не було |
 
-Стаб лягає поверх `throwFatalError()` — тієї самої функції, яку Luma сама затирає, коли їй бракує місця під власний payload. Сигнатурні слова, за якими Luma його знаходить, лежать за безумовним переходом і ніколи не виконуються; робоча частина складає виклик `FSUSER_OpenArchive` і стрибає в хвіст рідного монтування титулу, який виділяє об'єкт архіву з правильним vtable.
+Сигнатурні слова, за якими Luma знаходить стаб, лежать за безумовним переходом і ніколи не виконуються; робоча частина складає виклик `FSUSER_OpenArchive` і стрибає в хвіст рідного монтування титулу, який виділяє об'єкт архіву з правильним vtable.
+
+Місце під стаб у двох титулів різне:
+
+| Титул | Куди лягає стаб |
+|---|---|
+| Журнал дій | поверх `throwFatalError()` — тієї функції, яку Luma сама затирає, коли їй бракує місця під власний payload. Тут місця вистачає, тож Luma її не чіпає. |
+| Посібник | у 88 байт padding'а в кінці `.text`. Тут `throwFatalError()` зайнята: padding менший за payload Luma (0x114), тож Luma забирає її собі. |
+
+У Посібника є додаткова тонкість. `findLayeredFsSymbols()` сканує лише до `text.size`, а це 0xADFA8 — padding лишається за межею. Тому в його `exheader.bin` `text.size` округлено до 0xAE000. Це безкоштовно: завантажувач усюди рахує сторінки як `(size + 4095) >> 12`, і 0xADFA8, і 0xAE000 дають ті самі 174 сторінки — адреси секцій, розкладка `.code` і мапінг лишаються байт-у-байт тими самими.
 
 ⚠️ **Зсуви прив'язані до білда титулу, не до версії системи.** Ідентифікує білд поле `remaster_version` в exheader — скільки разів Nintendo взагалі оновлювала цей титул:
 
 | Титул | `remaster_version` |
 |---|---|
 | Меню HOME (`menu`) | 29 |
+| **Посібник (`ebird`)** | **5** |
 | Екранна клавіатура (`swkbd`) | 4 |
+| Гра по завантаженню (`dlplay`) | 3 |
 | Mii Maker (`EDIT`) | 2 |
 | **Журнал дій (`PLOG`)** | **2** |
 
-Журнал дій оновлювали двічі за весь час життя консолі, тож версія 2 стоїть на всіх сучасних прошивках, включно з останньою `11.17.0-50` (травень 2023, останнє оновлення 3DS взагалі — і Журнал дій у ньому не чіпали). Практично це означає, що патч підходить майже всім.
+Ці титули оновлювали одиниці разів за весь час життя консолі, тож їхні білди стоять на всіх сучасних прошивках, включно з останньою `11.17.0-50` (травень 2023, останнє оновлення 3DS взагалі — жодного з них у ньому не чіпали). Практично це означає, що патч підходить майже всім.
 
-Збірка звіряє `remaster_version` і sha256 дампа й падає, якщо білд інший. Кінцевого користувача це не захищає, тому в архіві є попередження: якщо Журнал дій крешить — білд старіший, треба видалити `luma/titles/0004001000022200`.
+Збірка звіряє `remaster_version` і sha256 дампа й падає, якщо білд інший. Кінцевого користувача це не захищає, тому в архіві є попередження: якщо титул крешить — білд старіший, треба видалити його папку з `luma/titles/`.
 
-Для екранної клавіатури цей самий підхід не працює: там немає ні IPC `FSUSER_OpenArchive`, ні класу архіву на handle — єдиний її клас архіву це romfs поверх файлу. Довелось би синтезувати ще й клас архіву, а це вже не 96 байт.
+Для екранної клавіатури і гри по завантаженню цей самий підхід не працює: там немає ні IPC `FSUSER_OpenArchive`, ні класу архіву на handle — єдиний їхній клас архіву це romfs поверх файлу. Довелось би синтезувати ще й клас архіву, а це вже не 96 байт.
 
 ### Чого мод не перекладає
 
@@ -177,7 +190,15 @@ LayeredFS до ExeFS не дістає — Luma підміняє лише `romfs
 
 **Системний шрифт.** Див. розділ вище — LayeredFS шрифт не підміняє.
 
-Усі три обмеження впираються в одне й те саме: вони потребують правки NAND. Логічний «Tier 2» для тих, хто на це свідомо йде, — окремий реліз із бекапом NAND і попередженнями; у цьому релізі його немає.
+**Текст усередині електронних посібників.** Перекладено сам застосунок Посібника — `Назад`, `Збільшити`, `Мова`, `Стор.`, `Зміст`, діалог вибору мови. А от документ, який він показує, лишається мовою слота.
+
+Причина в тому, що документ не належить Посібнику. Кожен титул везе власний електронний посібник окремим NCCH — контентом з індексом 1 у складі того ж титулу. Посібник дістає його через `ARCHIVE_SAVEDATA_AND_CONTENT`, тобто читає контент документованого титулу напряму.
+
+LayeredFS туди не веде. Payload Luma перехоплює монтування лише для `ARCHIVE_ROMFS` і переписує лише шляхи від `rom:` або від «оновлювальної» точки монтування — а в коді Посібника з усіх, які Luma знає (`ro2:`, `rom2:`, `rex:`, `patch:`, `ext:`), немає жодної, тільки власний `rom:`. Механізму «підмінити контент 1 титулу» в Luma не існує.
+
+Це ще й не один документ, а по одному на кожен титул: свій у Журналу дій, свій у Налаштувань системи, свій у кожної гри. Щоб їх перекласти, треба перезібрати й перевстановити контент кожного титулу.
+
+Усі чотири обмеження впираються в одне й те саме: вони потребують правки NAND. Логічний «Tier 2» для тих, хто на це свідомо йде, — окремий реліз із бекапом NAND і попередженнями; у цьому релізі його немає.
 
 ### Інші регіони
 
@@ -316,7 +337,7 @@ NAND was never touched, so removal cannot break anything.
 | Keyboard shows Russian letters | By design: that is the Cyrillic typing layout. The system font has no `і ї є ґ`, so the keys cannot be changed. |
 | `An exception occurred`, `Current process: loader` | Luma could not apply LayeredFS to the title you launched and halted the console. Rename that title's `SD:/luma/titles/<TID>/romfs` to `_romfs` and reboot — the title then starts untranslated. Please open an Issue with a photo of the error screen. |
 | HOME Menu won't boot | Delete `SD:/luma/titles/0004003000009802` and open an Issue with your model, region and system version. |
-| Activity Log crashes | Its translation carries a code patch built for **Activity Log version 2 (EUR)**, the build present on every modern firmware. If yours is older, delete `SD:/luma/titles/0004001000022200` — the rest of the mod keeps working. |
+| Activity Log or Instruction Manual crashes | Their translations carry a code patch built for **Activity Log version 2** and **Instruction Manual version 5** (EUR), the builds present on every modern firmware. If yours is older, delete `SD:/luma/titles/0004001000022200` or `SD:/luma/titles/0004003000009B02` — the rest of the mod keeps working. |
 | Empty boxes instead of letters | Please report with a photo — that's a bug. |
 
 ### Why `i` instead of `і`
@@ -333,11 +354,11 @@ So the build substitutes visually close glyphs that do exist: `і/І → i/I`, `
 | System Settings | ✅ translated |
 | Mii Maker | ✅ translated |
 | Activity Log | ✅ translated, with a code patch — needs title version 2 (see below) |
+| Instruction Manual | ✅ translated, with a code patch — needs title version 5 (see below) |
 | Software Keyboard | ⛔ not shipped |
 | Download Play | ⛔ not shipped |
-| Instruction Manual | ⛔ not shipped |
 
-The last three are translated but **kept out of the archive**: Luma cannot hook LayeredFS
+The last two are translated but **kept out of the archive**: Luma cannot hook LayeredFS
 into them. Its loader ends the patch with
 
 ```c
@@ -361,9 +382,10 @@ Luma looks for five FS functions. Four are always there; the one that is missing
 attach the SD folder as the `lf:` archive.
 
 It is not that the function was compiled in an unusual way and the signature missed it. The
-function is **not there at all**: the Software Keyboard contains no `FSUSER_OpenArchive` IPC
-call anywhere in its code, and the Activity Log's only one is buried inside an extdata mount
-that takes a binary path.
+function is **not there at all**: the Software Keyboard and Download Play contain no
+`FSUSER_OpenArchive` IPC call anywhere in their code, and in the Activity Log and the
+Instruction Manual the only one is buried inside an extdata or system-savedata mount that
+takes a binary path.
 
 The root cause is in the exheader, `accessInfo` at offset 0x248:
 
@@ -373,11 +395,13 @@ The root cause is in the exheader, `accessInfo` at offset 0x248:
 | Mii Maker | `0x0000000000000081` | yes |
 | Software Keyboard | `0x0000000000000001` | **no** |
 | Activity Log | `0x0000000000000001` | **no** |
+| Download Play | `0x0000000000000001` | **no** |
+| Instruction Manual | `0x0000000000000001` | **no** |
 
 Titles without `DirectSdmc` have no access to the SD card, so Nintendo never linked any
 SD-mounting code into them. The titles that work are the ones that hold that right.
 
-#### How the Activity Log was fixed
+#### How the Activity Log and the Instruction Manual were fixed
 
 Both halves can be supplied from the SD card, because Luma's loader runs them in this order:
 
@@ -388,18 +412,29 @@ patchLayeredFs(...);                     // where those five functions are searc
 ```
 
 and the exheader is replaced even earlier, before the process is created. So the archive
-carries two extra files next to the Activity Log's `romfs`:
+carries two extra files next to those titles' `romfs`:
 
 | File | What it does |
 |---|---|
 | `exheader.bin` | the original exheader with the `DirectSdmc` bit set |
-| `code.ips` | 96 bytes: adds the `fsMountArchive` the title never had |
+| `code.ips` | 84–96 bytes: adds the `fsMountArchive` the title never had |
 
-The stub is written over `throwFatalError()` — the same function Luma itself overwrites when
-it needs room for its own payload. The signature words Luma finds it by sit behind an
-unconditional branch and never execute; the working part assembles the `FSUSER_OpenArchive`
-call and jumps into the tail of the title's own mount routine, which allocates the archive
-object with the right vtable.
+The signature words Luma finds the stub by sit behind an unconditional branch and never
+execute; the working part assembles the `FSUSER_OpenArchive` call and jumps into the tail of
+the title's own mount routine, which allocates the archive object with the right vtable.
+
+Where the stub goes differs between the two:
+
+| Title | Where the stub lands |
+|---|---|
+| Activity Log | over `throwFatalError()` — the function Luma itself overwrites when it is short of room for its own payload. Here there is room, so Luma leaves it alone. |
+| Instruction Manual | in the 88 bytes of padding at the end of `.text`. Here `throwFatalError()` is taken: the padding is smaller than Luma's payload (0x114), so Luma claims the function for itself. |
+
+The Instruction Manual needs one more thing. `findLayeredFsSymbols()` only scans up to
+`text.size`, which is 0xADFA8 and stops short of the padding, so its shipped `exheader.bin`
+rounds `text.size` up to 0xAE000. That is free: the loader derives page counts everywhere as
+`(size + 4095) >> 12`, and 0xADFA8 and 0xAE000 both come to 174 pages — section addresses,
+the `.code` layout and the mapping stay byte-for-byte what they were.
 
 ⚠️ **The offsets are tied to a build of the title, not to a system version.** What
 identifies that build is `remaster_version` in the exheader — how many times Nintendo ever
@@ -408,21 +443,24 @@ updated the title:
 | Title | `remaster_version` |
 |---|---|
 | HOME Menu (`menu`) | 29 |
+| **Instruction Manual (`ebird`)** | **5** |
 | Software Keyboard (`swkbd`) | 4 |
+| Download Play (`dlplay`) | 3 |
 | Mii Maker (`EDIT`) | 2 |
 | **Activity Log (`PLOG`)** | **2** |
 
-The Activity Log was updated twice in the console's lifetime, so version 2 is what sits on
-every modern firmware, including the final `11.17.0-50` (May 2023, the last 3DS update ever
-— and it did not touch the Activity Log). In practice the patch fits almost everyone.
+These titles were updated a handful of times in the console's lifetime, so their builds are
+what sits on every modern firmware, including the final `11.17.0-50` (May 2023, the last 3DS
+update ever — and it touched none of them). In practice the patch fits almost everyone.
 
 The build checks both `remaster_version` and the dump's sha256 and refuses to run on a
-mismatch. That does not protect an end user, so the archive carries a note: if the Activity
-Log crashes, the build is older and `luma/titles/0004001000022200` should be deleted.
+mismatch. That does not protect an end user, so the archive carries a note: if one of those
+titles crashes, its build is older and its folder under `luma/titles/` should be deleted.
 
-The same approach does not carry over to the Software Keyboard: it has neither the
-`FSUSER_OpenArchive` IPC nor a handle-backed archive class — its only archive class is romfs
-over a file. That would mean synthesising an archive class too, which is well past 96 bytes.
+The same approach does not carry over to the Software Keyboard or Download Play: they have
+neither the `FSUSER_OpenArchive` IPC nor a handle-backed archive class — their only archive
+class is romfs over a file. That would mean synthesising an archive class too, which is well
+past 96 bytes.
 
 ### What the mod does not translate
 
@@ -434,7 +472,15 @@ LayeredFS cannot reach ExeFS: Luma only redirects `romfs/`, `code.bin`, `code.ip
 
 **The system font.** See the section above — LayeredFS cannot replace it.
 
-All three limits come down to the same thing: they require modifying NAND. A "Tier 2" release for people who accept that — with a NAND backup and the appropriate warnings — is a separate thing and is not part of this release.
+**The text inside electronic manuals.** The Instruction Manual application itself is translated — `Back`, `Enlarge`, `Language`, `Page`, `Contents`, the language dialog. The document it displays is not.
+
+That document does not belong to the Instruction Manual. Every title ships its own electronic manual as a separate NCCH — content index 1 within that same title. The Instruction Manual reaches it through `ARCHIVE_SAVEDATA_AND_CONTENT`, reading the documented title's content directly.
+
+LayeredFS does not lead there. Luma's payload only intercepts mounts for `ARCHIVE_ROMFS` and only rewrites paths starting with `rom:` or the detected update mount — and of the ones Luma knows (`ro2:`, `rom2:`, `rex:`, `patch:`, `ext:`) the Instruction Manual's code contains none, only its own `rom:`. Luma has no mechanism for replacing content index 1 of a title.
+
+It is also not one document but one per title: the Activity Log has its own, System Settings has its own, every game has its own. Translating them means rebuilding and reinstalling each title's content.
+
+All four limits come down to the same thing: they require modifying NAND. A "Tier 2" release for people who accept that — with a NAND backup and the appropriate warnings — is a separate thing and is not part of this release.
 
 ### Other regions
 

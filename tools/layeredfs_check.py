@@ -39,7 +39,12 @@ sys.path.insert(0, str(Path(__file__).parent))
 import luma_hook  # noqa: E402
 from build import TITLES  # noqa: E402
 
-ROMFS_REDIR_PATCH_SIZE = 0xB4  # size of Luma's redirect payload
+# Size of Luma's redirect payload: 69 words in sysmodules/loader/source/romfsredir.s,
+# counting the trailing literals but not `romfsRedirPatchSize` itself, which sits after
+# _romfsRedirPatchEnd. Getting this wrong matters twice over - it decides whether Luma
+# takes the .text padding or throwFatalError(), and tools/luma_hook.py has to know which
+# bytes Luma will claim before it can place a stub.
+ROMFS_REDIR_PATCH_SIZE = 0x114
 PATH_STRING_SIZE = 39          # "/luma/titles/<16 hex>/romfs" plus terminator
 
 
@@ -216,6 +221,11 @@ def check(title_dir: Path) -> bool | None:
         return None
 
     exheader = exheader_path.read_bytes()
+    # A hook-patched title runs on the exheader we ship, not the dumped one, and that can
+    # widen text.size - which is exactly the range findLayeredFsSymbols() scans.
+    patched = luma_hook.has_patch(title_dir.name)
+    if patched:
+        exheader = luma_hook.patch_exheader(title_dir.name, exheader)
     text_size = struct.unpack_from("<I", exheader, 0x18)[0]
     ro_size = struct.unpack_from("<I", exheader, 0x28)[0]
     data_size = struct.unpack_from("<I", exheader, 0x38)[0]
@@ -240,9 +250,9 @@ def check(title_dir: Path) -> bool | None:
 
     # A title with a hook patch never runs unpatched: loader applies our code.ips before
     # it looks for the symbols, so that is the code the verdict has to be about.
-    if luma_hook.has_patch(title_dir.name):
+    if patched:
         code = luma_hook.patched_code(title_dir.name, code)
-        print(f"  code.ips from tools/luma_hook.py applied")
+        print(f"  code.ips + exheader.bin from tools/luma_hook.py applied")
 
     symbols = find_symbols(code, min(text_size, len(code)))
     got = {name: off for name, off in symbols.items() if off is not None}

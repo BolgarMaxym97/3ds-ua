@@ -79,7 +79,7 @@ TITLES = {
         "source_tid": "0004003000009B02",
         "lang": "EU_Russia",
         "ref_lang": "EU_English",
-        "blocked": "Luma 13.4 cannot hook this title (loader svcBreak on launch)",
+        "hook_patch": True,
     },
     # `container`: the text lives inside an LZ11+darc archive instead of plain folders.
     # `{lang}` in the path means one archive per language.
