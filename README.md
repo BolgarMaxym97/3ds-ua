@@ -1,6 +1,6 @@
 # 3DS UA
 
-Український інтерфейс для Nintendo 3DS. Ставиться як мод на SD-карту через LayeredFS (Luma3DS) — **системні файли в NAND не змінюються**.
+Український інтерфейс для Nintendo 3DS (work in progress). Ставиться як мод на SD-карту через LayeredFS (Luma3DS) — **системні файли в NAND не змінюються**.
 
 Ukrainian system UI for Nintendo 3DS. Installs as an SD-card mod via Luma3DS LayeredFS — **nothing in NAND is modified**.
 
@@ -74,6 +74,7 @@ NAND не змінювався, тому видалення нічого не л
 | Клавіатура з російськими літерами | Так і має бути: це кирилична розкладка для введення тексту. Українських `і ї є ґ` у системному шрифті немає, тож замінити їх на клавішах неможливо. |
 | `An exception occurred`, `Current process: loader` | Luma не змогла застосувати LayeredFS до титулу, який ви запускали, і зупинила консоль. Перейменуйте `SD:/luma/titles/<TID>/romfs` цього титулу на `_romfs` і перезавантажте — титул запуститься без перекладу. Напишіть в Issues з фото екрана помилки. |
 | HOME Menu не запускається | Видаліть `SD:/luma/titles/0004003000009802`. Напишіть в Issues, вказавши модель, регіон і версію системи. |
+| Журнал дій крешить | Його переклад містить правку коду титулу, зроблену під **Журнал дій версії 2 (EUR)** — цей білд стоїть на всіх сучасних прошивках. Якщо у вас старіший, видаліть `SD:/luma/titles/0004001000022200`: решта перекладу працюватиме як була. |
 | Порожні квадрати замість літер | Повідомте в Issues із фото — це баг, такого бути не повинно. |
 
 ### Чому `i` замість `і`
@@ -98,12 +99,12 @@ NAND не змінювався, тому видалення нічого не л
 | Меню HOME | ✅ перекладено |
 | Налаштування системи | ✅ перекладено |
 | Mii Maker | ✅ перекладено |
+| Журнал дій | ✅ перекладено, з правкою коду титулу — потрібна версія титулу 2 (див. нижче) |
 | Екранна клавіатура | ⛔ не входить |
-| Журнал дій | ⛔ не входить |
 | Гра по завантаженню | ⛔ не входить |
 | Посібник | ⛔ не входить |
 
-Чотири останні титули перекладені, але **не потрапляють в архів**: Luma не вміє під'єднати до них LayeredFS. Її завантажувач закінчує патч так:
+Три останні титули перекладені, але **не потрапляють в архів**: Luma не вміє під'єднати до них LayeredFS. Її завантажувач закінчує патч так:
 
 ```c
 if(isApp || isApplet) { ... if(!patchLayeredFs(...)) goto error; }
@@ -115,7 +116,56 @@ error:
 
 Тому «перекласти частково, щоб не падало» неможливо: справа не в тексті, а в самому титулі.
 
-Конкретна причина (перевірено `tools/layeredfs_check.py` на дампах їхнього коду): Luma не знаходить у них функцію **`fsMountArchive`** — жодна з двох її сигнатур не збігається з тим, як цю функцію скомпілювали. Решта чотирьох функцій і місце під payload у них є. Luma пробачає відсутність лише `fsUnmountArchive`, тож саме цієї бракує критично.
+#### Чому саме ці титули
+
+Luma шукає в коді титулу п'ять функцій FS. Чотири з них є всюди; бракує щоразу однієї — **`fsMountArchive`**, тієї, що монтує архів за його ID. Без неї Luma не має чим підключити папку на SD як архів `lf:`.
+
+Річ не в тому, що функція скомпільована незвично і сигнатура не збіглася. Її **немає взагалі**: в екранній клавіатурі в усьому коді нема жодного IPC-виклику `FSUSER_OpenArchive`, а в Журналі дій єдиний такий виклик захований усередині монтування extdata з бінарним шляхом.
+
+Корінь — в `exheader`, поле `accessInfo` (зсув 0x248):
+
+| Титул | `accessInfo` | `DirectSdmc` |
+|---|---|---|
+| Меню HOME | `0x0200000000310080` | є |
+| Mii Maker | `0x0000000000000081` | є |
+| Екранна клавіатура | `0x0000000000000001` | **нема** |
+| Журнал дій | `0x0000000000000001` | **нема** |
+
+Титули без права `DirectSdmc` не мають доступу до SD-карти, тому Nintendo просто не залінкувала в них код монтування SD. Працюють ті титули, у яких це право є.
+
+#### Як полагоджено Журнал дій
+
+Обидві частини можна дати з SD-карти, бо завантажувач Luma виконує їх у такому порядку:
+
+```c
+applyCodeIpsPatch(progId, code, size);   // /luma/titles/<TID>/code.ips
+...
+patchLayeredFs(...);                     // тут шукаються ті п'ять функцій
+```
+
+а `exheader` підміняється ще раніше, до створення процесу. Тому в архіві поряд з `romfs` для Журналу лежать ще два файли:
+
+| Файл | Що робить |
+|---|---|
+| `exheader.bin` | оригінальний exheader з піднятим бітом `DirectSdmc` |
+| `code.ips` | 96 байт: дописує `fsMountArchive`, якої в титулі не було |
+
+Стаб лягає поверх `throwFatalError()` — тієї самої функції, яку Luma сама затирає, коли їй бракує місця під власний payload. Сигнатурні слова, за якими Luma його знаходить, лежать за безумовним переходом і ніколи не виконуються; робоча частина складає виклик `FSUSER_OpenArchive` і стрибає в хвіст рідного монтування титулу, який виділяє об'єкт архіву з правильним vtable.
+
+⚠️ **Зсуви прив'язані до білда титулу, не до версії системи.** Ідентифікує білд поле `remaster_version` в exheader — скільки разів Nintendo взагалі оновлювала цей титул:
+
+| Титул | `remaster_version` |
+|---|---|
+| Меню HOME (`menu`) | 29 |
+| Екранна клавіатура (`swkbd`) | 4 |
+| Mii Maker (`EDIT`) | 2 |
+| **Журнал дій (`PLOG`)** | **2** |
+
+Журнал дій оновлювали двічі за весь час життя консолі, тож версія 2 стоїть на всіх сучасних прошивках, включно з останньою `11.17.0-50` (травень 2023, останнє оновлення 3DS взагалі — і Журнал дій у ньому не чіпали). Практично це означає, що патч підходить майже всім.
+
+Збірка звіряє `remaster_version` і sha256 дампа й падає, якщо білд інший. Кінцевого користувача це не захищає, тому в архіві є попередження: якщо Журнал дій крешить — білд старіший, треба видалити `luma/titles/0004001000022200`.
+
+Для екранної клавіатури цей самий підхід не працює: там немає ні IPC `FSUSER_OpenArchive`, ні класу архіву на handle — єдиний її клас архіву це romfs поверх файлу. Довелось би синтезувати ще й клас архіву, а це вже не 96 байт.
 
 ### Чого мод не перекладає
 
@@ -177,6 +227,7 @@ make sd SD=/Volumes/<назва_SD>   # скопіювати прямо на SD
 | `tools/fit.py` | чи влазить формулювання в бюджет ширини |
 | `tools/package.py` | ZIP для релізу |
 | `tools/layeredfs_check.py` | чи зможе Luma під'єднати LayeredFS до титулу |
+| `tools/luma_hook.py` | `code.ips` + `exheader.bin` для титулів, яких Luma не хукає сама |
 
 ### Як допомогти з перекладом
 
@@ -265,6 +316,7 @@ NAND was never touched, so removal cannot break anything.
 | Keyboard shows Russian letters | By design: that is the Cyrillic typing layout. The system font has no `і ї є ґ`, so the keys cannot be changed. |
 | `An exception occurred`, `Current process: loader` | Luma could not apply LayeredFS to the title you launched and halted the console. Rename that title's `SD:/luma/titles/<TID>/romfs` to `_romfs` and reboot — the title then starts untranslated. Please open an Issue with a photo of the error screen. |
 | HOME Menu won't boot | Delete `SD:/luma/titles/0004003000009802` and open an Issue with your model, region and system version. |
+| Activity Log crashes | Its translation carries a code patch built for **Activity Log version 2 (EUR)**, the build present on every modern firmware. If yours is older, delete `SD:/luma/titles/0004001000022200` — the rest of the mod keeps working. |
 | Empty boxes instead of letters | Please report with a photo — that's a bug. |
 
 ### Why `i` instead of `і`
@@ -280,12 +332,12 @@ So the build substitutes visually close glyphs that do exist: `і/І → i/I`, `
 | HOME Menu | ✅ translated |
 | System Settings | ✅ translated |
 | Mii Maker | ✅ translated |
+| Activity Log | ✅ translated, with a code patch — needs title version 2 (see below) |
 | Software Keyboard | ⛔ not shipped |
-| Activity Log | ⛔ not shipped |
 | Download Play | ⛔ not shipped |
 | Instruction Manual | ⛔ not shipped |
 
-The last four are translated but **kept out of the archive**: Luma cannot hook LayeredFS
+The last three are translated but **kept out of the archive**: Luma cannot hook LayeredFS
 into them. Its loader ends the patch with
 
 ```c
@@ -302,10 +354,75 @@ never even read.
 Shipping "just a few strings" for those titles is therefore not an option: the problem is
 the title, not the text.
 
-The precise cause (verified with `tools/layeredfs_check.py` against dumps of
-their code): Luma cannot find **`fsMountArchive`** in them — neither of its two signatures
-matches how that function was compiled. The other four functions and the payload space are
-present. Luma only tolerates a missing `fsUnmountArchive`, so this one is fatal.
+#### Why these titles
+
+Luma looks for five FS functions. Four are always there; the one that is missing is always
+**`fsMountArchive`**, the one that mounts an archive by ID. Without it Luma has no way to
+attach the SD folder as the `lf:` archive.
+
+It is not that the function was compiled in an unusual way and the signature missed it. The
+function is **not there at all**: the Software Keyboard contains no `FSUSER_OpenArchive` IPC
+call anywhere in its code, and the Activity Log's only one is buried inside an extdata mount
+that takes a binary path.
+
+The root cause is in the exheader, `accessInfo` at offset 0x248:
+
+| Title | `accessInfo` | `DirectSdmc` |
+|---|---|---|
+| HOME Menu | `0x0200000000310080` | yes |
+| Mii Maker | `0x0000000000000081` | yes |
+| Software Keyboard | `0x0000000000000001` | **no** |
+| Activity Log | `0x0000000000000001` | **no** |
+
+Titles without `DirectSdmc` have no access to the SD card, so Nintendo never linked any
+SD-mounting code into them. The titles that work are the ones that hold that right.
+
+#### How the Activity Log was fixed
+
+Both halves can be supplied from the SD card, because Luma's loader runs them in this order:
+
+```c
+applyCodeIpsPatch(progId, code, size);   // /luma/titles/<TID>/code.ips
+...
+patchLayeredFs(...);                     // where those five functions are searched for
+```
+
+and the exheader is replaced even earlier, before the process is created. So the archive
+carries two extra files next to the Activity Log's `romfs`:
+
+| File | What it does |
+|---|---|
+| `exheader.bin` | the original exheader with the `DirectSdmc` bit set |
+| `code.ips` | 96 bytes: adds the `fsMountArchive` the title never had |
+
+The stub is written over `throwFatalError()` — the same function Luma itself overwrites when
+it needs room for its own payload. The signature words Luma finds it by sit behind an
+unconditional branch and never execute; the working part assembles the `FSUSER_OpenArchive`
+call and jumps into the tail of the title's own mount routine, which allocates the archive
+object with the right vtable.
+
+⚠️ **The offsets are tied to a build of the title, not to a system version.** What
+identifies that build is `remaster_version` in the exheader — how many times Nintendo ever
+updated the title:
+
+| Title | `remaster_version` |
+|---|---|
+| HOME Menu (`menu`) | 29 |
+| Software Keyboard (`swkbd`) | 4 |
+| Mii Maker (`EDIT`) | 2 |
+| **Activity Log (`PLOG`)** | **2** |
+
+The Activity Log was updated twice in the console's lifetime, so version 2 is what sits on
+every modern firmware, including the final `11.17.0-50` (May 2023, the last 3DS update ever
+— and it did not touch the Activity Log). In practice the patch fits almost everyone.
+
+The build checks both `remaster_version` and the dump's sha256 and refuses to run on a
+mismatch. That does not protect an end user, so the archive carries a note: if the Activity
+Log crashes, the build is older and `luma/titles/0004001000022200` should be deleted.
+
+The same approach does not carry over to the Software Keyboard: it has neither the
+`FSUSER_OpenArchive` IPC nor a handle-backed archive class — its only archive class is romfs
+over a file. That would mean synthesising an archive class too, which is well past 96 bytes.
 
 ### What the mod does not translate
 

@@ -12,6 +12,10 @@ exception screen - the file contents are irrelevant, the loader never reads them
 This is a port of the two checks that decide it, from sysmodules/loader/source/patcher.c:
 findLayeredFsSymbols() and findLayeredFsPayloadOffset().
 
+For a title listed in tools/luma_hook.py the verdict is about the *patched* code: the
+loader applies /luma/titles/<TID>/code.ips before it searches for the symbols, so the
+unpatched dump is not what ever runs.
+
 Usage:
     python3 tools/layeredfs_check.py work/000400300000D002
 
@@ -32,6 +36,7 @@ import sys
 from pathlib import Path
 
 sys.path.insert(0, str(Path(__file__).parent))
+import luma_hook  # noqa: E402
 from build import TITLES  # noqa: E402
 
 ROMFS_REDIR_PATCH_SIZE = 0xB4  # size of Luma's redirect payload
@@ -201,13 +206,14 @@ def find_input(title_dir: Path, names: tuple[str, ...], patterns: tuple[str, ...
     return None
 
 
-def check(title_dir: Path) -> bool:
+def check(title_dir: Path) -> bool | None:
+    """True/False for a verdict, None when there is no dump to judge - not the same thing."""
     code_path = find_input(title_dir, ("code.bin", "code.dec.bin", ".code"), ("*.code",))
     exheader_path = find_input(title_dir, ("exheader.bin", "exthdr.bin"), ("*.exthdr",))
     if code_path is None or exheader_path is None:
         missing = "code" if code_path is None else "exheader"
-        print(f"{title_dir.name}: no {missing} file found (see tools/dump.md)")
-        return False
+        print(f"{title_dir.name}: no {missing} file found, skipped (see docs/dump-code.md)")
+        return None
 
     exheader = exheader_path.read_bytes()
     text_size = struct.unpack_from("<I", exheader, 0x18)[0]
@@ -231,6 +237,12 @@ def check(title_dir: Path) -> bool:
     if len(code) < sections:
         print(f"  !! code is shorter than text+ro+data ({sections}) - wrong or still-packed file")
         return False
+
+    # A title with a hook patch never runs unpatched: loader applies our code.ips before
+    # it looks for the symbols, so that is the code the verdict has to be about.
+    if luma_hook.has_patch(title_dir.name):
+        code = luma_hook.patched_code(title_dir.name, code)
+        print(f"  code.ips from tools/luma_hook.py applied")
 
     symbols = find_symbols(code, min(text_size, len(code)))
     got = {name: off for name, off in symbols.items() if off is not None}
@@ -266,9 +278,14 @@ def main() -> None:
     for target in targets:
         path = Path(target)
         ok = check(path)
+        if ok is None:
+            continue
         name = shipped.get(path.name)
         if name and not ok:
-            conflicts.append(f"{name} ({path.name}) is shipped but would crash - add `blocked` in TITLES")
+            conflicts.append(
+                f"{name} ({path.name}) is shipped but would crash - add `blocked` in TITLES, "
+                f"or a hook patch in tools/luma_hook.py"
+            )
         elif name is None and ok and path.name in {tid for cfg in TITLES.values() for tid in cfg["tids"]}:
             conflicts.append(f"{path.name} is marked blocked but looks hookable - re-test it on hardware")
 

@@ -14,6 +14,11 @@ Ukrainian whatever language the console currently runs.
 
 A title carrying a `blocked` reason is translated but never written to dist/ - see
 skip_blocked() for why shipping it would brick the title.
+
+A title carrying `hook_patch` is one Luma cannot hook on its own: next to its romfs the
+build also writes the code.ips and exheader.bin that make LayeredFS work at all. See
+tools/luma_hook.py. Those two files are mandatory for such a title - romfs alone is the
+exact situation `blocked` exists to prevent - so a missing dump aborts the build.
 """
 
 from __future__ import annotations
@@ -25,6 +30,7 @@ import sys
 from pathlib import Path
 
 sys.path.insert(0, str(Path(__file__).parent))
+import luma_hook  # noqa: E402
 import msbt as msbt_mod  # noqa: E402
 from store import open_store  # noqa: E402
 
@@ -52,12 +58,14 @@ TITLES = {
         "ref_lang": "EU_English",
         "blocked": "Luma 13.4 cannot hook this title (loader svcBreak on launch)",
     },
+    # `hook_patch`: the title has no fsMountArchive of its own and no DirectSdmc right,
+    # so LayeredFS only works once tools/luma_hook.py supplies both from the SD card.
     "activity_log": {
         "tids": ["0004001000022200"],
         "source_tid": "0004001000022200",
         "lang": "EU_Russian",
         "ref_lang": "EU_English",
-        "blocked": "Luma 13.4 cannot hook this title (loader svcBreak on launch)",
+        "hook_patch": True,
     },
     "download_play": {
         "tids": ["0004001000022100"],
@@ -175,10 +183,34 @@ def skip_blocked(name: str, cfg: dict) -> list[str]:
     return lines
 
 
+def prepare_hook_patch(name: str, tid: str) -> tuple[dict[str, bytes], list[str]]:
+    """Build the code.ips + exheader.bin that let Luma hook LayeredFS into `tid`.
+
+    Anything missing is fatal on purpose, and this runs before the build writes anything:
+    a title whose romfs reaches dist/ without the code patch is exactly the launch-time
+    svcBreak() the patch exists to avoid.
+    """
+    if not luma_hook.has_patch(tid):
+        raise SystemExit(f"{name}: {tid} needs a hook patch but tools/luma_hook.py has no entry for it")
+
+    dump = ROOT / "work" / tid
+    code, exheader = dump / "code.bin", dump / "exheader.bin"
+    missing = [p.relative_to(ROOT) for p in (code, exheader) if not p.is_file()]
+    if missing:
+        raise SystemExit(
+            f"{name}: cannot build the LayeredFS hook for {tid}, missing "
+            f"{', '.join(str(p) for p in missing)} (see docs/dump-code.md)"
+        )
+
+    return luma_hook.generate(tid, code, exheader)
+
+
 def build_title(name: str, table: dict[str, str]) -> list[str]:
     cfg = TITLES[name]
     if cfg.get("blocked"):
         return skip_blocked(name, cfg)
+
+    hooks = {tid: prepare_hook_patch(name, tid) for tid in cfg["tids"]} if cfg.get("hook_patch") else {}
 
     lang = cfg["lang"]
     romfs = ROOT / "work" / cfg["source_tid"] / "romfs"
@@ -217,6 +249,14 @@ def build_title(name: str, table: dict[str, str]) -> list[str]:
     for rel_path, blob in (cross_blobs | store.outputs(lang, updates)).items():
         for tid in cfg["tids"]:
             dest = ROOT / "dist" / "luma" / "titles" / tid / "romfs" / rel_path
+            dest.parent.mkdir(parents=True, exist_ok=True)
+            dest.write_bytes(blob)
+            written.append(f"{dest.relative_to(ROOT)} ({len(blob)} bytes)")
+
+    for tid, (files, log) in hooks.items():
+        written += [f"  {line}" for line in log]
+        for filename, blob in files.items():
+            dest = ROOT / "dist" / "luma" / "titles" / tid / filename
             dest.parent.mkdir(parents=True, exist_ok=True)
             dest.write_bytes(blob)
             written.append(f"{dest.relative_to(ROOT)} ({len(blob)} bytes)")
