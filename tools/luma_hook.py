@@ -117,6 +117,24 @@ HOOK_PATCHES: dict[str, dict] = {
             {"patch_at": 0x0DD7C, "return_to": 0x0DD80},
         ],
     },
+    # Software Keyboard (swkbd), EUR, title version 4. Same shape as Download Play.
+    #
+    # It has a third OpenFileDirectly call site at 0x6F7C0, but that one opens
+    # ARCHIVE_SAVEDATA_AND_CONTENT (0x2345678A), not the RomFS - it is left alone.
+    "000400300000D002": {
+        "title": "Software Keyboard (swkbd) EUR",
+        "title_version": 4,
+        "code_sha256": "a0b78005b0a99116ca703bc9b7625ce1b0f2d4cc45f66fc6fb9ab8a34244d4f0",
+        "kind": "romfs_from_sd",
+        "image_name": "swkbd_romfs.bin",
+        "stub_off": 0x9F074,        # .text page padding
+        "stub_room": 3980,
+        # 0x14944 feeds the archive registered as "rom:", 0xE958 is the second reader.
+        "sites": [
+            {"patch_at": 0x14944, "return_to": 0x14948},
+            {"patch_at": 0x0E958, "return_to": 0x0E95C},
+        ],
+    },
 }
 
 # Stack layout the OpenFileDirectly wrapper reads its arguments from, shared by both sites.

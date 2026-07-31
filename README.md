@@ -71,11 +71,11 @@ NAND не змінювався, тому видалення нічого не л
 | Російською, галочка стоїть | Перевірте шлях: має бути `luma/titles/...`, а не `luma/luma/titles/...`. Регістр TID не важливий. |
 | У списку мов немає `Українська` | Не скопійовано файл Налаштувань системи (`0004001000022000`) або мод стоїть не на EUR-консоль. |
 | Частина тексту не українською | Це нормально: технічні рядки (`OK`, `Miiverse`, формати дат) залишені як є. |
-| Клавіатура з російськими літерами | Так і має бути: це кирилична розкладка для введення тексту. Українських `і ї є ґ` у системному шрифті немає, тож замінити їх на клавішах неможливо. |
+| На клавіатурі `i` замість `і`, `ε` замість `є` | Так і має бути — та сама заміна, що й у решті інтерфейсу: цих літер у системному шрифті немає. Клавіші стоять на українських позиціях (`ы`→`і`, `ъ`→`ї`, `э`→`є`), а на місці `ё` тепер апостроф. |
 | `An exception occurred`, `Current process: loader` | Luma не змогла застосувати LayeredFS до титулу, який ви запускали, і зупинила консоль. Перейменуйте `SD:/luma/titles/<TID>/romfs` цього титулу на `_romfs` і перезавантажте — титул запуститься без перекладу. Напишіть в Issues з фото екрана помилки. |
 | HOME Menu не запускається | Видаліть `SD:/luma/titles/0004003000009802`. Напишіть в Issues, вказавши модель, регіон і версію системи. |
-| Журнал дій, Посібник або Гра по завантаженню крешить | Їхній переклад містить правку коду титулу, зроблену під **Журнал дій версії 2**, **Посібник версії 5**, **Гру по завантаженню версії 3** (EUR) — ці білди стоять на всіх сучасних прошивках. Якщо у вас старіший, видаліть папку відповідного титулу: `0004001000022200`, `0004003000009B02`, `0004001000022100`. Решта перекладу працюватиме як була. |
-| Гра по завантаженню не завантажується | Видаліть `SD:/luma/titles/0004001000022100` **цілком**. Вона читає свій romfs з SD-карти, тому `code.ips` без `dlplay_romfs.bin` її ламає — видаляти частинами не можна. |
+| Титул крешить після встановлення | Переклади Журналу дій, Посібника, Гри по завантаженню й клавіатури містять правку коду титулу — під версії **2**, **5**, **3** і **4** відповідно (EUR). Ці білди стоять на всіх сучасних прошивках. Якщо у вас старіший, видаліть папку того титулу: `0004001000022200`, `0004003000009B02`, `0004001000022100`, `000400300000D002`. Решта перекладу працюватиме як була. |
+| Гра по завантаженню або клавіатура не завантажується | Видаліть `SD:/luma/titles/0004001000022100` чи `SD:/luma/titles/000400300000D002` **цілком**. Вони читають свій romfs з SD-карти, тому `code.ips` без відповідного `*_romfs.bin` їх ламає — видаляти частинами не можна. |
 | Порожні квадрати замість літер | Повідомте в Issues із фото — це баг, такого бути не повинно. |
 
 ### Чому `i` замість `і`
@@ -93,6 +93,23 @@ NAND не змінювався, тому видалення нічого не л
 
 Заміну робить збірка автоматично — у файлах перекладу текст записаний нормальною українською.
 
+### Українська розкладка клавіатури
+
+Системна клавіатура тепер українська, а не російська. Це вийшло зробити тому, що розкладка лежить не в коді й не в текстурах, а в тому самому MSBT, який мод і так підміняє (`qwerty_keytop_ru`, `euro_keytop_05`, `cell_*_cyrillic`).
+
+Російський набір має рівно чотири літери, яких немає в українській — `ё ъ ы э`. У справжній українській розкладці ЙЦУКЕН на цих самих клавішах стоять `ґ ї і є`, тож заміна не довільна: кожна літера там, де її очікує той, хто друкує українською.
+
+| Було | Стало | Показується |
+|---|---|---|
+| `ы` | `і` | `i` |
+| `ъ` | `ї` | `ï` |
+| `э` | `є` | `ε` |
+| `ё` | `'` | `'` |
+
+Окремої клавіші `ґ` немає навмисно: у моді вона й так показується як `г`, тож така клавіша видавала б символ, невідрізнимий від `г`. Апостроф корисніший — в українській він потрібен постійно (`об'єкт`, `п'ять`), а на цій розкладці його не було зовсім.
+
+У списку мов словника пункт `Русский` підписаний як `українс.` — це той самий пункт, що вмикає кириличну клавіатуру.
+
 ### Що входить у реліз
 
 | Титул | Стан |
@@ -103,9 +120,9 @@ NAND не змінювався, тому видалення нічого не л
 | Журнал дій | ✅ перекладено, з правкою коду титулу — потрібна версія титулу 2 (див. нижче) |
 | Посібник | ✅ перекладено, з правкою коду титулу — потрібна версія титулу 5 (див. нижче) |
 | Гра по завантаженню | ✅ перекладено, повною підміною romfs — потрібна версія титулу 3 (див. нижче) |
-| Екранна клавіатура | ⛔ не входить |
+| Екранна клавіатура | ✅ перекладено, повною підміною romfs — потрібна версія титулу 4 (див. нижче) |
 
-Екранна клавіатура перекладена, але **не потрапляє в архів**: Luma не вміє під'єднати до неї LayeredFS. Її завантажувач закінчує патч так:
+Два останні титули потрапили в реліз не через LayeredFS — Luma не вміє під'єднати його до них. Її завантажувач закінчує патч так:
 
 ```c
 if(isApp || isApplet) { ... if(!patchLayeredFs(...)) goto error; }
@@ -179,8 +196,8 @@ patchLayeredFs(...);                     // тут шукаються ті п'я
 |---|---|
 | Меню HOME (`menu`) | 29 |
 | **Посібник (`ebird`)** | **5** |
-| Екранна клавіатура (`swkbd`) | 4 |
-| Гра по завантаженню (`dlplay`) | 3 |
+| **Клавіатура (`swkbd`)** | **4** |
+| **Гра по завантаженню (`dlplay`)** | **3** |
 | Mii Maker (`EDIT`) | 2 |
 | **Журнал дій (`PLOG`)** | **2** |
 
@@ -208,7 +225,7 @@ LayeredFS тут не задіяний узагалі: теки `romfs` для �
 
 Образ збирається з повного оригінального дерева — підмінюються тільки файли російського слота, решта мов лишається на місці. Тому спосіб видалення «переключити мову консолі» працює і для нього.
 
-Екранна клавіатура влаштована так само і, найпевніше, лікується тим самим способом — просто цього ще не зроблено й не перевірено на консолі. Поки що вона в архів не входить.
+Екранна клавіатура влаштована так само й полагоджена тим самим способом: два її romfs-сайти (`0x14944` — з нього будується `rom:`, і `0xE958`) перенаправлені на `swkbd_romfs.bin`. Третій виклик `OpenFileDirectly` за адресою `0x6F7C0` не чіпається — він відкриває `ARCHIVE_SAVEDATA_AND_CONTENT`, а не romfs.
 
 ### Чого мод не перекладає
 
@@ -216,9 +233,9 @@ LayeredFS тут не задіяний узагалі: теки `romfs` для �
 
 LayeredFS до ExeFS не дістає — Luma підміняє лише `romfs/`, `code.bin`, `code.ips`, `exheader.bin` і `locale.txt`. Щоб змінити SMDH, треба перезібрати й перевстановити сам титул, тобто **писати в NAND** — а весь сенс проєкту в тому, що мод ставиться й зноситься копіюванням папки. Тому підписи іконок залишаються мовою слота.
 
-**Кирилична розкладка клавіатури.** Літери на клавішах — російський набір ЙЦУКЕН. Українських `і ї є ґ` у системному шрифті немає, тож на клавішах були б порожні квадрати, а введення вставляло б символи, які консоль не намалює.
-
 **Системний шрифт.** Див. розділ вище — LayeredFS шрифт не підміняє.
+
+**Справжні українські літери з клавіатури.** Розкладка українська (див. нижче), але клавіші `і ї є` вводять `i ï ε` — ті самі гліфи-замінники, що й у решті мода. На консолі це виглядає правильно й узгоджено, проте назовні — в імені Mii, назві папки, дописі — це латиниця й грецька, а не український текст. Інакше ніяк: справжні літери потребують іншого шрифту, тобто правки NAND.
 
 **Текст усередині електронних посібників.** Перекладено сам застосунок Посібника — `Назад`, `Збільшити`, `Мова`, `Стор.`, `Зміст`, діалог вибору мови. А от документ, який він показує, лишається мовою слота.
 
@@ -364,11 +381,11 @@ NAND was never touched, so removal cannot break anything.
 | Still Russian, option is on | Check the path: it must be `luma/titles/...`, not `luma/luma/titles/...`. |
 | No `Українська` in the language list | The System Settings file (`0004001000022000`) was not copied, or the console is not an EUR one. |
 | Some text is not Ukrainian | Expected: technical strings (`OK`, `Miiverse`, date formats) are intentionally left as-is. |
-| Keyboard shows Russian letters | By design: that is the Cyrillic typing layout. The system font has no `і ї є ґ`, so the keys cannot be changed. |
+| The keyboard shows `i` for `і`, `ε` for `є` | By design — the same substitution as everywhere else in the mod: those letters are not in the system font. The keys sit in their Ukrainian positions (`ы`→`і`, `ъ`→`ї`, `э`→`є`), and `ё` now carries the apostrophe. |
 | `An exception occurred`, `Current process: loader` | Luma could not apply LayeredFS to the title you launched and halted the console. Rename that title's `SD:/luma/titles/<TID>/romfs` to `_romfs` and reboot — the title then starts untranslated. Please open an Issue with a photo of the error screen. |
 | HOME Menu won't boot | Delete `SD:/luma/titles/0004003000009802` and open an Issue with your model, region and system version. |
-| Activity Log, Instruction Manual or Download Play crashes | Their translations carry a code patch built for **Activity Log version 2**, **Instruction Manual version 5**, **Download Play version 3** (EUR), the builds present on every modern firmware. If yours is older, delete that title's folder: `0004001000022200`, `0004003000009B02`, `0004001000022100`. The rest of the mod keeps working. |
-| Download Play will not load | Delete `SD:/luma/titles/0004001000022100` **as a whole**. It reads its RomFS off the SD card, so `code.ips` without `dlplay_romfs.bin` breaks it — it cannot be removed piecemeal. |
+| A title crashes after installing | The Activity Log, Instruction Manual, Download Play and Software Keyboard translations carry a code patch — for versions **2**, **5**, **3** and **4** respectively (EUR). Those builds are on every modern firmware. If yours is older, delete that title's folder: `0004001000022200`, `0004003000009B02`, `0004001000022100`, `000400300000D002`. The rest of the mod keeps working. |
+| Download Play or the Software Keyboard will not load | Delete `SD:/luma/titles/0004001000022100` or `SD:/luma/titles/000400300000D002` **as a whole**. They read their RomFS off the SD card, so `code.ips` without the matching `*_romfs.bin` breaks them — they cannot be removed piecemeal. |
 | Empty boxes instead of letters | Please report with a photo — that's a bug. |
 
 ### Why `i` instead of `і`
@@ -376,6 +393,30 @@ NAND was never touched, so removal cannot break anything.
 The 3DS shared font contains only 66 Cyrillic glyphs (the Russian set). The Ukrainian-specific `і ї є ґ І Ї Є Ґ` are **missing**, and replacing the system font requires modifying NAND — which this project deliberately avoids.
 
 So the build substitutes visually close glyphs that do exist: `і/І → i/I`, `ї/Ї → ï/Ï`, `є/Є → ε/Ε` (Greek), `ґ/Ґ → г/Г`. Translation files store proper Ukrainian; substitution happens at build time.
+
+### The Ukrainian keyboard layout
+
+The system keyboard is now Ukrainian rather than Russian. That turned out to be possible
+because the layout lives neither in code nor in textures, but in the very MSBT the mod
+already replaces (`qwerty_keytop_ru`, `euro_keytop_05`, `cell_*_cyrillic`).
+
+The Russian set has exactly four letters Ukrainian does not use — `ё ъ ы э`. On a real
+Ukrainian ЙЦУКЕН layout those same keys carry `ґ ї і є`, so the swap is not arbitrary:
+every letter sits where a Ukrainian typist expects it.
+
+| Was | Now | Shown as |
+|---|---|---|
+| `ы` | `і` | `i` |
+| `ъ` | `ї` | `ï` |
+| `э` | `є` | `ε` |
+| `ё` | `'` | `'` |
+
+There is deliberately no `ґ` key: in this mod `ґ` renders as `г` anyway, so such a key
+would produce something indistinguishable from `г`. The apostrophe is more useful —
+Ukrainian needs it constantly (`об'єкт`, `п'ять`) and this layout had none at all.
+
+In the dictionary language list, the `Русский` entry is labelled `українс.` — it is the
+same entry that switches the keyboard to Cyrillic.
 
 ### What is in the release
 
@@ -387,10 +428,10 @@ So the build substitutes visually close glyphs that do exist: `і/І → i/I`, `
 | Activity Log | ✅ translated, with a code patch — needs title version 2 (see below) |
 | Instruction Manual | ✅ translated, with a code patch — needs title version 5 (see below) |
 | Download Play | ✅ translated, by replacing its whole RomFS — needs title version 3 (see below) |
-| Software Keyboard | ⛔ not shipped |
+| Software Keyboard | ✅ translated, by replacing its whole RomFS — needs title version 4 (see below) |
 
-The Software Keyboard is translated but **kept out of the archive**: Luma cannot hook
-LayeredFS into it. Its loader ends the patch with
+The last two are in the release by a different route than LayeredFS — Luma cannot hook it
+into them. Its loader ends the patch with
 
 ```c
 if(isApp || isApplet) { ... if(!patchLayeredFs(...)) goto error; }
@@ -485,8 +526,8 @@ updated the title:
 |---|---|
 | HOME Menu (`menu`) | 29 |
 | **Instruction Manual (`ebird`)** | **5** |
-| Software Keyboard (`swkbd`) | 4 |
-| Download Play (`dlplay`) | 3 |
+| **Software Keyboard (`swkbd`)** | **4** |
+| **Download Play (`dlplay`)** | **3** |
 | Mii Maker (`EDIT`) | 2 |
 | **Activity Log (`PLOG`)** | **2** |
 
@@ -531,8 +572,10 @@ The image is rebuilt from the complete original tree — only the replaced slot'
 differ, every other language stays in it. That keeps "switch the console language back"
 working as a way to undo the mod here too.
 
-The Software Keyboard is built the same way and most likely yields to the same treatment —
-that just has not been done or tested on hardware yet, so it stays out of the archive.
+The Software Keyboard is built the same way and is fixed the same way: its two RomFS sites
+(`0x14944`, which feeds `rom:`, and `0xE958`) are pointed at `swkbd_romfs.bin`. Its third
+`OpenFileDirectly` call at `0x6F7C0` is left alone — that one opens
+`ARCHIVE_SAVEDATA_AND_CONTENT`, not the RomFS.
 
 ### What the mod does not translate
 
@@ -540,9 +583,9 @@ that just has not been done or tested on hardware yet, so it stays out of the ar
 
 LayeredFS cannot reach ExeFS: Luma only redirects `romfs/`, `code.bin`, `code.ips`, `exheader.bin` and `locale.txt`. Changing an SMDH means rebuilding and reinstalling the title itself, i.e. **writing to NAND** — and the whole point of this project is a mod you install and remove by copying a folder. So icon labels stay in the slot's original language.
 
-**Cyrillic keyboard layout.** The key caps are the Russian ЙЦУКЕН set. The system font has no `і ї є ґ`, so replacing them would show empty boxes on the keys and type characters the console cannot render.
-
 **The system font.** See the section above — LayeredFS cannot replace it.
+
+**Real Ukrainian letters from the keyboard.** The layout is Ukrainian (see below), but the `і ї є` keys type `i ï ε` — the same substitute glyphs the rest of the mod uses. On the console that reads correctly and consistently; outside it — in a Mii name, a folder name, a post — it is Latin and Greek, not Ukrainian text. There is no way around it: real letters need a different font, which means modifying NAND.
 
 **The text inside electronic manuals.** The Instruction Manual application itself is translated — `Back`, `Enlarge`, `Language`, `Page`, `Contents`, the language dialog. The document it displays is not.
 

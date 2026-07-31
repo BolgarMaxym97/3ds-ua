@@ -52,12 +52,13 @@ TITLES = {
         "lang": "EU_Russian",
         "ref_lang": "EU_English",
     },
+    # Ships a whole RomFS image, like download_play - see the note there.
     "keyboard": {
         "tids": ["000400300000D002"],  # swkbd applet, EUR
         "source_tid": "000400300000D002",
         "lang": "EU_Russian",
         "ref_lang": "EU_English",
-        "blocked": "Luma 13.4 cannot hook this title (loader svcBreak on launch)",
+        "hook_patch": True,
     },
     # `hook_patch`: the title has no fsMountArchive of its own and no DirectSdmc right,
     # so LayeredFS only works once tools/luma_hook.py supplies both from the SD card.
