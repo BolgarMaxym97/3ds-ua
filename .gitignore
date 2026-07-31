@@ -1,11 +1,13 @@
 work/
 dist/
 tmp/
+dumps/
 *.app
 *.firm
 *.bcfnt
 *.bcfnt.lz
 
+crash_dump_*.dmp
 nand_backup/
 nand*.bin
 *.sha

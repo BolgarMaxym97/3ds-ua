@@ -11,12 +11,16 @@ the result is LZ11-packed into dist/luma/titles/<TID>/romfs/<same path>.
 An optional `_all_langs.json` next to a title's strings holds labels that go into EVERY
 language slot instead of only the replaced one - used so the language picker advertises
 Ukrainian whatever language the console currently runs.
+
+A title carrying a `blocked` reason is translated but never written to dist/ - see
+skip_blocked() for why shipping it would brick the title.
 """
 
 from __future__ import annotations
 
 import argparse
 import json
+import shutil
 import sys
 from pathlib import Path
 
@@ -28,41 +32,54 @@ ROOT = Path(__file__).resolve().parent.parent
 
 # Titles: strings project name -> target TIDs, language slot, dump used as source.
 #
-# The slot is the language folder we replace. English is a deliberate choice: strings
-# left untranslated (new ones after a system update, purely numeric ones, ...) stay
-# English instead of Russian. The console language must be set to English.
+# `lang` is the language folder we replace: the Russian one, so Russian disappears from
+# the console and Ukrainian takes its place while English stays untouched. Note the
+# Instruction Manual spells it "EU_Russia" without the final "n".
+#
+# `ref_lang` is the folder extract.py reads the `en` reference from - the translation is
+# written against English, not against the slot being overwritten.
 TITLES = {
     "home_menu": {
         "tids": ["0004003000009802"],  # EUR; JPN 0004003000008202, USA 0004003000008F02 once tested
         "source_tid": "0004003000009802",
-        "lang": "EU_English",
+        "lang": "EU_Russian",
+        "ref_lang": "EU_English",
     },
     "keyboard": {
         "tids": ["000400300000D002"],  # swkbd applet, EUR
         "source_tid": "000400300000D002",
-        "lang": "EU_English",
+        "lang": "EU_Russian",
+        "ref_lang": "EU_English",
+        "blocked": "Luma 13.4 cannot hook this title (loader svcBreak on launch)",
     },
     "activity_log": {
         "tids": ["0004001000022200"],
         "source_tid": "0004001000022200",
-        "lang": "EU_English",
+        "lang": "EU_Russian",
+        "ref_lang": "EU_English",
+        "blocked": "Luma 13.4 cannot hook this title (loader svcBreak on launch)",
     },
     "download_play": {
         "tids": ["0004001000022100"],
         "source_tid": "0004001000022100",
-        "lang": "EU_English",
+        "lang": "EU_Russian",
+        "ref_lang": "EU_English",
+        "blocked": "Luma 13.4 cannot hook this title (loader svcBreak on launch)",
     },
     "manual": {
         "tids": ["0004003000009B02"],  # Instruction Manual applet, EUR
         "source_tid": "0004003000009B02",
-        "lang": "EU_English",
+        "lang": "EU_Russia",
+        "ref_lang": "EU_English",
+        "blocked": "Luma 13.4 cannot hook this title (loader svcBreak on launch)",
     },
     # `container`: the text lives inside an LZ11+darc archive instead of plain folders.
     # `{lang}` in the path means one archive per language.
     "system_settings": {
         "tids": ["0004001000022000"],
         "source_tid": "0004001000022000",
-        "lang": "EU_English",
+        "lang": "EU_Russian",
+        "ref_lang": "EU_English",
         "container": "message_EU_LZ.bin",
         # Labels sharing one on-screen slot: the language picker rows and the
         # rating-name rows are as wide as their longest sibling, not their own original.
@@ -74,7 +91,8 @@ TITLES = {
     "mii_maker": {
         "tids": ["0004001000022700"],
         "source_tid": "0004001000022700",
-        "lang": "EU_English",
+        "lang": "EU_Russian",
+        "ref_lang": "EU_English",
         "container": "message/{lang}.arc",
     },
 }
@@ -138,8 +156,30 @@ def patch_other_langs(
     return stats, blobs
 
 
+def skip_blocked(name: str, cfg: dict) -> list[str]:
+    """Keep a title Luma cannot hook out of dist/ - shipping it bricks that title.
+
+    Luma's loader ends patchCode() with `if(!patchLayeredFs(...)) goto error;` and the
+    error label is `svcBreak(USERBREAK_ASSERT)`. The check that leads there only runs
+    when /luma/titles/<TID>/romfs exists, so a romfs folder for a title whose code has
+    no hookable FS symbols (or no room for the redirect payload) turns every launch of
+    that title into an exception screen. Output from an earlier build is removed too,
+    otherwise `make package` would keep shipping it.
+    """
+    lines = [f"{name}: SKIPPED - {cfg['blocked']}"]
+    for tid in cfg["tids"]:
+        stale = ROOT / "dist" / "luma" / "titles" / tid
+        if stale.is_dir():
+            shutil.rmtree(stale)
+            lines.append(f"  removed stale {stale.relative_to(ROOT)}")
+    return lines
+
+
 def build_title(name: str, table: dict[str, str]) -> list[str]:
     cfg = TITLES[name]
+    if cfg.get("blocked"):
+        return skip_blocked(name, cfg)
+
     lang = cfg["lang"]
     romfs = ROOT / "work" / cfg["source_tid"] / "romfs"
     store = open_store(cfg, romfs)

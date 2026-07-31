@@ -12,8 +12,9 @@ Rules (every violation is an error):
   3. more lines than the tallest official localisation would overflow the dialog
   4. a control tag that appears in no official localisation of that label is invented
   5. a malformed tag token
-  6. format specifiers (%d, %ls, %H, ...) differ from the original: the app would print
-     garbage or crash
+  6. the set of format specifiers (%d, %ls, %H, ...) matches no official localisation of
+     that label: the app would print garbage or crash. Any localisation's set is accepted,
+     because languages legitimately differ (%d %n '%y in English vs %d.%M.%y in German).
 
 Labels that share one UI slot (e.g. every entry of the language list) can be grouped
 with `budget_groups` regexes in TITLES: the group's widest member sets the budget for
@@ -54,6 +55,7 @@ class Budget:
     width_px: int = 0
     lines: int = 0
     tags: set[str] = field(default_factory=set)
+    format_sets: set[tuple[str, ...]] = field(default_factory=set)
 
 
 def load_charset() -> set[int]:
@@ -93,6 +95,7 @@ def label_budgets(name: str, widths: dict[int, int]) -> dict[str, Budget]:
                 budget.width_px = max(budget.width_px, pixel_width(text, widths))
                 budget.lines = max(budget.lines, text.count("\n") + 1)
                 budget.tags |= set(TOKEN_RE.findall(text))
+                budget.format_sets.add(tuple(sorted(FORMAT_RE.findall(text))))
 
     for pattern in cfg.get("budget_groups", []):
         group = [label for label in budgets if re.fullmatch(pattern, label)]
@@ -102,6 +105,7 @@ def label_budgets(name: str, widths: dict[int, int]) -> dict[str, Budget]:
             width_px=max(budgets[label].width_px for label in group),
             lines=max(budgets[label].lines for label in group),
             tags=set().union(*(budgets[label].tags for label in group)),
+            format_sets=set().union(*(budgets[label].format_sets for label in group)),
         )
         for label in group:
             budgets[label] = shared
@@ -127,10 +131,10 @@ def check_entry(
         if not TOKEN_RE.fullmatch(brace):
             problems.append(f"{label}: malformed tag token {brace!r}")
 
-    src_formats = sorted(FORMAT_RE.findall(entry.get("en", "")))
-    dst_formats = sorted(FORMAT_RE.findall(ua))
-    if src_formats != dst_formats:
-        problems.append(f"{label}: format specifiers {dst_formats} do not match the original {src_formats}")
+    dst_formats = tuple(sorted(FORMAT_RE.findall(ua)))
+    if budget.format_sets and dst_formats not in budget.format_sets:
+        allowed = sorted(budget.format_sets)
+        problems.append(f"{label}: format specifiers {list(dst_formats)} match no localisation {allowed}")
 
     unknown = set(TOKEN_RE.findall(ua)) - budget.tags
     if unknown:

@@ -161,7 +161,7 @@
   },
   "week_graduation_format_start": {
     "en": "%d %n '%y\n",
-    "ua": ""
+    "ua": "З %d.%M.%y"
   },
   "week_graduation_format_end": {
     "en": "to %d %n '%y",
@@ -557,11 +557,11 @@
   },
   "walk_scale_origin_format": {
     "en": "%d",
-    "ua": ""
+    "ua": "Кроки: %d"
   },
   "walk_scale_format": {
     "en": "%d",
-    "ua": ""
+    "ua": "Кроки: %d"
   },
   "play_record_scale_origin_format_h": {
     "en": "%Hhr",

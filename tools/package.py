@@ -20,16 +20,19 @@ ROOT = Path(__file__).resolve().parent.parent
 
 README_TXT = """3DS UA — український інтерфейс для Nintendo 3DS (версія {version})
 
+Мод підміняє російський мовний слот українською. Англійська лишається недоторканою.
+Потрібна EUR-консоль з Luma3DS.
+
 ВСТАНОВЛЕННЯ
 1. Розпакуйте вміст цього архіву в корінь SD-карти (папка luma має злитися з наявною).
 2. Вставте SD у консоль. Тримайте SELECT і увімкніть консоль.
 3. Увімкніть "Enable game patching" (кнопка A), натисніть START — зберегти й перезавантажити.
-4. System Settings -> Language -> English.
+4. System Settings -> Other Settings -> Language -> Українська (пункт, де було "Русский").
 5. Перезавантажте консоль.
 
 ВИДАЛЕННЯ
-Видаліть з SD-карти папку: luma/titles/0004003000009802
-Або переключіть мову консолі на будь-яку, крім English.
+Видаліть папки мода з luma/titles/ на SD-карті,
+або переключіть мову консолі на будь-яку іншу.
 
 Повна інструкція: https://github.com/BolgarMaxym97/3ds-ua
 """
@@ -42,7 +45,10 @@ def main() -> None:
         raise SystemExit("no dist/ directory - run `make build` first")
 
     archive = ROOT / f"3ds-ua-{version}.zip"
-    files = sorted(p for p in dist.rglob("*") if p.is_file())
+    # Finder litters dist/ with .DS_Store; those must not reach the SD card.
+    files = sorted(
+        p for p in dist.rglob("*") if p.is_file() and not any(part.startswith(".") for part in p.parts)
+    )
     if not files:
         raise SystemExit("dist/ is empty")
 

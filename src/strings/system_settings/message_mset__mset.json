@@ -941,7 +941,7 @@
   },
   "us_english": {
     "en": "English",
-    "ua": "Українська"
+    "ua": ""
   },
   "us_french": {
     "en": "Français",
@@ -957,7 +957,7 @@
   },
   "eu_english": {
     "en": "English",
-    "ua": "Українська"
+    "ua": ""
   },
   "eu_french": {
     "en": "Français",
@@ -985,7 +985,7 @@
   },
   "eu_russian": {
     "en": "Русский",
-    "ua": ""
+    "ua": "Українська"
   },
   "tw_trad_chinese": {
     "en": "繁体中国語",
@@ -993,7 +993,7 @@
   },
   "tw_english": {
     "en": "English",
-    "ua": "Українська"
+    "ua": ""
   },
   "dlg_language_set": {
     "en": "Language set to English.",
@@ -1965,7 +1965,7 @@
   },
   "net_new_wps2_0": {
     "en": "PIN Code: %08d",
-    "ua": ""
+    "ua": "PIN-код: %08d"
   },
   "net_new_wps2_1": {
     "en": "After entering the code into\nthe access point settings,\ntouch Next.",

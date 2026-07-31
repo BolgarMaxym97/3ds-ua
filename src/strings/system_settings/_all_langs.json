@@ -1,10 +1,7 @@
 {
-  "_comment": "Strings written into EVERY language slot, not just the one we replace. The language picker must advertise Ukrainian in whatever language the console currently runs, otherwise a German or Russian user has no way to know that 'English' now leads to Ukrainian. Everything else in those slots stays in its own language. Keys mirror src/strings/<title>/<key>.json; labels are looked up per slot.",
+  "_comment": "Strings written into EVERY language slot, not just the one we replace. The language picker must advertise Ukrainian in whatever language the console currently runs, otherwise a user on a German or French console has no way to know that the Russian entry now leads to Ukrainian. Everything else in those slots stays in its own language. Keys mirror src/strings/<title>/<key>.json; labels are looked up per slot.",
   "message_mset__mset": {
-    "eu_english": "Українська",
-    "us_english": "Українська",
-    "tw_english": "Українська",
-    "st_eu_lang_u1": "Виберіть мову.\nChoisissez la langue.\nSprache auswählen.\nElige un idioma.\nScegli la lingua.\nKies een taal.\nEscolha um idioma.\nВыберите язык.",
-    "st_us_lang_u1": "Виберіть мову.\nChoisissez la langue.\nElige un idioma.\nEscolha um idioma."
+    "eu_russian": "Українська",
+    "st_eu_lang_u1": "Select a language.\nChoisissez la langue.\nSprache auswählen.\nElige un idioma.\nScegli la lingua.\nKies een taal.\nEscolha um idioma.\nВиберіть мову."
   }
 }

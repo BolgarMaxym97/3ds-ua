@@ -7,8 +7,8 @@ Usage:
 Output: src/strings/<title>/<message_dir>__<file>.json
     { "<label>": { "en": "...", "ua": "..." }, ... }
 
-`en` is the original of the slot we replace, which doubles as the fallback for
-untranslated strings. To see the other official localisations of a label, run
+`en` is the English original, which is what the translation is written against - the slot
+being overwritten is a different language (see TITLES). To see other localisations, run
 `python3 tools/fit.py <title> --list <label>`.
 
 Existing `ua` values are preserved, so the script is safe to re-run after a system
@@ -39,7 +39,7 @@ def extract_title(name: str) -> list[tuple[str, int, int]]:
     out_dir.mkdir(parents=True, exist_ok=True)
 
     results = []
-    for key, data in sorted(store.read(cfg["lang"]).items()):
+    for key, data in sorted(store.read(cfg.get("ref_lang", cfg["lang"])).items()):
         msbt = parse(data)
         out_file = out_dir / f"{key}.json"
         existing = json.loads(out_file.read_text(encoding="utf-8")) if out_file.exists() else {}
