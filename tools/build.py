@@ -32,6 +32,7 @@ from pathlib import Path
 sys.path.insert(0, str(Path(__file__).parent))
 import luma_hook  # noqa: E402
 import msbt as msbt_mod  # noqa: E402
+import romfs  # noqa: E402
 from store import open_store  # noqa: E402
 
 ROOT = Path(__file__).resolve().parent.parent
@@ -67,12 +68,15 @@ TITLES = {
         "ref_lang": "EU_English",
         "hook_patch": True,
     },
+    # This one ships a whole RomFS image instead of a romfs/ folder - the title cannot
+    # mount an archive at all, so LayeredFS is out and tools/luma_hook.py points its own
+    # RomFS opens at a file on the SD card instead. See ROMFS_FROM_SD there.
     "download_play": {
         "tids": ["0004001000022100"],
         "source_tid": "0004001000022100",
         "lang": "EU_Russian",
         "ref_lang": "EU_English",
-        "blocked": "Luma 13.4 cannot hook this title (loader svcBreak on launch)",
+        "hook_patch": True,
     },
     "manual": {
         "tids": ["0004003000009B02"],  # Instruction Manual applet, EUR
@@ -205,6 +209,29 @@ def prepare_hook_patch(name: str, tid: str) -> tuple[dict[str, bytes], list[str]
     return luma_hook.generate(tid, code, exheader)
 
 
+def write_romfs_image(tid: str, romfs_dir: Path, overrides: dict[str, bytes]) -> list[str]:
+    """Rebuild the title's whole RomFS with the translations swapped in.
+
+    Every language stays in the image, only the replaced slot's files differ - that is what
+    keeps "switch the console language back" working as a way to undo the mod.
+    """
+    image = romfs.build(romfs_dir, overrides)
+    read_back = romfs.read(image)
+    for rel_path, blob in overrides.items():
+        if read_back.get("/" + rel_path) != blob:
+            raise SystemExit(f"{tid}: {rel_path} did not survive the RomFS rebuild")
+
+    name = luma_hook.HOOK_PATCHES[tid.upper()]["image_name"]
+    dest = ROOT / "dist" / "luma" / "titles" / tid / name
+    dest.parent.mkdir(parents=True, exist_ok=True)
+    dest.write_bytes(image)
+    return [
+        f"  RomFS image: {len(read_back)} files, {len(overrides)} replaced, "
+        f"read back and compared",
+        f"{dest.relative_to(ROOT)} ({len(image)} bytes)",
+    ]
+
+
 def build_title(name: str, table: dict[str, str]) -> list[str]:
     cfg = TITLES[name]
     if cfg.get("blocked"):
@@ -245,9 +272,14 @@ def build_title(name: str, table: dict[str, str]) -> list[str]:
         updates[key] = msbt_mod.build(msbt)
         stats.append(f"{key}: {translated}/{len(msbt.texts)} translated")
 
+    outputs = cross_blobs | store.outputs(lang, updates)
     written: list[str] = []
-    for rel_path, blob in (cross_blobs | store.outputs(lang, updates)).items():
-        for tid in cfg["tids"]:
+    for tid in cfg["tids"]:
+        if luma_hook.has_patch(tid) and luma_hook.kind(tid) == "romfs_from_sd":
+            # A whole image, not loose files: this title reads its RomFS off the SD card.
+            written += write_romfs_image(tid, romfs, outputs)
+            continue
+        for rel_path, blob in outputs.items():
             dest = ROOT / "dist" / "luma" / "titles" / tid / "romfs" / rel_path
             dest.parent.mkdir(parents=True, exist_ok=True)
             dest.write_bytes(blob)

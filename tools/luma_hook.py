@@ -92,7 +92,40 @@ HOOK_PATCHES: dict[str, dict] = {
         "mount_tail": 0x2F878,      # tail of MountSystemSaveData(), entered with r8 = result
         "globals_off": 0x2F8F0,
     },
+    # Download Play (dlplay), EUR, title version 3.
+    #
+    # A different mechanism entirely - see ROMFS_FROM_SD below. This title cannot issue
+    # FSUSER_OpenArchive at all (its whole fs:USER vocabulary is OpenFileDirectly plus the
+    # FSFile sub-session), so there is nothing for a mount stub to call. Instead the two
+    # places where it opens its own RomFS are pointed at an image on the SD card.
+    #
+    # No romfs/ folder ships for this title, so checkLumaDir() finds nothing,
+    # patchLayeredFs() returns early and the loader never touches the code.
+    "0004001000022100": {
+        "title": "Download Play (dlplay) EUR",
+        "title_version": 3,
+        "code_sha256": "78eeb084a69f2ca509626735493d9c87fa23e7cc7e327044a8e197fd3c3051e9",
+        "kind": "romfs_from_sd",
+        "image_name": "dlplay_romfs.bin",
+        "stub_off": 0x922E8,        # .text page padding; Luma has no use for it here
+        "stub_room": 3352,
+        # Both sites open ARCHIVE_ROMFS the same way. 0x14D3C feeds the archive registered
+        # as "rom:", 0xDD24 is a second, independent reader of the same data - redirecting
+        # only one would leave two readers on two images with different internal offsets.
+        "sites": [
+            {"patch_at": 0x14DD4, "return_to": 0x14DD8},
+            {"patch_at": 0x0DD7C, "return_to": 0x0DD80},
+        ],
+    },
 }
+
+# Stack layout the OpenFileDirectly wrapper reads its arguments from, shared by both sites.
+FILE_PATH_TYPE_SLOT = 0x0C
+FILE_PATH_PTR_SLOT = 0x10
+FILE_PATH_SIZE_SLOT = 0x14
+ARCHIVE_SDMC = 9
+PATH_ASCII = 3
+ORIGINAL_SITE_WORD = 0xE3A03003  # mov r3, #3  -> the ARCHIVE_ROMFS each site starts from
 
 
 def has_patch(tid: str) -> bool:
@@ -223,9 +256,48 @@ def patch_exheader(tid: str, exheader: bytes) -> bytes:
     return bytes(out)
 
 
+def kind(tid: str) -> str:
+    return HOOK_PATCHES[tid.upper()].get("kind", "mount_stub")
+
+
+def _redirect_records(patch: dict, path_va: int, path_off: int, sd_path: str) -> list[tuple[int, bytes]]:
+    """IPS records that make every ARCHIVE_ROMFS open read an image off the SD card.
+
+    Each site is `mov r3, #3` immediately before the OpenFileDirectly call, with the file
+    path already laid out on the stack. The site branches to a stub that swaps in
+    ARCHIVE_SDMC and an ASCII path, then branches back to the next instruction.
+    """
+    encoded = sd_path.encode("ascii") + b"\0"
+    records: list[tuple[int, bytes]] = [(path_off, encoded)]
+    stub_at = patch["stub_off"]
+
+    for site in patch["sites"]:
+        words = [
+            0xE3A03000 | ARCHIVE_SDMC,                    # +00  mov r3, #9
+            0xE3A01000 | PATH_ASCII,                      # +04  mov r1, #3    PATH_ASCII
+            0xE58D1000 | FILE_PATH_TYPE_SLOT,             # +08  str r1, [sp, #0xc]
+            0xE59F100C,                                   # +0C  ldr r1, [pc, #0xc]
+            0xE58D1000 | FILE_PATH_PTR_SLOT,              # +10  str r1, [sp, #0x10]
+            0xE3A01000 | len(encoded),                    # +14  mov r1, #len (with the NUL)
+            0xE58D1000 | FILE_PATH_SIZE_SLOT,             # +18  str r1, [sp, #0x14]
+            _b(stub_at + 0x1C, site["return_to"]),        # +1C  b  back to the call setup
+            path_va,                                      # +20  literal
+        ]
+        records.append((stub_at, b"".join(struct.pack("<I", w) for w in words)))
+        records.append((site["patch_at"], struct.pack("<I", _b(site["patch_at"], stub_at))))
+        stub_at += len(words) * 4
+
+    used = stub_at - patch["stub_off"]
+    if used > patch["stub_room"]:
+        raise RuntimeError(f"stubs need {used} bytes, only {patch['stub_room']} are free")
+    return records
+
+
 def patched_code(tid: str, code: bytes) -> bytes:
     """The title's .code as the loader sees it after applying our code.ips."""
     patch = HOOK_PATCHES[tid.upper()]
+    if patch.get("kind") == "romfs_from_sd":
+        return code  # nothing here changes what Luma's symbol search would find
     globals_value = struct.unpack_from("<I", code, patch["globals_off"])[0]
     stub = build_stub(patch, globals_value)
     out = bytearray(code)
@@ -249,6 +321,87 @@ def _verify(patch: dict, code: bytes, stub: bytes) -> None:
     missing = [name for name, off in symbols.items() if off is None and name != "fsUnmountArchive"]
     if missing:
         raise RuntimeError(f"other LayeredFS symbols are missing: {', '.join(missing)}")
+
+
+def _branch_target(word: int, at: int) -> int | None:
+    """Where an unconditional `b` at .text offset `at` lands, or None if it is not one."""
+    if word >> 24 != 0xEA:
+        return None
+    offset = word & 0xFFFFFF
+    if offset & 0x800000:
+        offset -= 0x1000000
+    return at + 8 + offset * 4
+
+
+def _verify_redirect(
+    patch: dict, code: bytes, records: list[tuple[int, bytes]], path_va: int, sd_path: str
+) -> None:
+    """Apply the records and walk the result: each site must reach a stub and come back."""
+    patched = bytearray(code)
+    for offset, data in records:
+        patched[offset:offset + len(data)] = data
+
+    word = lambda off: struct.unpack_from("<I", patched, off)[0]  # noqa: E731
+
+    for site in patch["sites"]:
+        stub = _branch_target(word(site["patch_at"]), site["patch_at"])
+        if stub is None or not patch["stub_off"] <= stub < patch["stub_off"] + patch["stub_room"]:
+            raise RuntimeError(f"site 0x{site['patch_at']:X} does not branch into the stub area")
+        if word(stub) != (0xE3A03000 | ARCHIVE_SDMC):
+            raise RuntimeError(f"stub at 0x{stub:X} does not start by selecting ARCHIVE_SDMC")
+        back = _branch_target(word(stub + 0x1C), stub + 0x1C)
+        if back != site["return_to"]:
+            raise RuntimeError(
+                f"stub at 0x{stub:X} returns to 0x{back:X}, expected 0x{site['return_to']:X}"
+            )
+        if word(stub + 0x20) != path_va:
+            raise RuntimeError(f"stub at 0x{stub:X} does not point at the path string")
+
+    encoded = sd_path.encode("ascii") + b"\0"
+    path_off = next(off for off, data in records if data == encoded)
+    if bytes(patched[path_off:path_off + len(encoded)]) != encoded:
+        raise RuntimeError("the path string did not land where the stubs point")
+
+
+def sd_path_for(tid: str) -> str:
+    return f"/luma/titles/{tid.upper()}/{HOOK_PATCHES[tid.upper()]['image_name']}"
+
+
+def _generate_romfs_from_sd(
+    tid: str, patch: dict, code: bytes, exheader: bytes, version: int
+) -> tuple[dict[str, bytes], list[str]]:
+    for site in patch["sites"]:
+        word = struct.unpack_from("<I", code, site["patch_at"])[0]
+        if word != ORIGINAL_SITE_WORD:
+            raise RuntimeError(
+                f"0x{site['patch_at']:X} holds 0x{word:08X}, expected 0x{ORIGINAL_SITE_WORD:08X} "
+                f"(mov r3, #3) - this is not the ARCHIVE_ROMFS open the offsets were taken from"
+            )
+
+    # The path string goes in the .rodata page padding. Sections sit at page-aligned
+    # offsets inside .code, so its file offset and its address both follow from the sizes.
+    text_size = struct.unpack_from("<I", exheader, TEXT_SIZE_OFFSET)[0]
+    ro_address = struct.unpack_from("<I", exheader, 0x20)[0]
+    ro_size = struct.unpack_from("<I", exheader, 0x28)[0]
+    rounded = lambda v: (v + 0xFFF) & ~0xFFF  # noqa: E731
+    sd_path = sd_path_for(tid)
+    room = rounded(ro_size) - ro_size
+    if len(sd_path) + 1 > room:
+        raise RuntimeError(f"path needs {len(sd_path) + 1} bytes, .rodata padding has {room}")
+
+    path_va = ro_address + ro_size
+    records = _redirect_records(patch, path_va, rounded(text_size) + ro_size, sd_path)
+    _verify_redirect(patch, code, records, path_va, sd_path)
+    files = {"code.ips": make_ips(records), "exheader.bin": patch_exheader(tid, exheader)}
+    log = [
+        f"{patch['title']} title version {version}",
+        f"code.ips: {len(patch['sites'])} ARCHIVE_ROMFS opens redirected to ARCHIVE_SDMC, "
+        f"stubs at 0x{patch['stub_off']:X} (va 0x{TEXT_VA + patch['stub_off']:X})",
+        f"code.ips: path {sd_path!r} at va 0x{ro_address + ro_size:X} "
+        f"({room} bytes of .rodata padding available)",
+        "exheader.bin: DirectSdmc granted",
+    ]
+    return files, log
 
 
 def generate(tid: str, code_path: Path, exheader_path: Path) -> tuple[dict[str, bytes], list[str]]:
@@ -277,6 +430,9 @@ def generate(tid: str, code_path: Path, exheader_path: Path) -> tuple[dict[str, 
             f"  got             {digest}\n"
             f"  re-derive the offsets before building"
         )
+
+    if patch.get("kind") == "romfs_from_sd":
+        return _generate_romfs_from_sd(tid, patch, code, exheader, version)
 
     globals_value = struct.unpack_from("<I", code, patch["globals_off"])[0]
     stub = build_stub(patch, globals_value)

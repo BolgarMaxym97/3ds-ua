@@ -74,7 +74,8 @@ NAND не змінювався, тому видалення нічого не л
 | Клавіатура з російськими літерами | Так і має бути: це кирилична розкладка для введення тексту. Українських `і ї є ґ` у системному шрифті немає, тож замінити їх на клавішах неможливо. |
 | `An exception occurred`, `Current process: loader` | Luma не змогла застосувати LayeredFS до титулу, який ви запускали, і зупинила консоль. Перейменуйте `SD:/luma/titles/<TID>/romfs` цього титулу на `_romfs` і перезавантажте — титул запуститься без перекладу. Напишіть в Issues з фото екрана помилки. |
 | HOME Menu не запускається | Видаліть `SD:/luma/titles/0004003000009802`. Напишіть в Issues, вказавши модель, регіон і версію системи. |
-| Журнал дій або Посібник крешить | Їхній переклад містить правку коду титулу, зроблену під **Журнал дій версії 2** і **Посібник версії 5** (EUR) — ці білди стоять на всіх сучасних прошивках. Якщо у вас старіший, видаліть `SD:/luma/titles/0004001000022200` або `SD:/luma/titles/0004003000009B02`: решта перекладу працюватиме як була. |
+| Журнал дій, Посібник або Гра по завантаженню крешить | Їхній переклад містить правку коду титулу, зроблену під **Журнал дій версії 2**, **Посібник версії 5**, **Гру по завантаженню версії 3** (EUR) — ці білди стоять на всіх сучасних прошивках. Якщо у вас старіший, видаліть папку відповідного титулу: `0004001000022200`, `0004003000009B02`, `0004001000022100`. Решта перекладу працюватиме як була. |
+| Гра по завантаженню не завантажується | Видаліть `SD:/luma/titles/0004001000022100` **цілком**. Вона читає свій romfs з SD-карти, тому `code.ips` без `dlplay_romfs.bin` її ламає — видаляти частинами не можна. |
 | Порожні квадрати замість літер | Повідомте в Issues із фото — це баг, такого бути не повинно. |
 
 ### Чому `i` замість `і`
@@ -101,10 +102,10 @@ NAND не змінювався, тому видалення нічого не л
 | Mii Maker | ✅ перекладено |
 | Журнал дій | ✅ перекладено, з правкою коду титулу — потрібна версія титулу 2 (див. нижче) |
 | Посібник | ✅ перекладено, з правкою коду титулу — потрібна версія титулу 5 (див. нижче) |
+| Гра по завантаженню | ✅ перекладено, повною підміною romfs — потрібна версія титулу 3 (див. нижче) |
 | Екранна клавіатура | ⛔ не входить |
-| Гра по завантаженню | ⛔ не входить |
 
-Два останні титули перекладені, але **не потрапляють в архів**: Luma не вміє під'єднати до них LayeredFS. Її завантажувач закінчує патч так:
+Екранна клавіатура перекладена, але **не потрапляє в архів**: Luma не вміє під'єднати до неї LayeredFS. Її завантажувач закінчує патч так:
 
 ```c
 if(isApp || isApplet) { ... if(!patchLayeredFs(...)) goto error; }
@@ -134,6 +135,15 @@ Luma шукає в коді титулу п'ять функцій FS. Чотир
 | Посібник | `0x0000000000000001` | **нема** |
 
 Титули без права `DirectSdmc` не мають доступу до SD-карти, тому Nintendo просто не залінкувала в них код монтування SD. Працюють ті титули, у яких це право є.
+
+Наскільки глибоко зайшла та економія, видно з набору IPC-команд, які титул узагалі вміє видавати:
+
+| Титул | `OpenArchive` | `OpenFile` | `CloseArchive` | `OpenFileDirectly` |
+|---|---|---|---|---|
+| Журнал дій, Посібник | ✅ | ✅ | ✅ | ✅ |
+| Гра по завантаженню, клавіатура | ❌ | ❌ | ❌ | ✅ |
+
+Двом останнім доступне рівно одне: відкрити файл напряму і читати його. Тому для них потрібен інший підхід.
 
 #### Як полагоджено Журнал дій і Посібник
 
@@ -178,7 +188,27 @@ patchLayeredFs(...);                     // тут шукаються ті п'я
 
 Збірка звіряє `remaster_version` і sha256 дампа й падає, якщо білд інший. Кінцевого користувача це не захищає, тому в архіві є попередження: якщо титул крешить — білд старіший, треба видалити його папку з `luma/titles/`.
 
-Для екранної клавіатури і гри по завантаженню цей самий підхід не працює: там немає ні IPC `FSUSER_OpenArchive`, ні класу архіву на handle — єдиний їхній клас архіву це romfs поверх файлу. Довелось би синтезувати ще й клас архіву, а це вже не 96 байт.
+#### Як полагоджено Гру по завантаженню
+
+Тут стаб нема чому передавати аргументи: обгортки `FSUSER_OpenArchive` в титулі не існує, і класу архіву на handle теж — єдиний його клас архіву це romfs поверх файлу. Тож замість того щоб додавати монтування, підмінюється те, що титул відкриває.
+
+Гра по завантаженню читає власний romfs через `OpenFileDirectly` з `archiveId = 3` (`ARCHIVE_ROMFS`). `code.ips` міняє це на `archiveId = 9` (SDMC) з ASCII-шляхом до образу на SD:
+
+| Файл | Що робить |
+|---|---|
+| `exheader.bin` | `DirectSdmc` |
+| `code.ips` | 160 байт: два стаби в padding'у `.text` і рядок шляху в padding'у `.rodata` |
+| `dlplay_romfs.bin` | увесь romfs титулу, зібраний наново з підміненими файлами перекладу |
+
+Таких місць у титулі два: `0x14D3C` (з нього будується зареєстрований архів `rom:`) і `0xDD24` (окремий читач тих самих даних). Перенаправлені обидва — якби лишити одне, два читачі працювали б з двома різними образами одного romfs, у яких внутрішні зсуви не збігаються.
+
+LayeredFS тут не задіяний узагалі: теки `romfs` для цього титулу немає, тому `checkLumaDir` нічого не знаходить, `patchLayeredFs` виходить одразу і той `svcBreak` недосяжний.
+
+⚠️ **У цього титулу немає м'якої деградації.** У решти будь-яка проблема з файлами означає лише «працює без перекладу», бо оригінал лишається в NAND. Тут `code.ips` назавжди відправляє титул на SD: якщо видалити `dlplay_romfs.bin`, а `code.ips` лишити, Гра по завантаженню не прочитає свої ресурси. Видаляти треба папку цілком.
+
+Образ збирається з повного оригінального дерева — підмінюються тільки файли російського слота, решта мов лишається на місці. Тому спосіб видалення «переключити мову консолі» працює і для нього.
+
+Екранна клавіатура влаштована так само і, найпевніше, лікується тим самим способом — просто цього ще не зроблено й не перевірено на консолі. Поки що вона в архів не входить.
 
 ### Чого мод не перекладає
 
@@ -337,7 +367,8 @@ NAND was never touched, so removal cannot break anything.
 | Keyboard shows Russian letters | By design: that is the Cyrillic typing layout. The system font has no `і ї є ґ`, so the keys cannot be changed. |
 | `An exception occurred`, `Current process: loader` | Luma could not apply LayeredFS to the title you launched and halted the console. Rename that title's `SD:/luma/titles/<TID>/romfs` to `_romfs` and reboot — the title then starts untranslated. Please open an Issue with a photo of the error screen. |
 | HOME Menu won't boot | Delete `SD:/luma/titles/0004003000009802` and open an Issue with your model, region and system version. |
-| Activity Log or Instruction Manual crashes | Their translations carry a code patch built for **Activity Log version 2** and **Instruction Manual version 5** (EUR), the builds present on every modern firmware. If yours is older, delete `SD:/luma/titles/0004001000022200` or `SD:/luma/titles/0004003000009B02` — the rest of the mod keeps working. |
+| Activity Log, Instruction Manual or Download Play crashes | Their translations carry a code patch built for **Activity Log version 2**, **Instruction Manual version 5**, **Download Play version 3** (EUR), the builds present on every modern firmware. If yours is older, delete that title's folder: `0004001000022200`, `0004003000009B02`, `0004001000022100`. The rest of the mod keeps working. |
+| Download Play will not load | Delete `SD:/luma/titles/0004001000022100` **as a whole**. It reads its RomFS off the SD card, so `code.ips` without `dlplay_romfs.bin` breaks it — it cannot be removed piecemeal. |
 | Empty boxes instead of letters | Please report with a photo — that's a bug. |
 
 ### Why `i` instead of `і`
@@ -355,11 +386,11 @@ So the build substitutes visually close glyphs that do exist: `і/І → i/I`, `
 | Mii Maker | ✅ translated |
 | Activity Log | ✅ translated, with a code patch — needs title version 2 (see below) |
 | Instruction Manual | ✅ translated, with a code patch — needs title version 5 (see below) |
+| Download Play | ✅ translated, by replacing its whole RomFS — needs title version 3 (see below) |
 | Software Keyboard | ⛔ not shipped |
-| Download Play | ⛔ not shipped |
 
-The last two are translated but **kept out of the archive**: Luma cannot hook LayeredFS
-into them. Its loader ends the patch with
+The Software Keyboard is translated but **kept out of the archive**: Luma cannot hook
+LayeredFS into it. Its loader ends the patch with
 
 ```c
 if(isApp || isApplet) { ... if(!patchLayeredFs(...)) goto error; }
@@ -400,6 +431,16 @@ The root cause is in the exheader, `accessInfo` at offset 0x248:
 
 Titles without `DirectSdmc` have no access to the SD card, so Nintendo never linked any
 SD-mounting code into them. The titles that work are the ones that hold that right.
+
+How far that pruning went shows in the set of IPC commands each title can even issue:
+
+| Title | `OpenArchive` | `OpenFile` | `CloseArchive` | `OpenFileDirectly` |
+|---|---|---|---|---|
+| Activity Log, Instruction Manual | ✅ | ✅ | ✅ | ✅ |
+| Download Play, Software Keyboard | ❌ | ❌ | ❌ | ✅ |
+
+The last two can do exactly one thing: open a file directly and read it. They need a
+different approach.
 
 #### How the Activity Log and the Instruction Manual were fixed
 
@@ -457,10 +498,41 @@ The build checks both `remaster_version` and the dump's sha256 and refuses to ru
 mismatch. That does not protect an end user, so the archive carries a note: if one of those
 titles crashes, its build is older and its folder under `luma/titles/` should be deleted.
 
-The same approach does not carry over to the Software Keyboard or Download Play: they have
-neither the `FSUSER_OpenArchive` IPC nor a handle-backed archive class — their only archive
-class is romfs over a file. That would mean synthesising an archive class too, which is well
-past 96 bytes.
+#### How Download Play was fixed
+
+Here a stub would have nothing to hand its arguments to: the title has no
+`FSUSER_OpenArchive` wrapper and no handle-backed archive class — its only archive class is
+romfs over a file. So instead of adding a mount, what the title opens is swapped out.
+
+Download Play reads its own RomFS through `OpenFileDirectly` with `archiveId = 3`
+(`ARCHIVE_ROMFS`). The `code.ips` turns that into `archiveId = 9` (SDMC) with an ASCII path
+to an image on the card:
+
+| File | What it does |
+|---|---|
+| `exheader.bin` | `DirectSdmc` |
+| `code.ips` | 160 bytes: two stubs in the `.text` padding and the path string in the `.rodata` padding |
+| `dlplay_romfs.bin` | the title's entire RomFS, rebuilt with the translated files swapped in |
+
+There are two such places: `0x14D3C`, which feeds the archive registered as `rom:`, and
+`0xDD24`, an independent reader of the same data. Both are redirected — leaving one behind
+would put two readers on two different images of the same RomFS, whose internal offsets do
+not agree.
+
+LayeredFS is not involved at all: no `romfs` folder ships for this title, so `checkLumaDir`
+finds nothing, `patchLayeredFs` returns early and that `svcBreak` is unreachable.
+
+⚠️ **This title has no graceful degradation.** For every other title a file problem just
+means "runs untranslated", because the original still sits in NAND. Here the `code.ips`
+sends the title to the SD card permanently: delete `dlplay_romfs.bin` but keep `code.ips`
+and Download Play cannot read its resources. Remove the folder as a whole.
+
+The image is rebuilt from the complete original tree — only the replaced slot's files
+differ, every other language stays in it. That keeps "switch the console language back"
+working as a way to undo the mod here too.
+
+The Software Keyboard is built the same way and most likely yields to the same treatment —
+that just has not been done or tested on hardware yet, so it stays out of the archive.
 
 ### What the mod does not translate
 

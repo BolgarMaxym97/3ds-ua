@@ -220,6 +220,11 @@ def check(title_dir: Path) -> bool | None:
         print(f"{title_dir.name}: no {missing} file found, skipped (see docs/dump-code.md)")
         return None
 
+    if luma_hook.has_patch(title_dir.name) and luma_hook.kind(title_dir.name) == "romfs_from_sd":
+        print(f"{title_dir.name}: reads its RomFS off the SD card, no romfs/ folder ships for it")
+        print(f"  patchLayeredFs() never runs - nothing here to predict")
+        return None
+
     exheader = exheader_path.read_bytes()
     # A hook-patched title runs on the exheader we ship, not the dumped one, and that can
     # widen text.size - which is exactly the range findLayeredFsSymbols() scans.
