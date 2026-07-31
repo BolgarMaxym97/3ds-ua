@@ -1,4 +1,4 @@
-# 3DS UA
+# 3DS UA 🇺🇦
 
 Український інтерфейс для Nintendo 3DS (work in progress). Ставиться як мод на SD-карту через LayeredFS (Luma3DS) — **системні файли в NAND не змінюються**.
 
