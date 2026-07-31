@@ -189,7 +189,7 @@
   },
   "top_nnid": {
     "en": "Nintendo Network ID Settings",
-    "ua": "Налаштування Nintendo Network ID"
+    "ua": "Дані Nintendo Network ID"
   },
   "dlg_nnid_cup": {
     "en": "Connect to the internet and\nupdate your system to use\nthese settings.",
@@ -349,7 +349,7 @@
   },
   "region": {
     "en": "Region Settings",
-    "ua": "Налаштування регіону"
+    "ua": "Вибір регіону"
   },
   "birthday": {
     "en": "Date of Birth",
@@ -385,7 +385,7 @@
   },
   "dlg_area_set": {
     "en": "Region settings changed.",
-    "ua": "Налаштування регіону змінено."
+    "ua": "Налаштування регіону\nзмінено."
   },
   "area_none": {
     "en": "Do not set",
@@ -593,7 +593,7 @@
   },
   "dlg_3d_qtm_d0": {
     "en": "Super-stable 3D is a function\nthat enables you to view 3D\nimages on the upper screen\nwithout having to keep your\nhead still. It works by tracking\nthe position of your eyes and\nadjusting the display.",
-    "ua": "Стабільне 3D — функція, яка\nдає змогу бачити 3D-зображення\nна верхньому екрані, не\nтримаючи голову нерухомо.\nВона відслідковує положення\nваших очей і підлаштовує\nзображення."
+    "ua": "Стабільне 3D — функція, яка\nдає змогу бачити\n3D-зображення на верхньому\nекрані, не тримаючи голову\nнерухомо. Вона відслідковує\nположення ваших очей і\nпідлаштовує зображення."
   },
   "dlg_3d_qtm_d1": {
     "en": "The system uses the camera\nfunction to track your eyes.\n\nThis feature may not be\ncompatible with some software,\nincluding software that uses\nthe camera function.",
@@ -757,11 +757,11 @@
   },
   "ocam_auto_comm0": {
     "en": "Hold the system as shown on\nthe upper screen, keep it steady\nand focus on something in the\ndistance.\n\nTouch Next when you're ready.",
-    "ua": "Тримайте систему як показано\nна верхньому екрані, не рухайте\nїї й наведіть на щось\nдалеко.\n\nКоли готові, торкніться Далі."
+    "ua": "Тримайте систему як показано\nна верхньому екрані, не\nрухайте її й наведіть на щось\nдалеко.\n\nКоли готові, торкніться Далі."
   },
   "ocam_auto_comm1": {
     "en": "Focus on something in the distance.\nCalibration will begin automatically\nonce all the lights are lit.",
-    "ua": "Наведіть на щось далеко.\nКалібрування почнеться автоматично,\nколи засвітяться всі індикатори."
+    "ua": "Наведіть на щось далеко.\nКалібрування почнеться\nавтоматично, коли засвітяться всі\nіндикатори."
   },
   "ocam_auto_comm2": {
     "en": "Tips for Automatic Calibration",
@@ -769,7 +769,7 @@
   },
   "ocam_auto_comm3": {
     "en": "・ Ensure there is adequate contrast\n・ Avoid mixing near and far objects",
-    "ua": "・ Потрібен достатній контраст\n・ Не змішуйте близькі й далекі об'єкти"
+    "ua": "・ Потрібен достатній контраст\n・ Не змішуйте близьке й далеке"
   },
   "ocam_base_2b_3d": {
     "en": "Test 3D",
@@ -1045,11 +1045,11 @@
   },
   "dlg_ds_comm_set": {
     "en": "New message saved.",
-    "ua": "Нове повідомлення збережено."
+    "ua": "Нове повідомлення\nзбережено."
   },
   "dlg_ds_user_info": {
     "en": "Edit profile settings for\nNintendo DS/Nintendo DSi\nsoftware titles here.\n\nNot all software titles make use\nof these settings.",
-    "ua": "Тут можна змінити профіль для\nпрограм Nintendo DS та\nNintendo DSi.\n\nНе всі програми\nвикористовують ці налаштування."
+    "ua": "Тут можна змінити профіль для\nпрограм Nintendo DS та\nNintendo DSi.\n\nНе всі програми\nвикористовують ці\nналаштування."
   },
   "update_set_": {
     "en": "",
@@ -1173,11 +1173,11 @@
   },
   "Initialize0_comm_sac": {
     "en": "This will delete all downloaded\nsoftware and save data.\nSoftware saved to a microSD\ncard will no longer be usable.\n(Some data, such as photos\nsaved to the microSD card,\nwill not be deleted.)",
-    "ua": "Це видалить усі завантажені\nпрограми та збережені дані.\nПрограми, збережені на карті\nmicroSD, стануть непридатними.\n(Деякі дані, як-от фото\nна карті microSD, видалено\nне буде.)"
+    "ua": "Це видалить усі завантажені\nпрограми та збережені дані.\nПрограми, збережені на карті\nmicroSD, стануть\nнепридатними. (Деякі дані,\nяк-от фото на карті microSD,\nвидалено не буде.)"
   },
   "Initialize0_comm_jan": {
     "en": "This will delete all downloaded\nsoftware and save data.\nSoftware saved to a microSD\ncard will no longer be usable.\n(Some data, such as photos\nsaved to the microSD card,\nwill not be deleted.)",
-    "ua": "Це видалить усі завантажені\nпрограми та збережені дані.\nПрограми, збережені на карті\nmicroSD, стануть непридатними.\n(Деякі дані, як-от фото\nна карті microSD, видалено\nне буде.)"
+    "ua": "Це видалить усі завантажені\nпрограми та збережені дані.\nПрограми, збережені на карті\nmicroSD, стануть\nнепридатними. (Деякі дані,\nяк-от фото на карті microSD,\nвидалено не буде.)"
   },
   "Initialize1_comm": {
     "en": "If you wish to delete your\nNintendo eShop account, you\ncan do so by selecting Delete\nAccount in Nintendo eShop.",
@@ -1201,7 +1201,7 @@
   },
   "dlg_init_wait_n": {
     "en": "Connecting to the internet and\npreparing to format...\nPlease wait.\n\nDo not turn off the power.",
-    "ua": "Під'єднання до Інтернету\nй підготовка до форматування…\nЗачекайте.\n\nНе вимикайте живлення."
+    "ua": "Під'єднання до Інтернету\nй підготовка до\nформатування… Зачекайте.\n\nНе вимикайте живлення."
   },
   "dlg_init_n_err": {
     "en": "An error has occurred.\nFormatting preparations\ncould not be completed.\n\nPlease try again.",
@@ -1437,7 +1437,7 @@
   },
   "net_dlg_wireless": {
     "en": "This function requires wireless\ncommunication to be enabled.\n\nPlease push the wireless\nswitch to enable wireless\ncommunication.",
-    "ua": "Ця функція потребує\nувімкненого бездротового\nзв'язку.\n\nПосуньте перемикач, щоб\nувімкнути бездротовий зв'язок."
+    "ua": "Ця функція потребує\nувімкненого бездротового\nзв'язку.\n\nПосуньте перемикач, щоб\nувімкнути бездротовий\nзв'язок."
   },
   "net_dlg_ds": {
     "en": "Configure your connection\nsettings for Nintendo DS\nsoftware.",
@@ -1453,7 +1453,7 @@
   },
   "net_dlg_quit1": {
     "en": "On the next screen, touch\nBack at any time to finish.",
-    "ua": "На наступному екрані\nторкніться Назад, щоб завершити."
+    "ua": "На наступному екрані\nторкніться Назад, щоб\nзавершити."
   },
   "net_set_": {
     "en": "",
@@ -1525,7 +1525,7 @@
   },
   "net_bln_set0": {
     "en": "First, we need to set up an internet\nconnection in New Connection.",
-    "ua": "Спершу треба налаштувати з'єднання\nз Інтернетом у Новому з'єднанні."
+    "ua": "Спершу треба налаштувати\nз'єднання з Інтернетом у Новому\nз'єднанні."
   },
   "net_bln_set1": {
     "en": "Select New Connection to set up\na new internet connection, or select\nConnections 1, 2 or 3 to adjust\nthe configurations of those\nconnections.",
@@ -1621,11 +1621,11 @@
   },
   "net_bln_env_nav0": {
     "en": "Sorry, but you cannot connect\nusing this setup. To connect\nyour system to the internet,\nyou need the following:",
-    "ua": "На жаль, із таким обладнанням\nпід'єднатися не вийде. Щоб\nз'єднати систему з Інтернетом,\nпотрібно таке:"
+    "ua": "На жаль, із таким\nобладнанням під'єднатися не\nвийде. Щоб з'єднати систему\nз Інтернетом, потрібно таке:"
   },
   "net_bln_env_nav0_flw": {
     "en": "Sorry, but you cannot connect\nusing this setup. To connect\nyour system to the internet,\nyou need the following:",
-    "ua": "На жаль, із таким обладнанням\nпід'єднатися не вийде. Щоб\nз'єднати систему з Інтернетом,\nпотрібно таке:"
+    "ua": "На жаль, із таким\nобладнанням під'єднатися не\nвийде. Щоб з'єднати систему\nз Інтернетом, потрібно таке:"
   },
   "net_bln_env_pc": {
     "en": "",
@@ -2057,11 +2057,11 @@
   },
   "net_bln_new_usb2": {
     "en": "Can you see your Nintendo 3DS user\nname on the Nintendo Wi-Fi USB\nConnector Registration Tool screen?",
-    "ua": "Чи видно ім'я користувача вашої\nNintendo 3DS на екрані Nintendo\nWi-Fi USB Connector Registration Tool?"
+    "ua": "Чи видно ім'я користувача вашої\nNintendo 3DS на екрані Nintendo\nWi-Fi USB Connector Registration\nTool?"
   },
   "net_bln_new_usb2_flw": {
     "en": "Can you see your Nintendo 2DS user\nname on the Nintendo Wi-Fi USB\nConnector Registration Tool screen?",
-    "ua": "Чи видно ім'я користувача вашої\nNintendo 2DS на екрані Nintendo\nWi-Fi USB Connector Registration Tool?"
+    "ua": "Чи видно ім'я користувача вашої\nNintendo 2DS на екрані Nintendo\nWi-Fi USB Connector Registration\nTool?"
   },
   "net_bln_new_usb3": {
     "en": "If you encounter any problems,\nplease refer to the Nintendo Wi-Fi\nUSB Connector instruction booklet.",
@@ -2069,7 +2069,7 @@
   },
   "net_dlg_usb_ok": {
     "en": "Nintendo Wi-Fi USB Connector\nsetup is complete.\n\nA connection test will now be\nperformed.",
-    "ua": "Налаштування Nintendo Wi-Fi USB\nConnector завершено.\n\nЗараз буде виконано\nперевірку з'єднання."
+    "ua": "Налаштування Nintendo Wi-Fi\nUSB Connector завершено.\n\nЗараз буде виконано\nперевірку з'єднання."
   },
   "net_dlg_usb_ng": {
     "en": "",
@@ -2521,7 +2521,7 @@
   },
   "net_bln_test_ok": {
     "en": "Connection Test successful.\n\nUse a compatible software title\nto verify that data transmission\nwith other users is working.",
-    "ua": "Перевірку з'єднання пройдено.\n\nЩоб перевірити передачу\nданих з іншими, скористайтеся\nсумісною програмою."
+    "ua": "Перевірку пройдено.\n\nЩоб перевірити передачу\nданих з іншими, скористайтеся\nсумісною програмою."
   },
   "net_bln_test_ng": {
     "en": "Connection Test failed.\n\nHere are details of the error.",
@@ -2549,7 +2549,7 @@
   },
   "net_bln_test_err": {
     "en": "If this is a temporary connection error,\ntouch Test Again to try connecting one\nmore time.\n\nIf you don't know the security key,\nask the person who set up the access\npoint.",
-    "ua": "Якщо це тимчасова помилка з'єднання,\nторкніться Ще раз, щоб спробувати\nзнову.\n\nЯкщо ви не знаєте ключа безпеки,\nзапитайте того, хто налаштовував\nточку доступу."
+    "ua": "Якщо це тимчасова помилка\nз'єднання, торкніться Ще раз, щоб\nспробувати знову.\n\nЯкщо ви не знаєте ключа безпеки,\nзапитайте того, хто налаштовував\nточку доступу."
   },
   "net_test_ng_": {
     "en": "",
@@ -2617,11 +2617,11 @@
   },
   "net_bg24_comm_u1": {
     "en": "Choose whether you would like\nSpotPass to automatically download\nsoftware, such as free or trial software.",
-    "ua": "Виберіть, чи має SpotPass автоматично\nзавантажувати програми, наприклад\nбезплатні чи пробні."
+    "ua": "Виберіть, чи має SpotPass\nавтоматично завантажувати програми,\nнаприклад безплатні чи пробні."
   },
   "net_bg24_comm1": {
     "en": "Do you want to use SpotPass \nto automatically download \nsoftware?",
-    "ua": "Використовувати SpotPass для\nавтоматичного завантаження\nпрограм?"
+    "ua": "Використовувати SpotPass\nдля автоматичного\nзавантаження програм?"
   },
   "net_on_get": {
     "en": "Yes",
@@ -2641,11 +2641,11 @@
   },
   "net_bg24_comm_u2": {
     "en": "Select No to opt out of the collection\nand use of your data to improve\nNintendo's products/services. Opting\nout while offline only affects future\ndata. Opting out while online also\nstops the usage of collected data.",
-    "ua": "Виберіть Ні, щоб відмовитися від збору\nй використання ваших даних для\nполіпшення продуктів Nintendo.\nВідмова без Інтернету стосується лише\nмайбутніх даних. Відмова з Інтернетом\nтакож спиняє використання зібраних."
+    "ua": "Виберіть Ні, щоб відмовитися від\nзбору й використання ваших даних\nдля поліпшення продуктів Nintendo.\nВідмова без Інтернету стосується\nлише майбутніх даних. Відмова з\nІнтернетом також спиняє\nвикористання зібраних."
   },
   "net_bg24_comm_u2_flw": {
     "en": "Select No to opt out of the collection\nand use of your data to improve\nNintendo's products/services. Opting\nout while offline only affects future\ndata. Opting out while online also\nstops the usage of collected data.",
-    "ua": "Виберіть Ні, щоб відмовитися від збору\nй використання ваших даних для\nполіпшення продуктів Nintendo.\nВідмова без Інтернету стосується лише\nмайбутніх даних. Відмова з Інтернетом\nтакож спиняє використання зібраних."
+    "ua": "Виберіть Ні, щоб відмовитися від\nзбору й використання ваших даних\nдля поліпшення продуктів Nintendo.\nВідмова без Інтернету стосується\nлише майбутніх даних. Відмова з\nІнтернетом також спиняє\nвикористання зібраних."
   },
   "net_bg24_comm2": {
     "en": "Send usage information\nvia SpotPass?",
@@ -2661,7 +2661,7 @@
   },
   "net_bln_bg24_snd": {
     "en": "Select Yes to send Nintendo\ninformation on how you use your\nsystem (such as play records) and\ndetails about your system settings.\nThis will help with the development\nof future products.",
-    "ua": "Виберіть Так, щоб надсилати Nintendo\nдані про те, як ви користуєтеся\nсистемою (наприклад, записи ігор),\nі про ваші налаштування.\nЦе допоможе в розробці\nмайбутніх продуктів."
+    "ua": "Виберіть Так, щоб надсилати\nNintendo дані про те, як ви\nкористуєтеся системою (наприклад,\nзаписи ігор), і про ваші\nналаштування. Це допоможе в\nрозробці майбутніх продуктів."
   },
   "net_dlg_bg24_on": {
     "en": "",
@@ -2757,11 +2757,11 @@
   },
   "dat_comm_u_sac": {
     "en": "Manage software data saved to the\nSystem Memory or microSD card, and\nchange data management settings.",
-    "ua": "Керуйте даними програм у пам'яті\nсистеми чи на карті microSD і змінюйте\nналаштування керування даними."
+    "ua": "Керуйте даними програм у пам'яті\nсистеми чи на карті microSD і\nзмінюйте налаштування керування\nданими."
   },
   "dat_comm_u_jan": {
     "en": "Manage software data saved to the\nSystem Memory or microSD card, and\nchange data management settings.",
-    "ua": "Керуйте даними програм у пам'яті\nсистеми чи на карті microSD і змінюйте\nналаштування керування даними."
+    "ua": "Керуйте даними програм у пам'яті\nсистеми чи на карті microSD і\nзмінюйте налаштування керування\nданими."
   },
   "dat_data0": {
     "en": "",
@@ -2877,11 +2877,11 @@
   },
   "dat_no_sd_u_sac": {
     "en": "No microSD card found.",
-    "ua": "Карту microSD не знайдено."
+    "ua": "Карту microSD не\nзнайдено."
   },
   "dat_no_sd_u_jan": {
     "en": "No microSD card found.",
-    "ua": "Карту microSD не знайдено."
+    "ua": "Карту microSD не\nзнайдено."
   },
   "dat_ng_sd_u": {
     "en": "Could not access SD Card.",
@@ -3157,7 +3157,7 @@
   },
   "dat_dlg_delete4": {
     "en": "Delete this add-on content?\n\nNote: Deleted add-on content\ncan be redownloaded.",
-    "ua": "Видалити цей додатковий вміст?\n\nПримітка: видалений вміст\nможна завантажити повторно."
+    "ua": "Видалити цей додатковий\nвміст?\n\nПримітка: видалений вміст\nможна завантажити повторно."
   },
   "dat_dlg_delete5": {
     "en": "Delete this update data?\n\nNote: Deleted update data\ncan be redownloaded.",
@@ -3169,7 +3169,7 @@
   },
   "dat_dlg_delete7": {
     "en": "Back up this software's save\ndata and delete the software?\n\nPlease use the SD Card\ncontaining backup data next\ntime you use this software.",
-    "ua": "Створити резервну копію\nзбережень і видалити програму?\n\nНаступного разу використайте\nкарту SD із цією копією."
+    "ua": "Створити резервну копію\nзбережень і видалити\nпрограму?\n\nНаступного разу використайте\nкарту SD із цією копією."
   },
   "dat_dlg_delete7_sac": {
     "en": "Back up this software's save\ndata and delete the software?\n\nPlease use the microSD card\ncontaining this backup data\nnext time you use this software.",
@@ -3249,7 +3249,7 @@
   },
   "dat_opt_title_u": {
     "en": "Extra Data Management",
-    "ua": "Керування додатковими даними"
+    "ua": "Керування дод. даними"
   },
   "dat_opt_page": {
     "en": "Extra Data",
@@ -3329,7 +3329,7 @@
   },
   "dat_dlg_bu_crng": {
     "en": "Failed to create backup data\nmanagement information.",
-    "ua": "Не вдалося створити дані\nкерування резервними копіями."
+    "ua": "Не вдалося створити дані\nкерування резервними\nкопіями."
   },
   "dat_dlg_bu_brkn": {
     "en": "The backup data management\ninformation is corrupted.\nWould you like to create the\ninformation again?\nBackup data titles may not be\ndisplayed properly afterwards.",
@@ -3405,7 +3405,7 @@
   },
   "dat_dlg_bu_re0": {
     "en": "The backup data will be restored.\n\nSave data will be overwritten.\nIs this OK?",
-    "ua": "Резервну копію буде відновлено.\n\nЗбереження буде перезаписано.\nПродовжити?"
+    "ua": "Резервну копію буде\nвідновлено.\n\nЗбереження буде перезаписано.\nПродовжити?"
   },
   "dat_dlg_bu_re1": {
     "en": "Restoring backup data...\n\nDo not remove the SD Card\nor turn off the power.",
@@ -3609,7 +3609,7 @@
   },
   "par_question4": {
     "en": "What is your favourite film?",
-    "ua": "Який ваш улюблений фільм?"
+    "ua": "Який ваш улюблений\nфільм?"
   },
   "par_question5": {
     "en": "If you could go anywhere,\nwhere would you go?",
@@ -3641,7 +3641,7 @@
   },
   "par_question_u4": {
     "en": "What is your favourite film?",
-    "ua": "Який ваш улюблений фільм?"
+    "ua": "Який ваш улюблений\nфільм?"
   },
   "par_question_u5": {
     "en": "If you could go anywhere,\nwhere would you go?",
@@ -3701,7 +3701,7 @@
   },
   "par_dlg_que5": {
     "en": "Answer to secret question is\nincorrect.",
-    "ua": "Відповідь на секретне питання\nнеправильна."
+    "ua": "Відповідь на секретне\nпитання неправильна."
   },
   "par_dlg_que5_n": {
     "en": "You have entered an incorrect\nanswer.\n\nPlease check your spelling\nand remember that the answer\nis case sensitive.",
@@ -3713,7 +3713,7 @@
   },
   "par_dlg_que6": {
     "en": "If the answer to your secret\nquestion is even slightly wrong,\nyou will not be granted access. If\nyou have forgotten your answer\nand your PIN, you will have to\ncontact Nintendo by telephone.\nDo you want to proceed?",
-    "ua": "Якщо відповідь на секретне\nпитання хоч трохи неправильна,\nдоступу не буде. Якщо ви забули\nі відповідь, і PIN-код, доведеться\nзв'язатися з Nintendo\nтелефоном.\nПродовжити?"
+    "ua": "Якщо відповідь на секретне\nпитання хоч трохи неправильна,\nдоступу не буде. Якщо ви\nзабули і відповідь, і PIN-код,\nдоведеться зв'язатися з\nNintendo телефоном.\nПродовжити?"
   },
   "par_dlg_que6_1": {
     "en": "If the answer to your secret\nquestion is even slightly\nwrong, you will not be granted\naccess. Are you sure this is\ncorrect?",
@@ -3793,7 +3793,7 @@
   },
   "par_dlg_mas1": {
     "en": "Master key is incorrect.",
-    "ua": "Головний ключ неправильний."
+    "ua": "Головний ключ\nнеправильний."
   },
   "par_mas_comm_u2": {
     "en": "Please reset your PIN\nand email address.",
@@ -4049,7 +4049,7 @@
   },
   "par_mail_comm_u0": {
     "en": "You can now register an email address,\nwhich will be used in the event that\nyou forget your PIN.",
-    "ua": "Тепер можна зареєструвати електронну\nадресу — вона знадобиться, якщо\nви забудете PIN-код."
+    "ua": "Тепер можна зареєструвати\nелектронну адресу — вона\nзнадобиться, якщо ви забудете\nPIN-код."
   },
   "par_mail_comm0": {
     "en": "You now have the option to\nregister an email address.\n\nIf you forget your PIN and the\nanswer to your secret question,\na master key to reset your PIN\ncan be sent to your registered\nemail address.",
@@ -4065,7 +4065,7 @@
   },
   "par_mail_comm_u3": {
     "en": "If you are using a spam filter, please\nensure that your settings allow emails\nfrom @nintendo.net.",
-    "ua": "Якщо ви користуєтеся спам-фільтром,\nдозвольте листи з @nintendo.net."
+    "ua": "Якщо ви користуєтеся\nспам-фільтром, дозвольте листи з\n@nintendo.net."
   },
   "par_mail_comm1": {
     "en": "Would you like to have a master\nkey sent to the email address\npartially displayed here?\n\nMake sure your settings allow\nemails from @nintendo.net.",
@@ -4089,7 +4089,7 @@
   },
   "swkbd_guide_txt2": {
     "en": "Confirm your email address.",
-    "ua": "Підтвердьте електронну адресу."
+    "ua": "Підтвердьте електронну\nадресу."
   },
   "par_dlg_mail0": {
     "en": "Please enter an email address\nthat only parents or guardians\ncan access.",
@@ -4105,7 +4105,7 @@
   },
   "par_dlg_mail3": {
     "en": "Registering email address...",
-    "ua": "Реєстрація електронної адреси…"
+    "ua": "Реєстрація електронної\nадреси…"
   },
   "par_dlg_mail4": {
     "en": "Confirmation email sent.\n\nIf you do not receive the email\nwithin an hour, please check that\nthe address is correct and that\nyou can receive emails from\n@nintendo.net.",
@@ -4273,7 +4273,7 @@
   },
   "par_dlg_del_wait": {
     "en": "The necessary data is missing.\nWith the internet connected,\nplease wait with the HOME\nMenu open, without activating\nSleep Mode. Then try\nselecting Clear Settings.",
-    "ua": "Потрібних даних немає.\nПід'єднайтеся до Інтернету\nй зачекайте з відкритим меню\nHOME, не переходячи в режим\nсну. Потім спробуйте\nСкинути налаштування."
+    "ua": "Потрібних даних немає.\nПід'єднайтеся до Інтернету\nй зачекайте з відкритим меню\nHOME, не переходячи в\nрежим сну. Потім спробуйте\nСкинути налаштування."
   },
   "par_ok": {
     "en": "Do not restrict",
@@ -4365,7 +4365,7 @@
   },
   "par_pegi_0002": {
     "en": "May include depictions of\nextreme violence, graphic\nsexual activity, discrimination,\nand glamorisation of drugs or\ncrime.",
-    "ua": "Може містити сцени\nнадмірного насильства,\nвідвертого сексу, дискримінації\nта романтизації наркотиків\nчи злочинів."
+    "ua": "Може містити сцени\nнадмірного насильства,\nвідвертого сексу,\nдискримінації та романтизації\nнаркотиків чи злочинів."
   },
   "par_pegi_0003": {
     "en": "Content suitable for those aged\n16 and above.",
@@ -4381,7 +4381,7 @@
   },
   "par_pegi_0006": {
     "en": "Realistic violence towards\nfantasy characters, and\nnon-realistic violence to\nhuman or animal characters,\nmay be permitted. There may\nbe some sexual innuendo,\ndescriptions and images (but\nnothing too extreme) as well\nas some mild bad language.\nMay also contain gambling\nreferences.",
-    "ua": "Допускається реалістичне\nнасильство щодо\nфантастичних персонажів\nі нереалістичне — щодо людей\nчи тварин. Можливі сексуальні\nнатяки, описи й зображення\n(нічого надмірного), а також\nпомірна лайка. Може містити\nзгадки про азартні ігри."
+    "ua": "Допускається реалістичне\nнасильство щодо\nфантастичних персонажів\nі нереалістичне — щодо\nлюдей чи тварин. Можливі\nсексуальні натяки, описи й\nзображення (нічого\nнадмірного), а також помірна\nлайка. Може містити згадки\nпро азартні ігри."
   },
   "par_pegi_0007": {
     "en": "Content suitable for those aged\n7 and above.",
@@ -4405,7 +4405,7 @@
   },
   "par_pegipor_0002": {
     "en": "May include depictions of\nextreme violence, graphic\nsexual activity, discrimination,\nand glamorisation of drugs or\ncrime.",
-    "ua": "Може містити сцени\nнадмірного насильства,\nвідвертого сексу, дискримінації\nта романтизації наркотиків\nчи злочинів."
+    "ua": "Може містити сцени\nнадмірного насильства,\nвідвертого сексу,\nдискримінації та романтизації\nнаркотиків чи злочинів."
   },
   "par_pegipor_0003": {
     "en": "Content suitable for those aged\n16 and above.",
@@ -4421,7 +4421,7 @@
   },
   "par_pegipor_0006": {
     "en": "Realistic violence towards\nfantasy characters, and\nnon-realistic violence to\nhuman or animal characters,\nmay be permitted. There may\nbe some sexual innuendo,\ndescriptions and images (but\nnothing too extreme) as well\nas some mild bad language.\nMay also contain gambling\nreferences.",
-    "ua": "Допускається реалістичне\nнасильство щодо\nфантастичних персонажів\nі нереалістичне — щодо людей\nчи тварин. Можливі сексуальні\nнатяки, описи й зображення\n(нічого надмірного), а також\nпомірна лайка. Може містити\nзгадки про азартні ігри."
+    "ua": "Допускається реалістичне\nнасильство щодо\nфантастичних персонажів\nі нереалістичне — щодо\nлюдей чи тварин. Можливі\nсексуальні натяки, описи й\nзображення (нічого\nнадмірного), а також помірна\nлайка. Може містити згадки\nпро азартні ігри."
   },
   "par_pegipor_0007": {
     "en": "Content suitable for those aged\n6 and above.",
@@ -4469,7 +4469,7 @@
   },
   "par_pegiuk_0008": {
     "en": "Realistic violence towards\nfantasy characters, and\nnon-realistic violence to\nhuman or animal characters,\nmay be permitted. There may\nbe some sexual innuendo,\ndescriptions and images (but\nnothing too extreme) as well\nas some mild bad language.\nMay also contain gambling\nreferences.",
-    "ua": "Допускається реалістичне\nнасильство щодо\nфантастичних персонажів\nі нереалістичне — щодо людей\nчи тварин. Можливі сексуальні\nнатяки, описи й зображення\n(нічого надмірного), а також\nпомірна лайка. Може містити\nзгадки про азартні ігри."
+    "ua": "Допускається реалістичне\nнасильство щодо\nфантастичних персонажів\nі нереалістичне — щодо\nлюдей чи тварин. Можливі\nсексуальні натяки, описи й\nзображення (нічого\nнадмірного), а також помірна\nлайка. Може містити згадки\nпро азартні ігри."
   },
   "par_pegiuk_0009": {
     "en": "Parental Guidance - General\nviewing, but some scenes may\nbe unsuitable for young children.",
@@ -4493,7 +4493,7 @@
   },
   "par_pegiuk_0014": {
     "en": "Content should be suitable for\naudiences aged four years and\nover. Content rated 'Uc' is\nmainly suitable for pre-school\nchildren.",
-    "ua": "Вміст придатний для віку\nвід чотирьох років. Вміст\nз рейтингом «Uc» призначений\nпереважно для дітей\nдошкільного віку."
+    "ua": "Вміст придатний для віку\nвід чотирьох років. Вміст\nз рейтингом «Uc»\nпризначений переважно для\nдітей дошкільного віку."
   },
   "par_pegiuk_0015": {
     "en": "Content suitable for all ages.",
@@ -4921,7 +4921,7 @@
   },
   "st_par_comm_0": {
     "en": "For households with children,\nit is advised that you configure\nParental Controls settings.\n\n3D effects and wireless\ncommunication functions\ncan be restricted here.",
-    "ua": "Для родин з дітьми радимо\nналаштувати батьківський\nконтроль.\n\nТут можна обмежити 3D-ефекти\nй функції бездротового\nзв'язку."
+    "ua": "Для родин з дітьми радимо\nналаштувати батьківський\nконтроль.\n\nТут можна обмежити\n3D-ефекти й функції\nбездротового зв'язку."
   },
   "st_par_comm_0_flw": {
     "en": "For households with children,\nit is advised that you configure\nParental Controls settings.\n\nWireless communication and\nlaunching of games can be\nrestricted here.",
@@ -4985,11 +4985,11 @@
   },
   "st_net_comm_u_sac": {
     "en": "This system allows you to use\nvarious online services.\n\nAn internet connection is also required\nwhen transferring data from another\nNintendo 3DS system.",
-    "ua": "Ця система дає змогу користуватися\nрізними онлайн-сервісами.\n\nЗ'єднання з Інтернетом також потрібне\nпри перенесенні даних з іншої\nсистеми Nintendo 3DS."
+    "ua": "Ця система дає змогу користуватися\nрізними онлайн-сервісами.\n\nЗ'єднання з Інтернетом також\nпотрібне при перенесенні даних з\nіншої системи Nintendo 3DS."
   },
   "st_net_comm_u_jan": {
     "en": "This system allows you to use\nvarious online services.\n\nAn internet connection is also required\nwhen transferring data from another\nNintendo 3DS system.",
-    "ua": "Ця система дає змогу користуватися\nрізними онлайн-сервісами.\n\nЗ'єднання з Інтернетом також потрібне\nпри перенесенні даних з іншої\nсистеми Nintendo 3DS."
+    "ua": "Ця система дає змогу користуватися\nрізними онлайн-сервісами.\n\nЗ'єднання з Інтернетом також\nпотрібне при перенесенні даних з\nіншої системи Nintendo 3DS."
   },
   "st_net_comm": {
     "en": "Configure your internet\nsettings?",

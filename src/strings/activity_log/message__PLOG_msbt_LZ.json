@@ -945,7 +945,7 @@
   },
   "erase_icon1": {
     "en": "Delete data for this software\nfrom your software library?{t:1.0:1400}\n{/t:1.0}\n{t:0.3:5a5a5aff}{t:1.0:5500}Data in Daily Records will not\nbe deleted. If you use this\nsoftware again, it will reappear\nin the software library.{/t:1.0}{t:0.3:000000ff}",
-    "ua": "Видалити дані цієї програми\nз бібліотеки програм?{t:1.0:1400}\n{/t:1.0}\n{t:0.3:5a5a5aff}{t:1.0:5500}Дані у Щоденних записах не\nбуде видалено. Якщо ви знову\nзапустите цю програму, вона\nповернеться до бібліотеки.{/t:1.0}{t:0.3:000000ff}"
+    "ua": "Видалити дані цієї програми\nз бібліотеки програм?{t:1.0:1400}\n{/t:1.0}\n{t:0.3:5a5a5aff}{t:1.0:5500}Дані у Щоденних записах\nне буде видалено.\nЗапустите знову — програма\nповернеться в бібліотеку.{/t:1.0}{t:0.3:000000ff}"
   },
   "erase_icon2": {
     "en": "Really delete data?",
@@ -1009,7 +1009,7 @@
   },
   "wait_dialog2": {
     "en": "Loading records...\nPlease wait.{t:1.0:1400}\n{/t:1.0}\n{t:0.3:5a5a5aff}{t:1.0:5500}This may take up to a minute.{/t:1.0}{t:0.3:000000ff}",
-    "ua": "Завантаження записів…\nЗачекайте.{t:1.0:1400}\n{/t:1.0}\n{t:0.3:5a5a5aff}{t:1.0:5500}Це може тривати до хвилини.{/t:1.0}{t:0.3:000000ff}"
+    "ua": "Завантаження записів…\nЗачекайте.{t:1.0:1400}\n{/t:1.0}\n{t:0.3:5a5a5aff}{t:1.0:5500}Це триває до хвилини.{/t:1.0}{t:0.3:000000ff}"
   },
   "wait_dialog3": {
     "en": "Loading records...\nPlease wait.{t:1.0:1400}\n{/t:1.0}\n{t:0.3:5a5a5aff}{t:1.0:5500}This may take several minutes.{/t:1.0}{t:0.3:000000ff}",

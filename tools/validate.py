@@ -42,8 +42,16 @@ from msbt import parse as msbt_parse  # noqa: E402
 from store import open_store  # noqa: E402
 
 ROOT = Path(__file__).resolve().parent.parent
-WIDTH_LIMIT = 1.05  # headroom for renderer rounding
-WIDTH_SLACK = 4     # absolute slack, so wording is not rewritten over 1-2 pixels
+# The budget is already the widest official localisation, so anything past it is wider than
+# anything Nintendo ever put in that pane. There is no headroom to give: a 5% allowance here
+# let 175 strings through that overflow their button on hardware. Only a couple of pixels of
+# absolute slack remain, for rounding in the renderer.
+WIDTH_LIMIT = 1.0
+# Slack is absolute on purpose. A percentage grows with the string, which is backwards: it
+# handed a 500px dialog 25px of room while giving a button almost none. Eight pixels is
+# about one narrow glyph - enough that a word like "Відкрити" is not rewritten for being a
+# hair wider than "Открыть", and far too little to hide a real overflow.
+WIDTH_SLACK = 8
 BRACE_RE = re.compile(r"\{[^}]*\}")
 # %% is a literal percent sign and must survive translation, so it is matched first;
 # a space is not part of the flags here - it would swallow the next word's first letter.
@@ -157,11 +165,43 @@ def check_entry(
     return problems
 
 
+LETTERS_RE = re.compile(r"[^\W\d_]{2}")
+
+
+def untranslatable(name: str) -> set[str]:
+    """Labels there is nothing to translate in: empty, or with no word in them.
+
+    Counting these as outstanding work is what made the coverage look like a third of the
+    text was missing. What is left after stripping tags is things like `%ls`, `1`, `:` and
+    the language names a picker deliberately shows in their own language.
+    """
+    cfg = TITLES[name]
+    store = open_store(cfg, ROOT / "work" / cfg["source_tid"] / "romfs")
+
+    def texts(lang: str) -> dict[str, str]:
+        out: dict[str, str] = {}
+        for data in store.read(lang).values():
+            msbt = msbt_parse(data)
+            for index, text in enumerate(msbt.texts):
+                out[msbt.label_of(index) or f"__index_{index}"] = text
+        return out
+
+    slot = texts(cfg["lang"])
+    reference = texts(cfg["ref_lang"])
+    skip = {label for label, text in slot.items() if not LETTERS_RE.search(strip_tags(text))}
+    # Nintendo shipping the same text in two languages means the string is not language
+    # dependent: `WPA2-PSK (AES)`, `%ls`, the Latin key rows, and the language names a
+    # picker deliberately shows in their own language. Translating those would be a bug.
+    skip |= {label for label, text in slot.items() if reference.get(label) == text}
+    return skip
+
+
 def validate(
     name: str, charset: set[int], table: dict[str, str], widths: dict[int, int]
 ) -> tuple[int, int, list[str]]:
     strings_dir = ROOT / "src" / "strings" / name
     budgets = label_budgets(name, widths)
+    skip = untranslatable(name)
     total = translated = 0
     problems: list[str] = []
 
@@ -178,9 +218,10 @@ def validate(
             continue
         entries = json.loads(json_file.read_text(encoding="utf-8"))
         for label, entry in entries.items():
-            total += 1
-            if entry.get("ua"):
-                translated += 1
+            if label not in skip:
+                total += 1
+                if entry.get("ua"):
+                    translated += 1
             for problem in check_entry(label, entry, charset, table, widths, budgets.get(label, Budget())):
                 problems.append(f"{json_file.name}: {problem}")
 
@@ -199,7 +240,8 @@ def main() -> int:
 
     for name in args.titles or list(TITLES):
         total, translated, problems = validate(name, charset, table, widths)
-        print(f"{name}: {translated}/{total} translated, problems: {len(problems)}")
+        gap = "" if translated == total else f" ({total - translated} left)"
+        print(f"{name}: {translated}/{total} translatable strings done{gap}, problems: {len(problems)}")
         for problem in problems:
             print(f"  ✗ {problem}")
         failed = failed or bool(problems)

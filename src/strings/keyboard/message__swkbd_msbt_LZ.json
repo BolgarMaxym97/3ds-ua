@@ -29,7 +29,7 @@
   },
   "char_type_01": {
     "en": "ËαЯ",
-    "ua": ""
+    "ua": "ÂæÜ"
   },
   "char_type_02": {
     "en": "Symbol",
@@ -41,7 +41,7 @@
   },
   "char_type_04": {
     "en": "",
-    "ua": ""
+    "ua": "АБВ"
   },
   "dlg_dic_title": {
     "en": "Select a language.",
@@ -405,11 +405,11 @@
   },
   "cell_l01": {
     "en": "",
-    "ua": ""
+    "ua": "Абв"
   },
   "cell_l02": {
     "en": "",
-    "ua": ""
+    "ua": "Abc"
   },
   "cell_l03": {
     "en": "Abc",
@@ -485,7 +485,7 @@
   },
   "dlg_ngword_err": {
     "en": "This contains inappropriate\nlanguage and cannot be used.",
-    "ua": "Тут є неприйнятні слова,\nтому це не можна використати."
+    "ua": "Тут є неприйнятні слова,\nтому це не можна\nвикористати."
   },
   "dlg_number_err": {
     "en": "You can enter up to %d\ndigits.",

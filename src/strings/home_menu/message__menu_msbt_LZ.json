@@ -109,7 +109,7 @@
   },
   "lau_dlg_app_jump": {
     "en": "Please wait...",
-    "ua": "Зачекайте, будь ласка…..."
+    "ua": "Зачекайте, будь ласка…"
   },
   "lau_dlg_pause": {
     "en": "Software suspended.{t:1.0:1400}\n                    {/t:1.0}\nPress HOME to resume.{t:1.0:1400}\n                    {/t:1.0}\nTouch Close to close\nthe software.",
@@ -205,11 +205,11 @@
   },
   "lau_dlg_sample3": {
     "en": "Uses remaining: %d\n\nLaunch this demo?",
-    "ua": "Залишилось запусків: %d\n\nЗапустити цю демоверсію??"
+    "ua": "Залишилось запусків: %d\n\nЗапустити цю демоверсію?"
   },
   "lau_dlg_sample4": {
     "en": "Launch this demo?",
-    "ua": "Запустити цю демоверсію??"
+    "ua": "Запустити цю демоверсію?"
   },
   "lau_dlg_b_sample": {
     "en": "View Details for Full Version",
@@ -281,7 +281,7 @@
   },
   "lau_dlg_bgdl4": {
     "en": "Please wait...",
-    "ua": "Зачекайте, будь ласка…..."
+    "ua": "Зачекайте, будь ласка…"
   },
   "lau_dlg_bgdl5": {
     "en": "Download stopped. Push the\nwireless switch to enable\nwireless communication.",
@@ -1197,7 +1197,7 @@
   },
   "lau_dlg_mhm_load_fail": {
     "en": "Failed to load.",
-    "ua": "Не вдалося завантажити.."
+    "ua": "Не вдалося\nзавантажити…"
   },
   "lau_dlg_mhm_delete_fail": {
     "en": "Failed to delete.",
@@ -1329,55 +1329,55 @@
   },
   "lau_dlg_cap_no_sd": {
     "en": "Unable to take a screenshot\nof the HOME Menu, as the\nSD card is not inserted.",
-    "ua": "Не вдається зробити скриншот\nменю HOME, бо\nне вставлено карту SD."
+    "ua": "Не вдається зробити\nскриншот меню HOME, бо\nне вставлено карту SD."
   },
   "lau_dlg_cap_no_sd_sac": {
     "en": "Unable to take a screenshot\nof the HOME Menu, as the\nmicroSD card is not inserted.",
-    "ua": "Не вдається зробити скриншот\nменю HOME, бо\nне вставлено карту microSD."
+    "ua": "Не вдається зробити\nскриншот меню HOME, бо\nне вставлено карту microSD."
   },
   "lau_dlg_cap_no_sd_jan": {
     "en": "Unable to take a screenshot\nof the HOME Menu, as the\nmicroSD card is not inserted.",
-    "ua": "Не вдається зробити скриншот\nменю HOME, бо\nне вставлено карту microSD."
+    "ua": "Не вдається зробити\nскриншот меню HOME, бо\nне вставлено карту microSD."
   },
   "lau_dlg_cap_sd_prote": {
     "en": "Unable to take a screenshot\nof the HOME Menu because\nwrite-protection is enabled\non the SD card.",
-    "ua": "Не вдається зробити скриншот\nменю HOME, бо карту\nSD захищено від запису."
+    "ua": "Не вдається зробити\nскриншот меню HOME,\nбо карту SD захищено\nвід запису."
   },
   "lau_dlg_cap_sd_full": {
     "en": "Unable to take a screenshot\nof the HOME Menu as there\nis not enough space on the\nSD card.",
-    "ua": "Не вдається зробити скриншот\nменю HOME, бо\nна карті SD недостатньо\nвільного місця."
+    "ua": "Не вдається зробити\nскриншот меню HOME, бо\nна карті SD недостатньо\nвільного місця."
   },
   "lau_dlg_cap_sd_full_sac": {
     "en": "Unable to take a screenshot\nof the HOME Menu as there\nis not enough space on the\nmicroSD card.",
-    "ua": "Не вдається зробити скриншот\nменю HOME, бо на карті\nmicroSD недостатньо\nвільного місця."
+    "ua": "Не вдається зробити\nскриншот меню HOME, бо\nна карті\nmicroSD недостатньо\nвільного місця."
   },
   "lau_dlg_cap_sd_full_jan": {
     "en": "Unable to take a screenshot\nof the HOME Menu as there\nis not enough space on the\nmicroSD card.",
-    "ua": "Не вдається зробити скриншот\nменю HOME, бо на карті\nmicroSD недостатньо\nвільного місця."
+    "ua": "Не вдається зробити\nскриншот меню HOME, бо\nна карті\nmicroSD недостатньо\nвільного місця."
   },
   "lau_dlg_cap_sd_full_ph": {
     "en": "Unable to take a screenshot\nof the HOME Menu as the\nimage limit on the SD card\nhas been reached.",
-    "ua": "Не вдається зробити скриншот\nменю HOME, бо\nна карті SD вже збережено\nмаксимально можливу\nкількість зображень."
+    "ua": "Не вдається зробити\nскриншот меню HOME, бо\nна карті SD вже збережено\nмаксимально можливу\nкількість зображень."
   },
   "lau_dlg_cap_sd_full_ph_sac": {
     "en": "Unable to take a screenshot\nof the HOME Menu as the\nimage limit on the microSD\ncard has been reached.",
-    "ua": "Не вдається зробити скриншот\nменю HOME, бо\nна карті microSD вже\nзбережено максимально\nможливу кількість\nзображень."
+    "ua": "Не вдається зробити\nскриншот меню HOME, бо\nна карті microSD вже\nзбережено максимально\nможливу кількість\nзображень."
   },
   "lau_dlg_cap_sd_full_ph_jan": {
     "en": "Unable to take a screenshot\nof the HOME Menu as the\nimage limit on the microSD\ncard has been reached.",
-    "ua": "Не вдається зробити скриншот\nменю HOME, бо\nна карті microSD вже\nзбережено максимально\nможливу кількість\nзображень."
+    "ua": "Не вдається зробити\nскриншот меню HOME, бо\nна карті microSD вже\nзбережено максимально\nможливу кількість\nзображень."
   },
   "lau_dlg_cap_ng_sd": {
     "en": "Unable to take a screenshot\nof the HOME Menu because\nthe SD card cannot be \naccessed.",
-    "ua": "Не вдається зробити скриншот\nменю HOME, бо\nне вдалося отримати\nдоступ до карти SD."
+    "ua": "Не вдається зробити\nскриншот меню HOME, бо\nне вдалося отримати\nдоступ до карти SD."
   },
   "lau_dlg_cap_ng_sd_sac": {
     "en": "Unable to take a screenshot\nof the HOME Menu as the\nmicroSD card cannot be\naccessed.",
-    "ua": "Не вдається зробити скриншот\nменю HOME, бо\nне вдалося отримати\nдоступ до карти microSD."
+    "ua": "Не вдається зробити\nскриншот меню HOME, бо\nне вдалося отримати\nдоступ до карти microSD."
   },
   "lau_dlg_cap_ng_sd_jan": {
     "en": "Unable to take a screenshot\nof the HOME Menu as the\nmicroSD card cannot be\naccessed.",
-    "ua": "Не вдається зробити скриншот\nменю HOME, бо\nне вдалося отримати\nдоступ до карти microSD."
+    "ua": "Не вдається зробити\nскриншот меню HOME, бо\nне вдалося отримати\nдоступ до карти microSD."
   },
   "lau_dlg_cap_sd_miss": {
     "en": "An SD card process failed.",
@@ -1721,7 +1721,7 @@
   },
   "lau_dlg_bt_eu4": {
     "en": "Please wait...",
-    "ua": "Зачекайте, будь ласка…..."
+    "ua": "Зачекайте, будь ласка…"
   },
   "lau_dlg_2b_bt_eu0": {
     "en": " Yes",
@@ -1925,15 +1925,15 @@
   },
   "dat_dlg_bu_cr1": {
     "en": "Saving data...\n\nDo not remove the SD Card\nor turn off the power.",
-    "ua": "Триває збереження даних…\n\nНе вимикайте систему\nі не виймайте карту SD."
+    "ua": "Збереження даних…\n\nНе вимикайте систему\nі не виймайте карту SD."
   },
   "dat_dlg_bu_cr1_sac": {
     "en": "Saving data...\n\nDo not remove the microSD\ncard or turn off the power.",
-    "ua": "Триває збереження даних…\nНе вимикайте систему\nі не виймайте карту\nmicroSD."
+    "ua": "Збереження даних…\nНе вимикайте систему\nі не виймайте карту\nmicroSD."
   },
   "dat_dlg_bu_cr1_jan": {
     "en": "Saving data...\n\nDo not remove the microSD\ncard or turn off the power.",
-    "ua": "Триває збереження даних…\nНе вимикайте систему\nі не виймайте карту\nmicroSD."
+    "ua": "Збереження даних…\nНе вимикайте систему\nі не виймайте карту\nmicroSD."
   },
   "dat_dlg_bu_cr2": {
     "en": "Saved.\n\nSaved backup data can be\nrestored or deleted via\nData Management in the\nSystem Settings.",
@@ -2081,7 +2081,7 @@
   },
   "lau_dlg_pre_menu_wait": {
     "en": "Opening the HOME Menu...\nDo not turn off the power.",
-    "ua": "Відкривається меню HOME…\nНе вимикайте живлення.."
+    "ua": "Відкриття меню HOME…\nНе вимикайте живлення."
   },
   "manual_sample0": {
     "en": "Software Title 1",
@@ -2189,7 +2189,7 @@
   },
   "new_tips1": {
     "en": "The Nintendo 3DS system allows\nyou to store software titles, save\ndata and photo and audio data\non SD Cards.\n\nBefore removing or inserting an\nSD Card, please ensure that the\npower has been turned off first.\n\nAttempting to remove or insert\nan SD Card while the power is on\ncould result in data becoming\ncorrupted.\n\nNintendo",
-    "ua": "Система Nintendo 3DS дозволяє\nвам зберігати на картах SD ігри,\nзбережені дані ігор, а також\nфото- й аудіодані.\n\nПеред тим як вийняти або\nвставити карту SD, переконайтеся,\nщо система вимкнена.\n\nСпроба вийняти або вставити\nкарту SD, коли система\nувімкнена, може призвести\nдо пошкодження даних.\n\nNintendo"
+    "ua": "Система Nintendo 3DS дозволяє\nвам зберігати на картах SD ігри,\nзбережені дані ігор, а також\nфото- й аудіодані.\n\nПеред тим як вийняти або\nвставити карту SD,\nпереконайтеся, що\nсистема вимкнена.\n\nСпроба вийняти або вставити\nкарту SD, коли система\nувімкнена, може призвести\nдо пошкодження даних.\n\nNintendo"
   },
   "new_tips1_sac": {
     "en": "This system allows you to store\nsoftware titles, save data, and\nphoto and audio data on\nmicroSD cards.\n\nBefore removing or inserting a\nmicroSD card, please ensure that\nthe power has been turned off first.\n\nAttempting to remove or insert\na microSD card while the power is\non could result in data becoming\ncorrupted.\n\nNote: The microSD card is already\ninserted in the microSD card slot\nwhen the system is purchased.\n\nNintendo",
@@ -2201,7 +2201,7 @@
   },
   "new_tips1_flw": {
     "en": "The Nintendo 2DS system allows\nyou to store software titles, save\ndata and photo and audio data\non SD Cards.\n\nBefore removing or inserting an\nSD Card, please ensure that the\npower has been turned off first.\n\nAttempting to remove or insert\nan SD Card while the power is on\ncould result in data becoming\ncorrupted.\n\nNintendo",
-    "ua": "Система Nintendo 2DS дозволяє\nвам зберігати на картах SD ігри,\nзбережені дані ігор, а також\nфото- й аудіодані.\n\nПеред тим як вийняти або\nвставити карту SD, переконайтеся,\nщо система вимкнена.\n\nСпроба вийняти або вставити\nкарту SD, коли система\nувімкнена, може призвести\nдо пошкодження даних.\n\nNintendo"
+    "ua": "Система Nintendo 2DS дозволяє\nвам зберігати на картах SD ігри,\nзбережені дані ігор, а також\nфото- й аудіодані.\n\nПеред тим як вийняти або\nвставити карту SD,\nпереконайтеся, що\nсистема вимкнена.\n\nСпроба вийняти або вставити\nкарту SD, коли система\nувімкнена, може призвести\nдо пошкодження даних.\n\nNintendo"
   },
   "new_tips2_title": {
     "en": "Sleep Mode",
@@ -2273,11 +2273,11 @@
   },
   "new_tips7_sac": {
     "en": "Touch HOME Menu Settings in\nthe upper-left corner of the\nTouch Screen while on the\nHOME Menu (see above image)\nto perform the following\noperations:\n\n■ Change the HOME Menu theme\n■ Save/load HOME Menu layouts\n■ Adjust screen brightness\n■ Toggle power-saving mode\n■ Toggle wireless communication\n\nPress HOME at any time when\nplaying a Nintendo 3DS software\ntitle to return to the HOME Menu\nand adjust the brightness.\n\nHOME Menu Settings also allows\nyou to access the following:\n\n■ Nintendo 3DS Image Share\n■ amiibo Settings\n■ Nintendo eShop\n■ The HOME Menu\nelectronic manual\n■ System Settings\n\nThis is a useful function to\nremember.\n\nNintendo",
-    "ua": "Торкніться Налаштування HOME\nу верхньому лівому куті сенсорного\nдисплея в меню HOME\n(див. мал. вище), щоб\nвиконати такі дії:\n\n• змінити тему меню HOME;\n• зберегти/завантажити вигляд\nменю HOME;\n• відрегулювати яскравість екрана;\n• увімкнути й вимкнути\n  енергоощадний режим;\n• увімкнути й вимкнути\n  бездротовий режим.\n\nНатисніть  HOME будь-коли,\nколи запущено програму\nNintendo 3DS, щоб повернутися\nдо меню HOME й відрегулювати\nяскравість.\n\nУ налаштуваннях меню HOME\nтакож можна отримати\nдоступ до такого:\n\n• сервіс Обмін зображеннями\n  Nintendo 3DS;\n• налаштування amiibo;\n• Nintendo eShop;\n• електронний посібник\n  з меню HOME;\n• системні налаштування.\n\nЦе корисна функція, яку\nварто запам'ятати.\n\nNintendo"
+    "ua": "Торкніться Налаштування HOME\nу верхньому лівому куті\nсенсорного дисплея в меню HOME\n(див. мал. вище), щоб\nвиконати такі дії:\n\n• змінити тему меню HOME;\n• зберегти/завантажити вигляд\nменю HOME;\n• відрегулювати яскравість екрана;\n• увімкнути й вимкнути\n  енергоощадний режим;\n• увімкнути й вимкнути\n  бездротовий режим.\n\nНатисніть  HOME будь-коли,\nколи запущено програму\nNintendo 3DS, щоб повернутися\nдо меню HOME й відрегулювати\nяскравість.\n\nУ налаштуваннях меню HOME\nтакож можна отримати\nдоступ до такого:\n\n• сервіс Обмін зображеннями\n  Nintendo 3DS;\n• налаштування amiibo;\n• Nintendo eShop;\n• електронний посібник\n  з меню HOME;\n• системні налаштування.\n\nЦе корисна функція, яку\nварто запам'ятати.\n\nNintendo"
   },
   "new_tips7_jan": {
     "en": "Touch HOME Menu Settings in\nthe upper-left corner of the\nTouch Screen while on the\nHOME Menu (see above image)\nto perform the following\noperations:\n\n■ Change the HOME Menu theme\n■ Save/load HOME Menu layouts\n■ Adjust screen brightness\n■ Toggle power-saving mode\n■ Toggle wireless communication\n\nPress HOME at any time when\nplaying a Nintendo 3DS software\ntitle to return to the HOME Menu\nand adjust the brightness.\n\nHOME Menu Settings also allows\nyou to access the following:\n\n■ Nintendo 3DS Image Share\n■ amiibo Settings\n■ Nintendo eShop\n■ The HOME Menu\nelectronic manual\n■ System Settings\n\nThis is a useful function to\nremember.\n\nNintendo",
-    "ua": "Торкніться Налаштування HOME\nу верхньому лівому куті сенсорного\nдисплея в меню HOME\n(див. мал. вище), щоб\nвиконати такі дії:\n\n• змінити тему меню HOME;\n• зберегти/завантажити вигляд\nменю HOME;\n• відрегулювати яскравість екрана;\n• увімкнути й вимкнути\n  енергоощадний режим;\n• увімкнути й вимкнути\n  бездротовий режим.\n\nНатисніть  HOME будь-коли,\nколи запущено програму\nNintendo 3DS, щоб повернутися\nдо меню HOME й відрегулювати\nяскравість.\n\nУ налаштуваннях меню HOME\nтакож можна отримати\nдоступ до такого:\n\n• сервіс Обмін зображеннями\n  Nintendo 3DS;\n• налаштування amiibo;\n• Nintendo eShop;\n• електронний посібник\n  з меню HOME;\n• системні налаштування.\n\nЦе корисна функція, яку\nварто запам'ятати.\n\nNintendo"
+    "ua": "Торкніться Налаштування HOME\nу верхньому лівому куті\nсенсорного дисплея в меню HOME\n(див. мал. вище), щоб\nвиконати такі дії:\n\n• змінити тему меню HOME;\n• зберегти/завантажити вигляд\nменю HOME;\n• відрегулювати яскравість екрана;\n• увімкнути й вимкнути\n  енергоощадний режим;\n• увімкнути й вимкнути\n  бездротовий режим.\n\nНатисніть  HOME будь-коли,\nколи запущено програму\nNintendo 3DS, щоб повернутися\nдо меню HOME й відрегулювати\nяскравість.\n\nУ налаштуваннях меню HOME\nтакож можна отримати\nдоступ до такого:\n\n• сервіс Обмін зображеннями\n  Nintendo 3DS;\n• налаштування amiibo;\n• Nintendo eShop;\n• електронний посібник\n  з меню HOME;\n• системні налаштування.\n\nЦе корисна функція, яку\nварто запам'ятати.\n\nNintendo"
   },
   "new_tips8_title": {
     "en": "",
@@ -2309,7 +2309,7 @@
   },
   "new_tips11": {
     "en": "Touch the icons in the upper-right\nof the Touch Screen on the\nHOME Menu to increase or\ndecrease the size of the\nsoftware icons displayed\n(see above image).\n\nChoose a style you like\nto personalise your\nHOME Menu view.\n\nNintendo",
-    "ua": "Торкніться значків у правому\nверхньому куті сенсорного дисплея\nв меню HOME, щоб збільшити\nабо зменшити розмір\nпоказаних значків\nпрограм (див. мал. вище).\n\nВи можете вибрати вигляд, який\nвам подобається, і змінити меню\nHOME на свій розсуд.\n\nNintendo"
+    "ua": "Торкніться значків у правому\nверхньому куті сенсорного\nдисплея в меню HOME,\nщоб збільшити або зменшити\nпоказаних значків\nпрограм (див. мал. вище).\n\nВи можете вибрати вигляд, який\nвам подобається, і змінити меню\nHOME на свій розсуд.\n\nNintendo"
   },
   "new_tips12_title": {
     "en": "About the HOME Button",
@@ -2345,7 +2345,7 @@
   },
   "new_tips15": {
     "en": "Screenshots can be posted directly\nfrom the HOME Menu to social\nnetworks.\n\n■ You can post a screenshot as\nfollows:\n\n- Open HOME Menu Settings\nusing the icon in the top left of the\nTouch Screen (see diagram above),\nselect \"Nintendo 3DS Image\nShare\" and follow the on-screen\ninstructions.\n\n- To post images, you'll need\naccess to the internet and login\ndetails for the relevant social\nnetworking site.\n\n- You can view the screenshots\nin Nintendo 3DS Camera using the\n\"View Photos/Videos\" option.\n\nNintendo",
-    "ua": "З меню HOME можна\nпублікувати скриншоти\nв соціальних мережах.\n\n• Скриншот можна опублікувати\nтаким способом.\n- Відкрийте Налаштування меню\nHOME за допомогою значка\nу верхньому лівому куті сенсорного\nдисплея (див. мал. вище),\nвиберіть Обмін зображеннями\nNintendo 3DS і виконуйте\nвказівки на екрані.\n\n- Для публікації зображень\nвам знадобиться з'єднання\nз Інтернетом і дані доступу\nдо соціальної мережі.\n\n- Скриншоти можна побачити\nу програмі Камера\nNintendo 3DS за допомогою опції\nПерегляд фото/відео.\n\nNintendo"
+    "ua": "З меню HOME можна\nпублікувати скриншоти\nв соціальних мережах.\n\n• Скриншот можна опублікувати\nтаким способом.\n- Відкрийте Налаштування меню\nHOME за допомогою значка\nу верхньому лівому куті\nсенсорного дисплея\n(див. мал. вище),\nвиберіть Обмін зображеннями\nNintendo 3DS і виконуйте\nвказівки на екрані.\n\n- Для публікації зображень\nвам знадобиться з'єднання\nз Інтернетом і дані доступу\nдо соціальної мережі.\n\n- Скриншоти можна побачити\nу програмі Камера\nNintendo 3DS за допомогою опції\nПерегляд фото/відео.\n\nNintendo"
   },
   "new_tips16_title": {
     "en": "You got your first badge!",
@@ -2353,6 +2353,6 @@
   },
   "new_tips16": {
     "en": "With badges, you can further\ncustomise your HOME Menu\nand personalise your system.\n\nYou can open the badge box\nin the following ways:\n\n■ Open HOME Menu Settings\nusing the icon in the top left\nof the Touch Screen (see above)\nand select \"Place Badges\".\n■ Select a badge you have placed\nand touch it or press .\n\nAlso, \"Save/Load Layout\"\n(see above) lets you save multiple\nHOME Menu layouts and swap\nbetween them.\n\nTry decorating the HOME Menu\nhow you like by using different\nbadges and layouts!\n\nNintendo",
-    "ua": "За допомогою жетонів ви можете\nзмінити меню HOME на свій\nсмак і надати вашій системі\nіндивідуального вигляду.\n\nКоробку для жетонів можна\nвідкрити такими способами.\n\n• Відкрийте Налаштування меню\nHOME за допомогою значка\nу верхньому лівому куті сенсорного\nдисплея (див. мал. вище)\nі виберіть Причепити жетони.\n• Виберіть причеплений\nжетон, потім торкніться його або\nнатисніть .\n\nЗа допомогою опції Зберегти/\nзавантажити вигляд (мал. вище)\nви можете також зберігати\nрізні вигляди меню HOME\nі переключатися між ними.\n\nОздоблюйте меню HOME, як\nзабажаєте, використовуючи різні\nвигляди й жетони!\n\nNintendo"
+    "ua": "За допомогою жетонів ви можете\nзмінити меню HOME на свій\nсмак і надати вашій системі\nіндивідуального вигляду.\n\nКоробку для жетонів можна\nвідкрити такими способами.\n\n• Відкрийте Налаштування меню\nHOME за допомогою значка\nу верхньому лівому куті\nсенсорного дисплея\n(див. мал. вище)\nі виберіть Причепити жетони.\n• Виберіть причеплений жетон,\nпотім торкніться його або .\n\nЗа допомогою опції Зберегти/\nзавантажити вигляд (мал. вище)\nви можете також зберігати\nрізні вигляди меню HOME\nі переключатися між ними.\n\nОздоблюйте меню HOME, як\nзабажаєте, різними виглядами\nй жетонами!\n\nNintendo"
   }
 }

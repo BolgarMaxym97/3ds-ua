@@ -9,7 +9,7 @@
   },
   "first_text_02": {
     "en": "You've created your Personal Mii!\n\nThis Mii is unique in that it\ncannot be erased. You can\nalways edit it later, though.",
-    "ua": "Ви створили свого особистого Mii!\n\nЦей Mii особливий: його не\nможна стерти. Але його завжди\nможна відредагувати."
+    "ua": "Ви створили особистого Mii!\n\nЦей Mii особливий: його не\nможна стерти. Але його завжди\nможна відредагувати."
   },
   "first_text_03": {
     "en": "You can use Mii characters\nin games. Create Mii versions\nof your friends and family and\nthey can join in the fun, too!",
@@ -189,7 +189,7 @@
   },
   "editor_prof_color": {
     "en": "Favourite Colour",
-    "ua": "Улюблений колір"
+    "ua": "Улюб. колір"
   },
   "editor_prof_sex": {
     "en": "Gender",
@@ -505,7 +505,7 @@
   },
   "plaza_opr_06": {
     "en": " Blocked-User Settings",
-    "ua": " Заблоковані користувачі"
+    "ua": " Заблоковані"
   },
   "plaza_opr_05": {
     "en": "These controls can also be used\nafter selecting View Mii Characters.",
@@ -689,7 +689,7 @@
   },
   "code_text_25": {
     "en": "Cannot write to the SD Card.\n\nPlease turn off the power, move\nthe SD Card's write-protection\nswitch to the off position, then\nreinsert the SD Card.",
-    "ua": "Не можна записати на карту SD.\n\nВимкніть живлення, переведіть\nперемикач захисту від запису\nна карті SD у положення «вимк.»,\nпотім вставте карту знову."
+    "ua": "Не можна записати на карту SD.\n\nВимкніть живлення, переведіть\nперемикач захисту від запису\nна карті SD у положення\n«вимк.», потім вставте\nкарту знову."
   },
   "code_text_26": {
     "en": "???",
@@ -701,7 +701,7 @@
   },
   "code_text_30": {
     "en": "No more pictures can be saved\nto the SD Card. Either delete\npictures to make space, or use\nan SD Card with more free space.",
-    "ua": "Більше зображень зберегти\nна карту SD не можна. Видаліть\nзображення або візьміть карту SD\nз більшим обсягом вільного місця."
+    "ua": "Більше зображень зберегти\nна карту SD не можна. Видаліть\nзображення або візьміть\nкарту SD з більшим обсягом\nвільного місця."
   },
   "code_btn_encode": {
     "en": "Save Mii as QR Code",
