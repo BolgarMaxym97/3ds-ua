@@ -49,6 +49,7 @@ TEXT_VA = 0x100000
 # local system capabilities block.
 REMASTER_VERSION_OFFSET = 0x0E
 TEXT_SIZE_OFFSET = 0x18
+BSS_SIZE_OFFSET = 0x3C
 ACCESS_INFO_OFFSET = 0x248
 DIRECT_SDMC_BIT = 7
 
@@ -69,8 +70,15 @@ LUMA_PAYLOAD_SIZE = 0x114
 # there is silently overwritten. Rounded up to a word, with a margin.
 LUMA_PATH_SIZE = 48
 
-# The first instruction of HOME Menu's ReadTitleIcon thunk, the word the branch replaces.
+# How much room the pane hook has when it composes a replacement plus the original's tail.
+# Names are a few dozen code units; this only bounds a runaway string.
+PANE_SCRATCH_UNITS = 0x100
+# The buffer itself plus its terminator, rounded to a word - what .bss grows by.
+PANE_SCRATCH_BYTES = (2 * PANE_SCRATCH_UNITS + 2 + 3) & ~3
+
+# The first instruction of each HOME Menu function the branches replace.
 ORIGINAL_THUNK_WORD = 0xE92D4008  # push {r3, lr}
+ORIGINAL_CACHE_WORD = 0xE92D4FF0  # push {r4-r8, sb, sl, fp, lr}
 
 # TID -> everything needed to build the stub. All offsets are .text offsets, i.e.
 # virtual address minus TEXT_VA, which is also the offset inside code.bin and the
@@ -89,6 +97,16 @@ HOOK_PATCHES: dict[str, dict] = {
         "open_archive": 0xD40C,  # the title's own FSUSER_OpenArchive IPC wrapper
         "mount_tail": 0xD2B4,    # tail of MountSharedExtData(): allocates and stores the object
         "globals_off": 0xD328,   # literal holding the nn::fs globals base (+0x10 = fs:USER session)
+        # This title cannot be fixed the way the HOME Menu was: it never reads an SMDH, it is
+        # handed finished strings. So the application names are swapped at the one text
+        # setter every string goes through - see _pane_hook().
+        "pane_hook": {
+            # One level below SetPaneText(): 8 call sites in three functions reach it, and
+            # SetPaneText() is only one of them. The software card sets its panes through
+            # another of the three, which is why hooking SetPaneText() left it in Russian.
+            "set_text_off": 0x7BC28,      # SetText(window, text, pane, ...)
+            "original_word": 0xE92D47F0,  # push {r4-r8, sb, sl, lr}
+        },
     },
     # Instruction Manual (ebird), EUR, title version 5.
     #
@@ -207,9 +225,23 @@ HOOK_PATCHES: dict[str, dict] = {
         "title_version": 29,
         "code_sha256": "5f4d8d0e80d8e7d6fafcefa0630c5106473ade4658585cfb499a6ec3324d89a7",
         "kind": "smdh_names",
-        "thunk_off": 0x131E60,   # the one caller of ReadTitleIcon(), itself called 18 times
-        "reader_off": 0xEA40,    # ReadTitleIcon(buffer, mediatype, tid_lo, tid_hi)
-        "lang_index": 10,        # the SMDH language slot the mod overwrites: EU_Russian
+        "thunk_off": 0x131E60,     # the one caller of ReadTitleIcon(), itself called 18 times
+        "reader_off": 0xEA40,      # ReadTitleIcon(buffer, mediatype, tid_lo, tid_hi)
+        "cache_read_off": 0x147D64,  # CacheRead(cache, key, buffer) -> bool, out of Cache.dat
+        "lang_index": 10,          # the SMDH language slot the mod overwrites: EU_Russian
+        # The picture on the upper screen comes from the highlighted title's own
+        # ExeFS:/banner, which HOME Menu opens itself - see docs/banner-ua.md. The open is
+        # shared by every title, so the hook compares the title id first and only swaps the
+        # System Settings one for a file on the SD card.
+        "banner_hook": {
+            "open_off": 0x61DE4,   # OpenTitleBanner(out, mediatype, tid_lo, tid_hi)
+            "site_off": 0x61E64,   # `ldr r3, [pc, #0xb4]` - the archive id, last arg set
+            "original_word": 0xE59F30B4,
+            "return_to": 0x61E68,
+            "title_id_slot": 0x38,  # `strd r2, r3, [sp, #0x38]` at the top of the open
+            "title_id": 0x0004001000022000,
+            "image_name": "banner_22000.bin",
+        },
     },
     # StreetPass Mii Plaza (MEET), EUR, title version 5. Verified working on hardware.
     #
@@ -332,7 +364,15 @@ FILE_PATH_PTR_SLOT = 0x10
 FILE_PATH_SIZE_SLOT = 0x14
 ARCHIVE_SDMC = 9
 PATH_ASCII = 3
+PATH_EMPTY = 1
 ORIGINAL_SITE_WORD = 0xE3A03003  # mov r3, #3  -> the ARCHIVE_ROMFS each site starts from
+
+# The banner open sets an archive path too, which the romfs sites above do not: theirs is
+# already empty, this one carries the title id, and ARCHIVE_SDMC wants it empty.
+ARCHIVE_PATH_TYPE_SLOT = 0x00
+ARCHIVE_PATH_PTR_SLOT = 0x04
+ARCHIVE_PATH_SIZE_SLOT = 0x08
+ARCHIVE_SAVEDATA_AND_CONTENT = 0x2345678A
 
 
 # GodMode9 names its output after the title and the mounted image, not after what the file
@@ -494,92 +534,358 @@ STUB_VARIANTS = {
 }
 
 
-def _stub_smdh_names(patch: dict, table_va: int) -> list[int]:
-    """Wrap ReadTitleIcon() and rewrite the Russian slot of the SMDH it just read.
+def _pane_hook(patch: dict, table_va: int, scratch_va: int, base: int) -> tuple[list[int], dict[str, int]]:
+    """Swap the text argument of the title's string setter for a name we have a translation for.
 
-    Entered in place of the thunk's own `push`, so the incoming registers are the thunk's:
-    r0 = buffer, r1 = mediatype, r2 = title id low, r3 = title id high, lr = the caller.
-    The thunk's three instructions are reproduced verbatim before the call, because
-    ReadTitleIcon() reads a fifth argument off the stack and expects ip to be zero.
+    Entered in place of the setter's own prologue, so the incoming registers are the caller's,
+    with r1 = the text. Two shapes of match, because the same string reaches the setter both
+    on its own and with a second line appended - the software card draws the name and the
+    publisher as one string:
 
-    Only r0-r3, ip and lr may be clobbered on the way out, so the search borrows r4-r7 and
-    gives them back. The return value has to survive too: the error path leaves it alone,
-    and the path that copies strings puts the zero back.
+        "Журнал действий"           -> r1 points at our replacement, nothing is copied
+        "Журнал действий\nNintendo" -> replacement and the tail are composed into scratch
+
+    A partial match is not a match: the candidate has to end, or break the line, exactly
+    where the original does. The whole interface goes through this function, so anything
+    looser would corrupt unrelated strings.
+
+    Falls through into the prologue it replaced and then back into the setter, so there is no
+    return path to arrange.
     """
-    s = patch["stub_off"]
+    hook = patch["pane_hook"]
+
+    def b(target: str):
+        return lambda at, labels: _b(at, labels[target])
+
+    def bc(cond: int, target: str):
+        return lambda at, labels: _bc(cond, at, labels[target])
+
+    def ldr_pc(reg: int, target: str):
+        return lambda at, labels: 0xE59F0000 | (reg << 12) | (labels[target] - at - 8)
+
+    blocks = {
+        "pane_hook": [
+            0xE92D403D,                          # push  {r0, r2, r3, r4, r5, lr}
+            0xE3510000,                          # cmp   r1, #0
+            bc(COND_EQ, "pane_out"),             # beq   pane_out           nothing to compare
+            ldr_pc(3, "pane_table"),             # ldr   r3, [pc, #...]
+        ],
+        "pane_loop": [
+            0xE1D300B0,                          # ldrh  r0, [r3]           length of the original
+            0xE3500000,                          # cmp   r0, #0
+            bc(COND_EQ, "pane_out"),             # beq   pane_out           end of table
+            0xE2834004,                          # add   r4, r3, #4         the original
+            0xE1A05001,                          # mov   r5, r1             the candidate
+        ],
+        "pane_cmp": [
+            0xE0D420B2,                          # ldrh  r2, [r4], #2
+            0xE0D5C0B2,                          # ldrh  ip, [r5], #2
+            0xE152000C,                          # cmp   r2, ip
+            bc(COND_EQ, "pane_same"),            # beq   pane_same
+            # A space in the table also matches a line break, so the originals can be
+            # written on one line without knowing where Nintendo broke them.
+            0xE3520020,                          # cmp   r2, #0x20
+            bc(COND_NE, "pane_next"),            # bne   pane_next
+            0xE35C000A,                          # cmp   ip, #0xa
+            bc(COND_NE, "pane_next"),            # bne   pane_next
+        ],
+        "pane_same": [
+            0xE2500001,                          # subs  r0, r0, #1
+            bc(COND_NE, "pane_cmp"),             # bne   pane_cmp
+            # r4 -> the replacement, r5 -> whatever follows the matched text
+            0xE1D5C0B0,                          # ldrh  ip, [r5]
+            0xE35C0000,                          # cmp   ip, #0
+            0x01A01004,                          # moveq r1, r4             an exact match
+            bc(COND_EQ, "pane_out"),             # beq   pane_out
+            0xE35C000A,                          # cmp   ip, #0xa           a line break
+            bc(COND_NE, "pane_next"),            # bne   pane_next
+        ],
+        # Compose the replacement plus the tail into our own buffer. The limit is on top of
+        # the exact-match path, which never copies at all, so it only bounds this one.
+        "pane_join": [
+            ldr_pc(0, "pane_scratch"),           # ldr   r0, [pc, #...]
+            0xE1A01000,                          # mov   r1, r0             the swapped pointer
+            0xE3A03C01,                          # mov   r3, #0x100         code units of room
+        ],
+        "pane_head": [
+            0xE0D420B2,                          # ldrh  r2, [r4], #2
+            0xE3520000,                          # cmp   r2, #0
+            bc(COND_EQ, "pane_tail"),            # beq   pane_tail
+            0xE0C020B2,                          # strh  r2, [r0], #2
+            0xE2533001,                          # subs  r3, r3, #1
+            bc(COND_NE, "pane_head"),            # bne   pane_head
+            b("pane_trunc"),                     # b     pane_trunc
+        ],
+        "pane_tail": [
+            0xE0D520B2,                          # ldrh  r2, [r5], #2
+            0xE0C020B2,                          # strh  r2, [r0], #2
+            0xE3520000,                          # cmp   r2, #0
+            bc(COND_EQ, "pane_out"),             # beq   pane_out           the NUL is copied too
+            0xE2533001,                          # subs  r3, r3, #1
+            bc(COND_NE, "pane_tail"),            # bne   pane_tail
+        ],
+        "pane_trunc": [
+            0xE3A02000,                          # mov   r2, #0
+            0xE1C020B0,                          # strh  r2, [r0]
+            b("pane_out"),                       # b     pane_out
+        ],
+        "pane_next": [
+            0xE1D300B0,                          # ldrh  r0, [r3]           original length
+            0xE1D320B2,                          # ldrh  r2, [r3, #2]       replacement length
+            0xE0833080,                          # add   r3, r3, r0, lsl #1
+            0xE0833082,                          # add   r3, r3, r2, lsl #1
+            0xE2833004,                          # add   r3, r3, #4
+            b("pane_loop"),                      # b     pane_loop
+        ],
+        "pane_out": [
+            0xE8BD403D,                          # pop   {r0, r2, r3, r4, r5, lr}
+            hook["original_word"],               # the setter's own prologue
+            lambda at, labels: _b(at, hook["set_text_off"] + 4),
+        ],
+        "pane_table": [
+            table_va,                            # literal
+        ],
+        "pane_scratch": [
+            scratch_va,                          # literal
+        ],
+    }
+    return _assemble(blocks, base)
+
+
+def _banner_hook(patch: dict, path_va: int, path_len: int, base: int) -> tuple[list[int], dict[str, int]]:
+    """Point one title's banner read at the SD card, and leave every other title alone.
+
+    HOME Menu builds the whole FSUSER_OpenFileDirectly frame for ExeFS:/banner itself:
+    archive 0x2345678A with the title id as a binary archive path, and a binary file path
+    naming the ExeFS section. The last thing it does before the call is load the archive id,
+    and that instruction is what the hook replaces - by then the frame is complete and only
+    r0, r1 and r3 are still to be written, so r1 and r3 are free scratch here.
+
+    For the one title we translate, the frame is rewritten into an SD open: empty archive
+    path (what ARCHIVE_SDMC expects), ASCII file path, archive id 9. Every other title falls
+    through the `pass` block, which loads the archive id the replaced instruction would have
+    loaded, so the read behaves exactly as Nintendo wrote it.
+
+    The title id is read back out of the frame rather than kept in a register, because the
+    open stores it there on entry (`strd r2, r3, [sp, #0x38]`) and never touches it again.
+    """
+    hook = patch["banner_hook"]
+    slot = hook["title_id_slot"]
+    literals = {
+        "id_low": hook["title_id"] & 0xFFFFFFFF,
+        "id_high": hook["title_id"] >> 32,
+        "path": path_va,
+        "empty": path_va + path_len,   # the path's own NUL, reused as the empty archive path
+        "archive": ARCHIVE_SAVEDATA_AND_CONTENT,  # what the replaced instruction loaded
+    }
+    order = list(literals)
+
+    def ldr(register: int, name: str, cond: int = 0xE):
+        """`ldr rN, [pc, #..]` reaching one of the literals at the end of the blob."""
+        index = order.index(name)
+        return lambda at, labels: (
+            (cond << 28) | 0x059F0000 | (register << 12)
+            | (labels["banner_lits"] + index * 4 - at - 8)
+        )
+
+    blocks = {
+        "banner_hook": [
+            0xE59D1000 | slot,                        # ldr   r1, [sp, #0x38]   title id low
+            ldr(3, "id_low"),                         # ldr   r3, [pc, #..]
+            0xE1510003,                               # cmp   r1, r3
+            0x059D1000 | (slot + 4),                  # ldreq r1, [sp, #0x3c]   title id high
+            ldr(3, "id_high", COND_EQ),               # ldreq r3, [pc, #..]
+            0x01510003,                               # cmpeq r1, r3
+            lambda at, labels: _bc(COND_NE, at, labels["banner_pass"]),
+            0xE3A01000 | PATH_EMPTY,                  # mov   r1, #1
+            0xE58D1000 | ARCHIVE_PATH_TYPE_SLOT,      # str   r1, [sp, #0x00]   archive path
+            ldr(1, "empty"),                          # ldr   r1, [pc, #..]
+            0xE58D1000 | ARCHIVE_PATH_PTR_SLOT,       # str   r1, [sp, #0x04]
+            0xE3A01001,                               # mov   r1, #1
+            0xE58D1000 | ARCHIVE_PATH_SIZE_SLOT,      # str   r1, [sp, #0x08]
+            0xE3A01000 | PATH_ASCII,                  # mov   r1, #3            file path
+            0xE58D1000 | FILE_PATH_TYPE_SLOT,         # str   r1, [sp, #0x0c]
+            ldr(1, "path"),                           # ldr   r1, [pc, #..]
+            0xE58D1000 | FILE_PATH_PTR_SLOT,          # str   r1, [sp, #0x10]
+            0xE3A01000 | (path_len + 1),              # mov   r1, #len          with the NUL
+            0xE58D1000 | FILE_PATH_SIZE_SLOT,         # str   r1, [sp, #0x14]
+            0xE3A03000 | ARCHIVE_SDMC,                # mov   r3, #9
+            lambda at, labels: _b(at, labels["banner_back"]),
+        ],
+        "banner_pass": [
+            ldr(3, "archive"),                        # ldr   r3, [pc, #..]     as Nintendo had it
+        ],
+        "banner_back": [
+            lambda at, labels: _b(at, hook["return_to"]),
+        ],
+        "banner_lits": [literals[name] for name in order],
+    }
+    return _assemble(blocks, base)
+
+
+def _assemble(blocks: dict[str, list], base: int) -> tuple[list[int], dict[str, int]]:
+    """Lay out labelled blocks of words and resolve their branches.
+
+    A word is either an int or a callable taking (address, labels) - which is how the
+    branches get written as label arithmetic instead of hand-counted offsets.
+    """
+    labels: dict[str, int] = {}
+    address = base
+    for name, words in blocks.items():
+        labels[name] = address
+        address += 4 * len(words)
+
+    out: list[int] = []
+    address = base
+    for words in blocks.values():
+        for word in words:
+            out.append(word(address, labels) if callable(word) else word)
+            address += 4
+    return out, labels
+
+
+def _stub_smdh_names(patch: dict, table_va: int, base: int) -> tuple[list[int], dict[str, int]]:
+    """Two hooks and the routine they share, as one blob for the .text padding.
+
+    HOME Menu reads a title's SMDH twice over: once from `ExeFS:/icon` when it fills its
+    icon cache, and from then on out of that cache - `Cache.dat` in its SD extdata, which
+    holds all 0x36C0 bytes, every language slot included. That is why switching the console
+    language relabels everything without the cache being rebuilt, and why hooking only the
+    ExeFS read changes nothing on a console whose cache was built before the mod.
+
+    So both readers are wrapped, and both hand the buffer to the same `rewrite`:
+
+        icon_hook   over the ReadTitleIcon thunk        (a cache fill, or a cache miss)
+        cache_hook  over the cache reader itself        (every ordinary boot)
+
+    Nothing is written back - the copy on the SD card stays as Nintendo left it, so removing
+    the mod restores the original names with no cache rebuild.
+    """
     short_at, long_at = smdh_names.slot_offsets(patch["lang_index"])
-    page, short_low = short_at & ~0xFF, short_at & 0xFF
+    page, short_low, long_low = short_at & ~0xFF, short_at & 0xFF, long_at & 0xFF
     if long_at & ~0xFF != page:
         raise RuntimeError(f"slot {patch['lang_index']} spans two immediate pages")
 
-    # Every branch target as a word index, so the layout below reads as its own labels.
-    LOOP, NEXT, MATCH, CP1, LONG, CP2, DONE, OUT, LIT = 12, 23, 27, 32, 38, 42, 48, 50, 52
-    at = lambda index: s + index * 4  # noqa: E731
+    def bl(target: str):
+        return lambda at, labels: _bl(at, labels[target])
 
-    words = [
-        0xE92D400D,                          # 00  push  {r0, r2, r3, lr}   buffer, title id
-        0xE92D4008,                          # 01  push  {r3, lr}           the thunk's frame
-        0xE3A0C000,                          # 02  mov   ip, #0
-        0xE58DC000,                          # 03  str   ip, [sp]           its fifth argument
-        _bl(at(4), patch["reader_off"]),     # 04  bl    ReadTitleIcon
-        0xE28DD008,                          # 05  add   sp, sp, #8
-        0xE3500000,                          # 06  cmp   r0, #0
-        _bc(COND_NE, at(7), at(OUT)),        # 07  bne   OUT                read failed
-        0xE92D00F0,                          # 08  push  {r4, r5, r6, r7}
-        0xE28DC010,                          # 09  add   ip, sp, #0x10
-        0xE89C0070,                          # 10  ldm   ip, {r4, r5, r6}   buffer, id low, high
-        0xE59F7000 | (at(LIT) - at(11) - 8),  # 11  ldr   r7, [pc, #...]     r7 = table
-        # LOOP: walk the table looking for this title id
-        0xE5970000,                          # 12  ldr   r0, [r7]           entry id low
-        0xE3500000,                          # 13  cmp   r0, #0
-        _bc(COND_EQ, at(14), at(DONE)),      # 14  beq   DONE               end of table
-        0xE5D71004,                          # 15  ldrb  r1, [r7, #4]       entry id high byte
-        0xE5D72005,                          # 16  ldrb  r2, [r7, #5]       short length
-        0xE5D73006,                          # 17  ldrb  r3, [r7, #6]       long length
-        0xE1500005,                          # 18  cmp   r0, r5
-        _bc(COND_NE, at(19), at(NEXT)),      # 19  bne   NEXT
-        0xE206C0FF,                          # 20  and   ip, r6, #0xff
-        0xE15C0001,                          # 21  cmp   ip, r1
-        _bc(COND_EQ, at(22), at(MATCH)),     # 22  beq   MATCH
-        # NEXT: skip this entry's header and both strings
-        0xE0877082,                          # 23  add   r7, r7, r2, lsl #1
-        0xE0877083,                          # 24  add   r7, r7, r3, lsl #1
-        0xE2877008,                          # 25  add   r7, r7, #8
-        _b(at(26), at(LOOP)),                # 26  b     LOOP
-        # MATCH: r7 -> the short description, r2/r3 = the two lengths
-        0xE2877008,                          # 27  add   r7, r7, #8
-        0xE2840000 | _imm12(page),           # 28  add   r0, r4, #page
-        0xE2800000 | _imm12(short_low),      # 29  add   r0, r0, #short
-        0xE1B0C002,                          # 30  movs  ip, r2
-        _bc(COND_EQ, at(31), at(LONG)),      # 31  beq   LONG               nothing to write
-        0xE0D7E0B2,                          # 32  ldrh  lr, [r7], #2
-        0xE0C0E0B2,                          # 33  strh  lr, [r0], #2
-        0xE25CC001,                          # 34  subs  ip, ip, #1
-        _bc(COND_NE, at(35), at(CP1)),       # 35  bne   CP1
-        0xE3A0E000,                          # 36  mov   lr, #0
-        0xE1C0E0B0,                          # 37  strh  lr, [r0]           terminate
-        # LONG: same again into the long description
-        0xE2840000 | _imm12(page),           # 38  add   r0, r4, #page
-        0xE2800000 | _imm12(long_at & 0xFF),  # 39  add   r0, r0, #long
-        0xE1B0C003,                          # 40  movs  ip, r3
-        _bc(COND_EQ, at(41), at(DONE)),      # 41  beq   DONE
-        0xE0D7E0B2,                          # 42  ldrh  lr, [r7], #2
-        0xE0C0E0B2,                          # 43  strh  lr, [r0], #2
-        0xE25CC001,                          # 44  subs  ip, ip, #1
-        _bc(COND_NE, at(45), at(CP2)),       # 45  bne   CP2
-        0xE3A0E000,                          # 46  mov   lr, #0
-        0xE1C0E0B0,                          # 47  strh  lr, [r0]
-        # DONE: give r4-r7 back, restore the zero the caller checks
-        0xE8BD00F0,                          # 48  pop   {r4, r5, r6, r7}
-        0xE3A00000,                          # 49  mov   r0, #0
-        # OUT: the saved buffer and title id land in call-clobbered registers and are dropped
-        0xE8BD400E,                          # 50  pop   {r1, r2, r3, lr}
-        0xE12FFF1E,                          # 51  bx    lr
-        table_va,                            # 52  literal
-    ]
-    assert words[LIT] == table_va, "the layout drifted from its labels"
-    return words
+    def b(target: str):
+        return lambda at, labels: _b(at, labels[target])
 
+    def bc(cond: int, target: str):
+        return lambda at, labels: _bc(cond, at, labels[target])
+
+    def ldr_pc(reg: int, target: str):
+        return lambda at, labels: 0xE59F0000 | (reg << 12) | (labels[target] - at - 8)
+
+    blocks = {
+        # Wraps the thunk at thunk_off, so it is entered with the thunk's own registers:
+        # r0 = buffer, r1 = mediatype, r2/r3 = title id, lr = the caller. The thunk's three
+        # instructions are reproduced verbatim because ReadTitleIcon() takes a fifth
+        # argument off the caller's stack and expects ip to be zero.
+        "icon_hook": [
+            0xE92D400D,                          # push  {r0, r2, r3, lr}   buffer, title id
+            0xE92D4008,                          # push  {r3, lr}           the thunk's frame
+            0xE3A0C000,                          # mov   ip, #0
+            0xE58DC000,                          # str   ip, [sp]           its fifth argument
+            lambda at, labels: _bl(at, patch["reader_off"]),  # bl ReadTitleIcon
+            0xE28DD008,                          # add   sp, sp, #8
+            0xE3500000,                          # cmp   r0, #0
+            bc(COND_NE, "icon_out"),             # bne   icon_out           the read failed
+            0xE89D0007,                          # ldm   sp, {r0, r1, r2}   buffer, id lo, hi
+            bl("rewrite"),                       # bl    rewrite
+            0xE3A00000,                          # mov   r0, #0             the caller's zero
+        ],
+        "icon_out": [
+            0xE8BD800E,                          # pop   {r1, r2, r3, pc}
+        ],
+        # Wraps the cache reader: r0 = cache object, r1 = key (title id then mediatype),
+        # r2 = destination buffer, and it answers 1 on a hit, 0 on a miss.
+        "cache_hook": [
+            0xE92D4007,                          # push  {r0, r1, r2, lr}
+            bl("cache_body"),                    # bl    the reader's own code
+            0xE3500000,                          # cmp   r0, #0
+            bc(COND_EQ, "cache_out"),            # beq   cache_out          cache miss
+            0xE59D3004,                          # ldr   r3, [sp, #4]       the key
+            0xE59D0008,                          # ldr   r0, [sp, #8]       the buffer
+            0xE5931000,                          # ldr   r1, [r3]           title id low
+            0xE5932004,                          # ldr   r2, [r3, #4]       title id high
+            bl("rewrite"),                       # bl    rewrite
+            0xE3A00001,                          # mov   r0, #1             it was a hit
+        ],
+        "cache_out": [
+            0xE8BD800E,                          # pop   {r1, r2, r3, pc}
+        ],
+        # The reader's replaced prologue, so its own epilogue returns to cache_hook: it pops
+        # pc off the lr this push saves, and that lr is cache_hook's `bl`.
+        "cache_body": [
+            0xE92D4FF0,                          # push  {r4-r8, sb, sl, fp, lr}
+            lambda at, labels: _b(at, patch["cache_read_off"] + 4),
+        ],
+        # rewrite(r0 = SMDH buffer, r1 = title id low, r2 = title id high): replace the
+        # short and long description of the one language slot the mod overwrites.
+        "rewrite": [
+            0xE92D41F0,                          # push  {r4, r5, r6, r7, r8, lr}
+            0xE1A04000,                          # mov   r4, r0             buffer
+            0xE1A05001,                          # mov   r5, r1             title id low
+            0xE20260FF,                          # and   r6, r2, #0xff      title id high byte
+            ldr_pc(7, "table"),                  # ldr   r7, [pc, #...]     the name table
+        ],
+        "loop": [
+            0xE5970000,                          # ldr   r0, [r7]           entry id low
+            0xE3500000,                          # cmp   r0, #0
+            bc(COND_EQ, "done"),                 # beq   done               end of table
+            0xE5D71004,                          # ldrb  r1, [r7, #4]       entry id high byte
+            0xE5D72005,                          # ldrb  r2, [r7, #5]       short length
+            0xE5D73006,                          # ldrb  r3, [r7, #6]       long length
+            0xE1500005,                          # cmp   r0, r5
+            bc(COND_NE, "next"),                 # bne   next
+            0xE1510006,                          # cmp   r1, r6
+            bc(COND_EQ, "match"),                # beq   match
+        ],
+        "next": [
+            0xE0877082,                          # add   r7, r7, r2, lsl #1
+            0xE0877083,                          # add   r7, r7, r3, lsl #1
+            0xE2877008,                          # add   r7, r7, #8
+            b("loop"),                           # b     loop
+        ],
+        "match": [
+            0xE2877008,                          # add   r7, r7, #8         -> short text
+            0xE2840000 | _imm12(page),           # add   r0, r4, #page
+            0xE2800000 | _imm12(short_low),      # add   r0, r0, #short
+            0xE1B0C002,                          # movs  ip, r2
+            bc(COND_EQ, "long"),                 # beq   long               nothing to write
+        ],
+        "copy_short": [
+            0xE0D7E0B2,                          # ldrh  lr, [r7], #2
+            0xE0C0E0B2,                          # strh  lr, [r0], #2
+            0xE25CC001,                          # subs  ip, ip, #1
+            bc(COND_NE, "copy_short"),           # bne   copy_short
+            0xE3A0E000,                          # mov   lr, #0
+            0xE1C0E0B0,                          # strh  lr, [r0]           terminate
+        ],
+        "long": [
+            0xE2840000 | _imm12(page),           # add   r0, r4, #page
+            0xE2800000 | _imm12(long_low),       # add   r0, r0, #long
+            0xE1B0C003,                          # movs  ip, r3
+            bc(COND_EQ, "done"),                 # beq   done
+        ],
+        "copy_long": [
+            0xE0D7E0B2,                          # ldrh  lr, [r7], #2
+            0xE0C0E0B2,                          # strh  lr, [r0], #2
+            0xE25CC001,                          # subs  ip, ip, #1
+            bc(COND_NE, "copy_long"),            # bne   copy_long
+            0xE3A0E000,                          # mov   lr, #0
+            0xE1C0E0B0,                          # strh  lr, [r0]
+        ],
+        "done": [
+            0xE8BD81F0,                          # pop   {r4, r5, r6, r7, r8, pc}
+        ],
+        "table": [
+            table_va,                            # literal
+        ],
+    }
+    return _assemble(blocks, base)
 
 def build_stub(patch: dict, globals_value: int) -> bytes:
     """Assemble the replacement fsMountArchive. See the module docstring for the layout."""
@@ -611,6 +917,13 @@ def patch_exheader(tid: str, exheader: bytes) -> bytes:
     access = struct.unpack_from("<Q", out, ACCESS_INFO_OFFSET)[0]
     struct.pack_into("<Q", out, ACCESS_INFO_OFFSET, access | (1 << DIRECT_SDMC_BIT))
 
+    if patch.get("pane_hook"):
+        # The pane hook composes strings into a buffer that starts where .bss ends, so .bss
+        # has to grow by that much or the buffer is memory nobody mapped. The loader sizes
+        # the region from this field, and the title itself never reads past its own bss.
+        bss = struct.unpack_from("<I", out, BSS_SIZE_OFFSET)[0]
+        struct.pack_into("<I", out, BSS_SIZE_OFFSET, bss + PANE_SCRATCH_BYTES)
+
     override = patch.get("text_size_override")
     if override is not None:
         current = struct.unpack_from("<I", out, TEXT_SIZE_OFFSET)[0]
@@ -626,6 +939,16 @@ def patch_exheader(tid: str, exheader: bytes) -> bytes:
 
 def kind(tid: str) -> str:
     return HOOK_PATCHES[tid.upper()].get("kind", "mount_stub")
+
+
+def wants_names(tid: str) -> str | None:
+    """Which application-name table this title's patch needs, if any."""
+    patch = HOOK_PATCHES.get(tid.upper())
+    if patch is None:
+        return None
+    if patch.get("kind") == "smdh_names":
+        return "smdh"
+    return "pane" if patch.get("pane_hook") else None
 
 
 def _redirect_records(patch: dict, path_va: int, path_off: int, sd_path: str) -> list[tuple[int, bytes]]:
@@ -701,6 +1024,64 @@ def _branch_target(word: int, at: int) -> int | None:
     return at + 8 + offset * 4
 
 
+def banner_sd_path(patch: dict) -> str:
+    """Where the hook expects the replacement banner. Written by tools/package.py."""
+    return f"/luma/titles/0004003000009802/{patch['banner_hook']['image_name']}"
+
+
+def _verify_banner(
+    patch: dict,
+    code: bytes,
+    records: list[tuple[int, bytes]],
+    labels: dict[str, int],
+    path_va: int,
+    sd_path: str,
+) -> None:
+    """Apply the records and walk the banner hook: in and out, both ways through it.
+
+    The two things that would be silent on a console and fatal on the eye: a hook that
+    forgets to come back, and a pass-through that hands FS something other than the archive
+    id the replaced instruction was loading.
+    """
+    patched = bytearray(code)
+    for offset, data in records:
+        patched[offset:offset + len(data)] = data
+    word = lambda off: struct.unpack_from("<I", patched, off)[0]  # noqa: E731
+
+    hook = patch["banner_hook"]
+    entry = _branch_target(word(hook["site_off"]), hook["site_off"])
+    if entry != labels["banner_hook"]:
+        raise RuntimeError(f"0x{hook['site_off']:X} does not branch into the banner hook")
+
+    back = _branch_target(word(labels["banner_back"]), labels["banner_back"])
+    if back != hook["return_to"]:
+        raise RuntimeError(
+            f"the banner hook returns to 0x{back:X}, expected 0x{hook['return_to']:X}"
+        )
+
+    # The pass-through must reproduce the archive id the original instruction loaded, so
+    # read that literal out of the untouched code and compare.
+    original = struct.unpack_from("<I", code, hook["site_off"])[0]
+    literal_at = hook["site_off"] + 8 + (original & 0xFFF)
+    archive_id = struct.unpack_from("<I", code, literal_at)[0]
+    if archive_id != ARCHIVE_SAVEDATA_AND_CONTENT:
+        raise RuntimeError(
+            f"0x{literal_at:X} holds 0x{archive_id:08X}, not ARCHIVE_SAVEDATA_AND_CONTENT"
+        )
+    passthrough = word(labels["banner_pass"])
+    reached = labels["banner_pass"] + 8 + (passthrough & 0xFFF)
+    if passthrough & 0xFFFFF000 != 0xE59F3000 or word(reached) != archive_id:
+        raise RuntimeError("the banner pass-through does not restore the original archive id")
+
+    encoded = sd_path.encode("ascii") + b"\0"
+    if word(labels["banner_lits"] + 8) != path_va:
+        raise RuntimeError("the banner hook does not point at its path string")
+    if word(labels["banner_lits"] + 12) != path_va + len(sd_path):
+        raise RuntimeError("the empty archive path does not point at the path's NUL")
+    if len(encoded) > 0xFF:
+        raise RuntimeError(f"the path is {len(encoded)} bytes, too long for `mov r1, #len`")
+
+
 def _verify_redirect(
     patch: dict, code: bytes, records: list[tuple[int, bytes]], path_va: int, sd_path: str
 ) -> None:
@@ -772,12 +1153,82 @@ def _generate_romfs_from_sd(
     return files, log
 
 
+def _pane_records(
+    patch: dict, code: bytes, exheader: bytes, table: bytes
+) -> tuple[list[tuple[int, bytes]], list[str]]:
+    """The hook, its blob and its table, laid out around what Luma claims for itself."""
+    hook = patch["pane_hook"]
+    site = hook["set_text_off"]
+    word = struct.unpack_from("<I", code, site)[0]
+    if word != hook["original_word"]:
+        raise RuntimeError(
+            f"0x{site:X} holds 0x{word:08X}, expected 0x{hook['original_word']:08X} "
+            f"- this is not the text setter the offsets were taken from"
+        )
+
+    text_size = struct.unpack_from("<I", exheader, TEXT_SIZE_OFFSET)[0]
+    ro_address = struct.unpack_from("<I", exheader, 0x20)[0]
+    ro_size = struct.unpack_from("<I", exheader, 0x28)[0]
+    rounded = lambda v: (v + 0xFFF) & ~0xFFF  # noqa: E731
+
+    table_off = rounded(text_size) + ro_size + LUMA_PATH_SIZE
+    table_va = ro_address + ro_size + LUMA_PATH_SIZE
+    ro_room = rounded(ro_size) - ro_size - LUMA_PATH_SIZE
+    if len(table) > ro_room:
+        raise RuntimeError(f"the name table is {len(table)} bytes, .rodata padding has {ro_room}")
+
+    # A writable scratch buffer for the composed strings. NOT the .data page padding: the
+    # loader lays .bss down immediately after .data, unaligned, so that padding is the first
+    # few hundred bytes of .bss and belongs to the title. Writing UTF-16 there overwrote a
+    # list head at 0x200B2C and the Activity Log took a data abort on `ldr r5, [r4]` with
+    # r4 = 0x04410020 - two Cyrillic code units read as a pointer.
+    #
+    # So the buffer goes past the end of .bss instead, and patch_exheader() grows bss to
+    # cover it. Everything up to that point is the title's own; everything after is ours.
+    data_address = struct.unpack_from("<I", exheader, 0x30)[0]
+    data_size = struct.unpack_from("<I", exheader, 0x38)[0]
+    bss_size = struct.unpack_from("<I", exheader, BSS_SIZE_OFFSET)[0]
+    scratch_va = data_address + data_size + bss_size
+
+    text_room = rounded(text_size) - text_size
+    sizing, _ = _pane_hook(patch, table_va, scratch_va, 0)
+    blob_off = rounded(text_size) - len(sizing) * 4
+    words, labels = _pane_hook(patch, table_va, scratch_va, blob_off)
+    blob = b"".join(struct.pack("<I", w) for w in words)
+    if len(blob) + LUMA_PAYLOAD_SIZE > text_room:
+        raise RuntimeError(
+            f"the pane hook is {len(blob)} bytes and Luma needs 0x{LUMA_PAYLOAD_SIZE:X} more, "
+            f".text padding is {text_room}"
+        )
+
+    for what, offset, data in (("hook", blob_off, blob), ("table", table_off, table)):
+        if any(code[offset:offset + len(data)]):
+            raise RuntimeError(f"the {what} would overwrite code at 0x{offset:X}, not padding")
+
+    records = [
+        (site, struct.pack("<I", _b(site, labels["pane_hook"]))),
+        (blob_off, blob),
+        (table_off, table),
+    ]
+    log = [
+        f"code.ips: SetPaneText at 0x{site:X} routed through a {len(blob)}-byte name hook "
+        f"at 0x{blob_off:X} (va 0x{TEXT_VA + blob_off:X}), "
+        f"{text_room - len(blob)} bytes of .text padding left for Luma's payload",
+        f"code.ips: {len(table)}-byte name table at va 0x{table_va:X} "
+        f"({ro_room} bytes available past Luma's path)",
+        f"code.ips: {2 * PANE_SCRATCH_UNITS}-byte scratch at va 0x{scratch_va:X}, "
+        f"past the title's own .bss",
+        f"exheader.bin: bss grown by {PANE_SCRATCH_BYTES} bytes to cover it",
+    ]
+    return records, log
+
+
 def _generate_smdh_names(
     patch: dict, code: bytes, exheader: bytes, version: int, table: bytes
 ) -> tuple[dict[str, bytes], list[str]]:
-    """code.ips that redirects the SMDH-reading thunk through the name-rewriting stub.
+    """code.ips that routes both of HOME Menu's SMDH readers through the rewriting stub.
 
-    Three records: one word over the thunk's `push`, the stub at the end of the .text
+    Four records: one word over each reader's entry, the stub blob at the end of the .text
     padding, and the name table in the .rodata padding. No exheader - HOME Menu already has
     DirectSdmc, and nothing here needs Luma to find a symbol.
     """
@@ -795,6 +1246,14 @@ def _generate_smdh_names(
             f"0x{thunk + 0xC:X} does not call ReadTitleIcon at 0x{patch['reader_off']:X}"
         )
 
+    cache = patch["cache_read_off"]
+    word = struct.unpack_from("<I", code, cache)[0]
+    if word != ORIGINAL_CACHE_WORD:
+        raise RuntimeError(
+            f"0x{cache:X} holds 0x{word:08X}, expected 0x{ORIGINAL_CACHE_WORD:08X} "
+            f"- this is not the cache reader the offsets were taken from"
+        )
+
     text_size = struct.unpack_from("<I", exheader, TEXT_SIZE_OFFSET)[0]
     ro_address = struct.unpack_from("<I", exheader, 0x20)[0]
     ro_size = struct.unpack_from("<I", exheader, 0x28)[0]
@@ -807,14 +1266,37 @@ def _generate_smdh_names(
     if len(table) > ro_room:
         raise RuntimeError(f"the name table is {len(table)} bytes, .rodata padding has {ro_room}")
 
-    # The stub goes at the end of the .text padding, leaving the front to Luma's payload.
+    # The blob goes at the end of the .text padding, leaving the front to Luma's payload.
+    # Its length is known before its address is, so it is laid out twice.
     text_room = rounded(text_size) - text_size
-    stub_words = _stub_smdh_names({**patch, "stub_off": 0}, table_va)
-    patch["stub_off"] = rounded(text_size) - len(stub_words) * 4
-    stub = b"".join(struct.pack("<I", w) for w in _stub_smdh_names(patch, table_va))
-    if len(stub) + LUMA_PAYLOAD_SIZE > text_room:
+    sizing, _ = _stub_smdh_names(patch, table_va, 0)
+    patch["stub_off"] = rounded(text_size) - len(sizing) * 4
+    words, labels = _stub_smdh_names(patch, table_va, patch["stub_off"])
+    stub = b"".join(struct.pack("<I", w) for w in words)
+
+    # The banner hook, if this title has one, goes immediately below the name stub, and its
+    # path string immediately past the name table. Same two-pass layout, same padding.
+    banner = banner_off = banner_path = None
+    banner_labels: dict[str, int] = {}
+    if patch.get("banner_hook"):
+        banner_path = banner_sd_path(patch)
+        path_off = table_off + len(table)
+        path_va = table_va + len(table)
+        encoded = banner_path.encode("ascii") + b"\0"
+        if len(table) + len(encoded) > ro_room:
+            raise RuntimeError(
+                f"table and banner path need {len(table) + len(encoded)} bytes, "
+                f".rodata padding has {ro_room}"
+            )
+        sizing, _ = _banner_hook(patch, path_va, len(banner_path), 0)
+        banner_off = patch["stub_off"] - len(sizing) * 4
+        banner_words, banner_labels = _banner_hook(patch, path_va, len(banner_path), banner_off)
+        banner = b"".join(struct.pack("<I", w) for w in banner_words)
+
+    used = len(stub) + (len(banner) if banner else 0)
+    if used + LUMA_PAYLOAD_SIZE > text_room:
         raise RuntimeError(
-            f"stub is {len(stub)} bytes and Luma needs 0x{LUMA_PAYLOAD_SIZE:X} more, "
+            f"stubs are {used} bytes and Luma needs 0x{LUMA_PAYLOAD_SIZE:X} more, "
             f".text padding is {text_room}"
         )
 
@@ -823,34 +1305,80 @@ def _generate_smdh_names(
             raise RuntimeError(f"the {what} would overwrite code at 0x{offset:X}, not padding")
 
     records = [
-        (thunk, struct.pack("<I", _b(thunk, patch["stub_off"]))),
+        (thunk, struct.pack("<I", _b(thunk, labels["icon_hook"]))),
+        (cache, struct.pack("<I", _b(cache, labels["cache_hook"]))),
         (patch["stub_off"], stub),
         (table_off, table),
     ]
-    _verify_smdh_names(patch, code, records, text_size)
+    _verify_smdh_names(patch, code, records, text_size, labels)
+
+    if banner:
+        site = patch["banner_hook"]["site_off"]
+        word = struct.unpack_from("<I", code, site)[0]
+        if word != patch["banner_hook"]["original_word"]:
+            raise RuntimeError(
+                f"0x{site:X} holds 0x{word:08X}, expected "
+                f"0x{patch['banner_hook']['original_word']:08X} - this is not the archive id "
+                f"the banner offsets were taken from"
+            )
+        if any(code[banner_off:banner_off + len(banner)]):
+            raise RuntimeError(f"the banner hook would overwrite code at 0x{banner_off:X}")
+        records += [
+            (site, struct.pack("<I", _b(site, banner_labels["banner_hook"]))),
+            (banner_off, banner),
+            (path_off, banner_path.encode("ascii") + b"\0"),
+        ]
+        _verify_banner(patch, code, records, banner_labels, path_va, banner_path)
 
     log = [
         f"{patch['title']} title version {version}",
-        f"code.ips: ReadTitleIcon thunk at 0x{thunk:X} routed through a {len(stub)}-byte stub "
-        f"at 0x{patch['stub_off']:X} (va 0x{TEXT_VA + patch['stub_off']:X}), "
-        f"{text_room - len(stub)} bytes of .text padding left for Luma's payload",
+        f"code.ips: ReadTitleIcon thunk at 0x{thunk:X} -> 0x{labels['icon_hook']:X}, "
+        f"icon cache reader at 0x{cache:X} -> 0x{labels['cache_hook']:X}",
+        f"code.ips: {len(stub)}-byte stub blob at 0x{patch['stub_off']:X} "
+        f"(va 0x{TEXT_VA + patch['stub_off']:X}), {text_room - len(stub)} bytes of .text "
+        f"padding left for Luma's payload",
         f"code.ips: {len(table)}-byte name table at va 0x{table_va:X}, past the "
         f"{LUMA_PATH_SIZE} bytes Luma claims for its path ({ro_room} bytes available)",
     ]
+    if banner:
+        log.append(
+            f"code.ips: banner open at 0x{patch['banner_hook']['site_off']:X} -> "
+            f"{len(banner)}-byte hook at 0x{banner_off:X}, title "
+            f"{patch['banner_hook']['title_id']:016X} served from {banner_path!r}"
+        )
     return {"code.ips": make_ips(records)}, log
 
 
-def _verify_smdh_names(patch: dict, code: bytes, records: list[tuple[int, bytes]], text_size: int) -> None:
-    """The thunk must reach the stub, and Luma must still find every symbol it needs."""
+def _verify_smdh_names(
+    patch: dict, code: bytes, records: list[tuple[int, bytes]], text_size: int, labels: dict[str, int]
+) -> None:
+    """Both readers must reach their hook, and Luma must still find every symbol it needs."""
     from layeredfs_check import find_symbols  # imported late: layeredfs_check imports build
 
     patched = bytearray(code)
     for offset, data in records:
         patched[offset:offset + len(data)] = data
 
-    landed = _branch_target(struct.unpack_from("<I", patched, patch["thunk_off"])[0], patch["thunk_off"])
-    if landed != patch["stub_off"]:
-        raise RuntimeError(f"the thunk branches to 0x{landed:X}, not to the stub")
+    for what, site, hook in (
+        ("ReadTitleIcon thunk", patch["thunk_off"], "icon_hook"),
+        ("icon cache reader", patch["cache_read_off"], "cache_hook"),
+    ):
+        word = struct.unpack_from("<I", patched, site)[0]
+        landed = _branch_target(word, site)
+        if landed != labels[hook]:
+            raise RuntimeError(
+                f"the {what} branches to "
+                f"{'0x%X' % landed if landed is not None else 'nowhere'}, not to {hook}"
+            )
+
+    # The cache reader's own prologue has to survive in the trampoline, or its epilogue would
+    # pop a return address that was never pushed.
+    if struct.unpack_from("<I", patched, labels["cache_body"])[0] != ORIGINAL_CACHE_WORD:
+        raise RuntimeError("the cache trampoline does not start with the reader's own prologue")
+    back = _branch_target(struct.unpack_from("<I", patched, labels["cache_body"] + 4)[0],
+                          labels["cache_body"] + 4)
+    if back != patch["cache_read_off"] + 4:
+        raise RuntimeError(f"the cache trampoline continues at 0x{back:X}, not into the reader")
 
     symbols = find_symbols(bytes(patched), min(text_size, len(patched)))
     missing = [name for name, off in symbols.items() if off is None and name != "fsUnmountArchive"]
@@ -859,7 +1387,7 @@ def _verify_smdh_names(patch: dict, code: bytes, records: list[tuple[int, bytes]
 
 
 def generate(
-    tid: str, code_path: Path, exheader_path: Path, names_table: bytes | None = None
+    tid: str, code_path: Path, exheader_path: Path, names: dict[str, bytes] | None = None
 ) -> tuple[dict[str, bytes], list[str]]:
     """Return {filename: contents} for the title's code.ips and exheader.bin, plus a log."""
     patch = dict(HOOK_PATCHES[tid.upper()])
@@ -891,9 +1419,9 @@ def generate(
         return _generate_romfs_from_sd(tid, patch, code, exheader, version)
 
     if patch.get("kind") == "smdh_names":
-        if not names_table:
-            raise RuntimeError(f"{patch['title']} needs a name table and none was built")
-        return _generate_smdh_names(patch, code, exheader, version, names_table)
+        if not (names or {}).get("smdh"):
+            raise RuntimeError(f"{patch['title']} needs an SMDH name table and none was built")
+        return _generate_smdh_names(patch, code, exheader, version, names["smdh"])
 
     if patch.get("kind") == "exheader_only":
         access = struct.unpack_from("<Q", exheader, ACCESS_INFO_OFFSET)[0]
@@ -915,8 +1443,16 @@ def generate(
     patch["text_size"] = struct.unpack_from("<I", new_exheader, TEXT_SIZE_OFFSET)[0]
     _verify(patch, code, stub)
 
+    records = [(patch["stub_off"], stub)]
+    pane_log: list[str] = []
+    if patch.get("pane_hook"):
+        if not (names or {}).get("pane"):
+            raise RuntimeError(f"{patch['title']} needs a pane name table and none was built")
+        extra, pane_log = _pane_records(patch, code, exheader, names["pane"])
+        records += extra
+
     files = {
-        "code.ips": make_ips([(patch["stub_off"], stub)]),
+        "code.ips": make_ips(records),
         "exheader.bin": new_exheader,
     }
     widened = patch.get("text_size_override")
@@ -927,5 +1463,5 @@ def generate(
         "exheader.bin: DirectSdmc granted"
         + (f", text.size 0x{struct.unpack_from('<I', exheader, TEXT_SIZE_OFFSET)[0]:X} -> "
            f"0x{widened:X} (same {(widened + 0xFFF) >> 12}-page mapping)" if widened else ""),
-    ]
+    ] + pane_log
     return files, log

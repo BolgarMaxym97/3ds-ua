@@ -30,10 +30,12 @@ import sys
 from pathlib import Path
 
 sys.path.insert(0, str(Path(__file__).parent))
+import banner as banner_mod  # noqa: E402
 import luma_hook  # noqa: E402
 import msbt as msbt_mod  # noqa: E402
 import romfs  # noqa: E402
 import smdh as smdh_mod  # noqa: E402
+import pane_names  # noqa: E402
 import smdh_names  # noqa: E402
 from store import open_store  # noqa: E402
 
@@ -327,26 +329,50 @@ def skip_blocked(name: str, cfg: dict) -> list[str]:
     return lines
 
 
-def build_app_names(name: str, cfg: dict, table: dict[str, str]) -> tuple[bytes | None, list[str]]:
-    """The title-name table a `smdh_names` hook carries in its code.ips.
+def app_name_tables(table: dict[str, str]) -> tuple[dict[str, bytes], list[str]]:
+    """The two shapes of application-name table, from the one list in src/app_names.json.
 
-    The names are rendered with the system font like everything else, so they go through the
-    same homoglyph substitution as the strings in romfs.
+    A title that reads SMDHs itself gets the table keyed by title id, and its buffer is
+    rewritten. One that only ever receives finished strings gets the table keyed by the
+    Russian name, and the pointer handed to its text setter is swapped instead.
     """
-    source = ROOT / "src" / "strings" / name / "_app_names.json"
-    if not source.exists():
-        return None, []
-    entries = json.loads(source.read_text(encoding="utf-8"))
+    entries = {
+        tid: entry
+        for tid, entry in json.loads((ROOT / "src" / "app_names.json").read_text(encoding="utf-8")).items()
+        if not tid.startswith("_")
+    }
     translated = {
         tid: {key: apply_homoglyphs(value, table) for key, value in entry.items() if key.startswith("ua")}
         for tid, entry in entries.items()
-        if not tid.startswith("_")
     }
-    blob, log = smdh_names.build_table(translated)
-    return blob, [f"app names: {len(log)} titles, {len(blob)}-byte table"] + [f"  {line}" for line in log]
+    smdh_blob, smdh_log = smdh_names.build_table(translated)
+
+    # The originals are compared against what the title holds in memory, so they stay as
+    # Nintendo wrote them - no homoglyphs on that side.
+    # `ru` is the short name, `ru_long` the one carrying a second line - the software card
+    # in the Activity Log draws the long one, the lists draw the short one.
+    def spellings(entry: dict, key: str) -> list[str]:
+        value = entry.get(key)
+        if not value:
+            return []
+        return [value] if isinstance(value, str) else list(value)
+
+    pairs = [
+        (original, apply_homoglyphs(replacement, table))
+        for entry in entries.values()
+        for key, replacement in (("ru", entry.get("ua")), ("ru_long", entry.get("ua_long") or entry.get("ua")))
+        if replacement
+        for original in spellings(entry, key)
+    ]
+    pane_blob, pane_log = pane_names.build_table(pairs)
+
+    return {"smdh": smdh_blob, "pane": pane_blob}, [
+        f"app names: {len(smdh_log)} titles, {len(smdh_blob)}-byte SMDH table, "
+        f"{len(pane_log)} substitutions, {len(pane_blob)}-byte pane table"
+    ]
 
 
-def prepare_hook_patch(name: str, tid: str, names_table: bytes | None = None) -> tuple[dict[str, bytes], list[str]]:
+def prepare_hook_patch(name: str, tid: str, names: dict[str, bytes] | None = None) -> tuple[dict[str, bytes], list[str]]:
     """Build the code.ips + exheader.bin that let Luma hook LayeredFS into `tid`.
 
     Anything missing is fatal on purpose, and this runs before the build writes anything:
@@ -366,7 +392,23 @@ def prepare_hook_patch(name: str, tid: str, names_table: bytes | None = None) ->
             f"file in work/{tid}/ (see docs/dump-code.md)"
         )
 
-    return luma_hook.generate(tid, code, exheader, names_table)
+    return luma_hook.generate(tid, code, exheader, names)
+
+
+def write_banner(tid: str) -> list[str]:
+    """The replacement banner that title's hook reads off the SD card.
+
+    It belongs to another title entirely - the picture is System Settings' - but it is
+    HOME Menu that opens it, so it ships in HOME Menu's folder next to its code.ips.
+    """
+    hook = luma_hook.HOOK_PATCHES[tid.upper()].get("banner_hook")
+    if not hook:
+        return []
+    blob = banner_mod.build(f"{hook['title_id']:016X}")
+    dest = ROOT / "dist" / "luma" / "titles" / tid / hook["image_name"]
+    dest.parent.mkdir(parents=True, exist_ok=True)
+    dest.write_bytes(blob)
+    return [f"{dest.relative_to(ROOT)} ({len(blob)} bytes)"]
 
 
 def write_romfs_image(tid: str, romfs_dir: Path, overrides: dict[str, bytes]) -> list[str]:
@@ -422,9 +464,10 @@ def build_title(name: str, table: dict[str, str]) -> list[str]:
     if cfg.get("blocked"):
         return skip_blocked(name, cfg)
 
-    names_table, names_stats = build_app_names(name, cfg, table)
+    wants_names = cfg.get("hook_patch") and any(luma_hook.wants_names(tid) for tid in cfg["tids"])
+    names, names_stats = app_name_tables(table) if wants_names else (None, [])
     hooks = (
-        {tid: prepare_hook_patch(name, tid, names_table) for tid in cfg["tids"]}
+        {tid: prepare_hook_patch(name, tid, names) for tid in cfg["tids"]}
         if cfg.get("hook_patch")
         else {}
     )
@@ -479,6 +522,7 @@ def build_title(name: str, table: dict[str, str]) -> list[str]:
 
     for tid, (files, log) in hooks.items():
         written += [f"  {line}" for line in log]
+        written += write_banner(tid)
         for filename, blob in files.items():
             dest = ROOT / "dist" / "luma" / "titles" / tid / filename
             dest.parent.mkdir(parents=True, exist_ok=True)

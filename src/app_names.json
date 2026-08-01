@@ -1,0 +1,22 @@
+{
+  "_comment": "Application names. They live in each title's SMDH (ExeFS:/icon) in NAND, so LayeredFS cannot replace them - code.ips does, two different ways depending on the title. A title that reads SMDHs itself gets its buffer rewritten (tools/smdh_names.py); one that only receives finished strings gets the pointer swapped by matching `ru` (tools/pane_names.py). `ua` is the short description: one line, the icon label. `ua_long` is the long description and carries its own line break, the way Nintendo's own SMDHs do; omit it when it equals `ua`. `ru` may be a list when the exact spelling is not yet confirmed on hardware - a spelling that never matches costs table bytes and nothing else.",
+
+  "0004003000009802": { "ru": "Меню HOME", "ua": "Меню HOME" },
+  "0004001000022000": { "ru": "Системные настройки", "ua": "Налаштування системи" },
+  "0004001000022100": { "ru": "Загружаемая игра", "ua": "Гра по завантаженню" },
+  "0004001000022200": { "ru": "Журнал действий", "ua": "Журнал дій" },
+  "0004001000022300": { "ru_long": "Информация о здоровье и безопасности Nintendo", "ua": "Здоров'я і безпека", "ua_long": "Інформація про здоров'я\nі безпеку Nintendo" },
+  "0004001000022400": { "ru": "Камера Nintendo 3DS", "ua": "Камера Nintendo 3DS" },
+  "0004001000022500": { "ru": "Звук Nintendo 3DS", "ua": "Звук Nintendo 3DS" },
+  "0004001000022700": { "ru": "Редактор Mii", "ua": "Mii Maker" },
+  "0004001000022800": { "ru": "Площадь StreetPass Mii", "ua": "Площа StreetPass Mii", "ua_long": "Площа\nStreetPass Mii" },
+  "0004001000022A00": { "ru": ["Передача данных", "Обмен данными"], "ua": "Перенесення даних" },
+  "0004001000022B00": { "ru": "Программа просмотра Nintendo Zone", "ua": "Оглядач Nintendo Zone", "ua_long": "Оглядач\nNintendo Zone" },
+  "0004001000022E00": { "ru_long": "AR Games: Расширенная реальность", "ua": "AR Games", "ua_long": "AR Games:\nРозширена реальність" },
+  "0004003000009B02": { "ru": ["Электронное руководство", "Руководство"], "ua": "Електронний посібник" },
+  "0004003000009C02": { "ru": "Игровые заметки", "ua": "Ігрові записи" },
+  "0004003000009D02": { "ru": "Интернет-браузер", "ua": "Інтернет-браузер" },
+  "0004003000009F02": { "ru": "Список друзей", "ua": "Список друзів" },
+  "000400300000A002": { "ru": ["Сообщения", "Уведомления"], "ua": "Сповіщення" },
+  "000400300000B902": { "ru": "Настройки amiibo", "ua": "Налаштування amiibo" }
+}

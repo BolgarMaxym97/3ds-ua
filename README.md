@@ -170,7 +170,7 @@ NAND не змінювався, тому видалення нічого не л
 | Face Raiders | ✅ перекладено |
 | AR Games | ✅ перекладено |
 | Здоров'я і безпека | ✅ перекладено, повною підміною romfs — потрібна версія титулу 3 (див. нижче) |
-| Журнал дій | ✅ перекладено, з правкою коду титулу — потрібна версія титулу 2 (див. нижче) |
+| Журнал дій | ✅ перекладено, разом з назвами додатків — з правкою коду титулу, потрібна версія титулу 2 (див. нижче) |
 | Посібник | ✅ перекладено, з правкою коду титулу — потрібна версія титулу 5 (див. нижче) |
 | Список друзів | ✅ перекладено, з правкою коду титулу — потрібна версія титулу 6 (див. нижче) |
 | Вибір Mii | ✅ перекладено, з правкою коду титулу — потрібна версія титулу 3 (див. нижче) |
@@ -325,15 +325,20 @@ LayeredFS тут не задіяний узагалі: теки `romfs` для �
 
 Це єдиний `code.ips` у моді, який робиться **не** для того, щоб LayeredFS запрацювала: Меню HOME Luma хукає сама. Він потрібен, бо назви додатків лежать не в romfs.
 
-Меню HOME бере їх із SMDH кожного титулу — `ExeFS:/icon`, куди LayeredFS не дістає. Але сам **читач** SMDH належить Меню HOME, і його можна перехопити:
+Меню HOME бере їх із SMDH кожного титулу — `ExeFS:/icon`, куди LayeredFS не дістає. Але самі **читачі** SMDH належать Меню HOME, і їх можна перехопити. Читачів **два**:
 
-| Що | Де |
-|---|---|
-| `ReadTitleIcon()` — тягне всі `0x36C0` байтів SMDH титулу в буфер викликача | `0xEA40` |
-| thunk, її єдиний викликач | `0x131E60` |
-| викликачі thunk'а | 18 |
+| Що | Де | Коли працює |
+|---|---|---|
+| `ReadTitleIcon()` — тягне всі `0x36C0` байтів SMDH з `ExeFS:/icon` у буфер викликача | `0xEA40`, через thunk `0x131E60` (18 викликачів) | коли Меню HOME наповнює кеш іконок |
+| `CacheRead()` — читає ті самі `0x36C0` байтів з кеша | `0x147D64` | **на кожному звичайному завантаженні** |
 
-Ці 18 шляхів — і є всі екрани, де видно назву: підпис іконки, верхній екран при наведенні, оверлей «Призупинена програма», діалоги закриття й видалення. Тому одного хука достатньо.
+Кеш іконок — це `Cache.dat` в extdata Меню HOME **на SD-карті** (EUR: `Nintendo 3DS/<id0>/<id1>/extdata/00000000/00000098`). `CacheRead()` шукає титул у таблиці 16-байтових записів (до 360: id 8 байтів, потім u32 і байт mediatype), зчитує з файлу зі зсувом `index * 0x36C0` і віддає **весь** SMDH — усі 16 мовних блоків. Саме тому переключення мови консолі перепідписує все, хоч кеш не перебудовувався.
+
+І саме тому хук лише на `ReadTitleIcon()` не дає нічого на консолі, чий кеш зібрано до встановлення мода: після першого наповнення це читання просто не викликається. Перехоплені **обидва**, і обидва віддають буфер одній процедурі.
+
+У кеш нічого не записується — файл на SD лишається таким, як його зробила Nintendo, тож видалення мода повертає оригінальні назви без перебудови кеша.
+
+Разом ці шляхи покривають усі екрани, де видно назву: підпис іконки, верхній екран при наведенні, оверлей «Призупинена програма», діалоги закриття й видалення.
 
 Шукати місце читання варто не за рядком `icon`: шлях `ExeFS:/icon` передається 4-байтовим **літералом** `'icon'` (`0x6E6F6369`) у binary lowpath, а надійний маркер самої функції — `mov r1, #0x36c0`, розмір SMDH.
 
@@ -343,9 +348,12 @@ LayeredFS тут не задіяний узагалі: теки `romfs` для �
 
 | Запис | Куди | Розмір |
 |---|---|---|
-| `b stub` поверх `push {r3, lr}` thunk'а | `0x131E60` | 4 байти |
-| стаб: викликає оригінальний читач, тоді переписує російський блок буфера | хвіст padding'а `.text`, `0x205F2C` | 212 байтів |
+| `b icon_hook` поверх `push {r3, lr}` thunk'а | `0x131E60` | 4 байти |
+| `b cache_hook` поверх прологу `CacheRead()` | `0x147D64` | 4 байти |
+| блок: два хуки, трамплін і спільна процедура перепису | хвіст padding'а `.text`, `0x205EF4` | 268 байтів |
 | таблиця назв | padding `.rodata`, va `0x3295E4` | 1318 байтів |
+
+`cache_hook` не може просто стрибнути в тіло `CacheRead()`: її епілог знімає `pc` з того `lr`, який зберіг замінений пролог. Тому пролог відтворено в трампліні, і `bl` на нього повертає керування хукові.
 
 Обидва місця вибрані так, щоб не зіткнутися з самою Luma — вона накладає свій LayeredFS **після** `code.ips` і мовчки затирає те, що там лежало:
 
@@ -360,13 +368,53 @@ LayeredFS тут не задіяний узагалі: теки `romfs` для �
 
 Рядки живуть у `src/strings/home_menu/_app_names.json` поруч з іншими перекладами й проходять ту саму заміну гліфів. Конвенція взята з власних SMDH Nintendo: `ua` — коротка назва, один рядок; `ua_long` — та сама назва з власним `\n`, і її можна не вказувати, якщо вона така сама. Формат таблиці — у `tools/smdh_names.py`.
 
-Стаб перевірений емуляцією ARM (unicorn): правильні назви для трьох різних титулів, `r0`/`sp`/`r4-r7` цілі на виході, інші мовні блоки та іконки байт-у-байт, і окремо — що читач отримує `arg5 = 0` та `ip = 0`.
+Обидва хуки перевірені емуляцією ARM (unicorn), і харнес відтворює те, що Luma допише поверх, — без цього він був зелений на зламаному патчі. Перевіряється: правильні назви для трьох різних титулів на обох шляхах, `r0`/`sp`/`r4-r7` цілі на виході, інші мовні блоки та іконки байт-у-байт, чужий title id і невдале читання не чіпають буфер, а `ReadTitleIcon()` отримує `arg5 = 0` та `ip = 0`.
+
+#### Як перекладено назви додатків у Журналі дій
+
+Журнал дій полагодити так само не вийшло: SMDH він **не читає** взагалі. Ні `am:*`, ні `ns:s` у нього немає, єдиний `ARCHIVE_SAVEDATA_AND_CONTENT` веде до `0x0004009B00010202` — спільного системного шрифту, а `icon` у його коді це ім'я панелі layout (`soft_record_top_icon`), не файл. Назви йому приходять уже готовими рядками.
+
+Зате в нього є функція, крізь яку проходить **весь** текст. Найпомітніший шлях до неї виглядає так:
+
+```
+add r0, pc, #...     ; мітка MSBT
+bl  0x17D654         ; GetMessage(label) -> u16*
+mov r1, r0           ; текст
+add r2, pc, #...     ; ім'я панелі
+bl  0x17CE04         ; SetPaneText(layout, text, pane, ...)   72 викликачі
+```
+
+Але хук стоїть на рівень нижче — `0x7BC28`, куди веде 8 сайтів у трьох функціях, і `SetPaneText` лише одна з них. Це не косметична різниця: картка програми виставляє свої панелі через **іншу** з тих трьох, тож хук на `SetPaneText` перекладав список рейтингів і лишав картку російською.
+
+Назва йде тим самим сетером, лише текст береться не з MSBT. Тому хук інший за характером, ніж у Меню HOME: він **у чужі буфери не пише**. Порівнює рядок з таблицею й підміняє сам **вказівник** `r1` на наш рядок. Оригінал лишається недоторканим.
+
+Форм збігу дві, бо той самий рядок приходить і сам, і з другим рядком:
+
+| Що приходить | Що робить хук |
+|---|---|
+| `Журнал действий` | `r1` показує на наш рядок, нічого не копіюється |
+| `Журнал действий\nNintendo` | склеює наш рядок і хвіст у власний буфер — картка програми малює назву й видавця одним рядком |
+
+Частковий збіг збігом не вважається: кандидат мусить закінчитися або перенести рядок точно там, де закінчується оригінал. Крізь цю функцію йде весь інтерфейс, тож щось слабше псувало б сторонні рядки.
+
+Одне послаблення все ж є, і воно потрібне: **пробіл у таблиці збігається і з переносом рядка**. Довгі назви Nintendo розриває сама — `AR Games:\nРасширенная реальность`, — а де саме, збоку не видно. Тому оригінали пишуться в один рядок, а зіставлення терпить розрив на місці будь-якого пробілу. Довжина й закінчення при цьому все одно мусять збігтися точно.
+
+| Запис | Куди | Розмір |
+|---|---|---|
+| `b pane_hook` поверх прологу сетера | `0x7BC28` | 4 байти |
+| хук | хвіст padding'а `.text`, `0xE0F24` | 220 байтів |
+| таблиця «російська назва → українська» | padding `.rodata`, va `0x1F1874` | 1632 байти |
+| буфер під склеювання | padding `.data`, va `0x200B18` | 512 байтів |
+
+Повертатися нікуди не треба: хук доводить порівняння до кінця, відтворює замінений пролог і стрибає в `0x7BC28+4`. Функція повертається своєму викликачеві, як і завжди.
+
+Ціна підходу: він тримає **російські** назви як ключі. Якщо Nintendo написала назву інакше, ніж у нашій таблиці, підміни просто не буде — жодної шкоди, але й перекладу. Тому `src/app_names.json` містить поле `ru` поряд з `ua`, і воно має збігатися з тим, що показує консоль, байт у байт.
 
 ### Чого мод не перекладає
 
 **Назви додатків поза Меню HOME.** Підпис під іконкою, текст на верхньому екрані при наведенні, оверлей «Призупинена програма», діалоги закриття й видалення — це все одна й та сама коротка/довга назва з **SMDH** титулу (`CXI ExeFS:/icon`, 16 мовних структур). LayeredFS до ExeFS не дістає: Luma підміняє лише `romfs/`, `code.bin`, `code.ips`, `exheader.bin` і `locale.txt`, а SMDH встановленого титулу лежить у NAND.
 
-У Меню HOME це обійдено правкою коду — див. «Як перекладено назви додатків у Меню HOME» нижче, — тому всі перелічені екрани перекладені. А от **Журнал дій, Керування даними, eShop і Перенесення даних показують назви мовою слота**: кожен із них читає їх окремо й потребує власного хука. Журнал дій до того ж назви взагалі не резолвить — отримує готовий рядок (його єдиний `ARCHIVE_SAVEDATA_AND_CONTENT` веде до `0x0004009B00010202`, спільного системного шрифту), тож йому потрібен хук не на читанні SMDH, а на малюванні.
+У Меню HOME і Журналі дій це обійдено правкою коду — див. два розділи нижче, — тому їхні екрани перекладені. А от **Керування даними, eShop, Перенесення даних та Ігрові записи показують назви мовою слота**: кожен читає їх окремо й потребує власного хука.
 
 Два титули везуть додаткову копію SMDH у власному `romfs`, і **її LayeredFS перекриває напряму**, без правки коду:
 
@@ -622,7 +670,7 @@ same entry that switches the keyboard to Cyrillic.
 | Face Raiders | ✅ translated |
 | AR Games | ✅ translated |
 | Health & Safety Information | ✅ translated, by replacing the whole RomFS — needs title version 3 (see below) |
-| Activity Log | ✅ translated, with a code patch — needs title version 2 (see below) |
+| Activity Log | ✅ translated, application names included — with a code patch, needs title version 2 (see below) |
 | Instruction Manual | ✅ translated, with a code patch — needs title version 5 (see below) |
 | Friend List | ✅ translated, with a code patch — needs title version 6 (see below) |
 | Mii Selector | ✅ translated, with a code patch — needs title version 3 (see below) |
@@ -829,16 +877,30 @@ This is the one `code.ips` in the mod that is **not** there to make LayeredFS wo
 hooks the HOME Menu unaided. It is there because the application names do not live in romfs.
 
 The HOME Menu reads them from each title's SMDH, `ExeFS:/icon`, which LayeredFS cannot
-reach. The **reader**, however, belongs to the HOME Menu, and that can be intercepted:
+reach. The **readers**, however, belong to the HOME Menu, and they can be intercepted. There
+are **two** of them:
 
-| What | Where |
-|---|---|
-| `ReadTitleIcon()` — pulls all `0x36C0` bytes of a title's SMDH into the caller's buffer | `0xEA40` |
-| the thunk, its only caller | `0x131E60` |
-| callers of the thunk | 18 |
+| What | Where | When it runs |
+|---|---|---|
+| `ReadTitleIcon()` — pulls all `0x36C0` bytes of an SMDH out of `ExeFS:/icon` | `0xEA40`, via the thunk at `0x131E60` (18 callers) | when the HOME Menu fills its icon cache |
+| `CacheRead()` — reads the same `0x36C0` bytes out of that cache | `0x147D64` | **on every ordinary boot** |
 
-Those 18 paths are every screen that shows a name: the icon label, the upper screen on
-highlight, the "software suspended" overlay, the close and delete prompts. Hence one hook.
+The icon cache is `Cache.dat` in the HOME Menu's extdata **on the SD card** (EUR:
+`Nintendo 3DS/<id0>/<id1>/extdata/00000000/00000098`). `CacheRead()` looks the title up in a
+table of 16-byte records (up to 360: an 8-byte id, then a u32 and a mediatype byte), reads
+the file at `index * 0x36C0` and hands back the **whole** SMDH, all 16 language slots
+included. That is why switching the console language relabels everything without the cache
+being rebuilt.
+
+And it is why hooking only `ReadTitleIcon()` changes nothing on a console whose cache was
+built before the mod was installed: after the first fill, that read simply never happens.
+Both are hooked, and both hand the buffer to the same routine.
+
+Nothing is written back to the cache — the file on the SD card stays as Nintendo left it, so
+removing the mod restores the original names with no rebuild.
+
+Between them these paths cover every screen that shows a name: the icon label, the upper
+screen on highlight, the "software suspended" overlay, the close and delete prompts.
 
 Do not look for the read site by the string `icon`: the `ExeFS:/icon` path is passed as the
 4-byte **literal** `'icon'` (`0x6E6F6369`) in a binary lowpath, and the reliable marker for
@@ -853,9 +915,14 @@ two call sites — `0x120ABC` (`ldrd r2, r3, [r4, #8]`, `ldrb r1, [r4, #0x10]`) 
 
 | Record | Where | Size |
 |---|---|---|
-| `b stub` over the thunk's `push {r3, lr}` | `0x131E60` | 4 bytes |
-| the stub: calls the original reader, then rewrites the buffer's Russian slot | end of the `.text` padding, `0x205F2C` | 212 bytes |
+| `b icon_hook` over the thunk's `push {r3, lr}` | `0x131E60` | 4 bytes |
+| `b cache_hook` over `CacheRead()`'s prologue | `0x147D64` | 4 bytes |
+| the blob: both hooks, a trampoline and the rewrite routine they share | end of the `.text` padding, `0x205EF4` | 268 bytes |
 | the name table | `.rodata` padding, va `0x3295E4` | 1318 bytes |
+
+`cache_hook` cannot simply jump into `CacheRead()`'s body: its epilogue pops `pc` off the
+`lr` that the replaced prologue saved. So the prologue is reproduced in a trampoline, and a
+`bl` to it hands control back to the hook.
 
 Both locations are chosen to stay clear of Luma itself, which applies its LayeredFS patch
 **after** the IPS and silently overwrites whatever was there:
@@ -881,15 +948,78 @@ Nintendo's own SMDHs: `ua` is the short description, one line; `ua_long` is the 
 carrying its own `\n`, and it may be omitted when the two are identical. The table format is
 in `tools/smdh_names.py`.
 
-The stub is verified by ARM emulation (unicorn): correct names for three different titles,
-`r0`/`sp`/`r4-r7` intact on the way out, other language slots and the icon bitmaps
-byte-for-byte, and separately that the reader receives `arg5 = 0` and `ip = 0`.
+Both hooks are verified by ARM emulation (unicorn), and the harness reproduces what Luma
+writes on top afterwards — without that it passed on a broken patch. It checks: correct names
+for three different titles down both paths, `r0`/`sp`/`r4-r7` intact on the way out, other
+language slots and the icon bitmaps byte-for-byte, an unknown title id and a failed read
+leaving the buffer alone, and `ReadTitleIcon()` receiving `arg5 = 0` and `ip = 0`.
+
+#### How the Activity Log's application names were translated
+
+The Activity Log could not be fixed the same way: it never reads an SMDH at all. It has no
+`am:*` and no `ns:s`, its single `ARCHIVE_SAVEDATA_AND_CONTENT` open leads to
+`0x0004009B00010202` — the shared system font — and the `icon` in its code is a layout pane
+name (`soft_record_top_icon`), not a file. Names reach it as finished strings.
+
+What it does have is a function every string passes through. The most visible path to it
+looks like this:
+
+```
+add r0, pc, #...     ; the MSBT label
+bl  0x17D654         ; GetMessage(label) -> u16*
+mov r1, r0           ; the text
+add r2, pc, #...     ; the pane name
+bl  0x17CE04         ; SetPaneText(layout, text, pane, ...)   72 callers
+```
+
+The hook, however, sits one level below that: `0x7BC28`, which 8 sites in three functions
+reach, `SetPaneText` being only one of them. That is not a cosmetic difference — the software
+card sets its panes through **another** of the three, so a hook on `SetPaneText` translated
+the ratings list and left the card in Russian.
+
+The name goes through that same setter, only its text does not come from an MSBT. So this
+hook is a different animal from the HOME Menu's: it **writes to nobody's buffer**. It
+compares the string against a table and swaps the **pointer** in `r1` for a string of ours.
+The original is left untouched.
+
+There are two shapes of match, because the same string arrives both on its own and with a
+second line appended:
+
+| What arrives | What the hook does |
+|---|---|
+| `Журнал действий` | `r1` points at our string, nothing is copied |
+| `Журнал действий\nNintendo` | composes our string and the tail into a buffer of its own — the software card draws the name and the publisher as one string |
+
+A partial match is not a match: the candidate has to end, or break the line, exactly where
+the original does. The whole interface goes through this function, so anything looser would
+corrupt unrelated strings.
+
+There is one deliberate relaxation: **a space in the table also matches a line break**.
+Nintendo breaks the long names itself — `AR Games:\nРасширенная реальность` — and where it
+breaks them is not visible from outside. So the originals are written on one line and the
+comparison tolerates a break wherever a space is. The length and the ending still have to
+match exactly.
+
+| Record | Where | Size |
+|---|---|---|
+| `b pane_hook` over the setter's prologue | `0x7BC28` | 4 bytes |
+| the hook | end of the `.text` padding, `0xE0F24` | 220 bytes |
+| the table, Russian name to Ukrainian | `.rodata` padding, va `0x1F1874` | 1632 bytes |
+| the buffer it composes into | `.data` padding, va `0x200B18` | 512 bytes |
+
+There is no return to arrange: the hook finishes comparing, replays the prologue it replaced
+and jumps to `0x7BC28+4`. The function returns to its own caller as it always did.
+
+The cost of the approach is that it keys on the **Russian** names. If Nintendo spelled one
+differently from our table, the swap simply does not happen — no harm done, but no
+translation either. That is why `src/app_names.json` carries a `ru` field next to `ua`, and
+it has to match what the console displays byte for byte.
 
 ### What the mod does not translate
 
 **Application names outside the HOME Menu.** The label under an icon, the text on the upper screen when you highlight it, the "software suspended" overlay, the close and delete prompts — all of it is the same short/long description from the title's **SMDH** (`CXI ExeFS:/icon`, 16 language structs). LayeredFS cannot reach ExeFS: Luma only redirects `romfs/`, `code.bin`, `code.ips`, `exheader.bin` and `locale.txt`, and an installed title's SMDH lives in NAND.
 
-In the HOME Menu this is worked around with a code patch — see "How the HOME Menu's application names were translated" above — so every screen listed there is translated. But **the Activity Log, Data Management, the eShop and System Transfer still show the names in the slot's language**: each reads them separately and needs a hook of its own. The Activity Log does not even resolve names — it receives a finished string (its single `ARCHIVE_SAVEDATA_AND_CONTENT` leads to `0x0004009B00010202`, the shared system font), so it needs a hook on drawing rather than on reading an SMDH.
+In the HOME Menu and the Activity Log this is worked around with a code patch — see the two sections above — so their screens are translated. But **Data Management, the eShop, System Transfer and Game Notes still show the names in the slot's language**: each reads them separately and needs a hook of its own.
 
 Two titles carry a second copy of their SMDH inside their own `romfs`, and **LayeredFS does reach that one** with no code patch involved:
 
