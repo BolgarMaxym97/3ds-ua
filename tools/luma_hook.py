@@ -41,6 +41,8 @@ import hashlib
 import struct
 from pathlib import Path
 
+import smdh_names
+
 TEXT_VA = 0x100000
 
 # Exheader offsets: remaster version sits in the code set info, access info in the ARM11
@@ -49,6 +51,26 @@ REMASTER_VERSION_OFFSET = 0x0E
 TEXT_SIZE_OFFSET = 0x18
 ACCESS_INFO_OFFSET = 0x248
 DIRECT_SDMC_BIT = 7
+
+# Luma writes its own LayeredFS payload into the .text padding whenever the padding is big
+# enough for it, so a stub that shares that padding has to stay out of its way. It puts the
+# payload at the *front* (`*payloadOffset = size` in findLayeredFsPayloadOffset), which is
+# why the stub goes at the end.
+LUMA_PAYLOAD_SIZE = 0x114
+
+# The same function claims the front of the .rodata padding for its path string:
+#
+#     if(roundedRoSize - roSize >= 39) *pathOffset = roundedTextSize + roSize;
+#     ...
+#     memcpy(code + pathOffset, "lf:", 3);
+#     memcpy(code + pathOffset + 3, path, sizeof(path));   // "/luma/titles/<16>/romfs"
+#
+# 39 bytes, and Luma writes them after the IPS is applied, so anything of ours that starts
+# there is silently overwritten. Rounded up to a word, with a margin.
+LUMA_PATH_SIZE = 48
+
+# The first instruction of HOME Menu's ReadTitleIcon thunk, the word the branch replaces.
+ORIGINAL_THUNK_WORD = 0xE92D4008  # push {r3, lr}
 
 # TID -> everything needed to build the stub. All offsets are .text offsets, i.e.
 # virtual address minus TEXT_VA, which is also the offset inside code.bin and the
@@ -159,6 +181,35 @@ HOOK_PATCHES: dict[str, dict] = {
             {"patch_at": 0x0A800, "return_to": 0x0A804},
             {"patch_at": 0x11234, "return_to": 0x11238},
         ],
+    },
+    # HOME Menu (Nintendo 3DS HOME Menu), EUR, title version 29.
+    #
+    # A different job from every other entry here: LayeredFS already works for this title
+    # unaided, and this patch is about the application names HOME Menu displays. It reads
+    # them from each title's SMDH - ExeFS:/icon in NAND, which LayeredFS cannot replace -
+    # so instead the read itself is hooked. See SMDH_NAMES below.
+    #
+    # ReadTitleIcon() at 0xEA40 builds the ARCHIVE_SAVEDATA_AND_CONTENT path from the title
+    # id and pulls all 0x36C0 bytes of the SMDH into the caller's buffer. It has exactly one
+    # caller, the thunk at 0x131E60, which in turn has 18 - every screen that shows a name
+    # goes through it, which is why one hook is enough.
+    #
+    # Registers at the thunk: r0 = buffer, r1 = mediatype, r2/r3 = title id. Confirmed at
+    # two call sites: 0x120ABC (`ldrd r2, r3, [r4, #8]`, `ldrb r1, [r4, #0x10]`) and
+    # 0xBB5EC (`mov r1, #1`, i.e. NAND). Success is a zero return - the failure paths hand
+    # back 0xC8804631/0xC8804632 or the raw negative result.
+    #
+    # The stub sits at the *end* of the .text padding on purpose: the padding is 2548 bytes,
+    # so Luma claims its front for the 0x114-byte LayeredFS payload, and leaving that front
+    # untouched keeps both patches out of each other's way.
+    "0004003000009802": {
+        "title": "HOME Menu EUR",
+        "title_version": 29,
+        "code_sha256": "5f4d8d0e80d8e7d6fafcefa0630c5106473ade4658585cfb499a6ec3324d89a7",
+        "kind": "smdh_names",
+        "thunk_off": 0x131E60,   # the one caller of ReadTitleIcon(), itself called 18 times
+        "reader_off": 0xEA40,    # ReadTitleIcon(buffer, mediatype, tid_lo, tid_hi)
+        "lang_index": 10,        # the SMDH language slot the mod overwrites: EU_Russian
     },
     # StreetPass Mii Plaza (MEET), EUR, title version 5. Verified working on hardware.
     #
@@ -318,6 +369,23 @@ def _b(src: int, dst: int) -> int:
     return 0xEA000000 | (((dst - src - 8) >> 2) & 0xFFFFFF)
 
 
+COND_EQ, COND_NE = 0x0, 0x1
+
+
+def _bc(cond: int, src: int, dst: int) -> int:
+    return (cond << 28) | 0x0A000000 | (((dst - src - 8) >> 2) & 0xFFFFFF)
+
+
+def _imm12(value: int) -> int:
+    """Encode a data-processing immediate: an 8-bit value rotated right by an even amount."""
+    for rot in range(16):
+        shift = 2 * rot
+        rotated = value if shift == 0 else ((value << shift) | (value >> (32 - shift))) & 0xFFFFFFFF
+        if rotated <= 0xFF:
+            return (rot << 8) | rotated
+    raise ValueError(f"0x{value:X} is not an ARM immediate")
+
+
 SIGNATURE = (
     0xE5970010,  # Luma's fsMountArchive signature, word 1
     0xE1CD20D8,  #                                  word 2
@@ -424,6 +492,93 @@ STUB_VARIANTS = {
     "r4_frame18": _stub_r4_frame18,
     "sl_frame14": _stub_sl_frame14,
 }
+
+
+def _stub_smdh_names(patch: dict, table_va: int) -> list[int]:
+    """Wrap ReadTitleIcon() and rewrite the Russian slot of the SMDH it just read.
+
+    Entered in place of the thunk's own `push`, so the incoming registers are the thunk's:
+    r0 = buffer, r1 = mediatype, r2 = title id low, r3 = title id high, lr = the caller.
+    The thunk's three instructions are reproduced verbatim before the call, because
+    ReadTitleIcon() reads a fifth argument off the stack and expects ip to be zero.
+
+    Only r0-r3, ip and lr may be clobbered on the way out, so the search borrows r4-r7 and
+    gives them back. The return value has to survive too: the error path leaves it alone,
+    and the path that copies strings puts the zero back.
+    """
+    s = patch["stub_off"]
+    short_at, long_at = smdh_names.slot_offsets(patch["lang_index"])
+    page, short_low = short_at & ~0xFF, short_at & 0xFF
+    if long_at & ~0xFF != page:
+        raise RuntimeError(f"slot {patch['lang_index']} spans two immediate pages")
+
+    # Every branch target as a word index, so the layout below reads as its own labels.
+    LOOP, NEXT, MATCH, CP1, LONG, CP2, DONE, OUT, LIT = 12, 23, 27, 32, 38, 42, 48, 50, 52
+    at = lambda index: s + index * 4  # noqa: E731
+
+    words = [
+        0xE92D400D,                          # 00  push  {r0, r2, r3, lr}   buffer, title id
+        0xE92D4008,                          # 01  push  {r3, lr}           the thunk's frame
+        0xE3A0C000,                          # 02  mov   ip, #0
+        0xE58DC000,                          # 03  str   ip, [sp]           its fifth argument
+        _bl(at(4), patch["reader_off"]),     # 04  bl    ReadTitleIcon
+        0xE28DD008,                          # 05  add   sp, sp, #8
+        0xE3500000,                          # 06  cmp   r0, #0
+        _bc(COND_NE, at(7), at(OUT)),        # 07  bne   OUT                read failed
+        0xE92D00F0,                          # 08  push  {r4, r5, r6, r7}
+        0xE28DC010,                          # 09  add   ip, sp, #0x10
+        0xE89C0070,                          # 10  ldm   ip, {r4, r5, r6}   buffer, id low, high
+        0xE59F7000 | (at(LIT) - at(11) - 8),  # 11  ldr   r7, [pc, #...]     r7 = table
+        # LOOP: walk the table looking for this title id
+        0xE5970000,                          # 12  ldr   r0, [r7]           entry id low
+        0xE3500000,                          # 13  cmp   r0, #0
+        _bc(COND_EQ, at(14), at(DONE)),      # 14  beq   DONE               end of table
+        0xE5D71004,                          # 15  ldrb  r1, [r7, #4]       entry id high byte
+        0xE5D72005,                          # 16  ldrb  r2, [r7, #5]       short length
+        0xE5D73006,                          # 17  ldrb  r3, [r7, #6]       long length
+        0xE1500005,                          # 18  cmp   r0, r5
+        _bc(COND_NE, at(19), at(NEXT)),      # 19  bne   NEXT
+        0xE206C0FF,                          # 20  and   ip, r6, #0xff
+        0xE15C0001,                          # 21  cmp   ip, r1
+        _bc(COND_EQ, at(22), at(MATCH)),     # 22  beq   MATCH
+        # NEXT: skip this entry's header and both strings
+        0xE0877082,                          # 23  add   r7, r7, r2, lsl #1
+        0xE0877083,                          # 24  add   r7, r7, r3, lsl #1
+        0xE2877008,                          # 25  add   r7, r7, #8
+        _b(at(26), at(LOOP)),                # 26  b     LOOP
+        # MATCH: r7 -> the short description, r2/r3 = the two lengths
+        0xE2877008,                          # 27  add   r7, r7, #8
+        0xE2840000 | _imm12(page),           # 28  add   r0, r4, #page
+        0xE2800000 | _imm12(short_low),      # 29  add   r0, r0, #short
+        0xE1B0C002,                          # 30  movs  ip, r2
+        _bc(COND_EQ, at(31), at(LONG)),      # 31  beq   LONG               nothing to write
+        0xE0D7E0B2,                          # 32  ldrh  lr, [r7], #2
+        0xE0C0E0B2,                          # 33  strh  lr, [r0], #2
+        0xE25CC001,                          # 34  subs  ip, ip, #1
+        _bc(COND_NE, at(35), at(CP1)),       # 35  bne   CP1
+        0xE3A0E000,                          # 36  mov   lr, #0
+        0xE1C0E0B0,                          # 37  strh  lr, [r0]           terminate
+        # LONG: same again into the long description
+        0xE2840000 | _imm12(page),           # 38  add   r0, r4, #page
+        0xE2800000 | _imm12(long_at & 0xFF),  # 39  add   r0, r0, #long
+        0xE1B0C003,                          # 40  movs  ip, r3
+        _bc(COND_EQ, at(41), at(DONE)),      # 41  beq   DONE
+        0xE0D7E0B2,                          # 42  ldrh  lr, [r7], #2
+        0xE0C0E0B2,                          # 43  strh  lr, [r0], #2
+        0xE25CC001,                          # 44  subs  ip, ip, #1
+        _bc(COND_NE, at(45), at(CP2)),       # 45  bne   CP2
+        0xE3A0E000,                          # 46  mov   lr, #0
+        0xE1C0E0B0,                          # 47  strh  lr, [r0]
+        # DONE: give r4-r7 back, restore the zero the caller checks
+        0xE8BD00F0,                          # 48  pop   {r4, r5, r6, r7}
+        0xE3A00000,                          # 49  mov   r0, #0
+        # OUT: the saved buffer and title id land in call-clobbered registers and are dropped
+        0xE8BD400E,                          # 50  pop   {r1, r2, r3, lr}
+        0xE12FFF1E,                          # 51  bx    lr
+        table_va,                            # 52  literal
+    ]
+    assert words[LIT] == table_va, "the layout drifted from its labels"
+    return words
 
 
 def build_stub(patch: dict, globals_value: int) -> bytes:
@@ -617,7 +772,95 @@ def _generate_romfs_from_sd(
     return files, log
 
 
-def generate(tid: str, code_path: Path, exheader_path: Path) -> tuple[dict[str, bytes], list[str]]:
+def _generate_smdh_names(
+    patch: dict, code: bytes, exheader: bytes, version: int, table: bytes
+) -> tuple[dict[str, bytes], list[str]]:
+    """code.ips that redirects the SMDH-reading thunk through the name-rewriting stub.
+
+    Three records: one word over the thunk's `push`, the stub at the end of the .text
+    padding, and the name table in the .rodata padding. No exheader - HOME Menu already has
+    DirectSdmc, and nothing here needs Luma to find a symbol.
+    """
+    thunk = patch["thunk_off"]
+    word = struct.unpack_from("<I", code, thunk)[0]
+    if word != ORIGINAL_THUNK_WORD:
+        raise RuntimeError(
+            f"0x{thunk:X} holds 0x{word:08X}, expected 0x{ORIGINAL_THUNK_WORD:08X} (push {{r3, lr}}) "
+            f"- this is not the thunk the offsets were taken from"
+        )
+    call = struct.unpack_from("<I", code, thunk + 0xC)[0]
+    imm = (call & 0xFFFFFF) - (0x1000000 if call & 0x800000 else 0)
+    if call >> 24 != 0xEB or thunk + 0xC + 8 + imm * 4 != patch["reader_off"]:
+        raise RuntimeError(
+            f"0x{thunk + 0xC:X} does not call ReadTitleIcon at 0x{patch['reader_off']:X}"
+        )
+
+    text_size = struct.unpack_from("<I", exheader, TEXT_SIZE_OFFSET)[0]
+    ro_address = struct.unpack_from("<I", exheader, 0x20)[0]
+    ro_size = struct.unpack_from("<I", exheader, 0x28)[0]
+    rounded = lambda v: (v + 0xFFF) & ~0xFFF  # noqa: E731
+
+    # Past Luma's path string, which lands at the very start of the .rodata padding.
+    table_off = rounded(text_size) + ro_size + LUMA_PATH_SIZE
+    table_va = ro_address + ro_size + LUMA_PATH_SIZE
+    ro_room = rounded(ro_size) - ro_size - LUMA_PATH_SIZE
+    if len(table) > ro_room:
+        raise RuntimeError(f"the name table is {len(table)} bytes, .rodata padding has {ro_room}")
+
+    # The stub goes at the end of the .text padding, leaving the front to Luma's payload.
+    text_room = rounded(text_size) - text_size
+    stub_words = _stub_smdh_names({**patch, "stub_off": 0}, table_va)
+    patch["stub_off"] = rounded(text_size) - len(stub_words) * 4
+    stub = b"".join(struct.pack("<I", w) for w in _stub_smdh_names(patch, table_va))
+    if len(stub) + LUMA_PAYLOAD_SIZE > text_room:
+        raise RuntimeError(
+            f"stub is {len(stub)} bytes and Luma needs 0x{LUMA_PAYLOAD_SIZE:X} more, "
+            f".text padding is {text_room}"
+        )
+
+    for what, offset, blob in (("stub", patch["stub_off"], stub), ("table", table_off, table)):
+        if any(code[offset:offset + len(blob)]):
+            raise RuntimeError(f"the {what} would overwrite code at 0x{offset:X}, not padding")
+
+    records = [
+        (thunk, struct.pack("<I", _b(thunk, patch["stub_off"]))),
+        (patch["stub_off"], stub),
+        (table_off, table),
+    ]
+    _verify_smdh_names(patch, code, records, text_size)
+
+    log = [
+        f"{patch['title']} title version {version}",
+        f"code.ips: ReadTitleIcon thunk at 0x{thunk:X} routed through a {len(stub)}-byte stub "
+        f"at 0x{patch['stub_off']:X} (va 0x{TEXT_VA + patch['stub_off']:X}), "
+        f"{text_room - len(stub)} bytes of .text padding left for Luma's payload",
+        f"code.ips: {len(table)}-byte name table at va 0x{table_va:X}, past the "
+        f"{LUMA_PATH_SIZE} bytes Luma claims for its path ({ro_room} bytes available)",
+    ]
+    return {"code.ips": make_ips(records)}, log
+
+
+def _verify_smdh_names(patch: dict, code: bytes, records: list[tuple[int, bytes]], text_size: int) -> None:
+    """The thunk must reach the stub, and Luma must still find every symbol it needs."""
+    from layeredfs_check import find_symbols  # imported late: layeredfs_check imports build
+
+    patched = bytearray(code)
+    for offset, data in records:
+        patched[offset:offset + len(data)] = data
+
+    landed = _branch_target(struct.unpack_from("<I", patched, patch["thunk_off"])[0], patch["thunk_off"])
+    if landed != patch["stub_off"]:
+        raise RuntimeError(f"the thunk branches to 0x{landed:X}, not to the stub")
+
+    symbols = find_symbols(bytes(patched), min(text_size, len(patched)))
+    missing = [name for name, off in symbols.items() if off is None and name != "fsUnmountArchive"]
+    if missing:
+        raise RuntimeError(f"the patch cost Luma a LayeredFS symbol: {', '.join(missing)}")
+
+
+def generate(
+    tid: str, code_path: Path, exheader_path: Path, names_table: bytes | None = None
+) -> tuple[dict[str, bytes], list[str]]:
     """Return {filename: contents} for the title's code.ips and exheader.bin, plus a log."""
     patch = dict(HOOK_PATCHES[tid.upper()])
 
@@ -646,6 +889,11 @@ def generate(tid: str, code_path: Path, exheader_path: Path) -> tuple[dict[str, 
 
     if patch.get("kind") == "romfs_from_sd":
         return _generate_romfs_from_sd(tid, patch, code, exheader, version)
+
+    if patch.get("kind") == "smdh_names":
+        if not names_table:
+            raise RuntimeError(f"{patch['title']} needs a name table and none was built")
+        return _generate_smdh_names(patch, code, exheader, version, names_table)
 
     if patch.get("kind") == "exheader_only":
         access = struct.unpack_from("<Q", exheader, ACCESS_INFO_OFFSET)[0]

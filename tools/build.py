@@ -34,6 +34,7 @@ import luma_hook  # noqa: E402
 import msbt as msbt_mod  # noqa: E402
 import romfs  # noqa: E402
 import smdh as smdh_mod  # noqa: E402
+import smdh_names  # noqa: E402
 from store import open_store  # noqa: E402
 
 ROOT = Path(__file__).resolve().parent.parent
@@ -52,6 +53,10 @@ TITLES = {
         "source_tid": "0004003000009802",
         "lang": "EU_Russian",
         "ref_lang": "EU_English",
+        # `hook_patch` here ships only a code.ips, and not to make LayeredFS work - Luma
+        # hooks this title unaided. It carries the application names, which HOME Menu reads
+        # from NAND and LayeredFS therefore cannot reach. See tools/smdh_names.py.
+        "hook_patch": True,
     },
     # Ships a whole RomFS image, like download_play - see the note there.
     "keyboard": {
@@ -322,7 +327,26 @@ def skip_blocked(name: str, cfg: dict) -> list[str]:
     return lines
 
 
-def prepare_hook_patch(name: str, tid: str) -> tuple[dict[str, bytes], list[str]]:
+def build_app_names(name: str, cfg: dict, table: dict[str, str]) -> tuple[bytes | None, list[str]]:
+    """The title-name table a `smdh_names` hook carries in its code.ips.
+
+    The names are rendered with the system font like everything else, so they go through the
+    same homoglyph substitution as the strings in romfs.
+    """
+    source = ROOT / "src" / "strings" / name / "_app_names.json"
+    if not source.exists():
+        return None, []
+    entries = json.loads(source.read_text(encoding="utf-8"))
+    translated = {
+        tid: {key: apply_homoglyphs(value, table) for key, value in entry.items() if key.startswith("ua")}
+        for tid, entry in entries.items()
+        if not tid.startswith("_")
+    }
+    blob, log = smdh_names.build_table(translated)
+    return blob, [f"app names: {len(log)} titles, {len(blob)}-byte table"] + [f"  {line}" for line in log]
+
+
+def prepare_hook_patch(name: str, tid: str, names_table: bytes | None = None) -> tuple[dict[str, bytes], list[str]]:
     """Build the code.ips + exheader.bin that let Luma hook LayeredFS into `tid`.
 
     Anything missing is fatal on purpose, and this runs before the build writes anything:
@@ -342,7 +366,7 @@ def prepare_hook_patch(name: str, tid: str) -> tuple[dict[str, bytes], list[str]
             f"file in work/{tid}/ (see docs/dump-code.md)"
         )
 
-    return luma_hook.generate(tid, code, exheader)
+    return luma_hook.generate(tid, code, exheader, names_table)
 
 
 def write_romfs_image(tid: str, romfs_dir: Path, overrides: dict[str, bytes]) -> list[str]:
@@ -398,7 +422,12 @@ def build_title(name: str, table: dict[str, str]) -> list[str]:
     if cfg.get("blocked"):
         return skip_blocked(name, cfg)
 
-    hooks = {tid: prepare_hook_patch(name, tid) for tid in cfg["tids"]} if cfg.get("hook_patch") else {}
+    names_table, names_stats = build_app_names(name, cfg, table)
+    hooks = (
+        {tid: prepare_hook_patch(name, tid, names_table) for tid in cfg["tids"]}
+        if cfg.get("hook_patch")
+        else {}
+    )
 
     lang = cfg["lang"]
     romfs = ROOT / "work" / cfg["source_tid"] / "romfs"
@@ -434,7 +463,7 @@ def build_title(name: str, table: dict[str, str]) -> list[str]:
         stats.append(f"{key}: {translated}/{len(msbt.texts)} translated")
 
     smdh_blobs, smdh_stats = build_smdh(name, cfg, romfs, table)
-    stats += smdh_stats
+    stats += smdh_stats + names_stats
     outputs = cross_blobs | store.outputs(lang, updates) | smdh_blobs
     written: list[str] = []
     for tid in cfg["tids"]:

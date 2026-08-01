@@ -59,7 +59,7 @@ SD:/luma/titles/0004001000022000/romfs/message_EU_LZ.bin
 
 | Папка (TID) | Титул | Що всередині |
 |---|---|---|
-| `0004003000009802` | Меню HOME | `romfs/` — LayeredFS |
+| `0004003000009802` | Меню HOME | `romfs/` + `code.ips` — LayeredFS плюс назви додатків |
 | `0004001000022000` | Налаштування системи | `romfs/` — LayeredFS |
 | `0004001000022700` | Mii Maker | `romfs/` — LayeredFS |
 | `0004001000022400` | Nintendo 3DS Камера | `romfs/` — LayeredFS |
@@ -114,7 +114,8 @@ NAND не змінювався, тому видалення нічого не л
 | Частина тексту не українською | Це нормально: технічні рядки (`OK`, `Miiverse`, формати дат) залишені як є. |
 | На клавіатурі `i` замість `і`, `ε` замість `є` | Так і має бути — та сама заміна, що й у решті інтерфейсу: цих літер у системному шрифті немає. Клавіші стоять на українських позиціях (`ы`→`і`, `ъ`→`ї`, `э`→`є`), а на місці `ё` тепер апостроф. |
 | `An exception occurred`, `Current process: loader` | Luma не змогла застосувати LayeredFS до титулу, який ви запускали, і зупинила консоль. Перейменуйте `SD:/luma/titles/<TID>/romfs` цього титулу на `_romfs` і перезавантажте — титул запуститься без перекладу. Напишіть в Issues з фото екрана помилки. |
-| HOME Menu не запускається | Видаліть `SD:/luma/titles/0004003000009802`. Напишіть в Issues, вказавши модель, регіон і версію системи. |
+| HOME Menu не запускається | Спершу видаліть лише `SD:/luma/titles/0004003000009802/code.ips` — це правка назв додатків, і без неї решта перекладу Меню HOME працює. Не допомогло — видаліть усю папку `0004003000009802`. Напишіть в Issues, вказавши модель, регіон і версію системи. |
+| Назви додатків російською | `code.ips` Меню HOME розрахований на версію титулу **29** (EUR). Якщо ваш білд інший, збірка назв не застосується — решта перекладу працює. Журнал дій, Керування даними, eShop і Перенесення даних показують назви російською й на версії 29: вони читають їх окремо, і хука для них поки немає. |
 | Титул крешить після встановлення | Переклади Журналу дій, Посібника, Списку друзів, Вибору Mii, Повідомлень, налаштувань amiibo, Гри по завантаженню, клавіатури, Здоров'я і безпеки й екрана помилки містять правку коду титулу — під версії **2**, **5**, **6**, **3**, **4**, **1**, **3**, **4**, **3** і **7** відповідно (EUR). Ці білди стоять на всіх сучасних прошивках. Якщо у вас старіший, видаліть папку того титулу: `0004001000022200`, `0004003000009B02`, `0004003000009F02`, `000400300000D102`, `000400300000A002`, `000400300000B902`, `0004001000022100`, `000400300000D002`, `0004001000022300`, `000400300000C502`. Решта перекладу працюватиме як була. |
 | Гра по завантаженню, клавіатура, Здоров'я і безпека або екран помилки не завантажується | Видаліть `SD:/luma/titles/0004001000022100`, `SD:/luma/titles/000400300000D002`, `SD:/luma/titles/0004001000022300` чи `SD:/luma/titles/000400300000C502` **цілком**. Вони читають свій romfs з SD-карти, тому `code.ips` без відповідного `*_romfs.bin` їх ламає — видаляти частинами не можна. |
 | Порожні квадрати замість літер | Повідомте в Issues із фото — це баг, такого бути не повинно. |
@@ -155,7 +156,7 @@ NAND не змінювався, тому видалення нічого не л
 
 | Титул | Стан |
 |---|---|
-| Меню HOME | ✅ перекладено |
+| Меню HOME | ✅ перекладено, разом з назвами додатків — з правкою коду титулу, потрібна версія титулу 29 (див. нижче) |
 | Налаштування системи | ✅ перекладено |
 | Mii Maker | ✅ перекладено |
 | Nintendo 3DS Камера | ✅ перекладено |
@@ -276,7 +277,7 @@ patchLayeredFs(...);                     // тут шукаються ті п'я
 
 | Титул | `remaster_version` |
 |---|---|
-| Меню HOME (`menu`) | 29 |
+| **Меню HOME (`menu`)** | **29** |
 | **Список друзів (`friend`)** | **6** |
 | **Посібник (`ebird`)** | **5** |
 | **Клавіатура (`swkbd`)** | **4** |
@@ -320,11 +321,61 @@ LayeredFS тут не задіяний узагалі: теки `romfs` для �
 
 Екранна клавіатура влаштована так само й полагоджена тим самим способом: два її romfs-сайти (`0x14944` — з нього будується `rom:`, і `0xE958`) перенаправлені на `swkbd_romfs.bin`. Третій виклик `OpenFileDirectly` за адресою `0x6F7C0` не чіпається — він відкриває `ARCHIVE_SAVEDATA_AND_CONTENT`, а не romfs.
 
+#### Як перекладено назви додатків у Меню HOME
+
+Це єдиний `code.ips` у моді, який робиться **не** для того, щоб LayeredFS запрацювала: Меню HOME Luma хукає сама. Він потрібен, бо назви додатків лежать не в romfs.
+
+Меню HOME бере їх із SMDH кожного титулу — `ExeFS:/icon`, куди LayeredFS не дістає. Але сам **читач** SMDH належить Меню HOME, і його можна перехопити:
+
+| Що | Де |
+|---|---|
+| `ReadTitleIcon()` — тягне всі `0x36C0` байтів SMDH титулу в буфер викликача | `0xEA40` |
+| thunk, її єдиний викликач | `0x131E60` |
+| викликачі thunk'а | 18 |
+
+Ці 18 шляхів — і є всі екрани, де видно назву: підпис іконки, верхній екран при наведенні, оверлей «Призупинена програма», діалоги закриття й видалення. Тому одного хука достатньо.
+
+Шукати місце читання варто не за рядком `icon`: шлях `ExeFS:/icon` передається 4-байтовим **літералом** `'icon'` (`0x6E6F6369`) у binary lowpath, а надійний маркер самої функції — `mov r1, #0x36c0`, розмір SMDH.
+
+Аргументи thunk'а: `r0` = буфер, `r1` = mediatype, `r2`/`r3` = title id. Підтверджено двома викликачами — `0x120ABC` (`ldrd r2, r3, [r4, #8]`, `ldrb r1, [r4, #0x10]`) і `0xBB5EC` (`mov r1, #1`, тобто NAND). Успіх — нуль; на невдачі повертається `0xC8804631`/`0xC8804632` або сирий негативний результат.
+
+`code.ips` кладе три записи:
+
+| Запис | Куди | Розмір |
+|---|---|---|
+| `b stub` поверх `push {r3, lr}` thunk'а | `0x131E60` | 4 байти |
+| стаб: викликає оригінальний читач, тоді переписує російський блок буфера | хвіст padding'а `.text`, `0x205F2C` | 212 байтів |
+| таблиця назв | padding `.rodata`, va `0x3295E4` | 1318 байтів |
+
+Обидва місця вибрані так, щоб не зіткнутися з самою Luma — вона накладає свій LayeredFS **після** `code.ips` і мовчки затирає те, що там лежало:
+
+| Що пише Luma | Куди | Скільки |
+|---|---|---|
+| payload LayeredFS | **початок** padding'а `.text` (`*payloadOffset = size`) | `0x114` |
+| рядок `lf:/luma/titles/<TID>/romfs` | **початок** padding'а `.rodata` (`*pathOffset = roundedTextSize + roSize`) | 39 байтів |
+
+Тому стаб іде в **хвіст** padding'а `.text` (після нього ще 2336 вільних байтів), а таблиця — з відступом 48 байтів від початку padding'а `.rodata`. Перша версія патча цього не врахувала: таблиця почалася рівно на `pathOffset`, Luma затерла перший запис, обхід пішов по сміттю — і назви лишилися російськими, без жодного креша.
+
+Стаб відтворює три інструкції thunk'а дослівно, бо читач бере п'ятий аргумент зі стека викликача й чекає нуль в `ip`. Правиться лише блок 10 (російський), коротка й довга назва; publisher, растрові іконки й решта 15 мов не чіпаються. Помилка читання й невідомий title id лишають буфер незмінним.
+
+Рядки живуть у `src/strings/home_menu/_app_names.json` поруч з іншими перекладами й проходять ту саму заміну гліфів. Конвенція взята з власних SMDH Nintendo: `ua` — коротка назва, один рядок; `ua_long` — та сама назва з власним `\n`, і її можна не вказувати, якщо вона така сама. Формат таблиці — у `tools/smdh_names.py`.
+
+Стаб перевірений емуляцією ARM (unicorn): правильні назви для трьох різних титулів, `r0`/`sp`/`r4-r7` цілі на виході, інші мовні блоки та іконки байт-у-байт, і окремо — що читач отримує `arg5 = 0` та `ip = 0`.
+
 ### Чого мод не перекладає
 
-**Підписи іконок на головному екрані.** Назва під іконкою й текст на верхньому екрані при наведенні (`Настройки системы`, `Игровые заметки`) — це не картинка, а текст, але живе він у **SMDH** кожного титулу (`CXI ExeFS:/icon`, 16 мовних структур).
+**Назви додатків поза Меню HOME.** Підпис під іконкою, текст на верхньому екрані при наведенні, оверлей «Призупинена програма», діалоги закриття й видалення — це все одна й та сама коротка/довга назва з **SMDH** титулу (`CXI ExeFS:/icon`, 16 мовних структур). LayeredFS до ExeFS не дістає: Luma підміняє лише `romfs/`, `code.bin`, `code.ips`, `exheader.bin` і `locale.txt`, а SMDH встановленого титулу лежить у NAND.
 
-LayeredFS до ExeFS не дістає — Luma підміняє лише `romfs/`, `code.bin`, `code.ips`, `exheader.bin` і `locale.txt`. Щоб змінити SMDH, треба перезібрати й перевстановити сам титул, тобто **писати в NAND** — а весь сенс проєкту в тому, що мод ставиться й зноситься копіюванням папки. Тому підписи іконок залишаються мовою слота.
+У Меню HOME це обійдено правкою коду — див. «Як перекладено назви додатків у Меню HOME» нижче, — тому всі перелічені екрани перекладені. А от **Журнал дій, Керування даними, eShop і Перенесення даних показують назви мовою слота**: кожен із них читає їх окремо й потребує власного хука. Журнал дій до того ж назви взагалі не резолвить — отримує готовий рядок (його єдиний `ARCHIVE_SAVEDATA_AND_CONTENT` веде до `0x0004009B00010202`, спільного системного шрифту), тож йому потрібен хук не на читанні SMDH, а на малюванні.
+
+Два титули везуть додаткову копію SMDH у власному `romfs`, і **її LayeredFS перекриває напряму**, без правки коду:
+
+| Файл | Було | Стало |
+|---|---|---|
+| `0004001000022700/romfs/icn/EU_appEdit.icn` | `Редактор Mii` | `Mii Maker` |
+| `0004001000022B00/romfs/saveicon_EU.icn` | `Программа просмотра Nintendo Zone` | `Оглядач Nintendo Zone` |
+
+Правиться лише російський блок (індекс 10) — коротка й довга назва, 40 і 82 байти відповідно. Растрові іконки й решта 15 мов лишаються байт-у-байт: див. `tools/smdh.py` і `build_smdh()`. У eShop і Face Raiders копії в romfs теж є, але там назва вже латиницею.
 
 **Системний шрифт.** Див. розділ вище — LayeredFS шрифт не підміняє.
 
@@ -462,7 +513,7 @@ A folder name is the Title ID (TID) of the system title it overrides. Luma reads
 
 | Folder (TID) | Title | Contents |
 |---|---|---|
-| `0004003000009802` | HOME Menu | `romfs/` — LayeredFS |
+| `0004003000009802` | HOME Menu | `romfs/` + `code.ips` — LayeredFS plus the application names |
 | `0004001000022000` | System Settings | `romfs/` — LayeredFS |
 | `0004001000022700` | Mii Maker | `romfs/` — LayeredFS |
 | `0004001000022400` | Nintendo 3DS Camera | `romfs/` — LayeredFS |
@@ -517,7 +568,8 @@ NAND was never touched, so removal cannot break anything.
 | Some text is not Ukrainian | Expected: technical strings (`OK`, `Miiverse`, date formats) are intentionally left as-is. |
 | The keyboard shows `i` for `і`, `ε` for `є` | By design — the same substitution as everywhere else in the mod: those letters are not in the system font. The keys sit in their Ukrainian positions (`ы`→`і`, `ъ`→`ї`, `э`→`є`), and `ё` now carries the apostrophe. |
 | `An exception occurred`, `Current process: loader` | Luma could not apply LayeredFS to the title you launched and halted the console. Rename that title's `SD:/luma/titles/<TID>/romfs` to `_romfs` and reboot — the title then starts untranslated. Please open an Issue with a photo of the error screen. |
-| HOME Menu won't boot | Delete `SD:/luma/titles/0004003000009802` and open an Issue with your model, region and system version. |
+| HOME Menu won't boot | First delete just `SD:/luma/titles/0004003000009802/code.ips` — that is the application-name patch, and the rest of the HOME Menu translation works without it. If that does not help, delete the whole `0004003000009802` folder. Please open an Issue with your model, region and system version. |
+| Application names still in Russian | The HOME Menu `code.ips` targets title version **29** (EUR). On a different build the names simply will not apply — the rest of the translation still works. The Activity Log, Data Management, the eShop and System Transfer show Russian names even on version 29: they read them separately and have no hook yet. |
 | A title crashes after installing | The Activity Log, Instruction Manual, Friend List, Mii Selector, Notifications, amiibo Settings, Download Play, Software Keyboard, Health & Safety and error applet translations carry a code patch — for versions **2**, **5**, **6**, **3**, **4**, **1**, **3**, **4**, **3** and **7** respectively (EUR). Those builds are on every modern firmware. If yours is older, delete that title's folder: `0004001000022200`, `0004003000009B02`, `0004003000009F02`, `000400300000D102`, `000400300000A002`, `000400300000B902`, `0004001000022100`, `000400300000D002`, `0004001000022300`, `000400300000C502`. The rest of the mod keeps working. |
 | Download Play, the Software Keyboard, Health & Safety or the error applet will not load | Delete `SD:/luma/titles/0004001000022100`, `SD:/luma/titles/000400300000D002`, `SD:/luma/titles/0004001000022300` or `SD:/luma/titles/000400300000C502` **as a whole**. They read their RomFS off the SD card, so `code.ips` without the matching `*_romfs.bin` breaks them — they cannot be removed piecemeal. |
 | Empty boxes instead of letters | Please report with a photo — that's a bug. |
@@ -556,7 +608,7 @@ same entry that switches the keyboard to Cyrillic.
 
 | Title | State |
 |---|---|
-| HOME Menu | ✅ translated |
+| HOME Menu | ✅ translated, application names included — with a code patch, needs title version 29 (see below) |
 | System Settings | ✅ translated |
 | Mii Maker | ✅ translated |
 | Nintendo 3DS Camera | ✅ translated |
@@ -711,7 +763,7 @@ updated the title:
 
 | Title | `remaster_version` |
 |---|---|
-| HOME Menu (`menu`) | 29 |
+| **HOME Menu (`menu`)** | **29** |
 | **Friend List (`friend`)** | **6** |
 | **Instruction Manual (`ebird`)** | **5** |
 | **Software Keyboard (`swkbd`)** | **4** |
@@ -771,11 +823,82 @@ The Software Keyboard is built the same way and is fixed the same way: its two R
 `OpenFileDirectly` call at `0x6F7C0` is left alone — that one opens
 `ARCHIVE_SAVEDATA_AND_CONTENT`, not the RomFS.
 
+#### How the HOME Menu's application names were translated
+
+This is the one `code.ips` in the mod that is **not** there to make LayeredFS work — Luma
+hooks the HOME Menu unaided. It is there because the application names do not live in romfs.
+
+The HOME Menu reads them from each title's SMDH, `ExeFS:/icon`, which LayeredFS cannot
+reach. The **reader**, however, belongs to the HOME Menu, and that can be intercepted:
+
+| What | Where |
+|---|---|
+| `ReadTitleIcon()` — pulls all `0x36C0` bytes of a title's SMDH into the caller's buffer | `0xEA40` |
+| the thunk, its only caller | `0x131E60` |
+| callers of the thunk | 18 |
+
+Those 18 paths are every screen that shows a name: the icon label, the upper screen on
+highlight, the "software suspended" overlay, the close and delete prompts. Hence one hook.
+
+Do not look for the read site by the string `icon`: the `ExeFS:/icon` path is passed as the
+4-byte **literal** `'icon'` (`0x6E6F6369`) in a binary lowpath, and the reliable marker for
+the function itself is `mov r1, #0x36c0`, the size of an SMDH.
+
+The thunk's arguments: `r0` = buffer, `r1` = mediatype, `r2`/`r3` = title id. Confirmed at
+two call sites — `0x120ABC` (`ldrd r2, r3, [r4, #8]`, `ldrb r1, [r4, #0x10]`) and `0xBB5EC`
+(`mov r1, #1`, i.e. NAND). Success is a zero return; failures come back as `0xC8804631`,
+`0xC8804632` or the raw negative result.
+
+`code.ips` lays down three records:
+
+| Record | Where | Size |
+|---|---|---|
+| `b stub` over the thunk's `push {r3, lr}` | `0x131E60` | 4 bytes |
+| the stub: calls the original reader, then rewrites the buffer's Russian slot | end of the `.text` padding, `0x205F2C` | 212 bytes |
+| the name table | `.rodata` padding, va `0x3295E4` | 1318 bytes |
+
+Both locations are chosen to stay clear of Luma itself, which applies its LayeredFS patch
+**after** the IPS and silently overwrites whatever was there:
+
+| What Luma writes | Where | Size |
+|---|---|---|
+| the LayeredFS payload | **front** of the `.text` padding (`*payloadOffset = size`) | `0x114` |
+| the string `lf:/luma/titles/<TID>/romfs` | **front** of the `.rodata` padding (`*pathOffset = roundedTextSize + roSize`) | 39 bytes |
+
+So the stub goes at the **end** of the `.text` padding (2336 bytes still free after it), and
+the table starts 48 bytes into the `.rodata` padding. The first version of this patch missed
+that: the table began exactly at `pathOffset`, Luma overwrote its first entry, the walk ran
+off into garbage — and the names stayed Russian, with no crash to point at it.
+
+The stub reproduces the thunk's three instructions verbatim, because the reader takes a
+fifth argument off the caller's stack and expects `ip` to be zero. Only slot 10 (Russian) is
+touched, its short and long description; the publisher, the icon bitmaps and the other 15
+languages are left alone. A failed read and an unknown title id leave the buffer as it was.
+
+The strings live in `src/strings/home_menu/_app_names.json` alongside the other
+translations and go through the same homoglyph substitution. The convention is taken from
+Nintendo's own SMDHs: `ua` is the short description, one line; `ua_long` is the same name
+carrying its own `\n`, and it may be omitted when the two are identical. The table format is
+in `tools/smdh_names.py`.
+
+The stub is verified by ARM emulation (unicorn): correct names for three different titles,
+`r0`/`sp`/`r4-r7` intact on the way out, other language slots and the icon bitmaps
+byte-for-byte, and separately that the reader receives `arg5 = 0` and `ip = 0`.
+
 ### What the mod does not translate
 
-**Icon labels on the HOME Menu.** The name under an icon and the text shown on the upper screen when you highlight it are text, not an image — but that text lives in each title's **SMDH** (`CXI ExeFS:/icon`, 16 language structs).
+**Application names outside the HOME Menu.** The label under an icon, the text on the upper screen when you highlight it, the "software suspended" overlay, the close and delete prompts — all of it is the same short/long description from the title's **SMDH** (`CXI ExeFS:/icon`, 16 language structs). LayeredFS cannot reach ExeFS: Luma only redirects `romfs/`, `code.bin`, `code.ips`, `exheader.bin` and `locale.txt`, and an installed title's SMDH lives in NAND.
 
-LayeredFS cannot reach ExeFS: Luma only redirects `romfs/`, `code.bin`, `code.ips`, `exheader.bin` and `locale.txt`. Changing an SMDH means rebuilding and reinstalling the title itself, i.e. **writing to NAND** — and the whole point of this project is a mod you install and remove by copying a folder. So icon labels stay in the slot's original language.
+In the HOME Menu this is worked around with a code patch — see "How the HOME Menu's application names were translated" above — so every screen listed there is translated. But **the Activity Log, Data Management, the eShop and System Transfer still show the names in the slot's language**: each reads them separately and needs a hook of its own. The Activity Log does not even resolve names — it receives a finished string (its single `ARCHIVE_SAVEDATA_AND_CONTENT` leads to `0x0004009B00010202`, the shared system font), so it needs a hook on drawing rather than on reading an SMDH.
+
+Two titles carry a second copy of their SMDH inside their own `romfs`, and **LayeredFS does reach that one** with no code patch involved:
+
+| File | Was | Now |
+|---|---|---|
+| `0004001000022700/romfs/icn/EU_appEdit.icn` | `Редактор Mii` | `Mii Maker` |
+| `0004001000022B00/romfs/saveicon_EU.icn` | `Программа просмотра Nintendo Zone` | `Оглядач Nintendo Zone` |
+
+Only the Russian slot (index 10) is touched — its short and long description, 40 and 82 bytes respectively. The icon bitmaps and the other 15 languages stay byte-for-byte identical: see `tools/smdh.py` and `build_smdh()`. The eShop and Face Raiders copies exist too, but their names are already in Latin script.
 
 **The system font.** See the section above — LayeredFS cannot replace it.
 
