@@ -1,0 +1,678 @@
+{
+  "back": {
+    "en": "Back",
+    "ua": "Назад"
+  },
+  "setting": {
+    "en": "{t:1.0:5000}Settings{t:1.0:6400}",
+    "ua": "{t:1.0:5000}Параметри{t:1.0:6400}"
+  },
+  "Finder": {
+    "en": "",
+    "ua": ""
+  },
+  "Finder_Pho_00_00": {
+    "en": "{t:2.0:0200}{t:3.39:0000}{t:2.0:0200}",
+    "ua": ""
+  },
+  "Finder_Pho_00_01": {
+    "en": "{t:2.0:0200}{t:3.39:0000}{t:2.0:0200}",
+    "ua": ""
+  },
+  "Finder_Pho_00_02": {
+    "en": "{t:2.0:0200}{t:3.39:0000}{t:2.0:0200}",
+    "ua": ""
+  },
+  "Finder_Mov_00_00": {
+    "en": "",
+    "ua": ""
+  },
+  "Finder_Mov_00_01": {
+    "en": "",
+    "ua": ""
+  },
+  "Finder_Mov_00_02": {
+    "en": "",
+    "ua": ""
+  },
+  "Finder_Mov_01_00": {
+    "en": "{t:5.0:00006041}{t:3.4:}{t:5.1:}{t:2.0:0200}:{t:2.0:0200}{t:5.0:00006041}{t:3.5:}",
+    "ua": ""
+  },
+  "Finder_Mov_01_01": {
+    "en": "{t:5.0:00006041}{t:3.4:}{t:5.1:}{t:2.0:0200}:{t:2.0:0200}{t:5.0:00006041}{t:3.5:}",
+    "ua": ""
+  },
+  "Finder_Mov_01_02": {
+    "en": "{t:5.0:00006041}{t:3.4:}{t:5.1:}{t:2.0:0200}:{t:2.0:0200}{t:5.0:00006041}{t:3.5:}",
+    "ua": ""
+  },
+  "Finder_Mov_02_00": {
+    "en": "{t:2.0:0200}/{t:2.0:0200}{t:5.0:00006041}{t:3.4:}{t:5.1:}{t:2.0:0200}:{t:2.0:0200}{t:5.0:00006041}{t:3.5:}",
+    "ua": ""
+  },
+  "Finder_Mov_02_01": {
+    "en": "{t:2.0:0200}/{t:2.0:0200}{t:5.0:00006041}{t:3.4:}{t:5.1:}{t:2.0:0200}:{t:2.0:0200}{t:5.0:00006041}{t:3.5:}",
+    "ua": ""
+  },
+  "Finder_Mov_02_02": {
+    "en": "{t:2.0:0200}/{t:2.0:0200}{t:5.0:00006041}{t:3.4:}{t:5.1:}{t:2.0:0200}:{t:2.0:0200}{t:5.0:00006041}{t:3.5:}",
+    "ua": ""
+  },
+  "Finder_Mov_03_00": {
+    "en": "{t:5.0:00006041}{t:3.39:0000}{t:2.0:0400}",
+    "ua": ""
+  },
+  "Finder_Mov_04_00": {
+    "en": "frame",
+    "ua": "кадр"
+  },
+  "Finder_Mov_04_03": {
+    "en": "frames",
+    "ua": "кадри"
+  },
+  "Finder_Mov_04_04": {
+    "en": "frames",
+    "ua": "кадрів"
+  },
+  "Finder_Mov_03_01": {
+    "en": "",
+    "ua": ""
+  },
+  "Finder_Mov_04_01": {
+    "en": "",
+    "ua": ""
+  },
+  "Finder_Mov_03_02": {
+    "en": "",
+    "ua": ""
+  },
+  "Finder_Mov_04_02": {
+    "en": "",
+    "ua": ""
+  },
+  "Finder_03": {
+    "en": "{t:2.1:00000040}Outer",
+    "ua": "{t:2.1:00000040}Задня"
+  },
+  "Finder_04": {
+    "en": "{t:2.1:00000040}Inner",
+    "ua": "{t:2.1:00000040}Передня"
+  },
+  "Finder_06": {
+    "en": "●REC",
+    "ua": "●REC"
+  },
+  "Finder_07": {
+    "en": "{t:2.1:00000040}Photos",
+    "ua": "{t:2.1:00000040}Фото"
+  },
+  "Finder_08": {
+    "en": "{t:2.1:00000040}Videos",
+    "ua": "{t:2.1:00000040}Відео"
+  },
+  "Finder_Face": {
+    "en": "",
+    "ua": ""
+  },
+  "Finder_Face_03": {
+    "en": "OK!",
+    "ua": "OK!"
+  },
+  "Finder_Face_03_01": {
+    "en": "{t:0.3:ff3200ff}OK!{t:0.3:454039ff}",
+    "ua": "{t:0.3:ff3200ff}OK!{t:0.3:454039ff}"
+  },
+  "Finder_Face_04": {
+    "en": "The photo could not\nbe taken. Please\nkeep still until the\nshutter is activated.",
+    "ua": "Не вдалося зробити\nзнімок. Не рухайтеся,\nдоки не спрацює\nзатвор."
+  },
+  "Finder_ModeA_Pho": {
+    "en": "",
+    "ua": ""
+  },
+  "Finder_ModeA_Pho_00": {
+    "en": "",
+    "ua": ""
+  },
+  "Finder_ModeA_Pho_01": {
+    "en": "Merge",
+    "ua": "Злиття"
+  },
+  "Finder_ModeA_Pho_02": {
+    "en": "Sparkle",
+    "ua": "Блиск"
+  },
+  "Finder_ModeA_Pho_03": {
+    "en": "Dream",
+    "ua": "Мрія"
+  },
+  "Finder_ModeA_Pho_04": {
+    "en": "Pinhole",
+    "ua": "Віньєтка"
+  },
+  "Finder_ModeA_Pho_06": {
+    "en": "Mystery",
+    "ua": "Загадка"
+  },
+  "Finder_ModeA_Pho_07": {
+    "en": "Low-Light",
+    "ua": "Ніч"
+  },
+  "Finder_ModeA_Pho_EX_00": {
+    "en": "Takes normal photos, with optional manual controls.",
+    "ua": "Звичайні знімки з ручними налаштуваннями за бажанням."
+  },
+  "Finder_ModeA_Pho_EX_01": {
+    "en": "Merges two faces together. Stand facing each other and take a photo!",
+    "ua": "Зливає два обличчя. Станьте одне навпроти одного і зробіть знімок!"
+  },
+  "Finder_ModeA_Pho_EX_02": {
+    "en": "Blow on the mic to decorate the photo. Try it with a face in the frame!",
+    "ua": "Дмухніть у мікрофон, щоб оздобити знімок. Спробуйте з обличчям!"
+  },
+  "Finder_ModeA_Pho_EX_03": {
+    "en": "Adds a hazy, dream-like quality to photos.",
+    "ua": "Додає знімкам туманності, наче уві сні."
+  },
+  "Finder_ModeA_Pho_EX_04": {
+    "en": "Lightens the centre and darkens the edges of photos.",
+    "ua": "Освітлює центр знімка і затемнює його краї."
+  },
+  "Finder_ModeA_Pho_EX_06": {
+    "en": "You won't know what kind of photo this takes until you try it!",
+    "ua": "Який вийде знімок, ви не знатимете, доки не спробуєте!"
+  },
+  "Finder_ModeA_Pho_EX_07": {
+    "en": "Use this when taking photos in low-light conditions.",
+    "ua": "Знімайте так за слабкого освітлення."
+  },
+  "Finder_ModeA_Mov": {
+    "en": "",
+    "ua": ""
+  },
+  "Finder_ModeA_Mov_00": {
+    "en": "Normal",
+    "ua": "Звичайне"
+  },
+  "Finder_ModeA_Mov_01": {
+    "en": "Low-Light",
+    "ua": "Ніч"
+  },
+  "Finder_ModeA_Mov_EX_00": {
+    "en": "Takes normal videos, with optional manual controls.",
+    "ua": "Звичайне відео з ручними налаштуваннями за бажанням."
+  },
+  "Finder_ModeA_Mov_EX_01": {
+    "en": "Use this when shooting videos in low-light conditions.",
+    "ua": "Знімайте так за слабкого освітлення."
+  },
+  "Shoot": {
+    "en": "",
+    "ua": ""
+  },
+  "Shoot_00": {
+    "en": "Shoot",
+    "ua": "Зйомка"
+  },
+  "Shoot_01": {
+    "en": "{t:2.1:000040c0}{t:0.2:8c00} /  / {t:0.2:6400}{t:2.1:000040c0}{t:2.0:0200}: Shoot",
+    "ua": "{t:2.1:000040c0}{t:0.2:8c00} /  / {t:0.2:6400}{t:2.1:000040c0}{t:2.0:0200}: Зйомка"
+  },
+  "Shoot_03": {
+    "en": "Outer\nCamera",
+    "ua": "Задня\nкамера"
+  },
+  "Shoot_04": {
+    "en": "Inner\nCamera",
+    "ua": "Передня\nкамера"
+  },
+  "Shoot_05": {
+    "en": "{t:1.0:5500}View Photos/Videos{t:1.0:6400}",
+    "ua": "{t:1.0:5500}Перегляд фото й відео{t:1.0:6400}"
+  },
+  "Shoot_06": {
+    "en": "{t:1.0:5000}Settings{t:1.0:6400}",
+    "ua": "{t:1.0:5000}Параметри{t:1.0:6400}"
+  },
+  "Shoot_07": {
+    "en": "",
+    "ua": ""
+  },
+  "Shoot_08": {
+    "en": "",
+    "ua": ""
+  },
+  "Set_U": {
+    "en": "",
+    "ua": ""
+  },
+  "Set_Title": {
+    "en": "Settings",
+    "ua": "Параметри"
+  },
+  "Set_D": {
+    "en": "",
+    "ua": ""
+  },
+  "Set_00": {
+    "en": "{t:1.0:4a00}Photo Save Location{t:1.0:6400}",
+    "ua": "{t:1.0:4a00}Місце збереження фото{t:1.0:6400}"
+  },
+  "Set_01": {
+    "en": "{t:1.0:5a00}Attention Sound{t:1.0:6400}",
+    "ua": "{t:1.0:5a00}Звук уваги{t:1.0:6400}"
+  },
+  "Set_02": {
+    "en": "SD Card",
+    "ua": "Карта SD"
+  },
+  "Set_03": {
+    "en": "System",
+    "ua": "Система"
+  },
+  "Set_04": {
+    "en": "None",
+    "ua": "Немає"
+  },
+  "Set_05": {
+    "en": "Bark",
+    "ua": "Гавкіт"
+  },
+  "Set_06": {
+    "en": "Meow",
+    "ua": "Няв"
+  },
+  "Set_07": {
+    "en": "???",
+    "ua": ""
+  },
+  "Set_08": {
+    "en": "Usage Tips",
+    "ua": "Поради"
+  },
+  "Set_09": {
+    "en": "Data Management",
+    "ua": "Керування даними"
+  },
+  "Set_10": {
+    "en": "{t:1.0:5a00}Interface Colour{t:1.0:6400}",
+    "ua": "{t:1.0:5a00}Колір інтерфейсу{t:1.0:6400}"
+  },
+  "Set_11": {
+    "en": "Info Display",
+    "ua": "Показ даних"
+  },
+  "Set_11_00": {
+    "en": "On",
+    "ua": "Увімк."
+  },
+  "Set_11_01": {
+    "en": "Off",
+    "ua": "Вимк."
+  },
+  "LctList_U": {
+    "en": "",
+    "ua": ""
+  },
+  "LctList_00": {
+    "en": "Usage Tips",
+    "ua": "Поради"
+  },
+  "LctList_01": {
+    "en": "Shows all the tips that\nhave been displayed.",
+    "ua": "Показує всі поради,\nщо вже з'являлися."
+  },
+  "LctList_D": {
+    "en": "",
+    "ua": ""
+  },
+  "LctList_02": {
+    "en": "Back",
+    "ua": "Назад"
+  },
+  "Date_U": {
+    "en": "",
+    "ua": ""
+  },
+  "Date_00": {
+    "en": "Data Management",
+    "ua": "Керування даними"
+  },
+  "Date_01": {
+    "en": "Manage photos, videos\nand save data.",
+    "ua": "Керуйте фото, відео\nта збереженими даними."
+  },
+  "Date_D": {
+    "en": "",
+    "ua": ""
+  },
+  "Date_02": {
+    "en": "{t:1.0:5a00}Copy All{t:1.0:6400}\n{t:1.0:5a00}Photos{t:1.0:6400}",
+    "ua": "{t:1.0:5a00}Копіювати{t:1.0:6400}\n{t:1.0:5a00}все фото{t:1.0:6400}"
+  },
+  "Date_03": {
+    "en": "{t:1.0:4f00}Delete All{t:1.0:6400}",
+    "ua": "{t:1.0:4f00}Стерти все{t:1.0:6400}"
+  },
+  "Date_04": {
+    "en": "System to SD Card",
+    "ua": "Із системи на карту SD"
+  },
+  "Date_08": {
+    "en": "SD Card to System",
+    "ua": "З карти SD у систему"
+  },
+  "Date_05": {
+    "en": "Reset User Data",
+    "ua": "Скинути дані користувача"
+  },
+  "Date_06": {
+    "en": "System",
+    "ua": "Система"
+  },
+  "Date_07": {
+    "en": "SD Card",
+    "ua": "Карта SD"
+  },
+  "Brws_U": {
+    "en": "",
+    "ua": ""
+  },
+  "Finder_Mov_03": {
+    "en": "",
+    "ua": ""
+  },
+  "Finder_05": {
+    "en": "{t:5.0:00004041}{t:3.2:}{t:2.0:0100}/{t:2.0:0100}{t:3.1:}{t:2.0:0100}/{t:2.0:0100}{t:3.0:}{t:2.0:1400}{t:3.3:}{t:2.0:feff}:{t:2.0:feff}{t:3.4:}",
+    "ua": ""
+  },
+  "Brws_U_00": {
+    "en": "{t:5.0:00007041}{t:3.2:}{t:2.0:0100}/{t:2.0:0100}{t:3.1:}{t:2.0:0100}/{t:2.0:0100}{t:3.0:}",
+    "ua": ""
+  },
+  "Brws_U_09": {
+    "en": "{t:3.4:}:{t:3.5:}{t:2.0:0200}/{t:2.0:0200}{t:3.23:}:{t:3.24:}",
+    "ua": ""
+  },
+  "Brws_U_01_00": {
+    "en": "Photos:\nVideos:",
+    "ua": "Фото:\nВідео:"
+  },
+  "Brws_U_01_01": {
+    "en": "Photos:",
+    "ua": "Фото:"
+  },
+  "Brws_U_01_02": {
+    "en": "Videos:",
+    "ua": "Відео:"
+  },
+  "Brws_U_02_00": {
+    "en": "{t:3.39:0000}\n{t:3.39:0100}",
+    "ua": ""
+  },
+  "Brws_U_02_01": {
+    "en": " {t:3.39:0000}",
+    "ua": ""
+  },
+  "Brws_U_02_02": {
+    "en": "{t:3.39:0000}",
+    "ua": ""
+  },
+  "Brws_U_03_00": {
+    "en": "The format of this\nphoto is not\nsupported, so it\ncannot be displayed.",
+    "ua": "Формат цього фото\nне підтримується,\nтож показати його\nне вдасться."
+  },
+  "Brws_U_03_01": {
+    "en": "This video is not\nsupported and\ncannot be displayed.",
+    "ua": "Формат цього\nвідео не\nпідтримується."
+  },
+  "Brws_U_04": {
+    "en": "There are no photos or\nvideos to display.",
+    "ua": "Немає фото чи відео\nдля показу."
+  },
+  "Brws_U_05": {
+    "en": "Total",
+    "ua": "Усього"
+  },
+  "Brws_U_06_00": {
+    "en": "Photos:\nVideos:\nDays:",
+    "ua": "Фото:\nВідео:\nДнів:"
+  },
+  "Brws_U_06_01": {
+    "en": "Photos:\nDays:",
+    "ua": "Фото:\nДнів:"
+  },
+  "Brws_U_06_02": {
+    "en": "Videos:\nDays:",
+    "ua": "Відео:\nДнів:"
+  },
+  "Brws_U_07_00": {
+    "en": "{t:3.39:0100}\n{t:3.39:0200}\n{t:3.39:0000}",
+    "ua": ""
+  },
+  "Brws_U_07_01": {
+    "en": "{t:3.39:0100}\n{t:3.39:0000}",
+    "ua": ""
+  },
+  "Brws_U_07_02": {
+    "en": "{t:3.39:0100}\n{t:3.39:0000}",
+    "ua": ""
+  },
+  "Brws_D": {
+    "en": "",
+    "ua": ""
+  },
+  "Brws_02": {
+    "en": "Slideshow",
+    "ua": "Слайд-шоу"
+  },
+  "Brws_03": {
+    "en": "Shoot",
+    "ua": "Зйомка"
+  },
+  "Brws_05_L": {
+    "en": "{t:3.2:}{t:2.0:0200}/{t:2.0:0200}{t:3.1:}\n{t:3.0:}",
+    "ua": ""
+  },
+  "Brws_05_M": {
+    "en": "{t:3.2:}{t:2.0:0100}/{t:2.0:0100}{t:3.1:}\n{t:3.0:}",
+    "ua": ""
+  },
+  "Brws_05_S": {
+    "en": "{t:3.2:}/{t:3.1:}",
+    "ua": ""
+  },
+  "Brws_06": {
+    "en": "There are no saved\nphotos or videos.",
+    "ua": "Немає збережених\nфото чи відео."
+  },
+  "Ope": {
+    "en": "",
+    "ua": ""
+  },
+  "OpePho_00": {
+    "en": "Graffiti",
+    "ua": "Малювання"
+  },
+  "OpePho_03": {
+    "en": "Close",
+    "ua": "Закрити"
+  },
+  "OpeMov_00": {
+    "en": "Video Tools",
+    "ua": "Робота з відео"
+  },
+  "OpeMov_01": {
+    "en": "Close",
+    "ua": "Закрити"
+  },
+  "Paint_D": {
+    "en": "",
+    "ua": ""
+  },
+  "Paint_00": {
+    "en": "Cancel",
+    "ua": "Скасувати"
+  },
+  "Paint_01": {
+    "en": "Finish",
+    "ua": "Готово"
+  },
+  "Paint_03": {
+    "en": "Select a colour with the stylus.",
+    "ua": "Виберіть колір стилусом."
+  },
+  "PlayMov_D": {
+    "en": "",
+    "ua": ""
+  },
+  "PlayMov_00": {
+    "en": "Cancel",
+    "ua": "Скасувати"
+  },
+  "PlayMov_01": {
+    "en": "{t:1.0:4300}Save Frame{t:1.0:6400}",
+    "ua": "{t:1.0:4300}Зняти кадр{t:1.0:6400}"
+  },
+  "SShow_D": {
+    "en": "",
+    "ua": ""
+  },
+  "SShow_00_00": {
+    "en": "{t:2.1:0000e0c0}Displaying photos in\n{t:2.1:00004041}random order.",
+    "ua": "{t:2.1:0000e0c0}Показ фото у\n{t:2.1:00004041}випадковому порядку."
+  },
+  "SShow_00_01": {
+    "en": "{t:2.1:0000e0c0}Displaying photos in\n{t:2.1:00004041}chronological order.",
+    "ua": "{t:2.1:0000e0c0}Показ фото за\n{t:2.1:00004041}порядком дат."
+  },
+  "SShow_00_02": {
+    "en": "{t:2.1:0000e0c0}Displaying videos in\n{t:2.1:00004041}random order.",
+    "ua": "{t:2.1:0000e0c0}Показ відео у\n{t:2.1:00004041}випадковому порядку."
+  },
+  "SShow_00_03": {
+    "en": "{t:2.1:0000e0c0}Displaying videos in\n{t:2.1:00004041}chronological order.",
+    "ua": "{t:2.1:0000e0c0}Показ відео за\n{t:2.1:00004041}порядком дат."
+  },
+  "SShow_00_04": {
+    "en": "{t:2.1:0000e0c0}Displaying photos and\n{t:2.1:00004041}videos in random order.",
+    "ua": "{t:2.1:0000e0c0}Показ фото й відео у\n{t:2.1:00004041}випадковому порядку."
+  },
+  "SShow_00_05": {
+    "en": "{t:2.1:0000e0c0}Displaying photos\n{t:2.1:00004041}and videos in\n{t:2.1:00004041}chronological order.",
+    "ua": "{t:2.1:0000e0c0}Показ фото\n{t:2.1:00004041}й відео за\n{t:2.1:00004041}порядком дат."
+  },
+  "SShow_01_00": {
+    "en": "Theme:\n\n{t:0.2:8200}All{t:0.2:6400}",
+    "ua": "Тема:\n\n{t:0.2:8200}Усе{t:0.2:6400}"
+  },
+  "SShow_01_01": {
+    "en": "Theme:\n\nAuto-Detect: {t:0.2:8c00}People{t:0.2:6400}",
+    "ua": "Тема:\n\nАвтовибір: {t:0.2:8c00}Люди{t:0.2:6400}"
+  },
+  "SShow_01_02": {
+    "en": "Theme:\n\nAuto-Detect: {t:0.2:8c00}Males{t:0.2:6400}",
+    "ua": "Тема:\n\nАвтовибір: {t:0.2:8c00}Чоловіки{t:0.2:6400}"
+  },
+  "SShow_01_03": {
+    "en": "Theme:\n\nAuto-Detect: {t:0.2:8c00}Females{t:0.2:6400}",
+    "ua": "Тема:\n\nАвтовибір: {t:0.2:8c00}Жінки{t:0.2:6400}"
+  },
+  "SShow_01_04": {
+    "en": "Theme:\n\n{t:0.2:8200}Merged Faces{t:0.2:6400}",
+    "ua": "Тема:\n\n{t:0.2:8200}Злиті обличчя{t:0.2:6400}"
+  },
+  "SShow_01_05": {
+    "en": "Theme:\n\n{t:0.2:8200}Decorative{t:0.2:6400}",
+    "ua": "Тема:\n\n{t:0.2:8200}Оздоблені{t:0.2:6400}"
+  },
+  "SShow_01_06": {
+    "en": "Theme:\n\n{t:0.2:8200}Specialist{t:0.2:6400}",
+    "ua": "Тема:\n\n{t:0.2:8200}Особливі{t:0.2:6400}"
+  },
+  "SShow_01_07": {
+    "en": "Theme:\n\n{t:0.2:8200}Games{t:0.2:6400}",
+    "ua": "Тема:\n\n{t:0.2:8200}Ігри{t:0.2:6400}"
+  },
+  "SShow_01_08": {
+    "en": "Theme:\n\n{t:0.2:8200}Mii Characters{t:0.2:6400}",
+    "ua": "Тема:\n\n{t:0.2:8200}Персонажі Mii{t:0.2:6400}"
+  },
+  "SShow_01_09": {
+    "en": "Theme:\n\n{t:0.2:8200}{t:5.0:00009841}{t:3.2:}{t:5.1:}/{t:5.0:00009841}{t:3.1:}{t:5.1:}/{t:5.0:00009841}{t:3.0:}{t:5.1:}{t:0.2:6400}",
+    "ua": "Тема:\n\n{t:0.2:8200}{t:5.0:00009841}{t:3.2:}{t:5.1:}/{t:5.0:00009841}{t:3.1:}{t:5.1:}/{t:5.0:00009841}{t:3.0:}{t:5.1:}{t:0.2:6400}"
+  },
+  "SShow_01_09_Blnk": {
+    "en": "Theme:\n\n{t:0.2:8200}{t:5.0:00009841}--{t:5.1:}/{t:5.0:00009841}--{t:5.1:}/{t:5.0:00009841}----{t:5.1:}{t:0.2:6400}",
+    "ua": "Тема:\n\n{t:0.2:8200}{t:5.0:00009841}--{t:5.1:}/{t:5.0:00009841}--{t:5.1:}/{t:5.0:00009841}----{t:5.1:}{t:0.2:6400}"
+  },
+  "SShow_02": {
+    "en": "{t:1.0:5f00}Settings{t:1.0:6400}",
+    "ua": "{t:1.0:5f00}Параметри{t:1.0:6400}"
+  },
+  "SShow_03": {
+    "en": "Theme",
+    "ua": "Тема"
+  },
+  "SShow_04_00": {
+    "en": "{t:1.0:5f00}Random{t:1.0:6400}",
+    "ua": "{t:1.0:5f00}Випадково{t:1.0:6400}"
+  },
+  "SShow_04_01": {
+    "en": "{t:1.0:4e00}In Order{t:1.0:6400}",
+    "ua": "{t:1.0:4e00}За порядком{t:1.0:6400}"
+  },
+  "SShow_05": {
+    "en": "{t:5.0:00004041}{t:3.2:}{t:2.0:0100}/{t:2.0:0100}{t:3.1:}{t:2.0:0100}/{t:2.0:0100}{t:3.0:}{t:2.0:1400}{t:3.3:}{t:2.0:feff}:{t:2.0:feff}{t:3.4:}",
+    "ua": ""
+  },
+  "SShow_05_Blnk": {
+    "en": "{t:5.0:00004041}--{t:2.0:0100}/{t:2.0:0100}--{t:2.0:0100}/{t:2.0:0100}----{t:2.0:1400}--{t:2.0:feff}:{t:2.0:feff}--",
+    "ua": ""
+  },
+  "ErrBrkn_": {
+    "en": "",
+    "ua": ""
+  },
+  "ErrBrkn00": {
+    "en": "The save data\nis corrupted.\n\nThe data will\nnow be reset.",
+    "ua": "Збережені дані\nпошкоджено.\n\nЗараз їх буде\nскинуто."
+  },
+  "ErrBrkn_Btn00": {
+    "en": "OK",
+    "ua": "OK"
+  },
+  "ErrBrkn01": {
+    "en": "Resetting save data...",
+    "ua": "Скидання даних…"
+  },
+  "TimS": {
+    "en": "",
+    "ua": ""
+  },
+  "TimS_OK": {
+    "en": "オッケー\nオッケイ\nオッケ\nオケー\nオケイ\nオケ\nオーケー\nオーケイ\nオーケ\nオケーイ\nオゲーイ\nオーゲイ",
+    "ua": ""
+  },
+  "TimS_OK_NG": {
+    "en": "テレビジョン\nキャラクター\nコンピューター\nモニター",
+    "ua": ""
+  },
+  "FriendCard_": {
+    "en": "",
+    "ua": ""
+  },
+  "FriendCard_Play": {
+    "en": "{t:3.39:0000} photos\ntaken",
+    "ua": "{t:3.39:0000} фото\nзнято"
+  },
+  "FriendCard_Play0": {
+    "en": "No photos taken",
+    "ua": "Знімків немає"
+  },
+  "FriendCard_Play1": {
+    "en": "1 photo taken",
+    "ua": "Знято 1 фото"
+  }
+}

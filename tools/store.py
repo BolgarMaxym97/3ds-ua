@@ -5,6 +5,10 @@ Three layouts appear in 3DS system titles:
   plain        romfs/message*/<LANG>/<file>.msbt          HOME Menu, keyboard, Activity Log
   container    romfs/<file>  -> LZ11 -> darc -> <dir>/<LANG>/<file>.msbt   System Settings
   per-language romfs/message/<LANG>.arc -> LZ11 -> darc -> <file>.msbt     Mii Maker
+               romfs/msg/<LANG>.LZ -> LZ11 -> flat archive -> <file>.msbt  Camera, Sound
+
+The per-language archive comes in two formats, told apart by the `darc` magic: the darc
+of Mii Maker and the header-less flat table of Camera and Sound (see tools/msgarc.py).
 
 A store hides that difference behind three calls:
 
@@ -23,6 +27,7 @@ from pathlib import Path
 
 sys.path.insert(0, str(Path(__file__).parent))
 import darc as darc_mod  # noqa: E402
+import msgarc as msgarc_mod  # noqa: E402
 from lz11 import compress, decompress  # noqa: E402
 
 MSBT_MAGIC = b"MsgStdBn"
@@ -43,6 +48,11 @@ def _unpack(raw: bytes) -> bytes:
 
 def _repack(original: bytes, data: bytes) -> bytes:
     return compress(data) if original[:1] == b"\x11" else data
+
+
+def _archive_module(data: bytes):
+    """Which archive format an unpacked per-language container is in."""
+    return darc_mod if data[: len(darc_mod.MAGIC)] == darc_mod.MAGIC else msgarc_mod
 
 
 class Store:
@@ -148,7 +158,8 @@ class PerLanguageStore(Store):
         return sorted(p.name.split(".")[0] for p in self.archives)
 
     def read(self, lang: str) -> dict[str, bytes]:
-        archive = darc_mod.parse(_unpack(self._path(lang).read_bytes()))
+        data = _unpack(self._path(lang).read_bytes())
+        archive = _archive_module(data).parse(data)
         return {
             f"{self.message_dir}__{path.split('/')[-1].split('.')[0]}": entry.data
             for path, entry in archive.files()
@@ -157,13 +168,14 @@ class PerLanguageStore(Store):
 
     def outputs(self, lang: str, updates: dict[str, bytes]) -> dict[str, bytes]:
         raw = self._path(lang).read_bytes()
-        archive = darc_mod.parse(_unpack(raw))
+        data = _unpack(raw)
+        module = _archive_module(data)
+        archive = module.parse(data)
         for path, entry in archive.files():
             key = f"{self.message_dir}__{path.split('/')[-1].split('.')[0]}"
             if key in updates:
                 entry.data = updates[key]
-        rebuilt = _repack(raw, darc_mod.build(archive))
-        return {self.template.format(lang=lang): rebuilt}
+        return {self.template.format(lang=lang): _repack(raw, module.build(archive))}
 
     def _path(self, lang: str) -> Path:
         return self.romfs / self.template.format(lang=lang)

@@ -62,15 +62,18 @@ SD:/luma/titles/0004001000022000/romfs/message_EU_LZ.bin
 | `0004003000009802` | Меню HOME | `romfs/` — LayeredFS |
 | `0004001000022000` | Налаштування системи | `romfs/` — LayeredFS |
 | `0004001000022700` | Mii Maker | `romfs/` — LayeredFS |
+| `0004001000022400` | Nintendo 3DS Камера | `romfs/` — LayeredFS |
+| `0004001000022500` | Nintendo 3DS Звук | `romfs/` — LayeredFS |
 | `0004001000022200` | Журнал дій | `romfs/` + `code.ips` + `exheader.bin` — LayeredFS з правкою коду |
 | `0004003000009B02` | Посібник | `romfs/` + `code.ips` + `exheader.bin` — LayeredFS з правкою коду |
 | `0004003000009F02` | Список друзів | `romfs/` + `code.ips` + `exheader.bin` — LayeredFS з правкою коду |
 | `0004001000022100` | Гра по завантаженню | `code.ips` + `exheader.bin` + `dlplay_romfs.bin` — без LayeredFS, повний образ romfs з SD |
+| `0004001000022300` | Здоров'я і безпека | `code.ips` + `exheader.bin` + `safe_romfs.bin` — без LayeredFS, повний образ romfs з SD |
 | `000400300000D002` | Екранна клавіатура | `code.ips` + `exheader.bin` + `swkbd_romfs.bin` — без LayeredFS, повний образ romfs з SD |
 
-Чому в останніх п'яти є `code.ips` і `exheader.bin` — див. [Що входить у реліз](#що-входить-у-реліз). Коротко: перші три титули Luma хукає сама, решті бракує прав і коду, які додає збірка.
+Чому в останніх шести є `code.ips` і `exheader.bin` — див. [Що входить у реліз](#що-входить-у-реліз). Коротко: перші п'ять титулів Luma хукає сама, решті бракує прав і коду, які додає збірка.
 
-Папки `romfs` немає навмисно у Гри по завантаженню і клавіатури: сама її наявність зупиняє ці титули на екрані помилки.
+Папки `romfs` немає навмисно у Гри по завантаженню, клавіатури й Здоров'я і безпеки: сама її наявність зупиняє ці титули на екрані помилки.
 
 TID регіонозалежні. У релізі — **EUR**; для інших регіонів у тих самих папок інші імена:
 
@@ -100,8 +103,8 @@ NAND не змінювався, тому видалення нічого не л
 | На клавіатурі `i` замість `і`, `ε` замість `є` | Так і має бути — та сама заміна, що й у решті інтерфейсу: цих літер у системному шрифті немає. Клавіші стоять на українських позиціях (`ы`→`і`, `ъ`→`ї`, `э`→`є`), а на місці `ё` тепер апостроф. |
 | `An exception occurred`, `Current process: loader` | Luma не змогла застосувати LayeredFS до титулу, який ви запускали, і зупинила консоль. Перейменуйте `SD:/luma/titles/<TID>/romfs` цього титулу на `_romfs` і перезавантажте — титул запуститься без перекладу. Напишіть в Issues з фото екрана помилки. |
 | HOME Menu не запускається | Видаліть `SD:/luma/titles/0004003000009802`. Напишіть в Issues, вказавши модель, регіон і версію системи. |
-| Титул крешить після встановлення | Переклади Журналу дій, Посібника, Списку друзів, Гри по завантаженню й клавіатури містять правку коду титулу — під версії **2**, **5**, **6**, **3** і **4** відповідно (EUR). Ці білди стоять на всіх сучасних прошивках. Якщо у вас старіший, видаліть папку того титулу: `0004001000022200`, `0004003000009B02`, `0004003000009F02`, `0004001000022100`, `000400300000D002`. Решта перекладу працюватиме як була. |
-| Гра по завантаженню або клавіатура не завантажується | Видаліть `SD:/luma/titles/0004001000022100` чи `SD:/luma/titles/000400300000D002` **цілком**. Вони читають свій romfs з SD-карти, тому `code.ips` без відповідного `*_romfs.bin` їх ламає — видаляти частинами не можна. |
+| Титул крешить після встановлення | Переклади Журналу дій, Посібника, Списку друзів, Гри по завантаженню, клавіатури й Здоров'я і безпеки містять правку коду титулу — під версії **2**, **5**, **6**, **3**, **4** і **3** відповідно (EUR). Ці білди стоять на всіх сучасних прошивках. Якщо у вас старіший, видаліть папку того титулу: `0004001000022200`, `0004003000009B02`, `0004003000009F02`, `0004001000022100`, `000400300000D002`, `0004001000022300`. Решта перекладу працюватиме як була. |
+| Гра по завантаженню, клавіатура або Здоров'я і безпека не завантажується | Видаліть `SD:/luma/titles/0004001000022100`, `SD:/luma/titles/000400300000D002` чи `SD:/luma/titles/0004001000022300` **цілком**. Вони читають свій romfs з SD-карти, тому `code.ips` без відповідного `*_romfs.bin` їх ламає — видаляти частинами не можна. |
 | Порожні квадрати замість літер | Повідомте в Issues із фото — це баг, такого бути не повинно. |
 
 ### Чому `i` замість `і`
@@ -143,6 +146,9 @@ NAND не змінювався, тому видалення нічого не л
 | Меню HOME | ✅ перекладено |
 | Налаштування системи | ✅ перекладено |
 | Mii Maker | ✅ перекладено |
+| Nintendo 3DS Камера | ✅ перекладено |
+| Nintendo 3DS Звук | ✅ перекладено |
+| Здоров'я і безпека | ✅ перекладено, повною підміною romfs — потрібна версія титулу 3 (див. нижче) |
 | Журнал дій | ✅ перекладено, з правкою коду титулу — потрібна версія титулу 2 (див. нижче) |
 | Посібник | ✅ перекладено, з правкою коду титулу — потрібна версія титулу 5 (див. нижче) |
 | Список друзів | ✅ перекладено, з правкою коду титулу — потрібна версія титулу 6 (див. нижче) |
@@ -173,11 +179,14 @@ Luma шукає в коді титулу п'ять функцій FS. Чотир
 |---|---|---|
 | Меню HOME | `0x0200000000310080` | є |
 | Mii Maker | `0x0000000000000081` | є |
+| Nintendo 3DS Камера | `0x00000000000000a1` | є |
+| Nintendo 3DS Звук | `0x00000000000000a1` | є |
 | Екранна клавіатура | `0x0000000000000001` | **нема** |
 | Журнал дій | `0x0000000000000001` | **нема** |
 | Гра по завантаженню | `0x0000000000000001` | **нема** |
 | Посібник | `0x0000000000000001` | **нема** |
 | Список друзів | `0x0000000000000001` | **нема** |
+| Здоров'я і безпека | `0x0000000000000001` | **нема** |
 
 Титули без права `DirectSdmc` не мають доступу до SD-карти, тому Nintendo просто не залінкувала в них код монтування SD. Працюють ті титули, у яких це право є.
 
@@ -186,7 +195,7 @@ Luma шукає в коді титулу п'ять функцій FS. Чотир
 | Титул | `OpenArchive` | `OpenFile` | `CloseArchive` | `OpenFileDirectly` |
 |---|---|---|---|---|
 | Журнал дій, Посібник, Список друзів | ✅ | ✅ | ✅ | ✅ |
-| Гра по завантаженню, клавіатура | ❌ | ❌ | ❌ | ✅ |
+| Гра по завантаженню, клавіатура, Здоров'я і безпека | ❌ | ❌ | ❌ | ✅ |
 
 Двом останнім доступне рівно одне: відкрити файл напряму і читати його. Тому для них потрібен інший підхід.
 
@@ -230,6 +239,7 @@ patchLayeredFs(...);                     // тут шукаються ті п'я
 | **Посібник (`ebird`)** | **5** |
 | **Клавіатура (`swkbd`)** | **4** |
 | **Гра по завантаженню (`dlplay`)** | **3** |
+| **Здоров'я і безпека (`safe`)** | **3** |
 | Mii Maker (`EDIT`) | 2 |
 | **Журнал дій (`PLOG`)** | **2** |
 
@@ -256,6 +266,8 @@ LayeredFS тут не задіяний узагалі: теки `romfs` для �
 ⚠️ **У цього титулу немає м'якої деградації.** У решти будь-яка проблема з файлами означає лише «працює без перекладу», бо оригінал лишається в NAND. Тут `code.ips` назавжди відправляє титул на SD: якщо видалити `dlplay_romfs.bin`, а `code.ips` лишити, Гра по завантаженню не прочитає свої ресурси. Видаляти треба папку цілком.
 
 Образ збирається з повного оригінального дерева — підмінюються тільки файли російського слота, решта мов лишається на місці. Тому спосіб видалення «переключити мову консолі» працює і для нього.
+
+Здоров'я і безпека — той самий випадок: у всьому її коді єдиний виклик fs:USER це `OpenFileDirectly` (обгортка за `0x21A18`), а обидва її romfs-сайти (`0xA800` — з нього будується `rom:`, і `0x11234`) перенаправлені на `safe_romfs.bin`. Стаби лягають у 1388 байт padding'а `.text` за `0x63A94`.
 
 Екранна клавіатура влаштована так само й полагоджена тим самим способом: два її romfs-сайти (`0x14944` — з нього будується `rom:`, і `0xE958`) перенаправлені на `swkbd_romfs.bin`. Третій виклик `OpenFileDirectly` за адресою `0x6F7C0` не чіпається — він відкриває `ARCHIVE_SAVEDATA_AND_CONTENT`, а не romfs.
 
@@ -404,15 +416,18 @@ A folder name is the Title ID (TID) of the system title it overrides. Luma reads
 | `0004003000009802` | HOME Menu | `romfs/` — LayeredFS |
 | `0004001000022000` | System Settings | `romfs/` — LayeredFS |
 | `0004001000022700` | Mii Maker | `romfs/` — LayeredFS |
+| `0004001000022400` | Nintendo 3DS Camera | `romfs/` — LayeredFS |
+| `0004001000022500` | Nintendo 3DS Sound | `romfs/` — LayeredFS |
 | `0004001000022200` | Activity Log | `romfs/` + `code.ips` + `exheader.bin` — LayeredFS plus a code patch |
 | `0004003000009B02` | Instruction Manual | `romfs/` + `code.ips` + `exheader.bin` — LayeredFS plus a code patch |
 | `0004003000009F02` | Friend List | `romfs/` + `code.ips` + `exheader.bin` — LayeredFS plus a code patch |
 | `0004001000022100` | Download Play | `code.ips` + `exheader.bin` + `dlplay_romfs.bin` — no LayeredFS, whole RomFS image off the SD card |
+| `0004001000022300` | Health & Safety Information | `code.ips` + `exheader.bin` + `safe_romfs.bin` — no LayeredFS, whole RomFS image off the SD card |
 | `000400300000D002` | Software Keyboard | `code.ips` + `exheader.bin` + `swkbd_romfs.bin` — no LayeredFS, whole RomFS image off the SD card |
 
-Why the last five carry `code.ips` and `exheader.bin`: see [What is in the release](#what-is-in-the-release). In short, Luma hooks the first three by itself; the rest lack the rights and the code the build supplies.
+Why the last six carry `code.ips` and `exheader.bin`: see [What is in the release](#what-is-in-the-release). In short, Luma hooks the first five by itself; the rest lack the rights and the code the build supplies.
 
-Download Play and the Software Keyboard ship no `romfs` folder on purpose — its mere presence halts those titles on an exception screen.
+Download Play, the Software Keyboard and Health & Safety Information ship no `romfs` folder on purpose — its mere presence halts those titles on an exception screen.
 
 TIDs are region-specific. The release targets **EUR**; on other regions the same folders have different names:
 
@@ -442,7 +457,7 @@ NAND was never touched, so removal cannot break anything.
 | The keyboard shows `i` for `і`, `ε` for `є` | By design — the same substitution as everywhere else in the mod: those letters are not in the system font. The keys sit in their Ukrainian positions (`ы`→`і`, `ъ`→`ї`, `э`→`є`), and `ё` now carries the apostrophe. |
 | `An exception occurred`, `Current process: loader` | Luma could not apply LayeredFS to the title you launched and halted the console. Rename that title's `SD:/luma/titles/<TID>/romfs` to `_romfs` and reboot — the title then starts untranslated. Please open an Issue with a photo of the error screen. |
 | HOME Menu won't boot | Delete `SD:/luma/titles/0004003000009802` and open an Issue with your model, region and system version. |
-| A title crashes after installing | The Activity Log, Instruction Manual, Friend List, Download Play and Software Keyboard translations carry a code patch — for versions **2**, **5**, **6**, **3** and **4** respectively (EUR). Those builds are on every modern firmware. If yours is older, delete that title's folder: `0004001000022200`, `0004003000009B02`, `0004003000009F02`, `0004001000022100`, `000400300000D002`. The rest of the mod keeps working. |
+| A title crashes after installing | The Activity Log, Instruction Manual, Friend List, Download Play, Software Keyboard and Health & Safety translations carry a code patch — for versions **2**, **5**, **6**, **3**, **4** and **3** respectively (EUR). Those builds are on every modern firmware. If yours is older, delete that title's folder: `0004001000022200`, `0004003000009B02`, `0004003000009F02`, `0004001000022100`, `000400300000D002`, `0004001000022300`. The rest of the mod keeps working. |
 | Download Play or the Software Keyboard will not load | Delete `SD:/luma/titles/0004001000022100` or `SD:/luma/titles/000400300000D002` **as a whole**. They read their RomFS off the SD card, so `code.ips` without the matching `*_romfs.bin` breaks them — they cannot be removed piecemeal. |
 | Empty boxes instead of letters | Please report with a photo — that's a bug. |
 
@@ -483,6 +498,9 @@ same entry that switches the keyboard to Cyrillic.
 | HOME Menu | ✅ translated |
 | System Settings | ✅ translated |
 | Mii Maker | ✅ translated |
+| Nintendo 3DS Camera | ✅ translated |
+| Nintendo 3DS Sound | ✅ translated |
+| Health & Safety Information | ✅ translated, by replacing the whole RomFS — needs title version 3 (see below) |
 | Activity Log | ✅ translated, with a code patch — needs title version 2 (see below) |
 | Instruction Manual | ✅ translated, with a code patch — needs title version 5 (see below) |
 | Friend List | ✅ translated, with a code patch — needs title version 6 (see below) |
@@ -524,11 +542,14 @@ The root cause is in the exheader, `accessInfo` at offset 0x248:
 |---|---|---|
 | HOME Menu | `0x0200000000310080` | yes |
 | Mii Maker | `0x0000000000000081` | yes |
+| Nintendo 3DS Camera | `0x00000000000000a1` | yes |
+| Nintendo 3DS Sound | `0x00000000000000a1` | yes |
 | Software Keyboard | `0x0000000000000001` | **no** |
 | Activity Log | `0x0000000000000001` | **no** |
 | Download Play | `0x0000000000000001` | **no** |
 | Instruction Manual | `0x0000000000000001` | **no** |
 | Friend List | `0x0000000000000001` | **no** |
+| Health & Safety Information | `0x0000000000000001` | **no** |
 
 Titles without `DirectSdmc` have no access to the SD card, so Nintendo never linked any
 SD-mounting code into them. The titles that work are the ones that hold that right.
@@ -538,7 +559,7 @@ How far that pruning went shows in the set of IPC commands each title can even i
 | Title | `OpenArchive` | `OpenFile` | `CloseArchive` | `OpenFileDirectly` |
 |---|---|---|---|---|
 | Activity Log, Instruction Manual, Friend List | ✅ | ✅ | ✅ | ✅ |
-| Download Play, Software Keyboard | ❌ | ❌ | ❌ | ✅ |
+| Download Play, Software Keyboard, Health & Safety | ❌ | ❌ | ❌ | ✅ |
 
 The last two can do exactly one thing: open a file directly and read it. They need a
 different approach.
@@ -596,6 +617,7 @@ updated the title:
 | **Instruction Manual (`ebird`)** | **5** |
 | **Software Keyboard (`swkbd`)** | **4** |
 | **Download Play (`dlplay`)** | **3** |
+| **Health & Safety (`safe`)** | **3** |
 | Mii Maker (`EDIT`) | 2 |
 | **Activity Log (`PLOG`)** | **2** |
 

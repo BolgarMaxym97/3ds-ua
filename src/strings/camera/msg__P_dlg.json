@@ -1,0 +1,1910 @@
+{
+  "RecMovie": {
+    "en": "",
+    "ua": ""
+  },
+  "RecMovie_00": {
+    "en": "{t:0.3:ff3200ff}{t:0.2:9600}Recording...{t:0.2:6400}{t:0.3:454039ff}",
+    "ua": "{t:0.3:ff3200ff}{t:0.2:9600}Запис…{t:0.2:6400}{t:0.3:454039ff}"
+  },
+  "RecMovie_01": {
+    "en": "Recording has stopped.\nThe SD Card could not\nbe written to at the\nrequired speed.",
+    "ua": "Запис зупинено.\nНе вдалося писати на\nкарту SD із потрібною\nшвидкістю."
+  },
+  "RecMovie_01_Btn0": {
+    "en": "OK",
+    "ua": "OK"
+  },
+  "RecMovie_02": {
+    "en": "Recording has stopped.\nThere is no more free\nspace on the SD Card.",
+    "ua": "Запис зупинено.\nНа карті SD немає\nвільного місця."
+  },
+  "RecMovie_02_Btn0": {
+    "en": "OK",
+    "ua": "OK"
+  },
+  "RecMovie_04": {
+    "en": "Failed to shoot video.",
+    "ua": "Не вдалося зняти відео."
+  },
+  "RecMovie_04_Btn0": {
+    "en": "OK",
+    "ua": "OK"
+  },
+  "RecMovie_03": {
+    "en": "{t:2.1:000040c0}{t:0.2:8c00} /  / {t:0.2:6400}{t:2.1:000040c0}{t:2.0:0200}: Stop recording",
+    "ua": "{t:2.1:000040c0}{t:0.2:8c00} /  / {t:0.2:6400}{t:2.1:000040c0}{t:2.0:0200}: Зупинити запис"
+  },
+  "RecMovie_05": {
+    "en": "Processing...",
+    "ua": "Обробка…"
+  },
+  "ModeA_Pho": {
+    "en": "",
+    "ua": ""
+  },
+  "ModeA_Pho_Title": {
+    "en": "Camera Mode",
+    "ua": "Режим камери"
+  },
+  "ModeA_Pho_00": {
+    "en": "Normal",
+    "ua": "Звичайне"
+  },
+  "ModeA_Pho_01": {
+    "en": "Merge ",
+    "ua": "Злиття"
+  },
+  "ModeA_Pho_02": {
+    "en": "Sparkle",
+    "ua": "Блиск"
+  },
+  "ModeA_Pho_03": {
+    "en": "Dream",
+    "ua": "Мрія"
+  },
+  "ModeA_Pho_04": {
+    "en": "Pinhole",
+    "ua": "Віньєтка"
+  },
+  "ModeA_Pho_06": {
+    "en": "Mystery",
+    "ua": "Загадка"
+  },
+  "ModeA_Pho_07": {
+    "en": "Low-Light",
+    "ua": "Ніч"
+  },
+  "ModeA_Pho_10": {
+    "en": "Close",
+    "ua": "Закрити"
+  },
+  "ModeA_Pho_11_B": {
+    "en": "{t:1.0:5000}Manual Controls{t:1.0:6400}",
+    "ua": "{t:1.0:5000}Ручні налаштування{t:1.0:6400}"
+  },
+  "ModeA_Pho_11_W": {
+    "en": "{t:1.0:5000}Manual Controls{t:1.0:6400}",
+    "ua": "{t:1.0:5000}Ручні налаштування{t:1.0:6400}"
+  },
+  "ModeA_Mov": {
+    "en": "",
+    "ua": ""
+  },
+  "ModeA_Mov_Title": {
+    "en": "Camera Mode",
+    "ua": "Режим камери"
+  },
+  "ModeA_Mov_00": {
+    "en": "Normal",
+    "ua": "Звичайне"
+  },
+  "ModeA_Mov_01": {
+    "en": "Low-Light",
+    "ua": "Ніч"
+  },
+  "ModeM_Pho": {
+    "en": "",
+    "ua": ""
+  },
+  "ModeM_Pho_Title": {
+    "en": "Manual Controls",
+    "ua": "Ручні налаштування"
+  },
+  "ModeM_Pho_00": {
+    "en": "Film",
+    "ua": "Плівка"
+  },
+  "ModeM_Pho_00_00": {
+    "en": "Normal",
+    "ua": "Норма"
+  },
+  "ModeM_Pho_00_01": {
+    "en": "B/W",
+    "ua": "Ч/Б"
+  },
+  "ModeM_Pho_00_02": {
+    "en": "Sepia",
+    "ua": "Сепія"
+  },
+  "ModeM_Pho_00_03": {
+    "en": "Negative",
+    "ua": "Негатив"
+  },
+  "ModeM_Pho_00_04": {
+    "en": "Solarise",
+    "ua": "Соляризація"
+  },
+  "ModeM_Pho_01": {
+    "en": "Sharpness",
+    "ua": "Різкість"
+  },
+  "ModeM_Pho_01_01": {
+    "en": "Intensity",
+    "ua": "Сила"
+  },
+  "ModeM_Pho_02": {
+    "en": "Contrast",
+    "ua": "Контраст"
+  },
+  "ModeM_Pho_03": {
+    "en": "Brightness",
+    "ua": "Яскравість"
+  },
+  "ModeM_Pho_04": {
+    "en": "Reset",
+    "ua": "Скинути"
+  },
+  "ModeM_Pho_05": {
+    "en": "Close",
+    "ua": "Закрити"
+  },
+  "ModeM_Mov": {
+    "en": "",
+    "ua": ""
+  },
+  "ModeM_Mov_Title": {
+    "en": "Manual Controls",
+    "ua": "Ручні налаштування"
+  },
+  "ModeM_Mov_00": {
+    "en": "Film",
+    "ua": "Плівка"
+  },
+  "ModeM_Mov_00_00": {
+    "en": "Normal",
+    "ua": "Норма"
+  },
+  "ModeM_Mov_00_01": {
+    "en": "B/W",
+    "ua": "Ч/Б"
+  },
+  "ModeM_Mov_00_02": {
+    "en": "Sepia",
+    "ua": "Сепія"
+  },
+  "ModeM_Mov_00_03": {
+    "en": "Negative",
+    "ua": "Негатив"
+  },
+  "ModeM_Mov_00_04": {
+    "en": "Solarise",
+    "ua": "Соляризація"
+  },
+  "ModeM_Mov_01": {
+    "en": "Sharpness",
+    "ua": "Різкість"
+  },
+  "ModeM_Mov_01_01": {
+    "en": "Intensity",
+    "ua": "Сила"
+  },
+  "ModeM_Mov_02": {
+    "en": "Contrast",
+    "ua": "Контраст"
+  },
+  "ModeM_Mov_03": {
+    "en": "Brightness",
+    "ua": "Яскравість"
+  },
+  "ModeM_Mov_04": {
+    "en": "Reset",
+    "ua": "Скинути"
+  },
+  "ModeM_Mov_05": {
+    "en": "Close",
+    "ua": "Закрити"
+  },
+  "TimS": {
+    "en": "",
+    "ua": ""
+  },
+  "TimS_Title_00": {
+    "en": "Self-timer",
+    "ua": "Таймер"
+  },
+  "TimS_Title_01": {
+    "en": "3-second delay",
+    "ua": "Затримка 3 секунди"
+  },
+  "TimS_Title_02": {
+    "en": "10-second delay",
+    "ua": "Затримка 10 секунд"
+  },
+  "TimS_Title_03": {
+    "en": "Voice-activated",
+    "ua": "Голосом"
+  },
+  "TimS_00": {
+    "en": "3 sec.",
+    "ua": "3 сек."
+  },
+  "TimS_01": {
+    "en": "{t:1.0:5a00}10 sec.{t:1.0:6400}",
+    "ua": "{t:1.0:5a00}10 сек.{t:1.0:6400}"
+  },
+  "TimS_02": {
+    "en": "Voice",
+    "ua": "Голос"
+  },
+  "TimS_03": {
+    "en": "Close",
+    "ua": "Закрити"
+  },
+  "TimS_04": {
+    "en": "Start Timer",
+    "ua": "Запустити таймер"
+  },
+  "TimS_05": {
+    "en": "Back",
+    "ua": "Назад"
+  },
+  "TimS_07": {
+    "en": "{t:1.0:5a00}Take Another Photo{t:1.0:6400}",
+    "ua": "{t:1.0:5a00}Зняти ще одне фото{t:1.0:6400}"
+  },
+  "TimS_09_B": {
+    "en": "{t:1.0:5a00}To take a photo, say{t:1.0:6400}\n{t:2.1:00005041}{t:0.3:ff3200ff}{t:0.2:9600}\"OK!\"{t:0.2:6400}{t:0.3:454039ff}",
+    "ua": "{t:1.0:5a00}Для знімка скажіть{t:1.0:6400}\n{t:2.1:00005041}{t:0.3:ff3200ff}{t:0.2:9600}\"OK!\"{t:0.2:6400}{t:0.3:454039ff}"
+  },
+  "TimS_09_W": {
+    "en": "{t:1.0:5a00}To take a photo, say{t:1.0:6400}\n{t:2.1:00005041}{t:0.2:9600}\"OK!\"{t:0.2:6400}",
+    "ua": "{t:1.0:5a00}Для знімка скажіть{t:1.0:6400}\n{t:2.1:00005041}{t:0.2:9600}\"OK!\"{t:0.2:6400}"
+  },
+  "Sfx": {
+    "en": "",
+    "ua": ""
+  },
+  "Sfx_Title": {
+    "en": "Trick Shot Modes",
+    "ua": "Особливі режими"
+  },
+  "Sfx_00": {
+    "en": "Interval\nShot",
+    "ua": "Зйомка за\nчасом"
+  },
+  "Sfx_01": {
+    "en": "Frame\nPick",
+    "ua": "Вибір\nкадру"
+  },
+  "Sfx_02": {
+    "en": "Clip\nLink",
+    "ua": "Зв'язка\nкліпів"
+  },
+  "Sfx_03": {
+    "en": "Close",
+    "ua": "Закрити"
+  },
+  "Sfx_04": {
+    "en": "Shoot new video",
+    "ua": "Зняти нове відео"
+  },
+  "Sfx_05": {
+    "en": "Back",
+    "ua": "Назад"
+  },
+  "Sfx_Int_Title": {
+    "en": "Interval Shot",
+    "ua": "Зйомка з інтервалом"
+  },
+  "Sfx_Int_00": {
+    "en": "Interval",
+    "ua": "Інтервал"
+  },
+  "Sfx_Int_00_00": {
+    "en": "0.5 sec.",
+    "ua": "0,5 сек."
+  },
+  "Sfx_Int_00_01": {
+    "en": "2 sec.",
+    "ua": "2 сек."
+  },
+  "Sfx_Int_00_02": {
+    "en": "5 sec.",
+    "ua": "5 сек."
+  },
+  "Sfx_Int_00_03": {
+    "en": "15 sec.",
+    "ua": "15 сек."
+  },
+  "Sfx_Int_00_04": {
+    "en": "60 sec.",
+    "ua": "60 сек."
+  },
+  "Sfx_Int_01": {
+    "en": "Touch to Start",
+    "ua": "Торкніться, щоб почати"
+  },
+  "Sfx_Int_02": {
+    "en": "Back",
+    "ua": "Назад"
+  },
+  "Sfx_Int_03": {
+    "en": "Finish",
+    "ua": "Готово"
+  },
+  "Sfx_Int_04": {
+    "en": "{t:3.39:0000} sec. Interval Shot",
+    "ua": "Інтервал {t:3.39:0000} сек."
+  },
+  "Sfx_Int_07": {
+    "en": "0.5 sec. Interval Shot",
+    "ua": "Інтервал 0,5 сек."
+  },
+  "Sfx_Int_05": {
+    "en": "Time until next frame:",
+    "ua": "До наступного кадру:"
+  },
+  "Sfx_Int_06": {
+    "en": "{t:3.41:0000} sec.",
+    "ua": "{t:3.41:0000} сек."
+  },
+  "Sfx_Int_08": {
+    "en": "{t:0.3:ff3200ff}Shooting in progress...{t:0.3:454039ff}",
+    "ua": "{t:0.3:ff3200ff}Триває зйомка…{t:0.3:454039ff}"
+  },
+  "Sfx_Stp_Title": {
+    "en": "Frame Pick",
+    "ua": "Вибір кадру"
+  },
+  "Sfx_Stp_00": {
+    "en": "",
+    "ua": ""
+  },
+  "Sfx_Stp_01": {
+    "en": "",
+    "ua": ""
+  },
+  "Sfx_Stp_02": {
+    "en": "Back",
+    "ua": "Назад"
+  },
+  "Sfx_Stp_03": {
+    "en": "",
+    "ua": ""
+  },
+  "Sfx_Stp_04": {
+    "en": "",
+    "ua": ""
+  },
+  "Sfx_Stp_05": {
+    "en": "Shoot",
+    "ua": "Зйомка"
+  },
+  "Sfx_Stp_06": {
+    "en": "Finish",
+    "ua": "Готово"
+  },
+  "Sfx_Mclp_Title": {
+    "en": "Clip Link",
+    "ua": "Зв'язка кліпів"
+  },
+  "Sfx_Mclp_00": {
+    "en": "",
+    "ua": ""
+  },
+  "Sfx_Mclp_00_00": {
+    "en": "{t:2.1:000040c0}{t:0.2:8c00} /  / {t:0.2:6400}{t:2.1:000040c0}{t:2.0:0200}: Start recording",
+    "ua": "{t:2.1:000040c0}{t:0.2:8c00} /  / {t:0.2:6400}{t:2.1:000040c0}{t:2.0:0200}: Почати запис"
+  },
+  "Sfx_Mclp_00_01": {
+    "en": "{t:2.1:000040c0}{t:0.2:8c00} /  / {t:0.2:6400}{t:2.1:000040c0}{t:2.0:0200}: Pause recording",
+    "ua": "{t:2.1:000040c0}{t:0.2:8c00} /  / {t:0.2:6400}{t:2.1:000040c0}{t:2.0:0200}: Призупинити запис"
+  },
+  "Sfx_Mclp_00_02": {
+    "en": "{t:2.1:000040c0}{t:0.2:8c00} /  / {t:0.2:6400}{t:2.1:000040c0}{t:2.0:0200}: Resume recording",
+    "ua": "{t:2.1:000040c0}{t:0.2:8c00} /  / {t:0.2:6400}{t:2.1:000040c0}{t:2.0:0200}: Продовжити запис"
+  },
+  "Sfx_Mclp_01": {
+    "en": "",
+    "ua": ""
+  },
+  "Sfx_Mclp_01_00": {
+    "en": "{t:0.2:7800}{t:0.3:ff3200ff}Recording...{t:0.3:454039ff}{t:0.2:6400}",
+    "ua": "{t:0.2:7800}{t:0.3:ff3200ff}Запис…{t:0.3:454039ff}{t:0.2:6400}"
+  },
+  "Sfx_Mclp_01_01": {
+    "en": "Recording paused",
+    "ua": "Запис призупинено"
+  },
+  "Sfx_Mclp_01_02": {
+    "en": "",
+    "ua": ""
+  },
+  "Sfx_Mclp_02": {
+    "en": "Back",
+    "ua": "Назад"
+  },
+  "Sfx_Mclp_03": {
+    "en": "Finish",
+    "ua": "Готово"
+  },
+  "Copy_NS_Pho": {
+    "en": "",
+    "ua": ""
+  },
+  "Copy_NS_Pho_00": {
+    "en": "Copy this photo from\nthe System Memory\nto the SD Card?",
+    "ua": "Скопіювати це фото\nз пам'яті системи\nна карту SD?"
+  },
+  "Copy_NS_Pho_00_Btn0": {
+    "en": "Copy",
+    "ua": "Копіювати"
+  },
+  "Copy_NS_Pho_00_Btn1": {
+    "en": "Cancel",
+    "ua": "Скасувати"
+  },
+  "Copy_SN_Pho": {
+    "en": "",
+    "ua": ""
+  },
+  "Copy_SN_Pho_00": {
+    "en": "Copy this photo from\nthe SD Card to the\nSystem Memory?",
+    "ua": "Скопіювати це фото\nз карти SD у\nпам'ять системи?"
+  },
+  "Copy_SN_Pho_00_Btn0": {
+    "en": "Copy",
+    "ua": "Копіювати"
+  },
+  "Copy_SN_Pho_00_Btn1": {
+    "en": "Cancel",
+    "ua": "Скасувати"
+  },
+  "Copy_SN_Pho_02": {
+    "en": "The System Memory's\nphoto limit has been\nreached. The photo\ncould not be copied.",
+    "ua": "У пам'яті системи\nдосягнуто ліміту фото.\nСкопіювати фото\nне вдалося."
+  },
+  "Copy_SN_Pho_02_Btn0": {
+    "en": "OK",
+    "ua": "OK"
+  },
+  "Copy_SN_Pho_03": {
+    "en": "This photo is not\ncompatible with\nNintendo DSi\nsoftware titles.",
+    "ua": "Це фото несумісне\nз програмами для\nNintendo DSi."
+  },
+  "Copy_SN_Pho_03_Btn0": {
+    "en": "OK",
+    "ua": "OK"
+  },
+  "Delete_Pho": {
+    "en": "",
+    "ua": ""
+  },
+  "Delete_Pho_00": {
+    "en": "Delete this photo?",
+    "ua": "Видалити це фото?"
+  },
+  "Delete_Pho_00_Btn0": {
+    "en": "Delete",
+    "ua": "Стерти"
+  },
+  "Delete_Pho_00_Btn1": {
+    "en": "Cancel",
+    "ua": "Скасувати"
+  },
+  "Delete_Mov": {
+    "en": "",
+    "ua": ""
+  },
+  "Delete_Mov_00": {
+    "en": "Delete this video?",
+    "ua": "Видалити це відео?"
+  },
+  "Delete_Mov_00_Btn0": {
+    "en": "Delete",
+    "ua": "Стерти"
+  },
+  "Delete_Mov_00_Btn1": {
+    "en": "Cancel",
+    "ua": "Скасувати"
+  },
+  "Paint": {
+    "en": "",
+    "ua": ""
+  },
+  "Paint_Title_01": {
+    "en": "Pencils",
+    "ua": "Олівці"
+  },
+  "Paint_01_00": {
+    "en": "Close",
+    "ua": "Закрити"
+  },
+  "Paint_Title_02": {
+    "en": "Erasers",
+    "ua": "Гумки"
+  },
+  "Paint_02_00": {
+    "en": "Close",
+    "ua": "Закрити"
+  },
+  "Paint_02_01": {
+    "en": "Clear All",
+    "ua": "Стерти все"
+  },
+  "Paint_Title_03": {
+    "en": "Stamps",
+    "ua": "Штампи"
+  },
+  "Paint_03_00": {
+    "en": "Close",
+    "ua": "Закрити"
+  },
+  "Paint_Title_04": {
+    "en": "3D Tools",
+    "ua": "3D-інструменти"
+  },
+  "Paint_04_00": {
+    "en": "Close",
+    "ua": "Закрити"
+  },
+  "Paint_Quit": {
+    "en": "",
+    "ua": ""
+  },
+  "Paint_Quit_00": {
+    "en": "If you cancel, your graffiti\nwill not be saved.\n\nIs this OK?",
+    "ua": "Якщо скасувати, малюнок\nне буде збережено.\n\nПродовжити?"
+  },
+  "Paint_Quit_00_Btn0": {
+    "en": "No",
+    "ua": "Ні"
+  },
+  "Paint_Quit_00_Btn1": {
+    "en": "Yes",
+    "ua": "Так"
+  },
+  "Paint_Comp": {
+    "en": "",
+    "ua": ""
+  },
+  "Paint_Comp_00": {
+    "en": "A copy of this photo\nwill be saved with\nyour graffiti on it.\n\nIs this OK?",
+    "ua": "Копію цього фото\nбуде збережено\nразом із малюнком.\n\nПродовжити?"
+  },
+  "Paint_Comp_00_Btn0": {
+    "en": "No",
+    "ua": "Ні"
+  },
+  "Paint_Comp_00_Btn1": {
+    "en": "Yes",
+    "ua": "Так"
+  },
+  "PlayVideo": {
+    "en": "",
+    "ua": ""
+  },
+  "PlayVideo_Error": {
+    "en": "Could not play video.",
+    "ua": "Не вдалося відтворити відео."
+  },
+  "PlayVideo_Error_Btn0": {
+    "en": "OK",
+    "ua": "OK"
+  },
+  "FrameSave": {
+    "en": "",
+    "ua": ""
+  },
+  "FrameSave_00": {
+    "en": "Save a copy of the current\nframe to your photos?",
+    "ua": "Зберегти копію цього\nкадру до ваших фото?"
+  },
+  "FrameSave_00_Btn0": {
+    "en": "No",
+    "ua": "Ні"
+  },
+  "FrameSave_00_Btn1": {
+    "en": "Yes",
+    "ua": "Так"
+  },
+  "FrameSave_01": {
+    "en": "Saving a copy of the frame\nto your photos...",
+    "ua": "Збереження копії кадру\nдо ваших фото…"
+  },
+  "FrameSave_02": {
+    "en": "The System Memory's\nphoto limit has been\nreached. Cannot save\nframe.",
+    "ua": "У пам'яті системи\nдосягнуто ліміту фото.\nЗберегти кадр\nне вдалося."
+  },
+  "FrameSave_02_Btn0": {
+    "en": "OK",
+    "ua": "OK"
+  },
+  "FrameSave_03": {
+    "en": "The System Memory's\nphoto limit has been\nreached. Cannot save\nframe. Would you like to\nset the SD Card as the\nphoto save location?",
+    "ua": "У пам'яті системи\nдосягнуто ліміту фото.\nЗберегти кадр не вдалося.\nЗробити карту SD місцем\nзбереження фото?"
+  },
+  "FrameSave_03_Btn0": {
+    "en": "No",
+    "ua": "Ні"
+  },
+  "FrameSave_03_Btn1": {
+    "en": "Yes",
+    "ua": "Так"
+  },
+  "FrameSave_04": {
+    "en": "The SD Card's\nphoto/video limit\nhas been reached.\nCannot save frame.",
+    "ua": "На карті SD досягнуто\nліміту фото й відео.\nЗберегти кадр\nне вдалося."
+  },
+  "FrameSave_04_Btn0": {
+    "en": "OK",
+    "ua": "OK"
+  },
+  "FrameSave_05": {
+    "en": "{t:1.0:6300}The SD Card's photo/video\nlimit has been reached.\nCannot save frame.\nWould you like to change\nthe photo save location\nto the System Memory?{t:1.0:6400}",
+    "ua": "{t:1.0:6300}На карті SD досягнуто\nліміту фото й відео.\nЗберегти кадр не вдалося.\nЗмінити місце збереження\nфото на пам'ять системи?{t:1.0:6400}"
+  },
+  "FrameSave_05_Btn0": {
+    "en": "No",
+    "ua": "Ні"
+  },
+  "FrameSave_05_Btn1": {
+    "en": "Yes",
+    "ua": "Так"
+  },
+  "FrameSave_06": {
+    "en": "The SD Card does not\nhave enough free space.\nCannot save frame.",
+    "ua": "На карті SD не вистачає\nвільного місця. Зберегти\nкадр не вдалося."
+  },
+  "FrameSave_06_Btn0": {
+    "en": "OK",
+    "ua": "OK"
+  },
+  "FrameSave_07": {
+    "en": "The SD Card does not\nhave enough free space.\nCannot save frame. Would\nyou like to change the\nphoto save location to\nthe System Memory?",
+    "ua": "На карті SD не вистачає\nвільного місця. Зберегти\nкадр не вдалося. Змінити\nмісце збереження фото\nна пам'ять системи?"
+  },
+  "FrameSave_07_Btn0": {
+    "en": "No",
+    "ua": "Ні"
+  },
+  "FrameSave_07_Btn1": {
+    "en": "Yes",
+    "ua": "Так"
+  },
+  "Set_Storage": {
+    "en": "",
+    "ua": ""
+  },
+  "Set_Storage_Title": {
+    "en": "Photo Save Location",
+    "ua": "Місце збереження фото"
+  },
+  "Set_Storage_00_B": {
+    "en": "System",
+    "ua": "Система"
+  },
+  "Set_Storage_00_W": {
+    "en": "System",
+    "ua": "Система"
+  },
+  "Set_Storage_01_B": {
+    "en": "SD Card",
+    "ua": "Карта SD"
+  },
+  "Set_Storage_01_W": {
+    "en": "SD Card",
+    "ua": "Карта SD"
+  },
+  "Set_Storage_02": {
+    "en": "Photos remaining: {t:5.0:00007041}{t:3.45:0000}",
+    "ua": "Лишилося фото: {t:5.0:00007041}{t:3.45:0000}"
+  },
+  "Set_Storage_03": {
+    "en": "Confirm",
+    "ua": "Підтвердити"
+  },
+  "Set_Shutter": {
+    "en": "",
+    "ua": ""
+  },
+  "Set_Shutter_Title": {
+    "en": "Attention Sound",
+    "ua": "Звук уваги"
+  },
+  "Set_Shutter_00_B": {
+    "en": "None",
+    "ua": "Немає"
+  },
+  "Set_Shutter_00_W": {
+    "en": "None",
+    "ua": "Немає"
+  },
+  "Set_Shutter_01_B": {
+    "en": "???",
+    "ua": ""
+  },
+  "Set_Shutter_01_W": {
+    "en": "???",
+    "ua": ""
+  },
+  "Set_Shutter_02_B": {
+    "en": "Meow",
+    "ua": "Няв"
+  },
+  "Set_Shutter_02_W": {
+    "en": "Meow",
+    "ua": "Няв"
+  },
+  "Set_Shutter_03_B": {
+    "en": "Bark",
+    "ua": "Гавкіт"
+  },
+  "Set_Shutter_03_W": {
+    "en": "Bark",
+    "ua": "Гавкіт"
+  },
+  "Set_Shutter_04": {
+    "en": "Confirm",
+    "ua": "Підтвердити"
+  },
+  "Set_Info": {
+    "en": "",
+    "ua": ""
+  },
+  "Set_Info_Title": {
+    "en": "Info Display",
+    "ua": "Показ даних"
+  },
+  "Set_Info_00_B": {
+    "en": "On",
+    "ua": "Увімк."
+  },
+  "Set_Info_00_W": {
+    "en": "On",
+    "ua": "Увімк."
+  },
+  "Set_Info_01_B": {
+    "en": "Off",
+    "ua": "Вимк."
+  },
+  "Set_Info_01_W": {
+    "en": "Off",
+    "ua": "Вимк."
+  },
+  "Set_Info_02_00": {
+    "en": "Show information\nicons on 3D Screen.",
+    "ua": "Показувати значки\nна 3D-екрані."
+  },
+  "Set_Info_02_01": {
+    "en": "Hide information\nicons on 3D Screen.",
+    "ua": "Ховати значки\nна 3D-екрані."
+  },
+  "Set_Info_03": {
+    "en": "Confirm",
+    "ua": "Підтвердити"
+  },
+  "Data": {
+    "en": "",
+    "ua": ""
+  },
+  "Data_NoSd_00": {
+    "en": "Could not access SD Card.",
+    "ua": "Немає доступу до\nкарти SD."
+  },
+  "Data_NoSd_00_Btn0": {
+    "en": "OK",
+    "ua": "OK"
+  },
+  "Data_NoData_00": {
+    "en": "There are no photos.",
+    "ua": "Фотографій немає."
+  },
+  "Data_NoData_00_Btn0": {
+    "en": "OK",
+    "ua": "OK"
+  },
+  "Data_NoData_01": {
+    "en": "There are no saved\nphotos or videos.",
+    "ua": "Немає збережених\nфото чи відео."
+  },
+  "Data_NoData_01_Btn0": {
+    "en": "OK",
+    "ua": "OK"
+  },
+  "Data_ProhibitedSd_00": {
+    "en": "{t:1.0:5a00}Write-protection is enabled\non the SD Card. Please turn\noff the power and move the\nwrite-protection switch on the\nSD Card to the off position.{t:1.0:6400}",
+    "ua": "{t:1.0:5a00}На карті SD увімкнено\nзахист від запису.\nВимкніть живлення й\nпереведіть перемикач\nзахисту на карті SD\nу положення «вимк.».{t:1.0:6400}"
+  },
+  "Data_ProhibitedSd_00_Btn0": {
+    "en": "OK",
+    "ua": "OK"
+  },
+  "Data_ReadOnlySd_00": {
+    "en": "The process cannot\nbe carried out because\nthe management file on\nthe SD Card has been\nset to read-only.",
+    "ua": "Дію неможливо\nвиконати, бо службовий\nфайл на карті SD\nдоступний лише\nдля читання."
+  },
+  "Data_ReadOnlySd_00_Btn0": {
+    "en": "OK",
+    "ua": "OK"
+  },
+  "Data_Copy": {
+    "en": "",
+    "ua": ""
+  },
+  "Data_Copy_00_00": {
+    "en": "All photos will\nbe copied.\n\nIs this OK?",
+    "ua": "Усі фото буде\nскопійовано.\n\nПродовжити?"
+  },
+  "Data_Copy_00_01": {
+    "en": "All photos will\nbe copied.\nIs this OK?\n\nThis may take\nup to 30 seconds.",
+    "ua": "Усі фото буде\nскопійовано.\nПродовжити?\n\nЦе може тривати\nдо 30 секунд."
+  },
+  "Data_Copy_00_02": {
+    "en": "All photos will\nbe copied.\nIs this OK?\n\nThis may take\nseveral minutes.",
+    "ua": "Усі фото буде\nскопійовано.\nПродовжити?\n\nЦе може тривати\nкілька хвилин."
+  },
+  "Data_Copy_00_03": {
+    "en": "All photos will\nbe copied.\nIs this OK?\n\nThis may take three\nor more minutes.",
+    "ua": "Усі фото буде\nскопійовано.\nПродовжити?\n\nЦе може тривати\nтри хвилини й довше."
+  },
+  "Data_Copy_00_Btn0": {
+    "en": "No",
+    "ua": "Ні"
+  },
+  "Data_Copy_00_Btn1": {
+    "en": "Yes",
+    "ua": "Так"
+  },
+  "Data_Copy_01_00": {
+    "en": "Some photos may\nnot be copied.\nIs this OK?",
+    "ua": "Деякі фото може\nбути не скопійовано.\nПродовжити?"
+  },
+  "Data_Copy_01_01": {
+    "en": "Some photos may\nnot be copied.\nIs this OK?\n\nThis may take\nup to 30 seconds.",
+    "ua": "Деякі фото може\nбути не скопійовано.\nПродовжити?\n\nЦе може тривати\nдо 30 секунд."
+  },
+  "Data_Copy_01_02": {
+    "en": "Some photos may\nnot be copied.\nIs this OK?\n\nThis may take\nseveral minutes.",
+    "ua": "Деякі фото може\nбути не скопійовано.\nПродовжити?\n\nЦе може тривати\nкілька хвилин."
+  },
+  "Data_Copy_01_03": {
+    "en": "Some photos may\nnot be copied.\nIs this OK?\n\nThis may take three\nor more minutes.",
+    "ua": "Деякі фото може\nбути не скопійовано.\nПродовжити?\n\nЦе може тривати\nтри хвилини й довше."
+  },
+  "Data_Copy_01_Btn0": {
+    "en": "No",
+    "ua": "Ні"
+  },
+  "Data_Copy_01_Btn1": {
+    "en": "Yes",
+    "ua": "Так"
+  },
+  "Data_Copy_02": {
+    "en": "Videos saved on an\nSD Card cannot be copied\nto the System Memory.",
+    "ua": "Відео з карти SD\nне можна копіювати\nв пам'ять системи."
+  },
+  "Data_Copy_02_Btn0": {
+    "en": "OK",
+    "ua": "OK"
+  },
+  "Data_CopyingSd": {
+    "en": "Copying to the SD Card...\nPlease do not remove\nthe SD Card.",
+    "ua": "Копіювання на карту SD…\nНе виймайте карту SD."
+  },
+  "Data_CopyingSd_Btn0": {
+    "en": "Cancel",
+    "ua": "Скасувати"
+  },
+  "Data_CopyingNand": {
+    "en": "Copying to the System\nMemory... Please do not\nremove the SD Card.",
+    "ua": "Копіювання в пам'ять\nсистеми… Не виймайте\nкарту SD."
+  },
+  "Data_CopyingNand_Btn0": {
+    "en": "Cancel",
+    "ua": "Скасувати"
+  },
+  "Data_Copy_Quit_00": {
+    "en": "Copying stopped.\n\nCancel copying?",
+    "ua": "Копіювання зупинено.\n\nСкасувати копіювання?"
+  },
+  "Data_Copy_Quit_00_Btn0": {
+    "en": "No",
+    "ua": "Ні"
+  },
+  "Data_Copy_Quit_00_Btn1": {
+    "en": "Yes",
+    "ua": "Так"
+  },
+  "Data_Copy_Quit_01": {
+    "en": "Copying cancelled.",
+    "ua": "Копіювання скасовано."
+  },
+  "Data_Copy_Quit_01_Btn0": {
+    "en": "OK",
+    "ua": "OK"
+  },
+  "Data_Copy_Finish": {
+    "en": "Copy complete.",
+    "ua": "Копіювання завершено."
+  },
+  "Data_Copy_Finish_Btn0": {
+    "en": "OK",
+    "ua": "OK"
+  },
+  "Data_Copy_Failure_00": {
+    "en": "Copy failed.",
+    "ua": "Копіювання не вдалося."
+  },
+  "Data_Copy_Failure_00_Btn0": {
+    "en": "OK",
+    "ua": "OK"
+  },
+  "Data_Copy_Failure_01": {
+    "en": "Copy complete.\n\nSome data could\nnot be copied.",
+    "ua": "Копіювання завершено.\n\nДеякі дані скопіювати\nне вдалося."
+  },
+  "Data_Copy_Failure_01_Btn0": {
+    "en": "OK",
+    "ua": "OK"
+  },
+  "Data_Copy_Failure_02": {
+    "en": "There is not enough\nfree space in the\nSystem Memory.\n\nUnable to copy.",
+    "ua": "У пам'яті системи\nнедостатньо\nвільного місця.\n\nКопіювання неможливе."
+  },
+  "Data_Copy_Failure_02_Btn0": {
+    "en": "OK",
+    "ua": "OK"
+  },
+  "Data_Copy_Failure_03": {
+    "en": "There is not enough\nfree space on\nthe SD Card.\n\nUnable to copy.",
+    "ua": "На карті SD\nнедостатньо\nвільного місця.\n\nКопіювання неможливе."
+  },
+  "Data_Copy_Failure_03_Btn0": {
+    "en": "OK",
+    "ua": "OK"
+  },
+  "Data_Copy_Failure_04": {
+    "en": "Unable to save. The\nmaximum number of\nfolders for saving\nphotos on the SD Card\nhas been reached.",
+    "ua": "Зберегти не вдалося.\nНа карті SD досягнуто\nмежі кількості папок\nдля збереження фото."
+  },
+  "Data_Copy_Failure_04_Btn0": {
+    "en": "OK",
+    "ua": "OK"
+  },
+  "Data_Delete": {
+    "en": "",
+    "ua": ""
+  },
+  "Data_DeleteNand_00": {
+    "en": "All photos saved to the\nSystem Memory will be\ndeleted. You will not be\nable to recover them.\nAre you sure you\nwant to proceed?",
+    "ua": "Усі фото, збережені в\nпам'яті системи, буде\nвидалено. Відновити їх\nне вдасться.\nСправді продовжити?"
+  },
+  "Data_DeleteNand_00_Btn0": {
+    "en": "Cancel",
+    "ua": "Скасувати"
+  },
+  "Data_DeleteNand_00_Btn1": {
+    "en": "Delete",
+    "ua": "Стерти"
+  },
+  "Data_DeleteSd_00": {
+    "en": "All photos and videos\nsaved to the SD Card,\nincluding those taken with\nother devices, will be\ndeleted. You will not be\nable to recover them.",
+    "ua": "Усі фото й відео на\nкарті SD, зокрема зняті\nіншими пристроями, буде\nвидалено. Відновити їх\nне вдасться."
+  },
+  "Data_DeleteSd_00_Btn0": {
+    "en": "Cancel",
+    "ua": "Скасувати"
+  },
+  "Data_DeleteSd_00_Btn1": {
+    "en": "Delete",
+    "ua": "Стерти"
+  },
+  "Data_Delete_00_00": {
+    "en": "Are you really sure\nyou want to delete\nthese items?",
+    "ua": "Ви справді хочете\nвидалити ці\nелементи?"
+  },
+  "Data_Delete_00_01": {
+    "en": "Are you sure you want\nto delete these items?\nThis may take up\nto 30 seconds.",
+    "ua": "Справді видалити\nці елементи?\nЦе може тривати\nдо 30 секунд."
+  },
+  "Data_Delete_00_02": {
+    "en": "Are you sure you want\nto delete these items?\nThis may take\nseveral minutes.",
+    "ua": "Справді видалити\nці елементи?\nЦе може тривати\nкілька хвилин."
+  },
+  "Data_Delete_00_03": {
+    "en": "Are you sure you want\nto delete these items?\nThis may take three\nminutes or longer.",
+    "ua": "Справді видалити\nці елементи?\nЦе може тривати\nтри хвилини й довше."
+  },
+  "Data_Delete00_Btn0": {
+    "en": "Delete",
+    "ua": "Стерти"
+  },
+  "Data_Delete_00_Btn1": {
+    "en": "Cancel",
+    "ua": "Скасувати"
+  },
+  "Data_Deleting": {
+    "en": "Deleting...\n\nPlease wait.",
+    "ua": "Видалення…\n\nЗачекайте."
+  },
+  "Data_Deleting_Btn0": {
+    "en": "Cancel",
+    "ua": "Скасувати"
+  },
+  "Data_Delete_Quit_00": {
+    "en": "Deletion interrupted.\n\nStop deleting items?",
+    "ua": "Видалення перервано.\n\nПрипинити видалення?"
+  },
+  "Data_Delete_Quit_00_Btn0": {
+    "en": "No",
+    "ua": "Ні"
+  },
+  "Data_Delete_Quit_00_Btn1": {
+    "en": "Yes",
+    "ua": "Так"
+  },
+  "Data_Delete_Quit_01": {
+    "en": "Deletion stopped.",
+    "ua": "Видалення зупинено."
+  },
+  "Data_Delete_Quit_01_Btn0": {
+    "en": "OK",
+    "ua": "OK"
+  },
+  "Data_Delete_Finish": {
+    "en": "Deleted.",
+    "ua": "Видалено."
+  },
+  "Data_Delete_Finish_Btn0": {
+    "en": "OK",
+    "ua": "OK"
+  },
+  "Data_Delete_Failure_00": {
+    "en": "Could not delete.",
+    "ua": "Видалити не вдалося."
+  },
+  "Data_Delete_Failure_00_Btn0": {
+    "en": "OK",
+    "ua": "OK"
+  },
+  "Data_Delete_Failure_01": {
+    "en": "Some data could\nnot be deleted.",
+    "ua": "Деякі дані видалити\nне вдалося."
+  },
+  "Data_Delete_Failure_01_Btn0": {
+    "en": "OK",
+    "ua": "OK"
+  },
+  "Data_DeleteSavedata": {
+    "en": "",
+    "ua": ""
+  },
+  "Data_DeleteSavedata_02": {
+    "en": "Reset all user data?\n\n(Photos and videos will\nnot be deleted.)",
+    "ua": "Скинути всі дані\nкористувача?\n\n(Фото й відео\nне буде видалено.)"
+  },
+  "Data_DeleteSavedata_02_Btn0": {
+    "en": "No",
+    "ua": "Ні"
+  },
+  "Data_DeleteSavedata_02_Btn1": {
+    "en": "Yes",
+    "ua": "Так"
+  },
+  "Data_DeleteSavedata_00": {
+    "en": "Settings and other data\nwill be reset. This cannot\nbe undone. Are you sure\nyou want to continue?",
+    "ua": "Налаштування та інші\nдані буде скинуто.\nСкасувати це не вдасться.\nСправді продовжити?"
+  },
+  "Data_DeleteSavedata_00_Btn0": {
+    "en": "Cancel",
+    "ua": "Скасувати"
+  },
+  "Data_DeleteSavedata_00_Btn1": {
+    "en": "Reset",
+    "ua": "Скинути"
+  },
+  "Data_DeleteSavedata_01": {
+    "en": "This is the last time you\nwill be asked to confirm.\nAre you sure you want to\nreset data and settings?",
+    "ua": "Це останнє\nпідтвердження. Справді\nскинути дані\nй налаштування?"
+  },
+  "Data_DeleteSavedata_01_Btn0": {
+    "en": "Reset",
+    "ua": "Скинути"
+  },
+  "Data_DeleteSavedata_01_Btn1": {
+    "en": "Cancel",
+    "ua": "Скасувати"
+  },
+  "Data_DeletingSavedata": {
+    "en": "Resetting...\n\nPlease wait.",
+    "ua": "Скидання…\n\nЗачекайте."
+  },
+  "Data_DeleteSavedata_Finish": {
+    "en": "Settings and data reset.",
+    "ua": "Дані й налаштування\nскинуто."
+  },
+  "Data_DeleteSavedata_Finish_Btn0": {
+    "en": "OK",
+    "ua": "OK"
+  },
+  "Set_Color": {
+    "en": "",
+    "ua": ""
+  },
+  "Set_Color_00": {
+    "en": "Sample",
+    "ua": "Зразок"
+  },
+  "Set_Color_Title": {
+    "en": "Interface Colour",
+    "ua": "Колір інтерфейсу"
+  },
+  "Set_Color_Btn0": {
+    "en": "Cancel",
+    "ua": "Скасувати"
+  },
+  "Set_Color_Btn1": {
+    "en": "OK",
+    "ua": "OK"
+  },
+  "Set_Color_Btn2": {
+    "en": "Reset",
+    "ua": "Скинути"
+  },
+  "SShow": {
+    "en": "",
+    "ua": ""
+  },
+  "SShow_NoData": {
+    "en": "",
+    "ua": ""
+  },
+  "SShow_NoData_Btn0": {
+    "en": "",
+    "ua": ""
+  },
+  "SShow_NoData_00": {
+    "en": "",
+    "ua": ""
+  },
+  "SShow_NoData_00_Btn0": {
+    "en": "",
+    "ua": ""
+  },
+  "SShow_NoData_01": {
+    "en": "There are no photos or\nvideos to display. \n\nThe slideshow\nwill now end.",
+    "ua": "Немає фото чи відео\nдля показу. \n\nСлайд-шоу\nзавершується."
+  },
+  "SShow_NoData_01_Btn0": {
+    "en": "OK",
+    "ua": "OK"
+  },
+  "SShow_Theme": {
+    "en": "",
+    "ua": ""
+  },
+  "SShow_Theme_Title": {
+    "en": "Select Theme",
+    "ua": "Вибір теми"
+  },
+  "SShow_Theme_00_00": {
+    "en": "All",
+    "ua": "Усе"
+  },
+  "SShow_Theme_00_01": {
+    "en": "Auto-Detect: People",
+    "ua": "Автовибір: Люди"
+  },
+  "SShow_Theme_00_02": {
+    "en": "Auto-Detect: Males",
+    "ua": "Автовибір: Чоловіки"
+  },
+  "SShow_Theme_00_03": {
+    "en": "Auto-Detect: Females",
+    "ua": "Автовибір: Жінки"
+  },
+  "SShow_Theme_00_04": {
+    "en": "Merged Faces",
+    "ua": "Злиті обличчя"
+  },
+  "SShow_Theme_00_05": {
+    "en": "Decorative",
+    "ua": "Оздоблені"
+  },
+  "SShow_Theme_00_06": {
+    "en": "Specialist",
+    "ua": "Особливі"
+  },
+  "SShow_Theme_00_07": {
+    "en": "Games",
+    "ua": "Ігри"
+  },
+  "SShow_Theme_00_08": {
+    "en": "Mii Characters",
+    "ua": "Персонажі Mii"
+  },
+  "SShow_Theme_00_09": {
+    "en": "Random Date",
+    "ua": "Випадкова дата"
+  },
+  "SShow_Theme_01": {
+    "en": "Confirm",
+    "ua": "Готово"
+  },
+  "SShow_Theme_02": {
+    "en": "Close",
+    "ua": "Закрити"
+  },
+  "SShow_Theme_03": {
+    "en": "Media Type",
+    "ua": "Тип медіа"
+  },
+  "SShow_Image": {
+    "en": "",
+    "ua": ""
+  },
+  "SShow_Image_Title": {
+    "en": "Media Type",
+    "ua": "Тип медіа"
+  },
+  "SShow_Image_00_00": {
+    "en": "Photos and Videos",
+    "ua": "Фото й відео"
+  },
+  "SShow_Image_00_01": {
+    "en": "Photos and Videos",
+    "ua": "Фото й відео"
+  },
+  "SShow_Image_01_00": {
+    "en": "{t:1.0:5800}Photos Only{t:1.0:6400}",
+    "ua": "{t:1.0:5800}Лише фото{t:1.0:6400}"
+  },
+  "SShow_Image_01_01": {
+    "en": "{t:1.0:5800}Photos Only{t:1.0:6400}",
+    "ua": "{t:1.0:5800}Лише фото{t:1.0:6400}"
+  },
+  "SShow_Image_02_00": {
+    "en": "{t:1.0:5a00}Videos Only{t:1.0:6400}",
+    "ua": "{t:1.0:5a00}Лише відео{t:1.0:6400}"
+  },
+  "SShow_Image_02_01": {
+    "en": "{t:1.0:5a00}Videos Only{t:1.0:6400}",
+    "ua": "{t:1.0:5a00}Лише відео{t:1.0:6400}"
+  },
+  "SShow_Image_03": {
+    "en": "OK",
+    "ua": "OK"
+  },
+  "SShow_Set": {
+    "en": "",
+    "ua": ""
+  },
+  "SShow_Set_Title": {
+    "en": "Slideshow Settings",
+    "ua": "Параметри слайд-шоу"
+  },
+  "SShow_Set_00": {
+    "en": "Music",
+    "ua": "Музика"
+  },
+  "SShow_Set_00_00": {
+    "en": "Mute",
+    "ua": "Без звуку"
+  },
+  "SShow_Set_00_01": {
+    "en": "Chilled",
+    "ua": "Спокійна"
+  },
+  "SShow_Set_00_02": {
+    "en": "Pop",
+    "ua": "Поп"
+  },
+  "SShow_Set_00_03": {
+    "en": "Funk",
+    "ua": "Фанк"
+  },
+  "SShow_Set_00_04": {
+    "en": "Fantasy",
+    "ua": "Фентезі"
+  },
+  "SShow_Set_00_05": {
+    "en": "Ceremonial",
+    "ua": "Урочиста"
+  },
+  "SShow_Set_00_06": {
+    "en": "Jazz",
+    "ua": "Джаз"
+  },
+  "SShow_Set_00_07": {
+    "en": "Ballad",
+    "ua": "Балада"
+  },
+  "SShow_Set_00_08": {
+    "en": "Vintage",
+    "ua": "Ретро"
+  },
+  "SShow_Set_01": {
+    "en": "Zoom",
+    "ua": "Зум"
+  },
+  "SShow_Set_01_00": {
+    "en": "On",
+    "ua": "Увімк."
+  },
+  "SShow_Set_01_01": {
+    "en": "Off",
+    "ua": "Вимк."
+  },
+  "SShow_Set_02": {
+    "en": "Duration",
+    "ua": "Час"
+  },
+  "SShow_Set_02_00": {
+    "en": "Rapid",
+    "ua": "Швидко"
+  },
+  "SShow_Set_02_01": {
+    "en": "3 sec.",
+    "ua": "3 сек."
+  },
+  "SShow_Set_02_02": {
+    "en": "10 sec.",
+    "ua": "10 сек."
+  },
+  "SShow_Set_02_03": {
+    "en": "1 min.",
+    "ua": "1 хв."
+  },
+  "SShow_Set_02_04": {
+    "en": "3 min.",
+    "ua": "3 хв."
+  },
+  "SShow_Set_03": {
+    "en": "{t:1.0:6000}Transition{t:1.0:6400}",
+    "ua": "{t:1.0:6000}Перехід{t:1.0:6400}"
+  },
+  "SShow_Set_03_00": {
+    "en": "Dissolve",
+    "ua": "Розчинення"
+  },
+  "SShow_Set_03_01": {
+    "en": "Shutter",
+    "ua": "Затвор"
+  },
+  "SShow_Set_03_02": {
+    "en": "Wash",
+    "ua": "Змивання"
+  },
+  "SShow_Set_03_03": {
+    "en": "Page Turn",
+    "ua": "Гортання"
+  },
+  "SShow_Set_03_04": {
+    "en": "Random",
+    "ua": "Випадково"
+  },
+  "SShow_Set_05": {
+    "en": "OK",
+    "ua": "OK"
+  },
+  "R_SD": {
+    "en": "",
+    "ua": ""
+  },
+  "RemovedSd": {
+    "en": "The SD Card has\nbeen removed.\n\nPlease turn off the power\nbefore removing SD Cards.",
+    "ua": "Карту SD вийнято.\n\nПеред тим як виймати\nкарту SD, вимикайте\nживлення."
+  },
+  "RemovedSd_Btn0": {
+    "en": "OK",
+    "ua": "OK"
+  },
+  "RemovedSd_01": {
+    "en": "The SD Card has been\nremoved. Move the\nwrite-protection switch\nto the off position. Please\nturn off the power before\nremoving SD Cards.",
+    "ua": "Карту SD вийнято.\nПереведіть перемикач\nзахисту в положення\n«вимк.». Перед тим як\nвиймати карту SD,\nвимикайте живлення."
+  },
+  "RemovedSd_01_Btn0": {
+    "en": "OK",
+    "ua": "OK"
+  },
+  "RemovedSd_02": {
+    "en": "",
+    "ua": ""
+  },
+  "RemovedSd_02_Btn0": {
+    "en": "",
+    "ua": ""
+  },
+  "SetNand_Pho_00": {
+    "en": "Photo save\nlocation changed. \n\nFrom now on, photos\nwill be saved to the\nSystem Memory.",
+    "ua": "Місце збереження\nфото змінено. \n\nВідтепер фото\nзберігатимуться\nв пам'ять системи."
+  },
+  "SetNand_Pho_00_Btn0": {
+    "en": "OK",
+    "ua": "OK"
+  },
+  "SetNand_Pho_01": {
+    "en": "Photo save\nlocation changed.\n\nFrom now on, photos that\nyou draw on will be saved\nto the System Memory.",
+    "ua": "Місце збереження\nфото змінено.\n\nВідтепер фото з вашими\nмалюнками зберігатимуться\nв пам'ять системи."
+  },
+  "SetNand_Pho_01_Btn0": {
+    "en": "OK",
+    "ua": "OK"
+  },
+  "SetNand_Mov_00": {
+    "en": "Photo save location\nchanged. From now on,\nphotos will be saved to the\nSystem Memory. You must\ninsert an SD Card in order\nto shoot videos.",
+    "ua": "Місце збереження фото\nзмінено. Відтепер фото\nзберігатимуться в пам'ять\nсистеми. Щоб знімати відео,\nпотрібно вставити карту SD."
+  },
+  "SetNand_Mov_00_Btn0": {
+    "en": "OK",
+    "ua": "OK"
+  },
+  "F_SD": {
+    "en": "",
+    "ua": ""
+  },
+  "CheckSd": {
+    "en": "Checking for SD Card...",
+    "ua": "Пошук карти SD…"
+  },
+  "FindSd": {
+    "en": "SD Card found.\n\nSet the SD Card as\nthe photo save location?",
+    "ua": "Карту SD знайдено.\n\nЗробити карту SD місцем\nзбереження фото?"
+  },
+  "FindSd_Btn0": {
+    "en": "No",
+    "ua": "Ні"
+  },
+  "FindSd_Btn1": {
+    "en": "Yes",
+    "ua": "Так"
+  },
+  "FindSd_01": {
+    "en": "SD Card found.",
+    "ua": "Карту SD знайдено."
+  },
+  "FindSd_01_Btn0": {
+    "en": "OK",
+    "ua": "OK"
+  },
+  "NotSd": {
+    "en": "Could not access SD Card.",
+    "ua": "Немає доступу до\nкарти SD."
+  },
+  "NotSd_Btn0": {
+    "en": "OK",
+    "ua": "OK"
+  },
+  "ProhibitedSd": {
+    "en": "Cannot write to the\nSD Card. Please turn off\nthe power and move the\nwrite-protection switch on\nthe SD Card to the off\nposition.",
+    "ua": "Не вдається писати\nна карту SD. Вимкніть\nживлення й переведіть\nперемикач захисту на\nкарті SD у положення\n«вимк.»."
+  },
+  "ProhibitedSd_Btn0": {
+    "en": "OK",
+    "ua": "OK"
+  },
+  "ReadOnlySd": {
+    "en": "The management file\non the SD Card has\nbeen set as read-only.",
+    "ua": "Службовий файл на\nкарті SD доступний\nлише для читання."
+  },
+  "ReadOnlySd_Btn0": {
+    "en": "OK",
+    "ua": "OK"
+  },
+  "SetSd_Pho_00": {
+    "en": "Photo save\nlocation changed.\n\nFrom now on, photos will\nbe saved to the SD Card.",
+    "ua": "Місце збереження\nфото змінено.\n\nВідтепер фото\nзберігатимуться\nна карту SD."
+  },
+  "SetSd_Pho_00_Btn0": {
+    "en": "OK",
+    "ua": "OK"
+  },
+  "SetSd_Pho_01": {
+    "en": "Photo save\nlocation changed.\n\nFrom now on, photos\nthat you draw on will be\nsaved to the SD Card.",
+    "ua": "Місце збереження фото\nз малюнками змінено.\n\nВідтепер вони\nзберігатимуться\nна карту SD."
+  },
+  "SetSd_Pho_01_Btn0": {
+    "en": "OK",
+    "ua": "OK"
+  },
+  "ImageDb": {
+    "en": "",
+    "ua": ""
+  },
+  "ImageDb_00": {
+    "en": "SD Card found.\n\nThe management file\nwill now be updated.\nThis may take some time.",
+    "ua": "Карту SD знайдено.\n\nЗараз буде оновлено\nслужбовий файл.\nЦе може тривати довго."
+  },
+  "ImageDb_00_Btn0": {
+    "en": "OK",
+    "ua": "OK"
+  },
+  "ImageDb_01": {
+    "en": "Updating...\n\nPlease wait.",
+    "ua": "Оновлення…\n\nЗачекайте."
+  },
+  "ImageDb_02": {
+    "en": "The management file\nhas been updated.\n\nSet the SD Card as\nthe photo save location?",
+    "ua": "Службовий файл\nоновлено.\n\nЗробити карту SD місцем\nзбереження фото?"
+  },
+  "ImageDb_02_Btn0": {
+    "en": "No",
+    "ua": "Ні"
+  },
+  "ImageDb_02_Btn1": {
+    "en": "Yes",
+    "ua": "Так"
+  },
+  "ImageDb_03": {
+    "en": "The management file\nwill now be updated.\nThis may take some time.",
+    "ua": "Зараз буде оновлено\nслужбовий файл.\nЦе може тривати довго."
+  },
+  "ImageDb_03_Btn0": {
+    "en": "OK",
+    "ua": "OK"
+  },
+  "ImageDb_04": {
+    "en": "The management file\nhas been updated.",
+    "ua": "Службовий файл\nоновлено."
+  },
+  "ImageDb_04_Btn0": {
+    "en": "OK",
+    "ua": "OK"
+  },
+  "MakeImageDb_Failure": {
+    "en": "There is not enough\nfree space on the\nSD Card to create\na management file.",
+    "ua": "На карті SD не\nвистачає місця, щоб\nстворити службовий\nфайл."
+  },
+  "MakeImageDb_Failure_Btn0": {
+    "en": "OK",
+    "ua": "OK"
+  },
+  "E_SD": {
+    "en": "",
+    "ua": ""
+  },
+  "FailureSd": {
+    "en": "SD Card error.",
+    "ua": "Помилка карти SD."
+  },
+  "FailureSd_Btn0": {
+    "en": "OK",
+    "ua": "OK"
+  },
+  "FullNand": {
+    "en": "",
+    "ua": ""
+  },
+  "Shoot_FullNand_Pho": {
+    "en": "The System Memory's\nphoto limit has been\nreached.\nCannot take any\nmore photos.",
+    "ua": "У пам'яті системи\nдосягнуто ліміту фото.\nЗнімати далі\nне вдасться."
+  },
+  "Shoot_FullNand_Pho_Btn0": {
+    "en": "OK",
+    "ua": "OK"
+  },
+  "Shoot_FullNand_Pho_01": {
+    "en": "{t:1.0:5a00}Cannot take any more\nphotos as the System\nMemory's photo limit has\nbeen reached. Would you\nlike to change the photo save\nlocation to the SD Card?{t:1.0:6400}",
+    "ua": "{t:1.0:5a00}Знімати далі не вдасться:\nу пам'яті системи досягнуто\nліміту фото. Змінити місце\nзбереження фото\nна карту SD?{t:1.0:6400}"
+  },
+  "Shoot_FullNand_Pho_01_Btn0": {
+    "en": "No",
+    "ua": "Ні"
+  },
+  "Shoot_FullNand_Pho_01_Btn1": {
+    "en": "Yes",
+    "ua": "Так"
+  },
+  "Paint_FullNand_Pho": {
+    "en": "The System Memory's\nphoto limit has been\nreached, so graffiti\ncannot be saved.",
+    "ua": "У пам'яті системи\nдосягнуто ліміту фото,\nтож малюнок зберегти\nне вдасться."
+  },
+  "Paint_FullNand_Pho_Btn0": {
+    "en": "OK",
+    "ua": "OK"
+  },
+  "Paint_FullNand_Pho_01": {
+    "en": "{t:1.0:5a00}Cannot save any more\ngraffiti as the System\nMemory's photo limit has\nbeen reached. Would you\nlike to change the photo save\nlocation to the SD Card?{t:1.0:6400}",
+    "ua": "{t:1.0:5a00}Зберегти малюнок не\nвдасться: у пам'яті системи\nдосягнуто ліміту фото.\nЗмінити місце збереження\nфото на карту SD?{t:1.0:6400}"
+  },
+  "Paint_FullNand_Pho_01_Btn0": {
+    "en": "No",
+    "ua": "Ні"
+  },
+  "Paint_FullNand_Pho_01_Btn1": {
+    "en": "Yes",
+    "ua": "Так"
+  },
+  "Data_Copy_FullNand_Pho": {
+    "en": "The System Memory's\nphoto limit has been\nreached.\nCannot copy photos.",
+    "ua": "У пам'яті системи\nдосягнуто ліміту фото.\nКопіювати фото\nне вдасться."
+  },
+  "Data_Copy_FullNand_Pho_Btn0": {
+    "en": "OK",
+    "ua": "OK"
+  },
+  "Copy_SN_FullNand_Pho": {
+    "en": "The System Memory's\nphoto limit has been\nreached.\nCannot copy photo.",
+    "ua": "У пам'яті системи\nдосягнуто ліміту фото.\nСкопіювати фото\nне вдасться."
+  },
+  "Copy_SN_FullNand_Pho_Btn0": {
+    "en": "OK",
+    "ua": "OK"
+  },
+  "FullNand_Pho_00": {
+    "en": "The System Memory's\nphoto limit has been\nreached. Cannot save\nany more photos.",
+    "ua": "У пам'яті системи\nдосягнуто ліміту фото.\nЗберігати далі\nне вдасться."
+  },
+  "FullNand_Pho_00_Btn0": {
+    "en": "OK",
+    "ua": "OK"
+  },
+  "FullNand_Pho_01": {
+    "en": "{t:1.0:5f00}The System Memory's\nphoto limit has been\nreached. Cannot save any\nmore photos. Would you\nlike to set the SD Card\nas the photo save location?{t:1.0:6400}",
+    "ua": "{t:1.0:5f00}У пам'яті системи\nдосягнуто ліміту фото.\nЗберігати далі не вдасться.\nЗробити карту SD місцем\nзбереження фото?{t:1.0:6400}"
+  },
+  "FullNand_Pho_01_Btn0": {
+    "en": "No",
+    "ua": "Ні"
+  },
+  "FullNand_Pho_01_Btn1": {
+    "en": "Yes",
+    "ua": "Так"
+  },
+  "FullSd": {
+    "en": "",
+    "ua": ""
+  },
+  "Shoot_FullSd_Pho": {
+    "en": "The SD Card's\nphoto/video limit\nhas been reached.\nCannot take any more\nphotos or videos.",
+    "ua": "На карті SD досягнуто\nліміту фото й відео.\nЗнімати далі\nне вдасться."
+  },
+  "Shoot_FullSd_Pho_Btn0": {
+    "en": "OK",
+    "ua": "OK"
+  },
+  "Shoot_FullSd_Pho_01": {
+    "en": "{t:1.0:5600}Cannot take any more photos\nor videos as the SD Card's\nphoto/video limit has been\nreached. Would you like to\nchange the photo save location\nto the System Memory?{t:1.0:6400}",
+    "ua": "{t:1.0:5600}Знімати далі не вдасться:\nна карті SD досягнуто ліміту\nфото й відео. Змінити місце\nзбереження фото на\nпам'ять системи?{t:1.0:6400}"
+  },
+  "Shoot_FullSd_Pho_01_Btn0": {
+    "en": "No",
+    "ua": "Ні"
+  },
+  "Shoot_FullSd_Pho_01_Btn1": {
+    "en": "Yes",
+    "ua": "Так"
+  },
+  "Paint_FullSd_Pho": {
+    "en": "The SD Card's\nphoto/video limit\nhas been reached,\nso graffiti cannot\nbe saved.",
+    "ua": "На карті SD досягнуто\nліміту фото й відео,\nтож малюнок зберегти\nне вдасться."
+  },
+  "Paint_FullSd_Pho_Btn0": {
+    "en": "OK",
+    "ua": "OK"
+  },
+  "Paint_FullSd_Pho_01": {
+    "en": "{t:1.0:5a00}Cannot save any more graffiti\nas the SD Card's photo/video\nlimit has been reached.\nWould you like to change the\nphoto save location to\nthe System Memory?{t:1.0:6400}",
+    "ua": "{t:1.0:5a00}Зберегти малюнок не\nвдасться: на карті SD\nдосягнуто ліміту фото\nй відео. Змінити місце\nзбереження фото на\nпам'ять системи?{t:1.0:6400}"
+  },
+  "Paint_FullSd_Pho_01_Btn0": {
+    "en": "No",
+    "ua": "Ні"
+  },
+  "Paint_FullSd_Pho_01_Btn1": {
+    "en": "Yes",
+    "ua": "Так"
+  },
+  "Data_Copy_FullSd_Pho": {
+    "en": "The SD Card's\nphoto/video limit\nhas been reached.\nCannot copy photos.",
+    "ua": "На карті SD досягнуто\nліміту фото й відео.\nКопіювати фото\nне вдасться."
+  },
+  "Data_Copy_FullSd_Pho_Btn0": {
+    "en": "OK",
+    "ua": "OK"
+  },
+  "Copy_NS_FullSd_Pho": {
+    "en": "The SD Card's\nphoto/video limit\nhas been reached.\nCannot copy photo.",
+    "ua": "На карті SD досягнуто\nліміту фото й відео.\nСкопіювати фото\nне вдасться."
+  },
+  "Copy_NS_FullSd_Pho_Btn0": {
+    "en": "OK",
+    "ua": "OK"
+  },
+  "FullSd_Pho_00": {
+    "en": "The SD Card's\nphoto/video limit has\nbeen reached. Cannot\nsave any more photos\nor videos.",
+    "ua": "На карті SD досягнуто\nліміту фото й відео.\nЗберігати фото чи\nвідео далі\nне вдасться."
+  },
+  "FullSd_Pho_00_Btn0": {
+    "en": "OK",
+    "ua": "OK"
+  },
+  "FullSd_Pho_01": {
+    "en": "{t:1.0:5500}The SD Card's photo/video limit\nhas been reached. Cannot save\nany more photos or videos.\nWould you like to change\nthe photo save location to\nthe System Memory?{t:1.0:6400}",
+    "ua": "{t:1.0:5500}На карті SD досягнуто ліміту\nфото й відео. Зберігати далі\nне вдасться. Змінити місце\nзбереження фото на\nпам'ять системи?{t:1.0:6400}"
+  },
+  "FullSd_Pho_01_Btn0": {
+    "en": "No",
+    "ua": "Ні"
+  },
+  "FullSd_Pho_01_Btn1": {
+    "en": "Yes",
+    "ua": "Так"
+  },
+  "NoSpaceSd": {
+    "en": "",
+    "ua": ""
+  },
+  "Shoot_NoSpaceSd": {
+    "en": "Unable to take any more\nphotos or videos. There is\nnot enough free space\non the SD Card.",
+    "ua": "Знімати фото чи відео\nдалі не вдасться.\nНа карті SD не вистачає\nвільного місця."
+  },
+  "Shoot_NoSpaceSd_Btn0": {
+    "en": "OK",
+    "ua": "OK"
+  },
+  "Shoot_NoSpaceSd_01": {
+    "en": "{t:1.0:5600}Cannot take any more photos\nor videos as there is not\nenough free space on the\nSD Card. Would you like to\nchange the photo save location\nto the System Memory?{t:1.0:6400}",
+    "ua": "{t:1.0:5600}Знімати далі не вдасться:\nна карті SD не вистачає\nвільного місця. Змінити\nмісце збереження фото\nна пам'ять системи?{t:1.0:6400}"
+  },
+  "Shoot_NoSpaceSd_01_Btn0": {
+    "en": "No",
+    "ua": "Ні"
+  },
+  "Shoot_NoSpaceSd_01_Btn1": {
+    "en": "Yes",
+    "ua": "Так"
+  },
+  "Paint_NoSpaceSd": {
+    "en": "The SD Card does\nnot have enough\nfree space. Graffiti\ncannot be saved.",
+    "ua": "На карті SD не\nвистачає вільного\nмісця. Малюнок\nзберегти не вдасться."
+  },
+  "Paint_NoSpaceSd_Btn0": {
+    "en": "OK",
+    "ua": "OK"
+  },
+  "Paint_NoSpaceSd_01": {
+    "en": "{t:1.0:5a00}Cannot save any more graffiti\nas there is not enough free\nspace on the SD Card.\nWould you like to change\nthe photo save location to\nthe System Memory?{t:1.0:6400}",
+    "ua": "{t:1.0:5a00}Зберегти малюнок не\nвдасться: на карті SD не\nвистачає вільного місця.\nЗмінити місце збереження\nфото на пам'ять системи?{t:1.0:6400}"
+  },
+  "Paint_NoSpaceSd_01_Btn0": {
+    "en": "No",
+    "ua": "Ні"
+  },
+  "Paint_NoSpaceSd_01_Btn1": {
+    "en": "Yes",
+    "ua": "Так"
+  },
+  "Data_Copy_NoSpaceSd": {
+    "en": "The SD Card does not\nhave enough free space.\nCannot copy photos.",
+    "ua": "На карті SD не\nвистачає вільного місця.\nКопіювати фото\nне вдасться."
+  },
+  "Data_Copy_NoSpaceSd_Btn0": {
+    "en": "OK",
+    "ua": "OK"
+  },
+  "Copy_NS_NoSpaceSd": {
+    "en": "The SD Card does not\nhave enough free space.\nCannot copy photo.",
+    "ua": "На карті SD не\nвистачає вільного місця.\nСкопіювати фото\nне вдасться."
+  },
+  "Copy_NS_NoSpaceSd_Btn0": {
+    "en": "OK",
+    "ua": "OK"
+  },
+  "NoSpaceSd_00": {
+    "en": "The SD Card does not\nhave enough free space.\nCannot save any more\nphotos or videos.",
+    "ua": "На карті SD не вистачає\nвільного місця. Зберігати\nфото чи відео далі\nне вдасться."
+  },
+  "NoSpaceSd_00_Btn0": {
+    "en": "OK",
+    "ua": "OK"
+  },
+  "NoSpaceSd_01": {
+    "en": "{t:1.0:5f00}The SD Card does not have\nenough free space. Cannot\nsave any more photos.\nWould you like to change\nthe photo save location to\nthe System Memory?{t:1.0:6400}",
+    "ua": "{t:1.0:5f00}На карті SD не вистачає\nвільного місця. Зберігати\nфото далі не вдасться.\nЗмінити місце збереження\nфото на пам'ять системи?{t:1.0:6400}"
+  },
+  "NoSpaceSd_01_Btn0": {
+    "en": "No",
+    "ua": "Ні"
+  },
+  "NoSpaceSd_01_Btn1": {
+    "en": "Yes",
+    "ua": "Так"
+  },
+  "FullFolder": {
+    "en": "",
+    "ua": ""
+  },
+  "FullFolder_01_01": {
+    "en": "Unable to save.\nThe maximum number\nof folders for saving\nphotos on the SD Card\nhas been reached.",
+    "ua": "Зберегти не вдасться.\nНа карті SD досягнуто\nмежі кількості папок\nдля збереження фото."
+  },
+  "FullFolder_01_01_Btn0": {
+    "en": "OK",
+    "ua": "OK"
+  },
+  "FullFolder_01_02": {
+    "en": "{t:1.0:5a00}Unable to save. The maximum\nnumber of folders for saving\nphotos on the SD Card has\nbeen reached. Would you like\nto set the System Memory as\nthe photo save location?{t:1.0:6400}",
+    "ua": "{t:1.0:5a00}Зберегти не вдасться. На\nкарті SD досягнуто межі\nкількості папок для фото.\nЗробити пам'ять системи\nмісцем збереження фото?{t:1.0:6400}"
+  },
+  "FullFolder_01_02_Btn0": {
+    "en": "No",
+    "ua": "Ні"
+  },
+  "FullFolder_01_02_Btn1": {
+    "en": "Yes",
+    "ua": "Так"
+  },
+  "FullFolder_02_01": {
+    "en": "Unable to save graffiti.\nThe maximum number of\nfolders for saving photos\non the SD Card has\nbeen reached.",
+    "ua": "Малюнок зберегти\nне вдасться. На карті SD\nдосягнуто межі кількості\nпапок для збереження фото."
+  },
+  "FullFolder_02_01_Btn0": {
+    "en": "OK",
+    "ua": "OK"
+  },
+  "FullFolder_02_02": {
+    "en": "{t:1.0:5a00}Unable to save graffiti. The\nmaximum number of folders\nfor saving photos on the\nSD Card has been reached.\nSet the System Memory as\nthe photo save location?{t:1.0:6400}",
+    "ua": "{t:1.0:5a00}Малюнок зберегти не\nвдасться. На карті SD\nдосягнуто межі кількості\nпапок для фото. Зробити\nпам'ять системи місцем\nзбереження фото?{t:1.0:6400}"
+  },
+  "FullFolder_02_02_Btn0": {
+    "en": "No",
+    "ua": "Ні"
+  },
+  "FullFolder_02_02_Btn1": {
+    "en": "Yes",
+    "ua": "Так"
+  },
+  "FullFolder_03_01": {
+    "en": "Unable to shoot video.\nThe maximum number\nof folders for saving\nvideos on the SD Card\nhas been reached.",
+    "ua": "Зняти відео не вдасться.\nНа карті SD досягнуто\nмежі кількості папок\nдля збереження відео."
+  },
+  "FullFolder_03_01_Btn0": {
+    "en": "OK",
+    "ua": "OK"
+  },
+  "Boot": {
+    "en": "",
+    "ua": ""
+  },
+  "Boot_01": {
+    "en": "Preparing... \n\nPlease wait. This\nmay take some time.",
+    "ua": "Підготовка… \n\nЗачекайте. Це може\nтривати довго."
+  },
+  "Boot_02": {
+    "en": "Could not access SD Card.{t:0.2:1400}\n{t:0.2:6400}\nChanging photo save\nlocation. Photos taken\nwill be saved to the\nSystem Memory.",
+    "ua": "Немає доступу до карти SD.{t:0.2:1400}\n{t:0.2:6400}\nМісце збереження фото\nзмінюється. Зняті фото\nзберігатимуться\nв пам'ять системи."
+  },
+  "Boot_02_Btn0": {
+    "en": "OK",
+    "ua": "OK"
+  },
+  "Boot_03": {
+    "en": "Changing photo save\nlocation.\n\nPhotos taken will\nbe saved to the\nSystem Memory.",
+    "ua": "Місце збереження\nфото змінюється.\n\nЗняті фото\nзберігатимуться\nв пам'ять системи."
+  },
+  "Boot_03_Btn0": {
+    "en": "OK",
+    "ua": "OK"
+  },
+  "Boot_04": {
+    "en": "Could not access SD Card.",
+    "ua": "Немає доступу до\nкарти SD."
+  },
+  "Boot_04_Btn0": {
+    "en": "OK",
+    "ua": "OK"
+  }
+}

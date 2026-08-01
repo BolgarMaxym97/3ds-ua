@@ -1,0 +1,2630 @@
+{
+  "Guide": {
+    "en": "",
+    "ua": ""
+  },
+  "Guide_D_00_00": {
+    "en": "/ {t:3.39:0000}",
+    "ua": ""
+  },
+  "Guide_D_00_01": {
+    "en": "{t:3.39:0100} ",
+    "ua": ""
+  },
+  "Guide_D_O_Btn0": {
+    "en": "OK",
+    "ua": "OK"
+  },
+  "Guide_D_CN_Btn0": {
+    "en": "Cancel",
+    "ua": "Скасувати"
+  },
+  "Guide_D_CN_Btn1": {
+    "en": "Next",
+    "ua": "Далі"
+  },
+  "Guide_D_N_Btn0": {
+    "en": "Next",
+    "ua": "Далі"
+  },
+  "Guide_D_BN_Btn0": {
+    "en": "Back",
+    "ua": "Назад"
+  },
+  "Guide_D_BN_Btn1": {
+    "en": "Next",
+    "ua": "Далі"
+  },
+  "Guide_D_BO_Btn0": {
+    "en": "Back",
+    "ua": "Назад"
+  },
+  "Guide_D_BO_Btn1": {
+    "en": "OK",
+    "ua": "OK"
+  },
+  "Guide_Title": {
+    "en": "",
+    "ua": ""
+  },
+  "T_001_S": {
+    "en": "???",
+    "ua": ""
+  },
+  "T_001": {
+    "en": "{t:3.42:0000} Welcome!",
+    "ua": "{t:3.42:0000} Вітаємо!"
+  },
+  "T_002": {
+    "en": "{t:3.42:0000} Let's get started!",
+    "ua": "{t:3.42:0000} Починаймо!"
+  },
+  "T_003": {
+    "en": "{t:3.42:0000} SD Card orientation",
+    "ua": "{t:3.42:0000} Як вставляти карту SD"
+  },
+  "T_004": {
+    "en": "{t:3.42:0000} Recording guidance",
+    "ua": "{t:3.42:0000} Поради щодо запису"
+  },
+  "T_005": {
+    "en": "{t:3.42:0000} Overwriting recordings",
+    "ua": "{t:3.42:0000} Перезапис записів"
+  },
+  "T_006": {
+    "en": "{t:3.42:0000} Your data is safe!",
+    "ua": "{t:3.42:0000} Ваші дані в безпеці!"
+  },
+  "T_007": {
+    "en": "{t:3.42:0000} Reviewing usage tips",
+    "ua": "{t:3.42:0000} Повторний перегляд порад"
+  },
+  "T_008": {
+    "en": "{t:3.42:0000} Closing this software",
+    "ua": "{t:3.42:0000} Вихід із програми"
+  },
+  "T_009": {
+    "en": "",
+    "ua": ""
+  },
+  "T_010": {
+    "en": "",
+    "ua": ""
+  },
+  "T_011": {
+    "en": "{t:3.42:0000} About StreetPass",
+    "ua": "{t:3.42:0000} Про StreetPass"
+  },
+  "T_012": {
+    "en": "",
+    "ua": ""
+  },
+  "T_013": {
+    "en": "{t:3.42:0000} Starting StreetPass",
+    "ua": "{t:3.42:0000} Запуск StreetPass"
+  },
+  "T_014": {
+    "en": "",
+    "ua": ""
+  },
+  "T_015": {
+    "en": "{t:3.42:0000} StreetPass at concerts!",
+    "ua": "{t:3.42:0000} StreetPass на концертах!"
+  },
+  "T_016": {
+    "en": "{t:3.42:0000} Hit Parade",
+    "ua": "{t:3.42:0000} Хіт-парад"
+  },
+  "T_017": {
+    "en": "{t:3.42:0000} Compatibility",
+    "ua": "{t:3.42:0000} Спорідненість"
+  },
+  "T_018": {
+    "en": "{t:3.42:0000} The blue budgie",
+    "ua": "{t:3.42:0000} Синя папужка"
+  },
+  "T_019": {
+    "en": "{t:3.42:0000} The imitating budgie",
+    "ua": "{t:3.42:0000} Папужка-перекривляка"
+  },
+  "T_020": {
+    "en": "",
+    "ua": ""
+  },
+  "T_021": {
+    "en": "{t:3.42:0000} Adding to playlists 1",
+    "ua": "{t:3.42:0000} Додавання до списків 1"
+  },
+  "T_022": {
+    "en": "{t:3.42:0000} Playlists: Top Ten",
+    "ua": "{t:3.42:0000} Списки: Топ-10"
+  },
+  "T_023": {
+    "en": "",
+    "ua": ""
+  },
+  "T_024": {
+    "en": "{t:3.42:0000} Playlists: Secret",
+    "ua": "{t:3.42:0000} Списки: Таємне"
+  },
+  "T_025": {
+    "en": "{t:3.42:0000} Playlists: StreetPass",
+    "ua": "{t:3.42:0000} Списки: StreetPass"
+  },
+  "T_026": {
+    "en": "{t:3.42:0000} Creating a playlist",
+    "ua": "{t:3.42:0000} Створення списку"
+  },
+  "T_027": {
+    "en": "{t:3.42:0000} Removing from playlists",
+    "ua": "{t:3.42:0000} Прибирання зі списків"
+  },
+  "T_028": {
+    "en": "{t:3.42:0000} Deleting playlists",
+    "ua": "{t:3.42:0000} Видалення списків"
+  },
+  "T_029": {
+    "en": "{t:3.42:0000} Adding to playlists 2",
+    "ua": "{t:3.42:0000} Додавання до списків 2"
+  },
+  "T_030": {
+    "en": "{t:3.42:0000} Adding to playlists 3",
+    "ua": "{t:3.42:0000} Додавання до списків 3"
+  },
+  "T_031": {
+    "en": "{t:3.42:0000} Autoplay",
+    "ua": "{t:3.42:0000} Автогра"
+  },
+  "T_032": {
+    "en": "{t:3.42:0000} Shuffle All",
+    "ua": "{t:3.42:0000} Усе впереміш"
+  },
+  "T_033": {
+    "en": "{t:3.42:0000} Top 10 Most Played",
+    "ua": "{t:3.42:0000} Топ-10 найчастіших"
+  },
+  "T_034": {
+    "en": "",
+    "ua": ""
+  },
+  "T_035": {
+    "en": "{t:3.42:0000}  Percussion",
+    "ua": "{t:3.42:0000}  Ударні"
+  },
+  "T_036": {
+    "en": "{t:3.42:0000}  Percussion: Off",
+    "ua": "{t:3.42:0000}  Ударні: вимк."
+  },
+  "T_037": {
+    "en": "{t:3.42:0000}  Percussion: Coin",
+    "ua": "{t:3.42:0000}  Ударні: монета"
+  },
+  "T_038": {
+    "en": "{t:3.42:0000}  Percussion: Animal",
+    "ua": "{t:3.42:0000}  Ударні: тварина"
+  },
+  "T_039": {
+    "en": "{t:3.42:0000} Pressing  and ",
+    "ua": "{t:3.42:0000} Натискання  і "
+  },
+  "T_040": {
+    "en": "{t:3.42:0000} Play folders",
+    "ua": "{t:3.42:0000} Грати папки"
+  },
+  "T_041": {
+    "en": "{t:3.42:0000} Repeat folders",
+    "ua": "{t:3.42:0000} Повтор папки"
+  },
+  "T_042": {
+    "en": "{t:3.42:0000} Repeat a song",
+    "ua": "{t:3.42:0000} Повтор пісні"
+  },
+  "T_043": {
+    "en": "{t:3.42:0000} Repeat a part",
+    "ua": "{t:3.42:0000} Повтор частини"
+  },
+  "T_044": {
+    "en": "{t:3.42:0000} Shuffle",
+    "ua": "{t:3.42:0000} Впереміш"
+  },
+  "T_045": {
+    "en": "{t:3.42:0000} Change the visualiser",
+    "ua": "{t:3.42:0000} Зміна візуалізації"
+  },
+  "T_046": {
+    "en": "",
+    "ua": ""
+  },
+  "T_047": {
+    "en": "{t:3.42:0000} Effects: Radio",
+    "ua": "{t:3.42:0000} Ефекти: Радіо"
+  },
+  "T_048": {
+    "en": "{t:3.42:0000} Effects: Instrumental",
+    "ua": "{t:3.42:0000} Ефекти: Інструментал"
+  },
+  "T_049": {
+    "en": "",
+    "ua": ""
+  },
+  "T_050": {
+    "en": "",
+    "ua": ""
+  },
+  "T_051": {
+    "en": "{t:3.42:0000} Change speed and pitch",
+    "ua": "{t:3.42:0000} Зміна швидкості й висоти"
+  },
+  "T_052": {
+    "en": "{t:3.42:0000} Easy-to-sing key",
+    "ua": "{t:3.42:0000} Зручна тональність"
+  },
+  "T_053": {
+    "en": "{t:3.42:0000} Language study drills",
+    "ua": "{t:3.42:0000} Вправи з вивчення мови"
+  },
+  "T_054": {
+    "en": "",
+    "ua": ""
+  },
+  "T_055": {
+    "en": "",
+    "ua": ""
+  },
+  "T_056": {
+    "en": "",
+    "ua": ""
+  },
+  "T_057": {
+    "en": "",
+    "ua": ""
+  },
+  "T_058": {
+    "en": "",
+    "ua": ""
+  },
+  "T_059": {
+    "en": "",
+    "ua": ""
+  },
+  "T_060": {
+    "en": "",
+    "ua": ""
+  },
+  "T_061": {
+    "en": "{t:3.42:0000} Playing with voices",
+    "ua": "{t:3.42:0000} Забави з голосами"
+  },
+  "T_062": {
+    "en": "{t:3.42:0000} Voices: Budgie",
+    "ua": "{t:3.42:0000} Голоси: Папужка"
+  },
+  "T_063": {
+    "en": "{t:3.42:0000} Voices: Robot",
+    "ua": "{t:3.42:0000} Голоси: Робот"
+  },
+  "T_064": {
+    "en": "{t:3.42:0000} Voices: Helium",
+    "ua": "{t:3.42:0000} Голоси: Гелій"
+  },
+  "T_065": {
+    "en": "{t:3.42:0000} Voices: Fan",
+    "ua": "{t:3.42:0000} Голоси: Вентилятор"
+  },
+  "T_066": {
+    "en": "{t:3.42:0000} Voices: Tunnel",
+    "ua": "{t:3.42:0000} Голоси: Тунель"
+  },
+  "T_067": {
+    "en": "{t:3.42:0000} Voices: Transceiver",
+    "ua": "{t:3.42:0000} Голоси: Рація"
+  },
+  "T_068": {
+    "en": "{t:3.42:0000} Voices: High Harmony",
+    "ua": "{t:3.42:0000} Голоси: Висока гармонія"
+  },
+  "T_069": {
+    "en": "{t:3.42:0000} Voices: Synth Harmony",
+    "ua": "{t:3.42:0000} Голоси: Синт-гармонія"
+  },
+  "T_070": {
+    "en": "{t:3.42:0000} Voices: Low Harmony",
+    "ua": "{t:3.42:0000} Голоси: Низька гармонія"
+  },
+  "T_071": {
+    "en": "",
+    "ua": ""
+  },
+  "T_072": {
+    "en": "",
+    "ua": ""
+  },
+  "T_073": {
+    "en": "",
+    "ua": ""
+  },
+  "T_074": {
+    "en": "",
+    "ua": ""
+  },
+  "T_075": {
+    "en": "{t:3.42:0000} Change voice pitch",
+    "ua": "{t:3.42:0000} Зміна висоти голосу"
+  },
+  "T_076": {
+    "en": "",
+    "ua": ""
+  },
+  "T_077": {
+    "en": "",
+    "ua": ""
+  },
+  "T_078": {
+    "en": "{t:3.42:0000} Tricks: Auto-recording",
+    "ua": "{t:3.42:0000} Хитрощі: автозапис"
+  },
+  "T_079": {
+    "en": "{t:3.42:0000} Cutting out parts",
+    "ua": "{t:3.42:0000} Вирізання частин"
+  },
+  "T_080": {
+    "en": "{t:3.42:0000} Magic phrase 1",
+    "ua": "{t:3.42:0000} Чарівна фраза 1"
+  },
+  "T_081": {
+    "en": "{t:3.42:0000} Magic phrase 2",
+    "ua": "{t:3.42:0000} Чарівна фраза 2"
+  },
+  "T_082": {
+    "en": "{t:3.42:0000} Creating magic words 2",
+    "ua": "{t:3.42:0000} Створення чарівних слів 2"
+  },
+  "T_083": {
+    "en": "{t:3.42:0000} Creating magic words 1",
+    "ua": "{t:3.42:0000} Створення чарівних слів 1"
+  },
+  "T_084": {
+    "en": "{t:3.42:0000} Creating magic words 3",
+    "ua": "{t:3.42:0000} Створення чарівних слів 3"
+  },
+  "T_085": {
+    "en": "",
+    "ua": ""
+  },
+  "T_086": {
+    "en": "",
+    "ua": ""
+  },
+  "T_087": {
+    "en": "{t:3.42:0000} Ideas: Phrases",
+    "ua": "{t:3.42:0000} Ідеї: фрази"
+  },
+  "T_088": {
+    "en": "{t:3.42:0000} Ideas: Messages",
+    "ua": "{t:3.42:0000} Ідеї: послання"
+  },
+  "T_089": {
+    "en": "{t:3.42:0000} Settings: Touch Sound",
+    "ua": "{t:3.42:0000} Параметри: Звук дотику"
+  },
+  "T_090": {
+    "en": "{t:3.42:0000} Settings: Audio output",
+    "ua": "{t:3.42:0000} Параметри: Вивід звуку"
+  },
+  "T_091": {
+    "en": "{t:3.42:0000} Resume",
+    "ua": "{t:3.42:0000} Далі"
+  },
+  "T_092": {
+    "en": "{t:3.42:0000} Take a break",
+    "ua": "{t:3.42:0000} Зробіть перерву"
+  },
+  "T_093": {
+    "en": "{t:3.42:0000} Control Tips: ",
+    "ua": "{t:3.42:0000} Керування: "
+  },
+  "T_094": {
+    "en": "{t:3.42:0000} Control Tips: ",
+    "ua": "{t:3.42:0000} Керування: "
+  },
+  "T_095": {
+    "en": "{t:3.42:0000} Control Tips:  and ",
+    "ua": "{t:3.42:0000} Керування:  і "
+  },
+  "T_096": {
+    "en": "{t:3.42:0000} Control Tips: ",
+    "ua": "{t:3.42:0000} Керування: "
+  },
+  "T_097": {
+    "en": "{t:3.42:0000} Control Tips: ",
+    "ua": "{t:3.42:0000} Керування: "
+  },
+  "T_098": {
+    "en": "{t:3.42:0000} Control Tips: ",
+    "ua": "{t:3.42:0000} Керування: "
+  },
+  "T_099": {
+    "en": "",
+    "ua": ""
+  },
+  "T_100": {
+    "en": "{t:3.42:0000} Ideas: Reminders",
+    "ua": "{t:3.42:0000} Ідеї: нагадування"
+  },
+  "T_101": {
+    "en": "",
+    "ua": ""
+  },
+  "T_102": {
+    "en": "{t:3.42:0000} Using headphones",
+    "ua": "{t:3.42:0000} Користування навушниками"
+  },
+  "T_103": {
+    "en": "{t:3.42:0000} Recording icon colours",
+    "ua": "{t:3.42:0000} Кольори значків записів"
+  },
+  "T_104": {
+    "en": "{t:3.42:0000} Visualisers",
+    "ua": "{t:3.42:0000} Візуалізації"
+  },
+  "T_105": {
+    "en": "{t:3.42:0000} Copy/move recordings",
+    "ua": "{t:3.42:0000} Копіювання й перенесення"
+  },
+  "T_106": {
+    "en": "",
+    "ua": ""
+  },
+  "T_107": {
+    "en": "{t:3.42:0000} Move data over pages",
+    "ua": "{t:3.42:0000} Перенесення між сторінками"
+  },
+  "T_108": {
+    "en": "{t:3.42:0000} Budgie chat: Walks",
+    "ua": "{t:3.42:0000} Балачки папужки: прогулянки"
+  },
+  "T_109": {
+    "en": "{t:3.42:0000} Budgie chat: Karaoke",
+    "ua": "{t:3.42:0000} Балачки папужки: караоке"
+  },
+  "T_110": {
+    "en": "{t:3.42:0000} Keep-up visualiser",
+    "ua": "{t:3.42:0000} Візуалізація «не впусти»"
+  },
+  "T_111": {
+    "en": "{t:3.42:0000} Budgie chat: Your voice",
+    "ua": "{t:3.42:0000} Балачки папужки: ваш голос"
+  },
+  "T_112": {
+    "en": "{t:3.42:0000} Page colours",
+    "ua": "{t:3.42:0000} Кольори сторінок"
+  },
+  "T_113": {
+    "en": "",
+    "ua": ""
+  },
+  "T_114": {
+    "en": "{t:3.42:0000} Deleting groups of data",
+    "ua": "{t:3.42:0000} Видалення груп даних"
+  },
+  "T_115": {
+    "en": "{t:3.42:0000} Budgie chat: Say \"ah\"",
+    "ua": "{t:3.42:0000} Балачки папужки: скажіть «а-а»"
+  },
+  "T_116": {
+    "en": "{t:3.42:0000} Magic words: Code",
+    "ua": "{t:3.42:0000} Чарівні слова: код"
+  },
+  "T_117": {
+    "en": "{t:3.42:0000} 3D depth",
+    "ua": "{t:3.42:0000} Глибина 3D"
+  },
+  "T_118": {
+    "en": "{t:3.42:0000} Settings: Interface Colour",
+    "ua": "{t:3.42:0000} Колір інтерфейсу"
+  },
+  "T_119": {
+    "en": "{t:3.42:0000} Budgie gig",
+    "ua": "{t:3.42:0000} Виступ папужки"
+  },
+  "T_120": {
+    "en": "{t:3.42:0000} Write-protected SD Cards",
+    "ua": "{t:3.42:0000} Карти SD із захистом запису"
+  },
+  "Guide_Tex_001": {
+    "en": "",
+    "ua": ""
+  },
+  "D_001_0": {
+    "en": "Welcome to\nNintendo 3DS Sound!",
+    "ua": "Вітаємо в\nNintendo 3DS Звуці!"
+  },
+  "D_001_1": {
+    "en": "Here, you can have\nfun playing music and\nrecording sounds.",
+    "ua": "Тут можна залюбки\nграти музику\nй записувати звуки."
+  },
+  "D_001_2": {
+    "en": "{t:4.1:140053005f004700750069006400300033005f005500}You can adjust the\nvolume using the\n{t:0.3:ff3200ff}volume control{t:0.3:454039ff}.",
+    "ua": "{t:4.1:140053005f004700750069006400300033005f005500}Гучність змінюється\n{t:0.3:ff3200ff}повзунком гучності{t:0.3:454039ff}."
+  },
+  "Guide_Tex_002": {
+    "en": "",
+    "ua": ""
+  },
+  "D_002_0": {
+    "en": "Thank you for putting\nsome music data\non the SD Card.",
+    "ua": "Дякую, що поклали\nтрохи музики\nна карту SD."
+  },
+  "D_002_1": {
+    "en": "(If someone else put\nthe music on for you,\ncould you tell them\n\"thanks\" for me?)",
+    "ua": "(Якщо музику вам\nпоклав хтось інший,\nперекажіть йому\nвід мене «дякую»?)"
+  },
+  "D_002_2": {
+    "en": "{t:4.1:140053005f004700750069006400300032005f005500}If you ever want\nto hear more about\nNintendo 3DS Sound,\njust touch me\nwith the stylus.",
+    "ua": "{t:4.1:140053005f004700750069006400300032005f005500}Якщо захочете почути\nбільше про Nintendo 3DS\nЗвук, просто торкніться\nмене стилусом."
+  },
+  "Guide_Tex_003": {
+    "en": "",
+    "ua": ""
+  },
+  "D_003_0": {
+    "en": "{t:0.3:ff3200ff}Turn off{t:0.3:454039ff} your\nNintendo 3DS system\nbefore removing\nthe SD Card.",
+    "ua": "{t:0.3:ff3200ff}Вимкніть{t:0.3:454039ff} консоль\nNintendo 3DS, перш ніж\nвиймати карту SD."
+  },
+  "D_003_1": {
+    "en": "Open the {t:0.3:ff3200ff}slot cover{t:0.3:454039ff}\nand push the SD Card\nin until it clicks.",
+    "ua": "Відкрийте {t:0.3:ff3200ff}кришку гнізда\n{t:0.3:454039ff}і натисніть на карту SD,\nдоки не клацне."
+  },
+  "D_003_2": {
+    "en": "Remove the SD Card\nby pulling the part\nsticking out of the slot.",
+    "ua": "Вийміть карту SD,\nпотягнувши за частину,\nщо стирчить із гнізда."
+  },
+  "D_003_3": {
+    "en": "When inserting an\nSD Card, make sure that\nit is oriented correctly.",
+    "ua": "Вставляючи карту SD,\nпильнуйте, щоб вона\nстояла правильно."
+  },
+  "D_003_4": {
+    "en": "The connectors\nshould be {t:0.3:ff3200ff}facing up{t:0.3:454039ff}.",
+    "ua": "Контакти мають\nдивитися {t:0.3:ff3200ff}вгору{t:0.3:454039ff}."
+  },
+  "Guide_Tex_004": {
+    "en": "",
+    "ua": ""
+  },
+  "D_004_0": {
+    "en": "If you've tried recording\nbut your voice seemed\na bit quiet,",
+    "ua": "Якщо ви пробували\nзаписувати, а голос\nвийшов тихуватий,"
+  },
+  "D_004_1": {
+    "en": "{t:4.1:140053005f004700750069006400300034005f005500}try facing the speech\nbubble and talking.",
+    "ua": "{t:4.1:140053005f004700750069006400300034005f005500}спробуйте говорити\nу бік хмаринки з текстом."
+  },
+  "D_004_2": {
+    "en": "{t:4.1:140053005f004700750069006400300034005f005500}The microphone is\nlocated close to the\nTouch Screen.",
+    "ua": "{t:4.1:140053005f004700750069006400300034005f005500}Мікрофон розташований\nблизько до\nсенсорного екрана."
+  },
+  "Guide_Tex_005": {
+    "en": "",
+    "ua": ""
+  },
+  "D_005_0": {
+    "en": "When editing\nvoice recordings,",
+    "ua": "Коли ви змінюєте\nголосові записи,"
+  },
+  "D_005_1": {
+    "en": "you can overwrite the\noriginal recording by\nselecting Save.",
+    "ua": "початковий запис можна\nперезаписати, вибравши\nЗберегти."
+  },
+  "D_005_2": {
+    "en": "Try applying an effect,\nsaving your changes,\nthen applying more\neffects on top. The\nresults should be\ninteresting. Chirp!",
+    "ua": "Спробуйте накласти\nефект, зберегти зміни,\nа тоді накласти ще\nефекти зверху. Має\nвийти цікаво.\nЦвірінь!"
+  },
+  "D_005_3": {
+    "en": "If you want to keep\nthe original voice\nrecording as well\nas the edited version,",
+    "ua": "Якщо хочете лишити й\nпочатковий голосовий\nзапис, і змінений,"
+  },
+  "D_005_4": {
+    "en": "make sure that you\ncopy it beforehand.",
+    "ua": "не забудьте наперед\nзробити копію."
+  },
+  "Guide_Tex_006": {
+    "en": "",
+    "ua": ""
+  },
+  "D_006_0": {
+    "en": "Nintendo 3DS Sound\nlets you play with music\nin all kinds of ways.",
+    "ua": "Nintendo 3DS Звук дає\nбавитися з музикою\nбезліччю способів."
+  },
+  "D_006_1": {
+    "en": "And there's no need\nto worry: the original\nmusic data on the\nSD Card isn't changed.",
+    "ua": "І не хвилюйтеся:\nпочаткові файли музики\nна карті SD\nне змінюються."
+  },
+  "D_006_2": {
+    "en": "Relax, and have fun\nplaying with your music.",
+    "ua": "Розслабтеся й\nбавтеся з музикою."
+  },
+  "Guide_Tex_007": {
+    "en": "",
+    "ua": ""
+  },
+  "D_007_0": {
+    "en": "Have you found my\nlittle tips and hints\nuseful? I hope so!",
+    "ua": "Чи стали вам у пригоді\nмої маленькі поради?\nСподіваюся, так!"
+  },
+  "D_007_1": {
+    "en": "You can review any of\nthe tips I've already\ngiven you by selecting\nUsage Tips in Settings.",
+    "ua": "Будь-яку з уже наданих\nпорад можна переглянути\nще раз: виберіть Поради\nв параметрах."
+  },
+  "Guide_Tex_008": {
+    "en": "",
+    "ua": ""
+  },
+  "D_008_0": {
+    "en": "Here's a useful hint.",
+    "ua": "Ось корисна підказка."
+  },
+  "D_008_1": {
+    "en": "{t:4.1:140053005f004700750069006400300031005f005500}Press the {t:0.3:ff3200ff}HOME Button{t:0.3:454039ff}\nat any time to return\nto the HOME Menu.",
+    "ua": "{t:4.1:140053005f004700750069006400300031005f005500}Будь-коли натисніть\n{t:0.3:ff3200ff}кнопку HOME{t:0.3:454039ff}, щоб\nповернутися в\nМеню HOME."
+  },
+  "Guide_Tex_009": {
+    "en": "",
+    "ua": ""
+  },
+  "D_009_0": {
+    "en": "",
+    "ua": ""
+  },
+  "D_009_1": {
+    "en": "",
+    "ua": ""
+  },
+  "D_009_2": {
+    "en": "",
+    "ua": ""
+  },
+  "Guide_Tex_010": {
+    "en": "",
+    "ua": ""
+  },
+  "D_010_0": {
+    "en": "",
+    "ua": ""
+  },
+  "D_010_1": {
+    "en": "",
+    "ua": ""
+  },
+  "D_010_2": {
+    "en": "",
+    "ua": ""
+  },
+  "D_010_3": {
+    "en": "",
+    "ua": ""
+  },
+  "D_010_4": {
+    "en": "",
+    "ua": ""
+  },
+  "Guide_Tex_011": {
+    "en": "",
+    "ua": ""
+  },
+  "D_011_0": {
+    "en": "Are you familiar\nwith StreetPass?",
+    "ua": "Чи знайомі ви\nзі StreetPass?"
+  },
+  "D_011_1": {
+    "en": "Nintendo 3DS Sound\nuses StreetPass in\nseveral different ways.",
+    "ua": "Nintendo 3DS Звук\nкористується StreetPass\nу кілька різних способів."
+  },
+  "D_011_2": {
+    "en": "By exchanging song\ninformation with users\nyou pass by, you can\nfind out how compatible\nyour tastes in music are.",
+    "ua": "Обмінюючись даними\nпро пісні з тими, кого\nви минаєте, дізнаєтеся,\nнаскільки споріднені\nваші музичні смаки."
+  },
+  "D_011_3": {
+    "en": "You can also find\nout what songs are\npopular with the\npeople around you.",
+    "ua": "Ще можна дізнатися,\nякі пісні популярні\nсеред людей\nдовкола вас."
+  },
+  "D_011_4": {
+    "en": "To get set up...",
+    "ua": "Щоб налаштувати…"
+  },
+  "D_011_5": {
+    "en": "add five of your most\nfavourite songs to the\nStreetPass playlist.",
+    "ua": "додайте п'ять своїх\nнайулюбленіших пісень\nдо списку StreetPass."
+  },
+  "Guide_Tex_012": {
+    "en": "",
+    "ua": ""
+  },
+  "D_012_0": {
+    "en": "",
+    "ua": ""
+  },
+  "D_012_1": {
+    "en": "",
+    "ua": ""
+  },
+  "D_012_2": {
+    "en": "",
+    "ua": ""
+  },
+  "D_012_3": {
+    "en": "",
+    "ua": ""
+  },
+  "D_012_4": {
+    "en": "",
+    "ua": ""
+  },
+  "Guide_Tex_013": {
+    "en": "",
+    "ua": ""
+  },
+  "D_013_0": {
+    "en": "Here's how to\nstart StreetPass.",
+    "ua": "Ось як запустити\nStreetPass."
+  },
+  "D_013_1": {
+    "en": "{t:0.3:454039ff}{t:4.1:140053005f004700750069006400310039005f005500}First, touch StreetPass,{t:0.3:454039ff}",
+    "ua": "{t:0.3:454039ff}{t:4.1:140053005f004700750069006400310039005f005500}Спершу торкніться\nStreetPass,{t:0.3:454039ff}"
+  },
+  "D_013_2": {
+    "en": "then turn StreetPass on.",
+    "ua": "а тоді ввімкніть\nStreetPass."
+  },
+  "D_013_3": {
+    "en": "{t:4.1:140053005f004700750069006400300036005f005500}Oh, and don't forget\nto make sure that wireless\ncommunication is on.\nIf it isn't, give the\n{t:0.3:ff3200ff}wireless switch{t:0.3:454039ff} a push.",
+    "ua": "{t:4.1:140053005f004700750069006400300036005f005500}Ага, і не забудьте\nперевірити, чи ввімкнено\nбездротовий зв'язок.\nЯкщо ні, натисніть\n{t:0.3:ff3200ff}бездротовий перемикач{t:0.3:454039ff}."
+  },
+  "D_013_4": {
+    "en": "{t:4.1:140053005f004700750069006400300036005f005500}Why not try heading\nout now, with your\nmusic in hand?",
+    "ua": "{t:4.1:140053005f004700750069006400300036005f005500}Чому б не вийти\nна прогулянку зараз,\nіз музикою в руках?"
+  },
+  "Guide_Tex_014": {
+    "en": "",
+    "ua": ""
+  },
+  "D_014_0": {
+    "en": "",
+    "ua": ""
+  },
+  "D_014_1": {
+    "en": "",
+    "ua": ""
+  },
+  "D_014_2": {
+    "en": "",
+    "ua": ""
+  },
+  "Guide_Tex_015": {
+    "en": "",
+    "ua": ""
+  },
+  "D_015_0": {
+    "en": "My sister went to go\nand see The Birdies\nlive the other day.",
+    "ua": "Моя сестра днями\nходила на живий виступ\nгурту The Birdies."
+  },
+  "D_015_1": {
+    "en": "Her Hit Parade in\nNintendo 3DS Sound\nwas on fire!",
+    "ua": "Її хіт-парад у\nNintendo 3DS Звуці\nпросто палав!"
+  },
+  "D_015_2": {
+    "en": "Apparently, everyone\nthere had put songs\nby The Birdies on their\nStreetPass playlists,",
+    "ua": "Виявляється, усі там\nмали пісні The Birdies\nу своїх списках\nStreetPass,"
+  },
+  "D_015_3": {
+    "en": "so when all the fans\nflocked together, even\ntracks from The Birdies'\ndifficult third album\nshot up in the charts.",
+    "ua": "тож коли фанати\nзібралися докупи, навіть\nпісні з важкого третього\nальбому The Birdies\nзлетіли в чартах."
+  },
+  "D_015_4": {
+    "en": "Incidentally, my sister's\nmember number 002\nin The Birdies' fan club.\n\nAmazing, eh? Chirp!",
+    "ua": "До речі, моя сестра —\nучасниця № 002\nфан-клубу The Birdies.\n\nОце так, еге ж? Цвірінь!"
+  },
+  "Guide_Tex_016": {
+    "en": "",
+    "ua": ""
+  },
+  "D_016_0": {
+    "en": "Let me tell you about\nthe Hit Parade.",
+    "ua": "Розкажу вам про\nхіт-парад."
+  },
+  "D_016_1": {
+    "en": "Basically, I gather song \ninformation received\nvia StreetPass to\ncreate a chart of the\nmost popular songs.",
+    "ua": "Якщо коротко, я збираю \nдані про пісні, отримані\nчерез StreetPass, і будую\nз них список\nнайпопулярніших."
+  },
+  "D_016_2": {
+    "en": "You pass by all\nkinds of different\npeople in town...",
+    "ua": "Ви минаєте в місті\nстількох різних\nлюдей…"
+  },
+  "D_016_3": {
+    "en": "I wonder what kind\nof songs and artists\nthey're all listening to?",
+    "ua": "Цікаво, які ж пісні\nй виконавців\nвони всі слухають?"
+  },
+  "Guide_Tex_017": {
+    "en": "",
+    "ua": ""
+  },
+  "D_017_0": {
+    "en": "Let me tell you about\nthe Compatibility list.",
+    "ua": "Розкажу вам про\nсписок спорідненості."
+  },
+  "D_017_1": {
+    "en": "It uses the song data\nyou've exchanged over\nStreetPass to determine\nhow compatible you are\nwith users you pass by.",
+    "ua": "Він бере дані про пісні,\nякими ви обмінялися\nчерез StreetPass, і\nвизначає спорідненість\nіз тими, кого ви минули."
+  },
+  "D_017_2": {
+    "en": "You know, they say that\nfor each person in the\nworld, there are 99 other\npeople who have the exact\nsame taste in music.",
+    "ua": "Знаєте, кажуть, що на\nкожну людину у світі\nє ще 99 людей із\nточнісінько таким\nсамим смаком у музиці."
+  },
+  "D_017_3": {
+    "en": "Do you think\nyou'll ever meet\nthem all? Chirp.",
+    "ua": "Як гадаєте, ви колись\nзустрінете їх\nусіх? Цвірінь."
+  },
+  "Guide_Tex_018": {
+    "en": "",
+    "ua": ""
+  },
+  "D_018_0": {
+    "en": "Have you ever\nseen my friend,\nthe blue budgie?",
+    "ua": "Чи бачили ви колись\nмого приятеля,\nсиню папужку?"
+  },
+  "D_018_1": {
+    "en": "He's got all kinds\nof interesting things\nto say, you know.",
+    "ua": "Він, знаєте, має що\nрозповісти цікавого."
+  },
+  "D_018_2": {
+    "en": "If you see him,\ngive him a tap.",
+    "ua": "Якщо побачите його,\nторкніться його."
+  },
+  "D_018_3": {
+    "en": "I'm such a\ngreat friend!",
+    "ua": "Ото ж я\nдобрий друг!"
+  },
+  "Guide_Tex_019": {
+    "en": "",
+    "ua": ""
+  },
+  "D_019_0": {
+    "en": "Everyone knows what\nbudgies are famous for,\nright? That's right:\nmimicking other sounds.",
+    "ua": "Усі знають, чим славні\nпапужки, правда? Атож:\nвміють перекривляти\nзвуки."
+  },
+  "D_019_1": {
+    "en": "Sometimes, I just get\nthe urge to repeat things\nthat I've overheard, or\nrecordings you've saved.",
+    "ua": "Подеколи мені так і\nкортить повторити те, що\nя підслухала, або ваші\nзбережені записи."
+  },
+  "D_019_2": {
+    "en": "I'm afraid I just can't help\nmyself, so do take care\nnot to say anything\nembarrassing around me.",
+    "ua": "Боюся, я просто не можу\nстриматися, тож не кажіть\nпри мені нічого\nсоромного."
+  },
+  "Guide_Tex_020": {
+    "en": "",
+    "ua": ""
+  },
+  "D_020_0": {
+    "en": "",
+    "ua": ""
+  },
+  "D_020_1": {
+    "en": "",
+    "ua": ""
+  },
+  "D_020_2": {
+    "en": "",
+    "ua": ""
+  },
+  "Guide_Tex_021": {
+    "en": "",
+    "ua": ""
+  },
+  "D_021_0": {
+    "en": "{t:4.1:140053005f004700750069006400310035005f005500}Select some music,\nthen touch the\nAdd... panel.",
+    "ua": "{t:4.1:140053005f004700750069006400310035005f005500}Виберіть якусь музику,\nтоді торкніться\nпанелі Додати…."
+  },
+  "D_021_1": {
+    "en": "{t:4.1:140053005f004700750069006400310035005f005500}You can add music\nto a playlist this way.",
+    "ua": "{t:4.1:140053005f004700750069006400310035005f005500}Так музику можна\nдодати до списку."
+  },
+  "Guide_Tex_022": {
+    "en": "",
+    "ua": ""
+  },
+  "D_022_0": {
+    "en": "I think you can tell\na bit about someone's\npersonality based on\ntheir taste in music.",
+    "ua": "Гадаю, за смаком\nу музиці можна дещо\nсказати про\nхарактер людини."
+  },
+  "D_022_1": {
+    "en": "Why not take a look at\nyour friends' Top Ten\nlists? You might be\nsurprised by a hidden\nside of theirs.",
+    "ua": "Чому б не зазирнути\nв Топ-10 ваших друзів?\nВас може здивувати\nїхній прихований\nбік."
+  },
+  "D_022_2": {
+    "en": "I'd love to show you\nmy own Top Ten list...",
+    "ua": "Я б залюбки показала\nвам свій Топ-10…"
+  },
+  "D_022_3": {
+    "en": "But, well... I'm a bit\nembarrassed by\nwhat's on there.\n\nChirp.",
+    "ua": "Але, ну… мені трохи\nсоромно за те,\nщо там є.\n\nЦвірінь."
+  },
+  "Guide_Tex_023": {
+    "en": "",
+    "ua": ""
+  },
+  "D_023_0": {
+    "en": "",
+    "ua": ""
+  },
+  "D_023_1": {
+    "en": "",
+    "ua": ""
+  },
+  "D_023_2": {
+    "en": "",
+    "ua": ""
+  },
+  "Guide_Tex_024": {
+    "en": "",
+    "ua": ""
+  },
+  "D_024_0": {
+    "en": "If you have some songs\nwhose titles you don't\nwant people to see\nwhile you're listening,",
+    "ua": "Якщо є пісні, назв яких\nви не хочете\nпоказувати іншим\nпід час слухання,"
+  },
+  "D_024_1": {
+    "en": "add them to the\nSecret playlist.",
+    "ua": "додайте їх до списку\nТаємне."
+  },
+  "D_024_2": {
+    "en": "The titles will be\nhidden. For example,\n\"Secret Song\" would\nbe displayed as\n\"S□□□□□□□□□□\".",
+    "ua": "Назви буде приховано.\nСкажімо, «Таємна пісня»\nпокажеться\nяк\n«Т□□□□□□□□□□»."
+  },
+  "D_024_3": {
+    "en": "No matter how uncool the\nsong, you can tell me.\nI promise not to judge\nyour taste in music.\n\n...No? Oh, well.",
+    "ua": "Хоч би яка несмачна\nбула пісня, мені можна\nсказати. Обіцяю не\nсудити ваш смак у музиці.\n\n…Ні? Ну гаразд."
+  },
+  "Guide_Tex_025": {
+    "en": "",
+    "ua": ""
+  },
+  "D_025_0": {
+    "en": "You might be aware of\nthis already, but:",
+    "ua": "Ви, може, вже\nце знаєте, але:"
+  },
+  "D_025_1": {
+    "en": "if you use StreetPass, the\nsystem will exchange\ninformation about songs\nin your StreetPass playlist\nwith other systems.",
+    "ua": "коли ви користуєтеся\nStreetPass, консоль\nобмінюється з іншими\nданими про пісні з вашого\nсписку StreetPass."
+  },
+  "D_025_2": {
+    "en": "Will you use the\nStreetPass playlist\nto show off, fit in or\njust be honest...?",
+    "ua": "Візьмете список\nStreetPass, щоб\nпохизуватися,\nпідлаштуватися\nчи бути щирими?.."
+  },
+  "D_025_3": {
+    "en": "Well, that's up to you.",
+    "ua": "Що ж, вирішувати вам."
+  },
+  "Guide_Tex_026": {
+    "en": "",
+    "ua": ""
+  },
+  "D_026_0": {
+    "en": "Have you tried\ncreating playlists?",
+    "ua": "Чи пробували ви\nстворювати списки?"
+  },
+  "D_026_1": {
+    "en": "Choose a song\nand select Add,\nthen New to\ncreate a playlist.",
+    "ua": "Виберіть пісню й\nнатисніть Додати,\nа тоді Новий,\nщоб створити список."
+  },
+  "D_026_2": {
+    "en": "You can name\nthe playlist and\nchange the icon.",
+    "ua": "Спискові можна дати\nназву й змінити\nйого значок."
+  },
+  "D_026_3": {
+    "en": "I've made a playlist\nfull of my favourite\nupbeat numbers and\ncalled it \"Chirpy Tunes\". ",
+    "ua": "Я склала список із\nсвоїх улюблених\nбадьорих пісень і\nназвала «Цвірінькалки»."
+  },
+  "D_026_4": {
+    "en": "Whenever I'm feeling\ndown, Chirpy Tunes\nnever fails to perk me\nup! Chirp! Chirp!",
+    "ua": "Хоч коли мені сумно,\n«Цвірінькалки» завжди\nпідіймають настрій!\nЦвірінь! Цвірінь!"
+  },
+  "Guide_Tex_027": {
+    "en": "",
+    "ua": ""
+  },
+  "D_027_0": {
+    "en": "When you remove\na song from a playlist,",
+    "ua": "Коли ви прибираєте\nпісню зі списку,"
+  },
+  "D_027_1": {
+    "en": "the original song\ndata isn't deleted\nfrom the SD Card.",
+    "ua": "сам файл пісні\nне видаляється\nз карти SD."
+  },
+  "D_027_2": {
+    "en": "So relax, and feel free\nto remove songs from\nplaylists! Chirp!",
+    "ua": "Тож спокійно\nприбирайте пісні зі\nсписків! Цвірінь!"
+  },
+  "Guide_Tex_028": {
+    "en": "",
+    "ua": ""
+  },
+  "D_028_0": {
+    "en": "What's that? You\ndon't know how to\n{t:0.3:ff3200ff}delete {t:0.3:454039ff}a playlist?",
+    "ua": "Що таке? Ви не знаєте,\nяк {t:0.3:ff3200ff}видалити {t:0.3:454039ff}список?"
+  },
+  "D_028_1": {
+    "en": "Sorry! I completely\nforgot to tell you.",
+    "ua": "Вибачте! Я геть\nзабула сказати."
+  },
+  "D_028_2": {
+    "en": "Open the playlist you\nwant to delete, and\nremove all the songs.",
+    "ua": "Відкрийте список, який\nхочете видалити, і\nприберіть усі пісні."
+  },
+  "D_028_3": {
+    "en": "The playlist itself will\ndisappear once the\nlast song is removed.",
+    "ua": "Сам список зникне,\nщойно ви приберете\nостанню пісню."
+  },
+  "D_028_4": {
+    "en": "Don't worry, though.\nThe music on the\nSD Card won't be lost\nwhen you do this.",
+    "ua": "Але не хвилюйтеся.\nМузика на карті SD\nвід цього\nне пропаде."
+  },
+  "D_028_5": {
+    "en": "I had to delete one of my\nplaylists when I realised\nthat the songs in it didn't\ngo together at all. My\nmusical credibility was\nat stake! Chirp!",
+    "ua": "Мені довелося видалити\nодин зі своїх списків,\nколи я зрозуміла, що\nпісні в ньому геть\nне пасують одна одній.\nЙшлося про мою славу!"
+  },
+  "Guide_Tex_029": {
+    "en": "",
+    "ua": ""
+  },
+  "D_029_0": {
+    "en": "If you select a\nfolder, then touch\nthe Add... panel,",
+    "ua": "Якщо вибрати папку,\nа тоді торкнутися\nпанелі Додати…,"
+  },
+  "D_029_1": {
+    "en": "you can add all of\nthe music in that folder\nto a playlist at once.",
+    "ua": "до списку одразу\nдодасться вся музика\nз тієї папки."
+  },
+  "Guide_Tex_030": {
+    "en": "",
+    "ua": ""
+  },
+  "D_030_0": {
+    "en": "Here's a way to\ncreate a playlist.",
+    "ua": "Ось ще один спосіб\nстворити список."
+  },
+  "D_030_1": {
+    "en": "Select a theme\nfrom Autoplay,\nthen touch the\nAdd... panel.",
+    "ua": "Виберіть тему в\nАвтогрі, а тоді\nторкніться\nпанелі Додати…."
+  },
+  "D_030_2": {
+    "en": "The songs I chose\nfor the theme will\nbe added to any\nplaylist you choose.",
+    "ua": "Пісні, які я дібрала\nдля теми, буде додано\nдо будь-якого списку,\nякий ви оберете."
+  },
+  "Guide_Tex_031": {
+    "en": "",
+    "ua": ""
+  },
+  "D_031_0": {
+    "en": "Have you ever listened\nto music on Autoplay?",
+    "ua": "Чи слухали ви колись\nмузику в Автогрі?"
+  },
+  "D_031_1": {
+    "en": "Here's an insider\nsecret: it's actually\nme choosing the\nsongs for you!",
+    "ua": "Ось таємниця зсередини:\nнасправді це я\nдобираю для вас\nпісні!"
+  },
+  "D_031_2": {
+    "en": "What? You'd guessed\nas much? Well, did you\nknow that any time you\nlisten to music here...",
+    "ua": "Що? Ви й самі\nздогадалися? А чи знали\nви, що коли ви тут\nслухаєте музику…"
+  },
+  "D_031_3": {
+    "en": "...I listen too.",
+    "ua": "…я слухаю теж."
+  },
+  "D_031_4": {
+    "en": "The more I listen to your\nmusic with you, the better\nI'll get at choosing songs\nfor you in Autoplay.\nIt's a rewarding job!",
+    "ua": "Що більше я слухаю\nвашу музику з вами,\nто краще добиратиму\nпісні в Автогрі.\nЦе вдячна праця!"
+  },
+  "Guide_Tex_032": {
+    "en": "",
+    "ua": ""
+  },
+  "D_032_0": {
+    "en": "You can leave song\nselection completely\nup to me if you like.",
+    "ua": "Вибір пісень можна\nповністю лишити\nмені, як хочете."
+  },
+  "D_032_1": {
+    "en": "Just select Autoplay,\nthen Shuffle All.\nI'll do the rest!",
+    "ua": "Просто виберіть Автогру,\nа тоді Усе впереміш.\nРешту зроблю я!"
+  },
+  "D_032_2": {
+    "en": "I'll play your songs\nall shuffled up and\nout of order. It's a\nfun way to listen!",
+    "ua": "Я гратиму ваші пісні\nвпереміш, не за\nпорядком. Слухати\nтак весело!"
+  },
+  "Guide_Tex_033": {
+    "en": "",
+    "ua": ""
+  },
+  "D_033_0": {
+    "en": "Have you ever wondered\nwhich songs you\nlisten to the most?",
+    "ua": "Чи цікаво вам колись\nбуло, які пісні ви\nслухаєте найчастіше?"
+  },
+  "D_033_1": {
+    "en": "Select Autoplay, then\nTop 10 Most Played.",
+    "ua": "Виберіть Автогру, а тоді\nТоп-10 найчастіших."
+  },
+  "D_033_2": {
+    "en": "You might find all\nthe songs you\nexpected to, or\nthere could be\nsome surprises.",
+    "ua": "Може, там будуть\nусі пісні, яких ви\nчекали, а може,\nтрапиться й\nкілька несподіванок."
+  },
+  "D_033_3": {
+    "en": "How about adding the\nsongs you listen to most\nto the Top 10 playlist?",
+    "ua": "Чому б не додати пісні,\nякі ви слухаєте\nнайчастіше, до\nсписку Топ-10?"
+  },
+  "Guide_Tex_034": {
+    "en": "",
+    "ua": ""
+  },
+  "D_034_0": {
+    "en": "",
+    "ua": ""
+  },
+  "D_034_1": {
+    "en": "",
+    "ua": ""
+  },
+  "D_034_2": {
+    "en": "",
+    "ua": ""
+  },
+  "Guide_Tex_035": {
+    "en": "",
+    "ua": ""
+  },
+  "D_035_0": {
+    "en": "You can play sounds\nby pressing {t:0.3:454039ff}{t:0.3:ff3200ff} {t:0.3:454039ff}or {t:0.3:ff3200ff}{t:0.3:323232ff}!\nIt's what I call\n Percussion.\nThere are a variety\nof different instruments.{t:0.3:ff3200ff}{t:0.3:454039ff}{t:0.3:454039ff}",
+    "ua": "Звуки можна грати,\nнатискаючи {t:0.3:454039ff}{t:0.3:ff3200ff} {t:0.3:454039ff}чи {t:0.3:ff3200ff}{t:0.3:323232ff}!\nЯ називаю це\n Ударні.\nІнструментів тут\nчимало різних.{t:0.3:ff3200ff}{t:0.3:454039ff}{t:0.3:454039ff}"
+  },
+  "D_035_1": {
+    "en": "Play in time with the\nmusic and feel the beat!",
+    "ua": "Грайте в лад із музикою\nй відчуйте ритм!"
+  },
+  "D_035_2": {
+    "en": "{t:4.1:140053005f004700750069006400310036005f005500}Touch the button icons to\nchange the instrument.",
+    "ua": "{t:4.1:140053005f004700750069006400310036005f005500}Торкайтеся значків\nкнопок, щоб змінити\nінструмент."
+  },
+  "Guide_Tex_036": {
+    "en": "",
+    "ua": ""
+  },
+  "D_036_0": {
+    "en": "You may have noticed\nthat there's an option\nfor the {t:0.3:454039ff}{t:0.3:323232ff} Percussion{t:0.3:454039ff}{t:0.3:454039ff}\ninstruments that doesn't\nactually play any noise.",
+    "ua": "Ви, певно, помітили, що\nсеред інструментів\n{t:0.3:454039ff}{t:0.3:323232ff} Ударних{t:0.3:454039ff}{t:0.3:454039ff}\nє й такий, що взагалі\nне видає жодного звуку."
+  },
+  "D_036_1": {
+    "en": "What could that be\nthere for? Well...",
+    "ua": "Навіщо він там?\nНу…"
+  },
+  "D_036_2": {
+    "en": "Select it when listening\nto music with the\nsystem in your bag.\nThat way,  Percussion\nwon't make a racket!",
+    "ua": "Виберіть його, коли\nслухаєте музику з\nконсоллю в сумці. Тоді\n Ударні\nне здіймуть галасу!"
+  },
+  "D_036_3": {
+    "en": "Even a soundless\ninstrument has its\nuses, eh? Chirp.",
+    "ua": "Навіть безмовний\nінструмент має свою\nкористь, еге ж? Цвірінь."
+  },
+  "Guide_Tex_037": {
+    "en": "",
+    "ua": ""
+  },
+  "D_037_0": {
+    "en": "One of the  Percussion\ninstrument types plays\nthat famous coin sound.",
+    "ua": "Один з інструментів\n Ударних грає\nславетний звук монети."
+  },
+  "D_037_1": {
+    "en": "Once I play it, I just\ncan't stop. Bling!\nBling! Bling! Chirp.",
+    "ua": "Щойно я його вмикаю,\nне можу спинитися. Дзінь!\nДзінь! Дзінь! Цвірінь."
+  },
+  "Guide_Tex_038": {
+    "en": "",
+    "ua": ""
+  },
+  "D_038_0": {
+    "en": "Try the bark and\nmeow  Percussion\ninstruments.",
+    "ua": "Спробуйте інструменти\n Ударних\n«гавкіт» і «няв»."
+  },
+  "D_038_1": {
+    "en": "Meow and bark with the\nrhythm and you might\nmake some furry friends.",
+    "ua": "Нявкайте й гавкайте\nв ритм — і, може,\nздобудете кількох\nпухнастих друзів."
+  },
+  "D_038_2": {
+    "en": "I don't really get on\nwith cats, though.\nChirp...",
+    "ua": "Хоча з котами я не\nдуже лажу.\nЦвірінь…"
+  },
+  "Guide_Tex_039": {
+    "en": "",
+    "ua": ""
+  },
+  "D_039_0": {
+    "en": "The instruments you\nplay with  Percussion\nhave some hidden depth.",
+    "ua": "Інструменти, якими ви\nграєте в  Ударних,\nмають прихований бік."
+  },
+  "D_039_1": {
+    "en": "Some of them make\na different sound\ndepending on how\nyou play them.",
+    "ua": "Деякі з них видають\nінший звук залежно\nвід того, як\nви граєте."
+  },
+  "D_039_2": {
+    "en": "It's all in the length\nof the button press.\nA {t:0.3:ff3200ff}short press {t:0.3:454039ff}or a\n{t:0.3:ff3200ff}long press{t:0.3:454039ff}? Try it.",
+    "ua": "Уся річ у тривалості\nнатискання. {t:0.3:ff3200ff}Коротке\n{t:0.3:454039ff}чи {t:0.3:ff3200ff}довге{t:0.3:454039ff}? Спробуйте."
+  },
+  "Guide_Tex_040": {
+    "en": "",
+    "ua": ""
+  },
+  "D_040_0": {
+    "en": "{t:4.1:140053005f004700750069006400320030005f005500}This playback mode plays\nall the tracks in a folder\nin order, then stops.",
+    "ua": "{t:4.1:140053005f004700750069006400320030005f005500}Цей режим грає всі\nпісні в папці за\nпорядком, а тоді\nспиняється."
+  },
+  "D_040_1": {
+    "en": "{t:4.1:140053005f004700750069006400320030005f005500}I put songs totalling\nabout 30 minutes in\na folder together...",
+    "ua": "{t:4.1:140053005f004700750069006400320030005f005500}Я склала в одну папку\nпісень десь на\n30 хвилин…"
+  },
+  "D_040_2": {
+    "en": "{t:4.1:140053005f004700750069006400320030005f005500}...and sweat my way\nthrough my daily\nworkout! Chirp!",
+    "ua": "{t:4.1:140053005f004700750069006400320030005f005500}…і потію на своєму\nщоденному\nтренуванні! Цвірінь!"
+  },
+  "D_040_3": {
+    "en": "{t:4.1:140053005f004700750069006400320030005f005500}This way, I don't\nneed to use a timer.",
+    "ua": "{t:4.1:140053005f004700750069006400320030005f005500}Так мені й таймер\nне потрібен."
+  },
+  "Guide_Tex_041": {
+    "en": "",
+    "ua": ""
+  },
+  "D_041_0": {
+    "en": "{t:4.1:140053005f004700750069006400300039005f005500}This playback mode\nplays all the tracks\nin a folder in order,\nin a repeated loop.",
+    "ua": "{t:4.1:140053005f004700750069006400300039005f005500}Цей режим грає всі\nпісні в папці за\nпорядком, по колу."
+  },
+  "D_041_1": {
+    "en": "{t:4.1:140053005f004700750069006400300039005f005500}I tend to listen to my\nlatest favourite songs\nover and over again,\nso I find this handy.",
+    "ua": "{t:4.1:140053005f004700750069006400300039005f005500}Я схильна слухати\nсвої нові улюблені\nпісні знову й знову,\nтож мені це до речі."
+  },
+  "D_041_2": {
+    "en": "{t:4.1:140053005f004700750069006400300039005f005500}Do you do the same\nthing? Put new songs\ninto your daily rotation\nand listen over and over?",
+    "ua": "{t:4.1:140053005f004700750069006400300039005f005500}А ви так само?\nСтавите нові пісні\nна щоденне коло\nй слухаєте раз у раз?"
+  },
+  "D_041_3": {
+    "en": "{t:4.1:140053005f004700750069006400300039005f005500}Or do you prefer to\nlisten to new songs\nless often, so as\nnot to overdo it?",
+    "ua": "{t:4.1:140053005f004700750069006400300039005f005500}Чи волієте слухати\nнові пісні рідше,\nщоб не переїстися?"
+  },
+  "Guide_Tex_042": {
+    "en": "",
+    "ua": ""
+  },
+  "D_042_0": {
+    "en": "{t:4.1:140053005f004700750069006400310030005f005500}This playback mode plays\n{t:0.3:ff3200ff}one track in a loop{t:0.3:454039ff}.",
+    "ua": "{t:4.1:140053005f004700750069006400310030005f005500}Цей режим грає\n{t:0.3:ff3200ff}одну пісню по колу{t:0.3:454039ff}."
+  },
+  "D_042_1": {
+    "en": "{t:4.1:140053005f004700750069006400310030005f005500}This is good for\nwhen you want to\nlearn a new song.",
+    "ua": "{t:4.1:140053005f004700750069006400310030005f005500}Це добре, коли ви\nхочете вивчити\nнову пісню."
+  },
+  "D_042_2": {
+    "en": "{t:4.1:140053005f004700750069006400310030005f005500}I try to stay on top of\nthe latest hits so that\nI can show off my skills.\nKaraoke, anyone?",
+    "ua": "{t:4.1:140053005f004700750069006400310030005f005500}Я намагаюся встигати\nза свіжими хітами, щоб\nблиснути вмінням.\nХто на караоке?"
+  },
+  "Guide_Tex_043": {
+    "en": "",
+    "ua": ""
+  },
+  "D_043_0": {
+    "en": "{t:4.1:140053005f004700750069006400310031005f005500}This playback mode\nlets you listen to\none section of\na track repeatedly.",
+    "ua": "{t:4.1:140053005f004700750069006400310031005f005500}Цей режим дає слухати\nодну частину пісні\nраз у раз."
+  },
+  "D_043_1": {
+    "en": "{t:0.3:454039ff}{t:4.1:140053005f004700750069006400300038005f005500}{t:0.3:454039ff}Slide the {t:0.3:ff3200ff}A {t:0.3:454039ff}and {t:0.3:ff3200ff}B{t:0.3:454039ff}\nmarkers to the start\nand end of the part\nyou want to hear.",
+    "ua": "{t:0.3:454039ff}{t:4.1:140053005f004700750069006400300038005f005500}{t:0.3:454039ff}Посуньте позначки {t:0.3:ff3200ff}A {t:0.3:454039ff}і {t:0.3:ff3200ff}B{t:0.3:454039ff}\nдо початку й кінця\nчастини, яку\nхочете слухати."
+  },
+  "D_043_2": {
+    "en": "{t:0.3:454039ff}{t:4.1:140053005f004700750069006400300038005f005500}{t:0.3:454039ff}You could listen to\npart of a language\nlesson repeatedly\nuntil you've got the\nhang of a tricky phrase.",
+    "ua": "{t:0.3:454039ff}{t:4.1:140053005f004700750069006400300038005f005500}{t:0.3:454039ff}Можна слухати частину\nмовного уроку раз\nу раз, доки не\nопануєте складну\nфразу."
+  },
+  "D_043_3": {
+    "en": "{t:0.3:454039ff}{t:4.1:140053005f004700750069006400300038005f005500}{t:0.3:454039ff}I'm currently studying\nFeline so that I can\ncommunicate with cats\nand get them to stop\nbullying me. Meow!",
+    "ua": "{t:0.3:454039ff}{t:4.1:140053005f004700750069006400300038005f005500}{t:0.3:454039ff}Я саме вчу котячу мову,\nщоб порозумітися з\nкотами й переконати\nїх не чіплятися\nдо мене. Няв!"
+  },
+  "Guide_Tex_044": {
+    "en": "",
+    "ua": ""
+  },
+  "D_044_0": {
+    "en": "{t:0.3:454039ff}{t:4.1:140053005f004700750069006400310032005f005500}{t:0.3:454039ff}This playback mode\nshuffles all the tracks\nin a folder and plays\nthem back in a loop.",
+    "ua": "{t:0.3:454039ff}{t:4.1:140053005f004700750069006400310032005f005500}{t:0.3:454039ff}Цей режим змішує всі\nпісні в папці й грає\nїх по колу."
+  },
+  "D_044_1": {
+    "en": "{t:0.3:454039ff}{t:4.1:140053005f004700750069006400310032005f005500}{t:0.3:454039ff}Shuffling up songs\nlike this is a good\nway to keep your\nmusic collection\nsounding fresh.",
+    "ua": "{t:0.3:454039ff}{t:4.1:140053005f004700750069006400310032005f005500}{t:0.3:454039ff}Отак мішати пісні —\nдобрий спосіб, щоб\nваша збірка звучала\nсвіжо."
+  },
+  "D_044_2": {
+    "en": "{t:0.3:454039ff}{t:4.1:140053005f004700750069006400310032005f005500}{t:0.3:454039ff}It's also fun trying to\nguess which song is\ngoing to be played\nnext. I get it right\nonce in a while.",
+    "ua": "{t:0.3:454039ff}{t:4.1:140053005f004700750069006400310032005f005500}{t:0.3:454039ff}А ще весело вгадувати,\nяка пісня піде\nнаступною. Час від\nчасу я вгадую."
+  },
+  "D_044_3": {
+    "en": "{t:0.3:454039ff}{t:4.1:140053005f004700750069006400310032005f005500}{t:0.3:454039ff}Do you think I might\nbe psychic? Chirp.",
+    "ua": "{t:0.3:454039ff}{t:4.1:140053005f004700750069006400310032005f005500}{t:0.3:454039ff}Може, я віщунка?\nЦвірінь."
+  },
+  "Guide_Tex_045": {
+    "en": "",
+    "ua": ""
+  },
+  "D_045_0": {
+    "en": "You can change the\nvisualiser on the upper\nscreen while listening\nto music, you know.",
+    "ua": "Знаєте, візуалізацію\nна верхньому екрані\nможна змінювати\nпід час слухання."
+  },
+  "D_045_1": {
+    "en": "Just touch the pull-cord.",
+    "ua": "Просто смикніть\nза шнурок."
+  },
+  "D_045_2": {
+    "en": "Find a visualiser you\nlike and enjoy! Chirp!",
+    "ua": "Знайдіть візуалізацію\nдо смаку! Цвірінь!"
+  },
+  "Guide_Tex_046": {
+    "en": "",
+    "ua": ""
+  },
+  "D_046_0": {
+    "en": "",
+    "ua": ""
+  },
+  "D_046_1": {
+    "en": "",
+    "ua": ""
+  },
+  "Guide_Tex_047": {
+    "en": "",
+    "ua": ""
+  },
+  "D_047_0": {
+    "en": "{t:4.1:140053005f004700750069006400310034005f005500}Touch this icon and\nselect the Radio effect\nto activate it on the track\nyou're listening to.",
+    "ua": "{t:4.1:140053005f004700750069006400310034005f005500}Торкніться цього значка\nй виберіть ефект Радіо,\nщоб увімкнути його для\nпісні, яку ви слухаєте."
+  },
+  "D_047_1": {
+    "en": "Doesn't that warm,\nretro sound bring\nyou back to the\nanalogue era?",
+    "ua": "Хіба цей теплий,\nстаровинний звук\nне повертає вас\nу добу аналогу?"
+  },
+  "D_047_2": {
+    "en": "Even with all these\nnew-fangled ways of\nlistening to any song,\nany time, anywhere...",
+    "ua": "Навіть попри всі ці\nновітні способи слухати\nбудь-яку пісню будь-коли\nй будь-де…"
+  },
+  "D_047_3": {
+    "en": "...the wireless still has\na certain magic to it.\nNowadays \"wireless\"\nmeans something\nelse entirely! Chirp!",
+    "ua": "…у радіо все одно є\nсвоя магія. Хоча нині\n«бездротове» означає\nзовсім\nінше! Цвірінь!"
+  },
+  "Guide_Tex_048": {
+    "en": "",
+    "ua": ""
+  },
+  "D_048_0": {
+    "en": "{t:4.1:140053005f004700750069006400310034005f005500}Try touching the\nInstrumental icon while\nlistening to a song.",
+    "ua": "{t:4.1:140053005f004700750069006400310034005f005500}Спробуйте торкнутися\nзначка Інструментал\nпід час пісні."
+  },
+  "D_048_1": {
+    "en": "The song's vocal\nelements will be\nreduced in volume.\nPerfect for some\nkaraoke practice!",
+    "ua": "Гучність вокалу\nв пісні стане\nтихішою. Саме те\nдля вправ\nіз караоке!"
+  },
+  "Guide_Tex_049": {
+    "en": "",
+    "ua": ""
+  },
+  "D_049_0": {
+    "en": "",
+    "ua": ""
+  },
+  "D_049_1": {
+    "en": "",
+    "ua": ""
+  },
+  "Guide_Tex_050": {
+    "en": "",
+    "ua": ""
+  },
+  "D_050_0": {
+    "en": "",
+    "ua": ""
+  },
+  "D_050_1": {
+    "en": "",
+    "ua": ""
+  },
+  "D_050_2": {
+    "en": "",
+    "ua": ""
+  },
+  "D_050_3": {
+    "en": "",
+    "ua": ""
+  },
+  "Guide_Tex_051": {
+    "en": "",
+    "ua": ""
+  },
+  "D_051_0": {
+    "en": "{t:4.1:140053005f004700750069006400310033005f005500}Touch this icon...",
+    "ua": "{t:4.1:140053005f004700750069006400310033005f005500}Торкніться цього значка…"
+  },
+  "D_051_1": {
+    "en": "{t:4.1:140053005f004700750069006400310033005f005500}then slide the stylus\naround the Touch Screen\nto change the speed\nand pitch of the track\nyou're listening to.",
+    "ua": "{t:4.1:140053005f004700750069006400310033005f005500}а тоді водіть стилусом\nпо сенсорному екрану,\nщоб змінити швидкість\nі висоту пісні,\nяку ви слухаєте."
+  },
+  "D_051_2": {
+    "en": "Pitch is on the\nvertical axis,",
+    "ua": "Висота — на\nвертикальній осі,"
+  },
+  "D_051_3": {
+    "en": "and speed on\nthe horizontal.",
+    "ua": "а швидкість —\nна горизонтальній."
+  },
+  "D_051_4": {
+    "en": "You'll be amazed at how\ndifferent songs can sound\nwhen you play around\nwith these settings.\nChhhhhiiiiiiirrrrrrrrrpppp...",
+    "ua": "Ви здивуєтеся, як\nінакше може звучати\nпісня, коли побавитися\nз цими параметрами.\nЦві-і-і-і-і-і-і-інь…"
+  },
+  "Guide_Tex_052": {
+    "en": "",
+    "ua": ""
+  },
+  "D_052_0": {
+    "en": "Have you tried to sing a\nsong, only to find that\nit was in too high a key\nto sing comfortably?",
+    "ua": "Чи бувало, що ви бралися\nспівати пісню й бачили,\nщо тональність зависока,\nаби співати вільно?"
+  },
+  "D_052_1": {
+    "en": "If you have, why not use\nthe pitch-adjustment tool\non songs like that and\nsee if it helps put them\nin your singing range?",
+    "ua": "Якщо так, чому б не\nвзяти знаряддя зміни\nвисоти й не подивитися,\nчи не лягає пісня\nу ваш діапазон?"
+  },
+  "D_052_2": {
+    "en": "Use  for precise\nadjustments in\nhalf-tone intervals.",
+    "ua": " дає точно\nміняти висоту\nпівтонами."
+  },
+  "D_052_3": {
+    "en": "I used to stick to the\noriginal key, but now\nI adjust songs down\nso that I can finally\nsing them properly!",
+    "ua": "Раніше я трималася\nпочаткової тональності,\nа тепер знижую пісні —\nі нарешті співаю\nїх як слід!"
+  },
+  "D_052_4": {
+    "en": "After all, being able to\nsing it is the important\nthing, right? Chirp.",
+    "ua": "Зрештою, головне ж —\nзмогти заспівати,\nправда? Цвірінь."
+  },
+  "Guide_Tex_053": {
+    "en": "",
+    "ua": ""
+  },
+  "D_053_0": {
+    "en": "If you can get used to\nlistening to language\nlessons or practice\nrecordings at higher\nspeeds than the original,",
+    "ua": "Якщо призвичаїтеся\nслухати мовні уроки\nчи навчальні записи\nшвидше за\nпочаткову швидкість,"
+  },
+  "D_053_1": {
+    "en": "you'll find that they're\neasier to understand\nwhen you put them\nback to normal speed.",
+    "ua": "то побачите, що на\nзвичайній швидкості\nвони розуміються\nлегше."
+  },
+  "D_053_2": {
+    "en": "You can adjust the\nspeed from 0.5x\n(half-speed)...",
+    "ua": "Швидкість можна\nміняти від 0,5x\n(удвічі повільніше)…"
+  },
+  "D_053_3": {
+    "en": "...all the way up to\n2x (double speed).",
+    "ua": "…аж до 2x\n(удвічі швидше)."
+  },
+  "D_053_4": {
+    "en": "I listen to my Feline\nstudy recordings at\n1.5x speed, and I'm\nmaking great strides\nin comprehension.",
+    "ua": "Я слухаю свої записи\nз котячої мови на\nшвидкості 1,5x —\nі роблю неабиякі\nуспіхи в розумінні."
+  },
+  "Guide_Tex_054": {
+    "en": "",
+    "ua": ""
+  },
+  "D_054_0": {
+    "en": "",
+    "ua": ""
+  },
+  "D_054_1": {
+    "en": "",
+    "ua": ""
+  },
+  "D_054_2": {
+    "en": "",
+    "ua": ""
+  },
+  "D_054_3": {
+    "en": "",
+    "ua": ""
+  },
+  "Guide_Tex_055": {
+    "en": "",
+    "ua": ""
+  },
+  "D_055_0": {
+    "en": "",
+    "ua": ""
+  },
+  "Guide_Tex_056": {
+    "en": "",
+    "ua": ""
+  },
+  "D_056_0": {
+    "en": "",
+    "ua": ""
+  },
+  "D_056_1": {
+    "en": "",
+    "ua": ""
+  },
+  "D_056_2": {
+    "en": "",
+    "ua": ""
+  },
+  "D_056_3": {
+    "en": "",
+    "ua": ""
+  },
+  "D_056_4": {
+    "en": "",
+    "ua": ""
+  },
+  "D_056_5": {
+    "en": "",
+    "ua": ""
+  },
+  "Guide_Tex_057": {
+    "en": "",
+    "ua": ""
+  },
+  "D_057_0": {
+    "en": "",
+    "ua": ""
+  },
+  "D_057_1": {
+    "en": "",
+    "ua": ""
+  },
+  "D_057_2": {
+    "en": "",
+    "ua": ""
+  },
+  "Guide_Tex_058": {
+    "en": "",
+    "ua": ""
+  },
+  "D_058_0": {
+    "en": "",
+    "ua": ""
+  },
+  "D_058_1": {
+    "en": "",
+    "ua": ""
+  },
+  "D_058_2": {
+    "en": "",
+    "ua": ""
+  },
+  "Guide_Tex_059": {
+    "en": "",
+    "ua": ""
+  },
+  "D_059_0": {
+    "en": "",
+    "ua": ""
+  },
+  "D_059_1": {
+    "en": "",
+    "ua": ""
+  },
+  "D_059_2": {
+    "en": "",
+    "ua": ""
+  },
+  "Guide_Tex_060": {
+    "en": "",
+    "ua": ""
+  },
+  "D_060_0": {
+    "en": "",
+    "ua": ""
+  },
+  "D_060_1": {
+    "en": "",
+    "ua": ""
+  },
+  "D_060_2": {
+    "en": "",
+    "ua": ""
+  },
+  "Guide_Tex_061": {
+    "en": "",
+    "ua": ""
+  },
+  "D_061_0": {
+    "en": "",
+    "ua": ""
+  },
+  "D_061_1": {
+    "en": "I'm sure you're keen to\nplay around with voice\nrecordings, aren't you?",
+    "ua": "Певна, вам кортить\nпобавитися з голосовими\nзаписами, правда ж?"
+  },
+  "D_061_2": {
+    "en": "{t:4.1:140053005f004700750069006400310034005f005500}Just touch this icon\nto get started.",
+    "ua": "{t:4.1:140053005f004700750069006400310034005f005500}Просто торкніться\nцього значка."
+  },
+  "D_061_3": {
+    "en": "{t:4.1:140053005f004700750069006400300037005f005500}Once you've selected\nan effect, {t:0.3:ff3200ff}touch its\nicon again {t:0.3:454039ff}and the\neffect will change.",
+    "ua": "{t:4.1:140053005f004700750069006400300037005f005500}Коли ефект вибрано,\n{t:0.3:ff3200ff}торкніться його значка\nще раз {t:0.3:454039ff}— і ефект\nзміниться."
+  },
+  "Guide_Tex_062": {
+    "en": "",
+    "ua": ""
+  },
+  "D_062_0": {
+    "en": "Try activating the\nBudgie effect\nwhile listening to\na voice recording.",
+    "ua": "Спробуйте ввімкнути\nефект Папужка,\nслухаючи голосовий\nзапис."
+  },
+  "D_062_1": {
+    "en": "It'll sound just like me!\nChirp, chirp! And more\nbudgies in the world can't\nbe a bad thing! Chirp!",
+    "ua": "Звучатиме точнісінько\nяк я! Цвірінь-цвірінь!\nА більше папужок\nу світі — це ж\nне погано! Цвірінь!"
+  },
+  "Guide_Tex_063": {
+    "en": "",
+    "ua": ""
+  },
+  "D_063_0": {
+    "en": "Turn on the Robot\neffect while listening\nto a voice recording.",
+    "ua": "Увімкніть ефект Робот,\nслухаючи голосовий\nзапис."
+  },
+  "D_063_1": {
+    "en": "YOUR. VOICE. WILL.\nSOUND. RATHER.\nMECHANICAL.\n\nAhem. Robot budgies\nsound like this: CHIRP.",
+    "ua": "ВАШ. ГОЛОС.\nЗВУЧАТИМЕ. ДОСИТЬ.\nМЕХАНІЧНО.\n\nКхм. Роботи-папужки\nзвучать так: ЦВІРІНЬ."
+  },
+  "Guide_Tex_064": {
+    "en": "",
+    "ua": ""
+  },
+  "D_064_0": {
+    "en": "Try activating the\nHelium effect\nwhile listening to\na voice recording.",
+    "ua": "Спробуйте ввімкнути\nефект Гелій,\nслухаючи голосовий\nзапис."
+  },
+  "D_064_1": {
+    "en": "Your voice will sound\nhigh-pitched, like you\nwere a tiny insect.\n\"Help meeeeeee!\"",
+    "ua": "Ваш голос стане\nвисоким, наче ви\nкомашка.\n«Рятуйте-е-е-е!»"
+  },
+  "Guide_Tex_065": {
+    "en": "",
+    "ua": ""
+  },
+  "D_065_0": {
+    "en": "By listening to a\nrecording with the\nFan effect turned on,",
+    "ua": "Якщо слухати запис\nз увімкненим\nефектом Вентилятор,"
+  },
+  "D_065_1": {
+    "en": "you can make anyone\ninto an alien.",
+    "ua": "будь-кого можна\nперетворити\nна прибульця."
+  },
+  "D_065_2": {
+    "en": "\"CHIRP! TAKE ME TO\nYOUR LEADER!\"\n\nJust like that.",
+    "ua": "«ЦВІРІНЬ! ВЕДІТЬ МЕНЕ\nДО СВОГО ВОЖДЯ!»\n\nОсь так."
+  },
+  "Guide_Tex_066": {
+    "en": "",
+    "ua": ""
+  },
+  "D_066_0": {
+    "en": "Try activating the\nTunnel effect while\nlistening to a\nvoice recording.",
+    "ua": "Спробуйте ввімкнути\nефект Тунель,\nслухаючи голосовий\nзапис."
+  },
+  "D_066_1": {
+    "en": "The sound will echo.\nI can't be the only one\nwho gets the urge to sing\nand whistle in places that\necho, like stairwells.\nChirp! {t:0.2:5000}Chirp! {t:0.2:6400}{t:0.2:3c00}Chirp!{t:0.2:6400}",
+    "ua": "Звук лунатиме з відлунням.\nНе може бути, щоб лише\nмені кортіло співати й\nсвистіти там, де лунає\nвідлуння, — як-от на сходах.\nЦвірінь! {t:0.2:5000}Цвірінь! {t:0.2:6400}{t:0.2:3c00}Цвірінь!{t:0.2:6400}"
+  },
+  "Guide_Tex_067": {
+    "en": "",
+    "ua": ""
+  },
+  "D_067_0": {
+    "en": "Try activating the\nTransceiver effect\nwhile listening to\na voice recording.",
+    "ua": "Спробуйте ввімкнути\nефект Рація,\nслухаючи голосовий\nзапис."
+  },
+  "D_067_1": {
+    "en": "It'll sound all tinny,\nlike a voice from a\nwalkie-talkie. \"Come\nin, base! The budgie\nhas landed! Over!\"",
+    "ua": "Звук стане деренчливим,\nначе голос із рації.\n«База, прийом! Папужка\nприземлилася!\nПрийом!»"
+  },
+  "Guide_Tex_068": {
+    "en": "",
+    "ua": ""
+  },
+  "D_068_0": {
+    "en": "Turn on the High Harmony\neffect while listening\nto a voice recording.",
+    "ua": "Увімкніть ефект Висока\nгармонія, слухаючи\nголосовий запис."
+  },
+  "D_068_1": {
+    "en": "Your voice will sound\nas light and airy as a\nlittle fairy from the\nbottom of the garden!",
+    "ua": "Ваш голос стане легким\nі повітряним, наче в\nмаленької феї\nз-під куща!"
+  },
+  "Guide_Tex_069": {
+    "en": "",
+    "ua": ""
+  },
+  "D_069_0": {
+    "en": "Try activating the\nSynth Harmony effect\nwhile listening to\na voice recording.",
+    "ua": "Спробуйте ввімкнути\nефект Синт-гармонія,\nслухаючи голосовий\nзапис."
+  },
+  "D_069_1": {
+    "en": "One voice will sound\nlike a three-part harmony.\n",
+    "ua": "Один голос звучатиме\nяк триголосна гармонія.\n"
+  },
+  "D_069_2": {
+    "en": "Two voices will sound\nlike a six-part harmony.",
+    "ua": "Два голоси звучатимуть\nяк шестиголосна гармонія."
+  },
+  "D_069_3": {
+    "en": "Ten voices will sound\nlike... Well, you get\nthe point. Chirp.",
+    "ua": "Десять голосів\nзвучатимуть як…\nНу, ви зрозуміли.\nЦвірінь."
+  },
+  "Guide_Tex_070": {
+    "en": "",
+    "ua": ""
+  },
+  "D_070_0": {
+    "en": "Turn on the Low Harmony\neffect while listening\nto a voice recording.",
+    "ua": "Увімкніть ефект Низька\nгармонія, слухаючи\nголосовий запис."
+  },
+  "D_070_1": {
+    "en": "You'll sound like some\nkind of mythical creature!\nA giant, or maybe a genie?",
+    "ua": "Ви звучатимете, наче\nякась казкова істота!\nВелетень чи, може, джин?"
+  },
+  "Guide_Tex_071": {
+    "en": "",
+    "ua": ""
+  },
+  "D_071_0": {
+    "en": "",
+    "ua": ""
+  },
+  "D_071_1": {
+    "en": "",
+    "ua": ""
+  },
+  "Guide_Tex_072": {
+    "en": "",
+    "ua": ""
+  },
+  "D_072_0": {
+    "en": "",
+    "ua": ""
+  },
+  "D_072_1": {
+    "en": "",
+    "ua": ""
+  },
+  "Guide_Tex_073": {
+    "en": "",
+    "ua": ""
+  },
+  "D_073_0": {
+    "en": "",
+    "ua": ""
+  },
+  "D_073_1": {
+    "en": "",
+    "ua": ""
+  },
+  "Guide_Tex_074": {
+    "en": "",
+    "ua": ""
+  },
+  "D_074_0": {
+    "en": "",
+    "ua": ""
+  },
+  "D_074_1": {
+    "en": "",
+    "ua": ""
+  },
+  "D_074_2": {
+    "en": "",
+    "ua": ""
+  },
+  "D_074_3": {
+    "en": "",
+    "ua": ""
+  },
+  "Guide_Tex_075": {
+    "en": "",
+    "ua": ""
+  },
+  "D_075_0": {
+    "en": "Have you tried playing\naround with the pitch\nof voice recordings?",
+    "ua": "Чи пробували ви бавитися\nз висотою голосових\nзаписів?"
+  },
+  "D_075_1": {
+    "en": "You can make boys\nsound like girls and\ngirls sound like boys.\nThe results can be\nquite hilarious!",
+    "ua": "Хлопці можуть звучати\nяк дівчата, а дівчата —\nяк хлопці. Наслідки\nбувають вельми\nкумедні!"
+  },
+  "D_075_2": {
+    "en": "You could also put on\na high-pitched voice\nwhen recording and then\nlower the pitch to get\na slightly weird version\nof your normal voice.",
+    "ua": "Ще можна записати\nсебе високим голосом,\nа тоді знизити висоту —\nі вийде трохи дивна\nверсія вашого\nзвичайного голосу."
+  },
+  "Guide_Tex_076": {
+    "en": "",
+    "ua": ""
+  },
+  "D_076_0": {
+    "en": "",
+    "ua": ""
+  },
+  "D_076_1": {
+    "en": "",
+    "ua": ""
+  },
+  "D_076_2": {
+    "en": "",
+    "ua": ""
+  },
+  "Guide_Tex_077": {
+    "en": "",
+    "ua": ""
+  },
+  "D_077_0": {
+    "en": "",
+    "ua": ""
+  },
+  "D_077_1": {
+    "en": "",
+    "ua": ""
+  },
+  "D_077_2": {
+    "en": "",
+    "ua": ""
+  },
+  "D_077_3": {
+    "en": "",
+    "ua": ""
+  },
+  "Guide_Tex_078": {
+    "en": "",
+    "ua": ""
+  },
+  "D_078_0": {
+    "en": "You can start a recording\nautomatically by facing\nthe speech bubble\nand speaking loudly.",
+    "ua": "Запис можна почати\nсамотужки: поверніться\nдо хмаринки з текстом\nі скажіть щось гучно."
+  },
+  "D_078_1": {
+    "en": "Handy, isn't it?\nOr should I say...\nhands-free. Chirp!",
+    "ua": "Зручно, правда ж?\nЧи, як то кажуть…\nбез рук. Цвірінь!"
+  },
+  "Guide_Tex_079": {
+    "en": "",
+    "ua": ""
+  },
+  "D_079_0": {
+    "en": "{t:0.3:454039ff}{t:4.1:140053005f004700750069006400310031005f005500}In this playback mode...{t:0.3:454039ff}",
+    "ua": "{t:0.3:454039ff}{t:4.1:140053005f004700750069006400310031005f005500}У цьому режимі…{t:0.3:454039ff}"
+  },
+  "D_079_1": {
+    "en": "{t:4.1:140053005f004700750069006400300038005f005500}...you can slide the\n{t:0.3:ff3200ff}A{t:0.3:454039ff} and {t:0.3:ff3200ff}B{t:0.3:454039ff} markers to\nthe start and end of\nthe part you want to\nhear and it'll be\nrepeated on a loop.",
+    "ua": "{t:4.1:140053005f004700750069006400300038005f005500}…можна посунути\nпозначки {t:0.3:ff3200ff}A{t:0.3:454039ff} і {t:0.3:ff3200ff}B{t:0.3:454039ff} до\nпочатку й кінця частини,\nяку хочете слухати, —\nі вона гратиме\nпо колу."
+  },
+  "D_079_2": {
+    "en": "If you then touch\nSave, the track will\nbe {t:0.3:ff3200ff}cropped to the\nselection and saved{t:0.3:454039ff}.",
+    "ua": "Якщо тоді торкнутися\nЗберегти, пісню буде\n{t:0.3:ff3200ff}обрізано до вибраного\nй збережено{t:0.3:454039ff}."
+  },
+  "Guide_Tex_080": {
+    "en": "",
+    "ua": ""
+  },
+  "D_080_0": {
+    "en": "Have you ever heard\nof the magic phrase\n\"snare feet cell\"?",
+    "ua": "Чи чули ви колись\nпро чарівну фразу\n«тівирп»?"
+  },
+  "D_080_1": {
+    "en": "It's a phrase that can\nhelp you when you\nmeet new people.\nHow do you use\nthis phrase? Simple!",
+    "ua": "Ця фраза стане в пригоді,\nколи ви знайомитеся\nз новими людьми.\nЯк нею користуватися?\nПросто!"
+  },
+  "D_080_2": {
+    "en": "Just record yourself\nsaying \"snare feet cell\",\nthen listen to the\nrecording in reverse.",
+    "ua": "Запишіть, як ви кажете\n«тівирп», а тоді\nпослухайте цей запис\nу зворотному напрямку."
+  },
+  "D_080_3": {
+    "en": "My answer is, of course,\na resounding \"Yes, let's!\"",
+    "ua": "Моя відповідь, звісно,\nгучне «Привіт!»"
+  },
+  "Guide_Tex_081": {
+    "en": "",
+    "ua": ""
+  },
+  "D_081_0": {
+    "en": "Ever heard of the magic\nphrase \"snowshare\nlootard knock\"? It's\na phrase you can use\nwhen someone you know\nhas had some good news.",
+    "ua": "Чули про чарівну фразу\n«юатів»? Її можна\nсказати, коли у\nзнайомої вам людини\nгарні новини."
+  },
+  "D_081_1": {
+    "en": "How do you use this\nphrase? Simple! Just\nrecord yourself saying\n\"snowshare lootard\nknock\" and listen to\nthe recording in reverse.",
+    "ua": "Як нею користуватися?\nПросто! Запишіть, як\nви кажете «юатів»,\nа тоді послухайте запис\nу зворотному напрямку."
+  },
+  "D_081_2": {
+    "en": "The trick is not to pause\nbetween each word.",
+    "ua": "Хитрість у тому, щоб\nне спинятися\nміж складами."
+  },
+  "D_081_3": {
+    "en": "What did you hear\nwhen you played it\nback in reverse?",
+    "ua": "Що ви почули, коли\nпустили запис\nу зворотний бік?"
+  },
+  "Guide_Tex_082": {
+    "en": "",
+    "ua": ""
+  },
+  "D_082_0": {
+    "en": "Here's a way to\nmake your own\nmagic words.",
+    "ua": "Ось як скласти\nсвої власні\nчарівні слова."
+  },
+  "D_082_1": {
+    "en": "Let's try it with\n\"thank you\".",
+    "ua": "Спробуймо зі\nсловом «дякую»."
+  },
+  "D_082_2": {
+    "en": "We want to make\na word that will\nsound like \"thank\nyou\" when played\nbackwards, right?",
+    "ua": "Ми хочемо скласти\nслово, яке звучатиме\nяк «дякую», коли\nйого пустити\nнавпаки, так?"
+  },
+  "D_082_3": {
+    "en": "Let's start by writing\nit out backwards,\nwithout any spaces:\n\nUoyknaht",
+    "ua": "Почнімо з того, що\nзапишемо його\nу зворотному\nпорядку:\n\nуюкяд"
+  },
+  "D_082_4": {
+    "en": "Now say that out to\nyourself, keeping the\nvowel sounds the \nsame as the original.\nWhat does it sound\nlike? \"Ooh oik nat\"?",
+    "ua": "Тепер скажіть це вголос,\nлишаючи голосні\nтакими самими,\nяк у первісному слові.\nНа що це схоже?\n«У-ю-кяд»?"
+  },
+  "D_082_5": {
+    "en": "Experiment until you\nget the magic phrase\nsounding just right.",
+    "ua": "Пробуйте, доки чарівна\nфраза не звучатиме\nяк слід."
+  },
+  "D_082_6": {
+    "en": "The key to perfecting\nit is to record your\nattempts and play\nthem in reverse to\nsee if they sound right.",
+    "ua": "Головне тут — записувати\nсвої спроби й пускати\nїх навпаки, щоб\nперевірити, чи\nзвучить правильно."
+  },
+  "D_082_7": {
+    "en": "Get other people\nto record them, too.\nDifferent accents can\nhave quite an effect\non the results.",
+    "ua": "Попросіть записати й\nінших людей. Різна\nвимова добряче\nвпливає\nна наслідок."
+  },
+  "Guide_Tex_083": {
+    "en": "",
+    "ua": ""
+  },
+  "D_083_0": {
+    "en": "I'll show you how to\nmake your own magic\nphrases that can only\nbe understood in reverse.",
+    "ua": "Покажу вам, як складати\nсвої чарівні фрази,\nякі зрозумілі лише\nу зворотному напрямку."
+  },
+  "D_083_1": {
+    "en": "Try recording yourself\nsaying a word forwards,\nthen listening to it\nplayed in reverse.",
+    "ua": "Спробуйте записати,\nяк ви кажете слово\nвперед, а тоді послухати\nйого навпаки."
+  },
+  "D_083_2": {
+    "en": "Let's use \"hello\"\nas an example.\nPlay this word\nin reverse,",
+    "ua": "Візьмімо за приклад\n«привіт». Пустіть\nце слово\nнавпаки,"
+  },
+  "D_083_3": {
+    "en": "and it sounds\nsomething like\n\"olleh\".",
+    "ua": "і воно звучатиме\nдесь як\n«тівирп»."
+  },
+  "D_083_4": {
+    "en": "This is the word\nyou need to say\nin order to get\n\"hello\" when you\nplay it in reverse.",
+    "ua": "Саме це слово вам\nі треба сказати, щоб\nдістати «привіт»,\nколи ви пустите\nзапис навпаки."
+  },
+  "D_083_5": {
+    "en": "Try it out! Instead of\nfollowing the reversed\nspelling, use the sounds\nthat were in the original\nword, like the 'h' sound\nat the end of 'olleh'.",
+    "ua": "Спробуйте! Не йдіть\nсліпо за написанням\nнавпаки — беріть звуки\nз первісного слова,\nяк-от «т» у кінці\n«тівирп»."
+  },
+  "D_083_6": {
+    "en": "How did it sound?",
+    "ua": "Як воно прозвучало?"
+  },
+  "D_083_7": {
+    "en": "So, the reverse of\na reversed sound\nsounds like the original.",
+    "ua": "Отже, зворот від\nзворотного звуку\nзвучить як первісний."
+  },
+  "D_083_8": {
+    "en": "It's obvious when\nyou think about it,\nbut give it a go!",
+    "ua": "Це очевидно, коли\nподумати, але\nспробуйте!"
+  },
+  "Guide_Tex_084": {
+    "en": "",
+    "ua": ""
+  },
+  "D_084_0": {
+    "en": "Here's a hint on\nmaking magic words.",
+    "ua": "Ось підказка щодо\nскладання чарівних слів."
+  },
+  "D_084_1": {
+    "en": "Try to use words that\nstart with a vowel.",
+    "ua": "Беріть слова, що\nпочинаються з голосної."
+  },
+  "D_084_2": {
+    "en": "\"Alligator\"\n\"Arugula\"\n\"Onomatopoeia\"\n(Just kidding! Chirp!)\n\"Elegant\"",
+    "ua": "«Автобус»\n«Огірок»\n«Ономатопея»\n(Жартую! Цвірінь!)\n«Елегантний»"
+  },
+  "D_084_3": {
+    "en": "This will make it\neasier to pronounce\nthe words backwards.",
+    "ua": "Так вимовляти слова\nнавпаки буде\nлегше."
+  },
+  "Guide_Tex_085": {
+    "en": "",
+    "ua": ""
+  },
+  "D_085_0": {
+    "en": "",
+    "ua": ""
+  },
+  "D_085_1": {
+    "en": "",
+    "ua": ""
+  },
+  "D_085_2": {
+    "en": "",
+    "ua": ""
+  },
+  "Guide_Tex_086": {
+    "en": "",
+    "ua": ""
+  },
+  "D_086_0": {
+    "en": "",
+    "ua": ""
+  },
+  "D_086_1": {
+    "en": "",
+    "ua": ""
+  },
+  "Guide_Tex_087": {
+    "en": "",
+    "ua": ""
+  },
+  "D_087_0": {
+    "en": "Why not try recording\na message for a\nfamily member to greet\nthem when they come\nback home?\n\"Welcome home!\"",
+    "ua": "Чому б не записати\nпослання для рідних,\nяке привітає їх, коли\nвони повернуться\nдодому?\n«Вітаємо вдома!»"
+  },
+  "Guide_Tex_088": {
+    "en": "",
+    "ua": ""
+  },
+  "D_088_0": {
+    "en": "Why not commemorate\na graduation or wedding\nby gathering a collection\nof recorded greetings\nfrom different people?",
+    "ua": "Чому б не відзначити\nвипуск чи весілля,\nзібравши збірку\nзаписаних привітань\nвід різних людей?"
+  },
+  "Guide_Tex_089": {
+    "en": "",
+    "ua": ""
+  },
+  "D_089_0": {
+    "en": "Are the touch sound\neffects getting in the\nway of your tunes?",
+    "ua": "Звуки дотику заважають\nвам слухати\nмузику?"
+  },
+  "D_089_1": {
+    "en": "You can turn them off\nin Settings and enjoy\nthe music as it was\nmeant to be heard!",
+    "ua": "Їх можна вимкнути\nв параметрах — і\nслухати музику\nтак, як задумано!"
+  },
+  "Guide_Tex_090": {
+    "en": "",
+    "ua": ""
+  },
+  "D_090_0": {
+    "en": "It's easy to change\nthe audio-output mode\nin Nintendo 3DS Sound.",
+    "ua": "Змінити режим виводу\nзвуку в Nintendo 3DS\nЗвуці легко."
+  },
+  "D_090_1": {
+    "en": "Go to Settings, then\nAudio Output.",
+    "ua": "Відкрийте Параметри,\nа тоді Вивід звуку."
+  },
+  "D_090_2": {
+    "en": "You can choose from\nSurround, Stereo\nor Mono sound.",
+    "ua": "На вибір є\nОб'ємний, Стерео\nчи Моно."
+  },
+  "D_090_3": {
+    "en": "Stereo is like listening\nto a performance\nin front of you.",
+    "ua": "Стерео — це наче\nслухати виступ\nперед собою."
+  },
+  "D_090_4": {
+    "en": "Surround is more like\nbeing...well, surrounded\nby the sound! Chirp!",
+    "ua": "А об'ємний — це наче\nбути… ну, оточеним\nзвуком! Цвірінь!"
+  },
+  "Guide_Tex_091": {
+    "en": "",
+    "ua": ""
+  },
+  "D_091_0": {
+    "en": "Touch Resume to continue\nthe last song you were\nlistening to from the point\nwhere you left off.",
+    "ua": "Торкніться Далі, щоб\nпродовжити останню\nпісню з того місця,\nде ви спинилися."
+  },
+  "D_091_1": {
+    "en": "It's handy when you've\ntaken a break from\nlistening to music to\ndo some recordings.",
+    "ua": "Зручно, коли ви\nперервали слухання\nмузики, щоб\nщось записати."
+  },
+  "Guide_Tex_092": {
+    "en": "",
+    "ua": ""
+  },
+  "D_092_0": {
+    "en": "Why not take\na short break?",
+    "ua": "Чому б не зробити\nневеличку перерву?"
+  },
+  "Guide_Tex_093": {
+    "en": "",
+    "ua": ""
+  },
+  "D_093_0": {
+    "en": "By pressing {t:0.3:ff3200ff}{t:0.3:454039ff}, you can\nconfirm selections.",
+    "ua": "Натисканням {t:0.3:ff3200ff}{t:0.3:454039ff} можна\nпідтверджувати вибір."
+  },
+  "D_093_1": {
+    "en": "{t:0.3:454039ff}But did you know you\ncan also use it to\nplay and pause?{t:0.3:454039ff}",
+    "ua": "{t:0.3:454039ff}А чи знали ви, що нею\nтакож можна вмикати\nй спиняти відтворення?{t:0.3:454039ff}"
+  },
+  "Guide_Tex_094": {
+    "en": "",
+    "ua": ""
+  },
+  "D_094_0": {
+    "en": "By pressing {t:0.3:ff3200ff}{t:0.3:454039ff}, you can\ngo back, close messages\nand cancel.",
+    "ua": "Натисканням {t:0.3:ff3200ff}{t:0.3:454039ff} можна\nвертатися, закривати\nповідомлення\nй скасовувати."
+  },
+  "D_094_1": {
+    "en": "But did you know you\ncan also use it to reset\nthe {t:0.3:ff3200ff}pitch and speed\n{t:0.3:454039ff}of recorded sounds?",
+    "ua": "А чи знали ви, що нею\nтакож можна скидати\n{t:0.3:ff3200ff}висоту й швидкість\n{t:0.3:454039ff}записаних звуків?"
+  },
+  "Guide_Tex_095": {
+    "en": "",
+    "ua": ""
+  },
+  "D_095_0": {
+    "en": "Press {t:0.3:ff3200ff} {t:0.3:454039ff}or {t:0.3:ff3200ff}{t:0.3:454039ff} to\nchange the current\n Percussion\ninstruments.",
+    "ua": "Натискайте {t:0.3:ff3200ff} {t:0.3:454039ff}чи {t:0.3:ff3200ff}{t:0.3:454039ff},\nщоб змінити поточні\nінструменти\n Ударних."
+  },
+  "Guide_Tex_096": {
+    "en": "",
+    "ua": ""
+  },
+  "D_096_0": {
+    "en": "You can press {t:0.3:ff3200ff} {t:0.3:454039ff}to go to\nthe previous song, and {t:0.3:ff3200ff}{t:0.3:454039ff}\nto skip to the next song.",
+    "ua": "{t:0.3:ff3200ff} {t:0.3:454039ff}переходить до\nпопередньої пісні,\nа {t:0.3:ff3200ff}{t:0.3:454039ff} — до наступної."
+  },
+  "Guide_Tex_097": {
+    "en": "",
+    "ua": ""
+  },
+  "D_097_0": {
+    "en": "You can press {t:0.3:ff3200ff}{t:0.3:454039ff} or {t:0.3:ff3200ff}{t:0.3:454039ff}\nto change between\ndifferent visualisers.",
+    "ua": "Натисканням {t:0.3:ff3200ff}{t:0.3:454039ff} чи {t:0.3:ff3200ff}{t:0.3:454039ff}\nможна перемикати\nвізуалізації."
+  },
+  "Guide_Tex_098": {
+    "en": "",
+    "ua": ""
+  },
+  "D_098_0": {
+    "en": "When playing a recording,\nyou can use {t:0.3:ff3200ff} {t:0.3:454039ff}to select\na different recording.",
+    "ua": "Під час відтворення\nзапису {t:0.3:ff3200ff} {t:0.3:454039ff}дає вибрати\nінший запис."
+  },
+  "Guide_Tex_099": {
+    "en": "",
+    "ua": ""
+  },
+  "D_099_0": {
+    "en": "",
+    "ua": ""
+  },
+  "D_099_1": {
+    "en": "",
+    "ua": ""
+  },
+  "D_099_2": {
+    "en": "",
+    "ua": ""
+  },
+  "Guide_Tex_100": {
+    "en": "",
+    "ua": ""
+  },
+  "D_100_0": {
+    "en": "If you suddenly\nthink up a great\nmelody, record it\nbefore you forget it!",
+    "ua": "Якщо вам раптом\nспаде на думку гарна\nмелодія, запишіть її,\nдоки не забули!"
+  },
+  "Guide_Tex_101": {
+    "en": "",
+    "ua": ""
+  },
+  "D_101_0": {
+    "en": "",
+    "ua": ""
+  },
+  "D_101_1": {
+    "en": "",
+    "ua": ""
+  },
+  "D_101_2": {
+    "en": "",
+    "ua": ""
+  },
+  "D_101_3": {
+    "en": "",
+    "ua": ""
+  },
+  "D_101_4": {
+    "en": "",
+    "ua": ""
+  },
+  "Guide_Tex_102": {
+    "en": "",
+    "ua": ""
+  },
+  "D_102_0": {
+    "en": "If you're using\nheadphones...",
+    "ua": "Якщо ви в\nнавушниках…"
+  },
+  "D_102_1": {
+    "en": "you can still listen to\nmusic even with the\nsystem closed.",
+    "ua": "музику можна слухати\nнавіть із закритою\nконсоллю."
+  },
+  "D_102_2": {
+    "en": "This is quite handy for\nwhen you want to listen\nto music while you're\nout and about.",
+    "ua": "Це доволі зручно, коли\nхочеться слухати\nмузику в дорозі."
+  },
+  "D_102_3": {
+    "en": "But keep in mind that\nif you keep the system\nclosed all the time, we\nwon't get to see each\nother. I might get lonely,\nyou know... Chirp.",
+    "ua": "Але пам'ятайте: якщо\nтримати консоль\nзакритою весь час,\nми не бачитимемося.\nМені може стати\nсамотньо… Цвірінь."
+  },
+  "Guide_Tex_103": {
+    "en": "",
+    "ua": ""
+  },
+  "D_103_0": {
+    "en": "When saving a\nrecording, you\ncan choose a\ncolour for it.",
+    "ua": "Зберігаючи запис,\nможна вибрати\nдля нього\nколір."
+  },
+  "D_103_1": {
+    "en": "You know that nice,\ncolourful OK button?\nJust touch the colour\non it that you want to\nuse for your recording.",
+    "ua": "Знаєте ту гарну\nбарвисту кнопку OK?\nПросто торкніться на\nній того кольору, який\nхочете для запису."
+  },
+  "D_103_2": {
+    "en": "I like to use red for\nmy own voice, and\ngreen for my friends.",
+    "ua": "Я люблю червоний\nдля свого голосу,\nа зелений — для друзів."
+  },
+  "D_103_3": {
+    "en": "And orange?",
+    "ua": "А помаранчевий?"
+  },
+  "D_103_4": {
+    "en": "Well, that's for...\n\nChirp.",
+    "ua": "Ну, це для…\n\nЦвірінь."
+  },
+  "Guide_Tex_104": {
+    "en": "",
+    "ua": ""
+  },
+  "D_104_0": {
+    "en": "Have you noticed the\nimages on the upper\nscreen that change\nas the music plays?",
+    "ua": "Чи помічали ви\nзображення на верхньому\nекрані, які змінюються\nпід музику?"
+  },
+  "D_104_1": {
+    "en": "It's called a\n\"visualiser\".",
+    "ua": "Це зветься\n«візуалізація»."
+  },
+  "D_104_2": {
+    "en": "That's such a cool\nname. It sounds like\nan action movie hero.\n\"The Visualiser\"!",
+    "ua": "Оце назва! Звучить,\nначе герой бойовика.\n«Візуалізатор»!"
+  },
+  "Guide_Tex_105": {
+    "en": "",
+    "ua": ""
+  },
+  "D_105_0": {
+    "en": "Want to move a voice\nrecording to a different\non-screen slot?",
+    "ua": "Хочете перенести\nголосовий запис\nв інше місце на екрані?"
+  },
+  "D_105_1": {
+    "en": "Just touch Move, then\ntouch and slide the\nrecording to move it\nwherever you want.",
+    "ua": "Просто торкніться\nПеренести, тоді візьміть\nзапис і посуньте\nтуди, куди хочете."
+  },
+  "D_105_2": {
+    "en": "If you touch Copy\ninstead of Move,",
+    "ua": "Якщо натиснути\nКопія замість\nПеренести,"
+  },
+  "D_105_3": {
+    "en": "you can copy a voice\nrecording to a different\nlocation using the\nsame technique.",
+    "ua": "голосовий запис можна\nтак само скопіювати\nв інше місце."
+  },
+  "D_105_4": {
+    "en": "Try touching and sliding\nany voice recordings\nthat you want to copy.",
+    "ua": "Беріть і посувайте\nбудь-які записи,\nякі хочете скопіювати."
+  },
+  "Guide_Tex_106": {
+    "en": "",
+    "ua": ""
+  },
+  "D_106_0": {
+    "en": "",
+    "ua": ""
+  },
+  "D_106_1": {
+    "en": "",
+    "ua": ""
+  },
+  "D_106_2": {
+    "en": "",
+    "ua": ""
+  },
+  "D_106_3": {
+    "en": "",
+    "ua": ""
+  },
+  "Guide_Tex_107": {
+    "en": "",
+    "ua": ""
+  },
+  "D_107_0": {
+    "en": "If you want to move\nsome voice recordings\nto another page,",
+    "ua": "Якщо хочете перенести\nголосові записи\nна іншу сторінку,"
+  },
+  "D_107_1": {
+    "en": "just touch and hold\nthe stylus on the\nicon for the recording\nyou want to move,",
+    "ua": "просто притримайте\nстилус на значку\nзапису, який\nхочете перенести,"
+  },
+  "D_107_2": {
+    "en": "then slide it over the\npanel you'd normally\ntouch to change pages.",
+    "ua": "а тоді посуньте його\nна панель, якою ви\nзазвичай гортаєте\nсторінки."
+  },
+  "Guide_Tex_108": {
+    "en": "",
+    "ua": ""
+  },
+  "D_108_0": {
+    "en": "When I'm out for a stroll,\nI like to sing.",
+    "ua": "Коли я виходжу на\nпрогулянку, люблю\nспівати."
+  },
+  "D_108_1": {
+    "en": "If I come across someone\nwhile walking around, my\nfirst impulse is to stop my\nmusical chirping.",
+    "ua": "Якщо дорогою мені хтось\nтрапляється, перший\nпорив — припинити\nсвоє цвірінькання."
+  },
+  "D_108_2": {
+    "en": "But instead I tend to raise\nmy voice and keep on\nsinging louder than before.",
+    "ua": "Але натомість я схильна\nпідвищити голос і\nспівати ще гучніше."
+  },
+  "D_108_3": {
+    "en": "After all, I wouldn’t want\nthe people to think I’m\nembarrassed to be heard\nsinging in public…even\nthough I am.",
+    "ua": "Зрештою, не хочу, щоб\nлюди подумали, ніби мені\nсоромно співати\nпри людях… хоч\nмені й соромно."
+  },
+  "D_108_4": {
+    "en": "I'm sure I'm not\nthe only one who\ndoes this. Chirp?",
+    "ua": "Певна, я не одна\nтака. Цвірінь?"
+  },
+  "Guide_Tex_109": {
+    "en": "",
+    "ua": ""
+  },
+  "D_109_0": {
+    "en": "I just love singing\nkaraoke alone.",
+    "ua": "Я просто обожнюю\nспівати караоке сама."
+  },
+  "D_109_1": {
+    "en": "It's great. I can dance\nand belt out the classics\nwithout worrying about\nwhat other people think.",
+    "ua": "Це чудово. Можна\nтанцювати й горлати\nкласику, не думаючи,\nщо скажуть інші."
+  },
+  "D_109_2": {
+    "en": "I can even practise\nsongs that I'd be\nembarrassed to sing\nbadly in front of others.",
+    "ua": "Можна навіть\nповправлятися в піснях,\nякі соромно було б\nзіпсувати при людях."
+  },
+  "D_109_3": {
+    "en": "I also write up a list\nof what I want to\nsing in advance.",
+    "ua": "Ще я заздалегідь\nпишу список того,\nщо хочу заспівати."
+  },
+  "D_109_4": {
+    "en": "After all, I don't want \nto waste time worrying\nabout what to put on next.",
+    "ua": "Зрештою, не хочу \nгаяти час на роздуми,\nщо ж поставити далі."
+  },
+  "D_109_5": {
+    "en": "Chirp. I bet solo karaoke\nis a lot more complicated\nthan you thought, eh?",
+    "ua": "Цвірінь. Певна, караоке\nнаодинці куди складніше,\nніж вам здавалося, еге ж?"
+  },
+  "Guide_Tex_110": {
+    "en": "",
+    "ua": ""
+  },
+  "D_110_0": {
+    "en": "Have you seen the\nKeep-up visualiser?",
+    "ua": "Чи бачили ви\nвізуалізацію\n«Не впусти»?"
+  },
+  "D_110_1": {
+    "en": "Here's a tip: you can\ncontrol the game\nusing the {t:0.3:ff3200ff}Circle Pad{t:0.3:454039ff}.",
+    "ua": "Ось порада: грою можна\nкерувати {t:0.3:ff3200ff}Circle Pad{t:0.3:454039ff}'ом."
+  },
+  "D_110_2": {
+    "en": "See how long you\ncan keep the ball\nin the air! Chirp!",
+    "ua": "Погляньте, як довго\nви втримаєте м'яч\nу повітрі! Цвірінь!"
+  },
+  "D_110_3": {
+    "en": "Olé, olé-olé-olé!",
+    "ua": "Оле, оле-оле-оле!"
+  },
+  "Guide_Tex_111": {
+    "en": "",
+    "ua": ""
+  },
+  "D_111_0": {
+    "en": "Have you ever listened\nto a recording of your\nown voice, and thought\nit sounded like someone\ncompletely different?",
+    "ua": "Чи слухали ви колись\nзапис власного голосу\nй думали, що він звучить,\nначе хтось\nзовсім інший?"
+  },
+  "D_111_1": {
+    "en": "There's a reason for\nthis. When you hear\nyour voice normally,\nyou're actually hearing\ntwo things at once.",
+    "ua": "Тому є причина. Коли\nви чуєте свій голос\nзвичайно, ви насправді\nчуєте дві речі\nводночас."
+  },
+  "D_111_2": {
+    "en": "One is the voice others\nhear, transmitted through\nthe air. The other is the\nsound transmitted inside\nyour head as you speak. ",
+    "ua": "Одна — це голос, який\nчують інші, переданий\nповітрям. Друга — звук,\nщо йде всередині вашої\nголови, коли ви говорите."
+  },
+  "D_111_3": {
+    "en": "When you hear a\nrecording of your\nvoice, you're hearing\nit without the sound\ninside your head.",
+    "ua": "Коли ви слухаєте\nзапис свого голосу,\nви чуєте його без\nзвуку всередині\nголови."
+  },
+  "D_111_4": {
+    "en": "That's why it sounds\nso unfamiliar to you,\nbut not to others.",
+    "ua": "Ось чому він здається\nвам таким незвичним,\nа іншим — ні."
+  },
+  "D_111_5": {
+    "en": "I prefer the way my voice\nsounds inside my head,\nto be honest. Chirp.",
+    "ua": "Як на мене, мій голос\nвсередині голови кращий,\nчесно кажучи. Цвірінь."
+  },
+  "Guide_Tex_112": {
+    "en": "",
+    "ua": ""
+  },
+  "D_112_0": {
+    "en": "Up to 18 recordings\ncan be stored per\npage (screen).",
+    "ua": "На одній сторінці\n(екрані) вміщається\nдо 18 записів."
+  },
+  "D_112_1": {
+    "en": "The recordings on\nthe dark-coloured\npage are saved to\nthe {t:0.3:ff3200ff}System Memory{t:0.3:454039ff}.",
+    "ua": "Записи на темній\nсторінці збережено\nв {t:0.3:ff3200ff}пам'яті системи{t:0.3:454039ff}."
+  },
+  "D_112_2": {
+    "en": "Those on the\nlight-coloured pages\nare saved to\nthe {t:0.3:ff3200ff}SD Card{t:0.3:454039ff}.",
+    "ua": "А ті, що на світлих\nсторінках, збережено\nна {t:0.3:ff3200ff}карту SD{t:0.3:454039ff}."
+  },
+  "Guide_Tex_113": {
+    "en": "",
+    "ua": ""
+  },
+  "D_113_0": {
+    "en": "",
+    "ua": ""
+  },
+  "D_113_1": {
+    "en": "",
+    "ua": ""
+  },
+  "D_113_2": {
+    "en": "",
+    "ua": ""
+  },
+  "Guide_Tex_114": {
+    "en": "",
+    "ua": ""
+  },
+  "D_114_0": {
+    "en": "Want to delete multiple\nrecordings at once?\nThere is a way.",
+    "ua": "Хочете видалити кілька\nзаписів одразу?\nСпосіб є."
+  },
+  "D_114_1": {
+    "en": "Go to Settings, then\nData Management.",
+    "ua": "Відкрийте Параметри,\nа тоді Керування даними."
+  },
+  "D_114_2": {
+    "en": "You can delete one\npage of recordings\nat a time, or get rid of\nthe whole lot at once.",
+    "ua": "Можна видаляти по\nодній сторінці записів\nабо позбутися\nвсього одразу."
+  },
+  "Guide_Tex_115": {
+    "en": "",
+    "ua": ""
+  },
+  "D_115_0": {
+    "en": "When driving down\na bumpy road,",
+    "ua": "Коли ви їдете\nвибоїстою дорогою,"
+  },
+  "D_115_1": {
+    "en": "have you ever wanted\nto open your mouth\nand go \"aaaaaaahhhh\"?",
+    "ua": "чи хотілося вам колись\nвідкрити рота й\nпротягнути «а-а-а-а-а»?"
+  },
+  "D_115_2": {
+    "en": "It's great fun\nmaking your voice\ntremble like that.",
+    "ua": "Отак тремтіти голосом —\nсправжня втіха."
+  },
+  "D_115_3": {
+    "en": "Or is it just me?",
+    "ua": "Чи це лише я?"
+  },
+  "Guide_Tex_116": {
+    "en": "",
+    "ua": ""
+  },
+  "D_116_0": {
+    "en": "Do you know what\n\"woodnetninn\" means?",
+    "ua": "Чи знаєте ви, що\nозначає «однетнін»?"
+  },
+  "D_116_1": {
+    "en": "It's a word you can\nonly understand by\nrecording yourself\nsaying it and listening\nto the recording.",
+    "ua": "Це слово можна\nзрозуміти, лише\nзаписавши, як ви його\nкажете, і послухавши\nзапис навпаки."
+  },
+  "D_116_2": {
+    "en": "Hmm, what could it be?",
+    "ua": "Гм, що ж це таке?"
+  },
+  "Guide_Tex_117": {
+    "en": "",
+    "ua": ""
+  },
+  "D_117_0": {
+    "en": "If you want to adjust\nthe sense of depth in\nthe visualisers,",
+    "ua": "Якщо хочете змінити\nвідчуття глибини\nу візуалізаціях,"
+  },
+  "D_117_1": {
+    "en": "{t:4.1:140053005f004700750069006400310038005f005500}simply move the\n{t:0.3:ff3200ff}3D depth slider {t:0.3:454039ff}up or\ndown as required.",
+    "ua": "{t:4.1:140053005f004700750069006400310038005f005500}просто підніміть або\nопустіть {t:0.3:ff3200ff}повзунок\nглибини 3D{t:0.3:454039ff}."
+  },
+  "Guide_Tex_118": {
+    "en": "",
+    "ua": ""
+  },
+  "D_118_0": {
+    "en": "If you feel like a change,\nselect {t:0.3:ff3200ff}Interface Colour\n{t:0.3:454039ff}in Settings to give\nNintendo 3DS Sound\na new look.",
+    "ua": "Якщо хочеться змін,\nвиберіть {t:0.3:ff3200ff}Колір інтерфейсу\n{t:0.3:454039ff}у параметрах —\nі Nintendo 3DS Звук\nматиме новий вигляд."
+  },
+  "D_118_1": {
+    "en": "Not sure which colour\nto go for? Just give the\nselection cursor a flick\nand leave it up to luck.",
+    "ua": "Не знаєте, який колір\nобрати? Просто крутніть\nкурсор вибору й\nздайтеся на щастя."
+  },
+  "D_118_2": {
+    "en": "Select Reset to return\nto the original colour.",
+    "ua": "Виберіть Скинути, щоб\nповернути початковий\nколір."
+  },
+  "Guide_Tex_119": {
+    "en": "",
+    "ua": ""
+  },
+  "D_119_0": {
+    "en": "A pair of budgies are\nputting on another\nshow somewhere today.",
+    "ua": "Двоє папужок сьогодні\nдесь дають\nчергову виставу."
+  },
+  "D_119_1": {
+    "en": "Music? Drama? Stand-up\ncomedy? Well, they're\na very multi-talented pair,",
+    "ua": "Музика? Драма?\nСтендап? Ну, вони пара\nвельми різнобічна,"
+  },
+  "D_119_2": {
+    "en": "though no one's\nseen them before.",
+    "ua": "хоч їх ніхто\nще й не бачив."
+  },
+  "D_119_3": {
+    "en": "They're always\npractising in\nsecret, though.",
+    "ua": "Але вони весь час\nпотай\nвправляються."
+  },
+  "Guide_Tex_120": {
+    "en": "",
+    "ua": ""
+  },
+  "D_120_0": {
+    "en": "Oh!",
+    "ua": "Ой!"
+  },
+  "D_120_1": {
+    "en": "{t:0.3:454039ff}{t:4.1:140053005f004700750069006400320031005f005500}{t:0.3:454039ff}It looks like\nyour SD Card is\nwrite-protected.",
+    "ua": "{t:0.3:454039ff}{t:4.1:140053005f004700750069006400320031005f005500}{t:0.3:454039ff}Здається, ваша\nкарта SD захищена\nвід запису."
+  },
+  "D_120_2": {
+    "en": "{t:0.3:454039ff}{t:4.1:140053005f004700750069006400320031005f005500}{t:0.3:454039ff}This means you can only\nuse Nintendo 3DS Sound\nto listen to tracks stored\non the SD Card. You can't\nsave any recordings to it.",
+    "ua": "{t:0.3:454039ff}{t:4.1:140053005f004700750069006400320031005f005500}{t:0.3:454039ff}Це означає, що в\nNintendo 3DS Звуці ви\nзможете лише слухати\nпісні з карти SD. Записи\nна неї не збережуться."
+  },
+  "D_120_3": {
+    "en": "{t:0.3:454039ff}{t:4.1:140053005f004700750069006400320032005f005500}{t:0.3:454039ff}Don't worry - simply turn\nthe power off and move\nthe {t:0.3:ff3200ff}write-protection switch\n{t:0.3:454039ff}to the off position, and\nyou'll be able to record\nto the SD Card.",
+    "ua": "{t:0.3:454039ff}{t:4.1:140053005f004700750069006400320032005f005500}{t:0.3:454039ff}Не хвилюйтеся — просто\nвимкніть живлення й\nпереведіть {t:0.3:ff3200ff}перемикач\nзахисту {t:0.3:454039ff}у положення\n«вимк.» — і зможете\nписати на карту SD."
+  },
+  "D_120_4": {
+    "en": "{t:0.3:454039ff}{t:4.1:140053005f004700750069006400320032005f005500}{t:0.3:454039ff}Phew! If only all\nproblems were\nthis easy to solve.",
+    "ua": "{t:0.3:454039ff}{t:4.1:140053005f004700750069006400320032005f005500}{t:0.3:454039ff}Фух! Якби ж усі\nклопоти розв'язувалися\nтак легко."
+  }
+}

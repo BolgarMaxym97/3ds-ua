@@ -1,0 +1,1342 @@
+{
+  "_010": {
+    "en": "",
+    "ua": ""
+  },
+  "SD_Invalid": {
+    "en": "",
+    "ua": ""
+  },
+  "SD_Invalid_00": {
+    "en": "Could not access\nSD Card.",
+    "ua": "Немає доступу до\nкарти SD."
+  },
+  "SD_Invalid_B00": {
+    "en": "OK",
+    "ua": "OK"
+  },
+  "SD_Protected": {
+    "en": "Cannot write to the\nSD Card. Please turn off\nthe power and move the\nwrite-protection switch\non the SD Card to the\noff position.",
+    "ua": "Не вдається писати\nна карту SD. Вимкніть\nживлення й переведіть\nперемикач захисту на\nкарті SD у положення\n«вимк.»."
+  },
+  "SD_Protected_B00": {
+    "en": "OK",
+    "ua": "OK"
+  },
+  "SD_Remove": {
+    "en": "The SD Card has\nbeen removed.\n\nPlease turn off the power\nbefore removing SD Cards.",
+    "ua": "Карту SD\nвийнято.\n\nПеред тим як виймати\nкарту SD, вимикайте\nживлення."
+  },
+  "SD_Remove_B00": {
+    "en": "OK",
+    "ua": "OK"
+  },
+  "SD_Full_P_00": {
+    "en": "The SD Card does not\nhave enough free space.\nCannot create\nany new playlists.",
+    "ua": "На карті SD не вистачає\nвільного місця. Створити\nновий список\nне вдасться."
+  },
+  "SD_Full_P_B00": {
+    "en": "OK",
+    "ua": "OK"
+  },
+  "SD_Full_R_00": {
+    "en": "The SD Card does not\nhave enough free space.\nCannot save any\nnew recordings.",
+    "ua": "На карті SD не вистачає\nвільного місця. Зберегти\nновий запис\nне вдасться."
+  },
+  "SD_Full_R_B00": {
+    "en": "OK",
+    "ua": "OK"
+  },
+  "SD_Full_R_01": {
+    "en": "The SD Card does not\nhave enough free space.\nCannot overwrite\nthe recording.",
+    "ua": "На карті SD не вистачає\nвільного місця.\nПерезаписати запис\nне вдасться."
+  },
+  "SD_Full_R_B01": {
+    "en": "OK",
+    "ua": "OK"
+  },
+  "SD_Full_R_02": {
+    "en": "The SD Card does not\nhave enough free space.\nCannot move\nthe recording.",
+    "ua": "На карті SD не вистачає\nвільного місця. Перенести\nзапис не вдасться."
+  },
+  "SD_Full_R_B02": {
+    "en": "OK",
+    "ua": "OK"
+  },
+  "SD_Full_R_03": {
+    "en": "The SD Card does not\nhave enough free space.\nCannot copy the\nrecording.",
+    "ua": "На карті SD не вистачає\nвільного місця.\nСкопіювати запис\nне вдасться."
+  },
+  "SD_Full_R_B03": {
+    "en": "OK",
+    "ua": "OK"
+  },
+  "SD_Full_CEC_00": {
+    "en": "The SD Card does not\nhave enough free space.\nCannot save any\nmore photos.",
+    "ua": "На карті SD не вистачає\nвільного місця. Зберегти\nще фото\nне вдасться."
+  },
+  "SD_Full_CEC_B00": {
+    "en": "OK",
+    "ua": "OK"
+  },
+  "_100": {
+    "en": "",
+    "ua": ""
+  },
+  "C_ErrPlay": {
+    "en": "Could not play.",
+    "ua": "Відтворити не вдалося."
+  },
+  "C_B_ErrPlay": {
+    "en": "OK",
+    "ua": "OK"
+  },
+  "P_Bro_000": {
+    "en": "Checking SD Card...",
+    "ua": "Перевірка карти SD…"
+  },
+  "_110": {
+    "en": "",
+    "ua": ""
+  },
+  "P_B_Fx_00_0": {
+    "en": "Radio",
+    "ua": "Радіо"
+  },
+  "P_B_Fx_00_1": {
+    "en": "Radio",
+    "ua": "Радіо"
+  },
+  "P_B_Fx_10_0": {
+    "en": "Instrumental",
+    "ua": "Інструментал"
+  },
+  "P_B_Fx_10_1": {
+    "en": "Instrumental",
+    "ua": "Інструментал"
+  },
+  "P_B_Fx_20_0": {
+    "en": "Echo",
+    "ua": "Луна"
+  },
+  "P_B_Fx_20_1": {
+    "en": "Echo",
+    "ua": "Луна"
+  },
+  "P_B_Fx_30_0": {
+    "en": "8-Bit Game",
+    "ua": "8-бітна гра"
+  },
+  "P_B_Fx_30_1": {
+    "en": "8-Bit Game",
+    "ua": "8-бітна гра"
+  },
+  "_120": {
+    "en": "",
+    "ua": ""
+  },
+  "P_Add_000": {
+    "en": "Add to which playlist?",
+    "ua": "До якого списку додати?"
+  },
+  "P_B_Add_000": {
+    "en": "Cancel",
+    "ua": "Скасувати"
+  },
+  "P_B_Add_001": {
+    "en": "Add",
+    "ua": "Додати"
+  },
+  "P_B_Add_002": {
+    "en": "New",
+    "ua": "Новий"
+  },
+  "P_Add_010": {
+    "en": "Added to\n{t:3.46:0000}.",
+    "ua": "Додано до\n{t:3.46:0000}."
+  },
+  "P_B_Add_010": {
+    "en": "OK",
+    "ua": "OK"
+  },
+  "P_Add_020": {
+    "en": "Could not update playlist.",
+    "ua": "Оновити список\nне вдалося."
+  },
+  "P_B_Add_020": {
+    "en": "OK",
+    "ua": "OK"
+  },
+  "P_Add_030": {
+    "en": "All songs in\n{t:1.0:5c00}{t:3.46:0000}{t:1.0:6400}\nwill be added to a playlist.\n\nContinue?",
+    "ua": "Усі пісні зі\n{t:1.0:5c00}{t:3.46:0000}{t:1.0:6400}\nбуде додано до списку.\n\nПродовжити?"
+  },
+  "P_B_Add_030": {
+    "en": "Yes",
+    "ua": "Так"
+  },
+  "P_B_Add_031": {
+    "en": "No",
+    "ua": "Ні"
+  },
+  "P_Add_040": {
+    "en": "Not all songs can be\nadded. Is this OK?",
+    "ua": "Не всі пісні можна\nдодати. Продовжити?"
+  },
+  "P_B_Add_040": {
+    "en": "Yes",
+    "ua": "Так"
+  },
+  "P_B_Add_041": {
+    "en": "No",
+    "ua": "Ні"
+  },
+  "P_Add_050": {
+    "en": "Adding to\nplaylist...",
+    "ua": "Додавання до\nсписку…"
+  },
+  "P_Add_080": {
+    "en": "One or more of these\nsongs is already in\nthe StreetPass playlist.\nYou cannot add the same\nsong to the StreetPass\nplaylist more than once.",
+    "ua": "Одна чи кілька з цих\nпісень уже є у списку\nStreetPass. Ту саму\nпісню не можна додати\nдо списку StreetPass\nдвічі."
+  },
+  "P_B_Add_080": {
+    "en": "OK",
+    "ua": "OK"
+  },
+  "P_Add_090": {
+    "en": "There are no songs\nthat can be added\nto playlists.",
+    "ua": "Немає пісень, які\nможна додати\nдо списків."
+  },
+  "P_B_Add_090": {
+    "en": "OK",
+    "ua": "OK"
+  },
+  "P_New_000": {
+    "en": "Are this title and icon OK?",
+    "ua": "Ця назва і значок\nпасують?"
+  },
+  "P_B_New_000": {
+    "en": "Change Title",
+    "ua": "Змінити назву"
+  },
+  "P_B_New_001": {
+    "en": "Change Icon",
+    "ua": "Змінити значок"
+  },
+  "P_B_New_002": {
+    "en": "Cancel",
+    "ua": "Скасувати"
+  },
+  "P_B_New_003": {
+    "en": "Confirm",
+    "ua": "Підтвердити"
+  },
+  "P_New_010": {
+    "en": "Select an icon.",
+    "ua": "Виберіть значок."
+  },
+  "P_B_New_010": {
+    "en": "",
+    "ua": ""
+  },
+  "P_B_New_011": {
+    "en": "Cancel",
+    "ua": "Скасувати"
+  },
+  "P_B_New_012": {
+    "en": "Confirm",
+    "ua": "Підтвердити"
+  },
+  "P_New_050": {
+    "en": "A playlist with this\nname already exists.\n\nAre you sure you want\nto use this name?",
+    "ua": "Список із такою назвою\nуже існує.\n\nСправді взяти\nцю назву?"
+  },
+  "P_B_New_050": {
+    "en": "Yes",
+    "ua": "Так"
+  },
+  "P_B_New_051": {
+    "en": "No",
+    "ua": "Ні"
+  },
+  "_130": {
+    "en": "",
+    "ua": ""
+  },
+  "P_Rmv_000": {
+    "en": "All songs will be removed\nfrom the playlist\n\"{t:3.46:0000}\".\n\nContinue?",
+    "ua": "Усі пісні буде прибрано\nзі списку\n«{t:3.46:0000}».\n\nПродовжити?"
+  },
+  "P_B_Rmv_000": {
+    "en": "Yes",
+    "ua": "Так"
+  },
+  "P_B_Rmv_001": {
+    "en": "No",
+    "ua": "Ні"
+  },
+  "P_Rmv_010": {
+    "en": "",
+    "ua": ""
+  },
+  "P_B_Rmv_010": {
+    "en": "",
+    "ua": ""
+  },
+  "P_B_Rmv_011": {
+    "en": "",
+    "ua": ""
+  },
+  "P_Rmv_020": {
+    "en": "Could not update playlist.",
+    "ua": "Оновити список\nне вдалося."
+  },
+  "P_B_Rmv_020": {
+    "en": "OK",
+    "ua": "OK"
+  },
+  "P_Rmv_030": {
+    "en": "Removed all tracks from\n\"{t:1.0:5c00}{t:3.46:0000}{t:1.0:6400}\".",
+    "ua": "Усі пісні прибрано зі\n«{t:1.0:5c00}{t:3.46:0000}{t:1.0:6400}»."
+  },
+  "P_B_Rmv_030": {
+    "en": "OK",
+    "ua": "OK"
+  },
+  "P_Rmv_050": {
+    "en": "Removing...",
+    "ua": "Прибирання…"
+  },
+  "P_Rmv_100": {
+    "en": "The selected song will be\nremoved from the playlist\n\"{t:1.0:5c00}{t:3.46:0000}{t:1.0:6400}\".\n\nContinue?",
+    "ua": "Вибрану пісню буде\nприбрано зі списку\n«{t:1.0:5c00}{t:3.46:0000}{t:1.0:6400}».\n\nПродовжити?"
+  },
+  "P_B_Rmv_100": {
+    "en": "Yes",
+    "ua": "Так"
+  },
+  "P_B_Rmv_101": {
+    "en": "No",
+    "ua": "Ні"
+  },
+  "P_Rmv_110": {
+    "en": "",
+    "ua": ""
+  },
+  "P_B_Rmv_110": {
+    "en": "",
+    "ua": ""
+  },
+  "P_Rmv_120": {
+    "en": "To use StreetPass,\nyou must add at\nleast one song to the\nStreetPass playlist.",
+    "ua": "Щоб користуватися\nStreetPass, додайте до\nсписку StreetPass\nхоча б одну пісню."
+  },
+  "P_B_Rmv_120": {
+    "en": "OK",
+    "ua": "OK"
+  },
+  "P_Del_000": {
+    "en": "All tracks will be\nremoved from\n\"{t:1.0:5c00}{t:3.46:0000}{t:1.0:6400}\"\nand the playlist\nwill be deleted.\nIs this OK?",
+    "ua": "Усі пісні буде\nприбрано зі\n«{t:1.0:5c00}{t:3.46:0000}{t:1.0:6400}»,\nа сам список\nбуде видалено.\nПродовжити?"
+  },
+  "P_B_Del_000": {
+    "en": "Yes",
+    "ua": "Так"
+  },
+  "P_B_Del_001": {
+    "en": "No",
+    "ua": "Ні"
+  },
+  "P_Del_010": {
+    "en": "",
+    "ua": ""
+  },
+  "P_B_Del_010": {
+    "en": "",
+    "ua": ""
+  },
+  "P_Del_020": {
+    "en": "Deleted\n\"{t:1.0:5c00}{t:3.46:0000}{t:1.0:6400}\".",
+    "ua": "«{t:1.0:5c00}{t:3.46:0000}{t:1.0:6400}»\nвидалено."
+  },
+  "P_B_Del_020": {
+    "en": "OK",
+    "ua": "OK"
+  },
+  "P_DeadLink_000": {
+    "en": "One of the music data files\nin this playlist cannot be\nfound on the SD Card.\n\nRemove the missing file\nfrom this playlist?",
+    "ua": "Одного з файлів музики\nз цього списку немає\nна карті SD.\n\nПрибрати відсутній файл\nіз цього списку?"
+  },
+  "P_B_DeadLink_000": {
+    "en": "Yes",
+    "ua": "Так"
+  },
+  "P_B_DeadLink_001": {
+    "en": "No",
+    "ua": "Ні"
+  },
+  "P_DeadLink_010": {
+    "en": "Some of the music data\nfiles in this playlist cannot\nbe found on the SD Card.\n\nRemove the missing files\nfrom this playlist?",
+    "ua": "Кількох файлів музики\nз цього списку немає\nна карті SD.\n\nПрибрати відсутні файли\nіз цього списку?"
+  },
+  "P_B_DeadLink_010": {
+    "en": "Yes",
+    "ua": "Так"
+  },
+  "P_B_DeadLink_011": {
+    "en": "No",
+    "ua": "Ні"
+  },
+  "_140": {
+    "en": "",
+    "ua": ""
+  },
+  "P_Pub_000": {
+    "en": "",
+    "ua": ""
+  },
+  "P_B_Pub_000": {
+    "en": "",
+    "ua": ""
+  },
+  "P_B_Pub_001": {
+    "en": "",
+    "ua": ""
+  },
+  "P_Pub_001": {
+    "en": "",
+    "ua": ""
+  },
+  "P_Pub_002": {
+    "en": "",
+    "ua": ""
+  },
+  "P_B_Pub_002": {
+    "en": "",
+    "ua": ""
+  },
+  "P_Pub_100": {
+    "en": "",
+    "ua": ""
+  },
+  "P_B_Pub_100": {
+    "en": "",
+    "ua": ""
+  },
+  "P_Pub_110": {
+    "en": "",
+    "ua": ""
+  },
+  "P_B_Pub_110": {
+    "en": "",
+    "ua": ""
+  },
+  "_200": {
+    "en": "",
+    "ua": ""
+  },
+  "R_Recover_00": {
+    "en": "A problem was detected\nwith the recordings saved\nto the System Memory.\n\nRepairing the recordings...",
+    "ua": "Виявлено проблему із\nзаписами, збереженими\nв пам'яті системи.\n\nВиправлення записів…"
+  },
+  "R_Recover_10": {
+    "en": "Repaired recordings.",
+    "ua": "Записи виправлено."
+  },
+  "R_B_Recover_10": {
+    "en": "OK",
+    "ua": "OK"
+  },
+  "R_Recover_90": {
+    "en": "Failed to repair\nrecordings.",
+    "ua": "Виправити записи\nне вдалося."
+  },
+  "R_B_Recover_90": {
+    "en": "OK",
+    "ua": "OK"
+  },
+  "_210": {
+    "en": "",
+    "ua": ""
+  },
+  "R_B_Fx_00_0": {
+    "en": "Budgie",
+    "ua": "Папужка"
+  },
+  "R_B_Fx_00_1": {
+    "en": "Budgie",
+    "ua": "Папужка"
+  },
+  "R_B_Fx_01_0": {
+    "en": "Robot",
+    "ua": "Робот"
+  },
+  "R_B_Fx_01_1": {
+    "en": "Robot",
+    "ua": "Робот"
+  },
+  "R_B_Fx_02_0": {
+    "en": "Helium",
+    "ua": "Гелій"
+  },
+  "R_B_Fx_02_1": {
+    "en": "Helium",
+    "ua": "Гелій"
+  },
+  "R_B_Fx_10_0": {
+    "en": "Electric Fan",
+    "ua": "Вентилятор"
+  },
+  "R_B_Fx_10_1": {
+    "en": "Electric Fan",
+    "ua": "Вентилятор"
+  },
+  "R_B_Fx_11_0": {
+    "en": "Tunnel",
+    "ua": "Тунель"
+  },
+  "R_B_Fx_11_1": {
+    "en": "Tunnel",
+    "ua": "Тунель"
+  },
+  "R_B_Fx_12_0": {
+    "en": "Transceiver",
+    "ua": "Рація"
+  },
+  "R_B_Fx_12_1": {
+    "en": "Transceiver",
+    "ua": "Рація"
+  },
+  "R_B_Fx_20_0": {
+    "en": "{t:1.0:5d00}Low Harmony{t:1.0:6400}",
+    "ua": "{t:1.0:5d00}Низька гарм.{t:1.0:6400}"
+  },
+  "R_B_Fx_20_1": {
+    "en": "{t:1.0:5d00}Low Harmony{t:1.0:6400}",
+    "ua": "{t:1.0:5d00}Низька гарм.{t:1.0:6400}"
+  },
+  "R_B_Fx_21_0": {
+    "en": "{t:1.0:5d00}High Harmony{t:1.0:6400}",
+    "ua": "{t:1.0:5d00}Висока гарм.{t:1.0:6400}"
+  },
+  "R_B_Fx_21_1": {
+    "en": "{t:1.0:5d00}High Harmony{t:1.0:6400}",
+    "ua": "{t:1.0:5d00}Висока гарм.{t:1.0:6400}"
+  },
+  "R_B_Fx_22_0": {
+    "en": "{t:1.0:5500}Synth Harmony{t:1.0:6400}",
+    "ua": "{t:1.0:5500}Синт-гармонія{t:1.0:6400}"
+  },
+  "R_B_Fx_22_1": {
+    "en": "{t:1.0:5500}Synth Harmony{t:1.0:6400}",
+    "ua": "{t:1.0:5500}Синт-гармонія{t:1.0:6400}"
+  },
+  "R_B_Fx_30_0": {
+    "en": "Trumpet",
+    "ua": "Труба"
+  },
+  "R_B_Fx_30_1": {
+    "en": "Trumpet",
+    "ua": "Труба"
+  },
+  "R_B_Fx_31_0": {
+    "en": "Whistle",
+    "ua": "Свисток"
+  },
+  "R_B_Fx_31_1": {
+    "en": "Whistle",
+    "ua": "Свисток"
+  },
+  "R_B_Fx_32_0": {
+    "en": "Buzzer",
+    "ua": "Зумер"
+  },
+  "R_B_Fx_32_1": {
+    "en": "Buzzer",
+    "ua": "Зумер"
+  },
+  "_220": {
+    "en": "",
+    "ua": ""
+  },
+  "R_Rec_000": {
+    "en": "Touch to start.",
+    "ua": "Торкніться, щоб почати."
+  },
+  "R_B_Rec_000": {
+    "en": "Cancel",
+    "ua": "Скасувати"
+  },
+  "R_Rec_010": {
+    "en": "Recording...",
+    "ua": "Запис…"
+  },
+  "R_Rec_020": {
+    "en": "Touch OK to save\nthis recording.",
+    "ua": "Торкніться OK, щоб\nзберегти цей запис."
+  },
+  "R_B_Rec_020": {
+    "en": "OK",
+    "ua": "OK"
+  },
+  "R_B_Rec_021": {
+    "en": "Cancel",
+    "ua": "Скасувати"
+  },
+  "R_Rec_030": {
+    "en": "Saving recording...",
+    "ua": "Збереження…"
+  },
+  "R_Rec_090": {
+    "en": "Save failed.",
+    "ua": "Не збережено."
+  },
+  "R_B_Rec_090": {
+    "en": "OK",
+    "ua": "OK"
+  },
+  "_230": {
+    "en": "",
+    "ua": ""
+  },
+  "R_Del_000": {
+    "en": "Delete this recording?",
+    "ua": "Видалити цей запис?"
+  },
+  "R_B_Del_000": {
+    "en": "Yes",
+    "ua": "Так"
+  },
+  "R_B_Del_001": {
+    "en": "No",
+    "ua": "Ні"
+  },
+  "R_Del_020": {
+    "en": "Deleting...",
+    "ua": "Видалення…"
+  },
+  "R_Del_010": {
+    "en": "Could not delete\nthe recording.",
+    "ua": "Видалити запис\nне вдалося."
+  },
+  "R_B_Del_010": {
+    "en": "OK",
+    "ua": "OK"
+  },
+  "_240": {
+    "en": "",
+    "ua": ""
+  },
+  "R_Sav_000": {
+    "en": "",
+    "ua": ""
+  },
+  "R_B_Sav_000": {
+    "en": "",
+    "ua": ""
+  },
+  "R_Sav_010": {
+    "en": "Playing edited\nrecording...",
+    "ua": "Відтворення\nзміненого запису…"
+  },
+  "R_B_Sav_010": {
+    "en": "Cancel",
+    "ua": "Скасувати"
+  },
+  "R_Sav_020": {
+    "en": "Are you sure you\nwant to overwrite\nthis recording?",
+    "ua": "Справді хочете\nперезаписати\nцей запис?"
+  },
+  "R_B_Sav_020": {
+    "en": "OK",
+    "ua": "OK"
+  },
+  "R_B_Sav_021": {
+    "en": "Cancel",
+    "ua": "Скасувати"
+  },
+  "R_Sav_030": {
+    "en": "Saving recording...",
+    "ua": "Збереження запису…"
+  },
+  "R_Sav_090": {
+    "en": "Could not save\nthe recording.",
+    "ua": "Зберегти запис\nне вдалося."
+  },
+  "R_B_Sav_090": {
+    "en": "OK",
+    "ua": "OK"
+  },
+  "_250": {
+    "en": "",
+    "ua": ""
+  },
+  "R_VoiceMov_000": {
+    "en": "If there are recordings\non the target page, the\ncontents of the pages \nwill be swapped.\n\nContinue?",
+    "ua": "Якщо на сторінці\nпризначення є записи,\nвміст сторінок\nбуде обміняно.\n\nПродовжити?"
+  },
+  "R_VoiceMov_B000": {
+    "en": "Yes",
+    "ua": "Так"
+  },
+  "R_VoiceMov_B001": {
+    "en": "No",
+    "ua": "Ні"
+  },
+  "R_VoiceMov_010": {
+    "en": "Moving...",
+    "ua": "Перенесення…"
+  },
+  "R_VoiceMov_020": {
+    "en": "Moved.",
+    "ua": "Перенесено."
+  },
+  "R_VoiceMov_B020": {
+    "en": "OK",
+    "ua": "OK"
+  },
+  "R_VoiceMov_090": {
+    "en": "Could not move.",
+    "ua": "Перенести не вдалося."
+  },
+  "R_VoiceMov_B090": {
+    "en": "OK",
+    "ua": "OK"
+  },
+  "R_VoiceCpy_000": {
+    "en": "This will copy\nall recordings\non this page.\n\nContinue?",
+    "ua": "Буде скопійовано\nусі записи\nна цій сторінці.\n\nПродовжити?"
+  },
+  "R_VoiceCpy_B000": {
+    "en": "Yes",
+    "ua": "Так"
+  },
+  "R_VoiceCpy_B001": {
+    "en": "No",
+    "ua": "Ні"
+  },
+  "R_VoiceCpy_010": {
+    "en": "Copying...",
+    "ua": "Копіювання…"
+  },
+  "R_VoiceCpy_020": {
+    "en": "Copied.",
+    "ua": "Скопійовано."
+  },
+  "R_VoiceCpy_B020": {
+    "en": "OK",
+    "ua": "OK"
+  },
+  "R_VoiceCpy_090": {
+    "en": "Could not copy.",
+    "ua": "Скопіювати не вдалося."
+  },
+  "R_VoiceCpy_B090": {
+    "en": "OK",
+    "ua": "OK"
+  },
+  "_300": {
+    "en": "",
+    "ua": ""
+  },
+  "Set_Col_000": {
+    "en": "Sample",
+    "ua": "Зразок"
+  },
+  "Set_Col_001": {
+    "en": "Interface Colour",
+    "ua": "Колір інтерфейсу"
+  },
+  "Set_B_Col_00": {
+    "en": "Cancel",
+    "ua": "Скасувати"
+  },
+  "Set_B_Col_01": {
+    "en": "Confirm",
+    "ua": "Підтвердити"
+  },
+  "Set_B_Col_02": {
+    "en": "Reset",
+    "ua": "Скинути"
+  },
+  "_310": {
+    "en": "",
+    "ua": ""
+  },
+  "Set_I_Out_00": {
+    "en": "Select from surround, stereo\nor mono audio output for the\nspeakers or headphones.",
+    "ua": "Виберіть об'ємний, стерео\nчи моно вивід звуку для\nдинаміків або навушників."
+  },
+  "Set_Out_000": {
+    "en": "Audio Output",
+    "ua": "Вивід звуку"
+  },
+  "Set_B_Out_00_0": {
+    "en": "Surround",
+    "ua": "Об'ємний"
+  },
+  "Set_B_Out_00_1": {
+    "en": "Surround",
+    "ua": "Об'ємний"
+  },
+  "Set_B_Out_10_0": {
+    "en": "Stereo",
+    "ua": "Стерео"
+  },
+  "Set_B_Out_10_1": {
+    "en": "Stereo",
+    "ua": "Стерео"
+  },
+  "Set_B_Out_20_0": {
+    "en": "Mono",
+    "ua": "Моно"
+  },
+  "Set_B_Out_20_1": {
+    "en": "Mono",
+    "ua": "Моно"
+  },
+  "Set_B_Out_30": {
+    "en": "Confirm",
+    "ua": "Готово"
+  },
+  "_320": {
+    "en": "",
+    "ua": ""
+  },
+  "Set_I_SE_00": {
+    "en": "Set whether to play\ntouch sounds when\nplaying with tracks\non the SD Card.",
+    "ua": "Задайте, чи лунатиме\nзвук дотику, коли ви\nбавитеся з піснями\nз карти SD."
+  },
+  "Set_SE_000": {
+    "en": "Touch Sound",
+    "ua": "Звук дотику"
+  },
+  "Set_B_SE_00_0": {
+    "en": "Off",
+    "ua": "Вимк."
+  },
+  "Set_B_SE_00_1": {
+    "en": "Off",
+    "ua": "Вимк."
+  },
+  "Set_B_SE_10_0": {
+    "en": "On",
+    "ua": "Увімк."
+  },
+  "Set_B_SE_10_1": {
+    "en": "On",
+    "ua": "Увімк."
+  },
+  "Set_B_SE_20": {
+    "en": "Confirm",
+    "ua": "Готово"
+  },
+  "Set_SE_010": {
+    "en": "Touch sounds\nwill not be played.",
+    "ua": "Звук дотику\nне лунатиме."
+  },
+  "Set_SE_020": {
+    "en": "Touch sounds\nwill be played.",
+    "ua": "Звук дотику\nлунатиме."
+  },
+  "_330": {
+    "en": "",
+    "ua": ""
+  },
+  "DM_SavDt_Init_001": {
+    "en": "Reset all user data?\n\n(Music and recordings\nwill not be deleted.)",
+    "ua": "Скинути всі дані\nкористувача?\n\n(Музику й записи\nне буде видалено.)"
+  },
+  "DM_SavDt_Init_B002": {
+    "en": "Yes",
+    "ua": "Так"
+  },
+  "DM_SavDt_Init_B003": {
+    "en": "No",
+    "ua": "Ні"
+  },
+  "DM_SavDt_Init_000": {
+    "en": "Settings and other data\nwill be reset. This cannot\nbe undone. Are you sure\nyou want to continue?",
+    "ua": "Налаштування та інші\nдані буде скинуто.\nСкасувати це не вдасться.\nСправді продовжити?"
+  },
+  "DM_SavDt_Init_B000": {
+    "en": "Cancel",
+    "ua": "Скасувати"
+  },
+  "DM_SavDt_Init_B001": {
+    "en": "Reset",
+    "ua": "Скинути"
+  },
+  "DM_SavDt_Init_010": {
+    "en": "This is the last time you\nwill be asked to confirm.\nAre you sure you want to\nreset data and settings?",
+    "ua": "Це останнє\nпідтвердження. Справді\nскинути дані\nй налаштування?"
+  },
+  "DM_SavDt_Init_B010": {
+    "en": "Reset",
+    "ua": "Скинути"
+  },
+  "DM_SavDt_Init_B011": {
+    "en": "Cancel",
+    "ua": "Скасувати"
+  },
+  "DM_SavDt_Init_020": {
+    "en": "Resetting...\n\nPlease wait.",
+    "ua": "Скидання…\n\nЗачекайте."
+  },
+  "DM_SavDt_Init_030": {
+    "en": "Settings and data reset.",
+    "ua": "Дані й налаштування\nскинуто."
+  },
+  "DM_SavDt_Init_B030": {
+    "en": "OK",
+    "ua": "OK"
+  },
+  "DM_SavDt_Init_080": {
+    "en": "Write-protection is\nenabled on the SD Card. \nPlaylists on the SD Card\nwill not be reset.\n",
+    "ua": "На карті SD увімкнено\nзахист від запису. \nСписки на карті SD\nне буде скинуто.\n"
+  },
+  "DM_SavDt_Init_B080": {
+    "en": "OK",
+    "ua": "OK"
+  },
+  "DM_SavDt_Init_090": {
+    "en": "Failed to reset.",
+    "ua": "Скинути не вдалося."
+  },
+  "DM_SavDt_Init_B090": {
+    "en": "OK",
+    "ua": "OK"
+  },
+  "_340": {
+    "en": "",
+    "ua": ""
+  },
+  "DM_Voice_Del_000": {
+    "en": "All recordings saved to the\nSystem Memory and SD\nCard will be deleted. You\nwill not be able to recover\nthem. Are you sure you\nwant to proceed?",
+    "ua": "Усі записи, збережені\nв пам'яті системи й на\nкарті SD, буде видалено.\nВідновити їх не вдасться.\nСправді хочете\nпродовжити?"
+  },
+  "DM_Voice_Del_B000": {
+    "en": "Cancel",
+    "ua": "Скасувати"
+  },
+  "DM_Voice_Del_B001": {
+    "en": "Delete",
+    "ua": "Стерти"
+  },
+  "DM_Voice_Del_010": {
+    "en": "The recordings shown\non the upper screen will\nbe deleted. You will not\nbe able to recover them.\nAre you sure you\nwant to proceed?",
+    "ua": "Записи, показані на\nверхньому екрані, буде\nвидалено. Відновити їх\nне вдасться. Справді\nхочете продовжити?"
+  },
+  "DM_Voice_Del_B010": {
+    "en": "Cancel",
+    "ua": "Скасувати"
+  },
+  "DM_Voice_Del_B011": {
+    "en": "Delete",
+    "ua": "Стерти"
+  },
+  "DM_Voice_Del_020": {
+    "en": "Are you really sure\nyou want to delete\nthese recordings?",
+    "ua": "Ви справді хочете\nвидалити ці\nзаписи?"
+  },
+  "DM_Voice_Del_B020": {
+    "en": "Delete",
+    "ua": "Стерти"
+  },
+  "DM_Voice_Del_B021": {
+    "en": "Cancel",
+    "ua": "Скасувати"
+  },
+  "DM_Voice_Del_030": {
+    "en": "Deleting...",
+    "ua": "Видалення…"
+  },
+  "DM_Voice_Del_040": {
+    "en": "Deleted.",
+    "ua": "Видалено."
+  },
+  "DM_Voice_Del_B040": {
+    "en": "OK",
+    "ua": "OK"
+  },
+  "DM_Voice_Del_090": {
+    "en": "Could not delete.",
+    "ua": "Видалити не вдалося."
+  },
+  "DM_Voice_Del_B090": {
+    "en": "OK",
+    "ua": "OK"
+  },
+  "_400": {
+    "en": "",
+    "ua": ""
+  },
+  "CEC_Get_000": {
+    "en": "Saving data received\nvia StreetPass...",
+    "ua": "Збереження даних,\nотриманих через\nStreetPass…"
+  },
+  "CEC_Get_110": {
+    "en": "Could not save data\nreceived using StreetPass.",
+    "ua": "Зберегти дані з\nStreetPass не вдалося."
+  },
+  "CEC_B_Get_110": {
+    "en": "OK",
+    "ua": "OK"
+  },
+  "CEC_Get_200": {
+    "en": "Results received via\nStreetPass: {t:3.41:0000}\n\nSave this data?",
+    "ua": "Результатів через\nStreetPass: {t:3.41:0000}\n\nЗберегти ці дані?"
+  },
+  "CEC_B_Get_200": {
+    "en": "No",
+    "ua": "Ні"
+  },
+  "CEC_B_Get_201": {
+    "en": "Yes",
+    "ua": "Так"
+  },
+  "_410": {
+    "en": "",
+    "ua": ""
+  },
+  "CEC_Con_000": {
+    "en": "StreetPass Setting",
+    "ua": "Параметри StreetPass"
+  },
+  "CEC_B_Con_000_0": {
+    "en": "Off",
+    "ua": "Вимк."
+  },
+  "CEC_B_Con_000_1": {
+    "en": "Off",
+    "ua": "Вимк."
+  },
+  "CEC_B_Con_010_0": {
+    "en": "On",
+    "ua": "Увімк."
+  },
+  "CEC_B_Con_010_1": {
+    "en": "On",
+    "ua": "Увімк."
+  },
+  "CEC_Con_010": {
+    "en": "StreetPass will be\ndeactivated.",
+    "ua": "StreetPass буде\nвимкнено."
+  },
+  "CEC_Con_020": {
+    "en": "StreetPass will be\nactivated.",
+    "ua": "StreetPass буде\nувімкнено."
+  },
+  "CEC_B_Con_020": {
+    "en": "Confirm",
+    "ua": "Готово"
+  },
+  "CEC_Info_000": {
+    "en": "",
+    "ua": ""
+  },
+  "CEC_B_Info_000": {
+    "en": "",
+    "ua": ""
+  },
+  "CEC_Con_100": {
+    "en": "",
+    "ua": ""
+  },
+  "CEC_B_Con_100": {
+    "en": "",
+    "ua": ""
+  },
+  "CEC_Con_110": {
+    "en": "Activate StreetPass for\nNintendo 3DS Sound?\n\nStreetPass settings will\nbe saved to the system.",
+    "ua": "Увімкнути StreetPass для\nNintendo 3DS Звуку?\n\nНалаштування StreetPass\nбуде збережено в системі."
+  },
+  "CEC_B_Con_110": {
+    "en": "No",
+    "ua": "Ні"
+  },
+  "CEC_B_Con_111": {
+    "en": "Yes",
+    "ua": "Так"
+  },
+  "CEC_Con_120": {
+    "en": "Activating StreetPass...",
+    "ua": "Увімкнення StreetPass…"
+  },
+  "CEC_Con_130": {
+    "en": "Activated StreetPass.",
+    "ua": "StreetPass увімкнено."
+  },
+  "CEC_B_Con_130": {
+    "en": "OK",
+    "ua": "OK"
+  },
+  "CEC_Con_200": {
+    "en": "{t:1.0:5500}Cannot activate StreetPass for\nany more titles. To activate\nStreetPass for this title, go to\nStreetPass Management in the\nSystem Settings and deactivate\nit for another title.{t:1.0:6400}",
+    "ua": "{t:1.0:5500}Увімкнути StreetPass ще для\nодного титулу не вдасться. Щоб\nувімкнути його для цього титулу,\nвідкрийте Керування StreetPass\nу Налаштуваннях системи й\nвимкніть його для іншого титулу.{t:1.0:6400}"
+  },
+  "CEC_B_Con_200": {
+    "en": "OK",
+    "ua": "OK"
+  },
+  "CEC_Con_210": {
+    "en": "Use of StreetPass to\ncommunicate with other\nusers is restricted by\nParental Controls.",
+    "ua": "Обмін даними з іншими\nкористувачами через\nStreetPass обмежено\nбатьківським контролем."
+  },
+  "CEC_B_Con_210": {
+    "en": "OK",
+    "ua": "OK"
+  },
+  "CEC_Con_230": {
+    "en": "You must accept the terms\nof the latest Nintendo 3DS\nService User Agreement\nand Privacy Policy in\norder to use StreetPass.",
+    "ua": "Щоб користуватися\nStreetPass, потрібно\nприйняти умови останньої\nУгоди користувача та\nПолітики приватності\nNintendo 3DS."
+  },
+  "CEC_B_Con_230": {
+    "en": "OK",
+    "ua": "OK"
+  },
+  "CEC_Con_235": {
+    "en": "",
+    "ua": ""
+  },
+  "CEC_B_Con_235": {
+    "en": "",
+    "ua": ""
+  },
+  "CEC_Con_250": {
+    "en": "Failed to activate\nStreetPass.\n\nPlease check StreetPass\nManagement in the\nSystem Settings.",
+    "ua": "Увімкнути StreetPass\nне вдалося.\n\nПеревірте Керування\nStreetPass у\nНалаштуваннях системи."
+  },
+  "CEC_B_Con_250": {
+    "en": "OK",
+    "ua": "OK"
+  },
+  "CEC_Con_260": {
+    "en": "Failed to activate\nStreetPass.",
+    "ua": "Увімкнути StreetPass\nне вдалося."
+  },
+  "CEC_B_Con_260": {
+    "en": "OK",
+    "ua": "OK"
+  },
+  "CEC_Con_270": {
+    "en": "In order to use StreetPass\nwith Nintendo 3DS Sound,\nyou must add at least\none song to the\nStreetPass playlist.",
+    "ua": "Щоб користуватися\nStreetPass у Nintendo 3DS\nЗвуці, додайте до списку\nStreetPass хоча б\nодну пісню."
+  },
+  "CEC_B_Con_270": {
+    "en": "OK",
+    "ua": "OK"
+  },
+  "CEC_Con_300": {
+    "en": "Deactivate StreetPass\nfor Nintendo 3DS Sound?",
+    "ua": "Вимкнути StreetPass для\nNintendo 3DS Звуку?"
+  },
+  "CEC_B_Con_300": {
+    "en": "No",
+    "ua": "Ні"
+  },
+  "CEC_B_Con_301": {
+    "en": "Yes",
+    "ua": "Так"
+  },
+  "CEC_Con_310": {
+    "en": "Found data received\nusing StreetPass.\n\nSave this data before\ndeactivating?",
+    "ua": "Знайдено дані, отримані\nчерез StreetPass.\n\nЗберегти їх перед\nвимкненням?"
+  },
+  "CEC_B_Con_310": {
+    "en": "No",
+    "ua": "Ні"
+  },
+  "CEC_B_Con_311": {
+    "en": "Yes",
+    "ua": "Так"
+  },
+  "CEC_Con_320": {
+    "en": "Deactivating...",
+    "ua": "Вимкнення…"
+  },
+  "CEC_Con_330": {
+    "en": "Deactivated.",
+    "ua": "Вимкнено."
+  },
+  "CEC_B_Con_330": {
+    "en": "OK",
+    "ua": "OK"
+  },
+  "CEC_Con_400": {
+    "en": "Failed to deactivate\nStreetPass.\n\nPlease check StreetPass\nManagement in the\nSystem Settings.",
+    "ua": "Вимкнути StreetPass\nне вдалося.\n\nПеревірте Керування\nStreetPass у\nНалаштуваннях системи."
+  },
+  "CEC_B_Con_400": {
+    "en": "OK",
+    "ua": "OK"
+  },
+  "_420": {
+    "en": "",
+    "ua": ""
+  },
+  "CEC_Com_000": {
+    "en": "All compatibility data\nreceived to date\nwill be deleted.\n\nIs this OK?",
+    "ua": "Усі дані про спорідненість,\nотримані досі,\nбуде видалено.\n\nПродовжити?"
+  },
+  "CEC_B_Com_000": {
+    "en": "No",
+    "ua": "Ні"
+  },
+  "CEC_B_Com_010": {
+    "en": "Yes",
+    "ua": "Так"
+  },
+  "CEC_Com_100": {
+    "en": "Deleted compatibility data.",
+    "ua": "Дані про спорідненість\nвидалено."
+  },
+  "CEC_B_Com_100": {
+    "en": "OK",
+    "ua": "OK"
+  },
+  "_430": {
+    "en": "",
+    "ua": ""
+  },
+  "CEC_Hit_000": {
+    "en": "All Hit Parade data\nwill be deleted.\n\nIs this OK?",
+    "ua": "Усі дані хіт-параду\nбуде видалено.\n\nПродовжити?"
+  },
+  "CEC_B_Hit_000": {
+    "en": "No",
+    "ua": "Ні"
+  },
+  "CEC_B_Hit_010": {
+    "en": "Yes",
+    "ua": "Так"
+  },
+  "CEC_Hit_100": {
+    "en": "Deleted Hit Parade data.",
+    "ua": "Дані хіт-параду видалено."
+  },
+  "CEC_B_Hit_100": {
+    "en": "OK",
+    "ua": "OK"
+  },
+  "_440": {
+    "en": "",
+    "ua": ""
+  },
+  "CEC_Cam_000": {
+    "en": "Saved photo.\n\nYou can view this photo\nin Nintendo 3DS Camera.",
+    "ua": "Фото збережено.\n\nПодивитися його можна\nв Nintendo 3DS Камері."
+  },
+  "CEC_B_Cam_000": {
+    "en": "OK",
+    "ua": "OK"
+  },
+  "CEC_Cam_010": {
+    "en": "",
+    "ua": ""
+  },
+  "CEC_B_Cam_010": {
+    "en": "",
+    "ua": ""
+  },
+  "CEC_Cam_100": {
+    "en": "Could not save.",
+    "ua": "Зберегти не вдалося."
+  },
+  "CEC_B_Cam_100": {
+    "en": "OK",
+    "ua": "OK"
+  },
+  "CEC_Cam_200": {
+    "en": "Saving photo...",
+    "ua": "Збереження фото…"
+  },
+  "_450": {
+    "en": "",
+    "ua": ""
+  },
+  "CEC_Notice_000": {
+    "en": "You've got new\nStreetPass results!\nTap StreetPass to\ncheck them out.\n\n(No. Results: {t:3.39:0000})",
+    "ua": "У вас нові результати\nStreetPass! Торкніться\nStreetPass, щоб\nподивитися.\n\n(Результатів: {t:3.39:0000})"
+  },
+  "CEC_B_Notice_000": {
+    "en": "OK",
+    "ua": "OK"
+  },
+  "CEC_Notice_050": {
+    "en": "Chirp? Have you\ndeactivated StreetPass?\n\nTouch StreetPass to\ncheck the settings.",
+    "ua": "Цвірінь? Ви вимкнули\nStreetPass?\n\nТоркніться StreetPass,\nщоб перевірити\nналаштування."
+  },
+  "CEC_B_Notice_050": {
+    "en": "OK",
+    "ua": "OK"
+  },
+  "CEC_Notice_100": {
+    "en": "StreetPass has been\ndeactivated for this\nsoftware. To reactivate\nit, select StreetPass\nfrom the main menu,\nthen select On.",
+    "ua": "StreetPass для цієї\nпрограми вимкнено.\nЩоб увімкнути його\nзнову, виберіть StreetPass\nу головному меню,\nа тоді Увімк."
+  },
+  "CEC_B_Notice_100": {
+    "en": "OK",
+    "ua": "OK"
+  },
+  "_500": {
+    "en": "",
+    "ua": ""
+  },
+  "CEC_Migration_000": {
+    "en": "Preparing...",
+    "ua": "Підготовка…"
+  },
+  "CEC_Migration_010": {
+    "en": "StreetPass for\nNintendo 3DS Sound\nwill now be updated.\n\n(Any StreetPass data\npresent will be saved.)",
+    "ua": "StreetPass для\nNintendo 3DS Звуку\nзараз буде оновлено.\n\n(Наявні дані StreetPass\nбуде збережено.)"
+  },
+  "CEC_B_Migration_010": {
+    "en": "OK",
+    "ua": "OK"
+  },
+  "CEC_Migration_011": {
+    "en": "StreetPass for\nNintendo 3DS Sound\nwill now be updated.",
+    "ua": "StreetPass для\nNintendo 3DS Звуку\nзараз буде оновлено."
+  },
+  "CEC_B_Migration_011": {
+    "en": "OK",
+    "ua": "OK"
+  },
+  "CEC_Migration_020": {
+    "en": "Updating StreetPass for\nNintendo 3DS Sound...",
+    "ua": "Оновлення StreetPass для\nNintendo 3DS Звуку…"
+  },
+  "CEC_Migration_021": {
+    "en": "Updating StreetPass for\nNintendo 3DS Sound...",
+    "ua": "Оновлення StreetPass для\nNintendo 3DS Звуку…"
+  },
+  "CEC_Migration_025": {
+    "en": "Could not save data\nreceived using StreetPass.",
+    "ua": "Зберегти дані з\nStreetPass не вдалося."
+  },
+  "CEC_B_Migration_025": {
+    "en": "OK",
+    "ua": "OK"
+  },
+  "CEC_Migration_030": {
+    "en": "Activating StreetPass...",
+    "ua": "Увімкнення StreetPass…"
+  },
+  "CEC_Migration_035": {
+    "en": "Failed to activate\nStreetPass.",
+    "ua": "Увімкнути StreetPass\nне вдалося."
+  },
+  "CEC_B_Migration_035": {
+    "en": "OK",
+    "ua": "OK"
+  },
+  "CEC_Migration_040": {
+    "en": "StreetPass for\nNintendo 3DS Sound\nhas been updated.",
+    "ua": "StreetPass для\nNintendo 3DS Звуку\nоновлено."
+  },
+  "CEC_B_Migration_040": {
+    "en": "OK",
+    "ua": "OK"
+  }
+}

@@ -140,6 +140,26 @@ HOOK_PATCHES: dict[str, dict] = {
             {"patch_at": 0x0DD7C, "return_to": 0x0DD80},
         ],
     },
+    # Health & Safety Information (safe), EUR, title version 3. Same shape as Download Play:
+    # its only fs:USER call is OpenFileDirectly (the wrapper at 0x21A18), there is no
+    # FSUSER_OpenArchive anywhere in .text, so a mount stub would have nothing to call.
+    #
+    # Both ARCHIVE_ROMFS opens go through that one wrapper, and at both sites the file path
+    # is already on the stack in the slots the redirect stub rewrites (type at sp+0xC as
+    # `mov r3, #2` / `mov r1, #2`, pointer at sp+0x10, size 0xC at sp+0x14).
+    "0004001000022300": {
+        "title": "Health & Safety Information (safe) EUR",
+        "title_version": 3,
+        "code_sha256": "74c813cc1f00a67c06ad85e10723b1440949b2d448e2e1f5532d2a61fb57600c",
+        "kind": "romfs_from_sd",
+        "image_name": "safe_romfs.bin",
+        "stub_off": 0x63A94,        # .text page padding, 0x63A94..0x64000
+        "stub_room": 1388,
+        "sites": [
+            {"patch_at": 0x0A800, "return_to": 0x0A804},
+            {"patch_at": 0x11234, "return_to": 0x11238},
+        ],
+    },
     # Software Keyboard (swkbd), EUR, title version 4. Same shape as Download Play.
     #
     # It has a third OpenFileDirectly call site at 0x6F7C0, but that one opens

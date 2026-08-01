@@ -117,6 +117,31 @@ TITLES = {
         "ref_lang": "EU_English",
         "container": "message/{lang}.arc",
     },
+    # Same per-language shape as Mii Maker, but the archive is the header-less flat table
+    # of tools/msgarc.py instead of a darc - store.py tells them apart by magic.
+    "camera": {
+        "tids": ["0004001000022400"],
+        "source_tid": "0004001000022400",
+        "lang": "EU_Russian",
+        "ref_lang": "EU_English",
+        "container": "msg/{lang}.LZ",
+    },
+    "sound": {
+        "tids": ["0004001000022500"],
+        "source_tid": "0004001000022500",
+        "lang": "EU_Russian",
+        "ref_lang": "EU_English",
+        "container": "msg/{lang}.LZ",
+    },
+    # No fsMountArchive and no FSUSER_OpenArchive at all, so LayeredFS is out: this title
+    # ships a whole RomFS image read off the SD card, like download_play and keyboard.
+    "health_safety": {
+        "tids": ["0004001000022300"],
+        "source_tid": "0004001000022300",
+        "lang": "EU_Russian",
+        "ref_lang": "EU_English",
+        "hook_patch": True,
+    },
 }
 
 

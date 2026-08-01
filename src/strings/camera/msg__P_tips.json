@@ -1,0 +1,2738 @@
+{
+  "Guide": {
+    "en": "",
+    "ua": ""
+  },
+  "Guide_D_00_00": {
+    "en": "/ {t:3.39:0000}",
+    "ua": ""
+  },
+  "Guide_D_00_01": {
+    "en": "{t:3.39:0100} ",
+    "ua": ""
+  },
+  "Guide_D_O_Btn0": {
+    "en": "OK",
+    "ua": "OK"
+  },
+  "Guide_D_CN_Btn0": {
+    "en": "Cancel",
+    "ua": "Скасувати"
+  },
+  "Guide_D_CN_Btn1": {
+    "en": "Next",
+    "ua": "Далі"
+  },
+  "Guide_D_N_Btn0": {
+    "en": "Next",
+    "ua": "Далі"
+  },
+  "Guide_D_BN_Btn0": {
+    "en": "Back",
+    "ua": "Назад"
+  },
+  "Guide_D_BN_Btn1": {
+    "en": "Next",
+    "ua": "Далі"
+  },
+  "Guide_D_BO_Btn0": {
+    "en": "Back",
+    "ua": "Назад"
+  },
+  "Guide_D_BO_Btn1": {
+    "en": "OK",
+    "ua": "OK"
+  },
+  "Guide_Title": {
+    "en": "",
+    "ua": ""
+  },
+  "T_001_S": {
+    "en": "???",
+    "ua": ""
+  },
+  "T_001": {
+    "en": "{t:3.42:0000} Shoot from 30cm (12in)",
+    "ua": "{t:3.42:0000} Знімайте з 30 см"
+  },
+  "T_002": {
+    "en": "{t:3.42:0000} 3D focus",
+    "ua": "{t:3.42:0000} Фокус 3D"
+  },
+  "T_003": {
+    "en": "{t:3.42:0000} Welcome!",
+    "ua": "{t:3.42:0000} Вітаємо!"
+  },
+  "T_004": {
+    "en": "{t:3.42:0000} Displaying alignment aids",
+    "ua": "{t:3.42:0000} Показ ліній вирівнювання"
+  },
+  "T_005": {
+    "en": "{t:3.42:0000} Inner and outer cameras",
+    "ua": "{t:3.42:0000} Передня й задня камери"
+  },
+  "T_006": {
+    "en": "{t:3.42:0000} Adjust 3D focus/Viewing",
+    "ua": "{t:3.42:0000} Фокус 3D і перегляд"
+  },
+  "T_007": {
+    "en": "{t:3.42:0000} Grouping photos/videos",
+    "ua": "{t:3.42:0000} Групування фото й відео"
+  },
+  "T_008": {
+    "en": "",
+    "ua": ""
+  },
+  "T_009": {
+    "en": "{t:3.42:0000} Viewing slideshows",
+    "ua": "{t:3.42:0000} Перегляд слайд-шоу"
+  },
+  "T_010": {
+    "en": "{t:3.42:0000} Reviewing usage tips",
+    "ua": "{t:3.42:0000} Повторний перегляд порад"
+  },
+  "T_011": {
+    "en": "{t:3.42:0000} Quitting the software",
+    "ua": "{t:3.42:0000} Вихід із програми"
+  },
+  "T_012": {
+    "en": "{t:3.42:0000} The red lever",
+    "ua": "{t:3.42:0000} Червоний повзунок"
+  },
+  "T_013": {
+    "en": "{t:3.42:0000} Viewing 3D images",
+    "ua": "{t:3.42:0000} Перегляд 3D-зображень"
+  },
+  "T_014": {
+    "en": "{t:3.42:0000} Photo cameos",
+    "ua": "{t:3.42:0000} Фото з появою"
+  },
+  "T_015": {
+    "en": "{t:3.42:0000} Graffiti: 3D Tools",
+    "ua": "{t:3.42:0000} Малювання: 3D-засоби"
+  },
+  "T_016": {
+    "en": "{t:3.42:0000} Settings: Interface Colour",
+    "ua": "{t:3.42:0000} Колір інтерфейсу"
+  },
+  "T_017": {
+    "en": "{t:3.42:0000} Attention Sound",
+    "ua": "{t:3.42:0000} Звук уваги"
+  },
+  "T_018": {
+    "en": "{t:3.42:0000} Try using the level!",
+    "ua": "{t:3.42:0000} Спробуйте рівень!"
+  },
+  "T_019": {
+    "en": "{t:3.42:0000} Self-timer",
+    "ua": "{t:3.42:0000} Таймер"
+  },
+  "T_020": {
+    "en": "{t:3.42:0000} Merge",
+    "ua": "{t:3.42:0000} Злиття"
+  },
+  "T_021": {
+    "en": "{t:3.42:0000} Sparkle",
+    "ua": "{t:3.42:0000} Блиск"
+  },
+  "T_022": {
+    "en": "{t:3.42:0000} Dream",
+    "ua": "{t:3.42:0000} Мрія"
+  },
+  "T_023": {
+    "en": "{t:3.42:0000} Pinhole",
+    "ua": "{t:3.42:0000} Віньєтка"
+  },
+  "T_024": {
+    "en": "",
+    "ua": ""
+  },
+  "T_025": {
+    "en": "{t:3.42:0000} Mystery",
+    "ua": "{t:3.42:0000} Загадка"
+  },
+  "T_026": {
+    "en": "{t:3.42:0000} Low-Light",
+    "ua": "{t:3.42:0000} Ніч"
+  },
+  "T_027": {
+    "en": "{t:3.42:0000} Manual Controls",
+    "ua": "{t:3.42:0000} Ручні налаштування"
+  },
+  "T_028": {
+    "en": "{t:3.42:0000} Photo Save Location",
+    "ua": "{t:3.42:0000} Місце збереження фото"
+  },
+  "T_029": {
+    "en": "{t:3.42:0000} 3D depth",
+    "ua": "{t:3.42:0000} Глибина 3D"
+  },
+  "T_030": {
+    "en": "{t:3.42:0000} The 3D icon",
+    "ua": "{t:3.42:0000} Значок 3D"
+  },
+  "T_031": {
+    "en": "{t:3.42:0000} Film",
+    "ua": "{t:3.42:0000} Плівка"
+  },
+  "T_032": {
+    "en": "{t:3.42:0000} Sharpness",
+    "ua": "{t:3.42:0000} Різкість"
+  },
+  "T_033": {
+    "en": "{t:3.42:0000} Contrast",
+    "ua": "{t:3.42:0000} Контраст"
+  },
+  "T_034": {
+    "en": "{t:3.42:0000} Brightness",
+    "ua": "{t:3.42:0000} Яскравість"
+  },
+  "T_035": {
+    "en": "{t:3.42:0000} 3D shots: Framing",
+    "ua": "{t:3.42:0000} Знімки 3D: кадрування"
+  },
+  "T_036": {
+    "en": "{t:3.42:0000} 3D shots: Vertical lines",
+    "ua": "{t:3.42:0000} Знімки 3D: вертикалі"
+  },
+  "T_037": {
+    "en": "{t:3.42:0000} 3D shots: Haze",
+    "ua": "{t:3.42:0000} Знімки 3D: серпанок"
+  },
+  "T_038": {
+    "en": "{t:3.42:0000} 3D shots: Jumble",
+    "ua": "{t:3.42:0000} Знімки 3D: мішанина"
+  },
+  "T_039": {
+    "en": "{t:3.42:0000} 3D shots: Transparency",
+    "ua": "{t:3.42:0000} Знімки 3D: прозорість"
+  },
+  "T_040": {
+    "en": "{t:3.42:0000} 3D shots: Near and far",
+    "ua": "{t:3.42:0000} Знімки 3D: близько й далеко"
+  },
+  "T_041": {
+    "en": "{t:3.42:0000} Photo/video menus",
+    "ua": "{t:3.42:0000} Меню фото й відео"
+  },
+  "T_042": {
+    "en": "{t:3.42:0000} Slideshows",
+    "ua": "{t:3.42:0000} Слайд-шоу"
+  },
+  "T_043": {
+    "en": "{t:3.42:0000} Using the SD Card",
+    "ua": "{t:3.42:0000} Користування картою SD"
+  },
+  "T_044": {
+    "en": "{t:3.42:0000} The little budgie that can",
+    "ua": "{t:3.42:0000} Маленька хвацька пташка"
+  },
+  "T_045": {
+    "en": "{t:3.42:0000} Tricks: Shoot buttons",
+    "ua": "{t:3.42:0000} Хитрощі: кнопки зйомки"
+  },
+  "T_046": {
+    "en": "{t:3.42:0000} View more/fewer items",
+    "ua": "{t:3.42:0000} Більше чи менше значків"
+  },
+  "T_047": {
+    "en": "{t:3.42:0000} Manual Controls & Merge",
+    "ua": "{t:3.42:0000} Ручні налаштування і Злиття"
+  },
+  "T_048": {
+    "en": "{t:3.42:0000} About the Merge effect",
+    "ua": "{t:3.42:0000} Про ефект Злиття"
+  },
+  "T_049": {
+    "en": "{t:3.42:0000} About the Sparkle effect",
+    "ua": "{t:3.42:0000} Про ефект Блиску"
+  },
+  "T_050": {
+    "en": "",
+    "ua": ""
+  },
+  "T_051": {
+    "en": "{t:3.42:0000} Tricks: Quick switching",
+    "ua": "{t:3.42:0000} Хитрощі: перемикання"
+  },
+  "T_052": {
+    "en": "{t:3.42:0000} Keep practising!",
+    "ua": "{t:3.42:0000} Практикуйтеся далі!"
+  },
+  "T_053": {
+    "en": "{t:3.42:0000} Pro: Camera shake",
+    "ua": "{t:3.42:0000} Профі: тремтіння камери"
+  },
+  "T_054": {
+    "en": "{t:3.42:0000} Pro: Avoid camera shake",
+    "ua": "{t:3.42:0000} Профі: як не тремтіти"
+  },
+  "T_055": {
+    "en": "{t:3.42:0000} Pro: Balance",
+    "ua": "{t:3.42:0000} Профі: рівновага"
+  },
+  "T_056": {
+    "en": "{t:3.42:0000} Pro: Composition",
+    "ua": "{t:3.42:0000} Профі: композиція"
+  },
+  "T_057": {
+    "en": "{t:3.42:0000} Pro: Different viewpoints",
+    "ua": "{t:3.42:0000} Профі: різні точки зору"
+  },
+  "T_058": {
+    "en": "{t:3.42:0000} Slideshow: Themes",
+    "ua": "{t:3.42:0000} Слайд-шоу: теми"
+  },
+  "T_059": {
+    "en": "{t:3.42:0000} Pro: Backgrounds",
+    "ua": "{t:3.42:0000} Профі: тло"
+  },
+  "T_060": {
+    "en": "{t:3.42:0000} Pro: Angles",
+    "ua": "{t:3.42:0000} Профі: ракурси"
+  },
+  "T_061": {
+    "en": "{t:3.42:0000} Pro: Natural photos",
+    "ua": "{t:3.42:0000} Профі: природні знімки"
+  },
+  "T_062": {
+    "en": "{t:3.42:0000} Pro: Keep snapping!",
+    "ua": "{t:3.42:0000} Профі: знімайте далі!"
+  },
+  "T_063": {
+    "en": "{t:3.42:0000} Sepia + Sparkle",
+    "ua": "{t:3.42:0000} Сепія + Блиск"
+  },
+  "T_064": {
+    "en": "{t:3.42:0000} Pro: Backlight",
+    "ua": "{t:3.42:0000} Профі: контрове світло"
+  },
+  "T_065": {
+    "en": "{t:3.42:0000} Ideas: Outdoors",
+    "ua": "{t:3.42:0000} Ідеї: надворі"
+  },
+  "T_066": {
+    "en": "{t:3.42:0000} Ideas: Flowers",
+    "ua": "{t:3.42:0000} Ідеї: квіти"
+  },
+  "T_067": {
+    "en": "{t:3.42:0000} Ideas: Animals",
+    "ua": "{t:3.42:0000} Ідеї: тварини"
+  },
+  "T_068": {
+    "en": "{t:3.42:0000} Ideas: Food",
+    "ua": "{t:3.42:0000} Ідеї: їжа"
+  },
+  "T_069": {
+    "en": "{t:3.42:0000} Ideas: Sky",
+    "ua": "{t:3.42:0000} Ідеї: небо"
+  },
+  "T_070": {
+    "en": "{t:3.42:0000} Ideas: Favourites",
+    "ua": "{t:3.42:0000} Ідеї: улюблене"
+  },
+  "T_071": {
+    "en": "{t:3.42:0000} Ideas: After the rain",
+    "ua": "{t:3.42:0000} Ідеї: після дощу"
+  },
+  "T_072": {
+    "en": "",
+    "ua": ""
+  },
+  "T_073": {
+    "en": "",
+    "ua": ""
+  },
+  "T_074": {
+    "en": "",
+    "ua": ""
+  },
+  "T_075": {
+    "en": "{t:3.42:0000} Take a break",
+    "ua": "{t:3.42:0000} Зробіть перерву"
+  },
+  "T_076": {
+    "en": "",
+    "ua": ""
+  },
+  "T_077": {
+    "en": "",
+    "ua": ""
+  },
+  "T_078": {
+    "en": "",
+    "ua": ""
+  },
+  "T_079": {
+    "en": "",
+    "ua": ""
+  },
+  "T_080": {
+    "en": "",
+    "ua": ""
+  },
+  "T_081": {
+    "en": "",
+    "ua": ""
+  },
+  "T_082": {
+    "en": "",
+    "ua": ""
+  },
+  "T_083": {
+    "en": "{t:3.42:0000} B/W + Merge",
+    "ua": "{t:3.42:0000} Ч/Б + Злиття"
+  },
+  "T_084": {
+    "en": "{t:3.42:0000} Brightness + Dream",
+    "ua": "{t:3.42:0000} Яскравість + Мрія"
+  },
+  "T_085": {
+    "en": "{t:3.42:0000} Contrast + Pinhole",
+    "ua": "{t:3.42:0000} Контраст + Віньєтка"
+  },
+  "T_086": {
+    "en": "{t:3.42:0000} 3D autofocus",
+    "ua": "{t:3.42:0000} Автофокус 3D"
+  },
+  "T_087": {
+    "en": "{t:3.42:0000} Write-protected SD Cards",
+    "ua": "{t:3.42:0000} Карти SD із захистом запису"
+  },
+  "T_088": {
+    "en": "{t:3.42:0000} Ideas: People",
+    "ua": "{t:3.42:0000} Ідеї: люди"
+  },
+  "T_089": {
+    "en": "{t:3.42:0000} Trivia: The word 'camera'",
+    "ua": "{t:3.42:0000} Факт: слово «камера»"
+  },
+  "T_090": {
+    "en": "{t:3.42:0000} Trivia: Dark rooms",
+    "ua": "{t:3.42:0000} Факт: темні кімнати"
+  },
+  "T_091": {
+    "en": "{t:3.42:0000} Trivia: Portable cameras",
+    "ua": "{t:3.42:0000} Факт: переносні камери"
+  },
+  "T_092": {
+    "en": "{t:3.42:0000} Trivia: The first photos",
+    "ua": "{t:3.42:0000} Факт: перші знімки"
+  },
+  "T_093": {
+    "en": "{t:3.42:0000} Trivia: A strange dream",
+    "ua": "{t:3.42:0000} Факт: дивний сон"
+  },
+  "T_094": {
+    "en": "{t:3.42:0000} Thumbnail border colours",
+    "ua": "{t:3.42:0000} Кольори рамок мініатюр"
+  },
+  "T_095": {
+    "en": "{t:3.42:0000} JPG and MPO files",
+    "ua": "{t:3.42:0000} Файли JPG і MPO"
+  },
+  "T_096": {
+    "en": "",
+    "ua": ""
+  },
+  "T_097": {
+    "en": "{t:3.42:0000} Video save location",
+    "ua": "{t:3.42:0000} Місце збереження відео"
+  },
+  "T_098": {
+    "en": "{t:3.42:0000} Watching videos",
+    "ua": "{t:3.42:0000} Перегляд відео"
+  },
+  "T_099": {
+    "en": "{t:3.42:0000} AVI files",
+    "ua": "{t:3.42:0000} Файли AVI"
+  },
+  "T_100": {
+    "en": "{t:3.42:0000} Trick Shot modes",
+    "ua": "{t:3.42:0000} Особливі режими"
+  },
+  "T_101": {
+    "en": "{t:3.42:0000} Clip Link",
+    "ua": "{t:3.42:0000} Зв'язка кліпів"
+  },
+  "T_102": {
+    "en": "{t:3.42:0000} Interval Shot",
+    "ua": "{t:3.42:0000} Зйомка за часом"
+  },
+  "T_103": {
+    "en": "{t:3.42:0000} Frame Pick",
+    "ua": "{t:3.42:0000} Вибір кадру"
+  },
+  "T_104": {
+    "en": "{t:3.42:0000} Video Tools",
+    "ua": "{t:3.42:0000} Робота з відео"
+  },
+  "T_105": {
+    "en": "{t:3.42:0000} Save Frame",
+    "ua": "{t:3.42:0000} Зняти кадр"
+  },
+  "T_106": {
+    "en": "{t:3.42:0000} Switching shoot modes",
+    "ua": "{t:3.42:0000} Зміна режимів зйомки"
+  },
+  "T_107": {
+    "en": "{t:3.42:0000} Visible area of photos",
+    "ua": "{t:3.42:0000} Видима частина фото"
+  },
+  "T_108": {
+    "en": "{t:3.42:0000} Frame Pick + B/W",
+    "ua": "{t:3.42:0000} Вибір кадру + Ч/Б"
+  },
+  "T_109": {
+    "en": "{t:3.42:0000} Ideas: Plant growth",
+    "ua": "{t:3.42:0000} Ідеї: ріст рослин"
+  },
+  "T_110": {
+    "en": "{t:3.42:0000} Ideas: Clouds",
+    "ua": "{t:3.42:0000} Ідеї: хмари"
+  },
+  "T_111": {
+    "en": "{t:3.42:0000} Ideas: People-watching",
+    "ua": "{t:3.42:0000} Ідеї: спостереження за людьми"
+  },
+  "T_112": {
+    "en": "{t:3.42:0000} Ideas: Transformation",
+    "ua": "{t:3.42:0000} Ідеї: перевтілення"
+  },
+  "T_113": {
+    "en": "{t:3.42:0000} Ideas: Teleportation",
+    "ua": "{t:3.42:0000} Ідеї: телепортація"
+  },
+  "T_114": {
+    "en": "{t:3.42:0000} Ideas: Dancing dolls",
+    "ua": "{t:3.42:0000} Ідеї: танцюристі ляльки"
+  },
+  "T_115": {
+    "en": "{t:3.42:0000} Ideas: Construction",
+    "ua": "{t:3.42:0000} Ідеї: будівництво"
+  },
+  "T_116": {
+    "en": "{t:3.42:0000} Tricks: Interval Shot",
+    "ua": "{t:3.42:0000} Хитрощі: зйомка за часом"
+  },
+  "T_117": {
+    "en": "{t:3.42:0000} Tricks: Frame-by-frame",
+    "ua": "{t:3.42:0000} Хитрощі: покадрово"
+  },
+  "T_118": {
+    "en": "{t:3.42:0000} 3D shots: Videos",
+    "ua": "{t:3.42:0000} Знімки 3D: відео"
+  },
+  "T_119": {
+    "en": "{t:3.42:0000} Tricks: Afterimages",
+    "ua": "{t:3.42:0000} Хитрощі: шлейф"
+  },
+  "T_120": {
+    "en": "{t:3.42:0000} Pro: Blown-out highlights",
+    "ua": "{t:3.42:0000} Профі: пересвіт"
+  },
+  "T_121": {
+    "en": "{t:3.42:0000} Slideshow video settings",
+    "ua": "{t:3.42:0000} Слайд-шоу: відео"
+  },
+  "T_122": {
+    "en": "{t:3.42:0000} \"My Lovely Budgie\"",
+    "ua": "{t:3.42:0000} «Моя люба пташка»"
+  },
+  "T_123": {
+    "en": "{t:3.42:0000} Something different",
+    "ua": "{t:3.42:0000} Щось інше"
+  },
+  "T_124": {
+    "en": "{t:3.42:0000} Nintendo DSi software",
+    "ua": "{t:3.42:0000} Програми Nintendo DSi"
+  },
+  "Guide_Tex_001": {
+    "en": "",
+    "ua": ""
+  },
+  "D_001_0": {
+    "en": "Have your 3D photos and\nvideos of objects like toys\nor teddy bears been\nturning out well?",
+    "ua": "Чи добре виходять ваші\n3D-фото й відео речей\nна кшталт іграшок\nчи ведмедиків?"
+  },
+  "D_001_1": {
+    "en": "{t:4.1:140050005f004700750069006400310030005f005500}If not, you might have\nthe camera positioned\ntoo close to the subject.",
+    "ua": "{t:4.1:140050005f004700750069006400310030005f005500}Якщо ні, можливо, ви\nтримаєте камеру надто\nблизько до об'єкта."
+  },
+  "D_001_2": {
+    "en": "{t:4.1:140050005f004700750069006400310030005f005500}It's like touching your\nnose with your finger.\nInstead of one finger,\nyou see two blurred\nfingers, right?",
+    "ua": "{t:4.1:140050005f004700750069006400310030005f005500}Це наче торкнутися\nпальцем свого носа.\nЗамість одного пальця\nви бачите два розмиті,\nчи не так?"
+  },
+  "D_001_3": {
+    "en": "{t:4.1:140050005f004700750069006400310030005f005500}The same principle\napplies when taking\nphotos and videos \nin Nintendo 3DS Camera.",
+    "ua": "{t:4.1:140050005f004700750069006400310030005f005500}Те саме буває, коли\nзнімаєте фото й відео\nв Nintendo 3DS Камері."
+  },
+  "D_001_4": {
+    "en": "{t:4.1:140050005f004700750069006400300031005f005500}Try to keep the system\nat least {t:0.3:ff3200ff}30cm (12in){t:0.3:454039ff} away\nfrom the subject for the\nbest results! Chirp!",
+    "ua": "{t:4.1:140050005f004700750069006400300031005f005500}Тримайте консоль\nщонайменше за {t:0.3:ff3200ff}30 см{t:0.3:454039ff}\nвід об'єкта — так вийде\nнайкраще! Цвірінь!"
+  },
+  "Guide_Tex_002": {
+    "en": "",
+    "ua": ""
+  },
+  "D_002_0": {
+    "en": "Chirp! Do you\nhave a moment?",
+    "ua": "Цвірінь! Маєте\nхвилинку?"
+  },
+  "D_002_1": {
+    "en": "3D images captured by\nthe cameras are focused\nautomatically. This is\ncalled 3D autofocus.",
+    "ua": "3D-зображення з камер\nфокусуються самі. Це\nзветься автофокусом 3D."
+  },
+  "D_002_2": {
+    "en": "{t:4.1:140050005f004700750069006400300033005f005500}You can also adjust\nthe {t:0.3:ff3200ff}3D focus{t:0.3:454039ff} manually.",
+    "ua": "{t:4.1:140050005f004700750069006400300033005f005500}{t:0.3:ff3200ff}Фокус 3D{t:0.3:454039ff} можна\nналаштувати й вручну."
+  },
+  "D_002_3": {
+    "en": "{t:4.1:140050005f004700750069006400300034005f005500}Move the {t:0.3:ff3200ff}● {t:0.3:454039ff}left and\nright until the two\nimages overlap.",
+    "ua": "{t:4.1:140050005f004700750069006400300034005f005500}Рухайте {t:0.3:ff3200ff}● {t:0.3:454039ff}ліворуч\nі праворуч, доки два\nзображення не зійдуться."
+  },
+  "D_002_4": {
+    "en": "{t:4.1:140050005f004700750069006400310032005f005500}To return to 3D autofocus,\npress {t:0.3:ff3200ff}{t:0.3:454039ff} or use the tool\nlever to hide the arrows.",
+    "ua": "{t:4.1:140050005f004700750069006400310032005f005500}Щоб повернути\nавтофокус 3D, натисніть\n{t:0.3:ff3200ff}{t:0.3:454039ff} або сховайте\nстрілки повзунком."
+  },
+  "D_002_5": {
+    "en": "That's all I wanted\nto tell you. Chirp.",
+    "ua": "Це все, що я хотіла\nсказати. Цвірінь."
+  },
+  "Guide_Tex_003": {
+    "en": "",
+    "ua": ""
+  },
+  "D_003_0": {
+    "en": "Welcome to\nNintendo 3DS Camera!",
+    "ua": "Вітаємо в\nNintendo 3DS Камері!"
+  },
+  "D_003_1": {
+    "en": "In Nintendo 3DS Camera,\nyou can take photos and\nvideos in both 2D and 3D.",
+    "ua": "У Nintendo 3DS Камері\nможна знімати фото\nй відео у 2D і 3D."
+  },
+  "D_003_2": {
+    "en": "{t:4.1:140050005f004700750069006400300035005f005500}When taking 3D photos\nand videos, make sure the\n{t:0.3:ff3200ff}3D depth slider {t:0.3:454039ff}is up so\nyou can view them in 3D.",
+    "ua": "{t:4.1:140050005f004700750069006400300035005f005500}Знімаючи фото й відео\nу 3D, підніміть\n{t:0.3:ff3200ff}повзунок глибини 3D{t:0.3:454039ff},\nщоб бачити їх у 3D."
+  },
+  "D_003_3": {
+    "en": "{t:4.1:140050005f004700750069006400300031005f005500}Try to position the system\n{t:0.3:ff3200ff}at least 30cm (12in)\n{t:0.3:454039ff}from the subject.",
+    "ua": "{t:4.1:140050005f004700750069006400300031005f005500}Тримайте консоль\n{t:0.3:ff3200ff}щонайменше за 30 см\n{t:0.3:454039ff}від об'єкта."
+  },
+  "D_003_4": {
+    "en": "{t:4.1:140050005f004700750069006400300032005f005500}I've got lots more useful\ninformation to share about\nNintendo 3DS Camera,\nso just give me a tap any\ntime to hear some tips!",
+    "ua": "{t:4.1:140050005f004700750069006400300032005f005500}Я маю ще багато\nкорисного про\nNintendo 3DS Камеру —\nторкніться мене,\nщоб почути пораду!"
+  },
+  "Guide_Tex_003_flw": {
+    "en": "",
+    "ua": ""
+  },
+  "D_003_0_flw": {
+    "en": "Welcome to\nNintendo 3DS Camera!",
+    "ua": "Вітаємо в\nNintendo 3DS Камері!"
+  },
+  "D_003_1_flw": {
+    "en": "In Nintendo 3DS Camera,\nyou can take photos and\nvideos in both 2D and 3D.",
+    "ua": "У Nintendo 3DS Камері\nможна знімати фото\nй відео у 2D і 3D."
+  },
+  "D_003_2_flw": {
+    "en": "Please remember that this\nsystem can only display\n2D images. However, your\nimages are stored on an\nSD Card.",
+    "ua": "Пам'ятайте: ця консоль\nпоказує лише 2D. Проте\nваші зображення\nзберігаються на\nкарту SD."
+  },
+  "D_003_3_flw": {
+    "en": "This means you can\ntransfer the files to a\nNintendo 3DS or other\ncompatible device to\nview the images in 3D.",
+    "ua": "Тож файли можна\nперенести на\nNintendo 3DS чи інший\nсумісний пристрій\nі подивитися у 3D."
+  },
+  "D_003_4_flw": {
+    "en": "Please note that\nreferences to 3D in this\napplication refer to the\nviewing of photos and\nvideos on a Nintendo 3DS.",
+    "ua": "Зауважте: згадки про 3D\nу цій програмі стосуються\nперегляду фото й відео\nна Nintendo 3DS."
+  },
+  "D_003_5_flw": {
+    "en": "{t:4.1:140050005f004700750069006400300031005f005500}When taking photos and\nvideos, try to position the\nsystem {t:0.3:ff3200ff}at least 30cm\n(12in) {t:0.3:454039ff}from the subject.",
+    "ua": "{t:4.1:140050005f004700750069006400300031005f005500}Знімаючи фото й відео,\nтримайте консоль\n{t:0.3:ff3200ff}щонайменше за 30 см\n{t:0.3:454039ff}від об'єкта."
+  },
+  "D_003_6_flw": {
+    "en": "{t:4.1:140050005f004700750069006400300032005f005500}I've got lots more useful\ninformation to share about\nNintendo 3DS Camera,\nso just give me a tap any\ntime to hear some tips!",
+    "ua": "{t:4.1:140050005f004700750069006400300032005f005500}Я маю ще багато\nкорисного про\nNintendo 3DS Камеру —\nторкніться мене,\nщоб почути пораду!"
+  },
+  "Guide_Tex_004": {
+    "en": "",
+    "ua": ""
+  },
+  "D_004_0": {
+    "en": "Press {t:0.3:ff3200ff} {t:0.3:454039ff}to display a\n{t:0.3:ff3200ff}level {t:0.3:454039ff}on the 3D Screen.",
+    "ua": "Натисніть {t:0.3:ff3200ff} {t:0.3:454039ff}, щоб на\n3D-екрані був {t:0.3:ff3200ff}рівень{t:0.3:454039ff}."
+  },
+  "D_004_1": {
+    "en": "Press {t:0.3:ff3200ff} {t:0.3:454039ff}again\nto hide it.",
+    "ua": "Натисніть {t:0.3:ff3200ff} {t:0.3:454039ff}ще раз,\nщоб сховати його."
+  },
+  "D_004_2": {
+    "en": "You can also calibrate\nthe {t:0.3:ff3200ff}red {t:0.3:454039ff}horizontal level in\norder to change its angle.",
+    "ua": "{t:0.3:ff3200ff}Червоний {t:0.3:454039ff}горизонтальний\nрівень можна ще й\nвивірити, змінивши кут."
+  },
+  "D_004_3": {
+    "en": "Place the system on\nan inclined surface of\nthe desired angle,\nthen hold {t:0.3:ff3200ff}{t:0.3:454039ff}.",
+    "ua": "Покладіть консоль на\nпохилу поверхню з\nпотрібним кутом,\nтоді утримуйте {t:0.3:ff3200ff}{t:0.3:454039ff}."
+  },
+  "D_004_4": {
+    "en": "To return the baseline to\nnormal, place the system\non a table or other flat\nsurface, then hold {t:0.3:ff3200ff}{t:0.3:454039ff}.",
+    "ua": "Щоб повернути звичайну\nлінію, покладіть консоль\nна стіл чи іншу рівну\nповерхню й утримуйте {t:0.3:ff3200ff}{t:0.3:454039ff}."
+  },
+  "Guide_Tex_005": {
+    "en": "",
+    "ua": ""
+  },
+  "D_005_0": {
+    "en": "{t:4.1:140050005f004700750069006400310031005f005500}The inner camera\ncaptures {t:0.3:ff3200ff}2D{t:0.3:454039ff} photos\nand videos.",
+    "ua": "{t:4.1:140050005f004700750069006400310031005f005500}Передня камера знімає\nфото й відео у {t:0.3:ff3200ff}2D{t:0.3:454039ff}."
+  },
+  "D_005_1": {
+    "en": "{t:4.1:140050005f004700750069006400300036005f005500}The outer cameras capture\nphotos and videos\nthat can be viewed\nin both {t:0.3:ff3200ff}3D {t:0.3:454039ff}and {t:0.3:ff3200ff}2D{t:0.3:454039ff}.",
+    "ua": "{t:4.1:140050005f004700750069006400300036005f005500}Задні камери знімають\nфото й відео, які можна\nдивитися і у {t:0.3:ff3200ff}3D{t:0.3:454039ff}, і у {t:0.3:ff3200ff}2D{t:0.3:454039ff}."
+  },
+  "D_005_2": {
+    "en": "{t:4.1:140050005f004700750069006400300036005f005500}So, if you want to take\na {t:0.3:ff3200ff}3D photo{t:0.3:454039ff} of yourself,\nuse the self-timer function\nand the outer cameras.",
+    "ua": "{t:4.1:140050005f004700750069006400300036005f005500}Тож щоб зняти {t:0.3:ff3200ff}3D-фото{t:0.3:454039ff}\nсебе, скористайтеся\nтаймером і задніми\nкамерами."
+  },
+  "Guide_Tex_006": {
+    "en": "",
+    "ua": ""
+  },
+  "D_006_0": {
+    "en": "If other people find it hard\nto see your 3D photos or\nvideos properly,",
+    "ua": "Якщо іншим важко\nроздивитися ваші\n3D-фото чи відео,"
+  },
+  "D_006_1": {
+    "en": "{t:4.1:140050005f004700750069006400300037005f005500}use the {t:0.3:ff3200ff}Circle Pad {t:0.3:454039ff}to\nadjust the 3D focus.",
+    "ua": "{t:4.1:140050005f004700750069006400300037005f005500}налаштуйте фокус 3D\n{t:0.3:ff3200ff}Circle Pad{t:0.3:454039ff}'ом."
+  },
+  "D_006_2": {
+    "en": "{t:4.1:140050005f004700750069006400300037005f005500}It will be easier to see\nphotos and videos in 3D if\nyou line up the two\nseparate images so that\nthey overlap each other.",
+    "ua": "Фото й відео легше\nбачити у 3D, коли два\nокремі зображення\nзведені так, що\nнакладаються."
+  },
+  "Guide_Tex_007": {
+    "en": "",
+    "ua": ""
+  },
+  "D_007_0": {
+    "en": "Do you have so many\nphotos and videos that\nit takes a while to scroll\nthrough them all?",
+    "ua": "Маєте стільки фото\nй відео, що гортати\nїх усі задовго?"
+  },
+  "D_007_1": {
+    "en": "{t:4.1:140050005f004700750069006400310033005f005500}Touch a date folder to\nselect it, then touch\nagain to collapse all\nphotos and videos from\nthat date into the folder,\nmaking scrolling easier.",
+    "ua": "{t:4.1:140050005f004700750069006400310033005f005500}Торкніться папки з датою,\nщоб вибрати її, і ще раз —\nщоб згорнути всі фото\nй відео того дня в папку.\nТак гортати легше."
+  },
+  "D_007_2": {
+    "en": "{t:4.1:140050005f004700750069006400310034005f005500}To see all the photos and\nvideos again, touch the\ncollapsed folder once\nmore.",
+    "ua": "{t:4.1:140050005f004700750069006400310034005f005500}Щоб знову побачити всі\nфото й відео, торкніться\nзгорнутої папки ще раз."
+  },
+  "D_007_3": {
+    "en": "{t:4.1:140050005f004700750069006400310034005f005500}I went to a seed\nfestival yesterday, but\nI'm not showing you\nthe photos. Chirp.",
+    "ua": "{t:4.1:140050005f004700750069006400310034005f005500}Учора я була на святі\nнасіння, але фото вам\nне покажу. Цвірінь."
+  },
+  "Guide_Tex_008": {
+    "en": "",
+    "ua": ""
+  },
+  "D_008_0": {
+    "en": "",
+    "ua": ""
+  },
+  "D_008_1": {
+    "en": "",
+    "ua": ""
+  },
+  "D_008_2": {
+    "en": "",
+    "ua": ""
+  },
+  "D_008_3": {
+    "en": "",
+    "ua": ""
+  },
+  "Guide_Tex_009": {
+    "en": "",
+    "ua": ""
+  },
+  "D_009_0": {
+    "en": "Slideshows are a fun way\nof viewing and sharing\nyour photos and videos.",
+    "ua": "Слайд-шоу — приємний\nспосіб переглянути фото\nй відео та показати їх."
+  },
+  "D_009_1": {
+    "en": "If you're going to put the\nsystem down or view the\nslideshow from a distance,\nor if several people will be\nviewing it, I recommend\nthat you view it in 2D.",
+    "ua": "Якщо ви покладете\nконсоль чи дивитиметеся\nздалеку, а надто якщо\nглядачів кілька, раджу\nдивитися у 2D."
+  },
+  "D_009_2": {
+    "en": "{t:4.1:140050005f004700750069006400300035005f005500}To view it in 2D, move the\n{t:0.3:ff3200ff}3D depth slider {t:0.3:454039ff}down.",
+    "ua": "{t:4.1:140050005f004700750069006400300035005f005500}Щоб дивитися у 2D,\nопустіть {t:0.3:ff3200ff}повзунок\nглибини 3D{t:0.3:454039ff}."
+  },
+  "Guide_Tex_009_flw": {
+    "en": "",
+    "ua": ""
+  },
+  "D_009_0_flw": {
+    "en": "Slideshows are a fun way\nof viewing and sharing\nyour photos and videos.",
+    "ua": "Слайд-шоу — приємний\nспосіб переглянути фото\nй відео та показати їх."
+  },
+  "D_009_1_flw": {
+    "en": "You can just set your\nsystem down on a table\nsomewhere...",
+    "ua": "Просто покладіть\nконсоль десь\nна столі…"
+  },
+  "D_009_2_flw": {
+    "en": "And let your Nintendo 2DS\ntake you on a nice trip\ndown memory lane.",
+    "ua": "І нехай Nintendo 2DS\nпроведе вас приємною\nстежкою спогадів."
+  },
+  "Guide_Tex_010": {
+    "en": "",
+    "ua": ""
+  },
+  "D_010_0": {
+    "en": "Have you found my\nlittle tips and hints\nuseful? I hope so!",
+    "ua": "Чи стали вам у пригоді\nмої маленькі поради?\nСподіваюся, так!"
+  },
+  "D_010_1": {
+    "en": "You can review any of\nthe tips I've already\ngiven you by selecting\nUsage Tips in Settings.",
+    "ua": "Будь-яку з уже наданих\nпорад можна переглянути\nще раз: виберіть Поради\nв параметрах."
+  },
+  "Guide_Tex_011": {
+    "en": "",
+    "ua": ""
+  },
+  "D_011_0": {
+    "en": "Here's a useful hint.",
+    "ua": "Ось корисна підказка."
+  },
+  "D_011_1": {
+    "en": "{t:4.1:140050005f004700750069006400300038005f005500}Press the {t:0.3:ff3200ff}HOME Button{t:0.3:454039ff}\nat any time to return\nto the HOME Menu.",
+    "ua": "{t:4.1:140050005f004700750069006400300038005f005500}Будь-коли натисніть\n{t:0.3:ff3200ff}кнопку HOME{t:0.3:454039ff}, щоб\nповернутися в\nМеню HOME."
+  },
+  "Guide_Tex_012": {
+    "en": "",
+    "ua": ""
+  },
+  "D_012_0": {
+    "en": "I bet that {t:0.3:ff3200ff}red lever{t:0.3:454039ff}\ndown there has\npiqued your curiosity.\nHave you tried\ntouching it yet?",
+    "ua": "Певна, що {t:0.3:ff3200ff}червоний\nповзунок {t:0.3:454039ff}унизу\nвас зацікавив.\nВи вже\nторкалися його?"
+  },
+  "D_012_1": {
+    "en": "Touch it and three\nnew tools will\ncome into view.",
+    "ua": "Торкніться — і з'являться\nтри нові інструменти."
+  },
+  "D_012_2": {
+    "en": "You can do all sorts of\nthings with these!\nUse them to change\nthe camera mode,",
+    "ua": "Ними можна робити\nбагато чого! Вони\nзмінюють режим\nкамери,"
+  },
+  "D_012_4": {
+    "en": "to set a self-timer\nwhen taking photos,",
+    "ua": "вмикають таймер\nдля зйомки фото,"
+  },
+  "D_012_5": {
+    "en": "to use different Trick\nShot modes for shooting\nvideos... and more!",
+    "ua": "дають особливі режими\nдля зйомки відео…\nі не тільки!"
+  },
+  "D_012_3": {
+    "en": "Touch the tool lever\nagain to deactivate\nand hide the tools.",
+    "ua": "Торкніться повзунка\nще раз, щоб вимкнути\nй сховати інструменти."
+  },
+  "Guide_Tex_013": {
+    "en": "",
+    "ua": ""
+  },
+  "D_013_0": {
+    "en": "Ever tried to take a photo\nor video in 3D, then\nrealised the 3D depth\nslider was all the way\ndown?",
+    "ua": "Бувало, що ви знімали\nфото чи відео у 3D і\nаж потім помічали, що\nповзунок глибини 3D\nопущено донизу?"
+  },
+  "D_013_1": {
+    "en": "{t:4.1:140050005f004700750069006400300035005f005500}Don't worry! You can\nstill view the photo or\nvideo in 3D by moving\nthe 3D depth slider up.",
+    "ua": "{t:4.1:140050005f004700750069006400300035005f005500}Не хвилюйтеся! Фото\nчи відео все одно можна\nдивитися у 3D — просто\nпідніміть повзунок."
+  },
+  "D_013_2": {
+    "en": "{t:4.1:140050005f004700750069006400300035005f005500}Of course, any photos or\nvideos you take with the\ninner camera will remain in\n2D no matter what. Use\nthe outer cameras to\ncapture 3D images.",
+    "ua": "{t:4.1:140050005f004700750069006400300035005f005500}Звісно, фото й відео,\nзняті передньою камерою,\nлишаться у 2D за\nбудь-яких умов. Для 3D\nберіть задні камери."
+  },
+  "Guide_Tex_014": {
+    "en": "",
+    "ua": ""
+  },
+  "D_014_0": {
+    "en": "Are you having fun\ntaking 3D photos?\nWell, let me share\nsomething even\nmore fun with you...",
+    "ua": "Чи весело вам знімати\n3D-фото? Тоді розповім\nдещо ще цікавіше…"
+  },
+  "D_014_1": {
+    "en": "Photos in Nintendo 3DS\nCamera can show up in\nother games automatically!\nThey might be modified,\ntoo. Exciting stuff, eh?",
+    "ua": "Фото з Nintendo 3DS\nКамери можуть самі\nз'являтися в інших іграх!\nІ навіть змінюватися.\nЦікаво, еге ж?"
+  },
+  "D_014_2": {
+    "en": "Don't worry, though.\nYour originals will be\nkept safe and sound\nhere with me. Chirp!",
+    "ua": "Та не хвилюйтеся.\nОригінали лишаться\nцілі та неушкоджені\nтут, у мене. Цвірінь!"
+  },
+  "Guide_Tex_015": {
+    "en": "",
+    "ua": ""
+  },
+  "D_015_0": {
+    "en": "The 3D Tools in\nGraffiti allow you to\ndo some cool things\nwith your photos.",
+    "ua": "3D-засоби в Малюванні\nдають змогу зробити\nз вашими фото\nкілька цікавих речей."
+  },
+  "D_015_1": {
+    "en": "You can raise or\nlower parts of\nthe photo in 3D.",
+    "ua": "Можна підняти\nчи опустити частини\nфото у 3D."
+  },
+  "D_015_2": {
+    "en": "Use the eraser tools\nto remove the effect.",
+    "ua": "Щоб прибрати ефект,\nскористайтеся гумками."
+  },
+  "Guide_Tex_016": {
+    "en": "",
+    "ua": ""
+  },
+  "D_016_0": {
+    "en": "If you feel like a change,\nselect {t:0.3:ff3200ff}Interface Colour\n{t:0.3:454039ff}in Settings to give\nNintendo 3DS Camera\na new look.",
+    "ua": "Якщо хочеться змін,\nвиберіть {t:0.3:ff3200ff}Колір інтерфейсу\n{t:0.3:454039ff}у параметрах —\nі Nintendo 3DS Камера\nматиме новий вигляд."
+  },
+  "D_016_1": {
+    "en": "Not sure which colour\nto go for? Just give the\nselection cursor a flick\nand leave it up to luck.",
+    "ua": "Не знаєте, який колір\nобрати? Просто крутніть\nкурсор вибору й\nздайтеся на щастя."
+  },
+  "D_016_2": {
+    "en": "Select Reset to return\nto the default colour.",
+    "ua": "Виберіть Скинути, щоб\nповернути звичайний\nколір."
+  },
+  "Guide_Tex_017": {
+    "en": "",
+    "ua": ""
+  },
+  "D_017_0": {
+    "en": "Try using the \"bark\" or\n\"meow\" attention sounds\nwhen taking photos of\nyour cat or dog. ",
+    "ua": "Спробуйте звуки уваги\n«гавкіт» чи «няв», коли\nзнімаєте свого кота\nчи пса."
+  },
+  "D_017_1": {
+    "en": "It might turn to look at the\ncamera at just the right\nmoment for a great snap!",
+    "ua": "Може, він гляне в камеру\nсаме тієї миті, коли треба\nдля чудового знімка!"
+  },
+  "D_017_2": {
+    "en": "You could also use these\nsounds to get a smile out\nof babies and children,\nor anyone else you're\ntaking a photo of!",
+    "ua": "Цими звуками можна ще\nвикликати усмішку в\nмалюків і дітей — та й\nу будь-кого, кого ви\nзнімаєте!"
+  },
+  "Guide_Tex_018": {
+    "en": "",
+    "ua": ""
+  },
+  "D_018_0": {
+    "en": "Need help keeping trees,\nbuildings and so on lined\nup straight in your photos\nand videos? Press {t:0.3:ff3200ff}{t:0.3:454039ff} to\ndisplay some on-screen\nalignment aids.",
+    "ua": "Треба, щоб дерева,\nбудинки й таке інше\nстояли рівно на фото\nй відео? Натисніть {t:0.3:ff3200ff}{t:0.3:454039ff},\nщоб на екрані з'явилися\nлінії вирівнювання."
+  },
+  "D_018_1": {
+    "en": "The red {t:0.3:ff3200ff}horizon line {t:0.3:454039ff}tilts\nas you tilt the system.\nIt's roughly parallel\nwith the ground.",
+    "ua": "Червона {t:0.3:ff3200ff}лінія горизонту\n{t:0.3:454039ff}нахиляється разом\nіз консоллю. Вона\nприблизно\nпаралельна землі."
+  },
+  "D_018_2": {
+    "en": "The static white\ncrosshairs indicate the\ncentre of the screen.",
+    "ua": "Нерухоме біле перехрестя\nпоказує центр екрана."
+  },
+  "D_018_3": {
+    "en": "Use these to help\nyou shoot straight!",
+    "ua": "Використовуйте їх, щоб\nзнімати рівно!"
+  },
+  "Guide_Tex_019": {
+    "en": "",
+    "ua": ""
+  },
+  "D_019_0": {
+    "en": "Want to get in the frame\nfor a group shot?",
+    "ua": "Хочете й самі потрапити\nв кадр спільного знімка?"
+  },
+  "D_019_1": {
+    "en": "Try using the\nself-timer feature.",
+    "ua": "Спробуйте\nтаймер."
+  },
+  "D_019_2": {
+    "en": "You can set a countdown,\nafter which the system\nwill take a photo for you.",
+    "ua": "Можна задати відлік,\nпісля якого консоль\nзніме фото за вас."
+  },
+  "D_019_3": {
+    "en": "You can also use the\nvoice-activation function\nto take a photo when\nyou say \"{t:0.3:ff3200ff}OK!{t:0.3:454039ff}\"",
+    "ua": "Ще є зйомка голосом:\nфото знімається, коли\nви скажете «{t:0.3:ff3200ff}OK!{t:0.3:454039ff}»"
+  },
+  "D_019_4": {
+    "en": "Say it loud!\nSay it clear!\nChirp!",
+    "ua": "Кажіть гучно!\nКажіть чітко!\nЦвірінь!"
+  },
+  "Guide_Tex_020": {
+    "en": "",
+    "ua": ""
+  },
+  "D_020_0": {
+    "en": "The Merge effect can\nproduce some weird\nand wonderful photos.",
+    "ua": "Ефект Злиття дає\nдивовижні й дивні\nфотографії."
+  },
+  "D_020_1": {
+    "en": "\"I've seen people\nlike this!\"\n\"I think I look good\nwith your hair!\"\n\"Who on earth\nis that?!\"",
+    "ua": "«Я бачила таких\nлюдей!»\n«Здається, мені личить\nтвоє волосся!»\n«Хто це\nтакий?!»"
+  },
+  "D_020_2": {
+    "en": "Me and the other\nbudgies have had\na lot of fun with it.\nYou're sure to have\na laugh as well!",
+    "ua": "Ми з іншими\nпапужками мали\nз цим багато втіхи.\nВи теж неодмінно\nпосмієтеся!"
+  },
+  "Guide_Tex_021": {
+    "en": "",
+    "ua": ""
+  },
+  "D_021_0": {
+    "en": "The Sparkle effect is an\neasy (and glamorous!)\nway to decorate photos.",
+    "ua": "Ефект Блиску — простий\n(і розкішний!) спосіб\nоздобити фото."
+  },
+  "D_021_1": {
+    "en": "Simply aim the camera\nat a face, blow on the\nmic and whoosh!\nIt's like fairyland.",
+    "ua": "Просто наведіть камеру\nна обличчя, дмухніть\nу мікрофон — і вжух!\nНаче в казці."
+  },
+  "D_021_2": {
+    "en": "Time your photo carefully,\nand... Click!",
+    "ua": "Виберіть мить\nі… клац!"
+  },
+  "D_021_3": {
+    "en": "You'll find Sparkle in\nthe Camera Mode menu.",
+    "ua": "Блиск ви знайдете\nв меню режимів камери."
+  },
+  "Guide_Tex_022": {
+    "en": "",
+    "ua": ""
+  },
+  "D_022_0": {
+    "en": "For a beautiful portrait\nshot, try using the\nDream effect.",
+    "ua": "Для гарного портрета\nспробуйте ефект\nМрії."
+  },
+  "D_022_1": {
+    "en": "Photos taken with this\neffect have a lovely,\nsoft atmosphere.",
+    "ua": "Знімки з цим ефектом\nмають приємну,\nм'яку атмосферу."
+  },
+  "D_022_2": {
+    "en": "Food will also look\nlike it's steaming-hot\nand delicious!",
+    "ua": "А їжа виглядатиме\nгарячою й\nсмачною!"
+  },
+  "Guide_Tex_023": {
+    "en": "",
+    "ua": ""
+  },
+  "D_023_0": {
+    "en": "You can use the Pinhole\neffect to give your\nphotos an old-fashioned,\nnostalgic look.",
+    "ua": "Ефектом Віньєтки можна\nнадати фотографіям\nстаромодного,\nностальгійного вигляду."
+  },
+  "D_023_1": {
+    "en": "Why not try using it\nto take a photo of a\nbeloved old toy before\nyou pass it on?",
+    "ua": "Чому б не зняти ним\nулюблену стару іграшку,\nперш ніж віддати\nїї далі?"
+  },
+  "Guide_Tex_024": {
+    "en": "",
+    "ua": ""
+  },
+  "D_024_0": {
+    "en": "",
+    "ua": ""
+  },
+  "D_024_1": {
+    "en": "",
+    "ua": ""
+  },
+  "Guide_Tex_025": {
+    "en": "",
+    "ua": ""
+  },
+  "D_025_0": {
+    "en": "The Mystery effect\nis...well, mysterious!\nThere's no preview, so\nyou have to take a photo\nto see what you get.",
+    "ua": "Ефект Загадки… ну,\nзагадковий! Показу\nнаперед немає, тож треба\nзняти фото, щоб\nпобачити, що вийде."
+  },
+  "D_025_1": {
+    "en": "You can take all kinds\nof photos with Mystery,\nand you might make\nsome new discoveries.",
+    "ua": "Загадкою можна знімати\nбудь-що, і ви, можливо,\nзробите кілька\nнових відкриттів."
+  },
+  "D_025_2": {
+    "en": "They say that some\nMystery photos even\nshow things from\nother dimensions...",
+    "ua": "Кажуть, деякі знімки\nЗагадки навіть\nпоказують речі\nз інших вимірів…"
+  },
+  "Guide_Tex_026": {
+    "en": "",
+    "ua": ""
+  },
+  "D_026_0": {
+    "en": "The Low-Light effect\ncan help you when\nshooting at night\nor in darker rooms.",
+    "ua": "Ефект Ночі допоможе,\nколи ви знімаєте\nувечері або\nв темніших кімнатах."
+  },
+  "D_026_1": {
+    "en": "It increases the exposure\ntime slightly in order to\ncapture more light,",
+    "ua": "Він трохи довше тримає\nвитримку, щоб зібрати\nбільше світла,"
+  },
+  "D_026_2": {
+    "en": "so, to avoid camera\nshake, make sure\nyou hold the camera\nfirmly when shooting!",
+    "ua": "тож тримайте камеру\nміцно, щоб знімок\nне змазався!"
+  },
+  "Guide_Tex_027": {
+    "en": "",
+    "ua": ""
+  },
+  "D_027_0": {
+    "en": "Why not try setting\nup your own original\ncamera effects?",
+    "ua": "Чому б не скласти\nвласні, оригінальні\nефекти камери?"
+  },
+  "D_027_1": {
+    "en": "There are four different\nsettings you can change\nfreely in Manual Controls.",
+    "ua": "У ручних налаштуваннях\nє чотири параметри,\nякі можна змінювати\nвільно."
+  },
+  "D_027_2": {
+    "en": "You can return the\nsettings to their original\nvalues by touching Reset,\nso feel free to tinker with\nthem as much as you like!",
+    "ua": "Значення можна\nповернути до звичайних\nкнопкою Скинути, тож\nсміливо крутіть їх\nскільки заманеться!"
+  },
+  "Guide_Tex_028": {
+    "en": "",
+    "ua": ""
+  },
+  "D_028_0": {
+    "en": "Photos taken with\nNintendo 3DS Camera\ncan be saved to either\nthe {t:0.3:ff3200ff}System Memory\n{t:0.3:454039ff}or an {t:0.3:ff3200ff}SD Card{t:0.3:454039ff}.",
+    "ua": "Фото з Nintendo 3DS\nКамери зберігаються\nабо в {t:0.3:ff3200ff}пам'ять системи{t:0.3:454039ff},\nабо на {t:0.3:ff3200ff}карту SD{t:0.3:454039ff}."
+  },
+  "D_028_1": {
+    "en": "You can store a\nmaximum of about\n{t:0.3:ff3200ff}380 photos {t:0.3:454039ff}in the\nSystem Memory,",
+    "ua": "У пам'яті системи\nвміщується\nблизько {t:0.3:ff3200ff}380 фото{t:0.3:454039ff},"
+  },
+  "D_028_2": {
+    "en": "and a maximum of\nabout {t:0.3:ff3200ff}3,000 photos and\nvideos{t:0.3:454039ff} on an SD Card.",
+    "ua": "а на карті SD —\nблизько {t:0.3:ff3200ff}3000 фото\nй відео{t:0.3:454039ff}."
+  },
+  "D_028_3": {
+    "en": "To change where your\nphotos are saved to,",
+    "ua": "Щоб змінити місце\nзбереження фото,"
+  },
+  "D_028_4": {
+    "en": "just select Photo Save\nLocation in Settings.",
+    "ua": "виберіть Місце\nзбереження фото\nв параметрах."
+  },
+  "Guide_Tex_029": {
+    "en": "",
+    "ua": ""
+  },
+  "D_029_0": {
+    "en": "Taken a photo or\nvideo using the outer\ncameras, but it's not\nappearing in 3D?",
+    "ua": "Зняли фото чи відео\nзадніми камерами,\nа воно не показується\nу 3D?"
+  },
+  "D_029_1": {
+    "en": "{t:4.1:140050005f004700750069006400300035005f005500}Check that the\n{t:0.3:ff3200ff}3D depth slider{t:0.3:454039ff}\nisn't down!",
+    "ua": "{t:4.1:140050005f004700750069006400300035005f005500}Перевірте, чи не\nопущено {t:0.3:ff3200ff}повзунок\nглибини 3D{t:0.3:454039ff}!"
+  },
+  "D_029_2": {
+    "en": "{t:4.1:140050005f004700750069006400300035005f005500}If you still aren't getting\n3D images after moving\nthe 3D depth slider up,",
+    "ua": "{t:4.1:140050005f004700750069006400300035005f005500}Якщо 3D не з'явилося\nнавіть після того, як ви\nпідняли повзунок,"
+  },
+  "D_029_3": {
+    "en": "{t:4.1:140050005f004700750069006400300035005f005500}3D images may be\nrestricted by Parental\nControls. Kids, ask a\nparent or legal guardian\nabout this. Chirp.",
+    "ua": "{t:4.1:140050005f004700750069006400300035005f005500}то 3D може бути\nобмежене батьківським\nконтролем. Діти, спитайте\nпро це батьків чи опікуна.\nЦвірінь."
+  },
+  "Guide_Tex_030": {
+    "en": "",
+    "ua": ""
+  },
+  "D_030_0": {
+    "en": "{t:4.1:140050005f004700750069006400300039005f005500}A {t:0.3:ff3200ff}3D icon {t:0.3:454039ff}is displayed on\nthe upper screen while an\nimage that can be shown\nin 3D is on the screen.",
+    "ua": "{t:4.1:140050005f004700750069006400300039005f005500}{t:0.3:ff3200ff}Значок 3D {t:0.3:454039ff}показується\nна верхньому екрані,\nколи там є зображення,\nяке можна бачити у 3D."
+  },
+  "D_030_1": {
+    "en": "{t:4.1:140050005f004700750069006400300039005f005500}If the icon is {t:0.3:ff3200ff}white{t:0.3:454039ff},\nthe image is being\ndisplayed in 3D.\nIf the icon is {t:0.3:ff3200ff}grey{t:0.3:454039ff},\nthe image is being\ndisplayed in 2D.",
+    "ua": "{t:4.1:140050005f004700750069006400300039005f005500}Якщо значок {t:0.3:ff3200ff}білий{t:0.3:454039ff},\nзображення показано\nу 3D. Якщо значок\n{t:0.3:ff3200ff}сірий{t:0.3:454039ff}, зображення\nпоказано у 2D."
+  },
+  "Guide_Tex_030_flw": {
+    "en": "",
+    "ua": ""
+  },
+  "D_030_0_flw": {
+    "en": "{t:4.1:140050005f004700750069006400300039005f005500}A {t:0.3:ff3200ff}3D icon {t:0.3:454039ff}will appear\nwhen you can take photos\nor videos in 3D.",
+    "ua": "{t:4.1:140050005f004700750069006400300039005f005500}{t:0.3:ff3200ff}Значок 3D {t:0.3:454039ff}з'явиться,\nколи можна знімати\nфото чи відео у 3D."
+  },
+  "D_030_1_flw": {
+    "en": "You can view the images\nand videos in 3D on a\n3D-compatible device.",
+    "ua": "Зображення й відео\nможна дивитися у 3D\nна сумісному пристрої."
+  },
+  "Guide_Tex_031": {
+    "en": "",
+    "ua": ""
+  },
+  "D_031_0": {
+    "en": "Have you tried out\nany of the film types\nin Manual Controls?",
+    "ua": "Чи пробували ви\nрізні типи плівки\nв ручних\nналаштуваннях?"
+  },
+  "D_031_1": {
+    "en": "Each film type gives your\nphotos and videos a\ndifferent atmosphere.",
+    "ua": "Кожен тип плівки надає\nвашим фото й відео\nіншого настрою."
+  },
+  "D_031_2": {
+    "en": "Try using the B/W film.\nIt's like stepping onto\nthe set of a silent movie!",
+    "ua": "Спробуйте плівку Ч/Б.\nНаче ви потрапили на\nзйомки німого кіно!"
+  },
+  "Guide_Tex_032": {
+    "en": "",
+    "ua": ""
+  },
+  "D_032_0": {
+    "en": "Have you tried adjusting\nthe Sharpness setting\nin Manual Controls?",
+    "ua": "Чи пробували ви змінити\nРізкість у ручних\nналаштуваннях?"
+  },
+  "D_032_1": {
+    "en": "This setting lets you\nadjust how sharp\nthe focus is.",
+    "ua": "Цей параметр задає,\nнаскільки гострий\nфокус."
+  },
+  "D_032_2": {
+    "en": "Move the slider to\nthe left, and you'll\nget a soft focus.",
+    "ua": "Посуньте повзунок\nліворуч — і фокус\nстане м'яким."
+  },
+  "D_032_3": {
+    "en": "Move it to the right,\nand the focus will get\nsharper and sharper.",
+    "ua": "Посуньте праворуч —\nі фокус ставатиме\nдедалі гострішим."
+  },
+  "D_032_4": {
+    "en": "Using softer focus can\nbe a handy trick for\ntaking more flattering\nphotos and videos of\npeople.",
+    "ua": "М'якший фокус —\nзручна хитрість, щоб\nлюди на фото й відео\nвиходили\nпривабливіше."
+  },
+  "Guide_Tex_033": {
+    "en": "",
+    "ua": ""
+  },
+  "D_033_0": {
+    "en": "Have you tried adjusting\nthe Contrast setting\nin Manual Controls?",
+    "ua": "Чи пробували ви змінити\nКонтраст у ручних\nналаштуваннях?"
+  },
+  "D_033_1": {
+    "en": "This setting lets\nyou adjust the\nrange of colours.",
+    "ua": "Цей параметр задає\nдіапазон\nкольорів."
+  },
+  "D_033_2": {
+    "en": "Move the slider to\nthe left for a calmer\nrange of colours.",
+    "ua": "Посуньте повзунок\nліворуч — кольори\nстануть спокійніші."
+  },
+  "D_033_3": {
+    "en": "Move it to the right for\na brighter and vivid\nrange of colours.",
+    "ua": "Посуньте праворуч —\nкольори стануть\nяскравіші й соковитіші."
+  },
+  "D_033_4": {
+    "en": "When taking photos\nat special events and\nparties, try using a\nvivid contrast setting!",
+    "ua": "Знімаючи на святах\nі вечірках, спробуйте\nсоковитіший\nконтраст!"
+  },
+  "Guide_Tex_034": {
+    "en": "",
+    "ua": ""
+  },
+  "D_034_0": {
+    "en": "Have you tried adjusting\nthe Brightness setting\nin Manual Controls?",
+    "ua": "Чи пробували ви змінити\nЯскравість у ручних\nналаштуваннях?"
+  },
+  "D_034_1": {
+    "en": "This setting lets you adjust\nthe brightness of your\nphotos and videos.",
+    "ua": "Цей параметр задає\nяскравість ваших\nфото й відео."
+  },
+  "D_034_2": {
+    "en": "Move the slider to the\nleft to go darker,",
+    "ua": "Посуньте повзунок\nліворуч — буде темніше,"
+  },
+  "D_034_3": {
+    "en": "move it to the right\nto go brighter.",
+    "ua": "посуньте праворуч —\nбуде світліше."
+  },
+  "D_034_4": {
+    "en": "Master the settings\nin Manual Controls,\nand you may learn to\ncapture images exactly\nthe way you want them.",
+    "ua": "Опануйте ручні\nналаштування — і,\nможливо, знімки\nвиходитимуть саме\nтакими, як ви хочете."
+  },
+  "Guide_Tex_035": {
+    "en": "",
+    "ua": ""
+  },
+  "D_035_0": {
+    "en": "To ensure the best 3D\neffect, position yourself so\nthat the subject fits fully\nwithin the frame without\nbeing cropped.",
+    "ua": "Щоб 3D вийшло\nнайкраще, станьте так,\nаби об'єкт уміщався\nв кадр повністю,\nне обрізаний."
+  },
+  "Guide_Tex_036": {
+    "en": "",
+    "ua": ""
+  },
+  "D_036_0": {
+    "en": "Including vertical lines\nsuch as doors or pillars\nin your 3D shots will\nenhance the 3D effect.",
+    "ua": "Вертикальні лінії —\nдвері чи стовпи —\nу 3D-кадрі\nпосилюють ефект 3D."
+  },
+  "Guide_Tex_037": {
+    "en": "",
+    "ua": ""
+  },
+  "D_037_0": {
+    "en": "{t:0.3:ff3200ff}Hazy {t:0.3:454039ff}bodies like steam\nor smoke can look good\nin 3D photos.",
+    "ua": "{t:0.3:ff3200ff}Серпанок {t:0.3:454039ff}на кшталт пари\nчи диму гарно виглядає\nна 3D-фото."
+  },
+  "D_037_1": {
+    "en": "Just be careful that\nyou don't get too\nclose to anything hot!",
+    "ua": "Тільки стережіться\nне підходити надто\nблизько до гарячого!"
+  },
+  "Guide_Tex_038": {
+    "en": "",
+    "ua": ""
+  },
+  "D_038_0": {
+    "en": "Thin objects and groups\nof differently sized and\nshaped objects look\ngood in 3D photos.",
+    "ua": "Тонкі предмети й\nгрупи речей різного\nрозміру та форми\nгарно виходять у 3D."
+  },
+  "D_038_1": {
+    "en": "How tidy is your room?",
+    "ua": "Чи прибрано у вашій\nкімнаті?"
+  },
+  "D_038_2": {
+    "en": "If it's a mess, it\nmight make for\na good 3D photo!",
+    "ua": "Якщо там безлад,\nвийде, може, гарне\n3D-фото!"
+  },
+  "D_038_3": {
+    "en": "Do tidy up, though. Chirp.",
+    "ua": "Але прибрати таки\nварто. Цвірінь."
+  },
+  "Guide_Tex_039": {
+    "en": "",
+    "ua": ""
+  },
+  "D_039_0": {
+    "en": "Fences, windows and\nother things you can\n{t:0.3:ff3200ff}see through {t:0.3:454039ff}make for\ninteresting 3D photos.",
+    "ua": "Огорожі, вікна та інші\nречі, крізь які {t:0.3:ff3200ff}видно\nнаскрізь{t:0.3:454039ff}, дають\nцікаві 3D-фото."
+  },
+  "Guide_Tex_040": {
+    "en": "",
+    "ua": ""
+  },
+  "D_040_0": {
+    "en": "A road leading into the\ndistance; a tree in the\nforeground with a building\nbehind it; a hand raised\ntowards the camera...",
+    "ua": "Дорога, що біжить\nудалину; дерево спереду\nй будинок за ним; рука,\nпіднята до камери…"
+  },
+  "D_040_1": {
+    "en": "Capturing both near and\nfaraway objects in the\nsame composition can\nmake for a great 3D\nimage.",
+    "ua": "Якщо в одному кадрі\nє і близькі, і далекі\nречі, 3D-зображення\nвиходить чудове."
+  },
+  "Guide_Tex_041": {
+    "en": "",
+    "ua": ""
+  },
+  "D_041_0": {
+    "en": "Touch a thumbnail\nof a photo or video \nand a small menu\nwill appear.",
+    "ua": "Торкніться мініатюри\nфото чи відео —\nі з'явиться\nневеличке меню."
+  },
+  "D_041_1": {
+    "en": "This allows you\nto add graffiti to photos,\nand have fun with\nVideo Tools!",
+    "ua": "Через нього можна\nмалювати на фото\nй бавитися з\nРоботою з відео!"
+  },
+  "D_041_2": {
+    "en": "You can also use this\nmenu to delete individual\nphotos and videos.",
+    "ua": "Ще цим меню можна\nвидаляти окремі\nфото й відео."
+  },
+  "Guide_Tex_042": {
+    "en": "",
+    "ua": ""
+  },
+  "D_042_0": {
+    "en": "Slideshows are more\nfun if you choose music\nthat suits your visuals.",
+    "ua": "Слайд-шоу цікавіше,\nколи музика пасує\nдо зображень."
+  },
+  "D_042_1": {
+    "en": "You can choose from\na variety of different\nmusic tracks in the\nslideshow settings.",
+    "ua": "У параметрах слайд-шоу\nє на вибір кілька\nрізних музичних\nтем."
+  },
+  "D_042_2": {
+    "en": "You can also set the\nphoto display duration\nand transition effect.",
+    "ua": "Ще можна задати\nтривалість показу фото\nй ефект переходу."
+  },
+  "Guide_Tex_043": {
+    "en": "",
+    "ua": ""
+  },
+  "D_043_0": {
+    "en": "{t:0.3:ff3200ff}Turn off{t:0.3:454039ff} your\nNintendo 3DS system\nbefore removing\nthe SD Card.",
+    "ua": "{t:0.3:ff3200ff}Вимкніть{t:0.3:454039ff} консоль\nNintendo 3DS, перш ніж\nвиймати карту SD."
+  },
+  "D_043_1": {
+    "en": "Open the {t:0.3:ff3200ff}slot cover{t:0.3:454039ff}\nand push the SD Card\nin until it clicks.",
+    "ua": "Відкрийте {t:0.3:ff3200ff}кришку гнізда\n{t:0.3:454039ff}і натисніть на карту SD,\nдоки не клацне."
+  },
+  "D_043_2": {
+    "en": "Remove the SD Card\nby pulling the part\nsticking out of the slot.",
+    "ua": "Вийміть карту SD,\nпотягнувши за частину,\nщо стирчить із гнізда."
+  },
+  "D_043_3": {
+    "en": "When inserting an\nSD Card, make sure\nthat the connectors\nare {t:0.3:ff3200ff}facing up{t:0.3:454039ff}.",
+    "ua": "Вставляючи карту SD,\nпильнуйте, щоб контакти\nдивилися {t:0.3:ff3200ff}вгору{t:0.3:454039ff}."
+  },
+  "Guide_Tex_044": {
+    "en": "",
+    "ua": ""
+  },
+  "D_044_0": {
+    "en": "I may be a budgie,\nbut I'm no bird-brain.",
+    "ua": "Хай я й папужка,\nале голова в мене світла."
+  },
+  "D_044_1": {
+    "en": "I always know when\nto say the right thing.",
+    "ua": "Я завжди знаю,\nколи що сказати."
+  },
+  "D_044_2": {
+    "en": "Whether you're taking\nphotos and videos or\nviewing them,",
+    "ua": "Хоч коли ви знімаєте\nфото й відео, хоч\nколи їх дивитеся,"
+  },
+  "D_044_3": {
+    "en": "just touch me with the\nstylus to hear what\nI have to say. Chirp!",
+    "ua": "просто торкніться мене\nстилусом, щоб почути,\nщо я скажу. Цвірінь!"
+  },
+  "Guide_Tex_045": {
+    "en": "",
+    "ua": ""
+  },
+  "D_045_0": {
+    "en": "You can also take\nphotos while choosing\nthe camera mode.\nPress {t:0.3:ff3200ff}{t:0.3:454039ff}, {t:0.3:ff3200ff}{t:0.3:454039ff} or {t:0.3:ff3200ff}{t:0.3:454039ff}.",
+    "ua": "Знімати можна й тоді,\nколи ви вибираєте\nрежим камери.\nНатисніть {t:0.3:ff3200ff}{t:0.3:454039ff}, {t:0.3:ff3200ff}{t:0.3:454039ff} чи {t:0.3:ff3200ff}{t:0.3:454039ff}."
+  },
+  "Guide_Tex_046": {
+    "en": "",
+    "ua": ""
+  },
+  "D_046_0": {
+    "en": "By touching the {t:0.3:ff3200ff}+ {t:0.3:454039ff}or {t:0.3:ff3200ff}{t:0.3:454039ff}{t:0.3:ff3200ff}-\n{t:0.3:454039ff}icons, you can change\nthe number of photos\nand videos shown on\nthe lower screen.",
+    "ua": "Значками {t:0.3:ff3200ff}+ {t:0.3:454039ff}і {t:0.3:ff3200ff}{t:0.3:454039ff}{t:0.3:ff3200ff}-\n{t:0.3:454039ff}можна змінити,\nскільки фото й відео\nпоказано на\nнижньому екрані."
+  },
+  "Guide_Tex_047": {
+    "en": "",
+    "ua": ""
+  },
+  "D_047_0": {
+    "en": "You may not realise\nit, but whenever you\nuse the Merge effect,\nI'm working hard\nbehind the scenes.",
+    "ua": "Може, ви й не знаєте,\nале щоразу, коли ви\nберете ефект Злиття,\nя тяжко працюю\nза лаштунками."
+  },
+  "D_047_1": {
+    "en": "If I can't find any\nfaces, then I can't\nmerge them for you.",
+    "ua": "Якщо я не знайду\nжодного обличчя,\nто й злити не зможу."
+  },
+  "D_047_2": {
+    "en": "If you're taking the\nphoto in a dark place,\nor using the Negative\nor Solarise film types\nin Manual Controls,",
+    "ua": "Якщо ви знімаєте в\nтемному місці або\nберете плівку Негатив\nчи Соляризація в\nручних налаштуваннях,"
+  },
+  "D_047_3": {
+    "en": "it makes it really,\nreally hard for me\nto make out faces.",
+    "ua": "мені стає дуже,\nдуже важко\nрозгледіти обличчя."
+  },
+  "D_047_4": {
+    "en": "I do try my best, though!\nTrust me, it's not easy\nto make out faces from\na bird's-eye view...",
+    "ua": "Але я стараюся!\nПовірте, розібрати\nобличчя з пташиного\nпольоту нелегко…"
+  },
+  "Guide_Tex_048": {
+    "en": "",
+    "ua": ""
+  },
+  "D_048_0": {
+    "en": "You don't have to take\nphotos of actual people\nwhen merging faces.",
+    "ua": "Зливати обличчя можна\nне лише в живих\nлюдей."
+  },
+  "D_048_1": {
+    "en": "Try merging your\nface with people in \nposters or photos,\nor even mannequins!",
+    "ua": "Спробуйте злити своє\nобличчя з людьми на\nплакатах чи фото —\nчи навіть із манекенами!"
+  },
+  "Guide_Tex_049": {
+    "en": "",
+    "ua": ""
+  },
+  "D_049_0": {
+    "en": "If you tilt the system\nwhen using the Sparkle\neffect, you can change the\nway the sparkles move.",
+    "ua": "Якщо нахиляти консоль\nпід час ефекту Блиску,\nіскри рухатимуться\nінакше."
+  },
+  "Guide_Tex_050": {
+    "en": "",
+    "ua": ""
+  },
+  "D_050_0": {
+    "en": "",
+    "ua": ""
+  },
+  "D_050_1": {
+    "en": "",
+    "ua": ""
+  },
+  "Guide_Tex_051": {
+    "en": "",
+    "ua": ""
+  },
+  "D_051_0": {
+    "en": "Did you know you can\npress {t:0.3:ff3200ff}{t:0.3:454039ff} to switch between\ntaking photos and videos\nand viewing them?",
+    "ua": "Чи знали ви, що {t:0.3:ff3200ff}{t:0.3:454039ff}\nперемикає між зйомкою\nфото й відео та\nїх переглядом?"
+  },
+  "Guide_Tex_052": {
+    "en": "",
+    "ua": ""
+  },
+  "D_052_0": {
+    "en": "Be sure to have a good\nlook at your photos\nand videos once\nyou've taken them.",
+    "ua": "Обов'язково добре\nроздивіться свої фото\nй відео після того,\nяк зняли їх."
+  },
+  "D_052_1": {
+    "en": "Looking over the\nresults can help\nyou to improve\nyour technique.",
+    "ua": "Розгляд наслідків\nдопомагає\nвдосконалити\nмайстерність."
+  },
+  "D_052_2": {
+    "en": "You may even\nfind inspiration!",
+    "ua": "Ви навіть можете\nзнайти натхнення!"
+  },
+  "Guide_Tex_053": {
+    "en": "",
+    "ua": ""
+  },
+  "D_053_0": {
+    "en": "Do you ever find your\nphotos and videos turn\nout rather blurry?",
+    "ua": "Чи бувають ваші фото\nй відео розмитими?"
+  },
+  "D_053_1": {
+    "en": "If your hands move\nwhile you're shooting,\nit'll cause that blurring\neffect. This is what's\nknown as {t:0.3:ff3200ff}camera shake{t:0.3:454039ff}.",
+    "ua": "Якщо руки рухаються\nпід час зйомки, знімок\nрозмивається. Це й\nзветься {t:0.3:ff3200ff}тремтінням\nкамери{t:0.3:454039ff}."
+  },
+  "D_053_2": {
+    "en": "Incidentally, photos and\nvideos are much more\nlikely to suffer from {t:0.3:ff3200ff}camera\nshake{t:0.3:454039ff} when shooting in\ndark places.",
+    "ua": "До речі, {t:0.3:ff3200ff}тремтіння камери\n{t:0.3:454039ff}набагато частіше псує\nфото й відео, зняті\nв темних місцях."
+  },
+  "D_053_3": {
+    "en": "{t:4.1:140050005f004700750069006400310035005f005500}When doing so, try\nto hold the system\nas steadily as you\ncan, or place it on\na steady surface.",
+    "ua": "{t:4.1:140050005f004700750069006400310035005f005500}У такому разі тримайте\nконсоль якомога\nнерухоміше або\nпокладіть її на\nстійку поверхню."
+  },
+  "Guide_Tex_054": {
+    "en": "",
+    "ua": ""
+  },
+  "D_054_0": {
+    "en": "Do you sometimes\naccidentally shake\nthe camera when\npressing a button\nto take a photo?",
+    "ua": "Чи буває, що ви\nненароком хитаєте\nкамеру, натискаючи\nкнопку зйомки?"
+  },
+  "D_054_1": {
+    "en": "The self-timer might be\npretty helpful for times\nwhen it's easy to get\ncamera shake, like when\nshooting in dark rooms.",
+    "ua": "Таймер стане у пригоді\nтам, де легко зрушити\nкамеру, — скажімо,\nу темних кімнатах."
+  },
+  "D_054_2": {
+    "en": "Just set the self-timer,\nthen hold the system\nfirmly in your hands.",
+    "ua": "Просто ввімкніть таймер\nі міцно тримайте\nконсоль у руках."
+  },
+  "D_054_3": {
+    "en": "You won't have to press\nthe photo buttons this\nway, which could help\nprevent movement that\ncauses camera shake.",
+    "ua": "Тоді не доведеться\nнатискати кнопки\nзйомки, а отже, менше\nруху, від якого\nтремтить камера."
+  },
+  "Guide_Tex_055": {
+    "en": "",
+    "ua": ""
+  },
+  "D_055_0": {
+    "en": "Taking a photo of an\nobject so that it appears\nright in the middle of\nthe screen can give your\nphoto some real impact.",
+    "ua": "Якщо зняти річ так,\nщоб вона опинилася\nпосередині екрана,\nзнімок вийде\nсправді промовистим."
+  },
+  "D_055_1": {
+    "en": "Alternatively, taking the\nphoto so that it's slightly\noff-centre can give it a\nkind of cool look as well.",
+    "ua": "А якщо зняти її трохи\nне по центру, знімок\nтеж матиме\nсвій особливий вигляд."
+  },
+  "D_055_2": {
+    "en": "Press {t:0.3:ff3200ff} {t:0.3:454039ff}to display the\nlevel. It'll help you find\nthe centre of the screen.",
+    "ua": "Натисніть {t:0.3:ff3200ff} {t:0.3:454039ff}, щоб\nз'явився рівень. Він\nпідкаже центр екрана."
+  },
+  "D_055_3": {
+    "en": "Keeping the centre\nof the screen in mind\ncan help you balance\nthe composition\nof your photo.",
+    "ua": "Якщо тримати в голові\nцентр екрана, легше\nзрівноважити\nкомпозицію\nзнімка."
+  },
+  "Guide_Tex_056": {
+    "en": "",
+    "ua": ""
+  },
+  "D_056_0": {
+    "en": "When taking photos\nof people, keep the\ndirection they're\nfacing in mind.",
+    "ua": "Знімаючи людей,\nзважайте на те,\nу який бік вони\nдивляться."
+  },
+  "D_056_1": {
+    "en": "{t:4.1:140050005f004700750069006400310038005f005500}For example, if you have\na person facing right\non the right-hand side of\nthe picture, it'll look\na bit cramped.",
+    "ua": "{t:4.1:140050005f004700750069006400310038005f005500}Скажімо, якщо людина\nдивиться праворуч і\nстоїть у правій частині\nкадру, буде затісно."
+  },
+  "D_056_2": {
+    "en": "{t:4.1:140050005f004700750069006400310039005f005500}If you put them on the\nleft-hand side of the\npicture, they'll fit in\na bit more comfortably.",
+    "ua": "{t:4.1:140050005f004700750069006400310039005f005500}Якщо поставити її\nв лівій частині кадру,\nвона вміститься\nзатишніше."
+  },
+  "D_056_3": {
+    "en": "{t:4.1:140050005f004700750069006400310039005f005500}And for people facing left,\nthe opposite applies.\nPut them on the right side.",
+    "ua": "{t:4.1:140050005f004700750069006400310039005f005500}А з тими, хто дивиться\nліворуч, — навпаки.\nСтавте їх праворуч."
+  },
+  "D_056_4": {
+    "en": "{t:4.1:140050005f004700750069006400310039005f005500}Balancing different\nthings in the picture\nlike this is called\n{t:0.3:ff3200ff}composition{t:0.3:454039ff}.",
+    "ua": "{t:4.1:140050005f004700750069006400310039005f005500}Таке зрівноваження\nрізних речей у кадрі\nзветься\n{t:0.3:ff3200ff}композицією{t:0.3:454039ff}."
+  },
+  "Guide_Tex_057": {
+    "en": "",
+    "ua": ""
+  },
+  "D_057_0": {
+    "en": "Photos and videos of\nchildren or pets look\nbest when taken from\na low viewpoint.",
+    "ua": "Фото й відео дітей\nчи улюбленців\nвиходять найкраще\nз низької точки."
+  },
+  "Guide_Tex_058": {
+    "en": "",
+    "ua": ""
+  },
+  "D_058_0": {
+    "en": "You can choose different\nthemes for slideshows.",
+    "ua": "Для слайд-шоу можна\nвибирати різні теми."
+  },
+  "D_058_1": {
+    "en": "I'll do the legwork for you\nand pick out the right\nphotos and videos for\neach theme.",
+    "ua": "Я візьму роботу на себе\nй доберу для кожної\nтеми відповідні\nфото й відео."
+  },
+  "D_058_2": {
+    "en": "If the ones I pick don't\nquite match the theme,\nwell... I do try my best.",
+    "ua": "Якщо дібране не зовсім\nпасуватиме до теми —\nну… я старалася."
+  },
+  "D_058_3": {
+    "en": "Sorry. Chirp!",
+    "ua": "Вибачте. Цвірінь!"
+  },
+  "Guide_Tex_059": {
+    "en": "",
+    "ua": ""
+  },
+  "D_059_0": {
+    "en": "If you want to make\nthe subject of your\nphoto stand out, think\nabout the background.",
+    "ua": "Якщо хочете, щоб\nоб'єкт знімка вирізнявся,\nподумайте про тло."
+  },
+  "D_059_1": {
+    "en": "Using simple backgrounds\nsuch as plain walls will\nensure that the subject\nis the star of your photo.",
+    "ua": "Просте тло, як-от рівна\nстіна, зробить об'єкт\nголовним героєм\nвашого знімка."
+  },
+  "Guide_Tex_060": {
+    "en": "",
+    "ua": ""
+  },
+  "D_060_0": {
+    "en": "There are many different\nways of taking portraits,\ndepending on how\nyou want to present\nthe subject.",
+    "ua": "Портрет можна знімати\nпо-різному — залежно\nвід того, яким ви\nхочете показати\nоб'єкт."
+  },
+  "D_060_1": {
+    "en": "For example, shoot from\na low angle looking\nupwards at the subject\nfor a cool photo like\na fashion magazine shot.",
+    "ua": "Скажімо, знімок знизу\nвгору дає стильне фото,\nначе з модного\nжурналу."
+  },
+  "D_060_2": {
+    "en": "Shoot from above with\nthe subject looking up\nat you to increase the\ncuteness factor.",
+    "ua": "А знімок згори, коли\nоб'єкт дивиться на вас,\nдодає милості."
+  },
+  "D_060_3": {
+    "en": "Even with the same\nsubject and setting,\nthe results can change\ndramatically when you\nuse different angles.",
+    "ua": "Навіть із тим самим\nоб'єктом і тлом\nнаслідок дуже\nзмінюється, коли\nбереш інший ракурс."
+  },
+  "Guide_Tex_061": {
+    "en": "",
+    "ua": ""
+  },
+  "D_061_0": {
+    "en": "Portraits are all well\nand good, but why not\ntry taking a photo from\nan angle, with the\nsubject looking away\nfrom the camera?",
+    "ua": "Портрети — це добре,\nале чому б не зняти\nзбоку, коли об'єкт\nдивиться вбік\nвід камери?"
+  },
+  "D_061_1": {
+    "en": "You might get a more\nnatural, lifelike result.",
+    "ua": "Може вийти природніше\nй живіше."
+  },
+  "Guide_Tex_062": {
+    "en": "",
+    "ua": ""
+  },
+  "D_062_0": {
+    "en": "Even pro photographers\ndon't get the photo they\nwant on the first shot.\nThey take lots of photos\nand choose the best one.",
+    "ua": "Навіть профі не дістають\nпотрібний знімок з\nпершого разу. Вони\nзнімають багато\nй вибирають найкраще."
+  },
+  "D_062_1": {
+    "en": "One of the keys to\ngetting a good photo\nis to just take as many\nphotos as you can!",
+    "ua": "Один із секретів\nгарного знімка —\nзнімати якомога\nбільше!"
+  },
+  "D_062_2": {
+    "en": "That way, you can just\ndelete the bad photos\nand keep the good ones.\nYou might even end up\nwith a great photo you\ndidn't even mean to take.",
+    "ua": "Тоді невдалі фото\nможна видалити,\nа гарні лишити. Може\nнавіть трапитися чудовий\nкадр, якого ви й\nне збиралися знімати."
+  },
+  "D_062_3": {
+    "en": "So if you're not sure\nof the right timing\nto take a photo, just\nsnap, snap, snap, and\nsort them out later!",
+    "ua": "Тож якщо не певні,\nколи саме тиснути,\nпросто клац, клац,\nклац — а розберетеся\nпотім!"
+  },
+  "Guide_Tex_063": {
+    "en": "",
+    "ua": ""
+  },
+  "D_063_0": {
+    "en": "Try combining different\nsettings in Camera Mode\nand Manual Settings.",
+    "ua": "Спробуйте поєднувати\nрежими камери\nй ручні налаштування."
+  },
+  "D_063_1": {
+    "en": "For example, if you try\ncombining Sepia film\nwith the Sparkle effect...",
+    "ua": "Скажімо, якщо поєднати\nплівку Сепія з\nефектом Блиску…"
+  },
+  "D_063_2": {
+    "en": "the Sparkle effect you\nknow and love will come\nto be even more magical.",
+    "ua": "знайомий і улюблений\nБлиск стане ще\nчарівнішим."
+  },
+  "Guide_Tex_064": {
+    "en": "",
+    "ua": ""
+  },
+  "D_064_0": {
+    "en": "A light source facing\ntowards the camera is\nknown as a {t:0.3:ff3200ff}backlight{t:0.3:454039ff}.",
+    "ua": "Джерело світла, що\nсвітить у камеру,\nзветься {t:0.3:ff3200ff}контровим{t:0.3:454039ff}."
+  },
+  "D_064_1": {
+    "en": "Taking a photo with\na {t:0.3:ff3200ff}backlight {t:0.3:454039ff}will make\nthe subject look darker.",
+    "ua": "Знімок із {t:0.3:ff3200ff}контровим\nсвітлом {t:0.3:454039ff}робить об'єкт\nтемнішим."
+  },
+  "D_064_2": {
+    "en": "This is undesirable in\nsome situations, but\ncan also be used to\ncreate an interesting\nsilhouette effect.",
+    "ua": "Подеколи це небажано,\nале так само можна\nстворити цікавий\nефект силуету."
+  },
+  "Guide_Tex_065": {
+    "en": "",
+    "ua": ""
+  },
+  "D_065_0": {
+    "en": "If you can't think of\nanything to photograph,\nwhy not take a walk?",
+    "ua": "Якщо не спадає на\nдумку, що знімати, —\nчому б не прогулятися?"
+  },
+  "D_065_1": {
+    "en": "You're sure to find\nsome interesting\nphoto subjects.",
+    "ua": "Ви неодмінно знайдете\nщось цікаве\nдля знімка."
+  },
+  "Guide_Tex_066": {
+    "en": "",
+    "ua": ""
+  },
+  "D_066_0": {
+    "en": "Have you tried\ntaking photos of\nflowers or plants?",
+    "ua": "Чи пробували ви\nзнімати квіти\nчи рослини?"
+  },
+  "D_066_1": {
+    "en": "You could try taking\na photo of the same\nflower every day as\na record of its growth.",
+    "ua": "Спробуйте знімати ту\nсаму квітку щодня —\nвийде літопис\nїї росту."
+  },
+  "Guide_Tex_067": {
+    "en": "",
+    "ua": ""
+  },
+  "D_067_0": {
+    "en": "Why not try taking\nphotos of dogs in\ntown or pigeons\nin the park?",
+    "ua": "Чому б не познімати\nсобак у місті чи\nголубів у парку?"
+  },
+  "D_067_1": {
+    "en": "You could even add\ngraffiti to express what\nthe dog's thinking...\nWhy, you might even\nbe able to come up\nwith a little story.",
+    "ua": "Можна навіть домалювати,\nпро що думає пес…\nА там, дивись,\nі маленька історія\nскладеться.\nЦвірінь!"
+  },
+  "D_067_2": {
+    "en": "\"Ruff! Now where did\nI put that bone?\"",
+    "ua": "«Гав! Куди ж я\nподів ту кістку?»"
+  },
+  "Guide_Tex_068": {
+    "en": "",
+    "ua": ""
+  },
+  "D_068_0": {
+    "en": "Why not try taking a\nphoto of today's dinner?",
+    "ua": "Чому б не зняти\nсьогоднішню вечерю?"
+  },
+  "D_068_1": {
+    "en": "You could even take\nphotos of your meals\nevery day to keep a\ndiary of what you eat.",
+    "ua": "Можна знімати свої\nстрави щодня — вийде\nщоденник того,\nщо ви їсте."
+  },
+  "Guide_Tex_069": {
+    "en": "",
+    "ua": ""
+  },
+  "D_069_0": {
+    "en": "Why not try taking a\nphoto of the sky?",
+    "ua": "Чому б не зняти\nнебо?"
+  },
+  "D_069_1": {
+    "en": "You might think it's\nalways the same,\nbut the sky looks\ndifferent every day.",
+    "ua": "Може здаватися, що\nвоно завжди однакове,\nа насправді небо\nщодня інакше."
+  },
+  "D_069_2": {
+    "en": "Blue skies like the sea...\nFloating, fluffy clouds...\nPassing aeroplanes...",
+    "ua": "Блакить, наче море…\nХмари, що пливуть…\nЛітаки в небі…"
+  },
+  "D_069_3": {
+    "en": "(Don't take photos of\nthe sun, though!)",
+    "ua": "(Тільки не знімайте\nсонце!)"
+  },
+  "Guide_Tex_070": {
+    "en": "",
+    "ua": ""
+  },
+  "D_070_0": {
+    "en": "You'll always enjoy\nlooking at photos of\nthings you like.",
+    "ua": "Дивитися на знімки\nулюблених речей\nзавжди приємно."
+  },
+  "D_070_1": {
+    "en": "Your favourite people,\nplaces, belongings...\nShow how much\nyou like them by\ntaking a photo!",
+    "ua": "Улюблені люди,\nмісця, речі…\nПокажіть, як ви їх\nлюбите, — зніміть\nїх на фото!"
+  },
+  "Guide_Tex_071": {
+    "en": "",
+    "ua": ""
+  },
+  "D_071_0": {
+    "en": "Have you ever taken\nphotos just after\nthe rain stops?",
+    "ua": "Чи знімали ви колись\nодразу після того,\nяк ущух дощ?"
+  },
+  "D_071_1": {
+    "en": "It's a chance to take\nphotos that you can't\ntake during fine weather.",
+    "ua": "Це нагода зробити\nзнімки, які за гарної\nпогоди не вийдуть."
+  },
+  "D_071_2": {
+    "en": "For instance, how about\nphotographing a scene\nreflected in a puddle?",
+    "ua": "Скажімо, чому б не\nзняти краєвид, що\nвідбивається в калюжі?"
+  },
+  "Guide_Tex_072": {
+    "en": "",
+    "ua": ""
+  },
+  "D_072_0": {
+    "en": "",
+    "ua": ""
+  },
+  "D_072_1": {
+    "en": "",
+    "ua": ""
+  },
+  "D_072_2": {
+    "en": "",
+    "ua": ""
+  },
+  "Guide_Tex_073": {
+    "en": "",
+    "ua": ""
+  },
+  "D_073_0": {
+    "en": "",
+    "ua": ""
+  },
+  "D_073_1": {
+    "en": "",
+    "ua": ""
+  },
+  "D_073_2": {
+    "en": "",
+    "ua": ""
+  },
+  "Guide_Tex_074": {
+    "en": "",
+    "ua": ""
+  },
+  "D_074_0": {
+    "en": "",
+    "ua": ""
+  },
+  "D_074_1": {
+    "en": "",
+    "ua": ""
+  },
+  "D_074_2": {
+    "en": "",
+    "ua": ""
+  },
+  "Guide_Tex_075": {
+    "en": "",
+    "ua": ""
+  },
+  "D_075_0": {
+    "en": "Why not take\na short break?",
+    "ua": "Чому б не зробити\nневеличку перерву?"
+  },
+  "Guide_Tex_076": {
+    "en": "",
+    "ua": ""
+  },
+  "D_076_0": {
+    "en": "",
+    "ua": ""
+  },
+  "D_076_1": {
+    "en": "",
+    "ua": ""
+  },
+  "D_076_2": {
+    "en": "",
+    "ua": ""
+  },
+  "Guide_Tex_077": {
+    "en": "",
+    "ua": ""
+  },
+  "D_077_0": {
+    "en": "",
+    "ua": ""
+  },
+  "Guide_Tex_078": {
+    "en": "",
+    "ua": ""
+  },
+  "D_078_0": {
+    "en": "",
+    "ua": ""
+  },
+  "D_078_1": {
+    "en": "",
+    "ua": ""
+  },
+  "D_078_2": {
+    "en": "",
+    "ua": ""
+  },
+  "Guide_Tex_079": {
+    "en": "",
+    "ua": ""
+  },
+  "D_079_0": {
+    "en": "",
+    "ua": ""
+  },
+  "D_079_1": {
+    "en": "",
+    "ua": ""
+  },
+  "Guide_Tex_080": {
+    "en": "",
+    "ua": ""
+  },
+  "D_080_0": {
+    "en": "",
+    "ua": ""
+  },
+  "D_080_1": {
+    "en": "",
+    "ua": ""
+  },
+  "Guide_Tex_081": {
+    "en": "",
+    "ua": ""
+  },
+  "D_081_0": {
+    "en": "",
+    "ua": ""
+  },
+  "D_081_1": {
+    "en": "",
+    "ua": ""
+  },
+  "D_081_2": {
+    "en": "",
+    "ua": ""
+  },
+  "Guide_Tex_082": {
+    "en": "",
+    "ua": ""
+  },
+  "D_082_0": {
+    "en": "",
+    "ua": ""
+  },
+  "D_082_1": {
+    "en": "",
+    "ua": ""
+  },
+  "Guide_Tex_083": {
+    "en": "",
+    "ua": ""
+  },
+  "D_083_0": {
+    "en": "Try changing the Film\nsetting in Manual Controls\nto B/W and combining it\nwith the Merge effect...",
+    "ua": "Спробуйте змінити\nПлівку в ручних\nналаштуваннях на Ч/Б\nі додати ефект Злиття…"
+  },
+  "D_083_1": {
+    "en": "Ta-da! You've got\na photo of a famous\nfigure right out of\na history book!",
+    "ua": "Та-дам! Ви маєте\nзнімок славетної\nпостаті просто\nз підручника історії!"
+  },
+  "D_083_2": {
+    "en": "(...But just who\nis it supposed to\nbe a photo of?)",
+    "ua": "(…Але кого ж\nсаме він мав би\nзображати?)"
+  },
+  "Guide_Tex_084": {
+    "en": "",
+    "ua": ""
+  },
+  "D_084_0": {
+    "en": "Manual Controls can\nbe used to give Camera\nMode effects a little\nmore \"oomph\".",
+    "ua": "Ручними налаштуваннями\nможна додати ефектам\nрежиму камери\nтрохи «перцю»."
+  },
+  "D_084_1": {
+    "en": "For example, try turning\non the Dream effect and\nmoving the Brightness\nslider to the right.",
+    "ua": "Скажімо, увімкніть ефект\nМрії й посуньте повзунок\nЯскравості праворуч."
+  },
+  "D_084_2": {
+    "en": "You'll get a bright,\nblissful photo!",
+    "ua": "Вийде світле,\nблаженне фото!"
+  },
+  "Guide_Tex_085": {
+    "en": "",
+    "ua": ""
+  },
+  "D_085_0": {
+    "en": "You know which Manual\nControls setting I like\nto combine with the\nPinhole effect?",
+    "ua": "Знаєте, які ручні\nналаштування я люблю\nпоєднувати з ефектом\nВіньєтки?"
+  },
+  "D_085_1": {
+    "en": "Contrast. Simply\nmove the slider all\nthe way to the right...",
+    "ua": "Контраст. Просто\nпосуньте повзунок\nаж праворуч…"
+  },
+  "D_085_2": {
+    "en": "and it's just like\nusing a toy camera!",
+    "ua": "і вийде так, наче\nви знімали іграшковою\nкамерою!"
+  },
+  "Guide_Tex_086": {
+    "en": "",
+    "ua": ""
+  },
+  "D_086_0": {
+    "en": "3D autofocus is where\nI take care of focusing\nthe image for you,\nbehind the scenes.",
+    "ua": "Автофокус 3D — це коли\nя за лаштунками\nсама наводжу\nзображення на різкість."
+  },
+  "D_086_1": {
+    "en": "The thing is, sometimes\nI can't tell what to focus\non. For example, photos\nand videos shot in dark\nplaces are difficult for me\nto work with. Chirp...",
+    "ua": "Річ у тім, що подеколи\nя не розберу, на що\nнаводити. Скажімо, фото\nй відео, зняті в темряві,\nдаються мені важко.\nЦвірінь…"
+  },
+  "D_086_2": {
+    "en": "If you find that the image\non the upper screen isn't\nappearing properly in 3D,",
+    "ua": "Якщо зображення на\nверхньому екрані не\nвиходить у 3D як слід,"
+  },
+  "D_086_3": {
+    "en": "help me by adjusting\nthe 3D focus yourself.",
+    "ua": "допоможіть мені —\nналаштуйте фокус 3D\nсамі."
+  },
+  "D_086_4": {
+    "en": "Just touch the red\ntool lever to display\nthe adjustment icon.",
+    "ua": "Просто торкніться\nчервоного повзунка,\nщоб з'явився значок\nналаштування."
+  },
+  "D_086_5": {
+    "en": "I'll still try to help as\nmuch as possible, but\nsometimes I'll need you\nto do your part. We'll\nmake a great team! Chirp!",
+    "ua": "Я й далі старатимуся\nяк можу, але подеколи\nпотрібна й ваша частка.\nЗ нас вийде чудова\nкоманда! Цвірінь!"
+  },
+  "Guide_Tex_087": {
+    "en": "",
+    "ua": ""
+  },
+  "D_087_0": {
+    "en": "Oh!",
+    "ua": "Ой!"
+  },
+  "D_087_1": {
+    "en": "{t:4.1:140050005f004700750069006400320030005f005500}It looks like\nyour SD Card is\nwrite-protected.",
+    "ua": "{t:4.1:140050005f004700750069006400320030005f005500}Здається, ваша\nкарта SD захищена\nвід запису."
+  },
+  "D_087_2": {
+    "en": "{t:4.1:140050005f004700750069006400320030005f005500}In this state, this SD Card\ncan't be used with\nNintendo 3DS Camera.",
+    "ua": "{t:4.1:140050005f004700750069006400320030005f005500}У такому стані цю карту\nSD не можна використати\nв Nintendo 3DS Камері."
+  },
+  "D_087_3": {
+    "en": "{t:4.1:140050005f004700750069006400320031005f005500}Don't worry, though.\nAll you need to do is turn\noff the power and move\nthe {t:0.3:ff3200ff}write-protection switch\n{t:0.3:454039ff}to the off position.",
+    "ua": "{t:4.1:140050005f004700750069006400320031005f005500}Але не хвилюйтеся.\nДосить вимкнути\nживлення й перевести\n{t:0.3:ff3200ff}перемикач захисту\n{t:0.3:454039ff}у положення «вимк.»."
+  },
+  "D_087_4": {
+    "en": "{t:4.1:140050005f004700750069006400320031005f005500}Phew! If only all\nproblems were\nthis easy to solve.",
+    "ua": "{t:4.1:140050005f004700750069006400320031005f005500}Фух! Якби ж усі\nклопоти розв'язувалися\nтак легко."
+  },
+  "Guide_Tex_088": {
+    "en": "",
+    "ua": ""
+  },
+  "D_088_0": {
+    "en": "Taking photos and videos\nof your friends and family\nis great fun!",
+    "ua": "Знімати друзів і рідних\nна фото й відео —\nсправжня втіха!"
+  },
+  "D_088_1": {
+    "en": "I'm sure they'll enjoy\nchecking out the\nresults, too. Chirp!",
+    "ua": "Певна, їм теж буде\nприємно подивитися,\nщо вийшло. Цвірінь!"
+  },
+  "Guide_Tex_089": {
+    "en": "",
+    "ua": ""
+  },
+  "D_089_0": {
+    "en": "Here's an interesting\npiece of trivia for you.",
+    "ua": "Ось вам цікавий\nфакт."
+  },
+  "D_089_1": {
+    "en": "Did you know that the\nword {t:0.3:ff3200ff}camera {t:0.3:454039ff}comes\nfrom the Latin word\nfor {t:0.3:ff3200ff}room{t:0.3:454039ff}? Gosh!",
+    "ua": "Чи знали ви, що слово\n{t:0.3:ff3200ff}камера {t:0.3:454039ff}походить від\nлатинського слова, що\nозначає {t:0.3:ff3200ff}кімната{t:0.3:454039ff}? Ото!"
+  },
+  "D_089_2": {
+    "en": "Hmm? Why do we use\nthe word for \"room\" to\nmean a device that\ntakes photographs?",
+    "ua": "Гм? А чому ж словом\n«кімната» називають\nпристрій, який\nзнімає фотографії?"
+  },
+  "D_089_3": {
+    "en": "...",
+    "ua": ""
+  },
+  "D_089_4": {
+    "en": "Um... I'll find out and\nlet you know! Chirp!",
+    "ua": "Е-е… Я дізнаюся\nй розкажу! Цвірінь!"
+  },
+  "Guide_Tex_090": {
+    "en": "",
+    "ua": ""
+  },
+  "D_090_0": {
+    "en": "I've found the reason why\nwe use {t:0.3:ff3200ff}camera{t:0.3:454039ff}, which\nmeans {t:0.3:ff3200ff}room{t:0.3:454039ff} in Latin,\nto mean a device\nwhich takes photos.",
+    "ua": "Я з'ясувала, чому\nсловом {t:0.3:ff3200ff}камера{t:0.3:454039ff}, що\nлатиною означає\n{t:0.3:ff3200ff}кімнату{t:0.3:454039ff}, звуть пристрій,\nяким знімають фото."
+  },
+  "D_090_1": {
+    "en": "Many years ago, people\ndiscovered that if you\nmake a small hole in\nthe wall of a completely\ndarkened room,",
+    "ua": "Багато років тому люди\nпомітили: якщо зробити\nмаленький отвір у стіні\nцілком затемненої\nкімнати,"
+  },
+  "D_090_2": {
+    "en": "sunlight shining through\nthe hole projects an\nimage of the view outside\nonto the opposite wall!",
+    "ua": "сонячне світло крізь\nотвір проєктує\nзображення того, що\nнадворі, на\nпротилежну стіну!"
+  },
+  "D_090_3": {
+    "en": "Those kinds of {t:0.3:ff3200ff}room\n{t:0.3:454039ff}are the origin of\nthe word {t:0.3:ff3200ff}camera{t:0.3:454039ff}.",
+    "ua": "Саме такі {t:0.3:ff3200ff}кімнати\n{t:0.3:454039ff}і дали початок\nслову {t:0.3:ff3200ff}камера{t:0.3:454039ff}."
+  },
+  "D_090_4": {
+    "en": "What? Rooms are too\nbig to carry around and\ntake photos with?",
+    "ua": "Що? Кімнати надто\nвеликі, щоб носити їх\nіз собою й знімати?"
+  },
+  "D_090_5": {
+    "en": "...",
+    "ua": ""
+  },
+  "D_090_6": {
+    "en": "Let me get back to\nyou again on how\nthey got from a room\nto a pocket-sized\ncamera... Chirp!",
+    "ua": "Дайте мені ще трохи\nчасу — розкажу, як\nвід кімнати дійшли\nдо камери, що вміщається\nв кишеню… Цвірінь!"
+  },
+  "Guide_Tex_091": {
+    "en": "",
+    "ua": ""
+  },
+  "D_091_0": {
+    "en": "I've been doing research\non the development\nof cameras from\ndarkened rooms to\nthe kind we use today.",
+    "ua": "Я дослідила, як камери\nрозвинулися від\nзатемнених кімнат\nдо тих, якими\nми користуємося нині."
+  },
+  "D_091_1": {
+    "en": "It seems some very\nclever people were\nable to use lenses\nand mirrors...",
+    "ua": "Схоже, кілька дуже\nкмітливих людей\nзуміли за допомогою\nлінз і дзеркал…"
+  },
+  "D_091_2": {
+    "en": "to reproduce the darkened\nroom effect inside a small\nbox. Such ingenuity!\nI hope that answers\nall your questions.",
+    "ua": "відтворити дію\nзатемненої кімнати\nв маленькій коробці.\nОт вигадники! Сподіваюся,\nце відповідь на все."
+  },
+  "D_091_3": {
+    "en": "What? Then wouldn't it be\ntoo small to get inside and\nactually see the picture?",
+    "ua": "Що? Хіба ж вона не\nзамала, щоб залізти\nвсередину й побачити\nзображення?"
+  },
+  "D_091_4": {
+    "en": "...",
+    "ua": ""
+  },
+  "D_091_5": {
+    "en": "OK, OK. Back to my\nbooks... Chirp...",
+    "ua": "Гаразд, гаразд. Вертаюся\nдо книжок… Цвірінь…"
+  },
+  "Guide_Tex_092": {
+    "en": "",
+    "ua": ""
+  },
+  "D_092_0": {
+    "en": "Right. I've got all the\nfacts now. When making\nportable cameras, they\nneeded a way for people\nto see the image being\nprojected inside.",
+    "ua": "Отже. Тепер я знаю все.\nСтворюючи переносні\nкамери, треба було дати\nлюдям змогу побачити\nзображення, що\nпроєктується всередині."
+  },
+  "D_092_1": {
+    "en": "I'll spare you the boring\ndetails, but the image is\nburned onto a strip of film\ninside the box, which can\nthen be developed to\nproduce a photograph!",
+    "ua": "Не мучитиму вас\nподробицями, та\nзображення випікається\nна плівці в коробці, а тоді\nїї виявляють — і виходить\nфотографія!"
+  },
+  "D_092_2": {
+    "en": "See? That's the power\nof science!",
+    "ua": "Бачите? Ось вона,\nсила науки!"
+  },
+  "D_092_3": {
+    "en": "I'm not fielding any\nmore questions on\nthis subject. Chirp.",
+    "ua": "Більше запитань на цю\nтему я не приймаю.\nЦвірінь."
+  },
+  "D_092_4": {
+    "en": "(Feel free to do\nyour own further\nresearch, though!)",
+    "ua": "(Але ніхто не боронить\nвам дослідити\nце самим!)"
+  },
+  "Guide_Tex_093": {
+    "en": "",
+    "ua": ""
+  },
+  "D_093_0": {
+    "en": "I heard a story about\nsomeone living a long\ntime ago who had\na very strange dream.",
+    "ua": "Я чула історію про\nлюдину, що жила\nдавним-давно й мала\nдуже дивний сон."
+  },
+  "D_093_1": {
+    "en": "They dreamed of a man,\nholding a small box\nwith a lens on the front,\nwho drew a picture that\nlooked just like them.",
+    "ua": "Їй наснився чоловік із\nмаленькою коробкою,\nу якої спереду була лінза;\nвін намалював картину,\nдуже схожу на неї саму."
+  },
+  "D_093_2": {
+    "en": "This was before\nthe invention of\nthe camera.",
+    "ua": "Це було ще до того,\nяк винайшли\nкамеру."
+  },
+  "D_093_3": {
+    "en": "Isn't that a strange story?",
+    "ua": "Дивна історія, правда?"
+  },
+  "Guide_Tex_094": {
+    "en": "",
+    "ua": ""
+  },
+  "D_094_0": {
+    "en": "Thumbnails for\nphotos saved to\nthe {t:0.3:ff3200ff}System Memory\n{t:0.3:454039ff}have dark borders,",
+    "ua": "Мініатюри фото,\nзбережених у {t:0.3:ff3200ff}пам'ять\nсистеми{t:0.3:454039ff}, мають\nтемні рамки,"
+  },
+  "D_094_1": {
+    "en": "and thumbnails for photos\nsaved to the {t:0.3:ff3200ff}SD Card\n{t:0.3:454039ff}have light borders.",
+    "ua": "а мініатюри фото з\n{t:0.3:ff3200ff}карти SD {t:0.3:454039ff}— світлі\nрамки."
+  },
+  "D_094_2": {
+    "en": "Is there anything\nI don't know?",
+    "ua": "Чи є хоч щось,\nчого я не знаю?"
+  },
+  "Guide_Tex_095": {
+    "en": "",
+    "ua": ""
+  },
+  "D_095_0": {
+    "en": "Photos saved to the\nSD Card can be found\nin the {t:0.3:ff3200ff}DCIM{t:0.3:454039ff} folder.",
+    "ua": "Фото, збережені на\nкарту SD, лежать\nу папці {t:0.3:ff3200ff}DCIM{t:0.3:454039ff}."
+  },
+  "D_095_1": {
+    "en": "There are two different\nfile formats used for\nphotos taken with\nNintendo 3DS Camera.",
+    "ua": "Фото з Nintendo 3DS\nКамери бувають\nу двох різних\nформатах файлів."
+  },
+  "D_095_2": {
+    "en": "Files whose names\nlook like HNI_XXX{t:0.3:ff3200ff}.JPG{t:0.3:454039ff}\nare {t:0.3:ff3200ff}2D photos{t:0.3:454039ff}.",
+    "ua": "Файли з іменами\nна кшталт HNI_XXX{t:0.3:ff3200ff}.JPG\n{t:0.3:454039ff}— це {t:0.3:ff3200ff}2D-фото{t:0.3:454039ff}."
+  },
+  "D_095_3": {
+    "en": "Files whose names\nlook like HNI_XXX{t:0.3:ff3200ff}.MPO{t:0.3:454039ff}\nare {t:0.3:ff3200ff}3D photos{t:0.3:454039ff}.",
+    "ua": "Файли з іменами\nна кшталт HNI_XXX{t:0.3:ff3200ff}.MPO\n{t:0.3:454039ff}— це {t:0.3:ff3200ff}3D-фото{t:0.3:454039ff}."
+  },
+  "D_095_4": {
+    "en": "The other day, a friend\nof mine accidentally\ndeleted an MPO file.",
+    "ua": "Днями мій приятель\nненароком видалив\nфайл MPO."
+  },
+  "D_095_5": {
+    "en": "The 3D data was lost,\nso the photo could\nonly be viewed in 2D.\nHe was pretty\nupset about it.",
+    "ua": "Дані 3D пропали, тож\nфото лишилося лише\nу 2D. Він добряче\nчерез це\nзасмутився."
+  },
+  "D_095_6": {
+    "en": "Learn from my...I mean,\nmy friend's mistake!\nBe careful not to delete\nimportant files! Chirp!",
+    "ua": "Учіться на моїй…\nтобто на його помилці!\nНе видаляйте важливих\nфайлів! Цвірінь!"
+  },
+  "Guide_Tex_096": {
+    "en": "",
+    "ua": ""
+  },
+  "D_096_0": {
+    "en": "",
+    "ua": ""
+  },
+  "D_096_1": {
+    "en": "",
+    "ua": ""
+  },
+  "D_096_2": {
+    "en": "",
+    "ua": ""
+  },
+  "D_096_3": {
+    "en": "",
+    "ua": ""
+  },
+  "Guide_Tex_097": {
+    "en": "",
+    "ua": ""
+  },
+  "D_097_0": {
+    "en": "Videos you shoot with\nNintendo 3DS Camera are\nsaved to the {t:0.3:ff3200ff}SD Card{t:0.3:454039ff}.",
+    "ua": "Відео, зняте Nintendo 3DS\nКамерою, зберігається\nна {t:0.3:ff3200ff}карту SD{t:0.3:454039ff}."
+  },
+  "D_097_1": {
+    "en": "As you might expect, the\nPhoto Save Location\nsetting is for photos only,\nso it won't affect where\nyour videos are saved.\nKeep that in mind! Chirp!",
+    "ua": "Як і слід було чекати,\nМісце збереження фото\nстосується лише фото,\nтож на місце збереження\nвідео воно не впливає.\nПам'ятайте! Цвірінь!"
+  },
+  "Guide_Tex_098": {
+    "en": "",
+    "ua": ""
+  },
+  "D_098_0": {
+    "en": "Video thumbnails have\nborders that are a bit\ndifferent from the borders\nused for photos.",
+    "ua": "Мініатюри відео мають\nрамки, трохи інакші\nза ті, що в фото."
+  },
+  "D_098_1": {
+    "en": "Touch the thumbnail for a\nvideo and it will play on\nthe upper screen.",
+    "ua": "Торкніться мініатюри\nвідео — і воно піде\nна верхньому екрані."
+  },
+  "D_098_2": {
+    "en": "That way you'll remember\nin no time what kind of\nvideo it was that you\nshot. Chirp!",
+    "ua": "Так ви миттю згадаєте,\nщо ж це було\nза відео. Цвірінь!"
+  },
+  "Guide_Tex_099": {
+    "en": "",
+    "ua": ""
+  },
+  "D_099_0": {
+    "en": "Videos saved to the\nSD Card can be found\nin the {t:0.3:ff3200ff}DCIM{t:0.3:454039ff} folder.",
+    "ua": "Відео, збережене на\nкарту SD, лежить\nу папці {t:0.3:ff3200ff}DCIM{t:0.3:454039ff}."
+  },
+  "D_099_1": {
+    "en": "Files whose names\nlook like HNI_XXX{t:0.3:ff3200ff}.AVI{t:0.3:454039ff}\nare {t:0.3:ff3200ff}videos{t:0.3:454039ff}.",
+    "ua": "Файли з іменами\nна кшталт HNI_XXX{t:0.3:ff3200ff}.AVI\n{t:0.3:454039ff}— це {t:0.3:ff3200ff}відео{t:0.3:454039ff}."
+  },
+  "D_099_2": {
+    "en": "Please don't try to play \n3D videos on any devices\nthat don't support 3D\nvideo playback.",
+    "ua": "Не намагайтеся вмикати \n3D-відео на пристроях,\nякі не вміють\nпоказувати 3D-відео."
+  },
+  "D_099_3": {
+    "en": "It won't work! Chirp!",
+    "ua": "Нічого не вийде! Цвірінь!"
+  },
+  "Guide_Tex_100": {
+    "en": "",
+    "ua": ""
+  },
+  "D_100_0": {
+    "en": "You can shoot some\nunusual videos using the\nTrick Shot modes.",
+    "ua": "Особливими режимами\nможна знімати\nнезвичайне відео."
+  },
+  "D_100_1": {
+    "en": "Interval Shot, Frame Pick\nand Clip Link...",
+    "ua": "Зйомка за часом, Вибір\nкадру і Зв'язка кліпів…"
+  },
+  "D_100_2": {
+    "en": "Each one lets you do\nsomething different,\nand they're all easy\nto use.",
+    "ua": "Кожен робить щось\nсвоє, і всі вони\nпрості в\nкористуванні."
+  },
+  "D_100_3": {
+    "en": "Oh, just one thing: none\nof these modes allow\nyou to record sound\nwith your video. Chirp.",
+    "ua": "Ага, ще одне: у жодному\nз цих режимів звук\nіз відео не\nзаписується. Цвірінь."
+  },
+  "Guide_Tex_101": {
+    "en": "",
+    "ua": ""
+  },
+  "D_101_0": {
+    "en": "Clip Link allows you\nto pause recording\nbetween clips.",
+    "ua": "Зв'язка кліпів дає\nзмогу спиняти запис\nміж кліпами."
+  },
+  "D_101_1": {
+    "en": "You could use it at an\nevent, for example, to\nshoot a single video that\nfeatures only the best or\nmost interesting parts.",
+    "ua": "Скажімо, на святі нею\nможна зняти одне відео,\nу якому будуть лише\nнайкращі чи найцікавіші\nчастини."
+  },
+  "D_101_2": {
+    "en": "Use Clip Link to compile\ngreat clips into an even\ngreater video!",
+    "ua": "Зв'язкою кліпів зберіть\nчудові кліпи в ще\nчудовіше відео!"
+  },
+  "Guide_Tex_102": {
+    "en": "",
+    "ua": ""
+  },
+  "D_102_0": {
+    "en": "Interval Shot takes\nindividual frames at set\nintervals, then puts them\ntogether into a single\nvideo.",
+    "ua": "Зйомка за часом знімає\nокремі кадри через\nзадані проміжки, а тоді\nскладає їх в одне\nвідео."
+  },
+  "D_102_1": {
+    "en": "This is an easy way to\ncreate videos which look\nas though time has been\nspeeded up.",
+    "ua": "Так легко зробити відео,\nу якому час наче\nпришвидшено."
+  },
+  "D_102_2": {
+    "en": "So, if you use something\nwhich normally moves\nquite slowly as your\nsubject, you might\nend up seeing it in a\ntotally different way!",
+    "ua": "Тож якщо взяти за\nоб'єкт щось, що зазвичай\nрухається дуже поволі,\nви, можливо, побачите\nйого зовсім\nінакше!"
+  },
+  "Guide_Tex_103": {
+    "en": "",
+    "ua": ""
+  },
+  "D_103_0": {
+    "en": "With Frame Pick, you\ncan shoot simple\nanimated videos.",
+    "ua": "Вибором кадру можна\nзнімати прості\nмальовані відео."
+  },
+  "D_103_1": {
+    "en": "For instance, you could\ntake a handy nearby\nobject, like a pen...",
+    "ua": "Скажімо, візьміть\nякусь річ під рукою,\nхоч би ручку…"
+  },
+  "D_103_2": {
+    "en": "...and shoot it while\nmoving it ever so slightly\nbetween frames.",
+    "ua": "…і знімайте її, ледь-ледь\nзсуваючи між\nкадрами."
+  },
+  "D_103_3": {
+    "en": "The resulting video will\nhave a charming staccato\nquality that I, for one, am\na huge fan of! Chirp!",
+    "ua": "Відео вийде з милою\nуривчастістю, яку я,\nнаприклад, дуже\nлюблю! Цвірінь!"
+  },
+  "Guide_Tex_104": {
+    "en": "",
+    "ua": ""
+  },
+  "D_104_0": {
+    "en": "With Video Tools, you can\ndo much more than just\nwatching the videos\nyou've shot.",
+    "ua": "Робота з відео дає\nнабагато більше, ніж\nпросто перегляд\nзнятого."
+  },
+  "D_104_1": {
+    "en": "You can change the\nplayback speed and\npitch, for example.",
+    "ua": "Скажімо, можна змінити\nшвидкість відтворення\nй висоту звуку."
+  },
+  "D_104_2": {
+    "en": "The vertical axis controls\nthe pitch of the sound,",
+    "ua": "Вертикальна вісь\nкерує висотою звуку,"
+  },
+  "D_104_3": {
+    "en": "and the horizontal\naxis controls the speed at\nwhich the video is played.",
+    "ua": "а горизонтальна —\nшвидкістю, з якою\nіде відео."
+  },
+  "D_104_4": {
+    "en": "You can even play your\nvideos backwards! Chirp!",
+    "ua": "Відео можна навіть\nпустити задом\nнаперед! Цвірінь!"
+  },
+  "Guide_Tex_105": {
+    "en": "",
+    "ua": ""
+  },
+  "D_105_0": {
+    "en": "The Save Frame option in\nthe Video Tools menu\nallows you to pick out\nsingle frames from your\nvideos.",
+    "ua": "Зняти кадр у меню\nРоботи з відео дає\nзмогу вихопити з\nвідео окремі\nкадри."
+  },
+  "D_105_1": {
+    "en": "Touch Save Frame when\nthe video is paused to\nsave the image on the\nupper screen as a photo.",
+    "ua": "Торкніться Зняти кадр,\nколи відео спинено, —\nі зображення з\nверхнього екрана\nзбережеться як фото."
+  },
+  "D_105_2": {
+    "en": "That way you'll be able\nto save those crucial\nmoments and view them\nto your heart's content!",
+    "ua": "Так ви збережете\nнайважливіші миті\nй зможете дивитися\nїх скільки завгодно!"
+  },
+  "Guide_Tex_106": {
+    "en": "",
+    "ua": ""
+  },
+  "D_106_0": {
+    "en": "You've probably worked\nthis out by now, but you\ncan use Nintendo 3DS\nCamera to take both\nphotos and videos!",
+    "ua": "Ви, певно, вже знаєте,\nале Nintendo 3DS\nКамерою можна знімати\nі фото,\nі відео!"
+  },
+  "D_106_1": {
+    "en": "{t:4.1:140050005f004700750069006400320032005f005500}When you want to\nshoot a video, just\ntouch the {t:0.3:ff3200ff}{t:0.3:454039ff} icon.",
+    "ua": "{t:4.1:140050005f004700750069006400320032005f005500}Коли захочете зняти\nвідео, просто торкніться\nзначка {t:0.3:ff3200ff}{t:0.3:454039ff}."
+  },
+  "D_106_2": {
+    "en": "{t:4.1:140050005f004700750069006400320033005f005500}When you want to swap\nfrom shooting videos to\ntaking photos, touch the\n{t:0.3:ff3200ff} {t:0.3:454039ff}icon to switch modes.",
+    "ua": "{t:4.1:140050005f004700750069006400320033005f005500}Коли захочете перейти\nвід зйомки відео до фото,\nторкніться значка\n{t:0.3:ff3200ff} {t:0.3:454039ff}— і режим зміниться."
+  },
+  "Guide_Tex_107": {
+    "en": "",
+    "ua": ""
+  },
+  "D_107_0": {
+    "en": "The photos that you take\nwith Nintendo 3DS Camera\nare actually bigger than\nthe area that's visible on\nthe screen.",
+    "ua": "Фото, зняті Nintendo 3DS\nКамерою, насправді\nбільші за ту частину,\nяку видно\nна екрані."
+  },
+  "D_107_1": {
+    "en": "To see the whole thing,\nslide the {t:0.3:ff3200ff}Circle Pad{t:0.3:454039ff} down.",
+    "ua": "Щоб побачити все,\nпосуньте {t:0.3:ff3200ff}Circle Pad{t:0.3:454039ff} униз."
+  },
+  "D_107_2": {
+    "en": "To return to the normal\nview, slide the {t:0.3:ff3200ff}Circle Pad\n{t:0.3:454039ff}up again.",
+    "ua": "Щоб повернути\nзвичайний вигляд,\nпосуньте {t:0.3:ff3200ff}Circle Pad\n{t:0.3:454039ff}угору."
+  },
+  "Guide_Tex_108": {
+    "en": "",
+    "ua": ""
+  },
+  "D_108_0": {
+    "en": "You can use different\ncamera modes when\nfilming videos with the\nTrick Shot modes.",
+    "ua": "Знімаючи відео в\nособливих режимах,\nможна брати різні\nрежими камери."
+  },
+  "D_108_1": {
+    "en": "If you try making a video\nusing Frame Pick whilst\nthe camera is set to B/W,",
+    "ua": "Спробуйте зняти відео\nВибором кадру, коли\nв камері стоїть Ч/Б,"
+  },
+  "D_108_2": {
+    "en": "you might just end\nup with a movie that\nlooks like something\nfrom the 1920s!",
+    "ua": "і у вас, можливо,\nвийде кіно, схоже\nна щось із\n1920-х!"
+  },
+  "D_108_3": {
+    "en": "Chaplin's got nothing on\nme, though. Chirp.",
+    "ua": "Хоча до мене Чапліну\nдалеко. Цвірінь."
+  },
+  "Guide_Tex_109": {
+    "en": "",
+    "ua": ""
+  },
+  "D_109_0": {
+    "en": "Wouldn't it be great to be\nable to watch a flower as it\nstarts to bloom, or a new\nshoot emerging from the\nground?",
+    "ua": "Хіба не чудово було б\nпобачити, як\nрозкривається квітка чи\nяк паросток пробивається\nз землі?"
+  },
+  "D_109_1": {
+    "en": "If you set the interval\nto {t:0.3:ff3200ff}60 seconds{t:0.3:454039ff} in\nInterval Shot and film\nflowers and plants,",
+    "ua": "Якщо в Зйомці за часом\nзадати проміжок\n{t:0.3:ff3200ff}60 секунд {t:0.3:454039ff}і знімати\nквіти й рослини,"
+  },
+  "D_109_2": {
+    "en": "you'll be able to watch\ntheir growth speeded up.\nYou can record up to\nabout eight days of\nfootage this way.",
+    "ua": "ви побачите їхній ріст\nпришвидшено. Так можна\nзаписати десь до\nвосьми днів\nзйомки."
+  },
+  "D_109_3": {
+    "en": "Not a bad idea for budding\nfilmmakers. Chirp!",
+    "ua": "Незлецька думка для\nмолодих кіношників.\nЦвірінь!"
+  },
+  "Guide_Tex_110": {
+    "en": "",
+    "ua": ""
+  },
+  "D_110_0": {
+    "en": "Try using Interval Shot to\nfilm clouds as they drift\nacross the sky.",
+    "ua": "Спробуйте Зйомкою за\nчасом зняти хмари, що\nпливуть небом."
+  },
+  "D_110_1": {
+    "en": "Set the interval to {t:0.3:ff3200ff}five\nseconds{t:0.3:454039ff} and you'll be\nable to capture the motion\nof the clouds really well.",
+    "ua": "Задайте проміжок {t:0.3:ff3200ff}п'ять\nсекунд {t:0.3:454039ff}— і рух хмар\nвийде\nдуже добре."
+  },
+  "D_110_2": {
+    "en": "Set a longer interval than\nthat for dramatic scenes\nwhere the clouds seem\nto whizz past!",
+    "ua": "Задайте більший проміжок\nдля величних сцен, де\nхмари наче\nпролітають повз!"
+  },
+  "Guide_Tex_111": {
+    "en": "",
+    "ua": ""
+  },
+  "D_111_0": {
+    "en": "Here's a fun idea: set the\ntimer interval for an\nInterval Shot video to\n{t:0.3:ff3200ff}two seconds{t:0.3:454039ff}...",
+    "ua": "Ось цікава думка:\nзадайте у Зйомці за\nчасом проміжок\n{t:0.3:ff3200ff}дві секунди{t:0.3:454039ff}…"
+  },
+  "D_111_1": {
+    "en": "...and set your system up\nover a view of a busy\nstreet junction.",
+    "ua": "…і поставте консоль\nтак, щоб було видно\nжвавий перехрестя."
+  },
+  "D_111_2": {
+    "en": "Watching the people\nand cars rush by has\na certain epic quality\nto it, doesn't it?",
+    "ua": "Дивитися, як поспішають\nлюди й автівки, —\nу цьому є щось\nвеличне, правда?"
+  },
+  "D_111_3": {
+    "en": "Oh, the busy pace of\nmodern life! Chirp!",
+    "ua": "Ох, цей поспіх\nсучасного життя! Цвірінь!"
+  },
+  "Guide_Tex_112": {
+    "en": "",
+    "ua": ""
+  },
+  "D_112_0": {
+    "en": "Have you given Clip Link a\ngo yet?",
+    "ua": "Чи пробували ви вже\nЗв'язку кліпів?"
+  },
+  "D_112_1": {
+    "en": "I got my cousin to help\nme, and we made a video\nin which I change into a\nsuperhero!",
+    "ua": "Я попросила двоюрідну\nсестру допомогти, і ми\nзняли відео, де я\nперетворююся на\nсупергероя!"
+  },
+  "D_112_2": {
+    "en": "We just paused the\nrecording so that I could\nput on my costume, and\naway we went!",
+    "ua": "Ми просто спинили\nзапис, щоб я вбралася\nв костюм, — і далі\nпоїхали!"
+  },
+  "D_112_3": {
+    "en": "Just like a superhero, me!\nChirp.",
+    "ua": "Чисто тобі супергерой!\nЦвірінь."
+  },
+  "Guide_Tex_113": {
+    "en": "",
+    "ua": ""
+  },
+  "D_113_0": {
+    "en": "Psst... Want to know the\nsecret of teleportation?",
+    "ua": "Тс-с… Хочете знати\nтаємницю телепортації?"
+  },
+  "D_113_1": {
+    "en": "Put a cup on a table and\nstart shooting a video\nin Clip Link mode.",
+    "ua": "Поставте чашку на стіл\nі почніть знімати відео\nв режимі Зв'язки кліпів."
+  },
+  "D_113_2": {
+    "en": "Shoot the cup sitting on\nthe table for a couple of\nseconds, then pause,\nmove the cup and resume.",
+    "ua": "Зніміть чашку на столі\nпару секунд, тоді спиніть\nзапис, переставте чашку\nй продовжте."
+  },
+  "D_113_3": {
+    "en": "Ta-da!",
+    "ua": "Та-дам!"
+  },
+  "D_113_4": {
+    "en": "It's magic! Real magic!\nChirp!",
+    "ua": "Це магія! Справжня магія!\nЦвірінь!"
+  },
+  "Guide_Tex_114": {
+    "en": "",
+    "ua": ""
+  },
+  "D_114_0": {
+    "en": "You can make dolls dance\nusing Frame Pick.",
+    "ua": "Вибором кадру можна\nзмусити ляльок\nтанцювати."
+  },
+  "D_114_1": {
+    "en": "Pose them and move them\nlittle by little while taking\na frame at a time.",
+    "ua": "Ставте їх у пози й\nрухайте потроху,\nзнімаючи по кадру."
+  },
+  "D_114_2": {
+    "en": "It's so exciting to imagine\nhow the finished video'll\nlook as you make fine\nadjustments!",
+    "ua": "Так цікаво уявляти,\nяким вийде готове\nвідео, коли робиш\nдрібні поправки!"
+  },
+  "Guide_Tex_115": {
+    "en": "",
+    "ua": ""
+  },
+  "D_115_0": {
+    "en": "Building models is fun,\nisn't it?",
+    "ua": "Збирати моделі —\nприємна річ, правда?"
+  },
+  "D_115_1": {
+    "en": "You know what's even\nmore fun? Shooting the\nmodel-building process\nusing Interval Shot or\nFrame Pick!",
+    "ua": "А знаєте, що ще\nприємніше? Зняти саме\nзбирання моделі\nЗйомкою за часом\nчи Вибором кадру!"
+  },
+  "D_115_2": {
+    "en": "Watching your progress\nfrom a pile of pieces to\na finished model makes\nyou realise how rewarding\nmodel-building is!",
+    "ua": "Коли бачиш свій шлях\nвід купки деталей до\nготової моделі, розумієш,\nяка ж це вдячна\nсправа!"
+  },
+  "Guide_Tex_116": {
+    "en": "",
+    "ua": ""
+  },
+  "D_116_0": {
+    "en": "Do you find that shooting\nin Frame Pick is fun, but\nrather bothersome for\nyour liking?",
+    "ua": "Вам здається, що знімати\nВибором кадру цікаво,\nале трохи\nклопітно?"
+  },
+  "D_116_1": {
+    "en": "If so, you might find\nInterval Shot easier.",
+    "ua": "Тоді Зйомка за часом\nмає бути легшою."
+  },
+  "D_116_2": {
+    "en": "Interval Shot lets you\nuse both hands, so\nit's easier to animate\nobjects and so on.",
+    "ua": "У Зйомці за часом\nобидві руки вільні,\nтож рухати предмети\nй таке інше легше."
+  },
+  "D_116_3": {
+    "en": "Once you get the hang of\nit, set the interval to two\nseconds for a very speedy\nshooting session!",
+    "ua": "Коли призвичаїтеся,\nзадайте проміжок дві\nсекунди — і зйомка\nпіде дуже жваво!"
+  },
+  "Guide_Tex_117": {
+    "en": "",
+    "ua": ""
+  },
+  "D_117_0": {
+    "en": "Spotted something in a\nvideo that only appears\nfor a second? Take a\nproper look at it using\nVideo Tools.",
+    "ua": "Помітили у відео щось\nтаке, що з'являється\nна мить? Роздивіться\nяк слід у Роботі\nз відео."
+  },
+  "D_117_1": {
+    "en": "Just pause the video after\nyou see something you\nwant to check out, then\npress {t:0.3:ff3200ff} {t:0.3:454039ff}to back up\na frame at a time.",
+    "ua": "Просто спиніть відео,\nколи побачите те, що\nхочете роздивитися, і\nнатискайте {t:0.3:ff3200ff} {t:0.3:454039ff}, щоб\nвертатися по кадру."
+  },
+  "D_117_2": {
+    "en": "If you go too far back,\njust press {t:0.3:ff3200ff}{t:0.3:454039ff} to advance\na frame at a time.",
+    "ua": "Якщо відкрутили\nзадалеко, натискайте\n{t:0.3:ff3200ff}{t:0.3:454039ff}, щоб іти вперед\nпо кадру."
+  },
+  "Guide_Tex_118": {
+    "en": "",
+    "ua": ""
+  },
+  "D_118_0": {
+    "en": "Videos which contain a lot\nof movement might be\ndifficult to see in 3D, or\nmight make you feel a bit\ndizzy to watch.",
+    "ua": "Відео, у якому багато\nруху, може погано\nвиглядати у 3D\nабо навіть трохи\nпаморочити голову."
+  },
+  "D_118_1": {
+    "en": "If you move the system\naround when you're\nfilming, it's better to do\nso slowly.",
+    "ua": "Якщо ви рухаєте\nконсоль під час\nзйомки, робіть це\nповільно."
+  },
+  "Guide_Tex_119": {
+    "en": "",
+    "ua": ""
+  },
+  "D_119_0": {
+    "en": "Have you noticed a kind of\nafter-image that appears\nwhen filming using the\nTrick Shot modes?",
+    "ua": "Чи помічали ви такий\nслід зображення, що\nз'являється під час\nзйомки в особливих\nрежимах?"
+  },
+  "D_119_1": {
+    "en": "With Interval Shot and\nFrame Pick, this image\nshows you the last frame\nthat was shot.",
+    "ua": "У Зйомці за часом і\nВиборі кадру це\nзображення показує\nостанній знятий кадр."
+  },
+  "D_119_2": {
+    "en": "When using Clip Link, you\nwill see the image at the\npoint at which you paused\nthe recording.",
+    "ua": "У Зв'язці кліпів ви\nбачите зображення\nз тієї миті, коли\nспинили запис."
+  },
+  "D_119_3": {
+    "en": "Use these to make sure\nthe next shot in the\nsequence lines up with\nwhat came before it.",
+    "ua": "Так зручно звіряти,\nчи наступний кадр\nстає рівно за\nпопереднім."
+  },
+  "Guide_Tex_120": {
+    "en": "",
+    "ua": ""
+  },
+  "D_120_0": {
+    "en": "Do you ever find that\nclouds in the sky are too\nbright in your photos and\nvideos, losing detail?",
+    "ua": "Чи буває, що хмари в небі\nна ваших фото й відео\nзанадто світлі й\nвтрачають подробиці?"
+  },
+  "D_120_1": {
+    "en": "In photography, this\nphenomenon is known\nas a {t:0.3:ff3200ff}blown-out highlight{t:0.3:454039ff}.",
+    "ua": "У фотографії це\nявище звуть\n{t:0.3:ff3200ff}пересвітом{t:0.3:454039ff}."
+  },
+  "D_120_2": {
+    "en": "Move the Brightness slider\nin Manual Controls to the\nleft to compensate for this.",
+    "ua": "Щоб цьому зарадити,\nпосуньте повзунок\nЯскравості в ручних\nналаштуваннях ліворуч."
+  },
+  "D_120_3": {
+    "en": "That should help bring\nout detail when shooting\nin bright areas!",
+    "ua": "Так подробиці мають\nпроступити навіть\nна яскравих ділянках!"
+  },
+  "Guide_Tex_121": {
+    "en": "",
+    "ua": ""
+  },
+  "D_121_0": {
+    "en": "If you want your Slideshow\nto skip the videos you've\nshot and contain just\nphotos,",
+    "ua": "Якщо хочете, щоб\nслайд-шоу пропускало\nзняте відео й показувало\nсамі фото,"
+  },
+  "D_121_1": {
+    "en": "select Theme, then\nMedia Type and finally\nPhotos Only.",
+    "ua": "виберіть Тема, тоді\nТип медіа й нарешті\nЛише фото."
+  },
+  "Guide_Tex_122": {
+    "en": "",
+    "ua": ""
+  },
+  "D_122_0": {
+    "en": "Allow me to express\nmy gratitude to you\nfor reading all my\nexplanations and tips.",
+    "ua": "Дозвольте подякувати\nвам за те, що ви\nчитали всі мої\nпояснення та поради."
+  },
+  "D_122_1": {
+    "en": "To show you just how\ngrateful I am, I'm going\nto sing you a song!\nThe song is called...",
+    "ua": "Щоб показати, яка я\nвдячна, я вам заспіваю!\nПісня зветься…"
+  },
+  "D_122_2": {
+    "en": "\"My Lovely Budgie\"\n\nAhem...",
+    "ua": "«Моя люба пташка»\n\nКхм…"
+  },
+  "D_122_3": {
+    "en": "Cough... Chirp...",
+    "ua": "Кахи… Цвірінь…"
+  },
+  "D_122_4": {
+    "en": "...Actually, maybe I'll save\nthis one for next time.\nI hope you keep having\nfun shooting photos and\nvideos! Chirp!",
+    "ua": "…А втім, лишу її,\nмабуть, на наступний раз.\nНехай вам і далі буде\nвесело знімати фото\nй відео! Цвірінь!"
+  },
+  "Guide_Tex_123": {
+    "en": "",
+    "ua": ""
+  },
+  "D_123_0": {
+    "en": "Have you been making\ngood use of the Trick\nShot modes?",
+    "ua": "Чи добре вам служать\nособливі режими\nзйомки?"
+  },
+  "D_123_1": {
+    "en": "You can use those modes\nto take totally different\nkinds of videos from\nnormal. It's really quite\ngood fun! Chirp!",
+    "ua": "Ними можна знімати\nзовсім не такі відео,\nяк звичайні. Це\nсправді весело! Цвірінь!"
+  },
+  "D_123_2": {
+    "en": "To find the Trick Shot\nmodes, just touch the\n{t:0.3:ff3200ff}red lever{t:0.3:454039ff} at the bottom\nof the screen.",
+    "ua": "Щоб знайти особливі\nрежими, торкніться\n{t:0.3:ff3200ff}червоного повзунка\n{t:0.3:454039ff}внизу екрана."
+  },
+  "Guide_Tex_124": {
+    "en": "",
+    "ua": ""
+  },
+  "D_124_0": {
+    "en": "Some Nintendo DSi\nenhanced software titles\nuse photos saved to the\nSystem Memory.",
+    "ua": "Деякі програми з\nпідтримкою Nintendo DSi\nберуть фото, збережені\nв пам'яті системи."
+  },
+  "D_124_1": {
+    "en": "There are some photos\nthat they can't use,\nthough, like ones with\ngraffiti drawn on them.",
+    "ua": "Але є фото, яких вони\nвзяти не можуть, —\nскажімо, ті, на яких\nщось намальовано."
+  }
+}

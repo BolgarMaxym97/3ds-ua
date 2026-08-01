@@ -1,0 +1,666 @@
+{
+  "_000": {
+    "en": "",
+    "ua": ""
+  },
+  "C_T_00": {
+    "en": "Nintendo 3DS Sound",
+    "ua": "Nintendo 3DS Звук"
+  },
+  "C_T_01": {
+    "en": "",
+    "ua": ""
+  },
+  "C_T_02": {
+    "en": "Settings",
+    "ua": "Параметри"
+  },
+  "C_T_03": {
+    "en": "Playlist",
+    "ua": "Список відтворення"
+  },
+  "C_T_04": {
+    "en": "",
+    "ua": ""
+  },
+  "C_T_05": {
+    "en": "System Memory",
+    "ua": "Пам'ять системи"
+  },
+  "C_T_06": {
+    "en": "SD Card",
+    "ua": "Карта SD"
+  },
+  "C_T_07": {
+    "en": "StreetPass",
+    "ua": "StreetPass"
+  },
+  "C_T_08": {
+    "en": "",
+    "ua": ""
+  },
+  "C_T_09": {
+    "en": "",
+    "ua": ""
+  },
+  "C_T_10": {
+    "en": "Usage Tips",
+    "ua": "Поради"
+  },
+  "C_T_11": {
+    "en": "Data Management",
+    "ua": "Керування даними"
+  },
+  "C_T_12": {
+    "en": "Recent Activity",
+    "ua": "Нещодавнє"
+  },
+  "C_T_13": {
+    "en": "Top 10",
+    "ua": "Топ-10"
+  },
+  "C_T_14": {
+    "en": "Top Songs",
+    "ua": "Топ пісень"
+  },
+  "C_T_15": {
+    "en": "Top Artists",
+    "ua": "Топ виконавців"
+  },
+  "_001": {
+    "en": "",
+    "ua": ""
+  },
+  "HudTime": {
+    "en": "{t:5.0:00004041}{t:3.3:}{t:5.0:00002041}{t:3.47:02003a0002002000}{t:5.1:}{t:5.0:00004041}{t:3.4:}",
+    "ua": ""
+  },
+  "P_Time": {
+    "en": "{t:3.15:}:{t:3.4:}:{t:3.5:} / {t:3.34:}:{t:3.23:}:{t:3.24:}",
+    "ua": ""
+  },
+  "R_Time": {
+    "en": "{t:3.5:}.{t:3.6:} / {t:3.24:}.{t:3.25:}",
+    "ua": ""
+  },
+  "_002": {
+    "en": "",
+    "ua": ""
+  },
+  "C_B_00": {
+    "en": "",
+    "ua": ""
+  },
+  "C_B_01": {
+    "en": "Close",
+    "ua": "Закрити"
+  },
+  "C_B_02": {
+    "en": "Back",
+    "ua": "Назад"
+  },
+  "C_B_03": {
+    "en": "{t:1.0:5000}Settings{t:1.0:6400}",
+    "ua": "{t:1.0:5000}Параметри{t:1.0:6400}"
+  },
+  "C_B_04": {
+    "en": "{t:1.0:5000}StreetPass{t:1.0:6400}",
+    "ua": "{t:1.0:5000}StreetPass{t:1.0:6400}"
+  },
+  "_100": {
+    "en": "",
+    "ua": ""
+  },
+  "P_B_00": {
+    "en": "Open",
+    "ua": "Відкрити"
+  },
+  "P_B_02": {
+    "en": "Play",
+    "ua": "Грати"
+  },
+  "P_B_03": {
+    "en": "Add...",
+    "ua": "Додати…"
+  },
+  "P_B_05": {
+    "en": "{t:1.0:6000}Remove{t:1.0:6400}",
+    "ua": "{t:1.0:6000}Прибрати{t:1.0:6400}"
+  },
+  "P_B_06": {
+    "en": "",
+    "ua": ""
+  },
+  "P_B_07": {
+    "en": "",
+    "ua": ""
+  },
+  "P_B_09": {
+    "en": "{t:1.0:4b00}Remove All{t:1.0:6400}",
+    "ua": "{t:1.0:4b00}Прибрати все{t:1.0:6400}"
+  },
+  "_110": {
+    "en": "",
+    "ua": ""
+  },
+  "P_BR_00": {
+    "en": "Record & Edit Sounds",
+    "ua": "Запис і зміна звуків"
+  },
+  "P_BR_01": {
+    "en": "",
+    "ua": ""
+  },
+  "P_BR_02": {
+    "en": "/SDCARD",
+    "ua": "/SDCARD"
+  },
+  "P_BR_03": {
+    "en": "Autoplay",
+    "ua": "Автогра"
+  },
+  "P_BR_04": {
+    "en": "Resume",
+    "ua": "Далі"
+  },
+  "P_BR_05": {
+    "en": "/Extra Data",
+    "ua": "/Extra Data"
+  },
+  "P_BR_06": {
+    "en": "??????????",
+    "ua": ""
+  },
+  "_120": {
+    "en": "",
+    "ua": ""
+  },
+  "E_00": {
+    "en": "Shuffle All",
+    "ua": "Усе впереміш"
+  },
+  "E_01": {
+    "en": "Top 10 Most Played",
+    "ua": "Топ-10 найчастіших"
+  },
+  "E_02": {
+    "en": "",
+    "ua": ""
+  },
+  "E_03": {
+    "en": "Pick of the Day",
+    "ua": "Вибір дня"
+  },
+  "E_04": {
+    "en": "{t:3.46:0000} Collection",
+    "ua": "Збірка {t:3.46:0000}"
+  },
+  "E_05": {
+    "en": "{t:3.46:0000} Collection",
+    "ua": "Збірка {t:3.46:0000}"
+  },
+  "E_I_00": {
+    "en": "Shuffle all songs",
+    "ua": "Грати всі пісні впереміш"
+  },
+  "E_I_01": {
+    "en": "Play the ten most-played songs",
+    "ua": "Грати десять найчастіших"
+  },
+  "E_I_02": {
+    "en": "",
+    "ua": ""
+  },
+  "E_I_03": {
+    "en": "The budgie's special\nrecommendation for today",
+    "ua": "Особлива порада\nпапужки на сьогодні"
+  },
+  "E_I_04": {
+    "en": "",
+    "ua": ""
+  },
+  "E_I_05": {
+    "en": "Play songs that have been\nlistened to recently",
+    "ua": "Грати пісні, які\nслухали нещодавно"
+  },
+  "E_I_06": {
+    "en": "Budgie's Random Picks",
+    "ua": "Випадковий вибір папужки"
+  },
+  "E_I_TOP10_01": {
+    "en": "No. 1",
+    "ua": "№ 1"
+  },
+  "E_I_TOP10_02": {
+    "en": "No. 2",
+    "ua": "№ 2"
+  },
+  "E_I_TOP10_03": {
+    "en": "No. 3",
+    "ua": "№ 3"
+  },
+  "E_I_TOP10_04": {
+    "en": "No. 4",
+    "ua": "№ 4"
+  },
+  "E_I_TOP10_05": {
+    "en": "No. 5",
+    "ua": "№ 5"
+  },
+  "E_I_TOP10_06": {
+    "en": "No. 6",
+    "ua": "№ 6"
+  },
+  "E_I_TOP10_07": {
+    "en": "No. 7",
+    "ua": "№ 7"
+  },
+  "E_I_TOP10_08": {
+    "en": "No. 8",
+    "ua": "№ 8"
+  },
+  "E_I_TOP10_09": {
+    "en": "No. 9",
+    "ua": "№ 9"
+  },
+  "E_I_TOP10_10": {
+    "en": "No. 10",
+    "ua": "№ 10"
+  },
+  "_130": {
+    "en": "",
+    "ua": ""
+  },
+  "F_00": {
+    "en": "Top 10",
+    "ua": "Топ-10"
+  },
+  "F_01": {
+    "en": "Practice",
+    "ua": "Вправи"
+  },
+  "F_02": {
+    "en": "StreetPass",
+    "ua": "StreetPass"
+  },
+  "F_03": {
+    "en": "Secret",
+    "ua": "Таємне"
+  },
+  "_131": {
+    "en": "",
+    "ua": ""
+  },
+  "F_N_00": {
+    "en": "Playlist{t:3.46:0000}{t:3.46:0100}",
+    "ua": "Список{t:3.46:0000}{t:3.46:0100}"
+  },
+  "_132": {
+    "en": "",
+    "ua": ""
+  },
+  "F_I_00": {
+    "en": "",
+    "ua": ""
+  },
+  "F_I_01": {
+    "en": "{t:5.0:00004041}{t:3.46:0000}{t:5.0:0000a041}/{t:5.0:00004041}{t:3.46:0100}",
+    "ua": ""
+  },
+  "_150": {
+    "en": "",
+    "ua": ""
+  },
+  "V_SS_NoPhoto": {
+    "en": "There are no\nphotos to display.",
+    "ua": "Немає фото\nдля показу."
+  },
+  "_200": {
+    "en": "",
+    "ua": ""
+  },
+  "R_B_00": {
+    "en": "Edit",
+    "ua": "Змінити"
+  },
+  "R_B_01": {
+    "en": "Record",
+    "ua": "Запис"
+  },
+  "R_B_02": {
+    "en": "Delete",
+    "ua": "Стерти"
+  },
+  "R_B_05": {
+    "en": "Save",
+    "ua": "Зберегти"
+  },
+  "R_B_06": {
+    "en": "Copy",
+    "ua": "Копія"
+  },
+  "R_B_07": {
+    "en": "Move",
+    "ua": "Перенести"
+  },
+  "R_I_00": {
+    "en": "{t:3.2:}/{t:3.1:}/{t:3.0:}   {t:3.3:}:{t:3.4:}:{t:3.5:}",
+    "ua": ""
+  },
+  "_300": {
+    "en": "",
+    "ua": ""
+  },
+  "S_00": {
+    "en": "Audio Output",
+    "ua": "Вивід звуку"
+  },
+  "S_B_00_0": {
+    "en": "Mono",
+    "ua": "Моно"
+  },
+  "S_B_00_1": {
+    "en": "Stereo",
+    "ua": "Стерео"
+  },
+  "S_B_00_2": {
+    "en": "Surround",
+    "ua": "Об'ємний"
+  },
+  "S_01": {
+    "en": "Touch Sound",
+    "ua": "Звук дотику"
+  },
+  "S_B_01_0": {
+    "en": "On",
+    "ua": "Увімк."
+  },
+  "S_B_01_1": {
+    "en": "Off",
+    "ua": "Вимк."
+  },
+  "S_B_03": {
+    "en": "{t:1.0:5a00}Interface Colour{t:1.0:6400}",
+    "ua": "{t:1.0:5a00}Колір інтерфейсу{t:1.0:6400}"
+  },
+  "S_B_04": {
+    "en": "Data Management",
+    "ua": "Керування даними"
+  },
+  "S_B_05": {
+    "en": "Usage Tips",
+    "ua": "Поради"
+  },
+  "S_I_05": {
+    "en": "View the Usage Tips that\nyou have seen so far.",
+    "ua": "Переглянути поради,\nяк ви вже бачили."
+  },
+  "S_I_06": {
+    "en": "",
+    "ua": ""
+  },
+  "S_I_07": {
+    "en": "",
+    "ua": ""
+  },
+  "S_I_08": {
+    "en": "",
+    "ua": ""
+  },
+  "_310": {
+    "en": "",
+    "ua": ""
+  },
+  "D_B_00": {
+    "en": "Reset User Data",
+    "ua": "Скинути дані користувача"
+  },
+  "D_B_01": {
+    "en": "Delete All on Page",
+    "ua": "Видалити все на сторінці"
+  },
+  "D_B_02": {
+    "en": "Delete All Recordings",
+    "ua": "Видалити всі записи"
+  },
+  "_400": {
+    "en": "",
+    "ua": ""
+  },
+  "CEC_TOP_B_00": {
+    "en": "Compatibility",
+    "ua": "Спорідненість"
+  },
+  "CEC_TOP_B_01": {
+    "en": "Hit Parade",
+    "ua": "Хіт-парад"
+  },
+  "CEC_TOP_B_02": {
+    "en": "StreetPass",
+    "ua": "StreetPass"
+  },
+  "CEC_TOP_B_03_0": {
+    "en": "On",
+    "ua": "Увімк."
+  },
+  "CEC_TOP_B_03_1": {
+    "en": "Off",
+    "ua": "Вимк."
+  },
+  "CEC_TOP_00": {
+    "en": "{t:3.38:}'s Picks",
+    "ua": "Вибір {t:3.38:}"
+  },
+  "CEC_TOP_10": {
+    "en": "There are no songs in\nthe StreetPass playlist.",
+    "ua": "У списку StreetPass\nнемає пісень."
+  },
+  "CEC_TOP_15": {
+    "en": "StreetPass cannot be used\nwithout song information.\n\nPlease add song tracks to\nthe StreetPass playlist.",
+    "ua": "StreetPass не працює без\nвідомостей про пісні.\n\nДодайте пісні до списку\nStreetPass."
+  },
+  "_405": {
+    "en": "",
+    "ua": ""
+  },
+  "CEC_MsgDesc": {
+    "en": "Everyone's Picks",
+    "ua": "Вибір усіх"
+  },
+  "_410": {
+    "en": "",
+    "ua": ""
+  },
+  "CEC_CNT_B_00": {
+    "en": "Top 10",
+    "ua": "Топ-10"
+  },
+  "CEC_CNT_B_01": {
+    "en": "Recent Activity",
+    "ua": "Нещодавнє"
+  },
+  "CEC_CNT_B_02": {
+    "en": "Top Songs",
+    "ua": "Топ пісень"
+  },
+  "CEC_CNT_B_03": {
+    "en": "Top Artists",
+    "ua": "Топ виконавців"
+  },
+  "CEC_CNT_B_04": {
+    "en": "Scroll with  or ",
+    "ua": "Гортати  "
+  },
+  "CEC_CNT_B_05": {
+    "en": "{t:1.0:5000}Save as Photo{t:1.0:6400}",
+    "ua": "{t:1.0:5000}Зберегти як фото{t:1.0:6400}"
+  },
+  "CEC_CNT_B_06": {
+    "en": "Reset",
+    "ua": "Скинути"
+  },
+  "CEC_CNT_10": {
+    "en": "There is no compatibility\ndata yet.",
+    "ua": "Даних про спорідненість\nще немає."
+  },
+  "CEC_CNT_15": {
+    "en": "You haven't met anyone\ncompatible via StreetPass yet.",
+    "ua": "Ви ще не зустріли нікого\nспорідненого через StreetPass."
+  },
+  "CEC_CNT_20": {
+    "en": "There is no Hit Parade\ndata yet.",
+    "ua": "Даних хіт-параду\nще немає."
+  },
+  "CEC_CNT_21": {
+    "en": "{t:3.39:0000} new tracks found! Keep\nusing StreetPass and they might\nshow up in your Hit Parade!",
+    "ua": "Нових пісень: {t:3.39:0000}!\nКористуйтеся StreetPass далі,\nі вони можуть\nпотрапити в хіт-парад!"
+  },
+  "CEC_CNT_23": {
+    "en": "1 new track found! Keep\nusing StreetPass and it might\nshow up in your Hit Parade!",
+    "ua": "Знайдено 1 нову пісню!\nКористуйтеся StreetPass далі,\nі вона може\nпотрапити в хіт-парад!"
+  },
+  "CEC_CNT_22": {
+    "en": "{t:3.39:0000} new artists found! Keep\nusing StreetPass and they might\nshow up in your Hit Parade!",
+    "ua": "Нових виконавців: {t:3.39:0000}!\nКористуйтеся StreetPass далі,\nі вони можуть\nпотрапити в хіт-парад!"
+  },
+  "CEC_CNT_24": {
+    "en": "1 new artist found! Keep\nusing StreetPass and they might\nshow up in your Hit Parade!",
+    "ua": "Знайдено 1 виконавця!\nКористуйтеся StreetPass — і він\nможе потрапити в хіт-парад!"
+  },
+  "CEC_CNT_30": {
+    "en": "",
+    "ua": ""
+  },
+  "CEC_CNT_31": {
+    "en": "{t:3.39:0000}%",
+    "ua": ""
+  },
+  "CEC_CNT_32": {
+    "en": "Music You Both Have",
+    "ua": "Музика, що є в обох"
+  },
+  "CEC_CNT_33": {
+    "en": "'{t:3.40:0000}s",
+    "ua": ""
+  },
+  "CEC_CNT_34": {
+    "en": "{t:5.0:00004041}{t:3.2:}{t:2.0:0100}/{t:2.0:0100}{t:3.1:}{t:2.0:0100}/{t:2.0:0100}{t:3.0:} {t:3.3:}:00{t:5.1:}{t:1.0:4600} (approx.){t:1.0:6400}",
+    "ua": "{t:5.0:00004041}{t:3.2:}{t:2.0:0100}/{t:2.0:0100}{t:3.1:}{t:2.0:0100}/{t:2.0:0100}{t:3.0:} {t:3.3:}:00{t:5.1:}{t:1.0:4600} (прибл.){t:1.0:6400}"
+  },
+  "CEC_CNT_35": {
+    "en": "{t:3.46:0000}",
+    "ua": ""
+  },
+  "CEC_CNT_36": {
+    "en": "{t:3.39:0000}%",
+    "ua": ""
+  },
+  "CEC_CNT_37": {
+    "en": "{t:3.46:0000}",
+    "ua": ""
+  },
+  "CEC_CNT_38": {
+    "en": "{t:3.46:0000} {t:1.0:5a00}etc.{t:1.0:6400}",
+    "ua": "{t:3.46:0000} {t:1.0:5a00}тощо{t:1.0:6400}"
+  },
+  "CEC_CNT_39": {
+    "en": "No songs can be displayed.",
+    "ua": "Пісень для показу немає."
+  },
+  "CEC_CNT_40": {
+    "en": "{t:1.0:5a00}For period {t:5.0:00003041}{t:3.2:}{t:2.0:0100}/{t:2.0:0100}{t:3.1:}{t:2.0:0100}/{t:2.0:0100}{t:3.0:}{t:5.1:} - {t:5.0:00003041}{t:3.21:}{t:2.0:0100}/{t:2.0:0100}{t:3.20:}{t:2.0:0100}/{t:2.0:0100}{t:3.19:}{t:1.0:6400}",
+    "ua": "{t:1.0:5a00}За період {t:5.0:00003041}{t:3.2:}{t:2.0:0100}/{t:2.0:0100}{t:3.1:}{t:2.0:0100}/{t:2.0:0100}{t:3.0:}{t:5.1:} - {t:5.0:00003041}{t:3.21:}{t:2.0:0100}/{t:2.0:0100}{t:3.20:}{t:2.0:0100}/{t:2.0:0100}{t:3.19:}{t:1.0:6400}"
+  },
+  "CEC_CNT_41": {
+    "en": "",
+    "ua": ""
+  },
+  "CEC_CNT_46": {
+    "en": "",
+    "ua": ""
+  },
+  "CEC_CNT_42": {
+    "en": "",
+    "ua": ""
+  },
+  "CEC_CNT_43": {
+    "en": "{t:3.38:}'s data",
+    "ua": "Дані {t:3.38:}"
+  },
+  "CEC_CNT_44": {
+    "en": "Users: {t:3.43:0000}",
+    "ua": "Люди: {t:3.43:0000}"
+  },
+  "CEC_CNT_45": {
+    "en": "Points:\n{t:3.44:0000}",
+    "ua": "Балів:\n{t:3.44:0000}"
+  },
+  "_500": {
+    "en": "",
+    "ua": ""
+  },
+  "SNOTE_Banner": {
+    "en": "",
+    "ua": ""
+  },
+  "SWKB_": {
+    "en": "",
+    "ua": ""
+  },
+  "SWKB_U": {
+    "en": "Edit the title.",
+    "ua": "Змініть назву."
+  },
+  "SWKB_Btn00": {
+    "en": "Cancel",
+    "ua": "Скасувати"
+  },
+  "SWKB_Btn01": {
+    "en": "OK",
+    "ua": "OK"
+  },
+  "ErrBrkn_": {
+    "en": "",
+    "ua": ""
+  },
+  "ErrBrkn_Btn00": {
+    "en": "OK",
+    "ua": "OK"
+  },
+  "ErrBrkn00": {
+    "en": "The save data\nis corrupted.\n\nThe data will\nnow be reset.",
+    "ua": "Збережені дані\nпошкоджено.\n\nЗараз їх буде\nскинуто."
+  },
+  "ErrBrkn01": {
+    "en": "Resetting save data...",
+    "ua": "Скидання даних…"
+  },
+  "FriendCard_": {
+    "en": "",
+    "ua": ""
+  },
+  "FriendCard_Play": {
+    "en": "Played music\n{t:3.39:0000} times",
+    "ua": "Слухав музику\n{t:3.39:0000} разів"
+  },
+  "FriendCard_Play0": {
+    "en": "Never played\nmusic",
+    "ua": "Не слухав\nмузики"
+  },
+  "FriendCard_Play1": {
+    "en": "Played music\nonce",
+    "ua": "Слухав музику\nодин раз"
+  },
+  "_600": {
+    "en": "",
+    "ua": ""
+  },
+  "CFL_Recover_000": {
+    "en": "The Mii Maker save\ndata was corrupted\nand has been reset.",
+    "ua": "Збережені дані Mii Maker\nбуло пошкоджено\nй скинуто."
+  },
+  "CFL_B_Recover_000": {
+    "en": "OK",
+    "ua": "OK"
+  }
+}
