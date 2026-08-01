@@ -1,0 +1,1318 @@
+{
+  "MMEN_NotificationList_Title": {
+    "en": "",
+    "ua": ""
+  },
+  "MMEN_NotificationList_Message": {
+    "en": "",
+    "ua": ""
+  },
+  "App_Button_Yes_Dlg2": {
+    "en": "",
+    "ua": ""
+  },
+  "App_Button_Yes_Dlg4": {
+    "en": "Yes",
+    "ua": "Так"
+  },
+  "App_Button_Yes_Dlg5": {
+    "en": "",
+    "ua": ""
+  },
+  "App_Button_No_Dlg3": {
+    "en": "No",
+    "ua": "Ні"
+  },
+  "App_Button_No_Dlg4": {
+    "en": "No",
+    "ua": "Ні"
+  },
+  "App_Button_OK_Dlg2": {
+    "en": "OK",
+    "ua": "OK"
+  },
+  "App_Button_OK_Dlg4": {
+    "en": "OK",
+    "ua": "OK"
+  },
+  "App_Button_OK_Dlg5": {
+    "en": "OK",
+    "ua": "OK"
+  },
+  "App_Button_Close_Dlg3": {
+    "en": "Close",
+    "ua": "Закрити"
+  },
+  "App_Button_Proceed_Dlg2": {
+    "en": "Continue",
+    "ua": "Далі"
+  },
+  "App_Button_Proceed_Dlg4": {
+    "en": "Continue",
+    "ua": "Далі"
+  },
+  "App_Button_Proceed_Dlg8": {
+    "en": "Continue",
+    "ua": "Далі"
+  },
+  "App_Button_Back_Dlg3": {
+    "en": "Back",
+    "ua": "Назад"
+  },
+  "App_Button_Back_Dlg5": {
+    "en": "Back",
+    "ua": "Назад"
+  },
+  "App_Button_Back_Dlg6": {
+    "en": "Back",
+    "ua": "Назад"
+  },
+  "App_Button_Cancel_Dlg4": {
+    "en": "Cancel",
+    "ua": "Скасувати"
+  },
+  "App_Button_Cancel_Dlg5": {
+    "en": "Cancel",
+    "ua": "Скасувати"
+  },
+  "App_Button_Cancel2_Dlg4": {
+    "en": "Cancel",
+    "ua": "Скасувати"
+  },
+  "App_Button_Cancel2_Dlg6": {
+    "en": "Cancel",
+    "ua": "Скасувати"
+  },
+  "App_Button_Cancel2_Dlg7": {
+    "en": "Cancel",
+    "ua": "Скасувати"
+  },
+  "App_Button_Cancel2_Dlg8": {
+    "en": "Cancel",
+    "ua": "Скасувати"
+  },
+  "App_Button_RunTrial": {
+    "en": "",
+    "ua": ""
+  },
+  "App_Button_Next": {
+    "en": "Next",
+    "ua": "Далі"
+  },
+  "App_Button_Start": {
+    "en": "Start",
+    "ua": "Почати"
+  },
+  "App_Button_Exit": {
+    "en": "Quit",
+    "ua": "Вийти"
+  },
+  "App_Button_Send": {
+    "en": "Send",
+    "ua": "Надіслати"
+  },
+  "App_Button_Save": {
+    "en": "Save",
+    "ua": "Зберегти"
+  },
+  "App_Button_SaveAndSend": {
+    "en": "",
+    "ua": ""
+  },
+  "App_Button_Delete_Dlg2": {
+    "en": "Delete",
+    "ua": "Стерти"
+  },
+  "App_Button_RefreshSaveData": {
+    "en": "Reset",
+    "ua": "Скинути"
+  },
+  "App_Button_DeletePage": {
+    "en": "Delete",
+    "ua": "Стерти"
+  },
+  "App_Button_Verup": {
+    "en": "Update",
+    "ua": "Оновити"
+  },
+  "App_Button_Initialize": {
+    "en": "",
+    "ua": ""
+  },
+  "App_Button_UnlockParentalControl": {
+    "en": "Remove",
+    "ua": "Зняти"
+  },
+  "App_Button_Set": {
+    "en": "",
+    "ua": ""
+  },
+  "App_Button_Search": {
+    "en": "Search",
+    "ua": "Пошук"
+  },
+  "App_Button_AllErase": {
+    "en": "Erase",
+    "ua": "Стерти"
+  },
+  "App_Button_Download": {
+    "en": "Download",
+    "ua": "Завантажити"
+  },
+  "App_Button_DownloadCancel": {
+    "en": "Cancel",
+    "ua": "Скасувати"
+  },
+  "App_Button_BossReceive": {
+    "en": "{t:0.2:5a00}Receive{t:0.2:6400}",
+    "ua": "{t:0.2:5a00}Так{t:0.2:6400}"
+  },
+  "App_Button_BossDoNotReceive": {
+    "en": "{t:0.2:5a00}Don't Receive{t:0.2:6400}",
+    "ua": "{t:0.2:5a00}Ні, дякую{t:0.2:6400}"
+  },
+  "App_Button_BossConfirm": {
+    "en": "Confirm",
+    "ua": "Готово"
+  },
+  "App_Button_Later": {
+    "en": "Later",
+    "ua": "Пізніше"
+  },
+  "App_Button_CheckNow": {
+    "en": "View Now",
+    "ua": "Глянути зараз"
+  },
+  "App_Boot_RequestVerup": {
+    "en": "You need to update your\nsystem in order to use the\nNintendo Zone viewer.\n\nUpdate now?",
+    "ua": "Щоб користуватися\nоглядачем\nNintendo Zone, треба\nоновити систему.\n\nОновити зараз?"
+  },
+  "App_Boot_FarewellVersionUp": {
+    "en": "",
+    "ua": ""
+  },
+  "App_Boot_ServiceSuspended": {
+    "en": "Cannot connect. The service\nis not currently operational.",
+    "ua": "Не вдалося з'єднатися.\nСервіс\nзараз не працює."
+  },
+  "App_Boot_ServiceEnded": {
+    "en": "",
+    "ua": ""
+  },
+  "App_Boot_AdsWarning": {
+    "en": "",
+    "ua": ""
+  },
+  "App_Boot_FirstTime01": {
+    "en": "Welcome to Nintendo Zone!",
+    "ua": "Вітаємо в Nintendo Zone!"
+  },
+  "App_Boot_FirstTime02": {
+    "en": "With Nintendo Zone, you can\nreceive unique content at\nparticipating locations!",
+    "ua": "У Nintendo Zone ви\nотримуєте\nособливий вміст у місцях,\nде працює сервіс!"
+  },
+  "App_Boot_FirstTime03": {
+    "en": "",
+    "ua": ""
+  },
+  "App_Boot_TopWelcome": {
+    "en": "Welcome to Nintendo Zone!",
+    "ua": "Вітаємо в Nintendo Zone!"
+  },
+  "App_Boot_TopHomeButton": {
+    "en": ": Return to HOME Menu",
+    "ua": ": назад у меню HOME"
+  },
+  "App_Boot_SaveInitialize": {
+    "en": "Resetting save data...\nDo not turn off the power.",
+    "ua": "Скидання збережених\nданих...\nНе вимикайте консоль."
+  },
+  "App_Boot_SaveInitializeDone": {
+    "en": "",
+    "ua": ""
+  },
+  "App_Boot_PreAgeGate_Message": {
+    "en": "(LOCALIZATION NOT NECESSARY FOR EU_ENGLISH)",
+    "ua": ""
+  },
+  "App_Boot_PreAgeGate_OtherBtn": {
+    "en": "(LOCALIZATION NOT NECESSARY FOR EU_ENGLISH)",
+    "ua": ""
+  },
+  "App_Boot_PreAgeGate_QuebecBtn": {
+    "en": "(LOCALIZATION NOT NECESSARY FOR EU_ENGLISH)",
+    "ua": ""
+  },
+  "App_Boot_AgeGate_Message": {
+    "en": "(LOCALIZATION NOT NECESSARY FOR EU_ENGLISH)",
+    "ua": ""
+  },
+  "App_Boot_AgeGate_MonthLabel": {
+    "en": "(LOCALIZATION NOT NECESSARY FOR EU_ENGLISH)",
+    "ua": ""
+  },
+  "App_Boot_AgeGate_DayLabel": {
+    "en": "(LOCALIZATION NOT NECESSARY FOR EU_ENGLISH)",
+    "ua": ""
+  },
+  "App_Boot_AgeGate_YearLabel": {
+    "en": "(LOCALIZATION NOT NECESSARY FOR EU_ENGLISH)",
+    "ua": ""
+  },
+  "App_Boot_AgeGate_BackBtn": {
+    "en": "(LOCALIZATION NOT NECESSARY FOR EU_ENGLISH)",
+    "ua": ""
+  },
+  "App_Boot_AgeGate_ConfirmBtn": {
+    "en": "(LOCALIZATION NOT NECESSARY FOR EU_ENGLISH)",
+    "ua": ""
+  },
+  "App_Boot_AgeGate_Reject": {
+    "en": "(LOCALIZATION NOT NECESSARY FOR EU_ENGLISH)",
+    "ua": ""
+  },
+  "App_Boot_TopDownload": {
+    "en": "",
+    "ua": ""
+  },
+  "App_PluginBanner_ZoneSearch": {
+    "en": "Nintendo Zone search",
+    "ua": "Пошук Nintendo Zone"
+  },
+  "App_PluginBanner_ZoneSearchExplain": {
+    "en": "Checks for Nintendo Zone\navailability at this location.",
+    "ua": "Перевіряє, чи доступний\nNintendo Zone у цьому місці."
+  },
+  "App_ZoneSelect_SearchProceed": {
+    "en": "Searching for Nintendo\nZone... Please wait.",
+    "ua": "Пошук Nintendo Zone...\nЗачекайте."
+  },
+  "App_ZoneSelect_ServiceFound": {
+    "en": "Found Nintendo Zone\nservice(s).",
+    "ua": "Знайдено сервіси\nNintendo Zone."
+  },
+  "App_ZoneSelect_ServiceNotFound": {
+    "en": "",
+    "ua": ""
+  },
+  "App_ZoneSelect_NoServiceHTML": {
+    "en": "Could not find Nintendo Zone.",
+    "ua": "Nintendo Zone не знайдено."
+  },
+  "App_ZoneSelect_GotoServiceConfirm": {
+    "en": "Use this service?",
+    "ua": "Скористатися цим сервісом?"
+  },
+  "App_ZoneSelect_Connecting": {
+    "en": "Connecting to\nNintendo Zone...",
+    "ua": "З'єднання з\nNintendo Zone..."
+  },
+  "App_ZoneSelect_ConnectionFailed": {
+    "en": "",
+    "ua": ""
+  },
+  "App_Offline_PseudoPluginBanner": {
+    "en": "What is Nintendo Zone?",
+    "ua": "Що таке Nintendo Zone?"
+  },
+  "App_Offline_PseudoPluginBannerText": {
+    "en": "With Nintendo Zone, you can\nreceive unique content at \nparticipating locations!",
+    "ua": "У Nintendo Zone ви отримуєте\nособливий вміст у місцях, \nде працює сервіс!"
+  },
+  "App_Offline_NoZone": {
+    "en": "Could not find\nNintendo Zone.",
+    "ua": "Nintendo Zone\nне знайдено."
+  },
+  "App_Offline_SearchZone": {
+    "en": "Search for Nintendo Zone",
+    "ua": "Шукати Nintendo Zone"
+  },
+  "App_Offline_WhatIsNintendoZone": {
+    "en": "About Nintendo Zone",
+    "ua": "Про Nintendo Zone"
+  },
+  "App_Offline_HOMEButton": {
+    "en": " : Return to HOME Menu",
+    "ua": " : назад у меню HOME"
+  },
+  "App_Trial_SystemUpdate": {
+    "en": "You will need to update your\nsystem in order to continue. \n\nUpdate now?",
+    "ua": "Щоб продовжити, треба\nоновити систему. \n\nОновити зараз?"
+  },
+  "App_Trial_InsertSD": {
+    "en": "",
+    "ua": ""
+  },
+  "App_Trial_SDCheck": {
+    "en": "Checking SD Card...\nDo not remove the SD Card or\nturn the power off.",
+    "ua": "Перевірка карти SD...\nНе виймайте карту SD\nі не вимикайте консоль."
+  },
+  "App_Trial_SDFound": {
+    "en": "",
+    "ua": ""
+  },
+  "App_Trial_SDFull": {
+    "en": "There is not enough free\nspace on the SD Card to\ndownload this software.\n\nRequired blocks: %6d\nAvailable blocks: %6d",
+    "ua": "На карті SD бракує\nвільного місця, щоб\nзавантажити цю програму.\n\nПотрібно блоків: %6d\nДоступно блоків: %6d"
+  },
+  "App_Trial_SDOrganize": {
+    "en": "Please use Data Management\nin the System Settings to\ndelete or move software\nso as to make space on\nthe SD Card.",
+    "ua": "Скористайтеся «Керуванням\nданими» в налаштуваннях\nсистеми, щоб видалити чи\nперемістити програми\nй звільнити місце на карті SD."
+  },
+  "App_Trial_SDSpaceAvailable": {
+    "en": "SD Card information\n\nRequired blocks: %6d\nAvailable blocks: %6d",
+    "ua": "Дані карти SD\n\nПотрібно блоків: %6d\nДоступно блоків: %6d"
+  },
+  "App_Trial_DownloadServiceBanner": {
+    "en": "Nintendo 3DS Download Service",
+    "ua": "Сервіс завантажень Nintendo 3DS"
+  },
+  "App_Trial_NoDownloadsAvailable": {
+    "en": "No demo versions available for\ndownload.",
+    "ua": "Демоверсій для завантаження\nнемає."
+  },
+  "App_Trial_DownloadAgeRestriction": {
+    "en": "There is no software currently\navailable for download.",
+    "ua": "Зараз немає програм,\nдоступних для завантаження."
+  },
+  "App_Trial_DownloadServiceDescription": {
+    "en": "Download demo versions and more.",
+    "ua": "Завантажуйте демоверсії й не тільки."
+  },
+  "App_Trial_DownloadListTrialLong": {
+    "en": "Demo Version",
+    "ua": "Демоверсія"
+  },
+  "App_Trial_DownloadListAreaContentsLong": {
+    "en": "Area-exclusive",
+    "ua": "Лише для цього місця"
+  },
+  "App_Trial_DownloadListTrialShort": {
+    "en": "Demo Version",
+    "ua": "Демоверсія"
+  },
+  "App_Trial_DownloadListAreaContentsShort": {
+    "en": "Area-exclusive",
+    "ua": "Лише тут"
+  },
+  "App_Trial_DownloadListNEW": {
+    "en": "NEW",
+    "ua": "НОВЕ"
+  },
+  "App_Trial_DownloadListUPDATE": {
+    "en": "",
+    "ua": ""
+  },
+  "App_Trial_DownloadDescription": {
+    "en": "Software Information",
+    "ua": "Про програму"
+  },
+  "App_Trial_DetailButton": {
+    "en": "Details",
+    "ua": "Докладніше"
+  },
+  "App_Trial_SoftwareSummary": {
+    "en": "Software Description",
+    "ua": "Опис програми"
+  },
+  "App_Trial_DownloadableApp": {
+    "en": "",
+    "ua": ""
+  },
+  "App_Trial_Genre": {
+    "en": "Genre",
+    "ua": "Жанр"
+  },
+  "App_Trial_Publisher": {
+    "en": "Publisher",
+    "ua": "Видавець"
+  },
+  "App_Trial_Rating": {
+    "en": "Rating",
+    "ua": "Рейтинг"
+  },
+  "App_Trial_SoftwareType": {
+    "en": "Availability",
+    "ua": "Доступність"
+  },
+  "App_Trial_RetailApp": {
+    "en": "",
+    "ua": ""
+  },
+  "App_Trial_DownloadFail": {
+    "en": "",
+    "ua": ""
+  },
+  "App_Trial_Completed": {
+    "en": "",
+    "ua": ""
+  },
+  "App_Trial_CompleteMessage": {
+    "en": "Download complete.",
+    "ua": "Завантаження завершено."
+  },
+  "App_Trial_CompleteButton": {
+    "en": "Next",
+    "ua": "Далі"
+  },
+  "App_Trial_GoBackToHomeMenu": {
+    "en": "To use the software you have downloaded,\nfirst press  to return to the HOME Menu.",
+    "ua": "Щоб скористатися завантаженою програмою,\nнатисніть , щоб вернутися в меню HOME."
+  },
+  "App_Trial_DownloadCancel": {
+    "en": "Cancel Download",
+    "ua": "Скасувати завантаження"
+  },
+  "App_Trial_DownloadPreparing": {
+    "en": "Preparing to download...",
+    "ua": "Підготовка до завантаження..."
+  },
+  "App_Trial_DownloadButton": {
+    "en": "Download",
+    "ua": "Завантажити"
+  },
+  "App_Trial_CannotDownloadButton": {
+    "en": "Downloaded",
+    "ua": "Завантажено"
+  },
+  "App_Trial_ConfirmDownload": {
+    "en": "This software will be saved\non the SD Card. Download?",
+    "ua": "Цю програму буде\nзбережено\nна карту SD. Завантажити?"
+  },
+  "App_Trial_CannotDownload": {
+    "en": "",
+    "ua": ""
+  },
+  "App_Trial_ConfirmCancel": {
+    "en": "Do you want to\ncancel the download?",
+    "ua": "Скасувати\nзавантаження?"
+  },
+  "App_Trial_Download": {
+    "en": "Downloading...",
+    "ua": "Завантаження..."
+  },
+  "App_Jump_eShopShort": {
+    "en": "Check it out!",
+    "ua": "Погляньте!"
+  },
+  "App_Jump_eShopMedium": {
+    "en": "Check it out!",
+    "ua": "Погляньте!"
+  },
+  "App_Jump_eShopWide": {
+    "en": "Check it out!",
+    "ua": "Погляньте!"
+  },
+  "App_Jump_eShopSkinny": {
+    "en": "Launch Nintendo eShop",
+    "ua": "Запустити Nintendo eShop"
+  },
+  "App_Jump_SpiderShort": {
+    "en": "More Details",
+    "ua": "Докладніше"
+  },
+  "App_Jump_eShop": {
+    "en": "Quit this software and\nlaunch Nintendo eShop?",
+    "ua": "Закрити цю програму\nй запустити Nintendo\neShop?"
+  },
+  "App_Jump_Spider": {
+    "en": "Launch Internet Browser?",
+    "ua": "Запустити\nінтернет-браузер?"
+  },
+  "App_Jump_URLerror": {
+    "en": "",
+    "ua": ""
+  },
+  "App_Jump_NoWebBrowser": {
+    "en": "",
+    "ua": ""
+  },
+  "App_Parental_Browser": {
+    "en": "",
+    "ua": ""
+  },
+  "App_SD_NewCardInserted": {
+    "en": "",
+    "ua": ""
+  },
+  "App_SD_NeedCardForFunctions": {
+    "en": "Either the SD Card is write-\nprotected, or none is inserted.\n\nFeatures which require an\nSD Card, such as SpotPass,\nwill be disabled.",
+    "ua": "Карту SD або захищено від\nзапису, або не вставлено.\n\nФункції, яким потрібна\nкарта SD, зокрема SpotPass,\nбуде вимкнено."
+  },
+  "App_SD_NeedCardForFunctions_02": {
+    "en": "Always turn the system\noff before inserting or\nremoving the SD Card.",
+    "ua": "Завжди вимикайте консоль\nперед тим, як вставляти\nчи виймати карту SD."
+  },
+  "App_SD_ExtraDataCorrupt": {
+    "en": "The save data on the\nSD Card is corrupted.\n\nThe save data will now be\ndeleted and reset.",
+    "ua": "Збережені дані на карті SD\nпошкоджено.\n\nЗараз їх буде\nвидалено й скинуто."
+  },
+  "App_SD_NoCard": {
+    "en": "Could not download.\nEither there is no SD Card\ninserted or the SD Card was\nremoved and inserted while\nthe operation was in progress.",
+    "ua": "Не вдалося завантажити.\nАбо карту SD не вставлено,\nабо її виймали й вставляли\nпід час роботи."
+  },
+  "App_SD_WriteDisabled": {
+    "en": "Cannot download. The\nSD Card is write-protected.",
+    "ua": "Завантажити не можна.\nКарту\nSD захищено від запису."
+  },
+  "App_SD_PulledOut_00": {
+    "en": "",
+    "ua": ""
+  },
+  "App_SD_PulledOut": {
+    "en": "The SD Card has\nbeen removed.\n\nPlease turn off the power\nbefore removing SD Cards.\n",
+    "ua": "Карту SD\nвийнято.\n\nЗавжди вимикайте консоль\nперед вийманням карти SD.\n"
+  },
+  "App_SD_BadFormat": {
+    "en": "",
+    "ua": ""
+  },
+  "App_SD_Full": {
+    "en": "There is not enough free\nspace on the SD Card to\ncreate extra data.\n\nSpotPass cannot be used.",
+    "ua": "На карті SD бракує\nвільного місця, щоб\nстворити додаткові дані.\n\nSpotPass не працюватиме."
+  },
+  "App_SD_Check": {
+    "en": "",
+    "ua": ""
+  },
+  "App_SD_Found": {
+    "en": "",
+    "ua": ""
+  },
+  "App_SD_CreateExtData": {
+    "en": "Creating extra data on the\nSD Card...\nDo not remove the SD Card\nor turn off the power.",
+    "ua": "Створення додаткових даних\nна карті SD...\nНе виймайте карту SD\nі не вимикайте консоль."
+  },
+  "App_SD_GeneralReadError": {
+    "en": "",
+    "ua": ""
+  },
+  "App_SD_CreateExtDataError": {
+    "en": "",
+    "ua": ""
+  },
+  "App_SelectPhoto": {
+    "en": "Select Photo",
+    "ua": "Вибрати фото"
+  },
+  "App_MenuBar_Return": {
+    "en": "Back",
+    "ua": "Назад"
+  },
+  "App_MenuBar_Menu": {
+    "en": "Menu",
+    "ua": "Меню"
+  },
+  "App_MenuBar_Save": {
+    "en": "Save",
+    "ua": "Зберегти"
+  },
+  "App_MenuBar_OpenTopPage": {
+    "en": "Return to Main Page",
+    "ua": "На головну сторінку"
+  },
+  "App_MenuBar_SettingsInfo": {
+    "en": "",
+    "ua": ""
+  },
+  "App_MenuBar_OpenSavedPage": {
+    "en": "Saved Pages",
+    "ua": "Збережені сторінки"
+  },
+  "App_MenuBar_Search": {
+    "en": "Search for\nNintendo Zone",
+    "ua": "Шукати\nNintendo Zone"
+  },
+  "App_MenuBar_Notification": {
+    "en": "Notifications",
+    "ua": "Повідомлення"
+  },
+  "App_MenuBar_NotificationNEW": {
+    "en": "",
+    "ua": ""
+  },
+  "App_MenuBar_CustomizeDefault": {
+    "en": "Return to Main Page\nof this Service",
+    "ua": "На головну сторінку\nцього сервісу"
+  },
+  "App_MenuBar_GotoZoneSelect": {
+    "en": "Would you like to search for\nNintendo Zone service areas?",
+    "ua": "Пошукати зони\nобслуговування\nNintendo Zone?"
+  },
+  "App_SpotPass_NintendoZone": {
+    "en": "",
+    "ua": ""
+  },
+  "App_SpotPass_DefaultPage_Text1": {
+    "en": "There is currently no content\navailable.",
+    "ua": "Зараз доступного вмісту\nнемає."
+  },
+  "App_SpotPass_DefaultPage_Text2": {
+    "en": "Activate SpotPass for Nintendo Zone\nto receive updates on new content.",
+    "ua": "Увімкніть SpotPass для Nintendo Zone,\nщоб дізнаватися про новий вміст."
+  },
+  "App_SpotPass_DefaultPage_Text3": {
+    "en": "The Menu button will glow when new\ncontent is available.",
+    "ua": "Кнопка «Меню» засвітиться, коли\nз'явиться новий вміст."
+  },
+  "App_SpotPass_Services": {
+    "en": "",
+    "ua": ""
+  },
+  "App_SpotPass_Services2": {
+    "en": "",
+    "ua": ""
+  },
+  "App_SpotPass_TopPageText": {
+    "en": "",
+    "ua": ""
+  },
+  "App_SpotPass_Settings": {
+    "en": "",
+    "ua": ""
+  },
+  "App_PluginBanner_SpotPass": {
+    "en": "SpotPass Settings",
+    "ua": "Параметри SpotPass"
+  },
+  "App_PluginBanner_SpotPassExplain": {
+    "en": "Set up SpotPass.",
+    "ua": "Налаштуйте SpotPass."
+  },
+  "App_SpotPass_ContentBannerDesc": {
+    "en": "(LOCALIZATION NOT NECESSARY FOR EU_ENGLISH)",
+    "ua": ""
+  },
+  "App_SpotPass_ContentHeader0": {
+    "en": "(LOCALIZATION NOT NECESSARY FOR EU_ENGLISH)",
+    "ua": ""
+  },
+  "App_SpotPass_ContentBody0": {
+    "en": "(LOCALIZATION NOT NECESSARY FOR EU_ENGLISH)",
+    "ua": ""
+  },
+  "App_SpotPass_ContentWhatAvailableIcon": {
+    "en": "(LOCALIZATION NOT NECESSARY FOR EU_ENGLISH)",
+    "ua": ""
+  },
+  "App_SpotPass_ContentHeader1": {
+    "en": "(LOCALIZATION NOT NECESSARY FOR EU_ENGLISH)",
+    "ua": ""
+  },
+  "App_SpotPass_ContentBody1": {
+    "en": "(LOCALIZATION NOT NECESSARY FOR EU_ENGLISH)",
+    "ua": ""
+  },
+  "App_SpotPass_ContentHeader2": {
+    "en": "(LOCALIZATION NOT NECESSARY FOR EU_ENGLISH)",
+    "ua": ""
+  },
+  "App_SpotPass_ContentBody2": {
+    "en": "(LOCALIZATION NOT NECESSARY FOR EU_ENGLISH)",
+    "ua": ""
+  },
+  "App_SpotPass_ContentHeader3": {
+    "en": "(LOCALIZATION NOT NECESSARY FOR EU_ENGLISH)",
+    "ua": ""
+  },
+  "App_SpotPass_ContentBody3": {
+    "en": "(LOCALIZATION NOT NECESSARY FOR EU_ENGLISH)",
+    "ua": ""
+  },
+  "App_SpotPass_ContentFooter": {
+    "en": "(LOCALIZATION NOT NECESSARY FOR EU_ENGLISH)",
+    "ua": ""
+  },
+  "App_SpotPass_ContentFindLocation": {
+    "en": "(LOCALIZATION NOT NECESSARY FOR EU_ENGLISH)",
+    "ua": ""
+  },
+  "App_PluginBanner_ScreenMemoTitle": {
+    "en": "Saved Pages",
+    "ua": "Збережені сторінки"
+  },
+  "App_PluginBanner_ScreenMemoExplain": {
+    "en": "Saved pages overview.",
+    "ua": "Огляд збережених сторінок."
+  },
+  "App_ScreenMemo_SaveInitialize": {
+    "en": "Deleting save data...\nDo not turn off the power.",
+    "ua": "Видалення збережених\nданих...\nНе вимикайте консоль."
+  },
+  "App_ScreenMemo_SaveInitializeDone": {
+    "en": "Deleted save data.",
+    "ua": "Збережені дані видалено."
+  },
+  "App_ScreenMemo_SaveConfirm": {
+    "en": "Save this page?",
+    "ua": "Зберегти цю сторінку?"
+  },
+  "App_ScreenMemo_SaveCompleted": {
+    "en": "Page saved.\n\nView saved pages under\nthe Saved Pages option\nin the Main Menu.",
+    "ua": "Сторінку збережено.\n\nЗбережені сторінки шукайте\nв пункті «Збережені\nсторінки»\nголовного меню."
+  },
+  "App_ScreenMemo_SaveProceed": {
+    "en": "Saving page...\nDo not turn off the power.",
+    "ua": "Збереження сторінки...\nНе вимикайте консоль."
+  },
+  "App_ScreenMemo_NoEnoughSpace": {
+    "en": "There isn't enough free\nspace to save this page.\n\nSpace required: %d",
+    "ua": "Бракує вільного місця,\nщоб зберегти цю сторінку.\n\nПотрібно місця: %d"
+  },
+  "App_ScreenMemo_Organize": {
+    "en": "Manage your data\nin Saved Pages\non the Main Menu.",
+    "ua": "Керуйте своїми даними\nу «Збережених сторінках»\nголовного меню."
+  },
+  "App_ScreenMemo_NANDError": {
+    "en": "",
+    "ua": ""
+  },
+  "App_ScreenMemo_SeeThisPage": {
+    "en": "View page",
+    "ua": "Глянути сторінку"
+  },
+  "App_ScreenMemo_UsedStorage": {
+    "en": "Page size",
+    "ua": "Розмір"
+  },
+  "App_ScreenMemo_SavedDate": {
+    "en": "Date Saved",
+    "ua": "Збережено"
+  },
+  "App_ScreenMemo_NoData": {
+    "en": "There are no saved pages.\n\n{t:0.2:5c00}Save your favourite pages and\nthey will be displayed here.{t:0.2:6400}",
+    "ua": "Збережених сторінок немає.\n\n{t:0.2:5c00}Збережіть улюблені сторінки —\nі вони з'являться тут.{t:0.2:6400}"
+  },
+  "App_ScreenMemo_SavedDateForViewMode": {
+    "en": "Save date",
+    "ua": "Збережено"
+  },
+  "App_ScreenMemo_Delete": {
+    "en": "Delete this page?\n\nPage size: %d",
+    "ua": "Видалити цю сторінку?\n\nРозмір сторінки: %d"
+  },
+  "App_ScreenMemo_DeleteProceed": {
+    "en": "Deleting page...\nDo not turn off the power.",
+    "ua": "Видалення сторінки...\nНе вимикайте консоль."
+  },
+  "App_ScreenMemo_DeleteCompleted": {
+    "en": "Page deleted.",
+    "ua": "Сторінку видалено."
+  },
+  "App_Parental_UGC": {
+    "en": "{t:0.2:5600}Transmission of images, audio,\nvideo, long text data and other\ndata that may contain private\ninformation is restricted by Parental\nControls. Temporarily remove this\nrestriction? (PIN entry required.){t:0.2:6400}",
+    "ua": "{t:0.2:5600}Надсилання зображень, звуку,\nвідео, довгих текстів та інших\nданих, які можуть містити особисту\nінформацію, обмежено батьківським\nконтролем. Зняти обмеження\nтимчасово? (Потрібен PIN.){t:0.2:6400}"
+  },
+  "App_Parental_Prohibited": {
+    "en": "The following page cannot be\ndisplayed due to Parental\nControls restrictions.",
+    "ua": "Цю сторінку не можна\nпоказати через обмеження\nбатьківського контролю."
+  },
+  "App_Parental_MovieDistribution": {
+    "en": "The viewing of distributed\nvideos has been restricted\nby Parental Controls.\nTemporarily remove\nthis restriction?\n(PIN entry required.)",
+    "ua": "Перегляд відео обмежено\nбатьківським контролем.\nЗняти обмеження\nтимчасово?\n(Потрібен PIN.)"
+  },
+  "App_Parental_PageForHighAge": {
+    "en": "The following page\ncontains content not\nsuitable for minors.\nWould you like to proceed?",
+    "ua": "Ця сторінка містить\nвміст, не призначений\nдля дітей.\nПродовжити?"
+  },
+  "App_Parental_LeaveNintendo": {
+    "en": "You will now access the\nselected provider's service.\n\n{t:0.2:5800}Nintendo does not operate\nthis service and is not\nresponsible for its content.{t:0.2:6400}",
+    "ua": "Зараз ви перейдете до сервісу\nвибраного постачальника.\n\n{t:0.2:5800}Nintendo не керує цим\nсервісом і не відповідає\nза його вміст.{t:0.2:6400}"
+  },
+  "App_Parental_GotoNintendo": {
+    "en": "You will now be taken\nto the Nintendo website.",
+    "ua": "Зараз ви перейдете\nна сайт Nintendo."
+  },
+  "App_Parental_COPPA_Unlock": {
+    "en": "(LOCALIZATION NOT NECESSARY FOR EU_ENGLISH)",
+    "ua": ""
+  },
+  "App_Parental_COPPA": {
+    "en": "(LOCALIZATION NOT NECESSARY FOR EU_ENGLISH)",
+    "ua": ""
+  },
+  "App_Paint_Pen": {
+    "en": "Pen",
+    "ua": "Перо"
+  },
+  "App_Paint_Eraser": {
+    "en": "Eraser",
+    "ua": "Гумка"
+  },
+  "App_Paint_Stamp": {
+    "en": "Stamp",
+    "ua": "Штамп"
+  },
+  "App_Paint_CompleteButton": {
+    "en": "Finish",
+    "ua": "Готово"
+  },
+  "App_Paint_Second": {
+    "en": "Sec",
+    "ua": "с"
+  },
+  "App_Paint_ShowTimeLimit": {
+    "en": "The time limit is\n%d seconds.",
+    "ua": "Часу дається\n%d секунд."
+  },
+  "App_Paint_HitTimeLimit": {
+    "en": "Time's up!",
+    "ua": "Час вийшов!"
+  },
+  "App_Paint_Exit": {
+    "en": "Quit drawing?\n\n(Your drawing will\nnot be saved.)",
+    "ua": "Вийти з малювання?\n\n(Малюнок не\nбуде збережено.)"
+  },
+  "App_Paint_ConfirmSaveSend": {
+    "en": "",
+    "ua": ""
+  },
+  "App_Paint_ConfirmSaveSendWithTimer": {
+    "en": "",
+    "ua": ""
+  },
+  "App_Paint_ConfirmSend": {
+    "en": "Would you like to send your\nfinished image?",
+    "ua": "Надіслати готове\nзображення?"
+  },
+  "App_Paint_ConfirmSendWithTimer": {
+    "en": "The finished image\nwill now be sent.",
+    "ua": "Готове зображення\nбуде надіслано."
+  },
+  "App_Paint_Sending": {
+    "en": "Sending image...",
+    "ua": "Надсилання зображення..."
+  },
+  "App_Paint_SendFailed": {
+    "en": "Could not send.\n\nWould you like to continue\nto the next page anyway?",
+    "ua": "Не вдалося надіслати.\n\nВсе одно перейти\nдо наступної сторінки?"
+  },
+  "App_Paint_Completed": {
+    "en": "Complete.",
+    "ua": "Готово."
+  },
+  "App_Paint_ConfirmClear": {
+    "en": "Would you like to erase the\nimage you are editing?",
+    "ua": "Стерти зображення,\nяке ви редагуєте?"
+  },
+  "App_Photo_SendConfirm": {
+    "en": "",
+    "ua": ""
+  },
+  "App_Photo_Sending": {
+    "en": "",
+    "ua": ""
+  },
+  "App_Upload_SendConfirm": {
+    "en": "Are you ready to send?",
+    "ua": "Готові надіслати?"
+  },
+  "App_Upload_Uploading": {
+    "en": "Sending...",
+    "ua": "Надсилання..."
+  },
+  "App_Upload_Failed": {
+    "en": "Could not send.",
+    "ua": "Не вдалося надіслати."
+  },
+  "App_PluginBanner_HelpModeTitle": {
+    "en": "Usage Instructions",
+    "ua": "Як користуватися"
+  },
+  "App_PluginBanner_HelpModeExplain": {
+    "en": "Touch     to see usage instructions.",
+    "ua": "Торкніться     , щоб побачити\nпідказки."
+  },
+  "App_HELP_MediaPlayer_PlayButtonTitle": {
+    "en": "Play / Pause",
+    "ua": "Грати / пауза"
+  },
+  "App_HELP_MediaPlayer_ProgressBarTitle": {
+    "en": "Playback position",
+    "ua": "Місце відтворення"
+  },
+  "App_HELP_MediaPlayer_DisplayPanelTitle": {
+    "en": "Information",
+    "ua": "Відомості"
+  },
+  "App_HELP_MediaPlayer_PlayButton": {
+    "en": "Touch this button to play and pause\nthe current media.",
+    "ua": "Торкніться цієї кнопки, щоб\nзапустити\nчи спинити відтворення."
+  },
+  "App_HELP_MediaPlayer_ProgressBar": {
+    "en": "This shows playback progress.\nMove the slider to adjust\nthe playback position.",
+    "ua": "Показує перебіг відтворення.\nПересуньте повзунок, щоб\nзмінити місце відтворення."
+  },
+  "App_HELP_MediaPlayer_DisplayPanel": {
+    "en": "This window displays information\nabout the media currently playing,\nsuch as its title.",
+    "ua": "Це вікно показує відомості\nпро те, що зараз грає,\nзокрема назву."
+  },
+  "App_HELP_Paint_CanvasTitle": {
+    "en": "Canvas",
+    "ua": "Полотно"
+  },
+  "App_HELP_Paint_SubToolTitle": {
+    "en": "Colours and Stamps",
+    "ua": "Кольори і штампи"
+  },
+  "App_HELP_Paint_PenTitle": {
+    "en": "Pen",
+    "ua": "Перо"
+  },
+  "App_HELP_Paint_EraserTitle": {
+    "en": "Eraser",
+    "ua": "Гумка"
+  },
+  "App_HELP_Paint_StampTitle": {
+    "en": "Stamp",
+    "ua": "Штамп"
+  },
+  "App_HELP_Paint_CompleteTitle": {
+    "en": "Finish",
+    "ua": "Готово"
+  },
+  "App_HELP_Paint_Canvas": {
+    "en": "Touch here to write and draw.",
+    "ua": "Торкайтеся тут, щоб писати й\nмалювати."
+  },
+  "App_HELP_Paint_SubTool": {
+    "en": "Select pen colours and types,\nand stamp designs.",
+    "ua": "Вибирайте кольори й типи пер,\nа також візерунки штампів."
+  },
+  "App_HELP_Paint_Pen": {
+    "en": "Use one- or two-colour pens.",
+    "ua": "Пера бувають одно- і двоколірні."
+  },
+  "App_HELP_Paint_Eraser": {
+    "en": "Use the eraser. Touch the icon to\nthe left of the canvas to erase\neverything at once.",
+    "ua": "Гумка. Торкніться значка ліворуч\nвід полотна, щоб стерти\nвсе одразу."
+  },
+  "App_HELP_Paint_Stamp": {
+    "en": "Use stamps. Choose from eight\ndesigns to stamp onto the canvas.",
+    "ua": "Штампи. Вибирайте з восьми\nвізерунків і ставте на полотно."
+  },
+  "App_HELP_Paint_Complete": {
+    "en": "Touch this button when you've\nfinished drawing.",
+    "ua": "Торкніться цієї кнопки, коли\nзакінчите малювати."
+  },
+  "App_HELP_ScreenMemo_SaveSizeTitle": {
+    "en": "Page Size",
+    "ua": "Розмір сторінки"
+  },
+  "App_HELP_ScreenMemo_SelectPageTitle": {
+    "en": "Saved Pages Overview",
+    "ua": "Огляд сторінок"
+  },
+  "App_HELP_ScreenMemo_SeeThisPageTitle": {
+    "en": "View Page",
+    "ua": "Глянути сторінку"
+  },
+  "App_HELP_ScreenMemo_EraseTitle": {
+    "en": "Erase Page",
+    "ua": "Стерти сторінку"
+  },
+  "App_HELP_ScreenMemo_SaveSize": {
+    "en": "Displays this page's size and\nthe combined size of all pages.",
+    "ua": "Показує розмір цієї сторінки\nі сумарний розмір усіх."
+  },
+  "App_HELP_ScreenMemo_SelectPage": {
+    "en": "View a list of saved pages.\nSelect a page to view it.",
+    "ua": "Список збережених сторінок.\nВиберіть сторінку, щоб її\nглянути."
+  },
+  "App_HELP_ScreenMemo_SeeThisPage": {
+    "en": "Touch this button to view\na selected page.",
+    "ua": "Торкніться цієї кнопки, щоб\nглянути вибрану сторінку."
+  },
+  "App_HELP_ScreenMemo_Erase": {
+    "en": "Delete a selected page.",
+    "ua": "Видалити вибрану сторінку."
+  },
+  "App_Help_TopScrollHelp": {
+    "en": "Touch the arrows at the top\nright to scroll the upper\nscreen up and down.",
+    "ua": "Торкайтеся стрілок угорі\nправоруч, щоб гортати\nверхній екран."
+  },
+  "App_Transition_Reading1": {
+    "en": "Please wait...",
+    "ua": "Зачекайте..."
+  },
+  "App_Transition_Reading2": {
+    "en": "Connecting...",
+    "ua": "З'єднання..."
+  },
+  "App_Transition_ReadCancel": {
+    "en": "Stop loading page",
+    "ua": "Спинити завантаження сторінки"
+  },
+  "App_Dialog_CustomizeSetFontSize_Large": {
+    "en": "",
+    "ua": ""
+  },
+  "App_Dialog_CustomizeSetFontSize_Small": {
+    "en": "",
+    "ua": ""
+  },
+  "App_Update_HTML_description": {
+    "en": "In order to continue, you will\nneed to update your system.\n\nUpdate now?",
+    "ua": "Щоб продовжити, треба\nоновити систему.\n\nОновити зараз?"
+  },
+  "App_Update_DifferentCountry": {
+    "en": "Cannot continue because\nthe system's region setting\nhas changed since the\nprevious session. Please\naccess Nintendo eShop.",
+    "ua": "Не можна продовжити, бо\nрегіон консолі змінився\nз минулого сеансу.\nЗверніться до\nNintendo eShop."
+  },
+  "App_Boss_ConfirmAccept": {
+    "en": "Receive notifications and data\nvia SpotPass (may include\nadvertising and promotions)?",
+    "ua": "Отримувати повідомлення й дані\nчерез SpotPass (можлива\nреклама й акції)?"
+  },
+  "App_ERR_BOSSTaskFull": {
+    "en": "The maximum amount of data\nthat can be downloaded using\nSpotPass has been reached.\nUse Data Management in the\nSystem Settings to delete\nextra data for another title.",
+    "ua": "Досягнуто межі обсягу даних,\nякі можна завантажувати через\nSpotPass. Скористайтеся\n«Керуванням даними» в налашт.\nсистеми, щоб видалити додаткові\nдані іншої програми."
+  },
+  "App_ERR_BOSSTaskAlreadyRegistered": {
+    "en": "SpotPass is already\nactivated for this software.\nUse Data Management\nin the System Settings\nto delete this software's\nextra data, then try again.",
+    "ua": "SpotPass для цієї програми\nвже ввімкнено.\nСкористайтеся «Керуванням\nданими» в налаштуваннях\nсистеми, щоб видалити її\nдодаткові дані, і спробуйте ще раз."
+  },
+  "App_Boss_Receive": {
+    "en": "",
+    "ua": ""
+  },
+  "App_Boss_DoNotReceive": {
+    "en": "",
+    "ua": ""
+  },
+  "App_Boss_Description": {
+    "en": "You can receive notifications\nand data from this software\n(which may include advertising\nand promotions) through\nSpotPass.",
+    "ua": "Ви можете отримувати\nповідомлення й дані від цієї\nпрограми (можлива реклама\nй акції) через SpotPass."
+  },
+  "App_Boss_DescriptionInNotificationPage": {
+    "en": "",
+    "ua": ""
+  },
+  "App_Boss_Setting": {
+    "en": "Receive notifications and data\nvia SpotPass (may include\nadvertising and promotions)?",
+    "ua": "Отримувати повідомлення й дані\nчерез SpotPass (можлива\nреклама й акції)?"
+  },
+  "App_Boss_SetOn": {
+    "en": "You have chosen to receive\nnotifications.\n\nYou can view them\nunder Notifications\nin the Main Menu.",
+    "ua": "Ви обрали отримувати\nповідомлення.\n\nЇх можна дивитися\nв «Повідомленнях»\nголовного меню."
+  },
+  "App_Boss_SetOff": {
+    "en": "You have chosen not to\nreceive notifications.",
+    "ua": "Ви обрали не отримувати\nповідомлення."
+  },
+  "App_Boot_HereWeGo": {
+    "en": "Set-up complete.\n\nYou're now ready to enjoy\nNintendo Zone!",
+    "ua": "Налаштування завершено.\n\nТепер можна користуватися\nNintendo Zone!"
+  },
+  "App_Boss_ProceedBossData": {
+    "en": "Checking the data\ndownloaded via SpotPass...\nDo not remove the SD Card\nor turn off the power.",
+    "ua": "Перевірка даних, отриманих\nчерез SpotPass...\nНе виймайте карту SD\nі не вимикайте консоль."
+  },
+  "App_Boss_ConfirmJumpToNewNotification": {
+    "en": "Would you like to view the\nlatest notifications received\nvia SpotPass now?",
+    "ua": "Глянути найновіші\nповідомлення, отримані\nчерез SpotPass, зараз?"
+  },
+  "App_UpdatePage_SystemNotice": {
+    "en": "In order to proceed, you will\nneed to update your system.",
+    "ua": "Щоб продовжити, треба\nоновити систему."
+  },
+  "App_UpdatePage_ButtonText": {
+    "en": "Update System",
+    "ua": "Оновити систему"
+  },
+  "App_ERR_Comm_WirelessSwitchOff": {
+    "en": "This function requires wireless\ncommunication to be enabled.\n\nPlease push the wireless\nswitch to enable wireless\ncommunication.",
+    "ua": "Цій функції потрібен\nувімкнений\nбездротовий зв'язок.\n\nУвімкніть його перемикачем\nбездротового зв'язку."
+  },
+  "App_ERR_Comm_WirelessDisconnect": {
+    "en": "Unable to communicate with access\npoint.\n\nThis software should be used in an\narea with Nintendo Zone service.\n\nIf you are unable to connect to\nNintendo Zone, there may be a\nproblem with the wireless environment.\nPlease move closer to the access\npoint and try again.",
+    "ua": "Не вдається зв'язатися з точкою\nдоступу.\n\nЦією програмою слід користуватися\nтам, де працює Nintendo Zone.\n\nЯкщо з'єднатися з Nintendo Zone\nне вдається, можливо, проблема\nв бездротовому середовищі.\nПідійдіть ближче до точки доступу\nй спробуйте ще раз."
+  },
+  "App_ERR_Comm_WirelessNG_13xx": {
+    "en": "Failed to connect to the access point.\n\nHold down the POWER Button to turn\noff the power, then turn it on and try\nagain.\n\nIf the problem persists, please contact\nyour local customer support centre.\nFor contact details, check the\nOperations Manual or visit\nsupport.nintendo.com.",
+    "ua": "Не вдалося з'єднатися з точкою\nдоступу.\n\nНатисніть і утримуйте кнопку POWER,\nщоб вимкнути консоль, тоді увімкніть\nїї й спробуйте ще раз.\n\nЯкщо проблема не зникає, зверніться\nдо місцевої служби підтримки.\nКонтакти шукайте в посібнику\nз користування або на\nsupport.nintendo.com."
+  },
+  "App_ERR_Comm_Wired": {
+    "en": "A communication error has occurred.\n\nThere may be a problem with the\ninternet connection or the server.\n\nThere may be a problem with the\nwireless environment. Please move\ncloser to the access point and try\nagain.",
+    "ua": "Сталася помилка зв'язку.\n\nМожливо, проблема з з'єднанням\nз Інтернетом або із сервером.\n\nМожливо, проблема в бездротовому\nсередовищі. Підійдіть ближче\nдо точки доступу й спробуйте\nще раз."
+  },
+  "App_ERR_HTTP_FileNotFound": {
+    "en": "The specified file is not on the server.\nThis may have been caused by a\nproblem with the server. Please try\nagain later.\n\nIf the problem persists, please contact\nyour local customer support centre.\nFor contact details, check the\nOperations Manual or visit\nsupport.nintendo.com.",
+    "ua": "Указаного файлу на сервері немає.\nМожливо, це через проблему\nна сервері. Спробуйте пізніше.\n\nЯкщо проблема не зникає,\nзверніться\nдо місцевої служби підтримки.\nКонтакти шукайте в посібнику\nз користування або на\nsupport.nintendo.com."
+  },
+  "App_ERR_HTTP_StatusError": {
+    "en": "A server error has occurred.\nPlease wait and try again later.\n\nIf the problem persists, please contact\nyour local customer support centre.\nFor contact details, check the\nOperations Manual or visit\nsupport.nintendo.com.",
+    "ua": "Сталася помилка сервера.\nЗачекайте й спробуйте пізніше.\n\nЯкщо проблема не зникає,\nзверніться\nдо місцевої служби підтримки.\nКонтакти шукайте в посібнику\nз користування або на\nsupport.nintendo.com."
+  },
+  "App_ERR_HTTP_UnsupportedFile": {
+    "en": "Received a file from the server that is\neither corrupted or unsupported.\n\nThere may be a problem with the\ninternet connection or the server.\n\nThere may be a problem with the\nwireless environment. Please move\ncloser to the access point and try\nagain.",
+    "ua": "Із сервера надійшов файл, який або\nпошкоджено, або не підтримується.\n\nМожливо, проблема з з'єднанням\nз Інтернетом або із сервером.\n\nМожливо, проблема в бездротовому\nсередовищі. Підійдіть ближче\nдо точки доступу й спробуйте\nще раз."
+  },
+  "App_ERR_ZoneServer_DSMACDenied": {
+    "en": "The service cannot be used on this\nNintendo 3DS system.\n\nFor help, please contact your local\ncustomer support centre. For contact\ndetails, check the Operations Manual\nor visit support.nintendo.com.",
+    "ua": "Цим сервісом не можна\nкористуватися\nна цій консолі Nintendo 3DS.\n\nПо допомогу зверніться до місцевої\nслужби підтримки. Контакти шукайте\nв посібнику з користування\nабо на support.nintendo.com."
+  },
+  "App_ERR_ZoneServer_APMACDenied": {
+    "en": "The service cannot be used at this\nlocation.\n\nFor help, please contact your local\ncustomer support centre. For contact\ndetails, check the Operations Manual\nor visit support.nintendo.com.",
+    "ua": "Цим сервісом не можна\nкористуватися\nу цьому місці.\n\nПо допомогу зверніться до місцевої\nслужби підтримки. Контакти шукайте\nв посібнику з користування\nабо на support.nintendo.com."
+  },
+  "App_ERR_ZoneServer_APNUMDenied": {
+    "en": "The service cannot be used at this\nlocation.\n\nFor help, please contact your local\ncustomer support centre. For contact\ndetails, check the Operations Manual\nor visit support.nintendo.com.",
+    "ua": "Цим сервісом не можна\nкористуватися\nу цьому місці.\n\nПо допомогу зверніться до місцевої\nслужби підтримки. Контакти шукайте\nв посібнику з користування\nабо на support.nintendo.com."
+  },
+  "App_ERR_ZoneServer_NoHtmlTemplate": {
+    "en": "A communication error has occurred.\nCould not find the page.\n\nFor help, please contact your local\ncustomer support centre. For contact\ndetails, check the Operations Manual\nor visit support.nintendo.com.",
+    "ua": "Сталася помилка зв'язку.\nСторінку не знайдено.\n\nПо допомогу зверніться до місцевої\nслужби підтримки. Контакти шукайте\nв посібнику з користування\nабо на support.nintendo.com."
+  },
+  "App_ERR_ZoneServer_NoGameList": {
+    "en": "A communication error has occurred.\nCould not find the page.\n\nFor help, please contact your local\ncustomer support centre. For contact\ndetails, check the Operations Manual\nor visit support.nintendo.com.",
+    "ua": "Сталася помилка зв'язку.\nСторінку не знайдено.\n\nПо допомогу зверніться до місцевої\nслужби підтримки. Контакти шукайте\nв посібнику з користування\nабо на support.nintendo.com."
+  },
+  "App_ERR_ZoneServer_NoGameInfo": {
+    "en": "A communication error has occurred.\nCould not find the page.\n\nFor help, please contact your local\ncustomer support centre. For contact\ndetails, check the Operations Manual\nor visit support.nintendo.com.",
+    "ua": "Сталася помилка зв'язку.\nСторінку не знайдено.\n\nПо допомогу зверніться до місцевої\nслужби підтримки. Контакти шукайте\nв посібнику з користування\nабо на support.nintendo.com."
+  },
+  "App_ERR_ZoneServer_NoAPInfo": {
+    "en": "A communication error has occurred.\nCould not find the page.\n\nFor help, please contact your local\ncustomer support centre. For contact\ndetails, check the Operations Manual\nor visit support.nintendo.com.",
+    "ua": "Сталася помилка зв'язку.\nСторінку не знайдено.\n\nПо допомогу зверніться до місцевої\nслужби підтримки. Контакти шукайте\nв посібнику з користування\nабо на support.nintendo.com."
+  },
+  "App_ERR_ZoneServer_NG_ServiceSuspended": {
+    "en": "Online services are down.\nCannot connect.\n\nFor help, please contact your local\ncustomer support centre. For contact\ndetails, check the Operations Manual\nor visit support.nintendo.com.",
+    "ua": "Мережеві сервіси не працюють.\nЗ'єднатися не можна.\n\nПо допомогу зверніться до місцевої\nслужби підтримки. Контакти шукайте\nв посібнику з користування\nабо на support.nintendo.com."
+  },
+  "App_ERR_ZoneServer_NG_ServiceMaintenance": {
+    "en": "",
+    "ua": ""
+  },
+  "App_ERR_ZoneServer_ServiceEnded": {
+    "en": "",
+    "ua": ""
+  },
+  "App_ERR_ZoneServer_UnknownErr": {
+    "en": "An error has occurred on the server.\n\nFor help, please contact your local\ncustomer support centre. For contact\ndetails, check the Operations Manual\nor visit support.nintendo.com.",
+    "ua": "На сервері сталася помилка.\n\nПо допомогу зверніться до місцевої\nслужби підтримки. Контакти шукайте\nв посібнику з користування\nабо на support.nintendo.com."
+  },
+  "App_ERR_Browser_PageSizeExceed": {
+    "en": "The page is too large to be displayed.\n\nThere is a problem with the server.\nPlease wait and try again.",
+    "ua": "Сторінка завелика, щоб її показати.\n\nПроблема на сервері.\nЗачекайте й спробуйте ще раз."
+  },
+  "App_ERR_Browser_TooManyRedirects": {
+    "en": "Failed to load the page.\n\nThe redirected page could not be\nloaded as too many page redirects\noccurred.\n\nThere is a problem with the server.\nPlease wait and try again.",
+    "ua": "Не вдалося завантажити сторінку.\n\nСторінку не завантажено, бо\nсталося забагато переадресацій.\n\nПроблема на сервері.\nЗачекайте й спробуйте ще раз."
+  },
+  "App_ERR_ZoneSelect_FailWDBSearchInit": {
+    "en": "Search for Nintendo Zone failed.\n\nHold down the POWER Button to turn\noff the power, then turn it on and try\nagain.\n\nIf the problem persists, please contact\nyour local customer support centre.\nFor contact details, check the\nOperations Manual or visit\nsupport.nintendo.com.",
+    "ua": "Пошук Nintendo Zone не вдався.\n\nНатисніть і утримуйте кнопку POWER,\nщоб вимкнути консоль, тоді увімкніть\nїї й спробуйте ще раз.\n\nЯкщо проблема не зникає, зверніться\nдо місцевої служби підтримки.\nКонтакти шукайте в посібнику\nз користування або на\nsupport.nintendo.com."
+  },
+  "App_ERR_Sys_NANDError": {
+    "en": "The save data is corrupted and\ncould not be loaded correctly.\n\nTo resolve this error, new save data\nwill be created. We apologise for any\ninconvenience that this may cause.",
+    "ua": "Збережені дані пошкоджено,\nїх не вдалося прочитати.\n\nЩоб це виправити, буде створено\nнові збережені дані. Перепрошуємо\nза можливі незручності."
+  },
+  "App_ERR_Sys_SavedPageReadError": {
+    "en": "One or more saved pages is corrupted\nand could not be loaded correctly.\n\nTo resolve this error, corrupted pages\nwill be deleted. We apologise for any\ninconvenience that this may cause.",
+    "ua": "Одну чи кілька збережених сторінок\nпошкоджено, їх не вдалося\nпрочитати.\n\nЩоб це виправити, пошкоджені\nсторінки\nбуде видалено. Перепрошуємо\nза можливі незручності."
+  },
+  "App_ERR_Sys_SavedPageWriteError": {
+    "en": "Unable to save the page.\n\nTo resolve this error, the page will be\ndeleted. We apologise for any\ninconvenience that this may cause.",
+    "ua": "Не вдалося зберегти сторінку.\n\nЩоб це виправити, сторінку буде\nвидалено. Перепрошуємо\nза можливі незручності."
+  },
+  "App_ERR_Sys_SavedPageEraseError": {
+    "en": "The saved page is corrupted.\n\nTo resolve this error, the page will\nbe deleted. We apologise for any\ninconvenience that this may cause.",
+    "ua": "Збережену сторінку пошкоджено.\n\nЩоб це виправити, сторінку буде\nвидалено. Перепрошуємо\nза можливі незручності."
+  },
+  "App_ERR_Sys_SavePageFailed": {
+    "en": "Failed to save the page.\n\nHold down the POWER Button to turn\noff the power, then turn it on and try\nagain.\n\nIf the problem persists, please contact\nyour local customer support centre.\nFor contact details, check the\nOperations Manual or visit\nsupport.nintendo.com.",
+    "ua": "Не вдалося зберегти сторінку.\n\nНатисніть і утримуйте кнопку POWER,\nщоб вимкнути консоль, тоді увімкніть\nїї й спробуйте ще раз.\n\nЯкщо проблема не зникає,\nзверніться\nдо місцевої служби підтримки.\nКонтакти шукайте в посібнику\nз користування або на\nsupport.nintendo.com."
+  },
+  "App_ERR_Sys_InitializationFailed": {
+    "en": "Failed to reset the hardware.\n\nHold down the POWER Button to turn\noff the power, then turn it on and try\nagain.\n\nIf the problem persists, please contact\nyour local customer support centre.\nFor contact details, check the\nOperations Manual or visit\nsupport.nintendo.com.",
+    "ua": "Не вдалося скинути обладнання.\n\nНатисніть і утримуйте кнопку POWER,\nщоб вимкнути консоль, тоді увімкніть\nїї й спробуйте ще раз.\n\nЯкщо проблема не зникає,\nзверніться\nдо місцевої служби підтримки.\nКонтакти шукайте в посібнику\nз користування або на\nsupport.nintendo.com."
+  },
+  "App_ERR_Sys_MemoryShortage": {
+    "en": "There is not enough memory.\n\nHold down the POWER Button to turn\noff the power, then turn it on and try\nagain.\n\nIf the problem persists, please contact\nyour local customer support centre.\nFor contact details, check the\nOperations Manual or visit\nsupport.nintendo.com.",
+    "ua": "Бракує пам'яті.\n\nНатисніть і утримуйте кнопку POWER,\nщоб вимкнути консоль, тоді увімкніть\nїї й спробуйте ще раз.\n\nЯкщо проблема не зникає, зверніться\nдо місцевої служби підтримки.\nКонтакти шукайте в посібнику\nз користування або на\nsupport.nintendo.com."
+  },
+  "App_ERR_BOSSDataCorrupt": {
+    "en": "The data is corrupted and cannot be\nread.\n\nThe data causing the problem will now\nbe deleted. We apologise for any\ninconvenience caused.",
+    "ua": "Дані пошкоджено, прочитати\nїх неможливо.\n\nДані, що спричинили проблему, зараз\nбуде видалено. Перепрошуємо\nза можливі незручності."
+  },
+  "App_ERR_BOSSDataUnknownErr": {
+    "en": "Unable to read data.\n\nThe data causing the problem will now\nbe deleted. We apologise for any\ninconvenience caused.",
+    "ua": "Не вдається прочитати дані.\n\nДані, що спричинили проблему, зараз\nбуде видалено. Перепрошуємо\nза можливі незручності."
+  },
+  "App_ERR_BOSSSetFailed": {
+    "en": "SpotPass configuration failed.\n\nHold down the POWER Button to turn\noff the power, then turn it on and try\nagain.\n\nIf the problem persists, please contact\nyour local customer support centre.\nFor contact details, check the\nOperations Manual or visit\nsupport.nintendo.com.",
+    "ua": "Не вдалося налаштувати SpotPass.\n\nНатисніть і утримуйте кнопку POWER,\nщоб вимкнути консоль, тоді увімкніть\nїї й спробуйте ще раз.\n\nЯкщо проблема не зникає, зверніться\nдо місцевої служби підтримки.\nКонтакти шукайте в посібнику\nз користування або на\nsupport.nintendo.com."
+  },
+  "App_ERR_Trial_CannotDownload": {
+    "en": "Could not start the download.\n\nHold down the POWER Button to turn\noff the power, then turn it on and try\nagain.\n\nIf the problem persists, please contact\nyour local customer support centre.\nFor contact details, check the\nOperations Manual or visit\nsupport.nintendo.com.",
+    "ua": "Не вдалося почати завантаження.\n\nНатисніть і утримуйте кнопку POWER,\nщоб вимкнути консоль, тоді увімкніть\nїї й спробуйте ще раз.\n\nЯкщо проблема не зникає,\nзверніться\nдо місцевої служби підтримки.\nКонтакти шукайте в посібнику\nз користування або на\nsupport.nintendo.com."
+  },
+  "App_ERR_Trial_DownloadFail": {
+    "en": "Download failed.\n\nHold down the POWER Button to turn\noff the power, then turn it on and try\nagain.\n\nIf the problem persists, please contact\nyour local customer support centre.\nFor contact details, check the\nOperations Manual or visit\nsupport.nintendo.com.",
+    "ua": "Завантаження не вдалося.\n\nНатисніть і утримуйте кнопку POWER,\nщоб вимкнути консоль, тоді увімкніть\nїї й спробуйте ще раз.\n\nЯкщо проблема не зникає,\nзверніться\nдо місцевої служби підтримки.\nКонтакти шукайте в посібнику\nз користування або на\nsupport.nintendo.com."
+  },
+  "App_ERR_SD_HardwareAccess": {
+    "en": "Could not access SD Card.\n\nFeatures which require an SD Card,\nsuch as SpotPass, will be disabled.\n\nHold down the POWER Button to turn\noff the power, remove the SD Card\nand insert a different one.\n\nIf the problem persists, please contact\nyour local customer support centre.\nFor contact details, check the\nOperations Manual or visit\nsupport.nintendo.com.",
+    "ua": "Немає доступу до карти SD.\n\nФункції, яким потрібна карта SD,\nзокрема SpotPass, буде вимкнено.\n\nНатисніть і утримуйте кнопку POWER,\nщоб вимкнути консоль, вийміть\nкарту SD і вставте іншу.\n\nЯкщо проблема не зникає,\nзверніться\nдо місцевої служби підтримки.\nКонтакти шукайте в посібнику\nз користування або на\nsupport.nintendo.com."
+  },
+  "App_ERR_SD_FileNotFound": {
+    "en": "The specified file is not on the\nSD Card.\n\nHold down the POWER Button to turn\noff the power, remove the SD Card,\nthen reinsert it and try again.\n\nIf the problem persists, please contact\nyour local customer support centre.\nFor contact details, check the\nOperations Manual or visit\nsupport.nintendo.com.",
+    "ua": "Указаного файлу на карті SD\nнемає.\n\nНатисніть і утримуйте кнопку POWER,\nщоб вимкнути консоль, вийміть\nкарту SD, вставте її знову\nй спробуйте ще раз.\n\nЯкщо проблема не зникає,\nзверніться\nдо місцевої служби підтримки.\nКонтакти шукайте в посібнику\nз користування або на\nsupport.nintendo.com."
+  },
+  "App_ERR_SD_300DownloadLimit": {
+    "en": "Cannot download any more titles as\nthe maximum number of software titles\nthat can be saved to the SD Card has\nbeen reached.\n\nPlease use Data Management in the\nSystem Settings to delete or move\nsoftware so as to make space on\nthe SD Card.",
+    "ua": "Більше програм завантажити не\nможна:\nдосягнуто межі кількості програм,\nяку можна зберегти на карту SD.\n\nСкористайтеся «Керуванням\nданими»\nв налаштуваннях системи, щоб\nвидалити чи перемістити програми\nй звільнити місце на карті SD."
+  },
+  "App_ERR_Trial_HttpError": {
+    "en": "A communication error has occurred.\nFailed to connect to the access point.\nPlease wait and try again later.\n\nIf the problem persists, please contact\nyour local customer support centre.\nFor contact details, check the\nOperations Manual or visit\nsupport.nintendo.com.",
+    "ua": "Сталася помилка зв'язку.\nНе вдалося з'єднатися з точкою\nдоступу.\nЗачекайте й спробуйте пізніше.\n\nЯкщо проблема не зникає, зверніться\nдо місцевої служби підтримки.\nКонтакти шукайте в посібнику\nз користування або на\nsupport.nintendo.com."
+  },
+  "App_ERR_Trial_OverAgeLimit": {
+    "en": "Downloading failed.\n\nHold down the POWER Button to\nturn off the power, then turn it on\nand try again.\n\nIf the problem persists, please contact\nyour local customer support centre.\nFor contact details, check the\nOperations Manual or visit\nsupport.nintendo.com.",
+    "ua": "Завантаження не вдалося.\n\nНатисніть і утримуйте кнопку POWER,\nщоб вимкнути консоль, тоді\nувімкніть її й спробуйте ще раз.\n\nЯкщо проблема не зникає,\nзверніться\nдо місцевої служби підтримки.\nКонтакти шукайте в посібнику\nз користування або на\nsupport.nintendo.com."
+  },
+  "App_ERR_Trial_NeedAgreeEula": {
+    "en": "Could not start the download.\n\nHold down the POWER Button to turn\noff the power, then turn it on and try\nagain.\n\nIf the problem persists, please contact\nyour local customer support centre.\nFor contact details, check the\nOperations Manual or visit\nsupport.nintendo.com.",
+    "ua": "Не вдалося почати завантаження.\n\nНатисніть і утримуйте кнопку POWER,\nщоб вимкнути консоль, тоді увімкніть\nїї й спробуйте ще раз.\n\nЯкщо проблема не зникає,\nзверніться\nдо місцевої служби підтримки.\nКонтакти шукайте в посібнику\nз користування або на\nsupport.nintendo.com."
+  },
+  "App_ERR_Trial_DownloadMgrError": {
+    "en": "Downloading failed.\n\nHold down the POWER Button to\nturn off the power, then turn it on\nand try again.\n\nIf the problem persists, please contact\nyour local customer support centre. \nFor contact details, check the \nOperations Manual or visit \nsupport.nintendo.com.",
+    "ua": "Завантаження не вдалося.\n\nНатисніть і утримуйте кнопку POWER,\nщоб вимкнути консоль, тоді\nувімкніть її й спробуйте ще раз.\n\nЯкщо проблема не зникає,\nзверніться\nдо місцевої служби підтримки. \nКонтакти шукайте в посібнику \nз користування або на \nsupport.nintendo.com."
+  },
+  "App_ERR_Trial_UnexpectedResult": {
+    "en": "Downloading failed.\n\nHold down the POWER Button to\nturn off the power, then turn it on\nand try again.\n\nIf the problem persists, please contact\nyour local customer support centre. \nFor contact details, check the \nOperations Manual or visit \nsupport.nintendo.com.",
+    "ua": "Завантаження не вдалося.\n\nНатисніть і утримуйте кнопку POWER,\nщоб вимкнути консоль, тоді\nувімкніть її й спробуйте ще раз.\n\nЯкщо проблема не зникає,\nзверніться\nдо місцевої служби підтримки. \nКонтакти шукайте в посібнику \nз користування або на \nsupport.nintendo.com."
+  },
+  "App_ERR_Spider_Jump_InvalidURL": {
+    "en": "The URL is invalid. The page cannot\nbe displayed. Please wait and try\nagain later.\n\nIf the problem persists, please contact\nyour local customer support centre.\nFor contact details, check the\nOperations Manual or visit\nsupport.nintendo.com.",
+    "ua": "Адреса неправильна. Сторінку\nпоказати не можна. Зачекайте\nй спробуйте пізніше.\n\nЯкщо проблема не зникає,\nзверніться\nдо місцевої служби підтримки.\nКонтакти шукайте в посібнику\nз користування або на\nsupport.nintendo.com."
+  },
+  "App_ERR_ZoneSelect_ConnectionFailed": {
+    "en": "Could not connect to Nintendo Zone.\nPlease wait and try again later.\n\nIf the problem persists, please contact\nyour local customer support centre.\nFor contact details, check the\nOperations Manual or visit\nsupport.nintendo.com.",
+    "ua": "Не вдалося з'єднатися з Nintendo\nZone.\nЗачекайте й спробуйте пізніше.\n\nЯкщо проблема не зникає, зверніться\nдо місцевої служби підтримки.\nКонтакти шукайте в посібнику\nз користування або на\nsupport.nintendo.com."
+  },
+  "App_ERR_ZoneSelect_ServiceNotFound": {
+    "en": "Could not find Nintendo Zone.\n\nTo use this software, move\nwithin wireless range of\na Nintendo Zone location.\n\nIf the problem persists, please contact\nyour local customer support centre.\nFor contact details, check the\nOperations Manual or visit\nsupport.nintendo.com.",
+    "ua": "Nintendo Zone не знайдено.\n\nЩоб користуватися програмою,\nперейдіть у зону покриття\nмісця з Nintendo Zone.\n\nЯкщо проблема не зникає,\nзверніться\nдо місцевої служби підтримки.\nКонтакти шукайте в посібнику\nз користування або на\nsupport.nintendo.com."
+  },
+  "App_ERR_Spider_Jump_NoWebBrowser": {
+    "en": "The page cannot be displayed\nbecause the internet browser\nhasn't been installed on this\nsystem.\n\nIf the problem persists, please contact\nyour local customer support centre.\nFor contact details, check the\nOperations Manual or visit\nsupport.nintendo.com.",
+    "ua": "Сторінку не можна показати,\nбо інтернет-браузер не\nвстановлено на цій\nконсолі.\n\nЯкщо проблема не зникає,\nзверніться\nдо місцевої служби підтримки.\nКонтакти шукайте в посібнику\nз користування або на\nsupport.nintendo.com."
+  },
+  "App_ERR_SD_CreateExtDataError": {
+    "en": "Failed to create extra data.\n\nFeatures which require an\nSD Card, such as SpotPass,\nwill be disabled.\n\nHold down the POWER Button to turn\noff the power, remove the SD Card,\nthen reinsert it and try again.\n\nIf the problem persists, please contact\nyour local customer support centre.\nFor contact details, check the\nOperations Manual or visit\nsupport.nintendo.com.",
+    "ua": "Не вдалося створити додаткові дані.\n\nФункції, яким потрібна\nкарта SD, зокрема SpotPass,\nбуде вимкнено.\n\nНатисніть і утримуйте кнопку POWER,\nщоб вимкнути консоль, вийміть карту\nSD,\nвставте її знову й спробуйте ще раз.\n\nЯкщо проблема не зникає, зверніться\nдо місцевої служби підтримки.\nКонтакти шукайте в посібнику\nз користування або на\nsupport.nintendo.com."
+  },
+  "App_ERR_SD_GeneralReadError": {
+    "en": "Could not read SD Card.\n\nFeatures which require an\nSD Card, such as SpotPass,\nwill be disabled.\n\nHold down the POWER Button to turn\noff the power, remove the SD Card,\nthen reinsert it and try again.\n\nIf the problem persists, please contact\nyour local customer support centre.\nFor contact details, check the\nOperations Manual or visit\nsupport.nintendo.com.",
+    "ua": "Не вдалося прочитати карту SD.\n\nФункції, яким потрібна\nкарта SD, зокрема SpotPass,\nбуде вимкнено.\n\nНатисніть і утримуйте кнопку POWER,\nщоб вимкнути консоль, вийміть карту\nSD,\nвставте її знову й спробуйте ще раз.\n\nЯкщо проблема не зникає,\nзверніться\nдо місцевої служби підтримки.\nКонтакти шукайте в посібнику\nз користування або на\nsupport.nintendo.com."
+  },
+  "App_ERR_SD_GeneralReadError_sub": {
+    "en": "Could not read SD Card.\n\nFeatures which require an\nSD Card, such as SpotPass,\nwill be disabled.\n\nPlease go to the Software\nManagement section of the\nSystem Settings and reset the\nsoftware management information.\n\nIf the problem persists, please contact\nyour local customer support centre.\nFor contact details, check the\nOperations Manual or visit\nsupport.nintendo.com.",
+    "ua": "Не вдалося прочитати карту SD.\n\nФункції, яким потрібна\nкарта SD, зокрема SpotPass,\nбуде вимкнено.\n\nВідкрийте «Керування програмами»\nв налаштуваннях системи\nй скиньте дані керування\nпрограмами.\n\nЯкщо проблема не зникає,\nзверніться\nдо місцевої служби підтримки.\nКонтакти шукайте в посібнику\nз користування або на\nsupport.nintendo.com."
+  },
+  "App_ERR_SD_BadFormat": {
+    "en": "The SD Card is incorrectly formatted\nand could not be accessed.\n\nFor help, please contact your local \ncustomer support centre. For contact \ndetails, check the Operations Manual \nor visit support.nintendo.com.",
+    "ua": "Карту SD відформатовано\nнеправильно,\nдоступу до неї немає.\n\nПо допомогу зверніться до місцевої \nслужби підтримки. Контакти шукайте \nв посібнику з користування \nабо на support.nintendo.com."
+  }
+}

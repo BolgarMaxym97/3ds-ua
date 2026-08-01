@@ -1,0 +1,8 @@
+{
+  "_comment": "SMDH inside the title's own romfs - see tools/smdh.py. `ua_long` is optional; without it the short description is reused.",
+  "saveicon_EU.icn": {
+    "en": "Nintendo Zone Viewer",
+    "ua": "Оглядач Nintendo Zone",
+    "ua_long": "Оглядач\nNintendo Zone"
+  }
+}

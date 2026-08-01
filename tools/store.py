@@ -3,7 +3,9 @@
 Three layouts appear in 3DS system titles:
 
   plain        romfs/message*/<LANG>/<file>.msbt          HOME Menu, keyboard, Activity Log
-               (or any folder named by `message_dirs`      Game Notes uses romfs/lang/)
+               (or any folder named by `message_dirs`,     Game Notes uses romfs/lang/,
+                which may be a nested path)                the eShop romfs/message/europe/
+  by-filename  romfs/<dir>/<prefix><LANG>.msbt            Face Raiders
   container    romfs/<file>  -> LZ11 -> darc -> <dir>/<LANG>/<file>.msbt   System Settings
   per-language romfs/message/<LANG>.arc -> LZ11 -> darc -> <file>.msbt     Mii Maker
                romfs/msg/<LANG>.LZ -> LZ11 -> flat archive -> <file>.msbt  Camera, Sound
@@ -35,6 +37,9 @@ MSBT_MAGIC = b"MsgStdBn"
 
 
 def open_store(cfg: dict, romfs: Path) -> Store:
+    lang_files = cfg.get("lang_files")
+    if lang_files is not None:
+        return ByFilenameStore(romfs, lang_files)
     container = cfg.get("container")
     if container is None:
         return PlainStore(romfs, cfg.get("message_dirs"))
@@ -80,6 +85,11 @@ class PlainStore(Store):
             p.name for p in romfs.iterdir() if p.is_dir() and p.name.startswith("message")
         )
 
+    @staticmethod
+    def _key(message_dir: str, file: Path) -> str:
+        """JSON file name for a message file - a nested folder cannot keep its slashes."""
+        return f"{message_dir.replace('/', '_')}__{file.name.split('.')[0]}"
+
     def languages(self) -> list[str]:
         langs: set[str] = set()
         for message_dir in self.message_dirs:
@@ -93,9 +103,11 @@ class PlainStore(Store):
             if not lang_dir.is_dir():
                 continue
             for file in sorted(lang_dir.iterdir()):
+                if not file.is_file():
+                    continue  # Data Transfer nests a second message dir inside its first
                 data = _unpack(file.read_bytes())
                 if data[:8] == MSBT_MAGIC:
-                    out[f"{message_dir}__{file.name.split('.')[0]}"] = data
+                    out[self._key(message_dir, file)] = data
         return out
 
     def outputs(self, lang: str, updates: dict[str, bytes]) -> dict[str, bytes]:
@@ -105,12 +117,54 @@ class PlainStore(Store):
             if not lang_dir.is_dir():
                 continue
             for file in sorted(lang_dir.iterdir()):
-                key = f"{message_dir}__{file.name.split('.')[0]}"
+                if not file.is_file():
+                    continue
+                key = self._key(message_dir, file)
                 if key not in updates:
                     continue
                 raw = file.read_bytes()
                 out[f"{message_dir}/{lang}/{file.name}"] = _repack(raw, updates[key])
         return out
+
+
+class ByFilenameStore(Store):
+    """One MSBT per language in a single folder, the language spelled in the file name.
+
+    Face Raiders keeps hal/msg/StgFace/StgFace<LANG>.msbt - no per-language folders at all,
+    so the language has to be read out of, and written back into, the name itself.
+    """
+
+    def __init__(self, romfs: Path, pattern: str) -> None:
+        self.romfs = romfs
+        self.pattern = pattern  # e.g. "hal/msg/StgFace/StgFace{lang}.msbt"
+        head, _, tail = pattern.partition("{lang}")
+        self.head, self.tail = head, tail
+
+    def _path(self, lang: str) -> Path:
+        return self.romfs / self.pattern.format(lang=lang)
+
+    def languages(self) -> list[str]:
+        directory = self.romfs / Path(self.head).parent
+        prefix = Path(self.head).name
+        return sorted(
+            p.name[len(prefix):-len(self.tail)]
+            for p in directory.iterdir()
+            if p.name.startswith(prefix) and p.name.endswith(self.tail)
+        )
+
+    def _key(self) -> str:
+        return Path(self.head).name.rstrip("_") or "message"
+
+    def read(self, lang: str) -> dict[str, bytes]:
+        data = _unpack(self._path(lang).read_bytes())
+        return {self._key(): data} if data[:8] == MSBT_MAGIC else {}
+
+    def outputs(self, lang: str, updates: dict[str, bytes]) -> dict[str, bytes]:
+        key = self._key()
+        if key not in updates:
+            return {}
+        path = self._path(lang)
+        return {str(path.relative_to(self.romfs)): _repack(path.read_bytes(), updates[key])}
 
 
 class ContainerStore(Store):

@@ -1,0 +1,4654 @@
+{
+  "CommonBtn_01_01": {
+    "en": "Back",
+    "ua": "Назад"
+  },
+  "CommonBtn_01_02": {
+    "en": "OK",
+    "ua": "OK"
+  },
+  "CommonBtn_01_03": {
+    "en": "Cancel",
+    "ua": "Скасувати"
+  },
+  "CommonBtn_01_04": {
+    "en": "OK",
+    "ua": "OK"
+  },
+  "CommonBtn_01_07": {
+    "en": "Cancel",
+    "ua": "Скасувати"
+  },
+  "CommonWin_dlg01_01": {
+    "en": "Back",
+    "ua": "Назад"
+  },
+  "CommonWin_dlg01_02": {
+    "en": "OK",
+    "ua": "OK"
+  },
+  "CommonWin_dlg01_03": {
+    "en": "Please read the information\non the upper screen.",
+    "ua": "Прочитайте текст\nна верхньому екрані."
+  },
+  "CommonWin_dlg02_01": {
+    "en": "Yes",
+    "ua": "Так"
+  },
+  "CommonWin_dlg02_02": {
+    "en": "No",
+    "ua": "Ні"
+  },
+  "CommonWin_dlg02_03": {
+    "en": "Cancel",
+    "ua": "Скасувати"
+  },
+  "CommonWin_dlg02_04": {
+    "en": "Back",
+    "ua": "Назад"
+  },
+  "CommonWin_dlg02_05": {
+    "en": "Please read the information\non the upper screen.",
+    "ua": "Прочитайте текст\nна верхньому екрані."
+  },
+  "CommonWin_dlg02_06": {
+    "en": "Change",
+    "ua": "Змінити"
+  },
+  "CommonWin_dlg02_07": {
+    "en": "OK",
+    "ua": "OK"
+  },
+  "CommonWin_dlg02_08": {
+    "en": "Cancel",
+    "ua": "Скасувати"
+  },
+  "CommonWin_dlg02_09": {
+    "en": "Update",
+    "ua": "Оновити"
+  },
+  "CommonWin_dlg02_10": {
+    "en": "Agree",
+    "ua": "Приймаю"
+  },
+  "CommonWin_dlg03_01": {
+    "en": "Please read the information\non the lower screen.",
+    "ua": "Прочитайте текст\nна нижньому екрані."
+  },
+  "CommonWin_ERRdlg01_01": {
+    "en": "Error Code: ",
+    "ua": "Код помилки: "
+  },
+  "CommonWin_ERRdlg01_03": {
+    "en": "OK",
+    "ua": "OK"
+  },
+  "CommonWin_ERRdlg01_08": {
+    "en": "Main Menu",
+    "ua": "Головне меню"
+  },
+  "CommonWin_ERRdlg01_09": {
+    "en": "System Update",
+    "ua": "Оновлення"
+  },
+  "CommonWin_SAVEdlg01_01": {
+    "en": "Saving...\nPlease wait.",
+    "ua": "Збереження...\nЗачекайте."
+  },
+  "Common_txt01_01": {
+    "en": "Balance: {t:1.1:}",
+    "ua": "Баланс: {t:1.1:}"
+  },
+  "Common_txt02_01": {
+    "en": "Please read the information\non the lower screen.",
+    "ua": "Прочитайте текст\nна нижньому екрані."
+  },
+  "Common_txt03_01": {
+    "en": "SALE",
+    "ua": "ЗНИЖКА"
+  },
+  "Common_txt03_02": {
+    "en": "OFFER",
+    "ua": "АКЦІЯ"
+  },
+  "Common_txt03_03": {
+    "en": "Pre-purchase",
+    "ua": "Передзамов."
+  },
+  "CommonSWKB_btn01_01": {
+    "en": "Back",
+    "ua": "Назад"
+  },
+  "CommonSWKB_btn01_02": {
+    "en": "OK",
+    "ua": "OK"
+  },
+  "Boot_txt01_01": {
+    "en": "Preparing...\nDo not turn off the power\nor remove the SD Card.",
+    "ua": "Підготовка...\nНе вимикайте консоль\nі не виймайте карту SD."
+  },
+  "Boot_txt01_02": {
+    "en": "Ready!",
+    "ua": "Готово!"
+  },
+  "Boot_txt01_04": {
+    "en": "To use Nintendo eShop, you must\naccept the latest version of the\nNintendo 3DS Service User\nAgreement and Privacy Policy.\n\nPress  to return\nto the HOME Menu.",
+    "ua": "Щоб користуватися Nintendo\neShop,\nтреба прийняти найновішу версію\nУгоди користувача сервісів\nNintendo 3DS і Політики\nконфіденційності.\n\nНатисніть , щоб повернутися\nв меню HOME."
+  },
+  "Boot_txt01_05": {
+    "en": "Go to Nintendo Network ID Settings?",
+    "ua": "Відкрити налаштування Nintendo\nNetwork ID?"
+  },
+  "BootAccount_txt01_01": {
+    "en": "The following changes will be made\nwhen you link a Nintendo Network ID.\nPlease read this information carefully.",
+    "ua": "Прив'язавши Nintendo Network ID,\nви отримаєте такі зміни. Прочитайте\nце уважно, будь ласка."
+  },
+  "BootAccount_txt01_02": {
+    "en": "Credit Card Information Management",
+    "ua": "Керування даними платіжних карт"
+  },
+  "BootAccount_txt01_03": {
+    "en": "Credit card information will be deleted\nfrom this system, but information already\nstored on your Nintendo Network ID can\nstill be used. All credit card information\nwill henceforth be managed by your\nNintendo Network ID.",
+    "ua": "Дані платіжних карт буде видалено\nз цієї консолі, але ті, що вже збережені\nна вашому Nintendo Network ID,\nпрацюватимуть далі. Відтепер усіма\nданими карт керуватиме\nваш Nintendo Network ID."
+  },
+  "BootAccount_txt01_04": {
+    "en": "Account Activity Management",
+    "ua": "Керування історією покупок"
+  },
+  "BootAccount_txt01_05": {
+    "en": "Your Nintendo eShop account activity will\nbe linked to your Nintendo Network ID.\nHowever, your account activity from prior\nto linking the ID will only be viewable on\nyour Nintendo 3DS system, and not on\nany other device.\nFurthermore, you will no longer be able\nto delete your account activity from\nNintendo eShop. If you wish to delete\nyour account activity, you will need to\ndelete your ID from the Nintendo\nNetwork ID Settings.",
+    "ua": "Вашу історію покупок Nintendo eShop\nбуде прив'язано до Nintendo Network ID.\nАле історія до прив'язки ID буде видна\nлише на вашій консолі Nintendo 3DS,\nа не на інших пристроях.\nКрім того, ви більше не зможете\nвидалити історію покупок із Nintendo\neShop. Якщо захочете її видалити,\nдоведеться видалити ID\nу налаштуваннях Nintendo\nNetwork ID."
+  },
+  "BootCountryChg_title01_01": {
+    "en": "Change Region Setting",
+    "ua": "Зміна регіону"
+  },
+  "BootCountryChg_txt01_01": {
+    "en": "Please read the information on the\nlower screen. If you still want to\nchange your region, touch Next.",
+    "ua": "Прочитайте текст на нижньому\nекрані. Якщо ви й далі хочете\nзмінити регіон, торкніться «Далі»."
+  },
+  "BootCountryChg_txt01_02": {
+    "en": "The region setting has been changed \nsince Nintendo eShop was last \naccessed on this system.",
+    "ua": "Регіон змінено з того часу, \nколи Nintendo eShop \nвідкривали на цій консолі."
+  },
+  "BootCountryChg_txt01_03": {
+    "en": "Balance",
+    "ua": "Баланс"
+  },
+  "BootCountryChg_txt01_04": {
+    "en": "Language",
+    "ua": "Мова"
+  },
+  "BootCountryChg_txt01_05": {
+    "en": "Watch List",
+    "ua": "Список бажань"
+  },
+  "BootCountryChg_txt01_09": {
+    "en": "Club Nintendo Account",
+    "ua": "Обліковий запис Club Nintendo"
+  },
+  "BootCountryChg_txt01_10": {
+    "en": "Downloading Software",
+    "ua": "Завантаження програм"
+  },
+  "BootCountryChg_txt01_06": {
+    "en": "By changing the region setting, you will\nno longer have access to the funds\nassociated with the previous region.\nTo restore your previous balance,\nswitch back to the previous setting.",
+    "ua": "Змінивши регіон, ви втратите доступ\nдо коштів, пов'язаних із попереднім\nрегіоном. Щоб повернути баланс,\nпереключіться на попередній\nрегіон."
+  },
+  "BootCountryChg_txt01_07": {
+    "en": "Note that the new region may not \nsupport your selected system language.",
+    "ua": "Зверніть увагу: новий регіон може \nне підтримувати вибрану мову\nсистеми."
+  },
+  "BootCountryChg_txt01_08": {
+    "en": "If software titles on your Watch List\nare not sold in the new region, they\nwill be removed from the list.",
+    "ua": "Якщо програми з вашого списку бажань\nне продаються в новому регіоні,\nїх буде вилучено зі списку."
+  },
+  "BootCountryChg_txt01_11": {
+    "en": "Downloads using Sleep Mode Download\nmay be stopped if you change the\nsystem's region settings before the\ndownloads complete. If this happens,\nselect the relevant title(s) from\nSettings / Other ⇒ Redownloadable\nSoftware to restart the download.\n\nIn some cases, it may not be possible to\nrestart the download of the software\ntitles with your updated region settings.\nIn this case, you will be able to restart\nthe download of the titles by changing\nyour region back to its previous setting.",
+    "ua": "Завантаження в режимі сну може\nспинитися, якщо змінити регіон\nконсолі до його завершення. У такому\nразі виберіть потрібні програми\nв «Параметрах / Інше» ⇒ «Програми\nдля повторного завантаження»,\nщоб продовжити завантаження.\n\nІноді завантажити програму\nз новим регіоном не вийде.\nТоді її можна буде завантажити,\nповернувши попередній регіон."
+  },
+  "BootCountryChg_dlg01_02": {
+    "en": "",
+    "ua": ""
+  },
+  "BootCountryChg_dlg01_03": {
+    "en": "Is the new region setting OK?",
+    "ua": "Новий регіон підходить?"
+  },
+  "BootCountryChg_dlg01_06": {
+    "en": "",
+    "ua": ""
+  },
+  "BootCountryChg_dlg01_07": {
+    "en": "",
+    "ua": ""
+  },
+  "BootCountryChg_title02_01": {
+    "en": "IMPORTANT: New Region Setting",
+    "ua": "ВАЖЛИВО: новий регіон"
+  },
+  "BootCountryChg_dlg02_03": {
+    "en": "",
+    "ua": ""
+  },
+  "BootCountryChg_dlg02_04": {
+    "en": "Cancel",
+    "ua": "Скасувати"
+  },
+  "BootCountryChg_dlg02_05": {
+    "en": "Next",
+    "ua": "Далі"
+  },
+  "BootCountryChg_dlg05_01": {
+    "en": "If you do not want to change\nthe region setting, press \nto return to the HOME Menu.",
+    "ua": "Якщо ви не хочете змінювати\nрегіон, натисніть ,\nщоб повернутися в меню HOME."
+  },
+  "BootCountryChg_dlg05_02": {
+    "en": "Back",
+    "ua": "Назад"
+  },
+  "BootCountryChg_dlg03_02": {
+    "en": "",
+    "ua": ""
+  },
+  "BootCountryChg_dlg03_03": {
+    "en": "Current Region: ",
+    "ua": "Поточний регіон: "
+  },
+  "BootCountryChg_dlg03_07": {
+    "en": "Current Balance: ",
+    "ua": "Баланс зараз: "
+  },
+  "BootCountryChg_dlg03_04": {
+    "en": "{t:1.2:}",
+    "ua": ""
+  },
+  "BootCountryChg_dlg03_05": {
+    "en": "New Region: ",
+    "ua": "Новий регіон: "
+  },
+  "BootCountryChg_dlg03_06": {
+    "en": "New Balance: ",
+    "ua": "Новий баланс: "
+  },
+  "BootCountryChg_dlg03_08": {
+    "en": "{t:1.2:}",
+    "ua": ""
+  },
+  "BootCountryChg_dlg03_09": {
+    "en": "Check that the information on the\nupper screen is acceptable, then\ntouch Confirm to apply the new\nregion setting.",
+    "ua": "Перевірте дані на верхньому\nекрані, тоді торкніться «Готово»,\nщоб застосувати новий\nрегіон."
+  },
+  "BootCountryChg_dlg03_10": {
+    "en": "Back",
+    "ua": "Назад"
+  },
+  "BootCountryChg_dlg03_11": {
+    "en": "Confirm",
+    "ua": "Готово"
+  },
+  "BootCountryChg_txt04_03": {
+    "en": "The Club Nintendo account linked to\nthis Nintendo 3DS system cannot be\nused with the new region setting. As\na result, changing to the new setting by\nselecting Next will unlink the account.\n(This will not affect your membership.)\n\nSelect Next if you want to unlink your\nClub Nintendo account and change\nto the new region setting.",
+    "ua": "Обліковий запис Club Nintendo,\nприв'язаний до цієї консолі Nintendo\n3DS,\nне працює з новим регіоном. Тому\nпісля переходу на новий регіон\nкнопкою «Далі» запис буде відв'язано.\n(На саме членство це не впливає.)\n\nВиберіть «Далі», якщо хочете\nвідв'язати\nобліковий запис Club Nintendo\nі змінити регіон."
+  },
+  "BootAreaSet_title02_01": {
+    "en": "Age Verification",
+    "ua": "Перевірка віку"
+  },
+  "BootAreaSet_txt02_01": {
+    "en": "To view the information in Nintendo eShop,\nyou need to enter your birthday. This information\nwill not be sent to Nintendo and will be used\nonly to confirm that you are eligible to view\nNintendo eShop.",
+    "ua": "Щоб побачити вміст Nintendo eShop, треба\nввести дату народження. Ці дані не надсилаються\nдо Nintendo і потрібні лише для того, щоб\nпідтвердити, що вам можна відкривати\nNintendo eShop."
+  },
+  "BootAreaSet_txt02_02": {
+    "en": "Please enter your date of birth.",
+    "ua": "Введіть дату народження."
+  },
+  "BootAreaSet_txt02_03": {
+    "en": "Year",
+    "ua": "Рік"
+  },
+  "BootAreaSet_txt02_04": {
+    "en": "Month",
+    "ua": "Міс."
+  },
+  "BootAreaSet_txt02_05": {
+    "en": "Day",
+    "ua": "День"
+  },
+  "BootAreaSet_dlg01_01": {
+    "en": "Sorry, but you are not eligible\nto view Nintendo eShop.\n\nPlease press  to return\nto the HOME Menu.",
+    "ua": "На жаль, вам не можна\nвідкривати Nintendo eShop.\n\nНатисніть , щоб повернутися\nв меню HOME."
+  },
+  "BootWelcome_txt01_01": {
+    "en": "Welcome to Nintendo eShop!\n\nHere you can download software, view\nsoftware-related videos and get the\nlatest info about your favourite titles!",
+    "ua": "Вітаємо в Nintendo eShop!\n\nТут можна завантажувати програми,\nдивитися відео про них і дізнаватися\nнайсвіжіші новини про улюблені ігри!"
+  },
+  "BootWelcome_txt01_02": {
+    "en": "This service provides up-to-date\ninformation and recommendations\nbased on user feedback.\n\nPlease read the following information\nregarding the use of this service.",
+    "ua": "Цей сервіс дає свіжі відомості\nй поради, які спираються\nна відгуки користувачів.\n\nПрочитайте, будь ласка, текст\nнижче про користування сервісом."
+  },
+  "BootLanguage_dlg01_01": {
+    "en": "Language Setting",
+    "ua": "Вибір мови"
+  },
+  "BootLanguage_dlg01_02": {
+    "en": "Your current system language is not \ncompatible with this region setting.\nPlease choose a language from the\noptions on the lower screen.",
+    "ua": "Поточна мова системи не сумісна \nз цим регіоном. Виберіть мову\nз варіантів на нижньому\nекрані."
+  },
+  "BootLanguage_btn01_01": {
+    "en": "OK",
+    "ua": "OK"
+  },
+  "BootLanguage_dlg02_01": {
+    "en": "Language Setting",
+    "ua": "Вибір мови"
+  },
+  "BootLanguage_dlg02_02": {
+    "en": "Your current system language is not \ncompatible with this region setting.\nThe language below will be used.",
+    "ua": "Поточна мова системи не сумісна \nз цим регіоном.\nБуде використано мову нижче."
+  },
+  "BootLanguage_dlg02_03": {
+    "en": "Language: ",
+    "ua": "Мова: "
+  },
+  "BootLanguage_dlg03_01": {
+    "en": "The language setting has been changed.\nThe data will now be reloaded.",
+    "ua": "Мову змінено.\nЗараз дані буде перезавантажено."
+  },
+  "BootNotice_dlg01_01": {
+    "en": "New Releases",
+    "ua": "Новинки"
+  },
+  "BootNotice_dlg01_02": {
+    "en": "Software on your Watch List\nis now available!\n\nWould you like to view the\navailable software?",
+    "ua": "Програми з вашого списку\nбажань уже доступні!\n\nГлянути доступні\nпрограми?"
+  },
+  "BootNotice_dlg01_03": {
+    "en": "Not Now",
+    "ua": "Не зараз"
+  },
+  "BootNotice_dlg01_04": {
+    "en": "View",
+    "ua": "Глянути"
+  },
+  "BootNotice_dlg02_01": {
+    "en": "New Updates",
+    "ua": "Нові оновлення"
+  },
+  "BootNotice_dlg02_02": {
+    "en": "Previously downloaded software\nhas been updated!\n\nWould you like to view the list\nof available updates?",
+    "ua": "Раніше завантажені програми\nоновилися!\n\nГлянути список\nдоступних оновлень?"
+  },
+  "BootNotice_dlg04_01": {
+    "en": "New Releases and Updates",
+    "ua": "Новинки й оновлення"
+  },
+  "BootNotice_dlg04_02": {
+    "en": "• Software on your Watch List is\n  now available!\n\n• Previously downloaded software\n  has been updated!",
+    "ua": "• Програми з вашого списку\n  бажань уже доступні!\n\n• Раніше завантажені програми\n  оновилися!"
+  },
+  "BootNotice_dlg04_03": {
+    "en": "Do you want to view\nthis software now?",
+    "ua": "Глянути ці програми\nзараз?"
+  },
+  "BootNotice_dlg04_04": {
+    "en": "See Watch List",
+    "ua": "Список бажань"
+  },
+  "BootNotice_dlg04_05": {
+    "en": "See Available Updates",
+    "ua": "Доступні оновлення"
+  },
+  "BootNotice_dlg04_06": {
+    "en": "Later",
+    "ua": "Пізніше"
+  },
+  "BootNNID_txt01_01": {
+    "en": "",
+    "ua": ""
+  },
+  "BootNNID_txt01_02": {
+    "en": "",
+    "ua": ""
+  },
+  "BootNNID_txt01_03": {
+    "en": "",
+    "ua": ""
+  },
+  "BootNNID_txt01_04": {
+    "en": "",
+    "ua": ""
+  },
+  "BootNNID_txt01_05": {
+    "en": "",
+    "ua": ""
+  },
+  "BootNotice_dlg05_01": {
+    "en": "If you want to check your Watch List\nor available updates later, you can\nfind them as follows:\n\n• Watch List - via the Menu\n\n• Available Updates - under the\n  Settings / Other Menu",
+    "ua": "Список бажань і оновлення\nможна глянути й пізніше:\n\n• Список бажань — у меню\n\n• Доступні оновлення —\n  у меню «Параметри / Інше»"
+  },
+  "Entrance_title_01": {
+    "en": "Main Menu",
+    "ua": "Головне меню"
+  },
+  "Entrance_icon01_01": {
+    "en": "News",
+    "ua": "Новини"
+  },
+  "Entrance_icon01_02": {
+    "en": "Recent Arrivals",
+    "ua": "Новинки"
+  },
+  "Entrance_icon01_03": {
+    "en": "Charts",
+    "ua": "Хіт-парад"
+  },
+  "Entrance_icon01_04": {
+    "en": "Submit Reviews",
+    "ua": "Написати відгук"
+  },
+  "Entrance_icon01_05": {
+    "en": "Software Search",
+    "ua": "Пошук програм"
+  },
+  "Entrance_icon01_06": {
+    "en": "Add Funds",
+    "ua": "Додати кошти"
+  },
+  "Entrance_icon01_07": {
+    "en": "Settings / Other",
+    "ua": "Параметри / Інше"
+  },
+  "Entrance_icon01_08": {
+    "en": "Watch List",
+    "ua": "Список бажань"
+  },
+  "Entrance_icon01_09": {
+    "en": "Just for You Offers",
+    "ua": "Пропозиції для вас"
+  },
+  "Entrance_btn01_01": {
+    "en": "Search",
+    "ua": "Пошук"
+  },
+  "Entrance_swkb01_01": {
+    "en": "Please enter the term you\nwish to search for.",
+    "ua": "Введіть, будь ласка, те,\nщо хочете знайти."
+  },
+  "Entrance_dlg02_01": {
+    "en": "Selected Keyword",
+    "ua": "Вибране слово"
+  },
+  "Entrance_dlg02_02": {
+    "en": "Search for software and videos\nrelated to this keyword?",
+    "ua": "Шукати програми й відео\nза цим словом?"
+  },
+  "Entrance_dlg02_03": {
+    "en": "Search",
+    "ua": "Пошук"
+  },
+  "Entrance_dlg02_04": {
+    "en": "Cancel",
+    "ua": "Скасувати"
+  },
+  "Entrance_dlg02_05": {
+    "en": "Search for software related\nto this genre?",
+    "ua": "Шукати програми\nцього жанру?"
+  },
+  "Entrance_dlg02_06": {
+    "en": "Selected Genre",
+    "ua": "Вибраний жанр"
+  },
+  "Entrance_dlg03_01": {
+    "en": "Just for You Offers",
+    "ua": "Пропозиції для вас"
+  },
+  "Entrance_dlg03_02": {
+    "en": "Number of Offers",
+    "ua": "Кількість пропозицій"
+  },
+  "Entrance_dlg03_03": {
+    "en": "{t:1.0:}",
+    "ua": ""
+  },
+  "Entrance_dlg03_04": {
+    "en": "Expiring Soon",
+    "ua": "Скоро завершується"
+  },
+  "Entrance_dlg03_05": {
+    "en": "{t:1.2:} OFF",
+    "ua": "-{t:1.2:}"
+  },
+  "Entrance_dlg03_06": {
+    "en": "{t:1.0:}% OFF",
+    "ua": "-{t:1.0:}%"
+  },
+  "Entrance_dlg03_07": {
+    "en": "Expires: {t:1.5:}/{t:1.4:}/{t:1.3:} {t:1.6:}:{t:1.7:}",
+    "ua": "Діє до: {t:1.5:}.{t:1.4:}.{t:1.3:} {t:1.6:}:{t:1.7:}"
+  },
+  "Entrance_dlg03_08": {
+    "en": "",
+    "ua": ""
+  },
+  "News_title_01": {
+    "en": "News",
+    "ua": "Новини"
+  },
+  "News_btn01_01": {
+    "en": "View Details",
+    "ua": "Докладніше"
+  },
+  "News_btn01_02": {
+    "en": "View Videos",
+    "ua": "Глянути відео"
+  },
+  "News_dlg01_01": {
+    "en": "There are currently no news items.",
+    "ua": "Новин поки що немає."
+  },
+  "NewTitle_txt01_01": {
+    "en": "Recent Arrivals",
+    "ua": "Новинки"
+  },
+  "NewTitle_txt01_02": {
+    "en": "",
+    "ua": ""
+  },
+  "NewTitle_txt01_03": {
+    "en": "Check out the latest \nsoftware and videos.",
+    "ua": "Гляньте найновіші \nпрограми й відео."
+  },
+  "NewTitle_btn01_01": {
+    "en": "New Software",
+    "ua": "Нові програми"
+  },
+  "NewTitle_btn01_02": {
+    "en": "Latest Videos",
+    "ua": "Найновіші відео"
+  },
+  "NewTitle_btn02_01": {
+    "en": "All Software",
+    "ua": "Усі програми"
+  },
+  "NewTitle_txt02_01": {
+    "en": "New Videos",
+    "ua": "Нові відео"
+  },
+  "NewTitle_txt02_02": {
+    "en": "These are the most recently added videos.\nTouch an image to play the corresponding video.",
+    "ua": "Це найновіші додані відео.\nТоркніться зображення, щоб увімкнути відео."
+  },
+  "NewTitle_txt03_01": {
+    "en": "New Software",
+    "ua": "Нові програми"
+  },
+  "NewTitle_txt03_02": {
+    "en": "These are software titles that will be released\nsoon or have recently been released.\nTouch a title for more information.",
+    "ua": "Це програми, які скоро виходять\nабо вийшли недавно.\nТоркніться назви, щоб дізнатися більше."
+  },
+  "NewTitle_txt03_03": {
+    "en": "All",
+    "ua": "Усі"
+  },
+  "NewTitle_dlg03_01": {
+    "en": "Select a software type to view.",
+    "ua": "Виберіть тип програм для\nпоказу."
+  },
+  "NewTitle_dlg03_03": {
+    "en": "",
+    "ua": ""
+  },
+  "OwnedCoupon_title_01": {
+    "en": "Just for You Offer",
+    "ua": "Пропозиція для вас"
+  },
+  "OwnedCoupon_txt01_01": {
+    "en": "Expiring Soon",
+    "ua": "Скоро завершується"
+  },
+  "OwnedCoupon_txt01_02": {
+    "en": "{t:1.2:} OFF",
+    "ua": "-{t:1.2:}"
+  },
+  "OwnedCoupon_txt01_03": {
+    "en": "{t:1.0:}% OFF",
+    "ua": "-{t:1.0:}%"
+  },
+  "OwnedCoupon_txt01_04": {
+    "en": "Expires:\n{t:1.5:}/{t:1.4:}/{t:1.3:} {t:1.6:}:{t:1.7:}",
+    "ua": "Діє до:\n{t:1.5:}.{t:1.4:}.{t:1.3:} {t:1.6:}:{t:1.7:}"
+  },
+  "OwnedCoupon_txt01_05": {
+    "en": "This offer can be used repeatedly\nuntil the expiry date.",
+    "ua": "Цією пропозицією можна користуватись\nбагато разів до кінця терміну."
+  },
+  "OwnedCoupon_txt01_06": {
+    "en": "This offer can be used once.",
+    "ua": "Пропозицією можна скористатися\nраз."
+  },
+  "OwnedCoupon_btn01_01": {
+    "en": "View Applicable Software",
+    "ua": "Показати програми"
+  },
+  "OwnedCoupon_dlg01_01": {
+    "en": "There is no applicable Nintendo 3DS\nsoftware for this offer.\n\nPlease check in Nintendo eShop\nfor Wii U.",
+    "ua": "Для цієї пропозиції немає\nвідповідних програм Nintendo 3DS.\n\nПогляньте в Nintendo eShop\nдля Wii U."
+  },
+  "OwnedCoupon_dlg01_02": {
+    "en": "You don't currently have any\nJust for You offers.",
+    "ua": "Пропозицій для вас\nзараз немає."
+  },
+  "Ranking_title_01": {
+    "en": "Charts",
+    "ua": "Хіт-парад"
+  },
+  "Ranking_txt01_01": {
+    "en": "Charts",
+    "ua": "Хіт-парад"
+  },
+  "Ranking_txt01_02": {
+    "en": "View software and video charts.\nSelect the chart you want to view.",
+    "ua": "Хіт-парад програм і відео.\nВиберіть, що хочете глянути."
+  },
+  "Ranking_btn01_01": {
+    "en": "Software Charts",
+    "ua": "Хіт-парад програм"
+  },
+  "Ranking_btn01_02": {
+    "en": "Video Charts",
+    "ua": "Хіт-парад відео"
+  },
+  "Ranking_btn01_03": {
+    "en": "",
+    "ua": ""
+  },
+  "Ranking_btn01_04": {
+    "en": "Recently Popular",
+    "ua": "Популярне зараз"
+  },
+  "Ranking_btn02_01": {
+    "en": "All Software",
+    "ua": "Усі програми"
+  },
+  "Ranking_dlg01_01": {
+    "en": "There is not enough data\navailable yet to display charts.",
+    "ua": "Даних поки що замало,\nщоб показати хіт-парад."
+  },
+  "Ranking_txt02_01": {
+    "en": "Video Charts",
+    "ua": "Хіт-парад відео"
+  },
+  "Ranking_txt03_01": {
+    "en": "Software Charts",
+    "ua": "Хіт-парад програм"
+  },
+  "Ranking_txt03_02": {
+    "en": "Currently Viewing:",
+    "ua": "Ви дивитеся:"
+  },
+  "Ranking_txt04_01": {
+    "en": "",
+    "ua": ""
+  },
+  "Ranking_txt04_02": {
+    "en": "",
+    "ua": ""
+  },
+  "Ranking_txt04_03": {
+    "en": "",
+    "ua": ""
+  },
+  "Ranking_btn04_01": {
+    "en": "",
+    "ua": ""
+  },
+  "Ranking_txt05_01": {
+    "en": "",
+    "ua": ""
+  },
+  "Ranking_txt05_02": {
+    "en": "Select the software type you\nwant to view charts for.",
+    "ua": "Виберіть тип програм, чий\nхіт-парад хочете глянути."
+  },
+  "Ranking_txt06_01": {
+    "en": "{t:1.6:}:{t:1.7:}:{t:1.8:}",
+    "ua": ""
+  },
+  "Shelf_title_02": {
+    "en": "New",
+    "ua": "Новинки"
+  },
+  "Shelf_title_03": {
+    "en": "Charts",
+    "ua": "Хіт-парад"
+  },
+  "Shelf_title_04": {
+    "en": "Search Results: {t:1.0:}",
+    "ua": "Результати пошуку: {t:1.0:}"
+  },
+  "Shelf_txt01_01": {
+    "en": "{t:1.2:}",
+    "ua": ""
+  },
+  "Shelf_txt01_16": {
+    "en": "{t:1.2:}{t:0.2:5000} (inc. VAT){t:0.2:6400}",
+    "ua": "{t:1.2:}{t:0.2:5000} (з ПДВ){t:0.2:6400}"
+  },
+  "Shelf_txt01_17": {
+    "en": "{t:1.2:}{t:0.2:5000} (inc. GST){t:0.2:6400}",
+    "ua": "{t:1.2:}{t:0.2:5000} (з GST){t:0.2:6400}"
+  },
+  "Shelf_txt01_20": {
+    "en": "{t:1.2:}",
+    "ua": ""
+  },
+  "Shelf_txt01_21": {
+    "en": "{t:1.2:} {t:0.2:5000} (inc. VAT){t:0.2:6400}",
+    "ua": "{t:1.2:} {t:0.2:5000} (з ПДВ){t:0.2:6400}"
+  },
+  "Shelf_txt01_22": {
+    "en": "{t:1.2:} {t:0.2:5000}(inc. GST){t:0.2:6400}",
+    "ua": "{t:1.2:} {t:0.2:5000}(з GST){t:0.2:6400}"
+  },
+  "Shelf_txt01_08": {
+    "en": "Price: TBD",
+    "ua": "Ціну не оголошено"
+  },
+  "Shelf_txt01_19": {
+    "en": "Offers in-game purchases",
+    "ua": "Є покупки в грі"
+  },
+  "Shelf_txt01_02": {
+    "en": "",
+    "ua": ""
+  },
+  "Shelf_txt01_03": {
+    "en": "",
+    "ua": ""
+  },
+  "Shelf_txt01_04": {
+    "en": "Video ({t:1.6:}:{t:1.7:}:{t:1.8:})",
+    "ua": "Відео ({t:1.6:}:{t:1.7:}:{t:1.8:})"
+  },
+  "Shelf_txt01_05": {
+    "en": "",
+    "ua": ""
+  },
+  "Shelf_txt01_06": {
+    "en": "",
+    "ua": ""
+  },
+  "Shelf_txt01_07": {
+    "en": "Software currently unavailable",
+    "ua": "Програма зараз недоступна"
+  },
+  "Shelf_txt01_09": {
+    "en": "({t:1.0:})",
+    "ua": ""
+  },
+  "Shelf_txt01_10": {
+    "en": "Page {t:1.0:} / {t:1.9:}",
+    "ua": "Ст. {t:1.0:} / {t:1.9:}"
+  },
+  "Shelf_txt01_11": {
+    "en": "Go to Page {t:1.0:} / {t:1.9:}",
+    "ua": "До стор. {t:1.0:} / {t:1.9:}"
+  },
+  "Shelf_txt01_12": {
+    "en": "Out now in Nintendo eShop",
+    "ua": "Уже в Nintendo eShop"
+  },
+  "Shelf_txt01_13": {
+    "en": "Coming to Nintendo eShop",
+    "ua": "Скоро в Nintendo eShop"
+  },
+  "Shelf_txt01_14": {
+    "en": "Not available in Nintendo eShop",
+    "ua": "Немає в Nintendo eShop"
+  },
+  "Shelf_txt01_15": {
+    "en": "",
+    "ua": ""
+  },
+  "Shelf_txt01_18": {
+    "en": "Special offer until: {t:1.5:}/{t:1.4:}",
+    "ua": "Акція до: {t:1.5:}.{t:1.4:}"
+  },
+  "Shelf_icon01_01": {
+    "en": "NEW",
+    "ua": "НОВЕ"
+  },
+  "Shelf_icon01_08": {
+    "en": "SALE",
+    "ua": "ЗНИЖКА"
+  },
+  "Shelf_icon01_09": {
+    "en": "OFFER",
+    "ua": "АКЦІЯ"
+  },
+  "Shelf_icon01_10": {
+    "en": "Pre-purchase",
+    "ua": "Передзамов."
+  },
+  "Shelf_icon01_02": {
+    "en": "Previous",
+    "ua": "Назад"
+  },
+  "Shelf_icon01_03": {
+    "en": "Next",
+    "ua": "Далі"
+  },
+  "Shelf_icon01_04": {
+    "en": "Info",
+    "ua": "Про це"
+  },
+  "Shelf_icon01_07": {
+    "en": "Sort By...",
+    "ua": "Сорт."
+  },
+  "Shelf_icon01_05": {
+    "en": "New",
+    "ua": "Нове"
+  },
+  "Shelf_icon01_06": {
+    "en": "New",
+    "ua": "Нове"
+  },
+  "Shelf_banner01_01": {
+    "en": "{t:1.2:}",
+    "ua": ""
+  },
+  "Shelf_banner01_02": {
+    "en": "{t:1.2:}",
+    "ua": ""
+  },
+  "Shelf_banner01_03": {
+    "en": "{t:1.2:}",
+    "ua": ""
+  },
+  "Shelf_banner01_04": {
+    "en": "{t:1.2:}",
+    "ua": ""
+  },
+  "Shelf_banner01_05": {
+    "en": "SALE",
+    "ua": "ЗНИЖКА"
+  },
+  "Shelf_banner01_06": {
+    "en": "OFFER",
+    "ua": "АКЦІЯ"
+  },
+  "Shelf_banner01_07": {
+    "en": "{t:1.0:}%",
+    "ua": ""
+  },
+  "Shelf_banner01_08": {
+    "en": "OFF",
+    "ua": "-"
+  },
+  "Shelf_result_01": {
+    "en": "Matches found: {t:1.0:}",
+    "ua": "Знайдено: {t:1.0:}"
+  },
+  "Shelf_result_02": {
+    "en": "Keyword",
+    "ua": "Слово"
+  },
+  "Shelf_result_04": {
+    "en": "",
+    "ua": ""
+  },
+  "Shelf_result_05": {
+    "en": "Genre",
+    "ua": "Жанр"
+  },
+  "Shelf_result_06": {
+    "en": "Publisher",
+    "ua": "Видав."
+  },
+  "Shelf_result_07": {
+    "en": "Price",
+    "ua": "Ціна"
+  },
+  "Shelf_result_08": {
+    "en": "Sorted By",
+    "ua": "Сортування"
+  },
+  "Shelf_result_09": {
+    "en": "Software and Videos / Latest",
+    "ua": "Програми й відео / новіші"
+  },
+  "Shelf_result_10": {
+    "en": "Software / Latest",
+    "ua": "Програми / новіші"
+  },
+  "Shelf_result_11": {
+    "en": "Software / Popularity",
+    "ua": "Програми / популярні"
+  },
+  "Shelf_result_12": {
+    "en": "Software / Reviews",
+    "ua": "Програми / відгуки"
+  },
+  "Shelf_result_13": {
+    "en": "Videos / Latest",
+    "ua": "Відео / новіші"
+  },
+  "Shelf_result_14": {
+    "en": "Videos / Most Played",
+    "ua": "Відео / найпопулярніші"
+  },
+  "Shelf_result_15": {
+    "en": "Software Type",
+    "ua": "Тип програм"
+  },
+  "Shelf_result_16": {
+    "en": "Keyword",
+    "ua": "Слово"
+  },
+  "Shelf_btn01_01": {
+    "en": "Sort / Filter",
+    "ua": "Сортувати / фільтр"
+  },
+  "Shelf_btn01_02": {
+    "en": "Filter By...",
+    "ua": "Фільтр..."
+  },
+  "Shelf_btn01_03": {
+    "en": "Adjust Filter",
+    "ua": "Змінити фільтр"
+  },
+  "Shelf_txt02_02": {
+    "en": "",
+    "ua": ""
+  },
+  "Shelf_btn02_01": {
+    "en": "Sort Software and Videos By...",
+    "ua": "Сортувати програми й відео..."
+  },
+  "Shelf_btn02_02": {
+    "en": "Software Only",
+    "ua": "Лише програми"
+  },
+  "Shelf_btn02_03": {
+    "en": "Videos Only",
+    "ua": "Лише відео"
+  },
+  "Shelf_btn02_09": {
+    "en": "Filter",
+    "ua": "Фільтр"
+  },
+  "Shelf_btn02_10": {
+    "en": "Sort All",
+    "ua": "Сортувати все"
+  },
+  "Shelf_btn02_04": {
+    "en": "Latest",
+    "ua": "Новіші"
+  },
+  "Shelf_btn02_05": {
+    "en": "Popularity",
+    "ua": "Популярні"
+  },
+  "Shelf_btn02_06": {
+    "en": "Reviews",
+    "ua": "Відгуки"
+  },
+  "Shelf_btn02_07": {
+    "en": "",
+    "ua": ""
+  },
+  "Shelf_btn02_08": {
+    "en": "Most Played",
+    "ua": "Найпопулярніші"
+  },
+  "Shelf_btn02_11": {
+    "en": "Filter By...",
+    "ua": "Фільтр..."
+  },
+  "Shelf_dlg01_01": {
+    "en": "Could not find any matches for the\nconditions you entered. Would you\nlike to try changing them?",
+    "ua": "За вашими умовами нічого\nне знайдено. Спробувати\nзмінити їх?"
+  },
+  "TitleInfo_title_01": {
+    "en": "Title Information",
+    "ua": "Про програму"
+  },
+  "TitleInfo_txt01_01": {
+    "en": "{t:1.2:}",
+    "ua": ""
+  },
+  "TitleInfo_txt01_15": {
+    "en": "{t:1.2:} {t:0.2:4600}(inc. VAT){t:0.2:6400}",
+    "ua": "{t:1.2:} {t:0.2:4600}(з ПДВ){t:0.2:6400}"
+  },
+  "TitleInfo_txt01_16": {
+    "en": "{t:1.2:} {t:0.2:4600}(inc. GST){t:0.2:6400}",
+    "ua": "{t:1.2:} {t:0.2:4600}(з GST){t:0.2:6400}"
+  },
+  "TitleInfo_txt01_28": {
+    "en": "{t:1.2:}",
+    "ua": ""
+  },
+  "TitleInfo_txt01_29": {
+    "en": "{t:1.2:} {t:0.2:4600}(inc. VAT){t:0.2:6400}",
+    "ua": "{t:1.2:} {t:0.2:4600}(з ПДВ){t:0.2:6400}"
+  },
+  "TitleInfo_txt01_30": {
+    "en": "{t:1.2:} {t:0.2:4600}(inc. GST){t:0.2:6400}",
+    "ua": "{t:1.2:} {t:0.2:4600}(з GST){t:0.2:6400}"
+  },
+  "TitleInfo_txt01_27": {
+    "en": "Offers in-game purchases",
+    "ua": "Є покупки в грі"
+  },
+  "TitleInfo_txt01_08": {
+    "en": "Price: TBD",
+    "ua": "Ціну не оголошено"
+  },
+  "TitleInfo_txt01_10": {
+    "en": "Release Date",
+    "ua": "Вихід"
+  },
+  "TitleInfo_txt01_11": {
+    "en": "Release Date",
+    "ua": "Вихід"
+  },
+  "TitleInfo_txt01_02": {
+    "en": "Release Date",
+    "ua": "Вихід"
+  },
+  "TitleInfo_txt01_03": {
+    "en": "Release Date",
+    "ua": "Вихід"
+  },
+  "TitleInfo_txt01_04": {
+    "en": "{t:1.5:}/{t:1.4:}/{t:1.3:}",
+    "ua": ""
+  },
+  "TitleInfo_txt01_05": {
+    "en": "{t:1.4:}/{t:1.3:}",
+    "ua": ""
+  },
+  "TitleInfo_txt01_06": {
+    "en": "{t:1.3:}",
+    "ua": ""
+  },
+  "TitleInfo_txt01_12": {
+    "en": "Release Date: TBD",
+    "ua": "Дату виходу не оголошено"
+  },
+  "TitleInfo_txt01_07": {
+    "en": "Release Date: TBD",
+    "ua": "Дату виходу не оголошено"
+  },
+  "TitleInfo_txt01_13": {
+    "en": "({t:1.0:})",
+    "ua": ""
+  },
+  "TitleInfo_txt01_14": {
+    "en": "",
+    "ua": ""
+  },
+  "TitleInfo_txt01_09": {
+    "en": "No image\navailable.",
+    "ua": "Зображення\nнемає."
+  },
+  "TitleInfo_txt01_17": {
+    "en": "Added to Watch List.",
+    "ua": "Додано до списку бажань."
+  },
+  "TitleInfo_txt01_26": {
+    "en": "Removed from Watch List.",
+    "ua": "Вилучено зі списку бажань."
+  },
+  "TitleInfo_txt01_18": {
+    "en": "This title is available in English.",
+    "ua": "Ця програма є англійською."
+  },
+  "TitleInfo_txt01_19": {
+    "en": "This title is available in French.",
+    "ua": "Ця програма є французькою."
+  },
+  "TitleInfo_txt01_20": {
+    "en": "This title is available in Spanish.",
+    "ua": "Ця програма є іспанською."
+  },
+  "TitleInfo_txt01_21": {
+    "en": "This title is available in Portuguese.",
+    "ua": "Ця програма є португальською."
+  },
+  "TitleInfo_txt01_22": {
+    "en": "This title is available in Italian.",
+    "ua": "Ця програма є італійською."
+  },
+  "TitleInfo_txt01_23": {
+    "en": "This title is available in German.",
+    "ua": "Ця програма є німецькою."
+  },
+  "TitleInfo_txt01_24": {
+    "en": "This title is available in Dutch.",
+    "ua": "Ця програма є нідерландською."
+  },
+  "TitleInfo_txt01_25": {
+    "en": "This title is available in Russian.",
+    "ua": "Ця програма є російською."
+  },
+  "TitleInfo_heading01_01": {
+    "en": "More Details",
+    "ua": "Докладніше"
+  },
+  "TitleInfo_heading01_02": {
+    "en": "Videos",
+    "ua": "Відео"
+  },
+  "TitleInfo_heading01_03": {
+    "en": "Download Demo",
+    "ua": "Завантажити демо"
+  },
+  "TitleInfo_heading01_04": {
+    "en": "Reviews",
+    "ua": "Відгуки"
+  },
+  "TitleInfo_heading01_05": {
+    "en": "",
+    "ua": ""
+  },
+  "TitleInfo_heading01_06": {
+    "en": "Add-on Content Information",
+    "ua": "Про додатковий вміст"
+  },
+  "TitleInfo_btn01_16": {
+    "en": "Add-on Content",
+    "ua": "Додатковий вміст"
+  },
+  "TitleInfo_btn01_01": {
+    "en": "Proceed to Purchase",
+    "ua": "До покупки"
+  },
+  "TitleInfo_btn01_17": {
+    "en": "Proceed to Purchase",
+    "ua": "До покупки"
+  },
+  "TitleInfo_btn01_18": {
+    "en": "Only for New Nintendo 3DS",
+    "ua": "Лише для New Nintendo 3DS"
+  },
+  "TitleInfo_btn01_02": {
+    "en": "Age Rating Information",
+    "ua": "Про віковий рейтинг"
+  },
+  "TitleInfo_btn01_03": {
+    "en": "Add to Watch List",
+    "ua": "До списку бажань"
+  },
+  "TitleInfo_btn01_04": {
+    "en": "Added to Watch List",
+    "ua": "У списку бажань"
+  },
+  "TitleInfo_btn01_05": {
+    "en": "Downloaded",
+    "ua": "Завантажено"
+  },
+  "TitleInfo_btn01_06": {
+    "en": "",
+    "ua": ""
+  },
+  "TitleInfo_btn01_07": {
+    "en": "Redownload",
+    "ua": "Завантажити знову"
+  },
+  "TitleInfo_btn01_08": {
+    "en": "Update",
+    "ua": "Оновити"
+  },
+  "TitleInfo_btn01_09": {
+    "en": "",
+    "ua": ""
+  },
+  "TitleInfo_btn01_10": {
+    "en": "",
+    "ua": ""
+  },
+  "TitleInfo_btn01_11": {
+    "en": "Software currently unavailable",
+    "ua": "Програма зараз недоступна"
+  },
+  "TitleInfo_btn01_12": {
+    "en": "Proceed to Download",
+    "ua": "До завантаження"
+  },
+  "TitleInfo_btn01_13": {
+    "en": "Coming to Nintendo eShop",
+    "ua": "Скоро в Nintendo eShop"
+  },
+  "TitleInfo_btn01_14": {
+    "en": "Not available in Nintendo eShop",
+    "ua": "Немає в Nintendo eShop"
+  },
+  "TitleInfo_btn01_15": {
+    "en": "Additional Information",
+    "ua": "Додаткові відомості"
+  },
+  "TitleInfo_btn01_19": {
+    "en": "",
+    "ua": ""
+  },
+  "TitleInfo_btn01_20": {
+    "en": "",
+    "ua": ""
+  },
+  "TitleInfo_btn01_21": {
+    "en": "",
+    "ua": ""
+  },
+  "TitleInfo_btn01_22": {
+    "en": "Just for You",
+    "ua": "Для вас"
+  },
+  "TitleInfo_dlg01_01": {
+    "en": "Your Watch List is full, so you cannot\nadd any more titles. Please remove\nsome titles from the list if you want\nto add more.\n\nWould you like to view your list?",
+    "ua": "Ваш список бажань повний, тож\nдодати більше не вийде. Вилучіть\nзі списку щось, якщо хочете\nдодати нове.\n\nПоказати ваш список?"
+  },
+  "TitleInfo_dlg01_02": {
+    "en": "Display",
+    "ua": "Показати"
+  },
+  "TitleInfo_dlg01_03": {
+    "en": "Not Now",
+    "ua": "Не зараз"
+  },
+  "TitleInfo_dlg02_01": {
+    "en": "Insufficient Funds",
+    "ua": "Бракує коштів"
+  },
+  "TitleInfo_dlg02_02": {
+    "en": "Balance",
+    "ua": "Баланс"
+  },
+  "TitleInfo_dlg02_03": {
+    "en": "{t:1.2:}",
+    "ua": ""
+  },
+  "TitleInfo_dlg02_04": {
+    "en": "Required Funds",
+    "ua": "Потрібно"
+  },
+  "TitleInfo_dlg02_05": {
+    "en": "{t:1.2:}",
+    "ua": ""
+  },
+  "TitleInfo_dlg02_06": {
+    "en": "You do not have sufficient\nfunds to purchase this software.",
+    "ua": "Вам бракує коштів,\nщоб купити цю програму."
+  },
+  "TitleInfo_dlg02_07": {
+    "en": "Add Funds",
+    "ua": "Додати кошти"
+  },
+  "TitleInfo_dlg02_08": {
+    "en": "Back",
+    "ua": "Назад"
+  },
+  "TitleInfo_dlg03_01": {
+    "en": "Please read before continuing.",
+    "ua": "Прочитайте перед тим, як\nпродовжити."
+  },
+  "TitleInfo_dlg03_02": {
+    "en": "Next",
+    "ua": "Далі"
+  },
+  "TitleInfo_dlg03_03": {
+    "en": "Back",
+    "ua": "Назад"
+  },
+  "TitleInfo_dlg03_04": {
+    "en": "Please check the rating information\non the upper screen.",
+    "ua": "Перевірте відомості про рейтинг\nна верхньому екрані."
+  },
+  "TitleInfo_dlg03_05": {
+    "en": "Important Information",
+    "ua": "Важлива інформація"
+  },
+  "TitleInfo_dlg03_06": {
+    "en": "Age Rating Information",
+    "ua": "Про віковий рейтинг"
+  },
+  "TitleInfo_dlg04_01": {
+    "en": "Change of Address",
+    "ua": "Зміна адреси"
+  },
+  "TitleInfo_dlg04_02": {
+    "en": "Your address information is out of date.\nYou must enter your current address in\norder to purchase software in Nintendo\neShop.\n\nWould you like to update your address\ninformation now?",
+    "ua": "Ваша адреса застаріла. Щоб купувати\nпрограми в Nintendo eShop, треба\nввести поточну адресу.\n\nОновити адресу зараз?"
+  },
+  "TitleInfo_dlg04_03": {
+    "en": "After reading the upper screen,\nplease tap Update to update\nyour information.",
+    "ua": "Прочитавши текст на верхньому\nекрані, торкніться «Оновити»,\nщоб оновити дані."
+  },
+  "TitleInfo_dlg04_04": {
+    "en": "Update",
+    "ua": "Оновити"
+  },
+  "TitleInfo_dlg05_01": {
+    "en": "",
+    "ua": ""
+  },
+  "TitleInfo_dlg05_02": {
+    "en": "",
+    "ua": ""
+  },
+  "TitleInfo_dlg05_03": {
+    "en": "",
+    "ua": ""
+  },
+  "TitleInfo_dlg05_04": {
+    "en": "",
+    "ua": ""
+  },
+  "TitleInfo_dlg05_05": {
+    "en": "This demo is not currently\nbeing distributed.",
+    "ua": "Це демо зараз\nне роздається."
+  },
+  "TitleInfo_dlg05_06": {
+    "en": "No add-on content is\navailable at this time.",
+    "ua": "Додаткового вмісту\nзараз немає."
+  },
+  "TitleInfo_dlg06_01": {
+    "en": "Do you want to check whether this\nsoftware needs to be repaired?",
+    "ua": "Перевірити, чи цю програму\nтреба відновити?"
+  },
+  "TitleInfo_dlg06_02": {
+    "en": "Checking...",
+    "ua": "Перевірка..."
+  },
+  "TitleInfo_dlg06_03": {
+    "en": "This may take some time.\nPlease wait...\n\nDo not remove the SD Card\nor turn off the power.",
+    "ua": "Це може тривати довго.\nЗачекайте...\n\nНе виймайте карту SD\nі не вимикайте консоль."
+  },
+  "TitleInfo_dlg06_04": {
+    "en": "Check complete.",
+    "ua": "Перевірку завершено."
+  },
+  "TitleInfo_dlg06_05": {
+    "en": "This software needs to be repaired.\nThe software's data will now be\nredownloaded so that the repair\nprocess can begin.\n\nSave data will not be deleted.\n\nIf you experience problems after the\nrepair process is complete, please\nmake a note of the error code and\nvisit support.nintendo.com.\n\n{t:1.0:}-{t:1.9:}",
+    "ua": "Цю програму треба відновити.\nЗараз її дані буде завантажено\nзнову, щоб почати відновлення.\n\nЗбереження не буде видалено.\n\nЯкщо після відновлення проблеми\nне зникнуть, запишіть код помилки\nй завітайте на\nsupport.nintendo.com.\n\n{t:1.0:}-{t:1.9:}"
+  },
+  "TitleInfo_dlg06_06": {
+    "en": "No problems have been detected.\nIf you are experiencing problems with\nthis software, you can initiate the\nrepair process anyway. Doing so will\nredownload the software's data.\nInitiate the repair process?\n\nSave data will not be deleted.\n\nIf you experience problems after the\nrepair process is complete, please\ncontact your local customer support\ncentre. For contact details, check\nthe Operations Manual or visit \nsupport.nintendo.com.",
+    "ua": "Проблем не виявлено.\nЯкщо програма все ж працює\nпогано,\nвідновлення можна запустити й так.\nТоді її дані буде завантажено\nзнову.\nЗапустити відновлення?\n\nЗбереження не буде видалено.\n\nЯкщо після відновлення проблеми\nне зникнуть, зверніться до місцевої\nслужби підтримки. Контакти\nшукайте\nв посібнику з користування\nабо на support.nintendo.com."
+  },
+  "TitleInfo_dlg07_01": {
+    "en": "You must link a Nintendo Network ID\nto play demo versions of software.\n\nWould you like to go to\nNintendo Network ID Settings\nto link a Nintendo Network ID?\n(You will be returned to this screen\nwhen the process is complete.)",
+    "ua": "Щоб грати в демоверсії програм,\nтреба прив'язати Nintendo Network\nID.\n\nВідкрити налаштування\nNintendo Network ID,\nщоб прив'язати ID?\n(Після цього ви повернетеся\nна цей екран.)"
+  },
+  "TitleInfo_dlg07_02": {
+    "en": "You must link a Nintendo Network ID\nto be able to use this software.\n\nWould you like to go to\nNintendo Network ID Settings\nto link a Nintendo Network ID?\n(You will be returned to this screen\nwhen the process is complete.)",
+    "ua": "Щоб користуватися цією\nпрограмою, треба прив'язати\nNintendo Network ID.\n\nВідкрити налаштування Nintendo\nNetwork ID, щоб прив'язати ID?\n(Після цього ви повернетеся\nна цей екран.)"
+  },
+  "TitleInfo_dlg_08_01": {
+    "en": "Please enter the coupon code.",
+    "ua": "Введіть код купона."
+  },
+  "TitleInfo_dlg_08_02": {
+    "en": "Coupon code",
+    "ua": "Код купона"
+  },
+  "TitleInfo_dlg_08_03": {
+    "en": "Please enter the coupon code.",
+    "ua": "Введіть код купона."
+  },
+  "TitleInfo_dlg_08_04": {
+    "en": "Please enter the coupon code\ncorrectly. No special characters\nor symbols should be included.",
+    "ua": "Введіть код купона правильно.\nБез особливих знаків\nі символів."
+  },
+  "TitleInfo_dlg_09_01": {
+    "en": "{t:1.2:}",
+    "ua": ""
+  },
+  "TitleInfo_dlg_09_02": {
+    "en": "{t:1.2:}",
+    "ua": ""
+  },
+  "TitleInfo_dlg_09_03": {
+    "en": "{t:1.2:} {t:0.2:4b00}(inc. VAT){t:0.2:6400}",
+    "ua": "{t:1.2:} {t:0.2:4b00}(з ПДВ){t:0.2:6400}"
+  },
+  "TitleInfo_dlg_09_04": {
+    "en": "{t:1.2:} {t:0.2:4b00}(inc. GST){t:0.2:6400}",
+    "ua": "{t:1.2:} {t:0.2:4b00}(з GST){t:0.2:6400}"
+  },
+  "TitleInfo_dlg_09_05": {
+    "en": "A Just for You offer is available.\nWould you like to apply it?",
+    "ua": "Є пропозиція для вас.\nЗастосувати її?"
+  },
+  "TitleInfo_dlg_09_06": {
+    "en": "Apply",
+    "ua": "Застосувати"
+  },
+  "TitleInfo_dlg_09_07": {
+    "en": "{t:1.2:}",
+    "ua": ""
+  },
+  "TitleInfo_dlg_09_10": {
+    "en": "{t:1.2:} {t:0.2:4b00}(inc. VAT){t:0.2:6400}",
+    "ua": "{t:1.2:} {t:0.2:4b00}(з ПДВ){t:0.2:6400}"
+  },
+  "TitleInfo_dlg_09_11": {
+    "en": "{t:1.2:} {t:0.2:4b00}(inc. GST){t:0.2:6400}",
+    "ua": "{t:1.2:} {t:0.2:4b00}(з GST){t:0.2:6400}"
+  },
+  "TitleInfo_dlg_09_08": {
+    "en": "Purchase without applying",
+    "ua": "Купити без пропозиції"
+  },
+  "TitleInfo_dlg_09_09": {
+    "en": "{t:1.2:}",
+    "ua": ""
+  },
+  "TitleInfo_dlg_09_12": {
+    "en": "{t:1.2:} {t:0.2:4b00}(inc. VAT){t:0.2:6400}",
+    "ua": "{t:1.2:} {t:0.2:4b00}(з ПДВ){t:0.2:6400}"
+  },
+  "TitleInfo_dlg_09_13": {
+    "en": "{t:1.2:} {t:0.2:4b00}(inc. GST){t:0.2:6400}",
+    "ua": "{t:1.2:} {t:0.2:4b00}(з GST){t:0.2:6400}"
+  },
+  "TitleInfo_CTheading01_01": {
+    "en": "Add-on Content Information",
+    "ua": "Про додатковий вміст"
+  },
+  "TitleInfo_CTtext01_02": {
+    "en": "In order to view information about\nadd-on content, you must close\nNintendo eShop and launch the\nsupported software title.\n\nContinue?",
+    "ua": "Щоб побачити відомості про\nдодатковий вміст, треба закрити\nNintendo eShop і запустити\nвідповідну програму.\n\nПродовжити?"
+  },
+  "TitleInfo_CTtext01_03": {
+    "en": "Could not find a supported\nsoftware title.\n\nEither the Game Card for a supported\ntitle is not inserted, or there is no\nsupported title on the SD Card.\nAdditionally, the SD Card may\nhave been removed and reinserted\nduring use.",
+    "ua": "Відповідної програми\nне знайдено.\n\nАбо не вставлено ігрову картку\nз цією програмою, або її немає\nна карті SD. Ще одна причина —\nкарту SD виймали й вставляли\nпід час роботи."
+  },
+  "TitleInfo_CTtext01_04": {
+    "en": "This is a list of the add-on content which\ncan be purchased for this software title.\n\nNote: The add-on content cannot be\npurchased using Nintendo eShop.",
+    "ua": "Це список додаткового вмісту, який\nможна купити для цієї програми.\n\nПримітка: цей додатковий вміст\nне продається в Nintendo eShop."
+  },
+  "TitleInfo_CTtext01_05": {
+    "en": "{t:1.2:}",
+    "ua": ""
+  },
+  "TitleInfo_CTtext01_06": {
+    "en": "Would you like to launch\nthis software in 2D?\n\nYou must enter your PIN\nto launch it in 3D.",
+    "ua": "Запустити цю програму\nу 2D?\n\nЩоб запустити у 3D,\nтреба ввести PIN."
+  },
+  "TitleInfo_CTtext01_07": {
+    "en": "Failed to enter the correct PIN.\n\nLaunching in 2D display mode.",
+    "ua": "Ви ввели неправильний PIN.\n\nЗапуск у режимі 2D."
+  },
+  "TitleInfo_CTtext01_08": {
+    "en": "To change your Parental Controls\nsettings, please go to Parental\nControls in the System Settings\nand answer the secret question.",
+    "ua": "Щоб змінити батьківський\nконтроль,\nвідкрийте «Батьківський контроль»\nу налаштуваннях системи\nй дайте відповідь на секретне\nпитання."
+  },
+  "TitleInfo_CTbtn01_01": {
+    "en": "Start in 2D",
+    "ua": "Пуск у 2D"
+  },
+  "TitleInfo_CTbtn01_02": {
+    "en": "Start in 3D",
+    "ua": "Пуск у 3D"
+  },
+  "TitleInfo_DTheading_01": {
+    "en": "Software Features",
+    "ua": "Особливості програми"
+  },
+  "TitleInfo_DTheading_02": {
+    "en": "Related Genres",
+    "ua": "Схожі жанри"
+  },
+  "TitleInfo_DTheading_03": {
+    "en": "Web Sites",
+    "ua": "Сайти"
+  },
+  "TitleInfo_DTheading_04": {
+    "en": "Publisher",
+    "ua": "Видав."
+  },
+  "TitleInfo_DTheading_05": {
+    "en": "Players",
+    "ua": "Гравці"
+  },
+  "TitleInfo_DTheading_06": {
+    "en": "Genre",
+    "ua": "Жанр"
+  },
+  "TitleInfo_DTheading_07": {
+    "en": "Languages",
+    "ua": "Мови"
+  },
+  "TitleInfo_DTheading_08": {
+    "en": "Important Information",
+    "ua": "Важлива інформація"
+  },
+  "TitleInfo_DTheading_09": {
+    "en": "Compatible Features / Accessories",
+    "ua": "Сумісні функції та приладдя"
+  },
+  "TitleInfo_DTheading_10": {
+    "en": "Age Rating Information",
+    "ua": "Про віковий рейтинг"
+  },
+  "TitleInfo_DTheading_11": {
+    "en": "Related Keywords",
+    "ua": "Схожі слова"
+  },
+  "TitleInfo_DTheading_12": {
+    "en": "Repair",
+    "ua": "Відновлення"
+  },
+  "TitleInfo_DTbtn_01": {
+    "en": "Repair Software",
+    "ua": "Відновити програму"
+  },
+  "TitleInfo_DTtxt01_01": {
+    "en": "English",
+    "ua": "Англійська"
+  },
+  "TitleInfo_DTtxt01_02": {
+    "en": "French",
+    "ua": "Французька"
+  },
+  "TitleInfo_DTtxt01_03": {
+    "en": "Spanish",
+    "ua": "Іспанська"
+  },
+  "TitleInfo_DTtxt01_04": {
+    "en": "German",
+    "ua": "Німецька"
+  },
+  "TitleInfo_DTtxt01_05": {
+    "en": "Italian",
+    "ua": "Італійська"
+  },
+  "TitleInfo_DTtxt01_06": {
+    "en": "Dutch",
+    "ua": "Нідерланд."
+  },
+  "TitleInfo_DTtxt01_07": {
+    "en": "Portuguese",
+    "ua": "Португальська"
+  },
+  "TitleInfo_DTtxt01_08": {
+    "en": "Russian",
+    "ua": "Рос."
+  },
+  "TitleInfo_DTtxt01_09": {
+    "en": "Japanese",
+    "ua": "Японська"
+  },
+  "TitleInfo_DTtxt01_10": {
+    "en": "",
+    "ua": ""
+  },
+  "TitleInfo_DTtxt01_11": {
+    "en": "",
+    "ua": ""
+  },
+  "TitleInfo_DTtxt01_12": {
+    "en": "",
+    "ua": ""
+  },
+  "TitleInfo_DTtxt02_01": {
+    "en": "1 player",
+    "ua": "1 гравець"
+  },
+  "TitleInfo_DTtxt02_02": {
+    "en": "1 – {t:1.0:} players",
+    "ua": "1 – {t:1.0:} гравців"
+  },
+  "TitleInfo_SSbtn01_01": {
+    "en": "Back",
+    "ua": "Назад"
+  },
+  "TitleInfo_SSbtn01_02": {
+    "en": "{t:1.0:}/{t:1.9:}",
+    "ua": ""
+  },
+  "TitleInfo_MVtxt01_01": {
+    "en": "{t:1.6:}:{t:1.7:}:{t:1.8:} / {t:1.10:}:{t:1.11:}:{t:1.12:}",
+    "ua": ""
+  },
+  "TitleInfo_MVtxt01_02": {
+    "en": "{t:1.7:}:{t:1.8:} / {t:1.11:}:{t:1.12:}",
+    "ua": ""
+  },
+  "TitleInfo_MVtxt01_03": {
+    "en": "Press play to begin playback.",
+    "ua": "Натисніть «Грати», щоб\nпочати."
+  },
+  "TitleInfo_MVbtn01_01": {
+    "en": "View Title Information",
+    "ua": "Про програму"
+  },
+  "TitleInfo_MVtxt02_01": {
+    "en": "Videos",
+    "ua": "Відео"
+  },
+  "TitleInfo_MVtxt02_02": {
+    "en": "Select the video you want to watch.",
+    "ua": "Виберіть відео, яке хочете глянути."
+  },
+  "TitleInfo_TRtxt01_01": {
+    "en": "Select the demo you want to try.",
+    "ua": "Виберіть демо, яке хочете спробувати."
+  },
+  "TitleInfo_TRtxt01_02": {
+    "en": "Download Demo",
+    "ua": "Завантажити демо"
+  },
+  "TitleInfo_TRdlg01_01": {
+    "en": "",
+    "ua": ""
+  },
+  "TitleInfo_PRtitle01_01": {
+    "en": "Reviews",
+    "ua": "Відгуки"
+  },
+  "TitleInfo_PRheading_01": {
+    "en": "Customer Comments",
+    "ua": "Коментарі покупців"
+  },
+  "TitleInfo_PRheading_02": {
+    "en": "What People Think",
+    "ua": "Що думають люди"
+  },
+  "TitleInfo_PRheading_03": {
+    "en": "People who downloaded this\nalso downloaded...",
+    "ua": "Ті, хто завантажив це,\nтакож завантажували..."
+  },
+  "TitleInfo_PRheading_04": {
+    "en": "Related Keywords",
+    "ua": "Схожі слова"
+  },
+  "TitleInfo_PRtxt01_01": {
+    "en": "User Rating",
+    "ua": "Оцінка користувачів"
+  },
+  "TitleInfo_PRtxt01_02": {
+    "en": "(Reviews: {t:1.0:})",
+    "ua": "(Відгуків: {t:1.0:})"
+  },
+  "TitleInfo_PRtxt01_03": {
+    "en": "({t:1.0:})",
+    "ua": ""
+  },
+  "TitleInfo_PRtxt03_01": {
+    "en": "Who do you think this title\nappeals to more?",
+    "ua": "Кому, на вашу думку, ця гра\nпідходить більше?"
+  },
+  "TitleInfo_PRtxt03_02": {
+    "en": "Which style of play is this title\nmore suited to?",
+    "ua": "Якому стилю гри вона\nвідповідає більше?"
+  },
+  "TitleInfo_PRtxt03_04": {
+    "en": "Everyone",
+    "ua": "Усім"
+  },
+  "TitleInfo_PRtxt03_05": {
+    "en": "Gamers",
+    "ua": "Геймерам"
+  },
+  "TitleInfo_PRtxt03_06": {
+    "en": "Casual",
+    "ua": "Спокійному"
+  },
+  "TitleInfo_PRtxt03_07": {
+    "en": "Intense",
+    "ua": "Напруженому"
+  },
+  "TitleInfo_PRtxt03_10": {
+    "en": "{t:1.0:}%",
+    "ua": ""
+  },
+  "TitleInfo_PRtxt03_11": {
+    "en": "{t:1.0:}%",
+    "ua": ""
+  },
+  "TitleInfo_PRtxt03_12": {
+    "en": "{t:1.0:}%",
+    "ua": ""
+  },
+  "TitleInfo_PRtxt03_13": {
+    "en": "{t:1.0:}%",
+    "ua": ""
+  },
+  "TitleInfo_PRtxt04_01": {
+    "en": "{t:1.0:}-year-old {t:1.14:}",
+    "ua": "{t:1.14:}, {t:1.0:} р."
+  },
+  "TitleInfo_PRtxt04_02": {
+    "en": "{t:1.14:}, {t:1.0:}",
+    "ua": ""
+  },
+  "TitleInfo_PRdlg01_01": {
+    "en": "",
+    "ua": ""
+  },
+  "TitleInfo_PRdlg01_02": {
+    "en": "View this information?",
+    "ua": "Показати ці відомості?"
+  },
+  "TitleInfo_PRdlg01_03": {
+    "en": "View",
+    "ua": "Показати"
+  },
+  "Search_title_01": {
+    "en": "Search",
+    "ua": "Пошук"
+  },
+  "Search_title_02": {
+    "en": "Filtered Search",
+    "ua": "Пошук із фільтром"
+  },
+  "Search_txt01_01": {
+    "en": "Software Search",
+    "ua": "Пошук програм"
+  },
+  "Search_txt01_02": {
+    "en": "You can search using\npopular keywords or filters.",
+    "ua": "Шукати можна за популярними\nсловами або з фільтром."
+  },
+  "Search_heading_01": {
+    "en": "",
+    "ua": ""
+  },
+  "Search_heading_02": {
+    "en": "Filtered Search",
+    "ua": "Пошук із фільтром"
+  },
+  "Search_heading_03": {
+    "en": "Popular Keywords",
+    "ua": "Популярні слова"
+  },
+  "Search_btn01_01": {
+    "en": "",
+    "ua": ""
+  },
+  "Search_btn01_02": {
+    "en": "Add Search Filters",
+    "ua": "Додати фільтри"
+  },
+  "Search_txt02_01": {
+    "en": "Apply filters to perform a search.",
+    "ua": "Задайте фільтри для пошуку."
+  },
+  "Search_txt02_02": {
+    "en": "",
+    "ua": ""
+  },
+  "Search_txt02_03": {
+    "en": "Genre",
+    "ua": "Жанр"
+  },
+  "Search_txt02_04": {
+    "en": "Publisher",
+    "ua": "Видав."
+  },
+  "Search_txt02_05": {
+    "en": "Price",
+    "ua": "Ціна"
+  },
+  "Search_txt02_06": {
+    "en": "Keyword",
+    "ua": "Слово"
+  },
+  "Search_txt02_07": {
+    "en": "Software Type",
+    "ua": "Тип програм"
+  },
+  "Search_result01_01": {
+    "en": "All",
+    "ua": "Усі"
+  },
+  "Search_result01_02": {
+    "en": "All",
+    "ua": "Усі"
+  },
+  "Search_result01_03": {
+    "en": "All",
+    "ua": "Усі"
+  },
+  "Search_result01_04": {
+    "en": "Free",
+    "ua": "Безкошт."
+  },
+  "Search_result01_05": {
+    "en": "—",
+    "ua": ""
+  },
+  "Search_result01_06": {
+    "en": "Any",
+    "ua": "Будь-яка"
+  },
+  "Search_result01_07": {
+    "en": "All Software",
+    "ua": "Усі програми"
+  },
+  "Search_result01_08": {
+    "en": "All Downloadable Software",
+    "ua": "Усі завантажувані програми"
+  },
+  "Search_txt03_01": {
+    "en": "",
+    "ua": ""
+  },
+  "Search_txt03_02": {
+    "en": "Genre",
+    "ua": "Жанр"
+  },
+  "Search_txt03_03": {
+    "en": "Publisher",
+    "ua": "Видав."
+  },
+  "Search_txt03_04": {
+    "en": "Price",
+    "ua": "Ціна"
+  },
+  "Search_txt03_05": {
+    "en": "—",
+    "ua": ""
+  },
+  "Search_txt03_06": {
+    "en": "Software Type",
+    "ua": "Тип програм"
+  },
+  "Search_txt03_07": {
+    "en": "No matches found.",
+    "ua": "Нічого не знайдено."
+  },
+  "Search_result02_01": {
+    "en": "",
+    "ua": ""
+  },
+  "Search_result02_02": {
+    "en": "All",
+    "ua": "Усі"
+  },
+  "Search_result02_03": {
+    "en": "All",
+    "ua": "Усі"
+  },
+  "Search_result02_04": {
+    "en": "Free",
+    "ua": "Безкошт."
+  },
+  "Search_result02_05": {
+    "en": "Any",
+    "ua": "Будь-яка"
+  },
+  "Search_result02_06": {
+    "en": "All Software",
+    "ua": "Усі програми"
+  },
+  "Search_result02_07": {
+    "en": "All Downloadable Software",
+    "ua": "Усі завантажувані програми"
+  },
+  "Search_swkb01_01": {
+    "en": "Enter a minimum price.",
+    "ua": "Введіть мінімальну ціну."
+  },
+  "Search_swkb01_02": {
+    "en": "Enter a maximum price.",
+    "ua": "Введіть максимальну ціну."
+  },
+  "Search_btn02_01": {
+    "en": "Reset Filters",
+    "ua": "Скинути фільтри"
+  },
+  "Search_btn02_02": {
+    "en": "Reset Price",
+    "ua": "Скинути ціну"
+  },
+  "Search_btn03_01": {
+    "en": "Apply Filters",
+    "ua": "Застосувати фільтри"
+  },
+  "Search_dlg01_01": {
+    "en": "Search returned no results.\nTry again with different search\nconditions.",
+    "ua": "Пошук не дав результатів.\nСпробуйте інші умови\nпошуку."
+  },
+  "Search_txt04_01": {
+    "en": "",
+    "ua": ""
+  },
+  "Search_txt04_02": {
+    "en": "Select a genre.",
+    "ua": "Виберіть жанр."
+  },
+  "Search_txt04_03": {
+    "en": "Select a publisher.",
+    "ua": "Виберіть видавця."
+  },
+  "Search_txt04_04": {
+    "en": "Select a software type.",
+    "ua": "Виберіть тип програм."
+  },
+  "Search_txt04_05": {
+    "en": "Software available for download from\nNintendo eShop",
+    "ua": "Програми, які можна завантажити\nз Nintendo eShop"
+  },
+  "Search_txt04_06": {
+    "en": "Software available from retailers\nstocking Nintendo products",
+    "ua": "Програми з крамниць\nіз товарами Nintendo"
+  },
+  "Search_btn04_01": {
+    "en": "",
+    "ua": ""
+  },
+  "Search_btn04_02": {
+    "en": "All",
+    "ua": "Усі"
+  },
+  "Search_btn04_03": {
+    "en": "All",
+    "ua": "Усі"
+  },
+  "Search_btn04_04": {
+    "en": "All Software",
+    "ua": "Усі програми"
+  },
+  "Search_btn04_05": {
+    "en": "All Downloadable Software",
+    "ua": "Усі завантажувані програми"
+  },
+  "WishList_title_01": {
+    "en": "Watch List",
+    "ua": "Список бажань"
+  },
+  "WishList_title_02": {
+    "en": "Software Now Available",
+    "ua": "Програми вже доступні"
+  },
+  "WishList_txt01_13": {
+    "en": "You can add any software titles which\nyou find interesting to your Watch List.",
+    "ua": "До списку бажань можна додати\nбудь-яку програму, яка вас цікавить."
+  },
+  "WishList_txt01_17": {
+    "en": "The following titles on your Watch List\nhave become available.",
+    "ua": "Ці програми з вашого списку\nбажань уже доступні."
+  },
+  "WishList_txt01_14": {
+    "en": "",
+    "ua": ""
+  },
+  "WishList_txt01_02": {
+    "en": "{t:1.2:}",
+    "ua": ""
+  },
+  "WishList_txt01_15": {
+    "en": "{t:1.2:}{t:0.2:5000} (inc. VAT){t:0.2:6400}",
+    "ua": "{t:1.2:}{t:0.2:5000} (з ПДВ){t:0.2:6400}"
+  },
+  "WishList_txt01_16": {
+    "en": "{t:1.2:}{t:0.2:5000} (inc. GST){t:0.2:6400}",
+    "ua": "{t:1.2:}{t:0.2:5000} (з GST){t:0.2:6400}"
+  },
+  "WishList_txt01_28": {
+    "en": "{t:1.2:}",
+    "ua": ""
+  },
+  "WishList_txt01_29": {
+    "en": "{t:1.2:} {t:0.2:5000}(inc. VAT){t:0.2:6400}",
+    "ua": "{t:1.2:} {t:0.2:5000}(з ПДВ){t:0.2:6400}"
+  },
+  "WishList_txt01_30": {
+    "en": "{t:1.2:} {t:0.2:5000}(inc. GST){t:0.2:6400}",
+    "ua": "{t:1.2:} {t:0.2:5000}(з GST){t:0.2:6400}"
+  },
+  "WishList_txt01_12": {
+    "en": "Price: TBD",
+    "ua": "Ціну не оголошено"
+  },
+  "WishList_txt01_25": {
+    "en": "",
+    "ua": ""
+  },
+  "WishList_txt01_26": {
+    "en": "",
+    "ua": ""
+  },
+  "WishList_txt01_27": {
+    "en": "",
+    "ua": ""
+  },
+  "WishList_txt01_24": {
+    "en": "Offers in-game purchases",
+    "ua": "Є покупки в грі"
+  },
+  "WishList_txt01_03": {
+    "en": "",
+    "ua": ""
+  },
+  "WishList_txt01_06": {
+    "en": "",
+    "ua": ""
+  },
+  "WishList_txt01_18": {
+    "en": "Release Date: {t:1.5:}/{t:1.4:}/{t:1.3:}",
+    "ua": "Вихід: {t:1.5:}.{t:1.4:}.{t:1.3:}"
+  },
+  "WishList_txt01_19": {
+    "en": "Release Date: {t:1.4:}/{t:1.3:}",
+    "ua": "Вихід: {t:1.4:}.{t:1.3:}"
+  },
+  "WishList_txt01_20": {
+    "en": "Release Date: {t:1.3:}",
+    "ua": "Вихід: {t:1.3:}"
+  },
+  "WishList_txt01_21": {
+    "en": "Release Date: {t:1.5:}/{t:1.4:}/{t:1.3:}",
+    "ua": "Вихід: {t:1.5:}.{t:1.4:}.{t:1.3:}"
+  },
+  "WishList_txt01_22": {
+    "en": "Release Date: {t:1.4:}/{t:1.3:}",
+    "ua": "Вихід: {t:1.4:}.{t:1.3:}"
+  },
+  "WishList_txt01_23": {
+    "en": "Release Date: {t:1.3:}",
+    "ua": "Вихід: {t:1.3:}"
+  },
+  "WishList_txt01_04": {
+    "en": "",
+    "ua": ""
+  },
+  "WishList_txt01_07": {
+    "en": "",
+    "ua": ""
+  },
+  "WishList_txt01_05": {
+    "en": "",
+    "ua": ""
+  },
+  "WishList_txt01_08": {
+    "en": "",
+    "ua": ""
+  },
+  "WishList_txt01_09": {
+    "en": "",
+    "ua": ""
+  },
+  "WishList_txt01_10": {
+    "en": "Release Date: TBD",
+    "ua": "Дату виходу не оголошено"
+  },
+  "WishList_txt01_11": {
+    "en": "Release Date: TBD",
+    "ua": "Дату виходу не оголошено"
+  },
+  "WishList_btn01_01": {
+    "en": "View Title Information",
+    "ua": "Про програму"
+  },
+  "WishList_btn01_02": {
+    "en": "Remove",
+    "ua": "Вилучити"
+  },
+  "WishList_btn01_03": {
+    "en": "Previous",
+    "ua": "Назад"
+  },
+  "WishList_btn01_04": {
+    "en": "Next",
+    "ua": "Далі"
+  },
+  "WishList_btn01_05": {
+    "en": "All",
+    "ua": "Усі"
+  },
+  "WishList_dlg01_01": {
+    "en": "You don't have any titles on your\nWatch List. You can add a title from\nits Title Information Screen.",
+    "ua": "У вашому списку бажань нічого\nнемає.\nДодати програму можна з екрана\nз відомостями про неї."
+  },
+  "WishList_dlg02_01": {
+    "en": "Remove this software title \nfrom your Watch List?",
+    "ua": "Вилучити цю програму \nзі списку бажань?"
+  },
+  "WishList_dlg02_02": {
+    "en": "Cancel",
+    "ua": "Скасувати"
+  },
+  "WishList_dlg02_03": {
+    "en": "Remove",
+    "ua": "Вилучити"
+  },
+  "WishList_dlg03_01": {
+    "en": "You don't have any titles on your\nWatch List for this platform.",
+    "ua": "У списку бажань немає програм\nдля цієї платформи."
+  },
+  "MemoryCheck_title01_01": {
+    "en": "Confirm Download Destination",
+    "ua": "Куди завантажувати"
+  },
+  "MemoryCheck_txt01_02": {
+    "en": "Blocks Required: ",
+    "ua": "Потрібно блоків: "
+  },
+  "MemoryCheck_txt01_03": {
+    "en": "{t:1.0:}",
+    "ua": ""
+  },
+  "MemoryCheck_txt01_04": {
+    "en": "This software will be downloaded\nto the SD Card.",
+    "ua": "Цю програму буде завантажено\nна карту SD."
+  },
+  "MemoryCheck_txt01_05": {
+    "en": "This software will be downloaded \nto the System Memory.",
+    "ua": "Цю програму буде завантажено \nу пам'ять системи."
+  },
+  "MemoryCheck_txt02_01": {
+    "en": "Cannot download to SD Card.",
+    "ua": "Не можна завантажити на\nкарту SD."
+  },
+  "MemoryCheck_txt02_02": {
+    "en": "Cannot download to System Memory.",
+    "ua": "Не можна завантажити в пам'ять\nсистеми."
+  },
+  "MemoryCheck_txt03_02": {
+    "en": "There is no free space\non the HOME Menu.",
+    "ua": "У меню HOME немає\nвільного місця."
+  },
+  "MemoryCheck_txt03_03": {
+    "en": "You need {t:1.0:} more open\nblock(s) to download this.",
+    "ua": "Щоб це завантажити, потрібно\nще {t:1.0:} вільних блоків."
+  },
+  "MemoryCheck_btn01_01": {
+    "en": "HOME Menu Space",
+    "ua": "Місце в меню HOME"
+  },
+  "MemoryCheck_btn01_02": {
+    "en": "Freeing Up Blocks",
+    "ua": "Звільнення блоків"
+  },
+  "MemoryCheck_txt04_01": {
+    "en": "Insert an SD Card.",
+    "ua": "Вставте карту SD."
+  },
+  "MemoryCheck_dlgtitle01_01": {
+    "en": "Free HOME Menu Space",
+    "ua": "Звільнити місце в меню HOME"
+  },
+  "MemoryCheck_dlgtitle01_02": {
+    "en": "Open Blocks",
+    "ua": "Вільні блоки"
+  },
+  "MemoryCheck_dlgtxt01_01": {
+    "en": "You have reached the maximum number of \nsoftware titles on this SD Card. You cannot\ndownload any more software to the SD Card.",
+    "ua": "Ви досягли межі кількості програм \nна цій карті SD. Більше програм на неї\nзавантажити не можна."
+  },
+  "MemoryCheck_dlgtxt01_02": {
+    "en": "You have reached the maximum number of \nsoftware titles in the System Memory. You \ncannot download any more software to the\nSystem Memory.",
+    "ua": "Ви досягли межі кількості програм \nу пам'яті системи. Більше програм \nу неї завантажити не можна."
+  },
+  "MemoryCheck_dlgtxt01_03": {
+    "en": "An SD Card with {t:1.0:} blocks of \nfree space is required to download\nthis software.",
+    "ua": "Щоб завантажити цю програму, \nпотрібна карта SD з {t:1.0:} вільними\nблоками."
+  },
+  "MemoryCheck_dlgtxt01_04": {
+    "en": "You need to create {t:1.0:} blocks of free\nspace in the System Memory\nto download this software.",
+    "ua": "Щоб завантажити цю програму,\nтреба звільнити {t:1.0:} блоків\nу пам'яті системи."
+  },
+  "MemoryCheck_dlgtxt02_01": {
+    "en": "Move or delete software using Data\nManagement in the System Settings\nto free up space on the HOME Menu.\nOnce you have made more space\navailable, try downloading the\nsoftware again.\n\nGo to Data Management now?",
+    "ua": "Перемістіть або видаліть програми\nчерез «Керування даними»\nу налаштуваннях системи, щоб\nзвільнити місце в меню HOME.\nКоли місця стане більше,\nспробуйте завантажити\nпрограму знову.\n\nВідкрити «Керування даними»?"
+  },
+  "MemoryCheck_dlgtxt02_02": {
+    "en": "Move or delete software using\nData Management in the System\nSettings to free up blocks. Once\nyou have made more space available,\ntry downloading the software again.\n\nGo to Data Management now?",
+    "ua": "Перемістіть або видаліть програми\nчерез «Керування даними»\nу налаштуваннях системи, щоб\nзвільнити блоки. Коли місця стане\nбільше, спробуйте завантажити\nпрограму знову.\n\nВідкрити «Керування даними»?"
+  },
+  "MemoryCheck_dlgbtn01_01": {
+    "en": "Yes",
+    "ua": "Так"
+  },
+  "Update_title01_01": {
+    "en": "Available Updates",
+    "ua": "Доступні оновлення"
+  },
+  "Update_title01_02": {
+    "en": "Titles You've Downloaded",
+    "ua": "Завантажені програми"
+  },
+  "Update_title01_03": {
+    "en": "Redownloadable Titles",
+    "ua": "Програми для повторного завантаження"
+  },
+  "Update_txt01_01": {
+    "en": "Select the updated software\nyou want to download.",
+    "ua": "Виберіть оновлену програму,\nяку хочете завантажити."
+  },
+  "Update_txt01_02": {
+    "en": "Here you can view the titles that\nyou have already downloaded.",
+    "ua": "Тут можна побачити програми,\nякі ви вже завантажували."
+  },
+  "Update_txt02_02": {
+    "en": "Downloaded Software Titles:",
+    "ua": "Завантажених програм:"
+  },
+  "Update_txt02_03": {
+    "en": "{t:1.0:}",
+    "ua": ""
+  },
+  "Update_txt03_01": {
+    "en": "Updates Available:",
+    "ua": "Доступних оновлень:"
+  },
+  "Update_txt03_02": {
+    "en": "{t:1.0:}",
+    "ua": ""
+  },
+  "Update_txt04_01": {
+    "en": "",
+    "ua": ""
+  },
+  "Update_txt05_01": {
+    "en": "Redownloadable Software Titles:",
+    "ua": "Програм для повторного\nзавантаження:"
+  },
+  "Update_txt05_02": {
+    "en": "There are no titles for you\nto redownload.",
+    "ua": "Немає програм, які можна\nзавантажити знову."
+  },
+  "Update_btn01_01": {
+    "en": "Title Information",
+    "ua": "Про програму"
+  },
+  "Update_btn01_02": {
+    "en": "Update",
+    "ua": "Оновити"
+  },
+  "Update_btn01_03": {
+    "en": "Redownload",
+    "ua": "Завантажити знову"
+  },
+  "Update_btn01_04": {
+    "en": "",
+    "ua": ""
+  },
+  "Update_btn01_05": {
+    "en": "Previous",
+    "ua": "Назад"
+  },
+  "Update_btn01_06": {
+    "en": "Next",
+    "ua": "Далі"
+  },
+  "Update_btn01_07": {
+    "en": "Download",
+    "ua": "Завантаж."
+  },
+  "Update_btn01_08": {
+    "en": "Titles You've Downloaded",
+    "ua": "Завантажені програми"
+  },
+  "Update_btn01_09": {
+    "en": "Redownloadable Software",
+    "ua": "Повторне завантаження"
+  },
+  "Update_icon01_01": {
+    "en": "Update Available",
+    "ua": "Є оновлення"
+  },
+  "Update_icon01_02": {
+    "en": "Redownload",
+    "ua": "Завантажити знову"
+  },
+  "Update_dlg01_01": {
+    "en": "There are no updates available \nfor your software titles.",
+    "ua": "Для ваших програм немає \nдоступних оновлень."
+  },
+  "Update_dlg01_02": {
+    "en": "You have no downloaded\nsoftware titles.",
+    "ua": "Ви ще не завантажували\nжодної програми."
+  },
+  "Regi_title01_01": {
+    "en": "Confirm Your Download",
+    "ua": "Підтвердження завантаження"
+  },
+  "Regi_title01_02": {
+    "en": "Purchase Complete",
+    "ua": "Покупку завершено"
+  },
+  "Regi_title01_03": {
+    "en": "Ready to Download",
+    "ua": "Готово до завантаження"
+  },
+  "Regi_title01_04": {
+    "en": "Redeem Coupon",
+    "ua": "Використати купон"
+  },
+  "Regi_txt01_01": {
+    "en": "Please read the information on the\nlower screen before continuing.",
+    "ua": "Прочитайте текст на нижньому\nекрані, перш ніж продовжити."
+  },
+  "Regi_txt01_02": {
+    "en": "Please read the information\non the lower screen.",
+    "ua": "Прочитайте текст\nна нижньому екрані."
+  },
+  "Regi_txt02_01": {
+    "en": "(SD Card)",
+    "ua": "(карта SD)"
+  },
+  "Regi_txt02_02": {
+    "en": "(System Memory)",
+    "ua": "(пам'ять системи)"
+  },
+  "Regi_txt02_03": {
+    "en": "Demo versions can be\ndownloaded for free.",
+    "ua": "Демоверсії завантажуються\nбезкоштовно."
+  },
+  "Regi_txt02_04": {
+    "en": "Purchased titles can be\nredownloaded at no extra cost.",
+    "ua": "Куплені програми можна\nзавантажити\nзнову безкоштовно."
+  },
+  "Regi_txt02_05": {
+    "en": "Software acquired with a download\ncode can be downloaded for free.",
+    "ua": "Програму, отриману за кодом,\nможна завантажити безкоштовно."
+  },
+  "Regi_txt03_01": {
+    "en": "Price",
+    "ua": "Ціна"
+  },
+  "Regi_txt03_02": {
+    "en": "{t:1.2:}",
+    "ua": ""
+  },
+  "Regi_txt03_03": {
+    "en": "VAT",
+    "ua": "ПДВ"
+  },
+  "Regi_txt03_04": {
+    "en": "{t:1.2:}",
+    "ua": ""
+  },
+  "Regi_txt03_05": {
+    "en": "Cost",
+    "ua": "Разом"
+  },
+  "Regi_txt03_06": {
+    "en": "{t:1.2:}",
+    "ua": ""
+  },
+  "Regi_txt03_07": {
+    "en": "(inc. VAT)",
+    "ua": "(з ПДВ)"
+  },
+  "Regi_txt03_08": {
+    "en": "(inc. GST)",
+    "ua": "(з GST)"
+  },
+  "Regi_txt03_09": {
+    "en": "Release Date",
+    "ua": "Вихід"
+  },
+  "Regi_txt03_10": {
+    "en": "{t:1.5:}/{t:1.4:}/{t:1.3:}",
+    "ua": ""
+  },
+  "Regi_txt03_11": {
+    "en": "Title not playable before\nrelease date.",
+    "ua": "До дати виходу грати\nне можна."
+  },
+  "Regi_txt03_12": {
+    "en": "A coupon will be applied.",
+    "ua": "Буде застосовано купон."
+  },
+  "Regi_txt03_13": {
+    "en": "A Just for You offer will be applied.",
+    "ua": "Буде застосовано пропозицію для вас."
+  },
+  "Regi_txt03_14": {
+    "en": "Offers in-game purchases",
+    "ua": "Є покупки в грі"
+  },
+  "Regi_txt03_15": {
+    "en": "",
+    "ua": ""
+  },
+  "Regi_txt03_16": {
+    "en": "",
+    "ua": ""
+  },
+  "Regi_txt03_17": {
+    "en": "",
+    "ua": ""
+  },
+  "Regi_txt03_18": {
+    "en": "",
+    "ua": ""
+  },
+  "Regi_txt04_01": {
+    "en": "Required Blocks",
+    "ua": "Потрібно блоків"
+  },
+  "Regi_txt04_02": {
+    "en": "{t:1.0:}",
+    "ua": ""
+  },
+  "Regi_txt06_01": {
+    "en": "Funds",
+    "ua": "Кошти"
+  },
+  "Regi_txt06_02": {
+    "en": "Current Balance",
+    "ua": "Поточний баланс"
+  },
+  "Regi_txt06_03": {
+    "en": "{t:1.1:}",
+    "ua": ""
+  },
+  "Regi_txt06_07": {
+    "en": "Balance After Purchase",
+    "ua": "Баланс після покупки"
+  },
+  "Regi_txt06_08": {
+    "en": "{t:1.2:}",
+    "ua": ""
+  },
+  "Regi_txt07_01": {
+    "en": "Funds",
+    "ua": "Кошти"
+  },
+  "Regi_txt07_02": {
+    "en": "Demo versions can be\ndownloaded for free.",
+    "ua": "Демоверсії завантажуються\nбезкоштовно."
+  },
+  "Regi_txt07_03": {
+    "en": "Purchased titles can be \nredownloaded at no extra cost.",
+    "ua": "Куплені програми можна \nзавантажити знову безкоштовно."
+  },
+  "Regi_txt08_01": {
+    "en": "Blocks",
+    "ua": "Блоки"
+  },
+  "Regi_txt08_02": {
+    "en": "Current Open Blocks",
+    "ua": "Вільних блоків зараз"
+  },
+  "Regi_txt08_03": {
+    "en": "(System Memory)",
+    "ua": "(пам'ять системи)"
+  },
+  "Regi_txt08_04": {
+    "en": "(SD Card)",
+    "ua": "(карта SD)"
+  },
+  "Regi_txt08_05": {
+    "en": "{t:1.0:}",
+    "ua": ""
+  },
+  "Regi_txt08_06": {
+    "en": "Required Blocks",
+    "ua": "Потрібно блоків"
+  },
+  "Regi_txt08_07": {
+    "en": "{t:1.0:}",
+    "ua": ""
+  },
+  "Regi_txt08_08": {
+    "en": "Open Blocks After Download",
+    "ua": "Вільних блоків після завант."
+  },
+  "Regi_txt08_09": {
+    "en": "{t:1.0:}",
+    "ua": ""
+  },
+  "Regi_txt08_10": {
+    "en": "This title is a reproduction of a game that\nwas originally released for the Game Boy\nor Game Boy Color systems.",
+    "ua": "Ця програма — перевидання гри, яка\nспершу вийшла для Game Boy\nабо Game Boy Color."
+  },
+  "Regi_btn01_01": {
+    "en": "Cancel",
+    "ua": "Скасувати"
+  },
+  "Regi_btn01_02": {
+    "en": "Purchase",
+    "ua": "Купити"
+  },
+  "Regi_btn01_03": {
+    "en": "Cancel",
+    "ua": "Скасувати"
+  },
+  "Regi_btn01_04": {
+    "en": "Update",
+    "ua": "Оновити"
+  },
+  "Regi_btn01_05": {
+    "en": "Download",
+    "ua": "Завантаж."
+  },
+  "Regi_btn01_06": {
+    "en": "Download",
+    "ua": "Завантаж."
+  },
+  "Regi_btn01_07": {
+    "en": "Use",
+    "ua": "Використати"
+  },
+  "Regi_dlg03_01": {
+    "en": "I consent that Nintendo begins with\nits performance before the\ncancellation period ends.\nI acknowledge that I thereby lose\nmy right to cancel.",
+    "ua": "Я згоден, що Nintendo почне\nвиконання до завершення терміну\nвідмови. Я усвідомлюю, що\nвтрачаю право на відмову."
+  },
+  "Regi_thankyou01_01": {
+    "en": "Thank you!",
+    "ua": "Дякуємо!"
+  },
+  "Regi_thankyou01_02": {
+    "en": "The download process\nwill begin shortly.",
+    "ua": "Завантаження зараз\nпочнеться."
+  },
+  "Regi_thankyou01_03": {
+    "en": "Thank you!",
+    "ua": "Дякуємо!"
+  },
+  "Regi_thankyou01_04": {
+    "en": "The download process\nwill begin shortly.",
+    "ua": "Завантаження зараз\nпочнеться."
+  },
+  "Regi_thankyou02_01": {
+    "en": "The download process has begun.\nPlease select how you would like\nto complete your download.",
+    "ua": "Завантаження почалося.\nВиберіть, як його\nзавершити."
+  },
+  "Regi_thankyou02_02": {
+    "en": "To complete the download now,\ntouch Complete Download Now.",
+    "ua": "Щоб завершити зараз, торкніться\n«Завантажити зараз»."
+  },
+  "Regi_thankyou02_03": {
+    "en": "Sleep Mode\nDownload",
+    "ua": "Завантажити\nв режимі сну"
+  },
+  "Regi_thankyou02_04": {
+    "en": "Complete\nDownload Now",
+    "ua": "Завантажити\nзараз"
+  },
+  "Regi_thankyou02_05": {
+    "en": "About Sleep Mode Downloads",
+    "ua": "Про завантаження в режимі сну"
+  },
+  "Regi_thankyou02_06": {
+    "en": "The download process has begun.\nPlease select how you would like\nto complete your download.",
+    "ua": "Завантаження почалося.\nВиберіть, як його\nзавершити."
+  },
+  "Regi_txt09_01": {
+    "en": "Sleep Mode Download",
+    "ua": "Завантаження в режимі сну"
+  },
+  "Regi_txt09_02": {
+    "en": "By selecting Sleep Mode Download,\nyou can finish downloading the\nsoftware using SpotPass while the\nsystem is in Sleep Mode. This allows\nyou to continue shopping without\nhaving to wait for your product to\ndownload.\n\nYou can use the Sleep Mode\nDownload option to download\nup to ten products at one time.",
+    "ua": "Якщо вибрати завантаження\nв режимі сну, програма\nдовантажиться через SpotPass,\nпоки консоль спить. Так можна\nдалі гуляти магазином і не чекати\nна завантаження.\n\nУ режимі сну можна завантажувати\nдо десяти покупок одночасно."
+  },
+  "Regi_txt09_03": {
+    "en": "How to use Sleep Mode Download",
+    "ua": "Як користуватися завантаженням у\nрежимі сну"
+  },
+  "Regi_txt09_04": {
+    "en": "Put the system into Sleep Mode\nand wait for the software to finish\ndownloading.\n\n• If there are any titles which\n　have not finished downloading\n　when you exit Sleep Mode, you\n　will not be able to play them.\n　Put the system into Sleep Mode\n　again to complete download of\n　these titles.\n\n• If you change the SD Card while\n　the transfer is taking place or if\n　the system loses power, your\n　download may be stopped. If this\n　happens, go to Settings / Other ⇒\n　Redownloadable Software and\n　select the relevant software titles\n　to restart the download.",
+    "ua": "Переведіть консоль у режим сну\nй дочекайтеся, поки програма\nдовантажиться.\n\n• Якщо на момент виходу з режиму\n　сну щось не довантажилося,\n　грати в це не вийде. Переведіть\n　консоль у режим сну знову, щоб\n　довантажити.\n\n• Якщо під час передачі змінити\n　карту SD або якщо консоль\n　розрядиться, завантаження може\n　спинитися. Тоді відкрийте\n　«Параметри / Інше» ⇒ «Програми\n　для повторного завантаження»\n　й виберіть потрібні програми,\n　щоб продовжити."
+  },
+  "Regi_txt10_01": {
+    "en": "This title has been set to finish\ndownloading in Sleep Mode.\nDo you want to continue shopping?",
+    "ua": "Цю програму позначено для\nдовантаження в режимі сну.\nПродовжити покупки?"
+  },
+  "Regi_txt10_02": {
+    "en": "The download will complete when you\nput the system into Sleep Mode.",
+    "ua": "Завантаження завершиться, коли ви\nпереведете консоль у режим сну."
+  },
+  "Regi_txt11_01": {
+    "en": "",
+    "ua": ""
+  },
+  "Regi_txt11_02": {
+    "en": "",
+    "ua": ""
+  },
+  "Regi_txt11_03": {
+    "en": "{t:1.2:}",
+    "ua": ""
+  },
+  "Regi_txt11_04": {
+    "en": "{t:1.2:}",
+    "ua": ""
+  },
+  "Regi_txt11_05": {
+    "en": "{t:1.2:} {t:0.2:4b00}(inc. VAT){t:0.2:6400}",
+    "ua": "{t:1.2:} {t:0.2:4b00}(з ПДВ){t:0.2:6400}"
+  },
+  "Regi_txt11_06": {
+    "en": "{t:1.2:} {t:0.2:4b00}(inc. GST){t:0.2:6400}",
+    "ua": "{t:1.2:} {t:0.2:4b00}(з GST){t:0.2:6400}"
+  },
+  "Regi_txt11_07": {
+    "en": "Expires:\n{t:1.5:}/{t:1.4:}/{t:1.3:} {t:1.6:}:{t:1.7:}",
+    "ua": "Діє до:\n{t:1.5:}.{t:1.4:}.{t:1.3:} {t:1.6:}:{t:1.7:}"
+  },
+  "Regi_txt11_08": {
+    "en": "This offer can be used repeatedly\nuntil the expiry date.",
+    "ua": "Цією пропозицією можна користуватись\nбагато разів до кінця терміну."
+  },
+  "Regi_txt11_09": {
+    "en": "This offer can be used once.",
+    "ua": "Пропозицією можна скористатися\nраз."
+  },
+  "Download_title_01": {
+    "en": "Downloading Software",
+    "ua": "Завантаження програми"
+  },
+  "Download_title_02": {
+    "en": "Software Download Complete",
+    "ua": "Програму завантажено"
+  },
+  "Download_txt01_01": {
+    "en": "Downloading software...\nPlease do not turn off the power\nor remove the SD Card.",
+    "ua": "Завантаження програми...\nНе вимикайте консоль\nі не виймайте карту SD."
+  },
+  "Download_txt01_05": {
+    "en": "Destination: SD Card",
+    "ua": "Куди: карта SD"
+  },
+  "Download_txt01_06": {
+    "en": "Destination: System Memory",
+    "ua": "Куди: пам'ять системи"
+  },
+  "Download_txt02_01": {
+    "en": "Download complete!",
+    "ua": "Завантаження завершено!"
+  },
+  "Download_txt02_02": {
+    "en": "Download complete. You can find\nthe software on the HOME Menu.\nDo you want to continue shopping?",
+    "ua": "Завантаження завершено. Програму\nшукайте в меню HOME.\nПродовжити покупки?"
+  },
+  "Download_txt02_03": {
+    "en": "View Receipt",
+    "ua": "Глянути квитанцію"
+  },
+  "Download_txt02_04": {
+    "en": "Continue",
+    "ua": "Далі"
+  },
+  "Download_txt02_05": {
+    "en": ": Return to HOME Menu",
+    "ua": ": назад у меню HOME"
+  },
+  "Download_txt02_21": {
+    "en": "A receipt will be sent to the email\naddress registered to your Nintendo\nAccount. If a child account is being\nused, the receipt will be sent to the\nparent or guardian's email address.",
+    "ua": "Квитанцію надішлемо на адресу\nелектронної пошти, указану у вашому\nобліковому записі Nintendo. Якщо\nвикористовується дитячий запис,\nквитанція піде на адресу батьків\nчи опікуна."
+  },
+  "Download_txt02_06": {
+    "en": "Continue shopping?",
+    "ua": "Продовжити покупки?"
+  },
+  "Download_txt02_07": {
+    "en": "Please read the information\non the upper screen.",
+    "ua": "Прочитайте текст\nна верхньому екрані."
+  },
+  "Download_txt02_08": {
+    "en": "People who downloaded this\nalso downloaded...",
+    "ua": "Ті, хто завантажив це,\nтакож завантажували..."
+  },
+  "Download_txt02_09": {
+    "en": "{t:1.2:}",
+    "ua": ""
+  },
+  "Download_txt02_10": {
+    "en": "Software Update",
+    "ua": "Оновлення програми"
+  },
+  "Download_txt02_11": {
+    "en": "An update is available\nfor this software.",
+    "ua": "Для цієї програми\nє оновлення."
+  },
+  "Download_txt02_12": {
+    "en": "Update Software",
+    "ua": "Оновити програму"
+  },
+  "Download_txt02_13": {
+    "en": "Valid Code",
+    "ua": "Дійсний код"
+  },
+  "Download_txt02_14": {
+    "en": "Use",
+    "ua": "Використати"
+  },
+  "Download_txt02_15": {
+    "en": "Invalid Codes for Nintendo eShop\non Nintendo 3DS",
+    "ua": "Коди, недійсні для Nintendo eShop\nна Nintendo 3DS"
+  },
+  "Download_txt02_16": {
+    "en": "Check your receipt for\nmore information.",
+    "ua": "Докладніше — у вашій\nквитанції."
+  },
+  "Download_txt02_17": {
+    "en": "You can view the code at any time\nby checking the receipt within Account\nActivity in the Settings / Other menu.",
+    "ua": "Код можна глянути будь-коли\nу квитанції в розділі «Історія покупок»\nу меню «Параметри / Інше»."
+  },
+  "Download_txt02_20": {
+    "en": "The code will also be sent to the email\naddress registered to your Nintendo\nAccount.",
+    "ua": "Код також надішлемо на адресу\nелектронної пошти, указану у вашому\nобліковому записі Nintendo."
+  },
+  "Download_txt02_18": {
+    "en": "Purchase complete.",
+    "ua": "Покупку завершено."
+  },
+  "Download_txt02_19": {
+    "en": "The following codes\nhave been issued.",
+    "ua": "Видано такі\nкоди."
+  },
+  "Download_list01_01": {
+    "en": "",
+    "ua": ""
+  },
+  "Download_list01_02": {
+    "en": "",
+    "ua": ""
+  },
+  "Download_list02_01": {
+    "en": "",
+    "ua": ""
+  },
+  "Download_dlg01_01": {
+    "en": "A software update is available.\n\nDownload this update?",
+    "ua": "Є оновлення програми.\n\nЗавантажити його?"
+  },
+  "Recommend_title_01": {
+    "en": "Submit Reviews",
+    "ua": "Написати відгук"
+  },
+  "Recommend_txt01_01": {
+    "en": "Here you can submit reviews\nfor titles you have played.",
+    "ua": "Тут можна написати відгук\nпро ігри, у які ви грали."
+  },
+  "Recommend_txt01_02": {
+    "en": "There is no software you can\nreview at this time.\nTo review a title, you must have\nplayed it for at least an hour.",
+    "ua": "Зараз немає програм, про які\nви могли б написати відгук.\nЩоб написати відгук, треба\nпограти щонайменше годину."
+  },
+  "Recommend_txt02_01": {
+    "en": "Publisher: ",
+    "ua": "Видав.: "
+  },
+  "Recommend_txt02_05": {
+    "en": "Release Date: ",
+    "ua": "Вихід: "
+  },
+  "Recommend_txt02_02": {
+    "en": "Release Date: ",
+    "ua": "Вихід: "
+  },
+  "Recommend_txt02_03": {
+    "en": "{t:1.5:}/{t:1.4:}/{t:1.3:}",
+    "ua": ""
+  },
+  "Recommend_txt02_04": {
+    "en": "Software Type: ",
+    "ua": "Тип програми: "
+  },
+  "Recommend_reco01_01": {
+    "en": "Does this title appeal more\nto male or female users?",
+    "ua": "Кому ця гра підходить більше —\nчоловікам чи жінкам?"
+  },
+  "Recommend_reco01_02": {
+    "en": "Male",
+    "ua": "Чолов."
+  },
+  "Recommend_reco01_03": {
+    "en": "Female",
+    "ua": "Жінкам"
+  },
+  "Recommend_result01_01": {
+    "en": "Male",
+    "ua": "Чоловікам"
+  },
+  "Recommend_result01_02": {
+    "en": "Female",
+    "ua": "Жінкам"
+  },
+  "Recommend_reco02_01": {
+    "en": "How old is the person who\nenjoyed this title the most?",
+    "ua": "Скільки років тому, кому ця гра\nсподобалася найбільше?"
+  },
+  "Recommend_reco02_02": {
+    "en": "Enter an Age",
+    "ua": "Ввести вік"
+  },
+  "Recommend_swkb01_01": {
+    "en": "Enter an age.",
+    "ua": "Введіть вік."
+  },
+  "Recommend_reco02_03": {
+    "en": "OK",
+    "ua": "OK"
+  },
+  "Recommend_reco02_04": {
+    "en": "{t:1.0:}",
+    "ua": ""
+  },
+  "Recommend_result02_01": {
+    "en": "{t:1.0:}",
+    "ua": ""
+  },
+  "Recommend_reco03_01": {
+    "en": "Give this title a rating\nout of five stars.",
+    "ua": "Оцініть цю гру\nвід однієї до п'яти зірок."
+  },
+  "Recommend_reco03_02": {
+    "en": "Didn't like it",
+    "ua": "Не сподобалося"
+  },
+  "Recommend_reco03_03": {
+    "en": "Loved it",
+    "ua": "Дуже сподобалося"
+  },
+  "Recommend_reco03_04": {
+    "en": "OK",
+    "ua": "OK"
+  },
+  "Recommend_dlg02_01": {
+    "en": "The software rating for this title\ndoes not recommend this software\nfor use by players of the age that\nyou have entered. Your review\ncannot be processed.",
+    "ua": "Віковий рейтинг цієї гри не радить\nїї гравцям того віку, який ви\nввели. Ваш відгук не можна\nопрацювати."
+  },
+  "Recommend_dlg02_02": {
+    "en": "No software can be\ndisplayed at this time.",
+    "ua": "Зараз немає програм,\nяких можна показати."
+  },
+  "Recommend_reco04_01": {
+    "en": "Who do you think this title\nappeals to more?",
+    "ua": "Кому, на вашу думку, ця гра\nпідходить більше?"
+  },
+  "Recommend_reco04_02": {
+    "en": "Everyone",
+    "ua": "Усім"
+  },
+  "Recommend_reco04_03": {
+    "en": "Gamers",
+    "ua": "Геймерам"
+  },
+  "Recommend_result04_01": {
+    "en": "Everyone",
+    "ua": "Усім"
+  },
+  "Recommend_result04_02": {
+    "en": "Gamers",
+    "ua": "Геймерам"
+  },
+  "Recommend_reco05_01": {
+    "en": "Which style of play is this title\nmore suited to?",
+    "ua": "Якому стилю гри вона\nвідповідає більше?"
+  },
+  "Recommend_reco05_02": {
+    "en": "Casual",
+    "ua": "Спокійному"
+  },
+  "Recommend_reco05_03": {
+    "en": "Intense",
+    "ua": "Напруженому"
+  },
+  "Recommend_result05_01": {
+    "en": "Casual",
+    "ua": "Спокійному"
+  },
+  "Recommend_result05_02": {
+    "en": "Intense",
+    "ua": "Напруженому"
+  },
+  "Recommend_reco07_01": {
+    "en": "Ensure that the details on\nthe upper screen are correct,\nthen touch Submit to continue.",
+    "ua": "Перевірте, чи дані на верхньому\nекрані правильні, тоді торкніться\n«Надіслати»."
+  },
+  "Recommend_reco07_02": {
+    "en": "Start Again",
+    "ua": "Спочатку"
+  },
+  "Recommend_reco07_03": {
+    "en": "Submit",
+    "ua": "Надіслати"
+  },
+  "Recommend_reco08_01": {
+    "en": "Submitted! Thank you\nfor your contribution.",
+    "ua": "Надіслано! Дякуємо\nза ваш внесок."
+  },
+  "Recommend_dlg03_01": {
+    "en": "You have already submitted a\nreview for this title.\n\nYou can only submit one \nreview for each title.",
+    "ua": "Ви вже надсилали відгук\nпро цю гру.\n\nПро кожну гру можна надіслати \nлише один відгук."
+  },
+  "Recommend_title03_01": {
+    "en": "Your Reviews",
+    "ua": "Ваші відгуки"
+  },
+  "Recommend_txt03_01": {
+    "en": "Here you can see the software you\nhave submitted reviews for.",
+    "ua": "Тут видно ігри, про які ви\nнадсилали відгуки."
+  },
+  "Recommend_txt03_04": {
+    "en": "You don't currently have any reviews.\nYou will be able to view your reviews\nhere after you submit them.",
+    "ua": "Відгуків у вас поки що немає.\nВони з'являться тут після того,\nяк ви їх надішлете."
+  },
+  "Recommend_dlg04_01": {
+    "en": "Male",
+    "ua": "Чолов."
+  },
+  "Recommend_dlg04_02": {
+    "en": "Female",
+    "ua": "Жінкам"
+  },
+  "Recommend_dlg04_03": {
+    "en": "{t:1.0:}",
+    "ua": ""
+  },
+  "Recommend_dlg04_05": {
+    "en": "Everyone",
+    "ua": "Усім"
+  },
+  "Recommend_dlg04_06": {
+    "en": "Gamers",
+    "ua": "Геймерам"
+  },
+  "Recommend_dlg04_07": {
+    "en": "Casual",
+    "ua": "Спокійному"
+  },
+  "Recommend_dlg04_08": {
+    "en": "Intense",
+    "ua": "Напруженому"
+  },
+  "Recommend_dlg04_11": {
+    "en": "Back",
+    "ua": "Назад"
+  },
+  "Recommend_dlg04_12": {
+    "en": "Title Information",
+    "ua": "Про програму"
+  },
+  "Recommend_btn01_01": {
+    "en": "Delete Reviews",
+    "ua": "Видалити відгуки"
+  },
+  "Recommend_btn01_02": {
+    "en": "Previous",
+    "ua": "Назад"
+  },
+  "Recommend_btn01_03": {
+    "en": "Next",
+    "ua": "Далі"
+  },
+  "Recommend_dlg05_01": {
+    "en": "This will delete all reviews you have\nsubmitted. This data cannot\nbe recovered once deleted.\nAre you sure you want to delete\nthese records?",
+    "ua": "Це видалить усі надіслані вами\nвідгуки. Після видалення дані\nвже не відновити.\nСправді видалити\nці записи?"
+  },
+  "Recommend_dlg05_02": {
+    "en": "Cancel",
+    "ua": "Скасувати"
+  },
+  "Recommend_dlg05_03": {
+    "en": "Delete",
+    "ua": "Стерти"
+  },
+  "SMenu_icon01_01": {
+    "en": "Menu",
+    "ua": "Меню"
+  },
+  "SMenu_dlg01_01": {
+    "en": "Menu",
+    "ua": "Меню"
+  },
+  "SMenu_dlg01_02": {
+    "en": "Balance",
+    "ua": "Баланс"
+  },
+  "SMenu_dlg01_03": {
+    "en": "Titles on Watch List",
+    "ua": "Програм у списку\nбажань"
+  },
+  "SMenu_dlg01_04": {
+    "en": "{t:1.1:}",
+    "ua": ""
+  },
+  "SMenu_dlg01_05": {
+    "en": "{t:1.0:}",
+    "ua": ""
+  },
+  "SMenu_dlg02_01": {
+    "en": "Close",
+    "ua": "Закрити"
+  },
+  "SMenu_dlg02_02": {
+    "en": "Back to Main Menu",
+    "ua": "До головного меню"
+  },
+  "SMenu_dlg02_03": {
+    "en": "Software Search",
+    "ua": "Пошук програм"
+  },
+  "SMenu_dlg02_04": {
+    "en": "Watch List",
+    "ua": "Список бажань"
+  },
+  "SMenu_dlg02_05": {
+    "en": "Add Funds",
+    "ua": "Додати кошти"
+  },
+  "SMenu_dlg02_06": {
+    "en": "Settings / Other",
+    "ua": "Параметри / Інше"
+  },
+  "SMenu_dlg02_07": {
+    "en": "Submit Reviews",
+    "ua": "Написати відгук"
+  },
+  "SMenu_dlg02_08": {
+    "en": "Redeem\nDownload Code",
+    "ua": "Використати\nкод завантаження"
+  },
+  "Charge_title01_01": {
+    "en": "Add Funds",
+    "ua": "Додати кошти"
+  },
+  "Charge_txt01_01": {
+    "en": "You must add funds before purchasing\nsoftware, using either a Nintendo eShop Card\nor a credit card.",
+    "ua": "Перед покупкою програм треба додати\nкошти — картою Nintendo eShop\nабо платіжною картою."
+  },
+  "Charge_btn01_01": {
+    "en": "Add funds using a\nNintendo eShop Card",
+    "ua": "Додати кошти картою\nNintendo eShop"
+  },
+  "Charge_btn01_02": {
+    "en": "",
+    "ua": ""
+  },
+  "Charge_btn01_03": {
+    "en": "Add funds using\na credit card",
+    "ua": "Додати кошти\nплатіжною картою"
+  },
+  "Charge_txt02_01": {
+    "en": "Enter the 16-character activation\ncode on the Touch Screen.",
+    "ua": "Введіть 16-символьний код\nактивації на сенсорному екрані."
+  },
+  "Charge_txt02_02": {
+    "en": "Activation Code",
+    "ua": "Код активації"
+  },
+  "Charge_txt02_03": {
+    "en": "Enter the code.",
+    "ua": "Введіть код."
+  },
+  "Charge_swkb01_01": {
+    "en": "Enter the 16-character activation code\nfound on the Nintendo eShop Card.\n\nNote that hyphens and the letters\nI, O and Z are not used.",
+    "ua": "Введіть 16-символьний код активації\nз карти Nintendo eShop.\n\nЗверніть увагу: дефіси й літери\nI, O та Z не використовуються."
+  },
+  "Charge_btn02_01": {
+    "en": "Where can I get a Nintendo eShop Card?",
+    "ua": "Де взяти карту Nintendo eShop?"
+  },
+  "Charge_btn02_02": {
+    "en": "Limits on Adding Funds",
+    "ua": "Обмеження на кошти"
+  },
+  "Charge_btn02_05": {
+    "en": "Scan QR Code",
+    "ua": "Сканувати QR-код"
+  },
+  "Charge_title03_01": {
+    "en": "Limits on Adding Funds",
+    "ua": "Обмеження на кошти"
+  },
+  "Charge_txt04_01": {
+    "en": "Carefully read the information\non the back of the card.",
+    "ua": "Уважно прочитайте текст\nна зворотному боці карти."
+  },
+  "Charge_txt04_02": {
+    "en": "Nintendo eShop Card",
+    "ua": "Карта eShop"
+  },
+  "Charge_txt04_03": {
+    "en": "Enter the 16-character activation\ncode found on the back\nof the Nintendo eShop Card.",
+    "ua": "Введіть 16-символьний код\nактивації зі зворотного боку\nкарти Nintendo eShop."
+  },
+  "Charge_txt05_01": {
+    "en": "The funds will be added.\n\nOnce you have added these funds, you will not\nbe able to use them with the Wii Shop Channel\nor Nintendo DSi Shop.",
+    "ua": "Кошти буде додано.\n\nДодані кошти не можна буде витратити\nу Wii Shop Channel чи Nintendo DSi Shop."
+  },
+  "Charge_txt05_02": {
+    "en": "Funds to Add",
+    "ua": "Кошти до додавання"
+  },
+  "Charge_txt05_03": {
+    "en": "{t:1.2:}",
+    "ua": ""
+  },
+  "Charge_txt05_04": {
+    "en": "Add these funds?",
+    "ua": "Додати ці кошти?"
+  },
+  "Charge_btn05_01": {
+    "en": "Don't Add",
+    "ua": "Не додавати"
+  },
+  "Charge_btn05_02": {
+    "en": "Add",
+    "ua": "Додати"
+  },
+  "Charge_txt06_01": {
+    "en": "Added {t:1.2:}",
+    "ua": "Додано {t:1.2:}"
+  },
+  "Charge_txt06_02": {
+    "en": "Funds Added: ",
+    "ua": "Додано коштів: "
+  },
+  "Charge_txt06_03": {
+    "en": "Balance: ",
+    "ua": "Баланс: "
+  },
+  "Charge_btn06_01": {
+    "en": "View Receipt",
+    "ua": "Глянути квитанцію"
+  },
+  "Charge_title07_01": {
+    "en": "",
+    "ua": ""
+  },
+  "Charge_title07_02": {
+    "en": "",
+    "ua": ""
+  },
+  "Charge_btn07_01": {
+    "en": "",
+    "ua": ""
+  },
+  "Charge_btn07_02": {
+    "en": "",
+    "ua": ""
+  },
+  "Charge_btn07_03": {
+    "en": "",
+    "ua": ""
+  },
+  "Charge_txt08_01": {
+    "en": "",
+    "ua": ""
+  },
+  "Charge_txt08_02": {
+    "en": "",
+    "ua": ""
+  },
+  "Charge_txt08_03": {
+    "en": "",
+    "ua": ""
+  },
+  "Charge_txt08_04": {
+    "en": "",
+    "ua": ""
+  },
+  "Charge_txt09_01": {
+    "en": "",
+    "ua": ""
+  },
+  "Charge_txt09_02": {
+    "en": "",
+    "ua": ""
+  },
+  "Charge_txt09_03": {
+    "en": "",
+    "ua": ""
+  },
+  "Charge_txt09_04": {
+    "en": "",
+    "ua": ""
+  },
+  "Charge_txt09_05": {
+    "en": "",
+    "ua": ""
+  },
+  "Charge_txt10_01": {
+    "en": "",
+    "ua": ""
+  },
+  "Charge_txt10_02": {
+    "en": "",
+    "ua": ""
+  },
+  "Charge_txt10_03": {
+    "en": "",
+    "ua": ""
+  },
+  "Charge_txt10_04": {
+    "en": "",
+    "ua": ""
+  },
+  "Charge_txt10_05": {
+    "en": "",
+    "ua": ""
+  },
+  "Charge_txt10_06": {
+    "en": "",
+    "ua": ""
+  },
+  "Charge_txt10_07": {
+    "en": "",
+    "ua": ""
+  },
+  "Charge_txt10_08": {
+    "en": "",
+    "ua": ""
+  },
+  "Charge_txt10_09": {
+    "en": "",
+    "ua": ""
+  },
+  "Charge_txt10_10": {
+    "en": "",
+    "ua": ""
+  },
+  "Charge_txt10_11": {
+    "en": "",
+    "ua": ""
+  },
+  "Charge_txt10_12": {
+    "en": "",
+    "ua": ""
+  },
+  "Credit_title01_01": {
+    "en": "Credit Card Funding",
+    "ua": "Поповнення платіжною картою"
+  },
+  "Credit_txt01_01": {
+    "en": "Select an amount to add to your balance.\n\nYou cannot add an amount that would\ncause your balance to exceed {t:1.2:}.",
+    "ua": "Виберіть суму, яку додати до балансу.\n\nНе можна додати суму, після якої\nбаланс перевищить {t:1.2:}."
+  },
+  "Credit_btn01_01": {
+    "en": "{t:1.2:}",
+    "ua": ""
+  },
+  "Credit_btn01_03": {
+    "en": "Required\nAmount Only",
+    "ua": "Лише потрібну\nсуму"
+  },
+  "Credit_txt02_01": {
+    "en": "Credit Card Number",
+    "ua": "Номер платіжної карти"
+  },
+  "Credit_txt02_02": {
+    "en": "",
+    "ua": ""
+  },
+  "Credit_txt02_03": {
+    "en": "Expiry Date",
+    "ua": "Діє до"
+  },
+  "Credit_txt02_04": {
+    "en": "No Cards Registered",
+    "ua": "Карт не зареєстровано"
+  },
+  "Credit_txt02_05": {
+    "en": "",
+    "ua": ""
+  },
+  "Credit_txt02_06": {
+    "en": "MasterCard",
+    "ua": "MasterCard"
+  },
+  "Credit_txt02_07": {
+    "en": "VISA",
+    "ua": "VISA"
+  },
+  "Credit_txt02_08": {
+    "en": "**** **** **** {t:1.16:}",
+    "ua": ""
+  },
+  "Credit_txt02_09": {
+    "en": "{t:1.4:} / {t:1.3:}",
+    "ua": ""
+  },
+  "Credit_txt02_10": {
+    "en": "Add funds to your account using\nthe credit card information above?",
+    "ua": "Додати кошти на рахунок\nкартою, указаною вище?"
+  },
+  "Credit_btn02_01": {
+    "en": "Use This\nCredit Card",
+    "ua": "Цією\nкартою"
+  },
+  "Credit_btn02_02": {
+    "en": "Use Another\nCredit Card",
+    "ua": "Іншою\nкартою"
+  },
+  "Credit_dlg01_01": {
+    "en": "If you use another credit card,\nthe stored credit card information\nshown above will be deleted.\n\nIs this OK?",
+    "ua": "Якщо взяти іншу карту, збережені\nдані карти, показані вище,\nбуде видалено.\n\nПродовжити?"
+  },
+  "Credit_dlg01_02": {
+    "en": "Delete",
+    "ua": "Стерти"
+  },
+  "Credit_dlg02_01": {
+    "en": "Credit card information has been\ndeleted. You can now enter a new\ncredit card.",
+    "ua": "Дані платіжної карти видалено.\nТепер можна ввести нову\nкарту."
+  },
+  "Credit_dlg03_01": {
+    "en": "This will top up your account\nfunds with {t:1.2:}. Proceed?",
+    "ua": "Це поповнить ваш рахунок\nна {t:1.2:}. Продовжити?"
+  },
+  "Credit_dlg04_01": {
+    "en": "Your balance has been updated.\nPlease check your balance on the\nupper screen once you have been\nreturned to the Main Menu.\n\nYou will now be returned\nto the Main Menu.",
+    "ua": "Ваш баланс оновлено.\nПеревірте його на верхньому\nекрані, коли повернетеся\nдо головного меню.\n\nЗараз ви повернетеся\nдо головного меню."
+  },
+  "Credit_dlg05_01": {
+    "en": "I consent that Nintendo begins with\nits performance before the\ncancellation period ends.\nI acknowledge that I thereby lose\nmy right to cancel.",
+    "ua": "Я згоден, що Nintendo почне\nвиконання до завершення терміну\nвідмови. Я усвідомлюю, що\nвтрачаю право на відмову."
+  },
+  "Credit_txt03_02": {
+    "en": "Please enter a four- to eight-character password.\nThis will be used to secure your credit card\ninformation.\n\nIf this password is entered incorrectly three times\nin a row once it has been set, your credit card\ninformation will be deleted for security reasons.",
+    "ua": "Введіть пароль від чотирьох до восьми знаків.\nВін захищатиме дані вашої платіжної\nкарти.\n\nЯкщо після встановлення ввести цей пароль\nнеправильно тричі поспіль, дані карти\nбуде видалено з причин безпеки."
+  },
+  "Credit_txt03_07": {
+    "en": "To confirm, please re-enter the\npassword which will be used to\nsecure your credit card information.",
+    "ua": "Для підтвердження введіть ще раз\nпароль, який захищатиме дані\nвашої платіжної карти."
+  },
+  "Credit_txt03_08": {
+    "en": "Please enter the four- to eight-character\npassword used to secure your credit card\ninformation.\n\nPlease be advised that if you enter the password\nincorrectly three times in a row, your credit card\ninformation will be deleted for security reasons.",
+    "ua": "Введіть пароль від чотирьох до восьми\nзнаків, який захищає дані вашої\nплатіжної карти.\n\nЗверніть увагу: якщо ввести пароль\nнеправильно тричі поспіль, дані карти\nбуде видалено з причин безпеки."
+  },
+  "Credit_txt03_09": {
+    "en": "All the characters of the password\nyou entered are identical. For security\nreasons, please enter a password\ncomposed of four to eight differing\nalphanumeric characters.",
+    "ua": "Усі знаки введеного пароля\nоднакові. З причин безпеки введіть\nпароль із чотирьох-восьми різних\nлітер і цифр."
+  },
+  "Credit_txt03_10": {
+    "en": "The password you have entered\ncontains one or more unsupported\ncharacters.\n\nPlease use only numbers and letters.",
+    "ua": "Введений пароль містить\nзнаки, які не підтримуються.\n\nВикористовуйте лише цифри й\nлітери."
+  },
+  "Credit_txt04_01": {
+    "en": "By selecting Add Funds below, you will\nconfirm payment and the value shown\nbelow will be added.\n\nOnce you add funds, you cannot cancel the\ntransaction or get a refund.",
+    "ua": "Вибравши «Додати кошти» нижче, ви\nпідтверджуєте оплату, і показану нижче\nсуму буде додано.\n\nПісля додавання коштів скасувати операцію\nчи повернути кошти не вийде."
+  },
+  "Credit_txt04_06": {
+    "en": "By selecting Add Funds below,\nyou will confirm payment and the\nvalue shown below will be added.",
+    "ua": "Вибравши «Додати кошти» нижче,\nви підтверджуєте оплату, і показану\nнижче суму буде додано."
+  },
+  "Credit_txt04_02": {
+    "en": "Funds to Add (Amount to Pay)",
+    "ua": "Кошти до додавання (до сплати)"
+  },
+  "Credit_txt04_03": {
+    "en": "{t:1.2:}",
+    "ua": ""
+  },
+  "Credit_txt04_04": {
+    "en": "New Balance",
+    "ua": "Новий баланс"
+  },
+  "Credit_txt04_05": {
+    "en": "{t:1.2:}",
+    "ua": ""
+  },
+  "Credit_txt05_01": {
+    "en": "Select an amount to add to your balance.\nYou cannot add an amount that would\ncause your balance to exceed {t:1.2:}.\n\nPlease note that your credit card\nprovider may impose a foreign\ntransaction fee on this purchase. \nPlease contact your provider for details.",
+    "ua": "Виберіть суму, яку додати до балансу.\nНе можна додати суму, після якої\nбаланс перевищить {t:1.2:}.\n\nЗверніть увагу: ваш банк може\nстягнути комісію за операцію\nв іноземній валюті. \nПодробиці — у банку."
+  },
+  "Credit_btn04_01": {
+    "en": "Add Funds",
+    "ua": "Додати кошти"
+  },
+  "Credit_ERRdlg01_01": {
+    "en": "The password is incorrect.",
+    "ua": "Пароль неправильний."
+  },
+  "CreditSet_title01_01": {
+    "en": "View Credit Card Information",
+    "ua": "Дані платіжної карти"
+  },
+  "CreditSet_txt01_01": {
+    "en": "Select the type of credit card you wish to use.\n\nChildren: please have a parent or legal\nguardian enter these details for you.",
+    "ua": "Виберіть тип платіжної карти.\n\nДіти: попросіть батьків або опікуна\nввести ці дані замість вас."
+  },
+  "CreditSet_btn01_01": {
+    "en": "",
+    "ua": ""
+  },
+  "CreditSet_btn01_02": {
+    "en": "MasterCard",
+    "ua": "MasterCard"
+  },
+  "CreditSet_btn01_03": {
+    "en": "VISA",
+    "ua": "VISA"
+  },
+  "CreditSet_txt02_01": {
+    "en": "Enter your credit card information.\nThis will be encrypted before sending.\n",
+    "ua": "Введіть дані платіжної карти.\nПеред надсиланням їх буде зашифровано.\n"
+  },
+  "CreditSet_txt02_02": {
+    "en": "Card Number",
+    "ua": "Номер карти"
+  },
+  "CreditSet_txt02_03": {
+    "en": "Expiry Date",
+    "ua": "Діє до"
+  },
+  "CreditSet_txt02_04": {
+    "en": "Security Code",
+    "ua": "Код безпеки"
+  },
+  "CreditSet_swkb01_01": {
+    "en": "Enter the credit card number.",
+    "ua": "Введіть номер платіжної карти."
+  },
+  "CreditSet_swkb01_02": {
+    "en": "Enter the expiry month.",
+    "ua": "Введіть місяць завершення."
+  },
+  "CreditSet_swkb01_03": {
+    "en": "Enter the expiry year.",
+    "ua": "Введіть рік завершення."
+  },
+  "CreditSet_swkb01_04": {
+    "en": "Enter the security code.",
+    "ua": "Введіть код безпеки."
+  },
+  "CreditSet_btn02_01": {
+    "en": "What's a security code?",
+    "ua": "Що таке код безпеки?"
+  },
+  "CreditSet_btn02_02": {
+    "en": "Credit Card Security Statement",
+    "ua": "Про безпеку платіжних карт"
+  },
+  "CreditSet_txt03_01": {
+    "en": "What's a security code?",
+    "ua": "Що таке код безпеки?"
+  },
+  "CreditSet_txt03_02": {
+    "en": "The security code is located\non the back of your credit card.",
+    "ua": "Код безпеки надруковано\nна зворотному боці вашої карти."
+  },
+  "CreditSet_txt04_01": {
+    "en": "Credit Card Security Statement",
+    "ua": "Про безпеку платіжних карт"
+  },
+  "CreditSet_txt04_02": {
+    "en": "Our secure servers encrypt credit card \ndata transmitted and stored for your \nshopping service purchases. \nAll such encrypted information is \nmaintained and processed by both \nNintendo and our trusted third-party \ncredit card processors on secure \ncomputers that are not accessible \nfrom the internet.",
+    "ua": "Наші захищені сервери шифрують дані \nплатіжних карт, які передаються \nй зберігаються для ваших покупок. \nУсі ці зашифровані дані \nзберігають і обробляють Nintendo \nта наші довірені сторонні обробники \nплатежів на захищених комп'ютерах, \nдо яких немає доступу \nз Інтернету."
+  },
+  "CreditSet_txt05_04": {
+    "en": "",
+    "ua": ""
+  },
+  "CreditSet_txt05_05": {
+    "en": "",
+    "ua": ""
+  },
+  "CreditSet_txt06_04": {
+    "en": "You can store your credit card information\nfor ease of use in subsequent purchases.\nYou will be required to create a password\nto secure this information.",
+    "ua": "Дані платіжної карти можна зберегти,\nщоб наступні покупки були простішими.\nДля захисту цих даних доведеться\nстворити пароль."
+  },
+  "CreditSet_txt06_02": {
+    "en": "",
+    "ua": ""
+  },
+  "CreditSet_txt06_03": {
+    "en": "Store credit card information?",
+    "ua": "Зберегти дані платіжної карти?"
+  },
+  "CreditSet_txt06_05": {
+    "en": "Please read the information\non the upper screen.",
+    "ua": "Прочитайте текст\nна верхньому екрані."
+  },
+  "CreditSet_btn06_01": {
+    "en": "No",
+    "ua": "Ні"
+  },
+  "CreditSet_btn06_02": {
+    "en": "Yes",
+    "ua": "Так"
+  },
+  "CreditSet_txt09_01": {
+    "en": "No stored credit card information.",
+    "ua": "Збережених даних карти немає."
+  },
+  "CreditSet_txt09_02": {
+    "en": "You can store your credit card\ninformation to make it easier to add\nfunds in the future.\n(You will still have to enter your\npassword every time.)\n\nCredit card information can be stored\nonly when adding funds.",
+    "ua": "Дані платіжної карти можна\nзберегти, щоб надалі додавати\nкошти було простіше.\n(Пароль однаково доведеться\nвводити щоразу.)\n\nДані карти можна зберегти лише\nпри додаванні коштів."
+  },
+  "CreditSet_txt10_01": {
+    "en": "The currently stored credit card \ninformation is displayed on the \nupper screen.",
+    "ua": "Збережені дані платіжної карти \nпоказано на верхньому \nекрані."
+  },
+  "CreditSet_txt10_02": {
+    "en": "",
+    "ua": ""
+  },
+  "CreditSet_btn10_01": {
+    "en": "Delete Credit Card Information",
+    "ua": "Видалити дані карти"
+  },
+  "CreditSet_btn10_02": {
+    "en": "",
+    "ua": ""
+  },
+  "CreditSet_btn10_03": {
+    "en": "",
+    "ua": ""
+  },
+  "CreditSet_dlg11_01": {
+    "en": "Are you sure you want to delete the\ncredit card information displayed on\nthe upper screen?",
+    "ua": "Справді видалити дані платіжної\nкарти, показані на верхньому\nекрані?"
+  },
+  "CreditSet_dlg11_02": {
+    "en": "Delete",
+    "ua": "Стерти"
+  },
+  "CreditSet_dlg11_03": {
+    "en": "",
+    "ua": ""
+  },
+  "CreditSet_dlg11_04": {
+    "en": "",
+    "ua": ""
+  },
+  "CreditSet_dlg12_01": {
+    "en": "The credit card information\nhas been deleted.",
+    "ua": "Дані платіжної карти\nвидалено."
+  },
+  "CreditSet_dlg12_02": {
+    "en": "Failed to authenticate stored credit\ncard information. The information\nhas been deleted.",
+    "ua": "Не вдалося перевірити збережені\nдані платіжної карти. Дані\nвидалено."
+  },
+  "CreditAge_dlg01_01": {
+    "en": "",
+    "ua": ""
+  },
+  "CreditAge_dlg01_02": {
+    "en": "You are not eligible to use a credit card.",
+    "ua": "Вам не можна користуватися платіжною\nкартою."
+  },
+  "CreditAge_dlg01_03": {
+    "en": "",
+    "ua": ""
+  },
+  "CreditAge_dlg01_04": {
+    "en": "",
+    "ua": ""
+  },
+  "CreditAge_btn01_01": {
+    "en": "",
+    "ua": ""
+  },
+  "CreditAge_btn01_02": {
+    "en": "",
+    "ua": ""
+  },
+  "Setup_title01_01": {
+    "en": "Settings / Other",
+    "ua": "Параметри / Інше"
+  },
+  "Setup_btn01_01": {
+    "en": "Account Activity",
+    "ua": "Історія покупок"
+  },
+  "Setup_btn01_02": {
+    "en": "Titles You've Downloaded",
+    "ua": "Завантажені програми"
+  },
+  "Setup_btn01_19": {
+    "en": "Redownloadable Software",
+    "ua": "Програми для повторного\nзавантаження"
+  },
+  "Setup_btn01_03": {
+    "en": "Available Updates",
+    "ua": "Доступні оновлення"
+  },
+  "Setup_btn01_04": {
+    "en": "",
+    "ua": ""
+  },
+  "Setup_btn01_05": {
+    "en": "Your Reviews",
+    "ua": "Ваші відгуки"
+  },
+  "Setup_btn01_06": {
+    "en": "Redeem Download Code",
+    "ua": "Використати код\nзавантаження"
+  },
+  "Setup_btn01_07": {
+    "en": "HOME Menu Notifications",
+    "ua": "Повідомлення в меню HOME"
+  },
+  "Setup_btn01_08": {
+    "en": "Software Recommendations\nfrom Nintendo",
+    "ua": "Поради щодо програм\nвід Nintendo"
+  },
+  "Setup_btn01_09": {
+    "en": "",
+    "ua": ""
+  },
+  "Setup_btn01_10": {
+    "en": "View Credit Card Information",
+    "ua": "Дані платіжної карти"
+  },
+  "Setup_btn01_11": {
+    "en": "Club Nintendo Account",
+    "ua": "Обліковий запис Club Nintendo"
+  },
+  "Setup_btn01_12": {
+    "en": "Delete Account",
+    "ua": "Видалити запис"
+  },
+  "Setup_btn01_13": {
+    "en": "About Nintendo eShop",
+    "ua": "Про Nintendo eShop"
+  },
+  "Setup_btn01_14": {
+    "en": "Location Settings",
+    "ua": "Місцезнаходження"
+  },
+  "Setup_btn01_16": {
+    "en": "Customer Support",
+    "ua": "Підтримка"
+  },
+  "Setup_btn01_17": {
+    "en": "Scan QR Code",
+    "ua": "Сканувати QR-код"
+  },
+  "Setup_btn01_18": {
+    "en": "Language Setting",
+    "ua": "Вибір мови"
+  },
+  "Setup_btn01_20": {
+    "en": "Check Download Environment",
+    "ua": "Перевірити умови\nзавантаження"
+  },
+  "Setup_btn01_21": {
+    "en": "",
+    "ua": ""
+  },
+  "Setup_txt01_01": {
+    "en": "History",
+    "ua": "Історія"
+  },
+  "Setup_txt01_02": {
+    "en": "Settings",
+    "ua": "Параметри"
+  },
+  "Setup_txt01_03": {
+    "en": "Other",
+    "ua": "Інше"
+  },
+  "Setup_txt01_04": {
+    "en": "Redeem Download Code",
+    "ua": "Використати код\nзавантаження"
+  },
+  "Setup_txt01_05": {
+    "en": "Features",
+    "ua": "Функції"
+  },
+  "Setup_txt02_01": {
+    "en": "Touch a menu option.",
+    "ua": "Торкніться пункту меню."
+  },
+  "AutoCharge_title_01": {
+    "en": "",
+    "ua": ""
+  },
+  "AutoCharge_txt01_01": {
+    "en": "",
+    "ua": ""
+  },
+  "AutoCharge_txt01_02": {
+    "en": "",
+    "ua": ""
+  },
+  "AutoCharge_txt01_03": {
+    "en": "",
+    "ua": ""
+  },
+  "AutoCharge_txt01_04": {
+    "en": "",
+    "ua": ""
+  },
+  "AutoCharge_dlg01_01": {
+    "en": "",
+    "ua": ""
+  },
+  "AutoCharge_dlg01_02": {
+    "en": "",
+    "ua": ""
+  },
+  "AutoCharge_btn01_01": {
+    "en": "",
+    "ua": ""
+  },
+  "AutoCharge_btn01_02": {
+    "en": "",
+    "ua": ""
+  },
+  "AutoCharge_btn01_03": {
+    "en": "",
+    "ua": ""
+  },
+  "Remove_title_01": {
+    "en": "Delete Account",
+    "ua": "Видалення облікового запису"
+  },
+  "Remove_txt01_01": {
+    "en": "You can delete your Nintendo eShop\naccount here. Once deleted, your\naccount cannot be recovered.",
+    "ua": "Тут можна видалити свій обліковий\nзапис Nintendo eShop. Після видалення\nвідновити його неможливо."
+  },
+  "Remove_txt01_02": {
+    "en": "Serial Number",
+    "ua": "Серійний номер"
+  },
+  "Remove_txt01_03": {
+    "en": "Read the following information carefully.\nIf you still want to delete your account,\ntouch Delete.\n\nChildren: have a parent or legal guardian\nread through this notice carefully.",
+    "ua": "Уважно прочитайте текст нижче.\nЯкщо ви й далі хочете видалити запис,\nторкніться «Видалити».\n\nДіти: попросіть батьків або опікуна\nуважно прочитати це попередження."
+  },
+  "Remove_txt01_04": {
+    "en": "If you delete your Nintendo eShop\naccount, all of your currently registered\nfunds will become void. All of your\ndownloaded/purchased software,\ndata and passes will be deleted and\nno longer function, as will any software\ntransferred using System Transfer. Any\ndownloaded/purchased software stored\non an SD Card will no longer function\nand you will no longer be able to\nredownload previously downloaded/\npurchased software.\n\nIn the event that you transfer ownership\nof this system, you may not transfer\nownership of your balance or paid/free\ndownloads with the system. You should\ndelete your Nintendo eShop account on\nthis screen beforehand.\n\nDo you want to delete your\nNintendo eShop account?",
+    "ua": "Якщо ви видалите обліковий запис\nNintendo eShop, усі наявні кошти\nстануть недійсними. Усі завантажені\nй куплені програми, дані та пропуски\nбуде видалено, і вони перестануть\nпрацювати — так само як і програми,\nперенесені через «Перенесення\nданих».\nЗавантажені чи куплені програми\nна карті SD перестануть працювати,\nі завантажити їх знову вже\nне вийде.\n\nЯкщо ви передаєте цю консоль іншій\nособі, ви не можете передати разом\nіз нею баланс чи платні й безкоштовні\nзавантаження. Обліковий запис\nNintendo eShop варто видалити\nна цьому екрані заздалегідь.\n\nВидалити обліковий запис\nNintendo eShop?"
+  },
+  "Remove_btn01_01": {
+    "en": "Delete",
+    "ua": "Видалити"
+  },
+  "Remove_txt02_01": {
+    "en": "Read the following information carefully.\nIf you still want to delete your account,\ntouch Enter Serial Number.",
+    "ua": "Уважно прочитайте текст нижче.\nЯкщо ви й далі хочете видалити запис,\nторкніться «Ввести серійний номер»."
+  },
+  "Remove_txt02_02": {
+    "en": "To delete your Nintendo eShop account,\nenter the 11-character serial number on\nthe back of your system. (You do not\nhave to enter the final digit.)\n\nPlease be aware that once deleted, your\naccount cannot be restored.",
+    "ua": "Щоб видалити обліковий запис\nNintendo\neShop, введіть 11-символьний серійний\nномер зі зворотного боку консолі.\n(Останню цифру вводити не треба.)\n\nЗверніть увагу: після видалення\nвідновити запис неможливо."
+  },
+  "Remove_txt02_04": {
+    "en": "To delete your Nintendo eShop account,\nenter the 11-character serial number\nlocated under the front plate of your\nsystem. (You do not have to enter the\nfinal digit.)\n\nPlease be aware that once deleted, your\naccount cannot be restored.",
+    "ua": "Щоб видалити обліковий запис\nNintendo\neShop, введіть 11-символьний серійний\nномер під передньою панеллю\nконсолі. (Останню цифру вводити\nне треба.)\n\nЗверніть увагу: після видалення\nвідновити запис неможливо."
+  },
+  "Remove_txt02_03": {
+    "en": "If you cannot read the serial number on\nthe back of the system, please check the\nbox in which the system was packaged.\n\nIf you no longer have the original box,\nplease contact your local customer \nsupport centre. For contact details, \ncheck the Operations Manual or visit \nsupport.nintendo.com.",
+    "ua": "Якщо серійний номер на зворотному\nбоці консолі не читається, гляньте\nна коробку від консолі.\n\nЯкщо коробки вже немає,\nзверніться до місцевої служби \nпідтримки. Контакти шукайте \nв посібнику з користування \nабо на support.nintendo.com."
+  },
+  "Remove_txt02_05": {
+    "en": "If you cannot read the serial number \nunder the system's front plate, please\ncheck the box in which the system was\npackaged.\n\nIf you no longer have the original box,\nplease contact your local customer \nsupport centre. For contact details, \ncheck the Operations Manual or visit \nsupport.nintendo.com.",
+    "ua": "Якщо серійний номер під передньою \nпанеллю не читається, гляньте\nна коробку від консолі.\n\nЯкщо коробки вже немає,\nзверніться до місцевої служби \nпідтримки. Контакти шукайте \nв посібнику з користування \nабо на support.nintendo.com."
+  },
+  "Remove_btn02_01": {
+    "en": "Enter Serial Number",
+    "ua": "Ввести серійний номер"
+  },
+  "Remove_txt03_01": {
+    "en": "Selecting Delete will delete your\nNintendo eShop account.\n\nAre you sure you want to do this?",
+    "ua": "Якщо вибрати «Видалити», ваш\nобліковий запис Nintendo eShop\nбуде видалено.\n\nСправді це зробити?"
+  },
+  "Remove_btn03_01": {
+    "en": "Cancel",
+    "ua": "Скасувати"
+  },
+  "Remove_btn03_02": {
+    "en": "Delete",
+    "ua": "Видалити"
+  },
+  "Remove_txt04_01": {
+    "en": "Your account has been deleted.",
+    "ua": "Ваш обліковий запис\nвидалено."
+  },
+  "Remove_txt04_02": {
+    "en": "Your account has been deleted.\n\nThank you for using \nNintendo eShop.",
+    "ua": "Ваш обліковий запис видалено.\n\nДякуємо, що користувалися \nNintendo eShop."
+  },
+  "Remove_txt04_04": {
+    "en": "Press the POWER Button\nto close the software.",
+    "ua": "Натисніть кнопку POWER,\nщоб закрити програму."
+  },
+  "Remove_ERRdlg01_01": {
+    "en": "You have entered an incorrect\nserial number.\n\nPlease double-check your system's\nserial number and try again.",
+    "ua": "Ви ввели неправильний\nсерійний номер.\n\nПеревірте серійний номер\nконсолі й спробуйте ще раз."
+  },
+  "Membership_title01_01": {
+    "en": "Link Club Nintendo Membership ",
+    "ua": "Прив'язка Club Nintendo "
+  },
+  "Membership_txt01_01": {
+    "en": "Club Nintendo members can link their Club Nintendo\naccount to their Nintendo 3DS system. By linking your\nClub Nintendo account, you will become eligible for\nadded benefits. For details, please see\nwww.club-nintendo.com.\n\nNote: You can link the same Club Nintendo account\nto up to eight Nintendo 3DS systems, as long as none\nof them are linked to a Nintendo Network ID.",
+    "ua": "Учасники Club Nintendo можуть прив'язати свій\nобліковий запис до консолі Nintendo 3DS. Після\nприв'язки ви отримаєте додаткові переваги.\nДокладніше — на\nwww.club-nintendo.com.\n\nПримітка: той самий запис Club Nintendo можна\nприв'язати до восьми консолей Nintendo 3DS, якщо\nжодна з них не прив'язана до Nintendo Network ID."
+  },
+  "Membership_txt01_06": {
+    "en": "Club Nintendo members can link their Club Nintendo\naccount to their Nintendo Network ID. By linking your\nClub Nintendo account, you will become eligible for\nadded benefits. For details, please see\nwww.club-nintendo.com.\n\nNote: You can link your Club Nintendo account to one\nNintendo Network ID only.",
+    "ua": "Учасники Club Nintendo можуть прив'язати свій\nобліковий запис до Nintendo Network ID. Після\nприв'язки ви отримаєте додаткові переваги.\nДокладніше — на\nwww.club-nintendo.com.\n\nПримітка: запис Club Nintendo можна прив'язати\nлише до одного Nintendo Network ID."
+  },
+  "Membership_txt01_02": {
+    "en": "Email address",
+    "ua": "Ел. пошта"
+  },
+  "Membership_txt01_03": {
+    "en": "Enter your email address.",
+    "ua": "Введіть адресу електронної пошти."
+  },
+  "Membership_txt01_04": {
+    "en": "Password",
+    "ua": "Пароль"
+  },
+  "Membership_txt01_05": {
+    "en": "Enter your password.",
+    "ua": "Введіть пароль."
+  },
+  "Membership_swkb01_01": {
+    "en": "Enter your email address.",
+    "ua": "Введіть адресу електронної пошти."
+  },
+  "Membership_swkb01_02": {
+    "en": "Enter your Club Nintendo password.",
+    "ua": "Введіть пароль Club Nintendo."
+  },
+  "Membership_btn01_01": {
+    "en": "Cancel",
+    "ua": "Скасувати"
+  },
+  "Membership_btn01_02": {
+    "en": "Link",
+    "ua": "Прив'яз."
+  },
+  "Membership_btn01_03": {
+    "en": "Skip",
+    "ua": "Пропустити"
+  },
+  "Membership_dlg01_01": {
+    "en": "Your Club Nintendo membership \nand Nintendo eShop account \nare now linked.",
+    "ua": "Ваше членство в Club Nintendo \nі обліковий запис Nintendo\neShop \nтепер прив'язані."
+  },
+  "Membership_dlg01_02": {
+    "en": "There is already a Club Nintendo\naccount linked to this Nintendo\nNetwork ID. The system will keep\nusing this Club Nintendo account.",
+    "ua": "До цього Nintendo Network ID уже\nприв'язано обліковий запис Club\nNintendo. Консоль і далі\nкористуватиметься ним."
+  },
+  "Membership_txt02_01": {
+    "en": "Club Nintendo Membership Link",
+    "ua": "Прив'язка Club Nintendo"
+  },
+  "Membership_txt02_02": {
+    "en": "You can remove the link between your Club Nintendo\naccount and your Nintendo 3DS system. Please note\nthat your Club Nintendo account will not be deleted.\n\nIf you remove the link between your Club Nintendo\naccount and your Nintendo 3DS system, you can link\nthem again any time.",
+    "ua": "Ви можете відв'язати свій обліковий запис Club\nNintendo від консолі Nintendo 3DS. Зверніть увагу:\nсам обліковий запис не буде видалено.\n\nЯкщо ви відв'яжете запис Club Nintendo\nвід консолі Nintendo 3DS, прив'язати їх знову\nможна будь-коли."
+  },
+  "Membership_txt02_04": {
+    "en": "You can remove the link between your Club Nintendo\naccount and your Nintendo Network ID. Please note\nthat your Club Nintendo account will not be deleted.\n\nPlease also note that if your Nintendo Network ID is\nlinked to several Nintendo devices, your Club Nintendo\naccount will no longer be usable on each of\nthese devices.",
+    "ua": "Ви можете відв'язати свій обліковий запис Club\nNintendo від Nintendo Network ID. Зверніть увагу:\nсам обліковий запис не буде видалено.\n\nЗверніть увагу й на те, що якщо ваш Nintendo\nNetwork ID прив'язаний до кількох пристроїв\nNintendo, запис Club Nintendo перестане\nпрацювати на кожному з них."
+  },
+  "Membership_txt02_03": {
+    "en": "Email address",
+    "ua": "Ел. пошта"
+  },
+  "Membership_btn02_01": {
+    "en": "Unlink",
+    "ua": "Відв'язати"
+  },
+  "Membership_dlg02_01": {
+    "en": "Are you sure you want to unlink your \nClub Nintendo membership and your \nNintendo eShop account?",
+    "ua": "Справді відв'язати членство \nв Club Nintendo від облікового \nзапису Nintendo eShop?"
+  },
+  "Membership_dlg02_02": {
+    "en": "Email address",
+    "ua": "Ел. пошта"
+  },
+  "Membership_dlg02_03": {
+    "en": "Cancel",
+    "ua": "Скасувати"
+  },
+  "Membership_dlg02_04": {
+    "en": "Unlink",
+    "ua": "Відв'язати"
+  },
+  "Membership_txt03_02": {
+    "en": "Membership unlinked.",
+    "ua": "Членство відв'язано."
+  },
+  "Membership_txt03_01": {
+    "en": "The link between your Club \nNintendo membership and your \nNintendo eShop account \nhas been removed.",
+    "ua": "Ваше членство в Club \nNintendo відв'язано від \nоблікового запису \nNintendo eShop."
+  },
+  "Membership_btn03_01": {
+    "en": "OK",
+    "ua": "OK"
+  },
+  "Notification_title01_01": {
+    "en": "HOME Menu Notifications",
+    "ua": "Повідомлення в меню HOME"
+  },
+  "Notification_txt01_01": {
+    "en": "You can choose whether or not to receive\nNintendo eShop notifications, which may\ninclude commercial information such as\nmarketing or advertising messages. Such\nnotifications will be sent by Nintendo via\nSpotPass and will appear on the HOME Menu.\n\nWould you like to opt in to receiving\nthese notifications?",
+    "ua": "Ви можете вибрати, отримувати чи ні\nповідомлення Nintendo eShop — серед них\nможуть бути й комерційні, наприклад\nрекламні. Такі повідомлення надсилає\nNintendo через SpotPass, і вони\nз'являються в меню HOME.\n\nОтримувати ці\nповідомлення?"
+  },
+  "Notification_txt01_03": {
+    "en": "If you opt in, extra data will\nbe created on the SD Card.",
+    "ua": "Якщо погодитеся, на карті SD\nбуде створено додаткові дані."
+  },
+  "Notification_btn01_01": {
+    "en": "Opt In",
+    "ua": "Так"
+  },
+  "Notification_btn01_02": {
+    "en": "Opt Out",
+    "ua": "Не отримувати"
+  },
+  "Notification_dlg01_01": {
+    "en": "You will now receive\nNintendo eShop notifications.\n\n(You can change this setting\nlater if you wish.)",
+    "ua": "Ви отримуватимете\nповідомлення Nintendo eShop.\n\n(Це можна змінити\nпізніше.)"
+  },
+  "Notification_dlg01_02": {
+    "en": "You have chosen not to receive\nNintendo eShop notifications.\n\n(You can change this setting\nlater if you wish.)",
+    "ua": "Ви обрали не отримувати\nповідомлення Nintendo eShop.\n\n(Це можна змінити\nпізніше.)"
+  },
+  "Notification_dlg01_03": {
+    "en": "Failed to access extra data.\nThis will prevent you from receiving\nnotifications from Nintendo eShop.\n\nDo you want to create new extra data?",
+    "ua": "Немає доступу до додаткових даних.\nЧерез це ви не зможете отримувати\nповідомлення Nintendo eShop.\n\nСтворити нові додаткові дані?"
+  },
+  "Notification_dlg01_09": {
+    "en": "Extra data must be created on\nthe SD Card before you can receive\nNintendo eShop notifications.\n\nDo you want to create new extra data?",
+    "ua": "Щоб отримувати повідомлення\nNintendo eShop, на карті SD треба\nстворити додаткові дані.\n\nСтворити нові додаткові дані?"
+  },
+  "Notification_dlg01_04": {
+    "en": "Could not access SD Card.\nThis will prevent you from using SpotPass.\n\nTurn off the system, remove and reinsert the\nSD Card and then try again.",
+    "ua": "Немає доступу до карти SD.\nЧерез це SpotPass не працюватиме.\n\nВимкніть консоль, вийміть і вставте\nкарту SD, тоді спробуйте ще раз."
+  },
+  "Notification_dlg01_10": {
+    "en": "Could not access the SD Card.\n\nThis prevents the use of SpotPass.",
+    "ua": "Немає доступу до карти SD.\n\nЧерез це SpotPass не працює."
+  },
+  "Notification_dlg01_05": {
+    "en": "Failed to create extra data.\nThis will prevent you from using SpotPass.\n\nTurn off the system, remove and reinsert the\nSD Card and then try again.",
+    "ua": "Не вдалося створити додаткові дані.\nЧерез це SpotPass не працюватиме.\n\nВимкніть консоль, вийміть і вставте\nкарту SD, тоді спробуйте ще раз."
+  },
+  "Notification_dlg01_06": {
+    "en": "There is not enough free space on the SD Card.\nThis will prevent you from using SpotPass.",
+    "ua": "На карті SD бракує вільного місця.\nЧерез це SpotPass не працюватиме."
+  },
+  "Notification_dlg01_07": {
+    "en": "Extra data created\nsuccessfully.",
+    "ua": "Додаткові дані успішно\nстворено."
+  },
+  "Notification_dlg01_08": {
+    "en": "Create",
+    "ua": "Створ."
+  },
+  "InfoSet_title01_01": {
+    "en": "Software Recommendations from Nintendo",
+    "ua": "Поради щодо програм від Nintendo"
+  },
+  "InfoSet_txt01_01": {
+    "en": "Please read the information \non the lower screen carefully.",
+    "ua": "Уважно прочитайте текст \nна нижньому екрані."
+  },
+  "InfoSet_btn01_01": {
+    "en": "No",
+    "ua": "Ні"
+  },
+  "InfoSet_btn01_02": {
+    "en": "Yes",
+    "ua": "Так"
+  },
+  "InfoSet_btn01_03": {
+    "en": "OK",
+    "ua": "OK"
+  },
+  "InfoSet_dlg01_01": {
+    "en": "You will not receive software\nrecommendations from Nintendo.\n\n(You can change this setting\nlater if you wish.)",
+    "ua": "Ви не отримуватимете порад\nщодо програм від Nintendo.\n\n(Це можна змінити\nпізніше.)"
+  },
+  "InfoSet_dlg01_02": {
+    "en": "Thank you.\nYou will receive software\nrecommendations from Nintendo.\n\n(You can change this setting\nlater if you wish.)",
+    "ua": "Дякуємо.\nВи отримуватимете поради\nщодо програм від Nintendo.\n\n(Це можна змінити\nпізніше.)"
+  },
+  "InfoSet_dlg01_04": {
+    "en": "By enabling the software recommendations\nsetting, you can receive information from\nNintendo about recommended software for you.\n\nSelect Menu → Settings / Other →\nSoftware Recommendations from Nintendo\nto change this setting.",
+    "ua": "Якщо увімкнути поради щодо програм,\nви отримуватимете від Nintendo\nвідомості про програми, які можуть вам підійти.\n\nВиберіть Меню → Параметри / Інше →\nПоради щодо програм від Nintendo,\nщоб змінити цей параметр."
+  },
+  "InfoSet_dlg01_05": {
+    "en": "Software recommendations\nare currently unavailable.\n\nRefer to the information on\nthe upper screen for details\non how to use this feature.",
+    "ua": "Поради щодо програм\nзараз недоступні.\n\nЯк користуватися цією\nфункцією, читайте\nна верхньому екрані."
+  },
+  "EULA_title01_01": {
+    "en": "",
+    "ua": ""
+  },
+  "EULA_btn01_01": {
+    "en": "",
+    "ua": ""
+  },
+  "EULA_btn01_02": {
+    "en": "",
+    "ua": ""
+  },
+  "EULA_dlg01_01": {
+    "en": "",
+    "ua": ""
+  },
+  "About_title01_01": {
+    "en": "About Nintendo eShop",
+    "ua": "Про Nintendo eShop"
+  },
+  "About_btn01_01": {
+    "en": "Quit",
+    "ua": "Вийти"
+  },
+  "About_dlg01_01": {
+    "en": "To close the software, press \nto return to the HOME Menu\nand then select Close.",
+    "ua": "Щоб закрити програму, натисніть\n,\nщоб повернутися в меню HOME,\nа тоді виберіть «Закрити»."
+  },
+  "About_dlg01_02": {
+    "en": "Back",
+    "ua": "Назад"
+  },
+  "Exchange_title01_01": {
+    "en": "Redeem Download Code",
+    "ua": "Використати код завантаження"
+  },
+  "Exchange_txt01_01": {
+    "en": "If you have a download code, you can enter\nit here to download the software.\n\nTo redownload the software later, go to\nSettings / Other ⇒ Redownloadable\nSoftware and select the relevant software.",
+    "ua": "Якщо у вас є код завантаження, введіть\nйого тут, щоб завантажити програму.\n\nЩоб завантажити програму знову згодом,\nвідкрийте «Параметри / Інше» ⇒ «Програми\nдля повторного завантаження»."
+  },
+  "Exchange_txt01_02": {
+    "en": "Download Code",
+    "ua": "Код завантаження"
+  },
+  "Exchange_txt01_03": {
+    "en": "Enter the download code.",
+    "ua": "Введіть код завантаження."
+  },
+  "Exchange_swkb01_01": {
+    "en": "Enter the download code.\n\nNote that hyphens and the letters\nI, O and Z are not used.",
+    "ua": "Введіть код завантаження.\n\nЗверніть увагу: дефіси й літери\nI, O та Z не використовуються."
+  },
+  "Exchange_dlg01_01": {
+    "en": "Cancel",
+    "ua": "Скасувати"
+  },
+  "Exchange_dlg01_02": {
+    "en": "OK",
+    "ua": "OK"
+  },
+  "Exchange_dlg01_03": {
+    "en": "Download",
+    "ua": "Завантаж."
+  },
+  "Exchange_dlg01_04": {
+    "en": "No download code is necessary, as\nyou have already purchased this\nproduct or downloaded it before. \n\nWould you like to redownload it?",
+    "ua": "Код завантаження не потрібен: ви\nвже купували чи завантажували\nцю програму. \n\nЗавантажити її знову?"
+  },
+  "Exchange_dlg01_05": {
+    "en": "No download code is necessary, as\nyou have already purchased this\nproduct or downloaded it before.",
+    "ua": "Код завантаження не потрібен: ви\nвже купували чи завантажували\nцю програму."
+  },
+  "QR_text01_01": {
+    "en": "Searching for QR Code...\n\nAlign the code so that\nit lies within the frame.",
+    "ua": "Пошук QR-коду...\n\nСумістіть код\nіз рамкою."
+  },
+  "QR_text01_02": {
+    "en": "Detected a QR Code for\na download code.\n\nDo you want to redeem\nthe download code?",
+    "ua": "Виявлено QR-код із кодом\nзавантаження.\n\nВикористати код\nзавантаження?"
+  },
+  "QR_text01_03": {
+    "en": "Detected a QR Code for\na Nintendo eShop Card\nactivation code.\n\nDo you want to add the\ncorresponding value to your\nNintendo eShop funds?",
+    "ua": "Виявлено QR-код із кодом\nактивації карти\nNintendo eShop.\n\nДодати відповідну суму\nдо ваших коштів\nу Nintendo eShop?"
+  },
+  "QR_text01_04": {
+    "en": "This QR Code is\nnot supported.",
+    "ua": "Цей QR-код\nне підтримується."
+  },
+  "QR_text01_05": {
+    "en": "Detected a QR Code for\nsoftware title information.\n\nDo you want to view the Title\nInformation Screen for this\nsoftware title now?",
+    "ua": "Виявлено QR-код із відомостями\nпро програму.\n\nПоказати екран із відомостями\nпро цю програму\nзараз?"
+  },
+  "DTL_title01_01": {
+    "en": "Download Environment Check",
+    "ua": "Перевірка умов завантаження"
+  },
+  "DTL_dlg01_01": {
+    "en": "Check complete. The download\nenvironment is up to date.",
+    "ua": "Перевірку завершено. Умови\nзавантаження в порядку."
+  },
+  "Records_title01_01": {
+    "en": "Account Activity",
+    "ua": "Історія покупок"
+  },
+  "Records_txt01_01": {
+    "en": "{t:1.5:}/{t:1.4:}/{t:1.3:}",
+    "ua": ""
+  },
+  "Records_txt01_02": {
+    "en": "Activity Type",
+    "ua": "Тип операції"
+  },
+  "Records_txt01_03": {
+    "en": "Activity Details",
+    "ua": "Подробиці"
+  },
+  "Records_txt01_04": {
+    "en": "Value",
+    "ua": "Сума"
+  },
+  "Records_txt01_05": {
+    "en": "Balance",
+    "ua": "Баланс"
+  },
+  "Records_txt02_14": {
+    "en": "",
+    "ua": ""
+  },
+  "Records_txt03_01": {
+    "en": "{t:1.2:}",
+    "ua": ""
+  },
+  "Records_txt03_02": {
+    "en": "{t:1.2:}",
+    "ua": ""
+  },
+  "Records_txt04_01": {
+    "en": "{t:1.5:}/{t:1.4:}/{t:1.3:}",
+    "ua": ""
+  },
+  "Records_txt04_02": {
+    "en": "{t:1.0:}/{t:1.9:}",
+    "ua": ""
+  },
+  "Records_btn04_01": {
+    "en": "Title Information",
+    "ua": "Про програму"
+  },
+  "Records_btn04_04": {
+    "en": "View Receipt",
+    "ua": "Глянути квитанцію"
+  },
+  "Records_btn04_02": {
+    "en": "Previous",
+    "ua": "Назад"
+  },
+  "Records_btn04_03": {
+    "en": "Next",
+    "ua": "Далі"
+  },
+  "Records_btn04_05": {
+    "en": "View Previous Account Activity",
+    "ua": "Давніша історія покупок"
+  },
+  "Records_dlg05_01": {
+    "en": "There is no recorded activity\nfor this account.",
+    "ua": "Для цього облікового запису\nоперацій не записано."
+  },
+  "Parental_txt01_01": {
+    "en": "This feature is restricted by Parental Controls.\nTo remove the relevant Parental Controls\nrestriction(s), enter your PIN.\n\nIf the Software Rating item is restricted,\nPIN entry removes this restriction until you\nleave Nintendo eShop. If the Nintendo 3DS\nShopping Services item is restricted, PIN entry\nremoves this restriction only for the next\ntransaction.",
+    "ua": "Цю функцію обмежено батьківським контролем.\nЩоб зняти відповідні обмеження,\nвведіть PIN.\n\nЯкщо обмежено віковий рейтинг, введення\nPIN знімає обмеження до виходу\nз Nintendo eShop. Якщо обмежено покупки\nу сервісах Nintendo 3DS, введення PIN знімає\nобмеження лише для наступної\nоперації."
+  },
+  "Parental_txt01_02": {
+    "en": "You cannot view this content.\n\nThe times during which this content\ncan be viewed have been restricted.",
+    "ua": "Цей вміст не можна показати.\n\nЧас, коли його можна дивитися,\nобмежено."
+  },
+  "Parental_txt01_03": {
+    "en": "This feature is restricted by Parental Controls.\n\nTo temporarily remove the restrictions until you\nleave Nintendo eShop, please enter your PIN.",
+    "ua": "Функцію обмежено батьківським контролем.\n\nЩоб тимчасово зняти обмеження до виходу\nз Nintendo eShop, введіть PIN."
+  },
+  "Parental_txt01_04": {
+    "en": "",
+    "ua": ""
+  },
+  "AgeGate_title01_01": {
+    "en": "Age Verification",
+    "ua": "Перевірка віку"
+  },
+  "AgeGate_txt01_01": {
+    "en": "To view this content, you need to enter your\nbirthday. This information will not be sent to\nNintendo and will be used only to confirm that\nyou are eligible to view this content.",
+    "ua": "Щоб побачити цей вміст, треба ввести\nдату народження. Ці дані не надсилаються\nдо Nintendo і потрібні лише для того, щоб\nпідтвердити, що вам можна це дивитися."
+  },
+  "AgeGate_txt01_02": {
+    "en": "Enter your birthday.",
+    "ua": "Введіть дату народження."
+  },
+  "AgeGate_txt01_03": {
+    "en": "Day",
+    "ua": "День"
+  },
+  "AgeGate_txt01_04": {
+    "en": "Month",
+    "ua": "Міс."
+  },
+  "AgeGate_txt01_05": {
+    "en": "Year",
+    "ua": "Рік"
+  },
+  "AgeGate_btn01_01": {
+    "en": "OK",
+    "ua": "OK"
+  },
+  "AgeGate_txt02_01": {
+    "en": "You cannot view this content at your age.\n\nReturning to the previous screen.",
+    "ua": "У вашому віці цей вміст дивитися не можна.\n\nПовертаємося на попередній екран."
+  },
+  "AgeGate_txt02_02": {
+    "en": "Please read the information\non the upper screen.",
+    "ua": "Прочитайте текст\nна верхньому екрані."
+  },
+  "AddressSet_title01_01": {
+    "en": "Address Information",
+    "ua": "Дані адреси"
+  },
+  "AddressSet_txt01_01": {
+    "en": "Your address is set to the following:",
+    "ua": "Ваша адреса задана так:"
+  },
+  "AddressSet_txt01_02": {
+    "en": "■City",
+    "ua": "■Місто"
+  },
+  "AddressSet_txt01_03": {
+    "en": "■State",
+    "ua": "■Штат"
+  },
+  "AddressSet_txt01_04": {
+    "en": "■Zip Code",
+    "ua": "■Індекс"
+  },
+  "AddressSet_txt01_05": {
+    "en": "■County",
+    "ua": "■Округ"
+  },
+  "AddressSet_txt01_06": {
+    "en": "■Province",
+    "ua": "■Провінц."
+  },
+  "AddressSet_txt01_08": {
+    "en": "The information on the upper screen\nis used to calculate sales tax.\nTo change your saved address,\ntap Change Address.",
+    "ua": "Дані на верхньому екрані\nпотрібні для розрахунку податку.\nЩоб змінити збережену адресу,\nторкніться «Змінити адресу»."
+  },
+  "AddressSet_btn01_01": {
+    "en": "Change Address",
+    "ua": "Змінити адресу"
+  },
+  "AddressSet_btn01_02": {
+    "en": "Delete Address",
+    "ua": "Видалити"
+  },
+  "AddressSet_title02_01": {
+    "en": "Location Settings",
+    "ua": "Місцезнаходження"
+  },
+  "AddressSet_txt02_01": {
+    "en": "Please enter your zip code. This\nis required to calculate sales tax.",
+    "ua": "Введіть індекс. Він потрібен\nдля розрахунку податку."
+  },
+  "AddressSet_txt02_02": {
+    "en": "Please enter your province. This\nis required to calculate sales tax.",
+    "ua": "Введіть провінцію. Вона потрібна\nдля розрахунку податку."
+  },
+  "AddressSet_txt02_03": {
+    "en": "To verify your credit-card information, please\nenter the zip code of the billing address.",
+    "ua": "Щоб перевірити дані платіжної карти, введіть\nіндекс адреси, на яку виставляються рахунки."
+  },
+  "AddressSet_txt02_04": {
+    "en": "To verify your credit-card information, please\nenter the postal code of the billing address.",
+    "ua": "Щоб перевірити дані платіжної карти, введіть\nпоштовий код адреси, на яку виставляються\nрахунки."
+  },
+  "AddressSet_txt02_05": {
+    "en": "■Zip Code",
+    "ua": "■Індекс"
+  },
+  "AddressSet_txt02_06": {
+    "en": "■Postal Code",
+    "ua": "■Пошт. код"
+  },
+  "AddressSet_swkb01_01": {
+    "en": "Enter your zip code.",
+    "ua": "Введіть індекс."
+  },
+  "AddressSet_swkb01_02": {
+    "en": "Enter your postal code.",
+    "ua": "Введіть поштовий код."
+  },
+  "AddressSet_btn02_AB": {
+    "en": "Alberta",
+    "ua": "Альберта"
+  },
+  "AddressSet_btn02_BC": {
+    "en": "British Columbia",
+    "ua": "Брит. Колумбія"
+  },
+  "AddressSet_btn02_MB": {
+    "en": "Manitoba",
+    "ua": "Манітоба"
+  },
+  "AddressSet_btn02_NB": {
+    "en": "New Brunswick",
+    "ua": "Нью-Брансвік"
+  },
+  "AddressSet_btn02_NL": {
+    "en": "Newfoundland",
+    "ua": "Ньюфаундленд"
+  },
+  "AddressSet_btn02_NT": {
+    "en": "Northwest Territories",
+    "ua": "Пн.-Зах. території"
+  },
+  "AddressSet_btn02_NS": {
+    "en": "Nova Scotia",
+    "ua": "Нова Шотландія"
+  },
+  "AddressSet_btn02_NU": {
+    "en": "Nunavut",
+    "ua": "Нунавут"
+  },
+  "AddressSet_btn02_ON": {
+    "en": "Ontario",
+    "ua": "Онтаріо"
+  },
+  "AddressSet_btn02_PE": {
+    "en": "Prince Edward Island",
+    "ua": "Острів Принца Едварда"
+  },
+  "AddressSet_btn02_QC": {
+    "en": "Québec",
+    "ua": "Квебек"
+  },
+  "AddressSet_btn02_SK": {
+    "en": "Saskatchewan",
+    "ua": "Саскачеван"
+  },
+  "AddressSet_btn02_YT": {
+    "en": "Yukon",
+    "ua": "Юкон"
+  },
+  "AddressSet_txt03_01": {
+    "en": "Please tap the option that best\nmatches your location.",
+    "ua": "Виберіть варіант, який найкраще\nвідповідає вашому місцю."
+  },
+  "AddressSet_txt04_01": {
+    "en": "If the information on the\nupper screen is correct,\ntap OK.",
+    "ua": "Якщо дані на верхньому\nекрані правильні,\nторкніться OK."
+  },
+  "AddressSet_dlg04_01": {
+    "en": "Your location has been saved.\nIf you want to change this information\nin the future, go to Settings / Other\nand tap Location Settings.",
+    "ua": "Ваше місцезнаходження збережено.\nЩоб змінити ці дані згодом,\nвідкрийте\n«Параметри / Інше» й торкніться\n«Місцезнаходження»."
+  },
+  "AddressSet_dlg04_02": {
+    "en": "Your location has been saved.",
+    "ua": "Ваше місцезнаходження збережено."
+  },
+  "AddressSet_dlg05_01": {
+    "en": "We were unable to find an area that\ncorresponds to the zip code you\nentered.\n\nPlease check over the information\nyou entered and try again.",
+    "ua": "Не вдалося знайти місцевість,\nяка відповідає введеному\nіндексу.\n\nПеревірте введені дані\nй спробуйте ще раз."
+  },
+  "AddressSet_dlg06_01": {
+    "en": "Delete your address information?",
+    "ua": "Видалити дані адреси?"
+  },
+  "Language_title01_01": {
+    "en": "Language Setting",
+    "ua": "Вибір мови"
+  },
+  "Language_txt01_01": {
+    "en": "You can change the language setting here.\nSelect the language you wish to use.",
+    "ua": "Тут можна змінити мову.\nВиберіть мову, якою хочете користуватися."
+  },
+  "Language_dlg01_01": {
+    "en": "Nintendo eShop will restart\nin order to apply the change.\n\nDo you wish to change the\nlanguage setting?",
+    "ua": "Nintendo eShop перезапуститься,\nщоб застосувати зміну.\n\nЗмінити мову?"
+  },
+  "Language_btn01_02": {
+    "en": "Change",
+    "ua": "Змінити"
+  },
+  "Support_title01_01": {
+    "en": "Customer Support",
+    "ua": "Підтримка"
+  },
+  "Support_txt01_01": {
+    "en": "If anything is unclear about the\nNintendo eShop, please visit the\nNintendo home page before contacting\nNintendo Consumer Service.",
+    "ua": "Якщо щось у Nintendo eShop\nнезрозуміло, зайдіть спершу\nна сайт Nintendo, а тоді вже\nзвертайтеся до служби підтримки."
+  },
+  "Support_txt01_02": {
+    "en": "",
+    "ua": ""
+  },
+  "Support_txt01_03": {
+    "en": "For inquiries regarding a specific title,\nplease refer to the list of publishers\nbelow or to that title's manual for\ncontact information.\n\nPlease note that individual publishers\nwill not answer questions regarding\ngame strategy or tips.",
+    "ua": "Щодо конкретної гри дивіться\nсписок видавців нижче або\nпосібник до цієї гри — там\nє контакти.\n\nЗверніть увагу: видавці\nне відповідають на питання\nпро тактику й підказки в іграх."
+  },
+  "SD_txt01_01": {
+    "en": "Please check the SD Card.\n\nEither no SD Card is inserted,\nor it is write-protected.\n\nThis will prevent you from using\nSpotPass or purchasing/downloading\nthe following kinds of software:",
+    "ua": "Перевірте карту SD.\n\nАбо карту SD не вставлено,\nабо її захищено від запису.\n\nЧерез це не працюватиме SpotPass\nі не вийде купувати чи завантажувати\nтакі програми:"
+  },
+  "SD_txt01_02": {
+    "en": "• Nintendo 3DS download software\n• Virtual Console titles",
+    "ua": "• завантажувані програми Nintendo\n3DS\n• ігри Virtual Console"
+  },
+  "SD_txt01_03": {
+    "en": "Please turn off the system before\ninserting or removing SD Cards.",
+    "ua": "Вимикайте консоль перед тим, як\nвставляти чи виймати карту SD."
+  },
+  "SD_txt01_04": {
+    "en": "Either the SD Card is write-protected,\nor none is inserted. The SD Card may\nalso have been removed during use.\n\nThis will prevent you from purchasing\nor downloading software.",
+    "ua": "Карту SD або захищено від запису,\nабо не вставлено. Ще одна причина —\nїї виймали під час роботи.\n\nЧерез це не вийде купувати\nчи завантажувати програми."
+  },
+  "error_txt01_09": {
+    "en": "The activation code could\nnot be recognised.\nPlease check the code and\ntry entering it again.\n\nIf the problem persists, please\nmake a note of the error code\nand visit support.nintendo.com.",
+    "ua": "Не вдалося розпізнати\nкод активації. Перевірте\nкод і спробуйте ввести\nйого ще раз.\n\nЯкщо проблема не зникає,\nзапишіть код помилки й\nзавітайте на support.nintendo.com."
+  },
+  "error_txt01_10": {
+    "en": "The download code you\nhave entered is incorrect.\n\nPlease check the code\nand try entering it again.",
+    "ua": "Ви ввели неправильний\nкод завантаження.\n\nПеревірте код і спробуйте\nввести його ще раз."
+  },
+  "error_txt01_11": {
+    "en": "This activation code cannot\nbe used with your current\nregion setting.\n\nPlease check the code and try\nentering it again.",
+    "ua": "Цей код активації не працює\nз вашим поточним\nрегіоном.\n\nПеревірте код і спробуйте\nввести його ще раз."
+  },
+  "error_txt01_13": {
+    "en": "This activation code\nhas already been used.",
+    "ua": "Цей код активації\nвже використано."
+  },
+  "error_txt01_14": {
+    "en": "This download code has already\nbeen used.",
+    "ua": "Цей код завантаження вже\nвикористано."
+  },
+  "error_txt01_15": {
+    "en": "This download code could not be\nrecognised. Please check the\ncode and try entering it again.\n\nIf the problem persists, please\nmake a note of the error code\nand visit support.nintendo.com.",
+    "ua": "Не вдалося розпізнати цей код\nзавантаження. Перевірте код\nі спробуйте ввести його ще раз.\n\nЯкщо проблема не зникає,\nзапишіть код помилки\nй завітайте на\nsupport.nintendo.com."
+  },
+  "error_txt01_102": {
+    "en": "The activation code or download\ncode could not be recognised.\nThe code might have expired.\n\nIf the problem persists, please\nmake a note of the error code\nand visit support.nintendo.com.",
+    "ua": "Не вдалося розпізнати код\nактивації\nчи код завантаження. Можливо,\nтермін дії коду минув.\n\nЯкщо проблема не зникає,\nзапишіть код помилки\nй завітайте на\nsupport.nintendo.com."
+  },
+  "error_txt01_16": {
+    "en": "The code you have entered\nis a Nintendo Points number,\nwhich cannot be used with\nNintendo eShop.\n\nPlease enter a download code.",
+    "ua": "Ви ввели номер Nintendo Points,\nа він не працює\nз Nintendo eShop.\n\nВведіть код завантаження."
+  },
+  "error_txt01_17": {
+    "en": "The code you have entered is an\nactivation code, which cannot\nbe used as a download code.\n\nSelect the Add Funds option\nto use this code.",
+    "ua": "Ви ввели код активації,\nа він не працює як\nкод завантаження.\n\nВиберіть «Додати кошти»,\nщоб скористатися цим кодом."
+  },
+  "error_txt01_29": {
+    "en": "The credit card number you have\nentered is invalid.\n\nPlease re-enter your details.",
+    "ua": "Ви ввели неправильний номер\nплатіжної карти.\n\nВведіть дані ще раз."
+  },
+  "error_txt01_32": {
+    "en": "The address information was\nnot entered correctly.\n\nPlease check the entered\ninformation and try again.",
+    "ua": "Дані адреси введено\nнеправильно.\n\nПеревірте введені дані\nй спробуйте ще раз."
+  },
+  "error_txt01_33": {
+    "en": "The credit card details were not\nentered correctly.\n\nPlease re-enter your details.",
+    "ua": "Дані платіжної карти введено\nнеправильно.\n\nВведіть дані ще раз."
+  },
+  "error_txt01_98": {
+    "en": "The password you have entered\nis either invalid or too short.\n\nPasswords should be four to eight\ncharacters in length.",
+    "ua": "Введений пароль або\nнеправильний, або задовгий.\n\nПароль має бути від чотирьох\nдо восьми знаків."
+  },
+  "error_txt01_47": {
+    "en": "Failed to enter the\ncorrect PIN.",
+    "ua": "Ви ввели неправильний\nPIN."
+  },
+  "error_txt01_48": {
+    "en": "The download has failed.\nPlease wait and try again later.\n\nYou will not be charged for\nsubsequent download attempts.",
+    "ua": "Завантаження не вдалося.\nЗачекайте й спробуйте пізніше.\n\nЗа наступні спроби\nзавантаження\nз вас не візьмуть плати."
+  },
+  "error_txt01_49": {
+    "en": "",
+    "ua": ""
+  },
+  "error_txt01_50": {
+    "en": "",
+    "ua": ""
+  },
+  "error_txt01_51": {
+    "en": "",
+    "ua": ""
+  },
+  "error_txt01_52": {
+    "en": "",
+    "ua": ""
+  },
+  "error_txt01_53": {
+    "en": "An error has occurred. Please\nwait a moment and try again.\n\nIf the error recurs, please make\na note of the error code and\nvisit support.nintendo.com.",
+    "ua": "Сталася помилка. Зачекайте\nтрохи й спробуйте ще раз.\n\nЯкщо помилка повториться,\nзапишіть її код і завітайте\nна support.nintendo.com."
+  },
+  "error_txt01_105": {
+    "en": "The activation code you\nhave entered is incorrect.\n\nPlease check the code\nand try entering it again.",
+    "ua": "Ви ввели неправильний\nкод активації.\n\nПеревірте код і спробуйте\nввести його ще раз."
+  },
+  "error_txt01_55": {
+    "en": "There is not enough free space\non the SD Card.\n\nThis will prevent you from\ndownloading/purchasing software\nor using SpotPass.",
+    "ua": "На карті SD бракує\nвільного місця.\n\nЧерез це не вийде завантажувати\nчи купувати програми й не\nпрацюватиме SpotPass."
+  },
+  "error_txt01_56": {
+    "en": "Could not access SD Card.",
+    "ua": "Немає доступу до карти SD."
+  },
+  "error_txt01_99": {
+    "en": "Could not access SD Card.\n\nThis will prevent you from\nusing SpotPass.",
+    "ua": "Немає доступу до карти SD.\n\nЧерез це SpotPass\nне працюватиме."
+  },
+  "error_txt01_57": {
+    "en": "Cannot write to the SD Card.\nPlease turn off the power,\nremove the SD Card and then\nmove the write-protection\nswitch to the off position.",
+    "ua": "Не вдається записати на карту SD.\nВимкніть консоль, вийміть\nкарту SD і пересуньте\nперемикач захисту від запису\nв положення «off»."
+  },
+  "error_txt01_59": {
+    "en": "Could not access SD Card.\n\nTurn off the system, remove and\nreinsert the SD Card and then\ntry again.",
+    "ua": "Немає доступу до карти SD.\n\nВимкніть консоль, вийміть\nі вставте карту SD, тоді\nспробуйте ще раз."
+  },
+  "error_txt01_63": {
+    "en": "The area of the SD Card used for\nsaving software is corrupted.\n\nPlease recover the SD Card save\narea by using Data Management\nin the System Settings.\n\nYou will now be taken to\nData Management.",
+    "ua": "Ділянку карти SD, де зберігаються\nпрограми, пошкоджено.\n\nВідновіть її через «Керування\nданими» в налаштуваннях\nсистеми.\n\nЗараз ви перейдете до\n«Керування даними»."
+  },
+  "error_txt01_64": {
+    "en": "This software is already\npresent on the SD Card.\n\nIt is not necessary to\nredownload the software.",
+    "ua": "Ця програма вже є\nна карті SD.\n\nЗавантажувати її знову\nне потрібно."
+  },
+  "error_txt01_66": {
+    "en": "Nintendo eShop is currently\nundergoing maintenance. We\napologise for any inconvenience.\nPlease try again later.",
+    "ua": "У Nintendo eShop зараз\nведуться\nтехнічні роботи. Перепрошуємо\nза незручності.\nСпробуйте пізніше."
+  },
+  "error_txt01_67": {
+    "en": "A system update is available!\n\nPerform a system update in\nSystem Settings, then come\nback once you've updated!",
+    "ua": "Є оновлення системи!\n\nОновіть систему в налаштуваннях,\nа тоді повертайтеся!"
+  },
+  "error_txt01_68": {
+    "en": "Nintendo eShop is currently\nnot available in the region\nyou have selected in the\nSystem Settings.\n\nPress  to return to\nthe HOME Menu.",
+    "ua": "Nintendo eShop зараз\nнедоступний у регіоні, який\nви вибрали в налаштуваннях\nсистеми.\n\nНатисніть , щоб повернутися\nв меню HOME."
+  },
+  "error_txt01_69": {
+    "en": "",
+    "ua": ""
+  },
+  "error_txt01_70": {
+    "en": "You cannot add an amount that\nwould cause your balance to\nexceed {t:1.2:}.",
+    "ua": "Не можна додати суму, після якої\nбаланс перевищить\n{t:1.2:}."
+  },
+  "error_txt01_71": {
+    "en": "Please press  to return to the\nHOME Menu, then turn the system\noff and on again before retrying.",
+    "ua": "Натисніть , щоб повернутися\nв меню HOME, тоді вимкніть\nі ввімкніть консоль і спробуйте\nзнову."
+  },
+  "error_txt01_72": {
+    "en": "Battery power is running low.\n\nPlease plug in the AC adapter\nand recharge the system for\na short while.",
+    "ua": "Батарея майже розряджена.\n\nПід'єднайте блок живлення\nй трохи підзарядіть\nконсоль."
+  },
+  "error_txt01_73": {
+    "en": "Press  to return\nto the HOME Menu.",
+    "ua": "Натисніть , щоб повернутися\nв меню HOME."
+  },
+  "error_txt01_74": {
+    "en": "Your account could not be deleted.\n\nPlease press  to return to the\nHOME Menu, then turn the system\noff and on again before retrying.",
+    "ua": "Не вдалося видалити обліковий\nзапис.\n\nНатисніть , щоб повернутися\nв меню HOME, тоді вимкніть\nі ввімкніть консоль і спробуйте\nзнову."
+  },
+  "error_txt01_75": {
+    "en": "Please press  to return to\nthe HOME Menu, then try again.",
+    "ua": "Натисніть , щоб повернутися\nв меню HOME, тоді спробуйте ще\nраз."
+  },
+  "error_txt01_76": {
+    "en": "The Add Funds function is not\ncurrently available in the region\nyou have selected in the\nSystem Settings.",
+    "ua": "Додавання коштів зараз\nнедоступне в регіоні, який\nви вибрали в налаштуваннях\nсистеми."
+  },
+  "error_txt01_88": {
+    "en": "The Nintendo eShop service\nhas concluded. Thank you\nfor using the service.\n\nPress  to return to\nthe HOME Menu.",
+    "ua": "Сервіс Nintendo eShop\nприпинено. Дякуємо, що\nкористувалися ним.\n\nНатисніть , щоб повернутися\nв меню HOME."
+  },
+  "error_txt01_92": {
+    "en": "This software is not\ncurrently available.",
+    "ua": "Ця програма зараз\nнедоступна."
+  },
+  "error_txt01_94": {
+    "en": "No title information.\nPlease try again later.",
+    "ua": "Відомостей про програму немає.\nСпробуйте пізніше."
+  },
+  "error_txt01_95": {
+    "en": "The code you have entered\nis a Nintendo Points number,\nwhich cannot be used with\nNintendo eShop.\n\nPlease use a Nintendo eShop Card.",
+    "ua": "Ви ввели номер Nintendo Points,\nа він не працює\nз Nintendo eShop.\n\nСкористайтеся картою Nintendo\neShop."
+  },
+  "error_txt01_96": {
+    "en": "The code you have entered\nis a download code.\n\nPlease enter this code in\nRedeem Download Code\nunder Settings / Other.",
+    "ua": "Ви ввели код завантаження.\n\nВведіть його в розділі\n«Використати код завантаження»\nу «Параметрах / Інше»."
+  },
+  "error_txt01_97": {
+    "en": "There is no information available\nfor this software title.",
+    "ua": "Про цю програму немає\nжодних відомостей."
+  },
+  "error_txt01_100": {
+    "en": "The item corresponding to the code\nyou entered is not currently being\ndistributed.",
+    "ua": "Товар, що відповідає введеному\nкоду, зараз не роздається."
+  },
+  "error_txt01_101": {
+    "en": "The code you entered\nhas expired.",
+    "ua": "Термін дії введеного\nкоду минув."
+  },
+  "error_txt01_103": {
+    "en": "Download complete.\nThere is no need to redownload.",
+    "ua": "Завантаження завершено.\nЗавантажувати знову не\nпотрібно."
+  },
+  "error_txt01_106": {
+    "en": "The connection to the server has\ntimed out due to user inactivity.\n\nPlease restart Nintendo eShop\nand try again.",
+    "ua": "З'єднання з сервером розірвано\nчерез бездіяльність.\n\nПерезапустіть Nintendo eShop\nі спробуйте ще раз."
+  },
+  "error_txt01_107": {
+    "en": "Nintendo eShop is currently\nundergoing maintenance. We\napologise for any inconvenience.\n\nFor more information about\nmaintenance, visit\nsupport.nintendo.com.",
+    "ua": "У Nintendo eShop зараз ведуться\nтехнічні роботи. Перепрошуємо\nза незручності.\n\nДокладніше про роботи —\nна\nsupport.nintendo.com."
+  },
+  "error_txt01_108": {
+    "en": "The information has been updated.\nRelaunching.",
+    "ua": "Дані оновлено.\nПерезапуск."
+  },
+  "error_txt01_109": {
+    "en": "The code could not be recognised.\n\nPlease check the code and try\nentering it again.\n\nIf the problem persists, please\nmake a note of the error code\nand visit support.nintendo.com.",
+    "ua": "Не вдалося розпізнати код.\n\nПеревірте код і спробуйте\nввести його ще раз.\n\nЯкщо проблема не зникає,\nзапишіть код помилки й\nзавітайте на support.nintendo.com."
+  },
+  "error_txt01_110": {
+    "en": "The download code you have\nentered is incorrect.\n\nNote that hyphens and the letters\nI, O and Z are not used. Please\ncheck that you have not used any\nof these characters by mistake.",
+    "ua": "Ви ввели неправильний код\nзавантаження.\n\nЗверніть увагу: дефіси й літери\nI, O та Z не використовуються.\nПеревірте, чи ви їх випадково\nне ввели."
+  },
+  "error_txt01_111": {
+    "en": "The activation code you have\nentered is incorrect.\n\nNote that hyphens and the letters\nI, O and Z are not used. Please\ncheck that you have not used any\nof these characters by mistake.",
+    "ua": "Ви ввели неправильний код\nактивації.\n\nЗверніть увагу: дефіси й літери\nI, O та Z не використовуються.\nПеревірте, чи ви їх випадково\nне ввели."
+  },
+  "error_txt01_112": {
+    "en": "The price of this title has changed.\nPlease check the current price.\n\nIf the problem persists, please\nmake a note of the error code\nand visit support.nintendo.com.",
+    "ua": "Ціна цієї програми змінилася.\nПеревірте поточну ціну.\n\nЯкщо проблема не зникає,\nзапишіть код помилки\nй завітайте на\nsupport.nintendo.com."
+  },
+  "error_txt01_113": {
+    "en": "A system update is required.\nTo get the update, go to the\nSystem Settings and select\nSystem Update from Other Settings.\nOnce the update has installed,\nplease try again.",
+    "ua": "Потрібне оновлення системи.\nЩоб оновитися, відкрийте\nналаштування системи й виберіть\n«Оновлення системи» в «Інших\nналаштуваннях». Коли оновлення\nвстановиться, спробуйте ще раз."
+  },
+  "error_txt01_114": {
+    "en": "Download codes for add-on\ncontent, passes, etc. used in a\nsoftware title can only be\nredeemed from within that software,\nand cannot be redeemed in\nNintendo eShop.\n\nPlease enter the download code\nwithin the relevant software title.",
+    "ua": "Коди завантаження для\nдодаткового\nвмісту, пропусків тощо, які\nвикористовуються в грі, можна\nввести лише в самій грі, а не\nв Nintendo eShop.\n\nВведіть код завантаження\nу відповідній грі."
+  }
+}

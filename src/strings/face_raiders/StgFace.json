@@ -1,0 +1,1710 @@
+{
+  "StgFace_16": {
+    "en": "",
+    "ua": ""
+  },
+  "StgFace_Title_PressA": {
+    "en": "Press ",
+    "ua": "Натисніть "
+  },
+  "StgFace_Title_Nintendo": {
+    "en": "",
+    "ua": ""
+  },
+  "StgFace_Title_ButtonA": {
+    "en": "",
+    "ua": ""
+  },
+  "StgFace_Title_ButtonB": {
+    "en": "",
+    "ua": ""
+  },
+  "StgFace_Title_ButtonC": {
+    "en": "",
+    "ua": ""
+  },
+  "StgFace_Explain_Select\n": {
+    "en": "",
+    "ua": ""
+  },
+  "StgFace_Explain_Decide": {
+    "en": "",
+    "ua": ""
+  },
+  "StgFace_Explain_Return": {
+    "en": "",
+    "ua": ""
+  },
+  "StgFace_Next2": {
+    "en": "",
+    "ua": ""
+  },
+  "StgFace_Return": {
+    "en": " Back",
+    "ua": " Назад"
+  },
+  "StgFace_Yes": {
+    "en": "Yes",
+    "ua": "Так"
+  },
+  "StgFace_No": {
+    "en": "No",
+    "ua": "Ні"
+  },
+  "StgFace_Decide": {
+    "en": "Confirm",
+    "ua": "Готово"
+  },
+  "StgFace_Next": {
+    "en": " Next",
+    "ua": " Далі"
+  },
+  "StgFace_01": {
+    "en": "",
+    "ua": ""
+  },
+  "StgFace_02": {
+    "en": "",
+    "ua": ""
+  },
+  "StgFace_SeqTitle_StageSelect": {
+    "en": "",
+    "ua": ""
+  },
+  "StgFace_SeqTitle_StageSelect_Stage1": {
+    "en": "Stage 1",
+    "ua": "Рівень 1"
+  },
+  "StgFace_SeqTitle_StageSelect_Stage2": {
+    "en": "Stage 2",
+    "ua": "Рівень 2"
+  },
+  "StgFace_SeqTitle_StageSelect_Stage3": {
+    "en": "Stage 3",
+    "ua": "Рівень 3"
+  },
+  "StgFace_SeqTitle_StageSelect_Stage4": {
+    "en": "",
+    "ua": ""
+  },
+  "StgFace_SeqTitle_ModeSelect": {
+    "en": "",
+    "ua": ""
+  },
+  "StgFace_SeqTitle_ModeSelectA": {
+    "en": "",
+    "ua": ""
+  },
+  "StgFace_SeqTitle_ModeSelectB": {
+    "en": "",
+    "ua": ""
+  },
+  "StgFace_Calibration": {
+    "en": "",
+    "ua": ""
+  },
+  "StgFace_Attention": {
+    "en": "",
+    "ua": ""
+  },
+  "StgFace_FaceMatching_OutsideCamera": {
+    "en": " Outer",
+    "ua": " Задня"
+  },
+  "StgFace_FaceMatching_InsideCamera": {
+    "en": " Inner",
+    "ua": " Передня"
+  },
+  "StgFace_FaceMatching_Distance": {
+    "en": "Move farther away",
+    "ua": "Відійдіть далі"
+  },
+  "StgFace_FaceMatching_Close": {
+    "en": "Move closer",
+    "ua": "Підійдіть ближче"
+  },
+  "StgFace_FaceMatching_Right": {
+    "en": "",
+    "ua": ""
+  },
+  "StgFace_FaceMatching_Left": {
+    "en": "",
+    "ua": ""
+  },
+  "StgFace_FaceMatching_Up": {
+    "en": "",
+    "ua": ""
+  },
+  "StgFace_FaceMatching_Down": {
+    "en": "",
+    "ua": ""
+  },
+  "StgFace_FaceMatching_Wait": {
+    "en": "Align mouth and eyes\nwith the guide",
+    "ua": "Сумістіть рот і очі\nз рамкою"
+  },
+  "StgFace_FaceMatching_ShowFace": {
+    "en": "Put a face in the frame",
+    "ua": "Наведіть рамку на\nобличчя"
+  },
+  "StgFace_FaceMatching_Shutter": {
+    "en": "Shutter sound will play",
+    "ua": "Пролунає звук затвора"
+  },
+  "StgFace_FaceMatching_Sex": {
+    "en": "Gender",
+    "ua": "Стать"
+  },
+  "StgFace_FaceMatching_Male": {
+    "en": "(♂)",
+    "ua": ""
+  },
+  "StgFace_FaceMatching_Male?": {
+    "en": "",
+    "ua": ""
+  },
+  "StgFace_FaceMatching_Female": {
+    "en": "(♀)",
+    "ua": ""
+  },
+  "StgFace_FaceMatching_Female?": {
+    "en": "",
+    "ua": ""
+  },
+  "StgFace_FaceMatching_Sex??": {
+    "en": "??",
+    "ua": ""
+  },
+  "StgFace_FaceMatching_Age": {
+    "en": "Age",
+    "ua": "Вік"
+  },
+  "StgFace_FaceMatching_Baby": {
+    "en": "Baby",
+    "ua": "Малюк"
+  },
+  "StgFace_FaceMatching_Child": {
+    "en": "Child",
+    "ua": "Дитина"
+  },
+  "StgFace_FaceMatching_Young": {
+    "en": "Young adult",
+    "ua": "Молодь"
+  },
+  "StgFace_FaceMatching_Adult": {
+    "en": "Adult",
+    "ua": "Дорослий"
+  },
+  "StgFace_FaceMatching_Old": {
+    "en": "",
+    "ua": ""
+  },
+  "StgFace_FaceMatching_Age??": {
+    "en": "??",
+    "ua": ""
+  },
+  "StgFace_FaceMatching_SexAge": {
+    "en": "%ls %ls",
+    "ua": "%ls %ls"
+  },
+  "StgFace_FaceMatching_Unlock00": {
+    "en": "",
+    "ua": ""
+  },
+  "StgFace_FaceMatching_Unlock01Man": {
+    "en": "",
+    "ua": ""
+  },
+  "StgFace_FaceMatching_Unlock01Woman": {
+    "en": "",
+    "ua": ""
+  },
+  "StgFace_Face_PropertyBabyBoy": {
+    "en": "Baby Boy",
+    "ua": "Хлопчик-малюк"
+  },
+  "StgFace_Face_PropertyBabyGirl": {
+    "en": "Baby Girl",
+    "ua": "Дівчинка-малючка"
+  },
+  "StgFace_Face_PropertyBaby": {
+    "en": "Baby",
+    "ua": "Малюк"
+  },
+  "StgFace_Face_PropertyBoy": {
+    "en": "Boy",
+    "ua": "Хлопчик"
+  },
+  "StgFace_Face_PropertyGirl": {
+    "en": "Girl",
+    "ua": "Дівчинка"
+  },
+  "StgFace_Face_PropertyChild": {
+    "en": "Child",
+    "ua": "Дитина"
+  },
+  "StgFace_Face_PropertyYoungMan": {
+    "en": "Youth",
+    "ua": "Юнак"
+  },
+  "StgFace_Face_PropertyYoungWoman": {
+    "en": "Young Lady",
+    "ua": "Панянка"
+  },
+  "StgFace_Face_PropertyYoung": {
+    "en": "Young Adult",
+    "ua": "Молодь"
+  },
+  "StgFace_Face_PropertyMan": {
+    "en": "Man",
+    "ua": "Чоловік"
+  },
+  "StgFace_Face_PropertyWoman": {
+    "en": "Woman",
+    "ua": "Жінка"
+  },
+  "StgFace_Face_PropertyAdult25": {
+    "en": "Adult",
+    "ua": "Дорослий"
+  },
+  "StgFace_Face_PropertyGentleman": {
+    "en": "Gentleman",
+    "ua": "Пан"
+  },
+  "StgFace_Face_PropertyLady": {
+    "en": "Lady",
+    "ua": "Пані"
+  },
+  "StgFace_Face_PropertyAdult60": {
+    "en": "Adult",
+    "ua": "Дорослий"
+  },
+  "StgFace_Face_PropertyMale": {
+    "en": "Male",
+    "ua": "Чоловіча"
+  },
+  "StgFace_Face_PropertyFemale": {
+    "en": "Female",
+    "ua": "Жіноча"
+  },
+  "StgFace_Face_Property??": {
+    "en": "Unidentified",
+    "ua": "Невідомо"
+  },
+  "StgFace_06": {
+    "en": "",
+    "ua": ""
+  },
+  "StgFace_Game_Score": {
+    "en": "Score",
+    "ua": "Очки"
+  },
+  "StgFace_Game_Perfect": {
+    "en": "Perfect!",
+    "ua": "Ідеально!"
+  },
+  "StgFace_08": {
+    "en": "",
+    "ua": ""
+  },
+  "StgFace_09": {
+    "en": "",
+    "ua": ""
+  },
+  "StgFace_10": {
+    "en": "",
+    "ua": ""
+  },
+  "StgFace_SubTitle_Explain_Shoot": {
+    "en": "Press  to fire!",
+    "ua": "Натисніть , щоб вистрілити!"
+  },
+  "StgFace_SubTitle_Explain_Move": {
+    "en": "Move the system to aim",
+    "ua": "Рухайте консоллю, щоб цілитися"
+  },
+  "StgFace_SubTitle_Boss_Stage1_00": {
+    "en": "",
+    "ua": ""
+  },
+  "StgFace_SubTitle_Boss_Stage1_01": {
+    "en": "",
+    "ua": ""
+  },
+  "StgFace_SubTitle_Boss_Stage1_02": {
+    "en": "",
+    "ua": ""
+  },
+  "StgFace_SubTitle_Boss_Stage1_05": {
+    "en": "",
+    "ua": ""
+  },
+  "StgFace_SubTitle_Boss_Stage1_03": {
+    "en": "",
+    "ua": ""
+  },
+  "StgFace_SubTitle_Boss_Stage1_04": {
+    "en": "",
+    "ua": ""
+  },
+  "StgFace_SubTitle_Boss_Stage3_00": {
+    "en": "",
+    "ua": ""
+  },
+  "StgFace_SubTitle_Darekato_00": {
+    "en": "",
+    "ua": ""
+  },
+  "StgFace_SubTitle_Darekato_01": {
+    "en": "",
+    "ua": ""
+  },
+  "StgFace_SubTitle_Darekato_02": {
+    "en": "",
+    "ua": ""
+  },
+  "StgFace_SubTitle_warning_hole_02": {
+    "en": "The meter drops as you take damage...",
+    "ua": "Смуга спадає, коли вас б'ють..."
+  },
+  "StgFace_SubTitle_warning_hole_00": {
+    "en": "If the meter runs out, it's game over!",
+    "ua": "Якщо смуга скінчиться — кінець гри!"
+  },
+  "StgFace_SubTitle_warning_hole_03": {
+    "en": "Keep an eye on the damage meter!",
+    "ua": "Пильнуйте смугу пошкоджень!"
+  },
+  "StgFace_SubTitle_warning_hole_01": {
+    "en": "You can't take much more damage!",
+    "ua": "Ще трохи — і вам кінець!"
+  },
+  "StgFace_SubTitle_Hint": {
+    "en": "",
+    "ua": ""
+  },
+  "StgFace_SubTitle_Hint_faceBomb": {
+    "en": "A face bomb! Press  to use it!",
+    "ua": "Бомба-обличчя!  — ужити!"
+  },
+  "StgFace_14": {
+    "en": "",
+    "ua": ""
+  },
+  "StgFace_Game_GroupBonus": {
+    "en": "",
+    "ua": ""
+  },
+  "StgFace_Game_Explain_Pause": {
+    "en": "",
+    "ua": ""
+  },
+  "StgFace_Game_Sleep": {
+    "en": "",
+    "ua": ""
+  },
+  "StgFace_Game_Pause": {
+    "en": "",
+    "ua": ""
+  },
+  "StgFace_Game_Pause_End?": {
+    "en": "",
+    "ua": ""
+  },
+  "StgFace_Result_Score": {
+    "en": "",
+    "ua": ""
+  },
+  "StgFace_Result_HighScore": {
+    "en": "High Score",
+    "ua": "Рекорд"
+  },
+  "StgFace_Result_HighScore_Renew": {
+    "en": "",
+    "ua": ""
+  },
+  "StgFace_Result_GetFace": {
+    "en": "",
+    "ua": ""
+  },
+  "StgFace_Result_GetFace_00": {
+    "en": "",
+    "ua": ""
+  },
+  "StgFace_Result_GetFace_01": {
+    "en": "",
+    "ua": ""
+  },
+  "StgFace_Result_MissFace": {
+    "en": "",
+    "ua": ""
+  },
+  "StgFace_Result_MissFace_00": {
+    "en": "",
+    "ua": ""
+  },
+  "StgFace_Result_MissFace_01": {
+    "en": "",
+    "ua": ""
+  },
+  "StgFace_Result_ReleaseFace": {
+    "en": "",
+    "ua": ""
+  },
+  "StgFace_FaceRecord": {
+    "en": "",
+    "ua": ""
+  },
+  "StgFace_FaceRecord_Yes": {
+    "en": "",
+    "ua": ""
+  },
+  "StgFace_FaceRecord_No": {
+    "en": "",
+    "ua": ""
+  },
+  "StgFace_FaceRecord_Recording": {
+    "en": "Saving...",
+    "ua": "Збереження..."
+  },
+  "StgFace_FaceRecord_TheDate": {
+    "en": "%02d/%02d/%d",
+    "ua": "%02d.%02d.%d"
+  },
+  "StgFace_FaceRecord_TheDate_00": {
+    "en": "DD/MM/YYYY",
+    "ua": "ДД.ММ.РРРР"
+  },
+  "StgFace_FaceRecord_Retake": {
+    "en": "Retake",
+    "ua": "Перезняти"
+  },
+  "StgFace_FaceRecord_Retake_Ok": {
+    "en": "",
+    "ua": ""
+  },
+  "StgFace_FaceRecord_NewFace": {
+    "en": "New Face",
+    "ua": "Нове\nобличчя"
+  },
+  "StgFace_FaceRecord_Full": {
+    "en": "",
+    "ua": ""
+  },
+  "StgFace_FaceRecord_ Delete_WhichFace": {
+    "en": "",
+    "ua": ""
+  },
+  "StgFace_FaceRecord_ Delete_Stop": {
+    "en": "",
+    "ua": ""
+  },
+  "StgFace_FaceRecord_ Delete_Deleted": {
+    "en": "",
+    "ua": ""
+  },
+  "StgFace_ThankYou": {
+    "en": "",
+    "ua": ""
+  },
+  "StgFace_15": {
+    "en": "",
+    "ua": ""
+  },
+  "StgFace_SeqTitle_Record_Top": {
+    "en": "",
+    "ua": ""
+  },
+  "StgFace_SeqTitle_Record_Property": {
+    "en": "Selected face",
+    "ua": "Вибране обличчя"
+  },
+  "StgFace_SeqTitle_Record_CollectionDate": {
+    "en": "Date Met",
+    "ua": "Дата зустрічі"
+  },
+  "StgFace_SeqTitle_Record_Appearance": {
+    "en": "Times chosen",
+    "ua": "Разів обрано"
+  },
+  "StgFace_SeqTitle_Record_AppearanceData": {
+    "en": "",
+    "ua": ""
+  },
+  "StgFace_SeqTitle_Record_NotLike": {
+    "en": "",
+    "ua": ""
+  },
+  "StgFace_SeqTitle_Record_Expressive_Laugh": {
+    "en": "",
+    "ua": ""
+  },
+  "StgFace_SeqTitle_Record_Expressive_Cry": {
+    "en": "",
+    "ua": ""
+  },
+  "StgFace_SeqTitle_Record_Expressive_Angry": {
+    "en": "",
+    "ua": ""
+  },
+  "StgFace_SeqTitle_Record_Expressive": {
+    "en": "Expression",
+    "ua": "Вираз"
+  },
+  "StgFace_SeqTitle_Record_Delete_Top": {
+    "en": "",
+    "ua": ""
+  },
+  "StgFace_SeqTitle_Record_Delete": {
+    "en": "Delete",
+    "ua": "Стерти"
+  },
+  "StgFace_SeqTitle_Record_Adjust_Top": {
+    "en": "Adjust",
+    "ua": "Підправити"
+  },
+  "StgFace_SeqTitle_Record_Adjust": {
+    "en": "",
+    "ua": ""
+  },
+  "StgFace_SeqTitle_Record_SexAge": {
+    "en": "Gender/Age",
+    "ua": "Стать/вік"
+  },
+  "StgFace_SeqTitle_Record_Sex_Baby": {
+    "en": "Up to 3 years",
+    "ua": "До 3 років"
+  },
+  "StgFace_SeqTitle_Record_Sex_Child": {
+    "en": "4 to 9 years",
+    "ua": "4–9 років"
+  },
+  "StgFace_SeqTitle_Record_Sex_Young": {
+    "en": "10 to 29 years",
+    "ua": "10–29 років"
+  },
+  "StgFace_SeqTitle_Record_Sex_Adult": {
+    "en": "30 to 49 years",
+    "ua": "30–49 років"
+  },
+  "StgFace_SeqTitle_Record_Sex_Old": {
+    "en": "Over 50 years",
+    "ua": "Понад 50 років"
+  },
+  "StgFace_SeqTitle_Record_Adjust_ExplainAbove00": {
+    "en": "",
+    "ua": ""
+  },
+  "StgFace_SeqTitle_Record_Adjust_ExplainAbove01": {
+    "en": "",
+    "ua": ""
+  },
+  "StgFace_SeqTitle_Record_Adjust_ExplainAbove": {
+    "en": "",
+    "ua": ""
+  },
+  "StgFace_SeqTitle_Record_Adjust_Explain": {
+    "en": "",
+    "ua": ""
+  },
+  "StgFace_SeqTitle_Record_Delete?": {
+    "en": "",
+    "ua": ""
+  },
+  "StgFace_PutFace": {
+    "en": "",
+    "ua": ""
+  },
+  "StgFace_PutFace_PutFaceButton ": {
+    "en": "",
+    "ua": ""
+  },
+  "StgFace_PutFace_Explain_PutFaceButton ": {
+    "en": "",
+    "ua": ""
+  },
+  "StgFace_PutFace_PleaseChooseEnemy": {
+    "en": "",
+    "ua": ""
+  },
+  "StgFace_PutFace_PleaseChooseFace": {
+    "en": "",
+    "ua": ""
+  },
+  "StgFace_SeqTitle_CastingList": {
+    "en": "",
+    "ua": ""
+  },
+  "StgFace_SeqTitle_Record_Boss": {
+    "en": "",
+    "ua": ""
+  },
+  "StgFace_SeqTitle_Record_SmallFry00": {
+    "en": "",
+    "ua": ""
+  },
+  "StgFace_SeqTitle_Record_SmallFry01": {
+    "en": "",
+    "ua": ""
+  },
+  "StgFace_SeqTitle_Record_SmallFry02": {
+    "en": "",
+    "ua": ""
+  },
+  "StgFace_SeqTitle_Record_SmallFry03": {
+    "en": "",
+    "ua": ""
+  },
+  "StgFace_SeqTitle_Record_SmallFry04": {
+    "en": "",
+    "ua": ""
+  },
+  "StgFace_SeqTitle_Record_SmallFry05": {
+    "en": "",
+    "ua": ""
+  },
+  "StgFace_Dialog_OutCamera": {
+    "en": "",
+    "ua": ""
+  },
+  "StgFace_Dialog_Congratulation": {
+    "en": "Congratulations!",
+    "ua": "Вітаємо!"
+  },
+  "StgFace_Dialog_UnlockOpenOutCamera": {
+    "en": "",
+    "ua": ""
+  },
+  "StgFace_Dialog_UnlockRecord": {
+    "en": "You've collected a face!\nFace Collection has been\nadded to the menu!",
+    "ua": "Ви зібрали обличчя!\nУ меню з'явилася\n«Колекція облич»!"
+  },
+  "StgFace_Dialog_UnlockStage2": {
+    "en": "",
+    "ua": ""
+  },
+  "StgFace_Dialog_UnlockCasting": {
+    "en": "",
+    "ua": ""
+  },
+  "StgFace_Dialog_UnlockStage3": {
+    "en": "",
+    "ua": ""
+  },
+  "StgFace_Dialog_UnlockStage4": {
+    "en": "",
+    "ua": ""
+  },
+  "StgFace_Dialog_UnlockStage5": {
+    "en": "Your face collection has expanded!\nNow you can select stages in\nShare the Fun!",
+    "ua": "Ваша колекція облич зросла!\nТепер у «Гра для всіх»\nможна вибирати рівні!"
+  },
+  "StgFace_Dialog_UnlockStage6": {
+    "en": "",
+    "ua": ""
+  },
+  "StgFace_Dialog_UnlockCollection": {
+    "en": "",
+    "ua": ""
+  },
+  "StgFace_Lower_ADecide": {
+    "en": "",
+    "ua": ""
+  },
+  "StgFace_Lower_ANext": {
+    "en": "",
+    "ua": ""
+  },
+  "StgFace_Lower_PadSelect_ADecide": {
+    "en": "",
+    "ua": ""
+  },
+  "StgFace_Lower_PadSelect_ADecide_BBack": {
+    "en": "",
+    "ua": ""
+  },
+  "StgFace_Lower_PadSelect_ACasting_BBack": {
+    "en": "",
+    "ua": ""
+  },
+  "StgFace_Lower_PadAdjust_ADecide_BBack": {
+    "en": "",
+    "ua": ""
+  },
+  "StgFace_Lower_PadAdjust_Adjust": {
+    "en": "",
+    "ua": ""
+  },
+  "StgFace_Game_Pause_Explain": {
+    "en": "",
+    "ua": ""
+  },
+  "StgFace_Game_Explain_Home": {
+    "en": ": Return to HOME Menu",
+    "ua": ": назад у меню HOME"
+  },
+  "StgFace_TitleMenu_Button00": {
+    "en": "",
+    "ua": ""
+  },
+  "StgFace_TitleMenu_Button01": {
+    "en": "Play",
+    "ua": "Грати"
+  },
+  "StgFace_TitleMenu_Button02": {
+    "en": "Face Collection",
+    "ua": "Колекція облич"
+  },
+  "StgFace_TitleMenu_Button03": {
+    "en": "Share the Fun!",
+    "ua": "Гра для всіх!"
+  },
+  "StgFace_Button00": {
+    "en": "",
+    "ua": ""
+  },
+  "StgFace_Button08": {
+    "en": "",
+    "ua": ""
+  },
+  "StgFace_Button01": {
+    "en": "Customise",
+    "ua": "Змінити"
+  },
+  "StgFace_Button06": {
+    "en": "",
+    "ua": ""
+  },
+  "StgFace_Button02": {
+    "en": "",
+    "ua": ""
+  },
+  "StgFace_Button03": {
+    "en": "",
+    "ua": ""
+  },
+  "StgFace_Button04": {
+    "en": "Play Again",
+    "ua": "Ще раз"
+  },
+  "StgFace_Button05": {
+    "en": "Cancel",
+    "ua": "Назад"
+  },
+  "StgFace_Button07": {
+    "en": "Delete",
+    "ua": "Стерти"
+  },
+  "StgFace_PNote": {
+    "en": "",
+    "ua": ""
+  },
+  "StgFace_FaceMatching_Diagnosis": {
+    "en": "Analysing...",
+    "ua": "Аналіз..."
+  },
+  "StgFace_Initialize": {
+    "en": "Preparing...",
+    "ua": "Підготовка..."
+  },
+  "StgFace_WhichFace": {
+    "en": "Which face do you want to play with?",
+    "ua": "З яким обличчям хочете грати?"
+  },
+  "StgFace_Figure": {
+    "en": "System",
+    "ua": "Консоль"
+  },
+  "StgFace_Dialog_2face": {
+    "en": "",
+    "ua": ""
+  },
+  "StgFace_Dialog_4face": {
+    "en": "",
+    "ua": ""
+  },
+  "StgFace_New": {
+    "en": "NEW",
+    "ua": "НОВЕ"
+  },
+  "StgFace_Menu_00": {
+    "en": "Select",
+    "ua": "Вибрати"
+  },
+  "StgFace_Menu_01": {
+    "en": "Confirm",
+    "ua": "Готово"
+  },
+  "StgFace_?": {
+    "en": "",
+    "ua": ""
+  },
+  "StgFace_Darekato_00": {
+    "en": "",
+    "ua": ""
+  },
+  "StgFace_Darekato_01": {
+    "en": "",
+    "ua": ""
+  },
+  "StgFace_Darekato_02": {
+    "en": "",
+    "ua": ""
+  },
+  "StgFace_Darekato_03": {
+    "en": "",
+    "ua": ""
+  },
+  "StgFace_Darekato_04": {
+    "en": "",
+    "ua": ""
+  },
+  "StgFace_Darekato_05": {
+    "en": "",
+    "ua": ""
+  },
+  "StgFace_Darekato_06": {
+    "en": "",
+    "ua": ""
+  },
+  "StgFace_Darekato_ShowFace_00": {
+    "en": "",
+    "ua": ""
+  },
+  "StgFace_Darekato_ShowFace_01": {
+    "en": "",
+    "ua": ""
+  },
+  "StgFace_HintDialog_00": {
+    "en": "",
+    "ua": ""
+  },
+  "StgFace_HintDialog_01": {
+    "en": "",
+    "ua": ""
+  },
+  "StgFace_HintDialog_03": {
+    "en": "",
+    "ua": ""
+  },
+  "StgFace_HintDialog_04": {
+    "en": "",
+    "ua": ""
+  },
+  "StgFace_HintDialog_05": {
+    "en": "",
+    "ua": ""
+  },
+  "StgFace_HintDialog_06": {
+    "en": "",
+    "ua": ""
+  },
+  "StgFace_HintDialog_07": {
+    "en": "",
+    "ua": ""
+  },
+  "StgFace_HintDialog_02": {
+    "en": "",
+    "ua": ""
+  },
+  "StgFace_MemoryFull": {
+    "en": "",
+    "ua": ""
+  },
+  "StgFace_Lower_FaceDefeated": {
+    "en": "Rescued Faces",
+    "ua": "Врятовані обличчя"
+  },
+  "StgFace_Title_Pnote": {
+    "en": "",
+    "ua": ""
+  },
+  "StgFace_Result_kao": {
+    "en": "Face Bonus",
+    "ua": "Бонус облич"
+  },
+  "StgFace_TotalResult_01": {
+    "en": "Total Score",
+    "ua": "Всього очок"
+  },
+  "StgFace_FaceRecord_ new": {
+    "en": "",
+    "ua": ""
+  },
+  "StgFace_scorerank_combo": {
+    "en": "Max Combo",
+    "ua": "Найбільша серія"
+  },
+  "StgFace_screencapture_00": {
+    "en": "Don't Save",
+    "ua": "Не зберігати"
+  },
+  "StgFace_screencapture_01": {
+    "en": "Save",
+    "ua": "Зберегти"
+  },
+  "StgFace_capturedialog_00": {
+    "en": "",
+    "ua": ""
+  },
+  "StgFace_capturedialog_01": {
+    "en": "",
+    "ua": ""
+  },
+  "StgFace_score_00": {
+    "en": "%d",
+    "ua": "%d"
+  },
+  "StgFace_score_01": {
+    "en": "%d,%03d",
+    "ua": "%d,%03d"
+  },
+  "StgFace_score_02": {
+    "en": "%d,%03d",
+    "ua": "%d,%03d"
+  },
+  "StgFace_FaceMatching_guide": {
+    "en": "Align mouth and\neyes with the guides,\nthen press .",
+    "ua": "Сумістіть рот і очі\nз рамками, тоді\nнатисніть ."
+  },
+  "StgFace_FaceMatching_ok": {
+    "en": "Is this face OK?",
+    "ua": "Це обличчя підходить?"
+  },
+  "StgFace_demo_lr": {
+    "en": "",
+    "ua": ""
+  },
+  "StgFace_friend_runk_ymd": {
+    "en": "%02d/%02d/%d",
+    "ua": "%02d.%02d.%d"
+  },
+  "StgFace_friend_runk_nin": {
+    "en": "　",
+    "ua": ""
+  },
+  "StgFace_Information": {
+    "en": " Advice",
+    "ua": " Поради"
+  },
+  "StgFace_SeqTitle_StageSelect_gameselect": {
+    "en": "Select a stage!",
+    "ua": "Виберіть рівень!"
+  },
+  "StgFace_FaceCollection_ufo": {
+    "en": "A UFO has landed! The UFO\nwill abduct faces from\nNintendo 3DS Camera.",
+    "ua": "Приземлилася НЛО! Вона\nвикраде обличчя\nз Nintendo 3DS Камери."
+  },
+  "StgFace_FaceCollection_list": {
+    "en": "UFO Crew",
+    "ua": "Екіпаж НЛО"
+  },
+  "StgFace_FaceCollection_retrieval": {
+    "en": "",
+    "ua": ""
+  },
+  "StgFace_FaceCollection_notfound": {
+    "en": "Couldn't find any faces.",
+    "ua": "Облич не знайдено."
+  },
+  "StgFace_FaceCollection_hint": {
+    "en": "",
+    "ua": ""
+  },
+  "StgFace_FaceCollection_found": {
+    "en": "Abduction from\nNintendo 3DS Camera\ncomplete!",
+    "ua": "Викрадення з\nNintendo 3DS Камери\nзавершено!"
+  },
+  "StgFace_FaceCollection_list_title": {
+    "en": "UFO Crew",
+    "ua": "Екіпаж НЛО"
+  },
+  "StgFace_FaceCollection_overcapacity": {
+    "en": "Full",
+    "ua": "Повно"
+  },
+  "StgFace_FaceMatching_Male_Baby": {
+    "en": "",
+    "ua": ""
+  },
+  "StgFace_FaceMatching_Female_Baby": {
+    "en": "",
+    "ua": ""
+  },
+  "StgFace_FaceMatching_Male_Child": {
+    "en": "",
+    "ua": ""
+  },
+  "StgFace_FaceMatching_Female_Child": {
+    "en": "",
+    "ua": ""
+  },
+  "StgFace_FaceMatching_Male_Young": {
+    "en": "",
+    "ua": ""
+  },
+  "StgFace_FaceMatching_Female_Young": {
+    "en": "",
+    "ua": ""
+  },
+  "StgFace_FaceMatching_Male_Adult": {
+    "en": "",
+    "ua": ""
+  },
+  "StgFace_FaceMatching_Female_Adult": {
+    "en": "",
+    "ua": ""
+  },
+  "StgFace_SeqTitle_StageSelect_friend": {
+    "en": "Demo Faces",
+    "ua": "Показові обличчя"
+  },
+  "StgFace_SeqTitle_StageSelect_friend_persons": {
+    "en": "",
+    "ua": ""
+  },
+  "StgFace_SeqTitle_StageSelect_unlock_st2": {
+    "en": "Unlock this by collecting\ntwo faces. Try getting\nfamily members' faces!",
+    "ua": "Відкриється, коли зберете\nдва обличчя. Спробуйте зняти\nчленів родини!"
+  },
+  "StgFace_SeqTitle_StageSelect_unlock_st3a": {
+    "en": "Unlock this by collecting\nthree faces. Try getting\nyour friends' faces!",
+    "ua": "Відкриється, коли зберете\nтри обличчя. Спробуйте\nзняти друзів!"
+  },
+  "StgFace_SeqTitle_StageSelect_unlock_st4": {
+    "en": "Unlock this by collecting\nfive faces. Try taking\nphotos of other photos,\nor even drawings!",
+    "ua": "Відкриється, коли зберете\nп'ять облич. Спробуйте знімати\nінші фото або навіть малюнки!"
+  },
+  "StgFace_SeqTitle_StageSelect_unlock_st5": {
+    "en": "???\nTry collecting friends' faces\nusing Share the Fun.",
+    "ua": "???\nСпробуйте зібрати обличчя\nдрузів у «Грі для всіх»."
+  },
+  "StgFace_SeqTitle_StageSelect_unlock_st6": {
+    "en": "???\nTry merging faces in\nNintendo 3DS Camera!\nKeep collecting!",
+    "ua": "???\nСпробуйте змішати обличчя\nв Nintendo 3DS Камері!\nЗбирайте далі!"
+  },
+  "StgFace_SeqTitle_StageSelect_unlock_st3b": {
+    "en": "",
+    "ua": ""
+  },
+  "StgFace_FaceMatching_st1_first": {
+    "en": "Try taking a photo of\nsomeone's face.",
+    "ua": "Спробуйте зняти\nчиєсь обличчя."
+  },
+  "StgFace_FaceMatching_st2_first": {
+    "en": "Try taking a photo of\na new face.",
+    "ua": "Спробуйте зняти\nнове обличчя."
+  },
+  "StgFace_FaceMatching_st3_first": {
+    "en": "Try taking a photo\nof someone with\na squarish face.",
+    "ua": "Спробуйте зняти\nкогось із квадратним\nобличчям."
+  },
+  "StgFace_FaceMatching_st4_first": {
+    "en": "Try looking for\nsomeone who is\na shining inspiration.",
+    "ua": "Спробуйте знайти\nкогось, хто аж\nсвітиться."
+  },
+  "StgFace_FaceMatching_arrow": {
+    "en": "These are your faces so far.",
+    "ua": "Ось ваші обличчя досі."
+  },
+  "StgFace_FaceMatching_crown": {
+    "en": "",
+    "ua": ""
+  },
+  "StgFace_capturedialog_description": {
+    "en": "",
+    "ua": ""
+  },
+  "StgFace_hint_button": {
+    "en": "Tips",
+    "ua": "Поради"
+  },
+  "StgFace_hint_stage1_enemy": {
+    "en": "You can shoot down the rubble\nthat comes flying towards you.",
+    "ua": "Уламки, що летять на вас,\nможна збивати."
+  },
+  "StgFace_hint_stage1_boss": {
+    "en": "Use spikes to break green barriers.",
+    "ua": "Ламайте зелені бар'єри шипами."
+  },
+  "StgFace_hint_stage2_enemy": {
+    "en": "You can only defeat this enemy\nwhen it's blue.",
+    "ua": "Цього ворога можна здолати,\nлише коли він синій."
+  },
+  "StgFace_hint_stage2_boss": {
+    "en": "If the real face doesn't show itself...\ntry here.",
+    "ua": "Якщо справжнє обличчя не видно...\nспробуйте тут."
+  },
+  "StgFace_hint_stage3_enemy": {
+    "en": "Go for the red ones first.",
+    "ua": "Спершу бийте по червоних."
+  },
+  "StgFace_hint_stage3_boss": {
+    "en": "What might happen if you flip\nthem all over?",
+    "ua": "Що станеться, якщо перевернути\nїх усіх?"
+  },
+  "StgFace_hint_stage4_enemy": {
+    "en": "Avoid rapid fire.",
+    "ua": "Не стріляйте чергами."
+  },
+  "StgFace_hint_stage4_boss": {
+    "en": "When the boss rotates left,\nits beam attack goes right!",
+    "ua": "Коли бос повертає ліворуч,\nйого промінь б'є праворуч!"
+  },
+  "StgFace_hint_extrastage": {
+    "en": "You've made it this far - you can\nmake it through this by yourself!",
+    "ua": "Ви зайшли аж сюди — далі\nдасте раду й самі!"
+  },
+  "StgFace_pause_continue": {
+    "en": "Continue",
+    "ua": "Далі"
+  },
+  "StgFace_pause_quit": {
+    "en": "Quit",
+    "ua": "Вийти"
+  },
+  "StgFace_ufo_fukidashi_01": {
+    "en": "",
+    "ua": ""
+  },
+  "StgFace_ufo_fukidashi_02": {
+    "en": "",
+    "ua": ""
+  },
+  "StgFace_ufo_dialog_01": {
+    "en": "Sending photo...",
+    "ua": "Надсилання фото..."
+  },
+  "StgFace_ufo_dialog_02": {
+    "en": "Photo saved to SD Card!",
+    "ua": "Фото збережено на карту\nSD!"
+  },
+  "StgFace_ufo_dialog_03": {
+    "en": "Could not send photo.",
+    "ua": "Не вдалося надіслати фото."
+  },
+  "StgFace_Result_highscore": {
+    "en": "",
+    "ua": ""
+  },
+  "StgFace_hint_stage1_enemy_title": {
+    "en": "Stage 1 Tip",
+    "ua": "Порада: рівень 1"
+  },
+  "StgFace_hint_stage1_boss_title": {
+    "en": "Stage 1 Tip",
+    "ua": "Порада: рівень 1"
+  },
+  "StgFace_hint_stage2_enemy_title": {
+    "en": "Stage 2 Tip",
+    "ua": "Порада: рівень 2"
+  },
+  "StgFace_hint_stage2_boss_title": {
+    "en": "Stage 2 Tip",
+    "ua": "Порада: рівень 2"
+  },
+  "StgFace_hint_stage3_enemy_title": {
+    "en": "Stage 3 Tip",
+    "ua": "Порада: рівень 3"
+  },
+  "StgFace_hint_stage3_boss_title": {
+    "en": "Stage 3 Tip",
+    "ua": "Порада: рівень 3"
+  },
+  "StgFace_hint_stage4_enemy_title": {
+    "en": "Final Stage Tip",
+    "ua": "Порада: останній рівень"
+  },
+  "StgFace_hint_stage4_boss_title": {
+    "en": "Final Stage Boss Tip",
+    "ua": "Порада: бос останнього рівня"
+  },
+  "StgFace_hint_extra_title": {
+    "en": "Extra Stage Tip",
+    "ua": "Порада: додатковий рівень"
+  },
+  "StgFace_screenshot_ymd": {
+    "en": "Taken on %02d/%02d/%d",
+    "ua": "Знято %02d.%02d.%d"
+  },
+  "StgFace_screenshot_01": {
+    "en": "Beat the high score!",
+    "ua": "Рекорд побито!"
+  },
+  "StgFace_screenshot_02": {
+    "en": "",
+    "ua": ""
+  },
+  "StgFace_screenshot_03": {
+    "en": "Caught someone on camera!",
+    "ua": "Когось спіймано на камеру!"
+  },
+  "StgFace_screenshot_04": {
+    "en": "",
+    "ua": ""
+  },
+  "StgFace_FaceCollection_pnote_ymd": {
+    "en": "Taken: %02d/%02d/%d",
+    "ua": "Знято: %02d.%02d.%d"
+  },
+  "StgFace_FaceCollection_pnote_crew": {
+    "en": "Abductee Number %d",
+    "ua": "Викрадений номер %d"
+  },
+  "StgFace_Game_nothit": {
+    "en": "Mind your surroundings.",
+    "ua": "Пильнуйте, що довкола."
+  },
+  "StgFace_Information_message00": {
+    "en": "",
+    "ua": ""
+  },
+  "StgFace_ufo_fukidashi_03": {
+    "en": "Welcome to Sneaky Snaps!\nYou can save the photo next time.",
+    "ua": "Вітаємо у «Знімках зненацька»!\nНаступного разу фото збережемо."
+  },
+  "StgFace_ufo_fukidashi_04": {
+    "en": "",
+    "ua": ""
+  },
+  "StgFace_Information_shutter_01": {
+    "en": "Do you want to keep\nusing Sneaky Snaps?",
+    "ua": "Далі користуватися\n«Знімками\nзненацька»?"
+  },
+  "StgFace_Information_shutter_02": {
+    "en": "Sneaky Snaps has\nbeen turned on.",
+    "ua": "«Знімки зненацька»\nувімкнено."
+  },
+  "StgFace_Information_shutter_03": {
+    "en": "Sneaky Snaps has\nbeen turned off.",
+    "ua": "«Знімки зненацька»\nвимкнено."
+  },
+  "StgFace_Information_shutter_04": {
+    "en": "",
+    "ua": ""
+  },
+  "StgFace_Information_shutter_button": {
+    "en": " Sneaky Snaps",
+    "ua": " Знімки зненацька"
+  },
+  "StgFace_hint_stage4_boss_afro": {
+    "en": "Danger! Don't shoot the hair.",
+    "ua": "Небезпека! Не бийте у волосся."
+  },
+  "StgFace_asondemorau_bonus_text01": {
+    "en": "Try taking photos of people nearby!",
+    "ua": "Спробуйте зняти людей поруч!"
+  },
+  "StgFace_asondemorau_bonus_text02": {
+    "en": "Don't let the face fall!",
+    "ua": "Не дайте обличчю впасти!"
+  },
+  "StgFace_asondemorau_bonus_text03": {
+    "en": "",
+    "ua": ""
+  },
+  "StgFace_asondemorau_delivery_lend": {
+    "en": "Pass the system on to someone.",
+    "ua": "Передайте консоль комусь."
+  },
+  "StgFace_asondemorau_delivery_lend_button_left": {
+    "en": "Showing Off",
+    "ua": "Показ"
+  },
+  "StgFace_asondemorau_delivery_lend_button_right": {
+    "en": "Received",
+    "ua": "Отримано"
+  },
+  "StgFace_asondemorau_delivery_return": {
+    "en": "Return the system to its owner.",
+    "ua": "Поверніть консоль власнику."
+  },
+  "StgFace_asondemorau_delivery_return_button_left": {
+    "en": "Play Again",
+    "ua": "Ще раз"
+  },
+  "StgFace_asondemorau_delivery_return_button_right": {
+    "en": "Return",
+    "ua": "Повернути"
+  },
+  "StgFace_hint_bonus_title": {
+    "en": "Bonus Stage Hint",
+    "ua": "Порада: бонусний рівень"
+  },
+  "StgFace_hint_bonus": {
+    "en": "Start with consecutive hits!",
+    "ua": "Почніть із серії влучань!"
+  },
+  "StgFace_Lower_PadAdjust_pad": {
+    "en": "",
+    "ua": ""
+  },
+  "StgFace_Lower_PadAdjust_pad_text": {
+    "en": "Move",
+    "ua": "Рухати"
+  },
+  "StgFace_Lower_PadAdjust_up": {
+    "en": "",
+    "ua": ""
+  },
+  "StgFace_Lower_PadAdjust_up_text": {
+    "en": "Enlarge",
+    "ua": "Збільшити"
+  },
+  "StgFace_Lower_PadAdjust_down": {
+    "en": "",
+    "ua": ""
+  },
+  "StgFace_Lower_PadAdjust_down_text": {
+    "en": "Shrink",
+    "ua": "Зменшити"
+  },
+  "StgFace_Lower_PadAdjust_side": {
+    "en": "",
+    "ua": ""
+  },
+  "StgFace_Lower_PadAdjust_side_text": {
+    "en": "Rotate",
+    "ua": "Обернути"
+  },
+  "StgFace_hint_stage0_title": {
+    "en": "Tip",
+    "ua": "Порада"
+  },
+  "StgFace_hint_stage0_title_00": {
+    "en": "You can shoot down the rubble\nthat comes flying towards you.",
+    "ua": "Уламки, що летять на вас,\nможна збивати."
+  },
+  "StgFace_Information_shutter_05": {
+    "en": "Do you want to use\nSneaky Snaps?",
+    "ua": "Увімкнути «Знімки\nзненацька»?"
+  },
+  "StgFace_SeqTitle_StageSelect_unlock_asondemorau_st1": {
+    "en": "Unlock this by collecting\ntwo faces. Try getting\nfamily members' faces!",
+    "ua": "Відкриється, коли зберете\nдва обличчя. Спробуйте зняти\nчленів родини!"
+  },
+  "StgFace_SeqTitle_StageSelect_unlock_asondemorau_st2": {
+    "en": "???\nTry sharing the fun with\nlots of other people!",
+    "ua": "???\nСпробуйте пограти\nз багатьма людьми!"
+  },
+  "StgFace_SeqTitle_StageSelect_unlock_asondemorau_st3": {
+    "en": "Unlock this by collecting\ntwo faces. Try getting\nyour friends' faces!",
+    "ua": "Відкриється, коли зберете\nдва обличчя. Спробуйте\nзняти друзів!"
+  },
+  "StgFace_SeqTitle_passenger_list_button_return": {
+    "en": "Back",
+    "ua": "Назад"
+  },
+  "StgFace_FaceCollection_hatena": {
+    "en": "???",
+    "ua": ""
+  },
+  "StgFace_FaceCollection_gotofind": {
+    "en": "The UFO went looking\nfor faces.",
+    "ua": "НЛО вирушила\nшукати обличчя."
+  },
+  "StgFace_FaceCollection_search": {
+    "en": "Searching through\nNintendo 3DS Camera...",
+    "ua": "Пошук у\nNintendo 3DS Камері..."
+  },
+  "StgFace_FaceCollection_findhas": {
+    "en": "Face search successful!",
+    "ua": "Обличчя знайдено!"
+  },
+  "StgFace_Information_shutter_06": {
+    "en": "Sneaky Snaps will take\nphotos at certain times,\nlike when you beat the\nhigh score!",
+    "ua": "«Знімки зненацька»\nзнімають у певні миті —\nнаприклад, коли ви\nпоб'єте рекорд!"
+  },
+  "StgFace_Information_shutter_07": {
+    "en": "",
+    "ua": ""
+  },
+  "StgFace_game_faceget_new": {
+    "en": "NEW",
+    "ua": "НОВЕ"
+  },
+  "StgFace_SeqTitle_StageSelect_final": {
+    "en": "Final Stage",
+    "ua": "Останній рівень"
+  },
+  "StgFace_FaceMatching_crown_01": {
+    "en": "The face that gets chosen\nthe most will receive a crown.",
+    "ua": "Обличчя, яке обиратимуть\nнайчастіше, отримає корону."
+  },
+  "StgFace_FaceMatching_crown_02": {
+    "en": "The number of times chosen can\nbe checked in Face Collection.",
+    "ua": "Скільки разів обрано, видно\nв «Колекції облич»."
+  },
+  "StgFace_Information_break": {
+    "en": "How about taking\na break for a bit?",
+    "ua": "Може, трохи\nвідпочинете?"
+  },
+  "StgFace_eyecatch_saving": {
+    "en": "Saving...",
+    "ua": "Збереження..."
+  },
+  "StgFace_SeqTitle_StageSelect_asondemorau_first": {
+    "en": "Come back once\nyou've collected\nmore faces.",
+    "ua": "Заходьте, коли\nзберете більше\nоблич."
+  },
+  "StgFace_WhichFace_asondemorau_00": {
+    "en": "Select a face to show off.",
+    "ua": "Виберіть обличчя для показу."
+  },
+  "StgFace_WhichFace_asondemorau_01": {
+    "en": "Do you want to make this face appear?",
+    "ua": "Хочете, щоб з'явилося це обличчя?"
+  },
+  "StgFace_SubTitle_kaonin_01": {
+    "en": "Nabbed a Fresh Face!",
+    "ua": "Спіймано свіже обличчя!"
+  },
+  "StgFace_SubTitle_irogao_red": {
+    "en": "The red butterfly refilled the meter!",
+    "ua": "Червоний метелик поповнив смугу!"
+  },
+  "StgFace_SubTitle_irogao_blue": {
+    "en": "The blue butterfly refilled the meter!",
+    "ua": "Синій метелик поповнив смугу!"
+  },
+  "StgFace_SubTitle_irogao_yellow": {
+    "en": "The yellow butterfly refilled the meter!",
+    "ua": "Жовтий метелик поповнив смугу!"
+  },
+  "StgFace_SubTitle_irogao_red_effect": {
+    "en": "",
+    "ua": ""
+  },
+  "StgFace_SubTitle_irogao_blue_effect": {
+    "en": "",
+    "ua": ""
+  },
+  "StgFace_SubTitle_irogao_yellow_effect": {
+    "en": "",
+    "ua": ""
+  },
+  "StgFace_Information_message01": {
+    "en": "You should drop by\nFace Collection!\nPress  to go back\nand check it out!",
+    "ua": "Загляньте в «Колекцію\nоблич»! Натисніть ,\nщоб повернутися\nй подивитися!"
+  },
+  "StgFace_Information_message02": {
+    "en": "Aiiiieee! Something's\nhappening in\nFace Collection!",
+    "ua": "Ааай! Щось коїться\nв «Колекції\nобличь»!"
+  },
+  "StgFace_Information_message03": {
+    "en": "There's... There's\nsomething in Face\nCollection! Try selecting\nit and pressing !",
+    "ua": "Там... Там щось є\nу «Колекції облич»!\nВиберіть його\nй натисніть !"
+  },
+  "StgFace_Information_message04": {
+    "en": "There are some stages\nthat won't be unlocked\nunless you try using\nShare the Fun!",
+    "ua": "Деякі рівні не\nвідкриються, поки\nви не спробуєте\n«Гру для всіх»!"
+  },
+  "StgFace_Information_message05": {
+    "en": "Try taking photos\nof your friends\nand family using\nNintendo 3DS Camera!",
+    "ua": "Спробуйте зняти\nдрузів і родину\nв Nintendo 3DS\nКамері!"
+  },
+  "StgFace_Information_message06": {
+    "en": "Something might\nhappen if you\nmerge faces using\nNintendo 3DS Camera!",
+    "ua": "Може щось статися,\nякщо змішати обличчя\nв Nintendo 3DS\nКамері!"
+  },
+  "StgFace_Information_message07": {
+    "en": "If Sneaky Snaps is turned\non, photos will be taken\nautomatically when you\nget a high score! Snap!",
+    "ua": "Якщо ввімкнути «Знімки\nзненацька», фото\nробитимуться\nсамі, коли ви поб'єте\nрекорд! Клац!"
+  },
+  "StgFace_Information_message08": {
+    "en": "More! More!\nMore faces!\nEven faces from photos\nor drawings will do!",
+    "ua": "Ще! Ще!\nБільше облич!\nНавіть обличчя з фото\nчи малюнків підійдуть!"
+  },
+  "StgFace_Information_message09": {
+    "en": "Flip through pages in\nFace Collection quickly\nby pressing  or !\nFlip-flip-flip-flip-flip!",
+    "ua": "Гортайте «Колекцію\nобличь» швидко\nкнопками  чи !\nГорть-горть-горть!"
+  },
+  "StgFace_Information_message10": {
+    "en": "If you want to flee\nfrom a stage,\npress START!",
+    "ua": "Якщо хочете втекти\nз рівня,\nнатисніть START!"
+  },
+  "StgFace_Information_message11": {
+    "en": "",
+    "ua": ""
+  },
+  "StgFace_Information_message12": {
+    "en": "If you press  or  in\na stage, you can take\na photo to remember\nthe fun! Ah, memories!",
+    "ua": "Натисніть  чи \nна рівні — і зробите\nфото на згадку!\nОй, спогади!"
+  },
+  "StgFace_Information_message13": {
+    "en": "Use Adjust in Face\nCollection to fine-tune\nfaces to perfection!",
+    "ua": "Пункт «Підправити»\nв «Колекції облич»\nдоводить обличчя\nдо ідеалу!"
+  },
+  "StgFace_Information_message14": {
+    "en": "Rumour has it that\nsomething nice might\ncome out of red\nplaces!",
+    "ua": "Кажуть, із червоних\nмісць може вийти\nщось приємне!"
+  },
+  "StgFace_Information_message15": {
+    "en": "If the cameras pick\nup someone's face\nduring play, it'll appear\nas a Fresh Face!",
+    "ua": "Якщо камери в грі\nспіймають чиєсь\nобличчя, воно стане\nсвіжим обличчям!"
+  },
+  "StgFace_Information_message16": {
+    "en": "When in trouble, aim at\na colour! Something\njust might come\nand help you!",
+    "ua": "У скруті цільтеся\nв колір! Може, щось\nприйде вам\nна допомогу!"
+  },
+  "StgFace_Information_message17": {
+    "en": "Fresh Faces appear\nwhen the camera picks\nup faces! Bag 'em\nby shooting 'em!",
+    "ua": "Свіжі обличчя\nз'являються,\nколи камера ловить\nобличчя! Збивайте\nїх пострілами!"
+  },
+  "StgFace_Information_message18": {
+    "en": "Get more people to\nplay Share the Fun!\nSomething nice might\njust happen!",
+    "ua": "Дайте більшій кількості\nлюдей зіграти в «Гру\nдля всіх»! Може бути\nщось приємне!"
+  },
+  "StgFace_Information_message19": {
+    "en": "I'll take photos of faces\nif Sneaky Snaps is turned\non! I hope I can get some\nnice snaps!",
+    "ua": "Я знімаю обличчя, якщо\nувімкнено «Знімки\nзненацька».\nСподіваюся, вийдуть\nгарні кадри!"
+  },
+  "StgFace_Information_message20": {
+    "en": "Get the player to\ntry taking a photo\nof their own face! ",
+    "ua": "Хай гравець спробує\nзняти власне\nобличчя! "
+  },
+  "StgFace_Information_message21": {
+    "en": "Let your friends know\nthey can take photos\nin-game! All you've got\nto do is press  or !",
+    "ua": "Скажіть друзям, що\nв грі можна знімати!\nДосить натиснути\n чи !"
+  },
+  "StgFace_Information_message22": {
+    "en": "When picking a face to\nshow off to someone,\nchoose one that'll\nreally surprise 'em!",
+    "ua": "Обираючи обличчя\nдля показу, беріть\nтаке, щоб людину\nсправді здивувало!"
+  },
+  "StgFace_Information_message23": {
+    "en": "Try holding up\nsomething that's red or\nblue so that the\ncamera can see it!",
+    "ua": "Спробуйте піднести\nщось червоне або\nсинє, щоб камера\nце побачила!"
+  },
+  "StgFace_Information_message24": {
+    "en": "Shoot Fresh Faces to\ncollect faces easily! Try\nto get faces on\ncamera during play!",
+    "ua": "Збивайте свіжі\nобличчя — так їх\nлегко збирати!\nЛовіть їх камерою!"
+  },
+  "StgFace_Information_message25": {
+    "en": "You can unlock\nnew stages by\ncollecting faces!",
+    "ua": "Нові рівні можна\nвідкрити, збираючи\nобличчя!"
+  },
+  "StgFace_Information_message26": {
+    "en": "Introduce people to\nFace Raiders here! Let\nyour friends and\nfamily have a go!",
+    "ua": "Знайомте людей із\nFace Raiders! Дайте\nдрузям і родині\nспробувати!"
+  },
+  "StgFace_Information_message27": {
+    "en": "Get more faces and\nthey might turn up in a\nstage by surprise! Try\nreplaying stages!",
+    "ua": "Збирайте більше\nобличь — і вони\nможуть несподівано\nз'явитися на рівні!"
+  },
+  "StgFace_Information_message28": {
+    "en": "You should give\nShare the Fun\na bash sometime!",
+    "ua": "Якось таки спробуйте\n«Гру для всіх»!"
+  },
+  "StgFace_Information_message29": {
+    "en": "",
+    "ua": ""
+  },
+  "StgFace_Information_message30": {
+    "en": "",
+    "ua": ""
+  },
+  "StgFace_Information_message31": {
+    "en": "",
+    "ua": ""
+  },
+  "StgFace_Information_message32": {
+    "en": "",
+    "ua": ""
+  },
+  "StgFace_Information_message33": {
+    "en": "",
+    "ua": ""
+  },
+  "StgFace_Information_message34": {
+    "en": "",
+    "ua": ""
+  },
+  "StgFace_Information_message35": {
+    "en": "",
+    "ua": ""
+  },
+  "StgFace_Information_message36": {
+    "en": "",
+    "ua": ""
+  },
+  "StgFace_FaceCollection_notes": {
+    "en": "You can't delete faces when\nyou only have one face left.",
+    "ua": "Не можна видалити обличчя,\nколи воно лишилося одне."
+  },
+  "StgFace_FaceCollection_rephotograph": {
+    "en": "Take a photo of the\nface you want to retake.",
+    "ua": "Зніміть обличчя,\nяке хочете перезняти."
+  },
+  "StgFace_FaceRegister_full": {
+    "en": "No more faces can\nbe saved at this time.",
+    "ua": "Більше облич зараз\nзберегти не можна."
+  },
+  "StgFace_FaceRegister_full_button": {
+    "en": "Start",
+    "ua": "Почати"
+  },
+  "StgFace_data_initialization": {
+    "en": "Reset data for\nFace Raiders?",
+    "ua": "Скинути дані\nFace Raiders?"
+  },
+  "StgFace_data_initialization_button": {
+    "en": "Reset Data",
+    "ua": "Скинути дані"
+  },
+  "StgFace_data_initialization_reminder": {
+    "en": "Data cannot be\nrestored once reset.\nAre you sure?",
+    "ua": "Після скидання дані\nвже не відновити.\nВпевнені?"
+  },
+  "StgFace_data_initialization_reminder_button": {
+    "en": "I'm sure",
+    "ua": "Впевнений"
+  },
+  "StgFace_data_initialization_run": {
+    "en": "Resetting data... Please do not\nturn off the power.",
+    "ua": "Скидання даних... Не\nвимикайте\nконсоль."
+  },
+  "StgFace_screenshot_message_on": {
+    "en": "Add caption",
+    "ua": "Додати підпис"
+  },
+  "StgFace_screenshot_message_off": {
+    "en": "Don't add caption",
+    "ua": "Без підпису"
+  },
+  "StgFace_SDcard_message_code_text_25": {
+    "en": "Cannot write to the SD Card.\n\nPlease turn off the power, move\nthe SD Card's write-protection\nswitch to the off position, then\nreinsert the SD Card.",
+    "ua": "Не вдається записати на карту SD.\n\nВимкніть консоль, зніміть\nз карти SD захист від запису,\nтоді вставте карту SD\nзнову."
+  },
+  "StgFace_SDcard_message_code_text_23": {
+    "en": "There is no SD Card inserted.\nPlease turn off the system\nand insert an SD Card into\nthe SD Card slot.",
+    "ua": "Карту SD не вставлено.\nВимкніть консоль\nі вставте карту SD\nу роз'єм."
+  },
+  "StgFace_SDcard_message_code_text_30": {
+    "en": "No more pictures can be saved\nto the SD Card. Either delete\npictures to make space, or use\nan SD Card with more free space.",
+    "ua": "Більше знімків на карту SD\nне зберегти. Видаліть частину\nзнімків або візьміть карту SD\nз більшим вільним місцем."
+  },
+  "StgFace_FaceCollection_decision": {
+    "en": " Confirm",
+    "ua": " Готово"
+  },
+  "StgFace_asondemorau_bonus_text04": {
+    "en": "Shoot it five times to defeat it!",
+    "ua": "Влучте п'ять разів, щоб здолати!"
+  },
+  "StgFace_Lower_ranking": {
+    "en": "Leaderboard",
+    "ua": "Таблиця рекордів"
+  },
+  "StgFace_Game_Explain_photo_illustration": {
+    "en": "Photos/drawings of faces are OK!",
+    "ua": "Фото й малюнки теж годяться!"
+  },
+  "StgFace_SDcard_message_plaza_text_03": {
+    "en": "Creating extra data...\nDo not remove the SD Card.",
+    "ua": "Створення додаткових даних...\nНе виймайте карту SD."
+  },
+  "StgFace_Lower_PadAdjust_LRXY": {
+    "en": " Resize",
+    "ua": " Розмір"
+  }
+}

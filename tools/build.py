@@ -33,6 +33,7 @@ sys.path.insert(0, str(Path(__file__).parent))
 import luma_hook  # noqa: E402
 import msbt as msbt_mod  # noqa: E402
 import romfs  # noqa: E402
+import smdh as smdh_mod  # noqa: E402
 from store import open_store  # noqa: E402
 
 ROOT = Path(__file__).resolve().parent.parent
@@ -116,6 +117,9 @@ TITLES = {
         "lang": "EU_Russian",
         "ref_lang": "EU_English",
         "container": "message/{lang}.arc",
+        # This title keeps a full SMDH in its romfs, so LayeredFS can translate the name
+        # the system shows for its data - see build_smdh() and tools/smdh.py.
+        "smdh": ["icn/EU_appEdit.icn"],
     },
     # Same per-language shape as Mii Maker, but the archive is the header-less flat table
     # of tools/msgarc.py instead of a darc - store.py tells them apart by magic.
@@ -175,6 +179,56 @@ TITLES = {
     "error_applet": {
         "tids": ["000400300000C502"],  # error applet, EUR
         "source_tid": "000400300000C502",
+        "lang": "EU_Russian",
+        "ref_lang": "EU_English",
+        "hook_patch": True,
+    },
+    "browser": {
+        "tids": ["0004003000009D02"],  # spider applet, EUR Old3DS; New3DS is 0004003020009D02
+        "source_tid": "0004003000009D02",
+        "lang": "EU_Russian",
+        "ref_lang": "EU_English",
+    },
+    "ar_games": {
+        "tids": ["0004001000022E00"],
+        "source_tid": "0004001000022E00",
+        "lang": "EU_Russian",
+        "ref_lang": "EU_English",
+    },
+    "nintendo_zone": {
+        "tids": ["0004001000022B00"],
+        "source_tid": "0004001000022B00",
+        "lang": "EU_Russian",
+        "ref_lang": "EU_English",
+        "smdh": ["saveicon_EU.icn"],
+    },
+    # `message_dirs` with a nested path: the eShop puts a region folder between message/
+    # and the language, and its MSBT are LZ11-packed (`.msbt.lz`).
+    "eshop": {
+        "tids": ["0004001000022900"],
+        "source_tid": "0004001000022900",
+        "lang": "EU_Russian",
+        "ref_lang": "EU_English",
+        "message_dirs": ["message/europe"],
+    },
+    "data_transfer": {
+        "tids": ["0004001000022A00"],
+        "source_tid": "0004001000022A00",
+        "lang": "EU_Russian",
+        "ref_lang": "EU_English",
+        "message_dirs": ["CARDBOARD/message", "CARDBOARD/message/HUD"],
+    },
+    # `lang_files`: no language folders at all - the language is part of the file name.
+    "face_raiders": {
+        "tids": ["0004001000022D00"],
+        "source_tid": "0004001000022D00",
+        "lang": "EU_Russian",
+        "ref_lang": "EU_English",
+        "lang_files": "hal/msg/StgFace/StgFace{lang}.msbt",
+    },
+    "amiibo_settings": {
+        "tids": ["000400300000B902"],  # Cabinet applet, EUR
+        "source_tid": "000400300000B902",
         "lang": "EU_Russian",
         "ref_lang": "EU_English",
         "hook_patch": True,
@@ -314,6 +368,31 @@ def write_romfs_image(tid: str, romfs_dir: Path, overrides: dict[str, bytes]) ->
     ]
 
 
+def build_smdh(name: str, cfg: dict, romfs: Path, table: dict[str, str]) -> tuple[dict[str, bytes], list[str]]:
+    """Patched copies of the SMDH files a title keeps in its romfs.
+
+    Only the language slot the mod overwrites is touched, and only its short and long
+    description - the icon bitmaps come straight from the original file.
+    """
+    paths = cfg.get("smdh")
+    if not paths:
+        return {}, []
+    entries = json.loads((ROOT / "src" / "strings" / name / "_smdh.json").read_text(encoding="utf-8"))
+    index = smdh_mod.LANG_INDEX[cfg["lang"]]
+    out: dict[str, bytes] = {}
+    stats: list[str] = []
+    for rel in paths:
+        entry = entries.get(rel)
+        if not entry or not entry.get("ua"):
+            continue
+        original = (romfs / rel).read_bytes()
+        short = apply_homoglyphs(entry["ua"], table)
+        long = apply_homoglyphs(entry.get("ua_long") or entry["ua"], table)
+        out[rel] = smdh_mod.patch(original, index, short, long)
+        stats.append(f"{rel}: SMDH {smdh_mod.LANGUAGES[index]} -> {entry['ua']!r}")
+    return out, stats
+
+
 def build_title(name: str, table: dict[str, str]) -> list[str]:
     cfg = TITLES[name]
     if cfg.get("blocked"):
@@ -354,7 +433,9 @@ def build_title(name: str, table: dict[str, str]) -> list[str]:
         updates[key] = msbt_mod.build(msbt)
         stats.append(f"{key}: {translated}/{len(msbt.texts)} translated")
 
-    outputs = cross_blobs | store.outputs(lang, updates)
+    smdh_blobs, smdh_stats = build_smdh(name, cfg, romfs, table)
+    stats += smdh_stats
+    outputs = cross_blobs | store.outputs(lang, updates) | smdh_blobs
     written: list[str] = []
     for tid in cfg["tids"]:
         if luma_hook.has_patch(tid) and luma_hook.kind(tid) == "romfs_from_sd":

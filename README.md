@@ -70,13 +70,20 @@ SD:/luma/titles/0004001000022000/romfs/message_EU_LZ.bin
 | `0004001000022800` | Площа StreetPass Mii | `romfs/` + `exheader.bin` — LayeredFS з правкою прав |
 | `000400300000D102` | Вибір Mii | `romfs/` + `code.ips` + `exheader.bin` — LayeredFS з правкою коду |
 | `000400300000A002` | Повідомлення | `romfs/` + `code.ips` + `exheader.bin` — LayeredFS з правкою коду |
+| `000400300000B902` | Налаштування amiibo | `romfs/` + `code.ips` + `exheader.bin` — LayeredFS з правкою коду |
 | `0004003000009C02` | Ігрові записи | `romfs/` — LayeredFS |
+| `0004003000009D02` | Інтернет-браузер | `romfs/` — LayeredFS |
+| `0004001000022900` | Nintendo eShop | `romfs/` — LayeredFS |
+| `0004001000022A00` | Перенесення даних | `romfs/` — LayeredFS |
+| `0004001000022B00` | Nintendo Zone | `romfs/` — LayeredFS |
+| `0004001000022D00` | Face Raiders | `romfs/` — LayeredFS |
+| `0004001000022E00` | AR Games | `romfs/` — LayeredFS |
 | `0004001000022100` | Гра по завантаженню | `code.ips` + `exheader.bin` + `dlplay_romfs.bin` — без LayeredFS, повний образ romfs з SD |
 | `0004001000022300` | Здоров'я і безпека | `code.ips` + `exheader.bin` + `safe_romfs.bin` — без LayeredFS, повний образ romfs з SD |
 | `000400300000D002` | Екранна клавіатура | `code.ips` + `exheader.bin` + `swkbd_romfs.bin` — без LayeredFS, повний образ romfs з SD |
 | `000400300000C502` | Екран помилки | `code.ips` + `exheader.bin` + `error_romfs.bin` — без LayeredFS, повний образ romfs з SD |
 
-Чому в останніх дев'яти є `exheader.bin`, а в більшості з них ще й `code.ips`, — див. [Що входить у реліз](#що-входить-у-реліз). Коротко: перші шість титулів Luma хукає сама, решті бракує прав або коду, які додає збірка.
+Чому в останніх десяти є `exheader.bin`, а в більшості з них ще й `code.ips`, — див. [Що входить у реліз](#що-входить-у-реліз). Коротко: перші тринадцять титулів Luma хукає сама, решті бракує прав або коду, які додає збірка.
 
 Папки `romfs` немає навмисно у Гри по завантаженню, клавіатури, Здоров'я і безпеки й екрана помилки: сама її наявність зупиняє ці титули на екрані помилки.
 
@@ -108,7 +115,7 @@ NAND не змінювався, тому видалення нічого не л
 | На клавіатурі `i` замість `і`, `ε` замість `є` | Так і має бути — та сама заміна, що й у решті інтерфейсу: цих літер у системному шрифті немає. Клавіші стоять на українських позиціях (`ы`→`і`, `ъ`→`ї`, `э`→`є`), а на місці `ё` тепер апостроф. |
 | `An exception occurred`, `Current process: loader` | Luma не змогла застосувати LayeredFS до титулу, який ви запускали, і зупинила консоль. Перейменуйте `SD:/luma/titles/<TID>/romfs` цього титулу на `_romfs` і перезавантажте — титул запуститься без перекладу. Напишіть в Issues з фото екрана помилки. |
 | HOME Menu не запускається | Видаліть `SD:/luma/titles/0004003000009802`. Напишіть в Issues, вказавши модель, регіон і версію системи. |
-| Титул крешить після встановлення | Переклади Журналу дій, Посібника, Списку друзів, Вибору Mii, Повідомлень, Гри по завантаженню, клавіатури, Здоров'я і безпеки й екрана помилки містять правку коду титулу — під версії **2**, **5**, **6**, **3**, **4**, **3**, **4**, **3** і **7** відповідно (EUR). Ці білди стоять на всіх сучасних прошивках. Якщо у вас старіший, видаліть папку того титулу: `0004001000022200`, `0004003000009B02`, `0004003000009F02`, `000400300000D102`, `000400300000A002`, `0004001000022100`, `000400300000D002`, `0004001000022300`, `000400300000C502`. Решта перекладу працюватиме як була. |
+| Титул крешить після встановлення | Переклади Журналу дій, Посібника, Списку друзів, Вибору Mii, Повідомлень, налаштувань amiibo, Гри по завантаженню, клавіатури, Здоров'я і безпеки й екрана помилки містять правку коду титулу — під версії **2**, **5**, **6**, **3**, **4**, **1**, **3**, **4**, **3** і **7** відповідно (EUR). Ці білди стоять на всіх сучасних прошивках. Якщо у вас старіший, видаліть папку того титулу: `0004001000022200`, `0004003000009B02`, `0004003000009F02`, `000400300000D102`, `000400300000A002`, `000400300000B902`, `0004001000022100`, `000400300000D002`, `0004001000022300`, `000400300000C502`. Решта перекладу працюватиме як була. |
 | Гра по завантаженню, клавіатура, Здоров'я і безпека або екран помилки не завантажується | Видаліть `SD:/luma/titles/0004001000022100`, `SD:/luma/titles/000400300000D002`, `SD:/luma/titles/0004001000022300` чи `SD:/luma/titles/000400300000C502` **цілком**. Вони читають свій romfs з SD-карти, тому `code.ips` без відповідного `*_romfs.bin` їх ламає — видаляти частинами не можна. |
 | Порожні квадрати замість літер | Повідомте в Issues із фото — це баг, такого бути не повинно. |
 
@@ -155,12 +162,19 @@ NAND не змінювався, тому видалення нічого не л
 | Nintendo 3DS Звук | ✅ перекладено |
 | Площа StreetPass Mii | ✅ перекладено, з правкою прав титулу |
 | Ігрові записи | ✅ перекладено |
+| Інтернет-браузер | ✅ перекладено |
+| Nintendo eShop | ✅ перекладено |
+| Перенесення даних | ✅ перекладено |
+| Nintendo Zone | ✅ перекладено |
+| Face Raiders | ✅ перекладено |
+| AR Games | ✅ перекладено |
 | Здоров'я і безпека | ✅ перекладено, повною підміною romfs — потрібна версія титулу 3 (див. нижче) |
 | Журнал дій | ✅ перекладено, з правкою коду титулу — потрібна версія титулу 2 (див. нижче) |
 | Посібник | ✅ перекладено, з правкою коду титулу — потрібна версія титулу 5 (див. нижче) |
 | Список друзів | ✅ перекладено, з правкою коду титулу — потрібна версія титулу 6 (див. нижче) |
 | Вибір Mii | ✅ перекладено, з правкою коду титулу — потрібна версія титулу 3 (див. нижче) |
 | Повідомлення | ✅ перекладено, з правкою коду титулу — потрібна версія титулу 4 (див. нижче) |
+| Налаштування amiibo | ✅ перекладено, з правкою коду титулу — потрібна версія титулу 1 (див. нижче) |
 | Екран помилки | ✅ перекладено, повною підміною romfs — потрібна версія титулу 7 (див. нижче) |
 | Гра по завантаженню | ✅ перекладено, повною підміною romfs — потрібна версія титулу 3 (див. нижче) |
 | Екранна клавіатура | ✅ перекладено, повною підміною romfs — потрібна версія титулу 4 (див. нижче) |
@@ -190,6 +204,12 @@ Luma шукає в коді титулу п'ять функцій FS. Чотир
 | Меню HOME | `0x0200000000310080` | є |
 | Mii Maker | `0x0000000000000081` | є |
 | Ігрові записи | `0x0000000000000081` | є |
+| Інтернет-браузер | `0x0000000000000081` | є |
+| Nintendo Zone | `0x0000000000000081` | є |
+| Face Raiders | `0x0000000000000081` | є |
+| AR Games | `0x0000000000000081` | є |
+| Перенесення даних | `0x00000000000020a1` | є |
+| Nintendo eShop | `0x0000000000240001` | **нема**, але `fsMountArchive` є |
 | Nintendo 3DS Камера | `0x00000000000000a1` | є |
 | Nintendo 3DS Звук | `0x00000000000000a1` | є |
 | Площа StreetPass Mii | `0x0000000000000000` | **нема** |
@@ -200,6 +220,7 @@ Luma шукає в коді титулу п'ять функцій FS. Чотир
 | Список друзів | `0x0000000000000001` | **нема** |
 | Вибір Mii | `0x0000000000000001` | **нема** |
 | Повідомлення | `0x0000000000000001` | **нема** |
+| Налаштування amiibo | `0x0000000000000001` | **нема** |
 | Екран помилки | `0x0000000000000001` | **нема** |
 | Здоров'я і безпека | `0x0000000000000001` | **нема** |
 
@@ -211,13 +232,13 @@ Luma шукає в коді титулу п'ять функцій FS. Чотир
 
 | Титул | `OpenArchive` | `OpenFile` | `CloseArchive` | `OpenFileDirectly` |
 |---|---|---|---|---|
-| Журнал дій, Посібник, Список друзів, Вибір Mii, Повідомлення | ✅ | ✅ | ✅ | ✅ |
+| Журнал дій, Посібник, Список друзів, Вибір Mii, Повідомлення, Налаштування amiibo | ✅ | ✅ | ✅ | ✅ |
 | Гра по завантаженню, клавіатура, Здоров'я і безпека | ❌ | ❌ | ❌ | ✅ |
 | Екран помилки | ✅ | ❌ | ❌ | ✅ |
 
 Двом останнім доступне рівно одне: відкрити файл напряму і читати його. Тому для них потрібен інший підхід.
 
-#### Як полагоджено Журнал дій, Посібник, Список друзів, Вибір Mii і Повідомлення
+#### Як полагоджено Журнал дій, Посібник, Список друзів, Вибір Mii, Повідомлення й налаштування amiibo
 
 Обидві частини можна дати з SD-карти, бо завантажувач Luma виконує їх у такому порядку:
 
@@ -245,8 +266,9 @@ patchLayeredFs(...);                     // тут шукаються ті п'я
 | Список друзів | поверх `throwFatalError()`, як у Журналу: padding `.text` тут 2724 байти, Luma кладе payload туди й `throwFatalError()` не чіпає. |
 | Вибір Mii | поверх `throwFatalError()`: padding `.text` тут 3048 байт, Luma знову бере padding. |
 | Повідомлення | поверх `throwFatalError()`: padding `.text` 2300 байт, Luma знову бере padding. |
+| Налаштування amiibo | поверх `throwFatalError()`: padding `.text` 968 байт, Luma знову бере padding. |
 
-Стаб буває у трьох варіантах — за тим, який регістр і який кадр стека чекає хвіст монтування, у який він стрибає: `r4`/кадр `0x28` (Журнал дій), `sl`/кадр `0x14` з результатом у `r8` (Посібник, Список друзів) або `r4`/кадр `0x18` (Вибір Mii, Повідомлення). У Вибору Mii і Повідомлень функція монтування одна-єдина, і стаб стрибає не в неї саму, а на перевірку результату за `0xD36C` — тому невдалий `OpenArchive` повертає помилку, а не об'єкт архіву з мотлохом замість handle. У Списку друзів усі три його функції монтування будують той самий об'єкт архіву (vtable `0x201E4C`), тож хвіст будь-якої з них підійшов би — узято `MountSystemSaveData()`.
+Стаб буває у трьох варіантах — за тим, який регістр і який кадр стека чекає хвіст монтування, у який він стрибає: `r4`/кадр `0x28` (Журнал дій), `sl`/кадр `0x14` з результатом у `r8` (Посібник, Список друзів) або `r4`/кадр `0x18` (Вибір Mii, Повідомлення, налаштування amiibo). У цих трьох функція монтування одна-єдина, і стаб стрибає не в неї саму, а на перевірку результату за `0xD36C` — тому невдалий `OpenArchive` повертає помилку, а не об'єкт архіву з мотлохом замість handle. У Списку друзів усі три його функції монтування будують той самий об'єкт архіву (vtable `0x201E4C`), тож хвіст будь-якої з них підійшов би — узято `MountSystemSaveData()`.
 
 У Посібника є додаткова тонкість. `findLayeredFsSymbols()` сканує лише до `text.size`, а це 0xADFA8 — padding лишається за межею. Тому в його `exheader.bin` `text.size` округлено до 0xAE000. Це безкоштовно: завантажувач усюди рахує сторінки як `(size + 4095) >> 12`, і 0xADFA8, і 0xAE000 дають ті самі 174 сторінки — адреси секцій, розкладка `.code` і мапінг лишаються байт-у-байт тими самими.
 
@@ -262,6 +284,7 @@ patchLayeredFs(...);                     // тут шукаються ті п'я
 | **Вибір Mii (`appletEd`)** | **3** |
 | **Екран помилки (`error`)** | **7** |
 | **Повідомлення (`newslist`)** | **4** |
+| **Налаштування amiibo (`Cabinet`)** | **1** |
 | **Площа StreetPass Mii (`MEET`)** | **5** |
 | **Здоров'я і безпека (`safe`)** | **3** |
 | Mii Maker (`EDIT`) | 2 |
@@ -450,13 +473,20 @@ A folder name is the Title ID (TID) of the system title it overrides. Luma reads
 | `0004001000022800` | StreetPass Mii Plaza | `romfs/` + `exheader.bin` — LayeredFS plus a rights patch |
 | `000400300000D102` | Mii Selector | `romfs/` + `code.ips` + `exheader.bin` — LayeredFS plus a code patch |
 | `000400300000A002` | Notifications | `romfs/` + `code.ips` + `exheader.bin` — LayeredFS plus a code patch |
+| `000400300000B902` | amiibo Settings | `romfs/` + `code.ips` + `exheader.bin` — LayeredFS plus a code patch |
 | `0004003000009C02` | Game Notes | `romfs/` — LayeredFS |
+| `0004003000009D02` | Internet Browser | `romfs/` — LayeredFS |
+| `0004001000022900` | Nintendo eShop | `romfs/` — LayeredFS |
+| `0004001000022A00` | System Transfer | `romfs/` — LayeredFS |
+| `0004001000022B00` | Nintendo Zone | `romfs/` — LayeredFS |
+| `0004001000022D00` | Face Raiders | `romfs/` — LayeredFS |
+| `0004001000022E00` | AR Games | `romfs/` — LayeredFS |
 | `0004001000022100` | Download Play | `code.ips` + `exheader.bin` + `dlplay_romfs.bin` — no LayeredFS, whole RomFS image off the SD card |
 | `0004001000022300` | Health & Safety Information | `code.ips` + `exheader.bin` + `safe_romfs.bin` — no LayeredFS, whole RomFS image off the SD card |
 | `000400300000D002` | Software Keyboard | `code.ips` + `exheader.bin` + `swkbd_romfs.bin` — no LayeredFS, whole RomFS image off the SD card |
 | `000400300000C502` | Error applet | `code.ips` + `exheader.bin` + `error_romfs.bin` — no LayeredFS, whole RomFS image off the SD card |
 
-Why the last nine carry `exheader.bin`, and most of them `code.ips` too: see [What is in the release](#what-is-in-the-release). In short, Luma hooks the first six by itself; the rest lack the rights or the code the build supplies.
+Why the last ten carry `exheader.bin`, and most of them `code.ips` too: see [What is in the release](#what-is-in-the-release). In short, Luma hooks the first thirteen by itself; the rest lack the rights or the code the build supplies.
 
 Download Play, the Software Keyboard and Health & Safety Information ship no `romfs` folder on purpose — its mere presence halts those titles on an exception screen.
 
@@ -488,7 +518,7 @@ NAND was never touched, so removal cannot break anything.
 | The keyboard shows `i` for `і`, `ε` for `є` | By design — the same substitution as everywhere else in the mod: those letters are not in the system font. The keys sit in their Ukrainian positions (`ы`→`і`, `ъ`→`ї`, `э`→`є`), and `ё` now carries the apostrophe. |
 | `An exception occurred`, `Current process: loader` | Luma could not apply LayeredFS to the title you launched and halted the console. Rename that title's `SD:/luma/titles/<TID>/romfs` to `_romfs` and reboot — the title then starts untranslated. Please open an Issue with a photo of the error screen. |
 | HOME Menu won't boot | Delete `SD:/luma/titles/0004003000009802` and open an Issue with your model, region and system version. |
-| A title crashes after installing | The Activity Log, Instruction Manual, Friend List, Mii Selector, Notifications, Download Play, Software Keyboard, Health & Safety and error applet translations carry a code patch — for versions **2**, **5**, **6**, **3**, **4**, **3**, **4**, **3** and **7** respectively (EUR). Those builds are on every modern firmware. If yours is older, delete that title's folder: `0004001000022200`, `0004003000009B02`, `0004003000009F02`, `000400300000D102`, `000400300000A002`, `0004001000022100`, `000400300000D002`, `0004001000022300`, `000400300000C502`. The rest of the mod keeps working. |
+| A title crashes after installing | The Activity Log, Instruction Manual, Friend List, Mii Selector, Notifications, amiibo Settings, Download Play, Software Keyboard, Health & Safety and error applet translations carry a code patch — for versions **2**, **5**, **6**, **3**, **4**, **1**, **3**, **4**, **3** and **7** respectively (EUR). Those builds are on every modern firmware. If yours is older, delete that title's folder: `0004001000022200`, `0004003000009B02`, `0004003000009F02`, `000400300000D102`, `000400300000A002`, `000400300000B902`, `0004001000022100`, `000400300000D002`, `0004001000022300`, `000400300000C502`. The rest of the mod keeps working. |
 | Download Play, the Software Keyboard, Health & Safety or the error applet will not load | Delete `SD:/luma/titles/0004001000022100`, `SD:/luma/titles/000400300000D002`, `SD:/luma/titles/0004001000022300` or `SD:/luma/titles/000400300000C502` **as a whole**. They read their RomFS off the SD card, so `code.ips` without the matching `*_romfs.bin` breaks them — they cannot be removed piecemeal. |
 | Empty boxes instead of letters | Please report with a photo — that's a bug. |
 
@@ -533,12 +563,19 @@ same entry that switches the keyboard to Cyrillic.
 | Nintendo 3DS Sound | ✅ translated |
 | StreetPass Mii Plaza | ✅ translated, with a rights patch |
 | Game Notes | ✅ translated |
+| Internet Browser | ✅ translated |
+| Nintendo eShop | ✅ translated |
+| System Transfer | ✅ translated |
+| Nintendo Zone | ✅ translated |
+| Face Raiders | ✅ translated |
+| AR Games | ✅ translated |
 | Health & Safety Information | ✅ translated, by replacing the whole RomFS — needs title version 3 (see below) |
 | Activity Log | ✅ translated, with a code patch — needs title version 2 (see below) |
 | Instruction Manual | ✅ translated, with a code patch — needs title version 5 (see below) |
 | Friend List | ✅ translated, with a code patch — needs title version 6 (see below) |
 | Mii Selector | ✅ translated, with a code patch — needs title version 3 (see below) |
 | Notifications | ✅ translated, with a code patch — needs title version 4 (see below) |
+| amiibo Settings | ✅ translated, with a code patch — needs title version 1 (see below) |
 | Error applet | ✅ translated, by replacing its whole RomFS — needs title version 7 (see below) |
 | Download Play | ✅ translated, by replacing its whole RomFS — needs title version 3 (see below) |
 | Software Keyboard | ✅ translated, by replacing its whole RomFS — needs title version 4 (see below) |
@@ -579,6 +616,12 @@ The root cause is in the exheader, `accessInfo` at offset 0x248:
 | HOME Menu | `0x0200000000310080` | yes |
 | Mii Maker | `0x0000000000000081` | yes |
 | Game Notes | `0x0000000000000081` | yes |
+| Internet Browser | `0x0000000000000081` | yes |
+| Nintendo Zone | `0x0000000000000081` | yes |
+| Face Raiders | `0x0000000000000081` | yes |
+| AR Games | `0x0000000000000081` | yes |
+| System Transfer | `0x00000000000020a1` | yes |
+| Nintendo eShop | `0x0000000000240001` | **no**, but it has `fsMountArchive` |
 | Nintendo 3DS Camera | `0x00000000000000a1` | yes |
 | Nintendo 3DS Sound | `0x00000000000000a1` | yes |
 | StreetPass Mii Plaza | `0x0000000000000000` | **no** |
@@ -589,6 +632,7 @@ The root cause is in the exheader, `accessInfo` at offset 0x248:
 | Friend List | `0x0000000000000001` | **no** |
 | Mii Selector | `0x0000000000000001` | **no** |
 | Notifications | `0x0000000000000001` | **no** |
+| amiibo Settings | `0x0000000000000001` | **no** |
 | Error applet | `0x0000000000000001` | **no** |
 | Health & Safety Information | `0x0000000000000001` | **no** |
 
@@ -606,14 +650,14 @@ How far that pruning went shows in the set of IPC commands each title can even i
 
 | Title | `OpenArchive` | `OpenFile` | `CloseArchive` | `OpenFileDirectly` |
 |---|---|---|---|---|
-| Activity Log, Instruction Manual, Friend List, Mii Selector, Notifications | ✅ | ✅ | ✅ | ✅ |
+| Activity Log, Instruction Manual, Friend List, Mii Selector, Notifications, amiibo Settings | ✅ | ✅ | ✅ | ✅ |
 | Download Play, Software Keyboard, Health & Safety | ❌ | ❌ | ❌ | ✅ |
 | Error applet | ✅ | ❌ | ❌ | ✅ |
 
 The last two can do exactly one thing: open a file directly and read it. They need a
 different approach.
 
-#### How the Activity Log, the Instruction Manual, the Friend List, the Mii Selector and Notifications were fixed
+#### How the Activity Log, the Instruction Manual, the Friend List, the Mii Selector, Notifications and amiibo Settings were fixed
 
 Both halves can be supplied from the SD card, because Luma's loader runs them in this order:
 
@@ -644,14 +688,15 @@ Where the stub goes differs per title:
 | Friend List | over `throwFatalError()`, as in the Activity Log: the `.text` padding is 2724 bytes, so Luma puts its payload there and leaves the function alone. |
 | Mii Selector | over `throwFatalError()`: the `.text` padding is 3048 bytes, so Luma takes the padding again. |
 | Notifications | over `throwFatalError()`: the `.text` padding is 2300 bytes, so Luma takes the padding again. |
+| amiibo Settings | over `throwFatalError()`: the `.text` padding is 968 bytes, so Luma takes the padding again. |
 
 The stub comes in three variants, chosen by the register and stack frame the mount tail it
 jumps into expects: `r4` on a 0x28 frame (Activity Log), `sl` on a 0x14 frame with the
-result in `r8` (Instruction Manual, Friend List), or `r4` on a 0x18 frame (Mii Selector, Notifications).
+result in `r8` (Instruction Manual, Friend List), or `r4` on a 0x18 frame (Mii Selector, Notifications, amiibo Settings).
 All three of the Friend List's mount functions build the same archive object (vtable
 `0x201E4C`), so any of their tails would have done — `MountSystemSaveData()` is the one
-used. The Mii Selector and Notifications have exactly one mount function each, and the stub
-branches not into it but to its result check (`0xD36C` and `0x5A500`), so a failed
+used. The Mii Selector, Notifications and amiibo Settings have exactly one mount function each, and the stub
+branches not into it but to its result check (`0xD36C`, `0x5A500` and `0x3D344`), so a failed
 `OpenArchive` returns an error instead of an archive object wrapped around a garbage handle.
 
 The Instruction Manual needs one more thing. `findLayeredFsSymbols()` only scans up to
@@ -675,6 +720,7 @@ updated the title:
 | **Mii Selector (`appletEd`)** | **3** |
 | **Error applet (`error`)** | **7** |
 | **Notifications (`newslist`)** | **4** |
+| **amiibo Settings (`Cabinet`)** | **1** |
 | **StreetPass Mii Plaza (`MEET`)** | **5** |
 | Mii Maker (`EDIT`) | 2 |
 | **Activity Log (`PLOG`)** | **2** |

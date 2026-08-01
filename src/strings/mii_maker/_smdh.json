@@ -1,0 +1,7 @@
+{
+  "_comment": "SMDH inside the title's own romfs - see tools/smdh.py. `ua_long` is optional; without it the short description is reused.",
+  "icn/EU_appEdit.icn": {
+    "en": "Mii Maker",
+    "ua": "Mii Maker"
+  }
+}

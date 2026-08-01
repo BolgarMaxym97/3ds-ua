@@ -1,0 +1,538 @@
+{
+  "Ok": {
+    "en": " OK",
+    "ua": " OK"
+  },
+  "Cancel": {
+    "en": " Cancel",
+    "ua": " Скасувати"
+  },
+  "Next": {
+    "en": " Next",
+    "ua": " Далі"
+  },
+  "Back": {
+    "en": " Back",
+    "ua": " Назад"
+  },
+  "Stop": {
+    "en": " Cancel",
+    "ua": " Скасувати"
+  },
+  "Finish": {
+    "en": " Close",
+    "ua": " Закрити"
+  },
+  "ErrorCode": {
+    "en": "Error Code: {t:1.3:}",
+    "ua": "Код помилки: {t:1.3:}"
+  },
+  "NotAmiibo": {
+    "en": "This is not an amiibo.",
+    "ua": "Це не amiibo."
+  },
+  "BadAmiibo": {
+    "en": "This is an invalid amiibo.",
+    "ua": "Цей amiibo недійсний."
+  },
+  "InvalidFormatAmiibo": {
+    "en": "This amiibo is not supported.",
+    "ua": "Цей amiibo не підтримується."
+  },
+  "DataBroken": {
+    "en": "The amiibo data is corrupted.",
+    "ua": "Дані amiibo пошкоджено."
+  },
+  "RestoreDataWith": {
+    "en": "Would you like to restore the\ndata with data saved on this\nsystem?",
+    "ua": "Відновити дані з тих,\nщо збережені на цій\nконсолі?"
+  },
+  "DataBrokenNoneBackup": {
+    "en": "The amiibo data is corrupted.\n\nYou can restore the data if you\nhave a Nintendo device that has\naccessed this amiibo before.\nIf not, please reset the amiibo.",
+    "ua": "Дані amiibo пошкоджено.\n\nЇх можна відновити, якщо у вас\nє пристрій Nintendo, який уже\nчитав цей amiibo. Якщо ні —\nскиньте amiibo."
+  },
+  "DataBrokenNoneBackupEx": {
+    "en": "The amiibo data is corrupted.\nYou can restore the data if you\nhave a Nintendo device that has\naccessed this amiibo before.\nIf not, please reset the amiibo\nvia amiibo Settings in the\nHOME Menu Settings.",
+    "ua": "Дані amiibo пошкоджено.\nЇх можна відновити, якщо у вас\nє пристрій Nintendo, який уже\nчитав цей amiibo. Якщо ні —\nскиньте amiibo через\n«Налаштування amiibo»\nу налаштуваннях HOME."
+  },
+  "RestoreData": {
+    "en": " Restore",
+    "ua": " Відновити"
+  },
+  "ScanToRestore": {
+    "en": "Please hold the amiibo\nto the NFC area to\nrestore the data.",
+    "ua": "Піднесіть amiibo\nдо зони NFC, щоб\nвідновити дані."
+  },
+  "ScanToRestoreShort": {
+    "en": "The amiibo data will now be restored.",
+    "ua": "Зараз дані amiibo буде відновлено."
+  },
+  "Restoring": {
+    "en": "Restoring data...",
+    "ua": "Відновлення даних..."
+  },
+  "RestoringKeep": {
+    "en": "Please hold the amiibo in\nplace until the data is restored.",
+    "ua": "Тримайте amiibo на місці,\nпоки дані не відновляться."
+  },
+  "RestoringKeepFangate": {
+    "en": "Please hold the amiibo in\nplace until the data is restored.",
+    "ua": "Тримайте amiibo на місці,\nпоки дані не відновляться."
+  },
+  "FailureRestore": {
+    "en": "Unable to restore data to\nthe amiibo. Please try again.",
+    "ua": "Не вдалося відновити дані\namiibo. Спробуйте ще раз."
+  },
+  "DoneRestore": {
+    "en": "Data has been restored\nto this amiibo.",
+    "ua": "Дані цього amiibo\nвідновлено."
+  },
+  "Initialize": {
+    "en": "Reset",
+    "ua": "Скинути"
+  },
+  "ScanToInitialize": {
+    "en": "Please hold the amiibo to\nthe NFC area to reset it.",
+    "ua": "Піднесіть amiibo до зони\nNFC, щоб скинути його."
+  },
+  "ScanToInitializeShort": {
+    "en": "The amiibo will now be reset.",
+    "ua": "Зараз amiibo буде скинуто."
+  },
+  "ScanToInitializeBefore": {
+    "en": "Please hold the amiibo\nyou wish to reset to the\nNFC area, and check the\namiibo data.",
+    "ua": "Піднесіть до зони NFC\namiibo, який хочете\nскинути, і перевірте\nйого дані."
+  },
+  "ScanToInitializeBeforeShort": {
+    "en": "The amiibo data will be checked.",
+    "ua": "Дані amiibo буде перевірено."
+  },
+  "Initializing": {
+    "en": "Resetting amiibo...",
+    "ua": "Скидання amiibo..."
+  },
+  "InitializingKeep": {
+    "en": "Please hold the amiibo in place\nuntil the process is finished.",
+    "ua": "Тримайте amiibo на місці,\nпоки все не завершиться."
+  },
+  "InitializingKeepFangate": {
+    "en": "Please hold the amiibo in place\nuntil the process is finished.",
+    "ua": "Тримайте amiibo на місці,\nпоки все не завершиться."
+  },
+  "FailureInitialize": {
+    "en": "Unable to reset the amiibo.\nPlease try again.",
+    "ua": "Не вдалося скинути amiibo.\nСпробуйте ще раз."
+  },
+  "DoneInitialize": {
+    "en": "Reset complete.",
+    "ua": "Скидання завершено."
+  },
+  "Owner": {
+    "en": "Owner",
+    "ua": "Власник"
+  },
+  "AmiiboNickname": {
+    "en": "amiibo Nickname",
+    "ua": "Псевдонім amiibo"
+  },
+  "RegistNicknameOwner": {
+    "en": "Please register an owner\nand nickname.",
+    "ua": "Зареєструйте власника\nй псевдонім."
+  },
+  "SelectOwnerUp": {
+    "en": "Please select an\nowner.",
+    "ua": "Виберіть\nвласника."
+  },
+  "ScanToWrite": {
+    "en": "Please hold the amiibo\nto the NFC area to register\nan owner and nickname.",
+    "ua": "Піднесіть amiibo до зони\nNFC, щоб зареєструвати\nвласника й псевдонім."
+  },
+  "ScanToWriteShort": {
+    "en": "Owner and nickname data will\nnow be registered to the amiibo.",
+    "ua": "Зараз власника й псевдонім\nбуде записано на amiibo."
+  },
+  "Writing": {
+    "en": "Registering owner\nand nickname...",
+    "ua": "Запис власника\nй псевдоніма..."
+  },
+  "WritingKeep": {
+    "en": "Please hold the amiibo in place\nuntil registration is finished.",
+    "ua": "Тримайте amiibo на місці,\nпоки запис не завершиться."
+  },
+  "WritingKeepFangate": {
+    "en": "Please hold the amiibo in place\nuntil registration is finished.",
+    "ua": "Тримайте amiibo на місці,\nпоки запис не завершиться."
+  },
+  "DoneWrite": {
+    "en": "Owner and nickname registration\nis complete.",
+    "ua": "Власника й псевдонім\nзареєстровано."
+  },
+  "FailureWrite": {
+    "en": "Unable to register data.\nPlease try again.",
+    "ua": "Не вдалося записати дані.\nСпробуйте ще раз."
+  },
+  "GameData": {
+    "en": "Game Data",
+    "ua": "Дані гри"
+  },
+  "Delete": {
+    "en": "Delete",
+    "ua": "Стерти"
+  },
+  "WarnInitialize": {
+    "en": "You will not be able to restore\nthe data once the amiibo has\nbeen reset. Is this OK?",
+    "ua": "Після скидання amiibo дані\nвже не відновити.\nПродовжити?"
+  },
+  "ConfirmDelete": {
+    "en": "Game data cannot be recovered\nonce it has been deleted.",
+    "ua": "Видалені дані гри\nвідновити неможливо."
+  },
+  "NoteDeleteAllData": {
+    "en": "Resetting this amiibo will delete all\nof its saved data, including the\nowner, game data and nickname.",
+    "ua": "Скидання цього amiibo видалить усі\nйого збережені дані: власника,\nдані гри й псевдонім."
+  },
+  "ScanToDeleteGameData": {
+    "en": "Please hold the amiibo to\nthe NFC area to check\nits game data.",
+    "ua": "Піднесіть amiibo до зони\nNFC, щоб перевірити\nйого дані гри."
+  },
+  "ScanToDeleteGameDataShort": {
+    "en": "The amiibo data will be checked.",
+    "ua": "Дані amiibo буде перевірено."
+  },
+  "ScanToDelete": {
+    "en": "Please hold the amiibo\nto the NFC area to\ndelete its game data.",
+    "ua": "Піднесіть amiibo до\nзони NFC, щоб видалити\nйого дані гри."
+  },
+  "ScanToDeleteShort": {
+    "en": "Game data will now be deleted.",
+    "ua": "Зараз дані гри буде видалено."
+  },
+  "Deleting": {
+    "en": "Deleting game data...",
+    "ua": "Видалення даних гри..."
+  },
+  "DeletingKeep": {
+    "en": "Please hold the amiibo in place\nuntil the process is finished.",
+    "ua": "Тримайте amiibo на місці,\nпоки все не завершиться."
+  },
+  "DeletingKeepFangate": {
+    "en": "Please hold the amiibo in place\nuntil the process is finished.",
+    "ua": "Тримайте amiibo на місці,\nпоки все не завершиться."
+  },
+  "FailureDelete": {
+    "en": "Unable to delete game data.\nPlease try again.",
+    "ua": "Не вдалося видалити дані гри.\nСпробуйте ще раз."
+  },
+  "DoneDelete": {
+    "en": "Game data has been deleted.",
+    "ua": "Дані гри видалено."
+  },
+  "NotTargetAmiibo": {
+    "en": "This is not the same amiibo.",
+    "ua": "Це не той самий amiibo."
+  },
+  "NotTargetAmiiboFangate": {
+    "en": "This is not the same amiibo.",
+    "ua": "Це не той самий amiibo."
+  },
+  "LostUnfinishedData": {
+    "en": "Do you wish to go back without\nregistering any changes?",
+    "ua": "Повернутися назад,\nне зберігши зміни?"
+  },
+  "NotRegistered": {
+    "en": "Owner and nickname data is not\nregistered on this amiibo.\nContinue anyway?",
+    "ua": "Власника й псевдонім на цьому\namiibo не зареєстровано.\nВсе одно продовжити?"
+  },
+  "ApplicationName": {
+    "en": "{t:1.1:}",
+    "ua": ""
+  },
+  "AmiiboNickName": {
+    "en": "{t:1.2:}",
+    "ua": ""
+  },
+  "GameDataOther": {
+    "en": "Game data detected.",
+    "ua": "Виявлено дані гри."
+  },
+  "ConnectInternet": {
+    "en": "Connect to the internet to check\nthe name of the software title.",
+    "ua": "З'єднайтеся з Інтернетом, щоб\nдізнатися назву програми."
+  },
+  "MiiNickname": {
+    "en": "{t:1.0:}",
+    "ua": ""
+  },
+  "ResultAuthError": {
+    "en": "037-0523",
+    "ua": ""
+  },
+  "ResultInvalidRomArea": {
+    "en": "037-0524",
+    "ua": ""
+  },
+  "ScanToSetNicknameOwner": {
+    "en": "Please hold the amiibo\nto the NFC area.",
+    "ua": "Піднесіть amiibo\nдо зони NFC."
+  },
+  "ScanToReadAmiibo": {
+    "en": "The amiibo data will be read.",
+    "ua": "Дані amiibo буде прочитано."
+  },
+  "NoGameData": {
+    "en": "There is no game data\nwritten on this amiibo.",
+    "ua": "На цьому amiibo немає\nданих гри."
+  },
+  "BtnSetNicknameOwner": {
+    "en": "Register Owner\nand Nickname",
+    "ua": "Зареєструвати власника\nй псевдонім"
+  },
+  "BtnEraseGameData": {
+    "en": "Delete amiibo Game Data",
+    "ua": "Видалити дані гри\namiibo"
+  },
+  "BtnInitializeAmiibo": {
+    "en": "Reset amiibo",
+    "ua": "Скинути amiibo"
+  },
+  "BtnUpdateFangate": {
+    "en": "Update Nintendo 3DS\nNFC Reader/Writer",
+    "ua": "Оновити пристрій\nNFC для Nintendo 3DS"
+  },
+  "StopDialog2Button": {
+    "en": " Cancel",
+    "ua": " Скасувати"
+  },
+  "ChangeableLater": {
+    "en": "This can be changed later.",
+    "ua": "Це можна змінити пізніше."
+  },
+  "ChangeableLaterWhere": {
+    "en": "This can be changed later in\nHOME Menu Settings ⇒ amiibo Settings.",
+    "ua": "Це можна змінити пізніше:\nналаштування HOME ⇒ налаштування amiibo."
+  },
+  "PushAmiiboAway": {
+    "en": "Please remove the amiibo from\nthe NFC area.",
+    "ua": "Заберіть amiibo\nіз зони NFC."
+  },
+  "PushItAway": {
+    "en": "Please remove the object from\nthe NFC area.",
+    "ua": "Заберіть предмет\nіз зони NFC."
+  },
+  "PushAmiiboAwayFangate": {
+    "en": "Please remove the amiibo from\nthe NFC reader/writer.",
+    "ua": "Заберіть amiibo\nвід пристрою NFC."
+  },
+  "PushItAwayFangate": {
+    "en": "Please remove the object from\nthe NFC reader/writer.",
+    "ua": "Заберіть предмет\nвід пристрою NFC."
+  },
+  "DataNotBroken": {
+    "en": "Data on this amiibo is not\ncorrupted, so it does not\nneed restoring.",
+    "ua": "Дані цього amiibo не\nпошкоджено, тож\nвідновлювати\nїх не треба."
+  },
+  "amiiboSettings": {
+    "en": "amiibo Settings",
+    "ua": "Налаштування amiibo"
+  },
+  "HeaderOwnerNickname": {
+    "en": "Register Owner and Nickname",
+    "ua": "Реєстрація власника й псевдоніма"
+  },
+  "HeaderDeleteGameData": {
+    "en": "Delete Game Data",
+    "ua": "Видалення даних гри"
+  },
+  "HeaderRestoreData": {
+    "en": "Restore Data",
+    "ua": "Відновлення даних"
+  },
+  "HeaderInitialize": {
+    "en": "Reset amiibo",
+    "ua": "Скидання amiibo"
+  },
+  "RegistThis": {
+    "en": " Save",
+    "ua": " Зберегти"
+  },
+  "Change": {
+    "en": "Change",
+    "ua": "Змінити"
+  },
+  "ChangeOwner": {
+    "en": "Select",
+    "ua": "Вибрати"
+  },
+  "Input": {
+    "en": "Enter",
+    "ua": "Ввести"
+  },
+  "NoAmiiboNickname": {
+    "en": "No nickname set.",
+    "ua": "Псевдонім не задано."
+  },
+  "CantCheckData": {
+    "en": "The amiibo could not be\naccessed because its data\nis corrupted.",
+    "ua": "Не вдалося звернутися до\namiibo, бо його дані\nпошкоджено."
+  },
+  "InitNoGameData": {
+    "en": "There is no game data.",
+    "ua": "Даних гри немає."
+  },
+  "InitNoOwner": {
+    "en": "No owner set.",
+    "ua": "Власника не задано."
+  },
+  "InitNoNickname": {
+    "en": "No nickname set.",
+    "ua": "Псевдонім не задано."
+  },
+  "SelectMenu": {
+    "en": "Please choose the following\noptions to configure your amiibo.",
+    "ua": "Виберіть один із пунктів,\nщоб налаштувати ваш amiibo."
+  },
+  "ButtonBisCancel": {
+    "en": " Cancel",
+    "ua": " Скасувати"
+  },
+  "ButtonBisBack": {
+    "en": " Back",
+    "ua": " Назад"
+  },
+  "ReadSuccess": {
+    "en": "Successfully read amiibo.",
+    "ua": "amiibo успішно прочитано."
+  },
+  "HowToFangate": {
+    "en": "",
+    "ua": ""
+  },
+  "PowOnMatch3DS": {
+    "en": "Turn the Nintendo 3DS NFC Reader/\nWriter on and place it facing the\nNintendo 3DS system's infrared\ntransceiver.",
+    "ua": "Увімкніть пристрій NFC для\nNintendo 3DS і поверніть його\nдо інфрачервоного порту\nконсолі Nintendo 3DS."
+  },
+  "PowOnMatch2DS": {
+    "en": "Turn the Nintendo 3DS NFC Reader/\nWriter on and place it facing the\nNintendo 2DS system's infrared\ntransceiver.",
+    "ua": "Увімкніть пристрій NFC для\nNintendo 3DS і поверніть його\nдо інфрачервоного порту\nконсолі Nintendo 2DS."
+  },
+  "TouchAmiiboNfcArea": {
+    "en": "Please hold the amiibo to\nthe NFC area.",
+    "ua": "Піднесіть amiibo\nдо зони NFC."
+  },
+  "GuestA": {
+    "en": "Guest A",
+    "ua": "Гість A"
+  },
+  "GuestB": {
+    "en": "Guest B",
+    "ua": "Гість B"
+  },
+  "GuestC": {
+    "en": "Guest C",
+    "ua": "Гість C"
+  },
+  "GuestD": {
+    "en": "Guest D",
+    "ua": "Гість D"
+  },
+  "GuestE": {
+    "en": "Guest E",
+    "ua": "Гість E"
+  },
+  "GuestF": {
+    "en": "Guest F",
+    "ua": "Гість F"
+  },
+  "HeaderUpdateFirm": {
+    "en": "Updating the NFC Reader/Writer",
+    "ua": "Оновлення пристрою NFC"
+  },
+  "UpdateFirm": {
+    "en": "",
+    "ua": ""
+  },
+  "ScanToUpdateFirm": {
+    "en": "This will update the NFC\nreader/writer.",
+    "ua": "Зараз пристрій NFC\nбуде оновлено."
+  },
+  "BtnUpdateFirm": {
+    "en": "",
+    "ua": ""
+  },
+  "NeedTime": {
+    "en": "",
+    "ua": ""
+  },
+  "HowToUpdateFirm": {
+    "en": "",
+    "ua": ""
+  },
+  "FangateLatest": {
+    "en": "The NFC reader/writer is\nalready up to date.",
+    "ua": "Пристрій NFC уже\nоновлено."
+  },
+  "UpdatingFirm": {
+    "en": "Updating NFC reader/writer...\n\nPlease ensure the infrared\ntransceiver is within range until\nthe update is complete.",
+    "ua": "Оновлення пристрою NFC...\n\nТримайте інфрачервоний порт\nу межах досяжності, поки\nоновлення не завершиться."
+  },
+  "LowBattery": {
+    "en": "The NFC reader/writer's battery\npower is running low.\n\nPlease replace the batteries\nbefore trying again.",
+    "ua": "Батарея пристрою NFC\nмайже розрядилася.\n\nЗамініть батарейки\nй спробуйте ще раз."
+  },
+  "Retry": {
+    "en": " Try Again",
+    "ua": " Ще раз"
+  },
+  "DoneUpdateFirm": {
+    "en": "The NFC reader/writer has\nbeen updated successfully.",
+    "ua": "Пристрій NFC успішно\nоновлено."
+  },
+  "FailureUpdateFirm": {
+    "en": "An error occurred while updating.\nMake sure the NFC reader/writer is\nfacing the system's infrared transceiver\nduring the update.",
+    "ua": "Під час оновлення сталася помилка.\nПильнуйте, щоб пристрій NFC був\nповернутий до інфрачервоного порту\nконсолі протягом усього оновлення."
+  },
+  "RetryUpdate": {
+    "en": "The NFC reader/writer may not\nfunction correctly unless\nupdated successfully.\nPlease try again.",
+    "ua": "Без успішного оновлення\nпристрій NFC може працювати\nнеправильно.\nСпробуйте ще раз."
+  },
+  "IrBroken": {
+    "en": "",
+    "ua": ""
+  },
+  "WirelessOff": {
+    "en": "The NFC reader/writer requires\nwireless communication\nto be enabled.\n\nDo you want to enable wireless\ncommunication?",
+    "ua": "Пристрою NFC потрібен\nувімкнений бездротовий\nзв'язок.\n\nУвімкнути бездротовий\nзв'язок?"
+  },
+  "WirelessOffNew": {
+    "en": "Using amiibo requires wireless\ncommunication/NFC to be\nenabled.\n\nDo you want to enable wireless\ncommunication/NFC?",
+    "ua": "Для amiibo потрібен\nувімкнений\nбездротовий зв'язок і NFC.\n\nУвімкнути бездротовий\nзв'язок і NFC?"
+  },
+  "TurnOn": {
+    "en": " Enable",
+    "ua": " Увімкнути"
+  },
+  "CloseApplication": {
+    "en": "Closing software...",
+    "ua": "Закриття програми..."
+  },
+  "MiiMakerDataBroken": {
+    "en": "The Mii Maker save data was\ncorrupted and has been reset.",
+    "ua": "Дані Mii Maker було\nпошкоджено й скинуто."
+  },
+  "FunctionError": {
+    "en": "{t:0.2:5000}An infrared communication error\noccurred. Please turn the power off\nand try again. If the problem persists,\nplease contact your local customer\nsupport centre. For contact details,\ncheck the Operations Manual or visit\nsupport.nintendo.com.{t:0.2:6400}",
+    "ua": "{t:0.2:5000}Сталася помилка інфрачервоного\nзв'язку. Вимкніть консоль і спробуйте\nще раз. Якщо проблема не зникає,\nзверніться до місцевої служби\nпідтримки. Контакти шукайте\nв посібнику з користування або\nна support.nintendo.com.{t:0.2:6400}"
+  },
+  "NfcTargetError": {
+    "en": "{t:0.2:5000}A communication error occurred with\nthe NFC reader/writer. Please turn its\npower off and try again. If the problem\npersists, please contact your local\ncustomer support centre. For contact\ndetails, check the Operations Manual or\nvisit support.nintendo.com.{t:0.2:6400}",
+    "ua": "{t:0.2:5000}Сталася помилка зв'язку з пристроєм\nNFC. Вимкніть його й спробуйте ще\nраз. Якщо проблема не зникає,\nзверніться до місцевої служби\nпідтримки. Контакти шукайте\nв посібнику з користування\nабо на support.nintendo.com.{t:0.2:6400}"
+  },
+  "UpdateRequired": {
+    "en": "You must update the\nNFC reader/writer.",
+    "ua": "Пристрій NFC треба\nоновити."
+  },
+  "Update": {
+    "en": " Update",
+    "ua": " Оновити"
+  }
+}

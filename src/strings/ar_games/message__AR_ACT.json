@@ -1,0 +1,1418 @@
+{
+  "bt_comm_": {
+    "en": "",
+    "ua": ""
+  },
+  "bt_comm_back": {
+    "en": "Back",
+    "ua": "Назад"
+  },
+  "bt_comm_next_2": {
+    "en": "Next",
+    "ua": "Далі"
+  },
+  "bt_comm_before": {
+    "en": "Previous",
+    "ua": "Назад"
+  },
+  "bt_comm_ok": {
+    "en": "OK",
+    "ua": "OK"
+  },
+  "bt_comm_back_game": {
+    "en": "Return",
+    "ua": "Повернутися"
+  },
+  "base_comm": {
+    "en": "",
+    "ua": ""
+  },
+  "base_comm_home": {
+    "en": ": HOME Menu",
+    "ua": ": меню HOME"
+  },
+  "base_comm_end": {
+    "en": "Menu",
+    "ua": "Меню"
+  },
+  "base_comm_hint": {
+    "en": "Help",
+    "ua": "Довідка"
+  },
+  "base_comm_pause": {
+    "en": "PAUSED",
+    "ua": "ПАУЗА"
+  },
+  "base_comm_a": {
+    "en": "Press the\nA Button.",
+    "ua": "Натисніть\nкнопку A."
+  },
+  "bar_comm_": {
+    "en": "",
+    "ua": ""
+  },
+  "bar_comm_next": {
+    "en": "Next!",
+    "ua": "Далі!"
+  },
+  "bar_comm_dragon": {
+    "en": "Beat the dragon!",
+    "ua": "Здолай дракона!"
+  },
+  "bar_comm_clear": {
+    "en": "CLEAR!",
+    "ua": "ПРОЙДЕНО!"
+  },
+  "bar_comm_allclear": {
+    "en": "Congratulations!",
+    "ua": "Вітаємо!"
+  },
+  "bar_comm_shot": {
+    "en": "Shoot with !",
+    "ua": "Вогонь — !"
+  },
+  "bar_comm_shot_2": {
+    "en": "Shoot with !",
+    "ua": "Вогонь — !"
+  },
+  "bar_comm_hint_2": {
+    "en": "That's it! Keep it up!",
+    "ua": "Отак! Так тримати!"
+  },
+  "bar_comm_rest": {
+    "en": "Take breaks to prevent fatigue.",
+    "ua": "Робіть перерви, щоб не\nвтомитися."
+  },
+  "bar_comm_rest_2": {
+    "en": "Dear players...",
+    "ua": "Шановні гравці..."
+  },
+  "pause_comm_": {
+    "en": "",
+    "ua": ""
+  },
+  "pause_comm_txt": {
+    "en": "Quit {t:1.1:}?",
+    "ua": "Вийти з «{t:1.1:}»?"
+  },
+  "result_": {
+    "en": "",
+    "ua": ""
+  },
+  "result_title": {
+    "en": "Results",
+    "ua": "Результати"
+  },
+  "result_cleartime": {
+    "en": "Clear Time",
+    "ua": "Час"
+  },
+  "result_cleartime_2": {
+    "en": "{t:1.0:}:{t:1.0:}",
+    "ua": ""
+  },
+  "result_clearpoint": {
+    "en": "Total",
+    "ua": "Усього"
+  },
+  "result_clearpoint_2": {
+    "en": "{t:1.0:} pts",
+    "ua": "{t:1.0:} оч."
+  },
+  "result_clearpoint_3": {
+    "en": "{t:1.0:} pts × {t:1.0:}",
+    "ua": "{t:1.0:} оч. × {t:1.0:}"
+  },
+  "result_clearpoint_4": {
+    "en": "0 pts",
+    "ua": "0 оч."
+  },
+  "result_clearshot": {
+    "en": "Shots to Clear",
+    "ua": "Пострілів"
+  },
+  "result_clearshot_2": {
+    "en": "{t:1.0:}",
+    "ua": ""
+  },
+  "result_ranking": {
+    "en": "Top Three",
+    "ua": "Трійка"
+  },
+  "result_first": {
+    "en": "1st",
+    "ua": "1"
+  },
+  "result_second": {
+    "en": "2nd",
+    "ua": "2"
+  },
+  "result_third": {
+    "en": "3rd",
+    "ua": "3"
+  },
+  "result_now": {
+    "en": "You",
+    "ua": "Ви"
+  },
+  "result_new": {
+    "en": "NEW",
+    "ua": "НОВЕ"
+  },
+  "result_none": {
+    "en": "-",
+    "ua": ""
+  },
+  "ready_": {
+    "en": "",
+    "ua": ""
+  },
+  "ready_before": {
+    "en": "Getting started...",
+    "ua": "Готуємося..."
+  },
+  "ready_explain1": {
+    "en": "Take out the {t:0.3:0000}? Card{t:0.3:ffff}.",
+    "ua": "Візьміть картку {t:0.3:0000}«?»{t:0.3:ffff}."
+  },
+  "ready_explain2": {
+    "en": "Place it on a {t:0.3:0000}flat surface{t:0.3:ffff}.",
+    "ua": "Покладіть її на {t:0.3:0000}рівну поверхню{t:0.3:ffff}."
+  },
+  "ready_front": {
+    "en": "Front",
+    "ua": "Спереду"
+  },
+  "ready_back": {
+    "en": "Back",
+    "ua": "Ззаду"
+  },
+  "ready_explain3": {
+    "en": "A distance of {t:0.3:0000}around 35cm {t:0.3:ffff}is ideal.",
+    "ua": "Найкраща відстань — {t:0.3:0000}близько 35\nсм{t:0.3:ffff}."
+  },
+  "ready_dist_D": {
+    "en": "35cm",
+    "ua": "35 см"
+  },
+  "ready_degree_D": {
+    "en": "30°",
+    "ua": ""
+  },
+  "ready_explain4": {
+    "en": "Move while holding the system.\n{t:0.3:0000}(Mind your surroundings!){t:0.3:ffff}",
+    "ua": "Рухайтеся, тримаючи консоль.\n{t:0.3:0000}(Пильнуйте, що довкола!){t:0.3:ffff}"
+  },
+  "ready_explain5": {
+    "en": "Play in a {t:0.3:0000}well-lit area{t:0.3:ffff}, as otherwise\nAR Cards can't be read easily.",
+    "ua": "Грайте {t:0.3:0000}при доброму світлі{t:0.3:ffff},\nінакше картки AR читаються зле."
+  },
+  "ready_look_start": {
+    "en": "Point the cameras at the ? Card only.",
+    "ua": "Наведіть камери лише на картку «?»."
+  },
+  "ready_look_card": {
+    "en": "Searching for AR Card",
+    "ua": "Пошук картки AR"
+  },
+  "ready_period": {
+    "en": ".",
+    "ua": ""
+  },
+  "ready_only_card": {
+    "en": "Use only one ? Card at a time.",
+    "ua": "Використовуйте лише одну картку «?»."
+  },
+  "ready_lost_card": {
+    "en": "Can't find a ? Card!",
+    "ua": "Картки «?» не видно!"
+  },
+  "ready_look_card_ok": {
+    "en": "Found an AR Card!",
+    "ua": "Картку AR знайдено!"
+  },
+  "ready_look_card_D": {
+    "en": "Look {t:0.3:0000}only at the ? Card{t:0.3:ffff},\nviewing it from the {t:0.3:0000}front{t:0.3:ffff}.",
+    "ua": "Дивіться {t:0.3:0000}лише на «?»{t:0.3:ffff},\nтримаючи її {t:0.3:0000}спереду{t:0.3:ffff}."
+  },
+  "ready_dist_start": {
+    "en": "Hold the system about 35cm away.",
+    "ua": "Тримайте консоль приблизно за 35 см."
+  },
+  "ready_dist": {
+    "en": "Detecting distance",
+    "ua": "Вимірювання відстані"
+  },
+  "ready_dist_rt": {
+    "en": "{t:1.0:}.{t:1.0:}cm",
+    "ua": "{t:1.0:},{t:1.0:} см"
+  },
+  "ready_dist_ok": {
+    "en": "Ready to begin!",
+    "ua": "Можна починати!"
+  },
+  "ready_dist_D_2": {
+    "en": "Move to {t:0.3:0000}about 35cm {t:0.3:ffff}away.",
+    "ua": "Відійдіть на {t:0.3:0000}близько 35 см{t:0.3:ffff}."
+  },
+  "ready_ok": {
+    "en": "OK",
+    "ua": "OK"
+  },
+  "ready_start": {
+    "en": "Press  to shoot!",
+    "ua": " — вогонь!"
+  },
+  "ready_start_front": {
+    "en": "Shoot the front!",
+    "ua": "Бийте спереду!"
+  },
+  "ready_start_bar": {
+    "en": "Keep your aim fixed while you move!",
+    "ua": "Рухаючись, тримайте приціл!"
+  },
+  "gameselect_": {
+    "en": "",
+    "ua": ""
+  },
+  "gamesel_select": {
+    "en": "Aim at a game and press  to confirm.",
+    "ua": "Наведіться на гру й натисніть ."
+  },
+  "gamesel_close": {
+    "en": "???",
+    "ua": ""
+  },
+  "gamesel_close_no": {
+    "en": "Can't open yet!",
+    "ua": "Ще зачинено!"
+  },
+  "gamesel_open2": {
+    "en": "{t:1.1:} and\n{t:1.1:}\nare now open!",
+    "ua": "«{t:1.1:}» і\n«{t:1.1:}»\nтепер відкриті!"
+  },
+  "gamesel_open3": {
+    "en": "A new box\nhas appeared!",
+    "ua": "З'явилася нова\nскринька!"
+  },
+  "gamesel_shoot": {
+    "en": "Shooting",
+    "ua": "Стрільба"
+  },
+  "gamesel_shoot2": {
+    "en": "Shooting 2",
+    "ua": "Стрільба 2"
+  },
+  "gamesel_chara_photo": {
+    "en": "Star Pics",
+    "ua": "Фото героїв"
+  },
+  "gamesel_mii_photo": {
+    "en": "Mii Pics",
+    "ua": "Фото з Mii"
+  },
+  "gamesel_golf": {
+    "en": "AR Shot",
+    "ua": "AR-удар"
+  },
+  "gamesel_golf2": {
+    "en": "AR Shot 2",
+    "ua": "AR-удар 2"
+  },
+  "gamesel_fish": {
+    "en": "Fishing",
+    "ua": "Рибалка"
+  },
+  "gamesel_fish2": {
+    "en": "Free Fishing",
+    "ua": "Вільна ловля"
+  },
+  "gamesel_fishbook": {
+    "en": "Fish Gallery",
+    "ua": "Галерея риб"
+  },
+  "gamesel_draw": {
+    "en": "Graffiti",
+    "ua": "Малюнок"
+  },
+  "gamesel_back": {
+    "en": "Back",
+    "ua": "Назад"
+  },
+  "gamesel_earth": {
+    "en": "Globe",
+    "ua": "Глобус"
+  },
+  "gamesel_moko": {
+    "en": "3D Tools",
+    "ua": "3D-набір"
+  },
+  "gamesel_clock": {
+    "en": "Clock",
+    "ua": "Час"
+  },
+  "gamesel_secret": {
+    "en": "Shoot here!",
+    "ua": "Стріляйте сюди!"
+  },
+  "gamesel_omote": {
+    "en": "Go back?",
+    "ua": "Повернутися?"
+  },
+  "gamesel_shop": {
+    "en": "Shop",
+    "ua": "Магазин"
+  },
+  "gamesel_coin_expl_1": {
+    "en": "Use  Play Coins here\nto open up new modes!",
+    "ua": "Витрачайте  монетки,\nщоб відкрити нові\nрежими!"
+  },
+  "gamesel_coin_expl_2": {
+    "en": "Collect  Play Coins\nby walking around\nwith your system\nin Sleep Mode!",
+    "ua": "Збирайте  ігрові\nмонетки,\nгуляючи з консоллю\nв режимі сну!"
+  },
+  "gamesel_coin_expl_3": {
+    "en": "The  Play Coins you\ncollect can be used in\nother games, too.",
+    "ua": "Зібрані  ігрові\nмонетки\nможна витрачати\nй в інших іграх."
+  },
+  "gamesel_anyphoto": {
+    "en": "Free Camera",
+    "ua": "Вільна камера"
+  },
+  "gamesel_price": {
+    "en": "{t:1.0:}",
+    "ua": ""
+  },
+  "gamesel_coin_a": {
+    "en": " Buy",
+    "ua": " Купити"
+  },
+  "gamesel_coin_a_ok": {
+    "en": " OK",
+    "ua": " OK"
+  },
+  "gamesel_coin_b": {
+    "en": " Cancel",
+    "ua": " Скасувати"
+  },
+  "gamesel_coin_open": {
+    "en": "Buy {t:1.1:}\nfor 1 Play Coin?",
+    "ua": "Купити «{t:1.1:}»\nза 1 ігрову монетку?"
+  },
+  "gamesel_coin_open_2": {
+    "en": "Buy {t:1.1:}\nfor 3 Play Coins?",
+    "ua": "Купити «{t:1.1:}»\nза 3 ігрові монетки?"
+  },
+  "gamesel_mycoin": {
+    "en": "{t:1.0:}",
+    "ua": ""
+  },
+  "gamesel_nocoin": {
+    "en": "{t:0.3:0000}You don't have enough\nPlay Coins!{t:0.3:ffff}",
+    "ua": "{t:0.3:0000}Вам бракує\nігрових монеток!{t:0.3:ffff}"
+  },
+  "gamesel_soldout": {
+    "en": "Sold out",
+    "ua": "Продано"
+  },
+  "gamesel_coin_open_3": {
+    "en": "Now you can press\n+ together to take\nphotos anywhere!",
+    "ua": "Тепер, натиснувши\n+ разом, можна\nфотографувати\nбудь-де!"
+  },
+  "gamesel_anyshot_how": {
+    "en": "Take photos with +!",
+    "ua": "Фото — +!"
+  },
+  "main_shoot_": {
+    "en": "",
+    "ua": ""
+  },
+  "main_shoot_start": {
+    "en": "Shoot the targets!",
+    "ua": "Бийте по мішенях!"
+  },
+  "main_shoot_statue": {
+    "en": "A statue...?!",
+    "ua": "Статуя...?!"
+  },
+  "main_shoot_hint_front": {
+    "en": "Aim for the front!",
+    "ua": "Цільтеся спереду!"
+  },
+  "main_shoot_hint_hole": {
+    "en": "What's in the pit?",
+    "ua": "Що там у ямі?"
+  },
+  "main_shoot_hint_shoot_all": {
+    "en": "Shoot each part of the dragon!",
+    "ua": "Бийте по кожній частині дракона!"
+  },
+  "main_shoot_hint_black": {
+    "en": "Shoot each part until it turns black!",
+    "ua": "Стріляйте, поки частина не почорніє!"
+  },
+  "main_shoot_hint_neck": {
+    "en": "Aim for the neck!",
+    "ua": "Цільтеся в шию!"
+  },
+  "main_shoot_hint_body": {
+    "en": "Aim for the body!",
+    "ua": "Цільтеся в тулуб!"
+  },
+  "main_shoot_hint_head": {
+    "en": "Aim for the head!",
+    "ua": "Цільтеся в голову!"
+  },
+  "main_shoot_hint_nohit": {
+    "en": "That doesn't seem to be very effective...",
+    "ua": "Схоже, це не дуже допомагає..."
+  },
+  "main_shoot_hint_rotate": {
+    "en": "Try circling around to find an opening.",
+    "ua": "Спробуйте обійти й знайти прогалину."
+  },
+  "main_shoot_rest_tail": {
+    "en": "{t:1.0:} left!",
+    "ua": "Ще {t:1.0:}!"
+  },
+  "main_shoot_retry": {
+    "en": "Again!",
+    "ua": "Ще раз!"
+  },
+  "main_fish_": {
+    "en": "",
+    "ua": ""
+  },
+  "main_fish_start": {
+    "en": "2 minutes to fish!",
+    "ua": "2 хв рибалки!"
+  },
+  "main_fish_start_free": {
+    "en": "START",
+    "ua": "СТАРТ"
+  },
+  "main_fish_Tuna": {
+    "en": "Tuna",
+    "ua": "Тунець"
+  },
+  "main_fish_Seabream": {
+    "en": "Red Snapper",
+    "ua": "Червон. окунь"
+  },
+  "main_fish_Salmon": {
+    "en": "Salmon",
+    "ua": "Лосось"
+  },
+  "main_fish_R_Flounder": {
+    "en": "Flounder",
+    "ua": "Камбала"
+  },
+  "main_fish_Mackerel": {
+    "en": "Mackerel",
+    "ua": "Скумбрія"
+  },
+  "main_fish_Flyingfish": {
+    "en": "Flying Fish",
+    "ua": "Летюча риба"
+  },
+  "main_fish_Iwasi": {
+    "en": "Sardine",
+    "ua": "Сардина"
+  },
+  "main_fish_Crab": {
+    "en": "Crab",
+    "ua": "Краб"
+  },
+  "main_fish_Porcupinefish": {
+    "en": "Porcupine Fish",
+    "ua": "Риба-їжак"
+  },
+  "main_fish_Eel": {
+    "en": "Eel",
+    "ua": "Вугор"
+  },
+  "main_fish_Jellyfish": {
+    "en": "Jellyfish",
+    "ua": "Медуза"
+  },
+  "main_fish_Blacksnapper": {
+    "en": "Sea Bream",
+    "ua": "Морський карась"
+  },
+  "main_fish_Tyoutyouuo": {
+    "en": "Butterfly Fish",
+    "ua": "Риба-метелик"
+  },
+  "main_fish_Nanyouhagi": {
+    "en": "Regal Tang",
+    "ua": "Хірург-королева"
+  },
+  "main_fish_Mongara": {
+    "en": "Clown Triggerfish",
+    "ua": "Спинорог-клоун"
+  },
+  "main_fish_Yukatahata": {
+    "en": "Coral Hind",
+    "ua": "Коралова групер"
+  },
+  "main_fish_Otomebera": {
+    "en": "Moon Wrasse",
+    "ua": "Губань"
+  },
+  "main_fish_Cheep_Cheep": {
+    "en": "Cheep Cheep",
+    "ua": "Чіп-Чіп"
+  },
+  "main_fish_Blooper": {
+    "en": "Blooper",
+    "ua": "Блупер"
+  },
+  "main_fish_Greenshell": {
+    "en": "Green Shell",
+    "ua": "Зелений панцир"
+  },
+  "main_fish_Fishbone": {
+    "en": "Fishbone",
+    "ua": "Кістяк риби"
+  },
+  "main_fish_Emptycan": {
+    "en": "Can",
+    "ua": "Бляшанка"
+  },
+  "main_fish_UFO": {
+    "en": "UFO",
+    "ua": "НЛО"
+  },
+  "main_fish_Sowrdfish": {
+    "en": "Marlin",
+    "ua": "Марлін"
+  },
+  "main_fish_Shark": {
+    "en": "Shark",
+    "ua": "Акула"
+  },
+  "main_fish_Ray": {
+    "en": "Ray",
+    "ua": "Скат"
+  },
+  "main_fish_Footballfish": {
+    "en": "Anglerfish",
+    "ua": "Вудильник"
+  },
+  "main_fish_Grouper": {
+    "en": "Longtooth Grouper",
+    "ua": "Довгозуб"
+  },
+  "main_fish_Gold_Sowrdfish": {
+    "en": "Gold Marlin",
+    "ua": "Золотий марлін"
+  },
+  "main_fish_get_dragon": {
+    "en": "Dragon",
+    "ua": "Дракон"
+  },
+  "main_fish_hanjitu": {
+    "en": "Mr AR",
+    "ua": "Пан AR"
+  },
+  "main_fish_get": {
+    "en": "{t:1.1:}",
+    "ua": ""
+  },
+  "main_fish_timeup": {
+    "en": "TIME'S UP!",
+    "ua": "ЧАС ВИЙШОВ!"
+  },
+  "main_fish_hint_1": {
+    "en": "Tilt the system...",
+    "ua": "Нахиліть консоль..."
+  },
+  "main_fish_hint_2": {
+    "en": "Hook the fish!",
+    "ua": "Підсікайте!"
+  },
+  "main_fish_hint_3_2": {
+    "en": "Lift the system!",
+    "ua": "Підніміть консоль!"
+  },
+  "main_fish_dragon": {
+    "en": "Wear him down!",
+    "ua": "Виснажте його!"
+  },
+  "main_fish_hint_4": {
+    "en": "Bomb with !",
+    "ua": "Бомба — кнопка !"
+  },
+  "main_fish_hint_5": {
+    "en": "Aim for the head!",
+    "ua": "Цільте в голову!"
+  },
+  "main_fish_hint_6": {
+    "en": "Too slow! The fish got away.",
+    "ua": "Запізно! Риба втекла."
+  },
+  "main_fish_hint_7": {
+    "en": "Too fast! The fish got away.",
+    "ua": "Зарано! Риба втекла."
+  },
+  "main_fish_hint_8": {
+    "en": "The line broke! You took a bit too long.",
+    "ua": "Волосінь урвалася! Ви забарилися."
+  },
+  "main_fish_hint_10": {
+    "en": "HELP!",
+    "ua": "РЯТУЙТЕ!"
+  },
+  "main_fish_hint_11": {
+    "en": "Put the AR Card on\na blue surface!",
+    "ua": "Покладіть картку AR\nна синю поверхню!"
+  },
+  "main_fish_hint_13": {
+    "en": "Seems it reacts to red.",
+    "ua": "Реагує на червоне."
+  },
+  "main_fish_hint_14": {
+    "en": "Seems it reacts to blue.",
+    "ua": "Реагує на синє."
+  },
+  "main_fish_hint_15": {
+    "en": "Seems it reacts to yellow.",
+    "ua": "Реагує на жовте."
+  },
+  "main_fish_hint_16": {
+    "en": "Seems it reacts to green.",
+    "ua": "Реагує на зелене."
+  },
+  "main_fish_over_2": {
+    "en": "Pull up!",
+    "ua": "Тягніть!"
+  },
+  "main_fish_under": {
+    "en": "Cast your line.",
+    "ua": "Закиньте вудку."
+  },
+  "main_fish_trans_r": {
+    "en": "Move...",
+    "ua": "Рухайтеся..."
+  },
+  "main_fish_dragon_2": {
+    "en": "Catch it!",
+    "ua": "Ловіть!"
+  },
+  "main_fish_new": {
+    "en": "NEW",
+    "ua": "НОВЕ"
+  },
+  "main_zukan_": {
+    "en": "",
+    "ua": ""
+  },
+  "main_zukan_all": {
+    "en": "Completed\n{t:1.0:}/{t:1.0:}",
+    "ua": "Зібрано\n{t:1.0:}/{t:1.0:}"
+  },
+  "main_zukan_get": {
+    "en": "Caught:",
+    "ua": "Спіймано:"
+  },
+  "main_zukan_close": {
+    "en": "Close",
+    "ua": "Закрити"
+  },
+  "main_zukan_open": {
+    "en": "Open",
+    "ua": "Відкрити"
+  },
+  "main_zukan_next": {
+    "en": "Next",
+    "ua": "Далі"
+  },
+  "main_zukan_back": {
+    "en": "Back",
+    "ua": "Назад"
+  },
+  "main_zukan_new_2": {
+    "en": "Caught {t:1.0:} different species!\nCongratulations!",
+    "ua": "Спіймано видів: {t:1.0:}!\nВітаємо!"
+  },
+  "main_zukan_new_3": {
+    "en": "Nice! A king-sized catch!\nYou earned a crown!",
+    "ua": "Оце улов! Королівський\nрозмір!\nВи здобули корону!"
+  },
+  "main_zukan_new_4": {
+    "en": "Caught 15 different\nspecies! You can now\ncatch king-sized fish!",
+    "ua": "Спіймано 15 видів!\nТепер трапляються риби\nкоролівського розміру!"
+  },
+  "main_zukan_new_5": {
+    "en": "Caught {t:1.0:} different species!\nYou've caught them all!",
+    "ua": "Спіймано видів: {t:1.0:}!\nВи спіймали їх усіх!"
+  },
+  "main_zukan_new_6": {
+    "en": "Caught {t:1.0:} different\nspecies! Now a golden fish\nwill appear in Free Fishing!",
+    "ua": "Спіймано видів: {t:1.0:}!\nУ «Вільній рибалці» тепер\nз'являтиметься золота риба!"
+  },
+  "main_zukan_new_7": {
+    "en": "Caught all king-sized fish!\nYou've caught everything!",
+    "ua": "Спіймано всіх риб\nкоролівського\nрозміру! Колекція повна!"
+  },
+  "main_zukan_expl_2": {
+    "en": "This is a collection of\nthe species of fish that\nyou've caught so far.",
+    "ua": "Це збірка видів риб,\nяких ви спіймали\nдосі."
+  },
+  "main_zukan_expl_3": {
+    "en": "Try to catch them\nall and complete\nyour collection!",
+    "ua": "Спробуйте спіймати\nвсіх і зібрати\nповну колекцію!"
+  },
+  "main_zukan_expl_4": {
+    "en": "Caught all\nspecies!",
+    "ua": "Спіймано всі\nвиди!"
+  },
+  "main_zukan_expl_5": {
+    "en": "Complete!",
+    "ua": "Готово!"
+  },
+  "main_zukan_hint_1": {
+    "en": "Glistening fish",
+    "ua": "Блискуча риба"
+  },
+  "main_zukan_hint_2": {
+    "en": "When a real pro appears...",
+    "ua": "Коли з'явиться профі..."
+  },
+  "main_zukan_hint_3": {
+    "en": "Sensitive to red",
+    "ua": "Чутлива до червоного"
+  },
+  "main_zukan_hint_4": {
+    "en": "Sensitive to green",
+    "ua": "Чутлива до зеленого"
+  },
+  "main_zukan_hint_5": {
+    "en": "Sensitive to blue",
+    "ua": "Чутлива до синього"
+  },
+  "main_zukan_hint_6": {
+    "en": "Sensitive to yellow",
+    "ua": "Чутлива до жовтого"
+  },
+  "main_zukan_hint_7": {
+    "en": "Careful - electric!",
+    "ua": "Обережно, струм!"
+  },
+  "main_zukan_hint_8": {
+    "en": "Small daytime fish",
+    "ua": "Мала денна риба"
+  },
+  "main_zukan_hint_9": {
+    "en": "Large daytime fish",
+    "ua": "Велика денна риба"
+  },
+  "main_zukan_hint_10": {
+    "en": "Medium-sized daytime fish",
+    "ua": "Середня денна риба"
+  },
+  "main_zukan_hint_11": {
+    "en": "Small night fish",
+    "ua": "Мала нічна риба"
+  },
+  "main_zukan_hint_12": {
+    "en": "Large night fish",
+    "ua": "Велика нічна риба"
+  },
+  "main_zukan_hint_13": {
+    "en": "Unusual night fish",
+    "ua": "Незвична нічна риба"
+  },
+  "main_zukan_hint_14": {
+    "en": "The rainbow's your cue!",
+    "ua": "Веселка — ваш знак!"
+  },
+  "main_zukan_hint_15": {
+    "en": "Get it at the last minute in Fishing...",
+    "ua": "В останню мить у «Рибалці»..."
+  },
+  "main_zukan_hint_16": {
+    "en": "When you hear an odd sound...",
+    "ua": "Коли почуєте дивний звук..."
+  },
+  "main_zukan_hint_17": {
+    "en": "Crops up occasionally",
+    "ua": "Трапляється вряди-годи"
+  },
+  "main_zukan_new": {
+    "en": "NEW",
+    "ua": "НОВЕ"
+  },
+  "main_draw_": {
+    "en": "",
+    "ua": ""
+  },
+  "main_draw_start": {
+    "en": "Take out the stylus and\ndraw a picture here.",
+    "ua": "Дістаньте стилус\nі намалюйте тут\nмалюнок."
+  },
+  "main_draw_start_ar": {
+    "en": "See Touch\nScreen!",
+    "ua": "Дивіться на\nнижній екран!"
+  },
+  "main_draw_touch": {
+    "en": "Touch the icon:",
+    "ua": "Значок:"
+  },
+  "main_draw_trans": {
+    "en": "Move",
+    "ua": "Рухати"
+  },
+  "main_draw_jump": {
+    "en": "Jump",
+    "ua": "Стрибок"
+  },
+  "main_draw_del_all": {
+    "en": "Clear",
+    "ua": "Стерти"
+  },
+  "main_draw_del": {
+    "en": "Choose an eraser style.",
+    "ua": "Виберіть спосіб стирання."
+  },
+  "main_draw_type": {
+    "en": "Select a shape.",
+    "ua": "Виберіть форму."
+  },
+  "main_draw_model": {
+    "en": "Select an image.",
+    "ua": "Виберіть зображення."
+  },
+  "main_draw_model_off": {
+    "en": "Off",
+    "ua": "Вимк."
+  },
+  "main_draw_end": {
+    "en": "Quit Graffiti?",
+    "ua": "Вийти з «Малювання»?"
+  },
+  "main_draw_save": {
+    "en": "Save your drawing?",
+    "ua": "Зберегти малюнок?"
+  },
+  "main_draw_yes_bt": {
+    "en": "Yes",
+    "ua": "Так"
+  },
+  "main_draw_no_bt": {
+    "en": "No",
+    "ua": "Ні"
+  },
+  "main_draw_continue_bt": {
+    "en": "Continue",
+    "ua": "Далі"
+  },
+  "main_draw_end_bt": {
+    "en": "Quit",
+    "ua": "Вийти"
+  },
+  "main_draw_end_pen": {
+    "en": "Put the stylus back \ninto the stylus holder.",
+    "ua": "Поверніть стилус \nу тримач."
+  },
+  "main_golf_": {
+    "en": "",
+    "ua": ""
+  },
+  "main_golf_start": {
+    "en": "Hit the ball!",
+    "ua": "Бийте по м'ячу!"
+  },
+  "main_golf_1shotclear": {
+    "en": "Hole in one!",
+    "ua": "Одним ударом!"
+  },
+  "main_golf_hint_1": {
+    "en": "Aim at the ball!",
+    "ua": "Цільтеся в м'яч!"
+  },
+  "main_photo_": {
+    "en": "",
+    "ua": ""
+  },
+  "main_photo_start_ar": {
+    "en": "See Touch Screen!",
+    "ua": "Гляньте нижче!"
+  },
+  "main_photo_intro_ar": {
+    "en": "Strike a pose\nand take some\nflashy photos!",
+    "ua": "Прибирайте пози\nй робіть яскраві\nфото!"
+  },
+  "main_photo_l": {
+    "en": " ",
+    "ua": ""
+  },
+  "main_photo_r": {
+    "en": " ",
+    "ua": ""
+  },
+  "main_photo_full_1": {
+    "en": "Couldn't save to SD Card.",
+    "ua": "Не вдалося зберегти на карту SD."
+  },
+  "main_photo_full_2": {
+    "en": "then check the SD Card.",
+    "ua": "тоді перевірте карту SD."
+  },
+  "main_photo_save_0": {
+    "en": "Photo taken!",
+    "ua": "Фото зроблено!"
+  },
+  "main_photo_save_1": {
+    "en": " Hide/show guide -  Retake -  Save",
+    "ua": " Рамка -  Перезняти -  Зберегти"
+  },
+  "main_photo_saving": {
+    "en": "Saving",
+    "ua": "Збереження"
+  },
+  "main_photo_saved": {
+    "en": "Photo saved!",
+    "ua": "Фото збережено!"
+  },
+  "main_photo_saved_ok": {
+    "en": "You can view it in Nintendo 3DS Camera!",
+    "ua": "Дивіться його в Nintendo 3DS Камері!"
+  },
+  "main_photo_sd_err_1": {
+    "en": "No SD Card is inserted.",
+    "ua": "Карту SD не вставлено."
+  },
+  "main_photo_sd_err_2": {
+    "en": "then insert an SD Card into the system.",
+    "ua": "тоді вставте карту SD в консоль."
+  },
+  "main_photo_sd_err_3": {
+    "en": "The SD Card is write-protected.",
+    "ua": "Карту SD захищено від запису."
+  },
+  "main_photo_sd_err_3_1": {
+    "en": "Please turn off the power,",
+    "ua": "Вимкніть консоль,"
+  },
+  "main_photo_sd_err_3_2": {
+    "en": "move the write-protection switch to \"off\"",
+    "ua": "пересуньте перемикач захисту на «off»"
+  },
+  "main_photo_sd_err_3_3": {
+    "en": "and then reinsert the SD Card.",
+    "ua": "і вставте карту SD знову."
+  },
+  "main_photo_sd_err_4": {
+    "en": "",
+    "ua": ""
+  },
+  "main_photo_sd_err_5": {
+    "en": "This SD Card's photo limit has been reached.",
+    "ua": "Досягнуто ліміту фото на цій карті SD."
+  },
+  "main_mii_photo_": {
+    "en": "",
+    "ua": ""
+  },
+  "main_mii_photo_expl_1_ar": {
+    "en": "Touch!",
+    "ua": "Тицьніть!"
+  },
+  "main_mii_photo_looks_ar": {
+    "en": "Expression",
+    "ua": "Вираз обличчя"
+  },
+  "main_mii_photo_pause_ar": {
+    "en": "Change pose",
+    "ua": "Змінити позу"
+  },
+  "main_mii_photo_shot_ar": {
+    "en": " /  Photo!",
+    "ua": " /  Фото!"
+  },
+  "main_mii_photo_select_ar": {
+    "en": " Select Mii",
+    "ua": " Вибрати Mii"
+  },
+  "main_mii_photo_move_ar": {
+    "en": "Move Mii",
+    "ua": "Рухати Mii"
+  },
+  "main_mii_photo_add_ar": {
+    "en": "Add/remove\nMii characters",
+    "ua": "Додати або\nприбрати Mii"
+  },
+  "main_mii_photo_random_ar": {
+    "en": "Use set\nposes",
+    "ua": "Готові\nпози"
+  },
+  "main_mii_photo_eye_ar": {
+    "en": "Make eye\ncontact",
+    "ua": "Дивитися\nв камеру"
+  },
+  "main_mii_photo_eye_on": {
+    "en": "Eye contact: On",
+    "ua": "Погляд у камеру: увім."
+  },
+  "main_mii_photo_eye_off": {
+    "en": "Eye contact: Off",
+    "ua": "Погляд у камеру: вимк."
+  },
+  "main_mii_photo_move": {
+    "en": "Move",
+    "ua": "Рухати"
+  },
+  "main_mii_photo_pause": {
+    "en": "Pose",
+    "ua": "Поза"
+  },
+  "main_mii_photo_shot": {
+    "en": " /  Photo",
+    "ua": " /  Фото"
+  },
+  "main_mii_photo_select": {
+    "en": " Switch Mii",
+    "ua": " Змінити Mii"
+  },
+  "main_mii_photo_looks": {
+    "en": "Expression",
+    "ua": "Вираз"
+  },
+  "main_mii_photo_add": {
+    "en": "Add",
+    "ua": "Додати"
+  },
+  "main_mii_photo_del": {
+    "en": "Remove",
+    "ua": "Прибрати"
+  },
+  "main_mii_photo_auto": {
+    "en": "Many",
+    "ua": "Багато"
+  },
+  "main_mii_photo_for_1": {
+    "en": "Use recommended poses\nand positions. (Current\npositions will be reset.)",
+    "ua": "Узяти рекомендовані пози\nй розміщення. (Поточне\nрозміщення буде скинуто.)"
+  },
+  "main_mii_photo_for_yes": {
+    "en": "Change to recommended",
+    "ua": "Узяти рекомендовані"
+  },
+  "main_mii_photo_for_no": {
+    "en": "Don't change",
+    "ua": "Не міняти"
+  },
+  "main_chara_photo_": {
+    "en": "",
+    "ua": ""
+  },
+  "main_chara_photo_expl_1_ar": {
+    "en": "You can use character\ncards here, too.",
+    "ua": "Тут можна брати й\nкартки з героями."
+  },
+  "main_chara_photo_expl_2_ar": {
+    "en": "Try putting down\na character card!",
+    "ua": "Спробуйте покласти\nкартку з героєм!"
+  },
+  "main_chara_photo_expl_3_ar": {
+    "en": "Be sure not to let AR Cards\noverlap each other.",
+    "ua": "Пильнуйте, щоб картки AR\nне перекривали одна одну."
+  },
+  "main_chara_photo_select_ar": {
+    "en": " Select character",
+    "ua": " Вибрати героя"
+  },
+  "main_chara_photo_move_ar": {
+    "en": "Move",
+    "ua": "Рухати"
+  },
+  "main_chara_photo_size_ar": {
+    "en": "Change size",
+    "ua": "Змінити розмір"
+  },
+  "main_chara_photo_dir_ar": {
+    "en": "Face the\ncamera",
+    "ua": "Дивитися\nв камеру"
+  },
+  "main_chara_photo_reset_ar": {
+    "en": "Reset\nposition",
+    "ua": "Скинути\nрозміщення"
+  },
+  "main_chara_photo_dir_on": {
+    "en": "Face camera: On",
+    "ua": "Погляд у камеру:\nувімк."
+  },
+  "main_chara_photo_dir_off": {
+    "en": "Face camera: Off",
+    "ua": "Погляд у камеру:\nвимк."
+  },
+  "main_chara_photo_select": {
+    "en": " Change character",
+    "ua": " Змінити героя"
+  },
+  "main_chara_photo_size": {
+    "en": "Size",
+    "ua": "Розмір"
+  },
+  "main_chara_photo_reset_1": {
+    "en": "Reset the characters'\nposes, size and position?",
+    "ua": "Скинути пози, розмір\nі розміщення героїв?"
+  },
+  "main_chara_photp_reset_yes": {
+    "en": "Reset",
+    "ua": "Скинути"
+  },
+  "main_chara_photo_reset_no": {
+    "en": "Cancel",
+    "ua": "Скасувати"
+  },
+  "main_shoot2_": {
+    "en": "",
+    "ua": ""
+  },
+  "main_shoot2_start_1": {
+    "en": "Hole in the middle!",
+    "ua": "Дірка посередині!"
+  },
+  "main_shoot2_start_2": {
+    "en": "Peek in and fire!",
+    "ua": "Зазирніть і бийте!"
+  },
+  "main_shoot2_start_3": {
+    "en": "Hit the button!",
+    "ua": "Влучте в кнопку!"
+  },
+  "main_shoot2_start_4": {
+    "en": "Flying targets!",
+    "ua": "Летючі мішені!"
+  },
+  "main_shoot2_start_5": {
+    "en": "Rolling targets!",
+    "ua": "Котючі мішені!"
+  },
+  "main_shoot2_start_6": {
+    "en": "Defeat them all!",
+    "ua": "Здолайте їх усіх!"
+  },
+  "main_shoot2_start_7": {
+    "en": "Hidden targets...",
+    "ua": "Приховані мішені..."
+  },
+  "main_moko_": {
+    "en": "",
+    "ua": ""
+  },
+  "main_moko_start": {
+    "en": "Take out the stylus and\ntry drawing something!",
+    "ua": "Дістаньте стилус\nі спробуйте щось\nнамалювати!"
+  },
+  "main_moko_pen": {
+    "en": "Select a pen thickness.",
+    "ua": "Виберіть товщину пера."
+  },
+  "main_moko_deko": {
+    "en": "Select a 3D tool type.",
+    "ua": "Виберіть тип 3D-інструмента."
+  },
+  "main_moko_del": {
+    "en": "Clear all 3D tool art?",
+    "ua": "Стерти всі 3D-малюнки?"
+  },
+  "main_moko_yes_bt": {
+    "en": "Yes",
+    "ua": "Так"
+  },
+  "main_moko_no_bt": {
+    "en": "No",
+    "ua": "Ні"
+  },
+  "main_moko_end": {
+    "en": "Quit 3D Tools?",
+    "ua": "Вийти з «3D-інструментів»?"
+  },
+  "main_moko_a": {
+    "en": "Press  to fire!",
+    "ua": " — вогонь!"
+  },
+  "main_earth_": {
+    "en": "",
+    "ua": ""
+  },
+  "main_earth_hint": {
+    "en": "Try holding the AR Card!",
+    "ua": "Спробуйте взяти картку AR!"
+  },
+  "main_earth_hint_1": {
+    "en": "Might make a cool photo!",
+    "ua": "Може вийти класне фото!"
+  },
+  "main_earth_hint_2": {
+    "en": "Look after our planet.",
+    "ua": "Бережіть нашу планету."
+  },
+  "main_earth_hint_3": {
+    "en": "{t:1.1:}",
+    "ua": ""
+  },
+  "main_clock": {
+    "en": "",
+    "ua": ""
+  },
+  "main_clock_hint_1": {
+    "en": "Control time",
+    "ua": "Керуйте часом"
+  },
+  "help_": {
+    "en": "",
+    "ua": ""
+  },
+  "help_a_theme": {
+    "en": "AR Card can't be read",
+    "ua": "Картка AR не читається"
+  },
+  "help_1_1": {
+    "en": "Is the AR Card {t:0.3:0000}bent{t:0.3:ffff}?\n (Make sure you never\n  bend or fold it!)",
+    "ua": "Чи не {t:0.3:0000}зігнута{t:0.3:ffff} картка?\n (Ніколи не гніть\n  і не складайте!)"
+  },
+  "help_1_2": {
+    "en": "Are the cameras {t:0.3:0000}clean{t:0.3:ffff}?",
+    "ua": "Чи {t:0.3:0000}чисті{t:0.3:ffff} камери?"
+  },
+  "help_2_1": {
+    "en": "Is the AR Card {t:0.3:0000}visible{t:0.3:ffff}?\n (Avoid even the\n  slightest overlap.)",
+    "ua": "Чи {t:0.3:0000}видно{t:0.3:ffff} картку AR?\n (Уникайте навіть\nнайменшого перекриття.)"
+  },
+  "help_2_2": {
+    "en": "Do you have the right\n{t:0.3:0000}distance {t:0.3:ffff}and {t:0.3:0000}angle{t:0.3:ffff}?",
+    "ua": "Чи правильні\n{t:0.3:0000}відстань{t:0.3:ffff} і {t:0.3:0000}кут{t:0.3:ffff}?"
+  },
+  "help_3_1": {
+    "en": "Use in a {t:0.3:0000}well-lit area{t:0.3:ffff}.\n (But avoid reflections!)\n\nPut it on a {t:0.3:0000}flat surface{t:0.3:ffff}.",
+    "ua": "Грайте при доброму\nсвітлі.\n (Без відблисків!)\n\nКладіть на {t:0.3:0000}рівну{t:0.3:ffff}\nповерхню."
+  },
+  "help_b_theme": {
+    "en": "AR Card Photo Tips",
+    "ua": "Фото з карткою AR"
+  },
+  "help_b_1_1": {
+    "en": "When holding an AR Card,",
+    "ua": "Коли тримаєте картку AR,"
+  },
+  "help_b_2_1": {
+    "en": "when including someone,",
+    "ua": "коли фотографуєте когось,"
+  },
+  "help_b_3_1": {
+    "en": "or when using props...",
+    "ua": "чи коли берете реквізит..."
+  },
+  "help_b_4_1": {
+    "en": "...don't cover the white border!",
+    "ua": "...не затуляйте білу рамку!"
+  },
+  "help_c_theme": {
+    "en": "What's an AR Card?",
+    "ua": "Що таке картка AR?"
+  },
+  "help_c_1_1": {
+    "en": "The {t:0.3:0000}six AR Cards {t:0.3:ffff}above are\nincluded with the system.",
+    "ua": "{t:0.3:0000}Шість карток AR {t:0.3:ffff}угорі\nє в комплекті з консоллю."
+  },
+  "help_c_2_1": {
+    "en": "To start playing, aim the\ncamera at the {t:0.3:0000}? Card only{t:0.3:ffff}!",
+    "ua": "Щоб почати, наведіть камеру\n{t:0.3:0000}лише на картку «?»{t:0.3:ffff}!"
+  },
+  "help_c_3_1": {
+    "en": "The {t:0.3:0000}character cards {t:0.3:ffff}are\nused in Star Pics.",
+    "ua": "{t:0.3:0000}Картки з героями {t:0.3:ffff}потрібні\nдля «Фото з героями»."
+  },
+  "help_d_theme": {
+    "en": "Caution",
+    "ua": "Обережно"
+  },
+  "help_d_2_1": {
+    "en": "Make sure to take breaks so\nyour eyes don't get tired!",
+    "ua": "Обов'язково робіть перерви,\nщоб очі не втомлювалися!"
+  },
+  "marker_error_": {
+    "en": "",
+    "ua": ""
+  },
+  "marker_error_far": {
+    "en": "Move a bit closer.",
+    "ua": "Підійдіть трохи ближче."
+  },
+  "marker_error_near": {
+    "en": "Move a bit farther away.",
+    "ua": "Відійдіть трохи далі."
+  },
+  "marker_error_lost_card": {
+    "en": "Can't find the AR Card!",
+    "ua": "Картки AR не видно!"
+  },
+  "marker_error_look_card": {
+    "en": "Look at the ? Card.",
+    "ua": "Дивіться на картку «?»."
+  },
+  "marker_error_look_card_2": {
+    "en": "Look at the AR Card.",
+    "ua": "Дивіться на картку AR."
+  },
+  "ready_look_card_D_2": {
+    "en": "Look at the AR Card.",
+    "ua": "Дивіться на картку AR."
+  },
+  "marker_error_help": {
+    "en": "Look at the Touch Screen.",
+    "ua": "Дивіться на сенсорний екран."
+  },
+  "error_": {
+    "en": "",
+    "ua": ""
+  },
+  "error_savedata": {
+    "en": "The AR Games save\ndata was corrupted\nand has been reset.",
+    "ua": "Збережені дані AR Games\nбуло пошкоджено\nй скинуто."
+  },
+  "error_savedata_mii": {
+    "en": "The Mii Maker save data was\ncorrupted and has been reset.",
+    "ua": "Дані Mii Maker було\nпошкоджено й скинуто."
+  },
+  "saveclear_": {
+    "en": "",
+    "ua": ""
+  },
+  "saveclear_1": {
+    "en": "Delete save data\nfor AR Games?",
+    "ua": "Видалити збережені\nдані AR Games?"
+  },
+  "saveclear_2": {
+    "en": "Save data cannot be\nrecovered once deleted.\nReally delete save data?",
+    "ua": "Видалені збережені дані\nне відновити. Справді\nвидалити їх?"
+  },
+  "saveclear_3": {
+    "en": "Deleted save data.",
+    "ua": "Збережені дані\nвидалено."
+  },
+  "add": {
+    "en": "",
+    "ua": ""
+  },
+  "main_photo_sd_err_6": {
+    "en": "",
+    "ua": ""
+  },
+  "main_fish_hint_3": {
+    "en": "Lift the system gently!",
+    "ua": "Обережно підніміть консоль!"
+  },
+  "main_fish_over": {
+    "en": "Pull up gently!",
+    "ua": "Тягніть обережно!"
+  },
+  "marker_error_dark": {
+    "en": "Try playing in a more well-lit area.",
+    "ua": "Спробуйте грати там, де світліше."
+  }
+}

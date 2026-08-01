@@ -238,6 +238,23 @@ HOOK_PATCHES: dict[str, dict] = {
             {"patch_at": 0x11298, "return_to": 0x1129C},
         ],
     },
+    # amiibo Settings (Cabinet), EUR, title version 1. Same shape as the Mii Selector and
+    # Notifications: one mount function on a 0x18 frame, `out` in r4, globals in r5, and the
+    # stub branches to its result check at 0x3D344 rather than the allocation after it.
+    #
+    # Stub over throwFatalError(): the .text padding is 968 bytes, more than the 0x114 Luma
+    # needs, so Luma takes the padding and leaves the function alone.
+    "000400300000B902": {
+        "title": "amiibo Settings (Cabinet) EUR",
+        "title_version": 1,
+        "code_sha256": "316c8a1cb37c2aab7813a5546f355ab0bdd3f635fe56b606abf91bb191a1d2d9",
+        "variant": "r4_frame18",
+        "stub_off": 0x122A8,     # throwFatalError(), which Luma leaves alone here
+        "stub_room": 284,        # bytes until the next function's `push`
+        "open_archive": 0x4F5EC,  # the title's own FSUSER_OpenArchive IPC wrapper
+        "mount_tail": 0x3D344,   # MountRomFs()'s result check, entered with r0 = result
+        "globals_off": 0x3D3B0,  # literal holding the nn::fs globals base (+0x10 = fs:USER session)
+    },
     # Software Keyboard (swkbd), EUR, title version 4. Same shape as Download Play.
     #
     # It has a third OpenFileDirectly call site at 0x6F7C0, but that one opens
