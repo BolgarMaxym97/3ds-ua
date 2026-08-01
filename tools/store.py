@@ -3,6 +3,7 @@
 Three layouts appear in 3DS system titles:
 
   plain        romfs/message*/<LANG>/<file>.msbt          HOME Menu, keyboard, Activity Log
+               (or any folder named by `message_dirs`      Game Notes uses romfs/lang/)
   container    romfs/<file>  -> LZ11 -> darc -> <dir>/<LANG>/<file>.msbt   System Settings
   per-language romfs/message/<LANG>.arc -> LZ11 -> darc -> <file>.msbt     Mii Maker
                romfs/msg/<LANG>.LZ -> LZ11 -> flat archive -> <file>.msbt  Camera, Sound
@@ -36,7 +37,7 @@ MSBT_MAGIC = b"MsgStdBn"
 def open_store(cfg: dict, romfs: Path) -> Store:
     container = cfg.get("container")
     if container is None:
-        return PlainStore(romfs)
+        return PlainStore(romfs, cfg.get("message_dirs"))
     if "{lang}" in container:
         return PerLanguageStore(romfs, container)
     return ContainerStore(romfs, container)
@@ -67,11 +68,15 @@ class Store:
 
 
 class PlainStore(Store):
-    """One MSBT per file on disk, grouped by language folder."""
+    """One MSBT per file on disk, grouped by language folder.
 
-    def __init__(self, romfs: Path) -> None:
+    The folders are usually named message*/ - Game Notes calls its one `lang/`, so a
+    title may name them explicitly instead.
+    """
+
+    def __init__(self, romfs: Path, message_dirs: list[str] | None = None) -> None:
         self.romfs = romfs
-        self.message_dirs = sorted(
+        self.message_dirs = message_dirs or sorted(
             p.name for p in romfs.iterdir() if p.is_dir() and p.name.startswith("message")
         )
 

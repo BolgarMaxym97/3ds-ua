@@ -197,6 +197,47 @@ HOOK_PATCHES: dict[str, dict] = {
         "mount_tail": 0xD36C,    # MountRomFs()'s result check, entered with r0 = result
         "globals_off": 0xD3D8,   # literal holding the nn::fs globals base (+0x10 = fs:USER session)
     },
+    # Notifications (newslist), EUR, title version 4.
+    #
+    # Byte-for-byte the Mii Selector's shape: one mount function on a 0x18 frame with `out`
+    # in r4 and the nn::fs globals in r5, so the same stub variant and the same choice of
+    # branch target - the result check at 0xD... here 0x5A500, not the allocation after it.
+    #
+    # Stub over throwFatalError(): the .text padding is 2300 bytes, more than the 0x114
+    # Luma needs, so Luma takes the padding and leaves the function alone.
+    "000400300000A002": {
+        "title": "Notifications (newslist) EUR",
+        "title_version": 4,
+        "code_sha256": "b3993f1e4fe5ed7e5760f0f4c3926c95b42ea8de53c25bb95864499342e5b228",
+        "variant": "r4_frame18",
+        "stub_off": 0x448F8,     # throwFatalError(), which Luma leaves alone here
+        "stub_room": 424,        # bytes until the next function's `push`
+        "open_archive": 0x5A5D8,  # the title's own FSUSER_OpenArchive IPC wrapper
+        "mount_tail": 0x5A500,   # MountRomFs()'s result check, entered with r0 = result
+        "globals_off": 0x5A56C,  # literal holding the nn::fs globals base (+0x10 = fs:USER session)
+    },
+    # Error applet (error), EUR, title version 7.
+    #
+    # This one has FSUSER_OpenArchive but no archive *object* anywhere: its mount path is a
+    # retry loop that hands the raw handle to fsRegisterArchive, so there is no tail that
+    # allocates the object Luma's payload expects. It goes the Download Play way instead -
+    # its two ARCHIVE_ROMFS opens (0xBEA8 feeds the archive registered as "rom:", 0x11298
+    # is the second reader) are pointed at an image on the SD card. Both sites lay the path
+    # out in the slots the redirect stub rewrites: type 2 at sp+0xC, pointer at sp+0x10,
+    # size 0xC at sp+0x14.
+    "000400300000C502": {
+        "title": "Error applet (error) EUR",
+        "title_version": 7,
+        "code_sha256": "940fad616707e1f1a943fe6a65dc9fa71fd193631d3f1db7d714b7f6dee26b46",
+        "kind": "romfs_from_sd",
+        "image_name": "error_romfs.bin",
+        "stub_off": 0x55B8C,        # .text page padding, 0x55B8C..0x56000
+        "stub_room": 1140,
+        "sites": [
+            {"patch_at": 0x0BEA8, "return_to": 0x0BEAC},
+            {"patch_at": 0x11298, "return_to": 0x1129C},
+        ],
+    },
     # Software Keyboard (swkbd), EUR, title version 4. Same shape as Download Play.
     #
     # It has a third OpenFileDirectly call site at 0x6F7C0, but that one opens

@@ -1,0 +1,230 @@
+{
+  "lau_dlg_quit1": {
+    "en": "Close the suspended software\nand launch this one?\n{t:1.0:5500}{t:0.3:3c3c3cff}(Any unsaved data will\nbe lost.){t:0.3:000000ff}{/t:1.0}",
+    "ua": "Закрити призупинену\nпрограму й запустити цю?\n{t:1.0:5500}{t:0.3:3c3c3cff}(Усі незбережені дані\nбуде втрачено.){t:0.3:000000ff}{/t:1.0}"
+  },
+  "lau_dlg_quit3": {
+    "en": "Close the suspended software\nand launch this one?\n{t:1.0:5500}{t:0.3:3c3c3cff}(Data will be saved.){t:0.3:000000ff}{/t:1.0}",
+    "ua": "Закрити призупинену\nпрограму й запустити цю?\n{t:1.0:5500}{t:0.3:3c3c3cff}(Дані буде збережено.){t:0.3:000000ff}{/t:1.0}"
+  },
+  "lau_dlg_quit5": {
+    "en": "Closing suspended software...",
+    "ua": "Призупинена програма\nзакривається…..."
+  },
+  "lau_dlg_quit8": {
+    "en": "Close the suspended software\nand launch this one?",
+    "ua": "Закрити призупинену\nпрограму й запустити цю??"
+  },
+  "lau_dlg_2b_canc0": {
+    "en": " Cancel",
+    "ua": " Скасувати"
+  },
+  "lau_dlg_2b_ok": {
+    "en": " OK",
+    "ua": " OK"
+  },
+  "lau_dlg_1b_ok": {
+    "en": " OK",
+    "ua": " OK"
+  },
+  "lau_dlg_launch": {
+    "en": "Launch this software?",
+    "ua": "Запустити цю програму?"
+  },
+  "lau_dlg_pare0": {
+    "en": "Would you like to launch this\nsoftware in 2D?\n{t:1.0:5500}{t:0.3:3c3c3cff}You must enter your PIN to\nlaunch it in 3D.{t:0.3:000000ff}{/t:1.0}",
+    "ua": "Запустити програму в\nрежимі 2D?\n{t:1.0:5500}{t:0.3:3c3c3cff}Щоб запустити програму\nв режимі 3D, потрібно\nввести PIN-код.{t:0.3:000000ff}{/t:1.0}"
+  },
+  "lau_dlg_pare1": {
+    "en": "This software is restricted by\nthe Parental Controls Software\nRating settings.{t:1.0:1400}\n                    {/t:1.0}\nWould you like to temporarily\nremove this restriction?",
+    "ua": "Цю програму обмежено\nбатьківським контролем за\nвіковим рейтингом.{t:1.0:1400}\n                    {/t:1.0}\nЗняти обмеження тимчасово?"
+  },
+  "lau_dlg_pare4": {
+    "en": "Failed to enter\nthe correct PIN.{t:1.0:1400}\n                    {/t:1.0}\nLaunching in 2D\ndisplay mode.",
+    "ua": "Введено неправильний\nPIN-код.{t:1.0:1400}\n                    {/t:1.0}\nПрограму буде запущено\nв режимі 2D."
+  },
+  "lau_dlg_pare5": {
+    "en": "Would you like to launch this\nsoftware in 2D?\n{t:1.0:5500}{t:0.3:3c3c3cff}You must enter your PIN again\nto launch it in 3D.{t:0.3:000000ff}{/t:1.0}",
+    "ua": "Запустити програму в\nрежимі 2D?\n{t:1.0:5500}{t:0.3:3c3c3cff}Щоб запустити програму\nв режимі 3D, потрібно\nввести PIN-код ще раз.{t:0.3:000000ff}{/t:1.0}"
+  },
+  "lau_dlg_2b_pare0": {
+    "en": " Remove",
+    "ua": " Зняти"
+  },
+  "lau_dlg_2b_pare1": {
+    "en": " {t:1.1:5000}Launch in 2D{/t:1.1}",
+    "ua": " Режим 2D"
+  },
+  "lau_dlg_2b_pare2": {
+    "en": " {t:1.1:5000}Launch in 3D{/t:1.1}",
+    "ua": " Режим 3D"
+  },
+  "lau_dlg_cup_error": {
+    "en": "The Game Card could\nnot be read.{t:1.0:1400}\n                    {/t:1.0}\nPlease remove and re-insert\nthe Game Card.",
+    "ua": "Не вдалося прочитати\nігрову картку.{t:1.0:1400}\n                    {/t:1.0}\nВийміть і вставте\nігрову картку знову."
+  },
+  "lau_dlg_no_sd": {
+    "en": "",
+    "ua": ""
+  },
+  "lau_dlg_ng_sd1": {
+    "en": "Could not access SD Card.",
+    "ua": "Не вдалося отримати доступ\nдо карти SD.."
+  },
+  "lau_dlg_cardupd0": {
+    "en": "",
+    "ua": ""
+  },
+  "lau_dlg_cardupd1": {
+    "en": "",
+    "ua": ""
+  },
+  "lau_dlg_cardupd2": {
+    "en": "",
+    "ua": ""
+  },
+  "lau_dlg_cardupd3": {
+    "en": "",
+    "ua": ""
+  },
+  "lau_dlg_cardupd4": {
+    "en": "",
+    "ua": ""
+  },
+  "lau_dlg_cardupd5": {
+    "en": "",
+    "ua": ""
+  },
+  "lau_dlg_cardupd6": {
+    "en": "",
+    "ua": ""
+  },
+  "lau_dlg_1b_cance": {
+    "en": "",
+    "ua": ""
+  },
+  "new_title_new": {
+    "en": "Notifications",
+    "ua": "Повідомлення"
+  },
+  "new_title_menu": {
+    "en": "HOME Menu",
+    "ua": "Меню HOME"
+  },
+  "new_news_u": {
+    "en": "Unread Notifications",
+    "ua": "Непрочитані листи"
+  },
+  "new_news_u0": {
+    "en": "Unread: %d",
+    "ua": "Нових: %d"
+  },
+  "new_news_u1": {
+    "en": "SpotPass\nNotifications",
+    "ua": "Повідомлення\nSpotPass"
+  },
+  "new_ce_u0": {
+    "en": "Unread: %d",
+    "ua": "Нових: %d"
+  },
+  "new_ce_u1": {
+    "en": "StreetPass\nNotifications",
+    "ua": "Повідомлення\nStreetPass"
+  },
+  "new_back": {
+    "en": " Close",
+    "ua": " Закрити"
+  },
+  "new_close_big": {
+    "en": "Close",
+    "ua": "Закрити"
+  },
+  "new_close": {
+    "en": "Close",
+    "ua": "Закрити"
+  },
+  "new_delete": {
+    "en": "Delete",
+    "ua": "Стерти"
+  },
+  "new_datetime": {
+    "en": "%d/%M %I:%m",
+    "ua": "%d.%M %I:%m"
+  },
+  "new_dlg_delete": {
+    "en": "Would you like to delete data\nreceived via StreetPass?",
+    "ua": "Видалити дані, отримані\nчерез StreetPass?"
+  },
+  "new_dlg_2b_delet": {
+    "en": " Delete",
+    "ua": " Стерти"
+  },
+  "new_dlg_2b_canc1": {
+    "en": " Cancel",
+    "ua": " Скасувати"
+  },
+  "new_no_contents": {
+    "en": "",
+    "ua": ""
+  },
+  "new_optout_one": {
+    "en": "Opt out of notifications for\nthis software",
+    "ua": "Не отримувати\nповідомлення цієї програми"
+  },
+  "new_optout_all": {
+    "en": "",
+    "ua": ""
+  },
+  "new_dlg_opto_one": {
+    "en": "You have opted not to receive\nany notifications for this\nsoftware. {t:1.0:5500}{t:0.3:3c3c3cff}(To opt back in,\nchange the settings within the\nsoftware.){t:0.3:000000ff}{/t:1.0}\nIs this OK?",
+    "ua": "Ви відмовилися отримувати\nповідомлення від цієї\nпрограми. {t:1.0:5500}{t:0.3:3c3c3cff}(Щоб отримувати їх\nзнову, змініть параметри\nв самій програмі.){t:0.3:000000ff}{/t:1.0}\nПродовжити?"
+  },
+  "new_dlg_optoall0": {
+    "en": "",
+    "ua": ""
+  },
+  "new_dlg_optoall1": {
+    "en": "",
+    "ua": ""
+  },
+  "new_dlg_2b_canc0": {
+    "en": " Cancel",
+    "ua": " Скасувати"
+  },
+  "new_dlg_2b_ok": {
+    "en": " OK",
+    "ua": " OK"
+  },
+  "new_start": {
+    "en": "Launch software",
+    "ua": "Відкрити програму"
+  },
+  "new_ban_encount": {
+    "en": "Deactivate StreetPass for this title",
+    "ua": "Вимкнути StreetPass\nдля цієї програми"
+  },
+  "new_dlg_ban_ce": {
+    "en": "To deactivate StreetPass,\nyou must modify the settings\nfor StreetPass Management\nin the System Settings.{t:1.0:1400}\n                    {/t:1.0}\nWould you like to do so now?",
+    "ua": "Щоб вимкнути StreetPass,\nзмініть параметри в розділі\n«Керування StreetPass»\nу налаштуваннях системи.{t:1.0:1400}\n                    {/t:1.0}\nЗробити це зараз?"
+  },
+  "new_spider": {
+    "en": "Launch internet browser",
+    "ua": "Запустити інтернет-браузер"
+  },
+  "new_dlg_spider": {
+    "en": "Launch the internet browser?",
+    "ua": "Відкрити інтернет-браузер?"
+  },
+  "new_dlg_no_spider": {
+    "en": "The internet browser will\nbecome available once\nyou update your system\nvia the internet. For details,\nvisit support.nintendo.com.",
+    "ua": "Інтернет-браузер стане\nдоступним, коли ви\nоновите систему через\nІнтернет. Докладніше —\nна support.nintendo.com."
+  },
+  "new_dlg_no_spider1": {
+    "en": "You cannot launch the\ninternet browser at the\nsame time as the currently\nsuspended software.",
+    "ua": "Не можна запустити\nінтернет-браузер водночас\nіз програмою, яку зараз\nпризупинено."
+  },
+  "new_dlg_no_spider2": {
+    "en": "The internet browser cannot\nbe launched at this time.\n\nPress  to return\nto the HOME Menu.",
+    "ua": "Зараз інтернет-браузер\nзапустити не можна.\n\nНатисніть , щоб\nповернутися в меню HOME."
+  }
+}

@@ -153,6 +153,32 @@ TITLES = {
         "container": "message/{lang}.arc",
         "hook_patch": True,
     },
+    # Notifications: message/ plus the same message_hud/ file the HOME Menu and the Friend
+    # List carry - byte-identical, so the translation carries straight over.
+    "notifications": {
+        "tids": ["000400300000A002"],  # newslist applet, EUR
+        "source_tid": "000400300000A002",
+        "lang": "EU_Russian",
+        "ref_lang": "EU_English",
+        "hook_patch": True,
+    },
+    # `message_dirs`: this title keeps its MSBT under romfs/lang/<LANG>/, not message*/.
+    "game_notes": {
+        "tids": ["0004003000009C02"],  # Cherry applet, EUR
+        "source_tid": "0004003000009C02",
+        "lang": "EU_Russian",
+        "ref_lang": "EU_English",
+        "message_dirs": ["lang"],
+    },
+    # No archive object anywhere in this title, so a mount stub has nothing to jump into:
+    # it ships a whole RomFS image read off the SD card, like download_play.
+    "error_applet": {
+        "tids": ["000400300000C502"],  # error applet, EUR
+        "source_tid": "000400300000C502",
+        "lang": "EU_Russian",
+        "ref_lang": "EU_English",
+        "hook_patch": True,
+    },
     # No fsMountArchive and no FSUSER_OpenArchive at all, so LayeredFS is out: this title
     # ships a whole RomFS image read off the SD card, like download_play and keyboard.
     "health_safety": {

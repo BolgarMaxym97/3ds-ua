@@ -1477,7 +1477,7 @@
   },
   "lau_press_pow5": {
     "en": "Close the system to enter Sleep Mode.\nThe HOME Menu will appear when\nyou resume use.",
-    "ua": "{t:1.1:5000}Щоб перейти в режим сну, закрийте систему.\nКоли ви знову її відкриєте, з'явиться меню HOME.{/t:1.1}"
+    "ua": "{t:1.1:5000}Щоб перейти в режим сну, закрийте систему.\nКоли ви знову її відкриєте, з'явиться меню HOME.\nОновлення українізатора та більше: @side_quest_ua{/t:1.1}"
   },
   "lau_press_pow5_flw": {
     "en": "Move the sleep switch to the right to\nenter Sleep Mode. The HOME Menu\nwill appear when you resume use.",

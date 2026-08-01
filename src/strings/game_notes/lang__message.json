@@ -1,0 +1,246 @@
+{
+  "0000Initialization": {
+    "en": "Preparing...\nPlease wait.",
+    "ua": "Підготовка...\nЗачекайте."
+  },
+  "0100Exitbtn": {
+    "en": " Close",
+    "ua": " Закрити"
+  },
+  "0200DescriptionPhotoSave": {
+    "en": "Export",
+    "ua": "Зберегти"
+  },
+  "0200DescriptionAllClear": {
+    "en": "Clear",
+    "ua": "Стерти"
+  },
+  "0201Dlog_AllClear": {
+    "en": "Clear this note?",
+    "ua": "Стерти цей запис?"
+  },
+  "0201Dlog_Okbtn": {
+    "en": " Clear",
+    "ua": " Стерти"
+  },
+  "0201Dlog_Ngbtn": {
+    "en": " Cancel",
+    "ua": " Скасувати"
+  },
+  "0202Dlog_PhotoSave": {
+    "en": "",
+    "ua": ""
+  },
+  "0202Dlog_Okbtn": {
+    "en": "",
+    "ua": ""
+  },
+  "0202Dlog_Ngbtn": {
+    "en": "",
+    "ua": ""
+  },
+  "0202Dlog_PhotoSaveRun": {
+    "en": "Saving...",
+    "ua": "Збереження..."
+  },
+  "0202Dlog_PhotoSaveCompletion": {
+    "en": "This note has been\nsaved to the SD Card.",
+    "ua": "Цей запис збережено\nна карту SD."
+  },
+  "0202Dlog_PhotoSaveCompletionbtn": {
+    "en": " OK",
+    "ua": " OK"
+  },
+  "0202Dlog_PhotoSaveCompletionbtn_00": {
+    "en": " Back",
+    "ua": " Назад"
+  },
+  "0202Dlog_PhotoSaveNAND_err1": {
+    "en": "Unable to save. There are\ntoo many photos already\nsaved to the SD Card.",
+    "ua": "Не вдалося зберегти.\nНа карті SD уже забагато\nзбережених фото."
+  },
+  "0202Dlog_PhotoSaveNAND_err2": {
+    "en": "To save this note as a\nphoto, please organise the\nNintendo 3DS Camera\nphotos on the SD Card to\nmake space.",
+    "ua": "Щоб зберегти цей запис\nяк фото, упорядкуйте фото\nNintendo 3DS Камери\nна карті SD і звільніть\nмісце."
+  },
+  "0202Dlog_PhotoSaveNextbtn": {
+    "en": " Next",
+    "ua": " Далі"
+  },
+  "0202Dlog_PhotoSaveMakeTable": {
+    "en": "",
+    "ua": ""
+  },
+  "0202Dlog_PhotoSaveTable_err1": {
+    "en": "",
+    "ua": ""
+  },
+  "0202Dlog_PhotoSaveTable_err2": {
+    "en": "",
+    "ua": ""
+  },
+  "0202Dlog_PhotoSaveTable_err3": {
+    "en": "",
+    "ua": ""
+  },
+  "0202Dlog_PhotoSaveSDSwitch": {
+    "en": "Cannot write to the SD Card.\nPlease turn off the power,\nmove the SD Card's\nwrite-protection switch\nto the off position, then\nreinsert the SD Card.",
+    "ua": "Не вдається записати на\nкарту SD.\nВимкніть консоль, зніміть\nз карти SD захист від\nзапису, потім вставте\nкарту SD знову."
+  },
+  "0202Dlog_PhotoSaveNoSD": {
+    "en": "There is no SD Card inserted.\nPlease turn off the power\nand insert an SD Card into\nthe SD Card slot.",
+    "ua": "Карту SD не вставлено.\nВимкніть консоль і вставте\nкарту SD у роз'єм."
+  },
+  "0202Dlog_PhotoSaveSDFull": {
+    "en": "Unable to save.\nThere is not enough\nspace on the SD Card.",
+    "ua": "Не вдалося зберегти.\nНа карті SD\nбракує місця."
+  },
+  "0202Dlog_PhotoSaveFailure": {
+    "en": "Unable to save.",
+    "ua": "Не вдалося зберегти."
+  },
+  "0202Dlog_PhotoSaveFailure02": {
+    "en": "Could not access SD Card.",
+    "ua": "Немає доступу до карти SD."
+  },
+  "0202Dlog_PhotoSaveFailure03": {
+    "en": "",
+    "ua": ""
+  },
+  "1000Help_WelcomeTitle": {
+    "en": "",
+    "ua": ""
+  },
+  "1000Help_WelcomeP1": {
+    "en": "Use Game Notes to take\nnotes while playing games\nor using other applications.",
+    "ua": "Ігрові записи потрібні, щоб\nробити нотатки під час гри\nчи роботи з програмами."
+  },
+  "1001Help_WelcomeP2": {
+    "en": "",
+    "ua": ""
+  },
+  "1002Help_WelcomeP3": {
+    "en": "",
+    "ua": ""
+  },
+  "1003Help_WriteingTitle": {
+    "en": "",
+    "ua": ""
+  },
+  "1003Help_WriteingP1": {
+    "en": "",
+    "ua": ""
+  },
+  "1004Help_WriteingP2": {
+    "en": "",
+    "ua": ""
+  },
+  "9800Dlog_ErrDestructionData1": {
+    "en": "Some notes were\ncorrupted. They will\nnow be erased.",
+    "ua": "Деякі записи\nпошкоджено. Зараз\nїх буде стерто."
+  },
+  "9800Dlog_Errbtn": {
+    "en": " OK",
+    "ua": " OK"
+  },
+  "9800Dlog_ErrDestructionData2": {
+    "en": "Erasing corrupted notes...",
+    "ua": "Стирання пошкоджених\nзаписів..."
+  },
+  "9800Dlog_ErrDestructionData3": {
+    "en": "Erased 1\ncorrupted note.",
+    "ua": "Стерто 1\nпошкоджений запис."
+  },
+  "9800Dlog_ErrDestructionData4": {
+    "en": "Erased %d\ncorrupted notes.",
+    "ua": "Стерто пошкоджених\nзаписів: %d."
+  },
+  "9801Dlog_ErrWait": {
+    "en": "Please wait...",
+    "ua": "Зачекайте..."
+  },
+  "9801Dlog_ErrSaveFailure1": {
+    "en": "Unable to save the note.",
+    "ua": "Не вдалося зберегти\nзапис."
+  },
+  "9801Dlog_ErrSaveFailure2": {
+    "en": "Unable to save the note.\nThe corrupted note\nhas been erased.",
+    "ua": "Не вдалося зберегти\nзапис. Пошкоджений\nзапис стерто."
+  },
+  "9800Dlog_ErrSettingData1": {
+    "en": "",
+    "ua": ""
+  },
+  "9900Help_Nextbtn": {
+    "en": "",
+    "ua": ""
+  },
+  "9900Help_Donebtn": {
+    "en": " OK",
+    "ua": " OK"
+  },
+  "9900Dlog_Exit": {
+    "en": "",
+    "ua": ""
+  },
+  "9900Dlog_Exit_Okbtn": {
+    "en": "",
+    "ua": ""
+  },
+  "9900Dlog_Exit_Ngbtn": {
+    "en": "",
+    "ua": ""
+  },
+  "9900Dlog_DataSave": {
+    "en": "",
+    "ua": ""
+  },
+  "9900Backbtn": {
+    "en": "",
+    "ua": ""
+  },
+  "9900NoBreakGameMesList": {
+    "en": "There is no suspended software.",
+    "ua": "Немає призупинених програм."
+  },
+  "9900NoBreakGameMes": {
+    "en": "{t:1.0:} can only be used when\nsuspended software is present.",
+    "ua": "{t:1.0:} працює лише тоді,\nколи є призупинена\nпрограма."
+  },
+  "lau_title_menu": {
+    "en": "HOME Menu",
+    "ua": "Меню HOME"
+  },
+  "lau_title_memo": {
+    "en": "Game Notes",
+    "ua": "Ігрові записи"
+  },
+  "FatalErr_00": {
+    "en": "",
+    "ua": ""
+  },
+  "FatalErr_01": {
+    "en": "",
+    "ua": ""
+  },
+  "FatalErr_02": {
+    "en": "",
+    "ua": ""
+  },
+  "FatalErr_03": {
+    "en": "",
+    "ua": ""
+  },
+  "FatalErr_04": {
+    "en": "",
+    "ua": ""
+  },
+  "FatalErr_05": {
+    "en": "",
+    "ua": ""
+  },
+  "FatalErr_06": {
+    "en": "",
+    "ua": ""
+  }
+}

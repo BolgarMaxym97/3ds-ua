@@ -1,0 +1,58 @@
+{
+  "ok": {
+    "en": "OK",
+    "ua": "OK"
+  },
+  "error_title0": {
+    "en": "",
+    "ua": ""
+  },
+  "error_title1": {
+    "en": "An error has occurred.",
+    "ua": "Сталася помилка."
+  },
+  "error_code": {
+    "en": "Error Code: %03d-%04d",
+    "ua": "Код помилки: %03d-%04d"
+  },
+  "fatal0": {
+    "en": "An error has occurred.\nHold down the POWER Button to\nturn off the power, then turn it on\nand try again.\n\nIf the problem persists, please\ncontact your local customer support\ncentre. For contact details, check\nthe Operations Manual or visit \nsupport.nintendo.com.",
+    "ua": "Сталася помилка.\nНатисніть і утримуйте кнопку POWER,\nщоб вимкнути консоль, тоді увімкніть\nїї й спробуйте ще раз.\n\nЯкщо проблема не зникає,\nзверніться\nдо місцевої служби підтримки.\nКонтакти\nшукайте в посібнику з користування\nабо на сайті \nsupport.nintendo.com."
+  },
+  "fatal1": {
+    "en": "The System Memory has been\ndamaged.\n\nFor help, please contact your local \ncustomer support centre. For contact\ndetails, check the Operations Manual\nor visit support.nintendo.com.",
+    "ua": "Пам'ять системи пошкоджено.\n\nПо допомогу зверніться до місцевої\n\nслужби підтримки. Контакти\nшукайте\nв посібнику з користування\nабо на сайті support.nintendo.com."
+  },
+  "card_error0": {
+    "en": "The Game Card was removed.\n\nPress the HOME Button to\nreturn to the HOME Menu.",
+    "ua": "Ігрову картку вийнято.\n\nНатисніть кнопку HOME,\nщоб повернутися в меню HOME."
+  },
+  "card_error1": {
+    "en": "The SD Card was removed.\n\nPress the HOME Button to\nreturn to the HOME Menu.",
+    "ua": "Карту SD вийнято.\n\nНатисніть кнопку HOME,\nщоб повернутися в меню HOME."
+  },
+  "card_error2": {
+    "en": "",
+    "ua": ""
+  },
+  "dlg_error": {
+    "en": "Would you like to check \nyour internet connection \nsettings now?",
+    "ua": "Перевірити налаштування \nз'єднання з Інтернетом \nзараз?"
+  },
+  "dlg_btn_after": {
+    "en": "Later",
+    "ua": "Пізніше"
+  },
+  "dlg_btn_now": {
+    "en": "Check",
+    "ua": "Перевірити"
+  },
+  "short_error": {
+    "en": "",
+    "ua": ""
+  },
+  "long_error": {
+    "en": "",
+    "ua": ""
+  }
+}
