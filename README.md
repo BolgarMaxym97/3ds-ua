@@ -67,11 +67,13 @@ SD:/luma/titles/0004001000022000/romfs/message_EU_LZ.bin
 | `0004001000022200` | Журнал дій | `romfs/` + `code.ips` + `exheader.bin` — LayeredFS з правкою коду |
 | `0004003000009B02` | Посібник | `romfs/` + `code.ips` + `exheader.bin` — LayeredFS з правкою коду |
 | `0004003000009F02` | Список друзів | `romfs/` + `code.ips` + `exheader.bin` — LayeredFS з правкою коду |
+| `0004001000022800` | Площа StreetPass Mii | `romfs/` + `exheader.bin` — LayeredFS з правкою прав |
+| `000400300000D102` | Вибір Mii | `romfs/` + `code.ips` + `exheader.bin` — LayeredFS з правкою коду |
 | `0004001000022100` | Гра по завантаженню | `code.ips` + `exheader.bin` + `dlplay_romfs.bin` — без LayeredFS, повний образ romfs з SD |
 | `0004001000022300` | Здоров'я і безпека | `code.ips` + `exheader.bin` + `safe_romfs.bin` — без LayeredFS, повний образ romfs з SD |
 | `000400300000D002` | Екранна клавіатура | `code.ips` + `exheader.bin` + `swkbd_romfs.bin` — без LayeredFS, повний образ romfs з SD |
 
-Чому в останніх шести є `code.ips` і `exheader.bin` — див. [Що входить у реліз](#що-входить-у-реліз). Коротко: перші п'ять титулів Luma хукає сама, решті бракує прав і коду, які додає збірка.
+Чому в останніх восьми є `exheader.bin`, а в більшості з них ще й `code.ips`, — див. [Що входить у реліз](#що-входить-у-реліз). Коротко: перші п'ять титулів Luma хукає сама, решті бракує прав або коду, які додає збірка.
 
 Папки `romfs` немає навмисно у Гри по завантаженню, клавіатури й Здоров'я і безпеки: сама її наявність зупиняє ці титули на екрані помилки.
 
@@ -103,7 +105,7 @@ NAND не змінювався, тому видалення нічого не л
 | На клавіатурі `i` замість `і`, `ε` замість `є` | Так і має бути — та сама заміна, що й у решті інтерфейсу: цих літер у системному шрифті немає. Клавіші стоять на українських позиціях (`ы`→`і`, `ъ`→`ї`, `э`→`є`), а на місці `ё` тепер апостроф. |
 | `An exception occurred`, `Current process: loader` | Luma не змогла застосувати LayeredFS до титулу, який ви запускали, і зупинила консоль. Перейменуйте `SD:/luma/titles/<TID>/romfs` цього титулу на `_romfs` і перезавантажте — титул запуститься без перекладу. Напишіть в Issues з фото екрана помилки. |
 | HOME Menu не запускається | Видаліть `SD:/luma/titles/0004003000009802`. Напишіть в Issues, вказавши модель, регіон і версію системи. |
-| Титул крешить після встановлення | Переклади Журналу дій, Посібника, Списку друзів, Гри по завантаженню, клавіатури й Здоров'я і безпеки містять правку коду титулу — під версії **2**, **5**, **6**, **3**, **4** і **3** відповідно (EUR). Ці білди стоять на всіх сучасних прошивках. Якщо у вас старіший, видаліть папку того титулу: `0004001000022200`, `0004003000009B02`, `0004003000009F02`, `0004001000022100`, `000400300000D002`, `0004001000022300`. Решта перекладу працюватиме як була. |
+| Титул крешить після встановлення | Переклади Журналу дій, Посібника, Списку друзів, Вибору Mii, Гри по завантаженню, клавіатури й Здоров'я і безпеки містять правку коду титулу — під версії **2**, **5**, **6**, **3**, **3**, **4** і **3** відповідно (EUR). Ці білди стоять на всіх сучасних прошивках. Якщо у вас старіший, видаліть папку того титулу: `0004001000022200`, `0004003000009B02`, `0004003000009F02`, `000400300000D102`, `0004001000022100`, `000400300000D002`, `0004001000022300`. Решта перекладу працюватиме як була. |
 | Гра по завантаженню, клавіатура або Здоров'я і безпека не завантажується | Видаліть `SD:/luma/titles/0004001000022100`, `SD:/luma/titles/000400300000D002` чи `SD:/luma/titles/0004001000022300` **цілком**. Вони читають свій romfs з SD-карти, тому `code.ips` без відповідного `*_romfs.bin` їх ламає — видаляти частинами не можна. |
 | Порожні квадрати замість літер | Повідомте в Issues із фото — це баг, такого бути не повинно. |
 
@@ -148,10 +150,12 @@ NAND не змінювався, тому видалення нічого не л
 | Mii Maker | ✅ перекладено |
 | Nintendo 3DS Камера | ✅ перекладено |
 | Nintendo 3DS Звук | ✅ перекладено |
+| Площа StreetPass Mii | ✅ перекладено, з правкою прав титулу |
 | Здоров'я і безпека | ✅ перекладено, повною підміною romfs — потрібна версія титулу 3 (див. нижче) |
 | Журнал дій | ✅ перекладено, з правкою коду титулу — потрібна версія титулу 2 (див. нижче) |
 | Посібник | ✅ перекладено, з правкою коду титулу — потрібна версія титулу 5 (див. нижче) |
 | Список друзів | ✅ перекладено, з правкою коду титулу — потрібна версія титулу 6 (див. нижче) |
+| Вибір Mii | ✅ перекладено, з правкою коду титулу — потрібна версія титулу 3 (див. нижче) |
 | Гра по завантаженню | ✅ перекладено, повною підміною romfs — потрібна версія титулу 3 (див. нижче) |
 | Екранна клавіатура | ✅ перекладено, повною підміною romfs — потрібна версія титулу 4 (див. нижче) |
 
@@ -171,7 +175,7 @@ error:
 
 Luma шукає в коді титулу п'ять функцій FS. Чотири з них є всюди; бракує щоразу однієї — **`fsMountArchive`**, тієї, що монтує архів за його ID. Без неї Luma не має чим підключити папку на SD як архів `lf:`.
 
-Річ не в тому, що функція скомпільована незвично і сигнатура не збіглася. Її **немає взагалі**: в екранній клавіатурі і в грі по завантаженню в усьому коді нема жодного IPC-виклику `FSUSER_OpenArchive`, а в Журналі дій, Посібнику й Списку друзів єдиний такий виклик захований усередині монтування extdata чи системного сейву з бінарним шляхом.
+Річ не в тому, що функція скомпільована незвично і сигнатура не збіглася. Її **немає взагалі**: в екранній клавіатурі і в грі по завантаженню в усьому коді нема жодного IPC-виклику `FSUSER_OpenArchive`, а в Журналі дій, Посібнику, Списку друзів і Виборі Mii єдиний такий виклик захований усередині монтування extdata чи системного сейву з бінарним шляхом.
 
 Корінь — в `exheader`, поле `accessInfo` (зсув 0x248):
 
@@ -181,25 +185,29 @@ Luma шукає в коді титулу п'ять функцій FS. Чотир
 | Mii Maker | `0x0000000000000081` | є |
 | Nintendo 3DS Камера | `0x00000000000000a1` | є |
 | Nintendo 3DS Звук | `0x00000000000000a1` | є |
+| Площа StreetPass Mii | `0x0000000000000000` | **нема** |
 | Екранна клавіатура | `0x0000000000000001` | **нема** |
 | Журнал дій | `0x0000000000000001` | **нема** |
 | Гра по завантаженню | `0x0000000000000001` | **нема** |
 | Посібник | `0x0000000000000001` | **нема** |
 | Список друзів | `0x0000000000000001` | **нема** |
+| Вибір Mii | `0x0000000000000001` | **нема** |
 | Здоров'я і безпека | `0x0000000000000001` | **нема** |
 
 Титули без права `DirectSdmc` не мають доступу до SD-карти, тому Nintendo просто не залінкувала в них код монтування SD. Працюють ті титули, у яких це право є.
+
+Площа StreetPass Mii — виняток з обох боків: права `DirectSdmc` в неї немає, але `fsMountArchive` є, бо вона монтує власні extdata. Luma знаходить усі п'ять функцій і патчить титул сама, тож `code.ips` не потрібен — але payload, який вона вписує, все одно читає файли з SD. Тому в цієї папки є `exheader.bin` з піднятим бітом `DirectSdmc` і більше нічого: жодних зсувів, отже нічого, що прив'язане до конкретного білда, крім звірки версії титулу.
 
 Наскільки глибоко зайшла та економія, видно з набору IPC-команд, які титул узагалі вміє видавати:
 
 | Титул | `OpenArchive` | `OpenFile` | `CloseArchive` | `OpenFileDirectly` |
 |---|---|---|---|---|
-| Журнал дій, Посібник, Список друзів | ✅ | ✅ | ✅ | ✅ |
+| Журнал дій, Посібник, Список друзів, Вибір Mii | ✅ | ✅ | ✅ | ✅ |
 | Гра по завантаженню, клавіатура, Здоров'я і безпека | ❌ | ❌ | ❌ | ✅ |
 
 Двом останнім доступне рівно одне: відкрити файл напряму і читати його. Тому для них потрібен інший підхід.
 
-#### Як полагоджено Журнал дій, Посібник і Список друзів
+#### Як полагоджено Журнал дій, Посібник, Список друзів і Вибір Mii
 
 Обидві частини можна дати з SD-карти, бо завантажувач Luma виконує їх у такому порядку:
 
@@ -225,8 +233,9 @@ patchLayeredFs(...);                     // тут шукаються ті п'я
 | Журнал дій | поверх `throwFatalError()` — тієї функції, яку Luma сама затирає, коли їй бракує місця під власний payload. Тут місця вистачає, тож Luma її не чіпає. |
 | Посібник | у 88 байт padding'а в кінці `.text`. Тут `throwFatalError()` зайнята: padding менший за payload Luma (0x114), тож Luma забирає її собі. |
 | Список друзів | поверх `throwFatalError()`, як у Журналу: padding `.text` тут 2724 байти, Luma кладе payload туди й `throwFatalError()` не чіпає. |
+| Вибір Mii | поверх `throwFatalError()`: padding `.text` тут 3048 байт, Luma знову бере padding. |
 
-Стаб буває у двох варіантах — за тим, який регістр і який кадр стека чекає хвіст монтування, у який він стрибає: `r4`/кадр `0x28` (Журнал дій) або `sl`/кадр `0x14` з результатом у `r8` (Посібник, Список друзів). У Списку друзів усі три його функції монтування будують той самий об'єкт архіву (vtable `0x201E4C`), тож хвіст будь-якої з них підійшов би — узято `MountSystemSaveData()`.
+Стаб буває у трьох варіантах — за тим, який регістр і який кадр стека чекає хвіст монтування, у який він стрибає: `r4`/кадр `0x28` (Журнал дій), `sl`/кадр `0x14` з результатом у `r8` (Посібник, Список друзів) або `r4`/кадр `0x18` (Вибір Mii). У Вибору Mii функція монтування одна-єдина, і стаб стрибає не в неї саму, а на перевірку результату за `0xD36C` — тому невдалий `OpenArchive` повертає помилку, а не об'єкт архіву з мотлохом замість handle. У Списку друзів усі три його функції монтування будують той самий об'єкт архіву (vtable `0x201E4C`), тож хвіст будь-якої з них підійшов би — узято `MountSystemSaveData()`.
 
 У Посібника є додаткова тонкість. `findLayeredFsSymbols()` сканує лише до `text.size`, а це 0xADFA8 — padding лишається за межею. Тому в його `exheader.bin` `text.size` округлено до 0xAE000. Це безкоштовно: завантажувач усюди рахує сторінки як `(size + 4095) >> 12`, і 0xADFA8, і 0xAE000 дають ті самі 174 сторінки — адреси секцій, розкладка `.code` і мапінг лишаються байт-у-байт тими самими.
 
@@ -239,6 +248,8 @@ patchLayeredFs(...);                     // тут шукаються ті п'я
 | **Посібник (`ebird`)** | **5** |
 | **Клавіатура (`swkbd`)** | **4** |
 | **Гра по завантаженню (`dlplay`)** | **3** |
+| **Вибір Mii (`appletEd`)** | **3** |
+| **Площа StreetPass Mii (`MEET`)** | **5** |
 | **Здоров'я і безпека (`safe`)** | **3** |
 | Mii Maker (`EDIT`) | 2 |
 | **Журнал дій (`PLOG`)** | **2** |
@@ -421,11 +432,13 @@ A folder name is the Title ID (TID) of the system title it overrides. Luma reads
 | `0004001000022200` | Activity Log | `romfs/` + `code.ips` + `exheader.bin` — LayeredFS plus a code patch |
 | `0004003000009B02` | Instruction Manual | `romfs/` + `code.ips` + `exheader.bin` — LayeredFS plus a code patch |
 | `0004003000009F02` | Friend List | `romfs/` + `code.ips` + `exheader.bin` — LayeredFS plus a code patch |
+| `0004001000022800` | StreetPass Mii Plaza | `romfs/` + `exheader.bin` — LayeredFS plus a rights patch |
+| `000400300000D102` | Mii Selector | `romfs/` + `code.ips` + `exheader.bin` — LayeredFS plus a code patch |
 | `0004001000022100` | Download Play | `code.ips` + `exheader.bin` + `dlplay_romfs.bin` — no LayeredFS, whole RomFS image off the SD card |
 | `0004001000022300` | Health & Safety Information | `code.ips` + `exheader.bin` + `safe_romfs.bin` — no LayeredFS, whole RomFS image off the SD card |
 | `000400300000D002` | Software Keyboard | `code.ips` + `exheader.bin` + `swkbd_romfs.bin` — no LayeredFS, whole RomFS image off the SD card |
 
-Why the last six carry `code.ips` and `exheader.bin`: see [What is in the release](#what-is-in-the-release). In short, Luma hooks the first five by itself; the rest lack the rights and the code the build supplies.
+Why the last eight carry `exheader.bin`, and most of them `code.ips` too: see [What is in the release](#what-is-in-the-release). In short, Luma hooks the first five by itself; the rest lack the rights or the code the build supplies.
 
 Download Play, the Software Keyboard and Health & Safety Information ship no `romfs` folder on purpose — its mere presence halts those titles on an exception screen.
 
@@ -457,7 +470,7 @@ NAND was never touched, so removal cannot break anything.
 | The keyboard shows `i` for `і`, `ε` for `є` | By design — the same substitution as everywhere else in the mod: those letters are not in the system font. The keys sit in their Ukrainian positions (`ы`→`і`, `ъ`→`ї`, `э`→`є`), and `ё` now carries the apostrophe. |
 | `An exception occurred`, `Current process: loader` | Luma could not apply LayeredFS to the title you launched and halted the console. Rename that title's `SD:/luma/titles/<TID>/romfs` to `_romfs` and reboot — the title then starts untranslated. Please open an Issue with a photo of the error screen. |
 | HOME Menu won't boot | Delete `SD:/luma/titles/0004003000009802` and open an Issue with your model, region and system version. |
-| A title crashes after installing | The Activity Log, Instruction Manual, Friend List, Download Play, Software Keyboard and Health & Safety translations carry a code patch — for versions **2**, **5**, **6**, **3**, **4** and **3** respectively (EUR). Those builds are on every modern firmware. If yours is older, delete that title's folder: `0004001000022200`, `0004003000009B02`, `0004003000009F02`, `0004001000022100`, `000400300000D002`, `0004001000022300`. The rest of the mod keeps working. |
+| A title crashes after installing | The Activity Log, Instruction Manual, Friend List, Mii Selector, Download Play, Software Keyboard and Health & Safety translations carry a code patch — for versions **2**, **5**, **6**, **3**, **3**, **4** and **3** respectively (EUR). Those builds are on every modern firmware. If yours is older, delete that title's folder: `0004001000022200`, `0004003000009B02`, `0004003000009F02`, `000400300000D102`, `0004001000022100`, `000400300000D002`, `0004001000022300`. The rest of the mod keeps working. |
 | Download Play or the Software Keyboard will not load | Delete `SD:/luma/titles/0004001000022100` or `SD:/luma/titles/000400300000D002` **as a whole**. They read their RomFS off the SD card, so `code.ips` without the matching `*_romfs.bin` breaks them — they cannot be removed piecemeal. |
 | Empty boxes instead of letters | Please report with a photo — that's a bug. |
 
@@ -500,10 +513,12 @@ same entry that switches the keyboard to Cyrillic.
 | Mii Maker | ✅ translated |
 | Nintendo 3DS Camera | ✅ translated |
 | Nintendo 3DS Sound | ✅ translated |
+| StreetPass Mii Plaza | ✅ translated, with a rights patch |
 | Health & Safety Information | ✅ translated, by replacing the whole RomFS — needs title version 3 (see below) |
 | Activity Log | ✅ translated, with a code patch — needs title version 2 (see below) |
 | Instruction Manual | ✅ translated, with a code patch — needs title version 5 (see below) |
 | Friend List | ✅ translated, with a code patch — needs title version 6 (see below) |
+| Mii Selector | ✅ translated, with a code patch — needs title version 3 (see below) |
 | Download Play | ✅ translated, by replacing its whole RomFS — needs title version 3 (see below) |
 | Software Keyboard | ✅ translated, by replacing its whole RomFS — needs title version 4 (see below) |
 
@@ -533,8 +548,8 @@ attach the SD folder as the `lf:` archive.
 It is not that the function was compiled in an unusual way and the signature missed it. The
 function is **not there at all**: the Software Keyboard and Download Play contain no
 `FSUSER_OpenArchive` IPC call anywhere in their code, and in the Activity Log, the
-Instruction Manual and the Friend List the only one is buried inside an extdata or
-system-savedata mount that takes a binary path.
+Instruction Manual, the Friend List and the Mii Selector the only one is buried inside an
+extdata, system-savedata or RomFS mount that takes a binary path.
 
 The root cause is in the exheader, `accessInfo` at offset 0x248:
 
@@ -544,27 +559,36 @@ The root cause is in the exheader, `accessInfo` at offset 0x248:
 | Mii Maker | `0x0000000000000081` | yes |
 | Nintendo 3DS Camera | `0x00000000000000a1` | yes |
 | Nintendo 3DS Sound | `0x00000000000000a1` | yes |
+| StreetPass Mii Plaza | `0x0000000000000000` | **no** |
 | Software Keyboard | `0x0000000000000001` | **no** |
 | Activity Log | `0x0000000000000001` | **no** |
 | Download Play | `0x0000000000000001` | **no** |
 | Instruction Manual | `0x0000000000000001` | **no** |
 | Friend List | `0x0000000000000001` | **no** |
+| Mii Selector | `0x0000000000000001` | **no** |
 | Health & Safety Information | `0x0000000000000001` | **no** |
 
 Titles without `DirectSdmc` have no access to the SD card, so Nintendo never linked any
 SD-mounting code into them. The titles that work are the ones that hold that right.
 
+StreetPass Mii Plaza is the exception on both counts: it has no `DirectSdmc` right, yet it
+does have `fsMountArchive`, because it mounts its own extdata. Luma finds all five symbols
+and patches the title unaided, so no `code.ips` is needed — but the payload it writes still
+reads its files off the SD card. So that folder carries an `exheader.bin` with the
+`DirectSdmc` bit set and nothing else: no offsets, and therefore nothing tied to a
+particular build beyond the title-version check.
+
 How far that pruning went shows in the set of IPC commands each title can even issue:
 
 | Title | `OpenArchive` | `OpenFile` | `CloseArchive` | `OpenFileDirectly` |
 |---|---|---|---|---|
-| Activity Log, Instruction Manual, Friend List | ✅ | ✅ | ✅ | ✅ |
+| Activity Log, Instruction Manual, Friend List, Mii Selector | ✅ | ✅ | ✅ | ✅ |
 | Download Play, Software Keyboard, Health & Safety | ❌ | ❌ | ❌ | ✅ |
 
 The last two can do exactly one thing: open a file directly and read it. They need a
 different approach.
 
-#### How the Activity Log, the Instruction Manual and the Friend List were fixed
+#### How the Activity Log, the Instruction Manual, the Friend List and the Mii Selector were fixed
 
 Both halves can be supplied from the SD card, because Luma's loader runs them in this order:
 
@@ -593,12 +617,16 @@ Where the stub goes differs per title:
 | Activity Log | over `throwFatalError()` — the function Luma itself overwrites when it is short of room for its own payload. Here there is room, so Luma leaves it alone. |
 | Instruction Manual | in the 88 bytes of padding at the end of `.text`. Here `throwFatalError()` is taken: the padding is smaller than Luma's payload (0x114), so Luma claims the function for itself. |
 | Friend List | over `throwFatalError()`, as in the Activity Log: the `.text` padding is 2724 bytes, so Luma puts its payload there and leaves the function alone. |
+| Mii Selector | over `throwFatalError()`: the `.text` padding is 3048 bytes, so Luma takes the padding again. |
 
-The stub comes in two variants, chosen by the register and stack frame the mount tail it
-jumps into expects: `r4` on a 0x28 frame (Activity Log), or `sl` on a 0x14 frame with the
-result in `r8` (Instruction Manual, Friend List). All three of the Friend List's mount
-functions build the same archive object (vtable `0x201E4C`), so any of their tails would
-have done — `MountSystemSaveData()` is the one used.
+The stub comes in three variants, chosen by the register and stack frame the mount tail it
+jumps into expects: `r4` on a 0x28 frame (Activity Log), `sl` on a 0x14 frame with the
+result in `r8` (Instruction Manual, Friend List), or `r4` on a 0x18 frame (Mii Selector).
+All three of the Friend List's mount functions build the same archive object (vtable
+`0x201E4C`), so any of their tails would have done — `MountSystemSaveData()` is the one
+used. The Mii Selector has exactly one mount function, and the stub branches not into it
+but to its result check at `0xD36C`, so a failed `OpenArchive` returns an error instead of
+an archive object wrapped around a garbage handle.
 
 The Instruction Manual needs one more thing. `findLayeredFsSymbols()` only scans up to
 `text.size`, which is 0xADFA8 and stops short of the padding, so its shipped `exheader.bin`
@@ -618,6 +646,8 @@ updated the title:
 | **Software Keyboard (`swkbd`)** | **4** |
 | **Download Play (`dlplay`)** | **3** |
 | **Health & Safety (`safe`)** | **3** |
+| **Mii Selector (`appletEd`)** | **3** |
+| **StreetPass Mii Plaza (`MEET`)** | **5** |
 | Mii Maker (`EDIT`) | 2 |
 | **Activity Log (`PLOG`)** | **2** |
 

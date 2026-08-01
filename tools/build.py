@@ -133,6 +133,26 @@ TITLES = {
         "ref_lang": "EU_English",
         "container": "msg/{lang}.LZ",
     },
+    # Plain layout like the HOME Menu: one uncompressed MEET.msbt per language folder.
+    # `hook_patch` here ships only an exheader: Luma hooks the title unaided, but its
+    # accessInfo has no DirectSdmc and Luma's payload still reads off the SD card.
+    "mii_plaza": {
+        "tids": ["0004001000022800"],
+        "source_tid": "0004001000022800",
+        "lang": "EU_Russian",
+        "ref_lang": "EU_English",
+        "hook_patch": True,
+    },
+    # Same per-language darc as Mii Maker, but the applet has no fsMountArchive of its
+    # own, so it needs the tools/luma_hook.py treatment before it can ship.
+    "mii_selector": {
+        "tids": ["000400300000D102"],  # appletEd, EUR
+        "source_tid": "000400300000D102",
+        "lang": "EU_Russian",
+        "ref_lang": "EU_English",
+        "container": "message/{lang}.arc",
+        "hook_patch": True,
+    },
     # No fsMountArchive and no FSUSER_OpenArchive at all, so LayeredFS is out: this title
     # ships a whole RomFS image read off the SD card, like download_play and keyboard.
     "health_safety": {

@@ -160,6 +160,43 @@ HOOK_PATCHES: dict[str, dict] = {
             {"patch_at": 0x11234, "return_to": 0x11238},
         ],
     },
+    # StreetPass Mii Plaza (MEET), EUR, title version 5. Verified working on hardware.
+    #
+    # The odd one out: Luma finds every symbol it needs in this title's own code, so no
+    # stub is required - but its accessInfo is 0x0, without `DirectSdmc`, and the payload
+    # Luma writes still has to open ARCHIVE_SDMC to read the replacement files. Every other
+    # title Luma hooks unaided (HOME Menu, Mii Maker, Camera, Sound) already has that bit.
+    # So this entry ships an exheader and nothing else - no code.ips, no offsets, and
+    # therefore nothing tied to the build beyond the version check.
+    "0004001000022800": {
+        "title": "StreetPass Mii Plaza (MEET) EUR",
+        "title_version": 5,
+        "code_sha256": "2834311201bb3756ae8646a5046300b75d00a0f4b73509a79cd30ea5788f314f",
+        "kind": "exheader_only",
+    },
+    # Mii Selector (appletEd), EUR, title version 3. Verified working on hardware.
+    #
+    # Same shape as the Friend List - no fsMountArchive, no DirectSdmc - but this title has
+    # exactly one mount function, MountRomFs() at 0xD334, and it uses a 0x18 frame with
+    # `out` in r4 and the nn::fs globals in r5. Hence the third stub variant. The branch
+    # target is the result check at 0xD36C rather than the allocation that follows it, so a
+    # failed OpenArchive still returns an error instead of building an archive object
+    # around a garbage handle.
+    #
+    # The stub goes over throwFatalError(): the .text padding is 3048 bytes, far more than
+    # the 0x114 Luma needs for its own payload, so Luma takes the padding and leaves this
+    # function alone - no text.size override needed.
+    "000400300000D102": {
+        "title": "Mii Selector (appletEd) EUR",
+        "title_version": 3,
+        "code_sha256": "da40253f0e76ea840534816335176fece1e468419a5973221ea8e3c7ecfd259b",
+        "variant": "r4_frame18",
+        "stub_off": 0x94B4,      # throwFatalError(), which Luma leaves alone here
+        "stub_room": 288,        # bytes until the next function's `push`
+        "open_archive": 0x14030,  # the title's own FSUSER_OpenArchive IPC wrapper
+        "mount_tail": 0xD36C,    # MountRomFs()'s result check, entered with r0 = result
+        "globals_off": 0xD3D8,   # literal holding the nn::fs globals base (+0x10 = fs:USER session)
+    },
     # Software Keyboard (swkbd), EUR, title version 4. Same shape as Download Play.
     #
     # It has a third OpenFileDirectly call site at 0x6F7C0, but that one opens
@@ -290,8 +327,43 @@ def _stub_sl_frame14(patch: dict, globals_value: int) -> list[int]:
     ]
 
 
+def _stub_r4_frame18(patch: dict, globals_value: int) -> list[int]:
+    """Tail takes the result in r0, `out` in r4, globals in r5, on a 0x18 frame.
+
+    The 0x18 frame leaves exactly one free word (sp+0x14) once the two stack arguments,
+    the archive handle and the session handle have their slots, so the empty path goes
+    there.
+    """
+    s = patch["stub_off"]
+    return [
+        0xE92D41F0,              # +00  push {r4,r5,r6,r7,r8,lr}  <- findFunctionStart lands here
+        _b(s + 0x04, s + 0x18),  # +04  b    +0x18                 skips the signature block
+        *SIGNATURE,              # +08  never executed
+        0xE1A00000,              # +14  nop
+        0xE24DD018,              # +18  sub  sp, sp, #0x18         the frame mount_tail expects
+        0xE1A04000,              # +1C  mov  r4, r0                r4 = out
+        0xE1A02001,              # +20  mov  r2, r1                r2 = archiveId (9 = SDMC)
+        0xE3A03001,              # +24  mov  r3, #1                r3 = PATH_EMPTY
+        0xE3A00000,              # +28  mov  r0, #0
+        0xE58D0014,              # +2C  str  r0, [sp, #0x14]       empty path = one NUL byte
+        0xE28D0014,              # +30  add  r0, sp, #0x14
+        0xE58D0000,              # +34  str  r0, [sp]              stack arg: path pointer
+        0xE3A00001,              # +38  mov  r0, #1
+        0xE58D0004,              # +3C  str  r0, [sp, #4]          stack arg: path size
+        0xE59F5014,              # +40  ldr  r5, [pc, #0x14]       r5 = nn::fs globals
+        0xE5950010,              # +44  ldr  r0, [r5, #0x10]       fs:USER session handle
+        0xE58D0010,              # +48  str  r0, [sp, #0x10]
+        0xE28D1008,              # +4C  add  r1, sp, #8            out: archive handle
+        0xE28D0010,              # +50  add  r0, sp, #0x10
+        _bl(s + 0x54, patch["open_archive"]),  # +54  bl FSUSER_OpenArchive wrapper
+        _b(s + 0x58, patch["mount_tail"]),     # +58  b  shared mount tail
+        globals_value,           # +5C  literal
+    ]
+
+
 STUB_VARIANTS = {
     "r4_frame28": _stub_r4_frame28,
+    "r4_frame18": _stub_r4_frame18,
     "sl_frame14": _stub_sl_frame14,
 }
 
@@ -516,6 +588,15 @@ def generate(tid: str, code_path: Path, exheader_path: Path) -> tuple[dict[str, 
 
     if patch.get("kind") == "romfs_from_sd":
         return _generate_romfs_from_sd(tid, patch, code, exheader, version)
+
+    if patch.get("kind") == "exheader_only":
+        access = struct.unpack_from("<Q", exheader, ACCESS_INFO_OFFSET)[0]
+        return {"exheader.bin": patch_exheader(tid, exheader)}, [
+            f"{patch['title']} title version {version}",
+            f"exheader.bin: DirectSdmc granted (accessInfo 0x{access:016x} -> "
+            f"0x{access | (1 << DIRECT_SDMC_BIT):016x}); Luma finds every symbol it needs "
+            f"in the title's own code, so no code.ips",
+        ]
 
     globals_value = struct.unpack_from("<I", code, patch["globals_off"])[0]
     stub = build_stub(patch, globals_value)

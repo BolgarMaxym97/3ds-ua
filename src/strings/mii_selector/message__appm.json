@@ -1,0 +1,114 @@
+{
+  "appm_text_00": {
+    "en": "Select a Mii.",
+    "ua": "Виберіть Mii."
+  },
+  "select_baloon_box": {
+    "en": "",
+    "ua": ""
+  },
+  "appm_text_02": {
+    "en": "Guests",
+    "ua": "Гості"
+  },
+  "appm_text_03": {
+    "en": "There are no selectable\nMii characters.",
+    "ua": "Немає Mii, яких можна\nвибрати."
+  },
+  "appm_text_04": {
+    "en": "The Mii Maker save data\nwas corrupted and has\nbeen reset. There are no\nselectable Mii characters.",
+    "ua": "Дані Mii Maker було\nпошкоджено й скинуто.\nНемає Mii, яких можна\nвибрати."
+  },
+  "appm_text_05": {
+    "en": "The Mii Maker save data was\ncorrupted and has been reset.",
+    "ua": "Дані Mii Maker було пошкоджено\nй скинуто."
+  },
+  "appm_text_06": {
+    "en": "Back",
+    "ua": "Назад"
+  },
+  "appm_text_07": {
+    "en": "OK",
+    "ua": "OK"
+  },
+  "appm_text_08": {
+    "en": "Back",
+    "ua": "Назад"
+  },
+  "appm_text_09": {
+    "en": "OK",
+    "ua": "OK"
+  },
+  "appm_btn_dec": {
+    "en": " Confirm",
+    "ua": " Готово"
+  },
+  "appm_btn_back": {
+    "en": " Cancel",
+    "ua": " Скасувати"
+  },
+  "appm_btn_dec_down": {
+    "en": " Confirm",
+    "ua": " Готово"
+  },
+  "appm_btn_back_down": {
+    "en": " Cancel",
+    "ua": " Скасувати"
+  },
+  "guest_A": {
+    "en": "Guest A",
+    "ua": "Гість A"
+  },
+  "guest_B": {
+    "en": "Guest B",
+    "ua": "Гість B"
+  },
+  "guest_C": {
+    "en": "Guest C",
+    "ua": "Гість C"
+  },
+  "guest_D": {
+    "en": "Guest D",
+    "ua": "Гість D"
+  },
+  "guest_E": {
+    "en": "Guest E",
+    "ua": "Гість E"
+  },
+  "guest_F": {
+    "en": "Guest F",
+    "ua": "Гість F"
+  },
+  "SpecialMii": {
+    "en": "You cannot select a Special Mii.",
+    "ua": "Особливого Mii\nвибрати не можна."
+  },
+  "NgNickname": {
+    "en": "This Mii cannot be registered\nas an amiibo owner because its\nnickname and/or creator name\nuses inappropriate language.\n\nPlease select another Mii.",
+    "ua": "Псевдонім або ім'я автора\nцього Mii містить недопустимі\nвирази, тому його не можна\nзареєструвати як власника\namiibo.\n\nВиберіть іншого Mii."
+  },
+  "JumpToMiiMakerSimple": {
+    "en": "Launch Mii Maker?",
+    "ua": "Запустити Mii Maker?"
+  },
+  "JumpToMiiMaker": {
+    "en": "Close the software now\nand launch Mii Maker?",
+    "ua": "Закрити програму й\nзапустити Mii Maker?"
+  },
+  "JumpToMiiMakerSave": {
+    "en": "Close the software now\nand launch Mii Maker?\n(Data will be saved.)",
+    "ua": "Закрити програму й\nзапустити Mii Maker?\n(Дані буде збережено.)"
+  },
+  "JumpToMiiMakerNoSave": {
+    "en": "Close the software now\nand launch Mii Maker?\n(Any unsaved data will be lost.)",
+    "ua": "Закрити програму й\nзапустити Mii Maker?\n(Незбережені дані\nбуде втрачено.)"
+  },
+  "Cancel": {
+    "en": " Cancel",
+    "ua": " Скасувати"
+  },
+  "CreateMii": {
+    "en": " Create new Mii in Mii Maker",
+    "ua": " Створити Mii у Mii Maker"
+  }
+}
