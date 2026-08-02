@@ -1,16 +1,44 @@
 # 3DS UA 🇺🇦
 
-Український інтерфейс для Nintendo 3DS (work in progress). Ставиться як мод на SD-карту через LayeredFS (Luma3DS) — **системні файли в NAND не змінюються**.
+**Український інтерфейс для Nintendo 3DS.** Мод займає місце російської мови: у списку мов з'являється «Українська», і система починає говорити українською. Російська з консолі зникає, **англійська та решта мов лишаються недоторканими**.
 
-Ukrainian system UI for Nintendo 3DS. Installs as an SD-card mod via Luma3DS LayeredFS — **nothing in NAND is modified**.
+Нічого в NAND не змінюється: усе ставиться на SD-карту через LayeredFS (Luma3DS) і так само знімається — видалили папки, і консоль повернулася в штатний стан.
+
+Перекладено **23 частини системи**: Меню HOME разом з назвами додатків, Налаштування системи, Mii Maker, Журнал дій, Посібник, Гра по завантаженню, екранна клавіатура з українською розкладкою, Список друзів, Камера, Звук, Здоров'я і безпека, Площа StreetPass Mii, Вибір Mii, Сповіщення, Ігрові записи, екран помилки, Інтернет-браузер, Nintendo eShop, Перенесення даних, Nintendo Zone, Face Raiders, AR Games і налаштування amiibo.
+
+Потрібні консоль **європейського (EUR) регіону** і встановлена **Luma3DS**. Готовий архів — у [Releases](../../releases), як ставити — [нижче](#встановлення).
+
+⚠️ Українських `і ї є ґ` у системному шрифті 3DS немає, тому мод показує візуально близькі `i ï ε г`. Чому інакше не вийде — [окремий розділ](#чому-i-замість-і).
+
+*Ukrainian system UI for Nintendo 3DS. Installs as an SD-card mod via Luma3DS LayeredFS — **nothing in NAND is modified**. [English instructions below](#in-english).*
 
 [Українською](#українською) · [In English](#in-english)
 
 ---
 
-## Українською
+## Як це виглядає
 
-Мод підміняє **російський** мовний слот українською: російська зникає з консолі, на її місці стає українська. **Англійська лишається недоторканою.**
+<table>
+<tr>
+<td><img src="assets/pictures/language-picker.png" width="250" alt="Налаштування системи: вибір мови, вибрано «Українська»"></td>
+<td><img src="assets/pictures/home-menu-activity-log.png" width="250" alt="Меню HOME: банер Журналу дій"></td>
+<td><img src="assets/pictures/home-menu-system-settings.png" width="250" alt="Меню HOME: назва додатка «Налаштування системи»"></td>
+</tr>
+<tr>
+<td><img src="assets/pictures/system-settings.png" width="250" alt="Головний екран Налаштувань системи"></td>
+<td><img src="assets/pictures/friend-list.png" width="250" alt="Список друзів"></td>
+<td><img src="assets/pictures/ar-games.png" width="250" alt="Меню HOME: банер AR Games"></td>
+</tr>
+<tr>
+<td><img src="assets/pictures/suspended-software.png" width="250" alt="Оверлей «Призупинена програма»"></td>
+<td><img src="assets/pictures/browser.png" width="250" alt="Інтернет-браузер"></td>
+<td><img src="assets/pictures/health-safety.png" width="250" alt="Здоров'я і безпека"></td>
+</tr>
+</table>
+
+---
+
+## Українською
 
 ### Що потрібно
 
@@ -531,7 +559,7 @@ python3 tools/fit.py home_menu lau_dlg_2b_delete "Видалити" "Стерт�
 
 ## In English
 
-The mod replaces the **Russian** language slot with Ukrainian: Russian disappears from the console and Ukrainian takes its place. **English is left untouched.**
+The mod replaces the **Russian** language slot with Ukrainian: Russian disappears from the console and Ukrainian takes its place. **English is left untouched.** Screenshots from a real console are [at the top of this page](#як-це-виглядає).
 
 ### Requirements
 
