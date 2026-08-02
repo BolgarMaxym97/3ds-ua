@@ -28,11 +28,22 @@ import cbmd  # noqa: E402
 import cgfx  # noqa: E402
 
 ROOT = Path(__file__).resolve().parent.parent
-TEXTURE = "COMMON1"
 
-# TID -> the banner we rebuild, and the slot we overwrite.
+# TID -> the banner we rebuild, the slot we overwrite, and the texture inside it that
+# carries the title. The two banners do not agree on the name or the size of that texture:
+# System Settings calls it COMMON1 and keeps it 512x64, the Activity Log calls it TEX1 and
+# sets its name in two lines on a 512x128 one.
 TITLES = {
-    "0004001000022000": {"title": "System Settings EUR", "slot": cbmd.EUR_RU},
+    "0004001000022000": {
+        "title": "System Settings EUR",
+        "slot": cbmd.EUR_RU,
+        "texture": "COMMON1",
+    },
+    "0004001000022200": {
+        "title": "Activity Log EUR",
+        "slot": cbmd.EUR_RU,
+        "texture": "TEX1",
+    },
 }
 
 
@@ -41,7 +52,7 @@ def source_banner(tid: str) -> Path:
 
 
 def asset(tid: str) -> Path:
-    return ROOT / "assets" / "banner" / f"{tid}_{TEXTURE}.la4"
+    return ROOT / "assets" / "banner" / f"{tid}_{TITLES[tid]['texture']}.la4"
 
 
 def output(tid: str) -> Path:
@@ -56,15 +67,15 @@ def build(tid: str) -> bytes:
     slot = spec["slot"]
 
     original = banner.cgfx(slot)
-    texture = cgfx.find(original, TEXTURE)
+    texture = cgfx.find(original, spec["texture"])
     pixels = asset(tid).read_bytes()
     if len(pixels) != texture.data_len:
         raise SystemExit(
-            f"{asset(tid).name}: {len(pixels)} bytes, but {TEXTURE} is "
+            f"{asset(tid).name}: {len(pixels)} bytes, but {spec['texture']} is "
             f"{texture.width}x{texture.height} = {texture.data_len}"
         )
 
-    banner.set_cgfx(slot, cgfx.replace(original, TEXTURE, pixels))
+    banner.set_cgfx(slot, cgfx.replace(original, spec["texture"], pixels))
 
     data = cbmd.build(banner)
     # HOME Menu refuses a CGFX of 0x80000 bytes or more (.text 0x14D0AC and 0x14D0E0).
@@ -76,16 +87,17 @@ def build(tid: str) -> bytes:
 
 
 def extract(tid: str) -> None:
+    texture_name = TITLES[tid]["texture"]
     banner = cbmd.parse(source_banner(tid).read_bytes())
     out = ROOT / "tmp" / "banner"
     out.mkdir(parents=True, exist_ok=True)
     for slot in banner.slots():
         raw = banner.cgfx(slot)
         try:
-            texture = cgfx.find(raw, TEXTURE)
+            texture = cgfx.find(raw, texture_name)
         except KeyError:
             continue
-        path = out / f"{tid}_slot{slot:02d}_{TEXTURE}.la4"
+        path = out / f"{tid}_slot{slot:02d}_{texture_name}.la4"
         path.write_bytes(cgfx.unswizzle(raw, texture))
         print(f"slot {slot:2d}: {texture.width}x{texture.height} -> {path}")
 

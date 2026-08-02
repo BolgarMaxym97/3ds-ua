@@ -404,11 +404,14 @@ def write_banner(tid: str) -> list[str]:
     hook = luma_hook.HOOK_PATCHES[tid.upper()].get("banner_hook")
     if not hook:
         return []
-    blob = banner_mod.build(f"{hook['title_id']:016X}")
-    dest = ROOT / "dist" / "luma" / "titles" / tid / hook["image_name"]
-    dest.parent.mkdir(parents=True, exist_ok=True)
-    dest.write_bytes(blob)
-    return [f"{dest.relative_to(ROOT)} ({len(blob)} bytes)"]
+    written = []
+    for title in hook["titles"]:
+        blob = banner_mod.build(f"{title['title_id']:016X}")
+        dest = ROOT / "dist" / "luma" / "titles" / tid / title["image_name"]
+        dest.parent.mkdir(parents=True, exist_ok=True)
+        dest.write_bytes(blob)
+        written.append(f"{dest.relative_to(ROOT)} ({len(blob)} bytes)")
+    return written
 
 
 def write_romfs_image(tid: str, romfs_dir: Path, overrides: dict[str, bytes]) -> list[str]:

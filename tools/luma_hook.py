@@ -239,8 +239,10 @@ HOOK_PATCHES: dict[str, dict] = {
             "original_word": 0xE59F30B4,
             "return_to": 0x61E68,
             "title_id_slot": 0x38,  # `strd r2, r3, [sp, #0x38]` at the top of the open
-            "title_id": 0x0004001000022000,
-            "image_name": "banner_22000.bin",
+            "titles": [
+                {"title_id": 0x0004001000022000, "image_name": "banner_22000.bin"},
+                {"title_id": 0x0004001000022200, "image_name": "banner_22200.bin"},
+            ],
         },
     },
     # StreetPass Mii Plaza (MEET), EUR, title version 5. Verified working on hardware.
@@ -652,73 +654,92 @@ def _pane_hook(patch: dict, table_va: int, scratch_va: int, base: int) -> tuple[
     return _assemble(blocks, base)
 
 
-def _banner_hook(patch: dict, path_va: int, path_len: int, base: int) -> tuple[list[int], dict[str, int]]:
-    """Point one title's banner read at the SD card, and leave every other title alone.
+def _banner_hook(patch: dict, entries: list[dict], base: int) -> tuple[list[int], dict[str, int]]:
+    """Point the banners we translate at the SD card, and leave every other title alone.
 
     HOME Menu builds the whole FSUSER_OpenFileDirectly frame for ExeFS:/banner itself:
     archive 0x2345678A with the title id as a binary archive path, and a binary file path
     naming the ExeFS section. The last thing it does before the call is load the archive id,
     and that instruction is what the hook replaces - by then the frame is complete and only
-    r0, r1 and r3 are still to be written, so r1 and r3 are free scratch here.
+    r0, r1 and r3 are still to be written, so r1, r3 and ip are free scratch here. r2 is not:
+    it is already the wrapper's third argument.
 
-    For the one title we translate, the frame is rewritten into an SD open: empty archive
-    path (what ARCHIVE_SDMC expects), ASCII file path, archive id 9. Every other title falls
-    through the `pass` block, which loads the archive id the replaced instruction would have
-    loaded, so the read behaves exactly as Nintendo wrote it.
+    The hook walks a table of {title id, path, length}, one entry per banner we ship. On a
+    match the frame is rewritten into an SD open: empty archive path (what ARCHIVE_SDMC
+    expects), ASCII file path, archive id 9. Everything else falls through to `pass`, which
+    loads the archive id the replaced instruction would have loaded, so those reads behave
+    exactly as Nintendo wrote them.
 
     The title id is read back out of the frame rather than kept in a register, because the
     open stores it there on entry (`strd r2, r3, [sp, #0x38]`) and never touches it again.
     """
     hook = patch["banner_hook"]
     slot = hook["title_id_slot"]
-    literals = {
-        "id_low": hook["title_id"] & 0xFFFFFFFF,
-        "id_high": hook["title_id"] >> 32,
-        "path": path_va,
-        "empty": path_va + path_len,   # the path's own NUL, reused as the empty archive path
-        "archive": ARCHIVE_SAVEDATA_AND_CONTENT,  # what the replaced instruction loaded
-    }
-    order = list(literals)
 
-    def ldr(register: int, name: str, cond: int = 0xE):
-        """`ldr rN, [pc, #..]` reaching one of the literals at the end of the blob."""
-        index = order.index(name)
-        return lambda at, labels: (
-            (cond << 28) | 0x059F0000 | (register << 12)
-            | (labels["banner_lits"] + index * 4 - at - 8)
-        )
+    def b(target: str):
+        return lambda at, labels: _b(at, labels[target])
+
+    def bc(cond: int, target: str):
+        return lambda at, labels: _bc(cond, at, labels[target])
+
+    table: list[int] = []
+    for entry in entries:
+        table += [
+            entry["title_id"] & 0xFFFFFFFF,
+            entry["title_id"] >> 32,
+            entry["path_va"],
+            entry["path_len"],
+        ]
+    table.append(0)  # a zero title id ends the walk
 
     blocks = {
         "banner_hook": [
-            0xE59D1000 | slot,                        # ldr   r1, [sp, #0x38]   title id low
-            ldr(3, "id_low"),                         # ldr   r3, [pc, #..]
-            0xE1510003,                               # cmp   r1, r3
-            0x059D1000 | (slot + 4),                  # ldreq r1, [sp, #0x3c]   title id high
-            ldr(3, "id_high", COND_EQ),               # ldreq r3, [pc, #..]
-            0x01510003,                               # cmpeq r1, r3
-            lambda at, labels: _bc(COND_NE, at, labels["banner_pass"]),
-            0xE3A01000 | PATH_EMPTY,                  # mov   r1, #1
-            0xE58D1000 | ARCHIVE_PATH_TYPE_SLOT,      # str   r1, [sp, #0x00]   archive path
-            ldr(1, "empty"),                          # ldr   r1, [pc, #..]
-            0xE58D1000 | ARCHIVE_PATH_PTR_SLOT,       # str   r1, [sp, #0x04]
-            0xE3A01001,                               # mov   r1, #1
-            0xE58D1000 | ARCHIVE_PATH_SIZE_SLOT,      # str   r1, [sp, #0x08]
-            0xE3A01000 | PATH_ASCII,                  # mov   r1, #3            file path
-            0xE58D1000 | FILE_PATH_TYPE_SLOT,         # str   r1, [sp, #0x0c]
-            ldr(1, "path"),                           # ldr   r1, [pc, #..]
+            lambda at, labels: 0xE59FC000 | (labels["banner_table"] - at - 8),  # ldr ip, table
+        ],
+        "banner_loop": [
+            0xE59C3000,                               # ldr   r3, [ip]        entry title id
+            0xE3530000,                               # cmp   r3, #0
+            bc(COND_EQ, "banner_pass"),               # beq   pass            end of table
+            0xE59D1000 | slot,                        # ldr   r1, [sp, #0x38]
+            0xE1530001,                               # cmp   r3, r1
+            0x059C3004,                               # ldreq r3, [ip, #4]    id high
+            0x059D1000 | (slot + 4),                  # ldreq r1, [sp, #0x3c]
+            0x01530001,                               # cmpeq r3, r1
+            bc(COND_EQ, "banner_match"),              # beq   match
+            0xE28CC010,                               # add   ip, ip, #16
+            b("banner_loop"),                         # b     loop
+        ],
+        "banner_match": [
+            0xE59C1008,                               # ldr   r1, [ip, #8]    the path
             0xE58D1000 | FILE_PATH_PTR_SLOT,          # str   r1, [sp, #0x10]
-            0xE3A01000 | (path_len + 1),              # mov   r1, #len          with the NUL
-            0xE58D1000 | FILE_PATH_SIZE_SLOT,         # str   r1, [sp, #0x14]
+            0xE59C300C,                               # ldr   r3, [ip, #12]   its length
+            0xE0811003,                               # add   r1, r1, r3      -> its NUL
+            0xE58D1000 | ARCHIVE_PATH_PTR_SLOT,       # str   r1, [sp, #0x04]
+            0xE2833001,                               # add   r3, r3, #1      with the NUL
+            0xE58D3000 | FILE_PATH_SIZE_SLOT,         # str   r3, [sp, #0x14]
+            0xE3A01000 | PATH_EMPTY,                  # mov   r1, #1
+            0xE58D1000 | ARCHIVE_PATH_TYPE_SLOT,      # str   r1, [sp, #0x00]
+            0xE58D1000 | ARCHIVE_PATH_SIZE_SLOT,      # str   r1, [sp, #0x08] size 1
+            0xE3A01000 | PATH_ASCII,                  # mov   r1, #3
+            0xE58D1000 | FILE_PATH_TYPE_SLOT,         # str   r1, [sp, #0x0c]
             0xE3A03000 | ARCHIVE_SDMC,                # mov   r3, #9
-            lambda at, labels: _b(at, labels["banner_back"]),
+            b("banner_back"),                         # b     back
         ],
         "banner_pass": [
-            ldr(3, "archive"),                        # ldr   r3, [pc, #..]     as Nintendo had it
+            lambda at, labels: 0xE59F3000 | (labels["banner_archive"] - at - 8),  # ldr r3, ..
         ],
         "banner_back": [
             lambda at, labels: _b(at, hook["return_to"]),
         ],
-        "banner_lits": [literals[name] for name in order],
+        "banner_archive": [
+            ARCHIVE_SAVEDATA_AND_CONTENT,             # what the replaced instruction loaded
+        ],
+        "banner_table": [
+            # A literal holding the entries' address. Labels are .text offsets; what the
+            # hook loads has to be the address the code runs at.
+            lambda at, labels: TEXT_VA + labels["banner_entries"],
+        ],
+        "banner_entries": table,
     }
     return _assemble(blocks, base)
 
@@ -1024,9 +1045,9 @@ def _branch_target(word: int, at: int) -> int | None:
     return at + 8 + offset * 4
 
 
-def banner_sd_path(patch: dict) -> str:
-    """Where the hook expects the replacement banner. Written by tools/package.py."""
-    return f"/luma/titles/0004003000009802/{patch['banner_hook']['image_name']}"
+def banner_sd_path(title: dict) -> str:
+    """Where the hook expects one replacement banner. Written by tools/build.py."""
+    return f"/luma/titles/0004003000009802/{title['image_name']}"
 
 
 def _verify_banner(
@@ -1034,14 +1055,13 @@ def _verify_banner(
     code: bytes,
     records: list[tuple[int, bytes]],
     labels: dict[str, int],
-    path_va: int,
-    sd_path: str,
+    entries: list[dict],
 ) -> None:
-    """Apply the records and walk the banner hook: in and out, both ways through it.
+    """Apply the records and walk the banner hook: in, through the table, and out.
 
-    The two things that would be silent on a console and fatal on the eye: a hook that
-    forgets to come back, and a pass-through that hands FS something other than the archive
-    id the replaced instruction was loading.
+    What would be silent here and fatal on a console: a hook that forgets to come back, a
+    pass-through that hands FS something other than the archive id the replaced instruction
+    was loading, or a table entry pointing at a path that is not where it says it is.
     """
     patched = bytearray(code)
     for offset, data in records:
@@ -1073,13 +1093,26 @@ def _verify_banner(
     if passthrough & 0xFFFFF000 != 0xE59F3000 or word(reached) != archive_id:
         raise RuntimeError("the banner pass-through does not restore the original archive id")
 
-    encoded = sd_path.encode("ascii") + b"\0"
-    if word(labels["banner_lits"] + 8) != path_va:
-        raise RuntimeError("the banner hook does not point at its path string")
-    if word(labels["banner_lits"] + 12) != path_va + len(sd_path):
-        raise RuntimeError("the empty archive path does not point at the path's NUL")
-    if len(encoded) > 0xFF:
-        raise RuntimeError(f"the path is {len(encoded)} bytes, too long for `mov r1, #len`")
+    # The table the hook walks: four words an entry, a zero title id to stop on, and each
+    # path where the entry claims and NUL-terminated where its length says.
+    table_at = word(labels["banner_table"])
+    for index, expected in enumerate(entries):
+        at = table_at - TEXT_VA + index * 16
+        title_id = word(at) | (word(at + 4) << 32)
+        path_va, path_len = word(at + 8), word(at + 12)
+        if title_id != expected["title_id"]:
+            raise RuntimeError(
+                f"table entry {index} is for {title_id:016X}, expected "
+                f"{expected['title_id']:016X}"
+            )
+        if path_va != expected["path_va"] or path_len != expected["path_len"]:
+            raise RuntimeError(f"table entry {index} does not point at its own path")
+        if path_len + 1 > 0xFF:
+            raise RuntimeError(f"{expected['path']!r} is too long for the frame's size slot")
+        if not any(expected["path"].encode("ascii") + b"\0" in data for _, data in records):
+            raise RuntimeError(f"{expected['path']!r} was never written into .rodata")
+    if word(table_at - TEXT_VA + len(entries) * 16) != 0:
+        raise RuntimeError("the banner table has no terminator")
 
 
 def _verify_redirect(
@@ -1276,21 +1309,32 @@ def _generate_smdh_names(
 
     # The banner hook, if this title has one, goes immediately below the name stub, and its
     # path string immediately past the name table. Same two-pass layout, same padding.
-    banner = banner_off = banner_path = None
+    banner = banner_off = None
+    banner_entries: list[dict] = []
+    banner_paths = bytearray()
     banner_labels: dict[str, int] = {}
     if patch.get("banner_hook"):
-        banner_path = banner_sd_path(patch)
-        path_off = table_off + len(table)
-        path_va = table_va + len(table)
-        encoded = banner_path.encode("ascii") + b"\0"
-        if len(table) + len(encoded) > ro_room:
-            raise RuntimeError(
-                f"table and banner path need {len(table) + len(encoded)} bytes, "
-                f".rodata padding has {ro_room}"
+        paths_off = table_off + len(table)
+        paths_va = table_va + len(table)
+        for title in patch["banner_hook"]["titles"]:
+            path = banner_sd_path(title)
+            banner_entries.append(
+                {
+                    "title_id": title["title_id"],
+                    "path": path,
+                    "path_va": paths_va + len(banner_paths),
+                    "path_len": len(path),
+                }
             )
-        sizing, _ = _banner_hook(patch, path_va, len(banner_path), 0)
+            banner_paths += path.encode("ascii") + b"\0"
+        if len(table) + len(banner_paths) > ro_room:
+            raise RuntimeError(
+                f"the name table and {len(banner_entries)} banner paths need "
+                f"{len(table) + len(banner_paths)} bytes, .rodata padding has {ro_room}"
+            )
+        sizing, _ = _banner_hook(patch, banner_entries, 0)
         banner_off = patch["stub_off"] - len(sizing) * 4
-        banner_words, banner_labels = _banner_hook(patch, path_va, len(banner_path), banner_off)
+        banner_words, banner_labels = _banner_hook(patch, banner_entries, banner_off)
         banner = b"".join(struct.pack("<I", w) for w in banner_words)
 
     used = len(stub) + (len(banner) if banner else 0)
@@ -1326,9 +1370,9 @@ def _generate_smdh_names(
         records += [
             (site, struct.pack("<I", _b(site, banner_labels["banner_hook"]))),
             (banner_off, banner),
-            (path_off, banner_path.encode("ascii") + b"\0"),
+            (paths_off, bytes(banner_paths)),
         ]
-        _verify_banner(patch, code, records, banner_labels, path_va, banner_path)
+        _verify_banner(patch, code, records, banner_labels, banner_entries)
 
     log = [
         f"{patch['title']} title version {version}",
@@ -1341,10 +1385,10 @@ def _generate_smdh_names(
         f"{LUMA_PATH_SIZE} bytes Luma claims for its path ({ro_room} bytes available)",
     ]
     if banner:
+        served = ", ".join(f"{e['title_id']:016X} -> {Path(e['path']).name}" for e in banner_entries)
         log.append(
             f"code.ips: banner open at 0x{patch['banner_hook']['site_off']:X} -> "
-            f"{len(banner)}-byte hook at 0x{banner_off:X}, title "
-            f"{patch['banner_hook']['title_id']:016X} served from {banner_path!r}"
+            f"{len(banner)}-byte hook at 0x{banner_off:X}, serving {served}"
         )
     return {"code.ips": make_ips(records)}, log
 

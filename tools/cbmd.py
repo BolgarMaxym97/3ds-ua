@@ -76,6 +76,10 @@ def parse(data: bytes) -> Banner:
         if not off:
             continue
         end = min(b for b in bounds if b > off)
+        # The block that runs up to the CWAV keeps whatever alignment padding sits in front
+        # of it - the slice cannot tell the two apart, and trimming zeros would eat real
+        # stream bytes. It does not accumulate: build() pads to the boundary, so a block
+        # that already ends on one gets nothing added.
         block = data[off:end]
         if block[0] != 0x11:
             raise ValueError(f"slot {slot}: expected LZ11, got {block[:4].hex()}")
