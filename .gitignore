@@ -13,9 +13,13 @@ nand*.bin
 *.sha
 
 plan.md
-docs/
-src/glossary.md
-tools/dump.md
+docs/*
+!docs/internals.md
+!docs/internals.en.md
+!docs/dumping.md
+!docs/dumping.en.md
+
+assets/pictures/*.bmp
 
 *.zip
 
@@ -25,3 +29,4 @@ tools/dump.md
 __pycache__/
 *.pyc
 .venv/
+tools/dump.md
