@@ -61,6 +61,33 @@ TEXTURES = {
         "glyph_luma": 3,           # 0x3F is the glyph body here
         "alpha": {"mode": "outline", "dilate": 3, "blur": 0.8},
     },
+    "0004001000022100": {
+        "text": "Гра по завантаженню",
+        "texture": "COMMON1",
+        "size": (512, 64),
+        "font": (HELVETICA, 0),    # regular: 10.4% mismatch on the Russian slot, next best 14.7
+        "layout": "capped",
+        "font_size": 41,           # reproduces the 38-pixel ink height of the Russian slot
+        "max_width": 352,          # the widest slot ships 352 (French); longer strings scale
+        "top": 4,                  # every slot but Portuguese starts its ink on this row
+        "centre_x": 256,
+        "glyph_luma": 3,           # 0x3F, as in System Settings
+        "alpha": {"mode": "outline", "dilate": 3, "blur": 0.8},
+    },
+    "0004001000022300": {
+        "text": ["Інформація про здоров'я", "і безпеку"],
+        "texture": "COMMON1",
+        "size": (512, 128),
+        "font": (HELVETICA, 0),    # regular: 17.7% mismatch on the Russian slot, bold 19.5
+        "layout": "lines",
+        "font_size": 38,           # reproduces the 34-pixel ink height of its first line
+        "left": 67,                # both Russian lines start here; so do both German ones
+        "first_baseline": 57,
+        "pitch": 39,               # 57 -> 96 in the Russian slot
+        "max_width": 441,          # what the Russian first line takes: x 67..507
+        "glyph_luma": 3,
+        "alpha": {"mode": "outline", "dilate": 3, "blur": 0.8},
+    },
     "0004001000022200": {
         "text": "Журнал дій",
         "texture": "TEX1",
@@ -105,6 +132,41 @@ def coverage(spec: dict) -> Image.Image:
         ink = ink.resize((spec["ink_width"], ink_height), Image.LANCZOS)
         centre_x, centre_y = spec["centre"]
         out.paste(ink, (centre_x - spec["ink_width"] // 2, round(centre_y - ink_height / 2)))
+    elif spec["layout"] == "lines":
+        # Two lines, left aligned, on a fixed baseline grid. The size is per language in the
+        # original - Russian and German are set smaller than English because they are longer
+        # - so ours steps down too until the longest line fits the width the Russian one had.
+        size = spec["font_size"]
+        while size > 8:
+            font = _font(spec, size)
+            if max(_draw(line, font)[1][2] - _draw(line, font)[1][0]
+                   for line in spec["text"]) <= spec["max_width"]:
+                break
+            size -= 1
+        pitch = spec["pitch"] * size / spec["font_size"]
+        # Drawn at a known origin first: the baseline anchor places the type, but the left
+        # side bearing means the ink starts a pixel or two further right, and it is the ink
+        # that has to line up with the original.
+        origin = 200
+        sheet = Image.new("L", (width + 2 * origin, height + 2 * origin), 0)
+        pen = ImageDraw.Draw(sheet)
+        for index, line in enumerate(spec["text"]):
+            pen.text(
+                (origin, origin + round(index * pitch)), line, font=font, fill=255, anchor="ls"
+            )
+        box = sheet.getbbox()
+        out.paste(
+            sheet.crop(box),
+            (spec["left"], box[1] - origin + spec["first_baseline"]),
+        )
+    elif spec["layout"] == "capped":
+        canvas, box = _draw(spec["text"], _font(spec, spec["font_size"]))
+        ink = canvas.crop(box)
+        if ink.size[0] > spec["max_width"]:
+            # What French and Italian do in the original: keep the wording, lose the size.
+            cap = spec["max_width"]
+            ink = ink.resize((cap, round(ink.size[1] * cap / ink.size[0])), Image.LANCZOS)
+        out.paste(ink, (spec["centre_x"] - ink.size[0] // 2, spec["top"]))
     else:
         font = _font(spec, spec["font_size"])
         # Where the reference string lands when drawn at the same origin, against where it

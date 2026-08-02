@@ -33,6 +33,13 @@ BLOCK_HEADER = 8
 
 # Sheet pixel format 9 is LA4: one byte per pixel, luminance in the high nibble, alpha in
 # the low one. That is the only format the HUD font uses, and the only one worth writing.
+#
+# Both nibbles carry shape here, which is easy to get wrong. These glyphs are white with a
+# one-pixel black outline, and that is encoded as: alpha = the whole silhouette, outline
+# included; luminance = the white core inside it, inset by that one pixel. Filling the
+# luminance with 15 across the silhouette - the obvious reading of "the glyph is white" -
+# drops the outline and paints the letter a pixel fatter on every side, which on hardware
+# reads as a different, bolder font sitting in the middle of the clock line.
 FORMAT_LA4 = 9
 
 # CMAP encodings.
@@ -195,8 +202,8 @@ def build(font: Font) -> bytes:
     return bytes(out)
 
 
-def add_glyphs(font: Font, glyphs: dict[int, tuple[list[list[int]], int, int, int]]) -> None:
-    """Append code points: {code point: (rows of alpha 0-15, left, glyph width, char width)}.
+def add_glyphs(font: Font, glyphs: dict[int, tuple[list[list[tuple[int, int]]], int, int, int]]) -> None:
+    """Append code points: {code point: (rows of (luminance, alpha), left, glyph width, char width)}.
 
     The pixels go into the cells past the last glyph, so the texture keeps its size and
     the sheet count stays what the FINF-side reader expects.
@@ -218,25 +225,23 @@ def cell_size(font: Font) -> tuple[int, int]:
     return font.sheets.cell_width, font.sheets.cell_height
 
 
-def glyph_rows(font: Font, code: int) -> list[list[int]]:
-    """The alpha values (0-15) of one glyph's cell, as cell_height rows."""
+def glyph_rows(font: Font, code: int) -> list[list[tuple[int, int]]]:
+    """One glyph's cell as cell_height rows of (luminance, alpha), each 0-15."""
     sheets = font.sheets
     plane, x0, y0 = sheets.cell_origin(font.cmap[code])
     return [
-        [plane[y0 + y][x0 + x] & 0x0F for x in range(sheets.cell_width)]
+        [(plane[y0 + y][x0 + x] >> 4, plane[y0 + y][x0 + x] & 0x0F) for x in range(sheets.cell_width)]
         for y in range(sheets.cell_height)
     ]
 
 
-def _draw_cell(sheets: Sheets, index: int, rows: list[list[int]]) -> None:
+def _draw_cell(sheets: Sheets, index: int, rows: list[list[tuple[int, int]]]) -> None:
     if len(rows) != sheets.cell_height or any(len(row) != sheets.cell_width for row in rows):
         raise ValueError(f"glyph must be {sheets.cell_width}x{sheets.cell_height}")
     plane, x0, y0 = sheets.cell_origin(index)
     for y, row in enumerate(rows):
-        for x, alpha in enumerate(row):
-            # LA4: the glyph is drawn in a flat colour, so luminance is full wherever the
-            # pixel is inked - exactly how Nintendo's own cells in this font are stored.
-            plane[y0 + y][x0 + x] = 0xF0 | (alpha & 0x0F) if alpha else 0x00
+        for x, (luminance, alpha) in enumerate(row):
+            plane[y0 + y][x0 + x] = ((luminance & 0x0F) << 4) | (alpha & 0x0F) if alpha else 0x00
 
 
 def _parse_tglp(data: bytes, pos: int) -> Sheets:

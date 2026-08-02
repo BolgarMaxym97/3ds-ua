@@ -160,7 +160,9 @@ NAND не змінювався, тому видалення нічого не л
 
 Українські `Пн Вт Ср Чт Пт Сб` з цього набору складаються, а `Нд` — ні: `Н` і `д` у шрифті просто немає. Тому неділя показувалася як порожні дужки, `02.08 ( ) 00 25`.
 
-Збірка додає ці дві літери в шрифт. Гліфи взяті не звідки-небудь, а з `nintendo_NTLG-DB_001` — тієї самої гарнітури, з якої растровано решту шрифту; її TTF лежить у romfs браузера. Параметри растеризації (кегль, обведення, гама, вертикаль) не вгадані, а підібрані так, щоб якнайточніше відтворити дев'ять кириличних літер, які у шрифті вже є, — див. `tools/hud_glyphs.py`. Нові гліфи стають у вільні комірки останнього аркуша текстури, тож файл росте на 12 байтів.
+Збірка додає ці дві літери в шрифт. Гліфи взяті не звідки-небудь, а з `nintendo_NTLG-DB_001` — тієї самої гарнітури, з якої растровано решту шрифту; її TTF лежить у romfs браузера. Параметри растеризації (кегль, перо, гама, вертикаль) не вгадані, а підібрані так, щоб якнайточніше відтворити дев'ять кириличних літер, які у шрифті вже є, — див. `tools/hud_glyphs.py`. Нові гліфи стають у вільні комірки останнього аркуша текстури, тож файл росте на 12 байтів.
+
+Літери тут білі з чорною обводкою в один піксель, і це закодовано у двох нібблах LA4: **альфа — весь силует разом з обводкою, яскравість — біле ядро всередині нього**. Тому кожна літера раструється двічі: пером в один піксель (силует) і без пера (ядро). Якщо цього не знати й залити яскравість по всьому силуету, обводка зникає, літера стає на піксель товщою з кожного боку — і в рядку з датою видно, що `Нд` набране жирнішим шрифтом, ніж цифри поруч.
 
 Підміняється у восьми титулах: Меню HOME, Налаштування системи, Список друзів, Повідомлення, Ігрові записи, Браузер, eShop, Перенесення даних. Шлях у більшості — `romfs/font/Hud.bcfnt` або `Hud_JP.bcfnt`, в Ігрових записах — `romfs/lang/Hud.bcfnt`. Файл у всіх восьми той самий, байт у байт.
 
@@ -688,10 +690,17 @@ and no `д` at all, which is why Sunday used to render as empty brackets, `02.08
 
 The build adds the two letters. The glyphs come from `nintendo_NTLG-DB_001` — the same
 typeface the rest of the font was rasterised from, and a copy of its TTF ships inside the
-browser's romfs. The rasterisation parameters (size, stroke, gamma, vertical placement)
-are not guessed but fitted to reproduce the nine Cyrillic glyphs the font already has, as
+browser's romfs. The rasterisation parameters (size, pen, gamma, vertical placement) are
+not guessed but fitted to reproduce the nine Cyrillic glyphs the font already has, as
 closely as possible; see `tools/hud_glyphs.py`. The new glyphs go into free cells on the
 last texture sheet, so the file grows by 12 bytes.
+
+The letters are white with a one-pixel black outline, and that is encoded across both LA4
+nibbles: **alpha is the whole silhouette, outline included; luminance is the white core
+inside it**. So each letter is rasterised twice — once with a one-pixel pen for the
+silhouette, once without for the core. Miss that and fill the luminance across the whole
+silhouette, and the outline disappears while the letter gains a pixel on every side: on
+hardware `Нд` then reads as a bolder font than the digits beside it.
 
 Replaced in eight titles: HOME Menu, System Settings, Friend List, Notifications, Game
 Notes, Browser, eShop, System Transfer. The path is `romfs/font/Hud.bcfnt` or

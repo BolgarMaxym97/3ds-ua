@@ -231,8 +231,8 @@ HOOK_PATCHES: dict[str, dict] = {
         "lang_index": 10,          # the SMDH language slot the mod overwrites: EU_Russian
         # The picture on the upper screen comes from the highlighted title's own
         # ExeFS:/banner, which HOME Menu opens itself - see docs/banner-ua.md. The open is
-        # shared by every title, so the hook compares the title id first and only swaps the
-        # System Settings one for a file on the SD card.
+        # shared by every title, so the hook compares the title id first and swaps only the
+        # ones listed below for a file on the SD card.
         "banner_hook": {
             "open_off": 0x61DE4,   # OpenTitleBanner(out, mediatype, tid_lo, tid_hi)
             "site_off": 0x61E64,   # `ldr r3, [pc, #0xb4]` - the archive id, last arg set
@@ -241,7 +241,11 @@ HOOK_PATCHES: dict[str, dict] = {
             "title_id_slot": 0x38,  # `strd r2, r3, [sp, #0x38]` at the top of the open
             "titles": [
                 {"title_id": 0x0004001000022000, "image_name": "banner_22000.bin"},
+                {"title_id": 0x0004001000022100, "image_name": "banner_22100.bin"},
                 {"title_id": 0x0004001000022200, "image_name": "banner_22200.bin"},
+                {"title_id": 0x0004001000022300, "image_name": "banner_22300.bin"},
+                {"title_id": 0x0004001000022800, "image_name": "banner_22800.bin"},
+                {"title_id": 0x0004001000022E00, "image_name": "banner_22E00.bin"},
             ],
         },
     },

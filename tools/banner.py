@@ -4,12 +4,14 @@
     python3 tools/banner.py 0004001000022000 --extract  # dump every language texture
 
 The banner a title ships (ExeFS:/banner, a CBMD) holds one CGFX per language, and each of
-those language blocks is nothing but the title's name rendered into a 512x64 8-bit texture
-called COMMON1. Nintendo fits that name into a fixed 352-pixel box centred at x=256, and
-lets the height fall where it may - checked across every language slot of both banners we
-dumped. assets/banner/<TID>_COMMON1.la4 follows the same rule. It is not greyscale: the format is
-LA4, luminance in the high nibble and alpha in the low one - see tools/banner_text.py,
-which renders it.
+those language blocks carries the localised part of the picture in a single texture - the
+title set as type in most of them, the whole logotype in StreetPass Mii Plaza. Where that
+texture sits and how it is laid out is per title; docs/banner-ua.md has the measurements.
+
+The replacement pixels come from assets/banner/<TID>_<texture>.<format>, written by
+tools/banner_text.py where the texture is type, and tools/banner_art.py where it is a
+drawing derived from the title's own art. Two formats appear, one byte per pixel for LA4
+and two for RGBA4444; the file extension says which.
 
 Only the Russian slot is touched. Every other block is copied over compressed, so the
 languages the console can still switch to stay exactly as Nintendo shipped them.
@@ -30,12 +32,17 @@ import cgfx  # noqa: E402
 ROOT = Path(__file__).resolve().parent.parent
 
 # TID -> the banner we rebuild, the slot we overwrite, and the texture inside it that
-# carries the title. The two banners do not agree on the name or the size of that texture:
-# System Settings calls it COMMON1 and keeps it 512x64, the Activity Log calls it TEX1 and
-# sets its name in two lines on a 512x128 one.
+# carries the localised part of the picture. No two banners agree on it: the name is
+# COMMON1 in most and TEX1 in the Activity Log, the size is 512x64 or 512x128, and the
+# format is LA4 in the ones set as type and RGBA4444 in the two that are drawings.
 TITLES = {
     "0004001000022000": {
         "title": "System Settings EUR",
+        "slot": cbmd.EUR_RU,
+        "texture": "COMMON1",
+    },
+    "0004001000022100": {
+        "title": "Download Play EUR",
         "slot": cbmd.EUR_RU,
         "texture": "COMMON1",
     },
@@ -44,15 +51,36 @@ TITLES = {
         "slot": cbmd.EUR_RU,
         "texture": "TEX1",
     },
+    "0004001000022300": {
+        "title": "Health & Safety Information EUR",
+        "slot": cbmd.EUR_RU,
+        "texture": "COMMON1",
+    },
+    "0004001000022800": {
+        "title": "StreetPass Mii Plaza EUR",
+        "slot": cbmd.EUR_RU,
+        "texture": "COMMON1",
+    },
+    "0004001000022E00": {
+        "title": "AR Games EUR",
+        "slot": cbmd.EUR_RU,
+        "texture": "COMMON1",
+    },
 }
+
+# The extension the replacement pixels are stored under, per PICA pixel format.
+EXTENSIONS = {cgfx.FORMAT_LA4: "la4", cgfx.FORMAT_RGBA4444: "rgba4444"}
 
 
 def source_banner(tid: str) -> Path:
     return ROOT / "work" / tid / "banner"
 
 
-def asset(tid: str) -> Path:
-    return ROOT / "assets" / "banner" / f"{tid}_{TITLES[tid]['texture']}.la4"
+def asset(tid: str, texture: cgfx.Texture) -> Path:
+    suffix = EXTENSIONS.get(texture.pica_format)
+    if suffix is None:
+        raise SystemExit(f"{tid}: {texture.name} is PICA format {texture.pica_format}")
+    return ROOT / "assets" / "banner" / f"{tid}_{texture.name}.{suffix}"
 
 
 def output(tid: str) -> Path:
@@ -68,11 +96,12 @@ def build(tid: str) -> bytes:
 
     original = banner.cgfx(slot)
     texture = cgfx.find(original, spec["texture"])
-    pixels = asset(tid).read_bytes()
+    path = asset(tid, texture)
+    pixels = path.read_bytes()
     if len(pixels) != texture.data_len:
         raise SystemExit(
-            f"{asset(tid).name}: {len(pixels)} bytes, but {spec['texture']} is "
-            f"{texture.width}x{texture.height} = {texture.data_len}"
+            f"{path.name}: {len(pixels)} bytes, but {spec['texture']} is "
+            f"{texture.width}x{texture.height}x{texture.pixel_size} = {texture.data_len}"
         )
 
     banner.set_cgfx(slot, cgfx.replace(original, spec["texture"], pixels))
@@ -97,7 +126,8 @@ def extract(tid: str) -> None:
             texture = cgfx.find(raw, texture_name)
         except KeyError:
             continue
-        path = out / f"{tid}_slot{slot:02d}_{texture_name}.la4"
+        suffix = EXTENSIONS.get(texture.pica_format, f"fmt{texture.pica_format}")
+        path = out / f"{tid}_slot{slot:02d}_{texture_name}.{suffix}"
         path.write_bytes(cgfx.unswizzle(raw, texture))
         print(f"slot {slot:2d}: {texture.width}x{texture.height} -> {path}")
 

@@ -1,5 +1,5 @@
 {
-  "_comment": "Glyphs added to the HUD font (Hud.bcfnt / Hud_JP.bcfnt) so the Ukrainian weekday Нд has letters to draw with. Written by tools/hud_glyphs.py; `rows` is one hex alpha nibble per pixel, ink flush left as the cells store it.",
+  "_comment": "Glyphs added to the HUD font (Hud.bcfnt / Hud_JP.bcfnt) so the Ukrainian weekday Нд has letters to draw with. Written by tools/hud_glyphs.py. One hex nibble per pixel, ink flush left as the cells store it: `alpha` is the whole silhouette including the one-pixel black outline, `luminance` the white core.",
   "_source": {
     "font": "nintendo_NTLG-DB_001 (0004003000009D02 romfs/font/nintendo.ttf)",
     "cell": [
@@ -9,20 +9,21 @@
     "advance_scale": 1.03,
     "advance_exact": "65/66",
     "pixel_size": 14,
-    "stroke": 1,
+    "pen": 1,
     "y_offset": -2,
-    "gamma": 0.45,
-    "error": 1337,
+    "core_gamma": 1.0,
+    "alpha_gamma": 0.45,
+    "error": 2077,
     "per_glyph": {
-      "0412": 103,
-      "041F": 93,
-      "0421": 316,
-      "0427": 98,
-      "0431": 281,
-      "043D": 48,
-      "0440": 117,
-      "0441": 229,
-      "0442": 52
+      "0412": 123,
+      "041F": 109,
+      "0421": 539,
+      "0427": 122,
+      "0431": 527,
+      "043D": 53,
+      "0440": 163,
+      "0441": 381,
+      "0442": 60
     },
     "bearing_exact": "62/66"
   },
@@ -32,7 +33,7 @@
       "left": 1,
       "glyph_width": 11,
       "char_width": 11,
-      "rows": [
+      "alpha": [
         "000000000000000",
         "AEEB007EED30000",
         "DFFE00AFFF70000",
@@ -50,6 +51,25 @@
         "000000000000000",
         "000000000000000",
         "000000000000000"
+      ],
+      "luminance": [
+        "000000000000000",
+        "000000000000000",
+        "0AC00006E300000",
+        "0BD00007F300000",
+        "0BD00007F300000",
+        "0BD00007F300000",
+        "0BE6666AF300000",
+        "0BFFFFFFF300000",
+        "0BD00006F300000",
+        "0BD00006F300000",
+        "0BD00006F300000",
+        "0BD00006F300000",
+        "0BD00006F300000",
+        "000000000000000",
+        "000000000000000",
+        "000000000000000",
+        "000000000000000"
       ]
     },
     "0434": {
@@ -57,7 +77,7 @@
       "left": 0,
       "glyph_width": 11,
       "char_width": 9,
-      "rows": [
+      "alpha": [
         "000000000000000",
         "000000000000000",
         "000000000000000",
@@ -74,6 +94,25 @@
         "CFFFFFFFFF90000",
         "BFFD004FFF70000",
         "288400068700000",
+        "000000000000000"
+      ],
+      "luminance": [
+        "000000000000000",
+        "000000000000000",
+        "000000000000000",
+        "000000000000000",
+        "000000000000000",
+        "002CCCCC4000000",
+        "003F766F5000000",
+        "003F201F5000000",
+        "003F201F5000000",
+        "004F101F5000000",
+        "007E001F5000000",
+        "03CC444F8100000",
+        "0AFFFFFFF500000",
+        "0AC00002F500000",
+        "033000014100000",
+        "000000000000000",
         "000000000000000"
       ]
     }

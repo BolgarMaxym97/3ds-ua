@@ -474,17 +474,23 @@ def build_smdh(name: str, cfg: dict, romfs: Path, table: dict[str, str]) -> tupl
     return out, stats
 
 
-def load_hud_glyphs() -> dict[int, tuple[list[list[int]], int, int, int]]:
+def load_hud_glyphs() -> dict[int, tuple[list[list[tuple[int, int]]], int, int, int]]:
     """The added HUD glyphs, as tools/bcfnt.py wants them.
 
     The bitmaps are an asset rather than something generated here: drawing them needs
     Pillow and an outline font out of another title's romfs, neither of which a build has
     any business depending on. See tools/hud_glyphs.py for how they are made.
+
+    Each pixel is a (luminance, alpha) pair: the letters are white with a one-pixel black
+    outline, so alpha carries the whole silhouette and luminance only the white core.
     """
     data = json.loads((ROOT / "assets" / "hud_glyphs.json").read_text(encoding="utf-8"))
     return {
         int(code, 16): (
-            [[int(nibble, 16) for nibble in row] for row in glyph["rows"]],
+            [
+                [(int(l, 16), int(a, 16)) for l, a in zip(core, silhouette)]
+                for core, silhouette in zip(glyph["luminance"], glyph["alpha"])
+            ],
             glyph["left"],
             glyph["glyph_width"],
             glyph["char_width"],
