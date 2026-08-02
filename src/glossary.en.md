@@ -32,6 +32,26 @@ than the widest official localisation of that string.
 | значок / icon | значок |
 | Обмен изображениями | Обмін зображеннями |
 | вид (меню) / layout | вигляд |
+| Подключение / Connection (the object) | зв'язок |
+| Настройки подключения / Connection Settings | Налаштування зв'язку |
+| Проверка подключения / Connection Test | Перевірка зв'язку |
+| Обмен данными / System Transfer (in System Settings) | Перенос системи |
+| Форматирование памяти / Format System Memory | Форматування |
+| Настройки amiibo / amiibo Settings | Керування amiibo |
+
+`Connection` as an **object** ("Connection 1", "New Connection", "Connection Type") is always
+**зв'язок**: «з'єднання» fits none of the internet-settings slots. `Connecting…` as an **action**
+stays «З'єднання…» — a verbal noun, not the name of the object.
+
+**Width exceptions in System Settings and the HOME Menu** (found on hardware; `validate.py`
+misses them because it takes the budget from the widest official localisation, and that one
+overflows the slot too): `Cancel` / `Retry` in the **three-button** row (`base_3b_*`: Circle Pad
+and touch-screen calibration) are **Назад** / **Повтор**, because «Скасувати» (128px) and
+«Повторити» (131px) get clipped; `System Memory` on the Data Management tab (`dat_nand`) is
+**Система** — a narrow slot, where French and Italian also settle for plain "Console"; `Reset
+blocked-user settings` is **Скинути список блокованих**; `ON` / `OFF` in the HOME Menu settings
+are **Увімкнено** / **Вимкнено** (one pane, two states, so the slot holds the 122px
+"Desligado").
 
 ## Friend List
 
@@ -190,7 +210,7 @@ Infinitive forms: `Запустити`, `Видалити`, `Скопіюват�
 - do not add «будь ласка» where the original had no "please";
 - quotation marks are «guillemets», the dash is `—`, the ellipsis is `…`;
 - no calques from Russian: `настройки` → `налаштування`, `загрузка` → `завантаження`,
-  `удалить` → `видалити`, `включить` → `увімкнути`, `подключение` → `з'єднання`/`підключення`,
+  `удалить` → `видалити`, `включить` → `увімкнути`, `подключение` → `зв'язок` (object) / `під'єднання` (action),
   `сохранить` → `зберегти`, `текущий` → `поточний`, `следующий` → `наступний`,
   `коснитесь` → `торкніться`, `выберите` → `виберіть`;
 - the apostrophe is ASCII `'` (U+02BC is not in the font).

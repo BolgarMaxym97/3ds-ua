@@ -64,6 +64,11 @@ TITLES = {
         # from NAND and LayeredFS therefore cannot reach. See tools/smdh_names.py.
         "hook_patch": True,
         "hud_font": "font/Hud_JP.bcfnt",
+        # ON and OFF of the power-saving / wireless toggle are two states of one pane,
+        # so the slot is as wide as the longer of the pair ("Desligado", not "Ligado").
+        "budget_groups": [
+            r"(?:ptt|lau)_light_(?:on|off)",
+        ],
     },
     # Ships a whole RomFS image, like download_play - see the note there.
     "keyboard": {

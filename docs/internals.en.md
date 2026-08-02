@@ -503,7 +503,11 @@ LayeredFS does not lead there. Luma's payload only intercepts mounts for `ARCHIV
 
 It is also not one document but one per title: the Activity Log has its own, System Settings has its own, every game has its own. Translating them means rebuilding and reinstalling each title's content.
 
-All four limits come down to the same thing: they require modifying NAND. A "Tier 2" release for people who accept that — with a NAND backup and the appropriate warnings — is a separate thing and is not part of this release.
+**The country list in Profile settings.** "Region Settings" shows country names that do not exist anywhere in System Settings' romfs: the `.code` holds the paths `area:/EU/country_LZ.bin` (plus `JP`/`US`/`CN`/`KR`/`TW`), and the only system TID in that same code is `0004001B00010702`. That is a separate system archive, and LayeredFS only redirects the title's own romfs — so neither translating the names nor swapping "Россия" for "Україна" is possible from the SD card. On top of that, the EUR table has no Ukraine at all: the StreetPass Mii Plaza country list (`param/country.csv`, 121 rows — the only place in everything dumped where these names exist as text) has `Russia` and no `Ukraine`, so even with access to the archive one could only rename a row, not add one.
+
+**Nintendo DS Connection Settings.** The button in the internet settings launches `0004800542383841` — a separate **TWL** title (the only TWL TID in System Settings' `.code`). It runs under TWL_FIRM, where Luma's LayeredFS does not work at all. Besides, the DS/DSi language set has no Russian (JP/EN/FR/DE/IT/ES, later ZH/KO), so there is no slot to replace — the app opens in English whatever the console language.
+
+All of these limits come down to the same thing: they require modifying NAND. A "Tier 2" release for people who accept that — with a NAND backup and the appropriate warnings — is a separate thing and is not part of this release.
 
 ## Building from source
 

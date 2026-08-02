@@ -565,11 +565,11 @@
   },
   "ptt_light_off": {
     "en": "OFF",
-    "ua": "Вимк.."
+    "ua": "Вимкнено"
   },
   "ptt_light_on": {
     "en": "ON",
-    "ua": "Увімк.."
+    "ua": "Увімкнено"
   },
   "ptt_light_eco": {
     "en": "Power-Saving Mode",
@@ -605,7 +605,7 @@
   },
   "ptt_cabinet_c": {
     "en": "amiibo Settings",
-    "ua": "Налаштування amiibo"
+    "ua": "Керування amiibo"
   },
   "ptt_contactinfo": {
     "en": "",
@@ -697,11 +697,11 @@
   },
   "lau_light_on": {
     "en": "ON",
-    "ua": "Увімк.."
+    "ua": "Увімкнено"
   },
   "lau_light_off": {
     "en": "OFF",
-    "ua": "Вимк.."
+    "ua": "Вимкнено"
   },
   "lau_dlg_1b_ok": {
     "en": " OK",
@@ -2265,19 +2265,19 @@
   },
   "new_tips7": {
     "en": "Touch the icon in the upper-left\ncorner of the Touch Screen while\non the HOME Menu to open the\nHOME Menu Settings (see above\nimage).\n\nHere, you can perform the\nfollowing operations:\n\n■ Change HOME Menu themes\n■ Save/load HOME menu layouts\n■ Adjust screen brightness\n■ Toggle the power-saving mode\non and off\n\nPress HOME at any time when\nplaying a Nintendo 3DS software\ntitle to return to the HOME Menu.\n\nHOME Menu Settings also allows\nyou to access the following:\n\n■ Nintendo 3DS Image Share\n■ amiibo Settings\n■ Nintendo eShop\n■ System Settings\n\nThis is a useful function to\nremember.\n\nNintendo",
-    "ua": "Торкніться значка у верхньому\nлівому куті сенсорного дисплея\nв меню HOME, щоб відкрити\nналаштування меню HOME\n(див. мал. вище).\n\nТут ви можете виконати\nтакі дії:\n\n• змінити тему меню HOME;\n• зберегти/завантажити вигляд\nменю HOME;\n• відрегулювати яскравість екрана;\n• увімкнути й вимкнути\nенергоощадний режим.\n\nНатисніть  HOME будь-коли,\nколи запущено програму\nNintendo 3DS, щоб повернутися\nдо меню HOME.\n\nУ налаштуваннях меню HOME\nтакож можна отримати\nдоступ до такого:\n\n• сервіс Обмін зображеннями\n  Nintendo 3DS;\n• налаштування amiibo;\n• Nintendo eShop;\n• системні налаштування.\n\nЦе корисна функція, яку\nварто запам'ятати.\n\nNintendo"
+    "ua": "Торкніться значка у верхньому\nлівому куті сенсорного\nдисплея в меню HOME, щоб\nвідкрити налаштування меню\nHOME (див. мал. вище).\n\nТут ви можете виконати\nтакі дії:\n\n• змінити тему меню HOME;\n• зберегти/завантажити вигляд\nменю HOME;\n• відрегулювати яскравість;\n• увімкнути й вимкнути\nенергоощадний режим.\n\nНатисніть  HOME будь-коли,\nколи запущено програму\nNintendo 3DS, щоб\nповернутися до меню HOME.\n\nУ налаштуваннях меню HOME\nтакож можна отримати\nдоступ до такого:\n\n• сервіс Обмін зображеннями\n  Nintendo 3DS;\n• керування amiibo;\n• Nintendo eShop;\n• системні налаштування.\n\nЦе корисна функція, яку\nварто запам'ятати.\n\nNintendo"
   },
   "new_tips7_flw": {
     "en": "Touch the icon in the upper-left\ncorner of the Touch Screen while\non the HOME Menu to open\nHOME Menu Settings (see above\nimage).\n\nHere, you can perform the\nfollowing operations:\n\n■ Change HOME Menu themes\n■ Save/load HOME Menu layouts\n■ Adjust screen brightness\n■ Toggle wireless communication\n\nPress HOME at any time when\nplaying a Nintendo 3DS software\ntitle to return to the HOME Menu.\n\nHOME Menu Settings also allows\nyou to access the following:\n\n■ Nintendo 3DS Image Share\n■ amiibo Settings\n■ Nintendo eShop\n■ System Settings\n\nThis is a useful function to\nremember.\n\nNintendo",
-    "ua": "Торкніться значка у верхньому\nлівому куті сенсорного дисплея\nв меню HOME, щоб відкрити\nналаштування меню HOME\n(див. мал. вище).\n\nТут ви можете виконати\nтакі дії:\n\n• змінити тему меню HOME;\n• зберегти/завантажити вигляд\nменю HOME;\n• відрегулювати яскравість екрана;\n• увімкнути й вимкнути\nбездротовий режим.\n\nНатисніть  HOME будь-коли,\nколи запущено програму\nNintendo 3DS, щоб повернутися\nдо меню HOME.\n\nУ налаштуваннях меню HOME\nтакож можна отримати\nдоступ до такого:\n\n• сервіс Обмін зображеннями\n  Nintendo 3DS;\n• налаштування amiibo;\n• Nintendo eShop;\n• системні налаштування.\n\nЦе корисна функція, яку\nварто запам'ятати.\n\nNintendo"
+    "ua": "Торкніться значка у верхньому\nлівому куті сенсорного\nдисплея в меню HOME, щоб\nвідкрити налаштування меню\nHOME (див. мал. вище).\n\nТут ви можете виконати\nтакі дії:\n\n• змінити тему меню HOME;\n• зберегти/завантажити вигляд\nменю HOME;\n• відрегулювати яскравість;\n• увімкнути й вимкнути\nбездротовий режим.\n\nНатисніть  HOME будь-коли,\nколи запущено програму\nNintendo 3DS, щоб\nповернутися до меню HOME.\n\nУ налаштуваннях меню HOME\nтакож можна отримати\nдоступ до такого:\n\n• сервіс Обмін зображеннями\n  Nintendo 3DS;\n• керування amiibo;\n• Nintendo eShop;\n• системні налаштування.\n\nЦе корисна функція, яку\nварто запам'ятати.\n\nNintendo"
   },
   "new_tips7_sac": {
     "en": "Touch HOME Menu Settings in\nthe upper-left corner of the\nTouch Screen while on the\nHOME Menu (see above image)\nto perform the following\noperations:\n\n■ Change the HOME Menu theme\n■ Save/load HOME Menu layouts\n■ Adjust screen brightness\n■ Toggle power-saving mode\n■ Toggle wireless communication\n\nPress HOME at any time when\nplaying a Nintendo 3DS software\ntitle to return to the HOME Menu\nand adjust the brightness.\n\nHOME Menu Settings also allows\nyou to access the following:\n\n■ Nintendo 3DS Image Share\n■ amiibo Settings\n■ Nintendo eShop\n■ The HOME Menu\nelectronic manual\n■ System Settings\n\nThis is a useful function to\nremember.\n\nNintendo",
-    "ua": "Торкніться Налаштування HOME\nу верхньому лівому куті\nсенсорного дисплея в меню HOME\n(див. мал. вище), щоб\nвиконати такі дії:\n\n• змінити тему меню HOME;\n• зберегти/завантажити вигляд\nменю HOME;\n• відрегулювати яскравість екрана;\n• увімкнути й вимкнути\n  енергоощадний режим;\n• увімкнути й вимкнути\n  бездротовий режим.\n\nНатисніть  HOME будь-коли,\nколи запущено програму\nNintendo 3DS, щоб повернутися\nдо меню HOME й відрегулювати\nяскравість.\n\nУ налаштуваннях меню HOME\nтакож можна отримати\nдоступ до такого:\n\n• сервіс Обмін зображеннями\n  Nintendo 3DS;\n• налаштування amiibo;\n• Nintendo eShop;\n• електронний посібник\n  з меню HOME;\n• системні налаштування.\n\nЦе корисна функція, яку\nварто запам'ятати.\n\nNintendo"
+    "ua": "Торкніться Налаштування\nHOME у верхньому лівому\nкуті сенсорного дисплея\n(див. мал. вище), щоб\nвиконати такі дії:\n\n• змінити тему меню HOME;\n• зберегти/завантажити вигляд\nменю HOME;\n• відрегулювати яскравість;\n• увімкнути й вимкнути\n  енергоощадний режим;\n• увімкнути й вимкнути\n  бездротовий режим.\n\nНатисніть  HOME будь-коли,\nколи запущено програму\nNintendo 3DS, щоб\nповернутися до меню HOME\nй відрегулювати яскравість.\n\nУ налаштуваннях меню HOME\nтакож можна отримати\nдоступ до такого:\n\n• сервіс Обмін зображеннями\n  Nintendo 3DS;\n• керування amiibo;\n• Nintendo eShop;\n• електронний посібник\n  з меню HOME;\n• системні налаштування.\n\nЦе корисна функція, яку\nварто запам'ятати.\n\nNintendo"
   },
   "new_tips7_jan": {
     "en": "Touch HOME Menu Settings in\nthe upper-left corner of the\nTouch Screen while on the\nHOME Menu (see above image)\nto perform the following\noperations:\n\n■ Change the HOME Menu theme\n■ Save/load HOME Menu layouts\n■ Adjust screen brightness\n■ Toggle power-saving mode\n■ Toggle wireless communication\n\nPress HOME at any time when\nplaying a Nintendo 3DS software\ntitle to return to the HOME Menu\nand adjust the brightness.\n\nHOME Menu Settings also allows\nyou to access the following:\n\n■ Nintendo 3DS Image Share\n■ amiibo Settings\n■ Nintendo eShop\n■ The HOME Menu\nelectronic manual\n■ System Settings\n\nThis is a useful function to\nremember.\n\nNintendo",
-    "ua": "Торкніться Налаштування HOME\nу верхньому лівому куті\nсенсорного дисплея в меню HOME\n(див. мал. вище), щоб\nвиконати такі дії:\n\n• змінити тему меню HOME;\n• зберегти/завантажити вигляд\nменю HOME;\n• відрегулювати яскравість екрана;\n• увімкнути й вимкнути\n  енергоощадний режим;\n• увімкнути й вимкнути\n  бездротовий режим.\n\nНатисніть  HOME будь-коли,\nколи запущено програму\nNintendo 3DS, щоб повернутися\nдо меню HOME й відрегулювати\nяскравість.\n\nУ налаштуваннях меню HOME\nтакож можна отримати\nдоступ до такого:\n\n• сервіс Обмін зображеннями\n  Nintendo 3DS;\n• налаштування amiibo;\n• Nintendo eShop;\n• електронний посібник\n  з меню HOME;\n• системні налаштування.\n\nЦе корисна функція, яку\nварто запам'ятати.\n\nNintendo"
+    "ua": "Торкніться Налаштування\nHOME у верхньому лівому\nкуті сенсорного дисплея\n(див. мал. вище), щоб\nвиконати такі дії:\n\n• змінити тему меню HOME;\n• зберегти/завантажити вигляд\nменю HOME;\n• відрегулювати яскравість;\n• увімкнути й вимкнути\n  енергоощадний режим;\n• увімкнути й вимкнути\n  бездротовий режим.\n\nНатисніть  HOME будь-коли,\nколи запущено програму\nNintendo 3DS, щоб\nповернутися до меню HOME\nй відрегулювати яскравість.\n\nУ налаштуваннях меню HOME\nтакож можна отримати\nдоступ до такого:\n\n• сервіс Обмін зображеннями\n  Nintendo 3DS;\n• керування amiibo;\n• Nintendo eShop;\n• електронний посібник\n  з меню HOME;\n• системні налаштування.\n\nЦе корисна функція, яку\nварто запам'ятати.\n\nNintendo"
   },
   "new_tips8_title": {
     "en": "",
@@ -2309,7 +2309,7 @@
   },
   "new_tips11": {
     "en": "Touch the icons in the upper-right\nof the Touch Screen on the\nHOME Menu to increase or\ndecrease the size of the\nsoftware icons displayed\n(see above image).\n\nChoose a style you like\nto personalise your\nHOME Menu view.\n\nNintendo",
-    "ua": "Торкніться значків у правому\nверхньому куті сенсорного\nдисплея в меню HOME,\nщоб збільшити або зменшити\nпоказаних значків\nпрограм (див. мал. вище).\n\nВи можете вибрати вигляд, який\nвам подобається, і змінити меню\nHOME на свій розсуд.\n\nNintendo"
+    "ua": "Торкніться значків у правому\nверхньому куті сенсорного\nдисплея в меню HOME,\nщоб збільшити або зменшити\nрозмір показаних значків\nпрограм (див. мал. вище).\n\nВи можете вибрати вигляд,\nякий подобається, і змінити\nменю HOME на свій розсуд.\n\nNintendo"
   },
   "new_tips12_title": {
     "en": "About the HOME Button",

@@ -565,11 +565,11 @@
   },
   "Option_NetworkSetKind": {
     "en": "Connection Type",
-    "ua": "Тип з'єднання"
+    "ua": "Тип зв'язку"
   },
   "Option_NetworkSSID": {
     "en": "Connection (SSID)",
-    "ua": "З'єднання (SSID)"
+    "ua": "Зв'язок (SSID)"
   },
   "Option_NetworkSecurity": {
     "en": "Security",

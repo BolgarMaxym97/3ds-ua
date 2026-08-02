@@ -65,11 +65,11 @@
   },
   "base_3b_cancel": {
     "en": "Cancel",
-    "ua": "Скасувати"
+    "ua": "Назад"
   },
   "base_3b_again": {
     "en": "Retry",
-    "ua": "Повторити"
+    "ua": "Повтор"
   },
   "base_3b_ok": {
     "en": "OK",
@@ -269,7 +269,7 @@
   },
   "trans": {
     "en": "System Transfer",
-    "ua": "Перенесення системи"
+    "ua": "Перенос системи"
   },
   "page4": {
     "en": "",
@@ -285,7 +285,7 @@
   },
   "initialize": {
     "en": "Format System Memory",
-    "ua": "Формат. пам'яті"
+    "ua": "Форматування"
   },
   "dlg_bright": {
     "en": "Screen Brightness",
@@ -1125,7 +1125,7 @@
   },
   "update_jump": {
     "en": "Configure your internet\nsettings?",
-    "ua": "Налаштувати інтернет-\nз'єднання?"
+    "ua": "Налаштувати інтернет-\nзв'язок?"
   },
   "update_jump_net": {
     "en": "Set",
@@ -1141,7 +1141,7 @@
   },
   "initialize_title": {
     "en": "Format System Memory",
-    "ua": "Формат. пам'яті"
+    "ua": "Форматування"
   },
   "initial_comm_u": {
     "en": "Restore the system to its\nfactory default settings.",
@@ -1397,23 +1397,23 @@
   },
   "net_top_comm_u": {
     "en": "Configure your internet settings.\n\nSelect settings to adjust.",
-    "ua": "Налаштуйте з'єднання з Інтернетом.\n\nВиберіть налаштування для зміни."
+    "ua": "Налаштуйте зв'язок з Інтернетом.\n\nВиберіть налаштування для зміни."
   },
   "net_bln_init0": {
     "en": "Hello there!\n\nI'm here to help you configure\nyour internet settings.",
-    "ua": "Вітаю!\n\nЯ допоможу налаштувати\nз'єднання з Інтернетом."
+    "ua": "Вітаю!\n\nЯ допоможу налаштувати\nзв'язок з Інтернетом."
   },
   "net_bln_init0_flw": {
     "en": "Hello there!\n\nI'm here to help you configure\nyour internet settings.",
-    "ua": "Вітаю!\n\nЯ допоможу налаштувати\nз'єднання з Інтернетом."
+    "ua": "Вітаю!\n\nЯ допоможу налаштувати\nзв'язок з Інтернетом."
   },
   "net_bln_init1": {
     "en": "Before you can connect to the\ninternet you'll need to set up your\ninternet connection.\n\nTouch Connection Settings to\nget started.",
-    "ua": "Перед під'єднанням до Інтернету\nтреба налаштувати з'єднання.\n\nТоркніться Налаштування\nз'єднання, щоб почати."
+    "ua": "Перед під'єднанням до Інтернету\nтреба налаштувати зв'язок.\n\nТоркніться Налаштування\nзв'язку, щоб почати."
   },
   "net_bln_init1_flw": {
     "en": "Before you can connect to the\ninternet you'll need to set up your\ninternet connection.\n\nTouch Connection Settings to\nget started.",
-    "ua": "Перед під'єднанням до Інтернету\nтреба налаштувати з'єднання.\n\nТоркніться Налаштування\nз'єднання, щоб почати."
+    "ua": "Перед під'єднанням до Інтернету\nтреба налаштувати зв'язок.\n\nТоркніться Налаштування\nзв'язку, щоб почати."
   },
   "net_bln_init2": {
     "en": "If you're not sure what to do,\ntouch me with the stylus and\nI'll help you out.",
@@ -1429,7 +1429,7 @@
   },
   "net_ds_card": {
     "en": "Nintendo DS Connections",
-    "ua": "З'єднання Nintendo DS"
+    "ua": "Зв'язок Nintendo DS"
   },
   "net_option": {
     "en": "Other Information",
@@ -1441,7 +1441,7 @@
   },
   "net_dlg_ds": {
     "en": "Configure your connection\nsettings for Nintendo DS\nsoftware.",
-    "ua": "Налаштуйте з'єднання\nдля програм Nintendo DS."
+    "ua": "Налаштуйте зв'язок\nдля програм Nintendo DS."
   },
   "net_dlg_parental": {
     "en": "",
@@ -1461,23 +1461,23 @@
   },
   "net_set_title": {
     "en": "Connection Settings",
-    "ua": "Налаштування з'єднання"
+    "ua": "Налаштування зв'язку"
   },
   "net_set_comm_u": {
     "en": "Configure your internet connection\nsettings.",
-    "ua": "Налаштуйте з'єднання\nз Інтернетом."
+    "ua": "Налаштуйте зв'язок\nз Інтернетом."
   },
   "net_connect1_u": {
     "en": "Connection 1",
-    "ua": "З'єднання 1"
+    "ua": "Зв'язок 1"
   },
   "net_connect2_u": {
     "en": "Connection 2",
-    "ua": "З'єднання 2"
+    "ua": "Зв'язок 2"
   },
   "net_connect3_u": {
     "en": "Connection 3",
-    "ua": "З'єднання 3"
+    "ua": "Зв'язок 3"
   },
   "net_connect4_u": {
     "en": "Nintendo Wi-Fi USB Connector",
@@ -1513,23 +1513,23 @@
   },
   "net_new_set": {
     "en": "New Connection",
-    "ua": "Нове з'єднання"
+    "ua": "Новий зв'язок"
   },
   "net_connect": {
     "en": "Connection",
-    "ua": "З'єднання"
+    "ua": "Зв'язок"
   },
   "net_new_comm_u": {
     "en": "Select a connection method.",
-    "ua": "Виберіть спосіб з'єднання."
+    "ua": "Виберіть спосіб зв'язку."
   },
   "net_bln_set0": {
     "en": "First, we need to set up an internet\nconnection in New Connection.",
-    "ua": "Спершу треба налаштувати\nз'єднання з Інтернетом у Новому\nз'єднанні."
+    "ua": "Спершу треба налаштувати\nзв'язок з Інтернетом у Новому\nзв'язку."
   },
   "net_bln_set1": {
     "en": "Select New Connection to set up\na new internet connection, or select\nConnections 1, 2 or 3 to adjust\nthe configurations of those\nconnections.",
-    "ua": "Виберіть Нове з'єднання, щоб\nналаштувати нове з'єднання, або\nЗ'єднання 1, 2 чи 3, щоб змінити\nналаштування наявних\nз'єднань."
+    "ua": "Виберіть Новий зв'язок, щоб\nналаштувати новий зв'язок, або\nЗв'язок 1, 2 чи 3, щоб змінити\nналаштування наявних\nзв'язків."
   },
   "net_bln_set2": {
     "en": "You can save up to three connections.\n\nTo create a new connection,\nyou must delete another\nconnection configuration.",
@@ -1537,11 +1537,11 @@
   },
   "net_bln_set_new": {
     "en": "Would you like me to help\nyou set up your internet\nconnection?",
-    "ua": "Допомогти вам налаштувати\nз'єднання з Інтернетом?"
+    "ua": "Допомогти вам налаштувати\nзв'язок з Інтернетом?"
   },
   "net_bln_new_set": {
     "en": "If you're unsure of what to select,\nreturn to the previous screen and\ntouch New Connection one more time.",
-    "ua": "Якщо не знаєте, що вибрати,\nповерніться назад і торкніться\nНове з'єднання ще раз."
+    "ua": "Якщо не знаєте, що вибрати,\nповерніться назад і торкніться\nНовий зв'язок ще раз."
   },
   "net_ap_search": {
     "en": "Search for Access Point",
@@ -1565,7 +1565,7 @@
   },
   "net_bln_set_nav0": {
     "en": "Do you have an access point\nat home you can use to\nconnect to the internet?",
-    "ua": "У вас є вдома точка доступу,\nяку можна використати для\nз'єднання з Інтернетом?"
+    "ua": "У вас є вдома точка доступу,\nяку можна використати для\nзв'язку з Інтернетом?"
   },
   "net_bln_set_nav1": {
     "en": "Do you connect to this\naccess point wirelessly?",
@@ -1585,7 +1585,7 @@
   },
   "net_bln_u_nav0_0": {
     "en": "Broadband Internet\nConnection",
-    "ua": "Широкосмугове\nз'єднання"
+    "ua": "Широкосмуговий\nзв'язок"
   },
   "net_bln_u_nav0_1": {
     "en": "Modem,\nRouter, etc.",
@@ -1633,7 +1633,7 @@
   },
   "net_bln_env_nav2": {
     "en": "Broadband internet\nconnection (ADSL,\ncable or fibre optic)",
-    "ua": "Широкосмугове\nз'єднання (ADSL,\nкабель чи оптика)"
+    "ua": "Широкосмуговий\nзв'язок (ADSL,\nкабель чи оптика)"
   },
   "net_bln_env_nav3": {
     "en": "Generic wireless\naccess point",
@@ -1641,11 +1641,11 @@
   },
   "net_bln_env_nav4": {
     "en": "Services that do not require\na connection configuration to\nconnect to the internet are\ndetailed in the System Settings\nelectronic manual.",
-    "ua": "Сервіси, які не потребують\nналаштування з'єднання,\nописані в електронному\nпосібнику з налаштувань\nсистеми."
+    "ua": "Сервіси, які не потребують\nналаштування зв'язку,\nописані в електронному\nпосібнику з налаштувань\nсистеми."
   },
   "net_bln_env_nav4_flw": {
     "en": "Services that do not require\na connection configuration to\nconnect to the internet are\ndetailed in the System Settings\nelectronic manual.",
-    "ua": "Сервіси, які не потребують\nналаштування з'єднання,\nописані в електронному\nпосібнику з налаштувань\nсистеми."
+    "ua": "Сервіси, які не потребують\nналаштування зв'язку,\nописані в електронному\nпосібнику з налаштувань\nсистеми."
   },
   "net_bln_env_nav5": {
     "en": "After you've set up the\nnecessary equipment, come\nback and try again.\n\nSee you then!",
@@ -1681,7 +1681,7 @@
   },
   "net_bln_set_aoss": {
     "en": "Okay, let's configure\na connection using AOSS.\n\nIf anything's unclear, please\ntouch me.",
-    "ua": "Гаразд, налаштуємо\nз'єднання через AOSS.\n\nЯкщо щось незрозуміло,\nторкніться мене."
+    "ua": "Гаразд, налаштуємо\nзв'язок через AOSS.\n\nЯкщо щось незрозуміло,\nторкніться мене."
   },
   "net_bln_set_aoss_00": {
     "en": "",
@@ -1693,7 +1693,7 @@
   },
   "net_bln_set_wps": {
     "en": "Okay, let's configure a\nconnection using Wi-Fi\nProtected Setup.\nIf anything's unclear, please\ntouch me.",
-    "ua": "Гаразд, налаштуємо з'єднання\nчерез Wi-Fi Protected\nSetup.\nЯкщо щось незрозуміло,\nторкніться мене."
+    "ua": "Гаразд, налаштуємо зв'язок\nчерез Wi-Fi Protected\nSetup.\nЯкщо щось незрозуміло,\nторкніться мене."
   },
   "net_serach_ap_": {
     "en": "",
@@ -1785,11 +1785,11 @@
   },
   "net_dlg_ap_set0": {
     "en": "This access point will be saved\nas Connection %d.\n\nIs this OK?",
-    "ua": "Цю точку доступу буде\nзбережено як З'єднання %d.\n\nПродовжити?"
+    "ua": "Цю точку доступу буде\nзбережено як Зв'язок %d.\n\nПродовжити?"
   },
   "net_dlg_ap_set1": {
     "en": "Connection settings have been\nsaved.\n\nA connection test will now be\nperformed.",
-    "ua": "Налаштування з'єднання\nзбережено.\n\nЗараз буде виконано\nперевірку з'єднання."
+    "ua": "Налаштування зв'язку\nзбережено.\n\nЗараз буде виконано\nперевірку зв'язку."
   },
   "net_dlg_ap_found": {
     "en": "Access point(s) found.",
@@ -1881,7 +1881,7 @@
   },
   "net_dlg_aoss_ok": {
     "en": "AOSS configuration is complete.\nSaving as Connection %d.\n\nA connection test will now be\nperformed.",
-    "ua": "Налаштування AOSS завершено.\nЗбереження як З'єднання %d.\n\nЗараз буде виконано\nперевірку з'єднання."
+    "ua": "Налаштування AOSS завершено.\nЗбереження як Зв'язок %d.\n\nЗараз буде виконано\nперевірку зв'язку."
   },
   "net_dlg_aoss_ng": {
     "en": "AOSS configuration failed.\n\nIf the problem recurs, please\nwait for 5 minutes and try\nagain.",
@@ -1941,19 +1941,19 @@
   },
   "net_wps_comm_u0": {
     "en": "Select a connection method that\nworks with your access point.",
-    "ua": "Виберіть спосіб з'єднання, який\nпідтримує ваша точка доступу."
+    "ua": "Виберіть спосіб зв'язку, який\nпідтримує ваша точка доступу."
   },
   "net_new_wps_push": {
     "en": "Push-Button Connection",
-    "ua": "З'єднання кнопкою"
+    "ua": "Зв'язок кнопкою"
   },
   "net_new_wps_pin": {
     "en": "PIN Connection",
-    "ua": "З'єднання за PIN"
+    "ua": "Зв'язок за PIN"
   },
   "net_wps_comm_u1": {
     "en": "Use PIN Connection.",
-    "ua": "Використати з'єднання за PIN."
+    "ua": "Використати зв'язок за PIN."
   },
   "net_wps_comm_u2": {
     "en": "Wi-Fi\nProtected\nSetup Button",
@@ -1977,7 +1977,7 @@
   },
   "net_bln_new_wps0": {
     "en": "There are two setup methods:\nPush-Button Connection, which\nrequires you to push the Wi-Fi\nProtected Setup button on the access\npoint, and PIN Connection, which\nrequires you to enter a PIN.",
-    "ua": "Є два способи: з'єднання кнопкою,\nде треба натиснути на точці доступу\nкнопку Wi-Fi Protected Setup, і\nз'єднання за PIN-кодом, де треба\nввести PIN."
+    "ua": "Є два способи: зв'язок кнопкою,\nде треба натиснути на точці доступу\nкнопку Wi-Fi Protected Setup, і\nзв'язок за PIN-кодом, де треба\nввести PIN."
   },
   "net_bln_new_wps1": {
     "en": "Do you know where to find\nthe button and the light?\n\nIf not, please refer to the\ninstruction booklet that came\nwith the access point.",
@@ -1997,7 +1997,7 @@
   },
   "net_dlg_wps_ok": {
     "en": "Wi-Fi Protected Setup\nconfiguration complete.\nSaving as Connection %d.\n\nA connection test will now be\nperformed.",
-    "ua": "Налаштування Wi-Fi Protected\nSetup завершено.\nЗбереження як З'єднання %d.\n\nЗараз буде виконано\nперевірку з'єднання."
+    "ua": "Налаштування Wi-Fi Protected\nSetup завершено.\nЗбереження як Зв'язок %d.\n\nЗараз буде виконано\nперевірку зв'язку."
   },
   "net_dlg_wps_ng": {
     "en": "Could not complete Wi-Fi\nProtected Setup configuration.\nCheck your access point\nsettings.\n\nFor help, check the instruction\nbooklet for your access point.",
@@ -2017,7 +2017,7 @@
   },
   "net_new_usb_u0": {
     "en": "Broadband Internet\nConnection",
-    "ua": "Широкосмугове\nз'єднання"
+    "ua": "Широкосмуговий\nзв'язок"
   },
   "net_new_usb_u1": {
     "en": "Modem and/or\nRouter",
@@ -2033,7 +2033,7 @@
   },
   "net_new_usb0": {
     "en": "Plug the Nintendo Wi-Fi USB\nConnector into the USB port of\nany computer connected to a\nbroadband internet connection.",
-    "ua": "Вставте Nintendo Wi-Fi USB\nConnector у USB-порт\nкомп'ютера з широкосмуговим\nз'єднанням з Інтернетом."
+    "ua": "Вставте Nintendo Wi-Fi USB\nConnector у USB-порт\nкомп'ютера з широкосмуговим\nзв'язком з Інтернетом."
   },
   "net_new_usb1": {
     "en": "Launch the Nintendo Wi-Fi USB\nConnector Registration Tool on\nyour computer.\n\nTouch Next once you are ready\nto connect.",
@@ -2069,7 +2069,7 @@
   },
   "net_dlg_usb_ok": {
     "en": "Nintendo Wi-Fi USB Connector\nsetup is complete.\n\nA connection test will now be\nperformed.",
-    "ua": "Налаштування Nintendo Wi-Fi\nUSB Connector завершено.\n\nЗараз буде виконано\nперевірку з'єднання."
+    "ua": "Налаштування Nintendo Wi-Fi\nUSB Connector завершено.\n\nЗараз буде виконано\nперевірку зв'язку."
   },
   "net_dlg_usb_ng": {
     "en": "",
@@ -2085,23 +2085,23 @@
   },
   "net_edit_title": {
     "en": "Edit Connection Settings",
-    "ua": "Зміна налаштувань з'єднання"
+    "ua": "Зміна налаштувань зв'язку"
   },
   "net_edit_comm_u": {
     "en": "Edit your connection settings.",
-    "ua": "Змініть налаштування з'єднання."
+    "ua": "Змініть налаштування зв'язку."
   },
   "net_edit_conn1_u": {
     "en": "Connection 1",
-    "ua": "З'єднання 1"
+    "ua": "Зв'язок 1"
   },
   "net_edit_conn2_u": {
     "en": "Connection 2",
-    "ua": "З'єднання 2"
+    "ua": "Зв'язок 2"
   },
   "net_edit_conn3_u": {
     "en": "Connection 3",
-    "ua": "З'єднання 3"
+    "ua": "Зв'язок 3"
   },
   "net_edit_ssid_u": {
     "en": "SSID",
@@ -2137,15 +2137,15 @@
   },
   "net_edit_change": {
     "en": "Change Settings",
-    "ua": "Змінити з'єднання"
+    "ua": "Змінити зв'язок"
   },
   "net_edit_delete": {
     "en": "Delete Settings",
-    "ua": "Видалити з'єднання"
+    "ua": "Видалити зв'язок"
   },
   "net_edit_test": {
     "en": "Connection Test",
-    "ua": "Перевірка з'єднання"
+    "ua": "Перевірка зв'язку"
   },
   "net_edit_none": {
     "en": "",
@@ -2153,7 +2153,7 @@
   },
   "net_bln_edit_set": {
     "en": "Touch Connection Test to confirm\nwhether or not Connection %d can\nconnect to the internet.",
-    "ua": "Торкніться Перевірка з'єднання,\nщоб дізнатися, чи може З'єднання %d\nпід'єднатися до Інтернету."
+    "ua": "Торкніться Перевірка зв'язку,\nщоб дізнатися, чи може Зв'язок %d\nпід'єднатися до Інтернету."
   },
   "net_fact_": {
     "en": "",
@@ -2161,19 +2161,19 @@
   },
   "net_fact_comm_u": {
     "en": "Which connection setting would you like to\nchange?",
-    "ua": "Яке налаштування з'єднання ви хочете\nзмінити?"
+    "ua": "Яке налаштування зв'язку ви хочете\nзмінити?"
   },
   "net_fact_conn1_u": {
     "en": "Connection 1",
-    "ua": "З'єднання 1"
+    "ua": "Зв'язок 1"
   },
   "net_fact_conn2_u": {
     "en": "Connection 2",
-    "ua": "З'єднання 2"
+    "ua": "Зв'язок 2"
   },
   "net_fact_conn3_u": {
     "en": "Connection 3",
-    "ua": "З'єднання 3"
+    "ua": "Зв'язок 3"
   },
   "net_fact_ip_u": {
     "en": "IP Address:",
@@ -2233,7 +2233,7 @@
   },
   "net_bln_fact_ch0": {
     "en": "Select SSID to manually enter or edit\nthe access point's name.\n\nSelect Security to change the\nsecurity type used to connect\nto the access point.",
-    "ua": "Виберіть SSID, щоб вручну ввести\nчи змінити назву точки доступу.\n\nВиберіть Захист, щоб змінити тип\nзахисту для з'єднання\nз точкою доступу."
+    "ua": "Виберіть SSID, щоб вручну ввести\nчи змінити назву точки доступу.\n\nВиберіть Захист, щоб змінити тип\nзахисту для зв'язку\nз точкою доступу."
   },
   "net_bln_fact_ch1": {
     "en": "These settings are intended for\nadvanced users.\n\nThese should only be configured\nwhen necessary, for example when\nrequested by the internet service\nprovider.",
@@ -2241,11 +2241,11 @@
   },
   "net_dlg_fact_sv": {
     "en": "Settings for Connection %d\nhave now been saved.",
-    "ua": "Налаштування З'єднання %d\nзбережено."
+    "ua": "Налаштування Зв'язку %d\nзбережено."
   },
   "net_dlg_fact_set": {
     "en": "Would you like to perform an \ninternet connection test?",
-    "ua": "Виконати перевірку\nз'єднання з Інтернетом?"
+    "ua": "Виконати перевірку\nзв'язку з Інтернетом?"
   },
   "net_dlg_fact_err": {
     "en": "Enter the SSID.",
@@ -2457,7 +2457,7 @@
   },
   "net_bln_proxy_r0": {
     "en": "Select Yes if you need authentication\nwhen connecting to a proxy server.",
-    "ua": "Виберіть Так, якщо для з'єднання\nз проксі потрібна автентифікація."
+    "ua": "Виберіть Так, якщо для зв'язку\nз проксі потрібна автентифікація."
   },
   "net_bln_proxy_r1": {
     "en": "",
@@ -2501,11 +2501,11 @@
   },
   "net_dlg_delete0": {
     "en": "Delete settings for\nConnection %d.\n\nOnce deleted, these settings\ncannot be recovered.\nAre you sure you want to\ncontinue?",
-    "ua": "Видалити налаштування\nЗ'єднання %d.\n\nПісля видалення їх\nне можна відновити.\nСправді продовжити?"
+    "ua": "Видалити налаштування\nЗв'язку %d.\n\nПісля видалення їх\nне можна відновити.\nСправді продовжити?"
   },
   "net_dlg_delete1": {
     "en": "Settings for Connection %d\nhave been deleted.",
-    "ua": "Налаштування З'єднання %d\nвидалено."
+    "ua": "Налаштування Зв'язку %d\nвидалено."
   },
   "net_test_": {
     "en": "",
@@ -2513,11 +2513,11 @@
   },
   "net_test_title": {
     "en": "Connection Test",
-    "ua": "Перевірка з'єднання"
+    "ua": "Перевірка зв'язку"
   },
   "net_testing": {
     "en": "Testing connection...",
-    "ua": "Перевірка з'єднання…"
+    "ua": "Перевірка зв'язку…"
   },
   "net_bln_test_ok": {
     "en": "Connection Test successful.\n\nUse a compatible software title\nto verify that data transmission\nwith other users is working.",
@@ -2549,7 +2549,7 @@
   },
   "net_bln_test_err": {
     "en": "If this is a temporary connection error,\ntouch Test Again to try connecting one\nmore time.\n\nIf you don't know the security key,\nask the person who set up the access\npoint.",
-    "ua": "Якщо це тимчасова помилка\nз'єднання, торкніться Ще раз, щоб\nспробувати знову.\n\nЯкщо ви не знаєте ключа безпеки,\nзапитайте того, хто налаштовував\nточку доступу."
+    "ua": "Якщо це тимчасова помилка\nзв'язку, торкніться Ще раз, щоб\nспробувати знову.\n\nЯкщо ви не знаєте ключа безпеки,\nзапитайте того, хто налаштовував\nточку доступу."
   },
   "net_test_ng_": {
     "en": "",
@@ -2577,7 +2577,7 @@
   },
   "net_result_ok_u": {
     "en": "Connection successful.",
-    "ua": "З'єднання успішне."
+    "ua": "Зв'язок успішний."
   },
   "net_result_ng_u": {
     "en": "Could not connect.",
@@ -2741,7 +2741,7 @@
   },
   "net_bln_mac": {
     "en": "A MAC address is your system's\nunique network ID.\n\nYou can set wireless access points to\nonly accept connections from certain\nMAC addresses.",
-    "ua": "MAC-адреса — унікальний\nмережевий ID системи.\n\nБездротові точки доступу можна\nналаштувати так, щоб вони\nприймали з'єднання лише\nз певних MAC-адрес."
+    "ua": "MAC-адреса — унікальний\nмережевий ID системи.\n\nБездротові точки доступу можна\nналаштувати так, щоб вони\nприймали зв'язок лише\nз певних MAC-адрес."
   },
   "dat_": {
     "en": "",
@@ -2789,11 +2789,11 @@
   },
   "dat_blist_reset": {
     "en": "Reset blocked-user settings",
-    "ua": "Скинути список заблокованих"
+    "ua": "Скинути список блокованих"
   },
   "dat_dlg_reset0": {
     "en": "Reset blocked-user settings?\n\nOnce this has been reset, there\nwill be no restriction on data that\nwas previously blocked.",
-    "ua": "Скинути список заблокованих\nкористувачів?\n\nПісля скидання дані, які\nраніше блокувалися, більше\nне будуть обмежені."
+    "ua": "Скинути список блокованих\nкористувачів?\n\nПісля скидання дані, які\nраніше блокувалися, більше\nне будуть обмежені."
   },
   "dat_dlg_3ds": {
     "en": "",
@@ -2901,7 +2901,7 @@
   },
   "dat_nand": {
     "en": "System Memory",
-    "ua": "Пам'ять системи"
+    "ua": "Система"
   },
   "dat_sd": {
     "en": "SD Card",
@@ -4905,7 +4905,7 @@
   },
   "st_net_comm_0": {
     "en": "Configure your internet settings.",
-    "ua": "Налаштуйте з'єднання\nз Інтернетом."
+    "ua": "Налаштуйте зв'язок\nз Інтернетом."
   },
   "st_dlg_noeula": {
     "en": "This system will receive\nsystem updates and other\nimportant notices from Nintendo\nvia the internet.",
@@ -4985,15 +4985,15 @@
   },
   "st_net_comm_u_sac": {
     "en": "This system allows you to use\nvarious online services.\n\nAn internet connection is also required\nwhen transferring data from another\nNintendo 3DS system.",
-    "ua": "Ця система дає змогу користуватися\nрізними онлайн-сервісами.\n\nЗ'єднання з Інтернетом також\nпотрібне при перенесенні даних з\nіншої системи Nintendo 3DS."
+    "ua": "Ця система дає змогу користуватися\nрізними онлайн-сервісами.\n\nЗв'язок з Інтернетом також\nпотрібний при перенесенні даних з\nіншої системи Nintendo 3DS."
   },
   "st_net_comm_u_jan": {
     "en": "This system allows you to use\nvarious online services.\n\nAn internet connection is also required\nwhen transferring data from another\nNintendo 3DS system.",
-    "ua": "Ця система дає змогу користуватися\nрізними онлайн-сервісами.\n\nЗ'єднання з Інтернетом також\nпотрібне при перенесенні даних з\nіншої системи Nintendo 3DS."
+    "ua": "Ця система дає змогу користуватися\nрізними онлайн-сервісами.\n\nЗв'язок з Інтернетом також\nпотрібний при перенесенні даних з\nіншої системи Nintendo 3DS."
   },
   "st_net_comm": {
     "en": "Configure your internet\nsettings?",
-    "ua": "Налаштувати з'єднання\nз Інтернетом?"
+    "ua": "Налаштувати зв'язок\nз Інтернетом?"
   },
   "st_3d_comm": {
     "en": "",
@@ -5077,11 +5077,11 @@
   },
   "st_trans_title_u": {
     "en": "System Transfer",
-    "ua": "Перенесення системи"
+    "ua": "Перенос системи"
   },
   "st_trans_comm_u": {
     "en": "System Transfer allows you to transfer\nsoftware save data, your Nintendo\nNetwork ID and more from another\nNintendo 3DS system to this one.",
-    "ua": "Перенесення системи дає змогу\nперенести збереження програм,\nваш Nintendo Network ID та інше\nз іншої системи Nintendo 3DS на цю."
+    "ua": "Перенос системи дає змогу\nперенести збереження програм,\nваш Nintendo Network ID та інше\nз іншої системи Nintendo 3DS на цю."
   },
   "st_trans_comm": {
     "en": "Transfer data to this system\nfrom another Nintendo 3DS\nsystem?",

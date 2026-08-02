@@ -53,7 +53,7 @@
   },
   "DataBrokenNoneBackupEx": {
     "en": "The amiibo data is corrupted.\nYou can restore the data if you\nhave a Nintendo device that has\naccessed this amiibo before.\nIf not, please reset the amiibo\nvia amiibo Settings in the\nHOME Menu Settings.",
-    "ua": "Дані amiibo пошкоджено.\nЇх можна відновити, якщо у вас\nє пристрій Nintendo, який уже\nчитав цей amiibo. Якщо ні —\nскиньте amiibo через\n«Налаштування amiibo»\nу налаштуваннях HOME."
+    "ua": "Дані amiibo пошкоджено.\nЇх можна відновити, якщо у вас\nє пристрій Nintendo, який уже\nчитав цей amiibo. Якщо ні —\nскиньте amiibo через\n«Керування amiibo»\nу налаштуваннях HOME."
   },
   "RestoreData": {
     "en": " Restore",
@@ -309,7 +309,7 @@
   },
   "ChangeableLaterWhere": {
     "en": "This can be changed later in\nHOME Menu Settings ⇒ amiibo Settings.",
-    "ua": "Це можна змінити пізніше:\nналаштування HOME ⇒ налаштування amiibo."
+    "ua": "Це можна змінити пізніше:\nналаштування HOME ⇒ керування amiibo."
   },
   "PushAmiiboAway": {
     "en": "Please remove the amiibo from\nthe NFC area.",
@@ -333,7 +333,7 @@
   },
   "amiiboSettings": {
     "en": "amiibo Settings",
-    "ua": "Налаштування amiibo"
+    "ua": "Керування amiibo"
   },
   "HeaderOwnerNickname": {
     "en": "Register Owner and Nickname",
