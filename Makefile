@@ -16,6 +16,9 @@ extract: ## romfs in work/ -> src/strings/*.json (existing translations are kept
 font: ## re-read the system font -> assets/font_charset.txt + font_widths.json
 	$(PY) tools/font_cmap.py work/$(FONT_TID)/cbf_std.bcfnt.lz assets/font_charset.txt
 
+hud-font: ## re-render the added HUD glyphs -> assets/hud_glyphs.json (needs Pillow)
+	$(PY) tools/hud_glyphs.py --report
+
 validate: ## check translations (glyphs, width, line count, tags)
 	$(PY) tools/validate.py
 

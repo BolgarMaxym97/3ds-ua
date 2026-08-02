@@ -15,6 +15,9 @@ Ukrainian whatever language the console currently runs.
 A title carrying a `blocked` reason is translated but never written to dist/ - see
 skip_blocked() for why shipping it would brick the title.
 
+A title carrying `hud_font` also gets a patched copy of the bitmap font that draws the
+clock line on the top screen - see build_hud_font() and tools/bcfnt.py.
+
 A title carrying `hook_patch` is one Luma cannot hook on its own: next to its romfs the
 build also writes the code.ips and exheader.bin that make LayeredFS work at all. See
 tools/luma_hook.py. Those two files are mandatory for such a title - romfs alone is the
@@ -31,6 +34,7 @@ from pathlib import Path
 
 sys.path.insert(0, str(Path(__file__).parent))
 import banner as banner_mod  # noqa: E402
+import bcfnt  # noqa: E402
 import luma_hook  # noqa: E402
 import msbt as msbt_mod  # noqa: E402
 import romfs  # noqa: E402
@@ -59,6 +63,7 @@ TITLES = {
         # hooks this title unaided. It carries the application names, which HOME Menu reads
         # from NAND and LayeredFS therefore cannot reach. See tools/smdh_names.py.
         "hook_patch": True,
+        "hud_font": "font/Hud_JP.bcfnt",
     },
     # Ships a whole RomFS image, like download_play - see the note there.
     "keyboard": {
@@ -102,6 +107,7 @@ TITLES = {
         "lang": "EU_Russian",
         "ref_lang": "EU_English",
         "hook_patch": True,
+        "hud_font": "font/Hud_JP.bcfnt",
     },
     # `container`: the text lives inside an LZ11+darc archive instead of plain folders.
     # `{lang}` in the path means one archive per language.
@@ -117,6 +123,7 @@ TITLES = {
             r"(?:eu|us|tw)_\w+",
             r"par_(?:cob|oflc)_\d+",
         ],
+        "hud_font": "font/Hud_JP.bcfnt",
     },
     "mii_maker": {
         "tids": ["0004001000022700"],
@@ -172,6 +179,7 @@ TITLES = {
         "lang": "EU_Russian",
         "ref_lang": "EU_English",
         "hook_patch": True,
+        "hud_font": "font/Hud_JP.bcfnt",
     },
     # `message_dirs`: this title keeps its MSBT under romfs/lang/<LANG>/, not message*/.
     "game_notes": {
@@ -180,6 +188,7 @@ TITLES = {
         "lang": "EU_Russian",
         "ref_lang": "EU_English",
         "message_dirs": ["lang"],
+        "hud_font": "lang/Hud.bcfnt",
     },
     # No archive object anywhere in this title, so a mount stub has nothing to jump into:
     # it ships a whole RomFS image read off the SD card, like download_play.
@@ -195,6 +204,7 @@ TITLES = {
         "source_tid": "0004003000009D02",
         "lang": "EU_Russian",
         "ref_lang": "EU_English",
+        "hud_font": "font/Hud.bcfnt",
     },
     "ar_games": {
         "tids": ["0004001000022E00"],
@@ -217,6 +227,7 @@ TITLES = {
         "lang": "EU_Russian",
         "ref_lang": "EU_English",
         "message_dirs": ["message/europe"],
+        "hud_font": "font/Hud.bcfnt",
     },
     "data_transfer": {
         "tids": ["0004001000022A00"],
@@ -224,6 +235,7 @@ TITLES = {
         "lang": "EU_Russian",
         "ref_lang": "EU_English",
         "message_dirs": ["CARDBOARD/message", "CARDBOARD/message/HUD"],
+        "hud_font": "font/Hud.bcfnt",
     },
     # `lang_files`: no language folders at all - the language is part of the file name.
     "face_raiders": {
@@ -462,6 +474,44 @@ def build_smdh(name: str, cfg: dict, romfs: Path, table: dict[str, str]) -> tupl
     return out, stats
 
 
+def load_hud_glyphs() -> dict[int, tuple[list[list[int]], int, int, int]]:
+    """The added HUD glyphs, as tools/bcfnt.py wants them.
+
+    The bitmaps are an asset rather than something generated here: drawing them needs
+    Pillow and an outline font out of another title's romfs, neither of which a build has
+    any business depending on. See tools/hud_glyphs.py for how they are made.
+    """
+    data = json.loads((ROOT / "assets" / "hud_glyphs.json").read_text(encoding="utf-8"))
+    return {
+        int(code, 16): (
+            [[int(nibble, 16) for nibble in row] for row in glyph["rows"]],
+            glyph["left"],
+            glyph["glyph_width"],
+            glyph["char_width"],
+        )
+        for code, glyph in data["glyphs"].items()
+    }
+
+
+def build_hud_font(cfg: dict, romfs: Path) -> tuple[dict[str, bytes], list[str]]:
+    """A copy of the title's HUD font with the letters Ukrainian weekdays need.
+
+    The clock line on the top screen is not drawn with the system font - every applet that
+    shows it carries its own 15x17 bitmap subset, and the Cyrillic in that subset covers
+    the Russian abbreviations only. `Нд` has no glyphs there at all, which is why Sunday
+    renders as empty parentheses.
+    """
+    rel = cfg.get("hud_font")
+    if not rel:
+        return {}, []
+
+    font = bcfnt.parse((romfs / rel).read_bytes())
+    glyphs = load_hud_glyphs()
+    bcfnt.add_glyphs(font, glyphs)
+    added = " ".join(f"{chr(code)} U+{code:04X}" for code in sorted(glyphs))
+    return {rel: bcfnt.build(font)}, [f"{rel}: HUD font + {added}"]
+
+
 def build_title(name: str, table: dict[str, str]) -> list[str]:
     cfg = TITLES[name]
     if cfg.get("blocked"):
@@ -509,8 +559,9 @@ def build_title(name: str, table: dict[str, str]) -> list[str]:
         stats.append(f"{key}: {translated}/{len(msbt.texts)} translated")
 
     smdh_blobs, smdh_stats = build_smdh(name, cfg, romfs, table)
-    stats += smdh_stats + names_stats
-    outputs = cross_blobs | store.outputs(lang, updates) | smdh_blobs
+    hud_blobs, hud_stats = build_hud_font(cfg, romfs)
+    stats += smdh_stats + hud_stats + names_stats
+    outputs = cross_blobs | store.outputs(lang, updates) | smdh_blobs | hud_blobs
     written: list[str] = []
     for tid in cfg["tids"]:
         if luma_hook.has_patch(tid) and luma_hook.kind(tid) == "romfs_from_sd":

@@ -87,6 +87,8 @@ SD:/luma/titles/0004001000022000/romfs/message_EU_LZ.bin
 
 Папки `romfs` немає навмисно у Гри по завантаженню, клавіатури, Здоров'я і безпеки й екрана помилки: сама її наявність зупиняє ці титули на екрані помилки.
 
+У восьми титулах, які показують угорі екрана рядок з датою й часом, поряд із текстом підміняється ще й `Hud.bcfnt` (у декого зветься `Hud_JP.bcfnt`) — окремий растровий шрифт цього рядка. Він не системний: кожен такий титул носить власну копію, і кирилиці в ній рівно стільки, скільки треба російським скороченням днів тижня. Українській «Нд» не було чим малюватися, тому в збірку додано `Н` і `д` — див. [Шрифт верхнього рядка](#шрифт-верхнього-рядка).
+
 TID регіонозалежні. У релізі — **EUR**; для інших регіонів у тих самих папок інші імена:
 
 | Титул | EUR | USA | JPN |
@@ -151,6 +153,18 @@ NAND не змінювався, тому видалення нічого не л
 Окремої клавіші `ґ` немає навмисно: у моді вона й так показується як `г`, тож така клавіша видавала б символ, невідрізнимий від `г`. Апостроф корисніший — в українській він потрібен постійно (`об'єкт`, `п'ять`), а на цій розкладці його не було зовсім.
 
 У списку мов словника пункт `Русский` підписаний як `українс.` — це той самий пункт, що вмикає кириличну клавіатуру.
+
+### Шрифт верхнього рядка
+
+Рядок з датою, часом і батареєю вгорі екрана малюється **не** системним шрифтом. Кожен титул, який його показує, носить у своєму romfs власний `Hud.bcfnt` — растровий шрифт з комірками 15×17 і всього 67 символами: цифри, трохи латиниці, шість ієрогліфів і рівно дев'ять кириличних літер — `В П С Ч б н р с т`. Саме стільки, скільки треба, щоб скласти `Вс Пн Вт Ср Чт Пт Сб`.
+
+Українські `Пн Вт Ср Чт Пт Сб` з цього набору складаються, а `Нд` — ні: `Н` і `д` у шрифті просто немає. Тому неділя показувалася як порожні дужки, `02.08 ( ) 00 25`.
+
+Збірка додає ці дві літери в шрифт. Гліфи взяті не звідки-небудь, а з `nintendo_NTLG-DB_001` — тієї самої гарнітури, з якої растровано решту шрифту; її TTF лежить у romfs браузера. Параметри растеризації (кегль, обведення, гама, вертикаль) не вгадані, а підібрані так, щоб якнайточніше відтворити дев'ять кириличних літер, які у шрифті вже є, — див. `tools/hud_glyphs.py`. Нові гліфи стають у вільні комірки останнього аркуша текстури, тож файл росте на 12 байтів.
+
+Підміняється у восьми титулах: Меню HOME, Налаштування системи, Список друзів, Повідомлення, Ігрові записи, Браузер, eShop, Перенесення даних. Шлях у більшості — `romfs/font/Hud.bcfnt` або `Hud_JP.bcfnt`, в Ігрових записах — `romfs/lang/Hud.bcfnt`. Файл у всіх восьми той самий, байт у байт.
+
+Nintendo Zone теж носить цей шрифт, але власних назв днів тижня в його romfs немає, тож там шрифт не підміняється.
 
 ### Що входить у реліз
 
@@ -481,6 +495,7 @@ make sd SD=/Volumes/<назва_SD>   # скопіювати прямо на SD
 | `tools/lz11.py` | LZ11 розпак/пак |
 | `tools/msbt.py` | MSBT (`MsgStdBn`) читання/зборка, round-trip байт-у-байт |
 | `tools/font_cmap.py` | BCFNT → перелік символів і ширин гліфів |
+| `tools/bcfnt.py` | BCFNT читання/зборка (round-trip байт-у-байт) і додавання гліфів |
 | `tools/extract.py` | romfs → JSON для перекладу |
 | `tools/validate.py` | перевірка перекладів проти межі UI |
 | `tools/build.py` | JSON → MSBT → LZ11 → `dist/` |
@@ -488,6 +503,8 @@ make sd SD=/Volumes/<назва_SD>   # скопіювати прямо на SD
 | `tools/package.py` | ZIP для релізу |
 | `tools/layeredfs_check.py` | чи зможе Luma під'єднати LayeredFS до титулу |
 | `tools/luma_hook.py` | `code.ips` + `exheader.bin` для титулів, яких Luma не хукає сама |
+
+Окремо стоїть `tools/hud_glyphs.py` — він малює `Н` і `д` для шрифту верхнього рядка і потребує Pillow, тож у збірку не входить: результат лежить готовим у `assets/hud_glyphs.json`. Перемалювати — `make hud-font`.
 
 ### Як допомогти з перекладом
 
@@ -589,6 +606,13 @@ Why the last ten carry `exheader.bin`, and most of them `code.ips` too: see [Wha
 
 Download Play, the Software Keyboard and Health & Safety Information ship no `romfs` folder on purpose — its mere presence halts those titles on an exception screen.
 
+The eight titles that draw the date-and-clock line at the top of the screen also get a
+replaced `Hud.bcfnt` (`Hud_JP.bcfnt` in some of them) next to their text: the bitmap font
+that line is drawn with. It is not the system font — each such title carries its own copy,
+whose Cyrillic covers the Russian weekday abbreviations and nothing else. Ukrainian `Нд`
+had no letters to draw with, so the build adds `Н` and `д`; see
+[The top-bar font](#the-top-bar-font).
+
 TIDs are region-specific. The release targets **EUR**; on other regions the same folders have different names:
 
 | Title | EUR | USA | JPN |
@@ -651,6 +675,29 @@ Ukrainian needs it constantly (`об'єкт`, `п'ять`) and this layout had n
 
 In the dictionary language list, the `Русский` entry is labelled `українс.` — it is the
 same entry that switches the keyboard to Cyrillic.
+
+### The top-bar font
+
+The date, clock and battery line at the top of the screen is **not** drawn with the shared
+system font. Every title that shows it carries its own `Hud.bcfnt` in its romfs: a bitmap
+font of 15x17 cells with 67 code points — digits, some Latin, six kanji, and exactly nine
+Cyrillic letters, `В П С Ч б н р с т`. Precisely enough to spell `Вс Пн Вт Ср Чт Пт Сб`.
+
+Ukrainian `Пн Вт Ср Чт Пт Сб` are covered by that set. `Нд` is not: the font has no `Н`
+and no `д` at all, which is why Sunday used to render as empty brackets, `02.08 ( ) 00 25`.
+
+The build adds the two letters. The glyphs come from `nintendo_NTLG-DB_001` — the same
+typeface the rest of the font was rasterised from, and a copy of its TTF ships inside the
+browser's romfs. The rasterisation parameters (size, stroke, gamma, vertical placement)
+are not guessed but fitted to reproduce the nine Cyrillic glyphs the font already has, as
+closely as possible; see `tools/hud_glyphs.py`. The new glyphs go into free cells on the
+last texture sheet, so the file grows by 12 bytes.
+
+Replaced in eight titles: HOME Menu, System Settings, Friend List, Notifications, Game
+Notes, Browser, eShop, System Transfer. The path is `romfs/font/Hud.bcfnt` or
+`Hud_JP.bcfnt` in most of them and `romfs/lang/Hud.bcfnt` in Game Notes; the file itself is
+byte-identical across all eight. Nintendo Zone carries the same font but no weekday strings
+of its own, so it is left alone.
 
 ### What is in the release
 
@@ -1056,7 +1103,9 @@ No Nintendo files are included in this repository. You need a romfs dump from **
 make font extract validate build package
 ```
 
-Python 3.11+, no dependencies. Tools: LZ11 (de)compressor, MSBT parser/builder with byte-exact round-trip, BCFNT glyph/width reader, extractor, validator, builder, width fitter, packager.
+Python 3.11+, no dependencies. Tools: LZ11 (de)compressor, MSBT parser/builder with byte-exact round-trip, BCFNT reader/builder (also byte-exact) that can add glyphs to a font, extractor, validator, builder, width fitter, packager.
+
+One tool sits outside the build: `tools/hud_glyphs.py` draws the `Н` and `д` added to the top-bar font and needs Pillow, so its output is committed as `assets/hud_glyphs.json`. Redraw it with `make hud-font`.
 
 ### Contributing translations
 

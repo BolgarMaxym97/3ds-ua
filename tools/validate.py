@@ -15,6 +15,10 @@ Rules (every violation is an error):
   6. the set of format specifiers (%d, %ls, %H, ...) matches no official localisation of
      that label: the app would print garbage or crash. Any localisation's set is accepted,
      because languages legitimately differ (%d %n '%y in English vs %d.%M.%y in German).
+  7. a character missing from the *HUD* font in one of the labels that font draws. The
+     clock line on the top screen has its own 15x17 bitmap subset per title, far smaller
+     than the system font, and a letter it lacks is simply not drawn - which is how
+     Ukrainian Sunday spent a release showing as `( )`.
 
 Labels that share one UI slot (e.g. every entry of the language list) can be grouped
 with `budget_groups` regexes in TITLES: the group's widest member sets the budget for
@@ -36,7 +40,8 @@ from dataclasses import dataclass, field
 from pathlib import Path
 
 sys.path.insert(0, str(Path(__file__).parent))
-from build import TITLES, apply_homoglyphs, load_all_langs, load_homoglyphs  # noqa: E402
+import bcfnt  # noqa: E402
+from build import TITLES, apply_homoglyphs, load_all_langs, load_homoglyphs, load_hud_glyphs  # noqa: E402
 from msbt import TOKEN_RE  # noqa: E402
 from msbt import parse as msbt_parse  # noqa: E402
 from store import open_store  # noqa: E402
@@ -53,6 +58,10 @@ WIDTH_LIMIT = 1.0
 # hair wider than "Открыть", and far too little to hide a real overflow.
 WIDTH_SLACK = 8
 BRACE_RE = re.compile(r"\{[^}]*\}")
+# The labels the HUD font draws, as opposed to the rest of hud.msbt: the clock line's
+# date format and its parts. `lau_connect*` and friends sit below it in the system font,
+# which is why this is a list of what the small font touches rather than a whole file.
+HUD_LABEL_RE = re.compile(r"lau_(?:date|birthday|hours|minutes)|(?:month|day|week)_\w+")
 # %% is a literal percent sign and must survive translation, so it is matched first;
 # a space is not part of the flags here - it would swallow the next word's first letter.
 FORMAT_RE = re.compile(r"%%|%[-+#0-9.]*(?:ls|lc|[a-zA-Z])")
@@ -74,6 +83,13 @@ def load_charset() -> set[int]:
 def load_widths() -> dict[int, int]:
     data = json.loads((ROOT / "assets" / "font_widths.json").read_text(encoding="utf-8"))
     return {int(code, 16): width for code, width in data.items()}
+
+
+def hud_charset(cfg: dict) -> set[int]:
+    """What the title's HUD font can draw once the build has added its glyphs to it."""
+    path = ROOT / "work" / cfg["source_tid"] / "romfs" / cfg["hud_font"]
+    font = bcfnt.parse(path.read_bytes())
+    return set(font.cmap) | set(load_hud_glyphs())
 
 
 def strip_tags(text: str) -> str:
@@ -128,12 +144,19 @@ def check_entry(
     table: dict[str, str],
     widths: dict[int, int],
     budget: Budget,
+    hud: set[int] | None = None,
 ) -> list[str]:
     ua = entry.get("ua", "")
     if not ua:
         return []
 
     problems: list[str] = []
+
+    if hud is not None and HUD_LABEL_RE.fullmatch(label):
+        missing = {ch for ch in strip_tags(apply_homoglyphs(ua, table)) if ord(ch) not in hud}
+        if missing:
+            chars = " ".join(f"{ch!r} U+{ord(ch):04X}" for ch in sorted(missing))
+            problems.append(f"{label}: characters missing from the HUD font: {chars}")
 
     for brace in BRACE_RE.findall(ua):
         if not TOKEN_RE.fullmatch(brace):
@@ -199,8 +222,10 @@ def untranslatable(name: str) -> set[str]:
 def validate(
     name: str, charset: set[int], table: dict[str, str], widths: dict[int, int]
 ) -> tuple[int, int, list[str]]:
+    cfg = TITLES[name]
     strings_dir = ROOT / "src" / "strings" / name
     budgets = label_budgets(name, widths)
+    hud = hud_charset(cfg) if cfg.get("hud_font") else None
     skip = untranslatable(name)
     total = translated = 0
     problems: list[str] = []
@@ -210,7 +235,7 @@ def validate(
     for key, labels in load_all_langs(strings_dir).items():
         for label, text in labels.items():
             entry = {"en": "", "ua": text}
-            for problem in check_entry(label, entry, charset, table, widths, budgets.get(label, Budget())):
+            for problem in check_entry(label, entry, charset, table, widths, budgets.get(label, Budget()), hud):
                 problems.append(f"_all_langs.json: {problem}")
 
     for json_file in sorted(strings_dir.glob("*.json")):
@@ -222,7 +247,7 @@ def validate(
                 total += 1
                 if entry.get("ua"):
                     translated += 1
-            for problem in check_entry(label, entry, charset, table, widths, budgets.get(label, Budget())):
+            for problem in check_entry(label, entry, charset, table, widths, budgets.get(label, Budget()), hud):
                 problems.append(f"{json_file.name}: {problem}")
 
     return total, translated, problems

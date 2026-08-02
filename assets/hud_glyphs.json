@@ -1,0 +1,81 @@
+{
+  "_comment": "Glyphs added to the HUD font (Hud.bcfnt / Hud_JP.bcfnt) so the Ukrainian weekday Нд has letters to draw with. Written by tools/hud_glyphs.py; `rows` is one hex alpha nibble per pixel, ink flush left as the cells store it.",
+  "_source": {
+    "font": "nintendo_NTLG-DB_001 (0004003000009D02 romfs/font/nintendo.ttf)",
+    "cell": [
+      15,
+      17
+    ],
+    "advance_scale": 1.03,
+    "advance_exact": "65/66",
+    "pixel_size": 14,
+    "stroke": 1,
+    "y_offset": -2,
+    "gamma": 0.45,
+    "error": 1337,
+    "per_glyph": {
+      "0412": 103,
+      "041F": 93,
+      "0421": 316,
+      "0427": 98,
+      "0431": 281,
+      "043D": 48,
+      "0440": 117,
+      "0441": 229,
+      "0442": 52
+    },
+    "bearing_exact": "62/66"
+  },
+  "glyphs": {
+    "041D": {
+      "char": "Н",
+      "left": 1,
+      "glyph_width": 11,
+      "char_width": 11,
+      "rows": [
+        "000000000000000",
+        "AEEB007EED30000",
+        "DFFE00AFFF70000",
+        "DFFE00AFFF70000",
+        "DFFE00AFFF70000",
+        "DFFFAACFFF70000",
+        "DFFFFFFFFF70000",
+        "DFFFFFFFFF70000",
+        "DFFFFFFFFF70000",
+        "DFFE00AFFF70000",
+        "DFFE00AFFF70000",
+        "DFFE00AFFF70000",
+        "DFFE00AFFF70000",
+        "AFFC007FFE30000",
+        "000000000000000",
+        "000000000000000",
+        "000000000000000"
+      ]
+    },
+    "0434": {
+      "char": "д",
+      "left": 0,
+      "glyph_width": 11,
+      "char_width": 9,
+      "rows": [
+        "000000000000000",
+        "000000000000000",
+        "000000000000000",
+        "000000000000000",
+        "02CEEEEED500000",
+        "07FFFFFFF900000",
+        "07FFFFFFF900000",
+        "07FFFBFFF900000",
+        "08FFF7FFF900000",
+        "09FFF6FFF900000",
+        "2DFFF9FFFB00000",
+        "BFFFFFFFFF70000",
+        "CFFFFFFFFF90000",
+        "CFFFFFFFFF90000",
+        "BFFD004FFF70000",
+        "288400068700000",
+        "000000000000000"
+      ]
+    }
+  }
+}
