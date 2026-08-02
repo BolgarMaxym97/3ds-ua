@@ -33,7 +33,9 @@ import sys
 from pathlib import Path
 
 sys.path.insert(0, str(Path(__file__).parent))
+import area as area_mod  # noqa: E402
 import banner as banner_mod  # noqa: E402
+import csvtab  # noqa: E402
 import bcfnt  # noqa: E402
 import luma_hook  # noqa: E402
 import msbt as msbt_mod  # noqa: E402
@@ -44,6 +46,9 @@ import smdh_names  # noqa: E402
 from store import open_store  # noqa: E402
 
 ROOT = Path(__file__).resolve().parent.parent
+
+# The country code the mod takes over: Russia's, because Nintendo's table has no Ukraine.
+UKRAINE_CODE = 100
 
 # Titles: strings project name -> target TIDs, language slot, dump used as source.
 #
@@ -129,6 +134,13 @@ TITLES = {
             r"par_(?:cob|oflc)_\d+",
         ],
         "hud_font": "font/Hud_JP.bcfnt",
+        # `hook_patch` here ships only a code.ips, and not to make LayeredFS work - Luma
+        # hooks this title unaided. It points the `area:` mount at the SD card so the
+        # country and region lists of Profile settings can be replaced; those live in the
+        # shared data archive 0004009B00010402, which LayeredFS cannot reach. See
+        # build_area() and tools/area.py.
+        "hook_patch": True,
+        "area": "0004009B00010402",
     },
     "mii_maker": {
         "tids": ["0004001000022700"],
@@ -149,6 +161,18 @@ TITLES = {
         "ref_lang": "EU_English",
         "container": "msg/{lang}.LZ",
     },
+    # The camera the HOME Menu opens on L+R - an applet of its own, separate from the
+    # Camera application above, with the same flat msg/ table. Thumb-compiled, so Luma's
+    # ARM signature search can never hook it: it ships a whole RomFS image read off the SD
+    # card, like download_play and the error applet. See tools/luma_hook.py.
+    "camera_applet": {
+        "tids": ["0004003000009902"],  # camera applet, EUR
+        "source_tid": "0004003000009902",
+        "lang": "EU_Russian",
+        "ref_lang": "EU_English",
+        "container": "msg/{lang}.LZ",
+        "hook_patch": True,
+    },
     "sound": {
         "tids": ["0004001000022500"],
         "source_tid": "0004001000022500",
@@ -159,13 +183,19 @@ TITLES = {
     # Plain layout like the HOME Menu: one uncompressed MEET.msbt per language folder.
     # `hook_patch` here ships only an exheader: Luma hooks the title unaided, but its
     # accessInfo has no DirectSdmc and Luma's payload still reads off the SD card.
+    # `csv_tables`: the StreetPass Map names the places you met people in, and those names
+    # live in UTF-16 CSV tables rather than MSBT - see build_csv().
     "mii_plaza": {
         "tids": ["0004001000022800"],
         "source_tid": "0004001000022800",
         "lang": "EU_Russian",
         "ref_lang": "EU_English",
         "hook_patch": True,
-    },
+            "csv_tables": {
+            "param/country.csv": "country.json",
+            "param/region.csv": "region.json",
+        },
+},
     # Same per-language darc as Mii Maker, but the applet has no fsMountArchive of its
     # own, so it needs the tools/luma_hook.py treatment before it can ship.
     "mii_selector": {
@@ -454,6 +484,135 @@ def write_romfs_image(tid: str, romfs_dir: Path, overrides: dict[str, bytes]) ->
     ]
 
 
+def build_csv(cfg: dict, romfs: Path, table: dict[str, str]) -> tuple[dict[str, bytes], list[str]]:
+    """Translate the Russian column of the StreetPass Map's country and region tables.
+
+    The map names the places you met people in, and those names live in UTF-16 CSV rather
+    than MSBT - one column per language, Russian at index 11. Rows are keyed by
+    "<country code>:<address id>", which is the same id the `area` archive numbers its
+    regions with, so the two tables cannot drift apart.
+
+    Country code 100 was Russia and is Ukraine now, exactly as in the `area` archive. Its
+    region block is not translated but rebuilt: the 83 Russian rows go, and 27 Ukrainian
+    ones take ids 2..28 - the same ids, in the same order, as the region file the country
+    list hands to Ukraine. Every language column of those rows gets the transliteration and
+    the Russian one the Ukrainian name, because the rows are Ukraine's now.
+    """
+    files = cfg.get("csv_tables")
+    if not files:
+        return {}, []
+
+    strings = ROOT / "src" / "strings" / "plaza_map"
+    render = lambda text: apply_homoglyphs(text, table)  # noqa: E731
+    regions = json.loads((ROOT / "src" / "strings" / "area" / "EU_100.json").read_text(encoding="utf-8"))
+    ukraine = {int(i) + 1: entry for i, entry in regions.items() if i.isdigit()}
+
+    blobs, log = {}, []
+    for rel, json_name in files.items():
+        names = json.loads((strings / json_name).read_text(encoding="utf-8"))
+        parsed = csvtab.load(romfs / rel)
+        keep: list[csvtab.Row] = []
+        rebuilt = 0
+        for row in parsed.rows:
+            if not row.is_row:
+                keep.append(row)
+                continue
+            key = csvtab.key_of(row)
+            code = int(row.fields[csvtab.COUNTRY_ID])
+            if code == UKRAINE_CODE and key not in names:
+                # A Russian region row: dropped, and the Ukrainian ones are appended below.
+                continue
+            entry = names.get(key)
+            if entry is None:
+                raise SystemExit(f"mii_plaza: {rel} row {key} has no translation in {json_name}")
+            row.fields[csvtab.RUSSIAN] = render(entry["ua"])
+            keep.append(row)
+            if code == UKRAINE_CODE and json_name == "region.json":
+                template = row
+                for index, region in sorted(ukraine.items()):
+                    fields = list(template.fields)
+                    fields[csvtab.ADDRESS] = region["latin"]
+                    fields[csvtab.ADDRESS_ID] = str(index)
+                    for slot in range(csvtab.ENGLISH, len(fields)):
+                        fields[slot] = render(region["ua"]) if slot == csvtab.RUSSIAN else region["latin"]
+                    keep.append(csvtab.Row("", fields))
+                    rebuilt += 1
+        parsed.rows = keep
+        blobs[rel] = parsed.build()
+        note = f", {rebuilt} Ukrainian region rows rebuilt" if rebuilt else ""
+        log.append(f"{rel}: {len(names)} names translated{note}")
+    return blobs, log
+
+
+def build_area(cfg: dict, tid: str, table: dict[str, str]) -> list[str]:
+    """Write the `area` archive next to the title, with the EU lists translated.
+
+    The whole dumped archive ships, all six console regions of it: the code patch makes the
+    `area:` mount unconditional, so a console that reports a region other than EU has to
+    find its files here too. Only the two EU files differ from the dump.
+
+    Country code 100 was Russia and is now Ukraine, which is the same trade the language
+    slot makes - Nintendo's country table has no Ukraine in any region. Its region list is
+    therefore not translated but replaced: 83 Russian regions out, 27 Ukrainian ones in, so
+    that file is re-emitted at the new size and the country record's own count follows.
+    """
+    source = ROOT / "work" / cfg["area"] / "romfs"
+    if not source.is_dir():
+        raise SystemExit(
+            f"system_settings: the country lists need the `area` archive dumped to "
+            f"work/{cfg['area']}/romfs/ (see docs/dumping.md)"
+        )
+
+    strings = ROOT / "src" / "strings" / "area"
+    countries = json.loads((strings / "EU_country.json").read_text(encoding="utf-8"))
+    regions = json.loads((strings / "EU_100.json").read_text(encoding="utf-8"))
+    render = lambda text: apply_homoglyphs(text, table)  # noqa: E731
+
+    country = area_mod.load(source / "EU" / "country_LZ.bin")
+    area_mod.set_names(
+        country,
+        {int(code): entry["ua"] for code, entry in countries.items() if code.isdigit()},
+        render=render,
+    )
+    area_mod.resort(country)
+    area_mod.set_sub_count(country, UKRAINE_CODE, len(regions) - 1)
+
+    ukraine = area_mod.resize(area_mod.load(source / "EU" / f"{UKRAINE_CODE}_LZ.bin"), len(regions) - 1)
+    # JSON keys are 1..27 in list order; the records they land in are numbered from 2.
+    names = {int(i) + 1: entry for i, entry in regions.items() if i.isdigit()}
+    # The Russian slot carries the Ukrainian names; every other slot carries the
+    # transliteration, because this file's records are Ukraine's now and leaving Russian
+    # regions in the other languages would be worse than a name no EUR console displays.
+    for slot in range(area_mod.NAME_SLOTS):
+        ua = slot == area_mod.RU_SLOT
+        key = "ua" if ua else "latin"
+        area_mod.set_names(ukraine, {i: e[key] for i, e in names.items()}, slot=slot, render=render)
+        area_mod.resort(ukraine, slot=slot)
+
+    dest = ROOT / "dist" / "luma" / "titles" / tid / "area"
+    replaced = {
+        "EU/country_LZ.bin": country,
+        f"EU/{UKRAINE_CODE}_LZ.bin": ukraine,
+    }
+    written = 0
+    for path in sorted(source.rglob("*_LZ.bin")):
+        rel = path.relative_to(source).as_posix()
+        target = dest / rel
+        target.parent.mkdir(parents=True, exist_ok=True)
+        if rel in replaced:
+            area_mod.save(replaced[rel], target)
+        else:
+            target.write_bytes(path.read_bytes())
+        written += 1
+
+    return [
+        f"  area: {len(countries) - 1} EU countries translated, code {UKRAINE_CODE} is now "
+        f"{countries[str(UKRAINE_CODE)]['ua']} with {len(regions) - 1} regions "
+        f"(was {countries[str(UKRAINE_CODE)]['ru']}, 83)",
+        f"{dest.relative_to(ROOT)}/ ({written} files)",
+    ]
+
+
 def build_smdh(name: str, cfg: dict, romfs: Path, table: dict[str, str]) -> tuple[dict[str, bytes], list[str]]:
     """Patched copies of the SMDH files a title keeps in its romfs.
 
@@ -569,10 +728,12 @@ def build_title(name: str, table: dict[str, str]) -> list[str]:
         updates[key] = msbt_mod.build(msbt)
         stats.append(f"{key}: {translated}/{len(msbt.texts)} translated")
 
+    csv_blobs, csv_stats = build_csv(cfg, romfs, table)
+    stats += csv_stats
     smdh_blobs, smdh_stats = build_smdh(name, cfg, romfs, table)
     hud_blobs, hud_stats = build_hud_font(cfg, romfs)
     stats += smdh_stats + hud_stats + names_stats
-    outputs = cross_blobs | store.outputs(lang, updates) | smdh_blobs | hud_blobs
+    outputs = cross_blobs | store.outputs(lang, updates) | csv_blobs | smdh_blobs | hud_blobs
     written: list[str] = []
     for tid in cfg["tids"]:
         if luma_hook.has_patch(tid) and luma_hook.kind(tid) == "romfs_from_sd":
@@ -584,6 +745,10 @@ def build_title(name: str, table: dict[str, str]) -> list[str]:
             dest.parent.mkdir(parents=True, exist_ok=True)
             dest.write_bytes(blob)
             written.append(f"{dest.relative_to(ROOT)} ({len(blob)} bytes)")
+
+    for tid in cfg["tids"]:
+        if cfg.get("area"):
+            written += build_area(cfg, tid, table)
 
     for tid, (files, log) in hooks.items():
         written += [f"  {line}" for line in log]

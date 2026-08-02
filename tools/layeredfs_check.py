@@ -247,7 +247,9 @@ def check(title_dir: Path) -> bool | None:
     # it looks for the symbols, so that is the code the verdict has to be about.
     if patched:
         code = luma_hook.patched_code(title_dir.name, code)
-        print(f"  code.ips + exheader.bin from tools/luma_hook.py applied")
+        shipped = "exheader.bin" if luma_hook.kind(title_dir.name) == "exheader_only" \
+            else "code.ips + exheader.bin"
+        print(f"  {shipped} from tools/luma_hook.py applied")
 
     symbols = find_symbols(code, min(text_size, len(code)))
     got = {name: off for name, off in symbols.items() if off is not None}

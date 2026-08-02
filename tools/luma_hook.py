@@ -76,6 +76,9 @@ PANE_SCRATCH_UNITS = 0x100
 # The buffer itself plus its terminator, rounded to a word - what .bss grows by.
 PANE_SCRATCH_BYTES = (2 * PANE_SCRATCH_UNITS + 2 + 3) & ~3
 
+# Stands in for a branch whose target only the build knows - see patched_code().
+PLACEHOLDER_BRANCH = 0xEAFFFFFE  # b .
+
 # The first instruction of each HOME Menu function the branches replace.
 ORIGINAL_THUNK_WORD = 0xE92D4008  # push {r3, lr}
 ORIGINAL_CACHE_WORD = 0xE92D4FF0  # push {r4-r8, sb, sl, fp, lr}
@@ -344,6 +347,42 @@ HOOK_PATCHES: dict[str, dict] = {
         "mount_tail": 0x3D344,   # MountRomFs()'s result check, entered with r0 = result
         "globals_off": 0x3D3B0,  # literal holding the nn::fs globals base (+0x10 = fs:USER session)
     },
+    # Camera applet (the camera the HOME Menu opens on L+R), EUR, title version 2.
+    # Verified working on hardware.
+    #
+    # The only Thumb-compiled title in this table, which decides everything about it:
+    #
+    #   - Luma's five signatures are ARM instruction words, so findLayeredFsSymbols() finds
+    #     nothing here and never will. Planting ARM stubs would not help either - Luma hooks
+    #     the title's *own* fsRegisterArchive/fsTryOpenFile so that the title's file opens
+    #     land on the SD card, and this title's are Thumb functions at other addresses.
+    #     LayeredFS is out; this goes the Download Play way instead.
+    #   - Its FS wrappers build the IPC header at run time from (cmd id, normal, translate)
+    #     in registers instead of loading a literal, so there is no 0x08030204 in .code to
+    #     search for. The wrappers were found by walking the callers of svcSendSyncRequest
+    #     (the ARM leaf `svc 0x32 ; bx lr` at 0x7EE1C) instead.
+    #
+    # Both ARCHIVE_ROMFS opens go through FSUSER_OpenFileDirectly at 0x7F068: the reader
+    # behind "rom:" calls it at 0x2048, the second reader at 0xCF08. Neither the title's
+    # three FSUSER_OpenArchive calls (archive 7 and 8, plus one generic wrapper) nor its
+    # single FSUSER_OpenFile touch the RomFS, so those two sites are all of it.
+    #
+    # That wrapper's caller frame lays the arguments out exactly like the ARM titles above -
+    # file path type at sp+0xC, pointer at sp+0x10, size at sp+0x14 - and the archive path
+    # is already the empty one MakeEmptyPath() at 0x7F0F8 builds, which is what ARCHIVE_SDMC
+    # wants too. The stub goes in the .text page padding; with no romfs/ folder shipped,
+    # patchLayeredFs() returns early and Luma never claims any of it.
+    "0004003000009902": {
+        "title": "Camera applet EUR",
+        "title_version": 2,
+        "code_sha256": "948f1a67417e5b54f0793e8b9e639bd03210da71a4fbdc02ca1868556c8f551a",
+        "kind": "romfs_from_sd",
+        "encoding": "thumb",
+        "image_name": "camera_applet_romfs.bin",
+        "stub_off": 0xCB9F0,        # .text page padding, 0xCB9F0..0xCC000
+        "stub_room": 1552,
+        "sites": [{"patch_at": 0x02044}, {"patch_at": 0x0CF04}],
+    },
     # Software Keyboard (swkbd), EUR, title version 4. Same shape as Download Play.
     #
     # It has a third OpenFileDirectly call site at 0x6F7C0, but that one opens
@@ -362,6 +401,61 @@ HOOK_PATCHES: dict[str, dict] = {
             {"patch_at": 0x0E958, "return_to": 0x0E95C},
         ],
     },
+    # System Settings (mset), EUR, title version 12.
+    #
+    # Not a LayeredFS hook at all: Luma hooks this title unaided, its exheader already
+    # grants DirectSdmc, and its romfs is replaced the ordinary way. This patch exists for
+    # the one screen LayeredFS cannot reach - the country and region lists in Profile
+    # settings, which do not live in this title's romfs. The code mounts a *shared data
+    # archive* and reads them from there:
+    #
+    #     0xBED4  ldr r2, =0x00010402      \
+    #     0xBED8  ldr r3, =0x0004009B       |  0x0004009B00010402, the `area` archive
+    #     0xBEDC  ldr r0, ="area:"          |
+    #     0xBEE8  bl  0x1C7C6C              /  MountByTitleId(name, tidLo, tidHi, ...)
+    #     0xBEF4  ldr r0, =0x297900            the table of paths, one per console region
+    #     0xBEFC  ldr r0, [r0, r1, lsl #2]     "area:/EU/country_LZ.bin"
+    #     0xBF04  bl  0x1C7BB4                 load the whole file
+    #     0xBF10  bl  0x1C7A54                 Unmount("area:")
+    #
+    # LayeredFS redirects a title's own romfs and nothing else, so `area:` is out of its
+    # reach. What is in reach is the mount itself: the title already carries
+    #
+    #     0x1A1654  MountSdmc(const char *name)   mov r1, #9 (ARCHIVE_SDMC); OpenArchive;
+    #                                             register under `name`
+    #
+    # used seventeen times for its own SD access, and it takes the mount name in r0 - which
+    # is what both `area:` sites already have there. So the whole patch is to retarget two
+    # `bl` instructions from MountByTitleId to MountSdmc, after which `area:/...` resolves
+    # against the SD card, and to repoint the path tables at strings under
+    # /luma/titles/0004001000022000/area/. The tid loads into r2/r3 become dead; the stack
+    # arguments the caller writes are ignored; the unmount is the same call either way.
+    #
+    # Both path tables are repointed for every console region, not just EU: the mount is
+    # unconditional, so a console reporting any other region has to find its files on the
+    # SD card too. The build ships the whole dumped archive, so it does.
+    "0004001000022000": {
+        "title": "System Settings (mset) EUR",
+        "title_version": 12,
+        "code_sha256": "3dbb076b95304d3612b7b746a2927576b84bd83bd2b2db9f71c41cf732737cec",
+        "kind": "area_from_sd",
+        # .text offsets, like every other patch here: va 0x1C7C6C and va 0x1A1654.
+        "mount_by_title_id": 0x0C7C6C,
+        "mount_sdmc": 0x0A1654,
+        "mount_sites": [0x0BEE8, 0x942C4],  # the country list and the region list
+        # Two tables of 7 pointers in .data, indexed by console region. EU appears twice -
+        # Nintendo's own duplicate - and both entries are repointed.
+        "path_tables": {
+            "country": (0x197900, "country_LZ.bin"),
+            "region": (0x19791C, "%d_LZ.bin"),
+        },
+        "path_regions": ["JP", "US", "EU", "EU", "CN", "KR", "TW"],
+        "sd_dir": "/luma/titles/0004001000022000/area",
+        # .rodata page padding: ro ends at 0x1924F0 and the page at 0x193000. Luma claims
+        # the first 48 bytes for its own LayeredFS path, so the strings start past that.
+        "rodata_padding_off": 0x1924F0,
+        "rodata_padding_room": 0xB10,
+    },
 }
 
 # Stack layout the OpenFileDirectly wrapper reads its arguments from, shared by both sites.
@@ -372,6 +466,12 @@ ARCHIVE_SDMC = 9
 PATH_ASCII = 3
 PATH_EMPTY = 1
 ORIGINAL_SITE_WORD = 0xE3A03003  # mov r3, #3  -> the ARCHIVE_ROMFS each site starts from
+
+# A Thumb title cannot spare a single 16-bit instruction for a branch, so its sites are the
+# last two instructions before the call instead of the `mov r3, #3`, and the stub reproduces
+# the second one. Both sites of the Camera applet hold the same pair.
+ORIGINAL_THUMB_SITE_WORD = 0x94079505  # str r5, [sp, #0x14] ; str r4, [sp, #0x1c]
+THUMB_STORE_ATTRIBUTES = 0x9407        # str r4, [sp, #0x1c] - the displaced instruction
 
 # The banner open sets an archive path too, which the romfs sites above do not: theirs is
 # already empty, this one carries the title id, and ARCHIVE_SDMC wants it empty.
@@ -420,6 +520,26 @@ COND_EQ, COND_NE = 0x0, 0x1
 
 def _bc(cond: int, src: int, dst: int) -> int:
     return (cond << 28) | 0x0A000000 | (((dst - src - 8) >> 2) & 0xFFFFFF)
+
+
+def _thumb_bl(src: int, dst: int) -> bytes:
+    """Thumb-1 `bl` pair. Range is +-4 MB, which every site here is well inside of."""
+    offset = dst - (src + 4)
+    if not -(1 << 22) <= offset < (1 << 22) or offset & 1:
+        raise ValueError(f"0x{src:X} -> 0x{dst:X} is not a reachable Thumb bl")
+    hi = 0xF000 | ((offset >> 12) & 0x7FF)
+    lo = 0xF800 | ((offset >> 1) & 0x7FF)
+    return struct.pack("<HH", hi, lo)
+
+
+def _thumb_bl_target(data: bytes, src: int) -> int | None:
+    hi, lo = struct.unpack("<HH", data)
+    if hi & 0xF800 != 0xF000 or lo & 0xF800 != 0xF800:
+        return None
+    offset = ((hi & 0x7FF) << 12) | ((lo & 0x7FF) << 1)
+    if offset & (1 << 22):
+        offset -= 1 << 23
+    return src + 4 + offset
 
 
 def _imm12(value: int) -> int:
@@ -929,6 +1049,106 @@ def make_ips(records: list[tuple[int, bytes]]) -> bytes:
     return bytes(out + b"EOF")
 
 
+def area_sd_paths(patch: dict) -> dict[str, str]:
+    """The SD path behind each `area:` file, keyed by "<region>/<file>"."""
+    paths = {}
+    for _, filename in patch["path_tables"].values():
+        for region in dict.fromkeys(patch["path_regions"]):
+            paths[f"{region}/{filename}"] = f"area:{patch['sd_dir']}/{region}/{filename}"
+    return paths
+
+
+def _generate_area_from_sd(patch: dict, code: bytes, version: int) -> tuple[dict[str, bytes], list[str]]:
+    """Point the `area:` mount and its path tables at the SD card.
+
+    Nothing is executed that was not already there: two `bl` instructions change target
+    from MountByTitleId to the title's own MountSdmc, and fourteen pointers in .data change
+    to strings written into the .rodata padding. Every one of those is checked against the
+    dump first and re-read out of the patched image afterwards, because an IPS applied at
+    the wrong offset would leave System Settings mounting garbage.
+    """
+    for site in patch["mount_sites"]:
+        expected = _bl(site, patch["mount_by_title_id"])
+        found = struct.unpack_from("<I", code, site)[0]
+        if found != expected:
+            raise RuntimeError(
+                f"0x{site:X} holds 0x{found:08X}, not the bl 0x{patch['mount_by_title_id']:X} "
+                f"(0x{expected:08X}) the patch replaces"
+            )
+
+    padding = patch["rodata_padding_off"]
+    room = patch["rodata_padding_room"]
+    if any(code[padding:padding + room]):
+        raise RuntimeError(f"the .rodata padding at 0x{padding:X} is not free")
+
+    # Luma writes its own "lf:/luma/titles/<TID>/romfs" at the front of this padding after
+    # the IPS is applied, so start past it.
+    at = padding + LUMA_PATH_SIZE
+    blobs: list[tuple[int, bytes]] = []
+    string_va: dict[str, int] = {}
+    for key, path in area_sd_paths(patch).items():
+        encoded = path.encode("ascii") + b"\0"
+        string_va[key] = TEXT_VA + at
+        blobs.append((at, encoded))
+        at += len(encoded)
+    if at > padding + room:
+        raise RuntimeError(f"the paths need {at - padding} bytes, only {room} are free")
+
+    records = list(blobs)
+    for table_off, filename in patch["path_tables"].values():
+        for index, region in enumerate(patch["path_regions"]):
+            records.append((table_off + index * 4, struct.pack("<I", string_va[f"{region}/{filename}"])))
+    for site in patch["mount_sites"]:
+        records.append((site, struct.pack("<I", _bl(site, patch["mount_sdmc"]))))
+
+    _verify_area(patch, code, records, string_va)
+
+    log = [
+        f"{patch['title']} title version {version}",
+        f"code.ips: {len(patch['mount_sites'])} `area:` mounts retargeted to MountSdmc at "
+        f"0x{patch['mount_sdmc']:X}, so the country and region lists come off the SD card",
+        f"code.ips: {len(patch['path_regions']) * len(patch['path_tables'])} path pointers "
+        f"repointed at {len(string_va)} strings in the .rodata padding "
+        f"({at - padding - LUMA_PATH_SIZE} bytes of {room - LUMA_PATH_SIZE} free)",
+    ]
+    return {"code.ips": make_ips(records)}, log
+
+
+def _verify_area(patch: dict, code: bytes, records: list[tuple[int, bytes]], string_va: dict[str, int]) -> None:
+    """Apply the records and read the result back the way the console would."""
+    patched = bytearray(code)
+    for offset, data in records:
+        patched[offset:offset + len(data)] = data
+    word = lambda off: struct.unpack_from("<I", patched, off)[0]  # noqa: E731
+
+    for site in patch["mount_sites"]:
+        target = _bl_target(word(site), site)
+        if target != patch["mount_sdmc"]:
+            raise RuntimeError(f"site 0x{site:X} calls 0x{target:X}, expected MountSdmc")
+
+    expected = area_sd_paths(patch)
+    for table_off, filename in patch["path_tables"].values():
+        for index, region in enumerate(patch["path_regions"]):
+            key = f"{region}/{filename}"
+            va = word(table_off + index * 4)
+            if va != string_va[key]:
+                raise RuntimeError(f"path table entry {index} does not point at {key}")
+            off = va - TEXT_VA
+            end = patched.index(b"\0", off)
+            if patched[off:end].decode("ascii") != expected[key]:
+                raise RuntimeError(f"the string behind {key} is not {expected[key]!r}")
+
+    # MountSdmc takes the mount name in r0 and nothing else, so the sites must still be
+    # loading "area:" into r0 - the whole patch rests on that argument being untouched.
+    for site in patch["mount_sites"]:
+        loads_r0 = any(
+            word(at) & 0xFFFFF000 == 0xE59F0000
+            for at in range(site - 0x20, site, 4)
+        )
+        if not loads_r0:
+            raise RuntimeError(f"site 0x{site:X} does not load a mount name into r0")
+
+
 def patch_exheader(tid: str, exheader: bytes) -> bytes:
     """Grant DirectSdmc, and widen text.size when the stub lives in the .text padding.
 
@@ -976,6 +1196,45 @@ def wants_names(tid: str) -> str | None:
     return "pane" if patch.get("pane_hook") else None
 
 
+def _thumb_redirect_records(
+    patch: dict, path_va: int, path_off: int, sd_path: str
+) -> list[tuple[int, bytes]]:
+    """The same redirect for a Thumb title, entered with `bl` and left with `bx lr`.
+
+    One stub serves every site: they all reach the same OpenFileDirectly wrapper, whose
+    caller frame keeps the file path in the slots below, and they all displace the same
+    `str r4, [sp, #0x1c]`. `bl` clobbers lr, which is free here - the call the sites are
+    about to make would overwrite it anyway.
+    """
+    encoded = sd_path.encode("ascii") + b"\0"
+    stub = patch["stub_off"]
+    if stub % 4:
+        raise RuntimeError(f"stub at 0x{stub:X} must be word-aligned for its literal")
+    if len(encoded) > 0xFF:
+        raise RuntimeError(f"path is {len(encoded)} bytes, `movs r3, #imm8` tops out at 255")
+
+    halfwords = [
+        0x2300 | PATH_ASCII,                        # +00  movs r3, #3
+        0x9300 | (FILE_PATH_TYPE_SLOT >> 2),        # +02  str  r3, [sp, #0xc]
+        0x4B03,                                     # +04  ldr  r3, [pc, #0xc]   the path
+        0x9300 | (FILE_PATH_PTR_SLOT >> 2),         # +06  str  r3, [sp, #0x10]
+        0x2300 | len(encoded),                      # +08  movs r3, #len (with the NUL)
+        0x9300 | (FILE_PATH_SIZE_SLOT >> 2),        # +0A  str  r3, [sp, #0x14]
+        THUMB_STORE_ATTRIBUTES,                     # +0C  str  r4, [sp, #0x1c]
+        0x2300 | ARCHIVE_SDMC,                      # +0E  movs r3, #9
+        0x4770,                                     # +10  bx   lr
+        0x0000,                                     # +12  pad to the literal's word
+    ]
+    blob = b"".join(struct.pack("<H", h) for h in halfwords) + struct.pack("<I", path_va)
+    if len(blob) > patch["stub_room"]:
+        raise RuntimeError(f"stub needs {len(blob)} bytes, only {patch['stub_room']} are free")
+
+    records = [(path_off, encoded), (stub, blob)]
+    for site in patch["sites"]:
+        records.append((site["patch_at"], _thumb_bl(site["patch_at"], stub)))
+    return records
+
+
 def _redirect_records(patch: dict, path_va: int, path_off: int, sd_path: str) -> list[tuple[int, bytes]]:
     """IPS records that make every ARCHIVE_ROMFS open read an image off the SD card.
 
@@ -983,6 +1242,9 @@ def _redirect_records(patch: dict, path_va: int, path_off: int, sd_path: str) ->
     path already laid out on the stack. The site branches to a stub that swaps in
     ARCHIVE_SDMC and an ASCII path, then branches back to the next instruction.
     """
+    if patch.get("encoding") == "thumb":
+        return _thumb_redirect_records(patch, path_va, path_off, sd_path)
+
     encoded = sd_path.encode("ascii") + b"\0"
     records: list[tuple[int, bytes]] = [(path_off, encoded)]
     stub_at = patch["stub_off"]
@@ -1009,14 +1271,42 @@ def _redirect_records(patch: dict, path_va: int, path_off: int, sd_path: str) ->
     return records
 
 
+def _hooked_text_words(patch: dict) -> list[int]:
+    """Offsets inside .text that a patch overwrites with a branch into a stub.
+
+    Only their positions matter to a symbol search: each one is the `push` that
+    findFunctionStart() walks back to, so a scan that still sees a `push` there can report
+    a function start the loader will never see.
+    """
+    sites: list[int] = []
+    if patch.get("kind") == "smdh_names":
+        sites += [patch["thunk_off"], patch["cache_read_off"]]
+        if patch.get("banner_hook"):
+            sites.append(patch["banner_hook"]["site_off"])
+    if patch.get("pane_hook"):
+        sites.append(patch["pane_hook"]["set_text_off"])
+    return sites
+
+
 def patched_code(tid: str, code: bytes) -> bytes:
-    """The title's .code as the loader sees it after applying our code.ips."""
+    """The title's .code as the loader sees it after applying our code.ips.
+
+    Only a mount stub adds anything the symbol search can find. The other kinds keep their
+    blobs in the .text padding past text.size, or replace plain stores and moves, or ship
+    no code.ips at all - but any of them can take out a `push`, so those words are stood in
+    for with a branch of no consequence. The real ones are not reproduced here: they would
+    need the name tables the build assembles from src/strings.
+    """
     patch = HOOK_PATCHES[tid.upper()]
-    if patch.get("kind") == "romfs_from_sd":
-        return code  # nothing here changes what Luma's symbol search would find
+    out = bytearray(code)
+    for offset in _hooked_text_words(patch):
+        struct.pack_into("<I", out, offset, PLACEHOLDER_BRANCH)
+
+    if patch.get("kind") in ("romfs_from_sd", "area_from_sd", "exheader_only", "smdh_names"):
+        return bytes(out)
+
     globals_value = struct.unpack_from("<I", code, patch["globals_off"])[0]
     stub = build_stub(patch, globals_value)
-    out = bytearray(code)
     out[patch["stub_off"]:patch["stub_off"] + len(stub)] = stub
     return bytes(out)
 
@@ -1037,6 +1327,16 @@ def _verify(patch: dict, code: bytes, stub: bytes) -> None:
     missing = [name for name, off in symbols.items() if off is None and name != "fsUnmountArchive"]
     if missing:
         raise RuntimeError(f"other LayeredFS symbols are missing: {', '.join(missing)}")
+
+
+def _bl_target(word: int, at: int) -> int | None:
+    """Where a `bl` at .text offset `at` lands, or None if the word is not one."""
+    if word >> 24 != 0xEB:
+        return None
+    offset = word & 0xFFFFFF
+    if offset & 0x800000:
+        offset -= 0x1000000
+    return at + 8 + offset * 4
 
 
 def _branch_target(word: int, at: int) -> int | None:
@@ -1128,6 +1428,28 @@ def _verify_redirect(
         patched[offset:offset + len(data)] = data
 
     word = lambda off: struct.unpack_from("<I", patched, off)[0]  # noqa: E731
+    half = lambda off: struct.unpack_from("<H", patched, off)[0]  # noqa: E731
+
+    if patch.get("encoding") == "thumb":
+        stub = patch["stub_off"]
+        for site in patch["sites"]:
+            at = site["patch_at"]
+            target = _thumb_bl_target(bytes(patched[at:at + 4]), at)
+            if target != stub:
+                raise RuntimeError(f"site 0x{at:X} calls 0x{target:X}, expected the stub at 0x{stub:X}")
+        if half(stub) != (0x2300 | PATH_ASCII) or half(stub + 0x0E) != (0x2300 | ARCHIVE_SDMC):
+            raise RuntimeError(f"stub at 0x{stub:X} does not set an ASCII path and ARCHIVE_SDMC")
+        if half(stub + 0x0C) != THUMB_STORE_ATTRIBUTES:
+            raise RuntimeError(f"stub at 0x{stub:X} drops the instruction the sites displaced")
+        if half(stub + 0x10) != 0x4770:
+            raise RuntimeError(f"stub at 0x{stub:X} does not return to its caller")
+        if word(stub + 0x14) != path_va:
+            raise RuntimeError(f"stub at 0x{stub:X} does not point at the path string")
+        encoded = sd_path.encode("ascii") + b"\0"
+        path_off = next(off for off, data in records if data == encoded)
+        if bytes(patched[path_off:path_off + len(encoded)]) != encoded:
+            raise RuntimeError("the path string did not land where the stub points")
+        return
 
     for site in patch["sites"]:
         stub = _branch_target(word(site["patch_at"]), site["patch_at"])
@@ -1156,12 +1478,15 @@ def sd_path_for(tid: str) -> str:
 def _generate_romfs_from_sd(
     tid: str, patch: dict, code: bytes, exheader: bytes, version: int
 ) -> tuple[dict[str, bytes], list[str]]:
+    thumb = patch.get("encoding") == "thumb"
+    expected = ORIGINAL_THUMB_SITE_WORD if thumb else ORIGINAL_SITE_WORD
+    shape = "str r5, [sp, #0x14] ; str r4, [sp, #0x1c]" if thumb else "mov r3, #3"
     for site in patch["sites"]:
         word = struct.unpack_from("<I", code, site["patch_at"])[0]
-        if word != ORIGINAL_SITE_WORD:
+        if word != expected:
             raise RuntimeError(
-                f"0x{site['patch_at']:X} holds 0x{word:08X}, expected 0x{ORIGINAL_SITE_WORD:08X} "
-                f"(mov r3, #3) - this is not the ARCHIVE_ROMFS open the offsets were taken from"
+                f"0x{site['patch_at']:X} holds 0x{word:08X}, expected 0x{expected:08X} "
+                f"({shape}) - this is not the ARCHIVE_ROMFS open the offsets were taken from"
             )
 
     # The path string goes in the .rodata page padding. Sections sit at page-aligned
@@ -1178,15 +1503,24 @@ def _generate_romfs_from_sd(
     path_va = ro_address + ro_size
     records = _redirect_records(patch, path_va, rounded(text_size) + ro_size, sd_path)
     _verify_redirect(patch, code, records, path_va, sd_path)
-    files = {"code.ips": make_ips(records), "exheader.bin": patch_exheader(tid, exheader)}
+    files = {"code.ips": make_ips(records)}
     log = [
         f"{patch['title']} title version {version}",
         f"code.ips: {len(patch['sites'])} ARCHIVE_ROMFS opens redirected to ARCHIVE_SDMC, "
         f"stubs at 0x{patch['stub_off']:X} (va 0x{TEXT_VA + patch['stub_off']:X})",
         f"code.ips: path {sd_path!r} at va 0x{ro_address + ro_size:X} "
         f"({room} bytes of .rodata padding available)",
-        "exheader.bin: DirectSdmc granted",
     ]
+
+    # A title that already carries DirectSdmc gets no exheader.bin: it would be byte-identical
+    # to the one in NAND, and shipping a copy only adds a file that has to match the console's
+    # build to be harmless.
+    access = struct.unpack_from("<Q", exheader, ACCESS_INFO_OFFSET)[0]
+    if access & (1 << DIRECT_SDMC_BIT):
+        log.append(f"exheader.bin: not shipped, accessInfo 0x{access:016x} already has DirectSdmc")
+    else:
+        files["exheader.bin"] = patch_exheader(tid, exheader)
+        log.append("exheader.bin: DirectSdmc granted")
     return files, log
 
 
@@ -1465,6 +1799,11 @@ def generate(
 
     if patch.get("kind") == "romfs_from_sd":
         return _generate_romfs_from_sd(tid, patch, code, exheader, version)
+
+    if patch.get("kind") == "area_from_sd":
+        # No exheader: this title already has DirectSdmc, and the patch adds no stub, so
+        # there is nothing to widen either.
+        return _generate_area_from_sd(patch, code, version)
 
     if patch.get("kind") == "smdh_names":
         if not (names or {}).get("smdh"):

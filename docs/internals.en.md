@@ -18,7 +18,7 @@ A folder name is the Title ID (TID) of the system title it overrides. Luma reads
 | Folder (TID) | Title | Contents |
 |---|---|---|
 | `0004003000009802` | HOME Menu | `romfs/` + `code.ips` — LayeredFS plus the application names |
-| `0004001000022000` | System Settings | `romfs/` — LayeredFS |
+| `0004001000022000` | System Settings | `romfs/` + `code.ips` + `area/` — LayeredFS plus the country list from the `area` archive |
 | `0004001000022700` | Mii Maker | `romfs/` — LayeredFS |
 | `0004001000022400` | Nintendo 3DS Camera | `romfs/` — LayeredFS |
 | `0004001000022500` | Nintendo 3DS Sound | `romfs/` — LayeredFS |
@@ -40,10 +40,11 @@ A folder name is the Title ID (TID) of the system title it overrides. Luma reads
 | `0004001000022300` | Health & Safety Information | `code.ips` + `exheader.bin` + `safe_romfs.bin` — no LayeredFS, whole RomFS image off the SD card |
 | `000400300000D002` | Software Keyboard | `code.ips` + `exheader.bin` + `swkbd_romfs.bin` — no LayeredFS, whole RomFS image off the SD card |
 | `000400300000C502` | Error applet | `code.ips` + `exheader.bin` + `error_romfs.bin` — no LayeredFS, whole RomFS image off the SD card |
+| `0004003000009902` | Camera applet (`L`+`R`) | `code.ips` + `camera_applet_romfs.bin` — no LayeredFS, whole RomFS image off the SD card; no `exheader.bin`, the title already has `DirectSdmc` |
 
-Why the last ten carry `exheader.bin`, and most of them `code.ips` too: see [What is in the release](#what-is-in-the-release). In short, Luma hooks the first thirteen by itself; the rest lack the rights or the code the build supplies.
+Why the last eleven carry `code.ips`, and almost all of them `exheader.bin` too: see [What is in the release](#what-is-in-the-release). In short, Luma hooks the first thirteen by itself; the rest lack the rights or the code the build supplies.
 
-Download Play, the Software Keyboard and Health & Safety Information ship no `romfs` folder on purpose — its mere presence halts those titles on an exception screen.
+Download Play, the Software Keyboard, Health & Safety Information, the error applet and the camera applet ship no `romfs` folder on purpose — its mere presence halts those titles on an exception screen.
 
 The eight titles that draw the date-and-clock line at the top of the screen also get a
 replaced `Hud.bcfnt` (`Hud_JP.bcfnt` in some of them) next to their text: the bitmap font
@@ -140,6 +141,7 @@ of its own, so it is left alone.
 | Error applet | ✅ translated, by replacing its whole RomFS — needs title version 7 (see below) |
 | Download Play | ✅ translated, by replacing its whole RomFS — needs title version 3 (see below) |
 | Software Keyboard | ✅ translated, by replacing its whole RomFS — needs title version 4 (see below) |
+| Camera applet (`L`+`R`) | ✅ translated, by replacing its whole RomFS — needs title version 2 (see below) |
 
 The last two are in the release by a different route than LayeredFS — Luma cannot hook it
 into them. Its loader ends the patch with
@@ -283,6 +285,7 @@ updated the title:
 | **Notifications (`newslist`)** | **4** |
 | **amiibo Settings (`Cabinet`)** | **1** |
 | **StreetPass Mii Plaza (`MEET`)** | **5** |
+| **Camera applet (`L`+`R`)** | **2** |
 | Mii Maker (`EDIT`) | 2 |
 | **Activity Log (`PLOG`)** | **2** |
 
@@ -331,6 +334,43 @@ The Software Keyboard is built the same way and is fixed the same way: its two R
 (`0x14944`, which feeds `rom:`, and `0xE958`) are pointed at `swkbd_romfs.bin`. Its third
 `OpenFileDirectly` call at `0x6F7C0` is left alone — that one opens
 `ARCHIVE_SAVEDATA_AND_CONTENT`, not the RomFS.
+
+### The camera applet: the one Thumb title
+
+The camera applet — the one the HOME Menu opens on `L`+`R` — is built in Thumb, and that
+decides everything else about it.
+
+LayeredFS is impossible for it in principle. The five signatures `findLayeredFsSymbols()`
+looks for are ARM instruction words, so they will never match Thumb code. Planting ARM stubs
+would not be enough either: Luma patches the title's **own** `fsRegisterArchive` and
+`fsTryOpenFile` so that the title's own file opens land on the SD card, and here those are
+Thumb functions at other addresses. So this title goes the Download Play way.
+
+Finding its FS wrappers took a different route as well. The IPC header is not a literal
+here: the wrappers compose it at run time from (command id, normal and translate parameter
+counts) held in registers, so there is no `0x08030204` or `0x080C00C2` anywhere in `.code`.
+They were found by walking the callers of `svcSendSyncRequest` — the ARM leaf
+`svc 0x32 ; bx lr` at `0x7EE1C`.
+
+Both RomFS readers reach `FSUSER_OpenFileDirectly` at `0x7F068`: the one behind `rom:` calls
+it at `0x2048`, the second reader at `0xCF08`. Nothing else in the title touches the RomFS —
+its three `FSUSER_OpenArchive` calls use archives 7 and 8 plus one generic wrapper, and its
+single `FSUSER_OpenFile` is unrelated.
+
+The caller frame lays the arguments out exactly like the ARM titles: file path type at
+`sp+0xC`, pointer at `sp+0x10`, size at `sp+0x14`, and the archive path is already the empty
+one built by `MakeEmptyPath()` at `0x7F0F8` — which is what `ARCHIVE_SDMC` wants too.
+
+Only the way into the stub differs. The ARM titles give up one word, `mov r3, #3`, to the
+branch; 16 bits are not enough for one in Thumb, so the pair of instructions right before
+the call — `str r5, [sp, #0x14] ; str r4, [sp, #0x1c]` — becomes a `bl` into a shared stub.
+That stub (24 bytes inside the 1552 bytes of `.text` padding at `0xCB9F0`) sets the ASCII
+path, repeats the displaced `str r4, [sp, #0x1c]`, puts 9 in `r3` instead of 3 and returns
+with `bx lr`. The `bl` clobbers `lr`, which is safe: the next instruction at both sites is
+the `bl` into the wrapper, which overwrites it anyway.
+
+This title ships no `exheader.bin`: its `accessInfo` is `0xa1`, so `DirectSdmc` is already
+there and the replacement would be byte-identical to the one in NAND.
 
 ## How the HOME Menu's application names were translated
 
@@ -476,6 +516,90 @@ differently from our table, the swap simply does not happen — no harm done, bu
 translation either. That is why `src/app_names.json` carries a `ru` field next to `ua`, and
 it has to match what the console displays byte for byte.
 
+## How the country and region lists were translated
+
+The longest road in the mod. Profile settings → Region Settings shows names that exist
+**nowhere** in System Settings' romfs: the `.code` holds the paths `area:/EU/country_LZ.bin`
+and `area:/EU/<code>_LZ.bin`, and `area:` is a separate **shared system data archive**,
+`0x0004009B00010402` — the same class of title as the system font, and dumped from CTRNAND
+the same way (`docs/dumping.en.md`).
+
+LayeredFS does not reach it: Luma redirects the title's own romfs and only its own mount
+points (`rom:`, `ro2:`, `rex:`…), and `area:` is not one of them. But the title already
+carries everything needed:
+
+```
+000BEE8  bl 0x1C7C6C     MountByTitleId("area:", 0x00010402, 0x0004009B, ...)
+000BEF4  ldr r0, =0x297900        the path table, one entry per console region
+000BEFC  ldr r0, [r0, r1, lsl #2] "area:/EU/country_LZ.bin"
+000BF04  bl 0x1C7BB4              read the whole file
+000BF10  bl 0x1C7A54              Unmount("area:")
+
+00A1654  MountSdmc(const char *name)    mov r1, #9 (ARCHIVE_SDMC); OpenArchive; register
+```
+
+`MountSdmc` takes the mount name as its **only argument, in `r0`** — and `r0` at both sites
+already points at `"area:"`. So the whole patch is **two `bl` instructions** retargeted from
+`MountByTitleId` to `MountSdmc`, after which `area:/…` resolves against the SD card, plus 14
+pointers in `.data` moved to strings reading
+`area:/luma/titles/0004001000022000/area/<region>/…` in the `.rodata` padding. No stub and no
+exheader: this title already has `DirectSdmc`. The tid loads into `r2`/`r3` become dead code,
+`MountSdmc` never reads the stack arguments, and the unmount is the same call either way.
+
+The paths are repointed for **all six regions**, not just EU: the mount is unconditional, so a
+console reporting another region has to find its files on the card too. That is why the mod
+ships the whole dumped archive — 129 files, 564 KB, two of them changed.
+
+### Why Russia becomes Ukraine instead of getting its own row
+
+Nintendo's country code table has **no Ukraine at all**. The European block 64–127 is gapless:
+`…96 Norway, 97 Poland, 98 Portugal, 99 Romania, 100 Russia, 101 Serbia & Kosovo…`. A country
+code is a system-wide value that NNID, the eShop, StreetPass and the age ratings all depend on;
+adding a row would mean rewriting a table half the system reads. So code **100 is taken over
+exactly the way the language slot is**: the Russian slot reads «Україна» instead of «Россия»,
+and the other 66 names are translated.
+
+### The format, and the sorting
+
+Both files are LZ11 and both are tables of **fixed-size** records, which is what lets a
+translation be written in place: a name is a 128-byte UTF-16LE slot, and the 16 slots follow the
+system's language order, where slot 10 is Russian — the same "block 10" as in an SMDH.
+
+The important part is the **sort row**. Byte `j` of it is the record's position in language
+`j`'s alphabetically sorted list, while the records themselves sit in Japanese order. Translate
+the names without recomputing rank 10 and the Ukrainian list comes out ordered by the Russian
+alphabet: «Австралія, Австрія, Азербайджан, Албанія» survives that, «Україна» in the middle of
+the list does not. Every row exists twice, once in the record and once in a table at the end of
+the file, and `tools/area.py` writes both. The model is checked against all 129 files of the
+dump: recomputing the English and Russian columns reproduces what Nintendo wrote, byte for byte,
+except in 17 files that follow a local order (Norwegian `Ø` after `Z`, Turkish `ı` before `i`,
+the Asian lists ordered by prefecture code) — none of which the mod touches.
+
+Code 100's region list is not translated but **replaced**: Russia has 83 regions, Ukraine has
+27. Since every section is fixed-size, the file is re-emitted smaller (`area.resize()`) and the
+country record's own count comes down with it. The Ukrainian names go into the Russian slot and
+a transliteration into every other one: leaving Russian oblasts behind a row that now reads
+«Україна» would be worse than a name no EUR console ever displays.
+
+**Side effect:** switch the console to English and the row still reads `Russia`, but the 27
+regions under it are Ukrainian. The mod only replaces its own slot, and here that boundary shows.
+
+### The StreetPass Map
+
+The StreetPass Map in Mii Plaza shows the same names and keeps its own tables for them,
+`0004001000022800/romfs/param/country.csv` and `region.csv`. UTF-16 with a BOM, CRLF, one
+column per language (Russian is 11), and rows of different lengths - the Japanese ones have no
+Korean or Chinese columns at all. Plus a trailing comma before each line break, which a normal
+CSV writer would turn into `""` and rewrite every line. So `tools/csvtab.py` **never
+re-serialises a row it was not asked to change**: it splits on `","`, swaps the one field and
+joins it back, leaving every other byte alone - an untouched file rebuilds byte for byte.
+
+Rows are keyed `<country code>:<address id>`, and that id is the same one the `area` archive
+numbers its regions with, so the two tables cannot drift apart. Code 100's block is likewise
+rebuilt rather than translated: the 83 Russian rows go and 27 Ukrainian ones take ids 2..28 -
+the same ids, in the same order, as the region file. In total **121 countries and 1314 regions**
+translated, 27 rows rebuilt.
+
 ## What the mod does not translate
 
 **Application names outside the HOME Menu.** The label under an icon, the text on the upper screen when you highlight it, the "software suspended" overlay, the close and delete prompts — all of it is the same short/long description from the title's **SMDH** (`CXI ExeFS:/icon`, 16 language structs). LayeredFS cannot reach ExeFS: Luma only redirects `romfs/`, `code.bin`, `code.ips`, `exheader.bin` and `locale.txt`, and an installed title's SMDH lives in NAND.
@@ -502,8 +626,6 @@ That document does not belong to the Instruction Manual. Every title ships its o
 LayeredFS does not lead there. Luma's payload only intercepts mounts for `ARCHIVE_ROMFS` and only rewrites paths starting with `rom:` or the detected update mount — and of the ones Luma knows (`ro2:`, `rom2:`, `rex:`, `patch:`, `ext:`) the Instruction Manual's code contains none, only its own `rom:`. Luma has no mechanism for replacing content index 1 of a title.
 
 It is also not one document but one per title: the Activity Log has its own, System Settings has its own, every game has its own. Translating them means rebuilding and reinstalling each title's content.
-
-**The country list in Profile settings.** "Region Settings" shows country names that do not exist anywhere in System Settings' romfs: the `.code` holds the paths `area:/EU/country_LZ.bin` (plus `JP`/`US`/`CN`/`KR`/`TW`), and the only system TID in that same code is `0004001B00010702`. That is a separate system archive, and LayeredFS only redirects the title's own romfs — so neither translating the names nor swapping "Россия" for "Україна" is possible from the SD card. On top of that, the EUR table has no Ukraine at all: the StreetPass Mii Plaza country list (`param/country.csv`, 121 rows — the only place in everything dumped where these names exist as text) has `Russia` and no `Ukraine`, so even with access to the archive one could only rename a row, not add one.
 
 **Nintendo DS Connection Settings.** The button in the internet settings launches `0004800542383841` — a separate **TWL** title (the only TWL TID in System Settings' `.code`). It runs under TWL_FIRM, where Luma's LayeredFS does not work at all. Besides, the DS/DSi language set has no Russian (JP/EN/FR/DE/IT/ES, later ZH/KO), so there is no slot to replace — the app opens in English whatever the console language.
 

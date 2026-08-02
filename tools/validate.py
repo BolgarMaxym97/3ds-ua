@@ -253,6 +253,94 @@ def validate(
     return total, translated, problems
 
 
+def validate_area(charset: set[int], table: dict[str, str], widths: dict[int, int]) -> tuple[int, list[str]]:
+    """Check the country and region names of the `area` archive.
+
+    These are not MSBT strings and have no per-label budget: the slot is as wide as the
+    widest of the twelve official names in the same file, which is the same reasoning
+    validate() uses, only per file instead of per label. Skipped, not failed, when the
+    archive has not been dumped - it is one GodMode9 copy and most contributors will not
+    have it.
+    """
+    import area as area_mod
+
+    strings = ROOT / "src" / "strings" / "area"
+    source = ROOT / "work" / "0004009B00010402" / "romfs"
+    if not source.is_dir() or not strings.is_dir():
+        return 0, []
+
+    problems: list[str] = []
+    checked = 0
+    for json_file in sorted(strings.glob("EU_*.json")):
+        entries = json.loads(json_file.read_text(encoding="utf-8"))
+        stem = json_file.stem.split("_", 1)[1]
+        original = source / "EU" / f"{stem}_LZ.bin"
+        if not original.is_file():
+            problems.append(f"{json_file.name}: no {original.name} in the dump")
+            continue
+        table_file = area_mod.load(original)
+        budget = max(
+            pixel_width(name, widths)
+            for record in table_file.records
+            for name in record.names[:12]
+            if name
+        )
+        for key, entry in entries.items():
+            if not key.isdigit():
+                continue
+            rendered = apply_homoglyphs(entry["ua"], table)
+            checked += 1
+            missing = [ch for ch in rendered if ord(ch) not in charset]
+            if missing:
+                problems.append(f"{json_file.name} {key}: missing glyphs {missing}")
+            width = pixel_width(rendered, widths)
+            if width > budget:
+                problems.append(f"{json_file.name} {key}: {width}px exceeds budget {budget}px")
+    return checked, problems
+
+
+def validate_plaza_map(charset: set[int], table: dict[str, str], widths: dict[int, int]) -> tuple[int, list[str]]:
+    """Check the StreetPass Map's country and region names.
+
+    Every row of these tables is drawn in the same slot on the map, so the budget is the
+    widest official name in the whole table, not in the row - the way `budget_groups` treats
+    labels that share a slot. Skipped when the Plaza is not dumped.
+    """
+    import csvtab
+
+    strings = ROOT / "src" / "strings" / "plaza_map"
+    param = ROOT / "work" / "0004001000022800" / "romfs" / "param"
+    if not param.is_dir() or not strings.is_dir():
+        return 0, []
+
+    problems: list[str] = []
+    checked = 0
+    for rel, json_name in (("country.csv", "country.json"), ("region.csv", "region.json")):
+        entries = json.loads((strings / json_name).read_text(encoding="utf-8"))
+        rows = {csvtab.key_of(row): row.fields for row in csvtab.load(param / rel).data_rows()}
+        budget = max(
+            pixel_width(name, widths)
+            for fields in rows.values()
+            for name in fields[csvtab.ENGLISH :]
+            if name
+        )
+        for key, entry in entries.items():
+            if key not in rows:
+                problems.append(f"{json_name}: row {key} is not in {rel}")
+                continue
+            rendered = apply_homoglyphs(entry["ua"], table)
+            checked += 1
+            missing = [ch for ch in rendered if ord(ch) not in charset]
+            if missing:
+                problems.append(f"{json_name} {key}: missing glyphs {missing}")
+            width = pixel_width(rendered, widths)
+            if width > budget:
+                problems.append(
+                    f"{json_name} {key}: {width}px exceeds budget {budget}px ({entry['ua']!r})"
+                )
+    return checked, problems
+
+
 def main() -> int:
     ap = argparse.ArgumentParser()
     ap.add_argument("titles", nargs="*", default=None)
@@ -270,6 +358,16 @@ def main() -> int:
         for problem in problems:
             print(f"  ✗ {problem}")
         failed = failed or bool(problems)
+
+    if not args.titles:
+        for label, check in (("area", validate_area), ("plaza map", validate_plaza_map)):
+            checked, problems = check(charset, table, widths)
+            if not checked:
+                continue
+            print(f"{label}: {checked} country and region names, problems: {len(problems)}")
+            for problem in problems:
+                print(f"  ✗ {problem}")
+            failed = failed or bool(problems)
 
     return 1 if failed else 0
 

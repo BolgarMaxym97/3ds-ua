@@ -4,7 +4,7 @@
 
 Файли самої консолі не змінюються — усе живе на SD-карті. Видалили папки, і все повернулося як було.
 
-**Ціль проєкту — повний українізатор системи:** усе, що видно на екрані, має бути українською. Зараз перекладено 23 частини, робота триває.
+**Ціль проєкту — повний українізатор системи:** усе, що видно на екрані, має бути українською. Зараз перекладено 24 частини, робота триває.
 
 [Українською](#що-вже-українською) · [In English](#in-english)
 
@@ -24,13 +24,13 @@
 <tr>
 <td><img src="assets/pictures/suspended-software.png" width="250" alt="Оверлей «Призупинена програма»"></td>
 <td><img src="assets/pictures/browser.png" width="250" alt="Інтернет-браузер"></td>
-<td><img src="assets/pictures/health-safety.png" width="250" alt="Здоров'я і безпека"></td>
+<td><img src="assets/pictures/profile-region.png" width="250" alt="Налаштування профілю: регіон «Україна», «Київ (місто)»"></td>
 </tr>
 </table>
 
 ## Що вже українською
 
-Меню HOME (разом з назвами додатків під іконками) · Налаштування системи · Mii Maker · Журнал дій · Посібник · Гра по завантаженню · екранна клавіатура з українською розкладкою · Список друзів · Камера · Звук · Здоров'я і безпека · Площа StreetPass Mii · Вибір Mii · Сповіщення · Ігрові записи · екран помилки · Інтернет-браузер · Nintendo eShop · Перенесення даних · Nintendo Zone · Face Raiders · AR Games · налаштування amiibo.
+Меню HOME (разом з назвами додатків під іконками) · Налаштування системи · Mii Maker · Журнал дій · Посібник · Гра по завантаженню · екранна клавіатура з українською розкладкою · Список друзів · Камера · швидка камера на `L`+`R` · Звук · Здоров'я і безпека · Площа StreetPass Mii · Вибір Mii · Сповіщення · Ігрові записи · екран помилки · Інтернет-браузер · Nintendo eShop · Перенесення даних · Nintendo Zone · Face Raiders · AR Games · керування amiibo · список країн і регіонів у налаштуваннях профілю та на Карті StreetPass (замість «Россия» — **Україна**, з українськими областями).
 
 ## Що потрібно
 
@@ -122,7 +122,7 @@ Nothing on the console itself is modified — it all lives on the SD card. Delet
 
 ### Already in Ukrainian
 
-HOME Menu (including the application names under the icons) · System Settings · Mii Maker · Activity Log · Instruction Manual · Download Play · Software Keyboard with a Ukrainian layout · Friend List · Camera · Sound · Health & Safety · StreetPass Mii Plaza · Mii Selector · Notifications · Game Notes · error applet · Internet Browser · Nintendo eShop · System Transfer · Nintendo Zone · Face Raiders · AR Games · amiibo Settings.
+HOME Menu (including the application names under the icons) · System Settings · Mii Maker · Activity Log · Instruction Manual · Download Play · Software Keyboard with a Ukrainian layout · Friend List · Camera · the quick camera on `L`+`R` · Sound · Health & Safety · StreetPass Mii Plaza · Mii Selector · Notifications · Game Notes · error applet · Internet Browser · Nintendo eShop · System Transfer · Nintendo Zone · Face Raiders · AR Games · amiibo Settings.
 
 ### Requirements
 

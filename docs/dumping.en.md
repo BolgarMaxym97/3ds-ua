@@ -119,6 +119,17 @@ Needed for the glyph and width tables; `make validate` does not work without it.
 2. `A` → `NCCH image options...` → `Mount image to drive` → copy `romfs` to `0:/gm9/out`
 3. On the computer, place the file as `work/0004009B00014002/cbf_std.bcfnt.lz`
 
+## 4a. Dumping the `area` archive (country and region names)
+
+Needed for the country list in Profile settings; without it `build.py` refuses to build
+System Settings. Same three steps as the font, on a different title:
+
+1. `[1:] SYSNAND CTRNAND` -> `title` -> `0004009b` -> `00010402` -> `content` -> largest `.app`
+2. `A` -> `NCCH image options...` -> `Mount image to drive` -> copy `romfs` to `0:/gm9/out`
+3. On the computer it has to end up as `work/0004009B00010402/romfs/EU/country_LZ.bin` and
+   friends - six region folders, 129 files, 564 KB in total.
+
+
 ## 5. Moving to the computer and checking
 
 `START` to reboot → power off → SD card into the computer:
