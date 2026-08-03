@@ -77,6 +77,10 @@ PARTS = ("index", "large", "small")
 MANUAL_APPLET_TID = "0004003000009B02"
 # While the viewer asks for one constant file name, only one manual can be on the card.
 SHARED_MANUAL = os.environ.get("MANUAL", "browser")
+# The language picker of the viewer draws its entries from BcmaInfo.bclyt, one text pane per
+# locale of the document, named after that locale. The slot the mod overwrites has to say so.
+INFO_ARC = "BcmaInfo"
+LANGUAGE_NAME = "Українська"
 MARKER_RE = re.compile(r"\{i(\d+)\}|\{s(\d+)\|([^}]*)\}|(\{br\})")
 # A no-break space is a space the text must not be broken at - `Nintendo\xa03DS` is one word.
 SPACE_RE = re.compile(r"([ \t\n]+)")
@@ -609,6 +613,26 @@ def cmd_check(name: str) -> list[str]:
     return problems
 
 
+def language_name(
+    manual: bcma.Bcma, slot: str, widths: dict[int, int], table: dict[str, str]
+) -> dict[str, bytes]:
+    """The document's own name for the locale the mod overwrites.
+
+    The picker lists one pane per locale, `EUR_en` through `EUR_ru`, each holding the
+    language written in itself. The Russian one is the slot this mod replaces, so it has to
+    read `Українська` - otherwise the entry that selects the Ukrainian text says `Русский`.
+    """
+    files = manual.read(INFO_ARC)
+    page = f"{INFO_ARC}.bclyt"
+    rendered = apply_homoglyphs(LANGUAGE_NAME, table)
+    pane = next(p for p in bclyt.parse(files[page]) if p.name == slot)
+    drawn = sum(widths.get(ord(ch), 0) for ch in rendered) * pane.font_size / FONT_EM
+    if drawn > pane.width:
+        raise SystemExit(f"{LANGUAGE_NAME!r} is {drawn:.0f}px in the {pane.width:.0f}px {slot} pane")
+
+    return files | {page: bclyt.rewrite(files[page], {slot: bclyt.Edit(text=rendered)})}
+
+
 def cmd_build(name: str) -> None:
     if cmd_check(name):
         raise SystemExit("fix the problems above first")
@@ -635,6 +659,8 @@ def cmd_build(name: str) -> None:
                 edits |= to_edits(layout(rendered, flow, limit, widths), flow)
             rebuilt[page] = bclyt.rewrite(data, edits) if edits else data
         manual.write(f"{cfg['slot']}_{part}", rebuilt)
+
+    manual.write(INFO_ARC, language_name(manual, cfg["slot"], widths, table))
 
     image = manual.build()
     for out in _destinations(name, cfg):
