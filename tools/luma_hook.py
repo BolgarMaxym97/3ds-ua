@@ -199,6 +199,43 @@ HOOK_PATCHES: dict[str, dict] = {
             # The titles this build ships a manual for. tools/manual.py checks it matches.
             "titles": ["0004003000009D02", "0004001000022000"],
         },
+        # The name across the top of every manual page is not in the document: it is the
+        # short description out of the *documented* title's SMDH, which ebird reads itself
+        # from ExeFS:/icon in NAND. LayeredFS cannot reach that, so the read is hooked and
+        # the Russian slot of the buffer is overwritten - the same table and the same
+        # routine HOME Menu's patch uses, see SMDH_NAMES there.
+        #
+        # One reader, one caller, and no cache of any kind:
+        #
+        #   15E38  the caller: allocates 0x36C0, takes the title id and mediatype out of
+        #          the globals object the manual mount reads too, and calls
+        #   15E84  bl 0x12F5B8, the reader: opens `icon` of that title and pulls all
+        #          0x36C0 bytes in; r0 = buffer, r1 = mediatype, r2/r3 = title id
+        #   15F84  the buffer's whole 0x2000-byte title array is copied into the viewer's
+        #          own object, every language slot at once, and the name is picked from it
+        #          later - so rewriting the slot right after the read is enough.
+        #
+        # Where the blob goes needs saying. This title's .text padding is 88 bytes and the
+        # mount stub already has 84 of them, and Luma claims throwFatalError() (0x1A434,
+        # 288 bytes) for its own 0x114-byte payload, which leaves 12. So the blob goes over
+        # a function that is in .text and dead: 0x2C6E8 is a second copy of the icon-tile
+        # copier that is also inlined at 0x115F04, and nothing in the image reaches it -
+        # no `bl`, no `b`, no absolute pointer in .text, .rodata or .data, and the one
+        # computed jump in this title (0x8FC90) branches inside its own table. The sha256
+        # below pins those 636 bytes, so a different build fails the build instead of
+        # taking the patch on top of live code.
+        "smdh_hook": {
+            "site_off": 0x15E84,        # `bl` to the reader, the one call it ever gets
+            "reader_off": 0x2F5B8,      # ReadTitleIcon(buffer, mediatype, tid_lo, tid_hi)
+            "lang_index": 10,           # the SMDH language slot the mod overwrites: EU_Russian
+            "stub_off": 0x2C6E8,        # the dead icon-tile copier
+            "stub_room": 636,           # up to the next function at 0x2C964
+            "dead_sha256": "c8a3a2b26f7efa67ed864551c80362cc996116ffb5ff17b654287ed0d282502f",
+            # .rodata padding again, past the manual-path table at 0xBCBD8 with room for it
+            # to grow: the table there is 8 bytes per title plus a 19-byte path each.
+            "rodata_off": 0xBCC60,
+            "rodata_room": 0x3A0,       # up to the 0xBD000 page boundary
+        },
         "code_sha256": "cf4658f9f618a41f8d32ff7aed40d0ea565da78a2ace349cb93698ff5f7df5d8",
         "variant": "sl_frame14",
         "stub_off": 0xADFA8,        # start of the .text page padding
@@ -725,7 +762,7 @@ def _b(src: int, dst: int) -> int:
     return 0xEA000000 | (((dst - src - 8) >> 2) & 0xFFFFFF)
 
 
-COND_EQ, COND_NE = 0x0, 0x1
+COND_EQ, COND_NE, COND_MI = 0x0, 0x1, 0x4
 
 
 def _bc(cond: int, src: int, dst: int) -> int:
@@ -1179,8 +1216,36 @@ def _stub_smdh_names(patch: dict, table_va: int, base: int) -> tuple[list[int], 
             0xE92D4FF0,                          # push  {r4-r8, sb, sl, fp, lr}
             lambda at, labels: _b(at, patch["cache_read_off"] + 4),
         ],
-        # rewrite(r0 = SMDH buffer, r1 = title id low, r2 = title id high): replace the
-        # short and long description of the one language slot the mod overwrites.
+    } | _smdh_rewrite_blocks(patch["lang_index"], table_va)
+    return _assemble(blocks, base)
+
+
+def _smdh_rewrite_blocks(lang_index: int, table_va: int) -> dict[str, list]:
+    """rewrite(r0 = SMDH buffer, r1 = title id low, r2 = title id high), plus its table.
+
+    Replaces the short and long description of the one language slot the mod overwrites,
+    for the title the buffer belongs to; a title the table does not list is left alone.
+
+    Two hooks share it. HOME Menu reads every title's SMDH for the names it labels icons
+    with, and the Instruction Manual reads the documented title's SMDH for the name it
+    prints above the page - the same strings, out of the same structure, so the same
+    routine serves both.
+    """
+    short_at, long_at = smdh_names.slot_offsets(lang_index)
+    page, short_low, long_low = short_at & ~0xFF, short_at & 0xFF, long_at & 0xFF
+    if long_at & ~0xFF != page:
+        raise RuntimeError(f"slot {lang_index} spans two immediate pages")
+
+    def b(target: str):
+        return lambda at, labels: _b(at, labels[target])
+
+    def bc(cond: int, target: str):
+        return lambda at, labels: _bc(cond, at, labels[target])
+
+    def ldr_pc(reg: int, target: str):
+        return lambda at, labels: 0xE59F0000 | (reg << 12) | (labels[target] - at - 8)
+
+    return {
         "rewrite": [
             0xE92D41F0,                          # push  {r4, r5, r6, r7, r8, lr}
             0xE1A04000,                          # mov   r4, r0             buffer
@@ -1242,7 +1307,52 @@ def _stub_smdh_names(patch: dict, table_va: int, base: int) -> tuple[list[int], 
             table_va,                            # literal
         ],
     }
+
+
+def _smdh_hook(patch: dict, table_va: int, base: int) -> tuple[list[int], dict[str, int]]:
+    """The Instruction Manual's single SMDH reader, wrapped around the same `rewrite`.
+
+    ebird reads the documented title's `ExeFS:/icon` once per manual - the call at
+    smdh_hook["site_off"] - and the buffer it fills is where both the wrench icon in the
+    corner and the name across the top of the page come from. There is no icon cache here,
+    so one hook is the whole job.
+
+    The reader is entered with r0 = buffer, r1 = mediatype, r2/r3 = the title id and takes
+    nothing off the stack, so unlike HOME Menu's thunk it can simply be called: the wrapper
+    keeps the three registers it needs, makes the call the site used to make, and hands the
+    buffer to `rewrite` when the read came back non-negative - the same test the caller
+    itself applies to the result.
+    """
+    hook = patch["smdh_hook"]
+
+    def bl(target: str):
+        return lambda at, labels: _bl(at, labels[target])
+
+    def bc(cond: int, target: str):
+        return lambda at, labels: _bc(cond, at, labels[target])
+
+    blocks = {
+        "icon_hook": [
+            0xE92D400D,                          # push  {r0, r2, r3, lr}   buffer, title id
+            lambda at, labels: _bl(at, hook["reader_off"]),  # bl the reader the site called
+            0xE3500000,                          # cmp   r0, #0
+            bc(COND_MI, "icon_out"),             # bmi   icon_out           the read failed
+            # Two registers, not one: the result has to survive `rewrite` and the stack has
+            # to stay 8-byte aligned across the call. ip is free at both ends.
+            0xE92D1001,                          # push  {r0, ip}           keep the result
+            0xE59D0008,                          # ldr   r0, [sp, #8]       buffer
+            0xE59D100C,                          # ldr   r1, [sp, #0xc]     title id low
+            0xE59D2010,                          # ldr   r2, [sp, #0x10]    title id high
+            bl("rewrite"),                       # bl    rewrite
+            0xE8BD1001,                          # pop   {r0, ip}
+        ],
+        "icon_out": [
+            0xE28DD00C,                          # add   sp, sp, #12
+            0xE8BD8000,                          # pop   {pc}
+        ],
+    } | _smdh_rewrite_blocks(hook["lang_index"], table_va)
     return _assemble(blocks, base)
+
 
 def build_stub(patch: dict, globals_value: int) -> bytes:
     """Assemble the replacement fsMountArchive. See the module docstring for the layout."""
@@ -1405,6 +1515,8 @@ def wants_names(tid: str) -> str | None:
         return None
     if patch.get("kind") == "smdh_names":
         return "smdh"
+    if patch.get("smdh_hook"):
+        return "smdh_manual"
     return "pane" if patch.get("pane_hook") else None
 
 
@@ -1522,6 +1634,16 @@ def patched_code(tid: str, code: bytes) -> bytes:
     globals_value = struct.unpack_from("<I", code, patch["globals_off"])[0]
     stub = build_stub(patch, globals_value)
     out[patch["stub_off"]:patch["stub_off"] + len(stub)] = stub
+
+    # The SMDH wrapper is the one blob that lands inside .text proper, over a function the
+    # search would otherwise walk into, so it is reproduced for real - the table it points
+    # at is data and its address is fixed, so no name table is needed to lay it out.
+    if patch.get("smdh_hook"):
+        hook = patch["smdh_hook"]
+        words, labels = _smdh_hook(patch, TEXT_VA + hook["rodata_off"], hook["stub_off"])
+        blob = b"".join(struct.pack("<I", word) for word in words)
+        out[hook["stub_off"]:hook["stub_off"] + len(blob)] = blob
+        struct.pack_into("<I", out, hook["site_off"], _bl(hook["site_off"], labels["icon_hook"]))
     return bytes(out)
 
 
@@ -2150,6 +2272,10 @@ def generate(
             raise RuntimeError(f"{patch['title']} needs a pane name table and none was built")
         extra, pane_log = _pane_records(patch, code, exheader, names["pane"])
         records += extra
+    if patch.get("smdh_hook"):
+        if not (names or {}).get("smdh_manual"):
+            raise RuntimeError(f"{patch['title']} needs an SMDH name table and none was built")
+        pane_log += _smdh_hook_records(patch, code, names["smdh_manual"], records)
 
     files = {
         "code.ips": make_ips(records),
@@ -2409,6 +2535,104 @@ def _mount_rename_records(patch: dict, code: bytes, records: list) -> list[str]:
         + "; LayeredFS then redirects the reads to the title's romfs folder, and falls back "
         "to the console's own manual when the file is absent"
     ]
+
+
+def _smdh_hook_records(patch: dict, code: bytes, table: bytes, records: list) -> list[str]:
+    """Route the manual viewer's SMDH read through the rewriting wrapper.
+
+    Three records: the `bl` at the call site, the wrapper over the dead function, and the
+    name table in the .rodata padding. Everything the patch assumes about the dump is
+    checked here rather than trusted - the call site really is the `bl` to the reader, the
+    function the blob lands on is byte for byte the dead one the offsets were taken from,
+    the padding it writes into is padding, and nothing already in `records` shares it.
+    """
+    hook = patch["smdh_hook"]
+    site, stub_off = hook["site_off"], hook["stub_off"]
+
+    word = struct.unpack_from("<I", code, site)[0]
+    if word != _bl(site, hook["reader_off"]):
+        raise RuntimeError(
+            f"0x{site:X} holds 0x{word:08X}, not the bl 0x{hook['reader_off']:X} "
+            f"(0x{_bl(site, hook['reader_off']):08X}) this hook wraps"
+        )
+
+    region = code[stub_off:stub_off + hook["stub_room"]]
+    digest = hashlib.sha256(region).hexdigest()
+    if digest != hook["dead_sha256"]:
+        raise RuntimeError(
+            f"0x{stub_off:X} is not the dead function the blob goes over\n"
+            f"  expected sha256 {hook['dead_sha256']}\n  got             {digest}"
+        )
+
+    table_off = hook["rodata_off"]
+    if len(table) > hook["rodata_room"]:
+        raise RuntimeError(
+            f"the name table is {len(table)} bytes, {hook['rodata_room']} are free"
+        )
+    if set(code[table_off:table_off + len(table)]) != {0}:
+        raise RuntimeError("the .rodata padding this hook writes into is not padding")
+
+    words, labels = _smdh_hook(patch, TEXT_VA + table_off, stub_off)
+    blob = b"".join(struct.pack("<I", word) for word in words)
+    if len(blob) > hook["stub_room"]:
+        raise RuntimeError(f"the hook is {len(blob)} bytes, {hook['stub_room']} are free")
+
+    new = [
+        (site, struct.pack("<I", _bl(site, labels["icon_hook"]))),
+        (stub_off, blob),
+        (table_off, table),
+    ]
+    for offset, data in new:
+        for other, existing in records:
+            if offset < other + len(existing) and other < offset + len(data):
+                raise RuntimeError(
+                    f"the SMDH hook record at 0x{offset:X} overlaps the one at 0x{other:X}"
+                )
+    records += new
+    _verify_smdh_hook(patch, code, records, labels, len(table))
+
+    return [
+        f"code.ips: the manual's SMDH read at 0x{site:X} routed through a {len(blob)}-byte "
+        f"wrapper at va 0x{TEXT_VA + stub_off:X}; language slot {hook['lang_index']} is "
+        f"rewritten from a {len(table)}-byte table at va 0x{TEXT_VA + table_off:X}, so the "
+        f"name above the page is the one the HOME Menu shows"
+    ]
+
+
+def _verify_smdh_hook(
+    patch: dict, code: bytes, records: list, labels: dict[str, int], table_size: int
+) -> None:
+    """Walk the patched image: site -> wrapper -> reader, and the table the loop reads."""
+    from layeredfs_check import find_symbols  # imported late: layeredfs_check imports build
+
+    hook = patch["smdh_hook"]
+    patched = bytearray(code)
+    for offset, data in records:
+        patched[offset:offset + len(data)] = data
+
+    word = struct.unpack_from("<I", patched, hook["site_off"])[0]
+    if _bl_target(word, hook["site_off"]) != labels["icon_hook"]:
+        raise RuntimeError("the call site does not reach the wrapper")
+
+    call = labels["icon_hook"] + 4
+    word = struct.unpack_from("<I", patched, call)[0]
+    if _bl_target(word, call) != hook["reader_off"]:
+        raise RuntimeError("the wrapper does not call the reader it replaced")
+
+    literal = struct.unpack_from("<I", patched, labels["table"])[0]
+    if literal != TEXT_VA + hook["rodata_off"]:
+        raise RuntimeError("the rewrite loop does not point at the table")
+    if struct.unpack_from("<I", patched, hook["rodata_off"] + table_size - 4)[0] != 0:
+        raise RuntimeError("the name table is not terminated")
+
+    # The blob lands on a function start, which is what Luma's symbol search walks back to,
+    # so the search has to be re-run: the mount stub must still be what it resolves.
+    symbols = find_symbols(bytes(patched), patch["text_size_override"] or patch["text_size"])
+    if symbols["fsMountArchive"] != patch["stub_off"]:
+        raise RuntimeError(
+            f"the wrapper changes Luma's symbol search: fsMountArchive -> "
+            f"{symbols['fsMountArchive']}, expected 0x{patch['stub_off']:X}"
+        )
 
 
 def _verify_mount_search(patch: dict, code: bytes, records: list) -> None:

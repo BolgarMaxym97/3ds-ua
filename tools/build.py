@@ -481,6 +481,19 @@ def app_name_tables(table: dict[str, str]) -> tuple[dict[str, bytes], list[str]]
     }
     smdh_blob, smdh_log = smdh_names.build_table(translated)
 
+    # The manual viewer gets the same table cut down to the titles this build ships a
+    # manual for: it reads one SMDH per manual, its .rodata padding is a few hundred bytes,
+    # and a Ukrainian name over a Russian document would be the worse of the two states.
+    manual_titles = {
+        tid.upper()
+        for patch in luma_hook.HOOK_PATCHES.values()
+        if patch.get("smdh_hook")
+        for tid in patch["manual_path"]["titles"]
+    }
+    manual_blob, manual_log = smdh_names.build_table(
+        {tid: entry for tid, entry in translated.items() if tid.upper() in manual_titles}
+    )
+
     # The originals are compared against what the title holds in memory, so they stay as
     # Nintendo wrote them - no homoglyphs on that side.
     # `ru` is the short name, `ru_long` the one carrying a second line - the software card
@@ -500,9 +513,10 @@ def app_name_tables(table: dict[str, str]) -> tuple[dict[str, bytes], list[str]]
     ]
     pane_blob, pane_log = pane_names.build_table(pairs)
 
-    return {"smdh": smdh_blob, "pane": pane_blob}, [
+    return {"smdh": smdh_blob, "pane": pane_blob, "smdh_manual": manual_blob}, [
         f"app names: {len(smdh_log)} titles, {len(smdh_blob)}-byte SMDH table, "
-        f"{len(pane_log)} substitutions, {len(pane_blob)}-byte pane table"
+        f"{len(pane_log)} substitutions, {len(pane_blob)}-byte pane table, "
+        f"{len(manual_log)} manual titles in a {len(manual_blob)}-byte table"
     ]
 
 
