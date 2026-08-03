@@ -342,7 +342,8 @@ TITLES = {
         "hook_patch": True,
     },
     # Circle Pad Pro applet: the calibration screens, reachable only with the accessory
-    # attached. Ships a whole RomFS image too.
+    # attached. Ships a whole RomFS image too - untested on hardware, since testing it needs
+    # the accessory.
     "extrapad": {
         "tids": ["000400300000CD02"],  # extrapad applet, EUR
         "source_tid": "000400300000CD02",

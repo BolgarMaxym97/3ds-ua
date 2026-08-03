@@ -232,7 +232,7 @@ HOOK_PATCHES: dict[str, dict] = {
         "globals_off": 0x4F6AC,  # literal holding the nn::fs globals base (+0x10 = fs:USER session)
     },
     # eShop applet (mint), EUR, title version 22 - the in-app purchase and update flow, the
-    # one StreetPass Mii Plaza's Update button hands off to.
+    # one StreetPass Mii Plaza's Update button hands off to. Verified working on hardware.
     #
     # Same shape as the Friend List, down to the byte: its FSUSER_OpenArchive IPC wrapper at
     # 0x2E758 is identical to the Friend List's 0x6E41C, and the mount function at 0x2D8D4
@@ -404,7 +404,8 @@ HOOK_PATCHES: dict[str, dict] = {
         "code_sha256": "2834311201bb3756ae8646a5046300b75d00a0f4b73509a79cd30ea5788f314f",
         "kind": "exheader_only",
     },
-    # Miiverse (cave), EUR, title version 4 - and the posting applet below. Both are the
+    # Miiverse (cave), EUR, title version 4 - and the posting applet below. Verified working
+    # on hardware: the closing message and the body of 015-5004 both come out Ukrainian. Both are the
     # StreetPass Mii Plaza case: Luma finds all five symbols in their own code, so no stub is
     # needed, but their accessInfo is 0x1 and 0x0 - no `DirectSdmc` - and the payload Luma
     # writes still has to open ARCHIVE_SDMC to read the replacement files. So each ships an
@@ -524,6 +525,7 @@ HOOK_PATCHES: dict[str, dict] = {
         # through the same call and has to keep coming through untouched.
         # This applet draws the error screens for the whole system, so its copy of the hook
         # is the one that translates 009-1003 and every other code an application throws.
+        # Verified working on hardware: 009-1003 out of the Plaza's update flow.
         "msg_hook": {
             "site_off": 0x3FFA4,
             "original_word": 0xE59F30DC,  # ldr r3, [pc, #0xdc]

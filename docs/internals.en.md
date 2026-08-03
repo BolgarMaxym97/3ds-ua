@@ -33,7 +33,7 @@ A folder name is the Title ID (TID) of the system title it overrides. Luma reads
 | `0004003000009C02` | Game Notes | `romfs/` — LayeredFS |
 | `0004003000009D02` | Internet Browser | `romfs/` — LayeredFS |
 | `0004001000022900` | Nintendo eShop | `romfs/` + `exheader.bin` — LayeredFS plus a rights patch |
-| `000400300000BE02` | Miiverse (`cave`) | `romfs/` + `exheader.bin` — LayeredFS plus a rights patch |
+| `000400300000BE02` | Miiverse (`cave`) | `romfs/` + `code.ips` + `exheader.bin` + `msg_romfs.bin` — LayeredFS plus a rights patch and the error-message archive |
 | `000400300000BA02` | Miiverse posting applet | `romfs/` + `exheader.bin` — LayeredFS plus a rights patch |
 | `0004001000022A00` | System Transfer | `romfs/` — LayeredFS |
 | `0004001000022B00` | Nintendo Zone | `romfs/` — LayeredFS |
@@ -42,7 +42,7 @@ A folder name is the Title ID (TID) of the system title it overrides. Luma reads
 | `0004001000022100` | Download Play | `code.ips` + `exheader.bin` + `dlplay_romfs.bin` — no LayeredFS, whole RomFS image off the SD card |
 | `0004001000022300` | Health & Safety Information | `code.ips` + `exheader.bin` + `safe_romfs.bin` — no LayeredFS, whole RomFS image off the SD card |
 | `000400300000D002` | Software Keyboard | `code.ips` + `exheader.bin` + `swkbd_romfs.bin` — no LayeredFS, whole RomFS image off the SD card |
-| `000400300000C502` | Error applet | `code.ips` + `exheader.bin` + `error_romfs.bin` — no LayeredFS, whole RomFS image off the SD card |
+| `000400300000C502` | Error applet | `code.ips` + `exheader.bin` + `error_romfs.bin` + `msg_romfs.bin` — no LayeredFS, whole RomFS image off the SD card plus the error-message archive |
 | `000400300000F602` | 3DS Memo (`memolib`) | `code.ips` + `exheader.bin` + `memolib_romfs.bin` — no LayeredFS, whole RomFS image off the SD card |
 | `000400300000CD02` | Circle Pad Pro applet (`extrapad`) | `code.ips` + `exheader.bin` + `extrapad_romfs.bin` — no LayeredFS, whole RomFS image off the SD card |
 | `0004003000009902` | Camera applet (`L`+`R`) | `code.ips` + `camera_applet_romfs.bin` — no LayeredFS, whole RomFS image off the SD card; no `exheader.bin`, the title already has `DirectSdmc` |
@@ -322,6 +322,61 @@ update ever — and it touched none of them). In practice the patch fits almost 
 The build checks both `remaster_version` and the dump's sha256 and refuses to run on a
 mismatch. That does not protect an end user, so the archive carries a note: if one of those
 titles crashes, its build is older and its folder under `luma/titles/` should be deleted.
+
+## How the error bodies were translated
+
+What is written under "Error Code: XXX-YYYY" does not belong to the title showing it. The
+error applet owns exactly fourteen strings - the frame, "OK", and the two empty
+`short_error` / `long_error` slots it fills at run time. The messages themselves live in the
+**shared data archive** `0x0004009B00012102`, the same class of title as the system font and
+`area`, dumped from CTRNAND just like them (`docs/dumping.md`).
+
+Inside is one MSBT per error module and language, and **every message's label is the error
+number**: the body of `009-1003` is label `91003` in `EU_Russian/90000_msbt_LZ.bin`, the body
+of `015-5004` is `155004` in `150000_msbt_LZ.bin`. 13 files, 259 messages in total.
+
+Two titles read the archive. Both mount it as `msg:` and pick the file from a seven-entry
+table indexed by console region (`12202 12302 12102 12102 12402 12502 12602`, so EUR is
+`12102`):
+
+| Title | What it shows |
+|---|---|
+| Error applet `000400300000C502` | every application's errors - eShop, the Plaza, updates, the SD Card |
+| Miiverse `000400300000BE02` | its own, because it draws its error screen itself |
+
+LayeredFS cannot reach it, and not for the same reason `area:` could not. The read goes
+through `FSUSER_OpenFileDirectly` with `ARCHIVE_SAVEDATA_AND_CONTENT` and a **binary** path
+carrying the archive's title id - while Luma's payload looks for textual mount-name prefixes
+(`rom:`, `rex:`…) in the path. A binary path has none and can have none.
+
+It is, however, exactly the situation the HOME Menu banner hook already exists for. The patch
+replaces the instruction that loads the archive id (`ldr r3, =0x2345678A`) with a branch into
+a stub that:
+
+```
+ldr ip, =table            table of {title id, path, length}
+ldr r3, [ip]              zero title id ends the walk -> pass-through
+ldr r1, [sp, #0x60]       the frame already holds the title id being read
+cmpeq …[sp, #0x64]        both words
+  match -> ASCII path into sp+0x10, empty archive path into sp+0x00, r3 = 9 (SDMC)
+  pass  -> ldr r3, =0x2345678A, exactly as before
+b   back
+```
+
+The comparison is not optional: the EULA archive (`0x0004009B00013102`) is read through the
+same call and has to keep behaving as Nintendo wrote it.
+
+The stubs (140 bytes) go into the `.text` padding - in the error applet behind its two romfs
+redirect stubs, in Miiverse behind the 0x114 bytes Luma claims for its own payload. The path
+strings go into the `.rodata` padding, in Miiverse behind the 48 bytes Luma claims there.
+
+The translated archive is rebuilt into a RomFS image (`tools/romfs.py`) and shipped in **each
+reader's folder** - `luma/titles/000400300000C502/msg_romfs.bin` and
+`luma/titles/000400300000BE02/msg_romfs.bin`, 206 KB each. 13 of its 117 files differ; every
+other language stays untouched, so switching the console language back still undoes the mod.
+
+The archive needs no `exheader.bin` - it is data, not a process, and nothing about it is tied
+to a build. The version and hash checks are on its two readers.
 
 ## How Download Play was fixed
 
