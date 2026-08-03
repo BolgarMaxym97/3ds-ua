@@ -11,7 +11,9 @@ Rules (every violation is an error):
      would be clipped
   3. more lines than the tallest official localisation would overflow the dialog
   4. a control tag that appears in no official localisation of that label is invented
-  5. a malformed tag token
+  5. a malformed tag token - unless the same brace run appears verbatim in an official
+     localisation of that label, i.e. it is literal text and not a tag at all (the software
+     keyboard warnings list `{|}~` among the characters a password may contain)
   6. the set of format specifiers (%d, %ls, %H, ...) matches no official localisation of
      that label: the app would print garbage or crash. Any localisation's set is accepted,
      because languages legitimately differ (%d %n '%y in English vs %d.%M.%y in German).
@@ -73,6 +75,8 @@ class Budget:
     lines: int = 0
     tags: set[str] = field(default_factory=set)
     format_sets: set[tuple[str, ...]] = field(default_factory=set)
+    # Brace runs the original text itself carries, tags and literal punctuation alike.
+    braces: set[str] = field(default_factory=set)
 
 
 def load_charset() -> set[int]:
@@ -119,6 +123,7 @@ def label_budgets(name: str, widths: dict[int, int]) -> dict[str, Budget]:
                 budget.width_px = max(budget.width_px, pixel_width(text, widths))
                 budget.lines = max(budget.lines, text.count("\n") + 1)
                 budget.tags |= set(TOKEN_RE.findall(text))
+                budget.braces |= set(BRACE_RE.findall(text))
                 budget.format_sets.add(tuple(sorted(FORMAT_RE.findall(text))))
 
     for pattern in cfg.get("budget_groups", []):
@@ -130,6 +135,7 @@ def label_budgets(name: str, widths: dict[int, int]) -> dict[str, Budget]:
             lines=max(budgets[label].lines for label in group),
             tags=set().union(*(budgets[label].tags for label in group)),
             format_sets=set().union(*(budgets[label].format_sets for label in group)),
+            braces=set().union(*(budgets[label].braces for label in group)),
         )
         for label in group:
             budgets[label] = shared
@@ -159,7 +165,9 @@ def check_entry(
             problems.append(f"{label}: characters missing from the HUD font: {chars}")
 
     for brace in BRACE_RE.findall(ua):
-        if not TOKEN_RE.fullmatch(brace):
+        # Not a tag and not in the original either - a typo in a tag, which the renderer
+        # would print raw. A brace run the original carries verbatim is literal text.
+        if not TOKEN_RE.fullmatch(brace) and brace not in budget.braces:
             problems.append(f"{label}: malformed tag token {brace!r}")
 
     dst_formats = tuple(sorted(FORMAT_RE.findall(ua)))

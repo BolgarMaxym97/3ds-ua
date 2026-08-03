@@ -1,0 +1,30 @@
+{
+  "Button_OK": {
+    "en": "OK",
+    "ua": "OK"
+  },
+  "Button_Quit": {
+    "en": "Cancel",
+    "ua": "Скасувати"
+  },
+  "MoveSlidebar": {
+    "en": "Use the scroll bar to see the rest\nof the canvas as you draw.",
+    "ua": "Смугою прокручування можна\nдивитися решту полотна."
+  },
+  "ReturnCanvas": {
+    "en": "Press  to return to the centre.",
+    "ua": "Натисніть , щоб перейти до центру."
+  },
+  "Dlog_SendCancel_mes": {
+    "en": "Cancel this post?",
+    "ua": "Скасувати цю публікацію?"
+  },
+  "Dlog_SendCancel_OKbtn": {
+    "en": "Yes",
+    "ua": "Так"
+  },
+  "Dlog_SendCancel_NGbtn": {
+    "en": "No",
+    "ua": "Ні"
+  }
+}

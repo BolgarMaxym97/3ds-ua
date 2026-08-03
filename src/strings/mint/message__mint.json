@@ -1,0 +1,1642 @@
+{
+  "CommonBtn_01_01": {
+    "en": "Back",
+    "ua": "Назад"
+  },
+  "CommonBtn_01_02": {
+    "en": "OK",
+    "ua": "OK"
+  },
+  "CommonBtn_01_03": {
+    "en": "Cancel",
+    "ua": "Скасувати"
+  },
+  "CommonBtn_01_04": {
+    "en": "OK",
+    "ua": "OK"
+  },
+  "CommonBtn_01_05": {
+    "en": "Back",
+    "ua": "Назад"
+  },
+  "CommonBtn_01_06": {
+    "en": "Back",
+    "ua": "Назад"
+  },
+  "CommonBtn_02_01": {
+    "en": "Cancel",
+    "ua": "Скасувати"
+  },
+  "CommonBtn_02_02": {
+    "en": "I forgot",
+    "ua": "Забув(ла)"
+  },
+  "CommonWin_dlg01_02": {
+    "en": "OK",
+    "ua": "OK"
+  },
+  "CommonWin_dlg01_03": {
+    "en": "",
+    "ua": ""
+  },
+  "CommonWin_dlg01_04": {
+    "en": "",
+    "ua": ""
+  },
+  "CommonWin_dlg02_03": {
+    "en": "Cancel",
+    "ua": "Скасувати"
+  },
+  "CommonWin_dlg02_06": {
+    "en": "OK",
+    "ua": "OK"
+  },
+  "CommonWin_dlg02_04": {
+    "en": "Back",
+    "ua": "Назад"
+  },
+  "CommonWin_dlg02_07": {
+    "en": "Agree",
+    "ua": "Приймаю"
+  },
+  "CommonWin_dlg03_01": {
+    "en": "Please read the information\non the lower screen.",
+    "ua": "Прочитайте текст\nна нижньому екрані."
+  },
+  "CommonWin_dlg03_02": {
+    "en": "Please read the information\non the lower screen.\n\nTouch Purchase to finalise\nyour payment.",
+    "ua": "Прочитайте інформацію\nна нижньому екрані.\n\nТоркніться Купити,\nщоб здійснити оплату."
+  },
+  "CommonWin_dlg04_01": {
+    "en": "Signing in.\nPlease wait...",
+    "ua": "Триває авторизація…\nЗачекайте."
+  },
+  "CommonWin_dlg04_02": {
+    "en": "Please go to Nintendo Network ID\nSettings in the System Settings to\nreset your password.",
+    "ua": "Скиньте пароль у розділі\nNintendo Network ID\nу налаштуваннях системи."
+  },
+  "CommonWin_dlg04_03": {
+    "en": "Incorrect password.\nPlease enter the correct password.",
+    "ua": "Неправильний пароль.\nВведіть правильний пароль."
+  },
+  "CommonWin_ERRdlg01_01": {
+    "en": "Error Code: {t:1.6:}",
+    "ua": "Код помилки: {t:1.6:}"
+  },
+  "CommonWin_ERRdlg01_03": {
+    "en": "OK",
+    "ua": "OK"
+  },
+  "Common_txt01_01": {
+    "en": "Balance: {t:1.1:}",
+    "ua": "Баланс: {t:1.1:}"
+  },
+  "Common_txt02_01": {
+    "en": "",
+    "ua": ""
+  },
+  "CommonSignIn_01_01": {
+    "en": "Sign in",
+    "ua": "Вхід"
+  },
+  "CommonSignIn_01_02": {
+    "en": "Nickname\n{t:1.0:}",
+    "ua": "Псевдонім\n{t:1.0:}"
+  },
+  "CommonSignIn_01_03": {
+    "en": "Nintendo Network ID\n{t:1.0:}",
+    "ua": "Nintendo Network ID\n{t:1.0:}"
+  },
+  "CommonSignIn_01_04": {
+    "en": "Please enter your password\nto sign in with your\nNintendo Network ID.",
+    "ua": "Введіть пароль,\nщоб увійти за допомогою\nNintendo Network ID."
+  },
+  "CommonSignIn_01_05": {
+    "en": "Please enter your password.",
+    "ua": "Введіть пароль."
+  },
+  "CommonSignIn_01_06": {
+    "en": "Remember this password",
+    "ua": "Запам'ятати цей пароль"
+  },
+  "CommonSignIn_01_07": {
+    "en": "The email address you entered when\nlinking your Nintendo Network ID\nhas not yet been validated.\n\nAs we will not be able to send you important\ninformation or password recovery emails should\nyou need them, please go to the System\nSettings to resend the verification email.",
+    "ua": "Адресу електронної пошти, яку ви\nвказали, прив'язуючи Nintendo\nNetwork ID, ще не підтверджено.\n\nОскільки ми не зможемо надіслати\nвам важливу інформацію або листи\nдля відновлення пароля, відкрийте\nналаштування системи й надішліть\nлист із підтвердженням ще раз."
+  },
+  "CommonSignIn_01_08": {
+    "en": "Please read the information\non the upper screen.",
+    "ua": "Прочитайте текст\nна верхньому екрані."
+  },
+  "CommonSWKB_btn01_01": {
+    "en": "Back",
+    "ua": "Назад"
+  },
+  "CommonSWKB_btn01_02": {
+    "en": "OK",
+    "ua": "OK"
+  },
+  "Boot_txt01_01": {
+    "en": "Connecting...",
+    "ua": "З'єднання…"
+  },
+  "Boot_txt01_05": {
+    "en": "",
+    "ua": ""
+  },
+  "Boot_txt01_06": {
+    "en": "Preparing...\nDo not turn off the power\nor remove the SD Card.",
+    "ua": "Підготовка...\nНе вимикайте консоль\nі не виймайте карту SD."
+  },
+  "Boot_txt01_08": {
+    "en": "Updating...\nDo not turn off the power\nor remove the SD Card.",
+    "ua": "Триває оновлення…\nНе вимикайте систему\nй не виймайте карту SD."
+  },
+  "Boot_txt01_07": {
+    "en": "There has been a change to the status\nof your Nintendo Network ID.\nYou must launch Nintendo eShop first\nbefore using passes or add-on\ncontent.",
+    "ua": "Стан вашого Nintendo Network ID\nзмінився.\nПерш ніж скористатися\nталонами або додатковим\nвмістом, потрібно запустити\nNintendo eShop."
+  },
+  "BootAccount_txt01_01": {
+    "en": "The following changes will be made\nwhen you link a Nintendo Network ID.\nPlease read this information carefully.",
+    "ua": "Прив'язавши Nintendo Network ID,\nви отримаєте такі зміни. Прочитайте\nце уважно, будь ласка."
+  },
+  "BootAccount_txt01_02": {
+    "en": "Credit Card Information Management",
+    "ua": "Керування даними платіжних карт"
+  },
+  "BootAccount_txt01_03": {
+    "en": "Credit card information will be deleted\nfrom this system, but information\nalready stored on your Nintendo\nNetwork ID can still be used. All credit\ncard information will henceforth be\nmanaged by your Nintendo Network ID.",
+    "ua": "Інформацію кредитної карти буде\nвидалено з цієї консолі, але ви\nй далі зможете користуватися\nінформацією, збереженою з\nNintendo Network ID. Надалі всією\nінформацією кредитної карти\nкеруватиме ваш\nNintendo Network ID."
+  },
+  "BootAccount_txt01_04": {
+    "en": "Account Activity Management",
+    "ua": "Керування історією покупок"
+  },
+  "BootAccount_txt01_05": {
+    "en": "Your Nintendo eShop account activity\nwill be linked to your Nintendo\nNetwork ID. However, your account\nactivity from prior to linking the ID will\nonly be viewable on your Nintendo 3DS\nsystem, and not on any other device.\nFurthermore, you will no longer be able\nto delete your account activity from\nNintendo eShop. If you wish to delete\nyour account activity, you will need to\ndelete your ID from the Nintendo\nNetwork ID Settings.",
+    "ua": "Історію покупок Nintendo eShop\nбуде зв'язано з вашим\nNintendo Network ID. Але покупки,\nзроблені до зв'язування ID,\nможна буде побачити лише\nна консолі Nintendo 3DS\nі ні на якому іншому\nпристрої.\nКрім того, ви більше не зможете\nвидалити історію покупок\nу Nintendo eShop. Якщо ви хочете\nїї видалити, доведеться видалити\nсвій ID у розділі\nNintendo Network ID."
+  },
+  "TitleInfo_btn01_02": {
+    "en": "Additional Information",
+    "ua": "Додаткові відомості"
+  },
+  "TitleInfo_txt02_01": {
+    "en": "Additional Information",
+    "ua": "Додаткові відомості"
+  },
+  "TitleInfo_dlg02_01": {
+    "en": "Insufficient Funds",
+    "ua": "Бракує коштів"
+  },
+  "TitleInfo_dlg02_02": {
+    "en": "Balance",
+    "ua": "Баланс"
+  },
+  "TitleInfo_dlg02_03": {
+    "en": "{t:1.2:}",
+    "ua": ""
+  },
+  "TitleInfo_dlg02_04": {
+    "en": "Required Funds",
+    "ua": "Потрібно"
+  },
+  "TitleInfo_dlg02_05": {
+    "en": "{t:1.2:}",
+    "ua": ""
+  },
+  "TitleInfo_dlg02_06": {
+    "en": "You do not have sufficient\nfunds to make this purchase.",
+    "ua": "У вас недостатньо коштів\nдля цієї покупки."
+  },
+  "TitleInfo_dlg02_07": {
+    "en": "Add Funds",
+    "ua": "Додати кошти"
+  },
+  "TitleInfo_dlg02_08": {
+    "en": "Cancel",
+    "ua": "Скасувати"
+  },
+  "TitleInfo_dlg03_01": {
+    "en": "Please read before continuing.",
+    "ua": "Прочитайте перед тим, як\nпродовжити."
+  },
+  "TitleInfo_dlg03_02": {
+    "en": "Next",
+    "ua": "Далі"
+  },
+  "TitleInfo_dlg03_03": {
+    "en": "Back",
+    "ua": "Назад"
+  },
+  "TitleInfo_dlg03_05": {
+    "en": "Information Regarding This Product",
+    "ua": "Інформація про цей продукт"
+  },
+  "TitleInfo_dlg04_01": {
+    "en": "Change of Address",
+    "ua": "Зміна адреси"
+  },
+  "TitleInfo_dlg04_02": {
+    "en": "Your address information is out of date.\nYou must enter your current address in\norder to purchase software in Nintendo\neShop.\n\nWould you like to update your address\ninformation now?",
+    "ua": "Ваша адреса застаріла. Щоб купувати\nпрограми в Nintendo eShop, треба\nввести поточну адресу.\n\nОновити адресу зараз?"
+  },
+  "TitleInfo_dlg04_03": {
+    "en": "After reading the upper screen,\nplease tap Update to update\nyour information.",
+    "ua": "Прочитавши текст на верхньому\nекрані, торкніться «Оновити»,\nщоб оновити дані."
+  },
+  "TitleInfo_dlg04_04": {
+    "en": "Update",
+    "ua": "Оновити"
+  },
+  "MemoryCheck_txt04_01": {
+    "en": "",
+    "ua": ""
+  },
+  "MemoryCheck_dlgtxt01_01": {
+    "en": "",
+    "ua": ""
+  },
+  "MemoryCheck_dlgtxt01_03": {
+    "en": "",
+    "ua": ""
+  },
+  "RegiAll_title01_01": {
+    "en": "Purchase All",
+    "ua": "Купити все"
+  },
+  "RegiAll_txt01_01": {
+    "en": "Product Details",
+    "ua": "Інформація про продукти"
+  },
+  "RegiAll_txt01_02": {
+    "en": "The selection is either no longer\navailable for purchase or exceeds the\nmaximum value that can be purchased\nat a time.\n\nVisit the Nintendo Support website\nfor more information.\nsupport.nintendo.com",
+    "ua": "Вибрані програми вже\nнеможливо купити, або їхня\nвартість перевищує\nмаксимально допустиму\nсуму покупки.\n\nДокладнішу інформацію\nдивіться на веб-сайті\nтехнічної підтримки Nintendo.\nsupport.nintendo.com"
+  },
+  "RegiAll_txt01_03": {
+    "en": "Please read the information\non the lower screen.\n\nContinue with purchasing\nthe items listed below?",
+    "ua": "Прочитайте інформацію\nна нижньому екрані.\n\nПродовжити покупку програм,\nуказаних нижче?"
+  },
+  "RegiAll_txt01_04": {
+    "en": "Please read the information\non the lower screen.\n\nContinue with purchasing\nthe items listed below?\nTouch Purchase to finalise\nyour payment.",
+    "ua": "Прочитайте інформацію\nна нижньому екрані.\n\nПродовжити покупку програм,\nуказаних нижче?\nТоркніться Купити,\nщоб здійснити оплату."
+  },
+  "Regi_title01_01": {
+    "en": "",
+    "ua": ""
+  },
+  "Regi_title01_02": {
+    "en": "Purchase Complete",
+    "ua": "Покупку завершено"
+  },
+  "Regi_title01_03": {
+    "en": "Ready to Download",
+    "ua": "Готово до завантаження"
+  },
+  "Regi_title01_04": {
+    "en": "Download Details",
+    "ua": "Інформація про завантаження"
+  },
+  "Regi_txt02_01": {
+    "en": "(SD Card)",
+    "ua": "(карта SD)"
+  },
+  "Regi_txt02_04": {
+    "en": "",
+    "ua": ""
+  },
+  "Regi_txt02_05": {
+    "en": "No funds are deducted\nwhen redeeming a code.",
+    "ua": "Використання коду\nне списує коштів."
+  },
+  "Regi_txt03_01": {
+    "en": "Price",
+    "ua": "Ціна"
+  },
+  "Regi_txt03_02": {
+    "en": "{t:1.2:}",
+    "ua": ""
+  },
+  "Regi_txt03_03": {
+    "en": "VAT",
+    "ua": "ПДВ"
+  },
+  "Regi_txt03_04": {
+    "en": "{t:1.2:}",
+    "ua": ""
+  },
+  "Regi_txt03_05": {
+    "en": "Cost",
+    "ua": "Разом"
+  },
+  "Regi_txt03_06": {
+    "en": "{t:1.2:}",
+    "ua": ""
+  },
+  "Regi_txt03_07": {
+    "en": "(inc. VAT)",
+    "ua": "(з ПДВ)"
+  },
+  "Regi_txt03_08": {
+    "en": "(inc. GST)",
+    "ua": "(з GST)"
+  },
+  "Regi_txt04_01": {
+    "en": "Required Blocks",
+    "ua": "Потрібно блоків"
+  },
+  "Regi_txt04_02": {
+    "en": "{t:1.0:}",
+    "ua": ""
+  },
+  "Regi_txt04_03": {
+    "en": "",
+    "ua": ""
+  },
+  "Regi_txt05_01": {
+    "en": "Details",
+    "ua": "Докладніше"
+  },
+  "Regi_txt05_02": {
+    "en": "Redownload",
+    "ua": "Завантажити знову"
+  },
+  "Regi_txt06_01": {
+    "en": "Funds",
+    "ua": "Кошти"
+  },
+  "Regi_txt06_02": {
+    "en": "Current Balance",
+    "ua": "Поточний баланс"
+  },
+  "Regi_txt06_03": {
+    "en": "{t:1.1:}",
+    "ua": ""
+  },
+  "Regi_txt06_07": {
+    "en": "Balance After Purchase",
+    "ua": "Баланс після покупки"
+  },
+  "Regi_txt06_08": {
+    "en": "{t:1.2:}",
+    "ua": ""
+  },
+  "Regi_txt07_03": {
+    "en": "Previously purchased items can be\nredownloaded at no extra cost.",
+    "ua": "Раніше придбані продукти можна\nбезкоштовно завантажити ще раз."
+  },
+  "Regi_txt08_01": {
+    "en": "Blocks",
+    "ua": "Блоки"
+  },
+  "Regi_txt08_02": {
+    "en": "Current Open Blocks",
+    "ua": "Вільних блоків зараз"
+  },
+  "Regi_txt08_04": {
+    "en": "(SD Card)",
+    "ua": "(карта SD)"
+  },
+  "Regi_txt08_05": {
+    "en": "{t:1.0:}",
+    "ua": ""
+  },
+  "Regi_txt08_06": {
+    "en": "Required Blocks",
+    "ua": "Потрібно блоків"
+  },
+  "Regi_txt08_07": {
+    "en": "{t:1.0:}",
+    "ua": ""
+  },
+  "Regi_txt08_08": {
+    "en": "Open Blocks After Download",
+    "ua": "Вільних блоків після завант."
+  },
+  "Regi_txt08_09": {
+    "en": "{t:1.0:}",
+    "ua": ""
+  },
+  "Regi_txt08_10": {
+    "en": "",
+    "ua": ""
+  },
+  "Regi_txt08_11": {
+    "en": "An update is available for data which\nis either available for purchase, or\nwhich you have already purchased.\nUpdate now?\n\nYou will not be able to purchase new\nadd-on content without updating.",
+    "ua": "Для даних, які можна придбати\nабо які ви вже придбали,\nдоступне оновлення.\nОновити зараз?\n\nБез цього оновлення ви не\nзможете придбати новий\nдодатковий вміст."
+  },
+  "Regi_txt08_12": {
+    "en": "If you continue, you confirm that you \nagree with the following: \nThis software is licensed to you by \nNintendo and Nintendo grants you a \nsimple non-exclusive licence to use \nthe software for personal use and \nnot for any commercial activity. \nYou may not grant a sublicence for \nthis software to third parties. The \nlicence for this software is valid from \nthe date of payment for this software. \nEverything that is not covered in this \nnotice is subject to the Nintendo 3DS \nService User Agreement and \nPrivacy Policy.",
+    "ua": "Цю програму надає вам\nкомпанія Nintendo на умовах\nпростої невиключної ліцензії\nдля особистого використання,\nне пов'язаного з підприєм-\nницькою діяльністю. Ви не\nмаєте права надавати\nсубліцензію на цю програму\nтретім особам без попередньої\nписьмової згоди Nintendo.\nЛіцензія на програму діє\nз моменту сплати вами\nліцензійної винагороди,\nзазначеної щодо цієї\nпрограми. В усьому, що не\nврегульовано цим\nзастереженням, діють\nположення Угоди про\nкористування сервісами\nNintendo 3DS і політики\nконфіденційності."
+  },
+  "Regi_txt09_01": {
+    "en": "",
+    "ua": ""
+  },
+  "Regi_txt10_01": {
+    "en": "",
+    "ua": ""
+  },
+  "Regi_txt10_02": {
+    "en": "",
+    "ua": ""
+  },
+  "Regi_btn01_01": {
+    "en": "Cancel",
+    "ua": "Скасувати"
+  },
+  "Regi_btn01_02": {
+    "en": "Purchase",
+    "ua": "Купити"
+  },
+  "Regi_btn01_09": {
+    "en": "",
+    "ua": ""
+  },
+  "Regi_btn01_03": {
+    "en": "Cancel",
+    "ua": "Скасувати"
+  },
+  "Regi_btn01_05": {
+    "en": "Download",
+    "ua": "Завантаж."
+  },
+  "Regi_btn01_06": {
+    "en": "",
+    "ua": ""
+  },
+  "Regi_btn01_07": {
+    "en": "Next",
+    "ua": "Далі"
+  },
+  "Regi_btn01_08": {
+    "en": "Previous",
+    "ua": "Назад"
+  },
+  "Regi_dlg01_01": {
+    "en": "Touching Purchase will\nfinalise your payment.\n\nProceed and purchase?\n",
+    "ua": "Якщо ви торкнетеся Купити,\nбуде здійснено оплату.\n\nПродовжити покупку?"
+  },
+  "Regi_dlg01_06": {
+    "en": "",
+    "ua": ""
+  },
+  "Regi_dlg01_08": {
+    "en": "",
+    "ua": ""
+  },
+  "Regi_dlg01_02": {
+    "en": "",
+    "ua": ""
+  },
+  "Regi_dlg01_04": {
+    "en": "Cancel",
+    "ua": "Скасувати"
+  },
+  "Regi_dlg01_03": {
+    "en": "Purchase",
+    "ua": "Купити"
+  },
+  "Regi_dlg01_07": {
+    "en": "",
+    "ua": ""
+  },
+  "Regi_dlg01_05": {
+    "en": "I consent that Nintendo begins with\nits performance before the\ncancellation period ends.\nI acknowledge that I thereby lose\nmy right to cancel.",
+    "ua": "Я згоден, що Nintendo почне\nвиконання до завершення терміну\nвідмови. Я усвідомлюю, що\nвтрачаю право на відмову."
+  },
+  "Regi_thankyou01_01": {
+    "en": "Thank you!",
+    "ua": "Дякуємо!"
+  },
+  "Regi_thankyou01_08": {
+    "en": "",
+    "ua": ""
+  },
+  "Regi_thankyou01_02": {
+    "en": "Your download will be\ncompleted shortly.",
+    "ua": "Завантаження скоро завершиться."
+  },
+  "Regi_thankyou01_03": {
+    "en": "Your transaction is complete.",
+    "ua": "Трансакцію завершено."
+  },
+  "Regi_thankyou01_04": {
+    "en": "Thank you!",
+    "ua": "Дякуємо!"
+  },
+  "Regi_thankyou01_05": {
+    "en": "Your download will be\ncompleted shortly.",
+    "ua": "Завантаження скоро завершиться."
+  },
+  "Regi_thankyou01_06": {
+    "en": "Your transaction is complete.",
+    "ua": "Трансакцію завершено."
+  },
+  "Regi_thankyou01_07": {
+    "en": "A code has been made available\nto you. You can find the code and\ninformation about its use on the\nreceipt for this transaction. Check the\nreceipt in Account Activity under\nSettings / Other in Nintendo eShop.\n\nYour download will be completed\nshortly.",
+    "ua": "Вам надано код. Код\nта інформацію про його\nвикористання можна знайти\nв квитанції цієї трансакції.\nКвитанцію видно в розділі\nІсторія покупок у меню\nНалаштування/інше в Nintendo eShop.\n\nЗавантаження скоро завершиться."
+  },
+  "Regi_thankyou01_09": {
+    "en": "A code has been issued to you.\nThe code and information about its use\nwill be sent to the email address\nregistered to your Nintendo Account.\nIf a child account is being used, the\nreceipt will be sent to the parent or\nguardian's email address.\nYour download will be completed\nshortly.",
+    "ua": "Вам надано код.\nКод та інформацію про його\nвикористання буде надіслано на\nадресу ел. пошти, указану у вашому\nобліковому записі Nintendo.\nЯкщо використовується дитячий\nобліковий запис, квитанцію надішлють\nна ел. пошту батьків або опікуна.\nЗавантаження скоро завершиться."
+  },
+  "DownloadAll_txt_01_01": {
+    "en": "Purchase All",
+    "ua": "Купити все"
+  },
+  "Download_title_01": {
+    "en": "Downloading",
+    "ua": "Завантаження"
+  },
+  "Download_title_02": {
+    "en": "Download Complete",
+    "ua": "Завантаження завершено"
+  },
+  "Download_txt01_01": {
+    "en": "Downloading...\nPlease do not turn off the power\nor remove the SD Card.",
+    "ua": "Триває завантаження…\nНе вимикайте систему\nй не виймайте карту SD."
+  },
+  "Download_txt01_02": {
+    "en": "Download progress",
+    "ua": "Хід завантаження"
+  },
+  "Download_txt01_04": {
+    "en": "{t:1.0:}%",
+    "ua": ""
+  },
+  "Download_txt01_05": {
+    "en": "Destination: SD Card",
+    "ua": "Куди: карта SD"
+  },
+  "Download_txt01_06": {
+    "en": "Redownload",
+    "ua": "Завантажити знову"
+  },
+  "Download_txt02_01": {
+    "en": "Download complete!",
+    "ua": "Завантаження завершено!"
+  },
+  "Download_txt02_02": {
+    "en": "Please read the information on the\nupper screen before continuing.\n\nTouch OK to return to the software.",
+    "ua": "Перш ніж продовжити, прочитайте\nінформацію на верхньому екрані.\n\nТоркніться OK, щоб повернутися\nдо програми."
+  },
+  "Charge_title01_01": {
+    "en": "Add Funds",
+    "ua": "Додати кошти"
+  },
+  "Charge_title01_02": {
+    "en": "",
+    "ua": ""
+  },
+  "Charge_txt01_01": {
+    "en": "You must add funds before making\na purchase.",
+    "ua": "Перш ніж робити покупки,\nпотрібно додати кошти."
+  },
+  "Charge_btn01_01": {
+    "en": "Add funds using a\nNintendo eShop Card",
+    "ua": "Додати кошти картою\nNintendo eShop"
+  },
+  "Charge_btn01_02": {
+    "en": "",
+    "ua": ""
+  },
+  "Charge_btn01_03": {
+    "en": "Add funds using a credit card",
+    "ua": "Використати кредитну карту"
+  },
+  "Charge_txt01_03": {
+    "en": "To use a credit card for payment, visit\nhttps://www.nintendo.eu/N3DS_payment.",
+    "ua": "Щоб оплатити картою, відвідайте\nhttps://www.nintendo.eu/N3DS_payment."
+  },
+  "Charge_txt01_04": {
+    "en": "To use a credit card for payment, visit\nhttps://www.nintendo.com.au/n3ds-payment",
+    "ua": "Щоб оплатити картою, відвідайте\nhttps://www.nintendo.com.au/n3ds-payment"
+  },
+  "Charge_btn01_05": {
+    "en": "",
+    "ua": ""
+  },
+  "Charge_btn01_04": {
+    "en": "Where can I get a Nintendo eShop Card?",
+    "ua": "Де взяти карту Nintendo eShop?"
+  },
+  "Charge_txt01_02": {
+    "en": "The maximum amount of funds that\ncan be added has been reached.",
+    "ua": "Досягнуто максимально\nдопустимої суми коштів,\nякі можна додати."
+  },
+  "Charge_ERRdlg01_01": {
+    "en": "Credit card payments cannot\nbe accepted at this time.\n\nPlease try again later.",
+    "ua": "Зараз оплата кредитною картою\nне приймається.\n\nСпробуйте ще раз\nпізніше."
+  },
+  "Charge_txt02_01": {
+    "en": "Enter the 16-digit activation\ncode on the Touch Screen.",
+    "ua": "Введіть 16-значний код активації\nна сенсорному дисплеї."
+  },
+  "Charge_txt02_02": {
+    "en": "Activation Code",
+    "ua": "Код активації"
+  },
+  "Charge_txt02_03": {
+    "en": "Enter the code.",
+    "ua": "Введіть код."
+  },
+  "Charge_swkb01_01": {
+    "en": "Enter the 16-character activation code\nfound on the Nintendo eShop Card.\n\nThe letters I, O and Z are not used.",
+    "ua": "Введіть 16-значний код активації\nз картки Nintendo eShop Card.\n\nБукви I, O і Z не використовуються."
+  },
+  "Charge_btn02_02": {
+    "en": "Limits on Adding Funds",
+    "ua": "Обмеження на кошти"
+  },
+  "Charge_title03_01": {
+    "en": "Limits on Adding Funds",
+    "ua": "Обмеження на кошти"
+  },
+  "Charge_title03_02": {
+    "en": "Limits on Adding Funds",
+    "ua": "Обмеження на кошти"
+  },
+  "Charge_txt04_01": {
+    "en": "Carefully read the information\non the back of the card.",
+    "ua": "Уважно прочитайте текст\nна зворотному боці карти."
+  },
+  "Charge_txt04_02": {
+    "en": "Nintendo eShop Card",
+    "ua": "Карта eShop"
+  },
+  "Charge_txt04_03": {
+    "en": "Enter the 16-character activation\ncode found on the back\nof the Nintendo eShop Card.",
+    "ua": "Введіть 16-символьний код\nактивації зі зворотного боку\nкарти Nintendo eShop."
+  },
+  "Charge_txt05_01": {
+    "en": "The funds will be added.\n\nOnce you have added these funds, you will not\nbe able to use them with the Wii Shop Channel\nor Nintendo DSi Shop.",
+    "ua": "Кошти буде додано.\n\nДодані кошти не можна буде витратити\nу Wii Shop Channel чи Nintendo DSi Shop."
+  },
+  "Charge_txt05_02": {
+    "en": "Funds to Add",
+    "ua": "Кошти до додавання"
+  },
+  "Charge_txt05_03": {
+    "en": "{t:1.2:}",
+    "ua": ""
+  },
+  "Charge_txt05_04": {
+    "en": "Add these funds?",
+    "ua": "Додати ці кошти?"
+  },
+  "Charge_btn05_01": {
+    "en": "Don't Add",
+    "ua": "Не додавати"
+  },
+  "Charge_btn05_02": {
+    "en": "Add",
+    "ua": "Додати"
+  },
+  "Charge_txt06_01": {
+    "en": "Added {t:1.2:}",
+    "ua": "Додано {t:1.2:}"
+  },
+  "Charge_txt06_04": {
+    "en": "You can view the details of your purchase in\nNintendo eShop under Account Activity.",
+    "ua": "Інформацію про покупку можна\nпобачити в Nintendo eShop у розділі\nІсторія покупок."
+  },
+  "Charge_txt06_06": {
+    "en": "You can view the details of your purchase\nin the Account Activity section under\nthe Settings / Other option.",
+    "ua": "Інформацію про покупку можна побачити\nв розділі Історія покупок у меню\nНалаштування/інше."
+  },
+  "Charge_txt06_07": {
+    "en": "Your receipt will be sent to the email address\nregistered to your Nintendo Account. If a child\naccount is being used, the receipt will be sent\nto the parent or guardian's email address.",
+    "ua": "Квитанція прийде на адресу ел. пошти,\nуказану у вашому обліковому записі Nintendo.\nЯкщо це дитячий обліковий запис,\nїї отримають на ел. пошту батьки/опікун."
+  },
+  "Charge_txt06_02": {
+    "en": "Funds Added: ",
+    "ua": "Додано коштів:"
+  },
+  "Charge_txt06_03": {
+    "en": "Balance: ",
+    "ua": "Баланс:"
+  },
+  "Charge_txt06_05": {
+    "en": "",
+    "ua": ""
+  },
+  "Charge_btn06_01": {
+    "en": "",
+    "ua": ""
+  },
+  "Charge_title07_01": {
+    "en": "",
+    "ua": ""
+  },
+  "Charge_title07_02": {
+    "en": "",
+    "ua": ""
+  },
+  "Charge_btn07_01": {
+    "en": "",
+    "ua": ""
+  },
+  "Charge_btn07_02": {
+    "en": "",
+    "ua": ""
+  },
+  "Charge_btn07_03": {
+    "en": "",
+    "ua": ""
+  },
+  "Charge_txt08_01": {
+    "en": "",
+    "ua": ""
+  },
+  "Charge_txt08_02": {
+    "en": "",
+    "ua": ""
+  },
+  "Charge_txt08_03": {
+    "en": "",
+    "ua": ""
+  },
+  "Charge_txt08_04": {
+    "en": "",
+    "ua": ""
+  },
+  "Charge_txt09_01": {
+    "en": "",
+    "ua": ""
+  },
+  "Charge_txt09_02": {
+    "en": "",
+    "ua": ""
+  },
+  "Charge_txt09_03": {
+    "en": "",
+    "ua": ""
+  },
+  "Charge_txt09_04": {
+    "en": "",
+    "ua": ""
+  },
+  "Charge_txt09_05": {
+    "en": "",
+    "ua": ""
+  },
+  "Charge_txt09_06": {
+    "en": "",
+    "ua": ""
+  },
+  "Charge_txt10_01": {
+    "en": "",
+    "ua": ""
+  },
+  "Charge_txt10_02": {
+    "en": "",
+    "ua": ""
+  },
+  "Charge_txt10_03": {
+    "en": "",
+    "ua": ""
+  },
+  "Charge_txt10_04": {
+    "en": "",
+    "ua": ""
+  },
+  "Charge_txt10_05": {
+    "en": "",
+    "ua": ""
+  },
+  "Charge_txt10_06": {
+    "en": "",
+    "ua": ""
+  },
+  "Charge_txt10_07": {
+    "en": "",
+    "ua": ""
+  },
+  "Charge_txt10_08": {
+    "en": "",
+    "ua": ""
+  },
+  "Charge_txt10_09": {
+    "en": "",
+    "ua": ""
+  },
+  "Charge_txt10_10": {
+    "en": "",
+    "ua": ""
+  },
+  "Charge_txt10_11": {
+    "en": "",
+    "ua": ""
+  },
+  "Charge_txt10_12": {
+    "en": "",
+    "ua": ""
+  },
+  "Charge_txt11_01": {
+    "en": "",
+    "ua": ""
+  },
+  "Charge_txt11_02": {
+    "en": "",
+    "ua": ""
+  },
+  "Charge_txt11_03": {
+    "en": "",
+    "ua": ""
+  },
+  "Charge_txt11_04": {
+    "en": "",
+    "ua": ""
+  },
+  "Charge_txt11_07": {
+    "en": "",
+    "ua": ""
+  },
+  "Charge_txt11_08": {
+    "en": "",
+    "ua": ""
+  },
+  "Charge_txt11_09": {
+    "en": "",
+    "ua": ""
+  },
+  "Charge_txt11_10": {
+    "en": "",
+    "ua": ""
+  },
+  "Charge_txt11_11": {
+    "en": "",
+    "ua": ""
+  },
+  "Charge_txt11_05": {
+    "en": "",
+    "ua": ""
+  },
+  "Charge_txt11_06": {
+    "en": "",
+    "ua": ""
+  },
+  "Charge_txt12_01": {
+    "en": "",
+    "ua": ""
+  },
+  "Charge_txt12_02": {
+    "en": "",
+    "ua": ""
+  },
+  "Charge_txt12_03": {
+    "en": "",
+    "ua": ""
+  },
+  "Charge_txt12_07": {
+    "en": "",
+    "ua": ""
+  },
+  "Charge_txt12_04": {
+    "en": "",
+    "ua": ""
+  },
+  "Charge_txt12_05": {
+    "en": "",
+    "ua": ""
+  },
+  "Charge_txt12_06": {
+    "en": "",
+    "ua": ""
+  },
+  "Charge_txt13_01": {
+    "en": "",
+    "ua": ""
+  },
+  "Charge_txt13_02": {
+    "en": "",
+    "ua": ""
+  },
+  "Charge_txt13_03": {
+    "en": "",
+    "ua": ""
+  },
+  "Charge_txt13_04": {
+    "en": "",
+    "ua": ""
+  },
+  "Charge_txt13_05": {
+    "en": "",
+    "ua": ""
+  },
+  "Charge_txt13_06": {
+    "en": "",
+    "ua": ""
+  },
+  "Charge_txt13_07": {
+    "en": "",
+    "ua": ""
+  },
+  "Charge_txt13_08": {
+    "en": "",
+    "ua": ""
+  },
+  "Charge_txt13_09": {
+    "en": "",
+    "ua": ""
+  },
+  "Charge_txt14_01": {
+    "en": "",
+    "ua": ""
+  },
+  "Charge_dlg01_09": {
+    "en": "",
+    "ua": ""
+  },
+  "Charge_dlg01_01": {
+    "en": "",
+    "ua": ""
+  },
+  "Charge_dlg01_02": {
+    "en": "",
+    "ua": ""
+  },
+  "Charge_dlg01_03": {
+    "en": "",
+    "ua": ""
+  },
+  "Charge_dlg01_04": {
+    "en": "",
+    "ua": ""
+  },
+  "Charge_dlg01_05": {
+    "en": "",
+    "ua": ""
+  },
+  "Charge_dlg01_06": {
+    "en": "",
+    "ua": ""
+  },
+  "Charge_dlg01_07": {
+    "en": "",
+    "ua": ""
+  },
+  "Charge_dlg01_08": {
+    "en": "",
+    "ua": ""
+  },
+  "Credit_title01_01": {
+    "en": "Credit Card Funding",
+    "ua": "Поповнення платіжною картою"
+  },
+  "Credit_txt01_01": {
+    "en": "Select an amount to add to your balance.\n\nYou cannot add an amount that would\ncause your balance to exceed {t:1.2:}.",
+    "ua": "Виберіть суму, яку додати до балансу.\n\nНе можна додати суму, після якої\nбаланс перевищить {t:1.2:}."
+  },
+  "Credit_btn01_01": {
+    "en": "{t:1.2:}",
+    "ua": ""
+  },
+  "Credit_btn01_02": {
+    "en": "Required Amount Only",
+    "ua": "Тільки потрібну суму"
+  },
+  "Credit_txt01_02": {
+    "en": "This will top up your account\nfunds with {t:1.2:}. Proceed?",
+    "ua": "Це поповнить ваш рахунок\nна {t:1.2:}. Продовжити?"
+  },
+  "Credit_txt02_01": {
+    "en": "Credit Card Number",
+    "ua": "Номер платіжної карти"
+  },
+  "Credit_txt02_03": {
+    "en": "Expiry Date",
+    "ua": "Діє до"
+  },
+  "Credit_txt02_04": {
+    "en": "No Cards Registered",
+    "ua": "Карт не зареєстровано"
+  },
+  "Credit_txt02_05": {
+    "en": "",
+    "ua": ""
+  },
+  "Credit_txt02_06": {
+    "en": "MasterCard",
+    "ua": "MasterCard"
+  },
+  "Credit_txt02_07": {
+    "en": "VISA",
+    "ua": "VISA"
+  },
+  "Credit_txt02_08": {
+    "en": "**** **** **** {t:1.0:}",
+    "ua": ""
+  },
+  "Credit_txt02_09": {
+    "en": "{t:1.5:} / {t:1.4:}",
+    "ua": ""
+  },
+  "Credit_txt02_10": {
+    "en": "Add funds to your account using\nthe credit card information above?",
+    "ua": "Додати кошти на рахунок\nкартою, указаною вище?"
+  },
+  "Credit_txt02_13": {
+    "en": "",
+    "ua": ""
+  },
+  "Credit_txt02_11": {
+    "en": "Use Another\nCredit Card",
+    "ua": "Іншою\nкартою"
+  },
+  "Credit_txt02_12": {
+    "en": "Use This\nCredit Card",
+    "ua": "Цією\nкартою"
+  },
+  "Credit_dlg01_01": {
+    "en": "If you use another credit card,\nthe stored credit card information\nshown above will be deleted.\n\nIs this OK?",
+    "ua": "Якщо взяти іншу карту, збережені\nдані карти, показані вище,\nбуде видалено.\n\nПродовжити?"
+  },
+  "Credit_dlg01_03": {
+    "en": "",
+    "ua": ""
+  },
+  "Credit_dlg01_02": {
+    "en": "Delete",
+    "ua": "Стерти"
+  },
+  "Credit_dlg02_01": {
+    "en": "Credit card information has been\ndeleted. You can now enter a new\ncredit card.",
+    "ua": "Дані платіжної карти видалено.\nТепер можна ввести нову\nкарту."
+  },
+  "Credit_dlg02_02": {
+    "en": "Failed to authenticate stored credit\ncard information. The information\nhas been deleted.",
+    "ua": "Не вдалося перевірити збережені\nдані платіжної карти. Дані\nвидалено."
+  },
+  "Credit_dlg03_01": {
+    "en": "I consent that Nintendo begins with\nits performance before the\ncancellation period ends.\nI acknowledge that I thereby lose\nmy right to cancel.",
+    "ua": "Я згоден, що Nintendo почне\nвиконання до завершення терміну\nвідмови. Я усвідомлюю, що\nвтрачаю право на відмову."
+  },
+  "Credit_dlg04_01": {
+    "en": "Your balance has been updated.\nPlease check your balance on the\nupper screen once you have been\nreturned to the Main Menu.\n\nYou will now be returned\nto the Main Menu.",
+    "ua": "Ваш баланс оновлено.\nПеревірте його на верхньому\nекрані, коли повернетеся\nдо головного меню.\n\nЗараз ви повернетеся\nдо головного меню."
+  },
+  "Credit_dlg04_02": {
+    "en": "Your balance has been updated.\nPlease check your balance.",
+    "ua": "Ваш баланс оновлено.\nПеревірте баланс."
+  },
+  "Credit_txt03_02": {
+    "en": "Please enter the four- to eight-character\npassword used to secure your credit card\ninformation.\n\nPlease be advised that if you enter\nthe password incorrectly three times\nin a row, your credit card information\nwill be deleted for security reasons.",
+    "ua": "Введіть пароль (від чотирьох до восьми\nсимволів). Ним буде захищено\nінформацію вашої кредитної карти.\n\nЗауважте: якщо ви тричі поспіль\nнеправильно введете пароль, інформацію\nвашої кредитної карти буде видалено\nз причин безпеки."
+  },
+  "Credit_txt03_03": {
+    "en": "Please enter the four-to-eight digit password\nused to secure your credit card information.\n\nPlease be advised that if you enter\nthe password incorrectly three times\nin a row, your credit card information\nwill be deleted for security reasons.",
+    "ua": "Введіть пароль (від чотирьох до восьми\nцифр). Ним буде захищено інформацію\nвашої кредитної карти.\n\nЗауважте: якщо ви тричі поспіль\nнеправильно введете пароль, інформацію\nвашої кредитної карти буде видалено\nз причин безпеки."
+  },
+  "Credit_txt04_01": {
+    "en": "By selecting Add Funds below,\nyou will confirm payment and the\nvalue shown below will be added.\n\nOnce you add funds to your system, you\ncannot cancel or get a refund.",
+    "ua": "Вибравши внизу Додати кошти,\nви підтвердите оплату, і суму,\nуказану нижче, буде додано.\n\nДодавши кошти на консоль, ви не\nзможете скасувати це чи повернути їх."
+  },
+  "Credit_txt04_07": {
+    "en": "",
+    "ua": ""
+  },
+  "Credit_txt04_08": {
+    "en": "Germany",
+    "ua": "Німеччина"
+  },
+  "Credit_txt04_09": {
+    "en": "Australia",
+    "ua": ""
+  },
+  "Credit_txt04_06": {
+    "en": "By selecting Add Funds below,\nyou will confirm payment and the\nvalue shown below will be added.",
+    "ua": "Вибравши «Додати кошти» нижче,\nви підтверджуєте оплату, і показану\nнижче суму буде додано."
+  },
+  "Credit_txt04_02": {
+    "en": "Funds to Add (Amount to Pay)",
+    "ua": "Кошти до додавання (до сплати)"
+  },
+  "Credit_txt04_03": {
+    "en": "{t:1.2:}",
+    "ua": ""
+  },
+  "Credit_txt04_04": {
+    "en": "New Balance",
+    "ua": "Новий баланс"
+  },
+  "Credit_txt04_05": {
+    "en": "{t:1.2:}",
+    "ua": ""
+  },
+  "Credit_txt05_01": {
+    "en": "Select an amount to add to your balance.\nYou cannot add an amount that would\ncause your balance to exceed {t:1.2:}.\n\nPlease note that your card issuer might \ntreat this as an international transaction \nand impose additional fees. \nFor details, please contact your card issuer.\n",
+    "ua": "Виберіть суму, яку хочете додати\nдо балансу. Не можна вибрати суму,\nпісля додавання якої баланс\nперевищить {t:1.2:}.\nЗдійснюючи цю покупку, ви можете\nзаплатити емітентові вашої кредитної\nкарти комісію за операцію в іноземній\nвалюті. Докладніше про це запитайте\nв емітента вашої кредитної карти."
+  },
+  "Credit_btn04_01": {
+    "en": "Add Funds",
+    "ua": "Додати кошти"
+  },
+  "Credit_ERRdlg01_01": {
+    "en": "",
+    "ua": ""
+  },
+  "CreditSet_title01_01": {
+    "en": "",
+    "ua": ""
+  },
+  "CreditSet_title01_02": {
+    "en": "Parental Controls",
+    "ua": "Батьківський контроль"
+  },
+  "CreditSet_txt01_01": {
+    "en": "Select the type of credit card you wish to use.\n\nChildren: please have a parent or legal\nguardian enter these details for you.",
+    "ua": "Виберіть тип платіжної карти.\n\nДіти: попросіть батьків або опікуна\nввести ці дані замість вас."
+  },
+  "CreditSet_btn01_01": {
+    "en": "",
+    "ua": ""
+  },
+  "CreditSet_btn01_02": {
+    "en": "MasterCard",
+    "ua": "MasterCard"
+  },
+  "CreditSet_btn01_03": {
+    "en": "VISA",
+    "ua": "VISA"
+  },
+  "CreditSet_txt02_01": {
+    "en": "Enter your credit card information.\nThis will be encrypted before sending.\n",
+    "ua": "Введіть дані платіжної карти.\nПеред надсиланням їх буде зашифровано."
+  },
+  "CreditSet_txt02_02": {
+    "en": "Card Number",
+    "ua": "Номер карти"
+  },
+  "CreditSet_txt02_03": {
+    "en": "Expiry Date",
+    "ua": "Діє до"
+  },
+  "CreditSet_txt02_04": {
+    "en": "Security Code",
+    "ua": "Код безпеки"
+  },
+  "CreditSet_txt02_05": {
+    "en": "/20",
+    "ua": ""
+  },
+  "CreditSet_swkb01_01": {
+    "en": "Enter the credit card number.",
+    "ua": "Введіть номер платіжної карти."
+  },
+  "CreditSet_swkb01_02": {
+    "en": "Enter the expiry month.",
+    "ua": "Введіть місяць завершення."
+  },
+  "CreditSet_swkb01_03": {
+    "en": "Enter the expiry year.",
+    "ua": "Введіть рік завершення."
+  },
+  "CreditSet_swkb01_04": {
+    "en": "Enter the security code.",
+    "ua": "Введіть код безпеки."
+  },
+  "CreditSet_btn02_01": {
+    "en": "What's a security code?",
+    "ua": "Що таке код безпеки?"
+  },
+  "CreditSet_btn02_02": {
+    "en": "Credit Card Security Statement",
+    "ua": "Про безпеку платіжних карт"
+  },
+  "CreditSet_txt03_01": {
+    "en": "What's a security code?",
+    "ua": "Що таке код безпеки?"
+  },
+  "CreditSet_txt03_02": {
+    "en": "The security code is located\non the back of your credit card.",
+    "ua": "Код безпеки надруковано\nна зворотному боці вашої карти."
+  },
+  "CreditSet_txt04_01": {
+    "en": "Credit Card Security Statement",
+    "ua": "Про безпеку платіжних карт"
+  },
+  "CreditSet_txt04_02": {
+    "en": "Our secure servers encrypt credit\ncard data transmitted and stored\nfor your shopping service purchases.\nAll such encrypted information is\nmaintained and processed by both\nNintendo and our trusted third-party\ncredit card processors on secure\ncomputers that are not accessible\nfrom the internet.",
+    "ua": "Наші безпечні сервери\nшифрують і зберігають\nдані кредитних карт,\nпередані в системі розрахунків\nNintendo eShop.\nЦю зашифровану інформацію\nзберігає й обробляє\nкомпанія Nintendo разом\nіз довіреними партнерами\nна захищених комп'ютерах,\nдо яких немає доступу\nчерез Інтернет."
+  },
+  "CreditSet_txt06_01": {
+    "en": "You can store your credit card information\nfor ease of use in subsequent purchases.\n\nNote:\n- You will be required to create a\npassword to secure this information.\n- Stored credit card information will be deleted\nautomatically if the card passes its expiry date. ",
+    "ua": "Інформацію вашої кредитної карти\nможна зберегти для наступних покупок.\nПримітка.\n- Вам потрібно буде створити пароль,\nщоб захистити цю інформацію.\n- Збережену інформацію кредитної карти\nбуде автоматично видалено, коли\nскінчиться термін дії карти."
+  },
+  "CreditSet_txt06_03": {
+    "en": "Store credit card information?",
+    "ua": "Зберегти дані платіжної карти?"
+  },
+  "CreditSet_btn06_01": {
+    "en": "No",
+    "ua": "Ні"
+  },
+  "CreditSet_btn06_02": {
+    "en": "Yes",
+    "ua": "Так"
+  },
+  "CreditSet_txt07_01": {
+    "en": "Please enter a four- to eight-character\npassword. This will be used to secure your\ncredit card information.\n\nIf this password is entered incorrectly three\ntimes in a row once it has been set, your credit\ncard information will be deleted for security\nreasons.",
+    "ua": "Введіть пароль (від чотирьох до восьми\nсимволів). Ним буде захищено\nінформацію вашої кредитної карти.\n\nЯкщо після встановлення цього пароля\nви тричі поспіль неправильно введете\nйого, інформацію вашої кредитної карти\nбуде видалено з причин безпеки."
+  },
+  "CreditSet_txt07_02": {
+    "en": "Please enter a four- to eight-character password. \nThis will be used to secure your credit card information.\n\nIf this password is entered incorrectly three times in a\nrow once it has been set, your credit card information\nwill be deleted for security reasons.",
+    "ua": "Введіть пароль (від чотирьох до восьми символів).\nНим буде захищено інформацію\nвашої кредитної карти.\n\nЯкщо після встановлення цього пароля\nви тричі поспіль неправильно введете\nйого, інформацію вашої кредитної карти\nбуде видалено з причин безпеки."
+  },
+  "CreditSet_txt07_03": {
+    "en": "Access to Nintendo 3DS Shopping\nServices is restricted by Parental\nControls.\n\nPlease enter your PIN to temporarily\nremove this restriction.",
+    "ua": "Доступ до сервісів магазину Nintendo 3DS\nобмежено батьківським контролем.\n\nВведіть PIN-код, щоб\nтимчасово зняти це обмеження."
+  },
+  "CreditSet_txt07_04": {
+    "en": "All the characters of the password\nyou entered are identical. For security\nreasons, please enter a password\ncomposed of four to eight differing\nalphanumeric characters.",
+    "ua": "Усі знаки введеного пароля\nоднакові. З причин безпеки введіть\nпароль із чотирьох-восьми різних\nлітер і цифр."
+  },
+  "CreditSet_txt07_05": {
+    "en": "To confirm, please re-enter the\npassword which will be used to\nsecure your credit card information.",
+    "ua": "Для підтвердження введіть ще раз\nпароль, який захищатиме дані\nвашої платіжної карти."
+  },
+  "CreditSet_txt07_06": {
+    "en": "Failed to enter the correct PIN.",
+    "ua": "Не введено правильний PIN-код."
+  },
+  "CreditSet_txt07_07": {
+    "en": "",
+    "ua": ""
+  },
+  "CreditSet_txt09_02": {
+    "en": "",
+    "ua": ""
+  },
+  "CreditSet_dlg01_01": {
+    "en": "",
+    "ua": ""
+  },
+  "Age_txt01_01": {
+    "en": "Age Verification",
+    "ua": "Перевірка віку"
+  },
+  "Age_txt01_02": {
+    "en": "",
+    "ua": ""
+  },
+  "Age_txt01_05": {
+    "en": "",
+    "ua": ""
+  },
+  "Age_txt01_03": {
+    "en": "",
+    "ua": ""
+  },
+  "Age_txt01_04": {
+    "en": "",
+    "ua": ""
+  },
+  "Age_btn01_01": {
+    "en": "",
+    "ua": ""
+  },
+  "Age_btn01_02": {
+    "en": "",
+    "ua": ""
+  },
+  "Age_swkb01_01": {
+    "en": "",
+    "ua": ""
+  },
+  "Age_swkb01_02": {
+    "en": "",
+    "ua": ""
+  },
+  "Exchange_title01_01": {
+    "en": "Download Code",
+    "ua": "Код завантаження"
+  },
+  "Exchange_txt01_01": {
+    "en": "",
+    "ua": ""
+  },
+  "Exchange_txt01_02": {
+    "en": "",
+    "ua": ""
+  },
+  "Exchange_txt01_03": {
+    "en": "",
+    "ua": ""
+  },
+  "Exchange_swkb01_01": {
+    "en": "Enter the download code.\n\nThe letters I, O and Z are not used.",
+    "ua": "Введіть код завантаження.\n\nБукви I, O і Z не використовуються."
+  },
+  "AddressSet_title01_01": {
+    "en": "Address Information",
+    "ua": "Дані адреси"
+  },
+  "AddressSet_txt01_01": {
+    "en": "Your address is set to the following:",
+    "ua": "Ваша адреса задана так:"
+  },
+  "AddressSet_txt01_02": {
+    "en": "■City",
+    "ua": "■Місто"
+  },
+  "AddressSet_txt01_03": {
+    "en": "■State",
+    "ua": "■Штат"
+  },
+  "AddressSet_txt01_04": {
+    "en": "■Zip Code",
+    "ua": "■Індекс"
+  },
+  "AddressSet_txt01_05": {
+    "en": "■County",
+    "ua": "■Округ"
+  },
+  "AddressSet_txt01_06": {
+    "en": "■Province",
+    "ua": "■Провінц."
+  },
+  "AddressSet_title02_01": {
+    "en": "Location Settings",
+    "ua": "Місцезнаходження"
+  },
+  "AddressSet_txt02_01": {
+    "en": "Please enter your zip code. This\nis required to calculate sales tax.",
+    "ua": "Введіть індекс. Він потрібен\nдля розрахунку податку."
+  },
+  "AddressSet_txt02_02": {
+    "en": "Please enter your province. This\nis required to calculate sales tax.",
+    "ua": "Введіть провінцію. Вона потрібна\nдля розрахунку податку."
+  },
+  "AddressSet_txt02_03": {
+    "en": "To verify your credit-card information, please\nenter the zip code of the billing address.",
+    "ua": "Щоб перевірити дані платіжної карти, введіть\nіндекс адреси, на яку виставляються рахунки."
+  },
+  "AddressSet_txt02_05": {
+    "en": "■Zip Code",
+    "ua": "■Індекс"
+  },
+  "AddressSet_txt02_06": {
+    "en": "",
+    "ua": ""
+  },
+  "AddressSet_swkb01_01": {
+    "en": "Enter your zip code.",
+    "ua": "Введіть індекс."
+  },
+  "AddressSet_btn02_AB": {
+    "en": "Alberta",
+    "ua": "Альберта"
+  },
+  "AddressSet_btn02_BC": {
+    "en": "British Columbia",
+    "ua": "Брит. Колумбія"
+  },
+  "AddressSet_btn02_MB": {
+    "en": "Manitoba",
+    "ua": "Манітоба"
+  },
+  "AddressSet_btn02_NB": {
+    "en": "New Brunswick",
+    "ua": "Нью-Брансвік"
+  },
+  "AddressSet_btn02_NL": {
+    "en": "Newfoundland",
+    "ua": "Ньюфаундленд"
+  },
+  "AddressSet_btn02_NT": {
+    "en": "Northwest Territories",
+    "ua": "Пн.-Зах. території"
+  },
+  "AddressSet_btn02_NS": {
+    "en": "Nova Scotia",
+    "ua": "Нова Шотландія"
+  },
+  "AddressSet_btn02_NU": {
+    "en": "Nunavut",
+    "ua": "Нунавут"
+  },
+  "AddressSet_btn02_ON": {
+    "en": "Ontario",
+    "ua": "Онтаріо"
+  },
+  "AddressSet_btn02_PE": {
+    "en": "Prince Edward Island",
+    "ua": "Острів Принца Едварда"
+  },
+  "AddressSet_btn02_QC": {
+    "en": "Québec",
+    "ua": "Квебек"
+  },
+  "AddressSet_btn02_SK": {
+    "en": "Saskatchewan",
+    "ua": "Саскачеван"
+  },
+  "AddressSet_btn02_YT": {
+    "en": "Yukon",
+    "ua": "Юкон"
+  },
+  "AddressSet_txt03_01": {
+    "en": "Please tap the option that best\nmatches your location.",
+    "ua": "Виберіть варіант, який найкраще\nвідповідає вашому місцю."
+  },
+  "AddressSet_txt04_01": {
+    "en": "If the information on the\nupper screen is correct,\ntap OK.",
+    "ua": "Якщо дані на верхньому\nекрані правильні,\nторкніться OK."
+  },
+  "AddressSet_dlg04_01": {
+    "en": "Your location has been saved.\nIf you want to change this information\nin the future, go to Settings / Other\nand tap Location Settings.",
+    "ua": "Ваше місцезнаходження збережено.\nЩоб змінити ці дані згодом,\nвідкрийте\n«Параметри / Інше» й торкніться\n«Місцезнаходження»."
+  },
+  "AddressSet_dlg05_01": {
+    "en": "We were unable to find an area that\ncorresponds to the zip code you\nentered.\n\nPlease check over the information\nyou entered and try again.",
+    "ua": "Не вдалося знайти місцевість,\nяка відповідає введеному\nіндексу.\n\nПеревірте введені дані\nй спробуйте ще раз."
+  },
+  "Eula_txt01_01": {
+    "en": "",
+    "ua": ""
+  },
+  "Eula_txt01_02": {
+    "en": "",
+    "ua": ""
+  },
+  "Eula_txt01_03": {
+    "en": "You must accept the latest terms\nof the Nintendo Network Agreement\nand Nintendo Network Privacy Policy\nbefore accessing Nintendo Network.",
+    "ua": "Перш ніж користуватися Nintendo Network,\nпотрібно прийняти найновіші умови\nугоди про Nintendo Network\nі політики конфіденційності\nNintendo Network."
+  },
+  "Eula_txt01_04": {
+    "en": "The Nintendo Network Agreement\nand Nintendo Network Privacy Policy\nwill now be displayed.",
+    "ua": "Зараз буде показано\nугоду про Nintendo Network\nі політику конфіденційності\nNintendo Network."
+  },
+  "ActMail_txt01_01": {
+    "en": "Your email address has not been verified yet.\nPlease follow the instructions given in the\nconfirmation email sent to your registered\nemail address.\n\nSelect Resend Email to receive a new\nconfirmation email.",
+    "ua": "Вашу адресу електронної пошти ще\nне підтверджено. Дійте за інструкціями\nв листі з підтвердженням, надісланому\nна вашу зареєстровану адресу\nелектронної пошти.\n\nВиберіть Надіслати ще раз, щоб\nотримати новий лист із підтвердженням."
+  },
+  "ActMail_txt01_10": {
+    "en": "",
+    "ua": ""
+  },
+  "ActMail_txt01_02": {
+    "en": "Please enter the confirmation code.",
+    "ua": "Введіть код підтвердження."
+  },
+  "ActMail_txt01_03": {
+    "en": "The confirmation code is incorrect.\n\nPlease check the email and try again.",
+    "ua": "Неправильний код підтвердження.\n\nПеревірте електронну\nпошту й спробуйте ще раз."
+  },
+  "ActMail_txt01_04": {
+    "en": "The confirmation code has expired.\n\nSend a new confirmation code\nto your registered email address?",
+    "ua": "Термін дії коду\nпідтвердження минув.\n\nНадіслати новий код підтвердження\nна вашу зареєстровану\nадресу електронної пошти?"
+  },
+  "ActMail_txt01_05": {
+    "en": "Send another email to your\nregistered email address?\n\nYou can check your registered email\naddress under System Settings ⇒\nNintendo Network ID Settings ⇒\nUser Information Settings.",
+    "ua": "Надіслати лист ще раз\nна вашу зареєстровану\nадресу електронної пошти?\n\nСвою зареєстровану адресу\nелектронної пошти можна перевірити\nв розділі Налаштування системи\n⇒ Nintendo Network ID\n⇒ Інформація про користувача."
+  },
+  "ActMail_txt01_06": {
+    "en": "You cannot perform this operation\nseveral times in a row.\n\nPlease try again later.",
+    "ua": "Не можна повторювати цю\nдію кілька разів підряд.\n\nСпробуйте ще раз пізніше."
+  },
+  "ActMail_txt01_07": {
+    "en": "An email has been sent.\n\nIf you do not receive the email within\nan hour, visit support.nintendo.com.",
+    "ua": "Лист надіслано\nна електронну пошту.\n\nЯкщо ви не отримаєте цього\nлиста протягом години,\nвідвідайте веб-сайт\nsupport.nintendo.com."
+  },
+  "ActMail_txt01_08": {
+    "en": "Unable to verify confirmation code.\nPlease try again later.\n\nError Code: {t:1.6:}",
+    "ua": "Не вдалося перевірити\nкод підтвердження.\nСпробуйте ще раз пізніше.\n\nКод помилки: {t:1.6:}"
+  },
+  "ActMail_txt01_09": {
+    "en": "Unable to resend email.\nPlease try again later.\n\nError Code: {t:1.6:}",
+    "ua": "Не вдалося надіслати лист\nна електронну пошту.\nСпробуйте ще раз пізніше.\n\nКод помилки: {t:1.6:}"
+  },
+  "ActMail_btn01_01": {
+    "en": "Enter Confirmation Code",
+    "ua": "Ввести код\nпідтвердження"
+  },
+  "ActMail_btn01_02": {
+    "en": "Resend Email",
+    "ua": "Надіслати ще раз"
+  },
+  "ActMail_btn01_03": {
+    "en": "Later",
+    "ua": "Пізніше"
+  },
+  "ActMail_btn01_04": {
+    "en": "Send",
+    "ua": "Надіслати"
+  },
+  "Error_Btn01_01": {
+    "en": "OK",
+    "ua": "OK"
+  },
+  "error_txt01_11": {
+    "en": "This activation code cannot\nbe used with your current\nregion setting.\n\nPlease check the code and try\nentering it again.",
+    "ua": "Цей код активації не працює\nз вашим поточним\nрегіоном.\n\nПеревірте код і спробуйте\nввести його ще раз."
+  },
+  "error_txt01_14": {
+    "en": "This activation code has already\nbeen used.",
+    "ua": "Цей код активації вже\nвикористано."
+  },
+  "error_txt01_15": {
+    "en": "The activation code could not be\nrecognised. Please check the code\nand try entering it again.\n\nIf the problem persists, please\nmake a note of the error code\nand visit support.nintendo.com.",
+    "ua": "Не вдалося розпізнати код\nактивації. Перевірте код активації\nй спробуйте ввести його ще раз.\n\nЯкщо проблема не зникає,\nзапишіть код помилки й відвідайте\nsupport.nintendo.com."
+  },
+  "error_txt01_23": {
+    "en": "The activation code or download\ncode could not be recognised.\nThe code might have expired.\n\nIf the problem persists, please\nmake a note of the error code\nand visit support.nintendo.com.",
+    "ua": "Не вдалося розпізнати код\nактивації\nчи код завантаження. Можливо,\nтермін дії коду минув.\n\nЯкщо проблема не зникає,\nзапишіть код помилки\nй завітайте на\nsupport.nintendo.com."
+  },
+  "error_txt01_17": {
+    "en": "",
+    "ua": ""
+  },
+  "error_txt01_18": {
+    "en": "The item corresponding to the code\nyou entered is not currently being\ndistributed.",
+    "ua": "Товар, що відповідає введеному\nкоду, зараз не роздається."
+  },
+  "error_txt01_29": {
+    "en": "The number you have entered is\ninvalid.\n\nPlease enter your details again.",
+    "ua": "Ви ввели неправильний номер.\n\nВведіть свої дані ще раз."
+  },
+  "error_txt01_32": {
+    "en": "",
+    "ua": ""
+  },
+  "error_txt01_34": {
+    "en": "This credit card cannot be used.\n\nFor more information, please contact \nthe issuer of your credit card.",
+    "ua": "Цю кредитну карту\nвикористати не можна.\n\nДокладнішу інформацію\nзапитайте в емітента\nвашої кредитної карти."
+  },
+  "error_txt01_47": {
+    "en": "The password is incorrect.",
+    "ua": "Пароль неправильний."
+  },
+  "error_txt01_67": {
+    "en": "",
+    "ua": ""
+  },
+  "error_txt01_69": {
+    "en": "",
+    "ua": ""
+  },
+  "error_txt01_70": {
+    "en": "You cannot add an amount that\nwould cause your balance to\nexceed {t:1.2:}.",
+    "ua": "Не можна додати суму, після якої\nбаланс перевищить\n{t:1.2:}."
+  },
+  "error_txt01_72": {
+    "en": "Battery power is running low.\n\nPlease plug in the AC adapter\nand recharge the system for\na short while.",
+    "ua": "Батарея майже розряджена.\n\nПід'єднайте блок живлення\nй трохи підзарядіть\nконсоль."
+  },
+  "error_txt01_95": {
+    "en": "The code you have entered\nis a Nintendo Points number,\nwhich cannot be used.\n\n",
+    "ua": "Ви ввели номер\nNintendo Points, який\nвикористати не можна."
+  },
+  "error_txt01_97": {
+    "en": "The password is invalid.",
+    "ua": "Пароль недійсний."
+  },
+  "error_txt01_98": {
+    "en": "The code you entered\nhas expired.",
+    "ua": "Термін дії введеного\nкоду минув."
+  },
+  "error_txt01_99": {
+    "en": "",
+    "ua": ""
+  },
+  "error_txt01_100": {
+    "en": "The connection to the server has\ntimed out due to user inactivity.",
+    "ua": "Час підключення до сервера\nминув через відсутність\nактивності користувача."
+  },
+  "error_txt01_101": {
+    "en": "Nintendo eShop is currently\nundergoing maintenance and cannot\nhandle purchases or downloads.\nWe apologise for any inconvenience.\n\nFor more information about\nmaintenance, visit\nsupport.nintendo.com.",
+    "ua": "Зараз на сервері\nNintendo eShop ведуться\nроботи з обслуговування, тому\nзавантаження й покупки неможливі.\nПросимо вибачення\nза незручності.\n\nІнформацію про обслуговування\nдивіться на support.nintendo.com."
+  },
+  "error_txt01_102": {
+    "en": "An error has occurred.\nPlease try again later.\n\nIf the problem persists, please contact\nyour local customer support centre,\nquoting the error code. For contact\ndetails, check the Operations Manual\nor visit support.nintendo.com.",
+    "ua": "Сталася помилка.\nСпробуйте ще раз пізніше.\nЯкщо проблема не зникає,\nзверніться до місцевого центру\nтехнічної підтримки й назвіть\nкод помилки. Контактні дані —\nв посібнику користувача\nі на support.nintendo.com."
+  },
+  "error_txt01_103": {
+    "en": "No add-on content currently\navailable for download.",
+    "ua": "Наразі немає додаткового\nвмісту для завантаження."
+  },
+  "error_txt01_104": {
+    "en": "An error has occurred.\nPlease try again later.\n\nIf the problem persists, please\nmake a note of the error code\nand visit support.nintendo.com.",
+    "ua": "Сталася помилка.\nСпробуйте ще раз пізніше.\n\nЯкщо проблема не зникає,\nзапишіть код помилки й відвідайте\nsupport.nintendo.com."
+  },
+  "error_txt01_105": {
+    "en": "The code you have entered is a\nNintendo eShop Card activation\ncode, which cannot be used.",
+    "ua": "Ви ввели код активації\nкартки Nintendo eShop Card,\nякий використати не можна."
+  },
+  "error_txt01_106": {
+    "en": "The code you have entered\nis incorrect. Please check the code\nand try entering it again.\n\nNote that the letters I, O and Z\nare not used. Please check that\nyou have not used any of these\ncharacters by mistake.",
+    "ua": "Ви ввели недійсний код.\nПеревірте код і спробуйте\nввести його ще раз.\n\nЗауважте: букви I, O і Z\nне використовуються. Перевірте,\nчи не використали ви\nпомилково один із цих знаків."
+  },
+  "error_txt01_107": {
+    "en": "This service cannot be used in your\nregion at this time. We apologise\nfor the inconvenience.",
+    "ua": "Зараз цим сервером не можна\nкористуватися у вашому\nрегіоні. Просимо вибачення\nза незручності."
+  },
+  "error_txt01_108": {
+    "en": "The content associated with this\ndownload code has already been\nredeemed or purchased.",
+    "ua": "Вміст, пов'язаний із цим\nкодом завантаження, уже\nотримано або придбано."
+  },
+  "error_txt01_109": {
+    "en": "The add-on content is corrupted.\n\nIn the System Settings, select Data\nManagement ⇒ Nintendo 3DS ⇒\nAdd-on Content, delete the add-on\ncontent and then redownload it.\n\nIf the problem persists, please\nmake a note of the error code\nand visit support.nintendo.com.",
+    "ua": "Додатковий вміст пошкоджено.\n\nУ налаштуваннях системи виберіть\nКерування даними ⇒\nNintendo 3DS ⇒ Додатковий\nвміст, видаліть додатковий\nвміст, а потім завантажте його\nще раз.\n\nЯкщо проблема не зникає,\nзапишіть код помилки й відвідайте\nsupport.nintendo.com."
+  }
+}

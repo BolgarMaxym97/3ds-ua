@@ -1,0 +1,1134 @@
+{
+  "lau_title_menu": {
+    "en": "HOME Menu",
+    "ua": "Меню HOME"
+  },
+  "lau_title_manu": {
+    "en": "Instruction Manual",
+    "ua": "Посібник"
+  },
+  "lau_title_olive": {
+    "en": "Miiverse",
+    "ua": "Miiverse"
+  },
+  "lau_title_web": {
+    "en": "Internet Browser",
+    "ua": "Інтернет-браузер"
+  },
+  "lau_dlg_quit5": {
+    "en": "Closing suspended software...",
+    "ua": "Призупинена програма\nзакривається…..."
+  },
+  "lau_dlg_quit1": {
+    "en": "Close the suspended software\nand launch this one?\n{t:1.1:5500}{t:0.3:3c3c3cff}(Any unsaved data will\nbe lost.){t:0.3:000000ff}{/t:1.1}",
+    "ua": "Закрити призупинену\nпрограму й запустити цю?\n{t:1.1:5500}{t:0.3:3c3c3cff}(Незбережені дані\nбуде втрачено.){t:0.3:000000ff}{/t:1.1}"
+  },
+  "lau_dlg_quit3": {
+    "en": "Close the suspended software\nand launch this one?\n{t:1.1:5500}{t:0.3:3c3c3cff}(Data will be saved.){t:0.3:000000ff}{/t:1.1}",
+    "ua": "Закрити призупинену\nпрограму й запустити цю?\n{t:1.1:5500}{t:0.3:3c3c3cff}(Дані буде збережено.){t:0.3:000000ff}{/t:1.1}"
+  },
+  "lau_dlg_quit8": {
+    "en": "Close the suspended software\nand launch this one?",
+    "ua": "Закрити призупинену\nпрограму й запустити цю??"
+  },
+  "lau_dlg_launch": {
+    "en": "Launch this software?",
+    "ua": "Запустити цю програму?"
+  },
+  "lau_dlg_quit1_for_account": {
+    "en": "Close the suspended software\nand launch the Nintendo\nNetwork ID Settings?\n{t:1.1:5500}{t:0.3:3c3c3cff}(Any unsaved data will be lost.){t:0.3:000000ff}{/t:1.1}",
+    "ua": "Закрити призупинену\nпрограму й відкрити розділ\nNintendo Network ID?\n{t:1.1:5500}{t:0.3:3c3c3cff}(Незбережені дані\nбуде втрачено.){t:0.3:000000ff}{/t:1.1}"
+  },
+  "lau_dlg_quit3_for_account": {
+    "en": "Close the suspended software\nand launch the Nintendo\nNetwork ID Settings?\n{t:1.1:5500}{t:0.3:3c3c3cff}(Data will be saved.){t:0.3:000000ff}{/t:1.1}",
+    "ua": "Закрити призупинену\nпрограму й відкрити розділ\nNintendo Network ID?\n{t:1.1:5500}{t:0.3:3c3c3cff}(Дані буде збережено.){t:0.3:000000ff}{/t:1.1}"
+  },
+  "lau_dlg_quit8_for_account": {
+    "en": "Close the suspended software\nand launch the Nintendo\nNetwork ID Settings?",
+    "ua": "Закрити призупинену\nпрограму й відкрити розділ\nNintendo Network ID?"
+  },
+  "lau_dlg_launch_for_account": {
+    "en": "Launch the Nintendo\nNetwork ID Settings?",
+    "ua": "Відкрити розділ\nNintendo Network ID?"
+  },
+  "lau_dlg_quit1_for_mset": {
+    "en": "Close the suspended software\nand launch the System Settings?\n{t:1.1:5500}({t:0.3:3c3c3cff}Any unsaved data will be lost.){t:0.3:000000ff}{/t:1.1}",
+    "ua": "Закрити призупинену\nпрограму й запустити\nналаштування системи?\n{t:1.1:5500}{t:0.3:3c3c3cff}(Незбережені дані\nбуде втрачено.){t:0.3:000000ff}{/t:1.1}"
+  },
+  "lau_dlg_quit3_for_mset": {
+    "en": "Close the suspended software\nand launch the System Settings?\n{t:1.1:5500}(D{t:0.3:3c3c3cff}ata will be saved.){t:0.3:000000ff}{/t:1.1}",
+    "ua": "Закрити призупинену\nпрограму й запустити\nналаштування системи?\n{t:1.1:5500}{t:0.3:3c3c3cff}(Дані буде збережено.){t:0.3:000000ff}{/t:1.1}"
+  },
+  "lau_dlg_quit8_for_mset": {
+    "en": "Close the suspended software\nand launch the System Settings?",
+    "ua": "Закрити призупинену\nпрограму й запустити\nналаштування системи?"
+  },
+  "lau_dlg_launch_for_mset": {
+    "en": "Launch the System Settings?",
+    "ua": "Запустити налаштування\nсистеми?"
+  },
+  "lau_dlg_quit1_for_common": {
+    "en": "Are you sure you wish to close\nthe suspended software?\n{t:1.1:5500}{t:0.3:3c3c3cff}(Any unsaved data will be lost.){t:0.3:000000ff}{/t:1.1}",
+    "ua": "Справді закрити\nпризупинену програму?\n{t:1.1:5500}{t:0.3:3c3c3cff}(Незбережені дані\nбуде втрачено.){t:0.3:000000ff}{/t:1.1}"
+  },
+  "lau_dlg_quit3_for_common": {
+    "en": "Are you sure you wish to close\nthe suspended software?\n{t:1.1:5500}{t:0.3:3c3c3cff}(Data will be saved.){t:0.3:000000ff}{/t:1.1}",
+    "ua": "Справді закрити\nпризупинену програму?\n{t:1.1:5500}{t:0.3:3c3c3cff}(Дані буде збережено.){t:0.3:000000ff}{/t:1.1}"
+  },
+  "lau_dlg_quit8_for_common": {
+    "en": "Are you sure you wish to close\nthe suspended software?",
+    "ua": "Справді закрити\nпризупинену програму?"
+  },
+  "lau_dlg_quit1_for_movie": {
+    "en": "Close the suspended software\nand launch YouTube?\n{t:1.1:5500}{t:0.3:3c3c3cff}(Any unsaved data will be lost.){t:0.3:000000ff}{/t:1.1}",
+    "ua": "Закрити призупинену\nпрограму й запустити\nYouTube?\n{t:1.1:5500}{t:0.3:3c3c3cff}(Незбережені дані\nбуде втрачено.){t:0.3:000000ff}{/t:1.1}"
+  },
+  "lau_dlg_quit3_for_movie": {
+    "en": "Close the suspended software\nand launch YouTube?\n{t:1.1:5500}{t:0.3:3c3c3cff}(Data will be saved.){t:0.3:000000ff}{/t:1.1}",
+    "ua": "Закрити призупинену\nпрограму й запустити\nYouTube?\n{t:1.1:5500}{t:0.3:3c3c3cff}(Дані буде збережено.){t:0.3:000000ff}{/t:1.1}"
+  },
+  "lau_dlg_quit8_for_movie": {
+    "en": "Close the suspended software\nand launch YouTube?",
+    "ua": "Закрити призупинену\nпрограму й запустити\nYouTube?"
+  },
+  "lau_dlg_launch_for_movie": {
+    "en": "Launch YouTube?",
+    "ua": "Запустити YouTube?"
+  },
+  "lau_dlg_quit1_for_eshop": {
+    "en": "Close the suspended software\nand launch Nintendo eShop?\n{t:1.1:5500}{t:0.3:3c3c3cff}(Any unsaved data will be lost.){t:0.3:000000ff}{/t:1.1}",
+    "ua": "Закрити призупинену\nпрограму й запустити\nNintendo eShop?\n{t:1.1:5500}{t:0.3:3c3c3cff}(Незбережені дані\nбуде втрачено.){t:0.3:000000ff}{/t:1.1}"
+  },
+  "lau_dlg_quit3_for_eshop": {
+    "en": "Close the suspended software\nand launch Nintendo eShop?\n{t:1.1:5500}{t:0.3:3c3c3cff}(Data will be saved.){t:0.3:000000ff}{/t:1.1}",
+    "ua": "Закрити призупинену\nпрограму й запустити\nNintendo eShop?\n{t:1.1:5500}{t:0.3:3c3c3cff}(Дані буде збережено.){t:0.3:000000ff}{/t:1.1}"
+  },
+  "lau_dlg_quit8_for_eshop": {
+    "en": "Close the suspended software\nand launch Nintendo eShop?",
+    "ua": "Закрити призупинену\nпрограму й запустити\nNintendo eShop?"
+  },
+  "lau_dlg_launch_for_eshop": {
+    "en": "Launch Nintendo eShop?",
+    "ua": "Запустити Nintendo eShop??"
+  },
+  "lau_dlg_pare0": {
+    "en": "Would you like to launch this\nsoftware in 2D?\n{t:1.1:5500}{t:0.3:3c3c3cff}You must enter your PIN to\nlaunch it in 3D.{t:0.3:000000ff}{/t:1.1}",
+    "ua": "Запустити програму\nв режимі 2D?\n{t:1.1:5500}{t:0.3:3c3c3cff}Щоб запустити її\nв режимі 3D, потрібно\nввести PIN-код.{t:0.3:000000ff}{/t:1.1}"
+  },
+  "lau_dlg_pare0_for_movie": {
+    "en": "Would you like to launch\nYouTube in 2D?\n{t:1.1:5500}{t:0.3:3c3c3cff}You must enter your PIN to\nlaunch it in 3D.{t:0.3:000000ff}{/t:1.1}",
+    "ua": "Запустити YouTube\nв режимі 2D?\n{t:1.1:5500}{t:0.3:3c3c3cff}Щоб запустити його\nв режимі 3D, потрібно\nввести PIN-код.{t:0.3:000000ff}{/t:1.1}"
+  },
+  "lau_dlg_pare0_for_eshop": {
+    "en": "Would you like to launch\nNintendo eShop in 2D?\n{t:1.1:5500}{t:0.3:3c3c3cff}You must enter your PIN to\nlaunch it in 3D.{t:0.3:000000ff}{/t:1.1}",
+    "ua": "Запустити Nintendo eShop\nв режимі 2D?\n{t:1.1:5500}{t:0.3:3c3c3cff}Щоб запустити його\nв режимі 3D, потрібно\nввести PIN-код.{t:0.3:000000ff}{/t:1.1}"
+  },
+  "lau_dlg_pare0_for_account": {
+    "en": "Would you like to launch the\nNintendo Network ID Settings\nin 2D?\n{t:1.1:5500}{t:0.3:3c3c3cff}You must enter your PIN to\nlaunch it in 3D.{t:0.3:000000ff}{/t:1.1}",
+    "ua": "Відкрити розділ Nintendo\nNetwork ID у режимі 2D?\n{t:1.1:5500}{t:0.3:3c3c3cff}Щоб відкрити його\nв режимі 3D, потрібно\nввести PIN-код.{t:0.3:000000ff}{/t:1.1}"
+  },
+  "lau_dlg_pare5": {
+    "en": "Would you like to launch this\nsoftware in 2D?\n{t:1.1:5500}{t:0.3:3c3c3cff}You must enter your PIN again\nto launch it in 3D.{t:0.3:000000ff}{/t:1.1}",
+    "ua": "Запустити програму\nв режимі 2D?\n{t:1.1:5500}{t:0.3:3c3c3cff}Щоб запустити її\nв режимі 3D, потрібно\nввести PIN-код ще раз.{t:0.3:000000ff}{/t:1.1}"
+  },
+  "lau_dlg_pare5_for_movie": {
+    "en": "Would you like to launch\nYouTube in 2D?\n{t:1.1:5500}{t:0.3:3c3c3cff}You must enter your PIN again\nto launch it in 3D.{t:0.3:000000ff}{/t:1.1}",
+    "ua": "Запустити YouTube\nв режимі 2D?\n{t:1.1:5500}{t:0.3:3c3c3cff}Щоб запустити його\nв режимі 3D, потрібно\nввести PIN-код ще раз.{t:0.3:000000ff}{/t:1.1}"
+  },
+  "lau_dlg_pare5_for_eshop": {
+    "en": "Would you like to launch\nNintendo eShop in 2D?\n{t:1.1:5500}{t:0.3:3c3c3cff}You must enter your PIN again\nto launch it in 3D.{t:0.3:000000ff}{/t:1.1}",
+    "ua": "Запустити Nintendo eShop\nв режимі 2D?\n{t:1.1:5500}{t:0.3:3c3c3cff}Щоб запустити його\nв режимі 3D, потрібно\nввести PIN-код ще раз.{t:0.3:000000ff}{/t:1.1}"
+  },
+  "lau_dlg_pare5_for_account": {
+    "en": "Would you like to launch the\nNintendo Network ID Settings\nin 2D?\n{t:1.1:5500}{t:0.3:3c3c3cff}You must enter your PIN again\nto launch it in 3D.{t:0.3:000000ff}{/t:1.1}",
+    "ua": "Відкрити розділ Nintendo\nNetwork ID у режимі 2D?\n{t:1.1:5500}{t:0.3:3c3c3cff}Щоб відкрити його\nв режимі 3D, потрібно\nввести PIN-код ще раз.{t:0.3:000000ff}{/t:1.1}"
+  },
+  "lau_dlg_pare1": {
+    "en": "This software is restricted by\nthe Parental Controls Software\nRating settings.{t:1.1:1400}\n                    {/t:1.1}\nWould you like to temporarily\nremove this restriction?",
+    "ua": "Програму обмежено\nбатьківським контролем.{t:1.1:1400}\n                    {/t:1.1}\nТимчасово зняти це\nобмеження?"
+  },
+  "lau_dlg_pare1_for_movie": {
+    "en": "YouTube is restricted by the\nParental Controls Software\nRating settings.{t:1.1:1400}\n                    {/t:1.1}\nWould you like to temporarily\nremove this restriction?",
+    "ua": "YouTube обмежено\nбатьківським контролем.{t:1.1:1400}\n                    {/t:1.1}\nТимчасово зняти це\nобмеження?"
+  },
+  "lau_dlg_pare1_for_account": {
+    "en": "The Nintendo Network ID\nSettings are restricted by the\nParental Controls Software\nRating settings.{t:1.1:1400}\n                    {/t:1.1}\nWould you like to temporarily\nremove this restriction?",
+    "ua": "Доступ до розділу Nintendo\nNetwork ID обмежено\nбатьківським контролем.{t:1.1:1400}\n                    {/t:1.1}\nТимчасово зняти це\nобмеження?"
+  },
+  "lau_dlg_pare1_for_eshop": {
+    "en": "Nintendo eShop is restricted by\nthe Parental Controls Software\nRating settings.{t:1.1:1400}\n                    {/t:1.1}\nWould you like to temporarily\nremove this restriction?",
+    "ua": "Nintendo eShop обмежено\nбатьківським контролем.{t:1.1:1400}\n                    {/t:1.1}\nТимчасово зняти це\nобмеження?"
+  },
+  "lau_dlg_pare4": {
+    "en": "Failed to enter\nthe correct PIN.{t:1.1:1400}\n                    {/t:1.1}\nLaunching in 2D\ndisplay mode.",
+    "ua": "Не введено правильний\nPIN-код.{t:1.1:1400}\n                    {/t:1.1}\nПрограму буде запущено\nв режимі 2D."
+  },
+  "lau_dlg_2b_pare0": {
+    "en": " Remove",
+    "ua": " Зняти"
+  },
+  "lau_dlg_2b_pare1": {
+    "en": " Launch in 2D",
+    "ua": " Режим 2D"
+  },
+  "lau_dlg_2b_pare2": {
+    "en": " Launch in 3D",
+    "ua": " Режим 3D"
+  },
+  "lau_dlg_cup_error": {
+    "en": "The Game Card could\nnot be read.{t:1.1:1400}\n                    {/t:1.1}\nPlease remove and reinsert\nthe Game Card.",
+    "ua": "Не вдалося зчитати дані\nз ігрової карти.{t:1.1:1400}\n                    {/t:1.1}\nВийміть ігрову карту\nі вставте її знову."
+  },
+  "lau_dlg_no_sd": {
+    "en": "The SD Card has\nbeen removed.\n{t:1.1:5500}{t:0.3:3c3c3cff}Please turn off the power\nbefore removing SD Cards.{t:0.3:000000ff}{/t:1.1}",
+    "ua": "Карту SD вийнято.\n{t:1.1:5500}{t:0.3:3c3c3cff}Завжди вимикайте систему,\nперш ніж виймати карту SD.{t:0.3:000000ff}{/t:1.1}"
+  },
+  "lau_dlg_ng_sd1": {
+    "en": "Could not access SD Card.",
+    "ua": "Немає доступу до карти SD."
+  },
+  "ErrorMsg_Common": {
+    "en": "",
+    "ua": ""
+  },
+  "Dialog_NonIconOk": {
+    "en": "OK",
+    "ua": "OK"
+  },
+  "Dialog_Ok": {
+    "en": " OK",
+    "ua": " OK"
+  },
+  "Dialog_Decide": {
+    "en": "Confirm",
+    "ua": "Готово"
+  },
+  "Dialog_Abort": {
+    "en": "Cancel",
+    "ua": "Скасувати"
+  },
+  "Dialog_Cancel": {
+    "en": " Cancel",
+    "ua": " Скасувати"
+  },
+  "Dialog_Delete": {
+    "en": " Delete",
+    "ua": " Стерти"
+  },
+  "Dialog_DeleteCancel": {
+    "en": " Cancel",
+    "ua": " Скасувати"
+  },
+  "Dialog_Unlock": {
+    "en": " Remove",
+    "ua": " Зняти"
+  },
+  "Dialog_Next": {
+    "en": "Next",
+    "ua": "Далі"
+  },
+  "Dialog_Off": {
+    "en": "Off",
+    "ua": "Вимк."
+  },
+  "Dialog_On": {
+    "en": "On",
+    "ua": "Увімк."
+  },
+  "Dialog_Reload": {
+    "en": " Reload",
+    "ua": " Оновити"
+  },
+  "Dialog_Permit": {
+    "en": " Allow",
+    "ua": " Дозволити"
+  },
+  "Dialog_Reject": {
+    "en": " Reject",
+    "ua": " Відхилити"
+  },
+  "Dialog_Reload2": {
+    "en": "Reload",
+    "ua": "Оновити"
+  },
+  "Dialog_Exit": {
+    "en": "Close",
+    "ua": "Закрити"
+  },
+  "Dialog_DropDownList_Over": {
+    "en": "There are more items\nthan can be displayed.\n\nUp to %ls items\ncan be displayed.",
+    "ua": "Елементів більше, ніж\nможна показати.\n\nМаксимальна кількість\nелементів, які можна\nпоказати: %ls."
+  },
+  "Dialog_DropDownList_NoItem": {
+    "en": "There are no items to select.",
+    "ua": "Немає пунктів для вибору."
+  },
+  "Dialog_DropDownList_OneItem": {
+    "en": "Only \"%ls\"\ncan be selected.",
+    "ua": "Вибрати можна лише «%ls»."
+  },
+  "Dialog_JavaScriptTitle": {
+    "en": "Message from page:",
+    "ua": "Повідомлення сторінки:"
+  },
+  "Dialog_ImageDownloading": {
+    "en": "Please wait...",
+    "ua": "Зачекайте..."
+  },
+  "Dialog_ImageDownloadingImpossible": {
+    "en": "Cannot load this image.",
+    "ua": "Не вдається відкрити це\nзображення."
+  },
+  "Dialog_ImageDownloadingError": {
+    "en": "Failed to load image.",
+    "ua": "Не вдалося завантажити\nзображення."
+  },
+  "ErrorMsg_Brs_ProxyError": {
+    "en": "Connection to proxy server failed.\n\nPlease check that your proxy\nsettings are correct.",
+    "ua": "Не вдалося з'єднатися з\nпроксі-сервером.\n\nПеревірте, чи правильні\nналаштування проксі."
+  },
+  "Keyboard_Button_Search": {
+    "en": "Search",
+    "ua": "Пошук"
+  },
+  "Keyboard_InputSearch": {
+    "en": "Enter search text",
+    "ua": "Введіть запит"
+  },
+  "Keyboard_InputURL": {
+    "en": "Enter an address",
+    "ua": "Введіть адресу"
+  },
+  "Keyboard_InputPassword": {
+    "en": "Enter password",
+    "ua": "Введіть пароль"
+  },
+  "Keyboard_InputDefault": {
+    "en": "Enter text",
+    "ua": "Введіть текст"
+  },
+  "Keyboard_InputProxyServer": {
+    "en": "Enter the proxy server",
+    "ua": "Введіть проксі-сервер"
+  },
+  "Browse_TextSelect": {
+    "en": "To select text, touch and hold\nthe stylus on the lower screen,\nthen slide the stylus over the\ntext. You can perform a search\nusing the selected text.",
+    "ua": "Щоб виділити текст, притисніть\nстилус до нижнього екрана\nй проведіть ним по тексту.\nЗа виділеним текстом можна\nодразу шукати."
+  },
+  "Browse_ImageSelect": {
+    "en": "Touch and hold the stylus on an\nimage on the lower screen, then\nlift the stylus to display the\nimage on the upper screen.\nThis also works for 3D images.",
+    "ua": "Притисніть стилус до зображення\nна нижньому екрані, тоді підніміть\nйого — зображення з'явиться\nна верхньому екрані.\nЦе працює і з 3D-зображеннями."
+  },
+  "Browse_Menu": {
+    "en": "Menu",
+    "ua": "Меню"
+  },
+  "Browser_SubmitButton": {
+    "en": "Submit",
+    "ua": "Надіслати"
+  },
+  "Browser_ResetButton": {
+    "en": "Reset",
+    "ua": "Скинути"
+  },
+  "Browser_FileSelectButton": {
+    "en": "Browse...",
+    "ua": "Огляд..."
+  },
+  "Browser_NonFileSelect": {
+    "en": "No file selected",
+    "ua": "Файл не вибрано"
+  },
+  "StartMenu_PageInfo": {
+    "en": "Page Info",
+    "ua": "Про сторінку"
+  },
+  "PageInfo_Title": {
+    "en": "Title",
+    "ua": "Назва"
+  },
+  "PageInfo_Url": {
+    "en": "Address",
+    "ua": "Адреса"
+  },
+  "PageInfo_Security": {
+    "en": "Security",
+    "ua": "Безпека"
+  },
+  "PageInfo_SecurityValid": {
+    "en": "Your connection to this\npage is encrypted.",
+    "ua": "Ваше з'єднання з цією\nсторінкою зашифровано."
+  },
+  "PageInfo_SecurityInvalid": {
+    "en": "Your connection to this\npage is not encrypted.",
+    "ua": "Ваше з'єднання з цією\nсторінкою не зашифровано."
+  },
+  "PageInfo_SecurityUnsafe": {
+    "en": "There is a problem with\nthe security certificate\nfor this page.",
+    "ua": "Із сертифікатом безпеки\nцієї сторінки щось\nне так."
+  },
+  "PageInfo_SecurityNonSSL": {
+    "en": "Some content on this\npage is not encrypted.",
+    "ua": "Частина вмісту цієї\nсторінки не зашифрована."
+  },
+  "PageInfo_SecurityIncludedInvalid": {
+    "en": "There is a problem with the\nsecurity certificate for some\ncontent on this page.",
+    "ua": "Із сертифікатом безпеки\nдля\nчастини вмісту цієї\nсторінки\nщось не так."
+  },
+  "PageInfo_CertificateOwner": {
+    "en": "Certificate Subject",
+    "ua": "Власник сертифіката"
+  },
+  "PageInfo_RootCertificateAuthority": {
+    "en": "Root CA",
+    "ua": "Кореневий ЦС"
+  },
+  "PageInfo_CertificateIssuer": {
+    "en": "Certificate Issuer",
+    "ua": "Видавець сертифіката"
+  },
+  "PageInfo_ExpireDateStart": {
+    "en": "Issue Date",
+    "ua": "Дата видачі"
+  },
+  "PageInfo_ExpireDateEnd": {
+    "en": "Expiry Date",
+    "ua": "Діє до"
+  },
+  "YearMonthDay": {
+    "en": "%d/%M/%Y",
+    "ua": "%d.%M.%Y"
+  },
+  "SaveImage_Info": {
+    "en": "Images saved to the\nSD Card can be viewed\nusing Nintendo 3DS Camera.",
+    "ua": "Збережені на карту SD\nзображення можна дивитися\nв Nintendo 3DS Камері."
+  },
+  "SaveImage_Lower": {
+    "en": "",
+    "ua": ""
+  },
+  "SaveImage_ViewingError": {
+    "en": "This image cannot be displayed.",
+    "ua": "Це зображення не можна\nпоказати."
+  },
+  "SaveImage_Save": {
+    "en": "Saving to the SD Card...",
+    "ua": "Збереження на карту SD..."
+  },
+  "SaveImage_Confirm": {
+    "en": "Saved to the SD Card.",
+    "ua": "Збережено на карту SD."
+  },
+  "AddFavoriteDialog_Confirm": {
+    "en": "Bookmarked this page.",
+    "ua": "Сторінку додано в закладки."
+  },
+  "AddFavoriteDialog_MaxError": {
+    "en": "There is no room to\nbookmark any more pages.\n\nPlease delete old bookmarks\nto make room for new ones.",
+    "ua": "Немає місця для нових\nзакладок.\n\nВидаліть старі закладки,\nщоб звільнити місце."
+  },
+  "AddFavoriteDialog_MultipleError": {
+    "en": "This page has already\nbeen bookmarked.",
+    "ua": "Ця сторінка вже\nє в закладках."
+  },
+  "AddFavoriteDialog_InvalidAdditionError": {
+    "en": "This page cannot\nbe bookmarked.",
+    "ua": "Цю сторінку не можна\nдодати в закладки."
+  },
+  "SaveImage_CapacityError": {
+    "en": "There is not enough free\nspace on the SD Card.",
+    "ua": "На карті SD бракує\nвільного місця."
+  },
+  "SaveImage_WriteOnlyError": {
+    "en": "The SD Card is write-protected.",
+    "ua": "Карту SD захищено від запису."
+  },
+  "SaveImage_NeedSDError": {
+    "en": "There is no SD Card inserted.",
+    "ua": "Карту SD не вставлено."
+  },
+  "SaveImage_NotSupportedError": {
+    "en": "Could not access SD Card.",
+    "ua": "Немає доступу до карти SD."
+  },
+  "SaveImage_MaxError": {
+    "en": "The SD Card's photo\nlimit has been reached.\nThe image cannot be saved.",
+    "ua": "Досягнуто ліміту фото\nна карті SD. Зображення\nне можна зберегти."
+  },
+  "SaveImage_CommonError": {
+    "en": "Failed to save image.",
+    "ua": "Не вдалося зберегти\nзображення."
+  },
+  "SaveImage_ImpossibleError": {
+    "en": "This image cannot be saved.",
+    "ua": "Це зображення не можна\nзберегти."
+  },
+  "Upload_CopyrightTitle": {
+    "en": "When Uploading",
+    "ua": "Коли ви щось надсилаєте"
+  },
+  "Upload_Copyright": {
+    "en": "Do not upload images that may\nviolate the privacy or other rights\nof anyone. Do not upload any\nphotos displaying other people\nunless you have their consent.",
+    "ua": "Не надсилайте зображень, які\nможуть порушити чиюсь\nприватність\nчи інші права. Не надсилайте\nфото\nз іншими людьми без їхньої\nзгоди."
+  },
+  "Favorite_HeaderTitle": {
+    "en": "Bookmarks",
+    "ua": "Закладки"
+  },
+  "Favorite_HeaderInfo": {
+    "en": "Touch the bookmark\nyou want to open.",
+    "ua": "Торкніться закладки,\nяку хочете відкрити."
+  },
+  "Favorite_HeaderRegisterNumLabel": {
+    "en": "Total",
+    "ua": "Усього"
+  },
+  "Favorite_EmptyMessage": {
+    "en": "To bookmark a page, select\nAdd from the menu.",
+    "ua": "Щоб додати сторінку в\nзакладки,\nвиберіть «Додати» в меню."
+  },
+  "FavoriteMode_DeleteTitle": {
+    "en": "Delete Bookmark",
+    "ua": "Видалити закладку"
+  },
+  "FavoriteMode_EditTitle": {
+    "en": "Edit Bookmark",
+    "ua": "Змінити закладку"
+  },
+  "FavoriteDialog_Info_Delete": {
+    "en": "Are you sure you want to\ndelete this bookmark?",
+    "ua": "Справді видалити\nцю закладку?"
+  },
+  "StartUp_Welcome": {
+    "en": "Welcome to the internet\nbrowser. This application\nlets you connect to the\ninternet to view web pages.",
+    "ua": "Вітаємо в інтернет-браузері.\nЦя програма дає змогу\nз'єднатися з Інтернетом\nі переглядати сторінки."
+  },
+  "StartUp_Welcome_SelectSearchEngineIntro": {
+    "en": "Before you begin, please\nselect a search engine.",
+    "ua": "Спершу виберіть\nпошукову систему."
+  },
+  "StartUp_Welcome_SelectSearchEngine": {
+    "en": "Which search engine\nwould you like to use?",
+    "ua": "Якою пошуковою системою\nви хочете користуватися?"
+  },
+  "StartUp_Welcome_SelectSearchEngineSub": {
+    "en": "You can change this setting later.",
+    "ua": "Це можна змінити пізніше."
+  },
+  "StartUp_TutorialBrowser": {
+    "en": "Slide the stylus on the lower\nscreen to scroll pages.",
+    "ua": "Щоб гортати сторінки,\nпроводьте\nстилусом по нижньому екрані."
+  },
+  "StartUp_TutorialManual": {
+    "en": "For detailed information on\nhow to use this application,\nselect Manual from the menu.",
+    "ua": "Докладніше про те, як\nкористуватися програмою, —\nу «Посібнику» в меню."
+  },
+  "StartUp_Finish": {
+    "en": "You're ready to get started.\nEnjoy using the browser!",
+    "ua": "Усе готово.\nГарного перегляду!"
+  },
+  "Interrupt_LocalConnection": {
+    "en": "You cannot connect to\nthe internet while\nsuspended software\nis using local wireless.",
+    "ua": "Не можна з'єднатися\nз Інтернетом, поки\nпризупинена програма\nзайняла локальний зв'язок."
+  },
+  "StartUp_ParentalControl": {
+    "en": "The use of Miiverse is\nrestricted by Parental\nControls.\n\nWould you like to temporarily\nremove this restriction?",
+    "ua": "Використання Miiverse\nобмежено батьківським\nконтролем.\n\nТимчасово зняти це\nобмеження?"
+  },
+  "Upload_ParentalControl": {
+    "en": "This function cannot be used.\n\nSharing of images, audio and\nvideo is currently restricted\nby Parental Controls.",
+    "ua": "Ця функція недоступна.\n\nНадсилання зображень, звуку\nй відео обмежено\nбатьківським контролем."
+  },
+  "Proxy_ParentalControl": {
+    "en": "This function is restricted\nby Parental Controls.\n\nWould you like to temporarily\nremove this restriction?",
+    "ua": "Цю функцію обмежено\nбатьківським контролем.\n\nЗняти обмеження\nтимчасово?"
+  },
+  "StartUp_ParentalControlError": {
+    "en": "The PIN you entered\nis incorrect.\n\nMiiverse will now close.",
+    "ua": "Введено неправильний\nPIN-код.\n\nMiiverse зараз закриється."
+  },
+  "StartUp_TermsOfUseError": {
+    "en": "To use this software, you must\nagree to the Nintendo 3DS\nService User Agreement\nand Privacy Policy.\n\nMiiverse will now close.",
+    "ua": "Щоб користуватися цією\nпрограмою, потрібно\nприйняти угоду про\nкористування сервісами\nNintendo 3DS і політику\nконфіденційності.\nMiiverse зараз закриється."
+  },
+  "Button_SaveImage": {
+    "en": "Save Image",
+    "ua": "Зберегти фото"
+  },
+  "Button_Return": {
+    "en": " Back",
+    "ua": " Назад"
+  },
+  "Button_Regist": {
+    "en": "Link ID",
+    "ua": "Зв'язати ID"
+  },
+  "StartMenu_Favorite": {
+    "en": "Bookmarks",
+    "ua": "Закладки"
+  },
+  "StartMenu_Add": {
+    "en": "Add",
+    "ua": "Додати"
+  },
+  "StartMenu_Search": {
+    "en": "Enter search text",
+    "ua": "Введіть запит"
+  },
+  "StartMenu_End": {
+    "en": " Close",
+    "ua": " Закрити"
+  },
+  "StartMenu_Manual": {
+    "en": "Manual",
+    "ua": "Посібник"
+  },
+  "StartMenu_Close": {
+    "en": "Hide",
+    "ua": "Сховати"
+  },
+  "Ticker_OutSSL": {
+    "en": "You have been transferred to a page that is not encrypted.",
+    "ua": "Ви перейшли на сторінку, яка не зашифрована."
+  },
+  "Ticker_SecurityNonSSL": {
+    "en": "Some content on this page is not encrypted.",
+    "ua": "Частина вмісту цієї сторінки не зашифрована."
+  },
+  "Ticker_SecurityIncludedInvalid": {
+    "en": "There is a problem with the security certificate for some content on this page.",
+    "ua": "Із сертифікатом безпеки для частини вмісту цієї сторінки щось не так."
+  },
+  "Search_ButtonWordInput": {
+    "en": "Search",
+    "ua": "Пошук"
+  },
+  "Search_InfoSetSearchEngine": {
+    "en": "Search engine set to %ls.",
+    "ua": "Пошукову систему змінено на\n%ls."
+  },
+  "Option_Title": {
+    "en": "Settings",
+    "ua": "Параметри"
+  },
+  "Option_HeaderTop": {
+    "en": "Select the \"?\" next to any item to\nview an explanation of that item.",
+    "ua": "Виберіть «?» біля будь-якого\nелемента списку, щоб\nдізнатися про нього\nдокладніше."
+  },
+  "Option_SearchEngine": {
+    "en": "Search Engine",
+    "ua": "Пошукова система"
+  },
+  "Option_AutoWrap": {
+    "en": "Text Wrap",
+    "ua": "Перенос тексту"
+  },
+  "Option_DeleteHistoryAll": {
+    "en": "Delete History",
+    "ua": "Видалити історію"
+  },
+  "Option_Network": {
+    "en": "Network Information",
+    "ua": "Дані мережі"
+  },
+  "Option_NetworkSetKind": {
+    "en": "Connection Type",
+    "ua": "Тип зв'язку"
+  },
+  "Option_NetworkSSID": {
+    "en": "Connection (SSID)",
+    "ua": "Зв'язок (SSID)"
+  },
+  "Option_NetworkSecurity": {
+    "en": "Security",
+    "ua": "Безпека"
+  },
+  "Option_Proxy": {
+    "en": "Proxy Settings",
+    "ua": "Проксі"
+  },
+  "Option_DeleteCookie": {
+    "en": "Delete Cookies",
+    "ua": "Видалити куки"
+  },
+  "Option_VersionInfo": {
+    "en": "Version Info",
+    "ua": "Про версію"
+  },
+  "Option_Initialize": {
+    "en": "Clear All Save Data",
+    "ua": "Стерти всі дані"
+  },
+  "Dialog_AbortWI": {
+    "en": " Cancel",
+    "ua": " Скасувати"
+  },
+  "Option_DoInitializeButton": {
+    "en": " Clear All",
+    "ua": " Стерти все"
+  },
+  "Option_InitializeStart": {
+    "en": " Clear",
+    "ua": " Стерти"
+  },
+  "Option_DoDeleteHistoryAll": {
+    "en": "Delete all history?",
+    "ua": "Видалити всю історію?"
+  },
+  "Option_DeleteHistoryAllEnd": {
+    "en": "History deleted.",
+    "ua": "Історію видалено."
+  },
+  "Option_NoConnection": {
+    "en": "None",
+    "ua": "Немає"
+  },
+  "Option_ProxyUse": {
+    "en": "Use Proxy",
+    "ua": "Використати проксі"
+  },
+  "Option_ProxyServer": {
+    "en": "Server",
+    "ua": "Сервер"
+  },
+  "Option_ProxyPort": {
+    "en": "Port",
+    "ua": "Порт"
+  },
+  "Option_ProxyPort_InvalidError": {
+    "en": "The port number you entered\nis incorrect.\n\nPlease check the port number\nagain.",
+    "ua": "Ви ввели неправильний\nномер порту.\n\nПеревірте номер порту\nще раз."
+  },
+  "Option_ProxyServer_NoInput": {
+    "en": "A proxy server address\nhas not been entered.\n\nPlease enter a valid address.",
+    "ua": "Адресу проксі-сервера\nне введено.\n\nВведіть правильну адресу."
+  },
+  "Option_ProxyServer_False": {
+    "en": "The proxy server address you\nentered is incorrect.\n\nPlease check the address\nagain.",
+    "ua": "Ви ввели неправильну\nадресу\nпроксі-сервера.\n\nПеревірте адресу\nще раз."
+  },
+  "Option_ProxyAutoAuth_InvalidError": {
+    "en": "The authentication details\nyou entered are invalid.",
+    "ua": "Ви ввели неправильні\nдані для входу."
+  },
+  "Option_ProxyAutoAuth": {
+    "en": "Use Proxy Authentication",
+    "ua": "Авторизація на проксі"
+  },
+  "Option_ProxyUserID": {
+    "en": "User Name",
+    "ua": "Ім'я користувача"
+  },
+  "Option_ProxyPass": {
+    "en": "Password",
+    "ua": "Пароль"
+  },
+  "Option_DoDeleteCookie": {
+    "en": "Delete all cookies?",
+    "ua": "Видалити всі куки?"
+  },
+  "Option_DeleteCookieEnd": {
+    "en": "Cookies deleted.",
+    "ua": "Куки видалено."
+  },
+  "Option_HeaderReset": {
+    "en": "Clear all save data,\nincluding bookmarks,\nhistory and settings.",
+    "ua": "Стерти всі збережені дані,\nразом із закладками,\nісторією й параметрами."
+  },
+  "Option_DoInitialize": {
+    "en": "You will not be able\nto recover this data.\n\nAre you sure you want\nto clear all save data?",
+    "ua": "Відновити ці дані\nбуде неможливо.\n\nСправді стерти всі\nзбережені дані?"
+  },
+  "Option_Confirmation": {
+    "en": "This is the final confirmation.\nIf you proceed, this data\nwill not be recoverable.\n\nDo you still want to clear all data?",
+    "ua": "Це остання перевірка.\nЯкщо продовжити, ці дані\nвже не відновити.\n\nВсе одно стерти всі дані?"
+  },
+  "Option_Initializing": {
+    "en": "Clearing all data...\n\nPlease wait.",
+    "ua": "Стирання всіх даних...\n\nЗачекайте."
+  },
+  "Option_Initialized": {
+    "en": "All save data has been cleared.\n\n{t:1.0:6100}Miiverse will now close.{/t:1.0}",
+    "ua": "Усі збережені дані видалено.\n\n{t:1.0:6100}Miiverse зараз закриється.{/t:1.0}"
+  },
+  "Option_HeaderSearchEngine": {
+    "en": "Choose the search engine\nused when searching from\nthe menu or from selected text.",
+    "ua": "Виберіть пошукову систему\nдля пошуку з меню\nчи за виділеним текстом."
+  },
+  "Option_HeaderAutoWrap": {
+    "en": "Turn this on to automatically\nwrap text to the width of the\nscreen at the selected zoom\nlevel. (This may not work\nwith some pages.)",
+    "ua": "Увімкніть, щоб текст\nавтоматично\nпереносився по ширині екрана\nна поточному масштабі.\n(На деяких сторінках\nможе не працювати.)"
+  },
+  "Option_HeaderDeleteHistoryAll": {
+    "en": "Erase records of all\npages viewed to date.",
+    "ua": "Стерти записи про всі\nпереглянуті досі сторінки."
+  },
+  "Option_HeaderNetwork": {
+    "en": "The network and security\ninformation of the connection\ncurrently in use.",
+    "ua": "Дані про мережу й безпеку\nз'єднання, яким ви\nзараз користуєтеся."
+  },
+  "Option_ProxyUseMset": {
+    "en": "The system proxy settings\nare currently active.",
+    "ua": "Зараз діють системні\nналаштування проксі."
+  },
+  "Option_HeaderProxy": {
+    "en": "Used for filtering services.\n\nConnection to the service\nprovider can be set up\nin the System Settings.",
+    "ua": "Потрібно для сервісів\nфільтрації.\n\nЗ'єднання з постачальником\nналаштовується в системі."
+  },
+  "Option_HeaderDeleteCookie": {
+    "en": "Delete records of when and\nhow many times web pages\nhave been viewed, along with\nany authentication information\nentered on them.",
+    "ua": "Видалити записи про те, коли\nй скільки разів ви відкривали\nсторінки, разом із даними\nдля входу, які ви на них\nвводили."
+  },
+  "Option_HeaderVersionInfo": {
+    "en": "Information used to identify\nwhen the browser was\nlast updated.",
+    "ua": "Дані про те, коли браузер\nоновлювався востаннє."
+  },
+  "Option_Network_UserSetting1": {
+    "en": "{t:1.0:5f00}Wireless LAN (Connection 1){/t:1.0}",
+    "ua": "WLAN (Зв'язок 1)"
+  },
+  "Option_Network_UserSetting2": {
+    "en": "{t:1.0:5f00}Wireless LAN (Connection 2){/t:1.0}",
+    "ua": "WLAN (Зв'язок 2)"
+  },
+  "Option_Network_UserSetting3": {
+    "en": "{t:1.0:5f00}Wireless LAN (Connection 3){/t:1.0}",
+    "ua": "WLAN (Зв'язок 3)"
+  },
+  "Option_Network_NintendoWiFiUSBConnector": {
+    "en": "{t:1.0:5800}Nintendo Wi-Fi USB Connector{/t:1.0}",
+    "ua": ""
+  },
+  "Option_Network_NintendoZone": {
+    "en": "Nintendo Zone",
+    "ua": "Nintendo Zone"
+  },
+  "Option_Network_WiFiStation": {
+    "en": "Nintendo 3DS Station",
+    "ua": "Nintendo 3DS Station"
+  },
+  "Option_Network_FreeSpot": {
+    "en": "Wi-Fi Hotspot",
+    "ua": "Точка Wi-Fi"
+  },
+  "Option_Network_Security_Open": {
+    "en": "None",
+    "ua": "Немає"
+  },
+  "Option_Network_Security_WEP": {
+    "en": "WEP",
+    "ua": ""
+  },
+  "Option_Network_Security_WPATKIP": {
+    "en": "WPA-PSK (TKIP)",
+    "ua": ""
+  },
+  "Option_Network_Security_WPA2TKIP": {
+    "en": "WPA2-PSK (TKIP)",
+    "ua": ""
+  },
+  "Option_Network_Security_WPAAES": {
+    "en": "WPA-PSK (AES)",
+    "ua": ""
+  },
+  "Option_Network_Security_WPA2AES": {
+    "en": "WPA2-PSK (AES)",
+    "ua": ""
+  },
+  "Option_ConfigCompleted": {
+    "en": "Settings saved.",
+    "ua": "Параметри збережено."
+  },
+  "Dialog_BasicAuthTitle": {
+    "en": "User Authentication",
+    "ua": "Вхід користувача"
+  },
+  "HistoryGuide_Title_Browse": {
+    "en": "",
+    "ua": ""
+  },
+  "ErrorMsg_Title": {
+    "en": "Error Code: %03d-%04d",
+    "ua": "Код помилки: %03d-%04d"
+  },
+  "ErrorMsg_Brs_Exit": {
+    "en": "Miiverse will now close.",
+    "ua": "Miiverse зараз закриється."
+  },
+  "ErrorMsg_Brs_Exit_Act": {
+    "en": "",
+    "ua": ""
+  },
+  "ErrorMsg_Brs_Filter_Block": {
+    "en": "This page is blocked by\nthe filtering service and\ncannot be displayed.",
+    "ua": "Цю сторінку заблоковано\nсервісом фільтрації, тож\nпоказати її не можна."
+  },
+  "ErrorMsg_Brs_SSL_CONNECT_ERROR": {
+    "en": "SSL connection failed.",
+    "ua": "Не вдалося встановити\nSSL-з'єднання."
+  },
+  "ErrorMsg_Brs_ConfirmRetryURL": {
+    "en": "The page could not be found.\n\nEnter the address again?",
+    "ua": "Сторінку не знайдено.\n\nВвести адресу ще раз?"
+  },
+  "ErrorMsg_Brs_URL": {
+    "en": "This address is invalid.",
+    "ua": "Ця адреса неправильна."
+  },
+  "ErrorMsg_Brs_URL_Click": {
+    "en": "The linked address\nis not supported.",
+    "ua": "Адреса за посиланням\nне підтримується."
+  },
+  "ErrorMsg_Brs_Normal_Conn": {
+    "en": "Communication error.",
+    "ua": "Помилка зв'язку."
+  },
+  "ErrorMsg_Brs_Internal": {
+    "en": "Could not continue browsing.",
+    "ua": "Не вдалося продовжити перегляд."
+  },
+  "ErrorMsg_Brs_Internal_Dialog": {
+    "en": "Could not continue browsing.",
+    "ua": "Не вдалося продовжити\nперегляд."
+  },
+  "ErrorMsg_Brs_File": {
+    "en": "File read/write failed.",
+    "ua": "Не вдалося прочитати чи\nзаписати файл."
+  },
+  "ErrorMsg_Brs_UI_Reject_Content_Click": {
+    "en": "This file cannot be loaded.",
+    "ua": "Цей файл не вдається\nзавантажити."
+  },
+  "ErrorMsg_Brs_UI_Reject_Content": {
+    "en": "",
+    "ua": ""
+  },
+  "ErrorMsg_Brs_Image_Load_Cancelled": {
+    "en": "Failed to load part of this page.",
+    "ua": "Не вдалося завантажити частину сторінки."
+  },
+  "ErrorMsg_Brs_Script_Execute_Cancelled": {
+    "en": "Terminated script execution.",
+    "ua": "Виконання скрипта перервано."
+  },
+  "ErrorMsg_Brs_Image_Decode_Cancelled": {
+    "en": "Image display failed.",
+    "ua": "Не вдалося показати зображення."
+  },
+  "ErrorMsg_Brs_WirelessOff": {
+    "en": "Wireless communication\nis currently disabled.\n\nPush the wireless switch to\nenable wireless communication.",
+    "ua": "Бездротовий зв'язок\nзараз вимкнено.\n\nУвімкніть його перемикачем\nбездротового зв'язку."
+  },
+  "ErrorMsg_HTTP_Cannot_Get_Page": {
+    "en": "Could not acquire page.",
+    "ua": "Не вдалося отримати сторінку."
+  },
+  "ErrorMsg_HTTP_Page_Not_Found": {
+    "en": "Page could not be found.",
+    "ua": "Сторінку не знайдено."
+  },
+  "ErrorMsg_HTTP_Server_Error": {
+    "en": "Page could not be acquired due to an error.",
+    "ua": "Через помилку сторінку не отримано."
+  },
+  "ErrorMsg_AC_Connection_Failed": {
+    "en": "Connection failed.",
+    "ua": "Не вдалося з'єднатися."
+  },
+  "Browser_Err_Reboot": {
+    "en": "Because of its size, not all of\nthe page could be displayed.\n\nTry reloading the page?",
+    "ua": "Сторінка завелика, тож\nпоказано не всю.\n\nСпробувати оновити її?"
+  },
+  "Browser_Err_JSTimeOut": {
+    "en": "Script execution is\ntaking a long time.\n\nDo you want to continue\nexecuting the script?",
+    "ua": "Скрипт виконується\nзанадто довго.\n\nПродовжити його\nвиконання?"
+  },
+  "ErrorMsg_Save_All_Broken_And_Restore": {
+    "en": "The save data is corrupted.\n\nRestoring save data...",
+    "ua": "Збережені дані пошкоджено.\n\nВідновлення даних..."
+  },
+  "ErrorMsg_Save_All_Broken_And_Format": {
+    "en": "The save data is corrupted.\n\nResetting save data...",
+    "ua": "Збережені дані пошкоджено.\n\nСкидання даних..."
+  },
+  "ErrorMsg_Save_Normal_Format": {
+    "en": "Preparing...\n\nPlease wait.",
+    "ua": "Підготовка...\n\nЗачекайте."
+  },
+  "ErrorMsg_Brs_SSL_BlackListCert": {
+    "en": "The connection was cancelled\nbecause an invalid certificate\nwas received.",
+    "ua": "З'єднання скасовано, бо\nотримано недійсний\nсертифікат."
+  },
+  "ErrorMsg_Brs_SSL_UnSafe": {
+    "en": "There is a problem with the\nsecurity certificate for this\npage. Allow connection\nanyway?\n(This is not recommended.)",
+    "ua": "Із сертифікатом безпеки цієї\nсторінки щось не так. Усе\nодно дозволити з'єднання?\n(Не рекомендуємо.)"
+  },
+  "ErrorMsg_Brs_SSL_Content": {
+    "en": "Error Details",
+    "ua": "Подробиці помилки"
+  },
+  "ErrorMsg_Brs_SSL_MaxPermittedHosts": {
+    "en": "The maximum number of permitted\nhosts has been reached.",
+    "ua": "Досягнуто межі дозволених\nвузлів."
+  },
+  "ErrorMsg_Brs_SSLMOD_NotSupported": {
+    "en": "Unsupported certificate.",
+    "ua": "Сертифікат не\nпідтримується."
+  },
+  "ErrorMsg_Brs_SSLMOD_DEPTH_ZERO_SELF_SIGNED_CERT": {
+    "en": "Self-signed certificates\ncannot be verified.",
+    "ua": "Самопідписані сертифікати\nне можна перевірити."
+  },
+  "ErrorMsg_Brs_SSLMOD_SELF_SIGNED_CERT_IN_CHAIN": {
+    "en": "Self-signed certificate.",
+    "ua": "Самопідписаний\nсертифікат."
+  },
+  "ErrorMsg_Brs_SSLMOD_CERT_REJECTED": {
+    "en": "The certificate was\nrejected.",
+    "ua": "Сертифікат\nвідхилено."
+  },
+  "ErrorMsg_Brs_SSLMOD_InvalidExtension": {
+    "en": "Invalid certificate extension.",
+    "ua": "Недійсне розширення\nсертифіката."
+  },
+  "ErrorMsg_Brs_SSLMOD_UNABLE_TO_GET_ISSUER_CERT": {
+    "en": "Certificate not found.",
+    "ua": "Сертифікат не знайдено."
+  },
+  "ErrorMsg_Brs_SSLMOD_CERT_CHAIN_TOO_LONG": {
+    "en": "The certificate chain is too\nlong.",
+    "ua": "Ланцюжок сертифікатів\nзадовгий."
+  },
+  "ErrorMsg_Brs_SSLMOD_UNABLE_TO_DECODE_ISSUER_PUBLIC_KEY": {
+    "en": "Unable to decode the\ncertificate's public key.",
+    "ua": "Не вдається розібрати\nвідкритий ключ\nсертифіката."
+  },
+  "ErrorMsg_Brs_SSLMOD_CERT_SIGNATURE_FAILURE": {
+    "en": "The signature on the\ncertificate is invalid.",
+    "ua": "Підпис на сертифікаті\nнедійсний."
+  },
+  "ErrorMsg_Brs_SSLMOD_CERT_HAS_EXPIRED": {
+    "en": "The certificate has expired.\n(Please check that the date\nand time settings on your\nNintendo 3DS system\nare correct.)",
+    "ua": "Термін дії сертифіката\nминув.\n(Перевірте, чи правильні\nдата й час у налаштуваннях\nвашої консолі\nNintendo 3DS.)"
+  },
+  "ErrorMsg_Brs_SSLMOD_CERT_NOT_YET_VALID": {
+    "en": "The certificate is not yet valid.\n(Please check that the date\nand time settings on your\nNintendo 3DS system\nare correct.)",
+    "ua": "Сертифікат ще не діє.\n(Перевірте, чи правильні\nдата й час у налаштуваннях\nвашої консолі\nNintendo 3DS.)"
+  },
+  "ErrorMsg_Brs_SSLMOD_InvalidPeriod": {
+    "en": "The validity period of the\ncertificate is invalid.",
+    "ua": "Термін дії сертифіката\nнедійсний."
+  },
+  "ErrorMsg_Brs_SSLMOD_PATH_LENGTH_EXCEEDED": {
+    "en": "The certificate is too low in\nthe certification hierarchy.",
+    "ua": "Сертифікат надто низько\nв ієрархії сертифікації."
+  },
+  "ErrorMsg_Brs_SSLMOD_UNHANDLED_CRITICAL_EXTENSION": {
+    "en": "Unknown certificate\nextension.",
+    "ua": "Невідоме розширення\nсертифіката."
+  },
+  "ErrorMsg_Brs_SSL_INVALID_CERT": {
+    "en": "The contents of the\ncertificate are invalid.",
+    "ua": "Вміст сертифіката\nнедійсний."
+  },
+  "ErrorMsg_Brs_RecoveryReload": {
+    "en": "An error has occurred.\nThe page will now reload.",
+    "ua": "Сталася помилка.\nЗараз сторінку буде\nзавантажено ще раз."
+  },
+  "ErrorMsg_Brs_RecoveryGoTop": {
+    "en": "An error has occurred.\nReturning to starting page.",
+    "ua": "Сталася помилка.\nПовернення на\nпопередню сторінку…"
+  },
+  "ErrorMsg_Brs_RecoveryReloadOrExit": {
+    "en": "A communication error has\noccurred. Please close\nMiiverse if the error persists.",
+    "ua": "Сталася помилка зв'язку.\nЯкщо проблема не зникає,\nзакрийте Miiverse."
+  },
+  "ErrorMsg_Brs_RecoveryReloadOrExit_Act": {
+    "en": "A communication error has\noccurred. Please close\nthe Nintendo Network ID\nSettings if the error persists.",
+    "ua": "Сталася помилка зв'язку.\nЯкщо проблема не зникає,\nзакрийте розділ Nintendo\nNetwork ID."
+  },
+  "Swkbd_Warn_LengthTooLong": {
+    "en": "Please do not exceed\n%d characters.",
+    "ua": "Максимальна кількість\nзнаків: %d."
+  },
+  "Swkbd_Warn_LengthTooShort": {
+    "en": "Please enter at least\n%d character(s).",
+    "ua": "Мінімальна кількість\nзнаків: %d."
+  },
+  "Swkbd_Warn_NumberTooBig": {
+    "en": "Please do not enter a\nnumber higher than %d.",
+    "ua": "Введіть число не більше %d."
+  },
+  "Swkbd_Warn_NumberTooSmall": {
+    "en": "Please do not enter a\nnumber lower than %d.",
+    "ua": "Введіть число не менше %d."
+  },
+  "Swkbd_Warn_InvalidPassword": {
+    "en": "Your password contains\ncharacters which cannot be\nused. Please note that you\nmay only use letters, numbers\nand the following characters:\n!\"#$%&'()*+,-./\n:;<=>?@[\\]^_`{|}~",
+    "ua": "Ваш пароль містить знаки,\nяких не можна\nвикористовувати. Можна\nвикористовувати лише\nлітери, цифри й такі знаки:\n!\"#$%&'()*+,-./\n:;<=>?@[\\]^_`{|}~"
+  },
+  "Swkbd_Warn_InvalidAccountId": {
+    "en": "Your Nintendo Network ID\ncontains characters which\ncannot be used. Please note\nthat you may only use letters,\nnumbers, full stops, dashes\nand underscores.",
+    "ua": "Nintendo Network ID містить\nзнаки, яких не можна\nвикористовувати. Можна\nвикористовувати лише\nлітери, цифри, точки,\nдефіси й підкреслення."
+  },
+  "Swkbd_Warn_InvalidEmail": {
+    "en": "Your email address contains\ncharacters which cannot be\nused. Please note that you\nmay only use letters, numbers\nand the following characters:\n!#$%&'*+-./=?@^_`{|}~",
+    "ua": "Ваша адреса електронної\nпошти містить знаки, яких\nне можна використовувати.\nМожна використовувати\nлітери, цифри й такі знаки:\n!#$%&'*+-./=?@^_`{|}~"
+  },
+  "Swkbd_Warn_InvalidAlphanumeric": {
+    "en": "You have entered invalid\ncharacters. Please note that\nyou may only use letters\nand numbers.",
+    "ua": "Введено недійсні знаки.\nМожна використовувати\nлише літери й цифри."
+  },
+  "Opening_Connecting": {
+    "en": "Connecting to the internet...",
+    "ua": "З'єднання з Інтернетом…"
+  },
+  "Opening_Exit": {
+    "en": "Miiverse will now close.",
+    "ua": "Miiverse зараз закриється."
+  },
+  "Opening_Exit_Act": {
+    "en": "Nintendo Network ID Settings\nwill now close.",
+    "ua": "Розділ Nintendo Network ID\nзараз закриється."
+  },
+  "Opening_Exit_OfflineWithoutID_old": {
+    "en": "",
+    "ua": ""
+  },
+  "Opening_Exit_OfflineWithoutID": {
+    "en": "Unable to connect to the\ninternet.\n\nLink a Nintendo Network ID\nto the system to be able to\nstart using offline mode.\n\nMiiverse will now close.",
+    "ua": "Не вдалося з'єднатися\nз Інтернетом.\n\nЗв'яжіть Nintendo Network ID\nз консоллю, щоб\nкористуватися Miiverse\nв автономному режимі.\nMiiverse зараз закриється."
+  },
+  "Opening_Exit_OfflineWithoutID_WirelessMode": {
+    "en": "Unable to connect to the\ninternet as wireless\ncommunication has been\ndisabled.\n\nMiiverse will now close.",
+    "ua": "Не вдалося з'єднатися\nз Інтернетом, бо\nвимкнено бездротовий\nрежим.\n\nMiiverse зараз закриється."
+  },
+  "Opening_Exit_OfflineWithoutID_Act": {
+    "en": "",
+    "ua": ""
+  },
+  "Opening_Exit_EulaNotAccepted": {
+    "en": "",
+    "ua": ""
+  },
+  "ErrorMsg_mii_error": {
+    "en": "The Mii Maker save data was\ncorrupted and has been reset.",
+    "ua": "Збережені дані Mii Maker\nбуло пошкоджено й скинуто."
+  },
+  "dlg_top_internet_flw": {
+    "en": "This function requires wireless\ncommunication to be enabled.\n\nDo you want to enable\nwireless communication?",
+    "ua": "Ця функція потребує\nувімкненого бездротового\nзв'язку.\n\nУвімкнути бездротовий\nзв'язок?"
+  },
+  "dlg_top_net_on_flw": {
+    "en": " Enable",
+    "ua": " Увімкнути"
+  },
+  "dlg_top_net_off_flw": {
+    "en": " Back",
+    "ua": " Назад"
+  },
+  "opening_please_wait": {
+    "en": "Please wait...",
+    "ua": "Зачекайте..."
+  }
+}

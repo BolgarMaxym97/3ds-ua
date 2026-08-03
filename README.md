@@ -30,7 +30,7 @@
 
 ## Що вже українською
 
-Меню HOME (разом з назвами додатків під іконками) · Налаштування системи · Mii Maker · Журнал дій · Посібник · Гра по завантаженню · екранна клавіатура з українською розкладкою · Список друзів · Камера · швидка камера на `L`+`R` · Звук · Здоров'я і безпека · Площа StreetPass Mii · Вибір Mii · Сповіщення · Ігрові записи · екран помилки · Інтернет-браузер · Nintendo eShop · Перенесення даних · Nintendo Zone · Face Raiders · AR Games · керування amiibo · список країн і регіонів у налаштуваннях профілю та на Карті StreetPass (замість «Россия» — **Україна**, з українськими областями) · **електронні довідники** Інтернет-браузера (повністю) і Налаштувань системи (зміст і перші розділи).
+Меню HOME (разом з назвами додатків під іконками) · Налаштування системи · Mii Maker · Журнал дій · Посібник · Гра по завантаженню · екранна клавіатура з українською розкладкою · Список друзів · Камера · швидка камера на `L`+`R` · Звук · Здоров'я і безпека · Площа StreetPass Mii · Вибір Mii · Сповіщення · Ігрові записи · екран помилки · Інтернет-браузер · Nintendo eShop · Перенесення даних · Nintendo Zone · Face Raiders · AR Games · керування amiibo · аплет покупок і оновлень eShop · 3DS Memo · аплет Circle Pad Pro · Miiverse · список країн і регіонів у налаштуваннях профілю та на Карті StreetPass (замість «Россия» — **Україна**, з українськими областями) · **електронні довідники** Інтернет-браузера (повністю) і Налаштувань системи (зміст і перші розділи).
 
 ## Що потрібно
 
@@ -122,7 +122,7 @@ Nothing on the console itself is modified — it all lives on the SD card. Delet
 
 ### Already in Ukrainian
 
-HOME Menu (including the application names under the icons) · System Settings · Mii Maker · Activity Log · Instruction Manual · Download Play · Software Keyboard with a Ukrainian layout · Friend List · Camera · the quick camera on `L`+`R` · Sound · Health & Safety · StreetPass Mii Plaza · Mii Selector · Notifications · Game Notes · error applet · Internet Browser · Nintendo eShop · System Transfer · Nintendo Zone · Face Raiders · AR Games · amiibo Settings · the **electronic manuals** of the Internet Browser (in full) and System Settings (contents and the first sections).
+HOME Menu (including the application names under the icons) · System Settings · Mii Maker · Activity Log · Instruction Manual · Download Play · Software Keyboard with a Ukrainian layout · Friend List · Camera · the quick camera on `L`+`R` · Sound · Health & Safety · StreetPass Mii Plaza · Mii Selector · Notifications · Game Notes · error applet · Internet Browser · Nintendo eShop · System Transfer · Nintendo Zone · Face Raiders · AR Games · amiibo Settings · the eShop purchase/update applet · 3DS Memo · the Circle Pad Pro applet · Miiverse · the **electronic manuals** of the Internet Browser (in full) and System Settings (contents and the first sections).
 
 ### Requirements
 

@@ -231,6 +231,30 @@ HOOK_PATCHES: dict[str, dict] = {
         "mount_tail": 0x4F634,   # tail of MountSystemSaveData(), entered with r8 = result
         "globals_off": 0x4F6AC,  # literal holding the nn::fs globals base (+0x10 = fs:USER session)
     },
+    # eShop applet (mint), EUR, title version 22 - the in-app purchase and update flow, the
+    # one StreetPass Mii Plaza's Update button hands off to.
+    #
+    # Same shape as the Friend List, down to the byte: its FSUSER_OpenArchive IPC wrapper at
+    # 0x2E758 is identical to the Friend List's 0x6E41C, and the mount function at 0x2D8D4
+    # opens the archive, allocates the object (vtable, fs:USER session at globals+0x10, the
+    # u64 handle off sp+8) and stores it with `str r0, [sl]`. So the tail takes the result in
+    # r8 with `out` in sl on a 0x14 frame - the sl_frame14 variant, entered at the result
+    # check that follows the OpenArchive retry loop.
+    #
+    # The stub goes over throwFatalError(): the .text padding is 1880 bytes (0x1018A8 to the
+    # 0x102000 page boundary), more than the 0x114 Luma needs, so Luma takes the padding and
+    # leaves this function alone. No text.size override is needed.
+    "000400300000D602": {
+        "title": "eShop applet (mint) EUR",
+        "title_version": 22,
+        "code_sha256": "3968a6fb1af36187b02b586781e7aad27c34761341713967521c6a87881341d5",
+        "variant": "sl_frame14",
+        "stub_off": 0x87814,     # throwFatalError(), which Luma leaves alone here
+        "stub_room": 284,        # bytes until the next function's `push`
+        "open_archive": 0x2E758,  # the title's own FSUSER_OpenArchive IPC wrapper
+        "mount_tail": 0x2D97C,   # tail of the mount function, entered with r8 = result
+        "globals_off": 0x2D9F4,  # literal holding the nn::fs globals base (+0x10 = fs:USER session)
+    },
     # Download Play (dlplay), EUR, title version 3.
     #
     # A different mechanism entirely - see ROMFS_FROM_SD below. This title cannot issue
@@ -274,6 +298,47 @@ HOOK_PATCHES: dict[str, dict] = {
         "sites": [
             {"patch_at": 0x0A800, "return_to": 0x0A804},
             {"patch_at": 0x11234, "return_to": 0x11238},
+        ],
+    },
+    # 3DS Memo (memolib), EUR, title version 3 - the memo pad Miiverse and the Friend List
+    # open for a handwritten post. Same shape as Download Play: its whole fs:USER vocabulary
+    # is OpenFileDirectly (the wrapper at 0x15C50), with no OpenArchive/OpenFile/CloseArchive
+    # anywhere in .text, so a mount stub would have nothing to call.
+    #
+    # Both of the wrapper's callers pass ARCHIVE_ROMFS and lay the file path out in the slots
+    # the redirect stub rewrites: type at sp+0xC, pointer at sp+0x10, size 0xC at sp+0x14.
+    # r1 and r3 are the only registers the stub touches, and both sites reload them after the
+    # displaced `mov r3, #3`, so nothing live is lost.
+    "000400300000F602": {
+        "title": "3DS Memo (memolib) EUR",
+        "title_version": 3,
+        "code_sha256": "c198a6833cab9ce51c436020dc09b9fbbd548394f551bc5cc7d7224eeac0177d",
+        "kind": "romfs_from_sd",
+        "image_name": "memolib_romfs.bin",
+        "stub_off": 0x56A0C,        # .text page padding, 0x56A0C..0x57000
+        "stub_room": 1524,
+        "sites": [
+            {"patch_at": 0x03900, "return_to": 0x03904},
+            {"patch_at": 0x09710, "return_to": 0x09714},
+        ],
+    },
+    # Circle Pad Pro applet (extrapad), EUR, title version 4. Same shape again, and this one
+    # is missing `fsUnmountArchive` as well - the one symbol Luma tolerates not finding, so
+    # the redirect is the only route regardless.
+    #
+    # Its OpenFileDirectly wrapper is at 0x325A8 and its two callers are the same pair of
+    # frames as 3DS Memo's, down to the instruction words.
+    "000400300000CD02": {
+        "title": "Circle Pad Pro applet (extrapad) EUR",
+        "title_version": 4,
+        "code_sha256": "0b6322653e8c53c671ae2e4a4f6289c42315a2ce591ab2212598d8dc6c33fd7d",
+        "kind": "romfs_from_sd",
+        "image_name": "extrapad_romfs.bin",
+        "stub_off": 0x55350,        # .text page padding, 0x55350..0x56000
+        "stub_room": 3248,
+        "sites": [
+            {"patch_at": 0x08024, "return_to": 0x08028},
+            {"patch_at": 0x11AD8, "return_to": 0x11ADC},
         ],
     },
     # HOME Menu (Nintendo 3DS HOME Menu), EUR, title version 29.
@@ -337,6 +402,34 @@ HOOK_PATCHES: dict[str, dict] = {
         "title": "StreetPass Mii Plaza (MEET) EUR",
         "title_version": 5,
         "code_sha256": "2834311201bb3756ae8646a5046300b75d00a0f4b73509a79cd30ea5788f314f",
+        "kind": "exheader_only",
+    },
+    # Miiverse (cave), EUR, title version 4 - and the posting applet below. Both are the
+    # StreetPass Mii Plaza case: Luma finds all five symbols in their own code, so no stub is
+    # needed, but their accessInfo is 0x1 and 0x0 - no `DirectSdmc` - and the payload Luma
+    # writes still has to open ARCHIVE_SDMC to read the replacement files. So each ships an
+    # exheader and nothing else: no code.ips, no offsets, nothing tied to the build beyond
+    # the version check.
+    "000400300000BE02": {
+        "title": "Miiverse (cave) EUR",
+        "title_version": 4,
+        "code_sha256": "dddda779b7398d6840263cf5be69796ce01a39bcba78708151ae325d2e0d7ba3",
+        "kind": "exheader_only",
+    },
+    "000400300000BA02": {
+        "title": "Miiverse posting applet EUR",
+        "title_version": 0,
+        "code_sha256": "ad1608dd233fbef3e77f27185dbe8e8d81a9b45b58e5098e99d980d754c455d5",
+        "kind": "exheader_only",
+    },
+    # Nintendo eShop, EUR, title version 29. The same case as StreetPass Mii Plaza and the
+    # two Miiverse applets: Luma hooks the code unaided, but accessInfo is 0x240001
+    # (CategorySysApplication, Shop, SeedDB - no `DirectSdmc`), so without this exheader the
+    # payload Luma writes cannot open ARCHIVE_SDMC and the shipped romfs is never read.
+    "0004001000022900": {
+        "title": "Nintendo eShop EUR",
+        "title_version": 29,
+        "code_sha256": "34a50e03d648bd85f34c3e3acd00b8a67f18c002f994c9d3292966dbc14c58d7",
         "kind": "exheader_only",
     },
     # Mii Selector (appletEd), EUR, title version 3. Verified working on hardware.

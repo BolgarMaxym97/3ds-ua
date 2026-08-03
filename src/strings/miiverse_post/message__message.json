@@ -1,0 +1,134 @@
+{
+  "STR_POST": {
+    "en": "",
+    "ua": ""
+  },
+  "STR_CANCEL": {
+    "en": "Cancel",
+    "ua": "Скасувати"
+  },
+  "STR_SPOILER": {
+    "en": "Spoilers",
+    "ua": "Спойлери"
+  },
+  "STR_GUIDANCE": {
+    "en": "{t:0.3:5a5a5aff}Touch here to write a post.{t:0.3:000000ff}",
+    "ua": "{t:0.3:5a5a5aff}Торкніться тут, щоб написати пост.{t:0.3:000000ff}"
+  },
+  "STR_WAIT": {
+    "en": "Please wait...",
+    "ua": "Зачекайте..."
+  },
+  "STR_OK": {
+    "en": "OK",
+    "ua": "OK"
+  },
+  "STR_CONFIRM_BEFORE": {
+    "en": "The content you've entered\nwill now be posted.{t:0.2:5a00}\n{t:0.3:5a5a5aff}If your post includes spoilers,\nplease touch the Spoilers button.{t:0.3:000000ff}{t:0.2:6400}",
+    "ua": "Введений вами вміст\nбуде опубліковано.{t:0.2:5a00}\n{t:0.3:5a5a5aff}Якщо в пості є спойлери,\nторкніться кнопки Спойлери.{t:0.3:000000ff}{t:0.2:6400}"
+  },
+  "STR_CONFIRM_BEFORE_S": {
+    "en": "The content you've entered\nwill now be posted.",
+    "ua": "Введений вами вміст\nбуде опубліковано."
+  },
+  "STR_CONFIRM_AFTER": {
+    "en": "The content you entered\nwas posted successfully.",
+    "ua": "Введений вами вміст\nопубліковано."
+  },
+  "STR_CANCEL_EDIT": {
+    "en": "Cancel this post?",
+    "ua": "Скасувати цю публікацію?"
+  },
+  "STR_CANCEL_EDIT_YES": {
+    "en": "Yes",
+    "ua": "Так"
+  },
+  "STR_CANCEL_EDIT_NO": {
+    "en": "No",
+    "ua": "Ні"
+  },
+  "STR_SAVE": {
+    "en": "Save",
+    "ua": "Зберегти"
+  },
+  "STR_CONTRIBUTE": {
+    "en": "Post",
+    "ua": "Опублікувати"
+  },
+  "STR_SAVE_ERROR": {
+    "en": "You can only save three posts.\n\nPlease delete one of your saved\nposts.",
+    "ua": "Можна зберегти лише три пости.\n\nВидаліть один зі збережених\nпостів."
+  },
+  "STR_DELETE_DLG": {
+    "en": "Are you sure you want to delete\nthis post?",
+    "ua": "Справді видалити\nцей пост?"
+  },
+  "STR_DELETE_CONT": {
+    "en": "Post deleted.",
+    "ua": "Пост видалено."
+  },
+  "STR_SAVE_OK": {
+    "en": "Post saved.\n{t:0.3:5a5a5aff}Saved posts can be posted\nlater on Miiverse.{t:0.3:000000ff}",
+    "ua": "Пост збережено.\n{t:0.3:5a5a5aff}Збережені пости можна\nопублікувати в Miiverse пізніше.{t:0.3:000000ff}"
+  },
+  "STR_SAVE_CONF_00": {
+    "en": "",
+    "ua": ""
+  },
+  "STR_SAVE_CONF_01": {
+    "en": "",
+    "ua": ""
+  },
+  "STR_SAVE_LIST": {
+    "en": "You can only save three posts.\nPlease delete one of your saved\nposts.",
+    "ua": "Можна зберегти лише три пости.\nВидаліть один зі збережених\nпостів."
+  },
+  "STR_DATE_TIME": {
+    "en": "{t:1.9:}/{t:1.7:}/{t:1.5:} {t:1.12:}:{t:1.18:}",
+    "ua": ""
+  },
+  "STR_DELETE": {
+    "en": "Delete",
+    "ua": "Стерти"
+  },
+  "STR_DELETE_00": {
+    "en": "Delete",
+    "ua": "Стерти"
+  },
+  "STR_SAVE_CONFIRM": {
+    "en": "Are you sure you want to save\nthis post?",
+    "ua": "Справді зберегти\nцей пост?"
+  },
+  "STR_ERROR_INIT": {
+    "en": "You must have started Miiverse\nat least once.\n\nPlease start Miiverse from the\nHOME Menu and set up your\nuser information.",
+    "ua": "Miiverse потрібно запустити\nхоча б один раз.\n\nЗапустіть Miiverse з меню\nHOME і задайте дані\nкористувача."
+  },
+  "STR_ERROR_COMMON": {
+    "en": "An error has occurred. Please\ntry again. If the problem persists,\nplease contact your local\ncustomer support centre.\nFor contact details, check the\nOperations Manual or visit\nsupport.nintendo.com.",
+    "ua": "Сталася помилка. Спробуйте\nще раз. Якщо проблема не\nзникає, зверніться до місцевої\nслужби підтримки.\nКонтакти шукайте в посібнику\nз користування або на сайті\nsupport.nintendo.com."
+  },
+  "STR_ERROR_MII": {
+    "en": "Your Personal Mii is corrupted.\nUse Mii Maker to create a new\nPersonal Mii.",
+    "ua": "Ваш власний Mii пошкоджено.\nСтворіть новий власний Mii\nу Mii Maker."
+  },
+  "STR_ERROR_SAVEMSG": {
+    "en": "Failed to save. Please try again.\nIf the problem persists, please\ncontact your local customer\nsupport centre.\nFor contact details, check\nthe Operations Manual or\nvisit support.nintendo.com.",
+    "ua": "Не вдалося зберегти.\nСпробуйте ще раз. Якщо\nпроблема не зникає, зверніться\nдо місцевої служби підтримки.\nКонтакти шукайте в посібнику\nз користування або на сайті\nsupport.nintendo.com."
+  },
+  "STR_ERROR_NNID": {
+    "en": "There is no Nintendo Network ID\nlinked with this system.\n\nYou can create a Nintendo\nNetwork ID or link one to the\nsystem by going to Nintendo\nNetwork ID Settings from the\nSystem Settings.",
+    "ua": "З цією консоллю не зв'язано\nжодного Nintendo Network ID.\n\nСтворити Nintendo Network ID\nабо зв'язати наявний можна\nв розділі Nintendo Network ID\nу налаштуваннях системи."
+  },
+  "STR_ERROR_SAVEBROKEN": {
+    "en": "An error occurred.\nYou must have started\nMiiverse at least once.\n\nPlease start Miiverse from\nthe HOME Menu.",
+    "ua": "Сталася помилка.\nMiiverse потрібно запустити\nхоча б один раз.\n\nЗапустіть Miiverse\nз меню HOME."
+  },
+  "STR_AM": {
+    "en": "AM",
+    "ua": ""
+  },
+  "STR_PM": {
+    "en": "PM",
+    "ua": ""
+  }
+}

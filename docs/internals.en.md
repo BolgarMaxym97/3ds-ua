@@ -29,9 +29,12 @@ A folder name is the Title ID (TID) of the system title it overrides. Luma reads
 | `000400300000D102` | Mii Selector | `romfs/` + `code.ips` + `exheader.bin` — LayeredFS plus a code patch |
 | `000400300000A002` | Notifications | `romfs/` + `code.ips` + `exheader.bin` — LayeredFS plus a code patch |
 | `000400300000B902` | amiibo Settings | `romfs/` + `code.ips` + `exheader.bin` — LayeredFS plus a code patch |
+| `000400300000D602` | eShop applet (`mint`) | `romfs/` + `code.ips` + `exheader.bin` — LayeredFS plus a code patch |
 | `0004003000009C02` | Game Notes | `romfs/` — LayeredFS |
 | `0004003000009D02` | Internet Browser | `romfs/` — LayeredFS |
-| `0004001000022900` | Nintendo eShop | `romfs/` — LayeredFS |
+| `0004001000022900` | Nintendo eShop | `romfs/` + `exheader.bin` — LayeredFS plus a rights patch |
+| `000400300000BE02` | Miiverse (`cave`) | `romfs/` + `exheader.bin` — LayeredFS plus a rights patch |
+| `000400300000BA02` | Miiverse posting applet | `romfs/` + `exheader.bin` — LayeredFS plus a rights patch |
 | `0004001000022A00` | System Transfer | `romfs/` — LayeredFS |
 | `0004001000022B00` | Nintendo Zone | `romfs/` — LayeredFS |
 | `0004001000022D00` | Face Raiders | `romfs/` — LayeredFS |
@@ -40,11 +43,13 @@ A folder name is the Title ID (TID) of the system title it overrides. Luma reads
 | `0004001000022300` | Health & Safety Information | `code.ips` + `exheader.bin` + `safe_romfs.bin` — no LayeredFS, whole RomFS image off the SD card |
 | `000400300000D002` | Software Keyboard | `code.ips` + `exheader.bin` + `swkbd_romfs.bin` — no LayeredFS, whole RomFS image off the SD card |
 | `000400300000C502` | Error applet | `code.ips` + `exheader.bin` + `error_romfs.bin` — no LayeredFS, whole RomFS image off the SD card |
+| `000400300000F602` | 3DS Memo (`memolib`) | `code.ips` + `exheader.bin` + `memolib_romfs.bin` — no LayeredFS, whole RomFS image off the SD card |
+| `000400300000CD02` | Circle Pad Pro applet (`extrapad`) | `code.ips` + `exheader.bin` + `extrapad_romfs.bin` — no LayeredFS, whole RomFS image off the SD card |
 | `0004003000009902` | Camera applet (`L`+`R`) | `code.ips` + `camera_applet_romfs.bin` — no LayeredFS, whole RomFS image off the SD card; no `exheader.bin`, the title already has `DirectSdmc` |
 
-Why the last eleven carry `code.ips`, and almost all of them `exheader.bin` too: see [What is in the release](#what-is-in-the-release). In short, Luma hooks the first thirteen by itself; the rest lack the rights or the code the build supplies.
+Why some of them carry `code.ips`, and almost all of them `exheader.bin` too: see [What is in the release](#what-is-in-the-release). In short, Luma hooks the titles whose row says only `romfs/` by itself; the rest lack the rights or the code the build supplies.
 
-Download Play, the Software Keyboard, Health & Safety Information, the error applet and the camera applet ship no `romfs` folder on purpose — its mere presence halts those titles on an exception screen.
+Download Play, the Software Keyboard, Health & Safety Information, the error applet, the camera applet, 3DS Memo and the Circle Pad Pro applet ship no `romfs` folder on purpose — its mere presence halts those titles on an exception screen.
 
 The eight titles that draw the date-and-clock line at the top of the screen also get a
 replaced `Hud.bcfnt` (`Hud_JP.bcfnt` in some of them) next to their text: the bitmap font
@@ -126,18 +131,23 @@ of its own, so it is left alone.
 | StreetPass Mii Plaza | ✅ translated, with a rights patch |
 | Game Notes | ✅ translated |
 | Internet Browser | ✅ translated |
-| Nintendo eShop | ✅ translated |
+| Nintendo eShop | ✅ translated, with a rights patch — needs title version 29 (see below) |
+| Miiverse | ✅ translated, with a rights patch — needs title version 4 (see below) |
+| Miiverse posting applet | ✅ translated, with a rights patch — needs title version 0 (see below) |
 | System Transfer | ✅ translated |
 | Nintendo Zone | ✅ translated |
 | Face Raiders | ✅ translated |
 | AR Games | ✅ translated |
 | Health & Safety Information | ✅ translated, by replacing the whole RomFS — needs title version 3 (see below) |
+| 3DS Memo | ✅ translated, by replacing the whole RomFS — needs title version 3 (see below) |
+| Circle Pad Pro applet | ✅ translated, by replacing the whole RomFS — needs title version 4 (see below) |
 | Activity Log | ✅ translated, application names included — with a code patch, needs title version 2 (see below) |
 | Instruction Manual | ✅ translated, with a code patch — needs title version 5 (see below) |
 | Friend List | ✅ translated, with a code patch — needs title version 6 (see below) |
 | Mii Selector | ✅ translated, with a code patch — needs title version 3 (see below) |
 | Notifications | ✅ translated, with a code patch — needs title version 4 (see below) |
 | amiibo Settings | ✅ translated, with a code patch — needs title version 1 (see below) |
+| eShop applet | ✅ translated, with a code patch — needs title version 22 (see below) |
 | Error applet | ✅ translated, by replacing its whole RomFS — needs title version 7 (see below) |
 | Download Play | ✅ translated, by replacing its whole RomFS — needs title version 3 (see below) |
 | Software Keyboard | ✅ translated, by replacing its whole RomFS — needs title version 4 (see below) |
@@ -188,6 +198,8 @@ The root cause is in the exheader, `accessInfo` at offset 0x248:
 | Nintendo 3DS Camera | `0x00000000000000a1` | yes |
 | Nintendo 3DS Sound | `0x00000000000000a1` | yes |
 | StreetPass Mii Plaza | `0x0000000000000000` | **no** |
+| Miiverse | `0x0000000000000001` | **no**, but it has `fsMountArchive` |
+| Miiverse posting applet | `0x0000000000000000` | **no**, but it has `fsMountArchive` |
 | Software Keyboard | `0x0000000000000001` | **no** |
 | Activity Log | `0x0000000000000001` | **no** |
 | Download Play | `0x0000000000000001` | **no** |
@@ -196,25 +208,32 @@ The root cause is in the exheader, `accessInfo` at offset 0x248:
 | Mii Selector | `0x0000000000000001` | **no** |
 | Notifications | `0x0000000000000001` | **no** |
 | amiibo Settings | `0x0000000000000001` | **no** |
+| eShop applet | `0x0000000000000001` | **no** |
 | Error applet | `0x0000000000000001` | **no** |
 | Health & Safety Information | `0x0000000000000001` | **no** |
 
 Titles without `DirectSdmc` have no access to the SD card, so Nintendo never linked any
 SD-mounting code into them. The titles that work are the ones that hold that right.
 
-StreetPass Mii Plaza is the exception on both counts: it has no `DirectSdmc` right, yet it
-does have `fsMountArchive`, because it mounts its own extdata. Luma finds all five symbols
-and patches the title unaided, so no `code.ips` is needed — but the payload it writes still
-reads its files off the SD card. So that folder carries an `exheader.bin` with the
-`DirectSdmc` bit set and nothing else: no offsets, and therefore nothing tied to a
-particular build beyond the title-version check.
+StreetPass Mii Plaza, Nintendo eShop, Miiverse and the Miiverse posting applet are the
+exception on both counts: they have no `DirectSdmc` right, yet they do have
+`fsMountArchive` (the Plaza mounts its own extdata, the others their own storage). Luma
+finds all five symbols and patches the title unaided, so no `code.ips` is needed — but the
+payload it writes still reads its files off the SD card. So those folders carry an
+`exheader.bin` with the `DirectSdmc` bit set and nothing else: no offsets, and therefore
+nothing tied to a particular build beyond the title-version check.
+
+The eShop went without that `exheader.bin` for a long time, and its translation was simply
+never applied because of it: the romfs was in the folder, but the payload had nothing to
+open `ARCHIVE_SDMC` with. Its `accessInfo` is `0x240001` — `CategorySysApplication`, `Shop`
+and `SeedDB`, and not one bit of SD access.
 
 How far that pruning went shows in the set of IPC commands each title can even issue:
 
 | Title | `OpenArchive` | `OpenFile` | `CloseArchive` | `OpenFileDirectly` |
 |---|---|---|---|---|
-| Activity Log, Instruction Manual, Friend List, Mii Selector, Notifications, amiibo Settings | ✅ | ✅ | ✅ | ✅ |
-| Download Play, Software Keyboard, Health & Safety | ❌ | ❌ | ❌ | ✅ |
+| Activity Log, Instruction Manual, Friend List, Mii Selector, Notifications, amiibo Settings, eShop applet | ✅ | ✅ | ✅ | ✅ |
+| Download Play, Software Keyboard, Health & Safety, 3DS Memo, Circle Pad Pro applet | ❌ | ❌ | ❌ | ✅ |
 | Error applet | ✅ | ❌ | ❌ | ✅ |
 
 The last two can do exactly one thing: open a file directly and read it. They need a
@@ -252,10 +271,11 @@ Where the stub goes differs per title:
 | Mii Selector | over `throwFatalError()`: the `.text` padding is 3048 bytes, so Luma takes the padding again. |
 | Notifications | over `throwFatalError()`: the `.text` padding is 2300 bytes, so Luma takes the padding again. |
 | amiibo Settings | over `throwFatalError()`: the `.text` padding is 968 bytes, so Luma takes the padding again. |
+| eShop applet | over `throwFatalError()`: the `.text` padding is 1880 bytes, so Luma takes the padding again. |
 
 The stub comes in three variants, chosen by the register and stack frame the mount tail it
 jumps into expects: `r4` on a 0x28 frame (Activity Log), `sl` on a 0x14 frame with the
-result in `r8` (Instruction Manual, Friend List), or `r4` on a 0x18 frame (Mii Selector, Notifications, amiibo Settings).
+result in `r8` (Instruction Manual, Friend List, eShop applet), or `r4` on a 0x18 frame (Mii Selector, Notifications, amiibo Settings).
 All three of the Friend List's mount functions build the same archive object (vtable
 `0x201E4C`), so any of their tails would have done — `MountSystemSaveData()` is the one
 used. The Mii Selector, Notifications and amiibo Settings have exactly one mount function each, and the stub
@@ -284,8 +304,14 @@ updated the title:
 | **Error applet (`error`)** | **7** |
 | **Notifications (`newslist`)** | **4** |
 | **amiibo Settings (`Cabinet`)** | **1** |
+| **eShop applet (`mint`)** | **22** |
 | **StreetPass Mii Plaza (`MEET`)** | **5** |
+| **Nintendo eShop** | **29** |
+| **Miiverse (`cave`)** | **4** |
+| **Miiverse posting applet** | **0** |
 | **Camera applet (`L`+`R`)** | **2** |
+| **3DS Memo (`memolib`)** | **3** |
+| **Circle Pad Pro applet (`extrapad`)** | **4** |
 | Mii Maker (`EDIT`) | 2 |
 | **Activity Log (`PLOG`)** | **2** |
 

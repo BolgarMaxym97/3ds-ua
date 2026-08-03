@@ -263,6 +263,68 @@ TITLES = {
         "ref_lang": "EU_English",
         "message_dirs": ["message/europe"],
         "hud_font": "font/Hud.bcfnt",
+        # `hook_patch` ships an exheader.bin and nothing else: Luma hooks this title itself,
+        # but its accessInfo has no `DirectSdmc`, so its LayeredFS payload could not read the
+        # replacement files off the SD card at all.
+        "hook_patch": True,
+    },
+    # The eShop applet (`mint`): the in-app purchase and update flow a title hands off to,
+    # not the eShop application itself. StreetPass Mii Plaza's Update button is one caller -
+    # `Boot_txt01_08` is the "Updating..." dialog it draws on the Touch Screen.
+    #
+    # `hook_patch`: the title has all four fs:USER commands but no `fsMountArchive`, so Luma
+    # finds four of its five symbols and the loader would svcBreak() on every launch if a
+    # romfs/ folder shipped alone. Same class as the Activity Log and the Friend List, i.e.
+    # a mount stub, not a whole RomFS image from SD - see tools/luma_hook.py.
+    "mint": {
+        "tids": ["000400300000D602"],  # eShop applet (mint), EUR
+        "source_tid": "000400300000D602",
+        "lang": "EU_Russian",
+        "ref_lang": "EU_English",
+        "hook_patch": True,
+    },
+    # Miiverse (`cave`): the applet behind the HOME Menu icon and behind the in-game Miiverse
+    # button, and the same binary draws the Nintendo Network ID pages. Luma hooks it unaided -
+    # all five FS symbols are there - so it ships a plain romfs/.
+    #
+    # The service is dead since 2017, so only its start-up and error path is reachable now:
+    # `ErrorMsg_Title`, `Opening_*`, `StartUp_*` and the "Miiverse is closing" lines.
+    "miiverse": {
+        "tids": ["000400300000BE02"],  # Miiverse applet, EUR
+        "source_tid": "000400300000BE02",
+        "lang": "EU_Russian",
+        "ref_lang": "EU_English",
+        # `hook_patch` ships an exheader.bin and nothing else: Luma hooks the code itself,
+        # but the title has no `DirectSdmc`, so its payload could not read the SD card.
+        "hook_patch": True,
+    },
+    # Miiverse posting applet: the keyboard-and-canvas overlay a game opens to write a post.
+    "miiverse_post": {
+        "tids": ["000400300000BA02"],  # Miiverse posting applet, EUR
+        "source_tid": "000400300000BA02",
+        "lang": "EU_Russian",
+        "ref_lang": "EU_English",
+        "hook_patch": True,   # exheader.bin only, same reason as the Miiverse applet
+    },
+    # 3DS Memo: `message_dirs` because this title spells the folder `mes/`, and its MSBT are
+    # not packed. Like download_play it ships a whole RomFS image read off the SD card - see
+    # tools/luma_hook.py for why a mount stub is out.
+    "memolib": {
+        "tids": ["000400300000F602"],  # memolib applet, EUR
+        "source_tid": "000400300000F602",
+        "lang": "EU_Russian",
+        "ref_lang": "EU_English",
+        "message_dirs": ["mes"],
+        "hook_patch": True,
+    },
+    # Circle Pad Pro applet: the calibration screens, reachable only with the accessory
+    # attached. Ships a whole RomFS image too.
+    "extrapad": {
+        "tids": ["000400300000CD02"],  # extrapad applet, EUR
+        "source_tid": "000400300000CD02",
+        "lang": "EU_Russian",
+        "ref_lang": "EU_English",
+        "hook_patch": True,
     },
     "data_transfer": {
         "tids": ["0004001000022A00"],

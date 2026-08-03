@@ -1,0 +1,110 @@
+{
+  "connect_comm_u": {
+    "en": "If in standby mode, press either the\nZL or ZR Button.",
+    "ua": "Якщо він у режимі очікування,\nнатисніть кнопку ZL або ZR."
+  },
+  "top_comm_u": {
+    "en": "Reset the neutral position\nof the Circle Pad Pro.",
+    "ua": "Скиньте нейтральне положення\nCircle Pad Pro."
+  },
+  "connect_comm": {
+    "en": "Testing connection...{t:1.0:1400}\n                    {/t:1.0}\n{t:0.3:3c3c3cff}{t:1.0:5000}If in standby mode, press\neither the ZL or ZR Button.{/t:1.0}{t:0.3:000000ff}",
+    "ua": "Перевірка зв'язку…{t:1.0:1400}\n                    {/t:1.0}\n{t:0.3:3c3c3cff}{t:1.0:5000}Якщо він у режимі очікування,\nнатисніть кнопку ZL або ZR.{/t:1.0}{t:0.3:000000ff}"
+  },
+  "cepd_dlg_connect": {
+    "en": "Connection confirmed.",
+    "ua": "Зв'язок підтверджено."
+  },
+  "cepd_comm_u": {
+    "en": "Reset the neutral position\nof the Circle Pad (R).",
+    "ua": "Скиньте нейтральне положення\nCircle Pad (R)."
+  },
+  "cepd_comm": {
+    "en": "Rotate the Circle Pad (R) slowly\nin a large circle two to three\ntimes and then touch Next.",
+    "ua": "Повільно оберніть\nCircle Pad (R) по великому\nколу два-три рази,\nпотім торкніться Далі."
+  },
+  "cepd_init": {
+    "en": " Revert to default settings",
+    "ua": " Повернути стандартні"
+  },
+  "cepd_comm1_u": {
+    "en": "Move the Circle Pad (R) up, down,\nleft and right, and check whether\nthe four triangles change colour.",
+    "ua": "Посуньте Circle Pad (R) вгору, вниз,\nліворуч і праворуч і перевірте, чи\nчотири трикутники змінюють колір."
+  },
+  "cepd_comm1_u_sac": {
+    "en": "The C Stick will reset when you close\nthe system and enter Sleep Mode.\n\nWhen you exit Sleep Mode, check\nthat you are able to move the + cursor\non the Touch Screen with the C Stick.",
+    "ua": "C Stick скинеться, коли ви закриєте\nконсоль і вона перейде в режим сну.\n\nВийшовши з режиму сну, перевірте,\nчи можна рухати курсор + на\nсенсорному дисплеї за допомогою\nC Stick."
+  },
+  "cepd_comm1_u_jan": {
+    "en": "The C Stick will reset when you close\nthe system and enter Sleep Mode.\n\nWhen you exit Sleep Mode, check\nthat you are able to move the + cursor\non the Touch Screen with the C Stick.",
+    "ua": "C Stick скинеться, коли ви закриєте\nконсоль і вона перейде в режим сну.\n\nВийшовши з режиму сну, перевірте,\nчи можна рухати курсор + на\nсенсорному дисплеї за допомогою\nC Stick."
+  },
+  "cepd_comm1": {
+    "en": "Once all four triangles have\nchanged colour, touch OK.",
+    "ua": "Коли всі чотири трикутники\nзмінять колір, торкніться OK."
+  },
+  "cepd_comm1_sac": {
+    "en": "Check that you are able to move\nthe + cursor, then touch OK.",
+    "ua": "Перевірте, чи можна рухати\nкурсор +, потім торкніться OK."
+  },
+  "cepd_comm1_jan": {
+    "en": "Check that you are able to move\nthe + cursor, then touch OK.",
+    "ua": "Перевірте, чи можна рухати\nкурсор +, потім торкніться OK."
+  },
+  "cepd_dlg_ready": {
+    "en": "If the Circle Pad (R) doesn't\nrespond correctly while in use,\nit may need recalibrating.\nIncorrect calibration can\nlead to severely inaccurate\ncontrols.",
+    "ua": "Якщо Circle Pad (R) реагує\nнеправильно, його може\nбути потрібно відкалібрувати.\nНеправильне калібрування\nсильно зіпсує керування."
+  },
+  "cepd_dlg_error": {
+    "en": "Could not connect.{t:1.0:1400}\n                    {/t:1.0}\nCheck that the Circle Pad Pro\nis connected and that it still\nhas battery charge remaining.",
+    "ua": "Не вдалося з'єднатися.{t:1.0:1400}\n                    {/t:1.0}\nПеревірте, чи Circle Pad Pro\nпід'єднано і чи не\nрозрядилася його батарея."
+  },
+  "dlg_1b_ok": {
+    "en": " OK",
+    "ua": " OK"
+  },
+  "dlg_2b_ok": {
+    "en": " OK",
+    "ua": " OK"
+  },
+  "dlg_2b_cancel2": {
+    "en": " Cancel",
+    "ua": " Скасувати"
+  },
+  "base_2b_next": {
+    "en": " Next",
+    "ua": " Далі"
+  },
+  "base_2b_cancel": {
+    "en": " Cancel",
+    "ua": " Скасувати"
+  },
+  "base_3b_cancel": {
+    "en": " Cancel",
+    "ua": " Назад"
+  },
+  "base_3b_again": {
+    "en": " Retry",
+    "ua": " Повтор"
+  },
+  "base_3b_ok": {
+    "en": " OK",
+    "ua": " OK"
+  },
+  "cepd_dlg_ng": {
+    "en": "Calibration failed.\nPlease try again.",
+    "ua": "Калібрування не вдалося.\nСпробуйте ще раз."
+  },
+  "dlg_1b_retry": {
+    "en": " Retry",
+    "ua": " Повтор"
+  },
+  "cepd_dlg_ok": {
+    "en": "The neutral position of the\nCircle Pad (R) has been reset.",
+    "ua": "Нейтральне положення\nCircle Pad (R) скинуто."
+  },
+  "cepd_dlg_init": {
+    "en": "Reverting to default settings.{t:1.0:1400}\n　　　　　　　　　　　　　{/t:1.0}\nConfirm that the calibration\nis correct on the next screen.",
+    "ua": "Повернення стандартних\nналаштувань.{t:1.0:1400}\n　　　　　　　　　　　　　{/t:1.0}\nПеревірте калібрування\nна наступному екрані."
+  }
+}
