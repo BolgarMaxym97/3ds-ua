@@ -76,7 +76,7 @@
 
 - **Українських `і ї є ґ`.** У шрифті самої консолі їх немає, тому мод показує візуально близькі `i ï ε г`. Замінити шрифт можна лише правкою системних файлів — а проєкт цього свідомо не робить.
 - **Справжніх літер з клавіатури.** Розкладка українська (`ы`→`і`, `ъ`→`ї`, `э`→`є`, а на місці `ё` тепер апостроф), але вводяться ті самі символи-замінники.
-- **Електронних довідників решти додатків.** Переглядач бере довідник кожного додатка окремо, тож кожен треба здампити з вашої консолі й перекласти. У 0.9.0 готові два — Інтернет-браузера й Налаштувань системи; решта показує той самий довідник, що й раніше. Довідники ігор належать іграм, а не системі, тож лишаються як є.
+- **Електронних довідників решти додатків.** Переглядач бере довідник кожного додатка окремо, тож кожен треба здампити з вашої консолі й перекласти. У 0.10.0 готові два — Інтернет-браузера й Налаштувань системи, обидва повністю; решта показує той самий довідник, що й раніше. Довідники ігор належать іграм, а не системі, тож лишаються як є.
 - **Назв додатків у Керуванні даними, eShop, Перенесенні даних та Ігрових записах** — там вони поки що російською.
 - **Збірки для консолей USA та JPN.** Російського мовного слота в них немає взагалі, тож потрібна окрема збірка — напишіть в Issues, якщо вона вам потрібна.
 
@@ -168,7 +168,7 @@ Nothing in the system was modified, so removal cannot break anything.
 
 - **The Ukrainian letters `і ї є ґ`** are not in the console's font, so the mod shows the visually closest `i ï ε г`. Replacing the font would mean modifying the system itself, which this project deliberately avoids.
 - **Typing them.** The keyboard layout is Ukrainian (`ы`→`і`, `ъ`→`ї`, `э`→`є`, `ё`→apostrophe), but it types those same substitute characters.
-- **The electronic manuals of the remaining titles.** The viewer reads each title's own manual, and each one has to be dumped off your console and translated separately. 0.9.0 ships two; every other title shows the manual it always did. A game's manual belongs to the game, not to the system, so those stay as they are.
+- **The electronic manuals of the remaining titles.** The viewer reads each title's own manual, and each one has to be dumped off your console and translated separately. 0.10.0 ships two in full; every other title shows the manual it always did. A game's manual belongs to the game, not to the system, so those stay as they are.
 - **Application names in Data Management, the eShop, System Transfer and Game Notes** are still Russian.
 - **USA and JPN consoles** have no Russian language slot at all and need a separate build. Open an Issue if you want one.
 
