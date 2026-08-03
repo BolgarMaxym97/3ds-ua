@@ -661,14 +661,11 @@ def _destinations(name: str, cfg: dict) -> list[Path]:
         title this mod has no file for.
     """
     tids = TITLES.get(name, {}).get("tids", [cfg["tid"]])
-    # Only when the manual is part of the title's own romfs. A manual dumped out of content
-    # index 1 has no place in the title's LayeredFS folder - shipping it there would put
-    # megabytes on the SD card that nothing ever opens.
-    out = [
-        ROOT / "dist" / "luma" / "titles" / tid / cfg["path"]
-        for tid in tids
-        if cfg["path"].startswith("romfs/")
-    ]
+    # Nothing goes into the documented title's own folder. The Internet Browser is the only
+    # title that keeps a copy of its manual in its romfs, and that copy is dead: shipping it
+    # translated left the manual in Russian, which is what proved the viewer reads the
+    # document out of the title's content instead. Only the viewer's folder matters.
+    out: list[Path] = []
 
     applet = ROOT / "dist" / "luma" / "titles" / MANUAL_APPLET_TID / "romfs"
     spec = luma_hook.HOOK_PATCHES[MANUAL_APPLET_TID]["manual_path"]

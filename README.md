@@ -4,7 +4,7 @@
 
 Файли самої консолі не змінюються — усе живе на SD-карті. Видалили папки, і все повернулося як було.
 
-**Ціль проєкту — повний українізатор системи:** усе, що видно на екрані, має бути українською. Зараз перекладено 24 частини, робота триває.
+**Ціль проєкту — повний українізатор системи:** усе, що видно на екрані, має бути українською. Зараз перекладено 24 частини плюс електронні довідники, робота триває.
 
 [Українською](#що-вже-українською) · [In English](#in-english)
 
@@ -30,7 +30,7 @@
 
 ## Що вже українською
 
-Меню HOME (разом з назвами додатків під іконками) · Налаштування системи · Mii Maker · Журнал дій · Посібник · Гра по завантаженню · екранна клавіатура з українською розкладкою · Список друзів · Камера · швидка камера на `L`+`R` · Звук · Здоров'я і безпека · Площа StreetPass Mii · Вибір Mii · Сповіщення · Ігрові записи · екран помилки · Інтернет-браузер · Nintendo eShop · Перенесення даних · Nintendo Zone · Face Raiders · AR Games · керування amiibo · список країн і регіонів у налаштуваннях профілю та на Карті StreetPass (замість «Россия» — **Україна**, з українськими областями).
+Меню HOME (разом з назвами додатків під іконками) · Налаштування системи · Mii Maker · Журнал дій · Посібник · Гра по завантаженню · екранна клавіатура з українською розкладкою · Список друзів · Камера · швидка камера на `L`+`R` · Звук · Здоров'я і безпека · Площа StreetPass Mii · Вибір Mii · Сповіщення · Ігрові записи · екран помилки · Інтернет-браузер · Nintendo eShop · Перенесення даних · Nintendo Zone · Face Raiders · AR Games · керування amiibo · список країн і регіонів у налаштуваннях профілю та на Карті StreetPass (замість «Россия» — **Україна**, з українськими областями) · **електронні довідники** Інтернет-браузера (повністю) і Налаштувань системи (зміст і перші розділи).
 
 ## Що потрібно
 
@@ -76,7 +76,7 @@
 
 - **Українських `і ї є ґ`.** У шрифті самої консолі їх немає, тому мод показує візуально близькі `i ï ε г`. Замінити шрифт можна лише правкою системних файлів — а проєкт цього свідомо не робить.
 - **Справжніх літер з клавіатури.** Розкладка українська (`ы`→`і`, `ъ`→`ї`, `э`→`є`, а на місці `ё` тепер апостроф), але вводяться ті самі символи-замінники.
-- **Тексту всередині електронних посібників до ігор.** Сам застосунок Посібника перекладений, а документи в ньому — ні: вони належать іграм, а не системі.
+- **Електронних довідників решти додатків.** Переглядач бере довідник кожного додатка окремо, тож кожен треба здампити з вашої консолі й перекласти. У 0.9.0 готові два — Інтернет-браузера й Налаштувань системи; решта показує той самий довідник, що й раніше. Довідники ігор належать іграм, а не системі, тож лишаються як є.
 - **Назв додатків у Керуванні даними, eShop, Перенесенні даних та Ігрових записах** — там вони поки що російською.
 - **Збірки для консолей USA та JPN.** Російського мовного слота в них немає взагалі, тож потрібна окрема збірка — напишіть в Issues, якщо вона вам потрібна.
 
@@ -122,7 +122,7 @@ Nothing on the console itself is modified — it all lives on the SD card. Delet
 
 ### Already in Ukrainian
 
-HOME Menu (including the application names under the icons) · System Settings · Mii Maker · Activity Log · Instruction Manual · Download Play · Software Keyboard with a Ukrainian layout · Friend List · Camera · the quick camera on `L`+`R` · Sound · Health & Safety · StreetPass Mii Plaza · Mii Selector · Notifications · Game Notes · error applet · Internet Browser · Nintendo eShop · System Transfer · Nintendo Zone · Face Raiders · AR Games · amiibo Settings.
+HOME Menu (including the application names under the icons) · System Settings · Mii Maker · Activity Log · Instruction Manual · Download Play · Software Keyboard with a Ukrainian layout · Friend List · Camera · the quick camera on `L`+`R` · Sound · Health & Safety · StreetPass Mii Plaza · Mii Selector · Notifications · Game Notes · error applet · Internet Browser · Nintendo eShop · System Transfer · Nintendo Zone · Face Raiders · AR Games · amiibo Settings · the **electronic manuals** of the Internet Browser (in full) and System Settings (contents and the first sections).
 
 ### Requirements
 
@@ -168,7 +168,7 @@ Nothing in the system was modified, so removal cannot break anything.
 
 - **The Ukrainian letters `і ї є ґ`** are not in the console's font, so the mod shows the visually closest `i ï ε г`. Replacing the font would mean modifying the system itself, which this project deliberately avoids.
 - **Typing them.** The keyboard layout is Ukrainian (`ы`→`і`, `ъ`→`ї`, `э`→`є`, `ё`→apostrophe), but it types those same substitute characters.
-- **The text inside a game's electronic manual.** The Instruction Manual application is translated; the documents it displays belong to the games, not to the system.
+- **The electronic manuals of the remaining titles.** The viewer reads each title's own manual, and each one has to be dumped off your console and translated separately. 0.9.0 ships two; every other title shows the manual it always did. A game's manual belongs to the game, not to the system, so those stay as they are.
 - **Application names in Data Management, the eShop, System Transfer and Game Notes** are still Russian.
 - **USA and JPN consoles** have no Russian language slot at all and need a separate build. Open an Issue if you want one.
 

@@ -619,7 +619,7 @@ Only the Russian slot (index 10) is touched — its short and long description, 
 
 **Real Ukrainian letters from the keyboard.** The layout is Ukrainian (see [The Ukrainian keyboard layout](#the-ukrainian-keyboard-layout)), but the `і ї є` keys type `i ï ε` — the same substitute glyphs the rest of the mod uses. On the console that reads correctly and consistently; outside it — in a Mii name, a folder name, a post — it is Latin and Greek, not Ukrainian text. There is no way around it: real letters need a different font, which means modifying NAND.
 
-**The text inside electronic manuals.** The Instruction Manual application itself is translated — `Back`, `Enlarge`, `Language`, `Page`, `Contents`, the language dialog. The document it displays is not.
+**The text inside electronic manuals.** The Instruction Manual application itself is translated — `Back`, `Enlarge`, `Language`, `Page`, `Contents`, the language dialog. The documents it displays can be translated too now, but one at a time, and each has to be dumped off the console first. 0.9.0 ships two: the Internet Browser in full and System Settings in part; every other title shows the console's own manual.
 
 That document does not belong to the Instruction Manual. Every title ships its own electronic manual as a separate NCCH — content index 1 within that same title. The Instruction Manual reaches it through `ARCHIVE_SAVEDATA_AND_CONTENT`, reading the documented title's content directly.
 
@@ -629,13 +629,35 @@ It is also not one document but one per title: the Activity Log has its own, Sys
 
 **How it is worked around.** The LayeredFS payload hooks `fsOpenFileDirectly` and `fsTryOpenFile` and looks at the path's **mount prefix**: `rom:`, plus the one "update" mount `loader` finds in the title's `.text` out of `ro2: rom2: rex: patch: ext:`. The viewer mounts the documented title's content as `man:`, a prefix Luma does not know, so nothing was redirected at first — confirmed on the console: both the HOME Menu button and the browser's own manual button showed Russian.
 
-The patch renames the mount to `rex:` — the same four bytes, in place, in all three copies of the string. Then the 28 words that built the constant `man:/Manual.bcma` instead build the path from the documented title's id with the title's own `snprintf` (`0x157EDC`; the format string fits in the 20 dead bytes the old path leaves behind):
+The patch renames the mount to `rex:` — the same four bytes, in place, in all three copies of the string. That is enough for Luma to substitute a file, but only one file for the whole console: the path in the code is constant, and Luma fills in the folder of the **process** (the viewer), not of the documented title.
+
+So the path is built at runtime. The string `rex:/Manual.bcma` has **two** users, and that is this patch's trap:
 
 ```
-rex:/%08x%08x.bcma  ->  /luma/titles/0004003000009B02/romfs/<tid>.bcma
+148280  bl   0x147F58            mount, and open the file once to check it is there
+148290  beq  0x1482A4            gone -> give up
+148294  sub  r1, pc, #200        -> the same string in .text
+14829C  bl   0x14797C            load the document
 ```
 
-The fallback comes free: when the SD file will not open, Luma's payload repeats the call with the original arguments, so a title this mod has no manual for shows the console's own. See `manual_path` in `tools/luma_hook.py`.
+The first version of the patch rewrote that string and fixed up only the first user — and **every** manual on the console, translated or not, showed the loading screen and dropped back to the HOME Menu with no crash at all. The cross-reference scan that missed it looked for `add rX, pc, #imm` and did not know about the `sub` form.
+
+Both sites now call one fifteen-word routine, which took the place of the converter loop:
+
+```
+1480D8  bl   builder             site 1: r1 = the path, then the same widening loop as before
+1480F0  builder: ldr r3, =globals    the documented title's id, read where the mount reads it
+1480FC           ldr r0, [r0]        its low word
+148100           ldr r2, =table      a {title id, path} table in the .rodata padding
+148104           ldr r1, [r2], #8 …  walk it
+148118           ldr r1, [r2, #-4]   that title's path
+148120           add r1, pc, #172    not in the table -> the constant, still in .text
+148294  bl   builder             site 2: the same
+```
+
+The string itself is left alone, because it *is* the fallback. A title this build ships no file for asks for `Manual.bcma`, Luma finds no such file on the SD card and repeats the call with the original arguments: the console's own manual appears, exactly as before the mod. Nothing is written at runtime — the table and the paths are read-only data in the same `.rodata` padding that already carries the country-list paths.
+
+Verified on hardware: the Browser and System Settings in Ukrainian, the Activity Log and a cartridge game with their own. See `manual_path` in `tools/luma_hook.py`.
 
 That also means a manual need not live in its title's romfs. The Browser is the only title that carries its own there (`manual/Manual.bcma`) and keeps it; every other one is dumped out of content index 1 into `work/<TID>/manual/Manual.bcma` (see `docs/dumping.md`). `make extract-manuals` pulls the text into `src/manuals/<name>.json`, `make manuals` builds them all back into `dist`.
 

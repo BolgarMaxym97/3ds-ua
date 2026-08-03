@@ -172,17 +172,13 @@ HOOK_PATCHES: dict[str, dict] = {
         # Only the low word of the title id goes into the name and the table - the high word
         # is 00040030 or 00040010 for every system title, and two 32-bit varargs would need
         # the caller's stack slot saved and restored, which does not fit in 28 words.
-        # Disabled: with this block in, *every* manual on the console - translated or not -
-        # showed the loading screen for ten seconds and then dropped back to the HOME Menu,
-        # including titles whose path string it leaves byte-for-byte as the original. The
-        # constant path above is what works, so that is what ships until a crash dump says
-        # what the block actually breaks.
         "manual_path": {
-            # MANUAL_PATCH turns it back on for a debugging run - see the note above.
-            #   MANUAL_PATCH=1     the whole patch: table, per-title names, snprintf
-            #   MANUAL_PATCH=copy  only the widening loop, everything else as Nintendo left
-            #                      it - the bisect that says whether the loop is the problem
-            "enabled": bool(os.environ.get("MANUAL_PATCH")),
+            # Verified on hardware: the Browser and System Settings manuals come off the SD
+            # card in Ukrainian, every other title keeps its own. MANUAL_PATCH still selects
+            # the two cut-down builds the bisect used, in case this ever needs splitting again:
+            #   MANUAL_PATCH=copy    only the UTF-16 widening loop is replaced
+            #   MANUAL_PATCH=rodata  that, plus the path string moved to .rodata
+            "enabled": True,
             "block_off": 0x480BC,
             "globals_literal": 0x481C8,  # -> 0x1CE788, the object holding {title id, media}
             "snprintf": 0x57EDC,         # (char *out, size_t size, const char *fmt, ...)
@@ -1996,7 +1992,7 @@ def _manual_path_records(patch: dict, code: bytes, records: list) -> list[str]:
     country lists in System Settings already prove the console loads from that padding.
     """
     spec = patch.get("manual_path")
-    if not spec or not spec.get("enabled", True):
+    if not spec or not spec.get("enabled", True) or manual_path_mode() == "off":
         return []
 
     if manual_path_mode() == "copy":
@@ -2114,9 +2110,14 @@ def _manual_rodata_only(spec: dict, code: bytes, records: list) -> list[str]:
 
 
 def manual_path_mode() -> str:
-    """"off" | "copy" | "full" - which build of the manual path patch this run makes."""
-    mode = os.environ.get("MANUAL_PATCH", "")
-    return {"": "off", "copy": "copy", "rodata": "rodata"}.get(mode, "full")
+    """"full" | "copy" | "rodata" | "off" - which build of the manual path patch this makes.
+
+    Full is what ships. The other two are the bisect builds that found the second user of the
+    path string, kept because the next change to this patch will want them again.
+    """
+    return {"copy": "copy", "rodata": "rodata", "off": "off"}.get(
+        os.environ.get("MANUAL_PATCH", ""), "full"
+    )
 
 
 def _manual_copy_only(spec: dict, code: bytes, records: list) -> list[str]:
