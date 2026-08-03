@@ -5,7 +5,7 @@ HOME_MENU_TID := 0004003000009802
 FONT_TID := 0004009B00014002
 VERSION := 0.8.0
 
-.PHONY: help extract font validate build all package clean sd
+.PHONY: help extract extract-manuals font validate build manuals all package clean sd
 
 help:  ## show this list
 	@grep -E '^[a-z-]+:.*?##' $(MAKEFILE_LIST) | sed 's/:.*##/\t—/'
@@ -25,9 +25,15 @@ validate: ## check translations (glyphs, width, line count, tags)
 build: validate ## build dist/luma/titles/...
 	$(PY) tools/build.py
 
-all: build ## validate + build
+extract-manuals: ## Manual.bcma in work/ -> src/manuals/*.json (existing translations are kept)
+	$(PY) tools/manual.py extract all
 
-package: build ## build the 3ds-ua-$(VERSION).zip release archive
+manuals: build ## rebuild the electronic manuals into dist/ (after build, which writes the rest)
+	$(PY) tools/manual.py build all
+
+all: manuals ## validate + build + manuals
+
+package: manuals ## build the 3ds-ua-$(VERSION).zip release archive
 	$(PY) tools/package.py $(VERSION)
 
 sd: build ## copy onto the SD card (SD=/Volumes/...)

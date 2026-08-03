@@ -627,6 +627,24 @@ LayeredFS does not lead there. Luma's payload only intercepts mounts for `ARCHIV
 
 It is also not one document but one per title: the Activity Log has its own, System Settings has its own, every game has its own. Translating them means rebuilding and reinstalling each title's content.
 
+**How it is worked around.** The LayeredFS payload hooks `fsOpenFileDirectly` and `fsTryOpenFile` and looks at the path's **mount prefix**: `rom:`, plus the one "update" mount `loader` finds in the title's `.text` out of `ro2: rom2: rex: patch: ext:`. The viewer mounts the documented title's content as `man:`, a prefix Luma does not know, so nothing was redirected at first — confirmed on the console: both the HOME Menu button and the browser's own manual button showed Russian.
+
+The patch renames the mount to `rex:` — the same four bytes, in place, in all three copies of the string. Then the 28 words that built the constant `man:/Manual.bcma` instead build the path from the documented title's id with the title's own `snprintf` (`0x157EDC`; the format string fits in the 20 dead bytes the old path leaves behind):
+
+```
+rex:/%08x%08x.bcma  ->  /luma/titles/0004003000009B02/romfs/<tid>.bcma
+```
+
+The fallback comes free: when the SD file will not open, Luma's payload repeats the call with the original arguments, so a title this mod has no manual for shows the console's own. See `manual_path` in `tools/luma_hook.py`.
+
+That also means a manual need not live in its title's romfs. The Browser is the only title that carries its own there (`manual/Manual.bcma`) and keeps it; every other one is dumped out of content index 1 into `work/<TID>/manual/Manual.bcma` (see `docs/dumping.md`). `make extract-manuals` pulls the text into `src/manuals/<name>.json`, `make manuals` builds them all back into `dist`.
+
+The format: `Manual.bcma` is an uncompressed DARC of LZ10-compressed DARCs (`BcmaInfo.arc`, `EUR_<lang>_{index,large,small,texture}.arc`) whose pages are BCLYT. The text is not stored as text: **every rendered line is its own `txt1` pane at its own coordinates**, a highlighted word is a second pane on the same `y`, and a button icon is a picture pane between them. Nothing wraps at runtime.
+
+So `tools/manual.py` does the reflow itself. It groups the panes back into a paragraph, hands the translator one string with markers (`{i0}` an icon, `{s1|…}` a highlighted run, `{br}` a deliberate break), and on build re-wraps that string and moves every pane of the paragraph to where the new line breaks put it. The limits are checked rather than assumed: a paragraph may not outgrow the lines it occupies (the paragraph below it does not move), it may not use more highlighted runs than the page has panes in that colour, and a line is measured against the widest line the same paragraph has in any of the eight official localisations. Self-check: feeding the Russian original back in as the translation lays all 277 paragraphs out with no complaint, and the rebuild keeps every word.
+
+Line width is `sum of glyph advances × fontSize / 24 + charSpace`. The 24 is the font's em, recovered from Nintendo's own coordinates (330 neighbouring panes: mean error 2px, p95 5px) — and it is that error the 10px of budget slack pays for.
+
 **Nintendo DS Connection Settings.** The button in the internet settings launches `0004800542383841` — a separate **TWL** title (the only TWL TID in System Settings' `.code`). It runs under TWL_FIRM, where Luma's LayeredFS does not work at all. Besides, the DS/DSi language set has no Russian (JP/EN/FR/DE/IT/ES, later ZH/KO), so there is no slot to replace — the app opens in English whatever the console language.
 
 All of these limits come down to the same thing: they require modifying NAND. A "Tier 2" release for people who accept that — with a NAND backup and the appropriate warnings — is a separate thing and is not part of this release.

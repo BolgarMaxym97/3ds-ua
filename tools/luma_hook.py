@@ -38,6 +38,7 @@ title.
 from __future__ import annotations
 
 import hashlib
+import os
 import struct
 from pathlib import Path
 
@@ -123,9 +124,85 @@ HOOK_PATCHES: dict[str, dict] = {
     # the loader derives everything from (size + 4095) >> 12, and 0xADFA8 and 0xAE000 both
     # come to 174 pages, so section addresses, the .code layout and the mapping are all
     # byte-for-byte what they were.
+    # The manual document itself is not this title's romfs: ebird mounts the *documented*
+    # title's content as `man:` and opens `man:/Manual.bcma`. Luma's LayeredFS payload hooks
+    # fsOpenFileDirectly/fsTryOpenFile and redirects any path that starts with `rom:` or with
+    # the one "update romfs" mount it found in .text - and it looks for those by name:
+    # ro2:, rom2:, rex:, patch:, ext:. None of them appears in ebird, `man:` does.
+    #
+    # So the mount is renamed. `rex:` is the same four bytes, the mount name and the path
+    # are patched in place, and Luma then serves `rex:/Manual.bcma` from
+    # /luma/titles/0004003000009B02/romfs/Manual.bcma - falling back to the real manual on
+    # its own when that file is absent, which is what its payload does when the SD open
+    # fails. Luma's search pattern is a NUL followed by the name, so the copy at 0x481D4
+    # (the one preceded by a terminator) is the one it finds.
+    #
+    # What this does not do yet is tell the titles apart: every manual on the console reads
+    # the same replacement file. Making it per-title means building the name from the title
+    # id the mount already has in hand - see the path-building code at 0x1480BC.
     "0004003000009B02": {
         "title": "Instruction Manual (ebird) EUR",
         "title_version": 5,
+        "mount_rename": {
+            "old": b"man:",
+            "new": b"rex:",
+            # the mount name, the path it is used in, and the .rodata copy the unmount reads
+            "offsets": [0x481C0, 0x481D4, 0xAE6A0],
+        },
+        # ... and one file per documented title instead of one file for the whole console.
+        #
+        # The path stops being a constant. The 28 words at 0x480BC used to take the string
+        # `man:/Manual.bcma`, widen it to UTF-16 into the stack buffer at sp+28 with a
+        # multibyte converter, and hand that to fsTryOpenFile. They now do this instead:
+        #
+        #     ldr r0, =globals; ldr r0, [r0]; ldr r0, [r0, #4]; ldr r2, [r0]
+        #         the documented title's id, read exactly where the mount above reads it
+        #     walk `titles` for its low word; not there -> keep `rex:/Manual.bcma`
+        #     there -> snprintf(sp+96, 48, "rex:/%08x.bcma", low word)
+        #     widen whichever string that left into sp+28, leaving r4 on the terminator
+        #     for the store that follows the block
+        #
+        # The table is the point. Luma's payload falls back to the original archive when the
+        # SD file will not open - but it retries with the *same* path, and the manual content
+        # of a title holds `Manual.bcma` and nothing else. Ask it for `00009d02.bcma` and the
+        # fallback fails too, which turns every untranslated title's manual into a load
+        # error. So a title only gets its own name if this build actually ships a file for
+        # it; everything else keeps the constant name and therefore keeps its own manual.
+        #
+        # Only the low word of the title id goes into the name and the table - the high word
+        # is 00040030 or 00040010 for every system title, and two 32-bit varargs would need
+        # the caller's stack slot saved and restored, which does not fit in 28 words.
+        # Disabled: with this block in, *every* manual on the console - translated or not -
+        # showed the loading screen for ten seconds and then dropped back to the HOME Menu,
+        # including titles whose path string it leaves byte-for-byte as the original. The
+        # constant path above is what works, so that is what ships until a crash dump says
+        # what the block actually breaks.
+        "manual_path": {
+            # MANUAL_PATCH turns it back on for a debugging run - see the note above.
+            #   MANUAL_PATCH=1     the whole patch: table, per-title names, snprintf
+            #   MANUAL_PATCH=copy  only the widening loop, everything else as Nintendo left
+            #                      it - the bisect that says whether the loop is the problem
+            "enabled": bool(os.environ.get("MANUAL_PATCH")),
+            "block_off": 0x480BC,
+            "globals_literal": 0x481C8,  # -> 0x1CE788, the object holding {title id, media}
+            "snprintf": 0x57EDC,         # (char *out, size_t size, const char *fmt, ...)
+            "scratch": 96,               # ascii scratch, inside the path buffer at sp+28
+            "scratch_size": 48,
+            # The 20 bytes the dead `man:/Manual.bcma` leaves behind: `rex:` for Luma's mount
+            # search to find (the byte before it is already a terminator), then three literals.
+            "pool_off": 0x481D4,
+            "pool_room": 20,
+            "pool_ends_at": 0xE92D4070,  # the next function's push, a guard for the offsets
+            # .rodata page padding: rodata ends at 0x1BCBA8 and the page at 0x1BD000. Luma
+            # claims the first 48 bytes for its own LayeredFS path, so ours start past that.
+            "rodata_off": 0xBCBD8,
+            "rodata_room": 0x428,
+            "fallback": b"rex:/Manual.bcma\0",   # the string in .text, left where it is
+            "second_site": 0x48294,              # the caller's `sub r1, pc, #200`
+            "second_site_word": 0xE24F10C8,
+            # The titles this build ships a manual for. tools/manual.py checks it matches.
+            "titles": ["0004003000009D02", "0004001000022000"],
+        },
         "code_sha256": "cf4658f9f618a41f8d32ff7aed40d0ea565da78a2ace349cb93698ff5f7df5d8",
         "variant": "sl_frame14",
         "stub_off": 0xADFA8,        # start of the .text page padding
@@ -463,6 +540,7 @@ FILE_PATH_TYPE_SLOT = 0x0C
 FILE_PATH_PTR_SLOT = 0x10
 FILE_PATH_SIZE_SLOT = 0x14
 ARCHIVE_SDMC = 9
+NOP = 0xE1A00000  # mov r0, r0
 PATH_ASCII = 3
 PATH_EMPTY = 1
 ORIGINAL_SITE_WORD = 0xE3A03003  # mov r3, #3  -> the ARCHIVE_ROMFS each site starts from
@@ -1831,6 +1909,9 @@ def generate(
     _verify(patch, code, stub)
 
     records = [(patch["stub_off"], stub)]
+    rename_log = _mount_rename_records(patch, code, records)
+    rename_log += _manual_path_records(patch, code, records)
+    _verify_mount_search(patch, code, records)
     pane_log: list[str] = []
     if patch.get("pane_hook"):
         if not (names or {}).get("pane"):
@@ -1850,5 +1931,265 @@ def generate(
         "exheader.bin: DirectSdmc granted"
         + (f", text.size 0x{struct.unpack_from('<I', exheader, TEXT_SIZE_OFFSET)[0]:X} -> "
            f"0x{widened:X} (same {(widened + 0xFFF) >> 12}-page mapping)" if widened else ""),
-    ] + pane_log
+    ] + rename_log + pane_log
     return files, log
+
+
+"""The 28 words at manual_path["block_off"], as the dump has them. Seven are kept (they set
+up the file object, not the path); the rest built the old constant path and are replaced."""
+MANUAL_BLOCK = (
+    0xE28F5E11,  # add  r5, pc, #272        -> "man:/Manual.bcma"
+    0xE2817004,  # add  r7, r1, #4          keep
+    0xE58D2000,  # str  r2, [sp]            keep
+    0xE5122030,  # ldr  r2, [r2, #-0x30]    keep
+    0xE590000C,  # ldr  r0, [r0, #0xc]      keep
+    0xE3A08001,  # mov  r8, #1              keep
+    0xE28D401C,  # add  r4, sp, #28         keep
+    0xE7810002,  # str  r0, [r1, r2]        keep
+    0xE28D0F8A,  # add  r0, sp, #552        the converter state, dead with the converter
+    0xE58D9228,  # str  r9, [sp, #0x228]
+    0xE58D922C,  # str  r9, [sp, #0x22c]
+    0xEB007521,  # bl   0x165574            converter init
+    0xE288AF41,  # add  r10, r8, #260
+    0xE28D2F8A,  # add  r2, sp, #552        \
+    0xE1A0100A,  # mov  r1, r10              |
+    0xE1A00005,  # mov  r0, r5               |
+    0xEB007522,  # bl   0x16558C             |
+    0xE1B06000,  # movs r6, r0               |
+    0x0A000008,  # beq  +0x20                |  the ASCII -> UTF-16 loop
+    0xE1A02000,  # mov  r2, r0               |
+    0xE28D3F8A,  # add  r3, sp, #552         |
+    0xE1A01005,  # mov  r1, r5               |
+    0xE1A00004,  # mov  r0, r4               |
+    0xEB007528,  # bl   0x1655C0             |
+    0xE3500000,  # cmp  r0, #0               |
+    0x12844002,  # addne r4, r4, #2          |
+    0x10855006,  # addne r5, r5, r6          |
+    0x1AFFFFF0,  # bne  -0x40               /
+)
+
+
+def _manual_path_records(patch: dict, code: bytes, records: list) -> list[str]:
+    """Give the viewer one manual file per documented title, with a fallback that works.
+
+    The path `rex:/Manual.bcma` is built in 0x147F58 and used twice: once inside it, and once
+    by its caller, which loads the document with the *same* string:
+
+        148280  bl   0x147F58            mount, and open the file once to check it is there
+        148290  beq  0x1482A4            gone -> give up
+        148294  sub  r1, pc, #200        -> "rex:/Manual.bcma", the string in .text
+        14829C  bl   0x14797C            load it
+
+    An earlier version of this patch rewrote that string and only fixed up the first user,
+    so the second one opened a path made of whatever was left - which is why every manual on
+    the console, translated or not, showed the loading screen and then dropped back to the
+    HOME Menu. Both sites now ask the same routine, and the string itself is left alone.
+
+    The routine is fifteen words in the space the multibyte-to-UTF-16 loop used to occupy.
+    It reads the documented title's id where the mount above reads it, walks a table of
+    {title id, path} pairs in the .rodata padding, and returns either that title's own path
+    or - for anything not in the table - the original constant. So a title this build ships
+    no manual for asks for `Manual.bcma`, LayeredFS finds no such file on the SD card, and
+    Luma's payload falls back to the console's own manual exactly as it always did.
+
+    Nothing is written at runtime: the table and the paths are read-only data, which the
+    country lists in System Settings already prove the console loads from that padding.
+    """
+    spec = patch.get("manual_path")
+    if not spec or not spec.get("enabled", True):
+        return []
+
+    if manual_path_mode() == "copy":
+        return _manual_copy_only(spec, code, records)
+    if manual_path_mode() == "rodata":
+        return _manual_rodata_only(spec, code, records)
+
+    block = spec["block_off"]
+    if struct.unpack_from(f"<{len(MANUAL_BLOCK)}I", code, block) != MANUAL_BLOCK:
+        raise RuntimeError("the path block is not the one this patch reads")
+    if struct.unpack_from("<I", code, spec["second_site"])[0] != spec["second_site_word"]:
+        raise RuntimeError(f"0x{spec['second_site']:X} is not the caller's `sub r1, pc, #200`")
+
+    # .rodata padding: the table first, then one path string per title.
+    entries = spec["titles"]
+    table_va = TEXT_VA + spec["rodata_off"]
+    strings_at = spec["rodata_off"] + 8 * (len(entries) + 1)
+    blob, offset = b"", strings_at
+    table = b""
+    for tid in entries:
+        path = f"rex:/{int(tid, 16) & 0xFFFFFFFF:08x}.bcma".encode() + b"\0"
+        table += struct.pack("<II", int(tid, 16) & 0xFFFFFFFF, TEXT_VA + offset)
+        blob += path
+        offset += len(path)
+    table += struct.pack("<II", 0, 0)
+    blob = table + blob
+    if len(blob) > spec["rodata_room"]:
+        raise RuntimeError(f"{len(blob)} bytes of table, {spec['rodata_room']} are free")
+    if set(code[spec["rodata_off"] : spec["rodata_off"] + len(blob)]) != {0}:
+        raise RuntimeError("the .rodata padding this patch writes into is not padding")
+
+    va = TEXT_VA + block
+    BUILDER, LITERAL = 13, 27
+    builder_va = va + BUILDER * 4
+    words = [
+        *MANUAL_BLOCK[1:8],                              # the seven kept words
+        _bl(va + 7 * 4, builder_va),                     # bl builder -> r1 = the path
+        0xE4D10001,                                      # ldrb r0, [r1], #1  \
+        0xE3500000,                                      # cmp  r0, #0         |  widen it
+        0x10C400B2,                                      # strhne r0, [r4], #2 |  into sp+28
+        _bc(COND_NE, va + 11 * 4, va + 8 * 4),           # bne  -3            /
+        _b(va + 12 * 4, TEXT_VA + block + 4 * len(MANUAL_BLOCK)),  # b past the builder
+        # builder: leaf, clobbers r0-r3 only, returns the path in r1
+        0xE59F3000 | (TEXT_VA + spec["globals_literal"] - (builder_va + 8)),  # ldr r3, =globals
+        0xE5930000,                                      # ldr  r0, [r3]
+        0xE5900004,                                      # ldr  r0, [r0, #4]
+        0xE5900000,                                      # ldr  r0, [r0]      the title id, low
+        0xE59F2000 | (va + LITERAL * 4 - (builder_va + 4 * 4 + 8)),  # ldr r2, =table
+        0xE4921008,                                      # ldr  r1, [r2], #8  \
+        0xE3510000,                                      # cmp  r1, #0         |  find the title
+        _bc(COND_EQ, builder_va + 7 * 4, builder_va + 12 * 4),  # beq fallback |
+        0xE1510000,                                      # cmp  r1, r0         |
+        _bc(COND_NE, builder_va + 9 * 4, builder_va + 5 * 4),   # bne  -4     /
+        0xE5121004,                                      # ldr  r1, [r2, #-4] its path
+        0xE12FFF1E,                                      # bx   lr
+        0xE28F1000 | (TEXT_VA + spec["pool_off"] - (builder_va + 12 * 4 + 8)),  # add r1, pc, #.
+        0xE12FFF1E,                                      # bx   lr
+        TEXT_VA + spec["rodata_off"],                    # the literal the builder reads
+    ]
+    if len(words) != len(MANUAL_BLOCK):
+        raise RuntimeError(f"the block is {len(words)} words, {len(MANUAL_BLOCK)} are free")
+
+    records.append((block, struct.pack(f"<{len(words)}I", *words)))
+    records.append((spec["second_site"], struct.pack("<I", _bl(TEXT_VA + spec["second_site"], builder_va))))
+    records.append((spec["rodata_off"], blob))
+    return [
+        f"code.ips: both users of the manual path routed through a {len(MANUAL_BLOCK) - BUILDER}"
+        f"-word builder at va 0x{builder_va:X} (the caller's site at 0x{spec['second_site']:X} "
+        f"too); {len(entries)} titles in the table at va 0x{table_va:X}, everything else keeps "
+        f"{spec['fallback'][:-1].decode()!r} and its own manual"
+    ]
+
+
+def _align(value: int, to: int) -> int:
+    return (value + to - 1) & ~(to - 1)
+
+
+def _manual_rodata_only(spec: dict, code: bytes, records: list) -> list[str]:
+    """The second bisect: the copy build, plus the path string moved out to .rodata.
+
+    One word differs from the build that works: `add r5, pc, #272` (the string in .text)
+    becomes `ldr r5, [pc, #..]` through a literal in the dead pool, pointing at a copy of the
+    same string in the .rodata padding. If the manuals still open, then the pool, the literal
+    and the .rodata read are all sound and only the title-id lookup can be at fault.
+    """
+    block = spec["block_off"]
+    if struct.unpack_from(f"<{len(MANUAL_BLOCK)}I", code, block) != MANUAL_BLOCK:
+        raise RuntimeError("the path block is not the one this patch reads")
+
+    text = spec["fallback"]
+    if set(code[spec["rodata_off"] : spec["rodata_off"] + len(text)]) != {0}:
+        raise RuntimeError("the .rodata padding this patch writes into is not padding")
+
+    va = TEXT_VA + block
+    pool = spec["pool_off"]
+    loop = 13
+    words = [
+        0xE59F5000 | (TEXT_VA + pool - (va + 8)),    # ldr r5, =the string, in the dead pool
+        *MANUAL_BLOCK[1:loop],
+        0xE4D50001,                                  # ldrb r0, [r5], #1
+        0xE3500000,                                  # cmp  r0, #0
+        0x10C400B2,                                  # strhne r0, [r4], #2
+        _bc(COND_NE, va + (loop + 3) * 4, va + loop * 4),
+    ]
+    words += [NOP] * (len(MANUAL_BLOCK) - len(words))
+
+    records.append((block, struct.pack(f"<{len(words)}I", *words)))
+    # The literal, then `rex:` for Luma's mount search - the string itself now lives in .rodata.
+    records.append((pool, struct.pack("<I", TEXT_VA + spec["rodata_off"]) + b"rex:\0"))
+    records.append((spec["rodata_off"], text))
+    return [
+        f"code.ips: BISECT BUILD - the constant path moved to .rodata at "
+        f"va 0x{TEXT_VA + spec['rodata_off']:X}, loaded through a literal at 0x{pool:X}"
+    ]
+
+
+def manual_path_mode() -> str:
+    """"off" | "copy" | "full" - which build of the manual path patch this run makes."""
+    mode = os.environ.get("MANUAL_PATCH", "")
+    return {"": "off", "copy": "copy", "rodata": "rodata"}.get(mode, "full")
+
+
+def _manual_copy_only(spec: dict, code: bytes, records: list) -> list[str]:
+    """The bisect build: everything Nintendo's, except how the path is widened to UTF-16.
+
+    The full patch replaces all 28 words and reads its strings out of .rodata; this one
+    keeps the first thirteen exactly as they are - the string pointer, the converter state,
+    the mbsinit call, the length in r10 - and only swaps the fifteen-word multibyte loop for
+    the four-word byte-by-byte one. If the manuals still open with this, nothing is wrong
+    with the loop and the fault is in the parts the full patch adds.
+    """
+    block = spec["block_off"]
+    have = struct.unpack_from(f"<{len(MANUAL_BLOCK)}I", code, block)
+    if have != MANUAL_BLOCK:
+        raise RuntimeError("the path block is not the one this patch reads")
+
+    va = TEXT_VA + block
+    loop = 13  # the first word of the multibyte loop
+    words = [
+        *MANUAL_BLOCK[:loop],
+        0xE4D50001,                                  # ldrb r0, [r5], #1
+        0xE3500000,                                  # cmp  r0, #0
+        0x10C400B2,                                  # strhne r0, [r4], #2
+        _bc(COND_NE, va + (loop + 3) * 4, va + loop * 4),
+    ]
+    words += [NOP] * (len(MANUAL_BLOCK) - len(words))
+    records.append((block, struct.pack(f"<{len(words)}I", *words)))
+    return [
+        f"code.ips: BISECT BUILD - only the UTF-16 widening loop replaced at 0x{block:X}, "
+        f"the path is still the constant string in .text"
+    ]
+
+
+def _mount_rename_records(patch: dict, code: bytes, records: list) -> list[str]:
+    """Rename an archive mount to one LayeredFS knows, so Luma will redirect reads from it."""
+    rename = patch.get("mount_rename")
+    if not rename:
+        return []
+
+    old, new = rename["old"], rename["new"]
+    if len(old) != len(new):
+        raise RuntimeError(f"{old!r} and {new!r} are different lengths; the patch is in place")
+
+    text_size = patch.get("text_size_override") or patch["text_size"]
+    for offset in rename["offsets"]:
+        if code[offset:offset + len(old)] != old:
+            raise RuntimeError(f"0x{offset:X} does not hold {old!r} - the offsets are stale")
+        records.append((offset, new))
+
+    return [
+        f"code.ips: mount {old.decode()} -> {new.decode()} at "
+        + ", ".join(f"0x{off:X}" for off in rename["offsets"])
+        + "; LayeredFS then redirects the reads to the title's romfs folder, and falls back "
+        "to the console's own manual when the file is absent"
+    ]
+
+
+def _verify_mount_search(patch: dict, code: bytes, records: list) -> None:
+    """Luma finds the update mount by searching .text for a NUL followed by its name.
+
+    The rename alone does not guarantee that: the copy Luma used to find can be the one the
+    manual_path pool overwrites. So the check runs on the patched image, not on the config.
+    """
+    rename = patch.get("mount_rename")
+    if not rename:
+        return
+
+    patched = bytearray(code)
+    for offset, data in records:
+        patched[offset:offset + len(data)] = data
+
+    text_size = patch.get("text_size_override") or patch["text_size"]
+    if patched.find(b"\0" + rename["new"], 0, text_size) < 0:
+        raise RuntimeError(
+            f"nothing for Luma to match: no NUL-prefixed {rename['new']!r} inside .text"
+        )
