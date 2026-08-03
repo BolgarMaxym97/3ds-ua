@@ -1,0 +1,42 @@
+{
+  "10112": {
+    "en": "Unable to connect to the server.\nPlease try again later.",
+    "ua": "Не вдалося з'єднатися\nз сервером.\nСпробуйте пізніше."
+  },
+  "10302": {
+    "en": "Unable to connect to the server.\nPlease try again later.\n\nIf the problem persists, please contact\nyour local customer support centre. \nFor contact details, check the \nOperations Manual or visit \nsupport.nintendo.com.",
+    "ua": "Не вдалося з'єднатися з сервером.\nСпробуйте пізніше.\n\nЯкщо проблема не зникає,\nзверніться до місцевої служби\nпідтримки. Контакти шукайте\nв посібнику з користування\nабо на support.nintendo.com."
+  },
+  "10718": {
+    "en": "Your friend list is full.\n\nYou cannot add any\nadditional friends.",
+    "ua": "Ваш список друзів заповнений.\n\nДодати ще друзів\nне можна."
+  },
+  "10720": {
+    "en": "An error has occurred.\nHold down the POWER Button to\nturn off the power, then turn it on\nand try again.\n\nIf the problem persists, please contact\nyour local customer support centre. \nFor contact details, check the \nOperations Manual or visit \nsupport.nintendo.com.",
+    "ua": "Сталася помилка.\nНатисніть і утримуйте кнопку\nPOWER, щоб вимкнути консоль,\nтоді увімкніть її\nй спробуйте ще раз.\n\nЯкщо проблема не зникає,\nзверніться до місцевої служби\nпідтримки. Контакти шукайте\nв посібнику з користування\nабо на support.nintendo.com."
+  },
+  "10721": {
+    "en": "Online Interaction is restricted by\nParental Controls.",
+    "ua": "Взаємодію онлайн обмежено\nбатьківським контролем."
+  },
+  "10724": {
+    "en": "You have not yet created\na Personal Mii.\n\nCreate a Personal Mii\nusing Mii Maker.",
+    "ua": "Ви ще не створили\nвласного Mii.\n\nСтворіть власного Mii\nу Mii Maker."
+  },
+  "10725": {
+    "en": "Friend Registration is restricted by\nParental Controls.",
+    "ua": "Реєстрацію друзів обмежено\nбатьківським контролем."
+  },
+  "10726": {
+    "en": "You have not yet configured your\nfriend notification settings.\n\nConfigure these settings in the\nfriend list.",
+    "ua": "Ви ще не налаштували\nсповіщення про друзів.\n\nЗадайте ці налаштування\nу списку друзів."
+  },
+  "10811": {
+    "en": "The server is currently\nundergoing maintenance.\n\nWe apologise for any inconvenience.\nPlease try again later.\nSee the Nintendo website\nfor maintenance information.",
+    "ua": "На сервері зараз ведуться\nтехнічні роботи.\n\nПерепрошуємо за незручності.\nСпробуйте пізніше.\nІнформація про роботи —\nна сайті Nintendo."
+  },
+  "0": {
+    "en": "An error has occurred.\nPlease try again later.\nIf the problem persists, please\nmake a note of the error code and\nvisit support.nintendo.com.",
+    "ua": "Сталася помилка.\nСпробуйте пізніше.\nЯкщо проблема не зникає,\nзапишіть код помилки\nй відвідайте\nsupport.nintendo.com."
+  }
+}

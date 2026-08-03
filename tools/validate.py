@@ -60,6 +60,13 @@ WIDTH_LIMIT = 1.0
 # hair wider than "Открыть", and far too little to hide a real overflow.
 WIDTH_SLACK = 8
 BRACE_RE = re.compile(r"\{[^}]*\}")
+# `{t:1.0:XXXX}` scales the font: 0x6400 is 100%, 0x4600 is 70%. Measuring the glyphs
+# without it made the budget meaningless - the widest official localisation is usually the
+# one that squeezed itself the most, so a full-size Ukrainian label measured "narrower" than
+# a shrunken Dutch one and still overflowed the pane on hardware (the Camera and Sound
+# buttons of release 0.9.0). The pane holds the widest *painted* line, not the widest glyph run.
+SCALE_RE = re.compile(r"\{(/?)t:1\.0(?::([0-9a-fA-F]*))?\}")
+SCALE_100 = 0x6400
 # The labels the HUD font draws, as opposed to the rest of hud.msbt: the clock line's
 # date format and its parts. `lau_connect*` and friends sit below it in the system font,
 # which is why this is a list of what the small font touches rather than a whole file.
@@ -100,12 +107,34 @@ def strip_tags(text: str) -> str:
     return TOKEN_RE.sub("", text)
 
 
+def line_widths(text: str, widths: dict[int, int]) -> list[float]:
+    """Painted width of every line in pixels, honouring the font-scale tags."""
+    scale = 1.0
+    lines = [0.0]
+    index = 0
+
+    while index < len(text):
+        tag = TOKEN_RE.match(text, index)
+        if tag:
+            scaling = SCALE_RE.fullmatch(tag.group(0))
+            if scaling:
+                # `{/t:1.0}` and a valueless `{t:1.0}` end the run and restore full size.
+                scale = int(scaling.group(2), 16) / SCALE_100 if scaling.group(2) and not scaling.group(1) else 1.0
+            index = tag.end()
+            continue
+        char = text[index]
+        index += 1
+        if char == "\n":
+            lines.append(0.0)
+            continue
+        lines[-1] += widths.get(ord(char), 0) * scale
+
+    return lines
+
+
 def pixel_width(text: str, widths: dict[int, int]) -> int:
-    """Width of the widest line in pixels (tags are not rendered)."""
-    return max(
-        (sum(widths.get(ord(ch), 0) for ch in line) for line in strip_tags(text).split("\n")),
-        default=0,
-    )
+    """Painted width of the widest line in pixels (tags are not rendered)."""
+    return round(max(line_widths(text, widths), default=0))
 
 
 def label_budgets(name: str, widths: dict[int, int]) -> dict[str, Budget]:

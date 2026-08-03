@@ -415,6 +415,28 @@ HOOK_PATCHES: dict[str, dict] = {
         "title_version": 4,
         "code_sha256": "dddda779b7398d6840263cf5be69796ce01a39bcba78708151ae325d2e0d7ba3",
         "kind": "exheader_only",
+        # The error-message archive read: `ldr r3, =ARCHIVE_SAVEDATA_AND_CONTENT`, the last
+        # argument the frame still needs before FSUSER_OpenFileDirectly. The archive path
+        # buffer at sp+0x60 already holds {title id low, title id high} of whatever shared
+        # archive is being read, which is what the hook compares - the EULA archive comes
+        # through the same call and has to keep coming through untouched.
+        # Miiverse draws its own error screens rather than going through the error applet,
+        # so it needs its own copy of the hook - the reader function is the same SDK one,
+        # byte for byte, at another address.
+        #
+        # Both blobs go past what Luma claims for itself, because LayeredFS *does* run for
+        # this title: the payload takes the first 0x114 bytes of the .text padding and the
+        # path string the first 48 of the .rodata padding.
+        "msg_hook": {
+            "site_off": 0xA07F8,
+            "original_word": 0xE59F30DC,  # ldr r3, [pc, #0xdc]
+            "return_to": 0xA07FC,
+            "title_id_slot": 0x60,
+            "titles": [{"title_id": 0x0004009B00012102, "image_name": "msg_romfs.bin"}],
+            "stub_off": 0x28DB9C,   # .text padding 0x28DA88..0x28E000, past Luma's 0x114
+            "stub_room": 1124,
+            "rodata_off": 0x699D8,  # .rodata padding, past the 48 bytes Luma claims
+        },
     },
     "000400300000BA02": {
         "title": "Miiverse posting applet EUR",
@@ -495,6 +517,25 @@ HOOK_PATCHES: dict[str, dict] = {
             {"patch_at": 0x0BEA8, "return_to": 0x0BEAC},
             {"patch_at": 0x11298, "return_to": 0x1129C},
         ],
+        # The error-message archive read: `ldr r3, =ARCHIVE_SAVEDATA_AND_CONTENT`, the last
+        # argument the frame still needs before FSUSER_OpenFileDirectly. The archive path
+        # buffer at sp+0x60 already holds {title id low, title id high} of whatever shared
+        # archive is being read, which is what the hook compares - the EULA archive comes
+        # through the same call and has to keep coming through untouched.
+        # This applet draws the error screens for the whole system, so its copy of the hook
+        # is the one that translates 009-1003 and every other code an application throws.
+        "msg_hook": {
+            "site_off": 0x3FFA4,
+            "original_word": 0xE59F30DC,  # ldr r3, [pc, #0xdc]
+            "return_to": 0x3FFA8,
+            "title_id_slot": 0x60,
+            "titles": [{"title_id": 0x0004009B00012102, "image_name": "msg_romfs.bin"}],
+            # Behind the two romfs redirect stubs (36 bytes each) in the same .text padding.
+            "stub_off": 0x55BD4,
+            "stub_room": 1068,
+            # Past error_romfs.bin's own path string at the front of the .rodata padding.
+            "rodata_off": 0x7D48,
+        },
     },
     # amiibo Settings (Cabinet), EUR, title version 1. Same shape as the Mii Selector and
     # Notifications: one mount function on a 0x18 frame, `out` in r4, globals in r5, and the
@@ -945,7 +986,9 @@ def _pane_hook(patch: dict, table_va: int, scratch_va: int, base: int) -> tuple[
     return _assemble(blocks, base)
 
 
-def _banner_hook(patch: dict, entries: list[dict], base: int) -> tuple[list[int], dict[str, int]]:
+def _banner_hook(
+    patch: dict, entries: list[dict], base: int, hook_key: str = "banner_hook"
+) -> tuple[list[int], dict[str, int]]:
     """Point the banners we translate at the SD card, and leave every other title alone.
 
     HOME Menu builds the whole FSUSER_OpenFileDirectly frame for ExeFS:/banner itself:
@@ -964,7 +1007,7 @@ def _banner_hook(patch: dict, entries: list[dict], base: int) -> tuple[list[int]
     The title id is read back out of the frame rather than kept in a register, because the
     open stores it there on entry (`strd r2, r3, [sp, #0x38]`) and never touches it again.
     """
-    hook = patch["banner_hook"]
+    hook = patch[hook_key]
     slot = hook["title_id_slot"]
 
     def b(target: str):
@@ -1452,6 +1495,8 @@ def _hooked_text_words(patch: dict) -> list[int]:
             sites.append(patch["banner_hook"]["site_off"])
     if patch.get("pane_hook"):
         sites.append(patch["pane_hook"]["set_text_off"])
+    if patch.get("msg_hook"):
+        sites.append(patch["msg_hook"]["site_off"])
     return sites
 
 
@@ -1527,6 +1572,7 @@ def _verify_banner(
     records: list[tuple[int, bytes]],
     labels: dict[str, int],
     entries: list[dict],
+    hook_key: str = "banner_hook",
 ) -> None:
     """Apply the records and walk the banner hook: in, through the table, and out.
 
@@ -1539,7 +1585,7 @@ def _verify_banner(
         patched[offset:offset + len(data)] = data
     word = lambda off: struct.unpack_from("<I", patched, off)[0]  # noqa: E731
 
-    hook = patch["banner_hook"]
+    hook = patch[hook_key]
     entry = _branch_target(word(hook["site_off"]), hook["site_off"])
     if entry != labels["banner_hook"]:
         raise RuntimeError(f"0x{hook['site_off']:X} does not branch into the banner hook")
@@ -1670,6 +1716,13 @@ def _generate_romfs_from_sd(
     path_va = ro_address + ro_size
     records = _redirect_records(patch, path_va, rounded(text_size) + ro_size, sd_path)
     _verify_redirect(patch, code, records, path_va, sd_path)
+    msg_log: list[str] = []
+    if patch.get("msg_hook"):
+        hook = patch["msg_hook"]
+        extra, msg_log = _msg_records(
+            tid, patch, code, exheader, hook["stub_off"], hook["rodata_off"]
+        )
+        records += extra
     files = {"code.ips": make_ips(records)}
     log = [
         f"{patch['title']} title version {version}",
@@ -1677,7 +1730,7 @@ def _generate_romfs_from_sd(
         f"stubs at 0x{patch['stub_off']:X} (va 0x{TEXT_VA + patch['stub_off']:X})",
         f"code.ips: path {sd_path!r} at va 0x{ro_address + ro_size:X} "
         f"({room} bytes of .rodata padding available)",
-    ]
+    ] + msg_log
 
     # A title that already carries DirectSdmc gets no exheader.bin: it would be byte-identical
     # to the one in NAND, and shipping a copy only adds a file that has to match the console's
@@ -1689,6 +1742,81 @@ def _generate_romfs_from_sd(
         files["exheader.bin"] = patch_exheader(tid, exheader)
         log.append("exheader.bin: DirectSdmc granted")
     return files, log
+
+
+def msg_sd_path(tid: str, image_name: str) -> str:
+    """Where the error-message hook expects the translated archive. Written by tools/build.py."""
+    return f"/luma/titles/{tid.upper()}/{image_name}"
+
+
+def _msg_records(
+    tid: str, patch: dict, code: bytes, exheader: bytes, stub_off: int, rodata_off: int
+) -> tuple[list[tuple[int, bytes]], list[str]]:
+    """Point the error-message archive read at an image on the SD card.
+
+    The bodies of every error code the system shows - `009-1003`, `015-5004`, all 259 of
+    them - live in the shared data archive 0004009B00012102, not in the title that draws
+    them. Both readers (the error applet and Miiverse) mount it as `msg:` and then open its
+    RomFS through FSUSER_OpenFileDirectly with ARCHIVE_SAVEDATA_AND_CONTENT and the archive's
+    title id in the archive path. LayeredFS cannot follow that: the path is binary, so none
+    of the mount-name prefixes Luma's payload looks for are in it.
+
+    So the same hook the HOME Menu uses for banners is planted on the archive id load: it
+    compares the title id the frame already carries and, only for the error-message archive,
+    rewrites the frame into an SD open (empty archive path, ASCII file path, ARCHIVE_SDMC).
+    Every other read through that call - the EULA archive shares it - falls through to the
+    pass-through, which restores the archive id the replaced instruction loaded.
+    """
+    hook = patch["msg_hook"]
+    site = hook["site_off"]
+    word = struct.unpack_from("<I", code, site)[0]
+    if word != hook["original_word"]:
+        raise RuntimeError(
+            f"0x{site:X} holds 0x{word:08X}, expected 0x{hook['original_word']:08X} - this is "
+            f"not the archive id load the error-message offsets were taken from"
+        )
+
+    ro_address = struct.unpack_from("<I", exheader, 0x20)[0]
+    ro_size = struct.unpack_from("<I", exheader, 0x28)[0]
+    rounded = lambda v: (v + 0xFFF) & ~0xFFF  # noqa: E731
+    text_size = struct.unpack_from("<I", exheader, TEXT_SIZE_OFFSET)[0]
+
+    entries, paths = [], bytearray()
+    for title in hook["titles"]:
+        path = msg_sd_path(tid, title["image_name"])
+        entries.append(
+            {
+                "title_id": title["title_id"],
+                "path": path,
+                "path_va": ro_address + rodata_off + len(paths),
+                "path_len": len(path),
+            }
+        )
+        paths += path.encode("ascii") + b"\0"
+
+    room = rounded(ro_size) - rodata_off
+    if len(paths) > room:
+        raise RuntimeError(f"the paths need {len(paths)} bytes, .rodata padding has {room}")
+
+    words, labels = _banner_hook(patch, entries, stub_off, hook_key="msg_hook")
+    blob = b"".join(struct.pack("<I", w) for w in words)
+    if len(blob) > hook["stub_room"]:
+        raise RuntimeError(f"the hook is {len(blob)} bytes, only {hook['stub_room']} are free")
+    if any(code[stub_off:stub_off + len(blob)]):
+        raise RuntimeError(f"the hook would overwrite code at 0x{stub_off:X}, not padding")
+
+    records = [
+        (site, struct.pack("<I", _b(site, labels["banner_hook"]))),
+        (stub_off, blob),
+        (rounded(text_size) + rodata_off, bytes(paths)),
+    ]
+    _verify_banner(patch, code, records, labels, entries, hook_key="msg_hook")
+    served = ", ".join(f"{e['title_id']:016X} -> {e['path']}" for e in entries)
+    log = [
+        f"code.ips: error-message archive read at 0x{site:X} -> {len(blob)}-byte hook at "
+        f"0x{stub_off:X} (va 0x{TEXT_VA + stub_off:X}), serving {served}",
+    ]
+    return records, log
 
 
 def _pane_records(
@@ -1979,12 +2107,25 @@ def generate(
 
     if patch.get("kind") == "exheader_only":
         access = struct.unpack_from("<Q", exheader, ACCESS_INFO_OFFSET)[0]
-        return {"exheader.bin": patch_exheader(tid, exheader)}, [
+        files = {"exheader.bin": patch_exheader(tid, exheader)}
+        log = [
             f"{patch['title']} title version {version}",
             f"exheader.bin: DirectSdmc granted (accessInfo 0x{access:016x} -> "
             f"0x{access | (1 << DIRECT_SDMC_BIT):016x}); Luma finds every symbol it needs "
-            f"in the title's own code, so no code.ips",
+            f"in the title's own code",
         ]
+        # ... but the error-message archive is not something LayeredFS can reach, so a title
+        # that reads it still needs a code.ips of its own. See _msg_records().
+        if patch.get("msg_hook"):
+            hook = patch["msg_hook"]
+            records, msg_log = _msg_records(
+                tid, patch, code, exheader, hook["stub_off"], hook["rodata_off"]
+            )
+            files["code.ips"] = make_ips(records)
+            log += msg_log
+        else:
+            log[-1] += ", so no code.ips"
+        return files, log
 
     globals_value = struct.unpack_from("<I", code, patch["globals_off"])[0]
     stub = build_stub(patch, globals_value)

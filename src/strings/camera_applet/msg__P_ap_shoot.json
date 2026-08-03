@@ -497,7 +497,7 @@
   },
   "BrokenCamera_00": {
     "en": "An error has occurred.\nHold down the POWER\nButton to turn off the\npower, then turn it on\nand try again.",
-    "ua": "Сталася помилка.\nНатисніть і утримуйте\nкнопку POWER, щоб вимкнути\nконсоль, тоді увімкніть\nїї й спробуйте ще раз."
+    "ua": "{t:1.0:5a00}Сталася помилка.\nНатисніть і утримуйте\nкнопку POWER, щоб вимкнути\nконсоль, тоді увімкніть\nїї й спробуйте ще раз.{t:1.0:6400}"
   },
   "BrokenCamera_00_Btn0": {
     "en": " Next",

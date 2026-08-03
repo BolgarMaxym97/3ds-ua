@@ -1,0 +1,50 @@
+{
+  "20100": {
+    "en": "Cannot access online services.\nPlease try again later.\n\nIf the problem persists, please contact\nyour local customer support centre. \nFor contact details, check the \nOperations Manual or visit \nsupport.nintendo.com.",
+    "ua": "Немає доступу до мережевих\nсервісів. Спробуйте пізніше.\n\nЯкщо проблема не зникає,\nзверніться до місцевої служби\nпідтримки. Контакти шукайте\nв посібнику з користування\nабо на support.nintendo.com."
+  },
+  "20101": {
+    "en": "Either the network is experiencing high\ntraffic volumes or online services are \ndown. Please try again later.\n\nIf the problem persists, please contact\nyour local customer support centre. \nFor contact details, check the \nOperations Manual or visit \nsupport.nintendo.com.",
+    "ua": "Мережа перевантажена або\nмережеві сервіси не працюють.\nСпробуйте пізніше.\n\nЯкщо проблема не зникає,\nзверніться до місцевої служби\nпідтримки. Контакти шукайте\nв посібнику з користування\nабо на support.nintendo.com."
+  },
+  "20102": {
+    "en": "This device's access to online services\nhas been restricted by Nintendo.\n\nFor help, please visit\nsupport.nintendo.com.",
+    "ua": "Nintendo обмежила доступ цієї\nконсолі до мережевих сервісів.\n\nПо допомогу зайдіть на\nsupport.nintendo.com."
+  },
+  "20109": {
+    "en": "An error has occurred.\n\nPlease check if there is corrupted data\nin Data Management ⇒ Nintendo 3DS\nin the System Settings.\n\nIf the problem persists, please\nmake a note of the error code\nand visit support.nintendo.com.",
+    "ua": "Сталася помилка.\n\nПеревірте, чи немає\nпошкоджених даних\nу Керуванні даними ⇒\nNintendo 3DS у налаштуваннях\nсистеми.\n\nЯкщо проблема не зникає,\nзапишіть код помилки\nй відвідайте support.nintendo.com."
+  },
+  "20110": {
+    "en": "The service for this software has been\ndiscontinued. Thank you for using this\nservice.",
+    "ua": "Обслуговування цієї програми\nприпинено. Дякуємо, що\nкористувалися сервісом."
+  },
+  "20111": {
+    "en": "Cannot access online services.\nPlease try again later.\n\nIf the problem persists, please contact\nyour local customer support centre. \nFor contact details, check the \nOperations Manual or visit \nsupport.nintendo.com.",
+    "ua": "Немає доступу до мережевих\nсервісів. Спробуйте пізніше.\n\nЯкщо проблема не зникає,\nзверніться до місцевої служби\nпідтримки. Контакти шукайте\nв посібнику з користування\nабо на support.nintendo.com."
+  },
+  "20119": {
+    "en": "In order to use this service, a system\nupdate is required.\n\nTo perform a system update, select\nSystem Update from Other Settings\nin the System Settings.",
+    "ua": "Щоб скористатися цим сервісом,\nпотрібно оновити систему.\n\nВиберіть «Оновлення системи»\nв «Інших налаштуваннях»\nу налаштуваннях системи."
+  },
+  "20120": {
+    "en": "In order to use online services, a newer\nversion of this software is required.\n\nDownload the newest version of this\nsoftware from Nintendo eShop\nor other supported software.",
+    "ua": "Щоб користуватися мережевими\nсервісами, потрібна новіша\nверсія цієї програми.\n\nЗавантажте найновішу версію\nз Nintendo eShop або іншої\nпідтримуваної програми."
+  },
+  "20123": {
+    "en": "You cannot use online services with this\nGame Card.\n\nFor help, please contact your local \ncustomer support centre. For contact \ndetails, check the Operations Manual \nor visit support.nintendo.com.",
+    "ua": "З цією ігровою картою\nмережеві сервіси не працюють.\n\nЯкщо проблема не зникає,\nзверніться до місцевої служби\nпідтримки. Контакти шукайте\nв посібнику з користування\nабо на support.nintendo.com."
+  },
+  "23503": {
+    "en": "The server is currently\nundergoing maintenance.\n\nWe apologise for any inconvenience.\nPlease try again later.\nSee the Nintendo website\nfor maintenance information.",
+    "ua": "На сервері зараз ведуться\nтехнічні роботи.\n\nПерепрошуємо за незручності.\nСпробуйте пізніше.\nІнформація про роботи —\nна сайті Nintendo."
+  },
+  "0": {
+    "en": "An error has occurred.\nPlease try again later.\nIf the problem persists, please\nmake a note of the error code\nand visit support.nintendo.com.",
+    "ua": "Сталася помилка.\nСпробуйте пізніше.\nЯкщо проблема не зникає,\nзапишіть код помилки\nй відвідайте\nsupport.nintendo.com."
+  },
+  "23504": {
+    "en": "",
+    "ua": ""
+  }
+}

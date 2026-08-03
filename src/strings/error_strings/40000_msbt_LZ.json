@@ -1,0 +1,42 @@
+{
+  "43001": {
+    "en": "Unable to connect to the server.\nPlease try again later.\n\nIf the problem persists, please contact\nyour local customer support centre. \nFor contact details, check the \nOperations Manual or visit \nsupport.nintendo.com.",
+    "ua": "Не вдалося з'єднатися з сервером.\nСпробуйте пізніше.\n\nЯкщо проблема не зникає,\nзверніться до місцевої служби\nпідтримки. Контакти шукайте\nв посібнику з користування\nабо на support.nintendo.com."
+  },
+  "43008": {
+    "en": "The server is currently\nundergoing maintenance.\n\nWe apologise for any inconvenience.\nPlease try again later.\nSee the Nintendo website\nfor maintenance information.",
+    "ua": "На сервері зараз ведуться\nтехнічні роботи.\n\nПерепрошуємо за незручності.\nСпробуйте пізніше.\nІнформація про роботи —\nна сайті Nintendo."
+  },
+  "43009": {
+    "en": "An error has occurred.\nHold down the POWER Button to\nturn off the power, then turn it on\nand try again.\n\nIf the problem persists, please contact\nyour local customer support centre. \nFor contact details, check the \nOperations Manual or visit \nsupport.nintendo.com.",
+    "ua": "Сталася помилка.\nНатисніть і утримуйте кнопку\nPOWER, щоб вимкнути консоль,\nтоді увімкніть її\nй спробуйте ще раз.\n\nЯкщо проблема не зникає,\nзверніться до місцевої служби\nпідтримки. Контакти шукайте\nв посібнику з користування\nабо на support.nintendo.com."
+  },
+  "44001": {
+    "en": "An error has occurred.\n\n■ The SD Card may not be inserted.\nPlease turn off the power, then insert \nan SD Card and try again.\nIf the problem persists, please contact\nyour local customer support centre. \nFor contact details, check the \nOperations Manual or visit \nsupport.nintendo.com.\n\n■ The software's extra data may have\nbeen deleted. Please create new extra\ndata.",
+    "ua": "Сталася помилка.\n\n■ Можливо, карту SD\nне вставлено. Вимкніть\nконсоль, вставте карту SD\nі спробуйте ще раз.\nЯкщо проблема не зникає,\nзверніться до місцевої служби\nпідтримки. Контакти шукайте\nв посібнику з користування\nабо на support.nintendo.com.\n\n■ Можливо, додаткові дані\nпрограми видалено. Створіть\nнові додаткові дані."
+  },
+  "44002": {
+    "en": "An error has occurred.\nHold down the POWER Button to\nturn off the power, then turn it on\nand try again.\n\nIf the problem persists, please contact\nyour local customer support centre. \nFor contact details, check the \nOperations Manual or visit \nsupport.nintendo.com.",
+    "ua": "Сталася помилка.\nНатисніть і утримуйте кнопку\nPOWER, щоб вимкнути консоль,\nтоді увімкніть її\nй спробуйте ще раз.\n\nЯкщо проблема не зникає,\nзверніться до місцевої служби\nпідтримки. Контакти шукайте\nв посібнику з користування\nабо на support.nintendo.com."
+  },
+  "46002": {
+    "en": "",
+    "ua": ""
+  },
+  "46006": {
+    "en": "An error has occurred.\n\n■ The SD Card may not be inserted.\nPlease turn off the power, then insert\nan SD Card and try again.\n\n■ There may not be enough open\nblocks on the SD Card. Please delete\nany unnecessary data using Data\nManagement in the System Settings.\n\n■ The software's extra data may have\nbeen deleted. Please create new extra\ndata.\n\n■ If the problem persists, please\ncontact your local customer support\ncentre. For contact details, check the \nOperations Manual or visit \nsupport.nintendo.com.",
+    "ua": "Сталася помилка.\n\n■ Можливо, карту SD\nне вставлено. Вимкніть\nконсоль, вставте карту SD\nі спробуйте ще раз.\n\n■ Можливо, на карті SD\nне досить вільних блоків.\nВидаліть непотрібні дані\nу Керуванні даними\nв налаштуваннях системи.\n\n■ Можливо, додаткові дані\nпрограми видалено. Створіть\nнові додаткові дані.\n\n■ Якщо проблема не зникає,\nзверніться до місцевої служби\nпідтримки. Контакти шукайте\nв посібнику з користування\nабо на support.nintendo.com."
+  },
+  "47001": {
+    "en": "Could not connect to the internet.\n\n■ There may be problems with the \nnetwork or the environment.\nTo ensure an optimal connection \nenvironment, move closer to the \naccess point and make sure that there\nare no obstructions between the\nsystem and the access point.\nIf this does not work, please try \nagain later.\n\n■ Check that your computer can\nconnect to the internet using the same\nsettings. If not, refer to the instruction\nbooklet that came with the access\npoint.\n\n■ The DNS setting may have been \nentered incorrectly. Check the setting \nin System Settings ⇒ Internet \nSettings.\n\n■ The proxy server may have been \nentered incorrectly. Check the setting \nin System Settings ⇒ Internet \nSettings.",
+    "ua": "Не вдалося з'єднатися\nз Інтернетом.\n\n■ Можливо, проблема в мережі\nабо в умовах довкола.\nЩоб з'єднання було найкращим,\nпідійдіть ближче до точки\nдоступу й переконайтеся, що\nміж консоллю й точкою доступу\nнемає перешкод.\nЯкщо не помогло, спробуйте\nпізніше.\n\n■ Перевірте, чи ваш комп'ютер\nз'єднується з Інтернетом\nіз тими самими налаштуваннями.\nЯкщо ні — дивіться інструкцію,\nщо йшла з точкою доступу.\n\n■ Можливо, DNS введено\nнеправильно. Перевірте\nв Налаштуваннях системи ⇒\nІнтернет-налаштування.\n\n■ Можливо, сервер проксі\nвведено неправильно. Перевірте\nв Налаштуваннях системи ⇒\nІнтернет-налаштування."
+  },
+  "47007": {
+    "en": "The server is currently\nundergoing maintenance.\n\nWe apologise for any inconvenience.\nPlease try again later.\nSee the Nintendo website\nfor maintenance information.",
+    "ua": "На сервері зараз ведуться\nтехнічні роботи.\n\nПерепрошуємо за незручності.\nСпробуйте пізніше.\nІнформація про роботи —\nна сайті Nintendo."
+  },
+  "0": {
+    "en": "An error has occurred.\nPlease try again later.\nIf the problem persists, please\nmake a note of the error code and\nvisit support.nintendo.com.",
+    "ua": "Сталася помилка.\nСпробуйте пізніше.\nЯкщо проблема не зникає,\nзапишіть код помилки\nй відвідайте\nsupport.nintendo.com."
+  }
+}

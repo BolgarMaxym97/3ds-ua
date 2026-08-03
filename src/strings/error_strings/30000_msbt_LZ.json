@@ -1,0 +1,82 @@
+{
+  "30000": {
+    "en": "",
+    "ua": ""
+  },
+  "30200": {
+    "en": "Wireless communication is\ncurrently disabled. \n\nPlease enable wireless communication.",
+    "ua": "Бездротовий зв'язок вимкнено. \n\nУвімкніть бездротовий зв'язок."
+  },
+  "30300": {
+    "en": "To use this feature, you must accept \nthe terms of the Nintendo 3DS \nService User Agreement and \nPrivacy Policy.\n\nIn System Settings, select Internet \nSettings ⇒ Other Information ⇒ \nUser Agreement and agree to the terms.",
+    "ua": "Щоб скористатися цією функцією,\nпотрібно прийняти умови угоди\nпро користування сервісами\nNintendo 3DS і політику\nконфіденційності.\n\nУ налаштуваннях системи\nвиберіть Інтернет-налаштування ⇒\nІнша інформація ⇒ Угода\nз користувачем і прийміть умови."
+  },
+  "30400": {
+    "en": "Online Interaction is restricted by\nParental Controls.",
+    "ua": "Взаємодію онлайн обмежено\nбатьківським контролем."
+  },
+  "31000": {
+    "en": "Could not find an access point.\n\n■ There may be problems with the \nwireless connection environment.\nTo ensure an optimal connection \nenvironment, move closer to the \naccess point and make sure that there\nare no obstructions between the\nsystem and the access point.\n\n■ The access point may be \nexperiencing problems such as the\nwireless signal dropping. Please refer \nto the instruction booklet that came \nwith the access point.\n\n■ The SSID may have been entered\nincorrectly, or your internet settings\nmay not have been configured. Check\nyour settings in System Settings ⇒\nInternet Settings.",
+    "ua": "Не вдалося знайти точку\nдоступу.\n\n■ Можливо, проблема в мережі\nабо в умовах довкола.\nЩоб з'єднання було найкращим,\nпідійдіть ближче до точки\nдоступу й переконайтеся, що\nміж консоллю й точкою доступу\nнемає перешкод.\nЯкщо не помогло, спробуйте\nпізніше.\n\n■ Можливо, у точці доступу\nнеполадки — наприклад, зникає\nбездротовий сигнал. Дивіться\nінструкцію, що йшла\nз точкою доступу.\n\n■ Можливо, SSID введено\nнеправильно або інтернет-\nналаштування не задано.\nПеревірте їх у Налаштуваннях\nсистеми ⇒ Інтернет-налаштування."
+  },
+  "31004": {
+    "en": "No access point in range.\n\n■ Access via the Nintendo Wi-Fi USB\nConnector may not be granted.\nCheck the settings on your PC.\n\n■ If access has been granted but you\nstill cannot connect, there may be\nproblems with the network or the\nenvironment.\nTo ensure an optimal connection \nenvironment, move closer to the \naccess point and make sure that there\nare no obstructions between the\nsystem and the access point.\nIf this does not work, please try \nagain later.",
+    "ua": "Немає точки доступу\nв радіусі дії.\n\n■ Можливо, доступ через\nNintendo Wi-Fi USB Connector\nне дозволено. Перевірте\nналаштування на комп'ютері.\n\n■ Якщо доступ дозволено, але\nз'єднатися не вдається,\nможливо, проблема в мережі\nабо в умовах довкола.\nЩоб з'єднання було найкращим,\nпідійдіть ближче до точки\nдоступу й переконайтеся, що\nміж консоллю й точкою доступу\nнемає перешкод.\nЯкщо не помогло, спробуйте\nпізніше."
+  },
+  "31100": {
+    "en": "Could not connect to the \naccess point.\n\n■ The security key may have been \nentered incorrectly. Check the setting \nin System Settings ⇒ Internet \nSettings.\n\n■ There may be problems with the \nnetwork or the environment.\nTo ensure an optimal connection \nenvironment, move closer to the \naccess point and make sure that there\nare no obstructions between the\nsystem and the access point.\nIf this does not work, please try\nagain later.\n\n■ The access point may have been\nconfigured incorrectly.\nPlease refer to the instruction booklet\nthat came with the access point.",
+    "ua": "Не вдалося з'єднатися\nз точкою доступу.\n\n■ Можливо, ключ безпеки\nвведено неправильно. Перевірте\nв Налаштуваннях системи ⇒\nІнтернет-налаштування.\n\n■ Можливо, проблема в мережі\nабо в умовах довкола.\nЩоб з'єднання було найкращим,\nпідійдіть ближче до точки\nдоступу й переконайтеся, що\nміж консоллю й точкою доступу\nнемає перешкод.\nЯкщо не помогло, спробуйте\nпізніше.\n\n■ Можливо, точку доступу\nналаштовано неправильно.\nДивіться інструкцію, що\nйшла з точкою доступу."
+  },
+  "31104": {
+    "en": "Could not connect to the \naccess point.\n\n■ Access via the Nintendo Wi-Fi USB\nConnector may not be granted.\nCheck the settings on your PC.\n\n■ If access has been granted but you\nstill cannot connect, there may be\nproblems with the network or the\nenvironment.\nTo ensure an optimal connection \nenvironment, move closer to the \naccess point and make sure that there\nare no obstructions between the\nsystem and the access point.\nIf this does not work, please try \nagain later.",
+    "ua": "Не вдалося з'єднатися\nз точкою доступу.\n\n■ Можливо, доступ через\nNintendo Wi-Fi USB Connector\nне дозволено. Перевірте\nналаштування на комп'ютері.\n\n■ Якщо доступ дозволено, але\nз'єднатися не вдається,\nможливо, проблема в мережі\nабо в умовах довкола.\nЩоб з'єднання було найкращим,\nпідійдіть ближче до точки\nдоступу й переконайтеся, що\nміж консоллю й точкою доступу\nнемає перешкод.\nЯкщо не помогло, спробуйте\nпізніше."
+  },
+  "31200": {
+    "en": "Another device is using the same\nIP address, so the connection was \nrefused.\n\nGo to System Settings ⇒ Internet \nSettings and change your IP address.",
+    "ua": "Той самий IP-адрес використовує\nінша консоль, тому з'єднання\nвідхилено.\n\nЗмініть свій IP-адрес\nу Налаштуваннях системи ⇒\nІнтернет-налаштування."
+  },
+  "31300": {
+    "en": "Could not connect to the \naccess point.\n\nYou need to change the security\nsettings for this access point.\nChange these settings in System\nSettings ⇒ Internet Settings.\n\nIf the problem persists, please contact\nyour local customer support centre. \nFor contact details, check the \nOperations Manual or visit \nsupport.nintendo.com.",
+    "ua": "Не вдалося з'єднатися\nз точкою доступу.\n\nПотрібно змінити налаштування\nбезпеки цієї точки доступу.\nЗмініть їх у Налаштуваннях\nсистеми ⇒ Інтернет-налаштування.\n\nЯкщо проблема не зникає,\nзверніться до місцевої служби\nпідтримки. Контакти шукайте\nв посібнику з користування\nабо на support.nintendo.com."
+  },
+  "31400": {
+    "en": "Could not connect to the \naccess point.\n\n■ The security key may have\nbeen entered incorrectly. Check \nthe setting in System Settings ⇒ \nInternet Settings.\n\n■ There may be problems with the\nnetwork or the environment.\nTo ensure an optimal connection\nenvironment, move closer to the\naccess point and make sure that there\nare no obstructions between the\nsystem and the access point.\nIf this does not work, please try\nagain later.",
+    "ua": "Не вдалося з'єднатися\nз точкою доступу.\n\n■ Можливо, ключ безпеки\nвведено неправильно. Перевірте\nв Налаштуваннях системи ⇒\nІнтернет-налаштування.\n\n■ Можливо, проблема в мережі\nабо в умовах довкола.\nЩоб з'єднання було найкращим,\nпідійдіть ближче до точки\nдоступу й переконайтеся, що\nміж консоллю й точкою доступу\nнемає перешкод.\nЯкщо не помогло, спробуйте\nпізніше."
+  },
+  "32000": {
+    "en": "Could not connect to the internet.\n\n■ The security key or DNS may \nhave been entered incorrectly. Check \nthe setting in System Settings ⇒ \nInternet Settings.\n\n■ There may be problems with the \nnetwork or the environment.\nTo ensure an optimal connection \nenvironment, move closer to the \naccess point and make sure that there\nare no obstructions between the\nsystem and the access point.\nIf this does not work, please try \nagain later.\n\n■ Check that your computer can\nconnect to the internet using the same\nsettings. If not, refer to the instruction\nbooklet that came with the access\npoint.",
+    "ua": "Не вдалося з'єднатися\nз Інтернетом.\n\n■ Можливо, ключ безпеки або\nDNS введено неправильно.\nПеревірте в Налаштуваннях\nсистеми ⇒ Інтернет-налаштування.\n\n■ Можливо, проблема в мережі\nабо в умовах довкола.\nЩоб з'єднання було найкращим,\nпідійдіть ближче до точки\nдоступу й переконайтеся, що\nміж консоллю й точкою доступу\nнемає перешкод.\nЯкщо не помогло, спробуйте\nпізніше.\n\n■ Перевірте, чи ваш комп'ютер\nз'єднується з Інтернетом\nіз тими самими налаштуваннями.\nЯкщо ні — дивіться інструкцію,\nщо йшла з точкою доступу."
+  },
+  "32100": {
+    "en": "Could not connect to the internet.\n\n■ There may be problems with the \nnetwork or the environment.\nTo ensure an optimal connection \nenvironment, move closer to the \naccess point and make sure that there\nare no obstructions between the\nsystem and the access point.\nIf this does not work, please try \nagain later.\n\n■ Check that your computer can\nconnect to the internet using the same\nsettings. If not, refer to the instruction\nbooklet that came with the access\npoint.\n\n■ The DNS setting may have been \nentered incorrectly. Check the setting \nin System Settings ⇒ Internet \nSettings.\n\n■ The proxy server may have been \nentered incorrectly. Check the setting \nin System Settings ⇒ Internet \nSettings.\n",
+    "ua": "Не вдалося з'єднатися\nз Інтернетом.\n\n■ Можливо, проблема в мережі\nабо в умовах довкола.\nЩоб з'єднання було найкращим,\nпідійдіть ближче до точки\nдоступу й переконайтеся, що\nміж консоллю й точкою доступу\nнемає перешкод.\nЯкщо не помогло, спробуйте\nпізніше.\n\n■ Перевірте, чи ваш комп'ютер\nз'єднується з Інтернетом\nіз тими самими налаштуваннями.\nЯкщо ні — дивіться інструкцію,\nщо йшла з точкою доступу.\n\n■ Можливо, DNS введено\nнеправильно. Перевірте\nв Налаштуваннях системи ⇒\nІнтернет-налаштування.\n\n■ Можливо, сервер проксі\nвведено неправильно. Перевірте\nв Налаштуваннях системи ⇒\nІнтернет-налаштування."
+  },
+  "32200": {
+    "en": "Could not connect to the proxy server.\n\n■ Check that your computer can\nconnect to the internet using the same\nsettings. If not, consult the\nadministrator of the proxy server.\n\n■ The proxy server may have been \nentered incorrectly. Check the setting \nin System Settings ⇒ Internet \nSettings.",
+    "ua": "Не вдалося з'єднатися\nз сервером проксі.\n\n■ Перевірте, чи ваш комп'ютер\nз'єднується з Інтернетом\nіз тими самими налаштуваннями.\nЯкщо ні — зверніться\nдо адміністратора сервера\nпроксі.\n\n■ Можливо, сервер проксі\nвведено неправильно. Перевірте\nв Налаштуваннях системи ⇒\nІнтернет-налаштування."
+  },
+  "33000": {
+    "en": "Could not connect to the \naccess point.\n\n■ This may be due to authentication\nproblems. Open the internet browser,\nconnect to the internet and enter the\nrequired information (user name, \npassword, acceptance of user \nagreement, etc.).\n\n■ There may be problems with the \nnetwork or the environment.\nTo ensure an optimal connection \nenvironment, move closer to the \naccess point and make sure that there\nare no obstructions between the\nsystem and the access point.\n\n■ The network may be experiencing\nhigh traffic volumes or the service \nmay be down. \nPlease try again later.",
+    "ua": "Не вдалося з'єднатися\nз точкою доступу.\n\n■ Можливо, це через помилку\nавторизації. Відкрийте\nінтернет-браузер, з'єднайтеся\nз Інтернетом і введіть\nпотрібні дані (ім'я користувача,\nпароль, згоду з угодою тощо).\n\n■ Можливо, проблема в мережі\nабо в умовах довкола.\nЩоб з'єднання було найкращим,\nпідійдіть ближче до точки\nдоступу й переконайтеся, що\nміж консоллю й точкою доступу\nнемає перешкод.\nЯкщо не помогло, спробуйте\nпізніше.\n\n■ Можливо, мережа\nперевантажена або сервіс\nне працює.\nСпробуйте пізніше."
+  },
+  "33305": {
+    "en": "This service is not available in your\nlocation. Please use another service.",
+    "ua": "Цей сервіс недоступний\nу вашій місцевості.\nСкористайтеся іншим сервісом."
+  },
+  "33405": {
+    "en": "A communication error has occurred.\nPlease try again later.",
+    "ua": "Сталася помилка зв'язку.\nСпробуйте пізніше."
+  },
+  "34000": {
+    "en": "A communication error has occurred.\n\nThere may be problems with the \nnetwork or the environment.\nTo ensure an optimal connection \nenvironment, move closer to the \naccess point and make sure that there\nare no obstructions between the\nsystem and the access point.\nIf this does not work, please try \nagain later.",
+    "ua": "Сталася помилка зв'язку.\n\nМожливо, проблема в мережі\nабо в умовах довкола.\nЩоб з'єднання було найкращим,\nпідійдіть ближче до точки\nдоступу й переконайтеся, що\nміж консоллю й точкою доступу\nнемає перешкод.\nЯкщо не помогло, спробуйте\nпізніше."
+  },
+  "34100": {
+    "en": "A communication error has occurred.\n\nThere may be problems with the \nnetwork or the environment.\nTo ensure an optimal connection \nenvironment, move closer to the \naccess point and make sure that there\nare no obstructions between the\nsystem and the access point.\nIf this does not work, please try \nagain later.\n\nIf the problem persists, please contact\nyour local customer support centre. \nFor contact details, check the \nOperations Manual or visit \nsupport.nintendo.com.",
+    "ua": "Сталася помилка зв'язку.\n\nМожливо, проблема в мережі\nабо в умовах довкола.\nЩоб з'єднання було найкращим,\nпідійдіть ближче до точки\nдоступу й переконайтеся, що\nміж консоллю й точкою доступу\nнемає перешкод.\nЯкщо не помогло, спробуйте\nпізніше.\n\nЯкщо проблема не зникає,\nзверніться до місцевої служби\nпідтримки. Контакти шукайте\nв посібнику з користування\nабо на support.nintendo.com."
+  },
+  "0": {
+    "en": "An error has occurred.\nPlease try again later.\nIf the problem persists, please\nmake a note of the error code and\nvisit support.nintendo.com.",
+    "ua": "Сталася помилка.\nСпробуйте пізніше.\nЯкщо проблема не зникає,\nзапишіть код помилки\nй відвідайте\nsupport.nintendo.com."
+  }
+}

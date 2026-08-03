@@ -1,0 +1,42 @@
+{
+  "303100": {
+    "en": "The code could not be recognised.\nPlease check the code and try\nentering it again.\n\nIf the problem persists, please\nmake a note of the error code\nand visit support.nintendo.com.",
+    "ua": "Не вдалося розпізнати код.\nПеревірте код і спробуйте\nввести його ще раз.\n\nЯкщо проблема не зникає,\nзапишіть код помилки\nй відвідайте support.nintendo.com."
+  },
+  "303104": {
+    "en": "The code you have entered is a\nNintendo eShop activation code,\nwhich cannot be used.",
+    "ua": "Ви ввели код активації\nNintendo eShop, який\nвикористати не можна."
+  },
+  "303113": {
+    "en": "This code has already been used.",
+    "ua": "Цей код уже використано."
+  },
+  "303550": {
+    "en": "You must launch Nintendo eShop at\nleast once in order to use this online\nservice.\n\nPlease close this software and launch\nNintendo eShop.",
+    "ua": "Щоб скористатися цим\nмережевим сервісом, потрібно\nхоча б раз запустити\nNintendo eShop.\n\nЗакрийте цю програму\nй запустіть Nintendo eShop."
+  },
+  "303551": {
+    "en": "Your address information has\nnot been entered.\n\nPlease close the software, launch\nNintendo eShop and select\nSettings/Other from the menu to\nset the address information.",
+    "ua": "Ваші адресні дані не введено.\n\nЗакрийте програму, запустіть\nNintendo eShop і виберіть\nу меню Налаштування/інше,\nщоб задати адресні дані."
+  },
+  "303552": {
+    "en": "The address information is invalid.\n\nPlease close the software, launch\nNintendo eShop and select\nSettings/Other from the menu to\nchange the address information.",
+    "ua": "Адресні дані недійсні.\n\nЗакрийте програму, запустіть\nNintendo eShop і виберіть\nу меню Налаштування/інше,\nщоб змінити адресні дані."
+  },
+  "303697": {
+    "en": "Unable to connect to the server.\n\nEither the network is experiencing high\ntraffic volumes or a server error has\noccurred. Please try again later.\n\nInformation on the operational status\nof the server is available through\nsupport.nintendo.com.",
+    "ua": "Не вдалося з'єднатися\nз сервером.\n\nМережа перевантажена або\nсталася помилка сервера.\nСпробуйте пізніше.\n\nПро стан сервера можна\nдізнатися на\nsupport.nintendo.com."
+  },
+  "303698": {
+    "en": "The server is currently undergoing\nmaintenance. We apologise for any\ninconvenience. Please try again later.\n\nInformation on the operational status\nof the server is available through\nsupport.nintendo.com.\n",
+    "ua": "На сервері зараз ведуться\nтехнічні роботи. Перепрошуємо\nза незручності. Спробуйте\nпізніше.\n\nПро стан сервера можна\nдізнатися на\nsupport.nintendo.com."
+  },
+  "303699": {
+    "en": "The Nintendo eShop service has\nconcluded.\n\nThank you for using the service.",
+    "ua": "Сервіс Nintendo eShop\nзавершено.\n\nДякуємо, що користувалися ним."
+  },
+  "0": {
+    "en": "An error has occurred.\nPlease try again later.\n\nIf the problem persists, please contact\nyour local customer support centre.\nFor contact details, check the\nOperations Manual or visit\nsupport.nintendo.com.",
+    "ua": "Сталася помилка.\nСпробуйте пізніше.\n\nЯкщо проблема не зникає,\nзверніться до місцевої служби\nпідтримки. Контакти шукайте\nв посібнику з користування\nабо на support.nintendo.com."
+  }
+}

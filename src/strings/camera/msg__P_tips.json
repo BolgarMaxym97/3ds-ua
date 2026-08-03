@@ -17,7 +17,7 @@
   },
   "Guide_D_CN_Btn0": {
     "en": "Cancel",
-    "ua": "Скасувати"
+    "ua": "Назад"
   },
   "Guide_D_CN_Btn1": {
     "en": "Next",
@@ -89,7 +89,7 @@
   },
   "T_010": {
     "en": "{t:3.42:0000} Reviewing usage tips",
-    "ua": "{t:3.42:0000} Повторний перегляд порад"
+    "ua": "{t:3.42:0000} {t:1.0:5500}Повторний перегляд порад{t:1.0:6400}"
   },
   "T_011": {
     "en": "{t:3.42:0000} Quitting the software",
@@ -113,7 +113,7 @@
   },
   "T_016": {
     "en": "{t:3.42:0000} Settings: Interface Colour",
-    "ua": "{t:3.42:0000} Колір інтерфейсу"
+    "ua": "{t:3.42:0000} Колір меню"
   },
   "T_017": {
     "en": "{t:3.42:0000} Attention Sound",
@@ -161,7 +161,7 @@
   },
   "T_028": {
     "en": "{t:3.42:0000} Photo Save Location",
-    "ua": "{t:3.42:0000} Місце збереження фото"
+    "ua": "{t:3.42:0000} Куди зберігати фото"
   },
   "T_029": {
     "en": "{t:3.42:0000} 3D depth",
@@ -209,7 +209,7 @@
   },
   "T_040": {
     "en": "{t:3.42:0000} 3D shots: Near and far",
-    "ua": "{t:3.42:0000} Знімки 3D: близько й далеко"
+    "ua": "{t:3.42:0000} {t:1.0:5500}Знімки 3D: близько й далеко{t:1.0:6400}"
   },
   "T_041": {
     "en": "{t:3.42:0000} Photo/video menus",
@@ -225,7 +225,7 @@
   },
   "T_044": {
     "en": "{t:3.42:0000} The little budgie that can",
-    "ua": "{t:3.42:0000} Маленька хвацька пташка"
+    "ua": "{t:3.42:0000} {t:1.0:5900}Маленька хвацька пташка{t:1.0:6400}"
   },
   "T_045": {
     "en": "{t:3.42:0000} Tricks: Shoot buttons",
@@ -237,7 +237,7 @@
   },
   "T_047": {
     "en": "{t:3.42:0000} Manual Controls & Merge",
-    "ua": "{t:3.42:0000} Ручні налаштування і Злиття"
+    "ua": "{t:3.42:0000} {t:1.0:5500}Ручні налаштування і Злиття{t:1.0:6400}"
   },
   "T_048": {
     "en": "{t:3.42:0000} About the Merge effect",
@@ -397,7 +397,7 @@
   },
   "T_087": {
     "en": "{t:3.42:0000} Write-protected SD Cards",
-    "ua": "{t:3.42:0000} Карти SD із захистом запису"
+    "ua": "{t:3.42:0000} {t:1.0:5500}Карти SD із захистом запису{t:1.0:6400}"
   },
   "T_088": {
     "en": "{t:3.42:0000} Ideas: People",
@@ -493,7 +493,7 @@
   },
   "T_111": {
     "en": "{t:3.42:0000} Ideas: People-watching",
-    "ua": "{t:3.42:0000} Ідеї: спостереження за людьми"
+    "ua": "{t:3.42:0000} {t:1.0:4d00}Ідеї: спостереження за людьми{t:1.0:6400}"
   },
   "T_112": {
     "en": "{t:3.42:0000} Ideas: Transformation",
@@ -513,7 +513,7 @@
   },
   "T_116": {
     "en": "{t:3.42:0000} Tricks: Interval Shot",
-    "ua": "{t:3.42:0000} Хитрощі: зйомка за часом"
+    "ua": "{t:3.42:0000} {t:1.0:5d00}Хитрощі: зйомка за часом{t:1.0:6400}"
   },
   "T_117": {
     "en": "{t:3.42:0000} Tricks: Frame-by-frame",
@@ -793,7 +793,7 @@
   },
   "D_010_1": {
     "en": "You can review any of\nthe tips I've already\ngiven you by selecting\nUsage Tips in Settings.",
-    "ua": "Будь-яку з уже наданих\nпорад можна переглянути\nще раз: виберіть Поради\nв параметрах."
+    "ua": "Будь-яку з уже наданих\nпорад можна переглянути\nще раз: виберіть Поради\nв опціях."
   },
   "Guide_Tex_011": {
     "en": "",
@@ -889,7 +889,7 @@
   },
   "D_016_0": {
     "en": "If you feel like a change,\nselect {t:0.3:ff3200ff}Interface Colour\n{t:0.3:454039ff}in Settings to give\nNintendo 3DS Camera\na new look.",
-    "ua": "Якщо хочеться змін,\nвиберіть {t:0.3:ff3200ff}Колір інтерфейсу\n{t:0.3:454039ff}у параметрах —\nі Nintendo 3DS Камера\nматиме новий вигляд."
+    "ua": "Якщо хочеться змін,\nвиберіть {t:0.3:ff3200ff}Колір меню\n{t:0.3:454039ff}в опціях —\nі Nintendo 3DS Камера\nматиме новий вигляд."
   },
   "D_016_1": {
     "en": "Not sure which colour\nto go for? Just give the\nselection cursor a flick\nand leave it up to luck.",
@@ -1105,7 +1105,7 @@
   },
   "D_028_4": {
     "en": "just select Photo Save\nLocation in Settings.",
-    "ua": "виберіть Місце\nзбереження фото\nв параметрах."
+    "ua": "виберіть Куди\nзберігати фото\nв опціях."
   },
   "Guide_Tex_029": {
     "en": "",
@@ -1333,7 +1333,7 @@
   },
   "D_042_1": {
     "en": "You can choose from\na variety of different\nmusic tracks in the\nslideshow settings.",
-    "ua": "У параметрах слайд-шоу\nє на вибір кілька\nрізних музичних\nтем."
+    "ua": "В опціях слайд-шоу\nє на вибір кілька\nрізних музичних\nтем."
   },
   "D_042_2": {
     "en": "You can also set the\nphoto display duration\nand transition effect.",
@@ -2249,7 +2249,7 @@
   },
   "D_097_1": {
     "en": "As you might expect, the\nPhoto Save Location\nsetting is for photos only,\nso it won't affect where\nyour videos are saved.\nKeep that in mind! Chirp!",
-    "ua": "Як і слід було чекати,\nМісце збереження фото\nстосується лише фото,\nтож на місце збереження\nвідео воно не впливає.\nПам'ятайте! Цвірінь!"
+    "ua": "Як і слід було чекати,\nопція Куди зберігати\nфото стосується лише\nфото — на місце\nзбереження відео\nвона не впливає. Цвірінь!"
   },
   "Guide_Tex_098": {
     "en": "",

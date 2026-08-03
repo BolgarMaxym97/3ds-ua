@@ -141,7 +141,7 @@
   },
   "P_B_Add_000": {
     "en": "Cancel",
-    "ua": "Скасувати"
+    "ua": "Назад"
   },
   "P_B_Add_001": {
     "en": "Add",
@@ -225,7 +225,7 @@
   },
   "P_B_New_002": {
     "en": "Cancel",
-    "ua": "Скасувати"
+    "ua": "Назад"
   },
   "P_B_New_003": {
     "en": "Confirm",
@@ -241,7 +241,7 @@
   },
   "P_B_New_011": {
     "en": "Cancel",
-    "ua": "Скасувати"
+    "ua": "Назад"
   },
   "P_B_New_012": {
     "en": "Confirm",
@@ -561,11 +561,11 @@
   },
   "R_Rec_000": {
     "en": "Touch to start.",
-    "ua": "Торкніться, щоб почати."
+    "ua": "{t:1.0:5000}Торкніться, щоб почати.{t:1.0:6400}"
   },
   "R_B_Rec_000": {
     "en": "Cancel",
-    "ua": "Скасувати"
+    "ua": "Назад"
   },
   "R_Rec_010": {
     "en": "Recording...",
@@ -581,7 +581,7 @@
   },
   "R_B_Rec_021": {
     "en": "Cancel",
-    "ua": "Скасувати"
+    "ua": "Назад"
   },
   "R_Rec_030": {
     "en": "Saving recording...",
@@ -745,11 +745,11 @@
   },
   "Set_Col_001": {
     "en": "Interface Colour",
-    "ua": "Колір інтерфейсу"
+    "ua": "Колір меню"
   },
   "Set_B_Col_00": {
     "en": "Cancel",
-    "ua": "Скасувати"
+    "ua": "Назад"
   },
   "Set_B_Col_01": {
     "en": "Confirm",
@@ -861,7 +861,7 @@
   },
   "DM_SavDt_Init_B000": {
     "en": "Cancel",
-    "ua": "Скасувати"
+    "ua": "Назад"
   },
   "DM_SavDt_Init_B001": {
     "en": "Reset",
@@ -917,7 +917,7 @@
   },
   "DM_Voice_Del_B000": {
     "en": "Cancel",
-    "ua": "Скасувати"
+    "ua": "Назад"
   },
   "DM_Voice_Del_B001": {
     "en": "Delete",
@@ -929,7 +929,7 @@
   },
   "DM_Voice_Del_B010": {
     "en": "Cancel",
-    "ua": "Скасувати"
+    "ua": "Назад"
   },
   "DM_Voice_Del_B011": {
     "en": "Delete",
@@ -1073,7 +1073,7 @@
   },
   "CEC_Con_200": {
     "en": "{t:1.0:5500}Cannot activate StreetPass for\nany more titles. To activate\nStreetPass for this title, go to\nStreetPass Management in the\nSystem Settings and deactivate\nit for another title.{t:1.0:6400}",
-    "ua": "{t:1.0:5500}Увімкнути StreetPass ще для\nодного титулу не вдасться. Щоб\nувімкнути його для цього титулу,\nвідкрийте Керування StreetPass\nу Налаштуваннях системи й\nвимкніть його для іншого титулу.{t:1.0:6400}"
+    "ua": "{t:1.0:5200}Увімкнути StreetPass ще для\nодного титулу не вдасться. Щоб\nувімкнути його для цього титулу,\nвідкрийте Керування StreetPass\nу Налаштуваннях системи й\nвимкніть його для іншого титулу.{t:1.0:6400}"
   },
   "CEC_B_Con_200": {
     "en": "OK",

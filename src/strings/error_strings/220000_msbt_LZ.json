@@ -1,0 +1,218 @@
+{
+  "221021": {
+    "en": "There is no Nintendo Network ID\nlinked with this system.\n\nYou can create a Nintendo Network ID\nor link one to the system by going to\nNintendo Network ID Settings from\nthe System Settings.",
+    "ua": "З цією консоллю не зв'язано\nжодного Nintendo Network ID.\n\nСтворити Nintendo Network ID\nабо зв'язати наявний можна\nв розділі Nintendo Network ID\nу налаштуваннях системи."
+  },
+  "221022": {
+    "en": "There is a Nintendo Network ID\nlinked to this system.",
+    "ua": "З цією консоллю зв'язано\nNintendo Network ID."
+  },
+  "222501": {
+    "en": "You cannot use this Nintendo\nNetwork ID on this system.\n\nPlease contact your local customer\nsupport centre, quoting the error\ncode. For contact details, check the\nOperations Manual or visit\nsupport.nintendo.com.",
+    "ua": "Цей Nintendo Network ID\nне працює на цій консолі.\n\nЗверніться до місцевої служби\nпідтримки й назвіть код\nпомилки. Контакти шукайте\nв посібнику з користування\nабо на support.nintendo.com."
+  },
+  "222502": {
+    "en": "This Nintendo Network ID cannot be\nused because its country setting does\nnot match the setting of the system.\n\nPlease check the Region Settings in\nSystem Settings ⇒ Other Settings ⇒\nProfile and confirm that the country\nmatches that set for your Nintendo\nNetwork ID.",
+    "ua": "Цей Nintendo Network ID\nне працює: його країна\nне збігається з країною консолі.\n\nПеревірте регіон\nу Налаштуваннях системи ⇒\nІнші налаштування ⇒ Профіль\nі переконайтеся, що країна\nтака сама, як у вашого\nNintendo Network ID."
+  },
+  "222503": {
+    "en": "You must accept the latest terms of\nthe Nintendo Network Agreement and\nNintendo Network Privacy Policy before\nonline services can be used.\n\nSelect Nintendo Network ID Settings\nfrom the System Settings and agree\nto the terms.",
+    "ua": "Щоб користуватися мережевими\nсервісами, потрібно прийняти\nнайновіші умови угоди про\nNintendo Network і політики\nконфіденційності.\n\nВиберіть Nintendo Network ID\nу налаштуваннях системи\nй прийміть умови."
+  },
+  "222511": {
+    "en": "A system update is required before\nonline services can be used.\n\nGo to Other Settings in the System\nSettings to perform a system update.",
+    "ua": "Щоб користуватися мережевими\nсервісами, потрібно оновити\nсистему.\n\nВідкрийте Інші налаштування\nв налаштуваннях системи\nй оновіть систему."
+  },
+  "222512": {
+    "en": "This software must be updated before\nonline services can be used.\n\nDownload the newest version of this\nsoftware from Nintendo eShop or other\nsupported software.",
+    "ua": "Щоб користуватися мережевими\nсервісами, потрібно оновити\nцю програму.\n\nЗавантажте найновішу версію\nз Nintendo eShop або іншої\nпідтримуваної програми."
+  },
+  "222571": {
+    "en": "The Nintendo Network ID you\nentered is already in use.\n\nPlease try again.",
+    "ua": "Введений Nintendo Network ID\nуже використовується.\n\nСпробуйте ще раз."
+  },
+  "222572": {
+    "en": "The Nintendo Network ID you entered\nincludes text that cannot be used.\n\nPlease try again.",
+    "ua": "Введений Nintendo Network ID\nмістить недозволений текст.\n\nСпробуйте ще раз."
+  },
+  "222573": {
+    "en": "The password you entered\ncannot be used.\n\nPlease enter another password.",
+    "ua": "Введений пароль\nвикористати не можна.\n\nВведіть інший пароль."
+  },
+  "222574": {
+    "en": "The Mii name you entered\ncannot be used.",
+    "ua": "Введене ім'я Mii\nвикористати не можна."
+  },
+  "222575": {
+    "en": "The email address you entered\nmay not be correct.\n\nPlease check and try again.",
+    "ua": "Можливо, адреса електронної\nпошти неправильна.\n\nПеревірте й спробуйте ще раз."
+  },
+  "222576": {
+    "en": "The Nintendo Network ID you\nentered cannot be used.\n\nPlease enter another\nNintendo Network ID.",
+    "ua": "Введений Nintendo Network ID\nвикористати не можна.\n\nВведіть інший\nNintendo Network ID."
+  },
+  "222577": {
+    "en": "Your Nintendo Network ID and\npassword are the same.\n\nPlease use a different password.",
+    "ua": "Ваш Nintendo Network ID\nі пароль однакові.\n\nВиберіть інший пароль."
+  },
+  "222578": {
+    "en": "Your entry contains characters\nthat cannot be used.\n\nPlease try again.",
+    "ua": "Введено знаки, яких не можна\nвикористовувати.\n\nСпробуйте ще раз."
+  },
+  "222579": {
+    "en": "You cannot use two or more\npunctuation characters in a row\nin your Nintendo Network ID.\n\nPlease try again.",
+    "ua": "У Nintendo Network ID не можна\nставити два знаки пунктуації\nпідряд.\n\nСпробуйте ще раз."
+  },
+  "222580": {
+    "en": "You cannot use punctuation\nas the first or last character\nof your Nintendo Network ID.\n\nPlease try again.",
+    "ua": "Nintendo Network ID не може\nпочинатися або закінчуватися\nзнаком пунктуації.\n\nСпробуйте ще раз."
+  },
+  "222581": {
+    "en": "You cannot use more than\nsix numbers in your\nNintendo Network ID.\n\nPlease try again.",
+    "ua": "У Nintendo Network ID не можна\nвикористовувати більше\nшести цифр.\n\nСпробуйте ще раз."
+  },
+  "222582": {
+    "en": "Your password contains characters\nwhich cannot be used.\n\nPlease use a different password.",
+    "ua": "Ваш пароль містить знаки,\nяких не можна\nвикористовувати.\n\nВиберіть інший пароль."
+  },
+  "222583": {
+    "en": "Your password must contain characters\nfrom at least two of the following\ncategories: upper or lower case letters,\nnumbers or punctuation.\n\nPlease try again.",
+    "ua": "Пароль має містити знаки\nхоча б із двох груп: великі\nабо малі літери, цифри\nчи знаки пунктуації.\n\nСпробуйте ще раз."
+  },
+  "222584": {
+    "en": "You cannot use the same character\nmore than twice in a row.\n\nPlease try again.",
+    "ua": "Той самий знак не можна\nповторювати більше двох\nразів підряд.\n\nСпробуйте ще раз."
+  },
+  "222585": {
+    "en": "The email address you have entered\ncannot be used.\n\nPlease enter another email address.",
+    "ua": "Введену адресу електронної\nпошти використати не можна.\n\nВведіть іншу адресу."
+  },
+  "222586": {
+    "en": "You may have entered an invalid\nemail address.\n\nPlease check and try again.",
+    "ua": "Можливо, ви ввели недійсну\nадресу електронної пошти.\n\nПеревірте й спробуйте ще раз."
+  },
+  "222587": {
+    "en": "This Nintendo Network ID exists\nalready.\n\nTo use this ID, go back and select\nLink an Existing ID, then follow the\non-screen instructions.\n\nYou will need to enter the email\naddress and password used when\ncreating the ID.",
+    "ua": "Такий Nintendo Network ID\nуже існує.\n\nЩоб скористатися ним,\nповернітеся й виберіть\n«Зв'язати наявний ID», далі\nдійте за вказівками на екрані.\n\nПотрібно буде ввести адресу\nел. пошти й пароль, указані\nпри створенні ID."
+  },
+  "222591": {
+    "en": "This Nintendo Network ID cannot\nbe linked as it has already been\nlinked on another system.",
+    "ua": "Цей Nintendo Network ID\nне можна зв'язати: він уже\nзв'язаний з іншою консоллю."
+  },
+  "222592": {
+    "en": "It is not currently possible to link\na Nintendo Network ID from this\nsystem, as you have reached the\nlimit for ID linking at this time.\n\nPlease try again later.",
+    "ua": "Зараз зв'язати Nintendo\nNetwork ID із цієї консолі\nне можна: ви досягли\nобмеження на зв'язування ID.\n\nСпробуйте пізніше."
+  },
+  "222593": {
+    "en": "This Nintendo Network ID cannot be\nused because it has not been\nconfirmed by a parent or guardian.\n\nPlease contact your local customer\nsupport centre, quoting the error\ncode. For contact details, check the\nOperations Manual or visit\nsupport.nintendo.com.",
+    "ua": "Цей Nintendo Network ID\nне працює: його не підтвердили\nбатьки або опікун.\n\nЗверніться до місцевої служби\nпідтримки й назвіть код\nпомилки. Контакти шукайте\nв посібнику з користування\nабо на support.nintendo.com."
+  },
+  "222594": {
+    "en": "Parental Controls settings\nmust be configured first.",
+    "ua": "Спершу потрібно задати\nбатьківський контроль."
+  },
+  "222595": {
+    "en": "You have not registered a Mii.",
+    "ua": "Ви не зареєстрували Mii."
+  },
+  "222597": {
+    "en": "",
+    "ua": ""
+  },
+  "222611": {
+    "en": "Incorrect password.",
+    "ua": "Неправильний пароль."
+  },
+  "222612": {
+    "en": "The email address is not correct.\n\nPlease check that you have\nentered a valid email address.",
+    "ua": "Адреса електронної пошти\nнеправильна.\n\nПеревірте, чи адреса дійсна."
+  },
+  "222613": {
+    "en": "The information entered is not correct.\nYou may have entered a Club Nintendo\naccount ID or the ID of another service.\n\nPlease enter the details again taking\ncare that the Nintendo Network ID,\npassword and email address are correct.",
+    "ua": "Введені дані неправильні.\nМожливо, ви ввели ID\nоблікового запису Club Nintendo\nабо ID іншого сервісу.\n\nВведіть дані ще раз, уважно\nперевіривши Nintendo Network ID,\nпароль і адресу ел. пошти."
+  },
+  "222631": {
+    "en": "You cannot access online services\nbecause the Nintendo Network ID\nformerly linked to the system has been\ndeleted.\n\nYou can create another Nintendo\nNetwork ID or link one to the system\nby going to Nintendo Network ID\nSettings from the System Settings.",
+    "ua": "Мережеві сервіси недоступні:\nNintendo Network ID, раніше\nзв'язаний із консоллю,\nвидалено.\n\nСтворити інший Nintendo\nNetwork ID або зв'язати\nнаявний можна в розділі\nNintendo Network ID\nу налаштуваннях системи."
+  },
+  "222632": {
+    "en": "Your Nintendo Network ID has changed.\n\nPlease approve the change by selecting\nNintendo Network ID Settings in the\nSystem Settings.",
+    "ua": "Ваш Nintendo Network ID\nзмінився.\n\nПідтвердьте зміну, вибравши\nNintendo Network ID\nу налаштуваннях системи."
+  },
+  "222633": {
+    "en": "This Nintendo Network ID has been\ntemporarily locked due to repeated\nincorrect attempts to enter the\npassword.\n\nPlease try again later.",
+    "ua": "Цей Nintendo Network ID\nтимчасово заблоковано через\nбагаторазове введення\nнеправильного пароля.\n\nСпробуйте пізніше."
+  },
+  "222643": {
+    "en": "An error has occurred.\n\nYour session has expired.\nPlease sign in and try again.",
+    "ua": "Сталася помилка.\n\nСеанс завершився.\nУвійдіть і спробуйте ще раз."
+  },
+  "222662": {
+    "en": "You cannot perform this operation\nseveral times in a row.\n\nPlease try again later.",
+    "ua": "Не можна повторювати цю дію\nкілька разів підряд.\n\nСпробуйте пізніше."
+  },
+  "222672": {
+    "en": "The use of this credit card has\nbeen stopped.",
+    "ua": "Використання цієї кредитної\nкарти припинено."
+  },
+  "222673": {
+    "en": "This credit card cannot be used.\n\nFor more information, please\ncontact the issuer of your credit card.",
+    "ua": "Цю кредитну карту\nвикористати не можна.\n\nДокладнішу інформацію\nзапитайте в емітента\nвашої кредитної карти."
+  },
+  "222674": {
+    "en": "Please enter the credit card\nnumber correctly.",
+    "ua": "Введіть номер кредитної\nкарти правильно."
+  },
+  "222675": {
+    "en": "Please enter the correct\ncredit card expiry date.",
+    "ua": "Введіть правильний термін\nдії кредитної карти."
+  },
+  "222676": {
+    "en": "Please enter the credit card\nPIN code correctly.",
+    "ua": "Введіть PIN-код кредитної\nкарти правильно."
+  },
+  "222677": {
+    "en": "The information entered is not correct.\nPlease check and try again.",
+    "ua": "Введені дані неправильні.\nПеревірте й спробуйте ще раз."
+  },
+  "222679": {
+    "en": "The credit card has expired.",
+    "ua": "Термін дії кредитної карти минув."
+  },
+  "222801": {
+    "en": "Online services cannot be used.",
+    "ua": "Мережеві сервіси недоступні."
+  },
+  "222802": {
+    "en": "This Nintendo Network ID\ncannot be used.\n\nPlease contact your local customer\nsupport centre, quoting the error code.\nFor contact details, check the\nOperations Manual or visit\nsupport.nintendo.com.",
+    "ua": "Цей Nintendo Network ID\nвикористати не можна.\n\nЗверніться до місцевої служби\nпідтримки й назвіть код\nпомилки. Контакти шукайте\nв посібнику з користування\nабо на support.nintendo.com."
+  },
+  "222803": {
+    "en": "Online services cannot be used.\n\nPlease contact customer support at the\nnumber or address listed in the software\nmanual, quoting the error code.",
+    "ua": "Мережеві сервіси недоступні.\n\nЗверніться до служби підтримки\nза номером або адресою\nз посібника до програми\nй назвіть код помилки."
+  },
+  "222812": {
+    "en": "You cannot access Nintendo Network\nservices from this system.\n\nPlease contact your local customer\nsupport center, quoting the error code.\nFor contact details, check the\nOperations Manual or visit\nsupport.nintendo.com.",
+    "ua": "З цієї консолі доступ\nдо сервісів Nintendo Network\nнеможливий.\n\nЗверніться до місцевої служби\nпідтримки й назвіть код\nпомилки. Контакти шукайте\nв посібнику з користування\nабо на support.nintendo.com."
+  },
+  "222881": {
+    "en": "The server is currently\nundergoing maintenance.\n\nWe apologise for any inconvenience.\nPlease try again later.\nSee the Nintendo website\nfor maintenance information.",
+    "ua": "На сервері зараз ведуться\nтехнічні роботи.\n\nПерепрошуємо за незручності.\nСпробуйте пізніше.\nІнформація про роботи —\nна сайті Nintendo."
+  },
+  "222882": {
+    "en": "This online service is no\nlonger available.\nThank you for your interest.",
+    "ua": "Цей мережевий сервіс більше\nне доступний.\nДякуємо за увагу."
+  },
+  "222884": {
+    "en": "Online services are not available\nin your country of residence.",
+    "ua": "У країні вашого проживання\nмережеві сервіси недоступні."
+  },
+  "222911": {
+    "en": "Online Interaction has been restricted by\nParental Controls.",
+    "ua": "Взаємодію онлайн обмежено\nбатьківським контролем."
+  },
+  "0": {
+    "en": "An error has occurred.\nPlease try again later.\nIf the problem persists, please\nmake a note of the error code and\nvisit support.nintendo.com.",
+    "ua": "Сталася помилка.\nСпробуйте пізніше.\nЯкщо проблема не зникає,\nзапишіть код помилки\nй відвідайте\nsupport.nintendo.com."
+  }
+}

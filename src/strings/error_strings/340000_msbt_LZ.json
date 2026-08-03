@@ -1,0 +1,18 @@
+{
+  "341003": {
+    "en": "In order to use this service, a system\nupdate is required.\n\nTo perform a system update, select\nSystem Update from Other Settings\nin the System Settings.",
+    "ua": "Щоб скористатися цим сервісом,\nпотрібно оновити систему.\n\nВиберіть «Оновлення системи»\nв «Інших налаштуваннях»\nу налаштуваннях системи."
+  },
+  "343502": {
+    "en": "A communication error has occurred.\n\nThe server is experiencing high\ntraffic volumes. We apologise for\nany inconvenience.\n\nPlease try again later.",
+    "ua": "Сталася помилка зв'язку.\n\nСервер перевантажений.\nПерепрошуємо за незручності.\n\nСпробуйте пізніше."
+  },
+  "343503": {
+    "en": "The server is currently\nundergoing maintenance.\n\nWe apologise for any inconvenience.\nPlease try again later.\nSee the Nintendo website\nfor maintenance information.",
+    "ua": "На сервері зараз ведуться\nтехнічні роботи.\n\nПерепрошуємо за незручності.\nСпробуйте пізніше.\nІнформація про роботи —\nна сайті Nintendo."
+  },
+  "0": {
+    "en": "An error has occurred.\nPlease try again later.\n\nIf the problem persists, please contact\nyour local customer support centre. \nFor contact details, check the \nOperations Manual or visit \nsupport.nintendo.com.",
+    "ua": "Сталася помилка.\nСпробуйте пізніше.\n\nЯкщо проблема не зникає,\nзверніться до місцевої служби\nпідтримки. Контакти шукайте\nв посібнику з користування\nабо на support.nintendo.com."
+  }
+}

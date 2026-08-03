@@ -241,7 +241,7 @@
   },
   "Dialog_Permit": {
     "en": " Allow",
-    "ua": " Дозволити"
+    "ua": "{t:1.0:5a00} Дозволити{/t:1.0}"
   },
   "Dialog_Reject": {
     "en": " Reject",
@@ -317,7 +317,7 @@
   },
   "Browse_ImageSelect": {
     "en": "Touch and hold the stylus on an\nimage on the lower screen, then\nlift the stylus to display the\nimage on the upper screen.\nThis also works for 3D images.",
-    "ua": "Притисніть стилус до зображення\nна нижньому екрані, тоді підніміть\nйого — зображення з'явиться\nна верхньому екрані.\nЦе працює і з 3D-зображеннями."
+    "ua": "{t:1.0:5e00}Притисніть стилус до зображення\nна нижньому екрані, тоді підніміть\nйого — зображення з'явиться\nна верхньому екрані.\nЦе працює і з 3D-зображеннями.{/t:1.0}"
   },
   "Browse_Menu": {
     "en": "Menu",

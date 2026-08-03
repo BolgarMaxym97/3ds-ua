@@ -89,7 +89,8 @@ Everywhere else in the mod `Settings` stays «Налаштування».
 | Film / Sharpness / Contrast / Brightness | Плівка / Різкість / Контраст / Яскравість |
 | Attention Sound | Звук уваги |
 | Info Display | Показ даних |
-| Photo Save Location | Місце збереження фото |
+| Photo Save Location | Куди зберігати (фото) |
+| Interface Colour | Колір меню (not «Колір інтерфейсу» — it does not fit) |
 | Usage Tips | Поради |
 | System Memory | пам'ять системи |
 | Playlist | список (відтворення) |
@@ -100,9 +101,15 @@ Everywhere else in the mod `Settings` stays «Налаштування».
 | Harmony (High / Low / Synth) | гармонія (висока / низька / синт-) |
 | budgie (the mascot) | папужка (feminine gender, «цвірінь» instead of «chirp») |
 
-**Width exceptions:** `Settings` in the Camera, in Sound and in their dialogs is **Параметри**
-(141px slot, «Налаштування» renders at 178px); `Delete` on buttons is **Стерти**; `Copy` in
-Sound is **Копія**; `Confirm` where the slot is 134px is **Готово**.
+**Width exceptions** (found on hardware): `Settings` in the Camera, in Sound and in their
+dialogs is **Опції** (what the official Russian uses; «Параметри» paints 107px into a 95px
+slot, «Налаштування» 178px), including the tip prose that names the menu; `Delete` on buttons
+is **Стерти**; `Copy` in Sound is **Копія**; `Confirm` is **Готово** («Підтвердити» paints
+152px into a 141px slot); `Cancel` on the **narrow** 95px buttons is **Назад** («Скасувати»
+paints 128px; Russian is the short «Отмена» there too); `View Photos/Videos` is **Фото й
+відео**; `System to SD Card` / `SD Card to System` are **Із системи на SD** / **Із SD у
+систему**; `Reset User Data` is **Скинути дані**; `Copy All Photos` is **Копія / всіх /
+фото** (three lines; the slot holds four).
 
 **The backwards magic words** (`D_080`–`D_084`, `D_116` in Sound) are built on English
 phonetics, so they are translated by substituting Ukrainian words spelled backwards:
@@ -217,12 +224,17 @@ Infinitive forms: `Запустити`, `Видалити`, `Скопіюват�
 
 ## Technical constraints
 
-- control tokens `{t:group.type:hex}` / `{/t:group.type}` — do not touch, reorder or add them;
+- control tokens `{t:group.type:hex}` / `{/t:group.type}` — do not touch, reorder or add them.
+  The one exception is `{t:1.0:hex}`, the font scale (`6400` is 100%, `4600` is 70%): a line may
+  be squeezed with it the way the official localisations do, but only with a value that label
+  already carries in at least one language;
 - substitutions `%d`, `%s`, `%1$s` — keep the same count and order;
 - button glyph characters (`` = A, `` = B and so on) — keep them;
 - no more `\n` line breaks than the original has;
 - the rendered line width must not exceed the widest official localisation
-  (`tools/validate.py` enforces this);
+  (`tools/validate.py` enforces this; since 0.9.1 the width is the **painted** one, i.e. the
+  `{t:1.0:hex}` scale is applied, because the widest localisation is usually the one that
+  squeezed itself the most);
 - no characters outside `assets/font_charset.txt`: `і→i`, `І→I`, `ї→ï`, `Ї→Ï`, `є→ε`, `Є→Ε`,
   `ґ→г`. `tools/build.py` performs this substitution automatically — the JSON files hold
   **proper** Ukrainian.

@@ -1,0 +1,146 @@
+{
+  "151001": {
+    "en": "A system update is required.\n\nTo perform a system update, select\nSystem Update from Other Settings\nin the System Settings.",
+    "ua": "Потрібно оновити систему.\n\nВиберіть «Оновлення системи»\nв «Інших налаштуваннях»\nу налаштуваннях системи."
+  },
+  "151002": {
+    "en": "You cannot use Miiverse due to\na restriction in Parental Controls.",
+    "ua": "Miiverse не працює через\nобмеження батьківського\nконтролю."
+  },
+  "151003": {
+    "en": "You cannot post to Miiverse as it has\nbeen restricted by Parental Controls.",
+    "ua": "Публікувати в Miiverse не можна:\nце обмежено батьківським\nконтролем."
+  },
+  "151008": {
+    "en": "Miiverse functions are unavailable\nto this Nintendo Network ID.",
+    "ua": "Функції Miiverse недоступні\nдля цього Nintendo Network ID."
+  },
+  "151009": {
+    "en": "Miiverse functions are unavailable\non this system.",
+    "ua": "Функції Miiverse недоступні\nна цій консолі."
+  },
+  "151901": {
+    "en": "The community code is incorrect.",
+    "ua": "Неправильний код спільноти."
+  },
+  "152001": {
+    "en": "Unable to connect to the server.\nPlease try again later.\n\nIf the problem persists, please contact\nyour local customer support centre. \nFor contact details, check the \nOperations Manual or visit \nsupport.nintendo.com.",
+    "ua": "Не вдалося з'єднатися з сервером.\nСпробуйте пізніше.\n\nЯкщо проблема не зникає,\nзверніться до місцевої служби\nпідтримки. Контакти шукайте\nв посібнику з користування\nабо на support.nintendo.com."
+  },
+  "155002": {
+    "en": "You must have started Miiverse\nat least once before you can\nuse this online service.\n\nPlease start Miiverse from the\nHOME Menu and set up your\nuser information.",
+    "ua": "Щоб користуватися цим\nмережевим сервісом, потрібно\nхоча б раз запустити Miiverse.\n\nЗапустіть Miiverse з меню\nHOME і задайте дані\nкористувача."
+  },
+  "155003": {
+    "en": "The server is currently\nundergoing maintenance.\n\nWe apologise for any inconvenience.\nPlease try again later.\nSee the Nintendo website\nfor maintenance information.",
+    "ua": "На сервері зараз ведуться\nтехнічні роботи.\n\nПерепрошуємо за незручності.\nСпробуйте пізніше.\nІнформація про роботи —\nна сайті Nintendo."
+  },
+  "155004": {
+    "en": "The service for this software has been\ndiscontinued. Thank you for using this\nservice.",
+    "ua": "Обслуговування цієї програми\nприпинено. Дякуємо, що\nкористувалися сервісом."
+  },
+  "155007": {
+    "en": "Miiverse functions are unavailable\nto this Nintendo Network ID.\n\nFor details, please start Miiverse.",
+    "ua": "Функції Miiverse недоступні\nдля цього Nintendo Network ID.\n\nДокладніше — запустіть Miiverse."
+  },
+  "155008": {
+    "en": "You cannot post to Miiverse using\nthis Nintendo Network ID.\n\nFor details, please start Miiverse.",
+    "ua": "Публікувати в Miiverse із цим\nNintendo Network ID не можна.\n\nДокладніше — запустіть Miiverse."
+  },
+  "155009": {
+    "en": "Miiverse functions are unavailable\non this system.\n\nFor details, please start Miiverse.",
+    "ua": "Функції Miiverse недоступні\nна цій консолі.\n\nДокладніше — запустіть Miiverse."
+  },
+  "155010": {
+    "en": "You cannot post to Miiverse\nfrom this system.\n\nFor details, please start Miiverse.",
+    "ua": "Публікувати в Miiverse\nз цієї консолі не можна.\n\nДокладніше — запустіть Miiverse."
+  },
+  "155011": {
+    "en": "In order to use this online service,\nthe other person must carry out\nthe initial settings for Miiverse.",
+    "ua": "Щоб скористатися цим мережевим\nсервісом, інший користувач має\nзадати початкові налаштування\nMiiverse."
+  },
+  "155012": {
+    "en": "Disconnected from the server.\n\nYou must have started Miiverse\nat least once before you can\nuse this online service.\n\nPlease start Miiverse from\nthe HOME Menu.",
+    "ua": "З'єднання із сервером\nрозірвано.\n\nЩоб користуватися цим\nмережевим сервісом, потрібно\nхоча б раз запустити Miiverse.\n\nЗапустіть Miiverse\nз меню HOME."
+  },
+  "155901": {
+    "en": "The text you entered contains\ninappropriate words or phrases.",
+    "ua": "Введений текст містить\nнедоречні слова або вирази."
+  },
+  "155911": {
+    "en": "You cannot create any more\ncommunities.\n\nTo create a new community, you\nmust delete an existing one first.",
+    "ua": "Більше спільнот створити\nне можна.\n\nЩоб створити нову, спершу\nвидаліть одну з наявних."
+  },
+  "155912": {
+    "en": "You cannot create a community as you\ncannot add any more communities for\nthis software to your favourites.\n\nTo create a new community, you must\nremove at least one community for this\nsoftware from your favourites.",
+    "ua": "Створити спільноту не можна:\nбільше спільнот цієї програми\nв улюблені не додати.\n\nЩоб створити нову, приберіть\nз улюблених хоча б одну\nспільноту цієї програми."
+  },
+  "155913": {
+    "en": "You cannot create a community as you\ncannot add any more communities to\nyour favourites.\n\nTo create a new community, you must\nremove at least one community from\nyour favourites.",
+    "ua": "Створити спільноту не можна:\nбільше спільнот в улюблені\nне додати.\n\nЩоб створити нову, приберіть\nз улюблених хоча б одну\nспільноту."
+  },
+  "155914": {
+    "en": "You cannot add any more communities\nfor this software to your favourites.\n\nTo add a new favourite, you must\nremove at least one community for\nthis software from your favourites.",
+    "ua": "Більше спільнот цієї програми\nв улюблені додати не можна.\n\nЩоб додати нову, приберіть\nз улюблених хоча б одну\nспільноту цієї програми."
+  },
+  "155915": {
+    "en": "You cannot add any more communities\nto your favourites.\n\nTo add a new favourite, you must\nremove at least one community from\nyour favourites.",
+    "ua": "Більше спільнот в улюблені\nдодати не можна.\n\nЩоб додати нову, приберіть\nз улюблених хоча б одну\nспільноту."
+  },
+  "155916": {
+    "en": "Communities that you have created\ncannot be removed from your favourites.",
+    "ua": "Спільноти, які ви створили,\nне можна прибрати\nз улюблених."
+  },
+  "155919": {
+    "en": "Community does not exist.",
+    "ua": "Спільноти не існує."
+  },
+  "155921": {
+    "en": "No more comments can be added\nto this post.",
+    "ua": "Більше коментарів до цього\nпоста додати не можна."
+  },
+  "155922": {
+    "en": "This user cannot be followed.",
+    "ua": "На цього користувача\nне можна підписатися."
+  },
+  "155926": {
+    "en": "You cannot give your own post a Yeah!",
+    "ua": "Свій пост не можна\nпозначити Yeah!"
+  },
+  "155927": {
+    "en": "You cannot give this post a Yeah!",
+    "ua": "Цей пост не можна\nпозначити Yeah!"
+  },
+  "155928": {
+    "en": "You cannot add this community to\nyour favourites.",
+    "ua": "Цю спільноту не можна\nдодати в улюблені."
+  },
+  "155929": {
+    "en": "Either this user does not exist, or they\nhave not configured initial settings \nfor Miiverse.",
+    "ua": "Такого користувача не існує\nабо він не задав початкових\nналаштувань Miiverse."
+  },
+  "155930": {
+    "en": "You cannot see this user's information\nbecause their friend list and followers\nare restricted.",
+    "ua": "Ви не можете побачити дані\nцього користувача: його список\nдрузів і підписників закрито."
+  },
+  "155931": {
+    "en": "You cannot comment on this post.",
+    "ua": "Цей пост не можна\nкоментувати."
+  },
+  "155932": {
+    "en": "Post does not exist.",
+    "ua": "Поста не існує."
+  },
+  "155936": {
+    "en": "You have exceeded the character limit.",
+    "ua": "Ви перевищили обмеження\nна кількість знаків."
+  },
+  "155937": {
+    "en": "You cannot make any more posts.",
+    "ua": "Більше постів створити\nне можна."
+  },
+  "0": {
+    "en": "An error has occurred.\nPlease try again later.\nIf the problem persists, please\nmake a note of the error code and\nvisit support.nintendo.com.",
+    "ua": "Сталася помилка.\nСпробуйте пізніше.\nЯкщо проблема не зникає,\nзапишіть код помилки\nй відвідайте\nsupport.nintendo.com."
+  }
+}

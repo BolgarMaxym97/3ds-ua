@@ -1,0 +1,10 @@
+{
+  "330001": {
+    "en": "Wireless communication is\ncurrently disabled. \n\nPlease enable wireless communication.",
+    "ua": "Бездротовий зв'язок вимкнено. \n\nУвімкніть бездротовий зв'язок."
+  },
+  "0": {
+    "en": "An error has occurred.\nPlease try again later.\nIf the problem persists, please\nmake a note of the error code and\nvisit support.nintendo.com.",
+    "ua": "Сталася помилка.\nСпробуйте пізніше.\nЯкщо проблема не зникає,\nзапишіть код помилки\nй відвідайте\nsupport.nintendo.com."
+  }
+}

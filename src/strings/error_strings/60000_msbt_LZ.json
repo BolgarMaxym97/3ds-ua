@@ -1,0 +1,62 @@
+{
+  "60112": {
+    "en": "",
+    "ua": ""
+  },
+  "60302": {
+    "en": "Unable to connect to the server.\nPlease try again later.\n\nIf the problem persists, please contact\nyour local customer support centre. \nFor contact details, check the \nOperations Manual or visit \nsupport.nintendo.com.",
+    "ua": "Не вдалося з'єднатися з сервером.\nСпробуйте пізніше.\n\nЯкщо проблема не зникає,\nзверніться до місцевої служби\nпідтримки. Контакти шукайте\nв посібнику з користування\nабо на support.nintendo.com."
+  },
+  "60311": {
+    "en": "Unable to connect. The server has\nreached its connection limit.\n\nPlease try again later.\n",
+    "ua": "Не вдалося з'єднатися: сервер\nдосяг межі кількості з'єднань.\n\nСпробуйте пізніше."
+  },
+  "60329": {
+    "en": "The server is currently\nundergoing maintenance.\n\nWe apologise for any inconvenience.\nPlease try again later.\nSee the Nintendo website\nfor maintenance information.",
+    "ua": "На сервері зараз ведуться\nтехнічні роботи.\n\nПерепрошуємо за незручності.\nСпробуйте пізніше.\nІнформація про роботи —\nна сайті Nintendo."
+  },
+  "60332": {
+    "en": "A communication error has occurred.\n\nThere may be problems with the\nnetwork or environment. Please try\nagain later.",
+    "ua": "Сталася помилка зв'язку.\n\nМожливо, проблема в мережі\nабо в умовах довкола.\nСпробуйте пізніше."
+  },
+  "60347": {
+    "en": "This online service has ended.\n\nFor details, please refer to the official\nwebsite for this software.",
+    "ua": "Цей мережевий сервіс\nзавершено.\n\nДокладніше — на офіційному\nсайті цієї програми."
+  },
+  "60520": {
+    "en": "Could not connect to the internet.\n\n■ There may be problems with the \nnetwork or the environment.\nTo ensure an optimal connection \nenvironment, move closer to the \naccess point and make sure that there\nare no obstructions between the\nsystem and the access point.\nIf this does not work, please try \nagain later.\n\n■ Check that your computer can\nconnect to the internet using the same\nsettings. If not, refer to the instruction\nbooklet that came with the access\npoint.\n\n■ The DNS setting may have been \nentered incorrectly. Check the setting \nin System Settings ⇒ Internet \nSettings.\n\n■ The proxy server may have been \nentered incorrectly. Check the setting \nin System Settings ⇒ Internet \nSettings.",
+    "ua": "Не вдалося з'єднатися\nз Інтернетом.\n\n■ Можливо, проблема в мережі\nабо в умовах довкола.\nЩоб з'єднання було найкращим,\nпідійдіть ближче до точки\nдоступу й переконайтеся, що\nміж консоллю й точкою доступу\nнемає перешкод.\nЯкщо не помогло, спробуйте\nпізніше.\n\n■ Перевірте, чи ваш комп'ютер\nз'єднується з Інтернетом\nіз тими самими налаштуваннями.\nЯкщо ні — дивіться інструкцію,\nщо йшла з точкою доступу.\n\n■ Можливо, DNS введено\nнеправильно. Перевірте\nв Налаштуваннях системи ⇒\nІнтернет-налаштування.\n\n■ Можливо, сервер проксі\nвведено неправильно. Перевірте\nв Налаштуваннях системи ⇒\nІнтернет-налаштування."
+  },
+  "60617": {
+    "en": "An error has occurred.\nHold down the POWER Button to\nturn off the power, then turn it on\nand try again.\n\nIf the problem persists, please contact\nyour local customer support centre. \nFor contact details, check the \nOperations Manual or visit \nsupport.nintendo.com.",
+    "ua": "Сталася помилка.\nНатисніть і утримуйте кнопку\nPOWER, щоб вимкнути консоль,\nтоді увімкніть її\nй спробуйте ще раз.\n\nЯкщо проблема не зникає,\nзверніться до місцевої служби\nпідтримки. Контакти шукайте\nв посібнику з користування\nабо на support.nintendo.com."
+  },
+  "60620": {
+    "en": "A communication error has occurred.\n\nThere may be problems with the\nnetwork or environment. Please try\nagain later.",
+    "ua": "Сталася помилка зв'язку.\n\nМожливо, проблема в мережі\nабо в умовах довкола.\nСпробуйте пізніше."
+  },
+  "60623": {
+    "en": "A communication error has occurred.\n\nIn order to use online services, a\nnewer version of this software is\nrequired. Please download the newest\nversion of this software from Nintendo\neShop or other supported software.",
+    "ua": "Сталася помилка зв'язку.\n\nЩоб користуватися мережевими\nсервісами, потрібна новіша\nверсія цієї програми.\nЗавантажте найновішу версію\nз Nintendo eShop або іншої\nпідтримуваної програми."
+  },
+  "60720": {
+    "en": "",
+    "ua": ""
+  },
+  "60721": {
+    "en": "Online Interaction is restricted by\nParental Controls.",
+    "ua": "Взаємодію онлайн обмежено\nбатьківським контролем."
+  },
+  "60811": {
+    "en": "The server is currently\nundergoing maintenance.\n\nWe apologise for any inconvenience.\nPlease try again later.\nSee the Nintendo website\nfor maintenance information.",
+    "ua": "На сервері зараз ведуться\nтехнічні роботи.\n\nПерепрошуємо за незручності.\nСпробуйте пізніше.\nІнформація про роботи —\nна сайті Nintendo."
+  },
+  "60817": {
+    "en": "This online service has ended.\n\nThank you for your interest.",
+    "ua": "Цей мережевий сервіс\nзавершено.\n\nДякуємо за увагу."
+  },
+  "0": {
+    "en": "An error has occurred.\nPlease try again later.\nIf the problem persists, please\nmake a note of the error code and\nvisit support.nintendo.com.",
+    "ua": "Сталася помилка.\nСпробуйте пізніше.\nЯкщо проблема не зникає,\nзапишіть код помилки\nй відвідайте\nsupport.nintendo.com."
+  }
+}

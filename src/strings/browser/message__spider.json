@@ -121,7 +121,7 @@
   },
   "Dialog_Permit": {
     "en": " Allow",
-    "ua": " Дозволити"
+    "ua": "{t:1.0:5a00} Дозволити{t:1.0:6400}"
   },
   "Dialog_Reject": {
     "en": " Reject",
@@ -201,7 +201,7 @@
   },
   "Browse_ImageSelect": {
     "en": "Touch and hold the stylus on an\nimage on the lower screen, then\nlift the stylus to display the\nimage on the upper screen.\nThis also works for 3D images.",
-    "ua": "Притисніть стилус до зображення\nна нижньому екрані, тоді підніміть\nйого — зображення з'явиться\nна верхньому екрані.\nЦе працює і з 3D-зображеннями."
+    "ua": "{t:1.0:5e00}Притисніть стилус до зображення\nна нижньому екрані, тоді підніміть\nйого — зображення з'явиться\nна верхньому екрані.\nЦе працює і з 3D-зображеннями.{t:1.0:6400}"
   },
   "Browse_NoTitle": {
     "en": "",
@@ -733,15 +733,15 @@
   },
   "Option_Network_UserSetting1": {
     "en": "{t:1.0:5f00}Wireless LAN (Connection 1){t:1.0:6400}",
-    "ua": "{t:1.0:5f00}Бездротова мережа (з'єдн. 1){t:1.0:6400}"
+    "ua": "{t:1.0:5100}Бездротова мережа (з'єдн. 1){t:1.0:6400}"
   },
   "Option_Network_UserSetting2": {
     "en": "{t:1.0:5f00}Wireless LAN (Connection 2){t:1.0:6400}",
-    "ua": "{t:1.0:5f00}Бездротова мережа (з'єдн. 2){t:1.0:6400}"
+    "ua": "{t:1.0:5100}Бездротова мережа (з'єдн. 2){t:1.0:6400}"
   },
   "Option_Network_UserSetting3": {
     "en": "{t:1.0:5f00}Wireless LAN (Connection 3){t:1.0:6400}",
-    "ua": "{t:1.0:5f00}Бездротова мережа (з'єдн. 3){t:1.0:6400}"
+    "ua": "{t:1.0:5100}Бездротова мережа (з'єдн. 3){t:1.0:6400}"
   },
   "Option_Network_NintendoWiFiUSBConnector": {
     "en": "{t:1.0:5800}Nintendo Wi-Fi USB Connector{t:1.0:6400}",

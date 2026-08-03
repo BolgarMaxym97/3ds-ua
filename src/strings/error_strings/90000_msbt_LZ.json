@@ -1,0 +1,166 @@
+{
+  "91000": {
+    "en": "In order to use this service, a system\nupdate is required.\n\nTo perform a system update, select\nSystem Update from Other Settings\nin the System Settings.",
+    "ua": "Щоб скористатися цим сервісом,\nпотрібно оновити систему.\n\nВиберіть «Оновлення системи»\nв «Інших налаштуваннях»\nу налаштуваннях системи."
+  },
+  "91001": {
+    "en": "The server is currently\nundergoing maintenance.\n\nWe apologise for any inconvenience.\nPlease try again later.\nSee the Nintendo website\nfor maintenance information.",
+    "ua": "На сервері зараз ведуться\nтехнічні роботи.\n\nПерепрошуємо за незручності.\nСпробуйте пізніше.\nІнформація про роботи —\nна сайті Nintendo."
+  },
+  "91002": {
+    "en": "This service cannot be used in your\nregion at this time. We apologise\nfor the inconvenience.",
+    "ua": "Зараз цим сервісом не можна\nкористуватися у вашому\nрегіоні. Перепрошуємо\nза незручності."
+  },
+  "91003": {
+    "en": "The system's country setting and\nNintendo eShop country setting do\nnot match.\n\nLaunch Nintendo eShop, confirm\nthat the country setting has been\nupdated and then try again.",
+    "ua": "Налаштування країни цієї\nконсолі й Nintendo eShop\nне збігаються.\n\nЗапустіть Nintendo eShop,\nпідтвердьте зміну країни\nй спробуйте ще раз."
+  },
+  "91004": {
+    "en": "The content associated with this\ndownload code has already been\nredeemed or purchased.",
+    "ua": "Вміст, пов'язаний із цим\nкодом завантаження, уже\nотримано або придбано."
+  },
+  "91006": {
+    "en": "The selected add-on content items\ncannot be purchased together.",
+    "ua": "Вибрані одиниці додаткового\nвмісту не можна придбати разом."
+  },
+  "91100": {
+    "en": "You cannot currently add funds to your\nbalance in your region. We apologise\nfor the inconvenience.",
+    "ua": "Зараз у вашому регіоні\nне можна додати кошти\nна баланс. Перепрошуємо\nза незручності."
+  },
+  "91200": {
+    "en": "This activation code has already\nbeen used.",
+    "ua": "Цей код активації\nвже використано."
+  },
+  "91201": {
+    "en": "The activation code or download\ncode could not be recognised.\nThe code might have expired.\n\nIf the problem persists, please contact\nyour local customer support centre.\nFor contact details, check the \nOperations Manual or visit \nsupport.nintendo.com.",
+    "ua": "Не вдалося розпізнати код\nактивації або код завантаження.\nМожливо, термін його дії минув.\n\nЯкщо проблема не зникає,\nзверніться до місцевої служби\nпідтримки. Контакти шукайте\nв посібнику з користування\nабо на support.nintendo.com."
+  },
+  "91202": {
+    "en": "The activation code could not\nbe recognised.\nPlease check the code and\ntry entering it again.\n\nIf the problem persists, please contact\nyour local customer support centre. \nFor contact details, check the \nOperations Manual or visit \nsupport.nintendo.com.",
+    "ua": "Не вдалося розпізнати код\nактивації.\nПеревірте код і спробуйте\nввести його ще раз.\n\nЯкщо проблема не зникає,\nзверніться до місцевої служби\nпідтримки. Контакти шукайте\nв посібнику з користування\nабо на support.nintendo.com."
+  },
+  "91203": {
+    "en": "The code you have entered\nis a Nintendo Points number,\nwhich cannot be used.",
+    "ua": "Ви ввели номер\nNintendo Points, який\nвикористати не можна."
+  },
+  "91205": {
+    "en": "This activation code cannot be used\nwith your current region setting.\n\nPlease check the code and try\nentering it again.",
+    "ua": "Цей код активації не працює\nз вашим поточним регіоном.\n\nПеревірте код і спробуйте\nввести його ще раз."
+  },
+  "91206": {
+    "en": "The code you have entered is a\nNintendo eShop Card activation\ncode, which cannot be used.",
+    "ua": "Ви ввели код активації\nкартки Nintendo eShop Card,\nякий використати не можна."
+  },
+  "91299": {
+    "en": "The code you have entered is invalid.\n\nPlease enter your details again.",
+    "ua": "Ви ввели недійсний код.\n\nВведіть дані ще раз."
+  },
+  "91302": {
+    "en": "Failed to enter the correct PIN.",
+    "ua": "Не введено правильний PIN-код."
+  },
+  "91303": {
+    "en": "Failed to authenticate stored credit card\ninformation. The information has been\ndeleted.",
+    "ua": "Не вдалося перевірити\nзбережені дані кредитної\nкарти. Ці дані видалено."
+  },
+  "91304": {
+    "en": "This credit card cannot be used.\n\nFor more information, please contact \nthe issuer of your credit card.",
+    "ua": "Цю кредитну карту\nвикористати не можна.\n\nДокладнішу інформацію\nзапитайте в емітента\nвашої кредитної карти."
+  },
+  "91305": {
+    "en": "Credit card payments cannot be\naccepted at this time.\n\nPlease try again later.",
+    "ua": "Зараз оплата кредитною\nкартою не приймається.\n\nСпробуйте пізніше."
+  },
+  "91313": {
+    "en": "The address information was not entered\ncorrectly.\n\nPlease check the entered information\nand try again.",
+    "ua": "Адресні дані введено\nнеправильно.\n\nПеревірте введені дані\nй спробуйте ще раз."
+  },
+  "91350": {
+    "en": "The value you entered would cause your\nbalance to exceed the maximum amount\nallowed.",
+    "ua": "Після введеної суми баланс\nперевищить максимально\nдопустиме значення."
+  },
+  "91351": {
+    "en": "The maximum amount of funds that\ncan be added to this system has\nbeen reached.",
+    "ua": "Досягнуто максимальної суми\nкоштів, яку можна додати\nна цю консоль."
+  },
+  "92410": {
+    "en": "This network service has been\ndiscontinued. Thank you for\nusing this service.",
+    "ua": "Цей мережевий сервіс\nприпинено. Дякуємо, що\nкористувалися ним."
+  },
+  "92996": {
+    "en": "The item corresponding to the code\nyou entered is not currently being\ndistributed.",
+    "ua": "Продукт, що відповідає\nвведеному коду, зараз\nне розповсюджується."
+  },
+  "94072": {
+    "en": "An error has occurred.\n\n■ The SD Card may not be inserted\nor was inserted during use of the\nsystem. Please turn off the power,\nthen insert the SD Card and try again.\n\n■ Please check that the SD Card is\nnot write-protected.",
+    "ua": "Сталася помилка.\n\n■ Можливо, карту SD не\nвставлено або вставлено\nпід час роботи консолі.\nВимкніть консоль, вставте\nкарту SD і спробуйте ще раз.\n\n■ Перевірте, чи карту SD\nне захищено від запису."
+  },
+  "94074": {
+    "en": "Could not access SD Card.\n\nTurn off the system, remove\nand reinsert the SD Card and\nthen try again.",
+    "ua": "Немає доступу до карти SD.\n\nВимкніть консоль, вийміть\nі вставте карту SD знову,\nтоді спробуйте ще раз."
+  },
+  "94075": {
+    "en": "The SD Card software management\ninformation is corrupted.\n\nIn System Settings, select\nData Management ⇒ Nintendo 3DS ⇒\nSoftware to reset software management\ninformation.",
+    "ua": "Дані керування програмами\nна карті SD пошкоджено.\n\nУ Налаштуваннях системи\nвиберіть Керування даними ⇒\nNintendo 3DS ⇒ Програми,\nщоб скинути ці дані."
+  },
+  "94077": {
+    "en": "There are not enough open blocks on\nthe SD Card.\n\nPlease delete any unnecessary data on\nthe SD Card using Data Management\nin the System Settings.",
+    "ua": "На карті SD не досить\nвільних блоків.\n\nВидаліть непотрібні дані\nз карти SD у Керуванні даними\nв налаштуваннях системи."
+  },
+  "94079": {
+    "en": "Could not access SD Card.",
+    "ua": "Немає доступу до карти SD."
+  },
+  "94100": {
+    "en": "No more add-on content can be\ndownloaded as the maximum amount\nthat can be saved to the SD Card has\nbeen reached.",
+    "ua": "Більше додаткового вмісту\nзавантажити не можна:\nдосягнуто межі того, що\nможна зберегти на карті SD."
+  },
+  "98001": {
+    "en": "Authentication failed.\n\nPlease view your account activity in\nNintendo eShop and check that the\nservice has been successfully\nregistered to your account.",
+    "ua": "Не вдалося пройти авторизацію.\n\nПодивіться історію покупок\nу Nintendo eShop і перевірте,\nчи сервіс успішно зареєстровано\nна ваш обліковий запис."
+  },
+  "98002": {
+    "en": "Service expired.\n\nPlease renew the service if you wish\nto continue using it.",
+    "ua": "Термін сервісу минув.\n\nПоновіть сервіс, якщо хочете\nкористуватися ним далі."
+  },
+  "98101": {
+    "en": "This save data cannot be used because\nit uses add-on content that could not\nbe found.\n\nTo use this save data, purchase or\ndownload the add-on content.",
+    "ua": "Ці збереження не працюють:\nвони використовують\nдодатковий вміст, якого\nне знайдено.\n\nЩоб скористатися ними,\nпридбайте або завантажте\nцей додатковий вміст."
+  },
+  "98102": {
+    "en": "There is not enough free space to\nprocess the data.\n\nPlease delete any unnecessary data on\nthe SD Card using Data Management\nin the System Settings.",
+    "ua": "Не досить вільного місця,\nщоб обробити дані.\n\nВидаліть непотрібні дані\nз карти SD у Керуванні даними\nв налаштуваннях системи."
+  },
+  "98111": {
+    "en": "The add-on content is corrupted.\n\nIn the System Settings, select Data\nManagement ⇒ Nintendo 3DS ⇒\nAdd-on Content, delete the add-on\ncontent and then redownload it.\n\nIf the problem persists, please contact\nyour local customer support centre. \nFor contact details, check the \nOperations Manual or visit \nsupport.nintendo.com.",
+    "ua": "Додатковий вміст пошкоджено.\n\nУ Налаштуваннях системи\nвиберіть Керування даними ⇒\nNintendo 3DS ⇒ Додатковий\nвміст, видаліть його\nй завантажте ще раз.\n\nЯкщо проблема не зникає,\nзверніться до місцевої служби\nпідтримки. Контакти шукайте\nв посібнику з користування\nабо на support.nintendo.com."
+  },
+  "98201": {
+    "en": "Access to the Nintendo 3DS Shopping\nServices is restricted by Parental\nControls.\n\nPlease enter your PIN to temporarily\nremove this restriction.",
+    "ua": "Доступ до сервісів магазину\nNintendo 3DS обмежено\nбатьківським контролем.\n\nВведіть PIN-код, щоб\nтимчасово зняти це обмеження."
+  },
+  "98301": {
+    "en": "To use this feature, you must accept\nthe terms of the Nintendo 3DS\nService User Agreement and\nPrivacy Policy.\n\nIn System Settings, select Internet\nSettings ⇒ Other Information ⇒\nUser Agreement and agree to the terms.",
+    "ua": "Щоб скористатися цією функцією,\nпотрібно прийняти умови угоди\nпро користування сервісами\nNintendo 3DS і політику\nконфіденційності.\n\nУ налаштуваннях системи\nвиберіть Інтернет-налаштування ⇒\nІнша інформація ⇒ Угода\nз користувачем і прийміть умови."
+  },
+  "98401": {
+    "en": "The update data is corrupted.\n\nIn the System Settings, select Data\nManagement ⇒ Nintendo 3DS ⇒\nAdd-on Content, then delete the\nupdate data.\n\nIf the problem persists, please contact\nyour local customer support centre. \nFor contact details, check the \nOperations Manual or visit \nsupport.nintendo.com.",
+    "ua": "Дані оновлення пошкоджено.\n\nУ Налаштуваннях системи\nвиберіть Керування даними ⇒\nNintendo 3DS ⇒ Додатковий\nвміст, тоді видаліть дані\nоновлення.\n\nЯкщо проблема не зникає,\nзверніться до місцевої служби\nпідтримки. Контакти шукайте\nв посібнику з користування\nабо на support.nintendo.com."
+  },
+  "99001": {
+    "en": "Battery power is running low.\n\nPlease plug in the AC adapter and\nrecharge the system for a short while.",
+    "ua": "Батарея майже розрядилася.\n\nПід'єднайте блок живлення\nй трохи підзарядіть консоль."
+  },
+  "99002": {
+    "en": "The number you have entered is invalid.\n\nPlease enter your details again.",
+    "ua": "Ви ввели недійсний номер.\n\nВведіть дані ще раз."
+  },
+  "99003": {
+    "en": "The password you have entered\nis invalid.",
+    "ua": "Ви ввели недійсний пароль."
+  },
+  "0": {
+    "en": "An error has occurred.\nPlease try again later.\nIf the problem persists, please\nmake a note of the error code and\nvisit support.nintendo.com.",
+    "ua": "Сталася помилка.\nСпробуйте пізніше.\nЯкщо проблема не зникає,\nзапишіть код помилки\nй відвідайте\nsupport.nintendo.com."
+  }
+}

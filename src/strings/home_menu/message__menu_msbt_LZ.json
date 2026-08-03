@@ -249,11 +249,11 @@
   },
   "lau_dlg_bgdl0_sd_sac": {
     "en": "Downloading. Do not remove\nthe microSD card. Close\nsystem to resume download.",
-    "ua": "Підготовка. Не виймайте\nкарту microSD. Закрийте\nсистему, щоб почати завантаження."
+    "ua": "{t:1.0:5500}Підготовка. Не виймайте\nкарту microSD. Закрийте\nсистему, щоб почати завантаження.{/t:1.0}"
   },
   "lau_dlg_bgdl0_sd_jan": {
     "en": "Downloading. Do not remove\nthe microSD card. Close\nsystem to resume download.",
-    "ua": "Підготовка. Не виймайте\nкарту microSD. Закрийте\nсистему, щоб почати завантаження."
+    "ua": "{t:1.0:5500}Підготовка. Не виймайте\nкарту microSD. Закрийте\nсистему, щоб почати завантаження.{/t:1.0}"
   },
   "lau_dlg_bgdl0_sd_flw": {
     "en": "Downloading. Do not remove\nthe SD Card. Enter Sleep\nMode to resume download.",
@@ -301,15 +301,15 @@
   },
   "lau_dlg_bgdl6": {
     "en": "{t:1.0:6200}Downloading update data. Do\nnot remove the SD Card. Close\nsystem to resume download.{/t:1.0}",
-    "ua": "{t:1.1:5700}Підготовка. Не виймайте карту\nSD. Закрийте систему, щоб почати\nзавантаження даних оновлення.{/t:1.1}"
+    "ua": "{t:1.1:5700}{t:1.0:6200}Підготовка. Не виймайте карту\nSD. Закрийте систему, щоб почати\nзавантаження даних оновлення.{/t:1.0}{/t:1.1}"
   },
   "lau_dlg_bgdl6_sac": {
     "en": "Downloading update data. Do\nnot remove the microSD card.\nClose system to resume\ndownload.",
-    "ua": "{t:1.1:5000}Підготовка. Не виймайте карту\nmicroSD. Закрийте систему, щоб\nпочати завантаження даних оновлення.{/t:1.1}"
+    "ua": "{t:1.1:5000}{t:1.0:5500}Підготовка. Не виймайте карту\nmicroSD. Закрийте систему, щоб\nпочати завантаження даних оновлення.{/t:1.0}{/t:1.1}"
   },
   "lau_dlg_bgdl6_jan": {
     "en": "Downloading update data. Do\nnot remove the microSD card.\nClose system to resume\ndownload.",
-    "ua": "{t:1.1:5000}Підготовка. Не виймайте карту\nmicroSD. Закрийте систему, щоб\nпочати завантаження даних оновлення.{/t:1.1}"
+    "ua": "{t:1.1:5000}{t:1.0:5500}Підготовка. Не виймайте карту\nmicroSD. Закрийте систему, щоб\nпочати завантаження даних оновлення.{/t:1.0}{/t:1.1}"
   },
   "lau_dlg_bgdl6_flw": {
     "en": "Downloading update data.\nDo not remove the SD Card.\nEnter Sleep Mode to\nresume download.",
@@ -1577,7 +1577,7 @@
   },
   "lau_bgdl_err_u": {
     "en": "{t:1.0:5500}An error occurred. Unable to complete download.{/t:1.0}",
-    "ua": "{t:1.0:5900}Сталася помилка. Не вдається завершити завантаження.{/t:1.0}"
+    "ua": "{t:1.0:5200}Сталася помилка. Не вдається завершити завантаження.{/t:1.0}"
   },
   "lau_bgdl_err": {
     "en": "Download progress - An error occurred. Check View Details for more information.",

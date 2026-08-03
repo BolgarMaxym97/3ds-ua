@@ -76,7 +76,8 @@ class PlainStore(Store):
     """One MSBT per file on disk, grouped by language folder.
 
     The folders are usually named message*/ - Game Notes calls its one `lang/`, so a
-    title may name them explicitly instead.
+    title may name them explicitly instead. `""` means the language folders sit at the
+    root of the romfs, which is how the error-strings archive is laid out.
     """
 
     def __init__(self, romfs: Path, message_dirs: list[str] | None = None) -> None:
@@ -88,7 +89,10 @@ class PlainStore(Store):
     @staticmethod
     def _key(message_dir: str, file: Path) -> str:
         """JSON file name for a message file - a nested folder cannot keep its slashes."""
-        return f"{message_dir.replace('/', '_')}__{file.name.split('.')[0]}"
+        stem = file.name.split(".")[0]
+        if message_dir in ("", "."):
+            return stem
+        return f"{message_dir.replace('/', '_')}__{stem}"
 
     def languages(self) -> list[str]:
         langs: set[str] = set()
@@ -123,7 +127,8 @@ class PlainStore(Store):
                 if key not in updates:
                     continue
                 raw = file.read_bytes()
-                out[f"{message_dir}/{lang}/{file.name}"] = _repack(raw, updates[key])
+                prefix = f"{message_dir}/" if message_dir not in ("", ".") else ""
+                out[f"{prefix}{lang}/{file.name}"] = _repack(raw, updates[key])
         return out
 
 

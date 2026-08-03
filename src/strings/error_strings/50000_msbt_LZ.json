@@ -1,0 +1,150 @@
+{
+  "51230": {
+    "en": "",
+    "ua": ""
+  },
+  "52037": {
+    "en": "The server is currently\nundergoing maintenance.\n\nWe apologise for any inconvenience.\nPlease try again later.\nSee the Nintendo website\nfor maintenance information.",
+    "ua": "На сервері зараз ведуться\nтехнічні роботи.\n\nПерепрошуємо за незручності.\nСпробуйте пізніше.\nІнформація про роботи —\nна сайті Nintendo."
+  },
+  "52038": {
+    "en": "In order to use this service, a system\nupdate is required.\n\nTo perform a system update, select\nSystem Update from Other Settings\nin the System Settings.",
+    "ua": "Щоб скористатися цим сервісом,\nпотрібно оновити систему.\n\nВиберіть «Оновлення системи»\nв «Інших налаштуваннях»\nу налаштуваннях системи."
+  },
+  "52043": {
+    "en": "In order to use this service, a system\nupdate is required.\n\nTo perform a system update, select\nSystem Update from Other Settings\nin the System Settings.",
+    "ua": "Щоб скористатися цим сервісом,\nпотрібно оновити систему.\n\nВиберіть «Оновлення системи»\nв «Інших налаштуваннях»\nу налаштуваннях системи."
+  },
+  "52056": {
+    "en": "There are not enough open blocks on\nthe SD card.\n\nPlease delete any unnecessary data on\nthe SD card using Data Management\nin the System Settings.",
+    "ua": "На карті SD не досить\nвільних блоків.\n\nВидаліть непотрібні дані\nз карти SD у Керуванні даними\nв налаштуваннях системи."
+  },
+  "52061": {
+    "en": "Could not access SD card.\n\nTurn off the system, remove\nand reinsert the SD card and\nthen try again.",
+    "ua": "Немає доступу до карти SD.\n\nВимкніть консоль, вийміть\nі вставте карту SD знову,\nтоді спробуйте ще раз."
+  },
+  "52062": {
+    "en": "There are not enough open blocks\nin the system memory.\n\nPlease delete any unnecessary\ndata in the system memory using Data\nManagement in the System Settings.",
+    "ua": "У пам'яті системи не досить\nвільних блоків.\n\nВидаліть непотрібні дані\nз пам'яті системи у Керуванні\nданими в налаштуваннях системи."
+  },
+  "52068": {
+    "en": "The server is currently\nundergoing maintenance.\n\nWe apologise for any inconvenience.\nPlease try again later.\nSee the Nintendo website\nfor maintenance information.",
+    "ua": "На сервері зараз ведуться\nтехнічні роботи.\n\nПерепрошуємо за незручності.\nСпробуйте пізніше.\nІнформація про роботи —\nна сайті Nintendo."
+  },
+  "52069": {
+    "en": "The software is corrupted.\n\nPlease delete this software in System\nSettings ⇒ Data Management ⇒\nNintendo 3DS ⇒ Software,\nthen redownload it.\n\nIf the problem persists, please\nmake a note of the error code and\nvisit support.nintendo.com.",
+    "ua": "Програма пошкоджена.\n\nВидаліть її в Налаштуваннях\nсистеми ⇒ Керування даними ⇒\nNintendo 3DS ⇒ Програми,\nтоді завантажте ще раз.\n\nЯкщо проблема не зникає,\nзапишіть код помилки\nй відвідайте support.nintendo.com."
+  },
+  "54017": {
+    "en": "The activation code could not\nbe recognised.\nPlease check the code and\ntry entering it again.\n\nIf the problem persists, please contact\nyour local customer support centre. \nFor contact details, check the \nOperations Manual or visit \nsupport.nintendo.com.",
+    "ua": "Не вдалося розпізнати код\nактивації.\nПеревірте код і спробуйте\nввести його ще раз.\n\nЯкщо проблема не зникає,\nзверніться до місцевої служби\nпідтримки. Контакти шукайте\nв посібнику з користування\nабо на support.nintendo.com."
+  },
+  "55403": {
+    "en": "This system is prohibited from taking\npart in a transfer at this time.\n\nPlease try again later.",
+    "ua": "Цій консолі зараз заборонено\nбрати участь у перенесенні.\n\nСпробуйте пізніше."
+  },
+  "55404": {
+    "en": "No further transfers are allowed.",
+    "ua": "Більше перенесень не дозволено."
+  },
+  "55542": {
+    "en": "The maximum amount of funds that\ncan be added to this system has\nbeen reached.",
+    "ua": "Досягнуто максимальної суми\nкоштів, яку можна додати\nна цю консоль."
+  },
+  "55546": {
+    "en": "You cannot purchase any further items.\n\nFor more information, please contact \nyour local customer support centre. \nFor contact details, check the \nOperations Manual or visit \nsupport.nintendo.com.",
+    "ua": "Більше продуктів придбати\nне можна.\n\nЯкщо проблема не зникає,\nзверніться до місцевої служби\nпідтримки. Контакти шукайте\nв посібнику з користування\nабо на support.nintendo.com."
+  },
+  "55568": {
+    "en": "This activation code cannot be used\nwith your current region setting.\n\nPlease check the code and try\nentering it again.",
+    "ua": "Цей код активації не працює\nз вашим поточним регіоном.\n\nПеревірте код і спробуйте\nввести його ще раз."
+  },
+  "55593": {
+    "en": "Could not transfer this software.\nPlease try again later.\n\nIf the problem persists, please contact\nyour local customer support centre. \nFor contact details, check the \nOperations Manual or visit \nsupport.nintendo.com.",
+    "ua": "Не вдалося перенести цю\nпрограму. Спробуйте пізніше.\n\nЯкщо проблема не зникає,\nзверніться до місцевої служби\nпідтримки. Контакти шукайте\nв посібнику з користування\nабо на support.nintendo.com."
+  },
+  "55644": {
+    "en": "You cannot use a credit card with\nthis system.\n\nFor more information, please contact \nyour local customer support centre. \nFor contact details, check the \nOperations Manual or visit \nsupport.nintendo.com.",
+    "ua": "На цій консолі кредитною\nкартою користуватися не можна.\n\nЯкщо проблема не зникає,\nзверніться до місцевої служби\nпідтримки. Контакти шукайте\nв посібнику з користування\nабо на support.nintendo.com."
+  },
+  "55670": {
+    "en": "You cannot view your Account Activity\nat this time.\n\nPlease try again later.",
+    "ua": "Зараз історію покупок\nпоказати не можна.\n\nСпробуйте пізніше."
+  },
+  "55804": {
+    "en": "The code or number you entered\nhas expired.",
+    "ua": "Термін дії введеного коду\nабо номера минув."
+  },
+  "55811": {
+    "en": "This activation code has expired.",
+    "ua": "Термін дії цього коду\nактивації минув."
+  },
+  "55815": {
+    "en": "This activation code\nhas already been used.",
+    "ua": "Цей код активації\nвже використано."
+  },
+  "55941": {
+    "en": "The email address and/or password \nis incorrect.\nPlease re-enter your details.\n\nIf you have forgotten your password,\ngo to the Club Nintendo website and \nclick on \"I forgot my password\".",
+    "ua": "Адреса електронної пошти\nабо пароль неправильні.\nВведіть дані ще раз.\n\nЯкщо ви забули пароль,\nзайдіть на сайт Club Nintendo\nі натисніть «Я забув пароль»."
+  },
+  "55942": {
+    "en": "Your Club Nintendo account\ncould not be linked because a\ncommunication error occurred.\nPlease try again later.\n\nIf the problem persists, please contact\nyour local customer support centre.\nFor contact details, check the\nOperations Manual or visit\nsupport.nintendo.com.",
+    "ua": "Не вдалося зв'язати обліковий\nзапис Club Nintendo через\nпомилку зв'язку.\nСпробуйте пізніше.\n\nЯкщо проблема не зникає,\nзверніться до місцевої служби\nпідтримки. Контакти шукайте\nв посібнику з користування\nабо на support.nintendo.com."
+  },
+  "55948": {
+    "en": "Performing this transfer will take\nyour Nintendo eShop funds over\nthe maximum permitted value.\nPlease reduce your funds on\none of the systems and try again.",
+    "ua": "Після цього перенесення кошти\nв Nintendo eShop перевищать\nмаксимально допустиму суму.\nЗменште кошти на одній\nз консолей і спробуйте ще раз."
+  },
+  "55989": {
+    "en": "You cannot link your Club Nintendo\naccount to more than eight systems\nin the Nintendo 3DS family.",
+    "ua": "Обліковий запис Club Nintendo\nне можна зв'язати більше ніж\nз вісьмома консолями\nродини Nintendo 3DS."
+  },
+  "56402": {
+    "en": "The email address and/or password \nis incorrect.\nPlease re-enter your details.\n\nIf you have forgotten your password,\ngo to the Club Nintendo website and \nclick on \"I forgot my password\".",
+    "ua": "Адреса електронної пошти\nабо пароль неправильні.\nВведіть дані ще раз.\n\nЯкщо ви забули пароль,\nзайдіть на сайт Club Nintendo\nі натисніть «Я забув пароль»."
+  },
+  "56403": {
+    "en": "",
+    "ua": ""
+  },
+  "56499": {
+    "en": "Could not link your Club Nintendo\naccount as the Club Nintendo servers\nare currently undergoing maintenance.\n\nPlease try again later.",
+    "ua": "Не вдалося зв'язати обліковий\nзапис Club Nintendo: на його\nсерверах ведуться технічні\nроботи.\n\nСпробуйте пізніше."
+  },
+  "56501": {
+    "en": "This credit card cannot be used.\n\nFor more information, please contact \nyour local customer support centre. \nFor contact details, check the \nOperations Manual or visit \nsupport.nintendo.com.",
+    "ua": "Цю кредитну карту\nвикористати не можна.\n\nЯкщо проблема не зникає,\nзверніться до місцевої служби\nпідтримки. Контакти шукайте\nв посібнику з користування\nабо на support.nintendo.com."
+  },
+  "56503": {
+    "en": "The credit card number you have\nentered is invalid.\n\nPlease re-enter your details.",
+    "ua": "Введений номер кредитної\nкарти недійсний.\n\nВведіть дані ще раз."
+  },
+  "56504": {
+    "en": "Please enter the three-digit\nsecurity code.",
+    "ua": "Введіть тризначний код\nбезпеки."
+  },
+  "56507": {
+    "en": "The credit card details were not\nentered correctly.\n\nPlease re-enter your details.",
+    "ua": "Дані кредитної карти введено\nнеправильно.\n\nВведіть дані ще раз."
+  },
+  "56509": {
+    "en": "",
+    "ua": ""
+  },
+  "56511": {
+    "en": "This credit card cannot be used.\n\nFor more information, please contact \nthe issuer of your credit card.",
+    "ua": "Цю кредитну карту\nвикористати не можна.\n\nДокладнішу інформацію\nзапитайте в емітента\nвашої кредитної карти."
+  },
+  "56514": {
+    "en": "The credit card expiry date is incorrect.",
+    "ua": "Термін дії кредитної карти\nвказано неправильно."
+  },
+  "56519": {
+    "en": "The address you have entered\ndoes not match your credit\ncard's billing address.\n\nPlease check the address\nand try again.",
+    "ua": "Введена адреса не збігається\nз платіжною адресою вашої\nкредитної карти.\n\nПеревірте адресу\nй спробуйте ще раз."
+  },
+  "0": {
+    "en": "An error has occurred.\nPlease try again later.\nIf the problem persists, please\nmake a note of the error code and\nvisit support.nintendo.com.",
+    "ua": "Сталася помилка.\nСпробуйте пізніше.\nЯкщо проблема не зникає,\nзапишіть код помилки\nй відвідайте\nsupport.nintendo.com."
+  }
+}

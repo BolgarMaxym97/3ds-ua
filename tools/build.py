@@ -283,6 +283,30 @@ TITLES = {
         "ref_lang": "EU_English",
         "hook_patch": True,
     },
+    # The system error-message database: a shared data archive, the same class of title as
+    # the system font and the `area` region manifest, dumped from CTRNAND. Its 13 files are
+    # named after the error module (`90000_msbt_LZ.bin` holds 009-xxxx) and every label is
+    # the error number itself, so 009-1003 is label `91003` in `90000_msbt_LZ`.
+    #
+    # `message_dirs [""]`: the language folders sit at the root of this romfs.
+    #
+    # The error applet and Miiverse both mount it as `msg:` and pick the file by console
+    # region - EUR is 0004009B00012102, and that is the one every EUR console carries. No
+    # title mounts it any other way, so translating this one archive translates the body of
+    # every error code the system can show.
+    #
+    # Luma's LayeredFS cannot deliver it - the archive is not a process, and the reads that
+    # would have to be hooked carry a binary path, not one of the mount prefixes Luma looks
+    # for. So `ships_to` writes the rebuilt archive into each reader's own folder instead,
+    # where the code patch of tools/luma_hook.py (`msg_hook`) points the read.
+    "error_strings": {
+        "tids": ["0004009B00012102"],  # error-message database, EUR
+        "source_tid": "0004009B00012102",
+        "lang": "EU_Russian",
+        "ref_lang": "EU_English",
+        "message_dirs": [""],
+        "ships_to": ["000400300000C502", "000400300000BE02"],
+    },
     # Miiverse (`cave`): the applet behind the HOME Menu icon and behind the in-game Miiverse
     # button, and the same binary draws the Nintendo Network ID pages. Luma hooks it unaided -
     # all five FS symbols are there - so it ships a plain romfs/.
@@ -546,6 +570,32 @@ def write_romfs_image(tid: str, romfs_dir: Path, overrides: dict[str, bytes]) ->
     ]
 
 
+def write_shared_image(reader_tid: str, romfs_dir: Path, overrides: dict[str, bytes]) -> list[str]:
+    """A shared data archive, rebuilt with the translations, next to the title that reads it.
+
+    The error-message database belongs to no process of its own, so it ships inside the
+    folder of each title whose code patch points at it - see msg_hook in tools/luma_hook.py.
+    """
+    hook = luma_hook.HOOK_PATCHES[reader_tid.upper()]["msg_hook"]
+    image = romfs.build(romfs_dir, overrides)
+    read_back = romfs.read(image)
+    for rel_path, blob in overrides.items():
+        if read_back.get("/" + rel_path) != blob:
+            raise SystemExit(f"{reader_tid}: {rel_path} did not survive the RomFS rebuild")
+
+    written = []
+    for title in hook["titles"]:
+        dest = ROOT / "dist" / "luma" / "titles" / reader_tid / title["image_name"]
+        dest.parent.mkdir(parents=True, exist_ok=True)
+        dest.write_bytes(image)
+        written.append(
+            f"  RomFS image: {len(read_back)} files, {len(overrides)} replaced, "
+            f"read back and compared"
+        )
+        written.append(f"{dest.relative_to(ROOT)} ({len(image)} bytes)")
+    return written
+
+
 def build_csv(cfg: dict, romfs: Path, table: dict[str, str]) -> tuple[dict[str, bytes], list[str]]:
     """Translate the Russian column of the StreetPass Map's country and region tables.
 
@@ -797,7 +847,9 @@ def build_title(name: str, table: dict[str, str]) -> list[str]:
     stats += smdh_stats + hud_stats + names_stats
     outputs = cross_blobs | store.outputs(lang, updates) | csv_blobs | smdh_blobs | hud_blobs
     written: list[str] = []
-    for tid in cfg["tids"]:
+    for reader in cfg.get("ships_to", []):
+        written += write_shared_image(reader, romfs, outputs)
+    for tid in cfg["tids"] if not cfg.get("ships_to") else []:
         if luma_hook.has_patch(tid) and luma_hook.kind(tid) == "romfs_from_sd":
             # A whole image, not loose files: this title reads its RomFS off the SD card.
             written += write_romfs_image(tid, romfs, outputs)

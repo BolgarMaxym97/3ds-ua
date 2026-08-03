@@ -1,0 +1,70 @@
+{
+  "180006": {
+    "en": "The internet connection has been lost.\n\nPlease try again later.",
+    "ua": "З'єднання з Інтернетом\nвтрачено.\n\nСпробуйте пізніше."
+  },
+  "180203": {
+    "en": "A communication error has occurred.\n\nThere may be problems with the\nnetwork or the environment.\nTo ensure an optimal connection\nenvironment, move closer to the\naccess point and make sure that\nthere are no obstructions between\nthe system and the access point.\nPlease try again later.\n\nThe DNS setting may have been \nentered incorrectly. Check the\nsetting in System Settings ⇒\nInternet Settings.",
+    "ua": "Сталася помилка зв'язку.\n\nМожливо, проблема в мережі\nабо в умовах довкола.\nЩоб з'єднання було найкращим,\nпідійдіть ближче до точки\nдоступу й переконайтеся, що\nміж консоллю й точкою доступу\nнемає перешкод.\nЯкщо не помогло, спробуйте\nпізніше.\n\n■ Можливо, DNS введено\nнеправильно. Перевірте\nв Налаштуваннях системи ⇒\nІнтернет-налаштування."
+  },
+  "180311": {
+    "en": "Unable to connect because the software\nversion is out of date.\n\nA software update is required.",
+    "ua": "Не вдалося з'єднатися: версія\nпрограми застаріла.\n\nПотрібно оновити програму."
+  },
+  "180312": {
+    "en": "Unable to connect because one or more\nother users are using an outdated\nsoftware version.\n\nA software update is required for those\nusers.",
+    "ua": "Не вдалося з'єднатися: хтось\nіз користувачів має застарілу\nверсію програми.\n\nТим користувачам потрібно\nоновити програму."
+  },
+  "180501": {
+    "en": "Unable to connect to partner's device,\nas partner was temporarily unable to\naccept connection.\n\nPlease try again later.",
+    "ua": "Не вдалося з'єднатися з консоллю\nпартнера: він тимчасово\nне міг прийняти з'єднання.\n\nСпробуйте пізніше."
+  },
+  "180502": {
+    "en": "Unable to connect to partner's device,\nas partner did not respond.\n\nPlease try again later.",
+    "ua": "Не вдалося з'єднатися з консоллю\nпартнера: він не відповів.\n\nСпробуйте пізніше."
+  },
+  "180506": {
+    "en": "Unable to connect to partner's device,\nas the current session is full.\n\nPlease try again later.",
+    "ua": "Не вдалося з'єднатися з консоллю\nпартнера: сеанс заповнений.\n\nСпробуйте пізніше."
+  },
+  "180510": {
+    "en": "Unable to connect to partner's device.\n\nPlease try again later.\n\nIf the problem persists, something\nin your network environment may be\ncausing connection issues with your\npartner.",
+    "ua": "Не вдалося з'єднатися\nз консоллю партнера.\n\nСпробуйте пізніше.\n\nЯкщо проблема не зникає,\nможливо, щось у вашій мережі\nперешкоджає з'єднанню\nз партнером."
+  },
+  "180515": {
+    "en": "Unable to connect to partner's device.\n\nPlease try again later.\n\nIf the problem persists, something in\nyour partner's network environment\nmay be causing connection issues.",
+    "ua": "Не вдалося з'єднатися\nз консоллю партнера.\n\nСпробуйте пізніше.\n\nЯкщо проблема не зникає,\nможливо, щось у мережі\nпартнера перешкоджає\nз'єднанню."
+  },
+  "180516": {
+    "en": "Unable to connect to partner's device.\n\nPlease try again later.\n\nIf the problem persists, something\nin your network environment may be\ncausing connection issues with your\npartner.",
+    "ua": "Не вдалося з'єднатися\nз консоллю партнера.\n\nСпробуйте пізніше.\n\nЯкщо проблема не зникає,\nможливо, щось у вашій мережі\nперешкоджає з'єднанню\nз партнером."
+  },
+  "180521": {
+    "en": "Unable to connect to partner's device,\nas partner did not respond.\n\nPlease try again later.",
+    "ua": "Не вдалося з'єднатися з консоллю\nпартнера: він не відповів.\n\nСпробуйте пізніше."
+  },
+  "180542": {
+    "en": "Unable to connect to partner's device,\nas the current session is full.\n\nPlease try again later.",
+    "ua": "Не вдалося з'єднатися з консоллю\nпартнера: сеанс заповнений.\n\nСпробуйте пізніше."
+  },
+  "180547": {
+    "en": "A communication error has occurred.\n\nThere may be problems with the \nnetwork or the environment.\nTo ensure an optimal connection \nenvironment, move closer to the \naccess point and make sure that there\nare no obstructions between the\nsystem and the access point.\nIf this does not work, please try \nagain later.",
+    "ua": "Сталася помилка зв'язку.\n\nМожливо, проблема в мережі\nабо в умовах довкола.\nЩоб з'єднання було найкращим,\nпідійдіть ближче до точки\nдоступу й переконайтеся, що\nміж консоллю й точкою доступу\nнемає перешкод.\nЯкщо не помогло, спробуйте\nпізніше."
+  },
+  "180561": {
+    "en": "The server is currently\nundergoing maintenance.\n\nWe apologise for any inconvenience.\nPlease try again later.\nSee the Nintendo website\nfor maintenance information.",
+    "ua": "На сервері зараз ведуться\nтехнічні роботи.\n\nПерепрошуємо за незручності.\nСпробуйте пізніше.\nІнформація про роботи —\nна сайті Nintendo."
+  },
+  "180701": {
+    "en": "Unable to connect because the software\nversion is out of date.\n\nA software update is required.",
+    "ua": "Не вдалося з'єднатися: версія\nпрограми застаріла.\n\nПотрібно оновити програму."
+  },
+  "180702": {
+    "en": "Unable to connect because one or more\nother users are using an outdated\nsoftware version.\n\nA software update is required for those\nusers.",
+    "ua": "Не вдалося з'єднатися: хтось\nіз користувачів має застарілу\nверсію програми.\n\nТим користувачам потрібно\nоновити програму."
+  },
+  "0": {
+    "en": "An error has occurred.\nPlease try again later.\nIf the problem persists, please\nmake a note of the error code and\nvisit support.nintendo.com.",
+    "ua": "Сталася помилка.\nСпробуйте пізніше.\nЯкщо проблема не зникає,\nзапишіть код помилки\nй відвідайте\nsupport.nintendo.com."
+  }
+}
