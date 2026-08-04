@@ -41,6 +41,7 @@ import luma_hook  # noqa: E402
 import msbt as msbt_mod  # noqa: E402
 import romfs  # noqa: E402
 import smdh as smdh_mod  # noqa: E402
+import news_tips  # noqa: E402
 import pane_names  # noqa: E402
 import smdh_names  # noqa: E402
 from store import open_store  # noqa: E402
@@ -463,7 +464,7 @@ def skip_blocked(name: str, cfg: dict) -> list[str]:
     return lines
 
 
-def app_name_tables(table: dict[str, str]) -> tuple[dict[str, bytes], list[str]]:
+def app_name_tables(table: dict[str, str]) -> tuple[dict[str, object], list[str]]:
     """The two shapes of application-name table, from the one list in src/app_names.json.
 
     A title that reads SMDHs itself gets the table keyed by title id, and its buffer is
@@ -520,7 +521,37 @@ def app_name_tables(table: dict[str, str]) -> tuple[dict[str, bytes], list[str]]
     ]
 
 
-def prepare_hook_patch(name: str, tid: str, names: dict[str, bytes] | None = None) -> tuple[dict[str, bytes], list[str]]:
+def news_tip_table(table: dict[str, str]) -> tuple[list[dict], list[str]]:
+    """Which built-in notifications the HOME Menu patch rewrites, and with what.
+
+    The Russian side has to come out of the dump: it is what the console copied into the
+    news database when it delivered the tip, and matching against it is how the patch finds
+    the notification again. The Ukrainian side is ours with homoglyphs applied, because that
+    is what the console's own message lookup will answer with once the mod is installed.
+    See tools/news_tips.py for why LayeredFS cannot reach these strings at all.
+    """
+    cfg = TITLES["home_menu"]
+    key = "message__menu_msbt_LZ"
+    store = open_store(cfg, ROOT / "work" / cfg["source_tid"] / "romfs")
+    msbt = msbt_mod.parse(store.read(cfg["lang"])[key])
+    russian = {
+        label: msbt.texts[index]
+        for label, index in msbt.labels.items()
+        if news_tips.tip_number(label) is not None and msbt.texts[index]
+    }
+    entries = json.loads((ROOT / "src" / "strings" / "home_menu" / f"{key}.json").read_text(encoding="utf-8"))
+    ukrainian = {
+        label: apply_homoglyphs(entry["ua"], table)
+        for label, entry in entries.items()
+        if entry.get("ua") and news_tips.tip_number(label) is not None
+    }
+    tips, log = news_tips.build_table(russian, ukrainian)
+    return tips, [f"notifications: {len(tips)} built-in tips rewritten in the news database"] + [
+        f"  {line}" for line in log
+    ]
+
+
+def prepare_hook_patch(name: str, tid: str, names: dict[str, object] | None = None) -> tuple[dict[str, bytes], list[str]]:
     """Build the code.ips + exheader.bin that let Luma hook LayeredFS into `tid`.
 
     Anything missing is fatal on purpose, and this runs before the build writes anything:
@@ -816,6 +847,9 @@ def build_title(name: str, table: dict[str, str]) -> list[str]:
 
     wants_names = cfg.get("hook_patch") and any(luma_hook.wants_names(tid) for tid in cfg["tids"])
     names, names_stats = app_name_tables(table) if wants_names else (None, [])
+    if names is not None and any(luma_hook.wants_news_tips(tid) for tid in cfg["tids"]):
+        names["news_tips"], news_stats = news_tip_table(table)
+        names_stats += news_stats
     hooks = (
         {tid: prepare_hook_patch(name, tid, names) for tid in cfg["tids"]}
         if cfg.get("hook_patch")

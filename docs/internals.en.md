@@ -536,6 +536,79 @@ for three different titles down both paths, `r0`/`sp`/`r4-r7` intact on the way 
 language slots and the icon bitmaps byte-for-byte, an unknown title id and a failed read
 leaving the buffer alone, and `ReadTitleIcon()` receiving `arg5 = 0` and `ip = 0`.
 
+## How the built-in notifications were fixed
+
+The built-in tips of the Notifications applet ("About Notifications", "Pedometer", "Play
+Coins" and a dozen more) are `new_tips0`..`new_tips16` in HOME Menu's `menu_msbt`. They were
+translated along with everything else, yet stayed Russian on the console — and LayeredFS is
+not at fault.
+
+HOME Menu does not render those notifications from romfs. Once, when a tip becomes due, it
+calls `news:s AddNotification` and **copies** the text into the news module's savedata in
+NAND — `1:/data/<ID0>/sysdata/00010035/00000000`, a DISA image:
+
+| File | What it holds |
+|---|---|
+| `news.db` | a `0x10`-byte header plus 100 headers of `0x70`; the title is UTF-16 at `0x30`, `0x40` bytes at most |
+| `newsXXX.txt` | the message body, UTF-16, up to `0x1780` bytes |
+| `newsXXX.mpo` | the image, up to `0x10000` bytes |
+
+That copy is frozen at delivery time: no amount of replacing romfs changes a notification
+that has already arrived. The dumped console holds ten of them (tips 0, 1, 2, 3, 4, 6, 7, 11,
+12, 13), and the slots are scattered across all hundred: 0, 1, 3, 15, 25, 65, 73, 74, 75, 99.
+Their `programID`, `jumpParam` and `nsDataId` are all zero, so there is no handle on the
+source either. `tools/newsdb.py` reads the database — both the raw DISA image and an
+extracted folder.
+
+What is in reach is HOME Menu's own code. `code.ips` puts a `b` over the first instruction of
+the tip dispatcher (`0xB4440`, the one that walks all 17 tips and decides which are due):
+that is a point where the message archives are loaded for certain, because the dispatcher is
+about to look tip text up itself.
+
+The hook walks all 100 slots. For each: read the `0x70` header, hash the stored title, look
+that hash up in the table. On a hit it asks HOME Menu itself for the text:
+
+| What it needs | Where it is in the title |
+|---|---|
+| `GetMessage(label, archive)` -> `const u16*` | `0x2295D8` |
+| the label resolver, which appends the model suffix (`_flw`, `_sac`, `_jan`) on its own | `0x13369C` |
+| `GetNotificationHeader(slot, buffer)` | `0x17FCAC` |
+| `WriteNewsDBSavedata()` | `0x17FB80` |
+| opening the `news:s` session (the handle lives at `0x33D28C`) | `0x12DE28` |
+
+Which is why the patch carries **no Ukrainian text at all**. The text comes from the same
+function Nintendo uses, and that function also picks the tip variant for the console model.
+The table holds four words per tip: the hash of the Russian title, the addresses of the
+`new_tipsN` and `new_tipsN_title` labels, and the hash of the Ukrainian title. The labels are
+plain ASCII inside the same blob.
+
+`Set/GetNotificationMessage` (`0x80082`/`0xC0082`) and `SetNotificationHeader` (`0x70082`)
+have no wrappers in the title, so the stub marshals them the way HOME Menu marshals its own
+news:s calls: descriptor `0xA | size << 4`, a read-only mapped buffer, and the TLS base in a
+callee-saved register because the kernel does not promise `ip` back.
+
+The second hash is a gate, not a key. HOME Menu answers in whatever language the console is
+set to, and the hook writes nothing unless the answer is the Ukrainian string the table was
+built with. A console running the mod in English is left untouched, and so is one whose
+translation has moved on since the patch was built.
+
+There is no "already fixed" marker and none is needed: after a rewrite the stored title is
+Ukrainian and hashes to nothing in the table, so the next pass finds nothing to do. Removing
+the mod breaks nothing either — the database keeps Ukrainian text rather than garbage.
+
+The table is assembled in `tools/news_tips.py`: the Russian side comes out of the dump (that
+is what the console actually stored), the Ukrainian side out of our JSON after homoglyph
+substitution. The build fails if two titles hash alike, if a Ukrainian title hashes like a
+Russian one (the hook would then loop on its own output), or if the text does not fit its
+field.
+
+The hook is verified twice over. `tools/newsdb.py --hook` recognises every notification in a
+console dump the way the patch does at runtime — all ten of the ten found their tip. Then ARM
+emulation (unicorn): Russian tips are rewritten body and title, a Nintendo SpotPass message is
+left alone, a second pass writes nothing, a console in English writes nothing, the database is
+flushed exactly once and only when something changed, the dispatcher's prologue runs, its
+arguments and `r4-r10` are intact, and the stack is balanced.
+
 ## How the Activity Log's application names were translated
 
 The Activity Log could not be fixed the same way: it never reads an SMDH at all. It has no

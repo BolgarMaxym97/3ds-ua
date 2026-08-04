@@ -443,6 +443,32 @@ HOOK_PATCHES: dict[str, dict] = {
                 {"title_id": 0x0004001000022E00, "image_name": "banner_22E00.bin"},
             ],
         },
+        # The built-in tips of the Notifications applet were copied into the news module's
+        # savedata when they were delivered, so they keep whatever language the console was
+        # set to then - see tools/news_tips.py. The hook rewrites them in place through the
+        # news:s wrappers this title already carries; the only thing missing from the title
+        # are the two setters, which _news_hook() marshals itself.
+        "news_hook": {
+            "site_off": 0xB4440,       # CheckTips(this, arg) - iterates all 17 tips
+            "original_word": 0xE92D47F0,  # push {r4, r5, r6, r7, r8, sb, sl, lr}
+            "return_to": 0xB4444,
+            "get_header_off": 0x7FCAC,  # GetNotificationHeader(slot, buffer) -> result
+            "get_message_off": 0x1295D8,  # GetMessage(label, archive) -> const u16*
+            "open_news_off": 0x2DE28,   # srvGetServiceHandle(&handle, "news:s")
+            "write_db_off": 0x7FB80,    # WriteNewsDBSavedata()
+            "handle_va": 0x33D28C,      # where the title keeps its news:s session
+            "set_header_cmd": 0x00070082,   # news:s SetNotificationHeader
+            "set_message_cmd": 0x00080082,  # news:s SetNotificationMessage
+            "slots": 100,               # the database holds 100, ids 0..99
+            # First word of every function called above. An offset that has drifted lands on
+            # something else, and the build says so instead of the console doing it.
+            "expects": {
+                "get_header_off": 0xE92D4008,   # push {r3, lr}
+                "get_message_off": 0xE92D4010,  # push {r4, lr}
+                "open_news_off": 0xE59F1004,    # ldr r1, [pc, #4] - a thunk, not a prologue
+                "write_db_off": 0xE92D4010,     # push {r4, lr}
+            },
+        },
     },
     # StreetPass Mii Plaza (MEET), EUR, title version 5. Verified working on hardware.
     #
@@ -786,6 +812,10 @@ def _bc(cond: int, src: int, dst: int) -> int:
     return (cond << 28) | 0x0A000000 | (((dst - src - 8) >> 2) & 0xFFFFFF)
 
 
+def _blc(cond: int, src: int, dst: int) -> int:
+    return (cond << 28) | 0x0B000000 | (((dst - src - 8) >> 2) & 0xFFFFFF)
+
+
 def _thumb_bl(src: int, dst: int) -> bytes:
     """Thumb-1 `bl` pair. Range is +-4 MB, which every site here is well inside of."""
     offset = dst - (src + 4)
@@ -1040,6 +1070,239 @@ def _pane_hook(patch: dict, table_va: int, scratch_va: int, base: int) -> tuple[
         ],
     }
     return _assemble(blocks, base)
+
+
+def _news_hook(patch: dict, entries: list[dict], base: int) -> tuple[list[int], dict[str, int]]:
+    """Rewrite the notifications the HOME Menu delivered before the mod into Ukrainian.
+
+    The built-in tips live in the news module's NAND savedata, copied there once by
+    AddNotification, so LayeredFS never sees them - see tools/news_tips.py for why. This
+    hook wraps the tip dispatcher, the function that decides which tips are due, because
+    that is a place where the message archives are loaded for certain: the dispatcher is
+    about to look tip text up itself.
+
+    One pass over all 100 slots per call. For each slot: read the 0x70 header, hash the
+    stored title, and on a table hit ask HOME Menu's own message lookup for our text. The
+    lookup answers in the console's language and resolves the model suffix (`_flw`, `_sac`,
+    `_jan`) on its own, which is why the table stores plain `new_tipsN` labels and the patch
+    carries no Ukrainian text of its own.
+
+    Nothing is written unless the Ukrainian title the lookup returned is the one this build
+    shipped, so a console running in English is left alone. After a rewrite the stored title
+    is Ukrainian and hashes to nothing in the table, which is what keeps the next pass from
+    touching it again - no marker anywhere, and removing the mod leaves the console with
+    Ukrainian notifications rather than a broken database.
+    """
+    hook = patch["news_hook"]
+    slots = hook["slots"]
+
+    def bl(target: str):
+        return lambda at, labels: _bl(at, labels[target])
+
+    def b(target: str):
+        return lambda at, labels: _b(at, labels[target])
+
+    def bc(cond: int, target: str):
+        return lambda at, labels: _bc(cond, at, labels[target])
+
+    def call(key: str):
+        return lambda at, labels: _bl(at, hook[key])
+
+    def ldr_pc(reg: int, target: str):
+        return lambda at, labels: 0xE59F0000 | (reg << 12) | (labels[target] - at - 8)
+
+    table: list[int] = []
+    for entry in entries:
+        table += [
+            entry["ru_hash"],
+            lambda at, labels, e=entry: TEXT_VA + labels[f"news_body_{e['number']}"],
+            lambda at, labels, e=entry: TEXT_VA + labels[f"news_title_{e['number']}"],
+            entry["ua_hash"],
+        ]
+    table.append(0)  # a zero hash ends the walk
+
+    blocks: dict[str, list] = {
+        # Entered in place of the dispatcher's own prologue, so its arguments are still in
+        # r0/r1 and lr is still its caller. They are put back before the prologue runs.
+        "news_hook": [
+            0xE92D500F,                              # push  {r0, r1, r2, r3, ip, lr}
+            bl("news_fix"),                          # bl    news_fix
+            0xE8BD500F,                              # pop   {r0, r1, r2, r3, ip, lr}
+            hook["original_word"],                   # the dispatcher's own prologue
+            lambda at, labels: _b(at, hook["return_to"]),
+        ],
+        "news_fix": [
+            0xE92D41F0,                              # push  {r4, r5, r6, r7, r8, lr}
+            0xE24DD070,                              # sub   sp, sp, #0x70    the header buffer
+            ldr_pc(0, "news_handle"),                # ldr   r0, [pc, #...]   &news:s handle
+            0xE5900000,                              # ldr   r0, [r0]
+            0xE3500000,                              # cmp   r0, #0
+            lambda at, labels: _blc(COND_EQ, at, hook["open_news_off"]),  # bleq  open news:s
+            ldr_pc(0, "news_handle"),                # ldr   r0, [pc, #...]
+            0xE5900000,                              # ldr   r0, [r0]
+            0xE3500000,                              # cmp   r0, #0
+            bc(COND_EQ, "news_out"),                 # beq   out              no session
+            0xE3A04000,                              # mov   r4, #0           slot index
+            0xE3A08000,                              # mov   r8, #0           anything written
+        ],
+        "news_loop": [
+            0xE1A00004,                              # mov   r0, r4
+            0xE1A0100D,                              # mov   r1, sp
+            call("get_header_off"),                   # bl    GetNotificationHeader(idx, buf)
+            0xE3500000,                              # cmp   r0, #0
+            bc(COND_MI, "news_next"),                # bmi   next             no such slot
+            0xE5DD0000,                              # ldrb  r0, [sp]         valid flag
+            0xE3500000,                              # cmp   r0, #0
+            bc(COND_EQ, "news_next"),                # beq   next             free slot
+            0xE28D0030,                              # add   r0, sp, #0x30    the stored title
+            bl("news_hash"),                         # bl    hash
+            ldr_pc(5, "news_table_ptr"),             # ldr   r5, [pc, #...]   the table
+        ],
+        "news_walk": [
+            0xE5951000,                              # ldr   r1, [r5]         entry hash
+            0xE3510000,                              # cmp   r1, #0
+            bc(COND_EQ, "news_next"),                # beq   next             end of table
+            0xE1510000,                              # cmp   r1, r0
+            bc(COND_EQ, "news_match"),               # beq   match
+            0xE2855010,                              # add   r5, r5, #16
+            b("news_walk"),                          # b     walk
+        ],
+        # The title is fetched first and checked against the hash this build shipped: it is
+        # the gate that keeps a console set to another language untouched.
+        "news_match": [
+            0xE5950008,                              # ldr   r0, [r5, #8]     title label
+            0xE3A01000,                              # mov   r1, #0           menu_msbt
+            call("get_message_off"),                  # bl    GetMessage -> const u16*
+            0xE3500000,                              # cmp   r0, #0
+            bc(COND_EQ, "news_next"),                # beq   next
+            0xE1A07000,                              # mov   r7, r0           keep the title
+            bl("news_hash"),                         # bl    hash
+            0xE595100C,                              # ldr   r1, [r5, #0xc]   expected hash
+            0xE1500001,                              # cmp   r0, r1
+            bc(COND_NE, "news_next"),                # bne   next             not our text
+            0xE5950004,                              # ldr   r0, [r5, #4]     body label
+            0xE3A01000,                              # mov   r1, #0
+            call("get_message_off"),                  # bl    GetMessage
+            0xE3500000,                              # cmp   r0, #0
+            bc(COND_EQ, "news_next"),                # beq   next
+            0xE1A06000,                              # mov   r6, r0           keep the body
+            bl("news_len"),                          # bl    len              -> bytes with NUL
+            0xE1A02000,                              # mov   r2, r0
+            0xE1A01006,                              # mov   r1, r6
+            0xE1A00004,                              # mov   r0, r4
+            bl("news_set_message"),                  # bl    SetNotificationMessage
+            0xE3500000,                              # cmp   r0, #0
+            bc(COND_MI, "news_next"),                # bmi   next             leave the title
+            0xE28D1030,                              # add   r1, sp, #0x30    the header field
+            0xE3A0201F,                              # mov   r2, #31          units it holds
+            0xE1A00007,                              # mov   r0, r7
+        ],
+        "news_copy": [
+            0xE0D030B2,                              # ldrh  r3, [r0], #2
+            0xE3530000,                              # cmp   r3, #0
+            bc(COND_EQ, "news_copied"),              # beq   copied
+            0xE0C130B2,                              # strh  r3, [r1], #2
+            0xE2522001,                              # subs  r2, r2, #1
+            bc(COND_NE, "news_copy"),                # bne   copy
+        ],
+        "news_copied": [
+            0xE3A03000,                              # mov   r3, #0
+            0xE1C130B0,                              # strh  r3, [r1]         terminate
+            0xE1A00004,                              # mov   r0, r4
+            0xE1A0100D,                              # mov   r1, sp
+            bl("news_set_header"),                   # bl    SetNotificationHeader
+            0xE3A08001,                              # mov   r8, #1
+        ],
+        "news_next": [
+            0xE2844001,                              # add   r4, r4, #1
+            0xE3540000 | slots,                      # cmp   r4, #100
+            bc(COND_NE, "news_loop"),                # bne   loop
+            0xE3580000,                              # cmp   r8, #0
+            lambda at, labels: _blc(COND_NE, at, hook["write_db_off"]),  # blne  flush the db
+        ],
+        "news_out": [
+            0xE28DD070,                              # add   sp, sp, #0x70
+            0xE8BD81F0,                              # pop   {r4, r5, r6, r7, r8, pc}
+        ],
+        # hash(r0 = UTF-16 string) -> r0. h = h * 31 + unit, the same two instructions
+        # tools/news_tips.py hashes with.
+        "news_hash": [
+            0xE3A01000,                              # mov   r1, #0           the hash
+            0xE1A02000,                              # mov   r2, r0
+        ],
+        "news_hash_loop": [
+            0xE0D230B2,                              # ldrh  r3, [r2], #2
+            0xE3530000,                              # cmp   r3, #0
+            0x10611281,                              # rsbne r1, r1, r1, lsl #5   h * 31
+            0x10811003,                              # addne r1, r1, r3
+            bc(COND_NE, "news_hash_loop"),           # bne   hash_loop
+            0xE1A00001,                              # mov   r0, r1
+            0xE12FFF1E,                              # bx    lr
+        ],
+        # len(r0 = UTF-16 string) -> r0 = its size in bytes, terminator included.
+        "news_len": [
+            0xE1A01000,                              # mov   r1, r0
+        ],
+        "news_len_loop": [
+            0xE0D120B2,                              # ldrh  r2, [r1], #2
+            0xE3520000,                              # cmp   r2, #0
+            bc(COND_NE, "news_len_loop"),            # bne   len_loop
+            0xE0410000,                              # sub   r0, r1, r0
+            0xE12FFF1E,                              # bx    lr
+        ],
+        "news_set_message": [
+            ldr_pc(3, "news_message_cmd"),           # ldr   r3, [pc, #...]
+            b("news_ipc"),                           # b     ipc              keeps lr
+        ],
+        "news_set_header": [
+            0xE3A02070,                              # mov   r2, #0x70
+            ldr_pc(3, "news_header_cmd"),            # ldr   r3, [pc, #...]
+            b("news_ipc"),                           # b     ipc
+        ],
+        # ipc(r0 = slot, r1 = buffer, r2 = size, r3 = command header) -> r0 = result.
+        # Written the way this title writes its own news:s calls, down to the descriptor:
+        # 0xA is a read-only mapped buffer, which is what every setter here passes. The TLS
+        # base goes in a callee-saved register because the kernel does not promise ip back.
+        "news_ipc": [
+            0xE92D4080,                              # push  {r7, lr}
+            0xEE1D7F70,                              # mrc   p15, #0, r7, c13, c0, #3
+            0xE5A73080,                              # str   r3, [r7, #0x80]! -> cmdbuf
+            0xE2873004,                              # add   r3, r7, #4
+            0xE8830005,                              # stm   r3, {r0, r2}     slot, size
+            0xE3A0000A,                              # mov   r0, #0xa
+            0xE1800202,                              # orr   r0, r0, r2, lsl #4
+            0xE1C700FC,                              # strd  r0, r1, [r7, #0xc]
+            ldr_pc(0, "news_handle"),                # ldr   r0, [pc, #...]
+            0xE5900000,                              # ldr   r0, [r0]
+            0xEF000032,                              # svc   #0x32            SendSyncRequest
+            0xE5970004,                              # ldr   r0, [r7, #4]     the result
+            0xE8BD8080,                              # pop   {r7, pc}
+        ],
+        "news_handle": [
+            hook["handle_va"],                       # literal
+        ],
+        "news_table_ptr": [
+            lambda at, labels: TEXT_VA + labels["news_table"],
+        ],
+        "news_message_cmd": [
+            hook["set_message_cmd"],
+        ],
+        "news_header_cmd": [
+            hook["set_header_cmd"],
+        ],
+        "news_table": table,
+    }
+    for entry in entries:
+        blocks[f"news_body_{entry['number']}"] = _ascii_words(str(entry["body_label"]))
+        blocks[f"news_title_{entry['number']}"] = _ascii_words(str(entry["title_label"]))
+    return _assemble(blocks, base)
+
+
+def _ascii_words(text: str) -> list[int]:
+    """A NUL-terminated ASCII string as words, so it can share a blob with code."""
+    raw = text.encode("ascii") + b"\0"
+    raw += b"\0" * (-len(raw) % 4)
+    return list(struct.unpack(f"<{len(raw) // 4}I", raw))
 
 
 def _banner_hook(
@@ -1525,6 +1788,11 @@ def kind(tid: str) -> str:
     return HOOK_PATCHES[tid.upper()].get("kind", "mount_stub")
 
 
+def wants_news_tips(tid: str) -> bool:
+    """Whether this title's patch rewrites the built-in notifications, and so needs the table."""
+    return bool(HOOK_PATCHES.get(tid.upper(), {}).get("news_hook"))
+
+
 def wants_names(tid: str) -> str | None:
     """Which application-name table this title's patch needs, if any."""
     patch = HOOK_PATCHES.get(tid.upper())
@@ -1624,6 +1892,8 @@ def _hooked_text_words(patch: dict) -> list[int]:
         sites += [patch["thunk_off"], patch["cache_read_off"]]
         if patch.get("banner_hook"):
             sites.append(patch["banner_hook"]["site_off"])
+        if patch.get("news_hook"):
+            sites.append(patch["news_hook"]["site_off"])
     if patch.get("pane_hook"):
         sites.append(patch["pane_hook"]["set_text_off"])
     if patch.get("msg_hook"):
@@ -1771,6 +2041,82 @@ def _verify_banner(
             raise RuntimeError(f"{expected['path']!r} was never written into .rodata")
     if word(table_at - TEXT_VA + len(entries) * 16) != 0:
         raise RuntimeError("the banner table has no terminator")
+
+
+def _verify_news(
+    patch: dict,
+    code: bytes,
+    records: list[tuple[int, bytes]],
+    labels: dict[str, int],
+    entries: list[dict],
+) -> None:
+    """Apply the records and walk the notification hook: in, prologue, out, and the table.
+
+    What would be silent here and fatal on a console: a hook that swallows the dispatcher's
+    own prologue, so its epilogue pops a return address nobody pushed; a call landing on a
+    function other than the one the offsets name; or a table entry pointing at a label that
+    is not the NUL-terminated ASCII the message lookup expects.
+    """
+    patched = bytearray(code)
+    for offset, data in records:
+        patched[offset:offset + len(data)] = data
+    word = lambda off: struct.unpack_from("<I", patched, off)[0]  # noqa: E731
+
+    hook = patch["news_hook"]
+    entry = _branch_target(word(hook["site_off"]), hook["site_off"])
+    if entry != labels["news_hook"]:
+        raise RuntimeError(f"0x{hook['site_off']:X} does not branch into the notification hook")
+
+    # The dispatcher's own prologue and the branch back, in the order they have to run.
+    if word(labels["news_hook"] + 0x0C) != hook["original_word"]:
+        raise RuntimeError("the notification hook does not reproduce the dispatcher's prologue")
+    back = _branch_target(word(labels["news_hook"] + 0x10), labels["news_hook"] + 0x10)
+    if back != hook["return_to"]:
+        raise RuntimeError(
+            f"the notification hook continues at "
+            f"{'0x%X' % back if back is not None else 'nowhere'}, expected "
+            f"0x{hook['return_to']:X}"
+        )
+
+    # Every call out of the blob has to land on the function the offsets name, and that
+    # function has to still start with the word it started with when the offset was taken.
+    # Two of the calls are conditional (`bleq` to open the session, `blne` to flush the
+    # database), which is why the condition nibble is masked off rather than compared.
+    def bl_target(at: int) -> int | None:
+        value = word(at)
+        if (value >> 24) & 0x0F != 0x0B:
+            return None
+        offset = value & 0xFFFFFF
+        return at + 8 + (offset - (0x1000000 if offset & 0x800000 else 0)) * 4
+
+    called = {bl_target(off) for off in range(labels["news_hook"], labels["news_table"], 4)}
+    for key, expected in hook["expects"].items():
+        target = hook[key]
+        if target not in called:
+            raise RuntimeError(f"the notification hook never calls {key} at 0x{target:X}")
+        if word(target) != expected:
+            raise RuntimeError(
+                f"0x{target:X} holds 0x{word(target):08X}, expected 0x{expected:08X} - "
+                f"{key} is not the function the offsets were taken from"
+            )
+
+    # The table: four words an entry, a zero hash to stop on, each label reachable and
+    # spelled the way tools/news_tips.py says.
+    table_at = word(labels["news_table_ptr"]) - TEXT_VA
+    for index, expected in enumerate(entries):
+        at = table_at + index * 16
+        ru_hash, body_va, title_va, ua_hash = (word(at + step) for step in (0, 4, 8, 12))
+        if ru_hash != expected["ru_hash"] or ua_hash != expected["ua_hash"]:
+            raise RuntimeError(f"table entry {index} does not carry the hashes it was built with")
+        for what, va in (("body_label", body_va), ("title_label", title_va)):
+            off = va - TEXT_VA
+            text = bytes(patched[off:patched.index(b"\0", off)]).decode("ascii", "replace")
+            if text != expected[what]:
+                raise RuntimeError(
+                    f"table entry {index} points at {text!r}, expected {expected[what]!r}"
+                )
+    if word(table_at + len(entries) * 16) != 0:
+        raise RuntimeError("the notification table has no terminator")
 
 
 def _verify_redirect(
@@ -2031,13 +2377,21 @@ def _pane_records(
 
 
 def _generate_smdh_names(
-    patch: dict, code: bytes, exheader: bytes, version: int, table: bytes
+    patch: dict,
+    code: bytes,
+    exheader: bytes,
+    version: int,
+    table: bytes,
+    news_entries: list[dict] | None = None,
 ) -> tuple[dict[str, bytes], list[str]]:
     """code.ips that routes both of HOME Menu's SMDH readers through the rewriting stub.
 
     Four records: one word over each reader's entry, the stub blob at the end of the .text
     padding, and the name table in the .rodata padding. No exheader - HOME Menu already has
     DirectSdmc, and nothing here needs Luma to find a symbol.
+
+    Two more hooks share the same padding when the title has them: the banner open, and the
+    tip dispatcher that `news_entries` feeds.
     """
     thunk = patch["thunk_off"]
     word = struct.unpack_from("<I", code, thunk)[0]
@@ -2111,7 +2465,18 @@ def _generate_smdh_names(
         banner_words, banner_labels = _banner_hook(patch, banner_entries, banner_off)
         banner = b"".join(struct.pack("<I", w) for w in banner_words)
 
-    used = len(stub) + (len(banner) if banner else 0)
+    # The notification hook goes below the banner hook. Its table and its labels ride inside
+    # the blob rather than in .rodata: the name table has all but filled that padding, and
+    # nothing here is a string the console reads - only labels our own code looks up with.
+    news = news_off = None
+    news_labels: dict[str, int] = {}
+    if patch.get("news_hook") and news_entries:
+        sizing, _ = _news_hook(patch, news_entries, 0)
+        news_off = (banner_off if banner else patch["stub_off"]) - len(sizing) * 4
+        news_words, news_labels = _news_hook(patch, news_entries, news_off)
+        news = b"".join(struct.pack("<I", word) for word in news_words)
+
+    used = len(stub) + (len(banner) if banner else 0) + (len(news) if news else 0)
     if used + LUMA_PAYLOAD_SIZE > text_room:
         raise RuntimeError(
             f"stubs are {used} bytes and Luma needs 0x{LUMA_PAYLOAD_SIZE:X} more, "
@@ -2128,7 +2493,6 @@ def _generate_smdh_names(
         (patch["stub_off"], stub),
         (table_off, table),
     ]
-    _verify_smdh_names(patch, code, records, text_size, labels)
 
     if banner:
         site = patch["banner_hook"]["site_off"]
@@ -2148,6 +2512,27 @@ def _generate_smdh_names(
         ]
         _verify_banner(patch, code, records, banner_labels, banner_entries)
 
+    if news:
+        site = patch["news_hook"]["site_off"]
+        word = struct.unpack_from("<I", code, site)[0]
+        if word != patch["news_hook"]["original_word"]:
+            raise RuntimeError(
+                f"0x{site:X} holds 0x{word:08X}, expected "
+                f"0x{patch['news_hook']['original_word']:08X} - this is not the tip dispatcher "
+                f"the notification offsets were taken from"
+            )
+        if any(code[news_off:news_off + len(news)]):
+            raise RuntimeError(f"the notification hook would overwrite code at 0x{news_off:X}")
+        records += [
+            (site, struct.pack("<I", _b(site, news_labels["news_hook"]))),
+            (news_off, news),
+        ]
+        _verify_news(patch, code, records, news_labels, news_entries)
+
+    # Last, so Luma's symbol search runs over the image every record has been applied to:
+    # each hook takes out a `push`, and a `push` is what findFunctionStart() walks back to.
+    _verify_smdh_names(patch, code, records, text_size, labels)
+
     log = [
         f"{patch['title']} title version {version}",
         f"code.ips: ReadTitleIcon thunk at 0x{thunk:X} -> 0x{labels['icon_hook']:X}, "
@@ -2163,6 +2548,12 @@ def _generate_smdh_names(
         log.append(
             f"code.ips: banner open at 0x{patch['banner_hook']['site_off']:X} -> "
             f"{len(banner)}-byte hook at 0x{banner_off:X}, serving {served}"
+        )
+    if news:
+        tips = ", ".join(str(entry["body_label"]) for entry in news_entries)
+        log.append(
+            f"code.ips: tip dispatcher at 0x{patch['news_hook']['site_off']:X} -> "
+            f"{len(news)}-byte notification hook at 0x{news_off:X}, rewriting {tips}"
         )
     return {"code.ips": make_ips(records)}, log
 
@@ -2205,7 +2596,7 @@ def _verify_smdh_names(
 
 
 def generate(
-    tid: str, code_path: Path, exheader_path: Path, names: dict[str, bytes] | None = None
+    tid: str, code_path: Path, exheader_path: Path, names: dict[str, object] | None = None
 ) -> tuple[dict[str, bytes], list[str]]:
     """Return {filename: contents} for the title's code.ips and exheader.bin, plus a log."""
     patch = dict(HOOK_PATCHES[tid.upper()])
@@ -2244,7 +2635,11 @@ def generate(
     if patch.get("kind") == "smdh_names":
         if not (names or {}).get("smdh"):
             raise RuntimeError(f"{patch['title']} needs an SMDH name table and none was built")
-        return _generate_smdh_names(patch, code, exheader, version, names["smdh"])
+        if patch.get("news_hook") and not (names or {}).get("news_tips"):
+            raise RuntimeError(f"{patch['title']} needs a notification table and none was built")
+        return _generate_smdh_names(
+            patch, code, exheader, version, names["smdh"], names.get("news_tips")
+        )
 
     if patch.get("kind") == "exheader_only":
         access = struct.unpack_from("<Q", exheader, ACCESS_INFO_OFFSET)[0]
