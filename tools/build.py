@@ -48,8 +48,10 @@ from store import open_store  # noqa: E402
 
 ROOT = Path(__file__).resolve().parent.parent
 
-# The country code the mod takes over: Russia's, because Nintendo's table has no Ukraine.
-UKRAINE_CODE = 100
+# Russia's country code, the one country whose sub-region list ships translated as well:
+# Nintendo's table has no Ukraine and no code can be added to it, and a country code is
+# what the console reports to everything outside itself, so no row is renamed into Ukraine.
+RUSSIA_CODE = 100
 
 # Titles: strings project name -> target TIDs, language slot, dump used as source.
 #
@@ -650,11 +652,10 @@ def build_csv(cfg: dict, romfs: Path, table: dict[str, str]) -> tuple[dict[str, 
     "<country code>:<address id>", which is the same id the `area` archive numbers its
     regions with, so the two tables cannot drift apart.
 
-    Country code 100 was Russia and is Ukraine now, exactly as in the `area` archive. Its
-    region block is not translated but rebuilt: the 83 Russian rows go, and 27 Ukrainian
-    ones take ids 2..28 - the same ids, in the same order, as the region file the country
-    list hands to Ukraine. Every language column of those rows gets the transliteration and
-    the Russian one the Ukrainian name, because the rows are Ukraine's now.
+    No row is added, dropped or renumbered: an address id is what the console sends along
+    with the country code, so the map another player sees resolves it through their own
+    table. Country code 100 keeps Russia and its 83 regions, translated the same way as
+    every other country - only the Russian column is written.
     """
     files = cfg.get("csv_tables")
     if not files:
@@ -662,43 +663,21 @@ def build_csv(cfg: dict, romfs: Path, table: dict[str, str]) -> tuple[dict[str, 
 
     strings = ROOT / "src" / "strings" / "plaza_map"
     render = lambda text: apply_homoglyphs(text, table)  # noqa: E731
-    regions = json.loads((ROOT / "src" / "strings" / "area" / "EU_100.json").read_text(encoding="utf-8"))
-    ukraine = {int(i) + 1: entry for i, entry in regions.items() if i.isdigit()}
 
     blobs, log = {}, []
     for rel, json_name in files.items():
         names = json.loads((strings / json_name).read_text(encoding="utf-8"))
         parsed = csvtab.load(romfs / rel)
-        keep: list[csvtab.Row] = []
-        rebuilt = 0
         for row in parsed.rows:
             if not row.is_row:
-                keep.append(row)
                 continue
             key = csvtab.key_of(row)
-            code = int(row.fields[csvtab.COUNTRY_ID])
-            if code == UKRAINE_CODE and key not in names:
-                # A Russian region row: dropped, and the Ukrainian ones are appended below.
-                continue
             entry = names.get(key)
             if entry is None:
                 raise SystemExit(f"mii_plaza: {rel} row {key} has no translation in {json_name}")
             row.fields[csvtab.RUSSIAN] = render(entry["ua"])
-            keep.append(row)
-            if code == UKRAINE_CODE and json_name == "region.json":
-                template = row
-                for index, region in sorted(ukraine.items()):
-                    fields = list(template.fields)
-                    fields[csvtab.ADDRESS] = region["latin"]
-                    fields[csvtab.ADDRESS_ID] = str(index)
-                    for slot in range(csvtab.ENGLISH, len(fields)):
-                        fields[slot] = render(region["ua"]) if slot == csvtab.RUSSIAN else region["latin"]
-                    keep.append(csvtab.Row("", fields))
-                    rebuilt += 1
-        parsed.rows = keep
         blobs[rel] = parsed.build()
-        note = f", {rebuilt} Ukrainian region rows rebuilt" if rebuilt else ""
-        log.append(f"{rel}: {len(names)} names translated{note}")
+        log.append(f"{rel}: {len(names)} names translated")
     return blobs, log
 
 
@@ -709,10 +688,11 @@ def build_area(cfg: dict, tid: str, table: dict[str, str]) -> list[str]:
     `area:` mount unconditional, so a console that reports a region other than EU has to
     find its files here too. Only the two EU files differ from the dump.
 
-    Country code 100 was Russia and is now Ukraine, which is the same trade the language
-    slot makes - Nintendo's country table has no Ukraine in any region. Its region list is
-    therefore not translated but replaced: 83 Russian regions out, 27 Ukrainian ones in, so
-    that file is re-emitted at the new size and the country record's own count follows.
+    Nintendo's country table has no Ukraine in any region and no code can be added to it,
+    so nothing here is renamed into Ukraine: a country code and a region index are what the
+    console reports to NNID, the eShop and every console it meets, and a row reading one
+    place while reporting another mislabels its regions for everyone else. Code 100 keeps
+    Russia and its 83 regions; only the Russian name slot is rewritten, in both files.
     """
     source = ROOT / "work" / cfg["area"] / "romfs"
     if not source.is_dir():
@@ -733,24 +713,20 @@ def build_area(cfg: dict, tid: str, table: dict[str, str]) -> list[str]:
         render=render,
     )
     area_mod.resort(country)
-    area_mod.set_sub_count(country, UKRAINE_CODE, len(regions) - 1)
 
-    ukraine = area_mod.resize(area_mod.load(source / "EU" / f"{UKRAINE_CODE}_LZ.bin"), len(regions) - 1)
-    # JSON keys are 1..27 in list order; the records they land in are numbered from 2.
-    names = {int(i) + 1: entry for i, entry in regions.items() if i.isdigit()}
-    # The Russian slot carries the Ukrainian names; every other slot carries the
-    # transliteration, because this file's records are Ukraine's now and leaving Russian
-    # regions in the other languages would be worse than a name no EUR console displays.
-    for slot in range(area_mod.NAME_SLOTS):
-        ua = slot == area_mod.RU_SLOT
-        key = "ua" if ua else "latin"
-        area_mod.set_names(ukraine, {i: e[key] for i, e in names.items()}, slot=slot, render=render)
-        area_mod.resort(ukraine, slot=slot)
+    # JSON keys are the records' own indices, so the names land where the console looks.
+    russia = area_mod.load(source / "EU" / f"{RUSSIA_CODE}_LZ.bin")
+    area_mod.set_names(
+        russia,
+        {int(index): entry["ua"] for index, entry in regions.items() if index.isdigit()},
+        render=render,
+    )
+    area_mod.resort(russia)
 
     dest = ROOT / "dist" / "luma" / "titles" / tid / "area"
     replaced = {
         "EU/country_LZ.bin": country,
-        f"EU/{UKRAINE_CODE}_LZ.bin": ukraine,
+        f"EU/{RUSSIA_CODE}_LZ.bin": russia,
     }
     written = 0
     for path in sorted(source.rglob("*_LZ.bin")):
@@ -764,9 +740,8 @@ def build_area(cfg: dict, tid: str, table: dict[str, str]) -> list[str]:
         written += 1
 
     return [
-        f"  area: {len(countries) - 1} EU countries translated, code {UKRAINE_CODE} is now "
-        f"{countries[str(UKRAINE_CODE)]['ua']} with {len(regions) - 1} regions "
-        f"(was {countries[str(UKRAINE_CODE)]['ru']}, 83)",
+        f"  area: {len(countries) - 1} EU countries translated, code {RUSSIA_CODE} is "
+        f"{countries[str(RUSSIA_CODE)]['ua']} with its own {len(regions) - 1} regions",
         f"{dest.relative_to(ROOT)}/ ({written} files)",
     ]
 

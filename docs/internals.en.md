@@ -704,14 +704,20 @@ The paths are repointed for **all six regions**, not just EU: the mount is uncon
 console reporting another region has to find its files on the card too. That is why the mod
 ships the whole dumped archive — 129 files, 564 KB, two of them changed.
 
-### Why Russia becomes Ukraine instead of getting its own row
+### Why Ukraine does not appear in the country list
 
 Nintendo's country code table has **no Ukraine at all**. The European block 64–127 is gapless:
 `…96 Norway, 97 Poland, 98 Portugal, 99 Romania, 100 Russia, 101 Serbia & Kosovo…`. A country
 code is a system-wide value that NNID, the eShop, StreetPass and the age ratings all depend on;
-adding a row would mean rewriting a table half the system reads. So code **100 is taken over
-exactly the way the language slot is**: the Russian slot reads «Україна» instead of «Россия»,
-and the other 66 names are translated.
+adding a row would mean rewriting a table half the system reads.
+
+Taking code 100 over the way the language slot is taken over is possible — the mod used to do
+exactly that — but **a country code and a region index are what the console reports outwards**,
+not what it displays. A row that reads «Україна» while reporting 100 is resolved as Russia by
+every other machine, and the Ukrainian oblast at index `5` reaches them as the Russian one that
+sits at the same index. So no row is renamed into Ukraine: code 100 stays Russia, named the way
+this translation names it — `росія (болота)`, lowercase, as are all 83 of its oblasts. 67
+countries translated in total, and what the screen says matches what goes out over the network.
 
 ### The format, and the sorting
 
@@ -722,21 +728,22 @@ system's language order, where slot 10 is Russian — the same "block 10" as in 
 The important part is the **sort row**. Byte `j` of it is the record's position in language
 `j`'s alphabetically sorted list, while the records themselves sit in Japanese order. Translate
 the names without recomputing rank 10 and the Ukrainian list comes out ordered by the Russian
-alphabet: «Австралія, Австрія, Азербайджан, Албанія» survives that, «Україна» in the middle of
-the list does not. Every row exists twice, once in the record and once in a table at the end of
+alphabet: «Австралія, Австрія, Азербайджан, Албанія» survives that, «Німеччина» where «Германия»
+stood does not. Every row exists twice, once in the record and once in a table at the end of
 the file, and `tools/area.py` writes both. The model is checked against all 129 files of the
 dump: recomputing the English and Russian columns reproduces what Nintendo wrote, byte for byte,
 except in 17 files that follow a local order (Norwegian `Ø` after `Z`, Turkish `ı` before `i`,
 the Asian lists ordered by prefecture code) — none of which the mod touches.
 
-Code 100's region list is not translated but **replaced**: Russia has 83 regions, Ukraine has
-27. Since every section is fixed-size, the file is re-emitted smaller (`area.resize()`) and the
-country record's own count comes down with it. The Ukrainian names go into the Russian slot and
-a transliteration into every other one: leaving Russian oblasts behind a row that now reads
-«Україна» would be worse than a name no EUR console ever displays.
+Code 100's region list is **translated like every other one**: its 83 records stay at their own
+indices (9…91, record 0 being the «—» placeholder), and nothing is added or renumbered. Only the
+Russian slot is written; the other 15 stay as Nintendo wrote them, so an English console still
+shows `Adygey, Altay…` under `Russia`.
 
-**Side effect:** switch the console to English and the row still reads `Russia`, but the 27
-regions under it are Ukrainian. The mod only replaces its own slot, and here that boundary shows.
+**Why not otherwise:** a region index travels with the country code, and the receiving side
+resolves it through its own table. Twenty-seven Ukrainian oblasts in place of 83 Russian ones
+would mean every StreetPass, friend card and Mii Plaza map reads a Ukrainian oblast as the
+Russian one at the same index — which is exactly the mix-up this avoids.
 
 ### The StreetPass Map
 
@@ -749,10 +756,10 @@ re-serialises a row it was not asked to change**: it splits on `","`, swaps the 
 joins it back, leaving every other byte alone - an untouched file rebuilds byte for byte.
 
 Rows are keyed `<country code>:<address id>`, and that id is the same one the `area` archive
-numbers its regions with, so the two tables cannot drift apart. Code 100's block is likewise
-rebuilt rather than translated: the 83 Russian rows go and 27 Ukrainian ones take ids 2..28 -
-the same ids, in the same order, as the region file. In total **121 countries and 1314 regions**
-translated, 27 rows rebuilt.
+numbers its regions with, so the two tables cannot drift apart. Code 100's block is translated
+in place like the rest, ids 9..91 untouched, because that id is what the console sends along with
+the country code. In total **121 countries and 1397 regions** translated, no row added, dropped
+or renumbered.
 
 ## What the mod does not translate
 

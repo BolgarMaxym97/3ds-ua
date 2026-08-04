@@ -49,7 +49,7 @@ The **sort row** is what makes this more than a string swap. Byte j of a record'
 that record's position in language j's alphabetically sorted list; the records themselves
 sit in Japanese order. Rewrite slot 10 without rewriting rank 10 and the console shows
 Ukrainian names ordered by the Russian alphabet - «Австралія, Австрія, Азербайджан,
-Албанія» happens to survive that, «Україна» in the middle of the list does not. Every row
+Албанія» happens to survive that, «Німеччина» where «Германия» stood does not. Every row
 lives twice, once inside the record and once in the table at the end of the file; both
 copies are written.
 """
@@ -271,42 +271,6 @@ def resort(table: Table, slot: int = RU_SLOT, order: dict[str, int] | None = Non
             write(record, record.sort_offset, main_rank[id(twin)])
         elif id(record) in extended:
             write(record, record.sort_offset, extended[id(record)])
-
-
-def resize(table: Table, keep: int) -> Table:
-    """Return a copy of a region table holding only its first `keep` sub-regions.
-
-    Ukraine has 27 regions where Russia, whose slot it takes, has 83. Every section of the
-    file is fixed-size and the alternates section is dropped, so the shorter file is a
-    straight re-emit: the placeholder record, `keep` renumbered records, an empty
-    alternates count, one sort row each, and the 12-byte trailer. The country record's own
-    sub-region count has to be lowered to match - `set_sub_count()` does that side.
-    """
-    if table.kind != "region":
-        raise ValueError("only a region table has a sub-region count to shrink")
-    if not 0 < keep <= table.count:
-        raise ValueError(f"cannot keep {keep} of {table.count} sub-regions")
-
-    out = bytearray(struct.pack("<I", keep))
-    for i in range(keep + 1):
-        record = bytearray(table.raw[4 + i * REGION_STRIDE : 4 + (i + 1) * REGION_STRIDE])
-        # Index 0 is the placeholder; real regions are numbered from 2, because index 1
-        # means "the country, no region" - it is what a one-region country like Cyprus
-        # uses, and what row id 1 of the StreetPass Map's region.csv holds.
-        record[2] = i if i == 0 else i + 1
-        out += record
-    out += struct.pack("<I", 0)
-    for i in range(keep + 1):
-        out += bytes(table.raw[table.records[i].sort_offset : table.records[i].sort_offset + SORT_ROW])
-    out += bytes(12)
-    return parse(bytes(out), "region")
-
-
-def set_sub_count(table: Table, code: int, count: int) -> None:
-    """Set how many sub-regions a country record claims."""
-    record = table.by_code(code)
-    record.sub_count = count
-    struct.pack_into("<I", table.raw, record.offset + 4, count)
 
 
 def kind_of(path: Path) -> str:

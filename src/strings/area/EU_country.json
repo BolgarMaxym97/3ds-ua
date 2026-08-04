@@ -1,5 +1,5 @@
 {
-  "_comment": "Country list of the `area` system data archive (0004009B00010402), EU region. Keys are Nintendo country codes; `ru` is the original of the slot this mod replaces. Code 100 was Russia: Nintendo's country table has no Ukraine in any region (Europe is a gapless 64-127 and Ukraine is not in it), so the row is taken over the same way the language slot is. Widest official name across the 12 languages is 325px, which nothing here comes close to.",
+  "_comment": "Country list of the `area` system data archive (0004009B00010402), EU region. Keys are Nintendo country codes; `ru` is the original of the slot this mod replaces, `ua` its replacement. Nintendo's country table has no Ukraine in any region (Europe is a gapless 64-127 and Ukraine is not in it) and a code cannot be added, so no row is taken over: the country code is what the console reports to NNID, the eShop and every other console it meets, and a row that reads one country while reporting another mislabels its regions for everyone online. Code 100 therefore keeps Russia, named as this translation names it. Widest official name across the 12 languages is 325px, which nothing here comes close to.",
   "64": { "en": "Albania", "ru": "Албания", "ua": "Албанія" },
   "65": { "en": "Australia", "ru": "Австралия", "ua": "Австралія" },
   "66": { "en": "Austria", "ru": "Австрия", "ua": "Австрія" },
@@ -36,7 +36,7 @@
   "97": { "en": "Poland", "ru": "Польша", "ua": "Польща" },
   "98": { "en": "Portugal", "ru": "Португалия", "ua": "Португалія" },
   "99": { "en": "Romania", "ru": "Румыния", "ua": "Румунія" },
-  "100": { "en": "Russia", "ru": "Россия", "ua": "Україна" },
+  "100": { "en": "Russia", "ru": "Россия", "ua": "росія (болота)" },
   "101": { "en": "Serbia and Kosovo", "ru": "Сербия и Косово", "ua": "Сербія і Косово" },
   "102": { "en": "Slovakia", "ru": "Словакия", "ua": "Словаччина" },
   "103": { "en": "Slovenia", "ru": "Словения", "ua": "Словенія" },

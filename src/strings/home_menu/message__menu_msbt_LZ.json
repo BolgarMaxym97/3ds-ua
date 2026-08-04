@@ -105,7 +105,7 @@
   },
   "lau_dlg_quit9": {
     "en": "Saving data and\nclosing software...",
-    "ua": "Збереження даних\nі закриття програми…..."
+    "ua": "Збереження даних\nі закриття програми..."
   },
   "lau_dlg_app_jump": {
     "en": "Please wait...",
@@ -1445,7 +1445,7 @@
   },
   "lau_press_pow_u1": {
     "en": "・ Count your steps and\n　 collect Play Coins{t:1.0:1400}\n                    {/t:1.0}\n・ Use StreetPass{t:1.0:1400}\n                    {/t:1.0}\n・ Receive various content\n　 via SpotPass",
-    "ua": "・ Підраховувати ваші кроки\n　 і збирати ігрові монетки.{t:1.0:1400}\n                    {/t:1.0}\n・ Використовувати StreetPass.{t:1.0:1400}\n                    {/t:1.0}\n・ Отримувати різноманітний контент\n　 через SpotPass."
+    "ua": "・ Підраховувати ваші кроки\n　 і збирати ігрові монетки.{t:1.0:1400}\n                    {/t:1.0}\n・ Використовувати StreetPass.{t:1.0:1400}\n                    {/t:1.0}\n・ Отримувати контент у SpotPass.\n♥ Мій телеграм: t.me/side_quest_ua ♥"
   },
   "lau_press_pow0": {
     "en": "Software closed.",
@@ -1477,7 +1477,7 @@
   },
   "lau_press_pow5": {
     "en": "Close the system to enter Sleep Mode.\nThe HOME Menu will appear when\nyou resume use.",
-    "ua": "{t:1.1:5000}Щоб перейти в режим сну, закрийте систему.\nКоли ви знову її відкриєте, з'явиться меню HOME.\nОновлення українізатора та більше: @side_quest_ua{/t:1.1}"
+    "ua": "{t:1.1:5000}Щоб перейти в режим сну, закрийте систему.\nКоли ви знову її відкриєте, з'явиться меню HOME.{/t:1.1}"
   },
   "lau_press_pow5_flw": {
     "en": "Move the sleep switch to the right to\nenter Sleep Mode. The HOME Menu\nwill appear when you resume use.",
