@@ -427,8 +427,12 @@ def _words(
             continue
         # A highlighted run is one pane. Breaking it across lines would need a second pane in
         # that colour, which the page does not have, so it stays whole while it fits a line.
+        # `while it fits` has to count what the run is glued to: the markup carries no space
+        # between `Примітка.` and the run that follows it, so the two are one word, and a run
+        # that fits on its own can still push that word off the page.
         whole = text_width(payload, flow, widths)
-        if style and " " in payload.strip() and whole <= limit:
+        glued = sum(piece.width for piece in words[-1][1])
+        if style and " " in payload.strip() and glued + whole <= limit:
             words[-1][1].append(Piece(style=style, text=payload.strip(), width=whole))
             continue
         for chunk in re.split(SPACE_RE, payload):
@@ -472,6 +476,24 @@ def layout(text: str, flow: Flow, limit: float, widths: dict[int, int]) -> list[
             x += piece.width
 
     return lines
+
+
+def overflow(lines: list[list[Piece]], flow: Flow, limit: float) -> float:
+    """How far past the column the widest laid-out line reaches, in pixels.
+
+    layout() wraps greedily, so it can only keep a line inside the column by moving the next
+    word down - and a word that is wider than the column on its own has nowhere to go. It is
+    put on a line of its own and drawn past the right edge, silently: nothing downstream
+    looks at how wide the lines came out. That is what clipped `налаштування` out of the
+    contents cells and pushed the connection warnings off the page on hardware.
+    """
+    worst = 0.0
+    for index, line in enumerate(lines):
+        if not line:
+            continue
+        last = line[-1]
+        worst = max(worst, last.x + last.width - flow.margin(index) - limit)
+    return worst
 
 
 def to_edits(lines: list[list[Piece]], flow: Flow) -> dict[str, bclyt.Edit]:
@@ -622,7 +644,16 @@ def cmd_extract(name: str) -> None:
     print(f"{path.relative_to(ROOT)}: {len(out)} paragraphs, {chars} characters")
 
 
-def _problems(name: str) -> tuple[list[str], int, int]:
+def _problems(name: str) -> tuple[list[str], list[str], int, int]:
+    """-> (problems, wide, translated, total).
+
+    A paragraph that runs past its column is reported apart from the rest, because it is a
+    translation decision rather than a broken build: the column is the widest line any of
+    Nintendo's eight localisations drew there, and a handful of Ukrainian UI terms are simply
+    longer than any of them (`Стрільба` where Russian has `Тир`). Renaming the term to fit
+    the manual would leave the manual naming a button the console does not have, so those are
+    listed and left to the translator instead of stopping the build.
+    """
     cfg = MANUALS[name]
     manual = source_manual(name)
     strings = load_json(name)
@@ -630,6 +661,7 @@ def _problems(name: str) -> tuple[list[str], int, int]:
     limits = budgets(manual, cfg["slot"], widths)
 
     problems: list[str] = []
+    wide: list[str] = []
     translated = total = 0
     for page, flows in pages_of(manual, cfg["slot"]).items():
         for index, flow in enumerate(flows):
@@ -651,19 +683,36 @@ def _problems(name: str) -> tuple[list[str], int, int]:
             if missing:
                 problems.append(f"{key}: missing glyphs {missing}")
 
+            limit = limits[key] + WIDTH_SLACK
             try:
-                to_edits(layout(rendered, flow, limits[key] + WIDTH_SLACK, widths), flow)
+                lines = layout(rendered, flow, limit, widths)
+                to_edits(lines, flow)
             except LayoutError as error:
                 problems.append(f"{key}: {error}: {ua[:60]!r}")
+                continue
 
-    return problems, translated, total
+            # A zero-width column means no localisation drew that paragraph, so there is no
+            # width to compare against - the `+Скорость-` gauge of the Camera manual, drawn
+            # by the artwork rather than by a text pane.
+            past = overflow(lines, flow, limit) if limits[key] else 0.0
+            if past > 0:
+                wide.append(
+                    f"{key}: {past:.0f}px past the {limits[key]:.0f}px column: {ua[:60]!r}"
+                )
+
+    return problems, wide, translated, total
 
 
 def cmd_check(name: str) -> list[str]:
-    problems, translated, total = _problems(name)
-    print(f"{name}: {translated} translated paragraphs of {total}, {len(problems)} problems")
+    problems, wide, translated, total = _problems(name)
+    print(
+        f"{name}: {translated} translated paragraphs of {total}, "
+        f"{len(problems)} problems, {len(wide)} past their column"
+    )
     for problem in problems:
-        print(f"  {problem}")
+        print(f"  ✗ {problem}")
+    for line in wide:
+        print(f"  ! {line}")
     return problems
 
 

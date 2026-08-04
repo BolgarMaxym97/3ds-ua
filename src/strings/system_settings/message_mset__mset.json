@@ -137,7 +137,7 @@
   },
   "top_internet": {
     "en": "Internet\nSettings",
-    "ua": "Інтернет-\nналаштування"
+    "ua": "Зв'язок з\nІнтернетом"
   },
   "dlg_top_internet_flw": {
     "en": "This function requires wireless\ncommunication to be enabled.\n\nDo you want to enable\nwireless communication?",
@@ -401,7 +401,7 @@
   },
   "dlg_region_00": {
     "en": "If you change your country\nsettings, you will no longer be \nable to use services that require\na Nintendo Network ID, such as\nbrowsing Nintendo eShop or\nposting to Miiverse.",
-    "ua": "Якщо змінити налаштування\nкраїни, ви більше не зможете\nкористуватися сервісами, що\nпотребують Nintendo Network ID,\nнаприклад Nintendo eShop\nабо Miiverse."
+    "ua": "Якщо змінити налаштування\nкраїни, ви більше не зможете\nкористуватися сервісами, що\nпотребують Nintendo Network ID\n(наприклад, Nintendo eShop\nчи Miiverse)."
   },
   "dlg_region_01": {
     "en": "After changing your country\nsettings, you will also need to\nreconfigure the restrictions for\nsoftware ratings in Parental\nControls.",
@@ -921,7 +921,7 @@
   },
   "mic_test_comm": {
     "en": "Check microphone sensitivity.",
-    "ua": "Перевірка чутливості мікрофона."
+    "ua": "Перевірка чутливості\nмікрофона."
   },
   "dlg_mic_wait": {
     "en": "",
@@ -1161,7 +1161,7 @@
   },
   "Initial_comm_n0": {
     "en": "This will remove the link to this\nNintendo Network ID.\n\nThe ID itself will not be deleted.\n\nYou can link to it again via \nNintendo Network ID Settings ⇒\nLink an Existing ID.",
-    "ua": "Це видалить прив'язку до цього\nNintendo Network ID.\n\nСам ID не буде видалено.\n\nПрив'язати його знову можна\nв налаштуваннях\nNintendo Network ID."
+    "ua": "Це видалить прив'язку\nдо цього Nintendo Network ID.\n\nСам ID не буде видалено.\n\nПрив'язати його знову можна\nв налаштуваннях\nNintendo Network ID."
   },
   "Initial_comm_n1": {
     "en": "The Nintendo Network ID linked\nto this system cannot be linked\nto other Nintendo 3DS systems.\n\nPlease select System Transfer\nif you wish to link the ID to\nanother system.",
@@ -1293,7 +1293,7 @@
   },
   "bln_2b_later": {
     "en": "Read Later",
-    "ua": "Читати потім"
+    "ua": "Пізніше"
   },
   "bln_base_button_4": {
     "en": "",
@@ -1881,7 +1881,7 @@
   },
   "net_dlg_aoss_ok": {
     "en": "AOSS configuration is complete.\nSaving as Connection %d.\n\nA connection test will now be\nperformed.",
-    "ua": "Налаштування AOSS завершено.\nЗбереження як Зв'язок %d.\n\nЗараз буде виконано\nперевірку зв'язку."
+    "ua": "Налаштування AOSS\nзавершено. Збереження\nяк Зв'язок %d.\n\nЗараз буде виконано\nперевірку зв'язку."
   },
   "net_dlg_aoss_ng": {
     "en": "AOSS configuration failed.\n\nIf the problem recurs, please\nwait for 5 minutes and try\nagain.",
@@ -1961,7 +1961,7 @@
   },
   "net_new_wps1": {
     "en": "Confirm that the access point is\nWi-Fi Protected Setup-\ncompatible, then press and hold\nthe access point's Wi-Fi\nProtected Setup button until its\nwireless indicator LED blinks. It\nmay take up to two minutes to\ncomplete this setup.",
-    "ua": "Переконайтеся, що точка\nдоступу сумісна з Wi-Fi\nProtected Setup, потім натисніть\nі тримайте на ній кнопку Wi-Fi\nProtected Setup, поки не\nзаблимає індикатор мережі.\nЦе може тривати до\nдвох хвилин."
+    "ua": "Переконайтеся, що точка\nдоступу сумісна з Wi-Fi\nProtected Setup, потім\nнатисніть і тримайте на ній\nкнопку Wi-Fi Protected Setup,\nпоки не заблимає індикатор\nмережі. Це може тривати\nдо двох хвилин."
   },
   "net_new_wps2_0": {
     "en": "PIN Code: %08d",
@@ -2317,7 +2317,7 @@
   },
   "net_detail_set": {
     "en": "Detailed Setup",
-    "ua": "Докладні налаштування"
+    "ua": "Докладніше"
   },
   "net_ip_address": {
     "en": "IP Address",
@@ -2521,7 +2521,7 @@
   },
   "net_bln_test_ok": {
     "en": "Connection Test successful.\n\nUse a compatible software title\nto verify that data transmission\nwith other users is working.",
-    "ua": "Перевірку пройдено.\n\nЩоб перевірити передачу\nданих з іншими, скористайтеся\nсумісною програмою."
+    "ua": "Перевірку пройдено.\n\nЩоб перевірити обмін даними\nз іншими, скористайтеся\nсумісною програмою."
   },
   "net_bln_test_ng": {
     "en": "Connection Test failed.\n\nHere are details of the error.",
@@ -2541,11 +2541,11 @@
   },
   "net_bln_test_eu": {
     "en": "You must accept the terms of\nthe Nintendo 3DS Service User\nAgreement before you can\nconnect to the internet and\nuse online services.",
-    "ua": "Перед під'єднанням\nдо Інтернету й онлайн-сервісів\nтреба прийняти умови\nугоди користувача\nсервісів Nintendo 3DS."
+    "ua": "Перед під'єднанням\nдо Інтернету й онлайн-\nсервісів треба прийняти\nумови угоди користувача\nсервісів Nintendo 3DS."
   },
   "net_bln_test": {
     "en": "This is a test to determine whether you\ncan connect to the internet or not.\n\nUse a compatible software title\nto verify that data transmission\nwith other users is working.",
-    "ua": "Це перевірка, чи можете ви\nпід'єднатися до Інтернету.\n\nЩоб перевірити передачу\nданих з іншими, скористайтеся\nсумісною програмою."
+    "ua": "Це перевірка, чи можете ви\nпід'єднатися до Інтернету.\n\nЩоб перевірити обмін даними\nз іншими, скористайтеся\nсумісною програмою."
   },
   "net_bln_test_err": {
     "en": "If this is a temporary connection error,\ntouch Test Again to try connecting one\nmore time.\n\nIf you don't know the security key,\nask the person who set up the access\npoint.",
@@ -2617,7 +2617,7 @@
   },
   "net_bg24_comm_u1": {
     "en": "Choose whether you would like\nSpotPass to automatically download\nsoftware, such as free or trial software.",
-    "ua": "Виберіть, чи має SpotPass\nавтоматично завантажувати програми,\nнаприклад безплатні чи пробні."
+    "ua": "Виберіть, чи має SpotPass\nавтоматично завантажувати\nпрограми, наприклад безплатні\nчи пробні."
   },
   "net_bg24_comm1": {
     "en": "Do you want to use SpotPass \nto automatically download \nsoftware?",
@@ -2633,11 +2633,11 @@
   },
   "net_bln_bg24_get": {
     "en": "Touch Yes and your Nintendo 3DS\nsystem will be able to download new\nsoftware when in Sleep Mode and\nin range of a usable access point.",
-    "ua": "Торкніться Так — і ваша Nintendo 3DS\nзможе завантажувати нові програми\nв режимі сну, коли поблизу\nє придатна точка доступу."
+    "ua": "Торкніться Так — і ваша\nNintendo 3DS зможе завантажувати\nнові програми в режимі сну,\nколи поблизу є придатна\nточка доступу."
   },
   "net_bln_bg24_get_flw": {
     "en": "Touch Yes and your Nintendo 2DS\nsystem will be able to download new\nsoftware when in Sleep Mode and\nin range of a usable access point.",
-    "ua": "Торкніться Так — і ваша Nintendo 2DS\nзможе завантажувати нові програми\nв режимі сну, коли поблизу\nє придатна точка доступу."
+    "ua": "Торкніться Так — і ваша\nNintendo 2DS зможе завантажувати\nнові програми в режимі сну,\nколи поблизу є придатна\nточка доступу."
   },
   "net_bg24_comm_u2": {
     "en": "Select No to opt out of the collection\nand use of your data to improve\nNintendo's products/services. Opting\nout while offline only affects future\ndata. Opting out while online also\nstops the usage of collected data.",
@@ -3173,11 +3173,11 @@
   },
   "dat_dlg_delete7_sac": {
     "en": "Back up this software's save\ndata and delete the software?\n\nPlease use the microSD card\ncontaining this backup data\nnext time you use this software.",
-    "ua": "Створити резервну копію\nзбережень і видалити програму?\n\nНаступного разу використайте\nкарту microSD із цією копією."
+    "ua": "Створити резервну копію\nзбережень і видалити\nпрограму?\n\nНаступного разу використайте\nкарту microSD із цією копією."
   },
   "dat_dlg_delete7_jan": {
     "en": "Back up this software's save\ndata and delete the software?\n\nPlease use the microSD card\ncontaining this backup data\nnext time you use this software.",
-    "ua": "Створити резервну копію\nзбережень і видалити програму?\n\nНаступного разу використайте\nкарту microSD із цією копією."
+    "ua": "Створити резервну копію\nзбережень і видалити\nпрограму?\n\nНаступного разу використайте\nкарту microSD із цією копією."
   },
   "dat_bu_soft_u": {
     "en": "Software to Back Up",
@@ -3265,7 +3265,7 @@
   },
   "dat_con_title_u": {
     "en": "Add-on Content Management",
-    "ua": "Керування додатковим вмістом"
+    "ua": "Додатковий вміст"
   },
   "dat_con_page": {
     "en": "Add-on Content",
@@ -3517,7 +3517,7 @@
   },
   "par_top_comm_u": {
     "en": "Parents or legal guardians can limit\naccess to certain Nintendo 3DS\nfeatures which they may deem\nunsuitable for their children. If you are\nunder the age of 18, talk to a parent\nor legal guardian about this.",
-    "ua": "Батьки чи опікуни можуть обмежити\nдоступ до деяких функцій системи,\nякі вважають непридатними для дітей.\nЯкщо вам менше 18 років, поговоріть\nпро це з батьками або опікуном."
+    "ua": "Батьки чи опікуни можуть обмежити\nдоступ до деяких функцій системи,\nякі вважають непридатними\nдля дітей. Якщо вам менше 18 років,\nпоговоріть про це з батьками\nабо опікуном."
   },
   "par_top_comm_u_n": {
     "en": "Parents or legal guardians can limit\naccess to certain features which they\nmay deem unsuitable for their children.",
@@ -3669,7 +3669,7 @@
   },
   "par_dlg_que2": {
     "en": "Please enter an answer to the\nsecret question. Use at least\nfour characters.",
-    "ua": "Введіть відповідь на секретне\nпитання. Мінімум\nчотири символи."
+    "ua": "Введіть відповідь\nна секретне питання.\nМінімум чотири символи."
   },
   "par_dlg_que1_q": {
     "en": "Please enter your secret\nquestion.",
@@ -3805,7 +3805,7 @@
   },
   "par_mas_reset": {
     "en": "Please choose a new PIN.\n\nIf you previously registered an\nemail address, the registration\nwill be deleted. Please register\nan email address again.",
-    "ua": "Виберіть новий PIN-код.\n\nЯкщо ви раніше реєстрували\nелектронну адресу, реєстрацію\nбуде видалено. Зареєструйте\nадресу знову."
+    "ua": "Виберіть новий PIN-код.\n\nЯкщо ви раніше реєстрували\nелектронну адресу,\nреєстрацію буде видалено.\nЗареєструйте адресу знову."
   },
   "par_chan_comm_u0": {
     "en": "Change the Parental Controls settings.",
@@ -3905,7 +3905,7 @@
   },
   "par_dlplay": {
     "en": "DS Download Play",
-    "ua": "Гра по завантаженню DS"
+    "ua": "Гра по завантаженню"
   },
   "par_movie": {
     "en": "Viewing\nDistributed Videos",
@@ -4053,11 +4053,11 @@
   },
   "par_mail_comm0": {
     "en": "You now have the option to\nregister an email address.\n\nIf you forget your PIN and the\nanswer to your secret question,\na master key to reset your PIN\ncan be sent to your registered\nemail address.",
-    "ua": "Тепер ви можете зареєструвати\nелектронну адресу.\n\nЯкщо ви забудете PIN-код\nі відповідь на секретне питання,\nголовний ключ для скидання\nPIN-коду можна надіслати\nна цю адресу."
+    "ua": "Тепер ви можете\nзареєструвати електронну\nадресу.\n\nЯкщо ви забудете PIN-код\nі відповідь на секретне\nпитання, головний ключ для\nскидання PIN-коду можна\nнадіслати на цю адресу."
   },
   "par_mail_comm_u1": {
     "en": "Please enter an email address that\nonly parents or guardians can access.",
-    "ua": "Введіть електронну адресу, до якої\nмають доступ лише батьки чи опікуни."
+    "ua": "Введіть електронну адресу,\nдо якої мають доступ\nлише батьки чи опікуни."
   },
   "par_mail_comm_u2": {
     "en": "Request a master key.",
@@ -4133,7 +4133,7 @@
   },
   "par_dlg_mail10": {
     "en": "The email addresses you have\nentered do not match.\n\nPlease check and try again.",
-    "ua": "Введені електронні адреси\nне збігаються.\n\nПеревірте й спробуйте знову."
+    "ua": "Введені електронні адреси\nне збігаються.\n\nПеревірте й спробуйте\nзнову."
   },
   "par_dlg_mail11": {
     "en": "",
@@ -4365,7 +4365,7 @@
   },
   "par_pegi_0002": {
     "en": "May include depictions of\nextreme violence, graphic\nsexual activity, discrimination,\nand glamorisation of drugs or\ncrime.",
-    "ua": "Може містити сцени\nнадмірного насильства,\nвідвертого сексу,\nдискримінації та романтизації\nнаркотиків чи злочинів."
+    "ua": "Може містити сцени\nнадмірного насильства,\nвідвертого сексу,\nдискримінації та\nромантизації наркотиків\nчи злочинів."
   },
   "par_pegi_0003": {
     "en": "Content suitable for those aged\n16 and above.",
@@ -4373,7 +4373,7 @@
   },
   "par_pegi_0004": {
     "en": "Realistic and sustained\nviolence may be permitted.\nThe game may show\nnon-graphic sexual activity as\nwell as erotic or sexual nudity.\nIt may also contain more\nextreme bad language, scenes\ndealing with drugs (including\ntobacco and alcohol), it may\nglamorise criminal activities,\nand may include gambling\nreferences.",
-    "ua": "Допускається реалістичне\nй тривале насильство. Гра\nможе показувати невідверті\nсексуальні сцени, еротичну\nчи сексуальну наготу. Може\nмістити грубішу лайку, сцени\nз наркотиками (тютюн,\nалкоголь), романтизувати\nзлочини й містити згадки\nпро азартні ігри."
+    "ua": "Допускається реалістичне\nй тривале насильство. Гра\nможе показувати невідверті\nсексуальні сцени, еротичну\nчи сексуальну наготу. Може\nмістити грубішу лайку,\nсцени з наркотиками\n(тютюн, алкоголь),\nромантизувати злочини\nй містити згадки\nпро азартні ігри."
   },
   "par_pegi_0005": {
     "en": "Content suitable for those aged\n12 and above.",
@@ -4381,7 +4381,7 @@
   },
   "par_pegi_0006": {
     "en": "Realistic violence towards\nfantasy characters, and\nnon-realistic violence to\nhuman or animal characters,\nmay be permitted. There may\nbe some sexual innuendo,\ndescriptions and images (but\nnothing too extreme) as well\nas some mild bad language.\nMay also contain gambling\nreferences.",
-    "ua": "Допускається реалістичне\nнасильство щодо\nфантастичних персонажів\nі нереалістичне — щодо\nлюдей чи тварин. Можливі\nсексуальні натяки, описи й\nзображення (нічого\nнадмірного), а також помірна\nлайка. Може містити згадки\nпро азартні ігри."
+    "ua": "Допускається реалістичне\nнасильство щодо\nфантастичних персонажів\nі нереалістичне — щодо\nлюдей чи тварин. Можливі\nсексуальні натяки, описи й\nзображення (нічого\nнадмірного), а також\nпомірна лайка. Може\nмістити згадки\nпро азартні ігри."
   },
   "par_pegi_0007": {
     "en": "Content suitable for those aged\n7 and above.",
@@ -4389,7 +4389,7 @@
   },
   "par_pegi_0008": {
     "en": "Some content may be\nfrightening for very young\nchildren. Non-realistic violence\ntowards fantasy characters, or\nto non-detailed human and\nanimal characters, may be\npermitted. Parents may wish to\ncheck the game before they\nallow their young children to\nplay it.",
-    "ua": "Деякий вміст може налякати\nдуже малих дітей.\nДопускається нереалістичне\nнасильство щодо\nфантастичних персонажів або\nсхематичних людей і тварин.\nБатькам варто перевірити гру,\nперш ніж дозволити її\nмаленьким дітям."
+    "ua": "Деякий вміст може налякати\nдуже малих дітей.\nДопускається нереалістичне\nнасильство щодо\nфантастичних персонажів\nабо схематичних людей\nі тварин. Батькам варто\nперевірити гру, перш ніж\nдозволити її маленьким\nдітям."
   },
   "par_pegi_0009": {
     "en": "Content suitable for all ages.",
@@ -4397,7 +4397,7 @@
   },
   "par_pegi_0010": {
     "en": "Some non-realistic violence\nin a comical, cartoon-like\ncontext, and nudity in a\nnon-sexual context, may be\npermitted.",
-    "ua": "Допускається помірне\nнереалістичне насильство\nв комічному, мультиплі-\nкаційному контексті та нагота\nв несексуальному контексті."
+    "ua": "Допускається помірне\nнереалістичне насильство\nв комічному, мультиплі-\nкаційному контексті\nта нагота в несексуальному\nконтексті."
   },
   "par_pegipor_0001": {
     "en": "Content suitable only for adults,\nthose aged 18 and above.",
@@ -4405,7 +4405,7 @@
   },
   "par_pegipor_0002": {
     "en": "May include depictions of\nextreme violence, graphic\nsexual activity, discrimination,\nand glamorisation of drugs or\ncrime.",
-    "ua": "Може містити сцени\nнадмірного насильства,\nвідвертого сексу,\nдискримінації та романтизації\nнаркотиків чи злочинів."
+    "ua": "Може містити сцени\nнадмірного насильства,\nвідвертого сексу,\nдискримінації та\nромантизації наркотиків\nчи злочинів."
   },
   "par_pegipor_0003": {
     "en": "Content suitable for those aged\n16 and above.",
@@ -4413,7 +4413,7 @@
   },
   "par_pegipor_0004": {
     "en": "Realistic and sustained\nviolence may be permitted.\nThe game may show\nnon-graphic sexual activity as\nwell as erotic or sexual nudity.\nIt may also contain more\nextreme bad language, scenes\ndealing with drugs (including\ntobacco and alcohol), it may\nglamorise criminal activities,\nand may include gambling\nreferences.",
-    "ua": "Допускається реалістичне\nй тривале насильство. Гра\nможе показувати невідверті\nсексуальні сцени, еротичну\nчи сексуальну наготу. Може\nмістити грубішу лайку, сцени\nз наркотиками (тютюн,\nалкоголь), романтизувати\nзлочини й містити згадки\nпро азартні ігри."
+    "ua": "Допускається реалістичне\nй тривале насильство. Гра\nможе показувати невідверті\nсексуальні сцени, еротичну\nчи сексуальну наготу. Може\nмістити грубішу лайку,\nсцени з наркотиками\n(тютюн, алкоголь),\nромантизувати злочини\nй містити згадки\nпро азартні ігри."
   },
   "par_pegipor_0005": {
     "en": "Content suitable for those aged\n12 and above.",
@@ -4421,7 +4421,7 @@
   },
   "par_pegipor_0006": {
     "en": "Realistic violence towards\nfantasy characters, and\nnon-realistic violence to\nhuman or animal characters,\nmay be permitted. There may\nbe some sexual innuendo,\ndescriptions and images (but\nnothing too extreme) as well\nas some mild bad language.\nMay also contain gambling\nreferences.",
-    "ua": "Допускається реалістичне\nнасильство щодо\nфантастичних персонажів\nі нереалістичне — щодо\nлюдей чи тварин. Можливі\nсексуальні натяки, описи й\nзображення (нічого\nнадмірного), а також помірна\nлайка. Може містити згадки\nпро азартні ігри."
+    "ua": "Допускається реалістичне\nнасильство щодо\nфантастичних персонажів\nі нереалістичне — щодо\nлюдей чи тварин. Можливі\nсексуальні натяки, описи й\nзображення (нічого\nнадмірного), а також\nпомірна лайка. Може\nмістити згадки\nпро азартні ігри."
   },
   "par_pegipor_0007": {
     "en": "Content suitable for those aged\n6 and above.",
@@ -4429,7 +4429,7 @@
   },
   "par_pegipor_0008": {
     "en": "Some content may be\nfrightening for very young\nchildren. Non-realistic violence\ntowards fantasy characters, or\nto non-detailed human and\nanimal characters, may be\npermitted. Parents may wish to\ncheck the game before they\nallow their young children to\nplay it.",
-    "ua": "Деякий вміст може налякати\nдуже малих дітей.\nДопускається нереалістичне\nнасильство щодо\nфантастичних персонажів або\nсхематичних людей і тварин.\nБатькам варто перевірити гру,\nперш ніж дозволити її\nмаленьким дітям."
+    "ua": "Деякий вміст може налякати\nдуже малих дітей.\nДопускається нереалістичне\nнасильство щодо\nфантастичних персонажів\nабо схематичних людей\nі тварин. Батькам варто\nперевірити гру, перш ніж\nдозволити її маленьким\nдітям."
   },
   "par_pegipor_0009": {
     "en": "Content suitable for all ages.",
@@ -4437,7 +4437,7 @@
   },
   "par_pegipor_0010": {
     "en": "Some non-realistic violence\nin a comical, cartoon-like\ncontext, and nudity in a\nnon-sexual context, may be\npermitted.",
-    "ua": "Допускається помірне\nнереалістичне насильство\nв комічному, мультиплі-\nкаційному контексті та нагота\nв несексуальному контексті."
+    "ua": "Допускається помірне\nнереалістичне насильство\nв комічному, мультиплі-\nкаційному контексті\nта нагота в несексуальному\nконтексті."
   },
   "par_pegiuk_0001": {
     "en": "Content suitable only for\nadults, those aged 18 and\nabove.",
@@ -4453,7 +4453,7 @@
   },
   "par_pegiuk_0004": {
     "en": "Realistic and sustained\nviolence may be permitted.\nThe game may show\nnon-graphic sexual activity as\nwell as erotic or sexual nudity.\nIt may also contain more\nextreme bad language, scenes\ndealing with drugs (including\ntobacco and alcohol), it may\nglamorise criminal activities,\nand may include gambling\nreferences.",
-    "ua": "Допускається реалістичне\nй тривале насильство. Гра\nможе показувати невідверті\nсексуальні сцени, еротичну\nчи сексуальну наготу. Може\nмістити грубішу лайку, сцени\nз наркотиками (тютюн,\nалкоголь), романтизувати\nзлочини й містити згадки\nпро азартні ігри."
+    "ua": "Допускається реалістичне\nй тривале насильство. Гра\nможе показувати невідверті\nсексуальні сцени, еротичну\nчи сексуальну наготу. Може\nмістити грубішу лайку,\nсцени з наркотиками\n(тютюн, алкоголь),\nромантизувати злочини\nй містити згадки\nпро азартні ігри."
   },
   "par_pegiuk_0005": {
     "en": "Titles rated 15 are suitable\nfor ages 15 and older.",
@@ -4469,7 +4469,7 @@
   },
   "par_pegiuk_0008": {
     "en": "Realistic violence towards\nfantasy characters, and\nnon-realistic violence to\nhuman or animal characters,\nmay be permitted. There may\nbe some sexual innuendo,\ndescriptions and images (but\nnothing too extreme) as well\nas some mild bad language.\nMay also contain gambling\nreferences.",
-    "ua": "Допускається реалістичне\nнасильство щодо\nфантастичних персонажів\nі нереалістичне — щодо\nлюдей чи тварин. Можливі\nсексуальні натяки, описи й\nзображення (нічого\nнадмірного), а також помірна\nлайка. Може містити згадки\nпро азартні ігри."
+    "ua": "Допускається реалістичне\nнасильство щодо\nфантастичних персонажів\nі нереалістичне — щодо\nлюдей чи тварин. Можливі\nсексуальні натяки, описи й\nзображення (нічого\nнадмірного), а також\nпомірна лайка. Може\nмістити згадки\nпро азартні ігри."
   },
   "par_pegiuk_0009": {
     "en": "Parental Guidance - General\nviewing, but some scenes may\nbe unsuitable for young children.",
@@ -4485,7 +4485,7 @@
   },
   "par_pegiuk_0012": {
     "en": "Some content may be\nfrightening for very young\nchildren. Non-realistic violence\ntowards fantasy characters, or\nto non-detailed human and\nanimal characters, may be\npermitted. Parents may wish to\ncheck the game before they\nallow their young children to\nplay it.",
-    "ua": "Деякий вміст може налякати\nдуже малих дітей.\nДопускається нереалістичне\nнасильство щодо\nфантастичних персонажів або\nсхематичних людей і тварин.\nБатькам варто перевірити гру,\nперш ніж дозволити її\nмаленьким дітям."
+    "ua": "Деякий вміст може налякати\nдуже малих дітей.\nДопускається нереалістичне\nнасильство щодо\nфантастичних персонажів\nабо схематичних людей\nі тварин. Батькам варто\nперевірити гру, перш ніж\nдозволити її маленьким\nдітям."
   },
   "par_pegiuk_0013": {
     "en": "Universal",
@@ -4501,7 +4501,7 @@
   },
   "par_pegiuk_0016": {
     "en": "Some non-realistic violence\nin a comical, cartoon-like\ncontext, and nudity in a\nnon-sexual context, may be\npermitted.",
-    "ua": "Допускається помірне\nнереалістичне насильство\nв комічному, мультиплі-\nкаційному контексті та нагота\nв несексуальному контексті."
+    "ua": "Допускається помірне\nнереалістичне насильство\nв комічному, мультиплі-\nкаційному контексті\nта нагота в несексуальному\nконтексті."
   },
   "par_cob_0009": {
     "en": "Restricted to 18 and over",
@@ -4581,7 +4581,7 @@
   },
   "par_usk_0002": {
     "en": "Only for adults of 18 years\nand above. The content may\naffect, but not threaten, the\ndevelopment or education of\nchildren and teenagers\ntowards being social and\nself-responsible members\nof society.",
-    "ua": "Лише для дорослих\nвід 18 років. Вміст може\nвпливати, але не загрожувати\nрозвитку чи вихованню дітей\nі підлітків як соціальних\nі відповідальних членів\nсуспільства."
+    "ua": "Лише для дорослих\nвід 18 років. Вміст може\nвпливати, але не\nзагрожувати розвитку\nчи вихованню дітей\nі підлітків як соціальних\nі відповідальних членів\nсуспільства."
   },
   "par_usk_0003": {
     "en": "Suitable for ages 16 and older\naccording to § 14 JuSchG\n(Section 14, Youth Protection\nLaw).",
@@ -4605,7 +4605,7 @@
   },
   "par_usk_0008": {
     "en": "6 years and above - the game\nmay appear abstract,\ncomic-like or unreal in another\nway and may have settings\nthat might be scary to younger\nchildren, or the speed and the\ntasks of the game may be too\ndifficult for children under the\nage of six.",
-    "ua": "Від 6 років — гра може бути\nабстрактною, комічною або\nінакше нереалістичною,\nмати оточення, що може\nналякати молодших дітей, або\nмати надто високу швидкість\nі складні завдання для дітей\nвіком до шести років."
+    "ua": "Від 6 років — гра може бути\nабстрактною, комічною або\nінакше нереалістичною,\nмати оточення, що може\nналякати молодших дітей,\nабо мати надто високу\nшвидкість і складні\nзавдання для дітей\nвіком до шести років."
   },
   "par_usk_0009": {
     "en": "Suitable for all audiences\naccording to § 14 JuSchG\n(Section 14, Youth Protection\nLaw).",
@@ -4613,7 +4613,7 @@
   },
   "par_usk_0010": {
     "en": "From the perspective of youth\nprotection, any game with this\nage rating is suitable for\nchildren of every age.\nHowever, younger children\nmay not be able to completely\nunderstand or master the\ngame.",
-    "ua": "З погляду захисту молоді гра\nз цим віковим рейтингом\nпридатна для дітей будь-якого\nвіку. Проте молодші діти\nможуть не до кінця\nзрозуміти гру\nчи опанувати її."
+    "ua": "З погляду захисту молоді\nгра з цим віковим\nрейтингом придатна для\nдітей будь-якого віку.\nПроте молодші діти можуть\nне до кінця зрозуміти гру\nчи опанувати її."
   },
   "par_grb_0001": {
     "en": "",
@@ -4905,7 +4905,7 @@
   },
   "st_net_comm_0": {
     "en": "Configure your internet settings.",
-    "ua": "Налаштуйте зв'язок з Інтернетом."
+    "ua": "Налаштуйте зв'язок\nз Інтернетом."
   },
   "st_dlg_noeula": {
     "en": "This system will receive\nsystem updates and other\nimportant notices from Nintendo\nvia the internet.",

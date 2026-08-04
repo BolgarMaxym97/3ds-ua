@@ -158,7 +158,7 @@
     "width": 85.0,
     "en": "IMPORTANT",
     "ru": "ВАЖНО",
-    "ua": "ВАЖЛИВО"
+    "ua": "УВАГА"
   },
   "large/Page_000_large_0#4": {
     "lines": 5,
@@ -445,7 +445,7 @@
     "width": 311.1,
     "en": "Note:{s1|It is not possible to adjust the 3D focus manually on Nintendo 2DS or} {br} {s1|New Nintendo 2DS XL.}",
     "ru": "Примечание.{s1|На системах Nintendo 2DS и} {br} {s1|New Nintendo 2DS XL невозможно вручную настроить 3D-фокусировку.}",
-    "ua": "Примітка.{s1|На системах Nintendo 2DS і} {br} {s1|New Nintendo 2DS XL неможливо вручну налаштувати фокусування 3D.}"
+    "ua": "Примітка.{s1|На системах Nintendo 2DS і} {br} {s1|New Nintendo 2DS XL не можна вручну налаштувати фокус 3D.}"
   },
   "large/Page_002_large_1#12": {
     "lines": 9,
@@ -746,7 +746,7 @@
     "width": 311.1,
     "en": "Note:{s1|It is not possible to adjust the 3D focus manually on Nintendo 2DS or} {br} {s1|New Nintendo 2DS XL.}",
     "ru": "Примечание.{s1|На системах Nintendo 2DS и} {br} {s1|New Nintendo 2DS XL невозможно вручную настроить 3D-фокусировку.}",
-    "ua": "Примітка.{s1|На системах Nintendo 2DS і} {br} {s1|New Nintendo 2DS XL неможливо вручну налаштувати фокусування 3D.}"
+    "ua": "Примітка.{s1|На системах Nintendo 2DS і} {br} {s1|New Nintendo 2DS XL не можна вручну налаштувати фокус 3D.}"
   },
   "large/Page_004_large_0#5": {
     "lines": 8,
@@ -774,14 +774,14 @@
     "width": 75.1,
     "en": "Zoom (photos only)",
     "ru": "Настроить фокус",
-    "ua": "Налаштувати фокус"
+    "ua": "Налаштува-ти фокус"
   },
   "large/Page_004_large_0#9": {
     "lines": 2,
     "width": 75.1,
     "en": "Adjust focusAdjust focus",
     "ru": "Настроить фокус",
-    "ua": "Налаштувати фокус"
+    "ua": "Налаштува-ти фокус"
   },
   "large/Page_004_large_0#10": {
     "lines": 2,
@@ -935,7 +935,7 @@
     "width": 131.8,
     "en": "",
     "ru": "Настройки вручную",
-    "ua": "Налаштування вручну"
+    "ua": "Фокус вручну"
   },
   "large/Page_005_large_1#9": {
     "lines": 5,
@@ -1019,7 +1019,7 @@
     "width": 119.0,
     "en": "",
     "ru": "Если появилось сообщение OK!, вы можете фотогра-фировать.",
-    "ua": "Якщо з'явилося повідомлення OK!, ви можете фотогра-фувати."
+    "ua": "Якщо з'явилося повідом-лення OK!, ви можете фотогра-фувати."
   },
   "large/Page_005_large_2#8": {
     "lines": 4,
@@ -1271,7 +1271,7 @@
     "width": 70.3,
     "en": "",
     "ru": "Режим Стоп/ старт",
-    "ua": "Зв'язка кліпів"
+    "ua": "Зв'яз-ка кліпів"
   },
   "large/Page_007_large_0#4": {
     "lines": 16,
@@ -1362,7 +1362,7 @@
     "width": 65.0,
     "en": "Photo Save Location",
     "ru": "Место сохр. фото",
-    "ua": "Куди зберігати"
+    "ua": "Куди збері-гати"
   },
   "large/Page_009_large_0#2": {
     "lines": 4,
@@ -1432,7 +1432,7 @@
     "width": 95.0,
     "en": "Data Manage-ment",
     "ru": "Управле-ние данными",
-    "ua": "Керування даними"
+    "ua": "Керуван-ня даними"
   },
   "large/Page_009_large_0#12": {
     "lines": 15,
@@ -2832,7 +2832,7 @@
     "width": 70.8,
     "en": "",
     "ru": "ВАЖНО",
-    "ua": "ВАЖЛИВО"
+    "ua": "УВАГА"
   },
   "small/Page_001_small_0#0": {
     "lines": 3,
@@ -3112,7 +3112,7 @@
     "width": 318.0,
     "en": "",
     "ru": "Примечание.{s1|На системах Nintendo 2DS и} {br} {s1|New Nintendo 2DS XL невозможно вручную настроить 3D-фокусировку.}",
-    "ua": "Примітка.{s1|На системах Nintendo 2DS і} {br} {s1|New Nintendo 2DS XL неможливо вручну налаштувати фокусування 3D.}"
+    "ua": "Примітка.{s1|На системах Nintendo 2DS і} {br} {s1|New Nintendo 2DS XL не можна вручну налаштувати фокус 3D.}"
   },
   "small/Page_002_small_1#12": {
     "lines": 7,
@@ -3413,7 +3413,7 @@
     "width": 318.0,
     "en": "Note:{s1|It is not possible to adjust the 3D focus manually on Nintendo 2DS or New Nintendo 2DS XL.}",
     "ru": "Примечание.{s1|На системах Nintendo 2DS и} {br} {s1|New Nintendo 2DS XL невозможно вручную настроить 3D-фокусировку.}",
-    "ua": "Примітка.{s1|На системах Nintendo 2DS і} {br} {s1|New Nintendo 2DS XL неможливо вручну налаштувати фокусування 3D.}"
+    "ua": "Примітка.{s1|На системах Nintendo 2DS і} {br} {s1|New Nintendo 2DS XL не можна вручну налаштувати фокус 3D.}"
   },
   "small/Page_004_small_0#5": {
     "lines": 6,
@@ -3441,14 +3441,14 @@
     "width": 75.1,
     "en": "Zoom (photos only)",
     "ru": "Настроить фокус",
-    "ua": "Налаштувати фокус"
+    "ua": "Налаштува-ти фокус"
   },
   "small/Page_004_small_0#9": {
     "lines": 2,
     "width": 75.1,
     "en": "Adjust focusAdjust focus",
     "ru": "Настроить фокус",
-    "ua": "Налаштувати фокус"
+    "ua": "Налаштува-ти фокус"
   },
   "small/Page_004_small_0#10": {
     "lines": 2,
@@ -3693,7 +3693,7 @@
     "width": 99.8,
     "en": "",
     "ru": "Если появилось сообщение OK!, вы можете фотогра-фировать.",
-    "ua": "Якщо з'явилося повідомлення OK!, ви можете фотогра-фувати."
+    "ua": "Якщо з'явилося повідом-лення OK!, ви можете фотогра-фувати."
   },
   "small/Page_005_small_2#7": {
     "lines": 4,
@@ -4120,7 +4120,7 @@
     "width": 79.2,
     "en": "Data Manage-ment",
     "ru": "Управле-ние данными",
-    "ua": "Керування даними"
+    "ua": "Керуван-ня даними"
   },
   "small/Page_009_small_0#12": {
     "lines": 12,
@@ -4393,7 +4393,7 @@
     "width": 293.3,
     "en": "",
     "ru": "Примечание.{s1|На системах Nintendo 2DS и} {br} {s1|New Nintendo 2DS XL невозможно вручную настроить 3D-фокусировку.}",
-    "ua": "Примітка.{s1|На системах Nintendo 2DS і} {br} {s1|New Nintendo 2DS XL неможливо вручну налаштувати фокусування 3D.}"
+    "ua": "Примітка.{s1|На системах Nintendo 2DS і} {br} {s1|New Nintendo 2DS XL не можна вручну налаштувати фокус 3D.}"
   },
   "small/Page_010_small_2#1": {
     "lines": 1,
