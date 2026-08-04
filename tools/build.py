@@ -490,7 +490,7 @@ def app_name_tables(table: dict[str, str]) -> tuple[dict[str, object], list[str]
     manual_titles = {
         tid.upper()
         for patch in luma_hook.HOOK_PATCHES.values()
-        if patch.get("smdh_hook")
+        if patch.get("smdh_hook") and patch.get("manual_path")
         for tid in patch["manual_path"]["titles"]
     }
     manual_blob, manual_log = smdh_names.build_table(

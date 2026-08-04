@@ -18,7 +18,7 @@ A folder name is the Title ID (TID) of the system title it overrides. Luma reads
 | Folder (TID) | Title | Contents |
 |---|---|---|
 | `0004003000009802` | HOME Menu | `romfs/` + `code.ips` — LayeredFS plus the application names |
-| `0004001000022000` | System Settings | `romfs/` + `code.ips` + `area/` — LayeredFS plus the country list from the `area` archive |
+| `0004001000022000` | System Settings | `romfs/` + `code.ips` + `area/` — LayeredFS plus the country list from the `area` archive and Data Management's application names |
 | `0004001000022700` | Mii Maker | `romfs/` — LayeredFS |
 | `0004001000022400` | Nintendo 3DS Camera | `romfs/` — LayeredFS |
 | `0004001000022500` | Nintendo 3DS Sound | `romfs/` — LayeredFS |
@@ -670,6 +670,57 @@ differently from our table, the swap simply does not happen — no harm done, bu
 translation either. That is why `src/app_names.json` carries a `ru` field next to `ua`, and
 it has to match what the console displays byte for byte.
 
+## How Data Management's application names were translated
+
+Data Management is a System Settings screen, and it resolves the names in its software list
+**itself**: it reads each title's `ExeFS:/icon`, the way the HOME Menu does. So the approach
+is the same one the HOME Menu and the Instruction Manual use — hook the read, rewrite the
+Russian slot of the buffer from the same `src/app_names.json` table.
+
+There is one reader, `0x1B10BC` — the same SDK routine as in the other two titles,
+recognisable by the `0xC8804631`/`0xC8804632` error pair and by the `mov r1, #0x36C0` before
+the file read. But it is reached through **two thunks**, one per source:
+
+```
+19AC04  push {r3, lr} ; mov ip, #1 ; str ip, [sp] ; bl 1B10BC ; pop {r3, pc}   NAND
+1A13D0  push {r3, lr} ; mov ip, #0 ; str ip, [sp] ; bl 1B10BC ; pop {r3, pc}   SD card and cartridges
+```
+
+Ten call sites share them, each consumer allocating its own 0x36C0 bytes and reading afresh.
+Hooking the `bl` inside both thunks covers all ten, and there is no name cache here at all:
+the only `cache` in the image is an SDK log string, so nothing like the `Cache.dat` reader
+the HOME Menu needed a second hook for.
+
+One difference needed extra code in the wrapper. This reader takes the mediatype as a
+**fifth argument, off the stack** — `ldr r4, [sp, #0x38]` past its own prologue, i.e. the
+word the thunk wrote to its `[sp]`. A wrapper that merely saved registers would move that
+word out from under the reader, which would then pick up whatever sat there instead. So it
+carries the word across its own frame:
+
+```
+push {r0, r2, r3, lr}    ; the buffer and the title id
+ldr  ip, [sp, #0x10]     ; the word the thunk wrote
+sub  sp, sp, #8          ; the frame stays 8-byte aligned
+str  ip, [sp]            ; where the reader looks for it
+bl   1B10BC
+add  sp, sp, #8
+```
+
+From there it is the Instruction Manual's shape: if the result is not negative, the buffer
+goes to the same `rewrite` routine, which replaces the short and the long name of slot 10.
+
+| Record | Where | Size |
+|---|---|---|
+| `bl` to the wrapper instead of the reader, both thunks | `0x9AC10`, `0xA13DC` | 4 bytes each |
+| the wrapper | end of the `.text` padding, va `0x269F18` | 232 bytes |
+| the table, title id to name | `.rodata` padding, va `0x2927BC` | 1352 bytes |
+
+This title already shares both paddings with the `area:` patch (see the section below) and
+with Luma's own payload, so neither address is written into the config: the build computes
+them, putting the wrapper at the **end** of `.text` and the table past the `area:` strings.
+The table is keyed by title id, so the cartridge and SD-card names the second thunk fetches
+are left exactly as they are.
+
 ## How the country and region lists were translated
 
 The longest road in the mod. Profile settings → Region Settings shows names that exist
@@ -765,7 +816,7 @@ or renumbered.
 
 **Application names outside the HOME Menu.** The label under an icon, the text on the upper screen when you highlight it, the "software suspended" overlay, the close and delete prompts — all of it is the same short/long description from the title's **SMDH** (`CXI ExeFS:/icon`, 16 language structs). LayeredFS cannot reach ExeFS: Luma only redirects `romfs/`, `code.bin`, `code.ips`, `exheader.bin` and `locale.txt`, and an installed title's SMDH lives in NAND.
 
-In the HOME Menu and the Activity Log this is worked around with a code patch — see the two sections above — so their screens are translated. But **Data Management, the eShop, System Transfer and Game Notes still show the names in the slot's language**: each reads them separately and needs a hook of its own.
+In the HOME Menu, the Activity Log, Data Management and the Instruction Manual this is worked around with a code patch — see the sections above — so their screens are translated. But **the eShop, System Transfer and Game Notes still show the names in the slot's language**: each reads them separately and needs a hook of its own.
 
 Two titles carry a second copy of their SMDH inside their own `romfs`, and **LayeredFS does reach that one** with no code patch involved:
 

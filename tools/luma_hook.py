@@ -84,6 +84,13 @@ PLACEHOLDER_BRANCH = 0xEAFFFFFE  # b .
 ORIGINAL_THUNK_WORD = 0xE92D4008  # push {r3, lr}
 ORIGINAL_CACHE_WORD = 0xE92D4FF0  # push {r4-r8, sb, sl, fp, lr}
 
+# System Settings reaches its SMDH reader through two thunks that differ in one immediate:
+# push {r3, lr}; mov ip, #mediatype; str ip, [sp]; bl reader; pop {r3, pc}.
+THUNK_SET_MEDIATYPE = 0xE3A0C000    # mov ip, #<mediatype>, the immediate masked off
+THUNK_STORE_MEDIATYPE = 0xE58DC000  # str ip, [sp]
+THUNK_RETURN_WORD = 0xE8BD8008      # pop {r3, pc}
+THUNK_CALL_OFFSET = 0xC             # the `bl` the wrapper takes over
+
 # TID -> everything needed to build the stub. All offsets are .text offsets, i.e.
 # virtual address minus TEXT_VA, which is also the offset inside code.bin and the
 # offset an IPS record addresses.
@@ -245,6 +252,8 @@ HOOK_PATCHES: dict[str, dict] = {
             "site_off": 0x15E84,        # `bl` to the reader, the one call it ever gets
             "reader_off": 0x2F5B8,      # ReadTitleIcon(buffer, mediatype, tid_lo, tid_hi)
             "lang_index": 10,           # the SMDH language slot the mod overwrites: EU_Russian
+            "reads": "the manual's SMDH read",
+            "effect": "the name above the page is the one the HOME Menu shows",
             "stub_off": 0x2C6E8,        # the dead icon-tile copier
             "stub_room": 636,           # up to the next function at 0x2C964
             "dead_sha256": "c8a3a2b26f7efa67ed864551c80362cc996116ffb5ff17b654287ed0d282502f",
@@ -744,6 +753,35 @@ HOOK_PATCHES: dict[str, dict] = {
         # the first 48 bytes for its own LayeredFS path, so the strings start past that.
         "rodata_padding_off": 0x1924F0,
         "rodata_padding_room": 0xB10,
+        # Data Management lists every installed title by name, and those names are not in
+        # this title's romfs either: it reads each one's SMDH itself, out of `ExeFS:/icon` in
+        # NAND, which LayeredFS cannot reach. So the read is hooked and the Russian slot of
+        # the buffer is overwritten - the same table and the same routine HOME Menu's patch
+        # uses, see SMDH_NAMES there.
+        #
+        # One reader, two thunks, ten call sites, and no cache of any kind (the only 'cache'
+        # in the image is an SDK log string, and every consumer allocates 0x36C0 bytes and
+        # reads afresh - unlike HOME Menu, whose Cache.dat needed a second hook):
+        #
+        #   1B10BC  the reader: builds the ARCHIVE_SAVEDATA_AND_CONTENT path from the title
+        #           id and pulls all 0x36C0 bytes of `icon` in. r0 = buffer, r2/r3 = title
+        #           id, and the mediatype is a fifth argument at [sp, #0x38] - the wrinkle
+        #           `stack_arg` exists for. Its failure paths hand back 0xC8804631/0xC8804632,
+        #           the same pair HOME Menu's copy of this SDK routine returns.
+        #   19AC04  thunk, mediatype 1 (NAND): push {r3, lr}; mov ip, #1; str ip, [sp]; bl
+        #   1A13D0  thunk, mediatype 0 (SD card and cartridges): the same five instructions
+        #
+        # Hooking the two `bl`s inside the thunks covers all ten sites at once. The table is
+        # keyed by title id, so the SD-card and cartridge names the second thunk fetches are
+        # left exactly as they are.
+        "smdh_hook": {
+            "thunks": [0x9AC04, 0xA13D0],  # the `bl` this hook takes over is 12 bytes in
+            "reader_off": 0xB10BC,
+            "stack_arg": True,
+            "lang_index": 10,           # the SMDH language slot the mod overwrites: EU_Russian
+            "reads": "the Data Management SMDH reads",
+            "effect": "the software list names titles the way the HOME Menu does",
+        },
     },
 }
 
@@ -1590,7 +1628,7 @@ def _smdh_rewrite_blocks(lang_index: int, table_va: int) -> dict[str, list]:
 
 
 def _smdh_hook(patch: dict, table_va: int, base: int) -> tuple[list[int], dict[str, int]]:
-    """The Instruction Manual's single SMDH reader, wrapped around the same `rewrite`.
+    """An SMDH reader wrapped around the same `rewrite`, for the titles that read one.
 
     ebird reads the documented title's `ExeFS:/icon` once per manual - the call at
     smdh_hook["site_off"] - and the buffer it fills is where both the wrench icon in the
@@ -1602,8 +1640,15 @@ def _smdh_hook(patch: dict, table_va: int, base: int) -> tuple[list[int], dict[s
     keeps the three registers it needs, makes the call the site used to make, and hands the
     buffer to `rewrite` when the read came back non-negative - the same test the caller
     itself applies to the result.
+
+    System Settings takes the same shape with one wrinkle: its reader wants the mediatype in
+    a *fifth* argument, on the stack, and its two thunks are what put it there. A wrapper
+    that pushed anything would move the word out from under the reader's `ldr r4, [sp, #0x38]`,
+    so with smdh_hook["stack_arg"] the wrapper carries the word across its own frame and
+    hands it over the way the thunk did.
     """
     hook = patch["smdh_hook"]
+    stack_arg = hook.get("stack_arg")
 
     def bl(target: str):
         return lambda at, labels: _bl(at, labels[target])
@@ -1614,7 +1659,16 @@ def _smdh_hook(patch: dict, table_va: int, base: int) -> tuple[list[int], dict[s
     blocks = {
         "icon_hook": [
             0xE92D400D,                          # push  {r0, r2, r3, lr}   buffer, title id
+        ] + ([
+            0xE59DC010,                          # ldr   ip, [sp, #0x10]    the thunk's arg
+            0xE24DD008,                          # sub   sp, sp, #8         8-byte aligned
+            0xE58DC000,                          # str   ip, [sp]           where the reader looks
+        ] if stack_arg else []),
+        "icon_call": [
             lambda at, labels: _bl(at, hook["reader_off"]),  # bl the reader the site called
+        ] + ([
+            0xE28DD008,                          # add   sp, sp, #8
+        ] if stack_arg else []) + [
             0xE3500000,                          # cmp   r0, #0
             bc(COND_MI, "icon_out"),             # bmi   icon_out           the read failed
             # Two registers, not one: the result has to survive `rewrite` and the stack has
@@ -1632,6 +1686,38 @@ def _smdh_hook(patch: dict, table_va: int, base: int) -> tuple[list[int], dict[s
         ],
     } | _smdh_rewrite_blocks(hook["lang_index"], table_va)
     return _assemble(blocks, base)
+
+
+def _smdh_hook_sites(hook: dict) -> list[int]:
+    """The `bl` instructions the wrapper takes over - one in ebird, two in System Settings.
+
+    ebird names its site outright. System Settings names the thunks instead, because that is
+    what the shape check below is about, and the call is always the fourth instruction in.
+    """
+    if "thunks" in hook:
+        return [thunk + THUNK_CALL_OFFSET for thunk in hook["thunks"]]
+    return [hook["site_off"]]
+
+
+def _verify_smdh_thunks(hook: dict, code: bytes) -> None:
+    """Each thunk is push {r3, lr}; mov ip, #mediatype; str ip, [sp]; bl reader; pop {r3, pc}.
+
+    The wrapper's whole stack-argument dance rests on that `str ip, [sp]`, so an offset that
+    has drifted onto some other function has to fail the build rather than reach a console.
+    """
+    for thunk in hook.get("thunks", []):
+        words = struct.unpack_from("<5I", code, thunk)
+        shape = (
+            words[0] == ORIGINAL_THUNK_WORD
+            and words[1] & ~0xFF == THUNK_SET_MEDIATYPE
+            and words[2] == THUNK_STORE_MEDIATYPE
+            and words[4] == THUNK_RETURN_WORD
+        )
+        if not shape:
+            raise RuntimeError(
+                f"0x{thunk:X} is not one of the SMDH thunks the offsets were taken from: "
+                + " ".join(f"0x{word:08X}" for word in words)
+            )
 
 
 def build_stub(patch: dict, globals_value: int) -> bytes:
@@ -1660,7 +1746,9 @@ def area_sd_paths(patch: dict) -> dict[str, str]:
     return paths
 
 
-def _generate_area_from_sd(patch: dict, code: bytes, version: int) -> tuple[dict[str, bytes], list[str]]:
+def _generate_area_from_sd(
+    patch: dict, code: bytes, exheader: bytes, version: int, table: bytes | None = None
+) -> tuple[dict[str, bytes], list[str]]:
     """Point the `area:` mount and its path tables at the SD card.
 
     Nothing is executed that was not already there: two `bl` instructions change target
@@ -1668,6 +1756,10 @@ def _generate_area_from_sd(patch: dict, code: bytes, version: int) -> tuple[dict
     to strings written into the .rodata padding. Every one of those is checked against the
     dump first and re-read out of the patched image afterwards, because an IPS applied at
     the wrong offset would leave System Settings mounting garbage.
+
+    The SMDH name hook rides along in the same two paddings when the title has one: its
+    table goes past the `area:` strings in .rodata, its wrapper at the end of the .text
+    padding, so Luma's payload keeps the front of both.
     """
     for site in patch["mount_sites"]:
         expected = _bl(site, patch["mount_by_title_id"])
@@ -1713,7 +1805,45 @@ def _generate_area_from_sd(patch: dict, code: bytes, version: int) -> tuple[dict
         f"repointed at {len(string_va)} strings in the .rodata padding "
         f"({at - padding - LUMA_PATH_SIZE} bytes of {room - LUMA_PATH_SIZE} free)",
     ]
+    if patch.get("smdh_hook"):
+        log += _area_smdh_records(patch, code, exheader, table, at, records)
     return {"code.ips": make_ips(records)}, log
+
+
+def _area_smdh_records(
+    patch: dict, code: bytes, exheader: bytes, table: bytes | None, rodata_at: int, records: list
+) -> list[str]:
+    """Place the SMDH name hook in the paddings the `area:` patch has left over.
+
+    Neither address is a constant, because both depend on what the build ships: the table
+    grows with src/app_names.json and the wrapper is laid out twice, once to learn its own
+    length. So the offsets are computed here and checked against the padding, rather than
+    written down in the config where they would drift silently.
+    """
+    if not table:
+        raise RuntimeError(f"{patch['title']} needs an SMDH name table and none was built")
+
+    hook = patch["smdh_hook"] = dict(patch["smdh_hook"])  # a copy: HOOK_PATCHES is shared
+    _verify_smdh_thunks(hook, code)
+
+    rounded = lambda value: (value + 0xFFF) & ~0xFFF  # noqa: E731
+    text_size = struct.unpack_from("<I", exheader, TEXT_SIZE_OFFSET)[0]
+
+    # The wrapper goes at the end of the .text padding, leaving the front to Luma's payload.
+    # Its length is known before its address is, so it is laid out twice - the same two-pass
+    # shape _generate_smdh_names() uses.
+    hook["rodata_off"] = rodata_at + -rodata_at % 4  # a word-aligned table, past the paths
+    hook["rodata_room"] = patch["rodata_padding_off"] + patch["rodata_padding_room"] - hook["rodata_off"]
+    sizing, _ = _smdh_hook(patch, TEXT_VA + hook["rodata_off"], 0)
+    hook["stub_off"] = rounded(text_size) - len(sizing) * 4
+    hook["stub_room"] = len(sizing) * 4
+    if hook["stub_off"] < text_size + LUMA_PAYLOAD_SIZE:
+        raise RuntimeError(
+            f"the wrapper needs {len(sizing) * 4} bytes and the .text padding has "
+            f"{rounded(text_size) - text_size - LUMA_PAYLOAD_SIZE} past Luma's payload"
+        )
+
+    return _smdh_hook_records(patch, code, table, records)
 
 
 def _verify_area(patch: dict, code: bytes, records: list[tuple[int, bytes]], string_va: dict[str, int]) -> None:
@@ -2628,9 +2758,11 @@ def generate(
         return _generate_romfs_from_sd(tid, patch, code, exheader, version)
 
     if patch.get("kind") == "area_from_sd":
-        # No exheader: this title already has DirectSdmc, and the patch adds no stub, so
-        # there is nothing to widen either.
-        return _generate_area_from_sd(patch, code, version)
+        # No exheader: this title already has DirectSdmc, and the code the patch adds lands
+        # inside pages the title already maps, so there is nothing to widen either.
+        return _generate_area_from_sd(
+            patch, code, exheader, version, (names or {}).get("smdh")
+        )
 
     if patch.get("kind") == "smdh_names":
         if not (names or {}).get("smdh"):
@@ -2950,31 +3082,36 @@ def _mount_rename_records(patch: dict, code: bytes, records: list) -> list[str]:
 
 
 def _smdh_hook_records(patch: dict, code: bytes, table: bytes, records: list) -> list[str]:
-    """Route the manual viewer's SMDH read through the rewriting wrapper.
+    """Route a title's SMDH read through the rewriting wrapper.
 
-    Three records: the `bl` at the call site, the wrapper over the dead function, and the
-    name table in the .rodata padding. Everything the patch assumes about the dump is
-    checked here rather than trusted - the call site really is the `bl` to the reader, the
-    function the blob lands on is byte for byte the dead one the offsets were taken from,
-    the padding it writes into is padding, and nothing already in `records` shares it.
+    Three kinds of record: the `bl` at every call site, the wrapper blob, and the name table
+    in the .rodata padding. Everything the patch assumes about the dump is checked here
+    rather than trusted - each site really is the `bl` to the reader, the space the blob goes
+    into is what the offsets claim (byte for byte the dead function ebird overwrites, or
+    genuine padding elsewhere), the .rodata it writes into is padding, and nothing already in
+    `records` shares any of it.
     """
     hook = patch["smdh_hook"]
-    site, stub_off = hook["site_off"], hook["stub_off"]
+    sites, stub_off = _smdh_hook_sites(hook), hook["stub_off"]
 
-    word = struct.unpack_from("<I", code, site)[0]
-    if word != _bl(site, hook["reader_off"]):
-        raise RuntimeError(
-            f"0x{site:X} holds 0x{word:08X}, not the bl 0x{hook['reader_off']:X} "
-            f"(0x{_bl(site, hook['reader_off']):08X}) this hook wraps"
-        )
+    for site in sites:
+        word = struct.unpack_from("<I", code, site)[0]
+        if word != _bl(site, hook["reader_off"]):
+            raise RuntimeError(
+                f"0x{site:X} holds 0x{word:08X}, not the bl 0x{hook['reader_off']:X} "
+                f"(0x{_bl(site, hook['reader_off']):08X}) this hook wraps"
+            )
 
     region = code[stub_off:stub_off + hook["stub_room"]]
-    digest = hashlib.sha256(region).hexdigest()
-    if digest != hook["dead_sha256"]:
-        raise RuntimeError(
-            f"0x{stub_off:X} is not the dead function the blob goes over\n"
-            f"  expected sha256 {hook['dead_sha256']}\n  got             {digest}"
-        )
+    if "dead_sha256" in hook:
+        digest = hashlib.sha256(region).hexdigest()
+        if digest != hook["dead_sha256"]:
+            raise RuntimeError(
+                f"0x{stub_off:X} is not the dead function the blob goes over\n"
+                f"  expected sha256 {hook['dead_sha256']}\n  got             {digest}"
+            )
+    elif set(region) != {0}:
+        raise RuntimeError(f"0x{stub_off:X} is not the .text padding the blob goes into")
 
     table_off = hook["rodata_off"]
     if len(table) > hook["rodata_room"]:
@@ -2989,11 +3126,8 @@ def _smdh_hook_records(patch: dict, code: bytes, table: bytes, records: list) ->
     if len(blob) > hook["stub_room"]:
         raise RuntimeError(f"the hook is {len(blob)} bytes, {hook['stub_room']} are free")
 
-    new = [
-        (site, struct.pack("<I", _bl(site, labels["icon_hook"]))),
-        (stub_off, blob),
-        (table_off, table),
-    ]
+    new = [(site, struct.pack("<I", _bl(site, labels["icon_hook"]))) for site in sites]
+    new += [(stub_off, blob), (table_off, table)]
     for offset, data in new:
         for other, existing in records:
             if offset < other + len(existing) and other < offset + len(data):
@@ -3003,11 +3137,12 @@ def _smdh_hook_records(patch: dict, code: bytes, table: bytes, records: list) ->
     records += new
     _verify_smdh_hook(patch, code, records, labels, len(table))
 
+    where = ", ".join(f"0x{site:X}" for site in sites)
     return [
-        f"code.ips: the manual's SMDH read at 0x{site:X} routed through a {len(blob)}-byte "
+        f"code.ips: {hook['reads']} at {where} routed through a {len(blob)}-byte "
         f"wrapper at va 0x{TEXT_VA + stub_off:X}; language slot {hook['lang_index']} is "
-        f"rewritten from a {len(table)}-byte table at va 0x{TEXT_VA + table_off:X}, so the "
-        f"name above the page is the one the HOME Menu shows"
+        f"rewritten from a {len(table)}-byte table at va 0x{TEXT_VA + table_off:X}, so "
+        f"{hook['effect']}"
     ]
 
 
@@ -3022,11 +3157,12 @@ def _verify_smdh_hook(
     for offset, data in records:
         patched[offset:offset + len(data)] = data
 
-    word = struct.unpack_from("<I", patched, hook["site_off"])[0]
-    if _bl_target(word, hook["site_off"]) != labels["icon_hook"]:
-        raise RuntimeError("the call site does not reach the wrapper")
+    for site in _smdh_hook_sites(hook):
+        word = struct.unpack_from("<I", patched, site)[0]
+        if _bl_target(word, site) != labels["icon_hook"]:
+            raise RuntimeError(f"the call site at 0x{site:X} does not reach the wrapper")
 
-    call = labels["icon_hook"] + 4
+    call = labels["icon_call"]
     word = struct.unpack_from("<I", patched, call)[0]
     if _bl_target(word, call) != hook["reader_off"]:
         raise RuntimeError("the wrapper does not call the reader it replaced")
@@ -3038,7 +3174,10 @@ def _verify_smdh_hook(
         raise RuntimeError("the name table is not terminated")
 
     # The blob lands on a function start, which is what Luma's symbol search walks back to,
-    # so the search has to be re-run: the mount stub must still be what it resolves.
+    # so the search has to be re-run: the mount stub must still be what it resolves. Titles
+    # Luma hooks unaided ship no stub, and there is no symbol of ours to protect.
+    if patch.get("stub_off") is None:
+        return
     symbols = find_symbols(bytes(patched), patch["text_size_override"] or patch["text_size"])
     if symbols["fsMountArchive"] != patch["stub_off"]:
         raise RuntimeError(
