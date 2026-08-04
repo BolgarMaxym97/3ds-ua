@@ -1,0 +1,59 @@
+name: Кривий переклад
+description: Помилка в тексті, невдале формулювання, неузгоджений термін
+labels: ["translation"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Терміни звіряються з [глосарієм](https://github.com/BolgarMaxym97/3ds-ua/blob/main/src/glossary.md). Якщо термін у
+        глосарії, а на екрані інший — це баг перекладу, пишіть.
+
+  - type: input
+    id: app
+    attributes:
+      label: Де саме
+      description: Додаток і шлях до екрана
+      placeholder: Nintendo 3DS Камера → Опції → Куди зберігати
+    validations:
+      required: true
+
+  - type: input
+    id: current
+    attributes:
+      label: Що написано зараз
+      placeholder: Місце збереження фото
+    validations:
+      required: true
+
+  - type: input
+    id: suggested
+    attributes:
+      label: Як має бути
+      placeholder: Куди зберігати
+    validations:
+      required: true
+
+  - type: textarea
+    id: why
+    attributes:
+      label: Чому
+      description: |
+        Наприклад: не влазить на екран, суперечить іншому екрану, калька з російської,
+        неправильний відмінок.
+      placeholder: Напис обрізається праворуч, видно "Місце збереження фот".
+    validations:
+      required: true
+
+  - type: textarea
+    id: photo
+    attributes:
+      label: Фото екрана
+      description: Обов'язкове, якщо текст не влазить чи накладається.
+    validations:
+      required: false
+
+  - type: markdown
+    attributes:
+      value: |
+        Хочете виправити самі? Правте поле `ua` у `src/strings/<додаток>/*.json`, запустіть
+        `make validate` і надсилайте Pull Request — це швидше, ніж Issue.

@@ -29,7 +29,7 @@
   },
   "lau_dlg_quit8": {
     "en": "Close the suspended software\nand launch this one?",
-    "ua": "Закрити призупинену\nпрограму й запустити цю??"
+    "ua": "Закрити призупинену\nпрограму й запустити цю?"
   },
   "lau_dlg_launch": {
     "en": "Launch this software?",
@@ -109,7 +109,7 @@
   },
   "lau_dlg_launch_for_eshop": {
     "en": "Launch Nintendo eShop?",
-    "ua": "Запустити Nintendo eShop??"
+    "ua": "Запустити Nintendo eShop?"
   },
   "lau_dlg_pare0": {
     "en": "Would you like to launch this\nsoftware in 2D?\n{t:1.1:5500}{t:0.3:3c3c3cff}You must enter your PIN to\nlaunch it in 3D.{t:0.3:000000ff}{/t:1.1}",

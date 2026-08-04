@@ -101,7 +101,7 @@
   },
   "lau_dlg_quit8": {
     "en": "Close the suspended software\nand launch this one?",
-    "ua": "Закрити призупинену\nпрограму й запустити цю??"
+    "ua": "Закрити призупинену\nпрограму й запустити цю?"
   },
   "lau_dlg_quit9": {
     "en": "Saving data and\nclosing software...",
@@ -201,7 +201,7 @@
   },
   "lau_dlg_sample2": {
     "en": "Delete this demo?",
-    "ua": "Видалити цю демоверсію??"
+    "ua": "Видалити цю демоверсію?"
   },
   "lau_dlg_sample3": {
     "en": "Uses remaining: %d\n\nLaunch this demo?",
@@ -277,7 +277,7 @@
   },
   "lau_dlg_bgdl3": {
     "en": "Launch Nintendo eShop\nand download now?",
-    "ua": "Запустити Nintendo eShop\nі завантажити програму??"
+    "ua": "Запустити Nintendo eShop\nі завантажити програму?"
   },
   "lau_dlg_bgdl4": {
     "en": "Please wait...",
@@ -785,7 +785,7 @@
   },
   "lau_dlg_conf_setting": {
     "en": "Is this setting OK?",
-    "ua": "Продовжити з цим\nналаштуванням??"
+    "ua": "Продовжити з цим\nналаштуванням?"
   },
   "lau_theme_arrange": {
     "en": "Organise Themes",
@@ -1069,7 +1069,7 @@
   },
   "tm_shop_dlg_jump_to_eshop": {
     "en": "Launch Nintendo eShop?",
-    "ua": "Запустити Nintendo eShop??"
+    "ua": "Запустити Nintendo eShop?"
   },
   "tm_shop_dlg_price_changed": {
     "en": "Information on this item\nmay have been updated.{t:1.0:1400}\n {/t:1.0}\nUpdated information can be\nviewed on the next screen.",
@@ -1137,7 +1137,7 @@
   },
   "plt_guide_reset_folder": {
     "en": "Remove all badges\nfrom this folder?",
-    "ua": "Зняти всі жетони\nв цій папці??"
+    "ua": "Зняти всі жетони\nв цій папці?"
   },
   "plt_setting_mhm": {
     "en": "Save/Load Layout",
@@ -1181,7 +1181,7 @@
   },
   "lau_dlg_mhm_save": {
     "en": "Do you want to overwrite\nthis HOME Menu layout\nwith the current layout?",
-    "ua": "Замінити цей вигляд меню\nHOME поточним??"
+    "ua": "Замінити цей вигляд меню\nHOME поточним?"
   },
   "lau_dlg_mhm_load": {
     "en": "Do you really want to load\nthis HOME Menu layout?{t:1.0:1400}\n　　　　　　　　　　　　　{/t:1.0}\n{t:1.0:5500}{t:0.3:3c3c3cff}The current HOME Menu\nlayout will not be saved.{t:0.3:000000ff}{/t:1.0}",
@@ -1189,7 +1189,7 @@
   },
   "lau_dlg_mhm_delete": {
     "en": "Are you sure you\nwant to delete this\nHOME Menu layout?",
-    "ua": "Справді видалити\nцей вигляд меню HOME??"
+    "ua": "Справді видалити\nцей вигляд меню HOME?"
   },
   "lau_dlg_mhm_save_fail": {
     "en": "Failed to save.",
@@ -1549,7 +1549,7 @@
   },
   "lau_dlg_softupd_02": {
     "en": "This process may take a while.\n\nDo you want to continue?",
-    "ua": "Це може\nзайняти деякий час.\n\nПродовжити??"
+    "ua": "Це може\nзайняти деякий час.\n\nПродовжити?"
   },
   "lau_dlg_softupd_2b_y": {
     "en": " Nintendo eShop",
@@ -1693,7 +1693,7 @@
   },
   "lau_dlg_bt5": {
     "en": "Are you sure you want to\ndelete this icon?",
-    "ua": "Справді видалити\nцей значок??"
+    "ua": "Справді видалити\nцей значок?"
   },
   "lau_dlg_bt6": {
     "en": "Icon deleted.",
@@ -1921,7 +1921,7 @@
   },
   "dat_dlg_bu_cr0": {
     "en": "The saved backup data\nwill be overwritten.\n\nIs this OK?",
-    "ua": "Збережену резервну\nкопію буде замінено.\n\nПродовжити??"
+    "ua": "Збережену резервну\nкопію буде замінено.\n\nПродовжити?"
   },
   "dat_dlg_bu_cr1": {
     "en": "Saving data...\n\nDo not remove the SD Card\nor turn off the power.",
@@ -1997,7 +1997,7 @@
   },
   "lau_dlg_welc_theme_title": {
     "en": "The Theme Shop is now open!",
-    "ua": "Відкрився магазин тем!!"
+    "ua": "Відкрився магазин тем!"
   },
   "lau_dlg_welc_theme_0": {
     "en": "Changing the theme lets you\ncustomise your HOME Menu\nwith various designs and sounds.",
@@ -2013,11 +2013,11 @@
   },
   "lau_dlg_welc_theme_3": {
     "en": "Try and discover your\nfavourite theme!",
-    "ua": "Виберіть вашу\nулюблену тему!!"
+    "ua": "Виберіть вашу\nулюблену тему!"
   },
   "lau_dlg_welc_theme_title_2": {
     "en": "New theme feature added!",
-    "ua": "Додано нову функцію тем!!"
+    "ua": "Додано нову функцію тем!"
   },
   "lau_dlg_welc_theme_4": {
     "en": "A \"Shuffle Favourites\" feature has\nbeen added for HOME Menu themes.",
@@ -2037,7 +2037,7 @@
   },
   "lau_dlg_welc_mhm_1": {
     "en": "Have fun creating custom HOME\nMenu layouts that suit you!",
-    "ua": "Створюйте власні\nвигляди меню HOME на свій смак!!"
+    "ua": "Створюйте власні\nвигляди меню HOME на свій смак!"
   },
   "lau_dlg_1b_welc_next": {
     "en": "Next",
@@ -2045,11 +2045,11 @@
   },
   "lau_news_ppu_title_sin": {
     "en": "New notification received!",
-    "ua": "Отримано нове повідомлення!!"
+    "ua": "Отримано нове повідомлення!"
   },
   "lau_news_ppu_title_plu": {
     "en": "New notifications received!",
-    "ua": "Отримано нові повідомлення!!"
+    "ua": "Отримано нові повідомлення!"
   },
   "lau_news_ppu_title_plu_over": {
     "en": "",
@@ -2121,15 +2121,15 @@
   },
   "manual_sample9": {
     "en": "Let's play!",
-    "ua": "Давай зіграємо!!"
+    "ua": "Давай зіграємо!"
   },
   "manual_sample10": {
     "en": "Look, everybody!",
-    "ua": "Усі готові??"
+    "ua": "Усі готові?"
   },
   "manual_sample11": {
     "en": "Hello!",
-    "ua": "Привіт!!"
+    "ua": "Привіт!"
   },
   "manual_sample12": {
     "en": "Daniel",
@@ -2349,7 +2349,7 @@
   },
   "new_tips16_title": {
     "en": "You got your first badge!",
-    "ua": "Вітаємо з першим жетоном!!"
+    "ua": "Вітаємо з першим жетоном!"
   },
   "new_tips16": {
     "en": "With badges, you can further\ncustomise your HOME Menu\nand personalise your system.\n\nYou can open the badge box\nin the following ways:\n\n■ Open HOME Menu Settings\nusing the icon in the top left\nof the Touch Screen (see above)\nand select \"Place Badges\".\n■ Select a badge you have placed\nand touch it or press .\n\nAlso, \"Save/Load Layout\"\n(see above) lets you save multiple\nHOME Menu layouts and swap\nbetween them.\n\nTry decorating the HOME Menu\nhow you like by using different\nbadges and layouts!\n\nNintendo",

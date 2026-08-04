@@ -1,0 +1,11 @@
+blank_issues_enabled: true
+contact_links:
+  - name: Встановлення і як усе працює
+    url: https://github.com/BolgarMaxym97/3ds-ua#встановлення
+    about: Інструкція, вимоги, як видалити, таблиця «якщо щось пішло не так»
+  - name: Немає Luma3DS
+    url: https://3ds.hacks.guide/
+    about: Без кастомної прошивки мод не працює — спершу пройдіть цей гайд
+  - name: Технічний опис
+    url: https://github.com/BolgarMaxym97/3ds-ua/blob/main/docs/internals.md
+    about: За що відповідає кожна папка, чому частині додатків потрібна правка коду

@@ -4,7 +4,7 @@
 
 Файли самої консолі не змінюються — усе живе на SD-карті. Видалили папки, і все повернулося як було.
 
-**Ціль проєкту — повний українізатор системи:** усе, що видно на екрані, має бути українською. Зараз перекладено 24 частини плюс електронні довідники, робота триває.
+**Ціль проєкту — повний українізатор системи:** усе, що видно на екрані, має бути українською. Зараз перекладено **30 частин системи плюс одинадцять електронних довідників**, робота триває.
 
 [Українською](#що-вже-українською) · [In English](#in-english)
 
@@ -30,7 +30,7 @@
 
 ## Що вже українською
 
-Меню HOME (разом з назвами додатків під іконками) · Налаштування системи · Mii Maker · Журнал дій · Посібник · Гра по завантаженню · екранна клавіатура з українською розкладкою · Список друзів · Камера · швидка камера на `L`+`R` · Звук · Здоров'я і безпека · Площа StreetPass Mii · Вибір Mii · Сповіщення · Ігрові записи · екран помилки · Інтернет-браузер · Nintendo eShop · Перенесення даних · Nintendo Zone · Face Raiders · AR Games · керування amiibo · аплет покупок і оновлень eShop · 3DS Memo · аплет Circle Pad Pro · Miiverse · **тексти помилок системи** (усі 259 повідомлень) · список країн і регіонів у налаштуваннях профілю та на Карті StreetPass (замість «Россия» — **Україна**, з українськими областями) · **електронні довідники** одинадцяти додатків: Інтернет-браузера, Налаштувань системи, Журналу дій, Гри по завантаженню, Камери, Звуку, Mii Maker, Площі StreetPass Mii, Nintendo eShop, Face Raiders та AR Games.
+Меню HOME (разом з назвами додатків під іконками) · Налаштування системи · Mii Maker · Журнал дій · Електронний посібник · Гра по завантаженню · екранна клавіатура з українською розкладкою · Список друзів · Камера Nintendo 3DS · швидка камера на `L`+`R` · Звук Nintendo 3DS · Здоров'я і безпека · Площа StreetPass Mii · Вибір Mii · Сповіщення (разом з **вбудованими підказками**, що прийшли з першим запуском консолі) · Ігрові записи · екран помилки · Інтернет-браузер · Nintendo eShop · Перенесення даних · Оглядач Nintendo Zone · Face Raiders · AR Games · Налаштування amiibo · аплет покупок і оновлень eShop · 3DS Memo · аплет Circle Pad Pro · Miiverse · публікація в Miiverse · **тексти помилок системи** (усі 259 повідомлень) · список країн і регіонів у налаштуваннях профілю та на Карті StreetPass (замість «Россия» — **Україна**, з українськими областями) · **електронні довідники** одинадцяти додатків: Інтернет-браузера, Налаштувань системи, Журналу дій, Гри по завантаженню, Камери, Звуку, Mii Maker, Площі StreetPass Mii, Nintendo eShop, Face Raiders та AR Games.
 
 ## Що потрібно
 
@@ -72,6 +72,8 @@
 
 Системні файли не змінювалися, тому видалення нічого не ламає.
 
+**Один виняток.** Вбудовані підказки у Сповіщеннях консоль колись скопіювала собі в NAND, і файлами на SD-карті їх уже не дістати — мод переписує їх у самій базі. Після видалення мода вони лишаться українськими (не зіпсованими — просто українськими). Якщо цього не хочеться, видаліть `SD:/luma/titles/0004003000009802/code.ips` **до** першого запуску з модом: тоді підказки лишаться російськими, разом з назвами додатків і банерами, які той самий файл перекладає.
+
 ## Чого поки що немає
 
 - **Українських `і ї є ґ`.** У шрифті самої консолі їх немає, тому мод показує візуально близькі `i ï ε г`. Замінити шрифт можна лише правкою системних файлів — а проєкт цього свідомо не робить.
@@ -96,9 +98,9 @@
 
 ## Як допомогти
 
-- **Знайшли помилку чи кривий переклад** — [відкрийте Issue](../../issues). Фото екрана допомагає найбільше.
+- **Знайшли помилку чи кривий переклад** — [відкрийте Issue](../../issues/new/choose). Там два шаблони: «Баг на консолі» і «Кривий переклад» — вони самі спитають усе потрібне. Фото екрана допомагає найбільше.
 - **Хочете виправити самі** — правте поле `ua` у `src/strings/<додаток>/*.json` (поруч у полі `en` — оригінал) і надсилайте Pull Request. Терміни звіряйте з [глосарієм](src/glossary.md), а перед PR запустіть `make validate`: воно перевірить, що текст влазить на екран і не містить символів, яких у шрифті немає.
-- **Знаєте, чого ще бракує** — [напишіть в Issues](../../issues). Список того, що вже в роботі, ведеться в репозиторії.
+- **Знаєте, чого ще бракує** — [напишіть в Issues](../../issues). Там же видно, що вже взяте в роботу.
 
 ## Технічні деталі
 
@@ -118,11 +120,11 @@
 
 Nothing on the console itself is modified — it all lives on the SD card. Delete the folders and everything is back to stock.
 
-**The goal is a complete Ukrainian localisation** of everything visible on screen. 23 parts are done so far; work continues.
+**The goal is a complete Ukrainian localisation** of everything visible on screen. **30 parts of the system plus eleven electronic manuals** are done so far; work continues.
 
 ### Already in Ukrainian
 
-HOME Menu (including the application names under the icons) · System Settings · Mii Maker · Activity Log · Instruction Manual · Download Play · Software Keyboard with a Ukrainian layout · Friend List · Camera · the quick camera on `L`+`R` · Sound · Health & Safety · StreetPass Mii Plaza · Mii Selector · Notifications · Game Notes · error applet · Internet Browser · Nintendo eShop · System Transfer · Nintendo Zone · Face Raiders · AR Games · amiibo Settings · the eShop purchase/update applet · 3DS Memo · the Circle Pad Pro applet · Miiverse · the **system error messages** (all 259 of them) · the **electronic manuals** of eleven titles, in full: Internet Browser, System Settings, Activity Log, Download Play, Camera, Sound, Mii Maker, StreetPass Mii Plaza, Nintendo eShop, Face Raiders and AR Games.
+HOME Menu (including the application names under the icons) · System Settings · Mii Maker · Activity Log · Instruction Manual · Download Play · Software Keyboard with a Ukrainian layout · Friend List · Camera · the quick camera on `L`+`R` · Sound · Health & Safety · StreetPass Mii Plaza · Mii Selector · Notifications (including the **built-in tips** that arrived with the console's first boot) · Game Notes · error applet · Internet Browser · Nintendo eShop · System Transfer · Nintendo Zone · Face Raiders · AR Games · amiibo Settings · the eShop purchase/update applet · 3DS Memo · the Circle Pad Pro applet · Miiverse · Miiverse posting · the **system error messages** (all 259 of them) · the country and region lists in the profile settings and on the StreetPass Map (no more «Россия» — **Україна**, with Ukrainian oblasts) · the **electronic manuals** of eleven titles, in full: Internet Browser, System Settings, Activity Log, Download Play, Camera, Sound, Mii Maker, StreetPass Mii Plaza, Nintendo eShop, Face Raiders and AR Games.
 
 ### Requirements
 
@@ -164,11 +166,13 @@ Any of these:
 
 Nothing in the system was modified, so removal cannot break anything.
 
+**One exception.** The built-in Notification tips were copied into NAND by the console long ago, and no file on the SD card can reach them — the mod rewrites them inside that database. After you remove the mod they stay Ukrainian (not corrupted — simply Ukrainian). If you'd rather they didn't, delete `SD:/luma/titles/0004003000009802/code.ips` **before** the first boot with the mod: the tips then stay Russian, along with the application names and banners that same file translates.
+
 ### Known limits
 
 - **The Ukrainian letters `і ї є ґ`** are not in the console's font, so the mod shows the visually closest `i ï ε г`. Replacing the font would mean modifying the system itself, which this project deliberately avoids.
 - **Typing them.** The keyboard layout is Ukrainian (`ы`→`і`, `ъ`→`ї`, `э`→`є`, `ё`→apostrophe), but it types those same substitute characters.
-- **The electronic manuals of the remaining titles.** The viewer reads each title's own manual, and each one has to be dumped off your console and translated separately. 0.11.0 ships eleven in full; every other title shows the manual it always did. The ceiling is now space, not text: the viewer's path table and its SMDH name table share one 1064-byte window of `.rodata` padding, and eleven titles use 977 of it — a twelfth needs new space first. A game's manual belongs to the game, not to the system, so those stay as they are.
+- **The electronic manuals of the remaining titles.** The viewer reads each title's own manual, and each one has to be dumped off your console and translated separately. 1.0.0 ships eleven in full; every other title shows the manual it always did. The ceiling is now space, not text: the viewer's path table and its SMDH name table share one 1064-byte window of `.rodata` padding, and eleven titles use 977 of it — a twelfth needs new space first. A game's manual belongs to the game, not to the system, so those stay as they are.
 - **Application names in Data Management, the eShop, System Transfer and Game Notes** are still Russian.
 - **USA and JPN consoles** have no Russian language slot at all and need a separate build. Open an Issue if you want one.
 
@@ -188,7 +192,7 @@ Empty boxes instead of letters, clipped or overlapping text — that's a bug. [O
 
 ### Contributing
 
-- **Found a mistake or an awkward wording** — [open an Issue](../../issues). A photo of the screen helps most.
+- **Found a mistake or an awkward wording** — [open an Issue](../../issues/new/choose). Two templates are there — «Баг на консолі» (a bug) and «Кривий переклад» (a wording problem) — and they ask for everything needed. A photo of the screen helps most.
 - **Want to fix it yourself** — edit the `ua` field in `src/strings/<app>/*.json` (`en` next to it is the original) and send a Pull Request. Check terms against the [glossary](src/glossary.en.md), and run `make validate` first: it checks that the text fits on screen and uses no characters the font lacks.
 - **Know what else is missing** — [tell us in an Issue](../../issues).
 

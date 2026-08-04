@@ -1,0 +1,93 @@
+name: Баг на консолі
+description: Щось не працює, крешить, обрізане або накладене на екрані
+labels: ["bug"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Дякуємо за репорт. **Фото екрана консолі допомагає найбільше** — прикріпіть його
+        нижче, навіть якщо воно зроблене телефоном.
+
+  - type: input
+    id: version
+    attributes:
+      label: Версія мода
+      description: Ім'я архіву, який ви ставили — наприклад `3ds-ua-1.0.0.zip`
+      placeholder: 3ds-ua-1.0.0.zip
+    validations:
+      required: true
+
+  - type: dropdown
+    id: console
+    attributes:
+      label: Модель консолі
+      options:
+        - Nintendo 3DS
+        - Nintendo 3DS XL
+        - Nintendo 2DS
+        - New Nintendo 3DS
+        - New Nintendo 3DS XL
+        - New Nintendo 2DS XL
+        - не знаю
+    validations:
+      required: true
+
+  - type: input
+    id: firmware
+    attributes:
+      label: Версія системи і Luma3DS
+      description: |
+        Версія системи — `Налаштування системи` → внизу праворуч (наприклад `11.17.0-50E`).
+        Версія Luma — у синьому меню, яке відкривається на SELECT.
+      placeholder: 11.17.0-50E, Luma3DS 13.2.1
+    validations:
+      required: true
+
+  - type: input
+    id: app
+    attributes:
+      label: Де саме це видно
+      description: Який додаток і який екран у ньому
+      placeholder: Налаштування системи → Інші налаштування → Профіль
+    validations:
+      required: true
+
+  - type: textarea
+    id: what
+    attributes:
+      label: Що сталося
+      description: Що ви побачили і що очікували побачити
+      placeholder: |
+        Натиснув "Профіль" — консоль вилетіла в меню HOME.
+        На верхньому екрані було написано "An exception occurred".
+    validations:
+      required: true
+
+  - type: textarea
+    id: photo
+    attributes:
+      label: Фото екрана
+      description: Перетягніть картинку сюди. Якщо це креш — потрібен верхній екран з текстом помилки.
+    validations:
+      required: false
+
+  - type: checkboxes
+    id: checks
+    attributes:
+      label: Перевірено перед репортом
+      options:
+        - label: "`Enable game patching` увімкнено в меню Luma"
+          required: true
+        - label: Мод лежить у `SD:/luma/titles/`, а не в `SD:/luma/luma/titles/`
+          required: true
+        - label: Консоль європейського (EUR) регіону
+          required: true
+
+  - type: markdown
+    attributes:
+      value: |
+        **Не баг, і репорт не потрібен:**
+        `i` замість `і`, `ï` замість `ї`, `ε` замість `є`, `г` замість `ґ` — у шрифті
+        консолі цих літер немає, мод підставляє візуально близькі. Так само лишені як є
+        технічні написи (`OK`, `Miiverse`, формати дат) і назви додатків у Керуванні
+        даними, eShop, Перенесенні даних та Ігрових записах.
