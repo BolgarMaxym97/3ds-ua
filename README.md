@@ -22,8 +22,8 @@
 <td><img src="assets/pictures/ar-games.png" width="250" alt="Меню HOME: банер AR Games"></td>
 </tr>
 <tr>
-<td><img src="assets/pictures/suspended-software.png" width="250" alt="Оверлей «Призупинена програма»"></td>
-<td><img src="assets/pictures/browser.png" width="250" alt="Інтернет-браузер"></td>
+<td><img src="assets/pictures/manual-system-settings-contents.png" width="250" alt="Електронний довідник Налаштувань системи: зміст"></td>
+<td><img src="assets/pictures/manual-system-settings-page.png" width="250" alt="Електронний довідник Налаштувань системи: сторінка «Під'єднання до Інтернету»"></td>
 <td><img src="assets/pictures/profile-region.png" width="250" alt="Налаштування профілю: регіон «Україна», «Київ (місто)»"></td>
 </tr>
 </table>
