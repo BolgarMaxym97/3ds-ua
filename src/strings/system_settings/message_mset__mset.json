@@ -1465,7 +1465,7 @@
   },
   "net_set_comm_u": {
     "en": "Configure your internet connection\nsettings.",
-    "ua": "Налаштуйте зв'язок\nз Інтернетом."
+    "ua": "Налаштуйте зв'язок з Інтернетом."
   },
   "net_connect1_u": {
     "en": "Connection 1",
@@ -4905,7 +4905,7 @@
   },
   "st_net_comm_0": {
     "en": "Configure your internet settings.",
-    "ua": "Налаштуйте зв'язок\nз Інтернетом."
+    "ua": "Налаштуйте зв'язок з Інтернетом."
   },
   "st_dlg_noeula": {
     "en": "This system will receive\nsystem updates and other\nimportant notices from Nintendo\nvia the internet.",
