@@ -1053,7 +1053,7 @@
   },
   "tm_shop_dlg_create_data_fail": {
     "en": "Failed to create theme\nmanagement information.",
-    "ua": "Не вдалося створити дані\nкерування темами…..."
+    "ua": "Не вдалося створити дані\nкерування темами."
   },
   "tm_shop_dlg_local_thm_max": {
     "en": "Unable to add more themes.{t:1.0:1400}\n {/t:1.0}\nPlease make space on your\nsystem by selecting Delete\nThemes on the Change Theme\nscreen, then try again.",
@@ -1597,7 +1597,7 @@
   },
   "lau_dlg_bgdl_nand_full": {
     "en": "Unable to complete download\nas there is not enough space\nin the system memory.{t:1.0:1400}\n　{/t:1.0}\nPlease make more space.",
-    "ua": "Не можна завершити\nзавантаження, бо в памʼяті\nсистеми недостатньо\nвільного місця.{t:1.0:1400}\n　{/t:1.0}\nЗвільніть місце."
+    "ua": "Не можна завершити\nзавантаження, бо в пам'яті\nсистеми недостатньо\nвільного місця.{t:1.0:1400}\n　{/t:1.0}\nЗвільніть місце."
   },
   "lau_dlg_bgdl_sd_full_twl": {
     "en": "Unable to complete download\nas you cannot have any more\nNintendo DSiWare titles.{t:1.0:1400}\n　{/t:1.0}\nPlease make more space.",
