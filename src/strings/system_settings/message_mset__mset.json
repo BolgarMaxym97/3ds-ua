@@ -2845,7 +2845,7 @@
   },
   "dat_3ds_comm3_u": {
     "en": "Manage add-on content and update\ndata for Nintendo 3DS software.",
-    "ua": "Керуйте додатковим вмістом\nі даними оновлень програм Nintendo 3DS."
+    "ua": "Керуйте додатковим вмістом і даними\nоновлень програм Nintendo 3DS."
   },
   "dat_3ds_comm": {
     "en": "Software title list",
@@ -3405,7 +3405,7 @@
   },
   "dat_dlg_bu_re0": {
     "en": "The backup data will be restored.\n\nSave data will be overwritten.\nIs this OK?",
-    "ua": "Резервну копію буде\nвідновлено.\n\nЗбереження буде перезаписано.\nПродовжити?"
+    "ua": "Резервну копію буде\nвідновлено.\n\nЗбереження буде перезаписано\nПродовжити?"
   },
   "dat_dlg_bu_re1": {
     "en": "Restoring backup data...\n\nDo not remove the SD Card\nor turn off the power.",
