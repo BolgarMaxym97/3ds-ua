@@ -169,11 +169,11 @@
   },
   "lau_dlg_2b_pare1": {
     "en": " Launch in 2D",
-    "ua": " Режим 2D"
+    "ua": " Режим 2D"
   },
   "lau_dlg_2b_pare2": {
     "en": " Launch in 3D",
-    "ua": " Режим 3D"
+    "ua": " Режим 3D"
   },
   "lau_dlg_cup_error": {
     "en": "The Game Card could\nnot be read.{t:1.1:1400}\n                    {/t:1.1}\nPlease remove and reinsert\nthe Game Card.",

@@ -269,7 +269,7 @@
   },
   "fri_dlg_internet": {
     "en": "The suspended title is\ncurrently using internet-based\ncommunications. Would you\nlike to disconnect from the\ninternet and register a friend?",
-    "ua": "Призупинена програма\nзараз використовує\nз'єднання з Інтернетом.\nВідключитися від Інтернету\nй зареєструвати друга?"
+    "ua": "Призупинена програма\nзараз використовує\nз'єднання з Інтернетом.\nВід'єднатися від Інтернету\nй зареєструвати друга?"
   },
   "fri_dlg_paren1": {
     "en": "Friend Registration has been\nrestricted by Parental\nControls.{t:1.0:1400}\n                    {/t:1.0}\nWould you like to temporarily\nremove this restriction?",
