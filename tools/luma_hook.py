@@ -191,13 +191,30 @@ HOOK_PATCHES: dict[str, dict] = {
             "pool_ends_at": 0xE92D4070,  # the next function's push, a guard for the offsets
             # .rodata page padding: rodata ends at 0x1BCBA8 and the page at 0x1BD000. Luma
             # claims the first 48 bytes for its own LayeredFS path, so ours start past that.
+            # The room stops where the SMDH name table starts (0xBCD10): 8 bytes of table
+            # plus a 19-byte path per title, and 8 more to terminate it, so 0x138 holds
+            # eleven titles - which is what this build ships and what the padding allows:
+            # the two tables together are 977 of the 1064 bytes between 0xBCBD8 and the
+            # 0xBD000 page boundary, and a twelfth title would cost about 100 more.
             "rodata_off": 0xBCBD8,
-            "rodata_room": 0x428,
+            "rodata_room": 0x138,
             "fallback": b"rex:/Manual.bcma\0",   # the string in .text, left where it is
             "second_site": 0x48294,              # the caller's `sub r1, pc, #200`
             "second_site_word": 0xE24F10C8,
             # The titles this build ships a manual for. tools/manual.py checks it matches.
-            "titles": ["0004003000009D02", "0004001000022000"],
+            "titles": [
+                "0004003000009D02",
+                "0004001000022000",
+                "0004001000022200",
+                "0004001000022100",
+                "0004001000022400",
+                "0004001000022500",
+                "0004001000022700",
+                "0004001000022800",
+                "0004001000022900",
+                "0004001000022D00",
+                "0004001000022E00",
+            ],
         },
         # The name across the top of every manual page is not in the document: it is the
         # short description out of the *documented* title's SMDH, which ebird reads itself
@@ -233,8 +250,8 @@ HOOK_PATCHES: dict[str, dict] = {
             "dead_sha256": "c8a3a2b26f7efa67ed864551c80362cc996116ffb5ff17b654287ed0d282502f",
             # .rodata padding again, past the manual-path table at 0xBCBD8 with room for it
             # to grow: the table there is 8 bytes per title plus a 19-byte path each.
-            "rodata_off": 0xBCC60,
-            "rodata_room": 0x3A0,       # up to the 0xBD000 page boundary
+            "rodata_off": 0xBCD10,
+            "rodata_room": 0x2F0,       # up to the 0xBD000 page boundary
         },
         "code_sha256": "cf4658f9f618a41f8d32ff7aed40d0ea565da78a2ace349cb93698ff5f7df5d8",
         "variant": "sl_frame14",

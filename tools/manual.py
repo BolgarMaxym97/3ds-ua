@@ -107,6 +107,60 @@ MANUALS = {
         "slot": "EUR_ru",
         "reference": "EUR_en",
     },
+    "activity_log": {
+        "tid": "0004001000022200",
+        "path": "manual/Manual.bcma",
+        "slot": "EUR_ru",
+        "reference": "EUR_en",
+    },
+    "download_play": {
+        "tid": "0004001000022100",
+        "path": "manual/Manual.bcma",
+        "slot": "EUR_ru",
+        "reference": "EUR_en",
+    },
+    "camera": {
+        "tid": "0004001000022400",
+        "path": "manual/Manual.bcma",
+        "slot": "EUR_ru",
+        "reference": "EUR_en",
+    },
+    "sound": {
+        "tid": "0004001000022500",
+        "path": "manual/Manual.bcma",
+        "slot": "EUR_ru",
+        "reference": "EUR_en",
+    },
+    "mii_maker": {
+        "tid": "0004001000022700",
+        "path": "manual/Manual.bcma",
+        "slot": "EUR_ru",
+        "reference": "EUR_en",
+    },
+    "mii_plaza": {
+        "tid": "0004001000022800",
+        "path": "manual/Manual.bcma",
+        "slot": "EUR_ru",
+        "reference": "EUR_en",
+    },
+    "eshop": {
+        "tid": "0004001000022900",
+        "path": "manual/Manual.bcma",
+        "slot": "EUR_ru",
+        "reference": "EUR_en",
+    },
+    "face_raiders": {
+        "tid": "0004001000022D00",
+        "path": "manual/Manual.bcma",
+        "slot": "EUR_ru",
+        "reference": "EUR_en",
+    },
+    "ar_games": {
+        "tid": "0004001000022E00",
+        "path": "manual/Manual.bcma",
+        "slot": "EUR_ru",
+        "reference": "EUR_en",
+    },
 }
 
 
