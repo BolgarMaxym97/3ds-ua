@@ -76,6 +76,9 @@
 
 ## Чого поки що немає
 
+- **«Україна» в профілі — це код Росії, і онлайн бачить саме його.** У таблиці кодів країн Nintendo України немає взагалі: європейський блок суцільний, `…99 Румунія, 100 Росія, 101 Сербія…`. Тому мод не додає нову країну, а перейменовує наявну — «Україна» в списку це той самий код `100`. Свою консоль ви бачите українською, але **назву за цим кодом кожен читає своєю таблицею**: інші гравці в онлайні, NNID, eShop і StreetPass побачать «Росія». Мод цього виправити не може — код країни це системна величина, від якої залежать NNID, eShop і вікові рейтинги, і нового рядка в таблицю не вставити.
+
+  **Якщо це важливо — поставте в профілі будь-яку іншу країну.** Мова й країна в 3DS ніяк не пов'язані: переклад стоїть на мовному слоті, тому інтерфейс лишиться повністю українським з будь-якою країною в профілі.
 - **Українських `і ї є ґ`.** У шрифті самої консолі їх немає, тому мод показує візуально близькі `i ï ε г`. Замінити шрифт можна лише правкою системних файлів — а проєкт цього свідомо не робить.
 - **Справжніх літер з клавіатури.** Розкладка українська (`ы`→`і`, `ъ`→`ї`, `э`→`є`, а на місці `ё` тепер апостроф), але вводяться ті самі символи-замінники.
 - **Електронних довідників решти додатків.** Переглядач бере довідник кожного додатка окремо, тож кожен треба здампити з вашої консолі й перекласти. Готові одинадцять — Інтернет-браузера, Налаштувань системи, Журналу дій, Гри по завантаженню, Камери, Звуку, Mii Maker, Площі StreetPass Mii, Nintendo eShop, Face Raiders та AR Games, усі повністю; решта показує той самий довідник, що й раніше. Більше в цю збірку й не влізе: таблиця шляхів переглядача та таблиця назв додатків займають 977 із 1064 байтів вільного місця в його коді. Довідники ігор належать іграм, а не системі, тож лишаються як є.
@@ -90,6 +93,7 @@
 | Російською, а галочка стоїть | Перевірте шлях: має бути `luma/titles/…`, а не `luma/luma/titles/…`. |
 | У списку мов немає «Українська» | Архів скопіювався не повністю, або консоль не EUR-регіону. |
 | Частина тексту не українською | Так і має бути: технічні написи (`OK`, `Miiverse`, формати дат) лишені як є. |
+| В онлайні мене бачать з Росії | Так і буде: «Україна» в профілі це код Росії, свого коду в системі Україна не має — [чому](#чого-поки-що-немає). Поставте іншу країну, інтерфейс лишиться українським. |
 | `An exception occurred` при запуску додатка | Перейменуйте `SD:/luma/titles/<номер>/romfs` цього додатка на `_romfs` і перезавантажте — він запуститься без перекладу. І [напишіть в Issues](../../issues) з фото екрана. |
 | Меню HOME не завантажується | Видаліть `SD:/luma/titles/0004003000009802/code.ips`. Не допомогло — усю папку `0004003000009802`. |
 | Якийсь додаток крешить після встановлення | У вас старіша його версія. Видаліть папку цього додатка з `SD:/luma/titles/` — решта перекладу працюватиме. Номери папок є в [технічному описі](docs/internals.md). |
@@ -170,6 +174,9 @@ Nothing in the system was modified, so removal cannot break anything.
 
 ### Known limits
 
+- **«Україна» in your profile is Russia's country code, and that is what online sees.** Nintendo's country table has no Ukraine at all: the European block runs unbroken, `…99 Romania, 100 Russia, 101 Serbia…`. So the mod does not add a country, it renames one — «Україна» in the list *is* code `100`. Your own console shows Ukrainian, but **every other machine resolves that code with its own table**: other players online, NNID, the eShop and StreetPass will all see Russia. The mod cannot fix this — the country code is a system-wide value that NNID, the eShop and age ratings depend on, and no new row fits in the table.
+
+  **If that matters to you, set any other country in your profile.** Language and country are unrelated on the 3DS: the translation hangs off the language slot, so the interface stays fully Ukrainian whatever country your profile says.
 - **The Ukrainian letters `і ї є ґ`** are not in the console's font, so the mod shows the visually closest `i ï ε г`. Replacing the font would mean modifying the system itself, which this project deliberately avoids.
 - **Typing them.** The keyboard layout is Ukrainian (`ы`→`і`, `ъ`→`ї`, `э`→`є`, `ё`→apostrophe), but it types those same substitute characters.
 - **The electronic manuals of the remaining titles.** The viewer reads each title's own manual, and each one has to be dumped off your console and translated separately. 1.0.0 ships eleven in full; every other title shows the manual it always did. The ceiling is now space, not text: the viewer's path table and its SMDH name table share one 1064-byte window of `.rodata` padding, and eleven titles use 977 of it — a twelfth needs new space first. A game's manual belongs to the game, not to the system, so those stay as they are.
@@ -184,6 +191,7 @@ Nothing in the system was modified, so removal cannot break anything.
 | Still Russian, the option is on | Check the path: `luma/titles/…`, not `luma/luma/titles/…`. |
 | No «Українська» in the language list | The archive was not copied fully, or the console is not EUR. |
 | Some text is not Ukrainian | Expected: technical strings (`OK`, `Miiverse`, date formats) are left as they are. |
+| Online, others see me as Russian | Expected: «Україна» in the profile is Russia's country code — the system has none for Ukraine, see [Known limits](#known-limits). Pick another country; the interface stays Ukrainian. |
 | `An exception occurred` when opening an app | Rename that app's `SD:/luma/titles/<id>/romfs` to `_romfs` and reboot — it will start untranslated. Please [open an Issue](../../issues) with a photo. |
 | HOME Menu won't boot | Delete `SD:/luma/titles/0004003000009802/code.ips`. If that doesn't help, delete the whole `0004003000009802` folder. |
 | An app crashes after installing | You have an older build of it. Delete that app's folder from `SD:/luma/titles/` — the rest keeps working. Folder numbers are in the [technical write-up](docs/internals.en.md). |
