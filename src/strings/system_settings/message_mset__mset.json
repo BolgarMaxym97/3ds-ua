@@ -133,7 +133,7 @@
   },
   "top_btm_text": {
     "en": " Close",
-    "ua": "Закрити"
+    "ua": " Закрити"
   },
   "top_internet": {
     "en": "Internet\nSettings",
@@ -1161,11 +1161,11 @@
   },
   "Initial_comm_n0": {
     "en": "This will remove the link to this\nNintendo Network ID.\n\nThe ID itself will not be deleted.\n\nYou can link to it again via \nNintendo Network ID Settings ⇒\nLink an Existing ID.",
-    "ua": "Це видалить привʼязку до цього\nNintendo Network ID.\n\nСам ID не буде видалено.\n\nПривʼязати його знову можна\nв налаштуваннях\nNintendo Network ID."
+    "ua": "Це видалить прив'язку до цього\nNintendo Network ID.\n\nСам ID не буде видалено.\n\nПрив'язати його знову можна\nв налаштуваннях\nNintendo Network ID."
   },
   "Initial_comm_n1": {
     "en": "The Nintendo Network ID linked\nto this system cannot be linked\nto other Nintendo 3DS systems.\n\nPlease select System Transfer\nif you wish to link the ID to\nanother system.",
-    "ua": "Nintendo Network ID, привʼяза-\nний до цієї системи, не можна\nпривʼязати до інших консолей\nNintendo 3DS.\n\nЩоб привʼязати ID до іншої\nсистеми, скористайтеся\nПеренесенням системи."
+    "ua": "Nintendo Network ID, прив'яза-\nний до цієї системи, не можна\nприв'язати до інших консолей\nNintendo 3DS.\n\nЩоб прив'язати ID до іншої\nсистеми, скористайтеся\nПеренесенням системи."
   },
   "Initialize0_comm": {
     "en": "This will delete all downloaded\nsoftware and save data.\nSoftware saved to an SD Card\nwill no longer be usable.\n(Some data, such as photos\nsaved to the SD Card, will\nnot be deleted.)",
@@ -4269,7 +4269,7 @@
   },
   "par_dlg_deleteng": {
     "en": "These settings cannot be\ndeleted because the\nNintendo Network ID linked\nto this system is for someone\nunder the age of 13.",
-    "ua": "Ці налаштування не можна\nвидалити, бо Nintendo\nNetwork ID, привʼязаний\nдо цієї системи, належить\nособі, молодшій за 13 років."
+    "ua": "Ці налаштування не можна\nвидалити, бо Nintendo\nNetwork ID, прив'язаний\nдо цієї системи, належить\nособі, молодшій за 13 років."
   },
   "par_dlg_del_wait": {
     "en": "The necessary data is missing.\nWith the internet connected,\nplease wait with the HOME\nMenu open, without activating\nSleep Mode. Then try\nselecting Clear Settings.",
@@ -5025,7 +5025,7 @@
   },
   "st_dlg_par_need1": {
     "en": "Parental Controls are required\nbecause the Nintendo Network\nID linked to this system is for\nsomeone under the age of 13.\n\nPlease configure the appropriate\nParental Controls restrictions.",
-    "ua": "Батьківський контроль\nобов'язковий, бо Nintendo\nNetwork ID, привʼязаний до цієї\nсистеми, належить особі,\nмолодшій за 13 років.\n\nЗадайте потрібні обмеження."
+    "ua": "Батьківський контроль\nобов'язковий, бо Nintendo\nNetwork ID, прив'язаний до цієї\nсистеми, належить особі,\nмолодшій за 13 років.\n\nЗадайте потрібні обмеження."
   },
   "st_dlg_par1": {
     "en": "Are you sure you want to exit\nParental Controls settings?",
