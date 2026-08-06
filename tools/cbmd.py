@@ -34,6 +34,9 @@ CWAV_OFFSET = 0x84
 CWAV_ALIGNMENT = 32   # where Nintendo puts it, and where its parser needs it
 
 # Slot numbers worth naming, from the jump table at .text 0x145560 of HOME Menu EUR v29.
+# Slot 0 is not a language: it is the block drawn for every language that has none of its
+# own, which is how System Settings and Download Play draw their English banner.
+COMMON = 0
 EUR_EN = 1
 EUR_RU = 8
 

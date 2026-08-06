@@ -43,6 +43,7 @@ import struct
 from pathlib import Path
 
 import smdh_names
+import variant
 
 TEXT_VA = 0x100000
 
@@ -226,8 +227,9 @@ HOOK_PATCHES: dict[str, dict] = {
         # The name across the top of every manual page is not in the document: it is the
         # short description out of the *documented* title's SMDH, which ebird reads itself
         # from ExeFS:/icon in NAND. LayeredFS cannot reach that, so the read is hooked and
-        # the Russian slot of the buffer is overwritten - the same table and the same
-        # routine HOME Menu's patch uses, see SMDH_NAMES there.
+        # the buffer's slot for the language this build replaces is overwritten (see
+        # tools/variant.py) - the same table and the same routine HOME Menu's patch uses,
+        # see SMDH_NAMES there.
         #
         # One reader, one caller, and no cache of any kind:
         #
@@ -251,7 +253,6 @@ HOOK_PATCHES: dict[str, dict] = {
         "smdh_hook": {
             "site_off": 0x15E84,        # `bl` to the reader, the one call it ever gets
             "reader_off": 0x2F5B8,      # ReadTitleIcon(buffer, mediatype, tid_lo, tid_hi)
-            "lang_index": 10,           # the SMDH language slot the mod overwrites: EU_Russian
             "reads": "the manual's SMDH read",
             "effect": "the name above the page is the one the HOME Menu shows",
             "stub_off": 0x2C6E8,        # the dead icon-tile copier
@@ -432,7 +433,6 @@ HOOK_PATCHES: dict[str, dict] = {
         "thunk_off": 0x131E60,     # the one caller of ReadTitleIcon(), itself called 18 times
         "reader_off": 0xEA40,      # ReadTitleIcon(buffer, mediatype, tid_lo, tid_hi)
         "cache_read_off": 0x147D64,  # CacheRead(cache, key, buffer) -> bool, out of Cache.dat
-        "lang_index": 10,          # the SMDH language slot the mod overwrites: EU_Russian
         # The picture on the upper screen comes from the highlighted title's own
         # ExeFS:/banner, which HOME Menu opens itself - see docs/banner-ua.md. The open is
         # shared by every title, so the hook compares the title id first and swaps only the
@@ -698,6 +698,24 @@ HOOK_PATCHES: dict[str, dict] = {
             {"patch_at": 0x14944, "return_to": 0x14948},
             {"patch_at": 0x0E958, "return_to": 0x0E95C},
         ],
+        # The Cyrillic keyboard is not something the MSBT can switch on by itself - see
+        # _lang_swap_records().
+        "lang_swap": {
+            "russian": 12,              # EU_Russian in the title's own language order
+            "languages": {"ru": 12, "en": 5},
+            # `mov r0, r4 ; pop {r4, r5, r6, lr} ; b SetLanguage` - the tail of the routine
+            # that turns the console's language and region into the applet's own index.
+            "tail_call_off": 0x07E80,
+            "set_language_off": 0x11D5C,  # SetLanguage(index): three instructions and a literal
+            "set_language": [
+                0xE59F1004,             # ldr r1, [pc, #4]   =0x1B773C
+                0xE5810008,             # str r0, [r1, #8]   the language global, va 0x1B7744
+                0xE12FFF1E,             # bx  lr
+            ],
+            "table_va": 0x1A0008,       # .rodata: one MSBT folder name per language index
+            "folders": {5: "EU_English", 12: "EU_Russian"},
+            "stub_off": 0x9F0BC,        # .text page padding, past the two redirect stubs
+        },
     },
     # System Settings (mset), EUR, title version 12.
     #
@@ -755,9 +773,9 @@ HOOK_PATCHES: dict[str, dict] = {
         "rodata_padding_room": 0xB10,
         # Data Management lists every installed title by name, and those names are not in
         # this title's romfs either: it reads each one's SMDH itself, out of `ExeFS:/icon` in
-        # NAND, which LayeredFS cannot reach. So the read is hooked and the Russian slot of
-        # the buffer is overwritten - the same table and the same routine HOME Menu's patch
-        # uses, see SMDH_NAMES there.
+        # NAND, which LayeredFS cannot reach. So the read is hooked and the buffer's slot for
+        # the language this build replaces is overwritten - the same table and the same
+        # routine HOME Menu's patch uses, see SMDH_NAMES there.
         #
         # One reader, two thunks, ten call sites, and no cache of any kind (the only 'cache'
         # in the image is an SDK log string, and every consumer allocates 0x36C0 bytes and
@@ -778,7 +796,6 @@ HOOK_PATCHES: dict[str, dict] = {
             "thunks": [0x9AC04, 0xA13D0],  # the `bl` this hook takes over is 12 bytes in
             "reader_off": 0xB10BC,
             "stack_arg": True,
-            "lang_index": 10,           # the SMDH language slot the mod overwrites: EU_Russian
             "reads": "the Data Management SMDH reads",
             "effect": "the software list names titles the way the HOME Menu does",
         },
@@ -1473,10 +1490,11 @@ def _stub_smdh_names(patch: dict, table_va: int, base: int) -> tuple[list[int], 
     Nothing is written back - the copy on the SD card stays as Nintendo left it, so removing
     the mod restores the original names with no cache rebuild.
     """
-    short_at, long_at = smdh_names.slot_offsets(patch["lang_index"])
+    lang_index = variant.current().smdh_index
+    short_at, long_at = smdh_names.slot_offsets(lang_index)
     page, short_low, long_low = short_at & ~0xFF, short_at & 0xFF, long_at & 0xFF
     if long_at & ~0xFF != page:
-        raise RuntimeError(f"slot {patch['lang_index']} spans two immediate pages")
+        raise RuntimeError(f"slot {lang_index} spans two immediate pages")
 
     def bl(target: str):
         return lambda at, labels: _bl(at, labels[target])
@@ -1534,7 +1552,7 @@ def _stub_smdh_names(patch: dict, table_va: int, base: int) -> tuple[list[int], 
             0xE92D4FF0,                          # push  {r4-r8, sb, sl, fp, lr}
             lambda at, labels: _b(at, patch["cache_read_off"] + 4),
         ],
-    } | _smdh_rewrite_blocks(patch["lang_index"], table_va)
+    } | _smdh_rewrite_blocks(lang_index, table_va)
     return _assemble(blocks, base)
 
 
@@ -1684,7 +1702,7 @@ def _smdh_hook(patch: dict, table_va: int, base: int) -> tuple[list[int], dict[s
             0xE28DD00C,                          # add   sp, sp, #12
             0xE8BD8000,                          # pop   {pc}
         ],
-    } | _smdh_rewrite_blocks(hook["lang_index"], table_va)
+    } | _smdh_rewrite_blocks(variant.current().smdh_index, table_va)
     return _assemble(blocks, base)
 
 
@@ -2340,6 +2358,9 @@ def _generate_romfs_from_sd(
             tid, patch, code, exheader, hook["stub_off"], hook["rodata_off"]
         )
         records += extra
+    gate_log: list[str] = []
+    if patch.get("lang_swap"):
+        gate_log = _lang_swap_records(patch, code, exheader, records)
     files = {"code.ips": make_ips(records)}
     log = [
         f"{patch['title']} title version {version}",
@@ -2347,7 +2368,7 @@ def _generate_romfs_from_sd(
         f"stubs at 0x{patch['stub_off']:X} (va 0x{TEXT_VA + patch['stub_off']:X})",
         f"code.ips: path {sd_path!r} at va 0x{ro_address + ro_size:X} "
         f"({room} bytes of .rodata padding available)",
-    ] + msg_log
+    ] + msg_log + gate_log
 
     # A title that already carries DirectSdmc gets no exheader.bin: it would be byte-identical
     # to the one in NAND, and shipping a copy only adds a file that has to match the console's
@@ -2359,6 +2380,163 @@ def _generate_romfs_from_sd(
         files["exheader.bin"] = patch_exheader(tid, exheader)
         log.append("exheader.bin: DirectSdmc granted")
     return files, log
+
+
+def _lang_swap_records(
+    patch: dict, code: bytes, exheader: bytes, records: list
+) -> list[str]:
+    """Swap the Russian language slot with the one this build takes, inside the applet.
+
+    The keyboard's layouts do live in the MSBT - `qwerty_keytop_ru`, `cell_keytop_cyrillic*`,
+    `euro_keytop_05*` - which is why the Ukrainian ЙЦУКЕН needs no code at all in the
+    `from-ru` build. What is *not* in the MSBT is whether those labels are ever read. The
+    applet keeps its own language index in a global (va 0x1B7744) and asks some twenty-five
+    times over whether it equals 12, EU_Russian: for the input language, for the number of
+    keytop pages, for `KeytopModeSelect_5p` over `KeytopModeSelect`, for the bound of the
+    loop that *builds* those pages. Retargeting the tests one by one is a losing game - the
+    page objects and the code that draws them are gated in different functions, and missing
+    one leaves a null pointer for the other to dereference.
+
+    So the language itself is swapped instead, at the single place it is set:
+
+        0x107E78  mov r0, r4            the index the console's language maps to
+        0x107E7C  pop {r4, r5, r6, lr}
+        0x107E80  b   SetLanguage       -> b <stub>, which swaps 5 and 12 and falls through
+
+    After that every one of those tests answers the way it does on a Russian console, which
+    is the arrangement the `from-ru` build has already been proven on. The two entries of
+    the .rodata table that names the MSBT folder per language are swapped to match, so the
+    applet still reads the folder each language's text actually lives in:
+
+        index 5  -> EU_Russian     a console left on Russian, whose text this build keeps
+        index 12 -> EU_English     the slot this build translates
+
+    The swap is a swap and not an overwrite so that both languages stay reachable: only the
+    Cyrillic keyboard, which the applet grants to exactly one language, moves with it.
+    """
+    swap = patch["lang_swap"]
+    slot = variant.current()
+    russian = swap["russian"]
+    wanted = swap["languages"][slot.key]
+    if wanted == russian:
+        return ["code.ips: language left alone, this build already takes the slot the "
+                "Cyrillic keyboard is wired to"]
+
+    setter = TEXT_VA + swap["set_language_off"]
+    word = struct.unpack_from("<I", code, swap["tail_call_off"])[0]
+    if word != _b(swap["tail_call_off"], swap["set_language_off"]):
+        raise RuntimeError(
+            f"0x{swap['tail_call_off']:X} holds 0x{word:08X}, not the `b 0x{setter:X}` that "
+            f"ends the language mapper - the offsets are stale"
+        )
+    body = struct.unpack_from("<3I", code, swap["set_language_off"])
+    if list(body) != swap["set_language"]:
+        raise RuntimeError(
+            f"0x{swap['set_language_off']:X} is not the language setter the offsets were "
+            f"taken from: {[f'{w:08X}' for w in body]}"
+        )
+
+    stub = swap["stub_off"]
+    words = [
+        0xE3500000 | wanted,                    # +00  cmp   r0, #<this build's slot>
+        0x03A00000 | russian,                   # +04  moveq r0, #12
+        _bc(COND_EQ, stub + 0x08, stub + 0x14),  # +08  beq   done
+        0xE3500000 | russian,                   # +0C  cmp   r0, #12
+        0x03A00000 | wanted,                    # +10  moveq r0, #<this build's slot>
+        _b(stub + 0x14, swap["set_language_off"]),  # +14  done: b SetLanguage
+    ]
+    blob = b"".join(struct.pack("<I", w) for w in words)
+    if any(code[stub:stub + len(blob)]):
+        raise RuntimeError(f"0x{stub:X} is not the .text padding the stub goes into")
+
+    # The folder table is .rodata, whose file offset follows from the section sizes the way
+    # the SD path's does.
+    text_size = struct.unpack_from("<I", exheader, TEXT_SIZE_OFFSET)[0]
+    ro_address = struct.unpack_from("<I", exheader, 0x20)[0]
+    table = ((text_size + 0xFFF) & ~0xFFF) + swap["table_va"] - ro_address
+    entries = {}
+    for index, folder in swap["folders"].items():
+        va = struct.unpack_from("<I", code, table + 4 * index)[0]
+        name = _rodata_string(code, exheader, va)
+        if name != folder:
+            raise RuntimeError(
+                f"entry {index} of the folder table at 0x{table:X} names {name!r}, not "
+                f"{folder!r} - this is not the table the offsets were taken from"
+            )
+        entries[index] = va
+
+    new = [
+        (swap["tail_call_off"], struct.pack("<I", _b(swap["tail_call_off"], stub))),
+        (stub, blob),
+        (table + 4 * wanted, struct.pack("<I", entries[russian])),
+        (table + 4 * russian, struct.pack("<I", entries[wanted])),
+    ]
+    for offset, data in new:
+        for other, existing in records:
+            if offset < other + len(existing) and other < offset + len(data):
+                raise RuntimeError(
+                    f"the language swap at 0x{offset:X} overlaps the record at 0x{other:X}"
+                )
+    records += new
+    _verify_lang_swap(patch, code, exheader, records, table)
+
+    return [
+        f"code.ips: language {wanted} ({slot.lang}) and {russian} (EU_Russian) swapped by a "
+        f"{len(blob)}-byte stub at va 0x{TEXT_VA + stub:X}, so the Cyrillic keyboard - and "
+        f"everything else the applet grants only to Russian - follows this build's slot",
+        f"code.ips: the MSBT folder table at va 0x{swap['table_va']:X} is swapped to match, "
+        f"entry {wanted} -> {swap['folders'][russian]}, entry {russian} -> "
+        f"{swap['folders'][wanted]}",
+    ]
+
+
+def _rodata_string(code: bytes, exheader: bytes, va: int) -> str:
+    """The NUL-terminated string at a .rodata address, as the dumped .code holds it."""
+    text_size = struct.unpack_from("<I", exheader, TEXT_SIZE_OFFSET)[0]
+    ro_address = struct.unpack_from("<I", exheader, 0x20)[0]
+    ro_size = struct.unpack_from("<I", exheader, 0x28)[0]
+    if not ro_address <= va < ro_address + ro_size:
+        raise RuntimeError(f"0x{va:X} is not a .rodata address")
+    start = ((text_size + 0xFFF) & ~0xFFF) + va - ro_address
+    return code[start:code.index(b"\0", start)].decode("ascii")
+
+
+def _verify_lang_swap(
+    patch: dict, code: bytes, exheader: bytes, records: list, table: int
+) -> None:
+    """Walk the patched image: the stub really swaps the two, and nothing else moved."""
+    swap = patch["lang_swap"]
+    russian = swap["russian"]
+    wanted = swap["languages"][variant.current().key]
+    patched = bytearray(code)
+    for offset, data in records:
+        patched[offset:offset + len(data)] = data
+
+    def lands(at: int) -> int:
+        word = struct.unpack_from("<I", patched, at)[0]
+        if word >> 24 != 0xEA:
+            raise RuntimeError(f"0x{at:X} holds 0x{word:08X}, which is not a `b`")
+        offset = word & 0xFFFFFF
+        return at + 8 + ((offset - 0x1000000 if offset & 0x800000 else offset) << 2)
+
+    stub = swap["stub_off"]
+    if lands(swap["tail_call_off"]) != stub:
+        raise RuntimeError("the language mapper does not reach the swap stub")
+    if lands(stub + 0x14) != swap["set_language_off"]:
+        raise RuntimeError("the swap stub does not fall through to the language setter")
+
+    # Both languages have to survive the swap, and land on the folder holding their text.
+    for index, expected in ((wanted, swap["folders"][russian]),
+                            (russian, swap["folders"][wanted])):
+        va = struct.unpack_from("<I", patched, table + 4 * index)[0]
+        if _rodata_string(bytes(patched), exheader, va) != expected:
+            raise RuntimeError(f"entry {index} of the folder table does not name {expected}")
+
+    # The setter it tail-calls is untouched: the swap is the only thing between the language
+    # the console reports and the one the applet remembers.
+    if list(struct.unpack_from("<3I", patched, swap["set_language_off"])) != \
+            swap["set_language"]:
+        raise RuntimeError("the language setter was rewritten")
 
 
 def msg_sd_path(tid: str, image_name: str) -> str:
@@ -3140,7 +3318,7 @@ def _smdh_hook_records(patch: dict, code: bytes, table: bytes, records: list) ->
     where = ", ".join(f"0x{site:X}" for site in sites)
     return [
         f"code.ips: {hook['reads']} at {where} routed through a {len(blob)}-byte "
-        f"wrapper at va 0x{TEXT_VA + stub_off:X}; language slot {hook['lang_index']} is "
+        f"wrapper at va 0x{TEXT_VA + stub_off:X}; language slot {variant.current().smdh_index} is "
         f"rewritten from a {len(table)}-byte table at va 0x{TEXT_VA + table_off:X}, so "
         f"{hook['effect']}"
     ]

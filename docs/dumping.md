@@ -164,7 +164,8 @@ python3 tools/dumpinfo.py work
 | мовних папок 1–2 замість 8 | узято не найбільший `.app`, тобто стара версія титулу |
 | `0 KiB` або дуже мало | копіювання обірвалось, повторіть |
 
-Назва мовної папки залежить від титулу: у Меню HOME це `EU_Russian`, у Посібника —
+Збірка `from-en` бере натомість папку `EU_English`, однакову в усіх титулах.
+Назва російської мовної папки залежить від титулу: у Меню HOME це `EU_Russian`, у Посібника —
 `EU_Russia` без `n`. Перевіряйте для кожного окремо.
 
 Швидка перевірка шрифту:
@@ -179,8 +180,8 @@ python3 tools/lz11.py work/0004009B00014002/cbf_std.bcfnt.lz   # має виве
 make font       # шрифт → assets/font_charset.txt + font_widths.json
 make extract    # romfs → src/strings/*.json (наявні переклади зберігаються)
 make validate   # перевірка: символи, ширина, кількість рядків, теги
-make build      # → dist/luma/titles/...
-make package    # → 3ds-ua-<версія>.zip
+make build      # → dist/luma/titles/... і dist_en/luma/titles/...
+make package    # → 3ds-ua-from-ru-<версія>.zip і 3ds-ua-from-en-<версія>.zip
 ```
 
 Потрібен Python 3.11+, зовнішніх залежностей немає.

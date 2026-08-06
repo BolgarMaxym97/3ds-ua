@@ -3,17 +3,18 @@
 The built-in tips of the Notifications applet (`new_tips0`..`new_tips16` in `menu_msbt`)
 are not rendered from romfs. The HOME Menu copies each one into the news module's NAND
 savedata through `news:s AddNotification`, and that copy is frozen at delivery time - so a
-tip delivered before the mod was installed keeps the Russian text forever, no matter what
-LayeredFS serves. LayeredFS cannot reach it and neither can a romfs replacement.
+tip delivered before the mod was installed keeps the text of the language the console ran
+then, forever, no matter what LayeredFS serves. LayeredFS cannot reach it and neither can a
+romfs replacement.
 
 What is in reach is HOME Menu's own code. The patch walks the 100 notification slots, and
-for a slot whose stored title is one of Nintendo's Russian tip titles it writes our
-Ukrainian text back through `news:s`. The stored text is byte-for-byte the MSBT text - the
+for a slot whose stored title is one of Nintendo's tip titles in the language this build
+replaces it writes our Ukrainian text back through `news:s`. The stored text is byte-for-byte the MSBT text - the
 tips carry no style tags - which is what makes matching on a hash of the title reliable.
 
 Table layout, little-endian, four words per entry, terminated by a zero hash:
 
-    +0x00  u32  hash of the Russian title as stored in the notification header
+    +0x00  u32  hash of the original title as stored in the notification header
     +0x04  u32  address of the ASCII label of the body   ("new_tips3")
     +0x08  u32  address of the ASCII label of the title  ("new_tips3_title")
     +0x0C  u32  hash of the Ukrainian title this build ships
@@ -21,8 +22,8 @@ Table layout, little-endian, four words per entry, terminated by a zero hash:
 The second hash is a gate, not a key: the stub fetches the title through HOME Menu's own
 message lookup, which answers in whatever language the console is set to, and writes
 nothing unless the answer is the Ukrainian string this build shipped. A console running
-the mod in English therefore keeps its notifications untouched, and so does one whose
-translation has moved on since the patch was built.
+the mod in another language therefore keeps its notifications untouched, and so does one
+whose translation has moved on since the patch was built.
 
 The addresses are filled in by tools/luma_hook.py, which lays the labels out inside the
 same blob; this module only decides which tips take part and hashes their text.

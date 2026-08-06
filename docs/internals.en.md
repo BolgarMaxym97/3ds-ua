@@ -89,6 +89,53 @@ Ukrainian needs it constantly (`об'єкт`, `п'ять`) and this layout had n
 In the dictionary language list, the `Русский` entry is labelled `українс.` — it is the
 same entry that switches the keyboard to Cyrillic.
 
+### The Cyrillic keyboard in the `from-en` build
+
+The MSBT decides **which letters** the keys carry, but not whether anything ever reads
+them. The applet keeps its own language index in a global (va `0x1B7744`) and asks some
+twenty-five times over whether it equals 12, `EU_Russian` in the title's own language
+order: for the input language, for the number of keytop pages, for `KeytopModeSelect_5p`
+over `KeytopModeSelect`, for the bound of the loop that **builds** those pages.
+
+In `from-ru` the console reports `EU_Russian` and it all lines up by itself. In `from-en`
+it reports `EU_English` and every one of those tests fails.
+
+Retargeting the tests one by one is a losing game, and hardware proved it: turn the fifth
+keytop page on (`0x13E078`) without turning on the loop that builds it (`0x193CE0`), and
+the applet dies at `strb r0, [r5, #0x74]`, va `0x13FA58`, with `r5 = 0` — the page object
+in `[r4+0xA0]` was never constructed. The gates sit in different functions, and missing one
+leaves a null pointer for another to dereference.
+
+So the language itself is swapped, at the single place it is set:
+
+```
+0x107E78  mov r0, r4            the index the console's language maps to
+0x107E7C  pop {r4, r5, r6, lr}
+0x107E80  b   SetLanguage       -> b <stub>, which swaps 5 and 12
+```
+
+The stub is six words of `.text` padding (`0x19F0BC`, right past the two RomFS redirect
+stubs): `cmp r0,#5 / moveq r0,#12 / beq / cmp r0,#12 / moveq r0,#5 / b SetLanguage`. After
+that all twenty-five tests answer the way they do on a Russian console — the arrangement
+the `from-ru` build has already been proven on.
+
+The `.rodata` table at va `0x1A0008` that names the MSBT folder per language is swapped to
+match:
+
+| index | was | now |
+|---|---|---|
+| 5 | `EU_English` | `EU_Russian` |
+| 12 | `EU_Russian` | `EU_English` |
+
+It is a swap and not an overwrite: both languages stay reachable and read the folder their
+text actually lives in. The dictionary button's caption then comes from `qwerty_dic_ru` /
+`cell_dic_ru` by itself, which is where the Ukrainian caption sits in both builds, so it
+needs no second spelling in `src/strings/keyboard/`.
+
+146 bytes in four `code.ips` records altogether. The cost is unchanged: in `from-en`, a
+console switched back to Russian gets a Latin keyboard, because the applet grants Cyrillic
+to exactly one language.
+
 ## The top-bar font
 
 The date, clock and battery line at the top of the screen is **not** drawn with the shared
@@ -659,23 +706,25 @@ match exactly.
 |---|---|---|
 | `b pane_hook` over the setter's prologue | `0x7BC28` | 4 bytes |
 | the hook | end of the `.text` padding, `0xE0F24` | 220 bytes |
-| the table, Russian name to Ukrainian | `.rodata` padding, va `0x1F1874` | 1632 bytes |
+| the table, original name to Ukrainian | `.rodata` padding, va `0x1F1874` | 1632 bytes (`from-ru`), 1500 (`from-en`) |
 | the buffer it composes into | `.data` padding, va `0x200B18` | 512 bytes |
 
 There is no return to arrange: the hook finishes comparing, replays the prologue it replaced
 and jumps to `0x7BC28+4`. The function returns to its own caller as it always did.
 
-The cost of the approach is that it keys on the **Russian** names. If Nintendo spelled one
-differently from our table, the swap simply does not happen — no harm done, but no
-translation either. That is why `src/app_names.json` carries a `ru` field next to `ua`, and
-it has to match what the console displays byte for byte.
+The cost of the approach is that it keys on the names of **the language the build replaces**.
+If Nintendo spelled one differently from our table, the swap simply does not happen — no harm
+done, but no translation either. That is why `src/app_names.json` carries `ru` and `en` fields
+next to `ua`, and each has to match what the console displays in that language byte for byte.
+The table also has to fit the Activity Log's `.rodata` padding (1932 bytes), so alternative
+spellings cost room.
 
 ## How Data Management's application names were translated
 
 Data Management is a System Settings screen, and it resolves the names in its software list
 **itself**: it reads each title's `ExeFS:/icon`, the way the HOME Menu does. So the approach
 is the same one the HOME Menu and the Instruction Manual use — hook the read, rewrite the
-Russian slot of the buffer from the same `src/app_names.json` table.
+buffer's slot for the language this build replaces from the same `src/app_names.json` table.
 
 There is one reader, `0x1B10BC` — the same SDK routine as in the other two titles,
 recognisable by the `0xC8804631`/`0xC8804632` error pair and by the `mov r1, #0x36C0` before
@@ -774,7 +823,8 @@ countries translated in total, and what the screen says matches what goes out ov
 
 Both files are LZ11 and both are tables of **fixed-size** records, which is what lets a
 translation be written in place: a name is a 128-byte UTF-16LE slot, and the 16 slots follow the
-system's language order, where slot 10 is Russian — the same "block 10" as in an SMDH.
+system's language order, where slot 10 is Russian and slot 1 English — the same blocks an SMDH
+uses, so the one written is the one the build replaces.
 
 The important part is the **sort row**. Byte `j` of it is the record's position in language
 `j`'s alphabetically sorted list, while the records themselves sit in Japanese order. Translate
@@ -788,7 +838,8 @@ the Asian lists ordered by prefecture code) — none of which the mod touches.
 
 Code 100's region list is **translated like every other one**: its 83 records stay at their own
 indices (9…91, record 0 being the «—» placeholder), and nothing is added or renumbered. Only the
-Russian slot is written; the other 15 stay as Nintendo wrote them, so an English console still
+slot this build replaces is written; the other 15 stay as Nintendo wrote them, so a console in
+any other language still
 shows `Adygey, Altay…` under `Russia`.
 
 **Why not otherwise:** a region index travels with the country code, and the receiving side
@@ -800,7 +851,7 @@ Russian one at the same index — which is exactly the mix-up this avoids.
 
 The StreetPass Map in Mii Plaza shows the same names and keeps its own tables for them,
 `0004001000022800/romfs/param/country.csv` and `region.csv`. UTF-16 with a BOM, CRLF, one
-column per language (Russian is 11), and rows of different lengths - the Japanese ones have no
+column per language (Russian is 11, English 4), and rows of different lengths - the Japanese ones have no
 Korean or Chinese columns at all. Plus a trailing comma before each line break, which a normal
 CSV writer would turn into `""` and rewrite every line. So `tools/csvtab.py` **never
 re-serialises a row it was not asked to change**: it splits on `","`, swaps the one field and
@@ -825,7 +876,7 @@ Two titles carry a second copy of their SMDH inside their own `romfs`, and **Lay
 | `0004001000022700/romfs/icn/EU_appEdit.icn` | `Редактор Mii` | `Mii Maker` |
 | `0004001000022B00/romfs/saveicon_EU.icn` | `Программа просмотра Nintendo Zone` | `Оглядач Nintendo Zone` |
 
-Only the Russian slot (index 10) is touched — its short and long description, 40 and 82 bytes respectively. The icon bitmaps and the other 15 languages stay byte-for-byte identical: see `tools/smdh.py` and `build_smdh()`. The eShop and Face Raiders copies exist too, but their names are already in Latin script.
+Only the slot this build replaces is touched (index 10 for `from-ru`, 1 for `from-en`) — its short and long description, 40 and 82 bytes respectively. The icon bitmaps and the other 15 languages stay byte-for-byte identical: see `tools/smdh.py` and `build_smdh()`. The eShop and Face Raiders copies exist too, but their names are already in Latin script.
 
 **The system font.** It has no Ukrainian letters, and LayeredFS cannot replace it: it lives in a separate system title the mod does not touch.
 
@@ -871,7 +922,7 @@ The string itself is left alone, because it *is* the fallback. A title this buil
 
 Verified on hardware: the Browser and System Settings in Ukrainian, the Activity Log and a cartridge game with their own. See `manual_path` in `tools/luma_hook.py`.
 
-That also means a manual need not live in its title's romfs. The Browser is the only title that carries its own there (`manual/Manual.bcma`) and keeps it; every other one is dumped out of content index 1 into `work/<TID>/manual/Manual.bcma` (see `docs/dumping.md`). `make extract-manuals` pulls the text into `src/manuals/<name>.json`, `make manuals` builds them all back into `dist`.
+That also means a manual need not live in its title's romfs. The Browser is the only title that carries its own there (`manual/Manual.bcma`) and keeps it; every other one is dumped out of content index 1 into `work/<TID>/manual/Manual.bcma` (see `docs/dumping.md`). `make extract-manuals` pulls the text into `src/manuals/<name>.json`, `make manuals` builds them all back into `dist` and `dist_en`. The `from-en` build translates the Russian document and copies it into the `EUR_en` locale whole, textures included — the localisations split a chapter into different pages, so paragraph-by-paragraph the English document would take about half the text and mix two languages on a page (`bcma.copy_member()`).
 
 The format: `Manual.bcma` is an uncompressed DARC of LZ10-compressed DARCs (`BcmaInfo.arc`, `EUR_<lang>_{index,large,small,texture}.arc`) whose pages are BCLYT. The text is not stored as text: **every rendered line is its own `txt1` pane at its own coordinates**, a highlighted word is a second pane on the same `y`, and a button icon is a picture pane between them. Nothing wraps at runtime.
 
@@ -879,9 +930,9 @@ So `tools/manual.py` does the reflow itself. It groups the panes back into a par
 
 Line width is `sum of glyph advances × fontSize / 24 + charSpace`. The 24 is the font's em, recovered from Nintendo's own coordinates (330 neighbouring panes: mean error 2px, p95 5px) — and it is that error the 10px of budget slack pays for.
 
-**The language picker.** The viewer takes the language names not from MSBT but from the document's own `BcmaInfo.bclyt`: one text pane per localisation, named after it (`EUR_en` … `EUR_ru`), each holding the language written in itself. The slot the mod overwrites is the Russian one, so `tools/manual.py` sets the `EUR_ru` pane to **Українська** on build. The pane is 200px, the name draws at 135, and no coordinate moves.
+**The language picker.** The viewer takes the language names not from MSBT but from the document's own `BcmaInfo.bclyt`: one text pane per localisation, named after it (`EUR_en` … `EUR_ru`), each holding the language written in itself. `tools/manual.py` sets **Українська** on the pane of the slot the build replaces: `EUR_ru` in `from-ru`, `EUR_en` in `from-en`. The pane is 200px, the name draws at 135, and no coordinate moves.
 
-**The title above the page.** The line across the top of every page is the short description from the **documented** title's SMDH (`ExeFS:/icon` in NAND), which `ebird` reads itself — out of LayeredFS's reach, exactly as in the HOME Menu. The fix is the same: hook the read. What differs is that there is one reader and no cache of any kind — the call at `0x115E84` hands over the buffer, the title id and the mediatype, and right after it the wrapper rewrites the SMDH's Russian slot from the same name table the HOME Menu uses (`smdh_names.py`), cut down to the titles this build ships a manual for. A title not in the table is left as it was.
+**The title above the page.** The line across the top of every page is the short description from the **documented** title's SMDH (`ExeFS:/icon` in NAND), which `ebird` reads itself — out of LayeredFS's reach, exactly as in the HOME Menu. The fix is the same: hook the read. What differs is that there is one reader and no cache of any kind — the call at `0x115E84` hands over the buffer, the title id and the mediatype, and right after it the wrapper rewrites the SMDH slot this build replaces from the same name table the HOME Menu uses (`smdh_names.py`), cut down to the titles this build ships a manual for. A title not in the table is left as it was.
 
 Where the wrapper goes is its own problem: the `.text` padding here is 88 bytes with 84 already taken by the mount stub, and Luma claims `throwFatalError()` for its own payload. So the 216 bytes of wrapper go over the dead function at `0x12C6E8` — a second copy of the icon-tile copier that is also inlined at `0x115F04` and that nothing in the image reaches: no `bl`, no `b`, no absolute pointer in `.text`, `.rodata` or `.data`, and the title's one computed jump (`0x18FC90`) branches inside its own table. Those 636 bytes are pinned by a sha256 in `tools/luma_hook.py`, so a different build of the title fails the mod's build instead of the console.
 
@@ -897,6 +948,26 @@ console — see [Dumping from your own console](dumping.en.md) for how to take o
 ```bash
 make font extract validate build package
 ```
+
+### Two builds: from-ru and from-en
+
+No entry can be added to the console's language list, so Ukrainian stands where one of the
+shipped languages stood. Which one is the build, and it is the only difference between them:
+
+| | `from-ru` | `from-en` |
+|---|---|---|
+| MSBT language folder | `EU_Russian` (`EU_Russia` in the Instruction Manual) | `EU_English` |
+| SMDH and `area` slot | 10 | 1 |
+| StreetPass Map table column | 11 | 4 |
+| CBMD banner slot | 8 | 1 (System Settings and Download Play have none, so the build adds one on top of the common block) |
+| manual locale | `EUR_ru` | `EUR_en`, holding the translated Russian document whole - the English one is split into different pages |
+| application name matched | `ru` / `ru_long` in `src/app_names.json` | `en` / `en_long` |
+| output | `dist/` | `dist_en/` |
+
+All of it lives in `tools/variant.py`; every tool takes the slot from there and `--slot en`
+(or `UA_SLOT=en`) switches. The translation itself is shared: width and height budgets come
+from the longest official localisation rather than from the slot, so `make validate` runs
+once for both.
 
 Python 3.11+, no dependencies. Tools: LZ11 (de)compressor, MSBT parser/builder with byte-exact round-trip, BCFNT reader/builder (also byte-exact) that can add glyphs to a font, extractor, validator, builder, width fitter, packager.
 

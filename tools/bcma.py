@@ -70,6 +70,17 @@ class Bcma:
             entry.data = files[name]
         self._members[key].data = lz10.compress(darc.build(inner))
 
+    def copy_member(self, source: str, target: str) -> None:
+        """Give `target` the bytes of `source`, pages, textures and all.
+
+        How the English slot of a `--slot en` build gets a whole Ukrainian document: the
+        localisations do not agree on how many pages a chapter takes - Russian text is longer
+        and Nintendo gave it continuation pages English has no equivalent of - so the pages
+        cannot be swapped one by one. The member is replaced whole instead, its texture arc
+        with it, because the pages name the screenshots of their own localisation.
+        """
+        self._members[self._key(target)].data = self._members[self._key(source)].data
+
     def build(self) -> bytes:
         return darc.build(self._archive)
 

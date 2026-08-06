@@ -1,5 +1,6 @@
 work/
 dist/
+dist_en/
 tmp/
 dumps/
 *.app

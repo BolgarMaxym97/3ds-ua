@@ -40,18 +40,19 @@ translation is written in place and nothing moves.
         +0x804  u8[16]          sort row
         +0x814  u32             per-country constant, copied as is
 
-The 16 name slots are the system's language order, so slot 10 is Russian - the same
-"block 10" the SMDH patcher writes, and the slot this mod replaces:
+The 16 name slots are the system's language order, and they are the same blocks the SMDH
+patcher numbers - so the slot written here is the one the build replaces, 10 for `from-ru`
+and 1 for `from-en` (see tools/variant.py); `RU_SLOT` is only the default:
 
     0 JP  1 EN  2 FR  3 DE  4 IT  5 ES  6 ZH  7 KO  8 NL  9 PT  10 RU  11 TW  12-15 spare
 
 The **sort row** is what makes this more than a string swap. Byte j of a record's row is
 that record's position in language j's alphabetically sorted list; the records themselves
-sit in Japanese order. Rewrite slot 10 without rewriting rank 10 and the console shows
-Ukrainian names ordered by the Russian alphabet - «Австралія, Австрія, Азербайджан,
-Албанія» happens to survive that, «Німеччина» where «Германия» stood does not. Every row
-lives twice, once inside the record and once in the table at the end of the file; both
-copies are written.
+sit in Japanese order. Rewrite a slot without rewriting its rank and the console shows
+Ukrainian names ordered by that language's alphabet - «Австралія, Австрія, Азербайджан,
+Албанія» happens to survive the Russian order, «Німеччина» where «Германия» stood does not.
+Every row lives twice, once inside the record and once in the table at the end of the file;
+both copies are written.
 """
 
 from __future__ import annotations

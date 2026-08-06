@@ -39,7 +39,9 @@ def extract_title(name: str) -> list[tuple[str, int, int]]:
     out_dir.mkdir(parents=True, exist_ok=True)
 
     results = []
-    for key, data in sorted(store.read(cfg.get("ref_lang", cfg["lang"])).items()):
+    # The English folder, always: the translation is written against English, whichever slot
+    # the build later overwrites. `lang` is a per-slot map, so it is no fallback of its own.
+    for key, data in sorted(store.read(cfg["ref_lang"]).items()):
         msbt = parse(data)
         out_file = out_dir / f"{key}.json"
         existing = json.loads(out_file.read_text(encoding="utf-8")) if out_file.exists() else {}

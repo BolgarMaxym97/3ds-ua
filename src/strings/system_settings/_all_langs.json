@@ -1,7 +1,16 @@
 {
-  "_comment": "Strings written into EVERY language slot, not just the one we replace. The language picker must advertise Ukrainian in whatever language the console currently runs, otherwise a user on a German or French console has no way to know that the Russian entry now leads to Ukrainian. Everything else in those slots stays in its own language. Keys mirror src/strings/<title>/<key>.json; labels are looked up per slot.",
-  "message_mset__mset": {
-    "eu_russian": "Українська",
-    "st_eu_lang_u1": "Select a language.\nChoisissez la langue.\nSprache auswählen.\nElige un idioma.\nScegli la lingua.\nKies een taal.\nEscolha um idioma.\nВиберіть мову."
+  "_comment": "Strings written into EVERY language slot, not just the one we replace, and written after the translation - so a section can also put back what the translation would otherwise have changed in a slot this build does not take over. Keyed by the slot the build replaces (tools/variant.py): `ru` stands in place of Russian, `en` in place of English. The language picker must advertise Ukrainian in whatever language the console currently runs, otherwise a user on a German or French console has no way to know which entry now leads to Ukrainian; the entry the build leaves alone keeps Nintendo's own name for it, which every slot of the dump spells the same way. Everything else in those slots stays in its own language. Keys mirror src/strings/<title>/<key>.json; labels are looked up per slot.",
+  "ru": {
+    "message_mset__mset": {
+      "eu_russian": "Українська",
+      "st_eu_lang_u1": "Select a language.\nChoisissez la langue.\nSprache auswählen.\nElige un idioma.\nScegli la lingua.\nKies een taal.\nEscolha um idioma.\nВиберіть мову."
+    }
+  },
+  "en": {
+    "message_mset__mset": {
+      "eu_english": "Українська",
+      "eu_russian": "Русский",
+      "st_eu_lang_u1": "Виберіть мову.\nChoisissez la langue.\nSprache auswählen.\nElige un idioma.\nScegli la lingua.\nKies een taal.\nEscolha um idioma.\nВыберите язык."
+    }
   }
 }

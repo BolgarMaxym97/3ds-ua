@@ -19,8 +19,10 @@ Columns, from region.csv's own header:
     10 Portuguese   11 Russian   12 Japanese   13 Korean   14 SimpChinese
     15 TradChinese
 
-Russian is 11 in both files, and stays 11 in the shorter rows: Japan's have no Korean or
-Chinese columns at all, so a row is 13 fields there and 15 elsewhere.
+The build writes the column of the language it replaces - 11 for `from-ru`, 4 for `from-en`,
+see tools/variant.py. Those indices hold in the shorter rows too: Japan's have no Korean or
+Chinese columns at all, so a row is 13 fields there and 15 elsewhere, but nothing before
+column 12 moves.
 """
 
 from __future__ import annotations

@@ -3,6 +3,7 @@
     python3 tools/manual.py extract browser     # romfs dump -> src/manuals/browser.json
     python3 tools/manual.py check browser       # markers, glyphs, line budget, line count
     python3 tools/manual.py build browser       # -> dist/luma/titles/<tid>/.../Manual.bcma
+    python3 tools/manual.py build all --slot en # the same, into dist_en/, over EUR_en
 
 Nintendo's ManualEditor bakes the layout in: every rendered line is its own text pane at its
 own coordinates, a highlighted word is a second pane on the same line, and a button icon is
@@ -29,7 +30,12 @@ Limits, all of them checked rather than assumed:
   - a paragraph with no `ua` is left in the original language, so a partial translation
     still builds.
 
-The Russian slot (`EUR_ru`) is the one overwritten, exactly as with the MSBT text.
+The slot overwritten is the one the build replaces, exactly as with the MSBT text: `EUR_ru`,
+or `EUR_en` with `--slot en` - see tools/variant.py. What is translated is always the Russian
+document, because that is the layout the strings were written against; a build replacing
+another slot copies that document into its own locale whole, pages and screenshots alike,
+rather than laying the text out on a document Nintendo split into different pages. See
+cmd_build() and tools/bcma.py copy_member().
 """
 
 from __future__ import annotations
@@ -46,6 +52,7 @@ sys.path.insert(0, str(Path(__file__).parent))
 import bclyt  # noqa: E402
 import bcma  # noqa: E402
 import luma_hook  # noqa: E402
+import variant  # noqa: E402
 from build import TITLES, apply_homoglyphs, load_homoglyphs  # noqa: E402
 from validate import load_charset, load_widths  # noqa: E402
 
@@ -75,6 +82,9 @@ BOX_PADDING = 1.6
 PARTS = ("index", "large", "small")
 # The Instruction Manual applet (ebird): the process that reads every manual on the console.
 MANUAL_APPLET_TID = "0004003000009B02"
+# The document the `ua` strings were extracted from, and whose paragraph split the keys of
+# src/manuals/*.json mean. Every build translates out of this one, into its own slot.
+BASE_SLOT = variant.SLOTS["ru"].manual_slot
 # While the viewer asks for one constant file name, only one manual can be on the card.
 SHARED_MANUAL = os.environ.get("MANUAL", "browser")
 # The language picker of the viewer draws its entries from BcmaInfo.bclyt, one text pane per
@@ -95,70 +105,62 @@ MANUALS = {
     # `path` is relative to work/<tid>/. The Internet Browser keeps its manual inside its own
     # romfs; every other title ships it as content index 1, so its dump lands in
     # work/<tid>/manual/Manual.bcma - see docs/dumping.md.
+    #
+    # `reference` is the locale extract.py writes the `en` column from; which locale the build
+    # overwrites is the build's own, not the manual's - see tools/variant.py.
     "browser": {
         "tid": "0004003000009D02",
         "path": "romfs/manual/Manual.bcma",
-        "slot": "EUR_ru",
         "reference": "EUR_en",
     },
     "system_settings": {
         "tid": "0004001000022000",
         "path": "manual/Manual.bcma",
-        "slot": "EUR_ru",
         "reference": "EUR_en",
     },
     "activity_log": {
         "tid": "0004001000022200",
         "path": "manual/Manual.bcma",
-        "slot": "EUR_ru",
         "reference": "EUR_en",
     },
     "download_play": {
         "tid": "0004001000022100",
         "path": "manual/Manual.bcma",
-        "slot": "EUR_ru",
         "reference": "EUR_en",
     },
     "camera": {
         "tid": "0004001000022400",
         "path": "manual/Manual.bcma",
-        "slot": "EUR_ru",
         "reference": "EUR_en",
     },
     "sound": {
         "tid": "0004001000022500",
         "path": "manual/Manual.bcma",
-        "slot": "EUR_ru",
         "reference": "EUR_en",
     },
     "mii_maker": {
         "tid": "0004001000022700",
         "path": "manual/Manual.bcma",
-        "slot": "EUR_ru",
         "reference": "EUR_en",
     },
     "mii_plaza": {
         "tid": "0004001000022800",
         "path": "manual/Manual.bcma",
-        "slot": "EUR_ru",
         "reference": "EUR_en",
     },
     "eshop": {
         "tid": "0004001000022900",
         "path": "manual/Manual.bcma",
-        "slot": "EUR_ru",
         "reference": "EUR_en",
     },
     "face_raiders": {
         "tid": "0004001000022D00",
         "path": "manual/Manual.bcma",
-        "slot": "EUR_ru",
         "reference": "EUR_en",
     },
     "ar_games": {
         "tid": "0004001000022E00",
         "path": "manual/Manual.bcma",
-        "slot": "EUR_ru",
         "reference": "EUR_en",
     },
 }
@@ -621,11 +623,11 @@ def cmd_extract(name: str) -> None:
     manual = source_manual(name)
     existing = load_json(name)
     widths = load_widths()
-    limits = budgets(manual, cfg["slot"], widths)
-    reference = aligned(manual, cfg["slot"], cfg["reference"])
+    limits = budgets(manual, BASE_SLOT, widths)
+    reference = aligned(manual, BASE_SLOT, cfg["reference"])
 
     out: dict[str, dict] = {}
-    for page, flows in pages_of(manual, cfg["slot"]).items():
+    for page, flows in pages_of(manual, BASE_SLOT).items():
         for index, flow in enumerate(flows):
             key = f"{page}#{index}"
             english = reference.get(page)
@@ -653,17 +655,19 @@ def _problems(name: str) -> tuple[list[str], list[str], int, int]:
     longer than any of them (`Стрільба` where Russian has `Тир`). Renaming the term to fit
     the manual would leave the manual naming a button the console does not have, so those are
     listed and left to the translator instead of stopping the build.
+
+    Always the Russian document, whichever slot the build writes into: that is the layout the
+    `ua` strings were written against, and the one cmd_build() lays them out on.
     """
-    cfg = MANUALS[name]
     manual = source_manual(name)
     strings = load_json(name)
     widths, table, charset = load_widths(), load_homoglyphs(), load_charset()
-    limits = budgets(manual, cfg["slot"], widths)
+    limits = budgets(manual, BASE_SLOT, widths)
 
     problems: list[str] = []
     wide: list[str] = []
     translated = total = 0
-    for page, flows in pages_of(manual, cfg["slot"]).items():
+    for page, flows in pages_of(manual, BASE_SLOT).items():
         for index, flow in enumerate(flows):
             total += 1
             key = f"{page}#{index}"
@@ -722,8 +726,8 @@ def language_name(
     """The document's own name for the locale the mod overwrites.
 
     The picker lists one pane per locale, `EUR_en` through `EUR_ru`, each holding the
-    language written in itself. The Russian one is the slot this mod replaces, so it has to
-    read `Українська` - otherwise the entry that selects the Ukrainian text says `Русский`.
+    language written in itself. The slot this build replaces has to read `Українська` -
+    otherwise the entry that selects the Ukrainian text still says `Русский` or `English`.
     """
     files = manual.read(INFO_ARC)
     page = f"{INFO_ARC}.bclyt"
@@ -744,26 +748,38 @@ def cmd_build(name: str) -> None:
     manual = source_manual(name)
     strings = load_json(name)
     widths, table = load_widths(), load_homoglyphs()
-    limits = budgets(manual, cfg["slot"], widths)
+    limits = budgets(manual, BASE_SLOT, widths)
+
+    # The document translated is always the Russian one - it is what the `ua` strings were
+    # laid out against. A build that replaces another slot gets it wholesale first, pages and
+    # screenshots alike, and the translation is written on that copy: the localisations do not
+    # split a chapter into the same pages, so paragraph-by-paragraph the English document
+    # would take barely half the text and mix the two languages on a page. The Russian slot
+    # is left as Nintendo wrote it, which is what the console shows if you switch to it.
+    slot = variant.current().manual_slot
+    if slot != BASE_SLOT:
+        for part in (*PARTS, "texture"):
+            manual.copy_member(f"{BASE_SLOT}_{part}", f"{slot}_{part}")
 
     changed = 0
     for part in PARTS:
         rebuilt: dict[str, bytes] = {}
-        for page, data in manual.read(f"{cfg['slot']}_{part}").items():
+        for page, data in manual.read(f"{BASE_SLOT}_{part}").items():
             name_ = page.removesuffix(".bclyt")
             edits: dict[str, bclyt.Edit] = {}
             for index, flow in enumerate(split_page(part, name_, bclyt.parse(data))):
-                ua = strings.get(f"{part}/{name_}#{index}", {}).get("ua", "")
+                key = f"{part}/{name_}#{index}"
+                ua = strings.get(key, {}).get("ua", "")
                 if not ua:
                     continue
                 changed += 1
                 rendered = apply_homoglyphs(ua, table)
-                limit = limits[f"{part}/{name_}#{index}"] + WIDTH_SLACK
+                limit = limits[key] + WIDTH_SLACK
                 edits |= to_edits(layout(rendered, flow, limit, widths), flow)
             rebuilt[page] = bclyt.rewrite(data, edits) if edits else data
-        manual.write(f"{cfg['slot']}_{part}", rebuilt)
+        manual.write(f"{slot}_{part}", rebuilt)
 
-    manual.write(INFO_ARC, language_name(manual, cfg["slot"], widths, table))
+    manual.write(INFO_ARC, language_name(manual, slot, widths, table))
 
     image = manual.build()
     for out in _destinations(name, cfg):
@@ -796,7 +812,7 @@ def _destinations(name: str, cfg: dict) -> list[Path]:
     # document out of the title's content instead. Only the viewer's folder matters.
     out: list[Path] = []
 
-    applet = ROOT / "dist" / "luma" / "titles" / MANUAL_APPLET_TID / "romfs"
+    applet = variant.dist() / "luma" / "titles" / MANUAL_APPLET_TID / "romfs"
     spec = luma_hook.HOOK_PATCHES[MANUAL_APPLET_TID]["manual_path"]
     if luma_hook.manual_path_mode() == "full":
         # The viewer builds the name from the low word of the title id, and only for the
@@ -823,8 +839,10 @@ def main() -> None:
     parser = argparse.ArgumentParser(description=__doc__)
     parser.add_argument("command", choices=("extract", "check", "build"))
     parser.add_argument("name", choices=[*sorted(MANUALS), "all"])
+    variant.add_argument(parser)
     args = parser.parse_args()
 
+    variant.select(args.slot)
     run = {"extract": cmd_extract, "check": cmd_check, "build": cmd_build}[args.command]
     for name in sorted(MANUALS) if args.name == "all" else [args.name]:
         # A title whose manual has not been dumped yet is not an error: it is simply not

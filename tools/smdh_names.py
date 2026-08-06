@@ -4,7 +4,8 @@ HOME Menu takes the names it displays - icon labels, the "software suspended" ov
 close and delete prompts - from each title's SMDH, which it reads out of ExeFS:/icon in
 NAND. LayeredFS replaces romfs and nothing else, so those strings are out of its reach.
 What is in reach is HOME Menu's own code: the function that reads an SMDH is hooked, and
-right after the read the buffer's Russian language slot is overwritten from this table.
+right after the read the language slot the build replaces - Russian or English, see
+tools/variant.py - is overwritten in the buffer from this table.
 
 Table layout, little-endian, terminated by a zero title-id:
 

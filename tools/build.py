@@ -1,16 +1,21 @@
 """Build LayeredFS-ready files from the JSON translations.
 
 Usage:
-    python3 tools/build.py            # every title in TITLES
+    python3 tools/build.py                     # every title in TITLES
     python3 tools/build.py home_menu
+    python3 tools/build.py --slot en           # replace English instead of Russian
 
 How it works: the original MSBT from work/ is used as a template, texts are replaced
 with the JSON ones (empty `ua` keeps the original), homoglyph substitution is applied,
-the result is LZ11-packed into dist/luma/titles/<TID>/romfs/<same path>.
+the result is LZ11-packed into <dist>/luma/titles/<TID>/romfs/<same path>, where <dist>
+is dist/ for the Russian slot and dist_en/ for the English one - see tools/variant.py.
 
 An optional `_all_langs.json` next to a title's strings holds labels that go into EVERY
 language slot instead of only the replaced one - used so the language picker advertises
-Ukrainian whatever language the console currently runs.
+Ukrainian whatever language the console currently runs. Its sections are keyed by slot,
+because which entry of that picker has to read `Українська` is exactly what the slot
+changes; it is applied after the translation, so it also puts the entry the mod leaves
+alone back to the name Nintendo gave it.
 
 A title carrying a `blocked` reason is translated but never written to dist/ - see
 skip_blocked() for why shipping it would brick the title.
@@ -44,6 +49,7 @@ import smdh as smdh_mod  # noqa: E402
 import news_tips  # noqa: E402
 import pane_names  # noqa: E402
 import smdh_names  # noqa: E402
+import variant  # noqa: E402
 from store import open_store  # noqa: E402
 
 ROOT = Path(__file__).resolve().parent.parent
@@ -53,11 +59,21 @@ ROOT = Path(__file__).resolve().parent.parent
 # what the console reports to everything outside itself, so no row is renamed into Ukraine.
 RUSSIA_CODE = 100
 
-# Titles: strings project name -> target TIDs, language slot, dump used as source.
-#
-# `lang` is the language folder we replace: the Russian one, so Russian disappears from
-# the console and Ukrainian takes its place while English stays untouched. Note the
-# Instruction Manual spells it "EU_Russia" without the final "n".
+# The language folder each build overwrites, per tools/variant.py slot. The Russian one
+# disappears from the console and Ukrainian takes its place, or the English one does -
+# whichever is not chosen stays exactly as Nintendo shipped it. Note that the Instruction
+# Manual spells the Russian folder "EU_Russia", without the final "n"; every title spells
+# the English one the same way.
+LANG_SLOTS = {key: slot.lang for key, slot in variant.SLOTS.items()}
+MANUAL_LANG_SLOTS = {key: slot.manual_lang for key, slot in variant.SLOTS.items()}
+
+
+def lang_of(cfg: dict) -> str:
+    """The language folder this build replaces in that title."""
+    return cfg["lang"][variant.current().key]
+
+
+# Titles: strings project name -> target TIDs, language slots, dump used as source.
 #
 # `ref_lang` is the folder extract.py reads the `en` reference from - the translation is
 # written against English, not against the slot being overwritten.
@@ -65,7 +81,7 @@ TITLES = {
     "home_menu": {
         "tids": ["0004003000009802"],  # EUR; JPN 0004003000008202, USA 0004003000008F02 once tested
         "source_tid": "0004003000009802",
-        "lang": "EU_Russian",
+        "lang": LANG_SLOTS,
         "ref_lang": "EU_English",
         # `hook_patch` here ships only a code.ips, and not to make LayeredFS work - Luma
         # hooks this title unaided. It carries the application names, which HOME Menu reads
@@ -82,7 +98,7 @@ TITLES = {
     "keyboard": {
         "tids": ["000400300000D002"],  # swkbd applet, EUR
         "source_tid": "000400300000D002",
-        "lang": "EU_Russian",
+        "lang": LANG_SLOTS,
         "ref_lang": "EU_English",
         "hook_patch": True,
     },
@@ -91,7 +107,7 @@ TITLES = {
     "activity_log": {
         "tids": ["0004001000022200"],
         "source_tid": "0004001000022200",
-        "lang": "EU_Russian",
+        "lang": LANG_SLOTS,
         "ref_lang": "EU_English",
         "hook_patch": True,
     },
@@ -101,14 +117,14 @@ TITLES = {
     "download_play": {
         "tids": ["0004001000022100"],
         "source_tid": "0004001000022100",
-        "lang": "EU_Russian",
+        "lang": LANG_SLOTS,
         "ref_lang": "EU_English",
         "hook_patch": True,
     },
     "manual": {
         "tids": ["0004003000009B02"],  # Instruction Manual applet, EUR
         "source_tid": "0004003000009B02",
-        "lang": "EU_Russia",
+        "lang": MANUAL_LANG_SLOTS,
         "ref_lang": "EU_English",
         "hook_patch": True,
     },
@@ -117,7 +133,7 @@ TITLES = {
     "friend_list": {
         "tids": ["0004003000009F02"],  # friend applet, EUR; JPN 0004003000008D02, USA 0004003000009602
         "source_tid": "0004003000009F02",
-        "lang": "EU_Russian",
+        "lang": LANG_SLOTS,
         "ref_lang": "EU_English",
         "hook_patch": True,
         "hud_font": "font/Hud_JP.bcfnt",
@@ -127,7 +143,7 @@ TITLES = {
     "system_settings": {
         "tids": ["0004001000022000"],
         "source_tid": "0004001000022000",
-        "lang": "EU_Russian",
+        "lang": LANG_SLOTS,
         "ref_lang": "EU_English",
         "container": "message_EU_LZ.bin",
         # Labels sharing one on-screen slot: the language picker rows and the
@@ -148,7 +164,7 @@ TITLES = {
     "mii_maker": {
         "tids": ["0004001000022700"],
         "source_tid": "0004001000022700",
-        "lang": "EU_Russian",
+        "lang": LANG_SLOTS,
         "ref_lang": "EU_English",
         "container": "message/{lang}.arc",
         # This title keeps a full SMDH in its romfs, so LayeredFS can translate the name
@@ -160,7 +176,7 @@ TITLES = {
     "camera": {
         "tids": ["0004001000022400"],
         "source_tid": "0004001000022400",
-        "lang": "EU_Russian",
+        "lang": LANG_SLOTS,
         "ref_lang": "EU_English",
         "container": "msg/{lang}.LZ",
     },
@@ -171,7 +187,7 @@ TITLES = {
     "camera_applet": {
         "tids": ["0004003000009902"],  # camera applet, EUR
         "source_tid": "0004003000009902",
-        "lang": "EU_Russian",
+        "lang": LANG_SLOTS,
         "ref_lang": "EU_English",
         "container": "msg/{lang}.LZ",
         "hook_patch": True,
@@ -179,7 +195,7 @@ TITLES = {
     "sound": {
         "tids": ["0004001000022500"],
         "source_tid": "0004001000022500",
-        "lang": "EU_Russian",
+        "lang": LANG_SLOTS,
         "ref_lang": "EU_English",
         "container": "msg/{lang}.LZ",
     },
@@ -191,7 +207,7 @@ TITLES = {
     "mii_plaza": {
         "tids": ["0004001000022800"],
         "source_tid": "0004001000022800",
-        "lang": "EU_Russian",
+        "lang": LANG_SLOTS,
         "ref_lang": "EU_English",
         "hook_patch": True,
             "csv_tables": {
@@ -204,7 +220,7 @@ TITLES = {
     "mii_selector": {
         "tids": ["000400300000D102"],  # appletEd, EUR
         "source_tid": "000400300000D102",
-        "lang": "EU_Russian",
+        "lang": LANG_SLOTS,
         "ref_lang": "EU_English",
         "container": "message/{lang}.arc",
         "hook_patch": True,
@@ -214,7 +230,7 @@ TITLES = {
     "notifications": {
         "tids": ["000400300000A002"],  # newslist applet, EUR
         "source_tid": "000400300000A002",
-        "lang": "EU_Russian",
+        "lang": LANG_SLOTS,
         "ref_lang": "EU_English",
         "hook_patch": True,
         "hud_font": "font/Hud_JP.bcfnt",
@@ -223,7 +239,7 @@ TITLES = {
     "game_notes": {
         "tids": ["0004003000009C02"],  # Cherry applet, EUR
         "source_tid": "0004003000009C02",
-        "lang": "EU_Russian",
+        "lang": LANG_SLOTS,
         "ref_lang": "EU_English",
         "message_dirs": ["lang"],
         "hud_font": "lang/Hud.bcfnt",
@@ -233,27 +249,27 @@ TITLES = {
     "error_applet": {
         "tids": ["000400300000C502"],  # error applet, EUR
         "source_tid": "000400300000C502",
-        "lang": "EU_Russian",
+        "lang": LANG_SLOTS,
         "ref_lang": "EU_English",
         "hook_patch": True,
     },
     "browser": {
         "tids": ["0004003000009D02"],  # spider applet, EUR Old3DS; New3DS is 0004003020009D02
         "source_tid": "0004003000009D02",
-        "lang": "EU_Russian",
+        "lang": LANG_SLOTS,
         "ref_lang": "EU_English",
         "hud_font": "font/Hud.bcfnt",
     },
     "ar_games": {
         "tids": ["0004001000022E00"],
         "source_tid": "0004001000022E00",
-        "lang": "EU_Russian",
+        "lang": LANG_SLOTS,
         "ref_lang": "EU_English",
     },
     "nintendo_zone": {
         "tids": ["0004001000022B00"],
         "source_tid": "0004001000022B00",
-        "lang": "EU_Russian",
+        "lang": LANG_SLOTS,
         "ref_lang": "EU_English",
         "smdh": ["saveicon_EU.icn"],
     },
@@ -262,7 +278,7 @@ TITLES = {
     "eshop": {
         "tids": ["0004001000022900"],
         "source_tid": "0004001000022900",
-        "lang": "EU_Russian",
+        "lang": LANG_SLOTS,
         "ref_lang": "EU_English",
         "message_dirs": ["message/europe"],
         "hud_font": "font/Hud.bcfnt",
@@ -282,7 +298,7 @@ TITLES = {
     "mint": {
         "tids": ["000400300000D602"],  # eShop applet (mint), EUR
         "source_tid": "000400300000D602",
-        "lang": "EU_Russian",
+        "lang": LANG_SLOTS,
         "ref_lang": "EU_English",
         "hook_patch": True,
     },
@@ -305,7 +321,7 @@ TITLES = {
     "error_strings": {
         "tids": ["0004009B00012102"],  # error-message database, EUR
         "source_tid": "0004009B00012102",
-        "lang": "EU_Russian",
+        "lang": LANG_SLOTS,
         "ref_lang": "EU_English",
         "message_dirs": [""],
         "ships_to": ["000400300000C502", "000400300000BE02"],
@@ -319,7 +335,7 @@ TITLES = {
     "miiverse": {
         "tids": ["000400300000BE02"],  # Miiverse applet, EUR
         "source_tid": "000400300000BE02",
-        "lang": "EU_Russian",
+        "lang": LANG_SLOTS,
         "ref_lang": "EU_English",
         # `hook_patch` ships an exheader.bin and nothing else: Luma hooks the code itself,
         # but the title has no `DirectSdmc`, so its payload could not read the SD card.
@@ -329,7 +345,7 @@ TITLES = {
     "miiverse_post": {
         "tids": ["000400300000BA02"],  # Miiverse posting applet, EUR
         "source_tid": "000400300000BA02",
-        "lang": "EU_Russian",
+        "lang": LANG_SLOTS,
         "ref_lang": "EU_English",
         "hook_patch": True,   # exheader.bin only, same reason as the Miiverse applet
     },
@@ -339,7 +355,7 @@ TITLES = {
     "memolib": {
         "tids": ["000400300000F602"],  # memolib applet, EUR
         "source_tid": "000400300000F602",
-        "lang": "EU_Russian",
+        "lang": LANG_SLOTS,
         "ref_lang": "EU_English",
         "message_dirs": ["mes"],
         "hook_patch": True,
@@ -350,14 +366,14 @@ TITLES = {
     "extrapad": {
         "tids": ["000400300000CD02"],  # extrapad applet, EUR
         "source_tid": "000400300000CD02",
-        "lang": "EU_Russian",
+        "lang": LANG_SLOTS,
         "ref_lang": "EU_English",
         "hook_patch": True,
     },
     "data_transfer": {
         "tids": ["0004001000022A00"],
         "source_tid": "0004001000022A00",
-        "lang": "EU_Russian",
+        "lang": LANG_SLOTS,
         "ref_lang": "EU_English",
         "message_dirs": ["CARDBOARD/message", "CARDBOARD/message/HUD"],
         "hud_font": "font/Hud.bcfnt",
@@ -366,14 +382,14 @@ TITLES = {
     "face_raiders": {
         "tids": ["0004001000022D00"],
         "source_tid": "0004001000022D00",
-        "lang": "EU_Russian",
+        "lang": LANG_SLOTS,
         "ref_lang": "EU_English",
         "lang_files": "hal/msg/StgFace/StgFace{lang}.msbt",
     },
     "amiibo_settings": {
         "tids": ["000400300000B902"],  # Cabinet applet, EUR
         "source_tid": "000400300000B902",
-        "lang": "EU_Russian",
+        "lang": LANG_SLOTS,
         "ref_lang": "EU_English",
         "hook_patch": True,
     },
@@ -382,7 +398,7 @@ TITLES = {
     "health_safety": {
         "tids": ["0004001000022300"],
         "source_tid": "0004001000022300",
-        "lang": "EU_Russian",
+        "lang": LANG_SLOTS,
         "ref_lang": "EU_English",
         "hook_patch": True,
     },
@@ -403,12 +419,16 @@ def apply_homoglyphs(text: str, table: dict[str, str]) -> str:
     return text.translate(str.maketrans(table))
 
 
-def load_all_langs(strings_dir: Path) -> dict[str, dict[str, str]]:
-    """Labels that must appear in every language slot: {json key: {label: text}}."""
+def load_all_langs(strings_dir: Path, slot: str | None = None) -> dict[str, dict[str, str]]:
+    """Labels that must appear in every language slot: {json key: {label: text}}.
+
+    The file is keyed by the slot the build replaces, because the picker entry that has to
+    read `Українська` is a different one in each build.
+    """
     path = strings_dir / "_all_langs.json"
     if not path.exists():
         return {}
-    data = json.loads(path.read_text(encoding="utf-8"))
+    data = json.loads(path.read_text(encoding="utf-8")).get(slot or variant.current().key, {})
     return {key: value for key, value in data.items() if not key.startswith("_")}
 
 
@@ -425,7 +445,7 @@ def patch_other_langs(
     blobs: dict[str, bytes] = {}
 
     for lang in store.languages():
-        if lang == cfg["lang"]:
+        if lang == lang_of(cfg):
             continue
         updates: dict[str, bytes] = {}
         for key, data in store.read(lang).items():
@@ -459,7 +479,7 @@ def skip_blocked(name: str, cfg: dict) -> list[str]:
     """
     lines = [f"{name}: SKIPPED - {cfg['blocked']}"]
     for tid in cfg["tids"]:
-        stale = ROOT / "dist" / "luma" / "titles" / tid
+        stale = variant.dist() / "luma" / "titles" / tid
         if stale.is_dir():
             shutil.rmtree(stale)
             lines.append(f"  removed stale {stale.relative_to(ROOT)}")
@@ -471,7 +491,8 @@ def app_name_tables(table: dict[str, str]) -> tuple[dict[str, object], list[str]
 
     A title that reads SMDHs itself gets the table keyed by title id, and its buffer is
     rewritten. One that only ever receives finished strings gets the table keyed by the
-    Russian name, and the pointer handed to its text setter is swapped instead.
+    name of the language the build replaces, and the pointer handed to its text setter is
+    swapped instead.
     """
     entries = {
         tid: entry
@@ -486,7 +507,7 @@ def app_name_tables(table: dict[str, str]) -> tuple[dict[str, object], list[str]
 
     # The manual viewer gets the same table cut down to the titles this build ships a
     # manual for: it reads one SMDH per manual, its .rodata padding is a few hundred bytes,
-    # and a Ukrainian name over a Russian document would be the worse of the two states.
+    # and a Ukrainian name over an untranslated document would be the worse of the two states.
     manual_titles = {
         tid.upper()
         for patch in luma_hook.HOOK_PATCHES.values()
@@ -498,9 +519,13 @@ def app_name_tables(table: dict[str, str]) -> tuple[dict[str, object], list[str]
     )
 
     # The originals are compared against what the title holds in memory, so they stay as
-    # Nintendo wrote them - no homoglyphs on that side.
-    # `ru` is the short name, `ru_long` the one carrying a second line - the software card
-    # in the Activity Log draws the long one, the lists draw the short one.
+    # Nintendo wrote them - no homoglyphs on that side. Which spelling that is depends on
+    # the slot: `ru`/`ru_long` for the Russian build, `en`/`en_long` for the English one.
+    # The short name is the icon label, the long one carries a second line - the software
+    # card in the Activity Log draws the long one, the lists draw the short one.
+    short = variant.current().app_name_key
+    long = f"{short}_long"
+
     def spellings(entry: dict, key: str) -> list[str]:
         value = entry.get(key)
         if not value:
@@ -510,7 +535,7 @@ def app_name_tables(table: dict[str, str]) -> tuple[dict[str, object], list[str]
     pairs = [
         (original, apply_homoglyphs(replacement, table))
         for entry in entries.values()
-        for key, replacement in (("ru", entry.get("ua")), ("ru_long", entry.get("ua_long") or entry.get("ua")))
+        for key, replacement in ((short, entry.get("ua")), (long, entry.get("ua_long") or entry.get("ua")))
         if replacement
         for original in spellings(entry, key)
     ]
@@ -526,17 +551,18 @@ def app_name_tables(table: dict[str, str]) -> tuple[dict[str, object], list[str]
 def news_tip_table(table: dict[str, str]) -> tuple[list[dict], list[str]]:
     """Which built-in notifications the HOME Menu patch rewrites, and with what.
 
-    The Russian side has to come out of the dump: it is what the console copied into the
-    news database when it delivered the tip, and matching against it is how the patch finds
-    the notification again. The Ukrainian side is ours with homoglyphs applied, because that
-    is what the console's own message lookup will answer with once the mod is installed.
-    See tools/news_tips.py for why LayeredFS cannot reach these strings at all.
+    The original side has to come out of the dump - out of the slot this build replaces,
+    which is the language the console was running when it copied the tip into the news
+    database, and matching against it is how the patch finds the notification again. The
+    Ukrainian side is ours with homoglyphs applied, because that is what the console's own
+    message lookup will answer with once the mod is installed. See tools/news_tips.py for
+    why LayeredFS cannot reach these strings at all.
     """
     cfg = TITLES["home_menu"]
     key = "message__menu_msbt_LZ"
     store = open_store(cfg, ROOT / "work" / cfg["source_tid"] / "romfs")
-    msbt = msbt_mod.parse(store.read(cfg["lang"])[key])
-    russian = {
+    msbt = msbt_mod.parse(store.read(lang_of(cfg))[key])
+    original = {
         label: msbt.texts[index]
         for label, index in msbt.labels.items()
         if news_tips.tip_number(label) is not None and msbt.texts[index]
@@ -547,7 +573,7 @@ def news_tip_table(table: dict[str, str]) -> tuple[list[dict], list[str]]:
         for label, entry in entries.items()
         if entry.get("ua") and news_tips.tip_number(label) is not None
     }
-    tips, log = news_tips.build_table(russian, ukrainian)
+    tips, log = news_tips.build_table(original, ukrainian)
     return tips, [f"notifications: {len(tips)} built-in tips rewritten in the news database"] + [
         f"  {line}" for line in log
     ]
@@ -588,7 +614,7 @@ def write_banner(tid: str) -> list[str]:
     written = []
     for title in hook["titles"]:
         blob = banner_mod.build(f"{title['title_id']:016X}")
-        dest = ROOT / "dist" / "luma" / "titles" / tid / title["image_name"]
+        dest = variant.dist() / "luma" / "titles" / tid / title["image_name"]
         dest.parent.mkdir(parents=True, exist_ok=True)
         dest.write_bytes(blob)
         written.append(f"{dest.relative_to(ROOT)} ({len(blob)} bytes)")
@@ -608,7 +634,7 @@ def write_romfs_image(tid: str, romfs_dir: Path, overrides: dict[str, bytes]) ->
             raise SystemExit(f"{tid}: {rel_path} did not survive the RomFS rebuild")
 
     name = luma_hook.HOOK_PATCHES[tid.upper()]["image_name"]
-    dest = ROOT / "dist" / "luma" / "titles" / tid / name
+    dest = variant.dist() / "luma" / "titles" / tid / name
     dest.parent.mkdir(parents=True, exist_ok=True)
     dest.write_bytes(image)
     return [
@@ -633,7 +659,7 @@ def write_shared_image(reader_tid: str, romfs_dir: Path, overrides: dict[str, by
 
     written = []
     for title in hook["titles"]:
-        dest = ROOT / "dist" / "luma" / "titles" / reader_tid / title["image_name"]
+        dest = variant.dist() / "luma" / "titles" / reader_tid / title["image_name"]
         dest.parent.mkdir(parents=True, exist_ok=True)
         dest.write_bytes(image)
         written.append(
@@ -645,17 +671,17 @@ def write_shared_image(reader_tid: str, romfs_dir: Path, overrides: dict[str, by
 
 
 def build_csv(cfg: dict, romfs: Path, table: dict[str, str]) -> tuple[dict[str, bytes], list[str]]:
-    """Translate the Russian column of the StreetPass Map's country and region tables.
+    """Translate the replaced language's column of the StreetPass Map's country tables.
 
     The map names the places you met people in, and those names live in UTF-16 CSV rather
-    than MSBT - one column per language, Russian at index 11. Rows are keyed by
+    than MSBT - one column per language, Russian at index 11 and English at 4. Rows are keyed by
     "<country code>:<address id>", which is the same id the `area` archive numbers its
     regions with, so the two tables cannot drift apart.
 
     No row is added, dropped or renumbered: an address id is what the console sends along
     with the country code, so the map another player sees resolves it through their own
     table. Country code 100 keeps Russia and its 83 regions, translated the same way as
-    every other country - only the Russian column is written.
+    every other country - only the column of the language this build replaces is written.
     """
     files = cfg.get("csv_tables")
     if not files:
@@ -675,7 +701,7 @@ def build_csv(cfg: dict, romfs: Path, table: dict[str, str]) -> tuple[dict[str, 
             entry = names.get(key)
             if entry is None:
                 raise SystemExit(f"mii_plaza: {rel} row {key} has no translation in {json_name}")
-            row.fields[csvtab.RUSSIAN] = render(entry["ua"])
+            row.fields[variant.current().csv_column] = render(entry["ua"])
         blobs[rel] = parsed.build()
         log.append(f"{rel}: {len(names)} names translated")
     return blobs, log
@@ -692,7 +718,8 @@ def build_area(cfg: dict, tid: str, table: dict[str, str]) -> list[str]:
     so nothing here is renamed into Ukraine: a country code and a region index are what the
     console reports to NNID, the eShop and every console it meets, and a row reading one
     place while reporting another mislabels its regions for everyone else. Code 100 keeps
-    Russia and its 83 regions; only the Russian name slot is rewritten, in both files.
+    Russia and its 83 regions; only the name slot this build replaces is rewritten, in both
+    files, and the sort ranks of that slot with it - see tools/area.py.
     """
     source = ROOT / "work" / cfg["area"] / "romfs"
     if not source.is_dir():
@@ -706,24 +733,27 @@ def build_area(cfg: dict, tid: str, table: dict[str, str]) -> list[str]:
     regions = json.loads((strings / "EU_100.json").read_text(encoding="utf-8"))
     render = lambda text: apply_homoglyphs(text, table)  # noqa: E731
 
+    slot = variant.current().smdh_index
     country = area_mod.load(source / "EU" / "country_LZ.bin")
     area_mod.set_names(
         country,
         {int(code): entry["ua"] for code, entry in countries.items() if code.isdigit()},
+        slot=slot,
         render=render,
     )
-    area_mod.resort(country)
+    area_mod.resort(country, slot=slot)
 
     # JSON keys are the records' own indices, so the names land where the console looks.
     russia = area_mod.load(source / "EU" / f"{RUSSIA_CODE}_LZ.bin")
     area_mod.set_names(
         russia,
         {int(index): entry["ua"] for index, entry in regions.items() if index.isdigit()},
+        slot=slot,
         render=render,
     )
-    area_mod.resort(russia)
+    area_mod.resort(russia, slot=slot)
 
-    dest = ROOT / "dist" / "luma" / "titles" / tid / "area"
+    dest = variant.dist() / "luma" / "titles" / tid / "area"
     replaced = {
         "EU/country_LZ.bin": country,
         f"EU/{RUSSIA_CODE}_LZ.bin": russia,
@@ -756,7 +786,7 @@ def build_smdh(name: str, cfg: dict, romfs: Path, table: dict[str, str]) -> tupl
     if not paths:
         return {}, []
     entries = json.loads((ROOT / "src" / "strings" / name / "_smdh.json").read_text(encoding="utf-8"))
-    index = smdh_mod.LANG_INDEX[cfg["lang"]]
+    index = smdh_mod.LANG_INDEX[lang_of(cfg)]
     out: dict[str, bytes] = {}
     stats: list[str] = []
     for rel in paths:
@@ -831,7 +861,7 @@ def build_title(name: str, table: dict[str, str]) -> list[str]:
         else {}
     )
 
-    lang = cfg["lang"]
+    lang = lang_of(cfg)
     romfs = ROOT / "work" / cfg["source_tid"] / "romfs"
     store = open_store(cfg, romfs)
     strings_dir = ROOT / "src" / "strings" / name
@@ -879,7 +909,7 @@ def build_title(name: str, table: dict[str, str]) -> list[str]:
             written += write_romfs_image(tid, romfs, outputs)
             continue
         for rel_path, blob in outputs.items():
-            dest = ROOT / "dist" / "luma" / "titles" / tid / "romfs" / rel_path
+            dest = variant.dist() / "luma" / "titles" / tid / "romfs" / rel_path
             dest.parent.mkdir(parents=True, exist_ok=True)
             dest.write_bytes(blob)
             written.append(f"{dest.relative_to(ROOT)} ({len(blob)} bytes)")
@@ -892,7 +922,7 @@ def build_title(name: str, table: dict[str, str]) -> list[str]:
         written += [f"  {line}" for line in log]
         written += write_banner(tid)
         for filename, blob in files.items():
-            dest = ROOT / "dist" / "luma" / "titles" / tid / filename
+            dest = variant.dist() / "luma" / "titles" / tid / filename
             dest.parent.mkdir(parents=True, exist_ok=True)
             dest.write_bytes(blob)
             written.append(f"{dest.relative_to(ROOT)} ({len(blob)} bytes)")
@@ -903,7 +933,10 @@ def build_title(name: str, table: dict[str, str]) -> list[str]:
 def main() -> None:
     ap = argparse.ArgumentParser()
     ap.add_argument("titles", nargs="*", default=None, help="names from TITLES; all of them when omitted")
+    variant.add_argument(ap)
     args = ap.parse_args()
+    slot = variant.select(args.slot)
+    print(f"slot {slot.key}: {slot.lang} -> Ukrainian, into {slot.dist.name}/")
 
     table = load_homoglyphs()
     names = args.titles or list(TITLES)

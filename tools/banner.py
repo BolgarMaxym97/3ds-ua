@@ -13,8 +13,14 @@ tools/banner_text.py where the texture is type, and tools/banner_art.py where it
 drawing derived from the title's own art. Two formats appear, one byte per pixel for LA4
 and two for RGBA4444; the file extension says which.
 
-Only the Russian slot is touched. Every other block is copied over compressed, so the
+Only the slot the mod replaces is touched - the Russian one, or the English one in the
+`--slot en` build; see tools/variant.py. Every other block is copied over compressed, so the
 languages the console can still switch to stay exactly as Nintendo shipped them.
+
+Two banners have no English block at all: System Settings and Download Play let the common
+CGFX carry the English wording, so a `--slot en` build takes that common block as its base
+and gives the banner a slot 1 of its own. The common block itself is left alone, because it
+is what every language without a block of its own is drawn with.
 
 The result is not installable on its own: ExeFS lives in NAND. It is read from the SD card
 by the HOME Menu hook - see docs/banner-ua.md.
@@ -28,42 +34,37 @@ from pathlib import Path
 sys.path.insert(0, str(Path(__file__).parent))
 import cbmd  # noqa: E402
 import cgfx  # noqa: E402
+import variant  # noqa: E402
 
 ROOT = Path(__file__).resolve().parent.parent
 
-# TID -> the banner we rebuild, the slot we overwrite, and the texture inside it that
-# carries the localised part of the picture. No two banners agree on it: the name is
+# TID -> the banner we rebuild and the texture inside it that carries the localised part of
+# the picture. Which slot is overwritten is the build's, not the title's - see variant.py. No two banners agree on it: the name is
 # COMMON1 in most and TEX1 in the Activity Log, the size is 512x64 or 512x128, and the
 # format is LA4 in the ones set as type and RGBA4444 in the two that are drawings.
 TITLES = {
     "0004001000022000": {
         "title": "System Settings EUR",
-        "slot": cbmd.EUR_RU,
         "texture": "COMMON1",
     },
     "0004001000022100": {
         "title": "Download Play EUR",
-        "slot": cbmd.EUR_RU,
         "texture": "COMMON1",
     },
     "0004001000022200": {
         "title": "Activity Log EUR",
-        "slot": cbmd.EUR_RU,
         "texture": "TEX1",
     },
     "0004001000022300": {
         "title": "Health & Safety Information EUR",
-        "slot": cbmd.EUR_RU,
         "texture": "COMMON1",
     },
     "0004001000022800": {
         "title": "StreetPass Mii Plaza EUR",
-        "slot": cbmd.EUR_RU,
         "texture": "COMMON1",
     },
     "0004001000022E00": {
         "title": "AR Games EUR",
-        "slot": cbmd.EUR_RU,
         "texture": "COMMON1",
     },
 }
@@ -92,9 +93,9 @@ def output(tid: str) -> Path:
 def build(tid: str) -> bytes:
     spec = TITLES[tid]
     banner = cbmd.parse(source_banner(tid).read_bytes())
-    slot = spec["slot"]
+    slot = variant.current().banner_slot
 
-    original = banner.cgfx(slot)
+    original = banner.cgfx(slot if slot in banner.blocks else cbmd.COMMON)
     texture = cgfx.find(original, spec["texture"])
     path = asset(tid, texture)
     pixels = path.read_bytes()

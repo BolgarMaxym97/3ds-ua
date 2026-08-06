@@ -29,7 +29,8 @@ all of them, because the slot must already fit the longest sibling.
 The budgets (width, height, allowed tags) are the maximum/union across ALL language
 folders of the title: the UI has to fit the longest official localisation, so that is
 the real limit rather than any single language. This also means the language slot
-(EU_English / EU_Russian) can be switched without rewriting the translation.
+(EU_English / EU_Russian) can be switched without rewriting the translation - which is
+why this runs once and covers both builds, and why it takes no `--slot`.
 """
 
 from __future__ import annotations
@@ -43,12 +44,17 @@ from pathlib import Path
 
 sys.path.insert(0, str(Path(__file__).parent))
 import bcfnt  # noqa: E402
+import variant  # noqa: E402
 from build import TITLES, apply_homoglyphs, load_all_langs, load_homoglyphs, load_hud_glyphs  # noqa: E402
 from msbt import TOKEN_RE  # noqa: E402
 from msbt import parse as msbt_parse  # noqa: E402
 from store import open_store  # noqa: E402
 
 ROOT = Path(__file__).resolve().parent.parent
+# Which slot the mod replaces changes nothing here - the budgets are the widest official
+# localisation of every label and the reference is English in both builds - so the checks
+# read the Russian slot and validating once covers dist/ and dist_en/ alike.
+BASE_SLOT = "ru"
 # The budget is already the widest official localisation, so anything past it is wider than
 # anything Nintendo ever put in that pane. There is no headroom to give: a 5% allowance here
 # let 175 strings through that overflow their button on hardware. Only a couple of pixels of
@@ -246,7 +252,7 @@ def untranslatable(name: str) -> set[str]:
                 out[msbt.label_of(index) or f"__index_{index}"] = text
         return out
 
-    slot = texts(cfg["lang"])
+    slot = texts(cfg["lang"][BASE_SLOT])
     reference = texts(cfg["ref_lang"])
     skip = {label for label, text in slot.items() if not LETTERS_RE.search(strip_tags(text))}
     # Nintendo shipping the same text in two languages means the string is not language
@@ -268,12 +274,14 @@ def validate(
     problems: list[str] = []
 
     # _all_langs.json holds plain {label: text} written into every slot, so it is checked
-    # against the same budgets but without the en/ua entry shape.
-    for key, labels in load_all_langs(strings_dir).items():
-        for label, text in labels.items():
-            entry = {"en": "", "ua": text}
-            for problem in check_entry(label, entry, charset, table, widths, budgets.get(label, Budget()), hud):
-                problems.append(f"_all_langs.json: {problem}")
+    # against the same budgets but without the en/ua entry shape. Both builds' sections are
+    # checked, because both ship.
+    for slot_key in variant.SLOTS:
+        for key, labels in load_all_langs(strings_dir, slot_key).items():
+            for label, text in labels.items():
+                entry = {"en": "", "ua": text}
+                for problem in check_entry(label, entry, charset, table, widths, budgets.get(label, Budget()), hud):
+                    problems.append(f"_all_langs.json [{slot_key}]: {problem}")
 
     for json_file in sorted(strings_dir.glob("*.json")):
         if json_file.name.startswith("_"):

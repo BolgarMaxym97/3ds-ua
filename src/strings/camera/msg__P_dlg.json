@@ -701,11 +701,11 @@
   },
   "Set_Storage_01_B": {
     "en": "SD Card",
-    "ua": "Карта SD"
+    "ua": "Карта"
   },
   "Set_Storage_01_W": {
     "en": "SD Card",
-    "ua": "Карта SD"
+    "ua": "Карта"
   },
   "Set_Storage_02": {
     "en": "Photos remaining: {t:5.0:00007041}{t:3.45:0000}",

@@ -1,6 +1,13 @@
 # 3DS UA 🇺🇦
 
-**Українська мова для Nintendo 3DS.** Мод займає місце російської: у списку мов з'являється «Українська», і консоль починає говорити українською. Російська зникає, **англійська та решта мов лишаються на місці**.
+**Українська мова для Nintendo 3DS.** Мод стає на місце однієї з мов консолі: у списку мов з'являється «Українська», і система починає говорити українською. Решта мов лишається на місці.
+
+Збірок дві, і вони однакові — різниця лише в тому, чию клітинку займає українська:
+
+- **`3ds-ua-from-ru-<версія>.zip`** — замість російської. Англійська лишається недоторканою.
+- **`3ds-ua-from-en-<версія>.zip`** — замість англійської. Російська лишається недоторканою.
+
+Ставте одну з них, не обидві.
 
 Файли самої консолі не змінюються — усе живе на SD-карті. Видалили папки, і все повернулося як було.
 
@@ -44,7 +51,7 @@
 
 **1. Скопіюйте файли на SD-карту**
 
-Візьміть `3ds-ua-<версія>.zip` з [Releases](../../releases). Вимкніть консоль, вставте SD-карту в комп'ютер, розпакуйте архів і скопіюйте папку `luma` в корінь картки — туди, де вже є папка `luma`. Комп'ютер спитає, чи об'єднати папки — погодьтеся.
+Візьміть з [Releases](../../releases) `3ds-ua-from-ru-<версія>.zip` (українська замість російської) або `3ds-ua-from-en-<версія>.zip` (замість англійської) — щось одне. Вимкніть консоль, вставте SD-карту в комп'ютер, розпакуйте архів і скопіюйте папку `luma` в корінь картки — туди, де вже є папка `luma`. Комп'ютер спитає, чи об'єднати папки — погодьтеся.
 
 Поверніть картку в консоль.
 
@@ -58,7 +65,7 @@
 
 `Налаштування системи` → `Інші налаштування` → `Мова` → **Українська** → `OK`.
 
-Це той пункт, де раніше було «Русский». Він завжди підписаний «Українська», тож ви побачите його навіть тоді, коли консоль поки що англійською.
+Це той пункт, де раніше було «Русский» (у збірці `from-en` — «English»). Він завжди підписаний «Українська», хай якою мовою зараз говорить консоль, тож ви побачите його одразу.
 
 Консоль перезавантажиться сама. Готово.
 
@@ -72,7 +79,7 @@
 
 Системні файли не змінювалися, тому видалення нічого не ламає.
 
-**Один виняток.** Вбудовані підказки у Сповіщеннях консоль колись скопіювала собі в NAND, і файлами на SD-карті їх уже не дістати — мод переписує їх у самій базі. Після видалення мода вони лишаться українськими (не зіпсованими — просто українськими). Якщо цього не хочеться, видаліть `SD:/luma/titles/0004003000009802/code.ips` **до** першого запуску з модом: тоді підказки лишаться російськими, разом з назвами додатків і банерами, які той самий файл перекладає.
+**Один виняток.** Вбудовані підказки у Сповіщеннях консоль колись скопіювала собі в NAND, і файлами на SD-карті їх уже не дістати — мод переписує їх у самій базі. Після видалення мода вони лишаться українськими (не зіпсованими — просто українськими). Якщо цього не хочеться, видаліть `SD:/luma/titles/0004003000009802/code.ips` **до** першого запуску з модом: тоді підказки лишаться мовою, яку мод займає, разом з назвами додатків і банерами, які той самий файл перекладає.
 
 ## Чого поки що немає
 
@@ -82,15 +89,17 @@
 - **Українських `і ї є ґ`.** У шрифті самої консолі їх немає, тому мод показує візуально близькі `i ï ε г`. Замінити шрифт можна лише правкою системних файлів — а проєкт цього свідомо не робить.
 - **Справжніх літер з клавіатури.** Розкладка українська (`ы`→`і`, `ъ`→`ї`, `э`→`є`, а на місці `ё` тепер апостроф), але вводяться ті самі символи-замінники.
 - **Електронних довідників решти додатків.** Переглядач бере довідник кожного додатка окремо, тож кожен треба здампити з вашої консолі й перекласти. Готові одинадцять — Інтернет-браузера, Налаштувань системи, Журналу дій, Гри по завантаженню, Камери, Звуку, Mii Maker, Площі StreetPass Mii, Nintendo eShop, Face Raiders та AR Games, усі повністю; решта показує той самий довідник, що й раніше. Більше в цю збірку й не влізе: таблиця шляхів переглядача та таблиця назв додатків займають 977 із 1064 байтів вільного місця в його коді. Довідники ігор належать іграм, а не системі, тож лишаються як є.
-- **Назв додатків у eShop, Перенесенні даних та Ігрових записах** — там вони поки що російською. У Меню HOME, Журналі дій, Керуванні даними та Електронному довіднику вони українські.
-- **Збірки для консолей USA та JPN.** Російського мовного слота в них немає взагалі, тож потрібна окрема збірка — напишіть в Issues, якщо вона вам потрібна.
+- **Назв додатків у eShop, Перенесенні даних та Ігрових записах** — там вони лишаються мовою, яку мод займає. У Меню HOME, Журналі дій, Керуванні даними та Електронному довіднику вони українські.
+- **Електронні довідники у збірці `from-en`** беруть за основу російський документ: у нього більше сторінок, ніж в англійського, тому в українську клітинку лягає він цілком, зі своїми знімками екрана. Сам російський довідник при цьому лишається на місці.
+- **Кириличної клавіатури на російській мові у збірці `from-en`.** Аплет клавіатури дозволяє кирилицю рівно одній мові консолі, і в цій збірці вона віддана українській. Сам російський інтерфейс лишається на місці, але клавіатура на ньому буде латинською. У `from-ru` такого немає.
+- **Збірки для консолей USA та JPN.** Європейських мовних слотів у них немає, тож потрібна окрема збірка — напишіть в Issues, якщо вона вам потрібна.
 
 ## Якщо щось пішло не так
 
 | Що бачите | Що робити |
 |---|---|
-| Інтерфейс лишився російським | Не увімкнено `Enable game patching`. Ця галочка злітає після оновлення Luma — поставте знову. |
-| Російською, а галочка стоїть | Перевірте шлях: має бути `luma/titles/…`, а не `luma/luma/titles/…`. |
+| Інтерфейс лишився як був | Не увімкнено `Enable game patching`. Ця галочка злітає після оновлення Luma — поставте знову. |
+| Не українською, а галочка стоїть | Перевірте шлях: має бути `luma/titles/…`, а не `luma/luma/titles/…`. Ще перевірте, що архів той: `from-ru` вмикається на пункті «Русский», `from-en` — на «English». |
 | У списку мов немає «Українська» | Архів скопіювався не повністю, або консоль не EUR-регіону. |
 | Частина тексту не українською | Так і має бути: технічні написи (`OK`, `Miiverse`, формати дат) лишені як є. |
 | У списку країн немає України | Свого коду в системі Україна не має — [чому](#чого-поки-що-немає). Ставте будь-яку країну, інтерфейс лишиться українським. |
@@ -103,7 +112,7 @@
 ## Як допомогти
 
 - **Знайшли помилку чи кривий переклад** — [відкрийте Issue](../../issues/new/choose). Там два шаблони: «Баг на консолі» і «Кривий переклад» — вони самі спитають усе потрібне. Фото екрана допомагає найбільше.
-- **Хочете виправити самі** — правте поле `ua` у `src/strings/<додаток>/*.json` (поруч у полі `en` — оригінал) і надсилайте Pull Request. Терміни звіряйте з [глосарієм](src/glossary.md), а перед PR запустіть `make validate`: воно перевірить, що текст влазить на екран і не містить символів, яких у шрифті немає.
+- **Хочете виправити самі** — правте поле `ua` у `src/strings/<додаток>/*.json` (поруч у полі `en` — оригінал) і надсилайте Pull Request. Терміни звіряйте з [глосарієм](src/glossary.md), а перед PR запустіть `make validate`: воно перевірить, що текст влазить на екран і не містить символів, яких у шрифті немає. Про збірки думати не треба — переклад один на обидві, бо межі ширини рахуються від найдовшої офіційної локалізації, а не від слота.
 - **Знаєте, чого ще бракує** — [напишіть в Issues](../../issues). Там же видно, що вже взяте в роботу.
 
 ## Технічні деталі
@@ -120,7 +129,14 @@
 
 ## In English
 
-**Ukrainian system language for the Nintendo 3DS.** The mod takes the place of Russian: «Українська» appears in the language list and the console starts speaking Ukrainian. Russian disappears, **English and every other language stay untouched.**
+**Ukrainian system language for the Nintendo 3DS.** The mod takes the place of one of the console's languages: «Українська» appears in the language list and the console starts speaking Ukrainian. Every other language stays untouched.
+
+There are two builds of the same translation, differing only in whose slot Ukrainian takes:
+
+- **`3ds-ua-from-ru-<version>.zip`** — in place of Russian; English is left alone.
+- **`3ds-ua-from-en-<version>.zip`** — in place of English; Russian is left alone.
+
+Install one of them, not both.
 
 Nothing on the console itself is modified — it all lives on the SD card. Delete the folders and everything is back to stock.
 
@@ -142,7 +158,7 @@ No Luma3DS yet? Follow [3ds.hacks.guide](https://3ds.hacks.guide/) first — the
 
 **1. Copy the files onto the SD card**
 
-Grab `3ds-ua-<version>.zip` from [Releases](../../releases). Power the console off, put the SD card in your computer, unpack the archive and copy the `luma` folder into the card's root — where a `luma` folder already exists. Agree when your computer offers to merge them.
+Grab either `3ds-ua-from-ru-<version>.zip` (Ukrainian stands in place of Russian) or `3ds-ua-from-en-<version>.zip` (in place of English) from [Releases](../../releases) — one of them, not both. Power the console off, put the SD card in your computer, unpack the archive and copy the `luma` folder into the card's root — where a `luma` folder already exists. Agree when your computer offers to merge them.
 
 Put the card back.
 
@@ -156,7 +172,7 @@ Select **`Enable game patching`** (7th line), press **A** so it reads `(x)`, the
 
 `System Settings` → `Other Settings` → `Language` → **Українська** → `OK`.
 
-That is the entry that used to read «Русский». It is labelled «Українська» in every language, so you can find it while the console still runs in English.
+That is the entry that used to read «Русский» — «English» in the `from-en` build. It is labelled «Українська» whatever language the console currently runs in, so you can find it right away.
 
 The console reboots itself. Done.
 
@@ -180,15 +196,17 @@ Nothing in the system was modified, so removal cannot break anything.
 - **The Ukrainian letters `і ї є ґ`** are not in the console's font, so the mod shows the visually closest `i ï ε г`. Replacing the font would mean modifying the system itself, which this project deliberately avoids.
 - **Typing them.** The keyboard layout is Ukrainian (`ы`→`і`, `ъ`→`ї`, `э`→`є`, `ё`→apostrophe), but it types those same substitute characters.
 - **The electronic manuals of the remaining titles.** The viewer reads each title's own manual, and each one has to be dumped off your console and translated separately. Eleven ship in full; every other title shows the manual it always did. The ceiling is now space, not text: the viewer's path table and its SMDH name table share one 1064-byte window of `.rodata` padding, and eleven titles use 977 of it — a twelfth needs new space first. A game's manual belongs to the game, not to the system, so those stay as they are.
-- **Application names in the eShop, System Transfer and Game Notes** are still Russian. In the HOME Menu, the Activity Log, Data Management and the Instruction Manual they are Ukrainian.
-- **USA and JPN consoles** have no Russian language slot at all and need a separate build. Open an Issue if you want one.
+- **Application names in the eShop, System Transfer and Game Notes** are still in the language the mod replaces. In the HOME Menu, the Activity Log, Data Management and the Instruction Manual they are Ukrainian.
+- **The electronic manuals in the `from-en` build** are built from the Russian document: it has more pages than the English one, so it is copied into the Ukrainian slot whole, its own screenshots included. The Russian manual itself stays where it was.
+- **A Cyrillic keyboard under Russian in the `from-en` build.** The keyboard applet grants Cyrillic to exactly one system language, and in this build that is Ukrainian. The Russian interface itself stays where it was, but its keyboard will be Latin. The `from-ru` build has no such catch.
+- **USA and JPN consoles** have none of the European language slots and need a separate build. Open an Issue if you want one.
 
 ### If something goes wrong
 
 | Symptom | Fix |
 |---|---|
-| Interface is still Russian | `Enable game patching` is off. It resets when you update Luma — turn it back on. |
-| Still Russian, the option is on | Check the path: `luma/titles/…`, not `luma/luma/titles/…`. |
+| Interface is unchanged | `Enable game patching` is off. It resets when you update Luma — turn it back on. |
+| Still not Ukrainian, the option is on | Check the path: `luma/titles/…`, not `luma/luma/titles/…`. And check the archive matches the entry you picked: `from-ru` turns on at «Русский», `from-en` at «English». |
 | No «Українська» in the language list | The archive was not copied fully, or the console is not EUR. |
 | Some text is not Ukrainian | Expected: technical strings (`OK`, `Miiverse`, date formats) are left as they are. |
 | Ukraine is missing from the country list | The system has no country code for it, see [Known limits](#known-limits). Pick any country; the interface stays Ukrainian. |
@@ -201,7 +219,7 @@ Empty boxes instead of letters, clipped or overlapping text — that's a bug. [O
 ### Contributing
 
 - **Found a mistake or an awkward wording** — [open an Issue](../../issues/new/choose). Two templates are there — «Баг на консолі» (a bug) and «Кривий переклад» (a wording problem) — and they ask for everything needed. A photo of the screen helps most.
-- **Want to fix it yourself** — edit the `ua` field in `src/strings/<app>/*.json` (`en` next to it is the original) and send a Pull Request. Check terms against the [glossary](src/glossary.en.md), and run `make validate` first: it checks that the text fits on screen and uses no characters the font lacks.
+- **Want to fix it yourself** — edit the `ua` field in `src/strings/<app>/*.json` (`en` next to it is the original) and send a Pull Request. Check terms against the [glossary](src/glossary.en.md), and run `make validate` first: it checks that the text fits on screen and uses no characters the font lacks. No need to think about the two builds — the translation is shared, because the width budgets come from the longest official localisation rather than from the slot.
 - **Know what else is missing** — [tell us in an Issue](../../issues).
 
 ### Technical details

@@ -5,7 +5,7 @@
 
 Development tool, not part of the build: it needs Pillow, while everything the build runs
 is standard library only. It writes assets/banner/<TID>_<texture>.la4 - the raw pixels that
-tools/banner.py drops into the banner's Russian slot - plus a .png to look at.
+tools/banner.py drops into the banner slot the build replaces - plus a .png to look at.
 
 **Encoding.** The texture is 8 bits per pixel, but it is not greyscale: it is LA4,
 luminance in the high nibble and alpha in the low one. Read as dark glyphs inside an opaque

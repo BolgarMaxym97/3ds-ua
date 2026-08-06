@@ -164,7 +164,8 @@ What should worry you:
 | 1–2 language folders instead of 8 | not the largest `.app` was taken, i.e. an old version of the title |
 | `0 KiB` or very little | the copy was interrupted, do it again |
 
-The language folder name differs per title: the HOME Menu uses `EU_Russian`, the Instruction
+The `from-en` build takes the `EU_English` folder instead, spelled the same way everywhere.
+The Russian folder name differs per title: the HOME Menu uses `EU_Russian`, the Instruction
 Manual uses `EU_Russia` without the `n`. Check each dump.
 
 Quick font check:
@@ -179,8 +180,8 @@ python3 tools/lz11.py work/0004009B00014002/cbf_std.bcfnt.lz   # must print the 
 make font       # the font → assets/font_charset.txt + font_widths.json
 make extract    # romfs → src/strings/*.json (existing translations are kept)
 make validate   # checks glyphs, width, line count, tags
-make build      # → dist/luma/titles/...
-make package    # → 3ds-ua-<version>.zip
+make build      # → dist/luma/titles/... and dist_en/luma/titles/...
+make package    # → 3ds-ua-from-ru-<version>.zip and 3ds-ua-from-en-<version>.zip
 ```
 
 Python 3.11+, no external dependencies.
