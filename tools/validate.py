@@ -383,7 +383,132 @@ def validate_plaza_map(charset: set[int], table: dict[str, str], widths: dict[in
                 problems.append(
                     f"{json_name} {key}: {width}px exceeds budget {budget}px ({entry['ua']!r})"
                 )
+
+    panels_checked, panel_problems = validate_plaza_panels(charset, table, widths, param, strings)
+    return checked + panels_checked, problems + panel_problems
+
+
+def validate_plaza_panels(
+    charset: set[int], table: dict[str, str], widths: dict[int, int], param: Path, strings: Path
+) -> tuple[int, list[str]]:
+    """Check the Puzzle Swap panel names.
+
+    Unlike the map, each panel has a caption slot of its own, so the budget is the widest
+    official name of *that* panel across its twelve language columns, not of the whole table
+    - the same rule tools/manual.py measures against. An empty `ua` is a deliberate "leave
+    the Latin game title alone" and is not measured.
+    """
+    import csvtab
+
+    rel, json_name = "Piece2_PanelInfo.csv", "panels.json"
+    path, names_path = param / rel, strings / json_name
+    if not path.is_file() or not names_path.is_file():
+        return 0, []
+
+    entries = json.loads(names_path.read_text(encoding="utf-8"))
+    parsed = csvtab.load_panels(path)
+
+    problems: list[str] = []
+    checked = 0
+    for key, entry in entries.items():
+        panel = parsed.panels.get(key)
+        if panel is None:
+            problems.append(f"{json_name}: panel {key} is not in {rel}")
+            continue
+        if not entry["ua"]:
+            continue
+        rendered = apply_homoglyphs(entry["ua"], table)
+        checked += 1
+        missing = [ch for ch in rendered if ord(ch) not in charset]
+        if missing:
+            problems.append(f"{json_name} {key}: missing glyphs {missing}")
+        budget = max(
+            pixel_width(parsed.name(panel, lang), widths) for lang in panel.columns if lang
+        )
+        width = pixel_width(rendered, widths)
+        if width > budget:
+            problems.append(
+                f"{json_name} {key}: {width}px exceeds budget {budget}px ({entry['ua']!r})"
+            )
     return checked, problems
+
+
+def validate_layouts(
+    charset: set[int], table: dict[str, str], widths: dict[int, int]
+) -> tuple[int, list[str]]:
+    """Check the lines that live in a layout's text panes rather than in an MSBT.
+
+    The pane is one fixed box holding several languages at once, so the budget is the widest
+    line the pane already carries in the languages the mod does not touch - they all have to
+    fit the same box, which makes them the measurement Nintendo itself signed off on.
+
+    Also checks that the original the spec names is still in the pane: a system update that
+    reworded it has to fail here rather than silently translate nothing at build time.
+    """
+    import bclyt
+    import darc
+    import lz10
+    import lz11
+
+    layouts = ROOT / "src" / "layouts"
+    if not layouts.is_dir():
+        return 0, []
+
+    problems: list[str] = []
+    checked = 0
+    for spec_file in sorted(layouts.glob("*.json")):
+        name = spec_file.stem
+        romfs = ROOT / "work" / TITLES[name]["source_tid"] / "romfs"
+        if not romfs.is_dir():
+            continue
+        spec = json.loads(spec_file.read_text(encoding="utf-8"))
+        for rel, files in spec.items():
+            packed = (romfs / rel).read_bytes()
+            codec = lz11 if packed[0] == 0x11 else lz10
+            archive = dict(darc.parse(codec.decompress(packed)).files())
+            for inner, panes in files.items():
+                by_name = {pane.name: pane for pane in bclyt.texts(archive[inner].data)}
+                for pane_name, lines in panes.items():
+                    pane = by_name[pane_name]
+                    originals = pane.text.split("\n")
+                    for entry in lines:
+                        checked += 1
+                        problems += _check_layout_line(
+                            f"{name}/{pane_name}", entry, originals, charset, table, widths
+                        )
+    return checked, problems
+
+
+def _check_layout_line(
+    where: str,
+    entry: dict,
+    originals: list[str],
+    charset: set[int],
+    table: dict[str, str],
+    widths: dict[int, int],
+) -> list[str]:
+    problems: list[str] = []
+    slots = [key for key in ("ru", "en") if key in entry]
+    for key in slots:
+        if originals.count(entry[key]) != 1:
+            problems.append(f"{where}: {entry[key]!r} is no longer a line of this pane")
+    if problems or not entry["ua"]:
+        return problems
+
+    rendered = apply_homoglyphs(entry["ua"], table)
+    missing = [ch for ch in rendered if ord(ch) not in charset]
+    if missing:
+        problems.append(f"{where}: missing glyphs {missing}")
+
+    others = [line for line in originals if line not in {entry[key] for key in slots}]
+    if others:
+        budget = max(pixel_width(line, widths) for line in others)
+        width = pixel_width(rendered, widths)
+        if width > budget:
+            problems.append(
+                f"{where}: {width}px exceeds budget {budget}px ({entry['ua']!r})"
+            )
+    return problems
 
 
 def main() -> int:
@@ -405,11 +530,15 @@ def main() -> int:
         failed = failed or bool(problems)
 
     if not args.titles:
-        for label, check in (("area", validate_area), ("plaza map", validate_plaza_map)):
+        for label, noun, check in (
+            ("area", "country and region names", validate_area),
+            ("plaza map", "country and region names", validate_plaza_map),
+            ("layouts", "lines baked into layout panes", validate_layouts),
+        ):
             checked, problems = check(charset, table, widths)
             if not checked:
                 continue
-            print(f"{label}: {checked} country and region names, problems: {len(problems)}")
+            print(f"{label}: {checked} {noun}, problems: {len(problems)}")
             for problem in problems:
                 print(f"  ✗ {problem}")
             failed = failed or bool(problems)

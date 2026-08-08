@@ -56,11 +56,19 @@ class Darc:
 
     def files(self) -> list[tuple[str, Entry]]:
         """-> [(path, entry)] for files only, in archive order."""
-        out: list[tuple[str, Entry]] = []
-        for index, entry in enumerate(self.entries):
-            if not entry.is_dir:
-                out.append((self._path_of(index), entry))
-        return out
+        return [(path, entry) for path, _, entry in self.file_entries()]
+
+    def file_entries(self) -> list[tuple[str, int, Entry]]:
+        """-> [(path, entry index, entry)] for files only, in archive order.
+
+        The index is what `source_offsets` is keyed by, so this is how splice() finds where
+        a file already sits in the archive it came from.
+        """
+        return [
+            (self._path_of(index), index, entry)
+            for index, entry in enumerate(self.entries)
+            if not entry.is_dir
+        ]
 
     def find(self, path: str) -> Entry | None:
         for candidate, entry in self.files():
@@ -168,6 +176,43 @@ def build(darc: Darc) -> bytes:
     out += blobs
 
     struct.pack_into("<I", out, 0x0C, len(out))
+    return bytes(out)
+
+
+def splice(data: bytes, archive: Darc, blobs: dict[str, bytes]) -> bytes:
+    """Overwrite files where they already sit, instead of rebuilding the archive.
+
+    build() recomputes every offset from one alignment, and that does not reproduce the
+    per-file padding of every archive Nintendo shipped: System Settings' up_LZ.bin comes
+    back 9 KB shorter than it went in. Rebuilding it would still be a valid archive, but it
+    would move 400 files no one asked to move, in a title that boots the console.
+
+    So when a replacement is exactly as long as the file it replaces - which is the normal
+    case for a layout, where only the characters inside a text pane change - write it over
+    the original bytes and leave every offset, size field and padding byte alone. A length
+    change is refused rather than worked around: that needs build(), and build() needs to
+    learn source_offsets first.
+    """
+    if not archive.source_offsets:
+        raise ValueError("splice needs the offsets of the archive this Darc was parsed from")
+
+    out = bytearray(data)
+    remaining = dict(blobs)
+    for path, index, entry in archive.file_entries():
+        blob = remaining.pop(path, None)
+        if blob is None:
+            continue
+        if len(blob) != len(entry.data):
+            raise ValueError(
+                f"{path}: splice cannot change a file's length "
+                f"({len(entry.data)} -> {len(blob)} bytes)"
+            )
+        at = archive.source_offsets[index]
+        out[at : at + len(blob)] = blob
+        entry.data = blob
+
+    if remaining:
+        raise KeyError(f"not in the archive: {sorted(remaining)}")
     return bytes(out)
 
 

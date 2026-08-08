@@ -825,7 +825,7 @@ def _destinations(name: str, cfg: dict) -> list[Path]:
                 f"tools/luma_hook.py - the viewer would ask for the constant name and show "
                 f"the console's own manual instead"
             )
-        return out + [applet / f"{int(tid, 16) & 0xFFFFFFFF:08x}.bcma" for tid in tids]
+        return out + [applet / luma_hook.manual_file_name(tid) for tid in tids]
 
     # Without that patch the viewer asks for one constant name whatever title it documents,
     # so the SD card can hold exactly one manual. MANUAL= picks which.

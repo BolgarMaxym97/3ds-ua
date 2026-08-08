@@ -35,6 +35,7 @@ A folder name is the Title ID (TID) of the system title it overrides. Luma reads
 | `0004001000022900` | Nintendo eShop | `romfs/` + `exheader.bin` — LayeredFS plus a rights patch |
 | `000400300000BE02` | Miiverse (`cave`) | `romfs/` + `code.ips` + `exheader.bin` + `msg_romfs.bin` — LayeredFS plus a rights patch and the error-message archive |
 | `000400300000BA02` | Miiverse posting applet | `romfs/` + `exheader.bin` — LayeredFS plus a rights patch |
+| `000400100002C100` | Nintendo Network ID Settings (`act`) | `romfs/` + `exheader.bin` — LayeredFS plus a rights patch; the files are Miiverse's own |
 | `0004001000022A00` | System Transfer | `romfs/` — LayeredFS |
 | `0004001000022B00` | Nintendo Zone | `romfs/` — LayeredFS |
 | `0004001000022D00` | Face Raiders | `romfs/` — LayeredFS |
@@ -181,6 +182,7 @@ of its own, so it is left alone.
 | Nintendo eShop | ✅ translated, with a rights patch — needs title version 29 (see below) |
 | Miiverse | ✅ translated, with a rights patch — needs title version 4 (see below) |
 | Miiverse posting applet | ✅ translated, with a rights patch — needs title version 0 (see below) |
+| Nintendo Network ID Settings | ⚠️ dialogs and errors translated, with a rights patch — needs title version 3 (see below). The account pages themselves come from the server, see [What the mod does not translate](#what-the-mod-does-not-translate) |
 | System Transfer | ✅ translated |
 | Nintendo Zone | ✅ translated |
 | Face Raiders | ✅ translated |
@@ -247,6 +249,7 @@ The root cause is in the exheader, `accessInfo` at offset 0x248:
 | StreetPass Mii Plaza | `0x0000000000000000` | **no** |
 | Miiverse | `0x0000000000000001` | **no**, but it has `fsMountArchive` |
 | Miiverse posting applet | `0x0000000000000000` | **no**, but it has `fsMountArchive` |
+| Nintendo Network ID Settings | `0x0000000000000001` | **no**, but it has `fsMountArchive` |
 | Software Keyboard | `0x0000000000000001` | **no** |
 | Activity Log | `0x0000000000000001` | **no** |
 | Download Play | `0x0000000000000001` | **no** |
@@ -262,7 +265,8 @@ The root cause is in the exheader, `accessInfo` at offset 0x248:
 Titles without `DirectSdmc` have no access to the SD card, so Nintendo never linked any
 SD-mounting code into them. The titles that work are the ones that hold that right.
 
-StreetPass Mii Plaza, Nintendo eShop, Miiverse and the Miiverse posting applet are the
+StreetPass Mii Plaza, Nintendo eShop, Miiverse, the Miiverse posting applet and Nintendo
+Network ID Settings are the
 exception on both counts: they have no `DirectSdmc` right, yet they do have
 `fsMountArchive` (the Plaza mounts its own extdata, the others their own storage). Luma
 finds all five symbols and patches the title unaided, so no `code.ips` is needed — but the
@@ -356,6 +360,7 @@ updated the title:
 | **Nintendo eShop** | **29** |
 | **Miiverse (`cave`)** | **4** |
 | **Miiverse posting applet** | **0** |
+| **Nintendo Network ID Settings (`act`)** | **3** |
 | **Camera applet (`L`+`R`)** | **2** |
 | **3DS Memo (`memolib`)** | **3** |
 | **Circle Pad Pro applet (`extrapad`)** | **4** |
@@ -863,6 +868,84 @@ in place like the rest, ids 9..91 untouched, because that id is what the console
 the country code. In total **121 countries and 1397 regions** translated, no row added, dropped
 or renumbered.
 
+### The Puzzle Swap panel names
+
+A third table sits in the same folder — `param/Piece2_PanelInfo.csv`, the names of the seven
+puzzle panels. A different shape: nothing is quoted, and the headers come in pairs, one pair
+per panel:
+
+```
+#パネルID,分割タイプ,入手パターン,,,,,,,,,,,
+1,0,0,,,,,,,,,,,
+#パネル名,US_English,US_French,...,EU_Russian,
+マリオ＆クッパ,Mario and Bowser,...,Марио и Боузер,
+```
+
+With no quoting, splitting on `,` and joining back reproduces the line exactly, trailing comma
+included (the last field is empty). The language column is found **by name in the panel's own
+header** rather than at a fixed index: `EU_Russian` is 12 here and 11 in `region.csv`, and two
+hardcoded numbers would drift apart sooner or later. Two of the seven headers are damaged in
+Nintendo's own file (`Mario and Bowser` and `TUS_English` in place of `US_English`), but only
+in that first column — every `EU_*` name is intact in all seven.
+
+There is exactly one cell to translate here: six of the panels are named after games whose
+titles Nintendo shipped in Latin script in every language, Russian included, so their `ua` is
+empty and the build leaves them alone. The only one that ever held Cyrillic is panel 1,
+`Марио и Боузер` → `Маріо і Боузер`. The width budget is not shared across the table the way
+the Map's is — each caption has a slot of its own, so it is measured against the widest
+official form of *that* name across the twelve language columns (`Mario und Bowser`).
+
+## Text baked into a layout
+
+Some strings never reach an MSBT at all: they sit in a `txt1` text pane inside a `.bclyt`,
+inside a DARC archive, inside an LZ blob. The first such case in the release is the console's
+first-boot screen: the pane `TextBoxTitle_00` in `blyt/StartTopEU_U_00.bclyt`, inside
+`0004001000022000/romfs/up_LZ.bin`.
+
+What makes that pane special is that it holds **all eight languages of the region at once**:
+
+```
+Select a language.
+Choisissez la langue.
+Sprache auswählen.
+…
+Выберите язык.
+```
+
+So the line that matches the occupied slot is the one replaced — and a **whole line**, not a
+substring: a substring match here would edit whichever language happened to contain the same
+word.
+
+The spec lives in `src/layouts/<title>.json`, keyed by romfs path, then the file inside the
+archive, then the pane name. Every entry names the original line for **each** slot the mod can
+take, plus `ua`. That original is not decoration: if a system update rewords the line,
+`make validate` fails with `is no longer a line of this pane` instead of silently translating
+nothing.
+
+**Nothing is rebuilt that was not asked to change.** Three things hold that together:
+
+1. `bclyt.Edit(keep_buffer=True)` keeps the pane's `textBufBytes` and pads the new string out
+   to it with zeros. Pane, section and file all stay exactly as long as they were. A string
+   too long for the buffer is an error, not a silent truncation.
+2. `darc.splice()` writes the layout back **over itself** using `source_offsets`. That is
+   deliberately not `darc.build()`: build recomputes every offset from one alignment and does
+   not reproduce per-file padding — `up_LZ.bin` comes back 9 KB shorter. It would still be a
+   valid archive, but it would move 400 files no one asked to move, in a title that boots the
+   console.
+3. Only the LZ wrapper is genuinely re-made, and the result is unpacked again and compared
+   before it ships.
+
+For the first-boot screen the arithmetic is: 1,310,824 bytes in and out, **8 bytes changed**
+in the `from-ru` build.
+
+The width budget does not come from an MSBT either: the pane is one fixed box shared by all
+eight languages, so the ceiling is the widest line the pane already carries in the languages
+the mod leaves alone. They have to fit the same box, which makes them the measurement Nintendo
+itself signed off on.
+
+The other cases found (System Transfer, the eShop, the purchase applet, Face Raiders) are not
+covered by this yet: there it is DARC inside DARC, and the string lengths do not match.
+
 ## What the mod does not translate
 
 **Application names outside the HOME Menu.** The label under an icon, the text on the upper screen when you highlight it, the "software suspended" overlay, the close and delete prompts — all of it is the same short/long description from the title's **SMDH** (`CXI ExeFS:/icon`, 16 language structs). LayeredFS cannot reach ExeFS: Luma only redirects `romfs/`, `code.bin`, `code.ips`, `exheader.bin` and `locale.txt`, and an installed title's SMDH lives in NAND.
@@ -878,11 +961,36 @@ Two titles carry a second copy of their SMDH inside their own `romfs`, and **Lay
 
 Only the slot this build replaces is touched (index 10 for `from-ru`, 1 for `from-en`) — its short and long description, 40 and 82 bytes respectively. The icon bitmaps and the other 15 languages stay byte-for-byte identical: see `tools/smdh.py` and `build_smdh()`. The eShop and Face Raiders copies exist too, but their names are already in Latin script.
 
+**The account pages in Nintendo Network ID Settings.** The title itself (`000400100002C100`, `act`) is in the release, and everything it draws on its own is Ukrainian: the sign-in dialogs, the keyboard's warning about characters an ID may not contain, the error texts, the top bar. But `User Information`, `Password Settings`, `Change Mii` and `Select an option below.` it does not draw — those are pages it fetches from the server and renders with its own WebKit. They are nowhere in the title: all **195 files** were checked - the romfs with LZ and darc unpacked, plus `code.bin` and the exheader - in five encodings (`utf-16-le`, `utf-16-be`, `utf-8`, `cp1251`, `koi8-r`). The only hit for "пользовател" is the proxy field's `Ім'я користувача`. There is no Cyrillic outside `message/`, the layouts are pure artwork whose text panes are filled at runtime, and the title ships no HTML or CSS at all.
+
+Verified on hardware on 2026-08-08: **with the wireless switch off these screens still draw** — the
+pages are cached locally, and the attempt to reach the network then fails with `003-0299` on top of
+them. The same screenshots show the boundary word for word: the top bar's `Вимк.`, `Зачекайте...`
+and the whole body of error `003-0299` are Ukrainian because the title draws them; `Войти`,
+`Я забыл(а)` and `Повторить попытку?` are Russian because they live in the HTML. The telling case
+is `Отмена`: all three of its labels in the title are translated to `Скасувати`, yet the screen
+shows Russian - so that dialog is inside the page too (the title carries a `browse/jsdialog/`
+layout for exactly that).
+
+The server picks the language from the `Accept-Language` header the title sends, which follows the console's language. With the mod in the Russian slot, Russian comes back; a `from-en` build would get English. No file on the SD card changes that — but one lever does exist, and it has not been explored: `romfs/browser/UserCss.dat` is a `data:text/css;base64,…` user stylesheet the engine applies to every page, and LayeredFS replaces it like any other file - and, importantly, the stylesheet is applied **at render time**, so it reaches cached pages too, no network required. In WebKit, `font-size: 0` together with `::before { content: … }` replaces a node's visible text.
+
+**Verified on hardware on 2026-08-08** by swapping `UserCss.dat` in the Internet Browser:
+`content:` does draw text, and the engine accepts a 1091-byte `data:` URL where the stock one
+is 308 - but **real `і ї є ґ` come out as empty boxes** while the homoglyphs `i ï ε г` render
+fine. So strings in the CSS have to go through `apply_homoglyphs` like any other text in the
+mod; the browser's font is the same poor one. What is left open is whether the pages have
+stable selectors. The same file, byte for byte, ships in the Internet Browser (`0004003000009D02`), which the mod already carries with plain LayeredFS — the idea can be tested there at no risk and without a new title.
+
 **The system font.** It has no Ukrainian letters, and LayeredFS cannot replace it: it lives in a separate system title the mod does not touch.
 
 **Real Ukrainian letters from the keyboard.** The layout is Ukrainian (see [The Ukrainian keyboard layout](#the-ukrainian-keyboard-layout)), but the `і ї є` keys type `i ï ε` — the same substitute glyphs the rest of the mod uses. On the console that reads correctly and consistently; outside it — in a Mii name, a folder name, a post — it is Latin and Greek, not Ukrainian text. There is no way around it: real letters need a different font, which means modifying NAND.
 
-**The text inside electronic manuals.** The Instruction Manual application itself is translated — `Back`, `Enlarge`, `Language`, `Page`, `Contents`, the language dialog. The documents it displays can be translated too now, but one at a time, and each has to be dumped off the console first. Eleven are translated in full - Internet Browser, System Settings, Activity Log, Download Play, Camera, Sound, Mii Maker, StreetPass Mii Plaza, Nintendo eShop, Face Raiders and AR Games; every other title shows the console's own manual. The limit is space: the path table and the SMDH name table share one 1064-byte `.rodata` padding window and eleven titles use 977 of it.
+**The text inside electronic manuals.** The Instruction Manual application itself is translated — `Back`, `Enlarge`, `Language`, `Page`, `Contents`, the language dialog. The documents it displays can be translated too now, but one at a time, and each has to be dumped off the console first. Eleven are translated in full - Internet Browser, System Settings, Activity Log, Download Play, Camera, Sound, Mii Maker, StreetPass Mii Plaza, Nintendo eShop, Face Raiders and AR Games; every other title shows the console's own manual. The limit here is space: the path table and the SMDH name table share one 1064-byte `.rodata` padding window. Eleven titles used 977 of it — now **558**, after two changes that cost nothing:
+
+1. **Short descriptions only in the name table.** The viewer prints the short description above the page and never the long one, yet storing it cost as much again. `build_table(short_only=True)` writes a long length of `0`, which the stub reads as "leave that field alone", so the buffer keeps the original. The HOME Menu does display both and is not passed the flag. 324 bytes saved.
+2. **Shorter file names.** The document's name on the SD card is ours to choose, and `rex:/2000` costs 10 bytes where `rex:/00022000.bcma` cost 19. The low 16 bits of the title id are used - unique across every system title, and the build fails if they ever stop being. 132 bytes saved.
+
+That leaves **506 bytes free** instead of 87, room for roughly nine more manuals at ~56 bytes each. What blocks the next one is now a dump off the console, not the padding.
 
 That document does not belong to the Instruction Manual. Every title ships its own electronic manual as a separate NCCH — content index 1 within that same title. The Instruction Manual reaches it through `ARCHIVE_SAVEDATA_AND_CONTENT`, reading the documented title's content directly.
 

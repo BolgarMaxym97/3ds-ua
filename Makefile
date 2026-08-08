@@ -18,7 +18,7 @@ help:  ## show this list
 	@grep -E '^[a-z-]+:.*?##' $(MAKEFILE_LIST) | sed 's/:.*##/\t—/'
 
 extract: ## romfs in work/ -> src/strings/*.json (existing translations are kept)
-	$(PY) tools/extract.py work/$(HOME_MENU_TID) home_menu
+	$(PY) tools/extract.py
 
 font: ## re-read the system font -> assets/font_charset.txt + font_widths.json
 	$(PY) tools/font_cmap.py work/$(FONT_TID)/cbf_std.bcfnt.lz assets/font_charset.txt

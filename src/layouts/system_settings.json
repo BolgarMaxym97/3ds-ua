@@ -1,0 +1,13 @@
+{
+  "up_LZ.bin": {
+    "./blyt/StartTopEU_U_00.bclyt": {
+      "TextBoxTitle_00": [
+        {
+          "en": "Select a language.",
+          "ru": "Выберите язык.",
+          "ua": "Виберіть мову."
+        }
+      ]
+    }
+  }
+}

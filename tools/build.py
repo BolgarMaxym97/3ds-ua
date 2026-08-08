@@ -40,7 +40,11 @@ from pathlib import Path
 sys.path.insert(0, str(Path(__file__).parent))
 import area as area_mod  # noqa: E402
 import banner as banner_mod  # noqa: E402
+import bclyt  # noqa: E402
 import csvtab  # noqa: E402
+import darc  # noqa: E402
+import lz10  # noqa: E402
+import lz11  # noqa: E402
 import bcfnt  # noqa: E402
 import luma_hook  # noqa: E402
 import msbt as msbt_mod  # noqa: E402
@@ -160,6 +164,10 @@ TITLES = {
         # build_area() and tools/area.py.
         "hook_patch": True,
         "area": "0004009B00010402",
+        # `layout_texts`: the first-boot language screen is not in the MSBT at all - it is a
+        # text pane inside up_LZ.bin. See src/layouts/system_settings.json and
+        # build_layout_texts().
+        "layout_texts": True,
     },
     "mii_maker": {
         "tids": ["0004001000022700"],
@@ -210,11 +218,12 @@ TITLES = {
         "lang": LANG_SLOTS,
         "ref_lang": "EU_English",
         "hook_patch": True,
-            "csv_tables": {
+        "csv_tables": {
             "param/country.csv": "country.json",
             "param/region.csv": "region.json",
+            "param/Piece2_PanelInfo.csv": "panels.json",
         },
-},
+    },
     # Same per-language darc as Mii Maker, but the applet has no fsMountArchive of its
     # own, so it needs the tools/luma_hook.py treatment before it can ship.
     "mii_selector": {
@@ -332,13 +341,28 @@ TITLES = {
     #
     # The service is dead since 2017, so only its start-up and error path is reachable now:
     # `ErrorMsg_Title`, `Opening_*`, `StartUp_*` and the "Miiverse is closing" lines.
+    # Two titles off one entry. Nintendo Network ID Settings (`act`) is built on the same
+    # browser shell as Miiverse and ships the same message files: its cave.msbt and hud.msbt
+    # are byte-for-byte identical to Miiverse's, all 283 + 59 labels and texts. So the
+    # translation carries over whole, the way the HOME Menu's message_hud carries over to
+    # the Notifications applet - a second `src/strings/` folder would only duplicate 342
+    # strings that can never legitimately differ.
+    #
+    # What `act` does *not* ship is the account screens themselves. "Информация о
+    # пользователе", "Настройки пароля", "Изменить Mii", "Выберите опцию внизу." appear
+    # nowhere in its 193 romfs files - they are HTML the applet fetches and draws with its
+    # own WebKit. Which language the server sends follows the language the console reports,
+    # so those pages stay in the replaced slot's language whatever the SD card holds.
     "miiverse": {
-        "tids": ["000400300000BE02"],  # Miiverse applet, EUR
+        "tids": [
+            "000400300000BE02",  # Miiverse applet, EUR
+            "000400100002C100",  # Nintendo Network ID Settings (act), EUR
+        ],
         "source_tid": "000400300000BE02",
         "lang": LANG_SLOTS,
         "ref_lang": "EU_English",
         # `hook_patch` ships an exheader.bin and nothing else: Luma hooks the code itself,
-        # but the title has no `DirectSdmc`, so its payload could not read the SD card.
+        # but neither title has `DirectSdmc`, so its payload could not read the SD card.
         "hook_patch": True,
     },
     # Miiverse posting applet: the keyboard-and-canvas overlay a game opens to write a post.
@@ -514,8 +538,13 @@ def app_name_tables(table: dict[str, str]) -> tuple[dict[str, object], list[str]
         if patch.get("smdh_hook") and patch.get("manual_path")
         for tid in patch["manual_path"]["titles"]
     }
+    # `short_only`: the viewer prints the short description above the page and never the
+    # long one, and those two tables share one 1064-byte window of padding - see the note on
+    # `rodata_off` in tools/luma_hook.py. Dropping the long description halves this table
+    # and is most of what pays for a twelfth manual.
     manual_blob, manual_log = smdh_names.build_table(
-        {tid: entry for tid, entry in translated.items() if tid.upper() in manual_titles}
+        {tid: entry for tid, entry in translated.items() if tid.upper() in manual_titles},
+        short_only=True,
     )
 
     # The originals are compared against what the title holds in memory, so they stay as
@@ -670,18 +699,66 @@ def write_shared_image(reader_tid: str, romfs_dir: Path, overrides: dict[str, by
     return written
 
 
-def build_csv(cfg: dict, romfs: Path, table: dict[str, str]) -> tuple[dict[str, bytes], list[str]]:
-    """Translate the replaced language's column of the StreetPass Map's country tables.
-
-    The map names the places you met people in, and those names live in UTF-16 CSV rather
-    than MSBT - one column per language, Russian at index 11 and English at 4. Rows are keyed by
-    "<country code>:<address id>", which is the same id the `area` archive numbers its
-    regions with, so the two tables cannot drift apart.
+def build_country_table(
+    rel: str, path: Path, names: dict, json_name: str, render
+) -> tuple[bytes, str]:
+    """country.csv / region.csv: quoted rows, the language column at a fixed index.
 
     No row is added, dropped or renumbered: an address id is what the console sends along
     with the country code, so the map another player sees resolves it through their own
     table. Country code 100 keeps Russia and its 83 regions, translated the same way as
     every other country - only the column of the language this build replaces is written.
+    """
+    parsed = csvtab.load(path)
+    for row in parsed.rows:
+        if not row.is_row:
+            continue
+        key = csvtab.key_of(row)
+        entry = names.get(key)
+        if entry is None:
+            raise SystemExit(f"mii_plaza: {rel} row {key} has no translation in {json_name}")
+        row.fields[variant.current().csv_column] = render(entry["ua"])
+    return parsed.build(), f"{rel}: {len(names)} names translated"
+
+
+def build_panel_table(
+    rel: str, path: Path, names: dict, json_name: str, render
+) -> tuple[bytes, str]:
+    """Piece2_PanelInfo.csv: unquoted, the language column found by name in each header.
+
+    An empty `ua` means "leave this cell alone", and six of the seven panels have one: their
+    names are game titles Nintendo shipped in Latin script in every language, Russian
+    included. The only cell that ever held Cyrillic is panel 1, `Марио и Боузер`.
+    """
+    parsed = csvtab.load_panels(path)
+    lang = variant.current().lang
+    written = 0
+    for key, entry in names.items():
+        panel = parsed.panels.get(key)
+        if panel is None:
+            raise SystemExit(f"mii_plaza: {json_name} names panel {key}, which is not in {rel}")
+        if not entry["ua"]:
+            continue
+        parsed.set_name(panel, lang, render(entry["ua"]))
+        written += 1
+    return parsed.build(), f"{rel}: {written}/{len(names)} panel names translated"
+
+
+# Which reader each table needs. Everything else about the two shapes lives in tools/csvtab.py.
+CSV_BUILDERS = {
+    "param/country.csv": build_country_table,
+    "param/region.csv": build_country_table,
+    "param/Piece2_PanelInfo.csv": build_panel_table,
+}
+
+
+def build_csv(cfg: dict, romfs: Path, table: dict[str, str]) -> tuple[dict[str, bytes], list[str]]:
+    """Translate the replaced language's column of the StreetPass Mii Plaza's CSV tables.
+
+    The map names the places you met people in, and the Puzzle Swap screen names the panels;
+    both live in UTF-16 CSV rather than MSBT. The two shapes differ enough to need separate
+    readers - see CSV_BUILDERS and tools/csvtab.py - but neither ever re-serialises a row it
+    was not asked to change.
     """
     files = cfg.get("csv_tables")
     if not files:
@@ -692,18 +769,95 @@ def build_csv(cfg: dict, romfs: Path, table: dict[str, str]) -> tuple[dict[str, 
 
     blobs, log = {}, []
     for rel, json_name in files.items():
+        builder = CSV_BUILDERS.get(rel)
+        if builder is None:
+            raise SystemExit(f"mii_plaza: no CSV reader for {rel}")
         names = json.loads((strings / json_name).read_text(encoding="utf-8"))
-        parsed = csvtab.load(romfs / rel)
-        for row in parsed.rows:
-            if not row.is_row:
-                continue
-            key = csvtab.key_of(row)
-            entry = names.get(key)
-            if entry is None:
-                raise SystemExit(f"mii_plaza: {rel} row {key} has no translation in {json_name}")
-            row.fields[variant.current().csv_column] = render(entry["ua"])
-        blobs[rel] = parsed.build()
-        log.append(f"{rel}: {len(names)} names translated")
+        blobs[rel], line = builder(rel, romfs / rel, names, json_name, render)
+        log.append(line)
+    return blobs, log
+
+
+def replace_line(text: str, original: str, replacement: str, where: str) -> str:
+    """Swap one whole line of a text pane, leaving the rest of the pane alone.
+
+    Whole lines, not substrings: a pane can hold several languages at once - the first-boot
+    screen holds all eight of the region - and a substring match there would edit whichever
+    one happened to contain the same word.
+    """
+    lines = text.split("\n")
+    found = [at for at, line in enumerate(lines) if line == original]
+    if len(found) != 1:
+        raise SystemExit(
+            f"{where}: {original!r} appears {len(found)} times in the pane, expected exactly one"
+        )
+    lines[found[0]] = replacement
+    return "\n".join(lines)
+
+
+def build_layout_texts(
+    name: str, cfg: dict, romfs: Path, table: dict[str, str]
+) -> tuple[dict[str, bytes], list[str]]:
+    """Translate text baked into a title's layouts rather than into its MSBT.
+
+    Some strings never reach a message file: they sit in a `txt1` pane inside a `.bclyt`,
+    inside a DARC archive, inside an LZ blob. The spec for them lives in src/layouts/<title>.json,
+    keyed by romfs path, then by the file inside the archive, then by pane name; each entry
+    names the original line for every slot the mod can take, so a system update that reworded
+    it fails the build instead of silently translating nothing.
+
+    Nothing is rebuilt that was not asked to change. The pane keeps its text buffer
+    (`keep_buffer`), so the layout stays the same length; the layout is written back over
+    itself with darc.splice(), so every other file in the archive keeps its offset and its
+    padding. Only the LZ wrapper is genuinely re-made, and that one is checked by
+    round-tripping it before it ships.
+    """
+    if not cfg.get("layout_texts"):
+        return {}, []
+
+    spec = json.loads((ROOT / "src" / "layouts" / f"{name}.json").read_text(encoding="utf-8"))
+    slot = variant.current()
+    render = lambda text: apply_homoglyphs(text, table)  # noqa: E731
+
+    blobs, log = {}, []
+    for rel, layouts in spec.items():
+        packed = (romfs / rel).read_bytes()
+        codec = lz11 if packed[0] == 0x11 else lz10
+        raw = codec.decompress(packed)
+        archive = darc.parse(raw)
+        files = dict(archive.files())
+
+        replacements, changed = {}, 0
+        for inner, panes in layouts.items():
+            if inner not in files:
+                raise SystemExit(f"{name}: {rel} has no {inner}")
+            data = files[inner].data
+            by_name = {pane.name: pane for pane in bclyt.texts(data)}
+            edits = {}
+            for pane_name, lines in panes.items():
+                pane = by_name.get(pane_name)
+                if pane is None:
+                    raise SystemExit(f"{name}: {inner} has no text pane {pane_name}")
+                text = pane.text
+                for line in lines:
+                    if not line["ua"]:
+                        continue
+                    where = f"{name}: {inner} {pane_name}"
+                    text = replace_line(text, line[slot.app_name_key], render(line["ua"]), where)
+                    changed += 1
+                if text != pane.text:
+                    edits[pane_name] = bclyt.Edit(text=text, keep_buffer=True)
+            if edits:
+                replacements[inner] = bclyt.rewrite(data, edits)
+
+        if not replacements:
+            continue
+        spliced = darc.splice(raw, archive, replacements)
+        rebuilt = codec.compress(spliced)
+        if codec.decompress(rebuilt) != spliced:
+            raise SystemExit(f"{name}: {rel} did not survive being packed again")
+        blobs[rel] = rebuilt
+        log.append(f"{rel}: {changed} layout lines translated, {len(spliced)} bytes unchanged in size")
     return blobs, log
 
 
@@ -895,11 +1049,14 @@ def build_title(name: str, table: dict[str, str]) -> list[str]:
         stats.append(f"{key}: {translated}/{len(msbt.texts)} translated")
 
     csv_blobs, csv_stats = build_csv(cfg, romfs, table)
-    stats += csv_stats
+    layout_blobs, layout_stats = build_layout_texts(name, cfg, romfs, table)
+    stats += csv_stats + layout_stats
     smdh_blobs, smdh_stats = build_smdh(name, cfg, romfs, table)
     hud_blobs, hud_stats = build_hud_font(cfg, romfs)
     stats += smdh_stats + hud_stats + names_stats
-    outputs = cross_blobs | store.outputs(lang, updates) | csv_blobs | smdh_blobs | hud_blobs
+    outputs = (
+        cross_blobs | store.outputs(lang, updates) | csv_blobs | layout_blobs | smdh_blobs | hud_blobs
+    )
     written: list[str] = []
     for reader in cfg.get("ships_to", []):
         written += write_shared_image(reader, romfs, outputs)

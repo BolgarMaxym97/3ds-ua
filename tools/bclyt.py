@@ -76,6 +76,12 @@ class Edit:
     x: float | None = None
     y: float | None = None
     width: float | None = None
+    # Keep the pane's existing textBufBytes and pad the new string out to it, instead of
+    # sizing the buffer to the string. The pane, the section and the whole file then stay
+    # exactly as long as they were, which is what lets tools/darc.py splice() write a
+    # layout back into an archive in place - see build_layout_texts() in tools/build.py.
+    # Only ever shrinks the used length: a string too long for the buffer is an error.
+    keep_buffer: bool = False
 
 
 def parse(data: bytes) -> list[Pane]:
@@ -189,8 +195,18 @@ def _write_pane(section: bytes, magic: bytes, edit: Edit) -> bytes:
     if len(encoded) > 0xFFFF:
         raise ValueError("string too long for a u16 length")
 
+    used = len(encoded)
+    buffer = struct.unpack_from("<H", out, TEXT_BUF)[0]
+    if edit.keep_buffer:
+        if used > buffer:
+            raise ValueError(f"{used} bytes do not fit the pane's {buffer}-byte text buffer")
+        encoded += b"\0" * (buffer - used)
+        buffer_bytes = buffer
+    else:
+        buffer_bytes = used
+
     out = out[:STRING_AT]
-    struct.pack_into("<HH", out, TEXT_BUF, len(encoded), len(encoded))
+    struct.pack_into("<HH", out, TEXT_BUF, buffer_bytes, used)
     out += encoded
     out += b"\0" * (-len(out) % 4)
     struct.pack_into("<I", out, 0x04, len(out))

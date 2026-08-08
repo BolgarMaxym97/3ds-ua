@@ -46,11 +46,19 @@ def slot_offsets(index: int) -> tuple[int, int]:
     return base + SHORT_OFFSET, base + LONG_OFFSET
 
 
-def build_table(entries: dict[str, dict[str, str]]) -> tuple[bytes, list[str]]:
+def build_table(
+    entries: dict[str, dict[str, str]], short_only: bool = False
+) -> tuple[bytes, list[str]]:
     """Assemble the table from {title id: {"ua": short, "ua_long": long}}, plus a log.
 
     The strings arrive with homoglyphs already applied - the console renders them with the
     system font, exactly like the strings in romfs.
+
+    `short_only` drops the long description and stores a long length of 0, which the stub
+    reads as "leave that field alone". The Instruction Manual wants this: it shows the short
+    description above the page and nothing else, so carrying the long one costs it roughly
+    as many bytes again in a .rodata padding that decides how many manuals fit in a release.
+    The HOME Menu does display both and must not pass it.
     """
     out = bytearray()
     log: list[str] = []
@@ -64,14 +72,14 @@ def build_table(entries: dict[str, dict[str, str]]) -> tuple[bytes, list[str]]:
             raise ValueError(f"{tid}: only applications and applets are supported, not {high:#010x}")
 
         short = entry["ua"]
-        long = entry.get("ua_long") or short
+        long = "" if short_only else (entry.get("ua_long") or short)
         for what, text, limit in (("ua", short, SHORT_LIMIT), ("ua_long", long, LONG_LIMIT)):
             if len(text) > limit:
                 raise ValueError(f"{tid} {what} is {len(text)} code units, the field holds {limit}")
 
         out += struct.pack("<IBBBB", low, high & 0xFF, len(short), len(long), 0)
         out += short.encode("utf-16-le") + long.encode("utf-16-le")
-        log.append(f"{tid} -> {short!r}" + (f" / {long!r}" if long != short else ""))
+        log.append(f"{tid} -> {short!r}" + (f" / {long!r}" if long and long != short else ""))
 
     out += struct.pack("<I", 0)
     return bytes(out), log

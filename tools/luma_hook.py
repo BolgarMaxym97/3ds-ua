@@ -205,7 +205,11 @@ HOOK_PATCHES: dict[str, dict] = {
             # the two tables together are 977 of the 1064 bytes between 0xBCBD8 and the
             # 0xBD000 page boundary, and a twelfth title would cost about 100 more.
             "rodata_off": 0xBCBD8,
-            "rodata_room": 0x138,
+            # 0x150 of the 0x428-byte padding, the rest goes to the SMDH name table that
+            # starts at 0xBCD28. 18 bytes a title (8 of table, a 10-byte path) means this
+            # holds eighteen, which is about what the name table holds too - the two grow
+            # at the same rate, so the split is even rather than first-come.
+            "rodata_room": 0x150,
             "fallback": b"rex:/Manual.bcma\0",   # the string in .text, left where it is
             "second_site": 0x48294,              # the caller's `sub r1, pc, #200`
             "second_site_word": 0xE24F10C8,
@@ -259,9 +263,11 @@ HOOK_PATCHES: dict[str, dict] = {
             "stub_room": 636,           # up to the next function at 0x2C964
             "dead_sha256": "c8a3a2b26f7efa67ed864551c80362cc996116ffb5ff17b654287ed0d282502f",
             # .rodata padding again, past the manual-path table at 0xBCBD8 with room for it
-            # to grow: the table there is 8 bytes per title plus a 19-byte path each.
-            "rodata_off": 0xBCD10,
-            "rodata_room": 0x2F0,       # up to the 0xBD000 page boundary
+            # to grow: the table there is 8 bytes per title plus a 10-byte path each.
+            # Short descriptions only here (see build_table(short_only=True)) - the viewer
+            # never prints the long one, and carrying it cost as much again.
+            "rodata_off": 0xBCD28,
+            "rodata_room": 0x2D8,       # up to the 0xBD000 page boundary
         },
         "code_sha256": "cf4658f9f618a41f8d32ff7aed40d0ea565da78a2ace349cb93698ff5f7df5d8",
         "variant": "sl_frame14",
@@ -532,6 +538,25 @@ HOOK_PATCHES: dict[str, dict] = {
         "title": "Miiverse posting applet EUR",
         "title_version": 0,
         "code_sha256": "ad1608dd233fbef3e77f27185dbe8e8d81a9b45b58e5098e99d980d754c455d5",
+        "kind": "exheader_only",
+    },
+    # Nintendo Network ID Settings (`act`), EUR, title version 3. Third title on the same
+    # browser shell, and the same case again: Luma finds all five symbols in its own code,
+    # accessInfo is 0x1 - no `DirectSdmc` - so an exheader and nothing else.
+    #
+    # It lives in 00040010, not among the applets: 1:/title/00040030 holds 22 titles on a
+    # EUR console and none of them is `act`. The one that names it is System Settings, which
+    # carries 000400100002C100 as a pair of literals in the pool at 0xD0F08.
+    #
+    # No `msg_hook` here, and that is a gap rather than a conclusion: like Miiverse this
+    # title knows the shared archives - 0xE60C8 holds the table {12102, 12402, 12502,
+    # 12602} - but whether it reads error text out of them itself, the way Miiverse does,
+    # was never traced. If a smoke test turns up a Russian error body, that is where to
+    # look; everything cave.msbt draws is Ukrainian either way.
+    "000400100002C100": {
+        "title": "Nintendo Network ID Settings (act) EUR",
+        "title_version": 3,
+        "code_sha256": "cc5422a94cdd348d08bf7d9818c9ac18ea27234aadddcf5d404390d152185745",
         "kind": "exheader_only",
     },
     # Nintendo eShop, EUR, title version 29. The same case as StreetPass Mii Plaza and the
@@ -3049,6 +3074,18 @@ MANUAL_BLOCK = (
 )
 
 
+def manual_file_name(tid: str) -> str:
+    """The name the viewer asks for on the SD card - and what tools/manual.py must write.
+
+    Four hex digits, not the whole low word. The string lives in a .rodata padding that is
+    also the ceiling on how many manuals a release can carry, and `rex:/2000` costs 10 bytes
+    where `rex:/00022000.bcma` cost 19 - nine bytes per title, in a budget measured in tens.
+    The low 16 bits are unique across every system title the viewer documents, and
+    _manual_path_records() refuses to build a table where they are not.
+    """
+    return f"{int(tid, 16) & 0xFFFF:04x}"
+
+
 def _manual_path_records(patch: dict, code: bytes, records: list) -> list[str]:
     """Give the viewer one manual file per documented title, with a fallback that works.
 
@@ -3096,8 +3133,11 @@ def _manual_path_records(patch: dict, code: bytes, records: list) -> list[str]:
     strings_at = spec["rodata_off"] + 8 * (len(entries) + 1)
     blob, offset = b"", strings_at
     table = b""
+    names = [manual_file_name(tid) for tid in entries]
+    if len(set(names)) != len(names):
+        raise RuntimeError(f"two manuals would share a file name on the SD card: {names}")
     for tid in entries:
-        path = f"rex:/{int(tid, 16) & 0xFFFFFFFF:08x}.bcma".encode() + b"\0"
+        path = f"rex:/{manual_file_name(tid)}".encode() + b"\0"
         table += struct.pack("<II", int(tid, 16) & 0xFFFFFFFF, TEXT_VA + offset)
         blob += path
         offset += len(path)
