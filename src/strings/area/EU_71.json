@@ -1,0 +1,108 @@
+{
+  "_comment": "Sub-regions of country code 71 (Croatia) in the `area` archive. Keys are the records' own indices, `ru` is the original of the language slot this mod overwrites and `ua` its replacement; the index is what the console reports over the network, so no row is moved or renamed into a different place. Other language slots keep Nintendo's own names. See src/strings/area/EU_country.json for the country list and tools/area.py for the sort ranks, which are recomputed from these names.",
+  "6": {
+    "en": "Zagreb",
+    "ru": "Загреб",
+    "ua": "Загреб"
+  },
+  "7": {
+    "en": "Bjelovar-Bilogora County",
+    "ru": "Беловарско-Билогорская жупания",
+    "ua": "Беловарсько-Білогорська жупанія"
+  },
+  "8": {
+    "en": "Brod-Posavina County",
+    "ru": "Бродско-Посавская жупания",
+    "ua": "Бродсько-Посавська жупанія"
+  },
+  "9": {
+    "en": "Dubrovnik-Neretva County",
+    "ru": "Дубровницко-Неретванская жупания",
+    "ua": "Дубровницько-Неретванська жупанія"
+  },
+  "10": {
+    "en": "Istria County",
+    "ru": "Истрийская жупания",
+    "ua": "Істрійська жупанія"
+  },
+  "11": {
+    "en": "Karlovac County",
+    "ru": "Карловацкая жупания",
+    "ua": "Карловацька жупанія"
+  },
+  "12": {
+    "en": "Koprivnica-Križevci County",
+    "ru": "Копривницко-Крижевацкая жупания",
+    "ua": "Копривницько-Крижевацька жупанія"
+  },
+  "13": {
+    "en": "Krapina-Zagorje County",
+    "ru": "Крапинско-Загорская жупания",
+    "ua": "Крапинсько-Загорська жупанія"
+  },
+  "14": {
+    "en": "Lika-Senj County",
+    "ru": "Лицко-Сеньская жупания",
+    "ua": "Лицько-Сенська жупанія"
+  },
+  "15": {
+    "en": "Međimurje County",
+    "ru": "Меджимурская жупания",
+    "ua": "Меджимурська жупанія"
+  },
+  "16": {
+    "en": "Osijek-Baranja County",
+    "ru": "Осиецко-Бараньская жупания",
+    "ua": "Осієцько-Баранська жупанія"
+  },
+  "17": {
+    "en": "Požega-Slavonia County",
+    "ru": "Пожежско-Славонская жупания",
+    "ua": "Пожезько-Славонська жупанія"
+  },
+  "18": {
+    "en": "Primorje-Gorski Kotar County",
+    "ru": "Приморско-Горанская жупания",
+    "ua": "Приморсько-Горанська жупанія"
+  },
+  "19": {
+    "en": "Sisak-Moslavina County",
+    "ru": "Сисацко-Мославинская жупания",
+    "ua": "Сисацько-Мославинська жупанія"
+  },
+  "20": {
+    "en": "Split-Dalmatia County",
+    "ru": "Сплитско-Далматинская жупания",
+    "ua": "Спліцько-Далматинська жупанія"
+  },
+  "21": {
+    "en": "Šibenik-Knin County",
+    "ru": "Шибенско-Книнская жупания",
+    "ua": "Шибеницько-Кнінська жупанія"
+  },
+  "22": {
+    "en": "Varaždin County",
+    "ru": "Вараждинская жупания",
+    "ua": "Вараждинська жупанія"
+  },
+  "23": {
+    "en": "Virovitica-Podravina County",
+    "ru": "Вировитицко-Подравская жупания",
+    "ua": "Віровитицько-Подравська жупанія"
+  },
+  "24": {
+    "en": "Vukovar-Syrmia County",
+    "ru": "Вуковарско-Сремская жупания",
+    "ua": "Вуковарсько-Сремська жупанія"
+  },
+  "25": {
+    "en": "Zadar County",
+    "ru": "Задарская жупания",
+    "ua": "Задарська жупанія"
+  },
+  "26": {
+    "en": "Zagreb County",
+    "ru": "Загребская жупания",
+    "ua": "Загребська жупанія"
+  }
+}

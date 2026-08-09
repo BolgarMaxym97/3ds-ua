@@ -1,0 +1,63 @@
+{
+  "_comment": "Sub-regions of country code 94 (Netherlands) in the `area` archive. Keys are the records' own indices, `ru` is the original of the language slot this mod overwrites and `ua` its replacement; the index is what the console reports over the network, so no row is moved or renamed into a different place. Other language slots keep Nintendo's own names. See src/strings/area/EU_country.json for the country list and tools/area.py for the sort ranks, which are recomputed from these names.",
+  "2": {
+    "en": "North Holland",
+    "ru": "Северная Голландия",
+    "ua": "Північна Голландія"
+  },
+  "3": {
+    "en": "Drenthe",
+    "ru": "Дренте",
+    "ua": "Дренте"
+  },
+  "4": {
+    "en": "Flevoland",
+    "ru": "Флеволанд",
+    "ua": "Флеволанд"
+  },
+  "5": {
+    "en": "Friesland",
+    "ru": "Фрисландия",
+    "ua": "Фрисландія"
+  },
+  "6": {
+    "en": "Gelderland",
+    "ru": "Гелдерланд",
+    "ua": "Гелдерланд"
+  },
+  "7": {
+    "en": "Groningen",
+    "ru": "Гронинген",
+    "ua": "Гронінген"
+  },
+  "8": {
+    "en": "Limburg",
+    "ru": "Лимбург",
+    "ua": "Лімбург"
+  },
+  "9": {
+    "en": "North Brabant",
+    "ru": "Северный Брабант",
+    "ua": "Північний Брабант"
+  },
+  "10": {
+    "en": "Overijssel",
+    "ru": "Оверэйсел",
+    "ua": "Оверейсел"
+  },
+  "11": {
+    "en": "South Holland",
+    "ru": "Южная Голландия",
+    "ua": "Південна Голландія"
+  },
+  "12": {
+    "en": "Utrecht",
+    "ru": "Утрехт",
+    "ua": "Утрехт"
+  },
+  "13": {
+    "en": "Zeeland",
+    "ru": "Зеландия",
+    "ua": "Зеландія"
+  }
+}

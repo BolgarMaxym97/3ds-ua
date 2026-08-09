@@ -1,0 +1,38 @@
+{
+  "_comment": "Sub-regions of country code 74 (Denmark (Kingdom of)) in the `area` archive. Keys are the records' own indices, `ru` is the original of the language slot this mod overwrites and `ua` its replacement; the index is what the console reports over the network, so no row is moved or renamed into a different place. Other language slots keep Nintendo's own names. See src/strings/area/EU_country.json for the country list and tools/area.py for the sort ranks, which are recomputed from these names.",
+  "18": {
+    "en": "Greenland",
+    "ru": "Гренландия",
+    "ua": "Гренландія"
+  },
+  "19": {
+    "en": "Capital Region of Denmark",
+    "ru": "Столичная область",
+    "ua": "Столична область"
+  },
+  "20": {
+    "en": "Central Denmark Region",
+    "ru": "Центральная Ютландия",
+    "ua": "Центральна Ютландія"
+  },
+  "21": {
+    "en": "North Denmark Region",
+    "ru": "Северная Ютландия",
+    "ua": "Північна Ютландія"
+  },
+  "22": {
+    "en": "Region Zealand",
+    "ru": "Зеландия",
+    "ua": "Зеландія"
+  },
+  "23": {
+    "en": "Region of Southern Denmark",
+    "ru": "Южная Дания",
+    "ua": "Південна Данія"
+  },
+  "24": {
+    "en": "Faroe Islands",
+    "ru": "Фарерские острова",
+    "ua": "Фарерські острови"
+  }
+}

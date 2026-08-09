@@ -1,0 +1,213 @@
+{
+  "_comment": "Sub-regions of country code 99 (Romania) in the `area` archive. Keys are the records' own indices, `ru` is the original of the language slot this mod overwrites and `ua` its replacement; the index is what the console reports over the network, so no row is moved or renamed into a different place. Other language slots keep Nintendo's own names. See src/strings/area/EU_country.json for the country list and tools/area.py for the sort ranks, which are recomputed from these names.",
+  "2": {
+    "en": "Bucharest",
+    "ru": "Бухарест",
+    "ua": "Бухарест"
+  },
+  "3": {
+    "en": "Alba",
+    "ru": "Алба",
+    "ua": "Алба"
+  },
+  "4": {
+    "en": "Arad",
+    "ru": "Арад",
+    "ua": "Арад"
+  },
+  "5": {
+    "en": "Arges",
+    "ru": "Арджеш",
+    "ua": "Арджеш"
+  },
+  "6": {
+    "en": "Bacau",
+    "ru": "Бакэу",
+    "ua": "Бакеу"
+  },
+  "7": {
+    "en": "Bihor",
+    "ru": "Бихор",
+    "ua": "Біхор"
+  },
+  "8": {
+    "en": "Bistrita-Nasaud",
+    "ru": "Бистрица-Нэсэуд",
+    "ua": "Бистриця-Несеуд"
+  },
+  "9": {
+    "en": "Botosani",
+    "ru": "Ботошани",
+    "ua": "Ботошані"
+  },
+  "10": {
+    "en": "Braila",
+    "ru": "Брэила",
+    "ua": "Бреїла"
+  },
+  "11": {
+    "en": "Brasov",
+    "ru": "Брашов",
+    "ua": "Брашов"
+  },
+  "12": {
+    "en": "Buzau",
+    "ru": "Бузэу",
+    "ua": "Бузеу"
+  },
+  "13": {
+    "en": "Calarasi",
+    "ru": "Кэлэраши",
+    "ua": "Келераші"
+  },
+  "14": {
+    "en": "Caras-Severin",
+    "ru": "Караш-Северин",
+    "ua": "Караш-Северін"
+  },
+  "15": {
+    "en": "Cluj",
+    "ru": "Клуж",
+    "ua": "Клуж"
+  },
+  "16": {
+    "en": "Constanta",
+    "ru": "Констанца",
+    "ua": "Констанца"
+  },
+  "17": {
+    "en": "Covasna",
+    "ru": "Ковасна",
+    "ua": "Ковасна"
+  },
+  "18": {
+    "en": "Dâmbovita",
+    "ru": "Дымбовица",
+    "ua": "Димбовіца"
+  },
+  "19": {
+    "en": "Dolj",
+    "ru": "Долж",
+    "ua": "Долж"
+  },
+  "20": {
+    "en": "Galati",
+    "ru": "Галац",
+    "ua": "Галац"
+  },
+  "21": {
+    "en": "Giurgiu",
+    "ru": "Джурджу",
+    "ua": "Джурджу"
+  },
+  "22": {
+    "en": "Gorj",
+    "ru": "Горж",
+    "ua": "Горж"
+  },
+  "23": {
+    "en": "Harghita",
+    "ru": "Харгита",
+    "ua": "Харгіта"
+  },
+  "24": {
+    "en": "Hunedoara",
+    "ru": "Хунедоара",
+    "ua": "Хунедоара"
+  },
+  "25": {
+    "en": "Ialomita",
+    "ru": "Яломица",
+    "ua": "Яломіца"
+  },
+  "26": {
+    "en": "Iasi",
+    "ru": "Яссы",
+    "ua": "Ясси"
+  },
+  "27": {
+    "en": "Ilfov",
+    "ru": "Илфов",
+    "ua": "Ілфов"
+  },
+  "28": {
+    "en": "Maramures",
+    "ru": "Марамуреш",
+    "ua": "Марамуреш"
+  },
+  "29": {
+    "en": "Mehedinti",
+    "ru": "Мехединци",
+    "ua": "Мехедінць"
+  },
+  "30": {
+    "en": "Mures",
+    "ru": "Муреш",
+    "ua": "Муреш"
+  },
+  "31": {
+    "en": "Neamt",
+    "ru": "Нямц",
+    "ua": "Нямц"
+  },
+  "32": {
+    "en": "Olt",
+    "ru": "Олт",
+    "ua": "Олт"
+  },
+  "33": {
+    "en": "Prahova",
+    "ru": "Прахова",
+    "ua": "Прахова"
+  },
+  "34": {
+    "en": "Salaj",
+    "ru": "Сэлаж",
+    "ua": "Селаж"
+  },
+  "35": {
+    "en": "Satu Mare",
+    "ru": "Сату-Маре",
+    "ua": "Сату-Маре"
+  },
+  "36": {
+    "en": "Sibiu",
+    "ru": "Сибиу",
+    "ua": "Сібіу"
+  },
+  "37": {
+    "en": "Suceava",
+    "ru": "Сучава",
+    "ua": "Сучава"
+  },
+  "38": {
+    "en": "Teleorman",
+    "ru": "Телеорман",
+    "ua": "Телеорман"
+  },
+  "39": {
+    "en": "Timis",
+    "ru": "Тимиш",
+    "ua": "Тіміш"
+  },
+  "40": {
+    "en": "Tulcea",
+    "ru": "Тулча",
+    "ua": "Тулча"
+  },
+  "41": {
+    "en": "Vâlcea",
+    "ru": "Вылча",
+    "ua": "Вилча"
+  },
+  "42": {
+    "en": "Vaslui",
+    "ru": "Васлуй",
+    "ua": "Васлуй"
+  },
+  "43": {
+    "en": "Vrancea",
+    "ru": "Вранча",
+    "ua": "Вранча"
+  }
+}

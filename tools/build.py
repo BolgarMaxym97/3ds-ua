@@ -154,9 +154,18 @@ TITLES = {
         "container": "message_EU_LZ.bin",
         # Labels sharing one on-screen slot: the language picker rows and the
         # rating-name rows are as wide as their longest sibling, not their own original.
+        # The screen titles all land in TextBoxTitle_00 of blyt/TopText_U_00.bclyt, one
+        # 368x34 pane, so "Initial Settings" gets the same room as "Save Data Backup
+        # Management" - the widest title Nintendo put there. `3d_title_u` is left out:
+        # 3DTest_U_01 has a 290px pane of its own.
+        # The Initial Settings buttons are likewise one stacked pair repeated screen by
+        # screen ("Set"/"Set Later", "Set"/"Do Not Set", "Transfer"/"Don't Transfer"),
+        # so the button is as wide as "Не устанавливать" whichever verb it holds.
         "budget_groups": [
             r"(?:eu|us|tw)_\w+",
             r"par_(?:cob|oflc)_\d+",
+            r"(?:dat|parental|st_net|st_trans|start)\w*_title_u",
+            r"st_btn_\w+",
         ],
         "hud_font": "font/Hud_JP.bcfnt",
         # `hook_patch` here ships only a code.ips, and not to make LayeredFS work - Luma
@@ -966,14 +975,15 @@ def build_area(cfg: dict, tid: str, table: dict[str, str]) -> list[str]:
 
     The whole dumped archive ships, all six console regions of it: the code patch makes the
     `area:` mount unconditional, so a console that reports a region other than EU has to
-    find its files here too. Only the two EU files differ from the dump.
+    find its files here too. Only the EU files differ from the dump: the country list plus
+    one sub-region file per country, each with a JSON of its own in src/strings/area/.
 
     Nintendo's country table has no Ukraine in any region and no code can be added to it,
     so nothing here is renamed into Ukraine: a country code and a region index are what the
     console reports to NNID, the eShop and every console it meets, and a row reading one
     place while reporting another mislabels its regions for everyone else. Code 100 keeps
-    Russia and its 83 regions; only the name slot this build replaces is rewritten, in both
-    files, and the sort ranks of that slot with it - see tools/area.py.
+    Russia and its 83 regions; only the name slot this build replaces is rewritten, in every
+    file, and the sort ranks of that slot with it - see tools/area.py.
     """
     source = ROOT / "work" / cfg["area"] / "romfs"
     if not source.is_dir():
@@ -984,7 +994,6 @@ def build_area(cfg: dict, tid: str, table: dict[str, str]) -> list[str]:
 
     strings = ROOT / "src" / "strings" / "area"
     countries = json.loads((strings / "EU_country.json").read_text(encoding="utf-8"))
-    regions = json.loads((strings / "EU_100.json").read_text(encoding="utf-8"))
     render = lambda text: apply_homoglyphs(text, table)  # noqa: E731
 
     slot = variant.current().smdh_index
@@ -997,21 +1006,22 @@ def build_area(cfg: dict, tid: str, table: dict[str, str]) -> list[str]:
     )
     area_mod.resort(country, slot=slot)
 
+    replaced = {"EU/country_LZ.bin": country}
+    named = 0
     # JSON keys are the records' own indices, so the names land where the console looks.
-    russia = area_mod.load(source / "EU" / f"{RUSSIA_CODE}_LZ.bin")
-    area_mod.set_names(
-        russia,
-        {int(index): entry["ua"] for index, entry in regions.items() if index.isdigit()},
-        slot=slot,
-        render=render,
-    )
-    area_mod.resort(russia, slot=slot)
+    for json_file in sorted(strings.glob("EU_*.json")):
+        code = json_file.stem.split("_", 1)[1]
+        if not code.isdigit():
+            continue
+        regions = json.loads(json_file.read_text(encoding="utf-8"))
+        names = {int(index): entry["ua"] for index, entry in regions.items() if index.isdigit()}
+        region_file = area_mod.load(source / "EU" / f"{code}_LZ.bin")
+        area_mod.set_names(region_file, names, slot=slot, render=render)
+        area_mod.resort(region_file, slot=slot)
+        replaced[f"EU/{code}_LZ.bin"] = region_file
+        named += len(names)
 
     dest = variant.dist() / "luma" / "titles" / tid / "area"
-    replaced = {
-        "EU/country_LZ.bin": country,
-        f"EU/{RUSSIA_CODE}_LZ.bin": russia,
-    }
     written = 0
     for path in sorted(source.rglob("*_LZ.bin")):
         rel = path.relative_to(source).as_posix()
@@ -1024,8 +1034,8 @@ def build_area(cfg: dict, tid: str, table: dict[str, str]) -> list[str]:
         written += 1
 
     return [
-        f"  area: {len(countries) - 1} EU countries translated, code {RUSSIA_CODE} is "
-        f"{countries[str(RUSSIA_CODE)]['ua']} with its own {len(regions) - 1} regions",
+        f"  area: {len(countries) - 1} EU countries and {named} sub-regions translated, "
+        f"code {RUSSIA_CODE} is {countries[str(RUSSIA_CODE)]['ua']}",
         f"{dest.relative_to(ROOT)}/ ({written} files)",
     ]
 

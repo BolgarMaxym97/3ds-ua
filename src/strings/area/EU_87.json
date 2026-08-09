@@ -1,0 +1,53 @@
+{
+  "_comment": "Sub-regions of country code 87 (Lithuania) in the `area` archive. Keys are the records' own indices, `ru` is the original of the language slot this mod overwrites and `ua` its replacement; the index is what the console reports over the network, so no row is moved or renamed into a different place. Other language slots keep Nintendo's own names. See src/strings/area/EU_country.json for the country list and tools/area.py for the sort ranks, which are recomputed from these names.",
+  "2": {
+    "en": "Vilnius",
+    "ru": "Вильнюс",
+    "ua": "Вільнюс"
+  },
+  "3": {
+    "en": "Alytus",
+    "ru": "Алитус",
+    "ua": "Алітус"
+  },
+  "4": {
+    "en": "Kaunas",
+    "ru": "Каунас",
+    "ua": "Каунас"
+  },
+  "5": {
+    "en": "Klaipėda",
+    "ru": "Клайпеда",
+    "ua": "Клайпеда"
+  },
+  "6": {
+    "en": "Marijampolė",
+    "ru": "Мариямполе",
+    "ua": "Маріямполе"
+  },
+  "7": {
+    "en": "Panevėžys",
+    "ru": "Паневежис",
+    "ua": "Паневежис"
+  },
+  "8": {
+    "en": "Šiauliai",
+    "ru": "Шяуляй",
+    "ua": "Шяуляй"
+  },
+  "9": {
+    "en": "Taurage",
+    "ru": "Таураге",
+    "ua": "Таураге"
+  },
+  "10": {
+    "en": "Telšiai",
+    "ru": "Тельшяй",
+    "ua": "Тельшяй"
+  },
+  "11": {
+    "en": "Utena",
+    "ru": "Утена",
+    "ua": "Утена"
+  }
+}

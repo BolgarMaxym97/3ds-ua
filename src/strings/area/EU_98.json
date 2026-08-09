@@ -1,0 +1,103 @@
+{
+  "_comment": "Sub-regions of country code 98 (Portugal) in the `area` archive. Keys are the records' own indices, `ru` is the original of the language slot this mod overwrites and `ua` its replacement; the index is what the console reports over the network, so no row is moved or renamed into a different place. Other language slots keep Nintendo's own names. See src/strings/area/EU_country.json for the country list and tools/area.py for the sort ranks, which are recomputed from these names.",
+  "2": {
+    "en": "Lisbon",
+    "ru": "Лиссабон",
+    "ua": "Лісабон"
+  },
+  "7": {
+    "en": "Madeira",
+    "ru": "Мадейра",
+    "ua": "Мадейра"
+  },
+  "8": {
+    "en": "Azores",
+    "ru": "Азорские острова",
+    "ua": "Азорські острови"
+  },
+  "9": {
+    "en": "Aveiro",
+    "ru": "Авейру",
+    "ua": "Авейру"
+  },
+  "10": {
+    "en": "Beja",
+    "ru": "Бежа",
+    "ua": "Бежа"
+  },
+  "11": {
+    "en": "Braga",
+    "ru": "Брага",
+    "ua": "Брага"
+  },
+  "12": {
+    "en": "Bragança",
+    "ru": "Браганса",
+    "ua": "Браганса"
+  },
+  "13": {
+    "en": "Castelo Branco",
+    "ru": "Каштелу-Бранку",
+    "ua": "Каштелу-Бранку"
+  },
+  "14": {
+    "en": "Coimbra",
+    "ru": "Коимбра",
+    "ua": "Коїмбра"
+  },
+  "15": {
+    "en": "Évora",
+    "ru": "Эвора",
+    "ua": "Евора"
+  },
+  "16": {
+    "en": "Faro",
+    "ru": "Фару",
+    "ua": "Фару"
+  },
+  "17": {
+    "en": "Guarda",
+    "ru": "Гуарда",
+    "ua": "Гуарда"
+  },
+  "18": {
+    "en": "Leiria",
+    "ru": "Лейрия",
+    "ua": "Лейрія"
+  },
+  "19": {
+    "en": "Portalegre",
+    "ru": "Порталегре",
+    "ua": "Порталегре"
+  },
+  "20": {
+    "en": "Porto",
+    "ru": "Порту",
+    "ua": "Порту"
+  },
+  "21": {
+    "en": "Santarém",
+    "ru": "Сантарен",
+    "ua": "Сантарен"
+  },
+  "22": {
+    "en": "Setúbal",
+    "ru": "Сетубал",
+    "ua": "Сетубал"
+  },
+  "23": {
+    "en": "Viana do Castelo",
+    "ru": "Виана-ду-Каштелу",
+    "ua": "Віана-ду-Каштелу"
+  },
+  "24": {
+    "en": "Vila Real",
+    "ru": "Вила-Реал",
+    "ua": "Віла-Реал"
+  },
+  "25": {
+    "en": "Viseu",
+    "ru": "Визеу",
+    "ua": "Візеу"
+  }
+}

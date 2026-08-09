@@ -1,0 +1,73 @@
+{
+  "_comment": "Sub-regions of country code 73 (Czech Republic) in the `area` archive. Keys are the records' own indices, `ru` is the original of the language slot this mod overwrites and `ua` its replacement; the index is what the console reports over the network, so no row is moved or renamed into a different place. Other language slots keep Nintendo's own names. See src/strings/area/EU_country.json for the country list and tools/area.py for the sort ranks, which are recomputed from these names.",
+  "2": {
+    "en": "Prague",
+    "ru": "Прага",
+    "ua": "Прага"
+  },
+  "3": {
+    "en": "Central Bohemian Region",
+    "ru": "Среднечешский край",
+    "ua": "Середньочеський край"
+  },
+  "4": {
+    "en": "South Bohemian Region",
+    "ru": "Южночешский край",
+    "ua": "Південночеський край"
+  },
+  "5": {
+    "en": "Plzeň Region",
+    "ru": "Пльзенский край",
+    "ua": "Пльзенський край"
+  },
+  "6": {
+    "en": "Karlovy Vary Region",
+    "ru": "Карловарский край",
+    "ua": "Карловарський край"
+  },
+  "7": {
+    "en": "Ústí nad Labem Region",
+    "ru": "Устецкий край",
+    "ua": "Устецький край"
+  },
+  "8": {
+    "en": "Liberec Region",
+    "ru": "Либерецкий край",
+    "ua": "Ліберецький край"
+  },
+  "9": {
+    "en": "Hradec Králové Region",
+    "ru": "Краловеградецкий край",
+    "ua": "Краловоградецький край"
+  },
+  "10": {
+    "en": "Pardubice Region",
+    "ru": "Пардубицкий край",
+    "ua": "Пардубицький край"
+  },
+  "11": {
+    "en": "Olomouc Region",
+    "ru": "Оломоуцкий край",
+    "ua": "Оломоуцький край"
+  },
+  "12": {
+    "en": "Moravian-Silesian Region",
+    "ru": "Моравскосилезский край",
+    "ua": "Моравськосілезький край"
+  },
+  "13": {
+    "en": "South Moravian Region",
+    "ru": "Южноморавский край",
+    "ua": "Південноморавський край"
+  },
+  "14": {
+    "en": "Zlín Region",
+    "ru": "Злинский край",
+    "ua": "Злінський край"
+  },
+  "15": {
+    "en": "Vysočina Region",
+    "ru": "Край Высочина",
+    "ua": "Край Височина"
+  }
+}

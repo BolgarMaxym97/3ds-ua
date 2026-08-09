@@ -1,0 +1,8 @@
+{
+  "_comment": "Sub-regions of country code 93 (Namibia) in the `area` archive. Keys are the records' own indices, `ru` is the original of the language slot this mod overwrites and `ua` its replacement; the index is what the console reports over the network, so no row is moved or renamed into a different place. Other language slots keep Nintendo's own names. See src/strings/area/EU_country.json for the country list and tools/area.py for the sort ranks, which are recomputed from these names.",
+  "1": {
+    "en": "Namibia",
+    "ru": "Намибия",
+    "ua": "Намібія"
+  }
+}

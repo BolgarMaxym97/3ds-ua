@@ -1,0 +1,83 @@
+{
+  "_comment": "Sub-regions of country code 97 (Poland) in the `area` archive. Keys are the records' own indices, `ru` is the original of the language slot this mod overwrites and `ua` its replacement; the index is what the console reports over the network, so no row is moved or renamed into a different place. Other language slots keep Nintendo's own names. See src/strings/area/EU_country.json for the country list and tools/area.py for the sort ranks, which are recomputed from these names.",
+  "2": {
+    "en": "Masovia",
+    "ru": "Мазовецкое воеводство",
+    "ua": "Мазовецьке воєводство"
+  },
+  "3": {
+    "en": "Lower Silesia",
+    "ru": "Нижнесилезское воеводство",
+    "ua": "Нижньосілезьке воєводство"
+  },
+  "4": {
+    "en": "Kuyavian-Pomeranian Voivodeship",
+    "ru": "Куявско-Поморское воеводство",
+    "ua": "Куявсько-Поморське воєводство"
+  },
+  "5": {
+    "en": "Lodz",
+    "ru": "Лодзинское воеводство",
+    "ua": "Лодзинське воєводство"
+  },
+  "6": {
+    "en": "Lublin",
+    "ru": "Люблинское воеводство",
+    "ua": "Люблінське воєводство"
+  },
+  "7": {
+    "en": "Lubusz",
+    "ru": "Любушское воеводство",
+    "ua": "Любуське воєводство"
+  },
+  "8": {
+    "en": "Lesser Poland",
+    "ru": "Малопольское воеводство",
+    "ua": "Малопольське воєводство"
+  },
+  "9": {
+    "en": "Opole",
+    "ru": "Опольское воеводство",
+    "ua": "Опольське воєводство"
+  },
+  "10": {
+    "en": "Subcarpathia",
+    "ru": "Подкарпатское воеводство",
+    "ua": "Підкарпатське воєводство"
+  },
+  "11": {
+    "en": "Podlachia",
+    "ru": "Подляское воеводство",
+    "ua": "Підляське воєводство"
+  },
+  "12": {
+    "en": "Pomerania",
+    "ru": "Поморское воеводство",
+    "ua": "Поморське воєводство"
+  },
+  "13": {
+    "en": "Silesia",
+    "ru": "Силезское воеводство",
+    "ua": "Сілезьке воєводство"
+  },
+  "14": {
+    "en": "Świętokrzyskie",
+    "ru": "Свентокшиское воеводство",
+    "ua": "Свентокшиське воєводство"
+  },
+  "15": {
+    "en": "Warmian-Masurian Voivodeship",
+    "ru": "Варминско-Мазурское воеводство",
+    "ua": "Вармінсько-Мазурське воєводство"
+  },
+  "16": {
+    "en": "Greater Poland",
+    "ru": "Великопольское воеводство",
+    "ua": "Великопольське воєводство"
+  },
+  "17": {
+    "en": "Western Pomerania",
+    "ru": "Западно-Поморское воеводство",
+    "ua": "Західнопоморське воєводство"
+  }
+}

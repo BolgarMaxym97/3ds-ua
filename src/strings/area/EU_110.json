@@ -1,0 +1,68 @@
+{
+  "_comment": "Sub-regions of country code 110 (United Kingdom) in the `area` archive. Keys are the records' own indices, `ru` is the original of the language slot this mod overwrites and `ua` its replacement; the index is what the console reports over the network, so no row is moved or renamed into a different place. Other language slots keep Nintendo's own names. See src/strings/area/EU_country.json for the country list and tools/area.py for the sort ranks, which are recomputed from these names.",
+  "2": {
+    "en": "England",
+    "ru": "Англия",
+    "ua": "Англія"
+  },
+  "4": {
+    "en": "Scotland",
+    "ru": "Шотландия",
+    "ua": "Шотландія"
+  },
+  "5": {
+    "en": "Wales",
+    "ru": "Уэльс",
+    "ua": "Уельс"
+  },
+  "6": {
+    "en": "Northern Ireland",
+    "ru": "Северная Ирландия",
+    "ua": "Північна Ірландія"
+  },
+  "7": {
+    "en": "London",
+    "ru": "Лондон",
+    "ua": "Лондон"
+  },
+  "8": {
+    "en": "South West",
+    "ru": "Юго-Западный регион",
+    "ua": "Південно-Західний регіон"
+  },
+  "9": {
+    "en": "West Midlands",
+    "ru": "Западный Мидленд",
+    "ua": "Західний Мідленд"
+  },
+  "10": {
+    "en": "North West",
+    "ru": "Северо-Западный регион",
+    "ua": "Північно-Західний регіон"
+  },
+  "11": {
+    "en": "North East",
+    "ru": "Северо-Восточный регион",
+    "ua": "Північно-Східний регіон"
+  },
+  "12": {
+    "en": "Yorkshire and the Humber",
+    "ru": "Йоркшир и Хамбер",
+    "ua": "Йоркшир і Гамбер"
+  },
+  "13": {
+    "en": "East Midlands",
+    "ru": "Восточный Мидленд",
+    "ua": "Східний Мідленд"
+  },
+  "14": {
+    "en": "East of England",
+    "ru": "Восточный регион",
+    "ua": "Східний регіон"
+  },
+  "15": {
+    "en": "South East",
+    "ru": "Юго-Восточный регион",
+    "ua": "Південно-Східний регіон"
+  }
+}

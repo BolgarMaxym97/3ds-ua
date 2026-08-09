@@ -1,0 +1,108 @@
+{
+  "_comment": "Sub-regions of country code 107 (Sweden) in the `area` archive. Keys are the records' own indices, `ru` is the original of the language slot this mod overwrites and `ua` its replacement; the index is what the console reports over the network, so no row is moved or renamed into a different place. Other language slots keep Nintendo's own names. See src/strings/area/EU_country.json for the country list and tools/area.py for the sort ranks, which are recomputed from these names.",
+  "2": {
+    "en": "Stockholm County",
+    "ru": "Лен Стокгольм",
+    "ua": "Лен Стокгольм"
+  },
+  "3": {
+    "en": "Skåne County",
+    "ru": "Лен Сконе",
+    "ua": "Лен Сконе"
+  },
+  "4": {
+    "en": "Västra Götaland County",
+    "ru": "Лен Вестра-Гёталанд",
+    "ua": "Лен Вестра-Йоталанд"
+  },
+  "5": {
+    "en": "Östergötland County",
+    "ru": "Лен Эстергётланд",
+    "ua": "Лен Естерйотланд"
+  },
+  "6": {
+    "en": "Södermanland County",
+    "ru": "Лен Сёдерманланд",
+    "ua": "Лен Седерманланд"
+  },
+  "7": {
+    "en": "Värmland County",
+    "ru": "Лен Вермланд",
+    "ua": "Лен Вермланд"
+  },
+  "8": {
+    "en": "Uppsala County",
+    "ru": "Лен Уппсала",
+    "ua": "Лен Уппсала"
+  },
+  "9": {
+    "en": "Gävleborg County",
+    "ru": "Лен Евлеборг",
+    "ua": "Лен Євлеборг"
+  },
+  "10": {
+    "en": "Västerbotten County",
+    "ru": "Лен Вестерботтен",
+    "ua": "Лен Вестерботтен"
+  },
+  "11": {
+    "en": "Norrbotten County",
+    "ru": "Лен Норрботтен",
+    "ua": "Лен Норрботтен"
+  },
+  "12": {
+    "en": "Gotland Island",
+    "ru": "Готланд",
+    "ua": "Готланд"
+  },
+  "13": {
+    "en": "Jämtland County",
+    "ru": "Лен Емтланд",
+    "ua": "Лен Ємтланд"
+  },
+  "14": {
+    "en": "Dalarna County",
+    "ru": "Лен Даларна",
+    "ua": "Лен Даларна"
+  },
+  "15": {
+    "en": "Blekinge County",
+    "ru": "Лен Блекинге",
+    "ua": "Лен Блекінге"
+  },
+  "16": {
+    "en": "Örebro County",
+    "ru": "Лен Эребру",
+    "ua": "Лен Еребру"
+  },
+  "17": {
+    "en": "Västernorrland County",
+    "ru": "Лен Вестерноррланд",
+    "ua": "Лен Вестерноррланд"
+  },
+  "18": {
+    "en": "Jönköping County",
+    "ru": "Лен Йёнчёпинг",
+    "ua": "Лен Йончопінг"
+  },
+  "19": {
+    "en": "Kronoberg County",
+    "ru": "Лен Крунуберг",
+    "ua": "Лен Крунуберг"
+  },
+  "20": {
+    "en": "Kalmar County",
+    "ru": "Лен Кальмар",
+    "ua": "Лен Кальмар"
+  },
+  "21": {
+    "en": "Västmanland County",
+    "ru": "Лен Вестманланд",
+    "ua": "Лен Вестманланд"
+  },
+  "22": {
+    "en": "Halland County",
+    "ru": "Лен Халланд",
+    "ua": "Лен Халланд"
+  }
+}

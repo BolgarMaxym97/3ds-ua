@@ -1,0 +1,133 @@
+{
+  "_comment": "Sub-regions of country code 108 (Switzerland) in the `area` archive. Keys are the records' own indices, `ru` is the original of the language slot this mod overwrites and `ua` its replacement; the index is what the console reports over the network, so no row is moved or renamed into a different place. Other language slots keep Nintendo's own names. See src/strings/area/EU_country.json for the country list and tools/area.py for the sort ranks, which are recomputed from these names.",
+  "2": {
+    "en": "Bern",
+    "ru": "Берн",
+    "ua": "Берн"
+  },
+  "4": {
+    "en": "Aargau",
+    "ru": "Ааргау",
+    "ua": "Аргау"
+  },
+  "5": {
+    "en": "Basel-City",
+    "ru": "Базель",
+    "ua": "Базель"
+  },
+  "6": {
+    "en": "Fribourg",
+    "ru": "Фрибур",
+    "ua": "Фрібур"
+  },
+  "7": {
+    "en": "Geneva",
+    "ru": "Женева",
+    "ua": "Женева"
+  },
+  "8": {
+    "en": "Glarus",
+    "ru": "Гларус",
+    "ua": "Гларус"
+  },
+  "9": {
+    "en": "Graubünden",
+    "ru": "Граубюнден",
+    "ua": "Граубюнден"
+  },
+  "10": {
+    "en": "Jura",
+    "ru": "Юра",
+    "ua": "Юра"
+  },
+  "11": {
+    "en": "Luzern",
+    "ru": "Люцерн",
+    "ua": "Люцерн"
+  },
+  "12": {
+    "en": "Neuchâtel",
+    "ru": "Нёвшатель",
+    "ua": "Невшатель"
+  },
+  "13": {
+    "en": "Obwalden",
+    "ru": "Обвальден",
+    "ua": "Обвальден"
+  },
+  "14": {
+    "en": "St. Gallen",
+    "ru": "Санкт-Галлен",
+    "ua": "Санкт-Галлен"
+  },
+  "15": {
+    "en": "Schaffhausen",
+    "ru": "Шаффхаузен",
+    "ua": "Шаффгаузен"
+  },
+  "16": {
+    "en": "Schwyz",
+    "ru": "Швиц",
+    "ua": "Швіц"
+  },
+  "17": {
+    "en": "Solothurn",
+    "ru": "Золотурн",
+    "ua": "Золотурн"
+  },
+  "18": {
+    "en": "Thurgau",
+    "ru": "Тургау",
+    "ua": "Тургау"
+  },
+  "19": {
+    "en": "Ticino",
+    "ru": "Тичино",
+    "ua": "Тічино"
+  },
+  "20": {
+    "en": "Uri",
+    "ru": "Ури",
+    "ua": "Урі"
+  },
+  "21": {
+    "en": "Valais",
+    "ru": "Вале",
+    "ua": "Вале"
+  },
+  "22": {
+    "en": "Vaud",
+    "ru": "Во",
+    "ua": "Во"
+  },
+  "23": {
+    "en": "Zug",
+    "ru": "Цуг",
+    "ua": "Цуг"
+  },
+  "24": {
+    "en": "Zurich",
+    "ru": "Цюрих",
+    "ua": "Цюрих"
+  },
+  "25": {
+    "en": "Appenzell Outer Rhodes",
+    "ru": "Аппенцелль-Ауссерроден",
+    "ua": "Аппенцелль-Ауссерроден"
+  },
+  "26": {
+    "en": "Appenzell Inner Rhodes",
+    "ru": "Аппенцелль-Иннерроден",
+    "ua": "Аппенцелль-Іннерроден"
+  },
+  "27": {
+    "en": "Basel-Landschaft",
+    "ru": "Базель-Ланд",
+    "ua": "Базель-Ланд"
+  },
+  "28": {
+    "en": "Nidwalden",
+    "ru": "Нидвальден",
+    "ua": "Нідвальден"
+  }
+}

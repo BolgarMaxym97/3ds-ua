@@ -4873,7 +4873,7 @@
   },
   "start_title_u": {
     "en": "Initial Settings",
-    "ua": "Початкові налашт."
+    "ua": "Початкові налаштування"
   },
   "st_start_comm_u": {
     "en": "You'll need to set up the system\nbefore playing any games.",
@@ -4957,7 +4957,7 @@
   },
   "st_par_comm_2": {
     "en": "If children will be using this\nsystem, a parent or legal\nguardian should set up these\nrestrictions as required.",
-    "ua": "Якщо системою\nкористуватимуться діти, батько\nчи опікун має задати потрібні\nобмеження."
+    "ua": "Якщо системою\nкористуватимуться діти, батько\nчи опікун має налаштувати\nпотрібні обмеження."
   },
   "st_par_coppacs": {
     "en": "",
@@ -5053,7 +5053,7 @@
   },
   "st_btn_set": {
     "en": "Set",
-    "ua": "Задати"
+    "ua": "Налаштувати"
   },
   "st_btn_noset": {
     "en": "Set Later",
@@ -5061,7 +5061,7 @@
   },
   "st_btn_noset_1": {
     "en": "Do Not Set",
-    "ua": "Не задавати"
+    "ua": "Не налаштовувати"
   },
   "st_dlg_mail": {
     "en": "",

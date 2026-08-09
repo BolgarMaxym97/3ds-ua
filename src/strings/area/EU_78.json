@@ -1,0 +1,83 @@
+{
+  "_comment": "Sub-regions of country code 78 (Germany) in the `area` archive. Keys are the records' own indices, `ru` is the original of the language slot this mod overwrites and `ua` its replacement; the index is what the console reports over the network, so no row is moved or renamed into a different place. Other language slots keep Nintendo's own names. See src/strings/area/EU_country.json for the country list and tools/area.py for the sort ranks, which are recomputed from these names.",
+  "2": {
+    "en": "Berlin",
+    "ru": "Берлин",
+    "ua": "Берлін"
+  },
+  "3": {
+    "en": "Hesse",
+    "ru": "Гессен",
+    "ua": "Гессен"
+  },
+  "4": {
+    "en": "Baden-Württemberg",
+    "ru": "Баден-Вюртемберг",
+    "ua": "Баден-Вюртемберг"
+  },
+  "5": {
+    "en": "Bavaria",
+    "ru": "Бавария",
+    "ua": "Баварія"
+  },
+  "6": {
+    "en": "Brandenburg",
+    "ru": "Бранденбург",
+    "ua": "Бранденбург"
+  },
+  "7": {
+    "en": "Bremen",
+    "ru": "Бремен",
+    "ua": "Бремен"
+  },
+  "8": {
+    "en": "Hamburg",
+    "ru": "Гамбург",
+    "ua": "Гамбург"
+  },
+  "9": {
+    "en": "Mecklenburg-Vorpommern",
+    "ru": "Мекленбург-Передняя Померания",
+    "ua": "Мекленбург-Передня Померанія"
+  },
+  "10": {
+    "en": "Lower Saxony",
+    "ru": "Нижняя Саксония",
+    "ua": "Нижня Саксонія"
+  },
+  "11": {
+    "en": "North Rhine-Westphalia",
+    "ru": "Северный Рейн-Вестфалия",
+    "ua": "Північний Рейн-Вестфалія"
+  },
+  "12": {
+    "en": "Rhineland-Palatinate",
+    "ru": "Рейнланд-Пфальц",
+    "ua": "Рейнланд-Пфальц"
+  },
+  "13": {
+    "en": "Saarland",
+    "ru": "Саар",
+    "ua": "Саар"
+  },
+  "14": {
+    "en": "Saxony",
+    "ru": "Саксония",
+    "ua": "Саксонія"
+  },
+  "15": {
+    "en": "Saxony-Anhalt",
+    "ru": "Саксония-Анхальт",
+    "ua": "Саксонія-Ангальт"
+  },
+  "16": {
+    "en": "Schleswig-Holstein",
+    "ru": "Шлезвиг-Гольштейн",
+    "ua": "Шлезвіг-Гольштейн"
+  },
+  "17": {
+    "en": "Thuringia",
+    "ru": "Тюрингия",
+    "ua": "Тюрингія"
+  }
+}

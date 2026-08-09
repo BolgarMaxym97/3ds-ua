@@ -13,11 +13,11 @@
   },
   "lau_connect3": {
     "en": "Enabled",
-    "ua": "Увімк."
+    "ua": "Увімкнено"
   },
   "lau_connect4": {
     "en": "Disabled",
-    "ua": "Вимк."
+    "ua": "Вимкнено"
   },
   "lau_date": {
     "en": "%d/%M (%w)",

@@ -1,0 +1,83 @@
+{
+  "_comment": "Sub-regions of country code 95 (New Zealand) in the `area` archive. Keys are the records' own indices, `ru` is the original of the language slot this mod overwrites and `ua` its replacement; the index is what the console reports over the network, so no row is moved or renamed into a different place. Other language slots keep Nintendo's own names. See src/strings/area/EU_country.json for the country list and tools/area.py for the sort ranks, which are recomputed from these names.",
+  "2": {
+    "en": "Wellington",
+    "ru": "Веллингтон",
+    "ua": "Веллінгтон"
+  },
+  "3": {
+    "en": "Auckland",
+    "ru": "Окленд",
+    "ua": "Окленд"
+  },
+  "4": {
+    "en": "Bay of Plenty",
+    "ru": "Бей-оф-Пленти",
+    "ua": "Бей-оф-Пленті"
+  },
+  "5": {
+    "en": "Canterbury",
+    "ru": "Кентербери",
+    "ua": "Кентербері"
+  },
+  "6": {
+    "en": "Otago",
+    "ru": "Отаго",
+    "ua": "Отаго"
+  },
+  "7": {
+    "en": "Hawke's Bay",
+    "ru": "Хокс-Бей",
+    "ua": "Гокс-Бей"
+  },
+  "8": {
+    "en": "Manawatu-Wanganui",
+    "ru": "Манавату-Уангануи",
+    "ua": "Манавату-Вангануї"
+  },
+  "9": {
+    "en": "Nelson",
+    "ru": "Нельсон",
+    "ua": "Нельсон"
+  },
+  "10": {
+    "en": "Northland",
+    "ru": "Нортленд",
+    "ua": "Нортленд"
+  },
+  "12": {
+    "en": "Southland",
+    "ru": "Саутленд",
+    "ua": "Саутленд"
+  },
+  "13": {
+    "en": "Taranaki",
+    "ru": "Таранаки",
+    "ua": "Таранакі"
+  },
+  "14": {
+    "en": "Waikato",
+    "ru": "Уаикато",
+    "ua": "Вайкато"
+  },
+  "15": {
+    "en": "Gisborne",
+    "ru": "Гисборн",
+    "ua": "Гісборн"
+  },
+  "16": {
+    "en": "West Coast",
+    "ru": "Уэст-Кост",
+    "ua": "Вест-Кост"
+  },
+  "17": {
+    "en": "Marlborough",
+    "ru": "Мальборо",
+    "ua": "Мальборо"
+  },
+  "18": {
+    "en": "Tasman",
+    "ru": "Тасман",
+    "ua": "Тасман"
+  }
+}

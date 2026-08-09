@@ -1,0 +1,138 @@
+{
+  "_comment": "Sub-regions of country code 77 (France) in the `area` archive. Keys are the records' own indices, `ru` is the original of the language slot this mod overwrites and `ua` its replacement; the index is what the console reports over the network, so no row is moved or renamed into a different place. Other language slots keep Nintendo's own names. See src/strings/area/EU_country.json for the country list and tools/area.py for the sort ranks, which are recomputed from these names.",
+  "2": {
+    "en": "Île-de-France",
+    "ru": "Иль-де-Франс",
+    "ua": "Іль-де-Франс"
+  },
+  "3": {
+    "en": "Alsace",
+    "ru": "Эльзас",
+    "ua": "Ельзас"
+  },
+  "4": {
+    "en": "Aquitaine",
+    "ru": "Аквитания",
+    "ua": "Аквітанія"
+  },
+  "5": {
+    "en": "Auvergne",
+    "ru": "Овернь",
+    "ua": "Овернь"
+  },
+  "6": {
+    "en": "Lower Normandy",
+    "ru": "Нижняя Нормандия",
+    "ua": "Нижня Нормандія"
+  },
+  "7": {
+    "en": "Burgundy",
+    "ru": "Бургундия",
+    "ua": "Бургундія"
+  },
+  "8": {
+    "en": "Brittany",
+    "ru": "Бретань",
+    "ua": "Бретань"
+  },
+  "9": {
+    "en": "Centre",
+    "ru": "Центр",
+    "ua": "Центр"
+  },
+  "10": {
+    "en": "Champagne-Ardenne",
+    "ru": "Шампань-Арденны",
+    "ua": "Шампань-Арденни"
+  },
+  "11": {
+    "en": "Corsica",
+    "ru": "Корсика",
+    "ua": "Корсика"
+  },
+  "12": {
+    "en": "Franche-Comté",
+    "ru": "Франш-Конте",
+    "ua": "Франш-Конте"
+  },
+  "13": {
+    "en": "Upper Normandy",
+    "ru": "Верхняя Нормандия",
+    "ua": "Верхня Нормандія"
+  },
+  "14": {
+    "en": "Languedoc-Roussillon",
+    "ru": "Лангедок-Руссильон",
+    "ua": "Лангедок-Русійон"
+  },
+  "15": {
+    "en": "Limousin",
+    "ru": "Лимузен",
+    "ua": "Лімузен"
+  },
+  "16": {
+    "en": "Lorraine",
+    "ru": "Лотарингия",
+    "ua": "Лотарингія"
+  },
+  "17": {
+    "en": "Midi-Pyrénées",
+    "ru": "Юг-Пиренеи",
+    "ua": "Південь-Піренеї"
+  },
+  "18": {
+    "en": "Nord-Pas-de-Calais",
+    "ru": "Нор-Па-де-Кале",
+    "ua": "Нор-Па-де-Кале"
+  },
+  "19": {
+    "en": "Pays de la Loire",
+    "ru": "Земли Луары",
+    "ua": "Землі Луари"
+  },
+  "20": {
+    "en": "Picardy",
+    "ru": "Пикардия",
+    "ua": "Пікардія"
+  },
+  "21": {
+    "en": "Poitou-Charentes",
+    "ru": "Пуату-Шаранта",
+    "ua": "Пуату-Шаранта"
+  },
+  "22": {
+    "en": "Provence-Alpes-Côte d'Azur",
+    "ru": "Прованс-Альпы-Лазурный Берег",
+    "ua": "Прованс-Альпи-Лазурний Берег"
+  },
+  "23": {
+    "en": "Rhône-Alpes",
+    "ru": "Рона-Альпы",
+    "ua": "Рона-Альпи"
+  },
+  "24": {
+    "en": "Guadeloupe",
+    "ru": "Гваделупа",
+    "ua": "Гваделупа"
+  },
+  "25": {
+    "en": "Martinique",
+    "ru": "Мартиника",
+    "ua": "Мартиніка"
+  },
+  "26": {
+    "en": "French Guiana",
+    "ru": "Французская Гвиана",
+    "ua": "Французька Гвіана"
+  },
+  "27": {
+    "en": "Réunion",
+    "ru": "Реюньон",
+    "ua": "Реюньйон"
+  },
+  "28": {
+    "en": "Mayotte",
+    "ru": "Майотта",
+    "ua": "Майотта"
+  }
+}

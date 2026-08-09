@@ -324,9 +324,9 @@ def validate_area(charset: set[int], table: dict[str, str], widths: dict[int, in
 
     These are not MSBT strings and have no per-label budget: the slot is as wide as the
     widest of the twelve official names in the same file, which is the same reasoning
-    validate() uses, only per file instead of per label. Skipped, not failed, when the
-    archive has not been dumped - it is one GodMode9 copy and most contributors will not
-    have it.
+    validate() uses, only per file instead of per label - WIDTH_SLACK included, for the
+    same reason it exists there. Skipped, not failed, when the archive has not been
+    dumped - it is one GodMode9 copy and most contributors will not have it.
     """
     import area as area_mod
 
@@ -360,7 +360,7 @@ def validate_area(charset: set[int], table: dict[str, str], widths: dict[int, in
             if missing:
                 problems.append(f"{json_file.name} {key}: missing glyphs {missing}")
             width = pixel_width(rendered, widths)
-            if width > budget:
+            if width > budget + WIDTH_SLACK:
                 problems.append(f"{json_file.name} {key}: {width}px exceeds budget {budget}px")
     return checked, problems
 

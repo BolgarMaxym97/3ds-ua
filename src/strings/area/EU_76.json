@@ -1,0 +1,103 @@
+{
+  "_comment": "Sub-regions of country code 76 (Finland) in the `area` archive. Keys are the records' own indices, `ru` is the original of the language slot this mod overwrites and `ua` its replacement; the index is what the console reports over the network, so no row is moved or renamed into a different place. Other language slots keep Nintendo's own names. See src/strings/area/EU_country.json for the country list and tools/area.py for the sort ranks, which are recomputed from these names.",
+  "8": {
+    "en": "Uusimaa / Nyland",
+    "ru": "Уусимаа",
+    "ua": "Уусімаа"
+  },
+  "9": {
+    "en": "Lappi / Lapland",
+    "ru": "Лапландия",
+    "ua": "Лапландія"
+  },
+  "10": {
+    "en": "Pohjois-Pohjanmaa / Norra Österbotten",
+    "ru": "Северная Остроботния",
+    "ua": "Північна Остроботнія"
+  },
+  "11": {
+    "en": "Kainuu / Kajanaland",
+    "ru": "Кайнуу",
+    "ua": "Кайнуу"
+  },
+  "12": {
+    "en": "Pohjois-Karjala / Norra Karelen",
+    "ru": "Северная Карелия",
+    "ua": "Північна Карелія"
+  },
+  "13": {
+    "en": "Pohjois-Savo / Norra Savolax",
+    "ru": "Северное Саво",
+    "ua": "Північне Саво"
+  },
+  "14": {
+    "en": "Etelä-Savo / Södra Savolax",
+    "ru": "Южное Саво",
+    "ua": "Південне Саво"
+  },
+  "15": {
+    "en": "Etelä-Pohjanmaa / Södra Österbotten",
+    "ru": "Южная Остроботния",
+    "ua": "Південна Остроботнія"
+  },
+  "16": {
+    "en": "Pohjanmaa / Österbotten",
+    "ru": "Остроботния",
+    "ua": "Остроботнія"
+  },
+  "17": {
+    "en": "Pirkanmaa / Birkaland",
+    "ru": "Пирканмаа",
+    "ua": "Пірканмаа"
+  },
+  "18": {
+    "en": "Satakunta / Satakunda",
+    "ru": "Сатакунта",
+    "ua": "Сатакунта"
+  },
+  "19": {
+    "en": "Keski-Pohjanmaa / Mellersta Österbotten",
+    "ru": "Центральная Остроботния",
+    "ua": "Центральна Остроботнія"
+  },
+  "20": {
+    "en": "Keski-Suomi / Mellersta Finland",
+    "ru": "Центральная Финляндия",
+    "ua": "Центральна Фінляндія"
+  },
+  "21": {
+    "en": "Varsinais-Suomi / Egentliga Finland",
+    "ru": "Собственно Финляндия",
+    "ua": "Власне Фінляндія"
+  },
+  "22": {
+    "en": "Etelä-Karjala / Södra Karelen",
+    "ru": "Южная Карелия",
+    "ua": "Південна Карелія"
+  },
+  "23": {
+    "en": "Päijät-Häme / Päijänne Tavastland",
+    "ru": "Пяйят-Хяме",
+    "ua": "Пяйят-Хяме"
+  },
+  "24": {
+    "en": "Kanta-Häme / Egentliga Tavastland",
+    "ru": "Канта-Хяме",
+    "ua": "Канта-Хяме"
+  },
+  "25": {
+    "en": "Itä-Uusimaa / Östra Nyland",
+    "ru": "Восточная Уусимаа",
+    "ua": "Східна Уусімаа"
+  },
+  "26": {
+    "en": "Kymenlaakso / Kymmenedalen",
+    "ru": "Кюменлааксо",
+    "ua": "Кюменлааксо"
+  },
+  "27": {
+    "en": "Ahvenanmaa / Åland",
+    "ru": "Аландские острова",
+    "ua": "Аландські острови"
+  }
+}

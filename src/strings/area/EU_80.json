@@ -1,0 +1,103 @@
+{
+  "_comment": "Sub-regions of country code 80 (Hungary) in the `area` archive. Keys are the records' own indices, `ru` is the original of the language slot this mod overwrites and `ua` its replacement; the index is what the console reports over the network, so no row is moved or renamed into a different place. Other language slots keep Nintendo's own names. See src/strings/area/EU_country.json for the country list and tools/area.py for the sort ranks, which are recomputed from these names.",
+  "2": {
+    "en": "Budapest",
+    "ru": "Будапешт",
+    "ua": "Будапешт"
+  },
+  "3": {
+    "en": "Bács-Kiskun County",
+    "ru": "Бач-Кишкун",
+    "ua": "Бач-Кішкун"
+  },
+  "4": {
+    "en": "Baranya County",
+    "ru": "Баранья",
+    "ua": "Барань"
+  },
+  "5": {
+    "en": "Békés County",
+    "ru": "Бекеш",
+    "ua": "Бекеш"
+  },
+  "6": {
+    "en": "Borsod-Abaúj-Zemplén County",
+    "ru": "Боршод-Абауй-Земплен",
+    "ua": "Боршод-Абауй-Земплен"
+  },
+  "7": {
+    "en": "Csongrád County",
+    "ru": "Чонград",
+    "ua": "Чонград"
+  },
+  "8": {
+    "en": "Fejér County",
+    "ru": "Фейер",
+    "ua": "Фейєр"
+  },
+  "9": {
+    "en": "Győr-Moson-Sopron County",
+    "ru": "Дьёр-Мошон-Шопрон",
+    "ua": "Дьйор-Мошон-Шопрон"
+  },
+  "10": {
+    "en": "Hajdú-Bihar County",
+    "ru": "Хайду-Бихар",
+    "ua": "Гайду-Бігар"
+  },
+  "11": {
+    "en": "Heves County",
+    "ru": "Хевеш",
+    "ua": "Гевеш"
+  },
+  "12": {
+    "en": "Jász-Nagykun-Szolnok County",
+    "ru": "Яс-Надькун-Сольнок",
+    "ua": "Яс-Надькун-Сольнок"
+  },
+  "13": {
+    "en": "Komárom-Esztergom County",
+    "ru": "Комаром-Эстергом",
+    "ua": "Комаром-Естергом"
+  },
+  "14": {
+    "en": "Nógrád County",
+    "ru": "Ноград",
+    "ua": "Ноград"
+  },
+  "15": {
+    "en": "Pest County",
+    "ru": "Пешт",
+    "ua": "Пешт"
+  },
+  "16": {
+    "en": "Somogy County",
+    "ru": "Шомодь",
+    "ua": "Шомодь"
+  },
+  "17": {
+    "en": "Szabolcs-Szatmár-Bereg County",
+    "ru": "Сабольч-Сатмар-Берег",
+    "ua": "Сабольч-Сатмар-Берег"
+  },
+  "18": {
+    "en": "Tolna County",
+    "ru": "Тольна",
+    "ua": "Тольна"
+  },
+  "19": {
+    "en": "Vas County",
+    "ru": "Ваш",
+    "ua": "Ваш"
+  },
+  "20": {
+    "en": "Veszprém County",
+    "ru": "Веспрем",
+    "ua": "Веспрем"
+  },
+  "21": {
+    "en": "Zala County",
+    "ru": "Зала",
+    "ua": "Зала"
+  }
+}

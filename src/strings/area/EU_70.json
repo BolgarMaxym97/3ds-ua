@@ -1,0 +1,143 @@
+{
+  "_comment": "Sub-regions of country code 70 (Bulgaria) in the `area` archive. Keys are the records' own indices, `ru` is the original of the language slot this mod overwrites and `ua` its replacement; the index is what the console reports over the network, so no row is moved or renamed into a different place. Other language slots keep Nintendo's own names. See src/strings/area/EU_country.json for the country list and tools/area.py for the sort ranks, which are recomputed from these names.",
+  "2": {
+    "en": "Sofia City",
+    "ru": "София",
+    "ua": "Софія"
+  },
+  "3": {
+    "en": "Sofia Province",
+    "ru": "Софийская область",
+    "ua": "Софійська область"
+  },
+  "4": {
+    "en": "Blagoevgrad",
+    "ru": "Благоевград",
+    "ua": "Благоевград"
+  },
+  "5": {
+    "en": "Pleven",
+    "ru": "Плевен",
+    "ua": "Плевен"
+  },
+  "6": {
+    "en": "Vidin",
+    "ru": "Видин",
+    "ua": "Видин"
+  },
+  "7": {
+    "en": "Varna",
+    "ru": "Варна",
+    "ua": "Варна"
+  },
+  "8": {
+    "en": "Burgas",
+    "ru": "Бургас",
+    "ua": "Бургас"
+  },
+  "9": {
+    "en": "Dobrich",
+    "ru": "Добрич",
+    "ua": "Добрич"
+  },
+  "10": {
+    "en": "Gabrovo",
+    "ru": "Габрово",
+    "ua": "Габрово"
+  },
+  "11": {
+    "en": "Haskovo",
+    "ru": "Хасково",
+    "ua": "Хасково"
+  },
+  "12": {
+    "en": "Yambol",
+    "ru": "Ямбол",
+    "ua": "Ямбол"
+  },
+  "13": {
+    "en": "Kardzhali",
+    "ru": "Кырджали",
+    "ua": "Кирджалі"
+  },
+  "14": {
+    "en": "Kyustendil",
+    "ru": "Кюстендил",
+    "ua": "Кюстендил"
+  },
+  "15": {
+    "en": "Lovech",
+    "ru": "Ловеч",
+    "ua": "Ловеч"
+  },
+  "16": {
+    "en": "Montana",
+    "ru": "Монтана",
+    "ua": "Монтана"
+  },
+  "17": {
+    "en": "Pazardzhik",
+    "ru": "Пазарджик",
+    "ua": "Пазарджик"
+  },
+  "18": {
+    "en": "Pernik",
+    "ru": "Перник",
+    "ua": "Перник"
+  },
+  "19": {
+    "en": "Plovdiv",
+    "ru": "Пловдив",
+    "ua": "Пловдив"
+  },
+  "20": {
+    "en": "Razgrad",
+    "ru": "Разград",
+    "ua": "Разград"
+  },
+  "21": {
+    "en": "Ruse",
+    "ru": "Русе",
+    "ua": "Русе"
+  },
+  "22": {
+    "en": "Silistra",
+    "ru": "Силистра",
+    "ua": "Силістра"
+  },
+  "23": {
+    "en": "Sliven",
+    "ru": "Сливен",
+    "ua": "Сливен"
+  },
+  "24": {
+    "en": "Smolyan",
+    "ru": "Смолян",
+    "ua": "Смолян"
+  },
+  "25": {
+    "en": "Stara Zagora",
+    "ru": "Стара-Загора",
+    "ua": "Стара-Загора"
+  },
+  "26": {
+    "en": "Shumen",
+    "ru": "Шумен",
+    "ua": "Шумен"
+  },
+  "27": {
+    "en": "Targovishte",
+    "ru": "Тырговиште",
+    "ua": "Тирговиште"
+  },
+  "28": {
+    "en": "Veliko Tarnovo",
+    "ru": "Велико-Тырново",
+    "ua": "Велико-Тирново"
+  },
+  "29": {
+    "en": "Vratsa",
+    "ru": "Враца",
+    "ua": "Враца"
+  }
+}

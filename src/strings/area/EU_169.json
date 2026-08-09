@@ -1,0 +1,173 @@
+{
+  "_comment": "Sub-regions of country code 169 (India) in the `area` archive. Keys are the records' own indices, `ru` is the original of the language slot this mod overwrites and `ua` its replacement; the index is what the console reports over the network, so no row is moved or renamed into a different place. Other language slots keep Nintendo's own names. See src/strings/area/EU_country.json for the country list and tools/area.py for the sort ranks, which are recomputed from these names.",
+  "2": {
+    "en": "Delhi",
+    "ru": "Дели",
+    "ua": "Делі"
+  },
+  "3": {
+    "en": "Andaman and Nicobar Islands",
+    "ru": "Андаманские и Никобарские острова",
+    "ua": "Андаманські і Нікобарські острови"
+  },
+  "4": {
+    "en": "Andhra Pradesh",
+    "ru": "Андхра-Прадеш",
+    "ua": "Андхра-Прадеш"
+  },
+  "5": {
+    "en": "Assam",
+    "ru": "Ассам",
+    "ua": "Ассам"
+  },
+  "6": {
+    "en": "Chandīgarh",
+    "ru": "Чандигарх",
+    "ua": "Чандігарх"
+  },
+  "7": {
+    "en": "Dadra and Nagar Haveli",
+    "ru": "Дадра и Нагар-Хавели",
+    "ua": "Дадра і Нагар-Хавелі"
+  },
+  "8": {
+    "en": "Gujarāt",
+    "ru": "Гуджарат",
+    "ua": "Гуджарат"
+  },
+  "9": {
+    "en": "Haryāna",
+    "ru": "Харьяна",
+    "ua": "Хар'яна"
+  },
+  "10": {
+    "en": "Himachal Pradesh",
+    "ru": "Химачал-Прадеш",
+    "ua": "Хімачал-Прадеш"
+  },
+  "12": {
+    "en": "Kerala",
+    "ru": "Керала",
+    "ua": "Керала"
+  },
+  "13": {
+    "en": "Lakshadweep",
+    "ru": "Лакшадвип",
+    "ua": "Лакшадвіп"
+  },
+  "14": {
+    "en": "Mahārāshtra",
+    "ru": "Махараштра",
+    "ua": "Махараштра"
+  },
+  "15": {
+    "en": "Manipur",
+    "ru": "Манипур",
+    "ua": "Маніпур"
+  },
+  "16": {
+    "en": "Meghālaya",
+    "ru": "Мегхалая",
+    "ua": "Мегхалая"
+  },
+  "17": {
+    "en": "Karnātaka",
+    "ru": "Карнатака",
+    "ua": "Карнатака"
+  },
+  "18": {
+    "en": "Nāgāland",
+    "ru": "Нагаленд",
+    "ua": "Нагаленд"
+  },
+  "19": {
+    "en": "Odisha",
+    "ru": "Орисса",
+    "ua": "Орісса"
+  },
+  "20": {
+    "en": "Puducherry",
+    "ru": "Пондишери",
+    "ua": "Пондічері"
+  },
+  "21": {
+    "en": "Punjab",
+    "ru": "Пенджаб",
+    "ua": "Пенджаб"
+  },
+  "22": {
+    "en": "Rājasthān",
+    "ru": "Раджастхан",
+    "ua": "Раджастхан"
+  },
+  "23": {
+    "en": "Tamil Nadu",
+    "ru": "Тамил-Наду",
+    "ua": "Таміл-Наду"
+  },
+  "24": {
+    "en": "Tripura",
+    "ru": "Трипура",
+    "ua": "Трипура"
+  },
+  "25": {
+    "en": "West Bengal",
+    "ru": "Западная Бенгалия",
+    "ua": "Західна Бенгалія"
+  },
+  "26": {
+    "en": "Sikkim",
+    "ru": "Сикким",
+    "ua": "Сіккім"
+  },
+  "28": {
+    "en": "Mizoram",
+    "ru": "Мизорам",
+    "ua": "Мізорам"
+  },
+  "29": {
+    "en": "Daman and Diu",
+    "ru": "Даман и Диу",
+    "ua": "Даман і Діу"
+  },
+  "30": {
+    "en": "Goa",
+    "ru": "Гоа",
+    "ua": "Гоа"
+  },
+  "31": {
+    "en": "Bihār",
+    "ru": "Бихар",
+    "ua": "Біхар"
+  },
+  "32": {
+    "en": "Madhya Pradesh",
+    "ru": "Мадхья-Прадеш",
+    "ua": "Мадх'я-Прадеш"
+  },
+  "33": {
+    "en": "Uttar Pradesh",
+    "ru": "Уттар-Прадеш",
+    "ua": "Уттар-Прадеш"
+  },
+  "34": {
+    "en": "Chhattīsgarh",
+    "ru": "Чхаттисгарх",
+    "ua": "Чхаттісгарх"
+  },
+  "35": {
+    "en": "Jharkhand",
+    "ru": "Джаркханд",
+    "ua": "Джаркханд"
+  },
+  "36": {
+    "en": "Uttarakhand",
+    "ru": "Уттаракханд",
+    "ua": "Уттаракханд"
+  },
+  "37": {
+    "en": "Other",
+    "ru": "Остальные",
+    "ua": "Інші"
+  }
+}

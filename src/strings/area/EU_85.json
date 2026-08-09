@@ -1,0 +1,53 @@
+{
+  "_comment": "Sub-regions of country code 85 (Lesotho) in the `area` archive. Keys are the records' own indices, `ru` is the original of the language slot this mod overwrites and `ua` its replacement; the index is what the console reports over the network, so no row is moved or renamed into a different place. Other language slots keep Nintendo's own names. See src/strings/area/EU_country.json for the country list and tools/area.py for the sort ranks, which are recomputed from these names.",
+  "2": {
+    "en": "Maseru",
+    "ru": "Масеру",
+    "ua": "Масеру"
+  },
+  "3": {
+    "en": "Berea",
+    "ru": "Береа",
+    "ua": "Береа"
+  },
+  "4": {
+    "en": "Butha-Buthe",
+    "ru": "Бута-Буте",
+    "ua": "Бута-Буте"
+  },
+  "5": {
+    "en": "Leribe",
+    "ru": "Лерибе",
+    "ua": "Лерібе"
+  },
+  "6": {
+    "en": "Mafeteng",
+    "ru": "Мафетенг",
+    "ua": "Мафетенг"
+  },
+  "7": {
+    "en": "Mohale's Hoek",
+    "ru": "Мохалес-Хук",
+    "ua": "Мохалес-Хук"
+  },
+  "8": {
+    "en": "Mokhotlong",
+    "ru": "Мокхотлонг",
+    "ua": "Мокхотлонг"
+  },
+  "9": {
+    "en": "Qacha's Nek",
+    "ru": "Цгачас-Нек",
+    "ua": "Кача-Нек"
+  },
+  "10": {
+    "en": "Quthing",
+    "ru": "Цгутинг",
+    "ua": "Кутинг"
+  },
+  "11": {
+    "en": "Thaba-Tseka",
+    "ru": "Таба-Цека",
+    "ua": "Таба-Цека"
+  }
+}

@@ -1,0 +1,103 @@
+{
+  "_comment": "Sub-regions of country code 83 (Italy) in the `area` archive. Keys are the records' own indices, `ru` is the original of the language slot this mod overwrites and `ua` its replacement; the index is what the console reports over the network, so no row is moved or renamed into a different place. Other language slots keep Nintendo's own names. See src/strings/area/EU_country.json for the country list and tools/area.py for the sort ranks, which are recomputed from these names.",
+  "2": {
+    "en": "Lazio",
+    "ru": "Лацио",
+    "ua": "Лаціо"
+  },
+  "3": {
+    "en": "Aosta Valley",
+    "ru": "Валле-д’Аоста",
+    "ua": "Валле-д'Аоста"
+  },
+  "4": {
+    "en": "Piedmont",
+    "ru": "Пьемонт",
+    "ua": "П'ємонт"
+  },
+  "5": {
+    "en": "Liguria",
+    "ru": "Лигурия",
+    "ua": "Лігурія"
+  },
+  "6": {
+    "en": "Lombardy",
+    "ru": "Ломбардия",
+    "ua": "Ломбардія"
+  },
+  "7": {
+    "en": "Trentino-Alto Adige",
+    "ru": "Трентино-Альто-Адидже",
+    "ua": "Трентіно-Альто-Адідже"
+  },
+  "8": {
+    "en": "Veneto",
+    "ru": "Венето",
+    "ua": "Венето"
+  },
+  "9": {
+    "en": "Friuli Venezia Giulia",
+    "ru": "Фриули-Венеция-Джулия",
+    "ua": "Фріулі-Венеція-Джулія"
+  },
+  "10": {
+    "en": "Emilia-Romagna",
+    "ru": "Эмилия-Романья",
+    "ua": "Емілія-Романья"
+  },
+  "11": {
+    "en": "Tuscany",
+    "ru": "Тоскана",
+    "ua": "Тоскана"
+  },
+  "12": {
+    "en": "Umbria",
+    "ru": "Умбрия",
+    "ua": "Умбрія"
+  },
+  "13": {
+    "en": "Marche",
+    "ru": "Марке",
+    "ua": "Марке"
+  },
+  "14": {
+    "en": "Abruzzo",
+    "ru": "Абруццо",
+    "ua": "Абруццо"
+  },
+  "15": {
+    "en": "Molise",
+    "ru": "Молизе",
+    "ua": "Молізе"
+  },
+  "16": {
+    "en": "Campania",
+    "ru": "Кампания",
+    "ua": "Кампанія"
+  },
+  "17": {
+    "en": "Apulia",
+    "ru": "Апулия",
+    "ua": "Апулія"
+  },
+  "18": {
+    "en": "Basilicata",
+    "ru": "Базиликата",
+    "ua": "Базиліката"
+  },
+  "19": {
+    "en": "Calabria",
+    "ru": "Калабрия",
+    "ua": "Калабрія"
+  },
+  "20": {
+    "en": "Sicily",
+    "ru": "Сицилия",
+    "ua": "Сицилія"
+  },
+  "21": {
+    "en": "Sardinia",
+    "ru": "Сардиния",
+    "ua": "Сардинія"
+  }
+}

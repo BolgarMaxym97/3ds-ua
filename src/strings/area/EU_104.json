@@ -1,0 +1,48 @@
+{
+  "_comment": "Sub-regions of country code 104 (South Africa) in the `area` archive. Keys are the records' own indices, `ru` is the original of the language slot this mod overwrites and `ua` its replacement; the index is what the console reports over the network, so no row is moved or renamed into a different place. Other language slots keep Nintendo's own names. See src/strings/area/EU_country.json for the country list and tools/area.py for the sort ranks, which are recomputed from these names.",
+  "2": {
+    "en": "Gauteng",
+    "ru": "Гаутенг ",
+    "ua": "Гаутенг"
+  },
+  "3": {
+    "en": "Western Cape",
+    "ru": "Западно-Капская провинция",
+    "ua": "Західнокапська провінція"
+  },
+  "4": {
+    "en": "Northern Cape",
+    "ru": "Северо-Капская провинция",
+    "ua": "Північнокапська провінція"
+  },
+  "5": {
+    "en": "Eastern Cape",
+    "ru": "Восточно-Капская провинция",
+    "ua": "Східнокапська провінція"
+  },
+  "6": {
+    "en": "KwaZulu-Natal",
+    "ru": "Квазулу-Натал",
+    "ua": "Квазулу-Наталь"
+  },
+  "7": {
+    "en": "Free State",
+    "ru": "Фри-Стейт",
+    "ua": "Фрі-Стейт"
+  },
+  "8": {
+    "en": "North West",
+    "ru": "Северо-Западная провинция",
+    "ua": "Північно-Західна провінція"
+  },
+  "9": {
+    "en": "Mpumalanga",
+    "ru": "Мпумаланга",
+    "ua": "Мпумаланга"
+  },
+  "10": {
+    "en": "Limpopo",
+    "ru": "Лимпопо",
+    "ua": "Лімпопо"
+  }
+}

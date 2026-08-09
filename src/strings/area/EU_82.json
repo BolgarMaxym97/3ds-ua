@@ -1,0 +1,133 @@
+{
+  "_comment": "Sub-regions of country code 82 (Ireland) in the `area` archive. Keys are the records' own indices, `ru` is the original of the language slot this mod overwrites and `ua` its replacement; the index is what the console reports over the network, so no row is moved or renamed into a different place. Other language slots keep Nintendo's own names. See src/strings/area/EU_country.json for the country list and tools/area.py for the sort ranks, which are recomputed from these names.",
+  "2": {
+    "en": "Dublin",
+    "ru": "Дублин",
+    "ua": "Дублін"
+  },
+  "10": {
+    "en": "County Carlow",
+    "ru": "Карлоу",
+    "ua": "Карлоу"
+  },
+  "11": {
+    "en": "County Cavan",
+    "ru": "Каван",
+    "ua": "Каван"
+  },
+  "12": {
+    "en": "County Clare",
+    "ru": "Клэр",
+    "ua": "Клер"
+  },
+  "13": {
+    "en": "County Cork",
+    "ru": "Корк",
+    "ua": "Корк"
+  },
+  "14": {
+    "en": "County Donegal",
+    "ru": "Донегол",
+    "ua": "Донегол"
+  },
+  "15": {
+    "en": "County Galway",
+    "ru": "Голуэй",
+    "ua": "Голуей"
+  },
+  "16": {
+    "en": "County Kerry",
+    "ru": "Керри",
+    "ua": "Керрі"
+  },
+  "17": {
+    "en": "County Kildare",
+    "ru": "Килдэр",
+    "ua": "Кілдер"
+  },
+  "18": {
+    "en": "County Kilkenny",
+    "ru": "Килкенни",
+    "ua": "Кілкенні"
+  },
+  "19": {
+    "en": "County Laois",
+    "ru": "Лиишь",
+    "ua": "Ліїш"
+  },
+  "20": {
+    "en": "County Leitrim",
+    "ru": "Литрим",
+    "ua": "Літрім"
+  },
+  "21": {
+    "en": "County Limerick",
+    "ru": "Лимерик",
+    "ua": "Лімерик"
+  },
+  "22": {
+    "en": "County Longford",
+    "ru": "Лонгфорд",
+    "ua": "Лонгфорд"
+  },
+  "23": {
+    "en": "County Louth",
+    "ru": "Лаут",
+    "ua": "Лаут"
+  },
+  "24": {
+    "en": "County Mayo",
+    "ru": "Мейо",
+    "ua": "Мейо"
+  },
+  "25": {
+    "en": "County Meath",
+    "ru": "Мит",
+    "ua": "Міт"
+  },
+  "26": {
+    "en": "County Monaghan",
+    "ru": "Монахан",
+    "ua": "Монахан"
+  },
+  "27": {
+    "en": "County Offaly",
+    "ru": "Оффали",
+    "ua": "Оффалі"
+  },
+  "28": {
+    "en": "County Roscommon",
+    "ru": "Роскоммон",
+    "ua": "Роскоммон"
+  },
+  "29": {
+    "en": "County Sligo",
+    "ru": "Слайго",
+    "ua": "Слайго"
+  },
+  "30": {
+    "en": "County Tipperary",
+    "ru": "Типперэри",
+    "ua": "Тіпперері"
+  },
+  "31": {
+    "en": "County Waterford",
+    "ru": "Уотерфорд",
+    "ua": "Вотерфорд"
+  },
+  "32": {
+    "en": "County Westmeath",
+    "ru": "Уэстмит",
+    "ua": "Вестміт"
+  },
+  "33": {
+    "en": "County Wexford",
+    "ru": "Уэксфорд",
+    "ua": "Вексфорд"
+  },
+  "34": {
+    "en": "County Wicklow",
+    "ru": "Уиклоу",
+    "ua": "Віклоу"
+  }
+}

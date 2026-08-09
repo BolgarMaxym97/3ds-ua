@@ -1,0 +1,48 @@
+{
+  "_comment": "Sub-regions of country code 66 (Austria) in the `area` archive. Keys are the records' own indices, `ru` is the original of the language slot this mod overwrites and `ua` its replacement; the index is what the console reports over the network, so no row is moved or renamed into a different place. Other language slots keep Nintendo's own names. See src/strings/area/EU_country.json for the country list and tools/area.py for the sort ranks, which are recomputed from these names.",
+  "2": {
+    "en": "Vienna",
+    "ru": "Вена",
+    "ua": "Відень"
+  },
+  "3": {
+    "en": "Burgenland",
+    "ru": "Бургенланд",
+    "ua": "Бургенланд"
+  },
+  "4": {
+    "en": "Carinthia",
+    "ru": "Каринтия",
+    "ua": "Каринтія"
+  },
+  "5": {
+    "en": "Lower Austria",
+    "ru": "Нижняя Австрия",
+    "ua": "Нижня Австрія"
+  },
+  "6": {
+    "en": "Upper Austria",
+    "ru": "Верхняя Австрия",
+    "ua": "Верхня Австрія"
+  },
+  "7": {
+    "en": "Salzburg",
+    "ru": "Зальцбург",
+    "ua": "Зальцбург"
+  },
+  "8": {
+    "en": "Styria",
+    "ru": "Штирия",
+    "ua": "Штирія"
+  },
+  "9": {
+    "en": "Tyrol",
+    "ru": "Тироль",
+    "ua": "Тіроль"
+  },
+  "10": {
+    "en": "Vorarlberg",
+    "ru": "Форарльберг",
+    "ua": "Форарльберг"
+  }
+}

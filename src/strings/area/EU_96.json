@@ -1,0 +1,103 @@
+{
+  "_comment": "Sub-regions of country code 96 (Norway) in the `area` archive. Keys are the records' own indices, `ru` is the original of the language slot this mod overwrites and `ua` its replacement; the index is what the console reports over the network, so no row is moved or renamed into a different place. Other language slots keep Nintendo's own names. See src/strings/area/EU_country.json for the country list and tools/area.py for the sort ranks, which are recomputed from these names.",
+  "7": {
+    "en": "Oslo",
+    "ru": "Осло",
+    "ua": "Осло"
+  },
+  "8": {
+    "en": "Akershus",
+    "ru": "Акерсхус",
+    "ua": "Акерсхус"
+  },
+  "9": {
+    "en": "Aust-Agder",
+    "ru": "Эуст-Агдер",
+    "ua": "Еуст-Агдер"
+  },
+  "10": {
+    "en": "Buskerud",
+    "ru": "Бускеруд",
+    "ua": "Бускеруд"
+  },
+  "11": {
+    "en": "Finnmark",
+    "ru": "Финнмарк",
+    "ua": "Фіннмарк"
+  },
+  "12": {
+    "en": "Hedmark",
+    "ru": "Хедмарк",
+    "ua": "Гедмарк"
+  },
+  "13": {
+    "en": "Hordaland",
+    "ru": "Хордаланн",
+    "ua": "Хордаланн"
+  },
+  "14": {
+    "en": "Møre og Romsdal",
+    "ru": "Мёре-ог-Румсдал",
+    "ua": "Мере-ог-Румсдал"
+  },
+  "15": {
+    "en": "Nordland",
+    "ru": "Нурланн",
+    "ua": "Нурланн"
+  },
+  "16": {
+    "en": "Nord-Trøndelag",
+    "ru": "Нур-Трёнделаг",
+    "ua": "Нур-Тренделаг"
+  },
+  "17": {
+    "en": "Oppland",
+    "ru": "Оппланн",
+    "ua": "Оппланн"
+  },
+  "18": {
+    "en": "Rogaland",
+    "ru": "Ругаланн",
+    "ua": "Ругаланн"
+  },
+  "19": {
+    "en": "Sogn og Fjordane",
+    "ru": "Согн-ог-Фьюране",
+    "ua": "Согн-ог-Ф'юране"
+  },
+  "20": {
+    "en": "Sør-Trøndelag",
+    "ru": "Сёр-Трёнделаг",
+    "ua": "Сер-Тренделаг"
+  },
+  "21": {
+    "en": "Telemark",
+    "ru": "Телемарк",
+    "ua": "Телемарк"
+  },
+  "22": {
+    "en": "Troms",
+    "ru": "Тромс",
+    "ua": "Тромс"
+  },
+  "23": {
+    "en": "Vest-Agder",
+    "ru": "Вест-Агдер",
+    "ua": "Вест-Агдер"
+  },
+  "24": {
+    "en": "Vestfold",
+    "ru": "Вестфолл",
+    "ua": "Вестфолл"
+  },
+  "25": {
+    "en": "Østfold",
+    "ru": "Эстфолл",
+    "ua": "Естфолл"
+  },
+  "26": {
+    "en": "Svalbard",
+    "ru": "Шпицберген",
+    "ua": "Шпіцберген"
+  }
+}
