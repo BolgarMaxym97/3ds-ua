@@ -161,11 +161,46 @@ silhouette, once without for the core. Miss that and fill the luminance across t
 silhouette, and the outline disappears while the letter gains a pixel on every side: on
 hardware `Нд` then reads as a bolder font than the digits beside it.
 
-Replaced in eight titles: HOME Menu, System Settings, Friend List, Notifications, Game
-Notes, Browser, eShop, System Transfer. The path is `romfs/font/Hud.bcfnt` or
+Replaced in ten titles: HOME Menu, System Settings, Friend List, Notifications, Game
+Notes, Browser, eShop, System Transfer, plus Miiverse and Nintendo Network ID Settings -
+those two have the font delivered to them, see below. The path is `romfs/font/Hud.bcfnt` or
 `Hud_JP.bcfnt` in most of them and `romfs/lang/Hud.bcfnt` in Game Notes; the file itself is
-byte-identical across all eight. Nintendo Zone carries the same font but no weekday strings
+byte-identical across all of them. Nintendo Zone carries the same font but no weekday strings
 of its own, so it is left alone.
+
+### The two applets that do not carry the font
+
+Miiverse and Nintendo Network ID Settings draw the same line, but there is no `Hud.bcfnt` in
+their romfs - they read it from `dll:` (`0004001B00018202`), the shared browser-shell archive.
+So Sunday stayed blank in those two long after the other eight had it.
+
+There is nowhere to put the file, so the *reader* moves instead. A jump table at `0x10D180`
+covers the six `sys::file` reader classes, each named outright by its RTTI (typeinfo at
+`vptr-4`, its name one word in):
+
+| # | Class | Archive |
+|---|---|---|
+| 0 | `RomReader` | `rom:`, the title's own romfs |
+| 1 | `SDReader` | the SD card, by absolute path |
+| 2 | `DataPubReader` | |
+| 3 | `SharedDataReader<MsgPolicy>` | `msg:` |
+| 4 | `SharedDataReader<DllPolicy>` | `dll:` |
+| 5 | `SharedDataReader<ContentPolicy>` | `content:` |
+
+The font open passes `4`. The patch makes it pass `0`, so `/font/Hud.bcfnt` is read from
+`rom:`, which LayeredFS serves out of `luma/titles/<TID>/romfs/` - where the build writes the
+patched font. One byte per title: `0x09BDD8` in `act`, `0x0AA260` in Miiverse.
+
+The font is borrowed from the Browser's dump; every copy in the system is the same file, so
+`hud_font_from` in the config just says where to take the original from.
+
+**`5` was tried first** - `content:`, already redirected to the SD card for the account pages -
+and the applet died on a data abort with `far = 0x2C`. The dump is unambiguous: the open
+returned NULL and the caller never checks. Fonts load at startup, and `content:` is not
+mounted yet at that point. `rom:` always is, being the title's own.
+
+Nothing falls back behind this patch: the real romfs has no `font/` directory, so an applet
+whose font stopped shipping would crash the same way. `build_hud_font()` is what prevents it.
 
 ## What is in the release
 

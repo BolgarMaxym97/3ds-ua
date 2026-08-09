@@ -366,6 +366,11 @@ TITLES = {
         # `hook_patch` ships an exheader.bin and nothing else: Luma hooks the code itself,
         # but neither title has `DirectSdmc`, so its payload could not read the SD card.
         "hook_patch": True,
+        # Neither applet carries Hud.bcfnt - both read it from the shared `dll:` archive.
+        # The font is borrowed from the Internet Browser's dump (every copy in the system is
+        # the same 25208 bytes) and the code patch points the open at the SD card instead.
+        "hud_font": "font/Hud.bcfnt",
+        "hud_font_from": "0004003000009D02",
     },
     # Miiverse posting applet: the keyboard-and-canvas overlay a game opens to write a post.
     "miiverse_post": {
@@ -1087,7 +1092,13 @@ def build_hud_font(cfg: dict, romfs: Path) -> tuple[dict[str, bytes], list[str]]
     if not rel:
         return {}, []
 
-    font = bcfnt.parse((romfs / rel).read_bytes())
+    # Two applets draw the clock line without carrying the font: they read it from a shared
+    # archive no dump covers. All nine copies of Hud.bcfnt in the system are byte-identical,
+    # so `hud_font_from` names a title that does have one, and the patched result is written
+    # where the applet will look for it - see `reader_policy` in tools/luma_hook.py.
+    donor = cfg.get("hud_font_from")
+    source = (ROOT / "work" / donor / "romfs" / rel) if donor else (romfs / rel)
+    font = bcfnt.parse(source.read_bytes())
     glyphs = load_hud_glyphs()
     bcfnt.add_glyphs(font, glyphs)
     added = " ".join(f"{chr(code)} U+{code:04X}" for code in sorted(glyphs))

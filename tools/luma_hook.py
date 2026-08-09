@@ -533,6 +533,15 @@ HOOK_PATCHES: dict[str, dict] = {
             "stub_room": 1124,
             "rodata_off": 0x699D8,  # .rodata padding, past the 48 bytes Luma claims
         },
+        # The clock line's weekday, the same case as `act` and the same one byte - see the
+        # long note on `reader_policy` there. This applet shares the browser shell, so the
+        # font open sits at the same place in the same function, only at another address, and
+        # the reader jump table numbers its classes the same way: 0 is RomReader.
+        #
+        # Unlike `act` this needs no mount rename at all. `rom:` is the title's own romfs and
+        # LayeredFS serves it unaided; the renaming there was only ever about reaching an
+        # archive that belongs to no process.
+        "reader_policy": (0x0AA260, b"\x04\x20\xa0\xe3", b"\x00\x20\xa0\xe3"),
     },
     "000400300000BA02": {
         "title": "Miiverse posting applet EUR",
@@ -574,8 +583,8 @@ HOOK_PATCHES: dict[str, dict] = {
         # `content:` strings are renamed to `rex:` - the same trick the Instruction Manual
         # patch plays on `man:`, and with no prefix of Luma's to collide with. Every read
         # through the mount then looks for /luma/titles/<TID>/romfs/<path> first and falls
-        # back to the real archive when the file is absent, so only the one translated JSON
-        # ships. See build_nnid_json() in tools/build.py.
+        # back to the real archive when the file is absent, so only the translated pages
+        # ship. See build_nnid_html() and build_nnid_json() in tools/build.py.
         #
         # The mount name and the three URL scheme spellings and the URL template all move
         # together - the applet mounts under one and addresses the pages through the others.
@@ -587,6 +596,38 @@ HOOK_PATCHES: dict[str, dict] = {
             (0x0D5D7C, b"file:///content:", b"file:///rex:\0\0\0\0"),
             (0x0E6084, b"content:", b"rex:\0\0\0\0"),
         ],
+        # The clock line's weekday. `hud.msbt` says `Нд`, and the console drew nothing: the
+        # HUD font is a 67-glyph subset whose whole Cyrillic alphabet is `ВПСЧбнрст` - exactly
+        # the seven Russian weekday abbreviations and not one letter more. `Н` and `д` are
+        # absent, and no Ukrainian spelling of Sunday can be made from what is there.
+        #
+        # The mod already adds both glyphs to `Hud.bcfnt` (see build_hud_font), and all nine
+        # copies of that font across the system are byte-identical - but this title's copy is
+        # in neither its own romfs nor `content:`. It comes from `dll:`, and Luma serves one
+        # update mount per title, already spent on `content:`.
+        #
+        # So the *reader* moves instead of the file. 0x10D180 is a jump table over the six
+        # reader classes `sys::file` provides, each named outright by the RTTI behind its
+        # vtable (typeinfo at vptr-4, its name one word in):
+        #
+        #   0  RomReader                          `rom:`, the title's own romfs
+        #   1  SDReader                           the SD card, by absolute path
+        #   2  DataPubReader
+        #   3  SharedDataReader<MsgPolicy>        `msg:`
+        #   4  SharedDataReader<DllPolicy>        `dll:`   <- the font open passes this
+        #   5  SharedDataReader<ContentPolicy>    `content:`
+        #
+        # The open at 0x09BDE8 passes 4. Passing 0 reads `/font/Hud.bcfnt` from `rom:`, which
+        # LayeredFS serves out of /luma/titles/<TID>/romfs/ - the folder the build already
+        # writes the patched font into. One byte, no stub.
+        #
+        # Passing 5 was tried first and the applet died on a data abort at 0x2C, a null the
+        # caller never checks: `content:` is not mounted yet when fonts load. `rom:` is - it
+        # is the title's own, mounted before anything else runs.
+        #
+        # The real romfs has no `font/` directory, so there is no fallback behind this: the
+        # build must always ship the font. build_hud_font() is what guarantees that.
+        "reader_policy": (0x09BDD8, b"\x04\x20\xa0\xe3", b"\x00\x20\xa0\xe3"),
     },
     # Nintendo eShop, EUR, title version 29. The same case as StreetPass Mii Plaza and the
     # two Miiverse applets: Luma hooks the code unaided, but accessInfo is 0x240001
@@ -3029,6 +3070,8 @@ def generate(
             # exheader's own text.size is the range it will search.
             patch["text_size"] = struct.unpack_from("<I", exheader, TEXT_SIZE_OFFSET)[0]
             _verify_mount_search(patch, code, records)
+        if patch.get("reader_policy"):
+            log.append(_reader_policy_record(patch, code, records))
         if records:
             files["code.ips"] = make_ips(records)
         else:
@@ -3455,6 +3498,27 @@ def _verify_smdh_hook(
             f"the wrapper changes Luma's symbol search: fsMountArchive -> "
             f"{symbols['fsMountArchive']}, expected 0x{patch['stub_off']:X}"
         )
+
+
+def _reader_policy_record(patch: dict, code: bytes, records: list) -> str:
+    """Move one file open onto the reader whose archive LayeredFS can serve.
+
+    A single `mov r2, #imm` picks the reader class an open goes through, so the redirection
+    costs one instruction. The dump is checked first: an offset that no longer holds the
+    expected instruction would otherwise corrupt whatever moved there.
+    """
+    offset, expected, replacement = patch["reader_policy"]
+    found = code[offset:offset + len(expected)]
+    if found != expected:
+        raise RuntimeError(
+            f"{patch['title']}: 0x{offset:X} holds {found.hex()}, not the "
+            f"{expected.hex()} the reader-policy patch was derived from"
+        )
+    records.append((offset, replacement))
+    return (
+        f"code.ips: font reader at 0x{offset:X} moved off the `dll:` policy onto `rom:`, "
+        f"so /font/Hud.bcfnt is served from the SD card"
+    )
 
 
 def _verify_mount_search(patch: dict, code: bytes, records: list) -> None:

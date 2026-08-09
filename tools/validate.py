@@ -10,7 +10,9 @@ Rules (every violation is an error):
   2. line width in pixels above the widest official localisation x WIDTH_LIMIT
      would be clipped
   3. more lines than the tallest official localisation would overflow the dialog
-  4. a control tag that appears in no official localisation of that label is invented
+  4. a control tag whose shape (group and type, argument aside) appears in no official
+     localisation anywhere in the file is invented - the argument is data, so a colour tag
+     with a colour Nintendo never used is still a colour tag
   5. a malformed tag token - unless the same brace run appears verbatim in an official
      localisation of that label, i.e. it is literal text and not a tag at all (the software
      keyboard warnings list `{|}~` among the characters a password may contain)
@@ -90,6 +92,9 @@ class Budget:
     format_sets: set[tuple[str, ...]] = field(default_factory=set)
     # Brace runs the original text itself carries, tags and literal punctuation alike.
     braces: set[str] = field(default_factory=set)
+    # Every tag *shape* - closing slash, group, type - used anywhere in this file, with the
+    # argument dropped. Shared by every label of the title, unlike the sets above.
+    tag_shapes: set[tuple[str, str, str]] = field(default_factory=set)
 
 
 def load_charset() -> set[int]:
@@ -104,7 +109,10 @@ def load_widths() -> dict[int, int]:
 
 def hud_charset(cfg: dict) -> set[int]:
     """What the title's HUD font can draw once the build has added its glyphs to it."""
-    path = ROOT / "work" / cfg["source_tid"] / "romfs" / cfg["hud_font"]
+    # `hud_font_from` names a donor for the two applets that read the font from a shared
+    # archive rather than carrying it - see build_hud_font() in tools/build.py.
+    owner = cfg.get("hud_font_from") or cfg["source_tid"]
+    path = ROOT / "work" / owner / "romfs" / cfg["hud_font"]
     font = bcfnt.parse(path.read_bytes())
     return set(font.cmap) | set(load_hud_glyphs())
 
@@ -149,15 +157,21 @@ def label_budgets(name: str, widths: dict[int, int]) -> dict[str, Budget]:
     store = open_store(cfg, ROOT / "work" / cfg["source_tid"] / "romfs")
     budgets: dict[str, Budget] = {}
 
+    # One set for the whole title, handed to every label: which tags exist at all is a
+    # property of the renderer, not of the string that happens to use one.
+    shapes: set[tuple[str, str, str]] = set()
+
     for lang in store.languages():
         for data in store.read(lang).values():
             msbt = msbt_parse(data)
             for index, text in enumerate(msbt.texts):
                 label = msbt.label_of(index) or f"__index_{index}"
-                budget = budgets.setdefault(label, Budget())
+                budget = budgets.setdefault(label, Budget(tag_shapes=shapes))
                 budget.width_px = max(budget.width_px, pixel_width(text, widths))
                 budget.lines = max(budget.lines, text.count("\n") + 1)
-                budget.tags |= set(TOKEN_RE.findall(text))
+                tags = set(TOKEN_RE.findall(text))
+                budget.tags |= tags
+                shapes |= {tag[:3] for tag in tags}
                 budget.braces |= set(BRACE_RE.findall(text))
                 budget.format_sets.add(tuple(sorted(FORMAT_RE.findall(text))))
 
@@ -171,6 +185,7 @@ def label_budgets(name: str, widths: dict[int, int]) -> dict[str, Budget]:
             tags=set().union(*(budgets[label].tags for label in group)),
             format_sets=set().union(*(budgets[label].format_sets for label in group)),
             braces=set().union(*(budgets[label].braces for label in group)),
+            tag_shapes=shapes,
         )
         for label in group:
             budgets[label] = shared
@@ -210,7 +225,13 @@ def check_entry(
         allowed = sorted(budget.format_sets)
         problems.append(f"{label}: format specifiers {list(dst_formats)} match no localisation {allowed}")
 
-    unknown = set(TOKEN_RE.findall(ua)) - budget.tags
+    # A tag this label never carried can still be Nintendo's own with a different argument -
+    # `{t:0.3:RRGGBBAA}` is one colour tag, not one tag per colour. So a tag the label does
+    # not know is only invented when its *shape* appears nowhere in the file either.
+    unknown = {
+        tag for tag in set(TOKEN_RE.findall(ua)) - budget.tags
+        if tag[:3] not in budget.tag_shapes
+    }
     if unknown:
         problems.append(f"{label}: tags present in no official localisation: {sorted(unknown)}")
 
