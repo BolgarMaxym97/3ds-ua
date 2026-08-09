@@ -458,6 +458,10 @@ def validate_layouts(
     checked = 0
     for spec_file in sorted(layouts.glob("*.json")):
         name = spec_file.stem
+        if name not in TITLES:
+            # Only a title's own layout spec belongs here; anything else in src/layouts/ is
+            # checked by its own function.
+            continue
         romfs = ROOT / "work" / TITLES[name]["source_tid"] / "romfs"
         if not romfs.is_dir():
             continue
@@ -511,6 +515,88 @@ def _check_layout_line(
     return problems
 
 
+def validate_nnid(charset: set[int], table: dict[str, str], widths: dict[int, int]) -> tuple[int, list[str]]:
+    """Check the account pages' string table.
+
+    Two things this can prove and the layout checks elsewhere cannot: every glyph is one the
+    console can draw, and the translation keeps the original's structure. The pages are HTML,
+    so a lost `<br>` reflows a dialog and a lost `\n` runs two lines together - and unlike a
+    text pane there is no pixel budget to measure against, because the browser wraps.
+
+    Keys whose English is `null` are the US-only COPPA and credit-card screens; a European
+    build has no text for them and none is expected.
+    """
+    strings = ROOT / "src" / "strings" / "nnid" / "message__EU.json"
+    if not strings.is_file():
+        return 0, []
+
+    entries = json.loads(strings.read_text(encoding="utf-8"))
+    problems: list[str] = []
+    checked = 0
+    for key, entry in entries.items():
+        original, ua = entry["en"], entry["ua"]
+        if not ua:
+            if original:
+                problems.append(f"nnid {key}: not translated")
+            continue
+        checked += 1
+        rendered = apply_homoglyphs(ua, table)
+        # `\n` is a line break the browser honours, not a glyph the font has to carry.
+        missing = [ch for ch in rendered if ch != "\n" and ord(ch) not in charset]
+        if missing:
+            problems.append(f"nnid {key}: missing glyphs {missing}")
+        for tag in set(re.findall(r"<[^>]+>", original)) - {"<br>"}:
+            if tag not in ua:
+                problems.append(f"nnid {key}: lost the {tag} tag")
+        if ("\n" in original) and ("\n" not in ua) and len(ua) > 40:
+            problems.append(f"nnid {key}: the original breaks lines and this does not")
+    return checked, problems
+
+
+def validate_nnid_pages(
+    charset: set[int], table: dict[str, str], widths: dict[int, int]
+) -> tuple[int, list[str]]:
+    """Check the captions written into the account pages' markup.
+
+    Same two guarantees as the string table above - drawable glyphs, structure kept - with
+    one more that only applies here: the translation is spliced into HTML, so anything that
+    opens a tag would change the page instead of appearing on it.
+
+    Coverage is checked against the dump when there is one: a caption the extractor found in
+    `index_<lang>.html` and the source file does not carry would ship in the slot language,
+    silently, which is exactly the failure that made the first attempt look like a dead patch.
+    """
+    strings = ROOT / "src" / "strings" / "nnid" / "index__EU.json"
+    if not strings.is_file():
+        return 0, []
+
+    entries = json.loads(strings.read_text(encoding="utf-8"))
+    problems: list[str] = []
+    for key, entry in entries.items():
+        original, ua = entry["en"], entry["ua"]
+        if not ua.strip():
+            problems.append(f"nnid page {key}: not translated")
+            continue
+        rendered = apply_homoglyphs(ua, table)
+        missing = [ch for ch in rendered if ch != "\n" and ord(ch) not in charset]
+        if missing:
+            problems.append(f"nnid page {key}: missing glyphs {missing}")
+        for tag in set(re.findall(r"<[^>]+>", ua)) - {"<br>"}:
+            problems.append(f"nnid page {key}: {tag} would be spliced into the markup")
+        if len(re.findall(r"<br>", original)) and not re.search(r"<br>", ua) and len(ua) > 40:
+            problems.append(f"nnid page {key}: the original breaks lines and this does not")
+
+    pages = ROOT / "work" / "0004001B00018002" / "romfs" / "index_EU_Russian.html"
+    if pages.is_file():
+        import nnid_html
+
+        for unit in nnid_html.units(pages.read_text(encoding="utf-8")):
+            if re.search(r"[Ѐ-ӿ]", unit.text) and unit.key not in entries:
+                problems.append(f"nnid page {unit.key}: in the dump, missing from index__EU.json")
+
+    return len(entries), problems
+
+
 def main() -> int:
     ap = argparse.ArgumentParser()
     ap.add_argument("titles", nargs="*", default=None)
@@ -539,6 +625,18 @@ def main() -> int:
             if not checked:
                 continue
             print(f"{label}: {checked} {noun}, problems: {len(problems)}")
+            for problem in problems:
+                print(f"  ✗ {problem}")
+            failed = failed or bool(problems)
+
+        for noun, check in (
+            ("account-page strings", validate_nnid),
+            ("account-page captions", validate_nnid_pages),
+        ):
+            checked, problems = check(charset, table, widths)
+            if not checked:
+                continue
+            print(f"nnid pages: {checked} {noun}, problems: {len(problems)}")
             for problem in problems:
                 print(f"  ✗ {problem}")
             failed = failed or bool(problems)

@@ -1,0 +1,1254 @@
+{
+  "about_club_nintendo": {
+    "en": "Club Nintendo is only available in select regions.",
+    "ua": "Клуб Nintendo доступний не в усіх регіонах."
+  },
+  "about_eshop": {
+    "en": "Nintendo eShop Account",
+    "ua": "Обліковий запис Nintendo eShop"
+  },
+  "about_id_delete": {
+    "en": "Deleting Your<br>Nintendo Network ID",
+    "ua": "Видалення вашого<br>Nintendo Network ID"
+  },
+  "about_nnid_erase": {
+    "en": "Deleting Your<br>Nintendo Network ID",
+    "ua": "Видалення вашого<br>Nintendo Network ID"
+  },
+  "about_registrable_system": {
+    "en": "Linking to Other Systems",
+    "ua": "Зв'язок з іншими консолями"
+  },
+  "acquireAccountToken": {
+    "en": "Signing in...",
+    "ua": "Триває вхід…"
+  },
+  "ad_mail_setting": {
+    "en": "Email Preference",
+    "ua": "Отримання електронної пошти"
+  },
+  "after_change": {
+    "en": "New ID:",
+    "ua": "Новий ID:"
+  },
+  "area": {
+    "en": "Region",
+    "ua": "Регіон"
+  },
+  "ask_delete_nnid": {
+    "en": "Once deleted, data linked to your\nID cannot be recovered. Are you\nsure you wish to permanently\ndelete your Nintendo Network ID?",
+    "ua": "Видалені дані, пов'язані з вашим\nID, відновити неможливо.\nСправді назавжди видалити\nваш Nintendo Network ID?"
+  },
+  "ask_input_pin": {
+    "en": "This feature is restricted by\nParental Controls.\n \nPlease enter your PIN to\ndisable these restrictions,\nthen follow the on-screen\ninstructions.",
+    "ua": "Цю функцію обмежено\nбатьківським контролем.\n \nВведіть PIN-код, щоб зняти\nобмеження, і далі дійте\nза вказівками\nна екрані."
+  },
+  "ask_overwrite_my_mii": {
+    "en": "The Personal Mii for this\nsystem will be overwritten\nby the Mii linked to your\nNintendo Network ID.\nContinue?",
+    "ua": "Персональний Mii цієї\nконсолі буде замінено\nна Mii, пов'язаний з вашим\nNintendo Network ID.\nПродовжити?"
+  },
+  "ask_overwrite_nnid_mii": {
+    "en": "The Mii currently linked to\nyour Nintendo Network ID\nwill be overwritten by your\nsystem's Personal Mii.\nContinue?",
+    "ua": "Mii, пов'язаний з вашим\nNintendo Network ID, буде\nзамінено на Персональний\nMii цієї консолі.\nПродовжити?"
+  },
+  "ask_password_skip": {
+    "en": "You can keep your password saved<br>on the system so you don't have<br>to enter it each time you sign in.<br>However, even if you do this, you<br>may still occasionally be asked<br>for your password.",
+    "ua": "Пароль можна зберегти<br>на консолі, щоб не вводити<br>його щоразу під час входу.<br>Але навіть тоді іноді<br>його все одно<br>проситимуть ввести."
+  },
+  "ask_receive_ad_mail": {
+    "en": "Would you like to receive<br>customised emails from Nintendo?",
+    "ua": "Отримувати від Nintendo листи<br>з добірками пропозицій?"
+  },
+  "ask_save_pass": {
+    "en": "Would you like the system to<br>remember your password?",
+    "ua": "Зберегти пароль<br>на цій консолі?"
+  },
+  "ask_send_auth_mail": {
+    "en": "Send another email to the\nregistered email address?",
+    "ua": "Надіслати ще один лист\nна зареєстровану\nелектронну пошту?"
+  },
+  "ask_send_mail_for_pass": {
+    "en": "Would you like to have a\nrecovery email sent to your\nregistered email address?",
+    "ua": "Надіслати лист для\nвідновлення пароля\nна зареєстровану\nелектронну пошту?"
+  },
+  "ask_solve_device_mismatch": {
+    "en": "Would you like to remove the<br>link to this Nintendo Network ID<br>from the system?",
+    "ua": "Прибрати з цієї консолі<br>зв'язок із цим<br>Nintendo Network ID?"
+  },
+  "ask_stop_nnid_registration": {
+    "en": "This will cancel the Nintendo\nNetwork ID linking process.\n\nAre you sure you\nwish to continue?",
+    "ua": "Прив'язування\nNintendo Network ID\nбуде скасовано.\n\nПродовжити?"
+  },
+  "ask_try_again": {
+    "en": "Try again?",
+    "ua": "Спробувати ще раз?"
+  },
+  "ask_use_by_offdevice": {
+    "en": "Would you like to restrict the<br>use of this Nintendo Network ID<br>on other devices?",
+    "ua": "Обмежити використання<br>цього Nintendo Network ID<br>на інших пристроях?"
+  },
+  "ask_which_mii": {
+    "en": "Select a Mii to use.",
+    "ua": "Виберіть Mii."
+  },
+  "be_careful_nnid": {
+    "en": "Your ID will be visible to others on Nintendo Network, such as other Miiverse users. Do not include any personal information or offensive content in your ID.",
+    "ua": "Ваш ID бачитимуть інші в Nintendo Network, зокрема користувачі Miiverse. Не вказуйте в ньому особистих даних чи образливого змісту."
+  },
+  "belt_change_user_info": {
+    "en": "Please edit user information.",
+    "ua": "Змініть інформацію<br>про користувача."
+  },
+  "belt_confirm_user_info": {
+    "en": "Please check and confirm<br>user information.",
+    "ua": "Перевірте й підтвердьте<br>інформацію про користувача."
+  },
+  "belt_fix_user_info": {
+    "en": "Please check the<br>fields highlighted.",
+    "ua": "Перевірте поля,<br>виділені кольором."
+  },
+  "belt_set_user_info": {
+    "en": "Please enter user information.",
+    "ua": "Введіть інформацію про користувача."
+  },
+  "birthday": {
+    "en": "Date of Birth",
+    "ua": "Дата народження"
+  },
+  "blt_confirm_credit_info": {
+    "en": null,
+    "ua": ""
+  },
+  "blt_confirm_exist_nnid_info": {
+    "en": "Please confirm that this<br>information is correct.",
+    "ua": "Підтвердьте, що ця<br>інформація правильна."
+  },
+  "blt_fix_credit_info": {
+    "en": null,
+    "ua": ""
+  },
+  "blt_fix_password": {
+    "en": "Please check the<br>fields highlighted.",
+    "ua": "Перевірте поля,<br>виділені кольором."
+  },
+  "blt_set_by_parent": {
+    "en": "Please enter the following information.",
+    "ua": "Введіть таку інформацію."
+  },
+  "blt_set_credit_info": {
+    "en": null,
+    "ua": ""
+  },
+  "blt_set_exist_nnid_info": {
+    "en": "Please enter the information<br>for the ID you want to link.",
+    "ua": "Введіть дані ID, який<br>ви хочете прив'язати."
+  },
+  "blt_set_password": {
+    "en": "Set a password.",
+    "ua": "Задайте пароль."
+  },
+  "btn_ad_mail_settings": {
+    "en": "Customised Email Offers",
+    "ua": "Листи з добірками пропозицій"
+  },
+  "btn_back": {
+    "en": "Back",
+    "ua": "Назад"
+  },
+  "btn_back_to_system_settings": {
+    "en": "Return to the System Settings",
+    "ua": "Повернутися в Налаштування системи"
+  },
+  "btn_cancel": {
+    "en": "Cancel",
+    "ua": "Скасувати"
+  },
+  "btn_case_already_wiiu": {
+    "en": "(If a Nintendo Network ID<br>has already been created.)",
+    "ua": "(Якщо Nintendo Network ID<br>уже створено.)"
+  },
+  "btn_change_passinput": {
+    "en": "Remember Password",
+    "ua": "Зберегти пароль"
+  },
+  "btn_change_password": {
+    "en": "Change Password",
+    "ua": "Змінити пароль"
+  },
+  "btn_check_eula": {
+    "en": "Nintendo Network Agreement and Privacy Policy",
+    "ua": "Угода Nintendo Network<br>і політика конфіденційності"
+  },
+  "btn_check_mail_receive": {
+    "en": "Email Address Verification",
+    "ua": "Підтвердження електронної пошти"
+  },
+  "btn_confirm": {
+    "en": "Confirm",
+    "ua": "Підтвердити"
+  },
+  "btn_delete": {
+    "en": "Delete",
+    "ua": "Видалити"
+  },
+  "btn_delete_nnid": {
+    "en": "Delete Nintendo Network ID",
+    "ua": "Видалити Nintendo Network ID"
+  },
+  "btn_finish": {
+    "en": "Close",
+    "ua": "Закрити"
+  },
+  "btn_forgot_password": {
+    "en": "I forgot",
+    "ua": "Я забув(ла)"
+  },
+  "btn_input_auth_code": {
+    "en": "Enter Confirmation Code",
+    "ua": "Ввести код підтвердження"
+  },
+  "btn_login": {
+    "en": "Sign in",
+    "ua": "Увійти"
+  },
+  "btn_make": {
+    "en": "Launch",
+    "ua": "Запустити"
+  },
+  "btn_mii_settings": {
+    "en": "Edit Your Mii",
+    "ua": "Змінити Mii"
+  },
+  "btn_move": {
+    "en": "Launch",
+    "ua": "Запустити"
+  },
+  "btn_next": {
+    "en": "Next",
+    "ua": "Далі"
+  },
+  "btn_no": {
+    "en": "No",
+    "ua": "Ні"
+  },
+  "btn_not_arrive_mail": {
+    "en": "If Your Email Does Not Arrive",
+    "ua": "Якщо лист не надійшов"
+  },
+  "btn_not_open": {
+    "en": "Don't Share",
+    "ua": "Не відкривати"
+  },
+  "btn_not_use": {
+    "en": "Restrict",
+    "ua": "Обмежити"
+  },
+  "btn_offdevice_settings": {
+    "en": "Access from PCs<br>and Other Devices",
+    "ua": "Доступ з комп'ютерів<br>та інших пристроїв"
+  },
+  "btn_ok": {
+    "en": "OK",
+    "ua": "OK"
+  },
+  "btn_open": {
+    "en": "Share",
+    "ua": "Відкрити"
+  },
+  "btn_other": {
+    "en": "Other",
+    "ua": "Інше"
+  },
+  "btn_password_settings": {
+    "en": "Password Settings",
+    "ua": "Налаштування пароля"
+  },
+  "btn_personal_info_settings": {
+    "en": "User Information Settings",
+    "ua": "Інформація про користувача"
+  },
+  "btn_regist": {
+    "en": "Confirm",
+    "ua": "Підтвердити"
+  },
+  "btn_regist_existing_nnid": {
+    "en": "Link an Existing ID",
+    "ua": "Прив'язати наявний ID"
+  },
+  "btn_regist_new_nnid": {
+    "en": "Create a New ID",
+    "ua": "Створити новий ID"
+  },
+  "btn_resend_mail": {
+    "en": "Resend Email",
+    "ua": "Надіслати ще раз"
+  },
+  "btn_send": {
+    "en": "Send",
+    "ua": "Надіслати"
+  },
+  "btn_set": {
+    "en": "Set",
+    "ua": "Задати"
+  },
+  "btn_stop": {
+    "en": "Cancel",
+    "ua": "Скасувати"
+  },
+  "btn_understand_above": {
+    "en": "I understand",
+    "ua": "Погоджуюсь"
+  },
+  "btn_unlock": {
+    "en": "Enter PIN",
+    "ua": "PIN-код"
+  },
+  "btn_use": {
+    "en": "Do Not Restrict",
+    "ua": "Не обмежувати"
+  },
+  "btn_yes": {
+    "en": "Yes",
+    "ua": "Так"
+  },
+  "campaign": {
+    "en": "If you wish to opt out of the collection and<br>use of your data for customised offers,<br>select Do Not Receive. You will not receive<br>any emails with offers from Nintendo and<br>we will no longer process your data to<br>customise offers for you.",
+    "ua": "<span class=\"smallText\">Якщо ви не хочете, щоб ваші дані<br>збирали й використовували для добірок<br>пропозицій, виберіть Не отримувати.<br>Ви не отримуватимете листів<br>з пропозиціями від Nintendo, і ми<br>більше не оброблятимемо ваші дані<br>для добірки пропозицій.</span>"
+  },
+  "can_not_change": {
+    "en": "It is not possible to change\nyour Nintendo Network ID,\ndate of birth or region.\nFor details, please visit\nsupport.nintendo.com.",
+    "ua": "Змінити ваш Nintendo Network\nID, дату народження чи регіон\nнеможливо. Докладніше —\nна сайті\nsupport.nintendo.com."
+  },
+  "can_not_change_jp": {
+    "en": "[can_not_change_jp]",
+    "ua": "[can_not_change_jp]"
+  },
+  "cant_change": {
+    "en": "(You cannot change this.)",
+    "ua": "(Змінити це неможливо.)"
+  },
+  "cant_change_later": {
+    "en": "(You cannot change this later.)",
+    "ua": "(Змінити це згодом неможливо.)"
+  },
+  "cant_download": {
+    "en": "You will no longer be able to use<br>or redownload any software you<br>purchased in Nintendo eShop.<br>Your funds will also be deleted.<br><br>Are you sure you want to delete<br>your Nintendo Network ID?",
+    "ua": "Ви більше не зможете<br>користуватися чи повторно<br>завантажувати програми,<br>придбані в Nintendo eShop.<br>Ваші кошти теж буде видалено.<br><br>Справді видалити ваш<br>Nintendo Network ID?"
+  },
+  "cant_use_nnid_service": {
+    "en": "You will no longer be able to<br>use services that require a<br>Nintendo Network ID.",
+    "ua": "Ви більше не зможете<br>користуватися сервісами, які<br>потребують Nintendo Network ID."
+  },
+  "caution": {
+    "en": "Precautions",
+    "ua": "Застереження"
+  },
+  "caution_message": {
+    "en": "Deleting your Nintendo Network\nID will permanently remove all\nof your software licences and\nNintendo eShop funds. Software\nregistered to your ID can no\nlonger be used or downloaded.",
+    "ua": "Видалення Nintendo Network ID\nназавжди прибере всі ваші\nліцензії на програми й кошти\nв Nintendo eShop. Програмами,\nзареєстрованими на ваш ID, не\nвийде користуватися чи завантажити їх."
+  },
+  "change_birth": {
+    "en": null,
+    "ua": ""
+  },
+  "change_birth_country": {
+    "en": "I want to change<br>my date of birth or region.",
+    "ua": "Я хочу змінити дату<br>народження або регіон."
+  },
+  "change_mail_address": {
+    "en": "Change your email address",
+    "ua": "Змінити електронну пошту"
+  },
+  "change_mail_wish": {
+    "en": "I want to change my email address.",
+    "ua": "Я хочу змінити електронну пошту."
+  },
+  "change_nickname": {
+    "en": "I want to change my nickname.",
+    "ua": "Я хочу змінити псевдонім."
+  },
+  "change_nnid": {
+    "en": "I want to change my<br>Nintendo Network ID.",
+    "ua": "Я хочу змінити свій<br>Nintendo Network ID."
+  },
+  "check_hp": {
+    "en": "If you don't receive the\nemail within an hour, visit\nsupport.nintendo.com.",
+    "ua": "Якщо лист не надійде\nпротягом години, відвідайте\nsupport.nintendo.com."
+  },
+  "checking": {
+    "en": "Checking...",
+    "ua": "Перевірка…"
+  },
+  "club_nintendo_limitation": {
+    "en": "You may link your Club Nintendo account to only one Nintendo Network ID.",
+    "ua": "Обліковий запис Клубу Nintendo можна пов'язати лише з одним Nintendo Network ID."
+  },
+  "contact_to": {
+    "en": null,
+    "ua": ""
+  },
+  "coppa_legal_info": {
+    "en": "[coppa_legal_info]",
+    "ua": "[coppa_legal_info]"
+  },
+  "country": {
+    "en": "Country",
+    "ua": "Країна"
+  },
+  "credit_expires": {
+    "en": "Credit card expiration date",
+    "ua": "Термін дії платіжної карти"
+  },
+  "credit_month": {
+    "en": null,
+    "ua": ""
+  },
+  "credit_number": {
+    "en": "Credit card number (16 digits)",
+    "ua": "Номер платіжної карти (16 цифр)"
+  },
+  "credit_security_code": {
+    "en": "Credit card security code",
+    "ua": "Код безпеки платіжної карти"
+  },
+  "credit_year": {
+    "en": null,
+    "ua": ""
+  },
+  "current_password": {
+    "en": "Current Password",
+    "ua": "Поточний пароль"
+  },
+  "day": {
+    "en": "Day",
+    "ua": "День"
+  },
+  "dear_kids": {
+    "en": "Parents and Guardians",
+    "ua": "Батькам і опікунам"
+  },
+  "dear_wii_u_user": {
+    "en": "Wii U Users",
+    "ua": "Користувачам Wii U"
+  },
+  "delete_and": {
+    "en": "If you delete your Nintendo<br>Network ID, the following<br>will be deleted.",
+    "ua": "Якщо видалити ваш Nintendo<br>Network ID, буде видалено<br>таке."
+  },
+  "delete_but_mail": {
+    "en": "It may take some time before the<br>deletion process is complete.",
+    "ua": "Видалення може тривати<br>певний час."
+  },
+  "delete_friends": {
+    "en": "Contents of your friend list",
+    "ua": "Вміст вашого списку друзів"
+  },
+  "delete_friends_contents": {
+    "en": "Friend data stored by your<br>Nintendo Network ID and<br>friend data stored by your<br>system are kept separately.<br>Friend data stored on your<br>system will not be deleted.",
+    "ua": "Дані друзів, збережені<br>у вашому Nintendo Network ID,<br>і дані друзів, збережені<br>на консолі, зберігаються<br>окремо. Дані на консолі<br>видалено не буде."
+  },
+  "delete_history": {
+    "en": "Nintendo eShop data",
+    "ua": "Дані Nintendo eShop"
+  },
+  "delete_history_contents": {
+    "en": "Licences for software or add-on<br>content (including HOME Menu<br>themes) you have acquired will<br>be deleted, and you will no longer<br>be able to use or redownload<br>them from Nintendo eShop<br>on any devices.",
+    "ua": "Ліцензії на програми й додатковий<br>вміст (зокрема теми Меню HOME),<br>які ви отримали, буде видалено,<br>і ви більше не зможете ними<br>користуватися чи завантажити їх<br>з Nintendo eShop на жодному<br>пристрої."
+  },
+  "delete_miiverse": {
+    "en": "Miiverse posts and comments",
+    "ua": "Дописи й коментарі в Miiverse"
+  },
+  "delete_miiverse_contents": {
+    "en": "It may take some time before<br>Miiverse posts are deleted.",
+    "ua": "Видалення дописів у Miiverse<br>може тривати певний час."
+  },
+  "delete_money": {
+    "en": "Funds in Nintendo eShop",
+    "ua": "Кошти в Nintendo eShop"
+  },
+  "delete_money_contents": {
+    "en": "All funds linked to your Nintendo Network ID will be deleted and will no longer be usable on any device.",
+    "ua": "Усі кошти, пов'язані з вашим Nintendo Network ID, буде видалено, і вони стануть недоступні на всіх пристроях."
+  },
+  "delete_nnid": {
+    "en": "Delete your Nintendo Network ID.",
+    "ua": "Видалити ваш Nintendo Network ID."
+  },
+  "delete_nnid_comp": {
+    "en": "I want to delete my Nintendo<br>Network ID, along with all related software licences and Nintendo eShop funds, Miiverse posts, etc.",
+    "ua": "Я хочу видалити свій Nintendo<br>Network ID разом з усіма ліцензіями на програми, коштами в Nintendo eShop, дописами в Miiverse тощо."
+  },
+  "delete_other_machine": {
+    "en": "A Nintendo Network ID<br>that has been deleted cannot<br>be used again on this system.<br>However, if you have the ID<br>linked to any other Nintendo<br>devices, you will have to<br>access your Nintendo<br>Network ID on these other<br>devices in order to complete<br>the deletion process.",
+    "ua": "Видалений Nintendo Network ID<br>більше не можна використати<br>на цій консолі. Але якщо цей ID<br>прив'язаний до інших пристроїв<br>Nintendo, щоб завершити<br>видалення, потрібно відкрити<br>Nintendo Network ID<br>на кожному<br>з тих<br>пристроїв."
+  },
+  "device_mismatch": {
+    "en": "You cannot use this Nintendo\nNetwork ID on this system.\n\nPlease contact your local\ncustomer support centre. For\ncontact details, check the\nOperations Manual or visit\nsupport.nintendo.com.",
+    "ua": "Цей Nintendo Network ID\nне можна використати\nна цій консолі.\n\nЗверніться до місцевої\nслужби підтримки. Контакти\nє в Посібнику з експлуатації\nабо на support.nintendo.com."
+  },
+  "do_by_parent": {
+    "en": null,
+    "ua": ""
+  },
+  "do_input": {
+    "en": "Don't Remember",
+    "ua": "Не зберігати"
+  },
+  "dont_input": {
+    "en": "Remember",
+    "ua": "Зберегти"
+  },
+  "e-mail_address": {
+    "en": "Email Address",
+    "ua": "Електронна пошта"
+  },
+  "e-mail_address_again": {
+    "en": "Confirm Email Address",
+    "ua": "Підтвердьте електронну пошту"
+  },
+  "enjoy_nnid": {
+    "en": "You're now ready to enjoy<br>Nintendo Network!",
+    "ua": "Тепер можна користуватися<br>Nintendo Network!"
+  },
+  "erase_miiverse": {
+    "en": "I want to delete my<br>Miiverse posts or comments.",
+    "ua": "Я хочу видалити свої<br>дописи чи коментарі в Miiverse."
+  },
+  "error_go_to_region_settings": {
+    "en": null,
+    "ua": ""
+  },
+  "error_invalid_auth_code": {
+    "en": "The confirmation code\nis incorrect.\n\nCheck the email\nand try again.",
+    "ua": "Код підтвердження\nневірний.\n\nПеревірте лист\nі спробуйте ще раз."
+  },
+  "error_ngword_in_creator": {
+    "en": "The creator name for your\nPersonal Mii includes text\nthat cannot be used. Please\nchange the creator's name in\nMii Maker.",
+    "ua": "Ім'я автора вашого\nПерсонального Mii містить\nнеприпустимий текст.\nЗмініть ім'я автора\nв Mii Maker."
+  },
+  "error_ngword_in_mii": {
+    "en": "The nickname of your\nPersonal Mii includes text\nthat cannot be used. Please\nchange the nickname in\nMii Maker.",
+    "ua": "Псевдонім вашого\nПерсонального Mii містить\nнеприпустимий текст.\nЗмініть псевдонім\nу Mii Maker."
+  },
+  "error_nnid_was_changed": {
+    "en": "Your Nintendo Network ID\nhas been changed.",
+    "ua": "Ваш Nintendo Network ID\nзмінено."
+  },
+  "error_no_mii": {
+    "en": "You will need a Personal Mii\nto be able to link an ID.\nWould you like to launch\nMii Maker and make a\nPersonal Mii?",
+    "ua": "Щоб прив'язати ID, потрібен\nПерсональний Mii. Запустити\nMii Maker і створити\nПерсональний Mii?"
+  },
+  "error_not_online": {
+    "en": "An internet connection is\nrequired to link a Nintendo\nNetwork ID.\n\nMake sure your connection\nsettings are correct via\nInternet Settings in the\nSystem Settings.",
+    "ua": "Щоб прив'язати Nintendo\nNetwork ID, потрібне\nз'єднання з Інтернетом.\n\nПеревірте налаштування\nз'єднання в розділі\nІнтернет-налаштування\nв Налаштуваннях системи."
+  },
+  "error_not_opened_mii": {
+    "en": "In order to link a Nintendo\nNetwork ID, you must enable\nsharing of your Personal Mii.\n\nPlease note that if the sharing\nof a Mii character is enabled,\nit may remain on others'\nsystems and appear in games\nthat they play after you have\nplayed together via a wireless\nconnection.\n\nShare your Personal Mii\nwith others?",
+    "ua": "Щоб прив'язати Nintendo\nNetwork ID, потрібно\nдозволити доступ до вашого\nПерсонального Mii.\n\nЗверніть увагу: якщо доступ\nдо Mii відкрито, він може\nлишитися на консолях інших\nгравців і з'являтися в іграх,\nу які вони грають після\nбездротового сеансу з вами.\n\nВідкрити доступ до вашого\nПерсонального Mii?"
+  },
+  "error_not_serviced": {
+    "en": "You cannot create a Nintendo\nNetwork ID with your current\nregion setting.\n\nCancelling Nintendo\nNetwork ID creation.",
+    "ua": "З поточним налаштуванням\nрегіону створити Nintendo\nNetwork ID неможливо.\n\nСтворення Nintendo\nNetwork ID скасовано."
+  },
+  "error_password_not_correct": {
+    "en": "Incorrect password.\nPlease try again.",
+    "ua": "Неправильний пароль.\nСпробуйте ще раз."
+  },
+  "error_stop_nnid_registration": {
+    "en": "Nintendo Network ID link\ncancelled.",
+    "ua": "Прив'язування Nintendo\nNetwork ID скасовано."
+  },
+  "error_yet_mail_receive_check": {
+    "en": "Please verify your\nemail address first.",
+    "ua": "Спершу підтвердьте свою\nелектронну пошту."
+  },
+  "eshop_country": {
+    "en": "You can only create or link a<br>Nintendo Network ID with country<br>settings corresponding to your<br>current region settings on<br>this system.",
+    "ua": "Створити чи прив'язати Nintendo<br>Network ID можна лише з тими<br>налаштуваннями країни, які<br>відповідають поточному регіону<br>цієї консолі."
+  },
+  "eshop_erase": {
+    "en": "Deleting your Nintendo Network<br>ID will also delete your Nintendo<br>eShop purchase history and funds.",
+    "ua": "Видалення Nintendo Network ID<br>також видалить історію покупок<br>і кошти в Nintendo eShop."
+  },
+  "eshop_need_nnid": {
+    "en": "You will need to sign in with your Nintendo Network ID each time you use Nintendo eShop.",
+    "ua": "Щоразу, користуючись Nintendo eShop, потрібно входити зі своїм Nintendo Network ID."
+  },
+  "eula_is_updated": {
+    "en": "The Nintendo Network\nAgreement and Nintendo\nNetwork Privacy Policy have\nbeen updated.",
+    "ua": "Угоду Nintendo Network\nі політику конфіденційності\nNintendo Network\nоновлено."
+  },
+  "expired_auth_code": {
+    "en": "The confirmation code\nhas expired.\n\nSend a new confirmation\ncode to the registered\nemail address?",
+    "ua": "Термін дії коду\nпідтвердження минув.\n\nНадіслати новий код\nна зареєстровану\nелектронну пошту?"
+  },
+  "fail_regist_nnid": {
+    "en": "Nintendo Network ID link failed.",
+    "ua": "Не вдалося прив'язати Nintendo Network ID."
+  },
+  "femail": {
+    "en": "Female",
+    "ua": "Жіноча"
+  },
+  "fin_coppa": {
+    "en": null,
+    "ua": ""
+  },
+  "finish_ad_mail_settings_update": {
+    "en": "Your opt-in settings have\nbeen saved.\nNote: If you are below the\nage of 16 you will always\nbe considered opted out.",
+    "ua": "Ваші налаштування згоди\nзбережено.\nПримітка: якщо вам менше\n16 років, згоду завжди\nвважатимуть не наданою."
+  },
+  "finish_ad_mail_settings_update_out": {
+    "en": "Your opt-out settings have\nbeen saved. Please allow\nsome time for your opt-out\nsettings to be processed.",
+    "ua": "Вашу відмову збережено.\nОбробка відмови може\nзайняти певний час."
+  },
+  "finish_coppa": {
+    "en": null,
+    "ua": ""
+  },
+  "finish_delete_nnid": {
+    "en": "Your Nintendo Network ID\nhas been deleted.",
+    "ua": "Ваш Nintendo Network ID\nвидалено."
+  },
+  "finish_mail_check": {
+    "en": "Email address verification\ncomplete.",
+    "ua": "Електронну пошту\nпідтверджено."
+  },
+  "finish_nnid_registration": {
+    "en": "Your Nintendo Network ID has<br>now been linked.",
+    "ua": "Ваш Nintendo Network ID<br>прив'язано."
+  },
+  "finish_offdevice_not_use": {
+    "en": "You will not be able to<br>use your Nintendo<br>Network ID on PCs,<br>smartphones, etc.",
+    "ua": "Ви не зможете<br>користуватися своїм<br>Nintendo Network ID<br>на комп'ютерах, смартфонах тощо."
+  },
+  "finish_offdevice_use": {
+    "en": "You can now use your<br>Nintendo Network ID on<br>PCs, smartphones, etc.",
+    "ua": "Тепер ви можете<br>користуватися своїм Nintendo<br>Network ID на комп'ютерах,<br>смартфонах тощо."
+  },
+  "finish_pass_update_input": {
+    "en": "You have chosen not to keep\nyour password on the system.",
+    "ua": "Ви обрали не зберігати\nпароль на консолі."
+  },
+  "finish_pass_update_skip": {
+    "en": "You have chosen to keep\nyour password on the system.",
+    "ua": "Ви обрали зберігати\nпароль на консолі."
+  },
+  "finish_registration": {
+    "en": "Link Complete",
+    "ua": "Прив'язування завершено"
+  },
+  "finish_user_info_update": {
+    "en": "User information settings\nhave been saved.",
+    "ua": "Інформацію про користувача\nзбережено."
+  },
+  "follow_mail": {
+    "en": "An email has been sent to<br>the address you registered.<br>Follow the instructions in<br>the email to verify your<br>email address.",
+    "ua": "На зареєстровану адресу<br>надіслано лист. Виконайте<br>вказівки з листа, щоб<br>підтвердити свою<br>електронну пошту."
+  },
+  "from_parental_control": {
+    "en": "You can review and change the<br>features restricted by Parental<br>Controls by selecting Parental<br>Controls from the System Settings.",
+    "ua": "Переглянути й змінити функції,<br>обмежені батьківським контролем,<br>можна в розділі Батьківський<br>контроль у Налаштуваннях системи."
+  },
+  "gender": {
+    "en": "Gender",
+    "ua": "Стать"
+  },
+  "guide_parental_control": {
+    "en": "Guide to Parental Controls",
+    "ua": "Довідка з батьківського контролю"
+  },
+  "how_to_setting": {
+    "en": "Configuring Parental Controls",
+    "ua": "Налаштування батьківського контролю"
+  },
+  "if_mail_not_reach_check_hp": {
+    "en": null,
+    "ua": ""
+  },
+  "if_mail_not_reach_do_check": {
+    "en": "If you do not receive the\nemail within an hour,\ncheck the address in\nUser Information Settings.",
+    "ua": "Якщо лист не надійде\nпротягом години, перевірте\nадресу в розділі Інформація\nпро користувача."
+  },
+  "if_regist_id": {
+    "en": "About Nintendo Network IDs",
+    "ua": "Про Nintendo Network ID"
+  },
+  "if_regist_id_miiverse": {
+    "en": "Having a Nintendo Network ID<br>linked to your system lets you<br>post your thoughts and<br>impressions of various<br>games to <a class=\"inlineHint\"><span>Miiverse</span></a>.",
+    "ua": "Nintendo Network ID, прив'язаний<br>до консолі, дає змогу ділитися<br>думками та враженнями від<br>різних ігор у<br><a class=\"inlineHint\"><span>Miiverse</span></a>."
+  },
+  "if_regist_id_shop": {
+    "en": "Having an ID linked to the<br>system also lets you download<br>free software and demo<br>versions of software from<br>Nintendo eShop.",
+    "ua": "Прив'язаний до консолі ID<br>також дає змогу завантажувати<br>безкоштовні програми та<br>демоверсії з Nintendo eShop."
+  },
+  "if_wii_u_nnid": {
+    "en": "If you link the same Nintendo\nNetwork ID to both a Wii U\nuser and a Nintendo 3DS\nsystem, you can share the\nsame Nintendo eShop\naccount activity and funds\nbetween both.",
+    "ua": "Якщо прив'язати той самий\nNintendo Network ID до\nкористувача Wii U і до\nконсолі Nintendo 3DS, ви\nзможете спільно\nвикористовувати дії\nта кошти Nintendo eShop."
+  },
+  "if_you_touch_q": {
+    "en": "Touch the ? icon to<br>see an explanation.",
+    "ua": "Торкніться значка ?,<br>щоб побачити пояснення."
+  },
+  "info_nnid_settings": {
+    "en": "You can review and change your<br>Nintendo Network ID information<br>by selecting Nintendo Network ID<br>Settings from the System Settings.",
+    "ua": "Переглянути й змінити дані свого<br>Nintendo Network ID можна в розділі<br>Дані Nintendo Network ID<br>у Налаштуваннях системи."
+  },
+  "input_auth_code": {
+    "en": "Enter the confirmation code<br>sent to you by email.",
+    "ua": "Введіть код підтвердження,<br>надісланий вам електронною поштою."
+  },
+  "input_coppa_code": {
+    "en": null,
+    "ua": ""
+  },
+  "input_coppa_code_ng": {
+    "en": null,
+    "ua": ""
+  },
+  "input_e-mail_address": {
+    "en": "Enter an email address.",
+    "ua": "Введіть електронну пошту."
+  },
+  "input_e-mail_address_again": {
+    "en": "Enter the email address\nagain to confirm.",
+    "ua": "Введіть електронну пошту\nще раз для підтвердження."
+  },
+  "input_nnid": {
+    "en": "Use between 6 and\n16 characters.",
+    "ua": "Використовуйте\nвід 6 до 16 символів."
+  },
+  "input_nnid_password": {
+    "en": "Please enter your Nintendo\nNetwork ID password.",
+    "ua": "Введіть пароль свого\nNintendo Network ID."
+  },
+  "input_parent_e-mail_address": {
+    "en": "Enter an email address\n(parent or guardian).",
+    "ua": "Введіть електронну пошту\n(батька, матері або опікуна)."
+  },
+  "input_pass_6to16": {
+    "en": "Use between 6 and\n16 characters.",
+    "ua": "Використовуйте\nвід 6 до 16 символів."
+  },
+  "input_password": {
+    "en": "Enter your password.",
+    "ua": "Введіть свій пароль."
+  },
+  "input_password_again": {
+    "en": "Enter your password\nagain to confirm.",
+    "ua": "Введіть пароль ще раз\nдля підтвердження."
+  },
+  "mail_receive_comp": {
+    "en": "Complete",
+    "ua": "Завершено"
+  },
+  "mail_receive_done": {
+    "en": "Your email address\nhas been verified.",
+    "ua": "Вашу електронну пошту\nпідтверджено."
+  },
+  "mail_receive_noncomp": {
+    "en": "Incomplete",
+    "ua": "Не завершено"
+  },
+  "male": {
+    "en": "Male",
+    "ua": "Чоловіча"
+  },
+  "master": {
+    "en": "MasterCard",
+    "ua": "MasterCard"
+  },
+  "mii_studio": {
+    "en": "Would you like to launch\nMii Maker and edit your Mii?",
+    "ua": "Запустити Mii Maker\nі змінити ваш Mii?"
+  },
+  "miss_match": {
+    "en": "The email addresses<br>entered do not match.",
+    "ua": "Введені адреси<br>електронної пошти не збігаються."
+  },
+  "miss_match_password": {
+    "en": "The passwords entered<br>do not match.",
+    "ua": "Введені паролі<br>не збігаються."
+  },
+  "month": {
+    "en": "Month",
+    "ua": "Місяць"
+  },
+  "move_enable": {
+    "en": "The only way to transfer an ID is to transfer all system data using System Transfer.",
+    "ua": "Перенести ID можна лише разом з усіма даними консолі через Перенесення даних."
+  },
+  "move_nnid": {
+    "en": "I want to use this Nintendo Network ID on another Nintendo 3DS system.",
+    "ua": "Я хочу використати цей Nintendo Network ID на іншій консолі Nintendo 3DS."
+  },
+  "multi_money": {
+    "en": "If you continue, the funds<br>from this system's Nintendo<br>eShop account will be added<br>to your Nintendo Network ID<br>and this system's Nintendo<br>eShop account will be<br>deleted. <br><br>IMPORTANT<br><br>In case you have used funds<br>in multiple currencies on this<br>system, only the funds in the<br>currency that corresponds to<br>the current country settings<br>will be added to your<br>Nintendo Network ID. Funds<br>in other currencies will be<br>deleted and will no longer<br>be usable.",
+    "ua": "Якщо продовжити, кошти<br>з облікового запису Nintendo<br>eShop цієї консолі буде додано<br>до вашого Nintendo Network ID,<br>а обліковий запис Nintendo<br>eShop цієї консолі буде<br>видалено.<br><br>ВАЖЛИВО<br><br>Якщо на цій консолі ви<br>користувалися коштами в кількох<br>валютах, до вашого Nintendo<br>Network ID буде додано лише<br>кошти у валюті, що відповідає<br>поточним налаштуванням країни.<br>Кошти в інших валютах буде<br>видалено, і вони стануть<br>недоступні."
+  },
+  "my_mii": {
+    "en": "Personal Mii for this system",
+    "ua": "Персональний Mii цієї консолі"
+  },
+  "need_agree_eula": {
+    "en": "You must accept the latest terms<br>of the Nintendo Network Agreement<br>and Nintendo Network Privacy Policy<br>before online services can be used.",
+    "ua": "Щоб користуватися онлайн-сервісами,<br>потрібно прийняти останню редакцію<br>Угоди Nintendo Network і політики<br>конфіденційності Nintendo Network."
+  },
+  "need_agree_eula_policy": {
+    "en": "You must accept the latest terms<br>of the Nintendo Network Agreement<br>and confirm that you acknowledge<br>the Nintendo Network Privacy Policy<br>before accessing Nintendo Network.",
+    "ua": "Щоб отримати доступ до Nintendo<br>Network, потрібно прийняти останню<br>редакцію Угоди Nintendo Network<br>і підтвердити, що ви ознайомилися<br>з політикою конфіденційності."
+  },
+  "need_coppa": {
+    "en": null,
+    "ua": ""
+  },
+  "new_mail_address": {
+    "en": "New Email Address",
+    "ua": "Нова електронна пошта"
+  },
+  "new_mail_address_again": {
+    "en": "Confirm Address",
+    "ua": "Підтвердьте адресу"
+  },
+  "new_password": {
+    "en": "New Password",
+    "ua": "Новий пароль"
+  },
+  "new_password_again": {
+    "en": "Confirm New Password",
+    "ua": "Підтвердьте новий пароль"
+  },
+  "nnid": {
+    "en": "Nintendo Network ID",
+    "ua": "Nintendo Network ID"
+  },
+  "nnid_deleted": {
+    "en": "You cannot use this Nintendo\nNetwork ID because it has\nbeen deleted.",
+    "ua": "Цей Nintendo Network ID\nвикористати неможливо,\nбо його видалено."
+  },
+  "nnid_exclusive": {
+    "en": "You cannot link a Nintendo Network ID to multiple Nintendo 3DS systems.",
+    "ua": "Nintendo Network ID не можна прив'язати до кількох консолей Nintendo 3DS."
+  },
+  "nnid_is_opened": {
+    "en": "The ID you choose will be\nvisible to others using\nNintendo Network, such as\nother Miiverse users. Please\ndo not include any personal\ninformation or offensive\ncontent in your ID.",
+    "ua": "Обраний ID бачитимуть інші\nкористувачі Nintendo Network,\nзокрема в Miiverse. Не\nвказуйте в ньому особистих\nданих чи образливого змісту."
+  },
+  "nnid_mii": {
+    "en": "The Mii currently linked to this Nintendo Network ID",
+    "ua": "Mii, пов'язаний із цим Nintendo Network ID"
+  },
+  "no_problem_lost_balance": {
+    "en": "I understand that my Nintendo eShop funds will be deleted.",
+    "ua": "Я розумію, що мої кошти в Nintendo eShop буде видалено."
+  },
+  "no_problem_lost_friend": {
+    "en": "I understand that my ID's friend list will be deleted.",
+    "ua": "Я розумію, що список друзів мого ID буде видалено."
+  },
+  "no_problem_lost_miiverse": {
+    "en": "I understand that my Miiverse posts and comments will be deleted.",
+    "ua": "Я розумію, що мої дописи й коментарі в Miiverse буде видалено."
+  },
+  "no_problem_lost_software": {
+    "en": "I understand that I will no longer be able to use or download software I have purchased.",
+    "ua": "Я розумію, що більше не зможу користуватися чи завантажувати придбані програми."
+  },
+  "not_club_nintendo": {
+    "en": "A Nintendo Network ID is<br>different to a Club Nintendo<br>account.",
+    "ua": "Nintendo Network ID — це<br>не те саме, що обліковий<br>запис Клубу Nintendo."
+  },
+  "not_input": {
+    "en": "You must enter something\nin all fields.",
+    "ua": "Потрібно заповнити\nвсі поля."
+  },
+  "not_receive": {
+    "en": "Do Not Receive",
+    "ua": "Не отримувати"
+  },
+  "not_set": {
+    "en": "Not set",
+    "ua": "Не задано"
+  },
+  "notice": {
+    "en": "Important",
+    "ua": "Важливо"
+  },
+  "notice_below": {
+    "en": "Please read the following<br>information carefully.",
+    "ua": "Уважно прочитайте<br>наведену нижче інформацію."
+  },
+  "now_delete_nnid": {
+    "en": "Deleting your\nNintendo Network ID...",
+    "ua": "Видалення вашого\nNintendo Network ID…"
+  },
+  "now_regist": {
+    "en": "Linking Nintendo<br>Network ID...",
+    "ua": "Прив'язування Nintendo<br>Network ID…"
+  },
+  "offdevice_control": {
+    "en": "You can restrict access to Nintendo<br>Network from PCs, smartphones and<br>other devices. This setting can be<br>changed at any time.",
+    "ua": "Ви можете обмежити доступ до<br>Nintendo Network з комп'ютерів,<br>смартфонів та інших пристроїв.<br>Це налаштування можна змінити будь-коли."
+  },
+  "offdevice_control_simple": {
+    "en": "You can restrict access to Nintendo<br>Network from PCs, smartphones and<br>other devices.",
+    "ua": "Ви можете обмежити доступ до<br>Nintendo Network з комп'ютерів,<br>смартфонів та інших пристроїв."
+  },
+  "other_above": {
+    "en": "See the Parental Controls for<br>the full range of services which<br>can be restricted.",
+    "ua": "Повний перелік сервісів, які<br>можна обмежити, див. у розділі<br>Батьківський контроль."
+  },
+  "other_notice": {
+    "en": "Other Notices",
+    "ua": "Інші зауваження"
+  },
+  "parent_e-mail_address": {
+    "en": "Email Address<br>(Parent or Guardian)",
+    "ua": "Електронна пошта<br>(батька, матері або опікуна)"
+  },
+  "parent_e-mail_address_again": {
+    "en": "Confirm Email Address<br>(Parent or Guardian)",
+    "ua": "Підтвердьте електронну пошту<br>(батька, матері або опікуна)"
+  },
+  "parental_authentication": {
+    "en": null,
+    "ua": ""
+  },
+  "parental_browser": {
+    "en": "Internet Browser",
+    "ua": "Інтернет-браузер"
+  },
+  "parental_browser_detail": {
+    "en": "Restrict use of the Internet<br>Browser.",
+    "ua": "Обмежити користування<br>Інтернет-браузером."
+  },
+  "parental_browser_detail_short": {
+    "en": "[parental_browser_detail_short]",
+    "ua": "[parental_browser_detail_short]"
+  },
+  "parental_communication": {
+    "en": "Online Interaction ",
+    "ua": "Взаємодія в мережі "
+  },
+  "parental_communication_detail": {
+    "en": "This restricts all online<br>communication in games and<br>the exchange of certain game<br>data with other users over the<br>internet (excluding Nintendo DS<br>software titles and Miiverse).",
+    "ua": "Обмежує все спілкування<br>в іграх через мережу та обмін<br>певними ігровими даними<br>з іншими користувачами через<br>Інтернет (крім програм<br>Nintendo DS і Miiverse)."
+  },
+  "parental_control": {
+    "en": "Parental Controls",
+    "ua": "Батьківський контроль"
+  },
+  "parental_friend": {
+    "en": "Friend Registration",
+    "ua": "Реєстрація друзів"
+  },
+  "parental_friend_detail": {
+    "en": "Friend registration allows you and<br>any registered friends to see each<br>other's online status and current<br>software title. You may exchange<br>messages and freely exchange<br>data that might contain personal<br>information.",
+    "ua": "Реєстрація друзів дає змогу вам<br>і зареєстрованим друзям бачити<br>мережевий стан одне одного та<br>поточну програму. Ви зможете<br>обмінюватися повідомленнями<br>й вільно передавати дані, які<br>можуть містити особисту інформацію."
+  },
+  "parental_on_this_system": {
+    "en": "Parental Controls that may have<br>been set up on another device<br>for this Nintendo Network ID will<br>not apply to this system.",
+    "ua": "Батьківський контроль, налаштований<br>для цього Nintendo Network ID на<br>іншому пристрої, не діятиме<br>на цій консолі."
+  },
+  "parental_relief": {
+    "en": "By setting up Parental Controls,<br>you can ensure that services<br>available on this system are<br>suitable for your child.",
+    "ua": "Налаштувавши батьківський контроль,<br>ви можете подбати, щоб сервіси<br>на цій консолі підходили<br>вашій дитині."
+  },
+  "parental_shop": {
+    "en": "Nintendo 3DS<br>Shopping Services",
+    "ua": "Магазини<br>Nintendo 3DS"
+  },
+  "parental_shop_detail": {
+    "en": "Restrict the use of credit<br>cards, funding cards and<br>online purchasing of content<br>and services through the<br>Nintendo 3DS Shopping Services.",
+    "ua": "Обмежити використання<br>платіжних карт, карт поповнення<br>та онлайн-придбання вмісту<br>й сервісів у магазинах<br>Nintendo 3DS."
+  },
+  "password": {
+    "en": "Password",
+    "ua": "Пароль"
+  },
+  "password_again": {
+    "en": "Confirm Password",
+    "ua": "Підтвердьте пароль"
+  },
+  "please_login": {
+    "en": "Sign in by entering the password<br>for your Nintendo Network ID.",
+    "ua": "Увійдіть, ввівши пароль<br>свого Nintendo Network ID."
+  },
+  "please_regist_nnid": {
+    "en": "Please link another Nintendo\nNetwork ID to this system,\nor create a new ID.",
+    "ua": "Прив'яжіть до цієї консолі\nінший Nintendo Network ID\nабо створіть новий."
+  },
+  "problem_lost_balance": {
+    "en": "I would still like to keep my Nintendo eShop funds.",
+    "ua": "Я все ж хочу зберегти свої кошти в Nintendo eShop."
+  },
+  "problem_lost_friend": {
+    "en": "I would still like to access my ID's friend list.",
+    "ua": "Я все ж хочу мати доступ до списку друзів свого ID."
+  },
+  "problem_lost_miiverse": {
+    "en": "I would still like to keep my Miiverse posts and comments.",
+    "ua": "Я все ж хочу зберегти свої дописи й коментарі в Miiverse."
+  },
+  "problem_lost_software": {
+    "en": "I would still like to be able to use and download software I have purchased.",
+    "ua": "Я все ж хочу мати змогу користуватися придбаними програмами й завантажувати їх."
+  },
+  "procedure_coppa": {
+    "en": null,
+    "ua": ""
+  },
+  "q_ad_mail_setting": {
+    "en": "<span class=\"smallText\">Would you like to receive emails from Nintendo<br>with offers customised for you? If you wish to<br>opt out of the collection and use of your data for<br>customised offers, you can also do this here by<br>selecting Do Not Receive.<br>Note: If you are below the age of 16 you will<br>always be considered opted out.</span>",
+    "ua": "<span class=\"smallText\">Отримувати від Nintendo листи<br>з добірками пропозицій? Якщо ви не<br>хочете, щоб ваші дані збирали й<br>використовували для добірок, тут<br>можна вибрати Не отримувати.<br>Примітка: якщо вам менше 16 років,<br>згоду завжди вважатимуть не наданою.</span>"
+  },
+  "q_birthday": {
+    "en": "Please enter the date of\nbirth of the person who\nwill be using this Nintendo\nNetwork ID.",
+    "ua": "Введіть дату народження\nлюдини, яка користуватиметься\nцим Nintendo Network ID."
+  },
+  "q_credit_security_code": {
+    "en": "The credit card security code is the last three digits on the back of your card.",
+    "ua": "Код безпеки платіжної карти — це останні три цифри на її звороті."
+  },
+  "q_e-mail_address": {
+    "en": "Your registered email address\nwill be used to send\nimportant notifications, or\ninformation if you forget\nyour password.\n\nA verification email will be\nsent to the address you\nregister. If you are blocking\nemails using a spam filter or\ndomain filtering, ensure that\nyour email account can\naccept emails from the\n\"@nintendo.net\" domain.",
+    "ua": "На зареєстровану адресу\nнадсилатимуть важливі\nсповіщення та інформацію,\nякщо ви забудете пароль.\n\nНа вказану адресу надійде\nлист для підтвердження.\nЯкщо ви блокуєте пошту\nспам-фільтром або за\nдоменом, дозвольте листи\nз домену \"@nintendo.net\"."
+  },
+  "q_erase_miiverse": {
+    "en": "It is possible to delete your\nposts and comments in\nMiiverse. For details, see the\nMiiverse manual.",
+    "ua": "Свої дописи й коментарі\nв Miiverse можна видалити.\nДокладніше — у довіднику\nMiiverse."
+  },
+  "q_miiverse": {
+    "en": "Miiverse is a service that\nenables players to share\ntheir game experiences with\nother people from around\nthe world.",
+    "ua": "Miiverse — це сервіс, який\nдає гравцям змогу ділитися\nсвоїм ігровим досвідом\nз людьми з усього світу."
+  },
+  "q_move_nnid": {
+    "en": "Please perform a system\ntransfer from Other Settings\nin the System Settings.",
+    "ua": "Виконайте перенесення\nданих у розділі Інші\nналаштування\nв Налаштуваннях системи."
+  },
+  "q_nnid": {
+    "en": "You can only use numbers,\nletters, full stops, dashes and\nunderscores. Up to six\ncharacters can be numbers.\n\nA punctuation symbol cannot\nbe the first or last character\nof your ID. Furthermore, you\ncannot use two or more of\nthese in a row.",
+    "ua": "Можна використовувати лише\nцифри, літери, крапки, дефіси\nта підкреслення. Цифр може\nбути щонайбільше шість.\n\nЗнак пунктуації не може бути\nпершим чи останнім символом\nID. Крім того, не можна\nставити два й більше таких\nзнаків підряд."
+  },
+  "q_not_arrive_mail": {
+    "en": "•  Is there a mistake in your\nemail address? You can\ncheck your current address\nin User Information Settings.\n\n•  Has the email we sent\nbeen moved to a spam\nfolder or elsewhere by\nthe email software?\n\n•  Has the email we sent been\nblocked as spam? Are emails\nsent from \"account-noreply\n@nintendo.net\" or which\ncontain URLs blocked?\nCheck how to set your\nmail preferences with your\nindividual service provider.\n\n•  Your email may take some\ntime to be delivered. If you\ndo not receive the email\nwithin an hour, visit\nsupport.nintendo.com.",
+    "ua": "•  Чи немає помилки в адресі\nелектронної пошти? Поточну\nадресу можна перевірити\nв розділі Інформація\nпро користувача.\n\n•  Чи не перемістила поштова\nпрограма наш лист у папку\nспаму або кудись інде?\n\n•  Чи не заблоковано наш лист\nяк спам? Чи не блокуються\nлисти з \"account-noreply\n@nintendo.net\" або листи\nз посиланнями? Перевірте\nналаштування пошти\nу свого постачальника.\n\n•  Доставлення листа може\nзайняти певний час. Якщо\nвін не надійде протягом\nгодини, відвідайте\nsupport.nintendo.com."
+  },
+  "q_not_arrive_mail_pass": {
+    "en": "•  Has the email we sent\nbeen moved to a spam\nfolder or elsewhere by\nthe email software?\n\n•  Has the email we sent been\nblocked as spam? Are emails\nsent from \"account-noreply\n@nintendo.net\" or which\ncontain URLs blocked?\nCheck how to set your\nmail preferences with your\nindividual service provider.\n\n•  Your email may take some\ntime to be delivered. If you\ndo not receive the email\nwithin an hour, visit\nsupport.nintendo.com.\n\n• If you have made a mistake\nin the email address you\nregistered, your mail will not\nbe delivered. If you think that\nthis is the case, please call\nthe number given in the\nNintendo 3DS Operations\nManual, keeping the system\nto hand.",
+    "ua": "•  Чи не перемістила поштова\nпрограма наш лист у папку\nспаму або кудись інде?\n\n•  Чи не заблоковано наш лист\nяк спам? Чи не блокуються\nлисти з \"account-noreply\n@nintendo.net\" або листи\nз посиланнями? Перевірте\nналаштування пошти\nу свого постачальника.\n\n•  Доставлення листа може\nзайняти певний час. Якщо\nвін не надійде протягом\nгодини, відвідайте\nsupport.nintendo.com.\n\n• Якщо ви помилилися\nв зареєстрованій адресі,\nлист не надійде. Якщо\nгадаєте, що так і сталося,\nзателефонуйте за номером\nіз Посібника з експлуатації\nNintendo 3DS, тримаючи\nконсоль під рукою."
+  },
+  "q_password": {
+    "en": "Please create a password\nusing a combination of\ncharacters from at least two\nof the following categories:\nupper or lower case letters,\nnumbers and punctuation.\n(For greater password\nsecurity, we recommend\nusing eight or more\ncharacters, including\npunctuation.)\n\nPlease do not use the same\ncharacter three or more times\nin a row.\n\nDo not use passwords that\ncan be easily guessed or that\nyou have used for other\nservices.\n\nYou cannot use the name you\nchose for your Nintendo\nNetwork ID as your password.\n\nPlease take care not to forget\nyour password. You will be\nasked to enter it in certain\ninstances when using\nNintendo Network.",
+    "ua": "Створіть пароль із символів\nщонайменше двох таких\nкатегорій: великі або малі\nлітери, цифри та знаки\nпунктуації. (Для більшої\nнадійності радимо вісім\nі більше символів,\nвключно зі знаками\nпунктуації.)\n\nНе використовуйте той самий\nсимвол три чи більше разів\nпідряд.\n\nНе використовуйте паролі,\nякі легко вгадати або які ви\nвже використовували для\nінших сервісів.\n\nІм'я вашого Nintendo Network\nID не можна використовувати\nяк пароль.\n\nНе забувайте пароль. Його\nпроситимуть увести в певних\nвипадках під час\nкористування Nintendo Network."
+  },
+  "q_password_skip": {
+    "en": "Choosing Don't Remember\nwill help prevent anybody\ngaining unauthorised access\nto your Nintendo Network ID.",
+    "ua": "Вибір Не зберігати допоможе\nзапобігти неавторизованому\nдоступу до вашого\nNintendo Network ID."
+  },
+  "q_receive_ad_mail": {
+    "en": "If you choose RECEIVE, the\nsetting change will only apply\nto this Nintendo Network ID.\nIf you choose DO NOT\nRECEIVE, the setting change\nwill apply to all Nintendo\nNetwork IDs registered to\nyour email address.",
+    "ua": "Якщо вибрати ОТРИМУВАТИ,\nзміна стосуватиметься лише\nцього Nintendo Network ID.\nЯкщо вибрати НЕ\nОТРИМУВАТИ, зміна\nстосуватиметься всіх Nintendo\nNetwork ID, зареєстрованих\nна вашу електронну пошту."
+  },
+  "q_region": {
+    "en": "If you would like to change<br>the country of residence<br>setting for your Nintendo<br>Network ID, you will need to<br>cancel the linking process,<br>then change the country of<br>residence for your system<br>by going to Other Settings ⇒<br>Profile ⇒ Region Settings.",
+    "ua": "Якщо ви хочете змінити<br>країну проживання для свого<br>Nintendo Network ID, потрібно<br>скасувати прив'язування,<br>а тоді змінити країну<br>проживання консолі в розділі<br>Інші налаштування ⇒<br>Профіль ⇒ Налаштування регіону."
+  },
+  "q_regist_other_nnid": {
+    "en": "You can link a different\nNintendo Network ID after\ngoing to Other Settings in\nthe System Settings and\nformatting the system\nmemory. However, all save\ndata will be lost, and\nsoftware licences and\nNintendo eShop funds\ncannot be used with another\nNintendo Network ID.\nFurthermore, you will be\nunable to link the current\nNintendo Network ID to\nanother Nintendo 3DS\nsystem.",
+    "ua": "Прив'язати інший Nintendo\nNetwork ID можна після\nформатування памʼяті\nконсолі в розділі Інші\nналаштування в Налаштуваннях\nсистеми. Проте всі збережені\nдані буде втрачено, а ліцензії\nна програми й кошти\nв Nintendo eShop не вийде\nвикористати з іншим Nintendo\nNetwork ID. Крім того, ви не\nзможете прив'язати поточний\nNintendo Network ID до іншої\nконсолі Nintendo 3DS."
+  },
+  "receive": {
+    "en": "Receive",
+    "ua": "Отримувати"
+  },
+  "record_and_balance": {
+    "en": "Your Account Activity and Funds",
+    "ua": "Ваші дії та кошти"
+  },
+  "record_balance_shared": {
+    "en": "Nintendo eShop account activity and funds will be saved to this Nintendo Network ID.<br><br>These will be shared across all devices on which you use the same ID.",
+    "ua": "Дії та кошти в Nintendo eShop зберігатимуться у вашому Nintendo Network ID.<br><br>Вони будуть спільними на всіх пристроях, де ви користуєтеся цим ID."
+  },
+  "record_balance_shared_succeed": {
+    "en": "Any existing Nintendo eShop account activity and remaining funds on your system will be added to those of your Nintendo Network ID and saved to the ID from now on.<br><br>This information will be shared across all devices on which you use the same ID.",
+    "ua": "Наявні дії та залишок коштів у Nintendo eShop на вашій консолі буде додано до тих, що у вашому Nintendo Network ID, і надалі зберігатимуться в ньому.<br><br>Ця інформація буде спільною на всіх пристроях, де ви користуєтеся цим ID."
+  },
+  "regist_exist_nnid": {
+    "en": "Link an existing Nintendo Network ID to this system.",
+    "ua": "Прив'язати наявний Nintendo Network ID до цієї консолі."
+  },
+  "regist_new_nnid": {
+    "en": "Create a New ID.",
+    "ua": "Створити новий ID."
+  },
+  "regist_nnid_with_this_mii": {
+    "en": "This Mii will be linked to your<br>Nintendo Network ID.<br><br>You can modify your Personal<br>Mii at any time in Mii Maker.",
+    "ua": "Цей Mii буде пов'язано з вашим<br>Nintendo Network ID.<br><br>Змінити Персональний Mii<br>можна будь-коли в Mii Maker."
+  },
+  "regist_other_nnid": {
+    "en": "I want to link a different<br>Nintendo Network ID.",
+    "ua": "Я хочу прив'язати інший<br>Nintendo Network ID."
+  },
+  "reinput_nnid": {
+    "en": "Create a Nintendo Network ID using between 6 and 16 characters.<br><br>You cannot change this ID later.",
+    "ua": "Створіть Nintendo Network ID з 6–16 символів.<br><br>Змінити цей ID згодом неможливо."
+  },
+  "relation_with_region": {
+    "en": "Your Country Settings",
+    "ua": "Ваші налаштування країни"
+  },
+  "select_credit_company": {
+    "en": null,
+    "ua": ""
+  },
+  "select_item": {
+    "en": "Select an option below.",
+    "ua": "Виберіть опцію внизу."
+  },
+  "select_reason": {
+    "en": "Please select a reason for deleting<br>your Nintendo Network ID.",
+    "ua": "Виберіть причину видалення<br>вашого Nintendo Network ID."
+  },
+  "send_confirm_mail": {
+    "en": "A verification email has\nbeen sent to the email\naddress you registered.\nPlease follow the instructions\ngiven in the email to verify\nyour email address.\n",
+    "ua": "На зареєстровану\nелектронну пошту надіслано\nлист для підтвердження.\nВиконайте вказівки з листа,\nщоб підтвердити свою\nелектронну пошту.\n"
+  },
+  "send_coppa_code": {
+    "en": null,
+    "ua": ""
+  },
+  "send_mail": {
+    "en": "Email sent.",
+    "ua": "Лист надіслано."
+  },
+  "send_receipt_mail": {
+    "en": null,
+    "ua": ""
+  },
+  "send_receipt_mail_later": {
+    "en": null,
+    "ua": ""
+  },
+  "set_pin": {
+    "en": "Set a PIN to restrict use of\nthis service by children.",
+    "ua": "Задайте PIN-код, щоб обмежити\nкористування цим сервісом дітьми."
+  },
+  "show_eula": {
+    "en": "View the Nintendo Network<br>Agreement and Privacy Policy",
+    "ua": "Переглянути Угоду Nintendo<br>Network і політику конфіденційності"
+  },
+  "show_eula_and_policy": {
+    "en": "View the Nintendo Network<br>Agreement and Privacy Policy",
+    "ua": "Переглянути Угоду Nintendo<br>Network і політику конфіденційності"
+  },
+  "solve_device_mismatch": {
+    "en": "The Nintendo Network ID is no<br>longer linked to this system.",
+    "ua": "Nintendo Network ID більше<br>не пов'язаний із цією консоллю."
+  },
+  "support": {
+    "en": "Please provide the\nfollowing information:",
+    "ua": "Надайте таку\nінформацію:"
+  },
+  "system_format": {
+    "en": "You can remove an ID's link to<br>the system without deleting it by<br>formatting the system memory.<br>This can be done through Other<br>Settings in the System settings.<br>You can then continue to use the<br>ID on a Wii U or other device.",
+    "ua": "Прибрати зв'язок ID з консоллю<br>без видалення можна,<br>відформатувавши памʼять консолі.<br>Це робиться в розділі Інші<br>налаштування в Налаштуваннях<br>системи. Далі ID можна далі<br>використовувати на Wii U чи іншому пристрої."
+  },
+  "timezone": {
+    "en": "Time Zone",
+    "ua": "Часовий пояс"
+  },
+  "title_ad_mail_settings": {
+    "en": "Customised Email Offers",
+    "ua": "Листи з добірками пропозицій"
+  },
+  "title_check_mail_receive": {
+    "en": "Email Address Verification",
+    "ua": "Підтвердження електронної пошти"
+  },
+  "title_nn_settings": {
+    "en": "Nintendo Network ID Settings",
+    "ua": "Дані Nintendo Network ID"
+  },
+  "title_nnid_delete": {
+    "en": "Delete Nintendo Network ID",
+    "ua": "Видалити Nintendo Network ID"
+  },
+  "title_nnid_settings": {
+    "en": "Nintendo Network ID Settings",
+    "ua": "Дані Nintendo Network ID"
+  },
+  "title_offdevice_settings": {
+    "en": "Access from Other Devices",
+    "ua": "Доступ з інших пристроїв"
+  },
+  "title_password_change": {
+    "en": "Change Your Password",
+    "ua": "Зміна пароля"
+  },
+  "title_password_skip": {
+    "en": "Remember Password",
+    "ua": "Зберегти пароль"
+  },
+  "title_regist_nnid": {
+    "en": "Link a Nintendo Network ID",
+    "ua": "Прив'язати Nintendo Network ID"
+  },
+  "to_club_nintendo_user": {
+    "en": "Club Nintendo Users",
+    "ua": "Користувачам Клубу Nintendo"
+  },
+  "understand_above": {
+    "en": "I understand the above.",
+    "ua": "Я розумію викладене вище."
+  },
+  "update_password": {
+    "en": "Your password has\nbeen changed.",
+    "ua": "Ваш пароль\nзмінено."
+  },
+  "usa_or_canada": {
+    "en": null,
+    "ua": ""
+  },
+  "use_credit_50_cent": {
+    "en": null,
+    "ua": ""
+  },
+  "visa": {
+    "en": "Visa",
+    "ua": "Visa"
+  },
+  "wait_a_moment": {
+    "en": "Please wait...",
+    "ua": "Зачекайте…"
+  },
+  "welcome": {
+    "en": "Welcome!",
+    "ua": "Вітаємо!"
+  },
+  "wii_u_screen": {
+    "en": "Check an ID linked to a Wii U console<br>by going to User Settings on the Wii U.",
+    "ua": "Переглянути ID, прив'язаний до Wii U,<br>можна в Налаштуваннях користувача на Wii U."
+  },
+  "with_parent": {
+    "en": "If a child will be using this<br>system, please set up the<br>Nintendo Network ID for them.",
+    "ua": "Якщо консоллю<br>користуватиметься дитина,<br>налаштуйте Nintendo Network ID для неї."
+  },
+  "wrong_birthday": {
+    "en": "You have entered an invalid birthdate.",
+    "ua": "Введено неправильну дату народження."
+  },
+  "year": {
+    "en": "Year",
+    "ua": "Рік"
+  },
+  "you_can_regist_nnid": {
+    "en": "You can create a Nintendo<br>Network ID here, or link an<br>existing one to your system.",
+    "ua": "Тут можна створити Nintendo<br>Network ID або прив'язати<br>наявний до вашої консолі."
+  },
+  "zip_code": {
+    "en": "Postcode",
+    "ua": "Поштовий індекс"
+  }
+}

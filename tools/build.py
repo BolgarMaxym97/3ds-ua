@@ -32,6 +32,7 @@ exact situation `blocked` exists to prevent - so a missing dump aborts the build
 from __future__ import annotations
 
 import argparse
+import base64
 import json
 import shutil
 import sys
@@ -48,6 +49,7 @@ import lz11  # noqa: E402
 import bcfnt  # noqa: E402
 import luma_hook  # noqa: E402
 import msbt as msbt_mod  # noqa: E402
+import nnid_html  # noqa: E402
 import romfs  # noqa: E402
 import smdh as smdh_mod  # noqa: E402
 import news_tips  # noqa: E402
@@ -861,6 +863,99 @@ def build_layout_texts(
     return blobs, log
 
 
+# Nintendo Network ID Settings (act). Its account screens - sign-in, User Information,
+# Password Settings, Change Mii - are an HTML app, and the app is local: the server is asked
+# for account data (XML) and never for markup, which is why the screens still draw with Wi-Fi
+# off. A proxy capture of a full sign-in settled it - 13 requests, all `/v1/api/...`, no HTML.
+NNID_CSS_TID = "000400100002C100"
+# The shared archive `act` mounts as `content:`: the HTML app behind every account screen.
+# Two files per language carry its text, and they are not interchangeable -
+#   index_<lang>.html      the screens themselves, every caption a literal in the markup
+#   json/message_<lang>.json  the strings the page's script builds at runtime
+# Both ship. Translating only the JSON leaves every screen in the slot language, which is
+# exactly what the console showed until the HTML was translated too.
+#
+# Dumped to work/ like any other title even though nothing ships from it under its own id -
+# the translation is written into the applet's own LayeredFS folder, because LayeredFS
+# redirects a *process*, and this archive has no process. See `mount_rename` in
+# tools/luma_hook.py for how `content:` is renamed so Luma serves it.
+NNID_PAGES_TID = "0004001B00018002"
+def build_nnid_json(table: dict[str, str]) -> tuple[str, bytes, str]:
+    """Translate the account pages' own string table.
+
+    The screens `act` shows - sign-in, User Information, Password Settings, Change Mii,
+    every dialog - are an HTML app in the shared archive 0004001B00018002, and all of their
+    text is one keyed JSON per language. The title mounts that archive as `content:`, which
+    the code patch renames to `rex:` so Luma's LayeredFS redirects it (see `mount_rename` in
+    tools/luma_hook.py). Only this one file ships; every other file in the archive is absent
+    from the SD card and falls back to the original.
+
+    Keys whose English is `null` are US-only screens - COPPA and credit cards - that carry
+    no text in a European build; they are written back as `null`, exactly as found.
+    """
+    strings = json.loads(
+        (ROOT / "src" / "strings" / "nnid" / "message__EU.json").read_text(encoding="utf-8")
+    )
+    source = ROOT / "work" / NNID_PAGES_TID / "romfs" / "json" / f"message_{variant.current().lang}.json"
+    original = json.loads(source.read_text(encoding="utf-8"))
+
+    out, translated = {}, 0
+    for key, value in original.items():
+        entry = strings.get(key)
+        if entry is None:
+            raise SystemExit(f"nnid: {key} is in the archive but not in message__EU.json")
+        if entry["ua"]:
+            out[key] = apply_homoglyphs(entry["ua"], table)
+            translated += 1
+        else:
+            out[key] = value
+
+    blob = json.dumps(out, ensure_ascii=False, indent=1).encode("utf-8")
+    rel = f"json/message_{variant.current().lang}.json"
+    return rel, blob, f"{rel}: {translated}/{len(out)} account-page strings translated"
+
+
+def build_nnid_html(table: dict[str, str]) -> tuple[str, bytes, str]:
+    """Translate the account pages themselves.
+
+    Every caption on those screens is a literal in `index_<lang>.html`; the JSON next to it
+    only holds what the page's script writes at runtime. So this file is the one that decides
+    what a person actually reads, and it is rewritten span by span - comments, attributes,
+    whitespace and the BOM are left exactly as dumped, only the text runs change.
+
+    Units are keyed by `<article>` id, and each carries the English the key stood for when it
+    was translated. The English dump is re-read here and the two are compared: markup that
+    shifted under the keys would otherwise land translations on the wrong screen in silence.
+    """
+    strings = json.loads(
+        (ROOT / "src" / "strings" / "nnid" / "index__EU.json").read_text(encoding="utf-8")
+    )
+    pages = ROOT / "work" / NNID_PAGES_TID / "romfs"
+    source = pages / f"index_{variant.current().lang}.html"
+    original = source.read_text(encoding="utf-8")
+
+    english = {unit.key: unit.text for unit in nnid_html.units(
+        (pages / "index_EU_English.html").read_text(encoding="utf-8")
+    )}
+    for key, entry in strings.items():
+        if english.get(key) != entry["en"]:
+            raise SystemExit(
+                f"nnid: {key} is {english.get(key)!r} in the English dump, but "
+                f"index__EU.json was written against {entry['en']!r} - re-extract the units"
+            )
+
+    translated = {key: apply_homoglyphs(entry["ua"], table) for key, entry in strings.items()}
+    out, replaced = nnid_html.apply(original, translated)
+    if replaced != len(strings):
+        raise SystemExit(
+            f"nnid: {len(strings)} translations but {replaced} landed - "
+            f"index_{variant.current().lang}.html does not carry the units they were keyed to"
+        )
+
+    rel = f"index_{variant.current().lang}.html"
+    return rel, out.encode("utf-8"), f"{rel}: {replaced} account-page captions translated"
+
+
 def build_area(cfg: dict, tid: str, table: dict[str, str]) -> list[str]:
     """Write the `area` archive next to the title, with the EU lists translated.
 
@@ -1070,6 +1165,14 @@ def build_title(name: str, table: dict[str, str]) -> list[str]:
             dest.parent.mkdir(parents=True, exist_ok=True)
             dest.write_bytes(blob)
             written.append(f"{dest.relative_to(ROOT)} ({len(blob)} bytes)")
+        if tid.upper() == NNID_CSS_TID:
+            for build_page in (build_nnid_json, build_nnid_html):
+                rel, blob, log_line = build_page(table)
+                dest = variant.dist() / "luma" / "titles" / tid / "romfs" / rel
+                dest.parent.mkdir(parents=True, exist_ok=True)
+                dest.write_bytes(blob)
+                written.append(log_line)
+                written.append(f"{dest.relative_to(ROOT)} ({len(blob)} bytes)")
 
     for tid in cfg["tids"]:
         if cfg.get("area"):

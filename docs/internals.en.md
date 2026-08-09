@@ -946,6 +946,99 @@ itself signed off on.
 The other cases found (System Transfer, the eShop, the purchase applet, Face Raiders) are not
 covered by this yet: there it is DARC inside DARC, and the string lengths do not match.
 
+## The account pages in Nintendo Network ID Settings
+
+Everything Nintendo Network ID Settings shows - sign-in, User Information, Password Settings,
+Change Mii, email verification, access from other devices, every dialog - is an **HTML app**,
+not MSBT: `index_<lang>.html` x13, `js/cave.js`, `css/`, `images/`, and one string file per
+language, `json/message_<lang>.json`, **313 keys**.
+
+It lives not in the `act` title but in a separate shared archive, **`0004001B00018002`** -
+type `0004001B`, not `0004009B`. The scheme table in `act`'s code at `0xE607C` pairs three
+mounts:
+
+| Scheme | Archive |
+|---|---|
+| `content:` | `0004001B00018002` - the pages and their strings |
+| `dll:` | `0004001B00018202` - `webkit.cro`, `oss.cro` |
+| `msg:` | `0004009B000122xx` - the error texts |
+
+**Half a day went into the wrong hypothesis, "the pages come from Pretendo's server."** A
+mitmproxy capture settled it: a full walk through every tab produced 13 requests, all XML API
+(`/v1/api/people/@me/profile`, `/emails`, `/content/agreements`, `oauth20/access_token`) plus
+one `.tga` of the Mii. Not one HTML fetch. The server supplies *data*; the console has the
+markup locally - which is why these screens still draw with the wireless switch off.
+
+### How the translation gets in
+
+LayeredFS cannot address another title's archive: it redirects a *process's* reads, and
+`0004001B00018002` has no process. But Luma's payload keys off the **mount prefix** in the
+path and accepts one "update" prefix, which its loader looks for in the title's own `.text`
+among `ro2: rom2: rex: patch: ext:`.
+
+`act` carries none of the five, so the patch renames `content:` to `rex:` - the same trick the
+Instruction Manual plays with `man:`, and here with nothing of Luma's to collide with. Five
+strings move together, because the applet mounts under one name and addresses the pages
+through the others:
+
+| Offset | Was | Now |
+|---|---|---|
+| `0x07A82C` | `file:///content:/` | `file:///rex:/` |
+| `0x0D5D5C` | `file:/content:` | `file:/rex:` |
+| `0x0D5D6C` | `file://content:` | `file://rex:` |
+| `0x0D5D7C` | `file:///content:` | `file:///rex:` |
+| `0x0E6084` | `content:` | `rex:` |
+
+These are C strings: each replacement is shorter and padded with NULs to the original's
+length, so nothing shifts and there is no length field to update. The build checks every
+string against the dump before replacing it, requires the lengths to match, and
+`_verify_mount_search()` checks the **patched** image for `\0rex:` inside `.text` - without
+that the applet would mount nothing at all.
+
+Every read through the mount then looks in `luma/titles/000400100002C100/romfs/` first and
+falls back to the real archive when the file is absent. So two files ship per language, and
+the archive's other 200 files are left alone.
+
+### Two files, and they are not interchangeable
+
+This cost one more wrong guess, and the console is what broke it. At first only
+`json/message_<lang>.json` was translated, and **nothing on screen changed** even though the
+patch was working. A diagnostic CSS told the two causes apart: the copy of `css/all.min.css`
+on the SD card got `body{background:#ffdd00}` appended. The background turned yellow, so the
+redirection was alive and the redirection was never the problem.
+
+| File | What it carries | When it shows |
+|---|---|---|
+| `index_<lang>.html` | the screens themselves - every caption, button and paragraph is a literal in the markup | always |
+| `json/message_<lang>.json` | the strings the page's script builds at runtime | in some dialogs |
+
+The JSON has 313 readable keys (`btn_login`, `select_item`, `error_password_not_correct`); 290
+are translated and the other 23 are `null` in the original too - the COPPA and credit-card
+screens a European build never shows. Source: `src/strings/nnid/message__EU.json`.
+
+The HTML has 417 text units, 346 of them Cyrillic. Source: `src/strings/nnid/index__EU.json`.
+A unit's key is its `<article>` id plus a position within that screen (`setting_top1.2`), so an
+extra `<div>` renumbers nothing outside its own screen. `tools/nnid_html.py` reads and rewrites
+it: the file is **not reformatted**, only the byte spans of the text itself change, and the
+comments (the originals hold Japanese section headers), attributes, whitespace and BOM survive
+as dumped. A pass with an empty dictionary returns the dump byte for byte.
+
+`<br>` counts as text rather than as a tag: a run broken by one is a single unit and the tags
+ride along inside the translation. Otherwise a translator could not put the line break where
+Ukrainian needs it rather than where Russian did.
+
+The HTML translation was barely written from scratch: **167 of 169** unique strings were
+already in the JSON and matched on their English. So the builder re-reads
+`index_EU_English.html` too and compares every key's `en` against the dump - markup that
+shifted under the keys would otherwise land a translation on the wrong screen in silence.
+
+`validate_nnid()` and `validate_nnid_pages()` check the glyphs (bar `\n`, which is a line break
+rather than something the font must carry) and that the structure survives; for the HTML they
+also check that no translation opens a tag of its own, since it is spliced into markup, and
+that no Cyrillic unit in the dump is missing a key.
+
+There is deliberately no pixel budget here - the browser lays the page out and wraps it itself.
+
 ## What the mod does not translate
 
 **Application names outside the HOME Menu.** The label under an icon, the text on the upper screen when you highlight it, the "software suspended" overlay, the close and delete prompts — all of it is the same short/long description from the title's **SMDH** (`CXI ExeFS:/icon`, 16 language structs). LayeredFS cannot reach ExeFS: Luma only redirects `romfs/`, `code.bin`, `code.ips`, `exheader.bin` and `locale.txt`, and an installed title's SMDH lives in NAND.
@@ -960,26 +1053,6 @@ Two titles carry a second copy of their SMDH inside their own `romfs`, and **Lay
 | `0004001000022B00/romfs/saveicon_EU.icn` | `Программа просмотра Nintendo Zone` | `Оглядач Nintendo Zone` |
 
 Only the slot this build replaces is touched (index 10 for `from-ru`, 1 for `from-en`) — its short and long description, 40 and 82 bytes respectively. The icon bitmaps and the other 15 languages stay byte-for-byte identical: see `tools/smdh.py` and `build_smdh()`. The eShop and Face Raiders copies exist too, but their names are already in Latin script.
-
-**The account pages in Nintendo Network ID Settings.** The title itself (`000400100002C100`, `act`) is in the release, and everything it draws on its own is Ukrainian: the sign-in dialogs, the keyboard's warning about characters an ID may not contain, the error texts, the top bar. But `User Information`, `Password Settings`, `Change Mii` and `Select an option below.` it does not draw — those are pages it fetches from the server and renders with its own WebKit. They are nowhere in the title: all **195 files** were checked - the romfs with LZ and darc unpacked, plus `code.bin` and the exheader - in five encodings (`utf-16-le`, `utf-16-be`, `utf-8`, `cp1251`, `koi8-r`). The only hit for "пользовател" is the proxy field's `Ім'я користувача`. There is no Cyrillic outside `message/`, the layouts are pure artwork whose text panes are filled at runtime, and the title ships no HTML or CSS at all.
-
-Verified on hardware on 2026-08-08: **with the wireless switch off these screens still draw** — the
-pages are cached locally, and the attempt to reach the network then fails with `003-0299` on top of
-them. The same screenshots show the boundary word for word: the top bar's `Вимк.`, `Зачекайте...`
-and the whole body of error `003-0299` are Ukrainian because the title draws them; `Войти`,
-`Я забыл(а)` and `Повторить попытку?` are Russian because they live in the HTML. The telling case
-is `Отмена`: all three of its labels in the title are translated to `Скасувати`, yet the screen
-shows Russian - so that dialog is inside the page too (the title carries a `browse/jsdialog/`
-layout for exactly that).
-
-The server picks the language from the `Accept-Language` header the title sends, which follows the console's language. With the mod in the Russian slot, Russian comes back; a `from-en` build would get English. No file on the SD card changes that — but one lever does exist, and it has not been explored: `romfs/browser/UserCss.dat` is a `data:text/css;base64,…` user stylesheet the engine applies to every page, and LayeredFS replaces it like any other file - and, importantly, the stylesheet is applied **at render time**, so it reaches cached pages too, no network required. In WebKit, `font-size: 0` together with `::before { content: … }` replaces a node's visible text.
-
-**Verified on hardware on 2026-08-08** by swapping `UserCss.dat` in the Internet Browser:
-`content:` does draw text, and the engine accepts a 1091-byte `data:` URL where the stock one
-is 308 - but **real `і ї є ґ` come out as empty boxes** while the homoglyphs `i ï ε г` render
-fine. So strings in the CSS have to go through `apply_homoglyphs` like any other text in the
-mod; the browser's font is the same poor one. What is left open is whether the pages have
-stable selectors. The same file, byte for byte, ships in the Internet Browser (`0004003000009D02`), which the mod already carries with plain LayeredFS — the idea can be tested there at no risk and without a new title.
 
 **The system font.** It has no Ukrainian letters, and LayeredFS cannot replace it: it lives in a separate system title the mod does not touch.
 

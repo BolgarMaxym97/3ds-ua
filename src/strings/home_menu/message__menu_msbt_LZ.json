@@ -1445,7 +1445,7 @@
   },
   "lau_press_pow_u1": {
     "en": "・ Count your steps and\n　 collect Play Coins{t:1.0:1400}\n                    {/t:1.0}\n・ Use StreetPass{t:1.0:1400}\n                    {/t:1.0}\n・ Receive various content\n　 via SpotPass",
-    "ua": "・ Підраховувати ваші кроки\n　 і збирати ігрові монетки.{t:1.0:1400}\n                    {/t:1.0}\n・ Використовувати StreetPass.{t:1.0:1400}\n                    {/t:1.0}\n・ Отримувати контент у SpotPass.\n♥ Мій телеграм: t.me/side_quest_ua ♥"
+    "ua": "・ Підраховувати ваші кроки\n　 і збирати ігрові монетки.{t:1.0:1400}\n                    {/t:1.0}\n・ Використовувати StreetPass.{t:1.0:1400}\n                    {/t:1.0}\n・ Отримувати контент у SpotPass.\n{t:0.3:e02020ff}♥{t:0.3:000000ff} Мій телеграм: t.me/side_quest_ua {t:0.3:e02020ff}♥{t:0.3:000000ff}"
   },
   "lau_press_pow0": {
     "en": "Software closed.",

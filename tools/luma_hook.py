@@ -558,6 +558,35 @@ HOOK_PATCHES: dict[str, dict] = {
         "title_version": 3,
         "code_sha256": "cc5422a94cdd348d08bf7d9818c9ac18ea27234aadddcf5d404390d152185745",
         "kind": "exheader_only",
+        # The account screens - User Information, Password Settings, Change Mii, the sign-in
+        # page, every dialog - are an HTML app: `index_<lang>.html` plus `js/`, `css/` and one
+        # `json/message_<lang>.json` of 313 keyed strings. None of it is in this title. It
+        # lives in the shared archive 0004001B00018002, which the title mounts as `content:`
+        # (the scheme table at 0xE607C pairs `content:` with 0004001B00018002, `dll:` with
+        # 0004001B00018202 and `msg:` with 0004009B000122xx). A mitmproxy capture of a full
+        # walk through every tab settles it: thirteen requests, all XML API and one Mii
+        # image, not a single HTML fetch. The pages are local.
+        #
+        # LayeredFS cannot reach that archive by title id - it redirects a *process's* reads,
+        # and 0004001B00018002 has no process. But Luma's payload keys off the mount prefix
+        # in the path, and it accepts one "update" prefix it finds in the title's own .text
+        # among `ro2: rom2: rex: patch: ext:`. This title carries none of the five, so the
+        # `content:` strings are renamed to `rex:` - the same trick the Instruction Manual
+        # patch plays on `man:`, and with no prefix of Luma's to collide with. Every read
+        # through the mount then looks for /luma/titles/<TID>/romfs/<path> first and falls
+        # back to the real archive when the file is absent, so only the one translated JSON
+        # ships. See build_nnid_json() in tools/build.py.
+        #
+        # The mount name and the three URL scheme spellings and the URL template all move
+        # together - the applet mounts under one and addresses the pages through the others.
+        # Each replacement is padded with NULs to the original's length so nothing shifts.
+        "mount_rename": [
+            (0x07A82C, b"file:///content:/", b"file:///rex:/\0\0\0\0"),
+            (0x0D5D5C, b"file:/content:", b"file:/rex:\0\0\0\0"),
+            (0x0D5D6C, b"file://content:", b"file://rex:\0\0\0\0"),
+            (0x0D5D7C, b"file:///content:", b"file:///rex:\0\0\0\0"),
+            (0x0E6084, b"content:", b"rex:\0\0\0\0"),
+        ],
     },
     # Nintendo eShop, EUR, title version 29. The same case as StreetPass Mii Plaza and the
     # two Miiverse applets: Luma hooks the code unaided, but accessInfo is 0x240001
@@ -2987,13 +3016,21 @@ def generate(
         ]
         # ... but the error-message archive is not something LayeredFS can reach, so a title
         # that reads it still needs a code.ips of its own. See _msg_records().
+        records: list[tuple[int, bytes]] = []
         if patch.get("msg_hook"):
             hook = patch["msg_hook"]
             records, msg_log = _msg_records(
                 tid, patch, code, exheader, hook["stub_off"], hook["rodata_off"]
             )
-            files["code.ips"] = make_ips(records)
             log += msg_log
+        if patch.get("mount_rename"):
+            log += _mount_rename_records(patch, code, records)
+            # Luma looks for the new prefix inside .text; no stub widens it here, so the
+            # exheader's own text.size is the range it will search.
+            patch["text_size"] = struct.unpack_from("<I", exheader, TEXT_SIZE_OFFSET)[0]
+            _verify_mount_search(patch, code, records)
+        if records:
+            files["code.ips"] = make_ips(records)
         else:
             log[-1] += ", so no code.ips"
         return files, log
@@ -3276,26 +3313,42 @@ def _manual_copy_only(spec: dict, code: bytes, records: list) -> list[str]:
 
 
 def _mount_rename_records(patch: dict, code: bytes, records: list) -> list[str]:
-    """Rename an archive mount to one LayeredFS knows, so Luma will redirect reads from it."""
+    """Rename an archive mount to one LayeredFS knows, so Luma will redirect reads from it.
+
+    Two shapes. `{"old", "new", "offsets"}` renames one word at several offsets - the
+    Instruction Manual's `man:` -> `rex:`. A list of `(offset, old, new)` renames several
+    different strings, which is what a mount reached through URLs needs: the account pages
+    in `act` are addressed as `file:///content:/…`, so the scheme table and the URL template
+    have to move together with the mount name or the applet mounts one thing and asks for
+    another.
+
+    Either way the replacement is written over the original in place, so both must be the
+    same length. A shorter name is padded with NULs by the caller's table: these are C
+    strings, the first NUL ends them, and the bytes behind it were already zero.
+    """
     rename = patch.get("mount_rename")
     if not rename:
         return []
 
-    old, new = rename["old"], rename["new"]
-    if len(old) != len(new):
-        raise RuntimeError(f"{old!r} and {new!r} are different lengths; the patch is in place")
+    entries = (
+        [(off, rename["old"], rename["new"]) for off in rename["offsets"]]
+        if isinstance(rename, dict)
+        else list(rename)
+    )
 
-    text_size = patch.get("text_size_override") or patch["text_size"]
-    for offset in rename["offsets"]:
+    for offset, old, new in entries:
+        if len(old) != len(new):
+            raise RuntimeError(f"{old!r} and {new!r} are different lengths; the patch is in place")
         if code[offset:offset + len(old)] != old:
             raise RuntimeError(f"0x{offset:X} does not hold {old!r} - the offsets are stale")
         records.append((offset, new))
 
+    renamed = ", ".join(f"0x{off:X}" for off, _, _ in entries)
+    shown = entries[0][1].decode(), entries[-1][2].split(b"\0")[0].decode()
     return [
-        f"code.ips: mount {old.decode()} -> {new.decode()} at "
-        + ", ".join(f"0x{off:X}" for off in rename["offsets"])
+        f"code.ips: mount {shown[0]} -> {shown[1]} at {renamed}"
         + "; LayeredFS then redirects the reads to the title's romfs folder, and falls back "
-        "to the console's own manual when the file is absent"
+        "to the original archive when the file is absent"
     ]
 
 
@@ -3418,8 +3471,12 @@ def _verify_mount_search(patch: dict, code: bytes, records: list) -> None:
     for offset, data in records:
         patched[offset:offset + len(data)] = data
 
+    # The list form pads its replacements with NULs; the mount name is the last entry, up to
+    # its first NUL. Luma matches on the bare name, not on the padding behind it.
+    name = rename["new"] if isinstance(rename, dict) else rename[-1][2].split(b"\0")[0]
+
     text_size = patch.get("text_size_override") or patch["text_size"]
-    if patched.find(b"\0" + rename["new"], 0, text_size) < 0:
+    if patched.find(b"\0" + name, 0, text_size) < 0:
         raise RuntimeError(
-            f"nothing for Luma to match: no NUL-prefixed {rename['new']!r} inside .text"
+            f"nothing for Luma to match: no NUL-prefixed {name!r} inside .text"
         )
