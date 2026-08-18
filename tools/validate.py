@@ -68,12 +68,15 @@ WIDTH_LIMIT = 1.0
 # hair wider than "Открыть", and far too little to hide a real overflow.
 WIDTH_SLACK = 8
 BRACE_RE = re.compile(r"\{[^}]*\}")
-# `{t:1.0:XXXX}` scales the font: 0x6400 is 100%, 0x4600 is 70%. Measuring the glyphs
+# `{t:1.0:XXXX}` and `{t:1.1:XXXX}` scale the font: 0x6400 is 100%, 0x4600 is 70%. Both
+# shapes exist in the dumps and a label often carries one of each, so both are read here -
+# ignoring `{t:1.1}` inflated the budget of every label the officials shrank with it, which
+# is how the Notifications launch button and the friend card shipped clipped. Measuring the glyphs
 # without it made the budget meaningless - the widest official localisation is usually the
 # one that squeezed itself the most, so a full-size Ukrainian label measured "narrower" than
 # a shrunken Dutch one and still overflowed the pane on hardware (the Camera and Sound
 # buttons of release 0.9.0). The pane holds the widest *painted* line, not the widest glyph run.
-SCALE_RE = re.compile(r"\{(/?)t:1\.0(?::([0-9a-fA-F]*))?\}")
+SCALE_RE = re.compile(r"\{(/?)t:1\.([01])(?::([0-9a-fA-F]*))?\}")
 SCALE_100 = 0x6400
 # The labels the HUD font draws, as opposed to the rest of hud.msbt: the clock line's
 # date format and its parts. `lau_connect*` and friends sit below it in the system font,
@@ -123,7 +126,9 @@ def strip_tags(text: str) -> str:
 
 def line_widths(text: str, widths: dict[int, int]) -> list[float]:
     """Painted width of every line in pixels, honouring the font-scale tags."""
-    scale = 1.0
+    # Both scale tags can be open at once - the originals nest `{t:1.1}` around `{t:1.0}` -
+    # so each type keeps its own factor and the painted size is their product.
+    scales = {"0": 1.0, "1": 1.0}
     lines = [0.0]
     index = 0
 
@@ -133,7 +138,10 @@ def line_widths(text: str, widths: dict[int, int]) -> list[float]:
             scaling = SCALE_RE.fullmatch(tag.group(0))
             if scaling:
                 # `{/t:1.0}` and a valueless `{t:1.0}` end the run and restore full size.
-                scale = int(scaling.group(2), 16) / SCALE_100 if scaling.group(2) and not scaling.group(1) else 1.0
+                value = scaling.group(3)
+                scales[scaling.group(2)] = (
+                    int(value, 16) / SCALE_100 if value and not scaling.group(1) else 1.0
+                )
             index = tag.end()
             continue
         char = text[index]
@@ -141,7 +149,7 @@ def line_widths(text: str, widths: dict[int, int]) -> list[float]:
         if char == "\n":
             lines.append(0.0)
             continue
-        lines[-1] += widths.get(ord(char), 0) * scale
+        lines[-1] += widths.get(ord(char), 0) * scales["0"] * scales["1"]
 
     return lines
 

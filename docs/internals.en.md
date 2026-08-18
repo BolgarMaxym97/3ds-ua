@@ -1051,7 +1051,7 @@ The JSON has 313 readable keys (`btn_login`, `select_item`, `error_password_not_
 are translated and the other 23 are `null` in the original too - the COPPA and credit-card
 screens a European build never shows. Source: `src/strings/nnid/message__EU.json`.
 
-The HTML has 417 text units, 346 of them Cyrillic. Source: `src/strings/nnid/index__EU.json`.
+The HTML has 432 text units, 361 of them Cyrillic. Source: `src/strings/nnid/index__EU.json`.
 A unit's key is its `<article>` id plus a position within that screen (`setting_top1.2`), so an
 extra `<div>` renumbers nothing outside its own screen. `tools/nnid_html.py` reads and rewrites
 it: the file is **not reformatted**, only the byte spans of the text itself change, and the
@@ -1061,6 +1061,12 @@ as dumped. A pass with an empty dictionary returns the dump byte for byte.
 `<br>` counts as text rather than as a tag: a run broken by one is a single unit and the tags
 ride along inside the translation. Otherwise a translator could not put the line break where
 Ukrainian needs it rather than where Russian did.
+
+Fifteen of those units are not markup text at all: the hint the software keyboard paints above
+a text field lives in the field's `guide` attribute, and `guide` is the only attribute on these
+pages that carries a caption. They are keyed `<article>.guideN`, on a counter of their own so
+that text-run keys keep their numbers, and their byte spans are the attribute value. Until they
+were read, the password and email screens asked for their input in the slot language.
 
 The HTML translation was barely written from scratch: **167 of 169** unique strings were
 already in the JSON and matched on their English. So the builder re-reads

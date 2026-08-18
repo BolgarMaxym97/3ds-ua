@@ -9,7 +9,7 @@
   },
   "lau_dlg_quit5": {
     "en": "Closing suspended software...",
-    "ua": "Призупинена програма\nзакривається…..."
+    "ua": "Призупинена програма\nзакривається…"
   },
   "lau_dlg_quit8": {
     "en": "Close the suspended software\nand launch this one?",
@@ -69,7 +69,7 @@
   },
   "lau_dlg_ng_sd1": {
     "en": "Could not access SD Card.",
-    "ua": "Не вдалося отримати доступ\nдо карти SD.."
+    "ua": "Не вдалося отримати доступ\nдо карти SD."
   },
   "lau_dlg_cardupd0": {
     "en": "",
@@ -197,7 +197,7 @@
   },
   "new_start": {
     "en": "Launch software",
-    "ua": "Відкрити програму"
+    "ua": "Запустити"
   },
   "new_ban_encount": {
     "en": "Deactivate StreetPass for this title",

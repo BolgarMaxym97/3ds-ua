@@ -22,6 +22,10 @@ SKIP_ELEMENT = re.compile(r"<(script|style)\b.*?</\1\s*>", re.IGNORECASE | re.DO
 COMMENT = re.compile(r"<!--.*?-->", re.DOTALL)
 TAG = re.compile(r"<[^>]*>", re.DOTALL)
 ARTICLE_ID = re.compile(r"<article\b[^>]*\bid=\"([^\"]+)\"", re.IGNORECASE)
+# The hint the keyboard paints above a text field is an attribute, not markup text, so the
+# run scan below never sees it - `guide` is the only attribute on these pages that carries
+# a caption, and it is the one that kept showing the slot language on the account screens.
+GUIDE = re.compile(r"\bguide\s*=\s*\"([^\"]*)\"", re.IGNORECASE)
 
 
 @dataclass
@@ -99,6 +103,27 @@ def units(html: str) -> list[Unit]:
         counters[article] = counters.get(article, 0) + 1
         result.append(Unit(f"{article}.{counters[article]}", html[start:end], [(start, end)]))
 
+    result += _guides(html, articles)
+    result.sort(key=lambda unit: unit.spans[0][0])
+    return result
+
+
+def _guides(html: str, articles: list[tuple[int, str]]) -> list[Unit]:
+    """The `guide` hints, keyed apart from the text runs so their numbering is independent."""
+    result: list[Unit] = []
+    counters: dict[str, int] = {}
+    for match in GUIDE.finditer(html):
+        if not match.group(1).strip():
+            continue
+        article = "page"
+        for position, name in articles:
+            if position > match.start():
+                break
+            article = name
+        counters[article] = counters.get(article, 0) + 1
+        result.append(
+            Unit(f"{article}.guide{counters[article]}", match.group(1), [match.span(1)])
+        )
     return result
 
 

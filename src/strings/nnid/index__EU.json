@@ -59,6 +59,18 @@
     "en": "Next",
     "ua": "Далі"
   },
+  "connect_nnid_input.guide1": {
+    "en": "Use between 6 and\n16 characters.",
+    "ua": "Використовуйте\nвід 6 до 16 символів."
+  },
+  "connect_nnid_input.guide2": {
+    "en": "Enter your password.",
+    "ua": "Введіть свій пароль."
+  },
+  "connect_nnid_input.guide3": {
+    "en": "Enter an email address.",
+    "ua": "Введіть електронну пошту."
+  },
   "connect_nnid_input.1": {
     "en": "Please enter the following information.",
     "ua": "Введіть таку інформацію."
@@ -258,6 +270,14 @@
   "coppa_credit_confirm.11": {
     "en": "Send",
     "ua": "Надіслати"
+  },
+  "coppa_credit_input.guide1": {
+    "en": "Enter an email address\n(parent or guardian).",
+    "ua": "Введіть електронну пошту\n(батька, матері або опікуна)."
+  },
+  "coppa_credit_input.guide2": {
+    "en": "Enter an email address\n(parent or guardian).",
+    "ua": "Введіть електронну пошту\n(батька, матері або опікуна)."
   },
   "coppa_credit_input.1": {
     "en": "Credit card number (16 digits)",
@@ -655,6 +675,26 @@
     "en": "Confirm",
     "ua": "Підтвердити"
   },
+  "regist_nnid_meta_input.guide1": {
+    "en": "Use between 6 and\n16 characters.",
+    "ua": "Використовуйте\nвід 6 до 16 символів."
+  },
+  "regist_nnid_meta_input.guide2": {
+    "en": "Use between 6 and\n16 characters.",
+    "ua": "Використовуйте\nвід 6 до 16 символів."
+  },
+  "regist_nnid_meta_input.guide3": {
+    "en": "Enter your password\nagain to confirm.",
+    "ua": "Введіть пароль ще раз\nдля підтвердження."
+  },
+  "regist_nnid_meta_input.guide4": {
+    "en": "Enter an email address.",
+    "ua": "Введіть електронну пошту."
+  },
+  "regist_nnid_meta_input.guide5": {
+    "en": "Enter the email address\nagain to confirm.",
+    "ua": "Введіть електронну пошту\nще раз для підтвердження."
+  },
   "regist_nnid_meta_input.1": {
     "en": "Date of Birth",
     "ua": "Дата народження"
@@ -734,6 +774,10 @@
   "regist_nnid_meta_input.27": {
     "en": "Confirm",
     "ua": "Підтвердити"
+  },
+  "regist_nnid_reinput.guide1": {
+    "en": "Use between 6 and\n16 characters.",
+    "ua": "Використовуйте\nвід 6 до 16 символів."
   },
   "regist_nnid_reinput.1": {
     "en": "Create a Nintendo Network ID using between 6 and 16 characters.<br><br>You cannot change this ID later.",
@@ -1131,6 +1175,10 @@
     "en": "Set",
     "ua": "Задати"
   },
+  "setting_meta_input.guide1": {
+    "en": "Enter the email address\nagain to confirm.",
+    "ua": "Введіть електронну пошту\nще раз для підтвердження."
+  },
   "setting_meta_input.1": {
     "en": "Nintendo Network ID",
     "ua": "Nintendo Network ID"
@@ -1242,6 +1290,18 @@
   "setting_offdevise.6": {
     "en": "Set",
     "ua": "Задати"
+  },
+  "setting_password_input.guide1": {
+    "en": "Enter your password.",
+    "ua": "Введіть свій пароль."
+  },
+  "setting_password_input.guide2": {
+    "en": "Use between 6 and\n16 characters.",
+    "ua": "Використовуйте\nвід 6 до 16 символів."
+  },
+  "setting_password_input.guide3": {
+    "en": "Enter your password\nagain to confirm.",
+    "ua": "Введіть пароль ще раз\nдля підтвердження."
   },
   "setting_password_input.1": {
     "en": "Current Password",

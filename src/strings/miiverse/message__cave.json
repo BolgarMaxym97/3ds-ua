@@ -17,7 +17,7 @@
   },
   "lau_dlg_quit5": {
     "en": "Closing suspended software...",
-    "ua": "Призупинена програма\nзакривається…..."
+    "ua": "Призупинена програма\nзакривається…"
   },
   "lau_dlg_quit1": {
     "en": "Close the suspended software\nand launch this one?\n{t:1.1:5500}{t:0.3:3c3c3cff}(Any unsaved data will\nbe lost.){t:0.3:000000ff}{/t:1.1}",

@@ -164,7 +164,7 @@ slot); `Current Results` in the music list is **Проміжний підсум�
 | Error Code | Код помилки |
 
 **Width exceptions:** `Delete` in Notifications is **Стерти** (104px slot); `Launch software`
-is **Відкрити програму** (238px slot); `View Documents` in the agreement is
+is **Запустити** (214px slot); `View Documents` in the agreement is
 **Переглянути тексти** (279px slot).
 
 ## Browser, eShop, games, System Transfer

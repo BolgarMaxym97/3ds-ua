@@ -49,7 +49,7 @@
   },
   "fri_card_joinable": {
     "en": "OK to Join",
-    "ua": "Набір учасн."
+    "ua": "{t:1.1:4600}Набір учасників{/t:1.1}"
   },
   "fri_card_invited": {
     "en": "",
@@ -181,7 +181,7 @@
   },
   "lau_dlg_quit5": {
     "en": "Closing suspended software...",
-    "ua": "Призупинена програма\nзакривається…..."
+    "ua": "Призупинена програма\nзакривається…"
   },
   "lau_dlg_quit8": {
     "en": "Close the suspended software\nand launch this one?",
@@ -237,7 +237,7 @@
   },
   "lau_dlg_ng_sd1": {
     "en": "Could not access SD Card.",
-    "ua": "Не вдалося отримати доступ\nдо карти SD.."
+    "ua": "Не вдалося отримати доступ\nдо карти SD."
   },
   "fri_edit": {
     "en": "Favourite Title",

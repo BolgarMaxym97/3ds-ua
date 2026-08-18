@@ -25,7 +25,7 @@
   },
   "lau_title_camera": {
     "en": "Activating camera...",
-    "ua": "Увімкнення камери…..."
+    "ua": "Увімкнення камери…"
   },
   "lau_isbn": {
     "en": "",
@@ -85,11 +85,11 @@
   },
   "lau_dlg_quit4": {
     "en": "Closing software...",
-    "ua": "Програма закривається.."
+    "ua": "Програма закривається…"
   },
   "lau_dlg_quit5": {
     "en": "Closing suspended software...",
-    "ua": "Призупинена програма\nзакривається…..."
+    "ua": "Призупинена програма\nзакривається…"
   },
   "lau_dlg_quit6": {
     "en": "",
@@ -125,7 +125,7 @@
   },
   "lau_dlg_cup_error": {
     "en": "This Game Card\ncannot be used.",
-    "ua": "Цю гральну карту\nне можна використати.."
+    "ua": "Цю гральну карту\nне можна використати."
   },
   "lau_dlg_2b_canc0": {
     "en": " Cancel",
@@ -225,7 +225,7 @@
   },
   "lau_dlg_sam_del0": {
     "en": "Deleting demo...",
-    "ua": "Видалення демоверсії…..."
+    "ua": "Видалення демоверсії…"
   },
   "lau_dlg_sam_del1": {
     "en": "Write-protection is enabled\non the SD Card.\nTurn off the power, move the\nSD Card's write-protection\nswitch to the off position,\nthen reinsert the SD Card.",
@@ -233,11 +233,11 @@
   },
   "lau_dlg_sam_del2": {
     "en": "The demo has\nbeen deleted.",
-    "ua": "Демоверсію видалено.."
+    "ua": "Демоверсію видалено."
   },
   "lau_dlg_sam_del3": {
     "en": "Could not delete the demo.",
-    "ua": "Не вдалося видалити\nцю демоверсію.."
+    "ua": "Не вдалося видалити\nцю демоверсію."
   },
   "lau_dlg_bgdl0": {
     "en": "",
@@ -249,11 +249,11 @@
   },
   "lau_dlg_bgdl0_sd_sac": {
     "en": "Downloading. Do not remove\nthe microSD card. Close\nsystem to resume download.",
-    "ua": "{t:1.0:5500}Підготовка. Не виймайте\nкарту microSD. Закрийте\nсистему, щоб почати завантаження.{/t:1.0}"
+    "ua": "{t:1.0:5300}Підготовка. Не виймайте\nкарту microSD. Закрийте\nсистему, щоб почати завантаження.{/t:1.0}"
   },
   "lau_dlg_bgdl0_sd_jan": {
     "en": "Downloading. Do not remove\nthe microSD card. Close\nsystem to resume download.",
-    "ua": "{t:1.0:5500}Підготовка. Не виймайте\nкарту microSD. Закрийте\nсистему, щоб почати завантаження.{/t:1.0}"
+    "ua": "{t:1.0:5300}Підготовка. Не виймайте\nкарту microSD. Закрийте\nсистему, щоб почати завантаження.{/t:1.0}"
   },
   "lau_dlg_bgdl0_sd_flw": {
     "en": "Downloading. Do not remove\nthe SD Card. Enter Sleep\nMode to resume download.",
@@ -261,11 +261,11 @@
   },
   "lau_dlg_bgdl0_nand": {
     "en": "Downloading.\nClose system to\nresume download.",
-    "ua": "Підготовка.\nЗакрийте систему,\nщоб почати завантаження.."
+    "ua": "Підготовка.\nЗакрийте систему,\nщоб почати завантаження."
   },
   "lau_dlg_bgdl0_nand_flw": {
     "en": "Downloading.\nEnter Sleep Mode to\nresume download.",
-    "ua": "Підготовка. Перейдіть\nу режим сну,\nщоб почати завантаження.."
+    "ua": "Підготовка. Перейдіть\nу режим сну,\nщоб почати завантаження."
   },
   "lau_dlg_bgdl1": {
     "en": "Stop the download?\n\n{t:1.0:5500}{t:0.3:3c3c3cff}The software will still be\navailable for free download\nfrom Nintendo eShop.{t:0.3:000000ff}{/t:1.0}",
@@ -289,15 +289,15 @@
   },
   "lau_dlg_bgdl5_flw": {
     "en": "Download stopped.\nPlease enable wireless\ncommunication.",
-    "ua": "Завантаження зупинено.\nУвімкніть бездротовий\nрежим.."
+    "ua": "Завантаження зупинено.\nУвімкніть бездротовий\nрежим."
   },
   "lau_dlg_bgdl5_sac": {
     "en": "Download stopped.\nPlease enable wireless\ncommunication.",
-    "ua": "Завантаження зупинено.\nУвімкніть бездротовий\nрежим.."
+    "ua": "Завантаження зупинено.\nУвімкніть бездротовий\nрежим."
   },
   "lau_dlg_bgdl5_jan": {
     "en": "Download stopped.\nPlease enable wireless\ncommunication.",
-    "ua": "Завантаження зупинено.\nУвімкніть бездротовий\nрежим.."
+    "ua": "Завантаження зупинено.\nУвімкніть бездротовий\nрежим."
   },
   "lau_dlg_bgdl6": {
     "en": "{t:1.0:6200}Downloading update data. Do\nnot remove the SD Card. Close\nsystem to resume download.{/t:1.0}",
@@ -333,7 +333,7 @@
   },
   "lau_dlg_bgdl11": {
     "en": "The software has\nbeen updated.",
-    "ua": "Програму оновлено.."
+    "ua": "Програму оновлено."
   },
   "lau_dlg_bgdl_btn_0": {
     "en": " Complete Download Now",
@@ -345,7 +345,7 @@
   },
   "lau_dlg_fgdl0": {
     "en": "Downloading...",
-    "ua": "Завантаження…..."
+    "ua": "Завантаження…"
   },
   "lau_dlg_2b_dele": {
     "en": "",
@@ -373,11 +373,11 @@
   },
   "lau_battery_u": {
     "en": "Battery power is running low.",
-    "ua": "Потрібно підзарядити батарею.."
+    "ua": "Потрібно підзарядити батарею."
   },
   "lau_zone_u": {
     "en": "The Nintendo Zone service is available here.",
-    "ua": "Тут доступна Nintendo Zone.."
+    "ua": "Тут доступна Nintendo Zone."
   },
   "lau_dlg_zone": {
     "en": "The Nintendo Zone service\nis available at your location. \nTo use this service, touch the \nNintendo Zone viewer icon.",
@@ -493,7 +493,7 @@
   },
   "lau_no_gamecard": {
     "en": "There is nothing inserted into\nthe Game Card slot.",
-    "ua": "Гральну карту не вставлено.."
+    "ua": "Гральну карту не вставлено."
   },
   "lau_title_memo_u": {
     "en": "Game Notes",
@@ -709,15 +709,15 @@
   },
   "lau_theme_change": {
     "en": "Please choose a theme.",
-    "ua": "Виберіть тему.."
+    "ua": "Виберіть тему."
   },
   "lau_theme_change_plu": {
     "en": "Please choose some themes.",
-    "ua": "Виберіть улюблені теми.."
+    "ua": "Виберіть улюблені теми."
   },
   "lau_theme_shop_spbln": {
     "en": "Add themes here.",
-    "ua": "Тут можна купити теми.."
+    "ua": "Тут можна купити теми."
   },
   "lau_theme_shop": {
     "en": "Theme Shop",
@@ -733,7 +733,7 @@
   },
   "lau_theme_shop_error": {
     "en": "Could not acquire data.",
-    "ua": "Не вдалося отримати дані.."
+    "ua": "Не вдалося отримати дані."
   },
   "lau_theme_red": {
     "en": "Simple Red",
@@ -805,7 +805,7 @@
   },
   "lau_theme_delete_u": {
     "en": "Select the theme you wish to delete.",
-    "ua": "Виберіть тему для видалення.."
+    "ua": "Виберіть тему для видалення."
   },
   "lau_theme_dlg_delete_0": {
     "en": "Delete this theme?{t:1.0:1400}\n {/t:1.0}\n{t:1.0:5f00}You can redownload the\ntheme from the Theme Shop.{/t:1.0}",
@@ -821,7 +821,7 @@
   },
   "lau_theme_dlg_delete_done": {
     "en": "Theme deleted.",
-    "ua": "Тему видалено.."
+    "ua": "Тему видалено."
   },
   "lau_theme_exit_delete": {
     "en": "",
@@ -829,7 +829,7 @@
   },
   "lau_theme_change_thm_fail": {
     "en": "Unable to change theme.",
-    "ua": "Не вдалося змінити тему.."
+    "ua": "Не вдалося змінити тему."
   },
   "tm_shop_title": {
     "en": "Theme Shop",
@@ -913,7 +913,7 @@
   },
   "tm_shop_dt_about_set": {
     "en": "This product contains\n%d themes.",
-    "ua": "Кількість тем у цьому\nпродукті: %d.."
+    "ua": "Кількість тем у цьому\nпродукті: %d."
   },
   "tm_shop_dt_normal_wall": {
     "en": "Normal wallpaper",
@@ -957,7 +957,7 @@
   },
   "tm_shop_dt_lang_disp": {
     "en": "Buttons and other text will appear in\nthe language your system is set to.",
-    "ua": "Опції та інший текст буде\nпоказано мовою системи.."
+    "ua": "Опції та інший текст буде\nпоказано мовою системи."
   },
   "tm_shop_dt_bu_relat_app": {
     "en": "View Related Software",
@@ -973,7 +973,7 @@
   },
   "tm_shop_about_dlcode": {
     "en": "If you have a download code for\na theme you can redeem it here.",
-    "ua": "Тут можна використати\nкод завантаження теми.."
+    "ua": "Тут можна використати\nкод завантаження теми."
   },
   "tm_shop_mn_bu_pchsd_theme": {
     "en": "",
@@ -1085,11 +1085,11 @@
   },
   "tm_shop_dlg_empty_list": {
     "en": "No information can be\ndisplayed.",
-    "ua": "Немає інформації\nдля показу.."
+    "ua": "Немає інформації\nдля показу."
   },
   "tm_shop_not_sv_region": {
     "en": "Nothing is available at present\nfor your current region setting.",
-    "ua": "Зараз для вашого\nрегіону немає\nдоступних елементів.."
+    "ua": "Зараз для вашого\nрегіону немає\nдоступних елементів."
   },
   "lau_dlg_no_badge": {
     "en": "",
@@ -1109,7 +1109,7 @@
   },
   "plt_guide_back": {
     "en": "Place a badge here\nto remove it.",
-    "ua": "Покладіть жетон сюди,\nщоб зняти його.."
+    "ua": "Покладіть жетон сюди,\nщоб зняти його."
   },
   "plt_guide_limit_badge": {
     "en": "",
@@ -1125,7 +1125,7 @@
   },
   "plt_guide_back_folder": {
     "en": "Move a badge over a folder\nto attach it to the front.",
-    "ua": "Покладіть жетон на папку,\nщоб причепити його до неї.."
+    "ua": "Покладіть жетон на папку,\nщоб причепити його до неї."
   },
   "plt_setting_reset": {
     "en": "Remove All Badges",
@@ -1165,7 +1165,7 @@
   },
   "mhm_title_u": {
     "en": "Save/load HOME Menu layouts.",
-    "ua": "Збереження виглядів меню HOME.."
+    "ua": "Збереження виглядів меню HOME."
   },
   "mhm_save_4b": {
     "en": " Save",
@@ -1193,7 +1193,7 @@
   },
   "lau_dlg_mhm_save_fail": {
     "en": "Failed to save.",
-    "ua": "Не вдалося зберегти.."
+    "ua": "Не вдалося зберегти."
   },
   "lau_dlg_mhm_load_fail": {
     "en": "Failed to load.",
@@ -1201,7 +1201,7 @@
   },
   "lau_dlg_mhm_delete_fail": {
     "en": "Failed to delete.",
-    "ua": "Не вдалося видалити.."
+    "ua": "Не вдалося видалити."
   },
   "lau_dlg_mhm_ng_softpose": {
     "en": "You cannot use the HOME\nMenu layout feature while\nsoftware is suspended.",
@@ -1221,7 +1221,7 @@
   },
   "lau_dlg_mhm_create_data_fail": {
     "en": "Failed to create HOME Menu\nlayout management\ninformation.",
-    "ua": "Не вдалося створити дані\nкерування виглядами\nменю HOME.."
+    "ua": "Не вдалося створити дані\nкерування виглядами\nменю HOME."
   },
   "lau_dlg_mhm_sd_diff": {
     "en": "Unable to load HOME Menu\nlayout management\ninformation from the SD card.\n\nPlease try again.",
@@ -1309,15 +1309,15 @@
   },
   "lau_dlg_ng_sd1": {
     "en": "Could not access SD Card.",
-    "ua": "Не вдалося отримати доступ\nдо карти SD.."
+    "ua": "Не вдалося отримати доступ\nдо карти SD."
   },
   "lau_dlg_ng_sd1_sac": {
     "en": "Could not access\nmicroSD card.",
-    "ua": "Не вдалося отримати доступ\nдо карти microSD.."
+    "ua": "Не вдалося отримати доступ\nдо карти microSD."
   },
   "lau_dlg_ng_sd1_jan": {
     "en": "Could not access\nmicroSD card.",
-    "ua": "Не вдалося отримати доступ\nдо карти microSD.."
+    "ua": "Не вдалося отримати доступ\nдо карти microSD."
   },
   "lau_dlg_ng_bgdl": {
     "en": "This software title is currently\nbeing updated and cannot be\nlaunched at this time.",
@@ -1381,15 +1381,15 @@
   },
   "lau_dlg_cap_sd_miss": {
     "en": "An SD card process failed.",
-    "ua": "Не вдалося прочитати\nдані з карти SD.."
+    "ua": "Не вдалося прочитати\nдані з карти SD."
   },
   "lau_dlg_cap_sd_miss_sac": {
     "en": "A microSD card\nprocess failed.",
-    "ua": "Не вдалося прочитати\nдані з карти microSD.."
+    "ua": "Не вдалося прочитати\nдані з карти microSD."
   },
   "lau_dlg_cap_sd_miss_jan": {
     "en": "A microSD card\nprocess failed.",
-    "ua": "Не вдалося прочитати\nдані з карти microSD.."
+    "ua": "Не вдалося прочитати\nдані з карти microSD."
   },
   "lau_dlg_motion0": {
     "en": "Motion Sensor Calibration",
@@ -1405,7 +1405,7 @@
   },
   "lau_dlg_motion3": {
     "en": "Reverted to default settings.",
-    "ua": "Налаштування за умовчанням\nвідновлено.."
+    "ua": "Налаштування за умовчанням\nвідновлено."
   },
   "lau_dlg_motion4": {
     "en": "Place the system on a flat,\nstable surface, then touch OK.\n{t:1.0:5500}{t:0.3:3c3c3cff}Placing the system on an\ninclined surface may further\nincrease any inaccuracy of\nthe motion sensor.{t:0.3:000000ff}{/t:1.0}",
@@ -1413,7 +1413,7 @@
   },
   "lau_dlg_motion5": {
     "en": "Calibration complete.",
-    "ua": "Калібрування завершено.."
+    "ua": "Калібрування завершено."
   },
   "lau_dlg_motion6": {
     "en": "Calibration failed.{t:1.0:1400}\n　　　　　　　　　{/t:1.0}\nPlease try again.",
@@ -1449,7 +1449,7 @@
   },
   "lau_press_pow0": {
     "en": "Software closed.",
-    "ua": "Програму закрито.."
+    "ua": "Програму закрито."
   },
   "lau_b_sleep": {
     "en": "",
@@ -1529,7 +1529,7 @@
   },
   "lau_dlg_softupd_00": {
     "en": "There is a software update\navailable.",
-    "ua": "Доступне оновлення\nпрограми.."
+    "ua": "Доступне оновлення\nпрограми."
   },
   "lau_dlg_softupd_btn_2": {
     "en": " Update",
@@ -1565,7 +1565,7 @@
   },
   "lau_deliver_u": {
     "en": "Ready to download software.",
-    "ua": "Усе готово для завантаження програми.."
+    "ua": "Усе готово для завантаження програми."
   },
   "lau_bgdl_u": {
     "en": "Enter Sleep Mode to finish downloading.",
@@ -1633,7 +1633,7 @@
   },
   "lau_rsv1_still": {
     "en": "Distribution notification - Days until release: %d.",
-    "ua": "Повідомлення про доступність. Днів до випуску: %d.."
+    "ua": "Повідомлення про доступність. Днів до випуску: %d."
   },
   "lau_rsv1_ready": {
     "en": "",
@@ -1645,11 +1645,11 @@
   },
   "lau_dlg_rsv1_already": {
     "en": "This software can now\nbe launched.",
-    "ua": "Тепер цю програму\nможна запустити.."
+    "ua": "Тепер цю програму\nможна запустити."
   },
   "lau_dlg_rsv1_already_plural": {
     "en": "Pre-purchased software\ncan now be launched.",
-    "ua": "Тепер передплачені\nпрограми можна запустити.."
+    "ua": "Тепер передплачені\nпрограми можна запустити."
   },
   "lau_dlg_rsv1_wait": {
     "en": "Connecting to the internet\nand verifying distribution\ninformation...",
@@ -1669,7 +1669,7 @@
   },
   "lau_dlg_bt0": {
     "en": "New software has been added\nto the HOME Menu.",
-    "ua": "До меню HOME додано\nнову програму.."
+    "ua": "До меню HOME додано\nнову програму."
   },
   "lau_dlg_download": {
     "en": "",
@@ -1697,7 +1697,7 @@
   },
   "lau_dlg_bt6": {
     "en": "Icon deleted.",
-    "ua": "Значок видалено.."
+    "ua": "Значок видалено."
   },
   "lau_dlg_bt7": {
     "en": "You've received software\nthrough SpotPass.{t:1.0:1400}\n　　　　　　　　　　　　　{/t:1.0}\n{t:1.0:5500}{t:0.3:3c3c3cff}To start the software,\nconnect to Nintendo eShop\nby touching the gift icon.{t:0.3:000000ff}{/t:1.0}",
@@ -1817,7 +1817,7 @@
   },
   "lau_dlg_folder_full": {
     "en": "You cannot create\nany more folders.",
-    "ua": "Не можна\nстворити нові папки.."
+    "ua": "Не можна\nстворити нові папки."
   },
   "lau_dlg_folder_delete_01": {
     "en": "",
@@ -1825,7 +1825,7 @@
   },
   "lau_dlg_folder_delete_02": {
     "en": "Folders containing data\ncannot be deleted.",
-    "ua": "Папки з даними\nвидалити не можна.."
+    "ua": "Папки з даними\nвидалити не можна."
   },
   "lau_dlg_folder_delete_03": {
     "en": "",
@@ -1833,11 +1833,11 @@
   },
   "lau_dlg_folder_error": {
     "en": "This software cannot be\nmoved into a folder.",
-    "ua": "Цю програму не можна\nперемістити в папку.."
+    "ua": "Цю програму не можна\nперемістити в папку."
   },
   "lau_dlg_folder_icon_full": {
     "en": "No more data can be moved\ninto this folder.",
-    "ua": "Не можна перемістити\nнові дані в цю папку.."
+    "ua": "Не можна перемістити\nнові дані в цю папку."
   },
   "lau_dlg_menu_icon_full": {
     "en": "The limit for items that can be\ndisplayed on the HOME Menu\nhas been reached.\n\nNo more data can be added\nto the HOME Menu.",
@@ -1857,15 +1857,15 @@
   },
   "dat_bu_sub0": {
     "en": "Select a save location.",
-    "ua": "Виберіть місце збереження.."
+    "ua": "Виберіть місце збереження."
   },
   "dat_no_backup": {
     "en": "There is no backup data.",
-    "ua": "Немає резервної копії.."
+    "ua": "Немає резервної копії."
   },
   "dat_dlg_bu_crng": {
     "en": "Failed to create backup data\nmanagement information.",
-    "ua": "Не вдалося створити дані\nкерування резервними\nкопіями.."
+    "ua": "Не вдалося створити дані\nкерування резервними\nкопіями."
   },
   "base_2b_newmake": {
     "en": "Create",
@@ -1909,15 +1909,15 @@
   },
   "dat_dlg_sd_full": {
     "en": "There is not enough free\nspace on this SD Card.",
-    "ua": "На цій карті SD\nнедостатньо\nвільного місця.."
+    "ua": "На цій карті SD\nнедостатньо\nвільного місця."
   },
   "dat_dlg_sd_full_sac": {
     "en": "There is not enough free\nspace on this microSD card.",
-    "ua": "На цій карті microSD\nнедостатньо\nвільного місця.."
+    "ua": "На цій карті microSD\nнедостатньо\nвільного місця."
   },
   "dat_dlg_sd_full_jan": {
     "en": "There is not enough free\nspace on this microSD card.",
-    "ua": "На цій карті microSD\nнедостатньо\nвільного місця.."
+    "ua": "На цій карті microSD\nнедостатньо\nвільного місця."
   },
   "dat_dlg_bu_cr0": {
     "en": "The saved backup data\nwill be overwritten.\n\nIs this OK?",
@@ -1941,7 +1941,7 @@
   },
   "dat_dlg_bu_crerr": {
     "en": "Data could not be saved.",
-    "ua": "Не вдалося зберегти\nдані.."
+    "ua": "Не вдалося зберегти\nдані."
   },
   "dat_dlg_bu_re1": {
     "en": "Restoring backup data...\nDo not remove the SD Card\nor turn off the power.",
@@ -2009,7 +2009,7 @@
   },
   "lau_dlg_welc_theme_2": {
     "en": "Decorate your HOME Menu\nby choosing different themes.",
-    "ua": "Оздоблюйте ваше\nменю HOME, вибираючи\nрізні теми.."
+    "ua": "Оздоблюйте ваше\nменю HOME, вибираючи\nрізні теми."
   },
   "lau_dlg_welc_theme_3": {
     "en": "Try and discover your\nfavourite theme!",
