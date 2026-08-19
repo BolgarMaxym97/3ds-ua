@@ -1,0 +1,1182 @@
+{
+  "lau_title_menu": {
+    "en": "HOME Menu",
+    "ua": "Меню HOME"
+  },
+  "lau_title_manu": {
+    "en": "",
+    "ua": ""
+  },
+  "lau_title_web": {
+    "en": "Internet Browser",
+    "ua": "Інтернет-браузер"
+  },
+  "Omnibox_GuideMessage": {
+    "en": "Enter a URL or search term",
+    "ua": "Введіть адресу або запит"
+  },
+  "Dialog_UnexpectedRestart": {
+    "en": "Not all of the page could\nbe displayed due to its size.\n\nTry reloading the page?",
+    "ua": "Сторінку не вдалося показати\nповністю через її розмір.\n\nПерезавантажити сторінку?"
+  },
+  "Dialog_JavaScriptTimeout": {
+    "en": "Script execution is taking\na long time.\n\nDo you want to continue\nexecuting the script?",
+    "ua": "Скрипт виконується\nзанадто довго.\n\nПродовжити виконання\nскрипту?"
+  },
+  "Dialog_JavaScriptTimeout_Button_Continue": {
+    "en": " Continue",
+    "ua": " Продовжити"
+  },
+  "Dialog_JavaScriptTimeout_Button_Abort": {
+    "en": " Cancel",
+    "ua": " Скасувати"
+  },
+  "Dialog_UnexpectedRestart_Button_Reload": {
+    "en": " Reload",
+    "ua": " Оновити"
+  },
+  "Dialog_UnexpectedRestart_Button_Leave": {
+    "en": " Cancel",
+    "ua": " Скасувати"
+  },
+  "ContextMenu_AddNewTab": {
+    "en": "Open in New Tab",
+    "ua": "У новій вкладці"
+  },
+  "ContextMenu_OpenImage": {
+    "en": "Display in Image Viewer",
+    "ua": "Показати в переглядачі"
+  },
+  "ActionMenu_Bookmark": {
+    "en": "Add to bookmarks",
+    "ua": "Додати в закладки"
+  },
+  "ActionMenu_Config": {
+    "en": "Settings",
+    "ua": "Параметри"
+  },
+  "TextSelection_Button_Copy": {
+    "en": "Copy",
+    "ua": "Копіювати"
+  },
+  "TextSelection_Button_Search": {
+    "en": "Search",
+    "ua": "Пошук"
+  },
+  "Disuse_ActionMenu_Search": {
+    "en": "",
+    "ua": ""
+  },
+  "Dialog_Ok": {
+    "en": "OK",
+    "ua": "OK"
+  },
+  "Dialog_Cancel": {
+    "en": "Cancel",
+    "ua": "Скасувати"
+  },
+  "Dialog_JavaScript_Title": {
+    "en": "Pop-up Notification",
+    "ua": "Спливне повідомлення"
+  },
+  "Dialog_Authentication_Title": {
+    "en": "User Authentication",
+    "ua": "Вхід користувача"
+  },
+  "Dialog_Authentication_UserName": {
+    "en": "User Name",
+    "ua": "Ім'я користувача"
+  },
+  "Dialog_Authentication_Password": {
+    "en": "Password",
+    "ua": "Пароль"
+  },
+  "Dialog_Authentication_Login": {
+    "en": "Sign in",
+    "ua": "Вхід"
+  },
+  "ContextMenu_CopyUrl": {
+    "en": "",
+    "ua": ""
+  },
+  "Keyboard_Copy": {
+    "en": "Copy",
+    "ua": "Копія"
+  },
+  "Keyboard_Paste": {
+    "en": "Paste",
+    "ua": "Вставити"
+  },
+  "ActionMenu_AutoNewLineByEngine": {
+    "en": "Text wrap",
+    "ua": "Перенос тексту"
+  },
+  "MoviePlayer_Close": {
+    "en": "Close",
+    "ua": "Закрити"
+  },
+  "MoviePlayer_CC": {
+    "en": "Subtitles",
+    "ua": "Субтитри"
+  },
+  "Dialog_Bookmark_Title": {
+    "en": "Edit Bookmark",
+    "ua": "Змінити закладку"
+  },
+  "Dialog_Bookmark_Button_Delete": {
+    "en": "Delete Bookmark",
+    "ua": "Видалити"
+  },
+  "Dialog_Bookmark_Button_Ok": {
+    "en": "Done",
+    "ua": "Готово"
+  },
+  "BookmarkMenu_Tab_Bookmark": {
+    "en": "Bookmarks",
+    "ua": "Закладки"
+  },
+  "BookmarkMenu_Tab_History": {
+    "en": "History",
+    "ua": "Історія"
+  },
+  "Dialog_ResubmittingForm": {
+    "en": "Resend information?",
+    "ua": "Надіслати дані ще раз?"
+  },
+  "Dialog_ResubmittingForm_Button_Resubmit": {
+    "en": " Resend",
+    "ua": " Так"
+  },
+  "Dialog_ResubmittingForm_Button_Cancel": {
+    "en": " Cancel",
+    "ua": " Ні"
+  },
+  "FormValidation_ErrorMessage_ValueMissing": {
+    "en": "Input required.",
+    "ua": "Потрібно ввести значення."
+  },
+  "FormValidation_ErrorMessage_TypeMismatch": {
+    "en": "Incorrect format.",
+    "ua": "Неправильний формат."
+  },
+  "FormValidation_ErrorMessage_PatternMismatch": {
+    "en": "Incorrect format.",
+    "ua": "Неправильний формат."
+  },
+  "FormValidation_ErrorMessage_TooLong": {
+    "en": "Character limit exceeded.",
+    "ua": "Перевищено ліміт символів."
+  },
+  "FormValidation_ErrorMessage_RangeUnderflow": {
+    "en": "Input value is too small.",
+    "ua": "Значення надто мале."
+  },
+  "FormValidation_ErrorMessage_RangeOverflow": {
+    "en": "Input value is too large.",
+    "ua": "Значення надто велике."
+  },
+  "FormValidation_ErrorMessage_StepMismatch": {
+    "en": "Enter a valid value.",
+    "ua": "Введіть коректне значення."
+  },
+  "ImageViewer_Button_Return": {
+    "en": "Return",
+    "ua": "Назад"
+  },
+  "ImageViewer_Button_Save": {
+    "en": "Save",
+    "ua": "Зберегти"
+  },
+  "ImageViewer_SaveImageInfo": {
+    "en": "",
+    "ua": ""
+  },
+  "ErrorMessage_ImageViewer_Dialog_DownloadImpossible": {
+    "en": "Cannot load this image.",
+    "ua": "Не вдається відкрити це\nзображення."
+  },
+  "ErrorMessage_ImageViewer_Dialog_DownloadError": {
+    "en": "Failed to load image.",
+    "ua": "Не вдалося завантажити\nзображення."
+  },
+  "ErrorMessage_ImageViewer_Dialog_DecodeError": {
+    "en": "Unable to display image.",
+    "ua": "Не вдається показати\nзображення."
+  },
+  "PageInfo_Top": {
+    "en": "Page Info",
+    "ua": "Про сторінку"
+  },
+  "PageInfo_Title": {
+    "en": "Title",
+    "ua": "Назва"
+  },
+  "PageInfo_Url": {
+    "en": "Address",
+    "ua": "Адреса"
+  },
+  "PageInfo_Security": {
+    "en": "Security",
+    "ua": "Безпека"
+  },
+  "PageInfo_CertificateOwner": {
+    "en": "Certificate Subject",
+    "ua": "Власник сертифіката"
+  },
+  "PageInfo_RootCA": {
+    "en": "Root CA",
+    "ua": "Кореневий ЦС"
+  },
+  "PageInfo_ExpireDateStart": {
+    "en": "Issue Date",
+    "ua": "Дата видачі"
+  },
+  "PageInfo_ExpireDateEnd": {
+    "en": "Expiry Date",
+    "ua": "Діє до"
+  },
+  "PageInfo_SecurityValid": {
+    "en": "Your connection to this\npage is encrypted.",
+    "ua": "Ваше з'єднання з цією\nсторінкою зашифровано."
+  },
+  "PageInfo_SecurityInvalid": {
+    "en": "Your connection to this\npage is not encrypted.",
+    "ua": "Ваше з'єднання з цією\nсторінкою не зашифровано."
+  },
+  "PageInfo_SecurityUnsafe": {
+    "en": "There is a problem with\nthe security certificate\nfor this page.",
+    "ua": "Із сертифікатом безпеки\nцієї сторінки щось\nне так."
+  },
+  "PageInfo_SecurityNonSSL": {
+    "en": "Some content on this\npage is not encrypted.",
+    "ua": "Частина вмісту цієї\nсторінки не зашифрована."
+  },
+  "PageInfo_SecurityIncludedInvalid": {
+    "en": "There is a problem with the\nsecurity certificate for some\ncontent on this page.",
+    "ua": "Із сертифікатом безпеки\nчастини вмісту цієї\nсторінки щось не так."
+  },
+  "PageInfo_CertificateIssuer": {
+    "en": "Certificate Issuer",
+    "ua": "Видавець сертифіката"
+  },
+  "YearMonthDay": {
+    "en": "%d/%M/%Y",
+    "ua": "%d.%M.%Y"
+  },
+  "Keyboard_Guide_Default": {
+    "en": "Please enter text.",
+    "ua": "Введіть текст."
+  },
+  "Keyboard_Guide_Url": {
+    "en": "Please enter a URL.",
+    "ua": "Введіть адресу."
+  },
+  "Keyboard_Guide_Password": {
+    "en": "Please enter your password.",
+    "ua": "Введіть пароль."
+  },
+  "Keyboard_Guide_UserName": {
+    "en": "Please enter your user name.",
+    "ua": "Введіть ім'я користувача."
+  },
+  "Config_Network": {
+    "en": "Network Information",
+    "ua": "Дані мережі"
+  },
+  "Config_NetworkSetKind": {
+    "en": "Connection Type",
+    "ua": "Тип зв'язку"
+  },
+  "Config_NetworkSSID": {
+    "en": "Connection (SSID)",
+    "ua": "Зв'язок (SSID)"
+  },
+  "Config_NetworkSecurity": {
+    "en": "Security",
+    "ua": "Безпека"
+  },
+  "Config_VersionInfo": {
+    "en": "Version Info",
+    "ua": "Про версію"
+  },
+  "Config_NoConnection": {
+    "en": "None",
+    "ua": "Немає"
+  },
+  "Config_Network_UserSetting1": {
+    "en": "Connection 1",
+    "ua": "Зв'язок 1"
+  },
+  "Config_Network_UserSetting2": {
+    "en": "Connection 2",
+    "ua": "Зв'язок 2"
+  },
+  "Config_Network_UserSetting3": {
+    "en": "Connection 3",
+    "ua": "Зв'язок 3"
+  },
+  "Config_Network_NintendoWiFiUSBConnector": {
+    "en": "",
+    "ua": ""
+  },
+  "Config_Network_NintendoZone": {
+    "en": "Nintendo Zone",
+    "ua": "Nintendo Zone"
+  },
+  "Config_Network_WiFiStation": {
+    "en": "Nintendo 3DS Station",
+    "ua": "Nintendo 3DS Station"
+  },
+  "Config_Network_FreeSpot": {
+    "en": "Wi-Fi Hotspot",
+    "ua": "Точка Wi-Fi"
+  },
+  "Config_Network_Security_Open": {
+    "en": "None",
+    "ua": "Немає"
+  },
+  "Config_Network_Security_WEP": {
+    "en": "WEP",
+    "ua": ""
+  },
+  "Config_Network_Security_WPATKIP": {
+    "en": "WPA-PSK (TKIP)",
+    "ua": ""
+  },
+  "Config_Network_Security_WPA2TKIP": {
+    "en": "WPA2-PSK (TKIP)",
+    "ua": ""
+  },
+  "Config_Network_Security_WPAAES": {
+    "en": "WPA-PSK (AES)",
+    "ua": ""
+  },
+  "Config_Network_Security_WPA2AES": {
+    "en": "WPA2-PSK (AES)",
+    "ua": ""
+  },
+  "Config_DeleteCookie": {
+    "en": "Delete Cookies",
+    "ua": "Видалити куки"
+  },
+  "Config_DoDeleteCookie": {
+    "en": "Delete all cookies?",
+    "ua": "Видалити всі куки?"
+  },
+  "Config_DeleteCookieEnd": {
+    "en": "Cookies deleted.",
+    "ua": "Куки видалено."
+  },
+  "Dialog_Delete": {
+    "en": " Delete",
+    "ua": " Стерти"
+  },
+  "Dialog_DeleteCancel": {
+    "en": " Cancel",
+    "ua": " Скасувати"
+  },
+  "Config_SearchEngine": {
+    "en": "Search Engine",
+    "ua": "Пошукова система"
+  },
+  "Config_Initialize": {
+    "en": "Clear All Save Data",
+    "ua": "Стерти всі дані"
+  },
+  "Config_Close": {
+    "en": " Return",
+    "ua": " Назад"
+  },
+  "Upload_CopyrightTitle": {
+    "en": "When Uploading",
+    "ua": "Коли ви щось надсилаєте"
+  },
+  "Upload_Copyright": {
+    "en": "Do not upload anything that\nmay violate the privacy or\nother rights of anyone. Do\nnot upload photos or videos\nof other people unless you\nhave their consent.",
+    "ua": "Не завантажуйте нічого, що\nможе порушити приватність\nчи інші права людей. Не\nзавантажуйте фото й відео\nінших людей без їхньої\nзгоди."
+  },
+  "Config_HeaderSearchEngine": {
+    "en": "Choose the search engine used\nwhen searching from the menu\nor from selected text.\nRelated search terms are\ndisplayed for input text if\nYahoo! is selected.",
+    "ua": "Виберіть пошукову систему\nдля пошуку з меню або\nз виділеного тексту.\nЯкщо вибрано Yahoo!,\nдо запиту показуються\nсхожі пошукові запити."
+  },
+  "Config_HeaderNetwork": {
+    "en": "The network and security\ninformation of the connection\ncurrently in use.",
+    "ua": "Дані про мережу й безпеку\nз'єднання, яким ви\nзараз користуєтеся."
+  },
+  "Config_HeaderDeleteCookie": {
+    "en": "Delete records of when and\nhow many times web pages\nhave been viewed, along with\nany authentication information\nentered on them.",
+    "ua": "Видалити записи про те, коли\nй скільки разів ви відкривали\nсторінки, разом із даними\nдля входу, які ви на них\nвводили."
+  },
+  "Config_HeaderVersionInfo": {
+    "en": "Information about the\ncurrent browser version.",
+    "ua": "Інформація про поточну\nверсію браузера."
+  },
+  "Config_HeaderInitialize": {
+    "en": "Clear all save data,\nincluding bookmarks,\nhistory and settings.\n\nYou will not be able to\nrecover this data.",
+    "ua": "Стерти всі збережені дані:\nзакладки, історію\nй налаштування.\n\nВідновити ці дані\nбуде неможливо."
+  },
+  "SaveData_Initialize": {
+    "en": "Preparing...\nPlease wait.",
+    "ua": "Підготовка...\nЗачекайте."
+  },
+  "Upload_ParentalControl": {
+    "en": "This function cannot be used.\n\nSharing of images, audio and\nvideo is currently restricted\nby Parental Controls.",
+    "ua": "Ця функція недоступна.\n\nНадсилання зображень, звуку\nй відео обмежено\nбатьківським контролем."
+  },
+  "ErrorMessage_Title": {
+    "en": "Error Code: %03d-%04d",
+    "ua": "Код помилки: %03d-%04d"
+  },
+  "Keyboard_DetermineConversion": {
+    "en": "Confirm",
+    "ua": "Готово"
+  },
+  "Keyboard_Submit": {
+    "en": "Submit",
+    "ua": "Надіслати"
+  },
+  "ErrorMessage_Mp_FailedPlayingAndRetry": {
+    "en": "Failed to load video.\n\nWould you like to try again?",
+    "ua": "Не вдалося завантажити\nвідео.\n\nСпробувати ще раз?"
+  },
+  "MoviePlayer_Retry_Cancel": {
+    "en": " Cancel",
+    "ua": " Скасувати"
+  },
+  "MoviePlayer_Retry_Ok": {
+    "en": " Reload",
+    "ua": " Оновити"
+  },
+  "Config_HeaderTop": {
+    "en": "Select the \"?\" next to any item to\nview an explanation of the item.",
+    "ua": "Виберіть «?» біля пункту,\nщоб побачити його опис."
+  },
+  "Browser_NoFileSelected": {
+    "en": "No file selected.",
+    "ua": "Файл не вибрано."
+  },
+  "Dialog_Bookmark_Button_Cancel": {
+    "en": "Cancel",
+    "ua": "Скасувати"
+  },
+  "Config_DoInitialize": {
+    "en": "Do you want to clear all data?",
+    "ua": "Стерти всі дані?"
+  },
+  "Config_Confirmation": {
+    "en": "Are you sure you want\nto clear all data?",
+    "ua": "Ви впевнені, що хочете\nстерти всі дані?"
+  },
+  "Config_Initializing": {
+    "en": "Clearing all internet browser\ndata...",
+    "ua": "Стирання даних\nінтернет-браузера..."
+  },
+  "Config_Initialized": {
+    "en": "All data has been cleared.\nThe internet browser will\nnow close.",
+    "ua": "Усі дані стерто.\nІнтернет-браузер\nзараз закриється."
+  },
+  "Dialog_AbortWI": {
+    "en": " Cancel",
+    "ua": " Скасувати"
+  },
+  "Config_DoInitializeButton": {
+    "en": " Clear All",
+    "ua": " Стерти все"
+  },
+  "Config_InitializeStart": {
+    "en": " Clear",
+    "ua": " Стерти"
+  },
+  "ErrorMessage_Save_NotEnoughSpace": {
+    "en": "Failed to create save data.\n\nThere is not enough free space\navailable.",
+    "ua": "Не вдалося створити\nзбережені дані.\n\nБракує вільного місця."
+  },
+  "ActionMenu_MobileRequest": {
+    "en": "Use mobile versions",
+    "ua": "Мобільні версії"
+  },
+  "StartUp_Welcome_SelectSearchEngine": {
+    "en": "Which search engine\nwould you like to use?",
+    "ua": "Якою пошуковою системою\nви хочете користуватися?"
+  },
+  "StartUp_Welcome_SelectSearchEngineSub": {
+    "en": "You can change this setting later.",
+    "ua": "Це можна змінити пізніше."
+  },
+  "Ticker_AddBookmark": {
+    "en": "Bookmarked this page.",
+    "ua": "Сторінку додано в закладки."
+  },
+  "Dialog_DeleteHisotry": {
+    "en": "All browsing history will be\ndeleted. Are you sure you\nwant to continue?",
+    "ua": "Усю історію перегляду буде\nвидалено. Продовжити?"
+  },
+  "BookmarkMenu_Toolbar_AddBookmark": {
+    "en": "Bookmark This Page",
+    "ua": "Додати в закладки"
+  },
+  "Keyboard_Omnibox_OpenUrl": {
+    "en": "Open",
+    "ua": "Відкрити"
+  },
+  "Keyboard_Omnibox_Search": {
+    "en": "Search",
+    "ua": "Пошук"
+  },
+  "ErrorMessage_Brs_ContentsCancelled": {
+    "en": "Failed to display part of this page.",
+    "ua": "Не вдалося показати частину сторінки."
+  },
+  "ImageViewer_Dialog_Saving": {
+    "en": "Saving to microSD card...",
+    "ua": "Збереження на карту microSD..."
+  },
+  "ImageViewer_Dialog_Save_Confirm": {
+    "en": "Saved to microSD card.",
+    "ua": "Збережено на карту microSD."
+  },
+  "ErrorMessage_ImageViewer_Dialog_Save_CommonError": {
+    "en": "Failed to save image.",
+    "ua": "Не вдалося зберегти\nзображення."
+  },
+  "ErrorMessage_ImageViewer_Dialog_Save_CapacityError": {
+    "en": "There is not enough free\nspace on the microSD card.",
+    "ua": "На карті microSD бракує\nвільного місця."
+  },
+  "ErrorMessage_ImageViewer_Dialog_Save_WriteProtectError": {
+    "en": "The microSD card is\nwrite-protected.",
+    "ua": "Карту microSD захищено\nвід запису."
+  },
+  "ErrorMessage_ImageViewer_Dialog_Save_NeedSDError": {
+    "en": "There is no microSD card inserted.",
+    "ua": "Карту microSD не вставлено."
+  },
+  "ErrorMessage_ImageViewer_Dialog_Save_NotSupportedError": {
+    "en": "Could not access microSD card.",
+    "ua": "Немає доступу до карти\nmicroSD."
+  },
+  "ErrorMessage_ImageViewer_Dialog_Save_MaxError": {
+    "en": "Unable to save this image\nbecause the microSD card's\nphoto limit has been reached.",
+    "ua": "Не вдається зберегти це\nзображення: досягнуто ліміту\nфото на карті microSD."
+  },
+  "ErrorMessage_ImageViewer_Dialog_Save_ImpossibleError": {
+    "en": "Unable to save this image.",
+    "ua": "Це зображення не можна\nзберегти."
+  },
+  "BookmarkMenu_Toolbar_DeleteHistory": {
+    "en": "Delete History",
+    "ua": "Видалити історію"
+  },
+  "ErrorMessage_Mp_CannotPlay": {
+    "en": "Unable to play this video.",
+    "ua": "Не вдається відтворити\nце відео."
+  },
+  "ErrorMessage_Mp_Error": {
+    "en": "",
+    "ua": ""
+  },
+  "Config_Title": {
+    "en": "Settings",
+    "ua": "Параметри"
+  },
+  "Browser_SubmitButton": {
+    "en": "Submit",
+    "ua": "Надіслати"
+  },
+  "Browser_ResetButton": {
+    "en": "Reset",
+    "ua": "Скинути"
+  },
+  "Browser_FileSelectButton": {
+    "en": "Browse...",
+    "ua": "Огляд..."
+  },
+  "MoviePlayer_3dSetting": {
+    "en": "3D Display",
+    "ua": "Показ 3D"
+  },
+  "MoviePlayer_3dSetting_Reset": {
+    "en": "Reset",
+    "ua": "Скинути"
+  },
+  "BookmarkMenu_Toolbar_Registed": {
+    "en": "Page is already bookmarked.",
+    "ua": "Сторінка вже є в закладках."
+  },
+  "BookmarkMenu_Toolbar_CantAdd": {
+    "en": "Page cannot be bookmarked.",
+    "ua": "Не можна додати в закладки."
+  },
+  "Dialog_Bookmark_Max": {
+    "en": "There is no room to \nbookmark any more pages.\nPlease delete existing bookmarks\nto make room for new ones.",
+    "ua": "Немає місця для нових\nзакладок.\nВидаліть старі закладки,\nщоб звільнити місце."
+  },
+  "ActionMenu_Bookmark_Registed": {
+    "en": "Already bookmarked.",
+    "ua": "Вже в закладках."
+  },
+  "Dialog_Cert_Button_Cancel": {
+    "en": " Cancel",
+    "ua": " Скасувати"
+  },
+  "Dialog_Cert_Button_Allow": {
+    "en": " Allow",
+    "ua": "{t:1.0:5a00} Дозволити{t:1.0:6400}"
+  },
+  "Dialog_Cancel_Pad": {
+    "en": " Cancel",
+    "ua": " Скасувати"
+  },
+  "Dialog_Ok_Pad": {
+    "en": " OK",
+    "ua": " OK"
+  },
+  "History_Date_Today": {
+    "en": "Today",
+    "ua": "Сьогодні"
+  },
+  "History_Date_Yesterday": {
+    "en": "Yesterday",
+    "ua": "Учора"
+  },
+  "History_Date_MonthDay": {
+    "en": "%d/%M",
+    "ua": ""
+  },
+  "History_Date_YearMonthDay": {
+    "en": "%d/%M/%Y",
+    "ua": "%d.%M.%Y"
+  },
+  "Bookmark_Empty": {
+    "en": "You have no bookmarks.",
+    "ua": "Закладок немає."
+  },
+  "History_Empty": {
+    "en": "Browsing history is empty.",
+    "ua": "Історія перегляду порожня."
+  },
+  "ErrorMessage_Common": {
+    "en": "",
+    "ua": ""
+  },
+  "ErrorMessage_Shutdown": {
+    "en": "An unexpected error occurred.\nThe internet browser will now\nclose.",
+    "ua": "Сталася непередбачена\nпомилка. Інтернет-браузер\nзараз закриється."
+  },
+  "ErrorMessage_Brs_CannotMimeType": {
+    "en": "Unable to load file.",
+    "ua": "Не вдається відкрити файл."
+  },
+  "ErrorMessage_Brs_CannotShowPage": {
+    "en": "Unable to display page.",
+    "ua": "Не вдається показати\nсторінку."
+  },
+  "ErrorMessage_Brs_CannotShowUrl": {
+    "en": "This address is not supported.",
+    "ua": "Ця адреса не підтримується."
+  },
+  "ErrorMessage_Brs_InvalidUrl": {
+    "en": "This address is invalid.",
+    "ua": "Ця адреса неправильна."
+  },
+  "ErrorMessage_Brs_MaxAllowedSslHosts": {
+    "en": "The maximum number of permitted\nhosts has been reached.",
+    "ua": "Досягнуто межі дозволених\nвузлів."
+  },
+  "ErrorMessage_Brs_ProxyConnection": {
+    "en": "Connection to proxy server\nfailed.\n\nPlease check that your proxy\nsettings are correct.",
+    "ua": "Не вдалося з'єднатися з\nпроксі-сервером.\n\nПеревірте, чи правильні\nналаштування проксі."
+  },
+  "ErrorMessage_Brs_Ssl_CertChainTooLong": {
+    "en": "The certificate chain is\ntoo long.",
+    "ua": "Ланцюжок сертифікатів\nзадовгий."
+  },
+  "ErrorMessage_Brs_Ssl_OutsideValidityPeriod": {
+    "en": "The certificate has either\nexpired or is not yet valid.\nPlease make sure the\nsystem's date and time\nsettings are correct.",
+    "ua": "Термін дії сертифіката\nминув або ще не почався.\nПеревірте, чи правильні\nдата й час\nу налаштуваннях системи."
+  },
+  "ErrorMessage_Brs_Ssl_PathLengthExceeded": {
+    "en": "The certificate is too low in\nthe certification hierarchy.",
+    "ua": "Сертифікат надто низько\nв ієрархії сертифікації."
+  },
+  "ErrorMessage_Brs_Ssl_SelfSignedCert": {
+    "en": "Self-signed certificates\ncannot be verified.",
+    "ua": "Самопідписані сертифікати\nне можна перевірити."
+  },
+  "ErrorMessage_Brs_Ssl_UnableToGetIssuerCertLocally": {
+    "en": "Certificate not found.",
+    "ua": "Сертифікат не знайдено."
+  },
+  "ErrorMessage_Brs_Ssl_UnhandledCriticalExtension": {
+    "en": "Unknown certificate\nextension.",
+    "ua": "Невідоме розширення\nсертифіката."
+  },
+  "ErrorMessage_Brs_Ssl_ValidityPeriodFormat": {
+    "en": "The validity period of the\ncertificate is invalid.",
+    "ua": "Термін дії сертифіката\nнедійсний."
+  },
+  "ErrorMessage_Brs_Ssl_VerifyHost": {
+    "en": "The contents of the\ncertificate are invalid.",
+    "ua": "Вміст сертифіката\nнедійсний."
+  },
+  "StartPage_Title": {
+    "en": "New page",
+    "ua": "Нова сторінка"
+  },
+  "StartPage_Heading": {
+    "en": "Most Visited Bookmarks",
+    "ua": "Найчастіші закладки"
+  },
+  "Config_Filtering": {
+    "en": "",
+    "ua": ""
+  },
+  "Keyboard_InvalidUrl": {
+    "en": "This address is invalid.",
+    "ua": "Ця адреса неправильна."
+  },
+  "Help_MediaPlayer_3d": {
+    "en": "Displayed during 3D videos\nto let you know you can\nwatch the video with the\n3D depth slider up.",
+    "ua": "Під час 3D-відео нагадує,\nщо його можна дивитися\nз піднятим повзунком\nглибини 3D."
+  },
+  "Help_MediaPlayer_3dSetting": {
+    "en": "Try adjusting the image from\nthe available options if the 3D\nvideo is not displayed correctly.",
+    "ua": "Спробуйте налаштувати\nзображення, якщо 3D-відео\nпоказується неправильно."
+  },
+  "Help_ImageViewer": {
+    "en": "You can save this image\nto the microSD card.",
+    "ua": "Це зображення можна\nзберегти на карту\nmicroSD."
+  },
+  "Help_OmniBox": {
+    "en": "Touch here to enter a URL\nor search term.",
+    "ua": "Торкніться тут, щоб ввести\nадресу або запит."
+  },
+  "Help_Reload": {
+    "en": "Reload or stop loading\na web page.",
+    "ua": "Перезавантажити сторінку\nабо зупинити завантаження."
+  },
+  "Help_AutoNewLine": {
+    "en": "Wrap text automatically to\nthe width of the screen at\nthe selected zoom level.\n(This may not work with\nsome pages.)",
+    "ua": "Переносити текст по ширині\nекрана на вибраному рівні\nмасштабу. (На деяких\nсторінках може\nне працювати.)"
+  },
+  "Help_MobileRequest": {
+    "en": "Display a version of the\npage which is adapted\nfor smartphones.\n\nThe version will not change\nif the page does not have\na mobile version.",
+    "ua": "Показати версію сторінки,\nпристосовану для\nсмартфонів.\n\nЯкщо мобільної версії\nнемає, сторінка не зміниться."
+  },
+  "Help_TabChange": {
+    "en": "Show all open tabs and\nswitch between them\nwith the ZL and ZR\nbuttons.",
+    "ua": "Показати всі відкриті\nвкладки й перемикати їх\nкнопками ZL і ZR."
+  },
+  "Help_XY": {
+    "en": "You can change the zoom\nlevel with  or , or use\nthe C Stick.",
+    "ua": "Масштаб можна змінювати\n чи  або C-стиком."
+  },
+  "Keyboard_Button_Space": {
+    "en": "",
+    "ua": ""
+  },
+  "History_Date_Unknown": {
+    "en": "Unknown",
+    "ua": "Невідомо"
+  },
+  "MoviePlayer_3dInfo": {
+    "en": "Playing 3D Video",
+    "ua": "Відтворення 3D"
+  },
+  "Dialog_DropDownList_OK": {
+    "en": "Confirm",
+    "ua": "Готово"
+  },
+  "Dialog_DropDownList_Cancel": {
+    "en": "Cancel",
+    "ua": "Скасувати"
+  },
+  "Dialog_DropDownList_ItemOver": {
+    "en": "There are more items\nthan can be displayed\nin the browser.\n\nUp to %d items\ncan be displayed.",
+    "ua": "У списку більше пунктів,\nніж браузер може показати.\n\nПоказано щонайбільше\n%d пунктів."
+  },
+  "Dialog_DropDownList_NoItems": {
+    "en": "There are no items to select.",
+    "ua": "Немає пунктів для вибору."
+  },
+  "Dialog_DropDownList_OneItem": {
+    "en": "Only \"%s\"\ncan be selected.",
+    "ua": "Можна вибрати лише\n\"%s\"."
+  },
+  "Dialog_DropDownList_A_OK": {
+    "en": "",
+    "ua": ""
+  },
+  "Dialog_DropDownList_B_Cancel": {
+    "en": " Cancel",
+    "ua": " Скасувати"
+  },
+  "FilteringFlow_Mint1": {
+    "en": "",
+    "ua": ""
+  },
+  "FilteringFlow_Mint2": {
+    "en": "",
+    "ua": ""
+  },
+  "FilteringFlow_Mint3A": {
+    "en": "",
+    "ua": ""
+  },
+  "FilteringFlow_Mint3B": {
+    "en": "",
+    "ua": ""
+  },
+  "FilteringFlow_Mint4": {
+    "en": "",
+    "ua": ""
+  },
+  "FilteringFlow_MintSuccess": {
+    "en": "",
+    "ua": ""
+  },
+  "FilteringFlow_MintFailed": {
+    "en": "",
+    "ua": ""
+  },
+  "FilteringFlow_NoPIN": {
+    "en": "",
+    "ua": ""
+  },
+  "FilteringFlow_PIN": {
+    "en": "",
+    "ua": ""
+  },
+  "Startup_Eula_Cancel_Exit": {
+    "en": "",
+    "ua": ""
+  },
+  "Startup_Parental_Question": {
+    "en": "Use of the internet\nbrowser is restricted\nby Parental Controls.\n\nWould you like to temporarily\nremove this restriction?",
+    "ua": "Інтернет-браузер обмежено\nбатьківським контролем.\n\nЗняти обмеження\nтимчасово?"
+  },
+  "Startup_Parental_Button_Auth": {
+    "en": " Remove",
+    "ua": " Зняти"
+  },
+  "Startup_Parental_Cancel_Exit": {
+    "en": "Failed to remove restriction.\n\nThe internet browser will\nnow close.",
+    "ua": "Не вдалося зняти\nобмеження.\n\nІнтернет-браузер\nзараз закриється."
+  },
+  "Help_MediaPlayer_3dSetting_2d": {
+    "en": "Use this menu to correct\nthe 3D video if you notice\nit is displayed incorrectly.",
+    "ua": "Цим меню можна виправити\n3D-відео, якщо воно\nпоказується неправильно."
+  },
+  "Help_Search": {
+    "en": "Use this icon to start\na search.",
+    "ua": "Цією іконкою починається\nпошук."
+  },
+  "Ticker_AutoNewLine_Enabled": {
+    "en": "Enabled text wrapping.",
+    "ua": "Перенос тексту ввімкнено."
+  },
+  "Ticker_AutoNewLine_Disabled": {
+    "en": "Disabled text wrapping.",
+    "ua": "Перенос тексту вимкнено."
+  },
+  "Ticker_MobileRequest_Requesting": {
+    "en": "Requesting mobile version...",
+    "ua": "Запит мобільної версії..."
+  },
+  "Ticker_MobileRequest_Disabled": {
+    "en": "Mobile version requests disabled.",
+    "ua": "Запити мобільної версії вимкнено."
+  },
+  "Transcoder_Close": {
+    "en": "Cancel",
+    "ua": "Скасувати"
+  },
+  "Transcoder_Remain": {
+    "en": "",
+    "ua": ""
+  },
+  "Transcoder_Message": {
+    "en": "Converting video to an\nuploadable format...",
+    "ua": "Перетворення відео у формат\nдля завантаження..."
+  },
+  "Transcoder_TimeString": {
+    "en": "%M:%0S remaining",
+    "ua": "ще %M:%0S"
+  },
+  "Transcoder_TimeStringUnknown": {
+    "en": "--:-- remaining",
+    "ua": "ще --:--"
+  },
+  "SaveData_Broken": {
+    "en": "The save data is corrupted.\n\nClearing save data...",
+    "ua": "Збережені дані пошкоджено.\n\nСтирання даних..."
+  },
+  "MoviePlayer_CcNone": {
+    "en": "None",
+    "ua": "Немає"
+  },
+  "FilterState_On": {
+    "en": "",
+    "ua": ""
+  },
+  "FilterState_Off": {
+    "en": "",
+    "ua": ""
+  },
+  "FilteringButton_On": {
+    "en": "",
+    "ua": ""
+  },
+  "FilteringButton_Off": {
+    "en": "",
+    "ua": ""
+  },
+  "Transcoder_Dialog_Success": {
+    "en": "Ready to upload video.",
+    "ua": "Відео готове до завантаження."
+  },
+  "Transcoder_Dialog_Cancel": {
+    "en": "Format conversion cancelled.",
+    "ua": "Перетворення формату\nскасовано."
+  },
+  "ErrorMessage_Transcoder_Failure": {
+    "en": "Failed to convert video format.",
+    "ua": "Не вдалося перетворити\nформат відео."
+  },
+  "ErrorMessage_Transcoder_NotEnoughSD_Prepare": {
+    "en": "Unable to prepare video for upload\nas there is not enough space on\nthe microSD card.",
+    "ua": "Не вдається підготувати відео,\nбо на карті microSD\nбракує місця."
+  },
+  "ErrorMessage_Transcoder_NotEnoughSD_Process": {
+    "en": "Please check how much free\nspace is on the microSD card.",
+    "ua": "Перевірте, скільки вільного\nмісця на карті microSD."
+  },
+  "Config_HeaderFiltering": {
+    "en": "",
+    "ua": ""
+  },
+  "Config_HeaderFilteringFirst": {
+    "en": "",
+    "ua": ""
+  },
+  "Config_HeaderFilteringSecond": {
+    "en": "",
+    "ua": ""
+  },
+  "Filtering_HelpWindow": {
+    "en": "",
+    "ua": ""
+  },
+  "Dialog_Cert_Caution": {
+    "en": "Cannot confirm the security\nof the certificate for this\npage.\n\nAllow connection anyway?\n(This is not recommended.)",
+    "ua": "Не вдається підтвердити\nбезпеку сертифіката цієї\nсторінки.\n\nВсе одно з'єднатися?\n(Не рекомендується.)"
+  },
+  "Dialog_Cert_ErrorHeading": {
+    "en": "Error Details",
+    "ua": "Подробиці помилки"
+  },
+  "GamepadApi_Id": {
+    "en": "",
+    "ua": ""
+  },
+  "MoveFromSpider_Success": {
+    "en": "Nintendo 3DS internet browser\nbookmarks have been transferred.",
+    "ua": "Закладки інтернет-браузера\nNintendo 3DS перенесено."
+  },
+  "MoveFromSpider_Fail": {
+    "en": "Data is corrupted.\nYour bookmarks from\nthe previous internet browser\nhave been lost.",
+    "ua": "Дані пошкоджено.\nЗакладки з попереднього\nінтернет-браузера\nвтрачено."
+  },
+  "ImageViewer_Dialog_Save_Message": {
+    "en": "Save image to microSD card?",
+    "ua": "Зберегти зображення\nна карту microSD?"
+  },
+  "ImageViewer_Dialog_Save_Yes": {
+    "en": " Yes",
+    "ua": " Так"
+  },
+  "ImageViewer_Dialog_Save_No": {
+    "en": " No",
+    "ua": " Ні"
+  },
+  "FilterState": {
+    "en": "",
+    "ua": ""
+  },
+  "FirstStartup_Greet": {
+    "en": "Welcome to the internet\nbrowser. This application\nlets you connect to the\ninternet to view web pages.",
+    "ua": "Вітаємо в інтернет-браузері.\nЦя програма дає змогу\nз'єднатися з Інтернетом\nі переглядати сторінки."
+  },
+  "FirstStartup_iFilter1": {
+    "en": "",
+    "ua": ""
+  },
+  "FirstStartup_iFilter2": {
+    "en": "",
+    "ua": ""
+  },
+  "FirstStartup_Before_SearchEngine": {
+    "en": "",
+    "ua": ""
+  },
+  "FirstStartup_Finish": {
+    "en": "You're ready to get started.\nEnjoy using the browser!",
+    "ua": "Усе готово.\nГарного перегляду!"
+  },
+  "Dialog_Next_Pad": {
+    "en": " Next",
+    "ua": " Далі"
+  },
+  "ErrorMessage_Brs_ParentalControlVideo": {
+    "en": "This function cannot be used,\nas the viewing of distributed\nvideos is currently restricted\nby Parental Controls.",
+    "ua": "Цією функцією не можна\nкористуватися: перегляд\nвідео обмежено\nбатьківським контролем."
+  },
+  "Ticker_Tab_CreatedInBackground": {
+    "en": "Opened tab in the background.",
+    "ua": "Вкладку відкрито у фоні."
+  },
+  "Ticker_Tab_CreatedByContents": {
+    "en": "Opened in a new tab.",
+    "ua": "Відкрито в новій вкладці."
+  },
+  "SearchEngineSelect_Suggest": {
+    "en": "Related Search Terms",
+    "ua": "Схожі запити"
+  },
+  "Upload_Filtering": {
+    "en": "",
+    "ua": ""
+  },
+  "SearchEngineSelect_Suggest_On": {
+    "en": "On",
+    "ua": "Увімк."
+  },
+  "SearchEngineSelect_Suggest_Off": {
+    "en": "Off",
+    "ua": "Вимк."
+  },
+  "FirstStartup_RegisterARID": {
+    "en": "",
+    "ua": ""
+  },
+  "FirstStartup_PermissionForUse": {
+    "en": "",
+    "ua": ""
+  },
+  "ErrorMessage_Filtering_SdCardEject": {
+    "en": "Either there is no microSD card\ninserted or the microSD card was\nremoved and reinserted while\nthe operation was in progress.\nPlease turn off the power,\ninsert a microSD card and try again.",
+    "ua": "Карту microSD не вставлено\nабо її виймали й вставляли\nпід час роботи.\nВимкніть консоль, вставте\nкарту microSD\nі спробуйте ще раз."
+  },
+  "ErrorMessage_Filtering_Common": {
+    "en": "An error has occurred.",
+    "ua": "Сталася помилка."
+  },
+  "FirstStartup_PermissionForUse_Agree": {
+    "en": "",
+    "ua": ""
+  },
+  "FilteringFlow_Conflict": {
+    "en": "",
+    "ua": ""
+  },
+  "WebInspector_ExplanationDialog_Title": {
+    "en": "Enable Developer Tools",
+    "ua": "Інструменти розробника"
+  },
+  "WebInspector_ExplanationDialog_Msg": {
+    "en": "This is a special feature\ndesigned for use by website\ndevelopers. If this feature is\nenabled, the page you are\nbrowsing may be viewed by\nthird parties. This feature will\nbe disabled when the internet\nbrowser is closed.\nNintendo offers no guarantee\nor support for what might\nhappen after this feature is\nenabled.",
+    "ua": "Це особлива функція для\nрозробників сайтів. Коли її\nввімкнено, сторінку, яку ви\nпереглядаєте, можуть\nбачити сторонні. Функція\nвимкнеться, коли закрити\nінтернет-браузер. Nintendo\nне дає гарантій і не надає\nпідтримки щодо наслідків."
+  },
+  "WebInspector_ConfirmationDialog_Msg": {
+    "en": "Are you sure you want to\nenable developer tools?",
+    "ua": "Ви впевнені, що хочете\nувімкнути інструменти\nрозробника?"
+  },
+  "WebInspector_ConfirmationDialog_Yes": {
+    "en": " Enable",
+    "ua": " Увімкнути"
+  },
+  "WebInspector_ConfirmationDialog_No": {
+    "en": " Cancel",
+    "ua": " Скасувати"
+  },
+  "WebInspector_ValidationDialog_Msg": {
+    "en": "Developer tools have been\nenabled. Please proceed as\nfollows.",
+    "ua": "Інструменти розробника\nувімкнено. Далі дійте так."
+  },
+  "WebInspector_ValidationDialog_Failed_Msg": {
+    "en": "Unable to enable developer tools\nwhile offline. Please connect to\nthe internet and try again.",
+    "ua": "Не вдається ввімкнути\nінструменти розробника без\nінтернету. З'єднайтеся\nз мережею і спробуйте ще раз."
+  },
+  "WebInspector_ManualDialog_Title": {
+    "en": "Steps for Developer Tools",
+    "ua": "Кроки для інструментів"
+  },
+  "WebInspector_ManualDialog_Msg": {
+    "en": "Please proceed through all\nfour steps when using the\ndeveloper tools for the first\ntime. It is possible to skip the\nfirst two steps thereafter.\n\n1. Download the zip file from\nthe following address:\nhttp://%s/DeveloperTools.zip\n\n2. Extract the zip file onto\na PC.\n\n3. Open the following file in\nthe PC's browser:\nindex.html\n\n4. Launch developer tools by\nentering the following in the\ndialogue box:\n%s\n\n◆ Developer tools may not\nfunction correctly depending\non the PC browser used\nand the load on the\ninternet browser.",
+    "ua": "Уперше проходьте всі\nчотири кроки. Далі перші\nдва можна пропускати.\n\n1. Завантажте zip-файл\nз адреси:\nhttp://%s/DeveloperTools.zip\n\n2. Розпакуйте його\nна комп'ютері.\n\n3. Відкрийте в браузері\nкомп'ютера файл:\nindex.html\n\n4. Запустіть інструменти,\nввівши у вікні:\n%s\n\n◆ Інструменти можуть\nпрацювати неправильно —\nзалежно від браузера\nкомп'ютера й навантаження\nна інтернет-браузер."
+  },
+  "FilterStateChanged_On": {
+    "en": "",
+    "ua": ""
+  },
+  "FilterStateChanged_Off": {
+    "en": "",
+    "ua": ""
+  },
+  "DefaultBookmark_Title_3DSLink": {
+    "en": "Nintendo 3DS Bookmarks",
+    "ua": "Закладки Nintendo 3DS"
+  },
+  "DefaultBookmark_Title_Yahoo": {
+    "en": "Yahoo!",
+    "ua": ""
+  },
+  "DefaultBookmark_Title_Google": {
+    "en": "Google",
+    "ua": ""
+  },
+  "DefaultBookmark_Title_YahooKids": {
+    "en": "",
+    "ua": ""
+  },
+  "DefaultBookmark_Title_YouTube": {
+    "en": "YouTube",
+    "ua": ""
+  },
+  "ErrorMessage_Transcoder_Uploading": {
+    "en": "Unable to prepare next video\nuntil current upload is complete.",
+    "ua": "Не вдається підготувати\nнаступне відео, доки триває\nпоточне завантаження."
+  },
+  "MoviePlayer_Speed_String1_1": {
+    "en": "%d.%d",
+    "ua": ""
+  },
+  "MoviePlayer_Speed_String1_2": {
+    "en": "%d.%d%d",
+    "ua": ""
+  },
+  "Transcoder_PercentComplete": {
+    "en": "%d%%",
+    "ua": ""
+  },
+  "Interrupt_LocalConnection": {
+    "en": "You cannot connect to\nthe internet while\nsuspended software\nis using local wireless.",
+    "ua": "Не можна з'єднатися\nз Інтернетом, поки\nпризупинена програма\nзайняла локальний зв'язок."
+  },
+  "ActionMenu_Search": {
+    "en": "%ls",
+    "ua": ""
+  },
+  "DefaultBookmark_Title_Naver": {
+    "en": "",
+    "ua": ""
+  },
+  "Dialog_UpdateNotice": {
+    "en": "To use the Internet Browser,\nplease update your system using\nthe System Update option in\nthe System Settings.",
+    "ua": "Щоб користуватися\nінтернет-браузером, оновіть\nсистему через «Оновлення\nсистеми»\nу налаштуваннях системи."
+  },
+  "Dialog_UnusableNetwork": {
+    "en": "The Internet Browser cannot\nbe used at this time.\nPlease try again later or in a\ndifferent network environment.",
+    "ua": "Зараз інтернет-браузером\nкористуватися не можна.\nСпробуйте пізніше або\nв іншій мережі."
+  }
+}

@@ -38,6 +38,7 @@ from pathlib import Path
 sys.path.insert(0, str(Path(__file__).parent))
 import luma_hook  # noqa: E402
 from build import TITLES  # noqa: E402
+from cia import blz_decompress  # noqa: E402
 
 # Size of Luma's redirect payload: 69 words in sysmodules/loader/source/romfsredir.s,
 # counting the trailing literals but not `romfsRedirPatchSize` itself, which sits after
@@ -46,50 +47,6 @@ from build import TITLES  # noqa: E402
 # bytes Luma will claim before it can place a stub.
 ROMFS_REDIR_PATCH_SIZE = 0x114
 PATH_STRING_SIZE = 39          # "/luma/titles/<16 hex>/romfs" plus terminator
-
-
-def blz_decompress(data: bytes) -> bytes:
-    """Nintendo backwards-LZ used for ExeFS .code. Returns data unchanged if not packed."""
-    if len(data) < 8:
-        return data
-    footer = data[-8:]
-    extra_size = struct.unpack_from("<I", footer, 4)[0]
-    if extra_size == 0:
-        return data
-
-    header_size = footer[3]
-    compressed_end = struct.unpack_from("<I", footer, 0)[0] & 0x00FFFFFF
-    if not (8 <= header_size <= 0x20) or compressed_end > len(data):
-        return data
-
-    out = bytearray(data)
-    out.extend(b"\x00" * (extra_size - 8 if extra_size > 8 else 0))
-    total = len(data) + extra_size - header_size
-
-    src = len(data) - header_size
-    dst = total
-    stop = len(data) - compressed_end
-
-    out = bytearray(data + b"\x00" * (total - len(data)))
-    while src > stop:
-        src -= 1
-        flags = out[src]
-        for bit in range(8):
-            if src <= stop:
-                break
-            if not (flags << bit) & 0x80:
-                src -= 1
-                dst -= 1
-                out[dst] = out[src]
-                continue
-            src -= 2
-            pos = ((out[src] << 8) | out[src + 1]) & 0x0FFF
-            length = (out[src] >> 4) + 3
-            for _ in range(length):
-                dst -= 1
-                out[dst] = out[dst + pos + 2]
-
-    return bytes(out[:total])
 
 
 def find_function_start(code: bytes, pos: int) -> int | None:

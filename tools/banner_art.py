@@ -56,6 +56,11 @@ PLAZA = {
     "tail_cut": 290,
     "tail_span": (240, 377),
     "seam": (297, 316),    # where to look for the stroke that separates the A from the D
+    # The A's own outline ends on row 49; rows 50 to 52 are its white halo, and the dark run
+    # the seam scan still finds there is the D's stem standing in it. Cutting at the seam
+    # would keep those two columns, and they show up as a dark spur hanging off the A's
+    # bottom right corner. From this row down the cut walks back over that run instead.
+    "foot_row": 50,
     "halo": 3,             # how far the white halo reaches past a letter, as Nintendo draws it
     "centre": 249,         # the axis the Russian word is centred on
 }
@@ -165,6 +170,11 @@ def plaza(spec: dict = PLAZA, tid: str = "0004001000022800") -> Image.Image:
             if found is not None and last is not None:
                 found = min(found, last + 1)
         last = cuts[y] = found or last or spec["base_cut"]
+        if y >= spec["foot_row"]:
+            # Past the letter's own outline: back the cut off the dark run it ends on, so the
+            # D's stem stays behind and the halo below the A is what the growth pass rounds.
+            while cuts[y] > spec["seam"][0] and _dark(px[cuts[y] - 1, y]):
+                cuts[y] -= 1
 
     word = Image.new("RGBA", (image.width, band), (0, 0, 0, 0))
     put = word.load()

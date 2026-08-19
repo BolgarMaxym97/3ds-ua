@@ -1,0 +1,506 @@
+{
+  "bottom_1btn_decide": {
+    "en": "OK",
+    "ua": "OK"
+  },
+  "bottom_2btn_cancel": {
+    "en": "Cancel",
+    "ua": "Скасувати"
+  },
+  "bottom_2btn_decide": {
+    "en": "OK",
+    "ua": "OK"
+  },
+  "bottom_3btn_cancel": {
+    "en": "Cancel",
+    "ua": "Скасувати"
+  },
+  "bottom_3btn_etc": {
+    "en": "I Forgot",
+    "ua": "Не пам'ятаю"
+  },
+  "bottom_3btn_decide": {
+    "en": "OK",
+    "ua": "OK"
+  },
+  "char_type_00": {
+    "en": "ABC",
+    "ua": ""
+  },
+  "char_type_01": {
+    "en": "ËαЯ",
+    "ua": "ÂæÜ"
+  },
+  "char_type_02": {
+    "en": "Symbol",
+    "ua": "Символи"
+  },
+  "char_type_03": {
+    "en": "Mobile",
+    "ua": "Мобільна"
+  },
+  "char_type_04": {
+    "en": "",
+    "ua": "АБВ"
+  },
+  "dlg_dic_title": {
+    "en": "Select a language.",
+    "ua": "Виберіть мову."
+  },
+  "dlg_dic_en": {
+    "en": "English",
+    "ua": "англійська"
+  },
+  "dlg_dic_fr": {
+    "en": "French",
+    "ua": "французька"
+  },
+  "dlg_dic_es": {
+    "en": "Spanish",
+    "ua": "іспанська"
+  },
+  "dlg_dic_de": {
+    "en": "German",
+    "ua": "німецька"
+  },
+  "dlg_dic_it": {
+    "en": "Italian",
+    "ua": "італійська"
+  },
+  "dlg_dic_ru": {
+    "en": "Russian",
+    "ua": "українс."
+  },
+  "dlg_dic_pt": {
+    "en": "Portuguese",
+    "ua": "португ."
+  },
+  "dlg_dic_nl": {
+    "en": "Dutch",
+    "ua": "нідерл."
+  },
+  "dlg_dic_cancel": {
+    "en": "Cancel",
+    "ua": "Скасувати"
+  },
+  "dlg_dic_decide": {
+    "en": "",
+    "ua": ""
+  },
+  "qwerty_keytop": {
+    "en": "1234567890-qwertyuiopasdfghjkl'=/zxcvbnm,.?!@",
+    "ua": ""
+  },
+  "qwerty_keytop_c": {
+    "en": "1234567890-QWERTYUIOPASDFGHJKL'=/ZXCVBNM,.?!@",
+    "ua": ""
+  },
+  "qwerty_keytop_s": {
+    "en": "~£€$%^&*()_QWERTYUIOPASDFGHJKL\"+|ZXCVBNM<>;:#",
+    "ua": ""
+  },
+  "qwerty_keytop_jp": {
+    "en": "",
+    "ua": ""
+  },
+  "qwerty_keytop_jp_c": {
+    "en": "",
+    "ua": ""
+  },
+  "qwerty_keytop_ru": {
+    "en": "",
+    "ua": "1234567890'йцукенгшщзфівапролджхїячсмитьбює,."
+  },
+  "qwerty_keytop_ru_c": {
+    "en": "",
+    "ua": "1234567890'ЙЦУКЕНГШЩЗФІВАПРОЛДЖХЇЯЧСМИТЬБЮЄ,."
+  },
+  "qwerty_keytop_ru_s": {
+    "en": "",
+    "ua": "!\"№;%:?*()'ЙЦУКЕНГШЩЗФІВАПРОЛДЖХЇЯЧСМИТЬБЮЄ-_"
+  },
+  "qwerty_caps": {
+    "en": "",
+    "ua": ""
+  },
+  "qwerty_shift": {
+    "en": "",
+    "ua": ""
+  },
+  "qwerty_dic_en": {
+    "en": "English",
+    "ua": "англ."
+  },
+  "qwerty_dic_fr": {
+    "en": "French",
+    "ua": "франц."
+  },
+  "qwerty_dic_es": {
+    "en": "Spanish",
+    "ua": "ісп."
+  },
+  "qwerty_dic_de": {
+    "en": "German",
+    "ua": "нім."
+  },
+  "qwerty_dic_it": {
+    "en": "Italian",
+    "ua": "італ."
+  },
+  "qwerty_dic_ru": {
+    "en": "Russian",
+    "ua": "укр."
+  },
+  "qwerty_dic_pt": {
+    "en": "Portug.",
+    "ua": "португ."
+  },
+  "qwerty_dic_nl": {
+    "en": "Dutch",
+    "ua": "нідерл."
+  },
+  "qwerty_space": {
+    "en": "",
+    "ua": ""
+  },
+  "qwerty_conv": {
+    "en": "",
+    "ua": ""
+  },
+  "qwerty_eiji": {
+    "en": "",
+    "ua": ""
+  },
+  "qwerty_hiragana": {
+    "en": "",
+    "ua": ""
+  },
+  "qwerty_katakana": {
+    "en": "",
+    "ua": ""
+  },
+  "qwerty_backspace": {
+    "en": "",
+    "ua": ""
+  },
+  "kana50_keytop_h": {
+    "en": "",
+    "ua": ""
+  },
+  "kana50_keytop_h_daku": {
+    "en": "",
+    "ua": ""
+  },
+  "kana50_keytop_h_handaku": {
+    "en": "",
+    "ua": ""
+  },
+  "kana50_keytop_h_sute": {
+    "en": "",
+    "ua": ""
+  },
+  "kana50_keytop_k": {
+    "en": "",
+    "ua": ""
+  },
+  "kana50_keytop_k_daku": {
+    "en": "",
+    "ua": ""
+  },
+  "kana50_keytop_k_handaku": {
+    "en": "",
+    "ua": ""
+  },
+  "kana50_keytop_k_sute": {
+    "en": "",
+    "ua": ""
+  },
+  "kana50_bar": {
+    "en": "",
+    "ua": ""
+  },
+  "kana50_space": {
+    "en": "",
+    "ua": ""
+  },
+  "kana50_conv": {
+    "en": "",
+    "ua": ""
+  },
+  "kana50_dakuten": {
+    "en": "",
+    "ua": ""
+  },
+  "kana50_handakuten": {
+    "en": "",
+    "ua": ""
+  },
+  "kana50_sutegana": {
+    "en": "",
+    "ua": ""
+  },
+  "kana50_hiragana": {
+    "en": "",
+    "ua": ""
+  },
+  "kana50_katakana": {
+    "en": "",
+    "ua": ""
+  },
+  "kana50_backspace": {
+    "en": "",
+    "ua": ""
+  },
+  "sign_keytop_00": {
+    "en": ".,·'_‘’‚‛:;¨`\\/ƒºª«»()[]{}*‹›\"“”„~&#",
+    "ua": ""
+  },
+  "sign_keytop_01": {
+    "en": "?!¿¡←→↑↓√@§¶†‡|¦–—¤$¢€£¥™©®<>+-×÷=±∞",
+    "ua": ""
+  },
+  "sign_keytop_02": {
+    "en": "^ˇ˘˙¸˛˜′″µ°¹²³♭♪•…¬¯%‰¼½¾⇒⇔●◆■▲▼☆★♀♂",
+    "ua": ""
+  },
+  "sign_keytop_03": {
+    "en": "",
+    "ua": ""
+  },
+  "euro_keytop_00": {
+    "en": "àáâãäåæçèéêëìíîïðñòóôõöøœùúûüýÿþß",
+    "ua": ""
+  },
+  "euro_keytop_00_c": {
+    "en": "ÀÁÂÃÄÅÆÇÈÉÊËÌÍÎÏÐÑÒÓÔÕÖØŒÙÚÛÜÝŸÞß",
+    "ua": ""
+  },
+  "euro_keytop_01": {
+    "en": "šžāăąćċčďēěėęğġģħīįiıĳķĺļľłńņňőŕřśşť",
+    "ua": ""
+  },
+  "euro_keytop_01_c": {
+    "en": "ŠŽĀĂĄĆĊČĎĒĚĖĘĞĠĢĦĪĮİIĲĶĹĻĽŁŃŅŇŐŔŘŚŞŤ",
+    "ua": ""
+  },
+  "euro_keytop_02": {
+    "en": "ūůűųźż   ƒǆǳț",
+    "ua": ""
+  },
+  "euro_keytop_02_c": {
+    "en": "ŪŮŰŲŹŻ   ƒǅǲȚ",
+    "ua": ""
+  },
+  "euro_keytop_03": {
+    "en": "αβγδεζηθικλμνξοπρστυφχψω",
+    "ua": ""
+  },
+  "euro_keytop_03_c": {
+    "en": "ΑΒΓΔΕΖΗΘΙΚΛΜΝΞΟΠΡΣΤΥΦΧΨΩ",
+    "ua": ""
+  },
+  "euro_keytop_04": {
+    "en": "άέήίόύώϊϋΐΰς;΄΅·",
+    "ua": ""
+  },
+  "euro_keytop_04_c": {
+    "en": "ΆΈΉΊΌΎΏΪΫΐΰς;΄΅·",
+    "ua": ""
+  },
+  "euro_keytop_05": {
+    "en": "абвгдеёжзийклмнопрстуфхцчшщъыьэюя",
+    "ua": "абвгдеєжзиіїйклмнопрстуфхцчшщьюя'"
+  },
+  "euro_keytop_05_c": {
+    "en": "АБВГДЕЁЖЗИЙКЛМНОПРСТУФХЦЧШЩЪЫЬЭЮЯ",
+    "ua": "АБВГДЕЄЖЗИІЇЙКЛМНОПРСТУФХЦЧШЩЬЮЯ'"
+  },
+  "grid_caps": {
+    "en": "",
+    "ua": ""
+  },
+  "grid_space": {
+    "en": "",
+    "ua": ""
+  },
+  "grid_conv": {
+    "en": "",
+    "ua": ""
+  },
+  "grid_backspace": {
+    "en": "",
+    "ua": ""
+  },
+  "cell_keytop_hira": {
+    "en": "",
+    "ua": ""
+  },
+  "cell_keytop_kata": {
+    "en": "",
+    "ua": ""
+  },
+  "cell_keytop_alpha": {
+    "en": ".,?@\nabc\ndef\nghi\njkl\nmno\npqrs\ntuv\nwxyz\n\n0\n",
+    "ua": ""
+  },
+  "cell_keytop_alpha_c": {
+    "en": ".,?@\nABC\nDEF\nGHI\nJKL\nMNO\nPQRS\nTUV\nWXYZ\n\n0\n",
+    "ua": ""
+  },
+  "cell_keytop_number": {
+    "en": "1\n2\n3\n4\n5\n6\n7\n8\n9\n\n0\n",
+    "ua": ""
+  },
+  "cell_keytop_cyrillic": {
+    "en": "",
+    "ua": "'@_\nабвг\nдеєж\nзиії\nйклм\nнопр\nстуф\nхцчш\nщьюя\n\n0\n"
+  },
+  "cell_keytop_cyrillic_c": {
+    "en": "",
+    "ua": "'@_\nАБВГ\nДЕЄЖ\nЗИІЇ\nЙКЛМ\nНОПР\nСТУФ\nХЦЧШ\nЩЬЮЯ\n\n0\n"
+  },
+  "cell_input_hira": {
+    "en": "",
+    "ua": ""
+  },
+  "cell_input_kata": {
+    "en": "",
+    "ua": ""
+  },
+  "cell_input_alpha": {
+    "en": ".,'?!-_@:/£€$1\nabc2\ndef3\nghi4\njkl5\nmno6\npqrs7\ntuv8\nwxyz9\n\n 0\n",
+    "ua": ""
+  },
+  "cell_input_alpha_c": {
+    "en": ".,'?!-_@:/£€$1\nABC2\nDEF3\nGHI4\nJKL5\nMNO6\nPQRS7\nTUV8\nWXYZ9\n\n 0\n",
+    "ua": ""
+  },
+  "cell_input_number": {
+    "en": "1\n2\n3\n4\n5\n6\n7\n8\n9\n\n0\n",
+    "ua": ""
+  },
+  "cell_input_cyrillic": {
+    "en": "",
+    "ua": ".,!?:;'\"-()@/_1\nабвг2\nдеєж3\nзиії4\nйклм5\nнопр6\nстуф7\nхцчш8\nщьюя9\n\n 0\n"
+  },
+  "cell_input_cyrillic_c": {
+    "en": "",
+    "ua": ".,!?:;'\"-()@/_1\nАБВГ2\nДЕЄЖ3\nЗИІЇ4\nЙКЛМ5\nНОПР6\nСТУФ7\nХЦЧШ8\nЩЬЮЯ9\n\n 0\n"
+  },
+  "cell_caps": {
+    "en": "",
+    "ua": ""
+  },
+  "cell_space": {
+    "en": "",
+    "ua": ""
+  },
+  "cell_conv": {
+    "en": "",
+    "ua": ""
+  },
+  "cell_backspace": {
+    "en": "",
+    "ua": ""
+  },
+  "cell_l01": {
+    "en": "",
+    "ua": "Абв"
+  },
+  "cell_l02": {
+    "en": "",
+    "ua": "Abc"
+  },
+  "cell_l03": {
+    "en": "Abc",
+    "ua": ""
+  },
+  "cell_l04": {
+    "en": "123",
+    "ua": ""
+  },
+  "cell_dic_en": {
+    "en": "EN",
+    "ua": ""
+  },
+  "cell_dic_fr": {
+    "en": "FR",
+    "ua": ""
+  },
+  "cell_dic_es": {
+    "en": "ES",
+    "ua": ""
+  },
+  "cell_dic_de": {
+    "en": "DE",
+    "ua": ""
+  },
+  "cell_dic_it": {
+    "en": "IT",
+    "ua": ""
+  },
+  "cell_dic_ru": {
+    "en": "RU",
+    "ua": "UA"
+  },
+  "cell_dic_pt": {
+    "en": "PT",
+    "ua": ""
+  },
+  "cell_dic_nl": {
+    "en": "NL",
+    "ua": ""
+  },
+  "tenkey_backspace": {
+    "en": "",
+    "ua": ""
+  },
+  "dlg_1b_ok": {
+    "en": "OK",
+    "ua": "OK"
+  },
+  "dlg_parental_up": {
+    "en": "",
+    "ua": ""
+  },
+  "dlg_parental_ok": {
+    "en": "",
+    "ua": ""
+  },
+  "dlg_parental_ng_num": {
+    "en": "This PIN is incorrect.",
+    "ua": "Неправильний PIN-код."
+  },
+  "dlg_parental_ng_4": {
+    "en": "",
+    "ua": ""
+  },
+  "dlg_parental_err": {
+    "en": "To change your Parental\nControls settings, please go\nto Parental Controls in the\nSystem Settings and answer\nthe secret question.",
+    "ua": "Щоб змінити батьківський\nконтроль, перейдіть до\nБатьківський контроль\nу системних налаштуваннях\nі дайте відповідь на секретне\nпитання."
+  },
+  "dlg_parental_err_mset": {
+    "en": "",
+    "ua": ""
+  },
+  "dlg_ngword_err": {
+    "en": "This contains inappropriate\nlanguage and cannot be used.",
+    "ua": "Тут є неприйнятні слова,\nтому це не можна\nвикористати."
+  },
+  "dlg_number_err": {
+    "en": "You can enter up to %d\ndigits.",
+    "ua": "Можна ввести не більше\n%d цифр."
+  },
+  "dlg_no_number": {
+    "en": "This character cannot\nbe used.",
+    "ua": "Цей символ не можна\nвикористати."
+  },
+  "dlg_atmark_err": {
+    "en": "",
+    "ua": ""
+  },
+  "dlg_banned_char_err": {
+    "en": "%lc cannot be used.",
+    "ua": "%lc не можна використати."
+  }
+}

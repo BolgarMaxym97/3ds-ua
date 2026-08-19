@@ -3,6 +3,8 @@ dist/
 dist_en/
 tmp/
 dumps/
+cia/
+*.cia
 *.app
 *.firm
 *.bcfnt

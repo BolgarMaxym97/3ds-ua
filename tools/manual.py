@@ -113,6 +113,25 @@ MANUALS = {
         "path": "romfs/manual/Manual.bcma",
         "reference": "EUR_en",
     },
+    # The New 3DS browser is a title of its own with a manual of its own, and it keeps it
+    # where every other title does - content index 1 - rather than inside its own romfs.
+    "browser_n3ds": {
+        "tid": "0004003020009D02",
+        "path": "manual/Manual.bcma",
+        "reference": "EUR_en",
+    },
+    # New 3DS packages Health and Safety as the manual viewer plus a document of its own,
+    # so what Old 3DS ships as application text is a manual there - see docs/dump-new3ds.md.
+    "health_safety_n3ds": {
+        "tid": "0004001020022300",
+        "path": "manual/Manual.bcma",
+        "reference": "EUR_en",
+        # This one has no file of its own on the SD card: the title reads its whole RomFS as
+        # one image (tools/luma_hook.py, `romfs_from_sd`), and the document goes inside that
+        # image at the path the code was pointed at. tools/build.py asks build_image() for
+        # the bytes while it assembles it.
+        "romfs_member": "manual/Manual.bcma",
+    },
     "system_settings": {
         "tid": "0004001000022000",
         "path": "manual/Manual.bcma",
@@ -740,11 +759,13 @@ def language_name(
     return files | {page: bclyt.rewrite(files[page], {slot: bclyt.Edit(text=rendered)})}
 
 
-def cmd_build(name: str) -> None:
-    if cmd_check(name):
-        raise SystemExit("fix the problems above first")
+def build_image(name: str) -> tuple[bytes, int]:
+    """The translated document -> (Manual.bcma bytes, paragraphs replaced).
 
-    cfg = MANUALS[name]
+    Split out of cmd_build() because one title has no destination of its own: the New 3DS
+    Health & Safety document ships inside that title's RomFS image, which tools/build.py
+    assembles, so the build asks for the bytes rather than for a file.
+    """
     manual = source_manual(name)
     strings = load_json(name)
     widths, table = load_widths(), load_homoglyphs()
@@ -758,7 +779,11 @@ def cmd_build(name: str) -> None:
     # is left as Nintendo wrote it, which is what the console shows if you switch to it.
     slot = variant.current().manual_slot
     if slot != BASE_SLOT:
-        for part in (*PARTS, "texture"):
+        # `texture` only where the document has one per language: the New 3DS Health &
+        # Safety document draws every localisation from one `Common_texture.arc`, so there
+        # is no per-language screenshot arc to carry over with the pages.
+        parts = [*PARTS, "texture"] if f"{BASE_SLOT}_texture.arc" in manual.members else list(PARTS)
+        for part in parts:
             manual.copy_member(f"{BASE_SLOT}_{part}", f"{slot}_{part}")
 
     changed = 0
@@ -781,8 +806,15 @@ def cmd_build(name: str) -> None:
 
     manual.write(INFO_ARC, language_name(manual, slot, widths, table))
 
-    image = manual.build()
-    for out in _destinations(name, cfg):
+    return manual.build(), changed
+
+
+def cmd_build(name: str) -> None:
+    if cmd_check(name):
+        raise SystemExit("fix the problems above first")
+
+    image, changed = build_image(name)
+    for out in _destinations(name, MANUALS[name]):
         out.parent.mkdir(parents=True, exist_ok=True)
         out.write_bytes(image)
         print(f"{out.relative_to(ROOT)}: {len(image)} bytes, {changed} paragraphs replaced")
@@ -805,6 +837,10 @@ def _destinations(name: str, cfg: dict) -> list[Path]:
         `<title id>.bcma` from here - and falls back to the console's own manual for every
         title this mod has no file for.
     """
+    if cfg.get("romfs_member"):
+        # Written by tools/build.py into the title's own RomFS image, not by this tool.
+        return []
+
     tids = TITLES.get(name, {}).get("tids", [cfg["tid"]])
     # Nothing goes into the documented title's own folder. The Internet Browser is the only
     # title that keeps a copy of its manual in its romfs, and that copy is dead: shipping it

@@ -19,12 +19,15 @@ README.txt inside the archive stays in Ukrainian: it is read by end users, not d
 from __future__ import annotations
 
 import argparse
+import json
 import sys
 import zipfile
 from pathlib import Path
 
 sys.path.insert(0, str(Path(__file__).parent))
+import luma_hook  # noqa: E402
 import variant  # noqa: E402
+from manual import MANUAL_APPLET_TID  # noqa: E402
 
 ROOT = Path(__file__).resolve().parent.parent
 
@@ -96,7 +99,7 @@ StreetPass Mii, Nintendo eShop, Face Raiders і AR Games, — разом із н
 ВЕРСІЇ 2, Електронний посібник ВЕРСІЇ 5, Список друзів ВЕРСІЇ 6, Вибір Mii
 ВЕРСІЇ 3, Сповіщення ВЕРСІЇ 4, налаштування amiibo ВЕРСІЇ 1, Гру по завантаженню
 ВЕРСІЇ 3, клавіатуру ВЕРСІЇ 4, Здоров'я і безпеку ВЕРСІЇ 3, екран помилки
-ВЕРСІЇ 7, аплет покупок eShop ВЕРСІЇ 22, 3DS Memo ВЕРСІЇ 3,
+ВЕРСІЇ 7, Здоров'я і безпеку New 3DS ВЕРСІЇ 0, аплет покупок eShop ВЕРСІЇ 22, 3DS Memo ВЕРСІЇ 3,
 аплет Circle Pad Pro ВЕРСІЇ 4, Miiverse ВЕРСІЇ 4 і Дані Nintendo Network ID
 ВЕРСІЇ 3 для EUR. Площа StreetPass Mii везе тільки exheader.bin
 (без правки коду) і зроблена під ВЕРСІЮ 5. Так само тільки exheader.bin везуть
@@ -118,6 +121,7 @@ Nintendo eShop (ВЕРСІЯ 29) і аплет публікації в Miiverse 
   Гра по завантаженню   luma/titles/0004001000022100
   Клавіатура            luma/titles/000400300000D002
   Здоров'я і безпека    luma/titles/0004001000022300
+  Здоров'я і безпека (New 3DS)  luma/titles/0004001020022300
   Аплет покупок eShop   luma/titles/000400300000D602
   3DS Memo              luma/titles/000400300000F602
   Аплет Circle Pad Pro  luma/titles/000400300000CD02
@@ -146,17 +150,7 @@ luma/titles/0004003000009802/code.ips ДО першого запуску з мо
 Довідник (кнопка "Довідник" у меню HOME) кожен додаток має свій, і лежить він у
 самій консолі, а не в перекладних файлах. Тому в папці Електронного посібника, крім тексту
 самого переглядача, лежать перекладені довідники окремими файлами:
-  luma/titles/0004003000009B02/romfs/00009d02.bcma   Інтернет-браузер
-  luma/titles/0004003000009B02/romfs/00022000.bcma   Налаштування системи
-  luma/titles/0004003000009B02/romfs/00022100.bcma   Гра по завантаженню
-  luma/titles/0004003000009B02/romfs/00022200.bcma   Журнал дій
-  luma/titles/0004003000009B02/romfs/00022400.bcma   Камера Nintendo 3DS
-  luma/titles/0004003000009B02/romfs/00022500.bcma   Звук Nintendo 3DS
-  luma/titles/0004003000009B02/romfs/00022700.bcma   Mii Maker
-  luma/titles/0004003000009B02/romfs/00022800.bcma   Площа StreetPass Mii
-  luma/titles/0004003000009B02/romfs/00022900.bcma   Nintendo eShop
-  luma/titles/0004003000009B02/romfs/00022d00.bcma   Face Raiders
-  luma/titles/0004003000009B02/romfs/00022e00.bcma   AR Games
+{manual_files}
 Додатки, для яких файла немає, показують свій рідний довідник — як і до мода.
 Назву додатка над сторінкою й пункт мови в перемикачі перекладає code.ips у тій
 самій папці; без нього довідники лишаться українськими, а заголовок — {left_ms}.
@@ -203,6 +197,28 @@ Miiverse і Дані Nintendo Network ID так само беруть із SD-к
 """
 
 
+def manual_files() -> str:
+    """The manual list for README.txt, straight out of the patch it describes.
+
+    Names come from luma_hook.manual_file_name(), so a title added to the viewer's table - or
+    renamed there, as the New 3DS copies are - cannot drift out of the text. Labels come from
+    src/app_names.json where the title has one; the few manuals whose title name the mod does
+    not patch are named here instead.
+    """
+    names = json.loads((ROOT / "src" / "app_names.json").read_text(encoding="utf-8"))
+    extra = {
+        "0004001000022900": "Nintendo eShop",
+        "0004001000022D00": "Face Raiders",
+    }
+    lines = []
+    for tid in luma_hook.HOOK_PATCHES[MANUAL_APPLET_TID]["manual_path"]["titles"]:
+        label = names.get(tid.upper(), {}).get("ua") or extra.get(tid.upper(), tid)
+        if int(tid, 16) >> 28 & 0xF == 2:   # a New 3DS copy of a title the Old 3DS has too
+            label += " (New 3DS)"
+        lines.append(f"  luma/titles/{MANUAL_APPLET_TID}/romfs/{luma_hook.manual_file_name(tid):<6}      {label}")
+    return "\n".join(lines)
+
+
 def main() -> None:
     ap = argparse.ArgumentParser()
     ap.add_argument("version", nargs="?", default="dev")
@@ -223,7 +239,13 @@ def main() -> None:
     if not files:
         raise SystemExit(f"{dist.name}/ is empty")
 
-    readme = README_TXT.format(version=version, slot=slot.key, original=slot.original, **SLOT_WORDS[slot.key])
+    readme = README_TXT.format(
+        version=version,
+        slot=slot.key,
+        original=slot.original,
+        manual_files=manual_files(),
+        **SLOT_WORDS[slot.key],
+    )
     with zipfile.ZipFile(archive, "w", zipfile.ZIP_DEFLATED) as zf:
         for path in files:
             zf.write(path, path.relative_to(dist))

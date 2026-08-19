@@ -274,8 +274,23 @@ TITLES = {
         "hook_patch": True,
     },
     "browser": {
-        "tids": ["0004003000009D02"],  # spider applet, EUR Old3DS; New3DS is 0004003020009D02
+        "tids": ["0004003000009D02"],  # spider applet, EUR Old3DS
         "source_tid": "0004003000009D02",
+        "lang": LANG_SLOTS,
+        "ref_lang": "EU_English",
+        "hud_font": "font/Hud.bcfnt",
+    },
+    # The New 3DS browser is a separate title with a separate binary (SKATER, v12.0.1
+    # against the Old 3DS spider), so it is a title of its own here rather than a second
+    # tid on the entry above: `skater.msbt` replaces `spider.msbt` and relabels most of
+    # what it kept, and `swkbd.msbt` - the browser's own copy of the keyboard - is new.
+    # `hud.msbt` and `font/Hud.bcfnt` are byte for byte what Old 3DS ships.
+    #
+    # No `hook_patch`: this one has fsMountArchive in its own code and DirectSdmc in its
+    # exheader, so Luma hooks LayeredFS unaided - tools/layeredfs_check.py agrees.
+    "browser_n3ds": {
+        "tids": ["0004003020009D02"],  # SKATER applet, EUR New3DS only
+        "source_tid": "0004003020009D02",
         "lang": LANG_SLOTS,
         "ref_lang": "EU_English",
         "hud_font": "font/Hud.bcfnt",
@@ -442,6 +457,18 @@ TITLES = {
         "ref_lang": "EU_English",
         "hook_patch": True,
     },
+    # New 3DS ships this title as the manual viewer with a document of its own, not as the
+    # `safe` application above - so its text is the viewer's `ebird.msbt` (the same twenty-six
+    # strings the Instruction Manual applet has, byte for byte) and the document itself, which
+    # tools/manual.py writes into the same RomFS image. `MANUAL_LANG_SLOTS`, because the
+    # viewer names its language folders `EU_Russia` where the applications say `EU_Russian`.
+    "health_safety_n3ds": {
+        "tids": ["0004001020022300"],
+        "source_tid": "0004001020022300",
+        "lang": MANUAL_LANG_SLOTS,
+        "ref_lang": "EU_English",
+        "hook_patch": True,
+    },
 }
 
 
@@ -577,14 +604,18 @@ def app_name_tables(table: dict[str, str]) -> tuple[dict[str, object], list[str]
             return []
         return [value] if isinstance(value, str) else list(value)
 
-    pairs = [
-        (original, apply_homoglyphs(replacement, table))
-        for entry in entries.values()
-        for key, replacement in ((short, entry.get("ua")), (long, entry.get("ua_long") or entry.get("ua")))
-        if replacement
-        for original in spellings(entry, key)
-    ]
-    pane_blob, pane_log = pane_names.build_table(pairs)
+    # Keyed by the original string, so two titles that ship the same name - a New 3DS copy
+    # of an Old 3DS title, most of them - are one substitution and not two. The hook stops
+    # at the first match anyway, so a repeat would be dead weight in a padding that decides
+    # how many names fit at all.
+    pairs: dict[str, str] = {}
+    for entry in entries.values():
+        for key, replacement in ((short, entry.get("ua")), (long, entry.get("ua_long") or entry.get("ua"))):
+            if not replacement:
+                continue
+            for original in spellings(entry, key):
+                pairs.setdefault(original, apply_homoglyphs(replacement, table))
+    pane_blob, pane_log = pane_names.build_table(list(pairs.items()))
 
     return {"smdh": smdh_blob, "pane": pane_blob, "smdh_manual": manual_blob}, [
         f"app names: {len(smdh_log)} titles, {len(smdh_blob)}-byte SMDH table, "
@@ -652,12 +683,20 @@ def write_banner(tid: str) -> list[str]:
 
     It belongs to another title entirely - the picture is System Settings' - but it is
     HOME Menu that opens it, so it ships in HOME Menu's folder next to its code.ips.
+
+    One file per image name rather than per title: the Old 3DS and New 3DS copies of a
+    title share a name where their banners hold the same language blocks, and the file is
+    built from the first title listed under it - see the note in tools/luma_hook.py.
     """
     hook = luma_hook.HOOK_PATCHES[tid.upper()].get("banner_hook")
     if not hook:
         return []
     written = []
+    seen: set[str] = set()
     for title in hook["titles"]:
+        if title["image_name"] in seen:
+            continue
+        seen.add(title["image_name"])
         blob = banner_mod.build(f"{title['title_id']:016X}")
         dest = variant.dist() / "luma" / "titles" / tid / title["image_name"]
         dest.parent.mkdir(parents=True, exist_ok=True)
@@ -766,6 +805,25 @@ CSV_BUILDERS = {
     "param/region.csv": build_country_table,
     "param/Piece2_PanelInfo.csv": build_panel_table,
 }
+
+
+def build_manual_member(name: str) -> tuple[dict[str, bytes], list[str]]:
+    """The electronic manual of a title that carries it inside its own RomFS.
+
+    Only the New 3DS Health & Safety title does: it reads its whole RomFS as one image off
+    the SD card, so its document has no file of its own to ship as - it goes into the image
+    beside the viewer's own text. Every other manual belongs to the Instruction Manual
+    applet's folder and is written there by tools/manual.py.
+
+    Imported here rather than at the top: tools/manual.py reads TITLES out of this module.
+    """
+    import manual as manual_mod  # noqa: PLC0415 - circular at module level
+
+    member = manual_mod.MANUALS.get(name, {}).get("romfs_member")
+    if not member:
+        return {}, []
+    image, changed = manual_mod.build_image(name)
+    return {member: image}, [f"{member}: {len(image)} bytes, {changed} paragraphs replaced"]
 
 
 def build_csv(cfg: dict, romfs: Path, table: dict[str, str]) -> tuple[dict[str, bytes], list[str]]:
@@ -1164,14 +1222,17 @@ def build_title(name: str, table: dict[str, str]) -> list[str]:
         updates[key] = msbt_mod.build(msbt)
         stats.append(f"{key}: {translated}/{len(msbt.texts)} translated")
 
+    manual_blobs, manual_stats = build_manual_member(name)
     csv_blobs, csv_stats = build_csv(cfg, romfs, table)
     layout_blobs, layout_stats = build_layout_texts(name, cfg, romfs, table)
     stats += csv_stats + layout_stats
     smdh_blobs, smdh_stats = build_smdh(name, cfg, romfs, table)
     hud_blobs, hud_stats = build_hud_font(cfg, romfs)
     stats += smdh_stats + hud_stats + names_stats
+    stats += manual_stats
     outputs = (
-        cross_blobs | store.outputs(lang, updates) | csv_blobs | layout_blobs | smdh_blobs | hud_blobs
+        cross_blobs | store.outputs(lang, updates) | csv_blobs | layout_blobs
+        | smdh_blobs | hud_blobs | manual_blobs
     )
     written: list[str] = []
     for reader in cfg.get("ships_to", []):

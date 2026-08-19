@@ -216,6 +216,8 @@ HOOK_PATCHES: dict[str, dict] = {
             # The titles this build ships a manual for. tools/manual.py checks it matches.
             "titles": [
                 "0004003000009D02",
+                # New 3DS ships its own browser, with its own document - see docs/dump-new3ds.md.
+                "0004003020009D02",
                 "0004001000022000",
                 "0004001000022200",
                 "0004001000022100",
@@ -370,6 +372,55 @@ HOOK_PATCHES: dict[str, dict] = {
             {"patch_at": 0x11234, "return_to": 0x11238},
         ],
     },
+    # Health & Safety Information (ssafe), EUR New 3DS, remaster version 0. The Old 3DS entry
+    # above stays exactly as it is: the two titles live side by side, one per console.
+    #
+    # New 3DS does not ship the `safe` application at all. What it ships under this title id
+    # is the Instruction Manual viewer (`ebird`) with a document of its own: the romfs is
+    # byte for byte the applet's, plus manual/Manual.bcma and manual/ManualEn.bcma, and the
+    # EUR document - the one with a Russian locale in it - is content index 1.
+    #
+    # Same mechanism as its Old 3DS namesake and for the same reason: no FSUSER_OpenArchive
+    # anywhere in .text (the whole fs:USER vocabulary here is the OpenFileDirectly wrapper at
+    # 0x6858C), so a mount stub would have nothing to call and Luma's symbol search comes up
+    # empty. Both ARCHIVE_ROMFS opens are pointed at an image on the SD card instead, with
+    # the path slots in the same places as everywhere else (type at sp+0xC, pointer at
+    # sp+0x10, size at sp+0x14), and no romfs/ folder ships, so patchLayeredFs() never runs.
+    #
+    # `code_edits` is what puts the document inside that image. LoadManual() at 0x55148 picks
+    # between two paths: `man:/Manual.bcma`, the EUR document in content index 1, which no
+    # redirect of ours can reach - and `rom:/manual/Manual.bcma`, its own romfs, which is the
+    # image we ship. So the branch is forced down the `rom:` side and both spellings there
+    # are pointed at the same file. What the console then reads is the document this build
+    # writes into the image - the stub the title carries at that path is a 3117-byte
+    # placeholder with a Japanese locale and nothing else in it.
+    "0004001020022300": {
+        "title": "Health & Safety Information (ssafe) EUR New3DS",
+        "title_version": 0,
+        "code_sha256": "1e6c6bafb3060b9268dfe41a22e8d9ca80d96110569862be3990349f5e8c2c19",
+        "kind": "romfs_from_sd",
+        "image_name": "ssafe_romfs.bin",
+        "stub_off": 0xAA474,        # .text page padding, 0xAA474..0xAB000 (2956 bytes)
+        "stub_room": 2956,
+        "sites": [
+            {"patch_at": 0x04B70, "return_to": 0x04B74},
+            {"patch_at": 0x0AFA8, "return_to": 0x0AFAC},
+        ],
+        "code_edits": [
+            {
+                "off": 0x55224,
+                "expect": b"\x04\x00\x00\x0a",   # beq 0x5523C - taken when man: is not used
+                "write": b"\x04\x00\x00\xea",    # b   0x5523C - always build a rom: path
+                "why": "the manual comes off the SD image, not out of content index 1",
+            },
+            {
+                "off": 0x55264,
+                "expect": b"\xa0\x10\x8f\xe2",   # add r1, pc, #0xa0 -> "manual/ManualEn.bcma"
+                "write": b"\xb8\x10\x8f\xe2",    # add r1, pc, #0xb8 -> "manual/Manual.bcma"
+                "why": "one document in the image serves both spellings of the path",
+            },
+        ],
+    },
     # 3DS Memo (memolib), EUR, title version 3 - the memo pad Miiverse and the Friend List
     # open for a handwritten post. Same shape as Download Play: its whole fs:USER vocabulary
     # is OpenFileDirectly (the wrapper at 0x15C50), with no OpenArchive/OpenFile/CloseArchive
@@ -456,6 +507,15 @@ HOOK_PATCHES: dict[str, dict] = {
                 {"title_id": 0x0004001000022300, "image_name": "banner_22300.bin"},
                 {"title_id": 0x0004001000022800, "image_name": "banner_22800.bin"},
                 {"title_id": 0x0004001000022E00, "image_name": "banner_22E00.bin"},
+                # New 3DS ships Health and Safety as a title of its own, and its icon is the
+                # one HOME Menu highlights there - the Old 3DS entry above never matches on
+                # that console, and this one never matches on Old 3DS. Both stay listed.
+                #
+                # It reads the same file: the two banners hold the same nine language CGFX
+                # byte for byte (only the common block, which no EUR language is ever drawn
+                # with, differs), so there is nothing to rebuild for it. tools/build.py
+                # writes one file per image name, not one per title.
+                {"title_id": 0x0004001020022300, "image_name": "banner_22300.bin"},
             ],
         },
         # The built-in tips of the Notifications applet were copied into the news module's
@@ -2446,6 +2506,7 @@ def _generate_romfs_from_sd(
     path_va = ro_address + ro_size
     records = _redirect_records(patch, path_va, rounded(text_size) + ro_size, sd_path)
     _verify_redirect(patch, code, records, path_va, sd_path)
+    edit_log = _code_edit_records(patch, code, records)
     msg_log: list[str] = []
     if patch.get("msg_hook"):
         hook = patch["msg_hook"]
@@ -2463,7 +2524,7 @@ def _generate_romfs_from_sd(
         f"stubs at 0x{patch['stub_off']:X} (va 0x{TEXT_VA + patch['stub_off']:X})",
         f"code.ips: path {sd_path!r} at va 0x{ro_address + ro_size:X} "
         f"({room} bytes of .rodata padding available)",
-    ] + msg_log + gate_log
+    ] + edit_log + msg_log + gate_log
 
     # A title that already carries DirectSdmc gets no exheader.bin: it would be byte-identical
     # to the one in NAND, and shipping a copy only adds a file that has to match the console's
@@ -3160,10 +3221,17 @@ def manual_file_name(tid: str) -> str:
     Four hex digits, not the whole low word. The string lives in a .rodata padding that is
     also the ceiling on how many manuals a release can carry, and `rex:/2000` costs 10 bytes
     where `rex:/00022000.bcma` cost 19 - nine bytes per title, in a budget measured in tens.
-    The low 16 bits are unique across every system title the viewer documents, and
+    The low 16 bits are unique across every Old 3DS system title the viewer documents, and
     _manual_path_records() refuses to build a table where they are not.
+
+    New 3DS keeps the same low 16 bits for its own copy of a title and puts the `2` further
+    up the low word (`0004003020009D02` against `0004003000009D02`), so those get an `n` in
+    front - one byte, where the whole low word would cost four. Nothing on the console
+    parses the name: the table the viewer walks holds the full low word and a pointer to
+    this string, so it only has to be unique on the SD card.
     """
-    return f"{int(tid, 16) & 0xFFFF:04x}"
+    low = int(tid, 16) & 0xFFFFFFFF
+    return ("n" if low >> 28 == 2 else "") + f"{low & 0xFFFF:04x}"
 
 
 def _manual_path_records(patch: dict, code: bytes, records: list) -> list[str]:
@@ -3498,6 +3566,29 @@ def _verify_smdh_hook(
             f"the wrapper changes Luma's symbol search: fsMountArchive -> "
             f"{symbols['fsMountArchive']}, expected 0x{patch['stub_off']:X}"
         )
+
+
+def _code_edit_records(patch: dict, code: bytes, records: list) -> list[str]:
+    """Single instructions the patch rewrites in place, each checked against the dump first.
+
+    The redirect stubs move whole opens onto the SD card; this is for the decisions taken
+    before them - which of two paths an open is given, in the one title that picks between
+    its own romfs and a content it keeps the document in. An offset that has drifted would
+    otherwise land on whatever moved there, so the expected bytes are part of the entry.
+    """
+    log = []
+    for edit in patch.get("code_edits", []):
+        found = code[edit["off"]:edit["off"] + len(edit["expect"])]
+        if found != edit["expect"]:
+            raise RuntimeError(
+                f"{patch['title']}: 0x{edit['off']:X} holds {found.hex()}, not the "
+                f"{edit['expect'].hex()} this edit was derived from"
+            )
+        if len(edit["write"]) != len(edit["expect"]):
+            raise RuntimeError(f"0x{edit['off']:X}: the edit changes the instruction length")
+        records.append((edit["off"], edit["write"]))
+        log.append(f"code.ips: 0x{edit['off']:X} {found.hex()} -> {edit['write'].hex()} - {edit['why']}")
+    return log
 
 
 def _reader_policy_record(patch: dict, code: bytes, records: list) -> str:

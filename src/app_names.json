@@ -18,5 +18,9 @@
   "0004003000009D02": { "ru": "Интернет-браузер", "en": "Internet Browser", "ua": "Інтернет-браузер" },
   "0004003000009F02": { "ru": "Список друзей", "en": "Friend List", "ua": "Список друзів" },
   "000400300000A002": { "ru": ["Сообщения", "Уведомления"], "en": "Notifications", "ua": "Сповіщення" },
-  "000400300000B902": { "ru": "Настройки amiibo", "en": "amiibo Settings", "ua": "Налаштування amiibo" }
+  "000400300000B902": { "ru": "Настройки amiibo", "en": "amiibo Settings", "ua": "Налаштування amiibo" },
+
+  "_comment_new3ds": "New 3DS ships its own copies of a few titles, with `2` opening the low word of the title id - see docs/dump-new3ds.md. They are separate titles with separate SMDHs, so they need their own entries; the Old 3DS ones above stay exactly as they are, and a console only ever has one of each. The originals below are read out of the New 3DS dumps, not copied from the Old 3DS entries: the Health and Safety SMDH is worded differently there, short and long alike.",
+  "0004001020022300": { "ru": "Информация о здоровье и бе…", "ru_long": "Информация о здоровье\nи безопасности", "en": "Health and Safety Information", "ua": "Здоров'я і безпека", "ua_long": "Інформація про здоров'я\nі безпеку" },
+  "0004003020009D02": { "ru": "Интернет-браузер", "en": "Internet Browser", "ua": "Інтернет-браузер" }
 }
