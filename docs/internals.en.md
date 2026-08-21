@@ -47,10 +47,20 @@ A folder name is the Title ID (TID) of the system title it overrides. Luma reads
 | `000400300000F602` | 3DS Memo (`memolib`) | `code.ips` + `exheader.bin` + `memolib_romfs.bin` — no LayeredFS, whole RomFS image off the SD card |
 | `000400300000CD02` | Circle Pad Pro applet (`extrapad`) | `code.ips` + `exheader.bin` + `extrapad_romfs.bin` — no LayeredFS, whole RomFS image off the SD card |
 | `0004003000009902` | Camera applet (`L`+`R`) | `code.ips` + `camera_applet_romfs.bin` — no LayeredFS, whole RomFS image off the SD card; no `exheader.bin`, the title already has `DirectSdmc` |
+| `0004003020009D02` | New 3DS Internet Browser (`SKATER`) | `romfs/` — LayeredFS; **in the `-new3ds` archive only**, and the same files also sit in the `0004003000009D02` folder |
+| `0004001020022300` | New 3DS Health & Safety Information (`ssafe`) | `code.ips` + `exheader.bin` + `ssafe_romfs.bin` — no LayeredFS, whole RomFS image off the SD card; **in the `-new3ds` archive only**, with `code.ips` and `exheader.bin` duplicated into the `0004001000022300` folder |
 
 Why some of them carry `code.ips`, and almost all of them `exheader.bin` too: see [What is in the release](#what-is-in-the-release). In short, Luma hooks the titles whose row says only `romfs/` by itself; the rest lack the rights or the code the build supplies.
 
 Download Play, the Software Keyboard, Health & Safety Information, the error applet, the camera applet, 3DS Memo and the Circle Pad Pro applet ship no `romfs` folder on purpose — its mere presence halts those titles on an exception screen.
+
+### Two builds: Old 3DS and New 3DS
+
+A New 3DS runs its own copies of the Internet Browser and of Health & Safety Information, and **the loader looks their files up under the Old 3DS title id**: the New 3DS bit of the low word is cleared, so the New 3DS binary is what gets patched while the Old 3DS title's folder is what gets read. On a New 3DS `luma/titles/0004003000009D02/romfs/` serves `SKATER`, and `luma/titles/0004001000022300/code.ips` lands on `ssafe`.
+
+The same file therefore has to hold different bytes on the two consoles, and one card cannot be in both states - hence four archives instead of two. The evidence and the exact numbers (the loader aborting on `ssafe` sized by `safe`'s exheader) are in [docs/dump-new3ds.md](dump-new3ds.md), the build side is `write_loader_alias()` in `tools/build.py`, the packaging side `tools/package.py`.
+
+Files a title opens itself by an absolute SD path (`ssafe_romfs.bin`) are not affected: the loader never looks for those, the title's own code does, so they stay under their New 3DS id.
 
 The eight titles that draw the date-and-clock line at the top of the screen also get a
 replaced `Hud.bcfnt` (`Hud_JP.bcfnt` in some of them) next to their text: the bitmap font
@@ -1155,6 +1165,8 @@ Line width is `sum of glyph advances × fontSize / 24 + charSpace`. The 24 is th
 **The language picker.** The viewer takes the language names not from MSBT but from the document's own `BcmaInfo.bclyt`: one text pane per localisation, named after it (`EUR_en` … `EUR_ru`), each holding the language written in itself. `tools/manual.py` sets **Українська** on the pane of the slot the build replaces: `EUR_ru` in `from-ru`, `EUR_en` in `from-en`. The pane is 200px, the name draws at 135, and no coordinate moves.
 
 **The title above the page.** The line across the top of every page is the short description from the **documented** title's SMDH (`ExeFS:/icon` in NAND), which `ebird` reads itself — out of LayeredFS's reach, exactly as in the HOME Menu. The fix is the same: hook the read. What differs is that there is one reader and no cache of any kind — the call at `0x115E84` hands over the buffer, the title id and the mediatype, and right after it the wrapper rewrites the SMDH slot this build replaces from the same name table the HOME Menu uses (`smdh_names.py`), cut down to the titles this build ships a manual for. A title not in the table is left as it was.
+
+New 3DS Health & Safety Information is the same wrapper on the same reader. That title *is* the manual viewer, only it documents itself: the read is at `0x1161BC` (reader `0x132740`), and the id it hands over is the **Old 3DS** one, `0004001000022300` — the pair `00022300`/`00040010` is hardcoded at `0x61F8C` and `20022300` appears nowhere in `.text`. So the table carries both spellings of the pair, and it is a table of its own rather than a row in the viewer's: that one shares a 1064-byte window with the manual paths, while here the `.rodata` padding behind the romfs path string has over 2 KB free. The 216-byte wrapper goes at the end of the `.text` padding, past the romfs redirect stubs; `_place_smdh_hook()` computes both addresses instead of the config carrying them.
 
 Where the wrapper goes is its own problem: the `.text` padding here is 88 bytes with 84 already taken by the mount stub, and Luma claims `throwFatalError()` for its own payload. So the 216 bytes of wrapper go over the dead function at `0x12C6E8` — a second copy of the icon-tile copier that is also inlined at `0x115F04` and that nothing in the image reaches: no `bl`, no `b`, no absolute pointer in `.text`, `.rodata` or `.data`, and the title's one computed jump (`0x18FC90`) branches inside its own table. Those 636 bytes are pinned by a sha256 in `tools/luma_hook.py`, so a different build of the title fails the mod's build instead of the console.
 

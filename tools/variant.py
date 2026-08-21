@@ -89,6 +89,14 @@ SLOTS = {
 }
 
 
+# One more axis, and a much smaller one: the console model. Everything a New 3DS needs and
+# an Old 3DS must not get is built into <dist>/new3ds/ and laid over the rest by
+# tools/package.py, which ships the two as separate archives. It is one folder rather than a
+# second dist tree because exactly two titles differ - see write_loader_alias() in
+# tools/build.py.
+NEW3DS_DIR = "new3ds"
+
+
 def current() -> Slot:
     key = os.environ.get(ENV_VAR) or DEFAULT
     if key not in SLOTS:
@@ -105,6 +113,11 @@ def select(key: str) -> Slot:
 def dist() -> Path:
     """Where this build writes - dist/ or dist_en/."""
     return current().dist
+
+
+def new3ds_dist() -> Path:
+    """The New 3DS half of this build - dist/new3ds/ or dist_en/new3ds/."""
+    return current().dist / NEW3DS_DIR
 
 
 def add_argument(parser: argparse.ArgumentParser) -> None:

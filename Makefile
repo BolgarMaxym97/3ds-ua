@@ -3,13 +3,18 @@ PY := python3
 
 HOME_MENU_TID := 0004003000009802
 FONT_TID := 0004009B00014002
-VERSION := 1.5.0
+VERSION := 1.6.0
 
 # Which language the mod stands in place of. `ru` builds into dist/, `en` into dist_en/;
 # the targets below build both, and SLOT= picks one for the single-slot targets (sd).
 # See tools/variant.py.
 SLOT := ru
 DIST := $(if $(filter en,$(SLOT)),dist_en,dist)
+
+# Which console the `sd` target copies for. `new3ds` lays $(DIST)/new3ds over the shared
+# tree - the New 3DS copies of the browser and of Health and Safety, in the folders Luma
+# reads for them. See write_loader_alias() in tools/build.py.
+MODEL := old3ds
 
 .PHONY: help extract extract-manuals font hud-font validate build build-ru build-en \
 	manuals manuals-ru manuals-en all package package-ru package-en clean sd
@@ -50,18 +55,19 @@ manuals-en: build-en ## rebuild the manuals into dist_en/
 
 all: manuals ## validate + build + manuals, both slots
 
-package: package-ru package-en ## build both release archives
+package: package-ru package-en ## build all four release archives (2 slots x 2 consoles)
 
-package-ru: manuals-ru ## build 3ds-ua-from-ru-$(VERSION).zip
+package-ru: manuals-ru ## build 3ds-ua-from-ru-$(VERSION)-{old3ds,new3ds}.zip
 	$(PY) tools/package.py $(VERSION) --slot ru
 
-package-en: manuals-en ## build 3ds-ua-from-en-$(VERSION).zip
+package-en: manuals-en ## build 3ds-ua-from-en-$(VERSION)-{old3ds,new3ds}.zip
 	$(PY) tools/package.py $(VERSION) --slot en
 
-sd: ## copy onto the SD card (SD=/Volumes/... , SLOT=ru|en)
+sd: ## copy onto the SD card (SD=/Volumes/... , SLOT=ru|en, MODEL=old3ds|new3ds)
 	@test -n "$(SD)" || { echo "pass SD=/Volumes/<name>"; exit 1; }
 	$(MAKE) build-$(SLOT)
 	rsync -av $(DIST)/luma/ "$(SD)/luma/"
+	@test "$(MODEL)" != new3ds || rsync -av $(DIST)/new3ds/luma/ "$(SD)/luma/"
 
 clean: ## remove the build output
 	rm -rf dist dist_en

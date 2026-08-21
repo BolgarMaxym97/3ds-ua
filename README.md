@@ -2,12 +2,14 @@
 
 **Українська мова для Nintendo 3DS.** Мод стає на місце однієї з мов консолі: у списку мов з'являється «Українська», і система починає говорити українською. Решта мов лишається на місці.
 
-Збірок дві, і вони однакові — різниця лише в тому, чию клітинку займає українська:
+Збірки однакові за перекладом, а різняться двома речами — чию клітинку займає українська і для якої консолі архів:
 
-- **`3ds-ua-from-ru-<версія>.zip`** — замість російської. Англійська лишається недоторканою.
-- **`3ds-ua-from-en-<версія>.zip`** — замість англійської. Російська лишається недоторканою.
+- **`3ds-ua-from-ru-<версія>-old3ds.zip`** — замість російської, для 3DS / 3DS XL / 2DS.
+- **`3ds-ua-from-ru-<версія>-new3ds.zip`** — замість російської, для New 3DS / New 3DS XL / New 2DS XL.
+- **`3ds-ua-from-en-<версія>-old3ds.zip`** — замість англійської, для 3DS / 3DS XL / 2DS.
+- **`3ds-ua-from-en-<версія>-new3ds.zip`** — замість англійської, для New 3DS / New 3DS XL / New 2DS XL.
 
-Ставте одну з них, не обидві.
+Ставте одну з них, не кілька. Архіви для різних консолей саме тому й окремі, що New 3DS має власні копії Інтернет-браузера і Здоров'я і безпеки, а Luma шукає файли для них у папці Old3DS-івського титулу — той самий файл на різних консолях мусить бути різним. Не той архів дає креш Здоров'я і безпеки й наполовину неперекладений браузер.
 
 Файли самої консолі не змінюються — усе живе на SD-карті. Видалили папки, і все повернулося як було.
 
@@ -51,7 +53,7 @@
 
 **1. Скопіюйте файли на SD-карту**
 
-Візьміть з [Releases](../../releases) `3ds-ua-from-ru-<версія>.zip` (українська замість російської) або `3ds-ua-from-en-<версія>.zip` (замість англійської) — щось одне. Вимкніть консоль, вставте SD-карту в комп'ютер, розпакуйте архів і скопіюйте папку `luma` в корінь картки — туди, де вже є папка `luma`. Комп'ютер спитає, чи об'єднати папки — погодьтеся.
+Візьміть з [Releases](../../releases) один архів: `-from-ru-` ставить українську замість російської, `-from-en-` — замість англійської; `-old3ds` для 3DS / 3DS XL / 2DS, `-new3ds` для New 3DS / New 3DS XL / New 2DS XL. Вимкніть консоль, вставте SD-карту в комп'ютер, розпакуйте архів і скопіюйте папку `luma` в корінь картки — туди, де вже є папка `luma`. Комп'ютер спитає, чи об'єднати папки — погодьтеся.
 
 Поверніть картку в консоль.
 
@@ -131,12 +133,14 @@
 
 **Ukrainian system language for the Nintendo 3DS.** The mod takes the place of one of the console's languages: «Українська» appears in the language list and the console starts speaking Ukrainian. Every other language stays untouched.
 
-There are two builds of the same translation, differing only in whose slot Ukrainian takes:
+The builds carry the same translation and differ in two things — whose slot Ukrainian takes, and which console the archive is for:
 
-- **`3ds-ua-from-ru-<version>.zip`** — in place of Russian; English is left alone.
-- **`3ds-ua-from-en-<version>.zip`** — in place of English; Russian is left alone.
+- **`3ds-ua-from-ru-<version>-old3ds.zip`** — in place of Russian, for the 3DS / 3DS XL / 2DS.
+- **`3ds-ua-from-ru-<version>-new3ds.zip`** — in place of Russian, for the New 3DS / New 3DS XL / New 2DS XL.
+- **`3ds-ua-from-en-<version>-old3ds.zip`** — in place of English, for the 3DS / 3DS XL / 2DS.
+- **`3ds-ua-from-en-<version>-new3ds.zip`** — in place of English, for the New 3DS / New 3DS XL / New 2DS XL.
 
-Install one of them, not both.
+Install one of them, not several. The per-console split exists because a New 3DS runs its own copies of the Internet Browser and of Health and Safety while Luma keeps reading the Old 3DS title's folder for them: the same file has to hold different bytes on the two consoles. The wrong archive crashes Health and Safety and leaves the browser half translated.
 
 Nothing on the console itself is modified — it all lives on the SD card. Delete the folders and everything is back to stock.
 
@@ -158,7 +162,7 @@ No Luma3DS yet? Follow [3ds.hacks.guide](https://3ds.hacks.guide/) first — the
 
 **1. Copy the files onto the SD card**
 
-Grab either `3ds-ua-from-ru-<version>.zip` (Ukrainian stands in place of Russian) or `3ds-ua-from-en-<version>.zip` (in place of English) from [Releases](../../releases) — one of them, not both. Power the console off, put the SD card in your computer, unpack the archive and copy the `luma` folder into the card's root — where a `luma` folder already exists. Agree when your computer offers to merge them.
+Grab one archive from [Releases](../../releases): `-from-ru-` puts Ukrainian in place of Russian, `-from-en-` in place of English; `-old3ds` is for the 3DS / 3DS XL / 2DS, `-new3ds` for the New 3DS / New 3DS XL / New 2DS XL. Power the console off, put the SD card in your computer, unpack the archive and copy the `luma` folder into the card's root — where a `luma` folder already exists. Agree when your computer offers to merge them.
 
 Put the card back.
 

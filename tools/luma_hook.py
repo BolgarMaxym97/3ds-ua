@@ -394,12 +394,32 @@ HOOK_PATCHES: dict[str, dict] = {
     # are pointed at the same file. What the console then reads is the document this build
     # writes into the image - the stub the title carries at that path is a 3117-byte
     # placeholder with a Japanese locale and nothing else in it.
+    #
+    # The name across the top of the page comes from the same place the Instruction Manual's
+    # does - the documented title's `ExeFS:/icon`, read once at 0x161BC - so it needs the same
+    # wrapper. Here the documented title is this one, and the id it asks for is the *Old 3DS*
+    # one: the pair hardcoded at 0x61F8C is `00022300`/`00040010`, and `20022300` appears
+    # nowhere in .text. Which is also the id the console launches it under, and why the name
+    # stayed Russian while everything the build replaces came out Ukrainian - the SMDH is in
+    # NAND, out of reach of any file on the card.
+    #
+    # `titles` is what goes into the table: both spellings of the pair, so the lookup matches
+    # whichever the runtime hands over. The wrapper and the table are placed by
+    # _place_smdh_hook() rather than written down here - they go in the paddings the romfs
+    # redirect leaves behind, and both depend on how long the table is.
     "0004001020022300": {
         "title": "Health & Safety Information (ssafe) EUR New3DS",
         "title_version": 0,
         "code_sha256": "1e6c6bafb3060b9268dfe41a22e8d9ca80d96110569862be3990349f5e8c2c19",
         "kind": "romfs_from_sd",
         "image_name": "ssafe_romfs.bin",
+        "smdh_hook": {
+            "site_off": 0x161BC,      # the `bl` to the reader, the one call it ever gets
+            "reader_off": 0x32740,    # ReadTitleIcon(buffer, mediatype, tid_lo, tid_hi)
+            "reads": "the document's SMDH read",
+            "effect": "the name above the page is the one the HOME Menu shows",
+            "titles": ["0004001000022300", "0004001020022300"],
+        },
         "stub_off": 0xAA474,        # .text page padding, 0xAA474..0xAB000 (2956 bytes)
         "stub_room": 2956,
         "sites": [
@@ -1979,14 +1999,22 @@ def _generate_area_from_sd(
         f"({at - padding - LUMA_PATH_SIZE} bytes of {room - LUMA_PATH_SIZE} free)",
     ]
     if patch.get("smdh_hook"):
-        log += _area_smdh_records(patch, code, exheader, table, at, records)
+        log += _place_smdh_hook(
+            patch, code, exheader, table, at,
+            patch["rodata_padding_off"] + patch["rodata_padding_room"], records,
+        )
     return {"code.ips": make_ips(records)}, log
 
 
-def _area_smdh_records(
-    patch: dict, code: bytes, exheader: bytes, table: bytes | None, rodata_at: int, records: list
+def _place_smdh_hook(
+    patch: dict, code: bytes, exheader: bytes, table: bytes | None, rodata_at: int,
+    padding_end: int, records: list
 ) -> list[str]:
-    """Place the SMDH name hook in the paddings the `area:` patch has left over.
+    """Place the SMDH name hook in the paddings another patch of the same title has left over.
+
+    Two titles come through here: System Settings, whose `area:` paths take the front of the
+    .rodata padding, and New 3DS Health and Safety, whose romfs path takes one line of it.
+    `rodata_at` is where that patch stopped writing and `padding_end` where the padding ends.
 
     Neither address is a constant, because both depend on what the build ships: the table
     grows with src/app_names.json and the wrapper is laid out twice, once to learn its own
@@ -2006,7 +2034,7 @@ def _area_smdh_records(
     # Its length is known before its address is, so it is laid out twice - the same two-pass
     # shape _generate_smdh_names() uses.
     hook["rodata_off"] = rodata_at + -rodata_at % 4  # a word-aligned table, past the paths
-    hook["rodata_room"] = patch["rodata_padding_off"] + patch["rodata_padding_room"] - hook["rodata_off"]
+    hook["rodata_room"] = padding_end - hook["rodata_off"]
     sizing, _ = _smdh_hook(patch, TEXT_VA + hook["rodata_off"], 0)
     hook["stub_off"] = rounded(text_size) - len(sizing) * 4
     hook["stub_room"] = len(sizing) * 4
@@ -2096,6 +2124,28 @@ def wants_news_tips(tid: str) -> bool:
     return bool(HOOK_PATCHES.get(tid.upper(), {}).get("news_hook"))
 
 
+def smdh_table_key(patch: dict) -> str:
+    """Which of the two SMDH name tables a hook looks its title up in.
+
+    The manual viewer needs one row per title it documents, so it reads the table built from
+    the viewer's own list. A title that documents itself - New 3DS Health and Safety - needs
+    only its own rows, and the shared table has no room to spare for them: the viewer's two
+    tables sit in one 1064-byte window of padding. So `titles` in the hook config gets its
+    own table, in padding of its own.
+    """
+    return "smdh_self" if patch["smdh_hook"].get("titles") else "smdh_manual"
+
+
+def smdh_self_titles() -> list[str]:
+    """Every title id the self-documenting hooks look up, for tools/build.py to tabulate."""
+    return [
+        tid
+        for patch in HOOK_PATCHES.values()
+        if patch.get("smdh_hook", {}).get("titles")
+        for tid in patch["smdh_hook"]["titles"]
+    ]
+
+
 def wants_names(tid: str) -> str | None:
     """Which application-name table this title's patch needs, if any."""
     patch = HOOK_PATCHES.get(tid.upper())
@@ -2104,7 +2154,7 @@ def wants_names(tid: str) -> str | None:
     if patch.get("kind") == "smdh_names":
         return "smdh"
     if patch.get("smdh_hook"):
-        return "smdh_manual"
+        return smdh_table_key(patch)
     return "pane" if patch.get("pane_hook") else None
 
 
@@ -2479,7 +2529,8 @@ def sd_path_for(tid: str) -> str:
 
 
 def _generate_romfs_from_sd(
-    tid: str, patch: dict, code: bytes, exheader: bytes, version: int
+    tid: str, patch: dict, code: bytes, exheader: bytes, version: int,
+    names: dict[str, object] | None = None,
 ) -> tuple[dict[str, bytes], list[str]]:
     thumb = patch.get("encoding") == "thumb"
     expected = ORIGINAL_THUMB_SITE_WORD if thumb else ORIGINAL_SITE_WORD
@@ -2517,6 +2568,18 @@ def _generate_romfs_from_sd(
     gate_log: list[str] = []
     if patch.get("lang_swap"):
         gate_log = _lang_swap_records(patch, code, exheader, records)
+    smdh_log: list[str] = []
+    if patch.get("smdh_hook"):
+        key = smdh_table_key(patch)
+        if not (names or {}).get(key):
+            raise RuntimeError(f"{patch['title']} needs an SMDH name table and none was built")
+        # The path string above took the front of the .rodata padding; the table goes behind
+        # it, and the wrapper at the far end of the .text padding, past the redirect stubs.
+        smdh_log = _place_smdh_hook(
+            patch, code, exheader, names[key],
+            rounded(text_size) + ro_size + len(sd_path) + 1,
+            rounded(text_size) + rounded(ro_size), records,
+        )
     files = {"code.ips": make_ips(records)}
     log = [
         f"{patch['title']} title version {version}",
@@ -2524,7 +2587,7 @@ def _generate_romfs_from_sd(
         f"stubs at 0x{patch['stub_off']:X} (va 0x{TEXT_VA + patch['stub_off']:X})",
         f"code.ips: path {sd_path!r} at va 0x{ro_address + ro_size:X} "
         f"({room} bytes of .rodata padding available)",
-    ] + edit_log + msg_log + gate_log
+    ] + edit_log + msg_log + gate_log + smdh_log
 
     # A title that already carries DirectSdmc gets no exheader.bin: it would be byte-identical
     # to the one in NAND, and shipping a copy only adds a file that has to match the console's
@@ -3089,7 +3152,7 @@ def generate(
         )
 
     if patch.get("kind") == "romfs_from_sd":
-        return _generate_romfs_from_sd(tid, patch, code, exheader, version)
+        return _generate_romfs_from_sd(tid, patch, code, exheader, version, names)
 
     if patch.get("kind") == "area_from_sd":
         # No exheader: this title already has DirectSdmc, and the code the patch adds lands
@@ -3161,9 +3224,10 @@ def generate(
         extra, pane_log = _pane_records(patch, code, exheader, names["pane"])
         records += extra
     if patch.get("smdh_hook"):
-        if not (names or {}).get("smdh_manual"):
+        key = smdh_table_key(patch)
+        if not (names or {}).get(key):
             raise RuntimeError(f"{patch['title']} needs an SMDH name table and none was built")
-        pane_log += _smdh_hook_records(patch, code, names["smdh_manual"], records)
+        pane_log += _smdh_hook_records(patch, code, names[key], records)
 
     files = {
         "code.ips": make_ips(records),
@@ -3556,9 +3620,12 @@ def _verify_smdh_hook(
         raise RuntimeError("the name table is not terminated")
 
     # The blob lands on a function start, which is what Luma's symbol search walks back to,
-    # so the search has to be re-run: the mount stub must still be what it resolves. Titles
-    # Luma hooks unaided ship no stub, and there is no symbol of ours to protect.
-    if patch.get("stub_off") is None:
+    # so the search has to be re-run: the mount stub must still be what it resolves. Only the
+    # titles that ship one care - `variant` is what builds it. Titles Luma hooks unaided have
+    # no symbol of ours to protect, and the ones that never reach patchLayeredFs at all
+    # (`romfs_from_sd`, `area_from_sd`) are not searched in the first place; their `stub_off`
+    # is a redirect stub, not an fsMountArchive.
+    if not patch.get("variant"):
         return
     symbols = find_symbols(bytes(patched), patch["text_size_override"] or patch["text_size"])
     if symbols["fsMountArchive"] != patch["stub_off"]:

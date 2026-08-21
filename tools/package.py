@@ -4,14 +4,22 @@ Usage:
     python3 tools/package.py 0.1.0
     python3 tools/package.py 0.1.0 --slot en
 
-Output: 3ds-ua-from-<slot>-<version>.zip, laid out the way the user extracts it to the SD
-card root:
+Output: 3ds-ua-from-<slot>-<version>-<model>.zip, laid out the way the user extracts it to
+the SD card root:
     luma/titles/<TID>/romfs/...
     README.txt
 
 One archive per language slot the mod can stand in - `from-ru` out of dist/, `from-en` out
 of dist_en/, see tools/variant.py. The two hold the same translation and differ only in
 which language of the console it replaces, so README.txt says which one this is.
+
+And one archive per console model, because a New 3DS runs its own copies of the Internet
+Browser and of Health and Safety while Luma keeps reading the *Old 3DS* title's folder for
+them - so `/luma/titles/0004001000022300/code.ips` has to be one binary's patch on one
+console and the other binary's on the other, and no single card can hold both. The New 3DS
+archive is the shared tree with <dist>/new3ds/ laid over it; the Old 3DS one is the shared
+tree alone. See write_loader_alias() in tools/build.py for how that folder is built and for
+the evidence it rests on.
 
 README.txt inside the archive stays in Ukrainian: it is read by end users, not developers.
 """
@@ -38,10 +46,42 @@ SLOT_WORDS = {
     "en": {"replaced": "англійський", "kept": "Російська", "left_pl": "англійськими", "left_ms": "англійським"},
 }
 
-README_TXT = """3DS UA — український інтерфейс для Nintendo 3DS (версія {version}, збірка from-{slot})
+# The second axis of the release: which console the archive is for. The text differs, and so
+# do two folders - see the module docstring and write_loader_alias() in tools/build.py.
+MODELS = {
+    "old3ds": {
+        "name": "Old 3DS",
+        "note": """ЦЕЙ АРХІВ — ДЛЯ 3DS, 3DS XL І 2DS (БЕЗ "NEW")
+Для New 3DS, New 3DS XL і New 2DS XL є окремий архів
+  3ds-ua-from-{slot}-{version}-new3ds.zip
+New 3DS має власні копії Інтернет-браузера і Здоров'я і безпеки, а Luma шукає файли
+для них у папці Old3DS-івського титулу — тобто в тих самих luma/titles/0004003000009D02
+і luma/titles/0004001000022300, що й на цій консолі. Той самий файл мусить бути різним
+на різних консолях, тому архіви два. На New 3DS цей архів дасть креш Здоров'я і безпеки
+("An exception occurred") і наполовину {left_ms} браузер.""",
+    },
+    "new3ds": {
+        "name": "New 3DS",
+        "note": """ЦЕЙ АРХІВ — ДЛЯ NEW 3DS, NEW 3DS XL І NEW 2DS XL
+Для звичайних 3DS, 3DS XL і 2DS є окремий архів
+  3ds-ua-from-{slot}-{version}-old3ds.zip
+New 3DS має власні копії Інтернет-браузера і Здоров'я і безпеки, а Luma шукає файли для
+них у папці Old3DS-івського титулу. Тому тут luma/titles/0004003000009D02 і
+luma/titles/0004001000022300 везуть New3DS-івські файли, а не Old3DS-івські. На звичайній
+3DS цей архів ставити не можна: Здоров'я і безпека там не запуститься.
+Якщо Здоров'я і безпека не запускається і на New 3DS — у вас інша версія титулу.
+Видаліть тоді ОБИДВІ папки цілком:
+  luma/titles/0004001000022300
+  luma/titles/0004001020022300""",
+    },
+}
+
+README_TXT = """3DS UA — український інтерфейс для Nintendo 3DS (версія {version}, збірка from-{slot}, {model_name})
 
 Мод підміняє {replaced} мовний слот українською. {kept} лишається недоторканою.
 Потрібна EUR-консоль з Luma3DS.
+
+{model_note}
 
 ЩО ПЕРЕКЛАДЕНО (31 частина системи)
 Меню HOME, Налаштування системи, Mii Maker, Журнал дій, Електронний посібник,
@@ -58,6 +98,9 @@ StreetPass Mii, Nintendo eShop, Face Raiders і AR Games, — разом із н
 додатка над сторінкою і пунктом "Українська" в перемикачі мови довідника.
 Плюс список країн і регіонів у налаштуваннях профілю та на Карті StreetPass:
 усі 67 країн і всі 724 їхні області, і назва панелі в Обміні частинками.
+На New 3DS перекладено її власні версії Інтернет-браузера і Здоров'я і безпеки:
+інтерфейс браузера, його вбудовану клавіатуру, його окремий довідник і сам
+документ Здоров'я і безпеки — той, який показує New 3DS, а не Old 3DS.
 
 УКРАЇНИ В СПИСКУ КРАЇН НЕМАЄ
 У таблиці кодів країн Nintendo її немає взагалі: європейський блок суцільний,
@@ -219,6 +262,24 @@ def manual_files() -> str:
     return "\n".join(lines)
 
 
+def collect(root: Path) -> dict[str, Path]:
+    """The files under `root`, keyed by where they land on the SD card.
+
+    The New 3DS subtree is skipped: it is not part of the card layout, it is the overlay the
+    New 3DS archive is built with. Finder litters the build with .DS_Store, and those must
+    not reach the card either.
+    """
+    files = {}
+    for path in sorted(root.rglob("*")):
+        if not path.is_file() or any(part.startswith(".") for part in path.parts):
+            continue
+        rel = path.relative_to(root)
+        if rel.parts[0] == variant.NEW3DS_DIR:
+            continue
+        files[rel.as_posix()] = path
+    return files
+
+
 def main() -> None:
     ap = argparse.ArgumentParser()
     ap.add_argument("version", nargs="?", default="dev")
@@ -231,30 +292,43 @@ def main() -> None:
     if not dist.is_dir():
         raise SystemExit(f"no {dist.name}/ directory - run `make build` first")
 
-    archive = ROOT / f"3ds-ua-from-{slot.key}-{version}.zip"
-    # Finder litters the build with .DS_Store; those must not reach the SD card.
-    files = sorted(
-        p for p in dist.rglob("*") if p.is_file() and not any(part.startswith(".") for part in p.parts)
-    )
-    if not files:
+    shared = collect(dist)
+    if not shared:
         raise SystemExit(f"{dist.name}/ is empty")
+    overlay = collect(dist / variant.NEW3DS_DIR)
+    if not overlay:
+        raise SystemExit(
+            f"no {dist.name}/{variant.NEW3DS_DIR}/ - that is where the New 3DS copies of the "
+            f"browser and of Health and Safety are built, and without them the New 3DS "
+            f"archive would be the Old 3DS one under another name"
+        )
 
-    readme = README_TXT.format(
-        version=version,
-        slot=slot.key,
-        original=slot.original,
-        manual_files=manual_files(),
-        **SLOT_WORDS[slot.key],
-    )
-    with zipfile.ZipFile(archive, "w", zipfile.ZIP_DEFLATED) as zf:
-        for path in files:
-            zf.write(path, path.relative_to(dist))
-        zf.writestr("README.txt", readme)
+    for model, words in MODELS.items():
+        # The overlay wins where the two disagree: those paths are exactly the ones that
+        # have to hold a different file on a New 3DS.
+        files = shared | overlay if model == "new3ds" else shared
+        archive = ROOT / f"3ds-ua-from-{slot.key}-{version}-{model}.zip"
+        readme = README_TXT.format(
+            version=version,
+            slot=slot.key,
+            original=slot.original,
+            manual_files=manual_files(),
+            model_name=words["name"],
+            model_note=words["note"].format(
+                slot=slot.key, version=version, **SLOT_WORDS[slot.key]
+            ),
+            **SLOT_WORDS[slot.key],
+        )
+        with zipfile.ZipFile(archive, "w", zipfile.ZIP_DEFLATED) as zf:
+            for rel, path in files.items():
+                zf.write(path, rel)
+            zf.writestr("README.txt", readme)
 
-    total = sum(p.stat().st_size for p in files)
-    print(f"{archive.name}: {len(files)} files, {total} bytes -> {archive.stat().st_size} bytes")
-    for path in files:
-        print(f"  {path.relative_to(dist)}")
+        total = sum(path.stat().st_size for path in files.values())
+        print(f"{archive.name}: {len(files)} files, {total} bytes -> {archive.stat().st_size} bytes")
+        for rel, path in files.items():
+            from_overlay = " <- new3ds/" if model == "new3ds" and rel in overlay else ""
+            print(f"  {rel}{from_overlay}")
 
 
 if __name__ == "__main__":

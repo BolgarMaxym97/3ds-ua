@@ -27,6 +27,13 @@ A title carrying `hook_patch` is one Luma cannot hook on its own: next to its ro
 build also writes the code.ips and exheader.bin that make LayeredFS work at all. See
 tools/luma_hook.py. Those two files are mandatory for such a title - romfs alone is the
 exact situation `blocked` exists to prevent - so a missing dump aborts the build.
+
+A title whose id carries the New 3DS bit (`0004003020009D02` against `0004003000009D02`)
+is written into <dist>/new3ds/ instead, together with the `loader_tid` alias it needs -
+see write_loader_alias(). That subtree is not a second SD card layout: package.py lays it
+over the rest and ships the result as the New 3DS archive, because the one file that has
+to differ between the two consoles - the code patch of Health and Safety - cannot be in
+both states at once on one card.
 """
 
 from __future__ import annotations
@@ -77,6 +84,61 @@ MANUAL_LANG_SLOTS = {key: slot.manual_lang for key, slot in variant.SLOTS.items(
 def lang_of(cfg: dict) -> str:
     """The language folder this build replaces in that title."""
     return cfg["lang"][variant.current().key]
+
+
+def is_new3ds(tid: str) -> bool:
+    """Whether this is a New 3DS copy of a title - the low word then starts with 2."""
+    return (int(tid, 16) >> 28) & 0xF == 2
+
+
+def title_root(tid: str) -> Path:
+    """Which of the two trees a title's files belong to: the shared one, or New 3DS only."""
+    return variant.new3ds_dist() if is_new3ds(tid) else variant.dist()
+
+
+def write_loader_alias(cfg: dict, files: dict[str, bytes]) -> list[str]:
+    """Put a New 3DS title's files where Luma will actually look for them.
+
+    A New 3DS runs its own copy of the Internet Browser and of Health and Safety, but the
+    loader builds `/luma/titles/<TID>` out of the *Old 3DS* id of the pair: the New 3DS
+    binary is what gets patched, the Old 3DS title's folder is what gets read. Two
+    independent observations of the same console say so.
+
+    The browser: `/luma/titles/0004003000009D02/romfs/` holds `hud.msbt` and `spider.msbt`.
+    On a New 3DS the top bar came out Ukrainian - SKATER asks for `hud.msbt`, the same name
+    the Old 3DS folder has - while every dialog stayed Russian, because SKATER asks for
+    `skater.msbt` and only the New 3DS folder, the one Luma never opened, had it.
+
+    Health and Safety: launching it aborted the loader (dumps/crash_dump_00000002.dmp).
+    The stack holds this build's own `0004001000022300/exheader.bin` - 0x64 text pages,
+    0x83000 in total, `safe` - while r3, the end of the code being unpacked, is 0x100CC000:
+    the New 3DS `ssafe` binary, 0xCC000 long. The loader had sized the mapping from the
+    Old 3DS exheader and then unpacked the New 3DS code into it, and the first byte BLZ
+    writes, the last one of the buffer, was past the end of it.
+
+    So a New 3DS needs the New 3DS files under the Old 3DS id, and an Old 3DS needs its
+    own there - the same path, two contents, one per console. Everything this writes goes
+    into the New 3DS tree for package.py to lay over the shared one.
+    """
+    loader_tid = cfg.get("loader_tid")
+    if not loader_tid:
+        return []
+    shared = variant.dist() / "luma" / "titles" / loader_tid
+    if not (ROOT / "work" / loader_tid / "romfs").is_dir():
+        raise SystemExit(
+            f"{loader_tid}: no work/{loader_tid}/romfs to compare against - the Old 3DS "
+            f"title of the pair has to be dumped before its New 3DS copy can stand in its "
+            f"folder (see docs/dump-new3ds.md)"
+        )
+
+    written = []
+    for rel_path, blob in sorted(files.items()):
+        dest = variant.new3ds_dist() / "luma" / "titles" / loader_tid / rel_path
+        dest.parent.mkdir(parents=True, exist_ok=True)
+        dest.write_bytes(blob)
+        over = " (over the Old 3DS copy)" if (shared / rel_path).exists() else ""
+        written.append(f"{dest.relative_to(ROOT)} ({len(blob)} bytes){over}")
+    return written
 
 
 # Titles: strings project name -> target TIDs, language slots, dump used as source.
@@ -291,9 +353,16 @@ TITLES = {
     "browser_n3ds": {
         "tids": ["0004003020009D02"],  # SKATER applet, EUR New3DS only
         "source_tid": "0004003020009D02",
+        # ...but it hooks it into the folder of the Old 3DS browser, which is where these
+        # files therefore have to be. See write_loader_alias().
+        "loader_tid": "0004003000009D02",
         "lang": LANG_SLOTS,
         "ref_lang": "EU_English",
         "hud_font": "font/Hud.bcfnt",
+        # This one also carries its own name in its romfs, one SMDH per region under
+        # banner/. Only the EUR file has European languages in it; the rest leave the slot
+        # this build replaces empty, so there is nothing to write over.
+        "smdh": ["banner/EU/Skater.icn"],
     },
     "ar_games": {
         "tids": ["0004001000022E00"],
@@ -465,6 +534,12 @@ TITLES = {
     "health_safety_n3ds": {
         "tids": ["0004001020022300"],
         "source_tid": "0004001020022300",
+        # The code.ips and exheader.bin of this title have to sit in the Old 3DS title's
+        # folder, over the ones `safe` ships there - applying either patch to the other
+        # binary is what crashed the loader. See write_loader_alias(). `ssafe_romfs.bin`
+        # is not aliased: the title opens it by the absolute SD path its own code.ips
+        # carries, so it stays where that string points, under its own id.
+        "loader_tid": "0004001000022300",
         "lang": MANUAL_LANG_SLOTS,
         "ref_lang": "EU_English",
         "hook_patch": True,
@@ -617,10 +692,25 @@ def app_name_tables(table: dict[str, str]) -> tuple[dict[str, object], list[str]
                 pairs.setdefault(original, apply_homoglyphs(replacement, table))
     pane_blob, pane_log = pane_names.build_table(list(pairs.items()))
 
-    return {"smdh": smdh_blob, "pane": pane_blob, "smdh_manual": manual_blob}, [
+    # A title that documents itself - New 3DS Health and Safety - reads its own SMDH and
+    # nobody else's, so it gets its own table instead of a row in the viewer's: that one
+    # shares a 1064-byte window with the manual paths and has nothing to spare.
+    self_titles = {tid.upper() for tid in luma_hook.smdh_self_titles()}
+    self_blob, self_log = smdh_names.build_table(
+        {tid: entry for tid, entry in translated.items() if tid.upper() in self_titles},
+        short_only=True,
+    )
+
+    return {
+        "smdh": smdh_blob,
+        "pane": pane_blob,
+        "smdh_manual": manual_blob,
+        "smdh_self": self_blob,
+    }, [
         f"app names: {len(smdh_log)} titles, {len(smdh_blob)}-byte SMDH table, "
         f"{len(pane_log)} substitutions, {len(pane_blob)}-byte pane table, "
-        f"{len(manual_log)} manual titles in a {len(manual_blob)}-byte table"
+        f"{len(manual_log)} manual titles in a {len(manual_blob)}-byte table, "
+        f"{len(self_log)} self-documenting titles in a {len(self_blob)}-byte table"
     ]
 
 
@@ -698,7 +788,7 @@ def write_banner(tid: str) -> list[str]:
             continue
         seen.add(title["image_name"])
         blob = banner_mod.build(f"{title['title_id']:016X}")
-        dest = variant.dist() / "luma" / "titles" / tid / title["image_name"]
+        dest = title_root(tid) / "luma" / "titles" / tid / title["image_name"]
         dest.parent.mkdir(parents=True, exist_ok=True)
         dest.write_bytes(blob)
         written.append(f"{dest.relative_to(ROOT)} ({len(blob)} bytes)")
@@ -718,7 +808,7 @@ def write_romfs_image(tid: str, romfs_dir: Path, overrides: dict[str, bytes]) ->
             raise SystemExit(f"{tid}: {rel_path} did not survive the RomFS rebuild")
 
     name = luma_hook.HOOK_PATCHES[tid.upper()]["image_name"]
-    dest = variant.dist() / "luma" / "titles" / tid / name
+    dest = title_root(tid) / "luma" / "titles" / tid / name
     dest.parent.mkdir(parents=True, exist_ok=True)
     dest.write_bytes(image)
     return [
@@ -1243,14 +1333,15 @@ def build_title(name: str, table: dict[str, str]) -> list[str]:
             written += write_romfs_image(tid, romfs, outputs)
             continue
         for rel_path, blob in outputs.items():
-            dest = variant.dist() / "luma" / "titles" / tid / "romfs" / rel_path
+            dest = title_root(tid) / "luma" / "titles" / tid / "romfs" / rel_path
             dest.parent.mkdir(parents=True, exist_ok=True)
             dest.write_bytes(blob)
             written.append(f"{dest.relative_to(ROOT)} ({len(blob)} bytes)")
+        written += write_loader_alias(cfg, {f"romfs/{rel}": blob for rel, blob in outputs.items()})
         if tid.upper() == NNID_CSS_TID:
             for build_page in (build_nnid_json, build_nnid_html):
                 rel, blob, log_line = build_page(table)
-                dest = variant.dist() / "luma" / "titles" / tid / "romfs" / rel
+                dest = title_root(tid) / "luma" / "titles" / tid / "romfs" / rel
                 dest.parent.mkdir(parents=True, exist_ok=True)
                 dest.write_bytes(blob)
                 written.append(log_line)
@@ -1264,10 +1355,11 @@ def build_title(name: str, table: dict[str, str]) -> list[str]:
         written += [f"  {line}" for line in log]
         written += write_banner(tid)
         for filename, blob in files.items():
-            dest = variant.dist() / "luma" / "titles" / tid / filename
+            dest = title_root(tid) / "luma" / "titles" / tid / filename
             dest.parent.mkdir(parents=True, exist_ok=True)
             dest.write_bytes(blob)
             written.append(f"{dest.relative_to(ROOT)} ({len(blob)} bytes)")
+        written += write_loader_alias(cfg, files)
 
     return stats + written
 

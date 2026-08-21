@@ -1,0 +1,7 @@
+{
+  "_comment": "SMDH inside the title's own romfs - see tools/smdh.py. The New 3DS browser keeps one per region under banner/; only the EUR one carries European languages, the other five leave the slot this build replaces empty.",
+  "banner/EU/Skater.icn": {
+    "en": "Internet Browser",
+    "ua": "Інтернет-браузер"
+  }
+}

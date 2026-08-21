@@ -181,7 +181,7 @@ make font       # шрифт → assets/font_charset.txt + font_widths.json
 make extract    # romfs → src/strings/*.json (наявні переклади зберігаються)
 make validate   # перевірка: символи, ширина, кількість рядків, теги
 make build      # → dist/luma/titles/... і dist_en/luma/titles/...
-make package    # → 3ds-ua-from-ru-<версія>.zip і 3ds-ua-from-en-<версія>.zip
+make package    # → 3ds-ua-from-{ru,en}-<версія>-{old3ds,new3ds}.zip
 ```
 
 Потрібен Python 3.11+, зовнішніх залежностей немає.
