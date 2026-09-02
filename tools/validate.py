@@ -66,6 +66,12 @@ WIDTH_LIMIT = 1.0
 # handed a 500px dialog 25px of room while giving a button almost none. Eight pixels is
 # about one narrow glyph - enough that a word like "Відкрити" is not rewritten for being a
 # hair wider than "Открыть", and far too little to hide a real overflow.
+#
+# Known blind spot: eight pixels is one narrow glyph on a 400px dialog line but a tenth of
+# a button, and STR_CONTRIBUTE in miiverse_post reached QA wrapped to two lines while
+# sitting at exactly budget + 8. Tightening this catches that class of bug, but 135
+# translations currently clear their budget by 3-8px (~30 of them on button-sized panes),
+# so the limit cannot drop until those are retranslated.
 WIDTH_SLACK = 8
 BRACE_RE = re.compile(r"\{[^}]*\}")
 # `{t:1.0:XXXX}` and `{t:1.1:XXXX}` scale the font: 0x6400 is 100%, 0x4600 is 70%. Both

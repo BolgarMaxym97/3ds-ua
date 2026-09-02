@@ -1,0 +1,122 @@
+30 button-sized panes overflowing by +4..+8px (pass today, fail at min(8, budget x 4%))
+
++8px  activity_log/message__PLOG_msbt_LZ.json  month_full_5
+      ua    98px  'травень'
+      bud   90px  EU_Italian 'Maggio'
+      en        'May'
++8px  camera/msg__P_dlg.json  Sfx_00
+      ua   113px  '{t:1.0:5800}Зйомка за\nчасом{t:1.0:6400}'
+      bud  105px  EU_French '{t:1.0:5400}Intervalles{t:1.0:6400}'
+      en        'Interval\nShot'
++8px  sound/msg__S.json  P_B_03
+      ua   113px  'Додати…'
+      bud  105px  EU_Dutch '{t:1.0:4d00}Toevoegen{t:1.0:6400}'
+      en        'Add...'
++8px  camera/msg__P_dlg.json  SShow_Set_03_00
+      ua   145px  '{t:1.0:6100}Розчинення{t:1.0:6400}'
+      bud  137px  EU_Russian '{t:1.0:5500}Растворение{t:1.0:6400}'
+      en        'Dissolve'
++7px  ar_games/message__AR_ACT.json  main_fish_hanjitu
+      ua    90px  'Пан AR'
+      bud   83px  EU_Dutch 'Mr. AR'
+      en        'Mr AR'
++7px  camera/msg__P_dlg.json  ModeA_Pho_10
+      ua   102px  'Закрити'
+      bud   95px  EU_Russian '{t:1.0:5c00}Закрыть{t:1.0:6400}'
+      en        'Close'
++7px  camera/msg__P_dlg.json  ModeM_Pho_05
+      ua   102px  'Закрити'
+      bud   95px  EU_Russian '{t:1.0:5c00}Закрыть{t:1.0:6400}'
+      en        'Close'
++7px  camera/msg__P_dlg.json  ModeM_Mov_05
+      ua   102px  'Закрити'
+      bud   95px  EU_Russian '{t:1.0:5c00}Закрыть{t:1.0:6400}'
+      en        'Close'
++7px  camera/msg__P_dlg.json  Paint_02_00
+      ua   102px  'Закрити'
+      bud   95px  EU_Russian '{t:1.0:5c00}Закрыть{t:1.0:6400}'
+      en        'Close'
++7px  camera/msg__P_dlg.json  Paint_04_00
+      ua   102px  'Закрити'
+      bud   95px  EU_Russian '{t:1.0:5c00}Закрыть{t:1.0:6400}'
+      en        'Close'
++7px  camera/msg__P_dlg.json  SShow_Theme_02
+      ua   102px  'Закрити'
+      bud   95px  EU_Russian '{t:1.0:5c00}Закрыть{t:1.0:6400}'
+      en        'Close'
++7px  sound/msg__S.json  CEC_CNT_B_06
+      ua   102px  'Скинути'
+      bud   95px  EU_Spanish '{t:1.0:5d00}Reiniciar{t:1.0:6400}'
+      en        'Reset'
++7px  system_settings/message_mset__mset.json  minute
+      ua   104px  'Хвилина'
+      bud   97px  EU_Dutch 'Minuten'
+      en        'Minute'
++7px  camera/msg__P.json  Shoot_04
+      ua   107px  'Передня\nкамера'
+      bud  100px  EU_Dutch '{t:1.0:5300}Binnenste\ncamera{t:1.0:6400}'
+      en        'Inner\nCamera'
++7px  browser_n3ds/message__skater.json  Keyboard_Paste
+      ua   113px  'Вставити'
+      bud  106px  EU_German 'Einfügen'
+      en        'Paste'
++6px  sound/msg__S.json  CEC_CNT_38
+      ua    64px  '{t:3.46:0000} {t:1.0:5a00}тощо{t:1.0:6400}'
+      bud   58px  EU_French '{t:3.46:0000}{t:1.0:5a00}, etc.{t:1.0:6400}'
+      en        '{t:3.46:0000} {t:1.0:5a00}etc.{t:1.0:6400}'
++6px  sound/msg__S.json  P_B_05
+      ua   101px  '{t:1.0:5500}Прибрати{t:1.0:6400}'
+      bud   95px  EU_German '{t:1.0:5100}Entfernen{t:1.0:6400}'
+      en        '{t:1.0:6000}Remove{t:1.0:6400}'
++6px  home_menu/message__menu_msbt_LZ.json  lau_2b_folder_open
+      ua   109px  'Відкрити'
+      bud  103px  EU_Russian 'Открыть'
+      en        'Open'
++6px  sound/msg__S.json  P_B_00
+      ua   109px  'Відкрити'
+      bud  103px  EU_Russian 'Открыть'
+      en        'Open'
++6px  browser_n3ds/message__skater.json  Keyboard_Omnibox_OpenUrl
+      ua   109px  'Відкрити'
+      bud  103px  EU_Russian 'Открыть'
+      en        'Open'
++6px  ar_games/message__AR_ACT.json  main_zukan_open
+      ua   109px  'Відкрити'
+      bud  103px  EU_Russian 'Открыть'
+      en        'Open'
++6px  sound/msg__S.json  P_B_09
+      ua   111px  '{t:1.0:4100}Прибрати все{t:1.0:6400}'
+      bud  105px  EU_Italian '{t:1.0:4500}Elimina tutto{t:1.0:6400}'
+      en        '{t:1.0:4b00}Remove All{t:1.0:6400}'
++6px  face_raiders/StgFace.json  StgFace_FaceMatching_InsideCamera
+      ua   140px  '\ue002 Передня'
+      bud  134px  EU_French '\ue002 APN int.'
+      en        '\ue002 Inner'
++6px  home_menu/message__menu_msbt_LZ.json  lau_dlg_2b_launch
+      ua   142px  '\ue000 Відкрити'
+      bud  136px  EU_Russian '\ue000 Открыть'
+      en        '\ue000 Open'
++5px  system_settings/message_mset__mset.json  dlg_on
+      ua    88px  'УВІМК.'
+      bud   83px  EU_Portuguese 'Ligado'
+      en        'ON'
++5px  camera/msg__P_dlg.json  SShow_Set_02_00
+      ua    96px  'Швидко'
+      bud   91px  EU_Russian 'Быстро'
+      en        'Rapid'
++5px  camera/msg__P.json  Finder_ModeA_Mov_00
+      ua   119px  'Звичайне'
+      bud  114px  EU_Russian 'Обычный'
+      en        'Normal'
++5px  camera/msg__P_dlg.json  ModeA_Pho_00
+      ua   119px  'Звичайне'
+      bud  114px  EU_Russian 'Обычный'
+      en        'Normal'
++5px  camera/msg__P_dlg.json  ModeA_Mov_00
+      ua   119px  'Звичайне'
+      bud  114px  EU_Russian 'Обычный'
+      en        'Normal'
++4px  camera/msg__P.json  SShow_04_01
+      ua    99px  '{t:1.0:3e00}За порядком{t:1.0:6400}'
+      bud   95px  EU_Spanish '{t:1.0:6200}Ordenar{t:1.0:6400}'
+      en        '{t:1.0:4e00}In Order{t:1.0:6400}'
