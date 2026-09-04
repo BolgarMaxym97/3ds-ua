@@ -921,7 +921,7 @@
   },
   "D_021_0": {
     "en": "{t:4.1:140053005f004700750069006400310035005f005500}Select some music,\nthen touch the\nAdd... panel.",
-    "ua": "{t:4.1:140053005f004700750069006400310035005f005500}Виберіть якусь музику,\nтоді торкніться\nпанелі Додати…."
+    "ua": "{t:4.1:140053005f004700750069006400310035005f005500}Виберіть якусь музику,\nтоді торкніться\nпанелі Додати."
   },
   "D_021_1": {
     "en": "{t:4.1:140053005f004700750069006400310035005f005500}You can add music\nto a playlist this way.",
@@ -1077,7 +1077,7 @@
   },
   "D_029_0": {
     "en": "If you select a\nfolder, then touch\nthe Add... panel,",
-    "ua": "Якщо вибрати папку,\nа тоді торкнутися\nпанелі Додати…,"
+    "ua": "Якщо вибрати папку,\nа тоді торкнутися\nпанелі Додати,"
   },
   "D_029_1": {
     "en": "you can add all of\nthe music in that folder\nto a playlist at once.",
@@ -1093,7 +1093,7 @@
   },
   "D_030_1": {
     "en": "Select a theme\nfrom Autoplay,\nthen touch the\nAdd... panel.",
-    "ua": "Виберіть тему в\nАвтогрі, а тоді\nторкніться\nпанелі Додати…."
+    "ua": "Виберіть тему в\nАвтогрі, а тоді\nторкніться\nпанелі Додати."
   },
   "D_030_2": {
     "en": "The songs I chose\nfor the theme will\nbe added to any\nplaylist you choose.",
