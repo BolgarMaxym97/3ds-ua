@@ -63,6 +63,9 @@ STORE_FILE = STORE_DIR / "3ds-ua.unistore"
 SHEET_FILE = STORE_DIR / "3ds-ua.t3x"
 
 REPO = "BolgarMaxym97/3ds-ua"
+# The person. REPO above keeps the account name because it is part of a URL; this one is
+# shown to the user, and it lives in a single place so the store and the entry cannot drift.
+AUTHOR = "Max Bolhar"
 RAW = f"https://raw.githubusercontent.com/{REPO}/main/unistore"
 # The one spelling of the store URL, so README.txt inside the archive and the store itself
 # cannot disagree about where users are told to point Universal-Updater.
@@ -117,6 +120,9 @@ ENTRY_TITLE = "Українізатор 3DS/2DS"
 # downloadRelease never has to create the parent, and the file is deleted one step later.
 TEMP_ZIP = "/3ds/3ds-ua.zip"
 
+# Where the mod's folders are moved before the one deletion that removes them all.
+TRASH = "/3ds/3ds-ua-trash"
+
 # Universal-Updater renders release notes as plain text in a small box; past this much it is
 # a scrolling wall nobody reads.
 NOTES_LIMIT = 1200
@@ -132,7 +138,6 @@ SLOT_WORDS = {"ru": "замість російської", "en": "замість
 
 INSTALL = "1. Встановити / оновити"
 UNINSTALL = "2. Видалити українізатор"
-FORCE_UNINSTALL = "3. Видалити примусово (питає про кожну папку)"
 
 # Nothing on the shell says "New", so the question has to name parts the user can see. The
 # C-stick and the ZL/ZR buttons exist on every New model and on none of the older ones.
@@ -149,14 +154,18 @@ ASK_SLOT = (
 
 DONE_NOTE = (
     "Готово.\n\n"
-    "1. Вимкніть консоль, увімкніть із затиснутим SELECT,\n"
+    "1. Вимкніть і увімкніть консоль, тримаючи SELECT,\n"
     "   увімкніть Enable game patching, натисніть START.\n"
     "2. Налаштування системи -> Інші налаштування ->\n"
-    "   Мова -> Українська."
+    "   Мова -> Українська.\n\n"
+    "Перезапуск консолі обов'язковий - без нього\n"
+    "українізатор не запрацює."
 )
 REMOVED_NOTE = (
-    "Файли видалено.\n\n"
-    "Перемкніть мову консолі в Налаштуваннях системи."
+    "Українізатор видалено.\n\n"
+    "Перемкніть мову консолі в Налаштуваннях системи\n"
+    "і перезапустіть консоль - без перезапуску\n"
+    "частина написів лишиться українською."
 )
 
 # Shown inline, right before the script is handed to the queue - the only moment the user is
@@ -172,10 +181,24 @@ PREINSTALL = (
 )
 
 DESCRIPTION = (
-    "Українська мова для системного інтерфейсу Nintendo 3DS/2DS - 3DS, 3DS XL, 2DS, "
-    "New 3DS, New 3DS XL, New 2DS XL. Стає на місце російського або англійського мовного "
-    "слота; яка у вас модель і який слот замінити - питає під час установки."
+    "Українська мова для системного інтерфейсу Nintendo 3DS/2DS."
 )
+
+# Universal-Updater does not read this field - it appears nowhere in its source and in none
+# of the 410 entries of the live Universal-DB store. It belongs to Universal-DB's submission
+# format (source/apps/<slug>.json), from which their site is built; their pipeline does not
+# copy it into the .unistore. Kept here so the two texts live together and the submission can
+# be filled from one place.
+LONG_DESCRIPTION = (
+    "Перекладає системний інтерфейс Nintendo 3DS, 3DS XL, 2DS, New 3DS, New 3DS XL і "
+    "New 2DS XL українською: Меню HOME, Налаштування системи, Інтернет-браузер, eShop, "
+    "Камеру, Звук, Mii Maker, Журнал дій, електронні довідники та решту системних "
+    "застосунків.\n\n"
+    "Українська стає на місце російського або англійського мовного слота - який саме, "
+    "питає під час установки. Потрібна Luma3DS з увімкненим Enable game patching і "
+    "консоль європейського (EUR) регіону."
+)
+
 
 
 def makefile_version() -> str:
@@ -357,38 +380,39 @@ def branching(body) -> list:
     ]
 
 
-def installed_files(slot: str, model: str) -> list[str]:
-    """Every file the given archive puts on the card, hooks first.
-
-    Order matters. `deleteFile` aborts the rest of the script when a file is already gone, so
-    a partial run is a real possibility - a card carrying an older release, or a user who
-    deleted something by hand. Removing every code.ips and exheader.bin first means a run
-    that stops early leaves only inert data behind: nothing reads a romfs blob once the hook
-    that redirected the title to it is gone. The reverse order could leave a title hooked to
-    a file that no longer exists, which is how an applet stops booting.
-    """
-    dist = ROOT / ("dist" if slot == "ru" else "dist_en")
-    if not dist.is_dir():
-        raise SystemExit(f"no {dist.name}/ - run `make build` first, the delete lists come from it")
-
-    files = set(package.collect(dist))
-    if model == "new3ds":
-        files |= set(package.collect(dist / variant.NEW3DS_DIR))
-
-    hooks = sorted(f for f in files if f.endswith(("code.ips", "exheader.bin")))
-    rest = sorted(files - set(hooks))
-    return [f"/{path}" for path in hooks + rest]
-
-
-def uninstall_steps(slot: str, model: str) -> list[dict]:
-    return [{"type": "deleteFile", "file": path} for path in installed_files(slot, model)]
-
-
 def wipe_steps() -> list[dict]:
-    return [
-        {"type": "rmdir", "directory": directory, "message": f"Видаляю {directory}"}
-        for directory in removable_dirs()
-    ]
+    """Remove every folder the mod ships, with one confirmation instead of thirty-two.
+
+    `rmdir` is the only step that removes a directory, and it asks the user about every
+    directory that exists - unconditionally, with no setting behind it (`DELETE_PROMPT`,
+    scriptUtils.cpp:349, queueSystem.cpp:255). But it asks only when the path is there, and
+    a folder can be taken out of `/luma/titles` without deleting it:
+
+    - `mkdir` runs `makeDirs()`, which creates every path prefix up to the last component,
+      so a trailing slash makes it create the folder itself. It never reports an error, and
+      on an existing folder it does nothing.
+    - `move` passes straight to `rename()`, and libctru's SD devoptab falls back from
+      `FSUSER_RenameFile` to `FSUSER_RenameDirectory` (archive_dev.c), so it moves whole
+      directories. UU ignores what `rename()` returns and only fails when the *source* is
+      missing - which the `mkdir` before it rules out.
+
+    So: create each folder if absent, move them all into one scratch directory, then delete
+    that single directory. The `rmdir` on each original path afterwards is the safety net -
+    if directory renaming ever stops working, those paths still exist and the script degrades
+    to asking, folder by folder, exactly as it did before.
+    """
+    steps: list[dict] = []
+    for directory in removable_dirs():
+        # Trailing slash: makeDirs() only creates prefixes, so without it the folder itself
+        # would not be created and the move below could fail on a card that lacks it.
+        steps.append({"type": "mkdir", "directory": f"{directory}/"})
+    for directory in removable_dirs():
+        steps.append({"type": "move", "old": directory,
+                      "new": f"{TRASH}/{directory.rsplit('/', 1)[-1]}"})
+    for directory in removable_dirs():
+        steps.append({"type": "rmdir", "directory": directory})
+    steps.append({"type": "rmdir", "directory": TRASH})
+    return steps
 
 
 def release_notes(version: str, path: Path | None) -> str:
@@ -424,13 +448,16 @@ def release_notes(version: str, path: Path | None) -> str:
 def build_store(version: str, revision: int, notes: str, branch: str) -> dict:
     info = {
         "title": drawable(ENTRY_TITLE),
-        "author": "BolgarMaxym97",
+        "author": AUTHOR,
         "description": drawable(DESCRIPTION),
         "version": version,
         "category": ["translation", "system"],
         "console": ["3DS"],
         "license": "MIT",
         "color": "#005BBB",
+        # Not drawable(): this text is rendered by Universal-DB's website, not by the
+        # console, so it keeps proper Ukrainian capitals.
+        "long_description": LONG_DESCRIPTION,
         "preinstall_message": drawable(PREINSTALL),
         "releasenotes": notes,
         # CheckInstalled() calls a path existing "installed". Both of these are ours and both
@@ -450,18 +477,20 @@ def build_store(version: str, revision: int, notes: str, branch: str) -> dict:
             "size": "~23 МБ",
             "script": resolve(branching(download_steps) + [prompt(DONE_NOTE)]),
         },
-        UNINSTALL: resolve(branching(uninstall_steps) + [prompt(REMOVED_NOTE)]),
-        # The fallback. rmdir is the only removal Universal-Updater can do on a card whose
-        # contents it cannot predict - it skips folders that are not there instead of giving
-        # up - but it asks about every folder it does find, which is why it is not the
-        # everyday path.
-        FORCE_UNINSTALL: wipe_steps(),
+        # Removal asks nothing, because rmdir is the only step Universal-Updater has that
+        # survives a card it cannot predict: it skips a folder that is not there instead of
+        # failing. Every file-level step - deleteFile, move, copy - returns an error the
+        # moment its target is missing, and the loop stops on the first error, so a named
+        # file list would have to know the exact console model, the exact language slot and
+        # the exact version installed, and would abort halfway on any mismatch. The price of
+        # rmdir is one confirmation per folder that exists.
+        UNINSTALL: wipe_steps() + [prompt(REMOVED_NOTE)],
         "info": info,
     }
 
     store_info = {
         "title": drawable(ENTRY_TITLE),
-        "author": "BolgarMaxym97",
+        "author": AUTHOR,
         "description": drawable(DESCRIPTION),
         "url": store_url(branch),
         "file": STORE_FILE.name,
@@ -580,6 +609,9 @@ def check(version: str, branch: str, verify_release: bool) -> list[str]:
 
     if info.get("title") != drawable(ENTRY_TITLE):
         bad(f"info.title is {info.get('title')!r} - it is frozen at {ENTRY_TITLE!r}")
+    if len(info.get("description", "")) > 120:
+        bad(f"info.description is {len(info['description'])} chars - it is the one line "
+            f"Universal-Updater shows in the list; the long text goes in long_description")
     if "title_ids" in info:
         bad("info.title_ids present - it would mark the entry installed on every console")
     stamp = info.get("last_updated", "")
@@ -587,7 +619,7 @@ def check(version: str, branch: str, verify_release: bool) -> list[str]:
         bad(f"info.last_updated {stamp!r} is not '{TIMESTAMP}' - updates would never show")
 
     scripts = {name: value for name, value in entry.items() if name != "info"}
-    expected_names = {INSTALL, UNINSTALL, FORCE_UNINSTALL}
+    expected_names = {INSTALL, UNINSTALL}
     if set(scripts) != expected_names:
         missing = expected_names - set(scripts)
         extra = set(scripts) - expected_names
@@ -620,6 +652,7 @@ def check(version: str, branch: str, verify_release: bool) -> list[str]:
         for i, step in enumerate((value["script"] if isinstance(value, dict) else value)):
             if "message" in step:
                 visible[f"{name}[{i}].message"] = step["message"]
+    # long_description is deliberately absent from `visible`: the console never draws it.
     for where, text in visible.items():
         found = sorted({c for c in text if c in FORBIDDEN_GLYPHS})
         if found:
@@ -636,16 +669,8 @@ def check(version: str, branch: str, verify_release: bool) -> list[str]:
         if not any(stem in message for stem in ("черг", "черз")):
             bad("the scripts ask questions but preinstall_message never mentions the queue")
 
-    expected_dirs = set(removable_dirs())
-    dirs = [s["directory"] for s in resolved.get(FORCE_UNINSTALL, []) if s["type"] == "rmdir"]
-    if len(dirs) != len(set(dirs)):
-        bad(f"{FORCE_UNINSTALL}: duplicate rmdir entries")
-    if set(dirs) != expected_dirs:
-        missing, extra = expected_dirs - set(dirs), set(dirs) - expected_dirs
-        if missing:
-            bad(f"{FORCE_UNINSTALL}: not removed: {sorted(missing)}")
-        if extra:
-            bad(f"{FORCE_UNINSTALL}: removes folders we never ship: {sorted(extra)}")
+    expected_dirs_ordered = removable_dirs()
+    expected_dirs = set(expected_dirs_ordered)
 
     whole_only = [
         "/luma/titles/0004001000022300",     # Health and Safety, reads a romfs blob off SD
@@ -679,26 +704,39 @@ def check(version: str, branch: str, verify_release: bool) -> list[str]:
             if executed[-1].get("message") != drawable(DONE_NOTE):
                 bad(f"{INSTALL} {answers}: did not end on the closing note")
 
-            executed, sim = simulate(resolved.get(UNINSTALL, []), answers)
-            for problem in sim:
-                bad(f"{UNINSTALL} {answers}: {problem}")
-            removals = [step for step in executed if step["type"] == "deleteFile"]
-            listed = [step["file"] for step in removals]
-            expected = installed_files(slot, model)
-            if listed != expected:
-                only_listed = set(listed) - set(expected)
-                only_shipped = set(expected) - set(listed)
-                if only_listed or only_shipped:
-                    bad(f"{UNINSTALL} {answers}: deletes {len(only_listed)} file(s) we never "
-                        f"ship and misses {len(only_shipped)}")
-                else:
-                    bad(f"{UNINSTALL} {answers}: right files, wrong order")
-            hooks = [f for f in listed if f.endswith(("code.ips", "exheader.bin"))]
-            if listed[:len(hooks)] != hooks:
-                bad(f"{UNINSTALL} {answers}: hooks are not deleted first - a run that stops "
-                    f"early could leave a title hooked to a file that is gone")
-            if executed[-1].get("message") != drawable(REMOVED_NOTE):
-                bad(f"{UNINSTALL} {answers}: did not end on the closing note")
+
+    # Removal: create-move-delete, in that order, over every folder, then the one rmdir.
+    removal = resolved.get(UNINSTALL, [])
+    kinds = {step["type"] for step in removal}
+    if kinds - {"mkdir", "move", "rmdir", "promptMessage"}:
+        bad(f"{UNINSTALL}: unexpected step types {sorted(kinds)}")
+    if any("count" in step for step in removal if step["type"] == "promptMessage"):
+        bad(f"{UNINSTALL}: asks a question - removal must not depend on model or slot")
+    if not removal or removal[-1].get("message") != drawable(REMOVED_NOTE):
+        bad(f"{UNINSTALL}: does not end on the closing note")
+
+    made = [step["directory"] for step in removal if step["type"] == "mkdir"]
+    moved = [(step["old"], step["new"]) for step in removal if step["type"] == "move"]
+    removed = [step["directory"] for step in removal if step["type"] == "rmdir"]
+
+    if made != [f"{d}/" for d in expected_dirs_ordered]:
+        bad(f"{UNINSTALL}: the mkdir list does not match the shipped folders, or lost its "
+            f"trailing slashes - makeDirs() only creates prefixes, so without one the folder "
+            f"itself is never created and the move can fail")
+    if moved != [(d, f"{TRASH}/{d.rsplit('/', 1)[-1]}") for d in expected_dirs_ordered]:
+        bad(f"{UNINSTALL}: the move list does not match the shipped folders")
+    if removed != expected_dirs_ordered + [TRASH]:
+        bad(f"{UNINSTALL}: the rmdir safety net must cover every folder and end on {TRASH}")
+
+    # Order carries the whole design: every folder must exist before it is moved, and the
+    # per-folder rmdir must come after the move or it prompts for everything again.
+    first_move = next((i for i, s in enumerate(removal) if s["type"] == "move"), -1)
+    last_mkdir = max((i for i, s in enumerate(removal) if s["type"] == "mkdir"), default=-1)
+    first_rmdir = next((i for i, s in enumerate(removal) if s["type"] == "rmdir"), -1)
+    last_move = max((i for i, s in enumerate(removal) if s["type"] == "move"), default=-1)
+    if not last_mkdir < first_move <= last_move < first_rmdir:
+        bad(f"{UNINSTALL}: steps are out of order - every mkdir must precede every move, "
+            f"and every move must precede the rmdir net")
 
     problems += check_sheet(store_info, info)
     problems += check_against_committed(doc)

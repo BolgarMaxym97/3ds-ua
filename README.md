@@ -73,7 +73,7 @@ Universal-Updater виконує роботу **в черзі**, і питанн
 
 Далі все качається й розпаковується само. Про це саме нагадує повідомлення, яке з'являється перед запуском.
 
-Помилилися з відповіддю — запустіть `2. Видалити українізатор` і поставте заново.
+Помилилися з відповіддю — запустіть `2. Видалити українізатор` і поставте заново; видалення не залежить від слота й моделі.
 
 **3. Далі — кроки 2 і 3 з ручного встановлення нижче** (`Enable game patching` і вибір мови). Їх не обійти жодним застосунком.
 
@@ -105,7 +105,7 @@ Universal-Updater виконує роботу **в черзі**, і питанн
 
 Будь-який спосіб:
 
-1. **У Universal-Updater** → **Українізатор 3DS/2DS** → `2. Видалити українізатор`. Ті самі два питання в черзі, далі прибирає рівно ті файли, які клав. Якщо обірветься з помилкою (частину файлів уже видалено вручну або стоїть старіша версія) — є `3. Видалити примусово`: той питає підтвердження на кожну папку, зате працює за будь-якого стану картки.
+1. **У Universal-Updater** → **Українізатор 3DS/2DS** → `2. Видалити українізатор`. Нічого не питає й не залежить від того, який слот ви заміняли. Наприкінці Universal-Updater один раз перепитає про папку `3ds/3ds-ua-trash` — туди зібрано все, що видаляється; погодьтеся. Після видалення перезапустіть консоль.
 2. **Змінити мову консолі** на будь-яку іншу — переклад просто не застосується.
 3. **Видалити папки мода** з `SD:/luma/titles/` вручну.
 4. **Вимкнути `Enable game patching`** у меню Luma (це вимкне й інші моди).
@@ -143,7 +143,6 @@ Universal-Updater виконує роботу **в черзі**, і питанн
 | Не вистачає місця | Під час встановлення треба ~55 МБ вільних: 23 МБ архіву плюс 30 МБ розпакованого. |
 | Список скриптів старий після оновлення магазину | Universal-Updater перечитує магазин лише якщо ввімкнено автооновлення. Примусово: шестерня → `Select UniStore` → підсвітити **Українізатор 3DS/2DS** → **START**. |
 | Після запуску скрипта нічого не відбувається | Universal-Updater кладе роботу в **чергу**, і там на неї чекають питання. Відкрийте чергу третьою іконкою в лівій панелі й натисніть **A**. |
-| `2. Видалити` обірвався помилкою | Частини файлів уже немає. Запустіть `3. Видалити примусово` — він працює за будь-якого стану картки. |
 | Якийсь додаток крешить після встановлення | У вас старіша його версія. Видаліть папку цього додатка з `SD:/luma/titles/` — решта перекладу працюватиме. Номери папок є в [технічному описі](docs/internals.md). |
 
 Порожні квадрати замість літер, обрізані чи накладені написи — це баг. [Відкрийте Issue](../../issues) з фото екрана.
@@ -251,7 +250,7 @@ The console reboots itself. Done.
 
 Any of these:
 
-1. **In Universal-Updater** → **Українізатор 3DS/2DS** → `2. Видалити українізатор`. The same two questions in the queue, then it removes exactly the files it put there. If it stops with an error (some files already gone, or an older version installed), use `3. Видалити примусово` — it confirms every folder, but works whatever state the card is in.
+1. **In Universal-Updater** → **Українізатор 3DS/2DS** → `2. Видалити українізатор`. It asks nothing and does not care which slot you replaced. At the end Universal-Updater asks once about the `3ds/3ds-ua-trash` folder — that is where everything being removed was collected; agree. Reboot the console afterwards.
 2. **Switch the console language** to anything else — the translation simply won't apply.
 3. **Delete the mod folders** from `SD:/luma/titles/` by hand.
 4. **Turn `Enable game patching` off** in the Luma menu (this disables other mods too).
@@ -289,7 +288,6 @@ Nothing in the system was modified, so removal cannot break anything.
 | Not enough space | Installing needs ~55 MB free: 23 MB of archive plus 30 MB unpacked. |
 | The script list is stale after a store update | Universal-Updater only refetches the store when auto-update is on. Force it: gear → `Select UniStore` → highlight **Українізатор 3DS/2DS** → **START**. |
 | Nothing happens after starting a script | Universal-Updater puts the work in a **queue**, and the questions wait there. Open the queue with the third icon in the left sidebar and press **A**. |
-| `2. Видалити` stopped with an error | Some files are already gone. Run `3. Видалити примусово`, which works whatever state the card is in. |
 | An app crashes after installing | You have an older build of it. Delete that app's folder from `SD:/luma/titles/` — the rest keeps working. Folder numbers are in the [technical write-up](docs/internals.en.md). |
 
 Empty boxes instead of letters, clipped or overlapping text — that's a bug. [Open an Issue](../../issues) with a photo.
