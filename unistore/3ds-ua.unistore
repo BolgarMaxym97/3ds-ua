@@ -6,7 +6,7 @@
     "url": "https://raw.githubusercontent.com/BolgarMaxym97/3ds-ua/main/unistore/3ds-ua.unistore",
     "file": "3ds-ua.unistore",
     "version": 3,
-    "revision": 10903,
+    "revision": 10904,
     "infoURL": "https://github.com/BolgarMaxym97/3ds-ua",
     "sheet": "3ds-ua.t3x",
     "sheetURL": "https://raw.githubusercontent.com/BolgarMaxym97/3ds-ua/main/unistore/3ds-ua.t3x"
@@ -130,424 +130,164 @@
       },
       "2. Видалити українізатор": [
         {
-          "type": "mkdir",
-          "directory": "sdmc:/luma/titles/0004001000022000/"
-        },
-        {
-          "type": "mkdir",
-          "directory": "sdmc:/luma/titles/0004001000022100/"
-        },
-        {
-          "type": "mkdir",
-          "directory": "sdmc:/luma/titles/0004001000022200/"
-        },
-        {
-          "type": "mkdir",
-          "directory": "sdmc:/luma/titles/0004001000022300/"
-        },
-        {
-          "type": "mkdir",
-          "directory": "sdmc:/luma/titles/0004001000022400/"
-        },
-        {
-          "type": "mkdir",
-          "directory": "sdmc:/luma/titles/0004001000022500/"
-        },
-        {
-          "type": "mkdir",
-          "directory": "sdmc:/luma/titles/0004001000022700/"
-        },
-        {
-          "type": "mkdir",
-          "directory": "sdmc:/luma/titles/0004001000022800/"
-        },
-        {
-          "type": "mkdir",
-          "directory": "sdmc:/luma/titles/0004001000022900/"
-        },
-        {
-          "type": "mkdir",
-          "directory": "sdmc:/luma/titles/0004001000022A00/"
-        },
-        {
-          "type": "mkdir",
-          "directory": "sdmc:/luma/titles/0004001000022B00/"
-        },
-        {
-          "type": "mkdir",
-          "directory": "sdmc:/luma/titles/0004001000022D00/"
-        },
-        {
-          "type": "mkdir",
-          "directory": "sdmc:/luma/titles/0004001000022E00/"
-        },
-        {
-          "type": "mkdir",
-          "directory": "sdmc:/luma/titles/000400100002C100/"
-        },
-        {
-          "type": "mkdir",
-          "directory": "sdmc:/luma/titles/0004001020022300/"
-        },
-        {
-          "type": "mkdir",
-          "directory": "sdmc:/luma/titles/0004003000009802/"
-        },
-        {
-          "type": "mkdir",
-          "directory": "sdmc:/luma/titles/0004003000009902/"
-        },
-        {
-          "type": "mkdir",
-          "directory": "sdmc:/luma/titles/0004003000009B02/"
-        },
-        {
-          "type": "mkdir",
-          "directory": "sdmc:/luma/titles/0004003000009C02/"
-        },
-        {
-          "type": "mkdir",
-          "directory": "sdmc:/luma/titles/0004003000009D02/"
-        },
-        {
-          "type": "mkdir",
-          "directory": "sdmc:/luma/titles/0004003000009F02/"
-        },
-        {
-          "type": "mkdir",
-          "directory": "sdmc:/luma/titles/000400300000A002/"
-        },
-        {
-          "type": "mkdir",
-          "directory": "sdmc:/luma/titles/000400300000B902/"
-        },
-        {
-          "type": "mkdir",
-          "directory": "sdmc:/luma/titles/000400300000BA02/"
-        },
-        {
-          "type": "mkdir",
-          "directory": "sdmc:/luma/titles/000400300000BE02/"
-        },
-        {
-          "type": "mkdir",
-          "directory": "sdmc:/luma/titles/000400300000C502/"
-        },
-        {
-          "type": "mkdir",
-          "directory": "sdmc:/luma/titles/000400300000CD02/"
-        },
-        {
-          "type": "mkdir",
-          "directory": "sdmc:/luma/titles/000400300000D002/"
-        },
-        {
-          "type": "mkdir",
-          "directory": "sdmc:/luma/titles/000400300000D102/"
-        },
-        {
-          "type": "mkdir",
-          "directory": "sdmc:/luma/titles/000400300000D602/"
-        },
-        {
-          "type": "mkdir",
-          "directory": "sdmc:/luma/titles/000400300000F602/"
-        },
-        {
-          "type": "mkdir",
-          "directory": "sdmc:/luma/titles/0004003020009D02/"
-        },
-        {
-          "type": "move",
-          "old": "sdmc:/luma/titles/0004001000022000",
-          "new": "sdmc:/3ds/3ds-ua-trash/0004001000022000"
-        },
-        {
-          "type": "move",
-          "old": "sdmc:/luma/titles/0004001000022100",
-          "new": "sdmc:/3ds/3ds-ua-trash/0004001000022100"
-        },
-        {
-          "type": "move",
-          "old": "sdmc:/luma/titles/0004001000022200",
-          "new": "sdmc:/3ds/3ds-ua-trash/0004001000022200"
-        },
-        {
-          "type": "move",
-          "old": "sdmc:/luma/titles/0004001000022300",
-          "new": "sdmc:/3ds/3ds-ua-trash/0004001000022300"
-        },
-        {
-          "type": "move",
-          "old": "sdmc:/luma/titles/0004001000022400",
-          "new": "sdmc:/3ds/3ds-ua-trash/0004001000022400"
-        },
-        {
-          "type": "move",
-          "old": "sdmc:/luma/titles/0004001000022500",
-          "new": "sdmc:/3ds/3ds-ua-trash/0004001000022500"
-        },
-        {
-          "type": "move",
-          "old": "sdmc:/luma/titles/0004001000022700",
-          "new": "sdmc:/3ds/3ds-ua-trash/0004001000022700"
-        },
-        {
-          "type": "move",
-          "old": "sdmc:/luma/titles/0004001000022800",
-          "new": "sdmc:/3ds/3ds-ua-trash/0004001000022800"
-        },
-        {
-          "type": "move",
-          "old": "sdmc:/luma/titles/0004001000022900",
-          "new": "sdmc:/3ds/3ds-ua-trash/0004001000022900"
-        },
-        {
-          "type": "move",
-          "old": "sdmc:/luma/titles/0004001000022A00",
-          "new": "sdmc:/3ds/3ds-ua-trash/0004001000022A00"
-        },
-        {
-          "type": "move",
-          "old": "sdmc:/luma/titles/0004001000022B00",
-          "new": "sdmc:/3ds/3ds-ua-trash/0004001000022B00"
-        },
-        {
-          "type": "move",
-          "old": "sdmc:/luma/titles/0004001000022D00",
-          "new": "sdmc:/3ds/3ds-ua-trash/0004001000022D00"
-        },
-        {
-          "type": "move",
-          "old": "sdmc:/luma/titles/0004001000022E00",
-          "new": "sdmc:/3ds/3ds-ua-trash/0004001000022E00"
-        },
-        {
-          "type": "move",
-          "old": "sdmc:/luma/titles/000400100002C100",
-          "new": "sdmc:/3ds/3ds-ua-trash/000400100002C100"
-        },
-        {
-          "type": "move",
-          "old": "sdmc:/luma/titles/0004001020022300",
-          "new": "sdmc:/3ds/3ds-ua-trash/0004001020022300"
-        },
-        {
-          "type": "move",
-          "old": "sdmc:/luma/titles/0004003000009802",
-          "new": "sdmc:/3ds/3ds-ua-trash/0004003000009802"
-        },
-        {
-          "type": "move",
-          "old": "sdmc:/luma/titles/0004003000009902",
-          "new": "sdmc:/3ds/3ds-ua-trash/0004003000009902"
-        },
-        {
-          "type": "move",
-          "old": "sdmc:/luma/titles/0004003000009B02",
-          "new": "sdmc:/3ds/3ds-ua-trash/0004003000009B02"
-        },
-        {
-          "type": "move",
-          "old": "sdmc:/luma/titles/0004003000009C02",
-          "new": "sdmc:/3ds/3ds-ua-trash/0004003000009C02"
-        },
-        {
-          "type": "move",
-          "old": "sdmc:/luma/titles/0004003000009D02",
-          "new": "sdmc:/3ds/3ds-ua-trash/0004003000009D02"
-        },
-        {
-          "type": "move",
-          "old": "sdmc:/luma/titles/0004003000009F02",
-          "new": "sdmc:/3ds/3ds-ua-trash/0004003000009F02"
-        },
-        {
-          "type": "move",
-          "old": "sdmc:/luma/titles/000400300000A002",
-          "new": "sdmc:/3ds/3ds-ua-trash/000400300000A002"
-        },
-        {
-          "type": "move",
-          "old": "sdmc:/luma/titles/000400300000B902",
-          "new": "sdmc:/3ds/3ds-ua-trash/000400300000B902"
-        },
-        {
-          "type": "move",
-          "old": "sdmc:/luma/titles/000400300000BA02",
-          "new": "sdmc:/3ds/3ds-ua-trash/000400300000BA02"
-        },
-        {
-          "type": "move",
-          "old": "sdmc:/luma/titles/000400300000BE02",
-          "new": "sdmc:/3ds/3ds-ua-trash/000400300000BE02"
-        },
-        {
-          "type": "move",
-          "old": "sdmc:/luma/titles/000400300000C502",
-          "new": "sdmc:/3ds/3ds-ua-trash/000400300000C502"
-        },
-        {
-          "type": "move",
-          "old": "sdmc:/luma/titles/000400300000CD02",
-          "new": "sdmc:/3ds/3ds-ua-trash/000400300000CD02"
-        },
-        {
-          "type": "move",
-          "old": "sdmc:/luma/titles/000400300000D002",
-          "new": "sdmc:/3ds/3ds-ua-trash/000400300000D002"
-        },
-        {
-          "type": "move",
-          "old": "sdmc:/luma/titles/000400300000D102",
-          "new": "sdmc:/3ds/3ds-ua-trash/000400300000D102"
-        },
-        {
-          "type": "move",
-          "old": "sdmc:/luma/titles/000400300000D602",
-          "new": "sdmc:/3ds/3ds-ua-trash/000400300000D602"
-        },
-        {
-          "type": "move",
-          "old": "sdmc:/luma/titles/000400300000F602",
-          "new": "sdmc:/3ds/3ds-ua-trash/000400300000F602"
-        },
-        {
-          "type": "move",
-          "old": "sdmc:/luma/titles/0004003020009D02",
-          "new": "sdmc:/3ds/3ds-ua-trash/0004003020009D02"
+          "type": "rmdir",
+          "directory": "/luma/titles/0004001000022000",
+          "message": "Видаляю /luma/titles/0004001000022000"
         },
         {
           "type": "rmdir",
-          "directory": "/luma/titles/0004001000022000"
+          "directory": "/luma/titles/0004001000022100",
+          "message": "Видаляю /luma/titles/0004001000022100"
         },
         {
           "type": "rmdir",
-          "directory": "/luma/titles/0004001000022100"
+          "directory": "/luma/titles/0004001000022200",
+          "message": "Видаляю /luma/titles/0004001000022200"
         },
         {
           "type": "rmdir",
-          "directory": "/luma/titles/0004001000022200"
+          "directory": "/luma/titles/0004001000022300",
+          "message": "Видаляю /luma/titles/0004001000022300"
         },
         {
           "type": "rmdir",
-          "directory": "/luma/titles/0004001000022300"
+          "directory": "/luma/titles/0004001000022400",
+          "message": "Видаляю /luma/titles/0004001000022400"
         },
         {
           "type": "rmdir",
-          "directory": "/luma/titles/0004001000022400"
+          "directory": "/luma/titles/0004001000022500",
+          "message": "Видаляю /luma/titles/0004001000022500"
         },
         {
           "type": "rmdir",
-          "directory": "/luma/titles/0004001000022500"
+          "directory": "/luma/titles/0004001000022700",
+          "message": "Видаляю /luma/titles/0004001000022700"
         },
         {
           "type": "rmdir",
-          "directory": "/luma/titles/0004001000022700"
+          "directory": "/luma/titles/0004001000022800",
+          "message": "Видаляю /luma/titles/0004001000022800"
         },
         {
           "type": "rmdir",
-          "directory": "/luma/titles/0004001000022800"
+          "directory": "/luma/titles/0004001000022900",
+          "message": "Видаляю /luma/titles/0004001000022900"
         },
         {
           "type": "rmdir",
-          "directory": "/luma/titles/0004001000022900"
+          "directory": "/luma/titles/0004001000022A00",
+          "message": "Видаляю /luma/titles/0004001000022A00"
         },
         {
           "type": "rmdir",
-          "directory": "/luma/titles/0004001000022A00"
+          "directory": "/luma/titles/0004001000022B00",
+          "message": "Видаляю /luma/titles/0004001000022B00"
         },
         {
           "type": "rmdir",
-          "directory": "/luma/titles/0004001000022B00"
+          "directory": "/luma/titles/0004001000022D00",
+          "message": "Видаляю /luma/titles/0004001000022D00"
         },
         {
           "type": "rmdir",
-          "directory": "/luma/titles/0004001000022D00"
+          "directory": "/luma/titles/0004001000022E00",
+          "message": "Видаляю /luma/titles/0004001000022E00"
         },
         {
           "type": "rmdir",
-          "directory": "/luma/titles/0004001000022E00"
+          "directory": "/luma/titles/000400100002C100",
+          "message": "Видаляю /luma/titles/000400100002C100"
         },
         {
           "type": "rmdir",
-          "directory": "/luma/titles/000400100002C100"
+          "directory": "/luma/titles/0004001020022300",
+          "message": "Видаляю /luma/titles/0004001020022300"
         },
         {
           "type": "rmdir",
-          "directory": "/luma/titles/0004001020022300"
+          "directory": "/luma/titles/0004003000009802",
+          "message": "Видаляю /luma/titles/0004003000009802"
         },
         {
           "type": "rmdir",
-          "directory": "/luma/titles/0004003000009802"
+          "directory": "/luma/titles/0004003000009902",
+          "message": "Видаляю /luma/titles/0004003000009902"
         },
         {
           "type": "rmdir",
-          "directory": "/luma/titles/0004003000009902"
+          "directory": "/luma/titles/0004003000009B02",
+          "message": "Видаляю /luma/titles/0004003000009B02"
         },
         {
           "type": "rmdir",
-          "directory": "/luma/titles/0004003000009B02"
+          "directory": "/luma/titles/0004003000009C02",
+          "message": "Видаляю /luma/titles/0004003000009C02"
         },
         {
           "type": "rmdir",
-          "directory": "/luma/titles/0004003000009C02"
+          "directory": "/luma/titles/0004003000009D02",
+          "message": "Видаляю /luma/titles/0004003000009D02"
         },
         {
           "type": "rmdir",
-          "directory": "/luma/titles/0004003000009D02"
+          "directory": "/luma/titles/0004003000009F02",
+          "message": "Видаляю /luma/titles/0004003000009F02"
         },
         {
           "type": "rmdir",
-          "directory": "/luma/titles/0004003000009F02"
+          "directory": "/luma/titles/000400300000A002",
+          "message": "Видаляю /luma/titles/000400300000A002"
         },
         {
           "type": "rmdir",
-          "directory": "/luma/titles/000400300000A002"
+          "directory": "/luma/titles/000400300000B902",
+          "message": "Видаляю /luma/titles/000400300000B902"
         },
         {
           "type": "rmdir",
-          "directory": "/luma/titles/000400300000B902"
+          "directory": "/luma/titles/000400300000BA02",
+          "message": "Видаляю /luma/titles/000400300000BA02"
         },
         {
           "type": "rmdir",
-          "directory": "/luma/titles/000400300000BA02"
+          "directory": "/luma/titles/000400300000BE02",
+          "message": "Видаляю /luma/titles/000400300000BE02"
         },
         {
           "type": "rmdir",
-          "directory": "/luma/titles/000400300000BE02"
+          "directory": "/luma/titles/000400300000C502",
+          "message": "Видаляю /luma/titles/000400300000C502"
         },
         {
           "type": "rmdir",
-          "directory": "/luma/titles/000400300000C502"
+          "directory": "/luma/titles/000400300000CD02",
+          "message": "Видаляю /luma/titles/000400300000CD02"
         },
         {
           "type": "rmdir",
-          "directory": "/luma/titles/000400300000CD02"
+          "directory": "/luma/titles/000400300000D002",
+          "message": "Видаляю /luma/titles/000400300000D002"
         },
         {
           "type": "rmdir",
-          "directory": "/luma/titles/000400300000D002"
+          "directory": "/luma/titles/000400300000D102",
+          "message": "Видаляю /luma/titles/000400300000D102"
         },
         {
           "type": "rmdir",
-          "directory": "/luma/titles/000400300000D102"
+          "directory": "/luma/titles/000400300000D602",
+          "message": "Видаляю /luma/titles/000400300000D602"
         },
         {
           "type": "rmdir",
-          "directory": "/luma/titles/000400300000D602"
+          "directory": "/luma/titles/000400300000F602",
+          "message": "Видаляю /luma/titles/000400300000F602"
         },
         {
           "type": "rmdir",
-          "directory": "/luma/titles/000400300000F602"
-        },
-        {
-          "type": "rmdir",
-          "directory": "/luma/titles/0004003020009D02"
-        },
-        {
-          "type": "rmdir",
-          "directory": "sdmc:/3ds/3ds-ua-trash"
+          "directory": "/luma/titles/0004003020009D02",
+          "message": "Видаляю /luma/titles/0004003020009D02"
         },
         {
           "type": "promptMessage",
@@ -569,7 +309,7 @@
         "license": "MIT",
         "color": "#005BBB",
         "long_description": "Перекладає системний інтерфейс Nintendo 3DS, 3DS XL, 2DS, New 3DS, New 3DS XL і New 2DS XL українською: Меню HOME, Налаштування системи, Інтернет-браузер, eShop, Камеру, Звук, Mii Maker, Журнал дій, електронні довідники та решту системних застосунків.\n\nУкраїнська стає на місце російського або англійського мовного слота - який саме, питає під час установки. Потрібна Luma3DS з увімкненим Enable game patching і консоль європейського (EUR) регіону.",
-        "preinstall_message": "Встановлення і оновлення - той самий пункт.\n\nУВАГА: Universal-Updater виконує все у черзі.\nЯкщо на питання ще не збережено відповідь,\nвідкрийте чергу третьою іконкою в лівій панелі -\nпитання чекають там, і без відповіді робота стоїть.\n\nПотрібна Luma3DS з увімкненим Enable game patching,\nа мову консолі після встановлення треба\nперемкнути вручну.\n\nНаприкінці видалення Universal-Updater перепитає\nпро папку 3ds/3ds-ua-trash - туди зібрано все,\nщо видаляється. Погодьтеся.",
+        "preinstall_message": "Встановлення і оновлення - той самий пункт.\n\nУВАГА: Universal-Updater виконує все у черзі.\nЯкщо на питання ще не збережено відповідь,\nвідкрийте чергу третьою іконкою в лівій панелі -\nпитання чекають там, і без відповіді робота стоїть.\n\nПотрібна Luma3DS з увімкненим Enable game patching,\nа мову консолі після встановлення треба\nперемкнути вручну.\n\nВидалення перепитає про кожну папку - їх до 32.\nТримайте A. Universal-Updater інакше теки\nвидаляти не вміє.",
         "releasenotes": "Українізатор тепер ставиться прямо на консолі, без виймання SD-карти. З'явився магазин для Universal-Updater: додаєте його один раз за посиланням, і далі встановлення, оновлення й видалення — це один пункт меню на самій консолі.\n\nhttps://raw.githubusercontent.com/BolgarMaxym97/3ds-ua/main/unistore/3ds-ua.unistore\n\nПро нові версії Universal-Updater повідомляє сам — на іконці запису з'являється зелена стрілка.\n\nВидалення прибирає рівно те, що ставив українізатор, не залежить від того, який мовний слот ви заміняли, і питає лише один раз наприкінці.\n\nПерекладу це оновлення не змінює. Жоден рядок, файл чи правка коду не відрізняються від 1.8.0 — якщо ви ставили мод вручну й вас усе влаштовує, оновлюватися не обов'язково.",
         "installed_files": [
           "/luma/titles/0004003000009802/banner_22800.bin",
@@ -577,7 +317,7 @@
         ],
         "icon_index": 0,
         "sheet_index": 0,
-        "last_updated": "2026-09-05 at 12:03 (UTC)"
+        "last_updated": "2026-09-05 at 12:13 (UTC)"
       }
     }
   ]

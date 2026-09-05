@@ -120,16 +120,6 @@ ENTRY_TITLE = "Українізатор 3DS/2DS"
 # downloadRelease never has to create the parent, and the file is deleted one step later.
 TEMP_ZIP = "/3ds/3ds-ua.zip"
 
-# Where the mod's folders are moved before the one deletion that removes them all.
-#
-# The `sdmc:` prefix is load-bearing. libctru resolves a path's device in archive_fixpath():
-# the source of a rename arrives with its device already set (`r->deviceData`), but the
-# destination starts as NULL and, without a `xxx:` prefix, can only be resolved through the
-# `archive_device_cwd` fallback. When that is unset the call returns an empty path and
-# `archive_rename` bails out - and UU ignores what rename() returned, so the failure is
-# completely silent. Prefixed paths take the explicit archiveFindDevice() branch instead.
-TRASH = "sdmc:/3ds/3ds-ua-trash"
-
 # Universal-Updater renders release notes as plain text in a small box; past this much it is
 # a scrolling wall nobody reads.
 NOTES_LIMIT = 1200
@@ -202,9 +192,9 @@ PREINSTALL = (
     "Потрібна Luma3DS з увімкненим Enable game patching,\n"
     "а мову консолі після встановлення треба\n"
     "перемкнути вручну.\n\n"
-    "Наприкінці видалення Universal-Updater перепитає\n"
-    "про папку 3ds/3ds-ua-trash - туди зібрано все,\n"
-    "що видаляється. Погодьтеся."
+    "Видалення перепитає про кожну папку - їх до 32.\n"
+    "Тримайте A. Universal-Updater інакше теки\n"
+    "видаляти не вміє."
 )
 
 DESCRIPTION = (
@@ -408,38 +398,40 @@ def branching(body) -> list:
 
 
 def wipe_steps() -> list[dict]:
-    """Remove every folder the mod ships, asking once instead of thirty-two times.
+    """Remove every folder the mod ships. One confirmation per folder, and that is that.
 
     `rmdir` is the only step that deletes a directory, and it asks about every directory that
-    exists - unconditionally, no setting behind it (`DELETE_PROMPT`, scriptUtils.cpp:349,
-    queueSystem.cpp:255). File-level steps cannot stand in for it: `deleteFile`, `move` and
-    `copy` all report an error the moment their target is missing, both executors loop while
-    `ret == NONE`, and a file list leaves the `romfs/` directories behind - an empty one still
-    switches Luma's hook on (`tools/layeredfs_check.py`), which without `code.ips` is an
-    exception screen on every launch.
+    exists - unconditionally, with no setting behind it (`DELETE_PROMPT`, scriptUtils.cpp:349,
+    queueSystem.cpp:255) and no way to clear or pre-seed the answer, since UU keeps saved
+    prompt answers only for `promptMessage`.
 
-    So the folders are moved out rather than deleted: `mkdir` guarantees each source exists,
-    `move` relocates it into one scratch directory, and a single `rmdir` removes that. The
-    per-folder `rmdir` afterwards is the safety net - if a move silently does nothing the old
-    path is still there and the script degrades to asking, exactly as it did before.
+    File-level steps cannot replace it. `deleteFile`, `move` and `copy` each return an error
+    the moment their target is missing, and both executors loop while `ret == NONE`, so a
+    named file list aborts on any card that does not match it exactly. It also leaves the
+    `romfs/` directories behind, and an empty one still switches Luma's hook on
+    (`tools/layeredfs_check.py`) - which, with `code.ips` gone, is an exception screen on
+    every launch of that title.
 
-    Paths here carry an explicit `sdmc:`. A first attempt used bare paths and not one folder
-    moved on hardware: libctru resolves the destination device through `archive_device_cwd`
-    when the path has no prefix (archive_fixpath), and UU discards rename()'s return value,
-    so the whole thing failed without a word.
+    Two attempts to avoid the prompts were made and both failed on hardware. Do not spend a
+    third evening on this:
+
+    1. `mkdir` each folder, `move` it into a scratch directory, delete that one directory.
+       libctru's SD devoptab does fall back from `FSUSER_RenameFile` to
+       `FSUSER_RenameDirectory` (archive_dev.c), so it looked sound. Not one folder moved.
+       UU ignores what `rename()` returns, so the failure was silent, and the `mkdir` half
+       made it worse by creating folders the card did not have - which `rmdir` then asked
+       about too.
+    2. The same with explicit `sdmc:` prefixes, on the theory that the destination device
+       could not be resolved without one (archive_fixpath falls back to `archive_device_cwd`
+       for a bare path). Same result: every folder still asked, plus the empty scratch
+       directory that `makeDirs()` had created on the way.
+
+    Whatever the reason, renaming a directory through this path does not work on the console.
     """
-    steps: list[dict] = []
-    for directory in removable_dirs():
-        # Trailing slash: makeDirs() creates every prefix but not the last component, so
-        # without it the folder itself is never created and the move below can fail.
-        steps.append({"type": "mkdir", "directory": f"sdmc:{directory}/"})
-    for directory in removable_dirs():
-        steps.append({"type": "move", "old": f"sdmc:{directory}",
-                      "new": f"{TRASH}/{directory.rsplit('/', 1)[-1]}"})
-    for directory in removable_dirs():
-        steps.append({"type": "rmdir", "directory": directory})
-    steps.append({"type": "rmdir", "directory": TRASH})
-    return steps
+    return [
+        {"type": "rmdir", "directory": directory, "message": f"Видаляю {directory}"}
+        for directory in removable_dirs()
+    ]
 
 
 def release_notes(version: str, path: Path | None) -> str:
@@ -732,37 +724,28 @@ def check(version: str, branch: str, verify_release: bool) -> list[str]:
                 bad(f"{INSTALL} {answers}: did not end on the closing note")
 
 
-    # Removal: ensure, move out, then delete the one scratch directory - in that order.
+    # Removal: nothing but rmdir over exactly the shipped folders, plus the closing note.
     removal = resolved.get(UNINSTALL, [])
     kinds = {step["type"] for step in removal}
-    if kinds - {"mkdir", "move", "rmdir", "promptMessage"}:
-        bad(f"{UNINSTALL}: unexpected step types {sorted(kinds)}")
+    if kinds != {"rmdir", "promptMessage"}:
+        # mkdir/move here means someone is retrying the scratch-directory trick; it does not
+        # work on hardware and its mkdir half creates folders the card never had.
+        bad(f"{UNINSTALL}: contains {sorted(kinds)}, expected only rmdir and the closing note")
     if any("count" in step for step in removal if step["type"] == "promptMessage"):
         bad(f"{UNINSTALL}: asks a question - removal must not depend on model or slot")
     if not removal or removal[-1].get("message") != drawable(REMOVED_NOTE):
         bad(f"{UNINSTALL}: does not end on the closing note")
 
-    made = [step["directory"] for step in removal if step["type"] == "mkdir"]
-    moved = [(step["old"], step["new"]) for step in removal if step["type"] == "move"]
-    removed = [step["directory"] for step in removal if step["type"] == "rmdir"]
-
-    if made != [f"sdmc:{d}/" for d in expected_dirs_ordered]:
-        bad(f"{UNINSTALL}: the mkdir list must cover every shipped folder, carry an sdmc: "
-            f"prefix and end in a slash - makeDirs() creates prefixes only, and a bare path "
-            f"leaves rename() without a destination device")
-    if moved != [(f"sdmc:{d}", f"{TRASH}/{d.rsplit('/', 1)[-1]}") for d in expected_dirs_ordered]:
-        bad(f"{UNINSTALL}: the move list does not match the shipped folders, or lost the "
-            f"sdmc: prefix that rename() needs to resolve the destination")
-    if removed != expected_dirs_ordered + [TRASH]:
-        bad(f"{UNINSTALL}: the rmdir safety net must cover every folder and end on {TRASH}")
-
-    first_move = next((i for i, x in enumerate(removal) if x["type"] == "move"), -1)
-    last_mkdir = max((i for i, x in enumerate(removal) if x["type"] == "mkdir"), default=-1)
-    first_rmdir = next((i for i, x in enumerate(removal) if x["type"] == "rmdir"), -1)
-    last_move = max((i for i, x in enumerate(removal) if x["type"] == "move"), default=-1)
-    if not last_mkdir < first_move <= last_move < first_rmdir:
-        bad(f"{UNINSTALL}: steps are out of order - every mkdir must precede every move, and "
-            f"every move must precede the rmdir net")
+    dirs = [step["directory"] for step in removal if step["type"] == "rmdir"]
+    if len(dirs) != len(set(dirs)):
+        bad(f"{UNINSTALL}: duplicate rmdir entries")
+    if dirs != expected_dirs_ordered:
+        missing = set(expected_dirs_ordered) - set(dirs)
+        extra = set(dirs) - set(expected_dirs_ordered)
+        if missing:
+            bad(f"{UNINSTALL}: not removed: {sorted(missing)}")
+        if extra:
+            bad(f"{UNINSTALL}: removes folders we never ship: {sorted(extra)}")
 
     problems += check_sheet(store_info, info)
     problems += check_against_committed(doc)
