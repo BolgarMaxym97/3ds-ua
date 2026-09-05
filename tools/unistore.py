@@ -127,7 +127,7 @@ PREINSTALL = (
 )
 
 DESCRIPTION = (
-    "Українська мова для системного інтерфейсу Nintendo 3DS. Стає на місце російського "
+    "Українська мова для системного інтерфейсу Nintendo 3DS/2DS. Стає на місце російського "
     "або англійського мовного слота; який саме - питає під час установки."
 )
 
@@ -398,7 +398,7 @@ def build_store(version: str, revision: int, notes: str, branch: str) -> dict:
     }
 
     store_info = {
-        "title": "3DS UA",
+        "title": "Українізатор 3DS/2DS",
         "author": "BolgarMaxym97",
         "description": DESCRIPTION,
         "url": store_url(branch),

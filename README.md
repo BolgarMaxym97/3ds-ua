@@ -145,6 +145,7 @@ https://raw.githubusercontent.com/BolgarMaxym97/3ds-ua/main/unistore/3ds-ua.unis
 | Universal-Updater не бачить магазин | Звірте посилання посимвольно. Після оновлення магазину дайте ~5 хвилин: GitHub кешує файл. |
 | У Universal-Updater помилка завантаження | Реліз ще не опубліковано або зникла мережа — спробуйте пізніше чи візьміть архів вручну. Ще одна причина — збита дата на консолі: тоді не проходить перевірка сертифіката. |
 | Не вистачає місця | Під час встановлення треба ~55 МБ вільних: 23 МБ архіву плюс 30 МБ розпакованого. |
+| Список скриптів старий після оновлення магазину | Universal-Updater перечитує магазин лише якщо ввімкнено автооновлення. Примусово: шестерня → `Select UniStore` → підсвітити **3DS UA** → **START**. |
 | Після запуску скрипта нічого не відбувається | Universal-Updater кладе роботу в **чергу**. Відкрийте її третьою іконкою в лівій панелі на нижньому екрані — там видно поступ. |
 | `Видалити:` обірвався помилкою | Частини файлів уже немає. Запустіть `9. Видалити примусово` — він працює за будь-якого стану картки. |
 | Якийсь додаток крешить після встановлення | У вас старіша його версія. Видаліть папку цього додатка з `SD:/luma/titles/` — решта перекладу працюватиме. Номери папок є в [технічному описі](docs/internals.md). |
@@ -294,6 +295,7 @@ Nothing in the system was modified, so removal cannot break anything.
 | Universal-Updater doesn't see the store | Check the URL character by character. After the store is updated, give it ~5 minutes: GitHub caches the file. |
 | Download error in Universal-Updater | The release isn't published yet, or the network dropped — try later or grab the archive by hand. Another cause is a wrong console clock, which fails the certificate check. |
 | Not enough space | Installing needs ~55 MB free: 23 MB of archive plus 30 MB unpacked. |
+| The script list is stale after a store update | Universal-Updater only refetches the store when auto-update is on. Force it: gear → `Select UniStore` → highlight **3DS UA** → **START**. |
 | Nothing happens after starting a script | Universal-Updater puts the work in a **queue**. Open it with the third icon in the left sidebar on the bottom screen to watch progress. |
 | A `Видалити:` script stopped with an error | Some files are already gone. Run `9. Видалити примусово`, which works whatever state the card is in. |
 | An app crashes after installing | You have an older build of it. Delete that app's folder from `SD:/luma/titles/` — the rest keeps working. Folder numbers are in the [technical write-up](docs/internals.en.md). |
