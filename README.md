@@ -45,11 +45,34 @@
 
 - Nintendo 3DS / 2DS / New 3DS **європейського (EUR) регіону**
 - встановлена **Luma3DS** — кастомна прошивка
-- SD-карта
+- SD-карта з ~55 МБ вільного місця
+- за бажанням — **Universal-Updater**: з ним усе ставиться прямо з консолі, без виймання картки
 
 Немає Luma3DS? Спершу пройдіть [3ds.hacks.guide](https://3ds.hacks.guide/) — без неї мод не працює.
 
-## Встановлення
+## Встановлення через Universal-Updater
+
+Найпростіший шлях: картку виймати не треба, оновлення потім приходять самі.
+
+**1. Додайте магазин**
+
+Відкрийте [Universal-Updater](https://github.com/Universal-Team/Universal-Updater) → `Settings` → `Select UniStore` → `Add new` → `Add with keyboard` і введіть:
+
+```
+https://raw.githubusercontent.com/BolgarMaxym97/3ds-ua/main/unistore/3ds-ua.unistore
+```
+
+**2. Встановіть**
+
+Знайдіть у списку **3DS UA** і виберіть скрипт `1. Встановити / оновити`. Застосунок спитає дві речі: чи консоль New 3DS (модель написана спереду під нижнім екраном) і чи заміняти російську мову — «Ні» замінить англійську. Universal-Updater не вміє сам визначити ні модель, ні мову, тому й питає; відповіді він запам'ятає, і вдруге їх не спитають.
+
+Помилилися з відповіддю — просто запустіть `2. Перевстановити з очищенням` і дайте інші.
+
+**3. Далі — кроки 2 і 3 з ручного встановлення нижче** (`Enable game patching` і вибір мови). Їх не обійти жодним застосунком.
+
+Коли вийде нова версія, на іконці **3DS UA** з'явиться зелена стрілка — запустіть той самий `1. Встановити / оновити`.
+
+## Встановлення вручну (з SD-карти)
 
 **1. Скопіюйте файли на SD-карту**
 
@@ -75,9 +98,10 @@
 
 Будь-який спосіб:
 
-1. **Змінити мову консолі** на будь-яку іншу — переклад просто не застосується.
-2. **Видалити папки мода** з `SD:/luma/titles/`.
-3. **Вимкнути `Enable game patching`** у меню Luma (це вимкне й інші моди).
+1. **У Universal-Updater** → **3DS UA** → `3. Видалити українізатор`. Прибирає рівно папки мода. Universal-Updater питає підтвердження на кожну папку — їх 30 або 32, тримайте `A`.
+2. **Змінити мову консолі** на будь-яку іншу — переклад просто не застосується.
+3. **Видалити папки мода** з `SD:/luma/titles/` вручну.
+4. **Вимкнути `Enable game patching`** у меню Luma (це вимкне й інші моди).
 
 Системні файли не змінювалися, тому видалення нічого не ламає.
 
@@ -107,6 +131,10 @@
 | У списку країн немає України | Свого коду в системі Україна не має — [чому](#чого-поки-що-немає). Ставте будь-яку країну, інтерфейс лишиться українським. |
 | `An exception occurred` при запуску додатка | Перейменуйте `SD:/luma/titles/<номер>/romfs` цього додатка на `_romfs` і перезавантажте — він запуститься без перекладу. І [напишіть в Issues](../../issues) з фото екрана. |
 | Меню HOME не завантажується | Видаліть `SD:/luma/titles/0004003000009802/code.ips`. Не допомогло — усю папку `0004003000009802`. |
+| Universal-Updater не бачить магазин | Звірте посилання посимвольно. Після оновлення магазину дайте ~5 хвилин: GitHub кешує файл. |
+| У Universal-Updater помилка завантаження | Реліз ще не опубліковано або зникла мережа — спробуйте пізніше чи візьміть архів вручну. Ще одна причина — збита дата на консолі: тоді не проходить перевірка сертифіката. |
+| Не вистачає місця | Під час встановлення треба ~55 МБ вільних: 23 МБ архіву плюс 30 МБ розпакованого. |
+| Питання про модель більше не з'являються | Universal-Updater запам'ятав відповіді. Змінити їх можна через `2. Перевстановити з очищенням`. |
 | Якийсь додаток крешить після встановлення | У вас старіша його версія. Видаліть папку цього додатка з `SD:/luma/titles/` — решта перекладу працюватиме. Номери папок є в [технічному описі](docs/internals.md). |
 
 Порожні квадрати замість літер, обрізані чи накладені написи — це баг. [Відкрийте Issue](../../issues) з фото екрана.
@@ -154,11 +182,34 @@ HOME Menu (including the application names under the icons) · System Settings (
 
 - a Nintendo 3DS / 2DS / New 3DS of the **European (EUR) region**
 - **Luma3DS** custom firmware installed
-- an SD card
+- an SD card with ~55 MB free
+- optionally **Universal-Updater**: with it everything is done from the console, no card removal
 
 No Luma3DS yet? Follow [3ds.hacks.guide](https://3ds.hacks.guide/) first — the mod does nothing without it.
 
-### Installation
+### Installation via Universal-Updater
+
+The easy path: the card stays in the console, and later updates announce themselves.
+
+**1. Add the store**
+
+Open [Universal-Updater](https://github.com/Universal-Team/Universal-Updater) → `Settings` → `Select UniStore` → `Add new` → `Add with keyboard`, and enter:
+
+```
+https://raw.githubusercontent.com/BolgarMaxym97/3ds-ua/main/unistore/3ds-ua.unistore
+```
+
+**2. Install**
+
+Find **3DS UA** in the list and run the `1. Встановити / оновити` script. It asks two things: whether the console is a New 3DS (the model is printed on the front, below the bottom screen) and whether to replace Russian — "no" replaces English. Universal-Updater cannot detect the model or the language on its own, which is why it asks; it remembers the answers, so it won't ask again.
+
+Answered wrong? Run `2. Перевстановити з очищенням` and answer differently.
+
+**3. Then do steps 2 and 3 of the manual installation below** (`Enable game patching` and picking the language). No app can do those for you.
+
+When a new version ships, a green arrow appears on the **3DS UA** icon — run the same `1. Встановити / оновити`.
+
+### Installation from the SD card (manual)
 
 **1. Copy the files onto the SD card**
 
@@ -184,9 +235,10 @@ The console reboots itself. Done.
 
 Any of these:
 
-1. **Switch the console language** to anything else — the translation simply won't apply.
-2. **Delete the mod folders** from `SD:/luma/titles/`.
-3. **Turn `Enable game patching` off** in the Luma menu (this disables other mods too).
+1. **In Universal-Updater** → **3DS UA** → `3. Видалити українізатор`. Removes exactly the mod's folders. Universal-Updater confirms each one — there are 30 or 32 of them, so hold `A`.
+2. **Switch the console language** to anything else — the translation simply won't apply.
+3. **Delete the mod folders** from `SD:/luma/titles/` by hand.
+4. **Turn `Enable game patching` off** in the Luma menu (this disables other mods too).
 
 Nothing in the system was modified, so removal cannot break anything.
 
@@ -216,6 +268,10 @@ Nothing in the system was modified, so removal cannot break anything.
 | Ukraine is missing from the country list | The system has no country code for it, see [Known limits](#known-limits). Pick any country; the interface stays Ukrainian. |
 | `An exception occurred` when opening an app | Rename that app's `SD:/luma/titles/<id>/romfs` to `_romfs` and reboot — it will start untranslated. Please [open an Issue](../../issues) with a photo. |
 | HOME Menu won't boot | Delete `SD:/luma/titles/0004003000009802/code.ips`. If that doesn't help, delete the whole `0004003000009802` folder. |
+| Universal-Updater doesn't see the store | Check the URL character by character. After the store is updated, give it ~5 minutes: GitHub caches the file. |
+| Download error in Universal-Updater | The release isn't published yet, or the network dropped — try later or grab the archive by hand. Another cause is a wrong console clock, which fails the certificate check. |
+| Not enough space | Installing needs ~55 MB free: 23 MB of archive plus 30 MB unpacked. |
+| It no longer asks about the model | Universal-Updater remembered the answers. Change them with `2. Перевстановити з очищенням`. |
 | An app crashes after installing | You have an older build of it. Delete that app's folder from `SD:/luma/titles/` — the rest keeps working. Folder numbers are in the [technical write-up](docs/internals.en.md). |
 
 Empty boxes instead of letters, clipped or overlapping text — that's a bug. [Open an Issue](../../issues) with a photo.

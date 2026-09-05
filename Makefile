@@ -17,7 +17,8 @@ DIST := $(if $(filter en,$(SLOT)),dist_en,dist)
 MODEL := old3ds
 
 .PHONY: help extract extract-manuals font hud-font validate build build-ru build-en \
-	manuals manuals-ru manuals-en all package package-ru package-en clean sd
+	manuals manuals-ru manuals-en all package package-ru package-en unistore unistore-check unistore-verify unistore-icon \
+	clean sd
 
 help:  ## show this list
 	@grep -E '^[a-z-]+:.*?##' $(MAKEFILE_LIST) | sed 's/:.*##/\t—/'
@@ -62,6 +63,28 @@ package-ru: manuals-ru ## build 3ds-ua-from-ru-$(VERSION)-{old3ds,new3ds}.zip
 
 package-en: manuals-en ## build 3ds-ua-from-en-$(VERSION)-{old3ds,new3ds}.zip
 	$(PY) tools/package.py $(VERSION) --slot en
+
+unistore: ## regenerate unistore/3ds-ua.unistore (metadata only, no build needed)
+	$(PY) tools/unistore.py $(VERSION)
+
+unistore-check: ## walk the store's scripts and check them against TITLES and the built archives
+	$(PY) tools/unistore.py $(VERSION) --check
+
+unistore-verify: ## the same, plus resolve the download patterns against the published release
+	$(PY) tools/unistore.py $(VERSION) --check --verify-release
+
+# tex3ds comes from devkitPro, which the rest of the build does not need - so fall back to
+# the container. Note the long `--atlas`: `-a` is rejected by tex3ds 2.3.0 despite its help.
+unistore-icon: ## assets/unistore-icon.png -> unistore/3ds-ua.t3x (needs tex3ds or docker)
+	@test -f assets/unistore-icon.png || $(PY) tools/unistore_icon.py
+	@if command -v tex3ds >/dev/null; then \
+		tex3ds --atlas -f rgba8888 -z auto -o unistore/3ds-ua.t3x assets/unistore-icon.png; \
+	else \
+		echo "no tex3ds, using docker"; \
+		docker run --rm --user "$$(id -u):$$(id -g)" -v "$$PWD:/w" -w /w devkitpro/devkitarm \
+			tex3ds --atlas -f rgba8888 -z auto -o unistore/3ds-ua.t3x assets/unistore-icon.png; \
+	fi
+	$(PY) tools/unistore.py $(VERSION)
 
 sd: ## copy onto the SD card (SD=/Volumes/... , SLOT=ru|en, MODEL=old3ds|new3ds)
 	@test -n "$(SD)" || { echo "pass SD=/Volumes/<name>"; exit 1; }

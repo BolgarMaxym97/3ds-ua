@@ -223,9 +223,15 @@ Miiverse і Дані Nintendo Network ID так само беруть із SD-к
 шукати. Дані NNID беруть звідти ще й сторінки самого розділу.
 Тому папки всіх дев'яти можна видаляти ТІЛЬКИ ЦІЛКОМ: якщо прибрати сам файл,
 а code.ips лишити, титул перестане завантажуватись або впаде. Решти титулів це
-не стосується.
+не стосується. Це стосується правки картки руками — скрипти Universal-Updater
+видаляють папки цілком самі.
 
 ВСТАНОВЛЕННЯ
+Найпростіше — через Universal-Updater, просто на консолі й без виймання картки.
+Додайте там магазин
+  {store_url}
+і виберіть 3DS UA. Нижче — те саме вручну.
+
 1. Розпакуйте вміст цього архіву в корінь SD-карти (папка luma має злитися з наявною).
 2. Вставте SD у консоль. Тримайте SELECT і увімкніть консоль.
 3. Увімкніть "Enable game patching" (кнопка A), натисніть START — зберегти й перезавантажити.
@@ -234,7 +240,8 @@ Miiverse і Дані Nintendo Network ID так само беруть із SD-к
 
 ВИДАЛЕННЯ
 Видаліть папки мода з luma/titles/ на SD-карті,
-або переключіть мову консолі на будь-яку іншу.
+або переключіть мову консолі на будь-яку іншу,
+або в Universal-Updater: 3DS UA -> "3. Видалити українізатор".
 
 Повна інструкція: https://github.com/BolgarMaxym97/3ds-ua
 """
@@ -260,6 +267,21 @@ def manual_files() -> str:
             label += " (New 3DS)"
         lines.append(f"  luma/titles/{MANUAL_APPLET_TID}/romfs/{luma_hook.manual_file_name(tid):<6}      {label}")
     return "\n".join(lines)
+
+
+# Where the UniStore that installs all this from the console itself is served from. It lives
+# here rather than in tools/unistore.py because that module imports this one for
+# archive_name(), and importing back would be a cycle.
+STORE_URL = "https://raw.githubusercontent.com/BolgarMaxym97/3ds-ua/main/unistore/3ds-ua.unistore"
+
+
+def archive_name(slot_key: str, version: str, model: str) -> str:
+    """The release asset name, in one place.
+
+    tools/unistore.py builds the store's download patterns out of this, so the name the
+    console asks GitHub for cannot drift from the name this script writes.
+    """
+    return f"3ds-ua-from-{slot_key}-{version}-{model}.zip"
 
 
 def collect(root: Path) -> dict[str, Path]:
@@ -307,8 +329,9 @@ def main() -> None:
         # The overlay wins where the two disagree: those paths are exactly the ones that
         # have to hold a different file on a New 3DS.
         files = shared | overlay if model == "new3ds" else shared
-        archive = ROOT / f"3ds-ua-from-{slot.key}-{version}-{model}.zip"
+        archive = ROOT / archive_name(slot.key, version, model)
         readme = README_TXT.format(
+            store_url=STORE_URL,
             version=version,
             slot=slot.key,
             original=slot.original,
