@@ -3,7 +3,7 @@ PY := python3
 
 HOME_MENU_TID := 0004003000009802
 FONT_TID := 0004009B00014002
-VERSION := 1.8.0
+VERSION := 1.9.0
 
 # Which language the mod stands in place of. `ru` builds into dist/, `en` into dist_en/;
 # the targets below build both, and SLOT= picks one for the single-slot targets (sd).
