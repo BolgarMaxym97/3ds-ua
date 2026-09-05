@@ -2,20 +2,32 @@
   "storeInfo": {
     "title": "Українізатор 3DS/2DS",
     "author": "BolgarMaxym97",
-    "description": "Українська мова для системного інтерфейсу Nintendo 3DS/2DS. Стає на місце російського або англійського мовного слота; який саме - питає під час установки.",
+    "description": "Українська мова для системного інтерфейсу Nintendo 3DS/2DS - 3DS, 3DS XL, 2DS, New 3DS, New 3DS XL, New 2DS XL. Стає на місце російського або англійського мовного слота; яка у вас модель і який слот замінити - питає під час установки.",
     "url": "https://raw.githubusercontent.com/BolgarMaxym97/3ds-ua/main/unistore/3ds-ua.unistore",
     "file": "3ds-ua.unistore",
     "version": 3,
-    "revision": 10801,
+    "revision": 10802,
     "infoURL": "https://github.com/BolgarMaxym97/3ds-ua",
     "sheet": "3ds-ua.t3x",
     "sheetURL": "https://raw.githubusercontent.com/BolgarMaxym97/3ds-ua/main/unistore/3ds-ua.t3x"
   },
   "storeContent": [
     {
-      "1. Встановити: New 3DS / New 2DS XL · замість російської": {
+      "1. Встановити / оновити": {
         "size": "~23 МБ",
         "script": [
+          {
+            "type": "promptMessage",
+            "message": "У вас New 3DS, New 3DS XL або New 2DS XL?\n\nМодель написана спереду під нижнім екраном:\nякщо там немає слова New - відповідайте Ні.",
+            "name": "new3ds",
+            "count": 9
+          },
+          {
+            "type": "promptMessage",
+            "message": "Замінити РОСІЙСЬКУ мову?\n\nНі = замінити англійську.",
+            "name": "slot",
+            "count": 4
+          },
           {
             "type": "downloadRelease",
             "repo": "BolgarMaxym97/3ds-ua",
@@ -34,10 +46,101 @@
           {
             "type": "deleteFile",
             "file": "/3ds/3ds-ua.zip"
+          },
+          {
+            "type": "skip",
+            "count": 12
+          },
+          {
+            "type": "downloadRelease",
+            "repo": "BolgarMaxym97/3ds-ua",
+            "file": "3ds-ua-from-en-.*-new3ds\\.zip",
+            "output": "/3ds/3ds-ua.zip",
+            "message": "Завантаження архіву (~23 МБ)...",
+            "includePrereleases": false
+          },
+          {
+            "type": "extractFile",
+            "file": "/3ds/3ds-ua.zip",
+            "input": "^luma/",
+            "output": "/luma/",
+            "message": "Розпакування..."
+          },
+          {
+            "type": "deleteFile",
+            "file": "/3ds/3ds-ua.zip"
+          },
+          {
+            "type": "skip",
+            "count": 8
+          },
+          {
+            "type": "promptMessage",
+            "message": "Замінити РОСІЙСЬКУ мову?\n\nНі = замінити англійську.",
+            "name": "slot",
+            "count": 4
+          },
+          {
+            "type": "downloadRelease",
+            "repo": "BolgarMaxym97/3ds-ua",
+            "file": "3ds-ua-from-ru-.*-old3ds\\.zip",
+            "output": "/3ds/3ds-ua.zip",
+            "message": "Завантаження архіву (~23 МБ)...",
+            "includePrereleases": false
+          },
+          {
+            "type": "extractFile",
+            "file": "/3ds/3ds-ua.zip",
+            "input": "^luma/",
+            "output": "/luma/",
+            "message": "Розпакування..."
+          },
+          {
+            "type": "deleteFile",
+            "file": "/3ds/3ds-ua.zip"
+          },
+          {
+            "type": "skip",
+            "count": 3
+          },
+          {
+            "type": "downloadRelease",
+            "repo": "BolgarMaxym97/3ds-ua",
+            "file": "3ds-ua-from-en-.*-old3ds\\.zip",
+            "output": "/3ds/3ds-ua.zip",
+            "message": "Завантаження архіву (~23 МБ)...",
+            "includePrereleases": false
+          },
+          {
+            "type": "extractFile",
+            "file": "/3ds/3ds-ua.zip",
+            "input": "^luma/",
+            "output": "/luma/",
+            "message": "Розпакування..."
+          },
+          {
+            "type": "deleteFile",
+            "file": "/3ds/3ds-ua.zip"
+          },
+          {
+            "type": "promptMessage",
+            "message": "Готово.\n\n1. Вимкніть консоль, увімкніть із затиснутим SELECT,\n   увімкніть Enable game patching, натисніть START.\n2. Налаштування системи -> Інші налаштування ->\n   Мова -> Українська."
           }
         ]
       },
-      "5. Видалити: New 3DS / New 2DS XL · замість російської": [
+      "2. Видалити українізатор": [
+        {
+          "type": "promptMessage",
+          "message": "У вас New 3DS, New 3DS XL або New 2DS XL?\n\nМодель написана спереду під нижнім екраном:\nякщо там немає слова New - відповідайте Ні.",
+          "name": "new3ds",
+          "count": 511
+        },
+        {
+          "type": "promptMessage",
+          "message": "Замінити РОСІЙСЬКУ мову?\n\nНі = замінити англійську.",
+          "name": "slot",
+          "count": 255
+        },
         {
           "type": "deleteFile",
           "file": "/luma/titles/0004001000022000/code.ips"
@@ -1053,33 +1156,11 @@
         {
           "type": "deleteFile",
           "file": "/luma/titles/0004003020009D02/romfs/message/EU_Russian/swkbd.msbt"
-        }
-      ],
-      "2. Встановити: New 3DS / New 2DS XL · замість англійської": {
-        "size": "~23 МБ",
-        "script": [
-          {
-            "type": "downloadRelease",
-            "repo": "BolgarMaxym97/3ds-ua",
-            "file": "3ds-ua-from-en-.*-new3ds\\.zip",
-            "output": "/3ds/3ds-ua.zip",
-            "message": "Завантаження архіву (~23 МБ)...",
-            "includePrereleases": false
-          },
-          {
-            "type": "extractFile",
-            "file": "/3ds/3ds-ua.zip",
-            "input": "^luma/",
-            "output": "/luma/",
-            "message": "Розпакування..."
-          },
-          {
-            "type": "deleteFile",
-            "file": "/3ds/3ds-ua.zip"
-          }
-        ]
-      },
-      "6. Видалити: New 3DS / New 2DS XL · замість англійської": [
+        },
+        {
+          "type": "skip",
+          "count": 743
+        },
         {
           "type": "deleteFile",
           "file": "/luma/titles/0004001000022000/code.ips"
@@ -2095,33 +2176,17 @@
         {
           "type": "deleteFile",
           "file": "/luma/titles/0004003020009D02/romfs/message/EU_English/swkbd.msbt"
-        }
-      ],
-      "3. Встановити: 3DS / 2DS · замість російської": {
-        "size": "~23 МБ",
-        "script": [
-          {
-            "type": "downloadRelease",
-            "repo": "BolgarMaxym97/3ds-ua",
-            "file": "3ds-ua-from-ru-.*-old3ds\\.zip",
-            "output": "/3ds/3ds-ua.zip",
-            "message": "Завантаження архіву (~23 МБ)...",
-            "includePrereleases": false
-          },
-          {
-            "type": "extractFile",
-            "file": "/3ds/3ds-ua.zip",
-            "input": "^luma/",
-            "output": "/luma/",
-            "message": "Розпакування..."
-          },
-          {
-            "type": "deleteFile",
-            "file": "/3ds/3ds-ua.zip"
-          }
-        ]
-      },
-      "7. Видалити: 3DS / 2DS · замість російської": [
+        },
+        {
+          "type": "skip",
+          "count": 488
+        },
+        {
+          "type": "promptMessage",
+          "message": "Замінити РОСІЙСЬКУ мову?\n\nНі = замінити англійську.",
+          "name": "slot",
+          "count": 244
+        },
         {
           "type": "deleteFile",
           "file": "/luma/titles/0004001000022000/code.ips"
@@ -3093,33 +3158,11 @@
         {
           "type": "deleteFile",
           "file": "/luma/titles/000400300000F602/memolib_romfs.bin"
-        }
-      ],
-      "4. Встановити: 3DS / 2DS · замість англійської": {
-        "size": "~23 МБ",
-        "script": [
-          {
-            "type": "downloadRelease",
-            "repo": "BolgarMaxym97/3ds-ua",
-            "file": "3ds-ua-from-en-.*-old3ds\\.zip",
-            "output": "/3ds/3ds-ua.zip",
-            "message": "Завантаження архіву (~23 МБ)...",
-            "includePrereleases": false
-          },
-          {
-            "type": "extractFile",
-            "file": "/3ds/3ds-ua.zip",
-            "input": "^luma/",
-            "output": "/luma/",
-            "message": "Розпакування..."
-          },
-          {
-            "type": "deleteFile",
-            "file": "/3ds/3ds-ua.zip"
-          }
-        ]
-      },
-      "8. Видалити: 3DS / 2DS · замість англійської": [
+        },
+        {
+          "type": "skip",
+          "count": 243
+        },
         {
           "type": "deleteFile",
           "file": "/luma/titles/0004001000022000/code.ips"
@@ -4091,9 +4134,13 @@
         {
           "type": "deleteFile",
           "file": "/luma/titles/000400300000F602/memolib_romfs.bin"
+        },
+        {
+          "type": "promptMessage",
+          "message": "Файли видалено.\n\nПеремкніть мову консолі в Налаштуваннях системи."
         }
       ],
-      "9. Видалити примусово (питає про кожну папку)": [
+      "3. Видалити примусово (питає про кожну папку)": [
         {
           "type": "rmdir",
           "directory": "/luma/titles/0004001000022000",
@@ -4258,7 +4305,7 @@
       "info": {
         "title": "Українізатор 3DS/2DS",
         "author": "BolgarMaxym97",
-        "description": "Українська мова для системного інтерфейсу Nintendo 3DS/2DS. Стає на місце російського або англійського мовного слота; який саме - питає під час установки.",
+        "description": "Українська мова для системного інтерфейсу Nintendo 3DS/2DS - 3DS, 3DS XL, 2DS, New 3DS, New 3DS XL, New 2DS XL. Стає на місце російського або англійського мовного слота; яка у вас модель і який слот замінити - питає під час установки.",
         "version": "1.8.0",
         "category": [
           "translation",
@@ -4269,7 +4316,7 @@
         ],
         "license": "MIT",
         "color": "#005BBB",
-        "preinstall_message": "Потрібна Luma3DS з увімкненим Enable game patching, і після встановлення\nтреба перемкнути мову консолі вручну.\n\nСкрипти 2 і 3 видаляють папки luma/titles системних застосунків цілком -\nразом із чужими модами для тих самих застосунків, якщо вони у вас є.",
+        "preinstall_message": "УВАГА: Universal-Updater виконує все у ЧЕРЗІ.\nПісля запуску відкрийте її третьою іконкою\nв лівій панелі - там будуть питання.\nБез відповіді на них робота стоїть.\n\nПотрібна Luma3DS з увімкненим Enable game patching,\nа мову консолі після встановлення треба\nперемкнути вручну.",
         "releasenotes": "Виправлення в Звуку Nintendo 3DS, знайдені тестуванням на консолі: підписи кнопок, що не вміщалися й розповзалися на другий рядок або обрізалися рамкою.\n\nКнопки програвача. «Інструментал» у списку ефектів показувався як «Інструмента» з «л» на другому рядку, а «Вентилятор» серед ефектів записів був на межі. Обидва тепер стиснуті вужчим кеглем — тим самим прийомом, яким Nintendo тисне свої довгі підписи в цих же кнопках.\n\nКнопка «Додати…» стала «Додати». Крапки не вміщалися й перескакували на другий рядок. Три підказки, що згадують цю панель, переписані так само.\n\nКнопка «Скинути» на екрані спорідненості StreetPass більше не обрізається рамкою — показувала «Скинут».\n\nЗаодно підтягнуто ще чотири підписи з того самого екрана списку відтворення: «Відкрити», «Прибрати», «Прибрати все» і «тощо».\n\nБільше в цій версії немає нічого: жоден інший додаток, файл чи правка коду не змінювалися. Якщо Звуком ви не користуєтесь, оновлюватися не обов'язково.",
         "installed_files": [
           "/luma/titles/0004003000009802/banner_22800.bin",
@@ -4277,7 +4324,7 @@
         ],
         "icon_index": 0,
         "sheet_index": 0,
-        "last_updated": "2026-09-05 at 10:42 (UTC)"
+        "last_updated": "2026-09-05 at 10:57 (UTC)"
       }
     }
   ]
