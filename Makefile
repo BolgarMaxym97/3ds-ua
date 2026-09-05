@@ -64,8 +64,10 @@ package-ru: manuals-ru ## build 3ds-ua-from-ru-$(VERSION)-{old3ds,new3ds}.zip
 package-en: manuals-en ## build 3ds-ua-from-en-$(VERSION)-{old3ds,new3ds}.zip
 	$(PY) tools/package.py $(VERSION) --slot en
 
-unistore: ## regenerate unistore/3ds-ua.unistore (metadata only, no build needed)
-	$(PY) tools/unistore.py $(VERSION)
+# REV= bumps the store revision without a new release, for a store-only fix (a reworded
+# script, a new icon). Universal-Updater refetches only when the revision grows.
+unistore: ## regenerate unistore/3ds-ua.unistore from dist/ (REV=10801 for a store-only fix)
+	$(PY) tools/unistore.py $(VERSION) $(if $(REV),--revision $(REV) --stamp)
 
 unistore-check: ## walk the store's scripts and check them against TITLES and the built archives
 	$(PY) tools/unistore.py $(VERSION) --check

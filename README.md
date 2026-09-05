@@ -64,13 +64,24 @@ https://raw.githubusercontent.com/BolgarMaxym97/3ds-ua/main/unistore/3ds-ua.unis
 
 **2. Встановіть**
 
-Знайдіть у списку **3DS UA** і виберіть скрипт `1. Встановити / оновити`. Застосунок спитає дві речі: чи консоль New 3DS (модель написана спереду під нижнім екраном) і чи заміняти російську мову — «Ні» замінить англійську. Universal-Updater не вміє сам визначити ні модель, ні мову, тому й питає; відповіді він запам'ятає, і вдруге їх не спитають.
+Знайдіть у списку **3DS UA** і виберіть скрипт для своєї консолі:
 
-Помилилися з відповіддю — просто запустіть `2. Перевстановити з очищенням` і дайте інші.
+| Скрипт | Кому |
+|---|---|
+| `1. Встановити: New 3DS / New 2DS XL · замість російської` | New 3DS, New 3DS XL, New 2DS XL |
+| `2. Встановити: New 3DS / New 2DS XL · замість англійської` | те саме, але замість англійської |
+| `3. Встановити: 3DS / 2DS · замість російської` | 3DS, 3DS XL, 2DS |
+| `4. Встановити: 3DS / 2DS · замість англійської` | те саме, але замість англійської |
+
+Модель написана спереду під нижнім екраном: якщо там `New`, беріть перші два.
+
+Жодних питань скрипт не ставить: Universal-Updater виконує все у своїй **черзі**, і будь-яке питання чекало б там на окремому екрані, який легко не помітити. Тому вибір — це просто потрібний рядок у списку.
+
+Помилилися з вибором — запустіть відповідний скрипт `Видалити:`, тоді потрібний `Встановити:`.
 
 **3. Далі — кроки 2 і 3 з ручного встановлення нижче** (`Enable game patching` і вибір мови). Їх не обійти жодним застосунком.
 
-Коли вийде нова версія, на іконці **3DS UA** з'явиться зелена стрілка — запустіть той самий `1. Встановити / оновити`.
+Коли вийде нова версія, на іконці **3DS UA** з'явиться зелена стрілка — запустіть той самий скрипт `Встановити:`, що й першого разу. Він перезапише файли поверх.
 
 ## Встановлення вручну (з SD-карти)
 
@@ -98,7 +109,7 @@ https://raw.githubusercontent.com/BolgarMaxym97/3ds-ua/main/unistore/3ds-ua.unis
 
 Будь-який спосіб:
 
-1. **У Universal-Updater** → **3DS UA** → `3. Видалити українізатор`. Прибирає рівно папки мода. Universal-Updater питає підтвердження на кожну папку — їх 30 або 32, тримайте `A`.
+1. **У Universal-Updater** → **3DS UA** → скрипт `Видалити:` для того самого варіанта, який ставили. Прибирає рівно ті файли, які клав, і нічого не питає. Якщо він обірветься з помилкою (таке буває, коли частину файлів уже видалено вручну або стоїть старіша версія) — є запасний `9. Видалити примусово`, той питає підтвердження на кожну папку, зате працює за будь-якого стану картки.
 2. **Змінити мову консолі** на будь-яку іншу — переклад просто не застосується.
 3. **Видалити папки мода** з `SD:/luma/titles/` вручну.
 4. **Вимкнути `Enable game patching`** у меню Luma (це вимкне й інші моди).
@@ -134,7 +145,8 @@ https://raw.githubusercontent.com/BolgarMaxym97/3ds-ua/main/unistore/3ds-ua.unis
 | Universal-Updater не бачить магазин | Звірте посилання посимвольно. Після оновлення магазину дайте ~5 хвилин: GitHub кешує файл. |
 | У Universal-Updater помилка завантаження | Реліз ще не опубліковано або зникла мережа — спробуйте пізніше чи візьміть архів вручну. Ще одна причина — збита дата на консолі: тоді не проходить перевірка сертифіката. |
 | Не вистачає місця | Під час встановлення треба ~55 МБ вільних: 23 МБ архіву плюс 30 МБ розпакованого. |
-| Питання про модель більше не з'являються | Universal-Updater запам'ятав відповіді. Змінити їх можна через `2. Перевстановити з очищенням`. |
+| Після запуску скрипта нічого не відбувається | Universal-Updater кладе роботу в **чергу**. Відкрийте її третьою іконкою в лівій панелі на нижньому екрані — там видно поступ. |
+| `Видалити:` обірвався помилкою | Частини файлів уже немає. Запустіть `9. Видалити примусово` — він працює за будь-якого стану картки. |
 | Якийсь додаток крешить після встановлення | У вас старіша його версія. Видаліть папку цього додатка з `SD:/luma/titles/` — решта перекладу працюватиме. Номери папок є в [технічному описі](docs/internals.md). |
 
 Порожні квадрати замість літер, обрізані чи накладені написи — це баг. [Відкрийте Issue](../../issues) з фото екрана.
@@ -201,13 +213,24 @@ https://raw.githubusercontent.com/BolgarMaxym97/3ds-ua/main/unistore/3ds-ua.unis
 
 **2. Install**
 
-Find **3DS UA** in the list and run the `1. Встановити / оновити` script. It asks two things: whether the console is a New 3DS (the model is printed on the front, below the bottom screen) and whether to replace Russian — "no" replaces English. Universal-Updater cannot detect the model or the language on its own, which is why it asks; it remembers the answers, so it won't ask again.
+Find **3DS UA** in the list and pick the script for your console:
 
-Answered wrong? Run `2. Перевстановити з очищенням` and answer differently.
+| Script | For |
+|---|---|
+| `1. Встановити: New 3DS / New 2DS XL · замість російської` | New 3DS, New 3DS XL, New 2DS XL |
+| `2. Встановити: New 3DS / New 2DS XL · замість англійської` | the same, replacing English |
+| `3. Встановити: 3DS / 2DS · замість російської` | 3DS, 3DS XL, 2DS |
+| `4. Встановити: 3DS / 2DS · замість англійської` | the same, replacing English |
+
+The model is printed on the front, below the bottom screen: if it says `New`, take one of the first two.
+
+The scripts ask nothing. Universal-Updater runs everything through its **queue**, where a prompt would sit on a separate screen that is easy to miss — so the choice is simply which line you pick.
+
+Picked wrong? Run the matching `Видалити:` script, then the right `Встановити:` one.
 
 **3. Then do steps 2 and 3 of the manual installation below** (`Enable game patching` and picking the language). No app can do those for you.
 
-When a new version ships, a green arrow appears on the **3DS UA** icon — run the same `1. Встановити / оновити`.
+When a new version ships, a green arrow appears on the **3DS UA** icon — run the same `Встановити:` script as before; it overwrites in place.
 
 ### Installation from the SD card (manual)
 
@@ -235,7 +258,7 @@ The console reboots itself. Done.
 
 Any of these:
 
-1. **In Universal-Updater** → **3DS UA** → `3. Видалити українізатор`. Removes exactly the mod's folders. Universal-Updater confirms each one — there are 30 or 32 of them, so hold `A`.
+1. **In Universal-Updater** → **3DS UA** → the `Видалити:` script for the variant you installed. It removes exactly the files it put there and asks nothing. If it stops with an error (some files already gone, or an older version installed), use the fallback `9. Видалити примусово` — it confirms every folder, but works whatever state the card is in.
 2. **Switch the console language** to anything else — the translation simply won't apply.
 3. **Delete the mod folders** from `SD:/luma/titles/` by hand.
 4. **Turn `Enable game patching` off** in the Luma menu (this disables other mods too).
@@ -271,7 +294,8 @@ Nothing in the system was modified, so removal cannot break anything.
 | Universal-Updater doesn't see the store | Check the URL character by character. After the store is updated, give it ~5 minutes: GitHub caches the file. |
 | Download error in Universal-Updater | The release isn't published yet, or the network dropped — try later or grab the archive by hand. Another cause is a wrong console clock, which fails the certificate check. |
 | Not enough space | Installing needs ~55 MB free: 23 MB of archive plus 30 MB unpacked. |
-| It no longer asks about the model | Universal-Updater remembered the answers. Change them with `2. Перевстановити з очищенням`. |
+| Nothing happens after starting a script | Universal-Updater puts the work in a **queue**. Open it with the third icon in the left sidebar on the bottom screen to watch progress. |
+| A `Видалити:` script stopped with an error | Some files are already gone. Run `9. Видалити примусово`, which works whatever state the card is in. |
 | An app crashes after installing | You have an older build of it. Delete that app's folder from `SD:/luma/titles/` — the rest keeps working. Folder numbers are in the [technical write-up](docs/internals.en.md). |
 
 Empty boxes instead of letters, clipped or overlapping text — that's a bug. [Open an Issue](../../issues) with a photo.

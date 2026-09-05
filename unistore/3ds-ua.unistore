@@ -6,28 +6,16 @@
     "url": "https://raw.githubusercontent.com/BolgarMaxym97/3ds-ua/main/unistore/3ds-ua.unistore",
     "file": "3ds-ua.unistore",
     "version": 3,
-    "revision": 10800,
+    "revision": 10801,
     "infoURL": "https://github.com/BolgarMaxym97/3ds-ua",
     "sheet": "3ds-ua.t3x",
     "sheetURL": "https://raw.githubusercontent.com/BolgarMaxym97/3ds-ua/main/unistore/3ds-ua.t3x"
   },
   "storeContent": [
     {
-      "1. Встановити / оновити": {
+      "1. Встановити: New 3DS / New 2DS XL · замість російської": {
         "size": "~23 МБ",
         "script": [
-          {
-            "type": "promptMessage",
-            "message": "У вас New 3DS, New 3DS XL або New 2DS XL?\n\nМодель написана спереду під нижнім екраном.",
-            "name": "new3ds",
-            "count": 9
-          },
-          {
-            "type": "promptMessage",
-            "message": "Замінити РОСІЙСЬКУ мову?\n\nНі = замінити англійську.",
-            "name": "slot",
-            "count": 4
-          },
           {
             "type": "downloadRelease",
             "repo": "BolgarMaxym97/3ds-ua",
@@ -46,369 +34,4066 @@
           {
             "type": "deleteFile",
             "file": "/3ds/3ds-ua.zip"
-          },
-          {
-            "type": "skip",
-            "count": 12
-          },
-          {
-            "type": "downloadRelease",
-            "repo": "BolgarMaxym97/3ds-ua",
-            "file": "3ds-ua-from-en-.*-new3ds\\.zip",
-            "output": "/3ds/3ds-ua.zip",
-            "message": "Завантаження архіву (~23 МБ)...",
-            "includePrereleases": false
-          },
-          {
-            "type": "extractFile",
-            "file": "/3ds/3ds-ua.zip",
-            "input": "^luma/",
-            "output": "/luma/",
-            "message": "Розпакування..."
-          },
-          {
-            "type": "deleteFile",
-            "file": "/3ds/3ds-ua.zip"
-          },
-          {
-            "type": "skip",
-            "count": 8
-          },
-          {
-            "type": "promptMessage",
-            "message": "Замінити РОСІЙСЬКУ мову?\n\nНі = замінити англійську.",
-            "name": "slot",
-            "count": 4
-          },
-          {
-            "type": "downloadRelease",
-            "repo": "BolgarMaxym97/3ds-ua",
-            "file": "3ds-ua-from-ru-.*-old3ds\\.zip",
-            "output": "/3ds/3ds-ua.zip",
-            "message": "Завантаження архіву (~23 МБ)...",
-            "includePrereleases": false
-          },
-          {
-            "type": "extractFile",
-            "file": "/3ds/3ds-ua.zip",
-            "input": "^luma/",
-            "output": "/luma/",
-            "message": "Розпакування..."
-          },
-          {
-            "type": "deleteFile",
-            "file": "/3ds/3ds-ua.zip"
-          },
-          {
-            "type": "skip",
-            "count": 3
-          },
-          {
-            "type": "downloadRelease",
-            "repo": "BolgarMaxym97/3ds-ua",
-            "file": "3ds-ua-from-en-.*-old3ds\\.zip",
-            "output": "/3ds/3ds-ua.zip",
-            "message": "Завантаження архіву (~23 МБ)...",
-            "includePrereleases": false
-          },
-          {
-            "type": "extractFile",
-            "file": "/3ds/3ds-ua.zip",
-            "input": "^luma/",
-            "output": "/luma/",
-            "message": "Розпакування..."
-          },
-          {
-            "type": "deleteFile",
-            "file": "/3ds/3ds-ua.zip"
-          },
-          {
-            "type": "promptMessage",
-            "message": "Готово.\n\n1. Вимкніть консоль, увімкніть із затиснутим SELECT,\n   увімкніть Enable game patching, натисніть START.\n2. Налаштування системи -> Інші налаштування ->\n   Мова -> Українська."
           }
         ]
       },
-      "2. Перевстановити з очищенням": {
-        "size": "~23 МБ",
-        "script": [
-          {
-            "type": "promptMessage",
-            "message": "Видалити всі файли українізатора?\n\nUU спитає підтвердження на кожну папку."
-          },
-          {
-            "type": "rmdir",
-            "directory": "/luma/titles/0004001000022000",
-            "message": "Видаляю /luma/titles/0004001000022000"
-          },
-          {
-            "type": "rmdir",
-            "directory": "/luma/titles/0004001000022100",
-            "message": "Видаляю /luma/titles/0004001000022100"
-          },
-          {
-            "type": "rmdir",
-            "directory": "/luma/titles/0004001000022200",
-            "message": "Видаляю /luma/titles/0004001000022200"
-          },
-          {
-            "type": "rmdir",
-            "directory": "/luma/titles/0004001000022300",
-            "message": "Видаляю /luma/titles/0004001000022300"
-          },
-          {
-            "type": "rmdir",
-            "directory": "/luma/titles/0004001000022400",
-            "message": "Видаляю /luma/titles/0004001000022400"
-          },
-          {
-            "type": "rmdir",
-            "directory": "/luma/titles/0004001000022500",
-            "message": "Видаляю /luma/titles/0004001000022500"
-          },
-          {
-            "type": "rmdir",
-            "directory": "/luma/titles/0004001000022700",
-            "message": "Видаляю /luma/titles/0004001000022700"
-          },
-          {
-            "type": "rmdir",
-            "directory": "/luma/titles/0004001000022800",
-            "message": "Видаляю /luma/titles/0004001000022800"
-          },
-          {
-            "type": "rmdir",
-            "directory": "/luma/titles/0004001000022900",
-            "message": "Видаляю /luma/titles/0004001000022900"
-          },
-          {
-            "type": "rmdir",
-            "directory": "/luma/titles/0004001000022A00",
-            "message": "Видаляю /luma/titles/0004001000022A00"
-          },
-          {
-            "type": "rmdir",
-            "directory": "/luma/titles/0004001000022B00",
-            "message": "Видаляю /luma/titles/0004001000022B00"
-          },
-          {
-            "type": "rmdir",
-            "directory": "/luma/titles/0004001000022D00",
-            "message": "Видаляю /luma/titles/0004001000022D00"
-          },
-          {
-            "type": "rmdir",
-            "directory": "/luma/titles/0004001000022E00",
-            "message": "Видаляю /luma/titles/0004001000022E00"
-          },
-          {
-            "type": "rmdir",
-            "directory": "/luma/titles/000400100002C100",
-            "message": "Видаляю /luma/titles/000400100002C100"
-          },
-          {
-            "type": "rmdir",
-            "directory": "/luma/titles/0004001020022300",
-            "message": "Видаляю /luma/titles/0004001020022300"
-          },
-          {
-            "type": "rmdir",
-            "directory": "/luma/titles/0004003000009802",
-            "message": "Видаляю /luma/titles/0004003000009802"
-          },
-          {
-            "type": "rmdir",
-            "directory": "/luma/titles/0004003000009902",
-            "message": "Видаляю /luma/titles/0004003000009902"
-          },
-          {
-            "type": "rmdir",
-            "directory": "/luma/titles/0004003000009B02",
-            "message": "Видаляю /luma/titles/0004003000009B02"
-          },
-          {
-            "type": "rmdir",
-            "directory": "/luma/titles/0004003000009C02",
-            "message": "Видаляю /luma/titles/0004003000009C02"
-          },
-          {
-            "type": "rmdir",
-            "directory": "/luma/titles/0004003000009D02",
-            "message": "Видаляю /luma/titles/0004003000009D02"
-          },
-          {
-            "type": "rmdir",
-            "directory": "/luma/titles/0004003000009F02",
-            "message": "Видаляю /luma/titles/0004003000009F02"
-          },
-          {
-            "type": "rmdir",
-            "directory": "/luma/titles/000400300000A002",
-            "message": "Видаляю /luma/titles/000400300000A002"
-          },
-          {
-            "type": "rmdir",
-            "directory": "/luma/titles/000400300000B902",
-            "message": "Видаляю /luma/titles/000400300000B902"
-          },
-          {
-            "type": "rmdir",
-            "directory": "/luma/titles/000400300000BA02",
-            "message": "Видаляю /luma/titles/000400300000BA02"
-          },
-          {
-            "type": "rmdir",
-            "directory": "/luma/titles/000400300000BE02",
-            "message": "Видаляю /luma/titles/000400300000BE02"
-          },
-          {
-            "type": "rmdir",
-            "directory": "/luma/titles/000400300000C502",
-            "message": "Видаляю /luma/titles/000400300000C502"
-          },
-          {
-            "type": "rmdir",
-            "directory": "/luma/titles/000400300000CD02",
-            "message": "Видаляю /luma/titles/000400300000CD02"
-          },
-          {
-            "type": "rmdir",
-            "directory": "/luma/titles/000400300000D002",
-            "message": "Видаляю /luma/titles/000400300000D002"
-          },
-          {
-            "type": "rmdir",
-            "directory": "/luma/titles/000400300000D102",
-            "message": "Видаляю /luma/titles/000400300000D102"
-          },
-          {
-            "type": "rmdir",
-            "directory": "/luma/titles/000400300000D602",
-            "message": "Видаляю /luma/titles/000400300000D602"
-          },
-          {
-            "type": "rmdir",
-            "directory": "/luma/titles/000400300000F602",
-            "message": "Видаляю /luma/titles/000400300000F602"
-          },
-          {
-            "type": "rmdir",
-            "directory": "/luma/titles/0004003020009D02",
-            "message": "Видаляю /luma/titles/0004003020009D02"
-          },
-          {
-            "type": "promptMessage",
-            "message": "У вас New 3DS, New 3DS XL або New 2DS XL?\n\nМодель написана спереду під нижнім екраном.",
-            "count": 9
-          },
-          {
-            "type": "promptMessage",
-            "message": "Замінити РОСІЙСЬКУ мову?\n\nНі = замінити англійську.",
-            "count": 4
-          },
-          {
-            "type": "downloadRelease",
-            "repo": "BolgarMaxym97/3ds-ua",
-            "file": "3ds-ua-from-ru-.*-new3ds\\.zip",
-            "output": "/3ds/3ds-ua.zip",
-            "message": "Завантаження архіву (~23 МБ)...",
-            "includePrereleases": false
-          },
-          {
-            "type": "extractFile",
-            "file": "/3ds/3ds-ua.zip",
-            "input": "^luma/",
-            "output": "/luma/",
-            "message": "Розпакування..."
-          },
-          {
-            "type": "deleteFile",
-            "file": "/3ds/3ds-ua.zip"
-          },
-          {
-            "type": "skip",
-            "count": 12
-          },
-          {
-            "type": "downloadRelease",
-            "repo": "BolgarMaxym97/3ds-ua",
-            "file": "3ds-ua-from-en-.*-new3ds\\.zip",
-            "output": "/3ds/3ds-ua.zip",
-            "message": "Завантаження архіву (~23 МБ)...",
-            "includePrereleases": false
-          },
-          {
-            "type": "extractFile",
-            "file": "/3ds/3ds-ua.zip",
-            "input": "^luma/",
-            "output": "/luma/",
-            "message": "Розпакування..."
-          },
-          {
-            "type": "deleteFile",
-            "file": "/3ds/3ds-ua.zip"
-          },
-          {
-            "type": "skip",
-            "count": 8
-          },
-          {
-            "type": "promptMessage",
-            "message": "Замінити РОСІЙСЬКУ мову?\n\nНі = замінити англійську.",
-            "count": 4
-          },
-          {
-            "type": "downloadRelease",
-            "repo": "BolgarMaxym97/3ds-ua",
-            "file": "3ds-ua-from-ru-.*-old3ds\\.zip",
-            "output": "/3ds/3ds-ua.zip",
-            "message": "Завантаження архіву (~23 МБ)...",
-            "includePrereleases": false
-          },
-          {
-            "type": "extractFile",
-            "file": "/3ds/3ds-ua.zip",
-            "input": "^luma/",
-            "output": "/luma/",
-            "message": "Розпакування..."
-          },
-          {
-            "type": "deleteFile",
-            "file": "/3ds/3ds-ua.zip"
-          },
-          {
-            "type": "skip",
-            "count": 3
-          },
-          {
-            "type": "downloadRelease",
-            "repo": "BolgarMaxym97/3ds-ua",
-            "file": "3ds-ua-from-en-.*-old3ds\\.zip",
-            "output": "/3ds/3ds-ua.zip",
-            "message": "Завантаження архіву (~23 МБ)...",
-            "includePrereleases": false
-          },
-          {
-            "type": "extractFile",
-            "file": "/3ds/3ds-ua.zip",
-            "input": "^luma/",
-            "output": "/luma/",
-            "message": "Розпакування..."
-          },
-          {
-            "type": "deleteFile",
-            "file": "/3ds/3ds-ua.zip"
-          },
-          {
-            "type": "promptMessage",
-            "message": "Готово.\n\n1. Вимкніть консоль, увімкніть із затиснутим SELECT,\n   увімкніть Enable game patching, натисніть START.\n2. Налаштування системи -> Інші налаштування ->\n   Мова -> Українська."
-          }
-        ]
-      },
-      "3. Видалити українізатор": [
+      "5. Видалити: New 3DS / New 2DS XL · замість російської": [
         {
-          "type": "promptMessage",
-          "message": "Видалити всі файли українізатора?\n\nUU спитає підтвердження на кожну папку."
+          "type": "deleteFile",
+          "file": "/luma/titles/0004001000022000/code.ips"
         },
+        {
+          "type": "deleteFile",
+          "file": "/luma/titles/0004001000022100/code.ips"
+        },
+        {
+          "type": "deleteFile",
+          "file": "/luma/titles/0004001000022100/exheader.bin"
+        },
+        {
+          "type": "deleteFile",
+          "file": "/luma/titles/0004001000022200/code.ips"
+        },
+        {
+          "type": "deleteFile",
+          "file": "/luma/titles/0004001000022200/exheader.bin"
+        },
+        {
+          "type": "deleteFile",
+          "file": "/luma/titles/0004001000022300/code.ips"
+        },
+        {
+          "type": "deleteFile",
+          "file": "/luma/titles/0004001000022300/exheader.bin"
+        },
+        {
+          "type": "deleteFile",
+          "file": "/luma/titles/0004001000022800/exheader.bin"
+        },
+        {
+          "type": "deleteFile",
+          "file": "/luma/titles/0004001000022900/exheader.bin"
+        },
+        {
+          "type": "deleteFile",
+          "file": "/luma/titles/000400100002C100/code.ips"
+        },
+        {
+          "type": "deleteFile",
+          "file": "/luma/titles/000400100002C100/exheader.bin"
+        },
+        {
+          "type": "deleteFile",
+          "file": "/luma/titles/0004001020022300/code.ips"
+        },
+        {
+          "type": "deleteFile",
+          "file": "/luma/titles/0004001020022300/exheader.bin"
+        },
+        {
+          "type": "deleteFile",
+          "file": "/luma/titles/0004003000009802/code.ips"
+        },
+        {
+          "type": "deleteFile",
+          "file": "/luma/titles/0004003000009902/code.ips"
+        },
+        {
+          "type": "deleteFile",
+          "file": "/luma/titles/0004003000009B02/code.ips"
+        },
+        {
+          "type": "deleteFile",
+          "file": "/luma/titles/0004003000009B02/exheader.bin"
+        },
+        {
+          "type": "deleteFile",
+          "file": "/luma/titles/0004003000009F02/code.ips"
+        },
+        {
+          "type": "deleteFile",
+          "file": "/luma/titles/0004003000009F02/exheader.bin"
+        },
+        {
+          "type": "deleteFile",
+          "file": "/luma/titles/000400300000A002/code.ips"
+        },
+        {
+          "type": "deleteFile",
+          "file": "/luma/titles/000400300000A002/exheader.bin"
+        },
+        {
+          "type": "deleteFile",
+          "file": "/luma/titles/000400300000B902/code.ips"
+        },
+        {
+          "type": "deleteFile",
+          "file": "/luma/titles/000400300000B902/exheader.bin"
+        },
+        {
+          "type": "deleteFile",
+          "file": "/luma/titles/000400300000BA02/exheader.bin"
+        },
+        {
+          "type": "deleteFile",
+          "file": "/luma/titles/000400300000BE02/code.ips"
+        },
+        {
+          "type": "deleteFile",
+          "file": "/luma/titles/000400300000BE02/exheader.bin"
+        },
+        {
+          "type": "deleteFile",
+          "file": "/luma/titles/000400300000C502/code.ips"
+        },
+        {
+          "type": "deleteFile",
+          "file": "/luma/titles/000400300000C502/exheader.bin"
+        },
+        {
+          "type": "deleteFile",
+          "file": "/luma/titles/000400300000CD02/code.ips"
+        },
+        {
+          "type": "deleteFile",
+          "file": "/luma/titles/000400300000CD02/exheader.bin"
+        },
+        {
+          "type": "deleteFile",
+          "file": "/luma/titles/000400300000D002/code.ips"
+        },
+        {
+          "type": "deleteFile",
+          "file": "/luma/titles/000400300000D002/exheader.bin"
+        },
+        {
+          "type": "deleteFile",
+          "file": "/luma/titles/000400300000D102/code.ips"
+        },
+        {
+          "type": "deleteFile",
+          "file": "/luma/titles/000400300000D102/exheader.bin"
+        },
+        {
+          "type": "deleteFile",
+          "file": "/luma/titles/000400300000D602/code.ips"
+        },
+        {
+          "type": "deleteFile",
+          "file": "/luma/titles/000400300000D602/exheader.bin"
+        },
+        {
+          "type": "deleteFile",
+          "file": "/luma/titles/000400300000F602/code.ips"
+        },
+        {
+          "type": "deleteFile",
+          "file": "/luma/titles/000400300000F602/exheader.bin"
+        },
+        {
+          "type": "deleteFile",
+          "file": "/luma/titles/0004001000022000/area/CN/160_LZ.bin"
+        },
+        {
+          "type": "deleteFile",
+          "file": "/luma/titles/0004001000022000/area/CN/country_LZ.bin"
+        },
+        {
+          "type": "deleteFile",
+          "file": "/luma/titles/0004001000022000/area/EU/100_LZ.bin"
+        },
+        {
+          "type": "deleteFile",
+          "file": "/luma/titles/0004001000022000/area/EU/101_LZ.bin"
+        },
+        {
+          "type": "deleteFile",
+          "file": "/luma/titles/0004001000022000/area/EU/102_LZ.bin"
+        },
+        {
+          "type": "deleteFile",
+          "file": "/luma/titles/0004001000022000/area/EU/103_LZ.bin"
+        },
+        {
+          "type": "deleteFile",
+          "file": "/luma/titles/0004001000022000/area/EU/104_LZ.bin"
+        },
+        {
+          "type": "deleteFile",
+          "file": "/luma/titles/0004001000022000/area/EU/105_LZ.bin"
+        },
+        {
+          "type": "deleteFile",
+          "file": "/luma/titles/0004001000022000/area/EU/106_LZ.bin"
+        },
+        {
+          "type": "deleteFile",
+          "file": "/luma/titles/0004001000022000/area/EU/107_LZ.bin"
+        },
+        {
+          "type": "deleteFile",
+          "file": "/luma/titles/0004001000022000/area/EU/108_LZ.bin"
+        },
+        {
+          "type": "deleteFile",
+          "file": "/luma/titles/0004001000022000/area/EU/109_LZ.bin"
+        },
+        {
+          "type": "deleteFile",
+          "file": "/luma/titles/0004001000022000/area/EU/110_LZ.bin"
+        },
+        {
+          "type": "deleteFile",
+          "file": "/luma/titles/0004001000022000/area/EU/111_LZ.bin"
+        },
+        {
+          "type": "deleteFile",
+          "file": "/luma/titles/0004001000022000/area/EU/112_LZ.bin"
+        },
+        {
+          "type": "deleteFile",
+          "file": "/luma/titles/0004001000022000/area/EU/113_LZ.bin"
+        },
+        {
+          "type": "deleteFile",
+          "file": "/luma/titles/0004001000022000/area/EU/114_LZ.bin"
+        },
+        {
+          "type": "deleteFile",
+          "file": "/luma/titles/0004001000022000/area/EU/115_LZ.bin"
+        },
+        {
+          "type": "deleteFile",
+          "file": "/luma/titles/0004001000022000/area/EU/116_LZ.bin"
+        },
+        {
+          "type": "deleteFile",
+          "file": "/luma/titles/0004001000022000/area/EU/117_LZ.bin"
+        },
+        {
+          "type": "deleteFile",
+          "file": "/luma/titles/0004001000022000/area/EU/118_LZ.bin"
+        },
+        {
+          "type": "deleteFile",
+          "file": "/luma/titles/0004001000022000/area/EU/119_LZ.bin"
+        },
+        {
+          "type": "deleteFile",
+          "file": "/luma/titles/0004001000022000/area/EU/120_LZ.bin"
+        },
+        {
+          "type": "deleteFile",
+          "file": "/luma/titles/0004001000022000/area/EU/121_LZ.bin"
+        },
+        {
+          "type": "deleteFile",
+          "file": "/luma/titles/0004001000022000/area/EU/122_LZ.bin"
+        },
+        {
+          "type": "deleteFile",
+          "file": "/luma/titles/0004001000022000/area/EU/123_LZ.bin"
+        },
+        {
+          "type": "deleteFile",
+          "file": "/luma/titles/0004001000022000/area/EU/124_LZ.bin"
+        },
+        {
+          "type": "deleteFile",
+          "file": "/luma/titles/0004001000022000/area/EU/125_LZ.bin"
+        },
+        {
+          "type": "deleteFile",
+          "file": "/luma/titles/0004001000022000/area/EU/126_LZ.bin"
+        },
+        {
+          "type": "deleteFile",
+          "file": "/luma/titles/0004001000022000/area/EU/127_LZ.bin"
+        },
+        {
+          "type": "deleteFile",
+          "file": "/luma/titles/0004001000022000/area/EU/169_LZ.bin"
+        },
+        {
+          "type": "deleteFile",
+          "file": "/luma/titles/0004001000022000/area/EU/184_LZ.bin"
+        },
+        {
+          "type": "deleteFile",
+          "file": "/luma/titles/0004001000022000/area/EU/185_LZ.bin"
+        },
+        {
+          "type": "deleteFile",
+          "file": "/luma/titles/0004001000022000/area/EU/64_LZ.bin"
+        },
+        {
+          "type": "deleteFile",
+          "file": "/luma/titles/0004001000022000/area/EU/65_LZ.bin"
+        },
+        {
+          "type": "deleteFile",
+          "file": "/luma/titles/0004001000022000/area/EU/66_LZ.bin"
+        },
+        {
+          "type": "deleteFile",
+          "file": "/luma/titles/0004001000022000/area/EU/67_LZ.bin"
+        },
+        {
+          "type": "deleteFile",
+          "file": "/luma/titles/0004001000022000/area/EU/68_LZ.bin"
+        },
+        {
+          "type": "deleteFile",
+          "file": "/luma/titles/0004001000022000/area/EU/69_LZ.bin"
+        },
+        {
+          "type": "deleteFile",
+          "file": "/luma/titles/0004001000022000/area/EU/70_LZ.bin"
+        },
+        {
+          "type": "deleteFile",
+          "file": "/luma/titles/0004001000022000/area/EU/71_LZ.bin"
+        },
+        {
+          "type": "deleteFile",
+          "file": "/luma/titles/0004001000022000/area/EU/72_LZ.bin"
+        },
+        {
+          "type": "deleteFile",
+          "file": "/luma/titles/0004001000022000/area/EU/73_LZ.bin"
+        },
+        {
+          "type": "deleteFile",
+          "file": "/luma/titles/0004001000022000/area/EU/74_LZ.bin"
+        },
+        {
+          "type": "deleteFile",
+          "file": "/luma/titles/0004001000022000/area/EU/75_LZ.bin"
+        },
+        {
+          "type": "deleteFile",
+          "file": "/luma/titles/0004001000022000/area/EU/76_LZ.bin"
+        },
+        {
+          "type": "deleteFile",
+          "file": "/luma/titles/0004001000022000/area/EU/77_LZ.bin"
+        },
+        {
+          "type": "deleteFile",
+          "file": "/luma/titles/0004001000022000/area/EU/78_LZ.bin"
+        },
+        {
+          "type": "deleteFile",
+          "file": "/luma/titles/0004001000022000/area/EU/79_LZ.bin"
+        },
+        {
+          "type": "deleteFile",
+          "file": "/luma/titles/0004001000022000/area/EU/80_LZ.bin"
+        },
+        {
+          "type": "deleteFile",
+          "file": "/luma/titles/0004001000022000/area/EU/81_LZ.bin"
+        },
+        {
+          "type": "deleteFile",
+          "file": "/luma/titles/0004001000022000/area/EU/82_LZ.bin"
+        },
+        {
+          "type": "deleteFile",
+          "file": "/luma/titles/0004001000022000/area/EU/83_LZ.bin"
+        },
+        {
+          "type": "deleteFile",
+          "file": "/luma/titles/0004001000022000/area/EU/84_LZ.bin"
+        },
+        {
+          "type": "deleteFile",
+          "file": "/luma/titles/0004001000022000/area/EU/85_LZ.bin"
+        },
+        {
+          "type": "deleteFile",
+          "file": "/luma/titles/0004001000022000/area/EU/86_LZ.bin"
+        },
+        {
+          "type": "deleteFile",
+          "file": "/luma/titles/0004001000022000/area/EU/87_LZ.bin"
+        },
+        {
+          "type": "deleteFile",
+          "file": "/luma/titles/0004001000022000/area/EU/88_LZ.bin"
+        },
+        {
+          "type": "deleteFile",
+          "file": "/luma/titles/0004001000022000/area/EU/89_LZ.bin"
+        },
+        {
+          "type": "deleteFile",
+          "file": "/luma/titles/0004001000022000/area/EU/90_LZ.bin"
+        },
+        {
+          "type": "deleteFile",
+          "file": "/luma/titles/0004001000022000/area/EU/91_LZ.bin"
+        },
+        {
+          "type": "deleteFile",
+          "file": "/luma/titles/0004001000022000/area/EU/92_LZ.bin"
+        },
+        {
+          "type": "deleteFile",
+          "file": "/luma/titles/0004001000022000/area/EU/93_LZ.bin"
+        },
+        {
+          "type": "deleteFile",
+          "file": "/luma/titles/0004001000022000/area/EU/94_LZ.bin"
+        },
+        {
+          "type": "deleteFile",
+          "file": "/luma/titles/0004001000022000/area/EU/95_LZ.bin"
+        },
+        {
+          "type": "deleteFile",
+          "file": "/luma/titles/0004001000022000/area/EU/96_LZ.bin"
+        },
+        {
+          "type": "deleteFile",
+          "file": "/luma/titles/0004001000022000/area/EU/97_LZ.bin"
+        },
+        {
+          "type": "deleteFile",
+          "file": "/luma/titles/0004001000022000/area/EU/98_LZ.bin"
+        },
+        {
+          "type": "deleteFile",
+          "file": "/luma/titles/0004001000022000/area/EU/99_LZ.bin"
+        },
+        {
+          "type": "deleteFile",
+          "file": "/luma/titles/0004001000022000/area/EU/country_LZ.bin"
+        },
+        {
+          "type": "deleteFile",
+          "file": "/luma/titles/0004001000022000/area/JP/1_LZ.bin"
+        },
+        {
+          "type": "deleteFile",
+          "file": "/luma/titles/0004001000022000/area/JP/country_LZ.bin"
+        },
+        {
+          "type": "deleteFile",
+          "file": "/luma/titles/0004001000022000/area/KR/136_LZ.bin"
+        },
+        {
+          "type": "deleteFile",
+          "file": "/luma/titles/0004001000022000/area/KR/country_LZ.bin"
+        },
+        {
+          "type": "deleteFile",
+          "file": "/luma/titles/0004001000022000/area/TW/128_LZ.bin"
+        },
+        {
+          "type": "deleteFile",
+          "file": "/luma/titles/0004001000022000/area/TW/144_LZ.bin"
+        },
+        {
+          "type": "deleteFile",
+          "file": "/luma/titles/0004001000022000/area/TW/145_LZ.bin"
+        },
+        {
+          "type": "deleteFile",
+          "file": "/luma/titles/0004001000022000/area/TW/country_LZ.bin"
+        },
+        {
+          "type": "deleteFile",
+          "file": "/luma/titles/0004001000022000/area/US/10_LZ.bin"
+        },
+        {
+          "type": "deleteFile",
+          "file": "/luma/titles/0004001000022000/area/US/11_LZ.bin"
+        },
+        {
+          "type": "deleteFile",
+          "file": "/luma/titles/0004001000022000/area/US/12_LZ.bin"
+        },
+        {
+          "type": "deleteFile",
+          "file": "/luma/titles/0004001000022000/area/US/13_LZ.bin"
+        },
+        {
+          "type": "deleteFile",
+          "file": "/luma/titles/0004001000022000/area/US/14_LZ.bin"
+        },
+        {
+          "type": "deleteFile",
+          "file": "/luma/titles/0004001000022000/area/US/153_LZ.bin"
+        },
+        {
+          "type": "deleteFile",
+          "file": "/luma/titles/0004001000022000/area/US/156_LZ.bin"
+        },
+        {
+          "type": "deleteFile",
+          "file": "/luma/titles/0004001000022000/area/US/15_LZ.bin"
+        },
+        {
+          "type": "deleteFile",
+          "file": "/luma/titles/0004001000022000/area/US/168_LZ.bin"
+        },
+        {
+          "type": "deleteFile",
+          "file": "/luma/titles/0004001000022000/area/US/16_LZ.bin"
+        },
+        {
+          "type": "deleteFile",
+          "file": "/luma/titles/0004001000022000/area/US/174_LZ.bin"
+        },
+        {
+          "type": "deleteFile",
+          "file": "/luma/titles/0004001000022000/area/US/17_LZ.bin"
+        },
+        {
+          "type": "deleteFile",
+          "file": "/luma/titles/0004001000022000/area/US/186_LZ.bin"
+        },
+        {
+          "type": "deleteFile",
+          "file": "/luma/titles/0004001000022000/area/US/18_LZ.bin"
+        },
+        {
+          "type": "deleteFile",
+          "file": "/luma/titles/0004001000022000/area/US/19_LZ.bin"
+        },
+        {
+          "type": "deleteFile",
+          "file": "/luma/titles/0004001000022000/area/US/20_LZ.bin"
+        },
+        {
+          "type": "deleteFile",
+          "file": "/luma/titles/0004001000022000/area/US/21_LZ.bin"
+        },
+        {
+          "type": "deleteFile",
+          "file": "/luma/titles/0004001000022000/area/US/22_LZ.bin"
+        },
+        {
+          "type": "deleteFile",
+          "file": "/luma/titles/0004001000022000/area/US/23_LZ.bin"
+        },
+        {
+          "type": "deleteFile",
+          "file": "/luma/titles/0004001000022000/area/US/24_LZ.bin"
+        },
+        {
+          "type": "deleteFile",
+          "file": "/luma/titles/0004001000022000/area/US/25_LZ.bin"
+        },
+        {
+          "type": "deleteFile",
+          "file": "/luma/titles/0004001000022000/area/US/26_LZ.bin"
+        },
+        {
+          "type": "deleteFile",
+          "file": "/luma/titles/0004001000022000/area/US/27_LZ.bin"
+        },
+        {
+          "type": "deleteFile",
+          "file": "/luma/titles/0004001000022000/area/US/28_LZ.bin"
+        },
+        {
+          "type": "deleteFile",
+          "file": "/luma/titles/0004001000022000/area/US/29_LZ.bin"
+        },
+        {
+          "type": "deleteFile",
+          "file": "/luma/titles/0004001000022000/area/US/30_LZ.bin"
+        },
+        {
+          "type": "deleteFile",
+          "file": "/luma/titles/0004001000022000/area/US/31_LZ.bin"
+        },
+        {
+          "type": "deleteFile",
+          "file": "/luma/titles/0004001000022000/area/US/32_LZ.bin"
+        },
+        {
+          "type": "deleteFile",
+          "file": "/luma/titles/0004001000022000/area/US/33_LZ.bin"
+        },
+        {
+          "type": "deleteFile",
+          "file": "/luma/titles/0004001000022000/area/US/34_LZ.bin"
+        },
+        {
+          "type": "deleteFile",
+          "file": "/luma/titles/0004001000022000/area/US/35_LZ.bin"
+        },
+        {
+          "type": "deleteFile",
+          "file": "/luma/titles/0004001000022000/area/US/36_LZ.bin"
+        },
+        {
+          "type": "deleteFile",
+          "file": "/luma/titles/0004001000022000/area/US/37_LZ.bin"
+        },
+        {
+          "type": "deleteFile",
+          "file": "/luma/titles/0004001000022000/area/US/38_LZ.bin"
+        },
+        {
+          "type": "deleteFile",
+          "file": "/luma/titles/0004001000022000/area/US/39_LZ.bin"
+        },
+        {
+          "type": "deleteFile",
+          "file": "/luma/titles/0004001000022000/area/US/40_LZ.bin"
+        },
+        {
+          "type": "deleteFile",
+          "file": "/luma/titles/0004001000022000/area/US/41_LZ.bin"
+        },
+        {
+          "type": "deleteFile",
+          "file": "/luma/titles/0004001000022000/area/US/42_LZ.bin"
+        },
+        {
+          "type": "deleteFile",
+          "file": "/luma/titles/0004001000022000/area/US/43_LZ.bin"
+        },
+        {
+          "type": "deleteFile",
+          "file": "/luma/titles/0004001000022000/area/US/44_LZ.bin"
+        },
+        {
+          "type": "deleteFile",
+          "file": "/luma/titles/0004001000022000/area/US/45_LZ.bin"
+        },
+        {
+          "type": "deleteFile",
+          "file": "/luma/titles/0004001000022000/area/US/46_LZ.bin"
+        },
+        {
+          "type": "deleteFile",
+          "file": "/luma/titles/0004001000022000/area/US/47_LZ.bin"
+        },
+        {
+          "type": "deleteFile",
+          "file": "/luma/titles/0004001000022000/area/US/48_LZ.bin"
+        },
+        {
+          "type": "deleteFile",
+          "file": "/luma/titles/0004001000022000/area/US/49_LZ.bin"
+        },
+        {
+          "type": "deleteFile",
+          "file": "/luma/titles/0004001000022000/area/US/50_LZ.bin"
+        },
+        {
+          "type": "deleteFile",
+          "file": "/luma/titles/0004001000022000/area/US/51_LZ.bin"
+        },
+        {
+          "type": "deleteFile",
+          "file": "/luma/titles/0004001000022000/area/US/52_LZ.bin"
+        },
+        {
+          "type": "deleteFile",
+          "file": "/luma/titles/0004001000022000/area/US/8_LZ.bin"
+        },
+        {
+          "type": "deleteFile",
+          "file": "/luma/titles/0004001000022000/area/US/9_LZ.bin"
+        },
+        {
+          "type": "deleteFile",
+          "file": "/luma/titles/0004001000022000/area/US/country_LZ.bin"
+        },
+        {
+          "type": "deleteFile",
+          "file": "/luma/titles/0004001000022000/romfs/font/Hud_JP.bcfnt"
+        },
+        {
+          "type": "deleteFile",
+          "file": "/luma/titles/0004001000022000/romfs/message_EU_LZ.bin"
+        },
+        {
+          "type": "deleteFile",
+          "file": "/luma/titles/0004001000022000/romfs/up_LZ.bin"
+        },
+        {
+          "type": "deleteFile",
+          "file": "/luma/titles/0004001000022100/dlplay_romfs.bin"
+        },
+        {
+          "type": "deleteFile",
+          "file": "/luma/titles/0004001000022200/romfs/message/EU_Russian/PLOG_msbt_LZ.bin"
+        },
+        {
+          "type": "deleteFile",
+          "file": "/luma/titles/0004001000022300/safe_romfs.bin"
+        },
+        {
+          "type": "deleteFile",
+          "file": "/luma/titles/0004001000022400/romfs/msg/EU_Russian.LZ"
+        },
+        {
+          "type": "deleteFile",
+          "file": "/luma/titles/0004001000022500/romfs/msg/EU_Russian.LZ"
+        },
+        {
+          "type": "deleteFile",
+          "file": "/luma/titles/0004001000022700/romfs/icn/EU_appEdit.icn"
+        },
+        {
+          "type": "deleteFile",
+          "file": "/luma/titles/0004001000022700/romfs/message/EU_Russian.arc"
+        },
+        {
+          "type": "deleteFile",
+          "file": "/luma/titles/0004001000022800/romfs/message/EU_Russian/MEET.msbt"
+        },
+        {
+          "type": "deleteFile",
+          "file": "/luma/titles/0004001000022800/romfs/param/Piece2_PanelInfo.csv"
+        },
+        {
+          "type": "deleteFile",
+          "file": "/luma/titles/0004001000022800/romfs/param/country.csv"
+        },
+        {
+          "type": "deleteFile",
+          "file": "/luma/titles/0004001000022800/romfs/param/region.csv"
+        },
+        {
+          "type": "deleteFile",
+          "file": "/luma/titles/0004001000022900/romfs/font/Hud.bcfnt"
+        },
+        {
+          "type": "deleteFile",
+          "file": "/luma/titles/0004001000022900/romfs/message/europe/EU_Russian/hud.msbt.lz"
+        },
+        {
+          "type": "deleteFile",
+          "file": "/luma/titles/0004001000022900/romfs/message/europe/EU_Russian/tiger.msbt.lz"
+        },
+        {
+          "type": "deleteFile",
+          "file": "/luma/titles/0004001000022A00/romfs/CARDBOARD/message/EU_Russian/cardboard_ctr.msbp"
+        },
+        {
+          "type": "deleteFile",
+          "file": "/luma/titles/0004001000022A00/romfs/CARDBOARD/message/EU_Russian/cardboard_ctr.msbt"
+        },
+        {
+          "type": "deleteFile",
+          "file": "/luma/titles/0004001000022A00/romfs/CARDBOARD/message/HUD/EU_Russian/hud.msbt"
+        },
+        {
+          "type": "deleteFile",
+          "file": "/luma/titles/0004001000022A00/romfs/font/Hud.bcfnt"
+        },
+        {
+          "type": "deleteFile",
+          "file": "/luma/titles/0004001000022B00/romfs/messages/EU_Russian/mars.msbt"
+        },
+        {
+          "type": "deleteFile",
+          "file": "/luma/titles/0004001000022B00/romfs/saveicon_EU.icn"
+        },
+        {
+          "type": "deleteFile",
+          "file": "/luma/titles/0004001000022D00/romfs/hal/msg/StgFace/StgFaceEU_Russian.msbt"
+        },
+        {
+          "type": "deleteFile",
+          "file": "/luma/titles/0004001000022E00/romfs/message/EU_Russian/AR_ACT.msbt"
+        },
+        {
+          "type": "deleteFile",
+          "file": "/luma/titles/000400100002C100/romfs/font/Hud.bcfnt"
+        },
+        {
+          "type": "deleteFile",
+          "file": "/luma/titles/000400100002C100/romfs/index_EU_Russian.html"
+        },
+        {
+          "type": "deleteFile",
+          "file": "/luma/titles/000400100002C100/romfs/json/message_EU_Russian.json"
+        },
+        {
+          "type": "deleteFile",
+          "file": "/luma/titles/000400100002C100/romfs/message/EU_Russian/cave.msbt"
+        },
+        {
+          "type": "deleteFile",
+          "file": "/luma/titles/000400100002C100/romfs/message/EU_Russian/hud.msbt"
+        },
+        {
+          "type": "deleteFile",
+          "file": "/luma/titles/0004001020022300/ssafe_romfs.bin"
+        },
+        {
+          "type": "deleteFile",
+          "file": "/luma/titles/0004003000009802/banner_22000.bin"
+        },
+        {
+          "type": "deleteFile",
+          "file": "/luma/titles/0004003000009802/banner_22100.bin"
+        },
+        {
+          "type": "deleteFile",
+          "file": "/luma/titles/0004003000009802/banner_22200.bin"
+        },
+        {
+          "type": "deleteFile",
+          "file": "/luma/titles/0004003000009802/banner_22300.bin"
+        },
+        {
+          "type": "deleteFile",
+          "file": "/luma/titles/0004003000009802/banner_22800.bin"
+        },
+        {
+          "type": "deleteFile",
+          "file": "/luma/titles/0004003000009802/banner_22E00.bin"
+        },
+        {
+          "type": "deleteFile",
+          "file": "/luma/titles/0004003000009802/romfs/font/Hud_JP.bcfnt"
+        },
+        {
+          "type": "deleteFile",
+          "file": "/luma/titles/0004003000009802/romfs/message/EU_Russian/menu_msbt_LZ.bin"
+        },
+        {
+          "type": "deleteFile",
+          "file": "/luma/titles/0004003000009802/romfs/message_hud/EU_Russian/hud_msbt_LZ.bin"
+        },
+        {
+          "type": "deleteFile",
+          "file": "/luma/titles/0004003000009902/camera_applet_romfs.bin"
+        },
+        {
+          "type": "deleteFile",
+          "file": "/luma/titles/0004003000009B02/romfs/2000"
+        },
+        {
+          "type": "deleteFile",
+          "file": "/luma/titles/0004003000009B02/romfs/2100"
+        },
+        {
+          "type": "deleteFile",
+          "file": "/luma/titles/0004003000009B02/romfs/2200"
+        },
+        {
+          "type": "deleteFile",
+          "file": "/luma/titles/0004003000009B02/romfs/2400"
+        },
+        {
+          "type": "deleteFile",
+          "file": "/luma/titles/0004003000009B02/romfs/2500"
+        },
+        {
+          "type": "deleteFile",
+          "file": "/luma/titles/0004003000009B02/romfs/2700"
+        },
+        {
+          "type": "deleteFile",
+          "file": "/luma/titles/0004003000009B02/romfs/2800"
+        },
+        {
+          "type": "deleteFile",
+          "file": "/luma/titles/0004003000009B02/romfs/2900"
+        },
+        {
+          "type": "deleteFile",
+          "file": "/luma/titles/0004003000009B02/romfs/2d00"
+        },
+        {
+          "type": "deleteFile",
+          "file": "/luma/titles/0004003000009B02/romfs/2e00"
+        },
+        {
+          "type": "deleteFile",
+          "file": "/luma/titles/0004003000009B02/romfs/9d02"
+        },
+        {
+          "type": "deleteFile",
+          "file": "/luma/titles/0004003000009B02/romfs/message/EU_Russia/ebird.msbt"
+        },
+        {
+          "type": "deleteFile",
+          "file": "/luma/titles/0004003000009B02/romfs/n9d02"
+        },
+        {
+          "type": "deleteFile",
+          "file": "/luma/titles/0004003000009C02/romfs/lang/EU_Russian/hud.msbt"
+        },
+        {
+          "type": "deleteFile",
+          "file": "/luma/titles/0004003000009C02/romfs/lang/EU_Russian/message.msbt"
+        },
+        {
+          "type": "deleteFile",
+          "file": "/luma/titles/0004003000009C02/romfs/lang/Hud.bcfnt"
+        },
+        {
+          "type": "deleteFile",
+          "file": "/luma/titles/0004003000009D02/romfs/banner/EU/Skater.icn"
+        },
+        {
+          "type": "deleteFile",
+          "file": "/luma/titles/0004003000009D02/romfs/font/Hud.bcfnt"
+        },
+        {
+          "type": "deleteFile",
+          "file": "/luma/titles/0004003000009D02/romfs/message/EU_Russian/hud.msbt"
+        },
+        {
+          "type": "deleteFile",
+          "file": "/luma/titles/0004003000009D02/romfs/message/EU_Russian/skater.msbt"
+        },
+        {
+          "type": "deleteFile",
+          "file": "/luma/titles/0004003000009D02/romfs/message/EU_Russian/spider.msbt"
+        },
+        {
+          "type": "deleteFile",
+          "file": "/luma/titles/0004003000009D02/romfs/message/EU_Russian/swkbd.msbt"
+        },
+        {
+          "type": "deleteFile",
+          "file": "/luma/titles/0004003000009F02/romfs/font/Hud_JP.bcfnt"
+        },
+        {
+          "type": "deleteFile",
+          "file": "/luma/titles/0004003000009F02/romfs/message/EU_Russian/friend_msbt_LZ.bin"
+        },
+        {
+          "type": "deleteFile",
+          "file": "/luma/titles/0004003000009F02/romfs/message_hud/EU_Russian/hud_msbt_LZ.bin"
+        },
+        {
+          "type": "deleteFile",
+          "file": "/luma/titles/000400300000A002/romfs/font/Hud_JP.bcfnt"
+        },
+        {
+          "type": "deleteFile",
+          "file": "/luma/titles/000400300000A002/romfs/message/EU_Russian/newslist_msbt_LZ.bin"
+        },
+        {
+          "type": "deleteFile",
+          "file": "/luma/titles/000400300000A002/romfs/message_hud/EU_Russian/hud_msbt_LZ.bin"
+        },
+        {
+          "type": "deleteFile",
+          "file": "/luma/titles/000400300000B902/romfs/message/EU_Russian/cabinet.msbt"
+        },
+        {
+          "type": "deleteFile",
+          "file": "/luma/titles/000400300000BA02/romfs/message/EU_Russian/message.msbt.lz"
+        },
+        {
+          "type": "deleteFile",
+          "file": "/luma/titles/000400300000BE02/msg_romfs.bin"
+        },
+        {
+          "type": "deleteFile",
+          "file": "/luma/titles/000400300000BE02/romfs/font/Hud.bcfnt"
+        },
+        {
+          "type": "deleteFile",
+          "file": "/luma/titles/000400300000BE02/romfs/message/EU_Russian/cave.msbt"
+        },
+        {
+          "type": "deleteFile",
+          "file": "/luma/titles/000400300000BE02/romfs/message/EU_Russian/hud.msbt"
+        },
+        {
+          "type": "deleteFile",
+          "file": "/luma/titles/000400300000C502/error_romfs.bin"
+        },
+        {
+          "type": "deleteFile",
+          "file": "/luma/titles/000400300000C502/msg_romfs.bin"
+        },
+        {
+          "type": "deleteFile",
+          "file": "/luma/titles/000400300000CD02/extrapad_romfs.bin"
+        },
+        {
+          "type": "deleteFile",
+          "file": "/luma/titles/000400300000D002/swkbd_romfs.bin"
+        },
+        {
+          "type": "deleteFile",
+          "file": "/luma/titles/000400300000D102/romfs/message/EU_Russian.arc"
+        },
+        {
+          "type": "deleteFile",
+          "file": "/luma/titles/000400300000D602/romfs/message/EU_Russian/mint.msbt.lz"
+        },
+        {
+          "type": "deleteFile",
+          "file": "/luma/titles/000400300000F602/memolib_romfs.bin"
+        },
+        {
+          "type": "deleteFile",
+          "file": "/luma/titles/0004003020009D02/romfs/banner/EU/Skater.icn"
+        },
+        {
+          "type": "deleteFile",
+          "file": "/luma/titles/0004003020009D02/romfs/font/Hud.bcfnt"
+        },
+        {
+          "type": "deleteFile",
+          "file": "/luma/titles/0004003020009D02/romfs/message/EU_Russian/hud.msbt"
+        },
+        {
+          "type": "deleteFile",
+          "file": "/luma/titles/0004003020009D02/romfs/message/EU_Russian/skater.msbt"
+        },
+        {
+          "type": "deleteFile",
+          "file": "/luma/titles/0004003020009D02/romfs/message/EU_Russian/swkbd.msbt"
+        }
+      ],
+      "2. Встановити: New 3DS / New 2DS XL · замість англійської": {
+        "size": "~23 МБ",
+        "script": [
+          {
+            "type": "downloadRelease",
+            "repo": "BolgarMaxym97/3ds-ua",
+            "file": "3ds-ua-from-en-.*-new3ds\\.zip",
+            "output": "/3ds/3ds-ua.zip",
+            "message": "Завантаження архіву (~23 МБ)...",
+            "includePrereleases": false
+          },
+          {
+            "type": "extractFile",
+            "file": "/3ds/3ds-ua.zip",
+            "input": "^luma/",
+            "output": "/luma/",
+            "message": "Розпакування..."
+          },
+          {
+            "type": "deleteFile",
+            "file": "/3ds/3ds-ua.zip"
+          }
+        ]
+      },
+      "6. Видалити: New 3DS / New 2DS XL · замість англійської": [
+        {
+          "type": "deleteFile",
+          "file": "/luma/titles/0004001000022000/code.ips"
+        },
+        {
+          "type": "deleteFile",
+          "file": "/luma/titles/0004001000022100/code.ips"
+        },
+        {
+          "type": "deleteFile",
+          "file": "/luma/titles/0004001000022100/exheader.bin"
+        },
+        {
+          "type": "deleteFile",
+          "file": "/luma/titles/0004001000022200/code.ips"
+        },
+        {
+          "type": "deleteFile",
+          "file": "/luma/titles/0004001000022200/exheader.bin"
+        },
+        {
+          "type": "deleteFile",
+          "file": "/luma/titles/0004001000022300/code.ips"
+        },
+        {
+          "type": "deleteFile",
+          "file": "/luma/titles/0004001000022300/exheader.bin"
+        },
+        {
+          "type": "deleteFile",
+          "file": "/luma/titles/0004001000022800/exheader.bin"
+        },
+        {
+          "type": "deleteFile",
+          "file": "/luma/titles/0004001000022900/exheader.bin"
+        },
+        {
+          "type": "deleteFile",
+          "file": "/luma/titles/000400100002C100/code.ips"
+        },
+        {
+          "type": "deleteFile",
+          "file": "/luma/titles/000400100002C100/exheader.bin"
+        },
+        {
+          "type": "deleteFile",
+          "file": "/luma/titles/0004001020022300/code.ips"
+        },
+        {
+          "type": "deleteFile",
+          "file": "/luma/titles/0004001020022300/exheader.bin"
+        },
+        {
+          "type": "deleteFile",
+          "file": "/luma/titles/0004003000009802/code.ips"
+        },
+        {
+          "type": "deleteFile",
+          "file": "/luma/titles/0004003000009902/code.ips"
+        },
+        {
+          "type": "deleteFile",
+          "file": "/luma/titles/0004003000009B02/code.ips"
+        },
+        {
+          "type": "deleteFile",
+          "file": "/luma/titles/0004003000009B02/exheader.bin"
+        },
+        {
+          "type": "deleteFile",
+          "file": "/luma/titles/0004003000009F02/code.ips"
+        },
+        {
+          "type": "deleteFile",
+          "file": "/luma/titles/0004003000009F02/exheader.bin"
+        },
+        {
+          "type": "deleteFile",
+          "file": "/luma/titles/000400300000A002/code.ips"
+        },
+        {
+          "type": "deleteFile",
+          "file": "/luma/titles/000400300000A002/exheader.bin"
+        },
+        {
+          "type": "deleteFile",
+          "file": "/luma/titles/000400300000B902/code.ips"
+        },
+        {
+          "type": "deleteFile",
+          "file": "/luma/titles/000400300000B902/exheader.bin"
+        },
+        {
+          "type": "deleteFile",
+          "file": "/luma/titles/000400300000BA02/exheader.bin"
+        },
+        {
+          "type": "deleteFile",
+          "file": "/luma/titles/000400300000BE02/code.ips"
+        },
+        {
+          "type": "deleteFile",
+          "file": "/luma/titles/000400300000BE02/exheader.bin"
+        },
+        {
+          "type": "deleteFile",
+          "file": "/luma/titles/000400300000C502/code.ips"
+        },
+        {
+          "type": "deleteFile",
+          "file": "/luma/titles/000400300000C502/exheader.bin"
+        },
+        {
+          "type": "deleteFile",
+          "file": "/luma/titles/000400300000CD02/code.ips"
+        },
+        {
+          "type": "deleteFile",
+          "file": "/luma/titles/000400300000CD02/exheader.bin"
+        },
+        {
+          "type": "deleteFile",
+          "file": "/luma/titles/000400300000D002/code.ips"
+        },
+        {
+          "type": "deleteFile",
+          "file": "/luma/titles/000400300000D002/exheader.bin"
+        },
+        {
+          "type": "deleteFile",
+          "file": "/luma/titles/000400300000D102/code.ips"
+        },
+        {
+          "type": "deleteFile",
+          "file": "/luma/titles/000400300000D102/exheader.bin"
+        },
+        {
+          "type": "deleteFile",
+          "file": "/luma/titles/000400300000D602/code.ips"
+        },
+        {
+          "type": "deleteFile",
+          "file": "/luma/titles/000400300000D602/exheader.bin"
+        },
+        {
+          "type": "deleteFile",
+          "file": "/luma/titles/000400300000F602/code.ips"
+        },
+        {
+          "type": "deleteFile",
+          "file": "/luma/titles/000400300000F602/exheader.bin"
+        },
+        {
+          "type": "deleteFile",
+          "file": "/luma/titles/0004001000022000/area/CN/160_LZ.bin"
+        },
+        {
+          "type": "deleteFile",
+          "file": "/luma/titles/0004001000022000/area/CN/country_LZ.bin"
+        },
+        {
+          "type": "deleteFile",
+          "file": "/luma/titles/0004001000022000/area/EU/100_LZ.bin"
+        },
+        {
+          "type": "deleteFile",
+          "file": "/luma/titles/0004001000022000/area/EU/101_LZ.bin"
+        },
+        {
+          "type": "deleteFile",
+          "file": "/luma/titles/0004001000022000/area/EU/102_LZ.bin"
+        },
+        {
+          "type": "deleteFile",
+          "file": "/luma/titles/0004001000022000/area/EU/103_LZ.bin"
+        },
+        {
+          "type": "deleteFile",
+          "file": "/luma/titles/0004001000022000/area/EU/104_LZ.bin"
+        },
+        {
+          "type": "deleteFile",
+          "file": "/luma/titles/0004001000022000/area/EU/105_LZ.bin"
+        },
+        {
+          "type": "deleteFile",
+          "file": "/luma/titles/0004001000022000/area/EU/106_LZ.bin"
+        },
+        {
+          "type": "deleteFile",
+          "file": "/luma/titles/0004001000022000/area/EU/107_LZ.bin"
+        },
+        {
+          "type": "deleteFile",
+          "file": "/luma/titles/0004001000022000/area/EU/108_LZ.bin"
+        },
+        {
+          "type": "deleteFile",
+          "file": "/luma/titles/0004001000022000/area/EU/109_LZ.bin"
+        },
+        {
+          "type": "deleteFile",
+          "file": "/luma/titles/0004001000022000/area/EU/110_LZ.bin"
+        },
+        {
+          "type": "deleteFile",
+          "file": "/luma/titles/0004001000022000/area/EU/111_LZ.bin"
+        },
+        {
+          "type": "deleteFile",
+          "file": "/luma/titles/0004001000022000/area/EU/112_LZ.bin"
+        },
+        {
+          "type": "deleteFile",
+          "file": "/luma/titles/0004001000022000/area/EU/113_LZ.bin"
+        },
+        {
+          "type": "deleteFile",
+          "file": "/luma/titles/0004001000022000/area/EU/114_LZ.bin"
+        },
+        {
+          "type": "deleteFile",
+          "file": "/luma/titles/0004001000022000/area/EU/115_LZ.bin"
+        },
+        {
+          "type": "deleteFile",
+          "file": "/luma/titles/0004001000022000/area/EU/116_LZ.bin"
+        },
+        {
+          "type": "deleteFile",
+          "file": "/luma/titles/0004001000022000/area/EU/117_LZ.bin"
+        },
+        {
+          "type": "deleteFile",
+          "file": "/luma/titles/0004001000022000/area/EU/118_LZ.bin"
+        },
+        {
+          "type": "deleteFile",
+          "file": "/luma/titles/0004001000022000/area/EU/119_LZ.bin"
+        },
+        {
+          "type": "deleteFile",
+          "file": "/luma/titles/0004001000022000/area/EU/120_LZ.bin"
+        },
+        {
+          "type": "deleteFile",
+          "file": "/luma/titles/0004001000022000/area/EU/121_LZ.bin"
+        },
+        {
+          "type": "deleteFile",
+          "file": "/luma/titles/0004001000022000/area/EU/122_LZ.bin"
+        },
+        {
+          "type": "deleteFile",
+          "file": "/luma/titles/0004001000022000/area/EU/123_LZ.bin"
+        },
+        {
+          "type": "deleteFile",
+          "file": "/luma/titles/0004001000022000/area/EU/124_LZ.bin"
+        },
+        {
+          "type": "deleteFile",
+          "file": "/luma/titles/0004001000022000/area/EU/125_LZ.bin"
+        },
+        {
+          "type": "deleteFile",
+          "file": "/luma/titles/0004001000022000/area/EU/126_LZ.bin"
+        },
+        {
+          "type": "deleteFile",
+          "file": "/luma/titles/0004001000022000/area/EU/127_LZ.bin"
+        },
+        {
+          "type": "deleteFile",
+          "file": "/luma/titles/0004001000022000/area/EU/169_LZ.bin"
+        },
+        {
+          "type": "deleteFile",
+          "file": "/luma/titles/0004001000022000/area/EU/184_LZ.bin"
+        },
+        {
+          "type": "deleteFile",
+          "file": "/luma/titles/0004001000022000/area/EU/185_LZ.bin"
+        },
+        {
+          "type": "deleteFile",
+          "file": "/luma/titles/0004001000022000/area/EU/64_LZ.bin"
+        },
+        {
+          "type": "deleteFile",
+          "file": "/luma/titles/0004001000022000/area/EU/65_LZ.bin"
+        },
+        {
+          "type": "deleteFile",
+          "file": "/luma/titles/0004001000022000/area/EU/66_LZ.bin"
+        },
+        {
+          "type": "deleteFile",
+          "file": "/luma/titles/0004001000022000/area/EU/67_LZ.bin"
+        },
+        {
+          "type": "deleteFile",
+          "file": "/luma/titles/0004001000022000/area/EU/68_LZ.bin"
+        },
+        {
+          "type": "deleteFile",
+          "file": "/luma/titles/0004001000022000/area/EU/69_LZ.bin"
+        },
+        {
+          "type": "deleteFile",
+          "file": "/luma/titles/0004001000022000/area/EU/70_LZ.bin"
+        },
+        {
+          "type": "deleteFile",
+          "file": "/luma/titles/0004001000022000/area/EU/71_LZ.bin"
+        },
+        {
+          "type": "deleteFile",
+          "file": "/luma/titles/0004001000022000/area/EU/72_LZ.bin"
+        },
+        {
+          "type": "deleteFile",
+          "file": "/luma/titles/0004001000022000/area/EU/73_LZ.bin"
+        },
+        {
+          "type": "deleteFile",
+          "file": "/luma/titles/0004001000022000/area/EU/74_LZ.bin"
+        },
+        {
+          "type": "deleteFile",
+          "file": "/luma/titles/0004001000022000/area/EU/75_LZ.bin"
+        },
+        {
+          "type": "deleteFile",
+          "file": "/luma/titles/0004001000022000/area/EU/76_LZ.bin"
+        },
+        {
+          "type": "deleteFile",
+          "file": "/luma/titles/0004001000022000/area/EU/77_LZ.bin"
+        },
+        {
+          "type": "deleteFile",
+          "file": "/luma/titles/0004001000022000/area/EU/78_LZ.bin"
+        },
+        {
+          "type": "deleteFile",
+          "file": "/luma/titles/0004001000022000/area/EU/79_LZ.bin"
+        },
+        {
+          "type": "deleteFile",
+          "file": "/luma/titles/0004001000022000/area/EU/80_LZ.bin"
+        },
+        {
+          "type": "deleteFile",
+          "file": "/luma/titles/0004001000022000/area/EU/81_LZ.bin"
+        },
+        {
+          "type": "deleteFile",
+          "file": "/luma/titles/0004001000022000/area/EU/82_LZ.bin"
+        },
+        {
+          "type": "deleteFile",
+          "file": "/luma/titles/0004001000022000/area/EU/83_LZ.bin"
+        },
+        {
+          "type": "deleteFile",
+          "file": "/luma/titles/0004001000022000/area/EU/84_LZ.bin"
+        },
+        {
+          "type": "deleteFile",
+          "file": "/luma/titles/0004001000022000/area/EU/85_LZ.bin"
+        },
+        {
+          "type": "deleteFile",
+          "file": "/luma/titles/0004001000022000/area/EU/86_LZ.bin"
+        },
+        {
+          "type": "deleteFile",
+          "file": "/luma/titles/0004001000022000/area/EU/87_LZ.bin"
+        },
+        {
+          "type": "deleteFile",
+          "file": "/luma/titles/0004001000022000/area/EU/88_LZ.bin"
+        },
+        {
+          "type": "deleteFile",
+          "file": "/luma/titles/0004001000022000/area/EU/89_LZ.bin"
+        },
+        {
+          "type": "deleteFile",
+          "file": "/luma/titles/0004001000022000/area/EU/90_LZ.bin"
+        },
+        {
+          "type": "deleteFile",
+          "file": "/luma/titles/0004001000022000/area/EU/91_LZ.bin"
+        },
+        {
+          "type": "deleteFile",
+          "file": "/luma/titles/0004001000022000/area/EU/92_LZ.bin"
+        },
+        {
+          "type": "deleteFile",
+          "file": "/luma/titles/0004001000022000/area/EU/93_LZ.bin"
+        },
+        {
+          "type": "deleteFile",
+          "file": "/luma/titles/0004001000022000/area/EU/94_LZ.bin"
+        },
+        {
+          "type": "deleteFile",
+          "file": "/luma/titles/0004001000022000/area/EU/95_LZ.bin"
+        },
+        {
+          "type": "deleteFile",
+          "file": "/luma/titles/0004001000022000/area/EU/96_LZ.bin"
+        },
+        {
+          "type": "deleteFile",
+          "file": "/luma/titles/0004001000022000/area/EU/97_LZ.bin"
+        },
+        {
+          "type": "deleteFile",
+          "file": "/luma/titles/0004001000022000/area/EU/98_LZ.bin"
+        },
+        {
+          "type": "deleteFile",
+          "file": "/luma/titles/0004001000022000/area/EU/99_LZ.bin"
+        },
+        {
+          "type": "deleteFile",
+          "file": "/luma/titles/0004001000022000/area/EU/country_LZ.bin"
+        },
+        {
+          "type": "deleteFile",
+          "file": "/luma/titles/0004001000022000/area/JP/1_LZ.bin"
+        },
+        {
+          "type": "deleteFile",
+          "file": "/luma/titles/0004001000022000/area/JP/country_LZ.bin"
+        },
+        {
+          "type": "deleteFile",
+          "file": "/luma/titles/0004001000022000/area/KR/136_LZ.bin"
+        },
+        {
+          "type": "deleteFile",
+          "file": "/luma/titles/0004001000022000/area/KR/country_LZ.bin"
+        },
+        {
+          "type": "deleteFile",
+          "file": "/luma/titles/0004001000022000/area/TW/128_LZ.bin"
+        },
+        {
+          "type": "deleteFile",
+          "file": "/luma/titles/0004001000022000/area/TW/144_LZ.bin"
+        },
+        {
+          "type": "deleteFile",
+          "file": "/luma/titles/0004001000022000/area/TW/145_LZ.bin"
+        },
+        {
+          "type": "deleteFile",
+          "file": "/luma/titles/0004001000022000/area/TW/country_LZ.bin"
+        },
+        {
+          "type": "deleteFile",
+          "file": "/luma/titles/0004001000022000/area/US/10_LZ.bin"
+        },
+        {
+          "type": "deleteFile",
+          "file": "/luma/titles/0004001000022000/area/US/11_LZ.bin"
+        },
+        {
+          "type": "deleteFile",
+          "file": "/luma/titles/0004001000022000/area/US/12_LZ.bin"
+        },
+        {
+          "type": "deleteFile",
+          "file": "/luma/titles/0004001000022000/area/US/13_LZ.bin"
+        },
+        {
+          "type": "deleteFile",
+          "file": "/luma/titles/0004001000022000/area/US/14_LZ.bin"
+        },
+        {
+          "type": "deleteFile",
+          "file": "/luma/titles/0004001000022000/area/US/153_LZ.bin"
+        },
+        {
+          "type": "deleteFile",
+          "file": "/luma/titles/0004001000022000/area/US/156_LZ.bin"
+        },
+        {
+          "type": "deleteFile",
+          "file": "/luma/titles/0004001000022000/area/US/15_LZ.bin"
+        },
+        {
+          "type": "deleteFile",
+          "file": "/luma/titles/0004001000022000/area/US/168_LZ.bin"
+        },
+        {
+          "type": "deleteFile",
+          "file": "/luma/titles/0004001000022000/area/US/16_LZ.bin"
+        },
+        {
+          "type": "deleteFile",
+          "file": "/luma/titles/0004001000022000/area/US/174_LZ.bin"
+        },
+        {
+          "type": "deleteFile",
+          "file": "/luma/titles/0004001000022000/area/US/17_LZ.bin"
+        },
+        {
+          "type": "deleteFile",
+          "file": "/luma/titles/0004001000022000/area/US/186_LZ.bin"
+        },
+        {
+          "type": "deleteFile",
+          "file": "/luma/titles/0004001000022000/area/US/18_LZ.bin"
+        },
+        {
+          "type": "deleteFile",
+          "file": "/luma/titles/0004001000022000/area/US/19_LZ.bin"
+        },
+        {
+          "type": "deleteFile",
+          "file": "/luma/titles/0004001000022000/area/US/20_LZ.bin"
+        },
+        {
+          "type": "deleteFile",
+          "file": "/luma/titles/0004001000022000/area/US/21_LZ.bin"
+        },
+        {
+          "type": "deleteFile",
+          "file": "/luma/titles/0004001000022000/area/US/22_LZ.bin"
+        },
+        {
+          "type": "deleteFile",
+          "file": "/luma/titles/0004001000022000/area/US/23_LZ.bin"
+        },
+        {
+          "type": "deleteFile",
+          "file": "/luma/titles/0004001000022000/area/US/24_LZ.bin"
+        },
+        {
+          "type": "deleteFile",
+          "file": "/luma/titles/0004001000022000/area/US/25_LZ.bin"
+        },
+        {
+          "type": "deleteFile",
+          "file": "/luma/titles/0004001000022000/area/US/26_LZ.bin"
+        },
+        {
+          "type": "deleteFile",
+          "file": "/luma/titles/0004001000022000/area/US/27_LZ.bin"
+        },
+        {
+          "type": "deleteFile",
+          "file": "/luma/titles/0004001000022000/area/US/28_LZ.bin"
+        },
+        {
+          "type": "deleteFile",
+          "file": "/luma/titles/0004001000022000/area/US/29_LZ.bin"
+        },
+        {
+          "type": "deleteFile",
+          "file": "/luma/titles/0004001000022000/area/US/30_LZ.bin"
+        },
+        {
+          "type": "deleteFile",
+          "file": "/luma/titles/0004001000022000/area/US/31_LZ.bin"
+        },
+        {
+          "type": "deleteFile",
+          "file": "/luma/titles/0004001000022000/area/US/32_LZ.bin"
+        },
+        {
+          "type": "deleteFile",
+          "file": "/luma/titles/0004001000022000/area/US/33_LZ.bin"
+        },
+        {
+          "type": "deleteFile",
+          "file": "/luma/titles/0004001000022000/area/US/34_LZ.bin"
+        },
+        {
+          "type": "deleteFile",
+          "file": "/luma/titles/0004001000022000/area/US/35_LZ.bin"
+        },
+        {
+          "type": "deleteFile",
+          "file": "/luma/titles/0004001000022000/area/US/36_LZ.bin"
+        },
+        {
+          "type": "deleteFile",
+          "file": "/luma/titles/0004001000022000/area/US/37_LZ.bin"
+        },
+        {
+          "type": "deleteFile",
+          "file": "/luma/titles/0004001000022000/area/US/38_LZ.bin"
+        },
+        {
+          "type": "deleteFile",
+          "file": "/luma/titles/0004001000022000/area/US/39_LZ.bin"
+        },
+        {
+          "type": "deleteFile",
+          "file": "/luma/titles/0004001000022000/area/US/40_LZ.bin"
+        },
+        {
+          "type": "deleteFile",
+          "file": "/luma/titles/0004001000022000/area/US/41_LZ.bin"
+        },
+        {
+          "type": "deleteFile",
+          "file": "/luma/titles/0004001000022000/area/US/42_LZ.bin"
+        },
+        {
+          "type": "deleteFile",
+          "file": "/luma/titles/0004001000022000/area/US/43_LZ.bin"
+        },
+        {
+          "type": "deleteFile",
+          "file": "/luma/titles/0004001000022000/area/US/44_LZ.bin"
+        },
+        {
+          "type": "deleteFile",
+          "file": "/luma/titles/0004001000022000/area/US/45_LZ.bin"
+        },
+        {
+          "type": "deleteFile",
+          "file": "/luma/titles/0004001000022000/area/US/46_LZ.bin"
+        },
+        {
+          "type": "deleteFile",
+          "file": "/luma/titles/0004001000022000/area/US/47_LZ.bin"
+        },
+        {
+          "type": "deleteFile",
+          "file": "/luma/titles/0004001000022000/area/US/48_LZ.bin"
+        },
+        {
+          "type": "deleteFile",
+          "file": "/luma/titles/0004001000022000/area/US/49_LZ.bin"
+        },
+        {
+          "type": "deleteFile",
+          "file": "/luma/titles/0004001000022000/area/US/50_LZ.bin"
+        },
+        {
+          "type": "deleteFile",
+          "file": "/luma/titles/0004001000022000/area/US/51_LZ.bin"
+        },
+        {
+          "type": "deleteFile",
+          "file": "/luma/titles/0004001000022000/area/US/52_LZ.bin"
+        },
+        {
+          "type": "deleteFile",
+          "file": "/luma/titles/0004001000022000/area/US/8_LZ.bin"
+        },
+        {
+          "type": "deleteFile",
+          "file": "/luma/titles/0004001000022000/area/US/9_LZ.bin"
+        },
+        {
+          "type": "deleteFile",
+          "file": "/luma/titles/0004001000022000/area/US/country_LZ.bin"
+        },
+        {
+          "type": "deleteFile",
+          "file": "/luma/titles/0004001000022000/romfs/font/Hud_JP.bcfnt"
+        },
+        {
+          "type": "deleteFile",
+          "file": "/luma/titles/0004001000022000/romfs/message_EU_LZ.bin"
+        },
+        {
+          "type": "deleteFile",
+          "file": "/luma/titles/0004001000022000/romfs/up_LZ.bin"
+        },
+        {
+          "type": "deleteFile",
+          "file": "/luma/titles/0004001000022100/dlplay_romfs.bin"
+        },
+        {
+          "type": "deleteFile",
+          "file": "/luma/titles/0004001000022200/romfs/message/EU_English/PLOG_msbt_LZ.bin"
+        },
+        {
+          "type": "deleteFile",
+          "file": "/luma/titles/0004001000022300/safe_romfs.bin"
+        },
+        {
+          "type": "deleteFile",
+          "file": "/luma/titles/0004001000022400/romfs/msg/EU_English.LZ"
+        },
+        {
+          "type": "deleteFile",
+          "file": "/luma/titles/0004001000022500/romfs/msg/EU_English.LZ"
+        },
+        {
+          "type": "deleteFile",
+          "file": "/luma/titles/0004001000022700/romfs/icn/EU_appEdit.icn"
+        },
+        {
+          "type": "deleteFile",
+          "file": "/luma/titles/0004001000022700/romfs/message/EU_English.arc"
+        },
+        {
+          "type": "deleteFile",
+          "file": "/luma/titles/0004001000022800/romfs/message/EU_English/MEET.msbt"
+        },
+        {
+          "type": "deleteFile",
+          "file": "/luma/titles/0004001000022800/romfs/param/Piece2_PanelInfo.csv"
+        },
+        {
+          "type": "deleteFile",
+          "file": "/luma/titles/0004001000022800/romfs/param/country.csv"
+        },
+        {
+          "type": "deleteFile",
+          "file": "/luma/titles/0004001000022800/romfs/param/region.csv"
+        },
+        {
+          "type": "deleteFile",
+          "file": "/luma/titles/0004001000022900/romfs/font/Hud.bcfnt"
+        },
+        {
+          "type": "deleteFile",
+          "file": "/luma/titles/0004001000022900/romfs/message/europe/EU_English/hud.msbt.lz"
+        },
+        {
+          "type": "deleteFile",
+          "file": "/luma/titles/0004001000022900/romfs/message/europe/EU_English/tiger.msbt.lz"
+        },
+        {
+          "type": "deleteFile",
+          "file": "/luma/titles/0004001000022A00/romfs/CARDBOARD/message/EU_English/cardboard_ctr.msbp"
+        },
+        {
+          "type": "deleteFile",
+          "file": "/luma/titles/0004001000022A00/romfs/CARDBOARD/message/EU_English/cardboard_ctr.msbt"
+        },
+        {
+          "type": "deleteFile",
+          "file": "/luma/titles/0004001000022A00/romfs/CARDBOARD/message/HUD/EU_English/hud.msbt"
+        },
+        {
+          "type": "deleteFile",
+          "file": "/luma/titles/0004001000022A00/romfs/font/Hud.bcfnt"
+        },
+        {
+          "type": "deleteFile",
+          "file": "/luma/titles/0004001000022B00/romfs/messages/EU_English/mars.msbt"
+        },
+        {
+          "type": "deleteFile",
+          "file": "/luma/titles/0004001000022B00/romfs/saveicon_EU.icn"
+        },
+        {
+          "type": "deleteFile",
+          "file": "/luma/titles/0004001000022D00/romfs/hal/msg/StgFace/StgFaceEU_English.msbt"
+        },
+        {
+          "type": "deleteFile",
+          "file": "/luma/titles/0004001000022E00/romfs/message/EU_English/AR_ACT.msbt"
+        },
+        {
+          "type": "deleteFile",
+          "file": "/luma/titles/000400100002C100/romfs/font/Hud.bcfnt"
+        },
+        {
+          "type": "deleteFile",
+          "file": "/luma/titles/000400100002C100/romfs/index_EU_English.html"
+        },
+        {
+          "type": "deleteFile",
+          "file": "/luma/titles/000400100002C100/romfs/json/message_EU_English.json"
+        },
+        {
+          "type": "deleteFile",
+          "file": "/luma/titles/000400100002C100/romfs/message/EU_English/cave.msbt"
+        },
+        {
+          "type": "deleteFile",
+          "file": "/luma/titles/000400100002C100/romfs/message/EU_English/hud.msbt"
+        },
+        {
+          "type": "deleteFile",
+          "file": "/luma/titles/0004001020022300/ssafe_romfs.bin"
+        },
+        {
+          "type": "deleteFile",
+          "file": "/luma/titles/0004003000009802/banner_22000.bin"
+        },
+        {
+          "type": "deleteFile",
+          "file": "/luma/titles/0004003000009802/banner_22100.bin"
+        },
+        {
+          "type": "deleteFile",
+          "file": "/luma/titles/0004003000009802/banner_22200.bin"
+        },
+        {
+          "type": "deleteFile",
+          "file": "/luma/titles/0004003000009802/banner_22300.bin"
+        },
+        {
+          "type": "deleteFile",
+          "file": "/luma/titles/0004003000009802/banner_22800.bin"
+        },
+        {
+          "type": "deleteFile",
+          "file": "/luma/titles/0004003000009802/banner_22E00.bin"
+        },
+        {
+          "type": "deleteFile",
+          "file": "/luma/titles/0004003000009802/romfs/font/Hud_JP.bcfnt"
+        },
+        {
+          "type": "deleteFile",
+          "file": "/luma/titles/0004003000009802/romfs/message/EU_English/menu_msbt_LZ.bin"
+        },
+        {
+          "type": "deleteFile",
+          "file": "/luma/titles/0004003000009802/romfs/message_hud/EU_English/hud_msbt_LZ.bin"
+        },
+        {
+          "type": "deleteFile",
+          "file": "/luma/titles/0004003000009902/camera_applet_romfs.bin"
+        },
+        {
+          "type": "deleteFile",
+          "file": "/luma/titles/0004003000009B02/romfs/2000"
+        },
+        {
+          "type": "deleteFile",
+          "file": "/luma/titles/0004003000009B02/romfs/2100"
+        },
+        {
+          "type": "deleteFile",
+          "file": "/luma/titles/0004003000009B02/romfs/2200"
+        },
+        {
+          "type": "deleteFile",
+          "file": "/luma/titles/0004003000009B02/romfs/2400"
+        },
+        {
+          "type": "deleteFile",
+          "file": "/luma/titles/0004003000009B02/romfs/2500"
+        },
+        {
+          "type": "deleteFile",
+          "file": "/luma/titles/0004003000009B02/romfs/2700"
+        },
+        {
+          "type": "deleteFile",
+          "file": "/luma/titles/0004003000009B02/romfs/2800"
+        },
+        {
+          "type": "deleteFile",
+          "file": "/luma/titles/0004003000009B02/romfs/2900"
+        },
+        {
+          "type": "deleteFile",
+          "file": "/luma/titles/0004003000009B02/romfs/2d00"
+        },
+        {
+          "type": "deleteFile",
+          "file": "/luma/titles/0004003000009B02/romfs/2e00"
+        },
+        {
+          "type": "deleteFile",
+          "file": "/luma/titles/0004003000009B02/romfs/9d02"
+        },
+        {
+          "type": "deleteFile",
+          "file": "/luma/titles/0004003000009B02/romfs/message/EU_English/ebird.msbt"
+        },
+        {
+          "type": "deleteFile",
+          "file": "/luma/titles/0004003000009B02/romfs/n9d02"
+        },
+        {
+          "type": "deleteFile",
+          "file": "/luma/titles/0004003000009C02/romfs/lang/EU_English/hud.msbt"
+        },
+        {
+          "type": "deleteFile",
+          "file": "/luma/titles/0004003000009C02/romfs/lang/EU_English/message.msbt"
+        },
+        {
+          "type": "deleteFile",
+          "file": "/luma/titles/0004003000009C02/romfs/lang/Hud.bcfnt"
+        },
+        {
+          "type": "deleteFile",
+          "file": "/luma/titles/0004003000009D02/romfs/banner/EU/Skater.icn"
+        },
+        {
+          "type": "deleteFile",
+          "file": "/luma/titles/0004003000009D02/romfs/font/Hud.bcfnt"
+        },
+        {
+          "type": "deleteFile",
+          "file": "/luma/titles/0004003000009D02/romfs/message/EU_English/hud.msbt"
+        },
+        {
+          "type": "deleteFile",
+          "file": "/luma/titles/0004003000009D02/romfs/message/EU_English/skater.msbt"
+        },
+        {
+          "type": "deleteFile",
+          "file": "/luma/titles/0004003000009D02/romfs/message/EU_English/spider.msbt"
+        },
+        {
+          "type": "deleteFile",
+          "file": "/luma/titles/0004003000009D02/romfs/message/EU_English/swkbd.msbt"
+        },
+        {
+          "type": "deleteFile",
+          "file": "/luma/titles/0004003000009F02/romfs/font/Hud_JP.bcfnt"
+        },
+        {
+          "type": "deleteFile",
+          "file": "/luma/titles/0004003000009F02/romfs/message/EU_English/friend_msbt_LZ.bin"
+        },
+        {
+          "type": "deleteFile",
+          "file": "/luma/titles/0004003000009F02/romfs/message_hud/EU_English/hud_msbt_LZ.bin"
+        },
+        {
+          "type": "deleteFile",
+          "file": "/luma/titles/000400300000A002/romfs/font/Hud_JP.bcfnt"
+        },
+        {
+          "type": "deleteFile",
+          "file": "/luma/titles/000400300000A002/romfs/message/EU_English/newslist_msbt_LZ.bin"
+        },
+        {
+          "type": "deleteFile",
+          "file": "/luma/titles/000400300000A002/romfs/message_hud/EU_English/hud_msbt_LZ.bin"
+        },
+        {
+          "type": "deleteFile",
+          "file": "/luma/titles/000400300000B902/romfs/message/EU_English/cabinet.msbt"
+        },
+        {
+          "type": "deleteFile",
+          "file": "/luma/titles/000400300000BA02/romfs/message/EU_English/message.msbt.lz"
+        },
+        {
+          "type": "deleteFile",
+          "file": "/luma/titles/000400300000BE02/msg_romfs.bin"
+        },
+        {
+          "type": "deleteFile",
+          "file": "/luma/titles/000400300000BE02/romfs/font/Hud.bcfnt"
+        },
+        {
+          "type": "deleteFile",
+          "file": "/luma/titles/000400300000BE02/romfs/message/EU_English/cave.msbt"
+        },
+        {
+          "type": "deleteFile",
+          "file": "/luma/titles/000400300000BE02/romfs/message/EU_English/hud.msbt"
+        },
+        {
+          "type": "deleteFile",
+          "file": "/luma/titles/000400300000C502/error_romfs.bin"
+        },
+        {
+          "type": "deleteFile",
+          "file": "/luma/titles/000400300000C502/msg_romfs.bin"
+        },
+        {
+          "type": "deleteFile",
+          "file": "/luma/titles/000400300000CD02/extrapad_romfs.bin"
+        },
+        {
+          "type": "deleteFile",
+          "file": "/luma/titles/000400300000D002/swkbd_romfs.bin"
+        },
+        {
+          "type": "deleteFile",
+          "file": "/luma/titles/000400300000D102/romfs/message/EU_English.arc"
+        },
+        {
+          "type": "deleteFile",
+          "file": "/luma/titles/000400300000D602/romfs/message/EU_English/mint.msbt.lz"
+        },
+        {
+          "type": "deleteFile",
+          "file": "/luma/titles/000400300000F602/memolib_romfs.bin"
+        },
+        {
+          "type": "deleteFile",
+          "file": "/luma/titles/0004003020009D02/romfs/banner/EU/Skater.icn"
+        },
+        {
+          "type": "deleteFile",
+          "file": "/luma/titles/0004003020009D02/romfs/font/Hud.bcfnt"
+        },
+        {
+          "type": "deleteFile",
+          "file": "/luma/titles/0004003020009D02/romfs/message/EU_English/hud.msbt"
+        },
+        {
+          "type": "deleteFile",
+          "file": "/luma/titles/0004003020009D02/romfs/message/EU_English/skater.msbt"
+        },
+        {
+          "type": "deleteFile",
+          "file": "/luma/titles/0004003020009D02/romfs/message/EU_English/swkbd.msbt"
+        }
+      ],
+      "3. Встановити: 3DS / 2DS · замість російської": {
+        "size": "~23 МБ",
+        "script": [
+          {
+            "type": "downloadRelease",
+            "repo": "BolgarMaxym97/3ds-ua",
+            "file": "3ds-ua-from-ru-.*-old3ds\\.zip",
+            "output": "/3ds/3ds-ua.zip",
+            "message": "Завантаження архіву (~23 МБ)...",
+            "includePrereleases": false
+          },
+          {
+            "type": "extractFile",
+            "file": "/3ds/3ds-ua.zip",
+            "input": "^luma/",
+            "output": "/luma/",
+            "message": "Розпакування..."
+          },
+          {
+            "type": "deleteFile",
+            "file": "/3ds/3ds-ua.zip"
+          }
+        ]
+      },
+      "7. Видалити: 3DS / 2DS · замість російської": [
+        {
+          "type": "deleteFile",
+          "file": "/luma/titles/0004001000022000/code.ips"
+        },
+        {
+          "type": "deleteFile",
+          "file": "/luma/titles/0004001000022100/code.ips"
+        },
+        {
+          "type": "deleteFile",
+          "file": "/luma/titles/0004001000022100/exheader.bin"
+        },
+        {
+          "type": "deleteFile",
+          "file": "/luma/titles/0004001000022200/code.ips"
+        },
+        {
+          "type": "deleteFile",
+          "file": "/luma/titles/0004001000022200/exheader.bin"
+        },
+        {
+          "type": "deleteFile",
+          "file": "/luma/titles/0004001000022300/code.ips"
+        },
+        {
+          "type": "deleteFile",
+          "file": "/luma/titles/0004001000022300/exheader.bin"
+        },
+        {
+          "type": "deleteFile",
+          "file": "/luma/titles/0004001000022800/exheader.bin"
+        },
+        {
+          "type": "deleteFile",
+          "file": "/luma/titles/0004001000022900/exheader.bin"
+        },
+        {
+          "type": "deleteFile",
+          "file": "/luma/titles/000400100002C100/code.ips"
+        },
+        {
+          "type": "deleteFile",
+          "file": "/luma/titles/000400100002C100/exheader.bin"
+        },
+        {
+          "type": "deleteFile",
+          "file": "/luma/titles/0004003000009802/code.ips"
+        },
+        {
+          "type": "deleteFile",
+          "file": "/luma/titles/0004003000009902/code.ips"
+        },
+        {
+          "type": "deleteFile",
+          "file": "/luma/titles/0004003000009B02/code.ips"
+        },
+        {
+          "type": "deleteFile",
+          "file": "/luma/titles/0004003000009B02/exheader.bin"
+        },
+        {
+          "type": "deleteFile",
+          "file": "/luma/titles/0004003000009F02/code.ips"
+        },
+        {
+          "type": "deleteFile",
+          "file": "/luma/titles/0004003000009F02/exheader.bin"
+        },
+        {
+          "type": "deleteFile",
+          "file": "/luma/titles/000400300000A002/code.ips"
+        },
+        {
+          "type": "deleteFile",
+          "file": "/luma/titles/000400300000A002/exheader.bin"
+        },
+        {
+          "type": "deleteFile",
+          "file": "/luma/titles/000400300000B902/code.ips"
+        },
+        {
+          "type": "deleteFile",
+          "file": "/luma/titles/000400300000B902/exheader.bin"
+        },
+        {
+          "type": "deleteFile",
+          "file": "/luma/titles/000400300000BA02/exheader.bin"
+        },
+        {
+          "type": "deleteFile",
+          "file": "/luma/titles/000400300000BE02/code.ips"
+        },
+        {
+          "type": "deleteFile",
+          "file": "/luma/titles/000400300000BE02/exheader.bin"
+        },
+        {
+          "type": "deleteFile",
+          "file": "/luma/titles/000400300000C502/code.ips"
+        },
+        {
+          "type": "deleteFile",
+          "file": "/luma/titles/000400300000C502/exheader.bin"
+        },
+        {
+          "type": "deleteFile",
+          "file": "/luma/titles/000400300000CD02/code.ips"
+        },
+        {
+          "type": "deleteFile",
+          "file": "/luma/titles/000400300000CD02/exheader.bin"
+        },
+        {
+          "type": "deleteFile",
+          "file": "/luma/titles/000400300000D002/code.ips"
+        },
+        {
+          "type": "deleteFile",
+          "file": "/luma/titles/000400300000D002/exheader.bin"
+        },
+        {
+          "type": "deleteFile",
+          "file": "/luma/titles/000400300000D102/code.ips"
+        },
+        {
+          "type": "deleteFile",
+          "file": "/luma/titles/000400300000D102/exheader.bin"
+        },
+        {
+          "type": "deleteFile",
+          "file": "/luma/titles/000400300000D602/code.ips"
+        },
+        {
+          "type": "deleteFile",
+          "file": "/luma/titles/000400300000D602/exheader.bin"
+        },
+        {
+          "type": "deleteFile",
+          "file": "/luma/titles/000400300000F602/code.ips"
+        },
+        {
+          "type": "deleteFile",
+          "file": "/luma/titles/000400300000F602/exheader.bin"
+        },
+        {
+          "type": "deleteFile",
+          "file": "/luma/titles/0004001000022000/area/CN/160_LZ.bin"
+        },
+        {
+          "type": "deleteFile",
+          "file": "/luma/titles/0004001000022000/area/CN/country_LZ.bin"
+        },
+        {
+          "type": "deleteFile",
+          "file": "/luma/titles/0004001000022000/area/EU/100_LZ.bin"
+        },
+        {
+          "type": "deleteFile",
+          "file": "/luma/titles/0004001000022000/area/EU/101_LZ.bin"
+        },
+        {
+          "type": "deleteFile",
+          "file": "/luma/titles/0004001000022000/area/EU/102_LZ.bin"
+        },
+        {
+          "type": "deleteFile",
+          "file": "/luma/titles/0004001000022000/area/EU/103_LZ.bin"
+        },
+        {
+          "type": "deleteFile",
+          "file": "/luma/titles/0004001000022000/area/EU/104_LZ.bin"
+        },
+        {
+          "type": "deleteFile",
+          "file": "/luma/titles/0004001000022000/area/EU/105_LZ.bin"
+        },
+        {
+          "type": "deleteFile",
+          "file": "/luma/titles/0004001000022000/area/EU/106_LZ.bin"
+        },
+        {
+          "type": "deleteFile",
+          "file": "/luma/titles/0004001000022000/area/EU/107_LZ.bin"
+        },
+        {
+          "type": "deleteFile",
+          "file": "/luma/titles/0004001000022000/area/EU/108_LZ.bin"
+        },
+        {
+          "type": "deleteFile",
+          "file": "/luma/titles/0004001000022000/area/EU/109_LZ.bin"
+        },
+        {
+          "type": "deleteFile",
+          "file": "/luma/titles/0004001000022000/area/EU/110_LZ.bin"
+        },
+        {
+          "type": "deleteFile",
+          "file": "/luma/titles/0004001000022000/area/EU/111_LZ.bin"
+        },
+        {
+          "type": "deleteFile",
+          "file": "/luma/titles/0004001000022000/area/EU/112_LZ.bin"
+        },
+        {
+          "type": "deleteFile",
+          "file": "/luma/titles/0004001000022000/area/EU/113_LZ.bin"
+        },
+        {
+          "type": "deleteFile",
+          "file": "/luma/titles/0004001000022000/area/EU/114_LZ.bin"
+        },
+        {
+          "type": "deleteFile",
+          "file": "/luma/titles/0004001000022000/area/EU/115_LZ.bin"
+        },
+        {
+          "type": "deleteFile",
+          "file": "/luma/titles/0004001000022000/area/EU/116_LZ.bin"
+        },
+        {
+          "type": "deleteFile",
+          "file": "/luma/titles/0004001000022000/area/EU/117_LZ.bin"
+        },
+        {
+          "type": "deleteFile",
+          "file": "/luma/titles/0004001000022000/area/EU/118_LZ.bin"
+        },
+        {
+          "type": "deleteFile",
+          "file": "/luma/titles/0004001000022000/area/EU/119_LZ.bin"
+        },
+        {
+          "type": "deleteFile",
+          "file": "/luma/titles/0004001000022000/area/EU/120_LZ.bin"
+        },
+        {
+          "type": "deleteFile",
+          "file": "/luma/titles/0004001000022000/area/EU/121_LZ.bin"
+        },
+        {
+          "type": "deleteFile",
+          "file": "/luma/titles/0004001000022000/area/EU/122_LZ.bin"
+        },
+        {
+          "type": "deleteFile",
+          "file": "/luma/titles/0004001000022000/area/EU/123_LZ.bin"
+        },
+        {
+          "type": "deleteFile",
+          "file": "/luma/titles/0004001000022000/area/EU/124_LZ.bin"
+        },
+        {
+          "type": "deleteFile",
+          "file": "/luma/titles/0004001000022000/area/EU/125_LZ.bin"
+        },
+        {
+          "type": "deleteFile",
+          "file": "/luma/titles/0004001000022000/area/EU/126_LZ.bin"
+        },
+        {
+          "type": "deleteFile",
+          "file": "/luma/titles/0004001000022000/area/EU/127_LZ.bin"
+        },
+        {
+          "type": "deleteFile",
+          "file": "/luma/titles/0004001000022000/area/EU/169_LZ.bin"
+        },
+        {
+          "type": "deleteFile",
+          "file": "/luma/titles/0004001000022000/area/EU/184_LZ.bin"
+        },
+        {
+          "type": "deleteFile",
+          "file": "/luma/titles/0004001000022000/area/EU/185_LZ.bin"
+        },
+        {
+          "type": "deleteFile",
+          "file": "/luma/titles/0004001000022000/area/EU/64_LZ.bin"
+        },
+        {
+          "type": "deleteFile",
+          "file": "/luma/titles/0004001000022000/area/EU/65_LZ.bin"
+        },
+        {
+          "type": "deleteFile",
+          "file": "/luma/titles/0004001000022000/area/EU/66_LZ.bin"
+        },
+        {
+          "type": "deleteFile",
+          "file": "/luma/titles/0004001000022000/area/EU/67_LZ.bin"
+        },
+        {
+          "type": "deleteFile",
+          "file": "/luma/titles/0004001000022000/area/EU/68_LZ.bin"
+        },
+        {
+          "type": "deleteFile",
+          "file": "/luma/titles/0004001000022000/area/EU/69_LZ.bin"
+        },
+        {
+          "type": "deleteFile",
+          "file": "/luma/titles/0004001000022000/area/EU/70_LZ.bin"
+        },
+        {
+          "type": "deleteFile",
+          "file": "/luma/titles/0004001000022000/area/EU/71_LZ.bin"
+        },
+        {
+          "type": "deleteFile",
+          "file": "/luma/titles/0004001000022000/area/EU/72_LZ.bin"
+        },
+        {
+          "type": "deleteFile",
+          "file": "/luma/titles/0004001000022000/area/EU/73_LZ.bin"
+        },
+        {
+          "type": "deleteFile",
+          "file": "/luma/titles/0004001000022000/area/EU/74_LZ.bin"
+        },
+        {
+          "type": "deleteFile",
+          "file": "/luma/titles/0004001000022000/area/EU/75_LZ.bin"
+        },
+        {
+          "type": "deleteFile",
+          "file": "/luma/titles/0004001000022000/area/EU/76_LZ.bin"
+        },
+        {
+          "type": "deleteFile",
+          "file": "/luma/titles/0004001000022000/area/EU/77_LZ.bin"
+        },
+        {
+          "type": "deleteFile",
+          "file": "/luma/titles/0004001000022000/area/EU/78_LZ.bin"
+        },
+        {
+          "type": "deleteFile",
+          "file": "/luma/titles/0004001000022000/area/EU/79_LZ.bin"
+        },
+        {
+          "type": "deleteFile",
+          "file": "/luma/titles/0004001000022000/area/EU/80_LZ.bin"
+        },
+        {
+          "type": "deleteFile",
+          "file": "/luma/titles/0004001000022000/area/EU/81_LZ.bin"
+        },
+        {
+          "type": "deleteFile",
+          "file": "/luma/titles/0004001000022000/area/EU/82_LZ.bin"
+        },
+        {
+          "type": "deleteFile",
+          "file": "/luma/titles/0004001000022000/area/EU/83_LZ.bin"
+        },
+        {
+          "type": "deleteFile",
+          "file": "/luma/titles/0004001000022000/area/EU/84_LZ.bin"
+        },
+        {
+          "type": "deleteFile",
+          "file": "/luma/titles/0004001000022000/area/EU/85_LZ.bin"
+        },
+        {
+          "type": "deleteFile",
+          "file": "/luma/titles/0004001000022000/area/EU/86_LZ.bin"
+        },
+        {
+          "type": "deleteFile",
+          "file": "/luma/titles/0004001000022000/area/EU/87_LZ.bin"
+        },
+        {
+          "type": "deleteFile",
+          "file": "/luma/titles/0004001000022000/area/EU/88_LZ.bin"
+        },
+        {
+          "type": "deleteFile",
+          "file": "/luma/titles/0004001000022000/area/EU/89_LZ.bin"
+        },
+        {
+          "type": "deleteFile",
+          "file": "/luma/titles/0004001000022000/area/EU/90_LZ.bin"
+        },
+        {
+          "type": "deleteFile",
+          "file": "/luma/titles/0004001000022000/area/EU/91_LZ.bin"
+        },
+        {
+          "type": "deleteFile",
+          "file": "/luma/titles/0004001000022000/area/EU/92_LZ.bin"
+        },
+        {
+          "type": "deleteFile",
+          "file": "/luma/titles/0004001000022000/area/EU/93_LZ.bin"
+        },
+        {
+          "type": "deleteFile",
+          "file": "/luma/titles/0004001000022000/area/EU/94_LZ.bin"
+        },
+        {
+          "type": "deleteFile",
+          "file": "/luma/titles/0004001000022000/area/EU/95_LZ.bin"
+        },
+        {
+          "type": "deleteFile",
+          "file": "/luma/titles/0004001000022000/area/EU/96_LZ.bin"
+        },
+        {
+          "type": "deleteFile",
+          "file": "/luma/titles/0004001000022000/area/EU/97_LZ.bin"
+        },
+        {
+          "type": "deleteFile",
+          "file": "/luma/titles/0004001000022000/area/EU/98_LZ.bin"
+        },
+        {
+          "type": "deleteFile",
+          "file": "/luma/titles/0004001000022000/area/EU/99_LZ.bin"
+        },
+        {
+          "type": "deleteFile",
+          "file": "/luma/titles/0004001000022000/area/EU/country_LZ.bin"
+        },
+        {
+          "type": "deleteFile",
+          "file": "/luma/titles/0004001000022000/area/JP/1_LZ.bin"
+        },
+        {
+          "type": "deleteFile",
+          "file": "/luma/titles/0004001000022000/area/JP/country_LZ.bin"
+        },
+        {
+          "type": "deleteFile",
+          "file": "/luma/titles/0004001000022000/area/KR/136_LZ.bin"
+        },
+        {
+          "type": "deleteFile",
+          "file": "/luma/titles/0004001000022000/area/KR/country_LZ.bin"
+        },
+        {
+          "type": "deleteFile",
+          "file": "/luma/titles/0004001000022000/area/TW/128_LZ.bin"
+        },
+        {
+          "type": "deleteFile",
+          "file": "/luma/titles/0004001000022000/area/TW/144_LZ.bin"
+        },
+        {
+          "type": "deleteFile",
+          "file": "/luma/titles/0004001000022000/area/TW/145_LZ.bin"
+        },
+        {
+          "type": "deleteFile",
+          "file": "/luma/titles/0004001000022000/area/TW/country_LZ.bin"
+        },
+        {
+          "type": "deleteFile",
+          "file": "/luma/titles/0004001000022000/area/US/10_LZ.bin"
+        },
+        {
+          "type": "deleteFile",
+          "file": "/luma/titles/0004001000022000/area/US/11_LZ.bin"
+        },
+        {
+          "type": "deleteFile",
+          "file": "/luma/titles/0004001000022000/area/US/12_LZ.bin"
+        },
+        {
+          "type": "deleteFile",
+          "file": "/luma/titles/0004001000022000/area/US/13_LZ.bin"
+        },
+        {
+          "type": "deleteFile",
+          "file": "/luma/titles/0004001000022000/area/US/14_LZ.bin"
+        },
+        {
+          "type": "deleteFile",
+          "file": "/luma/titles/0004001000022000/area/US/153_LZ.bin"
+        },
+        {
+          "type": "deleteFile",
+          "file": "/luma/titles/0004001000022000/area/US/156_LZ.bin"
+        },
+        {
+          "type": "deleteFile",
+          "file": "/luma/titles/0004001000022000/area/US/15_LZ.bin"
+        },
+        {
+          "type": "deleteFile",
+          "file": "/luma/titles/0004001000022000/area/US/168_LZ.bin"
+        },
+        {
+          "type": "deleteFile",
+          "file": "/luma/titles/0004001000022000/area/US/16_LZ.bin"
+        },
+        {
+          "type": "deleteFile",
+          "file": "/luma/titles/0004001000022000/area/US/174_LZ.bin"
+        },
+        {
+          "type": "deleteFile",
+          "file": "/luma/titles/0004001000022000/area/US/17_LZ.bin"
+        },
+        {
+          "type": "deleteFile",
+          "file": "/luma/titles/0004001000022000/area/US/186_LZ.bin"
+        },
+        {
+          "type": "deleteFile",
+          "file": "/luma/titles/0004001000022000/area/US/18_LZ.bin"
+        },
+        {
+          "type": "deleteFile",
+          "file": "/luma/titles/0004001000022000/area/US/19_LZ.bin"
+        },
+        {
+          "type": "deleteFile",
+          "file": "/luma/titles/0004001000022000/area/US/20_LZ.bin"
+        },
+        {
+          "type": "deleteFile",
+          "file": "/luma/titles/0004001000022000/area/US/21_LZ.bin"
+        },
+        {
+          "type": "deleteFile",
+          "file": "/luma/titles/0004001000022000/area/US/22_LZ.bin"
+        },
+        {
+          "type": "deleteFile",
+          "file": "/luma/titles/0004001000022000/area/US/23_LZ.bin"
+        },
+        {
+          "type": "deleteFile",
+          "file": "/luma/titles/0004001000022000/area/US/24_LZ.bin"
+        },
+        {
+          "type": "deleteFile",
+          "file": "/luma/titles/0004001000022000/area/US/25_LZ.bin"
+        },
+        {
+          "type": "deleteFile",
+          "file": "/luma/titles/0004001000022000/area/US/26_LZ.bin"
+        },
+        {
+          "type": "deleteFile",
+          "file": "/luma/titles/0004001000022000/area/US/27_LZ.bin"
+        },
+        {
+          "type": "deleteFile",
+          "file": "/luma/titles/0004001000022000/area/US/28_LZ.bin"
+        },
+        {
+          "type": "deleteFile",
+          "file": "/luma/titles/0004001000022000/area/US/29_LZ.bin"
+        },
+        {
+          "type": "deleteFile",
+          "file": "/luma/titles/0004001000022000/area/US/30_LZ.bin"
+        },
+        {
+          "type": "deleteFile",
+          "file": "/luma/titles/0004001000022000/area/US/31_LZ.bin"
+        },
+        {
+          "type": "deleteFile",
+          "file": "/luma/titles/0004001000022000/area/US/32_LZ.bin"
+        },
+        {
+          "type": "deleteFile",
+          "file": "/luma/titles/0004001000022000/area/US/33_LZ.bin"
+        },
+        {
+          "type": "deleteFile",
+          "file": "/luma/titles/0004001000022000/area/US/34_LZ.bin"
+        },
+        {
+          "type": "deleteFile",
+          "file": "/luma/titles/0004001000022000/area/US/35_LZ.bin"
+        },
+        {
+          "type": "deleteFile",
+          "file": "/luma/titles/0004001000022000/area/US/36_LZ.bin"
+        },
+        {
+          "type": "deleteFile",
+          "file": "/luma/titles/0004001000022000/area/US/37_LZ.bin"
+        },
+        {
+          "type": "deleteFile",
+          "file": "/luma/titles/0004001000022000/area/US/38_LZ.bin"
+        },
+        {
+          "type": "deleteFile",
+          "file": "/luma/titles/0004001000022000/area/US/39_LZ.bin"
+        },
+        {
+          "type": "deleteFile",
+          "file": "/luma/titles/0004001000022000/area/US/40_LZ.bin"
+        },
+        {
+          "type": "deleteFile",
+          "file": "/luma/titles/0004001000022000/area/US/41_LZ.bin"
+        },
+        {
+          "type": "deleteFile",
+          "file": "/luma/titles/0004001000022000/area/US/42_LZ.bin"
+        },
+        {
+          "type": "deleteFile",
+          "file": "/luma/titles/0004001000022000/area/US/43_LZ.bin"
+        },
+        {
+          "type": "deleteFile",
+          "file": "/luma/titles/0004001000022000/area/US/44_LZ.bin"
+        },
+        {
+          "type": "deleteFile",
+          "file": "/luma/titles/0004001000022000/area/US/45_LZ.bin"
+        },
+        {
+          "type": "deleteFile",
+          "file": "/luma/titles/0004001000022000/area/US/46_LZ.bin"
+        },
+        {
+          "type": "deleteFile",
+          "file": "/luma/titles/0004001000022000/area/US/47_LZ.bin"
+        },
+        {
+          "type": "deleteFile",
+          "file": "/luma/titles/0004001000022000/area/US/48_LZ.bin"
+        },
+        {
+          "type": "deleteFile",
+          "file": "/luma/titles/0004001000022000/area/US/49_LZ.bin"
+        },
+        {
+          "type": "deleteFile",
+          "file": "/luma/titles/0004001000022000/area/US/50_LZ.bin"
+        },
+        {
+          "type": "deleteFile",
+          "file": "/luma/titles/0004001000022000/area/US/51_LZ.bin"
+        },
+        {
+          "type": "deleteFile",
+          "file": "/luma/titles/0004001000022000/area/US/52_LZ.bin"
+        },
+        {
+          "type": "deleteFile",
+          "file": "/luma/titles/0004001000022000/area/US/8_LZ.bin"
+        },
+        {
+          "type": "deleteFile",
+          "file": "/luma/titles/0004001000022000/area/US/9_LZ.bin"
+        },
+        {
+          "type": "deleteFile",
+          "file": "/luma/titles/0004001000022000/area/US/country_LZ.bin"
+        },
+        {
+          "type": "deleteFile",
+          "file": "/luma/titles/0004001000022000/romfs/font/Hud_JP.bcfnt"
+        },
+        {
+          "type": "deleteFile",
+          "file": "/luma/titles/0004001000022000/romfs/message_EU_LZ.bin"
+        },
+        {
+          "type": "deleteFile",
+          "file": "/luma/titles/0004001000022000/romfs/up_LZ.bin"
+        },
+        {
+          "type": "deleteFile",
+          "file": "/luma/titles/0004001000022100/dlplay_romfs.bin"
+        },
+        {
+          "type": "deleteFile",
+          "file": "/luma/titles/0004001000022200/romfs/message/EU_Russian/PLOG_msbt_LZ.bin"
+        },
+        {
+          "type": "deleteFile",
+          "file": "/luma/titles/0004001000022300/safe_romfs.bin"
+        },
+        {
+          "type": "deleteFile",
+          "file": "/luma/titles/0004001000022400/romfs/msg/EU_Russian.LZ"
+        },
+        {
+          "type": "deleteFile",
+          "file": "/luma/titles/0004001000022500/romfs/msg/EU_Russian.LZ"
+        },
+        {
+          "type": "deleteFile",
+          "file": "/luma/titles/0004001000022700/romfs/icn/EU_appEdit.icn"
+        },
+        {
+          "type": "deleteFile",
+          "file": "/luma/titles/0004001000022700/romfs/message/EU_Russian.arc"
+        },
+        {
+          "type": "deleteFile",
+          "file": "/luma/titles/0004001000022800/romfs/message/EU_Russian/MEET.msbt"
+        },
+        {
+          "type": "deleteFile",
+          "file": "/luma/titles/0004001000022800/romfs/param/Piece2_PanelInfo.csv"
+        },
+        {
+          "type": "deleteFile",
+          "file": "/luma/titles/0004001000022800/romfs/param/country.csv"
+        },
+        {
+          "type": "deleteFile",
+          "file": "/luma/titles/0004001000022800/romfs/param/region.csv"
+        },
+        {
+          "type": "deleteFile",
+          "file": "/luma/titles/0004001000022900/romfs/font/Hud.bcfnt"
+        },
+        {
+          "type": "deleteFile",
+          "file": "/luma/titles/0004001000022900/romfs/message/europe/EU_Russian/hud.msbt.lz"
+        },
+        {
+          "type": "deleteFile",
+          "file": "/luma/titles/0004001000022900/romfs/message/europe/EU_Russian/tiger.msbt.lz"
+        },
+        {
+          "type": "deleteFile",
+          "file": "/luma/titles/0004001000022A00/romfs/CARDBOARD/message/EU_Russian/cardboard_ctr.msbp"
+        },
+        {
+          "type": "deleteFile",
+          "file": "/luma/titles/0004001000022A00/romfs/CARDBOARD/message/EU_Russian/cardboard_ctr.msbt"
+        },
+        {
+          "type": "deleteFile",
+          "file": "/luma/titles/0004001000022A00/romfs/CARDBOARD/message/HUD/EU_Russian/hud.msbt"
+        },
+        {
+          "type": "deleteFile",
+          "file": "/luma/titles/0004001000022A00/romfs/font/Hud.bcfnt"
+        },
+        {
+          "type": "deleteFile",
+          "file": "/luma/titles/0004001000022B00/romfs/messages/EU_Russian/mars.msbt"
+        },
+        {
+          "type": "deleteFile",
+          "file": "/luma/titles/0004001000022B00/romfs/saveicon_EU.icn"
+        },
+        {
+          "type": "deleteFile",
+          "file": "/luma/titles/0004001000022D00/romfs/hal/msg/StgFace/StgFaceEU_Russian.msbt"
+        },
+        {
+          "type": "deleteFile",
+          "file": "/luma/titles/0004001000022E00/romfs/message/EU_Russian/AR_ACT.msbt"
+        },
+        {
+          "type": "deleteFile",
+          "file": "/luma/titles/000400100002C100/romfs/font/Hud.bcfnt"
+        },
+        {
+          "type": "deleteFile",
+          "file": "/luma/titles/000400100002C100/romfs/index_EU_Russian.html"
+        },
+        {
+          "type": "deleteFile",
+          "file": "/luma/titles/000400100002C100/romfs/json/message_EU_Russian.json"
+        },
+        {
+          "type": "deleteFile",
+          "file": "/luma/titles/000400100002C100/romfs/message/EU_Russian/cave.msbt"
+        },
+        {
+          "type": "deleteFile",
+          "file": "/luma/titles/000400100002C100/romfs/message/EU_Russian/hud.msbt"
+        },
+        {
+          "type": "deleteFile",
+          "file": "/luma/titles/0004003000009802/banner_22000.bin"
+        },
+        {
+          "type": "deleteFile",
+          "file": "/luma/titles/0004003000009802/banner_22100.bin"
+        },
+        {
+          "type": "deleteFile",
+          "file": "/luma/titles/0004003000009802/banner_22200.bin"
+        },
+        {
+          "type": "deleteFile",
+          "file": "/luma/titles/0004003000009802/banner_22300.bin"
+        },
+        {
+          "type": "deleteFile",
+          "file": "/luma/titles/0004003000009802/banner_22800.bin"
+        },
+        {
+          "type": "deleteFile",
+          "file": "/luma/titles/0004003000009802/banner_22E00.bin"
+        },
+        {
+          "type": "deleteFile",
+          "file": "/luma/titles/0004003000009802/romfs/font/Hud_JP.bcfnt"
+        },
+        {
+          "type": "deleteFile",
+          "file": "/luma/titles/0004003000009802/romfs/message/EU_Russian/menu_msbt_LZ.bin"
+        },
+        {
+          "type": "deleteFile",
+          "file": "/luma/titles/0004003000009802/romfs/message_hud/EU_Russian/hud_msbt_LZ.bin"
+        },
+        {
+          "type": "deleteFile",
+          "file": "/luma/titles/0004003000009902/camera_applet_romfs.bin"
+        },
+        {
+          "type": "deleteFile",
+          "file": "/luma/titles/0004003000009B02/romfs/2000"
+        },
+        {
+          "type": "deleteFile",
+          "file": "/luma/titles/0004003000009B02/romfs/2100"
+        },
+        {
+          "type": "deleteFile",
+          "file": "/luma/titles/0004003000009B02/romfs/2200"
+        },
+        {
+          "type": "deleteFile",
+          "file": "/luma/titles/0004003000009B02/romfs/2400"
+        },
+        {
+          "type": "deleteFile",
+          "file": "/luma/titles/0004003000009B02/romfs/2500"
+        },
+        {
+          "type": "deleteFile",
+          "file": "/luma/titles/0004003000009B02/romfs/2700"
+        },
+        {
+          "type": "deleteFile",
+          "file": "/luma/titles/0004003000009B02/romfs/2800"
+        },
+        {
+          "type": "deleteFile",
+          "file": "/luma/titles/0004003000009B02/romfs/2900"
+        },
+        {
+          "type": "deleteFile",
+          "file": "/luma/titles/0004003000009B02/romfs/2d00"
+        },
+        {
+          "type": "deleteFile",
+          "file": "/luma/titles/0004003000009B02/romfs/2e00"
+        },
+        {
+          "type": "deleteFile",
+          "file": "/luma/titles/0004003000009B02/romfs/9d02"
+        },
+        {
+          "type": "deleteFile",
+          "file": "/luma/titles/0004003000009B02/romfs/message/EU_Russia/ebird.msbt"
+        },
+        {
+          "type": "deleteFile",
+          "file": "/luma/titles/0004003000009B02/romfs/n9d02"
+        },
+        {
+          "type": "deleteFile",
+          "file": "/luma/titles/0004003000009C02/romfs/lang/EU_Russian/hud.msbt"
+        },
+        {
+          "type": "deleteFile",
+          "file": "/luma/titles/0004003000009C02/romfs/lang/EU_Russian/message.msbt"
+        },
+        {
+          "type": "deleteFile",
+          "file": "/luma/titles/0004003000009C02/romfs/lang/Hud.bcfnt"
+        },
+        {
+          "type": "deleteFile",
+          "file": "/luma/titles/0004003000009D02/romfs/font/Hud.bcfnt"
+        },
+        {
+          "type": "deleteFile",
+          "file": "/luma/titles/0004003000009D02/romfs/message/EU_Russian/hud.msbt"
+        },
+        {
+          "type": "deleteFile",
+          "file": "/luma/titles/0004003000009D02/romfs/message/EU_Russian/spider.msbt"
+        },
+        {
+          "type": "deleteFile",
+          "file": "/luma/titles/0004003000009F02/romfs/font/Hud_JP.bcfnt"
+        },
+        {
+          "type": "deleteFile",
+          "file": "/luma/titles/0004003000009F02/romfs/message/EU_Russian/friend_msbt_LZ.bin"
+        },
+        {
+          "type": "deleteFile",
+          "file": "/luma/titles/0004003000009F02/romfs/message_hud/EU_Russian/hud_msbt_LZ.bin"
+        },
+        {
+          "type": "deleteFile",
+          "file": "/luma/titles/000400300000A002/romfs/font/Hud_JP.bcfnt"
+        },
+        {
+          "type": "deleteFile",
+          "file": "/luma/titles/000400300000A002/romfs/message/EU_Russian/newslist_msbt_LZ.bin"
+        },
+        {
+          "type": "deleteFile",
+          "file": "/luma/titles/000400300000A002/romfs/message_hud/EU_Russian/hud_msbt_LZ.bin"
+        },
+        {
+          "type": "deleteFile",
+          "file": "/luma/titles/000400300000B902/romfs/message/EU_Russian/cabinet.msbt"
+        },
+        {
+          "type": "deleteFile",
+          "file": "/luma/titles/000400300000BA02/romfs/message/EU_Russian/message.msbt.lz"
+        },
+        {
+          "type": "deleteFile",
+          "file": "/luma/titles/000400300000BE02/msg_romfs.bin"
+        },
+        {
+          "type": "deleteFile",
+          "file": "/luma/titles/000400300000BE02/romfs/font/Hud.bcfnt"
+        },
+        {
+          "type": "deleteFile",
+          "file": "/luma/titles/000400300000BE02/romfs/message/EU_Russian/cave.msbt"
+        },
+        {
+          "type": "deleteFile",
+          "file": "/luma/titles/000400300000BE02/romfs/message/EU_Russian/hud.msbt"
+        },
+        {
+          "type": "deleteFile",
+          "file": "/luma/titles/000400300000C502/error_romfs.bin"
+        },
+        {
+          "type": "deleteFile",
+          "file": "/luma/titles/000400300000C502/msg_romfs.bin"
+        },
+        {
+          "type": "deleteFile",
+          "file": "/luma/titles/000400300000CD02/extrapad_romfs.bin"
+        },
+        {
+          "type": "deleteFile",
+          "file": "/luma/titles/000400300000D002/swkbd_romfs.bin"
+        },
+        {
+          "type": "deleteFile",
+          "file": "/luma/titles/000400300000D102/romfs/message/EU_Russian.arc"
+        },
+        {
+          "type": "deleteFile",
+          "file": "/luma/titles/000400300000D602/romfs/message/EU_Russian/mint.msbt.lz"
+        },
+        {
+          "type": "deleteFile",
+          "file": "/luma/titles/000400300000F602/memolib_romfs.bin"
+        }
+      ],
+      "4. Встановити: 3DS / 2DS · замість англійської": {
+        "size": "~23 МБ",
+        "script": [
+          {
+            "type": "downloadRelease",
+            "repo": "BolgarMaxym97/3ds-ua",
+            "file": "3ds-ua-from-en-.*-old3ds\\.zip",
+            "output": "/3ds/3ds-ua.zip",
+            "message": "Завантаження архіву (~23 МБ)...",
+            "includePrereleases": false
+          },
+          {
+            "type": "extractFile",
+            "file": "/3ds/3ds-ua.zip",
+            "input": "^luma/",
+            "output": "/luma/",
+            "message": "Розпакування..."
+          },
+          {
+            "type": "deleteFile",
+            "file": "/3ds/3ds-ua.zip"
+          }
+        ]
+      },
+      "8. Видалити: 3DS / 2DS · замість англійської": [
+        {
+          "type": "deleteFile",
+          "file": "/luma/titles/0004001000022000/code.ips"
+        },
+        {
+          "type": "deleteFile",
+          "file": "/luma/titles/0004001000022100/code.ips"
+        },
+        {
+          "type": "deleteFile",
+          "file": "/luma/titles/0004001000022100/exheader.bin"
+        },
+        {
+          "type": "deleteFile",
+          "file": "/luma/titles/0004001000022200/code.ips"
+        },
+        {
+          "type": "deleteFile",
+          "file": "/luma/titles/0004001000022200/exheader.bin"
+        },
+        {
+          "type": "deleteFile",
+          "file": "/luma/titles/0004001000022300/code.ips"
+        },
+        {
+          "type": "deleteFile",
+          "file": "/luma/titles/0004001000022300/exheader.bin"
+        },
+        {
+          "type": "deleteFile",
+          "file": "/luma/titles/0004001000022800/exheader.bin"
+        },
+        {
+          "type": "deleteFile",
+          "file": "/luma/titles/0004001000022900/exheader.bin"
+        },
+        {
+          "type": "deleteFile",
+          "file": "/luma/titles/000400100002C100/code.ips"
+        },
+        {
+          "type": "deleteFile",
+          "file": "/luma/titles/000400100002C100/exheader.bin"
+        },
+        {
+          "type": "deleteFile",
+          "file": "/luma/titles/0004003000009802/code.ips"
+        },
+        {
+          "type": "deleteFile",
+          "file": "/luma/titles/0004003000009902/code.ips"
+        },
+        {
+          "type": "deleteFile",
+          "file": "/luma/titles/0004003000009B02/code.ips"
+        },
+        {
+          "type": "deleteFile",
+          "file": "/luma/titles/0004003000009B02/exheader.bin"
+        },
+        {
+          "type": "deleteFile",
+          "file": "/luma/titles/0004003000009F02/code.ips"
+        },
+        {
+          "type": "deleteFile",
+          "file": "/luma/titles/0004003000009F02/exheader.bin"
+        },
+        {
+          "type": "deleteFile",
+          "file": "/luma/titles/000400300000A002/code.ips"
+        },
+        {
+          "type": "deleteFile",
+          "file": "/luma/titles/000400300000A002/exheader.bin"
+        },
+        {
+          "type": "deleteFile",
+          "file": "/luma/titles/000400300000B902/code.ips"
+        },
+        {
+          "type": "deleteFile",
+          "file": "/luma/titles/000400300000B902/exheader.bin"
+        },
+        {
+          "type": "deleteFile",
+          "file": "/luma/titles/000400300000BA02/exheader.bin"
+        },
+        {
+          "type": "deleteFile",
+          "file": "/luma/titles/000400300000BE02/code.ips"
+        },
+        {
+          "type": "deleteFile",
+          "file": "/luma/titles/000400300000BE02/exheader.bin"
+        },
+        {
+          "type": "deleteFile",
+          "file": "/luma/titles/000400300000C502/code.ips"
+        },
+        {
+          "type": "deleteFile",
+          "file": "/luma/titles/000400300000C502/exheader.bin"
+        },
+        {
+          "type": "deleteFile",
+          "file": "/luma/titles/000400300000CD02/code.ips"
+        },
+        {
+          "type": "deleteFile",
+          "file": "/luma/titles/000400300000CD02/exheader.bin"
+        },
+        {
+          "type": "deleteFile",
+          "file": "/luma/titles/000400300000D002/code.ips"
+        },
+        {
+          "type": "deleteFile",
+          "file": "/luma/titles/000400300000D002/exheader.bin"
+        },
+        {
+          "type": "deleteFile",
+          "file": "/luma/titles/000400300000D102/code.ips"
+        },
+        {
+          "type": "deleteFile",
+          "file": "/luma/titles/000400300000D102/exheader.bin"
+        },
+        {
+          "type": "deleteFile",
+          "file": "/luma/titles/000400300000D602/code.ips"
+        },
+        {
+          "type": "deleteFile",
+          "file": "/luma/titles/000400300000D602/exheader.bin"
+        },
+        {
+          "type": "deleteFile",
+          "file": "/luma/titles/000400300000F602/code.ips"
+        },
+        {
+          "type": "deleteFile",
+          "file": "/luma/titles/000400300000F602/exheader.bin"
+        },
+        {
+          "type": "deleteFile",
+          "file": "/luma/titles/0004001000022000/area/CN/160_LZ.bin"
+        },
+        {
+          "type": "deleteFile",
+          "file": "/luma/titles/0004001000022000/area/CN/country_LZ.bin"
+        },
+        {
+          "type": "deleteFile",
+          "file": "/luma/titles/0004001000022000/area/EU/100_LZ.bin"
+        },
+        {
+          "type": "deleteFile",
+          "file": "/luma/titles/0004001000022000/area/EU/101_LZ.bin"
+        },
+        {
+          "type": "deleteFile",
+          "file": "/luma/titles/0004001000022000/area/EU/102_LZ.bin"
+        },
+        {
+          "type": "deleteFile",
+          "file": "/luma/titles/0004001000022000/area/EU/103_LZ.bin"
+        },
+        {
+          "type": "deleteFile",
+          "file": "/luma/titles/0004001000022000/area/EU/104_LZ.bin"
+        },
+        {
+          "type": "deleteFile",
+          "file": "/luma/titles/0004001000022000/area/EU/105_LZ.bin"
+        },
+        {
+          "type": "deleteFile",
+          "file": "/luma/titles/0004001000022000/area/EU/106_LZ.bin"
+        },
+        {
+          "type": "deleteFile",
+          "file": "/luma/titles/0004001000022000/area/EU/107_LZ.bin"
+        },
+        {
+          "type": "deleteFile",
+          "file": "/luma/titles/0004001000022000/area/EU/108_LZ.bin"
+        },
+        {
+          "type": "deleteFile",
+          "file": "/luma/titles/0004001000022000/area/EU/109_LZ.bin"
+        },
+        {
+          "type": "deleteFile",
+          "file": "/luma/titles/0004001000022000/area/EU/110_LZ.bin"
+        },
+        {
+          "type": "deleteFile",
+          "file": "/luma/titles/0004001000022000/area/EU/111_LZ.bin"
+        },
+        {
+          "type": "deleteFile",
+          "file": "/luma/titles/0004001000022000/area/EU/112_LZ.bin"
+        },
+        {
+          "type": "deleteFile",
+          "file": "/luma/titles/0004001000022000/area/EU/113_LZ.bin"
+        },
+        {
+          "type": "deleteFile",
+          "file": "/luma/titles/0004001000022000/area/EU/114_LZ.bin"
+        },
+        {
+          "type": "deleteFile",
+          "file": "/luma/titles/0004001000022000/area/EU/115_LZ.bin"
+        },
+        {
+          "type": "deleteFile",
+          "file": "/luma/titles/0004001000022000/area/EU/116_LZ.bin"
+        },
+        {
+          "type": "deleteFile",
+          "file": "/luma/titles/0004001000022000/area/EU/117_LZ.bin"
+        },
+        {
+          "type": "deleteFile",
+          "file": "/luma/titles/0004001000022000/area/EU/118_LZ.bin"
+        },
+        {
+          "type": "deleteFile",
+          "file": "/luma/titles/0004001000022000/area/EU/119_LZ.bin"
+        },
+        {
+          "type": "deleteFile",
+          "file": "/luma/titles/0004001000022000/area/EU/120_LZ.bin"
+        },
+        {
+          "type": "deleteFile",
+          "file": "/luma/titles/0004001000022000/area/EU/121_LZ.bin"
+        },
+        {
+          "type": "deleteFile",
+          "file": "/luma/titles/0004001000022000/area/EU/122_LZ.bin"
+        },
+        {
+          "type": "deleteFile",
+          "file": "/luma/titles/0004001000022000/area/EU/123_LZ.bin"
+        },
+        {
+          "type": "deleteFile",
+          "file": "/luma/titles/0004001000022000/area/EU/124_LZ.bin"
+        },
+        {
+          "type": "deleteFile",
+          "file": "/luma/titles/0004001000022000/area/EU/125_LZ.bin"
+        },
+        {
+          "type": "deleteFile",
+          "file": "/luma/titles/0004001000022000/area/EU/126_LZ.bin"
+        },
+        {
+          "type": "deleteFile",
+          "file": "/luma/titles/0004001000022000/area/EU/127_LZ.bin"
+        },
+        {
+          "type": "deleteFile",
+          "file": "/luma/titles/0004001000022000/area/EU/169_LZ.bin"
+        },
+        {
+          "type": "deleteFile",
+          "file": "/luma/titles/0004001000022000/area/EU/184_LZ.bin"
+        },
+        {
+          "type": "deleteFile",
+          "file": "/luma/titles/0004001000022000/area/EU/185_LZ.bin"
+        },
+        {
+          "type": "deleteFile",
+          "file": "/luma/titles/0004001000022000/area/EU/64_LZ.bin"
+        },
+        {
+          "type": "deleteFile",
+          "file": "/luma/titles/0004001000022000/area/EU/65_LZ.bin"
+        },
+        {
+          "type": "deleteFile",
+          "file": "/luma/titles/0004001000022000/area/EU/66_LZ.bin"
+        },
+        {
+          "type": "deleteFile",
+          "file": "/luma/titles/0004001000022000/area/EU/67_LZ.bin"
+        },
+        {
+          "type": "deleteFile",
+          "file": "/luma/titles/0004001000022000/area/EU/68_LZ.bin"
+        },
+        {
+          "type": "deleteFile",
+          "file": "/luma/titles/0004001000022000/area/EU/69_LZ.bin"
+        },
+        {
+          "type": "deleteFile",
+          "file": "/luma/titles/0004001000022000/area/EU/70_LZ.bin"
+        },
+        {
+          "type": "deleteFile",
+          "file": "/luma/titles/0004001000022000/area/EU/71_LZ.bin"
+        },
+        {
+          "type": "deleteFile",
+          "file": "/luma/titles/0004001000022000/area/EU/72_LZ.bin"
+        },
+        {
+          "type": "deleteFile",
+          "file": "/luma/titles/0004001000022000/area/EU/73_LZ.bin"
+        },
+        {
+          "type": "deleteFile",
+          "file": "/luma/titles/0004001000022000/area/EU/74_LZ.bin"
+        },
+        {
+          "type": "deleteFile",
+          "file": "/luma/titles/0004001000022000/area/EU/75_LZ.bin"
+        },
+        {
+          "type": "deleteFile",
+          "file": "/luma/titles/0004001000022000/area/EU/76_LZ.bin"
+        },
+        {
+          "type": "deleteFile",
+          "file": "/luma/titles/0004001000022000/area/EU/77_LZ.bin"
+        },
+        {
+          "type": "deleteFile",
+          "file": "/luma/titles/0004001000022000/area/EU/78_LZ.bin"
+        },
+        {
+          "type": "deleteFile",
+          "file": "/luma/titles/0004001000022000/area/EU/79_LZ.bin"
+        },
+        {
+          "type": "deleteFile",
+          "file": "/luma/titles/0004001000022000/area/EU/80_LZ.bin"
+        },
+        {
+          "type": "deleteFile",
+          "file": "/luma/titles/0004001000022000/area/EU/81_LZ.bin"
+        },
+        {
+          "type": "deleteFile",
+          "file": "/luma/titles/0004001000022000/area/EU/82_LZ.bin"
+        },
+        {
+          "type": "deleteFile",
+          "file": "/luma/titles/0004001000022000/area/EU/83_LZ.bin"
+        },
+        {
+          "type": "deleteFile",
+          "file": "/luma/titles/0004001000022000/area/EU/84_LZ.bin"
+        },
+        {
+          "type": "deleteFile",
+          "file": "/luma/titles/0004001000022000/area/EU/85_LZ.bin"
+        },
+        {
+          "type": "deleteFile",
+          "file": "/luma/titles/0004001000022000/area/EU/86_LZ.bin"
+        },
+        {
+          "type": "deleteFile",
+          "file": "/luma/titles/0004001000022000/area/EU/87_LZ.bin"
+        },
+        {
+          "type": "deleteFile",
+          "file": "/luma/titles/0004001000022000/area/EU/88_LZ.bin"
+        },
+        {
+          "type": "deleteFile",
+          "file": "/luma/titles/0004001000022000/area/EU/89_LZ.bin"
+        },
+        {
+          "type": "deleteFile",
+          "file": "/luma/titles/0004001000022000/area/EU/90_LZ.bin"
+        },
+        {
+          "type": "deleteFile",
+          "file": "/luma/titles/0004001000022000/area/EU/91_LZ.bin"
+        },
+        {
+          "type": "deleteFile",
+          "file": "/luma/titles/0004001000022000/area/EU/92_LZ.bin"
+        },
+        {
+          "type": "deleteFile",
+          "file": "/luma/titles/0004001000022000/area/EU/93_LZ.bin"
+        },
+        {
+          "type": "deleteFile",
+          "file": "/luma/titles/0004001000022000/area/EU/94_LZ.bin"
+        },
+        {
+          "type": "deleteFile",
+          "file": "/luma/titles/0004001000022000/area/EU/95_LZ.bin"
+        },
+        {
+          "type": "deleteFile",
+          "file": "/luma/titles/0004001000022000/area/EU/96_LZ.bin"
+        },
+        {
+          "type": "deleteFile",
+          "file": "/luma/titles/0004001000022000/area/EU/97_LZ.bin"
+        },
+        {
+          "type": "deleteFile",
+          "file": "/luma/titles/0004001000022000/area/EU/98_LZ.bin"
+        },
+        {
+          "type": "deleteFile",
+          "file": "/luma/titles/0004001000022000/area/EU/99_LZ.bin"
+        },
+        {
+          "type": "deleteFile",
+          "file": "/luma/titles/0004001000022000/area/EU/country_LZ.bin"
+        },
+        {
+          "type": "deleteFile",
+          "file": "/luma/titles/0004001000022000/area/JP/1_LZ.bin"
+        },
+        {
+          "type": "deleteFile",
+          "file": "/luma/titles/0004001000022000/area/JP/country_LZ.bin"
+        },
+        {
+          "type": "deleteFile",
+          "file": "/luma/titles/0004001000022000/area/KR/136_LZ.bin"
+        },
+        {
+          "type": "deleteFile",
+          "file": "/luma/titles/0004001000022000/area/KR/country_LZ.bin"
+        },
+        {
+          "type": "deleteFile",
+          "file": "/luma/titles/0004001000022000/area/TW/128_LZ.bin"
+        },
+        {
+          "type": "deleteFile",
+          "file": "/luma/titles/0004001000022000/area/TW/144_LZ.bin"
+        },
+        {
+          "type": "deleteFile",
+          "file": "/luma/titles/0004001000022000/area/TW/145_LZ.bin"
+        },
+        {
+          "type": "deleteFile",
+          "file": "/luma/titles/0004001000022000/area/TW/country_LZ.bin"
+        },
+        {
+          "type": "deleteFile",
+          "file": "/luma/titles/0004001000022000/area/US/10_LZ.bin"
+        },
+        {
+          "type": "deleteFile",
+          "file": "/luma/titles/0004001000022000/area/US/11_LZ.bin"
+        },
+        {
+          "type": "deleteFile",
+          "file": "/luma/titles/0004001000022000/area/US/12_LZ.bin"
+        },
+        {
+          "type": "deleteFile",
+          "file": "/luma/titles/0004001000022000/area/US/13_LZ.bin"
+        },
+        {
+          "type": "deleteFile",
+          "file": "/luma/titles/0004001000022000/area/US/14_LZ.bin"
+        },
+        {
+          "type": "deleteFile",
+          "file": "/luma/titles/0004001000022000/area/US/153_LZ.bin"
+        },
+        {
+          "type": "deleteFile",
+          "file": "/luma/titles/0004001000022000/area/US/156_LZ.bin"
+        },
+        {
+          "type": "deleteFile",
+          "file": "/luma/titles/0004001000022000/area/US/15_LZ.bin"
+        },
+        {
+          "type": "deleteFile",
+          "file": "/luma/titles/0004001000022000/area/US/168_LZ.bin"
+        },
+        {
+          "type": "deleteFile",
+          "file": "/luma/titles/0004001000022000/area/US/16_LZ.bin"
+        },
+        {
+          "type": "deleteFile",
+          "file": "/luma/titles/0004001000022000/area/US/174_LZ.bin"
+        },
+        {
+          "type": "deleteFile",
+          "file": "/luma/titles/0004001000022000/area/US/17_LZ.bin"
+        },
+        {
+          "type": "deleteFile",
+          "file": "/luma/titles/0004001000022000/area/US/186_LZ.bin"
+        },
+        {
+          "type": "deleteFile",
+          "file": "/luma/titles/0004001000022000/area/US/18_LZ.bin"
+        },
+        {
+          "type": "deleteFile",
+          "file": "/luma/titles/0004001000022000/area/US/19_LZ.bin"
+        },
+        {
+          "type": "deleteFile",
+          "file": "/luma/titles/0004001000022000/area/US/20_LZ.bin"
+        },
+        {
+          "type": "deleteFile",
+          "file": "/luma/titles/0004001000022000/area/US/21_LZ.bin"
+        },
+        {
+          "type": "deleteFile",
+          "file": "/luma/titles/0004001000022000/area/US/22_LZ.bin"
+        },
+        {
+          "type": "deleteFile",
+          "file": "/luma/titles/0004001000022000/area/US/23_LZ.bin"
+        },
+        {
+          "type": "deleteFile",
+          "file": "/luma/titles/0004001000022000/area/US/24_LZ.bin"
+        },
+        {
+          "type": "deleteFile",
+          "file": "/luma/titles/0004001000022000/area/US/25_LZ.bin"
+        },
+        {
+          "type": "deleteFile",
+          "file": "/luma/titles/0004001000022000/area/US/26_LZ.bin"
+        },
+        {
+          "type": "deleteFile",
+          "file": "/luma/titles/0004001000022000/area/US/27_LZ.bin"
+        },
+        {
+          "type": "deleteFile",
+          "file": "/luma/titles/0004001000022000/area/US/28_LZ.bin"
+        },
+        {
+          "type": "deleteFile",
+          "file": "/luma/titles/0004001000022000/area/US/29_LZ.bin"
+        },
+        {
+          "type": "deleteFile",
+          "file": "/luma/titles/0004001000022000/area/US/30_LZ.bin"
+        },
+        {
+          "type": "deleteFile",
+          "file": "/luma/titles/0004001000022000/area/US/31_LZ.bin"
+        },
+        {
+          "type": "deleteFile",
+          "file": "/luma/titles/0004001000022000/area/US/32_LZ.bin"
+        },
+        {
+          "type": "deleteFile",
+          "file": "/luma/titles/0004001000022000/area/US/33_LZ.bin"
+        },
+        {
+          "type": "deleteFile",
+          "file": "/luma/titles/0004001000022000/area/US/34_LZ.bin"
+        },
+        {
+          "type": "deleteFile",
+          "file": "/luma/titles/0004001000022000/area/US/35_LZ.bin"
+        },
+        {
+          "type": "deleteFile",
+          "file": "/luma/titles/0004001000022000/area/US/36_LZ.bin"
+        },
+        {
+          "type": "deleteFile",
+          "file": "/luma/titles/0004001000022000/area/US/37_LZ.bin"
+        },
+        {
+          "type": "deleteFile",
+          "file": "/luma/titles/0004001000022000/area/US/38_LZ.bin"
+        },
+        {
+          "type": "deleteFile",
+          "file": "/luma/titles/0004001000022000/area/US/39_LZ.bin"
+        },
+        {
+          "type": "deleteFile",
+          "file": "/luma/titles/0004001000022000/area/US/40_LZ.bin"
+        },
+        {
+          "type": "deleteFile",
+          "file": "/luma/titles/0004001000022000/area/US/41_LZ.bin"
+        },
+        {
+          "type": "deleteFile",
+          "file": "/luma/titles/0004001000022000/area/US/42_LZ.bin"
+        },
+        {
+          "type": "deleteFile",
+          "file": "/luma/titles/0004001000022000/area/US/43_LZ.bin"
+        },
+        {
+          "type": "deleteFile",
+          "file": "/luma/titles/0004001000022000/area/US/44_LZ.bin"
+        },
+        {
+          "type": "deleteFile",
+          "file": "/luma/titles/0004001000022000/area/US/45_LZ.bin"
+        },
+        {
+          "type": "deleteFile",
+          "file": "/luma/titles/0004001000022000/area/US/46_LZ.bin"
+        },
+        {
+          "type": "deleteFile",
+          "file": "/luma/titles/0004001000022000/area/US/47_LZ.bin"
+        },
+        {
+          "type": "deleteFile",
+          "file": "/luma/titles/0004001000022000/area/US/48_LZ.bin"
+        },
+        {
+          "type": "deleteFile",
+          "file": "/luma/titles/0004001000022000/area/US/49_LZ.bin"
+        },
+        {
+          "type": "deleteFile",
+          "file": "/luma/titles/0004001000022000/area/US/50_LZ.bin"
+        },
+        {
+          "type": "deleteFile",
+          "file": "/luma/titles/0004001000022000/area/US/51_LZ.bin"
+        },
+        {
+          "type": "deleteFile",
+          "file": "/luma/titles/0004001000022000/area/US/52_LZ.bin"
+        },
+        {
+          "type": "deleteFile",
+          "file": "/luma/titles/0004001000022000/area/US/8_LZ.bin"
+        },
+        {
+          "type": "deleteFile",
+          "file": "/luma/titles/0004001000022000/area/US/9_LZ.bin"
+        },
+        {
+          "type": "deleteFile",
+          "file": "/luma/titles/0004001000022000/area/US/country_LZ.bin"
+        },
+        {
+          "type": "deleteFile",
+          "file": "/luma/titles/0004001000022000/romfs/font/Hud_JP.bcfnt"
+        },
+        {
+          "type": "deleteFile",
+          "file": "/luma/titles/0004001000022000/romfs/message_EU_LZ.bin"
+        },
+        {
+          "type": "deleteFile",
+          "file": "/luma/titles/0004001000022000/romfs/up_LZ.bin"
+        },
+        {
+          "type": "deleteFile",
+          "file": "/luma/titles/0004001000022100/dlplay_romfs.bin"
+        },
+        {
+          "type": "deleteFile",
+          "file": "/luma/titles/0004001000022200/romfs/message/EU_English/PLOG_msbt_LZ.bin"
+        },
+        {
+          "type": "deleteFile",
+          "file": "/luma/titles/0004001000022300/safe_romfs.bin"
+        },
+        {
+          "type": "deleteFile",
+          "file": "/luma/titles/0004001000022400/romfs/msg/EU_English.LZ"
+        },
+        {
+          "type": "deleteFile",
+          "file": "/luma/titles/0004001000022500/romfs/msg/EU_English.LZ"
+        },
+        {
+          "type": "deleteFile",
+          "file": "/luma/titles/0004001000022700/romfs/icn/EU_appEdit.icn"
+        },
+        {
+          "type": "deleteFile",
+          "file": "/luma/titles/0004001000022700/romfs/message/EU_English.arc"
+        },
+        {
+          "type": "deleteFile",
+          "file": "/luma/titles/0004001000022800/romfs/message/EU_English/MEET.msbt"
+        },
+        {
+          "type": "deleteFile",
+          "file": "/luma/titles/0004001000022800/romfs/param/Piece2_PanelInfo.csv"
+        },
+        {
+          "type": "deleteFile",
+          "file": "/luma/titles/0004001000022800/romfs/param/country.csv"
+        },
+        {
+          "type": "deleteFile",
+          "file": "/luma/titles/0004001000022800/romfs/param/region.csv"
+        },
+        {
+          "type": "deleteFile",
+          "file": "/luma/titles/0004001000022900/romfs/font/Hud.bcfnt"
+        },
+        {
+          "type": "deleteFile",
+          "file": "/luma/titles/0004001000022900/romfs/message/europe/EU_English/hud.msbt.lz"
+        },
+        {
+          "type": "deleteFile",
+          "file": "/luma/titles/0004001000022900/romfs/message/europe/EU_English/tiger.msbt.lz"
+        },
+        {
+          "type": "deleteFile",
+          "file": "/luma/titles/0004001000022A00/romfs/CARDBOARD/message/EU_English/cardboard_ctr.msbp"
+        },
+        {
+          "type": "deleteFile",
+          "file": "/luma/titles/0004001000022A00/romfs/CARDBOARD/message/EU_English/cardboard_ctr.msbt"
+        },
+        {
+          "type": "deleteFile",
+          "file": "/luma/titles/0004001000022A00/romfs/CARDBOARD/message/HUD/EU_English/hud.msbt"
+        },
+        {
+          "type": "deleteFile",
+          "file": "/luma/titles/0004001000022A00/romfs/font/Hud.bcfnt"
+        },
+        {
+          "type": "deleteFile",
+          "file": "/luma/titles/0004001000022B00/romfs/messages/EU_English/mars.msbt"
+        },
+        {
+          "type": "deleteFile",
+          "file": "/luma/titles/0004001000022B00/romfs/saveicon_EU.icn"
+        },
+        {
+          "type": "deleteFile",
+          "file": "/luma/titles/0004001000022D00/romfs/hal/msg/StgFace/StgFaceEU_English.msbt"
+        },
+        {
+          "type": "deleteFile",
+          "file": "/luma/titles/0004001000022E00/romfs/message/EU_English/AR_ACT.msbt"
+        },
+        {
+          "type": "deleteFile",
+          "file": "/luma/titles/000400100002C100/romfs/font/Hud.bcfnt"
+        },
+        {
+          "type": "deleteFile",
+          "file": "/luma/titles/000400100002C100/romfs/index_EU_English.html"
+        },
+        {
+          "type": "deleteFile",
+          "file": "/luma/titles/000400100002C100/romfs/json/message_EU_English.json"
+        },
+        {
+          "type": "deleteFile",
+          "file": "/luma/titles/000400100002C100/romfs/message/EU_English/cave.msbt"
+        },
+        {
+          "type": "deleteFile",
+          "file": "/luma/titles/000400100002C100/romfs/message/EU_English/hud.msbt"
+        },
+        {
+          "type": "deleteFile",
+          "file": "/luma/titles/0004003000009802/banner_22000.bin"
+        },
+        {
+          "type": "deleteFile",
+          "file": "/luma/titles/0004003000009802/banner_22100.bin"
+        },
+        {
+          "type": "deleteFile",
+          "file": "/luma/titles/0004003000009802/banner_22200.bin"
+        },
+        {
+          "type": "deleteFile",
+          "file": "/luma/titles/0004003000009802/banner_22300.bin"
+        },
+        {
+          "type": "deleteFile",
+          "file": "/luma/titles/0004003000009802/banner_22800.bin"
+        },
+        {
+          "type": "deleteFile",
+          "file": "/luma/titles/0004003000009802/banner_22E00.bin"
+        },
+        {
+          "type": "deleteFile",
+          "file": "/luma/titles/0004003000009802/romfs/font/Hud_JP.bcfnt"
+        },
+        {
+          "type": "deleteFile",
+          "file": "/luma/titles/0004003000009802/romfs/message/EU_English/menu_msbt_LZ.bin"
+        },
+        {
+          "type": "deleteFile",
+          "file": "/luma/titles/0004003000009802/romfs/message_hud/EU_English/hud_msbt_LZ.bin"
+        },
+        {
+          "type": "deleteFile",
+          "file": "/luma/titles/0004003000009902/camera_applet_romfs.bin"
+        },
+        {
+          "type": "deleteFile",
+          "file": "/luma/titles/0004003000009B02/romfs/2000"
+        },
+        {
+          "type": "deleteFile",
+          "file": "/luma/titles/0004003000009B02/romfs/2100"
+        },
+        {
+          "type": "deleteFile",
+          "file": "/luma/titles/0004003000009B02/romfs/2200"
+        },
+        {
+          "type": "deleteFile",
+          "file": "/luma/titles/0004003000009B02/romfs/2400"
+        },
+        {
+          "type": "deleteFile",
+          "file": "/luma/titles/0004003000009B02/romfs/2500"
+        },
+        {
+          "type": "deleteFile",
+          "file": "/luma/titles/0004003000009B02/romfs/2700"
+        },
+        {
+          "type": "deleteFile",
+          "file": "/luma/titles/0004003000009B02/romfs/2800"
+        },
+        {
+          "type": "deleteFile",
+          "file": "/luma/titles/0004003000009B02/romfs/2900"
+        },
+        {
+          "type": "deleteFile",
+          "file": "/luma/titles/0004003000009B02/romfs/2d00"
+        },
+        {
+          "type": "deleteFile",
+          "file": "/luma/titles/0004003000009B02/romfs/2e00"
+        },
+        {
+          "type": "deleteFile",
+          "file": "/luma/titles/0004003000009B02/romfs/9d02"
+        },
+        {
+          "type": "deleteFile",
+          "file": "/luma/titles/0004003000009B02/romfs/message/EU_English/ebird.msbt"
+        },
+        {
+          "type": "deleteFile",
+          "file": "/luma/titles/0004003000009B02/romfs/n9d02"
+        },
+        {
+          "type": "deleteFile",
+          "file": "/luma/titles/0004003000009C02/romfs/lang/EU_English/hud.msbt"
+        },
+        {
+          "type": "deleteFile",
+          "file": "/luma/titles/0004003000009C02/romfs/lang/EU_English/message.msbt"
+        },
+        {
+          "type": "deleteFile",
+          "file": "/luma/titles/0004003000009C02/romfs/lang/Hud.bcfnt"
+        },
+        {
+          "type": "deleteFile",
+          "file": "/luma/titles/0004003000009D02/romfs/font/Hud.bcfnt"
+        },
+        {
+          "type": "deleteFile",
+          "file": "/luma/titles/0004003000009D02/romfs/message/EU_English/hud.msbt"
+        },
+        {
+          "type": "deleteFile",
+          "file": "/luma/titles/0004003000009D02/romfs/message/EU_English/spider.msbt"
+        },
+        {
+          "type": "deleteFile",
+          "file": "/luma/titles/0004003000009F02/romfs/font/Hud_JP.bcfnt"
+        },
+        {
+          "type": "deleteFile",
+          "file": "/luma/titles/0004003000009F02/romfs/message/EU_English/friend_msbt_LZ.bin"
+        },
+        {
+          "type": "deleteFile",
+          "file": "/luma/titles/0004003000009F02/romfs/message_hud/EU_English/hud_msbt_LZ.bin"
+        },
+        {
+          "type": "deleteFile",
+          "file": "/luma/titles/000400300000A002/romfs/font/Hud_JP.bcfnt"
+        },
+        {
+          "type": "deleteFile",
+          "file": "/luma/titles/000400300000A002/romfs/message/EU_English/newslist_msbt_LZ.bin"
+        },
+        {
+          "type": "deleteFile",
+          "file": "/luma/titles/000400300000A002/romfs/message_hud/EU_English/hud_msbt_LZ.bin"
+        },
+        {
+          "type": "deleteFile",
+          "file": "/luma/titles/000400300000B902/romfs/message/EU_English/cabinet.msbt"
+        },
+        {
+          "type": "deleteFile",
+          "file": "/luma/titles/000400300000BA02/romfs/message/EU_English/message.msbt.lz"
+        },
+        {
+          "type": "deleteFile",
+          "file": "/luma/titles/000400300000BE02/msg_romfs.bin"
+        },
+        {
+          "type": "deleteFile",
+          "file": "/luma/titles/000400300000BE02/romfs/font/Hud.bcfnt"
+        },
+        {
+          "type": "deleteFile",
+          "file": "/luma/titles/000400300000BE02/romfs/message/EU_English/cave.msbt"
+        },
+        {
+          "type": "deleteFile",
+          "file": "/luma/titles/000400300000BE02/romfs/message/EU_English/hud.msbt"
+        },
+        {
+          "type": "deleteFile",
+          "file": "/luma/titles/000400300000C502/error_romfs.bin"
+        },
+        {
+          "type": "deleteFile",
+          "file": "/luma/titles/000400300000C502/msg_romfs.bin"
+        },
+        {
+          "type": "deleteFile",
+          "file": "/luma/titles/000400300000CD02/extrapad_romfs.bin"
+        },
+        {
+          "type": "deleteFile",
+          "file": "/luma/titles/000400300000D002/swkbd_romfs.bin"
+        },
+        {
+          "type": "deleteFile",
+          "file": "/luma/titles/000400300000D102/romfs/message/EU_English.arc"
+        },
+        {
+          "type": "deleteFile",
+          "file": "/luma/titles/000400300000D602/romfs/message/EU_English/mint.msbt.lz"
+        },
+        {
+          "type": "deleteFile",
+          "file": "/luma/titles/000400300000F602/memolib_romfs.bin"
+        }
+      ],
+      "9. Видалити примусово (питає про кожну папку)": [
         {
           "type": "rmdir",
           "directory": "/luma/titles/0004001000022000",
@@ -568,10 +4253,6 @@
           "type": "rmdir",
           "directory": "/luma/titles/0004003020009D02",
           "message": "Видаляю /luma/titles/0004003020009D02"
-        },
-        {
-          "type": "promptMessage",
-          "message": "Файли видалено.\n\nПеремкніть мову консолі в Налаштуваннях системи."
         }
       ],
       "info": {
@@ -596,7 +4277,7 @@
         ],
         "icon_index": 0,
         "sheet_index": 0,
-        "last_updated": "2026-09-05 at 10:23 (UTC)"
+        "last_updated": "2026-09-05 at 10:42 (UTC)"
       }
     }
   ]

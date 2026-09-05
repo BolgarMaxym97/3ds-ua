@@ -105,8 +105,9 @@ TIMESTAMP_RE = re.compile(r"^\d{4}-\d{2}-\d{2} at \d{2}:\d{2} \(UTC\)$")
 MODELS = ("new3ds", "old3ds")
 SLOTS = ("ru", "en")
 
-ASK_MODEL = "У вас New 3DS, New 3DS XL або New 2DS XL?\n\nМодель написана спереду під нижнім екраном."
-ASK_SLOT = "Замінити РОСІЙСЬКУ мову?\n\nНі = замінити англійську."
+MODEL_WORDS = {"new3ds": "New 3DS / New 2DS XL", "old3ds": "3DS / 2DS"}
+SLOT_WORDS = {"ru": "замість російської", "en": "замість англійської"}
+UNINSTALL = "9. Видалити примусово (питає про кожну папку)"
 
 DONE_NOTE = (
     "Готово.\n\n"
@@ -270,32 +271,59 @@ def branch(slot: str, model: str) -> list[dict]:
     ]
 
 
-def install_steps(remember: bool) -> list:
-    """The two questions and the four branches they choose between.
+def script_names() -> dict[tuple[str, str], dict[str, str]]:
+    """(model, slot) -> the two script names for that variant, in one place."""
+    variants = [(m, sl) for m in MODELS for sl in SLOTS]
+    names = {}
+    for index, (model, slot) in enumerate(variants, start=1):
+        label = f"{MODEL_WORDS[model]} · {SLOT_WORDS[slot]}"
+        names[(model, slot)] = {
+            "install": f"{index}. Встановити: {label}",
+            "uninstall": f"{index + len(variants)}. Видалити: {label}",
+        }
+    return names
 
-    `remember` is off in the clean-reinstall script: that script exists for the user who
-    changed console or wants the other language slot, and a remembered answer would be
-    exactly the thing standing in their way.
+
+def install_scripts() -> dict[str, dict]:
+    """One script per (console model, language slot). No questions anywhere.
+
+    The obvious design is a single script that asks two yes/no questions - `promptMessage`
+    does branch, and Universal-Updater even remembers the answers. On hardware it is a trap:
+    running a script only queues it, and a queued `promptMessage` becomes a Request that
+    waits inside the Queue menu (third icon in the left sidebar). The console just returns to
+    the list and the step sits there until the user finds that screen. Four named scripts put
+    the same choice where the user already is, and nothing ever waits on a hidden prompt.
     """
-    model_name = "new3ds" if remember else None
-    slot_name = "slot" if remember else None
-    return [
-        prompt(ASK_MODEL, goto="OLD3DS", name=model_name),
-        prompt(ASK_SLOT, goto="EN_NEW", name=slot_name),
-        *branch("ru", "new3ds"),
-        skip("DONE"),
-        Label("EN_NEW"),
-        *branch("en", "new3ds"),
-        skip("DONE"),
-        Label("OLD3DS"),
-        prompt(ASK_SLOT, goto="EN_OLD", name=slot_name),
-        *branch("ru", "old3ds"),
-        skip("DONE"),
-        Label("EN_OLD"),
-        *branch("en", "old3ds"),
-        Label("DONE"),
-        prompt(DONE_NOTE),
-    ]
+    scripts = {}
+    for (model, slot), names in script_names().items():
+        scripts[names["install"]] = {"size": "~23 МБ", "script": branch(slot, model)}
+        scripts[names["uninstall"]] = uninstall_steps(slot, model)
+    return scripts
+def installed_files(slot: str, model: str) -> list[str]:
+    """Every file the given archive puts on the card, hooks first.
+
+    Order matters. `deleteFile` aborts the rest of the script when a file is already gone, so
+    a partial run is a real possibility - a card carrying an older release, or a user who
+    deleted something by hand. Removing every code.ips and exheader.bin first means a run
+    that stops early leaves only inert data behind: nothing reads a romfs blob once the hook
+    that redirected the title to it is gone. The reverse order could leave a title hooked to
+    a file that no longer exists, which is how an applet stops booting.
+    """
+    dist = ROOT / ("dist" if slot == "ru" else "dist_en")
+    if not dist.is_dir():
+        raise SystemExit(f"no {dist.name}/ - run `make build` first, the delete lists come from it")
+
+    files = set(package.collect(dist))
+    if model == "new3ds":
+        files |= set(package.collect(dist / variant.NEW3DS_DIR))
+
+    hooks = sorted(f for f in files if f.endswith(("code.ips", "exheader.bin")))
+    rest = sorted(files - set(hooks))
+    return [f"/{path}" for path in hooks + rest]
+
+
+def uninstall_steps(slot: str, model: str) -> list[dict]:
+    return [{"type": "deleteFile", "file": path} for path in installed_files(slot, model)]
 
 
 def wipe_steps() -> list[dict]:
@@ -360,19 +388,12 @@ def build_store(version: str, revision: int, notes: str, branch: str) -> dict:
     }
 
     entry = {
-        "1. Встановити / оновити": {
-            "size": "~23 МБ",
-            "script": resolve(install_steps(remember=True)),
-        },
-        "2. Перевстановити з очищенням": {
-            "size": "~23 МБ",
-            "script": resolve(
-                [prompt(WIPE_NOTE), *wipe_steps(), *install_steps(remember=False)]
-            ),
-        },
-        "3. Видалити українізатор": resolve(
-            [prompt(WIPE_NOTE), *wipe_steps(), prompt(REMOVED_NOTE)]
-        ),
+        **install_scripts(),
+        # The fallback. rmdir is the only removal Universal-Updater can do on a card whose
+        # contents it cannot predict - it skips folders that are not there instead of giving
+        # up - but it asks about every folder it does find, which is why it is not the
+        # everyday path.
+        UNINSTALL: wipe_steps(),
         "info": info,
     }
 
@@ -483,8 +504,11 @@ def check(version: str, branch: str, verify_release: bool) -> list[str]:
         bad(f"storeInfo.url is {store_info.get('url')!r}, expected {store_url(branch)}")
     if not isinstance(store_info.get("revision"), int):
         bad("storeInfo.revision is not an int")
-    elif store_info["revision"] != revision_of(version):
-        bad(f"storeInfo.revision {store_info['revision']} does not match version {version}")
+    elif not revision_of(version) <= store_info["revision"] < revision_of(version) + 100:
+        # Equal to the version's own number normally; a little above it after a store-only
+        # fix pushed with --revision. Anything else means the two have drifted apart.
+        bad(f"storeInfo.revision {store_info['revision']} does not belong to version {version} "
+            f"(expected {revision_of(version)}..{revision_of(version) + 99})")
 
     entries = doc.get("storeContent", [])
     if len(entries) != 1:
@@ -501,8 +525,12 @@ def check(version: str, branch: str, verify_release: bool) -> list[str]:
         bad(f"info.last_updated {stamp!r} is not '{TIMESTAMP}' - updates would never show")
 
     scripts = {name: value for name, value in entry.items() if name != "info"}
-    if len(scripts) != 3:
-        bad(f"expected 3 scripts, found {sorted(scripts)}")
+    expected_names = {n for names in script_names().values() for n in names.values()}
+    expected_names.add(UNINSTALL)
+    if set(scripts) != expected_names:
+        missing = expected_names - set(scripts)
+        extra = set(scripts) - expected_names
+        bad(f"script names differ - missing {sorted(missing)}, unexpected {sorted(extra)}")
 
     known = {
         "promptMessage", "skip", "downloadRelease", "extractFile",
@@ -520,20 +548,27 @@ def check(version: str, branch: str, verify_release: bool) -> list[str]:
             if "count" in step and (not isinstance(step["count"], int) or step["count"] < 1):
                 bad(f"{name}[{i}]: count is {step['count']!r}")
 
-    # The folder list, both directions: a missing one leaves stale files behind, an extra one
-    # deletes a folder that is not ours.
+    # No prompts anywhere in the everyday paths. Running a script only queues it, and a
+    # queued promptMessage becomes a Request that waits inside the Queue menu - the console
+    # returns to the list and the step hangs there until the user finds that screen. This
+    # assertion is what stops that design from creeping back in.
+    for name, steps in resolved.items():
+        if name == UNINSTALL:
+            continue
+        for i, step in enumerate(steps):
+            if step["type"] in ("promptMessage", "skip"):
+                bad(f"{name}[{i}]: {step['type']} would wait unseen in the queue")
+
     expected_dirs = set(removable_dirs())
-    for name in ("2. Перевстановити з очищенням", "3. Видалити українізатор"):
-        steps = resolved.get(name, [])
-        dirs = [s["directory"] for s in steps if s["type"] == "rmdir"]
-        if len(dirs) != len(set(dirs)):
-            bad(f"{name}: duplicate rmdir entries")
-        missing = expected_dirs - set(dirs)
-        extra = set(dirs) - expected_dirs
+    dirs = [s["directory"] for s in resolved.get(UNINSTALL, []) if s["type"] == "rmdir"]
+    if len(dirs) != len(set(dirs)):
+        bad(f"{UNINSTALL}: duplicate rmdir entries")
+    if set(dirs) != expected_dirs:
+        missing, extra = expected_dirs - set(dirs), set(dirs) - expected_dirs
         if missing:
-            bad(f"{name}: not removed: {sorted(missing)}")
+            bad(f"{UNINSTALL}: not removed: {sorted(missing)}")
         if extra:
-            bad(f"{name}: removes folders we never ship: {sorted(extra)}")
+            bad(f"{UNINSTALL}: removes folders we never ship: {sorted(extra)}")
 
     whole_only = [
         "/luma/titles/0004001000022300",     # Health and Safety, reads a romfs blob off SD
@@ -544,41 +579,46 @@ def check(version: str, branch: str, verify_release: bool) -> list[str]:
         if directory not in expected_dirs:
             bad(f"{directory} must be in the wipe list - it is a whole-folder title")
 
-    # The branch table, exercised the way the console would exercise it.
-    for name in ("1. Встановити / оновити", "2. Перевстановити з очищенням"):
-        steps = resolved.get(name, [])
-        for is_new3ds in (True, False):
-            for is_ru in (True, False):
-                answers = ([True] if name.startswith("2.") else []) + [is_new3ds, is_ru]
-                executed, sim_problems = simulate(steps, answers)
-                for problem in sim_problems:
-                    bad(f"{name} {answers}: {problem}")
-                downloads = [s for s in executed if s["type"] == "downloadRelease"]
-                extracts = [s for s in executed if s["type"] == "extractFile"]
-                deletes = [s for s in executed if s["type"] == "deleteFile"]
-                if len(downloads) != 1 or len(extracts) != 1 or len(deletes) != 1:
-                    bad(f"{name} {answers}: ran {len(downloads)} downloads, "
-                        f"{len(extracts)} extracts, {len(deletes)} deletes")
-                    continue
-                want = asset_pattern("ru" if is_ru else "en", "new3ds" if is_new3ds else "old3ds")
-                if downloads[0]["file"] != want:
-                    bad(f"{name} {answers}: downloads {downloads[0]['file']!r}, expected {want!r}")
-                temp = {downloads[0]["output"], extracts[0]["file"], deletes[0]["file"]}
-                if len(temp) != 1:
-                    bad(f"{name} {answers}: the three steps disagree about the temp file")
-                if executed[-1].get("message") != DONE_NOTE:
-                    bad(f"{name} {answers}: did not end on the closing note")
+    # Each install script downloads its own archive and nothing else.
+    for (model, slot), name in script_names().items():
+        steps = resolved.get(name["install"], [])
+        kinds = [step["type"] for step in steps]
+        if kinds != ["downloadRelease", "extractFile", "deleteFile"]:
+            bad(f"{name['install']}: steps are {kinds}, expected download/extract/delete")
+            continue
+        want = asset_pattern(slot, model)
+        if steps[0]["file"] != want:
+            bad(f"{name['install']}: downloads {steps[0]['file']!r}, expected {want!r}")
+        if len({steps[0]["output"], steps[1]["file"], steps[2]["file"]}) != 1:
+            bad(f"{name['install']}: the three steps disagree about the temp file")
 
-        # Answering no to the leading confirmation must do nothing at all.
-        if name.startswith("2."):
-            executed, _ = simulate(steps, [False])
-            if len(executed) != 1:
-                bad(f"{name}: declining the confirmation still ran {len(executed)} steps")
+        # The uninstall list must be exactly what the matching archive installs, hooks first.
+        removal = resolved.get(name["uninstall"], [])
+        if any(step["type"] != "deleteFile" for step in removal):
+            bad(f"{name['uninstall']}: contains steps other than deleteFile")
+            continue
+        listed = [step["file"] for step in removal]
+        if len(listed) != len(set(listed)):
+            bad(f"{name['uninstall']}: lists the same file twice")
+        expected = installed_files(slot, model)
+        if listed != expected:
+            only_listed = set(listed) - set(expected)
+            only_shipped = set(expected) - set(listed)
+            if only_listed or only_shipped:
+                bad(f"{name['uninstall']}: deletes {len(only_listed)} file(s) we never ship "
+                    f"and misses {len(only_shipped)}")
+            else:
+                bad(f"{name['uninstall']}: right files, wrong order")
+        hooks = [f for f in listed if f.endswith(("code.ips", "exheader.bin"))]
+        if listed[:len(hooks)] != hooks:
+            bad(f"{name['uninstall']}: hooks are not deleted first - a run that stops early "
+                f"could leave a title hooked to a file that is gone")
 
     problems += check_sheet(store_info, info)
     problems += check_against_committed(doc)
 
-    install = resolved.get("1. Встановити / оновити", [])
+    install = [step for names in script_names().values()
+               for step in resolved.get(names["install"], [])]
     problems += check_archives(version, install)
     if verify_release:
         problems += check_release(install)
