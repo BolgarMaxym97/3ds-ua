@@ -121,7 +121,14 @@ ENTRY_TITLE = "Українізатор 3DS/2DS"
 TEMP_ZIP = "/3ds/3ds-ua.zip"
 
 # Where the mod's folders are moved before the one deletion that removes them all.
-TRASH = "/3ds/3ds-ua-trash"
+#
+# The `sdmc:` prefix is load-bearing. libctru resolves a path's device in archive_fixpath():
+# the source of a rename arrives with its device already set (`r->deviceData`), but the
+# destination starts as NULL and, without a `xxx:` prefix, can only be resolved through the
+# `archive_device_cwd` fallback. When that is unset the call returns an empty path and
+# `archive_rename` bails out - and UU ignores what rename() returned, so the failure is
+# completely silent. Prefixed paths take the explicit archiveFindDevice() branch instead.
+TRASH = "sdmc:/3ds/3ds-ua-trash"
 
 # Universal-Updater renders release notes as plain text in a small box; past this much it is
 # a scrolling wall nobody reads.
@@ -194,7 +201,10 @@ PREINSTALL = (
     "питання чекають там, і без відповіді робота стоїть.\n\n"
     "Потрібна Luma3DS з увімкненим Enable game patching,\n"
     "а мову консолі після встановлення треба\n"
-    "перемкнути вручну."
+    "перемкнути вручну.\n\n"
+    "Наприкінці видалення Universal-Updater перепитає\n"
+    "про папку 3ds/3ds-ua-trash - туди зібрано все,\n"
+    "що видаляється. Погодьтеся."
 )
 
 DESCRIPTION = (
@@ -398,33 +408,33 @@ def branching(body) -> list:
 
 
 def wipe_steps() -> list[dict]:
-    """Remove every folder the mod ships, with one confirmation instead of thirty-two.
+    """Remove every folder the mod ships, asking once instead of thirty-two times.
 
-    `rmdir` is the only step that removes a directory, and it asks the user about every
-    directory that exists - unconditionally, with no setting behind it (`DELETE_PROMPT`,
-    scriptUtils.cpp:349, queueSystem.cpp:255). But it asks only when the path is there, and
-    a folder can be taken out of `/luma/titles` without deleting it:
+    `rmdir` is the only step that deletes a directory, and it asks about every directory that
+    exists - unconditionally, no setting behind it (`DELETE_PROMPT`, scriptUtils.cpp:349,
+    queueSystem.cpp:255). File-level steps cannot stand in for it: `deleteFile`, `move` and
+    `copy` all report an error the moment their target is missing, both executors loop while
+    `ret == NONE`, and a file list leaves the `romfs/` directories behind - an empty one still
+    switches Luma's hook on (`tools/layeredfs_check.py`), which without `code.ips` is an
+    exception screen on every launch.
 
-    - `mkdir` runs `makeDirs()`, which creates every path prefix up to the last component,
-      so a trailing slash makes it create the folder itself. It never reports an error, and
-      on an existing folder it does nothing.
-    - `move` passes straight to `rename()`, and libctru's SD devoptab falls back from
-      `FSUSER_RenameFile` to `FSUSER_RenameDirectory` (archive_dev.c), so it moves whole
-      directories. UU ignores what `rename()` returns and only fails when the *source* is
-      missing - which the `mkdir` before it rules out.
+    So the folders are moved out rather than deleted: `mkdir` guarantees each source exists,
+    `move` relocates it into one scratch directory, and a single `rmdir` removes that. The
+    per-folder `rmdir` afterwards is the safety net - if a move silently does nothing the old
+    path is still there and the script degrades to asking, exactly as it did before.
 
-    So: create each folder if absent, move them all into one scratch directory, then delete
-    that single directory. The `rmdir` on each original path afterwards is the safety net -
-    if directory renaming ever stops working, those paths still exist and the script degrades
-    to asking, folder by folder, exactly as it did before.
+    Paths here carry an explicit `sdmc:`. A first attempt used bare paths and not one folder
+    moved on hardware: libctru resolves the destination device through `archive_device_cwd`
+    when the path has no prefix (archive_fixpath), and UU discards rename()'s return value,
+    so the whole thing failed without a word.
     """
     steps: list[dict] = []
     for directory in removable_dirs():
-        # Trailing slash: makeDirs() only creates prefixes, so without it the folder itself
-        # would not be created and the move below could fail on a card that lacks it.
-        steps.append({"type": "mkdir", "directory": f"{directory}/"})
+        # Trailing slash: makeDirs() creates every prefix but not the last component, so
+        # without it the folder itself is never created and the move below can fail.
+        steps.append({"type": "mkdir", "directory": f"sdmc:{directory}/"})
     for directory in removable_dirs():
-        steps.append({"type": "move", "old": directory,
+        steps.append({"type": "move", "old": f"sdmc:{directory}",
                       "new": f"{TRASH}/{directory.rsplit('/', 1)[-1]}"})
     for directory in removable_dirs():
         steps.append({"type": "rmdir", "directory": directory})
@@ -722,7 +732,7 @@ def check(version: str, branch: str, verify_release: bool) -> list[str]:
                 bad(f"{INSTALL} {answers}: did not end on the closing note")
 
 
-    # Removal: create-move-delete, in that order, over every folder, then the one rmdir.
+    # Removal: ensure, move out, then delete the one scratch directory - in that order.
     removal = resolved.get(UNINSTALL, [])
     kinds = {step["type"] for step in removal}
     if kinds - {"mkdir", "move", "rmdir", "promptMessage"}:
@@ -736,24 +746,23 @@ def check(version: str, branch: str, verify_release: bool) -> list[str]:
     moved = [(step["old"], step["new"]) for step in removal if step["type"] == "move"]
     removed = [step["directory"] for step in removal if step["type"] == "rmdir"]
 
-    if made != [f"{d}/" for d in expected_dirs_ordered]:
-        bad(f"{UNINSTALL}: the mkdir list does not match the shipped folders, or lost its "
-            f"trailing slashes - makeDirs() only creates prefixes, so without one the folder "
-            f"itself is never created and the move can fail")
-    if moved != [(d, f"{TRASH}/{d.rsplit('/', 1)[-1]}") for d in expected_dirs_ordered]:
-        bad(f"{UNINSTALL}: the move list does not match the shipped folders")
+    if made != [f"sdmc:{d}/" for d in expected_dirs_ordered]:
+        bad(f"{UNINSTALL}: the mkdir list must cover every shipped folder, carry an sdmc: "
+            f"prefix and end in a slash - makeDirs() creates prefixes only, and a bare path "
+            f"leaves rename() without a destination device")
+    if moved != [(f"sdmc:{d}", f"{TRASH}/{d.rsplit('/', 1)[-1]}") for d in expected_dirs_ordered]:
+        bad(f"{UNINSTALL}: the move list does not match the shipped folders, or lost the "
+            f"sdmc: prefix that rename() needs to resolve the destination")
     if removed != expected_dirs_ordered + [TRASH]:
         bad(f"{UNINSTALL}: the rmdir safety net must cover every folder and end on {TRASH}")
 
-    # Order carries the whole design: every folder must exist before it is moved, and the
-    # per-folder rmdir must come after the move or it prompts for everything again.
-    first_move = next((i for i, s in enumerate(removal) if s["type"] == "move"), -1)
-    last_mkdir = max((i for i, s in enumerate(removal) if s["type"] == "mkdir"), default=-1)
-    first_rmdir = next((i for i, s in enumerate(removal) if s["type"] == "rmdir"), -1)
-    last_move = max((i for i, s in enumerate(removal) if s["type"] == "move"), default=-1)
+    first_move = next((i for i, x in enumerate(removal) if x["type"] == "move"), -1)
+    last_mkdir = max((i for i, x in enumerate(removal) if x["type"] == "mkdir"), default=-1)
+    first_rmdir = next((i for i, x in enumerate(removal) if x["type"] == "rmdir"), -1)
+    last_move = max((i for i, x in enumerate(removal) if x["type"] == "move"), default=-1)
     if not last_mkdir < first_move <= last_move < first_rmdir:
-        bad(f"{UNINSTALL}: steps are out of order - every mkdir must precede every move, "
-            f"and every move must precede the rmdir net")
+        bad(f"{UNINSTALL}: steps are out of order - every mkdir must precede every move, and "
+            f"every move must precede the rmdir net")
 
     problems += check_sheet(store_info, info)
     problems += check_against_committed(doc)

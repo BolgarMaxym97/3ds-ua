@@ -107,7 +107,7 @@ Universal-Updater виконує роботу **в черзі**, і питанн
 
 Будь-який спосіб:
 
-1. **У Universal-Updater** → **Українізатор 3DS/2DS** → `2. Видалити українізатор`. Нічого не питає й не залежить від того, який слот ви заміняли. Наприкінці Universal-Updater один раз перепитає про папку `3ds/3ds-ua-trash` — туди зібрано все, що видаляється; погодьтеся. Після видалення перезапустіть консоль.
+1. **У Universal-Updater** → **Українізатор 3DS/2DS** → `2. Видалити українізатор`. Нічого не питає про модель чи слот. Наприкінці Universal-Updater один раз перепитає про папку `3ds/3ds-ua-trash` — туди зібрано все, що видаляється; погодьтеся. Після видалення перезапустіть консоль.
 2. **Змінити мову консолі** на будь-яку іншу — переклад просто не застосується.
 3. **Видалити папки мода** з `SD:/luma/titles/` вручну.
 4. **Вимкнути `Enable game patching`** у меню Luma (це вимкне й інші моди).
@@ -254,7 +254,7 @@ The console reboots itself. Done.
 
 Any of these:
 
-1. **In Universal-Updater** → **Українізатор 3DS/2DS** → `2. Видалити українізатор`. It asks nothing and does not care which slot you replaced. At the end Universal-Updater asks once about the `3ds/3ds-ua-trash` folder — that is where everything being removed was collected; agree. Reboot the console afterwards.
+1. **In Universal-Updater** → **Українізатор 3DS/2DS** → `2. Видалити українізатор`. It asks nothing about model or slot. At the end Universal-Updater asks once about the `3ds/3ds-ua-trash` folder — that is where everything being removed was collected; agree. Reboot the console afterwards.
 2. **Switch the console language** to anything else — the translation simply won't apply.
 3. **Delete the mod folders** from `SD:/luma/titles/` by hand.
 4. **Turn `Enable game patching` off** in the Luma menu (this disables other mods too).
