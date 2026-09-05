@@ -1040,6 +1040,26 @@ python3 tools/unistore.py --revision 10801 --stamp
 тож `--stamp` за потреби перескакує на хвилину вперед — два запуски в одну хвилину інакше
 дали б магазин, про який нікому не скажуть.
 
+### Подача в Universal-DB
+
+`unistore/universal-db.json` — файл для `Universal-Team/db` (`source/apps/<slug>.json`), з
+якого вони будують свій магазин і сайт. Пишеться `make udb` із тих самих констант, що й наш
+магазин, тож тексти й імена архівів не роз'їдуться. Свій магазин він не чіпає.
+
+Дві відмінності від нашого магазину, обидві навмисні:
+
+- **скрипти без питань, по одному на варіант.** Їхній шаблон прямо радить: «Scripts are even
+  able to ask the user questions and react accordingly, however this should be avoided if
+  possible as the entire queue will pause until the question is answered». У нашому магазині
+  питання лишаються, бо запис там один рядок; у спільному магазині його читають люди, які
+  про проєкт нічого не знають, і зупинена черга виглядає як зависання;
+- **`categories: ["utility"]`** — у них закритий словник (`game`, `emulator`, `app`,
+  `utility`, `save-tool`, `firm`, `luma3ds`) і пряма заборона вигадувати свої, тож наші
+  `["translation", "system"]` там не годяться.
+
+`llm_generation` виставлено в `"yes"`: їхнє «minor» дозволене лише репозиторію **без**
+комітів від LLM-акаунтів, а тут вони є.
+
 ### Обкатка до публікації
 
 `raw.githubusercontent.com` віддає будь-яку гілку, тож магазин можна повністю перевірити на

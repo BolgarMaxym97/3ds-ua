@@ -96,6 +96,14 @@ def sheet_url(branch: str) -> str:
 # for anyone running Universal-Updater in Ukrainian, so the fix is not the mod's homoglyph
 # substitution (which would turn every і into a Latin i) but simply never writing those four
 # capitals - no ALL-CAPS word that contains one. check() enforces it.
+# Paths Universal-Updater checks to decide whether the entry is installed. Both are ours and
+# both live in the shared tree, so they exist in all four archives; a slot-dependent path
+# would report "not installed" to half the users.
+INSTALLED_FILES = [
+    "/luma/titles/0004003000009802/banner_22800.bin",
+    "/luma/titles/0004003000009B02/romfs/2000",
+]
+
 FORBIDDEN_GLYPHS = "ІЇЄҐ"
 
 # The mod itself already rewrites these four when it builds the console's own menus, so the
@@ -130,7 +138,7 @@ TIMESTAMP_RE = re.compile(r"^\d{4}-\d{2}-\d{2} at \d{2}:\d{2} \(UTC\)$")
 MODELS = ("new3ds", "old3ds")
 SLOTS = ("ru", "en")
 
-MODEL_WORDS = {"new3ds": "New 3DS / New 2DS XL", "old3ds": "3DS / 2DS"}
+MODEL_WORDS = {"new3ds": "New 3DS / New 2DS XL", "old3ds": "Old 3DS / Old 2DS"}
 SLOT_WORDS = {"ru": "замість російської", "en": "замість англійської"}
 
 INSTALL = "1. Встановити / оновити"
@@ -216,6 +224,70 @@ LONG_DESCRIPTION = (
     "консоль європейського (EUR) регіону."
 )
 
+
+
+UDB_FILE = STORE_DIR / "universal-db.json"
+
+# Universal-DB's own vocabulary: game, emulator, app, utility, save-tool, firm, luma3ds.
+# "do not just make up new categories" - so the store's own ["translation", "system"] cannot
+# be reused here.
+UDB_CATEGORIES = ["utility"]
+
+# Their guidelines allow self-declaring LLM content as "minor" only for a repository with no
+# commits attributed to an LLM account. This one has them, so the honest answer is "yes".
+UDB_LLM = "yes"
+
+# The shared store's scripts ask nothing, so its notice says nothing about the queue - it
+# warns about the two things a stranger to this project would otherwise be surprised by.
+UDB_PREINSTALL = (
+    "Потрібна Luma3DS з увімкненим Enable game patching.\n"
+    "Після встановлення перемкніть мову консолі:\n"
+    "Налаштування системи -> Інші налаштування -> Мова,\n"
+    "і перезапустіть консоль.\n\n"
+    "Видалення перепитує про кожну папку - їх до 32.\n"
+    "Universal-Updater інакше теки видаляти не вміє."
+)
+
+
+def udb_scripts() -> dict[str, list[dict]]:
+    """Named scripts, one per variant - no questions.
+
+    Universal-DB's own template asks for this: "Scripts are even able to ask the user
+    questions and react accordingly, however this should be avoided if possible as the entire
+    queue will pause until the question is answered." Our own store keeps the two prompts
+    because the entry stays a single line there; a shared store is read by people who have
+    never seen this project, and a paused queue looks like a hang.
+    """
+    scripts = {}
+    for model in MODELS:
+        for slot in SLOTS:
+            name = f"{MODEL_WORDS[model]} - {SLOT_WORDS[slot]}"
+            scripts[name] = download_steps(slot, model)
+    scripts["Видалити українізатор"] = wipe_steps()
+    return scripts
+
+
+def build_udb(version: str) -> dict:
+    """The submission file for Universal-Team/db (source/apps/<slug>.json).
+
+    Universal-DB builds its own store out of this, so nothing here is read by
+    Universal-Updater directly - which is also why long_description belongs in it.
+    """
+    return {
+        "github": REPO,
+        "title": ENTRY_TITLE,
+        "author": AUTHOR,
+        "systems": ["3DS"],
+        "categories": UDB_CATEGORIES,
+        "description": DESCRIPTION,
+        "long_description": LONG_DESCRIPTION,
+        "website": f"https://github.com/{REPO}",
+        "icon": f"https://raw.githubusercontent.com/{REPO}/main/assets/unistore-icon.png",
+        "llm_generation": UDB_LLM,
+        "preinstall_message": drawable(UDB_PREINSTALL),
+        "installed_files": INSTALLED_FILES,
+        "scripts": udb_scripts(),
+    }
 
 
 def makefile_version() -> str:
@@ -357,19 +429,6 @@ def download_steps(slot: str, model: str) -> list[dict]:
     ]
 
 
-def script_names() -> dict[tuple[str, str], dict[str, str]]:
-    """(model, slot) -> the two script names for that variant, in one place."""
-    variants = [(m, sl) for m in MODELS for sl in SLOTS]
-    names = {}
-    for index, (model, slot) in enumerate(variants, start=1):
-        label = f"{MODEL_WORDS[model]} · {SLOT_WORDS[slot]}"
-        names[(model, slot)] = {
-            "install": f"{index}. Встановити: {label}",
-            "uninstall": f"{index + len(variants)}. Видалити: {label}",
-        }
-    return names
-
-
 def branching(body) -> list:
     """The two questions, then one of four branches. `body(slot, model)` supplies each.
 
@@ -483,10 +542,7 @@ def build_store(version: str, revision: int, notes: str, branch: str) -> dict:
         # are in the shared tree, so they are there in all four archives. A slot-dependent
         # path such as 000400100002C100/romfs/index_EU_Russian.html only exists in from-ru
         # and would report "not installed" to half the users.
-        "installed_files": [
-            "/luma/titles/0004003000009802/banner_22800.bin",
-            "/luma/titles/0004003000009B02/romfs/2000",
-        ],
+        "installed_files": INSTALLED_FILES,
         # No title_ids: CheckInstalled() resolves those with AM_GetTitleProductCode, which
         # would find the system titles on every console and mark the entry installed for all.
     }
@@ -961,6 +1017,8 @@ def main() -> int:
     ap.add_argument("--no-notes", action="store_true")
     ap.add_argument("--branch", default="main",
                     help="serve the store off this branch instead of main (for testing)")
+    ap.add_argument("--udb", action="store_true",
+                    help="also write the Universal-DB submission file")
     ap.add_argument("--verify-release", action="store_true",
                     help="also resolve the download patterns against the published release")
     args = ap.parse_args()
@@ -975,6 +1033,13 @@ def main() -> int:
             print(f"{len(problems)} problem(s)")
             return 1
         print(f"{STORE_FILE.relative_to(ROOT)}: ok")
+        return 0
+
+    if args.udb:
+        STORE_DIR.mkdir(exist_ok=True)
+        UDB_FILE.write_text(json.dumps(build_udb(version), ensure_ascii=False, indent="\t") + "\n")
+        print(f"{UDB_FILE.relative_to(ROOT)}: submission for Universal-Team/db, "
+              f"{len(build_udb(version)['scripts'])} scripts")
         return 0
 
     notes = "" if args.no_notes else release_notes(version, args.notes)

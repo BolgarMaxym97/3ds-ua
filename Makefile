@@ -17,7 +17,7 @@ DIST := $(if $(filter en,$(SLOT)),dist_en,dist)
 MODEL := old3ds
 
 .PHONY: help extract extract-manuals font hud-font validate build build-ru build-en \
-	manuals manuals-ru manuals-en all package package-ru package-en unistore unistore-check unistore-verify unistore-icon \
+	manuals manuals-ru manuals-en all package package-ru package-en unistore unistore-check unistore-verify unistore-icon udb \
 	clean sd
 
 help:  ## show this list
@@ -68,6 +68,9 @@ package-en: manuals-en ## build 3ds-ua-from-en-$(VERSION)-{old3ds,new3ds}.zip
 # script, a new icon). Universal-Updater refetches only when the revision grows.
 unistore: ## regenerate unistore/3ds-ua.unistore from dist/ (REV=10801 for a store-only fix)
 	$(PY) tools/unistore.py $(VERSION) $(if $(REV),--revision $(REV) --stamp)
+
+udb: ## write unistore/universal-db.json - the submission file for Universal-Team/db
+	$(PY) tools/unistore.py $(VERSION) --udb
 
 unistore-check: ## walk the store's scripts and check them against TITLES and the built archives
 	$(PY) tools/unistore.py $(VERSION) --check
