@@ -87,6 +87,27 @@ def sheet_url(branch: str) -> str:
         return SHEET_URL
     return SHEET_URL.replace("/main/", f"/{branch}/", 1)
 
+# Universal-Updater draws store text with whatever font the console has, and the uppercase
+# Ukrainian letters І Ї Є Ґ are not in it - they reach the screen as "?", which is how
+# "ЧЕРЗІ" arrived as "ЧЕРЗ?" and "РОСІЙСЬКУ" as "РОС?ЙСЬКУ". The lowercase ones do render
+# for anyone running Universal-Updater in Ukrainian, so the fix is not the mod's homoglyph
+# substitution (which would turn every і into a Latin i) but simply never writing those four
+# capitals - no ALL-CAPS word that contains one. check() enforces it.
+FORBIDDEN_GLYPHS = "ІЇЄҐ"
+
+# The mod itself already rewrites these four when it builds the console's own menus, so the
+# substitution below is not a workaround - it is what the user will literally see on screen,
+# down to the Latin I in "Iнші налаштування".
+CAPS_FIX = {k: v for k, v in
+            json.loads((ROOT / "src" / "homoglyphs.json").read_text(encoding="utf-8"))
+            ["variants"]["greek"].items() if k in FORBIDDEN_GLYPHS}
+
+
+def drawable(text: str) -> str:
+    """Store text with the four undrawable capitals swapped for the mod's own stand-ins."""
+    return text.translate(str.maketrans(CAPS_FIX))
+
+
 # Universal-Updater saves a prompt answer under "<ENTRY_TITLE>/<name>", so renaming the entry
 # silently forgets which console model and language slot every existing user already told it.
 # Treat it as frozen from here on - it was last changed while nobody had answers worth keeping.
@@ -113,24 +134,35 @@ INSTALL = "1. Встановити / оновити"
 UNINSTALL = "2. Видалити українізатор"
 FORCE_UNINSTALL = "3. Видалити примусово (питає про кожну папку)"
 
-ASK_MODEL = ("У вас New 3DS, New 3DS XL або New 2DS XL?\n\n"
-             "Модель написана спереду під нижнім екраном:\n"
-             "якщо там немає слова New - відповідайте Ні.")
-ASK_SLOT = ("Замінити РОСІЙСЬКУ мову?\n\n"
-            "Ні = замінити англійську.")
+# Nothing on the shell says "New", so the question has to name parts the user can see. The
+# C-stick and the ZL/ZR buttons exist on every New model and on none of the older ones.
+ASK_MODEL = (
+    "У вас New 3DS, New 3DS XL або New 2DS XL?\n\n"
+    "Ознаки New: маленький сірий C-стик над кнопками\n"
+    "A/B/X/Y і додаткові кнопки ZL/ZR згори.\n"
+    "Немає їх - відповідайте Ні."
+)
+ASK_SLOT = (
+    "Замінити російську мову?\n\n"
+    "Ні = замінити англійську."
+)
 
-DONE_NOTE = ("Готово.\n\n"
-             "1. Вимкніть консоль, увімкніть із затиснутим SELECT,\n"
-             "   увімкніть Enable game patching, натисніть START.\n"
-             "2. Налаштування системи -> Інші налаштування ->\n"
-             "   Мова -> Українська.")
-REMOVED_NOTE = ("Файли видалено.\n\n"
-                "Перемкніть мову консолі в Налаштуваннях системи.")
+DONE_NOTE = (
+    "Готово.\n\n"
+    "1. Вимкніть консоль, увімкніть із затиснутим SELECT,\n"
+    "   увімкніть Enable game patching, натисніть START.\n"
+    "2. Налаштування системи -> Інші налаштування ->\n"
+    "   Мова -> Українська."
+)
+REMOVED_NOTE = (
+    "Файли видалено.\n\n"
+    "Перемкніть мову консолі в Налаштуваннях системи."
+)
 
-# Shown inline, right before the script is handed to the queue - which is the only moment
-# the user is looking at the screen that can explain the queue to them.
+# Shown inline, right before the script is handed to the queue - the only moment the user is
+# still looking at the screen that can explain the queue to them.
 PREINSTALL = (
-    "УВАГА: Universal-Updater виконує все у ЧЕРЗІ.\n"
+    "УВАГА: Universal-Updater виконує все у черзі.\n"
     "Після запуску відкрийте її третьою іконкою\n"
     "в лівій панелі - там будуть питання.\n"
     "Без відповіді на них робота стоїть.\n\n"
@@ -219,7 +251,7 @@ class Label(str):
 
 
 def prompt(message: str, goto: str | None = None, name: str | None = None) -> dict:
-    step: dict = {"type": "promptMessage", "message": message}
+    step: dict = {"type": "promptMessage", "message": drawable(message)}
     if name:
         step["name"] = name
     if goto:
@@ -391,15 +423,15 @@ def release_notes(version: str, path: Path | None) -> str:
 
 def build_store(version: str, revision: int, notes: str, branch: str) -> dict:
     info = {
-        "title": ENTRY_TITLE,
+        "title": drawable(ENTRY_TITLE),
         "author": "BolgarMaxym97",
-        "description": DESCRIPTION,
+        "description": drawable(DESCRIPTION),
         "version": version,
         "category": ["translation", "system"],
         "console": ["3DS"],
         "license": "MIT",
         "color": "#005BBB",
-        "preinstall_message": PREINSTALL,
+        "preinstall_message": drawable(PREINSTALL),
         "releasenotes": notes,
         # CheckInstalled() calls a path existing "installed". Both of these are ours and both
         # are in the shared tree, so they are there in all four archives. A slot-dependent
@@ -428,9 +460,9 @@ def build_store(version: str, revision: int, notes: str, branch: str) -> dict:
     }
 
     store_info = {
-        "title": ENTRY_TITLE,
+        "title": drawable(ENTRY_TITLE),
         "author": "BolgarMaxym97",
-        "description": DESCRIPTION,
+        "description": drawable(DESCRIPTION),
         "url": store_url(branch),
         "file": STORE_FILE.name,
         "version": 3,
@@ -546,7 +578,7 @@ def check(version: str, branch: str, verify_release: bool) -> list[str]:
     entry = entries[0]
     info = entry.get("info", {})
 
-    if info.get("title") != ENTRY_TITLE:
+    if info.get("title") != drawable(ENTRY_TITLE):
         bad(f"info.title is {info.get('title')!r} - it is frozen at {ENTRY_TITLE!r}")
     if "title_ids" in info:
         bad("info.title_ids present - it would mark the entry installed on every console")
@@ -576,6 +608,23 @@ def check(version: str, branch: str, verify_release: bool) -> list[str]:
                 bad(f"{name}[{i}]: unresolved jump marker leaked into the output")
             if "count" in step and (not isinstance(step["count"], int) or step["count"] < 1):
                 bad(f"{name}[{i}]: count is {step['count']!r}")
+
+    # Every string the console will draw, checked for the four capitals its font lacks.
+    visible = {"info.title": info.get("title", ""),
+               "info.description": info.get("description", ""),
+               "info.preinstall_message": info.get("preinstall_message", "")}
+    for name, value in entry.items():
+        if name == "info":
+            continue
+        visible[f"script name {name!r}"] = name
+        for i, step in enumerate((value["script"] if isinstance(value, dict) else value)):
+            if "message" in step:
+                visible[f"{name}[{i}].message"] = step["message"]
+    for where, text in visible.items():
+        found = sorted({c for c in text if c in FORBIDDEN_GLYPHS})
+        if found:
+            bad(f"{where}: {''.join(found)} - the console font has no such glyph and draws "
+                f"'?' instead; reword rather than shouting")
 
     # Prompts wait inside the Queue menu, so the entry must be the thing that says so. If
     # this instruction is ever dropped while the scripts still ask questions, the console
@@ -627,7 +676,7 @@ def check(version: str, branch: str, verify_release: bool) -> list[str]:
                     bad(f"{INSTALL} {answers}: downloads {download['file']!r}, expected {want!r}")
                 if len({download["output"], extract["file"], delete["file"]}) != 1:
                     bad(f"{INSTALL} {answers}: the three steps disagree about the temp file")
-            if executed[-1].get("message") != DONE_NOTE:
+            if executed[-1].get("message") != drawable(DONE_NOTE):
                 bad(f"{INSTALL} {answers}: did not end on the closing note")
 
             executed, sim = simulate(resolved.get(UNINSTALL, []), answers)
@@ -648,7 +697,7 @@ def check(version: str, branch: str, verify_release: bool) -> list[str]:
             if listed[:len(hooks)] != hooks:
                 bad(f"{UNINSTALL} {answers}: hooks are not deleted first - a run that stops "
                     f"early could leave a title hooked to a file that is gone")
-            if executed[-1].get("message") != REMOVED_NOTE:
+            if executed[-1].get("message") != drawable(REMOVED_NOTE):
                 bad(f"{UNINSTALL} {answers}: did not end on the closing note")
 
     problems += check_sheet(store_info, info)
