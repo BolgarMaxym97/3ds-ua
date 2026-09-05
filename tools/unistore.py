@@ -141,15 +141,31 @@ UNINSTALL = "2. Видалити українізатор"
 
 # Nothing on the shell says "New", so the question has to name parts the user can see. The
 # C-stick and the ZL/ZR buttons exist on every New model and on none of the older ones.
+#
+# Both questions end with the same hint, because a store script cannot tell an install from
+# an update: none of Universal-Updater's twelve step types reads the card and branches on
+# what it finds. What it does have is a saved answer - a prompt carrying a `name` shows a
+# "Save your selection?" checkbox, and once it is ticked every later run answers itself
+# without even stopping in the queue. That is what turns the second run into a plain update.
+SAVE_HINT = (
+    "\n\n"
+    "Щоб надалі не питали: натисніть Y - унизу\n"
+    "з'явиться позначка \"Save your selection?\" -\n"
+    "і аж тоді A або B. Наступного разу\n"
+    "оновлення піде без питань."
+)
+
 ASK_MODEL = (
     "У вас New 3DS, New 3DS XL або New 2DS XL?\n\n"
     "Ознаки New: маленький сірий C-стик над кнопками\n"
     "A/B/X/Y і додаткові кнопки ZL/ZR згори.\n"
     "Немає їх - відповідайте Ні."
+    + SAVE_HINT
 )
 ASK_SLOT = (
     "Замінити російську мову?\n\n"
     "Ні = замінити англійську."
+    + SAVE_HINT
 )
 
 DONE_NOTE = (
@@ -171,10 +187,11 @@ REMOVED_NOTE = (
 # Shown inline, right before the script is handed to the queue - the only moment the user is
 # still looking at the screen that can explain the queue to them.
 PREINSTALL = (
+    "Встановлення і оновлення - той самий пункт.\n\n"
     "УВАГА: Universal-Updater виконує все у черзі.\n"
-    "Після запуску відкрийте її третьою іконкою\n"
-    "в лівій панелі - там будуть питання.\n"
-    "Без відповіді на них робота стоїть.\n\n"
+    "Якщо на питання ще не збережено відповідь,\n"
+    "відкрийте чергу третьою іконкою в лівій панелі -\n"
+    "питання чекають там, і без відповіді робота стоїть.\n\n"
     "Потрібна Luma3DS з увімкненим Enable game patching,\n"
     "а мову консолі після встановлення треба\n"
     "перемкнути вручну."
@@ -743,7 +760,7 @@ def check(version: str, branch: str, verify_release: bool) -> list[str]:
 
     problems += check_archives(version, resolved.get(INSTALL, []))
     if verify_release:
-        problems += check_release(install)
+        problems += check_release(resolved.get(INSTALL, []))
     return problems
 
 

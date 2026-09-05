@@ -68,8 +68,10 @@ https://raw.githubusercontent.com/BolgarMaxym97/3ds-ua/main/unistore/3ds-ua.unis
 
 Universal-Updater виконує роботу **в черзі**, і питання чекають саме там. Тому одразу після запуску відкрийте чергу — **третя іконка згори в лівій панелі** на нижньому екрані — і натисніть **A**. З'являться два питання:
 
-1. **New 3DS?** — модель написана спереду під нижнім екраном; якщо слова `New` там немає, відповідайте «Ні».
+1. **New 3DS?** — ознака New: маленький сірий C-стик над кнопками A/B/X/Y і кнопки ZL/ZR згори; немає їх — «Ні».
 2. **Замінити російську?** — «Ні» замінить англійську.
+
+На кожному питанні натисніть **Y** — унизу з'явиться позначка `Save your selection?` — і аж тоді **A** або **B**. Тоді відповідь запам'ятається, і **наступне оновлення піде взагалі без питань**: жодної черги, жодних діалогів. Universal-Updater не вміє сам розрізнити встановлення й оновлення, тож це єдиний спосіб цього досягти.
 
 Далі все качається й розпаковується само. Про це саме нагадує повідомлення, яке з'являється перед запуском.
 
@@ -213,8 +215,10 @@ Find **Українізатор 3DS/2DS** in the list and run `1. Встанов
 
 Universal-Updater does its work **in a queue**, and that is where the questions wait. So right after starting the script, open the queue — **third icon down the left sidebar** on the bottom screen — and press **A**. Two questions follow:
 
-1. **New 3DS?** — the model is printed on the front, below the bottom screen; if it does not say `New`, answer no.
+1. **New 3DS?** — a New model has a small grey C-stick above A/B/X/Y and extra ZL/ZR buttons; without them, answer no.
 2. **Replace Russian?** — no replaces English.
+
+On each question press **Y** first — a `Save your selection?` checkbox appears at the bottom — and only then **A** or **B**. The answer is then remembered and **the next update runs with no questions at all**: no queue, no dialogs. Universal-Updater cannot tell an install from an update by itself, so this is the only way to get that.
 
 Everything else downloads and unpacks on its own. The message shown before the script starts says the same thing.
 
