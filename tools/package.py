@@ -228,9 +228,9 @@ Miiverse і Дані Nintendo Network ID так само беруть із SD-к
 
 ВСТАНОВЛЕННЯ
 Найпростіше — через Universal-Updater, просто на консолі й без виймання картки.
-Додайте там магазин
-  {store_url}
-і виберіть "Українізатор 3DS/2DS". Нижче — те саме вручну.
+Українізатор є в його основному магазині Universal-DB: знайдіть пошуком
+"Українізатор 3DS/2DS" і виберіть свій варіант у вкладці завантажень.
+Нижче — те саме вручну.
 
 1. Розпакуйте вміст цього архіву в корінь SD-карти (папка luma має злитися з наявною).
 2. Вставте SD у консоль. Тримайте SELECT і увімкніть консоль.
@@ -331,7 +331,6 @@ def main() -> None:
         files = shared | overlay if model == "new3ds" else shared
         archive = ROOT / archive_name(slot.key, version, model)
         readme = README_TXT.format(
-            store_url=STORE_URL,
             version=version,
             slot=slot.key,
             original=slot.original,

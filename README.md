@@ -46,40 +46,48 @@
 - Nintendo 3DS / 2DS / New 3DS **європейського (EUR) регіону**
 - встановлена **Luma3DS** — кастомна прошивка
 - SD-карта з ~55 МБ вільного місця
-- за бажанням — **Universal-Updater**: з ним усе ставиться прямо з консолі, без виймання картки
+- за бажанням — **Universal-Updater**: з ним усе ставиться прямо з консолі, без виймання картки. Українізатор уже є в його основному магазині, Universal-DB
 
 Немає Luma3DS? Спершу пройдіть [3ds.hacks.guide](https://3ds.hacks.guide/) — без неї мод не працює.
 
 ## Встановлення через Universal-Updater
 
-Найпростіший шлях: картку виймати не треба, оновлення потім приходять самі.
+Найпростіший шлях: картку виймати не треба, оновлення потім приходять самі. Нічого додавати не потрібно — українізатор лежить в **Universal-DB**, магазині, з яким [Universal-Updater](https://github.com/Universal-Team/Universal-Updater) працює одразу після встановлення.
 
-**1. Додайте магазин**
+<table>
+<tr>
+<td><img src="assets/pictures/universal-updater-entry.png" width="250" alt="Universal-Updater: запис «Українізатор 3DS/2DS» в Universal-DB, версія v1.10.0"></td>
+<td><img src="assets/pictures/universal-updater-downloads.png" width="250" alt="Universal-Updater: вкладка «Доступні для завантаження» з чотирма варіантами і «Видалити українізатор»"></td>
+<td><img src="assets/pictures/universal-updater-queue.png" width="250" alt="Universal-Updater: черга, завантаження українізатора, крок 1 з 3"></td>
+</tr>
+</table>
 
-Відкрийте [Universal-Updater](https://github.com/Universal-Team/Universal-Updater) → `Settings` → `Select UniStore` → `Add new` → `Add with keyboard` і введіть:
+**1. Знайдіть запис**
 
-```
-https://raw.githubusercontent.com/BolgarMaxym97/3ds-ua/main/unistore/3ds-ua.unistore
-```
+Відкрийте Universal-Updater і виберіть **Українізатор 3DS/2DS** — іконка з прапором і консоллю. Швидше за все знайти пошуком: **лупа** в лівій панелі нижнього екрана, введіть «Українізатор». Внизу з'явиться картка з версією.
 
-**2. Встановіть**
+**2. Виберіть свій варіант**
 
-Знайдіть у списку **Українізатор 3DS/2DS** і запустіть `1. Встановити / оновити`.
+Відкрийте **другу іконку згори** в лівій панелі — «Доступні для завантаження» — і виберіть рядок, що пасує вашій консолі:
 
-Universal-Updater виконує роботу **в черзі**, і питання чекають саме там. Тому одразу після запуску відкрийте чергу — **третя іконка згори в лівій панелі** на нижньому екрані — і натисніть **A**. З'являться два питання:
+| Рядок | Українська стає на місце | Для якої консолі |
+|---|---|---|
+| `New 3DS / New 2DS XL - замість російської` | російської | **New** 3DS, New 3DS XL, New 2DS XL |
+| `New 3DS / New 2DS XL - замість англійської` | англійської | **New** 3DS, New 3DS XL, New 2DS XL |
+| `Old 3DS / Old 2DS - замість російської` | російської | 3DS, 3DS XL, 2DS |
+| `Old 3DS / Old 2DS - замість англійської` | англійської | 3DS, 3DS XL, 2DS |
 
-1. **New 3DS?** — ознака New: маленький сірий C-стик над кнопками A/B/X/Y і кнопки ZL/ZR згори; немає їх — «Ні».
-2. **Замінити російську?** — «Ні» замінить англійську.
+Як відрізнити New: у неї є маленький сірий C-стик над кнопками A/B/X/Y і додаткові кнопки ZL/ZR згори. Немає їх — беріть `Old`.
 
-На кожному питанні натисніть **Y** — унизу з'явиться позначка `Save your selection?` — і аж тоді **A** або **B**. Тоді відповідь запам'ятається, і **наступне оновлення піде взагалі без питань**: жодної черги, жодних діалогів. Universal-Updater не вміє сам розрізнити встановлення й оновлення, тож це єдиний спосіб цього досягти.
+Universal-Updater покаже нагадування про Luma й мову — підтвердьте **A**. Далі нічого не питає: архів качається й розпаковується в **черзі** (третя іконка згори), там видно поступ. Дочекайтеся, поки запис зникне з черги.
 
-Далі все качається й розпаковується само. Про це саме нагадує повідомлення, яке з'являється перед запуском.
-
-Помилилися з відповіддю — запустіть `2. Видалити українізатор` і поставте заново; видалення не залежить від слота й моделі.
+Помилилися з рядком — запустіть `Видалити українізатор` і поставте потрібний; видалення не залежить від слота й моделі.
 
 **3. Далі — кроки 2 і 3 з ручного встановлення нижче** (`Enable game patching` і вибір мови). Їх не обійти жодним застосунком.
 
-Коли вийде нова версія, на іконці **Українізатор 3DS/2DS** з'явиться зелена стрілка — запустіть той самий `1. Встановити / оновити`. Відповіді на питання Universal-Updater запам'ятовує, тож удруге їх можуть і не спитати.
+Коли вийде нова версія, на іконці **Українізатор 3DS/2DS** з'явиться зелена стрілка — запустіть той самий рядок ще раз.
+
+Раніше додавали окремий магазин `3ds-ua.unistore`? Він і далі працює, але більше не потрібен — усе те саме є в Universal-DB.
 
 ## Встановлення вручну (з SD-карти)
 
@@ -107,7 +115,7 @@ Universal-Updater виконує роботу **в черзі**, і питанн
 
 Будь-який спосіб:
 
-1. **У Universal-Updater** → **Українізатор 3DS/2DS** → `2. Видалити українізатор`. Нічого не питає про модель чи слот. Але Universal-Updater перепитає про **кожну папку окремо** — їх до 32; тримайте **A**. Обійти це неможливо: підтвердження зашите в самому Universal-Updater, вимкнути або запам'ятати відповідь на нього нічим. Після видалення перезапустіть консоль.
+1. **У Universal-Updater** → **Українізатор 3DS/2DS** → вкладка завантажень → `Видалити українізатор`. Нічого не питає про модель чи слот. Але Universal-Updater перепитає про **кожну папку окремо** — їх до 32; тримайте **A**. Обійти це неможливо: підтвердження зашите в самому Universal-Updater, вимкнути або запам'ятати відповідь на нього нічим. Після видалення перезапустіть консоль.
 2. **Змінити мову консолі** на будь-яку іншу — переклад просто не застосується.
 3. **Видалити папки мода** з `SD:/luma/titles/` вручну.
 4. **Вимкнути `Enable game patching`** у меню Luma (це вимкне й інші моди).
@@ -140,11 +148,11 @@ Universal-Updater виконує роботу **в черзі**, і питанн
 | У списку країн немає України | Свого коду в системі Україна не має — [чому](#чого-поки-що-немає). Ставте будь-яку країну, інтерфейс лишиться українським. |
 | `An exception occurred` при запуску додатка | Перейменуйте `SD:/luma/titles/<номер>/romfs` цього додатка на `_romfs` і перезавантажте — він запуститься без перекладу. І [напишіть в Issues](../../issues) з фото екрана. |
 | Меню HOME не завантажується | Видаліть `SD:/luma/titles/0004003000009802/code.ips`. Не допомогло — усю папку `0004003000009802`. |
-| Universal-Updater не бачить магазин | Звірте посилання посимвольно. Після оновлення магазину дайте ~5 хвилин: GitHub кешує файл. |
+| Не можу знайти українізатор в Universal-Updater | Шукайте лупою в лівій панелі: «Українізатор». Має бути вибраний магазин **Universal-DB** (шестерня → `Select UniStore`). |
 | У Universal-Updater помилка завантаження | Реліз ще не опубліковано або зникла мережа — спробуйте пізніше чи візьміть архів вручну. Ще одна причина — збита дата на консолі: тоді не проходить перевірка сертифіката. |
 | Не вистачає місця | Під час встановлення треба ~55 МБ вільних: 23 МБ архіву плюс 30 МБ розпакованого. |
-| Список скриптів старий після оновлення магазину | Universal-Updater перечитує магазин лише якщо ввімкнено автооновлення. Примусово: шестерня → `Select UniStore` → підсвітити **Українізатор 3DS/2DS** → **START**. |
-| Після запуску скрипта нічого не відбувається | Universal-Updater кладе роботу в **чергу**, і там на неї чекають питання. Відкрийте чергу третьою іконкою в лівій панелі й натисніть **A**. |
+| Не видно нової версії | Universal-Updater перечитує магазин лише якщо ввімкнено автооновлення. Примусово: шестерня → `Select UniStore` → підсвітити **Universal-DB** → **START**. Новий реліз потрапляє в Universal-DB не миттєво — дайте йому кілька годин. |
+| Після вибору рядка нічого не відбувається | Universal-Updater кладе роботу в **чергу**. Відкрийте її третьою іконкою в лівій панелі — там видно, чи йде завантаження. |
 | Якийсь додаток крешить після встановлення | У вас старіша його версія. Видаліть папку цього додатка з `SD:/luma/titles/` — решта перекладу працюватиме. Номери папок є в [технічному описі](docs/internals.md). |
 
 Порожні квадрати замість літер, обрізані чи накладені написи — це баг. [Відкрийте Issue](../../issues) з фото екрана.
@@ -193,40 +201,48 @@ HOME Menu (including the application names under the icons) · System Settings (
 - a Nintendo 3DS / 2DS / New 3DS of the **European (EUR) region**
 - **Luma3DS** custom firmware installed
 - an SD card with ~55 MB free
-- optionally **Universal-Updater**: with it everything is done from the console, no card removal
+- optionally **Universal-Updater**: with it everything is done from the console, no card removal. The mod is already in its main store, Universal-DB
 
 No Luma3DS yet? Follow [3ds.hacks.guide](https://3ds.hacks.guide/) first — the mod does nothing without it.
 
 ### Installation via Universal-Updater
 
-The easy path: the card stays in the console, and later updates announce themselves.
+The easy path: the card stays in the console, and later updates announce themselves. There is nothing to add — the mod lives in **Universal-DB**, the store [Universal-Updater](https://github.com/Universal-Team/Universal-Updater) works with out of the box.
 
-**1. Add the store**
+<table>
+<tr>
+<td><img src="assets/pictures/universal-updater-entry.png" width="250" alt="Universal-Updater: the «Українізатор 3DS/2DS» entry in Universal-DB, version v1.10.0"></td>
+<td><img src="assets/pictures/universal-updater-downloads.png" width="250" alt="Universal-Updater: the downloads tab with the four variants and «Видалити українізатор»"></td>
+<td><img src="assets/pictures/universal-updater-queue.png" width="250" alt="Universal-Updater: the queue downloading the mod, step 1 of 3"></td>
+</tr>
+</table>
 
-Open [Universal-Updater](https://github.com/Universal-Team/Universal-Updater) → `Settings` → `Select UniStore` → `Add new` → `Add with keyboard`, and enter:
+**1. Find the entry**
 
-```
-https://raw.githubusercontent.com/BolgarMaxym97/3ds-ua/main/unistore/3ds-ua.unistore
-```
+Open Universal-Updater and select **Українізатор 3DS/2DS** — the icon with a flag and a console. Search is quickest: the **magnifier** in the bottom screen's left sidebar, type «Українізатор». A card with the version appears at the bottom.
 
-**2. Install**
+**2. Pick your variant**
 
-Find **Українізатор 3DS/2DS** in the list and run `1. Встановити / оновити`.
+Open the **second icon down** the left sidebar — the downloads tab — and pick the line that matches your console:
 
-Universal-Updater does its work **in a queue**, and that is where the questions wait. So right after starting the script, open the queue — **third icon down the left sidebar** on the bottom screen — and press **A**. Two questions follow:
+| Line | Ukrainian replaces | Console |
+|---|---|---|
+| `New 3DS / New 2DS XL - замість російської` | Russian | **New** 3DS, New 3DS XL, New 2DS XL |
+| `New 3DS / New 2DS XL - замість англійської` | English | **New** 3DS, New 3DS XL, New 2DS XL |
+| `Old 3DS / Old 2DS - замість російської` | Russian | 3DS, 3DS XL, 2DS |
+| `Old 3DS / Old 2DS - замість англійської` | English | 3DS, 3DS XL, 2DS |
 
-1. **New 3DS?** — a New model has a small grey C-stick above A/B/X/Y and extra ZL/ZR buttons; without them, answer no.
-2. **Replace Russian?** — no replaces English.
+A New model has a small grey C-stick above A/B/X/Y and extra ZL/ZR buttons; without them, take `Old`.
 
-On each question press **Y** first — a `Save your selection?` checkbox appears at the bottom — and only then **A** or **B**. The answer is then remembered and **the next update runs with no questions at all**: no queue, no dialogs. Universal-Updater cannot tell an install from an update by itself, so this is the only way to get that.
+Universal-Updater shows a reminder about Luma and the language — confirm with **A**. After that it asks nothing: the archive downloads and unpacks in the **queue** (third icon down), where you can watch the progress. Wait until the entry leaves the queue.
 
-Everything else downloads and unpacks on its own. The message shown before the script starts says the same thing.
-
-Answered wrong? Run `2. Видалити українізатор` and install again.
+Picked the wrong line? Run `Видалити українізатор` and install the right one; removal does not depend on slot or model.
 
 **3. Then do steps 2 and 3 of the manual installation below** (`Enable game patching` and picking the language). No app can do those for you.
 
-When a new version ships, a green arrow appears on the **Українізатор 3DS/2DS** icon — run `1. Встановити / оновити` again. Universal-Updater remembers the answers, so it may not ask a second time.
+When a new version ships, a green arrow appears on the **Українізатор 3DS/2DS** icon — run the same line again.
+
+Added the separate `3ds-ua.unistore` store earlier? It still works, but you no longer need it — everything is in Universal-DB.
 
 ### Installation from the SD card (manual)
 
@@ -254,7 +270,7 @@ The console reboots itself. Done.
 
 Any of these:
 
-1. **In Universal-Updater** → **Українізатор 3DS/2DS** → `2. Видалити українізатор`. It asks nothing about model or slot. But Universal-Updater confirms **every folder separately** — up to 32 of them; hold **A**. There is no way around it: the confirmation is built into Universal-Updater and can be neither disabled nor remembered. Reboot the console afterwards.
+1. **In Universal-Updater** → **Українізатор 3DS/2DS** → downloads tab → `Видалити українізатор`. It asks nothing about model or slot. But Universal-Updater confirms **every folder separately** — up to 32 of them; hold **A**. There is no way around it: the confirmation is built into Universal-Updater and can be neither disabled nor remembered. Reboot the console afterwards.
 2. **Switch the console language** to anything else — the translation simply won't apply.
 3. **Delete the mod folders** from `SD:/luma/titles/` by hand.
 4. **Turn `Enable game patching` off** in the Luma menu (this disables other mods too).
@@ -287,11 +303,11 @@ Nothing in the system was modified, so removal cannot break anything.
 | Ukraine is missing from the country list | The system has no country code for it, see [Known limits](#known-limits). Pick any country; the interface stays Ukrainian. |
 | `An exception occurred` when opening an app | Rename that app's `SD:/luma/titles/<id>/romfs` to `_romfs` and reboot — it will start untranslated. Please [open an Issue](../../issues) with a photo. |
 | HOME Menu won't boot | Delete `SD:/luma/titles/0004003000009802/code.ips`. If that doesn't help, delete the whole `0004003000009802` folder. |
-| Universal-Updater doesn't see the store | Check the URL character by character. After the store is updated, give it ~5 minutes: GitHub caches the file. |
+| Can't find the mod in Universal-Updater | Search with the magnifier in the left sidebar: «Українізатор». The selected store must be **Universal-DB** (gear → `Select UniStore`). |
 | Download error in Universal-Updater | The release isn't published yet, or the network dropped — try later or grab the archive by hand. Another cause is a wrong console clock, which fails the certificate check. |
 | Not enough space | Installing needs ~55 MB free: 23 MB of archive plus 30 MB unpacked. |
-| The script list is stale after a store update | Universal-Updater only refetches the store when auto-update is on. Force it: gear → `Select UniStore` → highlight **Українізатор 3DS/2DS** → **START**. |
-| Nothing happens after starting a script | Universal-Updater puts the work in a **queue**, and the questions wait there. Open the queue with the third icon in the left sidebar and press **A**. |
+| The new version doesn't show up | Universal-Updater only refetches the store when auto-update is on. Force it: gear → `Select UniStore` → highlight **Universal-DB** → **START**. A new release reaches Universal-DB with some delay — give it a few hours. |
+| Nothing happens after picking a line | Universal-Updater puts the work in a **queue**. Open it with the third icon in the left sidebar to see whether the download is running. |
 | An app crashes after installing | You have an older build of it. Delete that app's folder from `SD:/luma/titles/` — the rest keeps working. Folder numbers are in the [technical write-up](docs/internals.en.md). |
 
 Empty boxes instead of letters, clipped or overlapping text — that's a bug. [Open an Issue](../../issues) with a photo.
