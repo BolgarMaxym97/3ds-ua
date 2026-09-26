@@ -6,7 +6,7 @@
     "url": "https://raw.githubusercontent.com/BolgarMaxym97/3ds-ua/main/unistore/3ds-ua.unistore",
     "file": "3ds-ua.unistore",
     "version": 3,
-    "revision": 11001,
+    "revision": 11002,
     "infoURL": "https://github.com/BolgarMaxym97/3ds-ua",
     "sheet": "3ds-ua.t3x",
     "sheetURL": "https://raw.githubusercontent.com/BolgarMaxym97/3ds-ua/main/unistore/3ds-ua.t3x"
@@ -317,7 +317,7 @@
         ],
         "icon_index": 0,
         "sheet_index": 0,
-        "last_updated": "2026-09-26 at 15:58 (UTC)"
+        "last_updated": "2026-09-26 at 16:02 (UTC)"
       }
     }
   ]

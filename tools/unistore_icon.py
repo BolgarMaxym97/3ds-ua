@@ -42,6 +42,11 @@ BUTTON = (165, 210, 110, 255)
 PAD = (196, 196, 196, 255)
 BLUE = (0, 87, 183, 255)
 YELLOW = (255, 215, 0, 255)
+# Universal-Updater's grid is a mid grey-olive, the same weight as BODY, so without a rim the
+# console dissolves into it and only the flag is left. A dark ring around the silhouette keeps
+# the shape readable on any backdrop; OUTLINE_PX is in supersampled pixels (4 = 1px at 48).
+OUTLINE = (24, 24, 28, 255)
+OUTLINE_PX = 6
 
 
 def rect(pixels, x0, y0, x1, y1, colour, radius=0.0) -> None:
@@ -71,6 +76,21 @@ def circle(pixels, cx, cy, radius, colour) -> None:
                 pixels[y][x] = colour
 
 
+def outline(pixels):
+    """Ring the opaque shapes with OUTLINE, OUTLINE_PX supersampled pixels wide."""
+    solid = [[px[3] > 0 for px in row] for row in pixels]
+    reach = [(dx, dy) for dy in range(-OUTLINE_PX, OUTLINE_PX + 1)
+             for dx in range(-OUTLINE_PX, OUTLINE_PX + 1) if dx * dx + dy * dy <= OUTLINE_PX ** 2]
+    ringed = [row[:] for row in pixels]
+    for y in range(W):
+        for x in range(W):
+            if solid[y][x]:
+                continue
+            if any(0 <= x + dx < W and 0 <= y + dy < W and solid[y + dy][x + dx] for dx, dy in reach):
+                ringed[y][x] = OUTLINE
+    return ringed
+
+
 def draw() -> list[list[tuple[int, int, int, int]]]:
     pixels = [[CLEAR for _ in range(W)] for _ in range(W)]
 
@@ -93,6 +113,8 @@ def draw() -> list[list[tuple[int, int, int, int]]]:
     rect(pixels, 106, 358, 138, 450, BUTTON)
     for dx, dy in ((0, -40), (0, 40), (-40, 0), (40, 0)):
         circle(pixels, 402 + dx, 356 + dy, 17, BUTTON)
+
+    pixels = outline(pixels)
 
     out = []
     for y in range(SIZE):
