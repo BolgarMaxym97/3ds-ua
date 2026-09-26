@@ -149,7 +149,7 @@
   },
   "ReadOnlySd": {
     "en": "The SD Card management file\nhas been set as read only.",
-    "ua": "Службовий файл на карті SD\nдоступний лише для читання."
+    "ua": "{t:1.0:6200}Службовий файл на карті SD\nдоступний лише для читання.{t:1.0:6400}"
   },
   "ReadOnlySd_Btn0": {
     "en": " OK",

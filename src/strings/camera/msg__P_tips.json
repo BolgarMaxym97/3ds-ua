@@ -65,7 +65,7 @@
   },
   "T_004": {
     "en": "{t:3.42:0000} Displaying alignment aids",
-    "ua": "{t:3.42:0000} Показ ліній вирівнювання"
+    "ua": "{t:3.42:0000} {t:1.0:6100}Показ ліній вирівнювання{t:1.0:6400}"
   },
   "T_005": {
     "en": "{t:3.42:0000} Inner and outer cameras",
@@ -77,7 +77,7 @@
   },
   "T_007": {
     "en": "{t:3.42:0000} Grouping photos/videos",
-    "ua": "{t:3.42:0000} Групування фото й відео"
+    "ua": "{t:3.42:0000} {t:1.0:6300}Групування фото й відео{t:1.0:6400}"
   },
   "T_008": {
     "en": "",
@@ -157,7 +157,7 @@
   },
   "T_027": {
     "en": "{t:3.42:0000} Manual Controls",
-    "ua": "{t:3.42:0000} Ручні налаштування"
+    "ua": "{t:3.42:0000} Ручні налаштунки"
   },
   "T_028": {
     "en": "{t:3.42:0000} Photo Save Location",
@@ -221,7 +221,7 @@
   },
   "T_043": {
     "en": "{t:3.42:0000} Using the SD Card",
-    "ua": "{t:3.42:0000} Користування картою SD"
+    "ua": "{t:3.42:0000} {t:1.0:6300}Користування картою SD{t:1.0:6400}"
   },
   "T_044": {
     "en": "{t:3.42:0000} The little budgie that can",
@@ -237,7 +237,7 @@
   },
   "T_047": {
     "en": "{t:3.42:0000} Manual Controls & Merge",
-    "ua": "{t:3.42:0000} {t:1.0:5500}Ручні налаштування і Злиття{t:1.0:6400}"
+    "ua": "{t:3.42:0000} {t:1.0:5500}Ручні налаштунки і Злиття{t:1.0:6400}"
   },
   "T_048": {
     "en": "{t:3.42:0000} About the Merge effect",
@@ -261,7 +261,7 @@
   },
   "T_053": {
     "en": "{t:3.42:0000} Pro: Camera shake",
-    "ua": "{t:3.42:0000} Профі: тремтіння камери"
+    "ua": "{t:3.42:0000} {t:1.0:6300}Профі: тремтіння камери{t:1.0:6400}"
   },
   "T_054": {
     "en": "{t:3.42:0000} Pro: Avoid camera shake",
@@ -677,7 +677,7 @@
   },
   "D_004_4": {
     "en": "To return the baseline to\nnormal, place the system\non a table or other flat\nsurface, then hold {t:0.3:ff3200ff}{t:0.3:454039ff}.",
-    "ua": "Щоб повернути звичайну\nлінію, покладіть консоль\nна стіл чи іншу рівну\nповерхню й утримуйте {t:0.3:ff3200ff}{t:0.3:454039ff}."
+    "ua": "{t:1.0:6200}Щоб повернути звичайну\nлінію, покладіть консоль\nна стіл чи іншу рівну\nповерхню й утримуйте {t:0.3:ff3200ff}{t:0.3:454039ff}.{t:1.0:6400}"
   },
   "Guide_Tex_005": {
     "en": "",
@@ -721,7 +721,7 @@
   },
   "D_007_1": {
     "en": "{t:4.1:140050005f004700750069006400310033005f005500}Touch a date folder to\nselect it, then touch\nagain to collapse all\nphotos and videos from\nthat date into the folder,\nmaking scrolling easier.",
-    "ua": "{t:4.1:140050005f004700750069006400310033005f005500}Торкніться папки з датою,\nщоб вибрати її, і ще раз —\nщоб згорнути всі фото\nй відео того дня в папку.\nТак гортати легше."
+    "ua": "{t:4.1:140050005f004700750069006400310033005f005500}{t:1.0:6200}Торкніться папки з датою,\nщоб вибрати її, і ще раз —\nщоб згорнути всі фото\nй відео того дня в папку.\nТак гортати легше.{t:1.0:6400}"
   },
   "D_007_2": {
     "en": "{t:4.1:140050005f004700750069006400310034005f005500}To see all the photos and\nvideos again, touch the\ncollapsed folder once\nmore.",
@@ -817,7 +817,7 @@
   },
   "D_012_1": {
     "en": "Touch it and three\nnew tools will\ncome into view.",
-    "ua": "Торкніться — і з'являться\nтри нові інструменти."
+    "ua": "{t:1.0:6300}Торкніться — і з'являться\nтри нові інструменти.{t:1.0:6400}"
   },
   "D_012_2": {
     "en": "You can do all sorts of\nthings with these!\nUse them to change\nthe camera mode,",
@@ -849,7 +849,7 @@
   },
   "D_013_2": {
     "en": "{t:4.1:140050005f004700750069006400300035005f005500}Of course, any photos or\nvideos you take with the\ninner camera will remain in\n2D no matter what. Use\nthe outer cameras to\ncapture 3D images.",
-    "ua": "{t:4.1:140050005f004700750069006400300035005f005500}Звісно, фото й відео,\nзняті передньою камерою,\nлишаться у 2D за\nбудь-яких умов. Для 3D\nберіть задні камери."
+    "ua": "{t:4.1:140050005f004700750069006400300035005f005500}{t:1.0:6300}Звісно, фото й відео,\nзняті передньою камерою,\nлишаться у 2D за\nбудь-яких умов. Для 3D\nберіть задні камери.{t:1.0:6400}"
   },
   "Guide_Tex_014": {
     "en": "",
@@ -929,7 +929,7 @@
   },
   "D_018_2": {
     "en": "The static white\ncrosshairs indicate the\ncentre of the screen.",
-    "ua": "Нерухоме біле перехрестя\nпоказує центр екрана."
+    "ua": "{t:1.0:6300}Нерухоме біле перехрестя\nпоказує центр екрана.{t:1.0:6400}"
   },
   "D_018_3": {
     "en": "Use these to help\nyou shoot straight!",
@@ -1041,7 +1041,7 @@
   },
   "D_025_0": {
     "en": "The Mystery effect\nis...well, mysterious!\nThere's no preview, so\nyou have to take a photo\nto see what you get.",
-    "ua": "Ефект Загадки… ну,\nзагадковий! Показу\nнаперед немає, тож треба\nзняти фото, щоб\nпобачити, що вийде."
+    "ua": "{t:1.0:6300}Ефект Загадки… ну,\nзагадковий! Показу\nнаперед немає, тож треба\nзняти фото, щоб\nпобачити, що вийде.{t:1.0:6400}"
   },
   "D_025_1": {
     "en": "You can take all kinds\nof photos with Mystery,\nand you might make\nsome new discoveries.",
@@ -1629,7 +1629,7 @@
   },
   "D_061_1": {
     "en": "You might get a more\nnatural, lifelike result.",
-    "ua": "Може вийти природніше\nй живіше."
+    "ua": "{t:1.0:6300}Може вийти природніше\nй живіше.{t:1.0:6400}"
   },
   "Guide_Tex_062": {
     "en": "",
@@ -1717,7 +1717,7 @@
   },
   "D_067_1": {
     "en": "You could even add\ngraffiti to express what\nthe dog's thinking...\nWhy, you might even\nbe able to come up\nwith a little story.",
-    "ua": "Можна навіть домалювати,\nпро що думає пес…\nА там, дивись,\nі маленька історія\nскладеться.\nЦвірінь!"
+    "ua": "{t:1.0:6200}Можна навіть домалювати,\nпро що думає пес…\nА там, дивись,\nі маленька історія\nскладеться.\nЦвірінь!{t:1.0:6400}"
   },
   "D_067_2": {
     "en": "\"Ruff! Now where did\nI put that bone?\"",
@@ -2029,7 +2029,7 @@
   },
   "D_087_4": {
     "en": "{t:4.1:140050005f004700750069006400320031005f005500}Phew! If only all\nproblems were\nthis easy to solve.",
-    "ua": "{t:4.1:140050005f004700750069006400320031005f005500}Фух! Якби ж усі\nклопоти розв'язувалися\nтак легко."
+    "ua": "{t:4.1:140050005f004700750069006400320031005f005500}{t:1.0:6300}Фух! Якби ж усі\nклопоти розв'язувалися\nтак легко.{t:1.0:6400}"
   },
   "Guide_Tex_088": {
     "en": "",
@@ -2113,7 +2113,7 @@
   },
   "D_091_2": {
     "en": "to reproduce the darkened\nroom effect inside a small\nbox. Such ingenuity!\nI hope that answers\nall your questions.",
-    "ua": "відтворити дію\nзатемненої кімнати\nв маленькій коробці.\nОт вигадники! Сподіваюся,\nце відповідь на все."
+    "ua": "{t:1.0:6200}відтворити дію\nзатемненої кімнати\nв маленькій коробці.\nОт вигадники! Сподіваюся,\nце відповідь на все.{t:1.0:6400}"
   },
   "D_091_3": {
     "en": "What? Then wouldn't it be\ntoo small to get inside and\nactually see the picture?",
@@ -2125,7 +2125,7 @@
   },
   "D_091_5": {
     "en": "OK, OK. Back to my\nbooks... Chirp...",
-    "ua": "Гаразд, гаразд. Вертаюся\nдо книжок… Цвірінь…"
+    "ua": "{t:1.0:6200}Гаразд, гаразд. Вертаюся\nдо книжок… Цвірінь…{t:1.0:6400}"
   },
   "Guide_Tex_092": {
     "en": "",
@@ -2161,7 +2161,7 @@
   },
   "D_093_1": {
     "en": "They dreamed of a man,\nholding a small box\nwith a lens on the front,\nwho drew a picture that\nlooked just like them.",
-    "ua": "Їй наснився чоловік із\nмаленькою коробкою,\nу якої спереду була лінза;\nвін намалював картину,\nдуже схожу на неї саму."
+    "ua": "{t:1.0:6200}Їй наснився чоловік із\nмаленькою коробкою,\nу якої спереду була лінза;\nвін намалював картину,\nдуже схожу на неї саму.{t:1.0:6400}"
   },
   "D_093_2": {
     "en": "This was before\nthe invention of\nthe camera.",
@@ -2245,7 +2245,7 @@
   },
   "D_097_0": {
     "en": "Videos you shoot with\nNintendo 3DS Camera are\nsaved to the {t:0.3:ff3200ff}SD Card{t:0.3:454039ff}.",
-    "ua": "Відео, зняте Nintendo 3DS\nКамерою, зберігається\nна {t:0.3:ff3200ff}карту SD{t:0.3:454039ff}."
+    "ua": "{t:1.0:6200}Відео, зняте Nintendo 3DS\nКамерою, зберігається\nна {t:0.3:ff3200ff}карту SD{t:0.3:454039ff}.{t:1.0:6400}"
   },
   "D_097_1": {
     "en": "As you might expect, the\nPhoto Save Location\nsetting is for photos only,\nso it won't affect where\nyour videos are saved.\nKeep that in mind! Chirp!",
@@ -2485,7 +2485,7 @@
   },
   "D_110_2": {
     "en": "Set a longer interval than\nthat for dramatic scenes\nwhere the clouds seem\nto whizz past!",
-    "ua": "Задайте більший проміжок\nдля величних сцен, де\nхмари наче\nпролітають повз!"
+    "ua": "{t:1.0:6300}Задайте більший проміжок\nдля величних сцен, де\nхмари наче\nпролітають повз!{t:1.0:6400}"
   },
   "Guide_Tex_111": {
     "en": "",
@@ -2589,7 +2589,7 @@
   },
   "D_116_0": {
     "en": "Do you find that shooting\nin Frame Pick is fun, but\nrather bothersome for\nyour liking?",
-    "ua": "Вам здається, що знімати\nВибором кадру цікаво,\nале трохи\nклопітно?"
+    "ua": "{t:1.0:6300}Вам здається, що знімати\nВибором кадру цікаво,\nале трохи\nклопітно?{t:1.0:6400}"
   },
   "D_116_1": {
     "en": "If so, you might find\nInterval Shot easier.",
@@ -2657,7 +2657,7 @@
   },
   "D_120_0": {
     "en": "Do you ever find that\nclouds in the sky are too\nbright in your photos and\nvideos, losing detail?",
-    "ua": "Чи буває, що хмари в небі\nна ваших фото й відео\nзанадто світлі й\nвтрачають подробиці?"
+    "ua": "{t:1.0:6300}Чи буває, що хмари в небі\nна ваших фото й відео\nзанадто світлі й\nвтрачають подробиці?{t:1.0:6400}"
   },
   "D_120_1": {
     "en": "In photography, this\nphenomenon is known\nas a {t:0.3:ff3200ff}blown-out highlight{t:0.3:454039ff}.",
@@ -2705,7 +2705,7 @@
   },
   "D_122_4": {
     "en": "...Actually, maybe I'll save\nthis one for next time.\nI hope you keep having\nfun shooting photos and\nvideos! Chirp!",
-    "ua": "…А втім, лишу її,\nмабуть, на наступний раз.\nНехай вам і далі буде\nвесело знімати фото\nй відео! Цвірінь!"
+    "ua": "{t:1.0:6300}…А втім, лишу її,\nмабуть, на наступний раз.\nНехай вам і далі буде\nвесело знімати фото\nй відео! Цвірінь!{t:1.0:6400}"
   },
   "Guide_Tex_123": {
     "en": "",

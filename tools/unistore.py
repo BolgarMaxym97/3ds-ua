@@ -496,7 +496,7 @@ def wipe_steps() -> list[dict]:
 def release_notes(version: str, path: Path | None) -> str:
     """The release notes, flattened - Universal-Updater renders plain text in a narrow box."""
     if path is None:
-        path = ROOT / "tmp" / f"release-{version}.md"
+        path = ROOT / "releases" / f"release-{version}.md"
     if not path.is_file():
         print(f"note: no {path.relative_to(ROOT) if path.is_relative_to(ROOT) else path}, releasenotes left empty")
         return ""
