@@ -3,7 +3,7 @@ PY := python3
 
 HOME_MENU_TID := 0004003000009802
 FONT_TID := 0004009B00014002
-VERSION := 1.10.0
+VERSION := 1.11.0
 
 # Which language the mod stands in place of. `ru` builds into dist/, `en` into dist_en/;
 # the targets below build both, and SLOT= picks one for the single-slot targets (sd).
@@ -66,7 +66,7 @@ package-en: manuals-en ## build 3ds-ua-from-en-$(VERSION)-{old3ds,new3ds}.zip
 
 # REV= bumps the store revision without a new release, for a store-only fix (a reworded
 # script, a new icon). Universal-Updater refetches only when the revision grows.
-unistore: ## regenerate unistore/3ds-ua.unistore from dist/ (REV=10801 for a store-only fix)
+unistore: ## regenerate unistore/3ds-ua.unistore from dist/ (REV=11101 for a store-only fix)
 	$(PY) tools/unistore.py $(VERSION) $(if $(REV),--revision $(REV) --stamp)
 
 udb: ## write unistore/universal-db.json - the submission file for Universal-Team/db

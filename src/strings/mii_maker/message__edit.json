@@ -9,7 +9,7 @@
   },
   "first_text_02": {
     "en": "You've created your Personal Mii!\n\nThis Mii is unique in that it\ncannot be erased. You can\nalways edit it later, though.",
-    "ua": "Ви створили особистого Mii!\n\nЦей Mii особливий: його не\nможна стерти. Але його завжди\nможна відредагувати."
+    "ua": "Ви створили особистого Mii!\n\nЦей Mii особливий: його\nне можна стерти. Але його\nзавжди можна відредагувати."
   },
   "first_text_03": {
     "en": "You can use Mii characters\nin games. Create Mii versions\nof your friends and family and\nthey can join in the fun, too!",
@@ -93,7 +93,7 @@
   },
   "editor_text_17": {
     "en": "Month",
-    "ua": "Місяць"
+    "ua": "Міс."
   },
   "editor_text_18": {
     "en": "Day",
@@ -181,7 +181,7 @@
   },
   "editor_prof_name": {
     "en": "Nickname",
-    "ua": "Псевдонім"
+    "ua": "Ім'я"
   },
   "editor_prof_name_box": {
     "en": "",
@@ -253,11 +253,11 @@
   },
   "editor_prof_open_yes": {
     "en": "On",
-    "ua": "Увімк."
+    "ua": "Так"
   },
   "editor_prof_open_no": {
     "en": "Off",
-    "ua": "Вимк."
+    "ua": "Ні"
   },
   "editor_prof_other_01": {
     "en": "Mii characters that can be copied\nby the recipient can also be edited\nand then sent on to other people.\n\nRefer to the Nintendo 3DS\nOperations Manual for details.",
@@ -329,7 +329,7 @@
   },
   "editor_btn_clear": {
     "en": "Clear",
-    "ua": "Очистити"
+    "ua": "Стерти"
   },
   "editor_btn_cancel_dlg": {
     "en": "",
@@ -517,7 +517,7 @@
   },
   "plaza_first_01": {
     "en": "Slide Mii characters on\nthe Touch Screen to\nmove them between slots\nor to different rooms.",
-    "ua": "Проведіть по Mii на\nсенсорному дисплеї, щоб\nперемістити його між місцями\nабо до іншої кімнати."
+    "ua": "Проведіть по Mii\nна сенсорному дисплеї, щоб\nперемістити його між місцями\nабо до іншої кімнати."
   },
   "plaza_text_00": {
     "en": "You cannot remove\nyour Personal Mii\nfrom your favourites.",
@@ -537,7 +537,7 @@
   },
   "plaza_text_04": {
     "en": "This is a Special Mii.\nAre you sure you\nwant to erase it?",
-    "ua": "Це особливий Mii.\nВи впевнені, що\nхочете його стерти?"
+    "ua": "Це особливий Mii.\nВи впевнені,\nщо хочете його стерти?"
   },
   "plaza_text_05": {
     "en": "You cannot edit Mii characters\nthat have been received\nfrom someone else and do\nnot have copying allowed.",
@@ -637,7 +637,7 @@
   },
   "code_text_08": {
     "en": "This QR Code does\nnot contain a Mii.",
-    "ua": "Цей QR-код не\nмістить Mii."
+    "ua": "Цей QR-код\nне містить Mii."
   },
   "code_text_09": {
     "en": "This Mii already exists,\nso it will be overwritten.",
@@ -653,7 +653,7 @@
   },
   "code_text_14": {
     "en": "Please be careful not\nto erase this Special Mii,\nas it can no longer be\nreceived via QR Code.",
-    "ua": "Будьте обережні, щоб не\nстерти цього особливого Mii:\nйого вже не можна\nотримати через QR-код."
+    "ua": "Будьте обережні, щоб\nне стерти цього особливого Mii:\nйого вже не можна\nотримати через QR-код."
   },
   "code_text_15": {
     "en": "Which kind of image\nwould you like to save?",
@@ -689,7 +689,7 @@
   },
   "code_text_25": {
     "en": "Cannot write to the SD Card.\n\nPlease turn off the power, move\nthe SD Card's write-protection\nswitch to the off position, then\nreinsert the SD Card.",
-    "ua": "Не можна записати на карту SD.\n\nВимкніть живлення, переведіть\nперемикач захисту від запису\nна карті SD у положення\n«вимк.», потім вставте\nкарту знову."
+    "ua": "Карта SD захищена від запису.\n\nВимкніть живлення, переведіть\nперемикач захисту від запису\nна карті SD у положення\n«вимк.», потім вставте\nкарту знову."
   },
   "code_text_26": {
     "en": "???",
@@ -713,7 +713,7 @@
   },
   "code_btn_picture": {
     "en": "Save Mii as Image",
-    "ua": "Зберегти як зображення"
+    "ua": "Зберегти зображення"
   },
   "code_face_save": {
     "en": "Face",
@@ -785,11 +785,11 @@
   },
   "connect_text_07": {
     "en": "Connected to\n%ls.\nSelect a Mii to send.",
-    "ua": "Під'єднано до\n%ls.\nВиберіть Mii для надсилання."
+    "ua": "Під'єднано\nдо %ls.\nВиберіть Mii для надсилання."
   },
   "connect_text_08": {
     "en": "Connected to\n%ls.",
-    "ua": "Під'єднано до\n%ls."
+    "ua": "Під'єднано\nдо %ls."
   },
   "connect_text_16": {
     "en": "Sending...",
@@ -877,7 +877,7 @@
   },
   "connect_text_37": {
     "en": "Searching for a Wii console. In\nthe Mii Channel, select Connect\nto DS. If that option is not shown,\npress the A, B and 1 Buttons on\nthe Wii Remote in that order, then\npress and hold the 2 Button.",
-    "ua": "Пошук консолі Wii. У каналі Mii\nвиберіть Connect to DS. Якщо\nтакого пункту немає, натисніть на\nWii Remote кнопки A, B і 1 у цьому\nпорядку, потім натисніть\nі тримайте кнопку 2."
+    "ua": "Пошук консолі Wii. У каналі Mii\nвиберіть Connect to DS. Якщо\nтакого пункту немає, натисніть\nна Wii Remote кнопки A, B і 1\nу цьому порядку, потім натисніть\nі тримайте кнопку 2."
   },
   "connect_text_38": {
     "en": "The recipient already\nhas this Special Mii,\nso it could not be sent.",
@@ -1021,7 +1021,7 @@
   },
   "mii_name_4": {
     "en": "Nick",
-    "ua": "Микола"
+    "ua": "Микита"
   },
   "mii_name_5": {
     "en": "Ollie",
@@ -1041,7 +1041,7 @@
   },
   "mii_name_9": {
     "en": "Alex",
-    "ua": "Олекса"
+    "ua": "Олесь"
   },
   "mii_name_10": {
     "en": "Polly",

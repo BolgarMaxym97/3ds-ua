@@ -13,7 +13,7 @@
 
 Файли самої консолі не змінюються — усе живе на SD-карті. Видалили папки, і все повернулося як було.
 
-**Ціль проєкту — повний українізатор системи:** усе, що видно на екрані, має бути українською. Зараз перекладено **31 частина системи плюс одинадцять електронних довідників**, робота триває.
+**Ціль проєкту — повний українізатор системи:** усе, що видно на екрані, має бути українською. Зараз перекладено **32 частини системи плюс дванадцять електронних довідників**, робота триває.
 
 [Українською](#що-вже-українською) · [In English](#in-english)
 
@@ -117,7 +117,7 @@ Universal-Updater покаже нагадування про Luma й мову �
 
 1. **У Universal-Updater** → **Українізатор 3DS/2DS** → вкладка завантажень → `Видалити українізатор`. Нічого не питає про модель чи слот. Але Universal-Updater перепитає про **кожну папку окремо** — їх до 32; тримайте **A**. Обійти це неможливо: підтвердження зашите в самому Universal-Updater, вимкнути або запам'ятати відповідь на нього нічим. Після видалення перезапустіть консоль.
 2. **Змінити мову консолі** на будь-яку іншу — переклад просто не застосується.
-3. **Видалити папки мода** з `SD:/luma/titles/` вручну.
+3. **Видалити папки мода** з `SD:/luma/titles/` вручну — усі вони перелічені в [таблиці](docs/internals.md#що-за-папки-в-lumatitles) (32 на New 3DS, 30 на Old 3DS).
 4. **Вимкнути `Enable game patching`** у меню Luma (це вимкне й інші моди).
 
 Системні файли не змінювалися, тому видалення нічого не ламає.
@@ -146,7 +146,7 @@ Universal-Updater покаже нагадування про Luma й мову �
 | У списку мов немає «Українська» | Архів скопіювався не повністю, або консоль не EUR-регіону. |
 | Частина тексту не українською | Так і має бути: технічні написи (`OK`, `Miiverse`, формати дат) лишені як є. |
 | У списку країн немає України | Свого коду в системі Україна не має — [чому](#чого-поки-що-немає). Ставте будь-яку країну, інтерфейс лишиться українським. |
-| `An exception occurred` при запуску додатка | Перейменуйте `SD:/luma/titles/<номер>/romfs` цього додатка на `_romfs` і перезавантажте — він запуститься без перекладу. І [напишіть в Issues](../../issues) з фото екрана. |
+| `An exception occurred` при запуску додатка | Видаліть папку цього додатка `SD:/luma/titles/<номер>` цілком і перезавантажте — він запуститься без перекладу. І [напишіть в Issues](../../issues) з фото екрана. |
 | Меню HOME не завантажується | Видаліть `SD:/luma/titles/0004003000009802/code.ips`. Не допомогло — усю папку `0004003000009802`. |
 | Не можу знайти українізатор в Universal-Updater | Шукайте лупою в лівій панелі: «Українізатор». Має бути вибраний магазин **Universal-DB** (шестерня → `Select UniStore`). |
 | У Universal-Updater помилка завантаження | Реліз ще не опубліковано або зникла мережа — спробуйте пізніше чи візьміть архів вручну. Ще одна причина — збита дата на консолі: тоді не проходить перевірка сертифіката. |
@@ -190,7 +190,7 @@ Install one of them, not several. The per-console split exists because a New 3DS
 
 Nothing on the console itself is modified — it all lives on the SD card. Delete the folders and everything is back to stock.
 
-**The goal is a complete Ukrainian localisation** of everything visible on screen. **31 parts of the system plus eleven electronic manuals** are done so far; work continues.
+**The goal is a complete Ukrainian localisation** of everything visible on screen. **32 parts of the system plus twelve electronic manuals** are done so far; work continues.
 
 ### Already in Ukrainian
 
@@ -272,12 +272,12 @@ Any of these:
 
 1. **In Universal-Updater** → **Українізатор 3DS/2DS** → downloads tab → `Видалити українізатор`. It asks nothing about model or slot. But Universal-Updater confirms **every folder separately** — up to 32 of them; hold **A**. There is no way around it: the confirmation is built into Universal-Updater and can be neither disabled nor remembered. Reboot the console afterwards.
 2. **Switch the console language** to anything else — the translation simply won't apply.
-3. **Delete the mod folders** from `SD:/luma/titles/` by hand.
+3. **Delete the mod folders** from `SD:/luma/titles/` by hand — every one is listed in [the table](docs/internals.en.md#what-each-folder-under-lumatitles-is) (32 on New 3DS, 30 on Old 3DS).
 4. **Turn `Enable game patching` off** in the Luma menu (this disables other mods too).
 
 Nothing in the system was modified, so removal cannot break anything.
 
-**One exception.** The built-in Notification tips were copied into NAND by the console long ago, and no file on the SD card can reach them — the mod rewrites them inside that database. After you remove the mod they stay Ukrainian (not corrupted — simply Ukrainian). If you'd rather they didn't, delete `SD:/luma/titles/0004003000009802/code.ips` **before** the first boot with the mod: the tips then stay Russian, along with the application names and banners that same file translates.
+**One exception.** The built-in Notification tips were copied into NAND by the console long ago, and no file on the SD card can reach them — the mod rewrites them inside that database. After you remove the mod they stay Ukrainian (not corrupted — simply Ukrainian). If you'd rather they didn't, delete `SD:/luma/titles/0004003000009802/code.ips` **before** the first boot with the mod: the tips then stay in the language the mod replaces, along with the application names and banners that same file translates.
 
 ### Known limits
 
@@ -301,7 +301,7 @@ Nothing in the system was modified, so removal cannot break anything.
 | No «Українська» in the language list | The archive was not copied fully, or the console is not EUR. |
 | Some text is not Ukrainian | Expected: technical strings (`OK`, `Miiverse`, date formats) are left as they are. |
 | Ukraine is missing from the country list | The system has no country code for it, see [Known limits](#known-limits). Pick any country; the interface stays Ukrainian. |
-| `An exception occurred` when opening an app | Rename that app's `SD:/luma/titles/<id>/romfs` to `_romfs` and reboot — it will start untranslated. Please [open an Issue](../../issues) with a photo. |
+| `An exception occurred` when opening an app | Delete that app's whole `SD:/luma/titles/<id>` folder and reboot — it will start untranslated. Please [open an Issue](../../issues) with a photo. |
 | HOME Menu won't boot | Delete `SD:/luma/titles/0004003000009802/code.ips`. If that doesn't help, delete the whole `0004003000009802` folder. |
 | Can't find the mod in Universal-Updater | Search with the magnifier in the left sidebar: «Українізатор». The selected store must be **Universal-DB** (gear → `Select UniStore`). |
 | Download error in Universal-Updater | The release isn't published yet, or the network dropped — try later or grab the archive by hand. Another cause is a wrong console clock, which fails the certificate check. |

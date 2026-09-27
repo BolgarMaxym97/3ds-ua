@@ -5,7 +5,7 @@
   },
   "STR_CANCEL": {
     "en": "Cancel",
-    "ua": "Скасувати"
+    "ua": "Назад"
   },
   "STR_SPOILER": {
     "en": "Spoilers",
@@ -17,7 +17,7 @@
   },
   "STR_WAIT": {
     "en": "Please wait...",
-    "ua": "Зачекайте..."
+    "ua": "Зачекайте…"
   },
   "STR_OK": {
     "en": "OK",
@@ -57,7 +57,7 @@
   },
   "STR_SAVE_ERROR": {
     "en": "You can only save three posts.\n\nPlease delete one of your saved\nposts.",
-    "ua": "Можна зберегти лише три пости.\n\nВидаліть один зі збережених\nпостів."
+    "ua": "Можна зберегти лише\nтри пости.\n\nВидаліть один зі збережених\nпостів."
   },
   "STR_DELETE_DLG": {
     "en": "Are you sure you want to delete\nthis post?",
@@ -101,11 +101,11 @@
   },
   "STR_ERROR_INIT": {
     "en": "You must have started Miiverse\nat least once.\n\nPlease start Miiverse from the\nHOME Menu and set up your\nuser information.",
-    "ua": "Miiverse потрібно запустити\nхоча б один раз.\n\nЗапустіть Miiverse з меню\nHOME і задайте дані\nкористувача."
+    "ua": "Miiverse потрібно запустити\nхоча б один раз.\n\nЗапустіть Miiverse\nз меню HOME і задайте дані\nкористувача."
   },
   "STR_ERROR_COMMON": {
     "en": "An error has occurred. Please\ntry again. If the problem persists,\nplease contact your local\ncustomer support centre.\nFor contact details, check the\nOperations Manual or visit\nsupport.nintendo.com.",
-    "ua": "Сталася помилка. Спробуйте\nще раз. Якщо проблема не\nзникає, зверніться до місцевої\nслужби підтримки.\nКонтакти шукайте в посібнику\nз користування або на сайті\nsupport.nintendo.com."
+    "ua": "Сталася помилка. Спробуйте\nще раз. Якщо проблема\nне зникає, зверніться до місцевої\nслужби підтримки.\nКонтакти шукайте в посібнику\nз користування або на сайті\nsupport.nintendo.com."
   },
   "STR_ERROR_MII": {
     "en": "Your Personal Mii is corrupted.\nUse Mii Maker to create a new\nPersonal Mii.",

@@ -9,7 +9,7 @@
   },
   "SD_Invalid_00": {
     "en": "Could not access\nSD Card.",
-    "ua": "Немає доступу до\nкарти SD."
+    "ua": "Немає доступу\nдо карти SD."
   },
   "SD_Invalid_B00": {
     "en": "OK",
@@ -17,7 +17,7 @@
   },
   "SD_Protected": {
     "en": "Cannot write to the\nSD Card. Please turn off\nthe power and move the\nwrite-protection switch\non the SD Card to the\noff position.",
-    "ua": "Не вдається писати\nна карту SD. Вимкніть\nживлення й переведіть\nперемикач захисту на\nкарті SD у положення\n«вимк.»."
+    "ua": "Не вдається писати\nна карту SD. Вимкніть\nживлення й переведіть\nперемикач захисту\nна карті SD у положення\n«вимк.»."
   },
   "SD_Protected_B00": {
     "en": "OK",
@@ -57,7 +57,7 @@
   },
   "SD_Full_R_02": {
     "en": "The SD Card does not\nhave enough free space.\nCannot move\nthe recording.",
-    "ua": "На карті SD не вистачає\nвільного місця. Перенести\nзапис не вдасться."
+    "ua": "На карті SD не вистачає\nвільного місця.\nПеренести запис\nне вдасться."
   },
   "SD_Full_R_B02": {
     "en": "OK",
@@ -153,7 +153,7 @@
   },
   "P_Add_010": {
     "en": "Added to\n{t:3.46:0000}.",
-    "ua": "Додано до\n{t:3.46:0000}."
+    "ua": "Додано\nдо {t:3.46:0000}."
   },
   "P_B_Add_010": {
     "en": "OK",
@@ -193,7 +193,7 @@
   },
   "P_Add_050": {
     "en": "Adding to\nplaylist...",
-    "ua": "Додавання до\nсписку…"
+    "ua": "Додавання\nдо списку…"
   },
   "P_Add_080": {
     "en": "One or more of these\nsongs is already in\nthe StreetPass playlist.\nYou cannot add the same\nsong to the StreetPass\nplaylist more than once.",
@@ -297,7 +297,7 @@
   },
   "P_Rmv_030": {
     "en": "Removed all tracks from\n\"{t:1.0:5c00}{t:3.46:0000}{t:1.0:6400}\".",
-    "ua": "Усі пісні прибрано зі\n«{t:1.0:5c00}{t:3.46:0000}{t:1.0:6400}»."
+    "ua": "Усі пісні прибрано\nзі «{t:1.0:5c00}{t:3.46:0000}{t:1.0:6400}»."
   },
   "P_B_Rmv_030": {
     "en": "OK",
@@ -329,7 +329,7 @@
   },
   "P_Rmv_120": {
     "en": "To use StreetPass,\nyou must add at\nleast one song to the\nStreetPass playlist.",
-    "ua": "Щоб користуватися\nStreetPass, додайте до\nсписку StreetPass\nхоча б одну пісню."
+    "ua": "Щоб користуватися\nStreetPass, додайте\nдо списку StreetPass\nхоча б одну пісню."
   },
   "P_B_Rmv_120": {
     "en": "OK",
@@ -337,7 +337,7 @@
   },
   "P_Del_000": {
     "en": "All tracks will be\nremoved from\n\"{t:1.0:5c00}{t:3.46:0000}{t:1.0:6400}\"\nand the playlist\nwill be deleted.\nIs this OK?",
-    "ua": "Усі пісні буде\nприбрано зі\n«{t:1.0:5c00}{t:3.46:0000}{t:1.0:6400}»,\nа сам список\nбуде видалено.\nПродовжити?"
+    "ua": "Усі пісні буде\nприбрано\nзі «{t:1.0:5c00}{t:3.46:0000}{t:1.0:6400}»,\nа сам список\nбуде видалено.\nПродовжити?"
   },
   "P_B_Del_000": {
     "en": "Yes",
@@ -437,7 +437,7 @@
   },
   "R_Recover_00": {
     "en": "A problem was detected\nwith the recordings saved\nto the System Memory.\n\nRepairing the recordings...",
-    "ua": "Виявлено проблему із\nзаписами, збереженими\nв пам'яті системи.\n\nВиправлення записів…"
+    "ua": "Виявлено проблему\nіз записами, збереженими\nв пам'яті системи.\n\nВиправлення записів…"
   },
   "R_Recover_10": {
     "en": "Repaired recordings.",
@@ -573,7 +573,7 @@
   },
   "R_Rec_020": {
     "en": "Touch OK to save\nthis recording.",
-    "ua": "Торкніться OK, щоб\nзберегти цей запис."
+    "ua": "Торкніться OK, щоб\nзберегти запис."
   },
   "R_B_Rec_020": {
     "en": "OK",
@@ -765,7 +765,7 @@
   },
   "Set_I_Out_00": {
     "en": "Select from surround, stereo\nor mono audio output for the\nspeakers or headphones.",
-    "ua": "Виберіть об'ємний, стерео\nчи моно вивід звуку для\nдинаміків або навушників."
+    "ua": "Виберіть об'ємний, стерео\nчи моно вивід звуку\nдля динаміків або навушників."
   },
   "Set_Out_000": {
     "en": "Audio Output",
@@ -857,7 +857,7 @@
   },
   "DM_SavDt_Init_000": {
     "en": "Settings and other data\nwill be reset. This cannot\nbe undone. Are you sure\nyou want to continue?",
-    "ua": "Налаштування та інші\nдані буде скинуто.\nСкасувати це не вдасться.\nСправді продовжити?"
+    "ua": "Налаштування та інші\nдані буде скинуто.\nЦе не можна скасувати.\nСправді продовжити?"
   },
   "DM_SavDt_Init_B000": {
     "en": "Cancel",
@@ -913,7 +913,7 @@
   },
   "DM_Voice_Del_000": {
     "en": "All recordings saved to the\nSystem Memory and SD\nCard will be deleted. You\nwill not be able to recover\nthem. Are you sure you\nwant to proceed?",
-    "ua": "Усі записи, збережені\nв пам'яті системи й на\nкарті SD, буде видалено.\nВідновити їх не вдасться.\nСправді хочете\nпродовжити?"
+    "ua": "Усі записи в пам'яті\nсистеми й на карті SD\nбуде видалено.\nВідновити їх не вдасться.\nСправді хочете\nпродовжити?"
   },
   "DM_Voice_Del_B000": {
     "en": "Cancel",
@@ -925,7 +925,7 @@
   },
   "DM_Voice_Del_010": {
     "en": "The recordings shown\non the upper screen will\nbe deleted. You will not\nbe able to recover them.\nAre you sure you\nwant to proceed?",
-    "ua": "Записи, показані на\nверхньому екрані, буде\nвидалено. Відновити їх\nне вдасться. Справді\nхочете продовжити?"
+    "ua": "Записи, показані\nна верхньому екрані,\nбуде видалено.\nВідновити їх не вдасться.\nСправді хочете\nпродовжити?"
   },
   "DM_Voice_Del_B010": {
     "en": "Cancel",
@@ -977,7 +977,7 @@
   },
   "CEC_Get_110": {
     "en": "Could not save data\nreceived using StreetPass.",
-    "ua": "Зберегти дані з\nStreetPass не вдалося."
+    "ua": "Зберегти дані\nз StreetPass не вдалося."
   },
   "CEC_B_Get_110": {
     "en": "OK",
@@ -1049,7 +1049,7 @@
   },
   "CEC_Con_110": {
     "en": "Activate StreetPass for\nNintendo 3DS Sound?\n\nStreetPass settings will\nbe saved to the system.",
-    "ua": "Увімкнути StreetPass для\nNintendo 3DS Звуку?\n\nНалаштування StreetPass\nбуде збережено в системі."
+    "ua": "Увімкнути StreetPass\nдля Звуку Nintendo 3DS?\n\nНалаштування StreetPass\nзбережуться в системі."
   },
   "CEC_B_Con_110": {
     "en": "No",
@@ -1073,7 +1073,7 @@
   },
   "CEC_Con_200": {
     "en": "{t:1.0:5500}Cannot activate StreetPass for\nany more titles. To activate\nStreetPass for this title, go to\nStreetPass Management in the\nSystem Settings and deactivate\nit for another title.{t:1.0:6400}",
-    "ua": "{t:1.0:5200}Увімкнути StreetPass ще для\nодного титулу не вдасться. Щоб\nувімкнути його для цього титулу,\nвідкрийте Керування StreetPass\nу Налаштуваннях системи й\nвимкніть його для іншого титулу.{t:1.0:6400}"
+    "ua": "{t:1.0:5200}Увімкнути StreetPass ще\nдля одного титулу не вдасться.\nЩоб увімкнути його тут,\nвимкніть його для іншого\nтитулу в Керуванні StreetPass\nу Налаштуваннях системи.{t:1.0:6400}"
   },
   "CEC_B_Con_200": {
     "en": "OK",
@@ -1089,7 +1089,7 @@
   },
   "CEC_Con_230": {
     "en": "You must accept the terms\nof the latest Nintendo 3DS\nService User Agreement\nand Privacy Policy in\norder to use StreetPass.",
-    "ua": "Щоб користуватися\nStreetPass, потрібно\nприйняти умови останньої\nУгоди користувача та\nПолітики приватності\nNintendo 3DS."
+    "ua": "Щоб користуватися\nStreetPass, потрібно\nприйняти умови останньої\nУгоди користувача\nта Політики приватності\nNintendo 3DS."
   },
   "CEC_B_Con_230": {
     "en": "OK",
@@ -1105,7 +1105,7 @@
   },
   "CEC_Con_250": {
     "en": "Failed to activate\nStreetPass.\n\nPlease check StreetPass\nManagement in the\nSystem Settings.",
-    "ua": "Увімкнути StreetPass\nне вдалося.\n\nПеревірте Керування\nStreetPass у\nНалаштуваннях системи."
+    "ua": "Увімкнути StreetPass\nне вдалося.\n\nПеревірте розділ\nКерування StreetPass\nНалаштувань системи."
   },
   "CEC_B_Con_250": {
     "en": "OK",
@@ -1121,7 +1121,7 @@
   },
   "CEC_Con_270": {
     "en": "In order to use StreetPass\nwith Nintendo 3DS Sound,\nyou must add at least\none song to the\nStreetPass playlist.",
-    "ua": "Щоб користуватися\nStreetPass у Nintendo 3DS\nЗвуці, додайте до списку\nStreetPass хоча б\nодну пісню."
+    "ua": "Щоб користуватися\nStreetPass у програмі\nЗвук Nintendo 3DS,\nдодайте хоча б одну\nпісню до списку\nStreetPass."
   },
   "CEC_B_Con_270": {
     "en": "OK",
@@ -1129,7 +1129,7 @@
   },
   "CEC_Con_300": {
     "en": "Deactivate StreetPass\nfor Nintendo 3DS Sound?",
-    "ua": "Вимкнути StreetPass для\nNintendo 3DS Звуку?"
+    "ua": "Вимкнути StreetPass\nдля програми\nЗвук Nintendo 3DS?"
   },
   "CEC_B_Con_300": {
     "en": "No",
@@ -1165,7 +1165,7 @@
   },
   "CEC_Con_400": {
     "en": "Failed to deactivate\nStreetPass.\n\nPlease check StreetPass\nManagement in the\nSystem Settings.",
-    "ua": "Вимкнути StreetPass\nне вдалося.\n\nПеревірте Керування\nStreetPass у\nНалаштуваннях системи."
+    "ua": "Вимкнути StreetPass\nне вдалося.\n\nПеревірте розділ\nКерування StreetPass\nНалаштувань системи."
   },
   "CEC_B_Con_400": {
     "en": "OK",
@@ -1177,7 +1177,7 @@
   },
   "CEC_Com_000": {
     "en": "All compatibility data\nreceived to date\nwill be deleted.\n\nIs this OK?",
-    "ua": "Усі дані про спорідненість,\nотримані досі,\nбуде видалено.\n\nПродовжити?"
+    "ua": "Усі отримані досі\nдані про спорідненість\nбуде видалено.\n\nПродовжити?"
   },
   "CEC_B_Com_000": {
     "en": "No",
@@ -1213,7 +1213,7 @@
   },
   "CEC_Hit_100": {
     "en": "Deleted Hit Parade data.",
-    "ua": "Дані хіт-параду видалено."
+    "ua": "Дані хіт-параду\nвидалено."
   },
   "CEC_B_Hit_100": {
     "en": "OK",
@@ -1225,7 +1225,7 @@
   },
   "CEC_Cam_000": {
     "en": "Saved photo.\n\nYou can view this photo\nin Nintendo 3DS Camera.",
-    "ua": "Фото збережено.\n\nПодивитися його можна\nв Nintendo 3DS Камері."
+    "ua": "Фото збережено.\n\nПодивитися його можна\nв Камері Nintendo 3DS."
   },
   "CEC_B_Cam_000": {
     "en": "OK",
@@ -1273,7 +1273,7 @@
   },
   "CEC_Notice_100": {
     "en": "StreetPass has been\ndeactivated for this\nsoftware. To reactivate\nit, select StreetPass\nfrom the main menu,\nthen select On.",
-    "ua": "StreetPass для цієї\nпрограми вимкнено.\nЩоб увімкнути його\nзнову, виберіть StreetPass\nу головному меню,\nа тоді Увімк."
+    "ua": "StreetPass для цієї\nпрограми вимкнено.\nЩоб увімкнути знову,\nвиберіть StreetPass\nу головному меню,\nа тоді Увімк."
   },
   "CEC_B_Notice_100": {
     "en": "OK",
@@ -1289,7 +1289,7 @@
   },
   "CEC_Migration_010": {
     "en": "StreetPass for\nNintendo 3DS Sound\nwill now be updated.\n\n(Any StreetPass data\npresent will be saved.)",
-    "ua": "StreetPass для\nNintendo 3DS Звуку\nзараз буде оновлено.\n\n(Наявні дані StreetPass\nбуде збережено.)"
+    "ua": "StreetPass\nдля Звуку Nintendo 3DS\nзараз буде оновлено.\n\n(Наявні дані StreetPass\nбуде збережено.)"
   },
   "CEC_B_Migration_010": {
     "en": "OK",
@@ -1297,7 +1297,7 @@
   },
   "CEC_Migration_011": {
     "en": "StreetPass for\nNintendo 3DS Sound\nwill now be updated.",
-    "ua": "StreetPass для\nNintendo 3DS Звуку\nзараз буде оновлено."
+    "ua": "StreetPass\nдля Звуку Nintendo 3DS\nзараз буде оновлено."
   },
   "CEC_B_Migration_011": {
     "en": "OK",
@@ -1305,15 +1305,15 @@
   },
   "CEC_Migration_020": {
     "en": "Updating StreetPass for\nNintendo 3DS Sound...",
-    "ua": "Оновлення StreetPass для\nNintendo 3DS Звуку…"
+    "ua": "Оновлення StreetPass\nдля Звуку Nintendo 3DS…"
   },
   "CEC_Migration_021": {
     "en": "Updating StreetPass for\nNintendo 3DS Sound...",
-    "ua": "Оновлення StreetPass для\nNintendo 3DS Звуку…"
+    "ua": "Оновлення StreetPass\nдля Звуку Nintendo 3DS…"
   },
   "CEC_Migration_025": {
     "en": "Could not save data\nreceived using StreetPass.",
-    "ua": "Зберегти дані з\nStreetPass не вдалося."
+    "ua": "Зберегти дані\nз StreetPass не вдалося."
   },
   "CEC_B_Migration_025": {
     "en": "OK",
@@ -1333,7 +1333,7 @@
   },
   "CEC_Migration_040": {
     "en": "StreetPass for\nNintendo 3DS Sound\nhas been updated.",
-    "ua": "StreetPass для\nNintendo 3DS Звуку\nоновлено."
+    "ua": "StreetPass\nдля Звуку Nintendo 3DS\nоновлено."
   },
   "CEC_B_Migration_040": {
     "en": "OK",

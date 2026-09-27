@@ -93,15 +93,15 @@
   },
   "JumpToMiiMaker": {
     "en": "Close the software now\nand launch Mii Maker?",
-    "ua": "Закрити програму й\nзапустити Mii Maker?"
+    "ua": "Закрити програму\nй запустити Mii Maker?"
   },
   "JumpToMiiMakerSave": {
     "en": "Close the software now\nand launch Mii Maker?\n(Data will be saved.)",
-    "ua": "Закрити програму й\nзапустити Mii Maker?\n(Дані буде збережено.)"
+    "ua": "Закрити програму\nй запустити Mii Maker?\n(Дані буде збережено.)"
   },
   "JumpToMiiMakerNoSave": {
     "en": "Close the software now\nand launch Mii Maker?\n(Any unsaved data will be lost.)",
-    "ua": "Закрити програму й\nзапустити Mii Maker?\n(Незбережені дані\nбуде втрачено.)"
+    "ua": "Закрити програму\nй запустити Mii Maker?\n(Незбережені дані\nбуде втрачено.)"
   },
   "Cancel": {
     "en": " Cancel",

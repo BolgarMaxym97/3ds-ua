@@ -9,7 +9,7 @@
   },
   "RecMovie_01": {
     "en": "Recording has stopped.\nThe SD Card could not\nbe written to at the\nrequired speed.",
-    "ua": "Запис зупинено.\nНе вдалося писати на\nкарту SD із потрібною\nшвидкістю."
+    "ua": "Запис зупинено.\nНе вдалося писати\nна карту SD із потрібною\nшвидкістю."
   },
   "RecMovie_01_Btn0": {
     "en": "OK",
@@ -49,7 +49,7 @@
   },
   "ModeA_Pho_00": {
     "en": "Normal",
-    "ua": "{t:1.0:5b00}Звичайний{t:1.0:6400}"
+    "ua": "{t:1.0:5500}Звичайний{t:1.0:6400}"
   },
   "ModeA_Pho_01": {
     "en": "Merge ",
@@ -97,7 +97,7 @@
   },
   "ModeA_Mov_00": {
     "en": "Normal",
-    "ua": "{t:1.0:5b00}Звичайний{t:1.0:6400}"
+    "ua": "{t:1.0:5500}Звичайний{t:1.0:6400}"
   },
   "ModeA_Mov_01": {
     "en": "Low-Light",
@@ -265,11 +265,11 @@
   },
   "TimS_09_B": {
     "en": "{t:1.0:5a00}To take a photo, say{t:1.0:6400}\n{t:2.1:00005041}{t:0.3:ff3200ff}{t:0.2:9600}\"OK!\"{t:0.2:6400}{t:0.3:454039ff}",
-    "ua": "{t:1.0:5a00}Для знімка скажіть{t:1.0:6400}\n{t:2.1:00005041}{t:0.3:ff3200ff}{t:0.2:9600}\"OK!\"{t:0.2:6400}{t:0.3:454039ff}"
+    "ua": "{t:1.0:5a00}Для знімка скажіть{t:1.0:6400}\n{t:2.1:00005041}{t:0.3:ff3200ff}{t:0.2:9600}«OK!»{t:0.2:6400}{t:0.3:454039ff}"
   },
   "TimS_09_W": {
     "en": "{t:1.0:5a00}To take a photo, say{t:1.0:6400}\n{t:2.1:00005041}{t:0.2:9600}\"OK!\"{t:0.2:6400}",
-    "ua": "{t:1.0:5a00}Для знімка скажіть{t:1.0:6400}\n{t:2.1:00005041}{t:0.2:9600}\"OK!\"{t:0.2:6400}"
+    "ua": "{t:1.0:5a00}Для знімка скажіть{t:1.0:6400}\n{t:2.1:00005041}{t:0.2:9600}«OK!»{t:0.2:6400}"
   },
   "Sfx": {
     "en": "",
@@ -297,7 +297,7 @@
   },
   "Sfx_04": {
     "en": "Shoot new video",
-    "ua": "Зняти нове відео"
+    "ua": "Нове відео"
   },
   "Sfx_05": {
     "en": "Back",
@@ -305,7 +305,7 @@
   },
   "Sfx_Int_Title": {
     "en": "Interval Shot",
-    "ua": "Зйомка з інтервалом"
+    "ua": "Зйомка за часом"
   },
   "Sfx_Int_00": {
     "en": "Interval",
@@ -461,7 +461,7 @@
   },
   "Copy_SN_Pho_00": {
     "en": "Copy this photo from\nthe SD Card to the\nSystem Memory?",
-    "ua": "Скопіювати це фото\nз карти SD у\nпам'ять системи?"
+    "ua": "Скопіювати це фото\nз карти SD\nу пам'ять системи?"
   },
   "Copy_SN_Pho_00_Btn0": {
     "en": "Copy",
@@ -481,7 +481,7 @@
   },
   "Copy_SN_Pho_03": {
     "en": "This photo is not\ncompatible with\nNintendo DSi\nsoftware titles.",
-    "ua": "Це фото несумісне\nз програмами для\nNintendo DSi."
+    "ua": "Це фото несумісне\nз програмами\nдля Nintendo DSi."
   },
   "Copy_SN_Pho_03_Btn0": {
     "en": "OK",
@@ -801,7 +801,7 @@
   },
   "Data_NoSd_00": {
     "en": "Could not access SD Card.",
-    "ua": "Немає доступу до\nкарти SD."
+    "ua": "Немає доступу\nдо карти SD."
   },
   "Data_NoSd_00_Btn0": {
     "en": "OK",
@@ -825,7 +825,7 @@
   },
   "Data_ProhibitedSd_00": {
     "en": "{t:1.0:5a00}Write-protection is enabled\non the SD Card. Please turn\noff the power and move the\nwrite-protection switch on the\nSD Card to the off position.{t:1.0:6400}",
-    "ua": "{t:1.0:5a00}На карті SD увімкнено\nзахист від запису.\nВимкніть живлення й\nпереведіть перемикач\nзахисту на карті SD\nу положення «вимк.».{t:1.0:6400}"
+    "ua": "{t:1.0:5a00}На карті SD увімкнено\nзахист від запису.\nВимкніть живлення\nй переведіть перемикач\nзахисту на карті SD\nу положення «вимк.».{t:1.0:6400}"
   },
   "Data_ProhibitedSd_00_Btn0": {
     "en": "OK",
@@ -989,7 +989,7 @@
   },
   "Data_DeleteNand_00": {
     "en": "All photos saved to the\nSystem Memory will be\ndeleted. You will not be\nable to recover them.\nAre you sure you\nwant to proceed?",
-    "ua": "Усі фото, збережені в\nпам'яті системи, буде\nвидалено. Відновити їх\nне вдасться.\nСправді продовжити?"
+    "ua": "Усі фото, збережені\nв пам'яті системи, буде\nвидалено. Відновити їх\nне вдасться.\nСправді продовжити?"
   },
   "Data_DeleteNand_00_Btn0": {
     "en": "Cancel",
@@ -1001,7 +1001,7 @@
   },
   "Data_DeleteSd_00": {
     "en": "All photos and videos\nsaved to the SD Card,\nincluding those taken with\nother devices, will be\ndeleted. You will not be\nable to recover them.",
-    "ua": "Усі фото й відео на\nкарті SD, зокрема зняті\nіншими пристроями, буде\nвидалено. Відновити їх\nне вдасться."
+    "ua": "Усі фото й відео\nна карті SD, зокрема\nзняті іншими пристроями,\nбуде видалено. Відновити\nїх не вдасться."
   },
   "Data_DeleteSd_00_Btn0": {
     "en": "Cancel",
@@ -1413,7 +1413,7 @@
   },
   "RemovedSd_01": {
     "en": "The SD Card has been\nremoved. Move the\nwrite-protection switch\nto the off position. Please\nturn off the power before\nremoving SD Cards.",
-    "ua": "Карту SD вийнято.\nПереведіть перемикач\nзахисту в положення\n«вимк.». Перед тим як\nвиймати карту SD,\nвимикайте живлення."
+    "ua": "Карту SD вийнято.\nПереведіть перемикач\nзахисту в положення\n«вимк.». Перед тим\nяк виймати карту SD,\nвимикайте живлення."
   },
   "RemovedSd_01_Btn0": {
     "en": "OK",
@@ -1481,7 +1481,7 @@
   },
   "NotSd": {
     "en": "Could not access SD Card.",
-    "ua": "Немає доступу до\nкарти SD."
+    "ua": "Немає доступу\nдо карти SD."
   },
   "NotSd_Btn0": {
     "en": "OK",
@@ -1489,7 +1489,7 @@
   },
   "ProhibitedSd": {
     "en": "Cannot write to the\nSD Card. Please turn off\nthe power and move the\nwrite-protection switch on\nthe SD Card to the off\nposition.",
-    "ua": "Не вдається писати\nна карту SD. Вимкніть\nживлення й переведіть\nперемикач захисту на\nкарті SD у положення\n«вимк.»."
+    "ua": "Не вдається писати\nна карту SD. Вимкніть\nживлення й переведіть\nперемикач захисту\nна карті SD у положення\n«вимк.»."
   },
   "ProhibitedSd_Btn0": {
     "en": "OK",
@@ -1497,7 +1497,7 @@
   },
   "ReadOnlySd": {
     "en": "The management file\non the SD Card has\nbeen set as read-only.",
-    "ua": "Службовий файл на\nкарті SD доступний\nлише для читання."
+    "ua": "Службовий файл\nна карті SD доступний\nлише для читання."
   },
   "ReadOnlySd_Btn0": {
     "en": "OK",
@@ -1565,7 +1565,7 @@
   },
   "MakeImageDb_Failure": {
     "en": "There is not enough\nfree space on the\nSD Card to create\na management file.",
-    "ua": "На карті SD не\nвистачає місця, щоб\nстворити службовий\nфайл."
+    "ua": "На карті SD\nне вистачає місця, щоб\nстворити службовий\nфайл."
   },
   "MakeImageDb_Failure_Btn0": {
     "en": "OK",
@@ -1617,7 +1617,7 @@
   },
   "Paint_FullNand_Pho_01": {
     "en": "{t:1.0:5a00}Cannot save any more\ngraffiti as the System\nMemory's photo limit has\nbeen reached. Would you\nlike to change the photo save\nlocation to the SD Card?{t:1.0:6400}",
-    "ua": "{t:1.0:5a00}Зберегти малюнок не\nвдасться: у пам'яті системи\nдосягнуто ліміту фото.\nЗмінити місце збереження\nфото на карту SD?{t:1.0:6400}"
+    "ua": "{t:1.0:5a00}Не вдасться зберегти\nмалюнок: у пам'яті системи\nдосягнуто ліміту фото.\nЗмінити місце збереження\nфото на карту SD?{t:1.0:6400}"
   },
   "Paint_FullNand_Pho_01_Btn0": {
     "en": "No",
@@ -1677,7 +1677,7 @@
   },
   "Shoot_FullSd_Pho_01": {
     "en": "{t:1.0:5600}Cannot take any more photos\nor videos as the SD Card's\nphoto/video limit has been\nreached. Would you like to\nchange the photo save location\nto the System Memory?{t:1.0:6400}",
-    "ua": "{t:1.0:5600}Знімати далі не вдасться:\nна карті SD досягнуто ліміту\nфото й відео. Змінити місце\nзбереження фото на\nпам'ять системи?{t:1.0:6400}"
+    "ua": "{t:1.0:5600}Знімати далі не вдасться:\nна карті SD досягнуто ліміту\nфото й відео. Змінити місце\nзбереження фото\nна пам'ять системи?{t:1.0:6400}"
   },
   "Shoot_FullSd_Pho_01_Btn0": {
     "en": "No",
@@ -1697,7 +1697,7 @@
   },
   "Paint_FullSd_Pho_01": {
     "en": "{t:1.0:5a00}Cannot save any more graffiti\nas the SD Card's photo/video\nlimit has been reached.\nWould you like to change the\nphoto save location to\nthe System Memory?{t:1.0:6400}",
-    "ua": "{t:1.0:5a00}Зберегти малюнок не\nвдасться: на карті SD\nдосягнуто ліміту фото\nй відео. Змінити місце\nзбереження фото на\nпам'ять системи?{t:1.0:6400}"
+    "ua": "{t:1.0:5a00}Зберегти малюнок\nне вдасться: на карті SD\nдосягнуто ліміту фото\nй відео. Змінити місце\nзбереження фото\nна пам'ять системи?{t:1.0:6400}"
   },
   "Paint_FullSd_Pho_01_Btn0": {
     "en": "No",
@@ -1725,7 +1725,7 @@
   },
   "FullSd_Pho_00": {
     "en": "The SD Card's\nphoto/video limit has\nbeen reached. Cannot\nsave any more photos\nor videos.",
-    "ua": "На карті SD досягнуто\nліміту фото й відео.\nЗберігати фото чи\nвідео далі\nне вдасться."
+    "ua": "На карті SD досягнуто\nліміту фото й відео.\nЗберігати фото\nчи відео далі\nне вдасться."
   },
   "FullSd_Pho_00_Btn0": {
     "en": "OK",
@@ -1733,7 +1733,7 @@
   },
   "FullSd_Pho_01": {
     "en": "{t:1.0:5500}The SD Card's photo/video limit\nhas been reached. Cannot save\nany more photos or videos.\nWould you like to change\nthe photo save location to\nthe System Memory?{t:1.0:6400}",
-    "ua": "{t:1.0:5500}На карті SD досягнуто ліміту\nфото й відео. Зберігати далі\nне вдасться. Змінити місце\nзбереження фото на\nпам'ять системи?{t:1.0:6400}"
+    "ua": "{t:1.0:5500}На карті SD досягнуто ліміту\nфото й відео. Зберігати далі\nне вдасться. Змінити місце\nзбереження фото\nна пам'ять системи?{t:1.0:6400}"
   },
   "FullSd_Pho_01_Btn0": {
     "en": "No",
@@ -1769,7 +1769,7 @@
   },
   "Paint_NoSpaceSd": {
     "en": "The SD Card does\nnot have enough\nfree space. Graffiti\ncannot be saved.",
-    "ua": "На карті SD не\nвистачає вільного\nмісця. Малюнок\nзберегти не вдасться."
+    "ua": "На карті SD\nне вистачає вільного\nмісця. Малюнок\nзберегти не вдасться."
   },
   "Paint_NoSpaceSd_Btn0": {
     "en": "OK",
@@ -1777,7 +1777,7 @@
   },
   "Paint_NoSpaceSd_01": {
     "en": "{t:1.0:5a00}Cannot save any more graffiti\nas there is not enough free\nspace on the SD Card.\nWould you like to change\nthe photo save location to\nthe System Memory?{t:1.0:6400}",
-    "ua": "{t:1.0:5a00}Зберегти малюнок не\nвдасться: на карті SD не\nвистачає вільного місця.\nЗмінити місце збереження\nфото на пам'ять системи?{t:1.0:6400}"
+    "ua": "{t:1.0:5a00}Зберегти малюнок\nне вдасться: на карті SD\nне вистачає вільного місця.\nЗмінити місце збереження\nфото на пам'ять системи?{t:1.0:6400}"
   },
   "Paint_NoSpaceSd_01_Btn0": {
     "en": "No",
@@ -1789,7 +1789,7 @@
   },
   "Data_Copy_NoSpaceSd": {
     "en": "The SD Card does not\nhave enough free space.\nCannot copy photos.",
-    "ua": "На карті SD не\nвистачає вільного місця.\nКопіювати фото\nне вдасться."
+    "ua": "На карті SD бракує\nвільного місця.\nКопіювати фото\nне вдасться."
   },
   "Data_Copy_NoSpaceSd_Btn0": {
     "en": "OK",
@@ -1797,7 +1797,7 @@
   },
   "Copy_NS_NoSpaceSd": {
     "en": "The SD Card does not\nhave enough free space.\nCannot copy photo.",
-    "ua": "На карті SD не\nвистачає вільного місця.\nСкопіювати фото\nне вдасться."
+    "ua": "На карті SD бракує\nвільного місця.\nСкопіювати фото\nне вдасться."
   },
   "Copy_NS_NoSpaceSd_Btn0": {
     "en": "OK",
@@ -1837,7 +1837,7 @@
   },
   "FullFolder_01_02": {
     "en": "{t:1.0:5a00}Unable to save. The maximum\nnumber of folders for saving\nphotos on the SD Card has\nbeen reached. Would you like\nto set the System Memory as\nthe photo save location?{t:1.0:6400}",
-    "ua": "{t:1.0:5a00}Зберегти не вдасться. На\nкарті SD досягнуто межі\nкількості папок для фото.\nЗробити пам'ять системи\nмісцем збереження фото?{t:1.0:6400}"
+    "ua": "{t:1.0:5a00}Зберегти не вдасться.\nНа карті SD досягнуто межі\nкількості папок для фото.\nЗробити пам'ять системи\nмісцем збереження фото?{t:1.0:6400}"
   },
   "FullFolder_01_02_Btn0": {
     "en": "No",
@@ -1857,7 +1857,7 @@
   },
   "FullFolder_02_02": {
     "en": "{t:1.0:5a00}Unable to save graffiti. The\nmaximum number of folders\nfor saving photos on the\nSD Card has been reached.\nSet the System Memory as\nthe photo save location?{t:1.0:6400}",
-    "ua": "{t:1.0:5a00}Малюнок зберегти не\nвдасться. На карті SD\nдосягнуто межі кількості\nпапок для фото. Зробити\nпам'ять системи місцем\nзбереження фото?{t:1.0:6400}"
+    "ua": "{t:1.0:5a00}Малюнок зберегти\nне вдасться. На карті SD\nдосягнуто межі кількості\nпапок для фото. Зробити\nпам'ять системи місцем\nзбереження фото?{t:1.0:6400}"
   },
   "FullFolder_02_02_Btn0": {
     "en": "No",
@@ -1901,7 +1901,7 @@
   },
   "Boot_04": {
     "en": "Could not access SD Card.",
-    "ua": "Немає доступу до\nкарти SD."
+    "ua": "Немає доступу\nдо карти SD."
   },
   "Boot_04_Btn0": {
     "en": "OK",

@@ -25,7 +25,7 @@
   },
   "Dialog_JavaScriptTimeout_Button_Continue": {
     "en": " Continue",
-    "ua": " Продовжити"
+    "ua": " {t:1.0:6300}Продовжити{t:1.0:6400}"
   },
   "Dialog_JavaScriptTimeout_Button_Abort": {
     "en": " Cancel",
@@ -45,7 +45,7 @@
   },
   "ContextMenu_OpenImage": {
     "en": "Display in Image Viewer",
-    "ua": "Показати в переглядачі"
+    "ua": "Відкрити в переглядачі"
   },
   "ActionMenu_Bookmark": {
     "en": "Add to bookmarks",
@@ -105,7 +105,7 @@
   },
   "Keyboard_Paste": {
     "en": "Paste",
-    "ua": "Вставити"
+    "ua": "{t:1.0:5d00}Вставити{t:1.0:6400}"
   },
   "ActionMenu_AutoNewLineByEngine": {
     "en": "Text wrap",
@@ -185,7 +185,7 @@
   },
   "ImageViewer_Button_Save": {
     "en": "Save",
-    "ua": "Зберегти"
+    "ua": "{t:1.0:6100}Зберегти{t:1.0:6400}"
   },
   "ImageViewer_SaveImageInfo": {
     "en": "",
@@ -393,7 +393,7 @@
   },
   "Upload_Copyright": {
     "en": "Do not upload anything that\nmay violate the privacy or\nother rights of anyone. Do\nnot upload photos or videos\nof other people unless you\nhave their consent.",
-    "ua": "Не завантажуйте нічого, що\nможе порушити приватність\nчи інші права людей. Не\nзавантажуйте фото й відео\nінших людей без їхньої\nзгоди."
+    "ua": "Не завантажуйте нічого,\nщо може порушити\nприватність чи інші права\nлюдей. Не завантажуйте\nфото й відео інших людей\nбез їхньої згоди."
   },
   "Config_HeaderSearchEngine": {
     "en": "Choose the search engine used\nwhen searching from the menu\nor from selected text.\nRelated search terms are\ndisplayed for input text if\nYahoo! is selected.",
@@ -417,7 +417,7 @@
   },
   "SaveData_Initialize": {
     "en": "Preparing...\nPlease wait.",
-    "ua": "Підготовка...\nЗачекайте."
+    "ua": "Підготовка…\nЗачекайте."
   },
   "Upload_ParentalControl": {
     "en": "This function cannot be used.\n\nSharing of images, audio and\nvideo is currently restricted\nby Parental Controls.",
@@ -469,7 +469,7 @@
   },
   "Config_Initializing": {
     "en": "Clearing all internet browser\ndata...",
-    "ua": "Стирання даних\nінтернет-браузера..."
+    "ua": "Стирання даних\nінтернет-браузера…"
   },
   "Config_Initialized": {
     "en": "All data has been cleared.\nThe internet browser will\nnow close.",
@@ -517,7 +517,7 @@
   },
   "Keyboard_Omnibox_OpenUrl": {
     "en": "Open",
-    "ua": "Відкрити"
+    "ua": "{t:1.0:5e00}Відкрити{t:1.0:6400}"
   },
   "Keyboard_Omnibox_Search": {
     "en": "Search",
@@ -529,7 +529,7 @@
   },
   "ImageViewer_Dialog_Saving": {
     "en": "Saving to microSD card...",
-    "ua": "Збереження на карту microSD..."
+    "ua": "Збереження на карту microSD…"
   },
   "ImageViewer_Dialog_Save_Confirm": {
     "en": "Saved to microSD card.",
@@ -553,7 +553,7 @@
   },
   "ErrorMessage_ImageViewer_Dialog_Save_NotSupportedError": {
     "en": "Could not access microSD card.",
-    "ua": "Немає доступу до карти\nmicroSD."
+    "ua": "Немає доступу\nдо карти microSD."
   },
   "ErrorMessage_ImageViewer_Dialog_Save_MaxError": {
     "en": "Unable to save this image\nbecause the microSD card's\nphoto limit has been reached.",
@@ -589,7 +589,7 @@
   },
   "Browser_FileSelectButton": {
     "en": "Browse...",
-    "ua": "Огляд..."
+    "ua": "Огляд…"
   },
   "MoviePlayer_3dSetting": {
     "en": "3D Display",
@@ -605,7 +605,7 @@
   },
   "BookmarkMenu_Toolbar_CantAdd": {
     "en": "Page cannot be bookmarked.",
-    "ua": "Не можна додати в закладки."
+    "ua": "Закладку додати не можна."
   },
   "Dialog_Bookmark_Max": {
     "en": "There is no room to \nbookmark any more pages.\nPlease delete existing bookmarks\nto make room for new ones.",
@@ -685,7 +685,7 @@
   },
   "ErrorMessage_Brs_ProxyConnection": {
     "en": "Connection to proxy server\nfailed.\n\nPlease check that your proxy\nsettings are correct.",
-    "ua": "Не вдалося з'єднатися з\nпроксі-сервером.\n\nПеревірте, чи правильні\nналаштування проксі."
+    "ua": "Не вдалося з'єднатися\nз проксі-сервером.\n\nПеревірте, чи правильні\nналаштування проксі."
   },
   "ErrorMessage_Brs_Ssl_CertChainTooLong": {
     "en": "The certificate chain is\ntoo long.",
@@ -745,7 +745,7 @@
   },
   "Help_ImageViewer": {
     "en": "You can save this image\nto the microSD card.",
-    "ua": "Це зображення можна\nзберегти на карту\nmicroSD."
+    "ua": "Це зображення можна\nзберегти\nна карту microSD."
   },
   "Help_OmniBox": {
     "en": "Touch here to enter a URL\nor search term.",
@@ -761,7 +761,7 @@
   },
   "Help_MobileRequest": {
     "en": "Display a version of the\npage which is adapted\nfor smartphones.\n\nThe version will not change\nif the page does not have\na mobile version.",
-    "ua": "Показати версію сторінки,\nпристосовану для\nсмартфонів.\n\nЯкщо мобільної версії\nнемає, сторінка не зміниться."
+    "ua": "Показати версію сторінки,\nпристосовану\nдля смартфонів.\n\nЯкщо мобільної версії\nнемає, сторінка не зміниться."
   },
   "Help_TabChange": {
     "en": "Show all open tabs and\nswitch between them\nwith the ZL and ZR\nbuttons.",
@@ -769,7 +769,7 @@
   },
   "Help_XY": {
     "en": "You can change the zoom\nlevel with  or , or use\nthe C Stick.",
-    "ua": "Масштаб можна змінювати\n чи  або C-стиком."
+    "ua": "Масштаб можна змінити\n чи  або C-стиком."
   },
   "Keyboard_Button_Space": {
     "en": "",
@@ -801,7 +801,7 @@
   },
   "Dialog_DropDownList_OneItem": {
     "en": "Only \"%s\"\ncan be selected.",
-    "ua": "Можна вибрати лише\n\"%s\"."
+    "ua": "Можна вибрати лише\n«%s»."
   },
   "Dialog_DropDownList_A_OK": {
     "en": "",
@@ -881,7 +881,7 @@
   },
   "Ticker_MobileRequest_Requesting": {
     "en": "Requesting mobile version...",
-    "ua": "Запит мобільної версії..."
+    "ua": "Запит мобільної версії…"
   },
   "Ticker_MobileRequest_Disabled": {
     "en": "Mobile version requests disabled.",
@@ -897,7 +897,7 @@
   },
   "Transcoder_Message": {
     "en": "Converting video to an\nuploadable format...",
-    "ua": "Перетворення відео у формат\nдля завантаження..."
+    "ua": "Перетворення відео у формат\nдля завантаження…"
   },
   "Transcoder_TimeString": {
     "en": "%M:%0S remaining",
@@ -909,7 +909,7 @@
   },
   "SaveData_Broken": {
     "en": "The save data is corrupted.\n\nClearing save data...",
-    "ua": "Збережені дані пошкоджено.\n\nСтирання даних..."
+    "ua": "Збережені дані пошкоджено.\n\nСтирання даних…"
   },
   "MoviePlayer_CcNone": {
     "en": "None",
@@ -933,7 +933,7 @@
   },
   "Transcoder_Dialog_Success": {
     "en": "Ready to upload video.",
-    "ua": "Відео готове до завантаження."
+    "ua": "Відео готове\nдо завантаження."
   },
   "Transcoder_Dialog_Cancel": {
     "en": "Format conversion cancelled.",
@@ -1049,11 +1049,11 @@
   },
   "SearchEngineSelect_Suggest_On": {
     "en": "On",
-    "ua": "Увімк."
+    "ua": "Так"
   },
   "SearchEngineSelect_Suggest_Off": {
     "en": "Off",
-    "ua": "Вимк."
+    "ua": "Ні"
   },
   "FirstStartup_RegisterARID": {
     "en": "",
@@ -1085,7 +1085,7 @@
   },
   "WebInspector_ExplanationDialog_Msg": {
     "en": "This is a special feature\ndesigned for use by website\ndevelopers. If this feature is\nenabled, the page you are\nbrowsing may be viewed by\nthird parties. This feature will\nbe disabled when the internet\nbrowser is closed.\nNintendo offers no guarantee\nor support for what might\nhappen after this feature is\nenabled.",
-    "ua": "Це особлива функція для\nрозробників сайтів. Коли її\nввімкнено, сторінку, яку ви\nпереглядаєте, можуть\nбачити сторонні. Функція\nвимкнеться, коли закрити\nінтернет-браузер. Nintendo\nне дає гарантій і не надає\nпідтримки щодо наслідків."
+    "ua": "Це особлива функція\nдля розробників сайтів.\nКоли її ввімкнено,\nсторінку, яку ви\nпереглядаєте, можуть\nбачити сторонні. Функція\nвимкнеться, коли закрити\nінтернет-браузер. Nintendo\nне дає гарантій і не надає\nпідтримки щодо наслідків."
   },
   "WebInspector_ConfirmationDialog_Msg": {
     "en": "Are you sure you want to\nenable developer tools?",
@@ -1093,7 +1093,7 @@
   },
   "WebInspector_ConfirmationDialog_Yes": {
     "en": " Enable",
-    "ua": " Увімкнути"
+    "ua": " {t:1.0:6300}Увімкнути{t:1.0:6400}"
   },
   "WebInspector_ConfirmationDialog_No": {
     "en": " Cancel",
@@ -1105,7 +1105,7 @@
   },
   "WebInspector_ValidationDialog_Failed_Msg": {
     "en": "Unable to enable developer tools\nwhile offline. Please connect to\nthe internet and try again.",
-    "ua": "Не вдається ввімкнути\nінструменти розробника без\nінтернету. З'єднайтеся\nз мережею і спробуйте ще раз."
+    "ua": "Не вдається ввімкнути\nінструменти розробника\nбез інтернету. З'єднайтеся\nз мережею і спробуйте ще раз."
   },
   "WebInspector_ManualDialog_Title": {
     "en": "Steps for Developer Tools",

@@ -17,7 +17,7 @@
   },
   "bottom_3btn_etc": {
     "en": "I Forgot",
-    "ua": "Не пам'ятаю"
+    "ua": "Забули?"
   },
   "bottom_3btn_decide": {
     "en": "OK",
@@ -477,7 +477,7 @@
   },
   "dlg_parental_err": {
     "en": "To change your Parental\nControls settings, please go\nto Parental Controls in the\nSystem Settings and answer\nthe secret question.",
-    "ua": "Щоб змінити батьківський\nконтроль, перейдіть до\nБатьківський контроль\nу системних налаштуваннях\nі дайте відповідь на секретне\nпитання."
+    "ua": "Щоб змінити батьківський\nконтроль, перейдіть\nдо Батьківський контроль\nу системних налаштуваннях\nі дайте відповідь на секретне\nпитання."
   },
   "dlg_parental_err_mset": {
     "en": "",

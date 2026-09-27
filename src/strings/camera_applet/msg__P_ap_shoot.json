@@ -57,7 +57,7 @@
   },
   "S_D_03_E": {
     "en": "Nintendo 3DS Camera",
-    "ua": "Nintendo 3DS Камера"
+    "ua": "Камера Nintendo 3DS"
   },
   "S_D_04": {
     "en": "{t:2.1:000040c0}{t:0.2:8c00} /  / {t:0.2:6400}{t:2.1:000040c0}{t:2.0:0200}: Take photo",
@@ -133,7 +133,7 @@
   },
   "NotSd": {
     "en": "Could not access\nSD Card.",
-    "ua": "Немає доступу до\nкарти SD."
+    "ua": "Немає доступу\nдо карти SD."
   },
   "NotSd_Btn0": {
     "en": " OK",
@@ -141,7 +141,7 @@
   },
   "ProhibitedSd": {
     "en": "Cannot write to the SD Card.\nPlease turn off the power and\nmove the write-protection\nswitch on the SD Card to\nthe off position.",
-    "ua": "Не вдається писати\nна карту SD. Вимкніть\nживлення й переведіть\nперемикач захисту на\nкарті SD у положення\n«вимк.»."
+    "ua": "Не вдається писати\nна карту SD. Вимкніть\nживлення й переведіть\nперемикач захисту\nна карті SD у положення\n«вимк.»."
   },
   "ProhibitedSd_Btn0": {
     "en": " OK",
@@ -201,7 +201,7 @@
   },
   "MakeImageDb_Failure": {
     "en": "There is not enough\nfree space on the\nSD Card to create\na management file.",
-    "ua": "На карті SD не\nвистачає місця, щоб\nстворити службовий\nфайл."
+    "ua": "На карті SD\nне вистачає місця, щоб\nстворити службовий\nфайл."
   },
   "MakeImageDb_Failure_Btn0": {
     "en": " OK",
@@ -377,7 +377,7 @@
   },
   "App_Jump_00": {
     "en": "Close the suspended\nsoftware and launch\nNintendo 3DS Camera?\n{t:0.3:3c3c3cff}{t:0.2:5500}(Data will be saved.){t:0.2:6400}{t:0.3:141414ff}",
-    "ua": "Закрити призупинену\nпрограму й запустити\nNintendo 3DS Камеру?\n{t:0.3:3c3c3cff}{t:0.2:5500}(Дані буде збережено.){t:0.2:6400}{t:0.3:141414ff}"
+    "ua": "Закрити призупинену\nпрограму й запустити\nКамеру Nintendo 3DS?\n{t:0.3:3c3c3cff}{t:0.2:5500}(Дані буде збережено.){t:0.2:6400}{t:0.3:141414ff}"
   },
   "App_Jump_00_Btn0": {
     "en": " Cancel",
@@ -389,7 +389,7 @@
   },
   "App_Jump_01": {
     "en": "Close the suspended\nsoftware and launch\nNintendo 3DS Camera?\n{t:0.3:3c3c3cff}{t:0.2:5500}(Any unsaved data will be lost.){t:0.2:6400}{t:0.3:141414ff}",
-    "ua": "Закрити призупинену\nпрограму й запустити\nNintendo 3DS Камеру?\n{t:0.3:3c3c3cff}{t:0.2:5500}(Незбережені дані\nбуде втрачено.){t:0.2:6400}{t:0.3:141414ff}"
+    "ua": "Закрити призупинену\nпрограму й запустити\nКамеру Nintendo 3DS?\n{t:0.3:3c3c3cff}{t:0.2:5500}(Незбережені дані\nбуде втрачено.){t:0.2:6400}{t:0.3:141414ff}"
   },
   "App_Jump_01_Btn0": {
     "en": " Cancel",
@@ -401,7 +401,7 @@
   },
   "App_Jump_02": {
     "en": "Close the suspended\nsoftware and launch\nNintendo 3DS Camera?",
-    "ua": "Закрити призупинену\nпрограму й запустити\nNintendo 3DS Камеру?"
+    "ua": "Закрити призупинену\nпрограму й запустити\nКамеру Nintendo 3DS?"
   },
   "App_Jump_02_Btn0": {
     "en": " Cancel",
@@ -505,7 +505,7 @@
   },
   "BrokenCamera_01": {
     "en": "If the problem persists,\nplease contact your local\ncustomer support centre.\nFor contact details, check\nthe Operations Manual or\nvisit support.nintendo.com.",
-    "ua": "Якщо проблема не зникає,\nзверніться до місцевої\nслужби підтримки. Контакти\nшукайте в посібнику\nз користування або на\nsupport.nintendo.com."
+    "ua": "Якщо проблема не зникає,\nзверніться до місцевої\nслужби підтримки. Контакти\nшукайте в посібнику\nз користування або\nна support.nintendo.com."
   },
   "BrokenCamera_01_Btn0": {
     "en": " OK",
@@ -545,7 +545,7 @@
   },
   "QR_Result_Shop_00": {
     "en": "Found a QR Code for\nNintendo eShop.",
-    "ua": "Знайдено QR-код для\nNintendo eShop."
+    "ua": "Знайдено QR-код\nдля Nintendo eShop."
   },
   "QR_Result_Shop_00_Btn0": {
     "en": " OK",

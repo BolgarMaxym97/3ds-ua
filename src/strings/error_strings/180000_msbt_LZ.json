@@ -5,7 +5,7 @@
   },
   "180203": {
     "en": "A communication error has occurred.\n\nThere may be problems with the\nnetwork or the environment.\nTo ensure an optimal connection\nenvironment, move closer to the\naccess point and make sure that\nthere are no obstructions between\nthe system and the access point.\nPlease try again later.\n\nThe DNS setting may have been \nentered incorrectly. Check the\nsetting in System Settings ⇒\nInternet Settings.",
-    "ua": "Сталася помилка зв'язку.\n\nМожливо, проблема в мережі\nабо в умовах довкола.\nЩоб з'єднання було найкращим,\nпідійдіть ближче до точки\nдоступу й переконайтеся, що\nміж консоллю й точкою доступу\nнемає перешкод.\nЯкщо не помогло, спробуйте\nпізніше.\n\n■ Можливо, DNS введено\nнеправильно. Перевірте\nв Налаштуваннях системи ⇒\nІнтернет-налаштування."
+    "ua": "Сталася помилка зв'язку.\n\nМожливо, проблема в мережі\nабо в умовах довкола.\nЩоб з'єднання було найкращим,\nпідійдіть ближче до точки\nдоступу й переконайтеся,\nщо між консоллю й точкою доступу\nнемає перешкод.\nЯкщо не помогло, спробуйте\nпізніше.\n\n■ Можливо, DNS введено\nнеправильно. Перевірте\nв Налаштуваннях системи ⇒\nІнтернет-налаштування."
   },
   "180311": {
     "en": "Unable to connect because the software\nversion is out of date.\n\nA software update is required.",
@@ -49,7 +49,7 @@
   },
   "180547": {
     "en": "A communication error has occurred.\n\nThere may be problems with the \nnetwork or the environment.\nTo ensure an optimal connection \nenvironment, move closer to the \naccess point and make sure that there\nare no obstructions between the\nsystem and the access point.\nIf this does not work, please try \nagain later.",
-    "ua": "Сталася помилка зв'язку.\n\nМожливо, проблема в мережі\nабо в умовах довкола.\nЩоб з'єднання було найкращим,\nпідійдіть ближче до точки\nдоступу й переконайтеся, що\nміж консоллю й точкою доступу\nнемає перешкод.\nЯкщо не помогло, спробуйте\nпізніше."
+    "ua": "Сталася помилка зв'язку.\n\nМожливо, проблема в мережі\nабо в умовах довкола.\nЩоб з'єднання було найкращим,\nпідійдіть ближче до точки\nдоступу й переконайтеся,\nщо між консоллю й точкою доступу\nнемає перешкод.\nЯкщо не помогло, спробуйте\nпізніше."
   },
   "180561": {
     "en": "The server is currently\nundergoing maintenance.\n\nWe apologise for any inconvenience.\nPlease try again later.\nSee the Nintendo website\nfor maintenance information.",

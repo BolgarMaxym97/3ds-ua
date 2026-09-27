@@ -33,11 +33,11 @@
   },
   "lau_dlg_pare0": {
     "en": "Would you like to launch this\nsoftware in 2D?\n{t:1.0:5500}{t:0.3:3c3c3cff}You must enter your PIN to\nlaunch it in 3D.{t:0.3:000000ff}{/t:1.0}",
-    "ua": "Запустити програму в\nрежимі 2D?\n{t:1.0:5500}{t:0.3:3c3c3cff}Щоб запустити програму\nв режимі 3D, потрібно\nввести PIN-код.{t:0.3:000000ff}{/t:1.0}"
+    "ua": "Запустити програму\nв режимі 2D?\n{t:1.0:5500}{t:0.3:3c3c3cff}Щоб запустити програму\nв режимі 3D, потрібно\nввести PIN-код.{t:0.3:000000ff}{/t:1.0}"
   },
   "lau_dlg_pare1": {
     "en": "This software is restricted by\nthe Parental Controls Software\nRating settings.{t:1.0:1400}\n                    {/t:1.0}\nWould you like to temporarily\nremove this restriction?",
-    "ua": "Цю програму обмежено\nбатьківським контролем за\nвіковим рейтингом.{t:1.0:1400}\n                    {/t:1.0}\nЗняти обмеження тимчасово?"
+    "ua": "Цю програму обмежено\nбатьківським контролем\nза віковим рейтингом.{t:1.0:1400}\n                    {/t:1.0}\nЗняти обмеження тимчасово?"
   },
   "lau_dlg_pare4": {
     "en": "Failed to enter\nthe correct PIN.{t:1.0:1400}\n                    {/t:1.0}\nLaunching in 2D\ndisplay mode.",
@@ -45,7 +45,7 @@
   },
   "lau_dlg_pare5": {
     "en": "Would you like to launch this\nsoftware in 2D?\n{t:1.0:5500}{t:0.3:3c3c3cff}You must enter your PIN again\nto launch it in 3D.{t:0.3:000000ff}{/t:1.0}",
-    "ua": "Запустити програму в\nрежимі 2D?\n{t:1.0:5500}{t:0.3:3c3c3cff}Щоб запустити програму\nв режимі 3D, потрібно\nввести PIN-код ще раз.{t:0.3:000000ff}{/t:1.0}"
+    "ua": "Запустити програму\nв режимі 2D?\n{t:1.0:5500}{t:0.3:3c3c3cff}Щоб запустити програму\nв режимі 3D, потрібно\nввести PIN-код ще раз.{t:0.3:000000ff}{/t:1.0}"
   },
   "lau_dlg_2b_pare0": {
     "en": " Remove",
@@ -69,7 +69,7 @@
   },
   "lau_dlg_ng_sd1": {
     "en": "Could not access SD Card.",
-    "ua": "Не вдалося отримати доступ\nдо карти SD."
+    "ua": "Не вдалося отримати\nдоступ до карти SD."
   },
   "lau_dlg_cardupd0": {
     "en": "",
@@ -105,7 +105,7 @@
   },
   "new_title_new": {
     "en": "Notifications",
-    "ua": "Повідомлення"
+    "ua": "Сповіщення"
   },
   "new_title_menu": {
     "en": "HOME Menu",
@@ -121,7 +121,7 @@
   },
   "new_news_u1": {
     "en": "SpotPass\nNotifications",
-    "ua": "Повідомлення\nSpotPass"
+    "ua": "Сповіщення\nSpotPass"
   },
   "new_ce_u0": {
     "en": "Unread: %d",
@@ -129,7 +129,7 @@
   },
   "new_ce_u1": {
     "en": "StreetPass\nNotifications",
-    "ua": "Повідомлення\nStreetPass"
+    "ua": "Сповіщення\nStreetPass"
   },
   "new_back": {
     "en": " Close",
@@ -169,7 +169,7 @@
   },
   "new_optout_one": {
     "en": "Opt out of notifications for\nthis software",
-    "ua": "Не отримувати\nповідомлення цієї програми"
+    "ua": "Не отримувати\nсповіщення цієї програми"
   },
   "new_optout_all": {
     "en": "",
@@ -177,7 +177,7 @@
   },
   "new_dlg_opto_one": {
     "en": "You have opted not to receive\nany notifications for this\nsoftware. {t:1.0:5500}{t:0.3:3c3c3cff}(To opt back in,\nchange the settings within the\nsoftware.){t:0.3:000000ff}{/t:1.0}\nIs this OK?",
-    "ua": "Ви відмовилися отримувати\nповідомлення від цієї\nпрограми. {t:1.0:5500}{t:0.3:3c3c3cff}(Щоб отримувати їх\nзнову, змініть параметри\nв самій програмі.){t:0.3:000000ff}{/t:1.0}\nПродовжити?"
+    "ua": "Ви відмовилися отримувати\nсповіщення від цієї\nпрограми. {t:1.0:5500}{t:0.3:3c3c3cff}(Щоб отримувати їх\nзнову, змініть параметри\nв самій програмі.){t:0.3:000000ff}{/t:1.0}\nПродовжити?"
   },
   "new_dlg_optoall0": {
     "en": "",

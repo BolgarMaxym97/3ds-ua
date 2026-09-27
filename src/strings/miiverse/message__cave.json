@@ -5,7 +5,7 @@
   },
   "lau_title_manu": {
     "en": "Instruction Manual",
-    "ua": "Посібник"
+    "ua": "Електронний посібник"
   },
   "lau_title_olive": {
     "en": "Miiverse",
@@ -121,11 +121,11 @@
   },
   "lau_dlg_pare0_for_eshop": {
     "en": "Would you like to launch\nNintendo eShop in 2D?\n{t:1.1:5500}{t:0.3:3c3c3cff}You must enter your PIN to\nlaunch it in 3D.{t:0.3:000000ff}{/t:1.1}",
-    "ua": "Запустити Nintendo eShop\nв режимі 2D?\n{t:1.1:5500}{t:0.3:3c3c3cff}Щоб запустити його\nв режимі 3D, потрібно\nввести PIN-код.{t:0.3:000000ff}{/t:1.1}"
+    "ua": "Відкрити Nintendo eShop\nв режимі 2D?\n{t:1.1:5500}{t:0.3:3c3c3cff}Щоб відкрити його\nв режимі 3D, потрібно\nввести PIN-код.{t:0.3:000000ff}{/t:1.1}"
   },
   "lau_dlg_pare0_for_account": {
     "en": "Would you like to launch the\nNintendo Network ID Settings\nin 2D?\n{t:1.1:5500}{t:0.3:3c3c3cff}You must enter your PIN to\nlaunch it in 3D.{t:0.3:000000ff}{/t:1.1}",
-    "ua": "Відкрити розділ Nintendo\nNetwork ID у режимі 2D?\n{t:1.1:5500}{t:0.3:3c3c3cff}Щоб відкрити його\nв режимі 3D, потрібно\nввести PIN-код.{t:0.3:000000ff}{/t:1.1}"
+    "ua": "Відкрити Nintendo Network ID\nу режимі 2D?\n{t:1.1:5500}{t:0.3:3c3c3cff}Щоб відкрити його\nв режимі 3D, потрібно\nввести PIN-код.{t:0.3:000000ff}{/t:1.1}"
   },
   "lau_dlg_pare5": {
     "en": "Would you like to launch this\nsoftware in 2D?\n{t:1.1:5500}{t:0.3:3c3c3cff}You must enter your PIN again\nto launch it in 3D.{t:0.3:000000ff}{/t:1.1}",
@@ -141,7 +141,7 @@
   },
   "lau_dlg_pare5_for_account": {
     "en": "Would you like to launch the\nNintendo Network ID Settings\nin 2D?\n{t:1.1:5500}{t:0.3:3c3c3cff}You must enter your PIN again\nto launch it in 3D.{t:0.3:000000ff}{/t:1.1}",
-    "ua": "Відкрити розділ Nintendo\nNetwork ID у режимі 2D?\n{t:1.1:5500}{t:0.3:3c3c3cff}Щоб відкрити його\nв режимі 3D, потрібно\nввести PIN-код ще раз.{t:0.3:000000ff}{/t:1.1}"
+    "ua": "Відкрити Nintendo Network ID\nу режимі 2D?\n{t:1.1:5500}{t:0.3:3c3c3cff}Щоб відкрити його\nв режимі 3D, потрібно\nввести PIN-код ще раз.{t:0.3:000000ff}{/t:1.1}"
   },
   "lau_dlg_pare1": {
     "en": "This software is restricted by\nthe Parental Controls Software\nRating settings.{t:1.1:1400}\n                    {/t:1.1}\nWould you like to temporarily\nremove this restriction?",
@@ -153,7 +153,7 @@
   },
   "lau_dlg_pare1_for_account": {
     "en": "The Nintendo Network ID\nSettings are restricted by the\nParental Controls Software\nRating settings.{t:1.1:1400}\n                    {/t:1.1}\nWould you like to temporarily\nremove this restriction?",
-    "ua": "Доступ до розділу Nintendo\nNetwork ID обмежено\nбатьківським контролем.{t:1.1:1400}\n                    {/t:1.1}\nТимчасово зняти це\nобмеження?"
+    "ua": "Доступ до розділу\nNintendo Network ID обмежено\nбатьківським контролем.{t:1.1:1400}\n                    {/t:1.1}\nТимчасово зняти це\nобмеження?"
   },
   "lau_dlg_pare1_for_eshop": {
     "en": "Nintendo eShop is restricted by\nthe Parental Controls Software\nRating settings.{t:1.1:1400}\n                    {/t:1.1}\nWould you like to temporarily\nremove this restriction?",
@@ -273,7 +273,7 @@
   },
   "Dialog_ImageDownloading": {
     "en": "Please wait...",
-    "ua": "Зачекайте..."
+    "ua": "Зачекайте…"
   },
   "Dialog_ImageDownloadingImpossible": {
     "en": "Cannot load this image.",
@@ -285,7 +285,7 @@
   },
   "ErrorMsg_Brs_ProxyError": {
     "en": "Connection to proxy server failed.\n\nPlease check that your proxy\nsettings are correct.",
-    "ua": "Не вдалося з'єднатися з\nпроксі-сервером.\n\nПеревірте, чи правильні\nналаштування проксі."
+    "ua": "Не вдалося з'єднатися\nз проксі-сервером.\n\nПеревірте, чи правильні\nналаштування проксі."
   },
   "Keyboard_Button_Search": {
     "en": "Search",
@@ -333,7 +333,7 @@
   },
   "Browser_FileSelectButton": {
     "en": "Browse...",
-    "ua": "Огляд..."
+    "ua": "Огляд…"
   },
   "Browser_NonFileSelect": {
     "en": "No file selected",
@@ -373,7 +373,7 @@
   },
   "PageInfo_SecurityIncludedInvalid": {
     "en": "There is a problem with the\nsecurity certificate for some\ncontent on this page.",
-    "ua": "Із сертифікатом безпеки\nдля\nчастини вмісту цієї\nсторінки\nщось не так."
+    "ua": "Із сертифікатом безпеки\nдля частини вмісту цієї\nсторінки щось не так."
   },
   "PageInfo_CertificateOwner": {
     "en": "Certificate Subject",
@@ -385,7 +385,7 @@
   },
   "PageInfo_CertificateIssuer": {
     "en": "Certificate Issuer",
-    "ua": "Видавець сертифіката"
+    "ua": "{t:1.0:6100}Видавець сертифіката{t:1.0:6400}"
   },
   "PageInfo_ExpireDateStart": {
     "en": "Issue Date",
@@ -401,7 +401,7 @@
   },
   "SaveImage_Info": {
     "en": "Images saved to the\nSD Card can be viewed\nusing Nintendo 3DS Camera.",
-    "ua": "Збережені на карту SD\nзображення можна дивитися\nв Nintendo 3DS Камері."
+    "ua": "Збережені на карту SD\nзображення можна дивитися\nв Камері Nintendo 3DS."
   },
   "SaveImage_Lower": {
     "en": "",
@@ -413,7 +413,7 @@
   },
   "SaveImage_Save": {
     "en": "Saving to the SD Card...",
-    "ua": "Збереження на карту SD..."
+    "ua": "Збереження на карту SD…"
   },
   "SaveImage_Confirm": {
     "en": "Saved to the SD Card.",
@@ -485,7 +485,7 @@
   },
   "Favorite_EmptyMessage": {
     "en": "To bookmark a page, select\nAdd from the menu.",
-    "ua": "Щоб додати сторінку в\nзакладки,\nвиберіть «Додати» в меню."
+    "ua": "Щоб додати сторінку\nв закладки,\nвиберіть «Додати» в меню."
   },
   "FavoriteMode_DeleteTitle": {
     "en": "Delete Bookmark",
@@ -521,7 +521,7 @@
   },
   "StartUp_TutorialManual": {
     "en": "For detailed information on\nhow to use this application,\nselect Manual from the menu.",
-    "ua": "Докладніше про те, як\nкористуватися програмою, —\nу «Посібнику» в меню."
+    "ua": "Докладніше про те,\nяк користуватися програмою, —\nу «Посібнику» в меню."
   },
   "StartUp_Finish": {
     "en": "You're ready to get started.\nEnjoy using the browser!",
@@ -549,7 +549,7 @@
   },
   "StartUp_TermsOfUseError": {
     "en": "To use this software, you must\nagree to the Nintendo 3DS\nService User Agreement\nand Privacy Policy.\n\nMiiverse will now close.",
-    "ua": "Щоб користуватися цією\nпрограмою, потрібно\nприйняти угоду про\nкористування сервісами\nNintendo 3DS і політику\nконфіденційності.\nMiiverse зараз закриється."
+    "ua": "Щоб користуватися цією\nпрограмою, потрібно\nприйняти угоду\nпро користування сервісами\nNintendo 3DS і політику\nконфіденційності.\nMiiverse зараз закриється."
   },
   "Button_SaveImage": {
     "en": "Save Image",
@@ -605,7 +605,7 @@
   },
   "Search_InfoSetSearchEngine": {
     "en": "Search engine set to %ls.",
-    "ua": "Пошукову систему змінено на\n%ls."
+    "ua": "Пошукову систему змінено\nна %ls."
   },
   "Option_Title": {
     "en": "Settings",
@@ -745,7 +745,7 @@
   },
   "Option_Initializing": {
     "en": "Clearing all data...\n\nPlease wait.",
-    "ua": "Стирання всіх даних...\n\nЗачекайте."
+    "ua": "Стирання всіх даних…\n\nЗачекайте."
   },
   "Option_Initialized": {
     "en": "All save data has been cleared.\n\n{t:1.0:6100}Miiverse will now close.{/t:1.0}",
@@ -893,7 +893,7 @@
   },
   "ErrorMsg_Brs_File": {
     "en": "File read/write failed.",
-    "ua": "Не вдалося прочитати чи\nзаписати файл."
+    "ua": "Не вдалося прочитати\nчи записати файл."
   },
   "ErrorMsg_Brs_UI_Reject_Content_Click": {
     "en": "This file cannot be loaded.",
@@ -945,15 +945,15 @@
   },
   "ErrorMsg_Save_All_Broken_And_Restore": {
     "en": "The save data is corrupted.\n\nRestoring save data...",
-    "ua": "Збережені дані пошкоджено.\n\nВідновлення даних..."
+    "ua": "Збережені дані пошкоджено.\n\nВідновлення даних…"
   },
   "ErrorMsg_Save_All_Broken_And_Format": {
     "en": "The save data is corrupted.\n\nResetting save data...",
-    "ua": "Збережені дані пошкоджено.\n\nСкидання даних..."
+    "ua": "Збережені дані пошкоджено.\n\nСкидання даних…"
   },
   "ErrorMsg_Save_Normal_Format": {
     "en": "Preparing...\n\nPlease wait.",
-    "ua": "Підготовка...\n\nЗачекайте."
+    "ua": "Підготовка…\n\nЗачекайте."
   },
   "ErrorMsg_Brs_SSL_BlackListCert": {
     "en": "The connection was cancelled\nbecause an invalid certificate\nwas received.",
@@ -973,7 +973,7 @@
   },
   "ErrorMsg_Brs_SSLMOD_NotSupported": {
     "en": "Unsupported certificate.",
-    "ua": "Сертифікат не\nпідтримується."
+    "ua": "Сертифікат\nне підтримується."
   },
   "ErrorMsg_Brs_SSLMOD_DEPTH_ZERO_SELF_SIGNED_CERT": {
     "en": "Self-signed certificates\ncannot be verified.",
@@ -1037,7 +1037,7 @@
   },
   "ErrorMsg_Brs_RecoveryGoTop": {
     "en": "An error has occurred.\nReturning to starting page.",
-    "ua": "Сталася помилка.\nПовернення на\nпопередню сторінку…"
+    "ua": "Сталася помилка.\nПовернення\nна попередню сторінку…"
   },
   "ErrorMsg_Brs_RecoveryReloadOrExit": {
     "en": "A communication error has\noccurred. Please close\nMiiverse if the error persists.",
@@ -1045,7 +1045,7 @@
   },
   "ErrorMsg_Brs_RecoveryReloadOrExit_Act": {
     "en": "A communication error has\noccurred. Please close\nthe Nintendo Network ID\nSettings if the error persists.",
-    "ua": "Сталася помилка зв'язку.\nЯкщо проблема не зникає,\nзакрийте розділ Nintendo\nNetwork ID."
+    "ua": "Сталася помилка зв'язку.\nЯкщо проблема не зникає,\nзакрийте розділ\nNintendo Network ID."
   },
   "Swkbd_Warn_LengthTooLong": {
     "en": "Please do not exceed\n%d characters.",
@@ -1057,11 +1057,11 @@
   },
   "Swkbd_Warn_NumberTooBig": {
     "en": "Please do not enter a\nnumber higher than %d.",
-    "ua": "Введіть число не більше %d."
+    "ua": "Введіть число\nне більше %d."
   },
   "Swkbd_Warn_NumberTooSmall": {
     "en": "Please do not enter a\nnumber lower than %d.",
-    "ua": "Введіть число не менше %d."
+    "ua": "Введіть число\nне менше %d."
   },
   "Swkbd_Warn_InvalidPassword": {
     "en": "Your password contains\ncharacters which cannot be\nused. Please note that you\nmay only use letters, numbers\nand the following characters:\n!\"#$%&'()*+,-./\n:;<=>?@[\\]^_`{|}~",
@@ -1121,7 +1121,7 @@
   },
   "dlg_top_net_on_flw": {
     "en": " Enable",
-    "ua": " Увімкнути"
+    "ua": " {t:1.0:6300}Увімкнути{t:1.0:6400}"
   },
   "dlg_top_net_off_flw": {
     "en": " Back",
@@ -1129,6 +1129,6 @@
   },
   "opening_please_wait": {
     "en": "Please wait...",
-    "ua": "Зачекайте..."
+    "ua": "Зачекайте…"
   }
 }

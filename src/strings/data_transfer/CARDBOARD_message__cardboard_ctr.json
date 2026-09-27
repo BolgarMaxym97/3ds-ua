@@ -185,7 +185,7 @@
   },
   "CM_05_Header": {
     "en": "This system cannot participate in a transfer.",
-    "ua": "Ця консоль не може брати участь у\nперенесенні."
+    "ua": "Ця консоль не може брати участь\nу перенесенні."
   },
   "CM_05_Window": {
     "en": "There are no remaining\ntransfers for this system.\n\nCannot perform transfer.",
@@ -201,7 +201,7 @@
   },
   "CM_07_Window": {
     "en": "The ability to transfer between\nNintendo 3DS systems will\nbecome available through\na system update.\n\nFor details, visit\nsupport.nintendo.com.",
-    "ua": "Перенесення між консолями\nNintendo 3DS стане доступним\nпісля оновлення системи.\n\nДокладніше — на\nsupport.nintendo.com."
+    "ua": "Перенесення між консолями\nNintendo 3DS стане доступним\nпісля оновлення системи.\n\nДокладніше —\nна support.nintendo.com."
   },
   "CM_08_Window": {
     "en": "There is a convenient online\nstep-by-step transfer guide that\nyou can follow while performing\na system transfer at:\nhttp://systemtransfer\n.nintendo.co.uk",
@@ -221,27 +221,27 @@
   },
   "CI_01_Window_Ver2": {
     "en": "The System Transfer feature\nallows you to move software and\ndata between Nintendo 3DS\nsystems that you own. Please read\nthis message before continuing, as\nit contains important information\nregarding system transfers.\n\n• Once a transfer has been\nperformed, it {t:0.3:0100}cannot be undone{t:0.3:ffff}.\n\n• When performing a transfer, the\ndata on the target system will\nbe overwritten with that of the\nsource system. When the transfer\ncompletes, {t:0.3:0100}the System Memory\nof the source system will be\nformatted, deleting all data{t:0.3:ffff}.\n\nNote:\nYour System Settings configuration\nand any stored credit card\ninformation will not be transferred.\nThese will be deleted.\n(If you have linked a Nintendo\nNetwork ID, you can continue to\nuse credit card information stored\non the ID on the target system.)\n\n• When overwriting data on the\ntarget system:\n\n- Time-limited add-on content and\nadd-on content with a limited\nnumber of uses purchased on the\ntarget system will be lost\n\n- Any software/add-on content\npresent on the target system\nwill be replaced with that of the\nsource system, and the original\ntarget system data will no\nlonger be usable\n\nNote:\nAny software and add-on content\noriginally purchased/downloaded\non the source system will be\nusable with the target system.\n\n• SD Cards containing data\ncreated on the source system will\nbe immediately usable with the\ntarget system after the transfer.\nData created by the target system\non SD Cards will no longer be\nusable.\n\nNote:\nNintendo 3DS Sound recordings\nand Nintendo 3DS Camera videos\nand photos will not be deleted\nand can continue to be used.\nNintendo 3DS download software\npurchased on or downloaded\nto the target system before\nperforming the transfer can be\nredownloaded to that system from\nNintendo eShop after the transfer.\n\n• The Nintendo eShop funds\nof the source system will be\ncombined with those of the target\nsystem.\n\nNote:\nThe transfer will not be performed\nif the combined funds would\nexceed the maximum allowed in\nNintendo eShop.\n\n• There is a limit on the number\nof times that transfers can be\nperformed. A system cannot\nparticipate in a transfer once\nthis number is reached. The\nnumber of transfers remaining\nis displayed whenever you\nstart performing a transfer.\n\nNote:\nA transfer can be performed only\nonce in a {t:11.0:}-day interval.\n\n• Any pre-installed Nintendo 3DS\ndownload software will be\ntransferred from the source system\nto the target system. However, if\nyou delete your Nintendo eShop\naccount activity on the target\nsystem after the transfer, you will\nno longer be able to redownload\nthis software to that system from\nNintendo eShop.\n\n• You may only use the System\nTransfer feature with systems\nyou own.\n\n• You must connect to the\ninternet in order to perform\na transfer. The network-related\nterms and privacy policy apply\nwhen performing a transfer.\n\n• The region settings of both\nsystems must match in order\nto perform a transfer.\n\n• Any unauthorised technical\nmodification of the hardware or\nsoftware of your Nintendo system,\nor the use of an unauthorised\ndevice with your system, may\nresult in loss of data during\nsystem transfer.\n\n{t:0.3:0100}• Data may be lost if the system\nruns out of power or is turned off,\nor if wireless communication is\ndisabled, during the transfer.\nCheck the battery status and\nsignal strength icons before\nstarting the transfer.{t:0.3:ffff}",
-    "ua": "«Перенесення даних» дає змогу\nпереносити програми й дані між\nвашими консолями Nintendo 3DS.\nПрочитайте це повідомлення\nперед\nтим, як продовжити: у ньому\nважливі\nвідомості про перенесення.\n\n• Виконане перенесення {t:0.3:0100}не\nможна\nскасувати{t:0.3:ffff}.\n\n• Під час перенесення дані\nна консолі-приймачі буде\nзамінено\nданими з консолі-джерела. Коли\nперенесення завершиться,\n{t:0.3:0100}пам'ять\nсистеми консолі-джерела буде\nвідформатовано, і всі дані з неї\nбуде видалено{t:0.3:ffff}.\n\nПримітка:\nналаштування системи й\nзбережені\nдані платіжних карт не\nпереносяться.\nЇх буде видалено.\n(Якщо ви прив'язали Nintendo\nNetwork ID, дані карт, збережені\nна цьому ID, працюватимуть\nі на консолі-приймачі.)\n\n• Коли дані на консолі-приймачі\nперезаписуються:\n\n- додатковий вміст з обмеженим\nтерміном або кількістю\nвикористань,\nкуплений на консолі-приймачі,\nбуде втрачено;\n\n- програми й додатковий вміст\nна консолі-приймачі буде\nзамінено\nтими, що з консолі-джерела,\nа початкові дані приймача\nстануть непридатними.\n\nПримітка:\nпрограми й додатковий вміст,\nкуплені чи завантажені на\nконсолі-\nджерелі, працюватимуть\nна консолі-приймачі.\n\n• Карти SD із даними, створеними\nна консолі-джерелі,\nпрацюватимуть\nна консолі-приймачі одразу після\nперенесення. Дані, створені\nконсоллю-приймачем на картах\nSD,\nстануть непридатними.\n\nПримітка:\nзаписи Nintendo 3DS Звуку та\nвідео\nй фото Nintendo 3DS Камери не\nбуде\nвидалено, ними можна\nкористуватися\nдалі. Завантажені програми\nNintendo 3DS, куплені чи\nзавантажені\nна консоль-приймач до\nперенесення,\nможна буде завантажити на неї\nзнову\nз Nintendo eShop після\nперенесення.\n\n• Кошти Nintendo eShop консолі-\nджерела буде додано до коштів\nконсолі-приймача.\n\nПримітка:\nперенесення не відбудеться,\nякщо\nсумарні кошти перевищать межу,\nдозволену в Nintendo eShop.\n\n• Кількість перенесень обмежена.\nКоли межу досягнуто, консоль\nбільше не може брати участь\nу перенесеннях. Скільки\nперенесень\nлишилося, показується щоразу\nна початку перенесення.\n\nПримітка:\nперенесення можна виконувати\nлише\nраз на {t:11.0:} дн.\n\n• Передвстановлені завантажені\nпрограми Nintendo 3DS буде\nперенесено з консолі-джерела\nна консоль-приймач. Але якщо\nпісля перенесення видалити\nісторію\nпокупок Nintendo eShop на\nконсолі-\nприймачі, завантажити ці\nпрограми\nна неї з Nintendo eShop знову\nвже не вийде.\n\n• Користуватися «Перенесенням\nданих» можна лише з власними\nконсолями.\n\n• Для перенесення потрібно\nз'єднання з Інтернетом. Під час\nперенесення діють мережеві\nумови\nй політика конфіденційності.\n\n• Регіони обох консолей мусять\nзбігатися, інакше перенесення\nне відбудеться.\n\n• Будь-яка несанкціонована\nтехнічна\nзміна апаратного чи програмного\nзабезпечення вашої консолі\nNintendo\nабо використання\nнесанкціонованого\nпристрою може призвести до\nвтрати\nданих під час перенесення.\n\n{t:0.3:0100}• Дані можуть загубитися, якщо\nпід\nчас перенесення консоль\nрозрядиться\nчи буде вимкнена або якщо\nвимкнути\nбездротовий зв'язок. Перед\nпочатком\nперевірте значки заряду батареї\nй сили сигналу.{t:0.3:ffff}"
+    "ua": "«Перенесення даних» дає змогу\nпереносити програми й дані між\nвашими консолями Nintendo 3DS.\nПрочитайте це повідомлення\nперед тим, як продовжити:\nу ньому важливі відомості\nпро перенесення.\n\n• Виконане перенесення\n{t:0.3:0100}не можна скасувати{t:0.3:ffff}.\n\n• Під час перенесення дані\nна консолі-приймачі буде\nзамінено даними\nз консолі-джерела. Коли\nперенесення завершиться,\n{t:0.3:0100}пам'ять системи консолі-джерела\nбуде відформатовано, і всі дані\nз неї буде видалено{t:0.3:ffff}.\n\nПримітка:\nналаштування системи\nй збережені дані платіжних карт\nне переносяться. Їх буде\nвидалено. (Якщо ви прив'язали\nNintendo Network ID, дані карт,\nзбережені на цьому ID,\nпрацюватимуть\nі на консолі-приймачі.)\n\n• Коли дані на консолі-приймачі\nперезаписуються:\n\n- додатковий вміст з обмеженим\nтерміном або кількістю\nвикористань, куплений\nна консолі-приймачі, буде\nвтрачено;\n\n- програми й додатковий вміст\nна консолі-приймачі буде\nзамінено тими,\nщо з консолі-джерела,\nа початкові дані приймача\nстануть непридатними.\n\nПримітка:\nпрограми й додатковий вміст,\nкуплені чи завантажені\nна консолі-джерелі,\nпрацюватимуть\nна консолі-приймачі.\n\n• Карти SD із даними, створеними\nна консолі-джерелі,\nпрацюватимуть\nна консолі-приймачі одразу після\nперенесення. Дані, створені\nконсоллю-приймачем на картах\nSD, стануть непридатними.\n\nПримітка:\nзаписи Звуку Nintendo 3DS\nта відео й фото Камери\nNintendo 3DS не буде видалено,\nними можна користуватися далі.\nЗавантажені програми\nNintendo 3DS, куплені\nчи завантажені\nна консоль-приймач\nдо перенесення, можна буде\nзавантажити на неї знову\nз Nintendo eShop після\nперенесення.\n\n• Кошти Nintendo eShop\nконсолі-джерела буде додано\nдо коштів консолі-приймача.\n\nПримітка:\nперенесення не відбудеться,\nякщо сумарні кошти перевищать\nмежу, дозволену\nв Nintendo eShop.\n\n• Кількість перенесень обмежена.\nКоли межу досягнуто, консоль\nбільше не може брати участь\nу перенесеннях. Скільки\nперенесень лишилося,\nпоказується щоразу на початку\nперенесення.\n\nПримітка:\nперенесення можна виконувати\nлише раз на {t:11.0:} дн.\n\n• Передвстановлені завантажені\nпрограми Nintendo 3DS буде\nперенесено з консолі-джерела\nна консоль-приймач. Але якщо\nпісля перенесення видалити\nісторію покупок Nintendo eShop\nна консолі-приймачі, завантажити\nці програми на неї\nз Nintendo eShop знову вже\nне вийде.\n\n• Користуватися «Перенесенням\nданих» можна лише з власними\nконсолями.\n\n• Для перенесення потрібно\nз'єднання з Інтернетом. Під час\nперенесення діють мережеві\nумови й політика\nконфіденційності.\n\n• Регіони обох консолей мусять\nзбігатися, інакше перенесення\nне відбудеться.\n\n• Будь-яка несанкціонована\nтехнічна зміна апаратного\nчи програмного забезпечення\nвашої консолі Nintendo або\nвикористання несанкціонованого\nпристрою може призвести\nдо втрати даних під час\nперенесення.\n\n{t:0.3:0100}• Дані можуть загубитися, якщо\nпід час перенесення консоль\nрозрядиться чи буде вимкнена\nабо якщо вимкнути бездротовий\nзв'язок. Перед початком\nперевірте значки заряду батареї\nй сили сигналу.{t:0.3:ffff}"
   },
   "CI_01_Window_6thNUP": {
     "en": "The System Transfer feature\nallows you to move software and\ndata between Nintendo 3DS\nsystems that you own. Please read\nthis message before continuing, as\nit contains important information\nregarding system transfers.\n\n• Once a transfer has been\nperformed, it {t:0.3:0100}cannot be undone{t:0.3:ffff}.\n\n• When performing a transfer, the\ndata on the target system will\nbe overwritten with that of the\nsource system. When the transfer\ncompletes, {t:0.3:0100}the System Memory\nof the source system will be\nformatted, deleting all data{t:0.3:ffff}.\n\nNote:\nYour System Settings configuration\nand any stored credit card\ninformation will not be transferred.\nThese will be deleted.\n(If you have linked a Nintendo\nNetwork ID, you can continue to\nuse credit card information stored\non the ID on the target system.)\n\n• When overwriting data on the\ntarget system:\n\n- Time-limited add-on content and\nadd-on content with a limited\nnumber of uses purchased on the\ntarget system will be lost\n\n- Any software/add-on content\npresent on the target system\nwill be replaced with that of the\nsource system, and the original\ntarget system data will no\nlonger be usable\n\nNote:\nAny software and add-on content\noriginally purchased/downloaded\non the source system will be\nusable with the target system.\n\n• SD Cards containing data\ncreated on the source system will\nbe immediately usable with the\ntarget system after the transfer.\nData created by the target system\non SD Cards will no longer be\nusable.\n\nNote:\nNintendo 3DS Sound recordings\nand Nintendo 3DS Camera videos\nand photos will not be deleted\nand can continue to be used.\nNintendo 3DS download software\npurchased on or downloaded\nto the target system before\nperforming the transfer can be\nredownloaded to that system from\nNintendo eShop after the transfer.\n\n• The Nintendo eShop funds\nof the source system will be\ncombined with those of the target\nsystem.\n\nNote:\nThe transfer will not be performed\nif the combined funds would\nexceed the maximum allowed in\nNintendo eShop.\n\nNote:\nA transfer can be performed only\nonce in a {t:11.0:}-day interval.\n\n• Any pre-installed Nintendo 3DS\ndownload software will be\ntransferred from the source system\nto the target system. However, if\nyou delete your Nintendo eShop\naccount activity on the target\nsystem after the transfer, you will\nno longer be able to redownload\nthis software to that system from\nNintendo eShop.\n\n• You may only use the System\nTransfer feature with systems\nyou own.\n\n• You must connect to the\ninternet in order to perform\na transfer. The network-related\nterms and privacy policy apply\nwhen performing a transfer.\n\n• The region settings of both\nsystems must match in order\nto perform a transfer.\n\n• Any unauthorised technical\nmodification of the hardware or\nsoftware of your Nintendo system,\nor the use of an unauthorised\ndevice with your system, may\nresult in loss of data during\nsystem transfer.\n\n{t:0.3:0100}• Data may be lost if the system\nruns out of power or is turned off,\nor if wireless communication is\ndisabled, during the transfer.\nCheck the battery status and\nsignal strength icons before\nstarting the transfer.{t:0.3:ffff}",
-    "ua": "«Перенесення даних» дає змогу\nпереносити програми й дані між\nвашими консолями Nintendo 3DS.\nПрочитайте це повідомлення\nперед\nтим, як продовжити: у ньому\nважливі\nвідомості про перенесення.\n\n• Виконане перенесення {t:0.3:0100}не\nможна\nскасувати{t:0.3:ffff}.\n\n• Під час перенесення дані\nна консолі-приймачі буде\nзамінено\nданими з консолі-джерела. Коли\nперенесення завершиться,\n{t:0.3:0100}пам'ять\nсистеми консолі-джерела буде\nвідформатовано, і всі дані з неї\nбуде видалено{t:0.3:ffff}.\n\nПримітка:\nналаштування системи й\nзбережені\nдані платіжних карт не\nпереносяться.\nЇх буде видалено.\n(Якщо ви прив'язали Nintendo\nNetwork ID, дані карт, збережені\nна цьому ID, працюватимуть\nі на консолі-приймачі.)\n\n• Коли дані на консолі-приймачі\nперезаписуються:\n\n- додатковий вміст з обмеженим\nтерміном або кількістю\nвикористань,\nкуплений на консолі-приймачі,\nбуде втрачено;\n\n- програми й додатковий вміст\nна консолі-приймачі буде\nзамінено\nтими, що з консолі-джерела,\nа початкові дані приймача\nстануть непридатними.\n\nПримітка:\nпрограми й додатковий вміст,\nкуплені чи завантажені на\nконсолі-\nджерелі, працюватимуть\nна консолі-приймачі.\n\n• Карти SD із даними, створеними\nна консолі-джерелі,\nпрацюватимуть\nна консолі-приймачі одразу після\nперенесення. Дані, створені\nконсоллю-приймачем на картах\nSD,\nстануть непридатними.\n\nПримітка:\nзаписи Nintendo 3DS Звуку та\nвідео\nй фото Nintendo 3DS Камери не\nбуде\nвидалено, ними можна\nкористуватися\nдалі. Завантажені програми\nNintendo 3DS, куплені чи\nзавантажені\nна консоль-приймач до\nперенесення,\nможна буде завантажити на неї\nзнову\nз Nintendo eShop після\nперенесення.\n\n• Кошти Nintendo eShop консолі-\nджерела буде додано до коштів\nконсолі-приймача.\n\nПримітка:\nперенесення не відбудеться,\nякщо\nсумарні кошти перевищать межу,\nдозволену в Nintendo eShop.\n\nПримітка:\nперенесення можна виконувати\nлише\nраз на {t:11.0:} дн.\n\n• Передвстановлені завантажені\nпрограми Nintendo 3DS буде\nперенесено з консолі-джерела\nна консоль-приймач. Але якщо\nпісля перенесення видалити\nісторію\nпокупок Nintendo eShop на\nконсолі-\nприймачі, завантажити ці\nпрограми\nна неї з Nintendo eShop знову\nвже не вийде.\n\n• Користуватися «Перенесенням\nданих» можна лише з власними\nконсолями.\n\n• Для перенесення потрібно\nз'єднання з Інтернетом. Під час\nперенесення діють мережеві\nумови\nй політика конфіденційності.\n\n• Регіони обох консолей мусять\nзбігатися, інакше перенесення\nне відбудеться.\n\n• Будь-яка несанкціонована\nтехнічна\nзміна апаратного чи програмного\nзабезпечення вашої консолі\nNintendo\nабо використання\nнесанкціонованого\nпристрою може призвести до\nвтрати\nданих під час перенесення.\n\n{t:0.3:0100}• Дані можуть загубитися, якщо\nпід\nчас перенесення консоль\nрозрядиться\nчи буде вимкнена або якщо\nвимкнути\nбездротовий зв'язок. Перед\nпочатком\nперевірте значки заряду батареї\nй сили сигналу.{t:0.3:ffff}"
+    "ua": "«Перенесення даних» дає змогу\nпереносити програми й дані між\nвашими консолями Nintendo 3DS.\nПрочитайте це повідомлення\nперед тим, як продовжити:\nу ньому важливі відомості\nпро перенесення.\n\n• Виконане перенесення\n{t:0.3:0100}не можна скасувати{t:0.3:ffff}.\n\n• Під час перенесення дані\nна консолі-приймачі буде\nзамінено даними\nз консолі-джерела. Коли\nперенесення завершиться,\n{t:0.3:0100}пам'ять системи консолі-джерела\nбуде відформатовано, і всі дані\nз неї буде видалено{t:0.3:ffff}.\n\nПримітка:\nналаштування системи\nй збережені дані платіжних карт\nне переносяться. Їх буде\nвидалено. (Якщо ви прив'язали\nNintendo Network ID, дані карт,\nзбережені на цьому ID,\nпрацюватимуть\nі на консолі-приймачі.)\n\n• Коли дані на консолі-приймачі\nперезаписуються:\n\n- додатковий вміст з обмеженим\nтерміном або кількістю\nвикористань, куплений\nна консолі-приймачі, буде\nвтрачено;\n\n- програми й додатковий вміст\nна консолі-приймачі буде\nзамінено тими,\nщо з консолі-джерела,\nа початкові дані приймача\nстануть непридатними.\n\nПримітка:\nпрограми й додатковий вміст,\nкуплені чи завантажені\nна консолі-джерелі,\nпрацюватимуть\nна консолі-приймачі.\n\n• Карти SD із даними, створеними\nна консолі-джерелі,\nпрацюватимуть\nна консолі-приймачі одразу після\nперенесення. Дані, створені\nконсоллю-приймачем на картах\nSD, стануть непридатними.\n\nПримітка:\nзаписи Звуку Nintendo 3DS\nта відео й фото Камери\nNintendo 3DS не буде видалено,\nними можна користуватися далі.\nЗавантажені програми\nNintendo 3DS, куплені\nчи завантажені\nна консоль-приймач\nдо перенесення, можна буде\nзавантажити на неї знову\nз Nintendo eShop після\nперенесення.\n\n• Кошти Nintendo eShop\nконсолі-джерела буде додано\nдо коштів консолі-приймача.\n\nПримітка:\nперенесення не відбудеться,\nякщо сумарні кошти перевищать\nмежу, дозволену\nв Nintendo eShop.\n\nПримітка:\nперенесення можна виконувати\nлише раз на {t:11.0:} дн.\n\n• Передвстановлені завантажені\nпрограми Nintendo 3DS буде\nперенесено з консолі-джерела\nна консоль-приймач. Але якщо\nпісля перенесення видалити\nісторію покупок Nintendo eShop\nна консолі-приймачі, завантажити\nці програми на неї\nз Nintendo eShop знову вже\nне вийде.\n\n• Користуватися «Перенесенням\nданих» можна лише з власними\nконсолями.\n\n• Для перенесення потрібно\nз'єднання з Інтернетом. Під час\nперенесення діють мережеві\nумови й політика\nконфіденційності.\n\n• Регіони обох консолей мусять\nзбігатися, інакше перенесення\nне відбудеться.\n\n• Будь-яка несанкціонована\nтехнічна зміна апаратного\nчи програмного забезпечення\nвашої консолі Nintendo або\nвикористання несанкціонованого\nпристрою може призвести\nдо втрати даних під час\nперенесення.\n\n{t:0.3:0100}• Дані можуть загубитися, якщо\nпід час перенесення консоль\nрозрядиться чи буде вимкнена\nабо якщо вимкнути бездротовий\nзв'язок. Перед початком\nперевірте значки заряду батареї\nй сили сигналу.{t:0.3:ffff}"
   },
   "CI_01_Window_S": {
     "en": "The System Transfer feature\nallows you to move software and\ndata between Nintendo 3DS\nsystems that you own. Please read\nthis message before continuing, as\nit contains important information\nregarding system transfers.\n\n• Once a transfer has been\nperformed, it {t:0.3:0100}cannot be undone{t:0.3:ffff}.\n\n• When performing a transfer, the\ntarget New Nintendo 3DS system\ndata will be overwritten with that\nof the source system. When the\ntransfer is complete, {t:0.3:0100}the system\nmemory of the source system will\nbe formatted, deleting all data{t:0.3:ffff}.\n\nNote:\n- Your System Settings\nconfiguration and any stored credit\ncard information will not be\ntransferred. These will be deleted.\n(If you have linked a Nintendo\nNetwork ID, you can continue to\nuse credit card information stored\non the ID on the target system.)\n- You cannot transfer data from a\nNew Nintendo 3DS system to a\nNintendo 3DS system.\n\n• When overwriting data on the\ntarget system:\n\n- Time-limited add-on content and\nadd-on content with a limited\nnumber of uses purchased on the\ntarget system will be lost\n\n- Any software/add-on content\npresent on the target system\nwill be replaced with that of the\nsource system, and the original\ntarget system data will no\nlonger be usable\n\nNote:\nAny software and add-on content\noriginally purchased/downloaded\non the source system will be\nusable with the target system.\n\n• SD cards containing data\ncreated on the source system will\nbe immediately usable with the\ntarget system after the transfer.\nData created by the target system\non microSD cards will no longer\nbe usable.\n\nNote:\nNintendo 3DS Sound recordings\nand Nintendo 3DS Camera videos\nand photos will not be deleted\nand can continue to be used.\nNintendo 3DS download software\npurchased on or downloaded\nto the target system before\nperforming the transfer can be\nredownloaded to that system from\nNintendo eShop after the transfer.\n\n• The Nintendo eShop funds\nof the source system will be\ncombined with those of the target\nsystem.\n\nNote:\nThe transfer will not be performed\nif the combined funds would\nexceed the maximum allowed in\nNintendo eShop.\n\nNote:\nA transfer can be performed only\nonce in a {t:11.0:}-day interval.\n\n• Any pre-installed Nintendo 3DS\ndownload software will be\ntransferred from the source system\nto the target system. However, if\nyou delete your Nintendo eShop\naccount activity on the target\nsystem after the transfer, you will\nno longer be able to redownload\nthis software to that system from\nNintendo eShop.\n\n• You may only use the System\nTransfer feature with systems\nyou own.\n\n• You must connect to the\ninternet in order to perform\na transfer. The network-related\nterms and privacy policy apply\nwhen performing a transfer.\n\n• The region settings of both\nsystems must match in order\nto perform a transfer.\n\n• Any unauthorised technical\nmodification of the hardware or\nsoftware of your Nintendo system,\nor the use of an unauthorised\ndevice with your system, may\nresult in loss of data during\nsystem transfer.\n\n{t:0.3:0100}• Data may be lost if the system\nruns out of power or is turned off,\nor if wireless communication is\ndisabled, during the transfer.\nCheck the battery status and\nsignal strength icons before\nstarting the transfer.{t:0.3:ffff}",
-    "ua": "«Перенесення даних» дає змогу\nпереносити програми й дані між\nвашими консолями Nintendo 3DS.\nПрочитайте це повідомлення\nперед\nтим, як продовжити: у ньому\nважливі\nвідомості про перенесення.\n\n• Виконане перенесення {t:0.3:0100}не\nможна\nскасувати{t:0.3:ffff}.\n\n• Під час перенесення дані\nконсолі-приймача New Nintendo\n3DS\nбуде замінено даними з консолі-\nджерела. Коли перенесення\nзавершиться, {t:0.3:0100}пам'ять системи\nконсолі-джерела буде\nвідформатовано,\nі всі дані з неї буде видалено{t:0.3:ffff}.\n\nПримітка:\n- налаштування системи й\nзбережені\nдані платіжних карт не\nпереносяться.\nЇх буде видалено.\n(Якщо ви прив'язали Nintendo\nNetwork ID, дані карт, збережені\nна цьому ID, працюватимуть\nі на консолі-приймачі.)\n- не можна перенести дані\nз консолі New Nintendo 3DS\nна консоль Nintendo 3DS.\n\n• Коли дані на консолі-приймачі\nперезаписуються:\n\n- додатковий вміст з обмеженим\nтерміном або кількістю\nвикористань,\nкуплений на консолі-приймачі,\nбуде втрачено;\n\n- програми й додатковий вміст\nна консолі-приймачі буде\nзамінено\nтими, що з консолі-джерела,\nа початкові дані приймача\nстануть непридатними.\n\nПримітка:\nпрограми й додатковий вміст,\nкуплені чи завантажені на\nконсолі-\nджерелі, працюватимуть\nна консолі-приймачі.\n\n• Карти SD із даними, створеними\nна консолі-джерелі,\nпрацюватимуть\nна консолі-приймачі одразу після\nперенесення. Дані, створені\nконсоллю-приймачем на картах\nmicroSD,\nстануть непридатними.\n\nПримітка:\nзаписи Nintendo 3DS Звуку та\nвідео\nй фото Nintendo 3DS Камери не\nбуде\nвидалено, ними можна\nкористуватися\nдалі. Завантажені програми\nNintendo 3DS, куплені чи\nзавантажені\nна консоль-приймач до\nперенесення,\nможна буде завантажити на неї\nзнову\nз Nintendo eShop після\nперенесення.\n\n• Кошти Nintendo eShop консолі-\nджерела буде додано до коштів\nконсолі-приймача.\n\nПримітка:\nперенесення не відбудеться,\nякщо\nсумарні кошти перевищать межу,\nдозволену в Nintendo eShop.\n\nПримітка:\nперенесення можна виконувати\nлише\nраз на {t:11.0:} дн.\n\n• Передвстановлені завантажені\nпрограми Nintendo 3DS буде\nперенесено з консолі-джерела\nна консоль-приймач. Але якщо\nпісля перенесення видалити\nісторію\nпокупок Nintendo eShop на\nконсолі-\nприймачі, завантажити ці\nпрограми\nна неї з Nintendo eShop знову\nвже не вийде.\n\n• Користуватися «Перенесенням\nданих» можна лише з власними\nконсолями.\n\n• Для перенесення потрібно\nз'єднання з Інтернетом. Під час\nперенесення діють мережеві\nумови\nй політика конфіденційності.\n\n• Регіони обох консолей мусять\nзбігатися, інакше перенесення\nне відбудеться.\n\n• Будь-яка несанкціонована\nтехнічна\nзміна апаратного чи програмного\nзабезпечення вашої консолі\nNintendo\nабо використання\nнесанкціонованого\nпристрою може призвести до\nвтрати\nданих під час перенесення.\n\n{t:0.3:0100}• Дані можуть загубитися, якщо\nпід\nчас перенесення консоль\nрозрядиться\nчи буде вимкнена або якщо\nвимкнути\nбездротовий зв'язок. Перед\nпочатком\nперевірте значки заряду батареї\nй сили сигналу.{t:0.3:ffff}"
+    "ua": "«Перенесення даних» дає змогу\nпереносити програми й дані між\nвашими консолями Nintendo 3DS.\nПрочитайте це повідомлення\nперед тим, як продовжити:\nу ньому важливі відомості\nпро перенесення.\n\n• Виконане перенесення\n{t:0.3:0100}не можна скасувати{t:0.3:ffff}.\n\n• Під час перенесення дані\nконсолі-приймача\nNew Nintendo 3DS буде замінено\nданими з консолі-джерела. Коли\nперенесення завершиться,\n{t:0.3:0100}пам'ять системи консолі-джерела\nбуде відформатовано, і всі дані\nз неї буде видалено{t:0.3:ffff}.\n\nПримітка:\n- налаштування системи\nй збережені дані платіжних карт\nне переносяться. Їх буде\nвидалено. (Якщо ви прив'язали\nNintendo Network ID, дані карт,\nзбережені на цьому ID,\nпрацюватимуть\nі на консолі-приймачі.)\n- не можна перенести дані\nз консолі New Nintendo 3DS\nна консоль Nintendo 3DS.\n\n• Коли дані на консолі-приймачі\nперезаписуються:\n\n- додатковий вміст з обмеженим\nтерміном або кількістю\nвикористань, куплений\nна консолі-приймачі, буде\nвтрачено;\n\n- програми й додатковий вміст\nна консолі-приймачі буде\nзамінено тими,\nщо з консолі-джерела,\nа початкові дані приймача\nстануть непридатними.\n\nПримітка:\nпрограми й додатковий вміст,\nкуплені чи завантажені\nна консолі-джерелі,\nпрацюватимуть\nна консолі-приймачі.\n\n• Карти SD із даними, створеними\nна консолі-джерелі,\nпрацюватимуть\nна консолі-приймачі одразу після\nперенесення. Дані, створені\nконсоллю-приймачем на картах\nmicroSD, стануть непридатними.\n\nПримітка:\nзаписи Звуку Nintendo 3DS\nта відео й фото Камери\nNintendo 3DS не буде видалено,\nними можна користуватися далі.\nЗавантажені програми\nNintendo 3DS, куплені\nчи завантажені\nна консоль-приймач\nдо перенесення, можна буде\nзавантажити на неї знову\nз Nintendo eShop після\nперенесення.\n\n• Кошти Nintendo eShop\nконсолі-джерела буде додано\nдо коштів консолі-приймача.\n\nПримітка:\nперенесення не відбудеться,\nякщо сумарні кошти перевищать\nмежу, дозволену\nв Nintendo eShop.\n\nПримітка:\nперенесення можна виконувати\nлише раз на {t:11.0:} дн.\n\n• Передвстановлені завантажені\nпрограми Nintendo 3DS буде\nперенесено з консолі-джерела\nна консоль-приймач. Але якщо\nпісля перенесення видалити\nісторію покупок Nintendo eShop\nна консолі-приймачі, завантажити\nці програми на неї\nз Nintendo eShop знову вже\nне вийде.\n\n• Користуватися «Перенесенням\nданих» можна лише з власними\nконсолями.\n\n• Для перенесення потрібно\nз'єднання з Інтернетом. Під час\nперенесення діють мережеві\nумови й політика\nконфіденційності.\n\n• Регіони обох консолей мусять\nзбігатися, інакше перенесення\nне відбудеться.\n\n• Будь-яка несанкціонована\nтехнічна зміна апаратного\nчи програмного забезпечення\nвашої консолі Nintendo або\nвикористання несанкціонованого\nпристрою може призвести\nдо втрати даних під час\nперенесення.\n\n{t:0.3:0100}• Дані можуть загубитися, якщо\nпід час перенесення консоль\nрозрядиться чи буде вимкнена\nабо якщо вимкнути бездротовий\nзв'язок. Перед початком\nперевірте значки заряду батареї\nй сили сигналу.{t:0.3:ffff}"
   },
   "CI_01_Window_TWL": {
     "en": "Software and data can be\ntransferred from a Nintendo DSi\nsystem you own using System\nTransfer.\n\nYou can transfer your\nNintendo WFC Configuration,\nNintendo DSi Camera photos\nand Nintendo DSi Sound\nrecordings via DS Wireless\nCommunications.\n\nBy connecting to the internet,\nyou can transfer usage licences\nfor Nintendo DSiWare.\n\nPlease note the network-related\nterms and privacy policy apply\nwhen using System Transfer.\n\nAny unauthorised technical\nmodification of the hardware or\nsoftware of your Nintendo system,\nor the use of an unauthorised\ndevice with your system, may\nresult in loss of data during\nsystem transfer.\n\nYou will need to download the\n{t:0.3:0100}Nintendo 3DS Transfer Tool{t:0.3:ffff}\nfrom Nintendo DSi Shop on the\nNintendo DSi system you wish\nto transfer from (the source\nsystem). Launch the software\nonce it has downloaded to\nbegin the transfer.\n\n{t:0.3:0100}Data may be lost if you turn\nthe power off or disable\nwireless communication\nduring the transfer.{t:0.3:ffff}\n\nFor more information,\nread {t:0.3:0100}Important Information{t:0.3:ffff}\non the source system.",
-    "ua": "Програми й дані можна\nперенести\nз вашої консолі Nintendo DSi\nчерез «Перенесення даних».\n\nЧерез бездротовий зв'язок DS\nможна перенести налаштування\nNintendo WFC, фото Nintendo\nDSi\nКамери й записи Nintendo DSi\nЗвуку.\n\nЗ'єднавшись з Інтернетом, можна\nперенести ліцензії на програми\nNintendo DSiWare.\n\nЗверніть увагу: під час\nперенесення\nдіють мережеві умови й політика\nконфіденційності.\n\nБудь-яка несанкціонована\nтехнічна\nзміна апаратного чи програмного\nзабезпечення вашої консолі\nNintendo\nабо використання\nнесанкціонованого\nпристрою може призвести до\nвтрати\nданих під час перенесення.\n\nНа консолі Nintendo DSi, з якої\nви\nпереносите (консолі-джерелі),\nтреба\nзавантажити {t:0.3:0100}Nintendo 3DS\nTransfer Tool{t:0.3:ffff}\nіз Nintendo DSi Shop. Запустіть\nпрограму після завантаження,\nщоб почати перенесення.\n\n{t:0.3:0100}Якщо під час перенесення\nвимкнути\nконсоль або бездротовий\nзв'язок,\nдані можуть загубитися.{t:0.3:ffff}\n\nДокладніше — у розділі\n{t:0.3:0100}«Важлива інформація»{t:0.3:ffff}\nна консолі-джерелі."
+    "ua": "Програми й дані можна\nперенести з вашої консолі\nNintendo DSi через\n«Перенесення даних».\n\nЧерез бездротовий зв'язок DS\nможна перенести налаштування\nNintendo WFC, фото Камери\nNintendo DSi й записи Звуку\nNintendo DSi.\n\nЗ'єднавшись з Інтернетом, можна\nперенести ліцензії на програми\nNintendo DSiWare.\n\nЗверніть увагу: під час\nперенесення діють мережеві\nумови й політика\nконфіденційності.\n\nБудь-яка несанкціонована\nтехнічна зміна апаратного\nчи програмного забезпечення\nвашої консолі Nintendo\nабо використання\nнесанкціонованого пристрою\nможе призвести до втрати даних\nпід час перенесення.\n\nНа консолі Nintendo DSi, з якої\nви переносите\n(консолі-джерелі), треба\nзавантажити {t:0.3:0100}Nintendo 3DS\nTransfer Tool{t:0.3:ffff} із Nintendo DSi\nShop. Запустіть програму після\nзавантаження, щоб почати\nперенесення.\n\n{t:0.3:0100}Якщо під час перенесення\nвимкнути консоль\nабо бездротовий зв'язок, дані\nможуть загубитися.{t:0.3:ffff}\n\nДокладніше — у розділі\n{t:0.3:0100}«Важлива інформація»{t:0.3:ffff}\nна консолі-джерелі."
   },
   "CI_02_Window": {
     "en": "Deleting data for Nintendo DSiWare\nthat was moved from the source\nsystem's System Memory to an\nSD Card. Please wait...",
-    "ua": "Видалення даних Nintendo\nDSiWare,\nперенесених із пам'яті системи\nконсолі-джерела на карту SD.\nЗачекайте..."
+    "ua": "Видалення даних\nNintendo DSiWare,\nперенесених із пам'яті системи\nконсолі-джерела на карту SD.\nЗачекайте…"
   },
   "CI_02_Window_S": {
     "en": "Deleting data for Nintendo DSiWare\nthat was moved from the source\nsystem's system memory to a\nmicroSD card. Please wait...",
-    "ua": "Видалення даних Nintendo\nDSiWare,\nперенесених із пам'яті системи\nконсолі-джерела на карту\nmicroSD.\nЗачекайте..."
+    "ua": "Видалення даних\nNintendo DSiWare,\nперенесених із пам'яті системи\nконсолі-джерела\nна карту microSD.\nЗачекайте…"
   },
   "AB_01_Header": {
     "en": "Perform a transfer.",
@@ -249,7 +249,7 @@
   },
   "AB_01_Window": {
     "en": "There is some data that has\nnot completed transferring.\n\nPlease do not turn the power off\nuntil the transfer has completed.",
-    "ua": "Частину даних ще\nне перенесено.\n\nНе вимикайте консоль,\nпоки перенесення не\nзавершиться."
+    "ua": "Частину даних ще\nне перенесено.\n\nНе вимикайте консоль,\nпоки перенесення\nне завершиться."
   },
   "AB_02_Window": {
     "en": "You must connect to the internet\nin order to perform a transfer.\n\nConfigure internet settings now?",
@@ -257,11 +257,11 @@
   },
   "AB_03_Window": {
     "en": "Cancel the transfer?\n\n{t:0.3:0100}Data that is still transferring will be\ndeleted. If the transfer operation\non the source system has already\nbeen completed, you will not be\nable to attempt the transfer again.{t:0.3:ffff}",
-    "ua": "Скасувати перенесення?\n\n{t:0.3:0100}Дані, які ще переносяться, буде\nвидалено. Якщо на\nконсолі-джерелі\nперенесення вже завершилося,\nспробувати ще раз не вийде.{t:0.3:ffff}"
+    "ua": "Скасувати перенесення?\n\n{t:0.3:0100}Дані, які ще переносяться, буде\nвидалено. Якщо\nна консолі-джерелі\nперенесення вже завершилося,\nспробувати ще раз не вийде.{t:0.3:ffff}"
   },
   "AB_03_Window_NNID": {
     "en": "The system transfer is still in\nprogress. Would you like to\ncancel?\n\nThe Nintendo Network ID formerly\nlinked to the source system is now\nlinked to this system.\n\n{t:0.3:0100}You will no longer be able to use\nany Nintendo eShop funds you\nadded on this system before\nstarting the transfer.{t:0.3:ffff} If you format\nthe system memory at this point,\n{t:0.3:0100}you will not be able to redownload\nfrom Nintendo eShop any retail\nsoftware that came preinstalled on\nthe source system.{t:0.3:ffff}",
-    "ua": "Перенесення ще триває.\nСкасувати його?\n\nNintendo Network ID, раніше\nприв'язаний до консолі-джерела,\nтепер прив'язаний до цієї\nконсолі.\n\n{t:0.3:0100}Ви більше не зможете\nскористатися коштами Nintendo\neShop, які додали на цій консолі\nдо початку перенесення.{t:0.3:ffff} Якщо\nтепер\nвідформатувати пам'ять системи,\n{t:0.3:0100}ви не зможете завантажити\nз Nintendo eShop жодну\nкоробкову\nпрограму, що йшла в комплекті\nз консоллю-джерелом.{t:0.3:ffff}"
+    "ua": "Перенесення ще триває.\nСкасувати його?\n\nNintendo Network ID, раніше\nприв'язаний до консолі-джерела,\nтепер прив'язаний до цієї\nконсолі.\n\n{t:0.3:0100}Ви більше не зможете\nскористатися коштами\nNintendo eShop, які додали\nна цій консолі до початку\nперенесення.{t:0.3:ffff} Якщо тепер\nвідформатувати пам'ять системи,\n{t:0.3:0100}ви не зможете завантажити\nз Nintendo eShop жодну\nкоробкову програму, що йшла\nв комплекті\nз консоллю-джерелом.{t:0.3:ffff}"
   },
   "AB_03_Window_NoNNID": {
     "en": "The system transfer is still in\nprogress. Would you like to\ncancel?\n\nNot all processes have finished.\nRestart the System Transfer tool\nto finish the remaining processes.",
@@ -269,7 +269,7 @@
   },
   "AB_03_Window_TWL": {
     "en": "The system transfer is still in\nprogress. Would you like to\ncancel?\n\nIf you format the system memory\nat this point, {t:0.3:0100}you will not be able\nto redownload from Nintendo\neShop any Nintendo DSiWare\ntransferred from the source\nsystem.{t:0.3:ffff}",
-    "ua": "Перенесення ще триває.\nСкасувати його?\n\nЯкщо тепер відформатувати\nпам'ять системи, {t:0.3:0100}ви більше не\nзможете завантажити з Nintendo\neShop жодну програму Nintendo\nDSiWare, перенесену з\nконсолі-джерела.{t:0.3:ffff}"
+    "ua": "Перенесення ще триває.\nСкасувати його?\n\nЯкщо тепер відформатувати\nпам'ять системи, {t:0.3:0100}ви більше\nне зможете завантажити\nз Nintendo eShop жодну\nпрограму Nintendo DSiWare,\nперенесену з консолі-джерела.{t:0.3:ffff}"
   },
   "AB_04_Window": {
     "en": "Are you sure you want\nto cancel the transfer?",
@@ -281,7 +281,7 @@
   },
   "AB_05_Window_00": {
     "en": "The transfer has been interrupted.\nIs the process still taking place on\nthe source system?\n(If you cannot continue the\ntransfer please select No.)",
-    "ua": "Перенесення перервано.\nЧи триває процес на\nконсолі-джерелі?\n(Якщо продовжити перенесення\nне вдається, виберіть «Ні».)"
+    "ua": "Перенесення перервано.\nЧи триває процес\nна консолі-джерелі?\n(Якщо продовжити перенесення\nне вдається, виберіть «Ні».)"
   },
   "AB_05_Window_01": {
     "en": "",
@@ -313,15 +313,15 @@
   },
   "CC_02_Window": {
     "en": "Perform a transfer without\ndeleting the Nintendo 3DS\ndata on the SD Card?",
-    "ua": "Виконати перенесення, не\nвидаляючи дані Nintendo 3DS\nз карти SD?"
+    "ua": "Виконати перенесення,\nне видаляючи дані\nNintendo 3DS з карти SD?"
   },
   "CC_02_Window_S": {
     "en": "Perform a transfer without\ndeleting the Nintendo 3DS\ndata on the microSD card?",
-    "ua": "Виконати перенесення, не\nвидаляючи дані Nintendo 3DS\nз карти microSD?"
+    "ua": "Виконати перенесення,\nне видаляючи дані Nintendo 3DS\nз карти microSD?"
   },
   "CC2_02_Window": {
     "en": "Complete the transfer without\ndeleting the Nintendo 3DS\ndata on the SD card?",
-    "ua": "Завершити перенесення, не\nвидаляючи дані Nintendo 3DS\nз карти SD?"
+    "ua": "Завершити перенесення,\nне видаляючи дані Nintendo 3DS\nз карти SD?"
   },
   "CC_03_Window": {
     "en": "All Nintendo 3DS data on the SD\nCard will be deleted. Continue?\n(Data, videos, photos and\nrecordings created by other\nNintendo 3DS systems will\nnot be deleted.)",
@@ -329,7 +329,7 @@
   },
   "CC_03_Window_S": {
     "en": "All Nintendo 3DS data on the\nmicroSD card will be deleted.\nContinue? (Data, videos, photos\nand recordings created by other\nNintendo 3DS systems will\nnot be deleted.)",
-    "ua": "Усі дані Nintendo 3DS на карті\nmicroSD буде видалено.\nПродовжити? (Дані, відео, фото\nй записи, створені іншими\nконсолями Nintendo 3DS,\nвидалено не буде.)"
+    "ua": "Усі дані Nintendo 3DS\nна карті microSD буде видалено.\nПродовжити? (Дані, відео, фото\nй записи, створені іншими\nконсолями Nintendo 3DS,\nвидалено не буде.)"
   },
   "CC_04_Window_None": {
     "en": "",
@@ -345,19 +345,19 @@
   },
   "CC_05_Window": {
     "en": "Deleting the Nintendo 3DS data\non the SD Card...\n\nPlease wait.",
-    "ua": "Видалення даних Nintendo 3DS\nз карти SD...\n\nЗачекайте."
+    "ua": "Видалення даних Nintendo 3DS\nз карти SD…\n\nЗачекайте."
   },
   "CC_05_Window_00": {
     "en": "Data created by this system on the\nSD Card is now unusable after\nthe system transfer. Nintendo 3DS\ndata on the SD Card is now\nbeing deleted...\nPlease wait.",
-    "ua": "Дані, створені цією консоллю\nна карті SD, стали непридатними\nпісля перенесення. Дані Nintendo\n3DS на карті SD зараз\nвидаляються...\nЗачекайте."
+    "ua": "Дані, створені цією консоллю\nна карті SD, стали непридатними\nпісля перенесення. Дані\nNintendo 3DS на карті SD зараз\nвидаляються…\nЗачекайте."
   },
   "CC_05_Window_S": {
     "en": "Deleting the Nintendo 3DS data\non the microSD card...\n\nPlease wait.",
-    "ua": "Видалення даних Nintendo 3DS\nз карти microSD...\n\nЗачекайте."
+    "ua": "Видалення даних Nintendo 3DS\nз карти microSD…\n\nЗачекайте."
   },
   "CC_05_Window_S_00": {
     "en": "Data created by this system on the\nmicroSD card is now unusable after\nthe system transfer. Nintendo 3DS\ndata on the microSD card is now\nbeing deleted...\nPlease wait.",
-    "ua": "Дані, створені цією консоллю на\nкарті microSD, стали непридатними\nпісля перенесення. Дані Nintendo\n3DS на карті microSD зараз\nвидаляються...\nЗачекайте."
+    "ua": "Дані, створені цією консоллю\nна карті microSD, стали\nнепридатними після перенесення.\nДані Nintendo 3DS\nна карті microSD зараз\nвидаляються… Зачекайте."
   },
   "CC_06_Header": {
     "en": "Data on the SD Card has been deleted.",
@@ -369,11 +369,11 @@
   },
   "CC_06_Window": {
     "en": "The Nintendo 3DS data on\nthe SD Card has been deleted.",
-    "ua": "Дані Nintendo 3DS на\nкарті SD видалено."
+    "ua": "Дані Nintendo 3DS\nна карті SD видалено."
   },
   "CC_06_Window_S": {
     "en": "The Nintendo 3DS data on the\nmicroSD card has been deleted.",
-    "ua": "Дані Nintendo 3DS на карті\nmicroSD видалено."
+    "ua": "Дані Nintendo 3DS\nна карті microSD видалено."
   },
   "CC_06_Window_None": {
     "en": "There was no data on\nthe SD Card that could\nbe deleted.",
@@ -397,15 +397,15 @@
   },
   "CC_08_Window_S": {
     "en": "To delete data on a different\nmicroSD card, turn the power off,\ninsert the microSD card and\ntry again.",
-    "ua": "Щоб видалити дані з іншої карти\nmicroSD, вимкніть консоль,\nвставте карту microSD\nі спробуйте ще раз."
+    "ua": "Щоб видалити дані з іншої\nкарти microSD, вимкніть консоль,\nвставте карту microSD\nі спробуйте ще раз."
   },
   "SCR_01_Header": {
     "en": "Processing microSD card...",
-    "ua": "Обробка карти microSD..."
+    "ua": "Обробка карти microSD…"
   },
   "SCR_01_Window": {
     "en": "Processing data from source\nSD card...\n\nThis may take a while.\nPlease wait.",
-    "ua": "Обробка даних із карти SD\nконсолі-джерела...\n\nЦе може тривати довго.\nЗачекайте."
+    "ua": "Обробка даних із карти SD\nконсолі-джерела…\n\nЦе може тривати довго.\nЗачекайте."
   },
   "SCR_03_Window": {
     "en": "An error occurred while processing\nphoto, video or audio data.",
@@ -413,7 +413,7 @@
   },
   "CR_00_Window": {
     "en": "Checking SD card...\n\nThis may take a while.\nPlease wait.",
-    "ua": "Перевірка карти SD...\n\nЦе може тривати довго.\nЗачекайте."
+    "ua": "Перевірка карти SD…\n\nЦе може тривати довго.\nЗачекайте."
   },
   "CR_00_Window_SdNone": {
     "en": "Could not detect SD card.\n\nPlease insert an SD card\nand try again.",
@@ -421,7 +421,7 @@
   },
   "CR_00_Window_SdNone_S": {
     "en": "Could not detect microSD card.\n\nPlease insert a microSD card\nand try again.\nTurn off the power before removing\nor inserting a microSD card.",
-    "ua": "Карту microSD не виявлено.\n\nВставте карту microSD\nі спробуйте ще раз.\nВимикайте консоль перед тим,\nяк виймати чи вставляти карту\nmicroSD."
+    "ua": "Карту microSD не виявлено.\n\nВставте карту microSD\nі спробуйте ще раз.\nВимикайте консоль перед тим,\nяк виймати чи вставляти\nкарту microSD."
   },
   "CR_00_Window_SdLock": {
     "en": "Write-protection is enabled on\nthe SD card.\n\nPlease check the SD card\nand try again.",
@@ -441,7 +441,7 @@
   },
   "CR_01_Window": {
     "en": "SD cards cannot be inserted into\nthe target system's microSD card\nslot. The following three methods\ncan be used to transfer SD card\ndata to the target system.\n\n• If a file exists on both the\nSD card and microSD card, then\nthe file on the microSD card will\nbe overwritten.\n---------------------------\n\n1. Wireless Transfer (All Data)\n\nMove all SD card data to the\ntarget system's microSD card\nwirelessly. \n• The transfer may take a while\ndepending on data size.\n• If there isn't enough space on\nthe target system's microSD card\nthen either manage the content\non the SD card, or insert a\nhigher-capacity microSD card,\nand try again. The following\nmethod can also be used.\n---------------------------\n\n2. Wireless Transfer (Limited Data)\n\nUse this method when the target\nsystem's microSD card does not\nhave enough free space available.\nAll data except Nintendo 3DS\ndownload software will be moved\nto the microSD card. After transfer\nis complete, any purchased\ndownloadable software can be\nredownloaded at no extra cost\nfrom Nintendo eShop.\n• Nintendo 3DS software data will\nbe restored once you launch the\nsoftware after redownloading it.\n• If there is not enough free space\navailable on the microSD card\nand the data cannot be restored,\ngo to Data Management in the\nSystem Settings and select\nSave Data Backup.\n---------------------------\n\n3. Copy via PC\n\nAfter the transfer is complete,\nuse a PC to delete data from the\ntarget system's microSD card,\nthen copy the data from the\nSD card onto it.\n\nPlease refer to the Operations\nManual for further details.\n",
-    "ua": "Карту SD не можна вставити\nу роз'єм microSD\nконсолі-приймача.\nДані з карти SD можна перенести\nна консоль-приймач одним\nіз трьох способів.\n\n• Якщо файл є і на карті SD,\nі на карті microSD, файл\nна карті microSD буде\nперезаписано.\n---------------------------\n\n1. Бездротове перенесення (усі\nдані)\n\nУсі дані з карти SD переносяться\nна карту microSD\nконсолі-приймача\nбездротово. \n• Тривалість залежить від обсягу\nданих.\n• Якщо на карті microSD приймача\nбракує місця, або впорядкуйте\nвміст карти SD, або вставте карту\nmicroSD більшого обсягу\nй спробуйте ще раз. Можна\nтакож\nскористатися наступним\nспособом.\n---------------------------\n\n2. Бездротове перенесення\n(частина даних)\n\nБеріть цей спосіб, коли на карті\nmicroSD приймача бракує\nвільного\nмісця. На карту microSD\nпереноситься\nвсе, крім завантажених програм\nNintendo 3DS. Після перенесення\nкуплені програми можна\nбезкоштовно\nзавантажити знову з Nintendo\neShop.\n• Дані програм Nintendo 3DS\nвідновляться, коли ви запустите\nпрограму після завантаження.\n• Якщо на карті microSD бракує\nмісця і дані відновити не\nвдається,\nвідкрийте «Керування даними»\nв налаштуваннях системи\nй виберіть «Резервні копії\nзбережень».\n---------------------------\n\n3. Копіювання через ПК\n\nПісля перенесення видаліть\nна комп'ютері дані з карти\nmicroSD\nконсолі-приймача, тоді скопіюйте\nна неї дані з карти SD.\n\nДокладніше — у посібнику\nз користування.\n"
+    "ua": "Карту SD не можна вставити\nу роз'єм microSD\nконсолі-приймача. Дані\nз карти SD можна перенести\nна консоль-приймач одним\nіз трьох способів.\n\n• Якщо файл є і на карті SD,\nі на карті microSD, файл\nна карті microSD буде\nперезаписано.\n---------------------------\n\n1. Бездротове перенесення (усі\nдані)\n\nУсі дані з карти SD переносяться\nна карту microSD\nконсолі-приймача бездротово.\n• Тривалість залежить від обсягу\nданих.\n• Якщо на карті microSD приймача\nбракує місця, або впорядкуйте\nвміст карти SD, або вставте\nкарту microSD більшого обсягу\nй спробуйте ще раз. Можна\nтакож скористатися наступним\nспособом.\n---------------------------\n\n2. Бездротове перенесення\n(частина даних)\n\nБеріть цей спосіб, коли\nна карті microSD приймача\nбракує вільного місця.\nНа карту microSD переноситься\nвсе, крім завантажених програм\nNintendo 3DS. Після перенесення\nкуплені програми можна\nбезкоштовно завантажити знову\nз Nintendo eShop.\n• Дані програм Nintendo 3DS\nвідновляться, коли ви запустите\nпрограму після завантаження.\n• Якщо на карті microSD бракує\nмісця і дані відновити\nне вдається, відкрийте\n«Керування даними»\nв налаштуваннях системи\nй виберіть «Резервні копії\nзбережень».\n---------------------------\n\n3. Копіювання через ПК\n\nПісля перенесення видаліть\nна комп'ютері дані\nз карти microSD\nконсолі-приймача, тоді скопіюйте\nна неї дані з карти SD.\n\nДокладніше — у посібнику\nз користування.\n"
   },
   "CR_02_Header": {
     "en": "SD card confirmation.",
@@ -449,7 +449,7 @@
   },
   "CR_02_Window": {
     "en": "If you use any other SD cards\nwith this system, copy the data for\neach one onto a different microSD\ncard. Refer to the Operations\nManual for further details.\n\n{t:0.3:0100}If you cannot copy the data using\na PC, data stored on SD cards\nother than the one in your system\ncannot be used on the target\nsystem.{t:0.3:ffff}\n\nData from multiple SD cards\ncannot be combined on a single\nmicroSD card.",
-    "ua": "Якщо ви користуєтеся з цією\nконсоллю іншими картами SD,\nскопіюйте дані з кожної на\nокрему\nкарту microSD. Докладніше —\nу посібнику з користування.\n\n{t:0.3:0100}Якщо скопіювати дані на\nкомп'ютері\nне вийде, дані з карт SD, окрім\nтієї,\nщо в консолі, на\nконсолі-приймачі\nне працюватимуть.{t:0.3:ffff}\n\nДані з кількох карт SD не можна\nоб'єднати на одній карті microSD."
+    "ua": "Якщо ви користуєтеся з цією\nконсоллю іншими картами SD,\nскопіюйте дані з кожної\nна окрему\nкарту microSD. Докладніше —\nу посібнику з користування.\n\n{t:0.3:0100}Якщо скопіювати дані\nна комп'ютері\nне вийде, дані з карт SD, окрім\nтієї,\nщо в консолі,\nна консолі-приймачі\nне працюватимуть.{t:0.3:ffff}\n\nДані з кількох карт SD не можна\nоб'єднати на одній карті microSD."
   },
   "CR_03_Window": {
     "en": "Are you using an SD card or\nminiSD card with your system?\n(Please select \"No\" if you are\nusing a {t:0.3:0100}microSD card{t:0.3:ffff}.)",
@@ -513,7 +513,7 @@
   },
   "CR_05_Window_01": {
     "en": "To complete the transfer, use a PC\nto {t:0.3:0100}delete all data{t:0.3:ffff} from the target\nsystem's microSD card, then copy\nthe data from this system's SD card\nto the microSD card.",
-    "ua": "Щоб завершити перенесення, {t:0.3:0100}видаліть\nна комп'ютері всі дані{t:0.3:ffff} з карти microSD\nконсолі-приймача, тоді скопіюйте\nдані з карти SD цієї консолі\nна карту microSD."
+    "ua": "Щоб завершити перенесення,\n{t:0.3:0100}видаліть на комп'ютері всі дані{t:0.3:ffff}\nз карти microSD консолі-приймача,\nтоді скопіюйте дані з карти SD цієї\nконсолі на карту microSD."
   },
   "CR_05_Window_02": {
     "en": "Please insert the microSD card into\nthe target system after copying the\ndata to it with a PC.",
@@ -521,7 +521,7 @@
   },
   "CR_05_Window_03": {
     "en": "Please check the following\nbefore continuing.\n\nRequirements:\nA microSD card reader/writer or\nPC with a microSD card slot.\n\nProcedure:\n{t:0.3:0100}Delete{t:0.3:ffff} data on the target\nmicroSD card (copy any essential\ndata onto the PC first).\n\nCopy the entire contents of this\nsystem's SD card to the microSD\ncard.\n\nPlease refer to the Operations\nManual for further details.\n",
-    "ua": "Перед тим як продовжити,\nперевірте таке.\n\nЩо потрібно:\nпристрій для читання карт\nmicroSD\nабо комп'ютер із роз'ємом\nmicroSD.\n\nПорядок дій:\n{t:0.3:0100}Видаліть{t:0.3:ffff} дані з карти microSD\nконсолі-приймача (спершу\nскопіюйте\nвсе потрібне на комп'ютер).\n\nСкопіюйте весь вміст карти SD\nцієї консолі на карту microSD.\n\nДокладніше — у посібнику\nз користування.\n"
+    "ua": "Перед тим як продовжити,\nперевірте таке.\n\nЩо потрібно:\nпристрій для читання\nкарт microSD\nабо комп'ютер із роз'ємом\nmicroSD.\n\nПорядок дій:\n{t:0.3:0100}Видаліть{t:0.3:ffff} дані з карти microSD\nконсолі-приймача (спершу\nскопіюйте\nвсе потрібне на комп'ютер).\n\nСкопіюйте весь вміст карти SD\nцієї консолі на карту microSD.\n\nДокладніше — у посібнику\nз користування.\n"
   },
   "CR_05_Button_Cannot": {
     "en": "",
@@ -533,15 +533,15 @@
   },
   "CR_06_Window_PNOTE": {
     "en": "The transfer will cause the\nNintendo 3DS Camera photo and\nvideo data to exceed the limit set\nby the management file.",
-    "ua": "Після перенесення фото й відео\nNintendo 3DS Камери перевищать\nмежу, задану файлом керування."
+    "ua": "Після перенесення фото й відео\nКамери Nintendo 3DS перевищать\nмежу, задану файлом керування."
   },
   "CR_06_Window_Voice": {
     "en": "The transfer will cause the\nNintendo 3DS Sound recording\ndata to exceed the limit set by\nthe management file.",
-    "ua": "Після перенесення записи\nNintendo 3DS Звуку перевищать\nмежу, задану файлом керування."
+    "ua": "Після перенесення записи\nЗвуку Nintendo 3DS перевищать\nмежу, задану файлом керування."
   },
   "CR_06_Window_Favorite": {
     "en": "The transfer will cause the\nNintendo 3DS Sound playlists\nto exceed the limit set by the\nmanagement file.",
-    "ua": "Після перенесення списки\nвідтворення Nintendo 3DS Звуку\nперевищать межу, задану\nфайлом керування."
+    "ua": "Після перенесення списки\nвідтворення Звуку Nintendo 3DS\nперевищать межу, задану\nфайлом керування."
   },
   "CR_06_Window": {
     "en": "Please manage the content for the\nrelevant data on the SD card before\nattempting the transfer again.",
@@ -581,7 +581,7 @@
   },
   "CR_08_Window": {
     "en": "A microSD card is required to\ntransfer data from the source\nsystem's SD card. Turn the power\noff and insert a microSD card in\nthis system then try again.",
-    "ua": "Щоб перенести дані з карти SD\nконсолі-джерела, потрібна карта\nmicroSD. Вимкніть консоль,\nвставте\nкарту microSD у цю консоль\nі спробуйте ще раз."
+    "ua": "Щоб перенести дані з карти SD\nконсолі-джерела, потрібна\nкарта microSD. Вимкніть консоль,\nвставте\nкарту microSD у цю консоль\nі спробуйте ще раз."
   },
   "CR_09_Window": {
     "en": "This SD card is not the one\ncontaining the transferred\nNintendo DSiWare data.\nPlease check the SD card\nand try again.",
@@ -605,11 +605,11 @@
   },
   "SB_03_Header": {
     "en": "Deleting data...",
-    "ua": "Видалення даних..."
+    "ua": "Видалення даних…"
   },
   "SB_03_Window": {
     "en": "Deleting data...\nPlease wait.",
-    "ua": "Видалення даних...\nЗачекайте."
+    "ua": "Видалення даних…\nЗачекайте."
   },
   "SB_04_Window": {
     "en": "There is no incompletely\ntransferred data.",
@@ -617,11 +617,11 @@
   },
   "SB_06_Window": {
     "en": "An SD card process failed.\nTurn the power off, check the\nSD card and then try again.",
-    "ua": "Не вдалося виконати дію з\nкартою SD.\nВимкніть консоль, перевірте\nкарту SD і спробуйте ще раз."
+    "ua": "Не вдалося виконати дію\nз картою SD.\nВимкніть консоль, перевірте\nкарту SD і спробуйте ще раз."
   },
   "SB_06_Window_S": {
     "en": "A microSD card process failed.\nTurn the power off, check the\nSD card and then try again.",
-    "ua": "Не вдалося виконати дію з картою\nmicroSD.\nВимкніть консоль, перевірте\nкарту SD і спробуйте ще раз."
+    "ua": "Не вдалося виконати дію\nз картою microSD.\nВимкніть консоль, перевірте\nкарту SD і спробуйте ще раз."
   },
   "SE_01_Header": {
     "en": "Moving Nintendo DSiWare\nto the SD Card.",
@@ -637,7 +637,7 @@
   },
   "SE_01_Window_S": {
     "en": "Nintendo DSiWare titles in\nthe system memory will be\nmoved to the microSD card.\n\nTurn the power off before removing\nor inserting the microSD card.",
-    "ua": "Програми Nintendo DSiWare\nз пам'яті системи буде\nпереміщено на карту microSD.\n\nВимикайте консоль перед тим,\nяк виймати чи вставляти карту\nmicroSD."
+    "ua": "Програми Nintendo DSiWare\nз пам'яті системи буде\nпереміщено на карту microSD.\n\nВимикайте консоль перед тим,\nяк виймати чи вставляти\nкарту microSD."
   },
   "SE_02_Window": {
     "en": "Data for the following\nNintendo DSiWare stored in\nthe System Memory will be\ndeleted if you continue.\n\nYou can redownload Nintendo\nDSiWare from Nintendo eShop.\n",
@@ -649,11 +649,11 @@
   },
   "SE_03_Window": {
     "en": "Moving from the System Memory\nto the SD Card... Please wait.\n(This may take a while.)",
-    "ua": "Переміщення з пам'яті системи\nна карту SD... Зачекайте.\n(Це може тривати довго.)"
+    "ua": "Переміщення з пам'яті системи\nна карту SD… Зачекайте.\n(Це може тривати довго.)"
   },
   "SE_03_Window_S": {
     "en": "Moving from the system memory\nto the microSD card... Please wait.\n(This may take a while.)",
-    "ua": "Переміщення з пам'яті системи\nна карту microSD... Зачекайте.\n(Це може тривати довго.)"
+    "ua": "Переміщення з пам'яті системи\nна карту microSD… Зачекайте.\n(Це може тривати довго.)"
   },
   "SE_04_Window_Capacity": {
     "en": "There is not enough free space\non the SD Card. Turn off the system\nand make more space available,\nor insert a different SD Card and\ntry again.",
@@ -689,7 +689,7 @@
   },
   "SE_08_Window_S": {
     "en": "The data moved to the microSD\ncard will be deleted.\n\nIs this OK?",
-    "ua": "Дані, переміщені на карту microSD,\nбуде видалено.\n\nПродовжити?"
+    "ua": "Дані, переміщені\nна карту microSD, буде видалено.\n\nПродовжити?"
   },
   "SI_01_Header": {
     "en": "Moving Nintendo DSiWare\nto the System Memory.",
@@ -701,7 +701,7 @@
   },
   "SI_01_Window_S": {
     "en": "Nintendo DSiWare will now be\nmoved to the system memory\nfrom the microSD card.\n\nInsert the microSD card which has\nthe Nintendo DSiWare from the\nsource system stored on it.\n\nTurn the power off before\nremoving or inserting the\nmicroSD card.\n\nThis screen will be displayed after\nthe power is turned on again.",
-    "ua": "Зараз Nintendo DSiWare буде\nпереміщено з карти microSD\nу пам'ять системи.\n\nВставте карту microSD, на якій\nлежать програми Nintendo\nDSiWare\nз консолі-джерела.\n\nВимикайте консоль перед тим,\nяк виймати чи вставляти\nкарту microSD.\n\nЦей екран з'явиться знову\nпісля ввімкнення."
+    "ua": "Зараз Nintendo DSiWare буде\nпереміщено з карти microSD\nу пам'ять системи.\n\nВставте карту microSD, на якій\nлежать програми\nNintendo DSiWare\nз консолі-джерела.\n\nВимикайте консоль перед тим,\nяк виймати чи вставляти\nкарту microSD.\n\nЦей екран з'явиться знову\nпісля ввімкнення."
   },
   "SI_01_Window_noPC": {
     "en": "Nintendo DSiWare will now be\nmoved to the system memory\nfrom the microSD card.",
@@ -709,23 +709,23 @@
   },
   "SI_01_Window_PC": {
     "en": "Nintendo DSiWare will now be\nmoved to the system memory.\n\nUse a PC to copy the SD card\ncontaining the source system's\nNintendo DSiWare data to the\nmicroSD card and insert it into this\nsystem. Refer to the Operations\nManual for details.\n\nTurn the power off before\nremoving or inserting the\nmicroSD card.\n\nThis screen will be displayed after\nthe power is turned on again.",
-    "ua": "Зараз Nintendo DSiWare буде\nпереміщено в пам'ять системи.\n\nСкопіюйте на комп'ютері карту\nSD\nз даними Nintendo DSiWare\nконсолі-джерела на карту\nmicroSD\nі вставте її в цю консоль.\nДокладніше —\nу посібнику з користування.\n\nВимикайте консоль перед тим,\nяк виймати чи вставляти\nкарту microSD.\n\nЦей екран з'явиться знову\nпісля ввімкнення."
+    "ua": "Зараз Nintendo DSiWare буде\nпереміщено в пам'ять системи.\n\nСкопіюйте на комп'ютері\nкарту SD\nз даними Nintendo DSiWare\nконсолі-джерела\nна карту microSD\nі вставте її в цю консоль.\nДокладніше —\nу посібнику з користування.\n\nВимикайте консоль перед тим,\nяк виймати чи вставляти\nкарту microSD.\n\nЦей екран з'явиться знову\nпісля ввімкнення."
   },
   "SI_02_Window": {
     "en": "Data for the following\nNintendo DSiWare stored in\nthe System Memory will be\ndeleted if you end the transfer.\n\nYou can redownload Nintendo\nDSiWare from Nintendo eShop.",
-    "ua": "Якщо завершити перенесення,\nдані таких програм Nintendo\nDSiWare з пам'яті системи\nбуде видалено.\n\nNintendo DSiWare можна\nзавантажити знову\nз Nintendo eShop."
+    "ua": "Якщо завершити перенесення,\nдані таких програм\nNintendo DSiWare з пам'яті\nсистеми буде видалено.\n\nNintendo DSiWare можна\nзавантажити знову\nз Nintendo eShop."
   },
   "SI_02_Window_S": {
     "en": "Data for the following\nNintendo DSiWare stored on\nthe microSD card will be\ndeleted if you end the transfer.\n\nYou can redownload Nintendo\nDSiWare from Nintendo eShop.",
-    "ua": "Якщо завершити перенесення,\nдані таких програм Nintendo\nDSiWare з карти microSD\nбуде видалено.\n\nNintendo DSiWare можна\nзавантажити знову\nз Nintendo eShop."
+    "ua": "Якщо завершити перенесення,\nдані таких програм\nNintendo DSiWare\nз карти microSD буде видалено.\n\nNintendo DSiWare можна\nзавантажити знову\nз Nintendo eShop."
   },
   "SI_03_Window": {
     "en": "Moving from the SD Card to the\nSystem Memory... Please wait.\n(This may take a while.)",
-    "ua": "Переміщення з карти SD\nу пам'ять системи... Зачекайте.\n(Це може тривати довго.)"
+    "ua": "Переміщення з карти SD\nу пам'ять системи… Зачекайте.\n(Це може тривати довго.)"
   },
   "SI_03_Window_S": {
     "en": "Moving from the microSD card to\nthe system memory... Please wait.\n(This may take a while.)",
-    "ua": "Переміщення з карти microSD\nу пам'ять системи... Зачекайте.\n(Це може тривати довго.)"
+    "ua": "Переміщення з карти microSD\nу пам'ять системи… Зачекайте.\n(Це може тривати довго.)"
   },
   "SI_04_Window_None": {
     "en": "No SD Card found.",
@@ -749,19 +749,19 @@
   },
   "SI_04_Window_Other_S": {
     "en": "Could not access microSD card.",
-    "ua": "Немає доступу до карти\nmicroSD."
+    "ua": "Немає доступу\nдо карти microSD."
   },
   "SI_04_Window_Another": {
     "en": "No Nintendo DSiWare data found.\nPlease insert the SD card\ncontaining the data transferred from\nthe source system and try again.",
-    "ua": "Даних Nintendo DSiWare не\nзнайдено.\nВставте карту SD з даними,\nперенесеними з консолі-джерела,\nі спробуйте ще раз."
+    "ua": "Даних Nintendo DSiWare\nне знайдено.\nВставте карту SD з даними,\nперенесеними з консолі-джерела,\nі спробуйте ще раз."
   },
   "SI_04_Window_Another_S": {
     "en": "No Nintendo DSiWare data found.\nPlease insert the microSD card\ncontaining the data transferred from\nthe source system and try again.\n\nTurn off the power before removing\nor inserting the microSD card.",
-    "ua": "Даних Nintendo DSiWare\nне знайдено. Вставте карту\nmicroSD з даними, перенесеними\nз консолі-джерела, і спробуйте\nще раз.\n\nВимикайте консоль перед\nвийманням карти microSD."
+    "ua": "Даних Nintendo DSiWare\nне знайдено. Вставте\nкарту microSD з даними,\nперенесеними з консолі-джерела,\nі спробуйте ще раз.\n\nВимикайте консоль перед\nвийманням карти microSD."
   },
   "SI_05_Window": {
     "en": "The Nintendo DSiWare that was\nmoved from the source system\nwill be deleted.\n\nIs this OK?",
-    "ua": "Програми Nintendo DSiWare,\nперенесені з консолі-джерела,\nбуде видалено.\n\nПродовжити?"
+    "ua": "Перенесені з консолі-джерела\nпрограми Nintendo DSiWare\nбуде видалено.\n\nПродовжити?"
   },
   "SI_06_Window": {
     "en": "",
@@ -789,7 +789,7 @@
   },
   "BC_01_Header": {
     "en": "Please pay attention to the amount\nof battery power remaining.",
-    "ua": "Зверніть увагу на\nзаряд батареї."
+    "ua": "Зверніть увагу\nна заряд батареї."
   },
   "BC_01_Window": {
     "en": "Please plug in the AC adapter\nto ensure that the system\ndoes not lose power during\nthe transfer.",
@@ -797,7 +797,7 @@
   },
   "BC_02_Header": {
     "en": "Please pay attention to the amount\nof battery power remaining.",
-    "ua": "Зверніть увагу на\nзаряд батареї."
+    "ua": "Зверніть увагу\nна заряд батареї."
   },
   "BC_02_Window": {
     "en": "Battery power is low.\n\nTo continue transferring data,\nplease plug in the AC adapter.",
@@ -849,7 +849,7 @@
   },
   "MP_05_Window": {
     "en": "If you have used funds in multiple\ncurrencies on the target system,\nonly funds in the currency matching\nyour Nintendo Network ID's country\nsettings will be added to your ID.\nFunds in other currencies will be\ndeleted, and become unusable.\nContinue with the system transfer?",
-    "ua": "Якщо на консолі-приймачі ви\nкористувалися коштами в кількох\nвалютах, до вашого ID додадуться\nлише кошти у валюті, що\nвідповідає\nкраїні вашого Nintendo Network ID.\nКошти в інших валютах буде\nвидалено, і вони стануть\nнепридатними.\nПродовжити перенесення?"
+    "ua": "Якщо на консолі-приймачі ви\nкористувалися коштами в кількох\nвалютах, до вашого ID додадуться\nлише кошти у валюті,\nщо відповідає\nкраїні вашого Nintendo Network ID.\nКошти в інших валютах буде\nвидалено, і вони стануть\nнепридатними.\nПродовжити перенесення?"
   },
   "MP_06_Header_fromTWL": {
     "en": "Searching for a source system.",
@@ -857,7 +857,7 @@
   },
   "MP_06_Window_fromTWL": {
     "en": "On the source Nintendo DSi\nsystem, touch {t:0.3:0100}Send from\nthis System{t:0.3:ffff}, then touch\n\"{t:0.3:0100}{t:1.0:}{t:0.3:ffff}\".",
-    "ua": "На консолі-джерелі Nintendo\nDSi\nторкніться {t:0.3:0100}Надіслати\nз цієї консолі{t:0.3:ffff}, а тоді\n«{t:0.3:0100}{t:1.0:}{t:0.3:ffff}»."
+    "ua": "На консолі-джерелі\nNintendo DSi\nторкніться {t:0.3:0100}Надіслати\nз цієї консолі{t:0.3:ffff}, а тоді\n«{t:0.3:0100}{t:1.0:}{t:0.3:ffff}»."
   },
   "MP_06_Window_fromCTR": {
     "en": "On the source Nintendo 3DS\nsystem, touch {t:0.3:0100}Send from\nthis system{t:0.3:ffff}, then touch\n\"{t:0.3:0100}{t:1.0:}{t:0.3:ffff}\".",
@@ -893,15 +893,15 @@
   },
   "CN_01_Window": {
     "en": "This system is linked to a Nintendo\nNetwork ID. You must sign in before\nyou can perform a transfer.\n(Your ID will also be transferred.)",
-    "ua": "Ця консоль прив'язана до\nNintendo\nNetwork ID. Щоб виконати\nперенесення,\nтреба увійти. (Ваш ID теж буде\nперенесено.)"
+    "ua": "Ця консоль прив'язана\nдо Nintendo Network ID. Щоб\nвиконати перенесення, треба\nувійти. (Ваш ID теж буде\nперенесено.)"
   },
   "CN_02_Window": {
     "en": "You cannot transfer to a system that\nis already linked to a Nintendo\nNetwork ID. You will need to select\nFormat System Memory in the\nSystem Settings to proceed.",
-    "ua": "Не можна переносити на консоль,\nяка вже прив'язана до Nintendo\nNetwork ID. Щоб продовжити,\nвиберіть «Форматувати пам'ять\nсистеми» в налаштуваннях\nсистеми."
+    "ua": "Не можна переносити на консоль,\nяка вже прив'язана\nдо Nintendo Network ID. Щоб\nпродовжити, виберіть\n«Форматувати пам'ять системи»\nв налаштуваннях системи."
   },
   "CN_02_Window_00": {
     "en": "You cannot perform a system\ntransfer to a system already linked\nto a Nintendo Network ID.\n\nIn this case, select Format System\nMemory in the System Settings to\nremove the link to the ID.\n\nAfter the system transfer, you can\nlink to it again via \nNintendo Network ID Settings ⇒\nLink an Existing ID.\n\nYou can only have one ID linked\nto a system at a time. If the source\nsystem was already linked to an ID\nand you wish to change to another\nID after the system transfer, you\nmust remove the link to the\nexisting ID by formatting the\nsystem memory. It will then be\npossible to link the other ID.",
-    "ua": "Не можна перенести дані\nна консоль, яка вже прив'язана\nдо Nintendo Network ID.\n\nУ такому разі виберіть\n«Форматувати пам'ять системи»\nв налаштуваннях системи, щоб\nвідв'язати ID.\n\nПісля перенесення ID можна\nприв'язати знову через \nНалаштування Nintendo Network\nID ⇒\nПрив'язати наявний ID.\n\nДо консолі можна прив'язати\nлише один ID. Якщо\nконсоль-джерело\nвже була прив'язана до ID, а ви\nхочете після перенесення\nзмінити\nID на інший, спершу відв'яжіть\nнаявний, відформатувавши\nпам'ять системи. Тоді можна\nбуде прив'язати інший ID."
+    "ua": "Не можна перенести дані\nна консоль, яка вже прив'язана\nдо Nintendo Network ID.\n\nУ такому разі виберіть\n«Форматувати пам'ять системи»\nв налаштуваннях системи, щоб\nвідв'язати ID.\n\nПісля перенесення ID можна\nприв'язати знову через\nНалаштування\nNintendo Network ID ⇒\nПрив'язати наявний ID.\n\nДо консолі можна прив'язати\nлише один ID. Якщо\nконсоль-джерело вже була\nприв'язана до ID, а ви хочете\nпісля перенесення змінити ID\nна інший, спершу відв'яжіть\nнаявний, відформатувавши\nпам'ять системи. Тоді можна буде\nприв'язати інший ID."
   },
   "CN_03_Window": {
     "en": "",
@@ -921,15 +921,15 @@
   },
   "SA_05_Upper_Window_Retry": {
     "en": "Attempting to connect to the internet.\n{t:0.3:0100}Data may be lost if you turn the\npower off{t:0.3:ffff}.\n\nCheck that wireless communication is\nenabled and there are no problems\nwith the wireless environment.",
-    "ua": "Спроба з'єднатися з Інтернетом.\n{t:0.3:0100}Якщо вимкнути консоль, дані\nможуть загубитися{t:0.3:ffff}.\n\nПеревірте, чи ввімкнено бездротовий\nзв'язок і чи немає проблем\nіз бездротовим середовищем."
+    "ua": "Спроба з'єднатися з Інтернетом.\n{t:0.3:0100}Якщо вимкнути консоль, дані\nможуть загубитися{t:0.3:ffff}.\n\nПеревірте, чи ввімкнено\nбездротовий зв'язок і чи немає\nперешкод для нього."
   },
   "SA_06_Window": {
     "en": "Transferring data for\nNintendo eShop...\nNintendo eShop account activity\nfor this system will be deleted.",
-    "ua": "Перенесення даних\nNintendo eShop...\nІсторію покупок Nintendo eShop\nцієї консолі буде видалено."
+    "ua": "Перенесення даних\nNintendo eShop…\nІсторію покупок Nintendo eShop\nцієї консолі буде видалено."
   },
   "SA_07_Window": {
     "en": "Nintendo DSiWare\ntransfer complete.",
-    "ua": "Перенесення Nintendo DSiWare\nзавершено."
+    "ua": "Перенесення\nNintendo DSiWare завершено."
   },
   "Migrate_Finish_Header": {
     "en": "Transfer complete.",
@@ -941,11 +941,11 @@
   },
   "CA_00_Window": {
     "en": "Connecting to the internet\nto confirm that the transfer\ncan be performed...\n\nPlease wait.",
-    "ua": "З'єднання з Інтернетом,\nщоб перевірити, чи можна\nвиконати перенесення...\n\nЗачекайте."
+    "ua": "З'єднання з Інтернетом,\nщоб перевірити, чи можна\nвиконати перенесення…\n\nЗачекайте."
   },
   "CA_00_Window_AutoBoot": {
     "en": "Connecting to the internet...\n\nPlease wait.",
-    "ua": "З'єднання з Інтернетом...\n\nЗачекайте."
+    "ua": "З'єднання з Інтернетом…\n\nЗачекайте."
   },
   "CA_01_Window": {
     "en": "The transfer cannot be\nperformed at this time.\nThis may be due to either\na server system fault\nor server maintenance.\nPlease try again later.",
@@ -953,7 +953,7 @@
   },
   "CA_02_Window": {
     "en": "The System Transfer service has\nconcluded. Thank you for using\nthe service.",
-    "ua": "Сервіс перенесення даних\nприпинено. Дякуємо, що\nкористувалися ним."
+    "ua": "Сервіс перенесення даних\nприпинено. Дякуємо,\nщо користувалися ним."
   },
   "CA_03_Window": {
     "en": "The region information set\non this system has been\nchanged. Please connect to\nNintendo eShop and try again.\nIf Nintendo eShop is not\navailable in your region, you will\nnot be able to perform a transfer.",
@@ -973,15 +973,15 @@
   },
   "RA_02_Window": {
     "en": "Transferring Nintendo DSiWare...",
-    "ua": "Перенесення Nintendo\nDSiWare..."
+    "ua": "Перенесення\nNintendo DSiWare…"
   },
   "RA_03_Window_CTR": {
     "en": "Transferring data for\nNintendo eShop...",
-    "ua": "Перенесення даних\nNintendo eShop..."
+    "ua": "Перенесення даних\nNintendo eShop…"
   },
   "RA_04_Window": {
     "en": "Nintendo DSiWare\ntransfer complete.",
-    "ua": "Перенесення Nintendo\nDSiWare\nзавершено."
+    "ua": "Перенесення\nNintendo DSiWare\nзавершено."
   },
   "RS_01_Header": {
     "en": "",
@@ -989,7 +989,7 @@
   },
   "RS_01_Window": {
     "en": "Transferring Nintendo WFC\nConfiguration...",
-    "ua": "Перенесення налаштувань\nNintendo WFC..."
+    "ua": "Перенесення налаштувань\nNintendo WFC…"
   },
   "RS_02_Window": {
     "en": "Nintendo WFC Configuration\ntransfer complete.",
@@ -1009,7 +1009,7 @@
   },
   "SD_03_Window": {
     "en": "Transferring data...",
-    "ua": "Перенесення даних..."
+    "ua": "Перенесення даних…"
   },
   "RD_02_Header": {
     "en": "",
@@ -1017,7 +1017,7 @@
   },
   "RD_02_Window": {
     "en": "Transferring data...",
-    "ua": "Перенесення даних..."
+    "ua": "Перенесення даних…"
   },
   "RD_03_Window": {
     "en": "Data transfer complete.",
@@ -1033,7 +1033,7 @@
   },
   "RM_02_Window": {
     "en": "This transfer will not be\nreattempted.\nThis Nintendo DSiWare\ncan be redownloaded from\nNintendo eShop.",
-    "ua": "Це перенесення не\nповторюватиметься.\nЦю програму Nintendo DSiWare\nможна завантажити знову\nз Nintendo eShop."
+    "ua": "Це перенесення\nне повторюватиметься.\nЦю програму Nintendo DSiWare\nможна завантажити знову\nз Nintendo eShop."
   },
   "RM_03_Window": {
     "en": "There is not enough free space in\nthe System Memory. Use Nintendo\nDSiWare Data Management in the\nSystem Settings to make space.",
@@ -1061,19 +1061,19 @@
   },
   "SF_01_Window": {
     "en": "If you continue with the transfer:\n\n• Data on the target system will\nbe overwritten with data from\nthe source system\n\n• The System Memory of the\nsource system will be formatted,\ndeleting all data\n\n• Time-limited add-on content and\nadd-on content with a limited\nnumber of uses purchased on\nthe target system will be lost\n\n• Any software/add-on content\npresent on the target system will\nbe replaced with that of the\nsource system, and the original\ntarget system data will no longer\nbe usable\n\n• Data created by the target\nsystem on SD Cards will no\nlonger be usable (excluding\nNintendo 3DS Sound recordings\nand Nintendo 3DS Camera\nphotos and videos)\n\nOnce a transfer has been\nperformed, it cannot be undone.\n",
-    "ua": "Якщо продовжити перенесення:\n\n• дані на консолі-приймачі буде\nзамінено даними з\nконсолі-джерела;\n\n• пам'ять системи\nконсолі-джерела\nбуде відформатовано, і всі дані\nз неї буде видалено;\n\n• додатковий вміст на\nконсолі-приймачі\nз обмеженим терміном або\nкількістю\nвикористань буде втрачено;\n\n• програми й додатковий вміст\nна консолі-приймачі буде\nзамінено\nтими, що з консолі-джерела,\nа початкові дані приймача\nстануть\nнепридатними;\n\n• дані, створені\nконсоллю-приймачем\nна картах SD, стануть\nнепридатними\n(окрім записів Nintendo 3DS\nЗвуку\nта фото й відео Nintendo 3DS\nКамери).\n\nПісля перенесення скасувати\nйого вже не можна.\n"
+    "ua": "Якщо продовжити перенесення:\n\n• дані на консолі-приймачі буде\nзамінено даними\nз консолі-джерела;\n\n• пам'ять системи\nконсолі-джерела буде\nвідформатовано, і всі дані з неї\nбуде видалено;\n\n• додатковий вміст\nна консолі-приймачі з обмеженим\nтерміном або кількістю\nвикористань буде втрачено;\n\n• програми й додатковий вміст\nна консолі-приймачі буде\nзамінено тими,\nщо з консолі-джерела,\nа початкові дані приймача\nстануть непридатними;\n\n• дані, створені\nконсоллю-приймачем на картах\nSD, стануть непридатними (окрім\nзаписів Звуку Nintendo 3DS\nта фото й відео Камери\nNintendo 3DS).\n\nПісля перенесення скасувати\nйого вже не можна.\n"
   },
   "SF_01_Window_6thNUP": {
     "en": "If you continue with the transfer:\n\n• Data on the target system will\nbe overwritten with data from\nthe source system\n\n• The System Memory of the\nsource system will be formatted,\ndeleting all data\n\n• Time-limited add-on content and\nadd-on content with a limited\nnumber of uses purchased on\nthe target system will be lost\n\n• Any software/add-on content\npresent on the target system will\nbe replaced with that of the\nsource system, and the original\ntarget system data will no longer\nbe usable\n\n• Data created by the target\nsystem on SD Cards will no\nlonger be usable (excluding\nNintendo 3DS Sound recordings\nand Nintendo 3DS Camera\nphotos and videos)\n\nOnce a transfer has been\nperformed, it cannot be undone.\n",
-    "ua": "Якщо продовжити перенесення:\n\n• дані на консолі-приймачі буде\nзамінено даними з\nконсолі-джерела;\n\n• пам'ять системи\nконсолі-джерела\nбуде відформатовано, і всі дані\nз неї буде видалено;\n\n• додатковий вміст на\nконсолі-приймачі\nз обмеженим терміном або\nкількістю\nвикористань буде втрачено;\n\n• програми й додатковий вміст\nна консолі-приймачі буде\nзамінено\nтими, що з консолі-джерела,\nа початкові дані приймача\nстануть\nнепридатними;\n\n• дані, створені\nконсоллю-приймачем\nна картах SD, стануть\nнепридатними\n(окрім записів Nintendo 3DS\nЗвуку\nта фото й відео Nintendo 3DS\nКамери).\n\nПісля перенесення скасувати\nйого вже не можна.\n"
+    "ua": "Якщо продовжити перенесення:\n\n• дані на консолі-приймачі буде\nзамінено даними\nз консолі-джерела;\n\n• пам'ять системи\nконсолі-джерела буде\nвідформатовано, і всі дані з неї\nбуде видалено;\n\n• додатковий вміст\nна консолі-приймачі\nз обмеженим терміном або\nкількістю використань буде\nвтрачено;\n\n• програми й додатковий вміст\nна консолі-приймачі буде\nзамінено тими,\nщо з консолі-джерела,\nа початкові дані приймача\nстануть непридатними;\n\n• дані, створені\nконсоллю-приймачем на картах\nSD, стануть непридатними (окрім\nзаписів Звуку Nintendo 3DS\nта фото й відео Камери\nNintendo 3DS).\n\nПісля перенесення скасувати\nйого вже не можна.\n"
   },
   "SF_01_Window_S": {
     "en": "If you continue with the transfer:\n\n• Data on the target system will\nbe overwritten with data from\nthe source system\n\n• The System Memory of the\nsource system will be formatted,\ndeleting all data\n\n• Time-limited add-on content and\nadd-on content with a limited\nnumber of uses purchased on\nthe target system will be lost\n\n• Any software/add-on content\npresent on the target system will\nbe replaced with that of the\nsource system, and the original\ntarget system data will no longer\nbe usable\n\n• Data created by the target\nsystem on microSD cards will no\nlonger be usable (excluding\nNintendo 3DS Sound recordings\nand Nintendo 3DS Camera\nphotos and videos)\n\nOnce a transfer has been\nperformed, it cannot be undone.\n",
-    "ua": "Якщо продовжити перенесення:\n\n• дані на консолі-приймачі буде\nзамінено даними з\nконсолі-джерела;\n\n• пам'ять системи\nконсолі-джерела\nбуде відформатовано, і всі дані\nз неї буде видалено;\n\n• додатковий вміст на\nконсолі-приймачі\nз обмеженим терміном або\nкількістю\nвикористань буде втрачено;\n\n• програми й додатковий вміст\nна консолі-приймачі буде\nзамінено\nтими, що з консолі-джерела,\nа початкові дані приймача\nстануть\nнепридатними;\n\n• дані, створені\nконсоллю-приймачем\nна картах microSD, стануть\nнепридатними\n(окрім записів Nintendo 3DS\nЗвуку\nта фото й відео Nintendo 3DS\nКамери).\n\nПісля перенесення скасувати\nйого вже не можна.\n"
+    "ua": "Якщо продовжити перенесення:\n\n• дані на консолі-приймачі буде\nзамінено даними\nз консолі-джерела;\n\n• пам'ять системи\nконсолі-джерела буде\nвідформатовано, і всі дані з неї\nбуде видалено;\n\n• додатковий вміст\nна консолі-приймачі з обмеженим\nтерміном або кількістю\nвикористань буде втрачено;\n\n• програми й додатковий вміст\nна консолі-приймачі буде\nзамінено тими,\nщо з консолі-джерела,\nа початкові дані приймача\nстануть непридатними;\n\n• дані, створені\nконсоллю-приймачем на картах\nmicroSD, стануть непридатними\n(окрім записів Звуку\nNintendo 3DS та фото й відео\nКамери Nintendo 3DS).\n\nПісля перенесення скасувати\nйого вже не можна.\n"
   },
   "SF_02_Window": {
     "en": "Preparing for transfer...",
-    "ua": "Підготовка до\nперенесення..."
+    "ua": "Підготовка\nдо перенесення…"
   },
   "SF_04_Window": {
     "en": "The transfer process will replace\nall data on the target system with\nthat of this system. {t:0.3:0100}All data on\nthis system will then be deleted{t:0.3:ffff}.\nContinue?",
@@ -1085,7 +1085,7 @@
   },
   "SF_06_Window": {
     "en": "Transfer ending...",
-    "ua": "Завершення перенесення..."
+    "ua": "Завершення перенесення…"
   },
   "SF_06_Window_01": {
     "en": "",
@@ -1113,7 +1113,7 @@
   },
   "SF_08_Window": {
     "en": "Formatting the System Memory...\nPlease wait.\n\nOnce the System Memory has been\nformatted, the system will restart.",
-    "ua": "Форматування пам'яті системи...\nЗачекайте.\n\nПісля форматування консоль\nперезавантажиться."
+    "ua": "Форматування пам'яті системи…\nЗачекайте.\n\nПісля форматування консоль\nперезавантажиться."
   },
   "RF_01_Header": {
     "en": "Perform a full transfer.",
@@ -1121,7 +1121,7 @@
   },
   "RF_01_Window": {
     "en": "Preparing for full transfer...",
-    "ua": "Підготовка до повного\nперенесення..."
+    "ua": "Підготовка до повного\nперенесення…"
   },
   "RF_01_Header_CTR": {
     "en": "Perform a transfer.",
@@ -1129,7 +1129,7 @@
   },
   "RF_01_Window_CTR": {
     "en": "Preparing for transfer...",
-    "ua": "Підготовка до\nперенесення..."
+    "ua": "Підготовка\nдо перенесення…"
   },
   "RF_03_Window": {
     "en": "Full transfer complete.",
@@ -1185,7 +1185,7 @@
   },
   "RF_05_Window_PC_00_last": {
     "en": "{t:0.3:0100}Please complete the system\ntransfer after confirming the\nfollowing information.{t:0.3:ffff}\n\nThis is the final confirmation. If you\ndo not follow the instructions\ncorrectly, your source system's\nsave data may become unusable.",
-    "ua": "{t:0.3:0100}Завершіть перенесення, звіривши\nтаке.{t:0.3:ffff}\n\nЦе остання перевірка. Якщо не\nвиконати вказівки правильно,\nзбереження консолі-джерела\nможуть стати непридатними."
+    "ua": "{t:0.3:0100}Завершіть перенесення, звіривши\nтаке.{t:0.3:ffff}\n\nЦе остання перевірка. Якщо\nне виконати вказівки правильно,\nзбереження консолі-джерела\nможуть стати непридатними."
   },
   "RF_05_Window_PC_01": {
     "en": "Please use a PC to {t:0.3:0100}delete all data{t:0.3:ffff}\nfrom this system's microSD card\nbefore copying over the data from\nthe source system's SD card.",
@@ -1225,11 +1225,11 @@
   },
   "CS_04_Window": {
     "en": "If you have the same software or\nadd-on content on both systems,\nthe software or add-on content on\nthe target system will be deleted\nand will no longer be usable.\n\nAdd-on content on the target\nsystem with a time limit or a limit\non the number of possible uses\nwill also be deleted and will no\nlonger be usable.\n\n(Software and add-on content on\nthe source system will be usable\non the target system.)\n",
-    "ua": "Якщо та сама програма чи\nдодатковий\nвміст є на обох консолях,\nпрограму\nчи вміст на консолі-приймачі\nбуде\nвидалено, і вони стануть\nнепридатними.\n\nДодатковий вміст на\nконсолі-приймачі\nз обмеженим терміном або\nкількістю\nвикористань теж буде видалено,\nі він стане непридатним.\n\n(Програми й додатковий вміст\nз консолі-джерела\nпрацюватимуть\nна консолі-приймачі.)\n"
+    "ua": "Якщо та сама програма\nчи додатковий вміст є на обох\nконсолях, програму чи вміст\nна консолі-приймачі буде\nвидалено, і вони стануть\nнепридатними.\n\nДодатковий вміст\nна консолі-приймачі\nз обмеженим терміном\nабо кількістю використань теж\nбуде видалено, і він стане\nнепридатним.\n\n(Програми й додатковий вміст\nз консолі-джерела\nпрацюватимуть\nна консолі-приймачі.)\n"
   },
   "CS_04_Window_Caution": {
     "en": "If you have the same software or\nadd-on content on both systems,\nthe software or add-on content on\nthe target system will be deleted\nand will no longer be usable.\n\nAdd-on content on the target\nsystem with a time limit or a limit\non the number of possible uses\nwill also be deleted and will no\nlonger be usable.\n\n(Software and add-on content on\nthe source system will be usable\non the target system.)\n\nThe title for some software and/or\nadd-on content could not be\ndisplayed. Please check your\naccount activity in Nintendo eShop\nfor information on software you\nown.\n",
-    "ua": "Якщо та сама програма чи\nдодатковий\nвміст є на обох консолях,\nпрограму\nчи вміст на консолі-приймачі\nбуде\nвидалено, і вони стануть\nнепридатними.\n\nДодатковий вміст на\nконсолі-приймачі\nз обмеженим терміном або\nкількістю\nвикористань теж буде видалено,\nі він стане непридатним.\n\n(Програми й додатковий вміст\nз консолі-джерела\nпрацюватимуть\nна консолі-приймачі.)\n\nНазву частини програм або\nдодаткового вмісту показати не\nвдалося. Гляньте історію покупок\nу Nintendo eShop, щоб дізнатися,\nщо саме вам належить.\n"
+    "ua": "Якщо та сама програма\nчи додатковий вміст є на обох\nконсолях, програму чи вміст\nна консолі-приймачі буде\nвидалено, і вони стануть\nнепридатними.\n\nДодатковий вміст\nна консолі-приймачі з обмеженим\nтерміном або кількістю\nвикористань теж буде видалено,\nі він стане непридатним.\n\n(Програми й додатковий вміст\nз консолі-джерела\nпрацюватимуть\nна консолі-приймачі.)\n\nНазву частини програм\nабо додаткового вмісту показати\nне вдалося. Гляньте історію\nпокупок у Nintendo eShop, щоб\nдізнатися, що саме вам\nналежить.\n"
   },
   "CS_04_Info_00": {
     "en": "Software to be deleted on\nthe target system",
@@ -1237,11 +1237,11 @@
   },
   "CS_04_Info_00_other": {
     "en": "...{t:3.6:} other title.",
-    "ua": "...і ще {t:3.6:}."
+    "ua": "…і ще {t:3.6:}."
   },
   "CS_04_Info_00_others": {
     "en": "...{t:3.6:} other titles.",
-    "ua": "...і ще {t:3.6:} програм."
+    "ua": "…і ще {t:3.6:} програм."
   },
   "CS_04_Info_01": {
     "en": "Add-on content to be deleted on\nthe target system",
@@ -1257,7 +1257,7 @@
   },
   "R_01_Window": {
     "en": "This will end local wireless\ncommunication and stop\nthe transfer.\n\nIs this OK?",
-    "ua": "Це завершить локальний\nбездротовий зв'язок і спинить\nперенесення.\n\nПродовжити?"
+    "ua": "Це завершить локальний\nбездротовий зв'язок\nі спинить перенесення.\n\nПродовжити?"
   },
   "Wait_01_Header": {
     "en": "Please check the source system.",
@@ -1281,7 +1281,7 @@
   },
   "Wait_02_Window": {
     "en": "Preparing for transfer...\nPlease wait.",
-    "ua": "Підготовка до перенесення...\nЗачекайте."
+    "ua": "Підготовка до перенесення…\nЗачекайте."
   },
   "E_01_Window": {
     "en": "",
@@ -1305,11 +1305,11 @@
   },
   "E_02_Window_04": {
     "en": "There is no response from\nthe target system. The\ntransfer will be cancelled.\n\nPlease check the target system.",
-    "ua": "Консоль-приймач не\nвідповідає.\nПеренесення буде\nскасовано.\n\nПеревірте консоль-приймач."
+    "ua": "Консоль-приймач\nне відповідає.\nПеренесення буде\nскасовано.\n\nПеревірте консоль-приймач."
   },
   "E_02_Window_04_R": {
     "en": "There is no response from\nthe source system. The\ntransfer will be cancelled.\n\nPlease check the source system.",
-    "ua": "Консоль-джерело не\nвідповідає.\nПеренесення буде\nскасовано.\n\nПеревірте консоль-джерело."
+    "ua": "Консоль-джерело\nне відповідає.\nПеренесення буде\nскасовано.\n\nПеревірте консоль-джерело."
   },
   "E_02_Window_05": {
     "en": "The SD Card cannot be used.\nThe transfer will be cancelled.\n\nPlease turn the power off\nand try again.",
@@ -1317,6 +1317,6 @@
   },
   "E_02_Window_05_S": {
     "en": "The microSD card cannot be used.\nThe transfer will be cancelled.\n\nPlease turn the power off\nand try again.",
-    "ua": "Карту microSD використати не\nможна.\nПеренесення буде скасовано.\n\nВимкніть консоль\nі спробуйте ще раз."
+    "ua": "Карту microSD використати\nне можна.\nПеренесення буде скасовано.\n\nВимкніть консоль\nі спробуйте ще раз."
   }
 }

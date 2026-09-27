@@ -29,15 +29,15 @@
   },
   "cepd_comm1_u": {
     "en": "Move the Circle Pad (R) up, down,\nleft and right, and check whether\nthe four triangles change colour.",
-    "ua": "Посуньте Circle Pad (R) вгору, вниз,\nліворуч і праворуч і перевірте, чи\nчотири трикутники змінюють колір."
+    "ua": "Посуньте Circle Pad (R) вгору, вниз,\nліворуч і праворуч і перевірте,\nчи чотири трикутники\nзмінюють колір."
   },
   "cepd_comm1_u_sac": {
     "en": "The C Stick will reset when you close\nthe system and enter Sleep Mode.\n\nWhen you exit Sleep Mode, check\nthat you are able to move the + cursor\non the Touch Screen with the C Stick.",
-    "ua": "C Stick скинеться, коли ви закриєте\nконсоль і вона перейде в режим сну.\n\nВийшовши з режиму сну, перевірте,\nчи можна рухати курсор + на\nсенсорному дисплеї за допомогою\nC Stick."
+    "ua": "C Stick скинеться, коли ви закриєте\nконсоль і вона перейде в режим сну.\n\nВийшовши з режиму сну, перевірте,\nчи можна рухати курсор +\nна сенсорному дисплеї за допомогою\nC Stick."
   },
   "cepd_comm1_u_jan": {
     "en": "The C Stick will reset when you close\nthe system and enter Sleep Mode.\n\nWhen you exit Sleep Mode, check\nthat you are able to move the + cursor\non the Touch Screen with the C Stick.",
-    "ua": "C Stick скинеться, коли ви закриєте\nконсоль і вона перейде в режим сну.\n\nВийшовши з режиму сну, перевірте,\nчи можна рухати курсор + на\nсенсорному дисплеї за допомогою\nC Stick."
+    "ua": "C Stick скинеться, коли ви закриєте\nконсоль і вона перейде в режим сну.\n\nВийшовши з режиму сну, перевірте,\nчи можна рухати курсор +\nна сенсорному дисплеї за допомогою\nC Stick."
   },
   "cepd_comm1": {
     "en": "Once all four triangles have\nchanged colour, touch OK.",
@@ -57,7 +57,7 @@
   },
   "cepd_dlg_error": {
     "en": "Could not connect.{t:1.0:1400}\n                    {/t:1.0}\nCheck that the Circle Pad Pro\nis connected and that it still\nhas battery charge remaining.",
-    "ua": "Не вдалося з'єднатися.{t:1.0:1400}\n                    {/t:1.0}\nПеревірте, чи Circle Pad Pro\nпід'єднано і чи не\nрозрядилася його батарея."
+    "ua": "Не вдалося з'єднатися.{t:1.0:1400}\n                    {/t:1.0}\nПеревірте, чи Circle Pad Pro\nпід'єднано і чи його батарея\nне розрядилася."
   },
   "dlg_1b_ok": {
     "en": " OK",
@@ -77,7 +77,7 @@
   },
   "base_2b_cancel": {
     "en": " Cancel",
-    "ua": "{t:1.0:5500} Скасувати{/t:1.0}"
+    "ua": "{t:1.0:5300} Скасувати{/t:1.0}"
   },
   "base_3b_cancel": {
     "en": " Cancel",

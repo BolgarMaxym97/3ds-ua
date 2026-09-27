@@ -941,7 +941,7 @@
   },
   "setting_delete_nnid_notice1.2": {
     "en": "You can remove an ID's link to<br>the system without deleting it by<br>formatting the system memory.<br>This can be done through Other<br>Settings in the System settings.<br>You can then continue to use the<br>ID on a Wii U or other device.",
-    "ua": "Прибрати зв'язок ID з консоллю<br>без видалення можна,<br>відформатувавши памʼять консолі.<br>Це робиться в розділі Інші<br>налаштування в Налаштуваннях<br>системи. Далі ID можна далі<br>використовувати на Wii U чи іншому пристрої."
+    "ua": "Прибрати зв'язок ID з консоллю<br>без видалення можна,<br>відформатувавши пам'ять консолі.<br>Це робиться в розділі Інші<br>налаштування в Налаштуваннях<br>системи. Далі ID можна далі<br>використовувати на Wii U чи іншому пристрої."
   },
   "setting_delete_nnid_notice1.3": {
     "en": "Back",

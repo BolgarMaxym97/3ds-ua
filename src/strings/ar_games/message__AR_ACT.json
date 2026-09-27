@@ -21,7 +21,7 @@
   },
   "bt_comm_back_game": {
     "en": "Return",
-    "ua": "Повернутися"
+    "ua": "До гри"
   },
   "base_comm": {
     "en": "",
@@ -81,11 +81,11 @@
   },
   "bar_comm_rest": {
     "en": "Take breaks to prevent fatigue.",
-    "ua": "Робіть перерви, щоб не\nвтомитися."
+    "ua": "Робіть перерви, щоб\nне втомитися."
   },
   "bar_comm_rest_2": {
     "en": "Dear players...",
-    "ua": "Шановні гравці..."
+    "ua": "Шановні гравці…"
   },
   "pause_comm_": {
     "en": "",
@@ -113,7 +113,7 @@
   },
   "result_clearpoint": {
     "en": "Total",
-    "ua": "Усього"
+    "ua": "Разом"
   },
   "result_clearpoint_2": {
     "en": "{t:1.0:} pts",
@@ -169,7 +169,7 @@
   },
   "ready_before": {
     "en": "Getting started...",
-    "ua": "Готуємося..."
+    "ua": "Готуємося…"
   },
   "ready_explain1": {
     "en": "Take out the {t:0.3:0000}? Card{t:0.3:ffff}.",
@@ -189,7 +189,7 @@
   },
   "ready_explain3": {
     "en": "A distance of {t:0.3:0000}around 35cm {t:0.3:ffff}is ideal.",
-    "ua": "Найкраща відстань — {t:0.3:0000}близько 35\nсм{t:0.3:ffff}."
+    "ua": "Найкраща відстань — {t:0.3:0000}близько\n35 см{t:0.3:ffff}."
   },
   "ready_dist_D": {
     "en": "35cm",
@@ -289,7 +289,7 @@
   },
   "gamesel_open2": {
     "en": "{t:1.1:} and\n{t:1.1:}\nare now open!",
-    "ua": "«{t:1.1:}» і\n«{t:1.1:}»\nтепер відкриті!"
+    "ua": "«{t:1.1:}»\nі «{t:1.1:}»\nтепер відкриті!"
   },
   "gamesel_open3": {
     "en": "A new box\nhas appeared!",
@@ -429,11 +429,11 @@
   },
   "main_shoot_start": {
     "en": "Shoot the targets!",
-    "ua": "Бийте по мішенях!"
+    "ua": "Влучте в мішені!"
   },
   "main_shoot_statue": {
     "en": "A statue...?!",
-    "ua": "Статуя...?!"
+    "ua": "Статуя…?!"
   },
   "main_shoot_hint_front": {
     "en": "Aim for the front!",
@@ -465,7 +465,7 @@
   },
   "main_shoot_hint_nohit": {
     "en": "That doesn't seem to be very effective...",
-    "ua": "Схоже, це не дуже допомагає..."
+    "ua": "Схоже, це не дуже допомагає…"
   },
   "main_shoot_hint_rotate": {
     "en": "Try circling around to find an opening.",
@@ -537,7 +537,7 @@
   },
   "main_fish_Blacksnapper": {
     "en": "Sea Bream",
-    "ua": "Морський карась"
+    "ua": "Морський лящ"
   },
   "main_fish_Tyoutyouuo": {
     "en": "Butterfly Fish",
@@ -613,7 +613,7 @@
   },
   "main_fish_hanjitu": {
     "en": "Mr AR",
-    "ua": "Пан AR"
+    "ua": "{t:1.0:5c00}Пан AR{t:1.0:6400}"
   },
   "main_fish_get": {
     "en": "{t:1.1:}",
@@ -625,7 +625,7 @@
   },
   "main_fish_hint_1": {
     "en": "Tilt the system...",
-    "ua": "Нахиліть консоль..."
+    "ua": "Нахиліть консоль…"
   },
   "main_fish_hint_2": {
     "en": "Hook the fish!",
@@ -633,7 +633,7 @@
   },
   "main_fish_hint_3_2": {
     "en": "Lift the system!",
-    "ua": "Підніміть консоль!"
+    "ua": "Консоль угору!"
   },
   "main_fish_dragon": {
     "en": "Wear him down!",
@@ -693,7 +693,7 @@
   },
   "main_fish_trans_r": {
     "en": "Move...",
-    "ua": "Рухайтеся..."
+    "ua": "Рухайтеся…"
   },
   "main_fish_dragon_2": {
     "en": "Catch it!",
@@ -721,7 +721,7 @@
   },
   "main_zukan_open": {
     "en": "Open",
-    "ua": "Відкрити"
+    "ua": "{t:1.0:5e00}Відкрити{t:1.0:6400}"
   },
   "main_zukan_next": {
     "en": "Next",
@@ -749,7 +749,7 @@
   },
   "main_zukan_new_6": {
     "en": "Caught {t:1.0:} different\nspecies! Now a golden fish\nwill appear in Free Fishing!",
-    "ua": "Спіймано видів: {t:1.0:}!\nУ «Вільній рибалці» тепер\nз'являтиметься золота риба!"
+    "ua": "Спіймано видів: {t:1.0:}!\nУ «Вільній рибалці» тепер\nз'явиться золота риба!"
   },
   "main_zukan_new_7": {
     "en": "Caught all king-sized fish!\nYou've caught everything!",
@@ -777,11 +777,11 @@
   },
   "main_zukan_hint_2": {
     "en": "When a real pro appears...",
-    "ua": "Коли з'явиться профі..."
+    "ua": "Коли з'явиться профі…"
   },
   "main_zukan_hint_3": {
     "en": "Sensitive to red",
-    "ua": "Чутлива до червоного"
+    "ua": "Реагує на червоне"
   },
   "main_zukan_hint_4": {
     "en": "Sensitive to green",
@@ -829,11 +829,11 @@
   },
   "main_zukan_hint_15": {
     "en": "Get it at the last minute in Fishing...",
-    "ua": "В останню мить у «Рибалці»..."
+    "ua": "В останню мить у «Рибалці»…"
   },
   "main_zukan_hint_16": {
     "en": "When you hear an odd sound...",
-    "ua": "Коли почуєте дивний звук..."
+    "ua": "Коли почуєте дивний звук…"
   },
   "main_zukan_hint_17": {
     "en": "Crops up occasionally",
@@ -853,7 +853,7 @@
   },
   "main_draw_start_ar": {
     "en": "See Touch\nScreen!",
-    "ua": "Дивіться на\nнижній екран!"
+    "ua": "Увага:\nнижній екран!"
   },
   "main_draw_touch": {
     "en": "Touch the icon:",
@@ -977,7 +977,7 @@
   },
   "main_photo_saved_ok": {
     "en": "You can view it in Nintendo 3DS Camera!",
-    "ua": "Дивіться його в Nintendo 3DS Камері!"
+    "ua": "Дивіться його в Камері Nintendo 3DS!"
   },
   "main_photo_sd_err_1": {
     "en": "No SD Card is inserted.",
@@ -1025,7 +1025,7 @@
   },
   "main_mii_photo_pause_ar": {
     "en": "Change pose",
-    "ua": "Змінити позу"
+    "ua": "Інша поза"
   },
   "main_mii_photo_shot_ar": {
     "en": " /  Photo!",
@@ -1053,11 +1053,11 @@
   },
   "main_mii_photo_eye_on": {
     "en": "Eye contact: On",
-    "ua": "Погляд у камеру: увім."
+    "ua": "У камеру: увімк."
   },
   "main_mii_photo_eye_off": {
     "en": "Eye contact: Off",
-    "ua": "Погляд у камеру: вимк."
+    "ua": "У камеру: вимк."
   },
   "main_mii_photo_move": {
     "en": "Move",
@@ -1109,7 +1109,7 @@
   },
   "main_chara_photo_expl_1_ar": {
     "en": "You can use character\ncards here, too.",
-    "ua": "Тут можна брати й\nкартки з героями."
+    "ua": "Тут можна брати\nй картки з героями."
   },
   "main_chara_photo_expl_2_ar": {
     "en": "Try putting down\na character card!",
@@ -1129,7 +1129,7 @@
   },
   "main_chara_photo_size_ar": {
     "en": "Change size",
-    "ua": "Змінити розмір"
+    "ua": "Розмір"
   },
   "main_chara_photo_dir_ar": {
     "en": "Face the\ncamera",
@@ -1197,7 +1197,7 @@
   },
   "main_shoot2_start_7": {
     "en": "Hidden targets...",
-    "ua": "Приховані мішені..."
+    "ua": "Приховані мішені…"
   },
   "main_moko_": {
     "en": "",
@@ -1305,11 +1305,11 @@
   },
   "help_b_3_1": {
     "en": "or when using props...",
-    "ua": "чи коли берете реквізит..."
+    "ua": "чи коли берете реквізит…"
   },
   "help_b_4_1": {
     "en": "...don't cover the white border!",
-    "ua": "...не затуляйте білу рамку!"
+    "ua": "…не затуляйте білу рамку!"
   },
   "help_c_theme": {
     "en": "What's an AR Card?",

@@ -18,9 +18,9 @@ than the widest official localisation of that string.
 | программа / software | програма |
 | Игровые заметки / Game Notes | Ігрові записи |
 | Список друзей / Friend List | Список друзів |
-| Сообщения / Notifications | Повідомлення |
+| Сообщения / Notifications | Сповіщення |
 | Интернет-браузер / Internet Browser | Інтернет-браузер |
-| Руководство / Instruction Manual | Посібник |
+| Руководство / Instruction Manual | Електронний посібник (button — Посібник) |
 | Настройки системы / System Settings | Налаштування системи |
 | Загрузочные игры / Download Play | Гра по завантаженню |
 | Обмен данными / Data Transfer | Перенесення даних |
@@ -35,9 +35,9 @@ than the widest official localisation of that string.
 | Подключение / Connection (the object) | зв'язок |
 | Настройки подключения / Connection Settings | Налаштування зв'язку |
 | Проверка подключения / Connection Test | Перевірка зв'язку |
-| Обмен данными / System Transfer (in System Settings) | Перенос системи |
+| Обмен данными / System Transfer (in System Settings) | Перенесення даних |
 | Форматирование памяти / Format System Memory | Форматування |
-| Настройки amiibo / amiibo Settings | Керування amiibo |
+| Настройки amiibo / amiibo Settings | Налаштування amiibo |
 
 `Connection` as an **object** ("Connection 1", "New Connection", "Connection Type") is always
 **зв'язок**: «з'єднання» fits none of the internet-settings slots. `Connecting…` as an **action**

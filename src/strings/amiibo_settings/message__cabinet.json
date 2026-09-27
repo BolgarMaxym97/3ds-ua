@@ -53,11 +53,11 @@
   },
   "DataBrokenNoneBackupEx": {
     "en": "The amiibo data is corrupted.\nYou can restore the data if you\nhave a Nintendo device that has\naccessed this amiibo before.\nIf not, please reset the amiibo\nvia amiibo Settings in the\nHOME Menu Settings.",
-    "ua": "Дані amiibo пошкоджено.\nЇх можна відновити, якщо у вас\nє пристрій Nintendo, який уже\nчитав цей amiibo. Якщо ні —\nскиньте amiibo через\n«Керування amiibo»\nу налаштуваннях HOME."
+    "ua": "Дані amiibo пошкоджено.\nЇх можна відновити, якщо у вас\nє пристрій Nintendo, який уже\nчитав цей amiibo. Якщо ні —\nскиньте amiibo через\n«Налаштування amiibo»\nу налаштуваннях HOME."
   },
   "RestoreData": {
     "en": " Restore",
-    "ua": " Відновити"
+    "ua": " {t:1.0:6300}Відновити{t:1.0:6400}"
   },
   "ScanToRestore": {
     "en": "Please hold the amiibo\nto the NFC area to\nrestore the data.",
@@ -69,7 +69,7 @@
   },
   "Restoring": {
     "en": "Restoring data...",
-    "ua": "Відновлення даних..."
+    "ua": "Відновлення даних…"
   },
   "RestoringKeep": {
     "en": "Please hold the amiibo in\nplace until the data is restored.",
@@ -109,7 +109,7 @@
   },
   "Initializing": {
     "en": "Resetting amiibo...",
-    "ua": "Скидання amiibo..."
+    "ua": "Скидання amiibo…"
   },
   "InitializingKeep": {
     "en": "Please hold the amiibo in place\nuntil the process is finished.",
@@ -153,7 +153,7 @@
   },
   "Writing": {
     "en": "Registering owner\nand nickname...",
-    "ua": "Запис власника\nй псевдоніма..."
+    "ua": "Запис власника\nй псевдоніма…"
   },
   "WritingKeep": {
     "en": "Please hold the amiibo in place\nuntil registration is finished.",
@@ -201,7 +201,7 @@
   },
   "ScanToDelete": {
     "en": "Please hold the amiibo\nto the NFC area to\ndelete its game data.",
-    "ua": "Піднесіть amiibo до\nзони NFC, щоб видалити\nйого дані гри."
+    "ua": "Піднесіть amiibo\nдо зони NFC, щоб\nвидалити його дані гри."
   },
   "ScanToDeleteShort": {
     "en": "Game data will now be deleted.",
@@ -209,7 +209,7 @@
   },
   "Deleting": {
     "en": "Deleting game data...",
-    "ua": "Видалення даних гри..."
+    "ua": "Видалення даних гри…"
   },
   "DeletingKeep": {
     "en": "Please hold the amiibo in place\nuntil the process is finished.",
@@ -309,7 +309,7 @@
   },
   "ChangeableLaterWhere": {
     "en": "This can be changed later in\nHOME Menu Settings ⇒ amiibo Settings.",
-    "ua": "Це можна змінити пізніше:\nналаштування HOME ⇒ керування amiibo."
+    "ua": "Це можна змінити пізніше:\nналаштування HOME ⇒ налаштування amiibo."
   },
   "PushAmiiboAway": {
     "en": "Please remove the amiibo from\nthe NFC area.",
@@ -329,11 +329,11 @@
   },
   "DataNotBroken": {
     "en": "Data on this amiibo is not\ncorrupted, so it does not\nneed restoring.",
-    "ua": "Дані цього amiibo не\nпошкоджено, тож\nвідновлювати\nїх не треба."
+    "ua": "Дані цього amiibo\nне пошкоджено, тож\nвідновлювати\nїх не треба."
   },
   "amiiboSettings": {
     "en": "amiibo Settings",
-    "ua": "Керування amiibo"
+    "ua": "Налаштування amiibo"
   },
   "HeaderOwnerNickname": {
     "en": "Register Owner and Nickname",
@@ -373,7 +373,7 @@
   },
   "CantCheckData": {
     "en": "The amiibo could not be\naccessed because its data\nis corrupted.",
-    "ua": "Не вдалося звернутися до\namiibo, бо його дані\nпошкоджено."
+    "ua": "Не вдалося звернутися\nдо amiibo, бо його дані\nпошкоджено."
   },
   "InitNoGameData": {
     "en": "There is no game data.",
@@ -409,11 +409,11 @@
   },
   "PowOnMatch3DS": {
     "en": "Turn the Nintendo 3DS NFC Reader/\nWriter on and place it facing the\nNintendo 3DS system's infrared\ntransceiver.",
-    "ua": "Увімкніть пристрій NFC для\nNintendo 3DS і поверніть його\nдо інфрачервоного порту\nконсолі Nintendo 3DS."
+    "ua": "Увімкніть пристрій NFC\nдля Nintendo 3DS і поверніть його\nдо інфрачервоного порту\nконсолі Nintendo 3DS."
   },
   "PowOnMatch2DS": {
     "en": "Turn the Nintendo 3DS NFC Reader/\nWriter on and place it facing the\nNintendo 2DS system's infrared\ntransceiver.",
-    "ua": "Увімкніть пристрій NFC для\nNintendo 3DS і поверніть його\nдо інфрачервоного порту\nконсолі Nintendo 2DS."
+    "ua": "Увімкніть пристрій NFC\nдля Nintendo 3DS і поверніть його\nдо інфрачервоного порту\nконсолі Nintendo 2DS."
   },
   "TouchAmiiboNfcArea": {
     "en": "Please hold the amiibo to\nthe NFC area.",
@@ -473,7 +473,7 @@
   },
   "UpdatingFirm": {
     "en": "Updating NFC reader/writer...\n\nPlease ensure the infrared\ntransceiver is within range until\nthe update is complete.",
-    "ua": "Оновлення пристрою NFC...\n\nТримайте інфрачервоний порт\nу межах досяжності, поки\nоновлення не завершиться."
+    "ua": "Оновлення пристрою NFC…\n\nТримайте інфрачервоний порт\nу межах досяжності, поки\nоновлення не завершиться."
   },
   "LowBattery": {
     "en": "The NFC reader/writer's battery\npower is running low.\n\nPlease replace the batteries\nbefore trying again.",
@@ -509,11 +509,11 @@
   },
   "TurnOn": {
     "en": " Enable",
-    "ua": " Увімкнути"
+    "ua": " {t:1.0:6300}Увімкнути{t:1.0:6400}"
   },
   "CloseApplication": {
     "en": "Closing software...",
-    "ua": "Закриття програми..."
+    "ua": "Закриття програми…"
   },
   "MiiMakerDataBroken": {
     "en": "The Mii Maker save data was\ncorrupted and has been reset.",

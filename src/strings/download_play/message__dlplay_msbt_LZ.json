@@ -1,7 +1,7 @@
 {
   "dlp_top_u": {
     "en": "Download Play",
-    "ua": "Гра по завантаженню"
+    "ua": "{t:1.0:6100}Гра по завантаженню{t:1.0:6400}"
   },
   "dlp_top_comm_u1": {
     "en": "Connect with nearby systems to download\ndemos and play wireless multiplayer titles.",
@@ -9,7 +9,7 @@
   },
   "dlp_top_3ds_u": {
     "en": "Nintendo 3DS Download Play",
-    "ua": "Гра по завантаженню Nintendo 3DS"
+    "ua": "{t:1.0:6200}Гра по завантаженню Nintendo 3DS{t:1.0:6400}"
   },
   "dlp_top_comm": {
     "en": "Which kind of title do\nyou want to download?",
@@ -49,7 +49,7 @@
   },
   "dlp_dlg_single0": {
     "en": "Download this title?{t:1.0:1400}\n{/t:1.0}\n{t:1.0:5500}{t:0.3:3c3c3cff}You will be able to play it\nuntil you turn the system off.{t:0.3:000000ff}{/t:1.0}",
-    "ua": "Завантажити цю програму?{t:1.0:1400}\n{/t:1.0}\n{t:1.0:5500}{t:0.3:3c3c3cff}Ви зможете грати в неї,\nпоки не вимкнете консоль.{t:0.3:000000ff}{/t:1.0}"
+    "ua": "Завантажити програму?{t:1.0:1400}\n{/t:1.0}\n{t:1.0:5500}{t:0.3:3c3c3cff}Ви зможете грати в неї,\nпоки не вимкнете консоль.{t:0.3:000000ff}{/t:1.0}"
   },
   "dlp_dlg_2b_cance": {
     "en": "Cancel",
@@ -85,7 +85,7 @@
   },
   "dlp_dlg_par2": {
     "en": "System updates are restricted \nby Parental Controls.{t:1.0:1400}\n{/t:1.0}\nEnter your PIN to\nupdate the system.",
-    "ua": "Оновлення системи обмежено\nбатьківським контролем.{t:1.0:1400}\n{/t:1.0}\nВведіть PIN-код, щоб\nоновити систему."
+    "ua": "Батьківський контроль\nобмежує оновлення системи.{t:1.0:1400}\n{/t:1.0}\nВведіть PIN-код, щоб\nоновити систему."
   },
   "dlp_dlg_par3": {
     "en": "Would you like to launch this\nsoftware in 2D?\n{t:1.0:5500}{t:0.3:3c3c3cff}You must enter your\nPIN to launch it in 3D.{t:0.3:000000ff}{/t:1.0}",
@@ -141,7 +141,7 @@
   },
   "dlp_dlg_update6": {
     "en": "A system update is required\nto use this software.\n\nUpdate to\n%ls?",
-    "ua": "Щоб використати цю\nпрограму, потрібне\nоновлення системи.\n\nОновити до\n%ls?"
+    "ua": "Щоб використати цю\nпрограму, потрібне\nоновлення системи.\n\nОновити\nдо %ls?"
   },
   "dlp_dlg_update7": {
     "en": "Please update the system\nfrom the System Settings.{t:1.0:1400}\n　　　　　　　　　　　　　{/t:1.0}\nSee \"System Update\" in the\nSystem Settings electronic\nmanual for more information.",

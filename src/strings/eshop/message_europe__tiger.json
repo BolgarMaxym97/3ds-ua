@@ -93,7 +93,7 @@
   },
   "CommonWin_SAVEdlg01_01": {
     "en": "Saving...\nPlease wait.",
-    "ua": "Збереження...\nЗачекайте."
+    "ua": "Збереження…\nЗачекайте."
   },
   "Common_txt01_01": {
     "en": "Balance: {t:1.1:}",
@@ -125,7 +125,7 @@
   },
   "Boot_txt01_01": {
     "en": "Preparing...\nDo not turn off the power\nor remove the SD Card.",
-    "ua": "Підготовка...\nНе вимикайте консоль\nі не виймайте карту SD."
+    "ua": "Підготовка…\nНе вимикайте консоль\nі не виймайте карту SD."
   },
   "Boot_txt01_02": {
     "en": "Ready!",
@@ -133,11 +133,11 @@
   },
   "Boot_txt01_04": {
     "en": "To use Nintendo eShop, you must\naccept the latest version of the\nNintendo 3DS Service User\nAgreement and Privacy Policy.\n\nPress  to return\nto the HOME Menu.",
-    "ua": "Щоб користуватися Nintendo\neShop,\nтреба прийняти найновішу версію\nУгоди користувача сервісів\nNintendo 3DS і Політики\nконфіденційності.\n\nНатисніть , щоб повернутися\nв меню HOME."
+    "ua": "Щоб користуватися\nNintendo eShop,\nтреба прийняти найновішу версію\nУгоди користувача сервісів\nNintendo 3DS і Політики\nконфіденційності.\n\nНатисніть , щоб повернутися\nв меню HOME."
   },
   "Boot_txt01_05": {
     "en": "Go to Nintendo Network ID Settings?",
-    "ua": "Відкрити налаштування Nintendo\nNetwork ID?"
+    "ua": "Відкрити налаштування\nNintendo Network ID?"
   },
   "BootAccount_txt01_01": {
     "en": "The following changes will be made\nwhen you link a Nintendo Network ID.\nPlease read this information carefully.",
@@ -157,7 +157,7 @@
   },
   "BootAccount_txt01_05": {
     "en": "Your Nintendo eShop account activity will\nbe linked to your Nintendo Network ID.\nHowever, your account activity from prior\nto linking the ID will only be viewable on\nyour Nintendo 3DS system, and not on\nany other device.\nFurthermore, you will no longer be able\nto delete your account activity from\nNintendo eShop. If you wish to delete\nyour account activity, you will need to\ndelete your ID from the Nintendo\nNetwork ID Settings.",
-    "ua": "Вашу історію покупок Nintendo eShop\nбуде прив'язано до Nintendo Network ID.\nАле історія до прив'язки ID буде видна\nлише на вашій консолі Nintendo 3DS,\nа не на інших пристроях.\nКрім того, ви більше не зможете\nвидалити історію покупок із Nintendo\neShop. Якщо захочете її видалити,\nдоведеться видалити ID\nу налаштуваннях Nintendo\nNetwork ID."
+    "ua": "Вашу історію покупок Nintendo eShop\nбуде прив'язано до Nintendo Network ID.\nАле історія до прив'язки ID буде видна\nлише на вашій консолі Nintendo 3DS,\nа не на інших пристроях. Крім того, ви\nбільше не зможете видалити історію\nпокупок із Nintendo eShop. Якщо\nзахочете її видалити, доведеться\nвидалити ID у налаштуваннях\nNintendo Network ID."
   },
   "BootCountryChg_title01_01": {
     "en": "Change Region Setting",
@@ -289,7 +289,7 @@
   },
   "BootCountryChg_txt04_03": {
     "en": "The Club Nintendo account linked to\nthis Nintendo 3DS system cannot be\nused with the new region setting. As\na result, changing to the new setting by\nselecting Next will unlink the account.\n(This will not affect your membership.)\n\nSelect Next if you want to unlink your\nClub Nintendo account and change\nto the new region setting.",
-    "ua": "Обліковий запис Club Nintendo,\nприв'язаний до цієї консолі Nintendo\n3DS,\nне працює з новим регіоном. Тому\nпісля переходу на новий регіон\nкнопкою «Далі» запис буде відв'язано.\n(На саме членство це не впливає.)\n\nВиберіть «Далі», якщо хочете\nвідв'язати\nобліковий запис Club Nintendo\nі змінити регіон."
+    "ua": "Обліковий запис Club Nintendo,\nприв'язаний до цієї консолі\nNintendo 3DS,\nне працює з новим регіоном. Тому\nпісля переходу на новий регіон\nкнопкою «Далі» запис буде відв'язано.\n(На саме членство це не впливає.)\n\nВиберіть «Далі», якщо хочете\nвідв'язати\nобліковий запис Club Nintendo\nі змінити регіон."
   },
   "BootAreaSet_title02_01": {
     "en": "Age Verification",
@@ -593,7 +593,7 @@
   },
   "NewTitle_dlg03_01": {
     "en": "Select a software type to view.",
-    "ua": "Виберіть тип програм для\nпоказу."
+    "ua": "Виберіть тип програм\nдля показу."
   },
   "NewTitle_dlg03_03": {
     "en": "",
@@ -621,7 +621,7 @@
   },
   "OwnedCoupon_txt01_05": {
     "en": "This offer can be used repeatedly\nuntil the expiry date.",
-    "ua": "Цією пропозицією можна користуватись\nбагато разів до кінця терміну."
+    "ua": "Пропозицією можна користуватися\nбагато разів до кінця терміну дії."
   },
   "OwnedCoupon_txt01_06": {
     "en": "This offer can be used once.",
@@ -841,7 +841,7 @@
   },
   "Shelf_icon01_04": {
     "en": "Info",
-    "ua": "Про це"
+    "ua": "Інфо"
   },
   "Shelf_icon01_07": {
     "en": "Sort By...",
@@ -953,7 +953,7 @@
   },
   "Shelf_btn01_02": {
     "en": "Filter By...",
-    "ua": "Фільтр..."
+    "ua": "Фільтр…"
   },
   "Shelf_btn01_03": {
     "en": "Adjust Filter",
@@ -965,7 +965,7 @@
   },
   "Shelf_btn02_01": {
     "en": "Sort Software and Videos By...",
-    "ua": "Сортувати програми й відео..."
+    "ua": "Сортувати програми й відео…"
   },
   "Shelf_btn02_02": {
     "en": "Software Only",
@@ -1005,7 +1005,7 @@
   },
   "Shelf_btn02_11": {
     "en": "Filter By...",
-    "ua": "Фільтр..."
+    "ua": "Фільтр…"
   },
   "Shelf_dlg01_01": {
     "en": "Could not find any matches for the\nconditions you entered. Would you\nlike to try changing them?",
@@ -1293,7 +1293,7 @@
   },
   "TitleInfo_dlg03_01": {
     "en": "Please read before continuing.",
-    "ua": "Прочитайте перед тим, як\nпродовжити."
+    "ua": "Прочитайте перед тим,\nяк продовжити."
   },
   "TitleInfo_dlg03_02": {
     "en": "Next",
@@ -1361,11 +1361,11 @@
   },
   "TitleInfo_dlg06_02": {
     "en": "Checking...",
-    "ua": "Перевірка..."
+    "ua": "Перевірка…"
   },
   "TitleInfo_dlg06_03": {
     "en": "This may take some time.\nPlease wait...\n\nDo not remove the SD Card\nor turn off the power.",
-    "ua": "Це може тривати довго.\nЗачекайте...\n\nНе виймайте карту SD\nі не вимикайте консоль."
+    "ua": "Це може тривати довго.\nЗачекайте…\n\nНе виймайте карту SD\nі не вимикайте консоль."
   },
   "TitleInfo_dlg06_04": {
     "en": "Check complete.",
@@ -1373,7 +1373,7 @@
   },
   "TitleInfo_dlg06_05": {
     "en": "This software needs to be repaired.\nThe software's data will now be\nredownloaded so that the repair\nprocess can begin.\n\nSave data will not be deleted.\n\nIf you experience problems after the\nrepair process is complete, please\nmake a note of the error code and\nvisit support.nintendo.com.\n\n{t:1.0:}-{t:1.9:}",
-    "ua": "Цю програму треба відновити.\nЗараз її дані буде завантажено\nзнову, щоб почати відновлення.\n\nЗбереження не буде видалено.\n\nЯкщо після відновлення проблеми\nне зникнуть, запишіть код помилки\nй завітайте на\nsupport.nintendo.com.\n\n{t:1.0:}-{t:1.9:}"
+    "ua": "Цю програму треба відновити.\nЗараз її дані буде завантажено\nзнову, щоб почати відновлення.\n\nЗбереження не буде видалено.\n\nЯкщо після відновлення проблеми\nне зникнуть, запишіть код помилки\nй завітайте\nна support.nintendo.com.\n\n{t:1.0:}-{t:1.9:}"
   },
   "TitleInfo_dlg06_06": {
     "en": "No problems have been detected.\nIf you are experiencing problems with\nthis software, you can initiate the\nrepair process anyway. Doing so will\nredownload the software's data.\nInitiate the repair process?\n\nSave data will not be deleted.\n\nIf you experience problems after the\nrepair process is complete, please\ncontact your local customer support\ncentre. For contact details, check\nthe Operations Manual or visit \nsupport.nintendo.com.",
@@ -1381,11 +1381,11 @@
   },
   "TitleInfo_dlg07_01": {
     "en": "You must link a Nintendo Network ID\nto play demo versions of software.\n\nWould you like to go to\nNintendo Network ID Settings\nto link a Nintendo Network ID?\n(You will be returned to this screen\nwhen the process is complete.)",
-    "ua": "Щоб грати в демоверсії програм,\nтреба прив'язати Nintendo Network\nID.\n\nВідкрити налаштування\nNintendo Network ID,\nщоб прив'язати ID?\n(Після цього ви повернетеся\nна цей екран.)"
+    "ua": "Щоб грати в демоверсії програм,\nтреба прив'язати\nNintendo Network ID.\n\nВідкрити налаштування\nNintendo Network ID, щоб\nприв'язати ID? (Після цього ви\nповернетеся на цей екран.)"
   },
   "TitleInfo_dlg07_02": {
     "en": "You must link a Nintendo Network ID\nto be able to use this software.\n\nWould you like to go to\nNintendo Network ID Settings\nto link a Nintendo Network ID?\n(You will be returned to this screen\nwhen the process is complete.)",
-    "ua": "Щоб користуватися цією\nпрограмою, треба прив'язати\nNintendo Network ID.\n\nВідкрити налаштування Nintendo\nNetwork ID, щоб прив'язати ID?\n(Після цього ви повернетеся\nна цей екран.)"
+    "ua": "Щоб користуватися цією\nпрограмою, треба прив'язати\nNintendo Network ID.\n\nВідкрити налаштування\nNintendo Network ID, щоб\nприв'язати ID? (Після цього ви\nповернетеся на цей екран.)"
   },
   "TitleInfo_dlg_08_01": {
     "en": "Please enter the coupon code.",
@@ -1461,7 +1461,7 @@
   },
   "TitleInfo_CTtext01_02": {
     "en": "In order to view information about\nadd-on content, you must close\nNintendo eShop and launch the\nsupported software title.\n\nContinue?",
-    "ua": "Щоб побачити відомості про\nдодатковий вміст, треба закрити\nNintendo eShop і запустити\nвідповідну програму.\n\nПродовжити?"
+    "ua": "Щоб побачити відомості\nпро додатковий вміст, треба\nзакрити Nintendo eShop і запустити\nвідповідну програму.\n\nПродовжити?"
   },
   "TitleInfo_CTtext01_03": {
     "en": "Could not find a supported\nsoftware title.\n\nEither the Game Card for a supported\ntitle is not inserted, or there is no\nsupported title on the SD Card.\nAdditionally, the SD Card may\nhave been removed and reinserted\nduring use.",
@@ -1661,7 +1661,7 @@
   },
   "TitleInfo_PRheading_03": {
     "en": "People who downloaded this\nalso downloaded...",
-    "ua": "Ті, хто завантажив це,\nтакож завантажували..."
+    "ua": "Ті, хто завантажив це,\nтакож завантажували…"
   },
   "TitleInfo_PRheading_04": {
     "en": "Related Keywords",
@@ -2145,7 +2145,7 @@
   },
   "MemoryCheck_txt02_01": {
     "en": "Cannot download to SD Card.",
-    "ua": "Не можна завантажити на\nкарту SD."
+    "ua": "Не можна завантажити\nна карту SD."
   },
   "MemoryCheck_txt02_02": {
     "en": "Cannot download to System Memory.",
@@ -2533,7 +2533,7 @@
   },
   "Regi_dlg03_01": {
     "en": "I consent that Nintendo begins with\nits performance before the\ncancellation period ends.\nI acknowledge that I thereby lose\nmy right to cancel.",
-    "ua": "Я згоден, що Nintendo почне\nвиконання до завершення терміну\nвідмови. Я усвідомлюю, що\nвтрачаю право на відмову."
+    "ua": "Я згоден, що Nintendo почне\nвиконання до завершення терміну\nвідмови. Я усвідомлюю,\nщо втрачаю право на відмову."
   },
   "Regi_thankyou01_01": {
     "en": "Thank you!",
@@ -2585,7 +2585,7 @@
   },
   "Regi_txt09_03": {
     "en": "How to use Sleep Mode Download",
-    "ua": "Як користуватися завантаженням у\nрежимі сну"
+    "ua": "Як користуватися завантаженням\nу режимі сну"
   },
   "Regi_txt09_04": {
     "en": "Put the system into Sleep Mode\nand wait for the software to finish\ndownloading.\n\n• If there are any titles which\n　have not finished downloading\n　when you exit Sleep Mode, you\n　will not be able to play them.\n　Put the system into Sleep Mode\n　again to complete download of\n　these titles.\n\n• If you change the SD Card while\n　the transfer is taking place or if\n　the system loses power, your\n　download may be stopped. If this\n　happens, go to Settings / Other ⇒\n　Redownloadable Software and\n　select the relevant software titles\n　to restart the download.",
@@ -2593,7 +2593,7 @@
   },
   "Regi_txt10_01": {
     "en": "This title has been set to finish\ndownloading in Sleep Mode.\nDo you want to continue shopping?",
-    "ua": "Цю програму позначено для\nдовантаження в режимі сну.\nПродовжити покупки?"
+    "ua": "Цю програму позначено\nдля довантаження в режимі сну.\nПродовжити покупки?"
   },
   "Regi_txt10_02": {
     "en": "The download will complete when you\nput the system into Sleep Mode.",
@@ -2629,7 +2629,7 @@
   },
   "Regi_txt11_08": {
     "en": "This offer can be used repeatedly\nuntil the expiry date.",
-    "ua": "Цією пропозицією можна користуватись\nбагато разів до кінця терміну."
+    "ua": "Пропозицією можна користуватися\nбагато разів до кінця терміну дії."
   },
   "Regi_txt11_09": {
     "en": "This offer can be used once.",
@@ -2645,7 +2645,7 @@
   },
   "Download_txt01_01": {
     "en": "Downloading software...\nPlease do not turn off the power\nor remove the SD Card.",
-    "ua": "Завантаження програми...\nНе вимикайте консоль\nі не виймайте карту SD."
+    "ua": "Завантаження програми…\nНе вимикайте консоль\nі не виймайте карту SD."
   },
   "Download_txt01_05": {
     "en": "Destination: SD Card",
@@ -2689,7 +2689,7 @@
   },
   "Download_txt02_08": {
     "en": "People who downloaded this\nalso downloaded...",
-    "ua": "Ті, хто завантажив це,\nтакож завантажували..."
+    "ua": "Ті, хто завантажив це,\nтакож завантажували…"
   },
   "Download_txt02_09": {
     "en": "{t:1.2:}",
@@ -3337,7 +3337,7 @@
   },
   "Credit_dlg05_01": {
     "en": "I consent that Nintendo begins with\nits performance before the\ncancellation period ends.\nI acknowledge that I thereby lose\nmy right to cancel.",
-    "ua": "Я згоден, що Nintendo почне\nвиконання до завершення терміну\nвідмови. Я усвідомлюю, що\nвтрачаю право на відмову."
+    "ua": "Я згоден, що Nintendo почне\nвиконання до завершення терміну\nвідмови. Я усвідомлюю,\nщо втрачаю право на відмову."
   },
   "Credit_txt03_02": {
     "en": "Please enter a four- to eight-character password.\nThis will be used to secure your credit card\ninformation.\n\nIf this password is entered incorrectly three times\nin a row once it has been set, your credit card\ninformation will be deleted for security reasons.",
@@ -3357,7 +3357,7 @@
   },
   "Credit_txt03_10": {
     "en": "The password you have entered\ncontains one or more unsupported\ncharacters.\n\nPlease use only numbers and letters.",
-    "ua": "Введений пароль містить\nзнаки, які не підтримуються.\n\nВикористовуйте лише цифри й\nлітери."
+    "ua": "Введений пароль містить\nзнаки, які не підтримуються.\n\nВикористовуйте лише цифри\nй літери."
   },
   "Credit_txt04_01": {
     "en": "By selecting Add Funds below, you will\nconfirm payment and the value shown\nbelow will be added.\n\nOnce you add funds, you cannot cancel the\ntransaction or get a refund.",
@@ -3613,7 +3613,7 @@
   },
   "Setup_btn01_07": {
     "en": "HOME Menu Notifications",
-    "ua": "Повідомлення в меню HOME"
+    "ua": "Сповіщення в меню HOME"
   },
   "Setup_btn01_08": {
     "en": "Software Recommendations\nfrom Nintendo",
@@ -3757,11 +3757,11 @@
   },
   "Remove_txt02_02": {
     "en": "To delete your Nintendo eShop account,\nenter the 11-character serial number on\nthe back of your system. (You do not\nhave to enter the final digit.)\n\nPlease be aware that once deleted, your\naccount cannot be restored.",
-    "ua": "Щоб видалити обліковий запис\nNintendo\neShop, введіть 11-символьний серійний\nномер зі зворотного боку консолі.\n(Останню цифру вводити не треба.)\n\nЗверніть увагу: після видалення\nвідновити запис неможливо."
+    "ua": "Щоб видалити обліковий запис\nNintendo eShop,\nвведіть 11-символьний серійний\nномер зі зворотного боку консолі.\n(Останню цифру вводити не треба.)\n\nЗверніть увагу: після видалення\nвідновити запис неможливо."
   },
   "Remove_txt02_04": {
     "en": "To delete your Nintendo eShop account,\nenter the 11-character serial number\nlocated under the front plate of your\nsystem. (You do not have to enter the\nfinal digit.)\n\nPlease be aware that once deleted, your\naccount cannot be restored.",
-    "ua": "Щоб видалити обліковий запис\nNintendo\neShop, введіть 11-символьний серійний\nномер під передньою панеллю\nконсолі. (Останню цифру вводити\nне треба.)\n\nЗверніть увагу: після видалення\nвідновити запис неможливо."
+    "ua": "Щоб видалити обліковий запис\nNintendo eShop,\nвведіть 11-символьний серійний\nномер під передньою панеллю\nконсолі. (Останню цифру вводити\nне треба.)\n\nЗверніть увагу: після видалення\nвідновити запис неможливо."
   },
   "Remove_txt02_03": {
     "en": "If you cannot read the serial number on\nthe back of the system, please check the\nbox in which the system was packaged.\n\nIf you no longer have the original box,\nplease contact your local customer \nsupport centre. For contact details, \ncheck the Operations Manual or visit \nsupport.nintendo.com.",
@@ -3809,11 +3809,11 @@
   },
   "Membership_txt01_01": {
     "en": "Club Nintendo members can link their Club Nintendo\naccount to their Nintendo 3DS system. By linking your\nClub Nintendo account, you will become eligible for\nadded benefits. For details, please see\nwww.club-nintendo.com.\n\nNote: You can link the same Club Nintendo account\nto up to eight Nintendo 3DS systems, as long as none\nof them are linked to a Nintendo Network ID.",
-    "ua": "Учасники Club Nintendo можуть прив'язати свій\nобліковий запис до консолі Nintendo 3DS. Після\nприв'язки ви отримаєте додаткові переваги.\nДокладніше — на\nwww.club-nintendo.com.\n\nПримітка: той самий запис Club Nintendo можна\nприв'язати до восьми консолей Nintendo 3DS, якщо\nжодна з них не прив'язана до Nintendo Network ID."
+    "ua": "Учасники Club Nintendo можуть прив'язати свій\nобліковий запис до консолі Nintendo 3DS. Після\nприв'язки ви отримаєте додаткові переваги.\nДокладніше —\nна www.club-nintendo.com.\n\nПримітка: той самий запис Club Nintendo можна\nприв'язати до восьми консолей Nintendo 3DS, якщо\nжодна з них не прив'язана до Nintendo Network ID."
   },
   "Membership_txt01_06": {
     "en": "Club Nintendo members can link their Club Nintendo\naccount to their Nintendo Network ID. By linking your\nClub Nintendo account, you will become eligible for\nadded benefits. For details, please see\nwww.club-nintendo.com.\n\nNote: You can link your Club Nintendo account to one\nNintendo Network ID only.",
-    "ua": "Учасники Club Nintendo можуть прив'язати свій\nобліковий запис до Nintendo Network ID. Після\nприв'язки ви отримаєте додаткові переваги.\nДокладніше — на\nwww.club-nintendo.com.\n\nПримітка: запис Club Nintendo можна прив'язати\nлише до одного Nintendo Network ID."
+    "ua": "Учасники Club Nintendo можуть прив'язати свій\nобліковий запис до Nintendo Network ID. Після\nприв'язки ви отримаєте додаткові переваги.\nДокладніше —\nна www.club-nintendo.com.\n\nПримітка: запис Club Nintendo можна прив'язати\nлише до одного Nintendo Network ID."
   },
   "Membership_txt01_02": {
     "en": "Email address",
@@ -3853,7 +3853,7 @@
   },
   "Membership_dlg01_01": {
     "en": "Your Club Nintendo membership \nand Nintendo eShop account \nare now linked.",
-    "ua": "Ваше членство в Club Nintendo \nі обліковий запис Nintendo\neShop \nтепер прив'язані."
+    "ua": "Ваше членство в Club Nintendo \nі обліковий запис\nNintendo eShop \nтепер прив'язані."
   },
   "Membership_dlg01_02": {
     "en": "There is already a Club Nintendo\naccount linked to this Nintendo\nNetwork ID. The system will keep\nusing this Club Nintendo account.",
@@ -3869,7 +3869,7 @@
   },
   "Membership_txt02_04": {
     "en": "You can remove the link between your Club Nintendo\naccount and your Nintendo Network ID. Please note\nthat your Club Nintendo account will not be deleted.\n\nPlease also note that if your Nintendo Network ID is\nlinked to several Nintendo devices, your Club Nintendo\naccount will no longer be usable on each of\nthese devices.",
-    "ua": "Ви можете відв'язати свій обліковий запис Club\nNintendo від Nintendo Network ID. Зверніть увагу:\nсам обліковий запис не буде видалено.\n\nЗверніть увагу й на те, що якщо ваш Nintendo\nNetwork ID прив'язаний до кількох пристроїв\nNintendo, запис Club Nintendo перестане\nпрацювати на кожному з них."
+    "ua": "Ви можете відв'язати свій обліковий запис\nClub Nintendo від Nintendo Network ID. Зверніть\nувагу: сам обліковий запис не буде видалено.\n\nЗверніть увагу й на те, що якщо ваш\nNintendo Network ID прив'язаний до кількох\nпристроїв Nintendo, запис Club Nintendo перестане\nпрацювати на кожному з них."
   },
   "Membership_txt02_03": {
     "en": "Email address",
@@ -3901,7 +3901,7 @@
   },
   "Membership_txt03_01": {
     "en": "The link between your Club \nNintendo membership and your \nNintendo eShop account \nhas been removed.",
-    "ua": "Ваше членство в Club \nNintendo відв'язано від \nоблікового запису \nNintendo eShop."
+    "ua": "Ваше членство в Club \nNintendo відв'язано\nвід облікового запису \nNintendo eShop."
   },
   "Membership_btn03_01": {
     "en": "OK",
@@ -3909,11 +3909,11 @@
   },
   "Notification_title01_01": {
     "en": "HOME Menu Notifications",
-    "ua": "Повідомлення в меню HOME"
+    "ua": "Сповіщення в меню HOME"
   },
   "Notification_txt01_01": {
     "en": "You can choose whether or not to receive\nNintendo eShop notifications, which may\ninclude commercial information such as\nmarketing or advertising messages. Such\nnotifications will be sent by Nintendo via\nSpotPass and will appear on the HOME Menu.\n\nWould you like to opt in to receiving\nthese notifications?",
-    "ua": "Ви можете вибрати, отримувати чи ні\nповідомлення Nintendo eShop — серед них\nможуть бути й комерційні, наприклад\nрекламні. Такі повідомлення надсилає\nNintendo через SpotPass, і вони\nз'являються в меню HOME.\n\nОтримувати ці\nповідомлення?"
+    "ua": "Ви можете вибрати, отримувати чи ні сповіщення\nNintendo eShop — серед них можуть бути\nй комерційні, наприклад рекламні. Такі\nсповіщення надсилає Nintendo через SpotPass,\nі вони з'являються в меню HOME.\n\nОтримувати ці сповіщення?"
   },
   "Notification_txt01_03": {
     "en": "If you opt in, extra data will\nbe created on the SD Card.",
@@ -3925,23 +3925,23 @@
   },
   "Notification_btn01_02": {
     "en": "Opt Out",
-    "ua": "Не отримувати"
+    "ua": "Ні"
   },
   "Notification_dlg01_01": {
     "en": "You will now receive\nNintendo eShop notifications.\n\n(You can change this setting\nlater if you wish.)",
-    "ua": "Ви отримуватимете\nповідомлення Nintendo eShop.\n\n(Це можна змінити\nпізніше.)"
+    "ua": "Ви отримуватимете\nсповіщення Nintendo eShop.\n\n(Це можна змінити\nпізніше.)"
   },
   "Notification_dlg01_02": {
     "en": "You have chosen not to receive\nNintendo eShop notifications.\n\n(You can change this setting\nlater if you wish.)",
-    "ua": "Ви обрали не отримувати\nповідомлення Nintendo eShop.\n\n(Це можна змінити\nпізніше.)"
+    "ua": "Ви обрали не отримувати\nсповіщення Nintendo eShop.\n\n(Це можна змінити\nпізніше.)"
   },
   "Notification_dlg01_03": {
     "en": "Failed to access extra data.\nThis will prevent you from receiving\nnotifications from Nintendo eShop.\n\nDo you want to create new extra data?",
-    "ua": "Немає доступу до додаткових даних.\nЧерез це ви не зможете отримувати\nповідомлення Nintendo eShop.\n\nСтворити нові додаткові дані?"
+    "ua": "Немає доступу до додаткових даних.\nЧерез це ви не зможете отримувати\nсповіщення Nintendo eShop.\n\nСтворити нові додаткові дані?"
   },
   "Notification_dlg01_09": {
     "en": "Extra data must be created on\nthe SD Card before you can receive\nNintendo eShop notifications.\n\nDo you want to create new extra data?",
-    "ua": "Щоб отримувати повідомлення\nNintendo eShop, на карті SD треба\nстворити додаткові дані.\n\nСтворити нові додаткові дані?"
+    "ua": "Щоб отримувати сповіщення\nNintendo eShop, на карті SD треба\nстворити додаткові дані.\n\nСтворити нові додаткові дані?"
   },
   "Notification_dlg01_04": {
     "en": "Could not access SD Card.\nThis will prevent you from using SpotPass.\n\nTurn off the system, remove and reinsert the\nSD Card and then try again.",
@@ -4077,7 +4077,7 @@
   },
   "QR_text01_01": {
     "en": "Searching for QR Code...\n\nAlign the code so that\nit lies within the frame.",
-    "ua": "Пошук QR-коду...\n\nСумістіть код\nіз рамкою."
+    "ua": "Пошук QR-коду…\n\nСумістіть код\nіз рамкою."
   },
   "QR_text01_02": {
     "en": "Detected a QR Code for\na download code.\n\nDo you want to redeem\nthe download code?",
@@ -4413,11 +4413,11 @@
   },
   "SD_txt01_02": {
     "en": "• Nintendo 3DS download software\n• Virtual Console titles",
-    "ua": "• завантажувані програми Nintendo\n3DS\n• ігри Virtual Console"
+    "ua": "• завантажувані програми\nNintendo 3DS\n• ігри Virtual Console"
   },
   "SD_txt01_03": {
     "en": "Please turn off the system before\ninserting or removing SD Cards.",
-    "ua": "Вимикайте консоль перед тим, як\nвставляти чи виймати карту SD."
+    "ua": "Вимикайте консоль перед тим,\nяк вставляти чи виймати\nкарту SD."
   },
   "SD_txt01_04": {
     "en": "Either the SD Card is write-protected,\nor none is inserted. The SD Card may\nalso have been removed during use.\n\nThis will prevent you from purchasing\nor downloading software.",
@@ -4425,7 +4425,7 @@
   },
   "error_txt01_09": {
     "en": "The activation code could\nnot be recognised.\nPlease check the code and\ntry entering it again.\n\nIf the problem persists, please\nmake a note of the error code\nand visit support.nintendo.com.",
-    "ua": "Не вдалося розпізнати\nкод активації. Перевірте\nкод і спробуйте ввести\nйого ще раз.\n\nЯкщо проблема не зникає,\nзапишіть код помилки й\nзавітайте на support.nintendo.com."
+    "ua": "Не вдалося розпізнати код\nактивації. Перевірте код\nі спробуйте ввести його ще раз.\n\nЯкщо проблема не зникає,\nзапишіть код помилки й завітайте\nна support.nintendo.com."
   },
   "error_txt01_10": {
     "en": "The download code you\nhave entered is incorrect.\n\nPlease check the code\nand try entering it again.",
@@ -4445,11 +4445,11 @@
   },
   "error_txt01_15": {
     "en": "This download code could not be\nrecognised. Please check the\ncode and try entering it again.\n\nIf the problem persists, please\nmake a note of the error code\nand visit support.nintendo.com.",
-    "ua": "Не вдалося розпізнати цей код\nзавантаження. Перевірте код\nі спробуйте ввести його ще раз.\n\nЯкщо проблема не зникає,\nзапишіть код помилки\nй завітайте на\nsupport.nintendo.com."
+    "ua": "Не вдалося розпізнати цей код\nзавантаження. Перевірте код\nі спробуйте ввести його ще раз.\n\nЯкщо проблема не зникає,\nзапишіть код помилки\nй завітайте\nна support.nintendo.com."
   },
   "error_txt01_102": {
     "en": "The activation code or download\ncode could not be recognised.\nThe code might have expired.\n\nIf the problem persists, please\nmake a note of the error code\nand visit support.nintendo.com.",
-    "ua": "Не вдалося розпізнати код\nактивації\nчи код завантаження. Можливо,\nтермін дії коду минув.\n\nЯкщо проблема не зникає,\nзапишіть код помилки\nй завітайте на\nsupport.nintendo.com."
+    "ua": "Не вдалося розпізнати код\nактивації\nчи код завантаження. Можливо,\nтермін дії коду минув.\n\nЯкщо проблема не зникає,\nзапишіть код помилки\nй завітайте\nна support.nintendo.com."
   },
   "error_txt01_16": {
     "en": "The code you have entered\nis a Nintendo Points number,\nwhich cannot be used with\nNintendo eShop.\n\nPlease enter a download code.",
@@ -4457,7 +4457,7 @@
   },
   "error_txt01_17": {
     "en": "The code you have entered is an\nactivation code, which cannot\nbe used as a download code.\n\nSelect the Add Funds option\nto use this code.",
-    "ua": "Ви ввели код активації,\nа він не працює як\nкод завантаження.\n\nВиберіть «Додати кошти»,\nщоб скористатися цим кодом."
+    "ua": "Ви ввели код активації,\nа він не працює\nяк код завантаження.\n\nВиберіть «Додати кошти»,\nщоб скористатися цим кодом."
   },
   "error_txt01_29": {
     "en": "The credit card number you have\nentered is invalid.\n\nPlease re-enter your details.",
@@ -4509,7 +4509,7 @@
   },
   "error_txt01_55": {
     "en": "There is not enough free space\non the SD Card.\n\nThis will prevent you from\ndownloading/purchasing software\nor using SpotPass.",
-    "ua": "На карті SD бракує\nвільного місця.\n\nЧерез це не вийде завантажувати\nчи купувати програми й не\nпрацюватиме SpotPass."
+    "ua": "На карті SD бракує\nвільного місця.\n\nЧерез це не вийде завантажувати\nчи купувати програми\nй не працюватиме SpotPass."
   },
   "error_txt01_56": {
     "en": "Could not access SD Card.",
@@ -4529,7 +4529,7 @@
   },
   "error_txt01_63": {
     "en": "The area of the SD Card used for\nsaving software is corrupted.\n\nPlease recover the SD Card save\narea by using Data Management\nin the System Settings.\n\nYou will now be taken to\nData Management.",
-    "ua": "Ділянку карти SD, де зберігаються\nпрограми, пошкоджено.\n\nВідновіть її через «Керування\nданими» в налаштуваннях\nсистеми.\n\nЗараз ви перейдете до\n«Керування даними»."
+    "ua": "Ділянку карти SD, де зберігаються\nпрограми, пошкоджено.\n\nВідновіть її через «Керування\nданими» в налаштуваннях\nсистеми.\n\nЗараз ви перейдете\nдо «Керування даними»."
   },
   "error_txt01_64": {
     "en": "This software is already\npresent on the SD Card.\n\nIt is not necessary to\nredownload the software.",
@@ -4553,7 +4553,7 @@
   },
   "error_txt01_70": {
     "en": "You cannot add an amount that\nwould cause your balance to\nexceed {t:1.2:}.",
-    "ua": "Не можна додати суму, після якої\nбаланс перевищить\n{t:1.2:}."
+    "ua": "Не можна додати суму, після якої\nбаланс перевищить {t:1.2:}."
   },
   "error_txt01_71": {
     "en": "Please press  to return to the\nHOME Menu, then turn the system\noff and on again before retrying.",
@@ -4581,7 +4581,7 @@
   },
   "error_txt01_88": {
     "en": "The Nintendo eShop service\nhas concluded. Thank you\nfor using the service.\n\nPress  to return to\nthe HOME Menu.",
-    "ua": "Сервіс Nintendo eShop\nприпинено. Дякуємо, що\nкористувалися ним.\n\nНатисніть , щоб повернутися\nв меню HOME."
+    "ua": "Сервіс Nintendo eShop\nприпинено. Дякуємо,\nщо користувалися ним.\n\nНатисніть , щоб повернутися\nв меню HOME."
   },
   "error_txt01_92": {
     "en": "This software is not\ncurrently available.",
@@ -4593,7 +4593,7 @@
   },
   "error_txt01_95": {
     "en": "The code you have entered\nis a Nintendo Points number,\nwhich cannot be used with\nNintendo eShop.\n\nPlease use a Nintendo eShop Card.",
-    "ua": "Ви ввели номер Nintendo Points,\nа він не працює\nз Nintendo eShop.\n\nСкористайтеся картою Nintendo\neShop."
+    "ua": "Ви ввели номер Nintendo Points,\nа він не працює\nз Nintendo eShop.\n\nСкористайтеся картою\nNintendo eShop."
   },
   "error_txt01_96": {
     "en": "The code you have entered\nis a download code.\n\nPlease enter this code in\nRedeem Download Code\nunder Settings / Other.",
@@ -4613,7 +4613,7 @@
   },
   "error_txt01_103": {
     "en": "Download complete.\nThere is no need to redownload.",
-    "ua": "Завантаження завершено.\nЗавантажувати знову не\nпотрібно."
+    "ua": "Завантаження завершено.\nЗавантажувати знову\nне потрібно."
   },
   "error_txt01_106": {
     "en": "The connection to the server has\ntimed out due to user inactivity.\n\nPlease restart Nintendo eShop\nand try again.",
@@ -4621,7 +4621,7 @@
   },
   "error_txt01_107": {
     "en": "Nintendo eShop is currently\nundergoing maintenance. We\napologise for any inconvenience.\n\nFor more information about\nmaintenance, visit\nsupport.nintendo.com.",
-    "ua": "У Nintendo eShop зараз ведуться\nтехнічні роботи. Перепрошуємо\nза незручності.\n\nДокладніше про роботи —\nна\nsupport.nintendo.com."
+    "ua": "У Nintendo eShop зараз ведуться\nтехнічні роботи. Перепрошуємо\nза незручності.\n\nДокладніше про роботи —\nна support.nintendo.com."
   },
   "error_txt01_108": {
     "en": "The information has been updated.\nRelaunching.",
@@ -4629,7 +4629,7 @@
   },
   "error_txt01_109": {
     "en": "The code could not be recognised.\n\nPlease check the code and try\nentering it again.\n\nIf the problem persists, please\nmake a note of the error code\nand visit support.nintendo.com.",
-    "ua": "Не вдалося розпізнати код.\n\nПеревірте код і спробуйте\nввести його ще раз.\n\nЯкщо проблема не зникає,\nзапишіть код помилки й\nзавітайте на support.nintendo.com."
+    "ua": "Не вдалося розпізнати код.\n\nПеревірте код і спробуйте\nввести його ще раз.\n\nЯкщо проблема не зникає,\nзапишіть код помилки й завітайте\nна support.nintendo.com."
   },
   "error_txt01_110": {
     "en": "The download code you have\nentered is incorrect.\n\nNote that hyphens and the letters\nI, O and Z are not used. Please\ncheck that you have not used any\nof these characters by mistake.",
@@ -4641,7 +4641,7 @@
   },
   "error_txt01_112": {
     "en": "The price of this title has changed.\nPlease check the current price.\n\nIf the problem persists, please\nmake a note of the error code\nand visit support.nintendo.com.",
-    "ua": "Ціна цієї програми змінилася.\nПеревірте поточну ціну.\n\nЯкщо проблема не зникає,\nзапишіть код помилки\nй завітайте на\nsupport.nintendo.com."
+    "ua": "Ціна цієї програми змінилася.\nПеревірте поточну ціну.\n\nЯкщо проблема не зникає,\nзапишіть код помилки\nй завітайте\nна support.nintendo.com."
   },
   "error_txt01_113": {
     "en": "A system update is required.\nTo get the update, go to the\nSystem Settings and select\nSystem Update from Other Settings.\nOnce the update has installed,\nplease try again.",
@@ -4649,6 +4649,6 @@
   },
   "error_txt01_114": {
     "en": "Download codes for add-on\ncontent, passes, etc. used in a\nsoftware title can only be\nredeemed from within that software,\nand cannot be redeemed in\nNintendo eShop.\n\nPlease enter the download code\nwithin the relevant software title.",
-    "ua": "Коди завантаження для\nдодаткового\nвмісту, пропусків тощо, які\nвикористовуються в грі, можна\nввести лише в самій грі, а не\nв Nintendo eShop.\n\nВведіть код завантаження\nу відповідній грі."
+    "ua": "Коди завантаження\nдля додаткового вмісту, пропусків\nтощо, які використовуються в грі,\nможна ввести лише в самій грі,\nа не в Nintendo eShop.\n\nВведіть код завантаження\nу відповідній грі."
   }
 }

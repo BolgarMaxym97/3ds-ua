@@ -121,7 +121,7 @@
   },
   "CommonSignIn_01_07": {
     "en": "The email address you entered when\nlinking your Nintendo Network ID\nhas not yet been validated.\n\nAs we will not be able to send you important\ninformation or password recovery emails should\nyou need them, please go to the System\nSettings to resend the verification email.",
-    "ua": "Адресу електронної пошти, яку ви\nвказали, прив'язуючи Nintendo\nNetwork ID, ще не підтверджено.\n\nОскільки ми не зможемо надіслати\nвам важливу інформацію або листи\nдля відновлення пароля, відкрийте\nналаштування системи й надішліть\nлист із підтвердженням ще раз."
+    "ua": "Адресу електронної пошти, яку ви\nвказали, прив'язуючи\nNintendo Network ID, ще не підтверджено.\n\nОскільки ми не зможемо надіслати\nвам важливу інформацію або листи\nдля відновлення пароля, відкрийте\nналаштування системи й надішліть\nлист із підтвердженням ще раз."
   },
   "CommonSignIn_01_08": {
     "en": "Please read the information\non the upper screen.",
@@ -145,7 +145,7 @@
   },
   "Boot_txt01_06": {
     "en": "Preparing...\nDo not turn off the power\nor remove the SD Card.",
-    "ua": "Підготовка...\nНе вимикайте консоль\nі не виймайте карту SD."
+    "ua": "Підготовка…\nНе вимикайте консоль\nі не виймайте карту SD."
   },
   "Boot_txt01_08": {
     "en": "Updating...\nDo not turn off the power\nor remove the SD Card.",
@@ -165,7 +165,7 @@
   },
   "BootAccount_txt01_03": {
     "en": "Credit card information will be deleted\nfrom this system, but information\nalready stored on your Nintendo\nNetwork ID can still be used. All credit\ncard information will henceforth be\nmanaged by your Nintendo Network ID.",
-    "ua": "Інформацію кредитної карти буде\nвидалено з цієї консолі, але ви\nй далі зможете користуватися\nінформацією, збереженою з\nNintendo Network ID. Надалі всією\nінформацією кредитної карти\nкеруватиме ваш\nNintendo Network ID."
+    "ua": "Інформацію кредитної карти буде\nвидалено з цієї консолі, але ви\nй далі зможете користуватися\nінформацією, збереженою\nз Nintendo Network ID. Надалі всією\nінформацією кредитної карти\nкеруватиме ваш\nNintendo Network ID."
   },
   "BootAccount_txt01_04": {
     "en": "Account Activity Management",
@@ -217,7 +217,7 @@
   },
   "TitleInfo_dlg03_01": {
     "en": "Please read before continuing.",
-    "ua": "Прочитайте перед тим, як\nпродовжити."
+    "ua": "Прочитайте перед тим,\nяк продовжити."
   },
   "TitleInfo_dlg03_02": {
     "en": "Next",
@@ -293,7 +293,7 @@
   },
   "Regi_title01_04": {
     "en": "Download Details",
-    "ua": "Інформація про завантаження"
+    "ua": "Відомості про завантаження"
   },
   "Regi_txt02_01": {
     "en": "(SD Card)",
@@ -421,11 +421,11 @@
   },
   "Regi_txt08_11": {
     "en": "An update is available for data which\nis either available for purchase, or\nwhich you have already purchased.\nUpdate now?\n\nYou will not be able to purchase new\nadd-on content without updating.",
-    "ua": "Для даних, які можна придбати\nабо які ви вже придбали,\nдоступне оновлення.\nОновити зараз?\n\nБез цього оновлення ви не\nзможете придбати новий\nдодатковий вміст."
+    "ua": "Для даних, які можна придбати\nабо які ви вже придбали,\nдоступне оновлення.\nОновити зараз?\n\nБез цього оновлення ви\nне зможете придбати новий\nдодатковий вміст."
   },
   "Regi_txt08_12": {
     "en": "If you continue, you confirm that you \nagree with the following: \nThis software is licensed to you by \nNintendo and Nintendo grants you a \nsimple non-exclusive licence to use \nthe software for personal use and \nnot for any commercial activity. \nYou may not grant a sublicence for \nthis software to third parties. The \nlicence for this software is valid from \nthe date of payment for this software. \nEverything that is not covered in this \nnotice is subject to the Nintendo 3DS \nService User Agreement and \nPrivacy Policy.",
-    "ua": "Цю програму надає вам\nкомпанія Nintendo на умовах\nпростої невиключної ліцензії\nдля особистого використання,\nне пов'язаного з підприєм-\nницькою діяльністю. Ви не\nмаєте права надавати\nсубліцензію на цю програму\nтретім особам без попередньої\nписьмової згоди Nintendo.\nЛіцензія на програму діє\nз моменту сплати вами\nліцензійної винагороди,\nзазначеної щодо цієї\nпрограми. В усьому, що не\nврегульовано цим\nзастереженням, діють\nположення Угоди про\nкористування сервісами\nNintendo 3DS і політики\nконфіденційності."
+    "ua": "Цю програму надає вам компанія\nNintendo на умовах простої\nневиключної ліцензії для особистого\nвикористання, не пов'язаного\nз підприємницькою діяльністю. Ви\nне маєте права надавати субліцензію\nна цю програму третім особам\nбез попередньої письмової згоди\nNintendo. Ліцензія на програму діє\nз моменту сплати вами ліцензійної\nвинагороди, зазначеної щодо цієї\nпрограми. В усьому,\nщо не врегульовано цим\nзастереженням, діють положення\nУгоди про користування сервісами\nNintendo 3DS і політики\nконфіденційності."
   },
   "Regi_txt09_01": {
     "en": "",
@@ -501,7 +501,7 @@
   },
   "Regi_dlg01_05": {
     "en": "I consent that Nintendo begins with\nits performance before the\ncancellation period ends.\nI acknowledge that I thereby lose\nmy right to cancel.",
-    "ua": "Я згоден, що Nintendo почне\nвиконання до завершення терміну\nвідмови. Я усвідомлюю, що\nвтрачаю право на відмову."
+    "ua": "Я згоден, що Nintendo почне\nвиконання до завершення терміну\nвідмови. Я усвідомлюю,\nщо втрачаю право на відмову."
   },
   "Regi_thankyou01_01": {
     "en": "Thank you!",
@@ -533,11 +533,11 @@
   },
   "Regi_thankyou01_07": {
     "en": "A code has been made available\nto you. You can find the code and\ninformation about its use on the\nreceipt for this transaction. Check the\nreceipt in Account Activity under\nSettings / Other in Nintendo eShop.\n\nYour download will be completed\nshortly.",
-    "ua": "Вам надано код. Код\nта інформацію про його\nвикористання можна знайти\nв квитанції цієї трансакції.\nКвитанцію видно в розділі\nІсторія покупок у меню\nНалаштування/інше в Nintendo eShop.\n\nЗавантаження скоро завершиться."
+    "ua": "Вам надано код. Код та інформацію\nпро його використання можна\nзнайти в квитанції цієї трансакції.\nКвитанцію видно в розділі Історія\nпокупок у меню Налаштування/інше\nв Nintendo eShop.\n\nЗавантаження скоро завершиться."
   },
   "Regi_thankyou01_09": {
     "en": "A code has been issued to you.\nThe code and information about its use\nwill be sent to the email address\nregistered to your Nintendo Account.\nIf a child account is being used, the\nreceipt will be sent to the parent or\nguardian's email address.\nYour download will be completed\nshortly.",
-    "ua": "Вам надано код.\nКод та інформацію про його\nвикористання буде надіслано на\nадресу ел. пошти, указану у вашому\nобліковому записі Nintendo.\nЯкщо використовується дитячий\nобліковий запис, квитанцію надішлють\nна ел. пошту батьків або опікуна.\nЗавантаження скоро завершиться."
+    "ua": "Вам надано код.\nКод та інформацію про його\nвикористання буде надіслано\nна адресу ел. пошти, указану\nу вашому обліковому записі Nintendo.\nЯкщо використовується дитячий\nобліковий запис, квитанція прийде\nна ел. пошту батьків або опікуна.\nЗавантаження скоро завершиться."
   },
   "DownloadAll_txt_01_01": {
     "en": "Purchase All",
@@ -705,7 +705,7 @@
   },
   "Charge_txt06_07": {
     "en": "Your receipt will be sent to the email address\nregistered to your Nintendo Account. If a child\naccount is being used, the receipt will be sent\nto the parent or guardian's email address.",
-    "ua": "Квитанція прийде на адресу ел. пошти,\nуказану у вашому обліковому записі Nintendo.\nЯкщо це дитячий обліковий запис,\nїї отримають на ел. пошту батьки/опікун."
+    "ua": "Квитанція прийде на адресу ел. пошти,\nуказану у вашому обліковому записі\nNintendo. Якщо це дитячий обліковий запис,\nїї отримають на ел. пошту батьки/опікун."
   },
   "Charge_txt06_02": {
     "en": "Funds Added: ",
@@ -1069,7 +1069,7 @@
   },
   "Credit_dlg03_01": {
     "en": "I consent that Nintendo begins with\nits performance before the\ncancellation period ends.\nI acknowledge that I thereby lose\nmy right to cancel.",
-    "ua": "Я згоден, що Nintendo почне\nвиконання до завершення терміну\nвідмови. Я усвідомлюю, що\nвтрачаю право на відмову."
+    "ua": "Я згоден, що Nintendo почне\nвиконання до завершення терміну\nвідмови. Я усвідомлюю,\nщо втрачаю право на відмову."
   },
   "Credit_dlg04_01": {
     "en": "Your balance has been updated.\nPlease check your balance on the\nupper screen once you have been\nreturned to the Main Menu.\n\nYou will now be returned\nto the Main Menu.",
@@ -1089,7 +1089,7 @@
   },
   "Credit_txt04_01": {
     "en": "By selecting Add Funds below,\nyou will confirm payment and the\nvalue shown below will be added.\n\nOnce you add funds to your system, you\ncannot cancel or get a refund.",
-    "ua": "Вибравши внизу Додати кошти,\nви підтвердите оплату, і суму,\nуказану нижче, буде додано.\n\nДодавши кошти на консоль, ви не\nзможете скасувати це чи повернути їх."
+    "ua": "Вибравши внизу Додати кошти,\nви підтвердите оплату, і суму,\nуказану нижче, буде додано.\n\nДодавши кошти на консоль, ви\nне зможете скасувати це чи повернути їх."
   },
   "Credit_txt04_07": {
     "en": "",
@@ -1541,7 +1541,7 @@
   },
   "error_txt01_23": {
     "en": "The activation code or download\ncode could not be recognised.\nThe code might have expired.\n\nIf the problem persists, please\nmake a note of the error code\nand visit support.nintendo.com.",
-    "ua": "Не вдалося розпізнати код\nактивації\nчи код завантаження. Можливо,\nтермін дії коду минув.\n\nЯкщо проблема не зникає,\nзапишіть код помилки\nй завітайте на\nsupport.nintendo.com."
+    "ua": "Не вдалося розпізнати код\nактивації\nчи код завантаження. Можливо,\nтермін дії коду минув.\n\nЯкщо проблема не зникає,\nзапишіть код помилки\nй завітайте\nна support.nintendo.com."
   },
   "error_txt01_17": {
     "en": "",
@@ -1577,7 +1577,7 @@
   },
   "error_txt01_70": {
     "en": "You cannot add an amount that\nwould cause your balance to\nexceed {t:1.2:}.",
-    "ua": "Не можна додати суму, після якої\nбаланс перевищить\n{t:1.2:}."
+    "ua": "Не можна додати суму, після якої\nбаланс перевищить {t:1.2:}."
   },
   "error_txt01_72": {
     "en": "Battery power is running low.\n\nPlease plug in the AC adapter\nand recharge the system for\na short while.",
@@ -1605,7 +1605,7 @@
   },
   "error_txt01_101": {
     "en": "Nintendo eShop is currently\nundergoing maintenance and cannot\nhandle purchases or downloads.\nWe apologise for any inconvenience.\n\nFor more information about\nmaintenance, visit\nsupport.nintendo.com.",
-    "ua": "Зараз на сервері\nNintendo eShop ведуться\nроботи з обслуговування, тому\nзавантаження й покупки неможливі.\nПросимо вибачення\nза незручності.\n\nІнформацію про обслуговування\nдивіться на support.nintendo.com."
+    "ua": "Зараз на сервері Nintendo eShop\nведуться роботи з обслуговування,\nтому завантаження й покупки\nнеможливі. Просимо вибачення\nза незручності.\n\nІнформацію про обслуговування\nдивіться на support.nintendo.com."
   },
   "error_txt01_102": {
     "en": "An error has occurred.\nPlease try again later.\n\nIf the problem persists, please contact\nyour local customer support centre,\nquoting the error code. For contact\ndetails, check the Operations Manual\nor visit support.nintendo.com.",

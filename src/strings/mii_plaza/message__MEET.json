@@ -185,7 +185,7 @@
   },
   "dlg_first_01_u": {
     "en": "Welcome to\nStreetPass Mii Plaza!",
-    "ua": "Вітаємо на\nПлощі StreetPass Mii!"
+    "ua": "Вітаємо\nна Площі StreetPass Mii!"
   },
   "dlg_first_02_u": {
     "en": "Here, you can enjoy collecting\nMii characters.",
@@ -217,15 +217,15 @@
   },
   "dlg_first_09_u": {
     "en": "So...",
-    "ua": "Отже..."
+    "ua": "Отже…"
   },
   "dlg_first_10_u": {
     "en": "Next...",
-    "ua": "Далі..."
+    "ua": "Далі…"
   },
   "dlg_first_11_u": {
     "en": "Finally...",
-    "ua": "І нарешті..."
+    "ua": "І нарешті…"
   },
   "dlg_first_12_u": {
     "en": "",
@@ -273,7 +273,7 @@
   },
   "dlg_first_2nd_nup_08_u": {
     "en": "Anyway, we don't want\nto keep you...",
-    "ua": "Та годі вас\nзатримувати..."
+    "ua": "Та годі вас\nзатримувати…"
   },
   "dlg_first_2nd_nup_09_u": {
     "en": "Get out there and collect as many\nMii characters as you can!",
@@ -317,7 +317,7 @@
   },
   "dlg_first_legend2_01_u": {
     "en": "In order to play\nStreetPass Quest II,",
-    "ua": "Щоб грати в\n«Порятунок Mii II»,"
+    "ua": "Щоб грати\nв «Порятунок Mii II»,"
   },
   "dlg_first_legend2_02_u": {
     "en": "you need to be able to receive\ndata through SpotPass.",
@@ -341,7 +341,7 @@
   },
   "dlg_first_legend2_07_u": {
     "en": "Downloading data...\nPlease don't remove\nthe SD Card.",
-    "ua": "Завантаження даних...\nНе виймайте\nкарту SD."
+    "ua": "Завантаження даних…\nНе виймайте\nкарту SD."
   },
   "dlg_first_legend2_08_u": {
     "en": "Download complete.\nStreetPass Quest II will now start.",
@@ -373,7 +373,7 @@
   },
   "dlg_spotpass_error_04_u": {
     "en": "The service for this software has\nbeen discontinued. Thank you for\nusing this service.",
-    "ua": "Обслуговування цієї програми\nприпинено. Дякуємо, що\nкористувалися сервісом."
+    "ua": "Обслуговування цієї програми\nприпинено. Дякуємо,\nщо користувалися сервісом."
   },
   "dlg_spotpass_error_05_u": {
     "en": "In order to use this service, a\nsystem update is required.\n\nTo perform a system update, select\nSystem Update from Other Settings\nin the System Settings.",
@@ -385,11 +385,11 @@
   },
   "dlg_spotpass_error_07_u": {
     "en": "Could not connect to the internet.\n\nPlease perform an internet\nconnection test from within\nthe System Settings.",
-    "ua": "Не вдалося з'єднатися\nз Інтернетом.\n\nПеревірте з'єднання з\nІнтернетом\nу налаштуваннях системи."
+    "ua": "Не вдалося з'єднатися\nз Інтернетом.\n\nПеревірте з'єднання\nз Інтернетом\nу налаштуваннях системи."
   },
   "dlg_spotpass_error_08_u": {
     "en": "Could not connect to the internet.",
-    "ua": "Не вдалося з'єднатися з\nІнтернетом."
+    "ua": "Не вдалося з'єднатися\nз Інтернетом."
   },
   "dlg_spotpass_error_09_u": {
     "en": "There may be problems with\nthe network or the environment.",
@@ -429,7 +429,7 @@
   },
   "dlg_spotpass_error_14_02_u": {
     "en": "For help, please contact your\nlocal customer support centre.\nFor contact details, check the\nOperations Manual or visit\nsupport.nintendo.com.",
-    "ua": "По допомогу зверніться до\nмісцевої\nслужби підтримки. Контакти\nшукайте\nв посібнику з користування\nабо на сайті\nsupport.nintendo.com."
+    "ua": "По допомогу зверніться\nдо місцевої\nслужби підтримки. Контакти\nшукайте\nв посібнику з користування\nабо на сайті\nsupport.nintendo.com."
   },
   "dlg_spotpass_error_15_u": {
     "en": "There may be problems with\nthe network or the environment.",
@@ -445,7 +445,7 @@
   },
   "dlg_spotpass_error_17_u": {
     "en": "SpotPass cannot be used\nbecause write-protection is\nenabled on the SD Card.",
-    "ua": "SpotPass не працює, бо на карті\nSD\nувімкнено захист від запису."
+    "ua": "SpotPass не працює, бо\nна карті SD\nувімкнено захист від запису."
   },
   "dlg_spotpass_error_18_u": {
     "en": "Error code: {t:1.2:}",
@@ -457,7 +457,7 @@
   },
   "dlg_spotpass_error_20_u": {
     "en": "Please check that the SD Card\nis not full or write-protected.",
-    "ua": "Перевірте, чи карта SD не\nзаповнена\nй чи не захищена від запису."
+    "ua": "Перевірте, чи карта SD\nне заповнена\nй чи не захищена від запису."
   },
   "dlg_spotpass_error_21_u": {
     "en": "The SD Card is running\nout of free space.",
@@ -469,7 +469,7 @@
   },
   "dlg_spotpass_error_23_u": {
     "en": "Write-protection is enabled on\nthe SD Card. Cannot download\ndata for StreetPass Quest II.",
-    "ua": "На карті SD увімкнено захист від\nзапису. Не вдалося завантажити\nдані для «Порятунку Mii II»."
+    "ua": "На карті SD увімкнено захист\nвід запису. Не вдалося\nзавантажити дані\nдля «Порятунку Mii II»."
   },
   "dlg_spotpass_error_24_u": {
     "en": "Could not access SD Card during\nthe last attempt to use SpotPass.",
@@ -489,11 +489,11 @@
   },
   "dlg_first_invitation_00_u": {
     "en": "Oh, and by the way...",
-    "ua": "До речі..."
+    "ua": "До речі…"
   },
   "dlg_first_invitation_u": {
     "en": "In addition to Mii characters\nmet via StreetPass...",
-    "ua": "Крім Mii, зустрінутих\nчерез StreetPass..."
+    "ua": "Крім Mii, зустрінутих\nчерез StreetPass…"
   },
   "dlg_first_invitation_02_u": {
     "en": "you can also invite Mii characters\nmet in other games to your plaza.",
@@ -605,7 +605,7 @@
   },
   "dlg_make_savedata_unconscious_01_u": {
     "en": "Creating extra data on\nthe SD Card...\n\nPlease don't turn off the power.",
-    "ua": "Створення додаткових даних\nна карті SD...\n\nНе вимикайте консоль."
+    "ua": "Створення додаткових даних\nна карті SD…\n\nНе вимикайте консоль."
   },
   "dlg_make_savedata_unconscious_02_u": {
     "en": "Created extra data\non the SD Card.",
@@ -737,11 +737,11 @@
   },
   "dlg_zero_mii_01_u": {
     "en": "It looks like no one's come\nto your plaza yet...",
-    "ua": "Схоже, до вас на площу\nще ніхто не завітав..."
+    "ua": "Схоже, до вас на площу\nще ніхто не завітав…"
   },
   "dlg_zero_mii_02_u": {
     "en": "Do you want to go over how\nto use StreetPass again?",
-    "ua": "Показати ще раз, як\nкористуватися StreetPass?"
+    "ua": "Показати ще раз,\nяк користуватися StreetPass?"
   },
   "dlg_press_a_u": {
     "en": "PRESS  ",
@@ -893,7 +893,7 @@
   },
   "dlg_ce_exp_00_u": {
     "en": "Right, then...",
-    "ua": "Отже, до справи..."
+    "ua": "Отже, до справи…"
   },
   "dlg_ce_exp_01_u": {
     "en": "Let me tell you how to send\n{t:1.2:} to other\nusers' plazas over StreetPass!",
@@ -929,7 +929,7 @@
   },
   "dlg_ce_exp_09_u": {
     "en": "You'll also get a StreetPass\nnotification in Notifications.",
-    "ua": "А ще прийде сповіщення\nStreetPass у «Повідомленнях»."
+    "ua": "А ще прийде сповіщення\nStreetPass у «Сповіщеннях»."
   },
   "dlg_ce_exp_10_u": {
     "en": "OK, you're all set!",
@@ -969,7 +969,7 @@
   },
   "dlg_value_send_u": {
     "en": "Your rating will be sent next time\nyou meet {t:1.2:}\nusing StreetPass.",
-    "ua": "Ваша оцінка надійде при\nнаступній\nзустрічі з {t:1.2:}\nчерез StreetPass."
+    "ua": "Ваша оцінка надійде\nпри наступній\nзустрічі з {t:1.2:}\nчерез StreetPass."
   },
   "dlg_ce_two_u": {
     "en": "You can send a personal greeting\nafter meeting via StreetPass for\nthe second time.",
@@ -993,7 +993,7 @@
   },
   "dlg_patch_update_u_01": {
     "en": "Have fun with the new\nand improved plaza!",
-    "ua": "Гарного відпочинку на\nоновленій площі!"
+    "ua": "Гарного відпочинку\nна оновленій площі!"
   },
   "dlg_patch_update_u_01_s": {
     "en": "The software will now restart.",
@@ -1013,7 +1013,7 @@
   },
   "dlg_patch_1st_intro_00": {
     "en": "One more thing...",
-    "ua": "І ще одне..."
+    "ua": "І ще одне…"
   },
   "dlg_patch_1st_intro_01": {
     "en": "If you connect to the internet,\nyou can download an exciting\nupdate for StreetPass Mii Plaza.",
@@ -1061,7 +1061,7 @@
   },
   "dlg_patch_intro_not_play_mii_s": {
     "en": "If you update your plaza now, you won't be able\nto play with these guests until their next visit.",
-    "ua": "Якщо оновити площу зараз, з цими гостями не\nвийде пограти аж до їхніх наступних відвідин."
+    "ua": "Якщо оновити площу зараз, з цими гостями\nне вийде пограти аж до їхніх наступних відвідин."
   },
   "dlg_patch_intro_not_play_mii_play": {
     "en": "Play",
@@ -1073,7 +1073,7 @@
   },
   "dlg_patch_intro_not_play_mii_update_next": {
     "en": "Well then...",
-    "ua": "Ну що ж..."
+    "ua": "Ну що ж…"
   },
   "dlg_pre_1st_intro": {
     "en": "",
@@ -1081,7 +1081,7 @@
   },
   "dlg_patch_lost_00_u": {
     "en": "The software update data for\nStreetPass Mii Plaza could\nnot be found on the SD Card.",
-    "ua": "Дані оновлення Площі\nStreetPass\nMii не знайдено на карті SD."
+    "ua": "Дані оновлення Площі\nStreetPass Mii\nне знайдено на карті SD."
   },
   "dlg_patch_lost_01_u": {
     "en": "To play StreetPass Mii Plaza, the\nsoftware update data is required.",
@@ -1133,7 +1133,7 @@
   },
   "dlg_save_u": {
     "en": "Saving...\nPlease don't turn off the power.",
-    "ua": "Збереження...\nНе вимикайте консоль."
+    "ua": "Збереження…\nНе вимикайте консоль."
   },
   "dlg_list_03_u": {
     "en": "Are you sure you want to add this\nuser to the blocked-user list?",
@@ -1293,7 +1293,7 @@
   },
   "dlg_choice_legend_not_start_u": {
     "en": "Maybe later...",
-    "ua": "Може, пізніше..."
+    "ua": "Може, пізніше…"
   },
   "dlg_choice_pay_u": {
     "en": "Use",
@@ -1469,7 +1469,7 @@
   },
   "dlg_choice_legend_not_restart2_u": {
     "en": "Never mind...",
-    "ua": "Не варто..."
+    "ua": "Не варто…"
   },
   "dlg_choice_listen_u": {
     "en": "Yes",
@@ -1969,7 +1969,7 @@
   },
   "newly_arrived_hobby_m_out_u": {
     "en": "I like the outdoors!",
-    "ua": "Люблю бувати на\nприроді!"
+    "ua": "Люблю бувати\nна природі!"
   },
   "newly_arrived_hobby_m_fish_u": {
     "en": "I like fishing!",
@@ -1981,7 +1981,7 @@
   },
   "newly_arrived_hobby_m_shop_u": {
     "en": "I like shopping!",
-    "ua": "Люблю ходити по\nкрамницях!"
+    "ua": "Люблю ходити\nпо крамницях!"
   },
   "newly_arrived_hobby_m_eat_u": {
     "en": "I like eating!",
@@ -2069,7 +2069,7 @@
   },
   "newly_arrived_hobby_f_out_u": {
     "en": "I like the outdoors!",
-    "ua": "Люблю бувати на\nприроді!"
+    "ua": "Люблю бувати\nна природі!"
   },
   "newly_arrived_hobby_f_fish_u": {
     "en": "I like fishing!",
@@ -2081,7 +2081,7 @@
   },
   "newly_arrived_hobby_f_shop_u": {
     "en": "I like shopping!",
-    "ua": "Люблю ходити по\nкрамницях!"
+    "ua": "Люблю ходити\nпо крамницях!"
   },
   "newly_arrived_hobby_f_eat_u": {
     "en": "I like eating!",
@@ -2137,11 +2137,11 @@
   },
   "newly_arrived_recently_m_u": {
     "en": "Recently, I've\nbeen playing...",
-    "ua": "Останнім часом\nграю в..."
+    "ua": "Останнім часом\nграю в…"
   },
   "newly_arrived_recently_f_u": {
     "en": "Recently, I've\nbeen playing...",
-    "ua": "Останнім часом\nграю в..."
+    "ua": "Останнім часом\nграю в…"
   },
   "newly_arrived_value_m_u": {
     "en": "So, what do you say?\nHow would you rate me?",
@@ -2161,11 +2161,11 @@
   },
   "newly_arrived_normal_m_u": {
     "en": "Oh... Really?",
-    "ua": "О... Справді?"
+    "ua": "О… Справді?"
   },
   "newly_arrived_normal_f_u": {
     "en": "Oh... Really?",
-    "ua": "О... Справді?"
+    "ua": "О… Справді?"
   },
   "newly_arrived_get_value_m_u": {
     "en": "I think you're fantastic!",
@@ -2205,7 +2205,7 @@
   },
   "card_my_value_off_u": {
     "en": "Go to Settings and turn Ratings\non to start getting ratings.",
-    "ua": "Увімкніть «Оцінки» в\nпараметрах,\nщоб отримувати оцінки."
+    "ua": "Увімкніть «Оцінки»\nв параметрах,\nщоб отримувати оцінки."
   },
   "card_my_value_zero_u": {
     "en": "No ratings yet",
@@ -2457,7 +2457,7 @@
   },
   "dlg_panel_op_07_u": {
     "en": "Well, let's get you started...",
-    "ua": "Що ж, почнімо..."
+    "ua": "Що ж, почнімо…"
   },
   "dlg_panel_op_08_u": {
     "en": "Here's a puzzle piece!",
@@ -2497,11 +2497,11 @@
   },
   "dlg_panel_plus_op_05_u": {
     "en": "Now for a little something to get\nyou started on this panel...",
-    "ua": "А ось дещо, щоб ви почали\nскладати цю панель..."
+    "ua": "А ось дещо, щоб ви почали\nскладати цю панель…"
   },
   "dlg_panel_plus_spotpassget_01_u": {
     "en": "Here's some\nSpotPass-related news!",
-    "ua": "Ось новина про\nSpotPass!"
+    "ua": "Ось новина\nпро SpotPass!"
   },
   "dlg_panel_plus_spotpassget_02_u": {
     "en": "You can now get new\npanels through SpotPass!",
@@ -2569,7 +2569,7 @@
   },
   "dlg_panel_no_ce_01_u": {
     "en": "Oh... It seems you didn't meet\nanyone on the road this time.",
-    "ua": "Ой... Схоже, цього разу ви\nнікого не зустріли в дорозі."
+    "ua": "Ой… Схоже, цього разу ви\nнікого не зустріли в дорозі."
   },
   "dlg_panel_no_ce_02_u": {
     "en": "Try to meet as many Mii characters\nas you can using StreetPass!",
@@ -2641,7 +2641,7 @@
   },
   "dlg_3018panel_coinpanel_full_01": {
     "en": "Pieces with a big ? on them can't\nbe collected using  Play Coins.",
-    "ua": "Частинки з великим «?» не\nможна\nздобути за  ігрові монетки."
+    "ua": "Частинки з великим «?»\nне можна\nздобути за  ігрові монетки."
   },
   "dlg_3018panel_coinpanel_full_02": {
     "en": "You'll need to use\nStreetPass to get them!",
@@ -2653,7 +2653,7 @@
   },
   "dlg_slideshow_op_02_u": {
     "en": "If you've completed any\nPuzzle Swap panels...",
-    "ua": "Якщо ви склали хоч одну\nпанель у «Збери пазл»..."
+    "ua": "Якщо ви склали хоч одну\nпанель у «Збери пазл»…"
   },
   "dlg_slideshow_op_03_u": {
     "en": "you can view them one\nafter another here!",
@@ -2661,7 +2661,7 @@
   },
   "dlg_slideshow_op_04_u": {
     "en": "Move the panels around and\nenjoy them in full 3D!",
-    "ua": "Повертайте панелі й\nмилуйтеся\nними в повному 3D!"
+    "ua": "Повертайте панелі\nй милуйтеся\nними в повному 3D!"
   },
   "dlg_soundtest_op_00": {
     "en": "Welcome to the music player!",
@@ -3165,11 +3165,11 @@
   },
   "dig_congratulation_list_25_u": {
     "en": "Met a special Mii ten times!",
-    "ua": "Десять зустрічей з\nособливим Mii!"
+    "ua": "Десять зустрічей\nз особливим Mii!"
   },
   "dig_congratulation_list_25_u_p": {
     "en": "Met a special Mii ten times!",
-    "ua": "Десять зустрічей з\nособливим Mii!"
+    "ua": "Десять зустрічей\nз особливим Mii!"
   },
   "dig_congratulation_park_25_u": {
     "en": "",
@@ -3545,11 +3545,11 @@
   },
   "dig_congratulation_list_57_u": {
     "en": "Cleared StreetPass Quest\ntwice!",
-    "ua": "«Порятунок Mii» пройдено\nдвічі!"
+    "ua": "«Порятунок Mii»\nпройдено двічі!"
   },
   "dig_congratulation_list_57_u_p": {
     "en": "Cleared StreetPass Quest\ntwice!",
-    "ua": "«Порятунок Mii» пройдено\nдвічі!"
+    "ua": "«Порятунок Mii»\nпройдено двічі!"
   },
   "dig_congratulation_park_57_u": {
     "en": "",
@@ -3557,11 +3557,11 @@
   },
   "dig_congratulation_list_58_u": {
     "en": "Cleared StreetPass Quest\nfive times!",
-    "ua": "«Порятунок Mii» пройдено\n5 разів!"
+    "ua": "«Порятунок Mii»\nпройдено 5 разів!"
   },
   "dig_congratulation_list_58_u_p": {
     "en": "Cleared StreetPass Quest\nfive times!",
-    "ua": "«Порятунок Mii» пройдено\n5 разів!"
+    "ua": "«Порятунок Mii»\nпройдено 5 разів!"
   },
   "dig_congratulation_park_58_u": {
     "en": "",
@@ -3569,11 +3569,11 @@
   },
   "dig_congratulation_list_59_u": {
     "en": "Cleared StreetPass Quest\nten times!",
-    "ua": "«Порятунок Mii» пройдено\n10 разів!"
+    "ua": "«Порятунок Mii»\nпройдено 10 разів!"
   },
   "dig_congratulation_list_59_u_p": {
     "en": "Cleared StreetPass Quest\nten times!",
-    "ua": "«Порятунок Mii» пройдено\n10 разів!"
+    "ua": "«Порятунок Mii»\nпройдено 10 разів!"
   },
   "dig_congratulation_park_59_u": {
     "en": "",
@@ -3829,7 +3829,7 @@
   },
   "dlg_legend2_04_u": {
     "en": "Alright then...\nMaybe later.",
-    "ua": "Гаразд...\nМоже, пізніше."
+    "ua": "Гаразд…\nМоже, пізніше."
   },
   "dlg_legend2_05_u": {
     "en": "Huzzah!\nLet our story begin!",
@@ -3845,7 +3845,7 @@
   },
   "dlg_legend2_13_u": {
     "en": "The ruler of the land has been\nrescued from the monsters...",
-    "ua": "Володаря краю врятовано\nвід монстрів..."
+    "ua": "Володаря краю врятовано\nвід монстрів…"
   },
   "dlg_legend2_14_u": {
     "en": "But now, our star-crossed\nsovereign is about to fall\ninto even graver peril.",
@@ -3873,7 +3873,7 @@
   },
   "dlg_legend2_no_data_u": {
     "en": "There is no current save\nfile for StreetPass Quest.",
-    "ua": "Збережених даних для\n«Порятунку Mii» немає."
+    "ua": "Збережених даних\nдля «Порятунку Mii» немає."
   },
   "dlg_legend2_coin_guide01_u": {
     "en": "You can hire a hero\nfor 2 Play Coins.",
@@ -3889,7 +3889,7 @@
   },
   "dlg_legend2_2nd_no_data_u": {
     "en": "There is no current save\nfile for StreetPass Quest II.",
-    "ua": "Збережених даних для\n«Порятунку Mii II» немає."
+    "ua": "Збережених даних\nдля «Порятунку Mii II» немає."
   },
   "dlg_legend2_2nd_select_01_u": {
     "en": "Which do you want to give up on?",
@@ -3917,7 +3917,7 @@
   },
   "dlg_legend2_coin_guide03_u": {
     "en": "You can hire another\nif you want...",
-    "ua": "Можна найняти ще одного,\nякщо хочете..."
+    "ua": "Можна найняти ще одного,\nякщо хочете…"
   },
   "dlg_legend2_coin_past01_u": {
     "en": "You can use  Play Coins to hire\nup to three heroes met previously!",
@@ -4013,7 +4013,7 @@
   },
   "dlg_legend2_clear_03_u": {
     "en": "Well, I suppose I'd better\nget kidnapped again...",
-    "ua": "Що ж, доведеться мене\nзнову викрасти..."
+    "ua": "Що ж, доведеться мене\nзнову викрасти…"
   },
   "dlg_legend2_clear_04_u": {
     "en": "This will mean starting over.\nIs that OK?",
@@ -4033,7 +4033,7 @@
   },
   "dlg_legend2_clear_08_u": {
     "en": "Well, I suppose we'd better\nget kidnapped again...",
-    "ua": "Що ж, доведеться нас\nзнову викрасти..."
+    "ua": "Що ж, доведеться нас\nзнову викрасти…"
   },
   "dlg_legend2_ed_01_u": {
     "en": "",
@@ -4081,7 +4081,7 @@
   },
   "msg_panel_pink_nochoice_u_00": {
     "en": "Pink pieces are special. You can't\nget them using  Play Coins!",
-    "ua": "Рожеві частинки особливі. Їх не\nздобути за  ігрові монетки!"
+    "ua": "Рожеві частинки особливі. Їх\nне здобути за  ігрові монетки!"
   },
   "msg_panel_pink_get_u": {
     "en": "Got a special puzzle piece for\n{t:1.2:}!",
@@ -4161,7 +4161,7 @@
   },
   "choice_normal_u": {
     "en": "OK, I guess...",
-    "ua": "Та нічого..."
+    "ua": "Та нічого…"
   },
   "hat_xx": {
     "en": "",
@@ -4249,7 +4249,7 @@
   },
   "hat_ribbon": {
     "en": "Red Ribbon",
-    "ua": "Червоний бант"
+    "ua": "Бант"
   },
   "hat_silkhat": {
     "en": "Top Hat",
@@ -4969,7 +4969,7 @@
   },
   "msg_legend2_op02_u": {
     "en": "...Who's \"we\"? Why, it's\nthe royal \"we\". That's me!",
-    "ua": "...Хто це «ми»? Та це ж я,\nяк і належить володареві!"
+    "ua": "…Хто це «ми»? Та це ж я,\nяк і належить володареві!"
   },
   "msg_legend2_op03_u": {
     "en": "I am {t:1.2:}, the ruler\nof this land! It's not a bad gig.",
@@ -4977,15 +4977,15 @@
   },
   "msg_legend2_op04_u": {
     "en": "That's another day of reigning done\nwith. Yawn... I'm royally beat!",
-    "ua": "Ще один день правління позаду.\nОй... Я по-королівськи втомився!"
+    "ua": "Ще один день правління позаду.\nОй… Я по-королівськи втомився!"
   },
   "msg_legend2_op05_u": {
     "en": "Time for a snooze, I think...\nA sovereignly slumber, in fact!",
-    "ua": "Час подрімати...\nПо-монаршому, авжеж!"
+    "ua": "Час подрімати…\nПо-монаршому, авжеж!"
   },
   "msg_legend2_op06_u": {
     "en": "That was a good one... Hee-hee...\nZzz...zzz...zzz...",
-    "ua": "Оце сон... Хі-хі...\nХррр...хррр...хррр..."
+    "ua": "Оце сон… Хі-хі…\nХррр…хррр…хррр…"
   },
   "msg_legend2_op07_u": {
     "en": "*KACHUNK!*",
@@ -4997,11 +4997,11 @@
   },
   "msg_legend2_op09_u": {
     "en": "Wh-what's happening? This is an\noutrage! How... HOW DARE YOU!",
-    "ua": "Щ-що коїться? Це нечувано!\nЯк... ЯК ВИ СМІЄТЕ!"
+    "ua": "Щ-що коїться? Це нечувано!\nЯк… ЯК ВИ СМІЄТЕ!"
   },
   "msg_legend2_op10_u": {
     "en": "What?! Where... Where am I?",
-    "ua": "Що?! Де... Де я?"
+    "ua": "Що?! Де… Де я?"
   },
   "msg_legend2_op11_u": {
     "en": "Well, ruffle my royal robes! It seems\nthat I have been kidnapped.",
@@ -5013,7 +5013,7 @@
   },
   "msg_legend2_op13_u": {
     "en": "Can you help me out? Gather\nheroes using StreetPass...",
-    "ua": "Допоможете мені? Збирайте\nгероїв через StreetPass..."
+    "ua": "Допоможете мені? Збирайте\nгероїв через StreetPass…"
   },
   "msg_legend2_op14_u": {
     "en": "and choose Venture Forth, if you\ndon't mind. I would appreciate it!",
@@ -5021,7 +5021,7 @@
   },
   "msg_legend2_op15_u": {
     "en": "Hurry, now! I'll be waiting here. This\nthing is locked, so I've no choice...",
-    "ua": "Хутчіш! Я чекатиму тут. Замок\nзачинено, тож вибору я не маю..."
+    "ua": "Хутчіш! Я чекатиму тут. Замок\nзачинено, тож вибору я не маю…"
   },
   "msg_legend2_op16_u": {
     "en": "Gasp! Great golden goblets!\nWhat is the meaning of this?!",
@@ -5081,7 +5081,7 @@
   },
   "msg_legend2_op33_u": {
     "en": "My goodness, now that we're all in\none place again, I have to say...",
-    "ua": "Ох, тепер, коли ми знову\nразом, мушу сказати..."
+    "ua": "Ох, тепер, коли ми знову\nразом, мушу сказати…"
   },
   "msg_legend2_op34_u": {
     "en": "We do share a rather strong family\nresemblance, don't we?",
@@ -5121,11 +5121,11 @@
   },
   "msg_legend2_op43_u": {
     "en": "(Regal Ruler)\nIs... Is everyone alright?",
-    "ua": "(Володар)\nВи... Ви всі цілі?"
+    "ua": "(Володар)\nВи… Ви всі цілі?"
   },
   "msg_legend2_op44_u": {
     "en": "It looks like they're going to\ntake us away somewhere...",
-    "ua": "Схоже, вони збираються\nкудись нас забрати..."
+    "ua": "Схоже, вони збираються\nкудись нас забрати…"
   },
   "msg_legend2_op45_u": {
     "en": "Those dastardly beasts are\ngoing to split us up!",
@@ -5285,7 +5285,7 @@
   },
   "msg_legend2_lock02_u": {
     "en": "Better find another way...",
-    "ua": "Треба шукати інший шлях..."
+    "ua": "Треба шукати інший шлях…"
   },
   "msg_legend2_lock03_u": {
     "en": "There's a fork in the path here.\nWhich way do you want to go?",
@@ -5301,7 +5301,7 @@
   },
   "msg_legend2_hero_miss_u": {
     "en": "The attack missed...",
-    "ua": "Атака не влучила..."
+    "ua": "Атака не влучила…"
   },
   "msg_legend2_magic_1_b_n_u": {
     "en": "The blue ghost\ntakes huge damage!",
@@ -5409,7 +5409,7 @@
   },
   "msg_legend2_ghost_wall_03_u": {
     "en": "It looks like one hero's magic by\nitself wasn't strong enough...",
-    "ua": "Схоже, магії одного героя\nвиявилося замало..."
+    "ua": "Схоже, магії одного героя\nвиявилося замало…"
   },
   "msg_legend2_dark_room_u": {
     "en": "It's too dark to see anything!",
@@ -5425,11 +5425,11 @@
   },
   "msg_legend2_dark_room_4_u": {
     "en": "{t:1.2:} can't do\nanything and goes home.",
-    "ua": "{t:1.2:} нічого не\nможе вдіяти й іде додому."
+    "ua": "{t:1.2:} нічого\nне може вдіяти й іде додому."
   },
   "msg_legend2_dark_room_5_u": {
     "en": "The wanderer can't do\nanything and goes home.",
-    "ua": "Мандрівник нічого не\nможе вдіяти й іде додому."
+    "ua": "Мандрівник нічого\nне може вдіяти й іде додому."
   },
   "msg_legend2_enemypop_01_u": {
     "en": "The {t:1.2:} is\nrevealed!",
@@ -5521,7 +5521,7 @@
   },
   "msg_legend2_surprise_2_f_u": {
     "en": "{t:1.2:} is caught\noff guard and flees!",
-    "ua": "{t:1.2:} заскочено\nзненацька, і вона тікає!"
+    "ua": "{t:1.2:}, заскочена\nзненацька, тікає!"
   },
   "msg_legend2_surprise_3_u": {
     "en": "The wanderer is\ncaught off guard and flees!",
@@ -5577,7 +5577,7 @@
   },
   "msg_legend2_recovery_3_u": {
     "en": "The {t:1.2:} attempts to\nuse healing magic...but fails!",
-    "ua": "{t:1.2:} намагається застосувати\nцілющу магію... але марно!"
+    "ua": "{t:1.2:} намагається застосувати\nцілющу магію… але марно!"
   },
   "msg_legend2_revive_u": {
     "en": "The {t:1.2:} uses\nreviving magic!",
@@ -5589,7 +5589,7 @@
   },
   "msg_legend2_revive_3_u": {
     "en": "The {t:1.2:} attempts to\nuse reviving magic...but fails!",
-    "ua": "{t:1.2:} намагається застосувати\nмагію воскресіння... але марно!"
+    "ua": "{t:1.2:} намагається застосувати\nмагію воскресіння… але марно!"
   },
   "msg_legend2_split_u": {
     "en": "You hit the mirage created\nby the {t:1.2:}!",
@@ -5601,7 +5601,7 @@
   },
   "msg_legend2_split_3_u": {
     "en": "The {t:1.2:} attempts\nto use mirage magic...but fails!",
-    "ua": "{t:1.2:} намагається застосувати\nмагію марева... але марно!"
+    "ua": "{t:1.2:} намагається застосувати\nмагію марева… але марно!"
   },
   "msg_legend2_giant_u": {
     "en": "The {t:1.2:} uses\ngigantic growth magic!",
@@ -5649,15 +5649,15 @@
   },
   "msg_legend2_lvdown_3_u": {
     "en": "{t:1.2:} can't be\nweakened any further.",
-    "ua": "{t:1.2:} уже не\nослабити дужче."
+    "ua": "{t:1.2:} уже\nне ослабити дужче."
   },
   "msg_legend2_lvdown_3_f_u": {
     "en": "{t:1.2:} can't be\nweakened any further.",
-    "ua": "{t:1.2:} уже не\nослабити дужче."
+    "ua": "{t:1.2:} уже\nне ослабити дужче."
   },
   "msg_legend2_lvdown_4_u": {
     "en": "The wanderer can't be\nweakened any further.",
-    "ua": "Мандрівника вже не\nослабити дужче."
+    "ua": "Мандрівника вже\nне ослабити дужче."
   },
   "msg_legend2_barrier_u": {
     "en": "",
@@ -5669,7 +5669,7 @@
   },
   "msg_legend2_cover_2_u": {
     "en": "The {t:1.2:} attempts to\nuse magic to take the hit...but fails!",
-    "ua": "{t:1.2:} намагається магією взяти\nудар на себе... але марно!"
+    "ua": "{t:1.2:} намагається магією взяти\nудар на себе… але марно!"
   },
   "msg_legend2_invalid_u": {
     "en": "The monster's power dispelled\nthe heroes' magic!",
@@ -5717,7 +5717,7 @@
   },
   "msg_legend2_result_cap_usage_2_u": {
     "en": "Choose your StreetPass Mii\nfrom the plaza...",
-    "ua": "Виберіть на площі свого\nMii для StreetPass..."
+    "ua": "Виберіть на площі свого\nMii для StreetPass…"
   },
   "msg_legend2_result_cap_usage_3_u": {
     "en": "And then choose Mii Settings!",
@@ -5725,7 +5725,7 @@
   },
   "msg_legend2_result_key_arrival_u": {
     "en": "Oh, there's something\nelse in here...",
-    "ua": "О, тут є ще\nдещо..."
+    "ua": "О, тут є ще\nдещо…"
   },
   "msg_legend2_result_key_get_u": {
     "en": "Found: {t:1.2:}!",
@@ -5737,19 +5737,19 @@
   },
   "msg_legend2_item_info_barrier_u": {
     "en": "Dispelling Draught... {t:1.0:}\nDisperses gas spewed by enemies.",
-    "ua": "Відьмин відвар... {t:1.0:}\nРозвіює гази, які пускають вороги."
+    "ua": "Відьмин відвар… {t:1.0:}\nРозвіює гази, які пускають вороги."
   },
   "msg_legend2_item_info_seal_u": {
     "en": "Bottled Barrier... {t:1.0:}\nWards off enemy magic.",
-    "ua": "Бар'єр у пляшці... {t:1.0:}\nЗахищає від ворожої магії."
+    "ua": "Бар'єр у пляшці…\n{t:1.0:} Захищає від ворожої магії."
   },
   "msg_legend2_item_info_rescue_u": {
     "en": "Vial of Valour... {t:1.0:}\nCalls back heroes who have left.",
-    "ua": "Настій відваги... {t:1.0:}\nПовертає героїв, які пішли."
+    "ua": "Настій відваги…\n{t:1.0:} Повертає героїв, які пішли."
   },
   "msg_legend2_item_info_powerup_u": {
     "en": "Power Potion... {t:1.0:}\nBoosts levels of heroes in queue.",
-    "ua": "Зілля сили... {t:1.0:}\nПідвищує рівень героїв у черзі."
+    "ua": "Зілля сили…\n{t:1.0:} Підвищує рівень героїв у черзі."
   },
   "choices_legend2_item_barrier_u": {
     "en": "Dispelling Draught",
@@ -5941,7 +5941,7 @@
   },
   "msg_legend2_item_miss_ac_u": {
     "en": "Nothing happened...",
-    "ua": "Нічого не сталося..."
+    "ua": "Нічого не сталося…"
   },
   "msg_legend2_item_miss_ac_02_u": {
     "en": "Bad luck - it didn't work!",
@@ -5977,11 +5977,11 @@
   },
   "msg_legend2_ed05_u": {
     "en": "Ungghh...",
-    "ua": "Ууух..."
+    "ua": "Ууух…"
   },
   "msg_legend2_ed06_u": {
     "en": "So, as I was saying...",
-    "ua": "Отже, на чому я спинився..."
+    "ua": "Отже, на чому я спинився…"
   },
   "msg_legend2_ed07_u": {
     "en": "Thanks for the help!",
@@ -5989,11 +5989,11 @@
   },
   "msg_legend2_ed08_u": {
     "en": "So, Sir {t:1.3:}...",
-    "ua": "Отже, пане {t:1.3:}..."
+    "ua": "Отже, пане {t:1.3:}…"
   },
   "msg_legend2_ed08_f_u": {
     "en": "So, Lady {t:1.3:}...",
-    "ua": "Отже, пані {t:1.3:}..."
+    "ua": "Отже, пані {t:1.3:}…"
   },
   "msg_legend2_ed08b_u": {
     "en": "Now then, wanderer!",
@@ -6009,7 +6009,7 @@
   },
   "msg_legend2_ed11_u": {
     "en": "The courage that you've shown in\nrescuing your monarch like this...",
-    "ua": "Відвага, з якою ви врятували\nсвого монарха..."
+    "ua": "Відвага, з якою ви врятували\nсвого монарха…"
   },
   "msg_legend2_ed12_u": {
     "en": "is the greatest treasure in\nour grand kingdom!",
@@ -6017,7 +6017,7 @@
   },
   "msg_legend2_ed13_u": {
     "en": "The story of what happened here\nwill be passed down as legend...",
-    "ua": "Історію того, що тут сталося,\nпередаватимуть як легенду..."
+    "ua": "Історію того, що тут сталося,\nпередаватимуть як легенду…"
   },
   "msg_legend2_ed14_u": {
     "en": "And your names will live on forever!",
@@ -6109,11 +6109,11 @@
   },
   "msg_legend2_ed48_u": {
     "en": "It's... It's the Dark Lord!",
-    "ua": "Це... Це Темний володар!"
+    "ua": "Це… Це Темний володар!"
   },
   "msg_legend2_ed49_u": {
     "en": "This terrible beast wants to swallow\nup all the light in the world...",
-    "ua": "Ця страшна почвара хоче\nпоглинути все світло світу..."
+    "ua": "Ця страшна почвара хоче\nпоглинути все світло світу…"
   },
   "msg_legend2_ed50_u": {
     "en": "and plunge us all into darkness!",
@@ -6125,7 +6125,7 @@
   },
   "msg_legend2_ed52_u": {
     "en": "It's... It's the Dark Emperor!",
-    "ua": "Це... Це Темний імператор!"
+    "ua": "Це… Це Темний імператор!"
   },
   "msg_legend2_ed61_u": {
     "en": "You have my thanks, heroes.",
@@ -6141,11 +6141,11 @@
   },
   "msg_legend2_ed64_u": {
     "en": "We heartily commend you...",
-    "ua": "Щиро вас вітаємо..."
+    "ua": "Щиро вас вітаємо…"
   },
   "msg_legend2_ed65_u": {
     "en": "...for all your hard work!",
-    "ua": "...за всю вашу працю!"
+    "ua": "…за всю вашу працю!"
   },
   "msg_legend2_ed66_u": {
     "en": "You've saved more than\njust the royal family.",
@@ -6161,11 +6161,11 @@
   },
   "msg_legend2_ed69_u": {
     "en": "You shall\nbecome legends...",
-    "ua": "Ви станете\nлегендою..."
+    "ua": "Ви станете\nлегендою…"
   },
   "msg_legend2_ed70_u": {
     "en": "...and your names shall\nlive on forever!",
-    "ua": "...а ваші імена\nжитимуть вічно!"
+    "ua": "…а ваші імена\nжитимуть вічно!"
   },
   "msg_legend2_rescue01_u": {
     "en": "Thank you for coming\nto my rescue.",
@@ -6701,11 +6701,11 @@
   },
   "msg_legend2_hero_mgc_white_02_u": {
     "en": "...But the light soon vanishes!",
-    "ua": "...Але світло швидко згасло!"
+    "ua": "…Але світло швидко згасло!"
   },
   "msg_legend2_hero_mgc_white_03_u": {
     "en": "...And the darkness is gone!",
-    "ua": "...І темряви не стало!"
+    "ua": "…І темряви не стало!"
   },
   "msg_legend2_hero_mgc_white_11_u": {
     "en": "Dazzling light fills the area!",
@@ -6969,7 +6969,7 @@
   },
   "msg_legend2_hint_cmn_0_01_u": {
     "en": "I say... It seems you don't\nhave any heroes.",
-    "ua": "Отакої... Схоже, у вас\nнемає жодного героя."
+    "ua": "Отакої… Схоже, у вас\nнемає жодного героя."
   },
   "msg_legend2_hint_cmn_0_02_u": {
     "en": "Go forth and gather heroes\nvia StreetPass!",
@@ -6981,11 +6981,11 @@
   },
   "msg_legend2_hint_cmn_0_04_u": {
     "en": "Please... Don't keep me waiting!",
-    "ua": "Прошу... Не змушуйте мене\nчекати!"
+    "ua": "Прошу… Не змушуйте мене\nчекати!"
   },
   "msg_legend2_hint_cmn_1_01_u": {
     "en": "Hmmph. I am so, so bored...",
-    "ua": "Кхм. Як же мені нудно..."
+    "ua": "Кхм. Як же мені нудно…"
   },
   "msg_legend2_hint_cmn_1_02_u": {
     "en": "I suppose I'll just take another nap\nwhile I wait for help to arrive!",
@@ -6993,23 +6993,23 @@
   },
   "msg_legend2_hint_cmn_2_01_u": {
     "en": "Mmm... Zzz...\n...Go, heroes!...",
-    "ua": "Ммм... Хррр...\n...Уперед, герої!..."
+    "ua": "Ммм… Хррр…\n…Уперед, герої!…"
   },
   "msg_legend2_hint_cmn_2_02_u": {
     "en": "...Now!\nUse magic!",
-    "ua": "...Нумо!\nМагію!"
+    "ua": "…Нумо!\nМагію!"
   },
   "msg_legend2_hint_cmn_2_03_u": {
     "en": "Zzz...",
-    "ua": "Хррр..."
+    "ua": "Хррр…"
   },
   "msg_legend2_hint_cmn_3_01_u": {
     "en": "I'm getting kind of hungry...",
-    "ua": "Щось я зголоднів..."
+    "ua": "Щось я зголоднів…"
   },
   "msg_legend2_hint_cmn_3_02_u": {
     "en": "Ugh...\nI hope they come soon...",
-    "ua": "Ох...\nХоч би вони скоріше прийшли..."
+    "ua": "Ох…\nХоч би вони скоріше прийшли…"
   },
   "msg_legend2_hint_cmn_4_01_u": {
     "en": "There are twelve colours and\ntwelve kinds of magic.",
@@ -7017,7 +7017,7 @@
   },
   "msg_legend2_hint_cmn_4_02_u": {
     "en": "A hero's colour shows what\nkind of magic they can use...",
-    "ua": "Колір героя показує, яку магію\nвін уміє застосовувати..."
+    "ua": "Колір героя показує, яку магію\nвін уміє застосовувати…"
   },
   "msg_legend2_hint_cmn_4_03_u": {
     "en": "If I could use magic, I'd be out of\nhere in no time!",
@@ -7025,7 +7025,7 @@
   },
   "msg_legend2_hint_cmn_5_01_u": {
     "en": "Oh, I fear for my kingdom...",
-    "ua": "Ох, боюся я за своє\nкоролівство..."
+    "ua": "Ох, боюся я за своє\nкоролівство…"
   },
   "msg_legend2_hint_cmn_6_01_u": {
     "en": "Helloooo?\nIs anyone there?!",
@@ -7037,7 +7037,7 @@
   },
   "msg_legend2_hint_cmn_6_03_u": {
     "en": "...I'm so lonely here…",
-    "ua": "...Як же мені тут самотньо…"
+    "ua": "…Як же мені тут самотньо…"
   },
   "msg_legend2_hint_cmn_7_01_u": {
     "en": "Oh! I just remembered something!",
@@ -7045,7 +7045,7 @@
   },
   "msg_legend2_hint_cmn_7_02_u": {
     "en": "Even magic that has\nlong-term effects...",
-    "ua": "Навіть магія, що діє\nдовго..."
+    "ua": "Навіть магія, що діє\nдовго…"
   },
   "msg_legend2_hint_cmn_7_03_u": {
     "en": "wears off when you\nleave the room.",
@@ -7061,11 +7061,11 @@
   },
   "msg_legend2_hint_cmn_8_03_u": {
     "en": "I beg you, please save me! The\nsooner, the better...really.",
-    "ua": "Благаю, врятуйте мене! І що\nскоріше, то краще...справді."
+    "ua": "Благаю, врятуйте мене!\nІ що скоріше, то краще…справді."
   },
   "msg_legend2_hint_cmn_9_01_u": {
     "en": "Brrr, it's cold\nin here...",
-    "ua": "Бр-р, як тут\nхолодно..."
+    "ua": "Бр-р, як тут\nхолодно…"
   },
   "msg_legend2_hint_cmn_9_02_u": {
     "en": "I wish someone would warm\nme up with red magic.",
@@ -7073,7 +7073,7 @@
   },
   "msg_legend2_hint_cmn_10_01_u": {
     "en": "So, the villains who\nkidnapped me...",
-    "ua": "Отже, лиходії, які\nмене викрали..."
+    "ua": "Отже, лиходії, які\nмене викрали…"
   },
   "msg_legend2_hint_cmn_10_02_u": {
     "en": "What do they even want, anyway?!",
@@ -7093,15 +7093,15 @@
   },
   "msg_legend2_hint_cmn_12_01_u": {
     "en": "Why... Some scoundrel's left\ngraffiti in my cage!",
-    "ua": "Отакої... Якийсь пройдисвіт\nнашкрябав написа в моїй клітці!"
+    "ua": "Отакої… Якийсь пройдисвіт\nнашкрябав написа в моїй клітці!"
   },
   "msg_legend2_hint_cmn_12_02_u": {
     "en": "\"Press and hold  to make\ntime go faster...\"",
-    "ua": "«Затисніть , щоб час\nминав швидше...»"
+    "ua": "«Затисніть , щоб час\nминав швидше…»"
   },
   "msg_legend2_hint_cmn_12_03_u": {
     "en": "...I wonder what that means?",
-    "ua": "...Цікаво, що це означає?"
+    "ua": "…Цікаво, що це означає?"
   },
   "msg_legend2_hint_first_01_u": {
     "en": "Where in the world\nam I, anyway?",
@@ -7109,7 +7109,7 @@
   },
   "msg_legend2_hint_first_02_u": {
     "en": "Heroes, please, save me soon!\nNo, really... I'd appreciate it!",
-    "ua": "Герої, прошу, врятуйте мене\nскоріше! Справді... прошу вас!"
+    "ua": "Герої, прошу, врятуйте мене\nскоріше! Справді… прошу вас!"
   },
   "msg_legend2_hint_shield_1_01_u": {
     "en": "That's quite the shield that\nmonster's got there.",
@@ -7121,15 +7121,15 @@
   },
   "msg_legend2_hint_shield_2_01_u": {
     "en": "A yellow shield, eh...?",
-    "ua": "Жовтий щит, кажете...?"
+    "ua": "Жовтий щит, кажете…?"
   },
   "msg_legend2_hint_shield_2_01_b_u": {
     "en": "A light-blue shield, eh...?",
-    "ua": "Блакитний щит, кажете...?"
+    "ua": "Блакитний щит, кажете…?"
   },
   "msg_legend2_hint_shield_2_02_u": {
     "en": "I wonder... If you use a hero who's\nthe same colour as that shield...",
-    "ua": "Цікаво... А якщо взяти героя\nтого самого кольору, що й щит..."
+    "ua": "Цікаво… А якщо взяти героя\nтого самого кольору, що й щит…"
   },
   "msg_legend2_hint_shield_2_03_u": {
     "en": "Yes, that's it! Fight fire with fire.\nYou'll want a yellow hero for this.",
@@ -7145,7 +7145,7 @@
   },
   "msg_legend2_hint_shield_2_02_prin_u": {
     "en": "I wonder... If you use a hero who's\nthe same colour as that shield...",
-    "ua": "Цікаво... А якщо взяти героя\nтого самого кольору, що й щит..."
+    "ua": "Цікаво… А якщо взяти героя\nтого самого кольору, що й щит…"
   },
   "msg_legend2_hint_shield_2_03_prin_u": {
     "en": "Ah, yes! That's it!\nYou'll want to use a yellow hero!",
@@ -7157,7 +7157,7 @@
   },
   "msg_legend2_hint_shield_2_02_pris_u": {
     "en": "I wonder... If you use a hero who's\nthe same colour as that shield...",
-    "ua": "Цікаво... А якщо взяти героя\nтого самого кольору, що й щит..."
+    "ua": "Цікаво… А якщо взяти героя\nтого самого кольору, що й щит…"
   },
   "msg_legend2_hint_shield_2_03_pris_u": {
     "en": "",
@@ -7181,11 +7181,11 @@
   },
   "msg_legend2_hint_dark_1_02_u": {
     "en": "If you could only find a way to light\nthe room up somehow...",
-    "ua": "Якби ж якось\nосвітлити її..."
+    "ua": "Якби ж якось\nосвітлити її…"
   },
   "msg_legend2_hint_dark_1_03_u": {
     "en": "If only...",
-    "ua": "Якби ж то..."
+    "ua": "Якби ж то…"
   },
   "msg_legend2_hint_dark_2_01_u": {
     "en": "Wait! What about magic?!",
@@ -7197,7 +7197,7 @@
   },
   "msg_legend2_hint_dark_2_03_u": {
     "en": "Uhh...\nWhat colour was it?",
-    "ua": "Емм...\nЯкого вона кольору?"
+    "ua": "Емм…\nЯкого вона кольору?"
   },
   "msg_legend2_hint_dark_3_01_u": {
     "en": "Oh, I remember!\nIt's white!",
@@ -7213,7 +7213,7 @@
   },
   "msg_legend2_hint_boss_0_01_u": {
     "en": "Heroes...! Oh, heroes!\nWhere are you, heroes?!",
-    "ua": "Герої...! Ох, герої!\nДе ж ви, герої?!"
+    "ua": "Герої…! Ох, герої!\nДе ж ви, герої?!"
   },
   "msg_legend2_hint_boss_0_02_u": {
     "en": "You've got to get out there and\ngather heroes using StreetPass!",
@@ -7233,31 +7233,31 @@
   },
   "msg_legend2_hint_boss_1_02_u": {
     "en": "What is with this\nhuge ghost?!",
-    "ua": "Що це за\nвелетенський привид?!"
+    "ua": "Що це\nза велетенський привид?!"
   },
   "msg_legend2_hint_boss_2_01_u": {
     "en": "Unngggh...\nC-Can't breathe...",
-    "ua": "Уххх...\nН-нічим дихати..."
+    "ua": "Уххх…\nН-нічим дихати…"
   },
   "msg_legend2_hint_boss_2_02_u": {
     "en": "I say, would you mind loosening\nyour grip a bit there...?",
-    "ua": "Слухайте, чи не могли б ви\nтрішки послабити хватку...?"
+    "ua": "Слухайте, чи не могли б ви\nтрішки послабити хватку…?"
   },
   "msg_legend2_hint_boss_3_01_u": {
     "en": "Ack! My goodness!\nYour hand...!",
-    "ua": "Ой! Матінко!\nВаша рука...!"
+    "ua": "Ой! Матінко!\nВаша рука…!"
   },
   "msg_legend2_hint_boss_3_02_u": {
     "en": "It's... It's...\nIt's all damp and slimy!",
-    "ua": "Вона... Вона...\nВона геть мокра й слизька!"
+    "ua": "Вона… Вона…\nВона геть мокра й слизька!"
   },
   "msg_legend2_hint_boss_4_01_u": {
     "en": "True, this may be a gigantic,\nterrible enemy...",
-    "ua": "Так, ворог велетенський\nі страшний..."
+    "ua": "Так, ворог велетенський\nі страшний…"
   },
   "msg_legend2_hint_boss_4_02_u": {
     "en": "...But I just know you can\ndefeat it in the end!",
-    "ua": "...Але я певен, що зрештою\nви його здолаєте!"
+    "ua": "…Але я певен, що зрештою\nви його здолаєте!"
   },
   "msg_legend2_hint_boss_4_03_u": {
     "en": "Don't give up yet, heroes!",
@@ -7269,7 +7269,7 @@
   },
   "msg_legend2_hint_boss_5_02_u": {
     "en": "It's up to you to defeat this beastly\nfiend... The sooner, the better!",
-    "ua": "Здолати цю почвару — ваша\nсправа... І що скоріше, то краще!"
+    "ua": "Здолати цю почвару — ваша\nсправа… І що скоріше, то краще!"
   },
   "msg_legend2_hint_initial_1_01_u": {
     "en": "What a terrible mess this all is!",
@@ -7293,19 +7293,19 @@
   },
   "msg_legend2_hint_initial_2_01_pris_u": {
     "en": "Hm...",
-    "ua": "Гм..."
+    "ua": "Гм…"
   },
   "msg_legend2_hint_initial_3_01_u": {
     "en": "That reminds me...",
-    "ua": "До речі, згадав..."
+    "ua": "До речі, згадав…"
   },
   "msg_legend2_hint_initial_3_01_prin_u": {
     "en": "That reminds me...",
-    "ua": "До речі, згадав..."
+    "ua": "До речі, згадав…"
   },
   "msg_legend2_hint_initial_3_01_pris_u": {
     "en": "That reminds me...",
-    "ua": "До речі, згадала..."
+    "ua": "До речі, згадала…"
   },
   "msg_legend2_hint_initial_4_01_u": {
     "en": "Allow us to share some\nadvice with you, brave heroes!",
@@ -7321,15 +7321,15 @@
   },
   "msg_legend2_hint_initial_5_01_u": {
     "en": "Grumble...",
-    "ua": "Кхм..."
+    "ua": "Кхм…"
   },
   "msg_legend2_hint_initial_5_01_prin_u": {
     "en": "Hmm...",
-    "ua": "Гмм..."
+    "ua": "Гмм…"
   },
   "msg_legend2_hint_initial_5_01_pris_u": {
     "en": "Hmm...",
-    "ua": "Гмм..."
+    "ua": "Гмм…"
   },
   "msg_legend2_hint_initial_6_01_u": {
     "en": "A monster with a\ngigantic shield, you say?",
@@ -7509,7 +7509,7 @@
   },
   "msg_legend2_hint_item_1_03_u": {
     "en": "You'll need  Play Coins to use\nthe Potion Service, though...",
-    "ua": "Щоправда, за доставку треба\nплатити  ігровими монетками..."
+    "ua": "Щоправда, за доставку треба\nплатити  ігровими монетками…"
   },
   "msg_legend2_hint_item_1_03_prin_u": {
     "en": "You'll need  Play Coins to use\nthe Potion Service, though!",
@@ -7577,7 +7577,7 @@
   },
   "msg_legend2_hint_fireroom_1_01_u": {
     "en": "Confounded by a room of fire, eh?",
-    "ua": "Вогняна кімната збила з\nпантелику?"
+    "ua": "Вогняна кімната збила\nз пантелику?"
   },
   "msg_legend2_hint_fireroom_1_02_u": {
     "en": "You'll have to deal with those\nflames before you can continue.",
@@ -7585,23 +7585,23 @@
   },
   "msg_legend2_hint_fireroom_1_03_u": {
     "en": "Hmm... Now, what would be\nthe best way to handle this?",
-    "ua": "Гмм... І як же тут\nнайкраще дати раду?"
+    "ua": "Гмм… І як же тут\nнайкраще дати раду?"
   },
   "msg_legend2_hint_fireroom_1_01_prin_u": {
     "en": "A room of fire...? I suppose health\nand safety rules don't apply here...",
-    "ua": "Вогняна кімната...? Схоже,\nправила безпеки тут не діють..."
+    "ua": "Вогняна кімната…? Схоже,\nправила безпеки тут не діють…"
   },
   "msg_legend2_hint_fireroom_1_03_prin_u": {
     "en": "Hmm... Now, what would be\nthe best way to handle this?",
-    "ua": "Гмм... І як же тут\nнайкраще дати раду?"
+    "ua": "Гмм… І як же тут\nнайкраще дати раду?"
   },
   "msg_legend2_hint_fireroom_1_01_pris_u": {
     "en": "A room of fire... Yes, I can see\nhow that could be a problem.",
-    "ua": "Вогняна кімната... Так, розумію,\nчому це проблема."
+    "ua": "Вогняна кімната… Так, розумію,\nчому це проблема."
   },
   "msg_legend2_hint_fireroom_1_03_pris_u": {
     "en": "Hmm... Now, what would be\nthe best way to handle this?",
-    "ua": "Гмм... І як же тут\nнайкраще дати раду?"
+    "ua": "Гмм… І як же тут\nнайкраще дати раду?"
   },
   "msg_legend2_hint_iceroom_1_01_u": {
     "en": "Frozen out by the room of ice, eh?",
@@ -7633,7 +7633,7 @@
   },
   "msg_legend2_hint_room_common_1_02_u": {
     "en": "That trap does seem to be made\nup of rather stern stuff, though...",
-    "ua": "Щоправда, та пастка, схоже,\nзроблена на совість..."
+    "ua": "Щоправда, та пастка, схоже,\nзроблена на совість…"
   },
   "msg_legend2_hint_room_common_1_02_prin_u": {
     "en": "It does look like you'll need\nsomething pretty powerful, though.",
@@ -7689,7 +7689,7 @@
   },
   "msg_legend2_hint_fireroom_2_01_pris_u": {
     "en": "I know! Why not try using\ncombo magic skills?",
-    "ua": "Придумала! А чом би не\nспробувати спільну магію?"
+    "ua": "Придумала! А чом би\nне спробувати спільну магію?"
   },
   "msg_legend2_hint_fireroom_2_02_pris_u": {
     "en": "Blue combo magic should\nbe a match for fiery rooms.",
@@ -7705,7 +7705,7 @@
   },
   "msg_legend2_hint_poisonroom_2_02_u": {
     "en": "To deal with a poison room, you'll\nneed... Hm. That's a tricky one.",
-    "ua": "Проти отруйної кімнати потрібно...\nГм. Це складне питання."
+    "ua": "Проти отруйної кімнати потрібно…\nГм. Це складне питання."
   },
   "msg_legend2_hint_poisonroom_2_03_u": {
     "en": "Perhaps yellow combo magic would\nbe the perfect antidote?",
@@ -7713,7 +7713,7 @@
   },
   "msg_legend2_hint_poisonroom_2_02_pris_u": {
     "en": "To deal with a poison room, you'll\nneed... Hm. That's a tricky one.",
-    "ua": "Проти отруйної кімнати потрібно...\nГм. Це складне питання."
+    "ua": "Проти отруйної кімнати потрібно…\nГм. Це складне питання."
   },
   "msg_legend2_hint_poisonroom_2_03_pris_u": {
     "en": "Perhaps yellow combo magic would\nbe the perfect antidote?",
@@ -7769,7 +7769,7 @@
   },
   "msg_legend2_hint_lock_3_03_u": {
     "en": "You want to have as few heroes turn\nback as possible. Or so I hear...",
-    "ua": "Треба, щоб якомога менше героїв\nповернуло назад. Так я чув..."
+    "ua": "Треба, щоб якомога менше героїв\nповернуло назад. Так я чув…"
   },
   "msg_legend2_hint_lock_3_03_prin_u": {
     "en": "It seems you want to have as few\nheroes turn back as possible!",
@@ -7789,7 +7789,7 @@
   },
   "msg_legend2_hint_lock_4_02_u": {
     "en": "The Ransacked Ruins, the Shrine of\nShadows, the Diabolical Altar...",
-    "ua": "Сплюндровані руїни, Святилище\nтіней, Диявольський вівтар..."
+    "ua": "Сплюндровані руїни, Святилище\nтіней, Диявольський вівтар…"
   },
   "msg_legend2_hint_lock_4_03_u": {
     "en": "Why not try exploring ruins\nsuch as these?",
@@ -7825,11 +7825,11 @@
   },
   "msg_legend2_hint_weak_2_02_u": {
     "en": "Let's see...",
-    "ua": "Ану ж бо..."
+    "ua": "Ану ж бо…"
   },
   "msg_legend2_hint_weak_2_03_u": {
     "en": "Fire, sand, light and darkness...\nYes, I think they'd probably do it.",
-    "ua": "Вогонь, пісок, світло й пітьма...\nТак, гадаю, вони й спрацюють."
+    "ua": "Вогонь, пісок, світло й пітьма…\nТак, гадаю, вони й спрацюють."
   },
   "msg_legend2_hint_weak_3_01_u": {
     "en": "Don't you think those mummies\nlook rather dry and dusty?",
@@ -7853,27 +7853,27 @@
   },
   "msg_legend2_hint_weak_5_01_u": {
     "en": "White magic symbolises\nhope and life...",
-    "ua": "Біла магія символізує\nнадію і життя..."
+    "ua": "Біла магія символізує\nнадію і життя…"
   },
   "msg_legend2_hint_weak_5_01_prin_u": {
     "en": "White magic symbolises\nhope and life...",
-    "ua": "Біла магія символізує\nнадію і життя..."
+    "ua": "Біла магія символізує\nнадію і життя…"
   },
   "msg_legend2_hint_weak_5_01_pris_u": {
     "en": "White magic symbolises\nhope and life...",
-    "ua": "Біла магія символізує\nнадію і життя..."
+    "ua": "Біла магія символізує\nнадію і життя…"
   },
   "msg_legend2_hint_weak_5_02_u": {
     "en": "...just the things to get\na reaper's hackles up! ",
-    "ua": "...саме те, від чого\nжнець аж скипає! "
+    "ua": "…саме те, від чого\nжнець аж скипає! "
   },
   "msg_legend2_hint_weak_5_02_prin_u": {
     "en": "...just the things to hack\na reaper off royally!",
-    "ua": "...саме те, від чого жнець\nскипає по-королівськи!"
+    "ua": "…саме те, від чого жнець\nскипає по-королівськи!"
   },
   "msg_legend2_hint_weak_5_02_pris_u": {
     "en": "...just the things to put a\nreaper's nose out of joint! ",
-    "ua": "...саме те, від чого жнець\nгеть втрачає спокій! "
+    "ua": "…саме те, від чого жнець\nгеть втрачає спокій! "
   },
   "msg_legend2_hint_weak_6_01_u": {
     "en": "Those glittering golems have\na rather curious shortcoming.",
@@ -7901,11 +7901,11 @@
   },
   "msg_legend2_hint_wb_1_01_pris_u": {
     "en": "So, you need a yellow hero's\nblade to smash a yellow shield...",
-    "ua": "Отже, щоб розбити жовтий щит,\nпотрібен меч жовтого героя..."
+    "ua": "Отже, щоб розбити жовтий щит,\nпотрібен меч жовтого героя…"
   },
   "msg_legend2_hint_wb_1_02_pris_u": {
     "en": "A light-blue hero's blade to\nsmash a light-blue shield...",
-    "ua": "Щоб розбити блакитний щит —\nмеч блакитного героя..."
+    "ua": "Щоб розбити блакитний щит —\nмеч блакитного героя…"
   },
   "msg_legend2_hint_wb_1_03_pris_u": {
     "en": "What do you need to break\nthrough a shadowlight shield?",
@@ -7913,15 +7913,15 @@
   },
   "msg_legend2_hint_wb_2_01_pris_u": {
     "en": "Hm. Shadowlight, black and white...\nYes, that's it! A penguin hero!",
-    "ua": "Гм. Світлотінь, чорне й біле...\nТак, точно! Герой-пінгвін!"
+    "ua": "Гм. Світлотінь, чорне й біле…\nТак, точно! Герой-пінгвін!"
   },
   "msg_legend2_hint_wb_2_02_pris_u": {
     "en": "Hang on... There's no such thing\nas a penguin hero, is there.",
-    "ua": "Стривайте... Немає ж таких,\nяк герої-пінгвіни, правда?"
+    "ua": "Стривайте… Немає ж таких,\nяк герої-пінгвіни, правда?"
   },
   "msg_legend2_hint_wb_2_03_pris_u": {
     "en": "...What can you use instead\nthat's black and white?",
-    "ua": "...А що ще буває\nчорно-біле?"
+    "ua": "…А що ще буває\nчорно-біле?"
   },
   "msg_legend2_hint_wb_2_04_pris_u": {
     "en": "I know! How about a team made up\nof heroes clad in black and white!",
@@ -8185,7 +8185,7 @@
   },
   "msg_legend2_hint_ability_9_04_u": {
     "en": "If only there were a potion to put\na stop to those shenanigans...",
-    "ua": "Якби ж було зілля, яке\nкладе край цим витівкам..."
+    "ua": "Якби ж було зілля, яке\nкладе край цим витівкам…"
   },
   "msg_legend2_hint_ability_9_02_prin_u": {
     "en": "Be brave in the face of monsters\nwho can bring your levels down.",
@@ -8197,7 +8197,7 @@
   },
   "msg_legend2_hint_ability_9_04_prin_u": {
     "en": "If only there were a potion to put\na stop to those shenanigans...",
-    "ua": "Якби ж було зілля, яке\nкладе край цим витівкам..."
+    "ua": "Якби ж було зілля, яке\nкладе край цим витівкам…"
   },
   "msg_legend2_hint_ability_9_02_pris_u": {
     "en": "Be brave in the face of monsters\nwho can bring your levels down.",
@@ -8209,7 +8209,7 @@
   },
   "msg_legend2_hint_ability_9_04_pris_u": {
     "en": "If only there were a potion to put\na stop to those shenanigans...",
-    "ua": "Якби ж було зілля, яке\nкладе край цим витівкам..."
+    "ua": "Якби ж було зілля, яке\nкладе край цим витівкам…"
   },
   "msg_legend2_hint_ability_10_02_u": {
     "en": "Some monsters can nullify\nyour magic powers.",
@@ -8237,7 +8237,7 @@
   },
   "msg_legend2_hint_ability_11_02_u": {
     "en": "Poison, ice and sleep spells\nwon't work on them, I hear...",
-    "ua": "Кажуть, отрута, крига й сонне\nзакляття на них не діють..."
+    "ua": "Кажуть, отрута, крига й сонне\nзакляття на них не діють…"
   },
   "msg_legend2_hint_ability_11_01_pris_u": {
     "en": "Some monsters have particularly\nstrong magical defences.",
@@ -8245,7 +8245,7 @@
   },
   "msg_legend2_hint_ability_11_02_pris_u": {
     "en": "Poison, ice and sleep spells\nwon't work on them, I hear...",
-    "ua": "Кажуть, отрута, крига й сонне\nзакляття на них не діють..."
+    "ua": "Кажуть, отрута, крига й сонне\nзакляття на них не діють…"
   },
   "msg_legend2_hint_ability_11_03_u": {
     "en": "",
@@ -8289,7 +8289,7 @@
   },
   "msg_legend2_hint_ability_13_04_u": {
     "en": "I suppose you'll just have to hope\nfor a lucky blow with your blade...",
-    "ua": "Мабуть, лишається сподіватися\nна влучний удар мечем..."
+    "ua": "Мабуть, лишається сподіватися\nна влучний удар мечем…"
   },
   "msg_legend2_hint_ability_13_02_pris_u": {
     "en": "Some of those creeps are skilled\nat dodging sword attacks.",
@@ -8301,7 +8301,7 @@
   },
   "msg_legend2_hint_ability_13_04_pris_u": {
     "en": "I suppose you'll just have to hope\nfor a lucky blow with your blade...",
-    "ua": "Мабуть, лишається сподіватися\nна влучний удар мечем..."
+    "ua": "Мабуть, лишається сподіватися\nна влучний удар мечем…"
   },
   "msg_legend2_hint_combicom_1_03_u": {
     "en": "",
@@ -8345,7 +8345,7 @@
   },
   "msg_legend2_hint_merchant_2_02_u": {
     "en": "However! If you buy something\nother than a vial of valour...",
-    "ua": "Але! Якщо ви купуєте щось,\nокрім настою відваги..."
+    "ua": "Але! Якщо ви купуєте щось,\nокрім настою відваги…"
   },
   "msg_legend2_hint_merchant_2_03_u": {
     "en": "you should make sure another hero\nis behind the one making the order!",
@@ -8409,7 +8409,7 @@
   },
   "msg_legend2_hint_bright_1_03_pris_u": {
     "en": "Hmm... Now, what do you\nhave at your disposal?",
-    "ua": "Гмм... А що у вас\nє під рукою?"
+    "ua": "Гмм… А що у вас\nє під рукою?"
   },
   "msg_legend2_hint_bright_2_01_pris_u": {
     "en": "I know! Magic!",
@@ -8457,7 +8457,7 @@
   },
   "msg_legend2_hint_common_1_02_u": {
     "en": "I hope they're safe...",
-    "ua": "Хоч би вони були цілі..."
+    "ua": "Хоч би вони були цілі…"
   },
   "msg_legend2_hint_common_1_01_prin_u": {
     "en": "I wonder how the others\nare getting on.",
@@ -8465,7 +8465,7 @@
   },
   "msg_legend2_hint_common_1_02_prin_u": {
     "en": "Hope they're OK...",
-    "ua": "Хоч би з ними все гаразд..."
+    "ua": "Хоч би з ними все гаразд…"
   },
   "msg_legend2_hint_common_1_01_pris_u": {
     "en": "I wonder how the others\nare getting on.",
@@ -8473,15 +8473,15 @@
   },
   "msg_legend2_hint_common_1_02_pris_u": {
     "en": "I do hope they're alright...",
-    "ua": "Хоч би з ними все було гаразд..."
+    "ua": "Хоч би з ними все було гаразд…"
   },
   "msg_legend2_hint_common_1_03_u": {
     "en": "Oh, I fear for the kingdom...",
-    "ua": "Ох, боюся я за королівство..."
+    "ua": "Ох, боюся я за королівство…"
   },
   "msg_legend2_hint_common_2_01_u": {
     "en": "Mmm... Zzz...\n...Go, heroes!...",
-    "ua": "Ммм... Хррр...\n...Уперед, герої!..."
+    "ua": "Ммм… Хррр…\n…Уперед, герої!…"
   },
   "msg_legend2_hint_common_2_02_u": {
     "en": "Magic! Now's the time\nto use magic!",
@@ -8489,7 +8489,7 @@
   },
   "msg_legend2_hint_common_2_03_u": {
     "en": "Zzz...",
-    "ua": "Хррр..."
+    "ua": "Хррр…"
   },
   "msg_legend2_hint_common_3_01_u": {
     "en": "",
@@ -8497,11 +8497,11 @@
   },
   "msg_legend2_hint_common_3_02_u": {
     "en": "Heroes, please... Save me soon!\nNo, really... I'd appreciate it!",
-    "ua": "Герої, прошу... Врятуйте мене\nскоріше! Справді... буду вдячний!"
+    "ua": "Герої, прошу… Врятуйте мене\nскоріше! Справді… буду вдячний!"
   },
   "msg_legend2_hint_common_4_01_u": {
     "en": "Those villains who kidnapped me...",
-    "ua": "Ці лиходії, які мене викрали..."
+    "ua": "Ці лиходії, які мене викрали…"
   },
   "msg_legend2_hint_common_4_02_u": {
     "en": "What's their game?\nWhat are they after?!",
@@ -8509,7 +8509,7 @@
   },
   "msg_legend2_hint_common_4_01_prin_u": {
     "en": "Those baddies who kidnapped us...",
-    "ua": "Ці злодюги, які нас викрали..."
+    "ua": "Ці злодюги, які нас викрали…"
   },
   "msg_legend2_hint_common_4_02_prin_u": {
     "en": "Just what do they want?!",
@@ -8517,7 +8517,7 @@
   },
   "msg_legend2_hint_common_4_01_pris_u": {
     "en": "Those baddies who kidnapped us...",
-    "ua": "Ці злодюги, які нас викрали..."
+    "ua": "Ці злодюги, які нас викрали…"
   },
   "msg_legend2_hint_common_4_02_pris_u": {
     "en": "Just what do they want?!",
@@ -8529,27 +8529,27 @@
   },
   "msg_legend2_hint_common_5_02_u": {
     "en": "Don't let them get the best of you.\nKeep on fighting...and save me!",
-    "ua": "Не дайте їм узяти гору.\nБийтеся далі... і врятуйте мене!"
+    "ua": "Не дайте їм узяти гору.\nБийтеся далі… і врятуйте мене!"
   },
   "msg_legend2_hint_common_6_01_u": {
     "en": "Brr... It's a bit nippy.",
-    "ua": "Бр-р... Прохолодно."
+    "ua": "Бр-р… Прохолодно."
   },
   "msg_legend2_hint_common_6_01_prin_u": {
     "en": "Brr... I'm cold...",
-    "ua": "Бр-р... Холодно..."
+    "ua": "Бр-р… Холодно…"
   },
   "msg_legend2_hint_common_6_01_pris_u": {
     "en": "Brr... It's chilly...",
-    "ua": "Бр-р... Зимно..."
+    "ua": "Бр-р… Зимно…"
   },
   "msg_legend2_hint_common_6_02_u": {
     "en": "Would that I had some red\nmagic to warm myself up...",
-    "ua": "Якби ж я мав червону магію,\nщоб зігрітися..."
+    "ua": "Якби ж я мав червону магію,\nщоб зігрітися…"
   },
   "msg_legend2_hint_common_2_01_prin_u": {
     "en": "Zzz... Mmm...\nKeep fighting, heroes!",
-    "ua": "Хррр... Ммм...\nБийтеся, герої!"
+    "ua": "Хррр… Ммм…\nБийтеся, герої!"
   },
   "msg_legend2_hint_common_2_02_prin_u": {
     "en": "Yes! That's it!\nUse a combo blade attack!",
@@ -8557,7 +8557,7 @@
   },
   "msg_legend2_hint_common_2_03_prin_u": {
     "en": "Zzz...",
-    "ua": "Хррр..."
+    "ua": "Хррр…"
   },
   "msg_legend2_hint_common_15_01_prin_u": {
     "en": "Just look at those monsters\nwrapped up in bandages!",
@@ -8565,19 +8565,19 @@
   },
   "msg_legend2_hint_common_15_02_prin_u": {
     "en": "I wonder if they all had\na nasty accident...",
-    "ua": "Цікаво, чи з ними всіма\nсталася якась халепа..."
+    "ua": "Цікаво, чи з ними всіма\nсталася якась халепа…"
   },
   "msg_legend2_hint_common_9_01_u": {
     "en": "Phew, I'm parched...",
-    "ua": "Ох, у горлі пересохло..."
+    "ua": "Ох, у горлі пересохло…"
   },
   "msg_legend2_hint_common_9_01_prin_u": {
     "en": "So thirsty...",
-    "ua": "Пити хочу..."
+    "ua": "Пити хочу…"
   },
   "msg_legend2_hint_common_9_01_pris_u": {
     "en": "So thirsty...",
-    "ua": "Пити хочу..."
+    "ua": "Пити хочу…"
   },
   "msg_legend2_hint_common_9_02_u": {
     "en": "Would that I could use blue magic.\nI'd have all the water I want!",
@@ -8585,11 +8585,11 @@
   },
   "msg_legend2_hint_common_15_01_pris_u": {
     "en": "Those big stone puppets are so\nstrange... How do they work?",
-    "ua": "Ці великі кам'яні ляльки такі\nдивні... Як вони працюють?"
+    "ua": "Ці великі кам'яні ляльки такі\nдивні… Як вони працюють?"
   },
   "msg_legend2_hint_common_15_02_pris_u": {
     "en": "How very mysterious... One could\neven go so far as to say 'enigmatic'!",
-    "ua": "Дуже загадково... Можна навіть\nсказати — «таємниче»!"
+    "ua": "Дуже загадково… Можна навіть\nсказати — «таємниче»!"
   },
   "msg_legend2_hint_common_11_01_u": {
     "en": "",
@@ -8601,7 +8601,7 @@
   },
   "msg_legend2_hint_common_2_01_pris_u": {
     "en": "Zzz... Fight, heroes!",
-    "ua": "Хррр... Бийтеся, герої!"
+    "ua": "Хррр… Бийтеся, герої!"
   },
   "msg_legend2_hint_common_2_02_pris_u": {
     "en": "Now! Use combo magic!",
@@ -8609,7 +8609,7 @@
   },
   "msg_legend2_hint_common_2_03_pris_u": {
     "en": "Zzz...",
-    "ua": "Хррр..."
+    "ua": "Хррр…"
   },
   "msg_legend2_hint_common_5_01_prin_u": {
     "en": "I daresay those slimes would\nmake rather nice pillows.",
@@ -8617,7 +8617,7 @@
   },
   "msg_legend2_hint_common_5_02_prin_u": {
     "en": "They're so soft and squidgy...\nPerfect for resting my royal head.",
-    "ua": "Такий м'який і пружний...\nСаме для моєї королівської голови."
+    "ua": "Такий м'який і пружний…\nСаме для моєї королівської голови."
   },
   "msg_legend2_hint_common_5_01_pris_u": {
     "en": "One of those tin cans is\nlooking right at me!",
@@ -8625,7 +8625,7 @@
   },
   "msg_legend2_hint_common_5_02_pris_u": {
     "en": "If only it were a gallant knight\non a white horse instead...",
-    "ua": "Якби ж то замість неї був\nзвитяжний лицар на білому коні..."
+    "ua": "Якби ж то замість неї був\nзвитяжний лицар на білому коні…"
   },
   "msg_legend2_hint_common_15_01_u": {
     "en": "Stop swinging that scythe around!\nYou'll have someone's eye out!",
@@ -8669,11 +8669,11 @@
   },
   "msg_legend2_hint_lastghost_5_03_u": {
     "en": "I don't think I'll ever get used\nto that grim look on his face...!",
-    "ua": "Певно, я ніколи не звикну\nдо цієї похмурої пики...!"
+    "ua": "Певно, я ніколи не звикну\nдо цієї похмурої пики…!"
   },
   "msg_legend2_hint_lastboss_1_01_u": {
     "en": "Look at those wings and claws...\nHe's just like a giant bird!",
-    "ua": "Гляньте на ці крила й пазурі...\nВін наче велетенський птах!"
+    "ua": "Гляньте на ці крила й пазурі…\nВін наче велетенський птах!"
   },
   "msg_legend2_hint_lastboss_2_01_u": {
     "en": "He may look like a mighty foe, but\nI have faith in you! You can do it!",
@@ -8681,7 +8681,7 @@
   },
   "msg_legend2_hint_lastboss_3_01_u": {
     "en": "This is the final battle...",
-    "ua": "Це останній бій..."
+    "ua": "Це останній бій…"
   },
   "msg_legend2_hint_lastboss_3_02_u": {
     "en": "You can't give up now!\nI know you can win!",
@@ -8697,19 +8697,19 @@
   },
   "msg_legend2_hint_lastboss_6_01_u": {
     "en": "Nngh... Th-that hurts...!",
-    "ua": "Ох... Б-боляче...!"
+    "ua": "Ох… Б-боляче…!"
   },
   "msg_legend2_hint_lastboss_6_02_u": {
     "en": "Please, hurry...",
-    "ua": "Прошу, швидше..."
+    "ua": "Прошу, швидше…"
   },
   "msg_legend2_hint_lastboss_7_01_u": {
     "en": "I don't even want to think about\nwhat would happen if I fell...",
-    "ua": "Навіть думати не хочу,\nщо буде, як я впаду..."
+    "ua": "Навіть думати не хочу,\nщо буде, як я впаду…"
   },
   "msg_legend2_hint_lastboss_7_02_u": {
     "en": "Urgh... My head's spinning!",
-    "ua": "Ох... Голова обертом!"
+    "ua": "Ох… Голова обертом!"
   },
   "msg_legend2_hint_lastboss_8_01_u": {
     "en": "",
@@ -8729,7 +8729,7 @@
   },
   "msg_legend2_hint_heronothing_1_01_prin_u": {
     "en": "Looks like we're short\non heroes...",
-    "ua": "Схоже, героїв\nу нас бракує..."
+    "ua": "Схоже, героїв\nу нас бракує…"
   },
   "msg_legend2_hint_heronothing_1_01_pris_u": {
     "en": "Where is my knight\nin shining armour?",
@@ -8765,11 +8765,11 @@
   },
   "msg_legend2_hint_heronothing_1_04_pris_u": {
     "en": "Please... Save me!",
-    "ua": "Прошу... Врятуйте мене!"
+    "ua": "Прошу… Врятуйте мене!"
   },
   "msg_legend2_hint_heronothing_2_01_u": {
     "en": "This is terrible... Are there no heroes\nwilling to rise to the challenge?",
-    "ua": "Це жахливо... Невже немає героїв,\nготових стати до бою?"
+    "ua": "Це жахливо… Невже немає героїв,\nготових стати до бою?"
   },
   "msg_legend2_hint_heronothing_2_02_u": {
     "en": "Try gathering heroes\nusing StreetPass!",
@@ -9397,7 +9397,7 @@
   },
   "dlg_legend2_ed1_03_u": {
     "en": "But don't think your adventures\nend here! Have you overlooked\na hat somewhere?",
-    "ua": "Але не думайте, що ваші пригоди\nна цьому скінчилися! Чи не\nпроґавили\nви десь якийсь капелюх?"
+    "ua": "Але не думайте, що ваші пригоди\nна цьому скінчилися!\nЧи не проґавили ви десь\nякийсь капелюх?"
   },
   "dlg_legend2_ed1_04_u": {
     "en": "Why not try starting over again?",
@@ -9421,7 +9421,7 @@
   },
   "dlg_legend2_ed3_01_u": {
     "en": "This hat is a gift from me.",
-    "ua": "Цей капелюх — подарунок від\nмене."
+    "ua": "Цей капелюх — подарунок\nвід мене."
   },
   "dlg_legend2_ed3_02_u": {
     "en": "Oh? A new path has appeared!",
@@ -9461,11 +9461,11 @@
   },
   "msg_legend2_hint_cmn_13_02_u": {
     "en": "One of those tin cans is looking\nright this way...",
-    "ua": "Одна з тих бляшанок дивиться\nпросто сюди..."
+    "ua": "Одна з тих бляшанок дивиться\nпросто сюди…"
   },
   "msg_legend2_hint_cmn_13_03_u": {
     "en": "...Eep.",
-    "ua": "...Ой."
+    "ua": "…Ой."
   },
   "msg_legend2_hint_cmn_14_01_u": {
     "en": "An armour-clad ghost, eh?",
@@ -9473,15 +9473,15 @@
   },
   "msg_legend2_hint_cmn_14_02_u": {
     "en": "A level 1 hero won't even make\na dent in that armour...",
-    "ua": "Герой 1-го рівня ті лати\nнавіть не подряпає..."
+    "ua": "Герой 1-го рівня ті лати\nнавіть не подряпає…"
   },
   "msg_legend2_hint_cmn_15_01_u": {
     "en": "Even the sturdiest armour must\nhave a weak spot somewhere...",
-    "ua": "Навіть у найміцніших латах\nмає бути слабке місце..."
+    "ua": "Навіть у найміцніших латах\nмає бути слабке місце…"
   },
   "msg_legend2_hint_cmn_15_02_u": {
     "en": "...That's it! Magic!\nThere's no way to stop magic.",
-    "ua": "...Точно! Магія!\nМагію нічим не спинити."
+    "ua": "…Точно! Магія!\nМагію нічим не спинити."
   },
   "msg_legend2_hint_cmn_15_03_u": {
     "en": "Using magic effectively is the\nkey to victory, heroes!",
@@ -9501,7 +9501,7 @@
   },
   "cmn_save_d": {
     "en": "Saving... Don't turn off the power.",
-    "ua": "Збереження... Не вимикайте\nконсоль."
+    "ua": "Збереження… Не вимикайте\nконсоль."
   },
   "choice_ques_sepa_greeting_u": {
     "en": "Use personal greeting?",
@@ -9529,11 +9529,11 @@
   },
   "dlg_wake_up_u": {
     "en": "Preparing...\nPlease don't turn off the power.",
-    "ua": "Підготовка...\nНе вимикайте консоль."
+    "ua": "Підготовка…\nНе вимикайте консоль."
   },
   "dlg_mii_delete_u": {
     "en": "Erasing Mii...\nPlease don't turn off the power.",
-    "ua": "Стирання Mii...\nНе вимикайте консоль."
+    "ua": "Стирання Mii…\nНе вимикайте консоль."
   },
   "dlg_1panel_comp_u": {
     "en": "Panel complete!\nCheck it out using the\nView Progress option!",
@@ -9613,11 +9613,11 @@
   },
   "msg_legend2_dark_room_4_f_u": {
     "en": "{t:1.2:} can't do\nanything and goes home.",
-    "ua": "{t:1.2:} нічого не\nможе вдіяти й іде додому."
+    "ua": "{t:1.2:} нічого\nне може вдіяти й іде додому."
   },
   "dlg_choice_legend_wander_u": {
     "en": " Hire Wanderers",
-    "ua": "  Найняти мандрівників"
+    "ua": " Найняти мандрівників"
   },
   "dlg_choice_legend_successive_u": {
     "en": " Hire Old Allies",
@@ -9669,7 +9669,7 @@
   },
   "dlg_coin_exp_legend_00_u": {
     "en": "What's that? You say you want\nto know how to use  Play Coins?",
-    "ua": "Що? Хочете дізнатися, як\nвитрачати  ігрові монетки?"
+    "ua": "Що? Хочете дізнатися,\nяк витрачати  ігрові монетки?"
   },
   "dlg_coin_exp_piece_00_u": {
     "en": "Want to know what\n Play Coins are?",
@@ -9693,11 +9693,11 @@
   },
   "dlg_coin_exp_03_u": {
     "en": "Just close the system without\nturning off the power, then take it\nwith you when you go for a walk.",
-    "ua": "Просто закрийте консоль, не\nвимикаючи\nживлення, і візьміть її з собою,\nколи йдете на прогулянку."
+    "ua": "Просто закрийте консоль,\nне вимикаючи\nживлення, і візьміть її з собою,\nколи йдете на прогулянку."
   },
   "dlg_coin_exp_legend_04_u": {
     "en": "Well, regardless of how many\n Play Coins you might get...",
-    "ua": "Хай скільки  ігрових монеток\nви здобудете..."
+    "ua": "Хай скільки  ігрових монеток\nви здобудете…"
   },
   "dlg_coin_exp_piece_04_u": {
     "en": "You can get up to 10\nPlay Coins in a day!",
@@ -9729,7 +9729,7 @@
   },
   "panel_m_k_u": {
     "en": "Mario and Bowser",
-    "ua": "Маріо і Баузер"
+    "ua": "Маріо і Боузер"
   },
   "panel_zelda_u": {
     "en": "The Legend of Zelda",
@@ -9861,7 +9861,7 @@
   },
   "dlg_gate_sub01_u": {
     "en": "If you go to the entrance, the guests you haven't\nplayed with yet will no longer be able to play.",
-    "ua": "Якщо піти до входу, гості, з якими ви ще не\nграли, більше не зможуть із вами зіграти."
+    "ua": "Якщо піти до входу, гості, з якими ви ще\nне грали, більше не зможуть із вами зіграти."
   },
   "dlg_choice_go_gate_u": {
     "en": "Go to Entrance",
@@ -9885,7 +9885,7 @@
   },
   "dlg_e_shop_1_u": {
     "en": "View details in Nintendo eShop?",
-    "ua": "Переглянути подробиці в\nNintendo eShop?"
+    "ua": "Переглянути подробиці\nв Nintendo eShop?"
   },
   "dlg_e_shop_2_u": {
     "en": "This will close StreetPass Mii Plaza.",
@@ -9945,15 +9945,15 @@
   },
   "dlg_map_op_03_u": {
     "en": "The map starts out blank, but gets\ncoloured in based on the regions\nset for Mii characters you meet!",
-    "ua": "Спершу карта порожня, але вона\nзафарбовується залежно від\nрегіонів\nMii, яких ви зустрічаєте!"
+    "ua": "Спершу карта порожня, але вона\nзафарбовується залежно\nвід регіонів\nMii, яких ви зустрічаєте!"
   },
   "dlg_map_op_04_u": {
     "en": "Try and meet people from as many\ndifferent regions as you can...",
-    "ua": "Спробуйте зустріти людей із\nякомога\nбільшої кількості регіонів..."
+    "ua": "Спробуйте зустріти людей\nіз якомога\nбільшої кількості регіонів…"
   },
   "dlg_map_op_05_u": {
     "en": "...and fill your map with colour!",
-    "ua": "...і заповнити карту кольорами!"
+    "ua": "…і заповнити карту кольорами!"
   },
   "map_america": {
     "en": "",
@@ -10077,7 +10077,7 @@
   },
   "dlg_information_legend2_description_u": {
     "en": "You can now find a sequel to\nStreetPass Quest in the Play\nsection of StreetPass Mii Plaza!\n\nGather a merry band of Mii heroes\nthrough StreetPass, do battle with\nfiendish monsters and collect a new\nselection of hats!\n\nThis new mode is available\nonly to players who have\ncollected every hat in the\noriginal StreetPass Quest.\n\n(From: StreetPass Mii Plaza)",
-    "ua": "У розділі «Грати» на Площі\nStreetPass Mii з'явилося\nпродовження\n«Порятунку Mii»!\n\nЗбирайте веселий загін героїв Mii\nчерез StreetPass, бийтеся з\nпідступними\nчудовиськами й здобувайте нові\nкапелюхи!\n\nЦей режим доступний лише тим,\nхто зібрав усі капелюхи\nв першому «Порятунку Mii».\n\n(Від: Площа StreetPass Mii)"
+    "ua": "У розділі «Грати» на Площі\nStreetPass Mii з'явилося\nпродовження\n«Порятунку Mii»!\n\nЗбирайте веселий загін героїв Mii\nчерез StreetPass, бийтеся\nз підступними\nчудовиськами й здобувайте нові\nкапелюхи!\n\nЦей режим доступний лише тим,\nхто зібрав усі капелюхи\nв першому «Порятунку Mii».\n\n(Від: Площа StreetPass Mii)"
   },
   "dlg_information_spotpasspanel_title_u": {
     "en": "Puzzle Swap",

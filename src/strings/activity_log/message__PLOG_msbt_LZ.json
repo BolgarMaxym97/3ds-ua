@@ -245,7 +245,7 @@
   },
   "month_full_5": {
     "en": "May",
-    "ua": "травень"
+    "ua": "{t:1.0:5b00}травень{t:1.0:6400}"
   },
   "month_full_6": {
     "en": "June",
@@ -265,7 +265,7 @@
   },
   "month_full_10": {
     "en": "October",
-    "ua": "жовтень"
+    "ua": "{t:1.0:6300}жовтень{t:1.0:6400}"
   },
   "month_full_11": {
     "en": "November",
@@ -681,19 +681,19 @@
   },
   "no_data_day": {
     "en": "No records for the\nselected day",
-    "ua": "Немає записів за\nвибраний день"
+    "ua": "Немає записів\nза вибраний день"
   },
   "no_data_week": {
     "en": "No records for the\nselected week",
-    "ua": "Немає записів за\nвибраний тиждень"
+    "ua": "Немає записів\nза вибраний тиждень"
   },
   "no_data_month": {
     "en": "No records for the\nselected month",
-    "ua": "Немає записів за\nвибраний місяць"
+    "ua": "Немає записів\nза вибраний місяць"
   },
   "no_data_year": {
     "en": "No records for the\nselected year",
-    "ua": "Немає записів за\nвибраний рік"
+    "ua": "Немає записів\nза вибраний рік"
   },
   "mode_name_steps": {
     "en": "Steps",
@@ -849,7 +849,7 @@
   },
   "soft_record_top_play_count": {
     "en": "No. Times Played",
-    "ua": "Кількість запусків"
+    "ua": "{t:1.0:6200}Кількість запусків{t:1.0:6400}"
   },
   "soft_record_top_play_average": {
     "en": "Average Play Time",
@@ -953,11 +953,11 @@
   },
   "first_dialog_1": {
     "en": "Welcome to Activity Log!{t:1.0:1400}\n{/t:1.0}\nHere, you can view play time\ndata and the number of steps\nyou've walked while carrying\nyour Nintendo 3DS system.",
-    "ua": "Вітаємо в Журналі дій!{t:1.0:1400}\n{/t:1.0}\nТут можна побачити дані про\nчас гри та кількість кроків,\nякі ви пройшли з вашою\nконсоллю Nintendo 3DS."
+    "ua": "Вітаємо в Журналі дій!{t:1.0:1400}\n{/t:1.0}\nТут можна побачити дані\nпро час гри та кількість\nкроків, які ви пройшли\nз вашою консоллю\nNintendo 3DS."
   },
   "first_dialog_2": {
     "en": "Press HOME at any time to\nreturn to the HOME Menu.",
-    "ua": "Натисніть HOME, щоб\nповернутися до меню HOME."
+    "ua": "Натисніть HOME, щоб\nповернутися в меню HOME."
   },
   "new_dialog_1": {
     "en": "",
@@ -965,11 +965,11 @@
   },
   "new_dialog_1_sg": {
     "en": "A new title has\nbeen added to\nthe Software Library!",
-    "ua": "Нову програму\nдодано до\nбібліотеки програм!"
+    "ua": "Нову програму\nдодано\nдо бібліотеки програм!"
   },
   "new_dialog_1_pl": {
     "en": "New titles have\nbeen added to\nthe Software Library!",
-    "ua": "Нові програми\nдодано до\nбібліотеки програм!"
+    "ua": "Нові програми\nдодано\nдо бібліотеки програм!"
   },
   "new_dialog_2": {
     "en": "",

@@ -35,9 +35,9 @@ A folder name is the Title ID (TID) of the system title it overrides. Luma reads
 | `0004001000022900` | Nintendo eShop | `romfs/` + `exheader.bin` — LayeredFS plus a rights patch |
 | `000400300000BE02` | Miiverse (`cave`) | `romfs/` + `code.ips` + `exheader.bin` + `msg_romfs.bin` — LayeredFS plus a rights patch and the error-message archive |
 | `000400300000BA02` | Miiverse posting applet | `romfs/` + `exheader.bin` — LayeredFS plus a rights patch |
-| `000400100002C100` | Nintendo Network ID Settings (`act`) | `romfs/` + `exheader.bin` — LayeredFS plus a rights patch; the files are Miiverse's own |
+| `000400100002C100` | Nintendo Network ID Settings (`act`) | `romfs/` + `code.ips` + `exheader.bin` — LayeredFS plus a rights patch; the files are Miiverse's own |
 | `0004001000022A00` | System Transfer | `romfs/` — LayeredFS |
-| `0004001000022B00` | Nintendo Zone | `romfs/` — LayeredFS |
+| `0004001000022B00` | Nintendo Zone Viewer | `romfs/` — LayeredFS |
 | `0004001000022D00` | Face Raiders | `romfs/` — LayeredFS |
 | `0004001000022E00` | AR Games | `romfs/` — LayeredFS |
 | `0004001000022100` | Download Play | `code.ips` + `exheader.bin` + `dlplay_romfs.bin` — no LayeredFS, whole RomFS image off the SD card |
@@ -58,7 +58,7 @@ Download Play, the Software Keyboard, Health & Safety Information, the error app
 
 A New 3DS runs its own copies of the Internet Browser and of Health & Safety Information, and **the loader looks their files up under the Old 3DS title id**: the New 3DS bit of the low word is cleared, so the New 3DS binary is what gets patched while the Old 3DS title's folder is what gets read. On a New 3DS `luma/titles/0004003000009D02/romfs/` serves `SKATER`, and `luma/titles/0004001000022300/code.ips` lands on `ssafe`.
 
-The same file therefore has to hold different bytes on the two consoles, and one card cannot be in both states - hence four archives instead of two. The evidence and the exact numbers (the loader aborting on `ssafe` sized by `safe`'s exheader) are in [docs/dump-new3ds.md](dump-new3ds.md), the build side is `write_loader_alias()` in `tools/build.py`, the packaging side `tools/package.py`.
+The same file therefore has to hold different bytes on the two consoles, and one card cannot be in both states - hence four archives instead of two. The evidence and the exact numbers (the loader aborting on `ssafe` sized by `safe`'s exheader) are in the New 3DS dump notes (`docs/dump-new3ds.md`, kept out of the repository), the build side is `write_loader_alias()` in `tools/build.py`, the packaging side `tools/package.py`.
 
 Files a title opens itself by an absolute SD path (`ssafe_romfs.bin`) are not affected: the loader never looks for those, the title's own code does, so they stay under their New 3DS id.
 
@@ -229,7 +229,7 @@ whose font stopped shipping would crash the same way. `build_hud_font()` is what
 | Miiverse posting applet | ✅ translated, with a rights patch — needs title version 0 (see below) |
 | Nintendo Network ID Settings | ⚠️ dialogs and errors translated, with a rights patch — needs title version 3 (see below). The account pages themselves come from the server, see [What the mod does not translate](#what-the-mod-does-not-translate) |
 | System Transfer | ✅ translated |
-| Nintendo Zone | ✅ translated |
+| Nintendo Zone Viewer | ✅ translated |
 | Face Raiders | ✅ translated |
 | AR Games | ✅ translated |
 | Health & Safety Information | ✅ translated, by replacing the whole RomFS — needs title version 3 (see below) |
@@ -284,7 +284,7 @@ The root cause is in the exheader, `accessInfo` at offset 0x248:
 | Mii Maker | `0x0000000000000081` | yes |
 | Game Notes | `0x0000000000000081` | yes |
 | Internet Browser | `0x0000000000000081` | yes |
-| Nintendo Zone | `0x0000000000000081` | yes |
+| Nintendo Zone Viewer | `0x0000000000000081` | yes |
 | Face Raiders | `0x0000000000000081` | yes |
 | AR Games | `0x0000000000000081` | yes |
 | System Transfer | `0x00000000000020a1` | yes |
@@ -1109,12 +1109,12 @@ Only the slot this build replaces is touched (index 10 for `from-ru`, 1 for `fro
 
 **Real Ukrainian letters from the keyboard.** The layout is Ukrainian (see [The Ukrainian keyboard layout](#the-ukrainian-keyboard-layout)), but the `і ї є` keys type `i ï ε` — the same substitute glyphs the rest of the mod uses. On the console that reads correctly and consistently; outside it — in a Mii name, a folder name, a post — it is Latin and Greek, not Ukrainian text. There is no way around it: real letters need a different font, which means modifying NAND.
 
-**The text inside electronic manuals.** The Instruction Manual application itself is translated — `Back`, `Enlarge`, `Language`, `Page`, `Contents`, the language dialog. The documents it displays can be translated too now, but one at a time, and each has to be dumped off the console first. Eleven are translated in full - Internet Browser, System Settings, Activity Log, Download Play, Camera, Sound, Mii Maker, StreetPass Mii Plaza, Nintendo eShop, Face Raiders and AR Games; every other title shows the console's own manual. The limit here is space: the path table and the SMDH name table share one 1064-byte `.rodata` padding window. Eleven titles used 977 of it — now **558**, after two changes that cost nothing:
+**The text inside electronic manuals.** The Instruction Manual application itself is translated — `Back`, `Enlarge`, `Language`, `Page`, `Contents`, the language dialog. The documents it displays can be translated too now, but one at a time, and each has to be dumped off the console first. Twelve are translated in full - Internet Browser, System Settings, Activity Log, Download Play, Camera, Sound, Mii Maker, StreetPass Mii Plaza, Nintendo eShop, Face Raiders, AR Games and the New 3DS Internet Browser (plus the New 3DS Health and Safety document, which ships in that title's own romfs); every other title shows the console's own manual. The limit here is space: the path table and the SMDH name table share one 1064-byte `.rodata` padding window. Eleven titles used 977 of it — **558** after these changes, and **617** with the twelfth (the New 3DS browser), after two changes that cost nothing:
 
 1. **Short descriptions only in the name table.** The viewer prints the short description above the page and never the long one, yet storing it cost as much again. `build_table(short_only=True)` writes a long length of `0`, which the stub reads as "leave that field alone", so the buffer keeps the original. The HOME Menu does display both and is not passed the flag. 324 bytes saved.
 2. **Shorter file names.** The document's name on the SD card is ours to choose, and `rex:/2000` costs 10 bytes where `rex:/00022000.bcma` cost 19. The low 16 bits of the title id are used - unique across every system title, and the build fails if they ever stop being. 132 bytes saved.
 
-That leaves **506 bytes free** instead of 87, room for roughly nine more manuals at ~56 bytes each. What blocks the next one is now a dump off the console, not the padding.
+That leaves **~447 bytes free** instead of 87, room for roughly eight more manuals at ~56 bytes each. What blocks the next one is now a dump off the console, not the padding.
 
 That document does not belong to the Instruction Manual. Every title ships its own electronic manual as a separate NCCH — content index 1 within that same title. The Instruction Manual reaches it through `ARCHIVE_SAVEDATA_AND_CONTENT`, reading the documented title's content directly.
 

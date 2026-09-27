@@ -85,7 +85,7 @@
   },
   "92410": {
     "en": "This network service has been\ndiscontinued. Thank you for\nusing this service.",
-    "ua": "Цей мережевий сервіс\nприпинено. Дякуємо, що\nкористувалися ним."
+    "ua": "Цей мережевий сервіс\nприпинено. Дякуємо,\nщо користувалися ним."
   },
   "92996": {
     "en": "The item corresponding to the code\nyou entered is not currently being\ndistributed.",
@@ -93,7 +93,7 @@
   },
   "94072": {
     "en": "An error has occurred.\n\n■ The SD Card may not be inserted\nor was inserted during use of the\nsystem. Please turn off the power,\nthen insert the SD Card and try again.\n\n■ Please check that the SD Card is\nnot write-protected.",
-    "ua": "Сталася помилка.\n\n■ Можливо, карту SD не\nвставлено або вставлено\nпід час роботи консолі.\nВимкніть консоль, вставте\nкарту SD і спробуйте ще раз.\n\n■ Перевірте, чи карту SD\nне захищено від запису."
+    "ua": "Сталася помилка.\n\n■ Можливо, карту SD\nне вставлено або вставлено\nпід час роботи консолі.\nВимкніть консоль, вставте\nкарту SD і спробуйте ще раз.\n\n■ Перевірте, чи карту SD\nне захищено від запису."
   },
   "94074": {
     "en": "Could not access SD Card.\n\nTurn off the system, remove\nand reinsert the SD Card and\nthen try again.",
@@ -113,7 +113,7 @@
   },
   "94100": {
     "en": "No more add-on content can be\ndownloaded as the maximum amount\nthat can be saved to the SD Card has\nbeen reached.",
-    "ua": "Більше додаткового вмісту\nзавантажити не можна:\nдосягнуто межі того, що\nможна зберегти на карті SD."
+    "ua": "Більше додаткового вмісту\nзавантажити не можна:\nдосягнуто межі того,\nщо можна зберегти на карті SD."
   },
   "98001": {
     "en": "Authentication failed.\n\nPlease view your account activity in\nNintendo eShop and check that the\nservice has been successfully\nregistered to your account.",

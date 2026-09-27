@@ -17,7 +17,7 @@
   },
   "222503": {
     "en": "You must accept the latest terms of\nthe Nintendo Network Agreement and\nNintendo Network Privacy Policy before\nonline services can be used.\n\nSelect Nintendo Network ID Settings\nfrom the System Settings and agree\nto the terms.",
-    "ua": "Щоб користуватися мережевими\nсервісами, потрібно прийняти\nнайновіші умови угоди про\nNintendo Network і політики\nконфіденційності.\n\nВиберіть Nintendo Network ID\nу налаштуваннях системи\nй прийміть умови."
+    "ua": "Щоб користуватися мережевими\nсервісами, потрібно прийняти\nнайновіші умови угоди\nпро Nintendo Network і політики\nконфіденційності.\n\nВиберіть Nintendo Network ID\nу налаштуваннях системи\nй прийміть умови."
   },
   "222511": {
     "en": "A system update is required before\nonline services can be used.\n\nGo to Other Settings in the System\nSettings to perform a system update.",
@@ -101,7 +101,7 @@
   },
   "222592": {
     "en": "It is not currently possible to link\na Nintendo Network ID from this\nsystem, as you have reached the\nlimit for ID linking at this time.\n\nPlease try again later.",
-    "ua": "Зараз зв'язати Nintendo\nNetwork ID із цієї консолі\nне можна: ви досягли\nобмеження на зв'язування ID.\n\nСпробуйте пізніше."
+    "ua": "Зараз зв'язати\nNintendo Network ID із цієї консолі\nне можна: ви досягли\nобмеження на зв'язування ID.\n\nСпробуйте пізніше."
   },
   "222593": {
     "en": "This Nintendo Network ID cannot be\nused because it has not been\nconfirmed by a parent or guardian.\n\nPlease contact your local customer\nsupport centre, quoting the error\ncode. For contact details, check the\nOperations Manual or visit\nsupport.nintendo.com.",
@@ -133,7 +133,7 @@
   },
   "222631": {
     "en": "You cannot access online services\nbecause the Nintendo Network ID\nformerly linked to the system has been\ndeleted.\n\nYou can create another Nintendo\nNetwork ID or link one to the system\nby going to Nintendo Network ID\nSettings from the System Settings.",
-    "ua": "Мережеві сервіси недоступні:\nNintendo Network ID, раніше\nзв'язаний із консоллю,\nвидалено.\n\nСтворити інший Nintendo\nNetwork ID або зв'язати\nнаявний можна в розділі\nNintendo Network ID\nу налаштуваннях системи."
+    "ua": "Мережеві сервіси недоступні:\nNintendo Network ID, раніше\nзв'язаний із консоллю,\nвидалено.\n\nСтворити інший\nNintendo Network ID або зв'язати\nнаявний можна в розділі\nNintendo Network ID\nу налаштуваннях системи."
   },
   "222632": {
     "en": "Your Nintendo Network ID has changed.\n\nPlease approve the change by selecting\nNintendo Network ID Settings in the\nSystem Settings.",

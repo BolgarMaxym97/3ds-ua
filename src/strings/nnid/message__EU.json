@@ -69,7 +69,7 @@
   },
   "ask_send_mail_for_pass": {
     "en": "Would you like to have a\nrecovery email sent to your\nregistered email address?",
-    "ua": "Надіслати лист для\nвідновлення пароля\nна зареєстровану\nелектронну пошту?"
+    "ua": "Надіслати лист\nдля відновлення пароля\nна зареєстровану\nелектронну пошту?"
   },
   "ask_solve_device_mismatch": {
     "en": "Would you like to remove the<br>link to this Nintendo Network ID<br>from the system?",
@@ -317,7 +317,7 @@
   },
   "can_not_change": {
     "en": "It is not possible to change\nyour Nintendo Network ID,\ndate of birth or region.\nFor details, please visit\nsupport.nintendo.com.",
-    "ua": "Змінити ваш Nintendo Network\nID, дату народження чи регіон\nнеможливо. Докладніше —\nна сайті\nsupport.nintendo.com."
+    "ua": "Змінити ваш Nintendo Network ID,\nдату народження чи регіон\nнеможливо. Докладніше —\nна сайті\nsupport.nintendo.com."
   },
   "can_not_change_jp": {
     "en": "[can_not_change_jp]",
@@ -345,7 +345,7 @@
   },
   "caution_message": {
     "en": "Deleting your Nintendo Network\nID will permanently remove all\nof your software licences and\nNintendo eShop funds. Software\nregistered to your ID can no\nlonger be used or downloaded.",
-    "ua": "Видалення Nintendo Network ID\nназавжди прибере всі ваші\nліцензії на програми й кошти\nв Nintendo eShop. Програмами,\nзареєстрованими на ваш ID, не\nвийде користуватися чи завантажити їх."
+    "ua": "Видалення Nintendo Network ID\nназавжди прибере всі ваші\nліцензії на програми й кошти\nв Nintendo eShop. Програмами,\nзареєстрованими на ваш ID,\nне вийде користуватися чи завантажити їх."
   },
   "change_birth": {
     "en": null,
@@ -541,15 +541,15 @@
   },
   "error_not_online": {
     "en": "An internet connection is\nrequired to link a Nintendo\nNetwork ID.\n\nMake sure your connection\nsettings are correct via\nInternet Settings in the\nSystem Settings.",
-    "ua": "Щоб прив'язати Nintendo\nNetwork ID, потрібне\nз'єднання з Інтернетом.\n\nПеревірте налаштування\nз'єднання в розділі\nІнтернет-налаштування\nв Налаштуваннях системи."
+    "ua": "Щоб прив'язати\nNintendo Network ID, потрібне\nз'єднання з Інтернетом.\n\nПеревірте налаштування\nз'єднання в розділі\nІнтернет-налаштування\nв Налаштуваннях системи."
   },
   "error_not_opened_mii": {
     "en": "In order to link a Nintendo\nNetwork ID, you must enable\nsharing of your Personal Mii.\n\nPlease note that if the sharing\nof a Mii character is enabled,\nit may remain on others'\nsystems and appear in games\nthat they play after you have\nplayed together via a wireless\nconnection.\n\nShare your Personal Mii\nwith others?",
-    "ua": "Щоб прив'язати Nintendo\nNetwork ID, потрібно\nдозволити доступ до вашого\nПерсонального Mii.\n\nЗверніть увагу: якщо доступ\nдо Mii відкрито, він може\nлишитися на консолях інших\nгравців і з'являтися в іграх,\nу які вони грають після\nбездротового сеансу з вами.\n\nВідкрити доступ до вашого\nПерсонального Mii?"
+    "ua": "Щоб прив'язати\nNintendo Network ID, потрібно\nдозволити доступ до вашого\nПерсонального Mii.\n\nЗверніть увагу: якщо доступ\nдо Mii відкрито, він може\nлишитися на консолях інших\nгравців і з'являтися в іграх,\nу які вони грають після\nбездротового сеансу з вами.\n\nВідкрити доступ до вашого\nПерсонального Mii?"
   },
   "error_not_serviced": {
     "en": "You cannot create a Nintendo\nNetwork ID with your current\nregion setting.\n\nCancelling Nintendo\nNetwork ID creation.",
-    "ua": "З поточним налаштуванням\nрегіону створити Nintendo\nNetwork ID неможливо.\n\nСтворення Nintendo\nNetwork ID скасовано."
+    "ua": "З поточним налаштуванням\nрегіону створити\nNintendo Network ID неможливо.\n\nСтворення\nNintendo Network ID скасовано."
   },
   "error_password_not_correct": {
     "en": "Incorrect password.\nPlease try again.",
@@ -557,7 +557,7 @@
   },
   "error_stop_nnid_registration": {
     "en": "Nintendo Network ID link\ncancelled.",
-    "ua": "Прив'язування Nintendo\nNetwork ID скасовано."
+    "ua": "Прив'язування\nNintendo Network ID скасовано."
   },
   "error_yet_mail_receive_check": {
     "en": "Please verify your\nemail address first.",
@@ -685,7 +685,7 @@
   },
   "if_wii_u_nnid": {
     "en": "If you link the same Nintendo\nNetwork ID to both a Wii U\nuser and a Nintendo 3DS\nsystem, you can share the\nsame Nintendo eShop\naccount activity and funds\nbetween both.",
-    "ua": "Якщо прив'язати той самий\nNintendo Network ID до\nкористувача Wii U і до\nконсолі Nintendo 3DS, ви\nзможете спільно\nвикористовувати дії\nта кошти Nintendo eShop."
+    "ua": "Якщо прив'язати той самий\nNintendo Network ID\nдо користувача Wii U\nі до консолі Nintendo 3DS,\nви зможете спільно\nвикористовувати дії\nта кошти Nintendo eShop."
   },
   "if_you_touch_q": {
     "en": "Touch the ? icon to<br>see an explanation.",
@@ -833,7 +833,7 @@
   },
   "nnid_is_opened": {
     "en": "The ID you choose will be\nvisible to others using\nNintendo Network, such as\nother Miiverse users. Please\ndo not include any personal\ninformation or offensive\ncontent in your ID.",
-    "ua": "Обраний ID бачитимуть інші\nкористувачі Nintendo Network,\nзокрема в Miiverse. Не\nвказуйте в ньому особистих\nданих чи образливого змісту."
+    "ua": "Обраний ID бачитимуть інші\nкористувачі Nintendo Network,\nзокрема в Miiverse.\nНе вказуйте в ньому особистих\nданих чи образливого змісту."
   },
   "nnid_mii": {
     "en": "The Mii currently linked to this Nintendo Network ID",
@@ -1013,7 +1013,7 @@
   },
   "q_e-mail_address": {
     "en": "Your registered email address\nwill be used to send\nimportant notifications, or\ninformation if you forget\nyour password.\n\nA verification email will be\nsent to the address you\nregister. If you are blocking\nemails using a spam filter or\ndomain filtering, ensure that\nyour email account can\naccept emails from the\n\"@nintendo.net\" domain.",
-    "ua": "На зареєстровану адресу\nнадсилатимуть важливі\nсповіщення та інформацію,\nякщо ви забудете пароль.\n\nНа вказану адресу надійде\nлист для підтвердження.\nЯкщо ви блокуєте пошту\nспам-фільтром або за\nдоменом, дозвольте листи\nз домену \"@nintendo.net\"."
+    "ua": "На зареєстровану адресу\nнадсилатимуть важливі\nсповіщення та інформацію,\nякщо ви забудете пароль.\n\nНа вказану адресу надійде\nлист для підтвердження.\nЯкщо ви блокуєте пошту\nспам-фільтром або\nза доменом, дозвольте листи\nз домену «@nintendo.net»."
   },
   "q_erase_miiverse": {
     "en": "It is possible to delete your\nposts and comments in\nMiiverse. For details, see the\nMiiverse manual.",
@@ -1033,15 +1033,15 @@
   },
   "q_not_arrive_mail": {
     "en": "•  Is there a mistake in your\nemail address? You can\ncheck your current address\nin User Information Settings.\n\n•  Has the email we sent\nbeen moved to a spam\nfolder or elsewhere by\nthe email software?\n\n•  Has the email we sent been\nblocked as spam? Are emails\nsent from \"account-noreply\n@nintendo.net\" or which\ncontain URLs blocked?\nCheck how to set your\nmail preferences with your\nindividual service provider.\n\n•  Your email may take some\ntime to be delivered. If you\ndo not receive the email\nwithin an hour, visit\nsupport.nintendo.com.",
-    "ua": "•  Чи немає помилки в адресі\nелектронної пошти? Поточну\nадресу можна перевірити\nв розділі Інформація\nпро користувача.\n\n•  Чи не перемістила поштова\nпрограма наш лист у папку\nспаму або кудись інде?\n\n•  Чи не заблоковано наш лист\nяк спам? Чи не блокуються\nлисти з \"account-noreply\n@nintendo.net\" або листи\nз посиланнями? Перевірте\nналаштування пошти\nу свого постачальника.\n\n•  Доставлення листа може\nзайняти певний час. Якщо\nвін не надійде протягом\nгодини, відвідайте\nsupport.nintendo.com."
+    "ua": "•  Чи немає помилки в адресі\nелектронної пошти? Поточну\nадресу можна перевірити\nв розділі Інформація\nпро користувача.\n\n•  Чи не перемістила поштова\nпрограма наш лист у папку\nспаму або кудись інде?\n\n•  Чи не заблоковано наш лист\nяк спам? Чи не блокуються\nлисти з «account-noreply\n@nintendo.net» або листи\nз посиланнями? Перевірте\nналаштування пошти\nу свого постачальника.\n\n•  Доставлення листа може\nзайняти певний час. Якщо\nвін не надійде протягом\nгодини, відвідайте\nsupport.nintendo.com."
   },
   "q_not_arrive_mail_pass": {
     "en": "•  Has the email we sent\nbeen moved to a spam\nfolder or elsewhere by\nthe email software?\n\n•  Has the email we sent been\nblocked as spam? Are emails\nsent from \"account-noreply\n@nintendo.net\" or which\ncontain URLs blocked?\nCheck how to set your\nmail preferences with your\nindividual service provider.\n\n•  Your email may take some\ntime to be delivered. If you\ndo not receive the email\nwithin an hour, visit\nsupport.nintendo.com.\n\n• If you have made a mistake\nin the email address you\nregistered, your mail will not\nbe delivered. If you think that\nthis is the case, please call\nthe number given in the\nNintendo 3DS Operations\nManual, keeping the system\nto hand.",
-    "ua": "•  Чи не перемістила поштова\nпрограма наш лист у папку\nспаму або кудись інде?\n\n•  Чи не заблоковано наш лист\nяк спам? Чи не блокуються\nлисти з \"account-noreply\n@nintendo.net\" або листи\nз посиланнями? Перевірте\nналаштування пошти\nу свого постачальника.\n\n•  Доставлення листа може\nзайняти певний час. Якщо\nвін не надійде протягом\nгодини, відвідайте\nsupport.nintendo.com.\n\n• Якщо ви помилилися\nв зареєстрованій адресі,\nлист не надійде. Якщо\nгадаєте, що так і сталося,\nзателефонуйте за номером\nіз Посібника з експлуатації\nNintendo 3DS, тримаючи\nконсоль під рукою."
+    "ua": "•  Чи не перемістила поштова\nпрограма наш лист у папку\nспаму або кудись інде?\n\n•  Чи не заблоковано наш лист\nяк спам? Чи не блокуються\nлисти з «account-noreply\n@nintendo.net» або листи\nз посиланнями? Перевірте\nналаштування пошти\nу свого постачальника.\n\n•  Доставлення листа може\nзайняти певний час. Якщо\nвін не надійде протягом\nгодини, відвідайте\nsupport.nintendo.com.\n\n• Якщо ви помилилися\nв зареєстрованій адресі,\nлист не надійде. Якщо\nгадаєте, що так і сталося,\nзателефонуйте за номером\nіз Посібника з експлуатації\nNintendo 3DS, тримаючи\nконсоль під рукою."
   },
   "q_password": {
     "en": "Please create a password\nusing a combination of\ncharacters from at least two\nof the following categories:\nupper or lower case letters,\nnumbers and punctuation.\n(For greater password\nsecurity, we recommend\nusing eight or more\ncharacters, including\npunctuation.)\n\nPlease do not use the same\ncharacter three or more times\nin a row.\n\nDo not use passwords that\ncan be easily guessed or that\nyou have used for other\nservices.\n\nYou cannot use the name you\nchose for your Nintendo\nNetwork ID as your password.\n\nPlease take care not to forget\nyour password. You will be\nasked to enter it in certain\ninstances when using\nNintendo Network.",
-    "ua": "Створіть пароль із символів\nщонайменше двох таких\nкатегорій: великі або малі\nлітери, цифри та знаки\nпунктуації. (Для більшої\nнадійності радимо вісім\nі більше символів,\nвключно зі знаками\nпунктуації.)\n\nНе використовуйте той самий\nсимвол три чи більше разів\nпідряд.\n\nНе використовуйте паролі,\nякі легко вгадати або які ви\nвже використовували для\nінших сервісів.\n\nІм'я вашого Nintendo Network\nID не можна використовувати\nяк пароль.\n\nНе забувайте пароль. Його\nпроситимуть увести в певних\nвипадках під час\nкористування Nintendo Network."
+    "ua": "Створіть пароль із символів\nщонайменше двох таких\nкатегорій: великі або малі\nлітери, цифри та знаки\nпунктуації. (Для більшої\nнадійності радимо вісім\nі більше символів,\nвключно зі знаками\nпунктуації.)\n\nНе використовуйте той самий\nсимвол три чи більше разів\nпідряд.\n\nНе використовуйте паролі,\nякі легко вгадати або які ви\nвже використовували\nдля інших сервісів.\n\nІм'я вашого Nintendo Network ID\nне можна використовувати\nяк пароль.\n\nНе забувайте пароль. Його\nпроситимуть увести в певних\nвипадках під час\nкористування Nintendo Network."
   },
   "q_password_skip": {
     "en": "Choosing Don't Remember\nwill help prevent anybody\ngaining unauthorised access\nto your Nintendo Network ID.",
@@ -1049,7 +1049,7 @@
   },
   "q_receive_ad_mail": {
     "en": "If you choose RECEIVE, the\nsetting change will only apply\nto this Nintendo Network ID.\nIf you choose DO NOT\nRECEIVE, the setting change\nwill apply to all Nintendo\nNetwork IDs registered to\nyour email address.",
-    "ua": "Якщо вибрати ОТРИМУВАТИ,\nзміна стосуватиметься лише\nцього Nintendo Network ID.\nЯкщо вибрати НЕ\nОТРИМУВАТИ, зміна\nстосуватиметься всіх Nintendo\nNetwork ID, зареєстрованих\nна вашу електронну пошту."
+    "ua": "Якщо вибрати ОТРИМУВАТИ,\nзміна стосуватиметься лише\nцього Nintendo Network ID.\nЯкщо вибрати\nНЕ ОТРИМУВАТИ, зміна\nстосуватиметься всіх\nNintendo Network ID, зареєстрованих\nна вашу електронну пошту."
   },
   "q_region": {
     "en": "If you would like to change<br>the country of residence<br>setting for your Nintendo<br>Network ID, you will need to<br>cancel the linking process,<br>then change the country of<br>residence for your system<br>by going to Other Settings ⇒<br>Profile ⇒ Region Settings.",
@@ -1057,7 +1057,7 @@
   },
   "q_regist_other_nnid": {
     "en": "You can link a different\nNintendo Network ID after\ngoing to Other Settings in\nthe System Settings and\nformatting the system\nmemory. However, all save\ndata will be lost, and\nsoftware licences and\nNintendo eShop funds\ncannot be used with another\nNintendo Network ID.\nFurthermore, you will be\nunable to link the current\nNintendo Network ID to\nanother Nintendo 3DS\nsystem.",
-    "ua": "Прив'язати інший Nintendo\nNetwork ID можна після\nформатування памʼяті\nконсолі в розділі Інші\nналаштування в Налаштуваннях\nсистеми. Проте всі збережені\nдані буде втрачено, а ліцензії\nна програми й кошти\nв Nintendo eShop не вийде\nвикористати з іншим Nintendo\nNetwork ID. Крім того, ви не\nзможете прив'язати поточний\nNintendo Network ID до іншої\nконсолі Nintendo 3DS."
+    "ua": "Прив'язати інший\nNintendo Network ID можна після\nформатування пам'яті\nконсолі в розділі Інші\nналаштування в Налаштуваннях\nсистеми. Проте всі збережені\nдані буде втрачено, а ліцензії\nна програми й кошти\nв Nintendo eShop не вийде\nвикористати з іншим\nNintendo Network ID. Крім того, ви\nне зможете прив'язати поточний\nNintendo Network ID до іншої\nконсолі Nintendo 3DS."
   },
   "receive": {
     "en": "Receive",
@@ -1153,7 +1153,7 @@
   },
   "system_format": {
     "en": "You can remove an ID's link to<br>the system without deleting it by<br>formatting the system memory.<br>This can be done through Other<br>Settings in the System settings.<br>You can then continue to use the<br>ID on a Wii U or other device.",
-    "ua": "Прибрати зв'язок ID з консоллю<br>без видалення можна,<br>відформатувавши памʼять консолі.<br>Це робиться в розділі Інші<br>налаштування в Налаштуваннях<br>системи. Далі ID можна далі<br>використовувати на Wii U чи іншому пристрої."
+    "ua": "Прибрати зв'язок ID з консоллю<br>без видалення можна,<br>відформатувавши пам'ять консолі.<br>Це робиться в розділі Інші<br>налаштування в Налаштуваннях<br>системи. Далі ID можна далі<br>використовувати на Wii U чи іншому пристрої."
   },
   "timezone": {
     "en": "Time Zone",

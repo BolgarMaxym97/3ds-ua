@@ -606,7 +606,11 @@ def budgets(manual: bcma.Bcma, slot: str, widths: dict[int, int]) -> dict[str, f
     slots: dict[str, float] = {}
     fixed: dict[str, str] = {}
 
-    for locale in manual.locales():
+    # The slot goes first: it decides which paragraphs exist, and the other locales only widen
+    # them. Walked in plain alphabetical order EUR_ru came last, every other locale found an
+    # empty `out` and was skipped, and each budget silently shrank to the Russian width -
+    # `Тир` got 41px on a pane where French draws `Tir à l'arc` at 104px.
+    for locale in [slot, *(other for other in manual.locales() if other != slot)]:
         pages = pages_of(manual, slot) if locale == slot else aligned(manual, slot, locale)
         for page, flows in pages.items():
             for index, flow in enumerate(flows):

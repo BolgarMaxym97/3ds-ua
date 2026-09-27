@@ -253,7 +253,7 @@
   },
   "T_051": {
     "en": "{t:3.42:0000} Change speed and pitch",
-    "ua": "{t:3.42:0000} Зміна швидкості й висоти"
+    "ua": "{t:3.42:0000} {t:1.0:6200}Зміна швидкості й висоти{t:1.0:6400}"
   },
   "T_052": {
     "en": "{t:3.42:0000} Easy-to-sing key",
@@ -329,7 +329,7 @@
   },
   "T_070": {
     "en": "{t:3.42:0000} Voices: Low Harmony",
-    "ua": "{t:3.42:0000} Голоси: Низька гармонія"
+    "ua": "{t:3.42:0000} {t:1.0:6100}Голоси: Низька гармонія{t:1.0:6400}"
   },
   "T_071": {
     "en": "",
@@ -477,7 +477,7 @@
   },
   "T_107": {
     "en": "{t:3.42:0000} Move data over pages",
-    "ua": "{t:3.42:0000} {t:1.0:5800}Перенесення між сторінками{t:1.0:6400}"
+    "ua": "{t:3.42:0000} {t:1.0:5700}Перенесення між сторінками{t:1.0:6400}"
   },
   "T_108": {
     "en": "{t:3.42:0000} Budgie chat: Walks",
@@ -489,11 +489,11 @@
   },
   "T_110": {
     "en": "{t:3.42:0000} Keep-up visualiser",
-    "ua": "{t:3.42:0000} Візуалізація «не впусти»"
+    "ua": "{t:3.42:0000} {t:1.0:6200}Візуалізація «не впусти»{t:1.0:6400}"
   },
   "T_111": {
     "en": "{t:3.42:0000} Budgie chat: Your voice",
-    "ua": "{t:3.42:0000} {t:1.0:5900}Балачки папужки: ваш голос{t:1.0:6400}"
+    "ua": "{t:3.42:0000} {t:1.0:5600}Балачки папужки: ваш голос{t:1.0:6400}"
   },
   "T_112": {
     "en": "{t:3.42:0000} Page colours",
@@ -537,7 +537,7 @@
   },
   "D_001_0": {
     "en": "Welcome to\nNintendo 3DS Sound!",
-    "ua": "Вітаємо в\nNintendo 3DS Звуці!"
+    "ua": "Вітаємо\nв Звуці Nintendo 3DS!"
   },
   "D_001_1": {
     "en": "Here, you can have\nfun playing music and\nrecording sounds.",
@@ -561,7 +561,7 @@
   },
   "D_002_2": {
     "en": "{t:4.1:140053005f004700750069006400300032005f005500}If you ever want\nto hear more about\nNintendo 3DS Sound,\njust touch me\nwith the stylus.",
-    "ua": "{t:4.1:140053005f004700750069006400300032005f005500}Якщо захочете почути\nбільше про Nintendo 3DS\nЗвук, просто торкніться\nмене стилусом."
+    "ua": "{t:4.1:140053005f004700750069006400300032005f005500}Якщо захочете\nпочути більше\nпро Звук Nintendo 3DS,\nпросто торкніться\nмене стилусом."
   },
   "Guide_Tex_003": {
     "en": "",
@@ -601,7 +601,7 @@
   },
   "D_004_2": {
     "en": "{t:4.1:140053005f004700750069006400300034005f005500}The microphone is\nlocated close to the\nTouch Screen.",
-    "ua": "{t:4.1:140053005f004700750069006400300034005f005500}Мікрофон розташований\nблизько до\nсенсорного екрана."
+    "ua": "{t:4.1:140053005f004700750069006400300034005f005500}Мікрофон розташований\nблизько\nдо сенсорного екрана."
   },
   "Guide_Tex_005": {
     "en": "",
@@ -621,7 +621,7 @@
   },
   "D_005_3": {
     "en": "If you want to keep\nthe original voice\nrecording as well\nas the edited version,",
-    "ua": "Якщо хочете лишити й\nпочатковий голосовий\nзапис, і змінений,"
+    "ua": "Якщо хочете лишити\nй початковий голосовий\nзапис, і змінений,"
   },
   "D_005_4": {
     "en": "make sure that you\ncopy it beforehand.",
@@ -633,7 +633,7 @@
   },
   "D_006_0": {
     "en": "Nintendo 3DS Sound\nlets you play with music\nin all kinds of ways.",
-    "ua": "Nintendo 3DS Звук дає\nбавитися з музикою\nбезліччю способів."
+    "ua": "Звук Nintendo 3DS дає\nбавитися з музикою\nбезліччю способів."
   },
   "D_006_1": {
     "en": "And there's no need\nto worry: the original\nmusic data on the\nSD Card isn't changed.",
@@ -641,7 +641,7 @@
   },
   "D_006_2": {
     "en": "Relax, and have fun\nplaying with your music.",
-    "ua": "Розслабтеся й\nбавтеся з музикою."
+    "ua": "Розслабтеся\nй бавтеся з музикою."
   },
   "Guide_Tex_007": {
     "en": "",
@@ -665,7 +665,7 @@
   },
   "D_008_1": {
     "en": "{t:4.1:140053005f004700750069006400300031005f005500}Press the {t:0.3:ff3200ff}HOME Button{t:0.3:454039ff}\nat any time to return\nto the HOME Menu.",
-    "ua": "{t:4.1:140053005f004700750069006400300031005f005500}Будь-коли натисніть\n{t:0.3:ff3200ff}кнопку HOME{t:0.3:454039ff}, щоб\nповернутися в\nМеню HOME."
+    "ua": "{t:4.1:140053005f004700750069006400300031005f005500}Будь-коли натисніть\n{t:0.3:ff3200ff}кнопку HOME{t:0.3:454039ff}, щоб\nповернутися\nв Меню HOME."
   },
   "Guide_Tex_009": {
     "en": "",
@@ -717,7 +717,7 @@
   },
   "D_011_1": {
     "en": "Nintendo 3DS Sound\nuses StreetPass in\nseveral different ways.",
-    "ua": "Nintendo 3DS Звук\nкористується StreetPass\nу кілька різних способів."
+    "ua": "Звук Nintendo 3DS\nкористується StreetPass\nу кілька різних способів."
   },
   "D_011_2": {
     "en": "By exchanging song\ninformation with users\nyou pass by, you can\nfind out how compatible\nyour tastes in music are.",
@@ -809,7 +809,7 @@
   },
   "D_015_1": {
     "en": "Her Hit Parade in\nNintendo 3DS Sound\nwas on fire!",
-    "ua": "Її хіт-парад у\nNintendo 3DS Звуці\nпросто палав!"
+    "ua": "Її хіт-парад\nу Звуці Nintendo 3DS\nпросто палав!"
   },
   "D_015_2": {
     "en": "Apparently, everyone\nthere had put songs\nby The Birdies on their\nStreetPass playlists,",
@@ -829,7 +829,7 @@
   },
   "D_016_0": {
     "en": "Let me tell you about\nthe Hit Parade.",
-    "ua": "Розкажу вам про\nхіт-парад."
+    "ua": "Розкажу вам\nпро хіт-парад."
   },
   "D_016_1": {
     "en": "Basically, I gather song \ninformation received\nvia StreetPass to\ncreate a chart of the\nmost popular songs.",
@@ -849,15 +849,15 @@
   },
   "D_017_0": {
     "en": "Let me tell you about\nthe Compatibility list.",
-    "ua": "Розкажу вам про\nсписок спорідненості."
+    "ua": "Розкажу вам\nпро список\nспорідненості."
   },
   "D_017_1": {
     "en": "It uses the song data\nyou've exchanged over\nStreetPass to determine\nhow compatible you are\nwith users you pass by.",
-    "ua": "Він бере дані про пісні,\nякими ви обмінялися\nчерез StreetPass, і\nвизначає спорідненість\nіз тими, кого ви минули."
+    "ua": "Він бере дані про пісні,\nякими ви обмінялися\nчерез StreetPass,\nі визначає спорідненість\nіз тими, кого ви минули."
   },
   "D_017_2": {
     "en": "You know, they say that\nfor each person in the\nworld, there are 99 other\npeople who have the exact\nsame taste in music.",
-    "ua": "Знаєте, кажуть, що на\nкожну людину у світі\nє ще 99 людей із\nточнісінько таким\nсамим смаком у музиці."
+    "ua": "Знаєте, кажуть,\nщо на кожну людину\nу світі є ще 99 людей\nіз точнісінько таким\nсамим смаком у музиці."
   },
   "D_017_3": {
     "en": "Do you think\nyou'll ever meet\nthem all? Chirp.",
@@ -873,7 +873,7 @@
   },
   "D_018_1": {
     "en": "He's got all kinds\nof interesting things\nto say, you know.",
-    "ua": "Він, знаєте, має що\nрозповісти цікавого."
+    "ua": "Він, знаєте, має\nщо розповісти цікавого."
   },
   "D_018_2": {
     "en": "If you see him,\ngive him a tap.",
@@ -893,11 +893,11 @@
   },
   "D_019_1": {
     "en": "Sometimes, I just get\nthe urge to repeat things\nthat I've overheard, or\nrecordings you've saved.",
-    "ua": "Подеколи мені так і\nкортить повторити те, що\nя підслухала, або ваші\nзбережені записи."
+    "ua": "Подеколи мені так\nі кортить повторити те,\nщо я підслухала, або ваші\nзбережені записи."
   },
   "D_019_2": {
     "en": "I'm afraid I just can't help\nmyself, so do take care\nnot to say anything\nembarrassing around me.",
-    "ua": "Боюся, я просто не можу\nстриматися, тож не кажіть\nпри мені нічого\nсоромного."
+    "ua": "Боюся, я просто\nне можу стриматися,\nтож не кажіть при мені\nнічого соромного."
   },
   "Guide_Tex_020": {
     "en": "",
@@ -933,7 +933,7 @@
   },
   "D_022_0": {
     "en": "I think you can tell\na bit about someone's\npersonality based on\ntheir taste in music.",
-    "ua": "Гадаю, за смаком\nу музиці можна дещо\nсказати про\nхарактер людини."
+    "ua": "Гадаю, за смаком\nу музиці можна дещо\nсказати\nпро характер людини."
   },
   "D_022_1": {
     "en": "Why not take a look at\nyour friends' Top Ten\nlists? You might be\nsurprised by a hidden\nside of theirs.",
@@ -977,11 +977,11 @@
   },
   "D_024_2": {
     "en": "The titles will be\nhidden. For example,\n\"Secret Song\" would\nbe displayed as\n\"S□□□□□□□□□□\".",
-    "ua": "Назви буде приховано.\nСкажімо, «Таємна пісня»\nпокажеться\nяк\n«Т□□□□□□□□□□»."
+    "ua": "Назви буде приховано.\nСкажімо, «Таємна пісня»\nвиглядатиме так:\n«Т□□□□□□□□□□»."
   },
   "D_024_3": {
     "en": "No matter how uncool the\nsong, you can tell me.\nI promise not to judge\nyour taste in music.\n\n...No? Oh, well.",
-    "ua": "Хоч би яка несмачна\nбула пісня, мені можна\nсказати. Обіцяю не\nсудити ваш смак у музиці.\n\n…Ні? Ну гаразд."
+    "ua": "Хоч би яка несмачна\nбула пісня, мені можна\nсказати. Обіцяю\nне судити ваш смак.\n\n…Ні? Ну гаразд."
   },
   "Guide_Tex_025": {
     "en": "",
@@ -1013,7 +1013,7 @@
   },
   "D_026_1": {
     "en": "Choose a song\nand select Add,\nthen New to\ncreate a playlist.",
-    "ua": "Виберіть пісню й\nнатисніть Додати,\nа тоді Новий,\nщоб створити список."
+    "ua": "Виберіть пісню\nй натисніть Додати,\nа тоді Новий,\nщоб створити список."
   },
   "D_026_2": {
     "en": "You can name\nthe playlist and\nchange the icon.",
@@ -1021,7 +1021,7 @@
   },
   "D_026_3": {
     "en": "I've made a playlist\nfull of my favourite\nupbeat numbers and\ncalled it \"Chirpy Tunes\". ",
-    "ua": "Я склала список із\nсвоїх улюблених\nбадьорих пісень і\nназвала «Цвірінькалки»."
+    "ua": "Я склала список\nіз своїх улюблених\nбадьорих пісень\nі назвала «Цвірінькалки»."
   },
   "D_026_4": {
     "en": "Whenever I'm feeling\ndown, Chirpy Tunes\nnever fails to perk me\nup! Chirp! Chirp!",
@@ -1041,7 +1041,7 @@
   },
   "D_027_2": {
     "en": "So relax, and feel free\nto remove songs from\nplaylists! Chirp!",
-    "ua": "Тож спокійно\nприбирайте пісні зі\nсписків! Цвірінь!"
+    "ua": "Тож спокійно\nприбирайте пісні\nзі списків! Цвірінь!"
   },
   "Guide_Tex_028": {
     "en": "",
@@ -1057,7 +1057,7 @@
   },
   "D_028_2": {
     "en": "Open the playlist you\nwant to delete, and\nremove all the songs.",
-    "ua": "Відкрийте список, який\nхочете видалити, і\nприберіть усі пісні."
+    "ua": "Відкрийте список, який\nхочете видалити,\nі приберіть усі пісні."
   },
   "D_028_3": {
     "en": "The playlist itself will\ndisappear once the\nlast song is removed.",
@@ -1069,7 +1069,7 @@
   },
   "D_028_5": {
     "en": "I had to delete one of my\nplaylists when I realised\nthat the songs in it didn't\ngo together at all. My\nmusical credibility was\nat stake! Chirp!",
-    "ua": "Мені довелося видалити\nодин зі своїх списків,\nколи я зрозуміла, що\nпісні в ньому геть\nне пасують одна одній.\nЙшлося про мою славу!"
+    "ua": "Мені довелося видалити\nодин зі своїх списків,\nколи я зрозуміла,\nщо пісні в ньому геть\nне пасують одна одній.\nЙшлося про мою славу!"
   },
   "Guide_Tex_029": {
     "en": "",
@@ -1093,7 +1093,7 @@
   },
   "D_030_1": {
     "en": "Select a theme\nfrom Autoplay,\nthen touch the\nAdd... panel.",
-    "ua": "Виберіть тему в\nАвтогрі, а тоді\nторкніться\nпанелі Додати."
+    "ua": "Виберіть тему\nв Автогрі, а тоді\nторкніться\nпанелі Додати."
   },
   "D_030_2": {
     "en": "The songs I chose\nfor the theme will\nbe added to any\nplaylist you choose.",
@@ -1113,7 +1113,7 @@
   },
   "D_031_2": {
     "en": "What? You'd guessed\nas much? Well, did you\nknow that any time you\nlisten to music here...",
-    "ua": "Що? Ви й самі\nздогадалися? А чи знали\nви, що коли ви тут\nслухаєте музику…"
+    "ua": "Що? Ви й самі\nздогадалися?\nА чи знали ви, що коли\nви тут слухаєте музику…"
   },
   "D_031_3": {
     "en": "...I listen too.",
@@ -1133,11 +1133,11 @@
   },
   "D_032_1": {
     "en": "Just select Autoplay,\nthen Shuffle All.\nI'll do the rest!",
-    "ua": "Просто виберіть Автогру,\nа тоді Усе впереміш.\nРешту зроблю я!"
+    "ua": "Просто виберіть\nАвтогру, а тоді\nУсе впереміш.\nРешту зроблю я!"
   },
   "D_032_2": {
     "en": "I'll play your songs\nall shuffled up and\nout of order. It's a\nfun way to listen!",
-    "ua": "Я гратиму ваші пісні\nвпереміш, не за\nпорядком. Слухати\nтак весело!"
+    "ua": "Я гратиму ваші пісні\nвпереміш, без порядку.\nСлухати так весело!"
   },
   "Guide_Tex_033": {
     "en": "",
@@ -1153,11 +1153,11 @@
   },
   "D_033_2": {
     "en": "You might find all\nthe songs you\nexpected to, or\nthere could be\nsome surprises.",
-    "ua": "Може, там будуть\nусі пісні, яких ви\nчекали, а може,\nтрапиться й\nкілька несподіванок."
+    "ua": "Може, там будуть\nусі пісні, яких ви\nчекали, а може,\nтрапиться\nй кілька несподіванок."
   },
   "D_033_3": {
     "en": "How about adding the\nsongs you listen to most\nto the Top 10 playlist?",
-    "ua": "Чому б не додати пісні,\nякі ви слухаєте\nнайчастіше, до\nсписку Топ-10?"
+    "ua": "Чому б не додати пісні,\nякі ви слухаєте\nнайчастіше,\nдо списку Топ-10?"
   },
   "Guide_Tex_034": {
     "en": "",
@@ -1197,7 +1197,7 @@
   },
   "D_036_0": {
     "en": "You may have noticed\nthat there's an option\nfor the {t:0.3:454039ff}{t:0.3:323232ff} Percussion{t:0.3:454039ff}{t:0.3:454039ff}\ninstruments that doesn't\nactually play any noise.",
-    "ua": "Ви, певно, помітили, що\nсеред інструментів\n{t:0.3:454039ff}{t:0.3:323232ff} Ударних{t:0.3:454039ff}{t:0.3:454039ff}\nє й такий, що взагалі\nне видає жодного звуку."
+    "ua": "Ви, певно, помітили,\nщо серед інструментів\n{t:0.3:454039ff}{t:0.3:323232ff} Ударних{t:0.3:454039ff}{t:0.3:454039ff}\nє й такий, що взагалі\nне видає жодного звуку."
   },
   "D_036_1": {
     "en": "What could that be\nthere for? Well...",
@@ -1205,7 +1205,7 @@
   },
   "D_036_2": {
     "en": "Select it when listening\nto music with the\nsystem in your bag.\nThat way,  Percussion\nwon't make a racket!",
-    "ua": "Виберіть його, коли\nслухаєте музику з\nконсоллю в сумці. Тоді\n Ударні\nне здіймуть галасу!"
+    "ua": "Виберіть його, коли\nслухаєте музику\nз консоллю в сумці. Тоді\n Ударні\nне здіймуть галасу!"
   },
   "D_036_3": {
     "en": "Even a soundless\ninstrument has its\nuses, eh? Chirp.",
@@ -1221,7 +1221,7 @@
   },
   "D_037_1": {
     "en": "Once I play it, I just\ncan't stop. Bling!\nBling! Bling! Chirp.",
-    "ua": "Щойно я його вмикаю,\nне можу спинитися. Дзінь!\nДзінь! Дзінь! Цвірінь."
+    "ua": "Щойно я його вмикаю,\nне можу спинитися.\nДзінь! Дзінь! Дзінь!\nЦвірінь."
   },
   "Guide_Tex_038": {
     "en": "",
@@ -1237,7 +1237,7 @@
   },
   "D_038_2": {
     "en": "I don't really get on\nwith cats, though.\nChirp...",
-    "ua": "Хоча з котами я не\nдуже лажу.\nЦвірінь…"
+    "ua": "Хоча з котами я\nне дуже лажу.\nЦвірінь…"
   },
   "Guide_Tex_039": {
     "en": "",
@@ -1249,7 +1249,7 @@
   },
   "D_039_1": {
     "en": "Some of them make\na different sound\ndepending on how\nyou play them.",
-    "ua": "Деякі з них видають\nінший звук залежно\nвід того, як\nви граєте."
+    "ua": "Деякі з них видають\nінший звук залежно\nвід того,\nяк ви граєте."
   },
   "D_039_2": {
     "en": "It's all in the length\nof the button press.\nA {t:0.3:ff3200ff}short press {t:0.3:454039ff}or a\n{t:0.3:ff3200ff}long press{t:0.3:454039ff}? Try it.",
@@ -1261,11 +1261,11 @@
   },
   "D_040_0": {
     "en": "{t:4.1:140053005f004700750069006400320030005f005500}This playback mode plays\nall the tracks in a folder\nin order, then stops.",
-    "ua": "{t:4.1:140053005f004700750069006400320030005f005500}Цей режим грає всі\nпісні в папці за\nпорядком, а тоді\nспиняється."
+    "ua": "{t:4.1:140053005f004700750069006400320030005f005500}Цей режим грає всі\nпісні в папці\nза порядком, а тоді\nспиняється."
   },
   "D_040_1": {
     "en": "{t:4.1:140053005f004700750069006400320030005f005500}I put songs totalling\nabout 30 minutes in\na folder together...",
-    "ua": "{t:4.1:140053005f004700750069006400320030005f005500}Я склала в одну папку\nпісень десь на\n30 хвилин…"
+    "ua": "{t:4.1:140053005f004700750069006400320030005f005500}Я склала в одну папку\nпісень десь\nна 30 хвилин…"
   },
   "D_040_2": {
     "en": "{t:4.1:140053005f004700750069006400320030005f005500}...and sweat my way\nthrough my daily\nworkout! Chirp!",
@@ -1281,7 +1281,7 @@
   },
   "D_041_0": {
     "en": "{t:4.1:140053005f004700750069006400300039005f005500}This playback mode\nplays all the tracks\nin a folder in order,\nin a repeated loop.",
-    "ua": "{t:4.1:140053005f004700750069006400300039005f005500}Цей режим грає всі\nпісні в папці за\nпорядком, по колу."
+    "ua": "{t:4.1:140053005f004700750069006400300039005f005500}Цей режим грає всі\nпісні в папці\nза порядком, по колу."
   },
   "D_041_1": {
     "en": "{t:4.1:140053005f004700750069006400300039005f005500}I tend to listen to my\nlatest favourite songs\nover and over again,\nso I find this handy.",
@@ -1325,11 +1325,11 @@
   },
   "D_043_2": {
     "en": "{t:0.3:454039ff}{t:4.1:140053005f004700750069006400300038005f005500}{t:0.3:454039ff}You could listen to\npart of a language\nlesson repeatedly\nuntil you've got the\nhang of a tricky phrase.",
-    "ua": "{t:0.3:454039ff}{t:4.1:140053005f004700750069006400300038005f005500}{t:0.3:454039ff}Можна слухати частину\nмовного уроку раз\nу раз, доки не\nопануєте складну\nфразу."
+    "ua": "{t:0.3:454039ff}{t:4.1:140053005f004700750069006400300038005f005500}{t:0.3:454039ff}Можна слухати частину\nмовного уроку раз\nу раз, доки\nне опануєте складну\nфразу."
   },
   "D_043_3": {
     "en": "{t:0.3:454039ff}{t:4.1:140053005f004700750069006400300038005f005500}{t:0.3:454039ff}I'm currently studying\nFeline so that I can\ncommunicate with cats\nand get them to stop\nbullying me. Meow!",
-    "ua": "{t:0.3:454039ff}{t:4.1:140053005f004700750069006400300038005f005500}{t:0.3:454039ff}Я саме вчу котячу мову,\nщоб порозумітися з\nкотами й переконати\nїх не чіплятися\nдо мене. Няв!"
+    "ua": "{t:0.3:454039ff}{t:4.1:140053005f004700750069006400300038005f005500}{t:0.3:454039ff}Я саме вчу котячу мову,\nщоб порозумітися\nз котами й переконати\nїх не чіплятися\nдо мене. Няв!"
   },
   "Guide_Tex_044": {
     "en": "",
@@ -1345,7 +1345,7 @@
   },
   "D_044_2": {
     "en": "{t:0.3:454039ff}{t:4.1:140053005f004700750069006400310032005f005500}{t:0.3:454039ff}It's also fun trying to\nguess which song is\ngoing to be played\nnext. I get it right\nonce in a while.",
-    "ua": "{t:0.3:454039ff}{t:4.1:140053005f004700750069006400310032005f005500}{t:0.3:454039ff}А ще весело вгадувати,\nяка пісня піде\nнаступною. Час від\nчасу я вгадую."
+    "ua": "{t:0.3:454039ff}{t:4.1:140053005f004700750069006400310032005f005500}{t:0.3:454039ff}А ще весело вгадувати,\nяка пісня піде\nнаступною. Час\nвід часу я вгадую."
   },
   "D_044_3": {
     "en": "{t:0.3:454039ff}{t:4.1:140053005f004700750069006400310032005f005500}{t:0.3:454039ff}Do you think I might\nbe psychic? Chirp.",
@@ -1385,7 +1385,7 @@
   },
   "D_047_0": {
     "en": "{t:4.1:140053005f004700750069006400310034005f005500}Touch this icon and\nselect the Radio effect\nto activate it on the track\nyou're listening to.",
-    "ua": "{t:4.1:140053005f004700750069006400310034005f005500}Торкніться цього значка\nй виберіть ефект Радіо,\nщоб увімкнути його для\nпісні, яку ви слухаєте."
+    "ua": "{t:4.1:140053005f004700750069006400310034005f005500}Торкніться цього значка\nй виберіть ефект Радіо,\nщоб застосувати його\nдо пісні, що звучить."
   },
   "D_047_1": {
     "en": "Doesn't that warm,\nretro sound bring\nyou back to the\nanalogue era?",
@@ -1449,7 +1449,7 @@
   },
   "D_051_0": {
     "en": "{t:4.1:140053005f004700750069006400310033005f005500}Touch this icon...",
-    "ua": "{t:4.1:140053005f004700750069006400310033005f005500}Торкніться цього значка…"
+    "ua": "{t:4.1:140053005f004700750069006400310033005f005500}Торкніться цього\nзначка…"
   },
   "D_051_1": {
     "en": "{t:4.1:140053005f004700750069006400310033005f005500}then slide the stylus\naround the Touch Screen\nto change the speed\nand pitch of the track\nyou're listening to.",
@@ -1457,7 +1457,7 @@
   },
   "D_051_2": {
     "en": "Pitch is on the\nvertical axis,",
-    "ua": "Висота — на\nвертикальній осі,"
+    "ua": "Висота —\nна вертикальній осі,"
   },
   "D_051_3": {
     "en": "and speed on\nthe horizontal.",
@@ -1465,7 +1465,7 @@
   },
   "D_051_4": {
     "en": "You'll be amazed at how\ndifferent songs can sound\nwhen you play around\nwith these settings.\nChhhhhiiiiiiirrrrrrrrrpppp...",
-    "ua": "Ви здивуєтеся, як\nінакше може звучати\nпісня, коли побавитися\nз цими параметрами.\nЦві-і-і-і-і-і-і-інь…"
+    "ua": "Ви здивуєтеся,\nяк інакше може звучати\nпісня, коли побавитися\nз цими параметрами.\nЦві-і-і-і-і-і-і-інь…"
   },
   "Guide_Tex_052": {
     "en": "",
@@ -1477,7 +1477,7 @@
   },
   "D_052_1": {
     "en": "If you have, why not use\nthe pitch-adjustment tool\non songs like that and\nsee if it helps put them\nin your singing range?",
-    "ua": "Якщо так, чому б не\nвзяти знаряддя зміни\nвисоти й не подивитися,\nчи не лягає пісня\nу ваш діапазон?"
+    "ua": "Якщо так, чому б\nне взяти знаряддя зміни\nвисоти й не подивитися,\nчи не лягає пісня\nу ваш діапазон?"
   },
   "D_052_2": {
     "en": "Use  for precise\nadjustments in\nhalf-tone intervals.",
@@ -1497,11 +1497,11 @@
   },
   "D_053_0": {
     "en": "If you can get used to\nlistening to language\nlessons or practice\nrecordings at higher\nspeeds than the original,",
-    "ua": "Якщо призвичаїтеся\nслухати мовні уроки\nчи навчальні записи\nшвидше за\nпочаткову швидкість,"
+    "ua": "Якщо призвичаїтеся\nслухати мовні уроки\nчи навчальні записи\nшвидше\nза початкову швидкість,"
   },
   "D_053_1": {
     "en": "you'll find that they're\neasier to understand\nwhen you put them\nback to normal speed.",
-    "ua": "то побачите, що на\nзвичайній швидкості\nвони розуміються\nлегше."
+    "ua": "то побачите:\nна звичайній швидкості\nвони розуміються легше."
   },
   "D_053_2": {
     "en": "You can adjust the\nspeed from 0.5x\n(half-speed)...",
@@ -1513,7 +1513,7 @@
   },
   "D_053_4": {
     "en": "I listen to my Feline\nstudy recordings at\n1.5x speed, and I'm\nmaking great strides\nin comprehension.",
-    "ua": "Я слухаю свої записи\nз котячої мови на\nшвидкості 1,5x —\nі роблю неабиякі\nуспіхи в розумінні."
+    "ua": "Я слухаю свої записи\nз котячої мови\nна швидкості 1,5x —\nі роблю неабиякі\nуспіхи в розумінні."
   },
   "Guide_Tex_054": {
     "en": "",
@@ -1717,7 +1717,7 @@
   },
   "D_066_1": {
     "en": "The sound will echo.\nI can't be the only one\nwho gets the urge to sing\nand whistle in places that\necho, like stairwells.\nChirp! {t:0.2:5000}Chirp! {t:0.2:6400}{t:0.2:3c00}Chirp!{t:0.2:6400}",
-    "ua": "Звук лунатиме з відлунням.\nНе може бути, щоб лише\nмені кортіло співати й\nсвистіти там, де лунає\nвідлуння, — як-от на сходах.\nЦвірінь! {t:0.2:5000}Цвірінь! {t:0.2:6400}{t:0.2:3c00}Цвірінь!{t:0.2:6400}"
+    "ua": "Звук лунатиме з відлунням.\nНе може бути, щоб лише\nмені кортіло співати\nй свистіти там, де лунає\nвідлуння, — як-от на сходах.\nЦвірінь! {t:0.2:5000}Цвірінь! {t:0.2:6400}{t:0.2:3c00}Цвірінь!{t:0.2:6400}"
   },
   "Guide_Tex_067": {
     "en": "",
@@ -1741,7 +1741,7 @@
   },
   "D_068_1": {
     "en": "Your voice will sound\nas light and airy as a\nlittle fairy from the\nbottom of the garden!",
-    "ua": "Ваш голос стане легким\nі повітряним, наче в\nмаленької феї\nз-під куща!"
+    "ua": "Ваш голос стане легким\nі повітряним, наче\nв маленької феї\nз-під куща!"
   },
   "Guide_Tex_069": {
     "en": "",
@@ -1757,7 +1757,7 @@
   },
   "D_069_2": {
     "en": "Two voices will sound\nlike a six-part harmony.",
-    "ua": "Два голоси звучатимуть\nяк шестиголосна гармонія."
+    "ua": "Два голоси звучатимуть\nяк шестиголосна\nгармонія."
   },
   "D_069_3": {
     "en": "Ten voices will sound\nlike... Well, you get\nthe point. Chirp.",
@@ -1773,7 +1773,7 @@
   },
   "D_070_1": {
     "en": "You'll sound like some\nkind of mythical creature!\nA giant, or maybe a genie?",
-    "ua": "Ви звучатимете, наче\nякась казкова істота!\nВелетень чи, може, джин?"
+    "ua": "Ви звучатимете, наче\nякась казкова істота!\nВелетень? А може, джин?"
   },
   "Guide_Tex_071": {
     "en": "",
@@ -1837,7 +1837,7 @@
   },
   "D_075_0": {
     "en": "Have you tried playing\naround with the pitch\nof voice recordings?",
-    "ua": "Чи пробували ви бавитися\nз висотою голосових\nзаписів?"
+    "ua": "Чи пробували ви\nбавитися з висотою\nголосових записів?"
   },
   "D_075_1": {
     "en": "You can make boys\nsound like girls and\ngirls sound like boys.\nThe results can be\nquite hilarious!",
@@ -1905,7 +1905,7 @@
   },
   "D_079_1": {
     "en": "{t:4.1:140053005f004700750069006400300038005f005500}...you can slide the\n{t:0.3:ff3200ff}A{t:0.3:454039ff} and {t:0.3:ff3200ff}B{t:0.3:454039ff} markers to\nthe start and end of\nthe part you want to\nhear and it'll be\nrepeated on a loop.",
-    "ua": "{t:4.1:140053005f004700750069006400300038005f005500}…можна посунути\nпозначки {t:0.3:ff3200ff}A{t:0.3:454039ff} і {t:0.3:ff3200ff}B{t:0.3:454039ff} до\nпочатку й кінця частини,\nяку хочете слухати, —\nі вона гратиме\nпо колу."
+    "ua": "{t:4.1:140053005f004700750069006400300038005f005500}…можна посунути\nпозначки {t:0.3:ff3200ff}A{t:0.3:454039ff} і {t:0.3:ff3200ff}B{t:0.3:454039ff}\nна початок і кінець\nчастини, яку хочете\nслухати, — і вона\nгратиме по колу."
   },
   "D_079_2": {
     "en": "If you then touch\nSave, the track will\nbe {t:0.3:ff3200ff}cropped to the\nselection and saved{t:0.3:454039ff}.",
@@ -1921,7 +1921,7 @@
   },
   "D_080_1": {
     "en": "It's a phrase that can\nhelp you when you\nmeet new people.\nHow do you use\nthis phrase? Simple!",
-    "ua": "Ця фраза стане в пригоді,\nколи ви знайомитеся\nз новими людьми.\nЯк нею користуватися?\nПросто!"
+    "ua": "Ця фраза допоможе,\nколи ви знайомитеся\nз новими людьми.\nЯк нею користуватися?\nПросто!"
   },
   "D_080_2": {
     "en": "Just record yourself\nsaying \"snare feet cell\",\nthen listen to the\nrecording in reverse.",
@@ -1937,11 +1937,11 @@
   },
   "D_081_0": {
     "en": "Ever heard of the magic\nphrase \"snowshare\nlootard knock\"? It's\na phrase you can use\nwhen someone you know\nhas had some good news.",
-    "ua": "Чули про чарівну фразу\n«юатів»? Її можна\nсказати, коли у\nзнайомої вам людини\nгарні новини."
+    "ua": "Чули про чарівну фразу\n«юатів»? Її можна\nсказати, коли\nу знайомої вам людини\nгарні новини."
   },
   "D_081_1": {
     "en": "How do you use this\nphrase? Simple! Just\nrecord yourself saying\n\"snowshare lootard\nknock\" and listen to\nthe recording in reverse.",
-    "ua": "Як нею користуватися?\nПросто! Запишіть, як\nви кажете «юатів»,\nа тоді послухайте запис\nу зворотному напрямку."
+    "ua": "Як нею користуватися?\nПросто! Запишіть,\nяк ви кажете «юатів»,\nа тоді послухайте запис\nу зворотному напрямку."
   },
   "D_081_2": {
     "en": "The trick is not to pause\nbetween each word.",
@@ -1961,7 +1961,7 @@
   },
   "D_082_1": {
     "en": "Let's try it with\n\"thank you\".",
-    "ua": "Спробуймо зі\nсловом «дякую»."
+    "ua": "Спробуймо\nзі словом «дякую»."
   },
   "D_082_2": {
     "en": "We want to make\na word that will\nsound like \"thank\nyou\" when played\nbackwards, right?",
@@ -1969,7 +1969,7 @@
   },
   "D_082_3": {
     "en": "Let's start by writing\nit out backwards,\nwithout any spaces:\n\nUoyknaht",
-    "ua": "Почнімо з того, що\nзапишемо його\nу зворотному\nпорядку:\n\nуюкяд"
+    "ua": "Почнімо з того,\nщо запишемо його\nу зворотному\nпорядку:\n\nуюкяд"
   },
   "D_082_4": {
     "en": "Now say that out to\nyourself, keeping the\nvowel sounds the \nsame as the original.\nWhat does it sound\nlike? \"Ooh oik nat\"?",
@@ -1981,11 +1981,11 @@
   },
   "D_082_6": {
     "en": "The key to perfecting\nit is to record your\nattempts and play\nthem in reverse to\nsee if they sound right.",
-    "ua": "Головне тут — записувати\nсвої спроби й пускати\nїх навпаки, щоб\nперевірити, чи\nзвучить правильно."
+    "ua": "Головне тут —\nзаписувати свої спроби\nй пускати їх навпаки,\nщоб перевірити, чи все\nзвучить правильно."
   },
   "D_082_7": {
     "en": "Get other people\nto record them, too.\nDifferent accents can\nhave quite an effect\non the results.",
-    "ua": "Попросіть записати й\nінших людей. Різна\nвимова добряче\nвпливає\nна наслідок."
+    "ua": "Попросіть записати\nй інших людей. Різна\nвимова добряче\nвпливає\nна наслідок."
   },
   "Guide_Tex_083": {
     "en": "",
@@ -2005,7 +2005,7 @@
   },
   "D_083_3": {
     "en": "and it sounds\nsomething like\n\"olleh\".",
-    "ua": "і воно звучатиме\nдесь як\n«тівирп»."
+    "ua": "і воно звучатиме\nдесь як «тівирп»."
   },
   "D_083_4": {
     "en": "This is the word\nyou need to say\nin order to get\n\"hello\" when you\nplay it in reverse.",
@@ -2021,7 +2021,7 @@
   },
   "D_083_7": {
     "en": "So, the reverse of\na reversed sound\nsounds like the original.",
-    "ua": "Отже, зворот від\nзворотного звуку\nзвучить як первісний."
+    "ua": "Отже, зворот\nвід зворотного звуку\nзвучить як первісний."
   },
   "D_083_8": {
     "en": "It's obvious when\nyou think about it,\nbut give it a go!",
@@ -2037,7 +2037,7 @@
   },
   "D_084_1": {
     "en": "Try to use words that\nstart with a vowel.",
-    "ua": "Беріть слова, що\nпочинаються з голосної."
+    "ua": "Беріть слова,\nщо починаються\nз голосної."
   },
   "D_084_2": {
     "en": "\"Alligator\"\n\"Arugula\"\n\"Onomatopoeia\"\n(Just kidding! Chirp!)\n\"Elegant\"",
@@ -2101,7 +2101,7 @@
   },
   "D_089_1": {
     "en": "You can turn them off\nin Settings and enjoy\nthe music as it was\nmeant to be heard!",
-    "ua": "Їх можна вимкнути\nв опціях — і\nслухати музику\nтак, як задумано!"
+    "ua": "Їх можна вимкнути\nв опціях —\nі слухати музику\nтак, як задумано!"
   },
   "Guide_Tex_090": {
     "en": "",
@@ -2109,7 +2109,7 @@
   },
   "D_090_0": {
     "en": "It's easy to change\nthe audio-output mode\nin Nintendo 3DS Sound.",
-    "ua": "Змінити режим виводу\nзвуку в Nintendo 3DS\nЗвуці легко."
+    "ua": "Змінити режим виводу\nзвуку в Звуці\nNintendo 3DS легко."
   },
   "D_090_1": {
     "en": "Go to Settings, then\nAudio Output.",
@@ -2185,7 +2185,7 @@
   },
   "D_096_0": {
     "en": "You can press {t:0.3:ff3200ff} {t:0.3:454039ff}to go to\nthe previous song, and {t:0.3:ff3200ff}{t:0.3:454039ff}\nto skip to the next song.",
-    "ua": "{t:0.3:ff3200ff} {t:0.3:454039ff}переходить до\nпопередньої пісні,\nа {t:0.3:ff3200ff}{t:0.3:454039ff} — до наступної."
+    "ua": "{t:0.3:ff3200ff} {t:0.3:454039ff}переходить\nдо попередньої пісні,\nа {t:0.3:ff3200ff}{t:0.3:454039ff} — до наступної."
   },
   "Guide_Tex_097": {
     "en": "",
@@ -2193,7 +2193,7 @@
   },
   "D_097_0": {
     "en": "You can press {t:0.3:ff3200ff}{t:0.3:454039ff} or {t:0.3:ff3200ff}{t:0.3:454039ff}\nto change between\ndifferent visualisers.",
-    "ua": "Натисканням {t:0.3:ff3200ff}{t:0.3:454039ff} чи {t:0.3:ff3200ff}{t:0.3:454039ff}\nможна перемикати\nвізуалізації."
+    "ua": "Натискайте {t:0.3:ff3200ff}{t:0.3:454039ff} чи {t:0.3:ff3200ff}{t:0.3:454039ff},\nщоб перемикати\nвізуалізації."
   },
   "Guide_Tex_098": {
     "en": "",
@@ -2257,7 +2257,7 @@
   },
   "D_102_0": {
     "en": "If you're using\nheadphones...",
-    "ua": "Якщо ви в\nнавушниках…"
+    "ua": "Якщо ви\nв навушниках…"
   },
   "D_102_1": {
     "en": "you can still listen to\nmusic even with the\nsystem closed.",
@@ -2281,7 +2281,7 @@
   },
   "D_103_1": {
     "en": "You know that nice,\ncolourful OK button?\nJust touch the colour\non it that you want to\nuse for your recording.",
-    "ua": "Знаєте ту гарну\nбарвисту кнопку OK?\nПросто торкніться на\nній того кольору, який\nхочете для запису."
+    "ua": "Знаєте ту гарну\nбарвисту кнопку OK?\nПросто торкніться\nна ній того кольору, який\nхочете для запису."
   },
   "D_103_2": {
     "en": "I like to use red for\nmy own voice, and\ngreen for my friends.",
@@ -2289,7 +2289,7 @@
   },
   "D_103_3": {
     "en": "And orange?",
-    "ua": "А помаранчевий?"
+    "ua": "{t:1.0:6200}А помаранчевий?{t:1.0:6400}"
   },
   "D_103_4": {
     "en": "Well, that's for...\n\nChirp.",
@@ -2301,7 +2301,7 @@
   },
   "D_104_0": {
     "en": "Have you noticed the\nimages on the upper\nscreen that change\nas the music plays?",
-    "ua": "Чи помічали ви\nзображення на верхньому\nекрані, які змінюються\nпід музику?"
+    "ua": "Чи помічали ви\nкартинки на верхньому\nекрані, які змінюються\nпід музику?"
   },
   "D_104_1": {
     "en": "It's called a\n\"visualiser\".",
@@ -2377,7 +2377,7 @@
   },
   "D_108_0": {
     "en": "When I'm out for a stroll,\nI like to sing.",
-    "ua": "Коли я виходжу на\nпрогулянку, люблю\nспівати."
+    "ua": "Коли я виходжу\nна прогулянку, люблю\nспівати."
   },
   "D_108_1": {
     "en": "If I come across someone\nwhile walking around, my\nfirst impulse is to stop my\nmusical chirping.",
@@ -2385,11 +2385,11 @@
   },
   "D_108_2": {
     "en": "But instead I tend to raise\nmy voice and keep on\nsinging louder than before.",
-    "ua": "Але натомість я схильна\nпідвищити голос і\nспівати ще гучніше."
+    "ua": "Але натомість я схильна\nпідвищити голос\nі співати ще гучніше."
   },
   "D_108_3": {
     "en": "After all, I wouldn’t want\nthe people to think I’m\nembarrassed to be heard\nsinging in public…even\nthough I am.",
-    "ua": "Зрештою, не хочу, щоб\nлюди подумали, ніби мені\nсоромно співати\nпри людях… хоч\nмені й соромно."
+    "ua": "Зрештою, не хочу, щоб\nлюди подумали, ніби\nмені соромно співати\nпри людях… хоч мені\nй соромно."
   },
   "D_108_4": {
     "en": "I'm sure I'm not\nthe only one who\ndoes this. Chirp?",
@@ -2421,7 +2421,7 @@
   },
   "D_109_5": {
     "en": "Chirp. I bet solo karaoke\nis a lot more complicated\nthan you thought, eh?",
-    "ua": "Цвірінь. Певна, караоке\nнаодинці куди складніше,\nніж вам здавалося, еге ж?"
+    "ua": "Цвірінь. Певна, караоке\nнаодинці куди складніше,\nніж ви думали, еге ж?"
   },
   "Guide_Tex_110": {
     "en": "",
@@ -2461,7 +2461,7 @@
   },
   "D_111_3": {
     "en": "When you hear a\nrecording of your\nvoice, you're hearing\nit without the sound\ninside your head.",
-    "ua": "Коли ви слухаєте\nзапис свого голосу,\nви чуєте його без\nзвуку всередині\nголови."
+    "ua": "Коли ви слухаєте\nзапис свого голосу,\nви чуєте його\nбез звуку всередині\nголови."
   },
   "D_111_4": {
     "en": "That's why it sounds\nso unfamiliar to you,\nbut not to others.",
@@ -2517,7 +2517,7 @@
   },
   "D_114_2": {
     "en": "You can delete one\npage of recordings\nat a time, or get rid of\nthe whole lot at once.",
-    "ua": "Можна видаляти по\nодній сторінці записів\nабо позбутися\nвсього одразу."
+    "ua": "Можна видаляти\nпо одній сторінці записів\nабо позбутися\nвсього одразу."
   },
   "Guide_Tex_115": {
     "en": "",
@@ -2529,7 +2529,7 @@
   },
   "D_115_1": {
     "en": "have you ever wanted\nto open your mouth\nand go \"aaaaaaahhhh\"?",
-    "ua": "чи хотілося вам колись\nвідкрити рота й\nпротягнути «а-а-а-а-а»?"
+    "ua": "чи хотілося вам колись\nвідкрити рота\nй протягнути «а-а-а-а»?"
   },
   "D_115_2": {
     "en": "It's great fun\nmaking your voice\ntremble like that.",
@@ -2545,7 +2545,7 @@
   },
   "D_116_0": {
     "en": "Do you know what\n\"woodnetninn\" means?",
-    "ua": "Чи знаєте ви, що\nозначає «однетнін»?"
+    "ua": "Чи знаєте ви,\nщо означає «однетнін»?"
   },
   "D_116_1": {
     "en": "It's a word you can\nonly understand by\nrecording yourself\nsaying it and listening\nto the recording.",
@@ -2573,11 +2573,11 @@
   },
   "D_118_0": {
     "en": "If you feel like a change,\nselect {t:0.3:ff3200ff}Interface Colour\n{t:0.3:454039ff}in Settings to give\nNintendo 3DS Sound\na new look.",
-    "ua": "Якщо хочеться змін,\nвиберіть {t:0.3:ff3200ff}Колір меню\n{t:0.3:454039ff}в опціях —\nі Nintendo 3DS Звук\nматиме новий вигляд."
+    "ua": "Якщо хочеться змін,\nвиберіть {t:0.3:ff3200ff}Колір меню\n{t:0.3:454039ff}в опціях —\nі Звук Nintendo 3DS\nматиме новий вигляд."
   },
   "D_118_1": {
     "en": "Not sure which colour\nto go for? Just give the\nselection cursor a flick\nand leave it up to luck.",
-    "ua": "Не знаєте, який колір\nобрати? Просто крутніть\nкурсор вибору й\nздайтеся на щастя."
+    "ua": "Не знаєте, який колір\nобрати? Просто крутніть\nкурсор вибору\nй здайтеся на щастя."
   },
   "D_118_2": {
     "en": "Select Reset to return\nto the original colour.",
@@ -2617,14 +2617,14 @@
   },
   "D_120_2": {
     "en": "{t:0.3:454039ff}{t:4.1:140053005f004700750069006400320031005f005500}{t:0.3:454039ff}This means you can only\nuse Nintendo 3DS Sound\nto listen to tracks stored\non the SD Card. You can't\nsave any recordings to it.",
-    "ua": "{t:0.3:454039ff}{t:4.1:140053005f004700750069006400320031005f005500}{t:0.3:454039ff}Це означає, що в\nNintendo 3DS Звуці ви\nзможете лише слухати\nпісні з карти SD. Записи\nна неї не збережуться."
+    "ua": "{t:0.3:454039ff}{t:4.1:140053005f004700750069006400320031005f005500}{t:0.3:454039ff}Це означає, що тут\nви зможете лише слухати\nпісні з карти SD. Записи\nна неї не збережуться."
   },
   "D_120_3": {
     "en": "{t:0.3:454039ff}{t:4.1:140053005f004700750069006400320032005f005500}{t:0.3:454039ff}Don't worry - simply turn\nthe power off and move\nthe {t:0.3:ff3200ff}write-protection switch\n{t:0.3:454039ff}to the off position, and\nyou'll be able to record\nto the SD Card.",
-    "ua": "{t:0.3:454039ff}{t:4.1:140053005f004700750069006400320032005f005500}{t:0.3:454039ff}Не хвилюйтеся — просто\nвимкніть живлення й\nпереведіть {t:0.3:ff3200ff}перемикач\nзахисту {t:0.3:454039ff}у положення\n«вимк.» — і зможете\nписати на карту SD."
+    "ua": "{t:0.3:454039ff}{t:4.1:140053005f004700750069006400320032005f005500}{t:0.3:454039ff}Не хвилюйтеся — просто\nвимкніть живлення\nй переведіть {t:0.3:ff3200ff}перемикач\nзахисту {t:0.3:454039ff}у положення\n«вимк.» — і зможете\nписати на карту SD."
   },
   "D_120_4": {
     "en": "{t:0.3:454039ff}{t:4.1:140053005f004700750069006400320032005f005500}{t:0.3:454039ff}Phew! If only all\nproblems were\nthis easy to solve.",
-    "ua": "{t:0.3:454039ff}{t:4.1:140053005f004700750069006400320032005f005500}{t:0.3:454039ff}Фух! Якби ж усі\nклопоти розв'язувалися\nтак легко."
+    "ua": "{t:0.3:454039ff}{t:4.1:140053005f004700750069006400320032005f005500}{t:0.3:454039ff}Фух! Якби ж усі\nклопоти так легко\nрозв'язувалися."
   }
 }

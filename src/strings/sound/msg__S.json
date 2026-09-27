@@ -5,7 +5,7 @@
   },
   "C_T_00": {
     "en": "Nintendo 3DS Sound",
-    "ua": "Nintendo 3DS Звук"
+    "ua": "Звук Nintendo 3DS"
   },
   "C_T_01": {
     "en": "",
@@ -457,7 +457,7 @@
   },
   "CEC_TOP_15": {
     "en": "StreetPass cannot be used\nwithout song information.\n\nPlease add song tracks to\nthe StreetPass playlist.",
-    "ua": "StreetPass не працює без\nвідомостей про пісні.\n\nДодайте пісні до списку\nStreetPass."
+    "ua": "StreetPass не працює\nбез відомостей про пісні.\n\nДодайте пісні до списку\nStreetPass."
   },
   "_405": {
     "en": "",
@@ -525,7 +525,7 @@
   },
   "CEC_CNT_24": {
     "en": "1 new artist found! Keep\nusing StreetPass and they might\nshow up in your Hit Parade!",
-    "ua": "Знайдено 1 виконавця!\nКористуйтеся StreetPass — і він\nможе потрапити в хіт-парад!"
+    "ua": "Знайдено 1 виконавця!\nКористуйтеся StreetPass,\nі він може потрапити\nв хіт-парад!"
   },
   "CEC_CNT_30": {
     "en": "",
@@ -541,7 +541,7 @@
   },
   "CEC_CNT_33": {
     "en": "'{t:3.40:0000}s",
-    "ua": ""
+    "ua": "{t:3.40:0000}-ті"
   },
   "CEC_CNT_34": {
     "en": "{t:5.0:00004041}{t:3.2:}{t:2.0:0100}/{t:2.0:0100}{t:3.1:}{t:2.0:0100}/{t:2.0:0100}{t:3.0:} {t:3.3:}:00{t:5.1:}{t:1.0:4600} (approx.){t:1.0:6400}",

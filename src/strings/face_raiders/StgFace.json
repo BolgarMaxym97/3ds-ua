@@ -113,7 +113,7 @@
   },
   "StgFace_FaceMatching_InsideCamera": {
     "en": " Inner",
-    "ua": " Передня"
+    "ua": "Передня"
   },
   "StgFace_FaceMatching_Distance": {
     "en": "Move farther away",
@@ -145,7 +145,7 @@
   },
   "StgFace_FaceMatching_ShowFace": {
     "en": "Put a face in the frame",
-    "ua": "Наведіть рамку на\nобличчя"
+    "ua": "Наведіть рамку\nна обличчя"
   },
   "StgFace_FaceMatching_Shutter": {
     "en": "Shutter sound will play",
@@ -317,7 +317,7 @@
   },
   "StgFace_SubTitle_Explain_Shoot": {
     "en": "Press  to fire!",
-    "ua": "Натисніть , щоб вистрілити!"
+    "ua": "Натисніть , щоб стріляти!"
   },
   "StgFace_SubTitle_Explain_Move": {
     "en": "Move the system to aim",
@@ -365,7 +365,7 @@
   },
   "StgFace_SubTitle_warning_hole_02": {
     "en": "The meter drops as you take damage...",
-    "ua": "Смуга спадає, коли вас б'ють..."
+    "ua": "Смуга спадає, коли вас б'ють…"
   },
   "StgFace_SubTitle_warning_hole_00": {
     "en": "If the meter runs out, it's game over!",
@@ -465,7 +465,7 @@
   },
   "StgFace_FaceRecord_Recording": {
     "en": "Saving...",
-    "ua": "Збереження..."
+    "ua": "Збереження…"
   },
   "StgFace_FaceRecord_TheDate": {
     "en": "%02d/%02d/%d",
@@ -477,7 +477,7 @@
   },
   "StgFace_FaceRecord_Retake": {
     "en": "Retake",
-    "ua": "Перезняти"
+    "ua": "Ще раз"
   },
   "StgFace_FaceRecord_Retake_Ok": {
     "en": "",
@@ -517,7 +517,7 @@
   },
   "StgFace_SeqTitle_Record_Property": {
     "en": "Selected face",
-    "ua": "Вибране обличчя"
+    "ua": "Обране обличчя"
   },
   "StgFace_SeqTitle_Record_CollectionDate": {
     "en": "Date Met",
@@ -801,11 +801,11 @@
   },
   "StgFace_FaceMatching_Diagnosis": {
     "en": "Analysing...",
-    "ua": "Аналіз..."
+    "ua": "Аналіз…"
   },
   "StgFace_Initialize": {
     "en": "Preparing...",
-    "ua": "Підготовка..."
+    "ua": "Підготовка…"
   },
   "StgFace_WhichFace": {
     "en": "Which face do you want to play with?",
@@ -993,7 +993,7 @@
   },
   "StgFace_FaceCollection_ufo": {
     "en": "A UFO has landed! The UFO\nwill abduct faces from\nNintendo 3DS Camera.",
-    "ua": "Приземлилася НЛО! Вона\nвикраде обличчя\nз Nintendo 3DS Камери."
+    "ua": "Приземлилася НЛО! Вона\nвикраде обличчя\nз Камери Nintendo 3DS."
   },
   "StgFace_FaceCollection_list": {
     "en": "UFO Crew",
@@ -1013,7 +1013,7 @@
   },
   "StgFace_FaceCollection_found": {
     "en": "Abduction from\nNintendo 3DS Camera\ncomplete!",
-    "ua": "Викрадення з\nNintendo 3DS Камери\nзавершено!"
+    "ua": "Викрадення\nз Камери Nintendo 3DS\nзавершено!"
   },
   "StgFace_FaceCollection_list_title": {
     "en": "UFO Crew",
@@ -1081,7 +1081,7 @@
   },
   "StgFace_SeqTitle_StageSelect_unlock_st6": {
     "en": "???\nTry merging faces in\nNintendo 3DS Camera!\nKeep collecting!",
-    "ua": "???\nСпробуйте змішати обличчя\nв Nintendo 3DS Камері!\nЗбирайте далі!"
+    "ua": "???\nСпробуйте змішати обличчя\nв Камері Nintendo 3DS!\nЗбирайте далі!"
   },
   "StgFace_SeqTitle_StageSelect_unlock_st3b": {
     "en": "",
@@ -1133,7 +1133,7 @@
   },
   "StgFace_hint_stage2_boss": {
     "en": "If the real face doesn't show itself...\ntry here.",
-    "ua": "Якщо справжнє обличчя не видно...\nспробуйте тут."
+    "ua": "Справжнього обличчя не видно?\nСпробуйте тут."
   },
   "StgFace_hint_stage3_enemy": {
     "en": "Go for the red ones first.",
@@ -1173,11 +1173,11 @@
   },
   "StgFace_ufo_dialog_01": {
     "en": "Sending photo...",
-    "ua": "Надсилання фото..."
+    "ua": "Надсилання фото…"
   },
   "StgFace_ufo_dialog_02": {
     "en": "Photo saved to SD Card!",
-    "ua": "Фото збережено на карту\nSD!"
+    "ua": "Фото збережено\nна карту SD!"
   },
   "StgFace_ufo_dialog_03": {
     "en": "Could not send photo.",
@@ -1325,7 +1325,7 @@
   },
   "StgFace_asondemorau_delivery_return_button_right": {
     "en": "Return",
-    "ua": "Повернути"
+    "ua": "Віддати"
   },
   "StgFace_hint_bonus_title": {
     "en": "Bonus Stage Hint",
@@ -1405,7 +1405,7 @@
   },
   "StgFace_FaceCollection_search": {
     "en": "Searching through\nNintendo 3DS Camera...",
-    "ua": "Пошук у\nNintendo 3DS Камері..."
+    "ua": "Пошук\nу Камері Nintendo 3DS…"
   },
   "StgFace_FaceCollection_findhas": {
     "en": "Face search successful!",
@@ -1413,7 +1413,7 @@
   },
   "StgFace_Information_shutter_06": {
     "en": "Sneaky Snaps will take\nphotos at certain times,\nlike when you beat the\nhigh score!",
-    "ua": "«Знімки зненацька»\nзнімають у певні миті —\nнаприклад, коли ви\nпоб'єте рекорд!"
+    "ua": "«Знімки зненацька»\nфотографують у певні\nмоменти — наприклад,\nколи поб'єте рекорд!"
   },
   "StgFace_Information_shutter_07": {
     "en": "",
@@ -1441,7 +1441,7 @@
   },
   "StgFace_eyecatch_saving": {
     "en": "Saving...",
-    "ua": "Збереження..."
+    "ua": "Збереження…"
   },
   "StgFace_SeqTitle_StageSelect_asondemorau_first": {
     "en": "Come back once\nyou've collected\nmore faces.",
@@ -1493,19 +1493,19 @@
   },
   "StgFace_Information_message03": {
     "en": "There's... There's\nsomething in Face\nCollection! Try selecting\nit and pressing !",
-    "ua": "Там... Там щось є\nу «Колекції облич»!\nВиберіть його\nй натисніть !"
+    "ua": "Там… Там щось є\nу «Колекції облич»!\nВиберіть його\nй натисніть !"
   },
   "StgFace_Information_message04": {
     "en": "There are some stages\nthat won't be unlocked\nunless you try using\nShare the Fun!",
-    "ua": "Деякі рівні не\nвідкриються, поки\nви не спробуєте\n«Гру для всіх»!"
+    "ua": "Деякі рівні\nне відкриються, поки\nви не спробуєте\n«Гру для всіх»!"
   },
   "StgFace_Information_message05": {
     "en": "Try taking photos\nof your friends\nand family using\nNintendo 3DS Camera!",
-    "ua": "Спробуйте зняти\nдрузів і родину\nв Nintendo 3DS\nКамері!"
+    "ua": "Спробуйте зняти\nдрузів і родину\nв Камері\nNintendo 3DS!"
   },
   "StgFace_Information_message06": {
     "en": "Something might\nhappen if you\nmerge faces using\nNintendo 3DS Camera!",
-    "ua": "Може щось статися,\nякщо змішати обличчя\nв Nintendo 3DS\nКамері!"
+    "ua": "Може щось статися,\nякщо змішати обличчя\nв Камері\nNintendo 3DS!"
   },
   "StgFace_Information_message07": {
     "en": "If Sneaky Snaps is turned\non, photos will be taken\nautomatically when you\nget a high score! Snap!",
@@ -1529,7 +1529,7 @@
   },
   "StgFace_Information_message12": {
     "en": "If you press  or  in\na stage, you can take\na photo to remember\nthe fun! Ah, memories!",
-    "ua": "Натисніть  чи \nна рівні — і зробите\nфото на згадку!\nОй, спогади!"
+    "ua": "Натисніть на рівні\n чи  — і зробите\nфото на згадку!\nОй, спогади!"
   },
   "StgFace_Information_message13": {
     "en": "Use Adjust in Face\nCollection to fine-tune\nfaces to perfection!",
@@ -1565,7 +1565,7 @@
   },
   "StgFace_Information_message21": {
     "en": "Let your friends know\nthey can take photos\nin-game! All you've got\nto do is press  or !",
-    "ua": "Скажіть друзям, що\nв грі можна знімати!\nДосить натиснути\n чи !"
+    "ua": "Скажіть друзям,\nщо в грі можна знімати!\nДосить натиснути\n чи !"
   },
   "StgFace_Information_message22": {
     "en": "When picking a face to\nshow off to someone,\nchoose one that'll\nreally surprise 'em!",
@@ -1585,7 +1585,7 @@
   },
   "StgFace_Information_message26": {
     "en": "Introduce people to\nFace Raiders here! Let\nyour friends and\nfamily have a go!",
-    "ua": "Знайомте людей із\nFace Raiders! Дайте\nдрузям і родині\nспробувати!"
+    "ua": "Знайомте людей\nіз Face Raiders! Дайте\nдрузям і родині\nспробувати!"
   },
   "StgFace_Information_message27": {
     "en": "Get more faces and\nthey might turn up in a\nstage by surprise! Try\nreplaying stages!",
@@ -1657,11 +1657,11 @@
   },
   "StgFace_data_initialization_reminder_button": {
     "en": "I'm sure",
-    "ua": "Впевнений"
+    "ua": "Так"
   },
   "StgFace_data_initialization_run": {
     "en": "Resetting data... Please do not\nturn off the power.",
-    "ua": "Скидання даних... Не\nвимикайте\nконсоль."
+    "ua": "Скидання даних…\nНе вимикайте\nконсоль."
   },
   "StgFace_screenshot_message_on": {
     "en": "Add caption",
@@ -1693,7 +1693,7 @@
   },
   "StgFace_Lower_ranking": {
     "en": "Leaderboard",
-    "ua": "Таблиця рекордів"
+    "ua": "Рекорди"
   },
   "StgFace_Game_Explain_photo_illustration": {
     "en": "Photos/drawings of faces are OK!",
@@ -1701,7 +1701,7 @@
   },
   "StgFace_SDcard_message_plaza_text_03": {
     "en": "Creating extra data...\nDo not remove the SD Card.",
-    "ua": "Створення додаткових даних...\nНе виймайте карту SD."
+    "ua": "Створення додаткових даних…\nНе виймайте карту SD."
   },
   "StgFace_Lower_PadAdjust_LRXY": {
     "en": " Resize",

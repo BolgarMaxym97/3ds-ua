@@ -62,17 +62,14 @@ BASE_SLOT = "ru"
 # let 175 strings through that overflow their button on hardware. Only a couple of pixels of
 # absolute slack remain, for rounding in the renderer.
 WIDTH_LIMIT = 1.0
-# Slack is absolute on purpose. A percentage grows with the string, which is backwards: it
-# handed a 500px dialog 25px of room while giving a button almost none. Eight pixels is
-# about one narrow glyph - enough that a word like "Відкрити" is not rewritten for being a
-# hair wider than "Открыть", and far too little to hide a real overflow.
-#
-# Known blind spot: eight pixels is one narrow glyph on a 400px dialog line but a tenth of
-# a button, and STR_CONTRIBUTE in miiverse_post reached QA wrapped to two lines while
-# sitting at exactly budget + 8. Tightening this catches that class of bug, but 135
-# translations currently clear their budget by 3-8px (~30 of them on button-sized panes),
-# so the limit cannot drop until those are retranslated.
-WIDTH_SLACK = 8
+# No slack. The budget is the widest thing Nintendo itself drew in that pane, so it is by
+# definition a width the pane holds - and every pixel past it is a guess. Eight pixels of
+# slack used to stand here "for rounding"; it was one narrow glyph on a 400px dialog line
+# but a tenth of a button, and STR_CONTRIBUTE in miiverse_post reached QA wrapped to two
+# lines while sitting at exactly budget + 8. A word that is a hair too wide gets the font
+# scale tag Nintendo uses for the same problem (`{t:1.0:5c00}...{t:1.0:6400}`) or a
+# shorter wording.
+WIDTH_SLACK = 0
 BRACE_RE = re.compile(r"\{[^}]*\}")
 # `{t:1.0:XXXX}` and `{t:1.1:XXXX}` scale the font: 0x6400 is 100%, 0x4600 is 70%. Both
 # shapes exist in the dumps and a label often carries one of each, so both are read here -
@@ -263,18 +260,64 @@ def check_entry(
     if budget.lines and dst_lines > budget.lines:
         problems.append(f"{label}: {dst_lines} lines exceed the {budget.lines}-line maximum across localisations")
 
+    stranded = stranded_breaks(ua, rendered, widths)
+    if len(stranded) >= STRANDED_LIMIT:
+        problems.append(f"{label}: {len(stranded)} lines broken early, e.g. {stranded[0]!r} - rewrap the paragraph")
+
     return problems
 
 
+# A paragraph whose over-long lines were each split in two, instead of being rewrapped,
+# reads as a staircase: "Прочитайте це повідомлення / перед / тим, як продовжити". The width
+# check cannot see it - every line fits. That is how System Transfer's notices and Health and
+# Safety shipped. A break is stranded when the line above had room for at least a fifth of
+# the column more and could have taken the next word, and that word is not a short
+# preposition moved down on purpose. One or two are layout choices (a dialog balancing its
+# lines, a name on a line of its own); three in one text is the staircase.
+STRANDED_LIMIT = 3
+KEEP_WITH_NEXT = frozenset(
+    "з із зі в у й і та а але чи або до на за по від для про при без над під що як не ні то це ви ці його її їх".split()
+)
+BULLET_START = ("•", "-", "–", "—", "(", "■", "●", "*")
+
+
+def stranded_breaks(text: str, rendered: str, widths: dict[int, int]) -> list[str]:
+    """Words come from `text` (homoglyphs would turn `І` into Latin `I`), widths from
+    `rendered` with the scale tags honoured, so a shrunken heading is measured as drawn."""
+    lines = strip_tags(text).split("\n")
+    painted = line_widths(rendered, widths)
+    if len(painted) != len(lines) or sum(1 for line in lines if line.strip()) < 3:
+        return []
+    column = max(painted)
+    found: list[str] = []
+    for index, (above, line) in enumerate(zip(lines, lines[1:])):
+        if not line.strip() or not above.strip() or line.lstrip().startswith(BULLET_START):
+            continue
+        if "%" in above or "%" in line:
+            continue
+        word = line.split()[0]
+        if word.lower().strip("«(") in KEEP_WITH_NEXT or above.rstrip()[-1:] in ".:!?;-":
+            continue
+        if painted[index] + pixel_width(f" {word}", widths) <= column * 0.8:
+            found.append(f"{above.strip()} / {word}")
+    return found
+
+
 LETTERS_RE = re.compile(r"[^\W\d_]{2}")
+# A single Cyrillic letter is still language: `{t:3.40:0000}-е` is the Russian decade suffix
+# ("80-е"), and skipping it for having one letter is how it shipped untranslated.
+CYRILLIC_RE = re.compile(r"[\u0400-\u04ff]")
 
 
-def untranslatable(name: str) -> set[str]:
+def untranslatable(name: str) -> tuple[set[str], dict[str, str]]:
     """Labels there is nothing to translate in: empty, or with no word in them.
 
     Counting these as outstanding work is what made the coverage look like a third of the
     text was missing. What is left after stripping tags is things like `%ls`, `1`, `:` and
     the language names a picker deliberately shows in their own language.
+
+    Also returns the slot's own texts, so the caller can tell an empty translation that
+    leaves Russian on screen from one that leaves nothing.
     """
     cfg = TITLES[name]
     store = open_store(cfg, ROOT / "work" / cfg["source_tid"] / "romfs")
@@ -289,12 +332,16 @@ def untranslatable(name: str) -> set[str]:
 
     slot = texts(cfg["lang"][BASE_SLOT])
     reference = texts(cfg["ref_lang"])
-    skip = {label for label, text in slot.items() if not LETTERS_RE.search(strip_tags(text))}
+    skip = {
+        label
+        for label, text in slot.items()
+        if not LETTERS_RE.search(strip_tags(text)) and not CYRILLIC_RE.search(strip_tags(text))
+    }
     # Nintendo shipping the same text in two languages means the string is not language
     # dependent: `WPA2-PSK (AES)`, `%ls`, the Latin key rows, and the language names a
     # picker deliberately shows in their own language. Translating those would be a bug.
     skip |= {label for label, text in slot.items() if reference.get(label) == text}
-    return skip
+    return skip, slot
 
 
 def validate(
@@ -304,15 +351,17 @@ def validate(
     strings_dir = ROOT / "src" / "strings" / name
     budgets = label_budgets(name, widths)
     hud = hud_charset(cfg) if cfg.get("hud_font") else None
-    skip = untranslatable(name)
+    skip, slot_texts = untranslatable(name)
     total = translated = 0
     problems: list[str] = []
 
     # _all_langs.json holds plain {label: text} written into every slot, so it is checked
     # against the same budgets but without the en/ua entry shape. Both builds' sections are
     # checked, because both ship.
+    overridden: set[str] = set()
     for slot_key in variant.SLOTS:
         for key, labels in load_all_langs(strings_dir, slot_key).items():
+            overridden |= set(labels)
             for label, text in labels.items():
                 entry = {"en": "", "ua": text}
                 for problem in check_entry(label, entry, charset, table, widths, budgets.get(label, Budget()), hud):
@@ -327,6 +376,10 @@ def validate(
                 total += 1
                 if entry.get("ua"):
                     translated += 1
+                elif label not in overridden and CYRILLIC_RE.search(strip_tags(slot_texts.get(label, ""))):
+                    # An empty translation keeps the original, and in the build over the
+                    # Russian slot the original is Russian.
+                    problems.append(f"{json_file.name}: {label}: untranslated, the Russian text would ship")
             for problem in check_entry(label, entry, charset, table, widths, budgets.get(label, Budget()), hud):
                 problems.append(f"{json_file.name}: {problem}")
 
@@ -395,6 +448,15 @@ def validate_plaza_map(charset: set[int], table: dict[str, str], widths: dict[in
 
     problems: list[str] = []
     checked = 0
+    # The same region is named twice: here, and in the profile settings (`area`). The map's
+    # table was once transliterated from the Russian (`Вена`, `Юг-Піренеї`, `Ліссабон`)
+    # while `area` had the Ukrainian names, so the two must agree wherever both exist.
+    area_names: dict[str, str] = {}
+    for area_file in (ROOT / "src" / "strings" / "area").glob("EU_*.json"):
+        country = area_file.stem.split("_", 1)[1]
+        for key, entry in json.loads(area_file.read_text(encoding="utf-8")).items():
+            if key.isdigit() and isinstance(entry, dict) and entry.get("ua"):
+                area_names[f"{country}:{key}"] = entry["ua"]
     for rel, json_name in (("country.csv", "country.json"), ("region.csv", "region.json")):
         entries = json.loads((strings / json_name).read_text(encoding="utf-8"))
         rows = {csvtab.key_of(row): row.fields for row in csvtab.load(param / rel).data_rows()}
@@ -413,6 +475,13 @@ def validate_plaza_map(charset: set[int], table: dict[str, str], widths: dict[in
             missing = [ch for ch in rendered if ord(ch) not in charset]
             if missing:
                 problems.append(f"{json_name} {key}: missing glyphs {missing}")
+            if entry["ua"] != entry["ua"].strip() or "\xa0" in entry["ua"]:
+                problems.append(f"{json_name} {key}: stray whitespace in {entry['ua']!r}")
+            if json_name == "region.json" and area_names.get(key, entry["ua"]) != entry["ua"]:
+                problems.append(
+                    f"{json_name} {key}: {entry['ua']!r} differs from the settings list "
+                    f"({area_names[key]!r} in area/)"
+                )
             width = pixel_width(rendered, widths)
             if width > budget:
                 problems.append(

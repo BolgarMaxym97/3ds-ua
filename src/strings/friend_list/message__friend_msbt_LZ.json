@@ -57,7 +57,7 @@
   },
   "fri_dlg_badmii": {
     "en": "Your Personal Mii\nis corrupted.{t:1.0:1400}\n                    {/t:1.0}\nUse Mii Maker to create\na new Personal Mii.",
-    "ua": "Ваш персональний Mii\nпошкоджено.{t:1.0:1400}\n                    {/t:1.0}\nСтворіть новий\nу Редакторі Mii."
+    "ua": "Ваш персональний Mii\nпошкоджено.{t:1.0:1400}\n                    {/t:1.0}\nСтворіть новий\nу Mii Maker."
   },
   "fri_badmiiname": {
     "en": "???",
@@ -205,7 +205,7 @@
   },
   "lau_dlg_pare0": {
     "en": "Would you like to launch this\nsoftware in 2D?\n{t:1.0:5500}{t:0.3:3c3c3cff}You must enter your PIN to\nlaunch it in 3D.{t:0.3:000000ff}{/t:1.0}",
-    "ua": "Запустити програму в\nрежимі 2D?\n{t:1.0:5500}{t:0.3:3c3c3cff}Щоб запустити програму\nв режимі 3D, потрібно\nввести PIN-код.{t:0.3:000000ff}{/t:1.0}"
+    "ua": "Запустити програму\nв режимі 2D?\n{t:1.0:5500}{t:0.3:3c3c3cff}Щоб запустити програму\nв режимі 3D, потрібно\nввести PIN-код.{t:0.3:000000ff}{/t:1.0}"
   },
   "lau_dlg_pare1": {
     "en": "This software is restricted by\nthe Parental Controls Software\nRating settings.{t:1.0:1400}\n                    {/t:1.0}\nWould you like to temporarily\nremove this restriction?",
@@ -217,7 +217,7 @@
   },
   "lau_dlg_pare5": {
     "en": "Would you like to launch this\nsoftware in 2D?\n{t:1.0:5500}{t:0.3:3c3c3cff}You must enter your PIN again\nto launch it in 3D.{t:0.3:000000ff}{/t:1.0}",
-    "ua": "Запустити програму в\nрежимі 2D?\n{t:1.0:5500}{t:0.3:3c3c3cff}Щоб запустити програму\nв режимі 3D, потрібно\nввести PIN-код ще раз.{t:0.3:000000ff}{/t:1.0}"
+    "ua": "Запустити програму\nв режимі 2D?\n{t:1.0:5500}{t:0.3:3c3c3cff}Щоб запустити програму\nв режимі 3D, потрібно\nввести PIN-код ще раз.{t:0.3:000000ff}{/t:1.0}"
   },
   "lau_dlg_2b_pare0": {
     "en": " Remove",
@@ -237,7 +237,7 @@
   },
   "lau_dlg_ng_sd1": {
     "en": "Could not access SD Card.",
-    "ua": "Не вдалося отримати доступ\nдо карти SD."
+    "ua": "Немає доступу\nдо карти SD."
   },
   "fri_edit": {
     "en": "Favourite Title",
@@ -313,7 +313,7 @@
   },
   "fri_opti_sett": {
     "en": "Friend notification settings",
-    "ua": "Налаштування повідомлень"
+    "ua": "Налаштування сповіщень"
   },
   "fri_opti_dele": {
     "en": "Delete Friend Card",
@@ -321,7 +321,7 @@
   },
   "fri_dlg_paren0": {
     "en": "Because Online Interaction\nhas been restricted by \nParental Controls, you cannot \nadjust notification settings.",
-    "ua": "Спілкування через Інтернет\nобмежено батьківським\nконтролем, тому не можна\nзмінити налаштування\nповідомлень."
+    "ua": "Спілкування через Інтернет\nобмежено батьківським\nконтролем, тому не можна\nзмінити налаштування\nсповіщень."
   },
   "fri_set_comm_u": {
     "en": "Use these options to notify\nfriends of your online status\nand the title you're currently\nplaying.\n{t:1.0:5500}{t:0.3:3c3c3cff}Enabling the first option will \nalso allow your friends to see \nwhen you last went offline.{t:0.3:000000ff}{/t:1.0}",
@@ -361,7 +361,7 @@
   },
   "fri_dlg_delete0": {
     "en": "Deleting this friend card\nmeans you will no longer be\nfriends with this person {t:1.0:5500}{t:0.3:3c3c3cff}(they\nwill not receive a notification\nabout this).{t:0.3:000000ff}{/t:1.0}\nIs this OK?",
-    "ua": "Якщо видалити цю картку,\nви більше не будете\nдрузями.\n{t:1.0:5500}{t:0.3:3c3c3cff}Друг не отримає\nпро це повідомлення.{t:0.3:000000ff}{/t:1.0}\nПродовжити?"
+    "ua": "Якщо видалити цю картку,\nви більше не будете\nдрузями.\n{t:1.0:5500}{t:0.3:3c3c3cff}Друг не отримає\nпро це сповіщення.{t:0.3:000000ff}{/t:1.0}\nПродовжити?"
   },
   "fri_dlg_2b_dele0": {
     "en": " No",
@@ -413,7 +413,7 @@
   },
   "fri_dlg_neig_wai": {
     "en": "Please wait...",
-    "ua": "Зачекайте..."
+    "ua": "Зачекайте…"
   },
   "fri_dlg_1b_cance": {
     "en": " Cancel",
@@ -425,7 +425,7 @@
   },
   "fri_dlg_2b_retry": {
     "en": " {t:1.1:5000}Search Again{/t:1.1}",
-    "ua": " {t:1.1:5000}Шукати знову{/t:1.1}"
+    "ua": " {t:1.1:5000}Шукати ще{/t:1.1}"
   },
   "fri_code_comm_u0": {
     "en": "Enter the friend code of\nthe person you would like\nto register here.",
@@ -437,7 +437,7 @@
   },
   "fri_dlg_neig_err": {
     "en": "Disconnected from \n%ls.",
-    "ua": "Зв'язок із\n%ls\nперервано."
+    "ua": "Зв'язок\nіз %ls\nперервано."
   },
   "fri_dlg_code_err1": {
     "en": "The friend code is incorrect.",
@@ -465,7 +465,7 @@
   },
   "fri_dlg_code2": {
     "en": "You are now friends with\n%ls!",
-    "ua": "Тепер ви друзі з\n%ls!"
+    "ua": "Тепер ви друзі\nз %ls!"
   },
   "fri_dlg_code3": {
     "en": "%ls has\nbeen fully registered as\na friend with the name\n%ls!",
@@ -473,7 +473,7 @@
   },
   "fri_dlg_tutori00": {
     "en": "Welcome to the friend list!{t:1.0:1400}\n                    {/t:1.0}\nHere you can register other \nusers as friends.",
-    "ua": "Вітаємо у списку друзів!{t:1.0:1400}\n                    {/t:1.0}\nТут ви можете реєструвати\nінших користувачів як друзів."
+    "ua": "Вітаємо у списку друзів!{t:1.0:1400}\n                    {/t:1.0}\nТут ви можете реєструвати\nінших користувачів\nяк друзів."
   },
   "fri_dlg_1b_next": {
     "en": " Next",
@@ -489,7 +489,7 @@
   },
   "fri_dlg_tutori03": {
     "en": "There are no Mii characters to\nadd to your friend card.{t:1.0:1400}\n                    {/t:1.0}\nPlease make a Mii for yourself\nin Mii Maker.",
-    "ua": "Немає персонального Mii\nдля вашої картки друга.{t:1.0:1400}\n                    {/t:1.0}\nСтворіть персонального Mii\nу Редакторі Mii."
+    "ua": "Немає персонального Mii\nдля вашої картки друга.{t:1.0:1400}\n                    {/t:1.0}\nСтворіть персонального Mii\nу Mii Maker."
   },
   "fri_dlg_tutori05": {
     "en": "First, add your Favourite \nTitle to your friend card.",
@@ -509,7 +509,7 @@
   },
   "fri_dlg_tutori08": {
     "en": "Would you like your friends\nto see when you're online\n(connected to the internet\nor otherwise)?\n{t:1.0:5500}{t:0.3:3c3c3cff}Enabling this option will also\nshow when you went offline.{t:0.3:000000ff}{/t:1.0}",
-    "ua": "Показувати друзям, коли ви\nонлайн (підключені до\nІнтернету чи ні)?\n{t:1.0:5500}{t:0.3:3c3c3cff}Ця функція також покаже,\nколи ви були онлайн\nостанній раз.{t:0.3:000000ff}{/t:1.0}"
+    "ua": "Показувати друзям, коли ви\nонлайн (підключені\nдо Інтернету чи ні)?\n{t:1.0:5500}{t:0.3:3c3c3cff}Ця функція також покаже,\nколи ви були онлайн\nостанній раз.{t:0.3:000000ff}{/t:1.0}"
   },
   "fri_dlg_tutori09": {
     "en": "Would you like your friends\nto see which games you're\nplaying while you're online?",

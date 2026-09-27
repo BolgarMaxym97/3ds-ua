@@ -1,7 +1,7 @@
 {
   "0000Initialization": {
     "en": "Preparing...\nPlease wait.",
-    "ua": "Підготовка...\nЗачекайте."
+    "ua": "Підготовка…\nЗачекайте."
   },
   "0100Exitbtn": {
     "en": " Close",
@@ -41,7 +41,7 @@
   },
   "0202Dlog_PhotoSaveRun": {
     "en": "Saving...",
-    "ua": "Збереження..."
+    "ua": "Збереження…"
   },
   "0202Dlog_PhotoSaveCompletion": {
     "en": "This note has been\nsaved to the SD Card.",
@@ -61,7 +61,7 @@
   },
   "0202Dlog_PhotoSaveNAND_err2": {
     "en": "To save this note as a\nphoto, please organise the\nNintendo 3DS Camera\nphotos on the SD Card to\nmake space.",
-    "ua": "Щоб зберегти цей запис\nяк фото, упорядкуйте фото\nNintendo 3DS Камери\nна карті SD і звільніть\nмісце."
+    "ua": "Щоб зберегти цей запис\nяк фото, упорядкуйте фото\nКамери Nintendo 3DS\nна карті SD і звільніть\nмісце."
   },
   "0202Dlog_PhotoSaveNextbtn": {
     "en": " Next",
@@ -85,7 +85,7 @@
   },
   "0202Dlog_PhotoSaveSDSwitch": {
     "en": "Cannot write to the SD Card.\nPlease turn off the power,\nmove the SD Card's\nwrite-protection switch\nto the off position, then\nreinsert the SD Card.",
-    "ua": "Не вдається записати на\nкарту SD.\nВимкніть консоль, зніміть\nз карти SD захист від\nзапису, потім вставте\nкарту SD знову."
+    "ua": "Не вдається записати\nна карту SD.\nВимкніть консоль, зніміть\nз карти SD захист\nвід запису, потім вставте\nкарту SD знову."
   },
   "0202Dlog_PhotoSaveNoSD": {
     "en": "There is no SD Card inserted.\nPlease turn off the power\nand insert an SD Card into\nthe SD Card slot.",
@@ -145,7 +145,7 @@
   },
   "9800Dlog_ErrDestructionData2": {
     "en": "Erasing corrupted notes...",
-    "ua": "Стирання пошкоджених\nзаписів..."
+    "ua": "Стирання пошкоджених\nзаписів…"
   },
   "9800Dlog_ErrDestructionData3": {
     "en": "Erased 1\ncorrupted note.",
@@ -157,7 +157,7 @@
   },
   "9801Dlog_ErrWait": {
     "en": "Please wait...",
-    "ua": "Зачекайте..."
+    "ua": "Зачекайте…"
   },
   "9801Dlog_ErrSaveFailure1": {
     "en": "Unable to save the note.",
