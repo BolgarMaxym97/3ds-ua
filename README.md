@@ -44,7 +44,7 @@
 ## Що потрібно
 
 - Nintendo 3DS / 2DS / New 3DS **європейського (EUR) регіону**
-- встановлена **Luma3DS** — кастомна прошивка
+- встановлена **Luma3DS v10.3 або новіша** — кастомна прошивка (краще найновіша). Старіша не підміняє файли Меню HOME і системних аплетів (клавіатура, Довідник, екран помилки)
 - SD-карта з ~55 МБ вільного місця
 - за бажанням — **Universal-Updater**: з ним усе ставиться прямо з консолі, без виймання картки. Українізатор уже є в його основному магазині, Universal-DB
 
@@ -147,6 +147,7 @@ Universal-Updater покаже нагадування про Luma й мову �
 | Частина тексту не українською | Так і має бути: технічні написи (`OK`, `Miiverse`, формати дат) лишені як є. |
 | У списку країн немає України | Свого коду в системі Україна не має — [чому](#чого-поки-що-немає). Ставте будь-яку країну, інтерфейс лишиться українським. |
 | `An exception occurred` при запуску додатка | Видаліть папку цього додатка `SD:/luma/titles/<номер>` цілком і перезавантажте — він запуститься без перекладу. І [напишіть в Issues](../../issues) з фото екрана. |
+| Назви додатків українські, а кнопки Меню HOME («Помощь», «Запустить») і статус-бар — ні | Luma старша за v10.3: вона не вміє підміняти файли Меню HOME. Версію видно в меню Luma (SELECT при ввімкненні). Оновіть Luma за [3ds.hacks.guide](https://3ds.hacks.guide/updating-b9s) і знову ввімкніть `Enable game patching`. |
 | Меню HOME не завантажується | Видаліть `SD:/luma/titles/0004003000009802/code.ips`. Не допомогло — усю папку `0004003000009802`. |
 | Не можу знайти українізатор в Universal-Updater | Шукайте лупою в лівій панелі: «Українізатор». Має бути вибраний магазин **Universal-DB** (шестерня → `Select UniStore`). |
 | У Universal-Updater помилка завантаження | Реліз ще не опубліковано або зникла мережа — спробуйте пізніше чи візьміть архів вручну. Ще одна причина — збита дата на консолі: тоді не проходить перевірка сертифіката. |
@@ -199,7 +200,7 @@ HOME Menu (including the application names under the icons) · System Settings (
 ### Requirements
 
 - a Nintendo 3DS / 2DS / New 3DS of the **European (EUR) region**
-- **Luma3DS** custom firmware installed
+- **Luma3DS v10.3 or newer** custom firmware installed (the latest is best). Older builds cannot replace files of the HOME Menu and system applets (keyboard, Manual, error screen)
 - an SD card with ~55 MB free
 - optionally **Universal-Updater**: with it everything is done from the console, no card removal. The mod is already in its main store, Universal-DB
 
@@ -302,6 +303,7 @@ Nothing in the system was modified, so removal cannot break anything.
 | Some text is not Ukrainian | Expected: technical strings (`OK`, `Miiverse`, date formats) are left as they are. |
 | Ukraine is missing from the country list | The system has no country code for it, see [Known limits](#known-limits). Pick any country; the interface stays Ukrainian. |
 | `An exception occurred` when opening an app | Delete that app's whole `SD:/luma/titles/<id>` folder and reboot — it will start untranslated. Please [open an Issue](../../issues) with a photo. |
+| App names are Ukrainian, but the HOME Menu buttons («Manual», «Open») and status bar are not | Luma is older than v10.3 and cannot replace HOME Menu files. The version is shown in the Luma menu (hold SELECT at power-on). Update Luma via [3ds.hacks.guide](https://3ds.hacks.guide/updating-b9s) and turn `Enable game patching` back on. |
 | HOME Menu won't boot | Delete `SD:/luma/titles/0004003000009802/code.ips`. If that doesn't help, delete the whole `0004003000009802` folder. |
 | Can't find the mod in Universal-Updater | Search with the magnifier in the left sidebar: «Українізатор». The selected store must be **Universal-DB** (gear → `Select UniStore`). |
 | Download error in Universal-Updater | The release isn't published yet, or the network dropped — try later or grab the archive by hand. Another cause is a wrong console clock, which fails the certificate check. |
