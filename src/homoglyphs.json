@@ -23,6 +23,18 @@
       "Є": "Е",
       "ґ": "г",
       "Ґ": "Г"
+    },
+    "real": {
+      "_comment": "the real letters, unchanged. Opt-in: only for a console whose shared system font has been given them (tools/sysfont_glyphs.py, docs/internals.en.md). Picked with GLYPHS=real (env UA_GLYPHS), never as the default",
+      "і": "і",
+      "І": "І",
+      "ї": "ї",
+      "Ї": "Ї",
+      "є": "є",
+      "Є": "Є",
+      "ґ": "ґ",
+      "Ґ": "Ґ",
+      "ʼ": "ʼ"
     }
   },
   "also_missing": {

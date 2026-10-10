@@ -1,6 +1,7 @@
 work/
 dist/
 dist_en/
+dist_sysfont/
 tmp/
 dumps/
 cia/

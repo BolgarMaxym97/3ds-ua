@@ -16,7 +16,13 @@ DIST := $(if $(filter en,$(SLOT)),dist_en,dist)
 # reads for them. See write_loader_alias() in tools/build.py.
 MODEL := old3ds
 
-.PHONY: help extract extract-manuals font hud-font validate build build-ru build-en \
+# Which homoglyph variant of src/homoglyphs.json the text is built with; empty = its
+# `default`. `real` keeps і ї є ґ as they are and is only for a console whose system font
+# has them - see `sysfont` below and tools/sysfont_glyphs.py.
+GLYPHS :=
+export UA_GLYPHS := $(GLYPHS)
+
+.PHONY: help extract extract-manuals font hud-font sysfont validate build build-ru build-en \
 	manuals manuals-ru manuals-en all package package-ru package-en unistore unistore-check unistore-verify unistore-icon udb \
 	clean sd
 
@@ -31,6 +37,9 @@ font: ## re-read the system font -> assets/font_charset.txt + font_widths.json
 
 hud-font: ## re-render the added HUD glyphs -> assets/hud_glyphs.json (needs Pillow)
 	$(PY) tools/hud_glyphs.py --report
+
+sysfont: ## opt-in: add і ї є ґ ʼ to the system font -> dist_sysfont/ (needs Pillow + fontTools)
+	$(PY) tools/sysfont_glyphs.py --report --png dist_sysfont/glyphs.png
 
 validate: ## check translations (glyphs, width, line count, tags) - covers both slots at once
 	$(PY) tools/validate.py
@@ -98,4 +107,4 @@ sd: ## copy onto the SD card (SD=/Volumes/... , SLOT=ru|en, MODEL=old3ds|new3ds)
 	@test "$(MODEL)" != new3ds || rsync -av $(DIST)/new3ds/luma/ "$(SD)/luma/"
 
 clean: ## remove the build output
-	rm -rf dist dist_en
+	rm -rf dist dist_en dist_sysfont

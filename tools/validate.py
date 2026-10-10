@@ -46,6 +46,7 @@ from pathlib import Path
 
 sys.path.insert(0, str(Path(__file__).parent))
 import bcfnt  # noqa: E402
+import sysfont_glyphs  # noqa: E402
 import variant  # noqa: E402
 from build import TITLES, apply_homoglyphs, load_all_langs, load_homoglyphs, load_hud_glyphs  # noqa: E402
 from msbt import TOKEN_RE  # noqa: E402
@@ -103,14 +104,26 @@ class Budget:
     tag_shapes: set[tuple[str, str, str]] = field(default_factory=set)
 
 
+def patched_font_letters() -> dict[int, int]:
+    """Letters the active variant leaves for the patched system font -> the glyph whose width they take.
+
+    Empty for the default variants. With `GLYPHS=real` these are the code points
+    tools/sysfont_glyphs.py adds to the font, so the checks count them as drawable.
+    """
+    table = load_homoglyphs()
+    return {code: donor for code, donor in sysfont_glyphs.DONORS.items() if table.get(chr(code)) == chr(code)}
+
+
 def load_charset() -> set[int]:
     text = (ROOT / "assets" / "font_charset.txt").read_text(encoding="utf-8")
-    return {int(line.split("\t")[0][2:], 16) for line in text.splitlines() if line.startswith("U+")}
+    codes = {int(line.split("\t")[0][2:], 16) for line in text.splitlines() if line.startswith("U+")}
+    return codes | set(patched_font_letters())
 
 
 def load_widths() -> dict[int, int]:
     data = json.loads((ROOT / "assets" / "font_widths.json").read_text(encoding="utf-8"))
-    return {int(code, 16): width for code, width in data.items()}
+    widths = {int(code, 16): width for code, width in data.items()}
+    return widths | {code: widths[donor] for code, donor in patched_font_letters().items()}
 
 
 def hud_charset(cfg: dict) -> set[int]:

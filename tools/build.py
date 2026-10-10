@@ -41,6 +41,7 @@ from __future__ import annotations
 import argparse
 import base64
 import json
+import os
 import shutil
 import sys
 from pathlib import Path
@@ -548,12 +549,19 @@ TITLES = {
 
 
 def load_homoglyphs() -> dict[str, str]:
+    """The active substitution table: the JSON's `default`, or the variant `UA_GLYPHS` names.
+
+    The environment carries the choice for the same reason it carries the slot (see
+    tools/variant.py): one build is several processes. A variant overrides `also_missing`,
+    which is how `real` keeps the modifier apostrophe the patched font has.
+    """
     data = json.loads((ROOT / "src" / "homoglyphs.json").read_text(encoding="utf-8"))
-    table = dict(data["variants"][data["default"]])
+    name = os.environ.get("UA_GLYPHS") or data["default"]
+    if name not in data["variants"]:
+        raise SystemExit(f"UA_GLYPHS={name!r}: no such variant, pick one of {', '.join(data['variants'])}")
+    table = {key: value for key, value in data.get("also_missing", {}).items() if key != "_comment"}
+    table |= data["variants"][name]
     table.pop("_comment", None)
-    for key, value in data.get("also_missing", {}).items():
-        if key != "_comment":
-            table[key] = value
     return table
 
 
