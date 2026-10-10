@@ -220,7 +220,8 @@ Infinitive forms: `Запустити`, `Видалити`, `Скопіюват�
   `удалить` → `видалити`, `включить` → `увімкнути`, `подключение` → `зв'язок` (object) / `під'єднання` (action),
   `сохранить` → `зберегти`, `текущий` → `поточний`, `следующий` → `наступний`,
   `коснитесь` → `торкніться`, `выберите` → `виберіть`;
-- the apostrophe is ASCII `'` (U+02BC is not in the font).
+- the apostrophe is ASCII `'` (U+02BC is not in the font). A `GLYPHS=real` build prints it
+  between letters as `ʼ` by itself.
 
 ## Technical constraints
 

@@ -42,6 +42,7 @@ import argparse
 import base64
 import json
 import os
+import re
 import shutil
 import sys
 from pathlib import Path
@@ -565,8 +566,29 @@ def load_homoglyphs() -> dict[str, str]:
     return table
 
 
+# An ASCII apostrophe between two letters is the Ukrainian one (об'єкт, п'ять). The sources
+# keep ASCII, because the stock font has no U+02BC; a variant that keeps U+02BC - `real`,
+# for a font that has it - prints the proper letter there and leaves every other ' alone.
+WORD_APOSTROPHE = re.compile(r"(?<=[^\W\d_])'(?=[^\W\d_])")
+
+
 def apply_homoglyphs(text: str, table: dict[str, str]) -> str:
-    return text.translate(str.maketrans(table))
+    text = text.translate(str.maketrans(table))
+    if table.get("ʼ") == "ʼ":
+        text = WORD_APOSTROPHE.sub("ʼ", text)
+    return text
+
+
+def ua_text(entry: dict, table: dict[str, str]) -> str:
+    """An entry's Ukrainian: `ua_real` where it exists and the font has the real letters.
+
+    For the few strings that differ by more than a substitution - the keyboard's alphabet
+    page gains a `ґ` key in a `real` build, and in the default build that key would only
+    type a second `г`.
+    """
+    if entry.get("ua_real") and table.get("ґ") == "ґ":
+        return entry["ua_real"]
+    return entry.get("ua", "")
 
 
 def load_all_langs(strings_dir: Path, slot: str | None = None) -> dict[str, dict[str, str]]:
@@ -1310,7 +1332,7 @@ def build_title(name: str, table: dict[str, str]) -> list[str]:
             entry = entries.get(label)
             if not entry or not entry.get("ua"):
                 continue
-            msbt.texts[index] = apply_homoglyphs(entry["ua"], table)
+            msbt.texts[index] = apply_homoglyphs(ua_text(entry, table), table)
             translated += 1
 
         for label, text in all_langs.get(key, {}).items():

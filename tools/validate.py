@@ -48,7 +48,7 @@ sys.path.insert(0, str(Path(__file__).parent))
 import bcfnt  # noqa: E402
 import sysfont_glyphs  # noqa: E402
 import variant  # noqa: E402
-from build import TITLES, apply_homoglyphs, load_all_langs, load_homoglyphs, load_hud_glyphs  # noqa: E402
+from build import TITLES, apply_homoglyphs, load_all_langs, load_homoglyphs, load_hud_glyphs, ua_text  # noqa: E402
 from msbt import TOKEN_RE  # noqa: E402
 from msbt import parse as msbt_parse  # noqa: E402
 from store import open_store  # noqa: E402
@@ -226,7 +226,7 @@ def check_entry(
     budget: Budget,
     hud: set[int] | None = None,
 ) -> list[str]:
-    ua = entry.get("ua", "")
+    ua = ua_text(entry, table)
     if not ua:
         return []
 

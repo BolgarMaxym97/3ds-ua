@@ -99,7 +99,14 @@ Ukrainian needs it constantly (`об'єкт`, `п'ять`) and this layout had n
 
 In the opt-in `GLYPHS=real` build the same keys type the real `і ї є` (see
 [Real Ukrainian letters in the system font](#real-ukrainian-letters-in-the-system-font-opt-in)).
-There a `ґ` key would make sense too; where it should go is still open.
+There `ґ` gets a key of its own on the alphabet page (`euro_keytop_05`, upper case
+`euro_keytop_05_c`), right after `г` as in the alphabet. The other pages of that keyboard
+carry 36 keys, the Russian set here used 33, so nothing is pushed out; the ЙЦУКЕН page has no free key, and on a
+Windows Ukrainian layout `ґ` is an extra key too. The default build keeps the page as it
+is - there the key would type a second `г` - so the `real` spelling lives in a `ua_real`
+field next to `ua`, which `tools/build.py` and `tools/validate.py` pick in a `real` build.
+The same build prints the apostrophe between two letters as `ʼ` (U+02BC); the sources keep
+ASCII `'`, which is what the default font can draw.
 
 In the dictionary language list, the `Русский` entry is labelled `українс.` — it is the
 same entry that switches the keyboard to Cyrillic.
