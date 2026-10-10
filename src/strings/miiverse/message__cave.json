@@ -177,7 +177,7 @@
   },
   "lau_dlg_cup_error": {
     "en": "The Game Card could\nnot be read.{t:1.1:1400}\n                    {/t:1.1}\nPlease remove and reinsert\nthe Game Card.",
-    "ua": "Не вдалося зчитати дані\nз ігрової карти.{t:1.1:1400}\n                    {/t:1.1}\nВийміть ігрову карту\nі вставте її знову."
+    "ua": "Не вдалося зчитати дані\nз картриджа.{t:1.1:1400}\n                    {/t:1.1}\nВийміть картридж\nі вставте його знову."
   },
   "lau_dlg_no_sd": {
     "en": "The SD Card has\nbeen removed.\n{t:1.1:5500}{t:0.3:3c3c3cff}Please turn off the power\nbefore removing SD Cards.{t:0.3:000000ff}{/t:1.1}",

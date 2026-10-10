@@ -61,7 +61,7 @@
   },
   "lau_dlg_cup_error": {
     "en": "The Game Card could\nnot be read.{t:1.0:1400}\n                    {/t:1.0}\nPlease remove and re-insert\nthe Game Card.",
-    "ua": "Не вдалося прочитати\nігрову картку.{t:1.0:1400}\n                    {/t:1.0}\nВийміть і вставте\nігрову картку знову."
+    "ua": "Не вдалося прочитати\nкартридж.{t:1.0:1400}\n                    {/t:1.0}\nВийміть і вставте\nкартридж знову."
   },
   "lau_dlg_no_sd": {
     "en": "",

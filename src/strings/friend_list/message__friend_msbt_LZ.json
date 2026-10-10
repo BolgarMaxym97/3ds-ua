@@ -153,11 +153,11 @@
   },
   "fri_dlg_joinerr0": {
     "en": "Either no Game Card is\ninserted or write-protection\nis enabled on the SD Card.",
-    "ua": "Не вставлено гральну\nкарту або карту SD\nзахищено від запису."
+    "ua": "Немає картриджа,\nабо карту SD\nзахищено від запису."
   },
   "fri_dlg_joinerr1": {
     "en": "Could not access the\nGame Card or SD Card.",
-    "ua": "Немає доступу до гральної\nкарти або карти SD."
+    "ua": "Картридж або карта SD\nнедоступні."
   },
   "fri_dlg_joinerr2": {
     "en": "No software management\ninformation for this title found\non the HOME Menu.{t:1.0:1400}\n                    {/t:1.0}\nReturning to the HOME Menu.",
@@ -233,7 +233,7 @@
   },
   "lau_dlg_cup_error": {
     "en": "The Game Card could not\nbe read.{t:1.0:1400}\n                    {/t:1.0}\nPlease remove and re-insert\nthe Game Card.",
-    "ua": "Не вдалося прочитати дані\nз гральної карти.{t:1.0:1400}\n                    {/t:1.0}\nВийміть гральну карту\nй вставте її знову."
+    "ua": "Не вдалося прочитати дані\nз картриджа.{t:1.0:1400}\n                    {/t:1.0}\nВийміть картридж\nй вставте його знову."
   },
   "lau_dlg_ng_sd1": {
     "en": "Could not access SD Card.",

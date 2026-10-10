@@ -25,6 +25,7 @@ than the widest official localisation of that string.
 | Загрузочные игры / Download Play | Гра по завантаженню |
 | Обмен данными / Data Transfer | Перенесення даних |
 | Карта SD / SD Card | Карта SD |
+| Игровая карта / Game Card | картридж (never «гральна карта», which means a playing card) |
 | Архив данных / Data Management | Керування даними |
 | Режим ожидания / Sleep Mode | Режим сну |
 | жетон / badge | жетон |

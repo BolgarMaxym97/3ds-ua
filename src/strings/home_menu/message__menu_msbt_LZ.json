@@ -117,15 +117,15 @@
   },
   "lau_dlg_alart": {
     "en": "Do not remove the Game Card\nwhile a card-based title is \nsuspended.",
-    "ua": "Не виймайте гральну\nкарту, коли гру на карті\nпризупинено."
+    "ua": "Не виймайте картридж,\nколи гру з картриджа\nпризупинено."
   },
   "lau_dlg_card_error": {
     "en": "The Game Card could\nnot be read.{t:1.0:1400}\n                    {/t:1.0}\nPlease remove and re-insert\nthe Game Card.",
-    "ua": "Не вдалося прочитати дані\nз гральної карти.{t:1.0:1400}\n                    {/t:1.0}\nВийміть гральну карту\nі вставте її знову."
+    "ua": "Не вдалося прочитати дані\nз картриджа.{t:1.0:1400}\n                    {/t:1.0}\nВийміть картридж\nі вставте його знову."
   },
   "lau_dlg_cup_error": {
     "en": "This Game Card\ncannot be used.",
-    "ua": "Цю гральну карту\nне можна використати."
+    "ua": "Цей картридж\nне можна використати."
   },
   "lau_dlg_2b_canc0": {
     "en": " Cancel",
@@ -493,7 +493,7 @@
   },
   "lau_no_gamecard": {
     "en": "There is nothing inserted into\nthe Game Card slot.",
-    "ua": "Гральну карту не вставлено."
+    "ua": "Картридж не вставлено."
   },
   "lau_title_memo_u": {
     "en": "Game Notes",
