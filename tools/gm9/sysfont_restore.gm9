@@ -1,0 +1,21 @@
+# 3ds-ua, opt-in: step 3 - the way back. Reinstalls the stock system font from the backup.
+#
+# Run it before removing custom firmware, after a bad install, or whenever you want the
+# stock font back. WRITES TO SYSNAND. If the backup is gone, restore your NAND backup instead.
+
+set DIR "0:/gm9/3ds-ua/sysfont"
+set ERRORMSG "No backup: gm9/3ds-ua/sysfont/stock_legit.cia.\nRestore your NAND backup instead."
+find $[DIR]/stock_legit.cia NULL
+
+set ERRORMSG "The backup failed verification.\nRestore your NAND backup instead."
+verify $[DIR]/stock_legit.cia
+
+set ERRORMSG "Restore cancelled. Nothing was changed."
+ask "3ds-ua: restore the stock system font\n(title 0004009B00014002) from\ngm9/3ds-ua/sysfont/stock_legit.cia?\n \nThis writes to SysNAND."
+
+set ERRORMSG "Restore FAILED.\nRestore your NAND backup."
+install $[DIR]/stock_legit.cia
+
+echo "The stock system font is back."
+ask "Reboot now?"
+reboot

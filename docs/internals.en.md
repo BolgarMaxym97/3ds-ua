@@ -289,7 +289,8 @@ with the right widths, next to the stock ones. Nothing has been tested on a cons
 LayeredFS cannot deliver it. The font is opened by NS (`0004013000008002`), a system module,
 at boot; Luma's LayeredFS is patched only into applications and applets and redirects only
 their own `rom:` mounts (`sysmodules/loader/source/patcher.c`, `patchLayeredFs`). So the font
-needs one of two routes, and **neither is part of this project**:
+needs one of the routes below. The project ships the tooling for the first one, as an opt-in
+that nobody gets by installing a release:
 
 | Route | Persistent | Writes NAND | Risk | Undo |
 |---|---|---|---|---|
@@ -300,13 +301,31 @@ needs one of two routes, and **neither is part of this project**:
 The first route is the one the community uses for custom system fonts. The steps, for anyone
 who accepts the risk:
 
-1. A full NAND backup in GodMode9, kept off the SD card.
-2. GodMode9 builds the stock CIA from the installed title (`buildcia` on
-   `1:/title/0004009b/00014002/content/*.tmd`) - this is also the way back.
-3. On the computer, rebuild that CIA's romfs with `dist_sysfont/cbf_std.bcfnt.lz` (3dstool
-   and makerom do this; the romfs hash tree must be rebuilt, GodMode9 cannot edit a mounted
-   NCCH in place).
-4. GodMode9 installs the patched CIA. Luma's signature patches let the console accept it.
+1. A full NAND backup in GodMode9, kept off the SD card. Check that GodMode9 opens when you
+   hold START at power-on.
+2. `make sysfont` also puts three GodMode9 scripts into `dist_sysfont/sd/gm9/scripts/`. Copy
+   them to the SD card's `gm9/scripts/` and run **sysfont_backup** (HOME → Scripts). It
+   changes nothing on the console: it builds two CIAs of the installed title into
+   `gm9/3ds-ua/sysfont/` - `stock_legit.cia`, signed and untouched, the way back, and
+   `stock_standard.cia`, decrypted, for the computer.
+3. On the computer: `make sysfont-cia STOCK=<path>/stock_standard.cia`.
+   `tools/sysfont_cia.py` swaps `cbf_std.bcfnt.lz` in that CIA: it rebuilds the RomFS with its
+   IVFC hash tree, the NCCH header's RomFS size and superblock hash, and the TMD's content size
+   and hashes, and keeps the certificates, the ticket, the title id and the version. It checks
+   its own output (`python3 tools/sysfont_cia.py check <cia>`) and writes a `.sha` next to it.
+   Copy `dist_sysfont/sd/gm9/3ds-ua/sysfont/` back onto the SD card.
+4. Run **sysfont_install**. It stops unless the backup exists, the CIA matches its `.sha` and
+   passes GodMode9's `verify`, and asks twice before it writes. Luma's signature patches let
+   the console load the title.
+5. The way back is **sysfont_restore**: it reinstalls `stock_legit.cia`. Run it before
+   removing custom firmware.
+
+What was tested, and what was not: `sysfont_cia.py` was run on a stand-in for the stock CIA
+(the title's real TMD from an Azahar NAND, the RomFS from a GodMode9 dump, a synthesised NCCH
+header); its output passes its own check and the independent reader in `tools/cia.py`, and
+its content, put in place of the font title in Azahar's NAND, is what the HOME Menu and
+System Settings drew the new letters from. The GodMode9 scripts have not been run - that
+needs a console.
 
 Risks to weigh:
 

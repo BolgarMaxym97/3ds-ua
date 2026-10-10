@@ -22,7 +22,7 @@ MODEL := old3ds
 GLYPHS :=
 export UA_GLYPHS := $(GLYPHS)
 
-.PHONY: help extract extract-manuals font hud-font sysfont validate build build-ru build-en \
+.PHONY: help extract extract-manuals font hud-font sysfont sysfont-cia validate build build-ru build-en \
 	manuals manuals-ru manuals-en all package package-ru package-en unistore unistore-check unistore-verify unistore-icon udb \
 	clean sd
 
@@ -40,6 +40,11 @@ hud-font: ## re-render the added HUD glyphs -> assets/hud_glyphs.json (needs Pil
 
 sysfont: ## opt-in: add і ї є ґ ʼ to the system font -> dist_sysfont/ (needs Pillow + fontTools)
 	$(PY) tools/sysfont_glyphs.py --report --png dist_sysfont/glyphs.png
+	mkdir -p dist_sysfont/sd/gm9/scripts && cp tools/gm9/sysfont_*.gm9 dist_sysfont/sd/gm9/scripts/
+
+sysfont-cia: ## opt-in: STOCK=<stock_standard.cia> -> the patched font title for GodMode9, in dist_sysfont/sd/
+	@test -n "$(STOCK)" || { echo "pass STOCK=<stock_standard.cia written by sysfont_backup.gm9>"; exit 1; }
+	$(PY) tools/sysfont_cia.py build "$(STOCK)" --out dist_sysfont/sd/gm9/3ds-ua/sysfont/sysfont_patched.cia
 
 validate: ## check translations (glyphs, width, line count, tags) - covers both slots at once
 	$(PY) tools/validate.py
