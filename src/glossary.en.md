@@ -52,7 +52,9 @@ and touch-screen calibration) are **Назад** / **Повтор**, because «�
 **Система** — a narrow slot, where French and Italian also settle for plain "Console"; `Reset
 blocked-user settings` is **Скинути список блокованих**; `ON` / `OFF` in the HOME Menu settings
 are **Увімкнено** / **Вимкнено** (one pane, two states, so the slot holds the 122px
-"Desligado").
+"Desligado"); `Touch Screen` in Other Settings (`touch`) is **Сенсорний екран**:
+«Сенсорний дисплей» (249px) wraps its last letter (seen in Azahar), and the button holds at
+least 234px.
 
 ## Friend List
 

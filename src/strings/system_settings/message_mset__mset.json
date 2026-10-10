@@ -225,7 +225,7 @@
   },
   "touch": {
     "en": "Touch Screen",
-    "ua": "Сенсорний дисплей"
+    "ua": "Сенсорний екран"
   },
   "page2": {
     "en": "",
@@ -501,11 +501,11 @@
   },
   "touch_title": {
     "en": "Touch Screen",
-    "ua": "Сенсорний дисплей"
+    "ua": "Сенсорний екран"
   },
   "touch_comm_u": {
     "en": "Calibrate Touch Screen input.\n\nTouch the centre of  with the stylus.",
-    "ua": "Калібрування сенсорного дисплея.\n\nТоркніться стилусом центру ."
+    "ua": "Калібрування сенсорного екрана.\n\nТоркніться стилусом центру ."
   },
   "touch_cancel": {
     "en": "Press the B Button\nto cancel.",
@@ -517,7 +517,7 @@
   },
   "dlg_touch_set": {
     "en": "The Touch Screen has been\ncalibrated.",
-    "ua": "Сенсорний дисплей\nвідкалібровано."
+    "ua": "Сенсорний екран\nвідкалібровано."
   },
   "3d_set_": {
     "en": "",
