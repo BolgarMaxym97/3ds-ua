@@ -41,7 +41,7 @@ import argparse
 import json
 import re
 import sys
-from dataclasses import dataclass, field
+from dataclasses import dataclass, field, replace
 from pathlib import Path
 
 sys.path.insert(0, str(Path(__file__).parent))
@@ -201,7 +201,47 @@ def label_budgets(name: str, widths: dict[int, int]) -> dict[str, Budget]:
         for label in group:
             budgets[label] = shared
 
+    # A width measured on the console beats the widest localisation when that one overflows
+    # the slot itself - see `budget_px` in TITLES and outliers() below.
+    for label, px in cfg.get("budget_px", {}).items():
+        if label in budgets:
+            budgets[label] = replace(budgets[label], width_px=px)
+
     return budgets
+
+
+def outliers(name: str, table: dict[str, str], widths: dict[int, int], ratio: float = 1.2) -> list[str]:
+    """Single-line labels whose budget rests on one localisation far wider than the next.
+
+    The widest official text is only a safe budget if it fits its slot, and sometimes it does
+    not: the Russian «Сенсорный дисплей» wraps in its own button. Such a label is flagged when
+    its top localisation is `ratio` times the runner-up and the Ukrainian line is wider than
+    the runner-up - worth a look on the console, and a `budget_px` entry if it wraps. A report,
+    not an error: most of these slots are wide dialogs with room to spare.
+    """
+    cfg = TITLES[name]
+    store = open_store(cfg, ROOT / "work" / cfg["source_tid"] / "romfs")
+    official: dict[str, dict[str, float]] = {}
+    for lang in store.languages():
+        for data in store.read(lang).values():
+            msbt = msbt_parse(data)
+            for index, text in enumerate(msbt.texts):
+                if "\n" not in text:
+                    label = msbt.label_of(index) or f"__index_{index}"
+                    official.setdefault(label, {})[lang] = max(line_widths(text, widths))
+    entries: dict[str, dict] = {}
+    for path in (ROOT / "src" / "strings" / name).glob("*.json"):
+        entries |= {k: v for k, v in json.loads(path.read_text(encoding="utf-8")).items() if isinstance(v, dict)}
+    found = []
+    for label, per_lang in official.items():
+        ua = entries.get(label, {}).get("ua", "")
+        if not ua or "\n" in ua or len(per_lang) < 3 or label in cfg.get("budget_px", {}):
+            continue
+        (top_lang, top), (_, second) = sorted(per_lang.items(), key=lambda kv: -kv[1])[:2]
+        mine = max(line_widths(apply_homoglyphs(ua, table), widths))
+        if second and top / second >= ratio and mine > second * 1.02:
+            found.append(f"{label}: ua {mine:.0f}px, budget {top:.0f}px from {top_lang}, next {second:.0f}px")
+    return found
 
 
 def check_entry(
@@ -704,12 +744,19 @@ def validate_nnid_pages(
 def main() -> int:
     ap = argparse.ArgumentParser()
     ap.add_argument("titles", nargs="*", default=None)
+    ap.add_argument("--outliers", action="store_true", help="list budgets that rest on one oversized localisation")
     args = ap.parse_args()
 
     charset = load_charset()
     table = load_homoglyphs()
     widths = load_widths()
     failed = False
+
+    if args.outliers:
+        for name in args.titles or list(TITLES):
+            for line in outliers(name, table, widths):
+                print(f"{name}: {line}")
+        return 0
 
     for name in args.titles or list(TITLES):
         total, translated, problems = validate(name, charset, table, widths)

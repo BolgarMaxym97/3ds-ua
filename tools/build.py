@@ -229,6 +229,11 @@ TITLES = {
             r"(?:dat|parental|st_net|st_trans|start)\w*_title_u",
             r"st_btn_\w+",
         ],
+        # Slots measured on screen, for labels whose widest official text overflows the slot
+        # itself and so cannot be the budget (validate.py --outliers lists the candidates).
+        # Other Settings' Touch Screen button wraps the Russian «Сенсорный дисплей» (252 px)
+        # too: «Сенсорний диспле» (234 px) still fit on one line, the full 249 px did not.
+        "budget_px": {"touch": 234},
         "hud_font": "font/Hud_JP.bcfnt",
         # `hook_patch` here ships only a code.ips, and not to make LayeredFS work - Luma
         # hooks this title unaided. It points the `area:` mount at the SD card so the
