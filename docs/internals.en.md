@@ -97,6 +97,17 @@ There is deliberately no `ґ` key: in this mod `ґ` renders as `г` anyway, so s
 would produce something indistinguishable from `г`. The apostrophe is more useful —
 Ukrainian needs it constantly (`об'єкт`, `п'ять`) and this layout had none at all.
 
+In the opt-in `GLYPHS=real` build the same keys type the real `і ї є` (see
+[Real Ukrainian letters in the system font](#real-ukrainian-letters-in-the-system-font-opt-in)).
+There `ґ` gets a key of its own on the alphabet page (`euro_keytop_05`, upper case
+`euro_keytop_05_c`), right after `г` as in the alphabet. The other pages of that keyboard
+carry 36 keys, the Russian set here used 33, so nothing is pushed out; the ЙЦУКЕН page has no free key, and on a
+Windows Ukrainian layout `ґ` is an extra key too. The default build keeps the page as it
+is - there the key would type a second `г` - so the `real` spelling lives in a `ua_real`
+field next to `ua`, which `tools/build.py` and `tools/validate.py` pick in a `real` build.
+The same build prints the apostrophe between two letters as `ʼ` (U+02BC); the sources keep
+ASCII `'`, which is what the default font can draw.
+
 In the dictionary language list, the `Русский` entry is labelled `українс.` — it is the
 same entry that switches the keyboard to Cyrillic.
 
@@ -211,6 +222,123 @@ mounted yet at that point. `rom:` always is, being the title's own.
 
 Nothing falls back behind this patch: the real romfs has no `font/` directory, so an applet
 whose font stopped shipping would crash the same way. `build_hud_font()` is what prevents it.
+
+## Real Ukrainian letters in the system font (opt-in)
+
+Everything above keeps the console's own files untouched, and that is why the mod shows
+`i ï ε г` for `і ї є ґ`: the shared system font has no Ukrainian letters. This section is
+the one exception, and it is **opt-in** - the releases do not use it, and nothing changes
+unless you build with `GLYPHS=real` and put a patched font on the console yourself.
+
+**What it adds.** Nine code points: `і І ї Ї є Є ґ Ґ` and the modifier apostrophe `ʼ`
+(U+02BC). Each one is made from a letter the font already has, so it is drawn by the same
+hand:
+
+| New | From | How |
+|---|---|---|
+| `і І ї Ї ʼ` | `i I ï Ï ’` | the cell copied as it is - same shape, same pixels, same widths. `ʼ` and `’` are one outline in Nintendo's TTF |
+| `є Є` | `э Э` | the cell mirrored left to right; the two side bearings swap places |
+| `ґ Ґ` | `г Г` | an upturn on the right end of the top bar, as thick as the letter's own stem |
+
+The upturn's height is the median of seven common sans fonts (Arial, Segoe UI, Tahoma,
+Verdana, Calibri and two bold cuts): 0.26 of the x-height above `ґ`, 0.22 of the cap height
+above `Ґ`. Its pixels come from the TTF the bitmaps were rasterised from
+(`nintendo_NTLG-DB_001`, the same file the top-bar font uses): the outline of `г`/`Г` gets the
+stem, and it is rasterised with parameters **fitted** to redraw eleven straight-stemmed
+letters of the font - `Г г П п Н н Т т Ш ш I`. The fit lands on a 24 px em, the stored
+baseline and gamma 1.1, and redraws those letters with an error of 0.05 levels per pixel (out
+of 15). Only what the new outline adds over `г`/`Г` is taken from the rasteriser; everything
+the two letters share keeps Nintendo's own pixels.
+
+**The font itself.** `cbf_std.bcfnt` is A4 - 4-bit alpha, 24x30 cells, 1501 sheets of
+128x32 with five cells each, 7501 code points. `tools/bcfnt.py` reads and writes A4 as well
+as LA4 now and still rebuilds both fonts byte for byte (`python3 tools/bcfnt.py <font>`
+checks it). The font had four free cells and needs nine, so it gets one more 2 KiB sheet.
+The system loads the font into a 0x332000-byte shared-memory block behind a 0x80-byte
+header, so the limit is 3,350,400 bytes unpacked; the patched font is 3,126,692 (stock
+3,124,592), and 1,446,030 packed (stock 1,445,691).
+
+**Building.**
+
+```bash
+make sysfont                     # -> dist_sysfont/cbf_std.bcfnt.lz + glyphs.png
+make validate build GLYPHS=real  # text with the real letters, checked against the patched font
+```
+
+`make sysfont` needs Pillow and fontTools and two of your own dumps:
+`work/0004009B00014002/cbf_std.bcfnt.lz` (see [dumping](dumping.en.md), step 4) and
+`work/0004003000009D02/romfs/font/nintendo.ttf` (the Internet Browser's romfs). Neither
+file, nor anything drawn from them, is committed. `GLYPHS=real` picks the `real` variant of
+`src/homoglyphs.json`, which leaves `і ї є ґ ʼ` as they are; `make validate` then counts them
+as drawable with the widths of their donors. One width differs from the default build: `Є` is
+1 px wider than the Greek `Ε` it replaces, which touches 19 strings - run `make validate
+GLYPHS=real` before shipping such a build. The keyboard needs no change: its keys pass
+through the same table, so in a `real` build the `і ї є` keys type the real letters.
+
+**Do not install a `real` build without the font.** Every `і ї є ґ` then draws as nothing.
+
+### How it was tested
+
+In Azahar, whose shared-font loader goes through LayeredFS: the patched file in
+`load/mods/0004009B00014002/romfs/cbf_std.bcfnt.lz` is all it takes. The HOME Menu and System
+Settings were booted with the text rebuilt with real letters: they draw all nine new glyphs,
+with the right widths, next to the stock ones. Nothing has been tested on a console yet.
+
+### How it can reach a console
+
+LayeredFS cannot deliver it. The font is opened by NS (`0004013000008002`), a system module,
+at boot; Luma's LayeredFS is patched only into applications and applets and redirects only
+their own `rom:` mounts (`sysmodules/loader/source/patcher.c`, `patchLayeredFs`). So the font
+needs one of the routes below. The project ships the tooling for the first one, as an opt-in
+that nobody gets by installing a release:
+
+| Route | Persistent | Writes NAND | Risk | Undo |
+|---|---|---|---|---|
+| Reinstall title `0004009B00014002` as a CIA built from your own dump, with the patched `cbf_std.bcfnt.lz` in its romfs, via GodMode9 | yes | yes | medium: a broken font stops the HOME Menu from starting | GodMode9 at boot (hold START), install the stock CIA, or restore the NAND backup |
+| A code patch for NS (`luma/sysmodules/0004013000008002.ips` plus an `exheader.bin` granting SD access) that reads the font from the SD card | yes | no | medium: an NS crash is a black screen | delete the files, or turn off "Load external FIRMs and modules" in the Luma menu |
+| Overwrite the live font block at runtime (as the old SharedFontTool did through GSPWN) | no | no | low | reboot |
+
+The first route is the one the community uses for custom system fonts. The steps, for anyone
+who accepts the risk:
+
+1. A full NAND backup in GodMode9, kept off the SD card. Check that GodMode9 opens when you
+   hold START at power-on.
+2. `make sysfont` also puts three GodMode9 scripts into `dist_sysfont/sd/gm9/scripts/`. Copy
+   them to the SD card's `gm9/scripts/` and run **sysfont_backup** (HOME → Scripts). It
+   changes nothing on the console: it builds two CIAs of the installed title into
+   `gm9/3ds-ua/sysfont/` - `stock_legit.cia`, signed and untouched, the way back, and
+   `stock_standard.cia`, decrypted, for the computer.
+3. On the computer: `make sysfont-cia STOCK=<path>/stock_standard.cia`.
+   `tools/sysfont_cia.py` swaps `cbf_std.bcfnt.lz` in that CIA: it rebuilds the RomFS with its
+   IVFC hash tree, the NCCH header's RomFS size and superblock hash, and the TMD's content size
+   and hashes, and keeps the certificates, the ticket, the title id and the version. It checks
+   its own output (`python3 tools/sysfont_cia.py check <cia>`) and writes a `.sha` next to it.
+   Copy `dist_sysfont/sd/gm9/3ds-ua/sysfont/` back onto the SD card.
+4. Run **sysfont_install**. It stops unless the backup exists, the CIA matches its `.sha` and
+   passes GodMode9's `verify`, and asks twice before it writes. Luma's signature patches let
+   the console load the title.
+5. The way back is **sysfont_restore**: it reinstalls `stock_legit.cia`. Run it before
+   removing custom firmware.
+
+What was tested, and what was not: `sysfont_cia.py` was run on a stand-in for the stock CIA
+(the title's real TMD from an Azahar NAND, the RomFS from a GodMode9 dump, a synthesised NCCH
+header); its output passes its own check and the independent reader in `tools/cia.py`, and
+its content, put in place of the font title in Azahar's NAND, is what the HOME Menu and
+System Settings drew the new letters from. The GodMode9 scripts have not been run - that
+needs a console.
+
+Risks to weigh:
+
+- **CFW becomes load-bearing.** A modified, re-signed system title only loads with Luma's
+  patches. Removing custom firmware with the patched font still installed can leave the
+  console unable to reach the HOME Menu. Restore the stock title first.
+- **A bad font is a non-booting HOME Menu.** Check that GodMode9 starts with START at power-on
+  before installing anything.
+- **Text typed with real letters leaves the console.** A Mii name, a Friend List message or
+  a StreetPass greeting with `і ї є ґ` shows as blanks on every console without the font.
+- **System updates** may reinstall the stock title. Reinstall the patched one after updating.
+- Only `0004009B00014002` (JPN/EUR/USA) is covered; CHN, KOR and TWN consoles use their own
+  font titles.
 
 ## What is in the release
 
@@ -1105,9 +1233,9 @@ Two titles carry a second copy of their SMDH inside their own `romfs`, and **Lay
 
 Only the slot this build replaces is touched (index 10 for `from-ru`, 1 for `from-en`) — its short and long description, 40 and 82 bytes respectively. The icon bitmaps and the other 15 languages stay byte-for-byte identical: see `tools/smdh.py` and `build_smdh()`. The eShop and Face Raiders copies exist too, but their names are already in Latin script.
 
-**The system font.** It has no Ukrainian letters, and LayeredFS cannot replace it: it lives in a separate system title the mod does not touch.
+**The system font.** It has no Ukrainian letters, and LayeredFS cannot replace it: it lives in a separate system title the mod does not touch. An opt-in way around it, at the price of modifying NAND, is described in [Real Ukrainian letters in the system font](#real-ukrainian-letters-in-the-system-font-opt-in).
 
-**Real Ukrainian letters from the keyboard.** The layout is Ukrainian (see [The Ukrainian keyboard layout](#the-ukrainian-keyboard-layout)), but the `і ї є` keys type `i ï ε` — the same substitute glyphs the rest of the mod uses. On the console that reads correctly and consistently; outside it — in a Mii name, a folder name, a post — it is Latin and Greek, not Ukrainian text. There is no way around it: real letters need a different font, which means modifying NAND.
+**Real Ukrainian letters from the keyboard.** The layout is Ukrainian (see [The Ukrainian keyboard layout](#the-ukrainian-keyboard-layout)), but the `і ї є` keys type `i ï ε` — the same substitute glyphs the rest of the mod uses. On the console that reads correctly and consistently; outside it — in a Mii name, a folder name, a post — it is Latin and Greek, not Ukrainian text. There is no way around it: real letters need a different font, which means modifying NAND. The opt-in `GLYPHS=real` build types the real letters, for consoles that carry the patched font.
 
 **The text inside electronic manuals.** The Instruction Manual application itself is translated — `Back`, `Enlarge`, `Language`, `Page`, `Contents`, the language dialog. The documents it displays can be translated too now, but one at a time, and each has to be dumped off the console first. Twelve are translated in full - Internet Browser, System Settings, Activity Log, Download Play, Camera, Sound, Mii Maker, StreetPass Mii Plaza, Nintendo eShop, Face Raiders, AR Games and the New 3DS Internet Browser (plus the New 3DS Health and Safety document, which ships in that title's own romfs); every other title shows the console's own manual. The limit here is space: the path table and the SMDH name table share one 1064-byte `.rodata` padding window. Eleven titles used 977 of it — **558** after these changes, and **617** with the twelfth (the New 3DS browser), after two changes that cost nothing:
 
@@ -1205,7 +1333,7 @@ once for both.
 
 Python 3.11+, no dependencies. Tools: LZ11 (de)compressor, MSBT parser/builder with byte-exact round-trip, BCFNT reader/builder (also byte-exact) that can add glyphs to a font, extractor, validator, builder, width fitter, packager.
 
-One tool sits outside the build: `tools/hud_glyphs.py` draws the `Н` and `д` added to the top-bar font and needs Pillow, so its output is committed as `assets/hud_glyphs.json`. Redraw it with `make hud-font`.
+One tool sits outside the build: `tools/hud_glyphs.py` draws the `Н` and `д` added to the top-bar font and needs Pillow, so its output is committed as `assets/hud_glyphs.json`. Redraw it with `make hud-font`. `tools/sysfont_glyphs.py` stands outside it too: it adds the real Ukrainian letters to the system font (`make sysfont`, needs Pillow and fontTools), and its output is never committed, because it is a modified Nintendo file.
 
 ## Contributing translations
 

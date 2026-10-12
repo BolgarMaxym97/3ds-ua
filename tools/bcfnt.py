@@ -1,5 +1,8 @@
 """Read a BCFNT (3DS bitmap font) and add code points to it.
 
+Two fonts go through here. The HUD font (LA4 sheets) is described first; the shared system
+font (A4 sheets) is the second - see `FORMAT_A4` and tools/sysfont_glyphs.py.
+
 The HUD font - the one that draws the clock line on the top screen - is not the shared
 system font. Every applet that shows that line carries its own copy in its romfs, and
 that copy is a subset: 67 code points, whose only Cyrillic letters are the ones the
@@ -42,6 +45,13 @@ BLOCK_HEADER = 8
 # reads as a different, bolder font sitting in the middle of the clock line.
 FORMAT_LA4 = 9
 
+# Sheet pixel format 11 is A4: half a byte per pixel, alpha only, two pixels per byte with
+# the *low* nibble first. The shared system font (cbf_std.bcfnt) uses it: grey anti-aliased
+# glyphs the renderer tints, so a cell row is a row of plain 0-15 alpha values. Its sheets
+# are tiny - 128x32, five cells each - and there are 1501 of them.
+FORMAT_A4 = 11
+FORMATS = (FORMAT_LA4, FORMAT_A4)
+
 # CMAP encodings.
 MAP_DIRECT = 0
 MAP_TABLE = 1
@@ -61,7 +71,11 @@ class Sheets:
     rows: int
     width: int
     height: int
-    planes: list[list[bytearray]]
+    planes: list[list[bytearray]]  # one byte per pixel: the LA4 byte, or the A4 nibble
+
+    @property
+    def sheet_bytes(self) -> int:
+        return self.width * self.height // (2 if self.image_format == FORMAT_A4 else 1)
 
     @property
     def per_sheet(self) -> int:
@@ -202,13 +216,21 @@ def build(font: Font) -> bytes:
     return bytes(out)
 
 
-def add_glyphs(font: Font, glyphs: dict[int, tuple[list[list[tuple[int, int]]], int, int, int]]) -> None:
-    """Append code points: {code point: (rows of (luminance, alpha), left, glyph width, char width)}.
+def add_glyphs(
+    font: Font, glyphs: dict[int, tuple[list[list], int, int, int]], grow: bool = False
+) -> None:
+    """Append code points: {code point: (rows, left, glyph width, char width)}.
 
-    The pixels go into the cells past the last glyph, so the texture keeps its size and
-    the sheet count stays what the FINF-side reader expects.
+    A row holds (luminance, alpha) pairs in an LA4 font and plain alpha values in an A4 one.
+
+    The pixels go into the cells past the last glyph. By default the texture keeps its size,
+    which is what the HUD font needs. `grow` appends blank sheets when the free cells run
+    out - the shared font has four free cells and needs nine; a sheet is only 2 KiB there.
     """
-    free = font.sheets.capacity - len(font.widths)
+    sheets = font.sheets
+    while grow and sheets.capacity - len(font.widths) < len(glyphs):
+        sheets.planes.append([bytearray(sheets.width) for _ in range(sheets.height)])
+    free = sheets.capacity - len(font.widths)
     if len(glyphs) > free:
         raise ValueError(f"{len(glyphs)} glyphs do not fit into {free} free cells")
 
@@ -225,22 +247,28 @@ def cell_size(font: Font) -> tuple[int, int]:
     return font.sheets.cell_width, font.sheets.cell_height
 
 
-def glyph_rows(font: Font, code: int) -> list[list[tuple[int, int]]]:
-    """One glyph's cell as cell_height rows of (luminance, alpha), each 0-15."""
+def glyph_rows(font: Font, code: int) -> list[list]:
+    """One glyph's cell as cell_height rows: (luminance, alpha) pairs for LA4, alpha for A4, 0-15."""
     sheets = font.sheets
     plane, x0, y0 = sheets.cell_origin(font.cmap[code])
+    if sheets.image_format == FORMAT_A4:
+        return [list(plane[y0 + y][x0 : x0 + sheets.cell_width]) for y in range(sheets.cell_height)]
     return [
         [(plane[y0 + y][x0 + x] >> 4, plane[y0 + y][x0 + x] & 0x0F) for x in range(sheets.cell_width)]
         for y in range(sheets.cell_height)
     ]
 
 
-def _draw_cell(sheets: Sheets, index: int, rows: list[list[tuple[int, int]]]) -> None:
+def _draw_cell(sheets: Sheets, index: int, rows: list[list]) -> None:
     if len(rows) != sheets.cell_height or any(len(row) != sheets.cell_width for row in rows):
         raise ValueError(f"glyph must be {sheets.cell_width}x{sheets.cell_height}")
     plane, x0, y0 = sheets.cell_origin(index)
     for y, row in enumerate(rows):
-        for x, (luminance, alpha) in enumerate(row):
+        for x, pixel in enumerate(row):
+            if sheets.image_format == FORMAT_A4:
+                plane[y0 + y][x0 + x] = pixel & 0x0F
+                continue
+            luminance, alpha = pixel
             plane[y0 + y][x0 + x] = ((luminance & 0x0F) << 4) | (alpha & 0x0F) if alpha else 0x00
 
 
@@ -249,13 +277,14 @@ def _parse_tglp(data: bytes, pos: int) -> Sheets:
     sheet_size, count, image_format, columns, rows, width, height, sheet_offset = struct.unpack_from(
         "<IHHHHHHI", data, pos + 4
     )
-    if image_format != FORMAT_LA4:
-        raise ValueError(f"unsupported sheet format {image_format}, only LA4 (9) is handled")
-    if sheet_size != width * height:
-        raise ValueError("sheet size does not match a one-byte-per-pixel format")
+    if image_format not in FORMATS:
+        raise ValueError(f"unsupported sheet format {image_format}, only LA4 (9) and A4 (11) are handled")
+    nibbles = image_format == FORMAT_A4
+    if sheet_size != width * height // (2 if nibbles else 1):
+        raise ValueError(f"sheet size {sheet_size} does not match format {image_format} at {width}x{height}")
 
     planes = [
-        _detile(data[sheet_offset + i * sheet_size : sheet_offset + (i + 1) * sheet_size], width, height)
+        _detile(data[sheet_offset + i * sheet_size : sheet_offset + (i + 1) * sheet_size], width, height, nibbles)
         for i in range(count)
     ]
     return Sheets(
@@ -281,7 +310,7 @@ def _build_tglp(sheets: Sheets, body_offset: int) -> bytes:
         sheets.cell_height,
         sheets.baseline,
         sheets.max_char_width,
-        sheets.width * sheets.height,
+        sheets.sheet_bytes,
         len(sheets.planes),
         sheets.image_format,
         sheets.columns,
@@ -289,7 +318,8 @@ def _build_tglp(sheets: Sheets, body_offset: int) -> bytes:
         sheets.width,
         sheets.height,
     )
-    pixels = b"".join(_tile(plane, sheets.width, sheets.height) for plane in sheets.planes)
+    nibbles = sheets.image_format == FORMAT_A4
+    pixels = b"".join(_tile(plane, sheets.width, sheets.height, nibbles) for plane in sheets.planes)
     header_end = body_offset + len(head) + 4
     data_offset = (header_end + 0x7F) & ~0x7F
     return head + struct.pack("<I", data_offset) + b"\0" * (data_offset - header_end) + pixels
@@ -394,25 +424,61 @@ def _morton(index: int) -> tuple[int, int]:
     return x, y
 
 
-def _detile(data: bytes, width: int, height: int) -> list[bytearray]:
+_MORTON = [_morton(i) for i in range(64)]
+
+
+def _detile(data: bytes, width: int, height: int, nibbles: bool = False) -> list[bytearray]:
+    """8x8 tiles in Morton order; with `nibbles` (A4) two pixels per byte, low nibble first."""
     plane = [bytearray(width) for _ in range(height)]
     at = 0
     for ty in range(0, height, 8):
         for tx in range(0, width, 8):
-            for i in range(64):
-                x, y = _morton(i)
-                plane[ty + y][tx + x] = data[at + i]
-            at += 64
+            for i, (x, y) in enumerate(_MORTON):
+                if nibbles:
+                    value = data[at + i // 2]
+                    plane[ty + y][tx + x] = value >> 4 if i & 1 else value & 0x0F
+                else:
+                    plane[ty + y][tx + x] = data[at + i]
+            at += 32 if nibbles else 64
     return plane
 
 
-def _tile(plane: list[bytearray], width: int, height: int) -> bytes:
-    out = bytearray(width * height)
+def _tile(plane: list[bytearray], width: int, height: int, nibbles: bool = False) -> bytes:
+    out = bytearray(width * height // (2 if nibbles else 1))
     at = 0
     for ty in range(0, height, 8):
         for tx in range(0, width, 8):
-            for i in range(64):
-                x, y = _morton(i)
-                out[at + i] = plane[ty + y][tx + x]
-            at += 64
+            for i, (x, y) in enumerate(_MORTON):
+                if nibbles:
+                    out[at + i // 2] |= (plane[ty + y][tx + x] & 0x0F) << (4 if i & 1 else 0)
+                else:
+                    out[at + i] = plane[ty + y][tx + x]
+            at += 32 if nibbles else 64
     return bytes(out)
+
+
+def main() -> None:
+    """`python3 tools/bcfnt.py <font.bcfnt[.lz]>...`: parse, rebuild, demand the same bytes."""
+    import sys
+    from pathlib import Path
+
+    sys.path.insert(0, str(Path(__file__).parent))
+    from lz11 import decompress
+
+    failed = 0
+    for name in sys.argv[1:]:
+        raw = Path(name).read_bytes()
+        data = decompress(raw) if name.endswith(".lz") else raw
+        font = parse(data)
+        same = build(font) == data
+        failed += not same
+        print(
+            f"{name}: format {font.sheets.image_format}, {len(font.sheets.planes)} sheets, "
+            f"{len(font.widths)} glyphs, {len(font.cmap)} code points - "
+            f"{'round trip OK' if same else 'ROUND TRIP DIFFERS'}"
+        )
+    sys.exit(1 if failed else 0)
+
+
+if __name__ == "__main__":
+    main()

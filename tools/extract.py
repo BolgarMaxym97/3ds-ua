@@ -51,7 +51,9 @@ def extract_title(name: str) -> list[tuple[str, int, int]]:
         for index, text in enumerate(msbt.texts):
             label = msbt.label_of(index) or f"__index_{index}"
             ua = existing.get(label, {}).get("ua", "")
-            entries[label] = {"en": text, "ua": ua}
+            # Variant spellings (`ua_real`, `ua_long`) are translations too.
+            extra = {k: v for k, v in existing.get(label, {}).items() if k.startswith("ua_")}
+            entries[label] = {"en": text, "ua": ua} | extra
             kept += bool(ua)
 
         out_file.write_text(json.dumps(entries, ensure_ascii=False, indent=2) + "\n", encoding="utf-8")

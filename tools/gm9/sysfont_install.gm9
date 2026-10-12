@@ -1,0 +1,33 @@
+# 3ds-ua, opt-in: step 2 of 3 - install the system font with real Ukrainian letters.
+#
+# WRITES TO SYSNAND. Needs Luma3DS (its signature patches let the console load the title)
+# and keeps needing it for as long as the patched font is installed. Before running:
+#   - a full NAND backup, kept off the SD card;
+#   - GodMode9 opens when you hold START at power-on (that is the way back);
+#   - sysfont_backup.gm9 has written gm9/3ds-ua/sysfont/stock_legit.cia.
+# The way back: sysfont_restore.gm9.
+
+set DIR "0:/gm9/3ds-ua/sysfont"
+set ERRORMSG "No backup: run sysfont_backup.gm9 first.\nNothing was installed."
+find $[DIR]/stock_legit.cia NULL
+
+set ERRORMSG "gm9/3ds-ua/sysfont/sysfont_patched.cia\nor its .sha is missing.\nNothing was installed."
+find $[DIR]/sysfont_patched.cia NULL
+find $[DIR]/sysfont_patched.cia.sha NULL
+
+set ERRORMSG "sysfont_patched.cia does not match its .sha\n(a broken copy?). Copy it again.\nNothing was installed."
+sha $[DIR]/sysfont_patched.cia $[DIR]/sysfont_patched.cia.sha
+
+set ERRORMSG "sysfont_patched.cia failed verification.\nNothing was installed."
+verify $[DIR]/sysfont_patched.cia
+
+set ERRORMSG "Install cancelled. Nothing was installed."
+ask "3ds-ua: install the system font with\nreal Ukrainian letters?\n \nThis WRITES TO SYSNAND and needs Luma3DS\nfor as long as it stays installed.\nThe way back: sysfont_restore.gm9"
+ask "Last check:\n- you have a NAND backup off the SD card\n- GodMode9 opens with START at power-on\n \nInstall now?"
+
+set ERRORMSG "Install FAILED.\nRun sysfont_restore.gm9 now."
+install $[DIR]/sysfont_patched.cia
+
+echo "Installed.\nIf the HOME Menu does not start after reboot:\nhold START at power-on -> GodMode9 ->\nScripts -> sysfont_restore."
+ask "Reboot now?"
+reboot

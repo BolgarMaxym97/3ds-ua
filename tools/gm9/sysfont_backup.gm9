@@ -1,0 +1,27 @@
+# 3ds-ua, opt-in: step 1 of 3 - back up the system font title. Changes nothing on the console.
+#
+# Writes two CIAs of the installed title 0004009B00014002 (the JPN/EUR/USA shared font):
+#   gm9/3ds-ua/sysfont/stock_legit.cia     signed, untouched: sysfont_restore.gm9 puts it back
+#   gm9/3ds-ua/sysfont/stock_standard.cia  decrypted: the input of tools/sysfont_cia.py
+# Copy stock_standard.cia to the computer, build sysfont_patched.cia there, copy it back.
+# Read "Real Ukrainian letters in the system font" in docs/internals.en.md first.
+
+set DIR "0:/gm9/3ds-ua/sysfont"
+set ERRORMSG "Backup stopped. Nothing on the console was changed."
+ask "3ds-ua: back up the system font\n(title 0004009B00014002) to the SD card?\n \nNothing on the console is changed."
+
+set ERRORMSG "The system font title was not found.\nThis is for JPN/EUR/USA consoles only."
+find 1:/title/0004009b/00014002/content/*.tmd TMD
+
+set ERRORMSG "Could not build the legit backup CIA.\nNothing on the console was changed."
+mkdir $[DIR]
+buildcia -l $[TMD]
+find $[GM9OUT]/0004009B00014002*legit.cia LEGIT
+mv -w $[LEGIT] $[DIR]/stock_legit.cia
+
+set ERRORMSG "Could not build the standard CIA.\nNothing on the console was changed."
+buildcia $[TMD]
+find $[GM9OUT]/0004009B00014002*standard.cia STANDARD
+mv -w $[STANDARD] $[DIR]/stock_standard.cia
+
+echo "Backup done:\ngm9/3ds-ua/sysfont/stock_legit.cia\ngm9/3ds-ua/sysfont/stock_standard.cia\n \nKeep stock_legit.cia - it is the way back.\nNext, on the computer:\n  make sysfont-cia STOCK=stock_standard.cia\nthen copy sysfont_patched.cia and\nsysfont_patched.cia.sha into the same folder."
