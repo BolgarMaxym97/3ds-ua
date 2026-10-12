@@ -28,6 +28,7 @@ from __future__ import annotations
 
 import argparse
 import json
+import os
 import sys
 import zipfile
 from pathlib import Path
@@ -310,6 +311,14 @@ def main() -> None:
     ap.add_argument("version", nargs="?", default="dev")
     variant.add_argument(ap)
     args = ap.parse_args()
+
+    # Release archives always carry the default homoglyph variant. `GLYPHS=real` text shows
+    # blanks for і ї є ґ on every console without the patched system font, and its archives
+    # would otherwise go out under the release names.
+    glyphs = os.environ.get("UA_GLYPHS")
+    default = json.loads((ROOT / "src" / "homoglyphs.json").read_text(encoding="utf-8"))["default"]
+    if glyphs and glyphs != default:
+        raise SystemExit(f"UA_GLYPHS={glyphs}: release archives are built with the default variant only")
 
     slot = variant.select(args.slot)
     version = args.version
