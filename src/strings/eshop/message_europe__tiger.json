@@ -1465,7 +1465,7 @@
   },
   "TitleInfo_CTtext01_03": {
     "en": "Could not find a supported\nsoftware title.\n\nEither the Game Card for a supported\ntitle is not inserted, or there is no\nsupported title on the SD Card.\nAdditionally, the SD Card may\nhave been removed and reinserted\nduring use.",
-    "ua": "Відповідної програми\nне знайдено.\n\nАбо не вставлено ігрову картку\nз цією програмою, або її немає\nна карті SD. Ще одна причина —\nкарту SD виймали й вставляли\nпід час роботи."
+    "ua": "Відповідної програми\nне знайдено.\n\nАбо не вставлено картридж\nз цією програмою, або її немає\nна карті SD. Ще одна причина —\nкарту SD виймали й вставляли\nпід час роботи."
   },
   "TitleInfo_CTtext01_04": {
     "en": "This is a list of the add-on content which\ncan be purchased for this software title.\n\nNote: The add-on content cannot be\npurchased using Nintendo eShop.",
