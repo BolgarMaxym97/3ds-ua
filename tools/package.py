@@ -79,7 +79,7 @@ luma/titles/0004001000022300 везуть New3DS-івські файли, а н�
 README_TXT = """3DS UA — український інтерфейс для Nintendo 3DS (версія {version}, збірка from-{slot}, {model_name})
 
 Мод підміняє {replaced} мовний слот українською. {kept} лишається недоторканою.
-Потрібна EUR-консоль з Luma3DS.
+Потрібна EUR-консоль з Luma3DS v10.3 або новішою.
 
 {model_note}
 
