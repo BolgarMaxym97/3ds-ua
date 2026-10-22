@@ -352,6 +352,23 @@ static void test_font_kept_by_sha(void)
     expect(engine_run(&j) == ENGINE_OK && font_builds == 1, "font: one of another build is built again");
 }
 
+static void test_foreign_ns_patch(void)
+{
+    fresh_card(true, true);
+    put("luma/sysmodules/0004013000008002.ips", "PATCHsomeone else's NS patchEOF");
+    Job j;
+    size_t len;
+    expect(run(OP_INSTALL, SLOT_RU, GLYPHS_REAL, true, &j) == ENGINE_OK && j.foreign_ns && !j.font &&
+               j.glyphs_set == GLYPHS_DEFAULT,
+           "foreign NS patch: no font, the text with stand-ins");
+    char *ips = slurp("luma/sysmodules/0004013000008002.ips", &len);
+    expect(ips && len == 31 && !memcmp(ips, "PATCHsomeone", 12) && !has(m.font_path + 1),
+           "foreign NS patch: left as it was");
+    free(ips);
+    expect(run(OP_REMOVE, SLOT_RU, GLYPHS_DEFAULT, false, &j) == ENGINE_OK && has("luma/sysmodules/0004013000008002.ips"),
+           "foreign NS patch: a removal leaves it too");
+}
+
 static void test_changed_file_kept(void)
 {
     fresh_card(true, true);
@@ -550,6 +567,7 @@ int main(int argc, char **argv)
     test_flow();
     test_one_run();
     test_font_kept_by_sha();
+    test_foreign_ns_patch();
     test_changed_file_kept();
     test_adopt();
     int spacing = argc == 5 ? atoi(argv[4]) : 4;

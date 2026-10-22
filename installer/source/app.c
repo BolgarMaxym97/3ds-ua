@@ -101,6 +101,8 @@ static void log_op(const App *app)
     fprintf(f, "%s %s slot=%s glyphs=%s->%s status=%d font=%d", app->manifest.version,
             app->op == OP_REMOVE ? "remove" : "install", slot_name(app->op_slot), glyphs_name(app->op_glyphs),
             glyphs_name(j->glyphs_set), app->worker.status, j->font);
+    if (j->foreign_ns)
+        fprintf(f, " foreign_ns=1");
     if (app->worker.font_note)
         fprintf(f, " font_note=\"%s\"", app->worker.font_note);
     if (j->error[0])
@@ -1065,18 +1067,36 @@ static int screen_targets(const App *app, Target *t)
     return n;
 }
 
-/* The nearest control in the pressed direction: distance along it, sideways counting double. */
+/* The next control in the pressed direction, the way the eye goes: the nearest row (or
+ * column) by the gap between edges, and in it the one most nearly opposite. Up and down may
+ * land on a control that shares no column only when nothing else is there; left and right
+ * never leave the row.
+ * (By centres alone, Down from "Встановити" jumped over the two tiles to the wide "Вийти".) */
 static int move_focus(const Target *t, int n, int from, u32 keys)
 {
-    float cx = t[from].r->x + t[from].r->w / 2, cy = t[from].r->y + t[from].r->h / 2;
+    const Rect *a = t[from].r;
+    bool vertical = keys & (KEY_DUP | KEY_DDOWN);
+    int sign = keys & (KEY_DUP | KEY_DLEFT) ? -1 : 1;
     int best = from;
     float best_cost = 1e9f;
     for (int i = 0; i < n; i++) {
-        float dx = t[i].r->x + t[i].r->w / 2 - cx, dy = t[i].r->y + t[i].r->h / 2 - cy;
-        float along = keys & KEY_DUP ? -dy : keys & KEY_DDOWN ? dy : keys & KEY_DLEFT ? -dx : dx;
-        float across = keys & (KEY_DUP | KEY_DDOWN) ? dx : dy;
-        float cost = along + 2 * (across < 0 ? -across : across);
-        if (i != from && along > 1 && cost < best_cost) {
+        if (i == from)
+            continue;
+        const Rect *b = t[i].r;
+        float a0 = vertical ? a->y : a->x, a1 = a0 + (vertical ? a->h : a->w);
+        float b0 = vertical ? b->y : b->x, b1 = b0 + (vertical ? b->h : b->w);
+        float centre = sign * ((b0 + b1) / 2 - (a0 + a1) / 2);
+        if (centre <= 1)
+            continue; /* not that way */
+        float gap = sign > 0 ? b0 - a1 : a0 - b1;
+        float c0 = vertical ? a->x : a->y, c1 = c0 + (vertical ? a->w : a->h);
+        float d0 = vertical ? b->x : b->y, d1 = d0 + (vertical ? b->w : b->h);
+        bool shares_band = d0 < c1 && c0 < d1;
+        if (!vertical && !shares_band)
+            continue; /* left and right stay in the row: a full-width button has no neighbours */
+        float across = (d0 + d1) / 2 - (c0 + c1) / 2;
+        float cost = (shares_band ? 0 : 10000) + (gap > 0 ? gap : 0) * 10 + (across < 0 ? -across : across);
+        if (cost < best_cost) {
             best_cost = cost;
             best = i;
         }

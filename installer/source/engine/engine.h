@@ -80,6 +80,7 @@ typedef struct {
     bool luma_manual;           /* game patching is off and config.ini could not be edited */
     uint64_t restore_ms, write_ms; /* files stage: inflating/patching vs writing (clock_ms) */
     int moved;                  /* files of the files stage moved over unchanged, not written */
+    bool foreign_ns;            /* another NS patch is on the card: no font this time */
     char error[160];
 } Job;
 

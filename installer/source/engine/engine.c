@@ -42,6 +42,7 @@ typedef struct {
     char font_path[96];
     /* luma/config.ini as read, and where its two flags are */
     bool font_planned;  /* the font should go on: the text is staged with the real letters */
+    bool foreign_ns;    /* someone else's NS patch is on the card (foreign_ns_patch) */
     char *config;
     size_t config_len;
     LumaConfig flags;
@@ -453,6 +454,20 @@ static void remove_font(Ctx *c)
     fs_prune_empty(dir, stop);
 }
 
+/* Another patch of NS (or an exheader override of it) that is not ours: two NS patches do
+ * not combine, and ours would silently switch theirs off. Then no font, nothing touched. */
+static bool foreign_ns_patch(const Ctx *c)
+{
+    char full[PATH_CAP];
+    for (size_t i = 0; i < c->m->font_set.count; i++) {
+        const char *path = c->m->font_set.entries[i].path;
+        sd(c, path, full);
+        if (fs_exists(full) && !is_ours(c, path))
+            return true;
+    }
+    return false;
+}
+
 /* Both Luma flags will be on after this run: the font may go on. */
 static bool flags_will_be_on(const Ctx *c)
 {
@@ -463,6 +478,8 @@ static EngineStatus install_font(Ctx *c)
 {
     Job *job = c->job;
     job->font = false;
+    if (c->foreign_ns)
+        return ENGINE_OK; /* not ours to remove either */
     if (!job->want_font || !flags_will_be_on(c)) {
         remove_font(c);
         return ENGINE_OK;
@@ -696,7 +713,8 @@ static EngineStatus run_install(Ctx *c)
 {
     Job *job = c->job;
     EngineStatus status;
-    c->font_planned = job->want_font && flags_will_be_on(c);
+    c->foreign_ns = job->foreign_ns = foreign_ns_patch(c);
+    c->font_planned = job->want_font && flags_will_be_on(c) && !c->foreign_ns;
     job->stage = STAGE_BACKUP;
     if ((status = backup_all(c)))
         return status;
