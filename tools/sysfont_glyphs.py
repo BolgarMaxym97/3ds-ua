@@ -47,6 +47,8 @@ from __future__ import annotations
 
 import argparse
 import functools
+import hashlib
+import struct
 import sys
 from pathlib import Path
 
@@ -335,6 +337,32 @@ def write_png(font: bcfnt.Font, path: Path) -> None:
     canvas.save(path)
 
 
+def write_upturn(source: bcfnt.Font, patched: bcfnt.Font, packed: bytes, path: Path) -> int:
+    """The installer's half of the job: only the pixels the upturn adds, nothing of Nintendo's.
+
+    The installer app rebuilds the patched font on the console from the console's own font
+    (copies and mirrors need no data), so the one thing it has to be given is the upturn of
+    ґ Ґ - what the new outline adds over the donor's stored pixels. Layout, little-endian:
+
+        "UAUP" u8 version=1, u8 glyph count
+        sha256 of the source font file (.lz), sha256 of the patched font file (.lz)
+        per glyph: u16 code, u16 donor, u16 pixel count, then (u8 x, u8 y, u8 alpha) each
+
+    The two hashes let the app refuse a font it was not made for and check what it built.
+    """
+    out = bytearray(b"UAUP" + bytes((1, len(UPTURN))))
+    out += hashlib.sha256(SOURCE.read_bytes()).digest() + hashlib.sha256(packed).digest()
+    total = 0
+    for code, (donor, _) in sorted(UPTURN.items()):
+        old, new = bcfnt.glyph_rows(source, donor), bcfnt.glyph_rows(patched, code)
+        changed = [(x, y, v) for y, row in enumerate(new) for x, v in enumerate(row) if v != old[y][x]]
+        out += struct.pack("<HHH", code, donor, len(changed))
+        out += b"".join(bytes(pixel) for pixel in changed)
+        total += len(changed)
+    path.write_bytes(bytes(out))
+    return total
+
+
 def main() -> None:
     parser = argparse.ArgumentParser()
     parser.add_argument("--report", action="store_true", help="print the fit and the new glyphs")
@@ -350,6 +378,9 @@ def main() -> None:
     args.out.write_bytes(packed)
     print(f"-> {args.out} ({len(packed)} bytes packed, {len(data)} unpacked, "
           f"{len(patched.sheets.planes) - len(source.sheets.planes)} sheet added, {len(DONORS)} glyphs)")
+    upturn = args.out.with_name("upturn.bin")
+    pixels = write_upturn(source, patched, packed, upturn)
+    print(f"-> {upturn} ({pixels} upturn pixels, the installer's input)")
 
     if args.png:
         write_png(patched, args.png)
