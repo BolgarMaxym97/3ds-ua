@@ -6,7 +6,9 @@
 
 #include "engine/engine.h"
 #include "engine/fsutil.h"
+#include "engine/lumacfg.h"
 #include "payload/payload.h"
+#include "sysfont/sha256.h"
 #include "qr.h"
 #include "ui.h"
 
@@ -63,11 +65,18 @@ static void start_op(App *app, Op op, Slot slot, Glyphs glyphs)
     }
     bool font_before = app->has_installed && app->installed.font;
     bool want_font = op == OP_INSTALL && install_font_allowed(&app->console, font_before);
+    /* the font on the card is this app's own when its recorded sha is the one upturn.bin
+     * names; otherwise (none, or an older build of it) start building at once */
+    bool font_current = false;
+    uint8_t sha[32];
+    const StateFile *font_file = font_before ? installed_find(&app->installed, app->manifest.font_path + 1) : NULL;
+    if (font_file && install_font_sha(&app->manifest, sha))
+        font_current = !memcmp(font_file->sha, sha, 32);
     app->op = op;
     app->op_slot = slot;
     app->op_glyphs = glyphs;
     app->reboot_frames = 0;
-    if (!install_start(&app->worker, &app->manifest, &app->console, op, slot, glyphs, want_font, !font_before)) {
+    if (!install_start(&app->worker, &app->manifest, &app->console, op, slot, glyphs, want_font, !font_current)) {
         show_error(app, "Не вдалося почати", "Закрийте застосунок і відкрийте його знову.", true);
         return;
     }
@@ -136,9 +145,7 @@ static void op_finished(App *app)
         return;
     }
     if (j->luma_manual) {
-        show_error(app, "Потрібне одне налаштування",
-                   "Вимкніть консоль, тримайте SELECT і ввімкніть її. Позначте Enable game patching і натисніть START.",
-                   false);
+        go(app, SCREEN_LUMA);
         return;
     }
     /* done: say so now, then reboot by itself - nothing is left to do after the reboot */
@@ -161,6 +168,12 @@ static bool run_auto(App *app)
     if (app->has_installed && app->installed.font && app->installed.glyphs == GLYPHS_DEFAULT && app->live_letters) {
         app->finishing = true;
         start_op(app, OP_INSTALL, app->installed.slot, GLYPHS_REAL);
+        return true;
+    }
+    /* installed, but asleep: Luma's game patching was turned off since (or never could be
+     * turned on). Checked before the font: without game patching nothing of ours runs. */
+    if (app->has_installed && app->console.is_luma && !app->console.game_patching) {
+        go(app, SCREEN_LUMA);
         return true;
     }
     if (app->has_installed && app->installed.glyphs == GLYPHS_REAL && !app->live_letters) {
@@ -295,8 +308,8 @@ static int check_rows(const App *app, Row *rows)
     r = &rows[n++];
     r->label = "Налаштування Luma";
     bool both = c->game_patching && c->external_modules;
-    r->level = both ? LEVEL_OK : LEVEL_INFO;
-    snprintf(r->value, sizeof(r->value), both ? "увімкнено" : "увімкнемо самі");
+    r->level = both ? LEVEL_OK : c->config_editable ? LEVEL_INFO : LEVEL_WARN;
+    snprintf(r->value, sizeof(r->value), both ? "увімкнено" : c->config_editable ? "увімкнемо самі" : "увімкніть вручну");
 
     r = &rows[n++];
     r->label = "Місце на SD";
@@ -509,16 +522,10 @@ static void choose_slot(App *app, int slot)
 
 static void update_slot(App *app, const Input *in)
 {
-    if (in->down & (KEY_UP | KEY_DOWN))
-        app->focus ^= 1;
     for (int i = 0; i < 2; i++)
         if (hit(in, slot_card[i]))
             choose_slot(app, i);
-    if (app->screen != SCREEN_SLOT)
-        return;
-    if (in->down & KEY_A)
-        choose_slot(app, app->focus);
-    else if (in->down & KEY_B)
+    if (app->screen == SCREEN_SLOT && (in->down & KEY_B))
         go(app, home_screen(app));
 }
 
@@ -746,15 +753,10 @@ static void update_installed(App *app, const Input *in)
 
 static Rect rescue_button = {14, 112, 292, 56};
 
-static void draw_rescue_top(const App *app)
+/* Three numbered steps on cards: the Luma boot menu by hand. */
+static void draw_steps(const char *title, const char *const steps[3])
 {
-    (void)app;
-    static const char *steps[3] = {
-        "Вимкніть консоль. Тримайте SELECT і ввімкніть її.",
-        "Зніміть галочку Enable loading external FIRMs and modules",
-        "Натисніть START — консоль запуститься.",
-    };
-    ui_text(20, 14, 17, FONT_HEAVY, COL_INK, "Якщо консоль не запускається");
+    ui_text(20, 14, 17, FONT_HEAVY, COL_INK, title);
     for (int i = 0; i < 3; i++) {
         float y = 46 + i * 60;
         char n[2] = {(char)('1' + i), 0};
@@ -764,6 +766,17 @@ static void draw_rescue_top(const App *app)
         float h = ui_text_wrap_height(306, 12, FONT_BOLD, steps[i]);
         ui_text_wrap(62, y + 26 - h / 2, 306, 12, FONT_BOLD, COL_INK, steps[i]);
     }
+}
+
+static void draw_rescue_top(const App *app)
+{
+    (void)app;
+    static const char *const steps[3] = {
+        "Вимкніть консоль. Тримайте SELECT і ввімкніть її.",
+        "Зніміть галочку Enable loading external FIRMs and modules",
+        "Натисніть START — консоль запуститься.",
+    };
+    draw_steps("Якщо консоль не запускається", steps);
 }
 
 static void draw_rescue_bottom(const App *app)
@@ -903,6 +916,79 @@ static void update_error(App *app, const Input *in)
         app->quit = true;
 }
 
+/* ---------------------------------------------------------------- Luma game patching */
+
+/* The mod is on the card but game patching is off, so none of it runs. With a config.ini
+ * the app understands it switches the flag itself and reboots; otherwise (Luma before v13
+ * keeps its settings in config.bin) the steps by hand - Luma reads SELECT at every boot,
+ * so the reboot here is also the way into its menu. */
+static Rect luma_button = {14, 112, 292, 60};
+
+static void draw_luma_top(const App *app)
+{
+    if (app->console.config_editable) {
+        ui_text(20, 14, 17, FONT_HEAVY, COL_INK, "Українізатор вимкнено в Luma");
+        ui_card(20, 46, 360, 112, 8, COL_CARD, 0);
+        ui_text_wrap(36, 62, 328, 12.5f, FONT_BOLD, COL_BODY,
+                     "У налаштуваннях Luma знято галочку Enable game patching. Без неї українізатор не працює. "
+                     "Застосунок увімкне її сам і перезавантажить консоль.");
+        return;
+    }
+    static const char *const steps[3] = {
+        "Натисніть «Перезавантажити» і тримайте SELECT, доки не з'явиться меню Luma.",
+        "Позначте Enable game patching (кнопка A).",
+        "Натисніть START — консоль запуститься українською.",
+    };
+    draw_steps("Увімкніть одне налаштування Luma", steps);
+}
+
+static void draw_luma_bottom(const App *app)
+{
+    bool editable = app->console.config_editable;
+    ui_card(14, 14, 292, 88, 11, COL_CARD, 0);
+    ui_icon(ICON_INFO, 40, 40, 24, COL_BLUE);
+    ui_text(64, 22, 13.5f, FONT_HEAVY, COL_INK, "Майже готово");
+    ui_text_wrap(64, 42, 232, 11.5f, FONT_BOLD, COL_BODY,
+                 editable ? "Українізатор на місці, лишилося ввімкнути одне налаштування."
+                          : "Українізатор на місці. Застосунок не може сам змінити це налаштування у вашій версії Luma.");
+    const char *sub = app->rebooting ? "перезавантаження…" : editable ? "і перезавантажити" : "тримайте SELECT";
+    draw_primary(luma_button, ICON_POWER, editable ? "Увімкнути" : "Перезавантажити", sub, true);
+    draw_hints("B", "Пізніше", NULL, NULL);
+}
+
+/* Game patching on in luma/config.ini, exactly that one character; then reboot at once,
+ * before Rosalina could save its own copy of the settings over it (§4.4). */
+static bool enable_game_patching(void)
+{
+    uint8_t *text;
+    size_t len;
+    if (payload_read_file(SD_ROOT "/luma/config.ini", &text, &len))
+        return false;
+    LumaConfig flags;
+    bool ok = !lumacfg_parse(&flags, (char *)text, len);
+    if (ok) {
+        *flags.game = '1';
+        uint8_t sha[32];
+        sha256(text, len, sha);
+        ok = !fs_replace_verified(SD_ROOT "/luma/config.ini", text, len, sha);
+    }
+    free(text);
+    return ok;
+}
+
+static void update_luma(App *app, const Input *in)
+{
+    if (((in->down & KEY_A) || hit(in, luma_button)) && !app->rebooting) {
+        if (app->console.config_editable && !enable_game_patching()) {
+            show_error(app, "Не вдалося змінити налаштування", "Файл luma/config.ini не вдалося записати.", false);
+            return;
+        }
+        app->reboot_frames = 1;
+    } else if (in->down & KEY_B) {
+        go(app, home_screen(app));
+    }
+}
+
 /* ---------------------------------------------------------------- dispatch */
 
 void app_init(App *app)
@@ -942,9 +1028,106 @@ void app_exit(App *app)
         manifest_free(&app->manifest);
 }
 
-void app_update(App *app, const Input *in)
+/* ---------------------------------------------------------------- buttons */
+
+/* Everything on the touch screen can be reached with the D-pad and pressed with A, for
+ * consoles whose touch screen no longer reads right. Each screen lists its controls; the
+ * first is the one A presses without moving (the main action - on the removal question,
+ * keeping things as they are). */
+typedef struct {
+    const Rect *r;
+    float radius;
+} Target;
+
+static int screen_targets(const App *app, Target *t)
+{
+    int n = 0;
+#define ADD(rect, rad) (t[n++] = (Target){&(rect), (rad)})
+    switch (app->screen) {
+    case SCREEN_CHECK: ADD(check_button, 14); break;
+    case SCREEN_MAIN: ADD(main_install, 14); ADD(main_check, 11); ADD(main_help, 11); ADD(main_exit, 10); break;
+    case SCREEN_SLOT: ADD(slot_card[0], 12); ADD(slot_card[1], 12); break;
+    case SCREEN_DONE: ADD(done_button, 14); break;
+    case SCREEN_INSTALLED:
+        ADD(inst_update, 14);
+        for (int i = 0; i < 4; i++)
+            ADD(inst_tile[i], 11);
+        ADD(inst_exit, 10);
+        break;
+    case SCREEN_RESCUE: ADD(rescue_button, 14); break;
+    case SCREEN_HELP: ADD(help_row[0], 11); ADD(help_row[1], 11); break;
+    case SCREEN_CONFIRM: ADD(confirm_cancel, 11); ADD(confirm_remove, 14); break;
+    case SCREEN_ERROR: ADD(error_button, 14); break;
+    case SCREEN_LUMA: ADD(luma_button, 14); break;
+    case SCREEN_PROGRESS: break;
+    }
+#undef ADD
+    return n;
+}
+
+/* The nearest control in the pressed direction: distance along it, sideways counting double. */
+static int move_focus(const Target *t, int n, int from, u32 keys)
+{
+    float cx = t[from].r->x + t[from].r->w / 2, cy = t[from].r->y + t[from].r->h / 2;
+    int best = from;
+    float best_cost = 1e9f;
+    for (int i = 0; i < n; i++) {
+        float dx = t[i].r->x + t[i].r->w / 2 - cx, dy = t[i].r->y + t[i].r->h / 2 - cy;
+        float along = keys & KEY_DUP ? -dy : keys & KEY_DDOWN ? dy : keys & KEY_DLEFT ? -dx : dx;
+        float across = keys & (KEY_DUP | KEY_DDOWN) ? dx : dy;
+        float cost = along + 2 * (across < 0 ? -across : across);
+        if (i != from && along > 1 && cost < best_cost) {
+            best_cost = cost;
+            best = i;
+        }
+    }
+    return best;
+}
+
+/* D-pad moves the focus; A becomes a tap on the focused control, so every screen keeps
+ * one set of handlers for both. */
+static Input with_buttons(App *app, const Input *in)
+{
+    Input out = *in;
+    Target t[8];
+    int n = screen_targets(app, t);
+    if (in->tapped)
+        app->keys_nav = false;
+    if (!n)
+        return out;
+    if (app->focus >= n)
+        app->focus = 0;
+    u32 dpad = in->down & (KEY_DUP | KEY_DDOWN | KEY_DLEFT | KEY_DRIGHT);
+    if (dpad) {
+        if (app->keys_nav || app->screen == SCREEN_SLOT) /* the slot cards show focus anyway */
+            app->focus = move_focus(t, n, app->focus, dpad);
+        app->keys_nav = true; /* the first press only shows where the focus is */
+    }
+    if (in->down & KEY_A) {
+        out.down &= ~KEY_A;
+        out.tapped = true;
+        out.tap_x = (int)(t[app->focus].r->x + t[app->focus].r->w / 2);
+        out.tap_y = (int)(t[app->focus].r->y + t[app->focus].r->h / 2);
+    }
+    return out;
+}
+
+static void draw_focus(const App *app)
+{
+    Target t[8];
+    int n = screen_targets(app, t);
+    /* the slot cards show their choice themselves */
+    if (!app->keys_nav || !n || app->focus >= n || app->screen == SCREEN_SLOT)
+        return;
+    const Rect *r = t[app->focus].r;
+    ui_rrect(r->x - 3, r->y - 3, r->w + 6, r->h + 6, t[app->focus].radius + 3, COL_YELLOW);
+}
+
+void app_update(App *app, const Input *raw)
 {
     static int frames;
+    Input buttons = with_buttons(app, raw);
+    const Input *in = &buttons;
     /* Waiting on the check screen - the charger, say: look again once a second. */
     if (app->screen == SCREEN_CHECK && ++frames % 60 == 0 && checks_blocking(&app->console) == LEVEL_FAIL)
         checks_run(&app->console, app->manifest_ok ? &app->manifest : NULL);
@@ -975,6 +1158,7 @@ void app_update(App *app, const Input *in)
     case SCREEN_HELP: update_help(app, in); break;
     case SCREEN_CONFIRM: update_confirm(app, in); break;
     case SCREEN_ERROR: update_error(app, in); break;
+    case SCREEN_LUMA: update_luma(app, in); break;
     }
 }
 
@@ -991,11 +1175,13 @@ void app_draw_top(const App *app)
     case SCREEN_HELP: draw_help_top(app); break;
     case SCREEN_CONFIRM: draw_confirm_top(app); break;
     case SCREEN_ERROR: draw_error_top(app); break;
+    case SCREEN_LUMA: draw_luma_top(app); break;
     }
 }
 
 void app_draw_bottom(const App *app)
 {
+    draw_focus(app); /* under the control: its edges show as a frame */
     switch (app->screen) {
     case SCREEN_CHECK: draw_check_bottom(app); break;
     case SCREEN_MAIN: draw_main_bottom(app); break;
@@ -1007,5 +1193,6 @@ void app_draw_bottom(const App *app)
     case SCREEN_HELP: draw_help_bottom(app); break;
     case SCREEN_CONFIRM: draw_confirm_bottom(app); break;
     case SCREEN_ERROR: draw_error_bottom(app); break;
+    case SCREEN_LUMA: draw_luma_bottom(app); break;
     }
 }

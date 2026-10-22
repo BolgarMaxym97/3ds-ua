@@ -470,8 +470,12 @@ static EngineStatus install_font(Ctx *c)
 
     char full[PATH_CAP];
     sd(c, c->font_path, full);
+    /* the font already on the card stays only if it is the one this app builds: a fix to
+     * a glyph can keep the file's size exactly (є, 2026-10-22) */
+    static const uint8_t ANY[32];
     const StateFile *sf = c->has_prev && c->prev.font ? installed_find(&c->prev, c->font_path) : NULL;
-    if (sf && fs_size(full) == (long)sf->size) {
+    bool expected = !memcmp(job->font_sha, ANY, 32) || (sf && !memcmp(sf->sha, job->font_sha, 32));
+    if (sf && expected && fs_size(full) == (long)sf->size) {
         if (record(c, sf->sha, sf->size, c->font_path))
             return ENGINE_E_MEMORY;
     } else {

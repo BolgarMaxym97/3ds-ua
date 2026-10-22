@@ -13,7 +13,9 @@
 
 bool install_font_allowed(const Console *c, bool font_before)
 {
-    if (!c->is_luma || c->luma_version < LUMA_FULL || c->is_new3ds || !c->ns_ok)
+    /* New 3DS too: its NS (a New 3DS XL, 2026-10-22) is byte for byte the Old 3DS one, and
+     * the extra NS patch Luma applies on a New 3DS (0x10E1EC) is clear of ours */
+    if (!c->is_luma || c->luma_version < LUMA_FULL || !c->ns_ok)
         return false;
     return !(font_before && !c->external_modules);
 }
@@ -68,6 +70,24 @@ static uint8_t *make_font(Worker *w, size_t *len)
         return NULL;
     }
     return out;
+}
+
+bool install_font_sha(const Manifest *m, uint8_t sha[32])
+{
+    /* upturn.bin names the font it makes: "UAUP", version, count, sha of the source, sha of
+     * the result (tools/sysfont_glyphs.py write_upturn) */
+    uint8_t *upturn;
+    size_t len;
+    char path[64];
+    bool ok = false;
+    snprintf(path, sizeof(path), DATA_ROOT "/%s", m->upturn);
+    if (!payload_read_file(path, &upturn, &len)) {
+        ok = len >= 6 + 64 && !memcmp(upturn, "UAUP", 4);
+        if (ok)
+            memcpy(sha, upturn + 6 + 32, 32);
+        free(upturn);
+    }
+    return ok;
 }
 
 static void font_work(void *arg)
@@ -128,7 +148,7 @@ static void exclusive(bool on)
 static void work(void *arg)
 {
     Worker *w = arg;
-    trace_file = fopen(TRACE_PATH, "w");
+    trace_file = fopen(TRACE_PATH, "a"); /* a removal after the install must not wipe it */
     w->status = engine_run(&w->job);
     if (trace_file)
         fclose(trace_file);
@@ -164,6 +184,7 @@ bool install_start(Worker *w, const Manifest *m, const Console *c, Op op, Slot s
     /* Below the UI thread, so the screens keep drawing. The font builder goes lower still:
      * the 3DS kernel does not time-slice threads of one priority, so it runs exactly while
      * the worker waits on the SD card - the files and the font take the time of the longer. */
+    install_font_sha(m, j->font_sha);
     if (want_font && build_font_now && read_font_inputs(w))
         w->font_thread = threadCreate(font_work, w, STACK_SIZE, prio + 2, -2, false);
     if (!w->font_thread)

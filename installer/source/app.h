@@ -21,6 +21,7 @@ typedef enum {
     SCREEN_HELP,
     SCREEN_CONFIRM,     /* "remove the mod?" */
     SCREEN_ERROR,
+    SCREEN_LUMA,        /* how to turn game patching on by hand */
 } ScreenId;
 
 typedef struct {
@@ -37,6 +38,7 @@ typedef struct {
     bool manifest_ok;
     Slot slot;
     int focus;          /* the highlighted choice on screens that have one */
+    bool keys_nav;      /* the D-pad is in use: show where the focus is */
     bool quit;
 
     Installed installed;    /* 3ds/3ds-ua/installed.txt, when has_installed */

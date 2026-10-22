@@ -26,6 +26,7 @@ static char sd_root[256];
 static Manifest m;
 static uint64_t unmet_folder; /* a folder whose title is "another build", 0 for none */
 static bool font_fails;       /* build_font() gives up, as on a console with another font */
+static int font_builds;       /* how often build_font() ran */
 
 static void expect(int ok, const char *what)
 {
@@ -42,6 +43,7 @@ static bool need_met(const Need *n, void *ctx)
 static uint8_t *build_font(void *ctx, size_t *len)
 {
     (void)ctx;
+    font_builds++;
     if (font_fails)
         return NULL;
     *len = 70000;
@@ -330,6 +332,26 @@ static void test_one_run(void)
     font_fails = false;
 }
 
+static void test_font_kept_by_sha(void)
+{
+    fresh_card(true, true);
+    run(OP_INSTALL, SLOT_RU, GLYPHS_REAL, true, NULL);
+    Installed s;
+    engine_load_installed(sd_root, &s);
+    uint8_t current[32];
+    memcpy(current, installed_find(&s, m.font_path + 1)->sha, 32);
+    installed_free(&s);
+
+    Job j = job_for(OP_INSTALL, SLOT_RU, GLYPHS_REAL, true);
+    memcpy(j.font_sha, current, 32);
+    font_builds = 0;
+    expect(engine_run(&j) == ENGINE_OK && font_builds == 0, "font: this app's own font is kept");
+    j = job_for(OP_INSTALL, SLOT_RU, GLYPHS_REAL, true);
+    memset(j.font_sha, 0xAB, 32); /* a newer app builds another font, of the same size */
+    font_builds = 0;
+    expect(engine_run(&j) == ENGINE_OK && font_builds == 1, "font: one of another build is built again");
+}
+
 static void test_changed_file_kept(void)
 {
     fresh_card(true, true);
@@ -527,6 +549,7 @@ int main(int argc, char **argv)
     test_state();
     test_flow();
     test_one_run();
+    test_font_kept_by_sha();
     test_changed_file_kept();
     test_adopt();
     int spacing = argc == 5 ? atoi(argv[4]) : 4;

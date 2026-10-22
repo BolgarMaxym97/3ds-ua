@@ -18,7 +18,7 @@ has, so it is drawn by the same hand:
 
     і І ї Ї ʼ   the cell of i I ï Ï ’ copied as it is - same shape, same pixels, same widths
                 (U+02BC and U+2019 are one outline in the TTF)
-    є Є         the cell of э Э mirrored left to right; the two side bearings swap places
+    є Є         the cell of э Э mirrored left to right, keeping the donor's side bearings
     ґ Ґ         г Г with an upturn: a stem as thick as the letter's own, standing on the right
                 end of the top bar. Its height is the median of seven common sans fonts
                 (Arial, Segoe UI, Tahoma, Verdana, Calibri, Arial Bold, Segoe UI Bold):
@@ -260,7 +260,10 @@ def make_glyphs(source: bcfnt.Font, ttf, fit: dict) -> tuple[dict, dict]:
         left, ink, advance = source.widths[source.cmap[donor]]
         rows = bcfnt.glyph_rows(source, donor)
         mirrored = [row[:ink][::-1] + row[ink:] for row in rows]
-        glyphs[code] = (mirrored, advance - left - ink, ink, advance)
+        # The donor's side bearings stay as they are: э carries a faint column at its right
+        # edge, which the mirror brings to the left, so swapping the bearings as well left є
+        # a pixel further right than е and с (New 3DS photo, 2026-10-22).
+        glyphs[code] = (mirrored, left, ink, advance)
 
     cell = bcfnt.cell_size(source)
     upm = ttf["head"].unitsPerEm

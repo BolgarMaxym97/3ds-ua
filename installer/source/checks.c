@@ -1,5 +1,10 @@
 #include "checks.h"
 
+#include <stdlib.h>
+
+#include "engine/lumacfg.h"
+#include "payload/payload.h"
+
 #include <stdio.h>
 #include <string.h>
 #include <sys/stat.h>
@@ -73,6 +78,14 @@ void checks_run(Console *c, const Manifest *m)
     }
     u16 ns;
     c->ns_ok = m && checks_title_remaster(NS_TID, &ns) && ns == m->ns_remaster;
+
+    uint8_t *config;
+    size_t config_len;
+    if (!payload_read_file("sdmc:/luma/config.ini", &config, &config_len)) {
+        LumaConfig flags;
+        c->config_editable = lumacfg_parse(&flags, (char *)config, config_len) == 0;
+        free(config);
+    }
 
     struct stat st;
     c->installed_before = stat(INSTALLED_MARK, &st) == 0 || stat(INSTALLED_RECORD, &st) == 0;

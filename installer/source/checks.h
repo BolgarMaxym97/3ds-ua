@@ -34,6 +34,7 @@ typedef struct {
     bool ns_ok;                 /* NS is the build the font patch is for */
     bool installed_before;      /* a copy of the mod is already on the card */
     u8 language;                /* CFG_Language: what the console shows without the mod */
+    bool config_editable;       /* luma/config.ini is one the app can switch the flags in */
 } Console;
 
 void checks_run(Console *c, const Manifest *m);

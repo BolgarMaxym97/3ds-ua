@@ -29,11 +29,13 @@ typedef struct {
     size_t font_len;
 } Worker;
 
-/* The console qualifies for the NS font patch: Luma reads sysmodule patches (v13+), NS is
- * the build the patch is for, and it is an Old 3DS (the New 3DS waits for its own check,
- * docs/plan/installer-app.md §0). `font_before`: the last install put the font on; if the
+/* The console qualifies for the NS font patch: Luma reads sysmodule patches (v13+) and NS
+ * is the build the patch is for. `font_before`: the last install put the font on; if the
  * user has since turned external modules off, that was the rescue - leave it off. */
 bool install_font_allowed(const Console *c, bool font_before);
+
+/* The sha256 of the font this app builds, from its upturn.bin. */
+bool install_font_sha(const Manifest *m, uint8_t sha[32]);
 
 /* Starts the worker; false if the thread could not start. `build_font`: the font is not on
  * the card yet, start building it right away. */

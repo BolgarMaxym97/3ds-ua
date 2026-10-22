@@ -61,6 +61,7 @@ typedef struct {
     bool want_font;             /* the console qualifies for the NS font patch (§3) */
     bool luma_game_on;          /* the running Luma's flags, for a config.ini the engine cannot read */
     bool luma_external_on;
+    uint8_t font_sha[32];       /* the font this app builds (upturn.bin); all zero: any font kept */
     NeedFn need_met;
     FontFn build_font;
     void *ctx;

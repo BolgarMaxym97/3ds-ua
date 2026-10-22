@@ -287,7 +287,8 @@ static SysfontStatus make_glyphs(const Font *f, const uint8_t *upturn, size_t up
         read_cell(f, donor, g->cell);
         Width w = f->widths[donor];
         if (DERIVED[i].mirror) {
-            /* row[:ink][::-1] + row[ink:]; the side bearings swap */
+            /* row[:ink][::-1] + row[ink:]; the side bearings stay the donor's
+             * (tools/sysfont_glyphs.py make_glyphs) */
             if (w.ink > f->cell_w)
                 return SYSFONT_E_GLYPHS;
             for (int y = 0; y < f->cell_h; y++) {
@@ -298,7 +299,6 @@ static SysfontStatus make_glyphs(const Font *f, const uint8_t *upturn, size_t up
                     row[b] = t;
                 }
             }
-            w.left = (int8_t)(w.advance - w.left - w.ink);
         }
         g->width = w;
     }
