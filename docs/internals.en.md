@@ -412,6 +412,17 @@ into the app leaves the console on a black screen under Luma. The log is
 ~67 s and removal ~35 s: every FS call costs ~20 ms, so the file count sets the time, not the
 bytes.
 
+**Statistics.** After an operation `installer/source/stats.c` sends a report (`stats/report.c`
+builds the JSON; `stats/src/event.ts` on the server checks the same fields and limits) — from a
+thread, an `httpc` POST to `STATS_URL`, the answer never read; the reboot waits at most 3 s for
+it, and the countdown runs by the clock, not by frames. Without the tick or without Wi-Fi
+(`ACU_GetWifiStatus`) no connection is made at all. Plain HTTP: the console's TLS does not get
+through to `workers.dev` (test 2026-10-23: it connects, but the answer is not the Worker's), and
+the report holds nothing secret. `httpcInit` needs shared memory (0x1000) — with zero every POST
+fails with `0xD8A0A003`. The ID and the tick live in `3ds/3ds-ua-installer.ini`, since a removal
+clears `3ds/3ds-ua/`; the ID is 40 bits from `ps:ps` in Crockford base32. The server, schema and
+queries: `stats/README.md`.
+
 **Building.**
 
 ```bash

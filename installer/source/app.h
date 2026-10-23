@@ -9,6 +9,7 @@
 #include "engine/state.h"
 #include "install.h"
 #include "payload/manifest.h"
+#include "stats.h"
 
 typedef enum {
     SCREEN_CHECK,
@@ -51,13 +52,15 @@ typedef struct {
     Slot op_slot;
     Glyphs op_glyphs;
     bool finishing;         /* the second half of an install, after the first reboot */
-    int reboot_frames;      /* counting down to the reboot after a finished operation */
+    u64 reboot_at;          /* osGetTime() of the reboot after a finished operation; 0: none */
     u64 stage_ms[STAGE_COUNT + 1];  /* osGetTime() when each stage began, and at the end */
     int last_stage;
     bool rebooting;
 
     const char *error_title, *error_text;
     bool error_retry;       /* the error screen offers to run the operation again */
+    Stats stats;
+    u64 reboot_deadline;    /* a report still on its way holds the reboot until then */
 } App;
 
 void app_init(App *app);

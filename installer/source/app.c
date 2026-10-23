@@ -75,7 +75,8 @@ static void start_op(App *app, Op op, Slot slot, Glyphs glyphs)
     app->op = op;
     app->op_slot = slot;
     app->op_glyphs = glyphs;
-    app->reboot_frames = 0;
+    app->reboot_at = 0;
+    app->reboot_deadline = 0;
     if (!install_start(&app->worker, &app->manifest, &app->console, op, slot, glyphs, want_font, !font_current)) {
         show_error(app, "Не вдалося почати", "Закрийте застосунок і відкрийте його знову.", true);
         return;
@@ -87,28 +88,31 @@ static void start_op(App *app, Op op, Slot slot, Glyphs glyphs)
     go(app, SCREEN_PROGRESS);
 }
 
-/* One line per operation: what ran, how it ended, how long each stage took. */
-static void log_op(const App *app)
+/* One line per operation: what ran, how it ended, how long each stage took. It goes to the
+ * log on the card and, as the report's log, to the statistics. */
+static void op_line(const App *app, char *out, size_t cap)
 {
     static const char *stage_names[STAGE_COUNT] = {
         [STAGE_CHECK] = "check", [STAGE_BACKUP] = "backup", [STAGE_FILES] = "files",
         [STAGE_FONT] = "font",   [STAGE_LUMA] = "luma",     [STAGE_FINISH] = "finish",
     };
     const Job *j = &app->worker.job;
-    FILE *f = fopen(LOG_PATH, "a");
-    if (!f)
-        return;
-    fprintf(f, "%s %s slot=%s glyphs=%s->%s status=%d font=%d", app->manifest.version,
-            app->op == OP_REMOVE ? "remove" : "install", slot_name(app->op_slot), glyphs_name(app->op_glyphs),
-            glyphs_name(j->glyphs_set), app->worker.status, j->font);
+    size_t n = 0;
+#define ADDF(...) (n += n < cap ? (size_t)snprintf(out + n, cap - n, __VA_ARGS__) : 0)
+    ADDF("%s slot=%s glyphs=%s->%s status=%d font=%d", app->op == OP_REMOVE ? "remove" : "install",
+         slot_name(app->op_slot), glyphs_name(app->op_glyphs), glyphs_name(j->glyphs_set), app->worker.status, j->font);
+    if (app->finishing)
+        ADDF(" auto=1");
+    if (app->console.installed_before && !app->has_installed)
+        ADDF(" took_over=1");
     if (j->foreign_ns)
-        fprintf(f, " foreign_ns=1");
+        ADDF(" foreign_ns=1");
     if (app->worker.font_note)
-        fprintf(f, " font_note=\"%s\"", app->worker.font_note);
+        ADDF(" font_note=\"%s\"", app->worker.font_note);
     if (j->error[0])
-        fprintf(f, " error=\"%s\"", j->error);
-    fprintf(f, " files=%d moved=%d skipped=%d kept=%d luma_manual=%d restore=%.1fs write=%.1fs |", j->total, j->moved,
-            j->skipped, j->kept, j->luma_manual, (double)j->restore_ms / 1000.0, (double)j->write_ms / 1000.0);
+        ADDF(" error=\"%s\"", j->error);
+    ADDF(" files=%d moved=%d skipped=%d kept=%d luma_manual=%d restore=%.1fs write=%.1fs |", j->total, j->moved,
+         j->skipped, j->kept, j->luma_manual, (double)j->restore_ms / 1000.0, (double)j->write_ms / 1000.0);
     /* stages in the order they ran (a removal runs them in another order than an install) */
     for (int i = 0; i < STAGE_COUNT; i++) {
         if (!app->stage_ms[i])
@@ -117,12 +121,87 @@ static void log_op(const App *app)
         for (int k = 0; k < STAGE_COUNT; k++)
             if (app->stage_ms[k] > app->stage_ms[i] && app->stage_ms[k] < end)
                 end = app->stage_ms[k];
-        fprintf(f, " %s=%.1fs", stage_names[i], (double)(end - app->stage_ms[i]) / 1000.0);
+        ADDF(" %s=%.1fs", stage_names[i], (double)(end - app->stage_ms[i]) / 1000.0);
     }
     extern u32 __ctru_heap_size, __ctru_linear_heap_size;
-    fprintf(f, " heap=%luMB linear=%luMB", __ctru_heap_size >> 20, __ctru_linear_heap_size >> 20);
-    fprintf(f, " total=%.1fs", (double)(app->stage_ms[STAGE_COUNT] - app->stage_ms[STAGE_CHECK]) / 1000.0);
-    fprintf(f, "\n");
+    ADDF(" heap=%luMB linear=%luMB", __ctru_heap_size >> 20, __ctru_linear_heap_size >> 20);
+    ADDF(" total=%.1fs", (double)(app->stage_ms[STAGE_COUNT] - app->stage_ms[STAGE_CHECK]) / 1000.0);
+#undef ADDF
+}
+
+/* Why the real letters are or are not on after an install, in a word for the statistics. */
+static const char *font_reason(const App *app)
+{
+    const Job *j = &app->worker.job;
+    const Console *c = &app->console;
+    if (j->font && j->glyphs_set == GLYPHS_REAL)
+        return "ok";
+    if (j->foreign_ns)
+        return "foreign_ns";
+    if (!j->want_font) {
+        if (!c->is_luma || c->luma_version < LUMA_FULL)
+            return "old_luma";
+        return c->ns_ok ? "external_off" : "ns_unknown";
+    }
+    return app->worker.font_note ? app->worker.font_note : "not_loaded";
+}
+
+/* The statistics report for the operation that just ended; "skip" for one nobody asked to
+ * count (a slot change). */
+static const char *send_report(App *app, const char *line)
+{
+    static const char *stage_names[STAGE_COUNT] = {
+        [STAGE_CHECK] = "check", [STAGE_BACKUP] = "backup", [STAGE_FILES] = "files",
+        [STAGE_FONT] = "font",   [STAGE_LUMA] = "luma",     [STAGE_FINISH] = "finish",
+    };
+    const Job *j = &app->worker.job;
+    const Console *c = &app->console;
+    const char *before = app->has_installed ? app->installed.version : NULL;
+    Report r = {.app = app->manifest.version, .ms = -1, .code = -1, .log = line};
+    if (app->worker.status != ENGINE_OK) {
+        r.event = "error";
+        r.stage = stage_names[app->last_stage];
+        r.code = app->worker.status;
+        r.detail = j->error[0] ? j->error : NULL;
+    } else if (app->op == OP_REMOVE) {
+        r.event = "remove";
+    } else if (!before) {
+        r.event = "install";
+    } else if (strcmp(before, app->manifest.version)) {
+        r.event = "update";
+    } else if (app->installed.slot != app->op_slot) {
+        return "skip";
+    } else {
+        r.event = "reinstall";
+    }
+    r.prev = before;
+    char luma[24], region[8];
+    checks_luma_string(c, luma, sizeof(luma));
+    if (c->region_ok)
+        strcpy(region, "EUR");
+    else
+        snprintf(region, sizeof(region), "%u", c->region);
+    r.model = checks_model_name(c);
+    r.luma = c->is_luma ? luma + 1 : NULL;
+    r.region = region;
+    if (app->op == OP_INSTALL && app->worker.status == ENGINE_OK) {
+        r.slot = slot_name(app->op_slot);
+        r.glyphs = glyphs_name(j->glyphs_set);
+        r.font = font_reason(app);
+    }
+    r.ms = (int64_t)(app->stage_ms[STAGE_COUNT] - app->stage_ms[STAGE_CHECK]);
+    return stats_send(&app->stats, &r);
+}
+
+static void log_op(App *app)
+{
+    char line[1024];
+    op_line(app, line, sizeof(line));
+    const char *stats = send_report(app, line);
+    FILE *f = fopen(LOG_PATH, "a");
+    if (!f)
+        return;
+    fprintf(f, "%s %s stats=%s\n", app->manifest.version, line, stats);
     fclose(f);
 }
 
@@ -151,7 +230,8 @@ static void op_finished(App *app)
         return;
     }
     /* done: say so now, then reboot by itself - nothing is left to do after the reboot */
-    app->reboot_frames = REBOOT_SECONDS * 60;
+    /* by the clock, not by frames: the frame rate is not steady while a report is sent */
+    app->reboot_at = osGetTime() + REBOOT_SECONDS * 1000;
     go(app, SCREEN_DONE);
 }
 
@@ -447,6 +527,8 @@ static void draw_main_top(const App *app)
     snprintf(buf, sizeof(buf), "%s вільно", size);
     draw_chip(&x, 178, buf, c->sd_free >= SD_NEEDED);
     draw_chip(&x, 178, "Заряд", c->battery >= BATTERY_MIN || c->charging);
+    if (app->stats.enabled)
+        ui_text(24, 212, 10, FONT_BOLD, COL_FAINT, "Анонімна статистика увімкнена — змінити в Допомозі");
 }
 
 static void draw_main_bottom(const App *app)
@@ -677,15 +759,17 @@ static void draw_done_bottom(const App *app)
                  app->op == OP_REMOVE ? "Щоб зміни набули сили, консоль зараз перезавантажиться. Застосунок лишається в Меню HOME."
                                       : "Щоб українська запрацювала всюди, консоль зараз перезавантажиться. Відкривати застосунок "
                                         "знову не потрібно.");
-    snprintf(countdown, sizeof(countdown), "автоматично через %d с", (app->reboot_frames + 59) / 60);
+    u64 now = osGetTime();
+    int left = app->reboot_at > now ? (int)((app->reboot_at - now + 999) / 1000) : 1;
+    snprintf(countdown, sizeof(countdown), "автоматично через %d с", left);
     draw_primary(done_button, ICON_POWER, "Перезавантажити", app->rebooting ? "перезавантаження…" : countdown, true);
     draw_hints("A", "Перезавантажити зараз", NULL, NULL);
 }
 
 static void update_done(App *app, const Input *in)
 {
-    if (((in->down & KEY_A) || hit(in, done_button)) && !app->rebooting && app->reboot_frames > 1)
-        app->reboot_frames = 1; /* app_update() reboots on the next frame */
+    if (((in->down & KEY_A) || hit(in, done_button)) && !app->rebooting && app->reboot_at > osGetTime())
+        app->reboot_at = osGetTime(); /* app_update() reboots on the next frame */
 }
 
 /* ---------------------------------------------------------------- installed */
@@ -800,11 +884,10 @@ static void update_rescue(App *app, const Input *in)
 
 /* ---------------------------------------------------------------- help */
 
-static Rect help_row[2] = {{14, 14, 292, 52}, {14, 74, 292, 52}};
+static Rect help_row[3] = {{14, 14, 292, 52}, {14, 74, 292, 52}, {14, 134, 292, 52}};
 
 static void draw_help_top(const App *app)
 {
-    (void)app;
     const float module = 4, quiet = 10, size = QR_SIZE * module + 2 * quiet;
     float x0 = 18, y0 = (SCREEN_H - size) / 2;
     ui_card(x0, y0, size, size, 12, COL_WHITE, 1.5f);
@@ -820,13 +903,33 @@ static void draw_help_top(const App *app)
     ui_card(tx, 162, tw, 32, 7, COL_CARD, 0);
     ui_icon(ICON_TELEGRAM, tx + 17, 178, 15, COL_TELEGRAM);
     ui_text(tx + 32, 170, 13, FONT_HEAVY, COL_INK, QR_URL);
+
+    /* small on purpose: for a photo of this screen sent to us, not for reading */
+    char id[REPORT_ID_LEN + 2], line[24];
+    report_id_display(app->stats.id, id);
+    snprintf(line, sizeof(line), "ID %s", id);
+    ui_text(TOP_W - 10 - ui_text_width(9, FONT_BOLD, line), SCREEN_H - 16, 9, FONT_BOLD, COL_MUTED, line);
+}
+
+/* The statistics box: a tile with a tick on its right. */
+static void draw_stats_tile(Rect r, bool on)
+{
+    draw_tile(r, ICON_SHIELD, "Анонімна статистика", COL_INK, false);
+    float bx = r.x + r.w - 38, by = r.y + (r.h - 24) / 2;
+    if (on) {
+        ui_rrect(bx, by, 24, 24, 6, COL_GREEN);
+        ui_icon(ICON_CHECK, bx + 12, by + 12, 14, COL_WHITE);
+    } else {
+        ui_rrect(bx, by, 24, 24, 6, COL_FAINT);
+        ui_rrect(bx + 2, by + 2, 20, 20, 5, COL_WHITE);
+    }
 }
 
 static void draw_help_bottom(const App *app)
 {
-    (void)app;
     draw_tile(help_row[0], ICON_POWER, "Консоль не запускається", COL_INK, false);
     draw_tile(help_row[1], ICON_LIST, "Перевірити консоль", COL_INK, false);
+    draw_stats_tile(help_row[2], app->stats.enabled);
     draw_hints("B", "Назад", NULL, NULL);
 }
 
@@ -836,6 +939,8 @@ static void update_help(App *app, const Input *in)
         go(app, SCREEN_RESCUE);
     else if (hit(in, help_row[1]))
         go(app, SCREEN_CHECK);
+    else if (hit(in, help_row[2]))
+        stats_set_enabled(&app->stats, !app->stats.enabled);
     else if (in->down & KEY_B)
         app->screen = app->back, app->focus = 0;
 }
@@ -985,7 +1090,7 @@ static void update_luma(App *app, const Input *in)
             show_error(app, "Не вдалося змінити налаштування", "Файл luma/config.ini не вдалося записати.", false);
             return;
         }
-        app->reboot_frames = 1;
+        app->reboot_at = osGetTime();
     } else if (in->down & KEY_B) {
         go(app, home_screen(app));
     }
@@ -1003,6 +1108,7 @@ void app_init(App *app)
         free(text);
     }
     checks_run(&app->console, app->manifest_ok ? &app->manifest : NULL);
+    stats_init(&app->stats);
 
     /* a cut during an earlier run: finish the folder swaps it left before anything else */
     engine_recover(SD_ROOT);
@@ -1024,6 +1130,7 @@ void app_exit(App *app)
     if (app->working) /* the app is closing (power, APT): let the worker reach a clean stop */
         while (!install_poll(&app->worker))
             svcSleepThread(10 * 1000 * 1000);
+    stats_exit(&app->stats);
     if (app->has_installed)
         installed_free(&app->installed);
     if (app->manifest_ok)
@@ -1057,7 +1164,7 @@ static int screen_targets(const App *app, Target *t)
         ADD(inst_exit, 10);
         break;
     case SCREEN_RESCUE: ADD(rescue_button, 14); break;
-    case SCREEN_HELP: ADD(help_row[0], 11); ADD(help_row[1], 11); break;
+    case SCREEN_HELP: ADD(help_row[0], 11); ADD(help_row[1], 11); ADD(help_row[2], 11); break;
     case SCREEN_CONFIRM: ADD(confirm_cancel, 11); ADD(confirm_remove, 14); break;
     case SCREEN_ERROR: ADD(error_button, 14); break;
     case SCREEN_LUMA: ADD(luma_button, 14); break;
@@ -1157,9 +1264,14 @@ void app_update(App *app, const Input *raw)
     }
     if (app->working && install_poll(&app->worker))
         op_finished(app);
-    if (app->reboot_frames > 0 && --app->reboot_frames == 0 && !app->rebooting) {
-        app->rebooting = true;
-        install_reboot();
+    if (app->reboot_at && osGetTime() >= app->reboot_at && !app->rebooting) {
+        /* a report still on its way: hold the reboot a little, never more than STATS_WAIT_MS */
+        if (!app->reboot_deadline)
+            app->reboot_deadline = osGetTime() + STATS_WAIT_MS;
+        if (stats_settled(&app->stats, app->reboot_deadline)) {
+            app->rebooting = true;
+            install_reboot();
+        }
     }
     if (app->screen == SCREEN_PROGRESS)
         return; /* nothing to press while it works, START included */

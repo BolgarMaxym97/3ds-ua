@@ -42,7 +42,7 @@ ICON		:=	../dist_installer/art/icon.png
 #---------------------------------------------------------------------------------
 TARGET		:=	3ds-ua-installer
 BUILD		:=	build
-SOURCES		:=	source source/sysfont source/payload source/engine
+SOURCES		:=	source source/sysfont source/payload source/engine source/stats
 DATA		:=	data
 INCLUDES	:=	include
 GRAPHICS	:=	gfx

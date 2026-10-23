@@ -176,7 +176,8 @@ AccessControlInfo:
   InterruptNumbers:
 
   # What the app calls: APT, fs, gsp, hid, cfg, ptm (battery), am (title versions),
-  # ndm (holding background downloads off), ns (reboot into the app).
+  # ndm (holding background downloads off), ns (reboot into the app), and for the
+  # statistics ac (is there Wi-Fi), http, ps (random bytes for the install id).
   ServiceAccessControl:
     - APT:U
     - APT:A
@@ -191,6 +192,9 @@ AccessControlInfo:
     - am:net
     - am:u
     - ndm:u
+    - ac:u
+    - http:C
+    - ps:ps
     - ns:s
     - pxi:dev
     - srv:pm

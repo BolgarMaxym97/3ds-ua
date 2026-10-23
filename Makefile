@@ -106,7 +106,7 @@ installer-makerom:
 		-elf 3ds-ua-installer.elf -icon 3ds-ua-installer.smdh -banner ../dist_installer/art/banner.bnr \
 		-major $(word 1,$(subst ., ,$(VERSION))) -minor $(word 2,$(subst ., ,$(VERSION))) -micro $(word 3,$(subst ., ,$(VERSION)))
 
-installer-test: ## host tests of the installer's font builder, payload and install engine (after installer-data)
+installer-test: ## host tests of the installer's font builder, payload, install engine and stats report (after installer-data)
 	@mkdir -p tmp
 	cc -std=c99 -O2 -Wall -Wextra -Werror -o tmp/sysfont_test installer/tests/sysfont_test.c installer/source/sysfont/*.c
 	tmp/sysfont_test work/$(FONT_TID)/cbf_std.bcfnt.lz dist_sysfont/upturn.bin dist_sysfont/cbf_std.bcfnt.lz
@@ -116,6 +116,8 @@ installer-test: ## host tests of the installer's font builder, payload and insta
 	cc -std=c99 -O2 -Wall -Wextra -Werror -D_DEFAULT_SOURCE -o tmp/engine_test installer/tests/engine_test.c \
 		installer/source/engine/*.c installer/source/payload/*.c installer/source/sysfont/sha256.c -lz
 	tmp/engine_test dist_installer/romfs/data tmp/console/config.ini tmp/engine_sd
+	cc -std=c99 -O2 -Wall -Wextra -Werror -o tmp/report_test installer/tests/report_test.c installer/source/stats/report.c
+	tmp/report_test
 
 validate: ## check translations (glyphs, width, line count, tags) - covers both slots at once
 	$(PY) tools/validate.py

@@ -104,6 +104,16 @@
 
 **Один виняток.** Вбудовані підказки у Сповіщеннях консоль колись скопіювала собі в NAND, і файлами на SD-карті їх уже не дістати — мод переписує їх у самій базі. Після видалення мода вони лишаться українськими (не зіпсованими — просто українськими). Нові листи мод не чіпає.
 
+## Анонімна статистика
+
+Щоб знати, скільки консолей українізовано і де щось ламається, застосунок після встановлення, оновлення, видалення чи помилки надсилає короткий звіт. Тільки якщо консоль під'єднана до Wi-Fi і на екрані «Допомога» стоїть галочка «Анонімна статистика» — вона ввімкнена одразу, зняти можна будь-коли. Без Wi-Fi чи без галочки застосунок навіть не пробує з'єднатися.
+
+**Що в звіті:** випадковий ID установки (його видно дрібно внизу екрана «Допомога»), що сталося (встановлення, оновлення, видалення, помилка), версія застосунку, модель консолі, версія системи й Luma, регіон, яку мову замінила українська, чи поставилися справжні літери, скільки тривало і короткий технічний підсумок — час етапів, а для помилки етап і файл.
+
+**Чого немає:** IP-адреси, країни, серійного номера, Friend Code, імені, Mii — нічого, що вказує на вас. ID — просто випадкові символи, створені на консолі; він лежить у `3ds/3ds-ua-installer.ini`, і якщо видалити цей файл, наступного разу буде новий.
+
+Якщо щось не працює, надішліть у [Telegram-канал](https://t.me/side_quest_ua) фото екрана «Допомога»: за ID ми знайдемо ваш звіт. Так само за ID видалимо ваші записи, якщо попросите. Сервер — Cloudflare Worker і база D1, код у [stats/](stats/).
+
 ## Чого поки що немає
 
 - **України в списку країн немає.** У таблиці кодів країн Nintendo її немає взагалі: європейський блок суцільний, без пропусків, `…99 Румунія, 100 Росія, 101 Сербія…`. Код країни — системна величина, від якої залежать NNID, eShop і вікові рейтинги, і нового рядка в таблицю не вставити. Раніше мод перейменовував код `100` на «Україна» разом з його областями — але **назву за цим кодом кожен читає своєю таблицею**, тому інші гравці в онлайні, NNID, eShop і StreetPass однаково бачили «Росія», а українська область показувалася їм російською, що стоїть під тим самим номером. Тепер список показує те, що консоль справді повідомляє: код `100` — це `росія (болота)` з її ж 83 областями, усе з малої літери. Плутанини регіонів в онлайні більше немає.
@@ -238,6 +248,16 @@ Grab one archive from [Releases](../../releases): `-from-ru-` puts Ukrainian in 
 **Installed from an archive:** delete the mod folders from `SD:/luma/titles/` — every one is listed in [the table](docs/internals.en.md#what-each-folder-under-lumatitles-is) (32 on New 3DS, 30 on Old 3DS) — or install the app and press «Видалити».
 
 **One exception.** The built-in Notification tips were copied into NAND by the console long ago, and no file on the SD card can reach them — the mod rewrites them inside that database. After you remove the mod they stay Ukrainian (not corrupted — simply Ukrainian). New notifications are never touched.
+
+### Anonymous statistics
+
+To know how many consoles run the mod and where it breaks, the app sends a short report after an install, update, removal or error. Only when the console is on Wi-Fi and the «Анонімна статистика» box on the Help screen is ticked — it is on from the start and can be unticked at any time. Without Wi-Fi or without the tick the app does not even try to connect.
+
+**In a report:** a random install ID (shown in small print at the bottom of the Help screen), what happened (install, update, removal, error), the app version, the console model, the system and Luma versions, the region, which language Ukrainian replaced, whether the real letters went on, how long it took, and a short technical summary — the stage timings, and for an error the stage and the file.
+
+**Not in it:** IP address, country, serial number, Friend Code, name, Mii — nothing that points to you. The ID is just random characters made on the console; it lives in `3ds/3ds-ua-installer.ini`, and deleting that file gives a new one next time.
+
+If something doesn't work, send a photo of the Help screen to the [Telegram channel](https://t.me/side_quest_ua): the ID finds your report. Ask, and the ID is also how we delete your records. The server is a Cloudflare Worker with a D1 database; the code is in [stats/](stats/).
 
 ### Known limits
 
