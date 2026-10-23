@@ -1,37 +1,31 @@
-"""Generate the UniStore that installs, updates and removes the mod from the console itself.
+"""Generate the UniStore and the Universal-DB entry that hand out the installer app.
 
 Usage:
     python3 tools/unistore.py            # version read from Makefile
-    python3 tools/unistore.py 1.8.0
+    python3 tools/unistore.py 2.0.0
+    python3 tools/unistore.py --udb      # unistore/universal-db.json for Universal-Team/db
     python3 tools/unistore.py --check
 
-Output: unistore/3ds-ua.unistore, a Universal-Updater store served straight out of `main`.
-The user adds STORE_URL once in Universal-Updater and from then on installs, updates and
-removes the translation without ever taking the SD card out of the console.
+From 2.0.0 the mod is installed by its own app, "Українізатор 3DS" (installer/): a CIA that
+carries every build and picks the files, the Luma settings and the font on the console. Both
+stores therefore do one thing - put that CIA on the console - and everything the 1.x scripts
+did (two questions, four download branches, a 32-folder rmdir wipe) moved into the app.
 
-The store is one entry with three scripts, and every number in it is derived - the folder
-list from build.TITLES, the asset names from package.archive_name(), the jump offsets from
-the step lists themselves. Nothing here is a copy of anything.
+unistore/3ds-ua.unistore is the project's own store, served straight out of `main`. Users who
+added it in the 1.x days keep it, so it stays alive: one entry, one script, the same three
+steps Universal-DB generates for a CIA asset. Its download pattern leaves the version open,
+so the store needs no edit between releases - only a fresh `last_updated` to draw the arrow.
 
-Four things about Universal-Updater shape this file, all read out of its source rather than
-its wiki:
+unistore/universal-db.json is the submission for Universal-Team/db (source/apps/3ds-ua.json).
+It carries no scripts: without a `scripts` key Universal-DB generates one per release asset,
+and `download_filter` keeps that to the CIA - the four zips stay in the release for manual
+installs (Universal-DB skips archives anyway unless the entry maps them with `archive`, see
+generate.py). `unique_ids` is the app's own, from installer/cia.rsf.
 
-`runFunctions` loops `for(i...; ret == NONE; i++)`, so the first step that fails kills the
-rest of the script. `deleteFile` on a missing file returns DELETE_ERROR, which counts as a
-failure - so a generated "delete every file we ship" list is impossible, because the Old 3DS
-card legitimately lacks the New 3DS files. `rmdir` is the opposite: harmless when the folder
-is absent, but it asks the user to confirm every folder that *is* there. That is why the
-32-folder wipe lives in its own scripts instead of running before every routine update.
+Two things about Universal-Updater shape this file, both read out of its source:
 
-`promptMessage` is a real branch: answering no jumps `count` steps ahead, and `name` makes
-Universal-Updater remember the answer under "<info.title>/<name>". That remembering is the
-closest thing to detecting the console model, which no store script can do - hence the two
-questions, and hence info.title being frozen forever.
-
-`extractFile` matches each archive member with regex_search and writes it to
-`output + match.suffix()` - the matched part is the prefix it strips. So "^luma/" with
-"/luma/" reproduces the card layout and leaves README.txt in the archive, while the obvious
-looking "^luma/.*" would consume the whole name and pile every file onto one path.
+`downloadRelease` matches the asset name with std::regex_match against the latest release,
+so the pattern must cover the whole name and must not catch the zips.
 
 The green update arrow comes from Meta::UpdateAvailable, which compares info.last_updated as
 a string against what it recorded when the user last ran a script. info.version has nothing
@@ -48,19 +42,18 @@ import subprocess
 import sys
 import urllib.error
 import urllib.request
-import zipfile
 from datetime import datetime, timedelta, timezone
 from pathlib import Path
 
 sys.path.insert(0, str(Path(__file__).parent))
 import package  # noqa: E402
-import variant  # noqa: E402
-from build import TITLES  # noqa: E402
 
 ROOT = Path(__file__).resolve().parent.parent
 STORE_DIR = ROOT / "unistore"
 STORE_FILE = STORE_DIR / "3ds-ua.unistore"
 SHEET_FILE = STORE_DIR / "3ds-ua.t3x"
+UDB_FILE = STORE_DIR / "universal-db.json"
+RSF_FILE = ROOT / "installer" / "cia.rsf"
 
 REPO = "BolgarMaxym97/3ds-ua"
 # The person. REPO above keeps the account name because it is part of a URL; this one is
@@ -90,15 +83,16 @@ def sheet_url(branch: str) -> str:
         return SHEET_URL
     return SHEET_URL.replace("/main/", f"/{branch}/", 1)
 
+
 # Universal-Updater draws store text with whatever font the console has, and the uppercase
 # Ukrainian letters І Ї Є Ґ are not in it - they reach the screen as "?", which is how
 # "ЧЕРЗІ" arrived as "ЧЕРЗ?" and "РОСІЙСЬКУ" as "РОС?ЙСЬКУ". The lowercase ones do render
 # for anyone running Universal-Updater in Ukrainian, so the fix is not the mod's homoglyph
 # substitution (which would turn every і into a Latin i) but simply never writing those four
 # capitals - no ALL-CAPS word that contains one. check() enforces it.
-# Paths Universal-Updater checks to decide whether the entry is installed. Both are ours and
-# both live in the shared tree, so they exist in all four archives; a slot-dependent path
-# would report "not installed" to half the users.
+# Paths Universal-Updater checks to decide whether the entry is installed: the mod's own
+# files, in the shared tree of every build, so a card set up by the app, by the 1.x scripts
+# or by hand all count.
 INSTALLED_FILES = [
     "/luma/titles/0004003000009802/banner_22800.bin",
     "/luma/titles/0004003000009B02/romfs/2000",
@@ -119,14 +113,13 @@ def drawable(text: str) -> str:
     return text.translate(str.maketrans(CAPS_FIX))
 
 
-# Universal-Updater saves a prompt answer under "<ENTRY_TITLE>/<name>", so renaming the entry
-# silently forgets which console model and language slot every existing user already told it.
-# Treat it as frozen from here on - it was last changed while nobody had answers worth keeping.
+# Universal-Updater saves prompt answers under "<ENTRY_TITLE>/<name>", and Universal-DB keys
+# the entry by it. Treat it as frozen.
 ENTRY_TITLE = "Українізатор 3DS/2DS"
 
-# Where the archive is downloaded before it is unpacked. /3ds/ exists on every CFW card, so
-# downloadRelease never has to create the parent, and the file is deleted one step later.
-TEMP_ZIP = "/3ds/3ds-ua.zip"
+# Where the CIA is downloaded before it is installed and deleted again. /3ds/ exists on every
+# CFW card, so downloadRelease never has to create the parent.
+TEMP_CIA = "/3ds/3ds-ua-installer.cia"
 
 # Universal-Updater renders release notes as plain text in a small box; past this much it is
 # a scrolling wall nobody reads.
@@ -135,99 +128,43 @@ NOTES_LIMIT = 1200
 TIMESTAMP = "%Y-%m-%d at %H:%M (UTC)"
 TIMESTAMP_RE = re.compile(r"^\d{4}-\d{2}-\d{2} at \d{2}:\d{2} \(UTC\)$")
 
-MODELS = ("new3ds", "old3ds")
-SLOTS = ("ru", "en")
+INSTALL = "Встановити застосунок"
+INSTALL_STEPS = ["downloadRelease", "installCia", "deleteFile"]
 
-MODEL_WORDS = {"new3ds": "New 3DS / New 2DS XL", "old3ds": "Old 3DS / Old 2DS"}
-SLOT_WORDS = {"ru": "замість російської", "en": "замість англійської"}
-
-INSTALL = "1. Встановити / оновити"
-UNINSTALL = "2. Видалити українізатор"
-
-# Nothing on the shell says "New", so the question has to name parts the user can see. The
-# C-stick and the ZL/ZR buttons exist on every New model and on none of the older ones.
-#
-# Both questions end with the same hint, because a store script cannot tell an install from
-# an update: none of Universal-Updater's twelve step types reads the card and branches on
-# what it finds. What it does have is a saved answer - a prompt carrying a `name` shows a
-# "Save your selection?" checkbox, and once it is ticked every later run answers itself
-# without even stopping in the queue. That is what turns the second run into a plain update.
-SAVE_HINT = (
-    "\n\n"
-    "Щоб надалі не питали: натисніть Y - унизу\n"
-    "з'явиться позначка \"Save your selection?\" -\n"
-    "і аж тоді A або B. Наступного разу\n"
-    "оновлення піде без питань."
-)
-
-ASK_MODEL = (
-    "У вас New 3DS, New 3DS XL або New 2DS XL?\n\n"
-    "Ознаки New: маленький сірий C-стик над кнопками\n"
-    "A/B/X/Y і додаткові кнопки ZL/ZR згори.\n"
-    "Немає їх - відповідайте Ні."
-    + SAVE_HINT
-)
-ASK_SLOT = (
-    "Замінити російську мову?\n\n"
-    "Ні = замінити англійську."
-    + SAVE_HINT
-)
-
-DONE_NOTE = (
-    "Готово.\n\n"
-    "1. Вимкніть і увімкніть консоль, тримаючи SELECT,\n"
-    "   увімкніть Enable game patching, натисніть START.\n"
-    "2. Налаштування системи -> Інші налаштування ->\n"
-    "   Мова -> Українська.\n\n"
-    "Перезапуск консолі обов'язковий - без нього\n"
-    "українізатор не запрацює."
-)
-REMOVED_NOTE = (
-    "Українізатор видалено.\n\n"
-    "Перемкніть мову консолі в Налаштуваннях системи\n"
-    "і перезапустіть консоль - без перезапуску\n"
-    "частина написів лишиться українською."
-)
-
-# Shown inline, right before the script is handed to the queue - the only moment the user is
-# still looking at the screen that can explain the queue to them.
+# Shown inline, right before the script is handed to the queue - the one moment the user is
+# still looking at the screen that can tell them what comes next.
 PREINSTALL = (
-    "Встановлення і оновлення - той самий пункт.\n\n"
-    "УВАГА: Universal-Updater виконує все у черзі.\n"
-    "Якщо на питання ще не збережено відповідь,\n"
-    "відкрийте чергу третьою іконкою в лівій панелі -\n"
-    "питання чекають там, і без відповіді робота стоїть.\n\n"
-    "Потрібна Luma3DS v10.3 або новіша з увімкненим\n"
-    "Enable game patching (старіша не перекладе\n"
-    "Меню HOME), а мову консолі після встановлення\n"
-    "треба перемкнути вручну.\n\n"
-    "Видалення перепитає про кожну папку - їх до 32.\n"
-    "Тримайте A. Universal-Updater інакше теки\n"
-    "видаляти не вміє."
+    "Встановиться застосунок \"Українізатор 3DS\".\n\n"
+    "Коли черга закінчить, відкрийте його в меню HOME\n"
+    "і натисніть \"Встановити\". Застосунок сам вибере\n"
+    "файли для вашої консолі, увімкне потрібне в Luma\n"
+    "і перезавантажить консоль. Мову міняти не треба.\n\n"
+    "Потрібна Luma3DS v10.3 або новіша і консоль\n"
+    "європейського регіону (EUR). Видалити українізатор -\n"
+    "кнопкою \"Видалити\" в тому ж застосунку."
 )
 
 DESCRIPTION = (
     "Українська мова для системного інтерфейсу Nintendo 3DS/2DS."
 )
 
-# Universal-Updater does not read this field - it appears nowhere in its source and in none
-# of the 410 entries of the live Universal-DB store. It belongs to Universal-DB's submission
-# format (source/apps/<slug>.json), from which their site is built; their pipeline does not
-# copy it into the .unistore. Kept here so the two texts live together and the submission can
-# be filled from one place.
+# Universal-Updater does not read this field - it appears nowhere in its source. It belongs
+# to Universal-DB's submission format, from which their site is built. Kept here so the two
+# texts live together and the submission is filled from one place.
 LONG_DESCRIPTION = (
     "Перекладає системний інтерфейс Nintendo 3DS, 3DS XL, 2DS, New 3DS, New 3DS XL і "
     "New 2DS XL українською: Меню HOME, Налаштування системи, Інтернет-браузер, eShop, "
     "Камеру, Звук, Mii Maker, Журнал дій, електронні довідники та решту системних "
     "застосунків.\n\n"
-    "Українська стає на місце російського або англійського мовного слота - який саме, "
-    "питає під час установки. Потрібна Luma3DS v10.3 або новіша з увімкненим Enable game patching і "
-    "консоль європейського (EUR) регіону."
+    "Ставиться застосунком «Українізатор 3DS»: відкрийте його й натисніть «Встановити». "
+    "Він сам вибере файли для вашої консолі, увімкне потрібне в Luma, додасть у системний "
+    "шрифт справжні літери і, ї, є, ґ (шрифт читається з SD-карти, у NAND нічого не "
+    "пишеться) і перезавантажить консоль. Українська стає на місце російської або "
+    "англійської мови, мову консолі міняти не треба. Оновлення, зміна мови й видалення - "
+    "у тому ж застосунку.\n\n"
+    "Потрібна Luma3DS v10.3 або новіша (для справжніх літер - v13.0) і консоль "
+    "європейського (EUR) регіону."
 )
-
-
-
-UDB_FILE = STORE_DIR / "universal-db.json"
 
 # Universal-DB's own vocabulary: game, emulator, app, utility, save-tool, firm, luma3ds.
 # "do not just make up new categories" - so the store's own ["translation", "system"] cannot
@@ -238,35 +175,43 @@ UDB_CATEGORIES = ["utility"]
 # commits attributed to an LLM account. This one has them, so the honest answer is "yes".
 UDB_LLM = "yes"
 
-# The shared store's scripts ask nothing, so its notice says nothing about the queue - it
-# warns about the two things a stranger to this project would otherwise be surprised by.
-UDB_PREINSTALL = (
-    "Потрібна Luma3DS v10.3 або новіша з увімкненим\n"
-    "Enable game patching (старіша не перекладе Меню HOME).\n"
-    "Після встановлення перемкніть мову консолі:\n"
-    "Налаштування системи -> Інші налаштування -> Мова,\n"
-    "і перезапустіть консоль.\n\n"
-    "Видалення перепитує про кожну папку - їх до 32.\n"
-    "Universal-Updater інакше теки видаляти не вміє."
-)
+
+def unique_id() -> int:
+    """The app's Unique ID, read from the .rsf that makerom builds the CIA with."""
+    m = re.search(r"^\s*UniqueId\s*:\s*(0x[0-9A-Fa-f]+)", RSF_FILE.read_text(), re.M)
+    if not m:
+        raise SystemExit(f"no `UniqueId :` line in {RSF_FILE.relative_to(ROOT)}")
+    return int(m.group(1), 16)
 
 
-def udb_scripts() -> dict[str, list[dict]]:
-    """Named scripts, one per variant - no questions.
+def installer_pattern() -> str:
+    """The regex for the installer's release asset, whatever the version.
 
-    Universal-DB's own template asks for this: "Scripts are even able to ask the user
-    questions and react accordingly, however this should be avoided if possible as the entire
-    queue will pause until the question is answered." Our own store keeps the two prompts
-    because the entry stays a single line there; a shared store is read by people who have
-    never seen this project, and a paused queue looks like a hang.
+    Built from package.installer_name() so it cannot drift from the file `make installer-cia`
+    writes. Anchored, because Universal-DB applies `download_filter` with re.findall.
     """
-    scripts = {}
-    for model in MODELS:
-        for slot in SLOTS:
-            name = f"{MODEL_WORDS[model]} - {SLOT_WORDS[slot]}"
-            scripts[name] = download_steps(slot, model)
-    scripts["Видалити українізатор"] = wipe_steps()
-    return scripts
+    sentinel = "@@VERSION@@"
+    pattern = re.escape(package.installer_name(sentinel))
+    # re.escape also escapes the hyphens. `\-` is a legal identity escape in the ECMAScript
+    # grammar std::regex uses, but there is no reason to lean on that from here.
+    return "^" + pattern.replace("\\-", "-").replace(re.escape(sentinel), ".*") + "$"
+
+
+def install_steps() -> list[dict]:
+    """Download the CIA, install it, tidy up - what Universal-DB generates for a CIA asset."""
+    return [
+        {
+            "type": "downloadRelease",
+            "repo": REPO,
+            # std::regex_match covers the whole name on its own; the anchors stay harmless.
+            "file": installer_pattern(),
+            "output": TEMP_CIA,
+            "message": "Завантаження застосунку...",
+            "includePrereleases": False,
+        },
+        {"type": "installCia", "file": TEMP_CIA, "message": "Встановлення застосунку..."},
+        {"type": "deleteFile", "file": TEMP_CIA},
+    ]
 
 
 def build_udb(version: str) -> dict:
@@ -286,9 +231,10 @@ def build_udb(version: str) -> dict:
         "website": f"https://github.com/{REPO}",
         "icon": f"https://raw.githubusercontent.com/{REPO}/main/assets/unistore-icon.png",
         "llm_generation": UDB_LLM,
-        "preinstall_message": drawable(UDB_PREINSTALL),
+        "preinstall_message": drawable(PREINSTALL),
+        "unique_ids": [unique_id()],
         "installed_files": INSTALLED_FILES,
-        "scripts": udb_scripts(),
+        "download_filter": installer_pattern(),
     }
 
 
@@ -312,187 +258,6 @@ def revision_of(version: str) -> int:
     except ValueError:
         raise SystemExit(f"cannot derive a store revision from version {version!r}")
     return major * 10000 + minor * 100 + patch
-
-
-def title_folders() -> tuple[set[str], set[str]]:
-    """(Old 3DS card layout, New 3DS card layout) as sets of TIDs.
-
-    Mirrors what package.collect() puts in each archive: a title with `ships_to` is rebuilt
-    into its readers' folders and has none of its own, and a title with `loader_tid` lands in
-    the New 3DS overlay under both its own id and the Old 3DS id Luma looks it up by - see
-    write_loader_alias() in tools/build.py.
-    """
-    shared: set[str] = set()
-    overlay: set[str] = set()
-    for cfg in TITLES.values():
-        if cfg.get("ships_to"):
-            continue
-        loader = cfg.get("loader_tid")
-        if loader:
-            overlay.update(cfg["tids"])
-            overlay.add(loader)
-        else:
-            shared.update(cfg["tids"])
-    return shared, shared | overlay
-
-
-def removable_dirs() -> list[str]:
-    """Every /luma/titles/<TID> this project can have written, on either console.
-
-    One list serves both models because the New 3DS set is a superset. The nine titles that
-    tools/package.py:216 says must be deleted whole need no special case: rmdir is recursive,
-    so every folder goes whole regardless.
-    """
-    return [f"/luma/titles/{tid}" for tid in sorted(title_folders()[1])]
-
-
-def asset_pattern(slot: str, model: str) -> str:
-    """The regex Universal-Updater matches against the release's asset names.
-
-    downloadRelease matches with std::regex_match, so this can leave the version open and
-    the store then needs no edit between releases. Built from package.archive_name() so it
-    cannot drift from the file `make package` actually writes.
-    """
-    sentinel = "@@VERSION@@"
-    pattern = re.escape(package.archive_name(slot, sentinel, model))
-    # re.escape also escapes the hyphens. `\-` is a legal identity escape in the ECMAScript
-    # grammar std::regex uses, but there is no reason to lean on that from here.
-    return pattern.replace("\\-", "-").replace(re.escape(sentinel), ".*")
-
-
-class Label(str):
-    """A jump target. Occupies no step; resolve() turns it into a count."""
-
-
-def prompt(message: str, goto: str | None = None, name: str | None = None) -> dict:
-    step: dict = {"type": "promptMessage", "message": drawable(message)}
-    if name:
-        step["name"] = name
-    if goto:
-        step["_goto"] = goto
-    return step
-
-
-def skip(goto: str) -> dict:
-    return {"type": "skip", "_goto": goto}
-
-
-def resolve(items: list) -> list[dict]:
-    """Turn symbolic jumps into counts, so no offset in this file is ever written by hand.
-
-    Universal-Updater runs `i += count` and then the loop's own `i++`, for both step types,
-    so one rule covers both: the next step executed is `i + count + 1`.
-    """
-    steps = [item for item in items if not isinstance(item, Label)]
-    at: dict[str, int] = {}
-    seen = 0
-    for item in items:
-        if isinstance(item, Label):
-            at[str(item)] = seen
-        else:
-            seen += 1
-
-    for i, step in enumerate(steps):
-        goto = step.pop("_goto", None)
-        if goto is None:
-            continue
-        if goto not in at:
-            raise SystemExit(f"step {i} ({step['type']}) jumps to unknown label {goto!r}")
-        count = at[goto] - (i + 1)
-        if count < 1:
-            # 0 would be a branch that does nothing and a negative one would loop forever.
-            raise SystemExit(f"step {i} ({step['type']}) jumps to {goto!r} at offset {count}")
-        step["count"] = count
-    return steps
-
-
-def download_steps(slot: str, model: str) -> list[dict]:
-    """Download, unpack, tidy up. The one thing an install actually does."""
-    return [
-        {
-            "type": "downloadRelease",
-            "repo": REPO,
-            "file": asset_pattern(slot, model),
-            "output": TEMP_ZIP,
-            "message": "Завантаження архіву (~23 МБ)...",
-            "includePrereleases": False,
-        },
-        {
-            # "^luma/" is the prefix to strip, and /luma/ puts it back: extractFile writes to
-            # output + whatever follows the match. It also skips README.txt, which would
-            # otherwise be dropped in the card root.
-            "type": "extractFile",
-            "file": TEMP_ZIP,
-            "input": "^luma/",
-            "output": "/luma/",
-            "message": "Розпакування...",
-        },
-        {"type": "deleteFile", "file": TEMP_ZIP},
-    ]
-
-
-def branching(body) -> list:
-    """The two questions, then one of four branches. `body(slot, model)` supplies each.
-
-    Universal-Updater has no way to detect the console model or the system language, so the
-    choice has to be asked. It also has no inline execution: running a script only queues it,
-    and a queued promptMessage waits inside the Queue menu until the user goes there. That is
-    survivable but only if they are told, which is what `preinstall_message` is for - it is
-    shown inline at the one moment the user is still looking at the screen.
-    """
-    return [
-        prompt(ASK_MODEL, goto="OLD3DS", name="new3ds"),
-        prompt(ASK_SLOT, goto="EN_NEW", name="slot"),
-        *body("ru", "new3ds"),
-        skip("DONE"),
-        Label("EN_NEW"),
-        *body("en", "new3ds"),
-        skip("DONE"),
-        Label("OLD3DS"),
-        prompt(ASK_SLOT, goto="EN_OLD", name="slot"),
-        *body("ru", "old3ds"),
-        skip("DONE"),
-        Label("EN_OLD"),
-        *body("en", "old3ds"),
-        Label("DONE"),
-    ]
-
-
-def wipe_steps() -> list[dict]:
-    """Remove every folder the mod ships. One confirmation per folder, and that is that.
-
-    `rmdir` is the only step that deletes a directory, and it asks about every directory that
-    exists - unconditionally, with no setting behind it (`DELETE_PROMPT`, scriptUtils.cpp:349,
-    queueSystem.cpp:255) and no way to clear or pre-seed the answer, since UU keeps saved
-    prompt answers only for `promptMessage`.
-
-    File-level steps cannot replace it. `deleteFile`, `move` and `copy` each return an error
-    the moment their target is missing, and both executors loop while `ret == NONE`, so a
-    named file list aborts on any card that does not match it exactly. It also leaves the
-    `romfs/` directories behind, and an empty one still switches Luma's hook on
-    (`tools/layeredfs_check.py`) - which, with `code.ips` gone, is an exception screen on
-    every launch of that title.
-
-    Two attempts to avoid the prompts were made and both failed on hardware. Do not spend a
-    third evening on this:
-
-    1. `mkdir` each folder, `move` it into a scratch directory, delete that one directory.
-       libctru's SD devoptab does fall back from `FSUSER_RenameFile` to
-       `FSUSER_RenameDirectory` (archive_dev.c), so it looked sound. Not one folder moved.
-       UU ignores what `rename()` returns, so the failure was silent, and the `mkdir` half
-       made it worse by creating folders the card did not have - which `rmdir` then asked
-       about too.
-    2. The same with explicit `sdmc:` prefixes, on the theory that the destination device
-       could not be resolved without one (archive_fixpath falls back to `archive_device_cwd`
-       for a bare path). Same result: every folder still asked, plus the empty scratch
-       directory that `makeDirs()` had created on the way.
-
-    Whatever the reason, renaming a directory through this path does not work on the console.
-    """
-    return [
-        {"type": "rmdir", "directory": directory, "message": f"Видаляю {directory}"}
-        for directory in removable_dirs()
-    ]
 
 
 def release_notes(version: str, path: Path | None) -> str:
@@ -540,28 +305,13 @@ def build_store(version: str, revision: int, notes: str, branch: str) -> dict:
         "long_description": LONG_DESCRIPTION,
         "preinstall_message": drawable(PREINSTALL),
         "releasenotes": notes,
-        # CheckInstalled() calls a path existing "installed". Both of these are ours and both
-        # are in the shared tree, so they are there in all four archives. A slot-dependent
-        # path such as 000400100002C100/romfs/index_EU_Russian.html only exists in from-ru
-        # and would report "not installed" to half the users.
         "installed_files": INSTALLED_FILES,
         # No title_ids: CheckInstalled() resolves those with AM_GetTitleProductCode, which
         # would find the system titles on every console and mark the entry installed for all.
     }
 
     entry = {
-        INSTALL: {
-            "size": "~23 МБ",
-            "script": resolve(branching(download_steps) + [prompt(DONE_NOTE)]),
-        },
-        # Removal asks nothing, because rmdir is the only step Universal-Updater has that
-        # survives a card it cannot predict: it skips a folder that is not there instead of
-        # failing. Every file-level step - deleteFile, move, copy - returns an error the
-        # moment its target is missing, and the loop stops on the first error, so a named
-        # file list would have to know the exact console model, the exact language slot and
-        # the exact version installed, and would abort halfway on any mismatch. The price of
-        # rmdir is one confirmation per folder that exists.
-        UNINSTALL: wipe_steps() + [prompt(REMOVED_NOTE)],
+        INSTALL: {"size": cia_size(version), "script": install_steps()},
         "info": info,
     }
 
@@ -582,6 +332,14 @@ def build_store(version: str, revision: int, notes: str, branch: str) -> dict:
         info["sheet_index"] = 0
 
     return {"storeInfo": store_info, "storeContent": [entry]}
+
+
+def cia_size(version: str) -> str:
+    """The size line Universal-Updater shows next to the script, off the built CIA."""
+    path = ROOT / package.installer_name(version)
+    if not path.is_file():
+        raise SystemExit(f"no {path.name} - run `make installer-cia` first")
+    return f"~{round(path.stat().st_size / 1024 / 1024)} МБ"
 
 
 def stamped(doc: dict, stamp: bool) -> dict:
@@ -618,38 +376,6 @@ def stamped(doc: dict, stamp: bool) -> dict:
 
 
 # --------------------------------------------------------------------------- checks
-
-
-def simulate(steps: list[dict], answers: list[bool]) -> tuple[list[dict], list[str]]:
-    """Universal-Updater's runFunctions, as far as control flow goes.
-
-    Returns the steps that ran and the problems found on the way.
-    """
-    executed: list[dict] = []
-    problems: list[str] = []
-    pending = list(answers)
-    i = 0
-    while 0 <= i < len(steps):
-        step = steps[i]
-        kind = step["type"]
-        if kind == "promptMessage":
-            executed.append(step)
-            answer = pending.pop(0) if pending else True
-            if answer:
-                i += 1
-                continue
-            if "count" not in step:
-                return executed, problems     # no count means "no" cancels the script
-            i += 1 + step["count"]
-        elif kind == "skip":
-            i += 1 + step["count"]
-        else:
-            executed.append(step)
-            i += 1
-        if i > len(steps):
-            problems.append(f"jump out of range: landed on step {i} of {len(steps)}")
-            return executed, problems
-    return executed, problems
 
 
 def check(version: str, branch: str, verify_release: bool) -> list[str]:
@@ -696,39 +422,27 @@ def check(version: str, branch: str, verify_release: bool) -> list[str]:
         bad(f"info.last_updated {stamp!r} is not '{TIMESTAMP}' - updates would never show")
 
     scripts = {name: value for name, value in entry.items() if name != "info"}
-    expected_names = {INSTALL, UNINSTALL}
-    if set(scripts) != expected_names:
-        missing = expected_names - set(scripts)
-        extra = set(scripts) - expected_names
-        bad(f"script names differ - missing {sorted(missing)}, unexpected {sorted(extra)}")
-
-    known = {
-        "promptMessage", "skip", "downloadRelease", "extractFile",
-        "deleteFile", "rmdir", "mkdir", "move", "copy", "installCia", "downloadFile", "exit",
-    }
-    resolved = {}
-    for name, value in scripts.items():
-        steps = value["script"] if isinstance(value, dict) else value
-        resolved[name] = steps
-        for i, step in enumerate(steps):
-            if step.get("type") not in known:
-                bad(f"{name}[{i}]: unknown step type {step.get('type')!r}")
-            if "_goto" in step or "_label" in step:
-                bad(f"{name}[{i}]: unresolved jump marker leaked into the output")
-            if "count" in step and (not isinstance(step["count"], int) or step["count"] < 1):
-                bad(f"{name}[{i}]: count is {step['count']!r}")
+    if set(scripts) != {INSTALL}:
+        bad(f"scripts are {sorted(scripts)}, expected only {INSTALL!r} - removal is the app's job")
+    install = scripts.get(INSTALL, {}).get("script", [])
+    kinds = [step.get("type") for step in install]
+    if kinds != INSTALL_STEPS:
+        bad(f"{INSTALL}: runs {kinds}, expected {INSTALL_STEPS}")
+    else:
+        download, cia, delete = install
+        if len({download["output"], cia["file"], delete["file"]}) != 1:
+            bad(f"{INSTALL}: the three steps disagree about the temp file")
+        if download["file"] != installer_pattern():
+            bad(f"{INSTALL}: downloads {download['file']!r}, expected {installer_pattern()!r}")
 
     # Every string the console will draw, checked for the four capitals its font lacks.
     visible = {"info.title": info.get("title", ""),
                "info.description": info.get("description", ""),
-               "info.preinstall_message": info.get("preinstall_message", "")}
-    for name, value in entry.items():
-        if name == "info":
-            continue
-        visible[f"script name {name!r}"] = name
-        for i, step in enumerate((value["script"] if isinstance(value, dict) else value)):
-            if "message" in step:
-                visible[f"{name}[{i}].message"] = step["message"]
+               "info.preinstall_message": info.get("preinstall_message", ""),
+               f"script name {INSTALL!r}": INSTALL}
+    for i, step in enumerate(install):
+        if "message" in step:
+            visible[f"{INSTALL}[{i}].message"] = step["message"]
     # long_description is deliberately absent from `visible`: the console never draws it.
     for where, text in visible.items():
         found = sorted({c for c in text if c in FORBIDDEN_GLYPHS})
@@ -736,81 +450,46 @@ def check(version: str, branch: str, verify_release: bool) -> list[str]:
             bad(f"{where}: {''.join(found)} - the console font has no such glyph and draws "
                 f"'?' instead; reword rather than shouting")
 
-    # Prompts wait inside the Queue menu, so the entry must be the thing that says so. If
-    # this instruction is ever dropped while the scripts still ask questions, the console
-    # looks like it did nothing at all - which is exactly how this went wrong once.
-    if any(step["type"] == "promptMessage" and "count" in step
-           for steps in resolved.values() for step in steps):
-        # "черга" alternates to "черзі" in the locative, so match both stems.
-        message = info.get("preinstall_message", "").lower()
-        if not any(stem in message for stem in ("черг", "черз")):
-            bad("the scripts ask questions but preinstall_message never mentions the queue")
-
-    expected_dirs_ordered = removable_dirs()
-    expected_dirs = set(expected_dirs_ordered)
-
-    whole_only = [
-        "/luma/titles/0004001000022300",     # Health and Safety, reads a romfs blob off SD
-        "/luma/titles/000400300000D002",     # swkbd
-        "/luma/titles/000400300000C502",     # error applet
-    ]
-    for directory in whole_only:
-        if directory not in expected_dirs:
-            bad(f"{directory} must be in the wipe list - it is a whole-folder title")
-
-    # Both branching scripts, walked the way the console walks them.
-    for is_new3ds in (True, False):
-        for is_ru in (True, False):
-            answers = [is_new3ds, is_ru]
-            model = "new3ds" if is_new3ds else "old3ds"
-            slot = "ru" if is_ru else "en"
-
-            executed, sim = simulate(resolved.get(INSTALL, []), answers)
-            for problem in sim:
-                bad(f"{INSTALL} {answers}: {problem}")
-            kinds = [step["type"] for step in executed if step["type"] != "promptMessage"]
-            if kinds != ["downloadRelease", "extractFile", "deleteFile"]:
-                bad(f"{INSTALL} {answers}: ran {kinds}")
-            else:
-                download, extract, delete = [s for s in executed if s["type"] != "promptMessage"]
-                want = asset_pattern(slot, model)
-                if download["file"] != want:
-                    bad(f"{INSTALL} {answers}: downloads {download['file']!r}, expected {want!r}")
-                if len({download["output"], extract["file"], delete["file"]}) != 1:
-                    bad(f"{INSTALL} {answers}: the three steps disagree about the temp file")
-            if executed[-1].get("message") != drawable(DONE_NOTE):
-                bad(f"{INSTALL} {answers}: did not end on the closing note")
-
-
-    # Removal: nothing but rmdir over exactly the shipped folders, plus the closing note.
-    removal = resolved.get(UNINSTALL, [])
-    kinds = {step["type"] for step in removal}
-    if kinds != {"rmdir", "promptMessage"}:
-        # mkdir/move here means someone is retrying the scratch-directory trick; it does not
-        # work on hardware and its mkdir half creates folders the card never had.
-        bad(f"{UNINSTALL}: contains {sorted(kinds)}, expected only rmdir and the closing note")
-    if any("count" in step for step in removal if step["type"] == "promptMessage"):
-        bad(f"{UNINSTALL}: asks a question - removal must not depend on model or slot")
-    if not removal or removal[-1].get("message") != drawable(REMOVED_NOTE):
-        bad(f"{UNINSTALL}: does not end on the closing note")
-
-    dirs = [step["directory"] for step in removal if step["type"] == "rmdir"]
-    if len(dirs) != len(set(dirs)):
-        bad(f"{UNINSTALL}: duplicate rmdir entries")
-    if dirs != expected_dirs_ordered:
-        missing = set(expected_dirs_ordered) - set(dirs)
-        extra = set(dirs) - set(expected_dirs_ordered)
-        if missing:
-            bad(f"{UNINSTALL}: not removed: {sorted(missing)}")
-        if extra:
-            bad(f"{UNINSTALL}: removes folders we never ship: {sorted(extra)}")
-
+    problems += check_udb(version)
     problems += check_sheet(store_info, info)
     problems += check_against_committed(doc)
-
-    problems += check_archives(version, resolved.get(INSTALL, []))
+    problems += check_assets(version)
     if verify_release:
-        problems += check_release(resolved.get(INSTALL, []))
+        problems += check_release(install)
+    return problems
+
+
+def check_udb(version: str) -> list[str]:
+    """The written submission file is what this script would write now."""
+    if not UDB_FILE.is_file():
+        return [f"no {UDB_FILE.relative_to(ROOT)} - run `make udb`"]
+    written = json.loads(UDB_FILE.read_text())
+    if written != build_udb(version):
+        return [f"{UDB_FILE.relative_to(ROOT)} is stale - run `make udb`"]
+    if "scripts" in written or "archive" in written:
+        return [f"{UDB_FILE.name}: scripts/archive would replace the scripts Universal-DB "
+                f"generates for the CIA"]
+    return []
+
+
+def check_assets(version: str) -> list[str]:
+    """The download pattern against the five files a release carries.
+
+    Exactly the CIA must match - in Universal-Updater's regex_match and in Universal-DB's
+    re.findall over `download_filter` alike - and none of the four zips.
+    """
+    problems: list[str] = []
+    cia = package.installer_name(version)
+    zips = [package.archive_name(slot, version, model)
+            for slot in ("ru", "en") for model in ("old3ds", "new3ds")]
+    for name in [cia, *zips]:
+        if not (ROOT / name).is_file():
+            problems.append(f"{name} is not in the repo root - run `make release` first")
+    pattern = installer_pattern()
+    for name in [cia, *zips]:
+        hit = bool(re.fullmatch(pattern, name)) and bool(re.findall(pattern, name))
+        if hit != (name == cia):
+            problems.append(f"{pattern!r} {'matches' if hit else 'misses'} {name}")
     return problems
 
 
@@ -902,74 +581,6 @@ def check_against_committed(doc: dict) -> list[str]:
     return problems
 
 
-def check_archives(version: str, install: list[dict]) -> list[str]:
-    """The store's regexes against the archives `make package` actually wrote."""
-    problems: list[str] = []
-    patterns = {s["file"] for s in install if s["type"] == "downloadRelease"}
-    expected_old, expected_new = title_folders()
-
-    # Take the extract rule from the store itself rather than restating it here - that is the
-    # whole point of this check. "^luma/.*" would consume the entire member name and leave an
-    # empty suffix, piling every file onto one path, and a test that hard-codes "^luma/"
-    # would never notice.
-    extracts = {(s["input"], s["output"]) for s in install if s["type"] == "extractFile"}
-    if len(extracts) != 1:
-        return [f"the install script has {len(extracts)} different extract rules: {sorted(extracts)}"]
-    (rule, destination), = extracts
-    try:
-        member_re = re.compile(rule)
-    except re.error as exc:
-        return [f"extractFile input {rule!r} is not a valid regex: {exc}"]
-
-    for slot in SLOTS:
-        for model in MODELS:
-            name = package.archive_name(slot, version, model)
-            path = ROOT / name
-            if not path.is_file():
-                problems.append(f"{name} is not in the repo root - run `make package` first")
-                continue
-
-            want = asset_pattern(slot, model)
-            matched = [p for p in patterns if re.fullmatch(p, name)]
-            if matched != [want]:
-                problems.append(f"{name} is matched by {matched}, expected only {want!r}")
-
-            members = zipfile.ZipFile(path).namelist()
-            tids = set()
-            landings = set()
-            for member in members:
-                m = member_re.search(member)
-                if not m:
-                    if member != "README.txt":
-                        problems.append(f"{name}: {member} is outside luma/ and would be skipped")
-                    continue
-                # Exactly what extractArchive() writes: output + whatever follows the match.
-                landed = destination + member[m.end():]
-                landings.add(landed)
-                parts = landed.split("/")
-                if len(parts) < 5 or parts[1] != "luma" or parts[2] != "titles":
-                    problems.append(f"{name}: {member} would land on {landed!r}")
-                    continue
-                tids.add(parts[3])
-
-            extracted = len([m for m in members if member_re.search(m)])
-            if len(landings) != extracted:
-                problems.append(
-                    f"{name}: {extracted} members would be written to only {len(landings)} "
-                    f"path(s) - the extract rule swallows part of the name it should keep"
-                )
-
-            expected = expected_new if model == "new3ds" else expected_old
-            if tids != expected:
-                problems.append(
-                    f"{name}: ships {len(tids)} title folders, derivation says {len(expected)} "
-                    f"(difference: {sorted(tids ^ expected)})"
-                )
-            if not tids <= set(t.rsplit('/', 1)[-1] for t in removable_dirs()):
-                problems.append(f"{name}: ships folders the uninstall script does not remove")
-    return problems
-
-
 def check_release(install: list[dict]) -> list[str]:
     """Resolve the store's patterns against the real release, the way the console will.
 
@@ -1020,9 +631,9 @@ def main() -> int:
     ap.add_argument("--branch", default="main",
                     help="serve the store off this branch instead of main (for testing)")
     ap.add_argument("--udb", action="store_true",
-                    help="also write the Universal-DB submission file")
+                    help="write the Universal-DB submission file instead")
     ap.add_argument("--verify-release", action="store_true",
-                    help="also resolve the download patterns against the published release")
+                    help="also resolve the download pattern against the published release")
     args = ap.parse_args()
 
     version = args.version or makefile_version()
@@ -1034,14 +645,14 @@ def main() -> int:
         if problems:
             print(f"{len(problems)} problem(s)")
             return 1
-        print(f"{STORE_FILE.relative_to(ROOT)}: ok")
+        print(f"{STORE_FILE.relative_to(ROOT)}, {UDB_FILE.relative_to(ROOT)}: ok")
         return 0
 
     if args.udb:
         STORE_DIR.mkdir(exist_ok=True)
         UDB_FILE.write_text(json.dumps(build_udb(version), ensure_ascii=False, indent="\t") + "\n")
         print(f"{UDB_FILE.relative_to(ROOT)}: submission for Universal-Team/db, "
-              f"{len(build_udb(version)['scripts'])} scripts")
+              f"unique id 0x{unique_id():X}, assets {installer_pattern()}")
         return 0
 
     notes = "" if args.no_notes else release_notes(version, args.notes)
@@ -1056,15 +667,7 @@ def main() -> int:
           f"updated {entry['info']['last_updated']}")
     if args.branch != "main":
         print(f"  served off branch {args.branch}: {store_url(args.branch)}")
-    for name, value in entry.items():
-        if name == "info":
-            continue
-        steps = value["script"] if isinstance(value, dict) else value
-        print(f"  {name}: {len(steps)} steps")
-    print(f"  {len(removable_dirs())} title folders in the wipe block")
-    for slot in SLOTS:
-        for model in MODELS:
-            print(f"  asset {slot}/{model}: {asset_pattern(slot, model)}")
+    print(f"  {INSTALL}: {entry[INSTALL]['size']}, asset {installer_pattern()}")
     return 0
 
 

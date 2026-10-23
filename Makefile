@@ -3,7 +3,7 @@ PY := python3
 
 HOME_MENU_TID := 0004003000009802
 FONT_TID := 0004009B00014002
-VERSION := 1.12.0
+VERSION := 2.0.0
 
 # Which language the mod stands in place of. `ru` builds into dist/, `en` into dist_en/;
 # the targets below build both, and SLOT= picks one for the single-slot targets (sd).
@@ -22,7 +22,7 @@ MODEL := old3ds
 GLYPHS :=
 export UA_GLYPHS := $(GLYPHS)
 
-.PHONY: help extract extract-manuals font hud-font sysfont sysfont-cia nsfont installer-data installer-fonts installer installer-art installer-cia installer-makerom installer-test validate build build-ru build-en \
+.PHONY: help extract extract-manuals font hud-font sysfont sysfont-cia nsfont installer-data installer-fonts installer installer-art installer-cia installer-makerom installer-test release validate build build-ru build-en \
 	manuals manuals-ru manuals-en all package package-ru package-en unistore unistore-check unistore-verify unistore-icon udb \
 	clean sd
 
@@ -83,7 +83,10 @@ installer: installer-data installer-fonts installer-art ## the installer app -> 
 MAKEROM ?= tmp/tools/makerom/makerom
 BANNERTOOL ?= tmp/tools/bannertool.bin
 INSTALLER_CIA := installer/3ds-ua-installer.cia
-installer-cia: installer ## the installer as a CIA, with its HOME Menu banner -> installer/3ds-ua-installer.cia
+# The release asset, next to the four zips; tools/package.py:installer_name() spells it for the
+# stores, so keep the two in step.
+INSTALLER_ASSET := 3ds-ua-installer-$(VERSION).cia
+installer-cia: installer ## the installer as a CIA, with its HOME Menu banner -> $(INSTALLER_ASSET)
 	$(BANNERTOOL) makebanner -i dist_installer/art/banner.png -a dist_installer/art/banner.wav -o dist_installer/art/banner.bnr
 	$(MAKE) installer-makerom
 	@if [ -f $(HOME_MENU_CODE) ]; then \
@@ -92,7 +95,8 @@ installer-cia: installer ## the installer as a CIA, with its HOME Menu banner ->
 		$(PY) tools/installer_logo.py pack dist_installer/logo $(HOME_MENU_CODE) && \
 		$(MAKE) installer-makerom CIA_LOGO="-logo ../dist_installer/logo/logo.bcma.lz"; \
 	else echo "no $(HOME_MENU_CODE): the CIA keeps makerom's homebrew splash"; fi
-	@ls -la $(INSTALLER_CIA)
+	cp $(INSTALLER_CIA) $(INSTALLER_ASSET)
+	@ls -la $(INSTALLER_ASSET)
 
 # The splash is signed with the HOME Menu's key (tools/installer_logo.py), read from the
 # console's own HOME Menu code; first build with makerom's homebrew logo, which it reworks.
@@ -139,6 +143,11 @@ all: manuals ## validate + build + manuals, both slots
 
 package: package-ru package-en ## build all four release archives (2 slots x 2 consoles)
 
+release: installer-cia package ## every release asset: the installer CIA and the four zips (PY=.venv/bin/python)
+	$(PY) tools/unistore.py $(VERSION)
+	$(PY) tools/unistore.py $(VERSION) --udb
+	$(PY) tools/unistore.py $(VERSION) --check
+
 package-ru: manuals-ru ## build 3ds-ua-from-ru-$(VERSION)-{old3ds,new3ds}.zip
 	$(PY) tools/package.py $(VERSION) --slot ru
 
@@ -147,30 +156,30 @@ package-en: manuals-en ## build 3ds-ua-from-en-$(VERSION)-{old3ds,new3ds}.zip
 
 # REV= bumps the store revision without a new release, for a store-only fix (a reworded
 # script, a new icon). Universal-Updater refetches only when the revision grows.
-unistore: ## regenerate unistore/3ds-ua.unistore from dist/ (REV=11101 for a store-only fix)
+unistore: ## regenerate unistore/3ds-ua.unistore (REV=20001 for a store-only fix)
 	$(PY) tools/unistore.py $(VERSION) $(if $(REV),--revision $(REV) --stamp)
 
 udb: ## write unistore/universal-db.json - the submission file for Universal-Team/db
 	$(PY) tools/unistore.py $(VERSION) --udb
 
-unistore-check: ## walk the store's scripts and check them against TITLES and the built archives
+unistore-check: ## check the store and the Universal-DB file against the built release assets
 	$(PY) tools/unistore.py $(VERSION) --check
 
-unistore-verify: ## the same, plus resolve the download patterns against the published release
+unistore-verify: ## the same, plus resolve the download pattern against the published release
 	$(PY) tools/unistore.py $(VERSION) --check --verify-release
 
-# tex3ds comes from devkitPro, which the rest of the build does not need - so fall back to
-# the container. Note the long `--atlas`: `-a` is rejected by tex3ds 2.3.0 despite its help.
-unistore-icon: ## assets/unistore-icon.png -> unistore/3ds-ua.t3x (needs tex3ds or docker)
-	@test -f assets/unistore-icon.png || $(PY) tools/unistore_icon.py
+# The store shows the installer's own HOME Menu icon (tools/installer_art.py), so the app looks
+# the same in Universal-Updater and on the HOME Menu; assets/unistore-icon.png is the committed
+# copy Universal-DB fetches by URL. tex3ds comes from devkitPro - fall back to the container.
+# Note the long `--atlas`: `-a` is rejected by tex3ds 2.3.0 despite its help.
+unistore-icon: installer-art ## the installer's icon -> assets/unistore-icon.png + unistore/3ds-ua.t3x
+	cp dist_installer/art/icon.png assets/unistore-icon.png
 	@if command -v tex3ds >/dev/null; then \
 		tex3ds --atlas -f rgba8888 -z auto -o unistore/3ds-ua.t3x assets/unistore-icon.png; \
 	else \
 		echo "no tex3ds, using docker"; \
-		docker run --rm --user "$$(id -u):$$(id -g)" -v "$$PWD:/w" -w /w devkitpro/devkitarm \
-			tex3ds --atlas -f rgba8888 -z auto -o unistore/3ds-ua.t3x assets/unistore-icon.png; \
+		$(DKA) tex3ds --atlas -f rgba8888 -z auto -o unistore/3ds-ua.t3x assets/unistore-icon.png; \
 	fi
-	$(PY) tools/unistore.py $(VERSION)
 
 sd: ## copy onto the SD card (SD=/Volumes/... , SLOT=ru|en, MODEL=old3ds|new3ds)
 	@test -n "$(SD)" || { echo "pass SD=/Volumes/<name>"; exit 1; }

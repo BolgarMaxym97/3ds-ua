@@ -6,299 +6,40 @@
     "url": "https://raw.githubusercontent.com/BolgarMaxym97/3ds-ua/main/unistore/3ds-ua.unistore",
     "file": "3ds-ua.unistore",
     "version": 3,
-    "revision": 11200,
+    "revision": 20000,
     "infoURL": "https://github.com/BolgarMaxym97/3ds-ua",
     "sheet": "3ds-ua.t3x",
     "sheetURL": "https://raw.githubusercontent.com/BolgarMaxym97/3ds-ua/main/unistore/3ds-ua.t3x"
   },
   "storeContent": [
     {
-      "1. Встановити / оновити": {
-        "size": "~23 МБ",
+      "Встановити застосунок": {
+        "size": "~31 МБ",
         "script": [
           {
-            "type": "promptMessage",
-            "message": "У вас New 3DS, New 3DS XL або New 2DS XL?\n\nОзнаки New: маленький сірий C-стик над кнопками\nA/B/X/Y і додаткові кнопки ZL/ZR згори.\nНемає їх - відповідайте Ні.\n\nЩоб надалі не питали: натисніть Y - унизу\nз'явиться позначка \"Save your selection?\" -\nі аж тоді A або B. Наступного разу\nоновлення піде без питань.",
-            "name": "new3ds",
-            "count": 9
-          },
-          {
-            "type": "promptMessage",
-            "message": "Замінити російську мову?\n\nНі = замінити англійську.\n\nЩоб надалі не питали: натисніть Y - унизу\nз'явиться позначка \"Save your selection?\" -\nі аж тоді A або B. Наступного разу\nоновлення піде без питань.",
-            "name": "slot",
-            "count": 4
-          },
-          {
             "type": "downloadRelease",
             "repo": "BolgarMaxym97/3ds-ua",
-            "file": "3ds-ua-from-ru-.*-new3ds\\.zip",
-            "output": "/3ds/3ds-ua.zip",
-            "message": "Завантаження архіву (~23 МБ)...",
+            "file": "^3ds-ua-installer-.*\\.cia$",
+            "output": "/3ds/3ds-ua-installer.cia",
+            "message": "Завантаження застосунку...",
             "includePrereleases": false
           },
           {
-            "type": "extractFile",
-            "file": "/3ds/3ds-ua.zip",
-            "input": "^luma/",
-            "output": "/luma/",
-            "message": "Розпакування..."
+            "type": "installCia",
+            "file": "/3ds/3ds-ua-installer.cia",
+            "message": "Встановлення застосунку..."
           },
           {
             "type": "deleteFile",
-            "file": "/3ds/3ds-ua.zip"
-          },
-          {
-            "type": "skip",
-            "count": 12
-          },
-          {
-            "type": "downloadRelease",
-            "repo": "BolgarMaxym97/3ds-ua",
-            "file": "3ds-ua-from-en-.*-new3ds\\.zip",
-            "output": "/3ds/3ds-ua.zip",
-            "message": "Завантаження архіву (~23 МБ)...",
-            "includePrereleases": false
-          },
-          {
-            "type": "extractFile",
-            "file": "/3ds/3ds-ua.zip",
-            "input": "^luma/",
-            "output": "/luma/",
-            "message": "Розпакування..."
-          },
-          {
-            "type": "deleteFile",
-            "file": "/3ds/3ds-ua.zip"
-          },
-          {
-            "type": "skip",
-            "count": 8
-          },
-          {
-            "type": "promptMessage",
-            "message": "Замінити російську мову?\n\nНі = замінити англійську.\n\nЩоб надалі не питали: натисніть Y - унизу\nз'явиться позначка \"Save your selection?\" -\nі аж тоді A або B. Наступного разу\nоновлення піде без питань.",
-            "name": "slot",
-            "count": 4
-          },
-          {
-            "type": "downloadRelease",
-            "repo": "BolgarMaxym97/3ds-ua",
-            "file": "3ds-ua-from-ru-.*-old3ds\\.zip",
-            "output": "/3ds/3ds-ua.zip",
-            "message": "Завантаження архіву (~23 МБ)...",
-            "includePrereleases": false
-          },
-          {
-            "type": "extractFile",
-            "file": "/3ds/3ds-ua.zip",
-            "input": "^luma/",
-            "output": "/luma/",
-            "message": "Розпакування..."
-          },
-          {
-            "type": "deleteFile",
-            "file": "/3ds/3ds-ua.zip"
-          },
-          {
-            "type": "skip",
-            "count": 3
-          },
-          {
-            "type": "downloadRelease",
-            "repo": "BolgarMaxym97/3ds-ua",
-            "file": "3ds-ua-from-en-.*-old3ds\\.zip",
-            "output": "/3ds/3ds-ua.zip",
-            "message": "Завантаження архіву (~23 МБ)...",
-            "includePrereleases": false
-          },
-          {
-            "type": "extractFile",
-            "file": "/3ds/3ds-ua.zip",
-            "input": "^luma/",
-            "output": "/luma/",
-            "message": "Розпакування..."
-          },
-          {
-            "type": "deleteFile",
-            "file": "/3ds/3ds-ua.zip"
-          },
-          {
-            "type": "promptMessage",
-            "message": "Готово.\n\n1. Вимкніть і увімкніть консоль, тримаючи SELECT,\n   увімкніть Enable game patching, натисніть START.\n2. Налаштування системи -> Iнші налаштування ->\n   Мова -> Українська.\n\nПерезапуск консолі обов'язковий - без нього\nукраїнізатор не запрацює."
+            "file": "/3ds/3ds-ua-installer.cia"
           }
         ]
       },
-      "2. Видалити українізатор": [
-        {
-          "type": "rmdir",
-          "directory": "/luma/titles/0004001000022000",
-          "message": "Видаляю /luma/titles/0004001000022000"
-        },
-        {
-          "type": "rmdir",
-          "directory": "/luma/titles/0004001000022100",
-          "message": "Видаляю /luma/titles/0004001000022100"
-        },
-        {
-          "type": "rmdir",
-          "directory": "/luma/titles/0004001000022200",
-          "message": "Видаляю /luma/titles/0004001000022200"
-        },
-        {
-          "type": "rmdir",
-          "directory": "/luma/titles/0004001000022300",
-          "message": "Видаляю /luma/titles/0004001000022300"
-        },
-        {
-          "type": "rmdir",
-          "directory": "/luma/titles/0004001000022400",
-          "message": "Видаляю /luma/titles/0004001000022400"
-        },
-        {
-          "type": "rmdir",
-          "directory": "/luma/titles/0004001000022500",
-          "message": "Видаляю /luma/titles/0004001000022500"
-        },
-        {
-          "type": "rmdir",
-          "directory": "/luma/titles/0004001000022700",
-          "message": "Видаляю /luma/titles/0004001000022700"
-        },
-        {
-          "type": "rmdir",
-          "directory": "/luma/titles/0004001000022800",
-          "message": "Видаляю /luma/titles/0004001000022800"
-        },
-        {
-          "type": "rmdir",
-          "directory": "/luma/titles/0004001000022900",
-          "message": "Видаляю /luma/titles/0004001000022900"
-        },
-        {
-          "type": "rmdir",
-          "directory": "/luma/titles/0004001000022A00",
-          "message": "Видаляю /luma/titles/0004001000022A00"
-        },
-        {
-          "type": "rmdir",
-          "directory": "/luma/titles/0004001000022B00",
-          "message": "Видаляю /luma/titles/0004001000022B00"
-        },
-        {
-          "type": "rmdir",
-          "directory": "/luma/titles/0004001000022D00",
-          "message": "Видаляю /luma/titles/0004001000022D00"
-        },
-        {
-          "type": "rmdir",
-          "directory": "/luma/titles/0004001000022E00",
-          "message": "Видаляю /luma/titles/0004001000022E00"
-        },
-        {
-          "type": "rmdir",
-          "directory": "/luma/titles/000400100002C100",
-          "message": "Видаляю /luma/titles/000400100002C100"
-        },
-        {
-          "type": "rmdir",
-          "directory": "/luma/titles/0004001020022300",
-          "message": "Видаляю /luma/titles/0004001020022300"
-        },
-        {
-          "type": "rmdir",
-          "directory": "/luma/titles/0004003000009802",
-          "message": "Видаляю /luma/titles/0004003000009802"
-        },
-        {
-          "type": "rmdir",
-          "directory": "/luma/titles/0004003000009902",
-          "message": "Видаляю /luma/titles/0004003000009902"
-        },
-        {
-          "type": "rmdir",
-          "directory": "/luma/titles/0004003000009B02",
-          "message": "Видаляю /luma/titles/0004003000009B02"
-        },
-        {
-          "type": "rmdir",
-          "directory": "/luma/titles/0004003000009C02",
-          "message": "Видаляю /luma/titles/0004003000009C02"
-        },
-        {
-          "type": "rmdir",
-          "directory": "/luma/titles/0004003000009D02",
-          "message": "Видаляю /luma/titles/0004003000009D02"
-        },
-        {
-          "type": "rmdir",
-          "directory": "/luma/titles/0004003000009F02",
-          "message": "Видаляю /luma/titles/0004003000009F02"
-        },
-        {
-          "type": "rmdir",
-          "directory": "/luma/titles/000400300000A002",
-          "message": "Видаляю /luma/titles/000400300000A002"
-        },
-        {
-          "type": "rmdir",
-          "directory": "/luma/titles/000400300000B902",
-          "message": "Видаляю /luma/titles/000400300000B902"
-        },
-        {
-          "type": "rmdir",
-          "directory": "/luma/titles/000400300000BA02",
-          "message": "Видаляю /luma/titles/000400300000BA02"
-        },
-        {
-          "type": "rmdir",
-          "directory": "/luma/titles/000400300000BE02",
-          "message": "Видаляю /luma/titles/000400300000BE02"
-        },
-        {
-          "type": "rmdir",
-          "directory": "/luma/titles/000400300000C502",
-          "message": "Видаляю /luma/titles/000400300000C502"
-        },
-        {
-          "type": "rmdir",
-          "directory": "/luma/titles/000400300000CD02",
-          "message": "Видаляю /luma/titles/000400300000CD02"
-        },
-        {
-          "type": "rmdir",
-          "directory": "/luma/titles/000400300000D002",
-          "message": "Видаляю /luma/titles/000400300000D002"
-        },
-        {
-          "type": "rmdir",
-          "directory": "/luma/titles/000400300000D102",
-          "message": "Видаляю /luma/titles/000400300000D102"
-        },
-        {
-          "type": "rmdir",
-          "directory": "/luma/titles/000400300000D602",
-          "message": "Видаляю /luma/titles/000400300000D602"
-        },
-        {
-          "type": "rmdir",
-          "directory": "/luma/titles/000400300000F602",
-          "message": "Видаляю /luma/titles/000400300000F602"
-        },
-        {
-          "type": "rmdir",
-          "directory": "/luma/titles/0004003020009D02",
-          "message": "Видаляю /luma/titles/0004003020009D02"
-        },
-        {
-          "type": "promptMessage",
-          "message": "Українізатор видалено.\n\nПеремкніть мову консолі в Налаштуваннях системи\nі перезапустіть консоль - без перезапуску\nчастина написів лишиться українською."
-        }
-      ],
       "info": {
         "title": "Українізатор 3DS/2DS",
         "author": "Max Bolhar",
         "description": "Українська мова для системного інтерфейсу Nintendo 3DS/2DS.",
-        "version": "1.12.0",
+        "version": "2.0.0",
         "category": [
           "translation",
           "system"
@@ -308,16 +49,16 @@
         ],
         "license": "MIT",
         "color": "#005BBB",
-        "long_description": "Перекладає системний інтерфейс Nintendo 3DS, 3DS XL, 2DS, New 3DS, New 3DS XL і New 2DS XL українською: Меню HOME, Налаштування системи, Інтернет-браузер, eShop, Камеру, Звук, Mii Maker, Журнал дій, електронні довідники та решту системних застосунків.\n\nУкраїнська стає на місце російського або англійського мовного слота - який саме, питає під час установки. Потрібна Luma3DS v10.3 або новіша з увімкненим Enable game patching і консоль європейського (EUR) регіону.",
-        "preinstall_message": "Встановлення і оновлення - той самий пункт.\n\nУВАГА: Universal-Updater виконує все у черзі.\nЯкщо на питання ще не збережено відповідь,\nвідкрийте чергу третьою іконкою в лівій панелі -\nпитання чекають там, і без відповіді робота стоїть.\n\nПотрібна Luma3DS v10.3 або новіша з увімкненим\nEnable game patching (старіша не перекладе\nМеню HOME), а мову консолі після встановлення\nтреба перемкнути вручну.\n\nВидалення перепитає про кожну папку - їх до 32.\nТримайте A. Universal-Updater інакше теки\nвидаляти не вміє.",
-        "releasenotes": "Правки термінів і написів, що переносилися на консолі.\n\n- «Картридж» замість «гральної карти». «Гральна карта» — це карта для гри в карти, тож скрізь, де йдеться про Game Card, тепер «картридж»: Меню HOME, Список друзів, Сповіщення, Miiverse, екран помилки, помилка 002-0123, Nintendo eShop і довідники Налаштувань системи та Здоров'я і безпеки (New 3DS).\n- Налаштування системи → Інші налаштування: кнопка «Сенсорний дисплей» переносила останню літеру на другий рядок. Тепер це «Сенсорний екран» — в один рядок, і так само в заголовку, калібруванні та довіднику.\n- Камера Nintendo 3DS: «Закрити», «Розчинення», «Ручні налаштунки», «Зйомка за часом» і «Запис на паузі» тепер вміщаються у свої рамки, без переносу.\n- Потрібна Luma3DS v10.3 або новіша. Старіша перекладає назви додатків, але не кнопки Меню HOME, клавіатуру, Довідник і екран помилки. Версію видно в меню Luma (SELECT при ввімкненні).\n\nЧерез Universal-Updater достатньо ще раз запустити той самий варіант — видаляти попередню версію не треба.",
+        "long_description": "Перекладає системний інтерфейс Nintendo 3DS, 3DS XL, 2DS, New 3DS, New 3DS XL і New 2DS XL українською: Меню HOME, Налаштування системи, Інтернет-браузер, eShop, Камеру, Звук, Mii Maker, Журнал дій, електронні довідники та решту системних застосунків.\n\nСтавиться застосунком «Українізатор 3DS»: відкрийте його й натисніть «Встановити». Він сам вибере файли для вашої консолі, увімкне потрібне в Luma, додасть у системний шрифт справжні літери і, ї, є, ґ (шрифт читається з SD-карти, у NAND нічого не пишеться) і перезавантажить консоль. Українська стає на місце російської або англійської мови, мову консолі міняти не треба. Оновлення, зміна мови й видалення - у тому ж застосунку.\n\nПотрібна Luma3DS v10.3 або новіша (для справжніх літер - v13.0) і консоль європейського (EUR) регіону.",
+        "preinstall_message": "Встановиться застосунок \"Українізатор 3DS\".\n\nКоли черга закінчить, відкрийте його в меню HOME\nі натисніть \"Встановити\". Застосунок сам вибере\nфайли для вашої консолі, увімкне потрібне в Luma\nі перезавантажить консоль. Мову міняти не треба.\n\nПотрібна Luma3DS v10.3 або новіша і консоль\nєвропейського регіону (EUR). Видалити українізатор -\nкнопкою \"Видалити\" в тому ж застосунку.",
+        "releasenotes": "Застосунок «Українізатор 3DS» замість скриптів Universal-Updater.\n\n- Справжні і ї є ґ і апостроф у всій системі й на клавіатурі. Застосунок будує шрифт на самій консолі з її власного, а консоль читає його з SD-карти — у NAND нічого не пишеться. Потрібна Luma3DS v13.0 або новіша; на старішій лишаються замінники.\n- Мову консолі більше міняти не треба. Українська вмикається лише для перекладених програм, ігри лишаються мовою системи.\n- Enable game patching застосунок вмикає сам.\n- Встановлення переживає вимкнення живлення. Сіла батарея посеред роботи — після ввімкнення застосунок продовжить з того самого місця.\n- Стоїть українізатор від Universal-Updater чи з архіву? Ставте застосунок поверх і натисніть «Оновити»: він підхопить наявні файли, видаляти нічого не треба.\n- Налаштування системи: кнопка «Перенесення даних» переносилася на два рядки — тепер «Перенос даних».",
         "installed_files": [
           "/luma/titles/0004003000009802/banner_22800.bin",
           "/luma/titles/0004003000009B02/romfs/2000"
         ],
         "icon_index": 0,
         "sheet_index": 0,
-        "last_updated": "2026-10-12 at 06:19 (UTC)"
+        "last_updated": "2026-10-22 at 18:34 (UTC)"
       }
     }
   ]

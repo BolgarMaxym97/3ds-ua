@@ -1,6 +1,10 @@
-"""Draw the 48x48 icon Universal-Updater shows next to the entry.
+"""The 1.x store icon: a 48x48 clamshell 3DS with the flag on its top screen.
 
     python3 tools/unistore_icon.py --force     # -> assets/unistore-icon.png
+
+Since 2.0.0 the store shows the installer app's own icon instead (`make unistore-icon` copies
+dist_installer/art/icon.png, tools/installer_art.py). This drawing is kept for its stdlib PNG
+writer, which tools/udb_screenshots.py uses.
 
 Universal-Updater accepts an icon of up to 48x48 (`Store::GetIconValid`, store.cpp:361) and
 falls back to its own "no icon" sprite for anything larger. It reads icons only out of the
@@ -15,8 +19,6 @@ Written with the standard library alone, like the rest of the build: Pillow is o
 (tools/banner_art.py needs it, the build does not), and an icon that only some machines can
 regenerate is an icon that rots.
 
-Replacing the art: drop your own PNG at assets/unistore-icon.png - anything up to 48x48 -
-and run `make unistore-icon`. This script is only what produces the default.
 """
 
 from __future__ import annotations

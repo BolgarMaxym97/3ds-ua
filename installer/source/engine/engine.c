@@ -387,8 +387,6 @@ static EngineStatus restore_to(Ctx *c, const Entry *e, const char *full, bool re
     free(data);
     uint64_t t2 = now(c);
     c->job->write_ms += t2 - t1;
-    if (c->job->trace)
-        c->job->trace(c->job->ctx, e->path, b->size, t1 - t0, t2 - t1);
     return status ? fail(c, ENGINE_E_WRITE, "write failed", e->path) : ENGINE_OK;
 }
 

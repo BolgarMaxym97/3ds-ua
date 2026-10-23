@@ -116,19 +116,6 @@ static uint64_t clock_ms(void)
     return osGetTime();
 }
 
-/* One line per file written - size, restore and write time - for finding where the files
- * stage spends its time on the console. */
-#define TRACE_PATH SD_ROOT "/3ds/3ds-ua-installer.trace"
-
-static FILE *trace_file;
-
-static void trace(void *ctx, const char *path, uint32_t size, uint64_t restore_ms, uint64_t write_ms)
-{
-    (void)ctx;
-    if (trace_file)
-        fprintf(trace_file, "%lu %llu %llu %s\n", (unsigned long)size, restore_ms, write_ms, path);
-}
-
 static void exclusive(bool on)
 {
     aptSetHomeAllowed(!on);
@@ -148,11 +135,7 @@ static void exclusive(bool on)
 static void work(void *arg)
 {
     Worker *w = arg;
-    trace_file = fopen(TRACE_PATH, "a"); /* a removal after the install must not wipe it */
     w->status = engine_run(&w->job);
-    if (trace_file)
-        fclose(trace_file);
-    trace_file = NULL;
     w->running = false;
 }
 
@@ -175,7 +158,6 @@ bool install_start(Worker *w, const Manifest *m, const Console *c, Op op, Slot s
     j->build_font = build_font;
     j->ctx = w;
     j->clock_ms = clock_ms;
-    j->trace = trace;
 
     s32 prio = 0x30;
     svcGetThreadPriority(&prio, CUR_THREAD_HANDLE);

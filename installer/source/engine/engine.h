@@ -66,7 +66,6 @@ typedef struct {
     FontFn build_font;
     void *ctx;
     uint64_t (*clock_ms)(void); /* optional: time the files stage for the log */
-    void (*trace)(void *ctx, const char *path, uint32_t size, uint64_t restore_ms, uint64_t write_ms); /* optional */
 
     /* progress, for the UI thread */
     volatile int stage;

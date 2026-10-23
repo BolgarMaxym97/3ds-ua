@@ -1,17 +1,10 @@
 # 3DS UA 🇺🇦
 
-**Українська мова для Nintendo 3DS.** Мод стає на місце однієї з мов консолі: у списку мов з'являється «Українська», і система починає говорити українською. Решта мов лишається на місці.
+**Українська мова для Nintendo 3DS.** Українська стає на місце однієї з мов консолі — російської або англійської, — і система починає говорити українською. Решта мов лишається на місці.
 
-Збірки однакові за перекладом, а різняться двома речами — чию клітинку займає українська і для якої консолі архів:
+**Ставиться застосунком.** «Українізатор 3DS» встановлюється на консоль, як звичайна програма, і робить усе сам: вибирає файли для вашої консолі, вмикає потрібне в Luma, додає в системний шрифт справжні літери **і ї є ґ** і перезавантажує консоль. Мову консолі міняти не треба. Оновлення, зміна мови й видалення — у тому ж застосунку, одним натиском.
 
-- **`3ds-ua-from-ru-<версія>-old3ds.zip`** — замість російської, для 3DS / 3DS XL / 2DS.
-- **`3ds-ua-from-ru-<версія>-new3ds.zip`** — замість російської, для New 3DS / New 3DS XL / New 2DS XL.
-- **`3ds-ua-from-en-<версія>-old3ds.zip`** — замість англійської, для 3DS / 3DS XL / 2DS.
-- **`3ds-ua-from-en-<версія>-new3ds.zip`** — замість англійської, для New 3DS / New 3DS XL / New 2DS XL.
-
-Ставте одну з них, не кілька. Архіви для різних консолей саме тому й окремі, що New 3DS має власні копії Інтернет-браузера і Здоров'я і безпеки, а Luma шукає файли для них у папці Old3DS-івського титулу — той самий файл на різних консолях мусить бути різним. Не той архів дає креш Здоров'я і безпеки й наполовину неперекладений браузер.
-
-Файли самої консолі не змінюються — усе живе на SD-карті. Видалили папки, і все повернулося як було.
+Системні файли консолі не змінюються — усе живе на SD-карті, разом зі шрифтом. Вимкнулося живлення посеред встановлення — застосунок продовжить з того самого місця.
 
 **Ціль проєкту — повний українізатор системи:** усе, що видно на екрані, має бути українською. Зараз перекладено **32 частини системи плюс дванадцять електронних довідників**, робота триває.
 
@@ -43,120 +36,106 @@
 
 ## Що потрібно
 
-- Nintendo 3DS / 2DS / New 3DS **європейського (EUR) регіону**
-- встановлена **Luma3DS v10.3 або новіша** — кастомна прошивка (краще найновіша). Старіша не підміняє файли Меню HOME і системних аплетів (клавіатура, Довідник, екран помилки)
-- SD-карта з ~55 МБ вільного місця
-- за бажанням — **Universal-Updater**: з ним усе ставиться прямо з консолі, без виймання картки. Українізатор уже є в його основному магазині, Universal-DB
+- Nintendo 3DS / 3DS XL / 2DS / New 3DS / New 3DS XL / New 2DS XL **європейського (EUR) регіону**
+- встановлена **Luma3DS v10.3 або новіша** — кастомна прошивка. Для справжніх літер `і ї є ґ` потрібна **v13.0 або новіша**, тож краще найновіша
+- SD-карта з 40 МБ вільного місця
+- заряджена батарея або зарядка — застосунок не почне на низькому заряді
 
 Немає Luma3DS? Спершу пройдіть [3ds.hacks.guide](https://3ds.hacks.guide/) — без неї мод не працює.
 
-## Встановлення через Universal-Updater
+## Встановлення
 
-Найпростіший шлях: картку виймати не треба, оновлення потім приходять самі. Нічого додавати не потрібно — українізатор лежить в **Universal-DB**, магазині, з яким [Universal-Updater](https://github.com/Universal-Team/Universal-Updater) працює одразу після встановлення.
+**1. Поставте застосунок «Українізатор 3DS».**
+
+Через [Universal-Updater](https://github.com/Universal-Team/Universal-Updater) — нічого додавати не треба, застосунок лежить в Universal-DB, його основному магазині:
+
+1. Відкрийте Universal-Updater і знайдіть **Українізатор 3DS/2DS** — лупою в лівій панелі нижнього екрана, введіть «Українізатор».
+2. Відкрийте другу іконку згори — «Доступні для завантаження» — і виберіть `3ds-ua-installer-<версія>.cia`.
+3. Дочекайтеся, поки запис зникне з черги (третя іконка згори).
+
+Без Universal-Updater: візьміть `3ds-ua-installer-<версія>.cia` з [Releases](../../releases), скопіюйте на SD-карту й встановіть через FBI.
+
+**2. Відкрийте «Українізатор 3DS»** у меню HOME. Застосунок перевірить консоль: Luma, регіон, місце на картці й заряд — і скаже, якщо чогось бракує.
+
+**3. Натисніть «Встановити»** і виберіть, яку мову замінить українська: «Замість російської» або «Замість англійської». Та мова зникне зі списку мов, решта лишиться.
+
+Кілька хвилин консоль не вимикайте — кнопка HOME у цей час не працює. Потім консоль перезавантажиться сама й запуститься українською. Готово.
 
 <table>
 <tr>
-<td><img src="assets/pictures/universal-updater-entry.png" width="250" alt="Universal-Updater: запис «Українізатор 3DS/2DS» в Universal-DB, версія v1.10.0"></td>
-<td><img src="assets/pictures/universal-updater-downloads.png" width="250" alt="Universal-Updater: вкладка «Доступні для завантаження» з чотирма варіантами і «Видалити українізатор»"></td>
-<td><img src="assets/pictures/universal-updater-queue.png" width="250" alt="Universal-Updater: черга, завантаження українізатора, крок 1 з 3"></td>
+<td><img src="assets/pictures/app-main.png" width="250" alt="Українізатор 3DS: головний екран, кнопка «Встановити»"></td>
+<td><img src="assets/pictures/app-check.png" width="250" alt="Перевірка консолі: Luma3DS, регіон, налаштування Luma, місце на SD, заряд — усе гаразд"></td>
+<td><img src="assets/pictures/app-slot.png" width="250" alt="Вибір мови, яку замінить українська: замість російської або англійської"></td>
+</tr>
+<tr>
+<td><img src="assets/pictures/app-progress.png" width="250" alt="Встановлення: 28%, етапи від перевірки до завершення, «Не вимикайте консоль»"></td>
+<td><img src="assets/pictures/app-done.png" width="250" alt="«Готово! Консоль українізовано» і перезавантаження з відліком"></td>
+<td><img src="assets/pictures/app-installed.png" width="250" alt="Застосунок після встановлення: «Встановити ще раз», «Змінити слот», «Видалити»"></td>
 </tr>
 </table>
 
-**1. Знайдіть запис**
+Українізатор уже стоїть — від Universal-Updater 1.x чи з архіву? Ставте застосунок поверх і натисніть «Оновити»: він підхопить наявні файли, видаляти нічого не треба.
 
-Відкрийте Universal-Updater і виберіть **Українізатор 3DS/2DS** — іконка з прапором і консоллю. Швидше за все знайти пошуком: **лупа** в лівій панелі нижнього екрана, введіть «Українізатор». Внизу з'явиться картка з версією.
+Керувати застосунком можна і сенсорним екраном, і кнопками: хрестовина вибирає, **A** натискає.
 
-**2. Виберіть свій варіант**
+### Оновлення і зміна мови
 
-Відкрийте **другу іконку згори** в лівій панелі — «Доступні для завантаження» — і виберіть рядок, що пасує вашій консолі:
+Коли вийде нова версія, на іконці **Українізатор 3DS/2DS** в Universal-Updater з'явиться зелена стрілка. Встановіть новий CIA, відкрийте застосунок і натисніть «Оновити». Застосунок сам знає, що встановлено, і міняє лише змінене.
 
-| Рядок | Українська стає на місце | Для якої консолі |
-|---|---|---|
-| `New 3DS / New 2DS XL - замість російської` | російської | **New** 3DS, New 3DS XL, New 2DS XL |
-| `New 3DS / New 2DS XL - замість англійської` | англійської | **New** 3DS, New 3DS XL, New 2DS XL |
-| `Old 3DS / Old 2DS - замість російської` | російської | 3DS, 3DS XL, 2DS |
-| `Old 3DS / Old 2DS - замість англійської` | англійської | 3DS, 3DS XL, 2DS |
+Замінити не ту мову — «Змінити слот» у застосунку, без перевстановлення.
 
-Як відрізнити New: у неї є маленький сірий C-стик над кнопками A/B/X/Y і додаткові кнопки ZL/ZR згори. Немає їх — беріть `Old`.
+Додавали колись окремий магазин `3ds-ua.unistore`? Він теж ставить застосунок — пункт «Встановити застосунок», — але все те саме є в Universal-DB.
 
-Universal-Updater покаже нагадування про Luma й мову — підтвердьте **A**. Далі нічого не питає: архів качається й розпаковується в **черзі** (третя іконка згори), там видно поступ. Дочекайтеся, поки запис зникне з черги.
+### Вручну, з архіву
 
-Помилилися з рядком — запустіть `Видалити українізатор` і поставте потрібний; видалення не залежить від слота й моделі.
+Для тих, хто ставить файли на картку руками. Справжніх літер в архівах немає (`i ï ε г` замість `і ї є ґ`), а Luma й мову треба налаштовувати самому.
 
-**3. Далі — кроки 2 і 3 з ручного встановлення нижче** (`Enable game patching` і вибір мови). Їх не обійти жодним застосунком.
+Візьміть з [Releases](../../releases) один архів: `-from-ru-` ставить українську замість російської, `-from-en-` — замість англійської; `-old3ds` для 3DS / 3DS XL / 2DS, `-new3ds` для New 3DS / New 3DS XL / New 2DS XL. Як відрізнити New: у неї є маленький сірий C-стик над кнопками A/B/X/Y і додаткові кнопки ZL/ZR згори. Не той архів дає креш Здоров'я і безпеки й наполовину неперекладений браузер: New 3DS має власні копії цих двох програм.
 
-Коли вийде нова версія, на іконці **Українізатор 3DS/2DS** з'явиться зелена стрілка — запустіть той самий рядок ще раз.
-
-Раніше додавали окремий магазин `3ds-ua.unistore`? Він і далі працює, але більше не потрібен — усе те саме є в Universal-DB.
-
-## Встановлення вручну (з SD-карти)
-
-**1. Скопіюйте файли на SD-карту**
-
-Візьміть з [Releases](../../releases) один архів: `-from-ru-` ставить українську замість російської, `-from-en-` — замість англійської; `-old3ds` для 3DS / 3DS XL / 2DS, `-new3ds` для New 3DS / New 3DS XL / New 2DS XL. Вимкніть консоль, вставте SD-карту в комп'ютер, розпакуйте архів і скопіюйте папку `luma` в корінь картки — туди, де вже є папка `luma`. Комп'ютер спитає, чи об'єднати папки — погодьтеся.
-
-Поверніть картку в консоль.
-
-**2. Увімкніть патчі в Luma**
-
-Натисніть і **тримайте SELECT**, тоді увімкніть консоль — з'явиться синє меню.
-
-Знайдіть рядок **`Enable game patching`** (сьомий згори), натисніть **A**, щоб навпроти з'явилося `(x)`. Натисніть **START** — консоль збережеться й перезавантажиться.
-
-**3. Виберіть українську**
-
-`Налаштування системи` → `Інші налаштування` → `Мова` → **Українська** → `OK`.
-
-Це той пункт, де раніше було «Русский» (у збірці `from-en` — «English»). Він завжди підписаний «Українська», хай якою мовою зараз говорить консоль, тож ви побачите його одразу.
-
-Консоль перезавантажиться сама. Готово.
+1. Вимкніть консоль, вставте SD-карту в комп'ютер, розпакуйте архів і скопіюйте папку `luma` в корінь картки — туди, де вже є папка `luma`. Комп'ютер спитає, чи об'єднати папки — погодьтеся.
+2. Тримайте **SELECT** і увімкніть консоль — з'явиться синє меню Luma. Позначте **`Enable game patching`** (сьомий рядок, кнопка **A**, навпроти з'явиться `(x)`) і натисніть **START**.
+3. `Налаштування системи` → `Інші налаштування` → `Мова` → **Українська** → `OK`. Це пункт, де раніше було «Русский» (у `from-en` — «English»). Консоль перезавантажиться сама.
 
 ## Як видалити
 
-Будь-який спосіб:
+**Застосунком:** «Українізатор 3DS» → «Видалити». Застосунок прибере свої файли й шрифт, поверне файли інших модів, які довелося відкласти, вимкне завантаження зовнішніх модулів Luma, якщо вмикав його сам, і перезавантажить консоль. `Enable game patching` лишається: ним можуть користуватися інші моди. Сам застосунок лишиться в меню HOME — українізувати знову можна будь-коли; прибрати його можна в `Налаштування системи` → `Керування даними`.
 
-1. **У Universal-Updater** → **Українізатор 3DS/2DS** → вкладка завантажень → `Видалити українізатор`. Нічого не питає про модель чи слот. Але Universal-Updater перепитає про **кожну папку окремо** — їх до 32; тримайте **A**. Обійти це неможливо: підтвердження зашите в самому Universal-Updater, вимкнути або запам'ятати відповідь на нього нічим. Після видалення перезапустіть консоль.
-2. **Змінити мову консолі** на будь-яку іншу — переклад просто не застосується.
-3. **Видалити папки мода** з `SD:/luma/titles/` вручну — усі вони перелічені в [таблиці](docs/internals.md#що-за-папки-в-lumatitles) (32 на New 3DS, 30 на Old 3DS).
-4. **Вимкнути `Enable game patching`** у меню Luma (це вимкне й інші моди).
+**Встановлено з архіву:** видаліть папки мода з `SD:/luma/titles/` — усі вони перелічені в [таблиці](docs/internals.md#що-за-папки-в-lumatitles) (32 на New 3DS, 30 на Old 3DS), — або поставте застосунок і натисніть «Видалити».
 
-Системні файли не змінювалися, тому видалення нічого не ламає.
-
-**Один виняток.** Вбудовані підказки у Сповіщеннях консоль колись скопіювала собі в NAND, і файлами на SD-карті їх уже не дістати — мод переписує їх у самій базі. Після видалення мода вони лишаться українськими (не зіпсованими — просто українськими). Якщо цього не хочеться, видаліть `SD:/luma/titles/0004003000009802/code.ips` **до** першого запуску з модом: тоді підказки лишаться мовою, яку мод займає, разом з назвами додатків і банерами, які той самий файл перекладає.
+**Один виняток.** Вбудовані підказки у Сповіщеннях консоль колись скопіювала собі в NAND, і файлами на SD-карті їх уже не дістати — мод переписує їх у самій базі. Після видалення мода вони лишаться українськими (не зіпсованими — просто українськими). Нові листи мод не чіпає.
 
 ## Чого поки що немає
 
 - **України в списку країн немає.** У таблиці кодів країн Nintendo її немає взагалі: європейський блок суцільний, без пропусків, `…99 Румунія, 100 Росія, 101 Сербія…`. Код країни — системна величина, від якої залежать NNID, eShop і вікові рейтинги, і нового рядка в таблицю не вставити. Раніше мод перейменовував код `100` на «Україна» разом з його областями — але **назву за цим кодом кожен читає своєю таблицею**, тому інші гравці в онлайні, NNID, eShop і StreetPass однаково бачили «Росія», а українська область показувалася їм російською, що стоїть під тим самим номером. Тепер список показує те, що консоль справді повідомляє: код `100` — це `росія (болота)` з її ж 83 областями, усе з малої літери. Плутанини регіонів в онлайні більше немає.
 
   **Мова й країна в 3DS ніяк не пов'язані:** переклад стоїть на мовному слоті, тому інтерфейс лишиться повністю українським з будь-якою країною в профілі — ставте будь-яку.
-- **Українських `і ї є ґ`.** У шрифті самої консолі їх немає, тому мод показує візуально близькі `i ï ε г`. Замінити шрифт можна лише правкою системних файлів — а релізи цього свідомо не роблять. ⚠️ **Експериментально:** для тих, хто готовий на правку NAND, є окремий шлях за бажанням — пропатчений системний шрифт і збірка `GLYPHS=real`. На консолі його ще не перевірено, а помилка може не дати запуститися Меню HOME, тож без досвіду з GodMode9 і бекапом NAND краще не пробувати ([технічний опис](docs/internals.md#справжні-українські-літери-в-системному-шрифті-за-бажанням)).
-- **Справжніх літер з клавіатури.** Розкладка українська (`ы`→`і`, `ъ`→`ї`, `э`→`є`, а на місці `ё` тепер апостроф), але вводяться ті самі символи-замінники (в експериментальній збірці `GLYPHS=real` — справжні літери).
+- **Справжніх `і ї є ґ` в архівах.** Їх ставить лише застосунок: він будує шрифт з власного шрифту консолі, а консоль читає його з SD-карти. Потрібна Luma3DS v13.0 або новіша; на старішій, а також коли на картці вже стоїть чужий патч модуля NS, застосунок лишає замінники `i ï ε г`. Як це влаштовано — у [технічному описі](docs/internals.md#справжні-українські-літери-в-системному-шрифті).
 - **Електронних довідників решти додатків.** Переглядач бере довідник кожного додатка окремо, тож кожен треба здампити з вашої консолі й перекласти. Готові дванадцять — Інтернет-браузера, Налаштувань системи, Журналу дій, Гри по завантаженню, Камери, Звуку, Mii Maker, Площі StreetPass Mii, Nintendo eShop, Face Raiders, AR Games та Інтернет-браузера New 3DS, усі повністю; решта показує той самий довідник, що й раніше. Місця лишилося небагато: таблиця шляхів переглядача та таблиця назв додатків займають 617 із 1064 байтів вільного місця в його коді. Довідники ігор належать іграм, а не системі, тож лишаються як є.
 - **Назв додатків у eShop, Перенесенні даних та Ігрових записах** — там вони лишаються мовою, яку мод займає. У Меню HOME, Журналі дій, Керуванні даними та Електронному довіднику вони українські.
-- **Електронні довідники у збірці `from-en`** беруть за основу російський документ: у нього більше сторінок, ніж в англійського, тому в українську клітинку лягає він цілком, зі своїми знімками екрана. Сам російський довідник при цьому лишається на місці.
-- **Кириличної клавіатури на російській мові у збірці `from-en`.** Аплет клавіатури дозволяє кирилицю рівно одній мові консолі, і в цій збірці вона віддана українській. Сам російський інтерфейс лишається на місці, але клавіатура на ньому буде латинською. У `from-ru` такого немає.
+- **Електронні довідники у варіанті «Замість англійської» (`from-en`)** беруть за основу російський документ: у нього більше сторінок, ніж в англійського, тому в українську клітинку лягає він цілком, зі своїми знімками екрана. Сам російський довідник при цьому лишається на місці.
+- **Кириличної клавіатури на російській мові у варіанті «Замість англійської» (`from-en`).** Аплет клавіатури дозволяє кирилицю рівно одній мові консолі, і в цій збірці вона віддана українській. Сам російський інтерфейс лишається на місці, але клавіатура на ньому буде латинською. У варіанті «Замість російської» такого немає.
 - **Збірки для консолей USA та JPN.** Європейських мовних слотів у них немає, тож потрібна окрема збірка — напишіть в Issues, якщо вона вам потрібна.
 
 ## Якщо щось пішло не так
 
 | Що бачите | Що робити |
 |---|---|
-| Інтерфейс лишився як був | Не увімкнено `Enable game patching`. Ця галочка злітає після оновлення Luma — поставте знову. |
-| Не українською, а галочка стоїть | Перевірте шлях: має бути `luma/titles/…`, а не `luma/luma/titles/…`. Ще перевірте, що архів той: `from-ru` вмикається на пункті «Русский», `from-en` — на «English». |
-| У списку мов немає «Українська» | Архів скопіювався не повністю, або консоль не EUR-регіону. |
+| Консоль не запускається після встановлення | Вимкніть її, тримайте **SELECT** і увімкніть. У меню Luma зніміть галочку **`Enable loading external FIRMs and modules`** і натисніть **START**. Консоль запуститься з замінниками замість `і ї є ґ`; відкрийте застосунок — він сам усе виправить. Системні файли консолі не змінювалися. |
+| Вимкнулося живлення посеред встановлення | Нічого не зламано: відкрийте застосунок, він продовжить з того самого місця. |
+| Застосунок пише, що `Enable game patching` вимкнено | Ця галочка злітає після оновлення Luma. Натисніть «Увімкнути»; якщо такої кнопки немає (стара Luma), застосунок покаже, як увімкнути вручну. |
+| «Низький заряд» | Підключіть зарядку — далі застосунок піде сам. |
+| Замінники `i ï ε г` замість `і ї є ґ` | Luma старша за v13.0, на картці чужий патч модуля NS, або встановлено з архіву. Оновіть Luma і натисніть у застосунку «Встановити ще раз». |
+| Назви додатків українські, а кнопки Меню HOME («Помощь», «Запустить») і статус-бар — ні | Luma старша за v10.3: вона не вміє підміняти файли Меню HOME. Оновіть Luma за [3ds.hacks.guide](https://3ds.hacks.guide/updating-b9s). |
+| `An exception occurred` при запуску якогось додатка | У вас старіша версія цього додатка. Видаліть його папку `SD:/luma/titles/<номер>` цілком і перезавантажте — він запуститься без перекладу. Номери папок — у [технічному описі](docs/internals.md#що-за-папки-в-lumatitles). І [напишіть в Issues](../../issues) з фото екрана. |
+| Меню HOME не завантажується | Видаліть `SD:/luma/titles/0004003000009802/code.ips`. Не допомогло — усю папку `0004003000009802`. |
 | Частина тексту не українською | Так і має бути: технічні написи (`OK`, `Miiverse`, формати дат) лишені як є. |
 | У списку країн немає України | Свого коду в системі Україна не має — [чому](#чого-поки-що-немає). Ставте будь-яку країну, інтерфейс лишиться українським. |
-| `An exception occurred` при запуску додатка | Видаліть папку цього додатка `SD:/luma/titles/<номер>` цілком і перезавантажте — він запуститься без перекладу. І [напишіть в Issues](../../issues) з фото екрана. |
-| Назви додатків українські, а кнопки Меню HOME («Помощь», «Запустить») і статус-бар — ні | Luma старша за v10.3: вона не вміє підміняти файли Меню HOME. Версію видно в меню Luma (SELECT при ввімкненні). Оновіть Luma за [3ds.hacks.guide](https://3ds.hacks.guide/updating-b9s) і знову ввімкніть `Enable game patching`. |
-| Меню HOME не завантажується | Видаліть `SD:/luma/titles/0004003000009802/code.ips`. Не допомогло — усю папку `0004003000009802`. |
 | Не можу знайти українізатор в Universal-Updater | Шукайте лупою в лівій панелі: «Українізатор». Має бути вибраний магазин **Universal-DB** (шестерня → `Select UniStore`). |
-| У Universal-Updater помилка завантаження | Реліз ще не опубліковано або зникла мережа — спробуйте пізніше чи візьміть архів вручну. Ще одна причина — збита дата на консолі: тоді не проходить перевірка сертифіката. |
-| Не вистачає місця | Під час встановлення треба ~55 МБ вільних: 23 МБ архіву плюс 30 МБ розпакованого. |
-| Не видно нової версії | Universal-Updater перечитує магазин лише якщо ввімкнено автооновлення. Примусово: шестерня → `Select UniStore` → підсвітити **Universal-DB** → **START**. Новий реліз потрапляє в Universal-DB не миттєво — дайте йому кілька годин. |
-| Після вибору рядка нічого не відбувається | Universal-Updater кладе роботу в **чергу**. Відкрийте її третьою іконкою в лівій панелі — там видно, чи йде завантаження. |
-| Якийсь додаток крешить після встановлення | У вас старіша його версія. Видаліть папку цього додатка з `SD:/luma/titles/` — решта перекладу працюватиме. Номери папок є в [технічному описі](docs/internals.md). |
+| Не видно нової версії | Universal-Updater перечитує магазин лише з автооновленням. Примусово: шестерня → `Select UniStore` → підсвітити **Universal-DB** → **START**. Новий реліз потрапляє в Universal-DB не миттєво — дайте йому кілька годин. |
+| У Universal-Updater помилка завантаження | Зникла мережа, або збита дата на консолі — тоді не проходить перевірка сертифіката. Можна взяти CIA з Releases вручну. |
+| Архів: інтерфейс лишився як був | Не увімкнено `Enable game patching`, або шлях не той: має бути `luma/titles/…`, а не `luma/luma/titles/…`. І перевірте, що вмикали ту мову, місце якої займає архів. |
 
-Порожні квадрати замість літер, обрізані чи накладені написи — це баг. [Відкрийте Issue](../../issues) з фото екрана.
+Порожні квадрати замість літер, обрізані чи накладені написи — це баг. [Відкрийте Issue](../../issues) з фото екрана; якщо ставили застосунком — додайте файл `3ds/3ds-ua-installer.log` з SD-карти.
 
 ## Як допомогти
 
@@ -166,30 +145,23 @@ Universal-Updater покаже нагадування про Luma й мову �
 
 ## Технічні деталі
 
-Як воно влаштовано: за що відповідає кожна папка, чому частині додатків потрібна правка коду, звідки беруться назви під іконками і як добудовано шрифт верхнього рядка — **[docs/internals.md](docs/internals.md)**.
+Як воно влаштовано: за що відповідає кожна папка, чому частині додатків потрібна правка коду, звідки беруться назви під іконками, як застосунок ставить файли й переживає обрив живлення і як шрифт з `і ї є ґ` потрапляє в систему без запису в NAND — **[docs/internals.md](docs/internals.md)**.
 
-Зібрати мод самому зі своїх дампів — **[docs/dumping.md](docs/dumping.md)**.
+Зібрати мод і застосунок самому зі своїх дампів — **[docs/dumping.md](docs/dumping.md)**.
 
 ## Ліцензія
 
-Код інструментів і текст перекладу — MIT. Файлів Nintendo в репозиторії немає; збірка потребує дампу з власної консолі. Проєкт неофіційний, з Nintendo не пов'язаний.
+Код інструментів і застосунку та текст перекладу — MIT; шрифт інтерфейсу застосунку Nunito — SIL OFL. Файлів Nintendo в репозиторії немає; збірка потребує дампу з власної консолі, а шрифт зі справжніми літерами застосунок будує на консолі з її власного. Проєкт неофіційний, з Nintendo не пов'язаний.
 
 ---
 
 ## In English
 
-**Ukrainian system language for the Nintendo 3DS.** The mod takes the place of one of the console's languages: «Українська» appears in the language list and the console starts speaking Ukrainian. Every other language stays untouched.
+**Ukrainian system language for the Nintendo 3DS.** Ukrainian takes the place of one of the console's languages — Russian or English — and the console starts speaking Ukrainian. Every other language stays untouched.
 
-The builds carry the same translation and differ in two things — whose slot Ukrainian takes, and which console the archive is for:
+**It installs with an app.** «Українізатор 3DS» goes onto the console like any other program and does everything itself: picks the files for your console, turns on what Luma needs, adds the real letters **і ї є ґ** to the system font and reboots. No need to change the console language. Updating, switching the slot and removing all happen in the same app, one press each.
 
-- **`3ds-ua-from-ru-<version>-old3ds.zip`** — in place of Russian, for the 3DS / 3DS XL / 2DS.
-- **`3ds-ua-from-ru-<version>-new3ds.zip`** — in place of Russian, for the New 3DS / New 3DS XL / New 2DS XL.
-- **`3ds-ua-from-en-<version>-old3ds.zip`** — in place of English, for the 3DS / 3DS XL / 2DS.
-- **`3ds-ua-from-en-<version>-new3ds.zip`** — in place of English, for the New 3DS / New 3DS XL / New 2DS XL.
-
-Install one of them, not several. The per-console split exists because a New 3DS runs its own copies of the Internet Browser and of Health and Safety while Luma keeps reading the Old 3DS title's folder for them: the same file has to hold different bytes on the two consoles. The wrong archive crashes Health and Safety and leaves the browser half translated.
-
-Nothing on the console itself is modified — it all lives on the SD card. Delete the folders and everything is back to stock.
+Nothing in the console's system files is modified — it all lives on the SD card, the font included. If the power goes out mid-install, the app picks up where it stopped.
 
 **The goal is a complete Ukrainian localisation** of everything visible on screen. **32 parts of the system plus twelve electronic manuals** are done so far; work continues.
 
@@ -199,120 +171,106 @@ HOME Menu (including the application names under the icons) · System Settings (
 
 ### Requirements
 
-- a Nintendo 3DS / 2DS / New 3DS of the **European (EUR) region**
-- **Luma3DS v10.3 or newer** custom firmware installed (the latest is best). Older builds cannot replace files of the HOME Menu and system applets (keyboard, Manual, error screen)
-- an SD card with ~55 MB free
-- optionally **Universal-Updater**: with it everything is done from the console, no card removal. The mod is already in its main store, Universal-DB
+- a Nintendo 3DS / 3DS XL / 2DS / New 3DS / New 3DS XL / New 2DS XL of the **European (EUR) region**
+- **Luma3DS v10.3 or newer** custom firmware. The real letters `і ї є ґ` need **v13.0 or newer**, so the latest is best
+- an SD card with 40 MB free
+- a charged battery or the charger — the app will not start on a low battery
 
 No Luma3DS yet? Follow [3ds.hacks.guide](https://3ds.hacks.guide/) first — the mod does nothing without it.
 
-### Installation via Universal-Updater
+### Installation
 
-The easy path: the card stays in the console, and later updates announce themselves. There is nothing to add — the mod lives in **Universal-DB**, the store [Universal-Updater](https://github.com/Universal-Team/Universal-Updater) works with out of the box.
+**1. Install the «Українізатор 3DS» app.**
+
+With [Universal-Updater](https://github.com/Universal-Team/Universal-Updater) — nothing to add, the app is in Universal-DB, its main store:
+
+1. Open Universal-Updater and find **Українізатор 3DS/2DS** — the magnifier in the bottom screen's left sidebar, type «Українізатор».
+2. Open the second icon down — the downloads tab — and pick `3ds-ua-installer-<version>.cia`.
+3. Wait until the entry leaves the queue (third icon down).
+
+Without Universal-Updater: grab `3ds-ua-installer-<version>.cia` from [Releases](../../releases), copy it to the SD card and install it with FBI.
+
+**2. Open «Українізатор 3DS»** from the HOME Menu. The app checks the console — Luma, region, free space and battery — and tells you if something is missing.
+
+**3. Press «Встановити» (Install)** and pick which language Ukrainian replaces: «Замість російської» (Russian) or «Замість англійської» (English). That language leaves the language list; the rest stay.
+
+Keep the console on for a few minutes — the HOME button is disabled meanwhile. Then the console reboots by itself and comes up in Ukrainian. Done.
 
 <table>
 <tr>
-<td><img src="assets/pictures/universal-updater-entry.png" width="250" alt="Universal-Updater: the «Українізатор 3DS/2DS» entry in Universal-DB, version v1.10.0"></td>
-<td><img src="assets/pictures/universal-updater-downloads.png" width="250" alt="Universal-Updater: the downloads tab with the four variants and «Видалити українізатор»"></td>
-<td><img src="assets/pictures/universal-updater-queue.png" width="250" alt="Universal-Updater: the queue downloading the mod, step 1 of 3"></td>
+<td><img src="assets/pictures/app-main.png" width="250" alt="Українізатор 3DS: the main screen with the Install button"></td>
+<td><img src="assets/pictures/app-check.png" width="250" alt="Console check: Luma3DS, region, Luma settings, SD space, battery — all good"></td>
+<td><img src="assets/pictures/app-slot.png" width="250" alt="Picking the language Ukrainian replaces: Russian or English"></td>
+</tr>
+<tr>
+<td><img src="assets/pictures/app-progress.png" width="250" alt="Installing: 28%, the stages from the check to the finish, «keep the console on»"></td>
+<td><img src="assets/pictures/app-done.png" width="250" alt="«Done! The console is in Ukrainian» and the reboot countdown"></td>
+<td><img src="assets/pictures/app-installed.png" width="250" alt="The app once installed: Install again, Change slot, Remove"></td>
 </tr>
 </table>
 
-**1. Find the entry**
+Already have the mod from the 1.x Universal-Updater scripts or an archive? Install the app on top and press «Оновити» (Update): it takes over the files already there, nothing to delete first.
 
-Open Universal-Updater and select **Українізатор 3DS/2DS** — the icon with a flag and a console. Search is quickest: the **magnifier** in the bottom screen's left sidebar, type «Українізатор». A card with the version appears at the bottom.
+The app works with the touch screen and with buttons: the D-pad moves, **A** presses.
 
-**2. Pick your variant**
+#### Updating and switching the slot
 
-Open the **second icon down** the left sidebar — the downloads tab — and pick the line that matches your console:
+When a new version ships, a green arrow appears on the **Українізатор 3DS/2DS** icon in Universal-Updater. Install the new CIA, open the app and press «Оновити». The app knows what is installed and changes only what changed.
 
-| Line | Ukrainian replaces | Console |
-|---|---|---|
-| `New 3DS / New 2DS XL - замість російської` | Russian | **New** 3DS, New 3DS XL, New 2DS XL |
-| `New 3DS / New 2DS XL - замість англійської` | English | **New** 3DS, New 3DS XL, New 2DS XL |
-| `Old 3DS / Old 2DS - замість російської` | Russian | 3DS, 3DS XL, 2DS |
-| `Old 3DS / Old 2DS - замість англійської` | English | 3DS, 3DS XL, 2DS |
+Replaced the wrong language? «Змінити слот» (Change slot) in the app, no reinstall.
 
-A New model has a small grey C-stick above A/B/X/Y and extra ZL/ZR buttons; without them, take `Old`.
+Added the separate `3ds-ua.unistore` store at some point? It installs the app too — the «Встановити застосунок» line — but everything is in Universal-DB anyway.
 
-Universal-Updater shows a reminder about Luma and the language — confirm with **A**. After that it asks nothing: the archive downloads and unpacks in the **queue** (third icon down), where you can watch the progress. Wait until the entry leaves the queue.
+#### By hand, from an archive
 
-Picked the wrong line? Run `Видалити українізатор` and install the right one; removal does not depend on slot or model.
+For those who copy files onto the card themselves. The archives have no real letters (`i ï ε г` stand in for `і ї є ґ`), and Luma and the language are up to you.
 
-**3. Then do steps 2 and 3 of the manual installation below** (`Enable game patching` and picking the language). No app can do those for you.
+Grab one archive from [Releases](../../releases): `-from-ru-` puts Ukrainian in place of Russian, `-from-en-` in place of English; `-old3ds` is for the 3DS / 3DS XL / 2DS, `-new3ds` for the New 3DS / New 3DS XL / New 2DS XL. A New model has a small grey C-stick above A/B/X/Y and extra ZL/ZR buttons. The wrong archive crashes Health and Safety and leaves the browser half translated: the New 3DS runs its own copies of those two.
 
-When a new version ships, a green arrow appears on the **Українізатор 3DS/2DS** icon — run the same line again.
-
-Added the separate `3ds-ua.unistore` store earlier? It still works, but you no longer need it — everything is in Universal-DB.
-
-### Installation from the SD card (manual)
-
-**1. Copy the files onto the SD card**
-
-Grab one archive from [Releases](../../releases): `-from-ru-` puts Ukrainian in place of Russian, `-from-en-` in place of English; `-old3ds` is for the 3DS / 3DS XL / 2DS, `-new3ds` for the New 3DS / New 3DS XL / New 2DS XL. Power the console off, put the SD card in your computer, unpack the archive and copy the `luma` folder into the card's root — where a `luma` folder already exists. Agree when your computer offers to merge them.
-
-Put the card back.
-
-**2. Enable patching in Luma**
-
-Hold **SELECT** and power the console on — the blue Luma menu appears.
-
-Select **`Enable game patching`** (7th line), press **A** so it reads `(x)`, then press **START** to save and reboot.
-
-**3. Pick Ukrainian**
-
-`System Settings` → `Other Settings` → `Language` → **Українська** → `OK`.
-
-That is the entry that used to read «Русский» — «English» in the `from-en` build. It is labelled «Українська» whatever language the console currently runs in, so you can find it right away.
-
-The console reboots itself. Done.
+1. Power the console off, put the SD card in your computer, unpack the archive and copy the `luma` folder into the card's root — where a `luma` folder already exists. Agree when your computer offers to merge them.
+2. Hold **SELECT** and power the console on — the blue Luma menu appears. Select **`Enable game patching`** (7th line, **A**, so it reads `(x)`) and press **START**.
+3. `System Settings` → `Other Settings` → `Language` → **Українська** → `OK`. That is the entry that used to read «Русский» («English» in `from-en`). The console reboots itself.
 
 ### Uninstalling
 
-Any of these:
+**With the app:** «Українізатор 3DS» → «Видалити» (Remove). The app removes its files and the font, puts back other mods' files it had set aside, turns Luma's external modules back off if it turned them on, and reboots. `Enable game patching` stays on, since other mods may use it. The app itself stays on the HOME Menu, ready to install again; remove it in `System Settings` → `Data Management` if you like.
 
-1. **In Universal-Updater** → **Українізатор 3DS/2DS** → downloads tab → `Видалити українізатор`. It asks nothing about model or slot. But Universal-Updater confirms **every folder separately** — up to 32 of them; hold **A**. There is no way around it: the confirmation is built into Universal-Updater and can be neither disabled nor remembered. Reboot the console afterwards.
-2. **Switch the console language** to anything else — the translation simply won't apply.
-3. **Delete the mod folders** from `SD:/luma/titles/` by hand — every one is listed in [the table](docs/internals.en.md#what-each-folder-under-lumatitles-is) (32 on New 3DS, 30 on Old 3DS).
-4. **Turn `Enable game patching` off** in the Luma menu (this disables other mods too).
+**Installed from an archive:** delete the mod folders from `SD:/luma/titles/` — every one is listed in [the table](docs/internals.en.md#what-each-folder-under-lumatitles-is) (32 on New 3DS, 30 on Old 3DS) — or install the app and press «Видалити».
 
-Nothing in the system was modified, so removal cannot break anything.
-
-**One exception.** The built-in Notification tips were copied into NAND by the console long ago, and no file on the SD card can reach them — the mod rewrites them inside that database. After you remove the mod they stay Ukrainian (not corrupted — simply Ukrainian). If you'd rather they didn't, delete `SD:/luma/titles/0004003000009802/code.ips` **before** the first boot with the mod: the tips then stay in the language the mod replaces, along with the application names and banners that same file translates.
+**One exception.** The built-in Notification tips were copied into NAND by the console long ago, and no file on the SD card can reach them — the mod rewrites them inside that database. After you remove the mod they stay Ukrainian (not corrupted — simply Ukrainian). New notifications are never touched.
 
 ### Known limits
 
 - **Ukraine is not in the country list.** Nintendo's country table has no Ukraine at all: the European block runs unbroken, `…99 Romania, 100 Russia, 101 Serbia…`. The country code is a system-wide value that NNID, the eShop and age ratings depend on, and no new row fits in the table. The mod used to rename code `100` to «Україна» along with its regions — but **every other machine resolves that code with its own table**, so other players online, NNID, the eShop and StreetPass saw Russia anyway, and a Ukrainian oblast reached them as the Russian one sharing its index. The list now says what the console actually reports: code `100` is `росія (болота)` with its own 83 oblasts, lowercase throughout. No more region mix-ups online.
 
   **Language and country are unrelated on the 3DS:** the translation hangs off the language slot, so the interface stays fully Ukrainian whatever country your profile says — pick any.
-- **The Ukrainian letters `і ї є ґ`** are not in the console's font, so the mod shows the visually closest `i ï ε г`. Replacing the font means modifying the system itself, which the releases deliberately avoid. ⚠️ **Experimental:** for those who accept a NAND change there is an opt-in route — a patched system font and a `GLYPHS=real` build. It has not been tested on a console yet, and a mistake can stop the HOME Menu from starting, so skip it unless you know GodMode9 and keep a NAND backup ([technical write-up](docs/internals.en.md#real-ukrainian-letters-in-the-system-font-opt-in)).
-- **Typing them.** The keyboard layout is Ukrainian (`ы`→`і`, `ъ`→`ї`, `э`→`є`, `ё`→apostrophe), but it types those same substitute characters (the real letters in the experimental `GLYPHS=real` build).
+- **Real `і ї є ґ` in the archives.** Only the app installs them: it builds the font out of the console's own, and the console reads it off the SD card. It needs Luma3DS v13.0 or newer; on an older one, or when another NS patch is already on the card, the app keeps the substitutes `i ï ε г`. How it works: the [technical write-up](docs/internals.en.md#real-ukrainian-letters-in-the-system-font).
 - **The electronic manuals of the remaining titles.** The viewer reads each title's own manual, and each one has to be dumped off your console and translated separately. Twelve ship in full; every other title shows the manual it always did. The ceiling is space, not text: the viewer's path table and its SMDH name table share one 1064-byte window of `.rodata` padding, and twelve titles use 617 of it. A game's manual belongs to the game, not to the system, so those stay as they are.
 - **Application names in the eShop, System Transfer and Game Notes** are still in the language the mod replaces. In the HOME Menu, the Activity Log, Data Management and the Instruction Manual they are Ukrainian.
-- **The electronic manuals in the `from-en` build** are built from the Russian document: it has more pages than the English one, so it is copied into the Ukrainian slot whole, its own screenshots included. The Russian manual itself stays where it was.
-- **A Cyrillic keyboard under Russian in the `from-en` build.** The keyboard applet grants Cyrillic to exactly one system language, and in this build that is Ukrainian. The Russian interface itself stays where it was, but its keyboard will be Latin. The `from-ru` build has no such catch.
+- **The electronic manuals in the «Замість англійської» (`from-en`) variant** are built from the Russian document: it has more pages than the English one, so it is copied into the Ukrainian slot whole, its own screenshots included. The Russian manual itself stays where it was.
+- **A Cyrillic keyboard under Russian in the «Замість англійської» (`from-en`) variant.** The keyboard applet grants Cyrillic to exactly one system language, and in this build that is Ukrainian. The Russian interface itself stays where it was, but its keyboard will be Latin. The «Замість російської» variant has no such catch.
 - **USA and JPN consoles** have none of the European language slots and need a separate build. Open an Issue if you want one.
 
 ### If something goes wrong
 
 | Symptom | Fix |
 |---|---|
-| Interface is unchanged | `Enable game patching` is off. It resets when you update Luma — turn it back on. |
-| Still not Ukrainian, the option is on | Check the path: `luma/titles/…`, not `luma/luma/titles/…`. And check the archive matches the entry you picked: `from-ru` turns on at «Русский», `from-en` at «English». |
-| No «Українська» in the language list | The archive was not copied fully, or the console is not EUR. |
+| The console won't boot after installing | Power it off, hold **SELECT** and power on. In the Luma menu untick **`Enable loading external FIRMs and modules`** and press **START**. The console boots with substitutes for `і ї є ґ`; open the app and it sets things right. No system files were modified. |
+| The power went out mid-install | Nothing is broken: open the app and it continues where it stopped. |
+| The app says `Enable game patching` is off | It resets when you update Luma. Press «Увімкнути» (Turn on); without that button (an old Luma) the app shows how to do it by hand. |
+| «Низький заряд» (low battery) | Plug in the charger — the app carries on by itself. |
+| Substitutes `i ï ε г` instead of `і ї є ґ` | Luma is older than v13.0, another NS patch is on the card, or the mod came from an archive. Update Luma and press «Встановити ще раз» (Install again) in the app. |
+| App names are Ukrainian, but the HOME Menu buttons («Manual», «Open») and status bar are not | Luma is older than v10.3 and cannot replace HOME Menu files. Update Luma via [3ds.hacks.guide](https://3ds.hacks.guide/updating-b9s). |
+| `An exception occurred` when opening an app | You have an older build of that app. Delete its whole `SD:/luma/titles/<id>` folder and reboot — it starts untranslated. Folder ids are in the [technical write-up](docs/internals.en.md#what-each-folder-under-lumatitles-is). Please [open an Issue](../../issues) with a photo. |
+| HOME Menu won't boot | Delete `SD:/luma/titles/0004003000009802/code.ips`. If that doesn't help, the whole `0004003000009802` folder. |
 | Some text is not Ukrainian | Expected: technical strings (`OK`, `Miiverse`, date formats) are left as they are. |
 | Ukraine is missing from the country list | The system has no country code for it, see [Known limits](#known-limits). Pick any country; the interface stays Ukrainian. |
-| `An exception occurred` when opening an app | Delete that app's whole `SD:/luma/titles/<id>` folder and reboot — it will start untranslated. Please [open an Issue](../../issues) with a photo. |
-| App names are Ukrainian, but the HOME Menu buttons («Manual», «Open») and status bar are not | Luma is older than v10.3 and cannot replace HOME Menu files. The version is shown in the Luma menu (hold SELECT at power-on). Update Luma via [3ds.hacks.guide](https://3ds.hacks.guide/updating-b9s) and turn `Enable game patching` back on. |
-| HOME Menu won't boot | Delete `SD:/luma/titles/0004003000009802/code.ips`. If that doesn't help, delete the whole `0004003000009802` folder. |
 | Can't find the mod in Universal-Updater | Search with the magnifier in the left sidebar: «Українізатор». The selected store must be **Universal-DB** (gear → `Select UniStore`). |
-| Download error in Universal-Updater | The release isn't published yet, or the network dropped — try later or grab the archive by hand. Another cause is a wrong console clock, which fails the certificate check. |
-| Not enough space | Installing needs ~55 MB free: 23 MB of archive plus 30 MB unpacked. |
-| The new version doesn't show up | Universal-Updater only refetches the store when auto-update is on. Force it: gear → `Select UniStore` → highlight **Universal-DB** → **START**. A new release reaches Universal-DB with some delay — give it a few hours. |
-| Nothing happens after picking a line | Universal-Updater puts the work in a **queue**. Open it with the third icon in the left sidebar to see whether the download is running. |
-| An app crashes after installing | You have an older build of it. Delete that app's folder from `SD:/luma/titles/` — the rest keeps working. Folder numbers are in the [technical write-up](docs/internals.en.md). |
+| The new version doesn't show up | Universal-Updater refetches the store only with auto-update on. Force it: gear → `Select UniStore` → highlight **Universal-DB** → **START**. A new release reaches Universal-DB with some delay — give it a few hours. |
+| Download error in Universal-Updater | The network dropped, or the console clock is wrong, which fails the certificate check. You can grab the CIA from Releases by hand. |
+| Archive: the interface is unchanged | `Enable game patching` is off, or the path is wrong: `luma/titles/…`, not `luma/luma/titles/…`. And check you picked the language the archive replaces. |
 
-Empty boxes instead of letters, clipped or overlapping text — that's a bug. [Open an Issue](../../issues) with a photo.
+Empty boxes instead of letters, clipped or overlapping text — that's a bug. [Open an Issue](../../issues) with a photo; if you installed with the app, attach `3ds/3ds-ua-installer.log` from the SD card.
 
 ### Contributing
 
@@ -322,10 +280,10 @@ Empty boxes instead of letters, clipped or overlapping text — that's a bug. [O
 
 ### Technical details
 
-How it works — what each folder does, why some titles need a code patch, where the names under the icons come from, how the top-bar font was extended: **[docs/internals.en.md](docs/internals.en.md)**.
+How it works — what each folder does, why some titles need a code patch, where the names under the icons come from, how the app installs and survives a power cut, and how the font with `і ї є ґ` reaches the system without a NAND write: **[docs/internals.en.md](docs/internals.en.md)**.
 
-Building the mod from your own dumps: **[docs/dumping.en.md](docs/dumping.en.md)**.
+Building the mod and the app from your own dumps: **[docs/dumping.en.md](docs/dumping.en.md)**.
 
 ### Licence
 
-Tooling code and translation text are MIT. No Nintendo files are in this repository; building requires a dump from your own console. Unofficial project, not affiliated with Nintendo.
+Tooling, app code and translation text are MIT; the app's UI font Nunito is SIL OFL. No Nintendo files are in this repository; building requires a dump from your own console, and the app builds the real-letter font on the console out of the console's own. Unofficial project, not affiliated with Nintendo.
