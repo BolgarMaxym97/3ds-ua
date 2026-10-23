@@ -1,0 +1,23 @@
+{
+	"$schema": "./node_modules/wrangler/config-schema.json",
+	// Install statistics from the «Українізатор 3DS» app: one POST per finished install,
+	// update, removal or error. See README.md.
+	"name": "3ds-ua-stats",
+	"main": "src/index.ts",
+	"compatibility_date": "2026-10-01",
+	// The app talks to the workers.dev address; it is built into the CIA.
+	"workers_dev": true,
+	// Off on purpose: Workers Logs would keep each request's metadata, client IP included,
+	// and the app promises that no IP is stored.
+	"observability": {
+		"enabled": false
+	},
+	"d1_databases": [
+		{
+			"binding": "DB",
+			"database_name": "3ds-ua-stats",
+			"database_id": "b615bf24-2fbe-45b3-b417-c2aa16b77646",
+			"migrations_dir": "migrations"
+		}
+	]
+}

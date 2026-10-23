@@ -2,6 +2,14 @@ work/
 dist/
 dist_en/
 dist_sysfont/
+dist_real/
+dist_en_real/
+dist_installer/
+installer/build/
+installer/*.3dsx
+installer/*.smdh
+installer/*.elf
+installer/*.cia
 tmp/
 dumps/
 cia/

@@ -97,8 +97,8 @@ There is deliberately no `ґ` key: in this mod `ґ` renders as `г` anyway, so s
 would produce something indistinguishable from `г`. The apostrophe is more useful —
 Ukrainian needs it constantly (`об'єкт`, `п'ять`) and this layout had none at all.
 
-In the opt-in `GLYPHS=real` build the same keys type the real `і ї є` (see
-[Real Ukrainian letters in the system font](#real-ukrainian-letters-in-the-system-font-opt-in)).
+In the `GLYPHS=real` build (the one the app installs along with the font) the same keys type the real `і ї є` (see
+[Real Ukrainian letters in the system font](#real-ukrainian-letters-in-the-system-font)).
 There `ґ` gets a key of its own on the alphabet page (`euro_keytop_05`, upper case
 `euro_keytop_05_c`), right after `г` as in the alphabet. The other pages of that keyboard
 carry 36 keys, the Russian set here used 33, so nothing is pushed out; the ЙЦУКЕН page has no free key, and on a
@@ -223,12 +223,15 @@ mounted yet at that point. `rom:` always is, being the title's own.
 Nothing falls back behind this patch: the real romfs has no `font/` directory, so an applet
 whose font stopped shipping would crash the same way. `build_hud_font()` is what prevents it.
 
-## Real Ukrainian letters in the system font (opt-in)
+## Real Ukrainian letters in the system font
 
-Everything above keeps the console's own files untouched, and that is why the mod shows
-`i ï ε г` for `і ї є ґ`: the shared system font has no Ukrainian letters. This section is
-the one exception, and it is **opt-in** - the releases do not use it, and nothing changes
-unless you build with `GLYPHS=real` and put a patched font on the console yourself.
+The shared system font has no Ukrainian letters, so the release archives show `i ï ε г` for
+`і ї є ґ`. The real letters come with the **app** (since 2.0.0, see
+[The installer app](#the-installer-app-українізатор-3ds)): it builds the patched font on the
+console out of the console's own, puts it on the SD card and installs an NS patch that reads it
+from there — the second route in [the table below](#how-it-can-reach-a-console). Nothing is
+written to NAND. The rest of this section is what goes into the font and how to do the same
+by hand.
 
 **What it adds.** Nine code points: `і І ї Ї є Є ґ Ґ` and the modifier apostrophe `ʼ`
 (U+02BC). Each one is made from a letter the font already has, so it is drawn by the same
@@ -279,18 +282,23 @@ through the same table, so in a `real` build the `і ї є` keys type the real l
 
 ### How it was tested
 
-In Azahar, whose shared-font loader goes through LayeredFS: the patched file in
+On consoles: an Old 3DS (11.17.0-50E, Luma3DS v13.4) and a New 3DS XL, 2026-10-22 — the font
+built by the app, read off the SD card through the NS patch: the whole system's text with the
+real letters. The NS module (`0004013000008002`, remaster 23) is byte-identical on both models.
+
+Before that, in Azahar, whose shared-font loader goes through LayeredFS: the patched file in
 `load/mods/0004009B00014002/romfs/cbf_std.bcfnt.lz` is all it takes. The HOME Menu and System
 Settings were booted with the text rebuilt with real letters: they draw all nine new glyphs,
-with the right widths, next to the stock ones. Nothing has been tested on a console yet.
+with the right widths, next to the stock ones.
 
 ### How it can reach a console
 
 LayeredFS cannot deliver it. The font is opened by NS (`0004013000008002`), a system module,
 at boot; Luma's LayeredFS is patched only into applications and applets and redirects only
 their own `rom:` mounts (`sysmodules/loader/source/patcher.c`, `patchLayeredFs`). So the font
-needs one of the routes below. The project ships the tooling for the first one, as an opt-in
-that nobody gets by installing a release:
+needs one of the routes below. The app takes the second (`tools/ns_font.py` makes the patch,
+`make nsfont` the files for trying it by hand); the project also has tooling for the first,
+but that one changes NAND and stays opt-in:
 
 | Route | Persistent | Writes NAND | Risk | Undo |
 |---|---|---|---|---|
@@ -339,6 +347,102 @@ Risks to weigh:
 - **System updates** may reinstall the stock title. Reinstall the patched one after updating.
 - Only `0004009B00014002` (JPN/EUR/USA) is covered; CHN, KOR and TWN consoles use their own
   font titles.
+
+## The installer app, «Українізатор 3DS»
+
+Since 2.0.0 the mod is installed by its own app — a CIA built from `installer/` (C, libctru
+and citro2d, UI font Nunito under the OFL). It carries everything: both slots, both models,
+the text with substitutes and with the real letters, and the NS patch. Once the CIA is on the
+console no network is needed. Unique ID `0xB3DA1`.
+
+**What is inside.** `make installer-data` builds eight variants (ru/en × old3ds/new3ds ×
+substitutes/real letters), and `tools/installer_manifest.py` packs 230 MB into 30.7 MB: the
+`ru` build's files whole plus bsdiff deltas to the rest, each checked by applying it back. A
+text manifest lists the files, their sha256 and the title versions they need
+(`need <model> <folder> <title> <remaster>`, from `HOOK_PATCHES` in `tools/luma_hook.py`).
+
+**Console check.** Luma and its version (`svcGetSystemInfo(0x10000, …)`), the EUR region, the
+model (`APT_CheckNew3DS` picks the old3ds/new3ds set), 40 MB free on SD, the battery, the
+versions of the titles the mod patches (through AM), the NS build, and whether
+`luma/config.ini` can be read. Below v10.3 the app installs nothing; on v10.3–v12.x only the
+text with substitutes.
+
+**Language.** The system language is left alone: every `luma/titles/<TID>/` gets a
+`locale.txt` (`EUR RU` or `EUR EN`), and Luma overrides the language for that title only.
+Games keep the system language, and the Language entry in System Settings shows «Українська»
+as selected.
+
+**Luma.** `luma/config.ini` is edited only in format 3.13 (`installer/source/engine/lumacfg.c`),
+with a `config.ini.bak` first: `Enable game patching` always, «Load external FIRMs and
+modules» only when the font goes in. Whether we changed a flag is derived from the `.bak`, so
+it survives a power cut. Removal turns external modules back off if the app turned them on,
+and leaves game patching on, since other mods may use it. An older Luma with `config.bin`
+gets on-screen instructions.
+
+**Font.** Built on the console (`installer/source/sysfont/`, a C port of `tools/bcfnt.py`,
+`tools/lz11.py` and `tools/sysfont_glyphs.py`): the console's own font from
+`romfsMountFromTitle(0004009B00014002)` plus `upturn.bin` — the 36 pixels of the `ґ Ґ`
+upturns and the sha256 of the input and output fonts. The result must match that sha byte for
+byte, or no font is installed. It goes to `3ds/3ds-ua/font/cbf_std.bcfnt.lz`, next to
+`luma/sysmodules/0004013000008002.ips` and `luma/titles/0004013000008002/exheader.bin` from
+`tools/ns_font.py`. A lower-priority thread builds it while the worker waits on the SD card;
+if it fails, the text falls back to substitutes in the same run. No font is installed when
+Luma is older than 13.0, the NS build is unknown, another NS patch is already on the card (the
+app leaves it alone), or the user turned external modules off after our font went in — that
+counts as a rollback.
+
+**Power-cut safety.** Each `luma/titles/<TID>` folder is assembled whole in
+`<TID>.3dsua-new` and swapped in by renaming: the old one moves to `.3dsua-old` (unchanged
+files are moved out of it rather than written again), and a complete staging folder is marked
+`.3dsua-full`. Loose files (`config.ini`, the font, the NS patch, the state) go
+`.3dsua-tmp` → sha check → `.3dsua-ok` → replace. State lives in `3ds/3ds-ua/pending.txt`
+(written before the first change) and `installed.txt` (written last). After a cut the app
+finishes `.3dsua-ok` and `.3dsua-full` on its next launch, clears the rest and carries on. At
+any moment each title folder is the whole old one, the whole new one, or absent.
+
+**Other people's files.** Files on our paths that the mod did not ship are copied to
+`3ds/3ds-ua/backup/` before they are replaced and put back on removal. A copy installed by the
+1.x Universal-Updater scripts or by hand (no `installed.txt`, but `banner_22800.bin` present) is
+taken over: files on manifest paths count as ours.
+
+**While it runs** HOME and sleep are disabled and background downloads (NDM) are locked. At the
+end a «Готово!» screen, then a reboot with `APT_HardwareResetAsync`: `NS_RebootToTitle` back
+into the app leaves the console on a black screen under Luma. The log is
+`3ds/3ds-ua-installer.log` (stages, timings, memory). On an Old 3DS a fresh install takes
+~67 s and removal ~35 s: every FS call costs ~20 ms, so the file count sets the time, not the
+bytes.
+
+**Statistics.** After an operation `installer/source/stats.c` sends a report (`stats/report.c`
+builds the JSON; `stats/src/event.ts` on the server checks the same fields and limits) — from a
+thread, an `httpc` POST to `STATS_URL`, the answer never read; the reboot waits at most 3 s for
+it, and the countdown runs by the clock, not by frames. Without the tick or without Wi-Fi
+(`ACU_GetWifiStatus`) no connection is made at all. Plain HTTP: the console's TLS does not get
+through to `workers.dev` (test 2026-10-23: it connects, but the answer is not the Worker's), and
+the report holds nothing secret. `httpcInit` needs shared memory (0x1000) — with zero every POST
+fails with `0xD8A0A003`. The ID and the tick live in `3ds/3ds-ua-installer.ini`, since a removal
+clears `3ds/3ds-ua/`; the ID is 40 bits from `ps:ps` in Crockford base32. The server, schema and
+queries: `stats/README.md`.
+
+**Building.**
+
+```bash
+make release PY=.venv/bin/python   # 3ds-ua-installer-<version>.cia + four zips + the stores
+make installer-test                # host tests: the font byte for byte, the payload, the engine with power cuts
+```
+
+It needs the `devkitpro/devkitarm` Docker image, a `.venv` with Pillow, fontTools and
+bsdiff4, and local builds of `makerom` and `bannertool` (`MAKEROM`, `BANNERTOOL`; default
+`tmp/tools/`). `tools/installer_art.py` draws the icon, the banner and its sound.
+
+`make installer-test` runs the engine over the real payload on a scratch "SD card", cutting
+the power at **every** change (1713 cuts), and checks that recovery plus a rerun leaves the
+same card as a clean run.
+
+**The splash.** A CIA's logo is signed with an HMAC-SHA256 under the HOME Menu's key; an
+unsigned or altered one takes the HOME Menu down. `tools/installer_logo.py` finds the key in
+`work/0004003000009802/code.bin` (your own dump) by its public SHA-256, proves it on the stock
+logo's HMAC and signs ours. The key is not in the repository; without the dump the CIA is built
+with makerom's stock logo.
 
 ## What is in the release
 
@@ -1233,7 +1337,7 @@ Two titles carry a second copy of their SMDH inside their own `romfs`, and **Lay
 
 Only the slot this build replaces is touched (index 10 for `from-ru`, 1 for `from-en`) — its short and long description, 40 and 82 bytes respectively. The icon bitmaps and the other 15 languages stay byte-for-byte identical: see `tools/smdh.py` and `build_smdh()`. The eShop and Face Raiders copies exist too, but their names are already in Latin script.
 
-**The system font.** It has no Ukrainian letters, and LayeredFS cannot replace it: it lives in a separate system title the mod does not touch. An opt-in way around it, at the price of modifying NAND, is described in [Real Ukrainian letters in the system font](#real-ukrainian-letters-in-the-system-font-opt-in).
+**The system font, in the archives.** It has no Ukrainian letters, and LayeredFS cannot replace it: the font is opened by the NS system module. The app installs the real letters with an NS patch that reads the font off the SD card — see [Real Ukrainian letters in the system font](#real-ukrainian-letters-in-the-system-font).
 
 **Real Ukrainian letters from the keyboard.** The layout is Ukrainian (see [The Ukrainian keyboard layout](#the-ukrainian-keyboard-layout)), but the `і ї є` keys type `i ï ε` — the same substitute glyphs the rest of the mod uses. On the console that reads correctly and consistently; outside it — in a Mii name, a folder name, a post — it is Latin and Greek, not Ukrainian text. There is no way around it: real letters need a different font, which means modifying NAND. The opt-in `GLYPHS=real` build types the real letters, for consoles that carry the patched font.
 
