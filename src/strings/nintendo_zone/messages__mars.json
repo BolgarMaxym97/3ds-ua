@@ -561,7 +561,7 @@
   },
   "App_SD_PulledOut": {
     "en": "The SD Card has\nbeen removed.\n\nPlease turn off the power\nbefore removing SD Cards.\n",
-    "ua": "Карту SD\nвийнято.\n\nЗавжди вимикайте консоль\nперед вийманням карти SD.\n"
+    "ua": "Карту SD вийнято.\n\nЗавжди вимикайте консоль\nперед вийманням карти SD.\n"
   },
   "App_SD_BadFormat": {
     "en": "",
@@ -1129,7 +1129,7 @@
   },
   "App_ERR_Comm_WirelessNG_13xx": {
     "en": "Failed to connect to the access point.\n\nHold down the POWER Button to turn\noff the power, then turn it on and try\nagain.\n\nIf the problem persists, please contact\nyour local customer support centre.\nFor contact details, check the\nOperations Manual or visit\nsupport.nintendo.com.",
-    "ua": "Не вдалося з'єднатися з точкою\nдоступу.\n\nНатисніть і утримуйте кнопку POWER,\nщоб вимкнути консоль, тоді увімкніть\nїї й спробуйте ще раз.\n\nЯкщо проблема не зникає, зверніться\nдо місцевої служби підтримки.\nКонтакти шукайте в посібнику\nз користування або\nна support.nintendo.com."
+    "ua": "Не вдалося з'єднатися з точкою\nдоступу.\n\nНатисніть і утримуйте кнопку POWER,\nщоб вимкнути консоль, тоді увімкніть\nїї й спробуйте ще раз.\n\nЯкщо проблема не зникає,\nзверніться до місцевої служби\nпідтримки. Контакти шукайте\nв посібнику з користування або\nна support.nintendo.com."
   },
   "App_ERR_Comm_Wired": {
     "en": "A communication error has occurred.\n\nThere may be a problem with the\ninternet connection or the server.\n\nThere may be a problem with the\nwireless environment. Please move\ncloser to the access point and try\nagain.",
@@ -1137,11 +1137,11 @@
   },
   "App_ERR_HTTP_FileNotFound": {
     "en": "The specified file is not on the server.\nThis may have been caused by a\nproblem with the server. Please try\nagain later.\n\nIf the problem persists, please contact\nyour local customer support centre.\nFor contact details, check the\nOperations Manual or visit\nsupport.nintendo.com.",
-    "ua": "Указаного файлу на сервері немає.\nМожливо, це через проблему\nна сервері. Спробуйте пізніше.\n\nЯкщо проблема не зникає,\nзверніться\nдо місцевої служби підтримки.\nКонтакти шукайте в посібнику\nз користування або\nна support.nintendo.com."
+    "ua": "Указаного файлу на сервері немає.\nМожливо, це через проблему\nна сервері. Спробуйте пізніше.\n\nЯкщо проблема не зникає,\nзверніться до місцевої служби\nпідтримки. Контакти шукайте\nв посібнику з користування або\nна support.nintendo.com."
   },
   "App_ERR_HTTP_StatusError": {
     "en": "A server error has occurred.\nPlease wait and try again later.\n\nIf the problem persists, please contact\nyour local customer support centre.\nFor contact details, check the\nOperations Manual or visit\nsupport.nintendo.com.",
-    "ua": "Сталася помилка сервера.\nЗачекайте й спробуйте пізніше.\n\nЯкщо проблема не зникає,\nзверніться\nдо місцевої служби підтримки.\nКонтакти шукайте в посібнику\nз користування або\nна support.nintendo.com."
+    "ua": "Сталася помилка сервера.\nЗачекайте й спробуйте пізніше.\n\nЯкщо проблема не зникає,\nзверніться до місцевої служби\nпідтримки. Контакти шукайте\nв посібнику з користування або\nна support.nintendo.com."
   },
   "App_ERR_HTTP_UnsupportedFile": {
     "en": "Received a file from the server that is\neither corrupted or unsupported.\n\nThere may be a problem with the\ninternet connection or the server.\n\nThere may be a problem with the\nwireless environment. Please move\ncloser to the access point and try\nagain.",
@@ -1201,7 +1201,7 @@
   },
   "App_ERR_ZoneSelect_FailWDBSearchInit": {
     "en": "Search for Nintendo Zone failed.\n\nHold down the POWER Button to turn\noff the power, then turn it on and try\nagain.\n\nIf the problem persists, please contact\nyour local customer support centre.\nFor contact details, check the\nOperations Manual or visit\nsupport.nintendo.com.",
-    "ua": "Пошук Nintendo Zone не вдався.\n\nНатисніть і утримуйте кнопку POWER,\nщоб вимкнути консоль, тоді увімкніть\nїї й спробуйте ще раз.\n\nЯкщо проблема не зникає, зверніться\nдо місцевої служби підтримки.\nКонтакти шукайте в посібнику\nз користування або\nна support.nintendo.com."
+    "ua": "Пошук Nintendo Zone не вдався.\n\nНатисніть і утримуйте кнопку POWER,\nщоб вимкнути консоль, тоді увімкніть\nїї й спробуйте ще раз.\n\nЯкщо проблема не зникає,\nзверніться до місцевої служби\nпідтримки. Контакти шукайте\nв посібнику з користування або\nна support.nintendo.com."
   },
   "App_ERR_Sys_NANDError": {
     "en": "The save data is corrupted and\ncould not be loaded correctly.\n\nTo resolve this error, new save data\nwill be created. We apologise for any\ninconvenience that this may cause.",
@@ -1221,15 +1221,15 @@
   },
   "App_ERR_Sys_SavePageFailed": {
     "en": "Failed to save the page.\n\nHold down the POWER Button to turn\noff the power, then turn it on and try\nagain.\n\nIf the problem persists, please contact\nyour local customer support centre.\nFor contact details, check the\nOperations Manual or visit\nsupport.nintendo.com.",
-    "ua": "Не вдалося зберегти сторінку.\n\nНатисніть і утримуйте кнопку POWER,\nщоб вимкнути консоль, тоді увімкніть\nїї й спробуйте ще раз.\n\nЯкщо проблема не зникає,\nзверніться\nдо місцевої служби підтримки.\nКонтакти шукайте в посібнику\nз користування або\nна support.nintendo.com."
+    "ua": "Не вдалося зберегти сторінку.\n\nНатисніть і утримуйте кнопку POWER,\nщоб вимкнути консоль, тоді увімкніть\nїї й спробуйте ще раз.\n\nЯкщо проблема не зникає,\nзверніться до місцевої служби\nпідтримки. Контакти шукайте\nв посібнику з користування або\nна support.nintendo.com."
   },
   "App_ERR_Sys_InitializationFailed": {
     "en": "Failed to reset the hardware.\n\nHold down the POWER Button to turn\noff the power, then turn it on and try\nagain.\n\nIf the problem persists, please contact\nyour local customer support centre.\nFor contact details, check the\nOperations Manual or visit\nsupport.nintendo.com.",
-    "ua": "Не вдалося скинути обладнання.\n\nНатисніть і утримуйте кнопку POWER,\nщоб вимкнути консоль, тоді увімкніть\nїї й спробуйте ще раз.\n\nЯкщо проблема не зникає,\nзверніться\nдо місцевої служби підтримки.\nКонтакти шукайте в посібнику\nз користування або\nна support.nintendo.com."
+    "ua": "Не вдалося скинути обладнання.\n\nНатисніть і утримуйте кнопку POWER,\nщоб вимкнути консоль, тоді увімкніть\nїї й спробуйте ще раз.\n\nЯкщо проблема не зникає,\nзверніться до місцевої служби\nпідтримки. Контакти шукайте\nв посібнику з користування або\nна support.nintendo.com."
   },
   "App_ERR_Sys_MemoryShortage": {
     "en": "There is not enough memory.\n\nHold down the POWER Button to turn\noff the power, then turn it on and try\nagain.\n\nIf the problem persists, please contact\nyour local customer support centre.\nFor contact details, check the\nOperations Manual or visit\nsupport.nintendo.com.",
-    "ua": "Бракує пам'яті.\n\nНатисніть і утримуйте кнопку POWER,\nщоб вимкнути консоль, тоді увімкніть\nїї й спробуйте ще раз.\n\nЯкщо проблема не зникає, зверніться\nдо місцевої служби підтримки.\nКонтакти шукайте в посібнику\nз користування або\nна support.nintendo.com."
+    "ua": "Бракує пам'яті.\n\nНатисніть і утримуйте кнопку POWER,\nщоб вимкнути консоль, тоді увімкніть\nїї й спробуйте ще раз.\n\nЯкщо проблема не зникає,\nзверніться до місцевої служби\nпідтримки. Контакти шукайте\nв посібнику з користування або\nна support.nintendo.com."
   },
   "App_ERR_BOSSDataCorrupt": {
     "en": "The data is corrupted and cannot be\nread.\n\nThe data causing the problem will now\nbe deleted. We apologise for any\ninconvenience caused.",
@@ -1241,23 +1241,23 @@
   },
   "App_ERR_BOSSSetFailed": {
     "en": "SpotPass configuration failed.\n\nHold down the POWER Button to turn\noff the power, then turn it on and try\nagain.\n\nIf the problem persists, please contact\nyour local customer support centre.\nFor contact details, check the\nOperations Manual or visit\nsupport.nintendo.com.",
-    "ua": "Не вдалося налаштувати SpotPass.\n\nНатисніть і утримуйте кнопку POWER,\nщоб вимкнути консоль, тоді увімкніть\nїї й спробуйте ще раз.\n\nЯкщо проблема не зникає, зверніться\nдо місцевої служби підтримки.\nКонтакти шукайте в посібнику\nз користування або\nна support.nintendo.com."
+    "ua": "Не вдалося налаштувати SpotPass.\n\nНатисніть і утримуйте кнопку POWER,\nщоб вимкнути консоль, тоді увімкніть\nїї й спробуйте ще раз.\n\nЯкщо проблема не зникає,\nзверніться до місцевої служби\nпідтримки. Контакти шукайте\nв посібнику з користування або\nна support.nintendo.com."
   },
   "App_ERR_Trial_CannotDownload": {
     "en": "Could not start the download.\n\nHold down the POWER Button to turn\noff the power, then turn it on and try\nagain.\n\nIf the problem persists, please contact\nyour local customer support centre.\nFor contact details, check the\nOperations Manual or visit\nsupport.nintendo.com.",
-    "ua": "Не вдалося почати завантаження.\n\nНатисніть і утримуйте кнопку POWER,\nщоб вимкнути консоль, тоді увімкніть\nїї й спробуйте ще раз.\n\nЯкщо проблема не зникає,\nзверніться\nдо місцевої служби підтримки.\nКонтакти шукайте в посібнику\nз користування або\nна support.nintendo.com."
+    "ua": "Не вдалося почати завантаження.\n\nНатисніть і утримуйте кнопку POWER,\nщоб вимкнути консоль, тоді увімкніть\nїї й спробуйте ще раз.\n\nЯкщо проблема не зникає,\nзверніться до місцевої служби\nпідтримки. Контакти шукайте\nв посібнику з користування або\nна support.nintendo.com."
   },
   "App_ERR_Trial_DownloadFail": {
     "en": "Download failed.\n\nHold down the POWER Button to turn\noff the power, then turn it on and try\nagain.\n\nIf the problem persists, please contact\nyour local customer support centre.\nFor contact details, check the\nOperations Manual or visit\nsupport.nintendo.com.",
-    "ua": "Завантаження не вдалося.\n\nНатисніть і утримуйте кнопку POWER,\nщоб вимкнути консоль, тоді увімкніть\nїї й спробуйте ще раз.\n\nЯкщо проблема не зникає,\nзверніться\nдо місцевої служби підтримки.\nКонтакти шукайте в посібнику\nз користування або\nна support.nintendo.com."
+    "ua": "Завантаження не вдалося.\n\nНатисніть і утримуйте кнопку POWER,\nщоб вимкнути консоль, тоді увімкніть\nїї й спробуйте ще раз.\n\nЯкщо проблема не зникає,\nзверніться до місцевої служби\nпідтримки. Контакти шукайте\nв посібнику з користування або\nна support.nintendo.com."
   },
   "App_ERR_SD_HardwareAccess": {
     "en": "Could not access SD Card.\n\nFeatures which require an SD Card,\nsuch as SpotPass, will be disabled.\n\nHold down the POWER Button to turn\noff the power, remove the SD Card\nand insert a different one.\n\nIf the problem persists, please contact\nyour local customer support centre.\nFor contact details, check the\nOperations Manual or visit\nsupport.nintendo.com.",
-    "ua": "Немає доступу до карти SD.\n\nФункції, яким потрібна карта SD,\nзокрема SpotPass, буде вимкнено.\n\nНатисніть і утримуйте кнопку POWER,\nщоб вимкнути консоль, вийміть\nкарту SD і вставте іншу.\n\nЯкщо проблема не зникає,\nзверніться\nдо місцевої служби підтримки.\nКонтакти шукайте в посібнику\nз користування або\nна support.nintendo.com."
+    "ua": "Немає доступу до карти SD.\n\nФункції, яким потрібна карта SD,\nзокрема SpotPass, буде вимкнено.\n\nНатисніть і утримуйте кнопку POWER,\nщоб вимкнути консоль, вийміть\nкарту SD і вставте іншу.\n\nЯкщо проблема не зникає,\nзверніться до місцевої служби\nпідтримки. Контакти шукайте\nв посібнику з користування або\nна support.nintendo.com."
   },
   "App_ERR_SD_FileNotFound": {
     "en": "The specified file is not on the\nSD Card.\n\nHold down the POWER Button to turn\noff the power, remove the SD Card,\nthen reinsert it and try again.\n\nIf the problem persists, please contact\nyour local customer support centre.\nFor contact details, check the\nOperations Manual or visit\nsupport.nintendo.com.",
-    "ua": "Указаного файлу на карті SD\nнемає.\n\nНатисніть і утримуйте кнопку POWER,\nщоб вимкнути консоль, вийміть\nкарту SD, вставте її знову\nй спробуйте ще раз.\n\nЯкщо проблема не зникає,\nзверніться\nдо місцевої служби підтримки.\nКонтакти шукайте в посібнику\nз користування або\nна support.nintendo.com."
+    "ua": "Указаного файлу на карті SD немає.\n\nНатисніть і утримуйте кнопку POWER,\nщоб вимкнути консоль, вийміть\nкарту SD, вставте її знову\nй спробуйте ще раз.\n\nЯкщо проблема не зникає,\nзверніться до місцевої служби\nпідтримки. Контакти шукайте\nв посібнику з користування або\nна support.nintendo.com."
   },
   "App_ERR_SD_300DownloadLimit": {
     "en": "Cannot download any more titles as\nthe maximum number of software titles\nthat can be saved to the SD Card has\nbeen reached.\n\nPlease use Data Management in the\nSystem Settings to delete or move\nsoftware so as to make space on\nthe SD Card.",
@@ -1265,51 +1265,51 @@
   },
   "App_ERR_Trial_HttpError": {
     "en": "A communication error has occurred.\nFailed to connect to the access point.\nPlease wait and try again later.\n\nIf the problem persists, please contact\nyour local customer support centre.\nFor contact details, check the\nOperations Manual or visit\nsupport.nintendo.com.",
-    "ua": "Сталася помилка зв'язку.\nНе вдалося з'єднатися з точкою\nдоступу.\nЗачекайте й спробуйте пізніше.\n\nЯкщо проблема не зникає, зверніться\nдо місцевої служби підтримки.\nКонтакти шукайте в посібнику\nз користування або\nна support.nintendo.com."
+    "ua": "Сталася помилка зв'язку.\nНе вдалося з'єднатися з точкою\nдоступу.\nЗачекайте й спробуйте пізніше.\n\nЯкщо проблема не зникає,\nзверніться до місцевої служби\nпідтримки. Контакти шукайте\nв посібнику з користування або\nна support.nintendo.com."
   },
   "App_ERR_Trial_OverAgeLimit": {
     "en": "Downloading failed.\n\nHold down the POWER Button to\nturn off the power, then turn it on\nand try again.\n\nIf the problem persists, please contact\nyour local customer support centre.\nFor contact details, check the\nOperations Manual or visit\nsupport.nintendo.com.",
-    "ua": "Завантаження не вдалося.\n\nНатисніть і утримуйте кнопку POWER,\nщоб вимкнути консоль, тоді\nувімкніть її й спробуйте ще раз.\n\nЯкщо проблема не зникає,\nзверніться\nдо місцевої служби підтримки.\nКонтакти шукайте в посібнику\nз користування або\nна support.nintendo.com."
+    "ua": "Завантаження не вдалося.\n\nНатисніть і утримуйте кнопку POWER,\nщоб вимкнути консоль, тоді\nувімкніть її й спробуйте ще раз.\n\nЯкщо проблема не зникає,\nзверніться до місцевої служби\nпідтримки. Контакти шукайте\nв посібнику з користування або\nна support.nintendo.com."
   },
   "App_ERR_Trial_NeedAgreeEula": {
     "en": "Could not start the download.\n\nHold down the POWER Button to turn\noff the power, then turn it on and try\nagain.\n\nIf the problem persists, please contact\nyour local customer support centre.\nFor contact details, check the\nOperations Manual or visit\nsupport.nintendo.com.",
-    "ua": "Не вдалося почати завантаження.\n\nНатисніть і утримуйте кнопку POWER,\nщоб вимкнути консоль, тоді увімкніть\nїї й спробуйте ще раз.\n\nЯкщо проблема не зникає,\nзверніться\nдо місцевої служби підтримки.\nКонтакти шукайте в посібнику\nз користування або\nна support.nintendo.com."
+    "ua": "Не вдалося почати завантаження.\n\nНатисніть і утримуйте кнопку POWER,\nщоб вимкнути консоль, тоді увімкніть\nїї й спробуйте ще раз.\n\nЯкщо проблема не зникає,\nзверніться до місцевої служби\nпідтримки. Контакти шукайте\nв посібнику з користування або\nна support.nintendo.com."
   },
   "App_ERR_Trial_DownloadMgrError": {
     "en": "Downloading failed.\n\nHold down the POWER Button to\nturn off the power, then turn it on\nand try again.\n\nIf the problem persists, please contact\nyour local customer support centre. \nFor contact details, check the \nOperations Manual or visit \nsupport.nintendo.com.",
-    "ua": "Завантаження не вдалося.\n\nНатисніть і утримуйте кнопку POWER,\nщоб вимкнути консоль, тоді\nувімкніть її й спробуйте ще раз.\n\nЯкщо проблема не зникає,\nзверніться\nдо місцевої служби підтримки. \nКонтакти шукайте в посібнику \nз користування або\nна support.nintendo.com."
+    "ua": "Завантаження не вдалося.\n\nНатисніть і утримуйте кнопку POWER,\nщоб вимкнути консоль, тоді\nувімкніть її й спробуйте ще раз.\n\nЯкщо проблема не зникає,\nзверніться до місцевої служби\nпідтримки. Контакти шукайте\nв посібнику з користування або\nна support.nintendo.com."
   },
   "App_ERR_Trial_UnexpectedResult": {
     "en": "Downloading failed.\n\nHold down the POWER Button to\nturn off the power, then turn it on\nand try again.\n\nIf the problem persists, please contact\nyour local customer support centre. \nFor contact details, check the \nOperations Manual or visit \nsupport.nintendo.com.",
-    "ua": "Завантаження не вдалося.\n\nНатисніть і утримуйте кнопку POWER,\nщоб вимкнути консоль, тоді\nувімкніть її й спробуйте ще раз.\n\nЯкщо проблема не зникає,\nзверніться\nдо місцевої служби підтримки. \nКонтакти шукайте в посібнику \nз користування або\nна support.nintendo.com."
+    "ua": "Завантаження не вдалося.\n\nНатисніть і утримуйте кнопку POWER,\nщоб вимкнути консоль, тоді\nувімкніть її й спробуйте ще раз.\n\nЯкщо проблема не зникає,\nзверніться до місцевої служби\nпідтримки. Контакти шукайте\nв посібнику з користування або\nна support.nintendo.com."
   },
   "App_ERR_Spider_Jump_InvalidURL": {
     "en": "The URL is invalid. The page cannot\nbe displayed. Please wait and try\nagain later.\n\nIf the problem persists, please contact\nyour local customer support centre.\nFor contact details, check the\nOperations Manual or visit\nsupport.nintendo.com.",
-    "ua": "Адреса неправильна. Сторінку\nпоказати не можна. Зачекайте\nй спробуйте пізніше.\n\nЯкщо проблема не зникає,\nзверніться\nдо місцевої служби підтримки.\nКонтакти шукайте в посібнику\nз користування або\nна support.nintendo.com."
+    "ua": "Адреса неправильна. Сторінку\nпоказати не можна. Зачекайте\nй спробуйте пізніше.\n\nЯкщо проблема не зникає,\nзверніться до місцевої служби\nпідтримки. Контакти шукайте\nв посібнику з користування або\nна support.nintendo.com."
   },
   "App_ERR_ZoneSelect_ConnectionFailed": {
     "en": "Could not connect to Nintendo Zone.\nPlease wait and try again later.\n\nIf the problem persists, please contact\nyour local customer support centre.\nFor contact details, check the\nOperations Manual or visit\nsupport.nintendo.com.",
-    "ua": "Не вдалося з'єднатися\nз Nintendo Zone.\nЗачекайте й спробуйте пізніше.\n\nЯкщо проблема не зникає, зверніться\nдо місцевої служби підтримки.\nКонтакти шукайте в посібнику\nз користування або\nна support.nintendo.com."
+    "ua": "Не вдалося з'єднатися\nз Nintendo Zone.\nЗачекайте й спробуйте пізніше.\n\nЯкщо проблема не зникає,\nзверніться до місцевої служби\nпідтримки. Контакти шукайте\nв посібнику з користування або\nна support.nintendo.com."
   },
   "App_ERR_ZoneSelect_ServiceNotFound": {
     "en": "Could not find Nintendo Zone.\n\nTo use this software, move\nwithin wireless range of\na Nintendo Zone location.\n\nIf the problem persists, please contact\nyour local customer support centre.\nFor contact details, check the\nOperations Manual or visit\nsupport.nintendo.com.",
-    "ua": "Nintendo Zone не знайдено.\n\nЩоб користуватися програмою,\nперейдіть у зону покриття\nмісця з Nintendo Zone.\n\nЯкщо проблема не зникає,\nзверніться\nдо місцевої служби підтримки.\nКонтакти шукайте в посібнику\nз користування або\nна support.nintendo.com."
+    "ua": "Nintendo Zone не знайдено.\n\nЩоб користуватися програмою,\nперейдіть у зону покриття\nмісця з Nintendo Zone.\n\nЯкщо проблема не зникає,\nзверніться до місцевої служби\nпідтримки. Контакти шукайте\nв посібнику з користування або\nна support.nintendo.com."
   },
   "App_ERR_Spider_Jump_NoWebBrowser": {
     "en": "The page cannot be displayed\nbecause the internet browser\nhasn't been installed on this\nsystem.\n\nIf the problem persists, please contact\nyour local customer support centre.\nFor contact details, check the\nOperations Manual or visit\nsupport.nintendo.com.",
-    "ua": "Сторінку не можна показати,\nбо інтернет-браузер\nне встановлено на цій\nконсолі.\n\nЯкщо проблема не зникає,\nзверніться\nдо місцевої служби підтримки.\nКонтакти шукайте в посібнику\nз користування або\nна support.nintendo.com."
+    "ua": "Сторінку не можна показати,\nбо інтернет-браузер\nне встановлено на цій консолі.\n\nЯкщо проблема не зникає,\nзверніться до місцевої служби\nпідтримки. Контакти шукайте\nв посібнику з користування або\nна support.nintendo.com."
   },
   "App_ERR_SD_CreateExtDataError": {
     "en": "Failed to create extra data.\n\nFeatures which require an\nSD Card, such as SpotPass,\nwill be disabled.\n\nHold down the POWER Button to turn\noff the power, remove the SD Card,\nthen reinsert it and try again.\n\nIf the problem persists, please contact\nyour local customer support centre.\nFor contact details, check the\nOperations Manual or visit\nsupport.nintendo.com.",
-    "ua": "Не вдалося створити додаткові дані.\n\nФункції, яким потрібна\nкарта SD, зокрема SpotPass,\nбуде вимкнено.\n\nНатисніть і утримуйте кнопку POWER,\nщоб вимкнути консоль, вийміть\nкарту SD,\nвставте її знову й спробуйте ще раз.\n\nЯкщо проблема не зникає, зверніться\nдо місцевої служби підтримки.\nКонтакти шукайте в посібнику\nз користування або\nна support.nintendo.com."
+    "ua": "Не вдалося створити додаткові дані.\n\nФункції, яким потрібна\nкарта SD, зокрема SpotPass,\nбуде вимкнено.\n\nНатисніть і утримуйте кнопку POWER,\nщоб вимкнути консоль, вийміть\nкарту SD,\nвставте її знову й спробуйте ще раз.\n\nЯкщо проблема не зникає,\nзверніться до місцевої служби\nпідтримки. Контакти шукайте\nв посібнику з користування або\nна support.nintendo.com."
   },
   "App_ERR_SD_GeneralReadError": {
     "en": "Could not read SD Card.\n\nFeatures which require an\nSD Card, such as SpotPass,\nwill be disabled.\n\nHold down the POWER Button to turn\noff the power, remove the SD Card,\nthen reinsert it and try again.\n\nIf the problem persists, please contact\nyour local customer support centre.\nFor contact details, check the\nOperations Manual or visit\nsupport.nintendo.com.",
-    "ua": "Не вдалося прочитати карту SD.\n\nФункції, яким потрібна\nкарта SD, зокрема SpotPass,\nбуде вимкнено.\n\nНатисніть і утримуйте кнопку POWER,\nщоб вимкнути консоль, вийміть\nкарту SD,\nвставте її знову й спробуйте ще раз.\n\nЯкщо проблема не зникає,\nзверніться\nдо місцевої служби підтримки.\nКонтакти шукайте в посібнику\nз користування або\nна support.nintendo.com."
+    "ua": "Не вдалося прочитати карту SD.\n\nФункції, яким потрібна\nкарта SD, зокрема SpotPass,\nбуде вимкнено.\n\nНатисніть і утримуйте кнопку POWER,\nщоб вимкнути консоль, вийміть\nкарту SD,\nвставте її знову й спробуйте ще раз.\n\nЯкщо проблема не зникає,\nзверніться до місцевої служби\nпідтримки. Контакти шукайте\nв посібнику з користування або\nна support.nintendo.com."
   },
   "App_ERR_SD_GeneralReadError_sub": {
     "en": "Could not read SD Card.\n\nFeatures which require an\nSD Card, such as SpotPass,\nwill be disabled.\n\nPlease go to the Software\nManagement section of the\nSystem Settings and reset the\nsoftware management information.\n\nIf the problem persists, please contact\nyour local customer support centre.\nFor contact details, check the\nOperations Manual or visit\nsupport.nintendo.com.",
-    "ua": "Не вдалося прочитати карту SD.\n\nФункції, яким потрібна\nкарта SD, зокрема SpotPass,\nбуде вимкнено.\n\nВідкрийте «Керування програмами»\nв налаштуваннях системи\nй скиньте дані керування\nпрограмами.\n\nЯкщо проблема не зникає,\nзверніться\nдо місцевої служби підтримки.\nКонтакти шукайте в посібнику\nз користування або\nна support.nintendo.com."
+    "ua": "Не вдалося прочитати карту SD.\n\nФункції, яким потрібна\nкарта SD, зокрема SpotPass,\nбуде вимкнено.\n\nВідкрийте «Керування програмами»\nв налаштуваннях системи\nй скиньте дані керування\nпрограмами.\n\nЯкщо проблема не зникає,\nзверніться до місцевої служби\nпідтримки. Контакти шукайте\nв посібнику з користування або\nна support.nintendo.com."
   },
   "App_ERR_SD_BadFormat": {
     "en": "The SD Card is incorrectly formatted\nand could not be accessed.\n\nFor help, please contact your local \ncustomer support centre. For contact \ndetails, check the Operations Manual \nor visit support.nintendo.com.",

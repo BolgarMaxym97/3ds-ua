@@ -27,8 +27,8 @@ def main() -> None:
     cfg = M.MANUALS[name]
     source = M.source_manual(name)
     widths, table = load_widths(), load_homoglyphs()
-    limits = M.budgets(source, cfg["slot"], widths)
-    flow = M.pages_of(source, cfg["slot"])[page][index]
+    limits = M.budgets(source, M.BASE_SLOT, widths)
+    flow = M.pages_of(source, M.BASE_SLOT)[page][index]
     entry = M.load_json(name).get(key, {})
 
     text = sys.argv[3] if len(sys.argv) > 3 else entry.get("ua", "")

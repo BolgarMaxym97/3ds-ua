@@ -241,7 +241,7 @@
   },
   "Dialog_Permit": {
     "en": " Allow",
-    "ua": "{t:1.0:5a00} Дозволити{/t:1.0}"
+    "ua": "{t:1.0:5800} Дозволити{/t:1.0}"
   },
   "Dialog_Reject": {
     "en": " Reject",
@@ -385,7 +385,7 @@
   },
   "PageInfo_CertificateIssuer": {
     "en": "Certificate Issuer",
-    "ua": "{t:1.0:6100}Видавець сертифіката{t:1.0:6400}"
+    "ua": "{t:1.0:6000}Видавець сертифіката{t:1.0:6400}"
   },
   "PageInfo_ExpireDateStart": {
     "en": "Issue Date",
@@ -1121,7 +1121,7 @@
   },
   "dlg_top_net_on_flw": {
     "en": " Enable",
-    "ua": " {t:1.0:6300}Увімкнути{t:1.0:6400}"
+    "ua": " {t:1.0:6100}Увімкнути{t:1.0:6400}"
   },
   "dlg_top_net_off_flw": {
     "en": " Back",

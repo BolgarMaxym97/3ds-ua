@@ -93,7 +93,7 @@
   },
   "dlp_dlg_par4": {
     "en": "Failed to enter\nthe correct PIN.{t:1.0:1400}\n                    {/t:1.0}\nLaunching in 2D\ndisplay mode.",
-    "ua": "Введено неправильний\nPIN-код.{t:1.0:1400}\n                    {/t:1.0}\nЗапуск у режимі\n2D."
+    "ua": "Введено неправильний\nPIN-код.{t:1.0:1400}\n                    {/t:1.0}\nЗапуск у режимі 2D."
   },
   "dlp_dlg_par5": {
     "en": "Would you like to launch this\nsoftware in 2D?\n{t:1.0:5500}{t:0.3:3c3c3cff}You must enter your PIN\nagain to launch it in 3D.{t:0.3:000000ff}{/t:1.0}",
@@ -113,7 +113,7 @@
   },
   "dlp_dlg_update0": {
     "en": "A system update is required in\norder to start this software.{t:1.0:1400}\n　　　　　　　　　　　　　{/t:1.0}\nWould you like to perform\nthe update now?",
-    "ua": "Щоб запустити цю програму,\nпотрібне оновлення системи.{t:1.0:1400}\n　　　　　　　　　　　　　{/t:1.0}\nВиконати оновлення\nзараз?"
+    "ua": "Щоб запустити цю програму,\nпотрібне оновлення системи.{t:1.0:1400}\n　　　　　　　　　　　　　{/t:1.0}\nВиконати оновлення зараз?"
   },
   "dlp_dlg_update1": {
     "en": "Battery power is running low.\nPlease plug in the AC adapter.\n\nOnce the battery has charged\nsufficiently, the update will\nbegin automatically.",
@@ -137,7 +137,7 @@
   },
   "dlp_dlg_update4": {
     "en": "To ensure that the battery\ndoes not run out during\nthe system update, please\nkeep the Nintendo 3DS\nAC adapter plugged in.",
-    "ua": "Щоб батарея не розрядилася\nпід час оновлення системи,\nтримайте блок живлення\nNintendo 3DS\nпід'єднаним."
+    "ua": "Щоб батарея не розрядилася\nпід час оновлення системи,\nтримайте блок живлення\nNintendo 3DS під'єднаним."
   },
   "dlp_dlg_update6": {
     "en": "A system update is required\nto use this software.\n\nUpdate to\n%ls?",

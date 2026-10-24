@@ -25,7 +25,7 @@
   },
   "SD_Remove": {
     "en": "The SD Card has\nbeen removed.\n\nPlease turn off the power\nbefore removing SD Cards.",
-    "ua": "Карту SD\nвийнято.\n\nПеред тим як виймати\nкарту SD, вимикайте\nживлення."
+    "ua": "Карту SD вийнято.\n\nПеред тим як виймати\nкарту SD, вимикайте\nживлення."
   },
   "SD_Remove_B00": {
     "en": "OK",

@@ -182,6 +182,30 @@ MANUALS = {
         "path": "manual/Manual.bcma",
         "reference": "EUR_en",
     },
+    # New 3DS keeps the manuals of its system applets in titles of their own (low word
+    # 2002Dx00: HOME Menu, Friend List, Notifications, Game Notes), and Old 3DS has none at
+    # all - the Game Notes applet ships one content.
+    # The viewer documents the manual title, not the applet: that is whose content 1 it reads.
+    "game_notes_n3ds": {
+        "tid": "000400102002D600",
+        "path": "manual/Manual.bcma",
+        "reference": "EUR_en",
+    },
+    "home_menu_n3ds": {
+        "tid": "000400102002D000",
+        "path": "manual/Manual.bcma",
+        "reference": "EUR_en",
+    },
+    "friend_list_n3ds": {
+        "tid": "000400102002D200",
+        "path": "manual/Manual.bcma",
+        "reference": "EUR_en",
+    },
+    "notifications_n3ds": {
+        "tid": "000400102002D400",
+        "path": "manual/Manual.bcma",
+        "reference": "EUR_en",
+    },
 }
 
 
@@ -783,10 +807,13 @@ def build_image(name: str) -> tuple[bytes, int]:
     # is left as Nintendo wrote it, which is what the console shows if you switch to it.
     slot = variant.current().manual_slot
     if slot != BASE_SLOT:
-        # `texture` only where the document has one per language: the New 3DS Health &
-        # Safety document draws every localisation from one `Common_texture.arc`, so there
-        # is no per-language screenshot arc to carry over with the pages.
-        parts = [*PARTS, "texture"] if f"{BASE_SLOT}_texture.arc" in manual.members else list(PARTS)
+        # `texture` only where both languages have one: the New 3DS Health & Safety document
+        # draws every localisation from one `Common_texture.arc`, and the New 3DS HOME Menu
+        # manual has no `EUR_en_texture.arc` (English screenshots are `cap_*.arc` of their
+        # own). The copied pages then name the Russian screenshots, which stay where they
+        # are: BcmaInfo lists every texture arc as a TexRes, not one per language.
+        has_texture = all(f"{s}_texture.arc" in manual.members for s in (BASE_SLOT, slot))
+        parts = [*PARTS, "texture"] if has_texture else list(PARTS)
         for part in parts:
             manual.copy_member(f"{BASE_SLOT}_{part}", f"{slot}_{part}")
 

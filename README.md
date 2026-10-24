@@ -6,7 +6,7 @@
 
 Системні файли консолі не змінюються — усе живе на SD-карті, разом зі шрифтом. Вимкнулося живлення посеред встановлення — застосунок продовжить з того самого місця.
 
-**Ціль проєкту — повний українізатор системи:** усе, що видно на екрані, має бути українською. Зараз перекладено **32 частини системи плюс дванадцять електронних довідників**, робота триває.
+**Ціль проєкту — повний українізатор системи:** усе, що видно на екрані, має бути українською. Зараз перекладено **32 частини системи плюс шістнадцять електронних довідників**, робота триває.
 
 [Українською](#що-вже-українською) · [In English](#in-english)
 
@@ -120,7 +120,7 @@
 
   **Мова й країна в 3DS ніяк не пов'язані:** переклад стоїть на мовному слоті, тому інтерфейс лишиться повністю українським з будь-якою країною в профілі — ставте будь-яку.
 - **Справжніх `і ї є ґ` в архівах.** Їх ставить лише застосунок: він будує шрифт з власного шрифту консолі, а консоль читає його з SD-карти. Потрібна Luma3DS v13.0 або новіша; на старішій, а також коли на картці вже стоїть чужий патч модуля NS, застосунок лишає замінники `i ï ε г`. Як це влаштовано — у [технічному описі](docs/internals.md#справжні-українські-літери-в-системному-шрифті).
-- **Електронних довідників решти додатків.** Переглядач бере довідник кожного додатка окремо, тож кожен треба здампити з вашої консолі й перекласти. Готові дванадцять — Інтернет-браузера, Налаштувань системи, Журналу дій, Гри по завантаженню, Камери, Звуку, Mii Maker, Площі StreetPass Mii, Nintendo eShop, Face Raiders, AR Games та Інтернет-браузера New 3DS, усі повністю; решта показує той самий довідник, що й раніше. Місця лишилося небагато: таблиця шляхів переглядача та таблиця назв додатків займають 617 із 1064 байтів вільного місця в його коді. Довідники ігор належать іграм, а не системі, тож лишаються як є.
+- **Електронних довідників решти додатків.** Переглядач бере довідник кожного додатка окремо, тож кожен треба здампити з вашої консолі й перекласти. Готові шістнадцять — Інтернет-браузера, Налаштувань системи, Журналу дій, Гри по завантаженню, Камери, Звуку, Mii Maker, Площі StreetPass Mii, Nintendo eShop, Face Raiders, AR Games, а на New 3DS ще Інтернет-браузера, Меню HOME, Списку друзів, Сповіщень та Ігрових записів, усі повністю (на Old 3DS у Меню HOME, Списку друзів, Сповіщень та Ігрових записів довідників немає взагалі); решта показує той самий довідник, що й раніше. Місця лишилося небагато: таблиця шляхів переглядача та таблиця назв додатків займають 815 із 1064 байтів вільного місця в його коді, а самій таблиці шляхів вистачить ще на два довідники. Довідники ігор належать іграм, а не системі, тож лишаються як є.
 - **Назв додатків у eShop, Перенесенні даних та Ігрових записах** — там вони лишаються мовою, яку мод займає. У Меню HOME, Журналі дій, Керуванні даними та Електронному довіднику вони українські.
 - **Електронні довідники у варіанті «Замість англійської» (`from-en`)** беруть за основу російський документ: у нього більше сторінок, ніж в англійського, тому в українську клітинку лягає він цілком, зі своїми знімками екрана. Сам російський довідник при цьому лишається на місці.
 - **Кириличної клавіатури на російській мові у варіанті «Замість англійської» (`from-en`).** Аплет клавіатури дозволяє кирилицю рівно одній мові консолі, і в цій збірці вона віддана українській. Сам російський інтерфейс лишається на місці, але клавіатура на ньому буде латинською. У варіанті «Замість російської» такого немає.
@@ -173,7 +173,7 @@
 
 Nothing in the console's system files is modified — it all lives on the SD card, the font included. If the power goes out mid-install, the app picks up where it stopped.
 
-**The goal is a complete Ukrainian localisation** of everything visible on screen. **32 parts of the system plus twelve electronic manuals** are done so far; work continues.
+**The goal is a complete Ukrainian localisation** of everything visible on screen. **32 parts of the system plus sixteen electronic manuals** are done so far; work continues.
 
 ### Already in Ukrainian
 
@@ -265,7 +265,7 @@ If something doesn't work, send a photo of the Help screen to the [Telegram chan
 
   **Language and country are unrelated on the 3DS:** the translation hangs off the language slot, so the interface stays fully Ukrainian whatever country your profile says — pick any.
 - **Real `і ї є ґ` in the archives.** Only the app installs them: it builds the font out of the console's own, and the console reads it off the SD card. It needs Luma3DS v13.0 or newer; on an older one, or when another NS patch is already on the card, the app keeps the substitutes `i ï ε г`. How it works: the [technical write-up](docs/internals.en.md#real-ukrainian-letters-in-the-system-font).
-- **The electronic manuals of the remaining titles.** The viewer reads each title's own manual, and each one has to be dumped off your console and translated separately. Twelve ship in full; every other title shows the manual it always did. The ceiling is space, not text: the viewer's path table and its SMDH name table share one 1064-byte window of `.rodata` padding, and twelve titles use 617 of it. A game's manual belongs to the game, not to the system, so those stay as they are.
+- **The electronic manuals of the remaining titles.** The viewer reads each title's own manual, and each one has to be dumped off your console and translated separately. Sixteen ship in full, five of them New 3DS only (the browser, HOME Menu, Friend List, Notifications and Game Notes - an Old 3DS has no manual for the last four at all); every other title shows the manual it always did. The ceiling is space, not text: the viewer's path table and its SMDH name table share one 1064-byte window of `.rodata` padding, sixteen titles use 815 of it, and the path table itself has room for two more. A game's manual belongs to the game, not to the system, so those stay as they are.
 - **Application names in the eShop, System Transfer and Game Notes** are still in the language the mod replaces. In the HOME Menu, the Activity Log, Data Management and the Instruction Manual they are Ukrainian.
 - **The electronic manuals in the «Замість англійської» (`from-en`) variant** are built from the Russian document: it has more pages than the English one, so it is copied into the Ukrainian slot whole, its own screenshots included. The Russian manual itself stays where it was.
 - **A Cyrillic keyboard under Russian in the «Замість англійської» (`from-en`) variant.** The keyboard applet grants Cyrillic to exactly one system language, and in this build that is Ukrainian. The Russian interface itself stays where it was, but its keyboard will be Latin. The «Замість російської» variant has no such catch.

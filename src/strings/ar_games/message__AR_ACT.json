@@ -613,7 +613,7 @@
   },
   "main_fish_hanjitu": {
     "en": "Mr AR",
-    "ua": "{t:1.0:5c00}Пан AR{t:1.0:6400}"
+    "ua": "Mr. AR"
   },
   "main_fish_get": {
     "en": "{t:1.1:}",
@@ -721,7 +721,7 @@
   },
   "main_zukan_open": {
     "en": "Open",
-    "ua": "{t:1.0:5e00}Відкрити{t:1.0:6400}"
+    "ua": "Огляд"
   },
   "main_zukan_next": {
     "en": "Next",

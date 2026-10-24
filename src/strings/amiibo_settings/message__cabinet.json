@@ -57,7 +57,7 @@
   },
   "RestoreData": {
     "en": " Restore",
-    "ua": " {t:1.0:6300}Відновити{t:1.0:6400}"
+    "ua": " OK"
   },
   "ScanToRestore": {
     "en": "Please hold the amiibo\nto the NFC area to\nrestore the data.",
@@ -509,7 +509,7 @@
   },
   "TurnOn": {
     "en": " Enable",
-    "ua": " {t:1.0:6300}Увімкнути{t:1.0:6400}"
+    "ua": " Увімкн."
   },
   "CloseApplication": {
     "en": "Closing software...",

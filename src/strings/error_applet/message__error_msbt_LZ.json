@@ -17,11 +17,11 @@
   },
   "fatal0": {
     "en": "An error has occurred.\nHold down the POWER Button to\nturn off the power, then turn it on\nand try again.\n\nIf the problem persists, please\ncontact your local customer support\ncentre. For contact details, check\nthe Operations Manual or visit \nsupport.nintendo.com.",
-    "ua": "Сталася помилка.\nНатисніть і утримуйте кнопку POWER,\nщоб вимкнути консоль, тоді увімкніть\nїї й спробуйте ще раз.\n\nЯкщо проблема не зникає,\nзверніться\nдо місцевої служби підтримки.\nКонтакти\nшукайте в посібнику з користування\nабо на сайті \nsupport.nintendo.com."
+    "ua": "Сталася помилка. Натисніть\nі утримуйте кнопку POWER, щоб\nвимкнути консоль, тоді увімкніть її\nй спробуйте ще раз.\n\nЯкщо проблема не зникає,\nзверніться до місцевої служби\nпідтримки. Контакти шукайте\nв посібнику з користування або\nна сайті support.nintendo.com."
   },
   "fatal1": {
     "en": "The System Memory has been\ndamaged.\n\nFor help, please contact your local \ncustomer support centre. For contact\ndetails, check the Operations Manual\nor visit support.nintendo.com.",
-    "ua": "Пам'ять системи пошкоджено.\n\nПо допомогу зверніться до місцевої\n\nслужби підтримки. Контакти\nшукайте\nв посібнику з користування\nабо на сайті support.nintendo.com."
+    "ua": "Пам'ять системи пошкоджено.\n\nПо допомогу зверніться\nдо місцевої служби підтримки.\nКонтакти шукайте в посібнику\nз користування або на сайті\nsupport.nintendo.com."
   },
   "card_error0": {
     "en": "The Game Card was removed.\n\nPress the HOME Button to\nreturn to the HOME Menu.",
