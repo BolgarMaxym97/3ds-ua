@@ -121,7 +121,7 @@
   },
   "Dialog_Permit": {
     "en": " Allow",
-    "ua": "{t:1.0:5a00} Дозволити{t:1.0:6400}"
+    "ua": "{t:1.0:5800} Дозволити{t:1.0:6400}"
   },
   "Dialog_Reject": {
     "en": " Reject",
@@ -277,7 +277,7 @@
   },
   "PageInfo_CertificateIssuer": {
     "en": "Certificate Issuer",
-    "ua": "{t:1.0:6100}Видавець сертифіката{t:1.0:6400}"
+    "ua": "{t:1.0:6000}Видавець сертифіката{t:1.0:6400}"
   },
   "PageInfo_ExpireDateStart": {
     "en": "Issue Date",
@@ -605,7 +605,7 @@
   },
   "Option_DoInitializeButton": {
     "en": " Clear All",
-    "ua": " {t:1.0:6000}Стерти все{t:1.0:6400}"
+    "ua": " {t:1.0:5d00}Стерти все{t:1.0:6400}"
   },
   "Option_InitializeStart": {
     "en": " Clear",
@@ -849,7 +849,7 @@
   },
   "DefaultFavorite_2_URL": {
     "en": "http://www.google.com/intl/en/",
-    "ua": ""
+    "ua": "http://www.google.com/intl/uk/"
   },
   "DefaultFavorite_3_Title": {
     "en": "",

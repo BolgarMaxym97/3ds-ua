@@ -228,6 +228,12 @@ HOOK_PATCHES: dict[str, dict] = {
                 "0004001000022900",
                 "0004001000022D00",
                 "0004001000022E00",
+                # New 3DS only: the manuals of HOME Menu, Friend List, Notifications and Game
+                # Notes are titles of their own, see tools/manual.py.
+                "000400102002D000",
+                "000400102002D200",
+                "000400102002D400",
+                "000400102002D600",
             ],
         },
         # The name across the top of every manual page is not in the document: it is the

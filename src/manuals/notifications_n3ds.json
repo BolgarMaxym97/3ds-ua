@@ -1,0 +1,842 @@
+{
+  "index/Index#0": {
+    "lines": 1,
+    "width": 379.0,
+    "en": "Important Information",
+    "ru": "Важная информация",
+    "ua": "Важлива інформація"
+  },
+  "index/Index#1": {
+    "lines": 1,
+    "width": 379.0,
+    "en": "Notifications",
+    "ru": "Сообщения",
+    "ua": "Сповіщення"
+  },
+  "index/Index#2": {
+    "lines": 1,
+    "width": 379.0,
+    "en": "Receiving Notifications",
+    "ru": "Получение сообщений",
+    "ua": "Отримання сповіщень"
+  },
+  "index/Index#3": {
+    "lines": 1,
+    "width": 379.0,
+    "en": "Viewing Notifications",
+    "ru": "Просмотр сообщений",
+    "ua": "Перегляд сповіщень"
+  },
+  "index/Index#4": {
+    "lines": 1,
+    "width": 379.0,
+    "en": "Stopping Notifications",
+    "ru": "Отключение сообщений",
+    "ua": "Вимкнення сповіщень"
+  },
+  "index/Index#5": {
+    "lines": 1,
+    "width": 379.0,
+    "en": "__CATEGORY_INVALID__",
+    "ru": "__CATEGORY_INVALID__",
+    "ua": "__CATEGORY_INVALID__"
+  },
+  "index/Index#6": {
+    "lines": 1,
+    "width": 379.0,
+    "en": "Basic Information",
+    "ru": "Общая информация",
+    "ua": "Загальні відомості"
+  },
+  "index/Index#7": {
+    "lines": 1,
+    "width": 379.0,
+    "en": "Using Notifications",
+    "ru": "Использование приложения",
+    "ua": "Як користуватися"
+  },
+  "large/Page_000_large_0#0": {
+    "lines": 10,
+    "width": 333.6,
+    "en": "Please read this manual carefully before using this software. If the software is to be used by young children, the manual should be read and explained to them by an adult.",
+    "ru": "Пожалуйста, внимательно прочитайте это руководство, прежде чем вы начнете пользоваться этой программой. Если программой будут пользоваться маленькие дети, необходимо, чтобы это руководство им прочитал и объяснил взрослый.",
+    "ua": "Уважно прочитайте цей посібник, перш ніж почати користуватися програмою. Якщо програмою користуватимуться малі діти, посібник має прочитати й пояснити їм дорослий."
+  },
+  "large/Page_000_large_0#1": {
+    "lines": 1,
+    "width": 157.1,
+    "en": "IMPORTANT",
+    "ru": "ВАЖНО",
+    "ua": "УВАГА"
+  },
+  "large/Page_000_large_0#2": {
+    "lines": 11,
+    "width": 331.1,
+    "en": "Important information about your health and safety is available in the Health and Safety Information application on the HOME Menu. {br} You should also thoroughly read the Operations Manual before using Nintendo 3DS™ software.",
+    "ru": "Важная информация о вашем здоровье и безопасности доступна в приложении Информация о здоровье и безопасности в меню HOME. Перед тем как пользоваться программным обеспечением Nintendo 3DS™, вы также должны внимательно прочитать руководство пользователя.",
+    "ua": "Важлива інформація про ваше здоров'я і безпеку є в програмі «Здоров'я і безпека» в Меню HOME. Перш ніж користуватися програмами Nintendo 3DS™, уважно прочитайте також посібник з експлуатації."
+  },
+  "large/Page_001_large_0#0": {
+    "lines": 1,
+    "width": 20.0,
+    "en": "●",
+    "ru": "●",
+    "ua": ""
+  },
+  "large/Page_001_large_0#1": {
+    "lines": 8,
+    "width": 294.8,
+    "en": "To view notifications while a Nintendo 3DS software title is running, press the HOME Button to bring up the HOME Menu, then launch the Notifications application.",
+    "ru": "Чтобы просматривать сообщения, когда запущена программа Nintendo 3DS, откройте меню HOME, нажав кнопку HOME, затем запустите приложение Сообщения.",
+    "ua": "Щоб переглянути сповіщення, коли запущено програму Nintendo 3DS, натисніть кнопку HOME, щоб відкрити Меню HOME, і запустіть Сповіщення."
+  },
+  "large/Page_001_large_0#2": {
+    "lines": 1,
+    "width": 273.2,
+    "en": "Notification Types",
+    "ru": "Виды сообщений",
+    "ua": "Види сповіщень"
+  },
+  "large/Page_001_large_0#3": {
+    "lines": 1,
+    "width": 95.0,
+    "en": "SpotPass",
+    "ru": "SpotPass",
+    "ua": "SpotPass"
+  },
+  "large/Page_001_large_0#4": {
+    "lines": 5,
+    "width": 190.0,
+    "en": "Notifications from Nintendo and software titles.",
+    "ru": "Сообщения, отправленные программами и компанией Nintendo.",
+    "ua": "Сповіщення, надіслані програмами й компанією Nintendo."
+  },
+  "large/Page_001_large_0#5": {
+    "lines": 1,
+    "width": 109.2,
+    "en": "StreetPass",
+    "ru": "StreetPass",
+    "ua": "StreetPass"
+  },
+  "large/Page_001_large_0#6": {
+    "lines": 4,
+    "width": 186.0,
+    "en": "Notifications received via StreetPass.",
+    "ru": "Сообщения, полученные через StreetPass.",
+    "ua": "Сповіщення, отримані через StreetPass."
+  },
+  "large/Page_001_large_0#7": {
+    "lines": 7,
+    "width": 312.8,
+    "en": "This application {br} allows you to {br} receive notifications {br} via SpotPass™ and StreetPass™ from Nintendo and other sources.",
+    "ru": "С помощью этого приложения вы {br} можете получать сообщения через SpotPass™ и StreetPass™ от компании Nintendo или других отправителей.",
+    "ua": "За допомогою цієї програми ви {br} можете отримувати сповіщення через SpotPass™ і StreetPass™ від Nintendo чи інших відправників."
+  },
+  "large/Page_002_large_0#0": {
+    "lines": 3,
+    "width": 296.3,
+    "en": "",
+    "ru": "На вашу систему могут приходить сообщения, если...",
+    "ua": "Сповіщення можуть надходити на вашу систему, якщо…"
+  },
+  "large/Page_002_large_0#1": {
+    "lines": 1,
+    "width": 20.0,
+    "en": "",
+    "ru": "●",
+    "ua": ""
+  },
+  "large/Page_002_large_0#2": {
+    "lines": 2,
+    "width": 245.0,
+    "en": "",
+    "ru": "Включено питание. {s1|●}",
+    "ua": "Консоль увімкнено. {s1|●}"
+  },
+  "large/Page_002_large_0#3": {
+    "lines": 2,
+    "width": 277.8,
+    "en": "",
+    "ru": "Включена беспроводная связь.",
+    "ua": "Бездротовий зв'язок увімкнено."
+  },
+  "large/Page_002_large_0#4": {
+    "lines": 1,
+    "width": 20.0,
+    "en": "",
+    "ru": "●",
+    "ua": ""
+  },
+  "large/Page_002_large_0#5": {
+    "lines": 2,
+    "width": 282.9,
+    "en": "",
+    "ru": "Настроено подключение к Интернету.",
+    "ua": "Під'єднання до Інтернету налаштовано."
+  },
+  "large/Page_002_large_0#6": {
+    "lines": 1,
+    "width": 20.0,
+    "en": "",
+    "ru": "♦",
+    "ua": ""
+  },
+  "large/Page_002_large_0#7": {
+    "lines": 5,
+    "width": 290.8,
+    "en": "",
+    "ru": "В пределах действия Nintendo Zone™ для получения сообщений подключение к Интернету не требуется.",
+    "ua": "У зоні дії Nintendo Zone™ для отримання сповіщень під'єднання до Інтернету не потрібне."
+  },
+  "large/Page_002_large_0#8": {
+    "lines": 1,
+    "width": 20.0,
+    "en": "",
+    "ru": "♦",
+    "ua": ""
+  },
+  "large/Page_002_large_0#9": {
+    "lines": 3,
+    "width": 283.3,
+    "en": "",
+    "ru": "Для сообщений StreetPass подключение к Интернету не требуется.",
+    "ua": "Для сповіщень StreetPass під'єднання до Інтернету не потрібне."
+  },
+  "large/Page_002_large_0#10": {
+    "lines": 1,
+    "width": 20.0,
+    "en": "",
+    "ru": "♦",
+    "ua": ""
+  },
+  "large/Page_002_large_0#11": {
+    "lines": 3,
+    "width": 286.8,
+    "en": "",
+    "ru": "Программы могут отправлять определенные сообщения, когда вы не",
+    "ua": "Програми можуть надсилати деякі сповіщення, коли ви не"
+  },
+  "large/Page_002_large_0#12": {
+    "lines": 2,
+    "width": 273.3,
+    "en": "",
+    "ru": "подключены к Интернету. ♦",
+    "ua": "під'єднані до Інтернету. ♦"
+  },
+  "large/Page_002_large_0#13": {
+    "lines": 4,
+    "width": 283.1,
+    "en": "",
+    "ru": "Программы {br} Nintendo DS™ / Nintendo DSi™ не могут отправлять сообщения.",
+    "ua": "Програми {br} Nintendo DS™ / Nintendo DSi™ не можуть надсилати сповіщення."
+  },
+  "large/Page_002_large_0#14": {
+    "lines": 1,
+    "width": 283.5,
+    "en": "",
+    "ru": "Получение сообщений",
+    "ua": "Отримання сповіщень"
+  },
+  "large/Page_002_large_0#15": {
+    "lines": 17,
+    "width": 304.8,
+    "en": "",
+    "ru": "Индикатор сообщения мигает, когда на систему приходит сообщение. При получении сообщений StreetPass индикатор мигает зеленым, а при получении сообщений SpotPass — синим. В обоих случаях он мигает в течение пяти секунд. Кроме того, при получении сообщения на значке приложения Сообщения и на значках соответствующих программ в меню HOME будет отображено {i0} или {i1}.",
+    "ua": "Коли надходить сповіщення, індикатор сповіщень блимає: зеленим для сповіщень StreetPass і синім для сповіщень SpotPass. В обох випадках він блимає п'ять секунд. Крім того, на значку Сповіщень і на значках відповідних програм у Меню HOME з'явиться {i0} або {i1}."
+  },
+  "large/Page_002_large_0#16": {
+    "lines": 1,
+    "width": 20.0,
+    "en": "",
+    "ru": "♦",
+    "ua": ""
+  },
+  "large/Page_002_large_0#17": {
+    "lines": 11,
+    "width": 271.7,
+    "en": "",
+    "ru": "Когда система находится в режиме ожидания и на нее приходит сообщение, индикатор сообщений мигает в течение пяти секунд и затем продолжает гореть. Он погаснет, когда вы выведете систему из режима ожидания.",
+    "ua": "Якщо сповіщення надходить, коли консоль у режимі сну, індикатор сповіщень блимає п'ять секунд, а потім світиться далі. Він згасне, коли ви виведете консоль з режиму сну."
+  },
+  "large/Page_002_large_0#18": {
+    "lines": 1,
+    "width": 98.6,
+    "en": "",
+    "ru": "Мигает",
+    "ua": "Блимає"
+  },
+  "large/Page_003_large_0#0": {
+    "lines": 2,
+    "width": 309.4,
+    "en": "",
+    "ru": "Коснитесь сообщения, чтобы просмотреть его.",
+    "ua": "Торкніться сповіщення, щоб переглянути його."
+  },
+  "large/Page_003_large_0#1": {
+    "lines": 3,
+    "width": 319.8,
+    "en": "",
+    "ru": "Сообщения StreetPass зеленого цвета. Сообщения SpotPass — синего.",
+    "ua": "Сповіщення StreetPass — зелені. Сповіщення SpotPass — сині."
+  },
+  "large/Page_003_large_0#2": {
+    "lines": 1,
+    "width": 21.7,
+    "en": "",
+    "ru": "①",
+    "ua": ""
+  },
+  "large/Page_003_large_0#3": {
+    "lines": 1,
+    "width": 127.3,
+    "en": "",
+    "ru": "Сообщение",
+    "ua": "Сповіщення"
+  },
+  "large/Page_003_large_0#4": {
+    "lines": 2,
+    "width": 300.2,
+    "en": "",
+    "ru": "Указывает непрочитанные сообщения.",
+    "ua": "Позначає непрочитані сповіщення."
+  },
+  "large/Page_003_large_0#5": {
+    "lines": 1,
+    "width": 21.7,
+    "en": "",
+    "ru": "②",
+    "ua": ""
+  },
+  "large/Page_003_large_0#6": {
+    "lines": 1,
+    "width": 9.0,
+    "en": "",
+    "ru": "/",
+    "ua": ""
+  },
+  "large/Page_003_large_0#7": {
+    "lines": 1,
+    "width": 21.7,
+    "en": "",
+    "ru": "③",
+    "ua": ""
+  },
+  "large/Page_003_large_0#8": {
+    "lines": 1,
+    "width": 222.1,
+    "en": "",
+    "ru": "Полоса прокрутки",
+    "ua": "Смуга прокрутки"
+  },
+  "large/Page_003_large_0#9": {
+    "lines": 1,
+    "width": 309.0,
+    "en": "",
+    "ru": "Перемещайте бегунок вверх",
+    "ua": "Пересувайте повзунок угору"
+  },
+  "large/Page_003_large_0#10": {
+    "lines": 1,
+    "width": 20.0,
+    "en": "",
+    "ru": "❸",
+    "ua": ""
+  },
+  "large/Page_003_large_0#11": {
+    "lines": 1,
+    "width": 20.0,
+    "en": "",
+    "ru": "❷",
+    "ua": ""
+  },
+  "large/Page_003_large_0#12": {
+    "lines": 1,
+    "width": 20.0,
+    "en": "",
+    "ru": "❶",
+    "ua": ""
+  },
+  "large/Page_003_large_0#13": {
+    "lines": 12,
+    "width": 300.8,
+    "en": "",
+    "ru": "На системе может быть сохранено до 12 сообщений StreetPass и до 100 сообщений SpotPass. Если эти ограничения превышены или объем данных исчерпан (например, если многие сообщения содержат изображения), сообщения будут удаляться, начиная с самого старого.",
+    "ua": "На системі можна зберігати до 12 сповіщень StreetPass і до 100 сповіщень SpotPass. Якщо ці межі перевищено або місце закінчилося (наприклад, коли багато сповіщень містять зображення), сповіщення видалятимуться, починаючи з найстаріших."
+  },
+  "large/Page_003_large_0#14": {
+    "lines": 2,
+    "width": 307.4,
+    "en": "",
+    "ru": "и вниз, чтобы прокрутить сообщение.",
+    "ua": "і вниз, щоб прокрутити сповіщення."
+  },
+  "large/Page_004_large_0#0": {
+    "lines": 4,
+    "width": 319.5,
+    "en": "You can opt out of receiving SpotPass notifications from software titles and StreetPass notifications.",
+    "ru": "Вы можете отключить получение сообщений SpotPass от программ и сообщений StreetPass.",
+    "ua": "Ви можете вимкнути отримання сповіщень SpotPass від програм і сповіщень StreetPass."
+  },
+  "large/Page_004_large_0#1": {
+    "lines": 1,
+    "width": 20.0,
+    "en": "♦",
+    "ru": "♦",
+    "ua": ""
+  },
+  "large/Page_004_large_0#2": {
+    "lines": 5,
+    "width": 269.2,
+    "en": "To restart notifications, adjust the settings within the software.",
+    "ru": "Чтобы снова получать сообщения, выполните соответствующие настройки в самой программе.",
+    "ua": "Щоб знову отримувати сповіщення, змініть відповідні налаштування в самій програмі."
+  },
+  "large/Page_004_large_0#3": {
+    "lines": 1,
+    "width": 20.0,
+    "en": "♦",
+    "ru": "♦",
+    "ua": ""
+  },
+  "large/Page_004_large_0#4": {
+    "lines": 5,
+    "width": 283.0,
+    "en": "Notifications from Nintendo contain important information for all users and cannot be opted out of.",
+    "ru": "Сообщения от компании Nintendo содержат важную информацию для всех пользователей и не могут быть отключены.",
+    "ua": "Сповіщення від Nintendo містять важливу інформацію для всіх користувачів, і вимкнути їх не можна."
+  },
+  "large/Page_004_large_0#5": {
+    "lines": 2,
+    "width": 284.2,
+    "en": "Stopping Notifications from Software Titles",
+    "ru": "Отключение сообщений программ",
+    "ua": "Вимкнення сповіщень програм"
+  },
+  "large/Page_004_large_0#6": {
+    "lines": 6,
+    "width": 304.5,
+    "en": "Touch \"Opt out of notifications for this software\" inside a notification then follow the on-screen prompts.",
+    "ru": "Коснитесь {br} ОТКЛЮЧИТЬ {br} СООБЩЕНИЯ ЭТОЙ ПРОГРАММЫ в самом сообщении, затем следуйте инструкциям на экране.",
+    "ua": "Торкніться {br} НЕ ОТРИМУВАТИ {br} СПОВІЩЕННЯ ЦІЄЇ ПРОГРАМИ в самому сповіщенні, потім виконайте вказівки на екрані."
+  },
+  "large/Page_004_large_0#7": {
+    "lines": 1,
+    "width": 20.0,
+    "en": "♦",
+    "ru": "♦",
+    "ua": ""
+  },
+  "large/Page_004_large_0#8": {
+    "lines": 11,
+    "width": 294.0,
+    "en": "Notifications that do not require an internet connection, such as those from software titles, cannot be stopped from the Notifications list. These are delivered during play and the method of stopping these notifications differs between software titles.",
+    "ru": "Сообщения, для получения которых не требуется подключение к Интернету, например сообщения программ, невозможно отключить в списке сообщений. Такие сообщения приходят во время игры и отключаются в зависимости от программы по-разному.",
+    "ua": "Сповіщення, для яких не потрібне під'єднання до Інтернету, наприклад сповіщення програм, не можна вимкнути в списку сповіщень. Вони надходять під час гри, і вимикаються в різних програмах по-різному."
+  },
+  "large/Page_004_large_0#9": {
+    "lines": 1,
+    "width": 308.7,
+    "en": "Touch \"Deactivate StreetPass for this title\", then adjust the settings in StreetPass Management in the System Settings to deactivate",
+    "ru": "Коснитесь ВЫКЛЮЧИТЬ",
+    "ua": "Торкніться ВИМКНУТИ"
+  },
+  "large/Page_004_large_0#10": {
+    "lines": 2,
+    "width": 279.8,
+    "en": "Stopping Notifications from StreetPass",
+    "ru": "Отключение сообщений StreetPass",
+    "ua": "Вимкнення сповіщень StreetPass"
+  },
+  "large/Page_004_large_1#0": {
+    "lines": 10,
+    "width": 324.5,
+    "en": "StreetPass. Once StreetPass has been deactivated, you will no longer receive these notifications for this title.",
+    "ru": "РЕЖИМ STREETPASS ДЛЯ ЭТОЙ ПРОГРАММЫ, затем измените настройки в системных настройках в разделе Управление StreetPass, чтобы выключить StreetPass. Выключив StreetPass, вы больше не будете получать сообщения для этой программы.",
+    "ua": "STREETPASS ДЛЯ ЦІЄЇ ПРОГРАМИ, потім у Налаштуваннях системи, у розділі Керування StreetPass, вимкніть StreetPass. Після цього сповіщення для цієї програми більше не надходитимуть."
+  },
+  "small/Page_000_small_0#0": {
+    "lines": 8,
+    "width": 334.7,
+    "en": "Please read this manual carefully before using this software. If the software is to be used by young children, the manual should be read and explained to them by an adult.",
+    "ru": "Пожалуйста, внимательно прочитайте это руководство, прежде чем вы начнете пользоваться этой программой. Если программой будут пользоваться маленькие дети, необходимо, чтобы это руководство им прочитал и объяснил взрослый.",
+    "ua": "Уважно прочитайте цей посібник, перш ніж почати користуватися програмою. Якщо програмою користуватимуться малі діти, посібник має прочитати й пояснити їм дорослий."
+  },
+  "small/Page_000_small_0#1": {
+    "lines": 1,
+    "width": 132.9,
+    "en": "IMPORTANT",
+    "ru": "ВАЖНО",
+    "ua": "УВАГА"
+  },
+  "small/Page_000_small_0#2": {
+    "lines": 10,
+    "width": 334.2,
+    "en": "Important information about your health and safety is available in the Health and Safety Information application on the HOME Menu. You should also thoroughly read the Operations Manual before using Nintendo 3DS™ software.",
+    "ru": "Важная информация о вашем здоровье и безопасности доступна в приложении Информация о здоровье и безопасности в меню HOME. {br} Перед тем как пользоваться программным обеспечением Nintendo 3DS™, вы также должны внимательно прочитать руководство пользователя.",
+    "ua": "Важлива інформація про ваше здоров'я і безпеку є в програмі «Здоров'я і безпека» в Меню HOME. {br} Перш ніж користуватися програмами Nintendo 3DS™, уважно прочитайте посібник з експлуатації."
+  },
+  "small/Page_001_small_0#0": {
+    "lines": 1,
+    "width": 16.7,
+    "en": "●",
+    "ru": "●",
+    "ua": ""
+  },
+  "small/Page_001_small_0#1": {
+    "lines": 6,
+    "width": 301.7,
+    "en": "To view notifications while a Nintendo 3DS software title is running, press the HOME Button to bring up the HOME Menu, then launch the Notifications application.",
+    "ru": "Чтобы просматривать сообщения, когда запущена программа Nintendo 3DS, откройте меню HOME, нажав кнопку HOME, затем запустите приложение Сообщения.",
+    "ua": "Щоб переглянути сповіщення, коли запущено програму Nintendo 3DS, натисніть кнопку HOME, щоб відкрити Меню HOME, і запустіть Сповіщення."
+  },
+  "small/Page_001_small_0#2": {
+    "lines": 1,
+    "width": 234.2,
+    "en": "Notification Types",
+    "ru": "Виды сообщений",
+    "ua": "Види сповіщень"
+  },
+  "small/Page_001_small_0#3": {
+    "lines": 1,
+    "width": 79.2,
+    "en": "SpotPass",
+    "ru": "SpotPass",
+    "ua": "SpotPass"
+  },
+  "small/Page_001_small_0#4": {
+    "lines": 4,
+    "width": 191.6,
+    "en": "Notifications from Nintendo and software titles.",
+    "ru": "Сообщения, отправленные программами и компанией Nintendo.",
+    "ua": "Сповіщення, надіслані програмами й компанією Nintendo."
+  },
+  "small/Page_001_small_0#5": {
+    "lines": 1,
+    "width": 91.0,
+    "en": "StreetPass",
+    "ru": "StreetPass",
+    "ua": "StreetPass"
+  },
+  "small/Page_001_small_0#6": {
+    "lines": 3,
+    "width": 185.9,
+    "en": "Notifications received via StreetPass.",
+    "ru": "Сообщения, полученные через StreetPass.",
+    "ua": "Сповіщення, отримані через StreetPass."
+  },
+  "small/Page_001_small_0#7": {
+    "lines": 6,
+    "width": 316.9,
+    "en": "This application allows {br} you to receive {br} notifications via {br} SpotPass™ and {br} StreetPass™ from Nintendo and other sources.",
+    "ru": "С помощью этого {br} приложения вы можете получать сообщения {br} через SpotPass™ и {br} StreetPass™ от компании Nintendo или других отправителей.",
+    "ua": "За допомогою цієї {br} програми ви можете отримувати сповіщення {br} через SpotPass™ і {br} StreetPass™ від Nintendo чи інших відправників."
+  },
+  "small/Page_002_small_0#0": {
+    "lines": 2,
+    "width": 309.3,
+    "en": "",
+    "ru": "На вашу систему могут приходить сообщения, если...",
+    "ua": "Сповіщення можуть надходити на вашу систему, якщо…"
+  },
+  "small/Page_002_small_0#1": {
+    "lines": 1,
+    "width": 16.7,
+    "en": "",
+    "ru": "●",
+    "ua": ""
+  },
+  "small/Page_002_small_0#2": {
+    "lines": 2,
+    "width": 169.4,
+    "en": "",
+    "ru": "Включено питание. {s1|●}",
+    "ua": "Консоль увімкнено. {s1|●}"
+  },
+  "small/Page_002_small_0#3": {
+    "lines": 2,
+    "width": 275.0,
+    "en": "",
+    "ru": "Включена беспроводная связь. {s1|●}",
+    "ua": "Бездротовий зв'язок увімкнено. {s1|●}"
+  },
+  "small/Page_002_small_0#4": {
+    "lines": 2,
+    "width": 242.2,
+    "en": "",
+    "ru": "Настроено подключение к Интернету.",
+    "ua": "Під'єднання до Інтернету налаштовано."
+  },
+  "small/Page_002_small_0#5": {
+    "lines": 1,
+    "width": 16.7,
+    "en": "",
+    "ru": "♦",
+    "ua": ""
+  },
+  "small/Page_002_small_0#6": {
+    "lines": 4,
+    "width": 281.6,
+    "en": "",
+    "ru": "В пределах действия Nintendo Zone™ для получения сообщений подключение к Интернету не требуется.",
+    "ua": "У зоні дії Nintendo Zone™ для отримання сповіщень під'єднання до Інтернету не потрібне."
+  },
+  "small/Page_002_small_0#7": {
+    "lines": 1,
+    "width": 16.7,
+    "en": "",
+    "ru": "♦",
+    "ua": ""
+  },
+  "small/Page_002_small_0#8": {
+    "lines": 3,
+    "width": 269.4,
+    "en": "",
+    "ru": "Для сообщений StreetPass подключение к Интернету не требуется.",
+    "ua": "Для сповіщень StreetPass під'єднання до Інтернету не потрібне."
+  },
+  "small/Page_002_small_0#9": {
+    "lines": 1,
+    "width": 16.7,
+    "en": "",
+    "ru": "♦",
+    "ua": ""
+  },
+  "small/Page_002_small_0#10": {
+    "lines": 4,
+    "width": 264.6,
+    "en": "",
+    "ru": "Программы могут отправлять определенные сообщения, когда вы не подключены к Интернету.",
+    "ua": "Програми можуть надсилати деякі сповіщення, навіть коли ви не під'єднані до Інтернету."
+  },
+  "small/Page_002_small_0#11": {
+    "lines": 1,
+    "width": 16.7,
+    "en": "",
+    "ru": "♦",
+    "ua": ""
+  },
+  "small/Page_002_small_0#12": {
+    "lines": 3,
+    "width": 248.3,
+    "en": "",
+    "ru": "Программы Nintendo DS™ / Nintendo DSi™ не могут отправлять сообщения.",
+    "ua": "Програми Nintendo DS™ / Nintendo DSi™ не можуть надсилати сповіщення."
+  },
+  "small/Page_002_small_0#13": {
+    "lines": 1,
+    "width": 216.2,
+    "en": "",
+    "ru": "Получение сообщений",
+    "ua": "Отримання сповіщень"
+  },
+  "small/Page_002_small_0#14": {
+    "lines": 14,
+    "width": 304.1,
+    "en": "",
+    "ru": "Индикатор сообщения мигает, когда на систему приходит сообщение. При получении сообщений StreetPass индикатор мигает зеленым, а при получении сообщений SpotPass — синим. В обоих случаях он мигает в течение пяти секунд. Кроме того, при получении сообщения на значке приложения Сообщения и на значках соответствующих программ в меню HOME будет отображено {i0} или {i1}.",
+    "ua": "Коли надходить сповіщення, індикатор сповіщень блимає: зеленим для сповіщень StreetPass і синім для сповіщень SpotPass. В обох випадках він блимає п'ять секунд. Крім того, на значку Сповіщень і на значках відповідних програм у Меню HOME з'явиться {i0} або {i1}."
+  },
+  "small/Page_002_small_0#15": {
+    "lines": 1,
+    "width": 16.7,
+    "en": "",
+    "ru": "♦",
+    "ua": ""
+  },
+  "small/Page_002_small_0#16": {
+    "lines": 8,
+    "width": 284.1,
+    "en": "",
+    "ru": "Когда система находится в режиме ожидания и на нее приходит сообщение, индикатор сообщений мигает в течение пяти секунд и затем продолжает гореть. Он погаснет, когда вы выведете систему из режима ожидания.",
+    "ua": "Якщо сповіщення надходить, коли консоль у режимі сну, індикатор сповіщень блимає п'ять секунд, а потім світиться далі. Він згасне, коли ви виведете консоль з режиму сну."
+  },
+  "small/Page_002_small_0#17": {
+    "lines": 1,
+    "width": 61.8,
+    "en": "",
+    "ru": "Мигает",
+    "ua": "Блимає"
+  },
+  "small/Page_003_small_0#0": {
+    "lines": 2,
+    "width": 306.6,
+    "en": "Touch a notification to view it.",
+    "ru": "Коснитесь сообщения, чтобы просмотреть его.",
+    "ua": "Торкніться сповіщення, щоб переглянути його."
+  },
+  "small/Page_003_small_0#1": {
+    "lines": 3,
+    "width": 313.3,
+    "en": "StreetPass notifications appear in green. SpotPass notifications appear in blue.",
+    "ru": "Сообщения StreetPass зеленого цвета. Сообщения SpotPass — синего.",
+    "ua": "Сповіщення StreetPass — зелені. Сповіщення SpotPass — сині."
+  },
+  "small/Page_003_small_0#2": {
+    "lines": 1,
+    "width": 18.3,
+    "en": "①",
+    "ru": "①",
+    "ua": ""
+  },
+  "small/Page_003_small_0#3": {
+    "lines": 1,
+    "width": 109.2,
+    "en": "Notification",
+    "ru": "Сообщение",
+    "ua": "Сповіщення"
+  },
+  "small/Page_003_small_0#4": {
+    "lines": 2,
+    "width": 293.7,
+    "en": "Shows unread notifications.",
+    "ru": "Указывает непрочитанные сообщения.",
+    "ua": "Позначає непрочитані сповіщення."
+  },
+  "small/Page_003_small_0#5": {
+    "lines": 1,
+    "width": 18.3,
+    "en": "②",
+    "ru": "②",
+    "ua": ""
+  },
+  "small/Page_003_small_0#6": {
+    "lines": 1,
+    "width": 21.4,
+    "en": "/",
+    "ru": "/",
+    "ua": ""
+  },
+  "small/Page_003_small_0#7": {
+    "lines": 1,
+    "width": 303.0,
+    "en": "A maximum of 12 StreetPass and 100 SpotPass notifications can be stored on the system. If these limitations or the storage size is exceeded (e.g. if there are a lot of notifications containing images), older notifications will be erased, starting with the oldest.",
+    "ru": "③",
+    "ua": ""
+  },
+  "small/Page_003_small_0#8": {
+    "lines": 1,
+    "width": 216.2,
+    "en": "③",
+    "ru": "Полоса прокрутки",
+    "ua": "Смуга прокрутки"
+  },
+  "small/Page_003_small_0#9": {
+    "lines": 3,
+    "width": 321.9,
+    "en": "Scroll bar",
+    "ru": "Перемещайте бегунок вверх и вниз, чтобы прокрутить сообщение.",
+    "ua": "Пересувайте повзунок угору й униз, щоб прокрутити сповіщення."
+  },
+  "small/Page_003_small_0#10": {
+    "lines": 1,
+    "width": 310.1,
+    "en": "Slide the slider up or down to scroll through the notifications.",
+    "ru": "❸",
+    "ua": ""
+  },
+  "small/Page_003_small_0#11": {
+    "lines": 1,
+    "width": 20.0,
+    "en": "❸",
+    "ru": "❷",
+    "ua": ""
+  },
+  "small/Page_003_small_0#12": {
+    "lines": 1,
+    "width": 20.0,
+    "en": "❷",
+    "ru": "❶",
+    "ua": ""
+  },
+  "small/Page_003_small_0#13": {
+    "lines": 10,
+    "width": 304.7,
+    "en": "❶",
+    "ru": "На системе может быть сохранено до 12 сообщений StreetPass и до 100 сообщений SpotPass. Если эти ограничения превышены или объем данных исчерпан (например, если многие сообщения содержат изображения), сообщения будут удаляться, начиная с самого старого.",
+    "ua": "На системі можна зберігати до 12 сповіщень StreetPass і до 100 сповіщень SpotPass. Якщо ці межі перевищено або місце закінчилося (наприклад, коли багато сповіщень містять зображення), сповіщення видалятимуться, починаючи з найстаріших."
+  },
+  "small/Page_004_small_0#0": {
+    "lines": 3,
+    "width": 326.5,
+    "en": "You can opt out of receiving SpotPass notifications from software titles and StreetPass notifications.",
+    "ru": "Вы можете отключить получение сообщений SpotPass от программ и сообщений StreetPass.",
+    "ua": "Ви можете вимкнути отримання сповіщень SpotPass від програм і сповіщень StreetPass."
+  },
+  "small/Page_004_small_0#1": {
+    "lines": 1,
+    "width": 16.7,
+    "en": "♦",
+    "ru": "♦",
+    "ua": ""
+  },
+  "small/Page_004_small_0#2": {
+    "lines": 4,
+    "width": 297.9,
+    "en": "To restart notifications, adjust the settings within the software.",
+    "ru": "Чтобы снова получать сообщения, выполните соответствующие настройки в самой программе.",
+    "ua": "Щоб знову отримувати сповіщення, змініть відповідні налаштування в самій програмі."
+  },
+  "small/Page_004_small_0#3": {
+    "lines": 1,
+    "width": 16.7,
+    "en": "♦",
+    "ru": "♦",
+    "ua": ""
+  },
+  "small/Page_004_small_0#4": {
+    "lines": 5,
+    "width": 301.4,
+    "en": "Notifications from Nintendo contain important information for all users and cannot be opted out of.",
+    "ru": "Сообщения от компании Nintendo содержат важную информацию для всех пользователей и не могут быть отключены.",
+    "ua": "Сповіщення від Nintendo містять важливу інформацію для всіх користувачів, і вимкнути їх не можна."
+  },
+  "small/Page_004_small_0#5": {
+    "lines": 1,
+    "width": 16.7,
+    "en": "♦",
+    "ru": "♦",
+    "ua": ""
+  },
+  "small/Page_004_small_0#6": {
+    "lines": 2,
+    "width": 302.1,
+    "en": "Notifications that do not require an internet connection, such as those from software titles, cannot be stopped from the Notifications list. These are delivered during",
+    "ru": "Сообщения, для получения которых не требуется",
+    "ua": "Сповіщення, для яких не потрібне"
+  },
+  "small/Page_004_small_0#7": {
+    "lines": 2,
+    "width": 298.8,
+    "en": "Stopping Notifications from Software Titles",
+    "ru": "Отключение сообщений программ",
+    "ua": "Вимкнення сповіщень програм"
+  },
+  "small/Page_004_small_0#8": {
+    "lines": 5,
+    "width": 323.9,
+    "en": "Touch \"Opt out of {br} notifications for this {br} software\" inside a {br} notification then follow {br} the on-screen prompts.",
+    "ru": "Коснитесь ОТКЛЮЧИТЬ СООБЩЕНИЯ ЭТОЙ {br} ПРОГРАММЫ в самом {br} сообщении, затем {br} следуйте инструкциям на экране.",
+    "ua": "Торкніться НЕ ОТРИМУВАТИ СПОВІЩЕННЯ ЦІЄЇ {br} ПРОГРАМИ в самому {br} сповіщенні, потім {br} виконайте вказівки на екрані."
+  },
+  "small/Page_004_small_0#9": {
+    "lines": 7,
+    "width": 304.7,
+    "en": "play and the method of stopping these notifications differs between software titles.",
+    "ru": "подключение к Интернету, например сообщения программ, невозможно отключить в списке сообщений. Такие сообщения приходят во время игры и отключаются в зависимости от программы по-разному.",
+    "ua": "під'єднання до Інтернету, наприклад сповіщення програм, не можна вимкнути в списку сповіщень. Вони надходять під час гри, і вимикаються в різних програмах по-різному."
+  },
+  "small/Page_004_small_0#10": {
+    "lines": 9,
+    "width": 327.2,
+    "en": "Touch \"Deactivate StreetPass for this title\", then adjust the settings in StreetPass Management in the System Settings to deactivate StreetPass. Once StreetPass has been deactivated, you will no longer receive these notifications for this title.",
+    "ru": "Коснитесь ВЫКЛЮЧИТЬ РЕЖИМ STREETPASS ДЛЯ ЭТОЙ ПРОГРАММЫ, затем измените настройки в системных настройках в разделе Управление StreetPass, чтобы выключить StreetPass. Выключив StreetPass, вы больше не будете получать сообщения для этой программы.",
+    "ua": "Торкніться ВИМКНУТИ STREETPASS ДЛЯ ЦІЄЇ ПРОГРАМИ, потім у Налаштуваннях системи, у розділі Керування StreetPass, вимкніть StreetPass. Після цього сповіщення для цієї програми більше не надходитимуть."
+  },
+  "small/Page_004_small_0#11": {
+    "lines": 2,
+    "width": 290.0,
+    "en": "Stopping Notifications from StreetPass",
+    "ru": "Отключение сообщений StreetPass",
+    "ua": "Вимкнення сповіщень StreetPass"
+  }
+}

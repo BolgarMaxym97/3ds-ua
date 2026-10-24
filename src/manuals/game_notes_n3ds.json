@@ -1,0 +1,506 @@
+{
+  "index/Index#0": {
+    "lines": 1,
+    "width": 354.0,
+    "en": "Important Information",
+    "ru": "Важная информация",
+    "ua": "Важлива інформація"
+  },
+  "index/Index#1": {
+    "lines": 1,
+    "width": 354.0,
+    "en": "Introduction",
+    "ru": "Введение",
+    "ua": "Вступ"
+  },
+  "index/Index#2": {
+    "lines": 1,
+    "width": 354.0,
+    "en": "Writing Notes",
+    "ru": "Создание заметок",
+    "ua": "Створення записів"
+  },
+  "index/Index#3": {
+    "lines": 1,
+    "width": 354.0,
+    "en": "__CATEGORY_INVALID__",
+    "ru": "__CATEGORY_INVALID__",
+    "ua": ""
+  },
+  "index/Index#4": {
+    "lines": 1,
+    "width": 354.0,
+    "en": "Basic Information",
+    "ru": "Общая информация",
+    "ua": "Загальні відомості"
+  },
+  "index/Index#5": {
+    "lines": 1,
+    "width": 354.0,
+    "en": "How to use Game Notes",
+    "ru": "Использование приложения",
+    "ua": "Як користуватися"
+  },
+  "large/Page_000_large_0#0": {
+    "lines": 10,
+    "width": 333.6,
+    "en": "Please read this manual carefully before using this software. If the software is to be used by young children, the manual should be read and explained to them by an adult.",
+    "ru": "Пожалуйста, внимательно прочитайте это руководство, прежде чем вы начнете пользоваться этой программой. Если программой будут пользоваться маленькие дети, необходимо, чтобы это руководство им прочитал и объяснил взрослый.",
+    "ua": "Уважно прочитайте цей посібник, перш ніж почати користуватися програмою. Якщо програмою користуватимуться малі діти, посібник має прочитати й пояснити їм дорослий."
+  },
+  "large/Page_000_large_0#1": {
+    "lines": 1,
+    "width": 157.1,
+    "en": "IMPORTANT",
+    "ru": "ВАЖНО",
+    "ua": "УВАГА"
+  },
+  "large/Page_000_large_0#2": {
+    "lines": 11,
+    "width": 331.1,
+    "en": "Important information about your health and safety is available in the Health and Safety Information application on the HOME Menu. {br} You should also thoroughly read the Operations Manual before using Nintendo 3DS™ software.",
+    "ru": "Важная информация о вашем здоровье и безопасности доступна в приложении Информация о здоровье и безопасности в меню HOME. Перед тем как пользоваться программным обеспечением Nintendo 3DS™, вы также должны внимательно прочитать руководство пользователя.",
+    "ua": "Важлива інформація про ваше здоров'я і безпеку є в програмі «Здоров'я і безпека» в Меню HOME. Перш ніж користуватися програмами Nintendo 3DS™, уважно прочитайте також посібник з експлуатації."
+  },
+  "large/Page_001_large_0#0": {
+    "lines": 1,
+    "width": 20.0,
+    "en": "",
+    "ru": "●",
+    "ua": ""
+  },
+  "large/Page_001_large_0#1": {
+    "lines": 8,
+    "width": 290.9,
+    "en": "",
+    "ru": "Вы можете сохранить до 16 страниц заметок. Страницы заметок можно сохранять как фотографии и просматривать их в приложении Камера Nintendo 3DS.",
+    "ua": "Можна зберегти до 16 сторінок записів. Сторінки можна зберігати як фото й переглядати в Камері Nintendo 3DS."
+  },
+  "large/Page_001_large_0#2": {
+    "lines": 1,
+    "width": 20.0,
+    "en": "",
+    "ru": "●",
+    "ua": ""
+  },
+  "large/Page_001_large_0#3": {
+    "lines": 6,
+    "width": 291.5,
+    "en": "",
+    "ru": "Чтобы создать заметку во время использования какой-либо программы Nintendo 3DS, нажмите кнопку HOME, чтобы приостановить программу",
+    "ua": "Щоб зробити запис під час користування будь-якою програмою Nintendo 3DS, натисніть кнопку HOME: програма призупиниться"
+  },
+  "large/Page_001_large_0#4": {
+    "lines": 6,
+    "width": 293.8,
+    "en": "",
+    "ru": "С помощью этого приложения вы {br} можете в любое {br} время писать и читать заметки, написанные от руки.",
+    "ua": "Ця програма дає змогу {br} будь-коли писати {br} й читати записи, зроблені від руки."
+  },
+  "large/Page_001_large_0#5": {
+    "lines": 4,
+    "width": 252.8,
+    "en": "",
+    "ru": "и открыть меню HOME, затем запустите приложение Игровые заметки.",
+    "ua": "і відкриється Меню HOME. Тоді запустіть Ігрові записи."
+  },
+  "large/Page_002_large_0#0": {
+    "lines": 2,
+    "width": 306.8,
+    "en": "",
+    "ru": "Выберите заметку, чтобы изменить ее.",
+    "ua": "Виберіть запис, щоб змінити його."
+  },
+  "large/Page_002_large_0#1": {
+    "lines": 2,
+    "width": 307.0,
+    "en": "",
+    "ru": "Вы можете рисовать тремя различными цветами.",
+    "ua": "Малювати можна трьома різними кольорами."
+  },
+  "large/Page_002_large_0#2": {
+    "lines": 1,
+    "width": 21.7,
+    "en": "",
+    "ru": "①",
+    "ua": ""
+  },
+  "large/Page_002_large_0#3": {
+    "lines": 1,
+    "width": 124.6,
+    "en": "",
+    "ru": "Карандаши",
+    "ua": "Олівці"
+  },
+  "large/Page_002_large_0#4": {
+    "lines": 1,
+    "width": 21.7,
+    "en": "",
+    "ru": "②",
+    "ua": ""
+  },
+  "large/Page_002_large_0#5": {
+    "lines": 1,
+    "width": 97.5,
+    "en": "",
+    "ru": "Ластик",
+    "ua": "Гумка"
+  },
+  "large/Page_002_large_0#6": {
+    "lines": 1,
+    "width": 20.0,
+    "en": "",
+    "ru": "❹",
+    "ua": ""
+  },
+  "large/Page_002_large_0#7": {
+    "lines": 1,
+    "width": 20.0,
+    "en": "",
+    "ru": "❷",
+    "ua": ""
+  },
+  "large/Page_002_large_0#8": {
+    "lines": 1,
+    "width": 20.0,
+    "en": "",
+    "ru": "❸",
+    "ua": ""
+  },
+  "large/Page_002_large_0#9": {
+    "lines": 1,
+    "width": 309.8,
+    "en": "",
+    "ru": "❺",
+    "ua": ""
+  },
+  "large/Page_002_large_0#10": {
+    "lines": 1,
+    "width": 300.5,
+    "en": "",
+    "ru": "❶",
+    "ua": ""
+  },
+  "large/Page_002_large_0#11": {
+    "lines": 2,
+    "width": 310.6,
+    "en": "",
+    "ru": "Стирает все, к чему вы прикасаетесь.",
+    "ua": "Стирає все, чого ви торкнетеся."
+  },
+  "large/Page_002_large_0#12": {
+    "lines": 5,
+    "width": 319.8,
+    "en": "",
+    "ru": "Когда программа приостановлена, коснитесь этого значка, чтобы изменить изображение на верхнем экране.",
+    "ua": "Коли програму призупинено, торкніться цього значка, щоб змінити зображення на верхньому екрані."
+  },
+  "large/Page_002_large_0#13": {
+    "lines": 1,
+    "width": 8.3,
+    "en": "",
+    "ru": ":",
+    "ua": ""
+  },
+  "large/Page_002_large_0#14": {
+    "lines": 8,
+    "width": 247.2,
+    "en": "",
+    "ru": "вы можете экспортировать заметку в качестве изображения на карту SD и просматривать эту заметку в приложении Камера Nintendo 3DS.",
+    "ua": "можна зберегти запис як зображення на карту SD і переглядати його в Камері Nintendo 3DS."
+  },
+  "large/Page_002_large_0#15": {
+    "lines": 1,
+    "width": 21.7,
+    "en": "",
+    "ru": ":",
+    "ua": ""
+  },
+  "large/Page_002_large_0#16": {
+    "lines": 2,
+    "width": 245.9,
+    "en": "",
+    "ru": "удаление текущей заметки.",
+    "ua": "стирання поточного запису."
+  },
+  "large/Page_002_large_0#17": {
+    "lines": 1,
+    "width": 21.7,
+    "en": "",
+    "ru": "③",
+    "ua": ""
+  },
+  "large/Page_002_large_0#18": {
+    "lines": 1,
+    "width": 267.2,
+    "en": "",
+    "ru": "Переключение экранов",
+    "ua": "Перемикання екранів"
+  },
+  "large/Page_002_large_0#19": {
+    "lines": 1,
+    "width": 21.7,
+    "en": "",
+    "ru": "④",
+    "ua": ""
+  },
+  "large/Page_002_large_0#20": {
+    "lines": 2,
+    "width": 264.7,
+    "en": "",
+    "ru": "Экспорт/удаление заметки",
+    "ua": "Збереження/стирання запису"
+  },
+  "large/Page_002_large_1#0": {
+    "lines": 4,
+    "width": 317.3,
+    "en": "",
+    "ru": "Сохранение заметки и возврат на экран приложения Игровые заметки.",
+    "ua": "Збереження запису й повернення на екран Ігрових записів."
+  },
+  "large/Page_002_large_1#1": {
+    "lines": 1,
+    "width": 21.7,
+    "en": "",
+    "ru": "⑤",
+    "ua": ""
+  },
+  "large/Page_002_large_1#2": {
+    "lines": 1,
+    "width": 244.7,
+    "en": "",
+    "ru": "Сохранение заметки",
+    "ua": "Збереження запису"
+  },
+  "small/Page_000_small_0#0": {
+    "lines": 8,
+    "width": 334.7,
+    "en": "Please read this manual carefully before using this software. If the software is to be used by young children, the manual should be read and explained to them by an adult.",
+    "ru": "Пожалуйста, внимательно прочитайте это руководство, прежде чем вы начнете пользоваться этой программой. Если программой будут пользоваться маленькие дети, необходимо, чтобы это руководство им прочитал и объяснил взрослый.",
+    "ua": "Уважно прочитайте цей посібник, перш ніж почати користуватися програмою. Якщо програмою користуватимуться малі діти, посібник має прочитати й пояснити їм дорослий."
+  },
+  "small/Page_000_small_0#1": {
+    "lines": 1,
+    "width": 132.9,
+    "en": "IMPORTANT",
+    "ru": "ВАЖНО",
+    "ua": "УВАГА"
+  },
+  "small/Page_000_small_0#2": {
+    "lines": 10,
+    "width": 334.2,
+    "en": "Important information about your health and safety is available in the Health and Safety Information application on the HOME Menu. You should also thoroughly read the Operations Manual before using Nintendo 3DS™ software.",
+    "ru": "Важная информация о вашем здоровье и безопасности доступна в приложении Информация о здоровье и безопасности в меню HOME. {br} Перед тем как пользоваться программным обеспечением Nintendo 3DS™, вы также должны внимательно прочитать руководство пользователя.",
+    "ua": "Важлива інформація про ваше здоров'я і безпеку є в програмі «Здоров'я і безпека» в Меню HOME. {br} Перш ніж користуватися програмами Nintendo 3DS™, уважно прочитайте також посібник з експлуатації."
+  },
+  "small/Page_001_small_0#0": {
+    "lines": 1,
+    "width": 16.7,
+    "en": "●",
+    "ru": "●",
+    "ua": ""
+  },
+  "small/Page_001_small_0#1": {
+    "lines": 6,
+    "width": 298.5,
+    "en": "You can save up to 16 pages of notes. Note pages can be saved as photo data and viewed in Nintendo 3DS Camera.",
+    "ru": "Вы можете сохранить до {br} 16 страниц заметок. Страницы заметок можно сохранять как фотографии и просматривать их в приложении Камера Nintendo 3DS.",
+    "ua": "Можна зберегти до {br} 16 сторінок записів. Сторінки можна зберігати як фото й переглядати в Камері Nintendo 3DS."
+  },
+  "small/Page_001_small_0#2": {
+    "lines": 1,
+    "width": 16.7,
+    "en": "●",
+    "ru": "●",
+    "ua": ""
+  },
+  "small/Page_001_small_0#3": {
+    "lines": 8,
+    "width": 301.7,
+    "en": "To create a note while a Nintendo 3DS software title is running, press the HOME Button to suspend the software title and bring up the HOME Menu, then launch Game Notes.",
+    "ru": "Чтобы создать заметку во время использования какой-либо программы Nintendo 3DS, нажмите кнопку HOME, чтобы приостановить программу и открыть меню HOME, затем запустите приложение Игровые заметки.",
+    "ua": "Щоб зробити запис під час користування будь-якою програмою Nintendo 3DS, натисніть кнопку HOME: програма призупиниться і відкриється Меню HOME. Тоді запустіть Ігрові записи."
+  },
+  "small/Page_001_small_0#4": {
+    "lines": 5,
+    "width": 241.6,
+    "en": "This application allows you to easily write and read handwritten notes at any time.",
+    "ru": "С помощью этого приложения вы можете в любое время писать и читать заметки, написанные от руки.",
+    "ua": "Ця програма дає змогу будь-коли писати й читати записи, зроблені від руки."
+  },
+  "small/Page_002_small_0#0": {
+    "lines": 2,
+    "width": 310.4,
+    "en": "Select a note to edit it.",
+    "ru": "Выберите заметку, чтобы изменить ее.",
+    "ua": "Виберіть запис, щоб змінити його."
+  },
+  "small/Page_002_small_0#1": {
+    "lines": 2,
+    "width": 310.0,
+    "en": "You can draw using three different colours.",
+    "ru": "Вы можете рисовать тремя различными цветами.",
+    "ua": "Малювати можна трьома різними кольорами."
+  },
+  "small/Page_002_small_0#2": {
+    "lines": 1,
+    "width": 300.0,
+    "en": "Whatever you touch will be erased.",
+    "ru": "①",
+    "ua": ""
+  },
+  "small/Page_002_small_0#3": {
+    "lines": 1,
+    "width": 105.4,
+    "en": "①",
+    "ru": "Карандаши",
+    "ua": "Олівці"
+  },
+  "small/Page_002_small_0#4": {
+    "lines": 1,
+    "width": 74.9,
+    "en": "Pens",
+    "ru": "②",
+    "ua": ""
+  },
+  "small/Page_002_small_0#5": {
+    "lines": 1,
+    "width": 77.2,
+    "en": "②",
+    "ru": "Ластик",
+    "ua": "Гумка"
+  },
+  "small/Page_002_small_0#6": {
+    "lines": 1,
+    "width": 82.5,
+    "en": "Eraser",
+    "ru": "❹",
+    "ua": ""
+  },
+  "small/Page_002_small_0#7": {
+    "lines": 1,
+    "width": 20.0,
+    "en": "❹",
+    "ru": "❷",
+    "ua": ""
+  },
+  "small/Page_002_small_0#8": {
+    "lines": 1,
+    "width": 20.0,
+    "en": "❷",
+    "ru": "❸",
+    "ua": ""
+  },
+  "small/Page_002_small_0#9": {
+    "lines": 1,
+    "width": 20.0,
+    "en": "❸",
+    "ru": "❺",
+    "ua": ""
+  },
+  "small/Page_002_small_0#10": {
+    "lines": 1,
+    "width": 20.0,
+    "en": "❺",
+    "ru": "❶",
+    "ua": ""
+  },
+  "small/Page_002_small_0#11": {
+    "lines": 2,
+    "width": 323.4,
+    "en": "❶",
+    "ru": "Стирает все, к чему вы прикасаетесь.",
+    "ua": "Стирає все, чого ви торкнетеся."
+  },
+  "small/Page_002_small_0#12": {
+    "lines": 4,
+    "width": 324.1,
+    "en": "Touch this icon during a suspended game to change the display on the upper screen.",
+    "ru": "Когда программа приостановлена, коснитесь этого значка, чтобы изменить изображение на верхнем экране.",
+    "ua": "Коли програму призупинено, торкніться цього значка, щоб змінити зображення на верхньому екрані."
+  },
+  "small/Page_002_small_0#13": {
+    "lines": 1,
+    "width": 6.9,
+    "en": ":",
+    "ru": ":",
+    "ua": ""
+  },
+  "small/Page_002_small_0#14": {
+    "lines": 6,
+    "width": 260.9,
+    "en": "You can export the note as an image to the SD Card and view it in Nintendo 3DS Camera.",
+    "ru": "вы можете экспортировать заметку в качестве изображения на карту SD и просматривать эту заметку в приложении Камера Nintendo 3DS.",
+    "ua": "можна зберегти запис як зображення на карту SD і переглядати його в Камері Nintendo 3DS."
+  },
+  "small/Page_002_small_0#15": {
+    "lines": 1,
+    "width": 6.9,
+    "en": ":",
+    "ru": ":",
+    "ua": ""
+  },
+  "small/Page_002_small_0#16": {
+    "lines": 1,
+    "width": 247.5,
+    "en": "Delete the current note.{i0}",
+    "ru": "удаление текущей заметки.{i0}",
+    "ua": "стирання запису.{i0}"
+  },
+  "small/Page_002_small_0#17": {
+    "lines": 2,
+    "width": 316.5,
+    "en": "Save the note and return to the Game Notes screen.",
+    "ru": "Сохранение заметки и возврат на экран приложения Игровые",
+    "ua": "Збереження запису й повернення на екран Ігрових"
+  },
+  "small/Page_002_small_0#18": {
+    "lines": 1,
+    "width": 18.3,
+    "en": "③",
+    "ru": "③",
+    "ua": ""
+  },
+  "small/Page_002_small_0#19": {
+    "lines": 1,
+    "width": 226.1,
+    "en": "Switching screens",
+    "ru": "Переключение экранов",
+    "ua": "Перемикання екранів"
+  },
+  "small/Page_002_small_0#20": {
+    "lines": 1,
+    "width": 18.3,
+    "en": "④",
+    "ru": "④",
+    "ua": ""
+  },
+  "small/Page_002_small_0#21": {
+    "lines": 1,
+    "width": 271.9,
+    "en": "Export/Clear a note",
+    "ru": "Экспорт/удаление заметки",
+    "ua": "Зберегти/стерти запис"
+  },
+  "small/Page_002_small_0#22": {
+    "lines": 1,
+    "width": 18.3,
+    "en": "⑤",
+    "ru": "⑤",
+    "ua": ""
+  },
+  "small/Page_002_small_0#23": {
+    "lines": 1,
+    "width": 207.0,
+    "en": "Save note",
+    "ru": "Сохранение заметки",
+    "ua": "Збереження запису"
+  },
+  "small/Page_002_small_1#0": {
+    "lines": 1,
+    "width": 75.7,
+    "en": "",
+    "ru": "заметки.",
+    "ua": "записів."
+  }
+}

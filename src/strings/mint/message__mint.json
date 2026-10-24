@@ -625,7 +625,7 @@
   },
   "Charge_ERRdlg01_01": {
     "en": "Credit card payments cannot\nbe accepted at this time.\n\nPlease try again later.",
-    "ua": "Зараз оплата кредитною картою\nне приймається.\n\nСпробуйте ще раз\nпізніше."
+    "ua": "Зараз оплата кредитною картою\nне приймається.\n\nСпробуйте ще раз пізніше."
   },
   "Charge_txt02_01": {
     "en": "Enter the 16-digit activation\ncode on the Touch Screen.",
@@ -1529,7 +1529,7 @@
   },
   "error_txt01_11": {
     "en": "This activation code cannot\nbe used with your current\nregion setting.\n\nPlease check the code and try\nentering it again.",
-    "ua": "Цей код активації не працює\nз вашим поточним\nрегіоном.\n\nПеревірте код і спробуйте\nввести його ще раз."
+    "ua": "Цей код активації не працює\nз вашим поточним регіоном.\n\nПеревірте код і спробуйте\nввести його ще раз."
   },
   "error_txt01_14": {
     "en": "This activation code has already\nbeen used.",

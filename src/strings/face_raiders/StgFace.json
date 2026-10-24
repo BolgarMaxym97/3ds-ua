@@ -1673,7 +1673,7 @@
   },
   "StgFace_SDcard_message_code_text_25": {
     "en": "Cannot write to the SD Card.\n\nPlease turn off the power, move\nthe SD Card's write-protection\nswitch to the off position, then\nreinsert the SD Card.",
-    "ua": "Не вдається записати на карту SD.\n\nВимкніть консоль, зніміть\nз карти SD захист від запису,\nтоді вставте карту SD\nзнову."
+    "ua": "Не вдається записати на карту SD.\n\nВимкніть консоль, зніміть\nз карти SD захист від запису,\nтоді вставте карту SD знову."
   },
   "StgFace_SDcard_message_code_text_23": {
     "en": "There is no SD Card inserted.\nPlease turn off the system\nand insert an SD Card into\nthe SD Card slot.",

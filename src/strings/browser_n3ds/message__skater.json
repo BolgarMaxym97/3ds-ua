@@ -25,7 +25,7 @@
   },
   "Dialog_JavaScriptTimeout_Button_Continue": {
     "en": " Continue",
-    "ua": " {t:1.0:6300}Продовжити{t:1.0:6400}"
+    "ua": " {t:1.0:6100}Продовжити{t:1.0:6400}"
   },
   "Dialog_JavaScriptTimeout_Button_Abort": {
     "en": " Cancel",
@@ -105,7 +105,7 @@
   },
   "Keyboard_Paste": {
     "en": "Paste",
-    "ua": "{t:1.0:5d00}Вставити{t:1.0:6400}"
+    "ua": "{t:1.0:5a00}Вставити{t:1.0:6400}"
   },
   "ActionMenu_AutoNewLineByEngine": {
     "en": "Text wrap",
@@ -185,7 +185,7 @@
   },
   "ImageViewer_Button_Save": {
     "en": "Save",
-    "ua": "{t:1.0:6100}Зберегти{t:1.0:6400}"
+    "ua": "{t:1.0:5e00}Зберегти{t:1.0:6400}"
   },
   "ImageViewer_SaveImageInfo": {
     "en": "",
@@ -517,7 +517,7 @@
   },
   "Keyboard_Omnibox_OpenUrl": {
     "en": "Open",
-    "ua": "{t:1.0:5e00}Відкрити{t:1.0:6400}"
+    "ua": "{t:1.0:5c00}Відкрити{t:1.0:6400}"
   },
   "Keyboard_Omnibox_Search": {
     "en": "Search",
@@ -1093,7 +1093,7 @@
   },
   "WebInspector_ConfirmationDialog_Yes": {
     "en": " Enable",
-    "ua": " {t:1.0:6300}Увімкнути{t:1.0:6400}"
+    "ua": " {t:1.0:6100}Увімкнути{t:1.0:6400}"
   },
   "WebInspector_ConfirmationDialog_No": {
     "en": " Cancel",

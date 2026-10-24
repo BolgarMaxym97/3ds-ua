@@ -22,5 +22,10 @@
 
   "_comment_new3ds": "New 3DS ships its own copies of a few titles, with `2` opening the low word of the title id - see docs/dump-new3ds.md. They are separate titles with separate SMDHs, so they need their own entries; the Old 3DS ones above stay exactly as they are, and a console only ever has one of each. The originals below are read out of the New 3DS dumps, not copied from the Old 3DS entries: the Health and Safety SMDH is worded differently there, short and long alike.",
   "0004001020022300": { "ru": "Информация о здоровье и бе…", "ru_long": "Информация о здоровье\nи безопасности", "en": "Health and Safety Information", "ua": "Здоров'я і безпека", "ua_long": "Інформація про здоров'я\nі безпеку" },
-  "0004003020009D02": { "ru": "Интернет-браузер", "en": "Internet Browser", "ua": "Інтернет-браузер" }
+  "0004003020009D02": { "ru": "Интернет-браузер", "en": "Internet Browser", "ua": "Інтернет-браузер" },
+  "_comment_n3ds_manuals": "New 3DS manual titles: the viewer prints the documented title's short description above every page, and for these it is the manual title's own SMDH.",
+  "000400102002D000": { "ru": "Меню HOME", "en": "HOME Menu", "ua": "Меню HOME" },
+  "000400102002D200": { "ru": "Список друзей", "en": "Friend List", "ua": "Список друзів" },
+  "000400102002D400": { "ru": "Сообщения", "en": "Notifications", "ua": "Сповіщення" },
+  "000400102002D600": { "ru": "Игровые заметки", "en": "Game Notes", "ua": "Ігрові записи" }
 }

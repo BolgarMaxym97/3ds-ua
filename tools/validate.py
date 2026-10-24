@@ -102,6 +102,12 @@ class Budget:
     # Every tag *shape* - closing slash, group, type - used anywhere in this file, with the
     # argument dropped. Shared by every label of the title, unlike the sets above.
     tag_shapes: set[tuple[str, str, str]] = field(default_factory=set)
+    # Scale tags (`{t:1.0:XXXX}` / `{t:1.1:XXXX}`) that really scale text somewhere in the
+    # title, by group-type. `1400` is not one: it is the spacer between a dialog's paragraphs,
+    # so a title whose only `t:1.0` is that spacer has no renderer that was ever shown a
+    # scaled string. AR Games and amiibo Settings are such titles, and Activity Log's stats
+    # table printed `{t:1.0:6200}` as a literal `b` (2026-10-24): the shape alone proves nothing.
+    scale_kinds: set[str] = field(default_factory=set)
 
 
 def patched_font_letters() -> dict[int, int]:
@@ -184,18 +190,20 @@ def label_budgets(name: str, widths: dict[int, int]) -> dict[str, Budget]:
     # One set for the whole title, handed to every label: which tags exist at all is a
     # property of the renderer, not of the string that happens to use one.
     shapes: set[tuple[str, str, str]] = set()
+    scales: set[str] = set()
 
     for lang in store.languages():
         for data in store.read(lang).values():
             msbt = msbt_parse(data)
             for index, text in enumerate(msbt.texts):
                 label = msbt.label_of(index) or f"__index_{index}"
-                budget = budgets.setdefault(label, Budget(tag_shapes=shapes))
+                budget = budgets.setdefault(label, Budget(tag_shapes=shapes, scale_kinds=scales))
                 budget.width_px = max(budget.width_px, pixel_width(text, widths))
                 budget.lines = max(budget.lines, text.count("\n") + 1)
                 tags = set(TOKEN_RE.findall(text))
                 budget.tags |= tags
                 shapes |= {tag[:3] for tag in tags}
+                scales |= {f"{g}.{t}" for slash, g, t, arg in tags if not slash and g == "1" and arg and arg != "1400"}
                 budget.braces |= set(BRACE_RE.findall(text))
                 budget.format_sets.add(tuple(sorted(FORMAT_RE.findall(text))))
 
@@ -210,6 +218,7 @@ def label_budgets(name: str, widths: dict[int, int]) -> dict[str, Budget]:
             format_sets=set().union(*(budgets[label].format_sets for label in group)),
             braces=set().union(*(budgets[label].braces for label in group)),
             tag_shapes=shapes,
+            scale_kinds=scales,
         )
         for label in group:
             budgets[label] = shared
@@ -298,6 +307,16 @@ def check_entry(
     }
     if unknown:
         problems.append(f"{label}: tags present in no official localisation: {sorted(unknown)}")
+
+    invented = {
+        f"{g}.{t}" for slash, g, t, arg in TOKEN_RE.findall(ua)
+        if not slash and g == "1" and arg and arg != "1400"
+    } - budget.scale_kinds
+    if invented:
+        problems.append(
+            f"{label}: font scale {sorted(invented)} that no official string in this title uses - "
+            f"the renderer may print its argument as a letter; shorten the text instead"
+        )
 
     rendered = apply_homoglyphs(ua, table)
     bad = {ch for ch in strip_tags(rendered) if ch not in "\n\r\t" and ord(ch) not in charset}

@@ -285,7 +285,7 @@
   },
   "lau_dlg_bgdl5": {
     "en": "Download stopped. Push the\nwireless switch to enable\nwireless communication.",
-    "ua": "Завантаження зупинено.\nПосуньте перемикач без-\nдротового режиму вгору."
+    "ua": "Завантаження зупинено.\nПосуньте перемикач\nбездротового режиму вгору."
   },
   "lau_dlg_bgdl5_flw": {
     "en": "Download stopped.\nPlease enable wireless\ncommunication.",
@@ -389,7 +389,7 @@
   },
   "lau_dlg_no_spider1": {
     "en": "You cannot launch the\ninternet browser at the\nsame time as the currently\nsuspended software.",
-    "ua": "Інтернет-браузер не можна\nзапустити, коли є\nпризупинена\nпрограма."
+    "ua": "Інтернет-браузер не можна\nзапустити, коли є\nпризупинена програма."
   },
   "lau_dlg_no_camera": {
     "en": "The camera function cannot\nbe used because it is in use\nby the suspended software.",
@@ -589,7 +589,7 @@
   },
   "ptt_menu_upload": {
     "en": "Nintendo 3DS\nImage Share",
-    "ua": "Обмін зображен-\nнями Nintendo 3DS"
+    "ua": "Обмін зображеннями\nNintendo 3DS"
   },
   "ptt_menu_manual": {
     "en": "HOME Menu \nElectronic Manual",
@@ -953,7 +953,7 @@
   },
   "tm_shop_dt_bgm_title": {
     "en": "♪Music:",
-    "ua": "♪ Музичний фон::"
+    "ua": "♪ Музичний фон:"
   },
   "tm_shop_dt_lang_disp": {
     "en": "Buttons and other text will appear in\nthe language your system is set to.",
@@ -993,7 +993,7 @@
   },
   "tm_shop_dlg_about_news": {
     "en": "Welcome to the Theme Shop!\n\nYou can get themes here by\npurchasing them or redeeming\ndownload codes.",
-    "ua": "Вітаємо\nв магазині тем!\n\nТут можна отримувати теми,\nкупуючи їх або використо-\nвуючи коди завантаження."
+    "ua": "Вітаємо в магазині тем!\n\nТут можна отримувати теми,\nкупуючи їх або вводячи\nкоди завантаження."
   },
   "tm_shop_dlg_ask_news": {
     "en": "Receive notifications about the\nTheme Shop via SpotPass?\n(May include advertisements.)",
@@ -1161,7 +1161,7 @@
   },
   "mhm_current_u": {
     "en": "Current HOME\nMenu layout:",
-    "ua": "Поточний вигляд::"
+    "ua": "Поточний вигляд:"
   },
   "mhm_title_u": {
     "en": "Save/load HOME Menu layouts.",
@@ -1173,7 +1173,7 @@
   },
   "mhm_load_4b": {
     "en": " Load",
-    "ua": " {t:1.1:5200}Відновити{/t:1.1}"
+    "ua": " {t:1.1:5000}Відновити{/t:1.1}"
   },
   "mhm_overwrite_4b": {
     "en": " {t:1.1:5000}Overwrite{/t:1.1}",
@@ -1197,7 +1197,7 @@
   },
   "lau_dlg_mhm_load_fail": {
     "en": "Failed to load.",
-    "ua": "Не вдалося\nзавантажити…"
+    "ua": "Не вдалося\nзавантажити."
   },
   "lau_dlg_mhm_delete_fail": {
     "en": "Failed to delete.",
@@ -1701,7 +1701,7 @@
   },
   "lau_dlg_bt7": {
     "en": "You've received software\nthrough SpotPass.{t:1.0:1400}\n　　　　　　　　　　　　　{/t:1.0}\n{t:1.0:5500}{t:0.3:3c3c3cff}To start the software,\nconnect to Nintendo eShop\nby touching the gift icon.{t:0.3:000000ff}{/t:1.0}",
-    "ua": "Через SpotPass\nотримано програму.{t:1.0:1400}\n　　　　　　　　　　　　　{/t:1.0}\n{t:1.0:5500}{t:0.3:3c3c3cff}Щоб запустити її, під'єднай-\nтеся до Nintendo eShop,\nторкнувшись значка дарунка.{t:0.3:000000ff}{/t:1.0}"
+    "ua": "Через SpotPass отримано\nпрограму.{t:1.0:1400}\n　　　　　　　　　　　　　{/t:1.0}\n{t:1.0:5500}{t:0.3:3c3c3cff}Щоб запустити її, під'єднайтеся\nдо Nintendo eShop, торкнувшись\nзначка дарунка.{t:0.3:000000ff}{/t:1.0}"
   },
   "lau_dlg_bt_eu0": {
     "en": "Your system can now\noccasionally receive new\nsoftware via SpotPass when\nin Sleep Mode, should you\nchoose to continue using\nthis service.",
@@ -1777,7 +1777,7 @@
   },
   "lau_dlg_applet_hangup": {
     "en": "An error has occurred.{t:1.0:1400}\n　　　　　　　　　　　　　{/t:1.0}\nPlease save your data in any\nsoftware currently in use,\nthen restart the system.",
-    "ua": "Сталася помилка.{t:1.0:1400}\n　　　　　　　　　　　　　{/t:1.0}\nЗбережіть дані\nпрограм, які використовуєте,\nпотім перезапустіть\nсистему."
+    "ua": "Сталася помилка.{t:1.0:1400}\n　　　　　　　　　　　　　{/t:1.0}\nЗбережіть дані\nпрограм, які використовуєте,\nпотім перезапустіть систему."
   },
   "lau_1b_make_folder": {
     "en": "Create Folder",
@@ -1797,7 +1797,7 @@
   },
   "lau_2b_folder_noname": {
     "en": "(No name)",
-    "ua": "((Без назви))"
+    "ua": "(Без назви)"
   },
   "lau_dlg_folder_setting": {
     "en": "Folder Settings",
@@ -1877,7 +1877,7 @@
   },
   "dat_dlg_bu_brkn": {
     "en": "The backup data management\ninformation is corrupted.\nWould you like to create the\ninformation again?\n{t:1.0:5500}Backup data titles may not be\ndisplayed properly afterwards.{/t:1.0}",
-    "ua": "Дані керування резерв-\nними копіями пошкоджено.\nСтворити дані ще раз?\n{t:1.0:5a00}Можливо, після цього\nназви резервних копій\nбуде показано неправильно.{/t:1.0}"
+    "ua": "Дані керування резервними\nкопіями пошкоджено.\nСтворити дані ще раз?\n{t:1.0:5a00}Можливо, після цього назви\nрезервних копій буде показано\nнеправильно.{/t:1.0}"
   },
   "dat_bu_notitle": {
     "en": "Could not display",
@@ -1973,7 +1973,7 @@
   },
   "lau_dlg_mvs_f_t_01": {
     "en": "You can now share your game\nexperiences with people from\naround the world via Miiverse!\nTouch the top right icon to begin.",
-    "ua": "Тепер ви можете поділитися\nвраженнями від ігор з грав-\nцями з усього світу в Miiverse!\nТоркніться значка у верхньому\nправому куті, щоб почати."
+    "ua": "Тепер ви можете поділитися\nвраженнями від ігор з гравцями\nз усього світу в Miiverse!\nТоркніться значка у верхньому\nправому куті, щоб почати."
   },
   "lau_dlg_mvs_f_u_02": {
     "en": "",
@@ -1985,7 +1985,7 @@
   },
   "lau_dlg_mvs_f_t_02": {
     "en": "Connect to the internet and touch\nthe top right icon to share game\nexperiences with people from\naround the world via Miiverse!",
-    "ua": "Під'єднайтеся до Інтернету\nй торкніться значка у верхньому\nправому куті, щоб поділитися\nвраженнями від ігор з грав-\nцями з усього світу в Miiverse!"
+    "ua": "Під'єднайтеся до Інтернету\nй торкніться значка у верхньому\nправому куті, щоб поділитися\nвраженнями від ігор з гравцями\nз усього світу в Miiverse!"
   },
   "lau_dlg_mvs_pare": {
     "en": "",
@@ -2033,7 +2033,7 @@
   },
   "lau_dlg_welc_mhm_0": {
     "en": "You can save layouts for themes\nand icons, and swap between them.",
-    "ua": "Ви можете зберігати вигляди\nз різними темами й значками,\nа також переключатися між ними."
+    "ua": "Ви можете зберігати вигляди\nз різними темами й значками,\nа також перемикатися між ними."
   },
   "lau_dlg_welc_mhm_1": {
     "en": "Have fun creating custom HOME\nMenu layouts that suit you!",
@@ -2057,11 +2057,11 @@
   },
   "lau_news_ppu_other_sin": {
     "en": "+%d more",
-    "ua": "+ + ще %d"
+    "ua": "+ ще %d"
   },
   "lau_news_ppu_other_plu": {
     "en": "+%d more",
-    "ua": "+ + ще %d"
+    "ua": "+ ще %d"
   },
   "lau_2b_start_news": {
     "en": "Notifications",
@@ -2353,6 +2353,6 @@
   },
   "new_tips16": {
     "en": "With badges, you can further\ncustomise your HOME Menu\nand personalise your system.\n\nYou can open the badge box\nin the following ways:\n\n■ Open HOME Menu Settings\nusing the icon in the top left\nof the Touch Screen (see above)\nand select \"Place Badges\".\n■ Select a badge you have placed\nand touch it or press .\n\nAlso, \"Save/Load Layout\"\n(see above) lets you save multiple\nHOME Menu layouts and swap\nbetween them.\n\nTry decorating the HOME Menu\nhow you like by using different\nbadges and layouts!\n\nNintendo",
-    "ua": "За допомогою жетонів ви можете\nзмінити меню HOME на свій\nсмак і надати вашій системі\nіндивідуального вигляду.\n\nКоробку для жетонів можна\nвідкрити такими способами.\n\n• Відкрийте Налаштування\nменю HOME за допомогою значка\nу верхньому лівому куті\nсенсорного дисплея\n(див. мал. вище)\nі виберіть Причепити жетони.\n• Виберіть причеплений жетон,\nпотім торкніться його або .\n\nЗа допомогою опції Зберегти/\nзавантажити вигляд (мал. вище)\nви можете також зберігати\nрізні вигляди меню HOME\nі переключатися між ними.\n\nОздоблюйте меню HOME,\nяк забажаєте, різними виглядами\nй жетонами!\n\nNintendo"
+    "ua": "За допомогою жетонів ви можете\nзмінити меню HOME на свій\nсмак і надати вашій системі\nіндивідуального вигляду.\n\nКоробку для жетонів можна\nвідкрити такими способами.\n\n• Відкрийте Налаштування\nменю HOME за допомогою значка\nу верхньому лівому куті\nсенсорного дисплея\n(див. мал. вище)\nі виберіть Причепити жетони.\n• Виберіть причеплений жетон,\nпотім торкніться його або .\n\nЗа допомогою опції Зберегти/\nзавантажити вигляд (мал. вище)\nви можете також зберігати\nрізні вигляди меню HOME\nі перемикатися між ними.\n\nОздоблюйте меню HOME,\nяк забажаєте, різними виглядами\nй жетонами!\n\nNintendo"
   }
 }

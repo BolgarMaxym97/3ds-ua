@@ -1301,7 +1301,7 @@
   },
   "E_02_Window_03": {
     "en": "A local wireless error has\noccurred. Cancelling transfer.\n\nPlease try again.",
-    "ua": "Сталася помилка локального\nбездротового зв'язку.\nПеренесення\nскасовано.\n\nСпробуйте ще раз."
+    "ua": "Сталася помилка локального\nбездротового зв'язку.\nПеренесення скасовано.\n\nСпробуйте ще раз."
   },
   "E_02_Window_04": {
     "en": "There is no response from\nthe target system. The\ntransfer will be cancelled.\n\nPlease check the target system.",
