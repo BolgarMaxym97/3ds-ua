@@ -26,7 +26,7 @@
 <tr>
 <td><img src="assets/pictures/home-menu-streetpass-plaza.png" width="250" alt="Меню HOME: банер Площі StreetPass Mii"></td>
 <td><img src="assets/pictures/manual-system-settings-contents.png" width="250" alt="Електронний довідник Налаштувань системи: зміст"></td>
-<td><img src="assets/pictures/manual-system-settings-page.png" width="250" alt="Електронний довідник Налаштувань системи: сторінка «Під'єднання до Інтернету»"></td>
+<td><img src="assets/pictures/manual-system-settings-page.png" width="250" alt="Електронний довідник Налаштувань системи: сторінка «Зв'язок із кодом»"></td>
 </tr>
 </table>
 
