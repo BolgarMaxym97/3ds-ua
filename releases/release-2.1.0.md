@@ -9,6 +9,7 @@
 | Файл | Що це |
 |---|---|
 | `3ds-ua-installer-2.1.0.cia` | **застосунок — беріть його.** Один на всі консолі: 3DS, 3DS XL, 2DS, New 3DS, New 3DS XL, New 2DS XL |
+| `3ds-ua-installer-2.1.0.3dsx` | той самий застосунок для Homebrew Launcher — покладіть у `/3ds/` на SD-карті |
 | `3ds-ua-from-ru-2.1.0-old3ds.zip` | ручне встановлення: замість російської, 3DS / 3DS XL / 2DS |
 | `3ds-ua-from-ru-2.1.0-new3ds.zip` | ручне встановлення: замість російської, **New** 3DS / New 3DS XL / New 2DS XL |
 | `3ds-ua-from-en-2.1.0-old3ds.zip` | ручне встановлення: замість англійської, 3DS / 3DS XL / 2DS |

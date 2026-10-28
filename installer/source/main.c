@@ -15,6 +15,46 @@
  * out of the 28 MB heap left over (2026-10-22). */
 u32 __ctru_linear_heap_size = 8 * 1024 * 1024;
 
+/* With only the linear size set, libctru hands everything else to the main heap. The 3dsx
+ * runs as 3dsx_app, which on a New 3DS gets ~124 MB instead of the CIA's 64 MB: it asked
+ * for a 115 MB heap, more than the 96 MB heap area of the address space, the kernel refused,
+ * and libctru stopped in svcBreak before main (2026-10-28). Past the cap memory stays unused. */
+#define HEAP_SIZE_MAX (OS_HEAP_AREA_END - OS_HEAP_AREA_BEGIN)
+
+extern u32 __ctru_heap, __ctru_heap_size, __ctru_linear_heap;
+extern char *fake_heap_start, *fake_heap_end;
+
+/* libctru 2.7.0's own __system_allocateHeaps (weak), with the main heap capped. */
+void __system_allocateHeaps(void)
+{
+    Handle reslimit = 0;
+    if (R_FAILED(svcGetResourceLimit(&reslimit, CUR_PROCESS_HANDLE)))
+        svcBreak(USERBREAK_PANIC);
+    ResourceLimitType type = RESLIMIT_COMMIT;
+    s64 max = 0, used = 0;
+    svcGetResourceLimitLimitValues(&max, reslimit, &type, 1);
+    svcGetResourceLimitCurrentValues(&used, reslimit, &type, 1);
+    svcCloseHandle(reslimit);
+
+    u32 remaining = (u32)(max - used) & ~0xFFF;
+    if (__ctru_linear_heap_size > remaining)
+        svcBreak(USERBREAK_PANIC);
+    __ctru_heap_size = remaining - __ctru_linear_heap_size;
+    if (__ctru_heap_size > HEAP_SIZE_MAX)
+        __ctru_heap_size = HEAP_SIZE_MAX;
+
+    if (R_FAILED(svcControlMemory(&__ctru_heap, OS_HEAP_AREA_BEGIN, 0, __ctru_heap_size, MEMOP_ALLOC,
+                                  MEMPERM_READ | MEMPERM_WRITE)))
+        svcBreak(USERBREAK_PANIC);
+    if (R_FAILED(svcControlMemory(&__ctru_linear_heap, 0, 0, __ctru_linear_heap_size, MEMOP_ALLOC_LINEAR,
+                                  MEMPERM_READ | MEMPERM_WRITE)))
+        svcBreak(USERBREAK_PANIC);
+
+    mappableInit(OS_MAP_AREA_BEGIN, OS_MAP_AREA_END);
+    fake_heap_start = (char *)__ctru_heap;
+    fake_heap_end = fake_heap_start + __ctru_heap_size;
+}
+
 int main(void)
 {
     romfsInit();
