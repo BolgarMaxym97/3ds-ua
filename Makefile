@@ -100,11 +100,14 @@ installer-cia: installer ## the installer as a CIA, with its HOME Menu banner ->
 
 # The splash is signed with the HOME Menu's key (tools/installer_logo.py), read from the
 # console's own HOME Menu code; first build with makerom's homebrew logo, which it reworks.
+# makerom drops the minor part of the version (2.1.0 came out 2.0.0): tools/cia_version.py
+# writes it into the TMD and ticket, where AM, FBI and the 3DS UA Hub read it.
 HOME_MENU_CODE := work/0004003000009802/code.bin
 installer-makerom:
 	cd installer && ../$(MAKEROM) -f cia -o 3ds-ua-installer.cia -target t -exefslogo $(CIA_LOGO) -rsf cia.rsf \
 		-elf 3ds-ua-installer.elf -icon 3ds-ua-installer.smdh -banner ../dist_installer/art/banner.bnr \
 		-major $(word 1,$(subst ., ,$(VERSION))) -minor $(word 2,$(subst ., ,$(VERSION))) -micro $(word 3,$(subst ., ,$(VERSION)))
+	$(PY) tools/cia_version.py $(INSTALLER_CIA) $(VERSION)
 
 installer-test: ## host tests of the installer's font builder, payload, install engine and stats report (after installer-data)
 	@mkdir -p tmp
