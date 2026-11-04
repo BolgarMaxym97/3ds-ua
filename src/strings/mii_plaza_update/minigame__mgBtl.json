@@ -1,0 +1,2410 @@
+{
+  "Btl_title_logo_00": {
+    "en": "StreetPass Battle",
+    "ua": "Фортеця StreetPass"
+  },
+  "Btl_title_logo_00_s": {
+    "en": "StreetPass Battle",
+    "ua": "Фортеця StreetPass"
+  },
+  "Btl_intro_msg_00": {
+    "en": "Welcome to StreetPass Battle!",
+    "ua": "Вітаємо у Фортеці StreetPass!"
+  },
+  "Btl_intro_msg_01": {
+    "en": "In this game, you build an army\r\nand battle enemy forces to unite\r\na war-torn world under your rule.",
+    "ua": "У цій грі ви збираєте армію\nй б'єтеся з ворогами, щоб\nпідкорити розтерзаний світ."
+  },
+  "Btl_intro_confirm": {
+    "en": "Are you ready to begin?",
+    "ua": "Готові почати?"
+  },
+  "Btl_intro_confirm_yes": {
+    "en": "Yes, of course!",
+    "ua": "Так, звісно!"
+  },
+  "Btl_intro_confirm_no": {
+    "en": "Not right now...",
+    "ua": "Не зараз…"
+  },
+  "Btl_intro_result_yes": {
+    "en": "Then let us set forth!",
+    "ua": "Тоді вирушаймо!"
+  },
+  "Btl_intro_result_no": {
+    "en": "So be it! Return when you\r\nfeel the desire for conquest!",
+    "ua": "Хай буде так! Повертайтеся,\nколи захочеться завоювань!"
+  },
+  "Btl_title_press": {
+    "en": "PRESS ",
+    "ua": "НАТИСНІТЬ "
+  },
+  "Btl_title_copyright": {
+    "en": "©2013 Nintendo  Developed by Spike Chunsoft",
+    "ua": "©2013 Nintendo  Розробник: Spike Chunsoft"
+  },
+  "Btl_title_msg": {
+    "en": "Build a mighty army as you\r\nstrive for world domination.",
+    "ua": "Зберіть могутню армію\nй прагніть світового панування."
+  },
+  "Btl_title_msg_start": {
+    "en": "Collect as many allies as possible\r\nto unite the world under your rule.",
+    "ua": "Зберіть якомога більше союзників\nй об'єднайте світ під своєю владою."
+  },
+  "Btl_title_msg_start_again": {
+    "en": "Collect as many allies as possible and\r\nunite the world under your rule again.",
+    "ua": "Зберіть якомога більше союзників\nй знову об'єднайте світ під своєю владою."
+  },
+  "Btl_title_msg_employ": {
+    "en": "Use  Play Coins to hire\r\nnew troops for your army.",
+    "ua": "Наймайте нових солдатів\nза монетки ."
+  },
+  "Btl_title_msg_record": {
+    "en": "View details of your past battles\r\nand your position in the rankings.",
+    "ua": "Перегляньте минулі битви\nй своє місце в рейтингу."
+  },
+  "Btl_title_msg_back": {
+    "en": "Quit the game and return to the plaza.",
+    "ua": "Вийти з гри й повернутися на площу."
+  },
+  "Btl_title_home": {
+    "en": ": Return to HOME Menu",
+    "ua": ": назад у меню HOME"
+  },
+  "Btl_title_info_coin": {
+    "en": "Play Coins",
+    "ua": "Ігрових монеток"
+  },
+  "Btl_title_info_soldier": {
+    "en": "Allied Soldiers",
+    "ua": "Солдати-союзники"
+  },
+  "Btl_title_info_rank": {
+    "en": "Castle Rank",
+    "ua": "Ранг замку"
+  },
+  "Btl_title_info_land": {
+    "en": "Countries Conquered",
+    "ua": "Завойовано країн"
+  },
+  "Btl_title_00": {
+    "en": "Hire Soldiers",
+    "ua": "Найняти солдатів"
+  },
+  "Btl_title_01": {
+    "en": "Conquer the World",
+    "ua": "Підкорити світ"
+  },
+  "Btl_title_03": {
+    "en": "Back",
+    "ua": "Назад"
+  },
+  "Btl_title_04": {
+    "en": "View Records",
+    "ua": "Записи"
+  },
+  "Btl_title_attention": {
+    "en": "If you return to the plaza now,\r\nthe troops you have summoned\r\nusing  Play Coins will leave\r\nwithout joining your army.",
+    "ua": "Якщо зараз піти на площу,\nвійська, скликані за\nмонетки , підуть,\nне ставши до лав армії."
+  },
+  "Btl_title_confirm": {
+    "en": "Return to the plaza?",
+    "ua": "Повернутися на площу?"
+  },
+  "Btl_title_yes": {
+    "en": "Yes",
+    "ua": "Так"
+  },
+  "Btl_title_no": {
+    "en": "No",
+    "ua": "Ні"
+  },
+  "Btl_common_00": {
+    "en": "Yes",
+    "ua": "Так"
+  },
+  "Btl_common_01": {
+    "en": "No",
+    "ua": "Ні"
+  },
+  "Btl_common_coin_deficit": {
+    "en": "Sorry, but it seems like\r\nyou don't have enough\r\n Play Coins.",
+    "ua": "На жаль, схоже,\nу вас бракує\n ігрових монеток."
+  },
+  "Btl_save": {
+    "en": "Saving... Please do not turn off the power.",
+    "ua": "Збереження… Не вимикайте живлення."
+  },
+  "Btl_load": {
+    "en": "Loading... Please do not turn off the power.",
+    "ua": "Завантаження… Не вимикайте живлення."
+  },
+  "Btl_type_00": {
+    "en": "cavalry",
+    "ua": "кіннота"
+  },
+  "Btl_type_00_l": {
+    "en": "Cavalry",
+    "ua": "Кіннота"
+  },
+  "Btl_type_01": {
+    "en": "archers",
+    "ua": "лучники"
+  },
+  "Btl_type_01_l": {
+    "en": "Archers",
+    "ua": "Лучники"
+  },
+  "Btl_type_02": {
+    "en": "infantry",
+    "ua": "піхота"
+  },
+  "Btl_type_02_l": {
+    "en": "Infantry",
+    "ua": "Піхота"
+  },
+  "Btl_type_03": {
+    "en": "ninjas",
+    "ua": "ніндзя"
+  },
+  "Btl_jii_name": {
+    "en": "Wentworth",
+    "ua": "Вентворт"
+  },
+  "Btl_castle_confirm": {
+    "en": "Once your castle is built, you\r\nwill not be able to change it.\r\n\r\nAre you sure of your decision?",
+    "ua": "Збудований замок\nзмінити не можна.\n\nВи впевнені?"
+  },
+  "Btl_castle_name_00": {
+    "en": "Shogun's Castle",
+    "ua": "Замок сьоґуна"
+  },
+  "Btl_castle_name_01": {
+    "en": "Medieval Castle",
+    "ua": "Замок лицарів"
+  },
+  "Btl_castle_name_02": {
+    "en": "Cyber Castle",
+    "ua": "Кіберзамок"
+  },
+  "Btl_comment_00": {
+    "en": "I am [System:Color name=\"mgBtl_dark_green\" ][1][/System:Color],\r\nfrom [0]!",
+    "ua": "Я — [System:Color name=\"mgBtl_dark_green\" ][1][/System:Color],\nзвідки: [0]!"
+  },
+  "Btl_comment_01": {
+    "en": "I bring a force of [System:Color name=\"mgBtl_red\" ][0][/System:Color] soldiers!\r\nLet us fight by your side!",
+    "ua": "Я привів [System:Color name=\"mgBtl_red\" ][0][/System:Color] солдатів!\nБиймося пліч-о-пліч!"
+  },
+  "Btl_comment_01_sf": {
+    "en": "I bring a force of [System:Color name=\"mgBtl_red\" ][0][/System:Color] soldier...myself!\r\nLet me fight by your side!",
+    "ua": "Я привів [System:Color name=\"mgBtl_red\" ][0][/System:Color] солдата… себе!\nБиймося пліч-о-пліч!"
+  },
+  "Btl_comment_11": {
+    "en": "I am [System:Color name=\"mgBtl_dark_green\" ][1][/System:Color],\r\nfrom [0]!",
+    "ua": "Я — [System:Color name=\"mgBtl_dark_green\" ][1][/System:Color],\nзвідки: [0]!"
+  },
+  "Btl_comment_14": {
+    "en": "Forgive me, but I just had to\r\nstop by to see your fine castle.",
+    "ua": "Перепрошую, але я мусив\nзазирнути на ваш чудовий замок."
+  },
+  "Btl_comment_reply_00": {
+    "en": "Your army's size is quite impressive!\r\nI would like to battle you someday!",
+    "ua": "Ваша армія вражає!\nКолись я хотів би з вами битися!"
+  },
+  "Btl_comment_reply_01": {
+    "en": "My, your army's shaping up nicely!\r\nI look forward to seeing it grow.",
+    "ua": "Ого, ваша армія росте!\nХай росте й далі!"
+  },
+  "Btl_comment_reply_02": {
+    "en": "To commemorate our meeting,\r\nI offer you [System:Color name=\"mgBtl_red\" ][0][/System:Color] soldiers.",
+    "ua": "На честь нашої зустрічі\nдарую вам [System:Color name=\"mgBtl_red\" ][0][/System:Color] солдатів."
+  },
+  "Btl_comment_reply_02_sf": {
+    "en": "To commemorate our meeting,\r\nI offer you [System:Color name=\"mgBtl_red\" ][0][/System:Color] soldier.",
+    "ua": "На честь нашої зустрічі\nдарую вам [System:Color name=\"mgBtl_red\" ][0][/System:Color] солдата."
+  },
+  "Btl_comment_challenge_00": {
+    "en": "You wish to battle? Very well! But if I\r\nwin, I'll take a bite out of your forces!",
+    "ua": "Бажаєте битви? Гаразд! Але якщо я\nпереможу, ваше військо поменшає!"
+  },
+  "Btl_comment_challenge_01": {
+    "en": "You're a brave one, to be sure! But if\r\nI win, I'll cut your army down to size!",
+    "ua": "Ви сміливець, це точно! Але якщо\nя переможу, ваша армія поменшає!"
+  },
+  "Btl_comment_employ_00": {
+    "en": "Thank you for hiring our services.\r\nWe will gladly fight by your side!",
+    "ua": "Дякуємо, що найняли нас.\nМи радо битимемося за вас!"
+  },
+  "Btl_comment_result_00": {
+    "en": "Now, let us use the forces we have\r\ngathered to conquer our enemies!",
+    "ua": "А тепер кидаймо зібрані сили\nна підкорення ворогів!"
+  },
+  "Btl_comment_result_01": {
+    "en": "Now, let us continue towards our\r\nprimary goal of conquering the world!",
+    "ua": "А тепер продовжимо йти до нашої\nголовної мети — підкорення світу!"
+  },
+  "Btl_accept_result_title": {
+    "en": "Results",
+    "ua": "Результати"
+  },
+  "Btl_accept_result_title_s": {
+    "en": "Results",
+    "ua": "Результати"
+  },
+  "Btl_accept_result_00": {
+    "en": "Friendly Generals",
+    "ua": "Дружні полководці"
+  },
+  "Btl_accept_result_01": {
+    "en": "Monarchs From Afar",
+    "ua": "Монархи здалеку"
+  },
+  "Btl_accept_type_03": {
+    "en": "A monarch from afar!",
+    "ua": "Монарх здалеку!"
+  },
+  "Btl_war_06": {
+    "en": "[0] Kingdom",
+    "ua": "Королівство [0]"
+  },
+  "Btl_war_07": {
+    "en": "[0] Kingdom",
+    "ua": "Королівство [0]"
+  },
+  "Btl_war_damage_00": {
+    "en": "2/3\r\ndown!",
+    "ua": "2/3\nвтрат!"
+  },
+  "Btl_war_damage_02": {
+    "en": "1/2\r\ndown!",
+    "ua": "1/2\nвтрат!"
+  },
+  "Btl_war_damage_03": {
+    "en": "1/2\r\ndown!",
+    "ua": "1/2\nвтрат!"
+  },
+  "Btl_war_damage_04": {
+    "en": "4/5 \r\ndown!",
+    "ua": "4/5 \nвтрат!"
+  },
+  "Btl_war_14": {
+    "en": "[0] soldiers",
+    "ua": "[0] солд."
+  },
+  "Btl_war_15": {
+    "en": "[0] Kingdom",
+    "ua": "Королівство [0]"
+  },
+  "Btl_war_16": {
+    "en": "[0] Kingdom",
+    "ua": "Королівство [0]"
+  },
+  "Btl_war_17": {
+    "en": "[0] Kingdom",
+    "ua": "Королівство [0]"
+  },
+  "Btl_war_18": {
+    "en": "[0] Kingdom",
+    "ua": "Королівство [0]"
+  },
+  "Btl_key_help_ff": {
+    "en": "Fast-Forward ",
+    "ua": "Перемотати "
+  },
+  "Btl_ready_help": {
+    "en": "Use the stylus to divide up your troops!",
+    "ua": "Розподіліть війська стилусом!"
+  },
+  "Btl_ready_help_s": {
+    "en": "Use the stylus to divide up your troops!",
+    "ua": "Розподіліть війська стилусом!"
+  },
+  "Btl_ready_help_flag": {
+    "en": "Troops with a [System:Color name=\"mgBtl_white\" ]white flag[/System:Color] cannot win!",
+    "ua": "Загін із [System:Color name=\"mgBtl_white\" ]білим прапором[/System:Color] не переможе!"
+  },
+  "Btl_ready_help_flag_s": {
+    "en": "Troops with a white flag cannot win!",
+    "ua": "Загін із білим прапором не переможе!"
+  },
+  "Btl_ready_help_win": {
+    "en": "Troops with a [System:Color name=\"mgBtl_yellow\" ]gold medal[/System:Color] cannot fail!",
+    "ua": "Загін із [System:Color name=\"mgBtl_yellow\" ]золотою медаллю[/System:Color] не програє!"
+  },
+  "Btl_ready_help_win_s": {
+    "en": "Troops with a gold medal cannot fail!",
+    "ua": "Загін із золотою медаллю не програє!"
+  },
+  "Btl_ready_help_janken_01": {
+    "en": "In a bad matchup, half of your troops will fall!",
+    "ua": "Невигідний тип — і загине половина!"
+  },
+  "Btl_ready_help_janken_01_s": {
+    "en": "In a bad matchup, half of your troops will fall!",
+    "ua": "Невигідний тип — і загине половина!"
+  },
+  "Btl_ready_help_powerful": {
+    "en": "Berserkers can defeat 4/5 of your troops!",
+    "ua": "Берсерки можуть знищити 4/5 ваших військ!"
+  },
+  "Btl_ready_help_powerful_s": {
+    "en": "Berserkers can defeat 4/5 of your troops!",
+    "ua": "Берсерки можуть знищити 4/5 ваших військ!"
+  },
+  "Btl_ready_help_ninja_01": {
+    "en": "Overpower ninjas with twice their number!",
+    "ua": "Переважте ніндзя вдвічі більшою кількістю!"
+  },
+  "Btl_ready_help_ninja_01_s": {
+    "en": "Overpower ninjas with twice their number!",
+    "ua": "Переважте ніндзя вдвічі більшою кількістю!"
+  },
+  "Btl_ready_help_cmn_normal": {
+    "en": "Aha! Their army's in sight. We can see\r\nhow they've divided up their forces...",
+    "ua": "Ага! Ворожа армія на виду. Видно,\nяк вони розподілили сили…"
+  },
+  "Btl_ready_help_cmn_tough_00": {
+    "en": "The enemy has at least 1.5 times our\r\nnumber! A challenge indeed!",
+    "ua": "Ворог переважає нас у 1,5 раза!\nОсь це виклик!"
+  },
+  "Btl_ready_help_cmn_tough_01": {
+    "en": "That army must be at least twice our\r\nnumber! Can we truly defeat them?!",
+    "ua": "Ворог переважає нас удвічі!\nЧи справді ми його здолаємо?!"
+  },
+  "Btl_ready_help_cmn_powerful": {
+    "en": "Beware those berserkers! One wrong\r\nmove and your army will be crushed!",
+    "ua": "Стережіться берсерків! Один хибний\nхід — і армію буде розгромлено!"
+  },
+  "Btl_ready_help_cmn_ninja": {
+    "en": "Ninja troops have no weaknesses...\r\nSuperior numbers are our only chance!",
+    "ua": "У ніндзя немає слабких місць…\nНаш шанс — лише чисельна перевага!"
+  },
+  "Btl_ready_help_cmn": {
+    "en": "Use your stylus to decide how best\r\nto divide up our available forces.",
+    "ua": "Розподіліть стилусом наші сили\nнайкращим чином."
+  },
+  "Btl_ready_help_cmn_win": {
+    "en": "From now on, [System:Color name=\"mgBtl_red\" ]gold medals will\r\nnot appear[/System:Color]. Use careful logic to\r\ndivide up your forces optimally!",
+    "ua": "Відтепер [System:Color name=\"mgBtl_red\" ]золотих медалей\nне буде[/System:Color]. Розподіляйте сили\nз розумом!"
+  },
+  "Btl_ready_help_title": {
+    "en": "- Battle Guide -",
+    "ua": "- Довідка про бій -"
+  },
+  "Btl_ready_help_00": {
+    "en": "Each battle is divided into [System:Color name=\"mgBtl_red\" ]three[/System:Color]\r\nseparate clashes, and the first\r\nto win [System:Color name=\"mgBtl_red\" ]two[/System:Color] of these is the victor.",
+    "ua": "Битва ділиться на [System:Color name=\"mgBtl_red\" ]три[/System:Color]\nсутички, і перемагає той,\nхто виграє [System:Color name=\"mgBtl_red\" ]дві[/System:Color] з них."
+  },
+  "Btl_ready_help_01": {
+    "en": "Each of your three troop types\r\ntakes part in [System:Color name=\"mgBtl_red\" ]one[/System:Color] of these three\r\nclashes. No more, and no less!",
+    "ua": "Кожен із трьох типів військ\nбере участь в [System:Color name=\"mgBtl_red\" ]одній[/System:Color] з трьох\nсутичок. Не більше й не менше!"
+  },
+  "Btl_ready_help_02": {
+    "en": "There's no telling in what order\r\nthe enemy will send out their\r\ntroops, so be careful!",
+    "ua": "Невідомо, в якому порядку\nворог виставить війська,\nтож будьте обережні!"
+  },
+  "Btl_weak_help_title": {
+    "en": "- Caution! -",
+    "ua": "- Увага! -"
+  },
+  "Btl_weak_help_00": {
+    "en": "The ground is strewn with rocks.\r\nUnder these conditions, cavalry\r\nwill be [System:Color name=\"mgBtl_red\" ]weak against all types[/System:Color]!",
+    "ua": "Земля всипана камінням.\nЗа таких умов кіннота\n[System:Color name=\"mgBtl_red\" ]слабка проти всіх типів[/System:Color]!"
+  },
+  "Btl_weak_help_01": {
+    "en": "There are strong winds blowing.\r\nUnder these conditions, archers\r\nwill be [System:Color name=\"mgBtl_red\" ]weak against all types[/System:Color]!",
+    "ua": "Дме сильний вітер.\nЗа таких умов лучники\n[System:Color name=\"mgBtl_red\" ]слабкі проти всіх типів[/System:Color]!"
+  },
+  "Btl_weak_help_02": {
+    "en": "The ground is wet and slippery.\r\nUnder these conditions, infantry\r\nwill be [System:Color name=\"mgBtl_red\" ]weak against all types[/System:Color]!",
+    "ua": "Земля мокра й слизька.\nЗа таких умов піхота\n[System:Color name=\"mgBtl_red\" ]слабка проти всіх типів[/System:Color]!"
+  },
+  "Btl_ready_help_bt_00": {
+    "en": "Organise Troops",
+    "ua": "Розподіл військ"
+  },
+  "Btl_ready_help_bt_01": {
+    "en": "View Battle Guide",
+    "ua": "Довідка про бій"
+  },
+  "Btl_ready_00": {
+    "en": "Choose a troop type to send into battle!",
+    "ua": "Виберіть тип військ для бою!"
+  },
+  "Btl_ready_00_s": {
+    "en": "Choose a troop type to send into battle!",
+    "ua": "Виберіть тип військ для бою!"
+  },
+  "Btl_ready_boss": {
+    "en": "Choose a troop type to send into battle!",
+    "ua": "Виберіть тип військ для бою!"
+  },
+  "Btl_ready_boss_s": {
+    "en": "Choose a troop type to send into battle!",
+    "ua": "Виберіть тип військ для бою!"
+  },
+  "Btl_ready_entrust": {
+    "en": " Consult\r\nWentworth",
+    "ua": " Порада\nВентворта"
+  },
+  "Btl_ready_ok": {
+    "en": "All sorted!",
+    "ua": "Готово!"
+  },
+  "Btl_ready_02": {
+    "en": " Spy on the enemy",
+    "ua": " Шпигувати"
+  },
+  "Btl_ready_entrust_confirm": {
+    "en": "For [System:Color name=\"mgBtl_red\" ]1[/System:Color] Play Coin, I will\r\ndivide up your troops myself.",
+    "ua": "За [System:Color name=\"mgBtl_red\" ]1[/System:Color] монетку я сам\nрозподілю ваші війська."
+  },
+  "Btl_ready_entrust_result": {
+    "en": "This would be my recommended\r\nformation. I can only hope it\r\nbrings the victory you seek!",
+    "ua": "Ось шикування, яке я раджу.\nСподіваюся, воно принесе\nбажану перемогу!"
+  },
+  "Btl_ready_entrust_impossible": {
+    "en": "I must apologise, my liege.\r\nI cannot seem to devise an\r\neffective formation...",
+    "ua": "Перепрошую, мій володарю.\nНе можу придумати\nвдалого шикування…"
+  },
+  "Btl_ready_entrust_impossible_used": {
+    "en": "You cannot always rely on my\r\nassistance alone, my liege.\r\nTry to seize victory for yourself!",
+    "ua": "Не можна завжди покладатися\nлише на мене, мій володарю.\nЗдобудьте перемогу самі!"
+  },
+  "Btl_ready_entrust_reset": {
+    "en": "Shall I arrange our troops into\r\nthe formation I recommended?",
+    "ua": "Вишикувати війська так,\nяк я радив?"
+  },
+  "Btl_ready_03": {
+    "en": "Spend [System:Color name=\"mgBtl_red\" ]2[/System:Color] Play Coins\r\nto spy on the enemy?",
+    "ua": "Витратити [System:Color name=\"mgBtl_red\" ]2[/System:Color] монетки,\nщоб шпигувати за ворогом?"
+  },
+  "Btl_ready_use_num": {
+    "en": "Remaining Uses: [System:Color name=\"mgBtl_red\" ][0][/System:Color]",
+    "ua": "Лишилося спроб: [System:Color name=\"mgBtl_red\" ][0][/System:Color]"
+  },
+  "Btl_ready_06": {
+    "en": "Enemy Forces",
+    "ua": "Сили ворога"
+  },
+  "Btl_ready_07": {
+    "en": "Enemy Forces",
+    "ua": "Сили ворога"
+  },
+  "Btl_ninja_confirm_used": {
+    "en": "Alas, the enemy is alert to our\r\npresence! Any further attempts\r\nto send in spies would be futile.",
+    "ua": "На жаль, ворог помітив нас!\nНові спроби заслати шпигунів\nбудуть марні."
+  },
+  "Btl_ninja_result": {
+    "en": "It seems the enemy will attack using\r\n[System:Color name=\"mgBtl_red\" ][0][/System:Color]. This is valuable information!",
+    "ua": "Схоже, ворог атакуватиме\nвійськом «[System:Color name=\"mgBtl_red\" ][0][/System:Color]». Цінні відомості!"
+  },
+  "Btl_condition_win": {
+    "en": "A strong start!\r\nWe just need one more victory!",
+    "ua": "Сильний початок!\nПотрібна ще одна перемога!"
+  },
+  "Btl_condition_win_s": {
+    "en": "A strong start!\r\nWe just need one more victory!",
+    "ua": "Сильний початок!\nПотрібна ще одна перемога!"
+  },
+  "Btl_condition_lose": {
+    "en": "We're falling behind...\r\nWe can't afford another loss!",
+    "ua": "Ми відстаємо…\nЩе однієї поразки не можна!"
+  },
+  "Btl_condition_lose_s": {
+    "en": "We're falling behind...\r\nWe can't afford another loss!",
+    "ua": "Ми відстаємо…\nЩе однієї поразки не можна!"
+  },
+  "Btl_condition_last": {
+    "en": "One win, one loss...\r\nIt all rests on this final clash!",
+    "ua": "Одна перемога, одна поразка…\nУсе вирішить остання сутичка!"
+  },
+  "Btl_condition_last_s": {
+    "en": "One win, one loss...\r\nIt all rests on this final clash!",
+    "ua": "Одна перемога, одна поразка…\nУсе вирішить остання сутичка!"
+  },
+  "Btl_condition_boss": {
+    "en": "All-out battle!\r\nAttack with your entire army!",
+    "ua": "Генеральна битва!\nАтакуйте всією армією!"
+  },
+  "Btl_condition_boss_s": {
+    "en": "All-out battle!\r\nAttack with your entire army!",
+    "ua": "Генеральна битва!\nАтакуйте всією армією!"
+  },
+  "Btl_condition_boss_round_00": {
+    "en": "The enemy has the larger army!",
+    "ua": "Армія ворога більша!"
+  },
+  "Btl_condition_boss_round_00_s": {
+    "en": "The enemy has the larger army!",
+    "ua": "Армія ворога більша!"
+  },
+  "Btl_condition_boss_round_01": {
+    "en": "Win this clash to turn the tide!",
+    "ua": "Перемога тут переломить бій!"
+  },
+  "Btl_condition_boss_round_01_s": {
+    "en": "Win this clash to turn the tide!",
+    "ua": "Перемога тут переломить бій!"
+  },
+  "Btl_condition_boss_round_02": {
+    "en": "If you lose this clash, the foe\r\nwill have the advantage!",
+    "ua": "Якщо програти цю сутичку,\nперевага буде за ворогом!"
+  },
+  "Btl_condition_boss_round_02_s": {
+    "en": "If you lose this clash, the foe\r\nwill have the advantage!",
+    "ua": "Якщо програти цю сутичку,\nперевага буде за ворогом!"
+  },
+  "Btl_condition_boss_round_03": {
+    "en": "You're doing well! Keep it up!",
+    "ua": "Добре йде! Так тримати!"
+  },
+  "Btl_condition_boss_round_03_s": {
+    "en": "You're doing well! Keep it up!",
+    "ua": "Добре йде! Так тримати!"
+  },
+  "Btl_condition_boss_last": {
+    "en": "This is the final clash!",
+    "ua": "Це остання сутичка!"
+  },
+  "Btl_condition_boss_last_s": {
+    "en": "This is the final clash!",
+    "ua": "Це остання сутичка!"
+  },
+  "Btl_boss_ready_cmn": {
+    "en": "The final clash is an all-out battle!\r\nYou must attack [System:Color name=\"mgBtl_red\" ]five times in a row[/System:Color]!",
+    "ua": "Остання сутичка — генеральна битва!\nАтакувати треба [System:Color name=\"mgBtl_red\" ]п'ять разів поспіль[/System:Color]!"
+  },
+  "Btl_boss_ready_cmn_01": {
+    "en": "I cannot help you with this enemy.\r\nTrust in your own skills, my liege!",
+    "ua": "Тут я не допоможу.\nДовіртеся своєму хисту, володарю!"
+  },
+  "Btl_boss_ready_cmn_02": {
+    "en": "Spying is useless against this enemy,\r\nand I'm afraid I cannot help you either!",
+    "ua": "Шпигувати за цим ворогом марно,\nі я, на жаль, теж не допоможу!"
+  },
+  "Btl_boss_ready": {
+    "en": "Choose which type\r\nwill attack.",
+    "ua": "Виберіть, який тип\nатакуватиме."
+  },
+  "Btl_boss_count_go": {
+    "en": "Let's go!",
+    "ua": "Уперед!"
+  },
+  "Btl_boss_attack_help": {
+    "en": "Battle Progress",
+    "ua": "Хід битви"
+  },
+  "Btl_telop_round1": {
+    "en": "Round 1!",
+    "ua": "Раунд 1!"
+  },
+  "Btl_telop_round2": {
+    "en": "Round 2!",
+    "ua": "Раунд 2!"
+  },
+  "Btl_telop_round3": {
+    "en": "Round 3!",
+    "ua": "Раунд 3!"
+  },
+  "Btl_telop_02": {
+    "en": "Victory!",
+    "ua": "Перемога!"
+  },
+  "Btl_telop_03": {
+    "en": "Defeat...",
+    "ua": "Поразка…"
+  },
+  "Btl_telop_win_reason_00": {
+    "en": "Crushed the foe with superior numbers!",
+    "ua": "Ворога розгромлено числом!"
+  },
+  "Btl_telop_lose_reason_00": {
+    "en": "Crushed by the foe's superior numbers...",
+    "ua": "Нас розгромили числом…"
+  },
+  "Btl_telop_win_reason_01": {
+    "en": "Overcame superior numbers!",
+    "ua": "Здолали ворога, що переважав числом!"
+  },
+  "Btl_telop_lose_reason_01": {
+    "en": "Overcome by inferior numbers...",
+    "ua": "Поступилися меншим силам…"
+  },
+  "Btl_telop_win_reason_lucky": {
+    "en": "Won with a critical strike!",
+    "ua": "Перемога критичним ударом!"
+  },
+  "Btl_telop_06": {
+    "en": "The [0] Kingdom\r\nis victorious!",
+    "ua": "Королівство [0]\nперемогло!"
+  },
+  "Btl_telop_08": {
+    "en": "The [0] Kingdom\r\nwas defeated...",
+    "ua": "Королівство [0]\nзазнало поразки…"
+  },
+  "Btl_telop_10": {
+    "en": "Castle rank increased!",
+    "ua": "Ранг замку підвищено!"
+  },
+  "Btl_telop_16": {
+    "en": "Battle!",
+    "ua": "Битва!"
+  },
+  "Btl_telop_17": {
+    "en": "Final Battle!",
+    "ua": "Фінальна битва!"
+  },
+  "Btl_telop_18": {
+    "en": "Nation Conquered!",
+    "ua": "Країну завойовано!"
+  },
+  "Btl_telop_19": {
+    "en": "World Dominated!",
+    "ua": "Світ підкорено!"
+  },
+  "Btl_telop_20": {
+    "en": "Your invasion failed...",
+    "ua": "Невдале вторгнення"
+  },
+  "Btl_telop_21": {
+    "en": "Battle!",
+    "ua": "Битва!"
+  },
+  "Btl_telop_enemy_00": {
+    "en": "Beware of\r\nberserkers!",
+    "ua": "Стережіться\nберсерків!"
+  },
+  "Btl_telop_enemy_01": {
+    "en": "Beware\r\nof ninjas!",
+    "ua": "Стережіться\nніндзя!"
+  },
+  "Btl_telop_enemy_02": {
+    "en": "Beware the\r\nEmperor!",
+    "ua": "Стережіться\nімператора!"
+  },
+  "Btl_telop_janken_win": {
+    "en": "Type advantage!",
+    "ua": "Перевага типу!"
+  },
+  "Btl_telop_janken_lose": {
+    "en": "Type disadvantage...",
+    "ua": "Невигідний тип…"
+  },
+  "Btl_telop_janken_draw": {
+    "en": "Same-type clash!",
+    "ua": "Однакові типи!"
+  },
+  "Btl_telop_janken_lucky": {
+    "en": "Critical strike!",
+    "ua": "Критичний удар!"
+  },
+  "Btl_telop_janken_weak_p": {
+    "en": "Field conditions are\r\nweakening your [0]!",
+    "ua": "Умови місцевості\nпослаблюють ваших: [0]!"
+  },
+  "Btl_telop_janken_weak_u": {
+    "en": "Field conditions are\r\nweakening the enemy!",
+    "ua": "Умови місцевості\nпослаблюють ворога!"
+  },
+  "Btl_telop_material_chance": {
+    "en": "Defeat the foe to gain building materials!",
+    "ua": "Перемагайте й здобувайте будматеріали!"
+  },
+  "Btl_telop_training": {
+    "en": "Practice Battle",
+    "ua": "Тренування"
+  },
+  "Btl_result_00": {
+    "en": "[0][System:Size percent=\"75\" ] men[/System:Size]",
+    "ua": "[0][System:Size percent=\"75\" ] вояк.[/System:Size]"
+  },
+  "Btl_result_00_sf": {
+    "en": "[0][System:Size percent=\"75\" ] man[/System:Size]",
+    "ua": "[0][System:Size percent=\"75\" ] вояк[/System:Size]"
+  },
+  "Btl_result_00_zr": {
+    "en": "[0][System:Size percent=\"75\" ] men[/System:Size]",
+    "ua": "[0][System:Size percent=\"75\" ] вояк.[/System:Size]"
+  },
+  "Btl_result_01": {
+    "en": "[0] [System:Size percent=\"75\" ]men[/System:Size]",
+    "ua": "[0] [System:Size percent=\"75\" ]вояк.[/System:Size]"
+  },
+  "Btl_result_01_sf": {
+    "en": "[0] [System:Size percent=\"75\" ]man[/System:Size]",
+    "ua": "[0] [System:Size percent=\"75\" ]вояк[/System:Size]"
+  },
+  "Btl_result_01_zr": {
+    "en": "[0] [System:Size percent=\"75\" ]men[/System:Size]",
+    "ua": "[0] [System:Size percent=\"75\" ]вояк.[/System:Size]"
+  },
+  "Btl_result_plus_msg": {
+    "en": "Of the [1] troops in the\r\n[System:Color name=\"mgBtl_dark_green\" ][0][/System:Color] Kingdom's army,",
+    "ua": "Із [1] вояків армії\nкоролівства [System:Color name=\"mgBtl_dark_green\" ][0][/System:Color]"
+  },
+  "Btl_result_plus_msg_00": {
+    "en": "Of the [1] troops in the\r\n[System:Color name=\"mgBtl_dark_green\" ][0][/System:Color] Kingdom's army,",
+    "ua": "Із [1] вояків армії\nкоролівства [System:Color name=\"mgBtl_dark_green\" ][0][/System:Color]"
+  },
+  "Btl_result_plus": {
+    "en": "joined your forces!",
+    "ua": "приєдналися до вас!"
+  },
+  "Btl_result_plus_sf": {
+    "en": "joined your forces!",
+    "ua": "приєдналися до вас!"
+  },
+  "Btl_result_minus_msg": {
+    "en": "Of the [0] soldiers \r\nin our army,",
+    "ua": "Із [0] солдатів\nнашої армії"
+  },
+  "Btl_result_minus": {
+    "en": "ran away...",
+    "ua": "утекли…"
+  },
+  "Btl_result_minus_sf": {
+    "en": "ran away...",
+    "ua": "утекли…"
+  },
+  "Btl_result_telop_up": {
+    "en": "Yay!",
+    "ua": "Ура!"
+  },
+  "Btl_result_telop_down": {
+    "en": "Aww...",
+    "ua": "Ех…"
+  },
+  "Btl_result_rank": {
+    "en": "Rank [0]",
+    "ua": "Ранг [0]"
+  },
+  "Btl_result_material_get": {
+    "en": "Ah! You have obtained [System:Color name=\"mgBtl_red\" ]materials[/System:Color]\r\nfrom the conquered country!\r\nNow we can expand your castle!",
+    "ua": "О! Ви здобули [System:Color name=\"mgBtl_red\" ]матеріали[/System:Color]\nіз завойованої країни!\nТепер можна розширити замок!"
+  },
+  "Btl_result_rank_cmn_00": {
+    "en": "Let's keep going and see how big\r\nyour castle can become!",
+    "ua": "Продовжуймо й погляньмо,\nяким великим стане ваш замок!"
+  },
+  "Btl_result_rank_cmn_01": {
+    "en": "Your castle has reached quite an\r\nimpressive size, don't you think?",
+    "ua": "Ваш замок уже чималенький,\nчи не так?"
+  },
+  "Btl_result_rank_cmn_02": {
+    "en": "Your castle is so large, we can look\r\ndown on the clouds from above!",
+    "ua": "Замок такий великий, що з нього\nвидно хмари згори!"
+  },
+  "Btl_result_rank_cmn_03": {
+    "en": "Remarkable! This must be the largest\r\ncastle the world has ever seen!",
+    "ua": "Неймовірно! Це, мабуть, найбільший\nзамок, який бачив світ!"
+  },
+  "Btl_result_round_num_00": {
+    "en": "Congratulations!",
+    "ua": "Вітаємо!"
+  },
+  "Btl_result_round_num_01": {
+    "en": "Your total soldier count\r\nreached [0]!",
+    "ua": "Усього солдатів:\n[0]!"
+  },
+  "Btl_war_final_result_win_00": {
+    "en": "Bravo! That was a rather thrilling\r\nbattle, would you not agree?",
+    "ua": "Браво! Захоплива була битва,\nчи не так?"
+  },
+  "Btl_war_final_result_win_00a": {
+    "en": "Nicely done! I always enjoy the\r\nthrill of a good battle!",
+    "ua": "Чудова робота! Обожнюю\nзапал доброї битви!"
+  },
+  "Btl_war_final_result_win_00b": {
+    "en": "Splendid work, just splendid!\r\nYou are a shining example to us all!",
+    "ua": "Чудово, просто чудово!\nВи — приклад для всіх нас!"
+  },
+  "Btl_war_final_result_win_01": {
+    "en": "Remarkable! You have the skills to\r\ntriumph against superior numbers!",
+    "ua": "Неймовірно! Ви вмієте перемагати\nнавіть сильнішого числом ворога!"
+  },
+  "Btl_war_final_result_win_02": {
+    "en": "My word! None but yourself could\r\nclaim victory against such odds!",
+    "ua": "Слово честі! Ніхто, крім вас,\nне переміг би за таких умов!"
+  },
+  "Btl_war_final_result_lose_00": {
+    "en": "Do not despair, my liege. Next time,\r\nyou will surely be victorious!",
+    "ua": "Не впадайте у відчай, володарю.\nНаступного разу ви переможете!"
+  },
+  "Btl_war_final_result_lose_00a": {
+    "en": "Such a pity... But I am sure you will\r\nbe able to learn from this defeat!",
+    "ua": "Шкода… Але певен, ця поразка\nвас чогось навчить!"
+  },
+  "Btl_war_final_result_lose_00b": {
+    "en": "It seems luck was on your enemy's\r\nside today! Next time, we will prevail!",
+    "ua": "Сьогодні удача була за ворогом!\nНаступного разу переможемо ми!"
+  },
+  "Btl_war_final_result_boss_win": {
+    "en": "You have defeated our final foe,\r\nthe Emperor himself!",
+    "ua": "Ви здолали останнього ворога —\nсамого імператора!"
+  },
+  "Btl_war_final_result_boss_lose": {
+    "en": "Such overwhelming power! Is our\r\nmighty army still not big enough...?!",
+    "ua": "Яка нездоланна сила! Невже наша\nмогутня армія ще замала…?!"
+  },
+  "Btl_war_final_result_t02": {
+    "en": "Battle Results",
+    "ua": "Результати битви"
+  },
+  "Btl_war_final_result_t02_s": {
+    "en": "Battle Results",
+    "ua": "Результати битви"
+  },
+  "Btl_main_telop_mm": {
+    "en": "Conquer the World!",
+    "ua": "Підкоріть світ!"
+  },
+  "Btl_main_telop_mm_s": {
+    "en": "Conquer the World!",
+    "ua": "Підкоріть світ!"
+  },
+  "Btl_clear_condition_00": {
+    "en": "[System:Color name=\"mgBtl_green\" ][System:Size percent=\"150\" ][0][/System:Size][/System:Color] Countries Remain",
+    "ua": "Лишилося країн: [System:Color name=\"mgBtl_green\" ][System:Size percent=\"150\" ][0][/System:Size][/System:Color]"
+  },
+  "Btl_clear_condition_00_sf": {
+    "en": "[System:Size percent=\"150\" ][System:Color name=\"mgBtl_green\" ][System:Size percent=\"150\" ][0][/System:Size][/System:Color][/System:Size] Country Remains",
+    "ua": "[System:Size percent=\"150\" ]Лишилася країна: [System:Color name=\"mgBtl_green\" ][System:Size percent=\"150\" ][0][/System:Size][/System:Color][/System:Size]"
+  },
+  "Btl_clear_condition_00_s": {
+    "en": "[System:Size percent=\"150\" ][0][/System:Size] Countries Remain",
+    "ua": "Лишилося країн: [System:Size percent=\"150\" ][0][/System:Size]"
+  },
+  "Btl_clear_condition_00_s_sf": {
+    "en": "[System:Size percent=\"150\" ][0][/System:Size] Country Remains",
+    "ua": "Лишилася країна: [System:Size percent=\"150\" ][0][/System:Size]"
+  },
+  "Btl_main_info_cmn_first": {
+    "en": "Now, let us begin our journey\r\ntowards world domination!",
+    "ua": "А тепер вирушаймо шляхом\nдо світового панування!"
+  },
+  "Btl_tips_00": {
+    "en": "Remember, each country we conquer\r\nis a step towards world domination!",
+    "ua": "Кожна завойована країна —\nкрок до світового панування!"
+  },
+  "Btl_tips_01": {
+    "en": "We have made good progress,\r\nbut there is still quite a way to go!",
+    "ua": "Ми добре просунулися,\nале шлях ще неблизький!"
+  },
+  "Btl_tips_02": {
+    "en": "Just a little further to go! Soon the\r\nworld will be united under your rule!",
+    "ua": "Ще трохи! Скоро світ\nоб'єднається під вашою владою!"
+  },
+  "Btl_tips_03": {
+    "en": "The world is almost ours! There is\r\nonly [System:Color name=\"mgBtl_red\" ]a single country[/System:Color] left to conquer!",
+    "ua": "Світ майже наш! Лишилося завоювати\n[System:Color name=\"mgBtl_red\" ]лише одну країну[/System:Color]!"
+  },
+  "Btl_game_end_win": {
+    "en": "A fine victory, just as I would expect\r\nof a fine monarch such as yourself!",
+    "ua": "Гідна перемога, саме така, як личить\nгідному монархові, як ви!"
+  },
+  "Btl_game_end_lose": {
+    "en": "Sometimes fate can be cruel,\r\nbut you must never lose heart!",
+    "ua": "Доля буває жорстокою,\nале ніколи не падайте духом!"
+  },
+  "Btl_game_end_cancel": {
+    "en": "It seems we must gather more troops\r\nto take on this enemy's might...",
+    "ua": "Схоже, проти такої сили\nтреба зібрати більше військ…"
+  },
+  "Btl_game_end_default": {
+    "en": "Sometimes, the decision not to take\r\naction is the wisest decision of all!",
+    "ua": "Іноді рішення нічого не робити —\nнаймудріше з усіх!"
+  },
+  "Btl_game_end_default2": {
+    "en": "The path to world conquest is not\r\neasy, but let us give it our all!",
+    "ua": "Шлях до підкорення світу нелегкий,\nале викладімося на повну!"
+  },
+  "Btl_game_end_clear": {
+    "en": "Congratulations!\r\n[System:Color name=\"mgBtl_red\" ]You have conquered the world![/System:Color]",
+    "ua": "Вітаю!\n[System:Color name=\"mgBtl_red\" ]Ви підкорили світ![/System:Color]"
+  },
+  "Btl_game_end_clear2": {
+    "en": "I hope to see you again! I will always\r\nbe here for you when you need me.",
+    "ua": "Ще побачимося! Я завжди\nпоруч, коли знадоблюся."
+  },
+  "Btl_challenge_confirm": {
+    "en": "A fellow StreetPass Battle\r\nmonarch has come to visit\r\nfrom afar! What will you do?",
+    "ua": "Здалеку прибув інший монарх\nФортеці StreetPass!\nЩо ви робитимете?"
+  },
+  "Btl_challenge_confirm_tough_00": {
+    "en": "- Wentworth's Advice -\r\n\r\nThis monarch's army is at least\r\n[System:Color name=\"mgBtl_red\" ]1.5 times[/System:Color] the size of our own.\r\nShould we do battle, I forsee\r\nquite a challenging encounter.",
+    "ua": "- Порада Вентворта -\n\nАрмія цього монарха\nщонайменше в [System:Color name=\"mgBtl_red\" ]1,5 раза[/System:Color] більша\nза нашу. Якщо битися,\nсутичка буде непростою."
+  },
+  "Btl_challenge_confirm_tough_01": {
+    "en": "- Wentworth's Advice -\r\n\r\nThis monarch's army is at least\r\n[System:Color name=\"mgBtl_red\" ]twice[/System:Color] the size of our own.\r\nShould we do battle, I fear our\r\nchances of victory may be slim!",
+    "ua": "- Порада Вентворта -\n\nАрмія цього монарха\nщонайменше [System:Color name=\"mgBtl_red\" ]удвічі[/System:Color] більша\nза нашу. Боюся, наші шанси\nна перемогу мізерні!"
+  },
+  "Btl_challenge_bt_00": {
+    "en": "Challenge\r\nto a battle!",
+    "ua": "Викликати\nна бій!"
+  },
+  "Btl_challenge_bt_01": {
+    "en": "Offer kind\r\ngreetings.",
+    "ua": "Привітно\nпривітатися."
+  },
+  "Btl_challenge_win_num": {
+    "en": "Winning Streak: [System:Color name=\"mgBtl_red\" ][0][/System:Color]",
+    "ua": "Перемог поспіль: [System:Color name=\"mgBtl_red\" ][0][/System:Color]"
+  },
+  "Btl_mainmode_confirm": {
+    "en": "The country standing before us\r\nis the [0] Kingdom.\r\nShall we launch an invasion?",
+    "ua": "Перед нами королівство\n[0].\nПочнемо вторгнення?"
+  },
+  "Btl_mainmode_confirm_tough_00": {
+    "en": "- Wentworth's Advice -\r\n\r\nAn army at least [System:Color name=\"mgBtl_red\" ]1.5 times[/System:Color] the\r\nsize of our own... This foe may\r\nbe too much for us right now!",
+    "ua": "- Порада Вентворта -\n\nАрмія щонайменше в [System:Color name=\"mgBtl_red\" ]1,5 раза[/System:Color]\nбільша за нашу… Цей ворог\nнам поки що не до сили!"
+  },
+  "Btl_mainmode_confirm_tough_01": {
+    "en": "- Wentworth's Advice -\r\n\r\nThis army is at least [System:Color name=\"mgBtl_red\" ]twice[/System:Color] the\r\nsize of ours! My liege, I cannot\r\nrecommend facing such odds!",
+    "ua": "- Порада Вентворта -\n\nЦя армія щонайменше [System:Color name=\"mgBtl_red\" ]удвічі[/System:Color]\nбільша за нашу! Мій володарю,\nне раджу йти на такий ризик!"
+  },
+  "Btl_mainmode_confirm_caution_powerful": {
+    "en": "- Wentworth's Advice -\r\n\r\nBerserkers are formidable foes.\r\nWhen they gain the advantage,\r\nthey wipe out [System:Color name=\"mgBtl_red\" ]4/5[/System:Color] of your men!\r\nEven in a same-type clash, they\r\neliminate [System:Color name=\"mgBtl_red\" ]2/3[/System:Color] of your number...",
+    "ua": "- Порада Вентворта -\n\nБерсерки — грізні вороги.\nМаючи перевагу, вони\nвибивають [System:Color name=\"mgBtl_red\" ]4/5[/System:Color] ваших вояків!\nНавіть за однакових типів\nвони знищують [System:Color name=\"mgBtl_red\" ]2/3[/System:Color] війська…"
+  },
+  "Btl_mainmode_confirm_caution_ninja": {
+    "en": "- Wentworth's Advice -\r\n\r\nNinjas [System:Color name=\"mgBtl_red\" ]always manage to seize\r\nthe advantage[/System:Color], regardless of\r\ntype. I fear your only option is\r\nto overwhelm them with sheer\r\nforce of numbers!",
+    "ua": "- Порада Вентворта -\n\nНіндзя [System:Color name=\"mgBtl_red\" ]завжди здобувають\nперевагу[/System:Color], хоч би який\nтип. Боюся, єдиний вихід —\nзадавити їх чисельною\nперевагою!"
+  },
+  "Btl_mainmode_confirm_caution_boss": {
+    "en": "- Wentworth's Advice -\r\n\r\nYour final foe is the Emperor!\r\nThis enemy is unlike any other\r\nthat you've faced. Be sure you\r\nare fully prepared to face him.",
+    "ua": "- Порада Вентворта -\n\nОстанній ворог — імператор!\nВін не схожий на жодного\nз попередніх. Як слід\nпідготуйтеся до бою з ним."
+  },
+  "Btl_mainmode_00": {
+    "en": "Invade!",
+    "ua": "У наступ!"
+  },
+  "Btl_mainmode_01": {
+    "en": "Not now.",
+    "ua": "Не зараз."
+  },
+  "Btl_mainmode_help_action": {
+    "en": "What is your plan of action, my liege?",
+    "ua": "Який ваш план дій, мій володарю?"
+  },
+  "Btl_mainmode_help_action_s": {
+    "en": "What is your plan of action, my liege?",
+    "ua": "Який ваш план дій, мій володарю?"
+  },
+  "Btl_mainmode_bt_00": {
+    "en": "Launch an invasion.",
+    "ua": "Почати вторгнення."
+  },
+  "Btl_mainmode_bt_01": {
+    "en": "Expand castle.",
+    "ua": "Розширити замок."
+  },
+  "Btl_mainmode_bt_02": {
+    "en": "Do nothing.",
+    "ua": "Нічого не робити."
+  },
+  "Btl_mainmode_rest_confirm": {
+    "en": "Are you sure you want to\r\nend this session without\r\ndoing anything?",
+    "ua": "Справді завершити сеанс,\nнічого не зробивши?"
+  },
+  "Btl_mainmode_build_cmn": {
+    "en": "Good things might happen if you\r\nexpand your castle, my liege!",
+    "ua": "Розширений замок може дати\nщось добре, мій володарю!"
+  },
+  "Btl_mainmode_build_confirm": {
+    "en": "Shall we convert [System:Color name=\"mgBtl_red\" ][0][/System:Color]\r\nsoldiers into craftsmen and\r\nhave them expand your castle?",
+    "ua": "Зробити [System:Color name=\"mgBtl_red\" ][0][/System:Color] солдатів\nмайстрами й доручити\nїм розширити замок?"
+  },
+  "Btl_mainmode_build_confirm_sf": {
+    "en": "Shall we convert [System:Color name=\"mgBtl_red\" ][0][/System:Color] soldier\r\ninto a craftsman and set him to\r\nwork expanding your castle?",
+    "ua": "Зробити [System:Color name=\"mgBtl_red\" ][0][/System:Color] солдата\nмайстром і доручити\nйому розширити замок?"
+  },
+  "Btl_mainmode_build_yes": {
+    "en": "Yes! I love\r\nbig castles!",
+    "ua": "Так! Хай\nросте!"
+  },
+  "Btl_mainmode_build_no": {
+    "en": "Not now.",
+    "ua": "Не зараз."
+  },
+  "Btl_mainmode_build_deficit_01_sf1": {
+    "en": "- Wentworth's Advice -\r\n\r\nWe don't have sufficient forces\r\nto do this right now, my liege.\r\nWe must get [System:Color name=\"mgBtl_red\" ][0][/System:Color][System:Color name=\"mgBtl_red\" ] [/System:Color]more\r\nsoldier first. Then we shall\r\nbe able to fortify your castle.",
+    "ua": "- Порада Вентворта -\n\nЗараз нам бракує сил\nдля цього, мій володарю.\nСпершу потрібен ще [System:Color name=\"mgBtl_red\" ][0][/System:Color][System:Color name=\"mgBtl_red\" ] [/System:Color]\nсолдат. Тоді ми зможемо\nзміцнити замок."
+  },
+  "Btl_mainmode_build_deficit_01": {
+    "en": "- Wentworth's Advice -\r\n\r\nWe don't have sufficient forces\r\nto do this right now, my liege.\r\nWe must get [System:Color name=\"mgBtl_red\" ][0][/System:Color][System:Color name=\"mgBtl_red\" ] [/System:Color]more\r\nsoldiers first. Then we shall\r\nbe able to fortify your castle.",
+    "ua": "- Порада Вентворта -\n\nЗараз нам бракує сил\nдля цього, мій володарю.\nСпершу потрібно ще [System:Color name=\"mgBtl_red\" ][0][/System:Color][System:Color name=\"mgBtl_red\" ] [/System:Color]\nсолдатів. Тоді ми зможемо\nзміцнити замок."
+  },
+  "Btl_mainmode_reault_title": {
+    "en": "Progress Towards World Domination",
+    "ua": "Шлях до світового панування"
+  },
+  "Btl_mainmode_reault_title_s": {
+    "en": "Progress Towards World Domination",
+    "ua": "Шлях до світового панування"
+  },
+  "Btl_mainmode_reault_msg00": {
+    "en": "Conquered [System:Color name=\"mgBtl_red\" ][0][/System:Color] country\r\nin this session!",
+    "ua": "Завойовано країн\nза сеанс: [System:Color name=\"mgBtl_red\" ][0][/System:Color]!"
+  },
+  "Btl_mainmode_reault_msg01": {
+    "en": "Failed to conquer a new\r\ncountry in this session...",
+    "ua": "За цей сеанс не вдалося\nзавоювати нову країну…"
+  },
+  "Btl_mainmode_reault_msg02": {
+    "en": "Did nothing in this session.",
+    "ua": "Сеанс минув без дій."
+  },
+  "Btl_mainmode_reault_msg03": {
+    "en": "Expanded castle!",
+    "ua": "Замок розширено!"
+  },
+  "Btl_mainmode_reault_land": {
+    "en": "Enemy Countries Remaining",
+    "ua": "Лишилося ворожих країн"
+  },
+  "Btl_result_soldier_plus": {
+    "en": "Troops Gained",
+    "ua": "Здобуто військ"
+  },
+  "Btl_result_soldier_minus": {
+    "en": "Troops Lost",
+    "ua": "Втрачено військ"
+  },
+  "Btl_result_soldier_mm_plus": {
+    "en": "Troops Gained",
+    "ua": "Здобуто військ"
+  },
+  "Btl_result_soldier_mm_minus": {
+    "en": "Troops Lost",
+    "ua": "Втрачено військ"
+  },
+  "Btl_mainmode_ek_name_00": {
+    "en": "Beginarr",
+    "ua": "Новачія"
+  },
+  "Btl_mainmode_ek_name_01": {
+    "en": "Rowdee",
+    "ua": "Буянія"
+  },
+  "Btl_mainmode_ek_name_02": {
+    "en": "Stub-Borrn",
+    "ua": "Впертія"
+  },
+  "Btl_mainmode_ek_name_03": {
+    "en": "Angree",
+    "ua": "Сердитія"
+  },
+  "Btl_mainmode_ek_name_04": {
+    "en": "Rheyeldup",
+    "ua": "Розлютія"
+  },
+  "Btl_mainmode_ek_name_05": {
+    "en": "Notta-Myuzed",
+    "ua": "Похмурія"
+  },
+  "Btl_mainmode_ek_name_06": {
+    "en": "Uppinahms",
+    "ua": "Бунтарія"
+  },
+  "Btl_mainmode_ek_name_07": {
+    "en": "Reegle",
+    "ua": "Величія"
+  },
+  "Btl_mainmode_ek_name_08": {
+    "en": "Pompos",
+    "ua": "Пихатія"
+  },
+  "Btl_mainmode_ek_name_09": {
+    "en": "Indawei",
+    "ua": "Сяктакія"
+  },
+  "Btl_mainmode_ek_name_10": {
+    "en": "Bittarr",
+    "ua": "Гіркотія"
+  },
+  "Btl_mainmode_ek_name_11": {
+    "en": "Wearee",
+    "ua": "Втомія"
+  },
+  "Btl_mainmode_ek_name_12": {
+    "en": "Burr-Surk",
+    "ua": "Шаленія"
+  },
+  "Btl_mainmode_ek_name_13": {
+    "en": "Nastee",
+    "ua": "Гидотія"
+  },
+  "Btl_mainmode_ek_name_14": {
+    "en": "Tiyahdout",
+    "ua": "Знесилія"
+  },
+  "Btl_mainmode_ek_name_15": {
+    "en": "Anoe-Yingg",
+    "ua": "Набридія"
+  },
+  "Btl_mainmode_ek_name_16": {
+    "en": "Avvenjarr",
+    "ua": "Месникія"
+  },
+  "Btl_mainmode_ek_name_17": {
+    "en": "Orfful",
+    "ua": "Жахлія"
+  },
+  "Btl_mainmode_ek_name_18": {
+    "en": "Misteree",
+    "ua": "Таємнія"
+  },
+  "Btl_mainmode_ek_name_19": {
+    "en": "Fynalle",
+    "ua": "Фіналія"
+  },
+  "Btl_record_title_00": {
+    "en": "Kingdom Details",
+    "ua": "Про королівство"
+  },
+  "Btl_record_title_00_s": {
+    "en": "Kingdom Details",
+    "ua": "Про королівство"
+  },
+  "Btl_record_title_01": {
+    "en": "Progress Report",
+    "ua": "Звіт про успіхи"
+  },
+  "Btl_record_title_01_s": {
+    "en": "Progress Report",
+    "ua": "Звіт про успіхи"
+  },
+  "Btl_record_bt_00": {
+    "en": "Progress Report",
+    "ua": "Звіт про успіхи"
+  },
+  "Btl_record_bt_01": {
+    "en": "Rankings",
+    "ua": "Рейтинг"
+  },
+  "Btl_record_bt_02": {
+    "en": "Plaza Tickets",
+    "ua": "Квитки Площі"
+  },
+  "Btl_record_castle_00": {
+    "en": "Current Forces",
+    "ua": "Поточні сили"
+  },
+  "Btl_record_castle_02": {
+    "en": "Record Army Size",
+    "ua": "Рекордна армія"
+  },
+  "Btl_record_land": {
+    "en": "Countries Conquered",
+    "ua": "Завойовано країн"
+  },
+  "Btl_record_castle_status": {
+    "en": "Your Castle",
+    "ua": "Ваш замок"
+  },
+  "Btl_record_castle_rank": {
+    "en": "Rank [0]",
+    "ua": "Ранг [0]"
+  },
+  "Btl_record_castle_date_00": {
+    "en": "Constructed on [DD]/[MM]/[YYYY]",
+    "ua": "Збудовано [DD].[MM].[YYYY]"
+  },
+  "Btl_record_king_00": {
+    "en": "Battles Fought",
+    "ua": "Битв проведено"
+  },
+  "Btl_record_king_01": {
+    "en": "Victories Won",
+    "ua": "Перемог здобуто"
+  },
+  "Btl_record_king_02": {
+    "en": "Monarchs From Afar Challenged",
+    "ua": "Викликано монархів здалеку"
+  },
+  "Btl_record_king_03": {
+    "en": "Monarchs From Afar Defeated",
+    "ua": "Переможено монархів здалеку"
+  },
+  "Btl_record_king_04": {
+    "en": "Visitors Welcomed",
+    "ua": "Прийнято гостей"
+  },
+  "Btl_record_name": {
+    "en": "Ruler: [0]",
+    "ua": "Володар: [0]"
+  },
+  "Btl_ranking_title": {
+    "en": "Monarch Ranking",
+    "ua": "Рейтинг монархів"
+  },
+  "Btl_ranking_title_s": {
+    "en": "Monarch Ranking",
+    "ua": "Рейтинг монархів"
+  },
+  "Btl_ranking_player_help": {
+    "en": "Your Rank:",
+    "ua": "Ваше місце:"
+  },
+  "Btl_ranking_out": {
+    "en": "Not Ranked",
+    "ua": "Поза рейтингом"
+  },
+  "Btl_ranking_out_list": {
+    "en": "N/A",
+    "ua": "—"
+  },
+  "Btl_ranking_l_00": {
+    "en": "Mightiest Monarch",
+    "ua": "Наймогутніший"
+  },
+  "Btl_ranking_l_01": {
+    "en": "Of all the monarchs that have been here,\r\nthis one was leading the largest army",
+    "ua": "З усіх монархів, що тут бували,\nцей мав найбільшу армію"
+  },
+  "Btl_ranking_bt_my": {
+    "en": "Rankings",
+    "ua": "Рейтинг"
+  },
+  "Btl_ranking_bt_legend": {
+    "en": "Mightiest Monarch",
+    "ua": "Наймогутніший"
+  },
+  "Btl_tutorial_mission_03": {
+    "en": "Gathering Troops",
+    "ua": "Збір військ"
+  },
+  "Btl_tutorial_mission_03_s": {
+    "en": "Gathering Troops",
+    "ua": "Збір військ"
+  },
+  "Btl_tutorial_mission_04": {
+    "en": "How to Win Battles",
+    "ua": "Як перемагати в битвах"
+  },
+  "Btl_tutorial_mission_04_s": {
+    "en": "How to Win Battles",
+    "ua": "Як перемагати в битвах"
+  },
+  "Btl_tutorial_title_rule_00": {
+    "en": "The Basics of Battle",
+    "ua": "Основи битви"
+  },
+  "Btl_tutorial_title_rule_01": {
+    "en": "The Basics of Battle",
+    "ua": "Основи битви"
+  },
+  "Btl_tutorial_1vs1_msg_900": {
+    "en": "My liege, I have brought [System:Color name=\"mgBtl_red\" ][0][/System:Color] men\r\nfrom your plaza to fight by your side.",
+    "ua": "Мій володарю, я привів [System:Color name=\"mgBtl_red\" ][0][/System:Color] вояків\nз вашої площі, щоб билися за вас."
+  },
+  "Btl_tutorial_1vs1_msg_901": {
+    "en": "You can collect more soldiers by\r\nmeeting people via StreetPass.",
+    "ua": "Більше солдатів можна зібрати,\nзустрічаючи людей через StreetPass."
+  },
+  "Btl_tutorial_1vs1_msg_902": {
+    "en": "Each Mii you meet will bring his or her\r\nown plaza residents to fight for you.",
+    "ua": "Кожен зустрінутий Mii приведе\nмешканців своєї площі битися за вас."
+  },
+  "Btl_tutorial_1vs1_msg_903": {
+    "en": "Sometimes, you may even encounter\r\nmonarchs from far-off kingdoms!",
+    "ua": "Іноді можна зустріти навіть\nмонархів далеких королівств!"
+  },
+  "Btl_tutorial_1vs1_msg_904": {
+    "en": "Try to meet as many people as you\r\ncan, to build yourself a mighty army!",
+    "ua": "Зустрічайте якомога більше людей,\nщоб зібрати могутню армію!"
+  },
+  "Btl_tutorial_1vs1_msg_800": {
+    "en": "Now then, my liege, you have never\r\nexperienced a real battle, have you?",
+    "ua": "Отже, володарю, справжньої битви\nви ще не бачили, правда?"
+  },
+  "Btl_tutorial_1vs1_msg_000": {
+    "en": "Fear not! I will teach you all that\r\nyou need to know about warfare!",
+    "ua": "Не бійтеся! Я навчу вас усього,\nщо треба знати про війну!"
+  },
+  "Btl_tutorial_1vs1_msg_001": {
+    "en": "The most important thing to know is\r\nthat there are [System:Color name=\"mgBtl_red\" ]three types[/System:Color] of soldier.",
+    "ua": "Найважливіше — знати, що є\n[System:Color name=\"mgBtl_red\" ]три типи[/System:Color] солдатів."
+  },
+  "Btl_tutorial_1vs1_msg_002": {
+    "en": "First, there is\r\nthe [System:Color name=\"mgBtl_red\" ]cavalry[/System:Color] type!",
+    "ua": "Перший тип —\n[System:Color name=\"mgBtl_red\" ]кіннота[/System:Color]!"
+  },
+  "Btl_tutorial_1vs1_msg_003": {
+    "en": "Next, we have\r\nthe [System:Color name=\"mgBtl_red\" ]archer[/System:Color] type!",
+    "ua": "Далі —\n[System:Color name=\"mgBtl_red\" ]лучники[/System:Color]!"
+  },
+  "Btl_tutorial_1vs1_msg_004": {
+    "en": "And finally,\r\nthe [System:Color name=\"mgBtl_red\" ]infantry[/System:Color] type!",
+    "ua": "І нарешті —\n[System:Color name=\"mgBtl_red\" ]піхота[/System:Color]!"
+  },
+  "Btl_tutorial_1vs1_msg_005": {
+    "en": "Note the [System:Color name=\"mgBtl_red\" ]rock-paper-scissors symbols[/System:Color]\r\nindicating the strengths of each type!",
+    "ua": "Значки [System:Color name=\"mgBtl_red\" ]«камінь, ножиці, папір»[/System:Color]\nпоказують переваги кожного типу!"
+  },
+  "Btl_tutorial_1vs1_msg_006": {
+    "en": "I find the easiest way to learn is by\r\ndoing, so let us have a practice bout!",
+    "ua": "Найлегше вчитися на практиці,\nтож проведімо тренувальний бій!"
+  },
+  "Btl_tutorial_1vs1_msg_101": {
+    "en": "Up here, you can see my army.",
+    "ua": "Угорі — моя армія."
+  },
+  "Btl_tutorial_1vs1_msg_102": {
+    "en": "Down here, you can see your own.",
+    "ua": "Унизу — ваша."
+  },
+  "Btl_tutorial_1vs1_msg_103": {
+    "en": "The numbers tell you how many troops\r\neach army has, broken down by type.",
+    "ua": "Числа показують, скільки військ\nкожного типу в армії."
+  },
+  "Btl_tutorial_1vs1_msg_150": {
+    "en": "For this practice bout, my army has\r\nslightly more soldiers than yours.",
+    "ua": "У цьому тренувальному бою в мене\nтрохи більше солдатів, ніж у вас."
+  },
+  "Btl_tutorial_1vs1_msg_151": {
+    "en": "In a real battle, you cannot tell which\r\ntroops the enemy will send out first!",
+    "ua": "У справжній битві не знаєш,\nякі війська ворог виставить першими!"
+  },
+  "Btl_tutorial_1vs1_msg_152": {
+    "en": "But just for this practice battle, I will\r\ngive you this information myself.",
+    "ua": "Але в цьому тренуванні я сам\nвам це скажу."
+  },
+  "Btl_tutorial_1vs1_msg_104": {
+    "en": "I will send out my [System:Color name=\"mgBtl_red\" ]infantry[/System:Color] to do\r\nbattle! Which type will you choose?",
+    "ua": "Я виставлю [System:Color name=\"mgBtl_red\" ]піхоту[/System:Color]!\nЯкий тип виберете ви?"
+  },
+  "Btl_tutorial_1vs1_msg_105": {
+    "en": "You will send your [System:Color name=\"mgBtl_red\" ][0][/System:Color]? I see!\r\nThen let us begin!",
+    "ua": "Виставляєте «[System:Color name=\"mgBtl_red\" ][0][/System:Color]»? Ясно!\nТоді почнімо!"
+  },
+  "Btl_tutorial_1vs1_msg_201": {
+    "en": "Now, my liege, please pay attention\r\nto the lower screen...",
+    "ua": "Тепер, мій володарю, погляньте\nна нижній екран…"
+  },
+  "Btl_tutorial_1vs1_msg_202": {
+    "en": "You chose to send out your [System:Color name=\"mgBtl_red\" ][1][/System:Color]...",
+    "ua": "Ви виставили «[System:Color name=\"mgBtl_red\" ][1][/System:Color]»…"
+  },
+  "Btl_tutorial_1vs1_msg_203": {
+    "en": "Alas, [System:Color name=\"mgBtl_red\" ]cavalry[/System:Color] are at a disadvantage\r\nagainst the spears of [System:Color name=\"mgBtl_red\" ]infantry[/System:Color] troops.",
+    "ua": "На жаль, [System:Color name=\"mgBtl_red\" ]кіннота[/System:Color] слабка\nпроти списів [System:Color name=\"mgBtl_red\" ]піхоти[/System:Color]."
+  },
+  "Btl_tutorial_1vs1_msg_204": {
+    "en": "This gave you a distinct advantage\r\nover my [System:Color name=\"mgBtl_red\" ]infantry[/System:Color] troops!",
+    "ua": "Це дало вам явну перевагу\nнад моєю [System:Color name=\"mgBtl_red\" ]піхотою[/System:Color]!"
+  },
+  "Btl_tutorial_1vs1_msg_205": {
+    "en": "Since my troops were also [System:Color name=\"mgBtl_red\" ]infantry[/System:Color],\r\nneither side had a type advantage.",
+    "ua": "Мої війська теж були [System:Color name=\"mgBtl_red\" ]піхотою[/System:Color],\nтож переваги не мав ніхто."
+  },
+  "Btl_tutorial_1vs1_msg_206": {
+    "en": "A masterful victory!\r\nYou chose your soldier type well.",
+    "ua": "Майстерна перемога!\nВи вдало вибрали тип."
+  },
+  "Btl_tutorial_1vs1_msg_207": {
+    "en": "Next time, try to consider which type\r\nwill give you the advantage in battle!",
+    "ua": "Наступного разу подумайте, який тип\nдасть вам перевагу в бою!"
+  },
+  "Btl_tutorial_1vs1_msg_208": {
+    "en": "Remember, the three types function\r\nlike a game of [System:Color name=\"mgBtl_red\" ]rock-paper-scissors[/System:Color].",
+    "ua": "Пам'ятайте: три типи діють,\nяк гра [System:Color name=\"mgBtl_red\" ]«камінь, ножиці, папір»[/System:Color]."
+  },
+  "Btl_tutorial_1vs1_msg_209": {
+    "en": "Each is strong against one type, but\r\nweak against another. Do you see?",
+    "ua": "Кожен сильний проти одного типу\nй слабкий проти іншого. Ясно?"
+  },
+  "Btl_tutorial_msg_900": {
+    "en": "This is where your journey truly\r\nbegins, General [System:Color name=\"mgBtl_dark_green\" ][0][/System:Color].",
+    "ua": "Тут ваш шлях і починається,\nполководцю [System:Color name=\"mgBtl_dark_green\" ][0][/System:Color]."
+  },
+  "Btl_tutorial_msg_901": {
+    "en": "Let us collect many allies, and strive\r\nto unite the world under your rule!",
+    "ua": "Зберімо союзників і об'єднаймо\nсвіт під вашою владою!"
+  },
+  "Btl_tutorial_title_ranking_00": {
+    "en": "View Rankings",
+    "ua": "Рейтинг"
+  },
+  "Btl_tutorial_title_record_00": {
+    "en": "View Records",
+    "ua": "Записи"
+  },
+  "Btl_tutorial_title_ticket_00": {
+    "en": "Collect Plaza Tickets",
+    "ua": "Квитки Площі"
+  },
+  "Btl_tutorial_ranking_00": {
+    "en": "Here you can compare your army's\r\nsize with those of your rivals.\r\nThe general with the most soldiers\r\nwill be named [System:Color name=\"mgBtl_red\" ]Mightiest Monarch[/System:Color].",
+    "ua": "Тут можна порівняти свою армію\nз арміями суперників.\nПолководець із найбільшою армією\nстане [System:Color name=\"mgBtl_red\" ]Наймогутнішим монархом[/System:Color]."
+  },
+  "Btl_tutorial_record_00": {
+    "en": "Here you can learn more about\r\nthis game's plaza tickets, take a\r\nlook at the rankings, and view\r\na report of your progress.",
+    "ua": "Тут можна дізнатися про квитки\nПлощі цієї гри, переглянути\nрейтинг і звіт про ваші\nуспіхи."
+  },
+  "Btl_tutorial_ticket_00": {
+    "en": "Here you can learn more about this\r\ngame's plaza tickets and see which\r\nones you've collected so far.\r\n\r\nTry to get them all!",
+    "ua": "Тут можна дізнатися про квитки\nПлощі цієї гри й переглянути,\nякі ви вже зібрали.\n\nЗберіть усі!"
+  },
+  "Btl_continuation_cmn_00": {
+    "en": "Ah! It would appear that [System:Color name=\"mgBtl_red\" ][0][/System:Color] visitors\r\nare waiting to meet with you!",
+    "ua": "О! Схоже, на вас чекають\nгості: [System:Color name=\"mgBtl_red\" ][0][/System:Color]!"
+  },
+  "Btl_continuation_cmn_00_sf": {
+    "en": "Ah! It would appear that [System:Color name=\"mgBtl_red\" ][0][/System:Color] visitor\r\nis waiting to meet with you!",
+    "ua": "О! Схоже, на вас чекає\n[System:Color name=\"mgBtl_red\" ][0][/System:Color] гість!"
+  },
+  "Btl_continuation_cmn_02": {
+    "en": "...Alas! It seems there is nobody\r\nhere to see you, my liege.",
+    "ua": "…На жаль! Схоже, до вас\nніхто не прийшов, мій володарю."
+  },
+  "Btl_continuation_cmn_03": {
+    "en": "We can launch an invasion once\r\nyou meet people via StreetPass!",
+    "ua": "Вторгнутися можна буде, коли ви\nзустрінете людей через StreetPass!"
+  },
+  "Btl_continuation_cmn_04": {
+    "en": "Try not to leave in the middle of\r\na session, my liege. It may cause\r\nyour soldiers to start worrying.",
+    "ua": "Намагайтеся не йти посеред\nсеансу, мій володарю. Солдати\nможуть занепокоїтися."
+  },
+  "Btl_continuation_cmn_05": {
+    "en": "Your soldiers do worry when you\r\nleave them mid-session, my liege.\r\n[System:Color name=\"mgBtl_red\" ][0][/System:Color] of them have run away...",
+    "ua": "Солдати непокояться, коли ви\nйдете посеред сеансу, володарю.\nУтекло вояків: [System:Color name=\"mgBtl_red\" ][0][/System:Color]…"
+  },
+  "Btl_continuation_cmn_05_sf": {
+    "en": "Your soldiers do worry when you\r\nleave them midsession. In fact,\r\n[System:Color name=\"mgBtl_red\" ][0][/System:Color] of them has run away...",
+    "ua": "Солдати непокояться, коли ви\nйдете посеред сеансу. Навіть\nутік [System:Color name=\"mgBtl_red\" ][0][/System:Color] вояк…"
+  },
+  "Btl_continuation_cmn_06": {
+    "en": "Your soldiers will flee if you leave\r\nthem mid-session! I stopped them\r\nthis time, but please be careful!",
+    "ua": "Солдати втечуть, якщо кинути\nїх посеред сеансу! Цього разу\nя їх зупинив, але обережно!"
+  },
+  "Btl_condition_cmn_win_00": {
+    "en": "Before we greet your visitors,\r\nmight I ask you one question?",
+    "ua": "Перш ніж вітати гостей,\nдозвольте одне запитання."
+  },
+  "Btl_condition_cmn_win_01": {
+    "en": "After fulfilling both my dreams and\r\nyour own by conquering the world...",
+    "ua": "Здійснивши і мою, і вашу мрію,\nпідкоривши світ…"
+  },
+  "Btl_condition_cmn_win_02": {
+    "en": "What kind of monarch do you want\r\nto become now?",
+    "ua": "Яким монархом ви хочете\nстати тепер?"
+  },
+  "Btl_condition_cmn_win_03": {
+    "en": "Then let us strive to build the greatest\r\narmy the world has ever seen!",
+    "ua": "Тоді зберімо найбільшу армію,\nяку бачив світ!"
+  },
+  "Btl_condition_cmn_win_04": {
+    "en": "Oh, and one more thing. From here\r\non out, [System:Color name=\"mgBtl_red\" ]gold medals will not appear[/System:Color].",
+    "ua": "І ще одне. Відтепер\n[System:Color name=\"mgBtl_red\" ]золотих медалей не буде[/System:Color]."
+  },
+  "Btl_condition_cmn_win_05": {
+    "en": "By prevailing without them, you can\r\nprove yourself a truly great monarch!",
+    "ua": "Перемагаючи без них, ви доведете,\nщо ви справді великий монарх!"
+  },
+  "Btl_condition_cmn_win_06": {
+    "en": "I have faith in your abilities, my liege.\r\nGood luck in the battles to come!",
+    "ua": "Я вірю у ваш хист, мій володарю.\nЩасти в майбутніх битвах!"
+  },
+  "Btl_condition_cmn_win_07": {
+    "en": "I want to become...",
+    "ua": "Я хочу стати…"
+  },
+  "Btl_condition_cmn_win_08": {
+    "en": "More famous\r\nthan ever!",
+    "ua": "Ще\nвідомішим!"
+  },
+  "Btl_condition_cmn_win_09": {
+    "en": "Mightier\r\nthan ever!",
+    "ua": "Ще\nсильнішим!"
+  },
+  "Btl_pause_00": {
+    "en": "Return to the title screen?",
+    "ua": "На титульний екран?"
+  },
+  "Btl_pause_01": {
+    "en": "This will end your session with the\r\nMii characters you have brought.",
+    "ua": "Сеанс із приведеними Mii\nзавершиться."
+  },
+  "Btl_unlock_entrust_bt": {
+    "en": "You now have the option to\r\n[System:Color name=\"mgBtl_red\" ]consult me[/System:Color] when organising your\r\ntroop formation before a battle.",
+    "ua": "Тепер перед битвою можна\n[System:Color name=\"mgBtl_red\" ]радитися зі мною[/System:Color] щодо\nшикування військ."
+  },
+  "Btl_unlock_entrust_num_00": {
+    "en": "You can now choose to consult me\r\n[System:Color name=\"mgBtl_red\" ]twice[/System:Color] in one session if you wish.",
+    "ua": "Тепер радитися зі мною можна\n[System:Color name=\"mgBtl_red\" ]двічі[/System:Color] за сеанс."
+  },
+  "Btl_unlock_entrust_num_01": {
+    "en": "You can now choose to consult\r\nme up to [System:Color name=\"mgBtl_red\" ]three[/System:Color] times per session.",
+    "ua": "Тепер радитися зі мною можна\nдо [System:Color name=\"mgBtl_red\" ]трьох[/System:Color] разів за сеанс."
+  },
+  "Btl_unlock_entrust_unlimited": {
+    "en": "You can now choose to consult\r\nme as many times as you wish.",
+    "ua": "Тепер радитися зі мною можна\nскільки завгодно."
+  },
+  "Btl_unlock_ninja_bt": {
+    "en": "You can now [System:Color name=\"mgBtl_red\" ]spy[/System:Color] on the enemy\r\nbefore sending out troops.",
+    "ua": "Тепер перед боєм можна\n[System:Color name=\"mgBtl_red\" ]шпигувати[/System:Color] за ворогом."
+  },
+  "Btl_unlock_ninja_num_00": {
+    "en": "You can now spy on the enemy\r\n[System:Color name=\"mgBtl_red\" ]twice[/System:Color] in one session if you wish.",
+    "ua": "Тепер шпигувати можна\n[System:Color name=\"mgBtl_red\" ]двічі[/System:Color] за сеанс."
+  },
+  "Btl_unlock_ninja_num_01": {
+    "en": "You can now spy on the enemy\r\nup to [System:Color name=\"mgBtl_red\" ]three[/System:Color] times in one session!",
+    "ua": "Тепер шпигувати можна\nдо [System:Color name=\"mgBtl_red\" ]трьох[/System:Color] разів за сеанс!"
+  },
+  "Btl_unlock_ninja_num_unlimited": {
+    "en": "You can now spy on the enemy\r\nas many times as you wish!",
+    "ua": "Тепер шпигувати за ворогом\nможна скільки завгодно!"
+  },
+  "Btl_unlock_employ_bt_00": {
+    "en": "You now have the option of\r\nhiring [System:Color name=\"mgBtl_red\" ]300 [/System:Color]soldiers for the\r\nprice of [System:Color name=\"mgBtl_red\" ]10[/System:Color] Play Coins!",
+    "ua": "Тепер можна найняти\n[System:Color name=\"mgBtl_red\" ]300 [/System:Color]солдатів\nза [System:Color name=\"mgBtl_red\" ]10[/System:Color] монеток!"
+  },
+  "Btl_unlock_employ_bt_01": {
+    "en": "You now have the option of\r\nhiring [System:Color name=\"mgBtl_red\" ]750 [/System:Color]soldiers for the\r\nprice of [System:Color name=\"mgBtl_red\" ]15[/System:Color] Play Coins!",
+    "ua": "Тепер можна найняти\n[System:Color name=\"mgBtl_red\" ]750 [/System:Color]солдатів\nза [System:Color name=\"mgBtl_red\" ]15[/System:Color] монеток!"
+  },
+  "Btl_unlock_employ_num": {
+    "en": "The [System:Color name=\"mgBtl_red\" ]number of soldiers[/System:Color] you can\r\nhire using  Play Coins has\r\nincreased!",
+    "ua": "[System:Color name=\"mgBtl_red\" ]Кількість солдатів[/System:Color], яких можна\nнайняти за монетки ,\nзбільшилася!"
+  },
+  "Btl_unlock_accept_00": {
+    "en": "It will now be easier to receive\r\ntroops from other monarchs!",
+    "ua": "Тепер легше отримувати\nвійська від інших монархів!"
+  },
+  "Btl_unlock_accept_01": {
+    "en": "It will now be easier to receive\r\ntroops from other monarchs!",
+    "ua": "Тепер легше отримувати\nвійська від інших монархів!"
+  },
+  "Btl_hat_get": {
+    "en": "You received the\r\n[System:Color name=\"mgBtl_red\" ]Emperor's Crown[/System:Color]!",
+    "ua": "Ви отримали\n[System:Color name=\"mgBtl_red\" ]Імператорську корону[/System:Color]!"
+  },
+  "Btl_hat_cmn": {
+    "en": "The crown of your greatest foe...\r\nA fitting memento of your triumph!",
+    "ua": "Корона найгрізнішого ворога…\nГідна пам'ять про ваш тріумф!"
+  },
+  "Btl_ticket_title": {
+    "en": "Plaza Tickets",
+    "ua": "Квитки Площі"
+  },
+  "Btl_ticket_title_s": {
+    "en": "Plaza Tickets",
+    "ua": "Квитки Площі"
+  },
+  "Btl_ticket_num_title": {
+    "en": "Tickets Obtained",
+    "ua": "Отримано квитків"
+  },
+  "Btl_ticket_num_title_s": {
+    "en": "Tickets Obtained",
+    "ua": "Отримано квитків"
+  },
+  "Btl_ticket_msg": {
+    "en": "You've accomplished a goal:\r\n[System:Color name=\"mgBtl_red\" ][0].[/System:Color]",
+    "ua": "Ви досягли мети:\n[System:Color name=\"mgBtl_red\" ][0].[/System:Color]"
+  },
+  "Btl_ticket_msg_get_single": {
+    "en": "You got a [System:Color name=\"mgBtl_red\" ]plaza ticket[/System:Color]. Redeem it\r\nat the exchange booth in the plaza!",
+    "ua": "Ви отримали [System:Color name=\"mgBtl_red\" ]квиток Площі[/System:Color]. Обміняйте\nйого в обмінному пункті на площі!"
+  },
+  "Btl_ticket_cmn": {
+    "en": "This, my liege, is but a small token\r\nof our thanks for all your hard work.",
+    "ua": "Це, мій володарю, лише маленький\nзнак подяки за ваші старання."
+  },
+  "Btl_ticket_00": {
+    "en": "Build your very own castle",
+    "ua": "Збудувати власний замок"
+  },
+  "Btl_ticket_01": {
+    "en": "Hire soldiers using  Play Coins 20 times",
+    "ua": "Найняти солдатів за монетки  20 разів"
+  },
+  "Btl_ticket_05": {
+    "en": "Defeat a monarch from afar",
+    "ua": "Перемогти монарха здалеку"
+  },
+  "Btl_ticket_06": {
+    "en": "Defeat 50 monarchs from afar",
+    "ua": "Перемогти 50 монархів здалеку"
+  },
+  "Btl_ticket_07": {
+    "en": "Battle monarchs from afar 100 times",
+    "ua": "Битися з монархами здалеку 100 разів"
+  },
+  "Btl_ticket_08": {
+    "en": "Battle monarchs from afar 300 times",
+    "ua": "Битися з монархами здалеку 300 разів"
+  },
+  "Btl_ticket_09": {
+    "en": "Defeat 10 monarchs from afar in a row",
+    "ua": "Перемогти 10 монархів здалеку поспіль"
+  },
+  "Btl_ticket_10": {
+    "en": "Defeat an army 1.5 times the size of yours",
+    "ua": "Перемогти армію, в 1,5 раза більшу за вашу"
+  },
+  "Btl_ticket_11": {
+    "en": "Defeat an army twice the size of yours",
+    "ua": "Перемогти армію, вдвічі більшу за вашу"
+  },
+  "Btl_ticket_12": {
+    "en": "Assemble an army of 10,000 troops",
+    "ua": "Зібрати армію з 10 000 вояків"
+  },
+  "Btl_ticket_13": {
+    "en": "Assemble an army of 100,000 troops",
+    "ua": "Зібрати армію зі 100 000 вояків"
+  },
+  "Btl_ticket_14": {
+    "en": "Assemble an army of 1,000,000 troops",
+    "ua": "Зібрати армію з 1 000 000 вояків"
+  },
+  "Btl_ticket_15": {
+    "en": "Conquer a country",
+    "ua": "Завоювати країну"
+  },
+  "Btl_ticket_16": {
+    "en": "Conquer 10 countries",
+    "ua": "Завоювати 10 країн"
+  },
+  "Btl_ticket_17": {
+    "en": "Expand your castle",
+    "ua": "Розширити замок"
+  },
+  "Btl_ticket_18": {
+    "en": "Achieve a castle rank of 10",
+    "ua": "Досягти 10-го рангу замку"
+  },
+  "Btl_ticket_19": {
+    "en": "Achieve a castle rank of 20",
+    "ua": "Досягти 20-го рангу замку"
+  },
+  "Btl_ticket_21": {
+    "en": "Conquer the world twice",
+    "ua": "Підкорити світ двічі"
+  },
+  "Btl_ticket_04": {
+    "en": "Offer kind greetings to monarchs 100 times",
+    "ua": "Привітно привітати монархів 100 разів"
+  },
+  "Btl_ticket_02": {
+    "en": "Let 300 groups of soldiers join your army",
+    "ua": "Прийняти в армію 300 загонів"
+  },
+  "Btl_ticket_03": {
+    "en": "Defeat an army larger than your own",
+    "ua": "Перемогти армію, більшу за вашу"
+  },
+  "Btl_ticket_20": {
+    "en": "Land your first critical strike",
+    "ua": "Завдати першого критичного удару"
+  },
+  "Btl_employ_msg_00": {
+    "en": "To hire soldiers, you will need\r\nat least [System:Color name=\"mgBtl_red\" ]5[/System:Color] Play Coins.",
+    "ua": "Для найму потрібно\nщонайменше [System:Color name=\"mgBtl_red\" ]5[/System:Color] монеток."
+  },
+  "Btl_employ_msg_01": {
+    "en": "Before hiring new soldiers,\r\nselect [System:Color name=\"mgBtl_red\" ]Conquer the World[/System:Color]\r\nto greet your existing visitors.",
+    "ua": "Перш ніж наймати солдатів,\nвиберіть [System:Color name=\"mgBtl_red\" ]«Підкорити світ»[/System:Color],\nщоб привітати гостей."
+  },
+  "Btl_employ_msg_02": {
+    "en": "You can hire new soldiers by\r\nspending  Play Coins.",
+    "ua": "Нових солдатів можна наймати\nза монетки ."
+  },
+  "Btl_employ_msg_no": {
+    "en": "Now it would be advisable to \r\nselect [System:Color name=\"mgBtl_red\" ]Conquer the World[/System:Color].",
+    "ua": "Тепер варто вибрати\n[System:Color name=\"mgBtl_red\" ]«Підкорити світ»[/System:Color]."
+  },
+  "Btl_employ_help_00": {
+    "en": "How many soldiers would you like to hire?",
+    "ua": "Скільки солдатів найняти?"
+  },
+  "Btl_employ_help_01": {
+    "en": "You can hire more soldiers if you wish.",
+    "ua": "За бажання можна найняти ще."
+  },
+  "Btl_employ_bt_00": {
+    "en": "[0] soldiers",
+    "ua": "[0] солд."
+  },
+  "Btl_employ_bt_no": {
+    "en": "Back to Title Screen",
+    "ua": "На титульний екран"
+  },
+  "Btl_employ_name": {
+    "en": "Hired Soldiers",
+    "ua": "Наймані солдати"
+  },
+  "Btl_employ_confirm": {
+    "en": "Spend [System:Color name=\"mgBtl_red\" ][0][/System:Color] Play Coins\r\nto hire [System:Color name=\"mgBtl_red\" ][1][/System:Color] soldiers?\r\n[System:Size percent=\"75\" ](Their troop might even be a bit bigger\r\nby the time it arrives at your castle!)[/System:Size]",
+    "ua": "Витратити [System:Color name=\"mgBtl_red\" ][0][/System:Color] монеток,\nщоб найняти [System:Color name=\"mgBtl_red\" ][1][/System:Color] солдатів?\n[System:Size percent=\"75\" ](Поки загін дійде до замку,\nвін може навіть трохи збільшитися!)[/System:Size]"
+  },
+  "Btl_employ_result": {
+    "en": "Hired [System:Color name=\"mgBtl_red\" ][0][/System:Color] soldiers!",
+    "ua": "Найнято солдатів: [System:Color name=\"mgBtl_red\" ][0][/System:Color]!"
+  },
+  "Btl_employ_result_hit": {
+    "en": "Ah, it seems you're in luck!\r\nYou managed to hire more\r\nsoldiers than expected!",
+    "ua": "О, вам пощастило!\nВдалося найняти більше\nсолдатів, ніж очікувалося!"
+  },
+  "Btl_mm_boss_cmn_front": {
+    "en": "You think you can conquer a country so\r\neasily? Bah! Allow me to educate you!",
+    "ua": "Думаєш, так легко завоювати країну?\nХа! Зараз я тебе навчу!"
+  },
+  "Btl_mm_boss_cmn_000": {
+    "en": "Come on, show me what you've got!\r\nI'll knock some sense into you!",
+    "ua": "Ну ж бо, покажи, на що здатен!\nЯ тебе провчу!"
+  },
+  "Btl_mm_boss_cmn_001": {
+    "en": "It will be fun to watch my cavalry\r\ntroops trample all over you!",
+    "ua": "Як весело буде дивитися, як моя\nкіннота тебе розтопче!"
+  },
+  "Btl_mm_boss_cmn_002": {
+    "en": "Hahahah! You won't be so confident\r\nonce you witness my cavalry's might!",
+    "ua": "Ха-ха-ха! Ти втратиш упевненість,\nщойно побачиш міць моєї кінноти!"
+  },
+  "Btl_mm_boss_cmn_003": {
+    "en": "Surrender now, or my cavalry will\r\nshow you the true meaning of pain!",
+    "ua": "Здавайся, або моя кіннота покаже\nтобі, що таке справжній біль!"
+  },
+  "Btl_mm_boss_cmn_004": {
+    "en": "There's something about you that\r\nirritates me. I'll just wipe you out!",
+    "ua": "Щось у тобі мене дратує.\nЯ просто тебе зітру!"
+  },
+  "Btl_mm_boss_cmn_005": {
+    "en": "Let's see how tough you can act with\r\narrows raining down on your head!",
+    "ua": "Побачимо, який ти сміливий,\nколи на тебе посиплються стріли!"
+  },
+  "Btl_mm_boss_cmn_006": {
+    "en": "My mighty archers will cut through\r\nyour defences like paper! Gahahahah!",
+    "ua": "Мої лучники проріжуть твій захист,\nяк папір! Ха-ха-ха-ха!"
+  },
+  "Btl_mm_boss_cmn_007": {
+    "en": "You do not fear my mighty archers?\r\nYou are very brave...or very foolish.",
+    "ua": "Не боїшся моїх лучників?\nТи або сміливий… або дурний."
+  },
+  "Btl_mm_boss_cmn_008": {
+    "en": "I think I'm going to have to\r\nteach you some manners!",
+    "ua": "Схоже, доведеться навчити\nтебе манер!"
+  },
+  "Btl_mm_boss_cmn_009": {
+    "en": "You've angered me greatly. Let's see\r\nhow you like the taste of my spears!",
+    "ua": "Ти мене дуже розлютив. Покуштуй\nмоїх списів!"
+  },
+  "Btl_mm_boss_cmn_010": {
+    "en": "Gahahahah! My infantry's spears will\r\nshatter your hopes in an instant!",
+    "ua": "Ха-ха-ха-ха! Списи моєї піхоти\nвмить розтрощать твої надії!"
+  },
+  "Btl_mm_boss_cmn_011": {
+    "en": "You think you can defeat my elite\r\ninfantry? Hahah... Misguided fool!",
+    "ua": "Думаєш здолати мою елітну\nпіхоту? Ха-ха… Наївний дурень!"
+  },
+  "Btl_mm_boss_cmn_012": {
+    "en": "Ugh, not an invader! I HATE those.\r\nHurry up and lose already, will you?",
+    "ua": "Фу, загарбник! НЕНАВИДЖУ їх.\nПрограй уже швиденько, га?"
+  },
+  "Btl_mm_boss_cmn_014": {
+    "en": "I do not recognise your face, invader!\r\nLet me teach you the taste of defeat!",
+    "ua": "Не впізнаю тебе, загарбнику!\nЗараз покуштуєш поразки!"
+  },
+  "Btl_mm_boss_cmn_05": {
+    "en": "I commend you on making it this far.\r\nCome at me with your [System:Color name=\"mgBtl_red\" ]entire army[/System:Color]!",
+    "ua": "Хвалю, що ти дійшов аж сюди.\nНападай [System:Color name=\"mgBtl_red\" ]усією армією[/System:Color]!"
+  },
+  "Btl_mm_boss_cmn_06": {
+    "en": "Behold my army's unrivalled power!\r\nCrushing you will be all too easy!",
+    "ua": "Узрій незрівнянну міць моєї армії!\nРозчавити тебе буде надто легко!"
+  },
+  "Btl_mm_boss_cmn_07": {
+    "en": "My forces are without weakness!\r\nYou have no hope of defeating us!",
+    "ua": "У моїх військ немає слабких місць!\nТобі нас не здолати!"
+  },
+  "Btl_mm_boss_cmn_war_00": {
+    "en": "I see you are a worthy opponent...\r\nBut I will not go down so easily!",
+    "ua": "Бачу, ти гідний суперник…\nАле я так легко не здамся!"
+  },
+  "Btl_mm_boss_cmn_war_01": {
+    "en": "Gahahahah! You dare to face the\r\nEmperor with such pitiful strength?!",
+    "ua": "Ха-ха-ха-ха! З такою жалюгідною\nсилою — проти імператора?!"
+  },
+  "Btl_mm_boss_cmn_war_02": {
+    "en": "Enough! The time for games is over.\r\nLet me show you my true strength!",
+    "ua": "Досить! Ігри скінчилися.\nЗараз побачиш мою справжню силу!"
+  },
+  "Btl_mm_boss_cmn_war_03": {
+    "en": "Is this proud monarch truly so weak?\r\nI must confess, I am disappointed!",
+    "ua": "Гордий монарх — і такий слабкий?\nЯ розчарований!"
+  },
+  "Btl_mm_boss_cmn_war_04": {
+    "en": "You have angered me, young one.\r\nI will not stand for this insolence!",
+    "ua": "Ти мене розлютив, юначе.\nЯ не терпітиму такого зухвальства!"
+  },
+  "Btl_mm_boss_cmn_war_05": {
+    "en": "Gahahahah! I think it is time you\r\ngave in and accepted defeat!",
+    "ua": "Ха-ха-ха-ха! Гадаю, час тобі\nздатися й визнати поразку!"
+  },
+  "Btl_mm_boss_cmn_war_06": {
+    "en": "Am I...losing?! No! This cannot be!\r\nMy forces can never be defeated!",
+    "ua": "Я… програю?! Ні! Не може бути!\nМої війська непереможні!"
+  },
+  "Btl_mm_boss_cmn_war_07": {
+    "en": "This next clash will be your last.\r\nPrepare to meet your doom!",
+    "ua": "Наступна сутичка стане для тебе\nостанньою. Готуйся до загибелі!"
+  },
+  "Btl_mm_boss_cmn_submit_00": {
+    "en": "Well, a loss is a loss, I suppose.\r\nAll right, you can have this country!",
+    "ua": "Що ж, програв так програв.\nГаразд, бери цю країну!"
+  },
+  "Btl_mm_boss_cmn_submit_01": {
+    "en": "I can't believe I lost! I guess I have\r\nno choice but to give you my country.",
+    "ua": "Не віриться, що я програв! Мабуть,\nдоведеться віддати тобі країну."
+  },
+  "Btl_mm_boss_cmn_submit_02": {
+    "en": "Very well - I know when I am beaten!\r\nThis country belongs to you now!",
+    "ua": "Гаразд — я визнаю поразку!\nТепер ця країна твоя!"
+  },
+  "Btl_mm_boss_cmn_submit_03": {
+    "en": "You have proven your strength...\r\nI surrender this country to you.",
+    "ua": "Ти довів свою силу…\nВіддаю тобі цю країну."
+  },
+  "Btl_mm_boss_cmn_submit_04": {
+    "en": "I didn't think you would be so strong!\r\nMy country will be safe in your hands.",
+    "ua": "Не думав, що ти такий сильний!\nУ твоїх руках країні буде добре."
+  },
+  "Btl_mm_boss_cmn_submit_05": {
+    "en": "Perhaps a ruler with your strength is\r\nprecisely what this country needs...",
+    "ua": "Може, такий сильний правитель\nі потрібен цій країні…"
+  },
+  "Btl_mm_boss_cmn_submit_06": {
+    "en": "I apologise for my rudeness earlier.\r\nPlease take good care of this country.",
+    "ua": "Перепрошую за свою грубість.\nДбай про цю країну."
+  },
+  "Btl_mm_boss_cmn_submit_07": {
+    "en": "You've really impressed me with your\r\nstrength! This country is yours now.",
+    "ua": "Твоя сила мене справді вразила!\nТепер ця країна твоя."
+  },
+  "Btl_mm_boss_cmn_submit_08": {
+    "en": "Even our overwhelming power cannot\r\nstop you?! You truly are amazing!",
+    "ua": "Навіть наша нездоланна сила\nтебе не зупинила?! Ти дивовижний!"
+  },
+  "Btl_mm_boss_cmn_submit_09": {
+    "en": "To think my invincible army could be\r\ndefeated... You are quite the general.",
+    "ua": "Щоб мою непереможну армію\nздолали… Ти чудовий полководець."
+  },
+  "Btl_mm_boss_cmn_submit_10": {
+    "en": "The Emperor cannot fall! I will reclaim\r\nmy kingdom, you mark my words!",
+    "ua": "Імператор не може впасти! Я поверну\nсвоє королівство, запам'ятай!"
+  },
+  "Btl_prologue_telop_00": {
+    "en": "In a world of strife...",
+    "ua": "У світі розбрату…"
+  },
+  "Btl_prologue_telop_01": {
+    "en": "There once lived a monarch\r\nwho ruled over a small country\r\non the edge of the world.",
+    "ua": "Жив колись монарх,\nщо правив маленькою країною\nна краю світу."
+  },
+  "Btl_prologue_cmn_100": {
+    "en": "General [System:Color name=\"mgBtl_dark_green\" ][0][/System:Color]!\r\nWhere are you, my liege?!",
+    "ua": "Полководцю [System:Color name=\"mgBtl_dark_green\" ][0][/System:Color]!\nДе ви, мій володарю?!"
+  },
+  "Btl_prologue_cmn_101": {
+    "en": "Ah, there you are. You always come\r\nhere when you tire of your studies!",
+    "ua": "А, ось ви де. Ви завжди тут,\nколи вам набридає вчитися!"
+  },
+  "Btl_prologue_cmn_102": {
+    "en": "I hope you don't think you can hide\r\nfrom your loyal servant Wentworth!",
+    "ua": "Сподіваюся, ви не думаєте сховатися\nвід вірного слуги Вентворта!"
+  },
+  "Btl_prologue_cmn_103": {
+    "en": "Now, my liege... If I may, I would like\r\nto tell you of my two greatest dreams.",
+    "ua": "Тож, мій володарю… Дозвольте\nрозповісти про дві мої найбільші мрії."
+  },
+  "Btl_prologue_cmn_104": {
+    "en": "Firstly, I dream of a day when you are\r\nloved and admired by all your subjects.",
+    "ua": "По-перше, я мрію, щоб вас\nлюбили й шанували всі піддані."
+  },
+  "Btl_prologue_cmn_105": {
+    "en": "And secondly... It pains me to see your\r\ntalents wasted in this remote kingdom.",
+    "ua": "А по-друге… Шкода, що ваш хист\nмарнується в цьому глухому краю."
+  },
+  "Btl_prologue_cmn_106": {
+    "en": "I long to see the day when the [System:Color name=\"mgBtl_red\" ]entire\r\nworld [/System:Color]is united under your rule!",
+    "ua": "Я мрію дожити до дня, коли [System:Color name=\"mgBtl_red\" ]увесь\nсвіт [/System:Color]об'єднається під вашою владою!"
+  },
+  "Btl_prologue_cmn_107": {
+    "en": "If I may ask, my liege, what kind of\r\nmonarch do you aspire to become?",
+    "ua": "Дозвольте спитати, мій володарю,\nяким монархом ви прагнете стати?"
+  },
+  "Btl_prologue_confirm_00": {
+    "en": "I want to become...",
+    "ua": "Я хочу стати…"
+  },
+  "Btl_prologue_confirm_bt_00": {
+    "en": "A mighty\r\nmonarch!",
+    "ua": "Могутнім\nмонархом!"
+  },
+  "Btl_prologue_confirm_bt_01": {
+    "en": "A famous\r\nmonarch!",
+    "ua": "Відомим\nмонархом!"
+  },
+  "Btl_prologue_cmn_108": {
+    "en": "An admirable goal! And once you rule\r\nthe world, it will surely be fulfilled!",
+    "ua": "Гідна мета! І коли ви правитимете\nсвітом, вона неодмінно здійсниться!"
+  },
+  "Btl_prologue_cmn_109": {
+    "en": "So... Let us ask ourselves how we\r\ncan accomplish that goal.",
+    "ua": "Тож… Поміркуймо, як\nдосягти цієї мети."
+  },
+  "Btl_prologue_cmn_110": {
+    "en": "First, I think, we must build a [System:Color name=\"mgBtl_red\" ]castle[/System:Color]!\r\nA castle to hold your conquering army!",
+    "ua": "Спершу, гадаю, збудуймо [System:Color name=\"mgBtl_red\" ]замок[/System:Color]!\nЗамок для вашої армії!"
+  },
+  "Btl_prologue_cmn_111": {
+    "en": "You have always wanted a mighty\r\ncastle of your own, yes?",
+    "ua": "Ви ж завжди хотіли власний\nмогутній замок, так?"
+  },
+  "Btl_prologue_confirm_01": {
+    "en": "A castle?\r\nA castle of my very own?!",
+    "ua": "Замок?\nМій власний замок?!"
+  },
+  "Btl_prologue_confirm_bt_02": {
+    "en": "I love\r\ncastles!",
+    "ua": "Обожнюю\nзамки!"
+  },
+  "Btl_prologue_confirm_bt_03": {
+    "en": "Build it\r\nat once!",
+    "ua": "Будуймо\nнегайно!"
+  },
+  "Btl_prologue_cmn_bt_02": {
+    "en": "Wonderful! To tell the truth, I have\r\nsummoned your craftsmen already.",
+    "ua": "Чудово! Правду кажучи, я вже\nскликав ваших майстрів."
+  },
+  "Btl_prologue_cmn_bt_03": {
+    "en": "Very well! Your craftsmen are ready\r\nto begin building immediately.",
+    "ua": "Гаразд! Ваші майстри готові\nнегайно почати будівництво."
+  },
+  "Btl_prologue_cmn_112": {
+    "en": "There is but one question remaining...\r\nWhat kind of castle should we build?",
+    "ua": "Лишилося одне питання…\nЯкий замок будуватимемо?"
+  },
+  "Btl_prologue_cmn_003": {
+    "en": "I'd better think about this carefully...\r\nThis is a once-in-a-lifetime decision!",
+    "ua": "Треба добре подумати…\nТаке рішення — раз на життя!"
+  },
+  "Btl_prologue_cmn_004": {
+    "en": "Okay, I've decided!\r\nBuild me a castle that looks like this!",
+    "ua": "Гаразд, вирішено!\nЗбудуйте мені ось такий замок!"
+  },
+  "Btl_prologue_cmn_113": {
+    "en": "Oh, yes! It's perfect, just perfect!\r\nExcellent work, craftsmen!",
+    "ua": "О, так! Ідеально, просто ідеально!\nЧудова робота, майстри!"
+  },
+  "Btl_prologue_cmn_114": {
+    "en": "Now all that remains is to dress\r\nyourself in the appropriate royal garb.",
+    "ua": "Лишилося тільки вбратися\nв гідне королівське вбрання."
+  },
+  "Btl_prologue_cmn_115": {
+    "en": "I feel ready to take on the world!\r\nLet's get conquering!",
+    "ua": "Тепер можна й підкорювати світ!\nУперед, до завоювань!"
+  },
+  "Btl_prologue_cmn_116": {
+    "en": "...Oh, but there's still one problem.\r\nI don't have an army!",
+    "ua": "…Ой, але є ще одна проблема.\nУ мене немає армії!"
+  },
+  "Btl_prologue_cmn_117": {
+    "en": "Fear not, my liege.\r\nI have just the solution...",
+    "ua": "Не бійтеся, мій володарю.\nУ мене є рішення…"
+  },
+  "Btl_prologue_cmn_118": {
+    "en": "We can gather soldiers for your army\r\nthrough the power of [System:Color name=\"mgBtl_red\" ]StreetPass[/System:Color]!",
+    "ua": "Солдатів для армії можна зібрати\nзавдяки силі [System:Color name=\"mgBtl_red\" ]StreetPass[/System:Color]!"
+  },
+  "Btl_prologue_cmn_119": {
+    "en": "But just to get you started, I will\r\ngather a small force for you myself!",
+    "ua": "А для початку я сам зберу\nдля вас невеликий загін!"
+  },
+  "Btl_prologue_cmn_120": {
+    "en": "Wow, thanks! You really do think of\r\neverything, Wentworth.",
+    "ua": "Ого, дякую! Ти справді все\nпередбачаєш, Вентворте."
+  },
+  "Btl_prologue_cmn_121": {
+    "en": "I'll build it up into the biggest army\r\nanyone has ever seen...",
+    "ua": "Зроблю з неї найбільшу армію,\nяку будь-хто бачив…"
+  },
+  "Btl_prologue_cmn_122": {
+    "en": "And with that army,\r\nI'll [System:Color name=\"mgBtl_red\" ]conquer the world[/System:Color]!",
+    "ua": "І з цією армією\n[System:Color name=\"mgBtl_red\" ]підкорю світ[/System:Color]!"
+  },
+  "Btl_ending_cmn_000": {
+    "en": "I did it! I really did it!\r\nI'm the ruler of the whole world!",
+    "ua": "Вийшло! Справді вийшло!\nУвесь світ під моєю владою!"
+  },
+  "Btl_ending_cmn_001": {
+    "en": "The day I always dreamed of\r\nis finally here!",
+    "ua": "Нарешті настав\nдень моєї мрії!"
+  },
+  "Btl_ending_cmn_002": {
+    "en": "Wentworth! Wentworth!\r\nCan you believe this is happening?!",
+    "ua": "Вентворте! Вентворте!\nТи віриш, що це насправді?!"
+  },
+  "Btl_ending_cmn_003": {
+    "en": "I worked extra hard because I knew\r\nthis was your dream too!",
+    "ua": "Усі мої зусилля —\nі заради твоєї мрії!"
+  },
+  "Btl_ending_cmn_004": {
+    "en": "Congratulations, my liege!\r\nI always believed you could do it!",
+    "ua": "Вітаю, мій володарю!\nЯ завжди вірив, що ви зможете!"
+  },
+  "Btl_ending_cmn_005": {
+    "en": "Why, I can still remember when it was\r\njust the two of us standing in a field...",
+    "ua": "Я досі пам'ятаю, як ми вдвох\nстояли посеред поля…"
+  },
+  "Btl_ending_cmn_006": {
+    "en": "Since that day, you've met so many\r\npeople and fought so many battles.",
+    "ua": "Відтоді ви зустріли стільки людей\nі провели стільки битв."
+  },
+  "Btl_ending_cmn_007": {
+    "en": "And just look around you now!",
+    "ua": "А тепер погляньте довкола!"
+  },
+  "Btl_ending_cmn_008": {
+    "en": "You have allies as far as the eye\r\ncan see!",
+    "ua": "Союзники всюди, куди\nсягає око!"
+  },
+  "Btl_ending_cmn_009": {
+    "en": "There can be no doubt that all your\r\nsubjects look up to you with pride!",
+    "ua": "Без сумніву, всі піддані дивляться\nна вас із гордістю!"
+  },
+  "Btl_ending_cmn_010": {
+    "en": "To think that I would see both of my\r\ngreatest dreams come true at once!",
+    "ua": "Обидві мої найбільші мрії\nздійснилися водночас!"
+  },
+  "Btl_ending_cmn_011": {
+    "en": "Yet I fear that your true battle\r\nmay have only just begun...",
+    "ua": "Та боюся, справжня ваша битва\nтільки починається…"
+  },
+  "Btl_ending_cmn_012": {
+    "en": "Now you must strive to be a righteous\r\nmonarch, worthy of your people's trust!",
+    "ua": "Тепер ви маєте стати справедливим\nмонархом, гідним довіри народу!"
+  },
+  "Btl_ending_cmn_013": {
+    "en": "Right - and that's just what\r\nI'll do! You can bet on it!",
+    "ua": "Так — саме так я й зроблю!\nМожеш не сумніватися!"
+  },
+  "Btl_ending_telop_00": {
+    "en": "[0] soldiers!",
+    "ua": "[0] солдатів!"
+  },
+  "Btl_prologue_telop_10": {
+    "en": "In this world of strife,\r\nnothing lasts forever...",
+    "ua": "У цьому світі розбрату\nніщо не вічне…"
+  },
+  "Btl_prologue_telop_11": {
+    "en": "As suddenly as the world can be won,\r\nso too can it be lost.",
+    "ua": "Світ легко завоювати —\nі так само легко втратити."
+  },
+  "Btl_prologue_telop_12": {
+    "en": "And sure enough...",
+    "ua": "І так і сталося…"
+  },
+  "Btl_prologue_telop_13": {
+    "en": "One day, by a cruel twist of fate,\r\nthe [0] Kingdom\r\nfound itself once more in control of\r\nnothing but a [System:Color name=\"mgBtl_red\" ]single small country[/System:Color]!",
+    "ua": "Одного дня з волі жорстокої долі\nкоролівство [0]\nзнову володіло лише\n[System:Color name=\"mgBtl_red\" ]однією маленькою країною[/System:Color]!"
+  },
+  "Btl_prologue_cmn_200": {
+    "en": "I can't believe it!\r\nAll that work...for nothing?!",
+    "ua": "Не може бути!\nСтільки праці… і все дарма?!"
+  },
+  "Btl_prologue_cmn_201": {
+    "en": "General [System:Color name=\"mgBtl_dark_green\" ][0][/System:Color]!\r\nYou cannot lose heart so easily!",
+    "ua": "Полководцю [System:Color name=\"mgBtl_dark_green\" ][0][/System:Color]!\nНе можна так легко падати духом!"
+  },
+  "Btl_prologue_cmn_202": {
+    "en": "Have you forgotten all the allies\r\nthat still stand by your side?!",
+    "ua": "Невже ви забули про союзників,\nякі досі на вашому боці?!"
+  },
+  "Btl_prologue_cmn_203": {
+    "en": "Let us set out to [System:Color name=\"mgBtl_red\" ]conquer the world[/System:Color]\r\nonce more!",
+    "ua": "Вирушаймо знову\n[System:Color name=\"mgBtl_red\" ]підкорювати світ[/System:Color]!"
+  },
+  "Btl_prologue_cmn_204": {
+    "en": "You're right. I can't just sit back\r\nand accept this fate...",
+    "ua": "Твоя правда. Не можна просто\nсидіти й миритися з долею…"
+  },
+  "Btl_prologue_cmn_205": {
+    "en": "If the world has slipped through our\r\nfingers, let's go and take it back!",
+    "ua": "Якщо світ вислизнув із рук,\nходімо й повернімо його!"
+  },
+  "Btl_credits_title_top": {
+    "en": "STAFF CREDITS",
+    "ua": "ТИТРИ"
+  },
+  "Btl_credits_title_00": {
+    "en": "Director",
+    "ua": "Режисер"
+  },
+  "Btl_credits_title_01": {
+    "en": "Program Director",
+    "ua": "Керівник програмування"
+  },
+  "Btl_credits_title_02": {
+    "en": "Programming",
+    "ua": "Програмування"
+  },
+  "Btl_credits_title_03": {
+    "en": "3D Design Director",
+    "ua": "Керівник 3D-дизайну"
+  },
+  "Btl_credits_title_04": {
+    "en": "Modeling",
+    "ua": "Моделювання"
+  },
+  "Btl_credits_title_05": {
+    "en": "Character Animation",
+    "ua": "Анімація персонажів"
+  },
+  "Btl_credits_title_06": {
+    "en": "Effects Design",
+    "ua": "Дизайн ефектів"
+  },
+  "Btl_credits_title_08": {
+    "en": "Graphic Design",
+    "ua": "Графічний дизайн"
+  },
+  "Btl_credits_title_09": {
+    "en": "Music & Sound Effects",
+    "ua": "Музика й звукові ефекти"
+  },
+  "Btl_credits_title_10": {
+    "en": "System Director",
+    "ua": "Керівник системи"
+  },
+  "Btl_credits_title_11": {
+    "en": "Project Management",
+    "ua": "Керування проєктом"
+  },
+  "Btl_credits_title_12": {
+    "en": "Producer",
+    "ua": "Продюсер"
+  },
+  "Btl_credits_title_100": {
+    "en": "Producer",
+    "ua": "Продюсер"
+  },
+  "Btl_credits_title_101": {
+    "en": "Associate Producers",
+    "ua": "Асоційовані продюсери"
+  },
+  "Btl_credits_title_102": {
+    "en": "Director",
+    "ua": "Режисер"
+  },
+  "Btl_credits_title_103": {
+    "en": "Coordination",
+    "ua": "Координація"
+  },
+  "Btl_credits_title_104": {
+    "en": "Graphic Supervisors",
+    "ua": "Графічні супервайзери"
+  },
+  "Btl_credits_title_105": {
+    "en": "Sound Director",
+    "ua": "Звукорежисер"
+  },
+  "Btl_credits_title_106": {
+    "en": "Sound Program Support",
+    "ua": "Підтримка звукової програми"
+  },
+  "Btl_credits_title_107": {
+    "en": "Sound Coordination",
+    "ua": "Координація звуку"
+  },
+  "Btl_credits_title_108": {
+    "en": "Debug",
+    "ua": "Налагодження"
+  },
+  "Btl_credits_title_109": {
+    "en": "European Localisation",
+    "ua": "Європейська локалізація"
+  },
+  "Btl_credits_title_110": {
+    "en": "North American Localization",
+    "ua": "Північноамериканська локалізація"
+  },
+  "Btl_credits_title_111": {
+    "en": "Special Thanks",
+    "ua": "Особлива подяка"
+  },
+  "Btl_credits_title_112": {
+    "en": "General Producer",
+    "ua": "Генеральний продюсер"
+  },
+  "Btl_credits_title_113": {
+    "en": "Executive Producer",
+    "ua": "Виконавчий продюсер"
+  },
+  "Btl_credits_title_114": {
+    "en": "Technical Support",
+    "ua": "Технічна підтримка"
+  },
+  "Btl_credits_name_00": {
+    "en": "Kazuhisa Watanabe",
+    "ua": ""
+  },
+  "Btl_credits_name_01": {
+    "en": "Shinsuke Miyamoto",
+    "ua": ""
+  },
+  "Btl_credits_name_02": {
+    "en": "Shin Sugiura",
+    "ua": ""
+  },
+  "Btl_credits_name_03": {
+    "en": "Ryota Wanibe",
+    "ua": ""
+  },
+  "Btl_credits_name_04": {
+    "en": "Kunikatsu Tachi",
+    "ua": ""
+  },
+  "Btl_credits_name_05": {
+    "en": "Keisuke Sakurai",
+    "ua": ""
+  },
+  "Btl_credits_name_06": {
+    "en": "Takashi Tanaka",
+    "ua": ""
+  },
+  "Btl_credits_name_07": {
+    "en": "Akihiro Tamaki",
+    "ua": ""
+  },
+  "Btl_credits_name_08": {
+    "en": "Kunihiro Horio",
+    "ua": ""
+  },
+  "Btl_credits_name_09": {
+    "en": "Mitsuhiro Kasuya",
+    "ua": ""
+  },
+  "Btl_credits_name_10": {
+    "en": "Hiromi Yoshida",
+    "ua": ""
+  },
+  "Btl_credits_name_11": {
+    "en": "Miyuki Kato",
+    "ua": ""
+  },
+  "Btl_credits_name_12": {
+    "en": "Katsumi Yokokawa",
+    "ua": ""
+  },
+  "Btl_credits_name_13": {
+    "en": "Tokihiro Naito",
+    "ua": ""
+  },
+  "Btl_credits_name_14": {
+    "en": "Masashi Hirose",
+    "ua": ""
+  },
+  "Btl_credits_name_15": {
+    "en": "Yuichi Mizobe",
+    "ua": ""
+  },
+  "Btl_credits_name_100": {
+    "en": "Kouichi Kawamoto",
+    "ua": ""
+  },
+  "Btl_credits_name_101": {
+    "en": "Toyokazu Nonaka",
+    "ua": ""
+  },
+  "Btl_credits_name_102": {
+    "en": "Ryusuke Niitani",
+    "ua": ""
+  },
+  "Btl_credits_name_103": {
+    "en": "Takehiko Hosokawa",
+    "ua": ""
+  },
+  "Btl_credits_name_104": {
+    "en": "Masahiro Shiotani",
+    "ua": ""
+  },
+  "Btl_credits_name_105": {
+    "en": "Yo Ohnishi ",
+    "ua": ""
+  },
+  "Btl_credits_name_106": {
+    "en": "Akiko Kato",
+    "ua": ""
+  },
+  "Btl_credits_name_107": {
+    "en": "Tsuyoshi Watanabe",
+    "ua": ""
+  },
+  "Btl_credits_name_108": {
+    "en": "Kenji Yamamoto",
+    "ua": ""
+  },
+  "Btl_credits_name_109": {
+    "en": "Yuichi Ozaki",
+    "ua": ""
+  },
+  "Btl_credits_name_110": {
+    "en": "Minako Hamano",
+    "ua": ""
+  },
+  "Btl_credits_name_111": {
+    "en": "Mario Club",
+    "ua": ""
+  },
+  "Btl_credits_name_112": {
+    "en": "NOA Product Testing",
+    "ua": ""
+  },
+  "Btl_credits_name_113": {
+    "en": "NOE Quality Assurance",
+    "ua": ""
+  },
+  "Btl_credits_name_114": {
+    "en": "NOE Localisation",
+    "ua": ""
+  },
+  "Btl_credits_name_115": {
+    "en": "NOA Localization",
+    "ua": ""
+  },
+  "Btl_credits_name_116": {
+    "en": "StreetPass Mii Plaza Team",
+    "ua": ""
+  },
+  "Btl_credits_name_117": {
+    "en": "Shinya Takahashi",
+    "ua": ""
+  },
+  "Btl_credits_name_118": {
+    "en": "Satoru Iwata",
+    "ua": ""
+  },
+  "Btl_credits_name_119": {
+    "en": "Shingo Okamoto",
+    "ua": ""
+  },
+  "Btl_credits_developer": {
+    "en": "Developer\r\nSpike Chunsoft Co., Ltd.",
+    "ua": "Розробник\nSpike Chunsoft Co., Ltd."
+  },
+  "Btl_credits_corporate": {
+    "en": "Nintendo",
+    "ua": "Nintendo"
+  },
+  "Btl_credits_copyright": {
+    "en": "Nintendo and Spike Chunsoft are the authors\r\nof this software for the purpose of copyright. \r\nAll rights reserved.\r\n© 2013 Nintendo.",
+    "ua": "Nintendo і Spike Chunsoft є авторами\nцієї програми з погляду авторського права.\nУсі права захищено.\n© 2013 Nintendo."
+  }
+}

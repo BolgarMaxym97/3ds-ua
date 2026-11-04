@@ -1,0 +1,274 @@
+{
+  "card_first_dog_cat_u": {
+    "en": "Which do you like\r\nbetter, dogs or cats?",
+    "ua": "Хто вам миліший:\nсобаки чи коти?"
+  },
+  "prof_dog": {
+    "en": "Dogs",
+    "ua": "Собаки"
+  },
+  "prof_dog_small": {
+    "en": "Dogs",
+    "ua": "Собаки"
+  },
+  "prof_cat": {
+    "en": "Cats",
+    "ua": "Коти"
+  },
+  "prof_cat_small": {
+    "en": "Cats",
+    "ua": "Коти"
+  },
+  "prof_neither": {
+    "en": "(Other)",
+    "ua": "(Інше)"
+  },
+  "prof_neither_small": {
+    "en": "(Other)",
+    "ua": "(Інше)"
+  },
+  "prof_etc": {
+    "en": "(Other)",
+    "ua": "(Інше)"
+  },
+  "prof_secret": {
+    "en": "(Secret)",
+    "ua": "(Таємниця)"
+  },
+  "prof_dream_long": {
+    "en": "Live long",
+    "ua": "Довго жити"
+  },
+  "prof_dream_long_f": {
+    "en": "Live long",
+    "ua": "Довго жити"
+  },
+  "prof_dream_rich": {
+    "en": "Get rich",
+    "ua": "Розбагатіти"
+  },
+  "prof_dream_rich_f": {
+    "en": "Get rich",
+    "ua": "Розбагатіти"
+  },
+  "prof_dream_space": {
+    "en": "Visit outer space",
+    "ua": "Полетіти в космос"
+  },
+  "prof_dream_space_f": {
+    "en": "Visit outer space",
+    "ua": "Полетіти в космос"
+  },
+  "prof_dream_marry": {
+    "en": "Get married",
+    "ua": "Одружитися"
+  },
+  "prof_dream_marry_f": {
+    "en": "Get married",
+    "ua": "Вийти заміж"
+  },
+  "prof_dream_hero": {
+    "en": "Be a hero",
+    "ua": "Стати героєм"
+  },
+  "prof_dream_hero_f": {
+    "en": "Be a hero",
+    "ua": "Стати героїнею"
+  },
+  "prof_dream_princess": {
+    "en": "Be a prince",
+    "ua": "Стати принцом"
+  },
+  "prof_dream_princess_f": {
+    "en": "Be a princess",
+    "ua": "Стати принцесою"
+  },
+  "prof_dream_sports": {
+    "en": "Be a pro athlete",
+    "ua": "Стати профі в спорті"
+  },
+  "prof_dream_sports_f": {
+    "en": "Be a pro athlete",
+    "ua": "Стати профі в спорті"
+  },
+  "prof_dream_magic": {
+    "en": "Be a wizard",
+    "ua": "Стати чарівником"
+  },
+  "prof_dream_magic_f": {
+    "en": "Be a witch",
+    "ua": "Стати чаклункою"
+  },
+  "prof_dream_president": {
+    "en": "Run a company",
+    "ua": "Керувати компанією"
+  },
+  "prof_dream_president_f": {
+    "en": "Run a company",
+    "ua": "Керувати компанією"
+  },
+  "prof_dream_champ": {
+    "en": "Be a world champion",
+    "ua": "Стати чемпіоном світу"
+  },
+  "prof_dream_champ_f": {
+    "en": "Be a world champion",
+    "ua": "Стати чемпіонкою світу"
+  },
+  "prof_dream_star": {
+    "en": "Be a celebrity",
+    "ua": "Стати знаменитістю"
+  },
+  "prof_dream_star_f": {
+    "en": "Be a celebrity",
+    "ua": "Стати знаменитістю"
+  },
+  "prof_dream_love": {
+    "en": "Be popular",
+    "ua": "Бути популярним"
+  },
+  "prof_dream_love_f": {
+    "en": "Be popular",
+    "ua": "Бути популярною"
+  },
+  "prof_dream_big": {
+    "en": "Grow up",
+    "ua": "Вирости"
+  },
+  "prof_dream_big_f": {
+    "en": "Grow up",
+    "ua": "Вирости"
+  },
+  "prof_dream_fly": {
+    "en": "Fly like a bird",
+    "ua": "Літати, як птах"
+  },
+  "prof_dream_fly_f": {
+    "en": "Fly like a bird",
+    "ua": "Літати, як птах"
+  },
+  "prof_dream_master": {
+    "en": "Master an art",
+    "ua": "Осягнути мистецтво"
+  },
+  "prof_dream_master_f": {
+    "en": "Master an art",
+    "ua": "Осягнути мистецтво"
+  },
+  "prof_dream_nice": {
+    "en": "Get fit",
+    "ua": "Бути у формі"
+  },
+  "prof_dream_nice_f": {
+    "en": "Get fit",
+    "ua": "Бути у формі"
+  },
+  "prof_dream_supernatural": {
+    "en": "Gain super powers",
+    "ua": "Здобути суперсилу"
+  },
+  "prof_dream_supernatural_f": {
+    "en": "Gain super powers",
+    "ua": "Здобути суперсилу"
+  },
+  "prof_hobby_drow": {
+    "en": "Drawing",
+    "ua": "Малювання"
+  },
+  "prof_hobby_sports": {
+    "en": "Playing sports",
+    "ua": "Спорт"
+  },
+  "prof_hobby_book": {
+    "en": "Reading",
+    "ua": "Читання"
+  },
+  "prof_hobby_camera": {
+    "en": "Taking photos",
+    "ua": "Фотографія"
+  },
+  "prof_hobby_pet": {
+    "en": "Keeping pets",
+    "ua": "Тварини вдома"
+  },
+  "prof_hobby_dance": {
+    "en": "Dancing",
+    "ua": "Танці"
+  },
+  "prof_hobby_music": {
+    "en": "Listening to music",
+    "ua": "Музика"
+  },
+  "prof_hobby_movie": {
+    "en": "Watching films",
+    "ua": "Фільми"
+  },
+  "prof_hobby_in": {
+    "en": "Using the internet",
+    "ua": "Інтернет"
+  },
+  "prof_hobby_game": {
+    "en": "Video games",
+    "ua": "Відеоігри"
+  },
+  "prof_hobby_cook": {
+    "en": "Cooking",
+    "ua": "Кухарство"
+  },
+  "prof_hobby_travel": {
+    "en": "Travelling",
+    "ua": "Подорожі"
+  },
+  "prof_hobby_out": {
+    "en": "The outdoors",
+    "ua": "Природа"
+  },
+  "prof_hobby_fish": {
+    "en": "Fishing",
+    "ua": "Риболовля"
+  },
+  "prof_hobby_drive": {
+    "en": "Going for drives",
+    "ua": "Поїздки машиною"
+  },
+  "prof_hobby_shop": {
+    "en": "Shopping",
+    "ua": "Закупи"
+  },
+  "prof_hobby_eat": {
+    "en": "Eating",
+    "ua": "Їжа"
+  },
+  "prof_hobby_sleep": {
+    "en": "Sleeping",
+    "ua": "Сон"
+  },
+  "prof_hobby_talk": {
+    "en": "Chatting",
+    "ua": "Балачки"
+  },
+  "prof_hobby_dressup": {
+    "en": "Fashion",
+    "ua": "Мода"
+  },
+  "prof_hobby_study": {
+    "en": "Studying",
+    "ua": "Навчання"
+  },
+  "prof_hobby_help": {
+    "en": "Helping others",
+    "ua": "Допомога іншим"
+  },
+  "prof_hobby_party": {
+    "en": "Parties",
+    "ua": "Вечірки"
+  },
+  "prof_hobby_money": {
+    "en": "Making money",
+    "ua": "Заробіток"
+  },
+  "prof_hobby_cleaning": {
+    "en": "Cleaning",
+    "ua": "Прибирання"
+  }
+}

@@ -137,6 +137,28 @@
 | rating / "fantastic" | оцінка / «чудово» |
 | extra data | додаткові дані |
 
+Ігри оновлення Площі (v14.7.0, `mii_plaza_update`) — за схемою «X StreetPass», як в
+офіційній російській локалізації:
+
+| Оригінал (en) | Українською |
+|---|---|
+| StreetPass Squad / Galaxy | Галактика StreetPass |
+| StreetPass Garden | Сад StreetPass |
+| StreetPass Battle | Фортеця StreetPass |
+| StreetPass Mansion | Таємничий маєток StreetPass |
+| StreetPass Fishing | Риболовля StreetPass |
+| StreetPass Zombies | Зомбі StreetPass |
+| StreetPass Trader | Біржа StreetPass |
+| StreetPass Slot Racer | Слот-перегони StreetPass |
+| StreetPass Explorers | Експедиція StreetPass |
+| StreetPass Ninja | Ніндзя StreetPass |
+| StreetPass Chef | Ресторан StreetPass |
+| StreetPass Birthdays | Календар StreetPass |
+| StreetPass Rankings | Рейтинг StreetPass |
+| StreetPass Mii Plaza Premium | Преміум-площа StreetPass Mii |
+| X Bubble | Вікно X |
+| plaza ticket | квиток Площі |
+
 Суфікси міток розрізняють мовця: `_prin` — принц (чоловічий рід), `_pris` — принцеса
 (жіночий), без суфікса — володар. Так само `_m`/`_f` у репліках Mii. Там, де фраза
 теперішнього часу, обидва варіанти збігаються — це нормально.

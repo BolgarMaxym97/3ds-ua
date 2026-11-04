@@ -9,6 +9,8 @@ Three layouts appear in 3DS system titles:
   container    romfs/<file>  -> LZ11 -> darc -> <dir>/<LANG>/<file>.msbt   System Settings
   per-language romfs/message/<LANG>.arc -> LZ11 -> darc -> <file>.msbt     Mii Maker
                romfs/msg/<LANG>.LZ -> LZ11 -> flat archive -> <file>.msbt  Camera, Sound
+  bmsm         romfs/message/<LANG>/message/<group>/<file>.bmsm            StreetPass Mii Plaza
+               (not MSBT at all: tables of tools/bmsm.py, `format: bmsm`)    update
 
 The per-language archive comes in two formats, told apart by the `darc` magic: the darc
 of Mii Maker and the header-less flat table of Camera and Sound (see tools/msgarc.py).
@@ -16,7 +18,7 @@ of Mii Maker and the header-less flat table of Camera and Sound (see tools/msgar
 A store hides that difference behind three calls:
 
     store.languages()                  -> ["EU_English", "EU_Russian", ...]
-    store.read(lang)                   -> {key: raw MSBT bytes}
+    store.read(lang)                   -> {key: raw MSBT bytes} (.bmsm bytes for BmsmStore)
     store.outputs(lang, {key: bytes})  -> {romfs-relative path: file bytes}
 
 `key` matches the JSON file name in src/strings/<title>/ (`<message_dir>__<file_stem>`),
@@ -37,6 +39,8 @@ MSBT_MAGIC = b"MsgStdBn"
 
 
 def open_store(cfg: dict, romfs: Path) -> Store:
+    if cfg.get("format") == "bmsm":
+        return BmsmStore(romfs)
     lang_files = cfg.get("lang_files")
     if lang_files is not None:
         return ByFilenameStore(romfs, lang_files)
@@ -243,3 +247,30 @@ class PerLanguageStore(Store):
 
     def _path(self, lang: str) -> Path:
         return self.romfs / self.template.format(lang=lang)
+
+
+class BmsmStore(Store):
+    """The StreetPass Mii Plaza update: romfs/message/<LANG>/message/<group>/<file>.bmsm.
+
+    `group` is park, minigame or system; the key is `<group>__<file>`, so park/hat_shop.bmsm
+    is src/strings/<title>/park__hat_shop.json.
+    """
+
+    def __init__(self, romfs: Path) -> None:
+        self.root = romfs / "message"
+
+    def _files(self, lang: str) -> dict[str, Path]:
+        return {f"{p.parent.name}__{p.stem}": p for p in sorted((self.root / lang / "message").glob("*/*.bmsm"))}
+
+    def languages(self) -> list[str]:
+        return sorted(p.name for p in self.root.iterdir() if p.is_dir())
+
+    def read(self, lang: str) -> dict[str, bytes]:
+        return {key: path.read_bytes() for key, path in self._files(lang).items()}
+
+    def outputs(self, lang: str, updates: dict[str, bytes]) -> dict[str, bytes]:
+        return {
+            str(path.relative_to(self.root.parent)): updates[key]
+            for key, path in self._files(lang).items()
+            if key in updates
+        }

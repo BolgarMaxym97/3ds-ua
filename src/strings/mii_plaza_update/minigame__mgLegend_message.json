@@ -1,0 +1,1758 @@
+{
+  "msg_legend2_op01_u": {
+    "en": "We welcome you heartily\r\nto StreetPass Quest!",
+    "ua": "Щиро вітаємо вас\nу «Порятунку Mii»!"
+  },
+  "msg_legend2_op02_u": {
+    "en": "...Who's \"we\"? Why, it's\r\nthe royal \"we\". That's me!",
+    "ua": "…Хто це «ми»? Та це ж я,\nяк і належить володареві!"
+  },
+  "msg_legend2_op03_u": {
+    "en": "I am [0], the ruler\r\nof this land! It's not a bad gig.",
+    "ua": "Я [0], володар\nцього краю! Непогана посада."
+  },
+  "msg_legend2_op04_u": {
+    "en": "That's another day of reigning done\r\nwith. Yawn... I'm royally beat!",
+    "ua": "Ще один день правління позаду.\nОй… Я по-королівськи втомився!"
+  },
+  "msg_legend2_op05_u": {
+    "en": "Time for a snooze, I think...\r\nA sovereignly slumber, in fact!",
+    "ua": "Час подрімати…\nПо-монаршому, авжеж!"
+  },
+  "msg_legend2_op06_u": {
+    "en": "That was a good one... Hee-hee...\r\nZzz...zzz...zzz...",
+    "ua": "Оце сон… Хі-хі…\nХррр…хррр…хррр…"
+  },
+  "msg_legend2_op07_u": {
+    "en": "*KACHUNK!*",
+    "ua": "*ГУП!*"
+  },
+  "msg_legend2_op08_u": {
+    "en": "HARRUMPH! Who goes there?!\r\nI command you to answer me!",
+    "ua": "КХМ! Хто там?!\nНаказую відповідати!"
+  },
+  "msg_legend2_op09_u": {
+    "en": "Wh-what's happening? This is an\r\noutrage! How... HOW DARE YOU!",
+    "ua": "Щ-що коїться? Це нечувано!\nЯк… ЯК ВИ СМІЄТЕ!"
+  },
+  "msg_legend2_op16_u": {
+    "en": "Gasp! Great golden goblets!\r\nWhat is the meaning of this?!",
+    "ua": "Ох! Кубки мої золоті!\nЩо все це означає?!"
+  },
+  "msg_legend2_op10_u": {
+    "en": "What?! Where... Where am I?",
+    "ua": "Що?! Де… Де я?"
+  },
+  "msg_legend2_op11_u": {
+    "en": "Well, ruffle my royal robes! It seems\r\nthat I have been kidnapped.",
+    "ua": "Ох, шати мої королівські! Схоже,\nмене викрали."
+  },
+  "msg_legend2_op12_u": {
+    "en": "I'll have to wait for some heroes.\r\nThat's how these stories go, right?",
+    "ua": "Доведеться чекати на героїв.\nАдже так буває в цих історіях?"
+  },
+  "msg_legend2_op13_u": {
+    "en": "Can you help me out? Gather\r\nheroes using StreetPass...",
+    "ua": "Допоможете мені? Збирайте\nгероїв через StreetPass…"
+  },
+  "msg_legend2_op14_u": {
+    "en": "and choose Venture Forth, if you\r\ndon't mind. I would appreciate it!",
+    "ua": "і виберіть «У путь», якщо ваша\nласка. Буду дуже вдячний!"
+  },
+  "msg_legend2_op15_u": {
+    "en": "Hurry, now! I'll be waiting here. This\r\nthing is locked, so I've no choice...",
+    "ua": "Хутчіш! Я чекатиму тут. Замок\nзачинено, тож вибору я не маю…"
+  },
+  "msg_legend2_op21_u": {
+    "en": "(Regal Ruler, Sovereign of All)\r\nAh! What a pleasant morning.",
+    "ua": "(Володар, повелитель усього)\nА! Яка гарна днина."
+  },
+  "msg_legend2_op22_u": {
+    "en": "I mustn't keep my kingdom waiting.\r\nA busy day of regal ruling awaits!",
+    "ua": "Не годиться змушувати\nкоролівство чекати!"
+  },
+  "msg_legend2_op24_u": {
+    "en": "(Prince, Son of the Sovereign)\r\nMorning!",
+    "ua": "(Принц, син володаря)\nДоброго ранку!"
+  },
+  "msg_legend2_op25_u": {
+    "en": "Today, I'm going to help some of\r\nthe local peasants in the fields!",
+    "ua": "Сьогодні я допомагатиму\nселянам у полі!"
+  },
+  "msg_legend2_op30_u": {
+    "en": "(Princess, Daughter of the Dynasty)\r\nGood morning!",
+    "ua": "(Принцеса, донька династії)\nДоброго ранку!"
+  },
+  "msg_legend2_op31_u": {
+    "en": "I'm going to go and help tutor\r\nthe children in town!",
+    "ua": "А я піду допомагати\nвчити дітей у місті!"
+  },
+  "msg_legend2_op32_u": {
+    "en": "It brings joy to my heart to see you\r\nboth well, O prince and princess!",
+    "ua": "Серце радіє бачити вас у доброму\nздоров'ї, принце й принцесо!"
+  },
+  "msg_legend2_op33_u": {
+    "en": "My goodness, now that we're all in\r\none place again, I have to say...",
+    "ua": "Ох, тепер, коли ми знову\nразом, мушу сказати…"
+  },
+  "msg_legend2_op34_u": {
+    "en": "We do share a rather strong family\r\nresemblance, don't we?",
+    "ua": "А ми таки дуже схожі,\nчи не так?"
+  },
+  "msg_legend2_op38_u": {
+    "en": "(Prince)\r\nWh-what's going on?!",
+    "ua": "(Принц)\nЩ-що коїться?!"
+  },
+  "msg_legend2_op39_u": {
+    "en": "(Princess)\r\nEek! What are they doing?!",
+    "ua": "(Принцеса)\nОй! Що вони роблять?!"
+  },
+  "msg_legend2_op43_u": {
+    "en": "(Regal Ruler)\r\nIs... Is everyone alright?",
+    "ua": "(Володар)\nВи… Ви всі цілі?"
+  },
+  "msg_legend2_op44_u": {
+    "en": "It looks like they're going to\r\ntake us away somewhere...",
+    "ua": "Схоже, вони збираються\nкудись нас забрати…"
+  },
+  "msg_legend2_op45_u": {
+    "en": "Those dastardly beasts are\r\ngoing to split us up!",
+    "ua": "Ці підступні почвари\nхочуть нас розлучити!"
+  },
+  "msg_legend2_op46_u": {
+    "en": "Use StreetPass to gather heroes!",
+    "ua": "Збирайте героїв через StreetPass!"
+  },
+  "msg_legend2_op47_u": {
+    "en": "Then venture forth and first\r\nrescue my son, the prince!",
+    "ua": "Тоді вирушайте в путь і врятуйте\nспершу мого сина, принца!"
+  },
+  "msg_legend2_op50_u": {
+    "en": "We're counting on you!",
+    "ua": "Ми на вас сподіваємося!"
+  },
+  "msg_legend2_hint_cmn_0_01_u": {
+    "en": "I say... It seems you don't\r\nhave any heroes.",
+    "ua": "Отакої… Схоже, у вас\nнемає жодного героя."
+  },
+  "msg_legend2_hint_cmn_0_02_u": {
+    "en": "Go forth and gather heroes\r\nvia StreetPass!",
+    "ua": "Вирушайте й збирайте героїв\nчерез StreetPass!"
+  },
+  "msg_legend2_hint_cmn_0_03_u": {
+    "en": "You can also hire heroes by\r\nusing  Play Coins.",
+    "ua": "Героїв можна також найняти\nза  ігрові монетки."
+  },
+  "msg_legend2_hint_cmn_0_04_u": {
+    "en": "Please... Don't keep me waiting!",
+    "ua": "Прошу… Не змушуйте мене\nчекати!"
+  },
+  "msg_legend2_hint_cmn_1_01_u": {
+    "en": "Hmmph. I am so, so bored...",
+    "ua": "Кхм. Як же мені нудно…"
+  },
+  "msg_legend2_hint_cmn_1_02_u": {
+    "en": "I suppose I'll just take another nap\r\nwhile I wait for help to arrive!",
+    "ua": "Мабуть, ще подрімаю,\nпоки чекаю на порятунок!"
+  },
+  "msg_legend2_hint_cmn_2_01_u": {
+    "en": "Mmm... Zzz...\r\n...Go, heroes!...",
+    "ua": "Ммм… Хррр…\n…Уперед, герої!…"
+  },
+  "msg_legend2_hint_cmn_2_02_u": {
+    "en": "...Now!\r\nUse magic!",
+    "ua": "…Нумо!\nМагію!"
+  },
+  "msg_legend2_hint_cmn_2_03_u": {
+    "en": "Zzz...",
+    "ua": "Хррр…"
+  },
+  "msg_legend2_hint_cmn_12_01_u": {
+    "en": "Why... Some scoundrel's left\r\ngraffiti in my cage!",
+    "ua": "Отакої… Якийсь пройдисвіт\nнашкрябав написа в моїй клітці!"
+  },
+  "msg_legend2_hint_cmn_12_02_u": {
+    "en": "Press and hold  to make\r\ntime go faster...",
+    "ua": "Утримуйте , щоб\nчас ішов швидше…"
+  },
+  "msg_legend2_hint_cmn_12_03_u": {
+    "en": "...I wonder what that means?",
+    "ua": "…Цікаво, що це означає?"
+  },
+  "msg_legend2_hint_cmn_3_01_u": {
+    "en": "I'm getting kind of hungry...",
+    "ua": "Щось я зголоднів…"
+  },
+  "msg_legend2_hint_cmn_3_02_u": {
+    "en": "Ugh...\r\nI hope they come soon...",
+    "ua": "Ох…\nХоч би вони скоріше прийшли…"
+  },
+  "msg_legend2_hint_cmn_4_01_u": {
+    "en": "There are twelve colours and\r\ntwelve kinds of magic.",
+    "ua": "Є дванадцять кольорів\nі дванадцять видів магії."
+  },
+  "msg_legend2_hint_cmn_4_02_u": {
+    "en": "A hero's colour shows what\r\nkind of magic they can use...",
+    "ua": "Колір героя показує, яку магію\nвін уміє застосовувати…"
+  },
+  "msg_legend2_hint_cmn_4_03_u": {
+    "en": "If I could use magic, I'd be out of\r\nhere in no time!",
+    "ua": "Якби я вмів чаклувати, мене б тут\nуже давно не було!"
+  },
+  "msg_legend2_hint_cmn_5_01_u": {
+    "en": "Oh, I fear for my kingdom...",
+    "ua": "Ох, боюся я за своє\nкоролівство…"
+  },
+  "msg_legend2_hint_cmn_13_01_u": {
+    "en": "Yikes!",
+    "ua": "Ой!"
+  },
+  "msg_legend2_hint_cmn_13_02_u": {
+    "en": "One of those tin cans is looking\r\nright this way...",
+    "ua": "Одна з тих бляшанок дивиться\nпросто сюди…"
+  },
+  "msg_legend2_hint_cmn_13_03_u": {
+    "en": "...Eep.",
+    "ua": "…Ой."
+  },
+  "msg_legend2_hint_cmn_14_01_u": {
+    "en": "An armour-clad ghost, eh?",
+    "ua": "Привид у латах, кажете?"
+  },
+  "msg_legend2_hint_cmn_14_02_u": {
+    "en": "A level 1 hero won't even make\r\na dent in that armour...",
+    "ua": "Герой 1-го рівня ті лати\nнавіть не подряпає…"
+  },
+  "msg_legend2_hint_cmn_15_01_u": {
+    "en": "Even the sturdiest armour must\r\nhave a weak spot somewhere...",
+    "ua": "Навіть у найміцніших латах\nмає бути слабке місце…"
+  },
+  "msg_legend2_hint_cmn_15_02_u": {
+    "en": "...That's it! Magic!\r\nThere's no way to stop magic.",
+    "ua": "…Точно! Магія!\nМагію нічим не спинити."
+  },
+  "msg_legend2_hint_cmn_15_03_u": {
+    "en": "Using magic effectively is the\r\nkey to victory, heroes!",
+    "ua": "Уміло застосовувати магію —\nось запорука перемоги, герої!"
+  },
+  "msg_legend2_hint_cmn_6_01_u": {
+    "en": "Helloooo?\r\nIs anyone there?!",
+    "ua": "Агооов?\nЄ тут хто-небудь?!"
+  },
+  "msg_legend2_hint_cmn_6_03_u": {
+    "en": "...I'm so lonely here…",
+    "ua": "…Як же мені тут самотньо…"
+  },
+  "msg_legend2_hint_cmn_7_01_u": {
+    "en": "Oh! I just remembered something!",
+    "ua": "О! Я щойно дещо згадав!"
+  },
+  "msg_legend2_hint_cmn_7_02_u": {
+    "en": "Even magic that has\r\nlong-term effects...",
+    "ua": "Навіть магія, що діє\nдовго…"
+  },
+  "msg_legend2_hint_cmn_7_03_u": {
+    "en": "wears off when you\r\nleave the room.",
+    "ua": "вивітрюється, коли\nви виходите з кімнати."
+  },
+  "msg_legend2_hint_cmn_11_01_u": {
+    "en": "If you run out of heroes,",
+    "ua": "Якщо герої скінчаться,"
+  },
+  "msg_legend2_hint_cmn_11_02_u": {
+    "en": "any magic that you've cast\r\nwill wear off.",
+    "ua": "уся накладена магія\nвивітриться."
+  },
+  "msg_legend2_hint_cmn_11_03_u": {
+    "en": "Terrible waste\r\nof good magic, eh?",
+    "ua": "Шкода доброї\nмагії, еге ж?"
+  },
+  "msg_legend2_hint_cmn_8_01_u": {
+    "en": "Phew, there's a nasty\r\ndraught in here.",
+    "ua": "Ох, і протяг тут\nнеприємний."
+  },
+  "msg_legend2_hint_cmn_8_02_u": {
+    "en": "Oh, heroes!",
+    "ua": "О, герої!"
+  },
+  "msg_legend2_hint_cmn_8_03_u": {
+    "en": "I beg you, please save me! The\r\nsooner, the better...really.",
+    "ua": "Благаю, врятуйте мене!\nІ що скоріше, то краще…справді."
+  },
+  "msg_legend2_hint_cmn_9_01_u": {
+    "en": "Brrr, it's cold\r\nin here...",
+    "ua": "Бр-р, як тут\nхолодно…"
+  },
+  "msg_legend2_hint_cmn_9_02_u": {
+    "en": "I wish someone would warm\r\nme up with red magic.",
+    "ua": "Хоч би хтось зігрів мене\nчервоною магією."
+  },
+  "msg_legend2_hint_cmn_10_01_u": {
+    "en": "So, the villains who\r\nkidnapped me...",
+    "ua": "Отже, лиходії, які\nмене викрали…"
+  },
+  "msg_legend2_hint_cmn_10_02_u": {
+    "en": "What do they even want, anyway?!",
+    "ua": "Та чого їм узагалі треба?!"
+  },
+  "msg_legend2_hint_first_01_u": {
+    "en": "Where in the world\r\nam I, anyway?",
+    "ua": "І де ж це я\nвзагалі опинився?"
+  },
+  "msg_legend2_hint_first_02_u": {
+    "en": "Heroes, please, save me soon!\r\nNo, really... I'd appreciate it!",
+    "ua": "Герої, прошу, врятуйте мене\nскоріше! Справді… прошу вас!"
+  },
+  "msg_legend2_hint_shield_1_01_u": {
+    "en": "That's quite the shield that\r\nmonster's got there.",
+    "ua": "Оце так щит у того\nчудовиська."
+  },
+  "msg_legend2_hint_shield_1_02_u": {
+    "en": "Is it just me, or does it seem a bit\r\nheavy for the poor little blighter?",
+    "ua": "Чи то мені здається, чи він\nзаважкий для тієї малечі?"
+  },
+  "msg_legend2_hint_shield_2_01_u": {
+    "en": "A yellow shield, eh...?",
+    "ua": "Жовтий щит, кажете…?"
+  },
+  "msg_legend2_hint_shield_2_01_b_u": {
+    "en": "A light-blue shield, eh...?",
+    "ua": "Блакитний щит, кажете…?"
+  },
+  "msg_legend2_hint_shield_2_02_u": {
+    "en": "I wonder... If you use a hero who's\r\nthe same colour as that shield...",
+    "ua": "Цікаво… А якщо взяти героя\nтого самого кольору, що й щит…"
+  },
+  "msg_legend2_hint_shield_2_03_u": {
+    "en": "Yes, that's it! Fight fire with fire.\r\nYou'll want a yellow hero for this.",
+    "ua": "Так, точно! Клин клином.\nТут потрібен жовтий герой."
+  },
+  "msg_legend2_hint_shield_2_03_b_u": {
+    "en": "Yes, that's it! Fight fire with fire.\r\nYou'll want a light-blue hero for this.",
+    "ua": "Так, точно! Клин клином.\nТут потрібен блакитний герой."
+  },
+  "msg_legend2_hint_shield_2_04_u": {
+    "en": "Such a hero's blade might be just\r\nwhat you need to break that shield!",
+    "ua": "Меч такого героя — саме те,\nщо розіб'є той щит!"
+  },
+  "msg_legend2_hint_dark_1_01_u": {
+    "en": "A dark room, so dark that\r\nnone can proceed?",
+    "ua": "Темна кімната, така темна,\nщо ніхто не пройде?"
+  },
+  "msg_legend2_hint_dark_1_02_u": {
+    "en": "If you could only find a way to light\r\nthe room up somehow...",
+    "ua": "Якби ж якось\nосвітлити її…"
+  },
+  "msg_legend2_hint_dark_1_03_u": {
+    "en": "If only...",
+    "ua": "Якби ж то…"
+  },
+  "msg_legend2_hint_dark_2_01_u": {
+    "en": "Wait! What about magic?!",
+    "ua": "Стривайте! А що як магія?!"
+  },
+  "msg_legend2_hint_dark_2_02_u": {
+    "en": "There must be some kind of\r\nmagic that lights dark places!",
+    "ua": "Має ж бути магія, яка\nосвітлює темні місця!"
+  },
+  "msg_legend2_hint_dark_2_03_u": {
+    "en": "Uhh...\r\nWhat colour was it?",
+    "ua": "Емм…\nЯкого вона кольору?"
+  },
+  "msg_legend2_hint_dark_3_01_u": {
+    "en": "Oh, I remember!\r\nIt's white!",
+    "ua": "О, згадав!\nБілого!"
+  },
+  "msg_legend2_hint_dark_3_02_u": {
+    "en": "To light the darkness, you\r\nneed to use white magic!",
+    "ua": "Щоб освітлити темряву,\nпотрібна біла магія!"
+  },
+  "msg_legend2_hint_dark_3_03_u": {
+    "en": "Heroes of white!\r\nYour time has come!",
+    "ua": "Білі герої!\nВаш час настав!"
+  },
+  "msg_legend2_hint_boss_0_01_u": {
+    "en": "Heroes...! Oh, heroes!\r\nWhere are you, heroes?!",
+    "ua": "Герої…! Ох, герої!\nДе ж ви, герої?!"
+  },
+  "msg_legend2_hint_boss_0_02_u": {
+    "en": "You've got to get out there and\r\ngather heroes using StreetPass!",
+    "ua": "Вирушайте й збирайте\nгероїв через StreetPass!"
+  },
+  "msg_legend2_hint_boss_0_03_u": {
+    "en": "You can also hire heroes by\r\nusing  Play Coins!",
+    "ua": "Героїв можна також найняти\nза  ігрові монетки!"
+  },
+  "msg_legend2_hint_boss_0_04_u": {
+    "en": "I beg you! Hurry and save me!",
+    "ua": "Благаю! Швидше врятуйте мене!"
+  },
+  "msg_legend2_hint_boss_1_01_u": {
+    "en": "Uwahhhh!",
+    "ua": "Уааах!"
+  },
+  "msg_legend2_hint_boss_1_02_u": {
+    "en": "What is with this\r\nhuge ghost?!",
+    "ua": "Що це\nза велетенський привид?!"
+  },
+  "msg_legend2_hint_boss_2_01_u": {
+    "en": "Unngggh...\r\nC-Can't breathe...",
+    "ua": "Уххх…\nН-нічим дихати…"
+  },
+  "msg_legend2_hint_boss_2_02_u": {
+    "en": "I say, would you mind loosening\r\nyour grip a bit there...?",
+    "ua": "Слухайте, чи не могли б ви\nтрішки послабити хватку…?"
+  },
+  "msg_legend2_hint_boss_3_01_u": {
+    "en": "Ack! My goodness!\r\nYour hand...!",
+    "ua": "Ой! Матінко!\nВаша рука…!"
+  },
+  "msg_legend2_hint_boss_3_02_u": {
+    "en": "It's... It's...\r\nIt's all damp and slimy!",
+    "ua": "Вона… Вона…\nВона геть мокра й слизька!"
+  },
+  "msg_legend2_hint_boss_4_01_u": {
+    "en": "True, this may be a gigantic,\r\nterrible enemy...",
+    "ua": "Так, ворог велетенський\nі страшний…"
+  },
+  "msg_legend2_hint_boss_4_02_u": {
+    "en": "...But I just know you can\r\ndefeat it in the end!",
+    "ua": "…Але я певен, що зрештою\nви його здолаєте!"
+  },
+  "msg_legend2_hint_boss_4_03_u": {
+    "en": "Don't give up yet, heroes!",
+    "ua": "Не здавайтеся, герої!"
+  },
+  "msg_legend2_hint_boss_5_01_u": {
+    "en": "I'm counting on you, heroes!",
+    "ua": "Я на вас сподіваюся, герої!"
+  },
+  "msg_legend2_hint_boss_5_02_u": {
+    "en": "It's up to you to defeat this beastly\r\nfiend... The sooner, the better!",
+    "ua": "Здолати цю почвару — ваша\nсправа… І що скоріше, то краще!"
+  },
+  "msg_legend2_hint_shield_2_02_prin_u": {
+    "en": "I wonder... If you use a hero who's\r\nthe same colour as that shield...",
+    "ua": "Цікаво… А якщо взяти героя\nтого самого кольору, що й щит…"
+  },
+  "msg_legend2_hint_shield_2_03_prin_u": {
+    "en": "Ah, yes! That's it!\r\nYou'll want to use a yellow hero!",
+    "ua": "О, так! Точно!\nТут потрібен жовтий герой!"
+  },
+  "msg_legend2_hint_shield_2_04_prin_u": {
+    "en": "If I'm right, then their sword might\r\nbe able to smash that shield!",
+    "ua": "Якщо я не помиляюся, їхній меч\nрозіб'є той щит!"
+  },
+  "msg_legend2_hint_shield_2_02_pris_u": {
+    "en": "I wonder... If you use a hero who's\r\nthe same colour as that shield...",
+    "ua": "Цікаво… А якщо взяти героя\nтого самого кольору, що й щит…"
+  },
+  "msg_legend2_hint_shield_2_04_pris_u": {
+    "en": "That might just do the trick\r\nagainst that shield!",
+    "ua": "Оце якраз і спрацює\nпроти того щита!"
+  },
+  "msg_legend2_hint_shield_2_03_b_prin_u": {
+    "en": "Ah, yes! That's it!\r\nYou'll want to use a light-blue hero!",
+    "ua": "О, так! Точно!\nТут потрібен блакитний герой!"
+  },
+  "msg_legend2_hint_shield_2_03_b_pris_u": {
+    "en": "Yes, I think I know what you need\r\nto do: use a light-blue hero!",
+    "ua": "Так, здається, я знаю, що робити:\nвізьміть блакитного героя!"
+  },
+  "msg_legend2_hint_initial_1_01_u": {
+    "en": "What a terrible mess this all is!",
+    "ua": "Оце так халепа!"
+  },
+  "msg_legend2_hint_initial_1_01_prin_u": {
+    "en": "What a nasty pickle I'm in!",
+    "ua": "Ото я вскочив у халепу!"
+  },
+  "msg_legend2_hint_initial_1_01_pris_u": {
+    "en": "Oh, this is simply awful!",
+    "ua": "Ох, це просто жахливо!"
+  },
+  "msg_legend2_hint_initial_2_01_u": {
+    "en": "Why, those terrible fiends!",
+    "ua": "Ох, ці кляті почвари!"
+  },
+  "msg_legend2_hint_initial_2_01_prin_u": {
+    "en": "Oh!",
+    "ua": "О!"
+  },
+  "msg_legend2_hint_initial_2_01_pris_u": {
+    "en": "Hm...",
+    "ua": "Гм…"
+  },
+  "msg_legend2_hint_initial_3_01_u": {
+    "en": "That reminds me...",
+    "ua": "До речі, згадав…"
+  },
+  "msg_legend2_hint_initial_3_01_prin_u": {
+    "en": "That reminds me...",
+    "ua": "До речі, згадав…"
+  },
+  "msg_legend2_hint_initial_3_01_pris_u": {
+    "en": "That reminds me...",
+    "ua": "До речі, згадала…"
+  },
+  "msg_legend2_hint_initial_4_01_u": {
+    "en": "Allow us to share some\r\nadvice with you, brave heroes!",
+    "ua": "Дозвольте дати вам\nпораду, звитяжні герої!"
+  },
+  "msg_legend2_hint_initial_4_01_prin_u": {
+    "en": "I've got a tip for you!",
+    "ua": "Маю для вас пораду!"
+  },
+  "msg_legend2_hint_initial_4_01_pris_u": {
+    "en": "Here's some advice!",
+    "ua": "Ось вам порада!"
+  },
+  "msg_legend2_hint_initial_5_01_u": {
+    "en": "Grumble...",
+    "ua": "Кхм…"
+  },
+  "msg_legend2_hint_initial_5_01_prin_u": {
+    "en": "Hmm...",
+    "ua": "Гмм…"
+  },
+  "msg_legend2_hint_initial_5_01_pris_u": {
+    "en": "Hmm...",
+    "ua": "Гмм…"
+  },
+  "msg_legend2_hint_initial_6_01_u": {
+    "en": "A monster with a\r\ngigantic shield, you say?",
+    "ua": "Чудовисько з велетенським\nщитом, кажете?"
+  },
+  "msg_legend2_hint_initial_6_01_pris_u": {
+    "en": "Oh, a monster with\r\na huge shield?",
+    "ua": "О, чудовисько\nз величезним щитом?"
+  },
+  "msg_legend2_hint_initial_7_01_u": {
+    "en": "Oh, a yellow shield?",
+    "ua": "О, жовтий щит?"
+  },
+  "msg_legend2_hint_initial_8_01_u": {
+    "en": "Oh, a light-blue shield?",
+    "ua": "О, блакитний щит?"
+  },
+  "msg_legend2_hint_initial_8_01_pris_u": {
+    "en": "Oh, a light-blue shield?",
+    "ua": "О, блакитний щит?"
+  },
+  "msg_legend2_hint_initial_9_01_u": {
+    "en": "Ah, I've just remembered!",
+    "ua": "О, я щойно згадав!"
+  },
+  "msg_legend2_hint_initial_9_01_prin_u": {
+    "en": "I've remembered something.",
+    "ua": "Я дещо згадав."
+  },
+  "msg_legend2_hint_initial_9_01_pris_u": {
+    "en": "I've remembered something.",
+    "ua": "Я дещо згадала."
+  },
+  "msg_legend2_hint_combi_1_01_u": {
+    "en": "Did you know you can get\r\ntwo heroes to team up?",
+    "ua": "А ви знали, що двоє героїв\nможуть об'єднатися в загін?"
+  },
+  "msg_legend2_hint_combi_1_02_u": {
+    "en": "Not only that, but it looks like\r\nteams can use combo skills!",
+    "ua": "Ба більше, схоже, загони вміють\nбити спільними прийомами!"
+  },
+  "msg_legend2_hint_combi_1_03_u": {
+    "en": "Keep an eye out for\r\npotential team-ups!",
+    "ua": "Придивляйтеся, кого\nз ким можна об'єднати!"
+  },
+  "msg_legend2_hint_combi_1_01_prin_u": {
+    "en": "Did you know you can get\r\ntwo heroes to team up?",
+    "ua": "А ви знали, що двоє героїв\nможуть об'єднатися в загін?"
+  },
+  "msg_legend2_hint_combi_1_01_pris_u": {
+    "en": "Did you know you can get\r\ntwo heroes to team up?",
+    "ua": "А ви знали, що двоє героїв\nможуть об'єднатися в загін?"
+  },
+  "msg_legend2_hint_combi_1_03_pris_u": {
+    "en": "Keep an eye out for\r\npotential team-ups!",
+    "ua": "Придивляйтеся, кого\nз ким можна об'єднати!"
+  },
+  "msg_legend2_hint_combi_2_01_u": {
+    "en": "It looks like there's a trick\r\nto using combo skills!",
+    "ua": "Схоже, у спільних прийомах\nє одна хитрість!"
+  },
+  "msg_legend2_hint_combi_2_02_u": {
+    "en": "The heroes' colours have to be\r\nclose in order for the skills to work.",
+    "ua": "Кольори героїв мають бути\nблизькі, інакше нічого не вийде."
+  },
+  "msg_legend2_hint_combi_2_03_u": {
+    "en": "Keep an eye out for heroes\r\nwith similar colours!",
+    "ua": "Придивляйтеся до героїв\nсхожих кольорів!"
+  },
+  "msg_legend2_hint_combi_2_02_prin_u": {
+    "en": "The heroes' colours have to be\r\nclose in order for the skills to work.",
+    "ua": "Кольори героїв мають бути\nблизькі, інакше нічого не вийде."
+  },
+  "msg_legend2_hint_combi_2_03_prin_u": {
+    "en": "Keep an eye out for heroes\r\nwith similar colours!",
+    "ua": "Придивляйтеся до героїв\nсхожих кольорів!"
+  },
+  "msg_legend2_hint_combi_2_02_pris_u": {
+    "en": "The heroes' colours have to be\r\nclose in order for the skills to work.",
+    "ua": "Кольори героїв мають бути\nблизькі, інакше нічого не вийде."
+  },
+  "msg_legend2_hint_combi_2_03_pris_u": {
+    "en": "Keep an eye out for heroes\r\nwith similar colours!",
+    "ua": "Придивляйтеся до героїв\nсхожих кольорів!"
+  },
+  "msg_legend2_hint_combi_4_01_u": {
+    "en": "I'll let you in on a couple of secrets\r\nto get teams to use combo skills!",
+    "ua": "Розкрию пару секретів про спільні\nприйоми загонів!"
+  },
+  "msg_legend2_hint_combi_4_02_u": {
+    "en": "Using heroes of the same colour\r\nseems to have powerful results.",
+    "ua": "Герої одного кольору дають,\nсхоже, найпотужніший результат."
+  },
+  "msg_legend2_hint_combi_4_03_u": {
+    "en": "That said, there's also a special\r\nblack-and-white combination!",
+    "ua": "А ще є особлива\nчорно-біла пара!"
+  },
+  "msg_legend2_hint_combi_4_04_u": {
+    "en": "Experiment and see the\r\nresults for yourself!",
+    "ua": "Пробуйте й дивіться\nна результат самі!"
+  },
+  "msg_legend2_hint_combi_4_02_prin_u": {
+    "en": "Using heroes of the same colour\r\nseems to have powerful results.",
+    "ua": "Герої одного кольору дають,\nсхоже, найпотужніший результат."
+  },
+  "msg_legend2_hint_combi_4_04_prin_u": {
+    "en": "Experiment and see the\r\nresults for yourself!",
+    "ua": "Пробуйте й дивіться\nна результат самі!"
+  },
+  "msg_legend2_hint_combi_4_02_pris_u": {
+    "en": "Using heroes of the same colour\r\nseems to have powerful results.",
+    "ua": "Герої одного кольору дають,\nсхоже, найпотужніший результат."
+  },
+  "msg_legend2_hint_combi_4_03_pris_u": {
+    "en": "That said, there's also a special\r\nblack-and-white combination!",
+    "ua": "А ще є особлива\nчорно-біла пара!"
+  },
+  "msg_legend2_hint_combi_4_04_pris_u": {
+    "en": "Experiment and see the\r\nresults for yourself!",
+    "ua": "Пробуйте й дивіться\nна результат самі!"
+  },
+  "msg_legend2_hint_item_1_01_u": {
+    "en": "Have you used the Potion Service\r\nyet? They have some great items.",
+    "ua": "Ви вже користувалися службою\nдоставки зілля? Там гарні речі."
+  },
+  "msg_legend2_hint_item_1_02_u": {
+    "en": "They have potions that can\r\nblock some foes' evil tricks!",
+    "ua": "Там є зілля, які знешкоджують\nдеякі підступи ворогів!"
+  },
+  "msg_legend2_hint_item_1_03_u": {
+    "en": "You'll need  Play Coins to use\r\nthe Potion Service, though...",
+    "ua": "Щоправда, за доставку треба\nплатити  ігровими монетками…"
+  },
+  "msg_legend2_hint_item_1_03_prin_u": {
+    "en": "You'll need  Play Coins to use\r\nthe Potion Service, though!",
+    "ua": "Щоправда, за доставку треба\nплатити  монетками!"
+  },
+  "msg_legend2_hint_item_1_02_pris_u": {
+    "en": "They have potions that can block\r\nsome enemies' evil tricks!",
+    "ua": "Там є зілля, які знешкоджують\nдеякі підступи ворогів!"
+  },
+  "msg_legend2_hint_item_1_03_pris_u": {
+    "en": "You'll need  Play Coins to use\r\nthe Potion Service, though!",
+    "ua": "Щоправда, за доставку треба\nплатити  ігровими монетками!"
+  },
+  "msg_legend2_hint_fireroom_1_01_u": {
+    "en": "Confounded by a room of fire, eh?",
+    "ua": "Вогняна кімната збила\nз пантелику?"
+  },
+  "msg_legend2_hint_fireroom_1_02_u": {
+    "en": "You'll have to deal with those\r\nflames before you can continue.",
+    "ua": "Спершу дайте раду тому полум'ю,\nінакше далі не пройти."
+  },
+  "msg_legend2_hint_fireroom_1_03_u": {
+    "en": "Hmm... Now, what would be\r\nthe best way to handle this?",
+    "ua": "Гмм… І як же тут\nнайкраще дати раду?"
+  },
+  "msg_legend2_hint_fireroom_1_01_prin_u": {
+    "en": "A room of fire...? I suppose health\r\nand safety rules don't apply here...",
+    "ua": "Вогняна кімната…? Схоже,\nправила безпеки тут не діють…"
+  },
+  "msg_legend2_hint_fireroom_1_03_prin_u": {
+    "en": "Hmm... Now, what would be\r\nthe best way to handle this?",
+    "ua": "Гмм… І як же тут\nнайкраще дати раду?"
+  },
+  "msg_legend2_hint_fireroom_1_01_pris_u": {
+    "en": "A room of fire... Yes, I can see\r\nhow that could be a problem.",
+    "ua": "Вогняна кімната… Так, розумію,\nчому це проблема."
+  },
+  "msg_legend2_hint_fireroom_1_03_pris_u": {
+    "en": "Hmm... Now, what would be\r\nthe best way to handle this?",
+    "ua": "Гмм… І як же тут\nнайкраще дати раду?"
+  },
+  "msg_legend2_hint_iceroom_1_01_u": {
+    "en": "Frozen out by the room of ice, eh?",
+    "ua": "Крижана кімната заморозила\nвас?"
+  },
+  "msg_legend2_hint_iceroom_1_02_u": {
+    "en": "You'll have to deal with that nasty\r\nchill before you can continue.",
+    "ua": "Спершу дайте раду тому холоду,\nінакше далі не пройти."
+  },
+  "msg_legend2_hint_iceroom_1_01_pris_u": {
+    "en": "I don't blame you for not wanting to\r\nhang around in that icy room! Brr!",
+    "ua": "Не дивно, що вам не хочеться\nсидіти в тій крижаній кімнаті! Бр-р!"
+  },
+  "msg_legend2_hint_poisonroom_1_01_u": {
+    "en": "A poison room?!\r\nWhat a noxious nuisance!",
+    "ua": "Отруйна кімната?!\nОце гидота!"
+  },
+  "msg_legend2_hint_poisonroom_1_02_u": {
+    "en": "You'll have to deal with that pesky\r\npoison before you can continue.",
+    "ua": "Спершу дайте раду тій отруті,\nінакше далі не пройти."
+  },
+  "msg_legend2_hint_poisonroom_1_01_pris_u": {
+    "en": "A poison room? That's disgusting.\r\nI wouldn't want one in my house.",
+    "ua": "Отруйна кімната? Яка гидота.\nУ себе вдома я б такої не хотіла."
+  },
+  "msg_legend2_hint_room_common_1_01_u": {
+    "en": "Perhaps magic's the key here?",
+    "ua": "Може, тут допоможе магія?"
+  },
+  "msg_legend2_hint_room_common_1_02_u": {
+    "en": "That trap does seem to be made\r\nup of rather stern stuff, though...",
+    "ua": "Щоправда, та пастка, схоже,\nзроблена на совість…"
+  },
+  "msg_legend2_hint_room_common_1_02_prin_u": {
+    "en": "It does look like you'll need\r\nsomething pretty powerful, though.",
+    "ua": "Щоправда, схоже, тут знадобиться\nщось справді потужне."
+  },
+  "msg_legend2_hint_room_common_1_01_pris_u": {
+    "en": "Perhaps magic's the key here?",
+    "ua": "Може, тут допоможе магія?"
+  },
+  "msg_legend2_hint_room_common_1_02_pris_u": {
+    "en": "This trap does look rather\r\ndifficult to disable, though.",
+    "ua": "Щоправда, цю пастку, схоже,\nнелегко знешкодити."
+  },
+  "msg_legend2_hint_room_common_2_01_u": {
+    "en": "So your magic couldn't break\r\nthrough the monsters' trap, eh?",
+    "ua": "То ваша магія не пробила\nпастку чудовиськ?"
+  },
+  "msg_legend2_hint_room_common_2_02_u": {
+    "en": "Those monsters can certainly set up\r\na good roadblock, can't they?",
+    "ua": "Уміють же ці чудовиська\nперекрити шлях, еге ж?"
+  },
+  "msg_legend2_hint_room_common_2_03_u": {
+    "en": "You'll just have to use even more\r\npowerful magic to break through!",
+    "ua": "Доведеться взяти ще потужнішу\nмагію, щоб пробитися!"
+  },
+  "msg_legend2_hint_room_common_2_01_prin_u": {
+    "en": "So your magic couldn't break\r\nthrough the monsters' trap, eh?",
+    "ua": "То ваша магія не пробила\nпастку чудовиськ?"
+  },
+  "msg_legend2_hint_room_common_2_02_prin_u": {
+    "en": "Those monsters can certainly set up\r\na good roadblock, can't they?",
+    "ua": "Уміють же ці чудовиська\nперекрити шлях, еге ж?"
+  },
+  "msg_legend2_hint_room_common_2_01_pris_u": {
+    "en": "So your magic couldn't break\r\nthrough the monsters' trap?",
+    "ua": "То ваша магія не пробила\nпастку чудовиськ?"
+  },
+  "msg_legend2_hint_room_common_2_02_pris_u": {
+    "en": "Those monsters can certainly set up\r\na good roadblock, can't they?",
+    "ua": "Уміють же ці чудовиська\nперекрити шлях, еге ж?"
+  },
+  "msg_legend2_hint_room_common_2_03_pris_u": {
+    "en": "You'll just have to use even more\r\npowerful magic to break through!",
+    "ua": "Доведеться взяти ще потужнішу\nмагію, щоб пробитися!"
+  },
+  "msg_legend2_hint_fireroom_2_01_u": {
+    "en": "Aha! How about using\r\ncombo magic skills?",
+    "ua": "Ага! А що як спробувати\nспільну магію?"
+  },
+  "msg_legend2_hint_fireroom_2_02_u": {
+    "en": "Blue combo magic should\r\nbe a match for fiery rooms.",
+    "ua": "Синя спільна магія — саме те,\nщо треба проти вогняних кімнат."
+  },
+  "msg_legend2_hint_fireroom_2_01_pris_u": {
+    "en": "I know! Why not try using\r\ncombo magic skills?",
+    "ua": "Придумала! А чом би\nне спробувати спільну магію?"
+  },
+  "msg_legend2_hint_fireroom_2_02_pris_u": {
+    "en": "Blue combo magic should\r\nbe a match for fiery rooms.",
+    "ua": "Синя спільна магія — саме те,\nщо треба проти вогняних кімнат."
+  },
+  "msg_legend2_hint_iceroom_2_02_u": {
+    "en": "Icy rooms should respond to\r\na blast of red combo magic!",
+    "ua": "Проти крижаних кімнат спрацює\nзалп червоної спільної магії!"
+  },
+  "msg_legend2_hint_iceroom_2_02_pris_u": {
+    "en": "Icy rooms should respond to\r\na blast of red combo magic!",
+    "ua": "Проти крижаних кімнат спрацює\nзалп червоної спільної магії!"
+  },
+  "msg_legend2_hint_poisonroom_2_02_u": {
+    "en": "To deal with a poison room, you'll\r\nneed... Hm. That's a tricky one.",
+    "ua": "Проти отруйної кімнати потрібно…\nГм. Це складне питання."
+  },
+  "msg_legend2_hint_poisonroom_2_03_u": {
+    "en": "Perhaps yellow combo magic would\r\nbe the perfect antidote?",
+    "ua": "Може, жовта спільна магія\nбуде найкращою протиотрутою?"
+  },
+  "msg_legend2_hint_poisonroom_2_02_pris_u": {
+    "en": "To deal with a poison room, you'll\r\nneed... Hm. That's a tricky one.",
+    "ua": "Проти отруйної кімнати потрібно…\nГм. Це складне питання."
+  },
+  "msg_legend2_hint_poisonroom_2_03_pris_u": {
+    "en": "Perhaps yellow combo magic would\r\nbe the perfect antidote?",
+    "ua": "Може, жовта спільна магія\nбуде найкращою протиотрутою?"
+  },
+  "msg_legend2_hint_lock_1_01_u": {
+    "en": "Confounded by a locked door?",
+    "ua": "Замкнені двері спантеличили?"
+  },
+  "msg_legend2_hint_lock_1_01_prin_u": {
+    "en": "Is a locked door giving you trouble?",
+    "ua": "Замкнені двері завдають клопоту?"
+  },
+  "msg_legend2_hint_lock_1_01_pris_u": {
+    "en": "Is a locked door giving you trouble?",
+    "ua": "Замкнені двері завдають клопоту?"
+  },
+  "msg_legend2_hint_lock_1_02_u": {
+    "en": "You just might find the key you\r\nneed in a chest somewhere!",
+    "ua": "Потрібний ключ цілком може\nлежати десь у скрині!"
+  },
+  "msg_legend2_hint_lock_2_01_u": {
+    "en": "A tasty titbit of key-related gossip\r\nhas reached our royal ears.",
+    "ua": "До наших королівських вух дійшла\nсмаковита плітка про ключі."
+  },
+  "msg_legend2_hint_lock_2_01_prin_u": {
+    "en": "I've come across a useful bit of\r\ninformation regarding keys.",
+    "ua": "Мені трапилася корисна\nвідомість про ключі."
+  },
+  "msg_legend2_hint_lock_2_01_pris_u": {
+    "en": "Allow me to share a tip\r\nI heard about keys.",
+    "ua": "Дозвольте поділитися порадою,\nяку я чула про ключі."
+  },
+  "msg_legend2_hint_lock_2_02_u": {
+    "en": "It seems the last monster you face\r\nwill be the one holding the key!",
+    "ua": "Схоже, ключ у того чудовиська,\nяке трапиться вам останнім!"
+  },
+  "msg_legend2_hint_lock_2_03_u": {
+    "en": "If you didn't get one, go back\r\nand have another go at it.",
+    "ua": "Якщо ключа не дісталося,\nповерніться й спробуйте ще раз."
+  },
+  "msg_legend2_hint_lock_2_03_pris_u": {
+    "en": "If you didn't get one, why not\r\ngo back and have another try?",
+    "ua": "Якщо ключа не дісталося, чому\nб не спробувати ще раз?"
+  },
+  "msg_legend2_hint_lock_3_01_u": {
+    "en": "I overheard something about\r\na key hidden in a chest!",
+    "ua": "Я чув дещо про ключ,\nсхований у скрині!"
+  },
+  "msg_legend2_hint_lock_3_02_u": {
+    "en": "Apparently the way you fight the\r\nfinal monster is the...er...key.",
+    "ua": "Схоже, уся справа в тому, як ви\nб'єтеся з останнім чудовиськом."
+  },
+  "msg_legend2_hint_lock_3_03_u": {
+    "en": "You want to have as few heroes turn\r\nback as possible. Or so I hear...",
+    "ua": "Треба, щоб якомога менше героїв\nповернуло назад. Так я чув…"
+  },
+  "msg_legend2_hint_lock_3_03_prin_u": {
+    "en": "It seems you want to have as few\r\nheroes turn back as possible!",
+    "ua": "Схоже, треба, щоб якомога менше\nгероїв повернуло назад!"
+  },
+  "msg_legend2_hint_lock_3_02_pris_u": {
+    "en": "It has something to do with how\r\nyou fight the final monster.",
+    "ua": "Це якось пов'язано з тим, як ви\nб'єтеся з останнім чудовиськом."
+  },
+  "msg_legend2_hint_lock_3_03_pris_u": {
+    "en": "Apparently, you want to have as few\r\nheroes turn back as possible!",
+    "ua": "Схоже, треба, щоб якомога менше\nгероїв повернуло назад!"
+  },
+  "msg_legend2_hint_lock_4_01_u": {
+    "en": "It looks like you're having\r\nsome trouble finding the key.",
+    "ua": "Схоже, вам не щастить\nіз пошуками ключа."
+  },
+  "msg_legend2_hint_lock_4_02_u": {
+    "en": "The Ransacked Ruins, the Shrine of\r\nShadows, the Diabolical Altar...",
+    "ua": "Сплюндровані руїни, Святилище\nтіней, Диявольський вівтар…"
+  },
+  "msg_legend2_hint_lock_4_03_u": {
+    "en": "Why not try exploring ruins\r\nsuch as these?",
+    "ua": "Чому б не дослідити\nтакі-от руїни?"
+  },
+  "msg_legend2_hint_lock_4_01_prin_u": {
+    "en": "It looks like you're having\r\nsome trouble finding the key.",
+    "ua": "Схоже, вам не щастить\nіз пошуками ключа."
+  },
+  "msg_legend2_hint_lock_4_01_pris_u": {
+    "en": "You seem to be having some\r\ntrouble finding the key.",
+    "ua": "Схоже, вам не щастить\nіз пошуками ключа."
+  },
+  "msg_legend2_hint_lock_4_03_pris_u": {
+    "en": "Try exploring these areas!",
+    "ua": "Спробуйте дослідити ці місця!"
+  },
+  "msg_legend2_hint_weak_1_01_u": {
+    "en": "These new monsters are much\r\nstronger than the lot from last time!",
+    "ua": "Ці нові чудовиська куди\nсильніші за минулих!"
+  },
+  "msg_legend2_hint_weak_1_02_u": {
+    "en": "But have no fear, heroes!",
+    "ua": "Та не бійтеся, герої!"
+  },
+  "msg_legend2_hint_weak_1_03_u": {
+    "en": "They must have weaknesses\r\nto certain kinds of magic!",
+    "ua": "Певно ж, вони вразливі\nдо якоїсь магії!"
+  },
+  "msg_legend2_hint_weak_2_01_u": {
+    "en": "You can make things easier by using\r\nmagic your foes are weak against.",
+    "ua": "Буде легше, якщо бити магією,\nдо якої ворог вразливий."
+  },
+  "msg_legend2_hint_weak_2_02_u": {
+    "en": "Let's see...",
+    "ua": "Ану ж бо…"
+  },
+  "msg_legend2_hint_weak_2_03_u": {
+    "en": "Fire, sand, light and darkness...\r\nYes, I think they'd probably do it.",
+    "ua": "Вогонь, пісок, світло й пітьма…\nТак, гадаю, вони й спрацюють."
+  },
+  "msg_legend2_hint_weak_3_01_u": {
+    "en": "Don't you think those mummies\r\nlook rather dry and dusty?",
+    "ua": "Вам не здається, що ті мумії\nтакі сухі й запорошені?"
+  },
+  "msg_legend2_hint_weak_3_02_u": {
+    "en": "I daresay a quick blast of fire might\r\nput their mummying days to an end!",
+    "ua": "Певен, добрий залп вогню\nпоклав би край їхнім витівкам!"
+  },
+  "msg_legend2_hint_weak_4_01_u": {
+    "en": "As you might know already, yellow\r\nmagic can summon up sandstorms.",
+    "ua": "Як ви, певно, знаєте, жовта магія\nздіймає піщані буревії."
+  },
+  "msg_legend2_hint_weak_4_02_u": {
+    "en": "Did you know that sand's quite\r\ngood for drying things up?",
+    "ua": "А ви знали, що пісок добре\nвисушує?"
+  },
+  "msg_legend2_hint_weak_4_03_u": {
+    "en": "It's just the ticket for mopping\r\nup disgusting puddles of slime!",
+    "ua": "Саме те, щоб прибрати\nогидні калюжі слизу!"
+  },
+  "msg_legend2_hint_weak_5_01_u": {
+    "en": "White magic symbolises\r\nhope and life...",
+    "ua": "Біла магія символізує\nнадію і життя…"
+  },
+  "msg_legend2_hint_weak_5_01_prin_u": {
+    "en": "White magic symbolises\r\nhope and life...",
+    "ua": "Біла магія символізує\nнадію і життя…"
+  },
+  "msg_legend2_hint_weak_5_01_pris_u": {
+    "en": "White magic symbolises\r\nhope and life...",
+    "ua": "Біла магія символізує\nнадію і життя…"
+  },
+  "msg_legend2_hint_weak_5_02_u": {
+    "en": "...just the things to get\r\na reaper's hackles up! ",
+    "ua": "…саме те, від чого\nжнець аж скипає! "
+  },
+  "msg_legend2_hint_weak_5_02_prin_u": {
+    "en": "...just the things to hack\r\na reaper off royally!",
+    "ua": "…саме те, від чого жнець\nскипає по-королівськи!"
+  },
+  "msg_legend2_hint_weak_5_02_pris_u": {
+    "en": "...just the things to put a\r\nreaper's nose out of joint! ",
+    "ua": "…саме те, від чого жнець\nгеть втрачає спокій! "
+  },
+  "msg_legend2_hint_weak_6_01_u": {
+    "en": "Those glittering golems have\r\na rather curious shortcoming.",
+    "ua": "У тих блискучих големів\nє цікава вада."
+  },
+  "msg_legend2_hint_weak_6_01_prin_u": {
+    "en": "Those glittering golems have\r\nan unusual weakness.",
+    "ua": "У тих блискучих големів\nє незвична слабина."
+  },
+  "msg_legend2_hint_weak_6_01_pris_u": {
+    "en": "Those glittering golems have\r\nan unusual weakness.",
+    "ua": "У тих блискучих големів\nє незвична слабина."
+  },
+  "msg_legend2_hint_weak_6_02_u": {
+    "en": "I've heard they get\r\nweaker when it's dark!",
+    "ua": "Я чув, що в темряві\nвони слабшають!"
+  },
+  "msg_legend2_hint_weak_6_03_u": {
+    "en": "Find some way to pull the blinds\r\ndown, and it's curtains for them!",
+    "ua": "Знайдіть спосіб затемнити все —\nі їм кінець!"
+  },
+  "msg_legend2_hint_weak_6_03_pris_u": {
+    "en": "Find some way to pull the blinds\r\ndown, and it's curtains for them!",
+    "ua": "Знайдіть спосіб затемнити все —\nі їм кінець!"
+  },
+  "msg_legend2_hint_wb_1_01_pris_u": {
+    "en": "So, you need a yellow hero's\r\nblade to smash a yellow shield...",
+    "ua": "Отже, щоб розбити жовтий щит,\nпотрібен меч жовтого героя…"
+  },
+  "msg_legend2_hint_wb_1_02_pris_u": {
+    "en": "A light-blue hero's blade to\r\nsmash a light-blue shield...",
+    "ua": "Щоб розбити блакитний щит —\nмеч блакитного героя…"
+  },
+  "msg_legend2_hint_wb_1_03_pris_u": {
+    "en": "What do you need to break\r\nthrough a shadowlight shield?",
+    "ua": "А що ж треба, щоб пробити\nщит світлотіні?"
+  },
+  "msg_legend2_hint_wb_2_01_pris_u": {
+    "en": "Hm. Shadowlight, black and white...\r\nYes, that's it! A penguin hero!",
+    "ua": "Гм. Світлотінь, чорне й біле…\nТак, точно! Герой-пінгвін!"
+  },
+  "msg_legend2_hint_wb_2_02_pris_u": {
+    "en": "Hang on... There's no such thing\r\nas a penguin hero, is there.",
+    "ua": "Стривайте… Немає ж таких,\nяк герої-пінгвіни, правда?"
+  },
+  "msg_legend2_hint_wb_2_03_pris_u": {
+    "en": "...What can you use instead\r\nthat's black and white?",
+    "ua": "…А що ще буває\nчорно-біле?"
+  },
+  "msg_legend2_hint_wb_2_04_pris_u": {
+    "en": "I know! How about a team made up\r\nof heroes clad in black and white!",
+    "ua": "Придумала! Загін із героїв,\nубраних у чорне й біле!"
+  },
+  "msg_legend2_hint_root_1_01_u": {
+    "en": "The further south you go, the\r\ntougher monsters and traps get!",
+    "ua": "Що далі на південь, то міцніші\nчудовиська й пастки!"
+  },
+  "msg_legend2_hint_root_1_02_u": {
+    "en": "Proceed with caution, heroes!",
+    "ua": "Будьте обережні, герої!"
+  },
+  "msg_legend2_hint_root_1_02_prin_u": {
+    "en": "Proceed with caution, heroes!",
+    "ua": "Будьте обережні, герої!"
+  },
+  "msg_legend2_hint_root_1_02_pris_u": {
+    "en": "Proceed with caution, fair heroes!",
+    "ua": "Будьте обережні, звитяжні герої!"
+  },
+  "msg_legend2_hint_past_1_01_u": {
+    "en": "Let me tell you about old allies.",
+    "ua": "Розкажу вам про давніх\nсоратників."
+  },
+  "msg_legend2_hint_past_1_01_prin_u": {
+    "en": "Let me tell you about old allies.",
+    "ua": "Розкажу вам про давніх\nсоратників."
+  },
+  "msg_legend2_hint_past_1_01_pris_u": {
+    "en": "Allow me to tell you about old allies.",
+    "ua": "Дозвольте розповісти про давніх\nсоратників."
+  },
+  "msg_legend2_hint_past_1_02_u": {
+    "en": "Old allies are heroes who've\r\nfought by your side in the past.",
+    "ua": "Давні соратники — це герої, які\nколись билися пліч-о-пліч із вами."
+  },
+  "msg_legend2_hint_past_1_03_u": {
+    "en": "They might not come cheap, but\r\nthey'll be a great help in your quest!",
+    "ua": "Коштують вони недешево, зате\nдуже допоможуть у пригоді!"
+  },
+  "msg_legend2_hint_past_1_02_prin_u": {
+    "en": "Old allies are heroes who've\r\nfought by your side in the past.",
+    "ua": "Давні соратники — це герої, які\nколись билися пліч-о-пліч із вами."
+  },
+  "msg_legend2_hint_past_1_02_pris_u": {
+    "en": "Old allies are heroes who've\r\nfought by your side in the past.",
+    "ua": "Давні соратники — це герої, які\nколись билися пліч-о-пліч із вами."
+  },
+  "msg_legend2_hint_past_1_03_pris_u": {
+    "en": "They might not come cheap, but\r\nthey'll be a great help in your quest!",
+    "ua": "Коштують вони недешево, зате\nдуже допоможуть у пригоді!"
+  },
+  "msg_legend2_hint_ability_1_01_u": {
+    "en": "Those mummies are far\r\nswifter than they look.",
+    "ua": "Ті мумії куди прудкіші,\nніж здаються."
+  },
+  "msg_legend2_hint_ability_1_02_u": {
+    "en": "If they manage to ambush you, the\r\nhero who's first in line will run away!",
+    "ua": "Якщо вони заскочать вас\nзненацька, перший герой утече!"
+  },
+  "msg_legend2_hint_ability_1_02_prin_u": {
+    "en": "If they manage to ambush you, the\r\nhero who's first in line will run away!",
+    "ua": "Якщо вони заскочать вас\nзненацька, перший герой утече!"
+  },
+  "msg_legend2_hint_ability_1_02_pris_u": {
+    "en": "If they manage to ambush you, the\r\nhero who's first in line will run away!",
+    "ua": "Якщо вони заскочать вас\nзненацька, перший герой утече!"
+  },
+  "msg_legend2_hint_ability_2_01_u": {
+    "en": "Watch out for the curse gas\r\nthat reapers can use.",
+    "ua": "Стережіться газу прокляття,\nяким б'ють жнеці."
+  },
+  "msg_legend2_hint_ability_2_02_u": {
+    "en": "Those curses are nasty.\r\nThey can paralyse heroes!",
+    "ua": "Ті прокляття підступні.\nВони можуть скувати героїв!"
+  },
+  "msg_legend2_hint_ability_2_03_u": {
+    "en": "Be sure to use a dispelling draught\r\nwhile you can still move!",
+    "ua": "Обов'язково вживайте відьмин\nвідвар, поки ще можете рухатися!"
+  },
+  "msg_legend2_hint_ability_2_02_prin_u": {
+    "en": "Those curses are nasty.\r\nThey can paralyse heroes!",
+    "ua": "Ті прокляття підступні.\nВони можуть скувати героїв!"
+  },
+  "msg_legend2_hint_ability_2_02_pris_u": {
+    "en": "Those curses are nasty.\r\nThey can paralyse heroes!",
+    "ua": "Ті прокляття підступні.\nВони можуть скувати героїв!"
+  },
+  "msg_legend2_hint_ability_2_03_pris_u": {
+    "en": "Be sure to use a dispelling draught\r\nwhile you can still move!",
+    "ua": "Обов'язково вживайте відьмин\nвідвар, поки ще можете рухатися!"
+  },
+  "msg_legend2_hint_ability_3_01_u": {
+    "en": "There are some monsters you'll\r\nreally want to keep an eye out for.",
+    "ua": "Є чудовиська, з яких\nкраще не спускати очей."
+  },
+  "msg_legend2_hint_ability_3_01_prin_u": {
+    "en": "There are some monsters you'll\r\nreally want to keep an eye out for.",
+    "ua": "Є чудовиська, з яких\nкраще не спускати очей."
+  },
+  "msg_legend2_hint_ability_3_01_pris_u": {
+    "en": "There are some monsters you'll\r\nreally want to keep an eye out for.",
+    "ua": "Є чудовиська, з яких\nкраще не спускати очей."
+  },
+  "msg_legend2_hint_ability_3_02_u": {
+    "en": "Beware of enemies who\r\ncan heal their allies!",
+    "ua": "Стережіться ворогів, які вміють\nзцілювати своїх!"
+  },
+  "msg_legend2_hint_ability_4_02_u": {
+    "en": "Beware of enemies who\r\ncan resurrect their allies!",
+    "ua": "Стережіться ворогів, які вміють\nвоскрешати своїх!"
+  },
+  "msg_legend2_hint_ability_4_02_pris_u": {
+    "en": "Beware of enemies who\r\ncan resurrect their allies!",
+    "ua": "Стережіться ворогів, які вміють\nвоскрешати своїх!"
+  },
+  "msg_legend2_hint_ability_5_02_u": {
+    "en": "Beware of enemies who excel\r\nat keeping up their guard!",
+    "ua": "Стережіться ворогів, які добре\nтримають оборону!"
+  },
+  "msg_legend2_hint_ability_5_03_u": {
+    "en": "They'll keep hardening their\r\ndefences, so watch out!",
+    "ua": "Вони весь час зміцнюють\nзахист, тож пильнуйте!"
+  },
+  "msg_legend2_hint_ability_5_02_pris_u": {
+    "en": "Beware of enemies who excel\r\nat keeping up their guard!",
+    "ua": "Стережіться ворогів, які добре\nтримають оборону!"
+  },
+  "msg_legend2_hint_ability_6_01_u": {
+    "en": "If you happen to find two identical\r\nmonsters in a room, be careful!",
+    "ua": "Якщо в кімнаті трапляться два\nоднакові чудовиська — обережно!"
+  },
+  "msg_legend2_hint_ability_6_02_u": {
+    "en": "One of them might be\r\na decoy - a mirage!",
+    "ua": "Одне з них може бути\nоманою — маревом!"
+  },
+  "msg_legend2_hint_ability_6_03_u": {
+    "en": "Be wary. You don't want to waste\r\nan attack on a mirage!",
+    "ua": "Пильнуйте. Марно витрачати\nатаку на марево не варто!"
+  },
+  "msg_legend2_hint_ability_7_01_u": {
+    "en": "Slimes might look weak, but\r\ndon't let appearances fool you!",
+    "ua": "Слиз може здаватися слабким,\nта не вірте вигляду!"
+  },
+  "msg_legend2_hint_ability_7_02_u": {
+    "en": "There are some slimes that get\r\nbigger and bigger when hit.",
+    "ua": "Є слиз, який від ударів\nстає дедалі більшим."
+  },
+  "msg_legend2_hint_ability_7_03_u": {
+    "en": "If they get big enough to fill the\r\nentire area, they'll be unbeatable!",
+    "ua": "Якщо він виросте на всю кімнату,\nздолати його вже не вийде!"
+  },
+  "msg_legend2_hint_ability_7_03_pris_u": {
+    "en": "If they get big enough to fill the\r\nentire area, they'll be unbeatable!",
+    "ua": "Якщо він виросте на всю кімнату,\nздолати його вже не вийде!"
+  },
+  "msg_legend2_hint_ability_8_01_u": {
+    "en": "Some reapers have the power\r\nto emit a magic-warding gas.",
+    "ua": "Деякі жнеці вміють випускати\nгаз проти магії."
+  },
+  "msg_legend2_hint_ability_8_02_u": {
+    "en": "Like the name implies, that gas\r\ncan stop heroes from using magic!",
+    "ua": "Як видно з назви, цей газ не дає\nгероям чаклувати!"
+  },
+  "msg_legend2_hint_ability_8_03_u": {
+    "en": "They'll only be able to attack with\r\ntheir swords, or use potions instead.",
+    "ua": "Їм лишиться бити мечем\nабо вживати зілля."
+  },
+  "msg_legend2_hint_ability_8_02_prin_u": {
+    "en": "Like the name implies, that gas\r\ncan stop heroes from using magic!",
+    "ua": "Як видно з назви, цей газ не дає\nгероям чаклувати!"
+  },
+  "msg_legend2_hint_ability_8_03_prin_u": {
+    "en": "They'll only be able to attack with\r\ntheir swords, or use potions instead.",
+    "ua": "Їм лишиться бити мечем\nабо вживати зілля."
+  },
+  "msg_legend2_hint_ability_8_02_pris_u": {
+    "en": "Like the name implies, that gas\r\ncan stop heroes from using magic!",
+    "ua": "Як видно з назви, цей газ не дає\nгероям чаклувати!"
+  },
+  "msg_legend2_hint_ability_8_03_pris_u": {
+    "en": "They'll only be able to attack with\r\ntheir swords, or use potions instead.",
+    "ua": "Їм лишиться бити мечем\nабо вживати зілля."
+  },
+  "msg_legend2_hint_ability_9_01_u": {
+    "en": "Courage, heroes!",
+    "ua": "Відваги, герої!"
+  },
+  "msg_legend2_hint_ability_9_01_prin_u": {
+    "en": "Courage, heroes!",
+    "ua": "Відваги, герої!"
+  },
+  "msg_legend2_hint_ability_9_01_pris_u": {
+    "en": "Courage, heroes!",
+    "ua": "Відваги, герої!"
+  },
+  "msg_legend2_hint_ability_9_02_u": {
+    "en": "Be brave in the face of monsters\r\nwho can bring your levels down.",
+    "ua": "Не бійтеся чудовиськ, які\nпонижують рівень героїв."
+  },
+  "msg_legend2_hint_ability_9_03_u": {
+    "en": "Even the strongest of heroes can be\r\nweakened by those dirty tricks.",
+    "ua": "Навіть найсильнішого героя\nможна ослабити такою підлотою."
+  },
+  "msg_legend2_hint_ability_9_04_u": {
+    "en": "If only there were a potion to put\r\na stop to those shenanigans...",
+    "ua": "Якби ж було зілля, яке\nкладе край цим витівкам…"
+  },
+  "msg_legend2_hint_ability_9_02_prin_u": {
+    "en": "Be brave in the face of monsters\r\nwho can bring your levels down.",
+    "ua": "Не бійтеся чудовиськ, які\nпонижують рівень героїв."
+  },
+  "msg_legend2_hint_ability_9_03_prin_u": {
+    "en": "Even the strongest of heroes can be\r\nweakened by those dirty tricks.",
+    "ua": "Навіть найсильнішого героя\nможна ослабити такою підлотою."
+  },
+  "msg_legend2_hint_ability_9_04_prin_u": {
+    "en": "If only there were a potion to put\r\na stop to those shenanigans...",
+    "ua": "Якби ж було зілля, яке\nкладе край цим витівкам…"
+  },
+  "msg_legend2_hint_ability_9_02_pris_u": {
+    "en": "Be brave in the face of monsters\r\nwho can bring your levels down.",
+    "ua": "Не бійтеся чудовиськ, які\nпонижують рівень героїв."
+  },
+  "msg_legend2_hint_ability_9_03_pris_u": {
+    "en": "Even the strongest of heroes can be\r\nweakened by those dirty tricks.",
+    "ua": "Навіть найсильнішого героя\nможна ослабити такою підлотою."
+  },
+  "msg_legend2_hint_ability_9_04_pris_u": {
+    "en": "If only there were a potion to put\r\na stop to those shenanigans...",
+    "ua": "Якби ж було зілля, яке\nкладе край цим витівкам…"
+  },
+  "msg_legend2_hint_ability_10_02_u": {
+    "en": "Some monsters can nullify\r\nyour magic powers.",
+    "ua": "Деякі чудовиська вміють\nзнешкоджувати вашу магію."
+  },
+  "msg_legend2_hint_ability_10_03_u": {
+    "en": "Ooh, those nasty rotters!",
+    "ua": "Ох же ж капосні негідники!"
+  },
+  "msg_legend2_hint_ability_10_02_prin_u": {
+    "en": "Some monsters can nullify\r\nyour magic powers.",
+    "ua": "Деякі чудовиська вміють\nзнешкоджувати вашу магію."
+  },
+  "msg_legend2_hint_ability_10_02_pris_u": {
+    "en": "Some monsters can nullify\r\nyour magic powers.",
+    "ua": "Деякі чудовиська вміють\nзнешкоджувати вашу магію."
+  },
+  "msg_legend2_hint_ability_10_03_pris_u": {
+    "en": "Ooh, those beastly things!",
+    "ua": "Ох же ж почвари!"
+  },
+  "msg_legend2_hint_ability_11_01_u": {
+    "en": "Some monsters have particularly\r\nstrong magical defences.",
+    "ua": "У деяких чудовиськ особливо\nміцний магічний захист."
+  },
+  "msg_legend2_hint_ability_11_02_u": {
+    "en": "Poison, ice and sleep spells\r\nwon't work on them, I hear...",
+    "ua": "Кажуть, отрута, крига й сонне\nзакляття на них не діють…"
+  },
+  "msg_legend2_hint_ability_11_01_pris_u": {
+    "en": "Some monsters have particularly\r\nstrong magical defences.",
+    "ua": "У деяких чудовиськ особливо\nміцний магічний захист."
+  },
+  "msg_legend2_hint_ability_11_02_pris_u": {
+    "en": "Poison, ice and sleep spells\r\nwon't work on them, I hear...",
+    "ua": "Кажуть, отрута, крига й сонне\nзакляття на них не діють…"
+  },
+  "msg_legend2_hint_ability_12_01_u": {
+    "en": "Armoured ghosts are very proud\r\nof their steel plating.",
+    "ua": "Латні привиди дуже пишаються\nсвоїми сталевими латами."
+  },
+  "msg_legend2_hint_ability_12_01_prin_u": {
+    "en": "Armoured ghosts are very proud\r\nof their steel plating.",
+    "ua": "Латні привиди дуже пишаються\nсвоїми сталевими латами."
+  },
+  "msg_legend2_hint_ability_12_01_pris_u": {
+    "en": "Armoured ghosts are very proud\r\nof their steel plating.",
+    "ua": "Латні привиди дуже пишаються\nсвоїми сталевими латами."
+  },
+  "msg_legend2_hint_ability_12_02_u": {
+    "en": "They'll put it to good use blocking\r\nattacks on their allies!",
+    "ua": "І користуються ними, щоб\nприкривати своїх від ударів!"
+  },
+  "msg_legend2_hint_ability_12_03_u": {
+    "en": "When armoured ghosts are about,\r\neven weak foes are a threat!",
+    "ua": "Коли поруч латні привиди, навіть\nслабкий ворог небезпечний!"
+  },
+  "msg_legend2_hint_ability_12_03_prin_u": {
+    "en": "Even weak enemies are dangerous\r\nwhen armoured ghosts are about!",
+    "ua": "Навіть слабкі вороги небезпечні,\nколи поруч латні привиди!"
+  },
+  "msg_legend2_hint_ability_12_03_pris_u": {
+    "en": "Even weak enemies are dangerous\r\nwhen armoured ghosts are about!",
+    "ua": "Навіть слабкі вороги небезпечні,\nколи поруч латні привиди!"
+  },
+  "msg_legend2_hint_ability_13_02_u": {
+    "en": "Some of the little blighters are\r\nskilled at dodging sword attacks.",
+    "ua": "Деякі з цих капосників добре\nвміють ухилятися від меча."
+  },
+  "msg_legend2_hint_ability_13_03_u": {
+    "en": "Apparently, magic is no\r\nuse on them either.",
+    "ua": "Схоже, і магія на них\nне діє."
+  },
+  "msg_legend2_hint_ability_13_04_u": {
+    "en": "I suppose you'll just have to hope\r\nfor a lucky blow with your blade...",
+    "ua": "Мабуть, лишається сподіватися\nна влучний удар мечем…"
+  },
+  "msg_legend2_hint_ability_13_02_pris_u": {
+    "en": "Some of those creeps are skilled\r\nat dodging sword attacks.",
+    "ua": "Деякі з цих почвар добре\nвміють ухилятися від меча."
+  },
+  "msg_legend2_hint_ability_13_03_pris_u": {
+    "en": "Apparently, magic is no\r\nuse on them either.",
+    "ua": "Схоже, і магія на них\nне діє."
+  },
+  "msg_legend2_hint_ability_13_04_pris_u": {
+    "en": "I suppose you'll just have to hope\r\nfor a lucky blow with your blade...",
+    "ua": "Мабуть, лишається сподіватися\nна влучний удар мечем…"
+  },
+  "msg_legend2_hint_merchant_1_01_u": {
+    "en": "You can now use potions\r\nduring battle!",
+    "ua": "Тепер зілля можна\nвживати просто в бою!"
+  },
+  "msg_legend2_hint_merchant_1_02_u": {
+    "en": "First, place an order with the\r\nPotion Service using  Play Coins.",
+    "ua": "Спершу замовте зілля у службі\nдоставки за  ігрові монетки."
+  },
+  "msg_legend2_hint_merchant_1_03_u": {
+    "en": "The potion you ordered will be\r\nimmediately dispatched for delivery.",
+    "ua": "Замовлене зілля відправлять\nвам одразу."
+  },
+  "msg_legend2_hint_merchant_1_04_u": {
+    "en": "You'll have to use it there and then,\r\nso time your orders carefully!",
+    "ua": "Ужити його треба тут-таки, тож\nобирайте мить для замовлення!"
+  },
+  "msg_legend2_hint_merchant_1_01_pris_u": {
+    "en": "You can now use potions\r\nduring battle!",
+    "ua": "Тепер зілля можна\nвживати просто в бою!"
+  },
+  "msg_legend2_hint_merchant_1_02_pris_u": {
+    "en": "First, place an order with the\r\nPotion Service using  Play Coins.",
+    "ua": "Спершу замовте зілля у службі\nдоставки за  ігрові монетки."
+  },
+  "msg_legend2_hint_merchant_1_03_pris_u": {
+    "en": "The potion you ordered will be\r\nimmediately dispatched for delivery.",
+    "ua": "Замовлене зілля відправлять\nвам одразу."
+  },
+  "msg_legend2_hint_merchant_2_01_u": {
+    "en": "The potions offered by the Potion\r\nService can be very useful.",
+    "ua": "Зілля зі служби доставки\nбувають дуже корисні."
+  },
+  "msg_legend2_hint_merchant_2_02_u": {
+    "en": "However! If you buy something\r\nother than a vial of valour...",
+    "ua": "Але! Якщо ви купуєте щось,\nокрім настою відваги…"
+  },
+  "msg_legend2_hint_merchant_2_03_u": {
+    "en": "you should make sure another hero\r\nis behind the one making the order!",
+    "ua": "подбайте, щоб за героєм-\nзамовником стояв ще один герой!"
+  },
+  "msg_legend2_hint_merchant_2_04_u": {
+    "en": "Otherwise, you'll just waste\r\na perfectly good potion.",
+    "ua": "Інакше ви просто змарнуєте\nчудове зілля."
+  },
+  "msg_legend2_hint_merchant_2_03_prin_u": {
+    "en": "you should make sure another hero\r\nis behind the one making the order!",
+    "ua": "подбайте, щоб за героєм-\nзамовником стояв ще один герой!"
+  },
+  "msg_legend2_hint_merchant_2_04_prin_u": {
+    "en": "Otherwise, you'll just waste\r\na perfectly good potion.",
+    "ua": "Інакше ви просто змарнуєте\nчудове зілля."
+  },
+  "msg_legend2_hint_merchant_2_03_pris_u": {
+    "en": "you should make sure another hero\r\nis behind the one making the order!",
+    "ua": "подбайте, щоб за героєм-\nзамовником стояв ще один герой!"
+  },
+  "msg_legend2_hint_merchant_2_04_pris_u": {
+    "en": "Otherwise, you'll just waste\r\na perfectly good potion.",
+    "ua": "Інакше ви просто змарнуєте\nчудове зілля."
+  },
+  "msg_legend2_hint_bright_1_01_pris_u": {
+    "en": "So the dazzling room's too\r\nbright to see anything in?",
+    "ua": "То в сліпучій кімнаті так ясно,\nщо нічого не видно?"
+  },
+  "msg_legend2_hint_bright_1_02_pris_u": {
+    "en": "Sounds like you need a way to\r\nturn the lights down a notch.",
+    "ua": "Схоже, треба якось\nприглушити те світло."
+  },
+  "msg_legend2_hint_bright_1_03_pris_u": {
+    "en": "Hmm... Now, what do you\r\nhave at your disposal?",
+    "ua": "Гмм… А що у вас\nє під рукою?"
+  },
+  "msg_legend2_hint_bright_2_01_pris_u": {
+    "en": "I know! Magic!",
+    "ua": "Придумала! Магія!"
+  },
+  "msg_legend2_hint_bright_2_02_pris_u": {
+    "en": "I'm sure there's some kind of magic\r\nthat'll deal with that dazzling light.",
+    "ua": "Певна, є магія, яка дасть\nраду тому сліпучому світлу."
+  },
+  "msg_legend2_hint_bright_2_03_pris_u": {
+    "en": "Oh, which colour was it?",
+    "ua": "О, а якого вона кольору?"
+  },
+  "msg_legend2_hint_bright_3_01_pris_u": {
+    "en": "I remember now!\r\nYou want black magic!",
+    "ua": "Згадала!\nПотрібна чорна магія!"
+  },
+  "msg_legend2_hint_bright_3_02_pris_u": {
+    "en": "Black magic is just the ticket for\r\ndarkening that dazzling room.",
+    "ua": "Чорна магія — саме те, щоб\nзатемнити сліпучу кімнату."
+  },
+  "msg_legend2_hint_bright_3_03_pris_u": {
+    "en": "Black-clad heroes,\r\nnow's your chance!",
+    "ua": "Герої в чорному,\nваш час настав!"
+  },
+  "msg_legend2_hint_first_01_prin_u": {
+    "en": "Where am I?",
+    "ua": "Де я?"
+  },
+  "msg_legend2_hint_first_02_prin_u": {
+    "en": "Please, brave heroes,\r\ncome and save me!",
+    "ua": "Прошу, звитяжні герої,\nприходьте й врятуйте мене!"
+  },
+  "msg_legend2_hint_first_01_pris_u": {
+    "en": "Where am I?",
+    "ua": "Де я?"
+  },
+  "msg_legend2_hint_first_02_pris_u": {
+    "en": "If I ever needed a knight in shining\r\narmour, now's the time!",
+    "ua": "Якщо мені й потрібен був лицар\nу сяйних латах, то саме зараз!"
+  },
+  "msg_legend2_hint_common_1_01_u": {
+    "en": "I wonder how the prince and\r\nprincess are getting on.",
+    "ua": "Цікаво, як там принц\nі принцеса."
+  },
+  "msg_legend2_hint_common_1_02_u": {
+    "en": "I hope they're safe...",
+    "ua": "Хоч би вони були цілі…"
+  },
+  "msg_legend2_hint_common_1_01_prin_u": {
+    "en": "I wonder how the others\r\nare getting on.",
+    "ua": "Цікаво, як там\nінші."
+  },
+  "msg_legend2_hint_common_1_02_prin_u": {
+    "en": "Hope they're OK...",
+    "ua": "Хоч би з ними все гаразд…"
+  },
+  "msg_legend2_hint_common_1_01_pris_u": {
+    "en": "I wonder how the others\r\nare getting on.",
+    "ua": "Цікаво, як там\nінші."
+  },
+  "msg_legend2_hint_common_1_02_pris_u": {
+    "en": "I do hope they're alright...",
+    "ua": "Хоч би з ними все було гаразд…"
+  },
+  "msg_legend2_hint_common_1_03_u": {
+    "en": "Oh, I fear for the kingdom...",
+    "ua": "Ох, боюся я за королівство…"
+  },
+  "msg_legend2_hint_common_2_01_u": {
+    "en": "Mmm... Zzz...\r\n...Go, heroes!...",
+    "ua": "Ммм… Хррр…\n…Уперед, герої!…"
+  },
+  "msg_legend2_hint_common_2_02_u": {
+    "en": "Magic! Now's the time\r\nto use magic!",
+    "ua": "Магія! Саме час\nбрати магію!"
+  },
+  "msg_legend2_hint_common_2_03_u": {
+    "en": "Zzz...",
+    "ua": "Хррр…"
+  },
+  "msg_legend2_hint_common_4_01_u": {
+    "en": "Those villains who kidnapped me...",
+    "ua": "Ці лиходії, які мене викрали…"
+  },
+  "msg_legend2_hint_common_4_02_u": {
+    "en": "What's their game?\r\nWhat are they after?!",
+    "ua": "Що вони затіяли?\nЧого їм треба?!"
+  },
+  "msg_legend2_hint_common_4_01_prin_u": {
+    "en": "Those baddies who kidnapped us...",
+    "ua": "Ці злодюги, які нас викрали…"
+  },
+  "msg_legend2_hint_common_4_02_prin_u": {
+    "en": "Just what do they want?!",
+    "ua": "Та чого їм треба?!"
+  },
+  "msg_legend2_hint_common_4_01_pris_u": {
+    "en": "Those baddies who kidnapped us...",
+    "ua": "Ці злодюги, які нас викрали…"
+  },
+  "msg_legend2_hint_common_4_02_pris_u": {
+    "en": "Just what do they want?!",
+    "ua": "Та чого їм треба?!"
+  },
+  "msg_legend2_hint_common_5_01_u": {
+    "en": "Those monsters can put up\r\nquite a fight, can't they?",
+    "ua": "Ці чудовиська вміють дати\nвідсіч, еге ж?"
+  },
+  "msg_legend2_hint_common_5_02_u": {
+    "en": "Don't let them get the best of you.\r\nKeep on fighting...and save me!",
+    "ua": "Не дайте їм узяти гору.\nБийтеся далі… і врятуйте мене!"
+  },
+  "msg_legend2_hint_common_6_01_u": {
+    "en": "Brr... It's a bit nippy.",
+    "ua": "Бр-р… Прохолодно."
+  },
+  "msg_legend2_hint_common_6_01_prin_u": {
+    "en": "Brr... I'm cold...",
+    "ua": "Бр-р… Холодно…"
+  },
+  "msg_legend2_hint_common_6_01_pris_u": {
+    "en": "Brr... It's chilly...",
+    "ua": "Бр-р… Зимно…"
+  },
+  "msg_legend2_hint_common_6_02_u": {
+    "en": "Would that I had some red\r\nmagic to warm myself up...",
+    "ua": "Якби ж я мав червону магію,\nщоб зігрітися…"
+  },
+  "msg_legend2_hint_common_2_01_prin_u": {
+    "en": "Zzz... Mmm...\r\nKeep fighting, heroes!",
+    "ua": "Хррр… Ммм…\nБийтеся, герої!"
+  },
+  "msg_legend2_hint_common_2_02_prin_u": {
+    "en": "Yes! That's it!\r\nUse a combo blade attack!",
+    "ua": "Так! Отак!\nСерію ударів!"
+  },
+  "msg_legend2_hint_common_2_03_prin_u": {
+    "en": "Zzz...",
+    "ua": "Хррр…"
+  },
+  "msg_legend2_hint_common_15_01_prin_u": {
+    "en": "Just look at those monsters\r\nwrapped up in bandages!",
+    "ua": "Ви тільки гляньте на цих\nчудовиськ у бинтах!"
+  },
+  "msg_legend2_hint_common_15_02_prin_u": {
+    "en": "I wonder if they all had\r\na nasty accident...",
+    "ua": "Цікаво, чи з ними всіма\nсталася якась халепа…"
+  },
+  "msg_legend2_hint_common_9_01_u": {
+    "en": "Phew, I'm parched...",
+    "ua": "Ох, у горлі пересохло…"
+  },
+  "msg_legend2_hint_common_9_01_prin_u": {
+    "en": "So thirsty...",
+    "ua": "Пити хочу…"
+  },
+  "msg_legend2_hint_common_9_01_pris_u": {
+    "en": "So thirsty...",
+    "ua": "Пити хочу…"
+  },
+  "msg_legend2_hint_common_9_02_u": {
+    "en": "Would that I could use blue magic.\r\nI'd have all the water I want!",
+    "ua": "Якби ж я вмів синю магію.\nВоди було б скільки завгодно!"
+  },
+  "msg_legend2_hint_common_15_01_pris_u": {
+    "en": "Those big stone puppets are so\r\nstrange... How do they work?",
+    "ua": "Ці великі кам'яні ляльки такі\nдивні… Як вони працюють?"
+  },
+  "msg_legend2_hint_common_15_02_pris_u": {
+    "en": "How very mysterious... One could\r\neven go so far as to say 'enigmatic'!",
+    "ua": "Дуже загадково… Можна навіть\nсказати — «таємниче»!"
+  },
+  "msg_legend2_hint_common_2_01_pris_u": {
+    "en": "Zzz... Fight, heroes!",
+    "ua": "Хррр… Бийтеся, герої!"
+  },
+  "msg_legend2_hint_common_2_02_pris_u": {
+    "en": "Now! Use combo magic!",
+    "ua": "Нумо! Спільну магію!"
+  },
+  "msg_legend2_hint_common_2_03_pris_u": {
+    "en": "Zzz...",
+    "ua": "Хррр…"
+  },
+  "msg_legend2_hint_common_5_01_prin_u": {
+    "en": "I daresay those slimes would\r\nmake rather nice pillows.",
+    "ua": "Гадаю, з того слизу вийшли б\nдоволі гарні подушки."
+  },
+  "msg_legend2_hint_common_5_02_prin_u": {
+    "en": "They're so soft and squidgy...\r\nPerfect for resting my royal head.",
+    "ua": "Такий м'який і пружний…\nСаме для моєї королівської голови."
+  },
+  "msg_legend2_hint_common_5_01_pris_u": {
+    "en": "One of those tin cans is\r\nlooking right at me!",
+    "ua": "Одна з тих бляшанок\nдивиться просто на мене!"
+  },
+  "msg_legend2_hint_common_5_02_pris_u": {
+    "en": "If only it were a gallant knight\r\non a white horse instead...",
+    "ua": "Якби ж то замість неї був\nзвитяжний лицар на білому коні…"
+  },
+  "msg_legend2_hint_common_15_01_u": {
+    "en": "Stop swinging that scythe around!\r\nYou'll have someone's eye out!",
+    "ua": "Годі махати тією косою!\nЩе комусь око виб'єте!"
+  },
+  "msg_legend2_hint_common_15_02_u": {
+    "en": "Cuh, typical. Absolutely typical!\r\nThe nonsense I have to put up with!",
+    "ua": "Кхм, як завжди. Ну звісно!\nІ що я мушу терпіти!"
+  },
+  "msg_legend2_hint_lastghost_1_01_u": {
+    "en": "You must overcome this ghost\r\nto save our kingdom!",
+    "ua": "Ви мусите здолати цього привида,\nщоб урятувати наше королівство!"
+  },
+  "msg_legend2_hint_lastghost_2_01_u": {
+    "en": "Yuck! It's disgusting!",
+    "ua": "Фу! Яка гидота!"
+  },
+  "msg_legend2_hint_lastghost_2_02_u": {
+    "en": "Heroes! Come and save\r\nme from this monster!",
+    "ua": "Герої! Прийдіть і врятуйте\nмене від цього чудовиська!"
+  },
+  "msg_legend2_hint_lastghost_3_01_u": {
+    "en": "Peeeee-yew! What a stench!",
+    "ua": "Фууу! Ну й сморід!"
+  },
+  "msg_legend2_hint_lastghost_4_01_u": {
+    "en": "What a massive monstrosity!",
+    "ua": "Оце так почвара!"
+  },
+  "msg_legend2_hint_lastghost_4_02_u": {
+    "en": "Never fear, heroes!\r\nI know you can beat it!",
+    "ua": "Не бійтеся, герої!\nЯ знаю, ви її здолаєте!"
+  },
+  "msg_legend2_hint_lastghost_5_01_u": {
+    "en": "Goodness!\r\nNot this ghastly ghoul again!",
+    "ua": "Матінко!\nЗнову ця мерзенна почвара!"
+  },
+  "msg_legend2_hint_lastghost_5_02_u": {
+    "en": "If I'm not mistaken, this one's\r\nthe leader of the loathsome lot!",
+    "ua": "Якщо не помиляюся, це\nватажок усієї бридкої зграї!"
+  },
+  "msg_legend2_hint_lastghost_5_03_u": {
+    "en": "I don't think I'll ever get used\r\nto that grim look on his face...!",
+    "ua": "Певно, я ніколи не звикну\nдо цієї похмурої пики…!"
+  },
+  "msg_legend2_hint_lastboss_1_01_u": {
+    "en": "Look at those wings and claws...\r\nHe's just like a giant bird!",
+    "ua": "Гляньте на ці крила й пазурі…\nВін наче велетенський птах!"
+  },
+  "msg_legend2_hint_lastboss_2_01_u": {
+    "en": "He may look like a mighty foe, but\r\nI have faith in you! You can do it!",
+    "ua": "Ворог могутній, та я вірю\nу вас! У вас усе вийде!"
+  },
+  "msg_legend2_hint_lastboss_3_01_u": {
+    "en": "This is the final battle...",
+    "ua": "Це останній бій…"
+  },
+  "msg_legend2_hint_lastboss_3_02_u": {
+    "en": "You can't give up now!\r\nI know you can win!",
+    "ua": "Не здавайтеся зараз!\nЯ знаю, ви переможете!"
+  },
+  "msg_legend2_hint_lastboss_6_01_u": {
+    "en": "Nngh... Th-that hurts...!",
+    "ua": "Ох… Б-боляче…!"
+  },
+  "msg_legend2_hint_lastboss_6_02_u": {
+    "en": "Please, hurry...",
+    "ua": "Прошу, швидше…"
+  },
+  "msg_legend2_hint_lastboss_7_01_u": {
+    "en": "I don't even want to think about\r\nwhat would happen if I fell...",
+    "ua": "Навіть думати не хочу,\nщо буде, як я впаду…"
+  },
+  "msg_legend2_hint_lastboss_7_02_u": {
+    "en": "Urgh... My head's spinning!",
+    "ua": "Ох… Голова обертом!"
+  },
+  "msg_legend2_hint_heronothing_1_01_u": {
+    "en": "I see we don't have much in the way\r\nof heroes at the moment.",
+    "ua": "Бачу, героїв у нас\nзараз обмаль."
+  },
+  "msg_legend2_hint_heronothing_1_01_prin_u": {
+    "en": "Looks like we're short\r\non heroes...",
+    "ua": "Схоже, героїв\nу нас бракує…"
+  },
+  "msg_legend2_hint_heronothing_1_01_pris_u": {
+    "en": "Where is my knight\r\nin shining armour?",
+    "ua": "Де ж мій лицар\nу сяйних латах?"
+  },
+  "msg_legend2_hint_heronothing_1_02_u": {
+    "en": "Use StreetPass to gather\r\nheroes for our cause!",
+    "ua": "Збирайте героїв для нашої\nсправи через StreetPass!"
+  },
+  "msg_legend2_hint_heronothing_1_03_u": {
+    "en": "It might be a good idea to hire\r\nsome using  Play Coins, too!",
+    "ua": "Незле було б і найняти\nкількох за  ігрові монетки!"
+  },
+  "msg_legend2_hint_heronothing_1_04_u": {
+    "en": "Please, hurry!",
+    "ua": "Прошу, швидше!"
+  },
+  "msg_legend2_hint_heronothing_1_02_prin_u": {
+    "en": "Use StreetPass to gather\r\nvaliant heroes!",
+    "ua": "Збирайте звитяжних героїв\nчерез StreetPass!"
+  },
+  "msg_legend2_hint_heronothing_1_03_prin_u": {
+    "en": "It might be a good idea to hire\r\nsome using  Play Coins, too!",
+    "ua": "Незле було б і найняти\nкількох за  ігрові монетки!"
+  },
+  "msg_legend2_hint_heronothing_1_02_pris_u": {
+    "en": "Please, use StreetPass\r\nto gather heroes!",
+    "ua": "Прошу, збирайте героїв\nчерез StreetPass!"
+  },
+  "msg_legend2_hint_heronothing_1_03_pris_u": {
+    "en": "It might be a good idea to hire\r\nsome using  Play Coins, too!",
+    "ua": "Незле було б і найняти\nкількох за  ігрові монетки!"
+  },
+  "msg_legend2_hint_heronothing_1_04_pris_u": {
+    "en": "Please... Save me!",
+    "ua": "Прошу… Врятуйте мене!"
+  },
+  "msg_legend2_hint_heronothing_2_01_u": {
+    "en": "This is terrible... Are there no heroes\r\nwilling to rise to the challenge?",
+    "ua": "Це жахливо… Невже немає героїв,\nготових стати до бою?"
+  },
+  "msg_legend2_hint_heronothing_2_02_u": {
+    "en": "Try gathering heroes\r\nusing StreetPass!",
+    "ua": "Спробуйте зібрати героїв\nчерез StreetPass!"
+  },
+  "msg_legend2_hint_heronothing_2_03_u": {
+    "en": "You can also summon heroes\r\nusing  Play Coins!",
+    "ua": "Героїв можна також викликати\nза  ігрові монетки!"
+  },
+  "msg_legend2_hint_heronothing_2_04_u": {
+    "en": "Please, don't leave me hanging!",
+    "ua": "Прошу, не лишайте мене\nнапризволяще!"
+  },
+  "msg_legend2_hint_heronothing_3_01_u": {
+    "en": "Hurry, heroes!\r\nCome to my royal rescue!",
+    "ua": "Швидше, герої!\nРятуйте свого володаря!"
+  },
+  "msg_legend2_hint_heronothing_3_02_u": {
+    "en": "Why don't you try gathering\r\nheroes using StreetPass?",
+    "ua": "Чому б не зібрати героїв\nчерез StreetPass?"
+  },
+  "msg_legend2_hint_heronothing_3_03_u": {
+    "en": "You can even hire heroes\r\nusing  Play Coins, too!",
+    "ua": "Героїв можна навіть найняти\nза  ігрові монетки!"
+  },
+  "msg_legend2_hint_heronothing_3_04_u": {
+    "en": "Please! You've got to deal with\r\nthis horror as soon as you can!",
+    "ua": "Прошу! Дайте раду цьому\nжахіттю якомога швидше!"
+  }
+}

@@ -1,0 +1,426 @@
+{
+  "dlg_choice_square_watch_u": {
+    "en": "View Mii",
+    "ua": "Глянути Mii"
+  },
+  "dlg_choice_square_mii_edit_u": {
+    "en": "Mii Settings",
+    "ua": "Параметри Mii"
+  },
+  "dlg_choice_square_go_edit_u": {
+    "en": "Mii Maker",
+    "ua": "Mii Maker"
+  },
+  "dlg_choice_square_delete_u": {
+    "en": "Erase",
+    "ua": "Стерти"
+  },
+  "dlg_choice_square_change_u": {
+    "en": "Change Mii",
+    "ua": "Змінити Mii"
+  },
+  "dlg_choice_square_hat_u": {
+    "en": "Change Outfit",
+    "ua": "Змінити вбрання"
+  },
+  "dlg_choice_square_edit_greeting_u": {
+    "en": "Edit Greeting",
+    "ua": "Змінити вітання"
+  },
+  "dlg_choice_square_edit_profile_u": {
+    "en": "Edit Profile",
+    "ua": "Змінити профіль"
+  },
+  "dlg_choice_back_u": {
+    "en": "Back",
+    "ua": "Назад"
+  },
+  "dlg_select_mii01_u": {
+    "en": "Select a Mii to send to other\r\nusers over StreetPass!",
+    "ua": "Виберіть Mii, якого надсилатимете\nіншим через StreetPass!"
+  },
+  "dlg_select_mii02_u": {
+    "en": "You may only select a Mii\r\nthat you have created.",
+    "ua": "Можна вибрати лише\nствореного вами Mii."
+  },
+  "dlg_mii_conform_u": {
+    "en": "Use this Mii?",
+    "ua": "Узяти цього Mii?"
+  },
+  "cap_my_mii_u": {
+    "en": "Your StreetPass Mii",
+    "ua": "Ваш StreetPass Mii"
+  },
+  "dlg_choice_good_u": {
+    "en": "Yes",
+    "ua": "Так"
+  },
+  "dlg_choice_different_u": {
+    "en": "No",
+    "ua": "Ні"
+  },
+  "dlg_greeting_01_u": {
+    "en": "Enter a greeting that your Mii will\r\nsay to other users' Mii characters!",
+    "ua": "Введіть вітання, яке ваш Mii\nказатиме Mii інших користувачів!"
+  },
+  "dlg_first_ed_u": {
+    "en": "Great!\r\nNow everything's good to go.",
+    "ua": "Чудово!\nТепер усе готово."
+  },
+  "dlg_greeting_02_u": {
+    "en": "Please don't include personal\r\ninformation or offensive language.",
+    "ua": "Не пишіть особистих даних\nта образливих слів."
+  },
+  "dlg_greeting_04_u": {
+    "en": "Is this greeting OK?",
+    "ua": "Це вітання підходить?"
+  },
+  "dlg_greeting_05_u": {
+    "en": "Edit this greeting?",
+    "ua": "Змінити це вітання?"
+  },
+  "dlg_choice_change_u": {
+    "en": "Edit",
+    "ua": "Змінити"
+  },
+  "dlg_choice_keep_u": {
+    "en": "Keep",
+    "ua": "Лишити"
+  },
+  "cmn_whipout_u": {
+    "en": "Take out the stylus!",
+    "ua": "Дістаньте стилус!"
+  },
+  "cap_g_confirm_u": {
+    "en": "Confirm Greeting",
+    "ua": "Перевірка вітання"
+  },
+  "dlg_choice_good_msg_u": {
+    "en": "Accept",
+    "ua": "Узяти"
+  },
+  "dlg_choice_rewrite_msg_u": {
+    "en": "Rewrite",
+    "ua": "Змінити"
+  },
+  "cap_g_editing_u": {
+    "en": "Edit Greeting",
+    "ua": "Змінити вітання"
+  },
+  "dlg_decide_g_u": {
+    "en": "Greeting set to:\r\n\"[0]\"",
+    "ua": "Вітання:\n«[0]»"
+  },
+  "cap_p_editing_u": {
+    "en": "Edit Profile",
+    "ua": "Змінити профіль"
+  },
+  "dlg_go_edit_03_u": {
+    "en": "Register this Mii in\r\nMii Maker?",
+    "ua": "Додати цього Mii\nдо Конструктора Mii?"
+  },
+  "dlg_choice_register_u": {
+    "en": "Yes",
+    "ua": "Так"
+  },
+  "dlg_choice_now_do_not_u": {
+    "en": "No",
+    "ua": "Ні"
+  },
+  "dlg_not_go_edit_u": {
+    "en": "You cannot take this Mii\r\nto Mii Maker.",
+    "ua": "Цього Mii не перенести\nв Конструктор Mii."
+  },
+  "dlg_rewrite_edit_u": {
+    "en": "Overwrite the same Mii\r\nin Mii Maker?",
+    "ua": "Замінити цього Mii\nв Конструкторі Mii?"
+  },
+  "dlg_choice_now_do_u": {
+    "en": "Yes",
+    "ua": "Так"
+  },
+  "dlg_rewrited_edit_u": {
+    "en": "The Mii in Mii Maker\r\nwas overwritten.",
+    "ua": "Mii в Конструкторі Mii\nперезаписано."
+  },
+  "dlg_full_mii_u": {
+    "en": "Mii Maker is full.",
+    "ua": "Mii Maker заповнено."
+  },
+  "dlg_same_mii_u": {
+    "en": "This Mii is already in\r\nMii Maker.",
+    "ua": "Цей Mii вже є\nв Конструкторі Mii."
+  },
+  "dlg_transfer_mii_u": {
+    "en": "The Mii has been added\r\nto Mii Maker.",
+    "ua": "Mii додано\nдо Конструктора Mii."
+  },
+  "dlg_choice_last_game_u": {
+    "en": "Most Recent Software",
+    "ua": "Остання програма"
+  },
+  "cap_last_game_u": {
+    "en": "Most Recent Software",
+    "ua": "Остання програма"
+  },
+  "dlg_e_shop_1_u": {
+    "en": "View details in Nintendo eShop?",
+    "ua": "Переглянути подробиці\nв Nintendo eShop?"
+  },
+  "dlg_e_shop_2_u": {
+    "en": "This will close StreetPass Mii Plaza.",
+    "ua": "Площу StreetPass Mii буде закрито."
+  },
+  "dlg_choice_go_e_shop_u": {
+    "en": "View",
+    "ua": "Глянути"
+  },
+  "dlg_choice_not_go_e_shop_u": {
+    "en": "Later",
+    "ua": "Пізніше"
+  },
+  "dlg_erase_u": {
+    "en": "Erase this Mii?",
+    "ua": "Стерти цього Mii?"
+  },
+  "dlg_real_erase_u": {
+    "en": "Really erase this Mii?",
+    "ua": "Справді стерти цього\nMii?"
+  },
+  "dlg_real_erase_02_u": {
+    "en": "Deleted data can't be\r\nrecovered, so be careful.",
+    "ua": "Видалене не відновити,\nтож будьте уважні."
+  },
+  "dlg_choice_real_delete02_u": {
+    "en": "Erase",
+    "ua": "Стерти"
+  },
+  "dlg_choice_end_u": {
+    "en": "Cancel",
+    "ua": "Скасувати"
+  },
+  "dlg_mii_delete_u": {
+    "en": "Erasing Mii...\r\nPlease don't turn off the power.",
+    "ua": "Видалення Mii…\nНе вимикайте живлення."
+  },
+  "dlg_deleted_mii_u": {
+    "en": "The Mii has been erased.",
+    "ua": "Mii стерто."
+  },
+  "cap_list_u": {
+    "en": "Blocked-User Settings",
+    "ua": "Заблоковані користувачі"
+  },
+  "dlg_list_01_u": {
+    "en": "Do you want to add the creator of\r\nthis Mii to the blocked-user list?",
+    "ua": "Додати автора цього Mii\nдо списку заблокованих?"
+  },
+  "dlg_list_02_u": {
+    "en": "You may not be able to see content created\r\nby this user in other software.",
+    "ua": "В інших програмах вміст цього користувача\nможе стати недоступним."
+  },
+  "dlg_choice_list_u": {
+    "en": "Add",
+    "ua": "Додати"
+  },
+  "dlg_choice_not_list_u": {
+    "en": "Don't Add",
+    "ua": "Не додавати"
+  },
+  "dlg_list_03_u": {
+    "en": "Are you sure you want to add this\r\nuser to the blocked-user list?",
+    "ua": "Справді додати цього користувача\nдо списку заблокованих?"
+  },
+  "cap_make_player_name_u": {
+    "en": "Creator Name Display",
+    "ua": "Показ імені автора"
+  },
+  "dlg_make_player_name00_u": {
+    "en": "Make the creator name public?",
+    "ua": "Показувати ім'я автора?"
+  },
+  "dlg_make_player_name01_u": {
+    "en": "The creator name entered in Mii Maker will\r\nbe displayed to other users via StreetPass.",
+    "ua": "Ім'я автора з Конструктора Mii бачитимуть\nінші користувачі через StreetPass."
+  },
+  "dlg_choice_do_not_u": {
+    "en": "No",
+    "ua": "Ні"
+  },
+  "dlg_choice_show_u": {
+    "en": "Yes",
+    "ua": "Так"
+  },
+  "dlg_no_hat_01_u": {
+    "en": "You don't have any accessories.\r\nWhy don't you get some by playing\r\ngames in the plaza?",
+    "ua": "У вас немає аксесуарів.\nМожна здобути їх, граючи\nв ігри на площі!"
+  },
+  "dlg_go_edit_02_u": {
+    "en": "Once you do this, the Mii\r\nwill leave the plaza.",
+    "ua": "Після цього Mii\nпокине площу."
+  },
+  "dlg_go_edit_u": {
+    "en": "Take to Mii Maker?",
+    "ua": "Забрати в Mii Maker?"
+  },
+  "dlg_choice_move_u": {
+    "en": "Take",
+    "ua": "Забрати"
+  },
+  "feeling_captionT": {
+    "en": "Expression",
+    "ua": "Вираз"
+  },
+  "dlg_p_editing_u": {
+    "en": "Edit your profile?",
+    "ua": "Змінити ваш профіль?"
+  },
+  "dlg_g_editing_u": {
+    "en": "Edit your greeting?",
+    "ua": "Змінити ваше вітання?"
+  },
+  "dlg_choice_do_u": {
+    "en": "Yes",
+    "ua": "Так"
+  },
+  "dlg_choice_do_not_u_00": {
+    "en": "No",
+    "ua": "Ні"
+  },
+  "employ_caption01_coin": {
+    "en": "Cost",
+    "ua": "Ціна"
+  },
+  "employ_choice_agree": {
+    "en": "Hire",
+    "ua": "Найняти"
+  },
+  "employ_choice_disagree": {
+    "en": "Never mind",
+    "ua": "Не варто"
+  },
+  "employ_not_enough_coin": {
+    "en": "You don't have enough\r\n Play Coins.",
+    "ua": "Бракує ігрових\nмонеток ."
+  },
+  "employ_filter_subhead": {
+    "en": " Filter",
+    "ua": " Фільтр"
+  },
+  "employ_filter_empty": {
+    "en": "No results found.",
+    "ua": "Нічого не знайдено."
+  },
+  "employ_filter_caption_00": {
+    "en": "Choose a Level",
+    "ua": "Виберіть рівень"
+  },
+  "employ_filter_caption_01": {
+    "en": "Choose a Colour",
+    "ua": "Виберіть колір"
+  },
+  "employ_filter_all": {
+    "en": "(Show All)",
+    "ua": "(Усі)"
+  },
+  "employ_filter_level": {
+    "en": "Level [0]",
+    "ua": "Рівень [0]"
+  },
+  "employ_filter_red": {
+    "en": "Red",
+    "ua": "Червоні"
+  },
+  "employ_filter_orange": {
+    "en": "Orange",
+    "ua": "Оранжеві"
+  },
+  "employ_filter_yellow": {
+    "en": "Yellow",
+    "ua": "Жовті"
+  },
+  "employ_filter_yellowgreen": {
+    "en": "Light Green",
+    "ua": "Салатові"
+  },
+  "employ_filter_green": {
+    "en": "Green",
+    "ua": "Зелені"
+  },
+  "employ_filter_blue": {
+    "en": "Blue",
+    "ua": "Сині"
+  },
+  "employ_filter_skyblue": {
+    "en": "Light Blue",
+    "ua": "Блакитні"
+  },
+  "employ_filter_pink": {
+    "en": "Pink",
+    "ua": "Рожеві"
+  },
+  "employ_filter_purple": {
+    "en": "Purple",
+    "ua": "Лілові"
+  },
+  "employ_filter_brown": {
+    "en": "Brown",
+    "ua": "Коричневі"
+  },
+  "employ_filter_white": {
+    "en": "White",
+    "ua": "Білі"
+  },
+  "employ_filter_black": {
+    "en": "Black",
+    "ua": "Чорні"
+  },
+  "vip_room_menu_item_00": {
+    "en": "Make VIP",
+    "ua": "Зробити VIP"
+  },
+  "vip_room_menu_item_01": {
+    "en": "Yes",
+    "ua": "Так"
+  },
+  "vip_room_menu_item_02": {
+    "en": "No",
+    "ua": "Ні"
+  },
+  "vip_room_menu_item_03": {
+    "en": "Remove VIP Status",
+    "ua": "Зняти статус VIP"
+  },
+  "vip_room_menu_item_04": {
+    "en": "No",
+    "ua": "Ні"
+  },
+  "vip_room_menu_item_05": {
+    "en": "Yes",
+    "ua": "Так"
+  },
+  "vip_room_notice_00": {
+    "en": "Move this Mii to\r\nthe VIP room?",
+    "ua": "Перемістити цього Mii\nдо VIP-кімнати?"
+  },
+  "vip_room_notice_01": {
+    "en": "The VIP room is full.",
+    "ua": "VIP-кімната заповнена."
+  },
+  "vip_room_notice_03": {
+    "en": "Remove this Mii\r\nfrom the VIP room?",
+    "ua": "Прибрати цього Mii\nз VIP-кімнати?"
+  },
+  "vip_room_annotation_00": {
+    "en": "To make new VIPs, first remove\r\nsome from your VIP room.",
+    "ua": "Щоб додати нових VIP, спершу\nприберіть когось із VIP-кімнати."
+  },
+  "vip_room_dlg_entry_00": {
+    "en": "Added to the VIP room!",
+    "ua": "Додано до VIP-кімнати!"
+  },
+  "vip_room_dlg_entry_01": {
+    "en": "You can see all VIPs\r\nin the VIP room.",
+    "ua": "Усіх VIP можна побачити\nу VIP-кімнаті."
+  }
+}

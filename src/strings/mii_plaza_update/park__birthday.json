@@ -1,0 +1,322 @@
+{
+  "month_01": {
+    "en": "January",
+    "ua": "Січ."
+  },
+  "month_02": {
+    "en": "February",
+    "ua": "Лют."
+  },
+  "month_03": {
+    "en": "March",
+    "ua": "Бер."
+  },
+  "month_04": {
+    "en": "April",
+    "ua": "Квіт."
+  },
+  "month_05": {
+    "en": "May",
+    "ua": "Трав."
+  },
+  "month_06": {
+    "en": "June",
+    "ua": "Черв."
+  },
+  "month_07": {
+    "en": "July",
+    "ua": "Лип."
+  },
+  "month_08": {
+    "en": "August",
+    "ua": "Серп."
+  },
+  "month_09": {
+    "en": "September",
+    "ua": "Вер."
+  },
+  "month_10": {
+    "en": "October",
+    "ua": "Жовт."
+  },
+  "month_11": {
+    "en": "November",
+    "ua": "Лист."
+  },
+  "month_12": {
+    "en": "December",
+    "ua": "Груд."
+  },
+  "day_cap": {
+    "en": "Days:",
+    "ua": "Днів:"
+  },
+  "day_cap_back": {
+    "en": "Days:",
+    "ua": "Днів:"
+  },
+  "dlg_bd_op_00_u": {
+    "en": "Thank you for purchasing\r\nStreetPass Mii Plaza Premium!",
+    "ua": "Дякуємо за придбання\nПреміум-площі StreetPass Mii!"
+  },
+  "dlg_bd_op_01_u": {
+    "en": "Welcome to\r\nStreetPass Birthdays!",
+    "ua": "Вітаємо в Календарі\nStreetPass!"
+  },
+  "dlg_bd_op_02_u": {
+    "en": "This is a special calendar\r\nbased on your StreetPass\r\nMii Plaza progress.",
+    "ua": "Це особливий календар,\nякий залежить від ваших\nуспіхів на Площі StreetPass Mii."
+  },
+  "dlg_bd_op_03_u": {
+    "en": "It gets coloured in based on\r\nthe birthday settings of the\r\nMii characters you meet.",
+    "ua": "Його розфарбовують дні\nнародження Mii, яких\nви зустрічаєте."
+  },
+  "dlg_bd_op_04_u": {
+    "en": "Try to meet people with as many\r\ndifferent birthdays as you can.",
+    "ua": "Шукайте людей з різними\nднями народження."
+  },
+  "dlg_bd_op_05_u": {
+    "en": "That's the way to\r\ncolour your calendar!",
+    "ua": "Так і розфарбуєте\nсвій календар!"
+  },
+  "all_cap": {
+    "en": "Days:",
+    "ua": "Днів:"
+  },
+  "all_cap_back": {
+    "en": "Days:",
+    "ua": "Днів:"
+  },
+  "dlg_bd_clear_00": {
+    "en": "Your StreetPass Birthdays\r\ncalendar is all coloured in.\r\nCongratulations!",
+    "ua": "Календар StreetPass\nрозфарбовано повністю.\nВітаємо!"
+  },
+  "dlg_bd_clear_01": {
+    "en": "Want to see if you can colour\r\nit in completely again?",
+    "ua": "Може, спробуєте розфарбувати\nйого ще раз?"
+  },
+  "dlg_bd_clear_02": {
+    "en": "It's easy to start over\r\nfrom the beginning.",
+    "ua": "Почати спочатку\nдуже просто."
+  },
+  "dlg_bd_clear_03": {
+    "en": "To reset your StreetPass Birthdays\r\ncalendar, simply press  while\r\nthe calendar is displayed.",
+    "ua": "Щоб скинути Календар StreetPass,\nнатисніть , коли\nкалендар на екрані."
+  },
+  "dlg_bd_clear_04": {
+    "en": "Do that, and you'll be ready\r\nto begin collecting birthdays\r\nall over again!",
+    "ua": "І можна знову\nзбирати дні народження\nз самого початку!"
+  },
+  "dlg_bd_repeat_caption_00": {
+    "en": "Reset Calendar",
+    "ua": "Скинути календар"
+  },
+  "dlg_bd_repeat_00": {
+    "en": "Do you want to reset your\r\nStreetPass Birthdays calendar?",
+    "ua": "Скинути ваш\nКалендар StreetPass?"
+  },
+  "dlg_bd_repeat_yes_00": {
+    "en": "Yes",
+    "ua": "Так"
+  },
+  "dlg_bd_repeat_no_00": {
+    "en": "No",
+    "ua": "Ні"
+  },
+  "dlg_bd_repeat_01": {
+    "en": "This will erase your progress and\r\nyou will start over again.\r\nAre you sure?",
+    "ua": "Прогрес буде стерто,\nі все почнеться спочатку.\nПродовжити?"
+  },
+  "dlg_bd_repeat_yes_01": {
+    "en": "Yes",
+    "ua": "Так"
+  },
+  "dlg_bd_repeat_no_01": {
+    "en": "No",
+    "ua": "Ні"
+  },
+  "bd_list_achievement": {
+    "en": "Plaza Tickets Acquired:",
+    "ua": "Отримано квитків Площі:"
+  },
+  "bd_list_show": {
+    "en": " Plaza Tickets",
+    "ua": " Квитки Площі"
+  },
+  "dig_bd_list_01": {
+    "en": "Collected 10 birthdays!",
+    "ua": "Зібрано 10 днів народження!"
+  },
+  "dig_bd_list_01_p": {
+    "en": "You've collected\r\n10 birthdays!",
+    "ua": "Ви зібрали\n10 днів народження!"
+  },
+  "dig_bd_list_02": {
+    "en": "Collected 50 birthdays!",
+    "ua": "Зібрано 50 днів народження!"
+  },
+  "dig_bd_list_02_p": {
+    "en": "You've collected\r\n50 birthdays!",
+    "ua": "Ви зібрали\n50 днів народження!"
+  },
+  "dig_bd_list_03": {
+    "en": "Collected 100 birthdays!",
+    "ua": "Зібрано 100 днів народження!"
+  },
+  "dig_bd_list_03_p": {
+    "en": "You've collected\r\n100 birthdays!",
+    "ua": "Ви зібрали\n100 днів народження!"
+  },
+  "dig_bd_list_04": {
+    "en": "Collected 200 birthdays!",
+    "ua": "Зібрано 200 днів народження!"
+  },
+  "dig_bd_list_04_p": {
+    "en": "You've collected\r\n200 birthdays!",
+    "ua": "Ви зібрали\n200 днів народження!"
+  },
+  "dig_bd_list_05": {
+    "en": "Collected 365 birthdays!",
+    "ua": "Зібрано 365 днів народження!"
+  },
+  "dig_bd_list_05_p": {
+    "en": "You've collected\r\n365 birthdays!",
+    "ua": "Ви зібрали\n365 днів народження!"
+  },
+  "dig_bd_list_06": {
+    "en": "Collected all birthdays!",
+    "ua": "Зібрано всі дні народження!"
+  },
+  "dig_bd_list_06_p": {
+    "en": "You've collected\r\nevery birthday!",
+    "ua": "Ви зібрали\nвсі дні народження!"
+  },
+  "dig_bd_list_07": {
+    "en": "Collected three birthdays in a row!",
+    "ua": "Три дні народження поспіль!"
+  },
+  "dig_bd_list_07_p": {
+    "en": "You've collected three\r\nbirthdays in a row!",
+    "ua": "Ви зібрали три дні\nнародження поспіль!"
+  },
+  "dig_bd_list_08": {
+    "en": "Collected seven birthdays in a row!",
+    "ua": "Сім днів народження поспіль!"
+  },
+  "dig_bd_list_08_p": {
+    "en": "You've collected seven\r\nbirthdays in a row!",
+    "ua": "Ви зібрали сім днів\nнародження поспіль!"
+  },
+  "dig_bd_list_09": {
+    "en": "Collected all of January!",
+    "ua": "Зібрано весь січень!"
+  },
+  "dig_bd_list_09_p": {
+    "en": "You've collected\r\nall of January!",
+    "ua": "Ви зібрали\nвесь січень!"
+  },
+  "dig_bd_list_10": {
+    "en": "Collected all of February!",
+    "ua": "Зібрано весь лютий!"
+  },
+  "dig_bd_list_10_p": {
+    "en": "You've collected\r\nall of February!",
+    "ua": "Ви зібрали\nвесь лютий!"
+  },
+  "dig_bd_list_11": {
+    "en": "Collected all of March!",
+    "ua": "Зібрано весь березень!"
+  },
+  "dig_bd_list_11_p": {
+    "en": "You've collected\r\nall of March!",
+    "ua": "Ви зібрали\nвесь березень!"
+  },
+  "dig_bd_list_12": {
+    "en": "Collected all of April!",
+    "ua": "Зібрано весь квітень!"
+  },
+  "dig_bd_list_12_p": {
+    "en": "You've collected\r\nall of April!",
+    "ua": "Ви зібрали\nвесь квітень!"
+  },
+  "dig_bd_list_13": {
+    "en": "Collected all of May!",
+    "ua": "Зібрано весь травень!"
+  },
+  "dig_bd_list_13_p": {
+    "en": "You've collected\r\nall of May!",
+    "ua": "Ви зібрали\nвесь травень!"
+  },
+  "dig_bd_list_14": {
+    "en": "Collected all of June!",
+    "ua": "Зібрано весь червень!"
+  },
+  "dig_bd_list_14_p": {
+    "en": "You've collected\r\nall of June!",
+    "ua": "Ви зібрали\nвесь червень!"
+  },
+  "dig_bd_list_15": {
+    "en": "Collected all of July!",
+    "ua": "Зібрано весь липень!"
+  },
+  "dig_bd_list_15_p": {
+    "en": "You've collected\r\nall of July!",
+    "ua": "Ви зібрали\nвесь липень!"
+  },
+  "dig_bd_list_16": {
+    "en": "Collected all of August!",
+    "ua": "Зібрано весь серпень!"
+  },
+  "dig_bd_list_16_p": {
+    "en": "You've collected\r\nall of August!",
+    "ua": "Ви зібрали\nвесь серпень!"
+  },
+  "dig_bd_list_17": {
+    "en": "Collected all of September!",
+    "ua": "Зібрано весь вересень!"
+  },
+  "dig_bd_list_17_p": {
+    "en": "You've collected\r\nall of September!",
+    "ua": "Ви зібрали\nвесь вересень!"
+  },
+  "dig_bd_list_18": {
+    "en": "Collected all of October!",
+    "ua": "Зібрано весь жовтень!"
+  },
+  "dig_bd_list_18_p": {
+    "en": "You've collected\r\nall of October!",
+    "ua": "Ви зібрали\nвесь жовтень!"
+  },
+  "dig_bd_list_19": {
+    "en": "Collected all of November!",
+    "ua": "Зібрано весь листопад!"
+  },
+  "dig_bd_list_19_p": {
+    "en": "You've collected\r\nall of November!",
+    "ua": "Ви зібрали\nвесь листопад!"
+  },
+  "dig_bd_list_20": {
+    "en": "Collected all of December!",
+    "ua": "Зібрано весь грудень!"
+  },
+  "dig_bd_list_20_p": {
+    "en": "You've collected\r\nall of December!",
+    "ua": "Ви зібрали\nвесь грудень!"
+  },
+  "dig_bd_list_21": {
+    "en": "Collected the same birthday as yours!",
+    "ua": "Зібрано день народження, як у вас!"
+  },
+  "dig_bd_list_21_p": {
+    "en": "You've collected the\r\nsame birthday as yours!",
+    "ua": "Ви зібрали день\nнародження, як у вас!"
+  },
+  "dig_bd_list_22": {
+    "en": "Collected February 29th!",
+    "ua": "Зібрано 29 лютого!"
+  },
+  "dig_bd_list_22_p": {
+    "en": "You've collected\r\nFebruary 29th!",
+    "ua": "Ви зібрали\n29 лютого!"
+  }
+}

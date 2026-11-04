@@ -1,0 +1,806 @@
+{
+  "hat_mario": {
+    "en": "Mario's Cap",
+    "ua": "Кашкет Маріо"
+  },
+  "hat_kino": {
+    "en": "Toad Hat",
+    "ua": "Шапка Тоада"
+  },
+  "hat_luigi": {
+    "en": "Luigi's Cap",
+    "ua": "Кашкет Луїджі"
+  },
+  "hat_kuppa": {
+    "en": "Bowser Hat",
+    "ua": "Шапка Баузера"
+  },
+  "hat_r_piku": {
+    "en": "Red Pikmin Hat",
+    "ua": "Шапка червоного Пікміна"
+  },
+  "hat_y_piku": {
+    "en": "Yellow Pikmin Hat",
+    "ua": "Шапка жовтого Пікміна"
+  },
+  "hat_b_piku": {
+    "en": "Blue Pikmin Hat",
+    "ua": "Шапка синього Пікмі"
+  },
+  "hat_link": {
+    "en": "Link's Cap",
+    "ua": "Ковпак Лінка"
+  },
+  "hat_samus": {
+    "en": "Samus's Helmet",
+    "ua": "Шолом Самус"
+  },
+  "hat_metroid": {
+    "en": "Metroid Hat",
+    "ua": "Шапка-метроїд"
+  },
+  "hat_cat": {
+    "en": "Cat Ears",
+    "ua": "Котячі вушка"
+  },
+  "hat_rabbit": {
+    "en": "Bunny Ears",
+    "ua": "Заячі вуха"
+  },
+  "hat_king": {
+    "en": "Regal Crown",
+    "ua": "Царська корона"
+  },
+  "hat_dog": {
+    "en": "Dog Ears",
+    "ua": "Собачі вуха"
+  },
+  "hat_kirby": {
+    "en": "Kirby Hat",
+    "ua": "Шапка Кірбі"
+  },
+  "hat_last_ghost": {
+    "en": "Ultimate Helmet",
+    "ua": "Найкращий шолом"
+  },
+  "hat_not": {
+    "en": "(None)",
+    "ua": "(Немає)"
+  },
+  "hat_arwing": {
+    "en": "Arwing Hat",
+    "ua": "Шапка-Arwing"
+  },
+  "hat_dokan": {
+    "en": "Pipe Hat",
+    "ua": "Шапка-труба"
+  },
+  "hat_ribbon": {
+    "en": "Red Ribbon",
+    "ua": "Бант"
+  },
+  "hat_silkhat": {
+    "en": "Top Hat",
+    "ua": "Циліндр"
+  },
+  "hat_pirate": {
+    "en": "Pirate Hat",
+    "ua": "Капелюх пірата"
+  },
+  "hat_chief": {
+    "en": "Chef Hat",
+    "ua": "Кухарський ковпак"
+  },
+  "hat_demon": {
+    "en": "Devil Horns",
+    "ua": "Чортові роги"
+  },
+  "hat_flower": {
+    "en": "Sunflower",
+    "ua": "Соняшник"
+  },
+  "hat_penguin": {
+    "en": "Penguin Hat",
+    "ua": "Шапка-пінгвін"
+  },
+  "hat_burger": {
+    "en": "Cheeseburger Hat",
+    "ua": "Шапка-чизбургер"
+  },
+  "hat_donkey": {
+    "en": "Donkey Kong Hat",
+    "ua": "Шапка Донкі Конга"
+  },
+  "hat_peach": {
+    "en": "Peach's Crown",
+    "ua": "Корона Піч"
+  },
+  "hat_packun": {
+    "en": "Piranha Plant",
+    "ua": "Рослина-піранья"
+  },
+  "hat_fox": {
+    "en": "Fox Hat",
+    "ua": "Шапка Фокса"
+  },
+  "hat_soccer": {
+    "en": "Football Hat",
+    "ua": "Шапка-м'яч"
+  },
+  "hat_straw": {
+    "en": "Straw Hat",
+    "ua": "Бриль"
+  },
+  "hat_kifujin": {
+    "en": "Floral Hat",
+    "ua": "Капелюх у квітах"
+  },
+  "hat_bear": {
+    "en": "Bear Hat",
+    "ua": "Шапка-ведмідь"
+  },
+  "hat_3ds": {
+    "en": "Nintendo 3DS",
+    "ua": "Nintendo 3DS"
+  },
+  "hat_hatenablock": {
+    "en": "? Block Hat",
+    "ua": "Шапка-блок «?»"
+  },
+  "hat_heyho": {
+    "en": "Shy Guy Mask",
+    "ua": "Маска Сором'язка"
+  },
+  "hat_hibiscus": {
+    "en": "Hibiscus",
+    "ua": "Гібіскус"
+  },
+  "hat_mini": {
+    "en": "Mini Top Hat",
+    "ua": "Міні-циліндр"
+  },
+  "hat_ninja": {
+    "en": "Ninja Hood",
+    "ua": "Каптур ніндзя"
+  },
+  "hat_panda": {
+    "en": "Panda Hat",
+    "ua": "Шапка-панда"
+  },
+  "hat_ramen": {
+    "en": "Ramen Hat",
+    "ua": "Шапка-рамен"
+  },
+  "hat_softcream": {
+    "en": "Ice Cream Hat",
+    "ua": "Шапка-морозиво"
+  },
+  "hat_teresa": {
+    "en": "Boo Hat",
+    "ua": "Шапка-Бу"
+  },
+  "hat_triforce": {
+    "en": "Triforce Hat",
+    "ua": "Шапка-трифорс"
+  },
+  "hat_wizard": {
+    "en": "Magic Hat",
+    "ua": "Чарівний капелюх"
+  },
+  "hat_yoshi": {
+    "en": "Yoshi Hat",
+    "ua": "Шапка Йоші"
+  },
+  "hat_wario": {
+    "en": "Wario's Cap",
+    "ua": "Кашкет Варіо"
+  },
+  "hat_cake": {
+    "en": "Cake Hat",
+    "ua": "Шапка-торт"
+  },
+  "hat_made": {
+    "en": "Lacy Headband",
+    "ua": "Мереживний обруч"
+  },
+  "hat_morigami": {
+    "en": "Beehive Wig",
+    "ua": "Перука-вулик"
+  },
+  "hat_wanwan": {
+    "en": "Chomp Hat",
+    "ua": "Шапка-Чомп"
+  },
+  "hat_horror": {
+    "en": "Horror Hat",
+    "ua": "Капелюх жаху"
+  },
+  "hat_epona": {
+    "en": "Epona Hat",
+    "ua": "Шапка-Епона"
+  },
+  "hat_daisy": {
+    "en": "Daisy's Crown",
+    "ua": "Корона Дейзі"
+  },
+  "hat_yoshiyellow": {
+    "en": "Yellow Yoshi Hat",
+    "ua": "Шапка жовтого Йоші"
+  },
+  "hat_yoshiblue": {
+    "en": "Light-Blue Yoshi Hat",
+    "ua": "Шапка блакитного Йоші"
+  },
+  "hat_yoshipink": {
+    "en": "Pink Yoshi Hat",
+    "ua": "Шапка рожевого Йоші"
+  },
+  "hat_waluigi": {
+    "en": "Waluigi's Cap",
+    "ua": "Кашкет Валуїджі"
+  },
+  "hat_pizza": {
+    "en": "Pizza Hat",
+    "ua": "Шапка-піца"
+  },
+  "hat_hotdog": {
+    "en": "Hot Dog Hat",
+    "ua": "Шапка-хот-дог"
+  },
+  "hat_gesso": {
+    "en": "Blooper Hat",
+    "ua": "Шапка-Блупер"
+  },
+  "hat_famicom": {
+    "en": "Famicom Hat",
+    "ua": "Шапка-Famicom"
+  },
+  "hat_nes": {
+    "en": "NES Hat",
+    "ua": "Шапка-NES"
+  },
+  "hat_barbara": {
+    "en": "Barbara the Bat Wig",
+    "ua": "Перука Барбари"
+  },
+  "hat_samurai": {
+    "en": "Samurai Wig",
+    "ua": "Перука самурая"
+  },
+  "hat_foot": {
+    "en": "American Football Helmet",
+    "ua": "Шолом для футболу"
+  },
+  "hat_swimming": {
+    "en": "Swimming Cap",
+    "ua": "Шапочка плавця"
+  },
+  "hat_tomato": {
+    "en": "Tomato Hat",
+    "ua": "Шапка-помідор"
+  },
+  "hat_darkking": {
+    "en": "Dark Lord Helmet",
+    "ua": "Шолом темного володаря"
+  },
+  "hat_darkking2": {
+    "en": "Dark Emperor Helmet",
+    "ua": "Шолом темного імператора"
+  },
+  "hat_prince": {
+    "en": "Prince's Crown",
+    "ua": "Корона принца"
+  },
+  "hat_princess": {
+    "en": "Princess's Crown",
+    "ua": "Корона принцеси"
+  },
+  "cap_hat_u": {
+    "en": "Change Outfit",
+    "ua": "Змінити вбрання"
+  },
+  "hat_steak": {
+    "en": "Steak Hat",
+    "ua": "Капелюх-стейк"
+  },
+  "hat_pyramid": {
+    "en": "Pyramid Hat",
+    "ua": "Капелюх-піраміда"
+  },
+  "hat_frog": {
+    "en": "Frog Hat",
+    "ua": "Капелюх-жаба"
+  },
+  "hat_sushi": {
+    "en": "Sushi Hat",
+    "ua": "Капелюх-суші"
+  },
+  "hat_moai": {
+    "en": "Moai Hat",
+    "ua": "Капелюх-моаї"
+  },
+  "hat_tomatopasta": {
+    "en": "Spaghetti Hat",
+    "ua": "Капелюх-спагеті"
+  },
+  "hat_caffelatte": {
+    "en": "Caffè Latte Hat",
+    "ua": "Капелюх-лате"
+  },
+  "hat_hockey": {
+    "en": "Ice Hockey Mask",
+    "ua": "Хокейна маска"
+  },
+  "hat_ufo": {
+    "en": "UFO Hat",
+    "ua": "Капелюх-НЛО"
+  },
+  "hat_apple": {
+    "en": "Apple Hat",
+    "ua": "Капелюх-яблуко"
+  },
+  "hat_strawberry": {
+    "en": "Strawberry Hat",
+    "ua": "Капелюх-полуниця"
+  },
+  "hat_kuribo": {
+    "en": "Goomba Hat",
+    "ua": "Капелюх-Гумба"
+  },
+  "hat_kinokosp": {
+    "en": "Super Mushroom Hat",
+    "ua": "Капелюх-суперграб"
+  },
+  "hat_fireflower": {
+    "en": "Fire Flower",
+    "ua": "Вогняна квітка"
+  },
+  "hat_star": {
+    "en": "Super Star Hat",
+    "ua": "Капелюх-суперзірка"
+  },
+  "hat_kinoko1up": {
+    "en": "1-Up Mushroom Hat",
+    "ua": "Капелюх-гриб 1-Up"
+  },
+  "body_mario": {
+    "en": "Mario Costume",
+    "ua": "Костюм Маріо"
+  },
+  "body_luigi": {
+    "en": "Luigi Costume",
+    "ua": "Костюм Луїджі"
+  },
+  "body_foxluigi": {
+    "en": "Kitsune Suit",
+    "ua": "Костюм кіцуне"
+  },
+  "body_yoshi": {
+    "en": "Yoshi Costume",
+    "ua": "Костюм Йоші"
+  },
+  "body_donkey": {
+    "en": "Donkey Kong Costume",
+    "ua": "Костюм Донкі Конга"
+  },
+  "body_link": {
+    "en": "Link Costume",
+    "ua": "Костюм Лінка"
+  },
+  "hat_curry": {
+    "en": "Curry Hat",
+    "ua": "Капелюх-карі"
+  },
+  "hat_windmill": {
+    "en": "Windmill Hat",
+    "ua": "Капелюх-млин"
+  },
+  "hat_japanesecastle": {
+    "en": "Japanese Castle Hat",
+    "ua": "Капелюх-замок Японії"
+  },
+  "hat_francepan": {
+    "en": "Baguette Hat",
+    "ua": "Капелюх-багет"
+  },
+  "hat_cock": {
+    "en": "Chicken Hat",
+    "ua": "Капелюх-півень"
+  },
+  "hat_whale": {
+    "en": "Whale Hat",
+    "ua": "Капелюх-кит"
+  },
+  "hat_tyrannosaurus": {
+    "en": "T. Rex Hat",
+    "ua": "Капелюх-тиранозавр"
+  },
+  "hat_elephant": {
+    "en": "Elephant Hat",
+    "ua": "Капелюх-слон"
+  },
+  "hat_lion": {
+    "en": "Lion Hat",
+    "ua": "Капелюх-лев"
+  },
+  "hat_pine": {
+    "en": "Pineapple Hat",
+    "ua": "Капелюх-ананас"
+  },
+  "body_tanuki_mario": {
+    "en": "Tanooki Suit",
+    "ua": "Костюм тануки"
+  },
+  "hat_metaknight": {
+    "en": "Meta Knight's Mask",
+    "ua": "Маска Мета Найта"
+  },
+  "hat_tanukichi": {
+    "en": "Tom Nook Hat",
+    "ua": "Капелюх Тома Нука"
+  },
+  "hat_captainfalcon": {
+    "en": "Captain Falcon's Helmet",
+    "ua": "Шолом Капітана Фалкона"
+  },
+  "hat_peach_castle": {
+    "en": "Peach's Castle Hat",
+    "ua": "Капелюх-замок Піч"
+  },
+  "hat_togezo": {
+    "en": "Spiny Hat",
+    "ua": "Капелюх-Спайні"
+  },
+  "hat_midorikoura": {
+    "en": "Green Shell Hat",
+    "ua": "Капелюх-зелений панцир"
+  },
+  "hat_rupee": {
+    "en": "Rupee Hat",
+    "ua": "Капелюх-рупія"
+  },
+  "hat_chikin": {
+    "en": "Fried Chicken Hat",
+    "ua": "Капелюх-курочка"
+  },
+  "hat_potato": {
+    "en": "French Fries Hat",
+    "ua": "Капелюх-картопля фрі"
+  },
+  "hat_nest": {
+    "en": "Bird's Nest Hat",
+    "ua": "Капелюх-гніздо"
+  },
+  "hat_yashi": {
+    "en": "Palm Tree",
+    "ua": "Пальма"
+  },
+  "hat_tengallon": {
+    "en": "Cowboy Hat",
+    "ua": "Капелюх ковбоя"
+  },
+  "hat_powblock": {
+    "en": "POW Block Hat",
+    "ua": "Капелюх-блок POW"
+  },
+  "hat_pukupuku": {
+    "en": "Cheep Cheep Hat",
+    "ua": "Капелюх-Чіп-Чіп"
+  },
+  "hat_hanatyan": {
+    "en": "Wiggler Hat",
+    "ua": "Капелюх-Вігглер"
+  },
+  "hat_toride": {
+    "en": "Goal Tower Hat",
+    "ua": "Капелюх-фінішна вежа"
+  },
+  "hat_airship": {
+    "en": "Bowser's Airship Hat",
+    "ua": "Капелюх-дирижабль Боузера"
+  },
+  "hat_gameboy": {
+    "en": "Game Boy Hat",
+    "ua": "Капелюх Game Boy"
+  },
+  "hat_gameboyadv": {
+    "en": "Game Boy Advance Hat",
+    "ua": "Капелюх Game Boy Advance"
+  },
+  "hat_spfamicon": {
+    "en": "Super NES Hat",
+    "ua": "Капелюх Super NES"
+  },
+  "hat_snes": {
+    "en": "American SNES Hat",
+    "ua": "Капелюх американської SNES"
+  },
+  "hat_nintendo64": {
+    "en": "Nintendo 64 Hat",
+    "ua": "Капелюх Nintendo 64"
+  },
+  "hat_gamecube": {
+    "en": "GameCube Hat",
+    "ua": "Капелюх GameCube"
+  },
+  "hat_nintendods": {
+    "en": "Nintendo DS",
+    "ua": "Nintendo DS"
+  },
+  "hat_takarabako": {
+    "en": "Treasure Chest Hat",
+    "ua": "Капелюх-скриня"
+  },
+  "hat_sheik": {
+    "en": "Sheik Mask",
+    "ua": "Маска Шейк"
+  },
+  "hat_princesszelda": {
+    "en": "Princess Zelda Wig",
+    "ua": "Перука принцеси Зельди"
+  },
+  "hat_falco": {
+    "en": "Falco Lombardi Hat",
+    "ua": "Капелюх Фалко Ломбарді"
+  },
+  "hat_yarnkirby": {
+    "en": "Epic Kirby Hat",
+    "ua": "Капелюх Кірбі з пряжі"
+  },
+  "hat_fluff": {
+    "en": "Prince Fluff Hat",
+    "ua": "Капелюх Принца Пухнастика"
+  },
+  "hat_pumpukin": {
+    "en": "Jack-o'-Lantern Hat",
+    "ua": "Капелюх-гарбуз"
+  },
+  "hat_xmas": {
+    "en": "Santa Hat",
+    "ua": "Шапка Санти"
+  },
+  "hat_kabuto": {
+    "en": "Spartan Helmet",
+    "ua": "Шолом спартанця"
+  },
+  "hat_bone": {
+    "en": "Bovine Skull Hat",
+    "ua": "Капелюх-череп бика"
+  },
+  "hat_wedding": {
+    "en": "Wedding Veil",
+    "ua": "Весільна фата"
+  },
+  "hat_geisha": {
+    "en": "Geisha Wig",
+    "ua": "Перука гейші"
+  },
+  "hat_osaru": {
+    "en": "Rhythm Monkey Hat",
+    "ua": "Капелюх ритмічної мавпи"
+  },
+  "hat_kawashima": {
+    "en": "Dr Kawashima Hat",
+    "ua": "Капелюх д-ра Кавашіми"
+  },
+  "hat_onikawashima": {
+    "en": "Devilish Dr Kawashima Hat",
+    "ua": "Капелюх д-ра Кавашіми-демона"
+  },
+  "hat_dotmario": {
+    "en": "Pixel Mario Hat",
+    "ua": "Капелюх-піксельний Маріо"
+  },
+  "hat_taru": {
+    "en": "Barrel Hat",
+    "ua": "Капелюх-бочка"
+  },
+  "hat_tingle": {
+    "en": "Tingle Hat",
+    "ua": "Капелюх Тінгла"
+  },
+  "hat_akakoura": {
+    "en": "Red Shell Hat",
+    "ua": "Капелюх-червоний панцир"
+  },
+  "hat_robot": {
+    "en": "R.O.B. Hat",
+    "ua": "Капелюх R.O.B."
+  },
+  "hat_virtualboy": {
+    "en": "Virtual Boy Mask",
+    "ua": "Маска Virtual Boy"
+  },
+  "hat_jugemu": {
+    "en": "Lakitu Hat",
+    "ua": "Капелюх Лакіту"
+  },
+  "hat_orimacap": {
+    "en": "Olimar Hat",
+    "ua": "Капелюх Олімара"
+  },
+  "hat_dedede": {
+    "en": "King Dedede Hat",
+    "ua": "Капелюх Короля Дідіді"
+  },
+  "hat_hisho": {
+    "en": "Isabelle Hat",
+    "ua": "Капелюх Ізабель"
+  },
+  "hat_tea": {
+    "en": "Teacup Hat",
+    "ua": "Капелюх-чашка"
+  },
+  "hat_eggplant": {
+    "en": "Aubergine Hat",
+    "ua": "Капелюх-баклажан"
+  },
+  "hat_glove": {
+    "en": "Baseball Glove Hat",
+    "ua": "Капелюх-бейсбольна рукавиця"
+  },
+  "hat_diskun": {
+    "en": "Diskun Hat",
+    "ua": "Капелюх Діскуна"
+  },
+  "hat_wolf": {
+    "en": "Wolf O'Donnell Hat",
+    "ua": "Капелюх Вульфа"
+  },
+  "hat_diddykong": {
+    "en": "Diddy Kong Hat",
+    "ua": "Капелюх Дідді Конга"
+  },
+  "hat_yosshitamago": {
+    "en": "Yoshi's Egg Hat",
+    "ua": "Капелюх-яйце Йоші"
+  },
+  "hat_iceclimber": {
+    "en": "Ice Climber's Hood",
+    "ua": "Каптур Альпініста"
+  },
+  "hat_wad": {
+    "en": "Waddle Dee Hat",
+    "ua": "Капелюх Вадл Ді"
+  },
+  "hat_mgBtl_00": {
+    "en": "Monarch's Castle Hat",
+    "ua": "Капелюх-замок монарха"
+  },
+  "hat_mgBtl_01": {
+    "en": "Emperor's Crown",
+    "ua": "Імператорська корона"
+  },
+  "hat_mgFlo_00": {
+    "en": "Floral Headdress",
+    "ua": "Квітковий вінок"
+  },
+  "hat_mgFlo_01": {
+    "en": "Master Gardener's Crown",
+    "ua": "Корона майстра-садівника"
+  },
+  "hat_mgPzd_00": {
+    "en": "Smiling Spook Hat",
+    "ua": "Капелюх-усміхнений привид"
+  },
+  "hat_mgPzd_01": {
+    "en": "Demon King Hat",
+    "ua": "Капелюх Короля демонів"
+  },
+  "hat_mgSht_00": {
+    "en": "Mii Force Helmet",
+    "ua": "Шолом Mii Force"
+  },
+  "hat_mgSht_01": {
+    "en": "Squad Leader's Ship",
+    "ua": "Корабель командира"
+  },
+  "hat_totakeke": {
+    "en": "K.K. Slider Hat",
+    "ua": "Капелюх Слайдера"
+  },
+  "hat_reset": {
+    "en": "Mr. Resetti Hat",
+    "ua": "Капелюх містера Резетті"
+  },
+  "hat_cbrb": {
+    "en": "Chibi-Robo Hat",
+    "ua": "Капелюх Чібі-Робо"
+  },
+  "hat_wiiu": {
+    "en": "Wii U Hat",
+    "ua": "Капелюх Wii U"
+  },
+  "hat_yarnyoshi": {
+    "en": "Yarn Yoshi Hat",
+    "ua": "Капелюх Йоші з пряжі"
+  },
+  "hat_splatoon": {
+    "en": "Splatoon Hat",
+    "ua": "Капелюх Splatoon"
+  },
+  "hat_mgFsh_00": {
+    "en": "Fishing Club Cruiser",
+    "ua": "Крейсер клубу рибалок"
+  },
+  "hat_mgFsh_01": {
+    "en": "Coraline's Visor",
+    "ua": "Козирок Коралайн"
+  },
+  "hat_mgZmb_00": {
+    "en": "Zombie Hat",
+    "ua": "Капелюх-зомбі"
+  },
+  "hat_mgZmb_01": {
+    "en": "Super Scimad Mask",
+    "ua": "Маска Супер Сцимада"
+  },
+  "body_pirate": {
+    "en": "Pirate Costume",
+    "ua": "Костюм пірата"
+  },
+  "body_chief": {
+    "en": "Chef Costume",
+    "ua": "Костюм кухаря"
+  },
+  "body_ninja": {
+    "en": "Ninja Costume",
+    "ua": "Костюм ніндзя"
+  },
+  "body_soccer": {
+    "en": "Football Costume",
+    "ua": "Футбольна форма"
+  },
+  "body_horror": {
+    "en": "Horror Costume",
+    "ua": "Костюм жахів"
+  },
+  "body_kabuto": {
+    "en": "Spartan Armour",
+    "ua": "Обладунки спартанця"
+  },
+  "body_tengallon": {
+    "en": "Cowboy Costume",
+    "ua": "Костюм ковбоя"
+  },
+  "hat_mgCar_00": {
+    "en": "Slot Car Hat",
+    "ua": "Капелюх-слот-кар"
+  },
+  "hat_mgCar_01": {
+    "en": "Nico Flame's Hat",
+    "ua": "Капелюх Ніко Флейма"
+  },
+  "hat_mgTrd_00": {
+    "en": "Stock Exchange Hat",
+    "ua": "Капелюх-біржа"
+  },
+  "hat_mgTrd_01": {
+    "en": "Moneybags Hat",
+    "ua": "Капелюх багатія"
+  },
+  "hat_mgChf_00": {
+    "en": "Mega Portion Hat",
+    "ua": "Капелюх-мегапорція"
+  },
+  "hat_mgChf_01": {
+    "en": "Epic Banquet Hat",
+    "ua": "Капелюх-бенкет"
+  },
+  "hat_mgNja_00": {
+    "en": "Cannon Hat",
+    "ua": "Капелюх-гармата"
+  },
+  "hat_mgNja_01": {
+    "en": "Fox Mask",
+    "ua": "Лисяча маска"
+  },
+  "hat_mgExp_00": {
+    "en": "Jungle Hat",
+    "ua": "Капелюх джунглів"
+  },
+  "hat_mgExp_01": {
+    "en": "Sir Henry Beaksley Hat",
+    "ua": "Капелюх сера Генрі Дзьобслі"
+  }
+}

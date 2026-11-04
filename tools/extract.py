@@ -25,10 +25,23 @@ from pathlib import Path
 
 sys.path.insert(0, str(Path(__file__).parent))
 from build import TITLES  # noqa: E402
+import bmsm  # noqa: E402
 from msbt import parse  # noqa: E402
 from store import open_store  # noqa: E402
 
 ROOT = Path(__file__).resolve().parent.parent
+
+
+def texts_of(cfg: dict, data: bytes) -> list[tuple[str, str]]:
+    """(label, text) of one message file, MSBT or - for `format: bmsm` - a .bmsm table.
+
+    A .bmsm row whose text has no letter outside its tags (`nil`, `[0]`, a lone icon) has
+    nothing to translate and stays out of the JSON; the build leaves such rows alone.
+    """
+    if cfg.get("format") == "bmsm":
+        return [(key, text) for key, text in bmsm.parse(data).texts().items() if bmsm.translatable(text)]
+    msbt = parse(data)
+    return [(msbt.label_of(index) or f"__index_{index}", text) for index, text in enumerate(msbt.texts)]
 
 
 def extract_title(name: str) -> list[tuple[str, int, int]]:
@@ -42,20 +55,20 @@ def extract_title(name: str) -> list[tuple[str, int, int]]:
     # The English folder, always: the translation is written against English, whichever slot
     # the build later overwrites. `lang` is a per-slot map, so it is no fallback of its own.
     for key, data in sorted(store.read(cfg["ref_lang"]).items()):
-        msbt = parse(data)
         out_file = out_dir / f"{key}.json"
         existing = json.loads(out_file.read_text(encoding="utf-8")) if out_file.exists() else {}
 
         entries: dict[str, dict[str, str]] = {}
         kept = 0
-        for index, text in enumerate(msbt.texts):
-            label = msbt.label_of(index) or f"__index_{index}"
+        for label, text in texts_of(cfg, data):
             ua = existing.get(label, {}).get("ua", "")
             # Variant spellings (`ua_real`, `ua_long`) are translations too.
             extra = {k: v for k, v in existing.get(label, {}).items() if k.startswith("ua_")}
             entries[label] = {"en": text, "ua": ua} | extra
             kept += bool(ua)
 
+        if not entries and cfg.get("format") == "bmsm":
+            continue  # a table of icons and placeholders only - nothing to translate
         out_file.write_text(json.dumps(entries, ensure_ascii=False, indent=2) + "\n", encoding="utf-8")
         results.append((str(out_file.relative_to(ROOT)), len(entries), kept))
 

@@ -1,0 +1,702 @@
+{
+  "now_encountT": {
+    "en": "StreetPass Hits",
+    "ua": "Зустрічей"
+  },
+  "now_encount_sdwT": {
+    "en": "StreetPass Hits",
+    "ua": "Зустрічей"
+  },
+  "encountT": {
+    "en": "Total",
+    "ua": "Усього"
+  },
+  "encount_sdwT": {
+    "en": "Total",
+    "ua": "Усього"
+  },
+  "enc_spmiiT": {
+    "en": "Met a special Mii!",
+    "ua": "Це особливий Mii!"
+  },
+  "enc_spmii_sdwT": {
+    "en": "Met a special Mii!",
+    "ua": "Це особливий Mii!"
+  },
+  "newly_arrived_raise_01_u": {
+    "en": "Nice!",
+    "ua": "Гарно!"
+  },
+  "newly_arrived_raise_02_u": {
+    "en": "Great!",
+    "ua": "Чудово!"
+  },
+  "newly_arrived_raise_03_u": {
+    "en": "Amazing!",
+    "ua": "Неймовірно!"
+  },
+  "newly_arrived_raise_04_u": {
+    "en": "Outstanding!",
+    "ua": "Пречудово!"
+  },
+  "newly_arrived_1st_introduce_u": {
+    "en": "I'm [1].\r\n(From: [0])",
+    "ua": "Я — [1].\n(Звідки: [0])"
+  },
+  "newly_arrived_how_m_u": {
+    "en": "We've met [0]\r\ntimes now!",
+    "ua": "Ми зустрілися вже\n[0] раз(и)!"
+  },
+  "newly_arrived_how_f_u": {
+    "en": "We've met [0]\r\ntimes now!",
+    "ua": "Ми зустрілися вже\n[0] раз(и)!"
+  },
+  "newly_arrived_1st_greeting02_u": {
+    "en": "Nice to meet you!",
+    "ua": "Дуже приємно!"
+  },
+  "newly_arrived_dog_cat_m_d_u": {
+    "en": "By the way, I like dogs.",
+    "ua": "До речі, я люблю собак."
+  },
+  "newly_arrived_dog_cat_m_c_u": {
+    "en": "By the way, I like cats.",
+    "ua": "До речі, я люблю котів."
+  },
+  "newly_arrived_dog_cat_f_d_u": {
+    "en": "By the way, I like dogs.",
+    "ua": "А я люблю собак."
+  },
+  "newly_arrived_dog_cat_f_c_u": {
+    "en": "By the way, I like cats.",
+    "ua": "А я люблю котів."
+  },
+  "newly_arrived_dream_m_long_u": {
+    "en": "My dream for the future\r\nis to live long!",
+    "ua": "Моя мрія —\nпрожити довге життя!"
+  },
+  "newly_arrived_dream_m_rich_u": {
+    "en": "My dream for the future\r\nis to get rich!",
+    "ua": "Моя мрія —\nрозбагатіти!"
+  },
+  "newly_arrived_dream_m_space_u": {
+    "en": "My dream for the future\r\nis to visit outer space!",
+    "ua": "Моя мрія —\nпобувати в космосі!"
+  },
+  "newly_arrived_dream_m_marry_u": {
+    "en": "My dream for the future\r\nis to get married!",
+    "ua": "Моя мрія —\nодружитися!"
+  },
+  "newly_arrived_dream_m_hero_u": {
+    "en": "My dream for the future\r\nis to be a hero!",
+    "ua": "Моя мрія —\nстати героєм!"
+  },
+  "newly_arrived_dream_m_princess_u": {
+    "en": "My dream for the future\r\nis to be a prince!",
+    "ua": "Моя мрія —\nстати принцом!"
+  },
+  "newly_arrived_dream_m_sports_u": {
+    "en": "My dream for the future\r\nis to be a pro athlete!",
+    "ua": "Моя мрія —\nстати профі в спорті!"
+  },
+  "newly_arrived_dream_m_magic_u": {
+    "en": "My dream for the future\r\nis to be a wizard!",
+    "ua": "Моя мрія —\nстати чарівником!"
+  },
+  "newly_arrived_dream_m_president_u": {
+    "en": "My dream for the future\r\nis to run a company!",
+    "ua": "Моя мрія —\nочолити компанію!"
+  },
+  "newly_arrived_dream_m_champ_u": {
+    "en": "My dream for the future\r\nis to be a world champion!",
+    "ua": "Моя мрія —\nстати чемпіоном світу!"
+  },
+  "newly_arrived_dream_m_star_u": {
+    "en": "My dream for the future\r\nis to be a celebrity!",
+    "ua": "Моя мрія —\nстати знаменитістю!"
+  },
+  "newly_arrived_dream_m_love_u": {
+    "en": "My dream for the future\r\nis to be popular!",
+    "ua": "Моя мрія —\nстати популярним!"
+  },
+  "newly_arrived_dream_m_big_u": {
+    "en": "My dream for the future\r\nis to grow up!",
+    "ua": "Моя мрія —\nвирости!"
+  },
+  "newly_arrived_dream_m_fly_u": {
+    "en": "My dream for the future\r\nis to fly like a bird!",
+    "ua": "Моя мрія —\nлітати, як птах!"
+  },
+  "newly_arrived_dream_m_master_u": {
+    "en": "My dream for the future\r\nis to master an art!",
+    "ua": "Моя мрія —\nдосягти майстерності!"
+  },
+  "newly_arrived_dream_m_nice_u": {
+    "en": "My dream for the future\r\nis to get fit!",
+    "ua": "Моя мрія —\nбути у формі!"
+  },
+  "newly_arrived_dream_m_supernatural_u": {
+    "en": "My dream for the future\r\nis to gain super powers!",
+    "ua": "Моя мрія —\nмати суперсилу!"
+  },
+  "newly_arrived_dream_f_long_u": {
+    "en": "My dream for the future\r\nis to live long!",
+    "ua": "Моя мрія —\nпрожити довге життя!"
+  },
+  "newly_arrived_dream_f_rich_u": {
+    "en": "My dream for the future\r\nis to get rich!",
+    "ua": "Моя мрія —\nрозбагатіти!"
+  },
+  "newly_arrived_dream_f_space_u": {
+    "en": "My dream for the future\r\nis to visit outer space!",
+    "ua": "Моя мрія —\nпобувати в космосі!"
+  },
+  "newly_arrived_dream_f_marry_u": {
+    "en": "My dream for the future\r\nis to get married!",
+    "ua": "Моя мрія —\nодружитися!"
+  },
+  "newly_arrived_dream_f_hero_u": {
+    "en": "My dream for the future\r\nis to be a hero!",
+    "ua": "Моя мрія —\nстати героїнею!"
+  },
+  "newly_arrived_dream_f_princess_u": {
+    "en": "My dream for the future\r\nis to be a princess!",
+    "ua": "Моя мрія —\nстати принцесою!"
+  },
+  "newly_arrived_dream_f_sports_u": {
+    "en": "My dream for the future\r\nis to be a pro athlete!",
+    "ua": "Моя мрія —\nстати профі в спорті!"
+  },
+  "newly_arrived_dream_f_magic_u": {
+    "en": "My dream for the future\r\nis to be a witch!",
+    "ua": "Моя мрія —\nстати чарівницею!"
+  },
+  "newly_arrived_dream_f_president_u": {
+    "en": "My dream for the future\r\nis to run a company!",
+    "ua": "Моя мрія —\nочолити компанію!"
+  },
+  "newly_arrived_dream_f_champ_u": {
+    "en": "My dream for the future\r\nis to be a world champion!",
+    "ua": "Моя мрія —\nстати чемпіонкою світу!"
+  },
+  "newly_arrived_dream_f_star_u": {
+    "en": "My dream for the future\r\nis to be a celebrity!",
+    "ua": "Моя мрія —\nстати знаменитістю!"
+  },
+  "newly_arrived_dream_f_love_u": {
+    "en": "My dream for the future\r\nis to be popular!",
+    "ua": "Моя мрія —\nстати популярною!"
+  },
+  "newly_arrived_dream_f_big_u": {
+    "en": "My dream for the future\r\nis to grow up!",
+    "ua": "Моя мрія —\nвирости!"
+  },
+  "newly_arrived_dream_f_fly_u": {
+    "en": "My dream for the future\r\nis to fly like a bird!",
+    "ua": "Моя мрія —\nлітати, як птах!"
+  },
+  "newly_arrived_dream_f_master_u": {
+    "en": "My dream for the future\r\nis to master an art!",
+    "ua": "Моя мрія —\nдосягти майстерності!"
+  },
+  "newly_arrived_dream_f_nice_u": {
+    "en": "My dream for the future\r\nis to get fit!",
+    "ua": "Моя мрія —\nбути у формі!"
+  },
+  "newly_arrived_dream_f_supernatural_u": {
+    "en": "My dream for the future\r\nis to gain super powers!",
+    "ua": "Моя мрія —\nмати суперсилу!"
+  },
+  "newly_arrived_hobby_m_drow_u": {
+    "en": "I like drawing!",
+    "ua": "Люблю малювати!"
+  },
+  "newly_arrived_hobby_m_sports_u": {
+    "en": "I like playing sports!",
+    "ua": "Люблю спорт!"
+  },
+  "newly_arrived_hobby_m_book_u": {
+    "en": "I like reading!",
+    "ua": "Люблю читати!"
+  },
+  "newly_arrived_hobby_m_camera_u": {
+    "en": "I like taking photos!",
+    "ua": "Люблю\nфотографувати!"
+  },
+  "newly_arrived_hobby_m_pet_u": {
+    "en": "I like keeping pets!",
+    "ua": "Люблю тварин удома!"
+  },
+  "newly_arrived_hobby_m_dance_u": {
+    "en": "I like dancing!",
+    "ua": "Люблю танцювати!"
+  },
+  "newly_arrived_hobby_m_music_u": {
+    "en": "I like listening to music!",
+    "ua": "Люблю слухати музику!"
+  },
+  "newly_arrived_hobby_m_movie_u": {
+    "en": "I like watching films!",
+    "ua": "Люблю дивитися фільми!"
+  },
+  "newly_arrived_hobby_m_in_u": {
+    "en": "I like using the internet!",
+    "ua": "Люблю сидіти в Інтернеті!"
+  },
+  "newly_arrived_hobby_m_game_u": {
+    "en": "I like video games!",
+    "ua": "Люблю відеоігри!"
+  },
+  "newly_arrived_hobby_m_cook_u": {
+    "en": "I like cooking!",
+    "ua": "Люблю готувати!"
+  },
+  "newly_arrived_hobby_m_travel_u": {
+    "en": "I like travelling!",
+    "ua": "Люблю подорожувати!"
+  },
+  "newly_arrived_hobby_m_out_u": {
+    "en": "I like the outdoors!",
+    "ua": "Люблю бувати\nна природі!"
+  },
+  "newly_arrived_hobby_m_fish_u": {
+    "en": "I like fishing!",
+    "ua": "Люблю рибалити!"
+  },
+  "newly_arrived_hobby_m_drive_u": {
+    "en": "I like going for drives!",
+    "ua": "Люблю кататися\nмашиною!"
+  },
+  "newly_arrived_hobby_m_shop_u": {
+    "en": "I like shopping!",
+    "ua": "Люблю ходити\nпо крамницях!"
+  },
+  "newly_arrived_hobby_m_eat_u": {
+    "en": "I like eating!",
+    "ua": "Люблю поїсти!"
+  },
+  "newly_arrived_hobby_m_sleep_u": {
+    "en": "I like sleeping!",
+    "ua": "Люблю поспати!"
+  },
+  "newly_arrived_hobby_m_talk_u": {
+    "en": "I like chatting!",
+    "ua": "Люблю побалакати!"
+  },
+  "newly_arrived_hobby_m_dressup_u": {
+    "en": "I like fashion!",
+    "ua": "Люблю моду!"
+  },
+  "newly_arrived_hobby_m_study_u": {
+    "en": "I like studying!",
+    "ua": "Люблю вчитися!"
+  },
+  "newly_arrived_hobby_m_help_u": {
+    "en": "I like helping others!",
+    "ua": "Люблю допомагати іншим!"
+  },
+  "newly_arrived_hobby_m_party_u": {
+    "en": "I like parties!",
+    "ua": "Люблю вечірки!"
+  },
+  "newly_arrived_hobby_m_money_u": {
+    "en": "I like making money!",
+    "ua": "Люблю заробляти гроші!"
+  },
+  "newly_arrived_hobby_m_cleaning_u": {
+    "en": "I like cleaning!",
+    "ua": "Люблю прибирати!"
+  },
+  "newly_arrived_hobby_f_drow_u": {
+    "en": "I like drawing!",
+    "ua": "Люблю малювати!"
+  },
+  "newly_arrived_hobby_f_sports_u": {
+    "en": "I like playing sports!",
+    "ua": "Люблю спорт!"
+  },
+  "newly_arrived_hobby_f_book_u": {
+    "en": "I like reading!",
+    "ua": "Люблю читати!"
+  },
+  "newly_arrived_hobby_f_camera_u": {
+    "en": "I like taking photos!",
+    "ua": "Люблю\nфотографувати!"
+  },
+  "newly_arrived_hobby_f_pet_u": {
+    "en": "I like keeping pets!",
+    "ua": "Люблю тварин удома!"
+  },
+  "newly_arrived_hobby_f_dance_u": {
+    "en": "I like dancing!",
+    "ua": "Люблю танцювати!"
+  },
+  "newly_arrived_hobby_f_music_u": {
+    "en": "I like listening to music!",
+    "ua": "Люблю слухати музику!"
+  },
+  "newly_arrived_hobby_f_movie_u": {
+    "en": "I like watching films!",
+    "ua": "Люблю дивитися фільми!"
+  },
+  "newly_arrived_hobby_f_in_u": {
+    "en": "I like using the internet!",
+    "ua": "Люблю сидіти в Інтернеті!"
+  },
+  "newly_arrived_hobby_f_game_u": {
+    "en": "I like video games!",
+    "ua": "Люблю відеоігри!"
+  },
+  "newly_arrived_hobby_f_cook_u": {
+    "en": "I like cooking!",
+    "ua": "Люблю готувати!"
+  },
+  "newly_arrived_hobby_f_travel_u": {
+    "en": "I like travelling!",
+    "ua": "Люблю подорожувати!"
+  },
+  "newly_arrived_hobby_f_out_u": {
+    "en": "I like the outdoors!",
+    "ua": "Люблю бувати\nна природі!"
+  },
+  "newly_arrived_hobby_f_fish_u": {
+    "en": "I like fishing!",
+    "ua": "Люблю рибалити!"
+  },
+  "newly_arrived_hobby_f_drive_u": {
+    "en": "I like going for drives!",
+    "ua": "Люблю кататися\nмашиною!"
+  },
+  "newly_arrived_hobby_f_shop_u": {
+    "en": "I like shopping!",
+    "ua": "Люблю ходити\nпо крамницях!"
+  },
+  "newly_arrived_hobby_f_eat_u": {
+    "en": "I like eating!",
+    "ua": "Люблю поїсти!"
+  },
+  "newly_arrived_hobby_f_sleep_u": {
+    "en": "I like sleeping!",
+    "ua": "Люблю поспати!"
+  },
+  "newly_arrived_hobby_f_talk_u": {
+    "en": "I like chatting!",
+    "ua": "Люблю побалакати!"
+  },
+  "newly_arrived_hobby_f_dressup_u": {
+    "en": "I like fashion!",
+    "ua": "Люблю моду!"
+  },
+  "newly_arrived_hobby_f_study_u": {
+    "en": "I like studying!",
+    "ua": "Люблю вчитися!"
+  },
+  "newly_arrived_hobby_f_help_u": {
+    "en": "I like helping others!",
+    "ua": "Люблю допомагати іншим!"
+  },
+  "newly_arrived_hobby_f_party_u": {
+    "en": "I like parties!",
+    "ua": "Люблю вечірки!"
+  },
+  "newly_arrived_hobby_f_money_u": {
+    "en": "I like making money!",
+    "ua": "Люблю заробляти гроші!"
+  },
+  "newly_arrived_hobby_f_cleaning_u": {
+    "en": "I like cleaning!",
+    "ua": "Люблю прибирати!"
+  },
+  "newly_arrived_dream_secret_m_u": {
+    "en": "My dream is\r\na secret.",
+    "ua": "Моя мрія —\nсекрет."
+  },
+  "newly_arrived_dream_secret_f_u": {
+    "en": "My dream is\r\na secret.",
+    "ua": "Моя мрія —\nсекрет."
+  },
+  "newly_arrived_hobby_secret_m_u": {
+    "en": "My hobby is\r\na secret.",
+    "ua": "Моє хобі —\nсекрет."
+  },
+  "newly_arrived_hobby_secret_f_u": {
+    "en": "My hobby is\r\na secret.",
+    "ua": "Моє хобі —\nсекрет."
+  },
+  "newly_arrived_recently_m_u": {
+    "en": "Recently, I've\r\nbeen playing...",
+    "ua": "Останнім часом\nя граю в…"
+  },
+  "newly_arrived_recently_f_u": {
+    "en": "Recently, I've\r\nbeen playing...",
+    "ua": "Останнім часом\nя граю в…"
+  },
+  "newly_arrived_value_m_u": {
+    "en": "So, what do you say?\r\nHow would you rate me?",
+    "ua": "То що скажете?\nЯк ви мене оціните?"
+  },
+  "newly_arrived_value_f_u": {
+    "en": "So, what do you say?\r\nHow would you rate me?",
+    "ua": "То що скажете?\nЯк ви мене оціните?"
+  },
+  "newly_arrived_best_m_u": {
+    "en": "Really? Thank you!",
+    "ua": "Справді? Дякую!"
+  },
+  "newly_arrived_best_f_u": {
+    "en": "Really? Thank you!",
+    "ua": "Справді? Дякую!"
+  },
+  "newly_arrived_normal_m_u": {
+    "en": "Oh... Really?",
+    "ua": "О… Справді?"
+  },
+  "newly_arrived_normal_f_u": {
+    "en": "Oh... Really?",
+    "ua": "О… Справді?"
+  },
+  "newly_arrived_get_value_m_u": {
+    "en": "I think you're fantastic!",
+    "ua": "Як на мене, ви чудові!"
+  },
+  "newly_arrived_get_value_f_u": {
+    "en": "I think you're fantastic!",
+    "ua": "Як на мене, ви чудові!"
+  },
+  "newly_arrived_get_value_u": {
+    "en": "Number of times people have\r\nsaid you're fantastic: [0]!",
+    "ua": "Скільки разів вас оцінили\nяк «чудово»: [0]!"
+  },
+  "newly_arrived_unconscious_u": {
+    "en": "I came here through\r\nSpotPass!",
+    "ua": "Я тут завдяки\nSpotPass!"
+  },
+  "newly_arrived_person_u": {
+    "en": "Personal",
+    "ua": "Особисте"
+  },
+  "newly_arrived_skip_u": {
+    "en": "/ Fast Forward",
+    "ua": "/ Перемотати"
+  },
+  "choice_ques_greeting_u": {
+    "en": "Use which greeting?",
+    "ua": "Яке вітання взяти?"
+  },
+  "choice_greeting_u": {
+    "en": "General",
+    "ua": "Загальне"
+  },
+  "choice_sepa_greeting_u": {
+    "en": "Personal",
+    "ua": "Особисте"
+  },
+  "choice_best_u": {
+    "en": "Fantastic!",
+    "ua": "Чудово!"
+  },
+  "choice_normal_u": {
+    "en": "OK, I guess...",
+    "ua": "Та нічого…"
+  },
+  "dlg_ce_two_u": {
+    "en": "You can send a personal greeting\r\nafter meeting via StreetPass for\r\nthe second time.",
+    "ua": "Особисте вітання можна надіслати\nпісля другої зустрічі\nчерез StreetPass."
+  },
+  "dlg_greeting_send_u": {
+    "en": "[0] will get\r\na personal greeting from you\r\nthe next time you meet.",
+    "ua": "[0] отримає\nвід вас особисте вітання\nпід час наступної зустрічі."
+  },
+  "dlg_value_send_u": {
+    "en": "Your rating will be sent next time\r\nyou meet [0]\r\nusing StreetPass.",
+    "ua": "Оцінку буде надіслано\nпід час наступної зустрічі\nз [0] через StreetPass."
+  },
+  "dlg_greeting_02_u": {
+    "en": "Please don't include personal\r\ninformation or offensive language.",
+    "ua": "Не пишіть особистих даних\nта образливих слів."
+  },
+  "cmn_whipout_u": {
+    "en": "Take out the stylus!",
+    "ua": "Дістаньте стилус!"
+  },
+  "dlg_greeting_04_u": {
+    "en": "Is this greeting OK?",
+    "ua": "Це вітання підходить?"
+  },
+  "cap_g_confirm_u": {
+    "en": "Confirm Greeting",
+    "ua": "Перевірка вітання"
+  },
+  "dlg_choice_good_msg_u": {
+    "en": "Accept",
+    "ua": "Узяти"
+  },
+  "dlg_choice_rewrite_msg_u": {
+    "en": "Rewrite",
+    "ua": "Змінити"
+  },
+  "dlg_shop_txt1": {
+    "en": "[NUM] of [TOTAL] people were\r\nusing this software last.",
+    "ua": "[NUM] з [TOTAL] людей востаннє\nграли в цю програму."
+  },
+  "dlg_shop_txt2": {
+    "en": "View details in Nintendo eShop?",
+    "ua": "Переглянути подробиці\nв Nintendo eShop?"
+  },
+  "dlg_shop_txt3": {
+    "en": "This will close StreetPass Mii Plaza.",
+    "ua": "Площу StreetPass Mii буде закрито."
+  },
+  "dlg_shop_select_up": {
+    "en": "Yes",
+    "ua": "Так"
+  },
+  "dlg_shop_select_down": {
+    "en": "No",
+    "ua": "Ні"
+  },
+  "captionT_03": {
+    "en": "Expression",
+    "ua": "Вираз"
+  },
+  "cap_ce_exp_u": {
+    "en": "Using StreetPass",
+    "ua": "Як діє StreetPass"
+  },
+  "dlg_zero_mii_01_u": {
+    "en": "It looks like no one's come\r\nto your plaza yet...",
+    "ua": "Схоже, на вашу площу\nще ніхто не приходив…"
+  },
+  "dlg_zero_mii_02_u": {
+    "en": "Do you want to go over how\r\nto use StreetPass again?",
+    "ua": "Пояснити ще раз, як\nкористуватися StreetPass?"
+  },
+  "dlg_choice_listen_u": {
+    "en": "Yes",
+    "ua": "Так"
+  },
+  "dlg_choice_not_listen_u": {
+    "en": "No",
+    "ua": "Ні"
+  },
+  "dlg_ce_exp_00_u": {
+    "en": "Right, then...",
+    "ua": "Отже, до справи…"
+  },
+  "dlg_ce_exp_01_u": {
+    "en": "Let me tell you how to send\r\n[0] to other\r\nusers' plazas over StreetPass!",
+    "ua": "Розповім, як надіслати\n[0] на площі інших\nкористувачів через StreetPass!"
+  },
+  "dlg_ce_exp_02_u": {
+    "en": "It's simple.",
+    "ua": "Це просто."
+  },
+  "dlg_ce_exp_03_u": {
+    "en": "Just enter Sleep Mode.",
+    "ua": "Просто перейдіть у режим сну."
+  },
+  "dlg_ce_exp_04_u": {
+    "en": "This works even while\r\nplaying other games.",
+    "ua": "Це працює навіть\nпід час інших ігор."
+  },
+  "dlg_ce_exp_05_u": {
+    "en": "Sometimes, you can even\r\nuse StreetPass when you're\r\nnot in Sleep Mode.",
+    "ua": "Іноді StreetPass працює\nй тоді, коли консоль\nне в режимі сну."
+  },
+  "dlg_ce_exp_06_u": {
+    "en": "(This depends on the game\r\nand certain other factors.)",
+    "ua": "(Це залежить від гри\nта інших чинників.)"
+  },
+  "dlg_ce_exp_07_u": {
+    "en": "When you've received\r\ndata via StreetPass,",
+    "ua": "Коли ви отримаєте\nдані через StreetPass,"
+  },
+  "dlg_ce_exp_08_u": {
+    "en": "the notification LED\r\nwill turn green.",
+    "ua": "індикатор сповіщень\nзасвітиться зеленим."
+  },
+  "dlg_ce_exp_09_u": {
+    "en": "You'll also get a StreetPass\r\nnotification in Notifications.",
+    "ua": "А в Сповіщеннях з'явиться\nсповіщення StreetPass."
+  },
+  "dlg_ce_exp_10_u": {
+    "en": "OK, you're all set!",
+    "ua": "Готово, усе налаштовано!"
+  },
+  "dlg_ce_exp_11_u": {
+    "en": "Now try going to places where you\r\nmight pass by lots of other people!",
+    "ua": "Тепер спробуйте піти туди, де повз\nвас проходить багато людей!"
+  },
+  "choice_ques_sepa_greeting_u": {
+    "en": "Use personal greeting?",
+    "ua": "Використати особисте\nвітання?"
+  },
+  "choice_sepa_greeting_no_u": {
+    "en": "No",
+    "ua": "Ні"
+  },
+  "choice_sepa_greeting_yes_u": {
+    "en": "Yes",
+    "ua": "Так"
+  },
+  "caption_balloon_00": {
+    "en": "Speech Bubble",
+    "ua": "Вікно репліки"
+  },
+  "annouce_birthday_ticket_00": {
+    "en": "You got a plaza ticket.",
+    "ua": "Ви отримали квиток Площі."
+  },
+  "annouce_birthday_ticket_01": {
+    "en": "Plaza tickets can be redeemed\r\nin the exchange booth.",
+    "ua": "Квитки Площі можна обміняти\nв обмінному пункті."
+  },
+  "birthday_00": {
+    "en": "I was born on [DAY]/[MONTH].",
+    "ua": "Мій день народження — [DAY].[MONTH]."
+  },
+  "birthday_01": {
+    "en": "It's my birthday today!",
+    "ua": "Сьогодні мій день народження!"
+  },
+  "birthday_02": {
+    "en": "It's my birthday tomorrow!",
+    "ua": "Завтра мій день народження!"
+  },
+  "birthday_03": {
+    "en": "It was my birthday yesterday!",
+    "ua": "Учора був мій день народження!"
+  },
+  "birthday_cap": {
+    "en": "Birthday",
+    "ua": "Народження"
+  },
+  "dlg_broken_premium_00": {
+    "en": "Oh, I'm sorry!",
+    "ua": "Ой, перепрошуємо!"
+  },
+  "dlg_broken_premium_01": {
+    "en": "Something's up with the StreetPass Mii\r\nPlaza Premium data, so we're going to\r\nhave to skip the greetings.",
+    "ua": "Щось не так із даними Преміум-площі\nStreetPass Mii, тож вітання\nдоведеться пропустити."
+  },
+  "dlg_broken_premium_02": {
+    "en": "Please go to Other Options in\r\nSettings and delete the data for\r\nStreetPass Mii Plaza Premium,",
+    "ua": "Перейдіть до Інших параметрів\nу Налаштуваннях і видаліть дані\nПреміум-площі StreetPass Mii,"
+  },
+  "dlg_broken_premium_03": {
+    "en": "then download it again from the\r\nVIP Room or StreetPass Birthdays.",
+    "ua": "а потім завантажте їх знову у VIP-\nкімнаті або в Календарі StreetPass."
+  },
+  "newly_arrived_quick": {
+    "en": "I'm [1].\r\n(From: [0])\r\n[2]",
+    "ua": "Я — [1].\n(Звідки: [0])\n[2]"
+  },
+  "now_encount_T_headcount": {
+    "en": "Total Visitors",
+    "ua": "Усього гостей"
+  },
+  "now_encount_sdwT_headcount": {
+    "en": "Total Visitors",
+    "ua": "Усього гостей"
+  }
+}

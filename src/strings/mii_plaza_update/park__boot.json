@@ -1,0 +1,202 @@
+{
+  "cap_gate_u": {
+    "en": "Careful!",
+    "ua": "Обережно!"
+  },
+  "dlg_gate00_u": {
+    "en": "You haven't played all of your plaza\r\ngames with your previous guest yet.",
+    "ua": "Ви ще не зіграли всі ігри площі\nз попереднім гостем."
+  },
+  "dlg_gate00_u_m": {
+    "en": "You haven't played all of your plaza\r\ngames with your previous guests yet.",
+    "ua": "Ви ще не зіграли всі ігри площі\nз попередніми гостями."
+  },
+  "dlg_gate_sub00_u": {
+    "en": "If you go to the entrance now, you won't be able\r\nto play with them until they next visit.",
+    "ua": "Якщо зараз піти до входу, з ними можна буде\nзіграти лише після їхнього наступного візиту."
+  },
+  "dlg_gate_sub00_u_m": {
+    "en": "If you go to the entrance now, you won't be able\r\nto play with them until they next visit.",
+    "ua": "Якщо зараз піти до входу, з ними можна буде\nзіграти лише після їхнього наступного візиту."
+  },
+  "dlg_choice_go_play_u": {
+    "en": "Play",
+    "ua": "Грати"
+  },
+  "dlg_choice_go_gate_u": {
+    "en": "Go to Entrance",
+    "ua": "До входу"
+  },
+  "dlg_cfl_format_u": {
+    "en": "The Mii Maker save data was\r\ncorrupted and has been reset.",
+    "ua": "Дані Конструктора Mii були\nпошкоджені, тому їх скинуто."
+  },
+  "dlg_no_mii01_u": {
+    "en": "You don't have any Mii characters\r\nin Mii Maker.",
+    "ua": "У Конструкторі Mii\nнемає жодного Mii."
+  },
+  "dlg_no_mii02_u": {
+    "en": "Come back once you've\r\nmade a Mii in Mii Maker!",
+    "ua": "Поверніться, коли створите\nMii у Конструкторі Mii!"
+  },
+  "dlg_no_mii03_u": {
+    "en": "Don't forget!",
+    "ua": "Не забудьте!"
+  },
+  "dlg_no_mii04_u": {
+    "en": "Press  to return to the\r\nHOME Menu, where you\r\ncan then go to Mii Maker.",
+    "ua": "Натисніть , щоб повернутися\nдо меню HOME, звідки можна\nперейти до Конструктора Mii."
+  },
+  "dlg_meet_format_u": {
+    "en": "The StreetPass Mii Plaza save data\r\nwas corrupted and has been reset.",
+    "ua": "Дані Площі StreetPass Mii були\nпошкоджені, тому їх скинуто."
+  },
+  "dlg_lost_box_u": {
+    "en": "This software has not been\r\nactivated for use with\r\nStreetPass on this system.",
+    "ua": "Цю програму не активовано\nдля StreetPass\nна цій системі."
+  },
+  "dlg_noce_u": {
+    "en": "This software cannot be used with\r\nStreetPass because StreetPass is\r\nrestricted by Parental Controls.",
+    "ua": "Ця програма недоступна\nдля StreetPass: його обмежено\nБатьківським контролем."
+  },
+  "dlg_change_noce_u": {
+    "en": "The StreetPass option has been\r\nset to Off, and StreetPass has\r\nbeen deactivated for this software.",
+    "ua": "Параметр StreetPass вимкнено,\nі StreetPass для цієї програми\nдеактивовано."
+  },
+  "dlg_sdcard_cant_write_u": {
+    "en": "The SD Card is write-protected.",
+    "ua": "Карту SD захищено від запису."
+  },
+  "dlg_sdcard_cant_write_end_u": {
+    "en": "Please check the write-protection\r\nswitch on the SD Card.",
+    "ua": "Перевірте перемикач захисту\nвід запису на карті SD."
+  },
+  "dlg_extarc_recreate_u": {
+    "en": "The extra data on the SD Card was\r\ncorrupted and has been reset.",
+    "ua": "Додаткові дані на карті SD були\nпошкоджені, тому їх скинуто."
+  },
+  "dlg_savedata_ext_recreate_u": {
+    "en": "The extra data for StreetPass Mii Plaza\r\nwas corrupted and has been reset.",
+    "ua": "Додаткові дані Площі StreetPass Mii\nбули пошкоджені, тому їх скинуто."
+  },
+  "dlg_savedata_ext_create_fail_u": {
+    "en": "Failed to create extra data for\r\nStreetPass Mii Plaza.",
+    "ua": "Не вдалося створити додаткові\nдані Площі StreetPass Mii."
+  },
+  "dlg_savedata_ext_cant_write_u": {
+    "en": "Unable to write to the extra data\r\nfor StreetPass Mii Plaza.",
+    "ua": "Не вдалося записати додаткові\nдані Площі StreetPass Mii."
+  },
+  "dlg_savedata_ext_load_fail_u": {
+    "en": "Could not load the extra data for \r\nStreetPass Mii Plaza.",
+    "ua": "Не вдалося завантажити додаткові\nдані Площі StreetPass Mii."
+  },
+  "dlg_save_init_error_u": {
+    "en": "As a result, you won't be able \r\nto use StreetPass Mii Plaza.",
+    "ua": "Тому Площа StreetPass Mii\nбуде недоступна."
+  },
+  "dlg_save_init_error_boss_u": {
+    "en": "You also won't be able\r\nto use SpotPass.",
+    "ua": "Також не вдасться\nкористуватися SpotPass."
+  },
+  "dlg_save_init_error_end_u": {
+    "en": "Please press  to return\r\nto the HOME Menu.",
+    "ua": "Натисніть , щоб повернутися\nдо меню HOME."
+  },
+  "dlg_extarc_create_fail_nospace_u": {
+    "en": "Extra data could not be created\r\nbecause there is not enough\r\nfree space on the SD Card.",
+    "ua": "Не вдалося створити додаткові дані:\nна карті SD недостатньо\nвільного місця."
+  },
+  "dlg_savedata_ext_create_fail_nospace_u": {
+    "en": "Extra data could not be created for\r\nStreetPass Mii Plaza because there is\r\nnot enough free space on the SD Card.",
+    "ua": "Не вдалося створити додаткові дані\nПлощі StreetPass Mii: на карті SD\nнедостатньо вільного місця."
+  },
+  "dlg_savedata_ext_cant_write_nospace_u": {
+    "en": "Could not write to the extra data for\r\nStreetPass Mii Plaza because there is\r\nnot enough free space on the SD Card.",
+    "ua": "Не вдалося записати додаткові дані\nПлощі StreetPass Mii: на карті SD\nнедостатньо вільного місця."
+  },
+  "dlg_sdcard_nospace_end_u": {
+    "en": "Free up some space on the\r\nSD Card using Data Management \r\nin the System Settings.",
+    "ua": "Звільніть місце на карті SD\nу розділі Керування даними\nНалаштувань системи."
+  },
+  "dlg_update_fail_u_00": {
+    "en": "When you are able to\r\naccess the internet,",
+    "ua": "Коли з'явиться доступ\nдо інтернету,"
+  },
+  "dlg_update_fail_u_01": {
+    "en": "you can select this icon to \r\nupdate your plaza.",
+    "ua": "виберіть цей значок,\nщоб оновити площу."
+  },
+  "dlg_update_cancel": {
+    "en": "Fair enough! No problem.",
+    "ua": "Гаразд! Нема питань."
+  },
+  "dlg_update_old_00": {
+    "en": "Could not find the latest\r\nupdate data for StreetPass\r\nMii Plaza on the SD Card.",
+    "ua": "Не вдалося знайти на карті SD\nостанні дані оновлення\nПлощі StreetPass Mii."
+  },
+  "dlg_update_old_01": {
+    "en": "You cannot play StreetPass\r\nMii Plaza unless you have \r\nthe latest update data.",
+    "ua": "Без останніх даних оновлення\nграти на Площі StreetPass Mii\nнеможливо."
+  },
+  "dlg_update_old_confirm_cap": {
+    "en": "StreetPass Mii Plaza",
+    "ua": "Площа StreetPass Mii"
+  },
+  "dlg_update_old_confirm": {
+    "en": "Would you like to redownload\r\nthe latest update data?",
+    "ua": "Завантажити останні дані\nоновлення ще раз?"
+  },
+  "dlg_update_old_confirm_00": {
+    "en": "This will allow you to play\r\nStreetPass Mii Plaza.",
+    "ua": "Тоді можна буде грати\nна Площі StreetPass Mii."
+  },
+  "dlg_update_old_confirm_ok": {
+    "en": "Yes",
+    "ua": "Так"
+  },
+  "dlg_update_old_confirm_ng": {
+    "en": "No",
+    "ua": "Ні"
+  },
+  "dlg_update_old_success": {
+    "en": "Thank you for waiting.\r\nHave fun!",
+    "ua": "Дякуємо за очікування.\nГарної гри!"
+  },
+  "dlg_update_old_fail": {
+    "en": "Sorry, but it failed...\r\nPlease try again.",
+    "ua": "На жаль, не вдалося…\nСпробуйте ще раз."
+  },
+  "dlg_patch_from_meet3_00": {
+    "en": "There's a game update available!",
+    "ua": "Доступне оновлення гри!"
+  },
+  "dlg_patch_from_meet3_01": {
+    "en": "OK, the data's going to start downloading...",
+    "ua": "Гаразд, починаємо завантаження…"
+  },
+  "dlg_patch_from_meet3_02": {
+    "en": "So hang on a sec!",
+    "ua": "Хвилинку зачекайте!"
+  },
+  "dlg_patch_from_meet3_fail_00": {
+    "en": "Sorry... The update failed.",
+    "ua": "На жаль… Оновити не вдалося."
+  },
+  "dlg_patch_from_meet3_fail_01": {
+    "en": "Until the update is finished, you\r\nwon't be able to play any games\r\nyou've purchased.",
+    "ua": "Поки оновлення не завершиться,\nкуплені ігри будуть\nнедоступні."
+  },
+  "dlg_patch_from_meet3_fail_02": {
+    "en": "Please bear with us until\r\nthe update's finished.",
+    "ua": "Будь ласка, зачекайте,\nпоки оновлення завершиться."
+  },
+  "dlg_patch_from_meet3_fail_03": {
+    "en": "You can try to update here...",
+    "ua": "Оновитися можна тут…"
+  },
+  "dlg_patch_from_meet3_fail_04": {
+    "en": "...or within the individual games.",
+    "ua": "…або в самих іграх."
+  }
+}

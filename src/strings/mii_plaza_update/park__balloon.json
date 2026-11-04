@@ -1,0 +1,278 @@
+{
+  "balloon_default": {
+    "en": "Speech Bubble",
+    "ua": "Вікно репліки"
+  },
+  "balloon_thinking": {
+    "en": "Thought Bubble",
+    "ua": "Вікно «Думка»"
+  },
+  "balloon_shock": {
+    "en": "Shocked Bubble",
+    "ua": "Вікно «Шок»"
+  },
+  "balloon_disappointed": {
+    "en": "Downcast Bubble",
+    "ua": "Вікно «Смуток»"
+  },
+  "balloon_impatient": {
+    "en": "Under Pressure Bubble",
+    "ua": "Вікно «Тиск»"
+  },
+  "balloon_shy": {
+    "en": "Bashful Bubble",
+    "ua": "Скромне вікно"
+  },
+  "balloon_black": {
+    "en": "Black Bubble",
+    "ua": "Чорне вікно"
+  },
+  "balloon_sleep": {
+    "en": "Sleep-talking Bubble",
+    "ua": "Вікно «Крізь сон»"
+  },
+  "balloon_fire": {
+    "en": "Fire Bubble",
+    "ua": "Вогняне вікно"
+  },
+  "balloon_horror": {
+    "en": "Horror Bubble",
+    "ua": "Вікно жахів"
+  },
+  "balloon_elegant": {
+    "en": "Elegant Bubble",
+    "ua": "Елегантне вікно"
+  },
+  "balloon_fancy": {
+    "en": "Fantasy Bubble",
+    "ua": "Казкове вікно"
+  },
+  "balloon_heart": {
+    "en": "Hearts Bubble",
+    "ua": "Вікно з сердечками"
+  },
+  "balloon_twinkle": {
+    "en": "Sparkly Bubble",
+    "ua": "Блискуче вікно"
+  },
+  "balloon_cake": {
+    "en": "Cake Bubble",
+    "ua": "Вікно-торт"
+  },
+  "balloon_travel": {
+    "en": "Bon Voyage Bubble",
+    "ua": "Вікно «Мандри»"
+  },
+  "balloon_themepark": {
+    "en": "Funfair Bubble",
+    "ua": "Вікно «Атракціони»"
+  },
+  "balloon_money": {
+    "en": "Money Bubble",
+    "ua": "Вікно «Гроші»"
+  },
+  "balloon_letter": {
+    "en": "Letter Bubble",
+    "ua": "Вікно-лист"
+  },
+  "balloon_note": {
+    "en": "Notepad Bubble",
+    "ua": "Вікно-блокнот"
+  },
+  "balloon_masking": {
+    "en": "Sticky Tape Bubble",
+    "ua": "Вікно зі скотчем"
+  },
+  "balloon_craftpaper": {
+    "en": "Crafty Bubble",
+    "ua": "Крафтове вікно"
+  },
+  "balloon_lace": {
+    "en": "Lacy Bubble",
+    "ua": "Мереживне вікно"
+  },
+  "balloon_stripe": {
+    "en": "Stripy Bubble",
+    "ua": "Смугасте вікно"
+  },
+  "balloon_dotpattern": {
+    "en": "Polka Dot Bubble",
+    "ua": "Вікно в горошок"
+  },
+  "balloon_check": {
+    "en": "Check Bubble",
+    "ua": "Вікно в клітинку"
+  },
+  "balloon_mario": {
+    "en": "Mario Bubble",
+    "ua": "Вікно Маріо"
+  },
+  "balloon_luigi": {
+    "en": "Luigi Bubble",
+    "ua": "Вікно Луїджі"
+  },
+  "balloon_peach": {
+    "en": "Peach Bubble",
+    "ua": "Вікно Піч"
+  },
+  "balloon_yoshi": {
+    "en": "Yoshi Bubble",
+    "ua": "Вікно Йоші"
+  },
+  "balloon_kinopio": {
+    "en": "Toad Bubble",
+    "ua": "Вікно Тоада"
+  },
+  "balloon_koopa": {
+    "en": "Bowser Bubble",
+    "ua": "Вікно Боузера"
+  },
+  "balloon_dokan": {
+    "en": "Pipe Bubble",
+    "ua": "Вікно-труба"
+  },
+  "balloon_stage1_1": {
+    "en": "Super Mario Bros. Bubble",
+    "ua": "Вікно Super Mario Bros."
+  },
+  "balloon_hatenablock": {
+    "en": "? Block Bubble",
+    "ua": "Вікно «Блок ?»"
+  },
+  "balloon_pikmin": {
+    "en": "Pikmin Bubble",
+    "ua": "Вікно Pikmin"
+  },
+  "balloon_link": {
+    "en": "Link Bubble",
+    "ua": "Вікно Лінка"
+  },
+  "balloon_princesszelda": {
+    "en": "Zelda Bubble",
+    "ua": "Вікно Зельди"
+  },
+  "balloon_triforce": {
+    "en": "A Link Between Worlds Bubble",
+    "ua": "Вікно A Link Between Worlds"
+  },
+  "balloon_samus": {
+    "en": "Samus Bubble",
+    "ua": "Вікно Самус"
+  },
+  "balloon_animal_crossing": {
+    "en": "Animal Crossing Bubble",
+    "ua": "Вікно Animal Crossing"
+  },
+  "balloon_shizue": {
+    "en": "Isabelle Bubble",
+    "ua": "Вікно Ізабель"
+  },
+  "balloon_kirby": {
+    "en": "Kirby Bubble",
+    "ua": "Вікно Кірбі"
+  },
+  "balloon_donkey": {
+    "en": "Donkey Kong Bubble",
+    "ua": "Вікно Донкі Конга"
+  },
+  "balloon_bandbrosp": {
+    "en": "Barbara the Bat Bubble",
+    "ua": "Вікно кажанки Барбари"
+  },
+  "balloon_wiiu_pad": {
+    "en": "Wii U GamePad Bubble",
+    "ua": "Вікно Wii U GamePad"
+  },
+  "balloon_3ds_card": {
+    "en": "Game Card Bubble",
+    "ua": "Вікно-картридж"
+  },
+  "balloon_famicon": {
+    "en": "Famicom Cassette Bubble",
+    "ua": "Вікно-картридж Famicom"
+  },
+  "balloon_hanafuda": {
+    "en": "Hanafuda Bubble",
+    "ua": "Вікно ханафуда"
+  },
+  "balloon_hyakunin": {
+    "en": "Hyakunin Isshu Bubble",
+    "ua": "Вікно Хякунін Іссю"
+  },
+  "balloon_mahjong": {
+    "en": "Mahjong Bubble",
+    "ua": "Вікно маджонгу"
+  },
+  "balloon_trump": {
+    "en": "Playing Cards Bubble",
+    "ua": "Вікно з картами"
+  },
+  "balloon_legend": {
+    "en": "StreetPass Quest Bubble",
+    "ua": "Вікно «Порятунок Mii»"
+  },
+  "balloon_piece": {
+    "en": "Puzzle Swap Bubble",
+    "ua": "Вікно «Збери пазл»"
+  },
+  "balloon_ticket": {
+    "en": "Plaza Ticket Bubble",
+    "ua": "Вікно «Квиток Площі»"
+  },
+  "balloon_dog": {
+    "en": "Dog Bubble",
+    "ua": "Вікно-собака"
+  },
+  "balloon_cat": {
+    "en": "Cat Bubble",
+    "ua": "Вікно-кіт"
+  },
+  "balloon_rabbit": {
+    "en": "Rabbit Bubble",
+    "ua": "Вікно-кролик"
+  },
+  "balloon_mgSht": {
+    "en": "StreetPass Squad Bubble",
+    "ua": "Вікно Галактики StreetPass"
+  },
+  "balloon_mgFlo": {
+    "en": "StreetPass Garden Bubble",
+    "ua": "Вікно Саду StreetPass"
+  },
+  "balloon_mgBtl": {
+    "en": "StreetPass Battle Bubble",
+    "ua": "Вікно Фортеці StreetPass"
+  },
+  "balloon_mgPzd": {
+    "en": "StreetPass Mansion Bubble",
+    "ua": "Вікно Маєтку StreetPass"
+  },
+  "balloon_mgFsh": {
+    "en": "StreetPass Fishing Bubble",
+    "ua": "Вікно Риболовлі StreetPass"
+  },
+  "balloon_mgZmb": {
+    "en": "StreetPass Zombies Bubble",
+    "ua": "Вікно Зомбі StreetPass"
+  },
+  "balloon_mgCar": {
+    "en": "StreetPass Slot Racer Bubble",
+    "ua": "Вікно «Слот-перегони»"
+  },
+  "balloon_mgTrd": {
+    "en": "StreetPass Trader Bubble",
+    "ua": "Вікно Біржі StreetPass"
+  },
+  "balloon_mgChf": {
+    "en": "StreetPass Chef Bubble",
+    "ua": "Вікно Ресторану StreetPass"
+  },
+  "balloon_mgNja": {
+    "en": "StreetPass Ninja Bubble",
+    "ua": "Вікно Ніндзя StreetPass"
+  },
+  "balloon_mgExp": {
+    "en": "StreetPass Explorers Bubble",
+    "ua": "Вікно Експедиції StreetPass"
+  }
+}

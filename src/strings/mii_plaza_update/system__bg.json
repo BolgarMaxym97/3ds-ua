@@ -1,0 +1,78 @@
+{
+  "home_menuT": {
+    "en": ": Return to HOME Menu",
+    "ua": ": назад у меню HOME"
+  },
+  "commandRT_00": {
+    "en": "OK",
+    "ua": "OK"
+  },
+  "commandRT_01": {
+    "en": "Back",
+    "ua": "Назад"
+  },
+  "commandLT_00": {
+    "en": "Select",
+    "ua": "Вибрати"
+  },
+  "gamecoin_txt_00": {
+    "en": "Play Coins",
+    "ua": "Ігрових монеток"
+  },
+  "piece_txt_00": {
+    "en": "Pieces Collected",
+    "ua": "Частинок"
+  },
+  "traveler_txt_00": {
+    "en": "Travellers Met",
+    "ua": "Мандрівників"
+  },
+  "braveman_txt_00": {
+    "en": "Heroes Met",
+    "ua": "Героїв"
+  },
+  "room_txt_00": {
+    "en": "Rooms Cleared",
+    "ua": "Кімнат пройдено"
+  },
+  "room_txt_10": {
+    "en": "Rooms Cleared",
+    "ua": "Кімнат пройдено"
+  },
+  "room_txt_02": {
+    "en": "All!",
+    "ua": "Усі!"
+  },
+  "cmn_save_d": {
+    "en": "Saving... Don't turn off the power.",
+    "ua": "Збереження… Не вимикайте\nконсоль."
+  },
+  "cmn_putback_d": {
+    "en": "Put the stylus back\r\nin the stylus holder.",
+    "ua": "Поверніть стилус\nу тримач."
+  },
+  "cmn_putback_greeting_d": {
+    "en": "Put the stylus back in the\r\nholder and use  to select\r\nan expression to accompany\r\nyour greeting.",
+    "ua": "Поверніть стилус у тримач\nі виберіть  вираз\nобличчя, який супроводжуватиме\nваше вітання."
+  },
+  "dlg_soundtest_command_00": {
+    "en": "Play",
+    "ua": "Грати"
+  },
+  "dlg_soundtest_command_01": {
+    "en": "Stop",
+    "ua": "Стоп"
+  },
+  "dlg_soundtest_command_02": {
+    "en": "Use in Plaza",
+    "ua": "Грати на площі"
+  },
+  "dlg_soundtest_command_03": {
+    "en": "Stop in Plaza",
+    "ua": "Вимкнути на площі"
+  },
+  "dlg_map_command_02": {
+    "en": "Restart",
+    "ua": "Спочатку"
+  }
+}

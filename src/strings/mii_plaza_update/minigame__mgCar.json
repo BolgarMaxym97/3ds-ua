@@ -1,0 +1,2526 @@
+{
+  "game_lap_timeT": {
+    "en": "LAP [0] - [1]:[2].[3]",
+    "ua": "КОЛО [0] - [1]:[2].[3]"
+  },
+  "game_lap_time_col": {
+    "en": "LAP [0] - [1]:[2].[3]",
+    "ua": "КОЛО [0] - [1]:[2].[3]"
+  },
+  "game_best_capT": {
+    "en": "Best Race Time",
+    "ua": "Рекорд часу"
+  },
+  "game_free_capT": {
+    "en": "Solo Practice",
+    "ua": "Тренування"
+  },
+  "game_free_capT_00": {
+    "en": "Ghost Race",
+    "ua": "Заїзд із привидом"
+  },
+  "game_total_time_capT": {
+    "en": "Total",
+    "ua": "Усього"
+  },
+  "game_telopT_00": {
+    "en": "GO!",
+    "ua": "СТАРТ!"
+  },
+  "game_telopT_01": {
+    "en": "FINISH!",
+    "ua": "ФІНІШ!"
+  },
+  "game_telopT_02": {
+    "en": "YOU WIN!",
+    "ua": "ПЕРЕМОГА!"
+  },
+  "game_telopT_03": {
+    "en": "YOU LOSE...",
+    "ua": "ПОРАЗКА…"
+  },
+  "game_telop_timeoverT": {
+    "en": "TIME UP",
+    "ua": "ЧАС ВИЙШОВ"
+  },
+  "game_warningT": {
+    "en": "TIME UP IN [0]!",
+    "ua": "ЩЕ [0]!"
+  },
+  "game_corner_rankT_00": {
+    "en": "EXCELLENT!",
+    "ua": "ЧУДОВО!"
+  },
+  "game_corner_rankT_01": {
+    "en": "GOOD!",
+    "ua": "ДОБРЕ!"
+  },
+  "game_corner_rankT_03": {
+    "en": "CRASH!",
+    "ua": "АВАРІЯ!"
+  },
+  "game_corner_rankT_04": {
+    "en": "RELEASE [ACCELE_TYPE]!",
+    "ua": "ПУСТИ [ACCELE_TYPE]!"
+  },
+  "goal_text_retryT": {
+    "en": "Retry",
+    "ua": "Ще раз"
+  },
+  "goal_text_counterT": {
+    "en": "Quit",
+    "ua": "Вийти"
+  },
+  "game_cam_typeT_00": {
+    "en": "Mii View",
+    "ua": "Вид Mii"
+  },
+  "game_cam_typeT_01": {
+    "en": "Car View",
+    "ua": "Вид машинки"
+  },
+  "game_cam_changeT": {
+    "en": " Switch Views",
+    "ua": " Змінити вид"
+  },
+  "rank_00": {
+    "en": "1st",
+    "ua": "1-й"
+  },
+  "rank_01": {
+    "en": "2nd",
+    "ua": "2-й"
+  },
+  "rank_02": {
+    "en": "3rd",
+    "ua": "3-й"
+  },
+  "rank_03": {
+    "en": "[0]th",
+    "ua": "[0]-й"
+  },
+  "result_result_capT": {
+    "en": "RESULTS",
+    "ua": "РЕЗУЛЬТАТИ"
+  },
+  "result_rankT": {
+    "en": "[0]th",
+    "ua": "[0]-й"
+  },
+  "result_rankT_00": {
+    "en": "[0]st",
+    "ua": "[0]-й"
+  },
+  "result_rankT_01": {
+    "en": "[0]nd",
+    "ua": "[0]-й"
+  },
+  "result_rankT_02": {
+    "en": "[0]rd",
+    "ua": "[0]-й"
+  },
+  "result_rank_bonusT": {
+    "en": "RANK BONUS",
+    "ua": "БОНУС ЗА МІСЦЕ"
+  },
+  "result_rank_bonus_pT": {
+    "en": "[0] P",
+    "ua": "[0] О"
+  },
+  "result_corner_00T": {
+    "en": "EXCELLENT!",
+    "ua": "ЧУДОВО!"
+  },
+  "result_corner_point_00T": {
+    "en": "[0] P",
+    "ua": "[0] О"
+  },
+  "result_corner_01T": {
+    "en": "GOOD!",
+    "ua": "ДОБРЕ!"
+  },
+  "result_corner_point_01T": {
+    "en": "[0] P",
+    "ua": "[0] О"
+  },
+  "result_bonus_point_00T": {
+    "en": "[0] P",
+    "ua": "[0] О"
+  },
+  "result_bonus_point_01T": {
+    "en": "[0] P",
+    "ua": "[0] О"
+  },
+  "result_bonus_point_02T": {
+    "en": "[0] P",
+    "ua": "[0] О"
+  },
+  "result_exp_capT": {
+    "en": "Race Evaluation",
+    "ua": "Оцінка заїзду"
+  },
+  "result_exp_unitT": {
+    "en": "P",
+    "ua": "О"
+  },
+  "result_exp_max_numT_00": {
+    "en": "[0] P to go",
+    "ua": "Ще [0] О"
+  },
+  "result_streetpass_capT": {
+    "en": "StreetPass Rankings",
+    "ua": "Рейтинг StreetPass"
+  },
+  "intro_mii_list_capT": {
+    "en": "Competitors",
+    "ua": "Суперники"
+  },
+  "intro_parts_mii_nameT_00": {
+    "en": "Iceman",
+    "ua": "Крижаний"
+  },
+  "intro_parts_laneT": {
+    "en": "Lane [0]",
+    "ua": "Доріжка [0]"
+  },
+  "intro_infoT": {
+    "en": "Touch a name to see their car!",
+    "ua": "Торкніться імені, щоб побачити авто!"
+  },
+  "stage_stage_name_00": {
+    "en": "Tutorial",
+    "ua": "Навчання"
+  },
+  "stage_stage_name_01": {
+    "en": "Smooth Circuit",
+    "ua": "Рівна траса"
+  },
+  "stage_stage_name_01_1": {
+    "en": "Smooth Night Circuit",
+    "ua": "Рівна нічна траса"
+  },
+  "stage_stage_name_02": {
+    "en": "Fairytale Glade",
+    "ua": "Казковий гай"
+  },
+  "stage_stage_name_02_1": {
+    "en": "Autumn Fairytale",
+    "ua": "Осіння казка"
+  },
+  "stage_stage_name_03": {
+    "en": "Rolling Mountain",
+    "ua": "Горбиста гора"
+  },
+  "stage_stage_name_03_1": {
+    "en": "Sundown at Rolling Mountain",
+    "ua": "Захід на Горбистій горі"
+  },
+  "stage_stage_name_04": {
+    "en": "Desert Whirl",
+    "ua": "Пустельний вихор"
+  },
+  "stage_stage_name_04_1": {
+    "en": "Starry Desert Whirl",
+    "ua": "Зоряний вихор"
+  },
+  "stage_stage_name_05": {
+    "en": "Isle O'Thrills",
+    "ua": "Острів пригод"
+  },
+  "stage_stage_name_05_1": {
+    "en": "Sunset Isle O'Thrills",
+    "ua": "Острів на заході сонця"
+  },
+  "stage_stage_name_06": {
+    "en": "Boom Town Streets",
+    "ua": "Вулиці Бум-Тауна"
+  },
+  "stage_stage_name_06_1": {
+    "en": "Boom Town Nightlife",
+    "ua": "Нічний Бум-Таун"
+  },
+  "stage_stage_name_07": {
+    "en": "Sugar Dash!",
+    "ua": "Солодкий ривок!"
+  },
+  "stage_stage_name_07_1": {
+    "en": "Dinner Dash!",
+    "ua": "Вечірній ривок!"
+  },
+  "stage_stage_name_08": {
+    "en": "Dizzy Woods",
+    "ua": "Запаморочливий ліс"
+  },
+  "stage_stage_name_08_1": {
+    "en": "Deep Dark Dizzy Woods",
+    "ua": "Темний запаморочливий ліс"
+  },
+  "stage_stage_name_09": {
+    "en": "Soaring Skyway",
+    "ua": "Небесна траса"
+  },
+  "stage_stage_name_09_1": {
+    "en": "Stormy Skyway",
+    "ua": "Грозова траса"
+  },
+  "stage_stage_name_10": {
+    "en": "Outer Space",
+    "ua": "Відкритий космос"
+  },
+  "title_logoT": {
+    "en": "StreetPass Slot Racer",
+    "ua": "Слот-перегони StreetPass"
+  },
+  "title_logo_sdwT": {
+    "en": "StreetPass Slot Racer",
+    "ua": "Слот-перегони StreetPass"
+  },
+  "title_copyrightT": {
+    "en": "©2016 Nintendo  Developed by Good-Feel",
+    "ua": "©2016 Nintendo  Розробник: Good-Feel"
+  },
+  "title_pressT": {
+    "en": "PRESS ",
+    "ua": "НАТИСНІТЬ "
+  },
+  "title_textT": {
+    "en": "Compete with StreetPass rivals\r\nand try to become the greatest\r\nslot car racer in the world!",
+    "ua": "Змагайтеся з суперниками зі StreetPass\nй станьте найкращим гонщиком\nслот-машинок у світі!"
+  },
+  "title_item_capT_00": {
+    "en": " Play Coins",
+    "ua": "Монетки "
+  },
+  "title_item_capT_01": {
+    "en": "Today's Rivals",
+    "ua": "Суперники дня"
+  },
+  "menu_main_00": {
+    "en": "Go to Race Hall",
+    "ua": "До залу перегонів"
+  },
+  "menu_main_01": {
+    "en": "Go to Counter",
+    "ua": "До стійки"
+  },
+  "menu_main_02": {
+    "en": " Recruit Rivals",
+    "ua": " Найняти суперників"
+  },
+  "menu_main_03": {
+    "en": "Return to Plaza",
+    "ua": "На площу"
+  },
+  "menu_main_09": {
+    "en": "Race Your Rivals",
+    "ua": "Перегони з суперниками"
+  },
+  "menu_main_10": {
+    "en": "Try the Tutorial",
+    "ua": "Навчання"
+  },
+  "menu_main_05": {
+    "en": "Play a Free Race",
+    "ua": "Вільний заїзд"
+  },
+  "menu_main_06": {
+    "en": "Custom Car Creator",
+    "ua": "Конструктор машинок"
+  },
+  "menu_main_07": {
+    "en": "Race Report",
+    "ua": "Звіт про перегони"
+  },
+  "menu_main_08": {
+    "en": "Back",
+    "ua": "Назад"
+  },
+  "stage_select_rank_capT_00": {
+    "en": "Beginner Class",
+    "ua": "Клас «Новачок»"
+  },
+  "stage_select_rank_capT_01": {
+    "en": "Regular Class",
+    "ua": "Клас «Звичайний»"
+  },
+  "stage_select_rank_capT_02": {
+    "en": "Expert Class",
+    "ua": "Клас «Експерт»"
+  },
+  "stage_select_rank_capT_03": {
+    "en": "Master Class",
+    "ua": "Клас «Майстер»"
+  },
+  "stage_select_mission_capT": {
+    "en": "Missions",
+    "ua": "Місії"
+  },
+  "stage_select_mission_capT_00": {
+    "en": "For Next Licence",
+    "ua": "Для нової ліцензії"
+  },
+  "stage_select_mission_capT_01": {
+    "en": "To Unlock EX Course",
+    "ua": "Для траси EX"
+  },
+  "stage_select_mission_capT_02": {
+    "en": "To Face the Champion",
+    "ua": "Для бою з чемпіоном"
+  },
+  "stage_select_l_guideT": {
+    "en": " Switch Class",
+    "ua": " Клас"
+  },
+  "stage_select_free_capT": {
+    "en": "Free Race",
+    "ua": "Вільний заїзд"
+  },
+  "stage_select_best_time_capT": {
+    "en": "Best Race Time",
+    "ua": "Рекорд часу"
+  },
+  "stage_select_random_capT": {
+    "en": "Bonus",
+    "ua": "Бонус"
+  },
+  "stage_select_randomT_01": {
+    "en": "Double evaluation points!",
+    "ua": "Подвійні очки оцінки!"
+  },
+  "stage_select_randomT_02": {
+    "en": "Triple evaluation points!",
+    "ua": "Потрійні очки оцінки!"
+  },
+  "stage_select_randomT_03": {
+    "en": "Double evaluation points\r\nfor EXCELLENTs!",
+    "ua": "Подвійні очки\nза «ЧУДОВО»!"
+  },
+  "stage_select_exT": {
+    "en": "EX",
+    "ua": "EX"
+  },
+  "stage_select_bossT": {
+    "en": "BOSS",
+    "ua": "БОС"
+  },
+  "stage_select_rankupT": {
+    "en": "UP",
+    "ua": "UP"
+  },
+  "stage_select_tag_randomT": {
+    "en": "RANDOM",
+    "ua": "РАНДОМ"
+  },
+  "stage_select_finalT": {
+    "en": "FINAL",
+    "ua": "ФІНАЛ"
+  },
+  "stage_select_rankup_pictT": {
+    "en": "LICENCE UP",
+    "ua": "НОВА ЛІЦЕНЗІЯ"
+  },
+  "booster_select_booster_cap_00T": {
+    "en": "Speed:",
+    "ua": "Швидкість:"
+  },
+  "booster_select_booster_cap_01T": {
+    "en": "Acceleration:",
+    "ua": "Прискорення:"
+  },
+  "booster_select_booster_cap_02T": {
+    "en": "Control:",
+    "ua": "Керованість:"
+  },
+  "booster_select_booster_typeT_00": {
+    "en": "Booster Chip",
+    "ua": "Бустер-чип"
+  },
+  "booster_select_booster_typeT_01": {
+    "en": "Booster Chip",
+    "ua": "Бустер-чип"
+  },
+  "booster_select_booster_typeT_02": {
+    "en": "Rare Booster Chip",
+    "ua": "Рідкісний бустер-чип"
+  },
+  "text_button_text_00": {
+    "en": "OK",
+    "ua": "OK"
+  },
+  "text_button_text_01": {
+    "en": "I'm sure.",
+    "ua": "Так, певен."
+  },
+  "text_button_text_02": {
+    "en": "Wait, no!",
+    "ua": "Ні, стривай!"
+  },
+  "text_button_text_07": {
+    "en": "Let's do it!",
+    "ua": "Поїхали!"
+  },
+  "text_button_text_08": {
+    "en": "Not right now...",
+    "ua": "Не зараз…"
+  },
+  "text_button_text_09": {
+    "en": "Yes, please!",
+    "ua": "Так, давай!"
+  },
+  "text_button_text_10": {
+    "en": "Not right now.",
+    "ua": "Не зараз."
+  },
+  "demo_skip_profT_00": {
+    "en": " Skip",
+    "ua": " Пропустити"
+  },
+  "balloon_balloon_text_champ_00_00": {
+    "en": "Hey, you there.",
+    "ua": "Гей, ти."
+  },
+  "balloon_balloon_text_champ_00_01": {
+    "en": "I'm looking for racers who can blast round\r\nthe track in no time at all. You're still just\r\na rookie now, but one day...who knows?",
+    "ua": "Я шукаю гонщиків, що миттю пролітають\nтрасу. Поки ти лише новачок,\nале колись… хтозна?"
+  },
+  "balloon_balloon_text_champ_00": {
+    "en": "I was watching your race just now.\r\nYou've got some skills, I'll give you that.",
+    "ua": "Я бачив твій заїзд.\nХист у тебе є, визнаю."
+  },
+  "balloon_balloon_text_champ_01": {
+    "en": "You've really been honing your skills\r\nlately, haven't you?",
+    "ua": "Ти останнім часом добре\nвідточуєш навички, так?"
+  },
+  "balloon_balloon_text_champ_01_01": {
+    "en": "I believe you can go even faster\r\nif you keep putting in the effort.",
+    "ua": "Вірю, ти можеш їхати ще швидше,\nякщо й далі старатимешся."
+  },
+  "balloon_balloon_text_champ_02": {
+    "en": "From the day I first saw you,\r\nI had a feeling you'd make it this far.",
+    "ua": "Відколи я тебе вперше побачив,\nвідчував, що ти дійдеш так далеко."
+  },
+  "balloon_balloon_text_champ_02_01": {
+    "en": "But I still need to see a little\r\nmore proof of your skills.",
+    "ua": "Але мені треба ще трохи\nдоказів твого хисту."
+  },
+  "balloon_balloon_text_champ_03": {
+    "en": "Looks like you've finally proven your\r\nskills are the real deal. I've waited so\r\nlong to find a worthy rival!",
+    "ua": "Схоже, ти нарешті довів, що твій хист\nсправжній. Я так довго чекав\nгідного суперника!"
+  },
+  "balloon_balloon_text_champ_04_01": {
+    "en": "[System:Size percent=\"150\" ]I challenge you to a duel![/System:Size]",
+    "ua": "[System:Size percent=\"150\" ]Викликаю тебе на дуель![/System:Size]"
+  },
+  "balloon_balloon_text_champ_04_02": {
+    "en": "I'll be waiting for you at the Outer Space\r\ntrack. You'd better show up!",
+    "ua": "Чекатиму на трасі «Відкритий космос».\nТільки приходь!"
+  },
+  "balloon_balloon_text_champ_04_04": {
+    "en": "You were incredible out there.\r\nI can't remember the last time I felt\r\nthrills like that!",
+    "ua": "Ти був неймовірний.\nНе пам'ятаю, коли востаннє\nвідчував такий азарт!"
+  },
+  "balloon_balloon_text_champ_04_07": {
+    "en": "Please, take this. You've earned it.",
+    "ua": "Ось, візьми. Ти на це заслуговуєш."
+  },
+  "balloon_balloon_text_champ_04_06": {
+    "en": "This is more than just a car. It's a symbol.\r\nOnly racers who've proven themselves the\r\nfastest in the world are permitted to use it.",
+    "ua": "Це не просто машинка. Це символ.\nНею можуть керувати лише гонщики,\nщо довели, що вони найшвидші у світі."
+  },
+  "balloon_balloon_text_champ_04_05": {
+    "en": "So from today on, you are officially...",
+    "ua": "Тож відтепер ти офіційно…"
+  },
+  "balloon_balloon_text_champ_04_08": {
+    "en": "[System:Size percent=\"150\" ][System:Color name=\"mgCar_red\" ]A WORLD CHAMPION![/System:Color][/System:Size]",
+    "ua": "[System:Size percent=\"150\" ][System:Color name=\"mgCar_red\" ]ЧЕМПІОН СВІТУ![/System:Color][/System:Size]"
+  },
+  "balloon_balloon_text_champ_05_00": {
+    "en": "Looks like you've become even faster!\r\nDoes your speed know no limits?",
+    "ua": "Схоже, ти став іще швидшим!\nЧи має твоя швидкість межі?"
+  },
+  "balloon_balloon_text_champ_05_01": {
+    "en": "I only dropped by this place on a whim,\r\nbut watching your race has given me\r\nthe urge to take to the track myself.",
+    "ua": "Я заскочив сюди випадково,\nале після твого заїзду мені\nсамому захотілося на трасу."
+  },
+  "balloon_balloon_text_champ_05_03": {
+    "en": "What do you say? Will you face me again?",
+    "ua": "Що скажеш? Позмагаєшся зі мною знову?"
+  },
+  "balloon_balloon_text_champ_05_04": {
+    "en": "Very well...I understand.\r\nI hope we can race another time.",
+    "ua": "Гаразд… розумію.\nСподіваюся, ще позмагаємося."
+  },
+  "balloon_balloon_text_champ_05_02": {
+    "en": "Then I will await you at the\r\nOuter Space track!",
+    "ua": "Тоді чекатиму тебе на трасі\n«Відкритий космос»!"
+  },
+  "balloon_balloon_textT_00": {
+    "en": "What'll it be today?",
+    "ua": "Що сьогодні?"
+  },
+  "balloon_balloon_textT_00_00": {
+    "en": "What kind of race are you after?",
+    "ua": "Які перегони хочеш?"
+  },
+  "balloon_balloon_textT_02": {
+    "en": "Looking to get right out there onto\r\nthe track?",
+    "ua": "Хочеш одразу\nна трасу?"
+  },
+  "balloon_balloon_textT_02_00": {
+    "en": "Head to the counter to make your own\r\ncars, view your records, or check out\r\nall the cars you've collected!",
+    "ua": "Біля стійки можна створити машинки,\nпереглянути рекорди чи подивитися\nвсі зібрані машинки!"
+  },
+  "balloon_balloon_textT_02_01": {
+    "en": "If you're short on rivals to race against,\r\njust use  Play Coins to recruit some!",
+    "ua": "Якщо бракує суперників,\nнайми їх за монетки !"
+  },
+  "balloon_balloon_textT_02_02": {
+    "en": "Heading off already?",
+    "ua": "Уже йдеш?"
+  },
+  "balloon_balloon_textT_07": {
+    "en": "What'll it be?",
+    "ua": "Що буде?"
+  },
+  "balloon_balloon_textT_07_00": {
+    "en": "Got something else in mind?",
+    "ua": "Маєш щось інше на думці?"
+  },
+  "balloon_balloon_textT_07_01": {
+    "en": "You can practise courses you've\r\nalready played, or try out the\r\neffects of your Booster Chips!",
+    "ua": "Можна потренуватися на пройдених\nтрасах або випробувати\nбустер-чипи!"
+  },
+  "balloon_balloon_textT_07_02": {
+    "en": "Make sweet new cars from scratch,\r\nor give the Special Cars you've earned\r\na brand new paint job!",
+    "ua": "Створюй класні машинки з нуля\nабо перефарбуй здобуті\nособливі машинки!"
+  },
+  "balloon_balloon_textT_07_03": {
+    "en": "Check out records and rankings\r\nor change your controls!",
+    "ua": "Переглянь рекорди й рейтинг\nабо зміни керування!"
+  },
+  "balloon_balloon_textT_07_05": {
+    "en": "Take a look at records of your own\r\npast performance! How have you\r\nbeen doing on the track lately?",
+    "ua": "Переглянь свої минулі\nрезультати! Як тобі останнім\nчасом ведеться на трасі?"
+  },
+  "balloon_balloon_textT_07_06": {
+    "en": "See how your performance compares\r\nto the StreetPass rivals you've met!\r\nCan you grab the number one spot?",
+    "ua": "Порівняй свої результати з суперниками\nзі StreetPass! Чи займеш перше місце?"
+  },
+  "balloon_balloon_textT_07_07": {
+    "en": "You can change which button you\r\nuse to make your slot cars go!\r\nJust go with what feels natural.",
+    "ua": "Можна змінити кнопку, якою\nкеруєш машинкою!\nВибирай, як тобі зручно."
+  },
+  "balloon_balloon_textT_07_09": {
+    "en": "Wanna practise the basics?",
+    "ua": "Хочеш повторити основи?"
+  },
+  "balloon_balloon_textT_08": {
+    "en": "Keep up the great work!",
+    "ua": "Так тримати!"
+  },
+  "balloon_balloon_textT_08_01": {
+    "en": "You can now play the\r\n[System:Color name=\"mgCar_red\" ]Regular Class[/System:Color] course\r\nIsle O'Thrills!",
+    "ua": "Тепер доступна траса класу\n[System:Color name=\"mgCar_red\" ]«Звичайний»[/System:Color]\n«Острів гострих відчуттів»!"
+  },
+  "balloon_balloon_textT_08_03": {
+    "en": "You can now play the\r\n[System:Color name=\"mgCar_red\" ]Expert Class[/System:Color] course\r\nSugar Dash!",
+    "ua": "Тепер доступна траса класу\n[System:Color name=\"mgCar_red\" ]«Експерт»[/System:Color]\n«Солодкий ривок!»!"
+  },
+  "balloon_balloon_textT_08_04": {
+    "en": "You can now play the\r\n[System:Color name=\"mgCar_red\" ]Master Class[/System:Color] course\r\nSundown at Rolling Mountain!",
+    "ua": "Тепер доступна траса класу\n[System:Color name=\"mgCar_red\" ]«Майстер»[/System:Color]\n«Захід на Горбистій горі»!"
+  },
+  "balloon_balloon_textT_08_02": {
+    "en": "Now you can get started\r\nwith the [System:Color name=\"mgCar_red\" ]Beginner Class[/System:Color] course\r\nSmooth Circuit!",
+    "ua": "Тепер можна почати з траси\nкласу [System:Color name=\"mgCar_red\" ]«Новачок»[/System:Color]\n«Рівна траса»!"
+  },
+  "balloon_balloon_textT_08_05": {
+    "en": "You can now play\r\na new course:\r\n[COURSE]",
+    "ua": "Тепер доступна\nнова траса:\n[COURSE]"
+  },
+  "balloon_balloon_textT_03": {
+    "en": "Congrats! You've earned a new licence!\r\nNow you'll be able to try out some\r\ncool new tracks!",
+    "ua": "Вітаю! Ти отримав нову ліцензію!\nТепер можна спробувати\nкласні нові траси!"
+  },
+  "balloon_balloon_textT_03_00": {
+    "en": "Wow, my bro was watching your race?\r\nYou're pretty lucky to have caught his eye.\r\n...Anyway!",
+    "ua": "Ого, мій брат дивився твій заїзд?\nТобі пощастило його зацікавити.\n…Ну гаразд!"
+  },
+  "balloon_balloon_textT_03_01": {
+    "en": "Wow, my bro was watching your race again!\r\nHe must really have his eye on you.\r\n...Anyway!",
+    "ua": "Ого, мій брат знову дивився твій заїзд!\nСхоже, він на тебе задивився.\n…Ну гаразд!"
+  },
+  "balloon_balloon_textT_03_02": {
+    "en": "My bro watched your race again, huh?\r\nIt looks like he's enjoying seeing how\r\nyou improve! ...Anyway!",
+    "ua": "Брат знову дивився твій заїзд, так?\nСхоже, йому подобається стежити,\nяк ти ростеш! …Ну гаразд!"
+  },
+  "balloon_balloon_textT_04": {
+    "en": "Aw, looks like you [System:Color name=\"mgCar_red\" ]didn't manage to earn[/System:Color]\r\n[System:Color name=\"mgCar_red\" ]your new licence[/System:Color] this time. That's a shame.\r\nBut I know you can do it if you keep at it!",
+    "ua": "Ех, цього разу [System:Color name=\"mgCar_red\" ]нову ліцензію[/System:Color]\n[System:Color name=\"mgCar_red\" ]отримати не вдалося[/System:Color]. Шкода.\nАле ти зможеш, якщо не здаватимешся!"
+  },
+  "balloon_balloon_textT_10": {
+    "en": "Here's a little present from me to celebrate!",
+    "ua": "Ось маленький подарунок на честь цього!"
+  },
+  "balloon_balloon_textT_05": {
+    "en": "You'll need to find some rivals via StreetPass.\r\nOr you could recruit them with  Play Coins!",
+    "ua": "Треба знайти суперників через StreetPass.\nАбо найняти їх за монетки !"
+  },
+  "balloon_balloon_textT_05_04": {
+    "en": "Wow, my bro's getting super heated up.\r\nHe must have been really looking forward\r\nto racing against you!",
+    "ua": "Ого, брат аж палає.\nМабуть, давно чекав перегонів\nіз тобою!"
+  },
+  "balloon_balloon_textT_05_05": {
+    "en": "[System:Size percent=\"150\" ]Hey, bro! Wait up![/System:Size]",
+    "ua": "[System:Size percent=\"150\" ]Брате! Стривай![/System:Size]"
+  },
+  "balloon_balloon_textT_05_10": {
+    "en": "...Aw, he left.",
+    "ua": "…Ех, пішов."
+  },
+  "balloon_balloon_textT_05_07": {
+    "en": "If you beat my bro, that'll make you\r\nthe new [System:Color name=\"mgCar_red\" ]World Champion[/System:Color]!",
+    "ua": "Якщо переможеш мого брата, станеш\nновим [System:Color name=\"mgCar_red\" ]чемпіоном світу[/System:Color]!"
+  },
+  "balloon_balloon_textT_05_06": {
+    "en": "You lost, huh? Too bad...\r\nBut it was never going to be easy\r\nfacing the World Champion!",
+    "ua": "Програв, так? Шкода…\nАле з чемпіоном світу\nлегко не буває!"
+  },
+  "balloon_balloon_textT_05_06_00": {
+    "en": "But don't give in! If you want to try for\r\na rematch, you'll need to face your rivals\r\non the Outer Space course again.",
+    "ua": "Та не здавайся! Щоб узяти реванш,\nтреба знову здолати суперників\nна трасі «Відкритий космос»."
+  },
+  "balloon_balloon_textT_05_09": {
+    "en": "Wow. You actually beat my bro!\r\nYou're amazing. I have no words!",
+    "ua": "Ого. Ти справді переміг мого брата!\nТи неймовірний. У мене слів немає!"
+  },
+  "balloon_balloon_textT_05_09_00": {
+    "en": "It's a weird feeling to see my own brother\r\nget beaten... But I mean...I've been watching\r\nyou ever since you got started, y'know?",
+    "ua": "Дивно бачити, як рідний брат програє…\nАле ж я стежу за тобою\nз самого початку, розумієш?"
+  },
+  "balloon_balloon_textT_05_09_01": {
+    "en": "[System:Size percent=\"150\" ]I'm so proud of you![/System:Size]",
+    "ua": "[System:Size percent=\"150\" ]Я так тобою пишаюся![/System:Size]"
+  },
+  "balloon_balloon_textT_05_11": {
+    "en": "That is one sweet car!\r\nThe perfect machine for a champion!",
+    "ua": "Оце машинка!\nІдеальна для чемпіона!"
+  },
+  "balloon_balloon_textT_05_12": {
+    "en": "Seriously though, congratulations!",
+    "ua": "А якщо серйозно — вітаю!"
+  },
+  "balloon_balloon_textT_05_14": {
+    "en": "Here, this is a little present from me!",
+    "ua": "Ось тобі подарунок від мене!"
+  },
+  "balloon_balloon_textT_05_13": {
+    "en": "Now that you're the World Champion,\r\nyou've gotta set an example for your rivals.\r\nSo keep trying to be as fast as you can be!",
+    "ua": "Тепер ти чемпіон світу,\nтож подавай приклад суперникам.\nНамагайся бути якомога швидшим!"
+  },
+  "balloon_balloon_endtextT_07_08": {
+    "en": "You beat my brother again? I'd expect\r\nnothing less from a champion like you!",
+    "ua": "Знову переміг мого брата? Від такого\nчемпіона іншого я й не чекав!"
+  },
+  "balloon_balloon_endtextT_07_09": {
+    "en": "Watching you race is always a blast!",
+    "ua": "Дивитися твої заїзди — кайф!"
+  },
+  "balloon_balloon_endtextT_07_10": {
+    "en": "My bro was getting so fired up!\r\nI can't believe I get to see you two\r\nface off again! It's gonna be great!",
+    "ua": "Брат аж розпалився!\nНе віриться, що я знову побачу\nвашу дуель! Буде круто!"
+  },
+  "balloon_balloon_endtextT_07_11": {
+    "en": "My bro hasn't been slacking since you\r\nbeat him. He should be [System:Color name=\"mgCar_red\" ]even faster[/System:Color] now,\r\nso don't hold anything back!",
+    "ua": "Відколи ти його переміг, брат не байдикував.\nТепер він [System:Color name=\"mgCar_red\" ]ще швидший[/System:Color],\nтож викладайся на повну!"
+  },
+  "balloon_balloon_endtextT_08_00": {
+    "en": "Out of respect for your dedication to\r\npushing the limits of speed, I've prepared\r\na new style of licence for you to use!",
+    "ua": "На знак поваги до твого прагнення\nдо швидкості я підготував для тебе\nліцензію нового зразка!"
+  },
+  "balloon_balloon_endtextT_08_01": {
+    "en": "This licence uses numerical ranks\r\ninstead of letters, so you can evaluate\r\nyour skills in even greater detail!",
+    "ua": "Тут ранги позначено числами, а не\nлітерами, тож можна оцінити свій\nхист ще точніше!"
+  },
+  "balloon_balloon_endtextT_08_03": {
+    "en": "Also, I've prepared a new style of\r\nplay, exclusively for our resident champ!",
+    "ua": "А ще я підготував новий режим\nспеціально для нашого чемпіона!"
+  },
+  "balloon_balloon_endtextT_08_04": {
+    "en": "I call it [System:Color name=\"mgCar_red\" ]Random Course Select[/System:Color]!",
+    "ua": "Він зветься [System:Color name=\"mgCar_red\" ]«Випадкова траса»[/System:Color]!"
+  },
+  "balloon_balloon_endtextT_08_05": {
+    "en": "You won't know what course you're\r\nplaying until you start, but in exchange,\r\nyou'll earn extra evaluation points!",
+    "ua": "До старту не знаєш, яка буде траса,\nзате отримуєш додаткові\nочки оцінки!"
+  },
+  "balloon_balloon_endtextT_08_06": {
+    "en": "You'll need plenty of points to\r\nbuild up your new licence, so\r\nI think it'll be pretty helpful!",
+    "ua": "Для нової ліцензії потрібно\nбагато очок, тож, гадаю,\nце стане в пригоді!"
+  },
+  "balloon_balloon_endtextT_09_00": {
+    "en": "Oh, yeah - since you came in first place,\r\ndid you spot any cool designs among\r\nyour rivals' cars?",
+    "ua": "До речі, ти ж посів перше місце —\nчи сподобався тобі дизайн\nякоїсь машинки суперників?"
+  },
+  "balloon_balloon_endtextT_09_01": {
+    "en": "I can make you a copy of one of them\r\nas a reward, if you like!",
+    "ua": "Якщо хочеш, у нагороду зроблю\nтобі копію однієї з них!"
+  },
+  "balloon_balloon_endtextT_09_02": {
+    "en": "Special cars might be a bit too tricky,\r\nbut I reckon I should be able to make\r\na perfect replica of any other car!",
+    "ua": "Особливі машинки — це заскладно,\nале будь-яку іншу я, мабуть, зможу\nвідтворити ідеально!"
+  },
+  "balloon_balloon_endtextT_09_03": {
+    "en": "So what do you say?\r\nIs there a rival car that took your fancy?",
+    "ua": "То що скажеш?\nЯкась машинка суперників сподобалась?"
+  },
+  "balloon_balloon_endtextT_09_13": {
+    "en": "Oh, but I guess there weren't any rival\r\ncars I'd be able to copy in this race.\r\nWell, maybe another time!",
+    "ua": "Ой, схоже, в цьому заїзді не було\nмашинок, які я міг би скопіювати.\nМоже, іншим разом!"
+  },
+  "balloon_balloon_endtextT_09_04": {
+    "en": "Oh, hey! You got first place!\r\nDo you want me to make a copy of\r\none of your rivals' cars as a reward?",
+    "ua": "О, гей! Перше місце!\nЗробити тобі в нагороду копію\nмашинки одного із суперників?"
+  },
+  "balloon_balloon_endtextT_09_05": {
+    "en": "I should be able to replicate that one!",
+    "ua": "Цю я зможу відтворити!"
+  },
+  "balloon_balloon_endtextT_09_06": {
+    "en": "Ah, sorry! That car's a bit special.\r\nI don't think I'd have the skills to\r\nreplicate it properly...",
+    "ua": "Ой, вибач! Ця машинка особлива.\nНе думаю, що мені стане хисту\nїї правильно відтворити…"
+  },
+  "balloon_balloon_endtextT_09_12": {
+    "en": "Where do you want to save it?",
+    "ua": "Куди її зберегти?"
+  },
+  "balloon_balloon_endtextT_09_07": {
+    "en": "Oh, you want to replace a car you've\r\nalready saved? Are you sure about that?",
+    "ua": "О, хочеш замінити збережену\nмашинку? Ти певен?"
+  },
+  "balloon_balloon_endtextT_09_08": {
+    "en": "What should we put down for the name?",
+    "ua": "Яку назву записати?"
+  },
+  "balloon_balloon_endtextT_09_09": {
+    "en": "All right! I'll make it in a jiffy, so just\r\ncheck out your Custom Car list later!",
+    "ua": "Гаразд! Зроблю вмить, тож\nзазирни потім у список машинок!"
+  },
+  "balloon_balloon_endtextT_09_10": {
+    "en": "I can make you a new replica whenever\r\nyou finish first in a race, so give me a\r\ncall when you need me!",
+    "ua": "Нову копію я зроблю щоразу, коли\nти фінішуєш першим, тож гукай,\nякщо знадоблюся!"
+  },
+  "balloon_balloon_endtextT_09_11": {
+    "en": "Oh, hey! You got first place!\r\n...But there aren't any cars in this race\r\nI'd be able to copy. Maybe next time!",
+    "ua": "О, гей! Перше місце!\n…Але тут немає машинок,\nякі я міг би скопіювати. Може, іншим разом!"
+  },
+  "balloon_balloon_textT_06_01": {
+    "en": "You've already got enough rivals.",
+    "ua": "Суперників у тебе вже вдосталь."
+  },
+  "balloon_balloon_textT_06_02": {
+    "en": "Looks like you're short on  Play Coins.\r\nYou'll need at least 2 to recruit rivals.",
+    "ua": "Схоже, бракує монеток .\nЩоб найняти суперників, потрібно\nщонайменше 2."
+  },
+  "balloon_balloon_textT_06_03": {
+    "en": "Oh dear, it looks like there aren't any\r\nMii characters in your plaza!",
+    "ua": "Ой, схоже, на твоїй площі\nнемає жодного Mii!"
+  },
+  "balloon_balloon_textT_06_05": {
+    "en": "It costs 2 Play Coins to recruit\r\na rival. You gonna recruit some?",
+    "ua": "Найм суперника коштує 2 монетки.\nНаймаєш когось?"
+  },
+  "balloon_balloon_textT_06_04": {
+    "en": "Gotcha! I'll go see who I can find!",
+    "ua": "Зрозумів! Піду пошукаю!"
+  },
+  "balloon_balloon_textT_06_06": {
+    "en": "OK, I've brought [0] rivals for you!",
+    "ua": "Гаразд, привів тобі суперників: [0]!"
+  },
+  "balloon_balloon_textT_06_07": {
+    "en": "Now, let's get going to the Race Hall!",
+    "ua": "А тепер — до залу перегонів!"
+  },
+  "balloon_balloon_textT_06_08": {
+    "en": "You gonna spend [0] Play Coins\r\nto recruit [1] rivals?",
+    "ua": "Витратиш [0] монеток,\nщоб найняти суперників: [1]?"
+  },
+  "balloon_balloon_textT_06_09": {
+    "en": "It costs 2 Play Coins to recruit\r\na rival. You gonna recruit more?",
+    "ua": "Найм суперника коштує 2 монетки.\nНаймеш іще?"
+  },
+  "balloon_balloon_textT_06_10": {
+    "en": "Oh, you don't want to recruit\r\nany rivals after all?",
+    "ua": "О, то ти все ж не хочеш\nнаймати суперників?"
+  },
+  "balloon_balloon_textT_06_11": {
+    "en": "Oh, you don't want to recruit\r\nrivals after all?",
+    "ua": "О, то ти все ж не хочеш\nнаймати суперників?"
+  },
+  "employl_info_title_00": {
+    "en": "Warning",
+    "ua": "Увага"
+  },
+  "employ_info_message_00": {
+    "en": "If you return to the Plaza now, you'll lose any\r\nrivals you recruited using Play Coins. Are you\r\nsure you want to return to the plaza?",
+    "ua": "Якщо зараз повернутися на площу, суперники,\nнайняті за монетки, зникнуть.\nПовернутися на площу?"
+  },
+  "navi_talk_confirmation_00": {
+    "en": "Are you sure you're all ready?",
+    "ua": "Точно все готово?"
+  },
+  "navi_talk_confirmation_01": {
+    "en": "Choose the car you want to use!",
+    "ua": "Вибери машинку!"
+  },
+  "navi_talk_confirmation_02": {
+    "en": "Pick a course to play!",
+    "ua": "Вибери трасу!"
+  },
+  "navi_talk_confirmation_03": {
+    "en": "So, do you want to race against\r\na ghost, or would you rather just\r\npractise on your own?",
+    "ua": "Будеш змагатися з привидом\nчи просто потренуєшся\nнаодинці?"
+  },
+  "navi_talk_conditions00": {
+    "en": "You're ready to try for\r\na licence upgrade in the\r\nRolling Mountain qualifier!",
+    "ua": "Можна спробувати\nпідвищити ліцензію\nв кваліфікації «Горбиста гора»!"
+  },
+  "navi_talk_conditions00_01": {
+    "en": "You're ready to try for\r\na licence upgrade in the\r\nDesert Whirl qualifier!",
+    "ua": "Можна спробувати\nпідвищити ліцензію\nв кваліфікації «Пустельний вихор»!"
+  },
+  "navi_talk_conditions00_02": {
+    "en": "You're ready to try for\r\na licence upgrade in the\r\nDizzy Woods qualifier!",
+    "ua": "Можна спробувати\nпідвищити ліцензію в кваліфікації\n«Запаморочливий ліс»!"
+  },
+  "navi_talk_conditions04": {
+    "en": "To earn your licence upgrade, you'll\r\nneed to [System:Color name=\"mgCar_red\" ]get an EXCELLENT on the final\r\ncurve[/System:Color] and [System:Color name=\"mgCar_red\" ]not crash more than five times[/System:Color]!",
+    "ua": "Для нової ліцензії треба\n[System:Color name=\"mgCar_red\" ]отримати «ЧУДОВО» на останньому\nповороті[/System:Color] й [System:Color name=\"mgCar_red\" ]не розбитися понад п'ять разів[/System:Color]!"
+  },
+  "navi_talk_conditions01": {
+    "en": "To earn your licence upgrade, you'll\r\nneed to [System:Color name=\"mgCar_red\" ]finish within 44 seconds[/System:Color] and\r\n[System:Color name=\"mgCar_red\" ]get three EXCELLENTs in a row[/System:Color]!",
+    "ua": "Для нової ліцензії треба\n[System:Color name=\"mgCar_red\" ]фінішувати за 44 секунди[/System:Color] й\n[System:Color name=\"mgCar_red\" ]отримати три «ЧУДОВО» поспіль[/System:Color]!"
+  },
+  "navi_talk_conditions02": {
+    "en": "To earn your licence upgrade, you'll\r\nneed to [System:Color name=\"mgCar_red\" ]finish within 44 seconds[/System:Color] and\r\n[System:Color name=\"mgCar_red\" ]get three EXCELLENTs in a row[/System:Color]!",
+    "ua": "Для нової ліцензії треба\n[System:Color name=\"mgCar_red\" ]фінішувати за 44 секунди[/System:Color] й\n[System:Color name=\"mgCar_red\" ]отримати три «ЧУДОВО» поспіль[/System:Color]!"
+  },
+  "navi_talk_stage_01": {
+    "en": "This is a simple course with a few\r\nstandard corners. Acceleration is\r\nthe stat of choice here!",
+    "ua": "Проста траса з кількома звичайними\nповоротами. Тут найважливіше —\nприскорення!"
+  },
+  "navi_talk_stage_01_01": {
+    "en": "This course is Smooth Circuit in reverse.\r\nLike the original, you're best off\r\nprioritising Acceleration.",
+    "ua": "Це «Рівна траса» навпаки.\nЯк і в оригіналі, краще зробити\nставку на прискорення."
+  },
+  "navi_talk_stage_01_02": {
+    "en": "To unlock this course, complete all\r\nthe missions on Smooth Circuit!",
+    "ua": "Щоб відкрити цю трасу, виконай\nусі місії на «Рівній трасі»!"
+  },
+  "navi_talk_stage_02": {
+    "en": "This course features gentle slopes\r\nand a single big jump. Speed is the\r\nname of the game!",
+    "ua": "Тут пологі схили й один великий\nтрамплін. Головне —\nшвидкість!"
+  },
+  "navi_talk_stage_02_01": {
+    "en": "This course is Fairytale Glade in reverse.\r\nGo at it with all the Speed you've got!",
+    "ua": "Це «Казкова галявина» навпаки.\nЖени з усією швидкістю!"
+  },
+  "navi_talk_stage_02_02": {
+    "en": "To unlock this course, complete all\r\nthe missions on Fairytale Glade!",
+    "ua": "Щоб відкрити цю трасу, виконай\nусі місії на «Казковій галявині»!"
+  },
+  "navi_talk_stage_03": {
+    "en": "This course features a lot of verticality.\r\nI'd focus on Control if I were you!",
+    "ua": "Тут багато підйомів і спусків.\nЯ б зважав на керованість!"
+  },
+  "navi_talk_stage03_01": {
+    "en": "This course is Rolling Mountain in reverse.\r\nYou'll slow down when going uphill,\r\nso make the most of your car's Control!",
+    "ua": "Це «Горбиста гора» навпаки.\nНа підйомах машинка гальмує,\nтож максимально використай керованість!"
+  },
+  "navi_talk_stage_04": {
+    "en": "This course features lots of winding\r\ncorners. The Control stat might help\r\nyou to round them effectively!",
+    "ua": "Тут багато звивистих поворотів.\nВписатися в них допоможе\nкерованість!"
+  },
+  "navi_talk_stage_04_01": {
+    "en": "This course is Desert Whirl in reverse.\r\nTaking corners while climbing can be\r\ntricky, so try boosting your Control!",
+    "ua": "Це «Пустельний вихор» навпаки.\nПовертати на підйомі складно,\nтож підсиль керованість!"
+  },
+  "navi_talk_stage_05": {
+    "en": "This course has a lot of flashy features.\r\nTry to maximise your Acceleration and\r\nmake good use of those speed boosts!",
+    "ua": "Тут багато ефектних штук.\nМаксимізуй прискорення й\nвикористовуй прискорювачі!"
+  },
+  "navi_talk_stage_05_01": {
+    "en": "This course is Isle O'Thrills in reverse.\r\nMake sure you get the timing right for\r\nthose boost ramps, and focus on Speed!",
+    "ua": "Це «Острів гострих відчуттів» навпаки.\nВлучай у такт на трамплінах-прискорювачах\nй роби ставку на швидкість!"
+  },
+  "navi_talk_stage_05_02": {
+    "en": "To unlock this course, complete all\r\nthe missions on Isle O'Thrills!",
+    "ua": "Щоб відкрити цю трасу, виконай\nусі місії на «Острові гострих відчуттів»!"
+  },
+  "navi_talk_stage_05_03": {
+    "en": "This course features something\r\nI like to call [System:Color name=\"mgCar_red\" ]boost ramps[/System:Color]!",
+    "ua": "На цій трасі є штука, яку я\nзву [System:Color name=\"mgCar_red\" ]трамплінами-прискорювачами[/System:Color]!"
+  },
+  "navi_talk_stage_05_05": {
+    "en": "Hold down the button during the\r\ngreen section to charge up power,\r\nthen release it at the end to boost!",
+    "ua": "Утримуй кнопку на зеленій ділянці,\nщоб накопичити енергію, і відпусти\nв кінці, щоб прискоритися!"
+  },
+  "navi_talk_stage_05_04": {
+    "en": "If you release the button at the\r\nwrong time, though, you won't\r\nget a boost at all. So be careful!",
+    "ua": "Але якщо відпустити кнопку не вчасно,\nприскорення не буде.\nТож обережно!"
+  },
+  "navi_talk_stage_06": {
+    "en": "On this course, the route changes\r\nbetween laps! It has a lot of 90° turns,\r\nso Control should come in handy!",
+    "ua": "На цій трасі маршрут змінюється\nщокола! Тут багато поворотів на 90°,\nтож знадобиться керованість!"
+  },
+  "navi_talk_stage_06_01": {
+    "en": "This course is Boom Town Streets in reverse.\r\nThe route still changes with each lap,\r\nso max your Control and try not to crash!",
+    "ua": "Це «Вулиці Бум-Тауна» навпаки.\nМаршрут так само змінюється щокола,\nтож максимізуй керованість і не розбийся!"
+  },
+  "navi_talk_stage_06_02": {
+    "en": "To unlock this course, complete all\r\nthe missions on Boom Town Streets!",
+    "ua": "Щоб відкрити цю трасу, виконай\nусі місії на «Вулицях Бум-Тауна»!"
+  },
+  "navi_talk_stage_07": {
+    "en": "This course is all about boosting to\r\ncrazy speeds! Up your Acceleration\r\nso you can focus on not crashing!",
+    "ua": "Тут головне — розігнатися\nдо шаленої швидкості! Підсиль\nприскорення, щоб не розбиватися!"
+  },
+  "navi_talk_stage_07_01": {
+    "en": "This course is Sugar Dash! in reverse.\r\nTry boosting your Speed and see if\r\nyou can finish in record time!",
+    "ua": "Це «Солодкий ривок!» навпаки.\nПідсиль швидкість і спробуй\nфінішувати за рекордний час!"
+  },
+  "navi_talk_stage_07_02": {
+    "en": "To unlock this course, complete all\r\nthe missions on Sugar Dash!",
+    "ua": "Щоб відкрити цю трасу, виконай\nусі місії на «Солодкому ривку!»!"
+  },
+  "navi_talk_stage_08": {
+    "en": "This course is full of twists and turns!\r\nIt's tough not to crash, so I'd say\r\nAcceleration is a must!",
+    "ua": "Тут суцільні вигини й повороти!\nНе розбитися важко, тож,\nяк на мене, прискорення — обов'язкове!"
+  },
+  "navi_talk_stage_08_01": {
+    "en": "This course is Dizzy Woods in reverse.\r\nPay attention to the ups and downs,\r\nand try focusing on Acceleration!",
+    "ua": "Це «Запаморочливий ліс» навпаки.\nСтеж за підйомами й спусками\nй роби ставку на прискорення!"
+  },
+  "navi_talk_stage_09": {
+    "en": "This course is all about jumping around!\r\nMaximise your advantage from the boost\r\nramps by increasing your Speed!",
+    "ua": "Тут суцільні стрибки!\nВитисни максимум із трамплінів-\nприскорювачів, підсиливши швидкість!"
+  },
+  "navi_talk_stage_09_01": {
+    "en": "This course is Soaring Skyway in\r\nreverse. Watch out for those consecutive\r\ncorners, and go all-out with Speed!",
+    "ua": "Це «Небесна траса» навпаки.\nСтеж за поворотами один за одним\nй жени на повній швидкості!"
+  },
+  "navi_talk_stage_09_02": {
+    "en": "To unlock this course, complete all\r\nthe missions on Soaring Skyway!",
+    "ua": "Щоб відкрити цю трасу, виконай\nусі місії на «Небесній трасі»!"
+  },
+  "navi_talk_stage_10": {
+    "en": "Watch out for that sharp turn at the\r\ntop of the vertical climb! Focus on\r\nSpeed to get ahead of your rivals.",
+    "ua": "Обережно з крутим поворотом нагорі\nвертикального підйому! Роби ставку\nна швидкість, щоб обійти суперників."
+  },
+  "navi_talk_stage_11": {
+    "en": "It's time to face Iceman!\r\nGet out there and show him\r\nwhat you can do!",
+    "ua": "Час позмагатися з Крижаним!\nУперед, покажи йому,\nна що ти здатен!"
+  },
+  "navi_talk_stage_11_00": {
+    "en": "Clear this course's missions for a\r\nchance to race the World Champion!",
+    "ua": "Виконай місії цієї траси, щоб отримати\nшанс позмагатися з чемпіоном світу!"
+  },
+  "navi_talk_stage_12": {
+    "en": "My bro was saying he wants to\r\nrace you again! But first, let's\r\ntake care of your other rivals!",
+    "ua": "Брат казав, що хоче знову\nз тобою позмагатися! Але спершу\nрозберімося з іншими суперниками!"
+  },
+  "navi_talk_stage_14": {
+    "en": "I'll select a course for you at random.\r\nUntil the race starts, there's no telling\r\nwhere you'll end up!",
+    "ua": "Я виберу трасу навмання.\nДо старту невідомо,\nкуди потрапиш!"
+  },
+  "navi_talk_stage_15": {
+    "en": "This course isn't available yet!",
+    "ua": "Ця траса ще недоступна!"
+  },
+  "navi_talk_stage_18": {
+    "en": "You can't play this course\r\nin Free Race mode until\r\nyou've raced on it for real!",
+    "ua": "У вільному заїзді цю трасу\nне можна пройти, поки не проїдеш\nнею по-справжньому!"
+  },
+  "navi_talk_stage_16": {
+    "en": "To unlock the qualifier, [System:Color name=\"mgCar_red\" ]complete all\r\nthe courses up to that point[/System:Color] and[System:Color name=\"mgCar_red\" ]\r\nmax out your evaluation points[/System:Color]!",
+    "ua": "Щоб відкрити кваліфікацію, [System:Color name=\"mgCar_red\" ]пройди всі\nтраси до неї[/System:Color] й[System:Color name=\"mgCar_red\" ]\nнабери максимум очок оцінки[/System:Color]!"
+  },
+  "navi_talk_stage_17": {
+    "en": "To enter the final battle, you'll need\r\nto [System:Color name=\"mgCar_red\" ]complete all the Master Class courses[/System:Color]\r\nand [System:Color name=\"mgCar_red\" ]max out your evaluation points[/System:Color]!",
+    "ua": "Щоб потрапити на фінальну битву, треба\n[System:Color name=\"mgCar_red\" ]пройти всі траси класу «Майстер»[/System:Color]\nй [System:Color name=\"mgCar_red\" ]набрати максимум очок оцінки[/System:Color]!"
+  },
+  "navi_talk_stage_13": {
+    "en": "[System:Size percent=\"120\" ]Hey there! Nice to meetcha![/System:Size]",
+    "ua": "[System:Size percent=\"120\" ]Привіт! Радий знайомству![/System:Size]"
+  },
+  "navi_talk_stage_13_00": {
+    "en": "Oh, did that photo catch your eye?",
+    "ua": "О, тебе зацікавило це фото?"
+  },
+  "navi_talk_stage_13_11": {
+    "en": "That, my friend, is the World Champion\r\nof slot car racing. They call him Iceman!",
+    "ua": "Це, друже, чемпіон світу\nзі слот-перегонів. Його звуть Крижаний!"
+  },
+  "navi_talk_stage_13_01": {
+    "en": "He's also my big bro. Cool, huh?!",
+    "ua": "А ще він мій старший брат. Круто, га?!"
+  },
+  "navi_talk_stage_13_10": {
+    "en": "This is a venue for slot car racers to\r\nenjoy intense races against the rivals\r\nthey've met via StreetPass!",
+    "ua": "Тут гонщики слот-машинок влаштовують\nзапеклі перегони із суперниками,\nзустрінутими через StreetPass!"
+  },
+  "navi_talk_stage_13_05": {
+    "en": "I'm the manager, Nico Flame!\r\nYou can ask me anything about slot\r\ncar racing - I'm basically an expert!",
+    "ua": "Я управитель, Ніко Флейм!\nПитай що завгодно про слот-перегони —\nя, власне, експерт!"
+  },
+  "navi_talk_stage_13_02": {
+    "en": "Your name's [MII_NAME], huh?\r\nI'll get everything set up for you,\r\nso come on over to the counter.",
+    "ua": "Тебе звуть [MII_NAME], так?\nЗараз усе підготую,\nпідходь до стійки."
+  },
+  "navi_talk_stage_13_03": {
+    "en": "Now then, before you get started\r\nracing for real, would you like me\r\nto show you the ropes?",
+    "ua": "Перш ніж почати справжні\nперегони, показати тобі,\nщо до чого?"
+  },
+  "navi_talk_stage_13_04": {
+    "en": "All right then! Here, you can\r\nuse this car for now!",
+    "ua": "Гаразд! Ось, поки що\nкатайся на цій машинці!"
+  },
+  "navi_talk_stage_13_06": {
+    "en": "Now then, let's give it a test run\r\non the course!",
+    "ua": "А тепер — пробний заїзд\nна трасі!"
+  },
+  "navi_talk_stage_13_12_00": {
+    "en": "Think you know your stuff, eh?\r\nI'll keep the explanation short, then.",
+    "ua": "Вважаєш, що знаєшся, га?\nТоді поясню коротко."
+  },
+  "navi_talk_stage_13_12_02": {
+    "en": "The controls are simple - just hold [ACCELE_TYPE]\r\nto accelerate. But slow down when\r\nyou hit a corner, or you'll [System:Color name=\"mgCar_red\" ]crash[/System:Color]!",
+    "ua": "Керування просте — утримуй [ACCELE_TYPE],\nщоб їхати. На поворотах гальмуй,\nбо [System:Color name=\"mgCar_red\" ]розіб'єшся[/System:Color]!"
+  },
+  "navi_talk_stage_13_12_04": {
+    "en": "And if you ever change your\r\nmind about that tutorial, you\r\ncan always try it out later!",
+    "ua": "А якщо передумаєш щодо навчання,\nйого завжди можна\nпройти пізніше!"
+  },
+  "navi_talk_stage_13_12_05": {
+    "en": "Here's a car to start you off with.\r\nNow get out there and start racing!",
+    "ua": "Ось машинка для початку.\nА тепер — уперед на перегони!"
+  },
+  "navi_talk_stage_13_13": {
+    "en": "Welcome back! How'd you find it?\r\nTrickier than you expected?",
+    "ua": "З поверненням! Ну як?\nСкладніше, ніж здавалося?"
+  },
+  "navi_talk_stage_13_15": {
+    "en": "Oh, you want to know what to do\r\nwith the Demo Car I gave you?",
+    "ua": "О, хочеш знати, що робити\nз демо-машинкою, яку я дав?"
+  },
+  "navi_talk_stage_13_07": {
+    "en": "You can keep it! Call it a little\r\npresent from me to you.",
+    "ua": "Лиши її собі! Це мій\nмаленький подарунок."
+  },
+  "navi_talk_stage_13_08": {
+    "en": "I made that car myself, you know!\r\nThere's a little feature we have here\r\ncalled the [System:Color name=\"mgCar_red\" ]Custom Car Creator[/System:Color].",
+    "ua": "До речі, я сам зробив цю машинку!\nУ нас тут є така штука —\n[System:Color name=\"mgCar_red\" ]Конструктор машинок[/System:Color]."
+  },
+  "navi_talk_stage_13_09": {
+    "en": "You can create cars in all sorts of\r\ndifferent shapes. If you want to try\r\nyour hand, just ask me at the [System:Color name=\"mgCar_red\" ]Counter[/System:Color]!",
+    "ua": "Можна створювати машинки всіляких\nформ. Захочеш спробувати —\nзвертайся до мене біля [System:Color name=\"mgCar_red\" ]стійки[/System:Color]!"
+  },
+  "navi_talk_stage_14_01": {
+    "en": "Oh, and there's something else\r\nI ought to give you!",
+    "ua": "О, і ще дещо\nмушу тобі дати!"
+  },
+  "navi_talk_stage_14_02": {
+    "en": "These are special parts called\r\n[System:Color name=\"mgCar_red\" ]Booster Chips[/System:Color]. Install them in\r\nyour car to boost its stats!",
+    "ua": "Це особливі деталі —\n[System:Color name=\"mgCar_red\" ]бустер-чипи[/System:Color]. Встав їх\nу машинку, щоб покращити її!"
+  },
+  "navi_talk_stage_14_02_00": {
+    "en": "Your rivals will help you make\r\na new one after each race.",
+    "ua": "Після кожного заїзду суперники\nдопомагатимуть зробити новий."
+  },
+  "navi_talk_stage_14_03": {
+    "en": "They come with all kinds of\r\ndifferent stats, but each chip\r\ncan [System:Color name=\"mgCar_red\" ]only be used once[/System:Color].",
+    "ua": "Вони бувають з різними\nхарактеристиками, але кожен чип\nможна [System:Color name=\"mgCar_red\" ]використати лише раз[/System:Color]."
+  },
+  "navi_talk_stage_14_04": {
+    "en": "Congrats on your first race!\r\nHere's a little something to celebrate!",
+    "ua": "Вітаю з першим заїздом!\nОсь тобі подарунок на честь цього!"
+  },
+  "navi_talk_stage_14_05": {
+    "en": "The Prototype Car is what\r\nwe call a [System:Color name=\"mgCar_red\" ]Special Car[/System:Color].",
+    "ua": "Прототип — це те, що ми\nзвемо [System:Color name=\"mgCar_red\" ]особливою машинкою[/System:Color]."
+  },
+  "navi_talk_stage_14_06": {
+    "en": "When you're selecting a car\r\nbefore a race, you can choose\r\nthem instead of Custom Cars!",
+    "ua": "Вибираючи машинку перед\nзаїздом, можна взяти її\nзамість власних машинок!"
+  },
+  "navi_talk_stage_14_07": {
+    "en": "Finally, I want you to have this.",
+    "ua": "І нарешті я хочу дати тобі ось це."
+  },
+  "navi_talk_stage_14_10": {
+    "en": "This licence represents your\r\nskill level as a slot car racer!",
+    "ua": "Ця ліцензія показує твій рівень\nяк гонщика слот-машинок!"
+  },
+  "navi_talk_stage_14_08": {
+    "en": "To start with, I'd suggest honing\r\nyour skills by taking part in lots of\r\nBeginner Class races.",
+    "ua": "Для початку раджу відточити\nнавички в багатьох заїздах\nкласу «Новачок»."
+  },
+  "navi_talk_stage_14_11": {
+    "en": "Build up experience to enter a [System:Color name=\"mgCar_red\" ]qualifier[/System:Color],\r\nwhere you can earn a licence upgrade\r\nby fulfilling certain conditions!",
+    "ua": "Набирайся досвіду для [System:Color name=\"mgCar_red\" ]кваліфікації[/System:Color],\nде, виконавши певні умови,\nможна підвищити ліцензію!"
+  },
+  "navi_talk_stage_14_09": {
+    "en": "Anyway, that's all from me! I'll be\r\nright here whenever you need help.\r\nSo good luck out there!",
+    "ua": "Ну, це все від мене! Я тут,\nякщо знадобиться допомога.\nТож удачі!"
+  },
+  "navi_talk_stage_14_12": {
+    "en": "And set your sights high! Who knows,\r\nyou could be the next [System:Color name=\"mgCar_red\" ]World Champion[/System:Color]!",
+    "ua": "І став собі високі цілі! Хтозна,\nможе, ти станеш новим [System:Color name=\"mgCar_red\" ]чемпіоном світу[/System:Color]!"
+  },
+  "navi_talk_stage_14_16_00": {
+    "en": "In Free Race mode, you can practise\r\non any course you've played before.",
+    "ua": "У вільному заїзді можна тренуватися\nна будь-якій пройденій трасі."
+  },
+  "navi_talk_stage_14_16_02": {
+    "en": "You can practise freely without\r\nany time limits, or take on the\r\nchallenge of beating your own ghost!",
+    "ua": "Можна вільно тренуватися без\nобмежень часу або спробувати\nобігнати власного привида!"
+  },
+  "navi_talk_stage_14_16_01": {
+    "en": "Also, any Booster Chips you use\r\nin Free Race mode [System:Color name=\"mgCar_red\" ]won't be used up[/System:Color],\r\nso you can really go wild!",
+    "ua": "А бустер-чипи у вільному заїзді\n[System:Color name=\"mgCar_red\" ]не витрачаються[/System:Color], тож можна\nвідірватися на повну!"
+  },
+  "confirmation_rival_timeT_00": {
+    "en": "Ghost Race",
+    "ua": "Заїзд із привидом"
+  },
+  "confirmation_rival_timeT_01": {
+    "en": "Solo Practice",
+    "ua": "Тренування"
+  },
+  "trade_balloon_normal_00": {
+    "en": "Lessee...",
+    "ua": "Погляньмо…"
+  },
+  "trade_balloon_normal_01": {
+    "en": "Cut the red wire...",
+    "ua": "Ріжемо червоний дріт…"
+  },
+  "trade_balloon_normal_02": {
+    "en": "Hmm...?",
+    "ua": "Гм…?"
+  },
+  "trade_balloon_normal_03": {
+    "en": "Not bad!",
+    "ua": "Непогано!"
+  },
+  "trade_balloon_normal_04": {
+    "en": "That looks right...",
+    "ua": "Здається, так…"
+  },
+  "trade_balloon_normal_05": {
+    "en": "Let's do this!",
+    "ua": "Поїхали!"
+  },
+  "trade_balloon_normal_06": {
+    "en": "Looks nice!",
+    "ua": "Гарно виходить!"
+  },
+  "trade_balloon_normal_07": {
+    "en": "This oughtta do it!",
+    "ua": "Оце те, що треба!"
+  },
+  "trade_balloon_normal_08": {
+    "en": "Uh-huh!",
+    "ua": "Ага!"
+  },
+  "trade_balloon_special_00": {
+    "en": "All right!\r\nA perfect job!",
+    "ua": "Отак!\nБездоганна робота!"
+  },
+  "trade_balloon_special_01": {
+    "en": "My best work ever!",
+    "ua": "Моя найкраща робота!"
+  },
+  "trade_balloon_special_02": {
+    "en": "I nailed that one!",
+    "ua": "Оце вийшло!"
+  },
+  "trade_balloon_special_03": {
+    "en": "I'm a genius!",
+    "ua": "Я геній!"
+  },
+  "trade_balloon_special_04": {
+    "en": "Tuned to perfection!",
+    "ua": "Налаштовано ідеально!"
+  },
+  "trade_balloon_special_05": {
+    "en": "Beautiful!",
+    "ua": "Красота!"
+  },
+  "trade_balloon_special_06": {
+    "en": "Magnificent!",
+    "ua": "Розкішно!"
+  },
+  "trade_capT": {
+    "en": "New Booster Chip:",
+    "ua": "Новий бустер-чип:"
+  },
+  "ed_balloon_normal_01_00": {
+    "en": "You were so cool!",
+    "ua": "Це було круто!"
+  },
+  "ed_balloon_normal_01_01": {
+    "en": "That was intense!",
+    "ua": "Ото запал!"
+  },
+  "ed_balloon_normal_01_02": {
+    "en": "You're too good!",
+    "ua": "Нереально!"
+  },
+  "ed_balloon_normal_01_03": {
+    "en": "You took my breath away!",
+    "ua": "Аж дух перехопило!"
+  },
+  "ed_balloon_normal_01_04": {
+    "en": "You're my hero!",
+    "ua": "Мій герой!"
+  },
+  "ed_balloon_normal_01_05": {
+    "en": "Gave me chills!",
+    "ua": "Аж мурашки!"
+  },
+  "ed_balloon_normal_01_06": {
+    "en": "I wish I could race like that!",
+    "ua": "Мені б так їздити!"
+  },
+  "ed_balloon_normal_01_07": {
+    "en": "Wow, that was a\r\nrace and a half!",
+    "ua": "Ого, оце\nперегони!"
+  },
+  "pause_best_lap_capT": {
+    "en": "Best Time",
+    "ua": "Рекорд кола"
+  },
+  "pause_rival_capT": {
+    "en": "Track Record",
+    "ua": "Рекорд траси"
+  },
+  "pause_lap_time_capT": {
+    "en": "Lap Time",
+    "ua": "Час кола"
+  },
+  "pause_lap_time_capT_00": {
+    "en": "Previous Lap Time",
+    "ua": "Попереднє коло"
+  },
+  "pause_explain_capT": {
+    "en": "Controls",
+    "ua": "Керування"
+  },
+  "pause_explainT_00": {
+    "en": ": Accelerate",
+    "ua": ": газ"
+  },
+  "pause_explainT_00_00": {
+    "en": ": Accelerate",
+    "ua": ": газ"
+  },
+  "pause_explainT_01": {
+    "en": ": Horn",
+    "ua": ": гудок"
+  },
+  "pause_explainT_02": {
+    "en": ": Switch Views",
+    "ua": ": змінити вид"
+  },
+  "pause_info_titleT": {
+    "en": "Warning",
+    "ua": "Увага"
+  },
+  "pause_info_textT": {
+    "en": "Are you sure you want to quit?\r\nIf you do, the rivals you're playing with will leave.\r\n\r\n[System:Color name=\"mgCar_red\" ][System:Size percent=\"75\" ]Your current Booster Chip will also be used up.[/System:Size][/System:Color]",
+    "ua": "Справді вийти?\nТоді суперники, з якими ви граєте, підуть.\n\n[System:Color name=\"mgCar_red\" ][System:Size percent=\"75\" ]Поточний бустер-чип теж буде витрачено.[/System:Size][/System:Color]"
+  },
+  "pause_text_button_00": {
+    "en": "Continue",
+    "ua": "Продовжити"
+  },
+  "pause_text_button_01": {
+    "en": "Quit",
+    "ua": "Вийти"
+  },
+  "pause_mission_capT": {
+    "en": "Missions",
+    "ua": "Місії"
+  },
+  "car_list_capT": {
+    "en": "Car Collection",
+    "ua": "Колекція машинок"
+  },
+  "car_list_capT_01": {
+    "en": "Custom Cars",
+    "ua": "Власні машинки"
+  },
+  "car_list_capT_00": {
+    "en": "Special Cars",
+    "ua": "Особливі машинки"
+  },
+  "mycar_name_changeT": {
+    "en": "Edit Name",
+    "ua": "Змінити назву"
+  },
+  "mycar_operationT": {
+    "en": " Zoom　　 Rotate",
+    "ua": " Масштаб　　 Обертати"
+  },
+  "mycar_displayT": {
+    "en": " Hide/Show Info",
+    "ua": " Показати дані"
+  },
+  "mycar_page_title_model": {
+    "en": "Car Type",
+    "ua": "Тип машинки"
+  },
+  "mycar_page_title_type_00": {
+    "en": "Edge Type",
+    "ua": "Тип країв"
+  },
+  "mycar_page_title_type_01": {
+    "en": "Roof Type",
+    "ua": "Тип даху"
+  },
+  "mycar_page_title_type_02": {
+    "en": "Trailer Type",
+    "ua": "Причіп"
+  },
+  "mycar_page_title_form": {
+    "en": "Shape",
+    "ua": "Форма"
+  },
+  "mycar_page_title_color": {
+    "en": "Paint Job",
+    "ua": "Колір"
+  },
+  "mycar_page_title_parts": {
+    "en": "Parts",
+    "ua": "Деталі"
+  },
+  "mycar_modelT_00": {
+    "en": "Saloon",
+    "ua": "Седан"
+  },
+  "mycar_modelT_01": {
+    "en": "Estate",
+    "ua": "Універсал"
+  },
+  "mycar_modelT_02": {
+    "en": "Sports Car",
+    "ua": "Спорткар"
+  },
+  "mycar_modelT_03": {
+    "en": "Lorry",
+    "ua": "Вантажівка"
+  },
+  "mycar_type_edgeT_00": {
+    "en": "Standard",
+    "ua": "Звичайні"
+  },
+  "mycar_type_edgeT_01": {
+    "en": "Square",
+    "ua": "Кутасті"
+  },
+  "mycar_type_edgeT_02": {
+    "en": "Smooth",
+    "ua": "Плавні"
+  },
+  "mycar_type_optT_00": {
+    "en": "Roof",
+    "ua": "Дах"
+  },
+  "mycar_type_optT_01": {
+    "en": "No Roof",
+    "ua": "Без даху"
+  },
+  "mycar_type_optT_02": {
+    "en": "Trailer",
+    "ua": "Причіп"
+  },
+  "mycar_type_optT_03": {
+    "en": "No Trailer",
+    "ua": "Без причепа"
+  },
+  "mycar_random_buttonT": {
+    "en": "Random",
+    "ua": "Навмання"
+  },
+  "mycar_slide_okT": {
+    "en": "OK",
+    "ua": "OK"
+  },
+  "mycar_col_capT_00": {
+    "en": "R",
+    "ua": "R"
+  },
+  "mycar_col_capT_01": {
+    "en": "G",
+    "ua": "G"
+  },
+  "mycar_col_capT_02": {
+    "en": "B",
+    "ua": "B"
+  },
+  "mycar_parts_txtT_00": {
+    "en": "Front Wheels",
+    "ua": "Передні колеса"
+  },
+  "mycar_parts_txtT_01": {
+    "en": "Front Grille",
+    "ua": "Решітка радіатора"
+  },
+  "mycar_parts_txtT_02": {
+    "en": "Headlights",
+    "ua": "Фари"
+  },
+  "mycar_parts_txtT_03": {
+    "en": "Tail Lights",
+    "ua": "Задні ліхтарі"
+  },
+  "mycar_parts_txtT_04": {
+    "en": "Front Number Plate",
+    "ua": "Передній номер"
+  },
+  "mycar_parts_txtT_05": {
+    "en": "Roof Extras",
+    "ua": "Прикраси на дах"
+  },
+  "mycar_parts_txtT_06": {
+    "en": "Front Bumper",
+    "ua": "Передній бампер"
+  },
+  "mycar_parts_txtT_07": {
+    "en": "Rear Wheels",
+    "ua": "Задні колеса"
+  },
+  "mycar_parts_txtT_08": {
+    "en": "Rear Number Plate",
+    "ua": "Задній номер"
+  },
+  "mycar_text_save": {
+    "en": "Save the current design?",
+    "ua": "Зберегти поточний дизайн?"
+  },
+  "mycar_text_button_save": {
+    "en": "Save",
+    "ua": "Зберегти"
+  },
+  "mycar_text_button_return": {
+    "en": "Cancel",
+    "ua": "Скасувати"
+  },
+  "mycar_text_save_result": {
+    "en": "Custom Car saved!",
+    "ua": "Власну машинку збережено!"
+  },
+  "mycar_text_save_result_00": {
+    "en": "Special Car saved!",
+    "ua": "Особливу машинку збережено!"
+  },
+  "mycar_type_infoT": {
+    "en": "Roof Extras are not available for cars with no roof.",
+    "ua": "Прикраси на дах недоступні для машинок без даху."
+  },
+  "mycar_model_penT": {
+    "en": "Please use the stylus.",
+    "ua": "Скористайтеся стилусом."
+  },
+  "mycar_tutorial_text_talk_save_00": {
+    "en": "By the way, you can give your cars\r\nunique names if you like. Want to try?",
+    "ua": "До речі, машинкам можна давати\nвласні назви. Хочеш спробувати?"
+  },
+  "mycar_tutorial_text_talk_save_01": {
+    "en": "You can always change a car's name\r\nby pressing [System:Color name=\"mgCar_red\" ][/System:Color]. Give it a try sometime!",
+    "ua": "Назву машинки завжди можна змінити,\nнатиснувши [System:Color name=\"mgCar_red\" ][/System:Color]. Спробуй якось!"
+  },
+  "mycar_text_button_set": {
+    "en": "Heck yeah!",
+    "ua": "Ще б пак!"
+  },
+  "mycar_text_button_set_no": {
+    "en": "Nah, I'm good.",
+    "ua": "Ні, не треба."
+  },
+  "mycar_text_button_ok": {
+    "en": "I'm sure.",
+    "ua": "Так, певен."
+  },
+  "mycar_text_button_no": {
+    "en": "Wait, no!",
+    "ua": "Ні, стривай!"
+  },
+  "mycar_text_cancel": {
+    "en": "If you exit now, any changes you've made\r\nwill be lost. Are you sure you want to exit?",
+    "ua": "Якщо вийти зараз, усі зміни буде\nвтрачено. Справді вийти?"
+  },
+  "mycar_text_car_change": {
+    "en": "Any changes you've made to the\r\ncurrent car will be lost. Are you\r\nsure you want to continue?",
+    "ua": "Усі зміни поточної машинки\nбуде втрачено. Справді\nпродовжити?"
+  },
+  "mycar_change_list_buttonT_00": {
+    "en": "Special Cars",
+    "ua": "Особливі машинки"
+  },
+  "mycar_change_list_buttonT_01": {
+    "en": "Custom Cars",
+    "ua": "Власні машинки"
+  },
+  "mission__00": {
+    "en": "Finish within [0] seconds",
+    "ua": "Фінішувати за [0] с"
+  },
+  "mission__01": {
+    "en": "Get [0] EXCELLENTs",
+    "ua": "[0] «ЧУДОВО»"
+  },
+  "mission__02": {
+    "en": "Get [0] EXCELLENTs\r\nin a row",
+    "ua": "Отримати [0] «ЧУДОВО»\nпоспіль"
+  },
+  "mission__04": {
+    "en": "Finish without crashing\r\nmore than [0] times",
+    "ua": "Не більше [0]\nаварій"
+  },
+  "mission__05": {
+    "en": "Finish without crashing",
+    "ua": "Фінішувати без аварій"
+  },
+  "mission__08": {
+    "en": "Use the [0]",
+    "ua": "Використати: [0]"
+  },
+  "mission__09": {
+    "en": "Get an EXCELLENT\r\non the [0]th corner",
+    "ua": "Отримати «ЧУДОВО»\nна [0]-му повороті"
+  },
+  "mission__10": {
+    "en": "Defeat Iceman",
+    "ua": "Перемогти Крижаного"
+  },
+  "employ_rival_capT": {
+    "en": "Current Rivals",
+    "ua": "Поточні суперники"
+  },
+  "employ_text_button_00": {
+    "en": "Recruit Rival",
+    "ua": "Найняти суперника"
+  },
+  "employ_text_button_01": {
+    "en": "Recruit Max",
+    "ua": "Найняти макс."
+  },
+  "employ_text_button_02": {
+    "en": "Cancel",
+    "ua": "Скасувати"
+  },
+  "tutorial_explain_capT": {
+    "en": "Press [System:Color name=\"mgCar_red\" ]START[/System:Color] to end the tutorial.",
+    "ua": "Натисніть [System:Color name=\"mgCar_red\" ]START[/System:Color], щоб завершити навчання."
+  },
+  "tutorial_info_titleT": {
+    "en": "Tutorial",
+    "ua": "Навчання"
+  },
+  "tutorial_choice2_textT": {
+    "en": "Have you had enough practice?",
+    "ua": "Досить тренувань?"
+  },
+  "tutorial_button_choice_00": {
+    "en": "Yep!",
+    "ua": "Ага!"
+  },
+  "tutorial_button_choice_01": {
+    "en": "Not just yet...",
+    "ua": "Ще трохи…"
+  },
+  "tutorial_text_talk_23": {
+    "en": "Slot cars race along a slot on a\r\ntrack. Our tracks have 11 slots,\r\nso we can have some big races!",
+    "ua": "Слот-машинки їдуть пазом на трасі.\nУ наших трасах 11 пазів,\nтож перегони бувають великі!"
+  },
+  "tutorial_text_talk_00": {
+    "en": "Controlling your car is easy.\r\nJust hold [ACCELE_TYPE] to make it go!",
+    "ua": "Керувати машинкою просто.\nУтримуй [ACCELE_TYPE], щоб їхати!"
+  },
+  "tutorial_text_talk_01": {
+    "en": "To start off, try holding the button\r\ndown until you get to that corner.",
+    "ua": "Для початку утримуй кнопку,\nпоки не доїдеш до того повороту."
+  },
+  "tutorial_text_talk_01_00": {
+    "en": "I'll start the countdown!",
+    "ua": "Починаю відлік!"
+  },
+  "tutorial_text_talk_02": {
+    "en": "Hold down [ACCELE_TYPE] to fill up the gauge!\r\nDon't let go, or you'll slow down!",
+    "ua": "Утримуй [ACCELE_TYPE], щоб заповнити шкалу!\nНе відпускай, бо загальмуєш!"
+  },
+  "tutorial_text_talk_03": {
+    "en": "Don't let go!\r\nKeep holding down the button!",
+    "ua": "Не відпускай!\nТримай кнопку!"
+  },
+  "tutorial_text_talk_04": {
+    "en": "Haha! Did that make you jump?\r\nI wanted to give you a taste of the\r\ntrickiest part of slot car racing.",
+    "ua": "Ха-ха! Злякався?\nЯ хотів показати найхитрішу\nчастину слот-перегонів."
+  },
+  "tutorial_text_talk_04_00": {
+    "en": "When you hit a corner, you have to\r\n[System:Color name=\"mgCar_red\" ]let go of [ACCELE_TYPE] and slow down[/System:Color],\r\nor you'll fly off the track and crash!",
+    "ua": "На повороті треба\n[System:Color name=\"mgCar_red\" ]відпустити [ACCELE_TYPE] й загальмувати[/System:Color],\nінакше вилетиш із траси й розіб'єшся!"
+  },
+  "tutorial_text_talk_05": {
+    "en": "Crashing isn't against the rules, but\r\nit'll take time to get your car back\r\non the track, so try to avoid it!",
+    "ua": "Аварії не заборонені, але повернути\nмашинку на трасу забирає час,\nтож краще їх уникати!"
+  },
+  "tutorial_text_talk_06": {
+    "en": "Actually, there's a bit of a trick to\r\ntaking corners. Let me explain!",
+    "ua": "Власне, у поворотах є\nсвоя хитрість. Поясню!"
+  },
+  "tutorial_text_talk_07": {
+    "en": "First, accelerate your car to max speed!",
+    "ua": "Спершу розжени машинку до максимуму!"
+  },
+  "tutorial_text_talk_08": {
+    "en": "Just[System:Color name=\"mgCar_red\" ] as you enter the corner[/System:Color],\r\nslow down...",
+    "ua": "[System:Color name=\"mgCar_red\" ]Щойно в'їжджаєш у поворот[/System:Color],\nгальмуй…"
+  },
+  "tutorial_text_talk_09": {
+    "en": "Then [System:Color name=\"mgCar_red\" ]as soon as you're out of the\r\ncorner[/System:Color], get that finger back on [ACCELE_TYPE]\r\nto accelerate back to max speed!",
+    "ua": "А [System:Color name=\"mgCar_red\" ]щойно виїхав із\nповороту[/System:Color], знову тисни [ACCELE_TYPE],\nщоб розігнатися до максимуму!"
+  },
+  "tutorial_text_talk_10_00": {
+    "en": "Looks like you let go of the button\r\na bit early! You want to enter the\r\ncorner at top speed!",
+    "ua": "Схоже, ти відпустив кнопку\nзарано! В'їжджати в поворот\nтреба на повній швидкості!"
+  },
+  "tutorial_text_talk_10_00_00": {
+    "en": "Don't forget to accelerate as soon\r\nas you exit the corner, too!",
+    "ua": "І не забувай прискорюватися,\nщойно виїжджаєш із повороту!"
+  },
+  "tutorial_text_talk_10_01": {
+    "en": "Looks like you let go of the button\r\na bit early. Remember, hold it down\r\nuntil the last second!",
+    "ua": "Схоже, ти відпустив кнопку\nзарано. Пам'ятай: тримай її\nдо останньої секунди!"
+  },
+  "tutorial_text_talk_10_02": {
+    "en": "Don't wait too long to hit the\r\nbutton after you exit the corner.\r\nTry doing it a little faster!",
+    "ua": "Не зволікай із кнопкою\nпісля виїзду з повороту.\nСпробуй трохи швидше!"
+  },
+  "tutorial_text_talk_10_03": {
+    "en": "Not bad at all! But it looks like you\r\ncould still be pressing the button a bit\r\nsooner on the exit. Give it another try!",
+    "ua": "Зовсім непогано! Але на виході\nкнопку можна тиснути трохи раніше.\nСпробуй ще раз!"
+  },
+  "tutorial_text_talk_10_04": {
+    "en": "Oh, that's good! Really good!\r\nTry to remember that timing!",
+    "ua": "О, добре! Дуже добре!\nЗапам'ятай цей момент!"
+  },
+  "tutorial_text_talk_10_05": {
+    "en": "You're waiting far too long to let\r\ngo of the button. Release it quickly,\r\nthen press it again after the corner!",
+    "ua": "Ти надто довго не відпускаєш\nкнопку. Відпускай швидко,\nа після повороту тисни знову!"
+  },
+  "tutorial_text_talk_10_06": {
+    "en": "Looks like you're pressing the button\r\nagain too quickly as you come out of\r\nthe corner. Try timing it a little slower!",
+    "ua": "Схоже, ти надто швидко знову тиснеш\nкнопку на виході з повороту.\nСпробуй трохи пізніше!"
+  },
+  "tutorial_text_talk_13": {
+    "en": "On each corner, you'll get a \"[System:Color name=\"mgCar_3rd_col_00\" ]GOOD![/System:Color]\"\r\nor an \"[System:Color name=\"mgCar_yellow\" ]EXCELLENT![/System:Color]\" if you time it well.",
+    "ua": "На кожному повороті за вдалий момент\nбуде «[System:Color name=\"mgCar_3rd_col_00\" ]ДОБРЕ![/System:Color]» або «[System:Color name=\"mgCar_yellow\" ]ЧУДОВО![/System:Color]»."
+  },
+  "tutorial_text_talk_15": {
+    "en": "Try to get the hang of the timing.\r\nOnce you've got it, you can go for\r\nan EXCELLENT every time!",
+    "ua": "Спробуй відчути момент.\nКоли вийде, зможеш щоразу\nотримувати «ЧУДОВО»!"
+  },
+  "tutorial_text_talk_14": {
+    "en": "Each race lasts three laps.\r\nOh, and you can honk your horn with !",
+    "ua": "Кожен заїзд — три кола.\nО, і гудок — кнопкою !"
+  },
+  "tutorial_text_talk_14_00": {
+    "en": "Press  to switch between\r\ntwo different viewpoints.",
+    "ua": "Натисни , щоб перемикатися\nміж двома видами."
+  },
+  "tutorial_text_talk_14_01": {
+    "en": "There's [System:Color name=\"mgCar_red\" ]Mii View[/System:Color], which shows what\r\nyour Mii is seeing, and [System:Color name=\"mgCar_red\" ]Car View[/System:Color],\r\nwhich follows after your car.",
+    "ua": "[System:Color name=\"mgCar_red\" ]Вид Mii[/System:Color] показує те, що бачить\nтвій Mii, а [System:Color name=\"mgCar_red\" ]вид машинки[/System:Color]\nїде слідом за машинкою."
+  },
+  "tutorial_text_talk_16": {
+    "en": "Just try out all the options and\r\nget used to how it all feels!",
+    "ua": "Спробуй усе й звикни,\nяк воно відчувається!"
+  },
+  "tutorial_text_talk_17": {
+    "en": "The Custom Car Creator lets you\r\ncreate your own one-of-a-kind car!",
+    "ua": "У конструкторі можна створити\nвласну унікальну машинку!"
+  },
+  "tutorial_text_talk_18": {
+    "en": "The design [System:Color name=\"mgCar_red\" ]won't affect your car's\r\nperformance[/System:Color], so just go for whatever\r\nstyle you think looks slickest!",
+    "ua": "Дизайн [System:Color name=\"mgCar_red\" ]не впливає на характеристики\nмашинки[/System:Color], тож роби такою,\nяка тобі найбільше до вподоби!"
+  },
+  "tutorial_text_talk_20": {
+    "en": "Oh, I see your rivals made\r\na Booster Chip for you!",
+    "ua": "О, бачу, суперники зробили\nтобі бустер-чип!"
+  },
+  "tutorial_text_talk_21": {
+    "en": "The more rivals you manage\r\nto gather, the more powerful\r\nthe chip they'll make!",
+    "ua": "Що більше суперників\nзбереш, то потужніший\nчип вони зроблять!"
+  },
+  "tutorial_text_talk_22": {
+    "en": "But remember, each Booster Chip\r\ncan only be used in a single race!",
+    "ua": "Пам'ятай: кожен бустер-чип\nдіє лише в одному заїзді!"
+  },
+  "tutorial_text_talk_24": {
+    "en": "Once you've used it up, it's gone!",
+    "ua": "Використав — і його немає!"
+  },
+  "result_info_mission_title_01": {
+    "en": "Licence Earned!",
+    "ua": "Нова ліцензія!"
+  },
+  "result_info_mission_title_02": {
+    "en": "New Course Unlocked!",
+    "ua": "Відкрито нову трасу!"
+  },
+  "reslut_info_message_01": {
+    "en": "For: Clearing\r\nthe course!",
+    "ua": "За проходження\nтраси!"
+  },
+  "reslut_info_message_02": {
+    "en": "For: Clearing all\r\nlicence missions!",
+    "ua": "За всі місії\nліцензії!"
+  },
+  "reslut_info_message_03": {
+    "en": "For: Clearing\r\nall missions!",
+    "ua": "За всі\nмісії!"
+  },
+  "reslut_info_message_04": {
+    "en": "For: Achieving the\r\nunlock conditions!",
+    "ua": "За виконання\nумов!"
+  },
+  "syokai_info_title_00": {
+    "en": "StreetPass Slot Racer",
+    "ua": "Слот-перегони StreetPass"
+  },
+  "syokai_info_message_00": {
+    "en": "In [System:Color name=\"mgCar_red\" ]StreetPass Slot Racer[/System:Color], you\r\ncompete against rivals to become\r\nthe slot car champion of the world!",
+    "ua": "У [System:Color name=\"mgCar_red\" ]Слот-перегонах StreetPass[/System:Color] ви\nзмагаєтеся із суперниками, щоб стати\nчемпіоном світу зі слот-перегонів!"
+  },
+  "syokai_info_message_01": {
+    "en": "Are you ready to start?",
+    "ua": "Готові почати?"
+  },
+  "syokai_info_answer_00": {
+    "en": "Let's start!",
+    "ua": "Почнімо!"
+  },
+  "syokai_info_answer_01": {
+    "en": "Not right now...",
+    "ua": "Не зараз…"
+  },
+  "syokai_info_message_02": {
+    "en": "Then let's begin!",
+    "ua": "Тоді вперед!"
+  },
+  "syokai_info_message_03": {
+    "en": "Oh, that's a shame.\r\nWell, drop in again whenever you like!",
+    "ua": "Ой, шкода.\nЗаходьте будь-коли!"
+  },
+  "tutorial_info_mission_title_00": {
+    "en": "You got a Booster Chip!",
+    "ua": "Ви отримали бустер-чип!"
+  },
+  "tutorial_info_mission_title_01": {
+    "en": "You got a Special Car!",
+    "ua": "Ви отримали особливу машинку!"
+  },
+  "tutorial_info_mission_title_02": {
+    "en": "You got a new licence!",
+    "ua": "Ви отримали нову ліцензію!"
+  },
+  "tutorial_info_mission_title_03": {
+    "en": "You got a Demo Car!",
+    "ua": "Ви отримали демо-машинку!"
+  },
+  "tutorial_info_message_00": {
+    "en": "Booster Chip",
+    "ua": "Бустер-чип"
+  },
+  "tutorial_info_message_00_00": {
+    "en": "A present from Nico!",
+    "ua": "Подарунок від Ніко!"
+  },
+  "tutorial_info_message_02": {
+    "en": "Rank [0] Licence",
+    "ua": "Ліцензія рангу [0]"
+  },
+  "tutorial_info_message_02_00": {
+    "en": "Started your slot car racing career!",
+    "ua": "Кар'єру гонщика розпочато!"
+  },
+  "last_info_mission_title_00": {
+    "en": "You got Nico Flame's Hat!",
+    "ua": "Ви отримали капелюх Ніко Флейма!"
+  },
+  "lastl_info_message_00": {
+    "en": "Nico Flame's Hat",
+    "ua": "Капелюх Ніко Флейма"
+  },
+  "report_menu_button_text_01": {
+    "en": "Records",
+    "ua": "Рекорди"
+  },
+  "report_menu_button_text_02": {
+    "en": "StreetPass Rankings",
+    "ua": "Рейтинг StreetPass"
+  },
+  "report_menu_button_text_03": {
+    "en": "Control Settings",
+    "ua": "Керування"
+  },
+  "report_record_item_cap_00": {
+    "en": "Wins",
+    "ua": "Перемоги"
+  },
+  "report_record_item_cap_01": {
+    "en": "Consecutive Wins",
+    "ua": "Перемог поспіль"
+  },
+  "report_record_mission_capT": {
+    "en": "Missions Cleared",
+    "ua": "Виконано місій"
+  },
+  "report_record_vc_capT": {
+    "en": "Special Cars Earned",
+    "ua": "Особливих машинок"
+  },
+  "report_record_parts_record_00": {
+    "en": "Final position: [2] out of [1] racers\r\nTrack: [0]",
+    "ua": "Місце: [2] із [1]\nТраса: [0]"
+  },
+  "report_record_parts_record_01": {
+    "en": "Final position: [2] out of [1] racers\r\nTrack: [0]",
+    "ua": "Місце: [2] із [1]\nТраса: [0]"
+  },
+  "report_record_parts_record_02": {
+    "en": "Final position: [2] out of [1] racers\r\nTrack: [0]",
+    "ua": "Місце: [2] із [1]\nТраса: [0]"
+  },
+  "report_record_exp_total_capT": {
+    "en": "Total Points:",
+    "ua": "Усього очок:"
+  },
+  "report_record_exp_total_unitT": {
+    "en": "P",
+    "ua": "О"
+  },
+  "report_ranking_rankT": {
+    "en": "1st",
+    "ua": "1-й"
+  },
+  "report_vc_list_vc_nameT_00": {
+    "en": "Prototype Car",
+    "ua": "Прототип"
+  },
+  "report_vc_list_vc_nameT_01": {
+    "en": "Racing Car",
+    "ua": "Гоночна машина"
+  },
+  "report_vc_list_vc_nameT_02": {
+    "en": "Classic Car",
+    "ua": "Класичне авто"
+  },
+  "report_vc_list_vc_nameT_03": {
+    "en": "Digger",
+    "ua": "Екскаватор"
+  },
+  "report_vc_list_vc_nameT_04": {
+    "en": "Champion's Car",
+    "ua": "Машина чемпіона"
+  },
+  "report_vc_list_vc_nameT_05": {
+    "en": "Fire Engine",
+    "ua": "Пожежна машина"
+  },
+  "report_vc_list_vc_nameT_06": {
+    "en": "Speedster",
+    "ua": "Спідстер"
+  },
+  "report_vc_list_vc_nameT_07": {
+    "en": "Giraffe",
+    "ua": "Жираф"
+  },
+  "report_vc_list_vc_nameT_08": {
+    "en": "Ladybird",
+    "ua": "Сонечко"
+  },
+  "report_vc_list_vc_nameT_09": {
+    "en": "Pirate Ship",
+    "ua": "Фрегат"
+  },
+  "report_vc_list_vc_nameT_10": {
+    "en": "Lobster",
+    "ua": "Омар"
+  },
+  "report_vc_list_vc_nameT_11": {
+    "en": "Tuna",
+    "ua": "Тунець"
+  },
+  "report_vc_list_vc_nameT_12": {
+    "en": "Sushi",
+    "ua": "Суші"
+  },
+  "report_vc_list_vc_nameT_13": {
+    "en": "Rocket",
+    "ua": "Ракета"
+  },
+  "report_vc_list_vc_nameT_14": {
+    "en": "Four By Four",
+    "ua": "Позашляховик"
+  },
+  "report_vc_list_vc_nameT_15": {
+    "en": "Straight Arrow",
+    "ua": "Стріла"
+  },
+  "report_vc_list_vc_nameT_16": {
+    "en": "Peacekeeper",
+    "ua": "Охоронець"
+  },
+  "report_vc_list_vc_nameT_17": {
+    "en": "Bunny Buggy",
+    "ua": "Кролебагі"
+  },
+  "report_vc_list_vc_nameT_18": {
+    "en": "Tiny Terror",
+    "ua": "Малий шибеник"
+  },
+  "report_vc_list_vc_nameT_19": {
+    "en": "Ol' Angry Brows",
+    "ua": "Старий буркотун"
+  },
+  "report_vc_list_vc_nameT_20": {
+    "en": "Gentleman",
+    "ua": "Джентльмен"
+  },
+  "report_vc_list_vc_nameT_21": {
+    "en": "Long Face",
+    "ua": "Сумна пика"
+  },
+  "report_vc_list_vc_nameT_22": {
+    "en": "Red Racer",
+    "ua": "Червоний болід"
+  },
+  "report_vc_list_vc_nameT_23": {
+    "en": "Back-to-Fronter",
+    "ua": "Задом-наперед"
+  },
+  "report_vc_list_vc_nameT_24": {
+    "en": "Demo Car",
+    "ua": "Демо"
+  },
+  "report_vc_list_vc_nameT_25": {
+    "en": "Demo Car",
+    "ua": "Демо"
+  },
+  "report_vc_list_vc_nameT_26": {
+    "en": "Reward",
+    "ua": "Приз"
+  },
+  "report_vc_list_vc_textT_00": {
+    "en": "Compete in a race for the first time",
+    "ua": "Уперше взяти участь у перегонах"
+  },
+  "report_vc_list_vc_textT_01": {
+    "en": "Earn your Regular Class licence",
+    "ua": "Отримати ліцензію класу «Звичайний»"
+  },
+  "report_vc_list_vc_textT_02": {
+    "en": "Earn your Expert Class licence",
+    "ua": "Отримати ліцензію класу «Експерт»"
+  },
+  "report_vc_list_vc_textT_03": {
+    "en": "Earn your Master Class licence",
+    "ua": "Отримати ліцензію класу «Майстер»"
+  },
+  "report_vc_list_vc_textT_04": {
+    "en": "Defeat the World Champion!",
+    "ua": "Перемогти чемпіона світу!"
+  },
+  "report_vc_list_vc_textT_05": {
+    "en": "Win three races",
+    "ua": "Виграти три заїзди"
+  },
+  "report_vc_list_vc_textT_06": {
+    "en": "Take a chance with a Random Course",
+    "ua": "Ризикнути з випадковою трасою"
+  },
+  "report_vc_list_vc_textT_07": {
+    "en": "Clear all missions on the standard\r\nBeginner Class courses",
+    "ua": "Виконати всі місії на звичайних\nтрасах класу «Новачок»"
+  },
+  "report_vc_list_vc_textT_08": {
+    "en": "Clear all missions on all\r\nBeginner Class courses",
+    "ua": "Виконати всі місії на всіх\nтрасах класу «Новачок»"
+  },
+  "report_vc_list_vc_textT_09": {
+    "en": "Clear all missions on the standard\r\nRegular Class courses",
+    "ua": "Виконати всі місії на звичайних\nтрасах класу «Звичайний»"
+  },
+  "report_vc_list_vc_textT_10": {
+    "en": "Clear all missions on all\r\nRegular Class courses",
+    "ua": "Виконати всі місії на всіх\nтрасах класу «Звичайний»"
+  },
+  "report_vc_list_vc_textT_11": {
+    "en": "Clear all missions on the standard\r\nExpert Class courses",
+    "ua": "Виконати всі місії на звичайних\nтрасах класу «Експерт»"
+  },
+  "report_vc_list_vc_textT_12": {
+    "en": "Clear all missions on all\r\nExpert Class courses",
+    "ua": "Виконати всі місії на всіх\nтрасах класу «Експерт»"
+  },
+  "report_vc_list_vc_textT_13": {
+    "en": "Clear all missions on all\r\nMaster Class courses",
+    "ua": "Виконати всі місії на всіх\nтрасах класу «Майстер»"
+  },
+  "report_vc_list_vc_textT_14": {
+    "en": "Achieve a Licence Rank of 10",
+    "ua": "Досягти 10-го рангу ліцензії"
+  },
+  "report_vc_list_vc_textT_15": {
+    "en": "Achieve a Licence Rank of 20",
+    "ua": "Досягти 20-го рангу ліцензії"
+  },
+  "report_vc_list_vc_textT_16": {
+    "en": "Achieve a Licence Rank of 30",
+    "ua": "Досягти 30-го рангу ліцензії"
+  },
+  "report_vc_list_vc_textT_17": {
+    "en": "Achieve a Licence Rank of 40",
+    "ua": "Досягти 40-го рангу ліцензії"
+  },
+  "report_vc_list_vc_textT_18": {
+    "en": "Achieve a Licence Rank of 50",
+    "ua": "Досягти 50-го рангу ліцензії"
+  },
+  "report_vc_list_vc_textT_19": {
+    "en": "Achieve a Licence Rank of 60",
+    "ua": "Досягти 60-го рангу ліцензії"
+  },
+  "report_vc_list_vc_textT_20": {
+    "en": "Achieve a Licence Rank of 70",
+    "ua": "Досягти 70-го рангу ліцензії"
+  },
+  "report_vc_list_vc_textT_21": {
+    "en": "Achieve a Licence Rank of 80",
+    "ua": "Досягти 80-го рангу ліцензії"
+  },
+  "report_vc_list_vc_textT_22": {
+    "en": "Achieve a Licence Rank of 90",
+    "ua": "Досягти 90-го рангу ліцензії"
+  },
+  "report_vc_list_vc_textT_23": {
+    "en": "Achieve a Licence Rank of 99",
+    "ua": "Досягти 99-го рангу ліцензії"
+  },
+  "report_vc_list_vc_textT_00_00": {
+    "en": "A classic race car design.\r\nIts aerodynamic curves are the\r\npinnacle of functional beauty.",
+    "ua": "Класичний дизайн гоночної машини.\nЇї аеродинамічні вигини — вершина\nфункціональної краси."
+  },
+  "report_vc_list_vc_textT_01_01": {
+    "en": "With all extraneous parts stripped\r\naway, this car embodies the quest\r\nfor ultimate speed.",
+    "ua": "Без жодної зайвої деталі ця машина\nвтілює прагнення до найвищої\nшвидкості."
+  },
+  "report_vc_list_vc_textT_02_02": {
+    "en": "An elegant and nostalgic design.\r\nJust by looking at it, you can almost\r\nhear the deep rumbles of its engine.",
+    "ua": "Елегантний ностальгійний дизайн.\nДивишся — і мало не чуєш\nглибокий гуркіт мотора."
+  },
+  "report_vc_list_vc_textT_03_03": {
+    "en": "Not exactly a car, but a hard-working\r\nvehicle nonetheless. Its powerful arm\r\ncan crush even the hardest of rocks!",
+    "ua": "Не зовсім машинка, але все одно\nпрацьовита техніка. Її могутній ківш\nрозтрощить навіть найтвердіший камінь!"
+  },
+  "report_vc_list_vc_textT_04_04": {
+    "en": "A symbol of slot car racing mastery.\r\nOnly those who have defeated the\r\nWorld Champion are permitted to use it.",
+    "ua": "Символ майстерності в слот-перегонах.\nКерувати нею можуть лише ті, хто\nздолав чемпіона світу."
+  },
+  "report_vc_list_vc_textT_05_05": {
+    "en": "When disaster strikes, never fear!\r\nThis noble vehicle will face the\r\nflames and save those in need!",
+    "ua": "Коли стається лихо, не бійтеся!\nЦя шляхетна машина кинеться у вогонь\nі врятує тих, хто в біді!"
+  },
+  "report_vc_list_vc_textT_06_06": {
+    "en": "Everything about this car just screams\r\n\"attitude\". Its narrow headlights are like\r\nknives, tearing through the road ahead.",
+    "ua": "Ця машина аж кричить про свій характер.\nЇї вузькі фари, мов ножі,\nрозтинають дорогу попереду."
+  },
+  "report_vc_list_vc_textT_07_07": {
+    "en": "This novelty vehicle bobs its head and\r\ntail as it moves. This motion actually\r\ngives it a strong sense of balance.",
+    "ua": "Ця кумедна машинка хитає головою\nй хвостом на ходу. Це, до речі,\nдає їй добрий баланс."
+  },
+  "report_vc_list_vc_textT_08_08": {
+    "en": "A beetle car in the most literal sense.\r\nLooks so real, you might expect it to\r\njump off the track and fly away.",
+    "ua": "Жук-машина в прямому сенсі.\nТака справжня, що, здається, ось-ось\nзлетить із траси."
+  },
+  "report_vc_list_vc_textT_09_09": {
+    "en": "This car sails down the track as though\r\ncarried by a constant tailwind. Sadly,\r\nit can't pelt your rivals with cannon fire.",
+    "ua": "Ця машина пливе трасою, ніби її штовхає\nпопутний вітер. На жаль, обстрілювати\nсуперників із гармат вона не вміє."
+  },
+  "report_vc_list_vc_textT_10_10": {
+    "en": "This curious vehicle boasts a fearsome\r\npair of claws. They're actually pretty sharp,\r\nso be careful how you handle it!",
+    "ua": "Ця дивна машинка має грізну пару\nклішень. Вони досить гострі,\nтож поводьтеся з нею обережно!"
+  },
+  "report_vc_list_vc_textT_11_11": {
+    "en": "Already one of the fastest fish in the sea,\r\nnow the tuna is determined to prove that\r\nit can hold its own above the waves too!",
+    "ua": "Тунець і так одна з найшвидших риб,\nа тепер він вирішив довести,\nщо й на суші не пасе задніх!"
+  },
+  "report_vc_list_vc_textT_12_12": {
+    "en": "Ah, sushi. Truly the fastest of foods.\r\n...What? Sushi ISN'T known for its\r\nracing prowess? Surely you jest!",
+    "ua": "Ах, суші. Найшвидша їжа.\n…Що? Суші не славляться\nгоночним хистом? Та ну!"
+  },
+  "report_vc_list_vc_textT_13_13": {
+    "en": "With jet engines designed to escape the\r\nEarth's gravity, speeding around a mere\r\nracetrack should be easy for this beauty.",
+    "ua": "Із реактивними двигунами, створеними\nдолати земне тяжіння, гасати трасою\nцій красуні буде легко."
+  },
+  "report_vc_list_vc_textT_14_14": {
+    "en": "With its engine driving all four\r\nheavy-duty wheels, this trusty car\r\ncan handle the bumpiest of roads.",
+    "ua": "Мотор крутить усі чотири міцні\nколеса, тож ця надійна машина\nвпорається з найгіршою дорогою."
+  },
+  "report_vc_list_vc_textT_15_15": {
+    "en": "With its low ground clearance and ultra-\r\naerodynamic body, this car is specialised\r\nfor going straight forward, really fast!",
+    "ua": "Із низьким кліренсом і надобтічним\nкорпусом ця машина створена,\nщоб їхати прямо й дуже швидко!"
+  },
+  "report_vc_list_vc_textT_16_16": {
+    "en": "Perfect for a racer who's all about justice.\r\nThough it might be tricky to win races and\r\nprotect the innocent at the same time...",
+    "ua": "Для гонщика, який понад усе цінує\nсправедливість. Хоч вигравати й захищати\nневинних водночас буває складно…"
+  },
+  "report_vc_list_vc_textT_17_17": {
+    "en": "For when you want to hop around the\r\ncourse with a spring in your step!\r\nAnd maybe nibble on a few carrots.",
+    "ua": "Для тих, хто хоче стрибати трасою\nз підскоком! І, може, погризти\nморквинку."
+  },
+  "report_vc_list_vc_textT_18_18": {
+    "en": "This nimble little blighter is full of energy\r\nand ready to run rings around the\r\ncompetition. Great for dramatic drifting.",
+    "ua": "Цей спритний малюк повний енергії\nй готовий обставити всіх суперників.\nЧудовий для ефектних заносів."
+  },
+  "report_vc_list_vc_textT_19_19": {
+    "en": "Is it just me, or does this truck always\r\nlook like it's in a bad temper? Pretty\r\nuseful for intimidating the opposition.",
+    "ua": "Чи мені здається, чи ця вантажівка\nзавжди сердита? Зручно, щоб\nзалякувати суперників."
+  },
+  "report_vc_list_vc_textT_20_20": {
+    "en": "Named for its bushy moustache and\r\nimpeccable sense of style, this car\r\nwill never let you down.",
+    "ua": "Названа за пишні вуса й бездоганний\nстиль, ця машина ніколи\nвас не підведе."
+  },
+  "report_vc_list_vc_textT_21_21": {
+    "en": "This car is clearly stuck in the worst day\r\nof its life, every single day. Your rivals\r\nmight go easy on you out of sympathy.",
+    "ua": "У цієї машини щодня найгірший день\nу житті. Може, суперники вас\nпожаліють."
+  },
+  "report_vc_list_vc_textT_22_22": {
+    "en": "Actually the Long Face's brother, but\r\nwith much more of a go-getter attitude.\r\nNo, I didn't know cars had family either.",
+    "ua": "Брат Сумної пики, але значно\nзавзятіший. Ні, я теж не знав,\nщо в машин бувають родини."
+  },
+  "report_vc_list_vc_textT_23_23": {
+    "en": "From a distance, it looks like this car's\r\ndriving in reverse. Look a little closer,\r\nand you'll probably just be very confused.",
+    "ua": "Здалеку здається, що ця машина їде\nзадом. Придивишся — і, мабуть,\nзаплутаєшся ще більше."
+  },
+  "report_guide_titleT": {
+    "en": "Control Settings",
+    "ua": "Керування"
+  },
+  "report_guide_choice2_textT": {
+    "en": "You can change which button\r\nis used to accelerate.\r\n[System:Color name=\"mgCar_yellow\" ]Current setting: [0][/System:Color]",
+    "ua": "Можна змінити кнопку\nприскорення.\n[System:Color name=\"mgCar_yellow\" ]Зараз: [0][/System:Color]"
+  },
+  "report_guide_text_button_00": {
+    "en": "Accelerate with ",
+    "ua": "Газ кнопкою "
+  },
+  "report_guide_text_button_01": {
+    "en": "Accelerate with ",
+    "ua": "Газ кнопкою "
+  },
+  "report_guide_choice2_textT_00": {
+    "en": "Setting changed to\r\n[System:Color name=\"mgCar_yellow\" ]accelerate with [0][/System:Color]!",
+    "ua": "Тепер газ —\n[System:Color name=\"mgCar_yellow\" ]кнопкою [0][/System:Color]!"
+  },
+  "reward_mii_list_capT": {
+    "en": "Competitors",
+    "ua": "Суперники"
+  },
+  "reward_infoT": {
+    "en": "Touch a racer's name\r\nto see their car!",
+    "ua": "Торкніться імені гонщика,\nщоб побачити машинку!"
+  },
+  "staff_credit_name_000": {
+    "en": "Tomoya Sugiyama",
+    "ua": ""
+  },
+  "staff_credit_name_001": {
+    "en": "Mari Nishizaka",
+    "ua": ""
+  },
+  "staff_credit_name_002": {
+    "en": "Sulki Kim",
+    "ua": ""
+  },
+  "staff_credit_name_003": {
+    "en": "Tatsushi Watanabe",
+    "ua": ""
+  },
+  "staff_credit_name_004": {
+    "en": "Daisuke Kobayashi",
+    "ua": ""
+  },
+  "staff_credit_name_005": {
+    "en": "Takuma Miura",
+    "ua": ""
+  },
+  "staff_credit_name_006": {
+    "en": "Hiroki Komura",
+    "ua": ""
+  },
+  "staff_credit_name_007": {
+    "en": "Tatsunori Wada",
+    "ua": ""
+  },
+  "staff_credit_name_008": {
+    "en": "Erika Tsukahara",
+    "ua": ""
+  },
+  "staff_credit_name_009": {
+    "en": "Yui Namizaki",
+    "ua": ""
+  },
+  "staff_credit_name_010": {
+    "en": "Makoto Kawatori",
+    "ua": ""
+  },
+  "staff_credit_name_011": {
+    "en": "Miho Takahashi",
+    "ua": ""
+  },
+  "staff_credit_name_012": {
+    "en": "Masashi Tsuboyama",
+    "ua": ""
+  },
+  "staff_credit_name_013": {
+    "en": "Tadanori Tsukawaki",
+    "ua": ""
+  },
+  "staff_credit_name_014": {
+    "en": "Yoshiaki Sano",
+    "ua": ""
+  },
+  "staff_credit_name_015": {
+    "en": "Takeharu Umada",
+    "ua": ""
+  },
+  "staff_credit_name_016": {
+    "en": "Akihiro Juichiya",
+    "ua": ""
+  },
+  "staff_credit_name_017": {
+    "en": "Misaki Asada",
+    "ua": ""
+  },
+  "staff_credit_name_018": {
+    "en": "Tomoya Tomita",
+    "ua": ""
+  },
+  "staff_credit_name_019": {
+    "en": "Etsunobu Ebisu",
+    "ua": ""
+  },
+  "staff_credit_name_100": {
+    "en": "Kouichi Kawamoto",
+    "ua": ""
+  },
+  "staff_credit_name_101": {
+    "en": "Toyokazu Nonaka",
+    "ua": ""
+  },
+  "staff_credit_name_102": {
+    "en": "Ryusuke Niitani",
+    "ua": ""
+  },
+  "staff_credit_name_103": {
+    "en": "Yoshiaki Onishi",
+    "ua": ""
+  },
+  "staff_credit_name_104": {
+    "en": "Masahiro Shiotani",
+    "ua": ""
+  },
+  "staff_credit_name_105": {
+    "en": "Kazuyuki Gofuku",
+    "ua": ""
+  },
+  "staff_credit_name_106": {
+    "en": "Kenji Yamamoto",
+    "ua": ""
+  },
+  "staff_credit_name_107": {
+    "en": "Minako Hamano",
+    "ua": ""
+  },
+  "staff_credit_name_108": {
+    "en": "Yuto Sasaki",
+    "ua": ""
+  },
+  "staff_credit_name_109": {
+    "en": "Shingo Okamoto",
+    "ua": ""
+  },
+  "staff_credit_name_110": {
+    "en": "Tomohiro Umeda",
+    "ua": ""
+  },
+  "staff_credit_name_111": {
+    "en": "Takehiro Oyama",
+    "ua": ""
+  },
+  "staff_credit_name_112": {
+    "en": "Manabu Matumoto",
+    "ua": ""
+  },
+  "staff_credit_name_113": {
+    "en": "Kanta Yokota",
+    "ua": ""
+  },
+  "staff_credit_name_114": {
+    "en": "Masaki Mori",
+    "ua": ""
+  },
+  "staff_credit_name_115": {
+    "en": "Mario Club",
+    "ua": ""
+  },
+  "staff_credit_name_116": {
+    "en": "NOA Product Testing",
+    "ua": ""
+  },
+  "staff_credit_name_117": {
+    "en": "NOE Quality Assurance",
+    "ua": ""
+  },
+  "staff_credit_name_118": {
+    "en": "NOE Localisation",
+    "ua": ""
+  },
+  "staff_credit_name_119": {
+    "en": "NOA Localization",
+    "ua": ""
+  },
+  "staff_credit_name_120": {
+    "en": "Shinya Takahashi",
+    "ua": ""
+  },
+  "staff_credit_name_121": {
+    "en": "Tatsumi Kimishima",
+    "ua": ""
+  },
+  "staff_credit_title_000": {
+    "en": "Director",
+    "ua": "Режисер"
+  },
+  "staff_credit_title_001": {
+    "en": "Planning Director",
+    "ua": "Керівник планування"
+  },
+  "staff_credit_title_002": {
+    "en": "Planning",
+    "ua": "Планування"
+  },
+  "staff_credit_title_003": {
+    "en": "Programming Director",
+    "ua": "Керівник програмування"
+  },
+  "staff_credit_title_004": {
+    "en": "Programming",
+    "ua": "Програмування"
+  },
+  "staff_credit_title_005": {
+    "en": "Art Director",
+    "ua": "Арт-директор"
+  },
+  "staff_credit_title_006": {
+    "en": "Graphic Design",
+    "ua": "Графічний дизайн"
+  },
+  "staff_credit_title_007": {
+    "en": "Technical Design",
+    "ua": "Технічний дизайн"
+  },
+  "staff_credit_title_008": {
+    "en": "Music & Sound Effects",
+    "ua": "Музика й звукові ефекти"
+  },
+  "staff_credit_title_009": {
+    "en": "Producer",
+    "ua": "Продюсер"
+  },
+  "staff_credit_title_100": {
+    "en": "Producers",
+    "ua": "Продюсери"
+  },
+  "staff_credit_title_101": {
+    "en": "Associate Producers",
+    "ua": "Асоційовані продюсери"
+  },
+  "staff_credit_title_102": {
+    "en": "Project Management",
+    "ua": "Керування проєктом"
+  },
+  "staff_credit_title_103": {
+    "en": "Sound Director",
+    "ua": "Звукорежисер"
+  },
+  "staff_credit_title_104": {
+    "en": "Sound Coordination",
+    "ua": "Координація звуку"
+  },
+  "staff_credit_title_105": {
+    "en": "Technical Support",
+    "ua": "Технічна підтримка"
+  },
+  "staff_credit_title_106": {
+    "en": "Testing",
+    "ua": "Тестування"
+  },
+  "staff_credit_title_107": {
+    "en": "European Localisation",
+    "ua": "Європейська локалізація"
+  },
+  "staff_credit_title_108": {
+    "en": "North American Localization",
+    "ua": "Північноамериканська локалізація"
+  },
+  "staff_credit_title_109": {
+    "en": "General Producer",
+    "ua": "Генеральний продюсер"
+  },
+  "staff_credit_title_110": {
+    "en": "Executive Producer",
+    "ua": "Виконавчий продюсер"
+  },
+  "staff_credit_top_000": {
+    "en": "Developer\r\nGood-Feel Co., Ltd.",
+    "ua": "Розробник\nGood-Feel Co., Ltd."
+  },
+  "staff_credit_top_001": {
+    "en": "Nintendo",
+    "ua": "Nintendo"
+  },
+  "staff_credit_top_002": {
+    "en": "STAFF CREDITS",
+    "ua": "ТИТРИ"
+  },
+  "staff_credit_tail_000": {
+    "en": "Nintendo and Good-Feel are the authors of\r\nthis software for the purpose of copyright. \r\nAll rights reserved.\r\n© 2016 Nintendo.",
+    "ua": "Nintendo і Good-Feel є авторами цієї\nпрограми з погляду авторського права.\nУсі права захищено.\n© 2016 Nintendo."
+  },
+  "staff_credit_pressT": {
+    "en": "PRESS ",
+    "ua": "НАТИСНІТЬ "
+  },
+  "saveload_wait_messageT": {
+    "en": "Loading... Please do not turn off the power.",
+    "ua": "Завантаження… Не вимикайте живлення."
+  }
+}

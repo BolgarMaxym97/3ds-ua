@@ -1,0 +1,1026 @@
+{
+  "logoT_00": {
+    "en": "StreetPass Quest",
+    "ua": "Порятунок Mii"
+  },
+  "logo_sdwT_00": {
+    "en": "StreetPass Quest",
+    "ua": "Порятунок Mii"
+  },
+  "logoT_01": {
+    "en": "StreetPass Quest ",
+    "ua": "Порятунок Mii "
+  },
+  "logo_sdwT_01": {
+    "en": "StreetPass Quest 　",
+    "ua": "Порятунок Mii"
+  },
+  "pressT": {
+    "en": "PRESS ",
+    "ua": "НАТИСНІТЬ "
+  },
+  "beltT": {
+    "en": "Gather heroes, fight monsters and\r\ncollect accessories for your Mii!",
+    "ua": "Збирайте героїв, бийте почвар\nі здобувайте аксесуари для Mii!"
+  },
+  "beltT_01": {
+    "en": "Try starting your quest anew to\r\ndiscover new accessories!",
+    "ua": "Почніть квест заново, щоб\nзнайти нові аксесуари!"
+  },
+  "beltT_02": {
+    "en": "Fight the monsters again and collect all\r\nthe original StreetPass Quest accessories!",
+    "ua": "Знову бийте почвар і зберіть усі\nаксесуари першого «Порятунку Mii»!"
+  },
+  "beltT_03": {
+    "en": "Delve deeper into the quest and\r\nseek out undiscovered accessories!",
+    "ua": "Заглибтеся в квест і шукайте\nще не знайдені аксесуари!"
+  },
+  "menu_00_txt": {
+    "en": "Venture Forth",
+    "ua": "У путь"
+  },
+  "menu_00_edge": {
+    "en": "Venture Forth",
+    "ua": "У путь"
+  },
+  "menu_01_txt": {
+    "en": " Hire a Hero",
+    "ua": " Найняти героя"
+  },
+  "menu_01_edge": {
+    "en": " Hire a Hero",
+    "ua": " Найняти героя"
+  },
+  "menu_02_txt": {
+    "en": "Back",
+    "ua": "Назад"
+  },
+  "menu_02_edge": {
+    "en": "Back",
+    "ua": "Назад"
+  },
+  "menu_10_txt": {
+    "en": "Venture Forth",
+    "ua": "У путь"
+  },
+  "menu_10_edge": {
+    "en": "Venture Forth",
+    "ua": "У путь"
+  },
+  "menu_11_txt": {
+    "en": " Hire Old Allies",
+    "ua": " Найняти соратників"
+  },
+  "menu_11_edge": {
+    "en": " Hire Old Allies",
+    "ua": " Найняти соратників"
+  },
+  "menu_12_txt": {
+    "en": " Hire Wanderers",
+    "ua": " Найняти мандрівників"
+  },
+  "menu_12_edge": {
+    "en": " Hire Wanderers",
+    "ua": " Найняти мандрівників"
+  },
+  "menu_13_txt": {
+    "en": "Begin Quest",
+    "ua": "Почати пригоду"
+  },
+  "menu_13_edge": {
+    "en": "Begin Quest",
+    "ua": "Почати пригоду"
+  },
+  "menu_14_txt": {
+    "en": "Begin Secret Quest",
+    "ua": "Почати таємну пригоду"
+  },
+  "menu_14_edge": {
+    "en": "Begin Secret Quest",
+    "ua": "Почати таємну пригоду"
+  },
+  "dlg_choice_begin_u": {
+    "en": "Start",
+    "ua": "Почати"
+  },
+  "dlg_legend2_clear_05_u": {
+    "en": "The legend of valiant heroes who\r\nfought to save the royal family!",
+    "ua": "Легенда про відважних героїв,\nякі рятували королівську сім'ю!"
+  },
+  "dlg_legend2_clear_06_u": {
+    "en": "A longer, more challenging quest\r\nfor veterans of the first quest!",
+    "ua": "Довша й складніша пригода\nдля тих, хто пройшов першу!"
+  },
+  "dlg_legend2_01_u": {
+    "en": "Welcome to StreetPass Quest!",
+    "ua": "Вітаємо в «Порятунку Mii»!"
+  },
+  "dlg_legend2_02_u": {
+    "en": "In this game, you collect\r\nheroes to fight for you.",
+    "ua": "У цій грі ви збираєте героїв,\nякі б'ються за вас."
+  },
+  "dlg_legend2_03_u": {
+    "en": "Are you ready to begin?",
+    "ua": "Готові почати?"
+  },
+  "dlg_legend2_04_u": {
+    "en": "Alright then...\r\nMaybe later.",
+    "ua": "Гаразд…\nМоже, пізніше."
+  },
+  "dlg_legend2_05_u": {
+    "en": "Huzzah!\r\nLet our story begin!",
+    "ua": "Ура!\nХай почнеться наша історія!"
+  },
+  "dlg_legend_op_select_00": {
+    "en": "Do you want to watch\r\nhow the story begins?",
+    "ua": "Подивитися, як\nпочинається історія?"
+  },
+  "dlg_legend_op_select_00_Y": {
+    "en": "Of course!",
+    "ua": "Звісно!"
+  },
+  "dlg_legend_op_select_00_N": {
+    "en": "No thanks.",
+    "ua": "Ні, дякую."
+  },
+  "dlg_choice_title": {
+    "en": "StreetPass Quest",
+    "ua": "Порятунок Mii"
+  },
+  "dlg_legend2_11_u": {
+    "en": "Welcome to StreetPass Quest II!",
+    "ua": "Вітаємо в «Порятунку Mii II»!"
+  },
+  "dlg_legend2_12_u": {
+    "en": "In this game, the legend started\r\nin StreetPass Quest continues\r\nfrom where it left off.",
+    "ua": "У цій грі легенда, почата\nв «Порятунку Mii», триває\nз того самого місця."
+  },
+  "dlg_legend2_13_u": {
+    "en": "The ruler of the land has been\r\nrescued from the monsters...",
+    "ua": "Володаря краю врятовано\nвід монстрів…"
+  },
+  "dlg_legend2_14_u": {
+    "en": "But now, our star-crossed\r\nsovereign is about to fall\r\ninto even graver peril.",
+    "ua": "Та тепер нашому бідолашному\nволодареві загрожує ще\nстрашніша небезпека."
+  },
+  "dlg_legend2_15_u": {
+    "en": "Let's see how the old\r\nmonarch's getting on.",
+    "ua": "Погляньмо, як там\nстарий монарх."
+  },
+  "dlg_legend2_16_u": {
+    "en": "Time to venture forth\r\ninto a new adventure!",
+    "ua": "Час вирушати\nу нову пригоду!"
+  },
+  "dlg_choice_title_2": {
+    "en": "StreetPass Quest II",
+    "ua": "Порятунок Mii II"
+  },
+  "dlg_choice_legend_start_u": {
+    "en": "Yes!",
+    "ua": "Так!"
+  },
+  "dlg_choice_legend_not_start_u": {
+    "en": "Maybe later...",
+    "ua": "Може, пізніше…"
+  },
+  "menu_03_txt": {
+    "en": "Watch Ending",
+    "ua": "Глянути фінал"
+  },
+  "menu_03_edge": {
+    "en": "Watch Ending",
+    "ua": "Глянути фінал"
+  },
+  "menu_04_txt": {
+    "en": "Restart StreetPass Quest",
+    "ua": "Почати гру заново"
+  },
+  "menu_04_edge": {
+    "en": "Restart StreetPass Quest",
+    "ua": "Почати гру заново"
+  },
+  "menu_16_txt": {
+    "en": "Restart StreetPass Quest II",
+    "ua": "«Порятунок Mii II» спочатку"
+  },
+  "menu_16_edge": {
+    "en": "Restart StreetPass Quest II",
+    "ua": "«Порятунок Mii II» спочатку"
+  },
+  "dlg_legend2_clear_title_00": {
+    "en": "Restart StreetPass Quest",
+    "ua": "Почати гру заново"
+  },
+  "dlg_legend2_clear_title_01": {
+    "en": "Restart StreetPass Quest II",
+    "ua": "Почати «Порятунок Mii II» знову"
+  },
+  "dlg_legend2_clear_01_u": {
+    "en": "Would you like to restart\r\nStreetPass Quest?",
+    "ua": "Почати «Порятунок Mii»\nзаново?"
+  },
+  "dlg_legend2_clear_07_u": {
+    "en": "This will restart your quest. Are\r\nyou sure you want to continue?",
+    "ua": "Пригода почнеться заново.\nСправді продовжити?"
+  },
+  "dlg_choice_legend_restart_u": {
+    "en": "Restart!",
+    "ua": "Заново!"
+  },
+  "dlg_choice_legend_restart3_u": {
+    "en": "Continue!",
+    "ua": "Далі!"
+  },
+  "dlg_choice_legend_not_restart_u": {
+    "en": "Don't Restart",
+    "ua": "Не починати"
+  },
+  "dlg_legend2_clear_04_u": {
+    "en": "This will mean starting over.\r\nIs that OK?",
+    "ua": "Це означає почати спочатку.\nЗгода?"
+  },
+  "dlg_choice_legend_restart2_u": {
+    "en": "Start over!",
+    "ua": "Спочатку!"
+  },
+  "dlg_choice_legend_not_restart2_u": {
+    "en": "Never mind...",
+    "ua": "Не варто…"
+  },
+  "dlg_legend2_clear_02_u": {
+    "en": "Excellent!",
+    "ua": "Чудово!"
+  },
+  "dlg_legend2_clear_03_u": {
+    "en": "Well, I suppose I'd better\r\nget kidnapped again...",
+    "ua": "Що ж, доведеться мене\nзнову викрасти…"
+  },
+  "dlg_legend2_clear_08_u": {
+    "en": "Well, I suppose we'd better\r\nget kidnapped again...",
+    "ua": "Що ж, доведеться нас\nзнову викрасти…"
+  },
+  "legend_enemy_yellow": {
+    "en": "ghost",
+    "ua": "привид"
+  },
+  "legend_enemy_blue": {
+    "en": "blue ghost",
+    "ua": "синій привид"
+  },
+  "legend_enemy_blood": {
+    "en": "blood ghost",
+    "ua": "кривавий привид"
+  },
+  "legend_enemy_armor": {
+    "en": "armoured ghost",
+    "ua": "латний привид"
+  },
+  "legend_enemy_demon": {
+    "en": "armoured demon",
+    "ua": "латний демон"
+  },
+  "legend_enemy_satan": {
+    "en": "armoured fiend",
+    "ua": "латний лиходій"
+  },
+  "legend_enemy_last": {
+    "en": "Ultimate Ghost",
+    "ua": "Найстрашніший привид"
+  },
+  "legend_enemy_slim01": {
+    "en": "yellow slime",
+    "ua": "жовтий слиз"
+  },
+  "legend_enemy_slim02": {
+    "en": "blue slime",
+    "ua": "синій слиз"
+  },
+  "legend_enemy_slim03": {
+    "en": "pink slime",
+    "ua": "рожевий слиз"
+  },
+  "legend_enemy_slim04": {
+    "en": "green slime",
+    "ua": "зелений слиз"
+  },
+  "legend_enemy_mummy01": {
+    "en": "wandering mummy",
+    "ua": "блукальна мумія"
+  },
+  "legend_enemy_mummy02": {
+    "en": "roaming mummy",
+    "ua": "мандрівна мумія"
+  },
+  "legend_enemy_mummy03": {
+    "en": "marauding mummy",
+    "ua": "хижа мумія"
+  },
+  "legend_enemy_mummy04": {
+    "en": "rampaging mummy",
+    "ua": "шалена мумія"
+  },
+  "legend_enemy_devil": {
+    "en": "armoured archfiend",
+    "ua": "латний архілиходій"
+  },
+  "legend_enemy_golem01": {
+    "en": "granite golem",
+    "ua": "гранітний голем"
+  },
+  "legend_enemy_golem02": {
+    "en": "iron golem",
+    "ua": "залізний голем"
+  },
+  "legend_enemy_golem03": {
+    "en": "golden golem",
+    "ua": "золотий голем"
+  },
+  "legend_enemy_golem04": {
+    "en": "diamond golem",
+    "ua": "діамантовий голем"
+  },
+  "legend_enemy_death01": {
+    "en": "reaper cadet",
+    "ua": "жнець-новак"
+  },
+  "legend_enemy_death02": {
+    "en": "reaper captain",
+    "ua": "жнець-капітан"
+  },
+  "legend_enemy_death03": {
+    "en": "reaper commander",
+    "ua": "жнець-командир"
+  },
+  "legend_enemy_death04": {
+    "en": "reaper general",
+    "ua": "жнець-генерал"
+  },
+  "legend_enemy_king01": {
+    "en": "Dark Lord",
+    "ua": "Темний володар"
+  },
+  "legend_enemy_king02": {
+    "en": "Dark Emperor",
+    "ua": "Темний імператор"
+  },
+  "legend_barrier_fire": {
+    "en": "fiery room",
+    "ua": "вогняна кімната"
+  },
+  "legend_barrier_ice": {
+    "en": "icy room",
+    "ua": "крижана кімната"
+  },
+  "legend_barrier_poison": {
+    "en": "poison room",
+    "ua": "отруйна кімната"
+  },
+  "legend_dark_room": {
+    "en": "dark room",
+    "ua": "темна кімната"
+  },
+  "legend_bright_room": {
+    "en": "dazzling room",
+    "ua": "сліпуча кімната"
+  },
+  "legend2_map_01": {
+    "en": "Fort of Summoning - Entrance",
+    "ua": "Форт Прикликання — вхід"
+  },
+  "legend2_map_02": {
+    "en": "Fort of Summoning - B1F",
+    "ua": "Форт Прикликання — 1-й підвал"
+  },
+  "legend2_map_03": {
+    "en": "Fort of Summoning - B2F",
+    "ua": "Форт Прикликання — 2-й підвал"
+  },
+  "legend2_map_04": {
+    "en": "Gloomy Grotto - Entrance",
+    "ua": "Похмурий грот — вхід"
+  },
+  "legend2_map_05": {
+    "en": "Gloomy Grotto - West",
+    "ua": "Похмурий грот — захід"
+  },
+  "legend2_map_06": {
+    "en": "Gloomy Grotto - East",
+    "ua": "Похмурий грот — схід"
+  },
+  "legend2_map_07": {
+    "en": "Gloomy Grotto - Exit",
+    "ua": "Похмурий грот — вихід"
+  },
+  "legend2_map_08": {
+    "en": "Mirage Tower - Entrance",
+    "ua": "Вежа марева — вхід"
+  },
+  "legend2_map_09": {
+    "en": "Mirage Tower - Ground",
+    "ua": "Вежа марева — підніжжя"
+  },
+  "legend2_map_10": {
+    "en": "Mirage Tower - 1F",
+    "ua": "Вежа марева — 1-й поверх"
+  },
+  "legend2_map_11": {
+    "en": "Mirage Tower - 2F",
+    "ua": "Вежа марева — 2-й поверх"
+  },
+  "legend2_map_12": {
+    "en": "Mirage Tower - 3F",
+    "ua": "Вежа марева — 3-й поверх"
+  },
+  "legend2_map_13": {
+    "en": "Mirage Tower - Summit",
+    "ua": "Вежа марева — вершина"
+  },
+  "legend2_map_14": {
+    "en": "Plains of Adventure - Entrance",
+    "ua": "Рівнини пригод — вхід"
+  },
+  "legend2_map_15": {
+    "en": "Plains of Adventure - Exit",
+    "ua": "Рівнини пригод — вихід"
+  },
+  "legend2_map_16": {
+    "en": "Bewitching Bog - West",
+    "ua": "Чарівне болото — захід"
+  },
+  "legend2_map_17": {
+    "en": "Bewitching Bog - East",
+    "ua": "Чарівне болото — схід"
+  },
+  "legend2_map_18": {
+    "en": "Merciless Mountain - West",
+    "ua": "Безжальна гора — захід"
+  },
+  "legend2_map_19": {
+    "en": "Merciless Mountain - East",
+    "ua": "Безжальна гора — схід"
+  },
+  "legend2_map_20": {
+    "en": "Forest of Fright - Entrance",
+    "ua": "Ліс жаху — вхід"
+  },
+  "legend2_map_21": {
+    "en": "Forest of Fright - Exit",
+    "ua": "Ліс жаху — вихід"
+  },
+  "legend2_map_22": {
+    "en": "Shrine of Shadows - West",
+    "ua": "Святилище тіней — захід"
+  },
+  "legend2_map_23": {
+    "en": "Shrine of Shadows - East",
+    "ua": "Святилище тіней — схід"
+  },
+  "legend2_map_24": {
+    "en": "Ransacked Ruins - West",
+    "ua": "Сплюндровані руїни — захід"
+  },
+  "legend2_map_25": {
+    "en": "Ransacked Ruins - East",
+    "ua": "Сплюндровані руїни — схід"
+  },
+  "legend2_map_26": {
+    "en": "Restless Rise - North",
+    "ua": "Неспокійний схил — північ"
+  },
+  "legend2_map_27": {
+    "en": "Restless Rise - South",
+    "ua": "Неспокійний схил — південь"
+  },
+  "legend2_map_28": {
+    "en": "Dolorous Deepwood - West",
+    "ua": "Скорботний праліс — захід"
+  },
+  "legend2_map_29": {
+    "en": "Dolorous Deepwood - North",
+    "ua": "Скорботний праліс — північ"
+  },
+  "legend2_map_30": {
+    "en": "Dolorous Deepwood - South",
+    "ua": "Скорботний праліс — пд."
+  },
+  "legend2_map_31": {
+    "en": "Dolorous Deepwood - East",
+    "ua": "Скорботний праліс — схід"
+  },
+  "legend2_map_32": {
+    "en": "Swamp of Sacrifice",
+    "ua": "Драговина жертв"
+  },
+  "legend2_map_33": {
+    "en": "Diabolical Altar - Front",
+    "ua": "Диявольський вівтар — перед"
+  },
+  "legend2_map_34": {
+    "en": "Diabolical Altar - West",
+    "ua": "Диявольський вівтар — захід"
+  },
+  "legend2_map_35": {
+    "en": "Diabolical Altar - East",
+    "ua": "Диявольський вівтар — схід"
+  },
+  "legend2_map_36": {
+    "en": "Mount Malice - West",
+    "ua": "Гора злоби — захід"
+  },
+  "legend2_map_37": {
+    "en": "Mount Malice - East",
+    "ua": "Гора злоби — схід"
+  },
+  "legend2_map_38": {
+    "en": "Forest of Sorrow - Entrance",
+    "ua": "Ліс печалі — вхід"
+  },
+  "legend2_map_39": {
+    "en": "Forest of Sorrow - Exit",
+    "ua": "Ліс печалі — вихід"
+  },
+  "legend2_map_40": {
+    "en": "Shrine of Judgement",
+    "ua": "Святилище суду"
+  },
+  "legend2_map_41": {
+    "en": "Perilous Peak - West",
+    "ua": "Небезпечна вершина — захід"
+  },
+  "legend2_map_42": {
+    "en": "Perilous Peak - East",
+    "ua": "Небезпечна вершина — схід"
+  },
+  "legend2_map_43": {
+    "en": "Ominous Shrine",
+    "ua": "Зловісне святилище"
+  },
+  "legend2_map_44": {
+    "en": "Sealed Passage",
+    "ua": "Запечатаний прохід"
+  },
+  "legend2_map_45": {
+    "en": "Castle of Darkness - Entrance",
+    "ua": "Замок пітьми — вхід"
+  },
+  "legend2_map_46": {
+    "en": "Castle of Darkness - Courtyard",
+    "ua": "Замок пітьми — двір"
+  },
+  "legend2_map_47": {
+    "en": "Castle of Darkness - Throne Room",
+    "ua": "Замок пітьми — тронна зала"
+  },
+  "legend2_map_48": {
+    "en": "Castle of Darkness - Roof",
+    "ua": "Замок пітьми — дах"
+  },
+  "legend2_map_49": {
+    "en": "Castle of Darkness - Sky Tower",
+    "ua": "Замок пітьми — небесна вежа"
+  },
+  "result_hero_u": {
+    "en": "Collected Heroes",
+    "ua": "Зібрано героїв"
+  },
+  "msg_legend2_lock01_u": {
+    "en": "Oh, the door's locked!",
+    "ua": "Ой, двері зачинено!"
+  },
+  "msg_legend2_lock02_u": {
+    "en": "Better find another way...",
+    "ua": "Треба шукати інший шлях…"
+  },
+  "msg_legend2_lock03_u": {
+    "en": "There's a fork in the path here.\r\nWhich way do you want to go?",
+    "ua": "Тут шлях розходиться.\nКуди ви підете?"
+  },
+  "result_all_u": {
+    "en": "Current Results",
+    "ua": "Проміжний результат"
+  },
+  "result_enemy_damage_u": {
+    "en": "Dealt [0]\r\ndamage.",
+    "ua": "Завдано шкоди:\n[0]."
+  },
+  "result_enemy_ko_u": {
+    "en": "Defeated!",
+    "ua": "Розбито!"
+  },
+  "result_enemy_no_damage_u": {
+    "en": "No damage.",
+    "ua": "Без шкоди."
+  },
+  "result_dark_room_u": {
+    "en": "Fled from the\r\ndark room.",
+    "ua": "Втеча з темної\nкімнати."
+  },
+  "result_dark_room_clear_u": {
+    "en": "Brought light to\r\nthe dark room.",
+    "ua": "Темну кімнату\nосвітлено."
+  },
+  "result_bright_room_u": {
+    "en": "Fled from the\r\ndazzling room.",
+    "ua": "Втеча зі сліпучої\nкімнати."
+  },
+  "result_bright_room_clear_u": {
+    "en": "Darkened the\r\ndazzling room.",
+    "ua": "Сліпучу кімнату\nзатемнено."
+  },
+  "result__barrier_fire_u": {
+    "en": "Fled from the\r\nfiery room.",
+    "ua": "Втеча з вогняної\nкімнати."
+  },
+  "result_barrier_fire_clear_u": {
+    "en": "Cooled the\r\nfiery room.",
+    "ua": "Вогняну кімнату\nохолоджено."
+  },
+  "result__barrier_ice_u": {
+    "en": "Fled from the\r\nicy room.",
+    "ua": "Втеча з крижаної\nкімнати."
+  },
+  "result_barrier_ice_clear_u": {
+    "en": "Warmed up the\r\nicy room.",
+    "ua": "Крижану кімнату\nзігріто."
+  },
+  "result__barrier_poison_u": {
+    "en": "Fled from the\r\npoison room.",
+    "ua": "Втеча з отруйної\nкімнати."
+  },
+  "result_barrier_poison_clear_u": {
+    "en": "Neutralised the\r\npoison room.",
+    "ua": "Отруйну кімнату\nзнешкоджено."
+  },
+  "legend_hero_name01_u": {
+    "en": "Sir [0]",
+    "ua": "Пан [0]"
+  },
+  "legend_hero_name01_f_u": {
+    "en": "Lady [0]",
+    "ua": "Пані [0]"
+  },
+  "legend_wander_hero_name01_u": {
+    "en": "Wanderer",
+    "ua": "Мандрівник"
+  },
+  "legend_hero_roll_u": {
+    "en": "Legendary Heroes",
+    "ua": "Легендарні герої"
+  },
+  "legend_total_hero_u": {
+    "en": "Total Heroes",
+    "ua": "Усього героїв"
+  },
+  "legend_end_u": {
+    "en": "THE END",
+    "ua": "КІНЕЦЬ"
+  },
+  "legend_hero_result_darkroom_u": {
+    "en": "Brought light to\r\nthe dark room",
+    "ua": "Темну кімнату\nосвітлено"
+  },
+  "legend_hero_result01_n_u": {
+    "en": "Defeated\r\n[0]",
+    "ua": "Подолано:\n[0]"
+  },
+  "legend_hero_result_bright_u": {
+    "en": "Darkened the\r\ndazzling room",
+    "ua": "Сліпучу кімнату\nзатемнено"
+  },
+  "legend_hero_result_barrier_fire_u": {
+    "en": "Cooled the\r\nfiery room",
+    "ua": "Вогняну кімнату\nохолоджено"
+  },
+  "legend_hero_result_barrier_ice_u": {
+    "en": "Warmed up the\r\nicy room",
+    "ua": "Крижану кімнату\nзігріто"
+  },
+  "legend_hero_result_barrier_poison_u": {
+    "en": "Neutralised the\r\npoison room",
+    "ua": "Отруйну кімнату\nзнешкоджено"
+  },
+  "dlg_legend2_full01_u": {
+    "en": "But you already have\r\nplenty of heroes.",
+    "ua": "Але у вас і так\nдоволі героїв."
+  },
+  "dlg_legend2_full02_u": {
+    "en": "First, could you please choose\r\nVenture Forth?",
+    "ua": "Спершу виберіть,\nбудь ласка, «У путь»."
+  },
+  "dlg_legend2_full03_u": {
+    "en": "First, could you please choose\r\nVenture Forth?",
+    "ua": "Спершу виберіть,\nбудь ласка, «У путь»."
+  },
+  "dlg_legend2_coin_guide01_u": {
+    "en": "You can hire wanderers\r\nto aid you in battle.",
+    "ua": "Можна найняти мандрівників,\nщоб допомагали в бою."
+  },
+  "dlg_legend2_coin_guide02_u": {
+    "en": "Would you like to use 2 Play Coins\r\nto hire a wanderer?",
+    "ua": "Найняти мандрівника\nза 2 монетки ?"
+  },
+  "dlg_legend2_coin_guide03_u": {
+    "en": "You can hire another\r\nif you want...",
+    "ua": "Можна найняти ще одного,\nякщо хочете…"
+  },
+  "coin_menu_00_txt": {
+    "en": "Use",
+    "ua": "Узяти"
+  },
+  "dlg_choice_employ_u": {
+    "en": "Hire",
+    "ua": "Найняти"
+  },
+  "coin_menu_01_txt": {
+    "en": "Never mind",
+    "ua": "Не варто"
+  },
+  "coin_00_txt": {
+    "en": " Hire",
+    "ua": " Найняти"
+  },
+  "dlg_legend2_short_coin_u": {
+    "en": "Sorry, but it seems like\r\nyou don't have enough\r\n Play Coins.",
+    "ua": "На жаль, схоже,\nу вас бракує\n ігрових монеток."
+  },
+  "cap_coin_exp_u": {
+    "en": "About  Play Coins",
+    "ua": "Про ігрові монетки "
+  },
+  "dlg_coin_exp_legend_00_u": {
+    "en": "What's that? You say you want\r\nto know how to use  Play Coins?",
+    "ua": "Що? Хочете дізнатися,\nяк витрачати  ігрові монетки?"
+  },
+  "dlg_choice_exp_coin_u": {
+    "en": "Tell me!",
+    "ua": "Розкажіть!"
+  },
+  "dlg_choice_not_exp_coin_u": {
+    "en": "No thanks",
+    "ua": "Не варто"
+  },
+  "dlg_coin_exp_legend_01_u": {
+    "en": " Play Coins are special coins.",
+    "ua": " Ігрові монетки — особливі\nмонетки."
+  },
+  "dlg_coin_exp_legend_02_u": {
+    "en": "You can use them in all kinds\r\nof different games.",
+    "ua": "Їх можна витрачати\nу різних іграх."
+  },
+  "dlg_coin_exp_03_u": {
+    "en": "Just put your system into\r\nSleep Mode, and take it with\r\nyou whenever you go for a walk.",
+    "ua": "Просто переведіть систему\nв режим сну й беріть її\nз собою на прогулянки."
+  },
+  "dlg_coin_exp_legend_04_u": {
+    "en": "Well, regardless of how many\r\n Play Coins you might get...",
+    "ua": "Хай скільки  ігрових монеток\nви здобудете…"
+  },
+  "dlg_coin_exp_legend_05_u": {
+    "en": "It's a good idea to carry\r\nyour system with you.",
+    "ua": "Варто носити систему\nз собою."
+  },
+  "msg_legend2_use_gamcoin_u": {
+    "en": "It's a level [0]\r\nwanderer!",
+    "ua": "Це мандрівник\nрівня [0]!"
+  },
+  "dlg_legend2_coin_guide04_u": {
+    "en": "OK then, now you just need to\r\nselect Venture Forth.",
+    "ua": "Гаразд, тепер лишилося\nвибрати «У путь»."
+  },
+  "dlg_legend2_coin_guide05_u": {
+    "en": "OK then, now you just need to\r\nselect Venture Forth.",
+    "ua": "Гаразд, тепер лишилося\nвибрати «У путь»."
+  },
+  "msg_legend2_use_gamcoin_past_u": {
+    "en": "It's [MII],\r\na level [LV] hero!",
+    "ua": "Це [MII],\nгерой рівня [LV]!"
+  },
+  "msg_legend2_use_gamcoin_past_f_u": {
+    "en": "It's [MII],\r\na level [LV] hero!",
+    "ua": "Це [MII],\nгероїня рівня [LV]!"
+  },
+  "dlg_legend2_coin_past01_u": {
+    "en": "You can use  Play Coins to hire\r\nup to three heroes met previously!",
+    "ua": "За  ігрові монетки можна\nнайняти\nдо трьох раніше зустрінутих\nгероїв!"
+  },
+  "dlg_legend2_coin_past02_u": {
+    "en": "There aren't any old allies in\r\nthe palace. Try to meet some\r\nheroes through StreetPass!",
+    "ua": "У палаці немає давніх\nсоратників. Шукайте героїв\nчерез StreetPass!"
+  },
+  "dlg_legend2_coin_past04_u": {
+    "en": "You don't have enough\r\n Play Coins.",
+    "ua": "Бракує ігрових\nмонеток ."
+  },
+  "dlg_legend2_coin_past07_u": {
+    "en": "Level",
+    "ua": "Рівень"
+  },
+  "dlg_legend2_coin_past08_u": {
+    "en": "Level [0]",
+    "ua": "Рівень [0]"
+  },
+  "dlg_legend2_coin_past05_u": {
+    "en": "[0] more allowed",
+    "ua": "Ще можна: [0]"
+  },
+  "dlg_legend2_full04_u": {
+    "en": "You have plenty of old allies now.",
+    "ua": "Давніх соратників у вас тепер\nдоволі."
+  },
+  "dlg_legend_full05_u": {
+    "en": "Select Venture Forth or\r\n Hire Wanderers instead!",
+    "ua": "Виберіть краще «У путь»\nабо « Найняти\nмандрівників»!"
+  },
+  "dlg_legend2_full05_u": {
+    "en": "Select Venture Forth or\r\n Hire Wanderers instead!",
+    "ua": "Виберіть краще «У путь»\nабо « Найняти\nмандрівників»!"
+  },
+  "dlg_legend2_ed1_01_u": {
+    "en": "Thank you for playing all the\r\nway to the end!",
+    "ua": "Дякуємо, що пройшли гру\nдо самого кінця!"
+  },
+  "dlg_legend2_ed1_02_u": {
+    "en": "This crown is a gift from\r\nyours truly.",
+    "ua": "Ця корона — подарунок\nвід мене особисто."
+  },
+  "dlg_legend2_ed1_03_u": {
+    "en": "But don't think your adventures\r\nend here! There are still more\r\naccessories to be found!",
+    "ua": "Та не думайте, що пригоди\nскінчилися! Ще є аксесуари,\nякі можна знайти!"
+  },
+  "dlg_legend2_ed1_04_u": {
+    "en": "Why not try starting over again?",
+    "ua": "Чому б не почати все заново?"
+  },
+  "dlg_legend2_ed2_01_u": {
+    "en": "Thank you so much for saving\r\nme again!",
+    "ua": "Красно дякую, що знову\nмене врятували!"
+  },
+  "dlg_legend2_ed2_02_u": {
+    "en": "I sort of just found this lying\r\naround, but here - take this\r\n[CAP].",
+    "ua": "Я оце знайшов це неподалік,\nтож тримайте —\n[CAP]."
+  },
+  "dlg_legend2_ed2_03_u": {
+    "en": "Congratulations!\r\nYou've collected all the original\r\nStreetPass Quest accessories!",
+    "ua": "Вітаємо!\nВи зібрали всі аксесуари\nпершого «Порятунку Mii»!"
+  },
+  "dlg_legend2_ed2_04_u": {
+    "en": "StreetPass Quest II has been\r\nunlocked! Head back to the game\r\nselection screen to check it out.",
+    "ua": "Відкрито «Порятунок Mii II»!\nПоверніться до вибору ігор,\nщоб глянути."
+  },
+  "dlg_legend2_ed2_05_u": {
+    "en": "In addition, you can now hire old allies\r\nin the original StreetPass Quest!",
+    "ua": "А ще тепер у першому «Порятунку Mii»\nможна наймати давніх соратників!"
+  },
+  "dlg_legend2_ed3_01_u": {
+    "en": "This is a gift from me.",
+    "ua": "Це подарунок від мене."
+  },
+  "dlg_legend2_ed3_02_u": {
+    "en": "Oh? A new path has appeared!",
+    "ua": "О? З'явився новий шлях!"
+  },
+  "dlg_legend2_ed3_03_u": {
+    "en": "Perhaps there's an accessory or\r\na place somewhere in this world\r\nthat you've overlooked.",
+    "ua": "Можливо, десь у цьому світі\nє аксесуар чи місце,\nяке ви проґавили."
+  },
+  "dlg_legend2_ed3_04_u": {
+    "en": "Why not start your quest anew?",
+    "ua": "Чому б не почати пригоду\nзаново?"
+  },
+  "dlg_legend2_ed3_05_u": {
+    "en": "The world is always\r\nopen to heroes!",
+    "ua": "Світ завжди відкритий\nдля героїв!"
+  },
+  "dlg_legend2_ed3_06_u": {
+    "en": "It looks like you've gathered all\r\nthe accessories in the world!",
+    "ua": "Схоже, ви зібрали всі\nаксесуари цього світу!"
+  },
+  "dlg_legend2_ed3_07_u": {
+    "en": "Well done! Please come back\r\nwhenever you like.",
+    "ua": "Молодці! Заходьте\nколи завгодно."
+  },
+  "dlg_legend__attention_00": {
+    "en": "If you quit, the heroes you've hired\r\nusing  Play Coins will disperse.\r\nAre you sure you want to quit?",
+    "ua": "Якщо вийти, герої, найняті\nза монетки , розійдуться.\nСправді вийти?"
+  },
+  "dlg_legend__attention_00_Y": {
+    "en": "Yes",
+    "ua": "Так"
+  },
+  "dlg_legend__attention_00_N": {
+    "en": "No",
+    "ua": "Ні"
+  },
+  "rabbit_hat_info": {
+    "en": " Show hats",
+    "ua": " Капелюхи"
+  },
+  "rabbit_hat_info_odd": {
+    "en": "Left: [0]",
+    "ua": "Лишилося: [0]"
+  },
+  "rabbit_hat_info_comp": {
+    "en": "All found!",
+    "ua": "Усе знайдено!"
+  },
+  "menu_rabbit_txt": {
+    "en": "Helper Hare on call? [System:Color name=\"white\" ][0][/System:Color]",
+    "ua": "Кролик-помічник? [System:Color name=\"white\" ][0][/System:Color]"
+  },
+  "menu_rabbit_edge": {
+    "en": "Helper Hare on call? [0]",
+    "ua": "Кролик-помічник? [0]"
+  },
+  "menu_rabbit_on": {
+    "en": "Yes",
+    "ua": "Так"
+  },
+  "menu_rabbit_off": {
+    "en": "No",
+    "ua": "Ні"
+  },
+  "dlg_rabbit_first_00": {
+    "en": "Please allow us a moment\r\nto introduce you to the mighty\r\nHelper Hare.",
+    "ua": "Дозвольте на хвилинку\nпредставити вам могутнього\nКролика-помічника."
+  },
+  "dlg_rabbit_first_01": {
+    "en": "Turn Helper Hare on?",
+    "ua": "Увімкнути Кролика-помічника?"
+  },
+  "dlg_rabbit_first_02": {
+    "en": "OK! Don't forget, you can change this\r\nsetting at any time!",
+    "ua": "Гаразд! Пам'ятайте: цей параметр\nможна будь-коли змінити!"
+  },
+  "dlg_choice_rabbit_first_00": {
+    "en": "Yes",
+    "ua": "Так"
+  },
+  "dlg_choice_rabbit_first_01": {
+    "en": "No",
+    "ua": "Ні"
+  },
+  "dlg_belt_rabbit_first_02": {
+    "en": "Helper Hare",
+    "ua": "Кролик-помічник"
+  },
+  "dlg_rabbit_first_00_00": {
+    "en": "This feature will occasionally summon a\r\nlong-eared friend to help you out of\r\ntight spots!",
+    "ua": "Іноді ця функція кликатиме вухатого\nдруга, що допоможе вам вибратися\nзі скрутного становища!"
+  },
+  "dlg_rabbit_first_00_01": {
+    "en": "For example, the bunny might destroy a\r\nshield protecting a ghost...",
+    "ua": "Наприклад, кролик може розбити\nщит, що захищає привида…"
+  },
+  "dlg_rabbit_first_00_02": {
+    "en": "...or show up before unpredictable\r\nthings like rooms booby-trapped with\r\nfire or ambushing mummies!",
+    "ua": "…або з'явитися перед несподіванками,\nяк-от кімнати з вогняними пастками\nчи мумії в засідці!"
+  },
+  "dlg_rabbit_first_00_03": {
+    "en": "Helper Hare will be on the scene before\r\nthese unseen dangers threaten your\r\nheroes.",
+    "ua": "Кролик-помічник прибуде раніше,\nніж ці невидимі небезпеки загрозять\nвашим героям."
+  },
+  "dlg_rabbit_first_00_04": {
+    "en": "It's a handy feature, a bit like hiring\r\nwandering heroes.",
+    "ua": "Зручна функція, трохи схожа\nна найм мандрівних героїв."
+  },
+  "dlg_rabbit_first_00_05": {
+    "en": "Helper Hare will only show up in rooms\r\nthat you've cleared before.",
+    "ua": "Кролик-помічник з'являється лише\nв кімнатах, які ви вже проходили."
+  },
+  "dlg_rabbit_first_00_06": {
+    "en": "But it'll really speed things up and get\r\nyou moving again!",
+    "ua": "Зате він добре все пришвидшить\nі допоможе рушити далі!"
+  },
+  "dlg_rabbit_first_00_07": {
+    "en": "And what's more...",
+    "ua": "І ще…"
+  },
+  "dlg_rabbit_first_00_08": {
+    "en": "...if there's still some hats\r\nout there for you to find...",
+    "ua": "…якщо десь іще є\nкапелюхи, які можна знайти…"
+  },
+  "dlg_rabbit_first_00_09": {
+    "en": "...you can press  on the map to find\r\nout about them!",
+    "ua": "…натисніть  на мапі,\nщоб дізнатися про них!"
+  },
+  "dlg_rabbit_comment_00": {
+    "en": "Would you like to see some information\r\nabout Helper Hare?",
+    "ua": "Показати інформацію\nпро Кролика-помічника?"
+  },
+  "dlg_choice_multi_wandering_00": {
+    "en": "Hire Max",
+    "ua": "Найняти макс."
+  },
+  "dlg_coin_guide_multi_wandering_00": {
+    "en": "Use [MULTI_COIN] Play Coins to\r\nhire [MULTI_COUNT] wanderers?",
+    "ua": "Найняти мандрівників ([MULTI_COUNT])\nза монетки [MULTI_COIN]?"
+  },
+  "dlg_choice_multi_wandering_01": {
+    "en": "Yes",
+    "ua": "Так"
+  },
+  "dlg_multi_wandering_00": {
+    "en": "You've hired [MULTI_COUNT]\r\nwanderers.",
+    "ua": "Найнято мандрівників:\n[MULTI_COUNT]."
+  }
+}

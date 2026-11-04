@@ -27,6 +27,11 @@ data/manifest.txt, one record per line, fields separated by single spaces:
     blob <sha256> <size> d <stored name> <base sha256>
     need <model> <folder tid> <title tid> <remaster>   the folder ships only if the installed
                                                        title is that build (AM version >> 10)
+    alt <folder tid> <target tid> <remaster>           the folder is the build for title <folder
+                                                       tid> - an update - installed as <target
+                                                       tid>'s folder in place of that one when
+                                                       the update is on the card in that build;
+                                                       dropped otherwise
     ns <remaster> <code sha256>                        the NS build the font patch is for
     nsdeps <OFF>:<LEN> ...                             hex IPS offsets of NS code the stub relies
                                                        on: a foreign NS patch touching them is
@@ -110,6 +115,21 @@ def requirements(sets: dict[tuple[str, str, str], dict[str, bytes]]) -> list[str
             if patch:
                 lines.add(f"need {model} {tid} {title} {patch['title_version']}")
     return sorted(lines)
+
+
+def alternatives() -> list[str]:
+    """`alt` lines: the titles built for an update rather than the title on the NAND.
+
+    The StreetPass Mii Plaza update runs under the base title's id, so Luma reads its files
+    from the base title's folder; the build writes them under the update's own id and the
+    app swaps that folder in when the update is installed - see `mii_plaza_update` in
+    tools/build.py.
+    """
+    return sorted(
+        f"alt {cfg['tids'][0]} {cfg['installs_as']} {cfg['title_remaster']}"
+        for cfg in TITLES.values()
+        if cfg.get("installs_as")
+    )
 
 
 def make_delta(old: bytes, new: bytes) -> bytes:
@@ -221,6 +241,7 @@ def main() -> None:
     lines = ["3DSUA-MANIFEST 1", f"version {args.version}"]
     lines += list(blobs.values())
     lines += requirements(sets)
+    lines += alternatives()
     lines.append(f"ns {build[1]['remaster']} {build[0]}")
     lines.append("nsdeps " + " ".join(f"{off:06X}:{size:X}" for off, size in ns_font.deps(build[1])))
     lines.append(f"fontpath {ns_font.FONT_SD_PATH}")

@@ -1,0 +1,1410 @@
+{
+  "choices_legend2_battle_sword_u": {
+    "en": "Sword",
+    "ua": "Меч"
+  },
+  "choices_legend2_battle_majic_u": {
+    "en": "Magic",
+    "ua": "Магія"
+  },
+  "choices_legend2_battle_after_u": {
+    "en": "Next!",
+    "ua": "Далі!"
+  },
+  "choices_legend2_battle_combi_02_u": {
+    "en": "Create Team",
+    "ua": "Створити загін"
+  },
+  "choices_legend2_battle_combi_03_u": {
+    "en": "Other Team",
+    "ua": "Інший загін"
+  },
+  "choices_legend2_battle_skill_u": {
+    "en": "Combo Blade",
+    "ua": "Серія ударів"
+  },
+  "choices_legend2_battle_skill_m_u": {
+    "en": "Combo Magic",
+    "ua": "Серія чарів"
+  },
+  "choices_legend2_battle_delivery_u": {
+    "en": " Get Potion",
+    "ua": " Узяти зілля"
+  },
+  "choices_legend2_item_barrier_u": {
+    "en": "Dispelling Draught",
+    "ua": "Відьмин відвар"
+  },
+  "choices_legend2_item_seal_u": {
+    "en": "Bottled Barrier",
+    "ua": "Бар'єр у пляшці"
+  },
+  "choices_legend2_item_rescue_u": {
+    "en": "Vial of Valour",
+    "ua": "Настій відваги"
+  },
+  "choices_legend2_item_powerup_u": {
+    "en": "Power Potion",
+    "ua": "Зілля сили"
+  },
+  "choices_legend2_item_back_u": {
+    "en": "Back",
+    "ua": "Назад"
+  },
+  "choices_legend2_item_order_u": {
+    "en": "Order",
+    "ua": "Замовити"
+  },
+  "choices_legend2_item_order_back_u": {
+    "en": "Don't Order",
+    "ua": "Не замовляти"
+  },
+  "msg_legend2_hero_how_u": {
+    "en": "What should this level [LV] hero\r\nnamed [MII1] do?",
+    "ua": "Що робитиме герой рівня [LV]\nна ім'я [MII1]?"
+  },
+  "msg_legend2_hero_how_f_u": {
+    "en": "What would you like this level [LV]\r\nhero named [MII1] to do?",
+    "ua": "Що робитиме героїня рівня [LV]\nна ім'я [MII1]?"
+  },
+  "msg_legend2_wander_hero_how_u": {
+    "en": "What would you like this level [LV]\r\nwanderer to do?",
+    "ua": "Що робитиме мандрівник\nрівня [LV]?"
+  },
+  "msg_legend2_magic_info_red_u": {
+    "en": "Red magic.\r\nAttacks with ferocious flames.",
+    "ua": "Червона магія.\nБ'є лютим полум'ям."
+  },
+  "msg_legend2_magic_info_red02_u": {
+    "en": "Red combo magic.\r\nAttack with a ferocious firestorm.",
+    "ua": "Червона спільна магія.\nБ'є лютою вогняною бурею."
+  },
+  "msg_legend2_magic_info_orange_u": {
+    "en": "Orange magic.\r\nInvigorates heroes.",
+    "ua": "Жовтогаряча магія.\nБадьорить героїв."
+  },
+  "msg_legend2_magic_info_orange02_u": {
+    "en": "Orange combo magic.\r\nGives heroes a big morale boost.",
+    "ua": "Жовтогаряча спільна магія.\nСильно піднімає дух героїв."
+  },
+  "msg_legend2_magic_info_yellow_u": {
+    "en": "Yellow magic.\r\nWhips up a mighty sandstorm.",
+    "ua": "Жовта магія.\nЗдіймає піщаний буревій."
+  },
+  "msg_legend2_magic_info_yellow02_u": {
+    "en": "Yellow combo magic.\r\nWhips up a terrifying sandstorm.",
+    "ua": "Жовта спільна магія.\nЗдіймає страхітливий буревій."
+  },
+  "msg_legend2_magic_info_yellowgreen_u": {
+    "en": "Light-green magic.\r\nPuts enemies to sleep.",
+    "ua": "Світло-зелена магія.\nПриспає ворогів."
+  },
+  "msg_legend2_magic_info_yellowgreen02_u": {
+    "en": "Light-green combo magic.\r\nPuts enemies into a deep sleep.",
+    "ua": "Світло-зелена спільна магія.\nЗанурює ворогів у глибокий сон."
+  },
+  "msg_legend2_magic_info_green_u": {
+    "en": "Green magic.\r\nStrengthens the next hero.",
+    "ua": "Зелена магія.\nЗміцнює наступного героя."
+  },
+  "msg_legend2_magic_info_green02_u": {
+    "en": "Green combo magic.\r\nBig strength boost for the next hero.",
+    "ua": "Зелена спільна магія.\nСильно зміцнює наступного героя."
+  },
+  "msg_legend2_magic_info_blue_u": {
+    "en": "Blue magic.\r\nUnleashes a torrent of water.",
+    "ua": "Синя магія.\nВивільняє потік води."
+  },
+  "msg_legend2_magic_info_blue02_u": {
+    "en": "Blue combo magic.\r\nUnleashes a mighty torrent of water.",
+    "ua": "Синя спільна магія.\nВивільняє могутній потік води."
+  },
+  "msg_legend2_magic_info_skyblue_u": {
+    "en": "Light-blue magic.\r\nFreezes enemies.",
+    "ua": "Блакитна магія.\nМорозить ворогів."
+  },
+  "msg_legend2_magic_info_skyblue02_u": {
+    "en": "Light-blue combo magic.\r\nFreezes enemies solid.",
+    "ua": "Блакитна спільна магія.\nСкує ворогів кригою."
+  },
+  "msg_legend2_magic_info_pink_u": {
+    "en": "Pink magic.\r\nMakes heroes feel daring.",
+    "ua": "Рожева магія.\nДодає героям відваги."
+  },
+  "msg_legend2_magic_info_pink02_u": {
+    "en": "Pink combo magic.\r\nFills heroes with incredible daring.",
+    "ua": "Рожева спільна магія.\nДодає героям шаленої відваги."
+  },
+  "msg_legend2_magic_info_purple_u": {
+    "en": "Purple magic.\r\nPoisons enemies.",
+    "ua": "Фіолетова магія.\nОтруює ворогів."
+  },
+  "msg_legend2_magic_info_purple02_u": {
+    "en": "Purple combo magic.\r\nAttacks enemies with deadly poison.",
+    "ua": "Фіолетова спільна магія.\nБ'є ворогів смертельною отрутою."
+  },
+  "msg_legend2_magic_info_brown_u": {
+    "en": "Brown magic.\r\nSummons a wanderer.",
+    "ua": "Коричнева магія.\nВикликає мандрівника."
+  },
+  "msg_legend2_magic_info_brown02_u": {
+    "en": "Brown combo magic.\r\nSummons a mighty wanderer.",
+    "ua": "Коричнева спільна магія.\nВикликає могутнього мандрівника."
+  },
+  "msg_legend2_magic_info_white_u": {
+    "en": "White magic.\r\nBrings light to the darkness.",
+    "ua": "Біла магія.\nНесе світло в темряву."
+  },
+  "msg_legend2_magic_info_white02_u": {
+    "en": "White combo magic.\r\nCalls forth dazzling light.",
+    "ua": "Біла спільна магія.\nВикликає сліпуче світло."
+  },
+  "msg_legend2_magic_info_black_u": {
+    "en": "Black magic.\r\nDarkens the surroundings.",
+    "ua": "Чорна магія.\nЗатемнює все довкола."
+  },
+  "msg_legend2_magic_info_black02_u": {
+    "en": "Black combo magic.\r\nPlunges the area into darkness.",
+    "ua": "Чорна спільна магія.\nЗанурює все довкола в пітьму."
+  },
+  "msg_legend2_after_info_red_u": {
+    "en": "Next!\r\nGo to the back of the queue.",
+    "ua": "Далі!\nСтати в кінець черги."
+  },
+  "msg_legend2_skill_info_combi_02_u": {
+    "en": "Create team.\r\nTeam up with another hero.",
+    "ua": "Створити загін.\nОб'єднатися з іншим героєм."
+  },
+  "msg_legend2_skill_info_combi_03_u": {
+    "en": "Other team.\r\nTeam up with a different hero.",
+    "ua": "Інший загін.\nОб'єднатися з іншим героєм."
+  },
+  "msg_legend2_skill_info_combi_attack_u": {
+    "en": "What should this level [LV] team do?",
+    "ua": "Що робитиме загін рівня [LV]?"
+  },
+  "msg_legend2_skill_info_delivery_u": {
+    "en": "Get potion. Order potions from the\r\nPotion Service using  Play Coins.",
+    "ua": "Узяти зілля. Замовляйте зілля\nу службі доставки за  монетки."
+  },
+  "msg_legend2_item_info_barrier_u": {
+    "en": "Dispelling Draught... [COIN]\r\nDisperses gas spewed by enemies.",
+    "ua": "Відьмин відвар… [COIN]\nРозвіює гази, які пускають вороги."
+  },
+  "msg_legend2_item_info_seal_u": {
+    "en": "Bottled Barrier... [COIN]\r\nWards off enemy magic.",
+    "ua": "Бар'єр у пляшці…\n[COIN] Захищає від ворожої магії."
+  },
+  "msg_legend2_item_info_rescue_u": {
+    "en": "Vial of Valour... [COIN]\r\nCalls back heroes who have left.",
+    "ua": "Настій відваги…\n[COIN] Повертає героїв, які пішли."
+  },
+  "msg_legend2_item_info_powerup_u": {
+    "en": "Power Potion... [COIN]\r\nBoosts levels of heroes in queue.",
+    "ua": "Зілля сили…\n[COIN] Підвищує рівень героїв у черзі."
+  },
+  "msg_legend2_item_info_back_u": {
+    "en": "Back.\r\nCancel Potion Service order.",
+    "ua": "Назад.\nСкасувати замовлення зілля."
+  },
+  "msg_legend2_item_info_order_u": {
+    "en": "Order.\r\nBuy and use the selected potion.",
+    "ua": "Замовити.\nКупити й ужити вибране зілля."
+  },
+  "msg_legend2_item_info_order_back_u": {
+    "en": "Don't order.\r\nReturn to potion selection.",
+    "ua": "Не замовляти.\nПовернутися до вибору зілля."
+  },
+  "msg_legend2_item_short_coin_u": {
+    "en": "Not enough  Play Coins.",
+    "ua": "Бракує  ігрових монеток."
+  },
+  "legend_hero_color_red": {
+    "en": "red",
+    "ua": "червоний"
+  },
+  "legend_hero_color_orange": {
+    "en": "orange",
+    "ua": "жовтогарячий"
+  },
+  "legend_hero_color_yellow": {
+    "en": "yellow",
+    "ua": "жовтий"
+  },
+  "legend_hero_color_yellowgreen": {
+    "en": "light-green",
+    "ua": "світло-зелений"
+  },
+  "legend_hero_color_green": {
+    "en": "green",
+    "ua": "зелений"
+  },
+  "legend_hero_color_blue": {
+    "en": "blue",
+    "ua": "синій"
+  },
+  "legend_hero_color_skyblue": {
+    "en": "light-blue",
+    "ua": "блакитний"
+  },
+  "legend_hero_color_pink": {
+    "en": "pink",
+    "ua": "рожевий"
+  },
+  "legend_hero_color_purple": {
+    "en": "purple",
+    "ua": "фіолетовий"
+  },
+  "legend_hero_color_brown": {
+    "en": "brown",
+    "ua": "коричневий"
+  },
+  "legend_hero_color_white": {
+    "en": "white",
+    "ua": "білий"
+  },
+  "legend_hero_color_black": {
+    "en": "black",
+    "ua": "чорний"
+  },
+  "legend_item_barrier": {
+    "en": "dispelling draught",
+    "ua": "відьмин відвар"
+  },
+  "legend_item_seal": {
+    "en": "bottled barrier",
+    "ua": "бар'єр у пляшці"
+  },
+  "legend_item_rescue": {
+    "en": "vial of valour",
+    "ua": "настій відваги"
+  },
+  "legend_item_powerup": {
+    "en": "power potion",
+    "ua": "зілля сили"
+  },
+  "legend_key_bronze": {
+    "en": "Bronze Key",
+    "ua": "Бронзовий ключ"
+  },
+  "legend_key_silver": {
+    "en": "Silver Key",
+    "ua": "Срібний ключ"
+  },
+  "legend_key_gold": {
+    "en": "Golden Key",
+    "ua": "Золотий ключ"
+  },
+  "msg_legend2_hero_info_u": {
+    "en": "[MII1], a level [LV] hero!\r\n(From: [AREA])",
+    "ua": "[MII1], герой рівня [LV]!\n(Звідки: [AREA])"
+  },
+  "msg_legend2_hero_info_f_u": {
+    "en": "[MII1], a level [LV] hero!\r\n(From: [AREA])",
+    "ua": "[MII1], героїня рівня [LV]!\n(Звідки: [AREA])"
+  },
+  "msg_legend2_wander_hero_info_u": {
+    "en": "A level [LV] wanderer\r\nhas appeared!",
+    "ua": "З'явився мандрівник\nрівня [LV]!"
+  },
+  "msg_legend2_hero_info_2_u": {
+    "en": "Come, brave Sir [MII1]!\r\n(From: [AREA])",
+    "ua": "Уперед, звитяжний пане [MII1]!\n(Звідки: [AREA])"
+  },
+  "msg_legend2_hero_info_2_f_u": {
+    "en": "Come, brave Lady [MII1]!\r\n(From: [AREA])",
+    "ua": "Уперед, звитяжна пані [MII1]!\n(Звідки: [AREA])"
+  },
+  "msg_legend2_hero_levelup_01_u": {
+    "en": "[CEC] StreetPass hits!\r\nLevel up!",
+    "ua": "Зустрічей: [CEC]!\nНовий рівень!"
+  },
+  "msg_legend2_hero_levelup_02_u": {
+    "en": "[MII1] is now\r\nlevel [LV]!",
+    "ua": "[MII1] тепер\nрівня [LV]!"
+  },
+  "msg_legend2_lvdown_2_u": {
+    "en": "The level-down gas\r\nweakens your heroes!",
+    "ua": "Газ пониження рівня\nослаблює ваших героїв!"
+  },
+  "msg_legend2_lvdown_3_u": {
+    "en": "[MII1] can't be\r\nweakened any further.",
+    "ua": "[MII1] уже\nне ослабити дужче."
+  },
+  "msg_legend2_lvdown_3_f_u": {
+    "en": "[MII1] can't be\r\nweakened any further.",
+    "ua": "[MII1] уже\nне ослабити дужче."
+  },
+  "msg_legend2_lvdown_4_u": {
+    "en": "The wanderer can't be\r\nweakened any further.",
+    "ua": "Мандрівника вже\nне ослабити дужче."
+  },
+  "msg_legend2_item_powerup_put_ac_02_u": {
+    "en": "The power potion strengthens\r\nthe heroes!",
+    "ua": "Зілля сили зміцнює\nгероїв!"
+  },
+  "msg_legend2_hero_mgc_green_03_u": {
+    "en": "The green magic's effect makes\r\nyour hero even stronger!",
+    "ua": "Зелена магія робить\nгероя ще сильнішим!"
+  },
+  "msg_legend2_hero_mgc_green_13_u": {
+    "en": "The green magic's effect makes\r\nyour hero much stronger!",
+    "ua": "Зелена магія робить\nгероя значно сильнішим!"
+  },
+  "msg_legend2_hero_mgc_green_02_u": {
+    "en": "[MII1] is temporarily\r\nlevel [LV]!",
+    "ua": "[MII1] тимчасово\nрівня [LV]!"
+  },
+  "msg_legend2_hero_mgc_green_02_f_u": {
+    "en": "[MII1] is temporarily\r\nlevel [LV]!",
+    "ua": "[MII1] тимчасово\nрівня [LV]!"
+  },
+  "msg_legend2_wander_hero_mgc_green_02_u": {
+    "en": "The wanderer is temporarily\r\nlevel [LV]!",
+    "ua": "Мандрівник тимчасово\nрівня [LV]!"
+  },
+  "msg_legend2_hero_mgc_green_04_u": {
+    "en": "[MII1] is already\r\nat full power!",
+    "ua": "[MII1] уже\nна повній силі!"
+  },
+  "msg_legend2_hero_mgc_green_04_f_u": {
+    "en": "[MII1] is already\r\nat full power!",
+    "ua": "[MII1] уже\nна повній силі!"
+  },
+  "msg_legend2_wander_hero_mgc_green_04_u": {
+    "en": "The wanderer is already\r\nat full power!",
+    "ua": "Мандрівник уже\nна повній силі!"
+  },
+  "msg_legend2_which_u": {
+    "en": "Which will you attack?",
+    "ua": "Кого атакуєте?"
+  },
+  "msg_legend2_hero_atk_01_u": {
+    "en": "[MII1] attacks!",
+    "ua": "[MII1] атакує!"
+  },
+  "msg_legend2_hero_atk_01b_u": {
+    "en": "The wanderer attacks!",
+    "ua": "Мандрівник атакує!"
+  },
+  "msg_legend2_hero_atk_02_u": {
+    "en": "Next attack!",
+    "ua": "Наступна атака!"
+  },
+  "msg_legend2_hero_atk_03_u": {
+    "en": "Last attack!",
+    "ua": "Остання атака!"
+  },
+  "msg_legend2_hero_mgc_orange_03_u": {
+    "en": "Bonus attack!",
+    "ua": "Додаткова атака!"
+  },
+  "msg_legend2_hero_mgc_ac_05_u": {
+    "en": "There's an opening.\r\nAttack!",
+    "ua": "Ворог відкрився.\nВ атаку!"
+  },
+  "msg_legend2_hero_lucky_u": {
+    "en": "Critical hit!\r\nTriple damage!",
+    "ua": "Влучний удар!\nПотрійна шкода!"
+  },
+  "msg_legend2_hero_miss_u": {
+    "en": "The attack missed...",
+    "ua": "Атака не влучила…"
+  },
+  "msg_legend2_ghost_shield_u": {
+    "en": "The attack bounces\r\noff the shield!",
+    "ua": "Атака відбилася\nвід щита!"
+  },
+  "msg_legend2_ghost_shield_break_u": {
+    "en": "The shield breaks!",
+    "ua": "Щит розбито!"
+  },
+  "msg_legend2_hero_mgc_ac_01_u": {
+    "en": "[MII1] uses\r\n[COLOR1] magic.",
+    "ua": "[MII1] застосовує\nмагію: [COLOR1]."
+  },
+  "msg_legend2_hero_mgc_ac_01_f_u": {
+    "en": "[MII1] uses\r\n[COLOR1] magic.",
+    "ua": "[MII1] застосовує\nмагію: [COLOR1]."
+  },
+  "msg_legend2_wander_hero_mgc_ac_03_u": {
+    "en": "The wanderer uses\r\n[COLOR1] magic.",
+    "ua": "Мандрівник застосовує\nмагію: [COLOR1]."
+  },
+  "msg_legend2_hero_mgc_red_01_u": {
+    "en": "Burning flames engulf\r\nthe [ENEMY]!",
+    "ua": "Пекуче полум'я охоплює\n[ENEMY]!"
+  },
+  "msg_legend2_hero_mgc_red_02_u": {
+    "en": "Burning flames engulf\r\nthe monsters!",
+    "ua": "Пекуче полум'я охоплює\nчудовиськ!"
+  },
+  "msg_legend2_hero_mgc_red_11_u": {
+    "en": "A burning firestorm engulfs\r\nthe [ENEMY]!",
+    "ua": "Вогняна буря охоплює\n[ENEMY]!"
+  },
+  "msg_legend2_hero_mgc_red_12_u": {
+    "en": "A burning firestorm engulfs\r\nthe monsters!",
+    "ua": "Вогняна буря охоплює\nчудовиськ!"
+  },
+  "msg_legend2_hero_mgc_blue_01_u": {
+    "en": "Raging rapids assault\r\nthe [ENEMY]!",
+    "ua": "Шалені потоки б'ють\nпо [ENEMY]!"
+  },
+  "msg_legend2_hero_mgc_blue_02_u": {
+    "en": "Raging rapids assault\r\nthe monsters!",
+    "ua": "Шалені потоки б'ють\nпо чудовиськах!"
+  },
+  "msg_legend2_hero_mgc_blue_11_u": {
+    "en": "Turbulent torrents assault\r\nthe [ENEMY]!",
+    "ua": "Бурхливі потоки б'ють\nпо [ENEMY]!"
+  },
+  "msg_legend2_hero_mgc_blue_12_u": {
+    "en": "Turbulent torrents assault\r\nthe monsters!",
+    "ua": "Бурхливі потоки б'ють\nпо чудовиськах!"
+  },
+  "msg_legend2_hero_mgc_yellow_01_u": {
+    "en": "A sandstorm ravages\r\nthe area!",
+    "ua": "Піщаний буревій\nшаленіє довкола!"
+  },
+  "msg_legend2_hero_mgc_yellow_11_u": {
+    "en": "A ferocious sandstorm\r\nscours the area!",
+    "ua": "Лютий піщаний буревій\nмете все довкола!"
+  },
+  "msg_legend2_hero_mgc_orange_01_u": {
+    "en": "The next heroes will receive\r\na morale boost!",
+    "ua": "Наступні герої отримають\nприлив бойового духу!"
+  },
+  "msg_legend2_hero_mgc_orange_11_u": {
+    "en": "The next heroes will receive\r\na huge morale boost!",
+    "ua": "Наступні герої отримають\nвеличезний приплив духу!"
+  },
+  "msg_legend2_hero_mgc_pink_01_u": {
+    "en": "The next heroes are\r\nfull of daring!",
+    "ua": "Наступні герої\nсповнені відваги!"
+  },
+  "msg_legend2_hero_mgc_pink_11_u": {
+    "en": "The next heroes are\r\noverflowing with daring!",
+    "ua": "Наступні герої\nаж пашать відвагою!"
+  },
+  "msg_legend2_hero_mgc_black_01_u": {
+    "en": "The surroundings\r\nbecome dark.",
+    "ua": "Довкола\nстало темно."
+  },
+  "msg_legend2_hero_mgc_black_11_u": {
+    "en": "The surroundings are\r\nplunged into darkness.",
+    "ua": "Усе довкола\nпоринуло в пітьму."
+  },
+  "msg_legend2_hero_mgc_white_03_u": {
+    "en": "...And the darkness is gone!",
+    "ua": "…І темряви не стало!"
+  },
+  "msg_legend2_hero_mgc_white_11_u": {
+    "en": "Dazzling light fills the area!",
+    "ua": "Сліпуче світло залило все\nдовкола!"
+  },
+  "msg_legend2_hero_mgc_white_02_u": {
+    "en": "...But the light soon vanishes!",
+    "ua": "…Але світло швидко згасло!"
+  },
+  "msg_legend2_hero_mgc_green_01_u": {
+    "en": "Power has been given\r\nto your next hero!",
+    "ua": "Наступний герой\nотримав силу!"
+  },
+  "msg_legend2_hero_mgc_green_11_u": {
+    "en": "Awesome power has been\r\ngiven to your next hero!",
+    "ua": "Наступний герой отримав\nнеймовірну силу!"
+  },
+  "msg_legend2_hero_mgc_brown_01_u": {
+    "en": "A wanderer has\r\nbeen summoned.",
+    "ua": "Викликано\nмандрівника."
+  },
+  "msg_legend2_hero_mgc_ac_02_u": {
+    "en": "[MII1] gets fatigued\r\nand turns back.",
+    "ua": "[MII1] втомлюється\nй повертає назад."
+  },
+  "msg_legend2_hero_mgc_ac_02_f_u": {
+    "en": "[MII1] gets fatigued\r\nand turns back.",
+    "ua": "[MII1] втомлюється\nй повертає назад."
+  },
+  "msg_legend2_wander_hero_mgc_ac_02_u": {
+    "en": "The wanderer gets fatigued\r\nand turns back.",
+    "ua": "Мандрівник втомлюється\nй повертає назад."
+  },
+  "msg_legend2_hero_mgc_ac_12_u": {
+    "en": "[MII1]'s team gets\r\nfatigued and turns back.",
+    "ua": "Загін [MII1] втомлюється\nй повертає назад."
+  },
+  "msg_legend2_hero_mgc_ac_12_f_u": {
+    "en": "[MII1]'s team gets\r\nfatigued and turns back.",
+    "ua": "Загін [MII1] втомлюється\nй повертає назад."
+  },
+  "msg_legend2_hero_mgc_ac_13_u": {
+    "en": "The wanderer's team gets\r\nfatigued and turns back.",
+    "ua": "Загін мандрівника втомлюється\nй повертає назад."
+  },
+  "msg_legend2_hero_after_ac_u": {
+    "en": "[MII1] returns\r\nto the queue.",
+    "ua": "[MII1] повертається\nу чергу."
+  },
+  "msg_legend2_hero_after_ac_f_u": {
+    "en": "[MII1] returns\r\nto the queue.",
+    "ua": "[MII1] повертається\nу чергу."
+  },
+  "msg_legend2_wander_hero_after_ac_u": {
+    "en": "The wanderer returned\r\nto the queue.",
+    "ua": "Мандрівник повернувся\nу чергу."
+  },
+  "msg_legend2_dark_room_4_u": {
+    "en": "[MII1] can't do\r\nanything and goes home.",
+    "ua": "[MII1] нічого\nне може вдіяти й іде додому."
+  },
+  "msg_legend2_dark_room_4_f_u": {
+    "en": "[MII1] can't do\r\nanything and goes home.",
+    "ua": "[MII1] нічого\nне може вдіяти й іде додому."
+  },
+  "msg_legend2_dark_room_5_u": {
+    "en": "The wanderer can't do\r\nanything and goes home.",
+    "ua": "Мандрівник нічого\nне може вдіяти й іде додому."
+  },
+  "msg_legend2_hero_shield_escape_u": {
+    "en": "[MII1] gives up\r\nand goes home.",
+    "ua": "[MII1] здається\nй іде додому."
+  },
+  "msg_legend2_hero_shield_escape_f_u": {
+    "en": "[MII1] gives up\r\nand goes home.",
+    "ua": "[MII1] здається\nй іде додому."
+  },
+  "msg_legend2_wander_hero_shield_escape_u": {
+    "en": "The wanderer gives up\r\nand goes home.",
+    "ua": "Мандрівник здається\nй іде додому."
+  },
+  "msg_legend2_hero_shield_escape01_u": {
+    "en": "[MII1]'s team gives up\r\nand goes home.",
+    "ua": "Загін [MII1] здається\nй іде додому."
+  },
+  "msg_legend2_hero_shield_escape01_f_u": {
+    "en": "[MII1]'s team gives up\r\nand goes home.",
+    "ua": "Загін [MII1] здається\nй іде додому."
+  },
+  "msg_legend2_wander_hero_shield_escape01_u": {
+    "en": "The wanderer's team gives up\r\nand goes home.",
+    "ua": "Загін мандрівника здається\nй іде додому."
+  },
+  "msg_legend2_ghost_attack_u": {
+    "en": "[MII1] flees!",
+    "ua": "[MII1] тікає!"
+  },
+  "msg_legend2_ghost_attack_f_u": {
+    "en": "[MII1] flees!",
+    "ua": "[MII1] тікає!"
+  },
+  "msg_legend2_ghost_attackb_u": {
+    "en": "The wanderer flees!",
+    "ua": "Мандрівник тікає!"
+  },
+  "msg_legend2_ghost_attack_02_u": {
+    "en": "[MII1]'s team flees!",
+    "ua": "Загін [MII1] тікає!"
+  },
+  "msg_legend2_ghost_attack_02_f_u": {
+    "en": "[MII1]'s team flees!",
+    "ua": "Загін [MII1] тікає!"
+  },
+  "msg_legend2_ghost_attackb_02_u": {
+    "en": "The wanderer's team flees!",
+    "ua": "Загін мандрівника тікає!"
+  },
+  "msg_legend2_result_cap_arrival_u": {
+    "en": "Look, a treasure chest!",
+    "ua": "Дивіться, скриня зі скарбом!"
+  },
+  "msg_legend2_result_hat_get_u": {
+    "en": "Found: [CAP]!",
+    "ua": "Знайдено: [CAP]!"
+  },
+  "msg_legend2_result_cap_usage_1_u": {
+    "en": "Try putting this accessory\r\non your StreetPass Mii!",
+    "ua": "Вдягніть цей аксесуар\nна свого Mii для StreetPass!"
+  },
+  "msg_legend2_result_cap_usage_2_u": {
+    "en": "Choose your StreetPass Mii\r\nfrom the plaza...",
+    "ua": "Виберіть на площі свого\nMii для StreetPass…"
+  },
+  "msg_legend2_result_cap_usage_3_u": {
+    "en": "And then choose Mii Settings!",
+    "ua": "а тоді — «Параметри Mii»!"
+  },
+  "msg_legend2_result_key_arrival_u": {
+    "en": "Oh, there's something\r\nelse in here...",
+    "ua": "О, тут є ще\nдещо…"
+  },
+  "msg_legend2_result_key_get_u": {
+    "en": "Found: [KEY]!",
+    "ua": "Знайдено: [KEY]!"
+  },
+  "msg_legend2_open_door_u": {
+    "en": "The door has opened!",
+    "ua": "Двері відчинилися!"
+  },
+  "msg_legend2_next_u": {
+    "en": "[MII1] advances.",
+    "ua": "[MII1] рушає далі."
+  },
+  "msg_legend2_nextb_u": {
+    "en": "The wanderer advances.",
+    "ua": "Мандрівник рушає далі."
+  },
+  "msg_legend2_next_02_u": {
+    "en": "[MII1]'s team advances.",
+    "ua": "Загін [MII1] рушає далі."
+  },
+  "msg_legend2_nextb_02_u": {
+    "en": "The wanderer's team advances.",
+    "ua": "Загін мандрівника рушає далі."
+  },
+  "msg_legend2_combi_make_01_u": {
+    "en": "Teamed up with [MII2]!\r\n(Level: [LV] / [AREA])",
+    "ua": "Загін із [MII2]!\n(Рівень: [LV] / [AREA])"
+  },
+  "msg_legend2_combi_make_01_f_u": {
+    "en": "Teamed up with [MII2]!\r\n(Level: [LV] / [AREA])",
+    "ua": "Загін із [MII2]!\n(Рівень: [LV] / [AREA])"
+  },
+  "msg_legend2_combi_make_02_u": {
+    "en": "Teamed up with\r\na level [LV] wanderer!",
+    "ua": "Загін із мандрівником\nрівня [LV]!"
+  },
+  "msg_legend2_combi_state_color02_u": {
+    "en": "Formed a similar-colour team!",
+    "ua": "Загін схожих кольорів!"
+  },
+  "msg_legend2_combi_state_color03_u": {
+    "en": "Formed a same-colour team!",
+    "ua": "Загін одного кольору!"
+  },
+  "msg_legend2_combi_state_color04_u": {
+    "en": "Formed a black-and-white team!",
+    "ua": "Чорно-білий загін!"
+  },
+  "msg_legend2_combi_state_lv_u": {
+    "en": "The new team is level [LV]!",
+    "ua": "Новий загін — рівня [LV]!"
+  },
+  "msg_legend2_hero_atk_11_u": {
+    "en": "[MII1]'s team performs\r\na combo attack!",
+    "ua": "Загін [MII1] б'є\nсерією ударів!"
+  },
+  "msg_legend2_hero_atk_12_u": {
+    "en": "Follow-up combo attack!",
+    "ua": "Ще один удар серії!"
+  },
+  "msg_legend2_hero_atk_13_u": {
+    "en": "Another combo attack!",
+    "ua": "Ще одна серія ударів!"
+  },
+  "msg_legend2_hero_atk_14_u": {
+    "en": "Unleashed a [COOPCOLOR]\r\ncombo attack!",
+    "ua": "Серія ударів:\n[COOPCOLOR]!"
+  },
+  "legend_combi_samecolor": {
+    "en": "same-colour",
+    "ua": "одного кольору"
+  },
+  "legend_combi_wb": {
+    "en": "black-and-white",
+    "ua": "чорно-білий"
+  },
+  "msg_legend2_hero_mgc_ac_0_u": {
+    "en": "[MII1]'s team uses\r\ncombo magic.",
+    "ua": "Загін [MII1] застосовує\nспільну магію."
+  },
+  "msg_legend2_enemy_1st_1_u": {
+    "en": "Encountered [ENEMY]!\r\nThe monster blocks your path!",
+    "ua": "Зустріч із [ENEMY]!\nЧудовисько заступає шлях!"
+  },
+  "msg_legend2_enemy_1st_2_u": {
+    "en": "Monsters block your path!",
+    "ua": "Чудовиська заступають шлях!"
+  },
+  "msg_legend2_ghost_crush_u": {
+    "en": "Defeated the\r\n[ENEMY]!",
+    "ua": "[ENEMY]\nподолано!"
+  },
+  "msg_legend2_hero_mgc_yg_05_u": {
+    "en": "The [ENEMY] is\r\nstill sleeping.",
+    "ua": "[ENEMY]\nусе ще спить."
+  },
+  "msg_legend2_hero_mgc_sb_05_u": {
+    "en": "The [ENEMY] is frozen\r\nsolid and cannot move.",
+    "ua": "[ENEMY] геть замерз\nі не може рухатися."
+  },
+  "msg_legend2_hero_mgc_yellow_03_u": {
+    "en": "The [ENEMY] is rubbing\r\nits eyes!",
+    "ua": "[ENEMY] тре\nочі!"
+  },
+  "msg_legend2_hero_mgc_black_02_u": {
+    "en": "The [ENEMY] can't see\r\na thing!",
+    "ua": "[ENEMY] нічого\nне бачить!"
+  },
+  "msg_legend2_ghost_shield_intro_yellow_u": {
+    "en": "The [ENEMY] is protected\r\nby a yellow shield!",
+    "ua": "[ENEMY] захищений\nжовтим щитом!"
+  },
+  "msg_legend2_ghost_shield_intro_skyblue_u": {
+    "en": "The [ENEMY] is protected\r\nby a light-blue shield!",
+    "ua": "[ENEMY] захищений\nблакитним щитом!"
+  },
+  "msg_legend2_ghost_shield_intro_wandb_u": {
+    "en": "The [ENEMY] is protected\r\nby a shadowlight shield!",
+    "ua": "[ENEMY] захищений\nщитом світлотіні!"
+  },
+  "msg_legend2_hero_mgc_yg_01_u": {
+    "en": "The [ENEMY] falls\r\nasleep.",
+    "ua": "[ENEMY]\nзасинає."
+  },
+  "msg_legend2_hero_mgc_yg_11_u": {
+    "en": "The [ENEMY] falls into\r\na deep sleep.",
+    "ua": "[ENEMY] провалюється\nу глибокий сон."
+  },
+  "msg_legend2_hero_mgc_sb_01_u": {
+    "en": "The [ENEMY] is\r\nimprisoned in ice!",
+    "ua": "[ENEMY]\nскуто кригою!"
+  },
+  "msg_legend2_hero_mgc_sb_11_u": {
+    "en": "The [ENEMY] is\r\nimprisoned in a huge block of ice!",
+    "ua": "[ENEMY] скуто\nвелетенською брилою криги!"
+  },
+  "msg_legend2_hero_mgc_purple_00_n_u": {
+    "en": "The [ENEMY]\r\ninhaled the poison.",
+    "ua": "[ENEMY]\nвдихнув отруту."
+  },
+  "msg_legend2_hero_mgc_purple_10_n_u": {
+    "en": "The [ENEMY]\r\ninhaled the deadly poison.",
+    "ua": "[ENEMY]\nвдихнув смертельну отруту."
+  },
+  "msg_legend2_hero_mgc_purple_03_u": {
+    "en": "The [ENEMY]\r\ntakes poison damage.",
+    "ua": "[ENEMY] дістає\nшкоду від отрути."
+  },
+  "msg_legend2_hero_mgc_purple_13_u": {
+    "en": "The [ENEMY] takes\r\ndamage from the deadly poison.",
+    "ua": "[ENEMY] дістає шкоду\nвід смертельної отрути."
+  },
+  "msg_legend2_ghost_shield_magic_u": {
+    "en": "The shield weakens\r\nthe magic attack.",
+    "ua": "Щит послаблює\nмагічну атаку."
+  },
+  "msg_legend2_magic_1_n_u": {
+    "en": "The [ENEMY]\r\ntakes huge damage!",
+    "ua": "[ENEMY] дістає\nвелику шкоду!"
+  },
+  "msg_legend2_magic_2_u": {
+    "en": "The [ENEMY] shrugs\r\noff the spell.",
+    "ua": "[ENEMY] не зважає\nна закляття."
+  },
+  "msg_legend2_hero_mgc_yg_03_u": {
+    "en": "The [ENEMY] wakes up!",
+    "ua": "[ENEMY] прокидається!"
+  },
+  "msg_legend2_hero_mgc_sb_03_u": {
+    "en": "The [ENEMY]\r\ncan move again.",
+    "ua": "[ENEMY]\nзнову може рухатися."
+  },
+  "msg_legend2_enemy_1st_3_u": {
+    "en": "The [ENEMY]'s got the\r\nmonarch in his grubby giant hand!",
+    "ua": "[ENEMY] тримає монарха\nу брудній велетенській лапі!"
+  },
+  "msg_legend2_enemypop_01_u": {
+    "en": "The [ENEMY] is\r\nrevealed!",
+    "ua": "[ENEMY] стає\nвидимим!"
+  },
+  "msg_legend2_dark_room_3_u": {
+    "en": "The monsters are revealed!",
+    "ua": "Чудовиська стали видимі!"
+  },
+  "msg_legend2_ghost_wall_03_u": {
+    "en": "It looks like one hero's magic by\r\nitself wasn't strong enough...",
+    "ua": "Схоже, магії одного героя\nвиявилося замало…"
+  },
+  "msg_legend2_dark_room_2_u": {
+    "en": "The room is enveloped\r\nin darkness.",
+    "ua": "Кімнату огорнула\nтемрява."
+  },
+  "msg_legend2_dark_room_u": {
+    "en": "It's too dark to see anything!",
+    "ua": "Темно, нічого не видно!"
+  },
+  "msg_legend2_hero_mgc_white_01_u": {
+    "en": "Bright light fills the area!",
+    "ua": "Яскраве світло залило все\nдовкола!"
+  },
+  "msg_legend2_bright_room_2_u": {
+    "en": "It's impossible to see anything\r\nin this dazzling light!",
+    "ua": "У цьому сліпучому світлі\nнічого не видно!"
+  },
+  "msg_legend2_bright_room_u": {
+    "en": "The room is filled with light.",
+    "ua": "Кімнату залило світло."
+  },
+  "msg_legend2_bright_room_3_u": {
+    "en": "A dark shadow falls over\r\nthe dazzling light.",
+    "ua": "На сліпуче світло\nлягла темна тінь."
+  },
+  "msg_legend2_fire_room_u": {
+    "en": "The room is ablaze\r\nwith flickering flames.",
+    "ua": "Кімната палає\nтремтливим вогнем."
+  },
+  "msg_legend2_fire_room_6_u": {
+    "en": "It's too hot to endure!",
+    "ua": "Спека нестерпна!"
+  },
+  "msg_legend2_fire_room_5_u": {
+    "en": "Raging rapids bathe\r\nthe area!",
+    "ua": "Шалені потоки заливають\nусе довкола!"
+  },
+  "msg_legend2_fire_room_2_u": {
+    "en": "Turbulent torrents of water\r\nbathe the area!",
+    "ua": "Бурхливі потоки води\nзаливають усе довкола!"
+  },
+  "msg_legend2_fire_room_3_u": {
+    "en": "The flames are quenched!",
+    "ua": "Полум'я згасло!"
+  },
+  "msg_legend2_ice_room_u": {
+    "en": "The room is coated\r\nin freezing frost.",
+    "ua": "Кімнату скував\nкрижаний іній."
+  },
+  "msg_legend2_ice_room_5_u": {
+    "en": "It's too cold to endure!",
+    "ua": "Холод нестерпний!"
+  },
+  "msg_legend2_ice_room_4_u": {
+    "en": "Burning flames\r\nengulf the area!",
+    "ua": "Пекуче полум'я\nохоплює все довкола!"
+  },
+  "msg_legend2_ice_room_2_u": {
+    "en": "A burning firestorm\r\nengulfs the area!",
+    "ua": "Вогняна буря\nохоплює все довкола!"
+  },
+  "msg_legend2_ice_room_3_u": {
+    "en": "The flames warm\r\nthe room!",
+    "ua": "Полум'я зігріло\nкімнату!"
+  },
+  "msg_legend2_poison_room_u": {
+    "en": "The room is filled\r\nwith noxious poison!",
+    "ua": "Кімнату заповнила\nїдка отрута!"
+  },
+  "msg_legend2_poison_room_5_u": {
+    "en": "The poison is overwhelming!",
+    "ua": "Отрута нестерпна!"
+  },
+  "msg_legend2_poison_room_4_u": {
+    "en": "A sandstorm ravages\r\nthe area!",
+    "ua": "Піщаний буревій\nшаленіє довкола!"
+  },
+  "msg_legend2_poison_room_2_u": {
+    "en": "A ferocious sandstorm\r\nscours the area!",
+    "ua": "Лютий піщаний буревій\nмете все довкола!"
+  },
+  "msg_legend2_poison_room_3_u": {
+    "en": "The sandstorm swept\r\nthe poison away!",
+    "ua": "Буревій розвіяв\nотруту!"
+  },
+  "msg_legend2_hero_mgc_black_03_u": {
+    "en": "It's too dark to see anything!",
+    "ua": "Темно, нічого не видно!"
+  },
+  "msg_legend2_hero_mgc_black_04_u": {
+    "en": "The area is filled with\r\nlight once more.",
+    "ua": "Довкола знову\nзалило світло."
+  },
+  "msg_legend2_hero_mgc_yellow_02_u": {
+    "en": "Sand in the eyes makes it more\r\ndifficult to attack with your sword!",
+    "ua": "Пісок в очах заважає\nбити мечем!"
+  },
+  "msg_legend2_hero_mgc_yellow_05_u": {
+    "en": "The effects of the sandstorm\r\nhave worn off.",
+    "ua": "Дія піщаного буревію\nминула."
+  },
+  "msg_legend2_hero_mgc_orange_02_u": {
+    "en": "[MII1] receives\r\na morale boost!",
+    "ua": "[MII1] отримує\nприлив бойового духу!"
+  },
+  "msg_legend2_hero_mgc_orange_02_f_u": {
+    "en": "[MII1] receives\r\na morale boost!",
+    "ua": "[MII1] отримує\nприлив бойового духу!"
+  },
+  "msg_legend2_wander_hero_mgc_orange_02_u": {
+    "en": "The wanderer receives\r\na morale boost!",
+    "ua": "Мандрівник отримує\nприлив бойового духу!"
+  },
+  "msg_legend2_hero_mgc_orange_12_u": {
+    "en": "[MII1] receives\r\na huge morale boost!",
+    "ua": "[MII1] отримує величезний\nприлив бойового духу!"
+  },
+  "msg_legend2_hero_mgc_orange_12_f_u": {
+    "en": "[MII1] receives\r\na huge morale boost!",
+    "ua": "[MII1] отримує величезний\nприлив бойового духу!"
+  },
+  "msg_legend2_wander_hero_mgc_orange_12_u": {
+    "en": "The wanderer receives\r\na huge morale boost!",
+    "ua": "Мандрівник отримує величезний\nприлив бойового духу!"
+  },
+  "msg_legend2_hero_mgc_orange_04_u": {
+    "en": "The morale boost has worn off!",
+    "ua": "Бойовий дух ослаб!"
+  },
+  "msg_legend2_hero_mgc_pink_02_u": {
+    "en": "[MII1] is full\r\nof daring!",
+    "ua": "[MII1] сповнений\nвідваги!"
+  },
+  "msg_legend2_hero_mgc_pink_02_f_u": {
+    "en": "[MII1] is full\r\nof daring!",
+    "ua": "[MII1] сповнена\nвідваги!"
+  },
+  "msg_legend2_wander_hero_mgc_pink_02_u": {
+    "en": "The wanderer is full\r\nof daring!",
+    "ua": "Мандрівник сповнений\nвідваги!"
+  },
+  "msg_legend2_hero_mgc_pink_12_u": {
+    "en": "[MII1] is overflowing\r\nwith daring!",
+    "ua": "[MII1] аж переповнений\nвідвагою!"
+  },
+  "msg_legend2_hero_mgc_pink_12_f_u": {
+    "en": "[MII1] is overflowing\r\nwith daring!",
+    "ua": "[MII1] аж переповнена\nвідвагою!"
+  },
+  "msg_legend2_wander_hero_mgc_pink_12_u": {
+    "en": "The wanderer is overflowing\r\nwith daring!",
+    "ua": "Мандрівник аж переповнений\nвідвагою!"
+  },
+  "msg_legend2_hero_mgc_pink_03_u": {
+    "en": "That daring feeling has worn off!",
+    "ua": "Відвага минула!"
+  },
+  "msg_legend2_surprise_u": {
+    "en": "Ambush by [ENEMY]!",
+    "ua": "Засідка: [ENEMY]!"
+  },
+  "msg_legend2_surprise_2_u": {
+    "en": "[MII1] is caught\r\noff guard and flees!",
+    "ua": "[MII1] заскочено\nзненацька, і він тікає!"
+  },
+  "msg_legend2_surprise_2_f_u": {
+    "en": "[MII1] is caught\r\noff guard and flees!",
+    "ua": "[MII1], заскочена\nзненацька, тікає!"
+  },
+  "msg_legend2_surprise_3_u": {
+    "en": "The wanderer is\r\ncaught off guard and flees!",
+    "ua": "Мандрівника заскочено\nзненацька, і він тікає!"
+  },
+  "msg_legend2_surprise_4_u": {
+    "en": "It wasn't enough to catch\r\n[MII1] off guard!",
+    "ua": "Цього замало, щоб заскочити\n[MII1] зненацька!"
+  },
+  "msg_legend2_surprise_4_f_u": {
+    "en": "It wasn't enough to catch\r\n[MII1] off guard!",
+    "ua": "Цього замало, щоб заскочити\n[MII1] зненацька!"
+  },
+  "msg_legend2_surprise_5_u": {
+    "en": "It wasn't enough to catch\r\nthe wanderer off guard!",
+    "ua": "Цього замало, щоб заскочити\nмандрівника зненацька!"
+  },
+  "msg_legend2_curse_u": {
+    "en": "The [ENEMY] spews\r\ncurse gas!",
+    "ua": "[ENEMY] випускає\nгаз прокляття!"
+  },
+  "msg_legend2_curse_2_u": {
+    "en": "[MII1] is hindered\r\nby the curse!",
+    "ua": "[MII1] скутий\nпрокляттям!"
+  },
+  "msg_legend2_curse_2_f_u": {
+    "en": "[MII1] is hindered\r\nby the curse!",
+    "ua": "[MII1] скута\nпрокляттям!"
+  },
+  "msg_legend2_curse_3_u": {
+    "en": "The wanderer is hindered\r\nby the curse!",
+    "ua": "Мандрівник скутий\nпрокляттям!"
+  },
+  "msg_legend2_curse_4_u": {
+    "en": "[MII1]'s team is\r\nhindered by the curse!",
+    "ua": "Загін [MII1] скутий\nпрокляттям!"
+  },
+  "msg_legend2_curse_4_f_u": {
+    "en": "[MII1]'s team is\r\nhindered by the curse!",
+    "ua": "Загін [MII1] скутий\nпрокляттям!"
+  },
+  "msg_legend2_curse_5_u": {
+    "en": "The wanderer's team is\r\nhindered by the curse!",
+    "ua": "Загін мандрівника скутий\nпрокляттям!"
+  },
+  "msg_legend2_recovery_u": {
+    "en": "The [ENEMY] uses\r\nhealing magic!",
+    "ua": "[ENEMY] застосовує\nцілющу магію!"
+  },
+  "msg_legend2_recovery_2_u": {
+    "en": "The [ENEMY]\r\nrecovers stamina!",
+    "ua": "[ENEMY]\nвідновлює сили!"
+  },
+  "msg_legend2_recovery_3_u": {
+    "en": "The [ENEMY] attempts to\r\nuse healing magic...but fails!",
+    "ua": "[ENEMY] намагається застосувати\nцілющу магію… але марно!"
+  },
+  "msg_legend2_revive_u": {
+    "en": "The [ENEMY] uses\r\nreviving magic!",
+    "ua": "[ENEMY] застосовує\nмагію воскресіння!"
+  },
+  "msg_legend2_revive_2_u": {
+    "en": "The [ENEMY]\r\nhas been revived!",
+    "ua": "[ENEMY]\nвоскресає!"
+  },
+  "msg_legend2_revive_3_u": {
+    "en": "The [ENEMY] attempts to\r\nuse reviving magic...but fails!",
+    "ua": "[ENEMY] намагається застосувати\nмагію воскресіння… але марно!"
+  },
+  "msg_legend2_split_2_u": {
+    "en": "The [ENEMY] uses\r\nmirage magic!",
+    "ua": "[ENEMY] застосовує\nмагію марева!"
+  },
+  "msg_legend2_split_u": {
+    "en": "You hit the mirage created\r\nby the [ENEMY]!",
+    "ua": "Ви влучили в марево, створене\n[ENEMY]!"
+  },
+  "msg_legend2_split_3_u": {
+    "en": "The [ENEMY] attempts\r\nto use mirage magic...but fails!",
+    "ua": "[ENEMY] намагається застосувати\nмагію марева… але марно!"
+  },
+  "msg_legend2_giant_u": {
+    "en": "The [ENEMY] uses\r\ngigantic growth magic!",
+    "ua": "[ENEMY] застосовує\nмагію велетенського зросту!"
+  },
+  "msg_legend2_giant_2_u": {
+    "en": "The [ENEMY] gets HUGE!",
+    "ua": "[ENEMY] стає ВЕЛЕТНЕМ!"
+  },
+  "msg_legend2_giant_3_u": {
+    "en": "The [ENEMY] is so huge,\r\nno one can come near!",
+    "ua": "[ENEMY] такий велетенський,\nщо годі підступитися!"
+  },
+  "msg_legend2_giant_4_u": {
+    "en": "The [ENEMY] went back\r\nto normal size!",
+    "ua": "[ENEMY] повернувся\nдо звичного розміру!"
+  },
+  "msg_legend2_defense_u": {
+    "en": "The [ENEMY] uses\r\nfortifying magic!",
+    "ua": "[ENEMY] застосовує\nмагію зміцнення!"
+  },
+  "msg_legend2_defense_3_u": {
+    "en": "The [ENEMY]'s fortifying\r\nmagic wore off.",
+    "ua": "Магія зміцнення\n[ENEMY] вивітрилася."
+  },
+  "msg_legend2_seal_u": {
+    "en": "The [ENEMY] spews\r\na magic-warding gas!",
+    "ua": "[ENEMY] випускає\nгаз проти магії!"
+  },
+  "msg_legend2_seal_2_u": {
+    "en": "The magic-warding gas prevents\r\nthe use of magic attacks!",
+    "ua": "Газ проти магії не дає\nбити магічними атаками!"
+  },
+  "msg_legend2_lvdown_u": {
+    "en": "The [ENEMY] spews\r\nlevel-down gas!",
+    "ua": "[ENEMY] випускає\nгаз пониження рівня!"
+  },
+  "msg_legend2_cover_u": {
+    "en": "The [ENEMY] uses\r\nits magic to take the hit!",
+    "ua": "[ENEMY] магією\nбере удар на себе!"
+  },
+  "msg_legend2_cover_2_u": {
+    "en": "The [ENEMY] attempts to\r\nuse magic to take the hit...but fails!",
+    "ua": "[ENEMY] намагається магією взяти\nудар на себе… але марно!"
+  },
+  "msg_legend2_invalid_u": {
+    "en": "The monster's power dispelled\r\nthe magic effect!",
+    "ua": "Сила почвари розвіяла\nдію магії!"
+  },
+  "msg_legend2_invalid_2_u": {
+    "en": "The monster's power dispelled\r\nthe magic effect!",
+    "ua": "Сила почвари розвіяла\nдію магії!"
+  },
+  "meg_legend2_delivery_u": {
+    "en": "Here's your order!\r\nThanks for waiting!",
+    "ua": "Ось ваше замовлення!\nДякуємо за очікування!"
+  },
+  "msg_legend2_hero_item_ac_u": {
+    "en": "[MII1] uses\r\na [ITEM]!",
+    "ua": "[MII1] вживає\n[ITEM]!"
+  },
+  "msg_legend2_hero_item_ac_f_u": {
+    "en": "[MII1] uses\r\na [ITEM]!",
+    "ua": "[MII1] вживає\n[ITEM]!"
+  },
+  "msg_legend2_wander_hero_item_ac_u": {
+    "en": "The wanderer uses\r\na [ITEM]!",
+    "ua": "Мандрівник вживає\n[ITEM]!"
+  },
+  "msg_legend2_item_miss_ac_u": {
+    "en": "Nothing happened...",
+    "ua": "Нічого не сталося…"
+  },
+  "msg_legend2_item_barrier_put_ac_03_u": {
+    "en": "The curse gas has\r\nbeen dispersed!",
+    "ua": "Газ прокляття\nрозвіяно!"
+  },
+  "msg_legend2_item_barrier_put_ac_04_u": {
+    "en": "The magic-warding gas has\r\nbeen dispersed!",
+    "ua": "Газ проти магії\nрозвіяно!"
+  },
+  "msg_legend2_item_barrier_put_ac_05_u": {
+    "en": "The level-down gas has\r\nbeen dispersed!",
+    "ua": "Газ пониження рівня\nрозвіяно!"
+  },
+  "msg_legend2_item_seal_put_ac_01_u": {
+    "en": "The [ENEMY]'s powers\r\nhave been nullified!",
+    "ua": "Сили [ENEMY]\nзнешкоджено!"
+  },
+  "msg_legend2_item_seal_put_ac_02_u": {
+    "en": "The monsters' powers\r\nhave been nullified!",
+    "ua": "Сили чудовиськ\nзнешкоджено!"
+  },
+  "msg_legend2_item_rescue_put_ac_u": {
+    "en": "Called back heroes who had left!\r\n(Number of heroes called back: [RECOVER])",
+    "ua": "Героїв, які пішли, повернуто!\n(Повернулося героїв: [RECOVER])"
+  },
+  "msg_legend2_item_powerup_put_ac_u": {
+    "en": "The heroes in the queue\r\nlevelled up!",
+    "ua": "Герої в черзі\nпідвищили рівень!"
+  },
+  "msg_legend2_ed01_u": {
+    "en": "Huh? What? Oh!",
+    "ua": "Га? Що? О!"
+  },
+  "msg_legend2_ed02_u": {
+    "en": "Free! I'm finally free!",
+    "ua": "Воля! Нарешті я вільний!"
+  },
+  "msg_legend2_ed03b_u": {
+    "en": "Well done, Sir [MII1]!",
+    "ua": "Молодець, пане [MII1]!"
+  },
+  "msg_legend2_ed03b_f_u": {
+    "en": "Well done, Lady [MII1]!",
+    "ua": "Молодець, пані [MII1]!"
+  },
+  "msg_legend2_ed03_u": {
+    "en": "Well done, wanderer.",
+    "ua": "Молодець, мандрівнику."
+  },
+  "msg_legend2_ed04_u": {
+    "en": "HEEEEELP!",
+    "ua": "РЯТУУУУЙТЕ!"
+  },
+  "msg_legend2_ed05_u": {
+    "en": "Ungghh...",
+    "ua": "Ууух…"
+  },
+  "msg_legend2_ed06_u": {
+    "en": "So, as I was saying...",
+    "ua": "Отже, на чому я спинився…"
+  },
+  "msg_legend2_ed07_u": {
+    "en": "Thanks for the help!",
+    "ua": "Дякую за допомогу!"
+  },
+  "msg_legend2_ed08_u": {
+    "en": "So, Sir [MII1]...",
+    "ua": "Отже, пане [MII1]…"
+  },
+  "msg_legend2_ed08_f_u": {
+    "en": "So, Lady [MII1]...",
+    "ua": "Отже, пані [MII1]…"
+  },
+  "msg_legend2_ed08b_u": {
+    "en": "Now then, wanderer!",
+    "ua": "А тепер, мандрівнику!"
+  },
+  "msg_legend2_ed09_u": {
+    "en": "And all the other heroes\r\nwho helped along the way!",
+    "ua": "І всі інші герої,\nякі допомагали в дорозі!"
+  },
+  "msg_legend2_ed10_u": {
+    "en": "I want to express my deepest\r\ngratitude for all that you've done.",
+    "ua": "Хочу висловити найглибшу\nвдячність за все, що ви зробили."
+  },
+  "msg_legend2_ed11_u": {
+    "en": "The courage that you've shown in\r\nrescuing your monarch like this...",
+    "ua": "Відвага, з якою ви врятували\nсвого монарха…"
+  },
+  "msg_legend2_ed12_u": {
+    "en": "is the greatest treasure in\r\nour grand kingdom!",
+    "ua": "це найбільший скарб\nнашого великого королівства!"
+  },
+  "msg_legend2_ed13_u": {
+    "en": "The story of what happened here\r\nwill be passed down as legend...",
+    "ua": "Історію того, що тут сталося,\nпередаватимуть як легенду…"
+  },
+  "msg_legend2_ed14_u": {
+    "en": "And your names will live on forever!",
+    "ua": "А ваші імена житимуть вічно!"
+  },
+  "msg_legend2_ed21_u": {
+    "en": "Ahh!",
+    "ua": "Ааа!"
+  },
+  "msg_legend2_ed22_u": {
+    "en": "Help me!",
+    "ua": "Рятуйте!"
+  },
+  "msg_legend2_ed33_u": {
+    "en": "Free! I'm finally free!",
+    "ua": "Воля! Нарешті я вільний!"
+  },
+  "msg_legend2_ed48_u": {
+    "en": "It's... It's the Dark Lord!",
+    "ua": "Це… Це Темний володар!"
+  },
+  "msg_legend2_ed52_u": {
+    "en": "It's... It's the Dark Emperor!",
+    "ua": "Це… Це Темний імператор!"
+  },
+  "msg_legend2_ed49_u": {
+    "en": "This terrible beast wants to swallow\r\nup all the light in the world...",
+    "ua": "Ця страшна почвара хоче\nпоглинути все світло світу…"
+  },
+  "msg_legend2_ed50_u": {
+    "en": "and plunge us all into darkness!",
+    "ua": "і вкинути всіх нас у пітьму!"
+  },
+  "msg_legend2_ed51_u": {
+    "en": "You've got to pull out all the stops!\r\nSave the kingdom - no, the world!",
+    "ua": "Зробіть усе, що можете! Врятуйте\nкоролівство — ні, увесь світ!"
+  },
+  "msg_legend2_ed61_u": {
+    "en": "You have my thanks, heroes.",
+    "ua": "Дякую вам, герої."
+  },
+  "msg_legend2_ed62_u": {
+    "en": "Thank you for saving us.",
+    "ua": "Дякуємо, що врятували нас."
+  },
+  "msg_legend2_ed63_u": {
+    "en": "Thank you, heroes!",
+    "ua": "Дякуємо, герої!"
+  },
+  "msg_legend2_ed64_u": {
+    "en": "We heartily commend you...",
+    "ua": "Щиро вас вітаємо…"
+  },
+  "msg_legend2_ed65_u": {
+    "en": "...for all your hard work!",
+    "ua": "…за всю вашу працю!"
+  },
+  "msg_legend2_ed66_u": {
+    "en": "You've saved more than\r\njust the royal family.",
+    "ua": "Ви врятували не лише\nкоролівську родину."
+  },
+  "msg_legend2_ed67_u": {
+    "en": "You've saved the world!",
+    "ua": "Ви врятували світ!"
+  },
+  "msg_legend2_ed68_u": {
+    "en": "This epic tale of bravery too\r\nshall be passed down the ages.",
+    "ua": "Цю велику оповідь про звитягу\nтеж передаватимуть крізь віки."
+  },
+  "msg_legend2_ed69_u": {
+    "en": "You shall\r\nbecome legends...",
+    "ua": "Ви станете\nлегендою…"
+  },
+  "msg_legend2_ed70_u": {
+    "en": "...and your names shall\r\nlive on forever!",
+    "ua": "…а ваші імена\nжитимуть вічно!"
+  },
+  "msg_legend2_rescue01_u": {
+    "en": "Thank you for coming\r\nto my rescue.",
+    "ua": "Дякую, що прийшли\nмене врятувати."
+  },
+  "msg_legend2_rescue02_u": {
+    "en": "You must be truly powerful\r\nto have defeated such a foe!",
+    "ua": "Певно, ви справді могутні,\nякщо здолали такого ворога!"
+  },
+  "msg_legend2_rescue05_u": {
+    "en": "Now, please venture forth and save\r\nthe regal ruler of our fair kingdom!",
+    "ua": "А тепер вирушайте й врятуйте\nволодаря нашого краю!"
+  },
+  "msg_legend2_rescue03_u": {
+    "en": "I'm free!",
+    "ua": "Я вільний!"
+  },
+  "msg_legend2_rescue04_u": {
+    "en": "You have my thanks! If you hadn't\r\ncome, I'd have been royal toast!",
+    "ua": "Дякую вам! Якби ви не прийшли,\nмені була б королівська біда!"
+  },
+  "msg_legend2_rescue06_u": {
+    "en": "Now, please venture forth and\r\nsave my sister, the princess!",
+    "ua": "А тепер вирушайте й врятуйте\nмою сестру, принцесу!"
+  },
+  "msg_legend2_support_call": {
+    "en": "Get Help",
+    "ua": "Покликати"
+  },
+  "msg_legend2_support_call_cancel": {
+    "en": "Don't Get Help",
+    "ua": "Не кликати"
+  },
+  "msg_legend2_support_info_shield": {
+    "en": "Use [SUPPORT_COIN] Play Coins to get\r\nhelp with this shield?",
+    "ua": "Отримати допомогу зі щитом\nза монетки [SUPPORT_COIN]?"
+  },
+  "msg_legend2_support_info_barrier": {
+    "en": "Use [SUPPORT_COIN] Play Coins to get\r\nhelp with this obstacle?",
+    "ua": "Отримати допомогу з перешкодою\nза монетки [SUPPORT_COIN]?"
+  },
+  "msg_legend2_support_info_surprise": {
+    "en": "Use [SUPPORT_COIN] Play Coins to hire a scout?",
+    "ua": "Найняти розвідника за [SUPPORT_COIN]?"
+  },
+  "msg_legend2_support_info_cancel": {
+    "en": "Fight without Helper Hare.",
+    "ua": "Битися без Кролика-помічника."
+  },
+  "msg_legend2_support_in": {
+    "en": "My, my! Are you in need of assistance?",
+    "ua": "Ой-ой! Вам потрібна допомога?"
+  },
+  "msg_legend2_support_in_first": {
+    "en": "Give me some  Play Coins, and I can hop\r\nback with help in a jiffy.",
+    "ua": "Дайте трохи монеток , і я вмить\nпристрибаю з допомогою."
+  },
+  "msg_legend2_support_in_surprise_00": {
+    "en": "I've got a bad feeling about this...",
+    "ua": "Щось мені це не подобається…"
+  },
+  "msg_legend2_support_in_surprise_01": {
+    "en": "Do you want me to bring someone over\r\nhere to scout things out?",
+    "ua": "Привести когось,\nщоб розвідати обстановку?"
+  },
+  "msg_legend2_support_out": {
+    "en": "Right-o. Just a moment...",
+    "ua": "Гаразд. Хвилинку…"
+  },
+  "msg_legend2_support_wander_hero_in": {
+    "en": "Help has arrived!",
+    "ua": "Допомога прибула!"
+  },
+  "msg_legend2_support_wander_hero_out": {
+    "en": "Mission accomplished! Time to head home.",
+    "ua": "Місію виконано! Час додому."
+  },
+  "msg_legend2_support_cancel_out": {
+    "en": "Understood! I'll pop by again the next time\r\nit looks like you might need help.",
+    "ua": "Зрозумів! Загляну знову, коли\nвам, схоже, знадобиться допомога."
+  },
+  "msg_legend2_support_short_coin_00": {
+    "en": "...Oh. I really wish I could help you, but\r\nyou don't have enough  Play Coins.",
+    "ua": "…Ох. Я б радо допоміг, але\nу вас бракує монеток ."
+  },
+  "msg_legend2_support_short_coin_01": {
+    "en": "I'm afraid I simply cannot work for free.\r\nTerribly sorry. Perhaps next time, then?",
+    "ua": "На жаль, задарма я не працюю.\nДуже прикро. Може, іншим разом?"
+  }
+}

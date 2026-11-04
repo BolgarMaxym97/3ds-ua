@@ -1,0 +1,4250 @@
+{
+  "info_wnd_caption_info": {
+    "en": "Vital Intel",
+    "ua": "Важливі дані"
+  },
+  "info_wnd_caption_confirm": {
+    "en": "Orders, Squad Leader?",
+    "ua": "Накази, командире?"
+  },
+  "info_wnd_caption_menu": {
+    "en": "Command Interface",
+    "ua": "Командний інтерфейс"
+  },
+  "info_wnd_caption_message": {
+    "en": "Incoming Transmission",
+    "ua": "Вхідне повідомлення"
+  },
+  "saveload_msg_init_loading_low": {
+    "en": "Preparing... Please don't turn off the power.",
+    "ua": "Підготовка…\nНе вимикайте консоль."
+  },
+  "list_box_caption_aname": {
+    "en": "Title",
+    "ua": "Звання"
+  },
+  "ticket_list_total_subject": {
+    "en": "Plaza Tickets Acquired: ",
+    "ua": "Отримано квитків Площі:"
+  },
+  "title_intro_msg_00": {
+    "en": "Welcome to StreetPass Squad!",
+    "ua": "Вітаємо в Галактиці StreetPass!"
+  },
+  "title_intro_msg_01": {
+    "en": "In this game, you engage in\r\naerial combat as a squad leader\r\nfor an elite galactic police force.",
+    "ua": "У цій грі ви ведете повітряні бої\nяк командир загону елітної\nгалактичної поліції."
+  },
+  "title_intro_dlg_info": {
+    "en": "Ready to give it a shot?",
+    "ua": "Готові спробувати?"
+  },
+  "title_intro_dlg_yes": {
+    "en": "Yes!",
+    "ua": "Так!"
+  },
+  "title_intro_dlg_no": {
+    "en": "Not right now...",
+    "ua": "Не зараз…"
+  },
+  "title_intro_start": {
+    "en": "That's the spirit.\r\nWelcome aboard!",
+    "ua": "Оце настрій.\nЛаскаво просимо на борт!"
+  },
+  "title_intro_cancel": {
+    "en": "Very well. Perhaps\r\nanother time, then.",
+    "ua": "Гаразд. Може,\nіншим разом."
+  },
+  "title_logo": {
+    "en": "StreetPass Squad",
+    "ua": "Галактика StreetPass"
+  },
+  "title_logo_sdw": {
+    "en": "StreetPass Squad",
+    "ua": "Галактика StreetPass"
+  },
+  "title_press": {
+    "en": "PRESS ",
+    "ua": "НАТИСНІТЬ "
+  },
+  "title_belt": {
+    "en": "Gather your squad\r\nand prepare for combat!",
+    "ua": "Зберіть загін\nй готуйтеся до бою!"
+  },
+  "title_menu_00_txt": {
+    "en": "Report for Duty",
+    "ua": "На службу"
+  },
+  "title_menu_01_txt": {
+    "en": " Hire Troops",
+    "ua": " Найняти бійців"
+  },
+  "title_menu_02_txt": {
+    "en": "Ranking Data",
+    "ua": "Рейтинг"
+  },
+  "title_menu_03_txt": {
+    "en": "Personal File",
+    "ua": "Особова справа"
+  },
+  "title_menu_04_txt": {
+    "en": "Back",
+    "ua": "Назад"
+  },
+  "title_menu_arcade_txt": {
+    "en": "Arcade Mode",
+    "ua": "Аркадний режим"
+  },
+  "title_menu_arc_normal_txt": {
+    "en": "Normal",
+    "ua": "Звичайно"
+  },
+  "title_menu_arc_hard_txt": {
+    "en": "Hard",
+    "ua": "Складно"
+  },
+  "title_menu_arc_return_txt": {
+    "en": "Back",
+    "ua": "Назад"
+  },
+  "title_exit_attention_00": {
+    "en": "If you quit, the troops you\r\nhired using  Play Coins\r\nwill disperse.",
+    "ua": "Якщо вийти, бійці, найняті\nза монетки ,\nрозійдуться."
+  },
+  "title_exit_attentionS_00": {
+    "en": "If you quit, the trooper you\r\nhired using  Play Coins\r\nwill disperse.",
+    "ua": "Якщо вийти, боєць, найнятий\nза монетки ,\nпіде."
+  },
+  "title_exit_confirm_msg": {
+    "en": "Are you sure you\r\nwant to quit?",
+    "ua": "Справді\nвийти?"
+  },
+  "title_exit_confirm_yes": {
+    "en": "Yes",
+    "ua": "Так"
+  },
+  "title_exit_confirm_no": {
+    "en": "No",
+    "ua": "Ні"
+  },
+  "staffroll_press": {
+    "en": "PRESS ",
+    "ua": "НАТИСНІТЬ "
+  },
+  "stg_select_jewel_txt": {
+    "en": "Treasures Recovered",
+    "ua": "Знайдено скарбів"
+  },
+  "stg_select_level_txt": {
+    "en": "Difficulty:",
+    "ua": "Складність:"
+  },
+  "stg_select_hiscore_txt": {
+    "en": "High Score",
+    "ua": "Рекорд"
+  },
+  "stg_select_score_txt": {
+    "en": "Target Score",
+    "ua": "Цільові очки"
+  },
+  "stg_select_nomiss_txt": {
+    "en": "Casualty-Free Clear",
+    "ua": "Без втрат"
+  },
+  "stg_select_nomiss_clear_txt": {
+    "en": "Achieved",
+    "ua": "Виконано"
+  },
+  "stg_select_nomiss_not_clear_txt": {
+    "en": "Not Yet Achieved",
+    "ua": "Ще не виконано"
+  },
+  "stg_select_pop_game_00": {
+    "en": "Start Mission",
+    "ua": "Почати місію"
+  },
+  "stg_select_pop_ranking": {
+    "en": "View Rankings",
+    "ua": "Рейтинг"
+  },
+  "stg_select_pop_return": {
+    "en": "Back",
+    "ua": "Назад"
+  },
+  "stg_select_pop_arc_caption": {
+    "en": "Arcade Mode",
+    "ua": "Аркадний режим"
+  },
+  "stg_select_pop_arc_normal": {
+    "en": "Normal",
+    "ua": "Звичайно"
+  },
+  "stg_select_pop_arc_hard": {
+    "en": "Hard",
+    "ua": "Складно"
+  },
+  "button_long_continue": {
+    "en": "Continue",
+    "ua": "Далі"
+  },
+  "button_long_exit": {
+    "en": "Quit",
+    "ua": "Вийти"
+  },
+  "button_long_arcade": {
+    "en": "Arcade Mode",
+    "ua": "Аркадний режим"
+  },
+  "stg_select_pause_txt": {
+    "en": "PAUSE",
+    "ua": "ПАУЗА"
+  },
+  "PAUSE_INFO_00": {
+    "en": "If you exit now, the recruits\r\nyou've gathered will disperse.\r\nAre you sure you want to quit?",
+    "ua": "Якщо вийти зараз, зібрані\nновобранці розійдуться.\nСправді вийти?"
+  },
+  "PAUSE_INFO_00s": {
+    "en": "If you exit now, the recruit you've\r\ngathered will disperse.\r\nAre you sure you want to quit?",
+    "ua": "Якщо вийти зараз, зібраний\nновобранець піде.\nСправді вийти?"
+  },
+  "PAUSE_INFO_01a": {
+    "en": "Yes",
+    "ua": "Так"
+  },
+  "PAUSE_INFO_01b": {
+    "en": "No",
+    "ua": "Ні"
+  },
+  "result_title_txt": {
+    "en": "Results",
+    "ua": "Підсумки"
+  },
+  "result_st_name_txt_a": {
+    "en": "You reached [0] - [1].",
+    "ua": "Ви дісталися до [0] - [1]."
+  },
+  "result_st_name_txt_a_clear": {
+    "en": "All missions cleared.",
+    "ua": "Усі місії виконано."
+  },
+  "result_st_score_txt": {
+    "en": "Mission Score",
+    "ua": "Очки за місію"
+  },
+  "result_jewel_txt": {
+    "en": "Treasures Recovered",
+    "ua": "Знайдено скарбів"
+  },
+  "result_jewel_a_x_txt": {
+    "en": "x",
+    "ua": "x"
+  },
+  "result_mii_txt_00": {
+    "en": "Mii Pods Intact",
+    "ua": "Цілих капсул Mii"
+  },
+  "result_total_txt": {
+    "en": "Total Score",
+    "ua": "Загальні очки"
+  },
+  "NOTIFY_OPEN_STAGE": {
+    "en": "A new mission,\r\n[System:Color name=\"mgSht_red\" ][0][/System:Color],\r\nis now available.",
+    "ua": "Доступна нова місія:\n[System:Color name=\"mgSht_red\" ][0][/System:Color]."
+  },
+  "NOTIFY_OPEN_AREA": {
+    "en": "Your planetary patrol\r\narea has increased.",
+    "ua": "Зона вашого планетарного\nпатруля розширилася."
+  },
+  "NOTIFY_OPEN_ARCADE": {
+    "en": "Arcade Mode\r\nhas been unlocked.",
+    "ua": "Відкрито\nаркадний режим."
+  },
+  "NOTIFY_OPEN_ANAME_00": {
+    "en": "You can now select the title\r\n[System:Color name=\"mgSht_red\" ][0][/System:Color].",
+    "ua": "Тепер можна вибрати звання\n[System:Color name=\"mgSht_red\" ][0][/System:Color]."
+  },
+  "NOTIFY_OPEN_ANAME_01": {
+    "en": "Your [System:Color name=\"mgSht_red\" ]title[/System:Color] defines how you are\r\nknown in StreetPass Galaxy. ",
+    "ua": "[System:Color name=\"mgSht_red\" ]Звання[/System:Color] визначає, як вас знають\nу Галактиці StreetPass."
+  },
+  "NOTIFY_OPEN_ANAME_02": {
+    "en": "Clear missions to unlock new titles.\r\nYou're sure to find one that really\r\ncatches your eye!",
+    "ua": "Місії відкривають нові звання.\nНеодмінно знайдете таке,\nщо припаде до душі!"
+  },
+  "NOTIFY_GET_CAP_TICKET_00": {
+    "en": "You've accomplished a goal:\r\n[System:Color name=\"mgSht_red\" ][0][/System:Color]\r\nThat's nabbed you a [System:Color name=\"mgSht_red\" ]plaza ticket[/System:Color]!",
+    "ua": "Ви досягли мети:\n[System:Color name=\"mgSht_red\" ][0][/System:Color]\nЗа це вам [System:Color name=\"mgSht_red\" ]квиток Площі[/System:Color]!"
+  },
+  "NOTIFY_GET_CAP_TICKET_01": {
+    "en": "How spiffing, you got a [System:Color name=\"mgSht_red\" ]plaza\r\nticket[/System:Color]! Visit the exchange booth\r\nin the plaza to redeem it.",
+    "ua": "Чудово, ви отримали [System:Color name=\"mgSht_red\" ]квиток\nПлощі[/System:Color]! Обміняйте його\nв обмінному пункті на площі."
+  },
+  "NOTIFY_GET_CAP_TICKET_01m": {
+    "en": "You got some [System:Color name=\"mgSht_red\" ]plaza tickets[/System:Color]!\r\nVisit the exchange booth in\r\nthe plaza to redeem them.",
+    "ua": "Ви отримали [System:Color name=\"mgSht_red\" ]квитки Площі[/System:Color]!\nОбміняйте їх в обмінному\nпункті на площі."
+  },
+  "NOTIFY_GET_CAP_00": {
+    "en": "You've acquired the\r\n[System:Color name=\"mgSht_red\" ][CAP][/System:Color].",
+    "ua": "Ви здобули:\n[System:Color name=\"mgSht_red\" ][CAP][/System:Color]."
+  },
+  "NOTIFY_GET_CAP_01": {
+    "en": "Try putting it on your\r\nStreetPass Mii!",
+    "ua": "Спробуйте вдягнути його\nна свого Mii для StreetPass!"
+  },
+  "NOTIFY_GET_CAP_02": {
+    "en": "Choose your StreetPass Mii\r\nfrom the plaza...",
+    "ua": "Виберіть на площі свого\nMii для StreetPass…"
+  },
+  "NOTIFY_GET_CAP_03": {
+    "en": "And then choose Mii Settings!",
+    "ua": "а тоді — «Параметри Mii»!"
+  },
+  "NOTIFY_NO_MISS_CLEAR": {
+    "en": "You cleared this mission\r\nwith all your pods intact!",
+    "ua": "Ви виконали місію,\nне втративши жодної капсули!"
+  },
+  "NOTIFY_SCORE_CLEAR": {
+    "en": "You reached this mission's\r\ntarget score!",
+    "ua": "Ви набрали цільові\nочки місії!"
+  },
+  "HAT_TICKET_STG": {
+    "en": "Beat the boss of [0].",
+    "ua": "Перемогти боса місії «[0]»."
+  },
+  "HAT_TICKET_15": {
+    "en": "Destroy the Robo-Bone's hands.",
+    "ua": "Знищити руки Робо-Кістки."
+  },
+  "HAT_TICKET_16": {
+    "en": "Clear all missions with all pods intact.",
+    "ua": "Виконати всі місії без втрат."
+  },
+  "HAT_TICKET_17": {
+    "en": "Clear Arcade Mode.",
+    "ua": "Пройти аркадний режим."
+  },
+  "HAT_TICKET_18": {
+    "en": "Defeat a total of 5,000 enemies.",
+    "ua": "Знищити загалом 5000 ворогів."
+  },
+  "HAT_TICKET_19": {
+    "en": "Get [0] pods through missions intact.",
+    "ua": "Провести [0] капсул без втрат."
+  },
+  "HAT_TICKET_20": {
+    "en": "Unlock all titles.",
+    "ua": "Відкрити всі звання."
+  },
+  "HAT_TICKET_21": {
+    "en": "Recover all treasures from all missions.",
+    "ua": "Знайти всі скарби в усіх місіях."
+  },
+  "HAT_TICKET_22": {
+    "en": "Reach every mission's target score.",
+    "ua": "Набрати цільові очки в кожній місії."
+  },
+  "rank_txt_title": {
+    "en": "StreetPass Ranking",
+    "ua": "Рейтинг StreetPass"
+  },
+  "rank_txt_arcade_normal": {
+    "en": "Arcade Mode\r\n(Normal)",
+    "ua": "Аркадний режим\n(звичайний)"
+  },
+  "rank_txt_arcade_hard": {
+    "en": "Arcade Mode\r\n(Hard)",
+    "ua": "Аркадний режим\n(складний)"
+  },
+  "rank_txt_scname": {
+    "en": "Your Best Score",
+    "ua": "Ваш рекорд"
+  },
+  "rank_txt_scname_1": {
+    "en": "New Score",
+    "ua": "Нові очки"
+  },
+  "employ_wander_mii_name": {
+    "en": "Mercenary",
+    "ua": "Найманець"
+  },
+  "employ_wander_mii_name_f": {
+    "en": "Mercenary",
+    "ua": "Найманка"
+  },
+  "employ_wander_mii_name_A": {
+    "en": "brave mercenary",
+    "ua": "сміливець"
+  },
+  "employ_wander_mii_name_A_f": {
+    "en": "brave mercenary",
+    "ua": "сміливиця"
+  },
+  "employ_wander_mii_name_B": {
+    "en": "mercenary",
+    "ua": "найманець"
+  },
+  "employ_wander_mii_name_B_f": {
+    "en": "mercenary",
+    "ua": "найманка"
+  },
+  "employ_info_init": {
+    "en": "You can hire up to\r\n10 troops using\r\n Play Coins.",
+    "ua": "За монетки  можна\nнайняти до 10 бійців."
+  },
+  "employ_info_full_00": {
+    "en": "Your squad is chock-full\r\nright now.",
+    "ua": "Ваш загін зараз\nукомплектовано."
+  },
+  "employ_info_full_01": {
+    "en": "It's time to\r\nreport for duty!",
+    "ua": "Час заступати\nна службу!"
+  },
+  "employ_info_full_stock_mii_00": {
+    "en": "Why, you've got an\r\nabundance of old allies.",
+    "ua": "Ого, у вас повно\nдавніх соратників."
+  },
+  "employ_info_full_stock_mii_01": {
+    "en": "It's time to report for duty - or\r\nperhaps hire some mercenaries!",
+    "ua": "Час на службу — або,\nможе, найняти найманців!"
+  },
+  "employ_info_end": {
+    "en": "It's time to\r\nreport for duty!",
+    "ua": "Час заступати\nна службу!"
+  },
+  "employ_info_start_employ_a": {
+    "en": "You can hire mercenaries to fill\r\nempty spots on your squad.",
+    "ua": "Найманцями можна заповнити\nпорожні місця в загоні."
+  },
+  "employ_info_start_employ_b": {
+    "en": "You can hire up to [System:Color name=\"mgSht_red\" ]three[/System:Color] old\r\nallies per mission, at a cost\r\nof [0] Play Coins each.",
+    "ua": "За місію можна найняти до [System:Color name=\"mgSht_red\" ]трьох[/System:Color]\nдавніх соратників по\n[0] монеток за кожного."
+  },
+  "employ_info_not_enough_coin": {
+    "en": "I say, you haven't\r\nenough  Play Coins\r\nin the piggy bank!",
+    "ua": "Овва, у скарбничці\nбракує монеток !"
+  },
+  "employ_info_no_stock_mii": {
+    "en": "It seems you don't have any\r\nold allies yet. Try to find some\r\nbrave recruits via StreetPass!",
+    "ua": "Схоже, давніх соратників\nще немає. Шукайте відважних\nновобранців через StreetPass!"
+  },
+  "employ_info_no_stock_mii_b": {
+    "en": "It seems you've run\r\nout of old allies.",
+    "ua": "Схоже, давні соратники\nскінчилися."
+  },
+  "employ_menu_stock": {
+    "en": " Hire Old Allies",
+    "ua": " Найняти соратників"
+  },
+  "employ_menu_wander": {
+    "en": " Hire Mercenaries",
+    "ua": " Найняти найманців"
+  },
+  "employ_menu_return": {
+    "en": "Back",
+    "ua": "Назад"
+  },
+  "employ_coin_txt": {
+    "en": " Play Coins",
+    "ua": "Монетки "
+  },
+  "employ_mii_txt": {
+    "en": "Gathered Recruits",
+    "ua": "Зібрані новобранці"
+  },
+  "employ_dlg_info_1st": {
+    "en": "Do you want to use\r\n[0] Play Coins to\r\nhire a mercenary?",
+    "ua": "Найняти найманця\nза [0] монеток?"
+  },
+  "employ_dlg_info": {
+    "en": "Do you want to hire\r\nanother mercenary?",
+    "ua": "Найняти ще\nодного найманця?"
+  },
+  "employ_dlg_ok": {
+    "en": "Yes",
+    "ua": "Так"
+  },
+  "employ_dlg_cancel": {
+    "en": "No",
+    "ua": "Ні"
+  },
+  "employ_card_color_caption": {
+    "en": "Favourite Colour",
+    "ua": "Колір"
+  },
+  "employ_result_stock": {
+    "en": "You've hired your old ally\r\n[System:Color name=\"mgSht_red\" ][MII_NAME][/System:Color].",
+    "ua": "Найнято соратника:\n[System:Color name=\"mgSht_red\" ][MII_NAME][/System:Color]."
+  },
+  "employ_result_wander": {
+    "en": "You've hired a mercenary.",
+    "ua": "Ви найняли найманця."
+  },
+  "employ_remain_num_txt": {
+    "en": "[0] more allowed",
+    "ua": "Ще можна: [0]"
+  },
+  "setting_menu_aname": {
+    "en": "Change Title",
+    "ua": "Змінити звання"
+  },
+  "setting_menu_ticket": {
+    "en": "Plaza Ticket Data",
+    "ua": "Квитки Площі"
+  },
+  "setting_aname_cap": {
+    "en": "Title",
+    "ua": "Звання"
+  },
+  "setting_mii_country_cap": {
+    "en": "Base of Operations",
+    "ua": "База"
+  },
+  "DUMMY_COUNTRY": {
+    "en": "StreetPass Galaxy",
+    "ua": "Галактика StreetPass"
+  },
+  "setting_mii_name_cap": {
+    "en": "Name",
+    "ua": "Ім'я"
+  },
+  "setting_aname_pre_confirm_msg": {
+    "en": "Would you like a new title?\r\nCurrently you are known as:",
+    "ua": "Хочете нове звання?\nЗараз вас знають як:"
+  },
+  "setting_pre_confirm_yes": {
+    "en": "Yes",
+    "ua": "Так"
+  },
+  "setting_pre_confirm_no": {
+    "en": "No",
+    "ua": "Ні"
+  },
+  "setting_aname_explain_00": {
+    "en": "Your reputation will precede you,\r\nSquad Leader. How would you like\r\nto be known in StreetPass Galaxy?",
+    "ua": "Ваша слава йде попереду вас,\nкомандире. Як вас мають знати\nв Галактиці StreetPass?"
+  },
+  "setting_aname_post_confirm_msg": {
+    "en": "Is this the title you choose?",
+    "ua": "Вибрати це звання?"
+  },
+  "setting_aname_post_confirm_yes": {
+    "en": "Yes",
+    "ua": "Так"
+  },
+  "setting_aname_post_confirm_no": {
+    "en": "No",
+    "ua": "Ні"
+  },
+  "setting_aname_end_msg": {
+    "en": "Your title is\r\n[System:Color name=\"mgSht_red\" ][0][/System:Color].",
+    "ua": "Ваше звання:\n[System:Color name=\"mgSht_red\" ][0][/System:Color]."
+  },
+  "prof_mii_weapon_lv": {
+    "en": "Lv. [0]",
+    "ua": "Рів. [0]"
+  },
+  "prof_formation_txt": {
+    "en": "Docking Port Schematic",
+    "ua": "Схема стикувальних портів"
+  },
+  "prof_help_txt": {
+    "en": "To move a pod, tap it\r\nand then tap a new port.",
+    "ua": "Щоб перемістити капсулу,\nторкніться її, а потім нового порту."
+  },
+  "prof_lv1_txt": {
+    "en": "Weapon port",
+    "ua": "Порт зброї"
+  },
+  "prof_lv2_txt": {
+    "en": "Power-up port",
+    "ua": "Порт посилення"
+  },
+  "telop_message_01": {
+    "en": "Tap to choose a docking port. Confirm with .",
+    "ua": "Торкніться порту, щоб вибрати. Підтвердьте ."
+  },
+  "COME_IN_INFO_00": {
+    "en": "Tap one of the glowing ports\r\nto move the selected Mii pod.",
+    "ua": "Торкніться порту, що світиться,\nщоб перемістити капсулу Mii."
+  },
+  "help_formation_txt": {
+    "en": "Controls",
+    "ua": "Керування"
+  },
+  "help_rotate_txt_00": {
+    "en": "　　Rotate　　",
+    "ua": "　　Обертати　　"
+  },
+  "help_move_txt_01": {
+    "en": "Move",
+    "ua": "Рух"
+  },
+  "help_attack_txt_01": {
+    "en": "Fire",
+    "ua": "Вогонь"
+  },
+  "mii_mes_balloonA_00": {
+    "en": "Help!",
+    "ua": "Рятуйте!"
+  },
+  "mii_mes_balloonA_01": {
+    "en": "Hey!",
+    "ua": "Гей!"
+  },
+  "mii_mes_balloonA_02": {
+    "en": "I'm right here!",
+    "ua": "Я тут!"
+  },
+  "mii_mes_balloonA_03": {
+    "en": "Come this way!",
+    "ua": "Сюди!"
+  },
+  "mii_mes_balloonA_04": {
+    "en": "Over here!",
+    "ua": "Ось тут!"
+  },
+  "mii_mes_balloonA_05": {
+    "en": "This way!",
+    "ua": "Сюдою!"
+  },
+  "mii_mes_balloonA_06": {
+    "en": "Ready for pickup!",
+    "ua": "Забирайте!"
+  },
+  "mii_mes_balloonA_07": {
+    "en": "Help me!",
+    "ua": "Рятуйте!"
+  },
+  "mii_mes_balloonA_08": {
+    "en": "So alone...",
+    "ua": "Так самотньо…"
+  },
+  "mii_mes_balloonA_09": {
+    "en": "Look lively!",
+    "ua": "Жвавіше!"
+  },
+  "mii_mes_balloonA_10": {
+    "en": "Here! HERE!",
+    "ua": "Тут! ТУТ!"
+  },
+  "mii_mes_balloonA_11": {
+    "en": "Let's do this!",
+    "ua": "Поїхали!"
+  },
+  "mii_mes_balloonA_12": {
+    "en": "I'm so excited!",
+    "ua": "Як захопливо!"
+  },
+  "mii_mes_balloonA_13": {
+    "en": "Squad Leader!",
+    "ua": "Командире!"
+  },
+  "mii_mes_balloonA_14": {
+    "en": "Let's get 'em!",
+    "ua": "Уперед, на них!"
+  },
+  "mii_mes_balloonA_15": {
+    "en": "Hello!",
+    "ua": "Привіт!"
+  },
+  "mii_mes_balloonB_00": {
+    "en": "Let's get cracking!",
+    "ua": "До справи!"
+  },
+  "mii_mes_balloonB_01": {
+    "en": "I'm ready!",
+    "ua": "Я готовий!"
+  },
+  "mii_mes_balloonB_02": {
+    "en": "Cheers!",
+    "ua": "Дякую!"
+  },
+  "mii_mes_balloonB_03": {
+    "en": "Bring it on!",
+    "ua": "А ну давай!"
+  },
+  "mii_mes_balloonB_04": {
+    "en": "Let's go!",
+    "ua": "Уперед!"
+  },
+  "mii_mes_balloonB_05": {
+    "en": "Blimey!",
+    "ua": "Овва!"
+  },
+  "mii_mes_balloonB_06": {
+    "en": "I can do this!",
+    "ua": "Я зможу!"
+  },
+  "mii_mes_balloonB_07": {
+    "en": "Yay!",
+    "ua": "Ура!"
+  },
+  "mii_mes_balloonB_08": {
+    "en": "Ready to go!",
+    "ua": "Готовий рушати!"
+  },
+  "mii_mes_balloonB_09": {
+    "en": "Thanks a million!",
+    "ua": "Красно дякую!"
+  },
+  "mii_mes_balloonB_10": {
+    "en": "Chocks away!",
+    "ua": "На зліт!"
+  },
+  "mii_mes_balloonB_11": {
+    "en": "We can do this!",
+    "ua": "Ми зможемо!"
+  },
+  "mii_mes_balloonB_12": {
+    "en": "Don't forget me!",
+    "ua": "Не забудьте мене!"
+  },
+  "mii_mes_balloonB_13": {
+    "en": "Yoohoo!",
+    "ua": "Агов!"
+  },
+  "mii_mes_balloonB_14": {
+    "en": "All set!",
+    "ua": "Усе готово!"
+  },
+  "mii_mes_balloonB_15": {
+    "en": "Ready!",
+    "ua": "Готовий!"
+  },
+  "mii_mes_balloonC_00": {
+    "en": "Last one in's a bad egg!",
+    "ua": "Хто останній — той нечупара!"
+  },
+  "mii_mes_balloonC_01": {
+    "en": "Let's collect all the gems!",
+    "ua": "Зберімо всі самоцвіти!"
+  },
+  "mii_mes_balloonC_02": {
+    "en": "It's an honour, Squad Leader!",
+    "ua": "Це честь, командире!"
+  },
+  "mii_mes_balloonC_03": {
+    "en": "Shall we?",
+    "ua": "Почнімо?"
+  },
+  "mii_mes_balloonC_04": {
+    "en": "I'm ready. Let's go!",
+    "ua": "Я готовий. Уперед!"
+  },
+  "mii_mes_balloonC_05": {
+    "en": "You can count on me!",
+    "ua": "Можете на мене покластися!"
+  },
+  "mii_mes_balloonC_06": {
+    "en": "Time to get serious.",
+    "ua": "Час взятися всерйоз."
+  },
+  "mii_mes_balloonC_07": {
+    "en": "For peace and justice!",
+    "ua": "За мир і справедливість!"
+  },
+  "mii_mes_balloonC_08": {
+    "en": "How exciting!",
+    "ua": "Як захопливо!"
+  },
+  "mii_mes_balloonC_09": {
+    "en": "Mii Force forever!",
+    "ua": "Mii Force назавжди!"
+  },
+  "mii_mes_balloonC_10": {
+    "en": "Time to prove myself!",
+    "ua": "Час себе показати!"
+  },
+  "mii_mes_balloonC_11": {
+    "en": "I won't fail you!",
+    "ua": "Я не підведу!"
+  },
+  "mii_mes_balloonC_12": {
+    "en": "I'll give it 110%!",
+    "ua": "Викладуся на 110%!"
+  },
+  "mii_mes_balloonC_13": {
+    "en": "Watch and learn!",
+    "ua": "Дивіться й вчіться!"
+  },
+  "mii_mes_balloonC_14": {
+    "en": "Reporting for duty!",
+    "ua": "Прибув на службу!"
+  },
+  "mii_mes_balloonC_15": {
+    "en": "Easy peasy lemon squeezy!",
+    "ua": "Простіше простого!"
+  },
+  "mii_mes_balloonJ_00": {
+    "en": "Wait! It's a trap!",
+    "ua": "Стійте! Це пастка!"
+  },
+  "mii_mes_balloonJ_01": {
+    "en": "What is this?! Help me!",
+    "ua": "Що це?! Рятуйте!"
+  },
+  "mii_mes_balloonJ_02": {
+    "en": "Ack! I've been captured!",
+    "ua": "Ай! Мене схопили!"
+  },
+  "mii_mes_balloonJ_03": {
+    "en": "Wheee! This is fun! Hur hur hur!",
+    "ua": "Ухх! Як весело! Гі-гі-гі!"
+  },
+  "mii_mes_balloonL_00": {
+    "en": "Let's finish this!",
+    "ua": "Покінчімо з цим!"
+  },
+  "mii_mes_balloonL_01": {
+    "en": "It's time to end this!",
+    "ua": "Час це закінчити!"
+  },
+  "mii_mes_balloonL_02": {
+    "en": "For intergalactic peace and harmony!",
+    "ua": "За мир і злагоду в галактиці!"
+  },
+  "mii_mes_balloonL_03": {
+    "en": "This'll be a piece of cake with you in charge!",
+    "ua": "З вами на чолі це раз плюнути!"
+  },
+  "mii_mes_balloonL_04": {
+    "en": "Gold Bone, I'm coming for you!",
+    "ua": "Золота Кістко, я йду по тебе!"
+  },
+  "mii_mes_balloonL_05": {
+    "en": "Not much longer now, guys!",
+    "ua": "Ще трохи, друзі!"
+  },
+  "mii_mes_balloonL_06": {
+    "en": "Mii Force, ready to rock 'n' roll!",
+    "ua": "Mii Force, на старт, рок-н-рол!"
+  },
+  "mii_mes_balloonL_07": {
+    "en": "Time to make history!",
+    "ua": "Час творити історію!"
+  },
+  "mii_mes_balloonS_00": {
+    "en": "Special attack time!",
+    "ua": "Час особливої атаки!"
+  },
+  "mii_mes_balloonS_01": {
+    "en": "Time for my special attack to shine!",
+    "ua": "Час засяяти моїй особливій атаці!"
+  },
+  "mii_mes_balloonS_02": {
+    "en": "I've been practising my special attack all week!",
+    "ua": "Я цілий тиждень тренував особливу атаку!"
+  },
+  "mii_mes_balloonS_03": {
+    "en": "Check out my fancy special attack!",
+    "ua": "Гляньте на мою вишукану особливу атаку!"
+  },
+  "mii_mes_balloonS_04": {
+    "en": "My special attack's ready to go!",
+    "ua": "Моя особлива атака готова!"
+  },
+  "mii_mes_balloonS_05": {
+    "en": "My special attack's ready to rock!",
+    "ua": "Особлива атака готова до бою!"
+  },
+  "mii_mes_balloonS_06": {
+    "en": "Witness the might of my special attack!",
+    "ua": "Узріть міць моєї особливої атаки!"
+  },
+  "mii_mes_balloonS_07": {
+    "en": "Special attack - ready! CHAAARGE!",
+    "ua": "Особлива атака готова! В АТАКУ!"
+  },
+  "lose_message_00": {
+    "en": "Mayday! I'm hit!\r\nI've got to retreat.",
+    "ua": "Mayday! Мене підбито!\nМушу відступити."
+  },
+  "weapon_00": {
+    "en": "Wave Blaster",
+    "ua": "Хвилемет"
+  },
+  "weapon_01": {
+    "en": "Homing Sharks",
+    "ua": "Самонавідні акули"
+  },
+  "weapon_02": {
+    "en": "Plasma Whip",
+    "ua": "Плазмобатіг"
+  },
+  "weapon_03": {
+    "en": "Kinetic Crusher",
+    "ua": "Кінетобій"
+  },
+  "weapon_04": {
+    "en": "Incinerator",
+    "ua": "Спопелювач"
+  },
+  "weapon_05": {
+    "en": "Globular Cannon",
+    "ua": "Кульова гармата"
+  },
+  "weapon_06": {
+    "en": "Warp Charge",
+    "ua": "Варп-заряд"
+  },
+  "weapon_07": {
+    "en": "Chain Lightning",
+    "ua": "Блискавиця"
+  },
+  "weapon_08": {
+    "en": "Vorpal Laser",
+    "ua": "Лазер-спис"
+  },
+  "weapon_09": {
+    "en": "Spike Launcher",
+    "ua": "Шипомет"
+  },
+  "weapon_10": {
+    "en": "Bomb Blaster",
+    "ua": "Бомбомет"
+  },
+  "weapon_11": {
+    "en": "Cosmic Cutter",
+    "ua": "Космоніж"
+  },
+  "weapon_text_00": {
+    "en": "Fires a barrage of destructive wave\r\npulses. Power up for stronger strikes.",
+    "ua": "Шквал руйнівних хвильових імпульсів.\nПосильте для потужніших ударів."
+  },
+  "weapon_text_01": {
+    "en": "Merciless space sharks hunt down your\r\ntargets. Power up for improved tracking.",
+    "ua": "Безжальні космічні акули полюють на цілі.\nПосильте для кращого наведення."
+  },
+  "weapon_text_02": {
+    "en": "Grabs items and whips foes into shape!\r\nPower up for even greater reach.",
+    "ua": "Хапає предмети й шмагає ворогів!\nПосильте для ще більшої дальності."
+  },
+  "weapon_text_03": {
+    "en": "Fire bouncy ballistic balls!\r\nPower up for beefier bouncers.",
+    "ua": "Стріляє пружними кулями!\nПосильте для важчих куль."
+  },
+  "weapon_text_04": {
+    "en": "Fuel the flames of wrath! Power up\r\nto really get things burning.",
+    "ua": "Розпаліть полум'я гніву! Посильте,\nщоб усе як слід запалало."
+  },
+  "weapon_text_05": {
+    "en": "This pink stuff's not just sticky, it's deadly!\r\nPower up for more gooey globs.",
+    "ua": "Ця рожева штука не лише липка, а й смертельна!\nПосильте для більших липких куль."
+  },
+  "weapon_text_06": {
+    "en": "Charges up when you're not firing. Unleash\r\nit with ! Power up for bigger blasts.",
+    "ua": "Заряджається, поки не стріляєте. Випустіть\n! Посильте для потужніших вибухів."
+  },
+  "weapon_text_07": {
+    "en": "When lightning strikes, it goes the distance!\r\nPower up to electrify your experience.",
+    "ua": "Коли б'є блискавка, вона летить далеко!\nПосильте, щоб наелектризувати бій."
+  },
+  "weapon_text_08": {
+    "en": "Pierces right through most enemies!\r\nPower up to pierce through terrain too.",
+    "ua": "Пробиває більшість ворогів наскрізь!\nПосильте, щоб пробивати й стіни."
+  },
+  "weapon_text_09": {
+    "en": "Special spikes that'll rip through the baddies.\r\nPower up to block projectiles too!",
+    "ua": "Особливі шипи, що розривають лиходіїв.\nПосильте, щоб блокувати й снаряди!"
+  },
+  "weapon_text_10": {
+    "en": "Get a real BANG out of battles!\r\nPower up for bigger bombs.",
+    "ua": "Справжній БАБАХ у бою!\nПосильте для більших бомб."
+  },
+  "weapon_text_11": {
+    "en": "Destroys enemy bullets before they can get to\r\nyou! Power up to blast straight through them.",
+    "ua": "Знищує ворожі кулі, перш ніж вони долетять!\nПосильте, щоб пробивати їх наскрізь."
+  },
+  "AREA_NAME_01": {
+    "en": "Planet Festiva",
+    "ua": "Фестива"
+  },
+  "AREA_NAME_02": {
+    "en": "Planet Arruine",
+    "ua": "Арруїна"
+  },
+  "AREA_NAME_03": {
+    "en": "Planet Mirthos",
+    "ua": "Міртос"
+  },
+  "AREA_NAME_04": {
+    "en": "Planet Aquatis",
+    "ua": "Акватіс"
+  },
+  "AREA_NAME_05": {
+    "en": "StreetPass Galaxy",
+    "ua": "Галактика StreetPass"
+  },
+  "STAGE_NAME_GS111": {
+    "en": "Platinum Beach",
+    "ua": "Пляж Платина"
+  },
+  "STAGE_NAME_GS112": {
+    "en": "Dunewatch Castle",
+    "ua": "Замок Дюнозор"
+  },
+  "STAGE_NAME_GS113": {
+    "en": "Cerulean Tower",
+    "ua": "Лазурова вежа"
+  },
+  "STAGE_NAME_GS211": {
+    "en": "Slitherstone Ruins",
+    "ua": "Руїни Зміїного Каменю"
+  },
+  "STAGE_NAME_GS212": {
+    "en": "Ragnablok Chasm",
+    "ua": "Прірва Рагнаблок"
+  },
+  "STAGE_NAME_GS213": {
+    "en": "Ancient Arena",
+    "ua": "Давня арена"
+  },
+  "STAGE_NAME_GS311": {
+    "en": "Parade o' Plunder",
+    "ua": "Парад грабіжників"
+  },
+  "STAGE_NAME_GS312": {
+    "en": "Bone Rattler",
+    "ua": "Кістобрязк"
+  },
+  "STAGE_NAME_GS313": {
+    "en": "Wheels of Woe",
+    "ua": "Колеса біди"
+  },
+  "STAGE_NAME_GS411": {
+    "en": "Nautilus Nest",
+    "ua": "Гніздо Наутилуса"
+  },
+  "STAGE_NAME_GS412": {
+    "en": "Resource-Rich Ridge",
+    "ua": "Багатий хребет"
+  },
+  "STAGE_NAME_GS413": {
+    "en": "Amethyst Atoll",
+    "ua": "Аметистовий атол"
+  },
+  "STAGE_NAME_GS511": {
+    "en": "Battle Bone Mk 7",
+    "ua": "Бойова Кістка Мк 7"
+  },
+  "STAGE_NAME_GS512": {
+    "en": "GB-1 Space Dock",
+    "ua": "Космодок GB-1"
+  },
+  "STAGE_NAME_GS513": {
+    "en": "GB-1 Central Core",
+    "ua": "Ядро GB-1"
+  },
+  "ANOTHER_NAME_STOCK_MII": {
+    "en": "Old Ally",
+    "ua": "Давній соратник"
+  },
+  "ANOTHER_NAME_STOCK_MII_F": {
+    "en": "Old Ally",
+    "ua": "Соратниця"
+  },
+  "ANOTHER_NAME_A00": {
+    "en": "Lance Corporal",
+    "ua": "Єфрейтор"
+  },
+  "ANOTHER_NAME_A00_F": {
+    "en": "Lance Corporal",
+    "ua": "Єфрейтор"
+  },
+  "ANOTHER_NAME_A01": {
+    "en": "Corporal",
+    "ua": "Капрал"
+  },
+  "ANOTHER_NAME_A01_F": {
+    "en": "Corporal",
+    "ua": "Капрал"
+  },
+  "ANOTHER_NAME_A02": {
+    "en": "Sergeant",
+    "ua": "Сержант"
+  },
+  "ANOTHER_NAME_A02_F": {
+    "en": "Sergeant",
+    "ua": "Сержант"
+  },
+  "ANOTHER_NAME_A03": {
+    "en": "Flight Sergeant",
+    "ua": "Штаб-сержант"
+  },
+  "ANOTHER_NAME_A03_F": {
+    "en": "Flight Sergeant",
+    "ua": "Штаб-сержант"
+  },
+  "ANOTHER_NAME_A04": {
+    "en": "Pilot Officer",
+    "ua": "Молодший лейтенант"
+  },
+  "ANOTHER_NAME_A04_F": {
+    "en": "Pilot Officer",
+    "ua": "Молодший лейтенант"
+  },
+  "ANOTHER_NAME_A05": {
+    "en": "Flight Lieutenant",
+    "ua": "Лейтенант"
+  },
+  "ANOTHER_NAME_A05_F": {
+    "en": "Flight Lieutenant",
+    "ua": "Лейтенант"
+  },
+  "ANOTHER_NAME_A06": {
+    "en": "Wing Commander",
+    "ua": "Командир крила"
+  },
+  "ANOTHER_NAME_A06_F": {
+    "en": "Wing Commander",
+    "ua": "Командир крила"
+  },
+  "ANOTHER_NAME_A07": {
+    "en": "Captain",
+    "ua": "Капітан"
+  },
+  "ANOTHER_NAME_A07_F": {
+    "en": "Captain",
+    "ua": "Капітан"
+  },
+  "ANOTHER_NAME_A08": {
+    "en": "Commodore",
+    "ua": "Коммодор"
+  },
+  "ANOTHER_NAME_A08_F": {
+    "en": "Commodore",
+    "ua": "Коммодор"
+  },
+  "ANOTHER_NAME_A09": {
+    "en": "Marshal",
+    "ua": "Маршал"
+  },
+  "ANOTHER_NAME_A09_F": {
+    "en": "Marshal",
+    "ua": "Маршал"
+  },
+  "ANOTHER_NAME_B00": {
+    "en": "Tricksy",
+    "ua": "Хитрий"
+  },
+  "ANOTHER_NAME_B00_F": {
+    "en": "Tricksy",
+    "ua": "Хитра"
+  },
+  "ANOTHER_NAME_B01": {
+    "en": "Competitive",
+    "ua": "Азартний"
+  },
+  "ANOTHER_NAME_B01_F": {
+    "en": "Competitive",
+    "ua": "Азартна"
+  },
+  "ANOTHER_NAME_B02": {
+    "en": "Stalwart",
+    "ua": "Стійкий"
+  },
+  "ANOTHER_NAME_B02_F": {
+    "en": "Stalwart",
+    "ua": "Стійка"
+  },
+  "ANOTHER_NAME_B03": {
+    "en": "Artistic",
+    "ua": "Митецький"
+  },
+  "ANOTHER_NAME_B03_F": {
+    "en": "Artistic",
+    "ua": "Митецька"
+  },
+  "ANOTHER_NAME_B04": {
+    "en": "Monstrous",
+    "ua": "Жахливий"
+  },
+  "ANOTHER_NAME_B04_F": {
+    "en": "Monstrous",
+    "ua": "Жахлива"
+  },
+  "ANOTHER_NAME_B05": {
+    "en": "Noble",
+    "ua": "Шляхетний"
+  },
+  "ANOTHER_NAME_B05_F": {
+    "en": "Noble",
+    "ua": "Шляхетна"
+  },
+  "ANOTHER_NAME_B06": {
+    "en": "Magical",
+    "ua": "Чарівний"
+  },
+  "ANOTHER_NAME_B06_F": {
+    "en": "Magical",
+    "ua": "Чарівна"
+  },
+  "ANOTHER_NAME_B07": {
+    "en": "Beastly",
+    "ua": "Звірячий"
+  },
+  "ANOTHER_NAME_B07_F": {
+    "en": "Beastly",
+    "ua": "Звіряча"
+  },
+  "ANOTHER_NAME_B08": {
+    "en": "Demonic",
+    "ua": "Демонічний"
+  },
+  "ANOTHER_NAME_B08_F": {
+    "en": "Demonic",
+    "ua": "Демонічна"
+  },
+  "ANOTHER_NAME_B09": {
+    "en": "Heroic ",
+    "ua": "Героїчний"
+  },
+  "ANOTHER_NAME_B09_F": {
+    "en": "Heroic ",
+    "ua": "Героїчна"
+  },
+  "ANOTHER_NAME_C00": {
+    "en": "Pixie-Class Trooper",
+    "ua": "Боєць класу Ельф"
+  },
+  "ANOTHER_NAME_C00_F": {
+    "en": "Pixie-Class Trooper",
+    "ua": "Бійчиня класу Фея"
+  },
+  "ANOTHER_NAME_C01": {
+    "en": "Gargoyle-Class Trooper",
+    "ua": "Боєць класу Гаргуля"
+  },
+  "ANOTHER_NAME_C01_F": {
+    "en": "Gargoyle-Class Trooper",
+    "ua": "Бійчиня класу Гаргуля"
+  },
+  "ANOTHER_NAME_C02": {
+    "en": "Minotaur-Class Trooper",
+    "ua": "Боєць класу Мінотавр"
+  },
+  "ANOTHER_NAME_C02_F": {
+    "en": "Minotaur-Class Trooper",
+    "ua": "Бійчиня класу Мінотавр"
+  },
+  "ANOTHER_NAME_C03": {
+    "en": "Unicorn-Class Trooper",
+    "ua": "Боєць класу Єдиноріг"
+  },
+  "ANOTHER_NAME_C03_F": {
+    "en": "Unicorn-Class Trooper",
+    "ua": "Бійчиня класу Єдиноріг"
+  },
+  "ANOTHER_NAME_C04": {
+    "en": "Mermaid-Class Trooper",
+    "ua": "Боєць класу Русалка"
+  },
+  "ANOTHER_NAME_C04_F": {
+    "en": "Mermaid-Class Trooper",
+    "ua": "Бійчиня класу Русалка"
+  },
+  "ANOTHER_NAME_C05": {
+    "en": "Gryphon-Class Trooper",
+    "ua": "Боєць класу Грифон"
+  },
+  "ANOTHER_NAME_C05_F": {
+    "en": "Gryphon-Class Trooper",
+    "ua": "Бійчиня класу Грифон"
+  },
+  "ANOTHER_NAME_C06": {
+    "en": "Pegasus-Class Trooper",
+    "ua": "Боєць класу Пегас"
+  },
+  "ANOTHER_NAME_C06_F": {
+    "en": "Pegasus-Class Trooper",
+    "ua": "Бійчиня класу Пегас"
+  },
+  "ANOTHER_NAME_C07": {
+    "en": "Wyvern-Class Trooper",
+    "ua": "Боєць класу Виверна"
+  },
+  "ANOTHER_NAME_C07_F": {
+    "en": "Wyvern-Class Trooper",
+    "ua": "Бійчиня класу Виверна"
+  },
+  "ANOTHER_NAME_C08": {
+    "en": "Phoenix-Class Trooper",
+    "ua": "Боєць класу Фенікс"
+  },
+  "ANOTHER_NAME_C08_F": {
+    "en": "Phoenix-Class Trooper",
+    "ua": "Бійчиня класу Фенікс"
+  },
+  "ANOTHER_NAME_C09": {
+    "en": "Dragon-Class Trooper",
+    "ua": "Боєць класу Дракон"
+  },
+  "ANOTHER_NAME_C09_F": {
+    "en": "Dragon-Class Trooper",
+    "ua": "Бійчиня класу Дракон"
+  },
+  "ANOTHER_NAME_D00": {
+    "en": "Dependable",
+    "ua": "Надійний"
+  },
+  "ANOTHER_NAME_D00_F": {
+    "en": "Dependable",
+    "ua": "Надійна"
+  },
+  "ANOTHER_NAME_D01": {
+    "en": "Popular",
+    "ua": "Популярний"
+  },
+  "ANOTHER_NAME_D01_F": {
+    "en": "Popular",
+    "ua": "Популярна"
+  },
+  "ANOTHER_NAME_D02": {
+    "en": "Respected",
+    "ua": "Шанований"
+  },
+  "ANOTHER_NAME_D02_F": {
+    "en": "Respected",
+    "ua": "Шанована"
+  },
+  "ANOTHER_NAME_D03": {
+    "en": "Distinguished",
+    "ua": "Видатний"
+  },
+  "ANOTHER_NAME_D03_F": {
+    "en": "Distinguished",
+    "ua": "Видатна"
+  },
+  "ANOTHER_NAME_D04": {
+    "en": "Celebrated",
+    "ua": "Прославлений"
+  },
+  "ANOTHER_NAME_D04_F": {
+    "en": "Celebrated",
+    "ua": "Прославлена"
+  },
+  "ANOTHER_NAME_D05": {
+    "en": "Renowned",
+    "ua": "Уславлений"
+  },
+  "ANOTHER_NAME_D05_F": {
+    "en": "Renowned",
+    "ua": "Уславлена"
+  },
+  "ANOTHER_NAME_D06": {
+    "en": "Famous",
+    "ua": "Знаменитий"
+  },
+  "ANOTHER_NAME_D06_F": {
+    "en": "Famous",
+    "ua": "Знаменита"
+  },
+  "ANOTHER_NAME_D07": {
+    "en": "Infamous",
+    "ua": "Сумнозвісний"
+  },
+  "ANOTHER_NAME_D07_F": {
+    "en": "Infamous",
+    "ua": "Сумнозвісна"
+  },
+  "ANOTHER_NAME_D08": {
+    "en": "Epic",
+    "ua": "Епічний"
+  },
+  "ANOTHER_NAME_D08_F": {
+    "en": "Epic",
+    "ua": "Епічна"
+  },
+  "ANOTHER_NAME_D09": {
+    "en": "Legendary",
+    "ua": "Легендарний"
+  },
+  "ANOTHER_NAME_D09_F": {
+    "en": "Legendary",
+    "ua": "Легендарна"
+  },
+  "ANOTHER_NAME_E00": {
+    "en": "Spiffing",
+    "ua": "Розкішний"
+  },
+  "ANOTHER_NAME_E00_F": {
+    "en": "Spiffing",
+    "ua": "Розкішна"
+  },
+  "ANOTHER_NAME_E01": {
+    "en": "Jovial",
+    "ua": "Веселий"
+  },
+  "ANOTHER_NAME_E01_F": {
+    "en": "Jovial",
+    "ua": "Весела"
+  },
+  "ANOTHER_NAME_E02": {
+    "en": "Old Bean",
+    "ua": "Старий друзяка"
+  },
+  "ANOTHER_NAME_E02_F": {
+    "en": "Old Bean",
+    "ua": "Стара подруга"
+  },
+  "ANOTHER_NAME_E03": {
+    "en": "Dapper",
+    "ua": "Чепурний"
+  },
+  "ANOTHER_NAME_E03_F": {
+    "en": "Dapper",
+    "ua": "Чепурна"
+  },
+  "ANOTHER_NAME_E04": {
+    "en": "Gallant",
+    "ua": "Галантний"
+  },
+  "ANOTHER_NAME_E04_F": {
+    "en": "Gallant",
+    "ua": "Галантна"
+  },
+  "ANOTHER_NAME_E05": {
+    "en": "Debonair",
+    "ua": "Вишуканий"
+  },
+  "ANOTHER_NAME_E05_F": {
+    "en": "Debonair",
+    "ua": "Вишукана"
+  },
+  "ANOTHER_NAME_E06": {
+    "en": "Dashing",
+    "ua": "Бравий"
+  },
+  "ANOTHER_NAME_E06_F": {
+    "en": "Dashing",
+    "ua": "Брава"
+  },
+  "ANOTHER_NAME_E07": {
+    "en": "Jolly Good",
+    "ua": "Славний"
+  },
+  "ANOTHER_NAME_E07_F": {
+    "en": "Jolly Good",
+    "ua": "Славна"
+  },
+  "ANOTHER_NAME_E08": {
+    "en": "Smashing",
+    "ua": "Шикарний"
+  },
+  "ANOTHER_NAME_E08_F": {
+    "en": "Smashing",
+    "ua": "Шикарна"
+  },
+  "ANOTHER_NAME_E09": {
+    "en": "Top-Notch",
+    "ua": "Першокласний"
+  },
+  "ANOTHER_NAME_E09_F": {
+    "en": "Top-Notch",
+    "ua": "Першокласна"
+  },
+  "ANOTHER_NAME_F00": {
+    "en": "Racer",
+    "ua": "Гонщик"
+  },
+  "ANOTHER_NAME_F00_F": {
+    "en": "Racer",
+    "ua": "Гонщиця"
+  },
+  "ANOTHER_NAME_F01": {
+    "en": "Supersonic Racer",
+    "ua": "Супергонщик"
+  },
+  "ANOTHER_NAME_F01_F": {
+    "en": "Supersonic Racer",
+    "ua": "Супергонщиця"
+  },
+  "ANOTHER_NAME_F02": {
+    "en": "Ultrasonic Racer",
+    "ua": "Ультрагонщик"
+  },
+  "ANOTHER_NAME_F02_F": {
+    "en": "Ultrasonic Racer",
+    "ua": "Ультрагонщиця"
+  },
+  "ANOTHER_NAME_F03": {
+    "en": "Hypersonic Racer",
+    "ua": "Гіпергонщик"
+  },
+  "ANOTHER_NAME_F03_F": {
+    "en": "Hypersonic Racer",
+    "ua": "Гіпергонщиця"
+  },
+  "ANOTHER_NAME_F04": {
+    "en": "Speedster",
+    "ua": "Швидкохід"
+  },
+  "ANOTHER_NAME_F04_F": {
+    "en": "Speedster",
+    "ua": "Швидкохідка"
+  },
+  "ANOTHER_NAME_F05": {
+    "en": "Super Speedster",
+    "ua": "Супершвидкохід"
+  },
+  "ANOTHER_NAME_F05_F": {
+    "en": "Super Speedster",
+    "ua": "Супершвидкохідка"
+  },
+  "ANOTHER_NAME_F06": {
+    "en": "Sonic Speedster",
+    "ua": "Звуковий швидкохід"
+  },
+  "ANOTHER_NAME_F06_F": {
+    "en": "Sonic Speedster",
+    "ua": "Звукова швидкохідка"
+  },
+  "ANOTHER_NAME_F07": {
+    "en": "Master Speedster",
+    "ua": "Майстер швидкості"
+  },
+  "ANOTHER_NAME_F07_F": {
+    "en": "Master Speedster",
+    "ua": "Майстриня швидкості"
+  },
+  "ANOTHER_NAME_F08": {
+    "en": "Speed Demon",
+    "ua": "Демон швидкості"
+  },
+  "ANOTHER_NAME_F08_F": {
+    "en": "Speed Demon",
+    "ua": "Демон швидкості"
+  },
+  "ANOTHER_NAME_F09": {
+    "en": "Uncatchable",
+    "ua": "Невловимий"
+  },
+  "ANOTHER_NAME_F09_F": {
+    "en": "Uncatchable",
+    "ua": "Невловима"
+  },
+  "ANOTHER_NAME_G00": {
+    "en": "Lucky Shot",
+    "ua": "Щасливчик"
+  },
+  "ANOTHER_NAME_G00_F": {
+    "en": "Lucky Shot",
+    "ua": "Щасливиця"
+  },
+  "ANOTHER_NAME_G01": {
+    "en": "Prodigy",
+    "ua": "Вундеркінд"
+  },
+  "ANOTHER_NAME_G01_F": {
+    "en": "Prodigy",
+    "ua": "Вундеркінд"
+  },
+  "ANOTHER_NAME_G02": {
+    "en": "Dogfighter",
+    "ua": "Майстер дуелей"
+  },
+  "ANOTHER_NAME_G02_F": {
+    "en": "Dogfighter",
+    "ua": "Дуелянтка"
+  },
+  "ANOTHER_NAME_G03": {
+    "en": "Mentor",
+    "ua": "Наставник"
+  },
+  "ANOTHER_NAME_G03_F": {
+    "en": "Mentor",
+    "ua": "Наставниця"
+  },
+  "ANOTHER_NAME_G04": {
+    "en": "Reaver",
+    "ua": "Розбійник"
+  },
+  "ANOTHER_NAME_G04_F": {
+    "en": "Reaver",
+    "ua": "Розбійниця"
+  },
+  "ANOTHER_NAME_G05": {
+    "en": "Warlord",
+    "ua": "Воєвода"
+  },
+  "ANOTHER_NAME_G05_F": {
+    "en": "Warlord",
+    "ua": "Воєвода"
+  },
+  "ANOTHER_NAME_G06": {
+    "en": "Destroyer",
+    "ua": "Нищитель"
+  },
+  "ANOTHER_NAME_G06_F": {
+    "en": "Destroyer",
+    "ua": "Нищителька"
+  },
+  "ANOTHER_NAME_G07": {
+    "en": "Titan",
+    "ua": "Титан"
+  },
+  "ANOTHER_NAME_G07_F": {
+    "en": "Titan",
+    "ua": "Титан"
+  },
+  "ANOTHER_NAME_G08": {
+    "en": "Tyrant",
+    "ua": "Тиран"
+  },
+  "ANOTHER_NAME_G08_F": {
+    "en": "Tyrant",
+    "ua": "Тиран"
+  },
+  "ANOTHER_NAME_G09": {
+    "en": "Master",
+    "ua": "Майстер"
+  },
+  "ANOTHER_NAME_G09_F": {
+    "en": "Master",
+    "ua": "Майстриня"
+  },
+  "ANOTHER_NAME_H00": {
+    "en": "Skilled Pilot",
+    "ua": "Вправний пілот"
+  },
+  "ANOTHER_NAME_H00_F": {
+    "en": "Skilled Pilot",
+    "ua": "Вправна пілотка"
+  },
+  "ANOTHER_NAME_H01": {
+    "en": "Superb Pilot",
+    "ua": "Чудовий пілот"
+  },
+  "ANOTHER_NAME_H01_F": {
+    "en": "Superb Pilot",
+    "ua": "Чудова пілотка"
+  },
+  "ANOTHER_NAME_H02": {
+    "en": "Gifted Pilot",
+    "ua": "Здібний пілот"
+  },
+  "ANOTHER_NAME_H02_F": {
+    "en": "Gifted Pilot",
+    "ua": "Здібна пілотка"
+  },
+  "ANOTHER_NAME_H03": {
+    "en": "Daredevil Pilot",
+    "ua": "Пілот-сміливець"
+  },
+  "ANOTHER_NAME_H03_F": {
+    "en": "Daredevil Pilot",
+    "ua": "Пілотка-сміливиця"
+  },
+  "ANOTHER_NAME_H04": {
+    "en": "Death-Defying Pilot",
+    "ua": "Безстрашний пілот"
+  },
+  "ANOTHER_NAME_H04_F": {
+    "en": "Death-Defying Pilot",
+    "ua": "Безстрашна пілотка"
+  },
+  "ANOTHER_NAME_H05": {
+    "en": "Amazing Pilot",
+    "ua": "Дивовижний пілот"
+  },
+  "ANOTHER_NAME_H05_F": {
+    "en": "Amazing Pilot",
+    "ua": "Дивовижна пілотка"
+  },
+  "ANOTHER_NAME_H06": {
+    "en": "Incredible Pilot",
+    "ua": "Неймовірний пілот"
+  },
+  "ANOTHER_NAME_H06_F": {
+    "en": "Incredible Pilot",
+    "ua": "Неймовірна пілотка"
+  },
+  "ANOTHER_NAME_H07": {
+    "en": "Sensational Pilot",
+    "ua": "Сенсаційний пілот"
+  },
+  "ANOTHER_NAME_H07_F": {
+    "en": "Sensational Pilot",
+    "ua": "Сенсаційна пілотка"
+  },
+  "ANOTHER_NAME_H08": {
+    "en": "Maverick Pilot",
+    "ua": "Пілот-бунтар"
+  },
+  "ANOTHER_NAME_H08_F": {
+    "en": "Maverick Pilot",
+    "ua": "Пілотка-бунтарка"
+  },
+  "ANOTHER_NAME_H09": {
+    "en": "Ace Pilot",
+    "ua": "Пілот-ас"
+  },
+  "ANOTHER_NAME_H09_F": {
+    "en": "Ace Pilot",
+    "ua": "Пілотка-ас"
+  },
+  "ANOTHER_NAME_I00": {
+    "en": "Intelligence Specialist",
+    "ua": "Фахівець розвідки"
+  },
+  "ANOTHER_NAME_I00_F": {
+    "en": "Intelligence Specialist",
+    "ua": "Фахівчиня розвідки"
+  },
+  "ANOTHER_NAME_I01": {
+    "en": "Subterfuge Specialist",
+    "ua": "Фахівець диверсій"
+  },
+  "ANOTHER_NAME_I01_F": {
+    "en": "Subterfuge Specialist",
+    "ua": "Фахівчиня диверсій"
+  },
+  "ANOTHER_NAME_I02": {
+    "en": "Strike Specialist",
+    "ua": "Фахівець ударів"
+  },
+  "ANOTHER_NAME_I02_F": {
+    "en": "Strike Specialist",
+    "ua": "Фахівчиня ударів"
+  },
+  "ANOTHER_NAME_I03": {
+    "en": "Assault Specialist",
+    "ua": "Фахівець штурму"
+  },
+  "ANOTHER_NAME_I03_F": {
+    "en": "Assault Specialist",
+    "ua": "Фахівчиня штурму"
+  },
+  "ANOTHER_NAME_I04": {
+    "en": "Counter Specialist",
+    "ua": "Фахівець контрудару"
+  },
+  "ANOTHER_NAME_I04_F": {
+    "en": "Counter Specialist",
+    "ua": "Фахівчиня контрудару"
+  },
+  "ANOTHER_NAME_I05": {
+    "en": "Power Specialist",
+    "ua": "Фахівець сили"
+  },
+  "ANOTHER_NAME_I05_F": {
+    "en": "Power Specialist",
+    "ua": "Фахівчиня сили"
+  },
+  "ANOTHER_NAME_I06": {
+    "en": "Turbo-Attack Specialist",
+    "ua": "Фахівець турбоатак"
+  },
+  "ANOTHER_NAME_I06_F": {
+    "en": "Turbo-Attack Specialist",
+    "ua": "Фахівчиня турбоатак"
+  },
+  "ANOTHER_NAME_I07": {
+    "en": "Tactical Specialist",
+    "ua": "Фахівець тактики"
+  },
+  "ANOTHER_NAME_I07_F": {
+    "en": "Tactical Specialist",
+    "ua": "Фахівчиня тактики"
+  },
+  "ANOTHER_NAME_I08": {
+    "en": "Black-Ops Specialist",
+    "ua": "Фахівець спецоперацій"
+  },
+  "ANOTHER_NAME_I08_F": {
+    "en": "Black-Ops Specialist",
+    "ua": "Фахівчиня спецоперацій"
+  },
+  "ANOTHER_NAME_I09": {
+    "en": "Command Specialist",
+    "ua": "Фахівець командування"
+  },
+  "ANOTHER_NAME_I09_F": {
+    "en": "Command Specialist",
+    "ua": "Фахівчиня командування"
+  },
+  "ANOTHER_NAME_J00": {
+    "en": "Squaddie",
+    "ua": "Рядовий"
+  },
+  "ANOTHER_NAME_J00_F": {
+    "en": "Squaddie",
+    "ua": "Рядова"
+  },
+  "ANOTHER_NAME_J01": {
+    "en": "Field Medic",
+    "ua": "Санітар"
+  },
+  "ANOTHER_NAME_J01_F": {
+    "en": "Field Medic",
+    "ua": "Санітарка"
+  },
+  "ANOTHER_NAME_J02": {
+    "en": "Legionnaire",
+    "ua": "Легіонер"
+  },
+  "ANOTHER_NAME_J02_F": {
+    "en": "Legionnaire",
+    "ua": "Легіонерка"
+  },
+  "ANOTHER_NAME_J03": {
+    "en": "Ranger",
+    "ua": "Рейнджер"
+  },
+  "ANOTHER_NAME_J03_F": {
+    "en": "Ranger",
+    "ua": "Рейнджер"
+  },
+  "ANOTHER_NAME_J04": {
+    "en": "Commando",
+    "ua": "Командос"
+  },
+  "ANOTHER_NAME_J04_F": {
+    "en": "Commando",
+    "ua": "Командос"
+  },
+  "ANOTHER_NAME_J05": {
+    "en": "Paratrooper",
+    "ua": "Десантник"
+  },
+  "ANOTHER_NAME_J05_F": {
+    "en": "Paratrooper",
+    "ua": "Десантниця"
+  },
+  "ANOTHER_NAME_J06": {
+    "en": "Scout",
+    "ua": "Розвідник"
+  },
+  "ANOTHER_NAME_J06_F": {
+    "en": "Scout",
+    "ua": "Розвідниця"
+  },
+  "ANOTHER_NAME_J07": {
+    "en": "Sniper",
+    "ua": "Снайпер"
+  },
+  "ANOTHER_NAME_J07_F": {
+    "en": "Sniper",
+    "ua": "Снайперка"
+  },
+  "ANOTHER_NAME_J08": {
+    "en": "Treasure Hunter",
+    "ua": "Шукач скарбів"
+  },
+  "ANOTHER_NAME_J08_F": {
+    "en": "Treasure Hunter",
+    "ua": "Шукачка скарбів"
+  },
+  "ANOTHER_NAME_J09": {
+    "en": "Bounty Hunter",
+    "ua": "Мисливець за головами"
+  },
+  "ANOTHER_NAME_J09_F": {
+    "en": "Bounty Hunter",
+    "ua": "Мисливиця за головами"
+  },
+  "ANOTHER_NAME_K00": {
+    "en": "Lunar Soldier",
+    "ua": "Місячний воїн"
+  },
+  "ANOTHER_NAME_K00_F": {
+    "en": "Lunar Soldier",
+    "ua": "Місячна воячка"
+  },
+  "ANOTHER_NAME_K01": {
+    "en": "Solar Soldier",
+    "ua": "Сонячний воїн"
+  },
+  "ANOTHER_NAME_K01_F": {
+    "en": "Solar Soldier",
+    "ua": "Сонячна воячка"
+  },
+  "ANOTHER_NAME_K02": {
+    "en": "Nova Soldier",
+    "ua": "Воїн наднової"
+  },
+  "ANOTHER_NAME_K02_F": {
+    "en": "Nova Soldier",
+    "ua": "Воячка наднової"
+  },
+  "ANOTHER_NAME_K03": {
+    "en": "Comet Soldier",
+    "ua": "Кометний воїн"
+  },
+  "ANOTHER_NAME_K03_F": {
+    "en": "Comet Soldier",
+    "ua": "Кометна воячка"
+  },
+  "ANOTHER_NAME_K04": {
+    "en": "Meteor Soldier",
+    "ua": "Метеорний воїн"
+  },
+  "ANOTHER_NAME_K04_F": {
+    "en": "Meteor Soldier",
+    "ua": "Метеорна воячка"
+  },
+  "ANOTHER_NAME_K05": {
+    "en": "Nebula Soldier",
+    "ua": "Воїн туманності"
+  },
+  "ANOTHER_NAME_K05_F": {
+    "en": "Nebula Soldier",
+    "ua": "Воячка туманності"
+  },
+  "ANOTHER_NAME_K06": {
+    "en": "Eclipse Soldier",
+    "ua": "Воїн затемнення"
+  },
+  "ANOTHER_NAME_K06_F": {
+    "en": "Eclipse Soldier",
+    "ua": "Воячка затемнення"
+  },
+  "ANOTHER_NAME_K07": {
+    "en": "Quasar Soldier",
+    "ua": "Квазарний воїн"
+  },
+  "ANOTHER_NAME_K07_F": {
+    "en": "Quasar Soldier",
+    "ua": "Квазарна воячка"
+  },
+  "ANOTHER_NAME_K08": {
+    "en": "Celestial Soldier",
+    "ua": "Небесний воїн"
+  },
+  "ANOTHER_NAME_K08_F": {
+    "en": "Celestial Soldier",
+    "ua": "Небесна воячка"
+  },
+  "ANOTHER_NAME_K09": {
+    "en": "Galactic Soldier",
+    "ua": "Галактичний воїн"
+  },
+  "ANOTHER_NAME_K09_F": {
+    "en": "Galactic Soldier",
+    "ua": "Галактична воячка"
+  },
+  "ANOTHER_NAME_L00": {
+    "en": "Rookie",
+    "ua": "Новобранець"
+  },
+  "ANOTHER_NAME_L00_F": {
+    "en": "Rookie",
+    "ua": "Новобранка"
+  },
+  "ANOTHER_NAME_L01": {
+    "en": "Special Transfer",
+    "ua": "Переведенець"
+  },
+  "ANOTHER_NAME_L01_F": {
+    "en": "Special Transfer",
+    "ua": "Переведенка"
+  },
+  "ANOTHER_NAME_L02": {
+    "en": "Seasoned Soldier",
+    "ua": "Досвідчений воїн"
+  },
+  "ANOTHER_NAME_L02_F": {
+    "en": "Seasoned Soldier",
+    "ua": "Досвідчена воячка"
+  },
+  "ANOTHER_NAME_L03": {
+    "en": "Honoured Veteran",
+    "ua": "Шанований ветеран"
+  },
+  "ANOTHER_NAME_L03_F": {
+    "en": "Honoured Veteran",
+    "ua": "Шанована ветеранка"
+  },
+  "ANOTHER_NAME_L04": {
+    "en": "Returning Legend",
+    "ua": "Легенда повернулася"
+  },
+  "ANOTHER_NAME_L04_F": {
+    "en": "Returning Legend",
+    "ua": "Легенда повернулася"
+  },
+  "ANOTHER_NAME_L05": {
+    "en": "Bronze-Class Squad Leader",
+    "ua": "Командир бронзового класу"
+  },
+  "ANOTHER_NAME_L05_F": {
+    "en": "Bronze-Class Squad Leader",
+    "ua": "Командир бронзового класу"
+  },
+  "ANOTHER_NAME_L06": {
+    "en": "Steel-Class Squad Leader",
+    "ua": "Командир сталевого класу"
+  },
+  "ANOTHER_NAME_L06_F": {
+    "en": "Steel-Class Squad Leader",
+    "ua": "Командир сталевого класу"
+  },
+  "ANOTHER_NAME_L07": {
+    "en": "Silver-Class Squad Leader",
+    "ua": "Командир срібного класу"
+  },
+  "ANOTHER_NAME_L07_F": {
+    "en": "Silver-Class Squad Leader",
+    "ua": "Командир срібного класу"
+  },
+  "ANOTHER_NAME_L08": {
+    "en": "Gold-Class Squad Leader",
+    "ua": "Командир золотого класу"
+  },
+  "ANOTHER_NAME_L08_F": {
+    "en": "Gold-Class Squad Leader",
+    "ua": "Командир золотого класу"
+  },
+  "ANOTHER_NAME_L09": {
+    "en": "Platinum-Class Squad Leader",
+    "ua": "Командир платин. класу"
+  },
+  "ANOTHER_NAME_L09_F": {
+    "en": "Platinum-Class Squad Leader",
+    "ua": "Командир платин. класу"
+  },
+  "TITLE_INFO_COIN": {
+    "en": "Play Coins",
+    "ua": "Ігрових монеток"
+  },
+  "TITLE_INFO_MII": {
+    "en": "Pods Kept Intact",
+    "ua": "Цілих капсул"
+  },
+  "TITLE_INFO_ENEMY": {
+    "en": "Enemies Defeated",
+    "ua": "Знищено ворогів"
+  },
+  "TITLE_INFO_STG": {
+    "en": "Missions Cleared",
+    "ua": "Виконано місій"
+  },
+  "TITLE_INFO_STG_NUM_ALL": {
+    "en": "ALL",
+    "ua": "УСІ"
+  },
+  "TITLE_INFO_HOME": {
+    "en": ": Return to HOME Menu",
+    "ua": ": назад у меню HOME"
+  },
+  "COPYRIGHT": {
+    "en": "©2013 Nintendo  Developed by Good-Feel",
+    "ua": "©2013 Nintendo  Розробник: Good-Feel"
+  },
+  "TITLE_MENU_HELP_GAME": {
+    "en": "Mii Force, move out! The fate of\r\nStreetPass Galaxy lies in your hands!",
+    "ua": "Mii Force, уперед! Доля Галактики\nStreetPass у ваших руках!"
+  },
+  "TITLE_MENU_HELP_ARCADE": {
+    "en": "Mii Force! You've got one shot at\r\ntaking down the Gold Bone Gang!",
+    "ua": "Mii Force! У вас один шанс\nрозбити банду Золотої Кістки!"
+  },
+  "TITLE_MENU_HELP_ARCADE_1": {
+    "en": "Win the final battle against Gold\r\nBone to unlock this option.",
+    "ua": "Переможіть Золоту Кістку у фінальній\nбитві, щоб відкрити цей режим."
+  },
+  "TITLE_MENU_HELP_EMPLOY": {
+    "en": "Use  Play Coins to hire troops.",
+    "ua": "Наймайте бійців за монетки ."
+  },
+  "TITLE_MENU_HELP_SETTING": {
+    "en": "View data files and set your title.",
+    "ua": "Файли даних і вибір звання."
+  },
+  "TITLE_MENU_HELP_EXIT": {
+    "en": "Quit the game and return to the plaza.",
+    "ua": "Вийти з гри й повернутися на площу."
+  },
+  "TITLE_MENU_HELP_ARC_NORMAL": {
+    "en": "See how far you and your squad can go!\r\nKeep going until you run out of recruits.",
+    "ua": "Подивіться, як далеко зайде ваш загін!\nГра триває, поки є новобранці."
+  },
+  "TITLE_MENU_HELP_ARC_HARD": {
+    "en": "Can you and one squadmate take on all of\r\nGold Bone's challenges in a single run? You\r\ncan attempt it once for each recruit you have.",
+    "ua": "Чи пройдете ви з одним напарником усі\nвипробування Золотої Кістки за раз? По\nодній спробі на кожного новобранця."
+  },
+  "TITLE_MENU_HELP_ARC_RETURN": {
+    "en": "Return to previous menu.",
+    "ua": "Назад до меню."
+  },
+  "CEC_RANKING_INFO_00": {
+    "en": "[System:Color name=\"mgSht_red\" ]StreetPass Ranking [/System:Color]tracks the\r\nhighest scorers among those\r\nyou've met via StreetPass.",
+    "ua": "[System:Color name=\"mgSht_red\" ]Рейтинг StreetPass [/System:Color]показує\nнайкращі очки серед людей,\nзустрінутих через StreetPass."
+  },
+  "CEC_RANKING_INFO_01": {
+    "en": "Now, let's try to get you onto\r\nthis illustrious roster. Do your\r\nbest out there, Squad Leader!",
+    "ua": "А тепер спробуймо потрапити\nв цей славетний список. Викладайтеся\nна повну, командире!"
+  },
+  "DEMO1000_00": {
+    "en": "In a distant corner of the universe\r\nlies StreetPass Galaxy.",
+    "ua": "У далекому куточку всесвіту\nлежить Галактика StreetPass."
+  },
+  "DEMO1000_01": {
+    "en": "It is kept peaceful by an elite team\r\nof space police - the Mii Force!",
+    "ua": "Мир у ній береже елітний загін\nкосмічної поліції — Mii Force!"
+  },
+  "DEMO1000_02": {
+    "en": "Ah, another peaceful day.",
+    "ua": "Ах, іще один мирний день."
+  },
+  "DEMO1000_03": {
+    "en": "So quiet. Perhaps I'll go and\r\nwork on my putting.",
+    "ua": "Така тиша. Може, піду\nпотренуюся в гольф."
+  },
+  "DEMO1000_04": {
+    "en": "My word! What was THAT?!",
+    "ua": "Слово честі! Що ЦЕ було?!"
+  },
+  "DEMO1000_05": {
+    "en": "Ack! Easy does it!",
+    "ua": "Ой! Обережніше!"
+  },
+  "DEMO1000_06": {
+    "en": "Phew... That was\r\nrather a close shave.",
+    "ua": "Фух… Ледь\nпронесло."
+  },
+  "DEMO1000_08": {
+    "en": "Great Scott! What a\r\ngarish-looking ship!",
+    "ua": "Святі небеса! Який\nкричущий корабель!"
+  },
+  "DEMO1000_10": {
+    "en": "Eh...?\r\nWhat's this now?",
+    "ua": "Е…?\nА це що таке?"
+  },
+  "DEMO1000_11": {
+    "en": "Yarr. So there be space police even\r\nthis far out? Didn't reckon on that one.",
+    "ua": "Йо-хо. Тож і тут, на задвірках,\nє космічна поліція? Не чекав."
+  },
+  "DEMO1000_12": {
+    "en": "Listen here, ye sorry space pigs!\r\nThe Gold Bone Gang claims this galaxy.",
+    "ua": "Слухайте, жалюгідні космічні свині!\nЦя галактика — банди Золотої Кістки."
+  },
+  "DEMO1000_13": {
+    "en": "So ye'd best make yerselves scarce!",
+    "ua": "Тож забирайтеся геть!"
+  },
+  "DEMO1000_14": {
+    "en": "Heh... Hehehe...\r\nGWAHAHAHAAA!",
+    "ua": "Хе… Хе-хе-хе…\nҐВА-ХА-ХА-ХА!"
+  },
+  "DEMO1000_15": {
+    "en": "By Jove! How can this\r\nbe happening?",
+    "ua": "Бий мене грім! Як таке\nможе бути?"
+  },
+  "DEMO1000_16": {
+    "en": "This is the greatest crisis\r\nof my career!",
+    "ua": "Це найбільша криза\nза всю мою кар'єру!"
+  },
+  "DEMO1000_17": {
+    "en": "Ah, I know what I can do...",
+    "ua": "А, знаю, що робити…"
+  },
+  "DEMO1000_18": {
+    "en": "Mii FORCE, ASSEMBLE!!!",
+    "ua": "Mii FORCE, ЗБІР!!!"
+  },
+  "DEMO1000_19": {
+    "en": "Squad Leader [MII_NAME]\r\nstanding by, sir!",
+    "ua": "Командир [MII_NAME]\nприбув, сер!"
+  },
+  "DEMO1000_20": {
+    "en": "...Oh. Yes. That's right.",
+    "ua": "…А. Так. Точно."
+  },
+  "DEMO1000_21": {
+    "en": "The only members of the Mii Force\r\nare...well, you and myself.",
+    "ua": "У Mii Force лише два бійці…\nну, ви та я."
+  },
+  "DEMO1000_22": {
+    "en": "Squad Leader [MII_NAME]!",
+    "ua": "Командире [MII_NAME]!"
+  },
+  "DEMO1000_23": {
+    "en": "You are the Mii Force's\r\nlast and only hope.",
+    "ua": "Ви — остання й єдина\nнадія Mii Force."
+  },
+  "DEMO1000_24": {
+    "en": "Recruit some new troops at once\r\nusing StreetPass.",
+    "ua": "Негайно наберіть нових бійців\nчерез StreetPass."
+  },
+  "DEMO1000_25": {
+    "en": "We must rid our galaxy...no, the\r\nentire universe of this pirate menace!",
+    "ua": "Ми мусимо очистити галактику… ні,\nувесь всесвіт від цієї піратської напасті!"
+  },
+  "DEMO1000_26": {
+    "en": "Roger that!",
+    "ua": "Слухаюсь!"
+  },
+  "DEMO1001_00": {
+    "en": "GWAHAHAHAAA! Tough luck,\r\nscurvy dogs of the Mii Force!",
+    "ua": "ҐВА-ХА-ХА-ХА! Не пощастило,\nпаршиві пси з Mii Force!"
+  },
+  "DEMO1001_01": {
+    "en": "Go ahead and grab more lily-livered\r\nrecruits via StreetPass or some such...",
+    "ua": "Ну ж бо, назбирайте ще боягузливих\nновобранців через StreetPass чи як там…"
+  },
+  "DEMO1001_02": {
+    "en": "I'll be right here, waiting to give\r\nye another taste o' the lash.",
+    "ua": "А я чекатиму тут, щоб знову\nвас відшмагати."
+  },
+  "DEMO1001_03": {
+    "en": "Heh... Hehehe...\r\nGWAHAHAHAAA!",
+    "ua": "Хе… Хе-хе-хе…\nҐВА-ХА-ХА-ХА!"
+  },
+  "DEMO1010_00": {
+    "en": "I fear it may be a tad difficult to\r\nprotect the galaxy all by yourself.",
+    "ua": "Боюся, самотужки захистити\nгалактику буде складнувато."
+  },
+  "DEMO1010_01": {
+    "en": "See if you can gather some\r\nrecruits via StreetPass.",
+    "ua": "Спробуйте набрати\nновобранців через StreetPass."
+  },
+  "DEMO1010_02": {
+    "en": "Or perhaps you'd rather hire some\r\ntroops using  Play Coins?",
+    "ua": "Або, може, найміть бійців\nза монетки ?"
+  },
+  "DEMO1010_03": {
+    "en": "Time is of the essence. You need to get\r\na squad together - by hook or by crook!",
+    "ua": "Час не жде. Треба зібрати загін —\nбудь-що-будь!"
+  },
+  "DEMO1020_00": {
+    "en": "Squad Leader [MII_NAME],\r\nyou and your squad have done\r\na great deed!",
+    "ua": "Командире [MII_NAME],\nви з загоном зробили\nвелику справу!"
+  },
+  "DEMO1020_01": {
+    "en": "Thanks to your hard work and bravery,\r\nthe Gold Bone Gang is no more.",
+    "ua": "Завдяки вашій праці й відвазі\nбанди Золотої Кістки більше немає."
+  },
+  "DEMO1020_02": {
+    "en": "You saved the galaxy - no, the\r\nwhole universe! Jolly good show!",
+    "ua": "Ви врятували галактику — ні,\nвесь всесвіт! Блискуче!"
+  },
+  "DEMO1020_03": {
+    "en": "I'm so proud of everything\r\nyou've accomplished.",
+    "ua": "Я так пишаюся всім,\nчого ви досягли."
+  },
+  "DEMO1020_04": {
+    "en": "You know, I'd only been captaining\r\nthis vessel for [System:Color name=\"mgSht_red\" ]three months[/System:Color] when\r\nthose rapscallions attacked...",
+    "ua": "Знаєте, я був капітаном цього судна\nлише [System:Color name=\"mgSht_red\" ]три місяці[/System:Color], коли\nнапали ті шибеники…"
+  },
+  "DEMO1020_05": {
+    "en": "But the sheer courage you and your\r\nrecruits showed...well, it more than\r\nmade up for my lack of experience!",
+    "ua": "Але мужність, яку виявили ви й\nваші новобранці… з лишком\nпокрила мою недосвідченість!"
+  },
+  "DEMO1020_06": {
+    "en": "The next time our galaxy is threatened,\r\nI'll call on you in a jiffy. Until then, take\r\ncare, brave soldiers of the Mii Force!",
+    "ua": "Коли галактиці знову загрожуватиме лихо,\nя вмить вас покличу. А доти бережіть себе,\nвідважні бійці Mii Force!"
+  },
+  "DEMO1111_00": {
+    "en": "Ah, welcome back, Squad Leader\r\n[MII_NAME]. I see you have returned\r\nwith [MII_NUM] new recruits in tow.",
+    "ua": "А, з поверненням, командире\n[MII_NAME]. Бачу, ви привели\nновобранців: [MII_NUM]."
+  },
+  "DEMO1111_01": {
+    "en": "Ahh! Squad Leader [MII_NAME],\r\nthank you for coming. You too,\r\n[MII_00_A].",
+    "ua": "А! Командире [MII_NAME],\nдякую, що прибули. І вам,\n[MII_00_A]."
+  },
+  "DEMO1111_02": {
+    "en": "That gang of ruffians has attacked\r\na region on [AREA1_NAME] where the\r\nrich and famous like to go on their hols.",
+    "ua": "Ті розбійники напали на курорт\nна планеті [AREA1_NAME], де відпочивають\nбагатії та знаменитості."
+  },
+  "DEMO1111_03": {
+    "en": "They must be heading for [STAGE_NAME].\r\nPlenty of riches to pilfer with all\r\nthose affluent holidaymakers around!",
+    "ua": "Мабуть, вони прямують до місця\n«[STAGE_NAME]». Там є що поцупити\nв заможних відпочивальників!"
+  },
+  "DEMO1111_04": {
+    "en": "This simply cannot be allowed.\r\nTally-ho, Mii Force!",
+    "ua": "Такого допустити не можна.\nУперед, Mii Force!"
+  },
+  "DEMO1111_05": {
+    "en": "Ahh! Squad Leader [MII_NAME],\r\nthank you for coming. You too,\r\n[MII_00_A].",
+    "ua": "А! Командире [MII_NAME],\nдякую, що прибули. І вам,\n[MII_00_A]."
+  },
+  "DEMO1111A": {
+    "en": "All right, squad. We rendezvous at\r\n[STAGE_NAME] on [AREA_NAME].",
+    "ua": "Гаразд, загоне. Збір у місці\n«[STAGE_NAME]», планета [AREA_NAME]."
+  },
+  "DEMO1112_00": {
+    "en": "Ah, welcome back, Squad Leader\r\n[MII_NAME]. I see you have returned\r\nwith [MII_NUM] new recruits in tow.",
+    "ua": "А, з поверненням, командире\n[MII_NAME]. Бачу, ви привели\nновобранців: [MII_NUM]."
+  },
+  "DEMO1112_01": {
+    "en": "Thank you for coming,\r\nSquad Leader [MII_NAME].\r\nYou too, [MII_00_A].",
+    "ua": "Дякую, що прибули,\nкомандире [MII_NAME].\nІ вам, [MII_00_A]."
+  },
+  "DEMO1112_02": {
+    "en": "That band of scurvy space pirates has\r\nreappeared near [STAGE_NAME].",
+    "ua": "Ця банда паршивих космічних піратів\nз'явилася біля місця «[STAGE_NAME]»."
+  },
+  "DEMO1112_03": {
+    "en": "I suspect they may be using that\r\npoor old castle as their hideout!",
+    "ua": "Підозрюю, вони зробили\nтой бідолашний старий замок\nсвоєю схованкою!"
+  },
+  "DEMO1112_04": {
+    "en": "This will not stand, Mii Force!\r\nWe must move at once!",
+    "ua": "Цього не буде, Mii Force!\nНегайно в дорогу!"
+  },
+  "DEMO1112A": {
+    "en": "All right, squad. We rendezvous at\r\n[STAGE_NAME] on [AREA_NAME].",
+    "ua": "Гаразд, загоне. Збір у місці\n«[STAGE_NAME]», планета [AREA_NAME]."
+  },
+  "DEMO1113_00": {
+    "en": "Ah, welcome back, Squad Leader\r\n[MII_NAME]. I see you have returned\r\nwith [MII_NUM] new recruits in tow.",
+    "ua": "А, з поверненням, командире\n[MII_NAME]. Бачу, ви привели\nновобранців: [MII_NUM]."
+  },
+  "DEMO1113_01": {
+    "en": "Ahh! Squad Leader [MII_NAME],\r\nthank you for coming. You too,\r\n[MII_00_A].",
+    "ua": "А! Командире [MII_NAME],\nдякую, що прибули. І вам,\n[MII_00_A]."
+  },
+  "DEMO1113_02": {
+    "en": "Our intel boys (by which I mean me) have\r\nfinally found the Gold Bone Gang's lair!",
+    "ua": "Наша розвідка (тобто я) нарешті\nзнайшла лігво банди Золотої Кістки!"
+  },
+  "DEMO1113_03": {
+    "en": "That dastardly Gold Bone's been spotted\r\nin [STAGE_NAME]. That must be where\r\ntheir hideout on [AREA1_NAME] is located.",
+    "ua": "Підступного Золоту Кістку помітили\nв місці «[STAGE_NAME]». Мабуть, там\nїхня схованка на планеті [AREA1_NAME]."
+  },
+  "DEMO1113_04": {
+    "en": "Those pirates have to be stopped.\r\nMii Force, move out!",
+    "ua": "Цих піратів треба зупинити.\nMii Force, уперед!"
+  },
+  "DEMO1113A": {
+    "en": "All right, squad. We rendezvous at\r\n[STAGE_NAME] on [AREA_NAME].",
+    "ua": "Гаразд, загоне. Збір у місці\n«[STAGE_NAME]», планета [AREA_NAME]."
+  },
+  "DEMO111x_01": {
+    "en": "Roger that, Squad Leader!",
+    "ua": "Слухаюсь, командире!"
+  },
+  "DEMO111x_01B": {
+    "en": "Roger that, Captain!",
+    "ua": "Слухаюсь, капітане!"
+  },
+  "DEMO1511_00": {
+    "en": "What? Think ye can take on our\r\ngang of spacefarin' swashbucklers?\r\nAnd who are ye when yer at home?",
+    "ua": "Що? Думаєте здолати нашу банду\nкосмічних головорізів?\nА ви хто такі взагалі?"
+  },
+  "DEMO1511_01": {
+    "en": "Eh? Space police? Mii Force?\r\nBah, all gobbledygook to me!",
+    "ua": "Га? Космічна поліція? Mii Force?\nТьху, абракадабра якась!"
+  },
+  "DEMO1511_02": {
+    "en": "Whoever yer meant to be,\r\nthe booty's ALL MINE!",
+    "ua": "Хай хто ви там є,\nздобич — ВСЯ МОЯ!"
+  },
+  "DEMO1511_03": {
+    "en": "Ah, I see that you have docked with\r\na [System:Color name=\"mgSht_red\" ]Mii pod[/System:Color]. Equipping a pod makes\r\nyour ship combat-ready in a flash.",
+    "ua": "А, бачу, ви пристикували\n[System:Color name=\"mgSht_red\" ]капсулу Mii[/System:Color]. З капсулою корабель\nумить готовий до бою."
+  },
+  "DEMO1511_04": {
+    "en": "Once you have a pod equipped,\r\n[System:Color name=\"mgSht_red\" ]press  to fire[/System:Color] or [System:Color name=\"mgSht_red\" ]hold down\r\n for a continuous attack[/System:Color].",
+    "ua": "Коли капсулу встановлено,\n[System:Color name=\"mgSht_red\" ]натисніть , щоб стріляти[/System:Color], або\n[System:Color name=\"mgSht_red\" ]утримуйте  для безперервного вогню[/System:Color]."
+  },
+  "DEMO1511_05": {
+    "en": "Equip more Mii pods and you'll\r\nhave an even greater arsenal\r\nat your disposal!",
+    "ua": "Більше капсул Mii —\nще більший арсенал\nу вашому розпорядженні!"
+  },
+  "DEMO1511_06": {
+    "en": "But be sure to keep your eye\r\non the ball. If you're hit by a foe,\r\nyou'll lose one pod.",
+    "ua": "Але будьте пильні. Якщо\nворог влучить, ви втратите\nодну капсулу."
+  },
+  "DEMO1511_07": {
+    "en": "If you lose all your pods, you'll find\r\nyourself in a spot of bother. In fact,\r\nyou'll be waving the white flag!",
+    "ua": "Утративши всі капсули, ви\nопинитеся в скрутному становищі.\nПо суті, доведеться здатися!"
+  },
+  "DEMO1511_07b": {
+    "en": "Gosh, is that a [System:Color name=\"mgSht_red\" ]gem [/System:Color]up ahead?\r\nIt is, I'm certain of it!",
+    "ua": "Ого, це [System:Color name=\"mgSht_red\" ]самоцвіт [/System:Color]попереду?\nТак, напевно!"
+  },
+  "DEMO1511_07c": {
+    "en": "Those pesky pirates must have\r\ndropped it. Grab it, on the double!\r\nBetter in our hands than theirs.",
+    "ua": "Мабуть, ці набридливі пірати його\nзагубили. Хапайте мерщій!\nХай краще буде в нас."
+  },
+  "DEMO1511_08": {
+    "en": "Now then, I'd best leave you to it!\r\nGood luck, and give them what for!",
+    "ua": "Що ж, не заважатиму!\nЩасти, і покажіть їм!"
+  },
+  "DEMO1511_12": {
+    "en": "Ah, I almost forgot. Take a glance\r\nat the [System:Color name=\"mgSht_red\" ]arrow on the lower screen[/System:Color].\r\nIt's pointing at a weapon port.",
+    "ua": "Ой, мало не забув. Гляньте\nна [System:Color name=\"mgSht_red\" ]стрілку на нижньому екрані[/System:Color].\nВона вказує на порт зброї."
+  },
+  "DEMO1511_13": {
+    "en": "You've probably cottoned on, but the\r\nMii pod you dock there determines\r\nthe type of weapon you can use.",
+    "ua": "Ви, певно, вже здогадалися, що капсула\nMii в цьому порту визначає тип\nзброї, яку можна використати."
+  },
+  "DEMO1511_14": {
+    "en": "And you'll see there are several\r\nsmaller ports behind each main one.",
+    "ua": "А позаду кожного головного порту\nє кілька менших."
+  },
+  "DEMO1511_15": {
+    "en": "If you equip pods to those ports,\r\nyou'll [System:Color name=\"mgSht_red\" ]power up [/System:Color]that weapon!",
+    "ua": "Капсули в цих портах\n[System:Color name=\"mgSht_red\" ]посилюють[/System:Color] зброю!"
+  },
+  "DEMO1511_16": {
+    "en": "Tap a pod to change its docking\r\nport. Try different formations!",
+    "ua": "Торкніться капсули, щоб змінити порт.\nПробуйте різні шикування!"
+  },
+  "TUTO_000_00": {
+    "en": "I say - look out! The enemy is\r\nclosing in from behind!",
+    "ua": "Обережно! Ворог наближається\nзаду!"
+  },
+  "TUTO_000_01": {
+    "en": "[System:Color name=\"mgSht_red\" ]Press  or [/System:Color] to rotate your\r\nweapons array, then open fire!",
+    "ua": "[System:Color name=\"mgSht_red\" ]Натисніть  чи [/System:Color], щоб\nповернути зброю, і вогонь!"
+  },
+  "TUTO_001_00": {
+    "en": "Look! A stolen[System:Color name=\"mgSht_red\" ] treasure[/System:Color]! Neutralise\r\nthat pesky foe and take it back!",
+    "ua": "Дивіться! Викрадений [System:Color name=\"mgSht_red\" ]скарб[/System:Color]! Знешкодьте\nворога й заберіть його!"
+  },
+  "TUTO_002_00": {
+    "en": "It's a [System:Color name=\"mgSht_red\" ]carnival gem[/System:Color]! That smashing\r\nlittle fellow will make you invincible\r\nfor a short while.",
+    "ua": "Це [System:Color name=\"mgSht_red\" ]карнавальний самоцвіт[/System:Color]! Цей\nчудовий малюк ненадовго зробить\nвас непереможними."
+  },
+  "TUTO_002_01": {
+    "en": "Nab it and we'll show those\r\nblighters a real carnival!",
+    "ua": "Хапайте його — і влаштуємо\nцим негідникам справжній карнавал!"
+  },
+  "DEMO1512_00": {
+    "en": "Before you stands First Mate Skully\r\nof the Gold Bone Gang!",
+    "ua": "Перед вами старпом Черепко\nз банди Золотої Кістки!"
+  },
+  "DEMO1512_01": {
+    "en": "I shall say this but once,\r\nso consider it your final warning!",
+    "ua": "Скажу це лише раз,\nтож вважайте це останнім попередженням!"
+  },
+  "DEMO1512_02": {
+    "en": "If you seek to interfere with\r\nour plans, all that awaits is\r\nyour own destruction!",
+    "ua": "Якщо завадите нашим планам,\nна вас чекатиме лише\nзагибель!"
+  },
+  "DEMO1512_03": {
+    "en": "Hmph. A mere trifle.",
+    "ua": "Хм. Дрібниця."
+  },
+  "DEMO1512_04": {
+    "en": "Know this! If you bother us\r\nany further, I will personally\r\nturn you into space dust!",
+    "ua": "Знайте! Якщо й далі нам\nдокучатимете, я особисто\nперетворю вас на космічний пил!"
+  },
+  "DEMO1513_00": {
+    "en": "GWAHAHAHAAA!\r\nIf it ain't the Mii Force!",
+    "ua": "ҐВА-ХА-ХА-ХА!\nТа це ж Mii Force!"
+  },
+  "DEMO1513_01": {
+    "en": "Let's see what ye mangy\r\nmeddlers are made of...",
+    "ua": "Подивимося, з чого зроблені\nви, шолудиві нишпорки…"
+  },
+  "DEMO1513_02": {
+    "en": "Hope yer looking forward to\r\na good keelhaulin'!",
+    "ua": "Сподіваюся, ви чекаєте\nна добрячу прочуханку!"
+  },
+  "DEMO1513_03": {
+    "en": "Hmm, there's fight in ye.\r\nMore than I thought, anyway.",
+    "ua": "Гм, у вас є запал.\nБільше, ніж я думав."
+  },
+  "DEMO1513_04": {
+    "en": "Suppose I'll let ye go free,\r\njust this once. GWAHAHAHAAA!",
+    "ua": "Мабуть, відпущу вас,\nцього разу. ҐВА-ХА-ХА-ХА!"
+  },
+  "DEMO1211_00": {
+    "en": "Jolly good show, squad! Order has\r\nbeen restored to [STAGE_NAME].",
+    "ua": "Блискуче, загоне! У місці\n«[STAGE_NAME]» знову порядок."
+  },
+  "DEMO1212_00": {
+    "en": "Another job well done. Sadly, though,\r\nit seems the pirate gang's hideout\r\nis elsewhere.",
+    "ua": "Ще одна чудова робота. Та, на жаль,\nсхоже, піратська схованка\nдесь-інде."
+  },
+  "DEMO1212_01": {
+    "en": "I shall investigate their probable\r\nwhereabouts right away.",
+    "ua": "Негайно з'ясую, де вони\nможуть бути."
+  },
+  "DEMO1213_00": {
+    "en": "Thanks to the Mii Force, peace has\r\nbeen restored to [AREA1_NAME].",
+    "ua": "Завдяки Mii Force на планету\n[AREA1_NAME] повернувся мир."
+  },
+  "DEMO1213_01": {
+    "en": "The Gold Bone Gang is trying\r\nto make a break for it.\r\nWe can't let them get away.",
+    "ua": "Банда Золотої Кістки\nнамагається втекти.\nНе можна їх відпустити."
+  },
+  "DEMO1213_02": {
+    "en": "We must end these shenanigans\r\npost-haste. Justice must be done!",
+    "ua": "Треба негайно покласти край\nцим витівкам. Справедливість понад усе!"
+  },
+  "DEMO121x_00": {
+    "en": "Squad Leader [MII_NAME],\r\nyou and your [MII_NUM] brave\r\nrecruits have made me proud!",
+    "ua": "Командире [MII_NAME],\nви й ваші відважні новобранці ([MII_NUM])\nзмусили мене пишатися!"
+  },
+  "DEMO121x_01": {
+    "en": "Squad Leader [MII_NAME],\r\nthank you for your hard work.\r\nYou too, [MII_00_A]!",
+    "ua": "Командире [MII_NAME],\nдякую за вашу працю.\nІ вам, [MII_00_A]!"
+  },
+  "DEMO121x_02": {
+    "en": "You are a true credit to the Mii Force.\r\nI look forward to seeing you again!",
+    "ua": "Ви — справжня окраса Mii Force.\nЧекатиму на нову зустріч!"
+  },
+  "DEMO121x_03": {
+    "en": "But for now... Troops, dismissed!",
+    "ua": "А поки що… Загін, вільні!"
+  },
+  "DEMO12xx_01B": {
+    "en": "Squad Leader [MII_NAME],\r\nthank you for your hard work.\r\nYou too, [MII_00_A]!",
+    "ua": "Командире [MII_NAME],\nдякую за вашу працю.\nІ вам, [MII_00_A]!"
+  },
+  "DEMO1310_00": {
+    "en": "Cap'n, our invasion o'\r\n[AREA1_NAME] failed!",
+    "ua": "Капітане, наше вторгнення\nна [AREA1_NAME] провалилося!"
+  },
+  "DEMO1310_01": {
+    "en": "I know. Them Mii Force scallywags\r\nhad a bit more bite than I gave\r\n'em credit for.",
+    "ua": "Знаю. Ті шибеники з Mii Force\nвиявилися зубатішими,\nніж я думав."
+  },
+  "DEMO1310_02": {
+    "en": "But never mind that. There's plenty\r\no' treasure to be had elsewhere!",
+    "ua": "Та байдуже. Скарбів\nвистачає й деінде!"
+  },
+  "DEMO1310_03": {
+    "en": "But, Cap'n, a few o' the crew hit\r\nthe beach for shore leave!",
+    "ua": "Але, капітане, кілька з команди\nпішли на берег у відпустку!"
+  },
+  "DEMO1310_06": {
+    "en": "Mutinous miscreants, every one.\r\nWhy didn't ye stop them?!",
+    "ua": "Бунтівні негідники, всі до одного.\nЧому ти їх не зупинив?!"
+  },
+  "DEMO1310_07": {
+    "en": "Erm... Well, Cap'n... It sorta\r\nslipped my mind. Hahaha...ha...",
+    "ua": "Е-е… Ну, капітане… Якось\nвилетіло з голови. Ха-ха-ха… ха…"
+  },
+  "DEMO1310_08": {
+    "en": "Anyway, where else be ripe for\r\nsome looting and plundering?",
+    "ua": "Хай там як, де ще можна\nвдосталь пограбувати?"
+  },
+  "DEMO1310_09": {
+    "en": "Well, there's them mysterious\r\nruins of [AREA2_NAME]...",
+    "ua": "Ну, є таємничі руїни\nна [AREA2_NAME]…"
+  },
+  "DEMO1310_10": {
+    "en": "Oh! And [AREA3_NAME]'s got\r\nthat giant theme park.",
+    "ua": "О! А на [AREA3_NAME] є\nвеличезний парк розваг."
+  },
+  "DEMO1310_11": {
+    "en": "So what's next, Cap'n? Swiping\r\nhidden treasures from ruins\r\nsounds like your type o' thing...",
+    "ua": "То що далі, капітане? Красти\nсховані скарби з руїн —\nсаме у вашому дусі…"
+  },
+  "DEMO1310_12": {
+    "en": "But what self-respecting pirate\r\ndon't want his own theme park?",
+    "ua": "Але який поважний пірат\nне хоче власного парку розваг?"
+  },
+  "DEMO1310_13": {
+    "en": "Gwahahaa! We'll go for two\r\nplanets at the same time!",
+    "ua": "Ґва-ха-ха! Візьмемо обидві\nпланети разом!"
+  },
+  "DEMO1310_14": {
+    "en": "Them miserable Mii Force fools'll\r\nnever know what hit 'em!",
+    "ua": "Ці жалюгідні дурні з Mii Force\nй не зрозуміють, що їх ударило!"
+  },
+  "DEMO1310_15": {
+    "en": "Our victory will be...\r\nYARRR-INSPIRING!",
+    "ua": "Наша перемога буде…\nЙО-ХО-ХОЛОСАЛЬНОЮ!"
+  },
+  "DEMO1310_16": {
+    "en": "B-but, Cap'n, we just got\r\na royal beating! Why not\r\nfall back and regroup?",
+    "ua": "А-але, капітане, нам щойно\nкоролівськи надавали! Може,\nвідступимо й перегрупуємося?"
+  },
+  "DEMO1310_17": {
+    "en": "Silence, ye scurvy scaredy-cat! \r\nWe'll be departing on the double.",
+    "ua": "Мовчати, паршивий боягузе!\nВідпливаємо негайно."
+  },
+  "DEMO1310_18": {
+    "en": "Aye aye, Cap'n!",
+    "ua": "Єсть, капітане!"
+  },
+  "DEMO1121_00": {
+    "en": "Ah, welcome back, Squad Leader\r\n[MII_NAME]. I see you have returned\r\nwith [MII_NUM] new recruits in tow.",
+    "ua": "А, з поверненням, командире\n[MII_NAME]. Бачу, ви привели\nновобранців: [MII_NUM]."
+  },
+  "DEMO1121_01": {
+    "en": "Thank you for coming,\r\nSquad Leader [MII_NAME].\r\nYou too, [MII_00_A].",
+    "ua": "Дякую, що прибули,\nкомандире [MII_NAME].\nІ вам, [MII_00_A]."
+  },
+  "DEMO1121_02": {
+    "en": "I need you to locate the Gold Bone\r\nGang's hideout in [STAGE_NAME].",
+    "ua": "Знайдіть схованку банди Золотої\nКістки в місці «[STAGE_NAME]»."
+  },
+  "DEMO1121_03": {
+    "en": "Ah, and I did a spot of research. It\r\nseems the fabled treasure of these ruins\r\nis a gemstone called Queen Jasmine.",
+    "ua": "А, я трохи покопався. Схоже,\nлегендарний скарб цих руїн —\nсамоцвіт на ім'я Королева Жасмин."
+  },
+  "DEMO1121_04": {
+    "en": "We mustn't let those awful pirates\r\nget to it first. Look lively, Mii Force.",
+    "ua": "Не можна дозволити цим жахливим\nпіратам дістатися до нього першими.\nЖвавіше, Mii Force."
+  },
+  "DEMO1121A": {
+    "en": "All right, squad. We rendezvous at\r\n[STAGE_NAME] on [AREA_NAME].",
+    "ua": "Гаразд, загоне. Збір у місці\n«[STAGE_NAME]», планета [AREA_NAME]."
+  },
+  "DEMO1122_00": {
+    "en": "Ah, welcome back, Squad Leader\r\n[MII_NAME]. I see you have returned\r\nwith [MII_NUM] new recruits in tow.",
+    "ua": "А, з поверненням, командире\n[MII_NAME]. Бачу, ви привели\nновобранців: [MII_NUM]."
+  },
+  "DEMO1122_01": {
+    "en": "Thank you for coming,\r\nSquad Leader [MII_NAME].\r\nYou too, [MII_00_A].",
+    "ua": "Дякую, що прибули,\nкомандире [MII_NAME].\nІ вам, [MII_00_A]."
+  },
+  "DEMO1122_02": {
+    "en": "Our intel suggests that Gold Bone\r\nis having a crack at [STAGE_NAME]\r\non [AREA2_NAME].",
+    "ua": "За нашими даними, Золота Кістка\nвзявся за місце «[STAGE_NAME]»\nна планеті [AREA2_NAME]."
+  },
+  "DEMO1122_03": {
+    "en": "Our reports indicated nothing of value\r\nthere. Hmm, most peculiar indeed.",
+    "ua": "Наші звіти не вказували, що там\nє щось цінне. Гм, дуже дивно."
+  },
+  "DEMO1122_04": {
+    "en": "We must find out what their\r\nintentions are. Mii Force,\r\nhurry to the scene!",
+    "ua": "Треба з'ясувати їхні\nнаміри. Mii Force,\nмерщій туди!"
+  },
+  "DEMO1122A": {
+    "en": "All right, squad. We rendezvous at\r\n[STAGE_NAME] on [AREA_NAME].",
+    "ua": "Гаразд, загоне. Збір у місці\n«[STAGE_NAME]», планета [AREA_NAME]."
+  },
+  "DEMO1123_00": {
+    "en": "Ah, welcome back, Squad Leader\r\n[MII_NAME]. I see you have returned\r\nwith [MII_NUM] new recruits in tow.",
+    "ua": "А, з поверненням, командире\n[MII_NAME]. Бачу, ви привели\nновобранців: [MII_NUM]."
+  },
+  "DEMO1123_01": {
+    "en": "Thank you for coming,\r\nSquad Leader [MII_NAME].\r\nYou too, [MII_00_A].",
+    "ua": "Дякую, що прибули,\nкомандире [MII_NAME].\nІ вам, [MII_00_A]."
+  },
+  "DEMO1123_02": {
+    "en": "The Gold Bone Gang has\r\nbuilt a defensive barricade\r\nin the [STAGE_NAME].",
+    "ua": "Банда Золотої Кістки\nзвела оборонну барикаду\nв місці «[STAGE_NAME]»."
+  },
+  "DEMO1123_03": {
+    "en": "It seems they intend to occupy the\r\narea until they find the legendary\r\ntreasure hidden there.",
+    "ua": "Схоже, вони хочуть утримувати\nцю зону, поки не знайдуть\nсхований там легендарний скарб."
+  },
+  "DEMO1123_04": {
+    "en": "I'll send you a mission update\r\nonce you reach the barricade\r\nsite. Hurry, Mii Force!",
+    "ua": "Я надішлю оновлення місії,\nколи ви дістанетеся барикади.\nМерщій, Mii Force!"
+  },
+  "DEMO1123A": {
+    "en": "All right, squad. We rendezvous at the\r\n[STAGE_NAME] on [AREA_NAME].",
+    "ua": "Гаразд, загоне. Збір у місці\n«[STAGE_NAME]», планета [AREA_NAME]."
+  },
+  "DEMO1521_00": {
+    "en": "Got something for ye, Mii Force!\r\nThink of it as a present from yer\r\nUncle Gold Bone!",
+    "ua": "Маю дещо для вас, Mii Force!\nВважайте це подарунком\nвід дядечка Золотої Кістки!"
+  },
+  "DEMO1521_01": {
+    "en": "Turns out the fabled old treasure\r\nthey call Queen Jasmine is actually\r\nthis...thing.",
+    "ua": "Виявилося, що легендарний давній скарб,\nякий звуть Королевою Жасмин, —\nоце… ось ця штука."
+  },
+  "DEMO1521_02": {
+    "en": "You should feel honoured! Ain't\r\nevery day you get an audience\r\nwith a queen! GWAHAHAHAAA!",
+    "ua": "Ви маєте почуватися вшанованими!\nНе щодня потрапляєш на аудієнцію\nдо королеви! ҐВА-ХА-ХА-ХА!"
+  },
+  "DEMO1522_00": {
+    "en": "I am afraid that you cannot pass\r\nthrough here. The arena is, shall\r\nwe say...under construction.",
+    "ua": "Боюся, тут не пройти.\nАрена, так би мовити…\nна реконструкції."
+  },
+  "DEMO1522_01": {
+    "en": "There's always the long way around,\r\nI suppose, but instead I present a\r\nmore direct route...TO YOUR DOOM!",
+    "ua": "Звісно, завжди можна піти в обхід,\nале я пропоную прямішу дорогу…\nДО ВАШОЇ ЗАГИБЕЛІ!"
+  },
+  "DEMO1522_02": {
+    "en": "No! My beautiful custom-built ship!\r\nAh well, so long as we get the\r\nhidden treasure...",
+    "ua": "Ні! Мій чудовий корабель на замовлення!\nАх, байдуже, аби лиш дістати\nсхований скарб…"
+  },
+  "DEMO1522_03": {
+    "en": "\"What hidden treasure\"? Oh,\r\ndo be serious. Of course you're\r\nhere to pilfer it, same as us.",
+    "ua": "«Який схований скарб»? Ой,\nне кажіть. Ви ж тут, щоб його\nпоцупити, як і ми."
+  },
+  "DEMO1522_04": {
+    "en": "Ack! While we're busy nattering\r\naway, the gate is about to close!\r\nI bid you farewell.",
+    "ua": "Ой! Поки ми теревенимо,\nворота от-от зачиняться!\nПрощавайте."
+  },
+  "DEMO1523_00": {
+    "en": "There's the little blighter!\r\nThe Gold Bone Gang's barricade!",
+    "ua": "Ось вона, голубонька!\nБарикада банди Золотої Кістки!"
+  },
+  "DEMO1523_01": {
+    "en": "It's a good thing we have the\r\nGatebuster 3000. It's the\r\nvery latest in Mii Force tech.",
+    "ua": "Добре, що в нас є Воротолом 3000.\nОстаннє слово техніки\nMii Force."
+  },
+  "DEMO1523_02": {
+    "en": "With its mighty [System:Color name=\"mgSht_red\" ]core stones[/System:Color] providing\r\nthe power, it can analyse and bypass\r\neven the most troublesome defences.",
+    "ua": "Живлений могутніми [System:Color name=\"mgSht_red\" ]каменями ядра[/System:Color],\nвін аналізує й обходить навіть\nнайскладніший захист."
+  },
+  "DEMO1523_03": {
+    "en": "Once it's up and running, wait for the\r\ncentral indicator to turn entirely green.\r\nThat's the sign that its work is done.",
+    "ua": "Коли він запрацює, чекайте, поки\nцентральний індикатор повністю позеленіє.\nЦе знак, що роботу виконано."
+  },
+  "DEMO1523_04": {
+    "en": "Of course, that will take some time.\r\nDon't let anyone swipe those core\r\nstones while it's chugging along!",
+    "ua": "Звісно, на це піде час. Поки він\nпихкає, не дайте нікому поцупити\nкамені ядра!"
+  },
+  "DEMO1523_05": {
+    "en": "I'm afraid if all the core stones are lost,\r\nthe device will, ah, self-destruct. To wit,\r\n[System:Color name=\"mgSht_red\" ]you must protect the core stones![/System:Color]",
+    "ua": "Боюся, якщо втратити всі камені ядра,\nпристрій, е-е, самознищиться. Тобто\n[System:Color name=\"mgSht_red\" ]бережіть камені ядра![/System:Color]"
+  },
+  "DEMO1523_06": {
+    "en": "By Jove, you've done it!\r\nNow you can proceed\r\ninto the ruins. ",
+    "ua": "Бий мене грім, вам вдалося!\nТепер можна рушати\nв руїни."
+  },
+  "DEMO1523_08": {
+    "en": "Great Scott!\r\nWhat is that...monstrosity?",
+    "ua": "Святі небеса!\nЩо це за… страховисько?"
+  },
+  "DEMO1523_09": {
+    "en": "Stay on your toes, squad.\r\nBest of luck!",
+    "ua": "Пильнуйте, загоне.\nЩасти!"
+  },
+  "DEMO1523_10": {
+    "en": "They've got the last core stone!\r\nIf you don't get it back, our device\r\nwill self-destruct. Hurry!",
+    "ua": "Вони забрали останній камінь ядра!\nЯкщо не повернете його, пристрій\nсамознищиться. Мерщій!"
+  },
+  "DEMO1523_11": {
+    "en": "You've lost all the core stones!\r\nWhat a catastrophe. I fear this may\r\nbe rather an expensive repair job...",
+    "ua": "Ви втратили всі камені ядра!\nЯка катастрофа. Боюся, ремонт\nобійдеться недешево…"
+  },
+  "DEMO1221_00": {
+    "en": "Thanks to the Mii Force, peace has\r\nbeen restored to [AREA2_NAME].",
+    "ua": "Завдяки Mii Force на планету\n[AREA2_NAME] повернувся мир."
+  },
+  "DEMO1221_01": {
+    "en": "Good show there, stopping Queen\r\nJasmine. What a monstrous present\r\nthose rascals gave us!",
+    "ua": "Чудово, що зупинили Королеву\nЖасмин. Оце так страхітливий подарунок\nвід тих шибеників!"
+  },
+  "DEMO1221_02": {
+    "en": "One of these days we shall\r\nhave to return the favour...",
+    "ua": "Колись доведеться\nвідповісти їм тим самим…"
+  },
+  "DEMO1222_00": {
+    "en": "A job well done, Squad Leader.",
+    "ua": "Чудова робота, командире."
+  },
+  "DEMO1222_01": {
+    "en": "Now, I shall put on my investigating hat\r\nand see if I can determine the\r\nwhereabouts of the treasure...",
+    "ua": "А тепер я вдягну капелюх слідчого\nй спробую з'ясувати,\nде скарб…"
+  },
+  "DEMO1223_00": {
+    "en": "That was some risky business!\r\nI'd never have expected a behemoth\r\nlike that to make our acquaintance.",
+    "ua": "Ризикована була справа!\nНе думав, що доведеться\nзнайомитися з таким велетом."
+  },
+  "DEMO1223_01": {
+    "en": "Though if I'm quite honest, the more risky\r\nour mission gets, the more thrilled I am\r\nabout the prospect of hidden treasure!",
+    "ua": "Хоча, чесно кажучи, що ризикованіша місія,\nто більше мене тішить думка\nпро схований скарб!"
+  },
+  "DEMO1223_02": {
+    "en": "Erm... I mean...\r\n*cough* Yes, quite.",
+    "ua": "Е-е… Тобто…\n*кхе* Так, звісно."
+  },
+  "DEMO1223_03": {
+    "en": "Hmm, I may still need a little\r\nretuning. Just gave myself an\r\noil change, you see... Haha...",
+    "ua": "Гм, мене, мабуть, ще треба\nпідналаштувати. Щойно змінив\nсобі мастило, розумієте… Ха-ха…"
+  },
+  "DEMO122x_00": {
+    "en": "Squad Leader [MII_NAME],\r\nyou and your [MII_NUM] brave\r\nrecruits have made me proud!",
+    "ua": "Командире [MII_NAME],\nви й ваші відважні новобранці ([MII_NUM])\nзмусили мене пишатися!"
+  },
+  "DEMO122x_01": {
+    "en": "Squad Leader [MII_NAME],\r\nthank you for your hard work.\r\nYou too, [MII_00_A]!",
+    "ua": "Командире [MII_NAME],\nдякую за вашу працю.\nІ вам, [MII_00_A]!"
+  },
+  "DEMO122x_02": {
+    "en": "You are a true credit to the Mii Force.\r\nI look forward to seeing you again!",
+    "ua": "Ви — справжня окраса Mii Force.\nЧекатиму на нову зустріч!"
+  },
+  "DEMO122x_03": {
+    "en": "But for now... Troops, dismissed!",
+    "ua": "А поки що… Загін, вільні!"
+  },
+  "DEMO1320_00": {
+    "en": "Well blow me down, Cap'n!\r\nThe booty we were after turned out\r\nto be a giant plant monster!",
+    "ua": "Хай йому грець, капітане!\nЗдобич виявилася велетенським\nрослинним чудовиськом!"
+  },
+  "DEMO1320_01": {
+    "en": "The seed had the look of\r\na fancy jewel about it.\r\nAll shiny and pretty...",
+    "ua": "Насінина була схожа\nна коштовний самоцвіт.\nТака блискуча й гарна…"
+  },
+  "DEMO1320_02": {
+    "en": "Then before I knew it, we had\r\na monster on our hands. This old\r\nspace dog got hornswoggled!",
+    "ua": "І не встиг я озирнутися, як маємо\nчудовисько. Старого космічного\nвовка ошукали!"
+  },
+  "DEMO1320_03": {
+    "en": "Cap'n, do you, erm, maybe\r\nthink...it might have woken\r\nup 'cos you got it wet?",
+    "ua": "Капітане, а може, е-е…\nвоно прокинулося, бо ви\nйого намочили?"
+  },
+  "DEMO1320_06": {
+    "en": "I couldn't help it, OK?!\r\nMy hands get all sweaty\r\nwhen there's treasure afoot!",
+    "ua": "Я не міг стриматися, ясно?!\nУ мене пітніють руки,\nколи пахне скарбом!"
+  },
+  "DEMO1320_07": {
+    "en": "Hahahaha! I mean...yes, Cap'n.\r\nThat's perfectly normal. Hehe...heh...",
+    "ua": "Ха-ха-ха! Тобто… так, капітане.\nЦе цілком нормально. Хе-хе… хе…"
+  },
+  "DEMO1320_08": {
+    "en": "Anyway, at least it made a nice\r\nlittle present. Really shivered\r\nthe Mii Force's timbers.",
+    "ua": "Хай там як, вийшов гарний\nподаруночок. Добряче струснув\nMii Force."
+  },
+  "DEMO1320_09": {
+    "en": "Can't wait to see what those\r\nrapscallions'll get me in return.",
+    "ua": "Цікаво, що ці шибеники\nподарують мені у відповідь."
+  },
+  "DEMO1320_10": {
+    "en": "Maybe you should hang a stocking\r\nso they have somewhere to put it!",
+    "ua": "Може, повісьте панчоху,\nщоб було куди класти!"
+  },
+  "DEMO1320_11": {
+    "en": "Oh! That's a mighty fine idea.\r\nPrepare to set sail...and find\r\nme a huge sock!",
+    "ua": "О! Чудова ідея.\nГотуйтеся відпливати… й знайдіть\nмені величезну шкарпетку!"
+  },
+  "DEMO1320_12": {
+    "en": "Aye aye, Cap'n!",
+    "ua": "Єсть, капітане!"
+  },
+  "DEMO1131_00": {
+    "en": "Ah, welcome back, Squad Leader\r\n[MII_NAME]. I see you have returned\r\nwith [MII_NUM] new recruits in tow.",
+    "ua": "А, з поверненням, командире\n[MII_NAME]. Бачу, ви привели\nновобранців: [MII_NUM]."
+  },
+  "DEMO1131_01": {
+    "en": "Thank you for coming,\r\nSquad Leader [MII_NAME].\r\nYou too, [MII_00_A].",
+    "ua": "Дякую, що прибули,\nкомандире [MII_NAME].\nІ вам, [MII_00_A]."
+  },
+  "DEMO1131_02": {
+    "en": "We've received intel that the Gold Bone\r\nGang is throwing a [STAGE_NAME]\r\non [AREA3_NAME].",
+    "ua": "За нашими даними, банда Золотої\nКістки влаштовує «[STAGE_NAME]»\nна планеті [AREA3_NAME]."
+  },
+  "DEMO1131_03": {
+    "en": "It seems they've taken over the\r\ntheme park down there, and they're\r\nreopening it as Golbonia Land!",
+    "ua": "Схоже, вони захопили тамтешній\nпарк розваг і відкривають його\nзнову як Голбонія-ленд!"
+  },
+  "DEMO1131_04": {
+    "en": "Mii Force, you must leave at once!\r\nI must have some opening-day\r\nsouvenirs!",
+    "ua": "Mii Force, негайно вирушайте!\nМені конче потрібні сувеніри\nз дня відкриття!"
+  },
+  "DEMO1131A": {
+    "en": "All right, squad. We rendezvous at the\r\n[STAGE_NAME] on [AREA_NAME].",
+    "ua": "Гаразд, загоне. Збір у місці\n«[STAGE_NAME]», планета [AREA_NAME]."
+  },
+  "DEMO1132_00": {
+    "en": "Ah, welcome back, Squad Leader\r\n[MII_NAME]. I see you have returned\r\nwith [MII_NUM] new recruits in tow.",
+    "ua": "А, з поверненням, командире\n[MII_NAME]. Бачу, ви привели\nновобранців: [MII_NUM]."
+  },
+  "DEMO1132_01": {
+    "en": "Thank you for coming,\r\nSquad Leader [MII_NAME].\r\nYou too, [MII_00_A].",
+    "ua": "Дякую, що прибули,\nкомандире [MII_NAME].\nІ вам, [MII_00_A]."
+  },
+  "DEMO1132_02": {
+    "en": "It seems the most popular ride\r\nin Golbonia Land is called the\r\n[STAGE_NAME].",
+    "ua": "Схоже, найпопулярніший атракціон\nГолбонія-ленду зветься\n«[STAGE_NAME]»."
+  },
+  "DEMO1132_03": {
+    "en": "I'm told there's always a lengthy queue\r\nfor it. Those wretched ragamuffins must\r\nbe making a fortune!",
+    "ua": "Кажуть, до нього завжди довжелезна\nчерга. Ці мерзенні обідранці, мабуть,\nгребуть гроші лопатою!"
+  },
+  "DEMO1132_04": {
+    "en": "Do everything you can to take back\r\nthat roller coaster. We must cut off\r\ntheir source of funds!",
+    "ua": "Зробіть усе, щоб повернути\nці американські гірки. Треба перекрити\nїм джерело грошей!"
+  },
+  "DEMO1132_05": {
+    "en": "The general public is paying these\r\nninnies to put them in danger. It's sheer\r\nmadness, and we cannot stand for it!",
+    "ua": "Люди платять цим телепням, щоб\nті наражали їх на небезпеку. Чисте\nбожевілля, і ми цього не потерпимо!"
+  },
+  "DEMO1132A": {
+    "en": "All right, squad. We rendezvous at the\r\n[STAGE_NAME] on [AREA_NAME].",
+    "ua": "Гаразд, загоне. Збір у місці\n«[STAGE_NAME]», планета [AREA_NAME]."
+  },
+  "DEMO1133_00": {
+    "en": "Ah, welcome back, Squad Leader\r\n[MII_NAME]. I see you have returned\r\nwith [MII_NUM] new recruits in tow.",
+    "ua": "А, з поверненням, командире\n[MII_NAME]. Бачу, ви привели\nновобранців: [MII_NUM]."
+  },
+  "DEMO1133_01": {
+    "en": "Thank you for coming,\r\nSquad Leader [MII_NAME].\r\nYou too, [MII_00_A].",
+    "ua": "Дякую, що прибули,\nкомандире [MII_NAME].\nІ вам, [MII_00_A]."
+  },
+  "DEMO1133_02": {
+    "en": "Before the Gold Bone Gang took over, the\r\nride they've renamed the [STAGE_NAME]\r\nwas the perfect spot for a romantic date.",
+    "ua": "До банди Золотої Кістки атракціон,\nнині перейменований на «[STAGE_NAME]»,\nбув ідеальним місцем для побачень."
+  },
+  "DEMO1133_03": {
+    "en": "I hear you could get a fine view\r\nof the park's fireworks from the\r\ntop. How marvellous!",
+    "ua": "Кажуть, згори чудово видно\nфеєрверки парку.\nЯк гарно!"
+  },
+  "DEMO1133_04": {
+    "en": "Hurry, Mii Force! In the name of\r\nall things lovey-dovey, we must\r\ntake it back!",
+    "ua": "Мерщій, Mii Force! В ім'я\nвсього романтичного треба\nйого повернути!"
+  },
+  "DEMO1133A": {
+    "en": "All right, squad. We rendezvous at the\r\n[STAGE_NAME] on [AREA_NAME].",
+    "ua": "Гаразд, загоне. Збір у місці\n«[STAGE_NAME]», планета [AREA_NAME]."
+  },
+  "DEMO1531_00": {
+    "en": "Ahoy there!\r\nWelcome to Golbonia Land!",
+    "ua": "Агов!\nВітаємо в Голбонія-ленді!"
+  },
+  "DEMO1531_01": {
+    "en": "You sorry lot are our 1,000th\r\nvisitors! Congrats!",
+    "ua": "Ви, жалюгідна компаніє, наші\n1000-ні відвідувачі! Вітаємо!"
+  },
+  "DEMO1531_02": {
+    "en": "And for that, we'll reward ye\r\nplanetlubbers quite handsomely.\r\nFeast yer eyes!",
+    "ua": "І за це ми щедро вас\nнагородимо, планетні щури.\nДивіться!"
+  },
+  "DEMO1532_00": {
+    "en": "Oh, did you perhaps think the ride\r\nwas over? Alas, the true terror\r\nhas yet to begin!",
+    "ua": "О, ви, певно, думали, що\nатракціон скінчився? На жаль,\nсправжній жах лише починається!"
+  },
+  "DEMO1532_01": {
+    "en": "As this is your grand finale,\r\nI put a little extra effort into\r\ndecorating my ship.",
+    "ua": "Оскільки це ваш грандіозний фінал,\nя трохи більше постарався\nз оздобленням корабля."
+  },
+  "DEMO1532_02": {
+    "en": "I do hope you like it...for it's\r\nthe last thing you will ever see!",
+    "ua": "Сподіваюся, вам сподобається…\nбо це останнє, що ви побачите!"
+  },
+  "DEMO1532_03": {
+    "en": "Gah, defeat after sorry defeat...",
+    "ua": "Тьху, поразка за поразкою…"
+  },
+  "DEMO1532_04": {
+    "en": "Skully, ye incompetent oaf!\r\nIt's deck-swabbing duty for ye!",
+    "ua": "Черепко, недолугий бевзю!\nДраїтимеш палубу!"
+  },
+  "DEMO1532_05": {
+    "en": "Captain, you mustn't forget the\r\nold saying: fourth time lucky.",
+    "ua": "Капітане, не забувайте давню\nприказку: на четвертий раз пощастить."
+  },
+  "DEMO1532_06": {
+    "en": "THAT'S NOT A REAL SAYING\r\nAND YE KNOW IT!",
+    "ua": "НЕМАЄ ТАКОЇ ПРИКАЗКИ,\nІ ТИ ЦЕ ЗНАЄШ!"
+  },
+  "DEMO1532_07": {
+    "en": "Hahaha! Caught ye! And once\r\nthe ride starts, there ain't no\r\nstopping it.",
+    "ua": "Ха-ха-ха! Попалися! А коли\nатракціон рушить, його вже\nне зупинити."
+  },
+  "DEMO1532_08": {
+    "en": "The Bone Rattler's gonna\r\ngive ye a right proper rattling,\r\nMii Force!",
+    "ua": "Кістобрязк вас як слід\nструсоне, Mii Force!"
+  },
+  "DEMO1532_09": {
+    "en": "It might even rattle yer bones\r\ninto dust! Hur hur hur!",
+    "ua": "Може, навіть кістки на порох\nрозтрусить! Гі-гі-гі!"
+  },
+  "DEMO1532_10": {
+    "en": "Well, enjoy the ride!",
+    "ua": "Що ж, приємної поїздки!"
+  },
+  "DEMO1532_11": {
+    "en": "Yer making a habit of disappointing\r\nme, you mangy wretch. This is\r\nTWICE now.",
+    "ua": "Ти мене знову розчаровуєш,\nшолудивий нікчемо. Уже\nДВІЧІ."
+  },
+  "DEMO1532_12": {
+    "en": "I'm starting to think ye don't care\r\nabout galactic domination at all!",
+    "ua": "Починаю думати, що тобі\nгалактичне панування до лампочки!"
+  },
+  "DEMO1532_13": {
+    "en": "But Captain, consider the old adage:\r\nhe who dares, cares.",
+    "ua": "Але, капітане, згадайте давню мудрість:\nхто ризикує, той дбає."
+  },
+  "DEMO1532_14": {
+    "en": "What nonsense you gibberin' now?!",
+    "ua": "Що ти там знову верзеш?!"
+  },
+  "DEMO1533_00": {
+    "en": "Hooray!",
+    "ua": "Ура!"
+  },
+  "DEMO1533_01": {
+    "en": "Ye made it! Welcome to\r\nour final attraction!",
+    "ua": "Ви дісталися! Ласкаво просимо\nна наш останній атракціон!"
+  },
+  "DEMO1533_02": {
+    "en": "Oh, this is gonna be a ton o' fun.\r\nGo get 'em, Big Squeal!",
+    "ua": "О, буде купа веселощів.\nВперед, Великий Вереске!"
+  },
+  "DEMO1231_00": {
+    "en": "You were the 1,000th visitors? I admit\r\nI'm rather jealous! Was there a prize?\r\n...Oh. THAT was the prize?!",
+    "ua": "Ви були 1000-ми відвідувачами? Зізнаюся,\nя трохи заздрю! Був приз?\n…О. ОЦЕ був приз?!"
+  },
+  "DEMO1231_01": {
+    "en": "In any case, there are still plenty\r\nof boorish buccaneers in the park.\r\nKeep at it, squad! Clear them all out!",
+    "ua": "Хай там як, у парку ще повно\nгрубих піратів. Так тримати,\nзагоне! Виженіть усіх!"
+  },
+  "DEMO1232_00": {
+    "en": "Squad Leader, I'm most impressed!\r\nYou didn't even scream.",
+    "ua": "Командире, я вражений!\nВи навіть не скрикнули."
+  },
+  "DEMO1232_01": {
+    "en": "By Jove, how can anyone enjoy\r\nthat manner of terrifying ride?\r\nJust LOOKING at it gives me chills.",
+    "ua": "Бий мене грім, як можна тішитися\nтаким жахливим атракціоном?\nМене від самого вигляду морозить."
+  },
+  "DEMO1233_00": {
+    "en": "Thanks to the Mii Force, [AREA3_NAME]\r\nhave regained control of their theme park.",
+    "ua": "Завдяки Mii Force на планеті [AREA3_NAME]\nзнову контролюють свій парк розваг."
+  },
+  "DEMO1233_01": {
+    "en": "Once the galaxy's safe, we should\r\ncome back and have a grand old time!\r\nFerris wheels, roller coasters, the lot!",
+    "ua": "Коли галактика буде в безпеці, треба\nповернутися й добряче розважитися!\nКолесо огляду, гірки — усе!"
+  },
+  "DEMO123x_00": {
+    "en": "Squad Leader [MII_NAME],\r\nyou and your [MII_NUM] brave\r\nrecruits have made me proud!",
+    "ua": "Командире [MII_NAME],\nви й ваші відважні новобранці ([MII_NUM])\nзмусили мене пишатися!"
+  },
+  "DEMO123x_01": {
+    "en": "Squad Leader [MII_NAME],\r\nthank you for your hard work.\r\nYou too, [MII_00_A]!",
+    "ua": "Командире [MII_NAME],\nдякую за вашу працю.\nІ вам, [MII_00_A]!"
+  },
+  "DEMO123x_02": {
+    "en": "You are a true credit to the Mii Force.\r\nI look forward to seeing you again!",
+    "ua": "Ви — справжня окраса Mii Force.\nЧекатиму на нову зустріч!"
+  },
+  "DEMO123x_03": {
+    "en": "But for now... Troops, dismissed!",
+    "ua": "А поки що… Загін, вільні!"
+  },
+  "DEMO1330_00": {
+    "en": "Cap'n, Golbonia Land is lost!",
+    "ua": "Капітане, Голбонія-ленд утрачено!"
+  },
+  "DEMO1330_01": {
+    "en": "Another failure? What did I do\r\nto get lumbered with such\r\ncowardly curs for crew?!",
+    "ua": "Знову провал? Чим я завинив,\nщо мені дісталася така\nбоягузлива команда?!"
+  },
+  "DEMO1330_02": {
+    "en": "And it was all going so well! We were\r\nraking in bags o' gold from the tickets,\r\nthe hot dog stand, the gift shop...",
+    "ua": "А все так добре йшло! Ми гребли\nзолото мішками з квитків, хот-догів,\nсувенірної крамниці…"
+  },
+  "DEMO1330_03": {
+    "en": "Although the customers weren't\r\nso keen on that big statue o' you...",
+    "ua": "Хоча відвідувачам не дуже\nсподобалася ваша велика статуя…"
+  },
+  "DEMO1330_04": {
+    "en": "Bah, I ain't surprised. Blasted thing\r\ndidn't even look like me.",
+    "ua": "Тьху, не дивно. Клята штука\nнавіть не була схожа на мене."
+  },
+  "DEMO1330_07": {
+    "en": "Who cares about a stupid statue,\r\nanyway?! Not me, that's fer sure!",
+    "ua": "Та кому яке діло до дурної статуї?!\nМені — точно ніякого!"
+  },
+  "DEMO1330_08": {
+    "en": "Whatever you say, Cap'n!\r\nHeh...heheh...heh...",
+    "ua": "Як скажете, капітане!\nХе… хе-хе… хе…"
+  },
+  "DEMO1330_09": {
+    "en": "At any rate, them Mii Force blaggards\r\nare better fighters than I thought.",
+    "ua": "Хай там як, ці пройдисвіти з Mii Force\nб'ються краще, ніж я думав."
+  },
+  "DEMO1330_10": {
+    "en": "You said it, Cap'n! They've showed\r\nmore backbone than any of us, hehe!",
+    "ua": "Ваша правда, капітане! Хребет\nу них міцніший, ніж у нас, хе-хе!"
+  },
+  "DEMO1330_11": {
+    "en": "Oi, yer on our side, numbskull!",
+    "ua": "Гей, ти ж на нашому боці, бовдуре!"
+  },
+  "DEMO1330_12": {
+    "en": "Anyway, the long and short of it is we\r\nstill need more gold, and quick. Fixing up\r\nthat theme park weren't cheap...",
+    "ua": "Коротше, нам і далі треба золото,\nй швидко. Ремонт того парку\nвлетів у копієчку…"
+  },
+  "DEMO1330_14": {
+    "en": "Now then, what's the nearest\r\nplunderable planet?",
+    "ua": "Ну, а яка найближча\nпланета для грабунку?"
+  },
+  "DEMO1330_15": {
+    "en": "[AREA4_NAME], Cap'n. They say it's\r\nthe prettiest place in the whole galaxy!",
+    "ua": "[AREA4_NAME], капітане. Кажуть, це\nнайгарніше місце в галактиці!"
+  },
+  "DEMO1330_16": {
+    "en": "Most of it's underwater. I hear loads o'\r\ntreasure's hidden under those waves!",
+    "ua": "Вона майже вся під водою. Кажуть,\nпід хвилями сховано купу скарбів!"
+  },
+  "DEMO1330_17": {
+    "en": "That'll do nicely. Now let's get to work!\r\nTime is money, and all that!",
+    "ua": "Згодиться. До роботи!\nЧас — гроші, і таке інше!"
+  },
+  "DEMO1330_18": {
+    "en": "Set a course for\r\n[AREA4_NAME]!",
+    "ua": "Курс на\n[AREA4_NAME]!"
+  },
+  "DEMO1330_19": {
+    "en": "Aye aye, Cap'n!",
+    "ua": "Єсть, капітане!"
+  },
+  "DEMO1141_00": {
+    "en": "Ah, welcome back, Squad Leader\r\n[MII_NAME]. I see you have returned\r\nwith [MII_NUM] new recruits in tow.",
+    "ua": "А, з поверненням, командире\n[MII_NAME]. Бачу, ви привели\nновобранців: [MII_NUM]."
+  },
+  "DEMO1141_01": {
+    "en": "Ahh! Squad Leader [MII_NAME],\r\ngood to see you. You too,\r\n[MII_00_A].",
+    "ua": "А! Командире [MII_NAME],\nрадий бачити. І вас,\n[MII_00_A]."
+  },
+  "DEMO1141_02": {
+    "en": "Our intel suggests that Gold Bone is\r\nheading towards the [STAGE_NAME]\r\non [AREA4_NAME].",
+    "ua": "За нашими даними, Золота Кістка\nпрямує до місця «[STAGE_NAME]»\nна планеті [AREA4_NAME]."
+  },
+  "DEMO1141_03": {
+    "en": "It's said that a legendary treasure\r\ncalled Aqua Rosa is hidden\r\nsomewhere in that area.",
+    "ua": "Кажуть, десь там схований\nлегендарний скарб на ім'я\nАква Роза."
+  },
+  "DEMO1141_04": {
+    "en": "He must be trying to get his\r\ngrubby hands on that. Put a stop\r\nto it, Mii Force!",
+    "ua": "Мабуть, він хоче наклацнути на нього\nсвої брудні лапи. Зупиніть його,\nMii Force!"
+  },
+  "DEMO1141A": {
+    "en": "All right, squad. We rendezvous at the\r\n[STAGE_NAME] on [AREA_NAME].",
+    "ua": "Гаразд, загоне. Збір у місці\n«[STAGE_NAME]», планета [AREA_NAME]."
+  },
+  "DEMO1142_00": {
+    "en": "Ah, welcome back, Squad Leader\r\n[MII_NAME]. I see you have returned\r\nwith [MII_NUM] new recruits in tow.",
+    "ua": "А, з поверненням, командире\n[MII_NAME]. Бачу, ви привели\nновобранців: [MII_NUM]."
+  },
+  "DEMO1142_01": {
+    "en": "Ahh! Squad Leader [MII_NAME],\r\ngood to see you. You too,\r\n[MII_00_A].",
+    "ua": "А! Командире [MII_NAME],\nрадий бачити. І вас,\n[MII_00_A]."
+  },
+  "DEMO1142_02": {
+    "en": "I researched Planet Aquatis's deep\r\nsea resources on the internet today,\r\nand you won't believe what I found...",
+    "ua": "Сьогодні я шукав в інтернеті про\nглибоководні ресурси Акватісу, і ви\nне повірите, що я знайшов…"
+  },
+  "DEMO1142_03": {
+    "en": "Gold Bone's personal blog!",
+    "ua": "Особистий блог Золотої Кістки!"
+  },
+  "DEMO1142_04": {
+    "en": "According to a recent post,\r\nhis plan is to corner the entire\r\ndeep-sea resource market.",
+    "ua": "Судячи з недавнього допису,\nвін хоче захопити весь ринок\nглибоководних ресурсів."
+  },
+  "DEMO1142_05": {
+    "en": "We must put a stop to this.\r\nTally-ho, Mii Force!",
+    "ua": "Треба це зупинити.\nУперед, Mii Force!"
+  },
+  "DEMO1142A": {
+    "en": "All right, squad. We rendezvous at the\r\n[STAGE_NAME] on [AREA_NAME].",
+    "ua": "Гаразд, загоне. Збір у місці\n«[STAGE_NAME]», планета [AREA_NAME]."
+  },
+  "DEMO1143_00": {
+    "en": "Ah, welcome back, Squad Leader\r\n[MII_NAME]. I see you have returned\r\nwith [MII_NUM] new recruits in tow.",
+    "ua": "А, з поверненням, командире\n[MII_NAME]. Бачу, ви привели\nновобранців: [MII_NUM]."
+  },
+  "DEMO1143_01": {
+    "en": "Thank you for coming,\r\nSquad Leader [MII_NAME].\r\nYou too, [MII_00_A].",
+    "ua": "Дякую, що прибули,\nкомандире [MII_NAME].\nІ вам, [MII_00_A]."
+  },
+  "DEMO1143_02": {
+    "en": "The Gold Bone Gang has been\r\nseen causing a spot of havoc at\r\n[STAGE_NAME].",
+    "ua": "Банду Золотої Кістки помітили:\nвони бешкетують у місці\n«[STAGE_NAME]»."
+  },
+  "DEMO1143_03": {
+    "en": "Reports suggest that rather a sizeable\r\ngroup is gathering. They must be up\r\nto something big!",
+    "ua": "За звітами, там збирається\nчимала група. Певно, затівають\nщось велике!"
+  },
+  "DEMO1143_04": {
+    "en": "I'll contact you with a mission\r\nupdate once you reach the site.\r\nToodle-pip, Mii Force!",
+    "ua": "Я надішлю оновлення місії,\nколи ви дістанетеся туди.\nБувайте, Mii Force!"
+  },
+  "DEMO1143A": {
+    "en": "All right, squad. We rendezvous at\r\n[STAGE_NAME] on [AREA_NAME].",
+    "ua": "Гаразд, загоне. Збір у місці\n«[STAGE_NAME]», планета [AREA_NAME]."
+  },
+  "DEMO1541_00": {
+    "en": "Hmm... This appears to be\r\na dead end.",
+    "ua": "Гм… Схоже,\nце глухий кут."
+  },
+  "DEMO1541_01": {
+    "en": "Wait... Oh, goodness! Sensors\r\ndetecting a ginormous energy\r\nsignature - headed your way!",
+    "ua": "Стривайте… О Боже! Датчики\nфіксують величезну енергію —\nвона йде на вас!"
+  },
+  "DEMO1541_02": {
+    "en": "Ye defeated Aqua Rosa?! Gah!\r\nI can't believe my spiky new pet\r\ngot taken out so easily!",
+    "ua": "Ви перемогли Акву Розу?! Тьху!\nНе вірю, що мого нового колючого\nулюбленця так легко розбили!"
+  },
+  "DEMO1541_03": {
+    "en": "Ye'll pay for this, Mii Force.\r\nIt's time for this crafty old\r\nspace dog to get serious!",
+    "ua": "Ви за це заплатите, Mii Force.\nЧас цьому старому хитрому\nкосмічному вовку взятися всерйоз!"
+  },
+  "DEMO1541_04": {
+    "en": "I hope yer ready!\r\nGWAHAHAHAAA!",
+    "ua": "Сподіваюся, ви готові!\nҐВА-ХА-ХА-ХА!"
+  },
+  "DEMO1542_00": {
+    "en": "Ack! Shiver me timbers!",
+    "ua": "Ой! Грім і блискавка!"
+  },
+  "DEMO1542_01": {
+    "en": "How'd ye find us down here? All this\r\ndeep-sea mining business has been\r\nsuper ultra double top secret!",
+    "ua": "Як ви нас тут знайшли? Уся ця\nглибоководна видобувка — супер-пупер\nподвійно надсекретна!"
+  },
+  "DEMO1542_02": {
+    "en": "Welp, guess it's time fer ye\r\nto have a taste o' the deadly\r\nBattle Blowfish!",
+    "ua": "Що ж, час вам покуштувати\nсмертоносну Бойову\nрибу-їжака!"
+  },
+  "DEMO1542_03": {
+    "en": "C'mon, try yer luck! I dare ye!",
+    "ua": "Ну ж бо, спробуйте! Ану!"
+  },
+  "DEMO1543_00": {
+    "en": "A large fleet of enemy ships\r\nis assembling somewhere in\r\n[STAGE_NAME].",
+    "ua": "Великий флот ворожих кораблів\nзбирається десь у місці\n«[STAGE_NAME]»."
+  },
+  "DEMO1543_01": {
+    "en": "To locate them, I have deployed\r\na high-tech tracking device\r\ncalled the Foe Finder 5000.",
+    "ua": "Щоб знайти їх, я розгорнув\nхай-тек пристрій стеження —\nВорогошукач 5000."
+  },
+  "DEMO1543_02": {
+    "en": "It uses the power of [System:Color name=\"mgSht_red\" ]core stones\r\n[/System:Color]to track suspicious objects.",
+    "ua": "Він стежить за підозрілими\nоб'єктами силою [System:Color name=\"mgSht_red\" ]каменів ядра\n[/System:Color]."
+  },
+  "DEMO1543_03": {
+    "en": "When the indicator in the centre\r\nis fully green, that means the scan\r\nof the area is complete.",
+    "ua": "Коли індикатор у центрі\nповністю позеленіє, сканування\nзони завершено."
+  },
+  "DEMO1543_04": {
+    "en": "The enemy will be trying to swipe\r\nthe core stones in an effort to\r\nhalt our search.",
+    "ua": "Ворог намагатиметься поцупити\nкамені ядра, щоб зупинити\nнаші пошуки."
+  },
+  "DEMO1543_05": {
+    "en": "If all the core stones are lost, the\r\ndevice will self-destruct. So please,\r\nI beg you, [System:Color name=\"mgSht_red\" ]protect the core stones![/System:Color]",
+    "ua": "Якщо втратити всі камені ядра,\nпристрій самознищиться. Тож благаю,\n[System:Color name=\"mgSht_red\" ]бережіть камені ядра![/System:Color]"
+  },
+  "DEMO1543_06": {
+    "en": "You've played right into our hands,\r\nMii Force! There's nothing special\r\nabout this place whatsoever...yet.",
+    "ua": "Ви потрапили в нашу пастку,\nMii Force! Тут немає нічого\nособливого… поки що."
+  },
+  "DEMO1543_07": {
+    "en": "But soon, it will become a\r\nlandmark known by all!",
+    "ua": "Але скоро це місце\nзнатимуть усі!"
+  },
+  "DEMO1543_08": {
+    "en": "For this will be the site where the\r\nMii Force met its untimely end!",
+    "ua": "Бо саме тут Mii Force\nзустріне свій кінець!"
+  },
+  "DEMO1543_09": {
+    "en": "Haha! Mission accomplished!\r\nWhat? You thought I was actually\r\nfighting you? Hilarious!",
+    "ua": "Ха-ха! Місію виконано!\nЩо? Ви думали, я справді\nз вами б'юся? Сміхота!"
+  },
+  "DEMO1543_10": {
+    "en": "By now, our main team is set up\r\nat our top secret base, collecting\r\nvaluable deep-sea resources.",
+    "ua": "Тим часом наша головна команда\nна надсекретній базі збирає цінні\nглибоководні ресурси."
+  },
+  "DEMO1543_11": {
+    "en": "According to the Foe Finder 5000's\r\nscan, this is the correct location.",
+    "ua": "Судячи з Ворогошукача 5000,\nце правильне місце."
+  },
+  "DEMO1543_12": {
+    "en": "But can this really be the pirates'\r\nassembly point? There doesn't\r\nseem to be anything here!",
+    "ua": "Але чи справді тут збираються\nпірати? Тут, здається,\nнічого немає!"
+  },
+  "DEMO1543_13": {
+    "en": "I've got a bad feeling about this...",
+    "ua": "Щось мені це не подобається…"
+  },
+  "DEMO1543_14": {
+    "en": "Oh fiddlesticks! We're still only\r\nhalfway through the payment plan\r\nfor that Foe Finder 5000!",
+    "ua": "Ох ти ж! Ми ще й половини\nкредиту за Ворогошукач 5000\nне виплатили!"
+  },
+  "DEMO1543_15": {
+    "en": "Good gracious, they've got the\r\nlast core stone! You'd best get\r\nit back - on the double!",
+    "ua": "Святі небеса, вони забрали\nостанній камінь ядра! Мерщій\nповерніть його!"
+  },
+  "DEMO1543_16": {
+    "en": "You've lost all the core stones! This\r\nis rather a mishap. The Foe Finder\r\n5000 didn't come cheap, you know.",
+    "ua": "Ви втратили всі камені ядра! Оце\nхалепа. Ворогошукач 5000\nдешево не коштував, знаєте."
+  },
+  "DEMO1543_17": {
+    "en": "And I daresay there's nothing\r\nyou can do about it!",
+    "ua": "І ви нічогісінько\nз цим не вдієте!"
+  },
+  "DEMO1543_18": {
+    "en": "Deary me, look who's back.\r\nGet him, Mii Force!",
+    "ua": "Ой лишенько, гляньте, хто повернувся.\nХапайте його, Mii Force!"
+  },
+  "DEMO1241_00": {
+    "en": "Jolly good work, team! You know,\r\nI thought this Aqua Rosa treasure\r\nsounded suspicious.",
+    "ua": "Чудова робота, загоне! Знаєте,\nмені одразу здався підозрілим\nцей скарб Аква Роза."
+  },
+  "DEMO1241_01": {
+    "en": "They say every rose has its thorns...\r\nWell, that one was covered in them!",
+    "ua": "Кажуть, у кожної троянди є шипи…\nА ця ними вся вкрита!"
+  },
+  "DEMO1241_02": {
+    "en": "Now that those pirates know we're a\r\nreal threat, I expect we'll see them\r\ncome at us with all their might.",
+    "ua": "Тепер, коли пірати знають, що ми\nсправжня загроза, вони, мабуть,\nкинуться на нас з усієї сили."
+  },
+  "DEMO1242_00": {
+    "en": "Thanks to the Mii Force, peace has\r\nbeen restored to [AREA4_NAME].",
+    "ua": "Завдяки Mii Force на планету\n[AREA4_NAME] повернувся мир."
+  },
+  "DEMO1242_01": {
+    "en": "The Gold Bone Gang has given up\r\non this planet and flown elsewhere...",
+    "ua": "Банда Золотої Кістки покинула\nцю планету й полетіла деінде…"
+  },
+  "DEMO1242_02": {
+    "en": "But don't worry - while you've\r\nbeen dealing with them, I've been\r\nbusy in my own way!",
+    "ua": "Але не хвилюйтеся — поки ви\nз ними розбиралися, я теж\nне сидів без діла!"
+  },
+  "DEMO1242_03": {
+    "en": "I mustered up enough courage\r\nto attach a tracking device to\r\nthat big, garish ship of theirs.",
+    "ua": "Я набрався сміливості й причепив\nпристрій стеження до їхнього\nвеликого кричущого корабля."
+  },
+  "DEMO1243_00": {
+    "en": "So that location was a red herring,\r\neh? I should have known.",
+    "ua": "Тож те місце було хибним слідом,\nтак? Слід було здогадатися."
+  },
+  "DEMO1243_01": {
+    "en": "I can't believe they tricked us with\r\nsuch an underhanded diversion.",
+    "ua": "Не віриться, що вони ошукали нас\nтаким підступним відволіканням."
+  },
+  "DEMO1243_02": {
+    "en": "Perhaps those shiny skulls of theirs\r\nhave brains in them after all!",
+    "ua": "Може, в їхніх блискучих черепах\nтаки є мізки!"
+  },
+  "DEMO124x_00": {
+    "en": "Squad Leader [MII_NAME],\r\nyou and your [MII_NUM] brave\r\nrecruits have made me proud!",
+    "ua": "Командире [MII_NAME],\nви й ваші відважні новобранці ([MII_NUM])\nзмусили мене пишатися!"
+  },
+  "DEMO124x_01": {
+    "en": "Squad Leader [MII_NAME],\r\nthank you for your hard work.\r\nYou too, [MII_00_A]!",
+    "ua": "Командире [MII_NAME],\nдякую за вашу працю.\nІ вам, [MII_00_A]!"
+  },
+  "DEMO124x_02": {
+    "en": "You are a true credit to the Mii Force.\r\nI look forward to seeing you again!",
+    "ua": "Ви — справжня окраса Mii Force.\nЧекатиму на нову зустріч!"
+  },
+  "DEMO124x_03": {
+    "en": "But for now... Troops, dismissed!",
+    "ua": "А поки що… Загін, вільні!"
+  },
+  "DEMO1243_10": {
+    "en": "I shall truly be counting on you\r\nin our next battle. I know you'll\r\nmake me proud.",
+    "ua": "У наступному бою я справді\nрозраховую на вас. Знаю,\nви змусите мене пишатися."
+  },
+  "DEMO1340_00": {
+    "en": "So, erm, Cap'n... Would ye say yer\r\na dog person or a cat person?",
+    "ua": "То, е-е, капітане… Ви більше\nлюбите собак чи котів?"
+  },
+  "DEMO1340_01": {
+    "en": "Eh...? Me?",
+    "ua": "Е…? Я?"
+  },
+  "DEMO1340_02": {
+    "en": "I'd have to say I'm a cat person.\r\nNo scurvy space dogs for me.",
+    "ua": "Мабуть, котів.\nНіяких паршивих космічних псів."
+  },
+  "DEMO1340_03": {
+    "en": "Buccaneering barnacles, me too!\r\nGuess it's true what they say\r\nabout great minds. Hehehe...heh...",
+    "ua": "Хай мені грець, я теж!\nВеликі уми думають однаково.\nХе-хе-хе… хе…"
+  },
+  "DEMO1340_06": {
+    "en": "Stop trying to change the subject!\r\nOut with it! What happened down\r\nthere?!",
+    "ua": "Не змінюй тему!\nКажи! Що там сталося?!"
+  },
+  "DEMO1340_07": {
+    "en": "Erm... Heheh... Well, y'see...",
+    "ua": "Е-е… Хе-хе… Ну, розумієте…"
+  },
+  "DEMO1340_08": {
+    "en": "Ugh! Well, no matter. Now, I heard\r\na tracking device has been found\r\non our hull...",
+    "ua": "Тьху! Та байдуже. Я чув,\nщо на корпусі знайшли\nпристрій стеження…"
+  },
+  "DEMO1340_09": {
+    "en": "Er, yep! You heard right, Cap'n.",
+    "ua": "Е, так! Правду чули, капітане."
+  },
+  "DEMO1340_10": {
+    "en": "Should I send someone out\r\nto scrape it off?",
+    "ua": "Послати когось\nйого відшкребти?"
+  },
+  "DEMO1340_11": {
+    "en": "No need! We ain't trying\r\nto hide from them anymore.",
+    "ua": "Не треба! Ми більше\nвід них не ховаємося."
+  },
+  "DEMO1340_12": {
+    "en": "Now's the chance to show 'em\r\nhow truly terrifying our piratey\r\npower can be!",
+    "ua": "Тепер час показати їм, якою\nжахливою може бути наша\nпіратська сила!"
+  },
+  "DEMO1340_13": {
+    "en": "That bilge-swilling Mii Force lot\r\nhave been a thorn in my side\r\nlong enough.  ",
+    "ua": "Ця трюмна шушваль з Mii Force\nдосить довго була мені\nскалкою в оці."
+  },
+  "DEMO1340_14": {
+    "en": "It's time to end it once and\r\nfor all! GWAHAHAHAAA!",
+    "ua": "Час покласти цьому край\nраз і назавжди! ҐВА-ХА-ХА-ХА!"
+  },
+  "DEMO1151_00": {
+    "en": "Ah, welcome back, Squad Leader\r\n[MII_NAME]. I see you have returned\r\nwith [MII_NUM] new recruits in tow.",
+    "ua": "А, з поверненням, командире\n[MII_NAME]. Бачу, ви привели\nновобранців: [MII_NUM]."
+  },
+  "DEMO1151_01": {
+    "en": "Ahh! Squad Leader [MII_NAME],\r\ngood to see you. You too,\r\n[MII_00_A].",
+    "ua": "А! Командире [MII_NAME],\nрадий бачити. І вас,\n[MII_00_A]."
+  },
+  "DEMO1151_02": {
+    "en": "We've finally tracked down\r\nGold Bone's ship. It seems\r\nthe final battle is upon us.",
+    "ua": "Ми нарешті вистежили корабель\nЗолотої Кістки. Схоже,\nфінальна битва близько."
+  },
+  "DEMO1151_03": {
+    "en": "I know you can win. With a good\r\nbit of teamwork you'll show him\r\nwhat's what, and more besides!",
+    "ua": "Знаю, ви переможете. Злагоджено\nдіючи, ви покажете йому,\nде раки зимують!"
+  },
+  "DEMO1151_04": {
+    "en": "Let's teach those pirates a lesson\r\nthey'll never forget. Really show\r\nthem what the Mii Force is made of!",
+    "ua": "Провчімо цих піратів так, щоб\nнавіки запам'ятали. Покажіть, з якого\nтіста зліплені Mii Force!"
+  },
+  "DEMO1151_05": {
+    "en": "That's the only way to get rid of the\r\nGold Bone Gang once and for all.\r\nPip pip, Mii Force!",
+    "ua": "Лише так можна позбутися\nбанди Золотої Кістки назавжди.\nУперед, Mii Force!"
+  },
+  "DEMO1151A": {
+    "en": "All right, squad. We rendezvous at the\r\n[STAGE_NAME] in [AREA_NAME].",
+    "ua": "Гаразд, загоне. Збір у місці\n«[STAGE_NAME]», [AREA_NAME]."
+  },
+  "DEMO1152_00": {
+    "en": "Ah, welcome back, Squad Leader\r\n[MII_NAME]. I see you have returned\r\nwith [MII_NUM] new recruits in tow.",
+    "ua": "А, з поверненням, командире\n[MII_NAME]. Бачу, ви привели\nновобранців: [MII_NUM]."
+  },
+  "DEMO1152_01": {
+    "en": "Ahh! Squad Leader [MII_NAME],\r\ngood to see you. You too,\r\n[MII_00_A].",
+    "ua": "А! Командире [MII_NAME],\nрадий бачити. І вас,\n[MII_00_A]."
+  },
+  "DEMO1152_02": {
+    "en": "Using the tracking device planted on\r\nGold Bone's ship, we've located the\r\npirates' space station.",
+    "ua": "Завдяки пристрою на кораблі\nЗолотої Кістки ми знайшли\nкосмічну станцію піратів."
+  },
+  "DEMO1152_03": {
+    "en": "Luckily, they don't seem to realise\r\nwe've found them. The station's\r\nsecurity looks very light indeed.",
+    "ua": "На щастя, вони, схоже, не знають,\nщо ми їх знайшли. Охорона станції\nдуже слабка."
+  },
+  "DEMO1152_04": {
+    "en": "Mii Force, I'd like you to sneak\r\ninside and capture Gold Bone.",
+    "ua": "Mii Force, прошу вас пробратися\nвсередину й схопити Золоту Кістку."
+  },
+  "DEMO1152_05": {
+    "en": "There's a...small chance that this is\r\na trap, but still, we can't miss this\r\nopportunity. Tally-ho, Mii Force!",
+    "ua": "Є… невеликий шанс, що це пастка,\nале не можна проґавити нагоду.\nУперед, Mii Force!"
+  },
+  "DEMO1152A": {
+    "en": "All right, squad. We rendezvous at\r\n[STAGE_NAME] in [AREA_NAME].",
+    "ua": "Гаразд, загоне. Збір у місці\n«[STAGE_NAME]», [AREA_NAME]."
+  },
+  "DEMO1153_00": {
+    "en": "Ah, welcome back, Squad Leader\r\n[MII_NAME]. I see you have returned\r\nwith [MII_NUM] new recruits in tow.",
+    "ua": "А, з поверненням, командире\n[MII_NAME]. Бачу, ви привели\nновобранців: [MII_NUM]."
+  },
+  "DEMO1153_01": {
+    "en": "Ahh! Squad Leader [MII_NAME],\r\ngood to see you. You too,\r\n[MII_00_A].",
+    "ua": "А! Командире [MII_NAME],\nрадий бачити. І вас,\n[MII_00_A]."
+  },
+  "DEMO1153_02": {
+    "en": "Your task is to locate Gold Bone. He\r\nmust be somewhere on that station.",
+    "ua": "Ваше завдання — знайти Золоту Кістку.\nВін має бути десь на станції."
+  },
+  "DEMO1153_03": {
+    "en": "The Gold Bone Gang is on high alert\r\nnow that they know we're here.",
+    "ua": "Банда Золотої Кістки напоготові,\nвідколи знає, що ми тут."
+  },
+  "DEMO1153_04": {
+    "en": "Getting past all those defences\r\nmay prove rather tricky.",
+    "ua": "Подолати весь цей захист\nможе бути непросто."
+  },
+  "DEMO1153_05": {
+    "en": "Get ready for a rather challenging\r\nfight, Mii Force! I know you'll\r\nmake me proud!",
+    "ua": "Готуйтеся до важкого бою,\nMii Force! Знаю, ви змусите\nмене пишатися!"
+  },
+  "DEMO1153A": {
+    "en": "All right, squad. We rendezvous at\r\n[STAGE_NAME] in [AREA_NAME].",
+    "ua": "Гаразд, загоне. Збір у місці\n«[STAGE_NAME]», [AREA_NAME]."
+  },
+  "DEMO1551_00": {
+    "en": "Gah, don't you pesky flies ever\r\ngive up?! What a pain!",
+    "ua": "Тьху, ви, набридливі мухи, коли\nвже відчепитеся?! Яка морока!"
+  },
+  "DEMO1551_01": {
+    "en": "Remember the first time ye\r\ngot in my way?",
+    "ua": "Пам'ятаєте, як ви вперше\nстали мені на заваді?"
+  },
+  "DEMO1551_02": {
+    "en": "I should have hoisted ye over the\r\nyardarm right then and there.",
+    "ua": "Треба було тоді ж\nвас і повісити на реї."
+  },
+  "DEMO1551_03": {
+    "en": "That's a mistake I won't make twice,\r\nmind. Flies are only good for one\r\nthing, and that's SQUISHING!",
+    "ua": "Двічі цієї помилки не зроблю.\nМухи годяться лише на одне —\nщоб їх РОЗЧАВЛЮВАТИ!"
+  },
+  "DEMO1551_04": {
+    "en": "Shiver me timbers, NO! My beautiful\r\nRobo-Bone, blasted to bits!",
+    "ua": "Грім і блискавка, НІ! Мою чудову\nРобо-Кістку розтрощено на друзки!"
+  },
+  "DEMO1551_05": {
+    "en": "It...it ain't possible...",
+    "ua": "Це… це неможливо…"
+  },
+  "DEMO1551_06": {
+    "en": "Someone... Someone tell me\r\nthis is all just a big joke...",
+    "ua": "Хай хтось… хтось скаже,\nщо це лише жарт…"
+  },
+  "DEMO1551_07": {
+    "en": "My plundering days cut short\r\nin some far-flung corner of\r\nthe universe...",
+    "ua": "Мої грабіжницькі дні урвалися\nв якомусь далекому закутку\nвсесвіту…"
+  },
+  "DEMO1551_08": {
+    "en": "Gwahaha...ha...ha... What's this...?\r\nI think I finally...see the light...",
+    "ua": "Ґва-ха-ха… ха… ха… Що це…?\nЗдається, я нарешті… прозрів…"
+  },
+  "DEMO1551_09": {
+    "en": "Yarr... It seems so obvious\r\nnow I look back on me life...",
+    "ua": "Йо-хо… Тепер, озираючись\nна життя, усе так очевидно…"
+  },
+  "DEMO1551_10": {
+    "en": "All that glistens...\r\nain't gold...",
+    "ua": "Не все те золото…\nщо блищить…"
+  },
+  "DEMO1551_11": {
+    "en": "All right, Mii Force, this has gone\r\non long enough.",
+    "ua": "Гаразд, Mii Force, це триває\nзанадто довго."
+  },
+  "DEMO1551_12": {
+    "en": "Is the Hyper Goldenator Plasma\r\nCannon charged up yet?",
+    "ua": "Гіпер-Золотоплазмова гармата\nвже заряджена?"
+  },
+  "DEMO1551_13": {
+    "en": "Aye, Cap'n! We got three shots\r\nready to fire.",
+    "ua": "Так, капітане! Три постріли\nнапоготові."
+  },
+  "DEMO1551_14": {
+    "en": "Gwahaha! I only need two to deal\r\nwith this load o' sorry space dogs.",
+    "ua": "Ґва-ха-ха! Мені вистачить двох,\nщоб розібратися з цими псами."
+  },
+  "DEMO1551_15": {
+    "en": "Mii Force! Yer doom be at hand!",
+    "ua": "Mii Force! Ваша загибель близько!"
+  },
+  "DEMO1551_16": {
+    "en": "Look out! Evasive manoeuvres! ",
+    "ua": "Обережно! Ухиляйтеся!"
+  },
+  "DEMO1551_17": {
+    "en": "Ugh... Only one shot left...\r\nBut I'll make it count!",
+    "ua": "Тьху… Лишився один постріл…\nАле я влучу!"
+  },
+  "DEMO1551_18": {
+    "en": "Eh...? What happened? Why ain't\r\nthis blasted thing working?!",
+    "ua": "Е…? Що сталося? Чому ця\nклята штука не працює?!"
+  },
+  "DEMO1551_19": {
+    "en": "Erm...ye said ye only needed two\r\nshots, so we used the energy for\r\nthe last one to put the kettle on...",
+    "ua": "Е-е… ви казали, вистачить двох\nпострілів, тож енергію третього\nми пустили на чайник…"
+  },
+  "DEMO1551_20": {
+    "en": "WHAT?!\r\nWhy would ye do that?!",
+    "ua": "ЩО?!\nНавіщо ви це зробили?!"
+  },
+  "DEMO1551_21": {
+    "en": "Ugh. Now I've got to go out there\r\nand take care of this meself.",
+    "ua": "Тьху. Тепер доведеться\nсамому з цим розбиратися."
+  },
+  "DEMO1552_00": {
+    "en": "Mii Force! At last, you decide to\r\nshow your hideous hides!",
+    "ua": "Mii Force! Нарешті ви наважилися\nпоказати свої бридкі пики!"
+  },
+  "DEMO1552_01": {
+    "en": "You've served me quite a few defeats,\r\nbut that ends here and now. Failure is\r\na bitter pill to swallow...",
+    "ua": "Ви завдали мені чимало поразок,\nале тут цьому край. Поразка —\nгірка пігулка…"
+  },
+  "DEMO1552_02": {
+    "en": "Let us see how you enjoy it!",
+    "ua": "Покуштуйте її самі!"
+  },
+  "DEMO1552_03": {
+    "en": "Hmph. I didn't expect a police force\r\nfrom such a remote galaxy to display\r\nsuch fortitude.",
+    "ua": "Хм. Не чекав, що поліція з такої\nглухої галактики виявить\nтаку стійкість."
+  },
+  "DEMO1552_04": {
+    "en": "Oh, erm, yes! I've got it!\r\nWhy don't you and I join forces?",
+    "ua": "О, е-е, так! Придумав!\nА давайте об'єднаємо сили?"
+  },
+  "DEMO1552_05": {
+    "en": "Together we could take down\r\nGold Bone and... Wait, what?\r\nYou refuse?!",
+    "ua": "Разом ми скинемо Золоту Кістку\nй… Стривайте, що?\nВи відмовляєтеся?!"
+  },
+  "DEMO1552_06": {
+    "en": "BUT WHY?!?!",
+    "ua": "АЛЕ ЧОМУ?!?!"
+  },
+  "DEMO1553_00": {
+    "en": "Know what you sorry lot are?",
+    "ua": "Знаєте, хто ви такі, нікчеми?"
+  },
+  "DEMO1553_01": {
+    "en": "Moths! Moths flying\r\ninto a flame!",
+    "ua": "Метелики! Метелики,\nщо летять на вогонь!"
+  },
+  "DEMO1553_02": {
+    "en": "What? Yer not sure what\r\nI'm getting at?",
+    "ua": "Що? Не второпали,\nдо чого я веду?"
+  },
+  "DEMO1553_03": {
+    "en": "Well, ye'll know soon enough.\r\nGWAHAHAHAAA!",
+    "ua": "Що ж, скоро второпаєте.\nҐВА-ХА-ХА-ХА!"
+  },
+  "DEMO1553_04": {
+    "en": "Oi, you lot are moths, remember?!\r\nYer not meant to survive this close\r\nto a glorious flame like, say, ME!",
+    "ua": "Гей, ви ж метелики, пам'ятаєте?!\nВи не маєте вижити так близько\nдо славного вогню, як-от Я!"
+  },
+  "DEMO1553_05": {
+    "en": "Ahoy! Get me out of here!",
+    "ua": "Агов! Витягніть мене звідси!"
+  },
+  "DEMO1553_06": {
+    "en": "Aye aye, Cap'n!",
+    "ua": "Єсть, капітане!"
+  },
+  "DEMO1553_07": {
+    "en": "Oops, hehe...\r\nHit the wrong button... ",
+    "ua": "Ой, хе-хе…\nНе ту кнопку натиснув…"
+  },
+  "DEMO1553_08": {
+    "en": "Well, hurry up and hit the\r\nRIGHT one!",
+    "ua": "То мерщій натисни\nПРАВИЛЬНУ!"
+  },
+  "DEMO1553_09": {
+    "en": "GWAHAHAHAAA! You scurvy\r\nMii Force sluggards'll never\r\ncatch me.",
+    "ua": "ҐВА-ХА-ХА-ХА! Вам, паршиві\nвайлуваті Mii Force, мене\nне спіймати."
+  },
+  "DEMO1553_10": {
+    "en": "That's where you're wrong, Gold\r\nBone. Engines, full speed ahead!",
+    "ua": "Ось тут ти помиляєшся, Золота\nКістко. Двигуни, повний вперед!"
+  },
+  "DEMO1252_00": {
+    "en": "So it was a trap after all, eh?\r\nNonetheless, you did an excellent job.",
+    "ua": "Тож це таки була пастка?\nХай там як, ви чудово впоралися."
+  },
+  "DEMO1252_01": {
+    "en": "We may not have found Gold Bone yet,\r\nbut he must be somewhere in that base.",
+    "ua": "Ми ще не знайшли Золоту Кістку,\nале він має бути десь на базі."
+  },
+  "DEMO1252_02": {
+    "en": "Why, he's so focused on hiding, he\r\nhasn't even updated his blog recently!",
+    "ua": "Він так захопився хованками,\nщо навіть блог давно не оновлював!"
+  },
+  "DEMO1253_00": {
+    "en": "Gold Bone has flown off into space\r\nin his giant battleship.",
+    "ua": "Золота Кістка полетів у космос\nна своєму велетенському лінкорі."
+  },
+  "DEMO1253_01": {
+    "en": "We're chasing him at maximum\r\nspeed. Be ready to show him what's\r\nwhat as soon as we catch up.",
+    "ua": "Ми женемося на максимальній\nшвидкості. Будьте готові провчити\nйого, щойно наздоженемо."
+  },
+  "DEMO1253_02": {
+    "en": "For now you might want to take a bit\r\nof a breather, maybe have some tea.\r\nWe've got a corker of a fight coming up!",
+    "ua": "А поки можете трохи перепочити,\nвипити чаю. Попереду знатна\nбитва!"
+  },
+  "DEMO125x_00": {
+    "en": "Squad Leader [MII_NAME],\r\nyou and your [MII_NUM] brave\r\nrecruits have made me proud!",
+    "ua": "Командире [MII_NAME],\nви й ваші відважні новобранці ([MII_NUM])\nзмусили мене пишатися!"
+  },
+  "DEMO125x_01": {
+    "en": "Squad Leader [MII_NAME],\r\nthank you for your hard work.\r\nYou too, [MII_00_A]!",
+    "ua": "Командире [MII_NAME],\nдякую за вашу працю.\nІ вам, [MII_00_A]!"
+  },
+  "DEMO125x_02": {
+    "en": "The end of this ordeal is in sight.\r\nI can feel it in my circuits,\r\nwe're almost there!",
+    "ua": "Кінець цього випробування близько.\nВідчуваю це всіма схемами,\nми майже у цілі!"
+  },
+  "DEMO125x_03": {
+    "en": "Farewell for now, troops.\r\nDismissed!",
+    "ua": "Поки що прощавайте, бійці.\nВільні!"
+  },
+  "HINT111_00": {
+    "en": "Here's a rather handy tip: a bigger\r\nsquad makes for easier battles!",
+    "ua": "Ось корисна порада: що більший\nзагін, то легші бої!"
+  },
+  "HINT111_01": {
+    "en": "When an enemy's hiding behind\r\na shield, try a different angle of\r\nattack. It might just help!",
+    "ua": "Коли ворог ховається за щитом,\nспробуйте атакувати під іншим кутом.\nМоже допомогти!"
+  },
+  "HINT112_00": {
+    "en": "The crabs on this planet are awfully\r\nstrong. Deal with them quickly -\r\ntheir claws can give a nasty pinch!",
+    "ua": "Краби на цій планеті страшенно\nсильні. Розбирайтеся з ними швидко —\nїхні клешні боляче щипаються!"
+  },
+  "HINT112_01": {
+    "en": "When fighting First Mate Skully, keep\r\ncalm and observe his attack patterns.\r\nThey're surprisingly simple - like him!",
+    "ua": "Борючись зі старпомом Черепком,\nстежте за його атаками.\nВони напрочуд прості — як і він!"
+  },
+  "HINT113_00": {
+    "en": "When faced with a thick-skinned foe,\r\nfill up your power-up ports to deliver\r\nmaximum damage.",
+    "ua": "Проти товстошкірого ворога\nзаповніть порти посилення,\nщоб завдати максимум шкоди."
+  },
+  "HINT113_01": {
+    "en": "When you're fighting Gold Bone,\r\nmy advice would be to keep\r\nyour distance.",
+    "ua": "У бою із Золотою Кісткою\nрадив би тримати\nдистанцію."
+  },
+  "HINT211_00": {
+    "en": "I hear these ruins are home to some\r\nslithery gem-eating...things. Try using\r\nthe [System:Color name=\"mgSht_red\" ]Bomb Blaster [/System:Color]to destroy them.",
+    "ua": "Кажуть, у цих руїнах живуть якісь\nслизькі пожирачі самоцвітів. Знищуйте\nїх [System:Color name=\"mgSht_red\" ]Бомбометом[/System:Color]."
+  },
+  "HINT211_01": {
+    "en": "Queen Jasmine spits out seeds that\r\nsprout when they hit the wall. Be sure to\r\ndeal with those seedlings on the double!",
+    "ua": "Королева Жасмин плюється насінням,\nщо проростає на стінах. Мерщій\nзнищуйте ці паростки!"
+  },
+  "HINT212_00": {
+    "en": "It's easier to evade falling blocks when\r\nyou spot their shadows. Alternatively,\r\ndemolish them with the [System:Color name=\"mgSht_red\" ]Spike Launcher[/System:Color]!",
+    "ua": "Від блоків, що падають, легше ухилитися,\nстежачи за тінню. Або знищуйте\nїх [System:Color name=\"mgSht_red\" ]Шипометом[/System:Color]!"
+  },
+  "HINT212_01": {
+    "en": "When facing that awful Skully fellow,\r\nit's wise to stay back and wait for\r\nthe right moment to strike.",
+    "ua": "Проти цього жахливого Черепка\nрозумно триматися позаду й чекати\nслушної миті для удару."
+  },
+  "HINT213_00": {
+    "en": "Don't stray too far from the\r\nGatebuster 3000. You must protect\r\nthe core stones at all costs!",
+    "ua": "Не відходьте далеко від\nВоротолома 3000. Бережіть камені\nядра будь-що!"
+  },
+  "HINT213_01": {
+    "en": "I bet the [System:Color name=\"mgSht_red\" ]Incinerator[/System:Color] would burn up that\r\nplant rather nicely. Just be sure to avoid\r\nthe toxic sludge it's spitting out.",
+    "ua": "Певен, [System:Color name=\"mgSht_red\" ]Спопелювач[/System:Color] гарно спалить ту\nрослину. Лише уникайте отруйного\nмулу, яким вона плюється."
+  },
+  "HINT311_00": {
+    "en": "I've heard that ghosts rather enjoy\r\nhiding gems. Try using the [System:Color name=\"mgSht_red\" ]Plasma\r\nWhip [/System:Color]to find out if that's true!",
+    "ua": "Кажуть, привиди люблять ховати\nсамоцвіти. Перевірте це\n[System:Color name=\"mgSht_red\" ]Плазмобатогом[/System:Color]!"
+  },
+  "HINT311_01": {
+    "en": "Keep your distance to avoid the\r\nMagnificent Monster Mechs' fire.\r\nWatch for their weak spots!",
+    "ua": "Тримайте дистанцію від вогню\nвеличних механічних чудовиськ.\nШукайте слабкі місця!"
+  },
+  "HINT312_00": {
+    "en": "Hit the arrow-shaped [System:Color name=\"mgSht_red\" ]track switches\r\n[/System:Color]to swap over to less perilous sections\r\nof track.",
+    "ua": "Влучайте в [System:Color name=\"mgSht_red\" ]стрілки-перемикачі[/System:Color],\nщоб звертати на безпечніші\nділянки колії."
+  },
+  "HINT312_01": {
+    "en": "Use the [System:Color name=\"mgSht_red\" ]Wave Blaster [/System:Color]to extinguish\r\nSkully's flame attacks, and ride\r\nyour way to a rollicking victory!",
+    "ua": "Гасіть вогняні атаки Черепка\n[System:Color name=\"mgSht_red\" ]Хвилеметом[/System:Color] і мчіть\nдо веселої перемоги!"
+  },
+  "HINT313_00": {
+    "en": "To defeat a Ferris wheel, you can\r\neither attack its cannons one by one\r\nor blast its central hub.",
+    "ua": "Щоб здолати колесо огляду,\nатакуйте гармати по одній\nабо бийте в центр."
+  },
+  "HINT313_01": {
+    "en": "When battling the Big Squeal, you'll find\r\nthat the [System:Color name=\"mgSht_red\" ]Vorpal Laser[/System:Color], [System:Color name=\"mgSht_red\" ]Bomb Blaster[/System:Color]\r\nand [System:Color name=\"mgSht_red\" ]Cosmic Cutter[/System:Color] are most effective.",
+    "ua": "Проти Великого Вереску найкраще\nдіють [System:Color name=\"mgSht_red\" ]Лазер-спис[/System:Color], [System:Color name=\"mgSht_red\" ]Бомбомет[/System:Color]\nй [System:Color name=\"mgSht_red\" ]Космоніж[/System:Color]."
+  },
+  "HINT411_00": {
+    "en": "The [System:Color name=\"mgSht_red\" ]Homing Sharks [/System:Color]move faster\r\nunderwater. They take to it like a\r\nduck to water! Well...a shark...",
+    "ua": "[System:Color name=\"mgSht_red\" ]Самонавідні акули[/System:Color] під водою\nшвидші. Їм там як рибі у воді!\nНу… як акулі."
+  },
+  "HINT411_01": {
+    "en": "Cease fire to charge up the [System:Color name=\"mgSht_red\" ]Warp\r\nCharge[/System:Color]. Then you can blast those\r\ntrickier enemies into smithereens!",
+    "ua": "Не стріляйте, щоб зарядити [System:Color name=\"mgSht_red\" ]Варп-\nзаряд[/System:Color]. Тоді хитрих ворогів\nрознесе вщент!"
+  },
+  "HINT412_00": {
+    "en": "Use the [System:Color name=\"mgSht_red\" ]Spike Launcher [/System:Color]to fend off\r\nsticky foes, and manoeuvre your ship\r\nto shake off troublesome hangers-on!",
+    "ua": "[System:Color name=\"mgSht_red\" ]Шипомет[/System:Color] відганяє липких ворогів,\nа маневри скидають набридливих\nпричеп!"
+  },
+  "HINT412_01": {
+    "en": "The [System:Color name=\"mgSht_red\" ]Globular Cannon [/System:Color]can help find enemy\r\nweak spots. Land a shot, then watch it slide\r\nalong and (eventually) hit the weak spot!",
+    "ua": "[System:Color name=\"mgSht_red\" ]Кульова гармата[/System:Color] допомагає шукати\nслабкі місця. Влучте — і куля сповзе\n(зрештою) до слабкого місця!"
+  },
+  "HINT413_00": {
+    "en": "The [System:Color name=\"mgSht_red\" ]Chain Lightning [/System:Color]gets a boost\r\nunderwater. Aim it at groups of enemies\r\nto really show them what's what!",
+    "ua": "[System:Color name=\"mgSht_red\" ]Блискавиця[/System:Color] під водою сильніша.\nЦільтеся в групи ворогів —\nхай знають наших!"
+  },
+  "HINT413_01": {
+    "en": "The key to dodging projectiles\r\nis evasive action. Whatever you\r\ndo, don't stop moving!",
+    "ua": "Секрет ухилення від снарядів —\nманеври. Що б не було,\nне зупиняйтеся!"
+  },
+  "HINT511_00": {
+    "en": "Those rascals are preparing to launch\r\na full-scale attack. You'll want to gather\r\nas many recruits as you can!",
+    "ua": "Ці шибеники готують повномасштабну\nатаку. Зберіть якомога\nбільше новобранців!"
+  },
+  "HINT511_01": {
+    "en": "The Robo-Bone is a tough nut to crack,\r\nbut with your skills and know-how,\r\nI'm sure you'll get the job done!",
+    "ua": "Робо-Кістка — міцний горішок,\nале з вашим хистом і знаннями,\nпевен, ви впораєтеся!"
+  },
+  "HINT512_00": {
+    "en": "Remember those blocks that move up\r\nand down in reaction to your ship? You\r\ncan use them to block enemy attacks!",
+    "ua": "Пам'ятаєте блоки, що рухаються вгору\nй униз слідом за кораблем? Ними можна\nзакриватися від атак!"
+  },
+  "HINT512_01": {
+    "en": "Skully's ship has the size advantage,\r\nbut I reckon you can outmanoeuvre him.\r\nThink fast and stay on your toes!",
+    "ua": "Корабель Черепка більший, але,\nгадаю, ви спритніші.\nДумайте швидко й пильнуйте!"
+  },
+  "HINT513_00": {
+    "en": "The [System:Color name=\"mgSht_red\" ]Vorpal Laser [/System:Color]will make short work\r\nof the power cells at the centre of\r\nthose revolving devices. Not bad, eh!",
+    "ua": "[System:Color name=\"mgSht_red\" ]Лазер-спис[/System:Color] швидко розбереться\nз енергоблоками в центрі тих\nобертових пристроїв. Непогано, га!"
+  },
+  "HINT513_01": {
+    "en": "Gold Bone is a flummoxing foe\r\nindeed, but I know we can beat\r\nhim. Trust in your abilities!",
+    "ua": "Золота Кістка — бентежний ворог,\nале я знаю, ми його переможемо.\nВірте у свої сили!"
+  },
+  "HINT000_00": {
+    "en": "The [System:Color name=\"mgSht_red\" ]Cosmic Cutter [/System:Color]can destroy bullets.\r\nIf you're having trouble dodging enemy\r\nfire, give that one a good old try!",
+    "ua": "[System:Color name=\"mgSht_red\" ]Космоніж[/System:Color] знищує кулі.\nЯкщо важко ухилятися від вогню,\nспробуйте його!"
+  },
+  "HINT000_01": {
+    "en": "Here's a little secret about the [System:Color name=\"mgSht_red\" ]Spike\r\nLauncher[/System:Color]. Get it up to full power\r\nand it can block enemy bullets!",
+    "ua": "Маленький секрет [System:Color name=\"mgSht_red\" ]Шипомета[/System:Color]:\nна повній потужності він\nблокує ворожі кулі!"
+  },
+  "HINT000_02": {
+    "en": "The [System:Color name=\"mgSht_red\" ]Bomb Blaster[/System:Color]'s explosions are handy\r\nwhen you need to hit several enemies at\r\nonce or make a dent in heavy armour.",
+    "ua": "Вибухи [System:Color name=\"mgSht_red\" ]Бомбомета[/System:Color] зручні, щоб\nвлучити в кількох ворогів разом\nчи пробити важку броню."
+  },
+  "HINT000_03": {
+    "en": "Hold fire to charge up the [System:Color name=\"mgSht_red\" ]Warp\r\nCharge[/System:Color] for a powerful blast. The risk\r\nis rather high, but so is the reward!",
+    "ua": "Не стріляйте, щоб зарядити [System:Color name=\"mgSht_red\" ]Варп-\nзаряд[/System:Color] для потужного удару. Ризик\nвеликий, але й нагорода теж!"
+  },
+  "HINT000_04": {
+    "en": "[System:Color name=\"mgSht_red\" ]Press  or  while firing[/System:Color] to swing the\r\n[System:Color name=\"mgSht_red\" ]Incinerator[/System:Color]'s flame. It's not much good in\r\nwater, but it's splendid against plants!",
+    "ua": "[System:Color name=\"mgSht_red\" ]Натискайте  чи  під час вогню[/System:Color], щоб\nводити полум'ям [System:Color name=\"mgSht_red\" ]Спопелювача[/System:Color]. Під водою\nвін слабкий, а проти рослин — чудовий!"
+  },
+  "HINT000_05": {
+    "en": "The [System:Color name=\"mgSht_red\" ]Homing Sharks [/System:Color]are...well, a homing\r\nweapon! You'll hit your mark even if\r\nyour aiming isn't quite up to scratch.",
+    "ua": "[System:Color name=\"mgSht_red\" ]Самонавідні акули[/System:Color] — це… ну,\nсамонавідна зброя! Влучите,\nнавіть якщо цілитеся не дуже."
+  },
+  "HINT000_06": {
+    "en": "The [System:Color name=\"mgSht_red\" ]Vorpal Laser[/System:Color] is devastating in the\r\nright hands. Line it up just right and\r\nyou'll take out a whole line of foes!",
+    "ua": "[System:Color name=\"mgSht_red\" ]Лазер-спис[/System:Color] у вправних руках\nнищівний. Вишикуйте — і зріжете\nцілий ряд ворогів!"
+  },
+  "HINT000_07": {
+    "en": "If you get the [System:Color name=\"mgSht_red\" ]Chain Lightning[/System:Color] to full\r\npower, its charges bounce from foe\r\nto foe in a deadly chain reaction.",
+    "ua": "На повній потужності [System:Color name=\"mgSht_red\" ]Блискавиця[/System:Color]\nстрибає від ворога до ворога\nсмертельним ланцюгом."
+  },
+  "HINT000_08": {
+    "en": "The [System:Color name=\"mgSht_red\" ]Globular Cannon[/System:Color] can come in handy\r\nfor hitting enemies tucked behind terrain.\r\nThe globs slide along walls, don't you know!",
+    "ua": "[System:Color name=\"mgSht_red\" ]Кульова гармата[/System:Color] зручна проти\nворогів за перешкодами. Кулі\nсповзають по стінах, знаєте!"
+  },
+  "HINT000_09": {
+    "en": "The [System:Color name=\"mgSht_red\" ]Kinetic Crusher[/System:Color]'s shots get stronger\r\nwhen they bounce off terrain. Anyone\r\nfor a spot of tennis?",
+    "ua": "Постріли [System:Color name=\"mgSht_red\" ]Кінетобою[/System:Color] сильнішають,\nвідскакуючи від стін. Хтось\nпограє в теніс?"
+  },
+  "HINT000_10": {
+    "en": "When it's fully powered up, the [System:Color name=\"mgSht_red\" ]Plasma\r\nWhip [/System:Color]can retrieve buried gems and\r\nattack enemies through terrain. I say!",
+    "ua": "На повній потужності [System:Color name=\"mgSht_red\" ]Плазмобатіг[/System:Color]\nдістає закопані самоцвіти й б'є\nворогів крізь стіни. Оце так!"
+  },
+  "HINT000_11": {
+    "en": "On top of its rapid firing speed and\r\nwide angle of attack, the [System:Color name=\"mgSht_red\" ]Wave Blaster[/System:Color]\r\ncan put out any pesky fire attacks.",
+    "ua": "[System:Color name=\"mgSht_red\" ]Хвилемет[/System:Color] не лише швидко стріляє\nй широко б'є, а й гасить\nнабридливі вогняні атаки."
+  },
+  "HINT000_12": {
+    "en": "You know, most terrain won't\r\ndamage your ship. Don't be shy\r\nabout evasive manoeuvres!",
+    "ua": "Знаєте, більшість перешкод\nкорабель не шкодить. Сміливо\nманеврюйте!"
+  },
+  "HINT000_13": {
+    "en": "Sometimes, a treasure can only be\r\nretrieved when the entire group of\r\nfoes keeping it has been beaten.",
+    "ua": "Іноді скарб можна забрати лише\nтоді, коли переможено всю групу\nворогів, що його стереже."
+  },
+  "HINT000_14": {
+    "en": "Some stolen treasures can only\r\nbe found when multiple enemies\r\nare defeated simultaneously.",
+    "ua": "Деякі викрадені скарби з'являються\nлише тоді, коли кількох ворогів\nпереможено одночасно."
+  },
+  "HINT000_15": {
+    "en": "I've heard of special recruits who\r\npilot extra-powerful Mii pods.\r\nPerhaps one day you'll meet one!",
+    "ua": "Чув про особливих новобранців,\nщо пілотують надпотужні капсули Mii.\nМоже, колись зустрінете такого!"
+  },
+  "HINT001_00": {
+    "en": "Squad Leader [MII_NAME]!\r\nGlad you got out in one piece.",
+    "ua": "Командире [MII_NAME]!\nРадий, що ви вибралися цілим."
+  },
+  "HINT001_01": {
+    "en": "Squad Leader [MII_NAME],\r\nare you all right?",
+    "ua": "Командире [MII_NAME],\nз вами все гаразд?"
+  },
+  "CONT000_00": {
+    "en": "I've got another ship waiting in\r\nthe docking bay for you to use.\r\nHow would you like to proceed?",
+    "ua": "У доку на вас чекає\nще один корабель.\nЩо робитимете?"
+  },
+  "CONT000_01": {
+    "en": "I have one last ship available.\r\nIt would be your [System:Color name=\"mgSht_red\" ]last chance [/System:Color]with\r\nthis squad. What's your plan?",
+    "ua": "Лишився останній корабель.\nЦе ваш [System:Color name=\"mgSht_red\" ]останній шанс [/System:Color]із\nцим загоном. Який план?"
+  },
+  "RETRY_INFO_A_00": {
+    "en": "You have [System:Color name=\"mgSht_red\" ][0] [/System:Color]squadmate standing by.\r\nWould you like to try again? Your score\r\nwill reset and you'll restart this stage.",
+    "ua": "Напоготові напарників: [System:Color name=\"mgSht_red\" ][0][/System:Color].\nСпробувати ще раз? Очки\nобнуляться, і етап почнеться знову."
+  },
+  "RETRY_INFO_A_00s": {
+    "en": "You have [System:Color name=\"mgSht_red\" ][0] [/System:Color]squadmates standing by.\r\nWould you like to try again? Your score\r\nwill reset and you'll restart this stage.",
+    "ua": "Напоготові напарників: [System:Color name=\"mgSht_red\" ][0][/System:Color].\nСпробувати ще раз? Очки\nобнуляться, і етап почнеться знову."
+  },
+  "RETRY_INFO_B_00": {
+    "en": "You have [System:Color name=\"mgSht_red\" ][0] [/System:Color]squadmate standing by.\r\nWould you like to try again? Your score\r\nwill reset and you'll return to stage 1-1.",
+    "ua": "Напоготові напарників: [System:Color name=\"mgSht_red\" ][0][/System:Color].\nСпробувати ще раз? Очки\nобнуляться, і ви почнете з етапу 1-1."
+  },
+  "RETRY_INFO_B_00s": {
+    "en": "You have [System:Color name=\"mgSht_red\" ][0] [/System:Color]squadmates standing by.\r\nWould you like to try again? Your score\r\nwill reset and you'll return to stage 1-1.",
+    "ua": "Напоготові напарників: [System:Color name=\"mgSht_red\" ][0][/System:Color].\nСпробувати ще раз? Очки\nобнуляться, і ви почнете з етапу 1-1."
+  },
+  "RETRY_INFO_A_01a": {
+    "en": "Try Again",
+    "ua": "Ще раз"
+  },
+  "RETRY_INFO_A_01b": {
+    "en": "Quit",
+    "ua": "Вийти"
+  },
+  "RETRY_INFO_01a": {
+    "en": "Try Again",
+    "ua": "Ще раз"
+  },
+  "RETRY_INFO_01b": {
+    "en": "Quit",
+    "ua": "Вийти"
+  },
+  "CREDIT_NAME_000": {
+    "en": "Koichi Ogawa",
+    "ua": ""
+  },
+  "CREDIT_NAME_001": {
+    "en": "Naoya Abe",
+    "ua": ""
+  },
+  "CREDIT_NAME_002": {
+    "en": "Yuta Bundo",
+    "ua": ""
+  },
+  "CREDIT_NAME_003": {
+    "en": "Miki Sawada",
+    "ua": ""
+  },
+  "CREDIT_NAME_004": {
+    "en": "Yusuke Nodama",
+    "ua": ""
+  },
+  "CREDIT_NAME_005": {
+    "en": "Yuhei Matsuda",
+    "ua": ""
+  },
+  "CREDIT_NAME_006": {
+    "en": "Satoshi Kobayashi",
+    "ua": ""
+  },
+  "CREDIT_NAME_007": {
+    "en": "Takuma Miura",
+    "ua": ""
+  },
+  "CREDIT_NAME_008": {
+    "en": "Yasuhiro Masuoka",
+    "ua": ""
+  },
+  "CREDIT_NAME_009": {
+    "en": "Yasunori Fujimoto",
+    "ua": ""
+  },
+  "CREDIT_NAME_010": {
+    "en": "Daisuke Kobayashi",
+    "ua": ""
+  },
+  "CREDIT_NAME_011": {
+    "en": "Tatsunori Wada",
+    "ua": ""
+  },
+  "CREDIT_NAME_012": {
+    "en": "Masashi Tsuboyama",
+    "ua": ""
+  },
+  "CREDIT_NAME_013": {
+    "en": "Tadanori Tsukawaki",
+    "ua": ""
+  },
+  "CREDIT_NAME_014": {
+    "en": "Yoshie Nobe",
+    "ua": ""
+  },
+  "CREDIT_NAME_015": {
+    "en": "Masaya Okada",
+    "ua": ""
+  },
+  "CREDIT_NAME_016": {
+    "en": "Natsuki Aihara",
+    "ua": ""
+  },
+  "CREDIT_NAME_017": {
+    "en": "Erika Tsukahara",
+    "ua": ""
+  },
+  "CREDIT_NAME_018": {
+    "en": "Yukihiro Yamamoto",
+    "ua": ""
+  },
+  "CREDIT_NAME_019": {
+    "en": "Ai Fujiwara",
+    "ua": ""
+  },
+  "CREDIT_NAME_020": {
+    "en": "Eri Minemura",
+    "ua": ""
+  },
+  "CREDIT_NAME_021": {
+    "en": "Yoshihiro Hobo",
+    "ua": ""
+  },
+  "CREDIT_NAME_022": {
+    "en": "Atsuko Ichii",
+    "ua": ""
+  },
+  "CREDIT_NAME_023": {
+    "en": "Satoko Ozaki",
+    "ua": ""
+  },
+  "CREDIT_NAME_024": {
+    "en": "Megumi Watanabe",
+    "ua": ""
+  },
+  "CREDIT_NAME_025": {
+    "en": "Tomoya Tomita",
+    "ua": ""
+  },
+  "CREDIT_NAME_026": {
+    "en": "Akihiro Juichiya",
+    "ua": ""
+  },
+  "CREDIT_NAME_027": {
+    "en": "Etsunobu Ebisu",
+    "ua": ""
+  },
+  "CREDIT_NAME_100": {
+    "en": "Kouichi Kawamoto",
+    "ua": ""
+  },
+  "CREDIT_NAME_101": {
+    "en": "Toyokazu Nonaka",
+    "ua": ""
+  },
+  "CREDIT_NAME_102": {
+    "en": "Ryusuke Niitani",
+    "ua": ""
+  },
+  "CREDIT_NAME_103": {
+    "en": "Takehiko Hosokawa",
+    "ua": ""
+  },
+  "CREDIT_NAME_104": {
+    "en": "Masahiro Shiotani",
+    "ua": ""
+  },
+  "CREDIT_NAME_105": {
+    "en": "Yo Ohnishi ",
+    "ua": ""
+  },
+  "CREDIT_NAME_106": {
+    "en": "Akiko Kato",
+    "ua": ""
+  },
+  "CREDIT_NAME_107": {
+    "en": "Tsuyoshi Watanabe",
+    "ua": ""
+  },
+  "CREDIT_NAME_108": {
+    "en": "Kenji Yamamoto",
+    "ua": ""
+  },
+  "CREDIT_NAME_109": {
+    "en": "Yuichi Ozaki",
+    "ua": ""
+  },
+  "CREDIT_NAME_110": {
+    "en": "Minako Hamano",
+    "ua": ""
+  },
+  "CREDIT_NAME_111": {
+    "en": "Mario Club",
+    "ua": ""
+  },
+  "CREDIT_NAME_112": {
+    "en": "NOA Product Testing",
+    "ua": ""
+  },
+  "CREDIT_NAME_113": {
+    "en": "NOE Quality Assurance",
+    "ua": ""
+  },
+  "CREDIT_NAME_114": {
+    "en": "NOE Localisation",
+    "ua": ""
+  },
+  "CREDIT_NAME_115": {
+    "en": "NOA Localization",
+    "ua": ""
+  },
+  "CREDIT_NAME_116": {
+    "en": "StreetPass Mii Plaza Team",
+    "ua": ""
+  },
+  "CREDIT_NAME_117": {
+    "en": "Shinya Takahashi",
+    "ua": ""
+  },
+  "CREDIT_NAME_118": {
+    "en": "Satoru Iwata",
+    "ua": ""
+  },
+  "CREDIT_NAME_120": {
+    "en": "Shingo Okamoto",
+    "ua": ""
+  },
+  "CREDIT_TITLE_000": {
+    "en": "Director",
+    "ua": "Режисер"
+  },
+  "CREDIT_TITLE_001": {
+    "en": "Assistant Director",
+    "ua": "Помічник режисера"
+  },
+  "CREDIT_TITLE_002": {
+    "en": "Game Design",
+    "ua": "Геймдизайн"
+  },
+  "CREDIT_TITLE_003": {
+    "en": "Program Director",
+    "ua": "Керівник програмування"
+  },
+  "CREDIT_TITLE_004": {
+    "en": "Programming",
+    "ua": "Програмування"
+  },
+  "CREDIT_TITLE_005": {
+    "en": "Art Director",
+    "ua": "Арт-директор"
+  },
+  "CREDIT_TITLE_006": {
+    "en": "Character Design",
+    "ua": "Дизайн персонажів"
+  },
+  "CREDIT_TITLE_007": {
+    "en": "Graphic Design",
+    "ua": "Графічний дизайн"
+  },
+  "CREDIT_TITLE_009": {
+    "en": "Music & Sound Effects",
+    "ua": "Музика й звукові ефекти"
+  },
+  "CREDIT_TITLE_010": {
+    "en": "Producer",
+    "ua": "Продюсер"
+  },
+  "CREDIT_TITLE_100": {
+    "en": "Producer",
+    "ua": "Продюсер"
+  },
+  "CREDIT_TITLE_101": {
+    "en": "Associate Producers",
+    "ua": "Асоційовані продюсери"
+  },
+  "CREDIT_TITLE_102": {
+    "en": "Director",
+    "ua": "Режисер"
+  },
+  "CREDIT_TITLE_103": {
+    "en": "Coordination",
+    "ua": "Координація"
+  },
+  "CREDIT_TITLE_104": {
+    "en": "Graphic Supervisors",
+    "ua": "Графічні супервайзери"
+  },
+  "CREDIT_TITLE_105": {
+    "en": "Sound Director",
+    "ua": "Звукорежисер"
+  },
+  "CREDIT_TITLE_106": {
+    "en": "Sound Program Support",
+    "ua": "Підтримка звукової програми"
+  },
+  "CREDIT_TITLE_107": {
+    "en": "Sound Coordination",
+    "ua": "Координація звуку"
+  },
+  "CREDIT_TITLE_108": {
+    "en": "Debug",
+    "ua": "Налагодження"
+  },
+  "CREDIT_TITLE_109": {
+    "en": "European Localisation",
+    "ua": "Європейська локалізація"
+  },
+  "CREDIT_TITLE_110": {
+    "en": "North American Localization",
+    "ua": "Північноамериканська локалізація"
+  },
+  "CREDIT_TITLE_111": {
+    "en": "Special Thanks",
+    "ua": "Особлива подяка"
+  },
+  "CREDIT_TITLE_112": {
+    "en": "General Producer",
+    "ua": "Генеральний продюсер"
+  },
+  "CREDIT_TITLE_113": {
+    "en": "Executive Producer",
+    "ua": "Виконавчий продюсер"
+  },
+  "CREDIT_TITLE_120": {
+    "en": "Technical Support",
+    "ua": "Технічна підтримка"
+  },
+  "CREDIT_TOP_000": {
+    "en": "STAFF CREDITS",
+    "ua": "ТИТРИ"
+  },
+  "CREDIT_TOP_001": {
+    "en": "Developer Good-Feel Co., Ltd.",
+    "ua": "Розробник Good-Feel Co., Ltd."
+  },
+  "CREDIT_TOP_100": {
+    "en": "Nintendo",
+    "ua": "Nintendo"
+  },
+  "CREDIT_TAIL_000": {
+    "en": "Nintendo and Good-Feel are the authors of\r\nthis software for the purpose of copyright. \r\nAll rights reserved.\r\n© 2013 Nintendo.",
+    "ua": "Nintendo і Good-Feel є авторами цієї\nпрограми з погляду авторського права.\nУсі права захищено.\n© 2013 Nintendo."
+  },
+  "telop_start_00": {
+    "en": "Start!",
+    "ua": "Старт!"
+  },
+  "telop_start_01": {
+    "en": "Start!",
+    "ua": "Старт!"
+  },
+  "telop_start_02": {
+    "en": "Start!",
+    "ua": "Старт!"
+  },
+  "telop_gameover_00": {
+    "en": "Game Over",
+    "ua": "Кінець гри"
+  },
+  "telop_gameover_01": {
+    "en": "Game Over",
+    "ua": "Кінець гри"
+  },
+  "telop_clear_00": {
+    "en": "Mission Cleared",
+    "ua": "Місію виконано"
+  },
+  "WEAPON_LEVEL_00": {
+    "en": "Lv.1",
+    "ua": "Рів.1"
+  },
+  "WEAPON_LEVEL_01": {
+    "en": "Lv.2",
+    "ua": "Рів.2"
+  },
+  "WEAPON_LEVEL_02": {
+    "en": "Lv.3",
+    "ua": "Рів.3"
+  },
+  "DEMO_skip_info": {
+    "en": " Skip",
+    "ua": " Пропустити"
+  },
+  "employ_dlg_ok_multi": {
+    "en": "Hire Max",
+    "ua": "Найняти макс."
+  },
+  "employ_info_start_employ_multi_00": {
+    "en": "Use [MULTI_COIN] Play Coins  to\r\nhire [MULTI_COUNT] mercenaries?",
+    "ua": "Найняти найманців ([MULTI_COUNT])\nза [MULTI_COIN] монеток?"
+  },
+  "employ_info_start_employ_multi_01": {
+    "en": "You've hired [MULTI_COUNT] mercenaries.",
+    "ua": "Найнято найманців: [MULTI_COUNT]."
+  },
+  "employ_dlg_ok_multi_again": {
+    "en": "Yes",
+    "ua": "Так"
+  }
+}

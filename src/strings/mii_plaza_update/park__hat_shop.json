@@ -1,0 +1,50 @@
+{
+  "hat_shop_00": {
+    "en": "Do you want to exchange\r\na plaza ticket for the\r\n[System:Color name=\"select_text\" ][0][/System:Color]?",
+    "ua": "Обміняти квиток Площі\nна предмет\n[System:Color name=\"select_text\" ][0][/System:Color]?"
+  },
+  "hat_shop_01": {
+    "en": "Yes",
+    "ua": "Так"
+  },
+  "hat_shop_02": {
+    "en": "No",
+    "ua": "Ні"
+  },
+  "hat_shop_03": {
+    "en": "You exchanged a\r\nplaza ticket for the\r\n[System:Color name=\"select_text\" ][0][/System:Color]!",
+    "ua": "Ви обміняли квиток\nПлощі на предмет\n[System:Color name=\"select_text\" ][0][/System:Color]!"
+  },
+  "hat_shop_04": {
+    "en": "I'm afraid you don't have\r\nany plaza tickets right now.\r\nCollect plaza tickets by playing\r\ngames in StreetPass Mii Plaza.",
+    "ua": "На жаль, зараз у вас\nнемає квитків Площі.\nЗбирайте їх, граючи в ігри\nна Площі StreetPass Mii."
+  },
+  "hat_shop_05": {
+    "en": "Plaza tickets are not available in StreetPass Quest,\r\nStreetPass Quest II or Puzzle Swap.",
+    "ua": "Квитки Площі не дають у «Порятунку Mii»,\n«Порятунку Mii II» і «Збери пазл»."
+  },
+  "hat_shop_06": {
+    "en": "No new hats are\r\ncurrently available.\r\nPlease check back\r\nagain later.",
+    "ua": "Нових капелюхів\nпоки немає.\nЗазирніть пізніше."
+  },
+  "hat_shop_07": {
+    "en": "No new speech bubbles\r\nare currently available.\r\nPlease check again later.",
+    "ua": "Нових вікон реплік\nпоки немає.\nЗазирніть пізніше."
+  },
+  "cap_hat_shop_conf_u": {
+    "en": "Confirm Selection",
+    "ua": "Підтвердити вибір"
+  },
+  "cap_balloon_shop_conf_u": {
+    "en": "Confirm Selection",
+    "ua": "Підтвердити вибір"
+  },
+  "cap_hat_shop_u": {
+    "en": "Today's Accessories",
+    "ua": "Аксесуари дня"
+  },
+  "cap_balloon_shop_u": {
+    "en": "Today's Speech Bubbles",
+    "ua": "Вікна реплік дня"
+  }
+}

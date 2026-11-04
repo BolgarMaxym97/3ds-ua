@@ -1,0 +1,430 @@
+{
+  "first_welcome_00": {
+    "en": "Welcome to\r\nStreetPass Mii Plaza!",
+    "ua": "Вітаємо\nна Площі StreetPass Mii!"
+  },
+  "first_welcome_01": {
+    "en": "Here, you can enjoy collecting\r\nMii characters.",
+    "ua": "Тут можна збирати\nMii."
+  },
+  "first_welcome_02": {
+    "en": "By collecting Mii characters,",
+    "ua": "Збираючи Mii,"
+  },
+  "first_welcome_03": {
+    "en": "you can fill up your plaza,",
+    "ua": "ви заповните свою площу,"
+  },
+  "first_welcome_04": {
+    "en": "get puzzle pieces from\r\nother users,",
+    "ua": "отримувати частинки пазлів\nвід інших користувачів,"
+  },
+  "first_welcome_05": {
+    "en": "fight evil monsters and\r\nreceive special accessories!",
+    "ua": "битися зі злими почварами\nй отримувати особливі аксесуари!"
+  },
+  "first_cec_00": {
+    "en": "So how do you collect\r\nMii characters, anyway?",
+    "ua": "То як же збирати\nMii?"
+  },
+  "first_cec_01": {
+    "en": "Well, that's easy.\r\nYou just need to use StreetPass!",
+    "ua": "Дуже просто.\nДостатньо StreetPass!"
+  },
+  "first_cec_02": {
+    "en": "StreetPass lets you exchange\r\ndata with other people who have\r\nsystems in the Nintendo 3DS family.",
+    "ua": "StreetPass дає змогу обмінюватися\nданими з іншими власниками\nсистем сімейства Nintendo 3DS."
+  },
+  "first_cec_03": {
+    "en": "All you have to do is walk past\r\nsomeone else using StreetPass!",
+    "ua": "Треба лише пройти повз когось,\nхто теж користується StreetPass!"
+  },
+  "first_cec_04": {
+    "en": "So...",
+    "ua": "Отже…"
+  },
+  "first_mii_select_00": {
+    "en": "Next...",
+    "ua": "Далі…"
+  },
+  "first_mii_select_01": {
+    "en": "[MII_NAME] has been\r\nset as your StreetPass Mii!",
+    "ua": "[MII_NAME] тепер\nваш Mii для StreetPass!"
+  },
+  "first_greeting_00": {
+    "en": "Finally...",
+    "ua": "І нарешті…"
+  },
+  "first_greeting_01": {
+    "en": "Enter a greeting that your Mii will\r\nsay to other users' Mii characters!",
+    "ua": "Введіть вітання, яке ваш Mii\nказатиме Mii інших користувачів!"
+  },
+  "first_end_00": {
+    "en": "Great!\r\nNow everything's good to go.",
+    "ua": "Чудово!\nТепер усе готово."
+  },
+  "first_cec_expl_00": {
+    "en": "Right, then...",
+    "ua": "Отже, до справи…"
+  },
+  "first_cec_expl_01": {
+    "en": "Let me tell you how to send\r\n[MII_NAME] to other\r\nusers' plazas over StreetPass!",
+    "ua": "Розповім, як надіслати\n[MII_NAME] на площі інших\nкористувачів через StreetPass!"
+  },
+  "first_cec_expl_02": {
+    "en": "It's simple.",
+    "ua": "Це просто."
+  },
+  "first_cec_expl_03": {
+    "en": "Just enter Sleep Mode.",
+    "ua": "Просто перейдіть у режим сну."
+  },
+  "first_cec_expl_04": {
+    "en": "This works even while\r\nplaying other games.",
+    "ua": "Це працює навіть\nпід час інших ігор."
+  },
+  "first_cec_expl_05": {
+    "en": "Sometimes, you can even\r\nuse StreetPass when you're\r\nnot in Sleep Mode.",
+    "ua": "Іноді StreetPass працює\nй тоді, коли консоль\nне в режимі сну."
+  },
+  "first_cec_expl_06": {
+    "en": "(This depends on the game\r\nand certain other factors.)",
+    "ua": "(Це залежить від гри\nта інших чинників.)"
+  },
+  "first_cec_expl_07": {
+    "en": "When you've received\r\ndata via StreetPass,",
+    "ua": "Коли ви отримаєте\nдані через StreetPass,"
+  },
+  "first_cec_expl_08": {
+    "en": "the notification LED\r\nwill turn green.",
+    "ua": "індикатор сповіщень\nзасвітиться зеленим."
+  },
+  "first_cec_expl_09": {
+    "en": "You'll also get a StreetPass\r\nnotification in Notifications.",
+    "ua": "А в Сповіщеннях з'явиться\nсповіщення StreetPass."
+  },
+  "first_cec_expl_10": {
+    "en": "OK, you're all set!",
+    "ua": "Готово, усе налаштовано!"
+  },
+  "first_cec_expl_11": {
+    "en": "Now try going to places where you\r\nmight pass by lots of other people!",
+    "ua": "Тепер спробуйте піти туди, де повз\nвас проходить багато людей!"
+  },
+  "first_invite_00": {
+    "en": "Finally...",
+    "ua": "І нарешті…"
+  },
+  "first_invite_01": {
+    "en": "In addition to Mii characters\r\nmet via StreetPass...",
+    "ua": "Окрім Mii, зустрінутих\nчерез StreetPass…"
+  },
+  "first_invite_02": {
+    "en": "you can also invite Mii characters\r\nmet in other games to your plaza.",
+    "ua": "на площу можна кликати й Mii\nз інших ігор."
+  },
+  "event_new_plaza_00": {
+    "en": "Welcome!",
+    "ua": "Вітаємо!"
+  },
+  "event_new_plaza_02": {
+    "en": "StreetPass Mii Plaza has\r\njust had a makeover!",
+    "ua": "Площу StreetPass Mii\nщойно оновлено!"
+  },
+  "event_boss_expl_01": {
+    "en": "Just in case you didn't know...",
+    "ua": "Про всяк випадок…"
+  },
+  "event_boss_expl_02": {
+    "en": "StreetPass Mii Plaza\r\ncan use SpotPass.",
+    "ua": "Площа StreetPass Mii\nпідтримує SpotPass."
+  },
+  "event_boss_expl_03": {
+    "en": "Here's a quick overview of what\r\nyou can do with SpotPass.",
+    "ua": "Ось коротко, що можна\nробити зі SpotPass."
+  },
+  "event_boss_expl_04": {
+    "en": "By connecting to a wireless\r\ninternet access point,",
+    "ua": "Підключившись до бездротової\nточки доступу до інтернету,"
+  },
+  "event_boss_expl_05": {
+    "en": "you can meet new Mii characters,",
+    "ua": "ви зможете зустріти нових Mii,"
+  },
+  "event_boss_expl_07": {
+    "en": "and pick up new panels for\r\nPuzzle Swap!",
+    "ua": "і отримувати нові панелі\nдля «Збери пазл»!"
+  },
+  "event_boss_00": {
+    "en": "So...",
+    "ua": "Отже…"
+  },
+  "event_boss_01": {
+    "en": "You can change the SpotPass\r\nsetting at any time in Settings.",
+    "ua": "Параметр SpotPass можна\nзмінити в Налаштуваннях."
+  },
+  "event_invite_00": {
+    "en": "Finally...",
+    "ua": "І нарешті…"
+  },
+  "event_invite_01": {
+    "en": "In addition to Mii characters\r\nmet via StreetPass...",
+    "ua": "Окрім Mii, зустрінутих\nчерез StreetPass…"
+  },
+  "event_invite_02": {
+    "en": "you can also invite Mii characters\r\nmet in other games to your plaza.",
+    "ua": "на площу можна кликати й Mii\nз інших ігор."
+  },
+  "event_end_00": {
+    "en": "Anyway, we don't want\r\nto keep you...",
+    "ua": "Що ж, не будемо\nвас затримувати…"
+  },
+  "event_end_01": {
+    "en": "Get out there and collect as many\r\nMii characters as you can!",
+    "ua": "Вирушайте й збирайте якомога\nбільше Mii!"
+  },
+  "event_ecom_expl_01": {
+    "en": "You might be wondering\r\nwhat all of this extra\r\nspace is for...",
+    "ua": "Вам, мабуть, цікаво,\nнавіщо все це\nдодаткове місце…"
+  },
+  "event_ecom_expl_02": {
+    "en": "The answer is, a variety\r\nof new and exciting games!",
+    "ua": "Відповідь проста:\nдля нових захопливих ігор!"
+  },
+  "event_ecom_expl_03": {
+    "en": "Now StreetPass Mii Plaza\r\nwill have two kinds of games.",
+    "ua": "Тепер на Площі StreetPass Mii\nбуде два види ігор."
+  },
+  "event_ecom_expl_04": {
+    "en": "On top of the games that've\r\nbeen here all along...",
+    "ua": "Окрім ігор, які були\nтут від початку…"
+  },
+  "event_ecom_expl_05": {
+    "en": "...there's a brand-new\r\nset of games!",
+    "ua": "…з'явився зовсім\nновий набір ігор!"
+  },
+  "event_ecom_expl_06": {
+    "en": "You'll be able to purchase\r\nthem from right inside your\r\nplaza!",
+    "ua": "Їх можна придбати\nпросто на вашій\nплощі!"
+  },
+  "event_ecom_expl_07": {
+    "en": "On top of the games\r\nyou already have...",
+    "ua": "Окрім ігор,\nякі у вас уже є…"
+  },
+  "event_ecom_expl_08": {
+    "en": "There are new games available\r\nthat are extra quick to play!",
+    "ua": "Доступні нові ігри,\nу які можна зіграти дуже швидко!"
+  },
+  "event_ecom_expl_09": {
+    "en": "Games from Pack 1...",
+    "ua": "Ігри з набору 1…"
+  },
+  "event_ecom_expl_10": {
+    "en": "Games from Pack 2...",
+    "ua": "Ігри з набору 2…"
+  },
+  "event_ecom_expl_11": {
+    "en": "Games from Pack 3...",
+    "ua": "Ігри з набору 3…"
+  },
+  "event_ecom_expl_12": {
+    "en": "But there's more!",
+    "ua": "Але це ще не все!"
+  },
+  "event_ecom_expl_13": {
+    "en": "You can choose to receive\r\neither StreetPass Slot Racer...",
+    "ua": "Ви можете безкоштовно отримати\nабо «Слот-перегони StreetPass»…"
+  },
+  "event_ecom_expl_14": {
+    "en": "...or StreetPass Trader...",
+    "ua": "…або «Біржу StreetPass»…"
+  },
+  "event_ecom_expl_15": {
+    "en": "...for free!\r\nAll you have to do is pick one!",
+    "ua": "…на свій вибір!\nТреба лише вибрати одну!"
+  },
+  "event_ecom_dlg_cap": {
+    "en": "New Games",
+    "ua": "Нові ігри"
+  },
+  "event_ecom_dlg_notice": {
+    "en": "Do you want to take\r\na look now?",
+    "ua": "Подивитися\nзараз?"
+  },
+  "event_ecom_dlg_ok": {
+    "en": "Yes",
+    "ua": "Так"
+  },
+  "event_ecom_dlg_ng": {
+    "en": "No",
+    "ua": "Ні"
+  },
+  "event_ecom_00": {
+    "en": "Fair enough!",
+    "ua": "Гаразд!"
+  },
+  "event_ecom_01": {
+    "en": "If you change your mind,\r\nyou can come back and look\r\nwhenever you like!",
+    "ua": "Якщо передумаєте,\nповертайтеся й дивіться\nбудь-коли!"
+  },
+  "event_ecom_02": {
+    "en": "Talk to the rabbit to find out\r\nmore about about each game!",
+    "ua": "Поговоріть із кроликом, щоб\nдізнатися більше про кожну гру!"
+  },
+  "event_cap_expl_00": {
+    "en": "Oh, and by the way...",
+    "ua": "До речі…"
+  },
+  "event_cap_expl_01": {
+    "en": "Here's something to bear\r\nin mind about Pack 1 and\r\nPack 2 games.",
+    "ua": "Ось що варто пам'ятати\nпро ігри з наборів 1\nі 2."
+  },
+  "event_cap_expl_04": {
+    "en": "Remember, it's only in\r\nPack 1 and Pack 2 games that\r\nyou can get plaza tickets.",
+    "ua": "Пам'ятайте: квитки Площі\nможна отримати лише в іграх\nз наборів 1 і 2."
+  },
+  "event_cap_expl_05": {
+    "en": "Now then, to commemorate\r\nthis occasion, here's a special\r\npresent for you...",
+    "ua": "А тепер, на честь цієї\nподії, ось особливий\nподарунок для вас…"
+  },
+  "event_cap_expl_06": {
+    "en": "A [System:Color name=\"red\" ]Pixel Mario Hat[/System:Color] accessory for your\r\nStreetPass Mii!",
+    "ua": "[System:Color name=\"red\" ]Капелюх-піксельний Маріо[/System:Color]\nдля вашого Mii StreetPass!"
+  },
+  "event_cap_expl_07": {
+    "en": "You can earn plaza tickets in them\r\nthat can be exchanged for new Mii\r\naccessories and speech bubbles.",
+    "ua": "У них можна заробити квитки Площі,\nщоб обміняти на нові аксесуари\nдля Mii і вікна реплік."
+  },
+  "event_cap_expl_08": {
+    "en": "Have a [System:Color name=\"red\" ]StreetPass Quest Bubble [/System:Color]as\r\na present! It's OK, I don't need a ticket\r\nfor that!",
+    "ua": "А ось вам у подарунок [System:Color name=\"red\" ]Вікно\n«Порятунок Mii» [/System:Color]! Квиток не потрібен!"
+  },
+  "event_cap_expl_09": {
+    "en": "Don't forget to keep an eye out for\r\neven more fun hats and speech bubbles!",
+    "ua": "Стежте за новими кумедними\nкапелюхами й вікнами реплік!"
+  },
+  "event_re_cap_expl_00": {
+    "en": "Here's something to bear\r\nin mind about Pack 1 and\r\nPack 2 games.",
+    "ua": "Ось що варто пам'ятати\nпро ігри з наборів 1\nі 2."
+  },
+  "event_re_cap_expl_01": {
+    "en": "We hope you'll consider\r\ntrying out the new games!",
+    "ua": "Сподіваємося, ви\nспробуєте нові ігри!"
+  },
+  "event_premium_00": {
+    "en": "Excuse me...",
+    "ua": "Перепрошую…"
+  },
+  "event_premium_01": {
+    "en": "If you change your mind, you can come\r\nback here at any time and take a look!",
+    "ua": "Якщо передумаєте, повертайтеся\nсюди будь-коли й подивіться!"
+  },
+  "event_premium_02": {
+    "en": "Want to hear about something\r\nthat'll make your StreetPass\r\nMii Plaza even more fun?",
+    "ua": "Розповісти, як зробити\nПлощу StreetPass Mii\nще веселішою?"
+  },
+  "event_premium_03": {
+    "en": "It's called...\r\nStreetPass Mii Plaza Premium!",
+    "ua": "Це…\nПреміум-площа StreetPass Mii!"
+  },
+  "event_premium_04": {
+    "en": "Hey, since you have StreetPass Mii\r\nPlaza Premium...",
+    "ua": "О, у вас же є Преміум-площа\nStreetPass Mii…"
+  },
+  "event_premium_05": {
+    "en": "You should know there\r\nhave been some updates!",
+    "ua": "Тож знайте, що тут\nє оновлення!"
+  },
+  "event_premium_06": {
+    "en": "First up: the queue!",
+    "ua": "Перше: черга!"
+  },
+  "event_premium_07": {
+    "en": "This lets you store more than 10\r\nencountered Mii characters so\r\nyou can let them in later.",
+    "ua": "Тут можна тримати понад 10\nзустрінутих Mii, щоб\nвпустити їх пізніше."
+  },
+  "event_premium_08": {
+    "en": "There's also a new filter feature!",
+    "ua": "Також є новий фільтр!"
+  },
+  "event_premium_09": {
+    "en": "This will make it easier to\r\nhunt down Mii characters\r\nyou'd like to make VIPs!",
+    "ua": "З ним легше знаходити Mii,\nяких ви хочете зробити\nVIP-гостями!"
+  },
+  "event_premium_10": {
+    "en": "You can only use the filter\r\nin the Classic Plaza.",
+    "ua": "Фільтр доступний лише\nна Класичній площі."
+  },
+  "event_premium_11": {
+    "en": "What's more, as a little bonus\r\nfor all players who've bought\r\nStreetPass Mii Plaza Premium...",
+    "ua": "Ба більше, як невеликий бонус\nдля всіх, хто придбав\nПреміум-площу StreetPass Mii…"
+  },
+  "event_premium_12": {
+    "en": "We're adding a special badge\r\nfor their Mii characters to wear!",
+    "ua": "Ми додаємо особливий значок,\nякий носитимуть їхні Mii!"
+  },
+  "event_miiverse_00": {
+    "en": "By the way...",
+    "ua": "До речі…"
+  },
+  "event_miiverse_01": {
+    "en": "If you take a look on Miiverse...",
+    "ua": "Якщо заглянете в Miiverse…"
+  },
+  "event_miiverse_02": {
+    "en": "You'll see there's now a\r\nStreetPass Mii Plaza community!",
+    "ua": "То побачите, що тепер там є\nспільнота Площі StreetPass Mii!"
+  },
+  "event_miiverse_03": {
+    "en": "It's a great place to share high\r\nscores or cool things that\r\nhappened in your plaza.",
+    "ua": "Там зручно ділитися рекордами\nчи кумедними подіями\nз вашої площі."
+  },
+  "event_miiverse_04": {
+    "en": "Press  and you can jump to\r\nMiiverse from the HOME Menu.",
+    "ua": "Натисніть , і з меню HOME\nможна перейти в Miiverse."
+  },
+  "event_piece_00": {
+    "en": "Oh, and another thing...",
+    "ua": "О, і ще одне…"
+  },
+  "event_piece_01": {
+    "en": "Puzzle Swap has got\r\na new feature, too.",
+    "ua": "У «Збери пазл» теж\nз'явилася нова функція."
+  },
+  "event_piece_02": {
+    "en": "It's called \"Bonus Chance\", and\r\nit gives you the opportunity to get\r\ntons of puzzle pieces at once!",
+    "ua": "Вона зветься «Бонусний шанс» і дає\nзмогу отримати купу частинок\nпазлу за раз!"
+  },
+  "event_piece_03": {
+    "en": "Bonus Chance is triggered if\r\nyou've fallen behind a bit with\r\npuzzle piece collecting.",
+    "ua": "Бонусний шанс з'являється,\nякщо ви трохи відстали\nзі збиранням частинок."
+  },
+  "event_piece_04": {
+    "en": "When it's active, \"Bonus Chance!\" will be\r\ndisplayed when you're choosing a piece.",
+    "ua": "Коли він діє, під час вибору частинки\nз'являється напис «Бонусний шанс!»."
+  },
+  "event_piece_05": {
+    "en": "So if you've only just started\r\ncollecting or you haven't played\r\nPuzzle Swap in a while...",
+    "ua": "Тож якщо ви щойно почали\nзбирати або давно не грали\nв «Збери пазл»…"
+  },
+  "event_piece_06": {
+    "en": "Take a look - you might find\r\nyou have a Bonus Chance\r\nwaiting for you right now!",
+    "ua": "Погляньте — можливо, на вас\nуже чекає Бонусний шанс!"
+  },
+  "event_piece_07": {
+    "en": "If you're extra lucky, you could\r\neven complete a whole panel\r\nwith just one StreetPass encounter!",
+    "ua": "Якщо дуже пощастить, можна\nскласти цілу панель за одну\nзустріч StreetPass!"
+  },
+  "event_map_03": {
+    "en": "Just so you know...",
+    "ua": "Щоб ви знали…"
+  },
+  "event_swap_00": {
+    "en": "Did you know that there's a\r\nnew option in the Settings menu?",
+    "ua": "А ви знаєте, що в меню\nНалаштувань з'явився новий пункт?"
+  },
+  "event_swap_01": {
+    "en": "It lets you change the order\r\nthat your games are shown in\r\nthe plaza. Try it out!",
+    "ua": "Він дає змогу змінити порядок\nігор на площі.\nСпробуйте!"
+  }
+}

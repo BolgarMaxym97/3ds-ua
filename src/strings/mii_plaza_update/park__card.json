@@ -1,0 +1,174 @@
+{
+  "card_my_mii_u": {
+    "en": "Your StreetPass Mii",
+    "ua": "Ваш StreetPass Mii"
+  },
+  "card_my_value_u": {
+    "en": "Rating",
+    "ua": "Оцінка"
+  },
+  "card_my_value_on_u": {
+    "en": "Number of times people have\r\nsaid your Mii is fantastic:",
+    "ua": "Скільки разів вашого Mii\nоцінили як «чудово»:"
+  },
+  "card_my_value_off_u": {
+    "en": "Go to Settings and turn Ratings\r\non to start getting ratings.",
+    "ua": "Оцінки вимкнено. Увімкніть\nїх у Налаштуваннях."
+  },
+  "card_my_value_zero_u": {
+    "en": "No ratings yet",
+    "ua": "Оцінок ще немає"
+  },
+  "card_1time_u": {
+    "en": "1x",
+    "ua": "1x"
+  },
+  "card_time_u": {
+    "en": "[0]x",
+    "ua": "[0] раз."
+  },
+  "card_1min_u": {
+    "en": "1 min ago",
+    "ua": "1 хв тому"
+  },
+  "card_min_u": {
+    "en": "[0] min ago",
+    "ua": "[0] хв тому"
+  },
+  "card_1hour_u": {
+    "en": "1 hour ago",
+    "ua": "1 год тому"
+  },
+  "card_hour_u": {
+    "en": "[0] hours ago",
+    "ua": "[0] год тому"
+  },
+  "card_1day_u": {
+    "en": "Yesterday",
+    "ua": "Учора"
+  },
+  "card_day_u": {
+    "en": "[0] days ago",
+    "ua": "[0] дн. тому"
+  },
+  "card_1month_u": {
+    "en": "1 month ago",
+    "ua": "1 місяць тому"
+  },
+  "card_month_u": {
+    "en": "[0] months ago",
+    "ua": "[0] міс. тому"
+  },
+  "card_1year_u": {
+    "en": "1 year ago",
+    "ua": "1 рік тому"
+  },
+  "card_year_u": {
+    "en": "[0] years ago",
+    "ua": "[0] р. тому"
+  },
+  "card_point_dog_cat_u": {
+    "en": "Preferred Pet",
+    "ua": "Улюбленці"
+  },
+  "card_point_hobby_u": {
+    "en": "Likes",
+    "ua": "Захоплення"
+  },
+  "card_point_dream_u": {
+    "en": "Dream",
+    "ua": "Мрія"
+  },
+  "card_point_birthday_u": {
+    "en": "Mii Birthday",
+    "ua": "Народження"
+  },
+  "card_point_author_u": {
+    "en": "Creator",
+    "ua": "Автор"
+  },
+  "card_all_ce00_u": {
+    "en": "StreetPass Hits",
+    "ua": "Зустрічей"
+  },
+  "card_all_square_mii00_u": {
+    "en": "Plaza Population",
+    "ua": "Мешканців"
+  },
+  "card_all_square_mii01_3000over_u": {
+    "en": "Over 3000",
+    "ua": "Понад 3000"
+  },
+  "card_back_u": {
+    "en": "Return to Mii Settings",
+    "ua": "Назад до параметрів Mii"
+  },
+  "card_ce_u": {
+    "en": "Met via StreetPass",
+    "ua": "Зустріч через StreetPass"
+  },
+  "card_ce_last_game_u": {
+    "en": "Most Recent Software",
+    "ua": "Остання програма"
+  },
+  "card_meet_1min_u": {
+    "en": "1 min ago",
+    "ua": "1 хв тому"
+  },
+  "card_meet_min_u": {
+    "en": "[0] min ago",
+    "ua": "[0] хв тому"
+  },
+  "card_meet_1hour_u": {
+    "en": "1 hour ago",
+    "ua": "1 год тому"
+  },
+  "card_meet_hour_u": {
+    "en": "[0] hours ago",
+    "ua": "[0] год тому"
+  },
+  "card_meet_1day_u": {
+    "en": "Yesterday",
+    "ua": "Учора"
+  },
+  "card_meet_day_u": {
+    "en": "[0] days ago",
+    "ua": "[0] дн. тому"
+  },
+  "card_meet_1month_u": {
+    "en": "1 month ago",
+    "ua": "1 місяць тому"
+  },
+  "card_meet_month_u": {
+    "en": "[0] months ago",
+    "ua": "[0] міс. тому"
+  },
+  "card_meet_1year_u": {
+    "en": "1 year ago",
+    "ua": "1 рік тому"
+  },
+  "card_meet_year_u": {
+    "en": "[0] years ago",
+    "ua": "[0] р. тому"
+  },
+  "card_meet_u": {
+    "en": "Met via Invitation",
+    "ua": "Через запрошення"
+  },
+  "card_decide_u": {
+    "en": "Accept",
+    "ua": "Прийняти"
+  },
+  "card_premium_not_cap": {
+    "en": "StreetPass Mii Plaza Premium",
+    "ua": "Преміум-площа StreetPass Mii"
+  },
+  "card_premium_cec_off": {
+    "en": "You won't be able to view this unless\r\nyou activate StreetPass.",
+    "ua": "Це не можна переглянути,\nпоки StreetPass не активовано."
+  },
+  "card_premium_not_euro": {
+    "en": "This feature requires\r\nStreetPass Mii Plaza Premium.",
+    "ua": "Для цього потрібна\nПреміум-площа StreetPass Mii."
+  }
+}

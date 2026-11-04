@@ -1156,6 +1156,10 @@ void app_init(App *app)
         app->manifest_ok = manifest_parse(&app->manifest, (const char *)text, len) == 0;
         free(text);
     }
+    /* Before anything reads the sets: which build of StreetPass Mii Plaza goes on the card
+     * depends on whether its update is installed (tools/build.py, `mii_plaza_update`). */
+    if (app->manifest_ok)
+        manifest_apply_alts(&app->manifest, checks_alt_probe, NULL);
     checks_run(&app->console, app->manifest_ok ? &app->manifest : NULL);
     stats_init(&app->stats);
 

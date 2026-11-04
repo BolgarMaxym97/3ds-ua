@@ -1,0 +1,4818 @@
+{
+  "Tips0_1_1": {
+    "en": "OK, so we're aiming to reach\r\nthe [System:Color name=\"red\" ]30th floor[/System:Color] of this mansion.",
+    "ua": "Отже, наша мета — дістатися\n[System:Color name=\"red\" ]30-го поверху[/System:Color] цього маєтку."
+  },
+  "Tips0_1_2": {
+    "en": "To get there, we'll have to climb\r\nthe [System:Color name=\"red\" ]stairs [/System:Color]hidden on each floor.",
+    "ua": "Для цього треба знаходити [System:Color name=\"red\" ]сходи[/System:Color],\nсховані на кожному поверсі."
+  },
+  "Tips0_1_3": {
+    "en": "Let's make a start by using that [System:Color name=\"red\" ]piece\r\n[/System:Color]I gave you to expand our search area.",
+    "ua": "Для початку розширмо зону пошуку\nтією [System:Color name=\"red\" ]частинкою[/System:Color], що я тобі дала."
+  },
+  "Tips0_2_1": {
+    "en": "There you have it! Just keep doing that\r\nand you should find the hidden stairs.",
+    "ua": "Ось так! Роби так і далі —\nі знайдеш сховані сходи."
+  },
+  "Tips0_2_2": {
+    "en": "What? Oh, erm... Sorry, Boss. The pieces\r\nI've given you are the only ones I had.",
+    "ua": "Що? Ой… Вибач, шефе. Я віддала\nтобі всі частинки, які в мене були."
+  },
+  "Tips0_2_3": {
+    "en": "But hey, look on the bright side! There\r\nare LOTS of other people trapped in here.",
+    "ua": "Але не сумуй! Тут у пастці\nкупа інших людей."
+  },
+  "Tips0_2_4": {
+    "en": "If we can find them via [System:Color name=\"red\" ]StreetPass[/System:Color], we\r\ncan get pieces from them. Simple as!",
+    "ua": "Знайди їх через [System:Color name=\"red\" ]StreetPass[/System:Color] —\nі вони дадуть тобі частинки. Просто!"
+  },
+  "Tips0_3_1": {
+    "en": "Goodness me! Boss, are you all right?!\r\nYou've got to be careful!",
+    "ua": "Божечки! Шефе, як ти?!\nТреба бути обережнішим!"
+  },
+  "Tips0_3_2": {
+    "en": "If one of those entities gets the better of\r\nyou, that's it for this round of investigation!",
+    "ua": "Якщо сутність тебе здолає, цей\nетап розслідування закінчиться!"
+  },
+  "Tips0_3_3": {
+    "en": "I can patch you up this time, but I won't\r\nalways be there to help, you know!",
+    "ua": "Цього разу я тебе підлатаю, але я\nне завжди буду поруч, знаєш!"
+  },
+  "Tips0_3_4": {
+    "en": "Now, while we're at it, let's go over\r\nthings one more time from the top...",
+    "ua": "А тепер, поки ми тут, повторімо\nвсе ще раз із самого початку…"
+  },
+  "Tips0_4_1": {
+    "en": "Sorry, Boss, but you can't explore\r\nthe mansion without any pieces...",
+    "ua": "Вибач, шефе, але без частинок\nмаєток не дослідити…"
+  },
+  "Tips0_4_2": {
+    "en": "Use [System:Color name=\"red\" ]StreetPass [/System:Color]to find other people\r\ntrapped in here. They'll have pieces!",
+    "ua": "Шукай через [System:Color name=\"red\" ]StreetPass [/System:Color]інших\nполонених. У них є частинки!"
+  },
+  "Tips0_4_3": {
+    "en": "You can also use  Play Coins\r\nto call in some other investigators.",
+    "ua": "Ще можна покликати інших слідчих\nза ігрові монети ."
+  },
+  "Tips0_5_1": {
+    "en": "Boss! BOSS!!!\r\nOh, thank goodness! You're awake!",
+    "ua": "Шефе! ШЕФЕ!!!\nОх, слава богу! Ти отямлюєшся!"
+  },
+  "Tips0_5_2": {
+    "en": "Huh? You're wondering where we are?\r\nOh, it's erm... Well, it's the 31st floor.",
+    "ua": "Що? Де ми? Ну, е-е…\nЦе 31-й поверх."
+  },
+  "Tips0_5_3": {
+    "en": "My keen detective's intuition says we've\r\nbeen fooled by some sort of illusion.",
+    "ua": "Моя детективна інтуїція підказує,\nщо нас ошукала якась ілюзія."
+  },
+  "Tips0_5_4": {
+    "en": "That freakish fiend tricked us! The one who\r\nlords over this place. Oooh, how dare he!",
+    "ua": "Нас обдурило те страховисько, що тут\nхазяйнує! Ох, як воно посміло!"
+  },
+  "Tips0_5_5": {
+    "en": "It turns out my theory was a tiiiiiiiiny\r\nbit off too. The mansion has [System:Color name=\"red\" ]50 floors[/System:Color].",
+    "ua": "І моя теорія трі-і-ішечки схибила.\nУ маєтку [System:Color name=\"red\" ]50 поверхів[/System:Color]."
+  },
+  "Tips0_5_6": {
+    "en": "Seems like we've still got a long way to\r\ngo, but I know we can do it! Right, Boss?",
+    "ua": "Шлях іще довгий, але я знаю,\nми впораємося! Правда, шефе?"
+  },
+  "Tips0_5_7": {
+    "en": "Yeah, that's the spirit! Now, let's get\r\nback to the investigation. Good luck!",
+    "ua": "Ось це настрій! А тепер —\nназад до розслідування. Успіхів!"
+  },
+  "TutoM_1": {
+    "en": "Setting a Piece",
+    "ua": "Розміщення частинки"
+  },
+  "TutoM_3": {
+    "en": "Creating a Room",
+    "ua": "Створення кімнати"
+  },
+  "TutoM_5": {
+    "en": "Battle Basics",
+    "ua": "Основи бою"
+  },
+  "TutoM_10": {
+    "en": "Using Stairs",
+    "ua": "Сходи"
+  },
+  "TutoM_11": {
+    "en": "Operating Mystic Orbs",
+    "ua": "Містичні сфери"
+  },
+  "TutoM_12": {
+    "en": "Weapons 101",
+    "ua": "Про зброю"
+  },
+  "TutoM_13": {
+    "en": "Charge Shots",
+    "ua": "Заряджені постріли"
+  },
+  "TutoM_14": {
+    "en": "Teamwork Tips",
+    "ua": "Командна робота"
+  },
+  "TutoM_15": {
+    "en": "Puzzle Box Pointers",
+    "ua": "Скриньки-головоломки"
+  },
+  "TutoM_16": {
+    "en": "Onwards and Upwards",
+    "ua": "Усе вище й вище"
+  },
+  "TutoM_17": {
+    "en": "Game Over",
+    "ua": "Кінець гри"
+  },
+  "TutoM_18": {
+    "en": "Weapon Types",
+    "ua": "Типи зброї"
+  },
+  "TutoListM_1": {
+    "en": "Setting a Piece 1/2",
+    "ua": "Розміщення частинки 1/2"
+  },
+  "TutoListM_2": {
+    "en": "Setting a Piece 2/2",
+    "ua": "Розміщення частинки 2/2"
+  },
+  "TutoListM_3": {
+    "en": "Creating a Room 1/2",
+    "ua": "Створення кімнати 1/2"
+  },
+  "TutoListM_4": {
+    "en": "Creating a Room 2/2",
+    "ua": "Створення кімнати 2/2"
+  },
+  "TutoListM_5": {
+    "en": "Battle Basics 1/5",
+    "ua": "Основи бою 1/5"
+  },
+  "TutoListM_6": {
+    "en": "Battle Basics 2/5",
+    "ua": "Основи бою 2/5"
+  },
+  "TutoListM_7": {
+    "en": "Battle Basics 3/5",
+    "ua": "Основи бою 3/5"
+  },
+  "TutoListM_8": {
+    "en": "Battle Basics 4/5",
+    "ua": "Основи бою 4/5"
+  },
+  "TutoListM_9": {
+    "en": "Battle Basics 5/5",
+    "ua": "Основи бою 5/5"
+  },
+  "Tuto1_1": {
+    "en": "Use  to move a piece around\r\nand  to rotate it.",
+    "ua": " — рухати частинку,\n — повертати її."
+  },
+  "Tuto1_2": {
+    "en": "When you've got it where you want it,\r\npress  to set it in place.",
+    "ua": "Коли вибереш місце, натисни ,\nщоб покласти її."
+  },
+  "Tuto1_3": {
+    "en": "Give it a go! Put that piece I gave\r\nyou right in front of this room.",
+    "ua": "Спробуй! Поклади ту частинку, що\nя дала, просто перед цією кімнатою."
+  },
+  "Tuto2_1": {
+    "en": "Nice work, Boss! When you placed\r\nthat piece, it turned into a [System:Color name=\"red\" ]corridor[/System:Color].",
+    "ua": "Чудово, шефе! Покладена частинка\nперетворилася на [System:Color name=\"red\" ]коридор[/System:Color]."
+  },
+  "Tuto2_1a": {
+    "en": "When you set a piece down, it turns into\r\neither a [System:Color name=\"red\" ]room [/System:Color]or a [System:Color name=\"red\" ]corridor [/System:Color]depending\r\non what other pieces are next to it.",
+    "ua": "Покладена частинка стає [System:Color name=\"red\" ]кімнатою[/System:Color]\nабо [System:Color name=\"red\" ]коридором[/System:Color] — залежно від\nтого, які частинки поруч."
+  },
+  "Tuto2_2": {
+    "en": "Once you've set a piece down,\r\nyou'll automatically [System:Color name=\"red\" ]walk [/System:Color]over to it.",
+    "ua": "Коли покладеш частинку,\nти автоматично [System:Color name=\"red\" ]перейдеш[/System:Color] до неї."
+  },
+  "Tuto2_3": {
+    "en": "Keep in mind, you can't set a piece\r\ndown somewhere you can't reach. It\r\nhas to [System:Color name=\"red\" ]connect [/System:Color]to where you are, OK?",
+    "ua": "Пам'ятай: частинку не можна\nпокласти туди, куди не дійти. Вона\nмає [System:Color name=\"red\" ]з'єднуватися[/System:Color] з твоїм місцем."
+  },
+  "Tuto2_4": {
+    "en": "Right, let's try it again.\r\nPractice makes perfect!",
+    "ua": "Ну ж бо, ще раз.\nПовторення — мати навчання!"
+  },
+  "Tuto3_1": {
+    "en": "When you put two pieces of the\r\nsame colour side by side, something\r\npretty cool can happen...",
+    "ua": "Якщо покласти поруч дві частинки\nоднакового кольору, може статися\nдещо цікаве…"
+  },
+  "Tuto3_2": {
+    "en": "If the two pieces form an area that's\r\na [System:Color name=\"red\" ]square or larger[/System:Color], they'll fuse together\r\nto create a [System:Color name=\"red\" ]room[/System:Color]!",
+    "ua": "Якщо дві частинки утворюють\n[System:Color name=\"red\" ]квадрат або більше[/System:Color], вони\nзіллються в [System:Color name=\"red\" ]кімнату[/System:Color]!"
+  },
+  "Tuto4_1": {
+    "en": "You can find all sorts of things inside\r\nrooms. [System:Color name=\"red\" ]Treasure chests[/System:Color], for example!",
+    "ua": "У кімнатах можна знайти багато\nчого. Наприклад, [System:Color name=\"red\" ]скрині зі скарбами[/System:Color]!"
+  },
+  "Tuto4_1a": {
+    "en": "You can find all sorts of things inside\r\nrooms. [System:Color name=\"red\" ]Treasure chests[/System:Color], for example.",
+    "ua": "У кімнатах можна знайти багато\nчого. Наприклад, [System:Color name=\"red\" ]скрині зі скарбами[/System:Color]."
+  },
+  "Tuto4_2": {
+    "en": "Remember, to create a room, connect\r\npieces of the same colour to make an\r\narea that's a square or larger.",
+    "ua": "Щоб створити кімнату, з'єднай\nчастинки одного кольору так, щоб\nвийшов квадрат або більше."
+  },
+  "Tuto4_3": {
+    "en": "Now, let's set one more\r\npiece down, just to make sure\r\nyou've got the hang of it.",
+    "ua": "А тепер поклади ще одну\nчастинку, щоб переконатися,\nщо все зрозуміло."
+  },
+  "Tuto5_1": {
+    "en": "If you connect pieces of different\r\ncolours, a[System:Color name=\"red\" ] door [/System:Color]appears between them.",
+    "ua": "Якщо з'єднати частинки різних\nкольорів, між ними з'явиться[System:Color name=\"red\" ] двері[/System:Color]."
+  },
+  "Tuto5_1a": {
+    "en": "If you connect pieces of different\r\ncolours, a[System:Color name=\"red\" ] door [/System:Color]appears between them.",
+    "ua": "Якщо з'єднати частинки різних\nкольорів, між ними з'явиться[System:Color name=\"red\" ] двері[/System:Color]."
+  },
+  "Tuto5_2": {
+    "en": "When you open the door, [System:Color name=\"red\" ]a malevolent\r\nentity might attack you[/System:Color], so be careful!",
+    "ua": "Коли відчиняєш двері, [System:Color name=\"red\" ]на тебе може\nнапасти зловісна сутність[/System:Color]. Обережно!"
+  },
+  "Tuto6_1": {
+    "en": "Press  to [System:Color name=\"red\" ]attack[/System:Color].\r\nThat'll use up [System:Color name=\"red\" ]one [/System:Color]battery.",
+    "ua": " — [System:Color name=\"red\" ]атака[/System:Color].\nВитрачає [System:Color name=\"red\" ]одну[/System:Color] батарею."
+  },
+  "Tuto7_1": {
+    "en": "Hold down  to [System:Color name=\"red\" ]guard[/System:Color]. Doing so\r\nwill [System:Color name=\"red\" ]slowly[/System:Color] drain your batteries.",
+    "ua": "Утримуй , щоб [System:Color name=\"red\" ]захищатися[/System:Color].\nБатареї при цьому [System:Color name=\"red\" ]повільно[/System:Color] сідають."
+  },
+  "Tuto7_2": {
+    "en": "If your batteries go flat, you won't\r\nbe able to shoot your weapon. You'll\r\nhave to wait for them to recharge.",
+    "ua": "Коли батареї сядуть, стріляти\nне вийде. Доведеться чекати,\nпоки вони зарядяться."
+  },
+  "Tuto8_1": {
+    "en": "Press  to use an [System:Color name=\"red\" ]item[/System:Color] during battle.\r\nIt might help if you're in a tight spot!",
+    "ua": " — використати [System:Color name=\"red\" ]предмет[/System:Color] у бою.\nСтане в пригоді в скрутну хвилину!"
+  },
+  "Tuto8_1a": {
+    "en": "Press  to use an [System:Color name=\"red\" ]item[/System:Color] during battle.\r\nIt might help if you're in a tight spot!",
+    "ua": " — використати [System:Color name=\"red\" ]предмет[/System:Color] у бою.\nСтане в пригоді в скрутну хвилину!"
+  },
+  "Tuto8_2": {
+    "en": "After pressing , just press  /  or tap\r\nthe lower screen to pick an item to use.",
+    "ua": "Після  натисни  /  або торкнися\nнижнього екрана, щоб вибрати предмет."
+  },
+  "Tuto8_3": {
+    "en": "By the way, if you feel overwhelmed,\r\nyou can escape by holding down .",
+    "ua": "До речі, якщо стає занадто важко,\nможна втекти, утримуючи ."
+  },
+  "Tuto8_3a": {
+    "en": "If you feel overwhelmed during a battle,\r\nyou can escape by holding down .",
+    "ua": "Якщо в бою стає занадто важко,\nможна втекти, утримуючи ."
+  },
+  "Tuto9_1": {
+    "en": "Yeah! You did it! Great work, Boss.\r\nWhen you beat an entity, you earn\r\n[System:Color name=\"red\" ]experience points [/System:Color]([System:Color name=\"red\" ]exp[/System:Color]).",
+    "ua": "Так! Вийшло! Чудово, шефе.\nЗа перемогу над сутністю дають\n[System:Color name=\"red\" ]очки досвіду[/System:Color] ([System:Color name=\"red\" ]досвід[/System:Color])."
+  },
+  "Tuto9_1a": {
+    "en": "When you beat an entity, you earn\r\n[System:Color name=\"red\" ]experience points [/System:Color]([System:Color name=\"red\" ]exp[/System:Color]).",
+    "ua": "За перемогу над сутністю дають\n[System:Color name=\"red\" ]очки досвіду[/System:Color] ([System:Color name=\"red\" ]досвід[/System:Color])."
+  },
+  "Tuto9_2": {
+    "en": "As you gain exp, the weapon\r\nyou've got equipped will [System:Color name=\"red\" ]level up\r\n[/System:Color]and get more powerful.",
+    "ua": "З досвідом твоя споряджена\nзброя [System:Color name=\"red\" ]підвищує рівень\n[/System:Color]і стає потужнішою."
+  },
+  "Tuto9_3": {
+    "en": "Keep in mind that there's a [System:Color name=\"red\" ]max\r\nlevel[/System:Color] each weapon can reach.\r\nThat's as powerful as it gets.",
+    "ua": "Пам'ятай, що кожна зброя має\n[System:Color name=\"red\" ]макс. рівень[/System:Color].\nПотужніше вже не буде."
+  },
+  "Tuto9_3a": {
+    "en": "Keep in mind that there's a [System:Color name=\"red\" ]max\r\nlevel[/System:Color] each weapon can reach.\r\nThat's as powerful as it gets.",
+    "ua": "Пам'ятай, що кожна зброя має\n[System:Color name=\"red\" ]макс. рівень[/System:Color].\nПотужніше вже не буде."
+  },
+  "Tuto10_1": {
+    "en": "You found this floor's hidden stairs!\r\nGreat work, Boss.",
+    "ua": "Сховані сходи цього поверху\nзнайдено! Чудово, шефе."
+  },
+  "Tuto10_1a": {
+    "en": "Find the stairs hidden on each floor\r\nto progress through the mansion.",
+    "ua": "Шукай сходи, сховані на кожному\nповерсі, щоб іти маєтком далі."
+  },
+  "Tuto10_2": {
+    "en": "By the way, you can use them [System:Color name=\"red\" ]at any time[/System:Color].\r\nDon't feel like you have to rush away from\r\nthis floor if there's still investigating to do!",
+    "ua": "До речі, ними можна скористатися\n[System:Color name=\"red\" ]будь-коли[/System:Color]. Не поспішай іти з поверху,\nякщо тут іще є що розслідувати!"
+  },
+  "Tuto10_2a": {
+    "en": "Once you find a set of stairs, you can\r\nuse them at [System:Color name=\"red\" ]any time[/System:Color]. You don't need to\r\nrush if there's still investigating to do.",
+    "ua": "Знайдені сходи можна використати\n[System:Color name=\"red\" ]будь-коли[/System:Color]. Не поспішай, якщо\nтут іще є що розслідувати."
+  },
+  "Tuto11_1": {
+    "en": "This is a [System:Color name=\"red\" ]mystic orb[/System:Color]. Its magical\r\npowers will let you do three\r\nhandy things here:",
+    "ua": "Це [System:Color name=\"red\" ]містична сфера[/System:Color]. Її магічна\nсила дає змогу зробити\nтри корисні речі:"
+  },
+  "Tuto11_1a": {
+    "en": "Thanks to its magical powers, you can\r\ndo three useful things at a [System:Color name=\"red\" ]mystic orb[/System:Color]. ",
+    "ua": "Завдяки магії [System:Color name=\"red\" ]містичної сфери[/System:Color] біля\nнеї можна зробити три корисні речі."
+  },
+  "Tuto11_2": {
+    "en": "Firstly, you can turn unwanted weapons\r\nand gems into [System:Color name=\"red\" ]materials[/System:Color], and use those\r\nmaterials to [System:Color name=\"red\" ]upgrade [/System:Color]other weapons.",
+    "ua": "По-перше, зайву зброю й самоцвіти\nможна перетворити на [System:Color name=\"red\" ]матеріали[/System:Color]\nй ними [System:Color name=\"red\" ]покращувати[/System:Color] іншу зброю."
+  },
+  "Tuto11_3": {
+    "en": "If you upgrade a weapon using another\r\nwith the same name as materials, the\r\nupgraded weapon's [System:Color name=\"red\" ]max level[/System:Color]'ll go up!",
+    "ua": "Якщо покращити зброю матеріалом\nзі зброї з такою ж назвою, її\n[System:Color name=\"red\" ]макс. рівень[/System:Color] зросте!"
+  },
+  "Tuto11_4": {
+    "en": "Secondly, you can access your\r\n[System:Color name=\"red\" ]interdimensional box[/System:Color].",
+    "ua": "По-друге, можна відкрити\n[System:Color name=\"red\" ]міжвимірну скриню[/System:Color]."
+  },
+  "Tuto11_5": {
+    "en": "This lets you organise your items.\r\nItems you store can be withdrawn\r\nat other mystic orbs you find.",
+    "ua": "У ній можна впорядковувати предмети.\nЗбережене можна забрати\nв інших містичних сферах."
+  },
+  "Tuto11_6": {
+    "en": "Finally, you can take any weapons\r\nand items you don't need anymore\r\nand turn them into [System:Color name=\"red\" ]gems[/System:Color].",
+    "ua": "І нарешті, непотрібну зброю\nта предмети можна перетворити\nна [System:Color name=\"red\" ]самоцвіти[/System:Color]."
+  },
+  "Tuto11_7": {
+    "en": "If you get the hang of using mystic\r\norbs, you'll have a much easier time\r\ninvestigating the mansion!",
+    "ua": "Якщо навчишся користуватися\nсферами, розслідувати маєток\nбуде значно легше!"
+  },
+  "Tuto12_1": {
+    "en": "Oooh, Boss, you've got a new\r\nweapon! And it's one that lets\r\nyou perform [System:Color name=\"red\" ]charge shots[/System:Color]!",
+    "ua": "О-о, шефе, у тебе нова\nзброя! І вона вміє робити\n[System:Color name=\"red\" ]заряджені постріли[/System:Color]!"
+  },
+  "Tuto12_1a": {
+    "en": "You can find lots of different\r\nweapons in the mansion.",
+    "ua": "У маєтку можна знайти\nбагато різної зброї."
+  },
+  "Tuto12_2": {
+    "en": "You've got to [System:Color name=\"red\" ]equip it [/System:Color]to use it.\r\nWhy don't you try it out?",
+    "ua": "Щоб її використати, треба\nїї [System:Color name=\"red\" ]спорядити[/System:Color]. Спробуй!"
+  },
+  "Tuto12_2a": {
+    "en": "Remember that you have to [System:Color name=\"red\" ]equip\r\n[/System:Color]a new weapon to use it. Try them all\r\nout, and see which one you like best!",
+    "ua": "Пам'ятай: щоб користуватися новою\nзброєю, її треба [System:Color name=\"red\" ]спорядити[/System:Color]. Спробуй\nусю й вибери найкращу для себе!"
+  },
+  "Tuto13_1": {
+    "en": "The weapon you've got equipped\r\nright now can fire [System:Color name=\"red\" ]charge shots[/System:Color].",
+    "ua": "Твоя нинішня зброя\nвміє робити [System:Color name=\"red\" ]заряджені постріли[/System:Color]."
+  },
+  "Tuto13_1a": {
+    "en": "Some weapons allow you to\r\nperform [System:Color name=\"red\" ]charge shots[/System:Color].",
+    "ua": "Деяка зброя вміє робити\n[System:Color name=\"red\" ]заряджені постріли[/System:Color]."
+  },
+  "Tuto13_2": {
+    "en": "To build up a charge shot,\r\nhold down  during battle.",
+    "ua": "Щоб зарядити постріл,\nутримуй  у бою."
+  },
+  "Tuto13_2a": {
+    "en": "To build up a charge shot,\r\nhold down  during battle.",
+    "ua": "Щоб зарядити постріл,\nутримуй  у бою."
+  },
+  "Tuto13_3": {
+    "en": "Fill up the gauge, then release\r\n to fire your charge shot!",
+    "ua": "Заповни шкалу й відпусти ,\nщоб вистрілити!"
+  },
+  "Tuto13_4": {
+    "en": "This technique's handy for\r\nbeating tough enemies that you\r\nnormally can't even scratch.",
+    "ua": "Цей прийом стане в пригоді\nпроти сильних ворогів, яких\nзвичайно навіть не подряпаєш."
+  },
+  "Tuto14_1": {
+    "en": "Oh, right! I forgot to tell you that\r\nsome of the people stuck in here\r\nhave found weapons too.",
+    "ua": "Ой, забула сказати: дехто\nз тих, хто тут застряг,\nтеж знайшов зброю."
+  },
+  "Tuto14_1a": {
+    "en": "Some of the other people trapped\r\nhere have found weapons too.",
+    "ua": "Дехто з інших полонених\nтеж знайшов зброю."
+  },
+  "Tuto14_2": {
+    "en": "If you [System:Color name=\"red\" ]team up [/System:Color]with them, they\r\ncan help you fight the horrors\r\ninfesting this place.",
+    "ua": "Якщо [System:Color name=\"red\" ]об'єднаєшся[/System:Color] з ними, вони\nдопоможуть битися з жахіттями,\nякими кишить це місце."
+  },
+  "Tuto14_3": {
+    "en": "Just bear in mind that there's a limit\r\nto how long a team can stick together.\r\nAll good things must come to an end!",
+    "ua": "Але пам'ятай: команда тримається\nразом обмежений час.\nУсе гарне колись закінчується!"
+  },
+  "Tuto14_4": {
+    "en": "If you decide not to team up\r\nwith someone, you can get\r\nan item from them instead.",
+    "ua": "Якщо не хочеш об'єднуватися,\nможна натомість отримати\nвід людини предмет."
+  },
+  "Tuto14_5": {
+    "en": "You never know what you'll\r\nget - it just depends what\r\nthey have on them!",
+    "ua": "Ніколи не знаєш, що\nтрапиться — залежить від\nтого, що в них є!"
+  },
+  "Tuto14_6": {
+    "en": "Investigations go way faster when\r\npeople work together! Right, Boss?",
+    "ua": "Разом розслідувати значно\nшвидше! Правда, шефе?"
+  },
+  "Tuto15_1": {
+    "en": "Ooh, yay! I see you've got\r\nyour hands on a [System:Color name=\"red\" ]puzzle box[/System:Color].\r\nLucky you!",
+    "ua": "Ура! Бачу, у тебе\n[System:Color name=\"red\" ]скринька-головоломка[/System:Color].\nПощастило!"
+  },
+  "Tuto15_1a": {
+    "en": "Sometimes people you meet will give\r\nyou the chance to solve a[System:Color name=\"red\" ] puzzle box[/System:Color].",
+    "ua": "Іноді зустрінуті люди дають шанс\nрозв'язати[System:Color name=\"red\" ] скриньку-головоломку[/System:Color]."
+  },
+  "Tuto15_2": {
+    "en": "The trick is to fit all the\r\nblocks into the frame.",
+    "ua": "Секрет у тому, щоб умістити\nвсі блоки в рамку."
+  },
+  "Tuto15_3": {
+    "en": "If you manage it, the puzzle box\r\nwill open and you'll get the reward\r\ntucked away inside.",
+    "ua": "Якщо впораєшся, скринька\nвідчиниться, і ти отримаєш\nнагороду, сховану всередині."
+  },
+  "Tuto15_4": {
+    "en": "Better yet, if you solve the puzzle within\r\nthe [System:Color name=\"red\" ]target time[/System:Color], the reward you find inside\r\nwill be an extra special one!",
+    "ua": "А якщо розв'яжеш її за [System:Color name=\"red\" ]цільовий\nчас[/System:Color], нагорода всередині\nбуде особливою!"
+  },
+  "Tuto16_1": {
+    "en": "You've reached the second floor safely!\r\nKeep it up - that's one down, 29 to go!",
+    "ua": "Другий поверх — і без пригод!\nТак тримати — один є, лишилося 29!"
+  },
+  "Tuto16_1a": {
+    "en": "The only way to escape this mansion\r\nof horrors is to reach the top floor.",
+    "ua": "Утекти з цього маєтку жахів можна,\nлише дійшовши до верхнього поверху."
+  },
+  "Tuto16_2": {
+    "en": "By the way, I have a handy rhyme\r\nto think about: the higher you go,\r\nthe stronger the foe.",
+    "ua": "До речі, запам'ятай віршик:\nщо вище йдеш —\nто сильніших ворогів знайдеш."
+  },
+  "Tuto16_3": {
+    "en": "If you're having a hard time, you\r\ncan return to a lower floor and\r\nset pieces there if there's room.",
+    "ua": "Якщо важко, можна повернутися\nна нижчий поверх і класти\nчастинки там, якщо є місце."
+  },
+  "Tuto17_1": {
+    "en": "Goodness me! Boss, are you\r\nall right?! Hang in there!",
+    "ua": "Божечки! Шефе, як\nти?! Тримайся!"
+  },
+  "Tuto17_2": {
+    "en": "Given the shape you're in, you'd\r\nbetter stop investigating for now.",
+    "ua": "У такому стані краще\nпоки що припинити розслідування."
+  },
+  "Tuto17_3": {
+    "en": "Get your strength back, then\r\ncollect some more pieces via\r\nStreetPass and try again, OK?",
+    "ua": "Відновися, збери ще частинок\nчерез StreetPass і спробуй\nзнову, гаразд?"
+  },
+  "Tuto18_1": {
+    "en": "Oh! There's something important\r\nI forgot to tell you about [System:Color name=\"red\" ]weapons[/System:Color]...",
+    "ua": "Ой! Я забула сказати тобі дещо\nважливе про [System:Color name=\"red\" ]зброю[/System:Color]…"
+  },
+  "Tuto18_2": {
+    "en": "I've determined that there are [System:Color name=\"red\" ]five\r\ntypes of weapons [/System:Color]in this mansion.",
+    "ua": "Я з'ясувала, що в цьому маєтку\n[System:Color name=\"red\" ]п'ять типів зброї[/System:Color]."
+  },
+  "Tuto18_3": {
+    "en": "There are also [System:Color name=\"red\" ]five types of\r\nmalevolent entities[/System:Color], each weak\r\nto a specific weapon type.",
+    "ua": "А ще є [System:Color name=\"red\" ]п'ять типів зловісних\nсутностей[/System:Color], і кожна вразлива\nдо певного типу зброї."
+  },
+  "Tuto18_4": {
+    "en": "During battle, if you've got a weapon\r\nthat the entity's weak against, an [System:Color name=\"red\" ]arrow\r\n[/System:Color]will appear beside the weapon's type.",
+    "ua": "Якщо в бою в тебе є зброя, до якої\nсутність вразлива, біля типу зброї\nз'явиться [System:Color name=\"red\" ]стрілка[/System:Color]."
+  },
+  "Tuto18_5": {
+    "en": "Switch weapons to make the most of\r\nthe entities' weaknesses - then you'll\r\nreally show those baddies who's boss!",
+    "ua": "Міняй зброю, щоб бити у слабкі\nмісця сутностей, — і покажи\nцим лиходіям, хто тут шеф!"
+  },
+  "Tips2_1_1": {
+    "en": "You can make a room grow even bigger by\r\nconnecting more pieces of the same colour!",
+    "ua": "Кімнату можна збільшити, приєднуючи\nще більше частинок того ж кольору!"
+  },
+  "Tips2_2_1": {
+    "en": "Press  while placing a piece\r\nand you'll open up your inventory!",
+    "ua": "Натисни , коли кладеш частинку,\nі відкриється інвентар!"
+  },
+  "Tips2_3_1": {
+    "en": "The action will pause while you're picking an\r\nitem during battle, so stay calm and pick well!",
+    "ua": "Поки вибираєш предмет у бою, дія\nстоїть на паузі, тож вибирай спокійно!"
+  },
+  "Tips2_4_1": {
+    "en": "When you reach a new floor, your HP gets\r\nrestored and your max HP goes up by 2!",
+    "ua": "На новому поверсі ОЗ відновлюються,\nа макс. ОЗ зростає на 2!"
+  },
+  "Tips2_5_1": {
+    "en": "It looks like the higher you climb,\r\nthe stronger the monsters get!",
+    "ua": "Схоже, що вище піднімаєшся,\nто сильніші монстри!"
+  },
+  "Tips2_6_1": {
+    "en": "Even weapons of the same name can have\r\ndifferent skills and max levels! It's bonkers!",
+    "ua": "Навіть однакова зброя може мати різні\nвміння й макс. рівні! Неймовірно!"
+  },
+  "Tips2_7_1": {
+    "en": "There are tons of different weapons. Try as\r\nmany as you can and see which ones you like!",
+    "ua": "Зброї дуже багато. Спробуй якомога\nбільше й вибери ту, що до вподоби!"
+  },
+  "Tips2_8_1": {
+    "en": "You can perform charge shots faster if you\r\nuse a weapon with more ★s in charge speed.",
+    "ua": "Заряджений постріл швидший, якщо\nу зброї більше ★ у швидкості заряду."
+  },
+  "Tips2_8_2": {
+    "en": "Like charge shots? Touch the arrow on the\r\nweapon info screen and check the ★ ratings!",
+    "ua": "Любиш заряджені постріли? Торкнися\nстрілки на екрані зброї й глянь на ★!"
+  },
+  "Tips2_9_1": {
+    "en": "If your batteries keep going flat, a weapon\r\nwith more ★s in battery recharge might help.",
+    "ua": "Якщо батареї часто сідають, допоможе\nзброя з більшою кількістю ★ у підзарядці."
+  },
+  "Tips2_9_2": {
+    "en": "Touch the arrow on the weapon info screen to\r\nsee. Handy if you guard a lot or like rapid fire!",
+    "ua": "Торкнися стрілки на екрані зброї. Корисно,\nякщо часто захищаєшся чи швидко стріляєш!"
+  },
+  "Tips2_10_1": {
+    "en": "The letter next to a weapon's name\r\nshows its [System:Color name=\"red\" ]rarity[/System:Color]. Rank S is SUPER rare!",
+    "ua": "Літера біля назви зброї означає\nїї [System:Color name=\"red\" ]рідкісність[/System:Color]. Ранг S — НАДрідкісна!"
+  },
+  "Tips2_10_2": {
+    "en": "After that, they're ranked in order from\r\nA to D, with D being the most common.",
+    "ua": "Далі ранги йдуть від A до D,\nде D — найпоширеніша."
+  },
+  "Tips2_11_1": {
+    "en": "I hear that weapons with the same\r\nname can have totally different stats!",
+    "ua": "Кажуть, зброя з однаковою назвою\nможе мати зовсім різні показники!"
+  },
+  "Tips2_12_1": {
+    "en": "Each weapon is one of [System:Color name=\"red\" ]five different types[/System:Color].\r\nTo see which one, check the corner of its icon!",
+    "ua": "Кожна зброя належить до одного з [System:Color name=\"red\" ]п'яти типів[/System:Color].\nТип видно в куті її значка!"
+  },
+  "Tips2_13_1": {
+    "en": "The entities are weak against different [System:Color name=\"red\" ]weapon\r\ntypes[/System:Color]. Best to arm yourself with that in mind!",
+    "ua": "Сутності вразливі до різних [System:Color name=\"red\" ]типів\nзброї[/System:Color]. Озброюйся з цим на увазі!"
+  },
+  "Tips2_14_1": {
+    "en": "To check when a [System:Color name=\"red\" ]weapon skill [/System:Color]will activate,\r\ntouch the skill icon on the weapon info screen.",
+    "ua": "Щоб дізнатися, коли спрацює [System:Color name=\"red\" ]уміння зброї[/System:Color],\nторкнися значка вміння на екрані зброї."
+  },
+  "Tips2_14_2": {
+    "en": "It could be when you fire a charge shot,\r\nwhen you guard, when you take damage...",
+    "ua": "Може, під час зарядженого пострілу,\nзахисту, отримання шкоди…"
+  },
+  "Tips2_15_1": {
+    "en": "Weapon skills won't always be activated\r\nwhen you need them. It's a matter of luck!",
+    "ua": "Уміння зброї не завжди спрацьовують,\nколи треба. Тут усе вирішує удача!"
+  },
+  "Tips2_16_1": {
+    "en": "When you use a mystic orb to upgrade a\r\nweapon, the materials make a difference.",
+    "ua": "Коли покращуєш зброю в містичній сфері,\nматеріали мають значення."
+  },
+  "Tips2_16_2": {
+    "en": "Weapons that are rare or high level make\r\nbetter materials - and lead to better results!",
+    "ua": "Рідкісна чи прокачана зброя — кращий\nматеріал, а отже, й кращий результат!"
+  },
+  "Tips2_17_1": {
+    "en": "When upgrading a weapon at a mystic orb,\r\nyou can use  to select multiple materials!",
+    "ua": "Під час покращення в містичній сфері\nкілька матеріалів вибирають кнопкою !"
+  },
+  "Tips2_18_1": {
+    "en": "When upgrading a weapon, I know a handy\r\ntrick to [System:Color name=\"red\" ]increase its maximum level[/System:Color]!",
+    "ua": "Я знаю хитрість, як під час покращення\n[System:Color name=\"red\" ]підвищити макс. рівень[/System:Color] зброї!"
+  },
+  "Tips2_18_2": {
+    "en": "Just try making the materials from\r\na weapon of the same name!",
+    "ua": "Просто зроби матеріали\nзі зброї з такою ж назвою!"
+  },
+  "Tips2_19_1": {
+    "en": "A mystic orb can turn unneeded weapons\r\nand items into gems. Very mystical indeed!",
+    "ua": "Містична сфера перетворює зайву зброю\nй предмети на самоцвіти. Містика!"
+  },
+  "Tips2_20_1": {
+    "en": "If you set a piece down on a spot where\r\na malevolent entity is lurking, watch out!",
+    "ua": "Обережно, якщо кладеш частинку туди,\nде чатує зловісна сутність!"
+  },
+  "Tips2_20_2": {
+    "en": "It'll hunt you down and attack you!",
+    "ua": "Вона вистежить тебе й нападе!"
+  },
+  "Tips2_21_1": {
+    "en": "Losing a battle won't cost you items\r\nor gems. Those are yours to keep!",
+    "ua": "Поразка в бою не забирає предмети\nчи самоцвіти. Вони лишаються твоїми!"
+  },
+  "Tips2_22_1": {
+    "en": "If you think the odds are against you,\r\nyou can hold down  to run away.",
+    "ua": "Якщо шанси не на твоєму боці,\nутримуй , щоб утекти."
+  },
+  "Tips2_22_2": {
+    "en": "Just remember that it takes time to\r\nescape, so you need to be careful!",
+    "ua": "Тільки пам'ятай: утеча займає час,\nтож обережно!"
+  },
+  "Tips2_23_1": {
+    "en": "You can carry up to eight items\r\nat a time. That's the limit!",
+    "ua": "Можна нести до восьми предметів\nодночасно. Це межа!"
+  },
+  "Tips2_24_1": {
+    "en": "If you're holding eight items and then get\r\na ninth, something amazing happens.",
+    "ua": "Якщо маєш вісім предметів і трапився\nдев'ятий, стається дещо дивовижне."
+  },
+  "Tips2_24_2": {
+    "en": "You get to pick an item to store in\r\nyour very own interdimensional box!",
+    "ua": "Можна вибрати предмет і покласти його\nу власну міжвимірну скриню!"
+  },
+  "Tips2_25_1": {
+    "en": "Up to 99 items can be stored in\r\nyour [System:Color name=\"red\" ]interdimensional box[/System:Color].",
+    "ua": "У [System:Color name=\"red\" ]міжвимірній скрині[/System:Color] можна\nзберігати до 99 предметів."
+  },
+  "Tips2_26_1": {
+    "en": "Keep an eye on what's in your\r\ninterdimensional box!",
+    "ua": "Стеж за тим, що лежить\nу міжвимірній скрині!"
+  },
+  "Tips2_26_2": {
+    "en": "If it's full, you won't be able to put any new\r\nitems in it. You'll have to throw them away!",
+    "ua": "Коли вона повна, нові предмети туди не\nвлізуть. Доведеться їх викинути!"
+  },
+  "Tips2_27_1": {
+    "en": "There are items out there called\r\n[System:Color name=\"red\" ]badges [/System:Color]that boost various stats.",
+    "ua": "Є предмети, що звуться\n[System:Color name=\"red\" ]значками[/System:Color], — вони покращують показники."
+  },
+  "Tips2_27_2": {
+    "en": "Even better, you benefit from their\r\neffects just by carrying them around!",
+    "ua": "І найкраще: щоб вони діяли,\nдосить просто носити їх із собою!"
+  },
+  "Tips2_28_1": {
+    "en": "[System:Color name=\"red\" ]Badges [/System:Color]are so handy. The only downside\r\nis you've got limited space to carry them!",
+    "ua": "[System:Color name=\"red\" ]Значки [/System:Color]— це так зручно. Шкода тільки,\nщо місця для них небагато!"
+  },
+  "Tips2_29_1": {
+    "en": "You can [System:Color name=\"red\" ]team up [/System:Color]with people you meet\r\nin rooms and fight alongside them.",
+    "ua": "Можна [System:Color name=\"red\" ]об'єднатися[/System:Color] з людьми, яких\nзустрічаєш у кімнатах, і битися разом."
+  },
+  "Tips2_29_2": {
+    "en": "They'll boost your stats a bit and restore\r\nsome of your HP at the start of each battle!",
+    "ua": "Вони трохи покращать показники й\nна початку бою відновлять трохи ОЗ!"
+  },
+  "Tips2_30_1": {
+    "en": "People you meet in rooms can [System:Color name=\"red\" ]give\r\nyou items[/System:Color].",
+    "ua": "Люди, яких зустрічаєш у кімнатах,\nможуть [System:Color name=\"red\" ]дати тобі предмети[/System:Color]."
+  },
+  "Tips2_30_2": {
+    "en": "What you get depends on what they\r\nhave. You might even get a rare weapon!",
+    "ua": "Що дадуть — залежить від того, що\nв них є. Може, навіть рідкісну зброю!"
+  },
+  "Tips2_31_1": {
+    "en": "Sometimes a person you meet in a\r\nroom will give you a [System:Color name=\"red\" ]puzzle box[/System:Color].",
+    "ua": "Іноді людина, яку зустрічаєш\nу кімнаті, дає [System:Color name=\"red\" ]скриньку-головоломку[/System:Color]."
+  },
+  "Tips2_31_2": {
+    "en": "If you can solve the puzzle,\r\nyou'll get a reward!",
+    "ua": "Розв'яжеш головоломку —\nотримаєш нагороду!"
+  },
+  "Tips2_32_1": {
+    "en": "If you solve a [System:Color name=\"red\" ]puzzle box[/System:Color] within the\r\ntarget time, something nifty happens.",
+    "ua": "Якщо розв'язати [System:Color name=\"red\" ]скриньку-головоломку[/System:Color]\nза цільовий час, станеться дещо класне."
+  },
+  "Tips2_32_2": {
+    "en": "Instead of a cool reward, you get a super extra\r\namazingly cool reward! And that's pretty cool.",
+    "ua": "Замість класної нагороди буде супер-пупер\nкласна нагорода! А це дуже класно."
+  },
+  "Tips2_33_1": {
+    "en": "[System:Color name=\"red\" ]Puzzle boxes [/System:Color]record how long it\r\ntakes their owners to solve them.",
+    "ua": "[System:Color name=\"red\" ]Скриньки-головоломки [/System:Color]запам'ятовують,\nза який час їх розв'язали власники."
+  },
+  "Tips2_33_2": {
+    "en": "If you beat the original owner's time,\r\nyou'll get a better reward than usual!",
+    "ua": "Якщо поб'єш час власника, нагорода\nбуде кращою, ніж зазвичай!"
+  },
+  "Tips2_34_1": {
+    "en": "With the wonders of StreetPass, you can\r\nrun into the same person multiple times.",
+    "ua": "Завдяки дивам StreetPass одну людину\nможна зустріти багато разів."
+  },
+  "Tips2_34_2": {
+    "en": "Every 10th time you meet them, they'll\r\ngive you a piece AND a bonus item!",
+    "ua": "На кожну 10-ту зустріч вона дасть\nчастинку І бонусний предмет!"
+  },
+  "Tips2_35_1": {
+    "en": "Some entities are so malevolent that\r\nthey're not even fazed by normal attacks.",
+    "ua": "Деякі сутності такі зловісні, що\nзвичайні атаки їм байдужі."
+  },
+  "Tips2_35_2": {
+    "en": "Try using [System:Color name=\"red\" ]charge shots[/System:Color] instead!\r\nThat'll give them a run for their money!",
+    "ua": "Тоді спробуй [System:Color name=\"red\" ]заряджені постріли[/System:Color]!\nОт тоді вони попотіють!"
+  },
+  "Tips2_36_1": {
+    "en": "Try to fire a [System:Color name=\"red\" ]charge shot [/System:Color]at just the\r\nright moment when an enemy attacks.",
+    "ua": "Спробуй вистрілити [System:Color name=\"red\" ]зарядженим пострілом[/System:Color]\nсаме тоді, коли ворог атакує."
+  },
+  "Tips2_36_2": {
+    "en": "It might stop your opponent's attack\r\nand let you [System:Color name=\"red\" ]counter-attack[/System:Color]!",
+    "ua": "Це може зупинити атаку суперника\nй дати змогу [System:Color name=\"red\" ]контратакувати[/System:Color]!"
+  },
+  "Tips2_37_1": {
+    "en": "There are b-b-bosses on some floors of\r\nthe m-m-mansion. They're so s-s-scary!",
+    "ua": "У м-м-маєтку на деяких поверхах\nє б-б-боси. Вони т-т-такі страшні!"
+  },
+  "Tips2_37_2": {
+    "en": "And if there's a boss on a floor, you\r\ncan't climb higher until you beat them!",
+    "ua": "І якщо на поверсі бос, вище не\nпіднятися, доки його не переможеш!"
+  },
+  "Tips2_38_1": {
+    "en": "You can even escape from boss battles.\r\nBe sure to do that if you're in danger!",
+    "ua": "З бою з босом теж можна втекти.\nТак і роби, якщо тобі загрожує небезпека!"
+  },
+  "Tips2_39_1": {
+    "en": "There are five types of treasure chests\r\nin here, ranging from wooden to golden.",
+    "ua": "Тут є п'ять видів скринь зі скарбами —\nвід дерев'яних до золотих."
+  },
+  "Tips2_39_2": {
+    "en": "The more deluxe the chest, the more\r\nvaluable the contents within!",
+    "ua": "Що розкішніша скриня,\nто цінніший уміст!"
+  },
+  "Tips2_40_1": {
+    "en": "When you create a large room, it'll\r\ncontain multiple treasure chests.",
+    "ua": "У великій кімнаті буде\nкілька скринь зі скарбами."
+  },
+  "Tips2_40_2": {
+    "en": "AND the chests tend to have better items\r\nin them. So try and make big rooms!",
+    "ua": "І в скринях там зазвичай кращі предмети.\nТож старайся будувати великі кімнати!"
+  },
+  "Tips2_41_1": {
+    "en": "If all the rooms you make are tiny,\r\nyou'll only ever find wooden chests.",
+    "ua": "Якщо всі кімнати крихітні, знайдеш\nлише дерев'яні скрині."
+  },
+  "Tips2_41_2": {
+    "en": "Try and plan ahead so you can make\r\nthe biggest rooms possible!",
+    "ua": "Плануй наперед, щоб будувати\nякомога більші кімнати!"
+  },
+  "Tips2_42_1": {
+    "en": "When you get a [System:Color name=\"red\" ]health boost[/System:Color],\r\nyour max HP instantly goes up!",
+    "ua": "[System:Color name=\"red\" ]Підсилювач здоров'я[/System:Color] одразу\nзбільшує макс. ОЗ!"
+  },
+  "Tips2_43_1": {
+    "en": "I hear that [System:Color name=\"red\" ]health boosts [/System:Color]come in three\r\nsizes: small, medium and large.",
+    "ua": "Кажуть, [System:Color name=\"red\" ]підсилювачі здоров'я [/System:Color]бувають\nтрьох розмірів: малі, середні й великі."
+  },
+  "Tips2_44_1": {
+    "en": "A [System:Color name=\"red\" ]concealing cloak [/System:Color]will make you\r\ninvisible to enemies for a little while.",
+    "ua": "[System:Color name=\"red\" ]Плащ-невидимка [/System:Color]ненадовго\nховає тебе від ворогів."
+  },
+  "Tips2_45_1": {
+    "en": "Someone told me [System:Color name=\"red\" ]concealing cloaks[/System:Color]\r\ndon't fool the bosses. What a pain!",
+    "ua": "Мені казали, що [System:Color name=\"red\" ]плащ-невидимка[/System:Color]\nне обдурить босів. От халепа!"
+  },
+  "Tips2_46_1": {
+    "en": "[System:Color name=\"red\" ]Rainbow paint [/System:Color]lets you change\r\na piece's colour. Pretty cool, eh?",
+    "ua": "[System:Color name=\"red\" ]Веселкова фарба [/System:Color]змінює колір\nчастинки. Круто, правда?"
+  },
+  "Tips2_47_1": {
+    "en": "Entities on high floors are stronger\r\nthan their lower-floor counterparts.",
+    "ua": "Сутності на високих поверхах сильніші\nза своїх родичів на нижніх."
+  },
+  "Tips2_48_1": {
+    "en": "Try attaching a piece of the same colour\r\nto a room that contains a mystic orb.",
+    "ua": "Спробуй приєднати частинку того ж\nкольору до кімнати з містичною сферою."
+  },
+  "Tips2_48_2": {
+    "en": "If you expand the room enough, you'll get\r\nto use that mystic orb again. Rather handy!",
+    "ua": "Розшир кімнату як слід — і сферою\nможна буде скористатися знову. Зручно!"
+  },
+  "Tips2_49_1": {
+    "en": "Use a [System:Color name=\"red\" ]spare battery [/System:Color]during battle\r\nto fully recharge your batteries.",
+    "ua": "[System:Color name=\"red\" ]Запасна батарея [/System:Color]у бою\nповністю заряджає батареї."
+  },
+  "Tips2_49_2": {
+    "en": "And, for a little while after you use one,\r\nyour weapon won't use any battery at all!",
+    "ua": "А ще якийсь час після неї зброя\nвзагалі не витрачає батарею!"
+  },
+  "Tips2_50_1": {
+    "en": "Use a [System:Color name=\"red\" ]quick charge [/System:Color]during battle to make\r\nyour charge shot charge up...quicker.",
+    "ua": "[System:Color name=\"red\" ]Швидкий заряд [/System:Color]у бою прискорює\nзаряджання пострілу. Ну, швидшає."
+  },
+  "Tips2_51_1": {
+    "en": "Some entities can inflict annoying\r\nstatus ailments on you during battle.",
+    "ua": "Деякі сутності в бою можуть\nнакласти на тебе неприємні стани."
+  },
+  "Tips2_51_2": {
+    "en": "When that happens, use a [System:Color name=\"red\" ]miracle\r\ncure [/System:Color]and you'll feel right as rain.",
+    "ua": "Тоді скористайся [System:Color name=\"red\" ]чудодійними\nліками[/System:Color] — і будеш як новенький."
+  },
+  "Tips2_52_1": {
+    "en": "I heard that if you win a battle without\r\ntaking any damage, you get more exp!",
+    "ua": "Кажуть, якщо виграти бій без жодної\nшкоди, досвіду дадуть більше!"
+  },
+  "Tips2_53_1": {
+    "en": "If you beat a monster with one shot,\r\nyou'll earn more gems!",
+    "ua": "Здолаєш монстра одним пострілом —\nсамоцвітів буде більше!"
+  },
+  "Tips2_54_1": {
+    "en": "I've heard that some entities can\r\nhide by turning invisible. C-c-creepy!",
+    "ua": "Кажуть, деякі сутності вміють ставати\nневидимими. Ж-ж-жах!"
+  },
+  "Tips2_54_2": {
+    "en": "They can lurk in rooms and hallways,\r\nthen jump out and get you. Watch out!",
+    "ua": "Вони чатують у кімнатах і коридорах,\nа тоді вистрибують. Обережно!"
+  },
+  "Tips2_55_1": {
+    "en": "You should try upgrading a weapon using\r\nanother weapon of the same name!",
+    "ua": "Спробуй покращити зброю іншою\nзброєю з такою ж назвою!"
+  },
+  "Tips2_55_2": {
+    "en": "Its max level will go up, and it'll get a +1\r\non its name. You can even go up to +2!",
+    "ua": "Її макс. рівень зросте, а до назви\nдодасться +1. Можна навіть до +2!"
+  },
+  "Tips2_56_1": {
+    "en": "I've heard that each weapon skill\r\nhas three possible levels.",
+    "ua": "Кажуть, кожне вміння зброї\nмає три можливі рівні."
+  },
+  "Tips2_56_2": {
+    "en": "A higher-level weapon skill will be\r\nactivated more often!",
+    "ua": "Вміння вищого рівня\nспрацьовує частіше!"
+  },
+  "Ent_001": {
+    "en": "This place is so s-s-scary! Here, t-t-take\r\nthis piece. You've g-g-got to do something!",
+    "ua": "Тут т-т-так страшно! Ось, в-в-візьми\nцю частинку. З-з-зроби щось!"
+  },
+  "Ent_002": {
+    "en": "I can't stand this place anymore! I'll give\r\nyou this piece, just get rid of the ghosts!",
+    "ua": "Я більше не можу тут! Дам тобі\nцю частинку, тільки прожени привидів!"
+  },
+  "Ent_003": {
+    "en": "Get me out of this c-c-crazy place!\r\nT-t-take this piece. It's yours! Just...HELP!",
+    "ua": "Забери мене з цього б-б-божевілля!\nВ-в-візьми частинку. Вона твоя! РЯТУЙ!"
+  },
+  "Ent_004": {
+    "en": "Waaah! Why is this happening to me?!\r\nHere, have this piece, just help me!",
+    "ua": "А-а-а! Чому це сталося зі мною?!\nОсь, тримай частинку, тільки допоможи!"
+  },
+  "Ent_005": {
+    "en": "I've got a piece, but I can't handle the pressure.\r\nYou look responsible. You take it! PLEASE!",
+    "ua": "У мене є частинка, але я не витримую.\nТи виглядаєш надійно. Візьми! БУДЬ ЛАСКА!"
+  },
+  "Ent_006": {
+    "en": "Come on, we've got to stick together.\r\nHere's a piece. Let's do this! ",
+    "ua": "Ну ж бо, тримаймося разом.\nОсь частинка. До справи!"
+  },
+  "Ent_007": {
+    "en": "I keep searching, but I can't find the exit!\r\nHere's a piece. Let's split up and get looking.",
+    "ua": "Шукаю й шукаю, а виходу нема!\nОсь частинка. Розділімося й шукаймо."
+  },
+  "Ent_008": {
+    "en": "A-a-are we safe yet? Here, take this\r\npiece and go after those ghosts!",
+    "ua": "М-м-ми вже в безпеці? Ось, візьми\nчастинку й прожени тих привидів!"
+  },
+  "Ent_009": {
+    "en": "Y-y-you look pretty brave. Here, take this\r\npiece and show those...things...who's boss!",
+    "ua": "Т-т-ти, схоже, сміливець. Ось, візьми\nчастинку й покажи тим… штукам, хто тут шеф!"
+  },
+  "Ent_010": {
+    "en": "Huh? Didn't I come this way already?\r\nI'm so lost. Here, you'd better take this.",
+    "ua": "Га? Знову це місце?\nЗовсім заблукав. Ось, краще візьми це."
+  },
+  "Ent_011": {
+    "en": "ARGH! I keep going in circles! Here,\r\nmaybe you can use this piece.",
+    "ua": "А-А-А! Я ходжу по колу! Ось,\nможе, тобі знадобиться ця частинка."
+  },
+  "Ent_sys_01": {
+    "en": "Which piece do you want?",
+    "ua": "Яку частинку візьмеш?"
+  },
+  "Ent_sys_02": {
+    "en": "Oh dear! I don't think this person can\r\noffer you a piece that'll fit here.",
+    "ua": "От лихо! Схоже, ця людина не має\nчастинки, яка тут підійде."
+  },
+  "Ent_sys_03": {
+    "en": "Maybe you'll have better luck\r\nnext time...",
+    "ua": "Може, наступного разу\nпощастить більше…"
+  },
+  "Ent_sys_04": {
+    "en": "Oh, you got something extra\r\nalong with this piece!",
+    "ua": "О, разом із частинкою\nтрапилося ще дещо!"
+  },
+  "Ent_sys_05": {
+    "en": "There's nowhere to set this piece.",
+    "ua": "Цю частинку нікуди покласти."
+  },
+  "MapMake_00": {
+    "en": " Move    Rotate    Set    Items    Back",
+    "ua": " Рух    Поворот    Покласти    Предмети    Назад"
+  },
+  "MapMake_01": {
+    "en": " Move    Rotate    Set",
+    "ua": " Рух    Поворот    Покласти"
+  },
+  "MapMake_Exit_Find00": {
+    "en": "You found the stairs!",
+    "ua": "Сходи знайдено!"
+  },
+  "MapMake_Exit_Find01": {
+    "en": "You found the stairs!\r\nBut there's something guarding them...",
+    "ua": "Сходи знайдено!\nАле їх щось охороняє…"
+  },
+  "MapMake_Exit_Find03": {
+    "en": "You found the stairs!\r\nThey appear to go to the top floor...",
+    "ua": "Сходи знайдено!\nСхоже, вони ведуть на самий верх…"
+  },
+  "MapMake_Exit_Sel00": {
+    "en": "Go to Next Floor",
+    "ua": "На наступний поверх"
+  },
+  "MapMake_Exit_Sel01": {
+    "en": "Fight Boss",
+    "ua": "Битися з босом"
+  },
+  "MapMake_Exit_Sel02": {
+    "en": "Go to Top Floor",
+    "ua": "На верхній поверх"
+  },
+  "MapMake_Exit_Sel03": {
+    "en": "Use  /  to scroll through\r\nthe options on the lower screen\r\nand select a floor.",
+    "ua": " /  — гортати варіанти\nна нижньому екрані\nй вибрати поверх."
+  },
+  "MapMake_Exit_Sel04": {
+    "en": "Cancel",
+    "ua": "Скасувати"
+  },
+  "MapMake_Exit_Sel05": {
+    "en": "Ready to go to the next floor?",
+    "ua": "Іти на наступний поверх?"
+  },
+  "MapMake_Exit_Sel06": {
+    "en": "Ready to fight the boss?",
+    "ua": "Битися з босом?"
+  },
+  "MapMake_Exit_Sel07": {
+    "en": "Ready to go to the top floor?",
+    "ua": "Іти на верхній поверх?"
+  },
+  "MapMake_Exit_Sel08": {
+    "en": "Yes",
+    "ua": "Так"
+  },
+  "MapMake_Exit_Sel09": {
+    "en": "Yes",
+    "ua": "Так"
+  },
+  "MapMake_Exit_Sel10": {
+    "en": "No",
+    "ua": "Ні"
+  },
+  "MapMake_Exit_Sel11": {
+    "en": "Pick Floor",
+    "ua": "Вибрати поверх"
+  },
+  "MapMake_Exit_Sel12": {
+    "en": "Back to Floor [0]",
+    "ua": "Назад на поверх [0]"
+  },
+  "MapMake_Exit_Sel13": {
+    "en": "Go to floor [0]?",
+    "ua": "Іти на поверх [0]?"
+  },
+  "MapMake_Exit_Sel14": {
+    "en": "Yes",
+    "ua": "Так"
+  },
+  "MapMake_Exit_Sel15": {
+    "en": "No",
+    "ua": "Ні"
+  },
+  "MapMake_Clear00": {
+    "en": "You cleared floor [0]! Your HP has been\r\nrestored and your max HP has increased.",
+    "ua": "Поверх [0] пройдено! ОЗ відновлено,\nа макс. ОЗ збільшено."
+  },
+  "MapMake_Clear01": {
+    "en": "You cleared floor [0]!\r\nYour HP has been restored.",
+    "ua": "Поверх [0] пройдено!\nОЗ відновлено."
+  },
+  "EventTreasure_Get00": {
+    "en": "You got [0]!\r\nSee the lower screen for details.",
+    "ua": "Отримано: [0]!\nПодробиці на нижньому екрані."
+  },
+  "EventTreasure_Get01": {
+    "en": "You got [0]!\r\nBut you can't carry any more items...",
+    "ua": "Отримано: [0]!\nАле більше предметів не понести…"
+  },
+  "EventTreasure_Get02": {
+    "en": "Your interdimensional box is full too!",
+    "ua": "Міжвимірна скриня теж повна!"
+  },
+  "EventTreasure_Get04": {
+    "en": "Sadly you can't keep this\r\n[System:Color name=\"red\" ][0][/System:Color].",
+    "ua": "На жаль, це не залишити:\n[System:Color name=\"red\" ][0][/System:Color]."
+  },
+  "EventTreasure_Get05": {
+    "en": "You got [0] gems!",
+    "ua": "Отримано самоцвітів: [0]!"
+  },
+  "EventTreasure_Get06": {
+    "en": "You got a [System:Color name=\"red\" ]plaza ticket[/System:Color]!",
+    "ua": "Отримано [System:Color name=\"red\" ]квиток Площі[/System:Color]!"
+  },
+  "EventTreasure_Get07": {
+    "en": "You got [0]!",
+    "ua": "Отримано: [0]!"
+  },
+  "EventTreasure_Get08": {
+    "en": "Your max HP has increased by [0].",
+    "ua": "Макс. ОЗ збільшено на [0]."
+  },
+  "EventTreasure_Get09": {
+    "en": "Choose an item to store in your\r\ninterdimensional box.",
+    "ua": "Виберіть предмет, щоб покласти\nйого в міжвимірну скриню."
+  },
+  "EventTreasure_Get10": {
+    "en": "Store the [System:Color name=\"red\" ][0][/System:Color]\r\nin your interdimensional box?",
+    "ua": "Покласти [System:Color name=\"red\" ][0][/System:Color]\nу міжвимірну скриню?"
+  },
+  "EventTreasure_Get11": {
+    "en": "Yes",
+    "ua": "Так"
+  },
+  "EventTreasure_Get12": {
+    "en": "No",
+    "ua": "Ні"
+  },
+  "EventMii_Get00": {
+    "en": "You got [1] gems\r\nfrom [0]!",
+    "ua": "Отримано самоцвітів: [1]\nвід: [0]!"
+  },
+  "EventMii_Puzzle00": {
+    "en": "Look what I just found!\r\nHere, you can have it.",
+    "ua": "Глянь, що тут знайшлося!\nОсь, бери собі."
+  },
+  "EventMii_Puzzle01": {
+    "en": "You've been offered a [System:Color name=\"red\" ]puzzle box[/System:Color]!\r\nSolve the puzzle to get a reward.",
+    "ua": "Вам дають [System:Color name=\"red\" ]скриньку-головоломку[/System:Color]!\nРозв'яжіть її й отримайте нагороду."
+  },
+  "EventMii_Puzzle02": {
+    "en": "Try Puzzle Box",
+    "ua": "Розв'язати"
+  },
+  "EventMii_Puzzle03": {
+    "en": "Decline Puzzle Box",
+    "ua": "Відмовитися"
+  },
+  "EventMii_Puzzle04": {
+    "en": "Puzzle Box",
+    "ua": "Головоломка"
+  },
+  "EventMii_Puzzle06": {
+    "en": "Level",
+    "ua": "Рівень"
+  },
+  "EventMii_Puzzle07": {
+    "en": "Target Time ",
+    "ua": "Цільовий час"
+  },
+  "EventMii_Puzzle08": {
+    "en": "Rival's Time",
+    "ua": "Час суперника"
+  },
+  "EventMii_Puzzle09": {
+    "en": "Personal Best",
+    "ua": "Особ. рекорд"
+  },
+  "EventMii_Puzzle10": {
+    "en": "You did it! The box opens and\r\nyou find something inside.",
+    "ua": "Вийшло! Скринька відчиняється,\nа всередині щось є."
+  },
+  "EventMii_Puzzle11": {
+    "en": "You beat the target time! The box opens and\r\nyou find something extra special inside.",
+    "ua": "Цільовий час побито! Скринька відчиняється,\nа всередині — щось особливе."
+  },
+  "EventMii_Puzzle12": {
+    "en": "Nice work! Congratulations.",
+    "ua": "Чудово! Вітаю."
+  },
+  "EventMii_Puzzle13": {
+    "en": "Oh, wow! You solved it AND you beat\r\nthe target time?! Great job!",
+    "ua": "Ого! Розв'язано, та ще й швидше\nза цільовий час?! Чудова робота!"
+  },
+  "EventMii_Puzzle14": {
+    "en": "Nice work! I bet you could even\r\nbeat my record next time!",
+    "ua": "Чудово! Закладаюся, наступного разу\nти навіть поб'єш мій рекорд!"
+  },
+  "EventMii_Puzzle15": {
+    "en": "You...beat my time?! I can't believe it!\r\nThat's just amazing. Great work!",
+    "ua": "Мій час… побито?! Не віриться!\nПросто дивовижно. Чудова робота!"
+  },
+  "EventMii_Buddy00": {
+    "en": "What luck! [0] has\r\na weapon too.",
+    "ua": "Яка удача! У [0]\nтеж є зброя."
+  },
+  "EventMii_Buddy01": {
+    "en": "Why don't you team up and fight\r\ntogether for a while?",
+    "ua": "Може, об'єднаєтеся й\nтрохи поборетеся разом?"
+  },
+  "EventMii_Buddy02": {
+    "en": "Get Item",
+    "ua": "Взяти предмет"
+  },
+  "EventMii_Buddy03": {
+    "en": "Team Up",
+    "ua": "Об'єднатися"
+  },
+  "EventMii_Buddy04": {
+    "en": "Switch Partners",
+    "ua": "Змінити напарника"
+  },
+  "EventMii_Buddy05": {
+    "en": "Get an item from [0].",
+    "ua": "Отримати предмет від [0]."
+  },
+  "EventMii_Buddy06": {
+    "en": "Team up with [0].\r\nSee the lower screen for details.",
+    "ua": "Об'єднатися з [0].\nПодробиці на нижньому екрані."
+  },
+  "EventMii_Buddy07": {
+    "en": "Join [0] instead.\r\nSee the lower screen for details.",
+    "ua": "Приєднатися натомість до [0].\nПодробиці на нижньому екрані."
+  },
+  "EventMii_Buddy08": {
+    "en": "Oh yeah, you can have this too.\r\nThink you can beat my record?",
+    "ua": "А, і це теж бери.\nДумаєш, поб'єш мій рекорд?"
+  },
+  "EventMii_Buddy09": {
+    "en": "Oh yeah, you can have this too.\r\nThink you can beat my record?",
+    "ua": "А, і це теж бери.\nДумаєш, поб'єш мій рекорд?"
+  },
+  "EventMii_Buddy10": {
+    "en": "You've teamed up with\r\n[0]!",
+    "ua": "Ви об'єдналися з\n[0]!"
+  },
+  "EventMii_Buddy11": {
+    "en": "You've changed teams and joined\r\nforces with [0] instead!",
+    "ua": "Ви змінили команду й тепер\nдієте разом із [0]!"
+  },
+  "EventMii_Buddy12": {
+    "en": "Here's this team-up's potential.",
+    "ua": "Ось потенціал цієї команди."
+  },
+  "EventMii_Buddy13": {
+    "en": "You'll regain [0] HP at\r\nthe start of each battle.",
+    "ua": "На початку кожного бою\nвідновлюватиметься [0] ОЗ."
+  },
+  "EventMii_Buddy14": {
+    "en": "You got [0]!\r\nSee the lower screen for details.",
+    "ua": "Отримано: [0]!\nПодробиці на нижньому екрані."
+  },
+  "EventMii_Buddy15": {
+    "en": "You got [0]!\r\nBut you can't carry any more items...",
+    "ua": "Отримано: [0]!\nАле більше предметів не понести…"
+  },
+  "EventMii_Buddy16": {
+    "en": "The [System:Color name=\"red\" ][0][/System:Color] was sucked\r\ninto your interdimensional box.",
+    "ua": "[System:Color name=\"red\" ][0][/System:Color] затягнуло\nв міжвимірну скриню."
+  },
+  "EventMii_Buddy17": {
+    "en": "It looks like your team-up with\r\n[0] is over.",
+    "ua": "Схоже, ваша команда з\n[0] розпалася."
+  },
+  "EventOrb_Menu00": {
+    "en": "Upgrade Weapon",
+    "ua": "Покращити зброю"
+  },
+  "EventOrb_Menu01": {
+    "en": "Sort Items",
+    "ua": "Упорядкувати"
+  },
+  "EventOrb_Menu02": {
+    "en": "Create Gems",
+    "ua": "Зробити самоцвіти"
+  },
+  "EventOrb_Menu03": {
+    "en": "Leave",
+    "ua": "Піти"
+  },
+  "EventOrb_Menu04": {
+    "en": "Use unwanted weapons and gems to\r\nmake other weapons more powerful.",
+    "ua": "Зробити іншу зброю потужнішою\nза рахунок зайвої зброї й самоцвітів."
+  },
+  "EventOrb_Menu05": {
+    "en": "Access your interdimensional box.",
+    "ua": "Відкрити міжвимірну скриню."
+  },
+  "EventOrb_Menu06": {
+    "en": "Transform unwanted weapons\r\nand items into gems.",
+    "ua": "Перетворити зайву зброю\nй предмети на самоцвіти."
+  },
+  "EventOrb_Menu07": {
+    "en": "Stop using the mystic orb.",
+    "ua": "Відійти від містичної сфери."
+  },
+  "EventOrb_Menu08": {
+    "en": "Are you sure you've finished?",
+    "ua": "Справді завершити?"
+  },
+  "EventOrb_Menu09": {
+    "en": "Yes",
+    "ua": "Так"
+  },
+  "EventOrb_Menu10": {
+    "en": "No",
+    "ua": "Ні"
+  },
+  "EventOrb_Weapon00": {
+    "en": "Pick a weapon to upgrade.",
+    "ua": "Виберіть зброю для покращення."
+  },
+  "EventOrb_Weapon01": {
+    "en": "This weapon is already at max level.",
+    "ua": "Ця зброя вже має макс. рівень."
+  },
+  "EventOrb_Weapon02": {
+    "en": "Pick weapons to use for materials.",
+    "ua": "Виберіть зброю на матеріали."
+  },
+  "EventOrb_Weapon03": {
+    "en": "You can only use up to 10 weapons\r\nfor materials during a single upgrade.",
+    "ua": "За одне покращення на матеріали\nможна використати до 10 одиниць зброї."
+  },
+  "EventOrb_Weapon04": {
+    "en": "Unfortunately you don't have\r\nenough gems to do that.",
+    "ua": "На жаль, на це\nбракує самоцвітів."
+  },
+  "EventOrb_Weapon05": {
+    "en": "You can't use a weapon for\r\nmaterials while it's equipped.",
+    "ua": "Споряджену зброю не можна\nвикористати на матеріали."
+  },
+  "EventOrb_Weapon06": {
+    "en": "Use these [0] weapons to level\r\nup your [System:Color name=\"red\" ][1][/System:Color]?",
+    "ua": "Використати цю зброю ([0] од.),\nщоб покращити [System:Color name=\"red\" ][1][/System:Color]?"
+  },
+  "EventOrb_Weapon06_1": {
+    "en": "Use this weapon to upgrade\r\nyour [System:Color name=\"red\" ][1][/System:Color]?",
+    "ua": "Використати цю зброю,\nщоб покращити [System:Color name=\"red\" ][1][/System:Color]?"
+  },
+  "EventOrb_Weapon07": {
+    "en": "Yes",
+    "ua": "Так"
+  },
+  "EventOrb_Weapon08": {
+    "en": "No",
+    "ua": "Ні"
+  },
+  "EventOrb_Weapon09": {
+    "en": "You're using another\r\n[System:Color name=\"red\" ][0][/System:Color]\r\nfor materials.",
+    "ua": "Ви використовуєте ще одну\nзброю [System:Color name=\"red\" ][0][/System:Color]\nяк матеріал."
+  },
+  "EventOrb_Weapon10": {
+    "en": "Good thinking!\r\nThat's made your\r\n[System:Color name=\"red\" ][0][/System:Color]'s\r\nmax level go up.",
+    "ua": "Гарна думка!\nМакс. рівень зброї\n[System:Color name=\"red\" ][0][/System:Color]\nзріс."
+  },
+  "EventOrb_Weapon11": {
+    "en": "This weapon will already reach its max\r\nlevel. No extra materials are needed.",
+    "ua": "Ця зброя й так досягне макс. рівня.\nДодаткові матеріали не потрібні."
+  },
+  "EventOrb_Weapon12": {
+    "en": " Confirm    Equip    Back",
+    "ua": " Вибрати    Узяти    Назад"
+  },
+  "EventOrb_Weapon13": {
+    "en": " Confirm    Mark    Back",
+    "ua": " Вибрати    Позначити    Назад"
+  },
+  "EventOrb_Weapon14": {
+    "en": "Please select the weapons\r\nyou want to use as [System:Color name=\"red\" ]materials\r\n[/System:Color]to upgrade your [System:Color name=\"red\" ][0][/System:Color].",
+    "ua": "Виберіть зброю, яку хочете\nвикористати як [System:Color name=\"red\" ]матеріали[/System:Color],\nщоб покращити [System:Color name=\"red\" ][0][/System:Color]."
+  },
+  "EventOrb_Weapon16": {
+    "en": " Equip",
+    "ua": " Узяти"
+  },
+  "EventOrb_Weapon20": {
+    "en": "You don't have any weapons\r\nto use for materials. ",
+    "ua": "Немає зброї, яку можна\nвикористати на матеріали."
+  },
+  "EventOrb_Weapon21": {
+    "en": "Upgrade complete!\r\nSee the lower screen for details.",
+    "ua": "Покращення завершено!\nПодробиці на нижньому екрані."
+  },
+  "EventOrb_Order00": {
+    "en": "You can't carry more than\r\neight items at a time.",
+    "ua": "Не можна нести більше\nвосьми предметів одночасно."
+  },
+  "EventOrb_Order01": {
+    "en": "You can't store more than 99 items\r\nin your interdimensional box.",
+    "ua": "У міжвимірній скрині можна\nзберігати не більше 99 предметів."
+  },
+  "EventOrb_Order02": {
+    "en": "You can't store a weapon\r\nwhile it's equipped.",
+    "ua": "Споряджену зброю\nне можна покласти на зберігання."
+  },
+  "EventOrb_Order03": {
+    "en": "You can't turn a weapon into\r\ngems while it's equipped.",
+    "ua": "Споряджену зброю не можна\nперетворити на самоцвіти."
+  },
+  "EventOrb_Order04": {
+    "en": " Confirm    Mark    Equip    Switch    Back",
+    "ua": " Вибрати    Позначити    Узяти    Перемкнути    Назад"
+  },
+  "EventOrb_Sell00": {
+    "en": "Items that are transformed into gems\r\nare lost forever. Continue anyway?",
+    "ua": "Предмети, перетворені на самоцвіти,\nзникнуть назавжди. Продовжити?"
+  },
+  "EventOrb_Sell01": {
+    "en": "Yes",
+    "ua": "Так"
+  },
+  "EventOrb_Sell02": {
+    "en": "No",
+    "ua": "Ні"
+  },
+  "EventOrb_Sell03": {
+    "en": "Pick items to transform into gems.",
+    "ua": "Виберіть предмети для самоцвітів."
+  },
+  "EventOrb_Sell04": {
+    "en": " Confirm    Mark    Equip    Switch    Back",
+    "ua": " Вибрати    Позначити    Узяти    Перемкнути    Назад"
+  },
+  "Pause_01": {
+    "en": "Continue",
+    "ua": "Далі"
+  },
+  "Pause_02": {
+    "en": "Quit",
+    "ua": "Вийти"
+  },
+  "Pause_03": {
+    "en": "Are you sure you want to quit?\r\nYou will leave behind anyone currently\r\nwaiting for you in the mansion.",
+    "ua": "Справді вийти? Ті, хто зараз\nчекає на вас у маєтку,\nлишаться самі."
+  },
+  "Pause_04": {
+    "en": "Yes",
+    "ua": "Так"
+  },
+  "Pause_05": {
+    "en": "No",
+    "ua": "Ні"
+  },
+  "Puzzle_01": {
+    "en": " Move    Rotate    Set    Back",
+    "ua": " Рух    Поворот    Покласти    Назад"
+  },
+  "Puzzle_02": {
+    "en": " Select    Confirm",
+    "ua": " Вибір    Підтвердити"
+  },
+  "Puzzle_03": {
+    "en": " Reset",
+    "ua": " Скинути"
+  },
+  "Puzzle_04": {
+    "en": " Give Up",
+    "ua": " Здатися"
+  },
+  "Puzzle_12": {
+    "en": "If you give up, you won't get the\r\nreward. Are you sure about this?",
+    "ua": "Якщо здатися, нагороди не буде.\nВи впевнені?"
+  },
+  "Puzzle_13": {
+    "en": "Yes",
+    "ua": "Так"
+  },
+  "Puzzle_14": {
+    "en": "No",
+    "ua": "Ні"
+  },
+  "Puzzle_15": {
+    "en": "Reset all pieces and start again?\r\nThe timer won't reset.",
+    "ua": "Скинути всі блоки й почати знову?\nТаймер не скинеться."
+  },
+  "Puzzle_16": {
+    "en": "Yes",
+    "ua": "Так"
+  },
+  "Puzzle_17": {
+    "en": "No",
+    "ua": "Ні"
+  },
+  "Puzzle_19": {
+    "en": "Success!",
+    "ua": "Успіх!"
+  },
+  "Puzzle_20": {
+    "en": "Your Time",
+    "ua": "Ваш час"
+  },
+  "Puzzle_21": {
+    "en": "Target time beaten!",
+    "ua": "Цільовий час побито!"
+  },
+  "Puzzle_22": {
+    "en": "Rival time beaten!",
+    "ua": "Час суперника побито!"
+  },
+  "GameOver_00": {
+    "en": "Game Over",
+    "ua": "Кінець гри"
+  },
+  "GameOver_00E": {
+    "en": "Game Over",
+    "ua": "Кінець гри"
+  },
+  "Battle_01": {
+    "en": "Escaped!",
+    "ua": "Утекли!"
+  },
+  "Battle_02": {
+    "en": "Attack power up!",
+    "ua": "Атака зросла!"
+  },
+  "Battle_03": {
+    "en": "Defence power up!",
+    "ua": "Захист зріс!"
+  },
+  "Battle_04": {
+    "en": "Attack power down!",
+    "ua": "Атака знизилася!"
+  },
+  "Battle_05": {
+    "en": "Defence power down!",
+    "ua": "Захист знизився!"
+  },
+  "Battle_07": {
+    "en": "Charge shot speed down!",
+    "ua": "Заряд постр. сповільнився!"
+  },
+  "Battle_08": {
+    "en": "Battery recharge speed down!",
+    "ua": "Підзарядка сповільнилася!"
+  },
+  "Battle_09": {
+    "en": "Immobilised!",
+    "ua": "Знерухомлено!"
+  },
+  "Battle_10": {
+    "en": "Cured!",
+    "ua": "Вилікувано!"
+  },
+  "Battle_11": {
+    "en": "Power-up nullified!",
+    "ua": "Підсилення скасовано!"
+  },
+  "OP_1_1": {
+    "en": "Boss! We've got a case! At last, a mystery\r\nworthy of our combined detective skills...",
+    "ua": "Шефе! У нас справа! Нарешті загадка,\nгідна наших детективних талантів…"
+  },
+  "OP_1_2": {
+    "en": "It's about that old mansion in the woods.\r\nYou must have heard all the crazy rumours!",
+    "ua": "Це про старий маєток у лісі. Ти точно\nзнаєш усі ті шалені чутки!"
+  },
+  "OP_1_3": {
+    "en": "Anyone who gets near it goes missing.\r\nPeople are even saying it's haunted.",
+    "ua": "Хто до нього наближається — зникає.\nКажуть навіть, що там водяться привиди."
+  },
+  "OP_1_4": {
+    "en": "Anyway, while you were out, someone\r\nrang and asked us to investigate!",
+    "ua": "Хай там як, поки тебе не було, хтось\nподзвонив і попросив нас розслідувати!"
+  },
+  "OP_1_5": {
+    "en": "Naturally, your brilliant young assistant\r\nleapt into action and raced to the scene.",
+    "ua": "Звісно ж, твоя блискуча юна помічниця\nкинулася до дії й помчала на місце."
+  },
+  "OP_1_6": {
+    "en": "Never fear! I bet I'll have the mystery\r\nsolved before you even read this!",
+    "ua": "Не хвилюйся! Закладаюся, я розгадаю\nзагадку, ще поки ти це читатимеш!"
+  },
+  "OP_1_7": {
+    "en": "If I'm not back at the office by tonight, the\r\nghosts have got me. ...Help! SAVE ME!!!",
+    "ua": "Якщо до вечора не повернуся в офіс —\nмене схопили привиди. …РЯТУЙТЕ!!!"
+  },
+  "OP_1_8": {
+    "en": "Haha! Just kidding. I mean, ghosts?! Talk\r\nabout illogical. I'll make you proud, Boss!",
+    "ua": "Ха-ха! Жартую. Привиди?! Та де логіка?\nЯ тебе не підведу, шефе!"
+  },
+  "OP_1_9": {
+    "en": "From: Ella Mentree. Brilliant Assistant,\r\n[0]'s Detective Agency",
+    "ua": "Елла Ментрі, блискуча помічниця.\nДетективне агентство «[0]»"
+  },
+  "OP_2_1": {
+    "en": "Goodness me! Boss!\r\nAre you OK?!",
+    "ua": "Божечки! Шефе!\nЯк ти?!"
+  },
+  "OP_2_2": {
+    "en": "Glad you're here, anyway.\r\nWhat took you so long?!",
+    "ua": "Хай там як, добре, що ти тут.\nЧого так довго?!"
+  },
+  "OP_2_3": {
+    "en": "Huh? Oh, you're wondering about\r\nthose weird things you saw just now?",
+    "ua": "Що? А, тебе цікавлять ті\nдивні штуки, що щойно з'явилися?"
+  },
+  "OP_2_4": {
+    "en": "Yeah, about that...erm... Well, it turns out\r\nthis place actually IS haunted. Big time.",
+    "ua": "Ну, щодо цього… е-е… Виявилося, що тут\nСПРАВДІ водяться привиди. Ще й як."
+  },
+  "OP_2_5": {
+    "en": "I guess you could say we're...well...kind\r\nof trapped here. The door's locked tight.",
+    "ua": "Можна сказати, що ми… ну…\nтрохи в пастці. Двері замкнено намертво."
+  },
+  "OP_3_1": {
+    "en": "But don't worry! With my keen detective\r\nskills, I've deduced an escape plan.",
+    "ua": "Але не хвилюйся! Своїм детективним\nчуттям я вигадала план утечі."
+  },
+  "OP_3_2": {
+    "en": "We need to defeat the horrifying entity\r\nlurking on the top floor. Simple, right?",
+    "ua": "Треба здолати жахливу сутність\nна верхньому поверсі. Просто, так?"
+  },
+  "OP_4_1": {
+    "en": "Only problem is, the curse on this place\r\nmade most of the rooms disappear.",
+    "ua": "Проблема лише в тому, що через прокляття\nбільшість кімнат тут зникла."
+  },
+  "OP_4_2": {
+    "en": "Even walking to the next room is\r\na faff, let alone finding the stairs!",
+    "ua": "Навіть до сусідньої кімнати дійти —\nморока, а що вже казати про сходи!"
+  },
+  "OP_4_3": {
+    "en": "But luckily for us, I'm on the case, and\r\nI've made an important discovery.",
+    "ua": "Але, на щастя, я взялася до справи\nй зробила важливе відкриття."
+  },
+  "OP_4_4": {
+    "en": "Do you want to hear about it?\r\nYep, of course you do! Here...",
+    "ua": "Хочеш про нього почути?\nТак, звісно, хочеш! Ось…"
+  },
+  "OP_5_1": {
+    "en": "You got a piece of a map!",
+    "ua": "Отримано частинку мапи!"
+  },
+  "OP_6_1": {
+    "en": "That's a [System:Color name=\"red\" ]piece [/System:Color]of this mansion's map.",
+    "ua": "Це [System:Color name=\"red\" ]частинка[/System:Color] мапи маєтку."
+  },
+  "OP_6_2": {
+    "en": "When you connect it to other pieces,\r\ncorridors and rooms spring up!",
+    "ua": "Якщо з'єднати її з іншими частинками,\nз'являться коридори й кімнати!"
+  },
+  "OP_6_3": {
+    "en": "Now, there are LOTS of other people\r\ntrapped in here, just like we are.",
+    "ua": "А ще тут у пастці БАГАТО\nінших людей, як і ми."
+  },
+  "OP_6_4": {
+    "en": "We've got to find them, collect any pieces\r\nthey have, and get up to the top floor!",
+    "ua": "Треба їх знайти, зібрати їхні частинки\nй піднятися на верхній поверх!"
+  },
+  "OP_6_5": {
+    "en": "Oh! Before I forget, I've been\r\nsaving this for you...",
+    "ua": "Ой! Поки не забула — я\nберегла це для тебе…"
+  },
+  "OP_7_1": {
+    "en": "You got [2].",
+    "ua": "Отримано: [2]."
+  },
+  "OP_8_1": {
+    "en": "Use that to battle any malevolent entities\r\nyou bump into. It should do the trick.",
+    "ua": "Бийся цим із зловісними сутностями,\nякі трапляться. Має спрацювати."
+  },
+  "OP_8_2": {
+    "en": "I think this place was an inventor's once.\r\nI've been finding all sorts of weird stuff.",
+    "ua": "Здається, тут колись жив винахідник.\nЯ знаходжу купу дивних речей."
+  },
+  "OP_8_3": {
+    "en": "I wonder what really happened here...",
+    "ua": "Цікаво, що тут насправді сталося…"
+  },
+  "OP_8_4": {
+    "en": "Let's investigate and find out!",
+    "ua": "Розслідуймо й дізнаймося!"
+  },
+  "OP_8_5": {
+    "en": "Before we get started, I should probably\r\ntell you what I've learned so far...",
+    "ua": "Перш ніж почнемо, мабуть, варто\nрозповісти, що я вже з'ясувала…"
+  },
+  "OP_8_6": {
+    "en": "...Huh? You already know all about\r\nhow this place works?",
+    "ua": "…Що? Ти вже знаєш, як тут\nусе влаштовано?"
+  },
+  "OP_9_1": {
+    "en": "Trust you to get the hang of all this\r\nso quickly, Boss. You're such a pro!",
+    "ua": "Тобі все так швидко далося,\nшефе. Справжній професіонал!"
+  },
+  "OP_9_2": {
+    "en": "Don't worry, I'm not slacking off either.\r\nI'm gonna make you proud, Boss!",
+    "ua": "Не хвилюйся, я теж не лінуюся.\nЯ тебе не підведу, шефе!"
+  },
+  "OP_9_3": {
+    "en": "This mystery'll be a piece of cake for a\r\nbrilliant detective like me. You'll see.",
+    "ua": "Для такої блискучої детективки, як я,\nця загадка — дрібниця. От побачиш."
+  },
+  "OP_9_4": {
+    "en": "Now, let's split up and start investigating.\r\nLast one to figure it out's a rotten egg!",
+    "ua": "Розділімося й почнімо розслідування.\nХто останній — той тухле яйце!"
+  },
+  "LastBoss_1_1": {
+    "en": "Boss! What took you so long?",
+    "ua": "Шефе! Чого так довго?"
+  },
+  "LastBoss_1_2": {
+    "en": "It looks like this is the extra-mean\r\nentity we've been searching for.",
+    "ua": "Схоже, це та сама надлиха\nсутність, яку ми шукали."
+  },
+  "LastBoss_2_2": {
+    "en": "If we defeat him, I think we'll finally\r\nbe able to get out of here!",
+    "ua": "Якщо його здолаємо, гадаю,\nнарешті зможемо звідси вибратися!"
+  },
+  "LastBoss_2_3": {
+    "en": "Ready, Boss?\r\nLet's give it a go!",
+    "ua": "До бою, шефе?\nУперед!"
+  },
+  "LastBoss_3_1": {
+    "en": "Oh, Boss!\r\nThank goodness you're OK.",
+    "ua": "О, шефе! Слава богу,\nз тобою все гаразд."
+  },
+  "LastBoss_3_2": {
+    "en": "Look! Demon King Arzodius.\r\nThe master of all the horrors here!",
+    "ua": "Дивись! Король демонів Арзодій.\nГосподар усіх тутешніх жахів!"
+  },
+  "LastBoss_3_3": {
+    "en": "I read about him in this journal I found.",
+    "ua": "Я читала про нього в щоденнику."
+  },
+  "LastBoss_4_1": {
+    "en": "It belonged to the paranormal researcher\r\nwho used to live here. This was his lab.",
+    "ua": "Він належав дослідникові привидів,\nщо тут жив. Тут була його лабораторія."
+  },
+  "LastBoss_4_2": {
+    "en": "He was very happy here...until his young\r\ndaughter got ill and passed away.",
+    "ua": "Він був тут щасливий… доки його\nдонечка не захворіла й не померла."
+  },
+  "LastBoss_5_1": {
+    "en": "He made a deal with some ghosts\r\nin order to save her.",
+    "ua": "Щоб урятувати її, він уклав\nугоду з привидами."
+  },
+  "LastBoss_5_2": {
+    "en": "The ghosts restored his daughter to him,\r\nin exchange for passage into our world.",
+    "ua": "Привиди повернули йому доньку в обмін\nна прохід у наш світ."
+  },
+  "LastBoss_5_3": {
+    "en": "...But then Arzodius used that gateway\r\nto possess the poor scientist!",
+    "ua": "…Але потім Арзодій через цей прохід\nвселився в бідолашного вченого!"
+  },
+  "LastBoss_6_1": {
+    "en": "But what if some part of the scientist\r\nis still in there. And what if...",
+    "ua": "А що, як частина вченого досі там?\nІ що, як…"
+  },
+  "LastBoss_6_2": {
+    "en": "What if he keeps kidnapping people in the\r\nhope that someone can stop Arzodius?!",
+    "ua": "Що, як він викрадає людей у надії,\nщо хтось зупинить Арзодія?!"
+  },
+  "LastBoss_6_3": {
+    "en": "Oh, Boss, that poor old man...\r\nWe've got to find a way to help him!",
+    "ua": "Ох, шефе, бідолашний старий…\nМи мусимо якось йому допомогти!"
+  },
+  "ED_1_1": {
+    "en": "Ow ow ow ow...\r\nOh, Boss!",
+    "ua": "Ой-ой-ой-ой…\nО, шефе!"
+  },
+  "ED_1_2": {
+    "en": "You beat that frightful thing? Wow! Then\r\nthe curse on this place should be lifted!",
+    "ua": "Те страхіття переможене? Ого! Тоді\nпрокляття з цього місця мало зникнути!"
+  },
+  "ED_1_3": {
+    "en": "Let's get out of here. I don't want to spend\r\none more minute in this creepy old place!",
+    "ua": "Ходімо звідси. Не хочу провести тут\nані хвилини більше!"
+  },
+  "ED_2_1": {
+    "en": "Phew! I think we're safe now.",
+    "ua": "Фух! Здається, ми в безпеці."
+  },
+  "ED_2_2": {
+    "en": "That giant horror we saw is still a mystery,\r\nof course. That's a bit of a pain...",
+    "ua": "Те велетенське страхіття досі загадка,\nзвісно. Трохи прикро…"
+  },
+  "ED_2_3": {
+    "en": "I suppose that's a case for another day.\r\nRight now, I'm just glad we're free!",
+    "ua": "Мабуть, це справа на інший раз.\nЗараз я просто рада, що ми вільні!"
+  },
+  "ED_3_1": {
+    "en": "Ow ow ow ow...\r\nOh, Boss!",
+    "ua": "Ой-ой-ой-ой…\nО, шефе!"
+  },
+  "ED_3_2": {
+    "en": "You defeated Demon King Arzodius?\r\nWow! I knew I could count on you.",
+    "ua": "Арзодія здолано?\nОго! Я знала, що ти не підведеш."
+  },
+  "ED_3_3": {
+    "en": "The curse on the mansion should be\r\nlifted now. Everyone can finally escape!",
+    "ua": "Прокляття з маєтку мало зникнути.\nНарешті всі зможуть утекти!"
+  },
+  "ED_3_4": {
+    "en": "Speaking of escape, we should\r\nget a move on too!",
+    "ua": "До речі про втечу —\nнам теж час рушати!"
+  },
+  "ED_4_1": {
+    "en": "Phew! I think we're safe...",
+    "ua": "Фух! Здається, ми в безпеці…"
+  },
+  "ED_4_2": {
+    "en": "You were really amazing back there, Boss.\r\nI wish I could have helped a bit more...",
+    "ua": "Це було неймовірно, шефе.\nШкода, що я не змогла допомогти більше…"
+  },
+  "ED_4_3": {
+    "en": "Of course, we can't forget the [System:Color name=\"red\" ][1] [/System:Color]\r\npeople who helped us along the way.",
+    "ua": "І звісно, не забудьмо [System:Color name=\"red\" ][1][/System:Color]\nлюдей, які нам допомагали."
+  },
+  "ED_4_4": {
+    "en": "...Huh? Well, of COURSE I kept track! A\r\ngood detective's got to take notes, right?",
+    "ua": "…Що? Ну ЗВІСНО, я все рахувала!\nДобрий детектив мусить вести записи!"
+  },
+  "ED_4_5": {
+    "en": "Now, let's see... Oh, that's right! You\r\ndefeated [System:Color name=\"red\" ][3] [/System:Color]enemies.",
+    "ua": "Отже, подивимось… О, точно!\nПереможених ворогів: [System:Color name=\"red\" ][3][/System:Color]."
+  },
+  "ED_4_6": {
+    "en": "And we can't forget chests! You opened\r\n[System:Color name=\"red\" ][4][/System:Color]. As for teams, you formed [System:Color name=\"red\" ][5][/System:Color].",
+    "ua": "І не забудьмо скрині! Відкрито:\n[System:Color name=\"red\" ][4][/System:Color]. Команд створено: [System:Color name=\"red\" ][5][/System:Color]."
+  },
+  "ED_4_6_10": {
+    "en": "And we can't forget chests! You opened\r\n[System:Color name=\"red\" ][4][/System:Color]. As for teams, you formed [System:Color name=\"red\" ][5][/System:Color].",
+    "ua": "І не забудьмо скрині! Відкрито:\n[System:Color name=\"red\" ][4][/System:Color]. Команд створено: [System:Color name=\"red\" ][5][/System:Color]."
+  },
+  "ED_4_6_11": {
+    "en": "And we can't forget chests! You opened\r\n[System:Color name=\"red\" ][4][/System:Color]. As for teams, you formed [System:Color name=\"red\" ][5][/System:Color].",
+    "ua": "І не забудьмо скрині! Відкрито:\n[System:Color name=\"red\" ][4][/System:Color]. Команд створено: [System:Color name=\"red\" ][5][/System:Color]."
+  },
+  "ED_4_6_1x": {
+    "en": "And we can't forget chests! You opened\r\n[System:Color name=\"red\" ][4][/System:Color]. As for teams, you formed [System:Color name=\"red\" ][5][/System:Color].",
+    "ua": "І не забудьмо скрині! Відкрито:\n[System:Color name=\"red\" ][4][/System:Color]. Команд створено: [System:Color name=\"red\" ][5][/System:Color]."
+  },
+  "ED_4_6_x0": {
+    "en": "And we can't forget chests! You opened\r\n[System:Color name=\"red\" ][4][/System:Color]. As for teams, you formed [System:Color name=\"red\" ][5][/System:Color].",
+    "ua": "І не забудьмо скрині! Відкрито:\n[System:Color name=\"red\" ][4][/System:Color]. Команд створено: [System:Color name=\"red\" ][5][/System:Color]."
+  },
+  "ED_4_6_x1": {
+    "en": "And we can't forget chests! You opened\r\n[System:Color name=\"red\" ][4][/System:Color]. As for teams, you formed [System:Color name=\"red\" ][5][/System:Color].",
+    "ua": "І не забудьмо скрині! Відкрито:\n[System:Color name=\"red\" ][4][/System:Color]. Команд створено: [System:Color name=\"red\" ][5][/System:Color]."
+  },
+  "ED_4_7": {
+    "en": "Lastly, escapes and losses... Your totals\r\nwere [System:Color name=\"red\" ][6] [/System:Color]and [System:Color name=\"red\" ][7][/System:Color] for those.",
+    "ua": "Нарешті, втечі й поразки…\nЇх було [System:Color name=\"red\" ][6][/System:Color] і [System:Color name=\"red\" ][7][/System:Color] відповідно."
+  },
+  "ED_4_7_00": {
+    "en": "Lastly, escapes and losses... Your totals\r\nwere [System:Color name=\"red\" ][6] [/System:Color]and [System:Color name=\"red\" ][7][/System:Color] for those.",
+    "ua": "Нарешті, втечі й поразки…\nЇх було [System:Color name=\"red\" ][6][/System:Color] і [System:Color name=\"red\" ][7][/System:Color] відповідно."
+  },
+  "ED_4_7_01": {
+    "en": "Lastly, escapes and losses... Your totals\r\nwere [System:Color name=\"red\" ][6] [/System:Color]and [System:Color name=\"red\" ][7][/System:Color] for those.",
+    "ua": "Нарешті, втечі й поразки…\nЇх було [System:Color name=\"red\" ][6][/System:Color] і [System:Color name=\"red\" ][7][/System:Color] відповідно."
+  },
+  "ED_4_7_0x": {
+    "en": "Lastly, escapes and losses... Your totals\r\nwere [System:Color name=\"red\" ][6] [/System:Color]and [System:Color name=\"red\" ][7][/System:Color] for those.",
+    "ua": "Нарешті, втечі й поразки…\nЇх було [System:Color name=\"red\" ][6][/System:Color] і [System:Color name=\"red\" ][7][/System:Color] відповідно."
+  },
+  "ED_4_7_10": {
+    "en": "Lastly, escapes and losses... Your totals\r\nwere [System:Color name=\"red\" ][6] [/System:Color]and [System:Color name=\"red\" ][7][/System:Color] for those.",
+    "ua": "Нарешті, втечі й поразки…\nЇх було [System:Color name=\"red\" ][6][/System:Color] і [System:Color name=\"red\" ][7][/System:Color] відповідно."
+  },
+  "ED_4_7_11": {
+    "en": "Lastly, escapes and losses... Your totals\r\nwere [System:Color name=\"red\" ][6] [/System:Color]and [System:Color name=\"red\" ][7][/System:Color] for those.",
+    "ua": "Нарешті, втечі й поразки…\nЇх було [System:Color name=\"red\" ][6][/System:Color] і [System:Color name=\"red\" ][7][/System:Color] відповідно."
+  },
+  "ED_4_7_1x": {
+    "en": "Lastly, escapes and losses... Your totals\r\nwere [System:Color name=\"red\" ][6] [/System:Color]and [System:Color name=\"red\" ][7][/System:Color] for those.",
+    "ua": "Нарешті, втечі й поразки…\nЇх було [System:Color name=\"red\" ][6][/System:Color] і [System:Color name=\"red\" ][7][/System:Color] відповідно."
+  },
+  "ED_4_7_x0": {
+    "en": "Lastly, escapes and losses... Your totals\r\nwere [System:Color name=\"red\" ][6] [/System:Color]and [System:Color name=\"red\" ][7][/System:Color] for those.",
+    "ua": "Нарешті, втечі й поразки…\nЇх було [System:Color name=\"red\" ][6][/System:Color] і [System:Color name=\"red\" ][7][/System:Color] відповідно."
+  },
+  "ED_4_7_x1": {
+    "en": "Lastly, escapes and losses... Your totals\r\nwere [System:Color name=\"red\" ][6] [/System:Color]and [System:Color name=\"red\" ][7][/System:Color] for those.",
+    "ua": "Нарешті, втечі й поразки…\nЇх було [System:Color name=\"red\" ][6][/System:Color] і [System:Color name=\"red\" ][7][/System:Color] відповідно."
+  },
+  "ED_4_8": {
+    "en": "...What? There's such a thing as \"too\r\nthorough\"...? Nahhh. No way!",
+    "ua": "…Що? Буває «аж надто ретельно»…?\nТа ні-і-і. Не може бути!"
+  },
+  "ED_5_1": {
+    "en": "Hmm? Wait, Boss! This is the journal I\r\nfound in the lab.",
+    "ua": "Гм? Стривай, шефе! Це щоденник,\nякий я знайшла в лабораторії."
+  },
+  "ED_5_2": {
+    "en": "Read the last page?\r\nIf you say so, Boss.",
+    "ua": "Прочитати останню сторінку?\nЯк скажеш, шефе."
+  },
+  "ED_5_3": {
+    "en": "\"Ella, please forgive me.\r\nI hope you will have a happy life.\"",
+    "ua": "«Елло, пробач мені.\nСподіваюся, ти будеш щаслива»."
+  },
+  "ED_5_5": {
+    "en": "You know, Boss, there's one thing I\r\nhaven't figured out yet.",
+    "ua": "Знаєш, шефе, одного я досі\nне з'ясувала."
+  },
+  "ED_5_6": {
+    "en": "The phone call I got about this place...\r\nWho do you think it was from?",
+    "ua": "Той дзвінок про це місце…\nЯк думаєш, хто дзвонив?"
+  },
+  "ED_5_7": {
+    "en": "The voice...sounded sorta familiar...",
+    "ua": "Голос… був якийсь знайомий…"
+  },
+  "ED_5_8": {
+    "en": "I wonder if...",
+    "ua": "Цікаво, чи не…"
+  },
+  "Title_06": {
+    "en": "Welcome to StreetPass Mansion!",
+    "ua": "Це Таємничий маєток StreetPass!"
+  },
+  "Title_07": {
+    "en": "In this game, you set out on an\r\ninvestigation and explore a spooky \r\nhaunted mansion with the aid of\r\npeople you meet via StreetPass.",
+    "ua": "У цій грі ви ведете розслідування\nй досліджуєте моторошний маєток\nіз привидами разом із людьми,\nзустрінутими через StreetPass."
+  },
+  "Title_08": {
+    "en": "Are you ready to begin\r\nyour investigation?",
+    "ua": "Готові почати\nрозслідування?"
+  },
+  "Title_09": {
+    "en": "Yes!",
+    "ua": "Так!"
+  },
+  "Title_10": {
+    "en": "Not right now...",
+    "ua": "Не зараз…"
+  },
+  "Title_11": {
+    "en": "How brave! Well then,\r\nlet the terror begin...",
+    "ua": "Яка сміливість! Що ж,\nхай почнеться жах…"
+  },
+  "Title_12": {
+    "en": "Please come back if\r\nyou change your mind.\r\nThe mansion's residents\r\nare dying to see you...",
+    "ua": "Повертайтеся, якщо\nпередумаєте.\nМешканці маєтку\nдо смерті хочуть вас бачити…"
+  },
+  "Title_13": {
+    "en": "Explore",
+    "ua": "Дослідити"
+  },
+  "Title_14": {
+    "en": " Hire Investigators",
+    "ua": " Найняти слідчих"
+  },
+  "Title_15": {
+    "en": "Back",
+    "ua": "Назад"
+  },
+  "Title_16": {
+    "en": "Restart",
+    "ua": "Спочатку"
+  },
+  "Title_17": {
+    "en": "Watch Ending",
+    "ua": "Глянути фінал"
+  },
+  "Title_18": {
+    "en": "Consult Your Report",
+    "ua": "Переглянути звіт"
+  },
+  "Title_19": {
+    "en": "Keep Exploring",
+    "ua": "Досліджувати далі"
+  },
+  "Title_20": {
+    "en": "Watch True Ending",
+    "ua": "Справжній фінал"
+  },
+  "Title_21": {
+    "en": "Terrible news! It looks like this\r\nmansion actually has 50 floors.",
+    "ua": "Жахлива новина! Схоже, у маєтку\nнасправді 50 поверхів."
+  },
+  "Title_22": {
+    "en": "If you want to solve the mystery,\r\nyou've got to keep investigating.",
+    "ua": "Щоб розгадати загадку,\nтреба розслідувати далі."
+  },
+  "Title_23": {
+    "en": "It seems that the night\r\nof terror continues...",
+    "ua": "Схоже, ніч жахів\nтриває…"
+  },
+  "Title_24": {
+    "en": "You can restart your investigation from\r\nthe first floor and explore every corner\r\nof the mansion again.",
+    "ua": "Можна почати з першого поверху\nй знову дослідити кожен\nкуточок маєтку."
+  },
+  "Title_25": {
+    "en": "You'll get to keep your max HP and\r\nthe last weapon you had equipped.",
+    "ua": "Макс. ОЗ і остання споряджена\nзброя залишаться."
+  },
+  "Title_26": {
+    "en": "Are you sure you want to\r\nrestart the investigation?",
+    "ua": "Справді почати\nрозслідування спочатку?"
+  },
+  "Title_27": {
+    "en": "Yes",
+    "ua": "Так"
+  },
+  "Title_28": {
+    "en": "OK then! Well, I'd better go on\r\nahead and get sleuthing...",
+    "ua": "Гаразд! Що ж, піду\nвперед, рознюхаю…"
+  },
+  "Title_29": {
+    "en": "Get pieces of the map and use\r\nthem to explore the mansion.",
+    "ua": "Збирайте частинки мапи й\nдосліджуйте ними маєток."
+  },
+  "Title_30": {
+    "en": "Use  Play Coins to hire\r\nfellow investigators.",
+    "ua": "Наймайте інших слідчих\nза монетки ."
+  },
+  "Title_31": {
+    "en": "Quit the game and\r\nreturn to the plaza.",
+    "ua": "Вийти з гри й\nповернутися на площу."
+  },
+  "Title_32": {
+    "en": "Restart the investigation, armed with\r\nyour last max HP and weapon.",
+    "ua": "Почати розслідування спочатку з\nостанніми макс. ОЗ і зброєю."
+  },
+  "Title_33": {
+    "en": "Rewatch the ending.",
+    "ua": "Переглянути фінал ще раз."
+  },
+  "Title_34": {
+    "en": "Review the details of\r\nyour investigation.",
+    "ua": "Переглянути подробиці\nрозслідування."
+  },
+  "Title_35": {
+    "en": "Climb higher and dig deeper into\r\nthe mystery of the mansion's curse.",
+    "ua": "Піднімайтеся вище й розкрийте\nтаємницю прокляття маєтку."
+  },
+  "Title_36": {
+    "en": "Plaza Ticket Info",
+    "ua": "Про квитки Площі"
+  },
+  "Title_37": {
+    "en": "If you quit, the investigator\r\nyou hired using  Play Coins\r\nwill disperse.",
+    "ua": "Якщо вийти, слідчий, найнятий\nза монетки ,\nпіде."
+  },
+  "Title_37_2": {
+    "en": "If you quit, the investigators\r\nyou hired using  Play Coins\r\nwill disperse.",
+    "ua": "Якщо вийти, слідчі, найняті\nза монетки ,\nпідуть."
+  },
+  "Title_38": {
+    "en": "Are you sure you\r\nwant to quit?",
+    "ua": "Справді\nвийти?"
+  },
+  "Title_39": {
+    "en": "Yes",
+    "ua": "Так"
+  },
+  "Title_40": {
+    "en": "No",
+    "ua": "Ні"
+  },
+  "Title_41": {
+    "en": "View Tutorials",
+    "ua": "Навчальні поради"
+  },
+  "TitleHat_00": {
+    "en": "You've accomplished the goal:\r\n[System:Color name=\"mgSht_red\" ][0][/System:Color]",
+    "ua": "Мету досягнуто:\n[System:Color name=\"mgSht_red\" ][0][/System:Color]"
+  },
+  "TitleHat_01": {
+    "en": "That's earned you a [System:Color name=\"mgSht_red\" ]plaza ticket[/System:Color]!\r\nVisit the exchange booth in the\r\nplaza to redeem it.",
+    "ua": "Ви заробили [System:Color name=\"mgSht_red\" ]квиток Площі[/System:Color]!\nОбміняйте його в пункті обміну\nна площі."
+  },
+  "TitleHat_02": {
+    "en": "You got the [System:Color name=\"red\" ]Demon King Hat[/System:Color]!",
+    "ua": "Отримано [System:Color name=\"red\" ]Капелюх Короля демонів[/System:Color]!"
+  },
+  "TitleHat_03": {
+    "en": "Try putting it on your\r\nStreetPass Mii!",
+    "ua": "Спробуйте вдягнути його\nна свого Mii для StreetPass!"
+  },
+  "TitleHat_04": {
+    "en": "Choose your StreetPass Mii\r\nfrom the plaza...",
+    "ua": "Виберіть на площі свого\nMii для StreetPass…"
+  },
+  "TitleHat_05": {
+    "en": "And then choose Mii Settings!",
+    "ua": "а тоді — «Параметри Mii»!"
+  },
+  "Guest_00": {
+    "en": "You can hire fellow\r\ninvestigators to assist you.",
+    "ua": "Можна найняти інших\nслідчих на допомогу."
+  },
+  "Guest_01": {
+    "en": "Investigators cost 2 Play Coins\r\neach. What do you want to do?",
+    "ua": "Кожен слідчий — 2 монетки.\nЩо робитимете?"
+  },
+  "Guest_03": {
+    "en": "Yes",
+    "ua": "Так"
+  },
+  "Guest_04": {
+    "en": "Cancel",
+    "ua": "Скасувати"
+  },
+  "Guest_05": {
+    "en": "Oh my! By the way, you can\r\nhire another if you want...",
+    "ua": "О! До речі, можна\nнайняти ще одного…"
+  },
+  "Guest_06": {
+    "en": "Hire One",
+    "ua": "Найняти одного"
+  },
+  "Guest_07": {
+    "en": "It's time to explore!",
+    "ua": "Час досліджувати!"
+  },
+  "Guest_08": {
+    "en": "It's time to explore!",
+    "ua": "Час досліджувати!"
+  },
+  "Guest_09": {
+    "en": "You've got plenty of\r\ninvestigators for now.",
+    "ua": "Слідчих поки що\nдосить."
+  },
+  "Guest_10": {
+    "en": "Unfortunately, it looks like you\r\ndon't have enough  Play Coins. ",
+    "ua": "На жаль, схоже, вам\nбракує монеток . "
+  },
+  "Guest_11": {
+    "en": "Hire Max",
+    "ua": "Найняти макс."
+  },
+  "Guest_12": {
+    "en": "Use [0] Play Coins to\r\nhire [1] investigators?",
+    "ua": "Найняти слідчих ([1])\nза монетки ([0])?"
+  },
+  "Guest_13": {
+    "en": "You've hired [0] investigators.",
+    "ua": "Найнято слідчих: [0]."
+  },
+  "Guest_14": {
+    "en": "Yes",
+    "ua": "Так"
+  },
+  "Ticket_00": {
+    "en": "Clear the first floor.",
+    "ua": "Пройти перший поверх."
+  },
+  "Ticket_01": {
+    "en": "Clear the fifth floor.",
+    "ua": "Пройти п'ятий поверх."
+  },
+  "Ticket_02": {
+    "en": "Clear the fifteenth floor.",
+    "ua": "Пройти п'ятнадцятий поверх."
+  },
+  "Ticket_03": {
+    "en": "Clear the thirtieth floor.",
+    "ua": "Пройти тридцятий поверх."
+  },
+  "Ticket_04": {
+    "en": "Set down a total of 100 pieces.",
+    "ua": "Покласти 100 частинок."
+  },
+  "Ticket_05": {
+    "en": "Completely fill a floor with pieces.",
+    "ua": "Заповнити поверх частинками."
+  },
+  "Ticket_06": {
+    "en": "Open a total of 100 chests.",
+    "ua": "Відкрити 100 скринь."
+  },
+  "Ticket_07": {
+    "en": "Defeat a total of 100 enemies.",
+    "ua": "Здолати загалом 100 ворогів."
+  },
+  "Ticket_08": {
+    "en": "Team up a total of 10 times.",
+    "ua": "Об'єднатися 10 разів."
+  },
+  "Ticket_09": {
+    "en": "Solve a total of 10 puzzle boxes.",
+    "ua": "Розв'язати 10 головоломок."
+  },
+  "Ticket_10": {
+    "en": "Solve all puzzle boxes.",
+    "ua": "Розв'язати всі головоломки."
+  },
+  "Ticket_11": {
+    "en": "Collect all of the weapons.",
+    "ua": "Зібрати всю зброю."
+  },
+  "Ticket_12": {
+    "en": "Find a plaza ticket in a\r\nwooden chest.",
+    "ua": "Знайти квиток Площі\nв дерев'яній скрині."
+  },
+  "Ticket_13": {
+    "en": "Find a second plaza ticket\r\nin a wooden chest.",
+    "ua": "Знайти другий квиток Площі\nв дерев'яній скрині."
+  },
+  "Ticket_14": {
+    "en": "Find a plaza ticket in an\r\niron chest.",
+    "ua": "Знайти квиток Площі\nв залізній скрині."
+  },
+  "Ticket_15": {
+    "en": "Find a second plaza ticket\r\nin an iron chest.",
+    "ua": "Знайти другий квиток Площі\nв залізній скрині."
+  },
+  "Ticket_16": {
+    "en": "Find a plaza ticket in a\r\nbronze chest.",
+    "ua": "Знайти квиток Площі\nв бронзовій скрині."
+  },
+  "Ticket_17": {
+    "en": "Find a second plaza ticket\r\nin a bronze chest.",
+    "ua": "Знайти другий квиток Площі\nв бронзовій скрині."
+  },
+  "Ticket_18": {
+    "en": "Find a plaza ticket in a\r\nsilver chest.",
+    "ua": "Знайти квиток Площі\nв срібній скрині."
+  },
+  "Ticket_19": {
+    "en": "Find a second plaza ticket\r\nin a silver chest.",
+    "ua": "Знайти другий квиток Площі\nв срібній скрині."
+  },
+  "Ticket_20": {
+    "en": "Find a plaza ticket in a\r\ngold chest.",
+    "ua": "Знайти квиток Площі\nв золотій скрині."
+  },
+  "Ticket_21": {
+    "en": "Find a second plaza ticket\r\nin a gold chest.",
+    "ua": "Знайти другий квиток Площі\nв золотій скрині."
+  },
+  "TutorialList_00": {
+    "en": "Setting a Piece 1/2",
+    "ua": "Розміщення частинки 1/2"
+  },
+  "TutorialList_01": {
+    "en": "Setting a Piece 2/2",
+    "ua": "Розміщення частинки 2/2"
+  },
+  "TutorialList_02": {
+    "en": "Creating a Room 1/2",
+    "ua": "Створення кімнати 1/2"
+  },
+  "TutorialList_03": {
+    "en": "Creating a Room 2/2",
+    "ua": "Створення кімнати 2/2"
+  },
+  "TutorialList_04": {
+    "en": "Battle Basics 1/5",
+    "ua": "Основи бою 1/5"
+  },
+  "TutorialList_05": {
+    "en": "Battle Basics 2/5",
+    "ua": "Основи бою 2/5"
+  },
+  "TutorialList_06": {
+    "en": "Battle Basics 3/5",
+    "ua": "Основи бою 3/5"
+  },
+  "TutorialList_07": {
+    "en": "Battle Basics 4/5",
+    "ua": "Основи бою 4/5"
+  },
+  "TutorialList_08": {
+    "en": "Battle Basics 5/5",
+    "ua": "Основи бою 5/5"
+  },
+  "TutorialList_09": {
+    "en": "Weapons 101",
+    "ua": "Про зброю"
+  },
+  "TutorialList_10": {
+    "en": "Charge Shots",
+    "ua": "Заряджені постріли"
+  },
+  "TutorialList_11": {
+    "en": "Weapon Types",
+    "ua": "Типи зброї"
+  },
+  "TutorialList_12": {
+    "en": "Operating Mystic Orbs",
+    "ua": "Містичні сфери"
+  },
+  "TutorialList_13": {
+    "en": "Teamwork Tips",
+    "ua": "Командна робота"
+  },
+  "TutorialList_14": {
+    "en": "Puzzle Box Pointers",
+    "ua": "Скриньки-головоломки"
+  },
+  "TutorialList_15": {
+    "en": "Using Stairs",
+    "ua": "Сходи"
+  },
+  "TutorialList_16": {
+    "en": "Onwards and Upwards",
+    "ua": "Усе вище й вище"
+  },
+  "pzd_0011_T00": {
+    "en": "Congratulations!",
+    "ua": "Вітаємо!"
+  },
+  "pzd_0011_T00E": {
+    "en": "Congratulations!",
+    "ua": "Вітаємо!"
+  },
+  "pzd_0011_T01": {
+    "en": "You got a plaza ticket.",
+    "ua": "Отримано квиток Площі."
+  },
+  "pzd_0011_T01E": {
+    "en": "You got a plaza ticket.",
+    "ua": "Отримано квиток Площі."
+  },
+  "Demo_00": {
+    "en": " Skip",
+    "ua": " Пропустити"
+  },
+  "Accept_00": {
+    "en": "Which piece do you want?",
+    "ua": "Яку частинку візьмеш?"
+  },
+  "Record_01": {
+    "en": "Plaza Ticket Info",
+    "ua": "Про квитки Площі"
+  },
+  "WeaponInfo_00": {
+    "en": "Skill",
+    "ua": "Уміння"
+  },
+  "WeaponInfo_01": {
+    "en": "Batteries",
+    "ua": "Батареї"
+  },
+  "WeaponInfo_02": {
+    "en": "Recharge Speed",
+    "ua": "Підзарядка"
+  },
+  "WeaponInfo_03": {
+    "en": "Charge Shot",
+    "ua": "Заряджений постріл"
+  },
+  "WeaponInfo_04": {
+    "en": "Activation Condition & Rate",
+    "ua": "Умова й шанс спрацювання"
+  },
+  "WeaponInfo_05": {
+    "en": "Take Damage",
+    "ua": "Отримання шкоди"
+  },
+  "WeaponInfo_06": {
+    "en": "Guard",
+    "ua": "Захист"
+  },
+  "WeaponInfo_08": {
+    "en": "Back",
+    "ua": "Назад"
+  },
+  "WeaponInfo_09": {
+    "en": "Lv.[0]/Max Lv.[1]",
+    "ua": "Рів.[0]/Макс. рів.[1]"
+  },
+  "WeaponInfo_10": {
+    "en": "Charge Speed",
+    "ua": "Швидкість заряду"
+  },
+  "WeaponInfo_11": {
+    "en": "Lv.[0]",
+    "ua": "Рів.[0]"
+  },
+  "ItemSel_00": {
+    "en": "Do you want to use the\r\n[System:Color name=\"red\" ][0][/System:Color]?",
+    "ua": "Використати\n[System:Color name=\"red\" ][0][/System:Color]?"
+  },
+  "ItemSel_01": {
+    "en": "Yes",
+    "ua": "Так"
+  },
+  "ItemSel_02": {
+    "en": "No",
+    "ua": "Ні"
+  },
+  "ItemSel_03": {
+    "en": "Do you want to equip the\r\n[System:Color name=\"red\" ][0][/System:Color]?",
+    "ua": "Спорядити\n[System:Color name=\"red\" ][0][/System:Color]?"
+  },
+  "ItemSel_04": {
+    "en": "Yes",
+    "ua": "Так"
+  },
+  "ItemSel_05": {
+    "en": " Confirm    Equip    Back",
+    "ua": " Вибрати    Узяти    Назад"
+  },
+  "ItemSel_06": {
+    "en": " Store    Equip",
+    "ua": " Сховати    Узяти"
+  },
+  "ItemGet_00": {
+    "en": "NEW!",
+    "ua": "НОВЕ!"
+  },
+  "ItemGet_00E": {
+    "en": "NEW!",
+    "ua": "НОВЕ!"
+  },
+  "ItemError_00": {
+    "en": "This item can only be\r\nused during battle.",
+    "ua": "Цей предмет можна\nвикористати лише в бою."
+  },
+  "ItemError_01": {
+    "en": "This item can't be used\r\nduring battle.",
+    "ua": "Цей предмет не можна\nвикористати в бою."
+  },
+  "ItemError_02": {
+    "en": "You're already at full health,\r\nso there's no need to use this.",
+    "ua": "У вас і так повне здоров'я,\nтож це не потрібно."
+  },
+  "ItemError_04": {
+    "en": "This item is already in use.",
+    "ua": "Предмет уже використовується."
+  },
+  "ItemError_05": {
+    "en": "This weapon is\r\nalready equipped.",
+    "ua": "Ця зброя вже\nспоряджена."
+  },
+  "ItemError_06": {
+    "en": "A badge grants benefits just by being in\r\nyour inventory. You don't need to use it. ",
+    "ua": "Значок діє, просто лежачи в інвентарі.\nВикористовувати його не треба."
+  },
+  "ItemError_07": {
+    "en": "There's no need to\r\nuse this right now.",
+    "ua": "Зараз це використовувати\nне потрібно."
+  },
+  "ItemError_08": {
+    "en": "You can't use this\r\nuntil you wake up!",
+    "ua": "Це не можна використати,\nпоки не прокинетеся!"
+  },
+  "ItemError_09": {
+    "en": "You can only use this item\r\nwhen you have a piece to set.",
+    "ua": "Цей предмет можна використати,\nлише коли є частинка, яку класти."
+  },
+  "ItemError_10": {
+    "en": "You can only use this when you\r\nhave a weapon equipped that\r\ncan perform charge shots.",
+    "ua": "Це можна використати, лише\nколи споряджено зброю, що вміє\nробити заряджені постріли."
+  },
+  "Save_00": {
+    "en": "Loading... Please don't turn off the power.",
+    "ua": "Завантаження… Не вимикайте консоль."
+  },
+  "Save_01": {
+    "en": "Saving... Please don't turn off the power.",
+    "ua": "Збереження…\nНе вимикайте консоль."
+  },
+  "pzd_1205_T00": {
+    "en": "Investigation Report",
+    "ua": "Звіт про розслідування"
+  },
+  "pzd_1205_T01": {
+    "en": "Game Clears",
+    "ua": "Проходжень гри"
+  },
+  "pzd_1205_T03": {
+    "en": "Pieces Collected",
+    "ua": "Частинок"
+  },
+  "pzd_1205_T05": {
+    "en": "Entities Defeated",
+    "ua": "Сутностей здолано"
+  },
+  "pzd_1205_T07": {
+    "en": "Chests Opened",
+    "ua": "Скринь відкрито"
+  },
+  "pzd_1205_T09": {
+    "en": "Teams Formed",
+    "ua": "Команд створено"
+  },
+  "pzd_1205_T11": {
+    "en": "Puzzles Solved",
+    "ua": "Головоломки"
+  },
+  "pzd_1205_T13": {
+    "en": "Weapons Collected",
+    "ua": "Зброї зібрано"
+  },
+  "pzd_1205_T00_2": {
+    "en": "Progress Report",
+    "ua": "Звіт про успіхи"
+  },
+  "pzd_1205_T01_2": {
+    "en": "Floors Cleared",
+    "ua": "Поверхів пройдено"
+  },
+  "TextBox_00_atk": {
+    "en": " Attack",
+    "ua": " Атака"
+  },
+  "TextBox_00_charge": {
+    "en": " Charge",
+    "ua": " Заряд"
+  },
+  "TextBox_00_def": {
+    "en": " Guard",
+    "ua": " Захист"
+  },
+  "TextBox_00_esc": {
+    "en": " Escape",
+    "ua": " Утеча"
+  },
+  "TextBox_00_use": {
+    "en": " Use",
+    "ua": " Викор."
+  },
+  "TextBox_00_moti": {
+    "en": " Equip",
+    "ua": " Узяти"
+  },
+  "TextBox_00_item": {
+    "en": " Items",
+    "ua": " Предмети"
+  },
+  "TextBox_00_back": {
+    "en": " Back",
+    "ua": " Назад"
+  },
+  "TextBox_00_counter": {
+    "en": "Counter-attack!",
+    "ua": "Контратака!"
+  },
+  "pzd_0115_T00_LV": {
+    "en": " Lv.",
+    "ua": " Рів."
+  },
+  "pzd_0122_T02": {
+    "en": "Attack",
+    "ua": "Атака"
+  },
+  "pzd_0122_T04": {
+    "en": "Defence",
+    "ua": "Захист"
+  },
+  "pzd_0501_T00": {
+    "en": "Which piece do you want?",
+    "ua": "Яку частинку візьмеш?"
+  },
+  "pzd_0509_T00": {
+    "en": "Take Piece",
+    "ua": "Взяти частинку"
+  },
+  "pzd_0509_T00E": {
+    "en": "Take Piece",
+    "ua": "Взяти частинку"
+  },
+  "pzd_0509_T01": {
+    "en": "Send to Back",
+    "ua": "Відкласти"
+  },
+  "pzd_0509_T01E": {
+    "en": "Send to Back",
+    "ua": "Відкласти"
+  },
+  "pzd_0509_T10": {
+    "en": "Use Stairs",
+    "ua": "Піти сходами"
+  },
+  "pzd_0509_T10E": {
+    "en": "Use Stairs",
+    "ua": "Піти сходами"
+  },
+  "pzd_0509_T20": {
+    "en": "Dismiss",
+    "ua": "Відпустити"
+  },
+  "pzd_0509_T20E": {
+    "en": "Dismiss",
+    "ua": "Відпустити"
+  },
+  "pzd_0509_T30": {
+    "en": "Open Inventory",
+    "ua": "Інвентар"
+  },
+  "pzd_0509_T30E": {
+    "en": "Open Inventory",
+    "ua": "Інвентар"
+  },
+  "pzd_0509_T03": {
+    "en": "StreetPass Hits: [0]",
+    "ua": "Зустрічей: [0]"
+  },
+  "pzd_0201_T20": {
+    "en": "Attack",
+    "ua": "Атака"
+  },
+  "pzd_0201_T21": {
+    "en": "Defence",
+    "ua": "Захист"
+  },
+  "pzd_0201_T04": {
+    "en": "Lv.[0]",
+    "ua": "Рів.[0]"
+  },
+  "pzd_0203_T00": {
+    "en": "Lv.[0]",
+    "ua": "Рів.[0]"
+  },
+  "pzd_0213_T00": {
+    "en": "Item [0]/[1]",
+    "ua": "Предм. [0]/[1]"
+  },
+  "pzd_0213_T01": {
+    "en": "Item [System:Color name=\"red\" ][0][/System:Color]/[1]",
+    "ua": "Предм. [System:Color name=\"red\" ][0][/System:Color]/[1]"
+  },
+  "pzd_0300_T02": {
+    "en": "Floor [0]",
+    "ua": "Поверх [0]"
+  },
+  "pzd_0300_T05": {
+    "en": "Attack",
+    "ua": "Атака"
+  },
+  "pzd_0300_T06": {
+    "en": "Defence ",
+    "ua": "Захист "
+  },
+  "pzd_0300_T07": {
+    "en": "Lv.[0]",
+    "ua": "Рів.[0]"
+  },
+  "pzd_0322_T00": {
+    "en": "Floor [0]",
+    "ua": "Поверх [0]"
+  },
+  "pzd_0601_T03": {
+    "en": "Max Lv.[0]",
+    "ua": "Макс. рів.[0]"
+  },
+  "pzd_0601_T05": {
+    "en": "Experience Points",
+    "ua": "Очки досвіду"
+  },
+  "pzd_0602_T01": {
+    "en": "Gems",
+    "ua": "Самоцвіти"
+  },
+  "pzd_0603_T00": {
+    "en": "Level up!",
+    "ua": "Новий рівень!"
+  },
+  "pzd_0603_T00E": {
+    "en": "Level up!",
+    "ua": "Новий рівень!"
+  },
+  "pzd_0607_T00": {
+    "en": "Lv.[0]",
+    "ua": "Рів.[0]"
+  },
+  "pzd_0609_T02": {
+    "en": "Attack",
+    "ua": "Атака"
+  },
+  "pzd_0609_T03": {
+    "en": "Defence",
+    "ua": "Захист"
+  },
+  "result_Bonus_nodmg": {
+    "en": "No damage!",
+    "ua": "Без шкоди!"
+  },
+  "result_Bonus_oneshot": {
+    "en": "One-Shot Victory",
+    "ua": "Одним пострілом"
+  },
+  "pzd_0611_T02": {
+    "en": "Max Lv.",
+    "ua": "Макс. рів."
+  },
+  "pzd_0611_T04": {
+    "en": "Max level up!",
+    "ua": "Макс. рівень зріс!"
+  },
+  "pzd_0611_T04E": {
+    "en": "Max level up!",
+    "ua": "Макс. рівень зріс!"
+  },
+  "pzd_0700_T02": {
+    "en": "Materials",
+    "ua": "Матеріали"
+  },
+  "pzd_0700_T06": {
+    "en": "Lv.[0]/Max Lv.[1]",
+    "ua": "Рів.[0]/Макс. рів.[1]"
+  },
+  "pzd_0700_T06R": {
+    "en": "Lv.[System:Color name=\"red\" ][0][/System:Color]/Max Lv.[1]",
+    "ua": "Рів.[System:Color name=\"red\" ][0][/System:Color]/Макс. рів.[1]"
+  },
+  "pzd_0900_T00": {
+    "en": " Inventory",
+    "ua": " Інвентар"
+  },
+  "pzd_0900_T02": {
+    "en": " Box",
+    "ua": " Скриня"
+  },
+  "pzd_1200_T00": {
+    "en": "StreetPass Mansion",
+    "ua": "Таємничий маєток StreetPass"
+  },
+  "pzd_1200_T00E": {
+    "en": "StreetPass Mansion",
+    "ua": "Таємничий маєток StreetPass"
+  },
+  "pzd_1200_T01": {
+    "en": "PRESS ",
+    "ua": "НАТИСНІТЬ "
+  },
+  "pzd_1200_T02": {
+    "en": "Collect pieces of maps and try\r\nto escape a haunted mansion!",
+    "ua": "Збирайте мапу по частинках і\nтікайте з маєтку з привидами!"
+  },
+  "pzd_1200_T03": {
+    "en": "©2013 Nintendo  Developed by PROPE",
+    "ua": "©2013 Nintendo  Розробка: PROPE"
+  },
+  "pzd_1211_T00": {
+    "en": "Plaza Tickets Acquired",
+    "ua": "Отримано квитків Площі"
+  },
+  "pzd_1211_T00_2": {
+    "en": "Tutorials",
+    "ua": "Поради"
+  },
+  "pzd_1302_T00": {
+    "en": ": Return to HOME Menu",
+    "ua": ": назад у меню HOME"
+  },
+  "pzd_1302_T01": {
+    "en": "Play Coins: ",
+    "ua": "Монетки: "
+  },
+  "pzd_1302_T02": {
+    "en": " Pieces Collected: ",
+    "ua": " Зібрано частинок: "
+  },
+  "pzd_1302_T03": {
+    "en": "Floors Cleared: ",
+    "ua": "Пройдено поверхів: "
+  },
+  "pzd_1400_T08": {
+    "en": "Attack",
+    "ua": "Атака"
+  },
+  "pzd_1400_T09": {
+    "en": "Defence",
+    "ua": "Захист"
+  },
+  "pzd_1400_T10": {
+    "en": "Each battle will restore [System:Color name=\"red\" ][0] [/System:Color]HP.",
+    "ua": "Кожен бій відновлюватиме [System:Color name=\"red\" ][0] [/System:Color]ОЗ."
+  },
+  "pzd_1401_T00": {
+    "en": "Puzzle Box",
+    "ua": "Головоломка"
+  },
+  "pzd_1401_T02": {
+    "en": "Level",
+    "ua": "Рівень"
+  },
+  "pzd_1401_T04": {
+    "en": "Target Time ",
+    "ua": "Цільовий час"
+  },
+  "pzd_1401_T04_2": {
+    "en": "Rival's Time",
+    "ua": "Час суперника"
+  },
+  "pzd_1401_T06": {
+    "en": "Personal Best",
+    "ua": "Особ. рекорд"
+  },
+  "pzd_1501_T00": {
+    "en": "Select a block to place.",
+    "ua": "Виберіть блок, щоб покласти."
+  },
+  "pzd_1502_T03": {
+    "en": "Start!",
+    "ua": "Старт!"
+  },
+  "pzd_1503_T00": {
+    "en": "Target time beaten!",
+    "ua": "Цільовий час побито!"
+  },
+  "pzd_1503_T00_1": {
+    "en": "Rival's time beaten!",
+    "ua": "Час суперника побито!"
+  },
+  "pzd_1503_T01": {
+    "en": "Your Time",
+    "ua": "Ваш час"
+  },
+  "pzd_1503_T04": {
+    "en": "New record!",
+    "ua": "Новий рекорд!"
+  },
+  "pzd_1503_T04E": {
+    "en": "New record!",
+    "ua": "Новий рекорд!"
+  },
+  "pzd_1504_T00": {
+    "en": "Success!",
+    "ua": "Успіх!"
+  },
+  "pzd_1504_T00E": {
+    "en": "Success!",
+    "ua": "Успіх!"
+  },
+  "pzd_1600_T00": {
+    "en": "Puzzle Box",
+    "ua": "Головоломка"
+  },
+  "pzd_1600_T02": {
+    "en": "Level",
+    "ua": "Рівень"
+  },
+  "pzd_1600_T03": {
+    "en": "Personal Best",
+    "ua": "Особ. рекорд"
+  },
+  "pzd_1700_T00": {
+    "en": "PAUSE",
+    "ua": "ПАУЗА"
+  },
+  "pzd_1700_T00E": {
+    "en": "PAUSE",
+    "ua": "ПАУЗА"
+  },
+  "pzd_1700_T01": {
+    "en": "Continue",
+    "ua": "Далі"
+  },
+  "pzd_1700_T01E": {
+    "en": "Continue",
+    "ua": "Далі"
+  },
+  "pzd_1700_T02": {
+    "en": "Quit",
+    "ua": "Вийти"
+  },
+  "pzd_1700_T02E": {
+    "en": "Quit",
+    "ua": "Вийти"
+  },
+  "pzd_1702_T00": {
+    "en": "There are five different weapon types.",
+    "ua": "Є п'ять різних типів зброї."
+  },
+  "pzd_1702_T01": {
+    "en": "During battle, an [System:Color name=\"red\" ]arrow [/System:Color]indicates weapons\r\nyou hold that an entity is weak against.",
+    "ua": "У бою [System:Color name=\"red\" ]стрілка [/System:Color]позначає зброю,\nдо якої сутність вразлива."
+  },
+  "pzd_1702_T02": {
+    "en": "Weapons and Weaknesses",
+    "ua": "Зброя і вразливості"
+  },
+  "pzd_2000_T00": {
+    "en": "Floor [0]",
+    "ua": "Поверх [0]"
+  },
+  "pzd_2000_T00E": {
+    "en": "Floor [0]",
+    "ua": "Поверх [0]"
+  },
+  "pzd_2000_T01": {
+    "en": "cleared!",
+    "ua": "пройдено!"
+  },
+  "pzd_2000_T01E": {
+    "en": "cleared!",
+    "ua": "пройдено!"
+  },
+  "pzd_2001_T00": {
+    "en": "Floor complete!",
+    "ua": "Поверх пройдено!"
+  },
+  "pzd_2001_T00E": {
+    "en": "Floor complete!",
+    "ua": "Поверх пройдено!"
+  },
+  "pzd_2002_T00": {
+    "en": "Floor [0]",
+    "ua": "Поверх [0]"
+  },
+  "pzd_2100_T00": {
+    "en": "Which colour will you paint this piece?",
+    "ua": "У який колір пофарбувати частинку?"
+  },
+  "pzd_2300_T02": {
+    "en": " Inventory",
+    "ua": " Інвентар"
+  },
+  "pzd_2300_T04": {
+    "en": " Box",
+    "ua": " Скриня"
+  },
+  "pzd_2300_T06": {
+    "en": "Total for Marked Items",
+    "ua": "Разом за позначене"
+  },
+  "pzd_2400_T00": {
+    "en": "THE END",
+    "ua": "КІНЕЦЬ"
+  },
+  "name_weapon_000": {
+    "en": "Rusty Blaster",
+    "ua": "Іржавий бластер"
+  },
+  "name_weapon_001": {
+    "en": "Rusty Blaster +1",
+    "ua": "Іржавий бластер +1"
+  },
+  "name_weapon_002": {
+    "en": "Rusty Blaster +2",
+    "ua": "Іржавий бластер +2"
+  },
+  "name_weapon_003": {
+    "en": "Shiny Blaster",
+    "ua": "Блискучий бластер"
+  },
+  "name_weapon_004": {
+    "en": "Shiny Blaster +1",
+    "ua": "Блискучий бластер +1"
+  },
+  "name_weapon_005": {
+    "en": "Shiny Blaster +2",
+    "ua": "Блискучий бластер +2"
+  },
+  "name_weapon_006": {
+    "en": "Spook Stopper",
+    "ua": "Стоп-привид"
+  },
+  "name_weapon_007": {
+    "en": "Spook Stopper +1",
+    "ua": "Стоп-привид +1"
+  },
+  "name_weapon_008": {
+    "en": "Spook Stopper +2",
+    "ua": "Стоп-привид +2"
+  },
+  "name_weapon_009": {
+    "en": "Stargazer Special",
+    "ua": "Звіздар-спец"
+  },
+  "name_weapon_010": {
+    "en": "Stargazer Special +1",
+    "ua": "Звіздар-спец +1"
+  },
+  "name_weapon_011": {
+    "en": "Stargazer Special +2",
+    "ua": "Звіздар-спец +2"
+  },
+  "name_weapon_012": {
+    "en": "Atomic Ray Gun",
+    "ua": "Атомний променемет"
+  },
+  "name_weapon_013": {
+    "en": "Atomic Ray Gun +1",
+    "ua": "Атомний променемет +1"
+  },
+  "name_weapon_014": {
+    "en": "Atomic Ray Gun +2",
+    "ua": "Атомний променемет +2"
+  },
+  "name_weapon_015": {
+    "en": "Drill of Doom",
+    "ua": "Дриль загибелі"
+  },
+  "name_weapon_016": {
+    "en": "Drill of Doom +1",
+    "ua": "Дриль загибелі +1"
+  },
+  "name_weapon_017": {
+    "en": "Drill of Doom +2",
+    "ua": "Дриль загибелі +2"
+  },
+  "name_weapon_018": {
+    "en": "Shuriken Beam",
+    "ua": "Сюрикен-промінь"
+  },
+  "name_weapon_019": {
+    "en": "Shuriken Beam +1",
+    "ua": "Сюрикен-промінь +1"
+  },
+  "name_weapon_020": {
+    "en": "Shuriken Beam +2",
+    "ua": "Сюрикен-промінь +2"
+  },
+  "name_weapon_021": {
+    "en": "Trumpet of Terror",
+    "ua": "Сурма жаху"
+  },
+  "name_weapon_022": {
+    "en": "Trumpet of Terror +1",
+    "ua": "Сурма жаху +1"
+  },
+  "name_weapon_023": {
+    "en": "Trumpet of Terror +2",
+    "ua": "Сурма жаху +2"
+  },
+  "name_weapon_024": {
+    "en": "Banshee Burner",
+    "ua": "Палій банші"
+  },
+  "name_weapon_025": {
+    "en": "Banshee Burner +1",
+    "ua": "Палій банші +1"
+  },
+  "name_weapon_026": {
+    "en": "Banshee Burner +2",
+    "ua": "Палій банші +2"
+  },
+  "name_weapon_027": {
+    "en": "Paraffin Punisher",
+    "ua": "Парафінова кара"
+  },
+  "name_weapon_028": {
+    "en": "Paraffin Punisher +1",
+    "ua": "Парафінова кара +1"
+  },
+  "name_weapon_029": {
+    "en": "Paraffin Punisher +2",
+    "ua": "Парафінова кара +2"
+  },
+  "name_weapon_030": {
+    "en": "Ye Olde Fire Hazard",
+    "ua": "Старий підпалювач"
+  },
+  "name_weapon_031": {
+    "en": "Ye Olde Fire Hazard +1",
+    "ua": "Старий підпалювач +1"
+  },
+  "name_weapon_032": {
+    "en": "Ye Olde Fire Hazard +2",
+    "ua": "Старий підпалювач +2"
+  },
+  "name_weapon_033": {
+    "en": "Candle Cannon",
+    "ua": "Свічкова гармата"
+  },
+  "name_weapon_034": {
+    "en": "Candle Cannon +1",
+    "ua": "Свічкова гармата +1"
+  },
+  "name_weapon_035": {
+    "en": "Candle Cannon +2",
+    "ua": "Свічкова гармата +2"
+  },
+  "name_weapon_036": {
+    "en": "Jack-o'-Magnum",
+    "ua": "Гарбуз-магнум"
+  },
+  "name_weapon_037": {
+    "en": "Jack-o'-Magnum +1",
+    "ua": "Гарбуз-магнум +1"
+  },
+  "name_weapon_038": {
+    "en": "Jack-o'-Magnum +2",
+    "ua": "Гарбуз-магнум +2"
+  },
+  "name_weapon_039": {
+    "en": "Ovenator",
+    "ua": "Пічнатор"
+  },
+  "name_weapon_040": {
+    "en": "Ovenator +1",
+    "ua": "Пічнатор +1"
+  },
+  "name_weapon_041": {
+    "en": "Ovenator +2",
+    "ua": "Пічнатор +2"
+  },
+  "name_weapon_042": {
+    "en": "Phoenix Fury",
+    "ua": "Лють фенікса"
+  },
+  "name_weapon_043": {
+    "en": "Phoenix Fury +1",
+    "ua": "Лють фенікса +1"
+  },
+  "name_weapon_044": {
+    "en": "Phoenix Fury +2",
+    "ua": "Лють фенікса +2"
+  },
+  "name_weapon_045": {
+    "en": "Dragon Destroyer",
+    "ua": "Драконоборець"
+  },
+  "name_weapon_046": {
+    "en": "Dragon Destroyer +1",
+    "ua": "Драконоборець +1"
+  },
+  "name_weapon_047": {
+    "en": "Dragon Destroyer +2",
+    "ua": "Драконоборець +2"
+  },
+  "name_weapon_048": {
+    "en": "Static Slinger",
+    "ua": "Статикомет"
+  },
+  "name_weapon_049": {
+    "en": "Static Slinger +1",
+    "ua": "Статикомет +1"
+  },
+  "name_weapon_050": {
+    "en": "Static Slinger +2",
+    "ua": "Статикомет +2"
+  },
+  "name_weapon_051": {
+    "en": "Shade Shocker",
+    "ua": "Тінешокер"
+  },
+  "name_weapon_052": {
+    "en": "Shade Shocker +1",
+    "ua": "Тінешокер +1"
+  },
+  "name_weapon_053": {
+    "en": "Shade Shocker +2",
+    "ua": "Тінешокер +2"
+  },
+  "name_weapon_054": {
+    "en": "Sparkatron",
+    "ua": "Іскротрон"
+  },
+  "name_weapon_055": {
+    "en": "Sparkatron +1",
+    "ua": "Іскротрон +1"
+  },
+  "name_weapon_056": {
+    "en": "Sparkatron +2",
+    "ua": "Іскротрон +2"
+  },
+  "name_weapon_057": {
+    "en": "N-1 Plasma Rifle",
+    "ua": "Плазмогвинтівка N-1"
+  },
+  "name_weapon_058": {
+    "en": "N-1 Plasma Rifle +1",
+    "ua": "Плазмогвинтівка N-1 +1"
+  },
+  "name_weapon_059": {
+    "en": "N-1 Plasma Rifle +2",
+    "ua": "Плазмогвинтівка N-1 +2"
+  },
+  "name_weapon_060": {
+    "en": "Arcane Cane",
+    "ua": "Таємна тростина"
+  },
+  "name_weapon_061": {
+    "en": "Arcane Cane +1",
+    "ua": "Таємна тростина +1"
+  },
+  "name_weapon_062": {
+    "en": "Arcane Cane +2",
+    "ua": "Таємна тростина +2"
+  },
+  "name_weapon_063": {
+    "en": "Electron Buster",
+    "ua": "Електронолом"
+  },
+  "name_weapon_064": {
+    "en": "Electron Buster +1",
+    "ua": "Електронолом +1"
+  },
+  "name_weapon_065": {
+    "en": "Electron Buster +2",
+    "ua": "Електронолом +2"
+  },
+  "name_weapon_066": {
+    "en": "Proton Shocker",
+    "ua": "Протонний шокер"
+  },
+  "name_weapon_067": {
+    "en": "Proton Shocker +1",
+    "ua": "Протонний шокер +1"
+  },
+  "name_weapon_068": {
+    "en": "Proton Shocker +2",
+    "ua": "Протонний шокер +2"
+  },
+  "name_weapon_069": {
+    "en": "Thunder Mallet",
+    "ua": "Громовий молот"
+  },
+  "name_weapon_070": {
+    "en": "Thunder Mallet +1",
+    "ua": "Громовий молот +1"
+  },
+  "name_weapon_071": {
+    "en": "Thunder Mallet +2",
+    "ua": "Громовий молот +2"
+  },
+  "name_weapon_072": {
+    "en": "Cryocutter",
+    "ua": "Кріорізак"
+  },
+  "name_weapon_073": {
+    "en": "Cryocutter +1",
+    "ua": "Кріорізак +1"
+  },
+  "name_weapon_074": {
+    "en": "Cryocutter +2",
+    "ua": "Кріорізак +2"
+  },
+  "name_weapon_075": {
+    "en": "Snowblower",
+    "ua": "Снігомет"
+  },
+  "name_weapon_076": {
+    "en": "Snowblower +1",
+    "ua": "Снігомет +1"
+  },
+  "name_weapon_077": {
+    "en": "Snowblower +2",
+    "ua": "Снігомет +2"
+  },
+  "name_weapon_078": {
+    "en": "Frostfang 2000",
+    "ua": "Крижане ікло 2000"
+  },
+  "name_weapon_079": {
+    "en": "Frostfang 2000 +1",
+    "ua": "Крижане ікло 2000 +1"
+  },
+  "name_weapon_080": {
+    "en": "Frostfang 2000 +2",
+    "ua": "Крижане ікло 2000 +2"
+  },
+  "name_weapon_081": {
+    "en": "Abominable Snowgun",
+    "ua": "Єті-гармата"
+  },
+  "name_weapon_082": {
+    "en": "Abominable Snowgun +1",
+    "ua": "Єті-гармата +1"
+  },
+  "name_weapon_083": {
+    "en": "Abominable Snowgun +2",
+    "ua": "Єті-гармата +2"
+  },
+  "name_weapon_084": {
+    "en": "Coldozer",
+    "ua": "Холодозер"
+  },
+  "name_weapon_085": {
+    "en": "Coldozer +1",
+    "ua": "Холодозер +1"
+  },
+  "name_weapon_086": {
+    "en": "Coldozer +2",
+    "ua": "Холодозер +2"
+  },
+  "name_weapon_087": {
+    "en": "Freezy Peasy",
+    "ua": "Морозь-легко"
+  },
+  "name_weapon_088": {
+    "en": "Freezy Peasy +1",
+    "ua": "Морозь-легко +1"
+  },
+  "name_weapon_089": {
+    "en": "Freezy Peasy +2",
+    "ua": "Морозь-легко +2"
+  },
+  "name_weapon_090": {
+    "en": "I Scream",
+    "ua": "Крик-пломбір"
+  },
+  "name_weapon_091": {
+    "en": "I Scream +1",
+    "ua": "Крик-пломбір +1"
+  },
+  "name_weapon_092": {
+    "en": "I Scream +2",
+    "ua": "Крик-пломбір +2"
+  },
+  "name_weapon_093": {
+    "en": "Crystal Cannon",
+    "ua": "Кришталемет"
+  },
+  "name_weapon_094": {
+    "en": "Crystal Cannon +1",
+    "ua": "Кришталемет +1"
+  },
+  "name_weapon_095": {
+    "en": "Crystal Cannon +2",
+    "ua": "Кришталемет +2"
+  },
+  "name_weapon_096": {
+    "en": "Ultrawing",
+    "ua": "Ультракрило"
+  },
+  "name_weapon_097": {
+    "en": "Ultrawing +1",
+    "ua": "Ультракрило +1"
+  },
+  "name_weapon_098": {
+    "en": "Ultrawing +2",
+    "ua": "Ультракрило +2"
+  },
+  "name_weapon_099": {
+    "en": "Autumn Storm",
+    "ua": "Осіння буря"
+  },
+  "name_weapon_100": {
+    "en": "Autumn Storm +1",
+    "ua": "Осіння буря +1"
+  },
+  "name_weapon_101": {
+    "en": "Autumn Storm +2",
+    "ua": "Осіння буря +2"
+  },
+  "name_weapon_102": {
+    "en": "Fancy Fan",
+    "ua": "Модне віяло"
+  },
+  "name_weapon_103": {
+    "en": "Fancy Fan +1",
+    "ua": "Модне віяло +1"
+  },
+  "name_weapon_104": {
+    "en": "Fancy Fan +2",
+    "ua": "Модне віяло +2"
+  },
+  "name_weapon_105": {
+    "en": "Blusterbuss",
+    "ua": "Вітромушкет"
+  },
+  "name_weapon_106": {
+    "en": "Blusterbuss +1",
+    "ua": "Вітромушкет +1"
+  },
+  "name_weapon_107": {
+    "en": "Blusterbuss +2",
+    "ua": "Вітромушкет +2"
+  },
+  "name_weapon_108": {
+    "en": "Salon Special",
+    "ua": "Салонний фен"
+  },
+  "name_weapon_109": {
+    "en": "Salon Special +1",
+    "ua": "Салонний фен +1"
+  },
+  "name_weapon_110": {
+    "en": "Salon Special +2",
+    "ua": "Салонний фен +2"
+  },
+  "name_weapon_111": {
+    "en": "Windbag of Woe",
+    "ua": "Міх лиха"
+  },
+  "name_weapon_112": {
+    "en": "Windbag of Woe +1",
+    "ua": "Міх лиха +1"
+  },
+  "name_weapon_113": {
+    "en": "Windbag of Woe +2",
+    "ua": "Міх лиха +2"
+  },
+  "name_weapon_114": {
+    "en": "Burly Bike Pump",
+    "ua": "Кремезна помпа"
+  },
+  "name_weapon_115": {
+    "en": "Burly Bike Pump +1",
+    "ua": "Кремезна помпа +1"
+  },
+  "name_weapon_116": {
+    "en": "Burly Bike Pump +2",
+    "ua": "Кремезна помпа +2"
+  },
+  "name_weapon_117": {
+    "en": "Nimbus Nightmare",
+    "ua": "Хмарний кошмар"
+  },
+  "name_weapon_118": {
+    "en": "Nimbus Nightmare +1",
+    "ua": "Хмарний кошмар +1"
+  },
+  "name_weapon_119": {
+    "en": "Nimbus Nightmare +2",
+    "ua": "Хмарний кошмар +2"
+  },
+  "name_weapon_a_000": {
+    "en": "a [System:Color name=\"red\" ]Rusty Blaster[/System:Color]",
+    "ua": "[System:Color name=\"red\" ]Іржавий бластер[/System:Color]"
+  },
+  "name_weapon_a_001": {
+    "en": "a [System:Color name=\"red\" ]Rusty Blaster +1[/System:Color]",
+    "ua": "[System:Color name=\"red\" ]Іржавий бластер +1[/System:Color]"
+  },
+  "name_weapon_a_002": {
+    "en": "a [System:Color name=\"red\" ]Rusty Blaster +2[/System:Color]",
+    "ua": "[System:Color name=\"red\" ]Іржавий бластер +2[/System:Color]"
+  },
+  "name_weapon_a_003": {
+    "en": "a [System:Color name=\"red\" ]Shiny Blaster[/System:Color]",
+    "ua": "[System:Color name=\"red\" ]Блискучий бластер[/System:Color]"
+  },
+  "name_weapon_a_004": {
+    "en": "a [System:Color name=\"red\" ]Shiny Blaster +1[/System:Color]",
+    "ua": "[System:Color name=\"red\" ]Блискучий бластер +1[/System:Color]"
+  },
+  "name_weapon_a_005": {
+    "en": "a [System:Color name=\"red\" ]Shiny Blaster +2[/System:Color]",
+    "ua": "[System:Color name=\"red\" ]Блискучий бластер +2[/System:Color]"
+  },
+  "name_weapon_a_006": {
+    "en": "a [System:Color name=\"red\" ]Spook Stopper[/System:Color]",
+    "ua": "[System:Color name=\"red\" ]Стоп-привид[/System:Color]"
+  },
+  "name_weapon_a_007": {
+    "en": "a [System:Color name=\"red\" ]Spook Stopper +1[/System:Color]",
+    "ua": "[System:Color name=\"red\" ]Стоп-привид +1[/System:Color]"
+  },
+  "name_weapon_a_008": {
+    "en": "a [System:Color name=\"red\" ]Spook Stopper +2[/System:Color]",
+    "ua": "[System:Color name=\"red\" ]Стоп-привид +2[/System:Color]"
+  },
+  "name_weapon_a_009": {
+    "en": "a [System:Color name=\"red\" ]Stargazer Special[/System:Color]",
+    "ua": "[System:Color name=\"red\" ]Звіздар-спец[/System:Color]"
+  },
+  "name_weapon_a_010": {
+    "en": "a [System:Color name=\"red\" ]Stargazer Special +1[/System:Color]",
+    "ua": "[System:Color name=\"red\" ]Звіздар-спец +1[/System:Color]"
+  },
+  "name_weapon_a_011": {
+    "en": "a [System:Color name=\"red\" ]Stargazer Special +2[/System:Color]",
+    "ua": "[System:Color name=\"red\" ]Звіздар-спец +2[/System:Color]"
+  },
+  "name_weapon_a_012": {
+    "en": "an [System:Color name=\"red\" ]Atomic Ray Gun[/System:Color]",
+    "ua": "[System:Color name=\"red\" ]Атомний променемет[/System:Color]"
+  },
+  "name_weapon_a_013": {
+    "en": "an [System:Color name=\"red\" ]Atomic Ray Gun +1[/System:Color]",
+    "ua": "[System:Color name=\"red\" ]Атомний променемет +1[/System:Color]"
+  },
+  "name_weapon_a_014": {
+    "en": "an [System:Color name=\"red\" ]Atomic Ray Gun +2[/System:Color]",
+    "ua": "[System:Color name=\"red\" ]Атомний променемет +2[/System:Color]"
+  },
+  "name_weapon_a_015": {
+    "en": "a [System:Color name=\"red\" ]Drill of Doom[/System:Color]",
+    "ua": "[System:Color name=\"red\" ]Дриль загибелі[/System:Color]"
+  },
+  "name_weapon_a_016": {
+    "en": "a [System:Color name=\"red\" ]Drill of Doom +1[/System:Color]",
+    "ua": "[System:Color name=\"red\" ]Дриль загибелі +1[/System:Color]"
+  },
+  "name_weapon_a_017": {
+    "en": "a [System:Color name=\"red\" ]Drill of Doom +2[/System:Color]",
+    "ua": "[System:Color name=\"red\" ]Дриль загибелі +2[/System:Color]"
+  },
+  "name_weapon_a_018": {
+    "en": "a [System:Color name=\"red\" ]Shuriken Beam[/System:Color]",
+    "ua": "[System:Color name=\"red\" ]Сюрикен-промінь[/System:Color]"
+  },
+  "name_weapon_a_019": {
+    "en": "a [System:Color name=\"red\" ]Shuriken Beam +1[/System:Color]",
+    "ua": "[System:Color name=\"red\" ]Сюрикен-промінь +1[/System:Color]"
+  },
+  "name_weapon_a_020": {
+    "en": "a [System:Color name=\"red\" ]Shuriken Beam +2[/System:Color]",
+    "ua": "[System:Color name=\"red\" ]Сюрикен-промінь +2[/System:Color]"
+  },
+  "name_weapon_a_021": {
+    "en": "a [System:Color name=\"red\" ]Trumpet of Terror[/System:Color]",
+    "ua": "[System:Color name=\"red\" ]Сурма жаху[/System:Color]"
+  },
+  "name_weapon_a_022": {
+    "en": "a [System:Color name=\"red\" ]Trumpet of Terror +1[/System:Color]",
+    "ua": "[System:Color name=\"red\" ]Сурма жаху +1[/System:Color]"
+  },
+  "name_weapon_a_023": {
+    "en": "a [System:Color name=\"red\" ]Trumpet of Terror +2[/System:Color]",
+    "ua": "[System:Color name=\"red\" ]Сурма жаху +2[/System:Color]"
+  },
+  "name_weapon_a_024": {
+    "en": "a [System:Color name=\"red\" ]Banshee Burner[/System:Color]",
+    "ua": "[System:Color name=\"red\" ]Палій банші[/System:Color]"
+  },
+  "name_weapon_a_025": {
+    "en": "a [System:Color name=\"red\" ]Banshee Burner +1[/System:Color]",
+    "ua": "[System:Color name=\"red\" ]Палій банші +1[/System:Color]"
+  },
+  "name_weapon_a_026": {
+    "en": "a [System:Color name=\"red\" ]Banshee Burner +2[/System:Color]",
+    "ua": "[System:Color name=\"red\" ]Палій банші +2[/System:Color]"
+  },
+  "name_weapon_a_027": {
+    "en": "a [System:Color name=\"red\" ]Paraffin Punisher[/System:Color]",
+    "ua": "[System:Color name=\"red\" ]Парафінова кара[/System:Color]"
+  },
+  "name_weapon_a_028": {
+    "en": "a [System:Color name=\"red\" ]Paraffin Punisher +1[/System:Color]",
+    "ua": "[System:Color name=\"red\" ]Парафінова кара +1[/System:Color]"
+  },
+  "name_weapon_a_029": {
+    "en": "a [System:Color name=\"red\" ]Paraffin Punisher +2[/System:Color]",
+    "ua": "[System:Color name=\"red\" ]Парафінова кара +2[/System:Color]"
+  },
+  "name_weapon_a_030": {
+    "en": "a [System:Color name=\"red\" ]Ye Olde Fire Hazard[/System:Color]",
+    "ua": "[System:Color name=\"red\" ]Старий підпалювач[/System:Color]"
+  },
+  "name_weapon_a_031": {
+    "en": "a [System:Color name=\"red\" ]Ye Olde Fire Hazard +1[/System:Color]",
+    "ua": "[System:Color name=\"red\" ]Старий підпалювач +1[/System:Color]"
+  },
+  "name_weapon_a_032": {
+    "en": "a [System:Color name=\"red\" ]Ye Olde Fire Hazard +2[/System:Color]",
+    "ua": "[System:Color name=\"red\" ]Старий підпалювач +2[/System:Color]"
+  },
+  "name_weapon_a_033": {
+    "en": "a [System:Color name=\"red\" ]Candle Cannon[/System:Color]",
+    "ua": "[System:Color name=\"red\" ]Свічкова гармата[/System:Color]"
+  },
+  "name_weapon_a_034": {
+    "en": "a [System:Color name=\"red\" ]Candle Cannon +1[/System:Color]",
+    "ua": "[System:Color name=\"red\" ]Свічкова гармата +1[/System:Color]"
+  },
+  "name_weapon_a_035": {
+    "en": "a [System:Color name=\"red\" ]Candle Cannon +2[/System:Color]",
+    "ua": "[System:Color name=\"red\" ]Свічкова гармата +2[/System:Color]"
+  },
+  "name_weapon_a_036": {
+    "en": "a [System:Color name=\"red\" ]Jack-o'-Magnum[/System:Color]",
+    "ua": "[System:Color name=\"red\" ]Гарбуз-магнум[/System:Color]"
+  },
+  "name_weapon_a_037": {
+    "en": "a [System:Color name=\"red\" ]Jack-o'-Magnum +1[/System:Color]",
+    "ua": "[System:Color name=\"red\" ]Гарбуз-магнум +1[/System:Color]"
+  },
+  "name_weapon_a_038": {
+    "en": "a [System:Color name=\"red\" ]Jack-o'-Magnum +2[/System:Color]",
+    "ua": "[System:Color name=\"red\" ]Гарбуз-магнум +2[/System:Color]"
+  },
+  "name_weapon_a_039": {
+    "en": "an [System:Color name=\"red\" ]Ovenator[/System:Color]",
+    "ua": "[System:Color name=\"red\" ]Пічнатор[/System:Color]"
+  },
+  "name_weapon_a_040": {
+    "en": "an [System:Color name=\"red\" ]Ovenator +1[/System:Color]",
+    "ua": "[System:Color name=\"red\" ]Пічнатор +1[/System:Color]"
+  },
+  "name_weapon_a_041": {
+    "en": "an [System:Color name=\"red\" ]Ovenator +2[/System:Color]",
+    "ua": "[System:Color name=\"red\" ]Пічнатор +2[/System:Color]"
+  },
+  "name_weapon_a_042": {
+    "en": "a [System:Color name=\"red\" ]Phoenix Fury[/System:Color]",
+    "ua": "[System:Color name=\"red\" ]Лють фенікса[/System:Color]"
+  },
+  "name_weapon_a_043": {
+    "en": "a [System:Color name=\"red\" ]Phoenix Fury +1[/System:Color]",
+    "ua": "[System:Color name=\"red\" ]Лють фенікса +1[/System:Color]"
+  },
+  "name_weapon_a_044": {
+    "en": "a [System:Color name=\"red\" ]Phoenix Fury +2[/System:Color]",
+    "ua": "[System:Color name=\"red\" ]Лють фенікса +2[/System:Color]"
+  },
+  "name_weapon_a_045": {
+    "en": "a [System:Color name=\"red\" ]Dragon Destroyer[/System:Color]",
+    "ua": "[System:Color name=\"red\" ]Драконоборець[/System:Color]"
+  },
+  "name_weapon_a_046": {
+    "en": "a [System:Color name=\"red\" ]Dragon Destroyer +1[/System:Color]",
+    "ua": "[System:Color name=\"red\" ]Драконоборець +1[/System:Color]"
+  },
+  "name_weapon_a_047": {
+    "en": "a [System:Color name=\"red\" ]Dragon Destroyer +2[/System:Color]",
+    "ua": "[System:Color name=\"red\" ]Драконоборець +2[/System:Color]"
+  },
+  "name_weapon_a_048": {
+    "en": "a [System:Color name=\"red\" ]Static Slinger[/System:Color]",
+    "ua": "[System:Color name=\"red\" ]Статикомет[/System:Color]"
+  },
+  "name_weapon_a_049": {
+    "en": "a [System:Color name=\"red\" ]Static Slinger +1[/System:Color]",
+    "ua": "[System:Color name=\"red\" ]Статикомет +1[/System:Color]"
+  },
+  "name_weapon_a_050": {
+    "en": "a [System:Color name=\"red\" ]Static Slinger +2[/System:Color]",
+    "ua": "[System:Color name=\"red\" ]Статикомет +2[/System:Color]"
+  },
+  "name_weapon_a_051": {
+    "en": "a [System:Color name=\"red\" ]Shade Shocker[/System:Color]",
+    "ua": "[System:Color name=\"red\" ]Тінешокер[/System:Color]"
+  },
+  "name_weapon_a_052": {
+    "en": "a [System:Color name=\"red\" ]Shade Shocker +1[/System:Color]",
+    "ua": "[System:Color name=\"red\" ]Тінешокер +1[/System:Color]"
+  },
+  "name_weapon_a_053": {
+    "en": "a [System:Color name=\"red\" ]Shade Shocker +2[/System:Color]",
+    "ua": "[System:Color name=\"red\" ]Тінешокер +2[/System:Color]"
+  },
+  "name_weapon_a_054": {
+    "en": "a [System:Color name=\"red\" ]Sparkatron[/System:Color]",
+    "ua": "[System:Color name=\"red\" ]Іскротрон[/System:Color]"
+  },
+  "name_weapon_a_055": {
+    "en": "a [System:Color name=\"red\" ]Sparkatron +1[/System:Color]",
+    "ua": "[System:Color name=\"red\" ]Іскротрон +1[/System:Color]"
+  },
+  "name_weapon_a_056": {
+    "en": "a [System:Color name=\"red\" ]Sparkatron +2[/System:Color]",
+    "ua": "[System:Color name=\"red\" ]Іскротрон +2[/System:Color]"
+  },
+  "name_weapon_a_057": {
+    "en": "an [System:Color name=\"red\" ]N-1 Plasma Rifle[/System:Color]",
+    "ua": "[System:Color name=\"red\" ]Плазмогвинтівка N-1[/System:Color]"
+  },
+  "name_weapon_a_058": {
+    "en": "an [System:Color name=\"red\" ]N-1 Plasma Rifle +1[/System:Color]",
+    "ua": "[System:Color name=\"red\" ]Плазмогвинтівка N-1 +1[/System:Color]"
+  },
+  "name_weapon_a_059": {
+    "en": "an [System:Color name=\"red\" ]N-1 Plasma Rifle +2[/System:Color]",
+    "ua": "[System:Color name=\"red\" ]Плазмогвинтівка N-1 +2[/System:Color]"
+  },
+  "name_weapon_a_060": {
+    "en": "an [System:Color name=\"red\" ]Arcane Cane[/System:Color]",
+    "ua": "[System:Color name=\"red\" ]Таємна тростина[/System:Color]"
+  },
+  "name_weapon_a_061": {
+    "en": "an [System:Color name=\"red\" ]Arcane Cane +1[/System:Color]",
+    "ua": "[System:Color name=\"red\" ]Таємна тростина +1[/System:Color]"
+  },
+  "name_weapon_a_062": {
+    "en": "an [System:Color name=\"red\" ]Arcane Cane +2[/System:Color]",
+    "ua": "[System:Color name=\"red\" ]Таємна тростина +2[/System:Color]"
+  },
+  "name_weapon_a_063": {
+    "en": "an [System:Color name=\"red\" ]Electron Buster[/System:Color]",
+    "ua": "[System:Color name=\"red\" ]Електронолом[/System:Color]"
+  },
+  "name_weapon_a_064": {
+    "en": "an [System:Color name=\"red\" ]Electron Buster +1[/System:Color]",
+    "ua": "[System:Color name=\"red\" ]Електронолом +1[/System:Color]"
+  },
+  "name_weapon_a_065": {
+    "en": "an [System:Color name=\"red\" ]Electron Buster +2[/System:Color]",
+    "ua": "[System:Color name=\"red\" ]Електронолом +2[/System:Color]"
+  },
+  "name_weapon_a_066": {
+    "en": "a [System:Color name=\"red\" ]Proton Shocker[/System:Color]",
+    "ua": "[System:Color name=\"red\" ]Протонний шокер[/System:Color]"
+  },
+  "name_weapon_a_067": {
+    "en": "a [System:Color name=\"red\" ]Proton Shocker +1[/System:Color]",
+    "ua": "[System:Color name=\"red\" ]Протонний шокер +1[/System:Color]"
+  },
+  "name_weapon_a_068": {
+    "en": "a [System:Color name=\"red\" ]Proton Shocker +2[/System:Color]",
+    "ua": "[System:Color name=\"red\" ]Протонний шокер +2[/System:Color]"
+  },
+  "name_weapon_a_069": {
+    "en": "a [System:Color name=\"red\" ]Thunder Mallet[/System:Color]",
+    "ua": "[System:Color name=\"red\" ]Громовий молот[/System:Color]"
+  },
+  "name_weapon_a_070": {
+    "en": "a [System:Color name=\"red\" ]Thunder Mallet +1[/System:Color]",
+    "ua": "[System:Color name=\"red\" ]Громовий молот +1[/System:Color]"
+  },
+  "name_weapon_a_071": {
+    "en": "a [System:Color name=\"red\" ]Thunder Mallet +2[/System:Color]",
+    "ua": "[System:Color name=\"red\" ]Громовий молот +2[/System:Color]"
+  },
+  "name_weapon_a_072": {
+    "en": "a [System:Color name=\"red\" ]Cryocutter[/System:Color]",
+    "ua": "[System:Color name=\"red\" ]Кріорізак[/System:Color]"
+  },
+  "name_weapon_a_073": {
+    "en": "a [System:Color name=\"red\" ]Cryocutter +1[/System:Color]",
+    "ua": "[System:Color name=\"red\" ]Кріорізак +1[/System:Color]"
+  },
+  "name_weapon_a_074": {
+    "en": "a [System:Color name=\"red\" ]Cryocutter +2[/System:Color]",
+    "ua": "[System:Color name=\"red\" ]Кріорізак +2[/System:Color]"
+  },
+  "name_weapon_a_075": {
+    "en": "a [System:Color name=\"red\" ]Snowblower[/System:Color]",
+    "ua": "[System:Color name=\"red\" ]Снігомет[/System:Color]"
+  },
+  "name_weapon_a_076": {
+    "en": "a [System:Color name=\"red\" ]Snowblower +1[/System:Color]",
+    "ua": "[System:Color name=\"red\" ]Снігомет +1[/System:Color]"
+  },
+  "name_weapon_a_077": {
+    "en": "a [System:Color name=\"red\" ]Snowblower +2[/System:Color]",
+    "ua": "[System:Color name=\"red\" ]Снігомет +2[/System:Color]"
+  },
+  "name_weapon_a_078": {
+    "en": "a [System:Color name=\"red\" ]Frostfang 2000[/System:Color]",
+    "ua": "[System:Color name=\"red\" ]Крижане ікло 2000[/System:Color]"
+  },
+  "name_weapon_a_079": {
+    "en": "a [System:Color name=\"red\" ]Frostfang 2000 +1[/System:Color]",
+    "ua": "[System:Color name=\"red\" ]Крижане ікло 2000 +1[/System:Color]"
+  },
+  "name_weapon_a_080": {
+    "en": "a [System:Color name=\"red\" ]Frostfang 2000 +2[/System:Color]",
+    "ua": "[System:Color name=\"red\" ]Крижане ікло 2000 +2[/System:Color]"
+  },
+  "name_weapon_a_081": {
+    "en": "an [System:Color name=\"red\" ]Abominable Snowgun[/System:Color]",
+    "ua": "[System:Color name=\"red\" ]Єті-гармата[/System:Color]"
+  },
+  "name_weapon_a_082": {
+    "en": "an [System:Color name=\"red\" ]Abominable Snowgun +1[/System:Color]",
+    "ua": "[System:Color name=\"red\" ]Єті-гармата +1[/System:Color]"
+  },
+  "name_weapon_a_083": {
+    "en": "an [System:Color name=\"red\" ]Abominable Snowgun +2[/System:Color]",
+    "ua": "[System:Color name=\"red\" ]Єті-гармата +2[/System:Color]"
+  },
+  "name_weapon_a_084": {
+    "en": "a [System:Color name=\"red\" ]Coldozer[/System:Color]",
+    "ua": "[System:Color name=\"red\" ]Холодозер[/System:Color]"
+  },
+  "name_weapon_a_085": {
+    "en": "a [System:Color name=\"red\" ]Coldozer +1[/System:Color]",
+    "ua": "[System:Color name=\"red\" ]Холодозер +1[/System:Color]"
+  },
+  "name_weapon_a_086": {
+    "en": "a [System:Color name=\"red\" ]Coldozer +2[/System:Color]",
+    "ua": "[System:Color name=\"red\" ]Холодозер +2[/System:Color]"
+  },
+  "name_weapon_a_087": {
+    "en": "a [System:Color name=\"red\" ]Freezy Peasy[/System:Color]",
+    "ua": "[System:Color name=\"red\" ]Морозь-легко[/System:Color]"
+  },
+  "name_weapon_a_088": {
+    "en": "a [System:Color name=\"red\" ]Freezy Peasy +1[/System:Color]",
+    "ua": "[System:Color name=\"red\" ]Морозь-легко +1[/System:Color]"
+  },
+  "name_weapon_a_089": {
+    "en": "a [System:Color name=\"red\" ]Freezy Peasy +2[/System:Color]",
+    "ua": "[System:Color name=\"red\" ]Морозь-легко +2[/System:Color]"
+  },
+  "name_weapon_a_090": {
+    "en": "an [System:Color name=\"red\" ]I Scream[/System:Color]",
+    "ua": "[System:Color name=\"red\" ]Крик-пломбір[/System:Color]"
+  },
+  "name_weapon_a_091": {
+    "en": "an [System:Color name=\"red\" ]I Scream +1[/System:Color]",
+    "ua": "[System:Color name=\"red\" ]Крик-пломбір +1[/System:Color]"
+  },
+  "name_weapon_a_092": {
+    "en": "an [System:Color name=\"red\" ]I Scream +2[/System:Color]",
+    "ua": "[System:Color name=\"red\" ]Крик-пломбір +2[/System:Color]"
+  },
+  "name_weapon_a_093": {
+    "en": "a [System:Color name=\"red\" ]Crystal Cannon[/System:Color]",
+    "ua": "[System:Color name=\"red\" ]Кришталемет[/System:Color]"
+  },
+  "name_weapon_a_094": {
+    "en": "a [System:Color name=\"red\" ]Crystal Cannon +1[/System:Color]",
+    "ua": "[System:Color name=\"red\" ]Кришталемет +1[/System:Color]"
+  },
+  "name_weapon_a_095": {
+    "en": "a [System:Color name=\"red\" ]Crystal Cannon +2[/System:Color]",
+    "ua": "[System:Color name=\"red\" ]Кришталемет +2[/System:Color]"
+  },
+  "name_weapon_a_096": {
+    "en": "an [System:Color name=\"red\" ]Ultrawing[/System:Color]",
+    "ua": "[System:Color name=\"red\" ]Ультракрило[/System:Color]"
+  },
+  "name_weapon_a_097": {
+    "en": "an [System:Color name=\"red\" ]Ultrawing +1[/System:Color]",
+    "ua": "[System:Color name=\"red\" ]Ультракрило +1[/System:Color]"
+  },
+  "name_weapon_a_098": {
+    "en": "an [System:Color name=\"red\" ]Ultrawing +2[/System:Color]",
+    "ua": "[System:Color name=\"red\" ]Ультракрило +2[/System:Color]"
+  },
+  "name_weapon_a_099": {
+    "en": "an [System:Color name=\"red\" ]Autumn Storm[/System:Color]",
+    "ua": "[System:Color name=\"red\" ]Осіння буря[/System:Color]"
+  },
+  "name_weapon_a_100": {
+    "en": "an [System:Color name=\"red\" ]Autumn Storm +1[/System:Color]",
+    "ua": "[System:Color name=\"red\" ]Осіння буря +1[/System:Color]"
+  },
+  "name_weapon_a_101": {
+    "en": "an [System:Color name=\"red\" ]Autumn Storm +2[/System:Color]",
+    "ua": "[System:Color name=\"red\" ]Осіння буря +2[/System:Color]"
+  },
+  "name_weapon_a_102": {
+    "en": "a [System:Color name=\"red\" ]Fancy Fan[/System:Color]",
+    "ua": "[System:Color name=\"red\" ]Модне віяло[/System:Color]"
+  },
+  "name_weapon_a_103": {
+    "en": "a [System:Color name=\"red\" ]Fancy Fan +1[/System:Color]",
+    "ua": "[System:Color name=\"red\" ]Модне віяло +1[/System:Color]"
+  },
+  "name_weapon_a_104": {
+    "en": "a [System:Color name=\"red\" ]Fancy Fan +2[/System:Color]",
+    "ua": "[System:Color name=\"red\" ]Модне віяло +2[/System:Color]"
+  },
+  "name_weapon_a_105": {
+    "en": "a [System:Color name=\"red\" ]Blusterbuss[/System:Color]",
+    "ua": "[System:Color name=\"red\" ]Вітромушкет[/System:Color]"
+  },
+  "name_weapon_a_106": {
+    "en": "a [System:Color name=\"red\" ]Blusterbuss +1[/System:Color]",
+    "ua": "[System:Color name=\"red\" ]Вітромушкет +1[/System:Color]"
+  },
+  "name_weapon_a_107": {
+    "en": "a [System:Color name=\"red\" ]Blusterbuss +2[/System:Color]",
+    "ua": "[System:Color name=\"red\" ]Вітромушкет +2[/System:Color]"
+  },
+  "name_weapon_a_108": {
+    "en": "a [System:Color name=\"red\" ]Salon Special[/System:Color]",
+    "ua": "[System:Color name=\"red\" ]Салонний фен[/System:Color]"
+  },
+  "name_weapon_a_109": {
+    "en": "a [System:Color name=\"red\" ]Salon Special +1[/System:Color]",
+    "ua": "[System:Color name=\"red\" ]Салонний фен +1[/System:Color]"
+  },
+  "name_weapon_a_110": {
+    "en": "a [System:Color name=\"red\" ]Salon Special +2[/System:Color]",
+    "ua": "[System:Color name=\"red\" ]Салонний фен +2[/System:Color]"
+  },
+  "name_weapon_a_111": {
+    "en": "a [System:Color name=\"red\" ]Windbag of Woe[/System:Color]",
+    "ua": "[System:Color name=\"red\" ]Міх лиха[/System:Color]"
+  },
+  "name_weapon_a_112": {
+    "en": "a [System:Color name=\"red\" ]Windbag of Woe +1[/System:Color]",
+    "ua": "[System:Color name=\"red\" ]Міх лиха +1[/System:Color]"
+  },
+  "name_weapon_a_113": {
+    "en": "a [System:Color name=\"red\" ]Windbag of Woe +2[/System:Color]",
+    "ua": "[System:Color name=\"red\" ]Міх лиха +2[/System:Color]"
+  },
+  "name_weapon_a_114": {
+    "en": "a [System:Color name=\"red\" ]Burly Bike Pump[/System:Color]",
+    "ua": "[System:Color name=\"red\" ]Кремезна помпа[/System:Color]"
+  },
+  "name_weapon_a_115": {
+    "en": "a [System:Color name=\"red\" ]Burly Bike Pump +1[/System:Color]",
+    "ua": "[System:Color name=\"red\" ]Кремезна помпа +1[/System:Color]"
+  },
+  "name_weapon_a_116": {
+    "en": "a [System:Color name=\"red\" ]Burly Bike Pump +2[/System:Color]",
+    "ua": "[System:Color name=\"red\" ]Кремезна помпа +2[/System:Color]"
+  },
+  "name_weapon_a_117": {
+    "en": "a [System:Color name=\"red\" ]Nimbus Nightmare[/System:Color]",
+    "ua": "[System:Color name=\"red\" ]Хмарний кошмар[/System:Color]"
+  },
+  "name_weapon_a_118": {
+    "en": "a [System:Color name=\"red\" ]Nimbus Nightmare +1[/System:Color]",
+    "ua": "[System:Color name=\"red\" ]Хмарний кошмар +1[/System:Color]"
+  },
+  "name_weapon_a_119": {
+    "en": "a [System:Color name=\"red\" ]Nimbus Nightmare +2[/System:Color]",
+    "ua": "[System:Color name=\"red\" ]Хмарний кошмар +2[/System:Color]"
+  },
+  "name_item_000": {
+    "en": "vial of potion",
+    "ua": "флакон зілля"
+  },
+  "name_item_001": {
+    "en": "bottle of potion",
+    "ua": "пляшка зілля"
+  },
+  "name_item_002": {
+    "en": "vat of potion",
+    "ua": "чан зілля"
+  },
+  "name_item_006": {
+    "en": "spare battery",
+    "ua": "запасна батарея"
+  },
+  "name_item_007": {
+    "en": "quick charge",
+    "ua": "швидкий заряд"
+  },
+  "name_item_008": {
+    "en": "miracle cure",
+    "ua": "чудодійні ліки"
+  },
+  "name_item_009": {
+    "en": "concealing cloak",
+    "ua": "плащ-невидимка"
+  },
+  "name_item_010": {
+    "en": "rainbow paint",
+    "ua": "веселкова фарба"
+  },
+  "name_item_a_000": {
+    "en": "a [System:Color name=\"red\" ]vial of potion[/System:Color]",
+    "ua": "[System:Color name=\"red\" ]флакон зілля[/System:Color]"
+  },
+  "name_item_a_001": {
+    "en": "a [System:Color name=\"red\" ]bottle of potion[/System:Color]",
+    "ua": "[System:Color name=\"red\" ]пляшка зілля[/System:Color]"
+  },
+  "name_item_a_002": {
+    "en": "a [System:Color name=\"red\" ]vat of potion[/System:Color]",
+    "ua": "[System:Color name=\"red\" ]чан зілля[/System:Color]"
+  },
+  "name_item_a_003": {
+    "en": "a [System:Color name=\"red\" ]health boost S[/System:Color]",
+    "ua": "[System:Color name=\"red\" ]підсилювач здоров'я S[/System:Color]"
+  },
+  "name_item_a_004": {
+    "en": "a [System:Color name=\"red\" ]health boost M[/System:Color]",
+    "ua": "[System:Color name=\"red\" ]підсилювач здоров'я M[/System:Color]"
+  },
+  "name_item_a_005": {
+    "en": "a [System:Color name=\"red\" ]health boost L[/System:Color]",
+    "ua": "[System:Color name=\"red\" ]підсилювач здоров'я L[/System:Color]"
+  },
+  "name_item_a_006": {
+    "en": "a [System:Color name=\"red\" ]spare battery[/System:Color]",
+    "ua": "[System:Color name=\"red\" ]запасна батарея[/System:Color]"
+  },
+  "name_item_a_007": {
+    "en": "a [System:Color name=\"red\" ]quick charge[/System:Color]",
+    "ua": "[System:Color name=\"red\" ]швидкий заряд[/System:Color]"
+  },
+  "name_item_a_008": {
+    "en": "a [System:Color name=\"red\" ]miracle cure[/System:Color]",
+    "ua": "[System:Color name=\"red\" ]чудодійні ліки[/System:Color]"
+  },
+  "name_item_a_009": {
+    "en": "a [System:Color name=\"red\" ]concealing cloak[/System:Color]",
+    "ua": "[System:Color name=\"red\" ]плащ-невидимка[/System:Color]"
+  },
+  "name_item_a_010": {
+    "en": "a [System:Color name=\"red\" ]can of rainbow paint[/System:Color]",
+    "ua": "[System:Color name=\"red\" ]банка веселкової фарби[/System:Color]"
+  },
+  "name_badge_000": {
+    "en": "attack badge",
+    "ua": "значок атаки"
+  },
+  "name_badge_001": {
+    "en": "attack badge +1",
+    "ua": "значок атаки +1"
+  },
+  "name_badge_002": {
+    "en": "attack badge +2",
+    "ua": "значок атаки +2"
+  },
+  "name_badge_003": {
+    "en": "defence badge",
+    "ua": "значок захисту"
+  },
+  "name_badge_004": {
+    "en": "defence badge +1",
+    "ua": "значок захисту +1"
+  },
+  "name_badge_005": {
+    "en": "defence badge +2",
+    "ua": "значок захисту +2"
+  },
+  "name_badge_006": {
+    "en": "charge badge",
+    "ua": "значок заряду"
+  },
+  "name_badge_007": {
+    "en": "charge badge +1",
+    "ua": "значок заряду +1"
+  },
+  "name_badge_008": {
+    "en": "charge badge +2",
+    "ua": "значок заряду +2"
+  },
+  "name_badge_009": {
+    "en": "battery badge",
+    "ua": "значок батареї"
+  },
+  "name_badge_010": {
+    "en": "battery badge +1",
+    "ua": "значок батареї +1"
+  },
+  "name_badge_011": {
+    "en": "battery badge +2",
+    "ua": "значок батареї +2"
+  },
+  "name_badge_012": {
+    "en": "skill badge",
+    "ua": "значок уміння"
+  },
+  "name_badge_013": {
+    "en": "skill badge +1",
+    "ua": "значок уміння +1"
+  },
+  "name_badge_014": {
+    "en": "skill badge +2",
+    "ua": "значок уміння +2"
+  },
+  "name_badge_015": {
+    "en": "experience badge",
+    "ua": "значок досвіду"
+  },
+  "name_badge_016": {
+    "en": "experience badge +1",
+    "ua": "значок досвіду +1"
+  },
+  "name_badge_017": {
+    "en": "experience badge +2",
+    "ua": "значок досвіду +2"
+  },
+  "name_badge_018": {
+    "en": "gem badge",
+    "ua": "значок самоцвітів"
+  },
+  "name_badge_019": {
+    "en": "gem badge +1",
+    "ua": "значок самоцвітів +1"
+  },
+  "name_badge_020": {
+    "en": "gem badge +2",
+    "ua": "значок самоцвітів +2"
+  },
+  "name_badge_021": {
+    "en": "escape badge",
+    "ua": "значок утечі"
+  },
+  "name_badge_022": {
+    "en": "escape badge +1",
+    "ua": "значок утечі +1"
+  },
+  "name_badge_023": {
+    "en": "escape badge +2",
+    "ua": "значок утечі +2"
+  },
+  "name_badge_a_000": {
+    "en": "an [System:Color name=\"red\" ]attack badge[/System:Color]",
+    "ua": "[System:Color name=\"red\" ]значок атаки[/System:Color]"
+  },
+  "name_badge_a_001": {
+    "en": "an [System:Color name=\"red\" ]attack badge +1[/System:Color]",
+    "ua": "[System:Color name=\"red\" ]значок атаки +1[/System:Color]"
+  },
+  "name_badge_a_002": {
+    "en": "an [System:Color name=\"red\" ]attack badge +2[/System:Color]",
+    "ua": "[System:Color name=\"red\" ]значок атаки +2[/System:Color]"
+  },
+  "name_badge_a_003": {
+    "en": "a [System:Color name=\"red\" ]defence badge[/System:Color]",
+    "ua": "[System:Color name=\"red\" ]значок захисту[/System:Color]"
+  },
+  "name_badge_a_004": {
+    "en": "a [System:Color name=\"red\" ]defence badge +1[/System:Color]",
+    "ua": "[System:Color name=\"red\" ]значок захисту +1[/System:Color]"
+  },
+  "name_badge_a_005": {
+    "en": "a [System:Color name=\"red\" ]defence badge +2[/System:Color]",
+    "ua": "[System:Color name=\"red\" ]значок захисту +2[/System:Color]"
+  },
+  "name_badge_a_006": {
+    "en": "a [System:Color name=\"red\" ]charge badge[/System:Color]",
+    "ua": "[System:Color name=\"red\" ]значок заряду[/System:Color]"
+  },
+  "name_badge_a_007": {
+    "en": "a [System:Color name=\"red\" ]charge badge +1[/System:Color]",
+    "ua": "[System:Color name=\"red\" ]значок заряду +1[/System:Color]"
+  },
+  "name_badge_a_008": {
+    "en": "a [System:Color name=\"red\" ]charge badge +2[/System:Color]",
+    "ua": "[System:Color name=\"red\" ]значок заряду +2[/System:Color]"
+  },
+  "name_badge_a_009": {
+    "en": "a [System:Color name=\"red\" ]battery badge[/System:Color]",
+    "ua": "[System:Color name=\"red\" ]значок батареї[/System:Color]"
+  },
+  "name_badge_a_010": {
+    "en": "a [System:Color name=\"red\" ]battery badge +1[/System:Color]",
+    "ua": "[System:Color name=\"red\" ]значок батареї +1[/System:Color]"
+  },
+  "name_badge_a_011": {
+    "en": "a [System:Color name=\"red\" ]battery badge +2[/System:Color]",
+    "ua": "[System:Color name=\"red\" ]значок батареї +2[/System:Color]"
+  },
+  "name_badge_a_012": {
+    "en": "a [System:Color name=\"red\" ]skill badge[/System:Color]",
+    "ua": "[System:Color name=\"red\" ]значок уміння[/System:Color]"
+  },
+  "name_badge_a_013": {
+    "en": "a [System:Color name=\"red\" ]skill badge +1[/System:Color]",
+    "ua": "[System:Color name=\"red\" ]значок уміння +1[/System:Color]"
+  },
+  "name_badge_a_014": {
+    "en": "a [System:Color name=\"red\" ]skill badge +2[/System:Color]",
+    "ua": "[System:Color name=\"red\" ]значок уміння +2[/System:Color]"
+  },
+  "name_badge_a_015": {
+    "en": "an [System:Color name=\"red\" ]experience badge[/System:Color]",
+    "ua": "[System:Color name=\"red\" ]значок досвіду[/System:Color]"
+  },
+  "name_badge_a_016": {
+    "en": "an [System:Color name=\"red\" ]experience badge +1[/System:Color]",
+    "ua": "[System:Color name=\"red\" ]значок досвіду +1[/System:Color]"
+  },
+  "name_badge_a_017": {
+    "en": "an [System:Color name=\"red\" ]experience badge +2[/System:Color]",
+    "ua": "[System:Color name=\"red\" ]значок досвіду +2[/System:Color]"
+  },
+  "name_badge_a_018": {
+    "en": "a [System:Color name=\"red\" ]gem badge[/System:Color]",
+    "ua": "[System:Color name=\"red\" ]значок самоцвітів[/System:Color]"
+  },
+  "name_badge_a_019": {
+    "en": "a [System:Color name=\"red\" ]gem badge +1[/System:Color]",
+    "ua": "[System:Color name=\"red\" ]значок самоцвітів +1[/System:Color]"
+  },
+  "name_badge_a_020": {
+    "en": "a [System:Color name=\"red\" ]gem badge +2[/System:Color]",
+    "ua": "[System:Color name=\"red\" ]значок самоцвітів +2[/System:Color]"
+  },
+  "name_badge_a_021": {
+    "en": "an [System:Color name=\"red\" ]escape badge[/System:Color]",
+    "ua": "[System:Color name=\"red\" ]значок утечі[/System:Color]"
+  },
+  "name_badge_a_022": {
+    "en": "an [System:Color name=\"red\" ]escape badge +1[/System:Color]",
+    "ua": "[System:Color name=\"red\" ]значок утечі +1[/System:Color]"
+  },
+  "name_badge_a_023": {
+    "en": "an [System:Color name=\"red\" ]escape badge +2[/System:Color]",
+    "ua": "[System:Color name=\"red\" ]значок утечі +2[/System:Color]"
+  },
+  "name_skill_001": {
+    "en": "Extra Shot",
+    "ua": "Дод. постріл"
+  },
+  "name_skill_002": {
+    "en": "Combo Shot",
+    "ua": "Комбо-постріл"
+  },
+  "name_skill_003": {
+    "en": "Critical Shot",
+    "ua": "Крит. постріл"
+  },
+  "name_skill_004": {
+    "en": "Random Shot",
+    "ua": "Постріл навмання"
+  },
+  "name_skill_005": {
+    "en": "Shock",
+    "ua": "Шок"
+  },
+  "name_skill_006": {
+    "en": "Freeze",
+    "ua": "Заморозка"
+  },
+  "name_skill_007": {
+    "en": "Burn",
+    "ua": "Опік"
+  },
+  "name_skill_008": {
+    "en": "Recharge",
+    "ua": "Підзарядка"
+  },
+  "name_skill_009": {
+    "en": "Absorb",
+    "ua": "Поглинання"
+  },
+  "name_skill_010": {
+    "en": "Nullify",
+    "ua": "Анулювання"
+  },
+  "name_skill_011": {
+    "en": "Snipe",
+    "ua": "Снайпер"
+  },
+  "name_skill_012": {
+    "en": "Weaken",
+    "ua": "Послаблення"
+  },
+  "name_skill_013": {
+    "en": "Disable",
+    "ua": "Знешкодження"
+  },
+  "name_skill_014": {
+    "en": "Lucky Seven",
+    "ua": "Щаслива сімка"
+  },
+  "name_skill_015": {
+    "en": "Mirror",
+    "ua": "Дзеркало"
+  },
+  "name_skill_016": {
+    "en": "Reflect",
+    "ua": "Відбиття"
+  },
+  "name_skill_017": {
+    "en": "Counter",
+    "ua": "Контратака"
+  },
+  "name_skill_018": {
+    "en": "First Aid",
+    "ua": "Перша допомога"
+  },
+  "name_skill_019": {
+    "en": "Heal",
+    "ua": "Лікування"
+  },
+  "name_skill_020": {
+    "en": "Super Heal",
+    "ua": "Суперлікування"
+  },
+  "name_skill_021": {
+    "en": "Recovery",
+    "ua": "Відновлення"
+  },
+  "name_skill_022": {
+    "en": "Battery Boost",
+    "ua": "Заряд батареї"
+  },
+  "name_skill_023": {
+    "en": "Lifeline",
+    "ua": "Рятівна нитка"
+  },
+  "name_skill_024": {
+    "en": "Might",
+    "ua": "Міць"
+  },
+  "name_skill_025": {
+    "en": "Steel Skin",
+    "ua": "Сталева шкіра"
+  },
+  "name_skill_026": {
+    "en": "Cure",
+    "ua": "Зцілення"
+  },
+  "name_skill_027": {
+    "en": "Economiser",
+    "ua": "Ощадливість"
+  },
+  "name_enemy_00": {
+    "en": "Smiling Spook",
+    "ua": "Усміхнений привид"
+  },
+  "name_enemy_01": {
+    "en": "Spiteful Spook",
+    "ua": "Злісний привид"
+  },
+  "name_enemy_02": {
+    "en": "Poochergeist",
+    "ua": "Песиголовець"
+  },
+  "name_enemy_03": {
+    "en": "Skeleterror",
+    "ua": "Скелетжах"
+  },
+  "name_enemy_04": {
+    "en": "Skeleterrier",
+    "ua": "Скелетер'єр"
+  },
+  "name_enemy_05": {
+    "en": "Animated Armour",
+    "ua": "Ожилі обладунки"
+  },
+  "name_enemy_06": {
+    "en": "Night Nibbler",
+    "ua": "Нічний кусака"
+  },
+  "name_enemy_07": {
+    "en": "Vicious Vampire",
+    "ua": "Лютий вампір"
+  },
+  "name_enemy_08": {
+    "en": "Groan-a Lisa",
+    "ua": "Мона Стогна"
+  },
+  "name_enemy_09": {
+    "en": "Hardback Horror",
+    "ua": "Книжкове жахіття"
+  },
+  "name_enemy_10": {
+    "en": "Mr Mummy",
+    "ua": "Пан Мумія"
+  },
+  "name_enemy_11": {
+    "en": "Scarewolf",
+    "ua": "Перевовк"
+  },
+  "name_enemy_12": {
+    "en": "Chompy Chest",
+    "ua": "Скриня-кусаня"
+  },
+  "name_enemy_13": {
+    "en": "Beelzebrat",
+    "ua": "Вельзебесик"
+  },
+  "name_enemy_14": {
+    "en": "Beelzeboss",
+    "ua": "Вельзебос"
+  },
+  "name_enemy_15": {
+    "en": "Sir X-Ray",
+    "ua": "Сер Рентген"
+  },
+  "name_enemy_16": {
+    "en": "Snarlequin",
+    "ua": "Гарчекін"
+  },
+  "name_enemy_17": {
+    "en": "Mummy's Boy",
+    "ua": "Маминий синок"
+  },
+  "name_enemy_18": {
+    "en": "Demon King Arzodius",
+    "ua": "Король демонів Арзодій"
+  },
+  "enemyatk_1_1": {
+    "en": "Scare",
+    "ua": "Переляк"
+  },
+  "enemyatk_1_2": {
+    "en": "Lick",
+    "ua": "Лизь"
+  },
+  "enemyatk_3_1": {
+    "en": "Tackle",
+    "ua": "Таран"
+  },
+  "enemyatk_3_2": {
+    "en": "Body Slam",
+    "ua": "Удар тілом"
+  },
+  "enemyatk_5_1": {
+    "en": "Bark",
+    "ua": "Гавкіт"
+  },
+  "enemyatk_5_2": {
+    "en": "Bite",
+    "ua": "Укус"
+  },
+  "enemyatk_7_1": {
+    "en": "Slap",
+    "ua": "Ляпас"
+  },
+  "enemyatk_7_2": {
+    "en": "Skull Toss",
+    "ua": "Кидок черепа"
+  },
+  "enemyatk_8_3": {
+    "en": "Howl",
+    "ua": "Виття"
+  },
+  "enemyatk_9_1": {
+    "en": "Chop",
+    "ua": "Рубонути"
+  },
+  "enemyatk_9_2": {
+    "en": "Guard",
+    "ua": "Захист"
+  },
+  "enemyatk_11_1": {
+    "en": "Ultrasonic Scream",
+    "ua": "Ультразвук"
+  },
+  "enemyatk_11_2": {
+    "en": "Drain",
+    "ua": "Смоктання"
+  },
+  "enemyatk_12_1": {
+    "en": "Bat Bash",
+    "ua": "Удар кажана"
+  },
+  "enemyatk_13_1": {
+    "en": "Peekaboo",
+    "ua": "Ку-ку"
+  },
+  "enemyatk_13_2": {
+    "en": "Canvas Curse",
+    "ua": "Прокляття полотна"
+  },
+  "enemyatk_14_1": {
+    "en": "Barrage o' Books",
+    "ua": "Книгопад"
+  },
+  "enemyatk_14_2": {
+    "en": "Dark Magic",
+    "ua": "Темна магія"
+  },
+  "enemyatk_15_1": {
+    "en": "Bandage Whip",
+    "ua": "Бинтобатіг"
+  },
+  "enemyatk_15_2": {
+    "en": "Rotten Breath",
+    "ua": "Гнилий подих"
+  },
+  "enemyatk_16_1": {
+    "en": "Fang Frenzy",
+    "ua": "Шал іклів"
+  },
+  "enemyatk_16_2": {
+    "en": "Razor Claws",
+    "ua": "Гострі кігті"
+  },
+  "enemyatk_17_1": {
+    "en": "Chomp",
+    "ua": "Хап"
+  },
+  "enemyatk_17_2": {
+    "en": "Slash",
+    "ua": "Поріз"
+  },
+  "enemyatk_17_3": {
+    "en": "Surprise",
+    "ua": "Сюрприз"
+  },
+  "enemyatk_19_1": {
+    "en": "Jinx",
+    "ua": "Наврочення"
+  },
+  "enemyatk_19_2": {
+    "en": "Curse",
+    "ua": "Прокляття"
+  },
+  "enemyatk_21_1": {
+    "en": "Hex",
+    "ua": "Чари"
+  },
+  "enemyatk_21_2": {
+    "en": "Regenerate",
+    "ua": "Регенерація"
+  },
+  "enemyatk_23_1": {
+    "en": "Stab",
+    "ua": "Укол"
+  },
+  "enemyatk_23_2": {
+    "en": "Skewer",
+    "ua": "Прокол"
+  },
+  "enemyatk_23_3": {
+    "en": "Eerie Armour",
+    "ua": "Моторошна броня"
+  },
+  "enemyatk_24_2": {
+    "en": "Sleep Spell",
+    "ua": "Сонні чари"
+  },
+  "enemyatk_25_1": {
+    "en": "Cranium Crush",
+    "ua": "Череполам"
+  },
+  "enemyatk_25_2": {
+    "en": "Bandage Blast",
+    "ua": "Бинтовибух"
+  },
+  "enemyatk_25_3": {
+    "en": "Toxic Breath",
+    "ua": "Отруйний подих"
+  },
+  "enemyatk_26_1": {
+    "en": "Demon King Combo",
+    "ua": "Комбо Короля демонів"
+  },
+  "enemyatk_26_2": {
+    "en": "Dark Destruction",
+    "ua": "Темне знищення"
+  },
+  "enemyatk_26_3": {
+    "en": "Mirror Magic",
+    "ua": "Дзеркальна магія"
+  },
+  "info_item_000": {
+    "en": "A small vial of potion\r\nthat restores 20 HP.",
+    "ua": "Маленький флакон зілля,\nщо відновлює 20 ОЗ."
+  },
+  "info_item_001": {
+    "en": "A big bottle of potion\r\nthat restores 50 HP.",
+    "ua": "Велика пляшка зілля,\nщо відновлює 50 ОЗ."
+  },
+  "info_item_002": {
+    "en": "A sizeable vat of potion\r\nthat restores 100 HP.",
+    "ua": "Чималий чан зілля,\nщо відновлює 100 ОЗ."
+  },
+  "info_item_006": {
+    "en": "Use one of these during battle\r\nto prevent your main batteries\r\nfrom draining for a short time.",
+    "ua": "Якщо використати в бою,\nосновні батареї недовго\nне розряджатимуться."
+  },
+  "info_item_007": {
+    "en": "This ingenious item doubles your\r\nweapon's charge shot speed\r\nfor a short time.",
+    "ua": "Цей геніальний предмет недовго\nподвоює швидкість зарядженого\nпострілу зброї."
+  },
+  "info_item_008": {
+    "en": "A wondrous cure-all, perfect\r\nfor ridding you of the status\r\nailments your enemies can\r\ninflict upon you during battle.",
+    "ua": "Чудодійні ліки від усього:\nпозбавляють неприємних станів,\nякі вороги можуть накласти\nна вас у бою."
+  },
+  "info_item_009": {
+    "en": "Slip by enemies unnoticed!\r\nThis will hide you from sight and\r\nprevent attacks long enough for\r\nyou to set three pieces down.",
+    "ua": "Прослизніть повз ворогів!\nПлащ ховає вас від очей і\nзахищає від атак, поки ви\nкладете три частинки."
+  },
+  "info_item_010": {
+    "en": "This remarkable item allows you\r\nto change the colour of a piece\r\nyou've been given.",
+    "ua": "Цей дивовижний предмет дає\nзмогу змінити колір отриманої\nчастинки."
+  },
+  "info_badge_000": {
+    "en": "A mysterious badge that grants a\r\n+[0] bonus to your attack stat. You\r\ndon't have to use it to feel the effect.\r\nJust keep it with you!",
+    "ua": "Загадковий значок, що дає\n+[0] до атаки. Використовувати\nйого не треба, щоб він діяв.\nПросто тримайте при собі!"
+  },
+  "info_badge_001": {
+    "en": "A curious badge that grants a\r\n+[0] bonus to your defence stat.\r\nYou don't have to use it to feel the\r\neffect. Just keep it with you!",
+    "ua": "Цікавий значок, що дає\n+[0] до захисту.\nВикористовувати його не треба,\nщоб він діяв. Просто тримайте при собі!"
+  },
+  "info_badge_002": {
+    "en": "An intriguing badge that boosts your\r\ncharge shot speed by [0]%. You don't\r\nhave to use it to feel the effect.\r\nJust keep it with you!",
+    "ua": "Інтригуючий значок, що прискорює\nзаряджений постріл на [0]%.\nВикористовувати його не треба.\nПросто тримайте при собі!"
+  },
+  "info_badge_003": {
+    "en": "A marvellous badge that boosts your\r\nbattery recharge speed by [0]%.\r\nYou don't have to use it to feel the\r\neffect. Just keep it with you!",
+    "ua": "Чудовий значок, що прискорює\nпідзарядку батареї на [0]%.\nВикористовувати його не треба.\nПросто тримайте при собі!"
+  },
+  "info_badge_004": {
+    "en": "An unusual badge that boosts your\r\nweapon skill activation rate by [0]%.\r\nYou don't have to use it to feel the\r\neffect. Just keep it with you!",
+    "ua": "Незвичайний значок, що підвищує\nшанс спрацювання вміння на [0]%.\nВикористовувати його не треба.\nПросто тримайте при собі!"
+  },
+  "info_badge_005": {
+    "en": "A fascinating badge that boosts the\r\namount of exp you earn in battle by\r\n[0]%. You don't have to use it to feel\r\nthe effect. Just keep it with you!",
+    "ua": "Захопливий значок, що збільшує\nдосвід за бої на [0]%.\nВикористовувати його не треба.\nПросто тримайте при собі!"
+  },
+  "info_badge_006": {
+    "en": "A delightful badge that boosts the\r\nnumber of gems you earn in battle\r\nby [0]%. You don't have to use it to\r\nfeel the effect. Just keep it with you!",
+    "ua": "Чарівний значок, що збільшує\nкількість самоцвітів за бої\nна [0]%. Використовувати його\nне треба. Просто тримайте при собі!"
+  },
+  "info_badge_007": {
+    "en": "A rather interesting badge that boosts\r\nyour escape speed by [0]%. You don't\r\nhave to use it to feel the effect. Just\r\nkeep it with you!",
+    "ua": "Доволі цікавий значок, що прискорює\nутечу на [0]%. Використовувати\nйого не треба. Просто тримайте\nпри собі!"
+  },
+  "info_skill_001": {
+    "en": "A fairly strong bonus attack.",
+    "ua": "Доволі сильна бонусна атака."
+  },
+  "info_skill_002": {
+    "en": "A strong bonus attack.",
+    "ua": "Сильна бонусна атака."
+  },
+  "info_skill_003": {
+    "en": "A powerful bonus attack.",
+    "ua": "Потужна бонусна атака."
+  },
+  "info_skill_004": {
+    "en": "A bonus attack worth\r\n[0]x a normal shot.",
+    "ua": "Бонусна атака силою\n[0]x звичайного пострілу."
+  },
+  "info_skill_005": {
+    "en": "Stuns and immobilises an entity\r\nfor [0] seconds.",
+    "ua": "Оглушує й знерухомлює\nсутність на [0] с."
+  },
+  "info_skill_006": {
+    "en": "Freezes and immobilises an\r\nentity for [0][1] seconds.",
+    "ua": "Заморожує й знерухомлює\nсутність на [0][1] с."
+  },
+  "info_skill_007": {
+    "en": "Burns an entity, delivering extra\r\ndamage for a short time.",
+    "ua": "Підпалює сутність — недовго\nзавдає їй додаткової шкоди."
+  },
+  "info_skill_008": {
+    "en": "Restores [0] units of\r\nbattery power.",
+    "ua": "Відновлює [0] од.\nзаряду батареї."
+  },
+  "info_skill_009": {
+    "en": "Restores HP equal to half\r\nthe damage you just inflicted.",
+    "ua": "Відновлює ОЗ на половину\nщойно завданої шкоди."
+  },
+  "info_skill_010": {
+    "en": "Nullifies the effects of an\r\nenemy's power-up.",
+    "ua": "Скасовує дію підсилення\nворога."
+  },
+  "info_skill_011": {
+    "en": "A bonus attack three times\r\nmore powerful than normal.",
+    "ua": "Бонусна атака втричі\nсильніша за звичайну."
+  },
+  "info_skill_012": {
+    "en": "Drops an entity's attack power\r\nby [0][1]% for a short time.",
+    "ua": "Недовго знижує атаку\nсутності на [0][1]%."
+  },
+  "info_skill_013": {
+    "en": "Drops an entity's defence power\r\nby [0][1]% for a short while.",
+    "ua": "Недовго знижує захист\nсутності на [0][1]%."
+  },
+  "info_skill_014": {
+    "en": "A bonus attack seven times\r\nmore powerful than normal.",
+    "ua": "Бонусна атака всемеро\nсильніша за звичайну."
+  },
+  "info_skill_015": {
+    "en": "Inflicts half of the damage\r\nyou took onto your enemy.",
+    "ua": "Завдає ворогові половину\nотриманої вами шкоди."
+  },
+  "info_skill_016": {
+    "en": "Bounces all of the damage\r\nyou took back to your foe.",
+    "ua": "Повертає ворогові всю\nотриману вами шкоду."
+  },
+  "info_skill_017": {
+    "en": "Counters an entity's attack\r\nwith a normal attack.",
+    "ua": "Відповідає на атаку сутності\nзвичайною атакою."
+  },
+  "info_skill_018": {
+    "en": "Restores 25% of the HP\r\nyou've lost.",
+    "ua": "Відновлює 25% утрачених\nОЗ."
+  },
+  "info_skill_019": {
+    "en": "Restores 50% of the HP\r\nyou've lost.",
+    "ua": "Відновлює 50% утрачених\nОЗ."
+  },
+  "info_skill_020": {
+    "en": "Restores all of the HP\r\nyou've lost.",
+    "ua": "Відновлює всі утрачені\nОЗ."
+  },
+  "info_skill_021": {
+    "en": "Transforms half of damage\r\nblocked into HP.",
+    "ua": "Перетворює половину\nвідбитої шкоди на ОЗ."
+  },
+  "info_skill_022": {
+    "en": "Restores [0] units of\r\nbattery power.",
+    "ua": "Відновлює [0] од.\nзаряду батареї."
+  },
+  "info_skill_023": {
+    "en": "Retains 1 HP when health\r\nis fully depleted.",
+    "ua": "Залишає 1 ОЗ, коли здоров'я\nповністю вичерпано."
+  },
+  "info_skill_024": {
+    "en": "Raises your attack by\r\n[0][1]% for a short time.",
+    "ua": "Недовго підвищує атаку\nна [0][1]%."
+  },
+  "info_skill_025": {
+    "en": "Raises your defence by\r\n[0][1]% for a short time.",
+    "ua": "Недовго підвищує захист\nна [0][1]%."
+  },
+  "info_skill_026": {
+    "en": "Rids you of a status ailment\r\ninflicted upon you by an entity.",
+    "ua": "Знімає неприємний стан,\nнакладений сутністю."
+  },
+  "info_skill_027": {
+    "en": "Decreases battery usage\r\nspeed while guarding.",
+    "ua": "Зменшує витрату батареї\nпід час захисту."
+  },
+  "staff_name_00": {
+    "en": "Yuji Naka",
+    "ua": ""
+  },
+  "staff_name_01": {
+    "en": "Yusaku Yamanaka",
+    "ua": ""
+  },
+  "staff_name_02": {
+    "en": "Masakazu Miura",
+    "ua": ""
+  },
+  "staff_name_03": {
+    "en": "Tetsuro Oguro",
+    "ua": ""
+  },
+  "staff_name_04": {
+    "en": "Tomonori Sakamoto",
+    "ua": ""
+  },
+  "staff_name_05": {
+    "en": "Hidenori Oda",
+    "ua": ""
+  },
+  "staff_name_06": {
+    "en": "Chika Kawaguchi",
+    "ua": ""
+  },
+  "staff_name_07": {
+    "en": "Mizuho Umezu",
+    "ua": ""
+  },
+  "staff_name_08": {
+    "en": "Minori Hisamatsu",
+    "ua": ""
+  },
+  "staff_name_09": {
+    "en": "Ayako Inoue",
+    "ua": ""
+  },
+  "staff_name_10": {
+    "en": "Masataka Miura",
+    "ua": ""
+  },
+  "staff_name_11": {
+    "en": "Naoki Taguchi",
+    "ua": ""
+  },
+  "staff_name_12": {
+    "en": "Mari Hamada",
+    "ua": ""
+  },
+  "staff_name_13": {
+    "en": "Junna Sato",
+    "ua": ""
+  },
+  "staff_name_14": {
+    "en": "Isao Takeuchi",
+    "ua": ""
+  },
+  "staff_name_15": {
+    "en": "Tatsuya Suto",
+    "ua": ""
+  },
+  "staff_name_16": {
+    "en": "Takeshi Ichimura",
+    "ua": ""
+  },
+  "staff_name_17": {
+    "en": "Risako Watanabe",
+    "ua": ""
+  },
+  "staff_name_18": {
+    "en": "Yoshiro Mori",
+    "ua": ""
+  },
+  "staff_name_30": {
+    "en": "Megumi Komagata",
+    "ua": ""
+  },
+  "staff_name_31": {
+    "en": "Kyoko Nakamura",
+    "ua": ""
+  },
+  "staff_name_32": {
+    "en": "Nobuo Kiyota",
+    "ua": ""
+  },
+  "staff_name_50": {
+    "en": "Kouichi Kawamoto",
+    "ua": ""
+  },
+  "staff_name_51": {
+    "en": "Toyokazu Nonaka",
+    "ua": ""
+  },
+  "staff_name_52": {
+    "en": "Ryusuke Niitani",
+    "ua": ""
+  },
+  "staff_name_53": {
+    "en": "Takehiko Hosokawa",
+    "ua": ""
+  },
+  "staff_name_54": {
+    "en": "Masahiro Shiotani",
+    "ua": ""
+  },
+  "staff_name_55": {
+    "en": "Yo Ohnishi ",
+    "ua": ""
+  },
+  "staff_name_56": {
+    "en": "Akiko Kato",
+    "ua": ""
+  },
+  "staff_name_57": {
+    "en": "Tsuyoshi Watanabe",
+    "ua": ""
+  },
+  "staff_name_58": {
+    "en": "Kenji Yamamoto",
+    "ua": ""
+  },
+  "staff_name_59": {
+    "en": "Yuichi Ozaki",
+    "ua": ""
+  },
+  "staff_name_60": {
+    "en": "Minako Hamano",
+    "ua": ""
+  },
+  "staff_name_61": {
+    "en": "Shingo Okamoto",
+    "ua": ""
+  },
+  "staff_name_62": {
+    "en": "Mario Club",
+    "ua": ""
+  },
+  "staff_name_63": {
+    "en": "NOA Product Testing",
+    "ua": ""
+  },
+  "staff_name_64": {
+    "en": "NOE Quality Assurance",
+    "ua": ""
+  },
+  "staff_name_65": {
+    "en": "NOE Localisation",
+    "ua": ""
+  },
+  "staff_name_66": {
+    "en": "NOA Localization",
+    "ua": ""
+  },
+  "staff_name_67": {
+    "en": "StreetPass Mii Plaza Team",
+    "ua": ""
+  },
+  "staff_name_68": {
+    "en": "Shinya Takahashi",
+    "ua": ""
+  },
+  "staff_name_69": {
+    "en": "Satoru Iwata",
+    "ua": ""
+  },
+  "staff_title_00": {
+    "en": "STAFF CREDITS",
+    "ua": "ТИТРИ"
+  },
+  "staff_title_01": {
+    "en": "Producer",
+    "ua": "Продюсер"
+  },
+  "staff_title_02": {
+    "en": "Director & Game Design",
+    "ua": "Режисер і геймдизайн"
+  },
+  "staff_title_03": {
+    "en": "Program Director",
+    "ua": "Керівник програмування"
+  },
+  "staff_title_04": {
+    "en": "Programming",
+    "ua": "Програмування"
+  },
+  "staff_title_05": {
+    "en": "Art Director",
+    "ua": "Арт-директор"
+  },
+  "staff_title_06": {
+    "en": "Graphic Design",
+    "ua": "Графічний дизайн"
+  },
+  "staff_title_30": {
+    "en": "Music",
+    "ua": "Музика"
+  },
+  "staff_title_31": {
+    "en": "Sound Effects",
+    "ua": "Звукові ефекти"
+  },
+  "staff_title_50": {
+    "en": "Producer",
+    "ua": "Продюсер"
+  },
+  "staff_title_51": {
+    "en": "Associate Producers",
+    "ua": "Асоційовані продюсери"
+  },
+  "staff_title_52": {
+    "en": "Director",
+    "ua": "Режисер"
+  },
+  "staff_title_53": {
+    "en": "Coordination",
+    "ua": "Координація"
+  },
+  "staff_title_54": {
+    "en": "Graphic Supervisors",
+    "ua": "Графічні супервайзери"
+  },
+  "staff_title_55": {
+    "en": "Sound Director",
+    "ua": "Звукорежисер"
+  },
+  "staff_title_56": {
+    "en": "Sound Program Support",
+    "ua": "Підтримка звукової програми"
+  },
+  "staff_title_57": {
+    "en": "Sound Coordination",
+    "ua": "Координація звуку"
+  },
+  "staff_title_58": {
+    "en": "Technical Support",
+    "ua": "Технічна підтримка"
+  },
+  "staff_title_59": {
+    "en": "Debug",
+    "ua": "Налагодження"
+  },
+  "staff_title_60": {
+    "en": "European Localisation",
+    "ua": "Європейська локалізація"
+  },
+  "staff_title_61": {
+    "en": "North American Localization",
+    "ua": "Північноамериканська локалізація"
+  },
+  "staff_title_62": {
+    "en": "Special Thanks",
+    "ua": "Особлива подяка"
+  },
+  "staff_title_63": {
+    "en": "General Producer",
+    "ua": "Генеральний продюсер"
+  },
+  "staff_title_64": {
+    "en": "Executive Producer",
+    "ua": "Виконавчий продюсер"
+  },
+  "staff_corp_00": {
+    "en": "Developer PROPE Co.,Ltd.",
+    "ua": "Розробник PROPE Co.,Ltd."
+  },
+  "staff_corp_01": {
+    "en": "Puresound Inc.",
+    "ua": ""
+  },
+  "staff_corp_02": {
+    "en": "Nintendo",
+    "ua": "Nintendo"
+  },
+  "staff_right": {
+    "en": "Nintendo and PROPE are the authors of\r\nthis software for the purpose of copyright.\r\nAll rights reserved.\r\n© 2013 Nintendo.",
+    "ua": ""
+  }
+}

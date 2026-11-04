@@ -1,0 +1,1994 @@
+{
+  "nja_000": {
+    "en": "StreetPass Ninja",
+    "ua": "Ніндзя StreetPass"
+  },
+  "nja_000_sdw": {
+    "en": "StreetPass Ninja",
+    "ua": "Ніндзя StreetPass"
+  },
+  "nja_001": {
+    "en": "©2016 Nintendo  Developed by PROPE",
+    "ua": "©2016 Nintendo  Розробник: PROPE"
+  },
+  "nja_New_Catch_Nice_000": {
+    "en": "Nice!",
+    "ua": "Гарно!"
+  },
+  "nja_New_Catch_Nice_000_sdw": {
+    "en": "Nice!",
+    "ua": "Гарно!"
+  },
+  "nja_New_Catch_Perfect_000": {
+    "en": "Splendid!",
+    "ua": "Блискуче!"
+  },
+  "nja_New_Catch_Perfect_000_sdw": {
+    "en": "Splendid!",
+    "ua": "Блискуче!"
+  },
+  "nja_new_level_00": {
+    "en": "Attack Power",
+    "ua": "Сила атаки"
+  },
+  "nja_new_countdown_00": {
+    "en": "Time to Launch",
+    "ua": "До пострілу"
+  },
+  "nja_new_countdown_00_sdw": {
+    "en": "Time to Launch",
+    "ua": "До пострілу"
+  },
+  "nja_new_countdown_02": {
+    "en": ". [0] s",
+    "ua": ". [0] с"
+  },
+  "nja_new_countdown_02_sdw": {
+    "en": ". [0] s",
+    "ua": ". [0] с"
+  },
+  "nja_new_item_it21": {
+    "en": "Wooden Stick",
+    "ua": "Дерев'яна палиця"
+  },
+  "nja_new_item_it21_sdw": {
+    "en": "Wooden Stick",
+    "ua": "Дерев'яна палиця"
+  },
+  "nja_new_item_it22": {
+    "en": "Kunai",
+    "ua": "Кунай"
+  },
+  "nja_new_item_it22_sdw": {
+    "en": "Kunai",
+    "ua": "Кунай"
+  },
+  "nja_new_item_it23": {
+    "en": "Ashigaru Spear",
+    "ua": "Спис асіґару"
+  },
+  "nja_new_item_it23_sdw": {
+    "en": "Ashigaru Spear",
+    "ua": "Спис асіґару"
+  },
+  "nja_new_item_it24": {
+    "en": "Samurai Blade",
+    "ua": "Меч самурая"
+  },
+  "nja_new_item_it24_sdw": {
+    "en": "Samurai Blade",
+    "ua": "Меч самурая"
+  },
+  "nja_new_item_it25": {
+    "en": "Warlord Fan",
+    "ua": "Віяло полководця"
+  },
+  "nja_new_item_it25_sdw": {
+    "en": "Warlord Fan",
+    "ua": "Віяло полководця"
+  },
+  "nja_new_item_it26": {
+    "en": "Steel Lance",
+    "ua": "Сталевий спис"
+  },
+  "nja_new_item_it26_sdw": {
+    "en": "Steel Lance",
+    "ua": "Сталевий спис"
+  },
+  "nja_new_item_it27": {
+    "en": "Silver Sword",
+    "ua": "Срібний меч"
+  },
+  "nja_new_item_it27_sdw": {
+    "en": "Silver Sword",
+    "ua": "Срібний меч"
+  },
+  "nja_new_item_it28": {
+    "en": "Golden Sword",
+    "ua": "Золотий меч"
+  },
+  "nja_new_item_it28_sdw": {
+    "en": "Golden Sword",
+    "ua": "Золотий меч"
+  },
+  "nja_new_item_it29": {
+    "en": "Sword of Darkness",
+    "ua": "Меч темряви"
+  },
+  "nja_new_item_it29_sdw": {
+    "en": "Sword of Darkness",
+    "ua": "Меч темряви"
+  },
+  "nja_new_item_it30": {
+    "en": "Legendary Sword",
+    "ua": "Легендарний меч"
+  },
+  "nja_new_item_it30_sdw": {
+    "en": "Legendary Sword",
+    "ua": "Легендарний меч"
+  },
+  "nja_new_item_it31": {
+    "en": "Ninja Katana",
+    "ua": "Катана ніндзя"
+  },
+  "nja_new_item_it31_sdw": {
+    "en": "Ninja Katana",
+    "ua": "Катана ніндзя"
+  },
+  "nja_new_item_it32": {
+    "en": "Ancient Axe",
+    "ua": "Давня сокира"
+  },
+  "nja_new_item_it32_sdw": {
+    "en": "Ancient Axe",
+    "ua": "Давня сокира"
+  },
+  "nja_new_item_it33": {
+    "en": "Pirate Cutlass",
+    "ua": "Піратська шабля"
+  },
+  "nja_new_item_it33_sdw": {
+    "en": "Pirate Cutlass",
+    "ua": "Піратська шабля"
+  },
+  "nja_new_item_it34": {
+    "en": "Hi-Tech Sabre",
+    "ua": "Хай-тек шабля"
+  },
+  "nja_new_item_it34_sdw": {
+    "en": "Hi-Tech Sabre",
+    "ua": "Хай-тек шабля"
+  },
+  "nja_new_item_np21": {
+    "en": "Commoner's Rags",
+    "ua": "Лахміття"
+  },
+  "nja_new_item_np21_sdw": {
+    "en": "Commoner's Rags",
+    "ua": "Лахміття"
+  },
+  "nja_new_item_np22": {
+    "en": "Ninja Garb",
+    "ua": "Одяг ніндзя"
+  },
+  "nja_new_item_np22_sdw": {
+    "en": "Ninja Garb",
+    "ua": "Одяг ніндзя"
+  },
+  "nja_new_item_np23": {
+    "en": "Ashigaru Armour",
+    "ua": "Обладунки асіґару"
+  },
+  "nja_new_item_np23_sdw": {
+    "en": "Ashigaru Armour",
+    "ua": "Обладунки асіґару"
+  },
+  "nja_new_item_np24": {
+    "en": "Samurai Armour",
+    "ua": "Обладунки самурая"
+  },
+  "nja_new_item_np24_sdw": {
+    "en": "Samurai Armour",
+    "ua": "Обладунки самурая"
+  },
+  "nja_new_item_np25": {
+    "en": "Warlord Armour",
+    "ua": "Обладунки полководця"
+  },
+  "nja_new_item_np25_sdw": {
+    "en": "Warlord Armour",
+    "ua": "Обладунки полководця"
+  },
+  "nja_new_item_np26": {
+    "en": "Steel Armour",
+    "ua": "Сталева броня"
+  },
+  "nja_new_item_np26_sdw": {
+    "en": "Steel Armour",
+    "ua": "Сталева броня"
+  },
+  "nja_new_item_np27": {
+    "en": "Silver Armour",
+    "ua": "Срібні обладунки"
+  },
+  "nja_new_item_np27_sdw": {
+    "en": "Silver Armour",
+    "ua": "Срібні обладунки"
+  },
+  "nja_new_item_np28": {
+    "en": "Golden Armour",
+    "ua": "Золоті обладунки"
+  },
+  "nja_new_item_np28_sdw": {
+    "en": "Golden Armour",
+    "ua": "Золоті обладунки"
+  },
+  "nja_new_item_np29": {
+    "en": "Armour of Darkness",
+    "ua": "Обладунки темряви"
+  },
+  "nja_new_item_np29_sdw": {
+    "en": "Armour of Darkness",
+    "ua": "Обладунки темряви"
+  },
+  "nja_new_item_np30": {
+    "en": "Legendary Armour",
+    "ua": "Легендарна броня"
+  },
+  "nja_new_item_np30_sdw": {
+    "en": "Legendary Armour",
+    "ua": "Легендарна броня"
+  },
+  "nja_new_item_np31": {
+    "en": "Ninja Chainmail",
+    "ua": "Кольчуга ніндзя"
+  },
+  "nja_new_item_np31_sdw": {
+    "en": "Ninja Chainmail",
+    "ua": "Кольчуга ніндзя"
+  },
+  "nja_new_item_np32": {
+    "en": "Ancient Pelt",
+    "ua": "Давня шкура"
+  },
+  "nja_new_item_np32_sdw": {
+    "en": "Ancient Pelt",
+    "ua": "Давня шкура"
+  },
+  "nja_new_item_np33": {
+    "en": "Pirate Costume",
+    "ua": "Костюм пірата"
+  },
+  "nja_new_item_np33_sdw": {
+    "en": "Pirate Costume",
+    "ua": "Костюм пірата"
+  },
+  "nja_new_item_np34": {
+    "en": "Hi-Tech Armour",
+    "ua": "Хай-тек обладунки"
+  },
+  "nja_new_item_np34_sdw": {
+    "en": "Hi-Tech Armour",
+    "ua": "Хай-тек обладунки"
+  },
+  "nja_new_item_ht21": {
+    "en": "Hachimaki",
+    "ua": "Хатімакі"
+  },
+  "nja_new_item_ht21_sdw": {
+    "en": "Hachimaki",
+    "ua": "Хатімакі"
+  },
+  "nja_new_item_ht22": {
+    "en": "Ninja Hood",
+    "ua": "Каптур ніндзя"
+  },
+  "nja_new_item_ht22_sdw": {
+    "en": "Ninja Hood",
+    "ua": "Каптур ніндзя"
+  },
+  "nja_new_item_ht23": {
+    "en": "Ashigaru Hat",
+    "ua": "Капелюх асіґару"
+  },
+  "nja_new_item_ht23_sdw": {
+    "en": "Ashigaru Hat",
+    "ua": "Капелюх асіґару"
+  },
+  "nja_new_item_ht24": {
+    "en": "Samurai Helm",
+    "ua": "Шолом самурая"
+  },
+  "nja_new_item_ht24_sdw": {
+    "en": "Samurai Helm",
+    "ua": "Шолом самурая"
+  },
+  "nja_new_item_ht25": {
+    "en": "Warlord Helm",
+    "ua": "Шолом полководця"
+  },
+  "nja_new_item_ht25_sdw": {
+    "en": "Warlord Helm",
+    "ua": "Шолом полководця"
+  },
+  "nja_new_item_ht26": {
+    "en": "Steel Helmet",
+    "ua": "Сталевий шолом"
+  },
+  "nja_new_item_ht26_sdw": {
+    "en": "Steel Helmet",
+    "ua": "Сталевий шолом"
+  },
+  "nja_new_item_ht27": {
+    "en": "Silver Helmet",
+    "ua": "Срібний шолом"
+  },
+  "nja_new_item_ht27_sdw": {
+    "en": "Silver Helmet",
+    "ua": "Срібний шолом"
+  },
+  "nja_new_item_ht28": {
+    "en": "Golden Helmet",
+    "ua": "Золотий шолом"
+  },
+  "nja_new_item_ht28_sdw": {
+    "en": "Golden Helmet",
+    "ua": "Золотий шолом"
+  },
+  "nja_new_item_ht29": {
+    "en": "Helmet of Darkness",
+    "ua": "Шолом темряви"
+  },
+  "nja_new_item_ht29_sdw": {
+    "en": "Helmet of Darkness",
+    "ua": "Шолом темряви"
+  },
+  "nja_new_item_ht30": {
+    "en": "Legendary Helmet",
+    "ua": "Шолом легенди"
+  },
+  "nja_new_item_ht30_sdw": {
+    "en": "Legendary Helmet",
+    "ua": "Шолом легенди"
+  },
+  "nja_new_item_ht31": {
+    "en": "Ninja Headplate",
+    "ua": "Налобник ніндзя"
+  },
+  "nja_new_item_ht31_sdw": {
+    "en": "Ninja Headplate",
+    "ua": "Налобник ніндзя"
+  },
+  "nja_new_item_ht32": {
+    "en": "Skull Helmet",
+    "ua": "Шолом-череп"
+  },
+  "nja_new_item_ht32_sdw": {
+    "en": "Skull Helmet",
+    "ua": "Шолом-череп"
+  },
+  "nja_new_item_ht33": {
+    "en": "Pirate Hat",
+    "ua": "Капелюх пірата"
+  },
+  "nja_new_item_ht33_sdw": {
+    "en": "Pirate Hat",
+    "ua": "Капелюх пірата"
+  },
+  "nja_new_item_ht34": {
+    "en": "Hi-Tech Helmet",
+    "ua": "Хай-тек шолом"
+  },
+  "nja_new_item_ht34_sdw": {
+    "en": "Hi-Tech Helmet",
+    "ua": "Хай-тек шолом"
+  },
+  "nja_new_AllCatch_Bonus_00": {
+    "en": "Perfect! A critical strike!",
+    "ua": "Ідеально! Критичний удар!"
+  },
+  "nja_new_AllCatch_Bonus_00_sdw": {
+    "en": "Perfect! A critical strike!",
+    "ua": "Ідеально! Критичний удар!"
+  },
+  "nja_new_AllCatch_Bonus_01": {
+    "en": "Attack power [0]%!",
+    "ua": "Сила атаки [0]%!"
+  },
+  "nja_new_AllCatch_Bonus_01_sdw": {
+    "en": "Attack power [0]%!",
+    "ua": "Сила атаки [0]%!"
+  },
+  "nja_New_Set_Guide_000": {
+    "en": " /  Move",
+    "ua": " /  Рух"
+  },
+  "nja_New_Set_Guide_001": {
+    "en": " Switch",
+    "ua": " Перемкнути"
+  },
+  "nja_Title_Main_b_000": {
+    "en": "Do Battle!",
+    "ua": "До бою!"
+  },
+  "nja_Title_Main_b_000_sdw": {
+    "en": "Do Battle!",
+    "ua": "До бою!"
+  },
+  "nja_Title_Main_b_002": {
+    "en": "Gather Allies",
+    "ua": "Зібрати союзників"
+  },
+  "nja_Title_Main_b_002_sdw": {
+    "en": "Gather Allies",
+    "ua": "Зібрати союзників"
+  },
+  "nja_Title_Main_b_004": {
+    "en": "Records",
+    "ua": "Рекорди"
+  },
+  "nja_Title_Main_b_004_sdw": {
+    "en": "Records",
+    "ua": "Рекорди"
+  },
+  "nja_Title_Main_b_005": {
+    "en": "Exit",
+    "ua": "Вийти"
+  },
+  "nja_Title_Main_b_005_sdw": {
+    "en": "Exit",
+    "ua": "Вийти"
+  },
+  "nja_Title_Main_b_007": {
+    "en": "Are you sure you want to return\r\nto the plaza? Any allies gathered\r\nusing  Play Coins will leave.",
+    "ua": "Справді повернутися на площу?\nСоюзники, зібрані за монетки ,\nпідуть."
+  },
+  "nja_Title_Main_u_000": {
+    "en": "Collect scrolls from your fellow ninja\r\nand defeat those dastardly demons!",
+    "ua": "Збирай сувої від друзів-ніндзя\nй розбий підступних демонів!"
+  },
+  "nja_Title_Main_u_001": {
+    "en": "Use the power of  Play Coins to\r\nsummon ninja allies.",
+    "ua": "Скликай союзників-ніндзя\nза монетки ."
+  },
+  "nja_Title_Main_u_002": {
+    "en": "View records of your\r\npast efforts.",
+    "ua": "Переглянь записи\nпро минулі звершення."
+  },
+  "nja_Title_Main_u_003": {
+    "en": "Quit the game and return\r\nto the plaza.",
+    "ua": "Вийти з гри й повернутися\nна площу."
+  },
+  "nja_Title_Main_u_004": {
+    "en": "You must gather allies via StreetPass\r\nbefore going into battle, Sensei!",
+    "ua": "Перш ніж іти в бій, треба зібрати\nсоюзників через StreetPass, сенсею!"
+  },
+  "nja_Title_Main_u_005": {
+    "en": "I believe we already have\r\nsufficient allies, Sensei!\r\nLet us do battle!",
+    "ua": "Гадаю, союзників уже\nдосить, сенсею!\nДо бою!"
+  },
+  "nja_Title_Main_u_006": {
+    "en": "Forgive me, Sensei, but it seems\r\nour  Play Coin supply is empty!",
+    "ua": "Пробач, сенсею, але, схоже,\nмонетки  скінчилися!"
+  },
+  "nja_Title_Recruit_b_000": {
+    "en": "Max Allies",
+    "ua": "Макс. союзників"
+  },
+  "nja_Title_Recruit_b_000_sdw": {
+    "en": "Max Allies",
+    "ua": "Макс. союзників"
+  },
+  "nja_Title_Recruit_b_001": {
+    "en": "One Ally",
+    "ua": "Одного"
+  },
+  "nja_Title_Recruit_b_001_sdw": {
+    "en": "One Ally",
+    "ua": "Одного"
+  },
+  "nja_Title_Recruit_b_002": {
+    "en": "Gather allies for 2 Play Coins each.",
+    "ua": "Кожен союзник — 2 монетки."
+  },
+  "nja_Title_Recruit_u_000": {
+    "en": "Current Allies",
+    "ua": "Союзників"
+  },
+  "nja_Title_Recruit_u_002": {
+    "en": "+ [0] s",
+    "ua": "+ [0] с"
+  },
+  "nja_Title_Recruit_u_003": {
+    "en": "Now select \"Do Battle\"\r\nto begin your mission.",
+    "ua": "Тепер вибери «До бою!»,\nщоб почати місію."
+  },
+  "nja_Title_First_u_000": {
+    "en": "Join forces with your fellow ninja\r\nto defeat the dastardly demon army!",
+    "ua": "Об'єднайся з друзями-ніндзя й розбий\nпідступне військо демонів!"
+  },
+  "nja_Title_First_b_000": {
+    "en": "PRESS ",
+    "ua": "НАТИСНІТЬ "
+  },
+  "nja_Title_First_b_001": {
+    "en": "\r\n\r\n\r\n\r\n\r\nWelcome to StreetPass Ninja!",
+    "ua": "\n\n\n\n\nВітаємо в Ніндзя StreetPass!"
+  },
+  "nja_Title_First_b_002": {
+    "en": "\r\n\r\n\r\n\r\n\r\nIn this game, you launch\r\nyourself from a cannon\r\nto defeat fiendish demons!",
+    "ua": "\n\n\n\n\nУ цій грі ви вилітаєте\nз гармати, щоб перемагати\nпідступних демонів!"
+  },
+  "nja_Title_First_b_003": {
+    "en": "Are you ready to begin?",
+    "ua": "Готові почати?"
+  },
+  "nja_Tutorial_u_00_000": {
+    "en": "For this session, let's enlist the\r\nhelp of some wandering ninja.",
+    "ua": "Цього разу покличмо на допомогу\nмандрівних ніндзя."
+  },
+  "nja_Tutorial_u_01_000": {
+    "en": "I'll take care of aiming\r\nthe cannon...",
+    "ua": "Наводити гармату\nбуду я…"
+  },
+  "nja_Tutorial_u_01_002": {
+    "en": "So you can concentrate on\r\n[System:Color name=\"mgNja_red_orange\" ]positioning our allies[/System:Color] in order to\r\ngrab their scrolls as you fly past!",
+    "ua": "А ти зосередься на тому, щоб\n[System:Color name=\"mgNja_red_orange\" ]розставити союзників[/System:Color] і в польоті\nсхопити їхні сувої!"
+  },
+  "nja_Tutorial_u_01_003": {
+    "en": "Press  to switch which\r\nninja you're moving.",
+    "ua": " — вибір ніндзя,\nякого рухаєш."
+  },
+  "nja_Tutorial_u_01_004": {
+    "en": "Now, I know you're a great ninja,\r\nbut the best ninjas know the value\r\nof taking a few [System:Color name=\"mgNja_red_orange\" ]test shots[/System:Color].",
+    "ua": "Знаю, ти великий ніндзя, але\nнайкращі ніндзя знають ціну\n[System:Color name=\"mgNja_red_orange\" ]пробним пострілам[/System:Color]."
+  },
+  "nja_Tutorial_u_01_005": {
+    "en": "Just press  to launch a [System:Color name=\"mgNja_red_orange\" ]scarecrow[/System:Color].\r\nYou can launch as many as you like\r\nuntil you've got everything lined up!",
+    "ua": "Тисни , щоб запустити [System:Color name=\"mgNja_red_orange\" ]опудало[/System:Color].\nЗапускай скільки завгодно,\nпоки все не вишикуєш!"
+  },
+  "nja_Tutorial_u_02_000": {
+    "en": "Try to position our allies so you can\r\ngrab all of their scrolls, Sensei!",
+    "ua": "Розстав союзників так, щоб\nсхопити всі сувої, сенсею!"
+  },
+  "nja_Tutorial_u_02_001": {
+    "en": "Switch ninja with , and\r\nmove them with  or .",
+    "ua": "Перемикай ніндзя ,\nа рухай  чи ."
+  },
+  "nja_Tutorial_u_03_000": {
+    "en": "Great work, Sensei!\r\nYou nabbed all the scrolls!",
+    "ua": "Чудово, сенсею!\nТи схопив усі сувої!"
+  },
+  "nja_Tutorial_u_03_001": {
+    "en": "Now it's time for the real deal!\r\nPress  to launch yourself!",
+    "ua": "А тепер — по-справжньому!\nНатисни , щоб вилетіти!"
+  },
+  "nja_Tutorial_u_04_000": {
+    "en": "What a glorious transformation!\r\nI'd expect no less from my Sensei!",
+    "ua": "Яке славне перевтілення!\nІншого від сенсея я й не чекала!"
+  },
+  "nja_Tutorial_u_04_002": {
+    "en": "With enough allies gathered via\r\n[System:Color name=\"mgNja_red_orange\" ]StreetPass[/System:Color], we should be able to\r\nwipe out those demons no problem!",
+    "ua": "Зібравши досить союзників через\n[System:Color name=\"mgNja_red_orange\" ]StreetPass[/System:Color], ми легко\nзнищимо тих демонів!"
+  },
+  "nja_ModeSelect_b_000": {
+    "en": "Path of the Ninja",
+    "ua": "Шлях ніндзя"
+  },
+  "nja_ModeSelect_b_000_sdw": {
+    "en": "Path of the Ninja",
+    "ua": "Шлях ніндзя"
+  },
+  "nja_ModeSelect_b_001": {
+    "en": "Score Attack",
+    "ua": "Гра на очки"
+  },
+  "nja_ModeSelect_b_001_sdw": {
+    "en": "Score Attack",
+    "ua": "Гра на очки"
+  },
+  "nja_ModeSelect_b_003": {
+    "en": "How to Play",
+    "ua": "Як грати"
+  },
+  "nja_ModeSelect_b_003_sdw": {
+    "en": "How to Play",
+    "ua": "Як грати"
+  },
+  "nja_ModeSelect_b_005": {
+    "en": "Do Battle!",
+    "ua": "До бою!"
+  },
+  "nja_ModeSelect_b_005_sdw": {
+    "en": "Do Battle!",
+    "ua": "До бою!"
+  },
+  "nja_ModeSelect_b_006": {
+    "en": "Start Over",
+    "ua": "Почати спочатку"
+  },
+  "nja_ModeSelect_b_006_sdw": {
+    "en": "Start Over",
+    "ua": "Почати спочатку"
+  },
+  "nja_ModeSelect_b_007": {
+    "en": "Seek Advice",
+    "ua": "Порада"
+  },
+  "nja_ModeSelect_b_007_sdw": {
+    "en": "Seek Advice",
+    "ua": "Порада"
+  },
+  "nja_ModeSelect_b_008": {
+    "en": "About This Mode",
+    "ua": "Про цей режим"
+  },
+  "nja_ModeSelect_b_008_sdw": {
+    "en": "About This Mode",
+    "ua": "Про цей режим"
+  },
+  "nja_ModeSelect_b_009": {
+    "en": "Normal",
+    "ua": "Норма"
+  },
+  "nja_ModeSelect_b_009_sdw": {
+    "en": "Normal",
+    "ua": "Норма"
+  },
+  "nja_ModeSelect_b_010": {
+    "en": "Hard",
+    "ua": "Складно"
+  },
+  "nja_ModeSelect_b_010_sdw": {
+    "en": "Hard",
+    "ua": "Складно"
+  },
+  "nja_ModeSelect_b_011": {
+    "en": "Act 1",
+    "ua": "Дія 1"
+  },
+  "nja_ModeSelect_b_012": {
+    "en": "Act 2",
+    "ua": "Дія 2"
+  },
+  "nja_ModeSelect_b_013": {
+    "en": "Act 3",
+    "ua": "Дія 3"
+  },
+  "nja_ModeSelect_b_014": {
+    "en": "Act 4",
+    "ua": "Дія 4"
+  },
+  "nja_ModeSelect_b_015": {
+    "en": "Act 5",
+    "ua": "Дія 5"
+  },
+  "nja_ModeSelect_b_016": {
+    "en": "Act 6",
+    "ua": "Дія 6"
+  },
+  "nja_ModeSelect_b_017": {
+    "en": "Are you sure you want\r\nto start this mode over\r\nfrom the beginning?",
+    "ua": "Справді почати цей\nрежим спочатку?"
+  },
+  "nja_ModeSelect_b_018": {
+    "en": "Do you want to see the\r\nopening sequence again?",
+    "ua": "Подивитися вступ\nще раз?"
+  },
+  "nja_ModeSelect_b_019": {
+    "en": "Choose a difficulty.",
+    "ua": "Виберіть складність."
+  },
+  "nja_ModeSelect_b_020": {
+    "en": "Choose a location.",
+    "ua": "Виберіть місце."
+  },
+  "nja_ModeSelect_b_021": {
+    "en": "If you're ready to begin, select Do Battle!",
+    "ua": "Якщо готові, виберіть «До бою!»"
+  },
+  "nja_ModeSelect_u_000": {
+    "en": "Choose a mode to play.",
+    "ua": "Виберіть режим."
+  },
+  "nja_ModeSelect_u_001": {
+    "en": "This mode is not yet available.",
+    "ua": "Цей режим ще недоступний."
+  },
+  "nja_ModeSelect_u_002": {
+    "en": "New Adventure",
+    "ua": "Нова пригода"
+  },
+  "nja_ModeSelect_u_004": {
+    "en": "Path of the Ninja",
+    "ua": "Шлях ніндзя"
+  },
+  "nja_ModeSelect_u_005": {
+    "en": "Score Attack",
+    "ua": "Гра на очки"
+  },
+  "nja_ModeSelect_u_007": {
+    "en": "[0]s",
+    "ua": "[0] с"
+  },
+  "nja_ModeSelect_u_008": {
+    "en": "Scroll Chain",
+    "ua": "Ланцюг сувоїв"
+  },
+  "nja_ModeSelect_u_010": {
+    "en": "Ongoing!",
+    "ua": "Триває!"
+  },
+  "nja_ModeSelect_u_014": {
+    "en": "Score",
+    "ua": "Очки"
+  },
+  "nja_ModeSelect_u_016": {
+    "en": "High Score",
+    "ua": "Рекорд"
+  },
+  "nja_ModeSelect_u_018": {
+    "en": "Launches",
+    "ua": "Пострілів"
+  },
+  "nja_ModeSelect_u_020": {
+    "en": "Record",
+    "ua": "Рекорд"
+  },
+  "nja_ModeSelect_u_026": {
+    "en": "N/A",
+    "ua": "—"
+  },
+  "nja_ModeSelect_u_027": {
+    "en": "Hard [0] - [1]",
+    "ua": "Складно [0] - [1]"
+  },
+  "nja_ModeSelect_u_028": {
+    "en": "Path of the Ninja - Hard",
+    "ua": "Шлях ніндзя — складно"
+  },
+  "nja_BattleStart_u_001": {
+    "en": "Skeletal Minion",
+    "ua": "Кістяний посіпака"
+  },
+  "nja_BattleStart_u_002": {
+    "en": "Skeletal Barbarian",
+    "ua": "Кістяний варвар"
+  },
+  "nja_BattleStart_u_003": {
+    "en": "Skeletal Warrior",
+    "ua": "Кістяний воїн"
+  },
+  "nja_BattleStart_u_004": {
+    "en": "Skeletal Champion",
+    "ua": "Кістяний чемпіон"
+  },
+  "nja_BattleStart_u_005": {
+    "en": "Tengu Minion",
+    "ua": "Тенґу-посіпака"
+  },
+  "nja_BattleStart_u_006": {
+    "en": "Tengu Barbarian",
+    "ua": "Тенґу-варвар"
+  },
+  "nja_BattleStart_u_007": {
+    "en": "Tengu Warrior",
+    "ua": "Тенґу-воїн"
+  },
+  "nja_BattleStart_u_008": {
+    "en": "Tengu Champion",
+    "ua": "Тенґу-чемпіон"
+  },
+  "nja_BattleStart_u_009": {
+    "en": "Oni Minion",
+    "ua": "Оні-посіпака"
+  },
+  "nja_BattleStart_u_010": {
+    "en": "Oni Barbarian",
+    "ua": "Оні-варвар"
+  },
+  "nja_BattleStart_u_011": {
+    "en": "Oni Warrior",
+    "ua": "Оні-воїн"
+  },
+  "nja_BattleStart_u_012": {
+    "en": "Oni Champion",
+    "ua": "Оні-чемпіон"
+  },
+  "nja_BattleStart_u_013": {
+    "en": "Armoured Minion",
+    "ua": "Броньований посіпака"
+  },
+  "nja_BattleStart_u_014": {
+    "en": "Armoured Barbarian",
+    "ua": "Броньований варвар"
+  },
+  "nja_BattleStart_u_015": {
+    "en": "Armoured Warrior",
+    "ua": "Броньований воїн"
+  },
+  "nja_BattleStart_u_016": {
+    "en": "Armoured Champion",
+    "ua": "Броньований чемпіон"
+  },
+  "nja_BattleStart_u_017": {
+    "en": "Skeletal Chief",
+    "ua": "Кістяний ватажок"
+  },
+  "nja_BattleStart_u_018": {
+    "en": "Skeletal Warlord",
+    "ua": "Кістяний полководець"
+  },
+  "nja_BattleStart_u_019": {
+    "en": "Skeletal Supreme Warlord",
+    "ua": "Кістяний верховод"
+  },
+  "nja_BattleStart_u_020": {
+    "en": "Tengu Warlord",
+    "ua": "Тенґу-полководець"
+  },
+  "nja_BattleStart_u_021": {
+    "en": "Tengu Supreme Warlord",
+    "ua": "Тенґу-верховод"
+  },
+  "nja_BattleStart_u_022": {
+    "en": "Oni Warlord",
+    "ua": "Оні-полководець"
+  },
+  "nja_BattleStart_u_023": {
+    "en": "Oni Supreme Warlord",
+    "ua": "Оні-верховод"
+  },
+  "nja_BattleStart_u_024": {
+    "en": "Armoured Warlord",
+    "ua": "Бронеполководець"
+  },
+  "nja_BattleStart_u_025": {
+    "en": "Armoured Supreme Warlord",
+    "ua": "Броневерховод"
+  },
+  "nja_BattleStart_u_026": {
+    "en": "Mechanical Shogun",
+    "ua": "Механічний сьоґун"
+  },
+  "nja_BattleSet_b_000": {
+    "en": "Test Shot",
+    "ua": "Пробний постріл"
+  },
+  "nja_BattleSet_b_000_sdw": {
+    "en": "Test Shot",
+    "ua": "Пробний постріл"
+  },
+  "nja_BattleSet_b_001": {
+    "en": "Fire!",
+    "ua": "Вогонь!"
+  },
+  "nja_BattleSet_b_001_sdw": {
+    "en": "Fire!",
+    "ua": "Вогонь!"
+  },
+  "nja_BattleSet_b_002": {
+    "en": "Zoom",
+    "ua": "Масштаб"
+  },
+  "nja_BattleSet_b_002_sdw": {
+    "en": "Zoom",
+    "ua": "Масштаб"
+  },
+  "nja_BattleSet_u_002": {
+    "en": "COMBO!",
+    "ua": "КОМБО!"
+  },
+  "nja_BattleSet_u_002_sdw": {
+    "en": "COMBO!",
+    "ua": "КОМБО!"
+  },
+  "nja_BattleRT_u_001": {
+    "en": "The foe attacks!",
+    "ua": "Ворог атакує!"
+  },
+  "nja_BattleRT_u_002": {
+    "en": "Your helmet protects you!",
+    "ua": "Шолом захистив!"
+  },
+  "nja_BattleRT_u_003": {
+    "en": "Your helmet broke!",
+    "ua": "Шолом розбито!"
+  },
+  "nja_BattleRT_u_004": {
+    "en": "You have no helmet!",
+    "ua": "Шолома немає!"
+  },
+  "nja_BattleRT_u_005": {
+    "en": "Your armour protects you!",
+    "ua": "Обладунки захистили!"
+  },
+  "nja_BattleRT_u_006": {
+    "en": "Your armour broke!",
+    "ua": "Обладунки розбито!"
+  },
+  "nja_BattleRT_u_007": {
+    "en": "You have no armour!",
+    "ua": "Обладунків немає!"
+  },
+  "nja_BattleRT_u_008": {
+    "en": "Your helmet and armour protect you!",
+    "ua": "Шолом і обладунки захистили!"
+  },
+  "nja_BattleRT_u_009": {
+    "en": "Your helmet and armour broke!",
+    "ua": "Шолом і обладунки розбито!"
+  },
+  "nja_BattleRT_u_010": {
+    "en": "You have no helmet or armour!",
+    "ua": "Ні шолома, ні обладунків!"
+  },
+  "nja_BattleRT_u_011": {
+    "en": "This weapon is too weak!",
+    "ua": "Ця зброя надто слабка!"
+  },
+  "nja_BattleRT_u_012": {
+    "en": "You need a weapon!",
+    "ua": "Потрібна зброя!"
+  },
+  "nja_BattleRT_u_013": {
+    "en": "You're not equipped for battle!",
+    "ua": "Нема спорядження для бою!"
+  },
+  "nja_BattleRT_u_014": {
+    "en": "Just your helmet broke!",
+    "ua": "Розбито лише шолом!"
+  },
+  "nja_BattleRT_u_015": {
+    "en": "Just your armour broke!",
+    "ua": "Розбито лише обладунки!"
+  },
+  "nja_InGameResult_b_000": {
+    "en": "Final Blow Damage",
+    "ua": "Шкода останнього удару"
+  },
+  "nja_InGameResult_b_001": {
+    "en": "Max Combo",
+    "ua": "Макс. комбо"
+  },
+  "nja_InGameResult_b_002": {
+    "en": "Scroll Chain",
+    "ua": "Ланцюг сувоїв"
+  },
+  "nja_InGameResult_b_006": {
+    "en": "Watch the ending again?",
+    "ua": "Подивитися фінал ще раз?"
+  },
+  "nja_InGameResult_u_001": {
+    "en": "Victory!",
+    "ua": "Перемога!"
+  },
+  "nja_InGameResult_u_001_sdw": {
+    "en": "Victory!",
+    "ua": "Перемога!"
+  },
+  "nja_InGameResult_u_002": {
+    "en": "Retreat!",
+    "ua": "Відступ!"
+  },
+  "nja_InGameResult_u_002_sdw": {
+    "en": "Retreat!",
+    "ua": "Відступ!"
+  },
+  "nja_InGameResult_u_003": {
+    "en": "Score Achieved",
+    "ua": "Здобуто очок"
+  },
+  "nja_InGameResult_u_005": {
+    "en": "Still, you dealt [System:Color name=\"mgNja_red_orange\" ][0][/System:Color] damage!",
+    "ua": "Та все ж завдано [System:Color name=\"mgNja_red_orange\" ][0][/System:Color] шкоди!"
+  },
+  "nja_InGameResult_u_006": {
+    "en": "If only I had a [System:Color name=\"mgNja_red_orange\" ]helmet[/System:Color]...!",
+    "ua": "Якби ж то [System:Color name=\"mgNja_red_orange\" ]шолом[/System:Color]…!"
+  },
+  "nja_InGameResult_u_007": {
+    "en": "If only I had some [System:Color name=\"mgNja_red_orange\" ]armour[/System:Color]...!",
+    "ua": "Якби ж то [System:Color name=\"mgNja_red_orange\" ]обладунки[/System:Color]…!"
+  },
+  "nja_InGameResult_u_008": {
+    "en": "If only I had a [System:Color name=\"mgNja_red_orange\" ]helmet[/System:Color] and [System:Color name=\"mgNja_red_orange\" ]armour[/System:Color]...!",
+    "ua": "Якби ж то [System:Color name=\"mgNja_red_orange\" ]шолом[/System:Color] і [System:Color name=\"mgNja_red_orange\" ]обладунки[/System:Color]…!"
+  },
+  "nja_InGameResult_u_009": {
+    "en": "If only my [System:Color name=\"mgNja_red_orange\" ]helmet[/System:Color] was stronger...!",
+    "ua": "Якби ж то [System:Color name=\"mgNja_red_orange\" ]шолом[/System:Color] міцніший…!"
+  },
+  "nja_InGameResult_u_010": {
+    "en": "If only my [System:Color name=\"mgNja_red_orange\" ]armour[/System:Color] was stronger...!",
+    "ua": "Якби ж то [System:Color name=\"mgNja_red_orange\" ]обладунки[/System:Color] міцніші…!"
+  },
+  "nja_InGameResult_u_011": {
+    "en": "If only my [System:Color name=\"mgNja_red_orange\" ]helmet[/System:Color] and [System:Color name=\"mgNja_red_orange\" ]armour[/System:Color] were stronger...!",
+    "ua": "Якби ж то [System:Color name=\"mgNja_red_orange\" ]шолом[/System:Color] і [System:Color name=\"mgNja_red_orange\" ]обладунки[/System:Color] міцніші…!"
+  },
+  "nja_InGameResult_u_012": {
+    "en": "If only I had [System:Color name=\"mgNja_red_orange\" ]some kind of armament[/System:Color]!",
+    "ua": "Якби ж то [System:Color name=\"mgNja_red_orange\" ]хоч якесь спорядження[/System:Color]!"
+  },
+  "nja_Result_b_000": {
+    "en": "Return to Title",
+    "ua": "На титульний екран"
+  },
+  "nja_Result_b_000_sdw": {
+    "en": "Return to Title",
+    "ua": "На титульний екран"
+  },
+  "nja_Result_b_001": {
+    "en": "Return to Title",
+    "ua": "На титульний екран"
+  },
+  "nja_Result_b_001_sdw": {
+    "en": "Return to Title",
+    "ua": "На титульний екран"
+  },
+  "nja_Result_b_002": {
+    "en": "Overall Assessment",
+    "ua": "Загальна оцінка"
+  },
+  "nja_Result_b_002_sdw": {
+    "en": "Overall Assessment",
+    "ua": "Загальна оцінка"
+  },
+  "nja_Result_u_000": {
+    "en": "Results",
+    "ua": "Результати"
+  },
+  "nja_Result_u_001": {
+    "en": "Path of the Ninja",
+    "ua": "Шлях ніндзя"
+  },
+  "nja_Result_u_002": {
+    "en": "Score Attack",
+    "ua": "Гра на очки"
+  },
+  "nja_Result_u_005": {
+    "en": "Score",
+    "ua": "Очки"
+  },
+  "nja_Result_u_008": {
+    "en": "Launches",
+    "ua": "Пострілів"
+  },
+  "nja_Result_u_010": {
+    "en": "Overall Assessment",
+    "ua": "Загальна оцінка"
+  },
+  "nja_Result_u_011": {
+    "en": "Normal",
+    "ua": "Норма"
+  },
+  "nja_Result_u_012": {
+    "en": "Hard",
+    "ua": "Складно"
+  },
+  "nja_Result_u_013": {
+    "en": "Act 1",
+    "ua": "Дія 1"
+  },
+  "nja_Result_u_014": {
+    "en": "Act 2",
+    "ua": "Дія 2"
+  },
+  "nja_Result_u_015": {
+    "en": "Act 3",
+    "ua": "Дія 3"
+  },
+  "nja_Result_u_016": {
+    "en": "Act 4",
+    "ua": "Дія 4"
+  },
+  "nja_Result_u_017": {
+    "en": "Act 5",
+    "ua": "Дія 5"
+  },
+  "nja_Result_u_018": {
+    "en": "Act 6",
+    "ua": "Дія 6"
+  },
+  "nja_Result_u_019": {
+    "en": "Score",
+    "ua": "Очки"
+  },
+  "nja_Result_u_020": {
+    "en": "High Score",
+    "ua": "Рекорд"
+  },
+  "nja_Result_u_021": {
+    "en": "Launches",
+    "ua": "Пострілів"
+  },
+  "nja_Result_u_022": {
+    "en": "Record",
+    "ua": "Рекорд"
+  },
+  "nja_Result_u_025": {
+    "en": "NEW",
+    "ua": "НОВЕ"
+  },
+  "nja_Result_u_025_sdw": {
+    "en": "NEW",
+    "ua": "НОВЕ"
+  },
+  "nja_Result_u_029": {
+    "en": "New High Score!",
+    "ua": "Новий рекорд!"
+  },
+  "nja_Result_u_030": {
+    "en": "New Launch Record!",
+    "ua": "Рекорд пострілів!"
+  },
+  "nja_Recode_b_000": {
+    "en": "Medal Details",
+    "ua": "Про медалі"
+  },
+  "nja_Recode_b_000_sdw": {
+    "en": "Medal Details",
+    "ua": "Про медалі"
+  },
+  "nja_Recode_b_001": {
+    "en": "Medals Collected",
+    "ua": "Зібрано медалей"
+  },
+  "nja_Recode_b_002": {
+    "en": "Path of the Ninja",
+    "ua": "Шлях ніндзя"
+  },
+  "nja_Recode_b_003": {
+    "en": "Score Attack",
+    "ua": "Гра на очки"
+  },
+  "nja_Recode_u_000": {
+    "en": "Your Records",
+    "ua": "Ваші рекорди"
+  },
+  "nja_Recode_u_001": {
+    "en": "Path of the Ninja",
+    "ua": "Шлях ніндзя"
+  },
+  "nja_Recode_u_002": {
+    "en": "Score Attack",
+    "ua": "Гра на очки"
+  },
+  "nja_Recode_u_004": {
+    "en": "Normal",
+    "ua": "Норма"
+  },
+  "nja_Recode_u_005": {
+    "en": "High Score",
+    "ua": "Рекорд"
+  },
+  "nja_Recode_u_007": {
+    "en": "Launch Record",
+    "ua": "Рекорд пострілів"
+  },
+  "nja_Recode_u_009": {
+    "en": "Hard",
+    "ua": "Складно"
+  },
+  "nja_Recode_u_010": {
+    "en": "High Score",
+    "ua": "Рекорд"
+  },
+  "nja_Recode_u_012": {
+    "en": "Launch Record",
+    "ua": "Рекорд пострілів"
+  },
+  "nja_Recode_u_014": {
+    "en": "Act 1",
+    "ua": "Дія 1"
+  },
+  "nja_Recode_u_015": {
+    "en": "Act 2",
+    "ua": "Дія 2"
+  },
+  "nja_Recode_u_016": {
+    "en": "Act 3",
+    "ua": "Дія 3"
+  },
+  "nja_Recode_u_017": {
+    "en": "Act 4",
+    "ua": "Дія 4"
+  },
+  "nja_Recode_u_018": {
+    "en": "Act 5",
+    "ua": "Дія 5"
+  },
+  "nja_Recode_u_019": {
+    "en": "Act 6",
+    "ua": "Дія 6"
+  },
+  "nja_Recode_u_026": {
+    "en": "Total",
+    "ua": "Усього"
+  },
+  "nja_Recode_u_028": {
+    "en": "Medal Conditions",
+    "ua": "Умови медалей"
+  },
+  "nja_Notification_u_000": {
+    "en": "Congratulations on clearing\r\nHard difficulty! [System:Color name=\"mgNja_red_orange\" ]Score Attack[/System:Color]\r\nmode is now available.",
+    "ua": "Вітаю з проходженням рівня\n«Складно»! Відкрито режим\n[System:Color name=\"mgNja_red_orange\" ]«Гра на очки»[/System:Color]."
+  },
+  "nja_Notification_u_001": {
+    "en": "Congratulations on completing\r\nyour quest! You can now try\r\nyour hand at [System:Color name=\"mgNja_red_orange\" ]Hard[/System:Color] difficulty.",
+    "ua": "Вітаю із завершенням\nпоходу! Тепер можна спробувати\nрівень [System:Color name=\"mgNja_red_orange\" ]«Складно»[/System:Color]."
+  },
+  "nja_Notification_u_002": {
+    "en": "Also, please take this [System:Color name=\"mgNja_red_orange\" ]Fox Mask[/System:Color].\r\nIt's just like mine! Not that you\r\nhave to wear it or anything...",
+    "ua": "А ще візьми цю [System:Color name=\"mgNja_red_orange\" ]Лисячу маску[/System:Color].\nВона як у мене! Не те щоб\nти мусив її носити…"
+  },
+  "nja_Notification_u_004": {
+    "en": "Your [System:Color name=\"mgNja_red_orange\" ][0][/System:Color]\r\nreached [System:Color name=\"mgNja_red_orange\" ][1][/System:Color]!\r\nPlease take this [System:Color name=\"mgNja_red_orange\" ]Bronze Medal[/System:Color].",
+    "ua": "Твій показник «[System:Color name=\"mgNja_red_orange\" ][0][/System:Color]»\nсягнув [System:Color name=\"mgNja_red_orange\" ][1][/System:Color]!\nОсь [System:Color name=\"mgNja_red_orange\" ]бронзова медаль[/System:Color]."
+  },
+  "nja_Notification_u_005": {
+    "en": "Your [System:Color name=\"mgNja_red_orange\" ][0][/System:Color]\r\nreached [System:Color name=\"mgNja_red_orange\" ][1][/System:Color]!\r\nImpressive work, Sensei!\r\nPlease take this [System:Color name=\"mgNja_red_orange\" ]Silver Medal[/System:Color].",
+    "ua": "Твій показник «[System:Color name=\"mgNja_red_orange\" ][0][/System:Color]»\nсягнув [System:Color name=\"mgNja_red_orange\" ][1][/System:Color]!\nВражає, сенсею!\nОсь [System:Color name=\"mgNja_red_orange\" ]срібна медаль[/System:Color]."
+  },
+  "nja_Notification_u_006": {
+    "en": "Your [System:Color name=\"mgNja_red_orange\" ][0][/System:Color]\r\nreached [System:Color name=\"mgNja_red_orange\" ][1][/System:Color]!\r\nYou really are a master, Sensei!\r\nPlease take this [System:Color name=\"mgNja_red_orange\" ]Gold Medal[/System:Color].",
+    "ua": "Твій показник «[System:Color name=\"mgNja_red_orange\" ][0][/System:Color]»\nсягнув [System:Color name=\"mgNja_red_orange\" ][1][/System:Color]!\nТи справжній майстер, сенсею!\nОсь [System:Color name=\"mgNja_red_orange\" ]золота медаль[/System:Color]."
+  },
+  "nja_Notification_u_007": {
+    "en": "Wow, Sensei... It looks like you've\r\nearned [System:Color name=\"mgNja_red_orange\" ]all the Bronze Medals[/System:Color]!\r\nThat's quite an achievement.",
+    "ua": "Ого, сенсею… Схоже, ти здобув\n[System:Color name=\"mgNja_red_orange\" ]усі бронзові медалі[/System:Color]!\nОце досягнення."
+  },
+  "nja_Notification_u_008": {
+    "en": "Wow, Sensei... I think you've\r\nearned [System:Color name=\"mgNja_red_orange\" ]all the Silver Medals[/System:Color]!\r\nYou really are incredible!",
+    "ua": "Ого, сенсею… Здається, ти здобув\n[System:Color name=\"mgNja_red_orange\" ]усі срібні медалі[/System:Color]!\nТи просто неймовірний!"
+  },
+  "nja_Notification_u_009": {
+    "en": "You've finally done it, Sensei...\r\n[System:Color name=\"mgNja_red_orange\" ]all the Gold Medals[/System:Color] are yours!\r\nThere aren't any medals left to earn!",
+    "ua": "Нарешті, сенсею…\n[System:Color name=\"mgNja_red_orange\" ]усі золоті медалі[/System:Color] твої!\nМедалей більше не лишилося!"
+  },
+  "nja_Achievment_name_000": {
+    "en": "Allies Encountered",
+    "ua": "Зустрінуто союзників"
+  },
+  "nja_Achievment_name_001": {
+    "en": "Launches",
+    "ua": "Пострілів"
+  },
+  "nja_Achievment_name_002": {
+    "en": "Damage Dealt",
+    "ua": "Завдано шкоди"
+  },
+  "nja_Achievment_name_003": {
+    "en": "Demons Slain",
+    "ua": "Здолано демонів"
+  },
+  "nja_Achievment_name_004": {
+    "en": "Score Achieved",
+    "ua": "Здобуто очок"
+  },
+  "nja_Achievment_name_005": {
+    "en": "Weapon Scrolls Grabbed",
+    "ua": "Сувоїв зброї"
+  },
+  "nja_Achievment_name_006": {
+    "en": "Armour Scrolls Grabbed",
+    "ua": "Сувоїв обладунків"
+  },
+  "nja_Achievment_name_007": {
+    "en": "Helmet Scrolls Grabbed",
+    "ua": "Сувоїв шоломів"
+  },
+  "nja_Achievment_name_008": {
+    "en": "Splendid Grabs",
+    "ua": "Блискучих хапань"
+  },
+  "nja_Achievment_name_009": {
+    "en": "Critical Slayings",
+    "ua": "Критичних ударів"
+  },
+  "nja_Achievment_name_010": {
+    "en": "Path of the Ninja (Normal) Clears",
+    "ua": "«Шлях ніндзя» (звичайно)"
+  },
+  "nja_Achievment_name_011": {
+    "en": "Path of the Ninja (Hard) Clears",
+    "ua": "«Шлях ніндзя» (складно)"
+  },
+  "nja_Tips_Stage_00_000": {
+    "en": "Don't forget, Sensei...\r\nIn real combat, you'll have\r\na [System:Color name=\"mgNja_red_orange\" ]limited time[/System:Color] to prepare!",
+    "ua": "Не забувай, сенсею…\nУ справжньому бою на підготовку\n[System:Color name=\"mgNja_red_orange\" ]обмаль часу[/System:Color]!"
+  },
+  "nja_Tips_Stage_00_001": {
+    "en": "If time runs out, you'll\r\nbe launched automatically,\r\nso be careful!",
+    "ua": "Коли час вийде, постріл\nстанеться сам,\nтож обережно!"
+  },
+  "nja_Tips_Stage_01_000": {
+    "en": "Did you know you can\r\npress  to take a closer\r\nlook at the scroll kites?",
+    "ua": "А ти знав, що, натиснувши\n, можна краще роздивитися\nзміїв із сувоями?"
+  },
+  "nja_Tips_Stage_01_001": {
+    "en": "It can come in pretty\r\nuseful when you want to\r\nmake finer adjustments!",
+    "ua": "Це дуже зручно,\nколи треба\nтонко налаштувати!"
+  },
+  "nja_Tips_Stage_02_000": {
+    "en": "We're well into demon territory\r\nnow... You won't be able to see\r\nthe guide trajectory any more!",
+    "ua": "Ми вже глибоко в краю демонів…\nЛінію траєкторії тепер\nне видно!"
+  },
+  "nja_Tips_Stage_02_001": {
+    "en": "I guess we'll just have\r\nto use test shots to\r\ncheck our positioning!",
+    "ua": "Доведеться перевіряти\nрозстановку пробними\nпострілами!"
+  },
+  "nja_Tips_Stage_03_000": {
+    "en": "It looks like this demon\r\nhas the ability to heal\r\nits own wounds...",
+    "ua": "Схоже, цей демон\nвміє загоювати\nвласні рани…"
+  },
+  "nja_Tips_Stage_03_001": {
+    "en": "But it can't recover if you\r\ndon't give it any opportunity!\r\nTry to take it down in one shot!",
+    "ua": "Але не дай йому на це шансу!\nСпробуй здолати його\nодним пострілом!"
+  },
+  "nja_Tips_Stage_04_000": {
+    "en": "Sensei... There's something\r\ndifferent about this demon.\r\nI'm sensing a dangerous aura.",
+    "ua": "Сенсею… Цей демон\nякийсь інакший.\nВідчуваю небезпечну ауру."
+  },
+  "nja_Tips_Stage_04_001": {
+    "en": "I think it might be plotting\r\nto [System:Color name=\"mgNja_red_orange\" ]strike you down[/System:Color] as you\r\nclose in for the attack.",
+    "ua": "Здається, він хоче\n[System:Color name=\"mgNja_red_orange\" ]збити тебе[/System:Color], коли\nти підлітатимеш для атаки."
+  },
+  "nja_Tips_Stage_04_002": {
+    "en": "A [System:Color name=\"mgNja_red_orange\" ]helmet[/System:Color] will protect you from\r\nvertical attacks, and [System:Color name=\"mgNja_red_orange\" ]armour[/System:Color]\r\nwill block horizontal ones.",
+    "ua": "[System:Color name=\"mgNja_red_orange\" ]Шолом[/System:Color] захистить від ударів\nзгори, а [System:Color name=\"mgNja_red_orange\" ]обладунки[/System:Color] —\nвід ударів збоку."
+  },
+  "nja_Tips_Stage_04_003": {
+    "en": "But if your helmet or armour\r\nare too weak, the attack might\r\nshatter them! Be careful!",
+    "ua": "Але якщо шолом чи обладунки\nнадто слабкі, удар може\nїх розбити! Обережно!"
+  },
+  "nja_Tips_Stage_05_000": {
+    "en": "Watch out, Sensei - the [System:Color name=\"mgNja_red_orange\" ]gusts[/System:Color]\r\n[System:Color name=\"mgNja_red_orange\" ]of wind[/System:Color] here will interfere with\r\nyour careful positioning.",
+    "ua": "Обережно, сенсею — [System:Color name=\"mgNja_red_orange\" ]пориви[/System:Color]\n[System:Color name=\"mgNja_red_orange\" ]вітру[/System:Color] тут збиватимуть\nретельну розстановку."
+  },
+  "nja_Tips_Stage_05_001": {
+    "en": "You might need to wait until\r\nthey die down before making\r\nany fine adjustments.",
+    "ua": "Може, варто зачекати,\nпоки вони вщухнуть, перш\nніж тонко налаштовувати."
+  },
+  "nja_Tips_Stage_06_000": {
+    "en": "Watch out for that [System:Color name=\"mgNja_red_orange\" ]crow[/System:Color],\r\nSensei! It's a servant\r\nof the demon army!",
+    "ua": "Стережися [System:Color name=\"mgNja_red_orange\" ]ворона[/System:Color],\nсенсею! Він слуга\nвійська демонів!"
+  },
+  "nja_Tips_Stage_06_001": {
+    "en": "I expect it'll attack you\r\nmid-flight and try to\r\ndestroy your helmet...",
+    "ua": "Думаю, він нападе\nв польоті й спробує\nрозбити шолом…"
+  },
+  "nja_Tips_Stage_06_002": {
+    "en": "But as long as you have\r\na weapon, you'll be able\r\nto fight back!",
+    "ua": "Але якщо в тебе є\nзброя, ти зможеш\nвідбитися!"
+  },
+  "nja_Tips_Stage_07_000": {
+    "en": "Uh-oh...this demon seems\r\nmuch more [System:Color name=\"mgNja_red_orange\" ]resilient[/System:Color] than\r\nany we've faced before.",
+    "ua": "Ой-ой… цей демон, схоже,\nнабагато [System:Color name=\"mgNja_red_orange\" ]витриваліший[/System:Color] за\nвсіх, з ким ми досі бились."
+  },
+  "nja_Tips_Stage_07_001": {
+    "en": "If you don't have a strong\r\nenough weapon, its effect\r\nmight be cut in half!",
+    "ua": "Якщо зброя недостатньо\nсильна, її дія може\nскоротитися вдвічі!"
+  },
+  "nja_Tips_Stage_08_000": {
+    "en": "Sensei! It's another one\r\nof those demons that'll try\r\nto strike you down midair!",
+    "ua": "Сенсею! Ще один із тих\nдемонів, що збивають\nу повітрі!"
+  },
+  "nja_Tips_Stage_08_001": {
+    "en": "And worse still, this one\r\nswitches between vertical\r\nand horizontal attacks!",
+    "ua": "Ба гірше, цей ще\nй чергує удари згори\nта збоку!"
+  },
+  "nja_Tips_Stage_08_002": {
+    "en": "You'll need a good\r\nhelmet and armour if\r\nyou want to stay safe...",
+    "ua": "Щоб уціліти, потрібні\nдобрі шолом\nй обладунки…"
+  },
+  "nja_Tips_Stage_09_000": {
+    "en": "Look at the ground, Sensei!\r\nThere's [System:Color name=\"mgNja_red_orange\" ]steam[/System:Color] billowing up\r\nfrom below!",
+    "ua": "Глянь на землю, сенсею!\nЗнизу здіймається\n[System:Color name=\"mgNja_red_orange\" ]пара[/System:Color]!"
+  },
+  "nja_Tips_Stage_09_001": {
+    "en": "That stuff could knock you\r\nright off course...I'll adjust\r\nthe cannon to compensate!",
+    "ua": "Вона може збити тебе\nз курсу… Я підправлю\nгармату!"
+  },
+  "nja_Tips_Stage_10_000": {
+    "en": "Sensei! It's another one\r\nof those demons that'll try\r\nto strike you down midair!",
+    "ua": "Сенсею! Ще один із тих\nдемонів, що збивають\nу повітрі!"
+  },
+  "nja_Tips_Stage_10_001": {
+    "en": "And this one seems\r\npretty resilient, too!\r\nBe careful out there!",
+    "ua": "І цей, схоже,\nтеж витривалий!\nБудь обережний!"
+  },
+  "nja_Tips_Stage_11_000": {
+    "en": "The skies are pretty [System:Color name=\"mgNja_red_orange\" ]cloudy[/System:Color]\r\naround here... That'll make it\r\nhard to see the scroll kites!",
+    "ua": "Тут небо досить [System:Color name=\"mgNja_red_orange\" ]хмарне[/System:Color]…\nЗміїв із сувоями буде\nважко роздивитися!"
+  },
+  "nja_Tips_Stage_12_000": {
+    "en": "This is a nasty one, Sensei...\r\nIt's resilient to attack and\r\nhas healing powers too.",
+    "ua": "Цей препоганий, сенсею…\nВитривалий до атак\nй ще й загоює рани."
+  },
+  "nja_Tips_Stage_12_001": {
+    "en": "Try to penetrate those\r\ndefences and take it out\r\nwith one decisive blow!",
+    "ua": "Спробуй пробити захист\nй здолати його одним\nвирішальним ударом!"
+  },
+  "nja_Tips_Stage_13_000": {
+    "en": "If clouds are obscuring your\r\nview, try pressing  to use\r\nyour special ninja vision.",
+    "ua": "Якщо хмари закривають\nогляд, натисни  —\nце особливий зір ніндзя."
+  },
+  "nja_Tips_Stage_13_001": {
+    "en": "That'll let you see right\r\nthrough them! You really\r\nare a master ninja, Sensei!",
+    "ua": "Крізь них буде видно\nвсе! Ти справжній\nмайстер-ніндзя, сенсею!"
+  },
+  "nja_Tips_Stage_14_000": {
+    "en": "There's a full moon in\r\nthe sky... The perfect time\r\nfor a midnight strike!",
+    "ua": "У небі повний місяць…\nСаме час для\nопівнічного удару!"
+  },
+  "nja_Tips_Stage_14_001": {
+    "en": "Just watch out for when\r\nthe clouds cover the moon.\r\nIt'll be too dark to see the kites!",
+    "ua": "Тільки стеж, коли хмари\nзакривають місяць.\nТоді зміїв не видно!"
+  },
+  "nja_Tips_Stage_15_000": {
+    "en": "I think this is it, Sensei...\r\nThis enemy is the leader\r\nof the whole demon army!",
+    "ua": "Здається, це воно, сенсею…\nЦей ворог — ватажок\nусього війська демонів!"
+  },
+  "nja_Tips_Stage_15_001": {
+    "en": "It looks like he wields [System:Color name=\"mgNja_red_orange\" ]two[/System:Color]\r\n[System:Color name=\"mgNja_red_orange\" ]blades[/System:Color]. Does that mean\r\nwhat I think it means...?",
+    "ua": "Схоже, в нього [System:Color name=\"mgNja_red_orange\" ]два[/System:Color]\n[System:Color name=\"mgNja_red_orange\" ]клинки[/System:Color]. Чи означає це\nте, що я думаю…?"
+  },
+  "nja_Tips_Stage_15_002": {
+    "en": "At any rate, good luck.\r\nI know you can defeat him!",
+    "ua": "Хай там як, щасти.\nЗнаю, ти його здолаєш!"
+  },
+  "nja_Tips_Common_00_000": {
+    "en": "The more allies you gather,\r\nthe longer you'll have to\r\nprepare your formation.",
+    "ua": "Що більше союзників\nзбереш, то більше часу\nна розстановку."
+  },
+  "nja_Tips_Common_01_000": {
+    "en": "Try to get [System:Color name=\"mgNja_red_orange\" ]Splendid[/System:Color] grabs!\r\nThat's when you hit a\r\nscroll kite dead centre.",
+    "ua": "Намагайся хапати [System:Color name=\"mgNja_red_orange\" ]блискуче[/System:Color]!\nЦе коли влучаєш\nу самий центр змія."
+  },
+  "nja_Tips_Common_01_001": {
+    "en": "When you pull it off,\r\nyou'll transform [System:Color name=\"mgNja_red_orange\" ]twice[/System:Color]\r\n[System:Color name=\"mgNja_red_orange\" ]in a row[/System:Color] for extra power!",
+    "ua": "Тоді перевтілишся\n[System:Color name=\"mgNja_red_orange\" ]двічі[/System:Color] [System:Color name=\"mgNja_red_orange\" ]поспіль[/System:Color]\nй станеш ще сильнішим!"
+  },
+  "nja_Tips_Common_02_000": {
+    "en": "There are [System:Color name=\"mgNja_red_orange\" ]three types[/System:Color] of\r\nArmament Scroll - weapons,\r\narmour and helmets.",
+    "ua": "Є [System:Color name=\"mgNja_red_orange\" ]три типи[/System:Color] сувоїв\nспорядження: зброя,\nобладунки й шоломи."
+  },
+  "nja_Tips_Common_02_001": {
+    "en": "Grab lots of the same type,\r\nand you'll transform into\r\nstronger and stronger forms!",
+    "ua": "Хапай багато одного типу —\nі перевтілюватимешся\nщораз у сильніші форми!"
+  },
+  "nja_Tips_Common_03_000": {
+    "en": "It's good to grab lots of\r\nscrolls in a row - that\r\nearns you a [System:Color name=\"mgNja_red_orange\" ]combo[/System:Color].",
+    "ua": "Добре хапати багато сувоїв\nпоспіль — так виходить\n[System:Color name=\"mgNja_red_orange\" ]комбо[/System:Color]."
+  },
+  "nja_Tips_Common_03_001": {
+    "en": "The more combos you\r\nachieve, the stronger\r\nyour attack will end up!",
+    "ua": "Що більше комбо,\nто сильнішою буде\nтвоя атака!"
+  },
+  "nja_Tips_Common_04_000": {
+    "en": "If you manage to grab\r\nevery last scroll, you'll\r\nperform a [System:Color name=\"mgNja_red_orange\" ]critical strike[/System:Color].",
+    "ua": "Якщо схопиш усі сувої\nдо останнього, завдаси\n[System:Color name=\"mgNja_red_orange\" ]критичного удару[/System:Color]."
+  },
+  "nja_Tips_Common_04_001": {
+    "en": "You'll hit the enemy\r\nmuch harder than usual\r\nif you pull one off!",
+    "ua": "Тоді вдариш ворога\nнабагато сильніше,\nніж зазвичай!"
+  },
+  "nja_Tips_Common_06_000": {
+    "en": "If your attack doesn't\r\ndefeat your foe, you'll have\r\nto endure a [System:Color name=\"mgNja_red_orange\" ]counterattack[/System:Color].",
+    "ua": "Якщо атака не здолає\nворога, доведеться\nвитримати [System:Color name=\"mgNja_red_orange\" ]контратаку[/System:Color]."
+  },
+  "nja_Tips_Common_06_001": {
+    "en": "Try to hit the enemy\r\nas hard as possible\r\nso that doesn't happen!",
+    "ua": "Бий ворога якомога\nсильніше, щоб такого\nне сталося!"
+  },
+  "nja_Tips_Common_07_000": {
+    "en": "Even if your attack fails\r\nto defeat the enemy,\r\nthey'll still be damaged.",
+    "ua": "Навіть якщо атака\nне здолає ворога,\nшкоди він зазнає."
+  },
+  "nja_Tips_Common_07_001": {
+    "en": "As long as you finish them\r\noff next time, your sacrifice\r\nwon't be in vain!",
+    "ua": "Якщо наступного разу\nдобити його, жертва\nне буде марною!"
+  },
+  "nja_Tips_Common_08_000": {
+    "en": "This probably goes without\r\nsaying, but it's always\r\nbetter to have more allies.",
+    "ua": "Мабуть, це й так ясно,\nале що більше союзників,\nто краще."
+  },
+  "nja_Tips_Common_08_001": {
+    "en": "If you're having trouble,\r\nyou could try gathering\r\nsome with  Play Coins!",
+    "ua": "Якщо важко,\nспробуй зібрати їх\nза монетки !"
+  },
+  "nja_Tips_Common_09_000": {
+    "en": "Have you tried positioning\r\nyour allies by touching\r\nthem directly?",
+    "ua": "Ти пробував розставляти\nсоюзників, торкаючись\nїх напряму?"
+  },
+  "nja_Tips_Common_09_001": {
+    "en": "It can be a useful\r\ntechnique if you're\r\npressed for time!",
+    "ua": "Це корисний\nприйом, коли\nчасу обмаль!"
+  },
+  "nja_Tips_Common_10_000": {
+    "en": "The more damage you deal\r\nwith your final blow, the\r\nbetter your score will be!",
+    "ua": "Що більше шкоди завдасть\nостанній удар, то кращими\nбудуть очки!"
+  },
+  "nja_Tips_Common_10_001": {
+    "en": "A true ninja holds nothing\r\nback, even when it seems\r\nthat victory is certain!",
+    "ua": "Ніндзя не стримується,\nнавіть коли перемога\nздається певною!"
+  },
+  "nja_Tips_Common_11_000": {
+    "en": "You'll get a better score\r\nif you perform a big combo\r\nwhen landing the final blow!",
+    "ua": "Велике комбо на\nостанньому ударі\nдасть більше очок!"
+  },
+  "nja_Tips_Common_11_001": {
+    "en": "It's best to bring as many\r\nallies as possible if you're\r\ngoing for a high score.",
+    "ua": "Коли женешся за рекордом,\nкраще взяти якомога\nбільше союзників."
+  },
+  "nja_Tips_Common_12_000": {
+    "en": "Collect multiple scrolls\r\nin a row to build up\r\nyour [System:Color name=\"mgNja_red_orange\" ]Scroll Chain[/System:Color].",
+    "ua": "Збирай кілька сувоїв\nпоспіль, щоб нарощувати\n[System:Color name=\"mgNja_red_orange\" ]ланцюг сувоїв[/System:Color]."
+  },
+  "nja_Tips_Common_12_001": {
+    "en": "The higher your Scroll\r\nChain gets, the better\r\nyour scores will be.",
+    "ua": "Що довший ланцюг\nсувоїв, то кращі\nочки."
+  },
+  "nja_Tips_Common_13_000": {
+    "en": "Your [System:Color name=\"mgNja_red_orange\" ]Scroll Chain[/System:Color] carries\r\nover across multiple\r\ndifferent stages...",
+    "ua": "[System:Color name=\"mgNja_red_orange\" ]Ланцюг сувоїв[/System:Color]\nзберігається між\nрізними етапами…"
+  },
+  "nja_Tips_Common_13_001": {
+    "en": "But miss just one scroll\r\nand the whole thing goes\r\nback to zero, so be careful!",
+    "ua": "Але пропусти хоч один\nсувій — і він обнулиться,\nтож обережно!"
+  },
+  "nja_Tips_Common_14_000": {
+    "en": "If you see a familiar demon\r\nin an unfamiliar colour, watch\r\nout! It's probably stronger!",
+    "ua": "Бачиш знайомого демона\nв незнайомому кольорі —\nобережно! Він, мабуть, сильніший!"
+  },
+  "nja_Tips_Common_14_001": {
+    "en": "Don't let your guard down\r\njust because it's an enemy\r\nyou've defeated before!",
+    "ua": "Не втрачай пильності лише\nтому, що цього ворога\nти вже перемагав!"
+  },
+  "nja_Tips_Common_15_000": {
+    "en": "In the Records section,\r\nyou can see your high\r\nscores and medals.",
+    "ua": "У розділі записів\nможна переглянути рекорди\nй медалі."
+  },
+  "nja_Tips_Common_16_000": {
+    "en": "Medals are the highest\r\nmark of ninja achievement.\r\nGo for the gold, Sensei!",
+    "ua": "Медалі — найвища\nвідзнака ніндзя.\nЦіль у золото, сенсею!"
+  },
+  "nja_Tips_Common_17_000": {
+    "en": "Do you know how to tell\r\nwhat kind of armament an\r\nally's scroll will give you?",
+    "ua": "Знаєш, як дізнатися,\nяке спорядження дасть\nсувій союзника?"
+  },
+  "nja_Tips_Common_17_001": {
+    "en": "I've heard it has\r\nsomething to do with\r\ntheir [System:Color name=\"mgNja_red_orange\" ]favourite colour[/System:Color]...",
+    "ua": "Кажуть, це залежить\nвід його\n[System:Color name=\"mgNja_red_orange\" ]улюбленого кольору[/System:Color]…"
+  },
+  "nja_Tips_Rule_00_000": {
+    "en": "In [System:Color name=\"mgNja_red_orange\" ]Path of the Ninja[/System:Color] mode,\r\nyou'll need to clear 30\r\ndifferent stages.",
+    "ua": "У режимі [System:Color name=\"mgNja_red_orange\" ]«Шлях ніндзя»[/System:Color]\nтреба пройти 30\nрізних етапів."
+  },
+  "nja_Tips_Rule_00_001": {
+    "en": "In [System:Color name=\"mgNja_red_orange\" ]Hard[/System:Color] difficulty, you'll\r\nface stronger demons and\r\nhave less time to prepare.",
+    "ua": "На рівні [System:Color name=\"mgNja_red_orange\" ]«Складно»[/System:Color] демони\nсильніші, а часу на\nпідготовку менше."
+  },
+  "nja_Tips_Rule_00_002": {
+    "en": "Only a true ninja can\r\nmake it to the very end!\r\nA ninja like you, Sensei!",
+    "ua": "Лише справжній ніндзя\nдійде до кінця!\nТакий, як ти, сенсею!"
+  },
+  "nja_Tips_Rule_01_000": {
+    "en": "In Score Attack mode,\r\nyou'll choose one out\r\nof six Acts to attempt.",
+    "ua": "У режимі «Гра на очки»\nвибираєш одну\nз шести дій."
+  },
+  "nja_Tips_Rule_01_001": {
+    "en": "Each Act contains five\r\nstages, and the goal is\r\nto get the highest score!",
+    "ua": "У кожній дії п'ять\nетапів, а мета —\nнабрати найбільше очок!"
+  },
+  "nja_Tips_Rule_01_002": {
+    "en": "You'll need all the skills\r\nyou can muster to top\r\nthe high score charts!",
+    "ua": "Щоб очолити таблицю\nрекордів, знадобиться\nвесь твій хист!"
+  },
+  "nja_System_b_000": {
+    "en": "Loading... Please do not turn off the power.",
+    "ua": "Завантаження… Не вимикайте живлення."
+  },
+  "nja_System_b_001": {
+    "en": "Saving... Please do not turn off the power.",
+    "ua": "Збереження… Не вимикайте живлення."
+  },
+  "nja_Dialog_answer_000": {
+    "en": "Wait, actually...",
+    "ua": "Стривай, взагалі-то…"
+  },
+  "nja_Dialog_answer_000_sdw": {
+    "en": "Wait, actually...",
+    "ua": "Стривай, взагалі-то…"
+  },
+  "nja_Dialog_answer_001": {
+    "en": "Yep!",
+    "ua": "Ага!"
+  },
+  "nja_Dialog_answer_001_sdw": {
+    "en": "Yep!",
+    "ua": "Ага!"
+  },
+  "nja_Dialog_answer_002": {
+    "en": "Sure!",
+    "ua": "Звісно!"
+  },
+  "nja_Dialog_answer_002_sdw": {
+    "en": "Sure!",
+    "ua": "Звісно!"
+  },
+  "nja_Dialog_answer_003": {
+    "en": "No thanks.",
+    "ua": "Ні, дякую."
+  },
+  "nja_Dialog_answer_003_sdw": {
+    "en": "No thanks.",
+    "ua": "Ні, дякую."
+  },
+  "nja_MessageStyle_000": {
+    "en": "*Conversation Style Label",
+    "ua": ""
+  },
+  "nja_MessageStyle_004": {
+    "en": "*Tips Window Label",
+    "ua": ""
+  },
+  "nja_staff_name_PR_000": {
+    "en": "Yuji Naka",
+    "ua": ""
+  },
+  "nja_staff_name_PR_001": {
+    "en": "Yusaku Yamanaka",
+    "ua": ""
+  },
+  "nja_staff_name_PR_002": {
+    "en": "Tomonori Sakamoto",
+    "ua": ""
+  },
+  "nja_staff_name_PR_003": {
+    "en": "Hidenori Oda",
+    "ua": ""
+  },
+  "nja_staff_name_PR_004": {
+    "en": "Mizuho Umezu",
+    "ua": ""
+  },
+  "nja_staff_name_PR_005": {
+    "en": "Chika Kawaguchi",
+    "ua": ""
+  },
+  "nja_staff_name_PR_006": {
+    "en": "Keita Sugahara",
+    "ua": ""
+  },
+  "nja_staff_name_PR_007": {
+    "en": "Masataka Miura",
+    "ua": ""
+  },
+  "nja_staff_name_PR_008": {
+    "en": "Minori Hisamatsu",
+    "ua": ""
+  },
+  "nja_staff_name_PR_009": {
+    "en": "Ayako Inoue",
+    "ua": ""
+  },
+  "nja_staff_name_PR_010": {
+    "en": "Nozomi Tsuruoka",
+    "ua": ""
+  },
+  "nja_staff_name_PR_011": {
+    "en": "Ken Miyajima",
+    "ua": ""
+  },
+  "nja_staff_name_PR_012": {
+    "en": "Takeshi Ichimura",
+    "ua": ""
+  },
+  "nja_staff_name_PR_013": {
+    "en": "Risako Watanabe",
+    "ua": ""
+  },
+  "nja_staff_name_PR_014": {
+    "en": "Megumi Shoji",
+    "ua": ""
+  },
+  "nja_staff_name_PR_015": {
+    "en": "Atsushi Saito",
+    "ua": ""
+  },
+  "nja_staff_name_PR_016": {
+    "en": "Mari Hamada",
+    "ua": ""
+  },
+  "nja_staff_name_PR_017": {
+    "en": "Tatsuya Suto",
+    "ua": ""
+  },
+  "nja_staff_name_PS_000": {
+    "en": "Nobuo Kiyota",
+    "ua": ""
+  },
+  "nja_staff_name_PS_001": {
+    "en": "Kiyoto Ohtani",
+    "ua": ""
+  },
+  "nja_staff_name_PS_002": {
+    "en": "Kyoko Nakamura",
+    "ua": ""
+  },
+  "nja_staff_name_Nin_000": {
+    "en": "Kouichi Kawamoto",
+    "ua": ""
+  },
+  "nja_staff_name_Nin_001": {
+    "en": "Toyokazu Nonaka",
+    "ua": ""
+  },
+  "nja_staff_name_Nin_002": {
+    "en": "Ryusuke Niitani",
+    "ua": ""
+  },
+  "nja_staff_name_Nin_003": {
+    "en": "Yoshiaki Onishi",
+    "ua": ""
+  },
+  "nja_staff_name_Nin_004": {
+    "en": "Masahiro Shiotani",
+    "ua": ""
+  },
+  "nja_staff_name_Nin_005": {
+    "en": "Kazuyuki Gofuku",
+    "ua": ""
+  },
+  "nja_staff_name_Nin_006": {
+    "en": "Kenji Yamamoto",
+    "ua": ""
+  },
+  "nja_staff_name_Nin_007": {
+    "en": "Minako Hamano",
+    "ua": ""
+  },
+  "nja_staff_name_Nin_008": {
+    "en": "Yuto Sasaki",
+    "ua": ""
+  },
+  "nja_staff_name_Nin_009": {
+    "en": "Shingo Okamoto",
+    "ua": ""
+  },
+  "nja_staff_name_Nin_010": {
+    "en": "Tomohiro Umeda",
+    "ua": ""
+  },
+  "nja_staff_name_Nin_011": {
+    "en": "Takehiro Oyama",
+    "ua": ""
+  },
+  "nja_staff_name_Nin_012": {
+    "en": "Manabu Matumoto",
+    "ua": ""
+  },
+  "nja_staff_name_Nin_013": {
+    "en": "Kanta Yokota",
+    "ua": ""
+  },
+  "nja_staff_name_Nin_014": {
+    "en": "Masaki Mori",
+    "ua": ""
+  },
+  "nja_staff_name_Nin_015": {
+    "en": "Mario Club",
+    "ua": ""
+  },
+  "nja_staff_name_Nin_016": {
+    "en": "NOA Product Testing",
+    "ua": ""
+  },
+  "nja_staff_name_Nin_017": {
+    "en": "NOE Quality Assurance",
+    "ua": ""
+  },
+  "nja_staff_name_Nin_018": {
+    "en": "NOE Localisation",
+    "ua": ""
+  },
+  "nja_staff_name_Nin_019": {
+    "en": "NOA Localization",
+    "ua": ""
+  },
+  "nja_staff_name_Nin_020": {
+    "en": "Shinya Takahashi",
+    "ua": ""
+  },
+  "nja_staff_name_Nin_021": {
+    "en": "Tatsumi Kimishima",
+    "ua": ""
+  },
+  "nja_staff_title_000": {
+    "en": "STAFF CREDITS",
+    "ua": "ТИТРИ"
+  },
+  "nja_staff_title_001": {
+    "en": "Producer",
+    "ua": "Продюсер"
+  },
+  "nja_staff_title_002": {
+    "en": "Director & Game Design",
+    "ua": "Режисер і геймдизайн"
+  },
+  "nja_staff_title_003": {
+    "en": "Program Director & Programming",
+    "ua": "Керівник програмування й програмування"
+  },
+  "nja_staff_title_004": {
+    "en": "Art Director",
+    "ua": "Арт-директор"
+  },
+  "nja_staff_title_005": {
+    "en": "Graphic Design",
+    "ua": "Графічний дизайн"
+  },
+  "nja_staff_title_006": {
+    "en": "Music",
+    "ua": "Музика"
+  },
+  "nja_staff_title_007": {
+    "en": "Sound Effects ",
+    "ua": "Звукові ефекти"
+  },
+  "nja_staff_title_008": {
+    "en": "Producers",
+    "ua": "Продюсери"
+  },
+  "nja_staff_title_009": {
+    "en": "Associate Producers",
+    "ua": "Асоційовані продюсери"
+  },
+  "nja_staff_title_010": {
+    "en": "Project Management",
+    "ua": "Керування проєктом"
+  },
+  "nja_staff_title_011": {
+    "en": "Sound Director",
+    "ua": "Звукорежисер"
+  },
+  "nja_staff_title_012": {
+    "en": "Sound Coordination",
+    "ua": "Координація звуку"
+  },
+  "nja_staff_title_013": {
+    "en": "Technical Support",
+    "ua": "Технічна підтримка"
+  },
+  "nja_staff_title_014": {
+    "en": "Testing",
+    "ua": "Тестування"
+  },
+  "nja_staff_title_015": {
+    "en": "European Localisation",
+    "ua": "Європейська локалізація"
+  },
+  "nja_staff_title_016": {
+    "en": "North American Localization",
+    "ua": "Північноамериканська локалізація"
+  },
+  "nja_staff_title_017": {
+    "en": "General Producer",
+    "ua": "Генеральний продюсер"
+  },
+  "nja_staff_title_018": {
+    "en": "Executive Producer",
+    "ua": "Виконавчий продюсер"
+  },
+  "nja_staff_corp_000": {
+    "en": "Developer PROPE Co.,Ltd.",
+    "ua": "Розробник PROPE Co.,Ltd."
+  },
+  "nja_staff_corp_001": {
+    "en": "Puresound Inc.",
+    "ua": ""
+  },
+  "nja_staff_corp_002": {
+    "en": "Nintendo",
+    "ua": "Nintendo"
+  },
+  "nja_staff_copyright_000": {
+    "en": "Nintendo and PROPE are the authors \r\nof this software for the purpose of copyright. \r\nAll rights reserved.\r\n© 2016 Nintendo.",
+    "ua": "Nintendo і PROPE є авторами\nцієї програми з погляду авторського права.\nУсі права захищено.\n© 2016 Nintendo."
+  },
+  "nja_Demo_OP_00_000": {
+    "en": "Long has this land been\r\nprotected by a clan known\r\nas the [System:Color name=\"mgNja_red_orange\" ][NAME] Ninja[/System:Color]...",
+    "ua": "Здавна цей край\nзахищав клан\n[System:Color name=\"mgNja_red_orange\" ]ніндзя [NAME][/System:Color]…"
+  },
+  "nja_Demo_OP_01_000": {
+    "en": "But now, a nefarious\r\n[System:Color name=\"mgNja_red_orange\" ]demon army[/System:Color] has arisen\r\nto threaten the peace!",
+    "ua": "Та тепер підступне\n[System:Color name=\"mgNja_red_orange\" ]військо демонів[/System:Color] постало\nй загрожує миру!"
+  },
+  "nja_Demo_OP_01_001": {
+    "en": "The demons attack villages\r\nindiscriminately, spreading\r\npanic and chaos.",
+    "ua": "Демони нападають на села\nбез розбору, сіючи\nпаніку й хаос."
+  },
+  "nja_Demo_OP_02_000": {
+    "en": "Sensei! The time has come\r\nto fulfil your duty as heir\r\nto the [System:Color name=\"mgNja_red_orange\" ][NAME] Ninja Clan[/System:Color]!",
+    "ua": "Сенсею! Настав час виконати\nсвій обов'язок спадкоємця\n[System:Color name=\"mgNja_red_orange\" ]клану ніндзя [NAME][/System:Color]!"
+  },
+  "nja_Demo_OP_02_001": {
+    "en": "We must protect the townsfolk\r\nfrom the demon onslaught...and\r\nI have [System:Color name=\"mgNja_red_orange\" ]just the tool for the job[/System:Color]!",
+    "ua": "Ми мусимо захистити людей\nвід навали демонів… і в мене\nє [System:Color name=\"mgNja_red_orange\" ]саме те, що треба[/System:Color]!"
+  },
+  "nja_Demo_OP_03_000": {
+    "en": "Behold: the treasure of our clan,\r\npassed down for generations...\r\nThe [System:Color name=\"mgNja_red_orange\" ]Cannon of Justice[/System:Color]!",
+    "ua": "Узри скарб нашого клану,\nщо віками передається…\n[System:Color name=\"mgNja_red_orange\" ]Гармату справедливості[/System:Color]!"
+  },
+  "nja_Demo_OP_03_001": {
+    "en": "I, your loyal apprentice [System:Color name=\"mgNja_red_orange\" ]Shinobu[/System:Color],\r\nwill take care of the menial\r\ntask of aiming the cannon.",
+    "ua": "Я, твоя вірна учениця [System:Color name=\"mgNja_red_orange\" ]Сінобу[/System:Color],\nвізьму на себе скромну\nроботу — наводити гармату."
+  },
+  "nja_Demo_OP_03_002": {
+    "en": "And to you, Sensei, goes\r\nthe most honourable task\r\nof all! Just [System:Color name=\"mgNja_red_orange\" ]hop inside[/System:Color]!",
+    "ua": "А тобі, сенсею, дістається\nнайпочесніша справа!\nПросто [System:Color name=\"mgNja_red_orange\" ]залазь усередину[/System:Color]!"
+  },
+  "nja_Demo_OP_04_000": {
+    "en": "That's right, you mustn't wear\r\nyour clothes inside the cannon.\r\nThey'd burn right up, you see.",
+    "ua": "Так-так, в гармату не можна\nв одязі. Він же згорить,\nрозумієш."
+  },
+  "nja_Demo_OP_04_001": {
+    "en": "Legend has it our revered\r\nancestors faced the demon\r\nmenace [System:Color name=\"mgNja_red_orange\" ]completely unarmed[/System:Color]!",
+    "ua": "Переказують, що наші шановані\nпредки стали проти демонів\n[System:Color name=\"mgNja_red_orange\" ]зовсім беззбройними[/System:Color]!"
+  },
+  "nja_Demo_OP_05_000": {
+    "en": "As the proud heir to our clan,\r\nI'm sure you too will bravely...\r\nWhat's that? You don't want to?",
+    "ua": "Як гордий спадкоємець клану,\nти, певно, теж відважно…\nЩо? Ти не хочеш?"
+  },
+  "nja_Demo_OP_05_001": {
+    "en": "Well, I suppose you haven't\r\nhad much practice at demon\r\nslaying. How about this, then?",
+    "ua": "Ну, мабуть, у тебе ще мало\nпрактики в полюванні на демонів.\nТоді як щодо цього?"
+  },
+  "nja_Demo_OP_06_000": {
+    "en": "I'll just take these priceless\r\n[System:Color name=\"mgNja_red_orange\" ]Armament Scrolls[/System:Color]...",
+    "ua": "Я візьму ці безцінні\n[System:Color name=\"mgNja_red_orange\" ]сувої спорядження[/System:Color]…"
+  },
+  "nja_Demo_OP_07_000": {
+    "en": "Attach them carefully to\r\nthese [System:Color name=\"mgNja_red_orange\" ]kites[/System:Color]...",
+    "ua": "Акуратно прив'яжу їх\nдо цих [System:Color name=\"mgNja_red_orange\" ]зміїв[/System:Color]…"
+  },
+  "nja_Demo_OP_08_000": {
+    "en": "There! Now all you have\r\nto do is catch the scrolls\r\nin midair! Simple, right?",
+    "ua": "Отак! Тепер лише лови\nсувої в повітрі!\nПросто, правда?"
+  },
+  "nja_Demo_ED_00_000": {
+    "en": "Well, you finally did it,\r\nSensei. You defeated\r\nthe whole demon army.",
+    "ua": "Що ж, нарешті вдалося,\nсенсею. Ти розбив\nусе військо демонів."
+  },
+  "nja_Demo_ED_01_000": {
+    "en": "To be honest, when we first\r\nstarted out, I wasn't sure\r\nyou were up to the task...",
+    "ua": "Чесно кажучи, спочатку\nя сумнівалася,\nчи тобі це до снаги…"
+  },
+  "nja_Demo_ED_01_001": {
+    "en": "But you've grown into a\r\ngreat ninja! Our ancestors\r\nwould be proud!",
+    "ua": "Але ти виріс у великого\nніндзя! Предки\nпишалися б!"
+  },
+  "nja_Demo_ED_02_000": {
+    "en": "Huh? All thanks to me?",
+    "ua": "Га? Усе завдяки мені?"
+  },
+  "nja_Demo_ED_03_000": {
+    "en": "Don't be ridiculous!\r\nI only performed my duty,\r\nas any apprentice would!",
+    "ua": "Не вигадуй!\nЯ лише виконувала обов'язок,\nяк будь-яка учениця!"
+  },
+  "nja_Demo_ED_03_001": {
+    "en": "I suppose it was a lot\r\nof work, launching that\r\ncannon [System:Color name=\"mgNja_red_orange\" ][LAUNCH] times[/System:Color]...",
+    "ua": "Хоча, мабуть, чималенько\nпопрацювала, стріляючи\nз гармати [System:Color name=\"mgNja_red_orange\" ][LAUNCH] разів[/System:Color]…"
+  },
+  "nja_Demo_ED_03_002": {
+    "en": "But all of our allies helped,\r\ntoo! This is a victory for the\r\nwhole [NAME] Ninja Clan!",
+    "ua": "Але допомагали й усі\nсоюзники! Це перемога\nвсього клану ніндзя [NAME]!"
+  },
+  "nja_Demo_ED_04_000": {
+    "en": "Now come on, Sensei!\r\nLet's head home!",
+    "ua": "Ну ж бо, сенсею!\nХодімо додому!"
+  }
+}

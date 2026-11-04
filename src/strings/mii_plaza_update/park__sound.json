@@ -1,0 +1,1486 @@
+{
+  "dlg_soundtest_op_00": {
+    "en": "Welcome to the music player!",
+    "ua": "Вітаємо в музичному\nпрогравачі!"
+  },
+  "dlg_soundtest_op_01": {
+    "en": "Here, you can listen to the\r\nStreetPass Mii Plaza soundtrack.",
+    "ua": "Тут можна послухати музику\nПлощі StreetPass Mii."
+  },
+  "dlg_soundtest_op_02": {
+    "en": "If there's a tune you've got stuck\r\nin your head, you can listen to it\r\nto your heart's content here!",
+    "ua": "Якщо якась мелодія засіла у вас\nу голові, слухайте її тут\nскільки душа забажає!"
+  },
+  "dlg_soundtest_list_00_u": {
+    "en": "StreetPass Mii Plaza\r\nEntrance",
+    "ua": "Площа StreetPass Mii\nВхід"
+  },
+  "dlg_soundtest_list_01_u": {
+    "en": "StreetPass Mii Plaza\r\nMain Theme 1",
+    "ua": "Площа StreetPass Mii\nГоловна тема 1"
+  },
+  "dlg_soundtest_list_02_u": {
+    "en": "StreetPass Mii Plaza\r\nMain Theme 2",
+    "ua": "Площа StreetPass Mii\nГоловна тема 2"
+  },
+  "dlg_soundtest_list_03_u": {
+    "en": "StreetPass Mii Plaza\r\nMain Theme 3",
+    "ua": "Площа StreetPass Mii\nГоловна тема 3"
+  },
+  "dlg_soundtest_list_04_u": {
+    "en": "StreetPass Mii Plaza\r\nMain Theme 4",
+    "ua": "Площа StreetPass Mii\nГоловна тема 4"
+  },
+  "dlg_soundtest_list_05_u": {
+    "en": "Puzzle Swap\r\nTitle",
+    "ua": "Збери пазл\nЗаставка"
+  },
+  "dlg_soundtest_list_06_u": {
+    "en": "Puzzle Swap\r\nGet Piece",
+    "ua": "Збери пазл\nНова частинка"
+  },
+  "dlg_soundtest_list_07_u": {
+    "en": "StreetPass Quest\r\nTitle",
+    "ua": "Порятунок Mii\nЗаставка"
+  },
+  "dlg_soundtest_list_08_u": {
+    "en": "Puzzle Swap\r\nPanel Complete",
+    "ua": "Збери пазл\nПанель складено"
+  },
+  "dlg_soundtest_list_09_u": {
+    "en": "Puzzle Swap\r\nAll Panels Complete",
+    "ua": "Збери пазл\nУсі панелі складено"
+  },
+  "dlg_soundtest_list_12_u": {
+    "en": "StreetPass Quest\r\nCurrent Results",
+    "ua": "Порятунок Mii\nПроміжний підсумок"
+  },
+  "dlg_soundtest_list_13_u": {
+    "en": "StreetPass Quest\r\nPalace Theme",
+    "ua": "Порятунок Mii\nТема палацу"
+  },
+  "dlg_soundtest_list_14_u": {
+    "en": "StreetPass Quest\r\nKidnapped!",
+    "ua": "Порятунок Mii\nВикрадення!"
+  },
+  "dlg_soundtest_list_15_u": {
+    "en": "StreetPass Quest\r\nCaptive Mii",
+    "ua": "Порятунок Mii\nПолонений Mii"
+  },
+  "dlg_soundtest_list_16_u": {
+    "en": "StreetPass Quest\r\nDark Room",
+    "ua": "Порятунок Mii\nТемна кімната"
+  },
+  "dlg_soundtest_list_17_u": {
+    "en": "StreetPass Quest\r\nVenture Forth",
+    "ua": "Порятунок Mii\nУ путь"
+  },
+  "dlg_soundtest_list_18_u": {
+    "en": "StreetPass Quest\r\nTo Battle, Heroes!",
+    "ua": "Порятунок Mii\nДо бою, герої!"
+  },
+  "dlg_soundtest_list_19_u": {
+    "en": "StreetPass Quest\r\nFight On, Heroes!",
+    "ua": "Порятунок Mii\nТримайтеся, герої!"
+  },
+  "dlg_soundtest_list_20_u": {
+    "en": "StreetPass Quest\r\nArmoured Fiend",
+    "ua": "Порятунок Mii\nБроньована почвара"
+  },
+  "dlg_soundtest_list_21_u": {
+    "en": "StreetPass Quest\r\nUltimate Ghost",
+    "ua": "Порятунок Mii\nГоловний привид"
+  },
+  "dlg_soundtest_list_22_u": {
+    "en": "StreetPass Quest\r\nEnding",
+    "ua": "Порятунок Mii\nФінал"
+  },
+  "dlg_soundtest_list_23_u": {
+    "en": "StreetPass Quest II\r\nTitle",
+    "ua": "Порятунок Mii II\nЗаставка"
+  },
+  "dlg_soundtest_list_24_u": {
+    "en": "StreetPass Quest II\r\nVenture Forth 1",
+    "ua": "Порятунок Mii II\nУ путь 1"
+  },
+  "dlg_soundtest_list_25_u": {
+    "en": "StreetPass Quest II\r\nKeep Fighting, Heroes!",
+    "ua": "Порятунок Mii II\nНе здавайтеся, герої!"
+  },
+  "dlg_soundtest_list_26_u": {
+    "en": "StreetPass Quest II\r\nCurrent Results",
+    "ua": "Порятунок Mii II\nПроміжний підсумок"
+  },
+  "dlg_soundtest_list_27_u": {
+    "en": "StreetPass Quest II\r\nSave the World, Heroes!",
+    "ua": "Порятунок Mii II\nРятуйте світ, герої!"
+  },
+  "dlg_soundtest_list_28_u": {
+    "en": "StreetPass Quest II\r\nArmoured Archfiend",
+    "ua": "Порятунок Mii II\nБроньований архідемон"
+  },
+  "dlg_soundtest_list_29_u": {
+    "en": "StreetPass Quest II\r\nDark Lord",
+    "ua": "Порятунок Mii II\nТемний володар"
+  },
+  "dlg_soundtest_list_30_u": {
+    "en": "StreetPass Quest II\r\nEnding",
+    "ua": "Порятунок Mii II\nФінал"
+  },
+  "dlg_soundtest_list_31_u": {
+    "en": "StreetPass Mii Plaza\r\nMain Theme 5",
+    "ua": "Площа StreetPass Mii\nГоловна тема 5"
+  },
+  "dlg_soundtest_list_32_u": {
+    "en": "StreetPass Mii Plaza\r\nMain Theme 6",
+    "ua": "Площа StreetPass Mii\nГоловна тема 6"
+  },
+  "dlg_soundtest_list_33_u": {
+    "en": "StreetPass Mii Plaza\r\nMain Theme 7",
+    "ua": "Площа StreetPass Mii\nГоловна тема 7"
+  },
+  "dlg_soundtest_list_34_u": {
+    "en": "StreetPass Quest II\r\nVenture Forth 2",
+    "ua": "Порятунок Mii II\nУ путь 2"
+  },
+  "dlg_soundtest_list_35_u": {
+    "en": "StreetPass Quest II\r\nVenture Forth 3",
+    "ua": "Порятунок Mii II\nУ путь 3"
+  },
+  "dlg_soundtest_list_36_u": {
+    "en": "StreetPass Quest II\r\nVenture Forth 4",
+    "ua": "Порятунок Mii II\nУ путь 4"
+  },
+  "dlg_soundtest_list_37_u": {
+    "en": "StreetPass Mii Plaza\r\nSalesbunny",
+    "ua": "Площа StreetPass Mii\nКролик-продавець"
+  },
+  "dlg_soundtest_list_38_u": {
+    "en": "StreetPass Mii Plaza\r\nStreetPass Birthdays",
+    "ua": "Площа StreetPass Mii\nКалендар StreetPass"
+  },
+  "dlg_soundtest_list_39_u": {
+    "en": "StreetPass Mii Plaza\r\nVIP Room",
+    "ua": "Площа StreetPass Mii\nVIP-кімната"
+  },
+  "dlg_soundtest_list_mgSht_00_u": {
+    "en": "StreetPass Squad\r\nTitle",
+    "ua": "Галактика StreetPass\nЗаставка"
+  },
+  "dlg_soundtest_list_mgSht_01_u": {
+    "en": "StreetPass Squad\r\nPlatinum Beach",
+    "ua": "Галактика StreetPass\nПляж Платина"
+  },
+  "dlg_soundtest_list_mgSht_02_u": {
+    "en": "StreetPass Squad\r\nDunewatch Castle",
+    "ua": "Галактика StreetPass\nЗамок Дюнозор"
+  },
+  "dlg_soundtest_list_mgSht_03_u": {
+    "en": "StreetPass Squad\r\nCerulean Tower",
+    "ua": "Галактика StreetPass\nЛазурова вежа"
+  },
+  "dlg_soundtest_list_mgSht_04_u": {
+    "en": "StreetPass Squad\r\nRagnablok Chasm",
+    "ua": "Галактика StreetPass\nПрірва Рагнаблок"
+  },
+  "dlg_soundtest_list_mgSht_05_u": {
+    "en": "StreetPass Squad\r\nDefend the Core Stones!",
+    "ua": "Галактика StreetPass\nЗахистіть камені ядра!"
+  },
+  "dlg_soundtest_list_mgSht_06_u": {
+    "en": "StreetPass Squad\r\nSlitherstone Ruins",
+    "ua": "Галактика StreetPass\nРуїни Зміїного Каменю"
+  },
+  "dlg_soundtest_list_mgSht_07_u": {
+    "en": "StreetPass Squad\r\nParade o' Plunder",
+    "ua": "Галактика StreetPass\nПарад грабіжників"
+  },
+  "dlg_soundtest_list_mgSht_08_u": {
+    "en": "StreetPass Squad\r\nBone Rattler",
+    "ua": "Галактика StreetPass\nКістобрязк"
+  },
+  "dlg_soundtest_list_mgSht_09_u": {
+    "en": "StreetPass Squad\r\nWheels of Woe",
+    "ua": "Галактика StreetPass\nКолеса біди"
+  },
+  "dlg_soundtest_list_mgSht_10_u": {
+    "en": "StreetPass Squad\r\nNautilus Nest",
+    "ua": "Галактика StreetPass\nГніздо Наутилуса"
+  },
+  "dlg_soundtest_list_mgSht_11_u": {
+    "en": "StreetPass Squad\r\nResource-Rich Ridge",
+    "ua": "Галактика StreetPass\nБагатий хребет"
+  },
+  "dlg_soundtest_list_mgSht_12_u": {
+    "en": "StreetPass Squad\r\nGB-1 Space Dock",
+    "ua": "Галактика StreetPass\nКосмодок GB-1"
+  },
+  "dlg_soundtest_list_mgSht_13_u": {
+    "en": "StreetPass Squad\r\nGB-1 Central Core",
+    "ua": "Галактика StreetPass\nЯдро GB-1"
+  },
+  "dlg_soundtest_list_mgSht_14_u": {
+    "en": "StreetPass Squad\r\nBattle Bone Mk 7",
+    "ua": "Галактика StreetPass\nБойова Кістка Мк 7"
+  },
+  "dlg_soundtest_list_mgSht_15_u": {
+    "en": "StreetPass Squad\r\nFearsome Foe",
+    "ua": "Галактика StreetPass\nГрізний ворог"
+  },
+  "dlg_soundtest_list_mgSht_16_u": {
+    "en": "StreetPass Squad\r\nBrutal Battle",
+    "ua": "Галактика StreetPass\nЖорстокий бій"
+  },
+  "dlg_soundtest_list_mgSht_17_u": {
+    "en": "StreetPass Squad\r\nRobo-Bone",
+    "ua": "Галактика StreetPass\nРобо-Кістка"
+  },
+  "dlg_soundtest_list_mgSht_18_u": {
+    "en": "StreetPass Squad\r\nOn Patrol",
+    "ua": "Галактика StreetPass\nНа патрулі"
+  },
+  "dlg_soundtest_list_mgSht_19_u": {
+    "en": "StreetPass Squad\r\nMii Force, Assemble(?!)",
+    "ua": "Галактика StreetPass\nMii Force, збір(?!)"
+  },
+  "dlg_soundtest_list_mgSht_20_u": {
+    "en": "StreetPass Squad\r\nReporting For Duty",
+    "ua": "Галактика StreetPass\nПрибув на службу"
+  },
+  "dlg_soundtest_list_mgSht_21_u": {
+    "en": "StreetPass Squad\r\nHelpful Advice",
+    "ua": "Галактика StreetPass\nКорисна порада"
+  },
+  "dlg_soundtest_list_mgSht_22_u": {
+    "en": "StreetPass Squad\r\nThe Galaxy Awaits",
+    "ua": "Галактика StreetPass\nГалактика чекає"
+  },
+  "dlg_soundtest_list_mgSht_23_u": {
+    "en": "StreetPass Squad\r\nMii Force, Move Out!",
+    "ua": "Галактика StreetPass\nMii Force, вперед!"
+  },
+  "dlg_soundtest_list_mgSht_24_u": {
+    "en": "StreetPass Squad\r\nGold Bone's Theme",
+    "ua": "Галактика StreetPass\nТема Золотої Кістки"
+  },
+  "dlg_soundtest_list_mgSht_25_u": {
+    "en": "StreetPass Squad\r\nAye Aye, Cap'n!",
+    "ua": "Галактика StreetPass\nЄсть, капітане!"
+  },
+  "dlg_soundtest_list_mgSht_26_u": {
+    "en": "StreetPass Squad\r\nPesky Flies",
+    "ua": "Галактика StreetPass\nНабридливі мухи"
+  },
+  "dlg_soundtest_list_mgSht_27_u": {
+    "en": "StreetPass Squad\r\nA Boss Appears",
+    "ua": "Галактика StreetPass\nЗ'являється бос"
+  },
+  "dlg_soundtest_list_mgSht_28_u": {
+    "en": "StreetPass Squad\r\nEnding",
+    "ua": "Галактика StreetPass\nФінал"
+  },
+  "dlg_soundtest_list_mgFlo_00_u": {
+    "en": "StreetPass Garden\r\nTitle",
+    "ua": "Сад StreetPass\nЗаставка"
+  },
+  "dlg_soundtest_list_mgFlo_01_u": {
+    "en": "StreetPass Garden\r\nDid You Know...?",
+    "ua": "Сад StreetPass\nА ви знали…?"
+  },
+  "dlg_soundtest_list_mgFlo_02_u": {
+    "en": "StreetPass Garden\r\nLeafington",
+    "ua": "Сад StreetPass\nЛистоград"
+  },
+  "dlg_soundtest_list_mgFlo_03_u": {
+    "en": "StreetPass Garden\r\nWatering Time: Intro",
+    "ua": "Сад StreetPass\nПоливання: початок"
+  },
+  "dlg_soundtest_list_mgFlo_04_u": {
+    "en": "StreetPass Garden\r\nWatering Time: Growing",
+    "ua": "Сад StreetPass\nПоливання: ріст"
+  },
+  "dlg_soundtest_list_mgFlo_05_u": {
+    "en": "StreetPass Garden\r\nWatering Time: Blooming",
+    "ua": "Сад StreetPass\nПоливання: цвітіння"
+  },
+  "dlg_soundtest_list_mgFlo_06_u": {
+    "en": "StreetPass Garden\r\nGarden Shed",
+    "ua": "Сад StreetPass\nСадовий сарай"
+  },
+  "dlg_soundtest_list_mgFlo_07_u": {
+    "en": "StreetPass Garden\r\nSeed Box",
+    "ua": "Сад StreetPass\nСкринька насіння"
+  },
+  "dlg_soundtest_list_mgFlo_08_u": {
+    "en": "StreetPass Garden\r\nJournal",
+    "ua": "Сад StreetPass\nЖурнал"
+  },
+  "dlg_soundtest_list_mgFlo_09_u": {
+    "en": "StreetPass Garden\r\nCourtyard",
+    "ua": "Сад StreetPass\nПодвір'я"
+  },
+  "dlg_soundtest_list_mgFlo_10_u": {
+    "en": "StreetPass Garden\r\nShopping Centre",
+    "ua": "Сад StreetPass\nТорговий центр"
+  },
+  "dlg_soundtest_list_mgFlo_11_u": {
+    "en": "StreetPass Garden\r\nPotter's Paradise",
+    "ua": "Сад StreetPass\nРай гончаря"
+  },
+  "dlg_soundtest_list_mgFlo_12_u": {
+    "en": "StreetPass Garden\r\nFlower Power",
+    "ua": "Сад StreetPass\nСила квітів"
+  },
+  "dlg_soundtest_list_mgFlo_13_u": {
+    "en": "StreetPass Garden\r\nGarden Grace",
+    "ua": "Сад StreetPass\nСадова краса"
+  },
+  "dlg_soundtest_list_mgFlo_14_u": {
+    "en": "StreetPass Garden\r\nNew Turf",
+    "ua": "Сад StreetPass\nНова ділянка"
+  },
+  "dlg_soundtest_list_mgFlo_15_u": {
+    "en": "StreetPass Garden\r\nChoose a Garden Area",
+    "ua": "Сад StreetPass\nВибір ділянки"
+  },
+  "dlg_soundtest_list_mgFlo_16_u": {
+    "en": "StreetPass Garden\r\nStarting Garden",
+    "ua": "Сад StreetPass\nПерший сад"
+  },
+  "dlg_soundtest_list_mgFlo_17_u": {
+    "en": "StreetPass Garden\r\nDeluxe Garden",
+    "ua": "Сад StreetPass\nРозкішний сад"
+  },
+  "dlg_soundtest_list_mgFlo_18_u": {
+    "en": "StreetPass Garden\r\nChequerboard Garden",
+    "ua": "Сад StreetPass\nШаховий сад"
+  },
+  "dlg_soundtest_list_mgFlo_19_u": {
+    "en": "StreetPass Garden\r\nSimple Garden",
+    "ua": "Сад StreetPass\nПростий сад"
+  },
+  "dlg_soundtest_list_mgFlo_20_u": {
+    "en": "StreetPass Garden\r\nPatio Garden",
+    "ua": "Сад StreetPass\nСад-патіо"
+  },
+  "dlg_soundtest_list_mgFlo_21_u": {
+    "en": "StreetPass Garden\r\nTerrace Garden",
+    "ua": "Сад StreetPass\nТерасовий сад"
+  },
+  "dlg_soundtest_list_mgFlo_22_u": {
+    "en": "StreetPass Garden\r\nGreenhouse Garden",
+    "ua": "Сад StreetPass\nСад-оранжерея"
+  },
+  "dlg_soundtest_list_mgFlo_23_u": {
+    "en": "StreetPass Garden\r\nFountain Garden",
+    "ua": "Сад StreetPass\nСад із фонтаном"
+  },
+  "dlg_soundtest_list_mgFlo_25_u": {
+    "en": "StreetPass Garden\r\nProgress Report",
+    "ua": "Сад StreetPass\nЗвіт про успіхи"
+  },
+  "dlg_soundtest_list_mgFlo_27_u": {
+    "en": "StreetPass Garden\r\nFriend's Garden",
+    "ua": "Сад StreetPass\nСад друга"
+  },
+  "dlg_soundtest_list_mgFlo_29_u": {
+    "en": "StreetPass Garden\r\nA Phantom Plant Blooms",
+    "ua": "Сад StreetPass\nЦвіте примарна рослина"
+  },
+  "dlg_soundtest_list_mgFlo_30_u": {
+    "en": "StreetPass Garden\r\nNew Breed",
+    "ua": "Сад StreetPass\nНовий сорт"
+  },
+  "dlg_soundtest_list_mgFlo_31_u": {
+    "en": "StreetPass Garden\r\nNew Colour",
+    "ua": "Сад StreetPass\nНовий колір"
+  },
+  "dlg_soundtest_list_mgFlo_32_u": {
+    "en": "StreetPass Garden\r\nA Plant Blooms",
+    "ua": "Сад StreetPass\nРослина цвіте"
+  },
+  "dlg_soundtest_list_mgFlo_33_u": {
+    "en": "StreetPass Garden\r\nMaster Gardener's Crown",
+    "ua": "Сад StreetPass\nКорона майстра-садівника"
+  },
+  "dlg_soundtest_list_mgFlo_34_u": {
+    "en": "StreetPass Garden\r\nMaster Gardener",
+    "ua": "Сад StreetPass\nМайстер-садівник"
+  },
+  "dlg_soundtest_list_mgFlo_35_u": {
+    "en": "StreetPass Garden\r\nEnding",
+    "ua": "Сад StreetPass\nФінал"
+  },
+  "dlg_soundtest_list_mgFlo_36_u": {
+    "en": "StreetPass Garden\r\nPoppy's Seeds",
+    "ua": "Сад StreetPass\nНасіння Поппі"
+  },
+  "dlg_soundtest_list_mgPzd_Title1": {
+    "en": "StreetPass Mansion\r\nMain Theme 1",
+    "ua": "Таємничий маєток StreetPass\nГоловна тема 1"
+  },
+  "dlg_soundtest_list_mgPzd_Title2": {
+    "en": "StreetPass Mansion\r\nMain Theme 2",
+    "ua": "Таємничий маєток StreetPass\nГоловна тема 2"
+  },
+  "dlg_soundtest_list_mgPzd_Title3": {
+    "en": "StreetPass Mansion\r\nMain Theme 3",
+    "ua": "Таємничий маєток StreetPass\nГоловна тема 3"
+  },
+  "dlg_soundtest_list_mgPzd_Tips": {
+    "en": "StreetPass Mansion\r\nWords of Wisdom",
+    "ua": "Таємничий маєток StreetPass\nМудрі слова"
+  },
+  "dlg_soundtest_list_mgPzd_Mii": {
+    "en": "StreetPass Mansion\r\nLost Mii Characters",
+    "ua": "Таємничий маєток StreetPass\nЗагублені Mii"
+  },
+  "dlg_soundtest_list_mgPzd_Floor1": {
+    "en": "StreetPass Mansion\r\nThe Classic Floors",
+    "ua": "Таємничий маєток StreetPass\nКласичні поверхи"
+  },
+  "dlg_soundtest_list_mgPzd_Floor2": {
+    "en": "StreetPass Mansion\r\nThe Wooden Floors",
+    "ua": "Таємничий маєток StreetPass\nДерев'яні поверхи"
+  },
+  "dlg_soundtest_list_mgPzd_Floor3": {
+    "en": "StreetPass Mansion\r\nThe Stone Floors",
+    "ua": "Таємничий маєток StreetPass\nКам'яні поверхи"
+  },
+  "dlg_soundtest_list_mgPzd_Floor4": {
+    "en": "StreetPass Mansion\r\nThe Stately Floors",
+    "ua": "Таємничий маєток StreetPass\nПарадні поверхи"
+  },
+  "dlg_soundtest_list_mgPzd_Floor5": {
+    "en": "StreetPass Mansion\r\nThe Ominous Floors",
+    "ua": "Таємничий маєток StreetPass\nЗловісні поверхи"
+  },
+  "dlg_soundtest_list_mgPzd_Event": {
+    "en": "StreetPass Mansion\r\nDramatic Moment",
+    "ua": "Таємничий маєток StreetPass\nДраматичний момент"
+  },
+  "dlg_soundtest_list_mgPzd_Battle_N": {
+    "en": "StreetPass Mansion\r\nMalevolent Entity",
+    "ua": "Таємничий маєток StreetPass\nЗловмисна сутність"
+  },
+  "dlg_soundtest_list_mgPzd_Battle_B": {
+    "en": "StreetPass Mansion\r\nBoss Battle",
+    "ua": "Таємничий маєток StreetPass\nБій із босом"
+  },
+  "dlg_soundtest_list_mgPzd_Battle_L": {
+    "en": "StreetPass Mansion\r\nThe Final Battle",
+    "ua": "Таємничий маєток StreetPass\nФінальна битва"
+  },
+  "dlg_soundtest_list_mgPzd_Result_W": {
+    "en": "StreetPass Mansion\r\nVictory",
+    "ua": "Таємничий маєток StreetPass\nПеремога"
+  },
+  "dlg_soundtest_list_mgPzd_Result_L": {
+    "en": "StreetPass Mansion\r\nDefeat",
+    "ua": "Таємничий маєток StreetPass\nПоразка"
+  },
+  "dlg_soundtest_list_mgPzd_Puzzle": {
+    "en": "StreetPass Mansion\r\nSetting a Piece 1",
+    "ua": "Таємничий маєток StreetPass\nРозміщення частинки 1"
+  },
+  "dlg_soundtest_list_mgPzd_Puzzle2": {
+    "en": "StreetPass Mansion\r\nSetting a Piece 2",
+    "ua": "Таємничий маєток StreetPass\nРозміщення частинки 2"
+  },
+  "dlg_soundtest_list_mgPzd_Staffroll": {
+    "en": "StreetPass Mansion\r\nCredits",
+    "ua": "Таємничий маєток StreetPass\nТитри"
+  },
+  "dlg_soundtest_list_mgPzd_OP1": {
+    "en": "StreetPass Mansion\r\nThe Mansion",
+    "ua": "Таємничий маєток StreetPass\nМаєток"
+  },
+  "dlg_soundtest_list_mgPzd_OP2": {
+    "en": "StreetPass Mansion\r\nA Horrifying Hand",
+    "ua": "Таємничий маєток StreetPass\nЖахлива рука"
+  },
+  "dlg_soundtest_list_mgPzd_OP3": {
+    "en": "StreetPass Mansion\r\nDanger Abounds",
+    "ua": "Таємничий маєток StreetPass\nНебезпека скрізь"
+  },
+  "dlg_soundtest_list_mgPzd_Coin": {
+    "en": "StreetPass Mansion\r\nHelp For Hire",
+    "ua": "Таємничий маєток StreetPass\nНайманий помічник"
+  },
+  "dlg_soundtest_list_mgPzd_Ending1": {
+    "en": "StreetPass Mansion\r\nEnding: A Close Call",
+    "ua": "Таємничий маєток StreetPass\nФінал: на волосинці"
+  },
+  "dlg_soundtest_list_mgPzd_Ending2": {
+    "en": "StreetPass Mansion\r\nEnding: A New Dawn",
+    "ua": "Таємничий маєток StreetPass\nФінал: новий світанок"
+  },
+  "dlg_soundtest_list_mgPzd_JIN_Item": {
+    "en": "StreetPass Mansion\r\nTreasure!",
+    "ua": "Таємничий маєток StreetPass\nСкарб!"
+  },
+  "dlg_soundtest_list_mgPzd_JIN_LevelUp": {
+    "en": "StreetPass Mansion\r\nLevel Up",
+    "ua": "Таємничий маєток StreetPass\nНовий рівень"
+  },
+  "dlg_soundtest_list_mgPzd_JIN_Mii": {
+    "en": "StreetPass Mansion\r\nTrusty Companion",
+    "ua": "Таємничий маєток StreetPass\nВірний супутник"
+  },
+  "dlg_soundtest_list_mgPzd_JIN_MaxUp": {
+    "en": "StreetPass Mansion\r\nMax Level Up",
+    "ua": "Таємничий маєток StreetPass\nМаксимальний рівень"
+  },
+  "dlg_soundtest_list_mgPzd_JIN_FClear": {
+    "en": "StreetPass Mansion\r\nFloor Cleared",
+    "ua": "Таємничий маєток StreetPass\nПоверх пройдено"
+  },
+  "dlg_soundtest_list_mgPzd_JIN_MGStart": {
+    "en": "StreetPass Mansion\r\nPuzzle Box",
+    "ua": "Таємничий маєток StreetPass\nСкринька-головоломка"
+  },
+  "dlg_soundtest_list_mgPzd_JIN_MGClear": {
+    "en": "StreetPass Mansion\r\nPuzzle Box Solved",
+    "ua": "Таємничий маєток StreetPass\nСкриньку розгадано"
+  },
+  "dlg_soundtest_list_mgPzd_JIN_Perfect": {
+    "en": "StreetPass Mansion\r\nFloor Complete",
+    "ua": "Таємничий маєток StreetPass\nПоверх завершено"
+  },
+  "dlg_soundtest_list_mgPzd_PlayResult": {
+    "en": "StreetPass Mansion\r\nProgress Report",
+    "ua": "Таємничий маєток StreetPass\nЗвіт про успіхи"
+  },
+  "dlg_soundtest_list_mgBtl_BGM_TITLE": {
+    "en": "StreetPass Battle\r\nTitle",
+    "ua": "Фортеця StreetPass\nЗаставка"
+  },
+  "dlg_soundtest_list_mgBtl_BGM_PROLOGUE": {
+    "en": "StreetPass Battle\r\nA Monarch's Ambition",
+    "ua": "Фортеця StreetPass\nАмбіції монарха"
+  },
+  "dlg_soundtest_list_mgBtl_BGM_ENDING": {
+    "en": "StreetPass Battle\r\nA Beloved Monarch",
+    "ua": "Фортеця StreetPass\nУлюблений монарх"
+  },
+  "dlg_soundtest_list_mgBtl_BGM_STAFF": {
+    "en": "StreetPass Battle\r\nEnding",
+    "ua": "Фортеця StreetPass\nФінал"
+  },
+  "dlg_soundtest_list_mgBtl_BGM_MENU": {
+    "en": "StreetPass Battle\r\nAwaiting Your Command",
+    "ua": "Фортеця StreetPass\nЧекаємо наказу"
+  },
+  "dlg_soundtest_list_mgBtl_BGM_SHUTUGEKI": {
+    "en": "StreetPass Battle\r\nYour Time to Shine",
+    "ua": "Фортеця StreetPass\nВаш час сяяти"
+  },
+  "dlg_soundtest_list_mgBtl_BGM_BOSS_CHOHATU": {
+    "en": "StreetPass Battle\r\nFinal Battle",
+    "ua": "Фортеця StreetPass\nФінальна битва"
+  },
+  "dlg_soundtest_list_mgBtl_BGM_AREA1_EU": {
+    "en": "StreetPass Battle\r\nInvasion Theme 1",
+    "ua": "Фортеця StreetPass\nТема вторгнення 1"
+  },
+  "dlg_soundtest_list_mgBtl_BGM_AREA2_JP": {
+    "en": "StreetPass Battle\r\nInvasion Theme 2",
+    "ua": "Фортеця StreetPass\nТема вторгнення 2"
+  },
+  "dlg_soundtest_list_mgBtl_BGM_AREA3_SF": {
+    "en": "StreetPass Battle\r\nInvasion Theme 3",
+    "ua": "Фортеця StreetPass\nТема вторгнення 3"
+  },
+  "dlg_soundtest_list_mgBtl_BGM_AREA4_AL": {
+    "en": "StreetPass Battle\r\nUltimate Invasion Theme",
+    "ua": "Фортеця StreetPass\nВелике вторгнення"
+  },
+  "dlg_soundtest_list_mgBtl_BGM_JOUSHU": {
+    "en": "StreetPass Battle\r\nIntimidation Time",
+    "ua": "Фортеця StreetPass\nЧас залякування"
+  },
+  "dlg_soundtest_list_mgBtl_JG_JOUSHU": {
+    "en": "StreetPass Battle\r\nA Gift From Wentworth",
+    "ua": "Фортеця StreetPass\nПодарунок від Вентворта"
+  },
+  "dlg_soundtest_list_mgBtl_JG_RANKUP": {
+    "en": "StreetPass Battle\r\nRank Increased",
+    "ua": "Фортеця StreetPass\nЗвання підвищено"
+  },
+  "dlg_soundtest_list_mgBtl_JG_TASSEI": {
+    "en": "StreetPass Battle\r\nCongratulations!",
+    "ua": "Фортеця StreetPass\nВітаємо!"
+  },
+  "dlg_soundtest_list_mgBtl_JG_TURN_WIN": {
+    "en": "StreetPass Battle\r\nVictory",
+    "ua": "Фортеця StreetPass\nПеремога"
+  },
+  "dlg_soundtest_list_mgBtl_JG_TURN_LOSE": {
+    "en": "StreetPass Battle\r\nDefeat",
+    "ua": "Фортеця StreetPass\nПоразка"
+  },
+  "dlg_soundtest_list_mgBtl_JG_RESOULT_WIN_L": {
+    "en": "StreetPass Battle\r\nWe Stand Victorious",
+    "ua": "Фортеця StreetPass\nМи перемогли"
+  },
+  "dlg_soundtest_list_mgBtl_JG_RESOULT_LOSE_L": {
+    "en": "StreetPass Battle\r\nWe Lie Defeated",
+    "ua": "Фортеця StreetPass\nМи розбиті"
+  },
+  "dlg_soundtest_list_mgBtl_JG_KUNITORI_OK": {
+    "en": "StreetPass Battle\r\nNation Conquered!",
+    "ua": "Фортеця StreetPass\nКраїну завойовано!"
+  },
+  "dlg_soundtest_list_mgBtl_JG_KUNITORI_NG": {
+    "en": "StreetPass Battle\r\nTactical Retreat",
+    "ua": "Фортеця StreetPass\nТактичний відступ"
+  },
+  "dlg_soundtest_list_mgBtl_JG_COMPLETE_L": {
+    "en": "StreetPass Battle\r\nWorld Domination",
+    "ua": "Фортеця StreetPass\nСвітове панування"
+  },
+  "dlg_soundtest_list_mgBtl_BGM_BOSS": {
+    "en": "StreetPass Battle\r\nThe Emperor's Theme",
+    "ua": "Фортеця StreetPass\nТема імператора"
+  },
+  "dlg_soundtest_list_mgBtl_JG_BATTLESTART": {
+    "en": "StreetPass Battle\r\nThe Battle Begins",
+    "ua": "Фортеця StreetPass\nБій починається"
+  },
+  "dlg_soundtest_list_mgBtl_JG_ATARI": {
+    "en": "StreetPass Battle\r\nReady For Anything",
+    "ua": "Фортеця StreetPass\nГотові до всього"
+  },
+  "dlg_soundtest_list_mgBtl_JG_KESSEN": {
+    "en": "StreetPass Battle\r\nThe Emperor's Arrival",
+    "ua": "Фортеця StreetPass\nПрибуття імператора"
+  },
+  "dlg_soundtest_list_mgBtl_BGM_PROLOGUE2": {
+    "en": "StreetPass Battle\r\nOne Problem...",
+    "ua": "Фортеця StreetPass\nОдна проблема…"
+  },
+  "dlg_soundtest_list_mgBtl_BGM_PROLOGUE3": {
+    "en": "StreetPass Battle\r\nI'll Conquer the World!",
+    "ua": "Фортеця StreetPass\nЯ підкорю світ!"
+  },
+  "dlg_soundtest_list_mgBtl_BGM_BOSS_LAST": {
+    "en": "StreetPass Battle\r\nThe Emperor's Finale",
+    "ua": "Фортеця StreetPass\nФінал імператора"
+  },
+  "dlg_soundtest_list_mgBtl_JG_NINJA": {
+    "en": "StreetPass Battle\r\nHere Come the Ninjas",
+    "ua": "Фортеця StreetPass\nІдуть ніндзя"
+  },
+  "dlg_soundtest_list_mgBtl_JG_JAKUTAIKA": {
+    "en": "StreetPass Battle\r\nHostile Environment",
+    "ua": "Фортеця StreetPass\nВорожі умови"
+  },
+  "dlg_soundtest_list_mgBtl_JG_WIN_BOSS": {
+    "en": "StreetPass Battle\r\nThe Emperor Has Fallen",
+    "ua": "Фортеця StreetPass\nІмператор упав"
+  },
+  "dlg_soundtest_list_mgBtl_JG_GOUKETU": {
+    "en": "StreetPass Battle\r\nBeware of Berserkers",
+    "ua": "Фортеця StreetPass\nБережіться берсерків"
+  },
+  "dlg_premium_not_cap": {
+    "en": "StreetPass Mii Plaza Premium",
+    "ua": "Преміум-площа StreetPass Mii"
+  },
+  "dlg_premium_cec_off": {
+    "en": "You won't be able to use this feature\r\nunless you activate StreetPass.",
+    "ua": "Ця функція недоступна,\nпоки StreetPass не активовано."
+  },
+  "dlg_premium_not_euro": {
+    "en": "You need StreetPass Mii Plaza Premium\r\nfor this feature to work.",
+    "ua": "Для цієї функції потрібна\nПреміум-площа StreetPass Mii."
+  },
+  "dlg_soundtest_list_mgFsh_00": {
+    "en": "StreetPass Fishing\r\nTitle Theme (Daytime)",
+    "ua": "Риболовля StreetPass\nЗаставка (день)"
+  },
+  "dlg_soundtest_list_mgFsh_01": {
+    "en": "StreetPass Fishing\r\nTitle Theme (Night-time)",
+    "ua": "Риболовля StreetPass\nЗаставка (ніч)"
+  },
+  "dlg_soundtest_list_mgFsh_02": {
+    "en": "StreetPass Fishing\r\nWandering Anglers",
+    "ua": "Риболовля StreetPass\nМандрівні рибалки"
+  },
+  "dlg_soundtest_list_mgFsh_03": {
+    "en": "StreetPass Fishing\r\nFishing Log",
+    "ua": "Риболовля StreetPass\nЖурнал риболовлі"
+  },
+  "dlg_soundtest_list_mgFsh_04": {
+    "en": "StreetPass Fishing\r\nWelcome to the Isles",
+    "ua": "Риболовля StreetPass\nВітаємо на островах"
+  },
+  "dlg_soundtest_list_mgFsh_05": {
+    "en": "StreetPass Fishing\r\nFirst Catch",
+    "ua": "Риболовля StreetPass\nПерший улов"
+  },
+  "dlg_soundtest_list_mgFsh_06": {
+    "en": "StreetPass Fishing\r\nLet's Go Fishing!",
+    "ua": "Риболовля StreetPass\nХодімо рибалити!"
+  },
+  "dlg_soundtest_list_mgFsh_07": {
+    "en": "StreetPass Fishing\r\nChatting on the Boat",
+    "ua": "Риболовля StreetPass\nБалачки в човні"
+  },
+  "dlg_soundtest_list_mgFsh_08": {
+    "en": "StreetPass Fishing\r\nCoraline's Dad",
+    "ua": "Риболовля StreetPass\nТато Коралайн"
+  },
+  "dlg_soundtest_list_mgFsh_09": {
+    "en": "StreetPass Fishing\r\nHeading out to Fish! 1",
+    "ua": "Риболовля StreetPass\nВирушаємо рибалити! 1"
+  },
+  "dlg_soundtest_list_mgFsh_10": {
+    "en": "StreetPass Fishing\r\nHeading out to Fish! 2",
+    "ua": "Риболовля StreetPass\nВирушаємо рибалити! 2"
+  },
+  "dlg_soundtest_list_mgFsh_11": {
+    "en": "StreetPass Fishing\r\nHeading out to Fish! 3",
+    "ua": "Риболовля StreetPass\nВирушаємо рибалити! 3"
+  },
+  "dlg_soundtest_list_mgFsh_12": {
+    "en": "StreetPass Fishing\r\nTo Far-Flung Waters... 1",
+    "ua": "Риболовля StreetPass\nУ далекі води… 1"
+  },
+  "dlg_soundtest_list_mgFsh_13": {
+    "en": "StreetPass Fishing\r\nTo Far-Flung Waters... 2",
+    "ua": "Риболовля StreetPass\nУ далекі води… 2"
+  },
+  "dlg_soundtest_list_mgFsh_14": {
+    "en": "StreetPass Fishing\r\nTo Far-Flung Waters... 3",
+    "ua": "Риболовля StreetPass\nУ далекі води… 3"
+  },
+  "dlg_soundtest_list_mgFsh_15": {
+    "en": "StreetPass Fishing\r\nBlue Waters",
+    "ua": "Риболовля StreetPass\nСині води"
+  },
+  "dlg_soundtest_list_mgFsh_16": {
+    "en": "StreetPass Fishing\r\nCatch that Fish!",
+    "ua": "Риболовля StreetPass\nЗлови цю рибу!"
+  },
+  "dlg_soundtest_list_mgFsh_17": {
+    "en": "StreetPass Fishing\r\nLand a Whopper!",
+    "ua": "Риболовля StreetPass\nВитягни велетня!"
+  },
+  "dlg_soundtest_list_mgFsh_18": {
+    "en": "StreetPass Fishing\r\nLand a Gargantuan Catch",
+    "ua": "Риболовля StreetPass\nВитягни гіганта"
+  },
+  "dlg_soundtest_list_mgFsh_19": {
+    "en": "StreetPass Fishing\r\nLand a Legendary Monster!",
+    "ua": "Риболовля StreetPass\nВитягни легендарне чудовисько!"
+  },
+  "dlg_soundtest_list_mgFsh_20": {
+    "en": "StreetPass Fishing\r\nFeeding Frenzy",
+    "ua": "Риболовля StreetPass\nШалений кльов"
+  },
+  "dlg_soundtest_list_mgFsh_21": {
+    "en": "StreetPass Fishing\r\nBumper Catch!",
+    "ua": "Риболовля StreetPass\nБагатий улов!"
+  },
+  "dlg_soundtest_list_mgFsh_22": {
+    "en": "StreetPass Fishing\r\nMistaken Catch",
+    "ua": "Риболовля StreetPass\nНе той улов"
+  },
+  "dlg_soundtest_list_mgFsh_23": {
+    "en": "StreetPass Fishing\r\nCaught a Fish!",
+    "ua": "Риболовля StreetPass\nРиба на гачку!"
+  },
+  "dlg_soundtest_list_mgFsh_24": {
+    "en": "StreetPass Fishing\r\nWhat a Whopper!",
+    "ua": "Риболовля StreetPass\nОце велетень!"
+  },
+  "dlg_soundtest_list_mgFsh_25": {
+    "en": "StreetPass Fishing\r\nGargantuan Catch!",
+    "ua": "Риболовля StreetPass\nГігантський улов!"
+  },
+  "dlg_soundtest_list_mgFsh_26": {
+    "en": "StreetPass Fishing\r\nLegendary Catch!",
+    "ua": "Риболовля StreetPass\nЛегендарний улов!"
+  },
+  "dlg_soundtest_list_mgFsh_27": {
+    "en": "StreetPass Fishing\r\nToday's Results",
+    "ua": "Риболовля StreetPass\nПідсумки дня"
+  },
+  "dlg_soundtest_list_mgFsh_28": {
+    "en": "StreetPass Fishing\r\nCoraline's Clubhouse",
+    "ua": "Риболовля StreetPass\nКлуб Коралайн"
+  },
+  "dlg_soundtest_list_mgFsh_29": {
+    "en": "StreetPass Fishing\r\nVisitor from the Stars",
+    "ua": "Риболовля StreetPass\nГість із зірок"
+  },
+  "dlg_soundtest_list_mgFsh_30": {
+    "en": "StreetPass Fishing\r\nEnding",
+    "ua": "Риболовля StreetPass\nФінал"
+  },
+  "dlg_soundtest_list_mgFsh_31": {
+    "en": "StreetPass Fishing\r\nBeginner's Point",
+    "ua": "Риболовля StreetPass\nМис Новачків"
+  },
+  "dlg_soundtest_list_mgFsh_32": {
+    "en": "StreetPass Fishing\r\nGreenhorn River",
+    "ua": "Риболовля StreetPass\nРічка Зелена"
+  },
+  "dlg_soundtest_list_mgFsh_33": {
+    "en": "StreetPass Fishing\r\nCypress Lake",
+    "ua": "Риболовля StreetPass\nКипарисове озеро"
+  },
+  "dlg_soundtest_list_mgFsh_34": {
+    "en": "StreetPass Fishing\r\nPrelude Bay Cruise",
+    "ua": "Риболовля StreetPass\nКруїз затокою Прелюдія"
+  },
+  "dlg_soundtest_list_mgFsh_35": {
+    "en": "StreetPass Fishing\r\nCove Sands",
+    "ua": "Риболовля StreetPass\nПіщана бухта"
+  },
+  "dlg_soundtest_list_mgFsh_36": {
+    "en": "StreetPass Fishing\r\nCopse Pool",
+    "ua": "Риболовля StreetPass\nГайовий ставок"
+  },
+  "dlg_soundtest_list_mgFsh_37": {
+    "en": "StreetPass Fishing\r\nVerthaven Pier",
+    "ua": "Риболовля StreetPass\nПірс Вертгейвен"
+  },
+  "dlg_soundtest_list_mgFsh_38": {
+    "en": "StreetPass Fishing\r\nPeaceful Lake",
+    "ua": "Риболовля StreetPass\nТихе озеро"
+  },
+  "dlg_soundtest_list_mgFsh_39": {
+    "en": "StreetPass Fishing\r\nBrumefall River",
+    "ua": "Риболовля StreetPass\nРічка Туманка"
+  },
+  "dlg_soundtest_list_mgFsh_40": {
+    "en": "StreetPass Fishing\r\nKeyhole Cliffs",
+    "ua": "Риболовля StreetPass\nСкелі Замкова Щілина"
+  },
+  "dlg_soundtest_list_mgFsh_41": {
+    "en": "StreetPass Fishing\r\nMossmeadow Marsh",
+    "ua": "Риболовля StreetPass\nБолото Мохолуг"
+  },
+  "dlg_soundtest_list_mgFsh_42": {
+    "en": "StreetPass Fishing\r\nRaynesse Falls",
+    "ua": "Риболовля StreetPass\nВодоспад Рейнесс"
+  },
+  "dlg_soundtest_list_mgFsh_43": {
+    "en": "StreetPass Fishing\r\nGraupel Pier",
+    "ua": "Риболовля StreetPass\nПірс Крупа"
+  },
+  "dlg_soundtest_list_mgFsh_44": {
+    "en": "StreetPass Fishing\r\nBerg Cruise",
+    "ua": "Риболовля StreetPass\nКруїз між айсбергами"
+  },
+  "dlg_soundtest_list_mgFsh_45": {
+    "en": "StreetPass Fishing\r\nTail Point",
+    "ua": "Риболовля StreetPass\nМис Хвіст"
+  },
+  "dlg_soundtest_list_mgFsh_46": {
+    "en": "StreetPass Fishing\r\nSouwester Rocks",
+    "ua": "Риболовля StreetPass\nСкелі Зюйд-Вест"
+  },
+  "dlg_soundtest_list_mgFsh_47": {
+    "en": "StreetPass Fishing\r\nCraggy Tarn",
+    "ua": "Риболовля StreetPass\nСкелясте озерце"
+  },
+  "dlg_soundtest_list_mgFsh_48": {
+    "en": "StreetPass Fishing\r\nCardia Lake",
+    "ua": "Риболовля StreetPass\nОзеро Кардія"
+  },
+  "dlg_soundtest_list_mgFsh_49": {
+    "en": "StreetPass Fishing\r\nMaple Burn",
+    "ua": "Риболовля StreetPass\nКленовий струмок"
+  },
+  "dlg_soundtest_list_mgFsh_50": {
+    "en": "StreetPass Fishing\r\nLoch Placid",
+    "ua": "Риболовля StreetPass\nОзеро Спокою"
+  },
+  "dlg_soundtest_list_mgFsh_51": {
+    "en": "StreetPass Fishing\r\nDayton Point",
+    "ua": "Риболовля StreetPass\nМис Дейтон"
+  },
+  "dlg_soundtest_list_mgFsh_52": {
+    "en": "StreetPass Fishing\r\nOldmead Pond",
+    "ua": "Риболовля StreetPass\nСтавок Старолуг"
+  },
+  "dlg_soundtest_list_mgFsh_53": {
+    "en": "StreetPass Fishing\r\nKohu Lake",
+    "ua": "Риболовля StreetPass\nОзеро Коху"
+  },
+  "dlg_soundtest_list_mgFsh_54": {
+    "en": "StreetPass Fishing\r\nWisply Falls",
+    "ua": "Риболовля StreetPass\nВодоспад Серпанок"
+  },
+  "dlg_soundtest_list_mgFsh_55": {
+    "en": "StreetPass Fishing\r\nGreydale Lake",
+    "ua": "Риболовля StreetPass\nОзеро Сіродол"
+  },
+  "dlg_soundtest_list_mgFsh_56": {
+    "en": "StreetPass Fishing\r\nFretfield Moor",
+    "ua": "Риболовля StreetPass\nБолото Фретфілд"
+  },
+  "dlg_soundtest_list_mgFsh_57": {
+    "en": "StreetPass Fishing\r\nIcebarrow Point",
+    "ua": "Риболовля StreetPass\nМис Крижаний Курган"
+  },
+  "dlg_soundtest_list_mgFsh_58": {
+    "en": "StreetPass Fishing\r\nSeraphia Pier",
+    "ua": "Риболовля StreetPass\nПірс Серафія"
+  },
+  "dlg_soundtest_list_mgFsh_59": {
+    "en": "StreetPass Fishing\r\nClarion Lake",
+    "ua": "Риболовля StreetPass\nОзеро Кларіон"
+  },
+  "dlg_soundtest_list_mgFsh_60": {
+    "en": "StreetPass Fishing\r\nElin Rapids",
+    "ua": "Риболовля StreetPass\nПороги Елін"
+  },
+  "dlg_soundtest_list_mgFsh_61": {
+    "en": "StreetPass Fishing\r\nAruna Rocks",
+    "ua": "Риболовля StreetPass\nСкелі Аруна"
+  },
+  "dlg_soundtest_list_mgFsh_62": {
+    "en": "StreetPass Fishing\r\nSunset Cruise",
+    "ua": "Риболовля StreetPass\nКруїз на заході сонця"
+  },
+  "dlg_soundtest_list_mgFsh_63": {
+    "en": "StreetPass Fishing\r\nWyverdun Lake",
+    "ua": "Риболовля StreetPass\nОзеро Віверн"
+  },
+  "dlg_soundtest_list_mgFsh_64": {
+    "en": "StreetPass Fishing\r\nGloaming Reef",
+    "ua": "Риболовля StreetPass\nСутінковий риф"
+  },
+  "dlg_soundtest_list_mgFsh_65": {
+    "en": "StreetPass Fishing\r\nFoxmere Lake",
+    "ua": "Риболовля StreetPass\nЛисяче озеро"
+  },
+  "dlg_soundtest_list_mgFsh_66": {
+    "en": "StreetPass Fishing\r\nBridgcliff Beach",
+    "ua": "Риболовля StreetPass\nПляж Бріджкліфф"
+  },
+  "dlg_soundtest_list_mgFsh_67": {
+    "en": "StreetPass Fishing\r\nSunset Sea Cruise",
+    "ua": "Риболовля StreetPass\nКруїз Західним морем"
+  },
+  "dlg_soundtest_list_mgFsh_68": {
+    "en": "StreetPass Fishing\r\nMauvain Cove",
+    "ua": "Риболовля StreetPass\nБухта Мовен"
+  },
+  "dlg_soundtest_list_mgFsh_69": {
+    "en": "StreetPass Fishing\r\nHazeldown River",
+    "ua": "Риболовля StreetPass\nРічка Ліщинна"
+  },
+  "dlg_soundtest_list_mgFsh_70": {
+    "en": "StreetPass Fishing\r\nAurora Sea Cruise",
+    "ua": "Риболовля StreetPass\nКруїз морем Сяйва"
+  },
+  "dlg_soundtest_list_mgFsh_71": {
+    "en": "StreetPass Fishing\r\nRainbow Sea Cruise",
+    "ua": "Риболовля StreetPass\nКруїз Веселкою"
+  },
+  "dlg_soundtest_list_mgFsh_72": {
+    "en": "StreetPass Fishing\r\nSeacut Cave",
+    "ua": "Риболовля StreetPass\nМорська печера"
+  },
+  "dlg_soundtest_list_mgFsh_73": {
+    "en": "StreetPass Fishing\r\nThunderhead Falls",
+    "ua": "Риболовля StreetPass\nГрозовий водоспад"
+  },
+  "dlg_soundtest_list_mgFsh_74": {
+    "en": "StreetPass Fishing\r\nCypress Swamp",
+    "ua": "Риболовля StreetPass\nКипарисове болото"
+  },
+  "dlg_soundtest_list_mgFsh_75": {
+    "en": "StreetPass Fishing\r\nSlatecrest Sea Cruise",
+    "ua": "Риболовля StreetPass\nКруїз Сланцевим морем"
+  },
+  "dlg_soundtest_list_mgFsh_76": {
+    "en": "StreetPass Fishing\r\nCrystal Seas Cruise",
+    "ua": "Риболовля StreetPass\nКришталевий круїз"
+  },
+  "dlg_soundtest_list_mgFsh_77": {
+    "en": "StreetPass Fishing\r\nGreybanks River",
+    "ua": "Риболовля StreetPass\nРічка Сірі Береги"
+  },
+  "dlg_soundtest_list_mgFsh_78": {
+    "en": "StreetPass Fishing\r\nMangrow Bayou",
+    "ua": "Риболовля StreetPass\nМангрова протока"
+  },
+  "dlg_soundtest_list_mgFsh_79": {
+    "en": "StreetPass Fishing\r\nIronfalls Gorge",
+    "ua": "Риболовля StreetPass\nУщелина Залізоспад"
+  },
+  "dlg_soundtest_list_mgFsh_80": {
+    "en": "StreetPass Fishing\r\nEnigma Cave",
+    "ua": "Риболовля StreetPass\nПечера Загадок"
+  },
+  "dlg_soundtest_list_mgFsh_81": {
+    "en": "StreetPass Fishing\r\nSimple Aquarium",
+    "ua": "Риболовля StreetPass\nПростий акваріум"
+  },
+  "dlg_soundtest_list_mgFsh_82": {
+    "en": "StreetPass Fishing\r\nDeep Blue Aquarium",
+    "ua": "Риболовля StreetPass\nАкваріум глибин"
+  },
+  "dlg_soundtest_list_mgFsh_83": {
+    "en": "StreetPass Fishing\r\nParadise Aquarium",
+    "ua": "Риболовля StreetPass\nРайський акваріум"
+  },
+  "dlg_soundtest_list_mgFsh_84": {
+    "en": "StreetPass Fishing\r\nJungle Aquarium",
+    "ua": "Риболовля StreetPass\nАкваріум-джунглі"
+  },
+  "dlg_soundtest_list_mgFsh_85": {
+    "en": "StreetPass Fishing\r\nTreasure Aquarium",
+    "ua": "Риболовля StreetPass\nАкваріум скарбів"
+  },
+  "dlg_soundtest_list_mgFsh_86": {
+    "en": "StreetPass Fishing\r\nAtlantis Aquarium",
+    "ua": "Риболовля StreetPass\nАкваріум Атлантида"
+  },
+  "dlg_soundtest_list_mgFsh_87": {
+    "en": "StreetPass Fishing\r\nSpace Aquarium",
+    "ua": "Риболовля StreetPass\nКосмічний акваріум"
+  },
+  "dlg_soundtest_list_mgZmb_00": {
+    "en": "StreetPass Zombies\r\nTime to Fight",
+    "ua": "Зомбі StreetPass\nЧас битися"
+  },
+  "dlg_soundtest_list_mgZmb_01": {
+    "en": "StreetPass Zombies\r\nThe Zombies are Coming!",
+    "ua": "Зомбі StreetPass\nЗомбі наступають!"
+  },
+  "dlg_soundtest_list_mgZmb_02": {
+    "en": "StreetPass Zombies\r\nOn the Hunt",
+    "ua": "Зомбі StreetPass\nНа полюванні"
+  },
+  "dlg_soundtest_list_mgZmb_03": {
+    "en": "StreetPass Zombies\r\nGotta Get Away",
+    "ua": "Зомбі StreetPass\nТреба тікати"
+  },
+  "dlg_soundtest_list_mgZmb_04": {
+    "en": "StreetPass Zombies\r\nReady... Set... Fight!",
+    "ua": "Зомбі StreetPass\nНа старт… Увага… Бій!"
+  },
+  "dlg_soundtest_list_mgZmb_05": {
+    "en": "StreetPass Zombies\r\nZombie-Filled Days",
+    "ua": "Зомбі StreetPass\nДні, повні зомбі"
+  },
+  "dlg_soundtest_list_mgZmb_06": {
+    "en": "StreetPass Zombies\r\nH-H-Here It Comes!",
+    "ua": "Зомбі StreetPass\nВ-в-воно йде!"
+  },
+  "dlg_soundtest_list_mgZmb_07": {
+    "en": "StreetPass Zombies\r\nTime for a Showdown",
+    "ua": "Зомбі StreetPass\nЧас вирішального бою"
+  },
+  "dlg_soundtest_list_mgZmb_08": {
+    "en": "StreetPass Zombies\r\nGood Work",
+    "ua": "Зомбі StreetPass\nГарна робота"
+  },
+  "dlg_soundtest_list_mgZmb_09": {
+    "en": "StreetPass Zombies\r\nZombinav Theme",
+    "ua": "Зомбі StreetPass\nТема Зомбінава"
+  },
+  "dlg_soundtest_list_mgZmb_10": {
+    "en": "StreetPass Zombies\r\nCurtain Call",
+    "ua": "Зомбі StreetPass\nОстанній вихід"
+  },
+  "dlg_soundtest_list_mgZmb_11": {
+    "en": "StreetPass Zombies\r\nHere Comes Dr Scimad",
+    "ua": "Зомбі StreetPass\nІде д-р Сцимад"
+  },
+  "dlg_soundtest_list_mgZmb_12": {
+    "en": "StreetPass Zombies\r\nDoom's Descent",
+    "ua": "Зомбі StreetPass\nНаближення загибелі"
+  },
+  "dlg_soundtest_list_mgZmb_13": {
+    "en": "StreetPass Zombies\r\nIs Anyone There...?!",
+    "ua": "Зомбі StreetPass\nТут хтось є…?!"
+  },
+  "dlg_soundtest_list_mgZmb_14": {
+    "en": "StreetPass Zombies\r\nFirst Time into the Fray",
+    "ua": "Зомбі StreetPass\nПерший бій"
+  },
+  "dlg_soundtest_list_mgZmb_15": {
+    "en": "StreetPass Zombies\r\nDon't Give Up Now",
+    "ua": "Зомбі StreetPass\nНе здавайтеся"
+  },
+  "dlg_soundtest_list_mgZmb_16": {
+    "en": "StreetPass Zombies\r\nPeaceful Days",
+    "ua": "Зомбі StreetPass\nСпокійні дні"
+  },
+  "dlg_soundtest_list_mgZmb_17": {
+    "en": "StreetPass Zombies\r\nYou're Invincible!",
+    "ua": "Зомбі StreetPass\nВи непереможні!"
+  },
+  "dlg_soundtest_list_mgZmb_18": {
+    "en": "StreetPass Zombies\r\nInvincible Dr Scimad",
+    "ua": "Зомбі StreetPass\nНепереможний д-р Сцимад"
+  },
+  "dlg_soundtest_list_mgZmb_19": {
+    "en": "StreetPass Zombies\r\nDance, Everybody!",
+    "ua": "Зомбі StreetPass\nТанцюють усі!"
+  },
+  "dlg_soundtest_list_mgZmb_20": {
+    "en": "StreetPass Zombies\r\nWorld Zombification Project",
+    "ua": "Зомбі StreetPass\nПроєкт «Зомбі-світ»"
+  },
+  "dlg_soundtest_list_mgZmb_21": {
+    "en": "StreetPass Zombies\r\nApocalypse Averted",
+    "ua": "Зомбі StreetPass\nАпокаліпсис скасовано"
+  },
+  "dlg_soundtest_list_mgTrd_00": {
+    "en": "StreetPass Trader\r\nBig Ambitions",
+    "ua": "Біржа StreetPass\nВеликі амбіції"
+  },
+  "dlg_soundtest_list_mgTrd_01": {
+    "en": "StreetPass Trader\r\nLone Trading",
+    "ua": "Біржа StreetPass\nТоргівля наодинці"
+  },
+  "dlg_soundtest_list_mgTrd_02": {
+    "en": "StreetPass Trader\r\nFirst Steps",
+    "ua": "Біржа StreetPass\nПерші кроки"
+  },
+  "dlg_soundtest_list_mgTrd_03": {
+    "en": "StreetPass Trader\r\nPinpoint Predictions",
+    "ua": "Біржа StreetPass\nТочні прогнози"
+  },
+  "dlg_soundtest_list_mgTrd_04": {
+    "en": "StreetPass Trader\r\nGet Trading!",
+    "ua": "Біржа StreetPass\nТоргуймо!"
+  },
+  "dlg_soundtest_list_mgTrd_05": {
+    "en": "StreetPass Trader\r\nTerms of the Trade",
+    "ua": "Біржа StreetPass\nУмови угоди"
+  },
+  "dlg_soundtest_list_mgTrd_06": {
+    "en": "StreetPass Trader\r\nDecisions",
+    "ua": "Біржа StreetPass\nРішення"
+  },
+  "dlg_soundtest_list_mgTrd_07": {
+    "en": "StreetPass Trader\r\nCoffee Break",
+    "ua": "Біржа StreetPass\nКава-пауза"
+  },
+  "dlg_soundtest_list_mgTrd_08": {
+    "en": "StreetPass Trader\r\nReady for Anything!",
+    "ua": "Біржа StreetPass\nГотові до всього!"
+  },
+  "dlg_soundtest_list_mgTrd_09": {
+    "en": "StreetPass Trader\r\nMoment of Truth",
+    "ua": "Біржа StreetPass\nМомент істини"
+  },
+  "dlg_soundtest_list_mgTrd_10": {
+    "en": "StreetPass Trader\r\nIt's a Long Way to the Top",
+    "ua": "Біржа StreetPass\nДовгий шлях на вершину"
+  },
+  "dlg_soundtest_list_mgTrd_11": {
+    "en": "StreetPass Trader\r\nLife of Luxury",
+    "ua": "Біржа StreetPass\nЖиття в розкоші"
+  },
+  "dlg_soundtest_list_mgTrd_12": {
+    "en": "StreetPass Trader\r\nBankrupt!",
+    "ua": "Біржа StreetPass\nБанкрут!"
+  },
+  "dlg_soundtest_list_mgTrd_13": {
+    "en": "StreetPass Trader\r\nYou're the Best",
+    "ua": "Біржа StreetPass\nВи найкращі"
+  },
+  "dlg_soundtest_list_mgTrd_14": {
+    "en": "StreetPass Trader\r\nNo Rest For the Rich",
+    "ua": "Біржа StreetPass\nБагатим не до відпочинку"
+  },
+  "dlg_soundtest_list_mgCar_00": {
+    "en": "StreetPass Slot Racer\r\nThe Race is On!",
+    "ua": "Слот-перегони StreetPass\nПерегони почалися!"
+  },
+  "dlg_soundtest_list_mgCar_01": {
+    "en": "StreetPass Slot Racer\r\nThe Challenge Ahead",
+    "ua": "Слот-перегони StreetPass\nПопереду виклик"
+  },
+  "dlg_soundtest_list_mgCar_02": {
+    "en": "StreetPass Slot Racer\r\nLearning the Ropes",
+    "ua": "Слот-перегони StreetPass\nНавчання"
+  },
+  "dlg_soundtest_list_mgCar_03": {
+    "en": "StreetPass Slot Racer\r\nFriendly Rivals",
+    "ua": "Слот-перегони StreetPass\nДружнє суперництво"
+  },
+  "dlg_soundtest_list_mgCar_04": {
+    "en": "StreetPass Slot Racer\r\nRacing Spirit",
+    "ua": "Слот-перегони StreetPass\nДух перегонів"
+  },
+  "dlg_soundtest_list_mgCar_05": {
+    "en": "StreetPass Slot Racer\r\nRacing Results",
+    "ua": "Слот-перегони StreetPass\nРезультати перегонів"
+  },
+  "dlg_soundtest_list_mgCar_06": {
+    "en": "StreetPass Slot Racer\r\nA Car Of My Own",
+    "ua": "Слот-перегони StreetPass\nМоя власна машинка"
+  },
+  "dlg_soundtest_list_mgCar_07": {
+    "en": "StreetPass Slot Racer\r\nRoad to the Championship",
+    "ua": "Слот-перегони StreetPass\nШлях до чемпіонства"
+  },
+  "dlg_soundtest_list_mgCar_08": {
+    "en": "StreetPass Slot Racer\r\nSmooth Circuit",
+    "ua": "Слот-перегони StreetPass\nРівна траса"
+  },
+  "dlg_soundtest_list_mgCar_09": {
+    "en": "StreetPass Slot Racer\r\nFairytale Glade",
+    "ua": "Слот-перегони StreetPass\nКазкова галявина"
+  },
+  "dlg_soundtest_list_mgCar_10": {
+    "en": "StreetPass Slot Racer\r\nRolling Mountain",
+    "ua": "Слот-перегони StreetPass\nГорбиста гора"
+  },
+  "dlg_soundtest_list_mgCar_11": {
+    "en": "StreetPass Slot Racer\r\nDesert Whirl",
+    "ua": "Слот-перегони StreetPass\nПустельний вихор"
+  },
+  "dlg_soundtest_list_mgCar_12": {
+    "en": "StreetPass Slot Racer\r\nBoom Town Streets",
+    "ua": "Слот-перегони StreetPass\nВулиці Бум-Тауна"
+  },
+  "dlg_soundtest_list_mgCar_13": {
+    "en": "StreetPass Slot Racer\r\nSugar Dash!",
+    "ua": "Слот-перегони StreetPass\nСолодкий ривок!"
+  },
+  "dlg_soundtest_list_mgCar_14": {
+    "en": "StreetPass Slot Racer\r\nSoaring Skyway",
+    "ua": "Слот-перегони StreetPass\nНебесна траса"
+  },
+  "dlg_soundtest_list_mgCar_15": {
+    "en": "StreetPass Slot Racer\r\nOops…",
+    "ua": "Слот-перегони StreetPass\nОй…"
+  },
+  "dlg_soundtest_list_mgCar_16": {
+    "en": "StreetPass Slot Racer\r\nCould Be Worse",
+    "ua": "Слот-перегони StreetPass\nМогло бути гірше"
+  },
+  "dlg_soundtest_list_mgCar_17": {
+    "en": "StreetPass Slot Racer\r\nSweet Victory",
+    "ua": "Слот-перегони StreetPass\nСолодка перемога"
+  },
+  "dlg_soundtest_list_mgCar_18": {
+    "en": "StreetPass Slot Racer\r\nChampion Showdown!",
+    "ua": "Слот-перегони StreetPass\nБій чемпіонів!"
+  },
+  "dlg_soundtest_list_mgCar_19": {
+    "en": "StreetPass Slot Racer\r\nOuter Space",
+    "ua": "Слот-перегони StreetPass\nВідкритий космос"
+  },
+  "dlg_soundtest_list_mgCar_20": {
+    "en": "StreetPass Slot Racer\r\nJourney's End",
+    "ua": "Слот-перегони StreetPass\nКінець подорожі"
+  },
+  "dlg_soundtest_list_mgCar_21": {
+    "en": "StreetPass Slot Racer\r\nCrowning a Champion",
+    "ua": "Слот-перегони StreetPass\nКоронація чемпіона"
+  },
+  "dlg_soundtest_list_mgChf_00": {
+    "en": "StreetPass Chef\r\nNew Day",
+    "ua": "Ресторан StreetPass\nНовий день"
+  },
+  "dlg_soundtest_list_mgChf_01": {
+    "en": "StreetPass Chef\r\nOpening",
+    "ua": "Ресторан StreetPass\nВідкриття"
+  },
+  "dlg_soundtest_list_mgChf_02": {
+    "en": "StreetPass Chef\r\nMy First Dish",
+    "ua": "Ресторан StreetPass\nМоя перша страва"
+  },
+  "dlg_soundtest_list_mgChf_03": {
+    "en": "StreetPass Chef\r\nRecipe Book",
+    "ua": "Ресторан StreetPass\nКнига рецептів"
+  },
+  "dlg_soundtest_list_mgChf_04": {
+    "en": "StreetPass Chef\r\nHero Times",
+    "ua": "Ресторан StreetPass\nЧас героїв"
+  },
+  "dlg_soundtest_list_mgChf_05": {
+    "en": "StreetPass Chef\r\nIngredients Galore!",
+    "ua": "Ресторан StreetPass\nІнгредієнтів удосталь!"
+  },
+  "dlg_soundtest_list_mgChf_06": {
+    "en": "StreetPass Chef\r\nDelicious Meal",
+    "ua": "Ресторан StreetPass\nСмачна страва"
+  },
+  "dlg_soundtest_list_mgChf_07": {
+    "en": "StreetPass Chef\r\nSatisfying Meal",
+    "ua": "Ресторан StreetPass\nСитна страва"
+  },
+  "dlg_soundtest_list_mgChf_08": {
+    "en": "StreetPass Chef\r\nMediocre Meal",
+    "ua": "Ресторан StreetPass\nПосередня страва"
+  },
+  "dlg_soundtest_list_mgChf_09": {
+    "en": "StreetPass Chef\r\nAll in a Day's Work",
+    "ua": "Ресторан StreetPass\nЗвичайний день"
+  },
+  "dlg_soundtest_list_mgChf_10": {
+    "en": "StreetPass Chef\r\nAfter Hours",
+    "ua": "Ресторан StreetPass\nПісля закриття"
+  },
+  "dlg_soundtest_list_mgChf_11": {
+    "en": "StreetPass Chef\r\nCulinary Research",
+    "ua": "Ресторан StreetPass\nКулінарні пошуки"
+  },
+  "dlg_soundtest_list_mgChf_12": {
+    "en": "StreetPass Chef\r\nExperimentation 1",
+    "ua": "Ресторан StreetPass\nЕксперименти 1"
+  },
+  "dlg_soundtest_list_mgChf_13": {
+    "en": "StreetPass Chef\r\nExperimentation 2",
+    "ua": "Ресторан StreetPass\nЕксперименти 2"
+  },
+  "dlg_soundtest_list_mgChf_14": {
+    "en": "StreetPass Chef\r\nParty Time!",
+    "ua": "Ресторан StreetPass\nЧас вечірки!"
+  },
+  "dlg_soundtest_list_mgChf_15": {
+    "en": "StreetPass Chef\r\nCredits",
+    "ua": "Ресторан StreetPass\nТитри"
+  },
+  "dlg_soundtest_list_mgNja_00": {
+    "en": "StreetPass Ninja\r\nTitle Theme",
+    "ua": "Ніндзя StreetPass\nЗаставка"
+  },
+  "dlg_soundtest_list_mgNja_01": {
+    "en": "StreetPass Ninja\r\nThe Demon Army Reborn",
+    "ua": "Ніндзя StreetPass\nВідроджене військо демонів"
+  },
+  "dlg_soundtest_list_mgNja_02": {
+    "en": "StreetPass Ninja\r\nCannon of Justice",
+    "ua": "Ніндзя StreetPass\nГармата справедливості"
+  },
+  "dlg_soundtest_list_mgNja_03": {
+    "en": "StreetPass Ninja\r\nReady for Battle",
+    "ua": "Ніндзя StreetPass\nГотові до бою"
+  },
+  "dlg_soundtest_list_mgNja_04": {
+    "en": "StreetPass Ninja\r\nNinja Village",
+    "ua": "Ніндзя StreetPass\nСело ніндзя"
+  },
+  "dlg_soundtest_list_mgNja_05": {
+    "en": "StreetPass Ninja\r\nAct the First",
+    "ua": "Ніндзя StreetPass\nДія перша"
+  },
+  "dlg_soundtest_list_mgNja_06": {
+    "en": "StreetPass Ninja\r\nAct the Second",
+    "ua": "Ніндзя StreetPass\nДія друга"
+  },
+  "dlg_soundtest_list_mgNja_07": {
+    "en": "StreetPass Ninja\r\nAct the Third",
+    "ua": "Ніндзя StreetPass\nДія третя"
+  },
+  "dlg_soundtest_list_mgNja_08": {
+    "en": "StreetPass Ninja\r\nAct the Fourth",
+    "ua": "Ніндзя StreetPass\nДія четверта"
+  },
+  "dlg_soundtest_list_mgNja_09": {
+    "en": "StreetPass Ninja\r\nAct the Fifth",
+    "ua": "Ніндзя StreetPass\nДія п'ята"
+  },
+  "dlg_soundtest_list_mgNja_10": {
+    "en": "StreetPass Ninja\r\nAct the Sixth",
+    "ua": "Ніндзя StreetPass\nДія шоста"
+  },
+  "dlg_soundtest_list_mgNja_11": {
+    "en": "StreetPass Ninja\r\nFormidable Foe",
+    "ua": "Ніндзя StreetPass\nГрізний супротивник"
+  },
+  "dlg_soundtest_list_mgNja_12": {
+    "en": "StreetPass Ninja\r\nMechanical Shogun",
+    "ua": "Ніндзя StreetPass\nМеханічний сьоґун"
+  },
+  "dlg_soundtest_list_mgNja_13": {
+    "en": "StreetPass Ninja\r\nTo the Skies!",
+    "ua": "Ніндзя StreetPass\nДо небес!"
+  },
+  "dlg_soundtest_list_mgNja_14": {
+    "en": "StreetPass Ninja\r\nVictory in Battle",
+    "ua": "Ніндзя StreetPass\nПеремога в бою"
+  },
+  "dlg_soundtest_list_mgNja_15": {
+    "en": "StreetPass Ninja\r\nTactical Withdrawal",
+    "ua": "Ніндзя StreetPass\nТактичний відступ"
+  },
+  "dlg_soundtest_list_mgNja_16": {
+    "en": "StreetPass Ninja\r\nMission Complete",
+    "ua": "Ніндзя StreetPass\nМісію виконано"
+  },
+  "dlg_soundtest_list_mgNja_17": {
+    "en": "StreetPass Ninja\r\nReturning to the Village",
+    "ua": "Ніндзя StreetPass\nПовернення в село"
+  },
+  "dlg_soundtest_list_mgNja_18": {
+    "en": "StreetPass Ninja\r\nEnding",
+    "ua": "Ніндзя StreetPass\nФінал"
+  },
+  "dlg_soundtest_list_mgExp_01": {
+    "en": "StreetPass Explorers\r\nTitle",
+    "ua": "Експедиція StreetPass\nЗаставка"
+  },
+  "dlg_soundtest_list_mgExp_02": {
+    "en": "StreetPass Explorers\r\nOpening",
+    "ua": "Експедиція StreetPass\nВідкриття"
+  },
+  "dlg_soundtest_list_mgExp_03": {
+    "en": "StreetPass Explorers\r\nWhere To, Old Bean?",
+    "ua": "Експедиція StreetPass\nКуди, друже?"
+  },
+  "dlg_soundtest_list_mgExp_04": {
+    "en": "StreetPass Explorers\r\nYour Mission Today",
+    "ua": "Експедиція StreetPass\nВаша місія на сьогодні"
+  },
+  "dlg_soundtest_list_mgExp_05": {
+    "en": "StreetPass Explorers\r\nJungle Theme",
+    "ua": "Експедиція StreetPass\nТема джунглів"
+  },
+  "dlg_soundtest_list_mgExp_06": {
+    "en": "StreetPass Explorers\r\nRuins Theme",
+    "ua": "Експедиція StreetPass\nТема руїн"
+  },
+  "dlg_soundtest_list_mgExp_07": {
+    "en": "StreetPass Explorers\r\nPeaks Theme",
+    "ua": "Експедиція StreetPass\nТема вершин"
+  },
+  "dlg_soundtest_list_mgExp_08": {
+    "en": "StreetPass Explorers\r\nForty Winks",
+    "ua": "Експедиція StreetPass\nДрімота"
+  },
+  "dlg_soundtest_list_mgExp_09": {
+    "en": "StreetPass Explorers\r\nTreasure!",
+    "ua": "Експедиція StreetPass\nСкарб!"
+  },
+  "dlg_soundtest_list_mgExp_10": {
+    "en": "StreetPass Explorers\r\nA Job Well Done",
+    "ua": "Експедиція StreetPass\nДобра робота"
+  },
+  "dlg_soundtest_list_mgExp_11": {
+    "en": "StreetPass Explorers\r\nResults",
+    "ua": "Експедиція StreetPass\nРезультати"
+  },
+  "dlg_soundtest_list_mgExp_12": {
+    "en": "StreetPass Explorers\r\nExploration Log",
+    "ua": "Експедиція StreetPass\nЖурнал експедиції"
+  },
+  "dlg_soundtest_list_mgExp_13": {
+    "en": "StreetPass Explorers\r\nA New Adventure Awaits",
+    "ua": "Експедиція StreetPass\nНова пригода чекає"
+  },
+  "dlg_soundtest_list_mgExp_14": {
+    "en": "StreetPass Explorers\r\nCredits",
+    "ua": "Експедиція StreetPass\nТитри"
+  },
+  "dlg_soundtest_list_mgExp_15": {
+    "en": "StreetPass Explorers\r\nEnding",
+    "ua": "Експедиція StreetPass\nФінал"
+  }
+}
