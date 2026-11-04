@@ -49,6 +49,29 @@ typedef bool (*NeedFn)(const Need *need, void *ctx);
 /* The built font, malloc()ed, or NULL when it cannot be built on this console. */
 typedef uint8_t *(*FontFn)(void *ctx, size_t *len);
 
+/*
+ * The NS patch on the card (luma/sysmodules/0004013000008002.ips and the NS exheader), as far
+ * as the font goes:
+ *   NS_ABSENT            no .ips
+ *   NS_OURS              ours alone
+ *   NS_MERGED            ours merged into another app's (NetPass's, say)
+ *   NS_MERGEABLE         another app's, clear of everything ours writes or relies on
+ *   NS_OVERLAP           another app's, writing where ours does or into code ours relies on
+ *   NS_INVALID           an .ips that does not parse
+ *   NS_FOREIGN_EXHEADER  an NS exheader that is not ours
+ * The first four take the font; the rest leave the card's NS files alone. `prev` (may be NULL)
+ * lends the records the last install merged, so a stub of an older build is still known.
+ */
+typedef enum {
+    NS_ABSENT,
+    NS_OURS,
+    NS_MERGED,
+    NS_MERGEABLE,
+    NS_OVERLAP,
+    NS_INVALID,
+    NS_FOREIGN_EXHEADER,
+} NsState;
+
 typedef struct {
     /* in */
     const Manifest *m;
@@ -79,9 +102,12 @@ typedef struct {
     bool luma_manual;           /* game patching is off and config.ini could not be edited */
     uint64_t restore_ms, write_ms; /* files stage: inflating/patching vs writing (clock_ms) */
     int moved;                  /* files of the files stage moved over unchanged, not written */
-    bool foreign_ns;            /* another NS patch is on the card: no font this time */
+    NsState ns_state;           /* the card's NS patch before the run */
+    bool ns_merged;             /* our NS patch went on merged into another one */
     char error[160];
 } Job;
+
+NsState engine_ns_state(const char *sd_root, const char *data_root, const Manifest *m, const Installed *prev);
 
 EngineStatus engine_run(Job *job);
 

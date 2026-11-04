@@ -17,6 +17,7 @@
 #include "../source/engine/engine.h"
 #include "../source/engine/fsutil.h"
 #include "../source/engine/lumacfg.h"
+#include "../source/engine/nsips.h"
 #include "../source/payload/payload.h"
 #include "../source/sysfont/sha256.h"
 
@@ -27,6 +28,7 @@ static Manifest m;
 static uint64_t unmet_folder; /* a folder whose title is "another build", 0 for none */
 static bool font_fails;       /* build_font() gives up, as on a console with another font */
 static int font_builds;       /* how often build_font() ran */
+static bool netpass_card;     /* fresh_card() puts a NetPass-shaped NS patch on the card */
 
 static void expect(int ok, const char *what)
 {
@@ -79,6 +81,74 @@ static char *slurp(const char *rel, size_t *len)
     return (char *)data;
 }
 
+#define NS_IPS "luma/sysmodules/0004013000008002.ips"
+#define NS_EXHEADER "luma/titles/0004013000008002/exheader.bin"
+
+/* Shaped like NetPass's NS patch (patches/ns/main.s, patches version 10): 0xB0 bytes at 0x1078
+ * and 3 at 0x7794, clear of everything ours relies on. */
+static uint8_t netpass_ips[5 + 5 + 0xB0 + 5 + 3 + 3];
+
+static void put_netpass(void)
+{
+    uint8_t *p = netpass_ips;
+    memcpy(p, "PATCH", 5);
+    p += 5;
+    memcpy(p, "\x00\x10\x78\x00\xB0", 5);
+    for (int i = 0; i < 0xB0; i++)
+        p[5 + i] = (uint8_t)(0x11 + i * 13);
+    p += 5 + 0xB0;
+    memcpy(p, "\x00\x77\x94\x00\x03\x39\xE6\xFF", 8);
+    p += 8;
+    memcpy(p, "EOF", 3);
+    char full[256];
+    path(full, NS_IPS);
+    fs_write(full, netpass_ips, sizeof(netpass_ips));
+}
+
+static bool ips_is(const uint8_t *want, size_t want_len)
+{
+    size_t len;
+    char *ips = slurp(NS_IPS, &len);
+    bool same = ips && len == want_len && !memcmp(ips, want, len);
+    free(ips);
+    return same;
+}
+
+/* Our NS patch as the manifest ships it. */
+static uint8_t *our_ips(size_t *len)
+{
+    for (size_t i = 0; i < m.font_set.count; i++)
+        if (!strcmp(m.font_set.entries[i].path, NS_IPS)) {
+            uint8_t *data;
+            int blob = m.font_set.entries[i].blob;
+            if (payload_restore(&m, data_root, blob, &data) != PAYLOAD_OK)
+                return NULL;
+            *len = m.blobs[blob].size;
+            return data;
+        }
+    return NULL;
+}
+
+/* How many records of `ours` the patch on the card holds. */
+static size_t ours_on_card(void)
+{
+    size_t len, ours_len, n = 0, removed = 0, out_len;
+    uint8_t *ours = our_ips(&ours_len);
+    char *ips = slurp(NS_IPS, &len);
+    IpsRecord r[8];
+    IpsMark marks[8];
+    uint8_t *out = NULL;
+    if (ours && ips && !ips_parse(ours, ours_len, r, 8, &n)) {
+        for (size_t i = 0; i < n; i++)
+            ips_mark(&r[i], &marks[i]);
+        ips_strip((uint8_t *)ips, len, marks, n, &out, &out_len, &removed);
+    }
+    free(out);
+    free(ours);
+    free(ips);
+    return removed;
+}
+
 static void fresh_card(bool game, bool external)
 {
     fs_budget = -1;
@@ -100,6 +170,8 @@ static void fresh_card(bool game, bool external)
     path(full, "luma/config.ini");
     fs_write(full, cfg, len);
     free(cfg);
+    if (netpass_card)
+        put_netpass();
 }
 
 static Job job_for(Op op, Slot slot, Glyphs glyphs, bool want_font)
@@ -358,15 +430,119 @@ static void test_foreign_ns_patch(void)
     put("luma/sysmodules/0004013000008002.ips", "PATCHsomeone else's NS patchEOF");
     Job j;
     size_t len;
-    expect(run(OP_INSTALL, SLOT_RU, GLYPHS_REAL, true, &j) == ENGINE_OK && j.foreign_ns && !j.font &&
-               j.glyphs_set == GLYPHS_DEFAULT,
-           "foreign NS patch: no font, the text with stand-ins");
+    expect(run(OP_INSTALL, SLOT_RU, GLYPHS_REAL, true, &j) == ENGINE_OK && j.ns_state == NS_INVALID && !j.font &&
+               !j.ns_merged && j.glyphs_set == GLYPHS_DEFAULT,
+           "foreign NS patch that does not parse: no font, the text with stand-ins");
     char *ips = slurp("luma/sysmodules/0004013000008002.ips", &len);
     expect(ips && len == 31 && !memcmp(ips, "PATCHsomeone", 12) && !has(m.font_path + 1),
            "foreign NS patch: left as it was");
     free(ips);
     expect(run(OP_REMOVE, SLOT_RU, GLYPHS_DEFAULT, false, &j) == ENGINE_OK && has("luma/sysmodules/0004013000008002.ips"),
            "foreign NS patch: a removal leaves it too");
+}
+
+static bool luma_external(void)
+{
+    size_t len;
+    char *text = slurp("luma/config.ini", &len);
+    LumaConfig c;
+    bool on = text && !lumacfg_parse(&c, text, len) && *c.external == '1';
+    free(text);
+    return on;
+}
+
+static void test_ns_merge(void)
+{
+    netpass_card = true;
+    fresh_card(true, false);
+    netpass_card = false;
+    Job j;
+    expect(run(OP_INSTALL, SLOT_RU, GLYPHS_REAL, true, &j) == ENGINE_OK && j.ns_state == NS_MERGEABLE && j.ns_merged &&
+               j.font && j.glyphs_set == GLYPHS_REAL,
+           "NetPass's NS patch: merged, the font on, the real letters");
+    size_t ours_len, len;
+    uint8_t *ours = our_ips(&ours_len);
+    char *ips = slurp(NS_IPS, &len);
+    expect(ours && ips && len == sizeof(netpass_ips) + ours_len - 8 &&
+               !memcmp(ips, netpass_ips, sizeof(netpass_ips) - 3) &&
+               !memcmp(ips + sizeof(netpass_ips) - 3, ours + 5, ours_len - 5),
+           "merged: NetPass's bytes up to its EOF, then ours");
+    free(ips);
+    Installed s;
+    bool parsed = engine_load_installed(sd_root, &s) == 0;
+    expect(parsed && installed_find(&s, NS_IPS "#merged") && installed_find(&s, NS_IPS "#rec:002170") &&
+               installed_find(&s, NS_IPS "#rec:01FA40") && !installed_find(&s, NS_IPS),
+           "merged: installed.txt records it under #merged and #rec:, not under the file's own path");
+    /* what 2.1.0 does with it: no record at the path, a sha that is no blob of ours - not its own */
+    uint8_t sha[32];
+    char full[256];
+    path(full, NS_IPS);
+    expect(parsed && !fs_sha256(full, sha) && manifest_find_blob(&m, sha) < 0, "merged: an older app sees a foreign file");
+    if (parsed)
+        installed_free(&s);
+    expect(engine_ns_state(sd_root, data_root, &m, NULL) == NS_MERGED, "merged: the state says so");
+
+    expect(run(OP_INSTALL, SLOT_RU, GLYPHS_REAL, true, &j) == ENGINE_OK && j.ns_state == NS_MERGED && j.ns_merged &&
+               ours_on_card() == 2 && luma_external(),
+           "merged twice: still one copy of our records");
+
+    expect(run(OP_REMOVE, SLOT_RU, GLYPHS_DEFAULT, false, &j) == ENGINE_OK && ips_is(netpass_ips, sizeof(netpass_ips)) &&
+               !has(NS_EXHEADER) && !has(m.font_path + 1),
+           "merged, removed: NetPass's patch back byte for byte, our exheader and font gone");
+    expect(luma_external(), "merged, removed: external modules stay on - NetPass's patch needs them");
+    free(ours);
+}
+
+static void test_ns_merge_undone_by_others(void)
+{
+    Job j;
+    netpass_card = true;
+    fresh_card(true, false);
+    netpass_card = false;
+    run(OP_INSTALL, SLOT_RU, GLYPHS_REAL, true, NULL);
+    put_netpass(); /* NetPass writes its patches again */
+    expect(engine_ns_state(sd_root, data_root, &m, NULL) == NS_MERGEABLE, "overwritten by NetPass: mergeable again");
+    expect(run(OP_REMOVE, SLOT_RU, GLYPHS_DEFAULT, false, &j) == ENGINE_OK && ips_is(netpass_ips, sizeof(netpass_ips)),
+           "overwritten by NetPass, removed: its file untouched");
+
+    netpass_card = true;
+    fresh_card(true, false);
+    netpass_card = false;
+    run(OP_INSTALL, SLOT_RU, GLYPHS_REAL, true, NULL);
+    char full[256];
+    path(full, NS_IPS);
+    fs_remove(full); /* NetPass's "clear patches" */
+    /* the copy 2.1.0 made of NetPass's patch when it found it there */
+    path(full, BACKUP_DIR "/" NS_IPS);
+    fs_write(full, netpass_ips, sizeof(netpass_ips));
+    expect(engine_ns_state(sd_root, data_root, &m, NULL) == NS_ABSENT, "cleared by NetPass: absent");
+    expect(run(OP_REMOVE, SLOT_RU, GLYPHS_DEFAULT, false, &j) == ENGINE_OK && !has(NS_IPS),
+           "cleared by NetPass, removed: no copy of its patch comes back");
+}
+
+static void test_ns_refused(void)
+{
+    Job j;
+    /* a foreign record on our hook site */
+    static const uint8_t overlap[] = {'P', 'A', 'T', 'C', 'H', 0x00, 0x21, 0x70, 0x00, 0x04, 1, 2, 3, 4, 'E', 'O', 'F'};
+    fresh_card(true, true);
+    char full[256];
+    path(full, NS_IPS);
+    fs_write(full, overlap, sizeof(overlap));
+    expect(run(OP_INSTALL, SLOT_RU, GLYPHS_REAL, true, &j) == ENGINE_OK && j.ns_state == NS_OVERLAP && !j.font &&
+               j.glyphs_set == GLYPHS_DEFAULT && ips_is(overlap, sizeof(overlap)),
+           "a foreign NS patch on our hook site: no font, left as it was");
+    /* a foreign record inside code the stub calls */
+    static const uint8_t dep[] = {'P', 'A', 'T', 'C', 'H', 0x00, 0xA5, 0x00, 0x00, 0x04, 1, 2, 3, 4, 'E', 'O', 'F'};
+    fresh_card(true, true);
+    fs_write(full, dep, sizeof(dep));
+    expect(engine_ns_state(sd_root, data_root, &m, NULL) == NS_OVERLAP, "a foreign NS patch inside the open wrapper: overlap");
+    /* someone else's exheader for NS */
+    fresh_card(true, true);
+    put(NS_EXHEADER, "someone else's exheader");
+    expect(run(OP_INSTALL, SLOT_RU, GLYPHS_REAL, true, &j) == ENGINE_OK && j.ns_state == NS_FOREIGN_EXHEADER && !j.font &&
+               !has(NS_IPS),
+           "a foreign NS exheader: no font, nothing of ours next to it");
 }
 
 static void test_changed_file_kept(void)
@@ -568,12 +744,19 @@ int main(int argc, char **argv)
     test_one_run();
     test_font_kept_by_sha();
     test_foreign_ns_patch();
+    test_ns_merge();
+    test_ns_merge_undone_by_others();
+    test_ns_refused();
     test_changed_file_kept();
     test_adopt();
     int spacing = argc == 5 ? atoi(argv[4]) : 4;
     cut_test("install", OP_INSTALL, SLOT_RU, GLYPHS_DEFAULT, false, spacing > 0 ? 7 * spacing : 1);
     cut_test("update to en + real", OP_INSTALL, SLOT_EN, GLYPHS_REAL, true, spacing > 0 ? 5 * spacing : 1);
     cut_test("remove", OP_REMOVE, SLOT_RU, GLYPHS_DEFAULT, true, spacing > 0 ? 3 * spacing : 1);
+    netpass_card = true;
+    cut_test("install over NetPass", OP_INSTALL, SLOT_RU, GLYPHS_REAL, false, spacing > 0 ? 7 * spacing : 1);
+    cut_test("remove, merged with NetPass", OP_REMOVE, SLOT_RU, GLYPHS_DEFAULT, true, spacing > 0 ? 3 * spacing : 1);
+    netpass_card = false;
 
     fs_remove_tree(sd_root);
     manifest_free(&m);

@@ -105,7 +105,9 @@ static void op_line(const App *app, char *out, size_t cap)
         ADDF(" auto=1");
     if (app->console.installed_before && !app->has_installed)
         ADDF(" took_over=1");
-    if (j->foreign_ns)
+    if (j->ns_merged)
+        ADDF(" ns_merged=1");
+    if (j->ns_state >= NS_OVERLAP)
         ADDF(" foreign_ns=1");
     if (app->worker.font_note)
         ADDF(" font_note=\"%s\"", app->worker.font_note);
@@ -136,8 +138,12 @@ static const char *font_reason(const App *app)
     const Console *c = &app->console;
     if (j->font && j->glyphs_set == GLYPHS_REAL)
         return "ok";
-    if (j->foreign_ns)
-        return "foreign_ns";
+    if (j->ns_state == NS_OVERLAP)
+        return "foreign_ns_overlap";
+    if (j->ns_state == NS_INVALID)
+        return "foreign_ns_invalid";
+    if (j->ns_state == NS_FOREIGN_EXHEADER)
+        return "foreign_exheader";
     if (!j->want_font) {
         if (!c->is_luma || c->luma_version < LUMA_FULL)
             return "old_luma";
@@ -257,6 +263,16 @@ static bool run_auto(App *app)
     if (app->has_installed && app->console.is_luma && !app->console.game_patching) {
         go(app, SCREEN_LUMA);
         return true;
+    }
+    /* the font is on, NS did not load it, and our NS patch is gone from the card: another app
+     * (NetPass) wrote its own over it or removed it. Merging it again brings the letters back. */
+    if (app->has_installed && app->installed.font && !app->live_letters && app->manifest_ok &&
+        install_font_allowed(&app->console, true)) {
+        NsState ns = engine_ns_state(SD_ROOT, DATA_ROOT, &app->manifest, &app->installed);
+        if (ns == NS_ABSENT || ns == NS_MERGEABLE) {
+            go(app, SCREEN_NS_REPAIR);
+            return true;
+        }
     }
     if (app->has_installed && app->installed.glyphs == GLYPHS_REAL && !app->live_letters) {
         app->finishing = true;
@@ -1096,6 +1112,39 @@ static void update_luma(App *app, const Input *in)
     }
 }
 
+/* ---------------------------------------------------------------- the NS patch replaced */
+
+static Rect ns_repair_button = {14, 112, 292, 60};
+
+static void draw_ns_repair_top(const App *app)
+{
+    (void)app;
+    ui_text(20, 14, 17, FONT_HEAVY, COL_INK, "Інший застосунок змінив системний патч");
+    ui_card(20, 46, 360, 112, 8, COL_CARD, 0);
+    ui_text_wrap(36, 62, 328, 12.5f, FONT_BOLD, COL_BODY,
+                 "Літери і ї є ґ зараз показуються як «?». Відновлення об'єднає патчі й перезавантажить консоль.");
+}
+
+static void draw_ns_repair_bottom(const App *app)
+{
+    ui_card(14, 14, 292, 88, 11, COL_CARD, 0);
+    ui_icon(ICON_INFO, 40, 40, 24, COL_BLUE);
+    ui_text(64, 22, 13.5f, FONT_HEAVY, COL_INK, "Наприклад, NetPass");
+    ui_text_wrap(64, 42, 232, 11.5f, FONT_BOLD, COL_BODY,
+                 "Його патч залишиться, українізатор додасть до нього свій.");
+    draw_primary(ns_repair_button, ICON_POWER, "Відновити", app->working ? "зачекайте…" : "і перезавантажити", true);
+    draw_hints("B", "Пізніше", NULL, NULL);
+}
+
+static void update_ns_repair(App *app, const Input *in)
+{
+    if (((in->down & KEY_A) || hit(in, ns_repair_button)) && !app->working) {
+        start_op(app, OP_INSTALL, app->installed.slot, GLYPHS_REAL);
+    } else if (in->down & KEY_B) {
+        go(app, home_screen(app));
+    }
+}
+
 /* ---------------------------------------------------------------- dispatch */
 
 void app_init(App *app)
@@ -1168,6 +1217,7 @@ static int screen_targets(const App *app, Target *t)
     case SCREEN_CONFIRM: ADD(confirm_cancel, 11); ADD(confirm_remove, 14); break;
     case SCREEN_ERROR: ADD(error_button, 14); break;
     case SCREEN_LUMA: ADD(luma_button, 14); break;
+    case SCREEN_NS_REPAIR: ADD(ns_repair_button, 14); break;
     case SCREEN_PROGRESS: break;
     }
 #undef ADD
@@ -1291,6 +1341,7 @@ void app_update(App *app, const Input *raw)
     case SCREEN_CONFIRM: update_confirm(app, in); break;
     case SCREEN_ERROR: update_error(app, in); break;
     case SCREEN_LUMA: update_luma(app, in); break;
+    case SCREEN_NS_REPAIR: update_ns_repair(app, in); break;
     }
 }
 
@@ -1308,6 +1359,7 @@ void app_draw_top(const App *app)
     case SCREEN_CONFIRM: draw_confirm_top(app); break;
     case SCREEN_ERROR: draw_error_top(app); break;
     case SCREEN_LUMA: draw_luma_top(app); break;
+    case SCREEN_NS_REPAIR: draw_ns_repair_top(app); break;
     }
 }
 
@@ -1326,5 +1378,6 @@ void app_draw_bottom(const App *app)
     case SCREEN_CONFIRM: draw_confirm_bottom(app); break;
     case SCREEN_ERROR: draw_error_bottom(app); break;
     case SCREEN_LUMA: draw_luma_bottom(app); break;
+    case SCREEN_NS_REPAIR: draw_ns_repair_bottom(app); break;
     }
 }

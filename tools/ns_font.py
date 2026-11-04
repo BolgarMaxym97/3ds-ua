@@ -98,6 +98,19 @@ NS_BUILDS: dict[str, dict] = {
         "file_close": 0x1166E8,
         "stub": 0x11FA40,        # .text ends at 0x11FA3C; its page runs to 0x120000
         "text_page_end": 0x120000,
+        # How far each piece of NS the stub relies on reaches, so that another patch merged
+        # with ours (NetPass's, say) can be refused when it touches them. A helper runs to the
+        # next function's prologue, its literal pool included; the loader is the stretch from
+        # its start to where the stub resumes.
+        "extents": {
+            "open_direct": 0x10C,
+            "file_getsize": 0x40,
+            "file_read": 0x58,
+            "file_close": 0x2C,
+            "font_str": 6,
+            "fs_session": 4,
+        },
+        "loader": (0x1020A4, 0x102334),
     },
 }
 
@@ -242,6 +255,22 @@ def identify(code: bytes, exheader: bytes) -> dict:
     if remaster != build["remaster"]:
         raise SystemExit(f"NS exheader is remaster {remaster}, the code is {build['remaster']}")
     return build
+
+
+def deps(build: dict) -> list[tuple[int, int]]:
+    """(IPS offset, length) of the NS code and data the stub relies on but does not write,
+    sorted and with touching ranges joined. The installer refuses to merge a foreign NS patch
+    that writes into any of them (manifest line `nsdeps`)."""
+    spans = [(build[name] - TEXT_VA, size) for name, size in build["extents"].items()]
+    start, end = build["loader"]
+    spans.append((start - TEXT_VA, end - start))
+    joined: list[list[int]] = []
+    for off, size in sorted(spans):
+        if joined and off <= joined[-1][0] + joined[-1][1]:
+            joined[-1][1] = max(joined[-1][1], off + size - joined[-1][0])
+        else:
+            joined.append([off, size])
+    return [(off, size) for off, size in joined]
 
 
 def build_patch(code: bytes, exheader: bytes) -> tuple[bytes, bytes]:

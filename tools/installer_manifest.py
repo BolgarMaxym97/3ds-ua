@@ -28,6 +28,9 @@ data/manifest.txt, one record per line, fields separated by single spaces:
     need <model> <folder tid> <title tid> <remaster>   the folder ships only if the installed
                                                        title is that build (AM version >> 10)
     ns <remaster> <code sha256>                        the NS build the font patch is for
+    nsdeps <OFF>:<LEN> ...                             hex IPS offsets of NS code the stub relies
+                                                       on: a foreign NS patch touching them is
+                                                       not merged with ours
     fontpath <sd path>                                 where the built font goes
     upturn <stored name>                               tools/sysfont_glyphs.py's upturn.bin
     set <slot> <model> <glyphs> <file count>           then that many lines:
@@ -219,6 +222,7 @@ def main() -> None:
     lines += list(blobs.values())
     lines += requirements(sets)
     lines.append(f"ns {build[1]['remaster']} {build[0]}")
+    lines.append("nsdeps " + " ".join(f"{off:06X}:{size:X}" for off, size in ns_font.deps(build[1])))
     lines.append(f"fontpath {ns_font.FONT_SD_PATH}")
     lines.append("upturn font/upturn.bin")
     for (slot, model, glyphs), files in sorted(sets.items()):

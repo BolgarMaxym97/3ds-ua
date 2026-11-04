@@ -8,6 +8,7 @@
 #include "../sysfont/sha256.h"
 #include "fsutil.h"
 #include "lumacfg.h"
+#include "nsips.h"
 
 #define TITLES "luma/titles/"
 #define FOLDER_LEN 28 /* "luma/titles/" + 16 hex digits */
@@ -22,6 +23,14 @@
 #define FULL_SUFFIX ".3dsua-full"
 #define FOLDERS_MAX 96
 #define PATH_CAP 256
+/* The NS patch. Merged into another app's, the file is recorded under NS_MERGED_PATH and each
+ * of our records under NS_REC_PATH<offset> - never under the file's own path, so that an older app
+ * (2.1.x), which took a file at that path with the recorded size for its own, leaves it be. */
+#define NS_IPS "luma/sysmodules/0004013000008002.ips"
+#define NS_EXHEADER TITLES "0004013000008002/exheader.bin"
+#define NS_MERGED_PATH NS_IPS "#merged"
+#define NS_REC_PATH NS_IPS "#rec:"
+#define NS_MARKS_MAX 16
 
 typedef struct {
     char path[FOLDER_LEN + 1];
@@ -42,7 +51,7 @@ typedef struct {
     char font_path[96];
     /* luma/config.ini as read, and where its two flags are */
     bool font_planned;  /* the font should go on: the text is staged with the real letters */
-    bool foreign_ns;    /* someone else's NS patch is on the card (foreign_ns_patch) */
+    NsState ns_state;   /* the card's NS patch before the run (engine_ns_state) */
     char *config;
     size_t config_len;
     LumaConfig flags;
@@ -401,17 +410,6 @@ static EngineStatus backup_all(Ctx *c)
         if (fs_walk(full, backup_foreign, &w))
             return fail(c, ENGINE_E_WRITE, "backup failed", c->folders[i].path);
     }
-    for (size_t i = 0; i < c->m->font_set.count; i++) {
-        const char *path = c->m->font_set.entries[i].path;
-        char dir[PATH_CAP];
-        snprintf(dir, sizeof(dir), "%s", path);
-        char *slash = strrchr(dir, '/');
-        *slash = 0;
-        sd(c, path, full);
-        Walk w = {.c = c, .base = dir};
-        if (fs_exists(full) && backup_foreign(slash + 1, &w))
-            return fail(c, ENGINE_E_WRITE, "backup failed", path);
-    }
     return ENGINE_OK;
 }
 
@@ -430,11 +428,200 @@ static int font_set_order(const Ctx *c, int k)
     return -1;
 }
 
+/* ---------------------------------------------------------------- the NS patch */
+
+/* Our .ips as the manifest ships it, the marks that tell our records (this build's, plus the
+ * ones the last install recorded), and every range a foreign record must stay out of. */
+typedef struct {
+    uint8_t *ips;
+    size_t len;
+    size_t own;                         /* marks[0..own) are this build's records */
+    IpsMark marks[NS_MARKS_MAX];
+    size_t nmarks;
+    IpsRange keep_out[NS_MARKS_MAX + NS_DEPS_MAX];
+    size_t nkeep_out;
+} NsOurs;
+
+static int ns_ours_load(NsOurs *o, const char *data_root, const Manifest *m, const Installed *prev)
+{
+    memset(o, 0, sizeof(*o));
+    const Entry *e = NULL;
+    for (size_t i = 0; i < m->font_set.count; i++)
+        if (!strcmp(m->font_set.entries[i].path, NS_IPS))
+            e = &m->font_set.entries[i];
+    if (!e || payload_restore(m, data_root, e->blob, &o->ips) != PAYLOAD_OK)
+        return -1;
+    o->len = m->blobs[e->blob].size;
+    IpsRecord r[NS_MARKS_MAX];
+    size_t n;
+    if (ips_parse(o->ips, o->len, r, NS_MARKS_MAX, &n)) {
+        free(o->ips);
+        return -1;
+    }
+    for (size_t i = 0; i < n; i++) {
+        ips_mark(&r[i], &o->marks[i]);
+        o->keep_out[i] = (IpsRange){r[i].off, r[i].len};
+    }
+    o->own = o->nmarks = o->nkeep_out = n;
+    for (size_t i = 0; i < m->ns_dep_count; i++)
+        o->keep_out[o->nkeep_out++] = m->ns_deps[i];
+    size_t rec_len = strlen(NS_REC_PATH);
+    for (size_t i = 0; prev && i < prev->count && o->nmarks < NS_MARKS_MAX; i++) {
+        const StateFile *f = &prev->files[i];
+        char *end;
+        if (strncmp(f->path, NS_REC_PATH, rec_len) || strlen(f->path) != rec_len + 6)
+            continue;
+        unsigned long off = strtoul(f->path + rec_len, &end, 16);
+        if (*end)
+            continue;
+        IpsMark *mk = &o->marks[o->nmarks++];
+        mk->off = (uint32_t)off;
+        mk->len = f->size;
+        memcpy(mk->sha, f->sha, 32);
+    }
+    return 0;
+}
+
+/* What `ips` (the card's .ips) is, given ours and the manifest's nsdeps. */
+static NsState ns_classify(const NsOurs *o, const uint8_t *ips, size_t len, const Manifest *m)
+{
+    if (len == o->len && !memcmp(ips, o->ips, len))
+        return NS_OURS;
+    uint8_t *rest;
+    size_t rest_len, removed;
+    if (ips_strip(ips, len, o->marks, o->nmarks, &rest, &rest_len, &removed))
+        return NS_INVALID;
+    NsState state = removed ? NS_MERGED : NS_MERGEABLE;
+    IpsRecord r[64];
+    size_t n;
+    if (ips_empty(rest, rest_len))
+        state = NS_OURS; /* ours alone, of another build */
+    else if (ips_parse(rest, rest_len, r, 64, &n))
+        state = NS_INVALID; /* more records than any patch we have seen */
+    else if (!m->ns_dep_count || ips_touches(r, n, o->keep_out, o->nkeep_out))
+        state = NS_OVERLAP;
+    free(rest);
+    return state;
+}
+
+static bool exheader_ours(const char *full, const Manifest *m, const Installed *prev)
+{
+    uint8_t sha[32];
+    if (fs_sha256(full, sha))
+        return false;
+    const StateFile *f = prev ? installed_find(prev, NS_EXHEADER) : NULL;
+    return manifest_find_blob(m, sha) >= 0 || (f && !memcmp(f->sha, sha, 32));
+}
+
+NsState engine_ns_state(const char *sd_root, const char *data_root, const Manifest *m, const Installed *prev)
+{
+    char full[PATH_CAP];
+    snprintf(full, sizeof(full), "%s/%s", sd_root, NS_EXHEADER);
+    if (fs_exists(full) && !exheader_ours(full, m, prev))
+        return NS_FOREIGN_EXHEADER;
+    snprintf(full, sizeof(full), "%s/%s", sd_root, NS_IPS);
+    if (!fs_exists(full))
+        return NS_ABSENT;
+    uint8_t *ips;
+    size_t len;
+    NsOurs o;
+    if (payload_read_file(full, &ips, &len))
+        return NS_INVALID;
+    NsState state = NS_INVALID;
+    if (!ns_ours_load(&o, data_root, m, prev)) {
+        state = ns_classify(&o, ips, len, m);
+        free(o.ips);
+    }
+    free(ips);
+    return state;
+}
+
+static const Installed *prev_of(const Ctx *c)
+{
+    return c->has_prev ? &c->prev : NULL;
+}
+
+/* The card's .ips without our records, then ours appended: written over it, and recorded as
+ * NS_MERGED_PATH plus one NS_REC_PATH line per record of ours. */
+static EngineStatus install_merged_ips(Ctx *c)
+{
+    char full[PATH_CAP];
+    sd(c, NS_IPS, full);
+    NsOurs o;
+    uint8_t *card = NULL, *rest = NULL, *merged = NULL;
+    size_t card_len, rest_len, merged_len, removed;
+    EngineStatus status = ENGINE_OK;
+    if (ns_ours_load(&o, c->job->data_root, c->m, prev_of(c)))
+        return fail(c, ENGINE_E_PAYLOAD, "cannot read", NS_IPS);
+    if (payload_read_file(full, &card, &card_len) || ips_strip(card, card_len, o.marks, o.nmarks, &rest, &rest_len, &removed) ||
+        ips_append(rest, rest_len, o.ips, o.len, &merged, &merged_len))
+        status = fail(c, ENGINE_E_WRITE, "cannot merge", NS_IPS);
+    uint8_t sha[32];
+    if (!status) {
+        sha256(merged, merged_len, sha);
+        if (fs_replace_verified(full, merged, merged_len, sha))
+            status = fail(c, ENGINE_E_WRITE, "write failed", NS_IPS);
+    }
+    if (!status)
+        status = record(c, sha, (uint32_t)merged_len, NS_MERGED_PATH);
+    for (size_t i = 0; i < o.own && !status; i++) {
+        char path[64];
+        snprintf(path, sizeof(path), NS_REC_PATH "%06lX", (unsigned long)o.marks[i].off);
+        status = record(c, o.marks[i].sha, o.marks[i].len, path);
+    }
+    c->job->ns_merged = !status;
+    free(card);
+    free(rest);
+    free(merged);
+    free(o.ips);
+    return status;
+}
+
+/* Ours alone goes; merged, only our records go and the rest stays byte for byte; a file
+ * without our records - another app wrote its own since - is not touched. */
+static void remove_ns_ips(Ctx *c)
+{
+    char full[PATH_CAP];
+    sd(c, NS_IPS, full);
+    uint8_t *card, *rest = NULL;
+    size_t card_len, rest_len, removed = 0;
+    NsOurs o;
+    if (!fs_exists(full) || payload_read_file(full, &card, &card_len))
+        return;
+    const StateFile *plain = c->has_prev ? installed_find(&c->prev, NS_IPS) : NULL;
+    uint8_t sha[32];
+    sha256(card, card_len, sha);
+    if (!ns_ours_load(&o, c->job->data_root, c->m, prev_of(c))) {
+        if ((card_len == o.len && !memcmp(card, o.ips, card_len)) || (plain && !memcmp(plain->sha, sha, 32)))
+            fs_remove(full);
+        else if (!ips_strip(card, card_len, o.marks, o.nmarks, &rest, &rest_len, &removed) && removed) {
+            if (ips_empty(rest, rest_len)) {
+                fs_remove(full);
+            } else {
+                sha256(rest, rest_len, sha);
+                fs_replace_verified(full, rest, rest_len, sha);
+            }
+        }
+        free(o.ips);
+    }
+    free(rest);
+    free(card);
+}
+
+static bool ns_takes_font(NsState state)
+{
+    return state == NS_ABSENT || state == NS_OURS || state == NS_MERGED || state == NS_MERGEABLE;
+}
+
 static void remove_font(Ctx *c)
 {
     char full[PATH_CAP];
     for (int k = (int)c->m->font_set.count - 1; k >= 0; k--) {
         const char *path = c->m->font_set.entries[font_set_order(c, k)].path;
+        if (!strcmp(path, NS_IPS)) {
+            remove_ns_ips(c);
+            continue;
+        }
         sd(c, path, full);
         if (fs_exists(full) && is_ours(c, path))
             fs_remove(full);
@@ -452,20 +639,6 @@ static void remove_font(Ctx *c)
     fs_prune_empty(dir, stop);
 }
 
-/* Another patch of NS (or an exheader override of it) that is not ours: two NS patches do
- * not combine, and ours would silently switch theirs off. Then no font, nothing touched. */
-static bool foreign_ns_patch(const Ctx *c)
-{
-    char full[PATH_CAP];
-    for (size_t i = 0; i < c->m->font_set.count; i++) {
-        const char *path = c->m->font_set.entries[i].path;
-        sd(c, path, full);
-        if (fs_exists(full) && !is_ours(c, path))
-            return true;
-    }
-    return false;
-}
-
 /* Both Luma flags will be on after this run: the font may go on. */
 static bool flags_will_be_on(const Ctx *c)
 {
@@ -476,7 +649,7 @@ static EngineStatus install_font(Ctx *c)
 {
     Job *job = c->job;
     job->font = false;
-    if (c->foreign_ns)
+    if (!ns_takes_font(c->ns_state))
         return ENGINE_OK; /* not ours to remove either */
     if (!job->want_font || !flags_will_be_on(c)) {
         remove_font(c);
@@ -513,6 +686,12 @@ static EngineStatus install_font(Ctx *c)
     for (size_t k = 0; k < c->m->font_set.count; k++) {
         const Entry *e = &c->m->font_set.entries[font_set_order(c, (int)k)];
         const Blob *b = &c->m->blobs[e->blob];
+        if (!strcmp(e->path, NS_IPS) && (c->ns_state == NS_MERGED || c->ns_state == NS_MERGEABLE)) {
+            EngineStatus status = install_merged_ips(c);
+            if (status)
+                return status;
+            continue;
+        }
         const StateFile *prev = c->has_prev ? installed_find(&c->prev, e->path) : NULL;
         sd(c, e->path, full);
         if (!prev || memcmp(prev->sha, b->sha, 32) || fs_size(full) != (long)b->size) {
@@ -711,8 +890,8 @@ static EngineStatus run_install(Ctx *c)
 {
     Job *job = c->job;
     EngineStatus status;
-    c->foreign_ns = job->foreign_ns = foreign_ns_patch(c);
-    c->font_planned = job->want_font && flags_will_be_on(c) && !c->foreign_ns;
+    c->ns_state = job->ns_state = engine_ns_state(job->sd_root, job->data_root, c->m, prev_of(c));
+    c->font_planned = job->want_font && flags_will_be_on(c) && ns_takes_font(c->ns_state);
     job->stage = STAGE_BACKUP;
     if ((status = backup_all(c)))
         return status;
@@ -745,6 +924,10 @@ static int restore_backup(const char *rel, void *ctx)
     sd(w->c, rel, to);
     if (is_junk(rel)) /* an older app backed Finder's files up too: let them go */
         return 0;
+    /* an older app's copy of another app's NS patch: putting it back would undo that app's
+     * own "remove" - ours is taken out of the live file instead (remove_ns_ips) */
+    if (!strcmp(rel, NS_IPS) || !strcmp(rel, NS_EXHEADER))
+        return 0;
     if (fs_exists(to)) /* something new took the place since: keep both, the copy stays */
         return 0;
     return fs_make_parents(to) || fs_rename(from, to);
@@ -759,6 +942,27 @@ static void list_state(const char *name, void *ctx)
         sd(w->c, rel, full);
         w->status |= fs_remove_tree(full);
     }
+}
+
+static void count_module(const char *name, void *ctx)
+{
+    Walk *w = ctx;
+    size_t n = strlen(name);
+    if (name[0] != '.' && (!w->base || (n > 5 && !strcmp(name + n - 5, ".firm"))))
+        w->files++;
+}
+
+/* Something of another app's that "Load external FIRMs and modules" loads is still there: a
+ * patch or module in luma/sysmodules, or a FIRM in luma/. */
+static bool luma_modules_left(const Ctx *c)
+{
+    char full[PATH_CAP];
+    Walk any = {0}, firms = {.base = "firm"};
+    sd(c, "luma/sysmodules", full);
+    fs_list(full, count_module, &any);
+    sd(c, "luma", full);
+    fs_list(full, count_module, &firms);
+    return any.files || firms.files;
 }
 
 static EngineStatus run_remove(Ctx *c)
@@ -789,7 +993,7 @@ static EngineStatus run_remove(Ctx *c)
     }
 
     job->stage = STAGE_LUMA;
-    if (c->has_prev && c->prev.luma_external && c->config_ok && *c->flags.external == '1') {
+    if (c->has_prev && c->prev.luma_external && c->config_ok && *c->flags.external == '1' && !luma_modules_left(c)) {
         *c->flags.external = '0';
         EngineStatus status = write_config(c);
         if (status)
@@ -828,6 +1032,7 @@ EngineStatus engine_run(Job *job)
     job->error[0] = 0;
     job->kept = job->skipped = 0;
     job->luma_manual = false;
+    job->ns_merged = false;
 
     EngineStatus status = ENGINE_OK;
     load_state(c);
