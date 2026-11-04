@@ -23,6 +23,7 @@ typedef enum {
     SCREEN_CONFIRM,     /* "remove the mod?" */
     SCREEN_ERROR,
     SCREEN_LUMA,        /* how to turn game patching on by hand */
+    SCREEN_NS_REPAIR,   /* another app replaced or removed the NS patch: merge it again */
 } ScreenId;
 
 typedef struct {

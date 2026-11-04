@@ -31,6 +31,14 @@ typedef struct {
     size_t count;
 } FileSet;
 
+/* A stretch of NS's .code by IPS offset (the code's load address 0x100000 is offset 0). */
+typedef struct {
+    uint32_t off;
+    uint32_t len;
+} IpsRange;
+
+#define NS_DEPS_MAX 16
+
 typedef struct {
     Model model;
     uint64_t folder;    /* luma/titles/<folder> */
@@ -46,6 +54,8 @@ typedef struct {
     size_t need_count;
     uint16_t ns_remaster;
     uint8_t ns_code_sha[32];
+    IpsRange ns_deps[NS_DEPS_MAX]; /* what the font stub relies on but does not write, sorted */
+    size_t ns_dep_count;
     char font_path[96];
     char upturn[32];
     FileSet sets[SLOT_COUNT][MODEL_COUNT][GLYPHS_COUNT];

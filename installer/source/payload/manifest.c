@@ -3,7 +3,7 @@
 #include <stdlib.h>
 #include <string.h>
 
-#define MAX_FIELDS 8
+#define MAX_FIELDS (NS_DEPS_MAX + 2) /* nsdeps is the longest line; one more catches a surplus */
 
 static int hexval(char c)
 {
@@ -50,6 +50,25 @@ static int copy_field(char *dst, size_t cap, const char *s, size_t len)
         return -1;
     memcpy(dst, s, len);
     dst[len] = 0;
+    return 0;
+}
+
+/* "<OFF>:<LEN>" pairs in hex, sorted and apart, inside a 24-bit IPS offset space */
+static int parse_ns_deps(Manifest *m, const char *const *f, const size_t *fl, size_t n)
+{
+    m->ns_dep_count = 0;
+    for (size_t i = 0; i < n; i++) {
+        const char *colon = memchr(f[i], ':', fl[i]);
+        uint64_t off, len;
+        if (!colon || colon - f[i] > 6 || fl[i] - (size_t)(colon - f[i]) - 1 > 6 || parse_u64(f[i], (size_t)(colon - f[i]), 16, &off) ||
+            parse_u64(colon + 1, fl[i] - (size_t)(colon - f[i]) - 1, 16, &len) || !len || off + len > 0x1000000)
+            return -1;
+        if (i && m->ns_deps[i - 1].off + m->ns_deps[i - 1].len > off)
+            return -1;
+        m->ns_deps[i].off = (uint32_t)off;
+        m->ns_deps[i].len = (uint32_t)len;
+        m->ns_dep_count++;
+    }
     return 0;
 }
 
@@ -222,6 +241,9 @@ int manifest_parse(Manifest *m, const char *text, size_t len)
             if (parse_u64(f[1], fl[1], 10, &remaster) || remaster > 0xFFFF || parse_sha(f[2], fl[2], m->ns_code_sha))
                 goto fail;
             m->ns_remaster = (uint16_t)remaster;
+        } else if (field_is(f[0], fl[0], "nsdeps") && n >= 2 && n <= NS_DEPS_MAX + 1) {
+            if (parse_ns_deps(m, f + 1, fl + 1, (size_t)n - 1))
+                goto fail;
         } else if (field_is(f[0], fl[0], "fontpath") && n == 2) {
             if (copy_field(m->font_path, sizeof(m->font_path), f[1], fl[1]))
                 goto fail;

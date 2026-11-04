@@ -387,9 +387,31 @@ byte, or no font is installed. It goes to `3ds/3ds-ua/font/cbf_std.bcfnt.lz`, ne
 `luma/sysmodules/0004013000008002.ips` and `luma/titles/0004013000008002/exheader.bin` from
 `tools/ns_font.py`. A lower-priority thread builds it while the worker waits on the SD card;
 if it fails, the text falls back to substitutes in the same run. No font is installed when
-Luma is older than 13.0, the NS build is unknown, another NS patch is already on the card (the
-app leaves it alone), or the user turned external modules off after our font went in — that
-counts as a rollback.
+Luma is older than 13.0, the NS build is unknown, another NS patch on the card cannot be merged
+with ours (see below; the app then leaves it alone), or the user turned external modules off
+after our font went in — that counts as a rollback.
+
+**Another app's NS patch.** Luma reads one `luma/sysmodules/0004013000008002.ips`, so a second
+app that patches NS — NetPass rewrites Image Share links this way — replaces ours, and with it
+the font: every `і ї є ґ` turns into `?`. Since 2.2.0 the app merges the two silently (code in
+`installer/source/engine/nsips.c`): the other file is kept byte for byte up to its `EOF`, our
+two records (the hook at `0x102170`, the stub at `0x11FA40`) follow it, then a new `EOF`. It
+merges only a file that parses whole, with nothing after `EOF`, whose records stay out of ours
+and out of the NS code our stub relies on — the `nsdeps` manifest line, from
+`tools/ns_font.py`: the font loader from `0x1020A4` to the resume point, the
+`FSUSER_OpenFileDirectly` wrapper, the three file helpers, the `"font:"` string and the
+`fs:USER` session. Anything else stays as before: no font, substitutes, the file untouched.
+NetPass's patch (`0x101078`, `0x107794`) is clear of all of them. Another app's NS
+`exheader.bin` is not merged either. `installed.txt` records the merged file as
+`…ips#merged` and each record of ours as `…ips#rec:<offset>`, never under the file's own
+path: 2.1.x would take a file at that path with the recorded size for its own and delete it,
+NetPass's records with it. Removal takes out only our records and writes back what is left;
+when NetPass has since written its own file again, our records are not in it and the file is
+not touched. A copy of an NS patch from `3ds/3ds-ua/backup/` is never put back — it would
+undo NetPass's own "remove patches" — and external modules stay on while anything is left in
+`luma/sysmodules/` or a `.firm` in `luma/`. When another app overwrites or removes the merged
+file later, the app finds on its next launch that NS loaded no `і ї є ґ` and that our records
+are gone, and offers «Відновити»: merge again and reboot.
 
 **Power-cut safety.** Each `luma/titles/<TID>` folder is assembled whole in
 `<TID>.3dsua-new` and swapped in by renaming: the old one moves to `.3dsua-old` (unchanged

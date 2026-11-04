@@ -109,13 +109,16 @@ installer-makerom:
 		-major $(word 1,$(subst ., ,$(VERSION))) -minor $(word 2,$(subst ., ,$(VERSION))) -micro $(word 3,$(subst ., ,$(VERSION)))
 	$(PY) tools/cia_version.py $(INSTALLER_CIA) $(VERSION)
 
-installer-test: ## host tests of the installer's font builder, payload, install engine and stats report (after installer-data)
+installer-test: ## host tests of the installer's font builder, payload, NS patch merge, install engine and stats report (after installer-data)
 	@mkdir -p tmp
 	cc -std=c99 -O2 -Wall -Wextra -Werror -o tmp/sysfont_test installer/tests/sysfont_test.c installer/source/sysfont/*.c
 	tmp/sysfont_test work/$(FONT_TID)/cbf_std.bcfnt.lz dist_sysfont/upturn.bin dist_sysfont/cbf_std.bcfnt.lz
 	cc -std=c99 -O2 -Wall -Wextra -Werror -o tmp/payload_test installer/tests/payload_test.c \
 		installer/source/payload/*.c installer/source/sysfont/sha256.c -lz
 	tmp/payload_test dist_installer/romfs/data
+	cc -std=c99 -O2 -Wall -Wextra -Werror -o tmp/ips_test installer/tests/ips_test.c installer/source/engine/nsips.c \
+		installer/source/sysfont/sha256.c
+	tmp/ips_test
 	cc -std=c99 -O2 -Wall -Wextra -Werror -D_DEFAULT_SOURCE -o tmp/engine_test installer/tests/engine_test.c \
 		installer/source/engine/*.c installer/source/payload/*.c installer/source/sysfont/sha256.c -lz
 	tmp/engine_test dist_installer/romfs/data tmp/console/config.ini tmp/engine_sd
