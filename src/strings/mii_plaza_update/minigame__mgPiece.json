@@ -1,0 +1,454 @@
+{
+  "logoT_00": {
+    "en": "Puzzle Swap",
+    "ua": "Збери пазл"
+  },
+  "logo_sdwT_00": {
+    "en": "Puzzle Swap",
+    "ua": "Збери пазл"
+  },
+  "pressT": {
+    "en": "PRESS  ",
+    "ua": "НАТИСНІТЬ  "
+  },
+  "beltT": {
+    "en": "Collect pieces to make a 3D picture!",
+    "ua": "Збирайте частинки, щоб скласти\n3D-картинку!"
+  },
+  "menu_00_txt": {
+    "en": "Collect New Pieces",
+    "ua": "Збирати нові частинки"
+  },
+  "menu_00_edge": {
+    "en": "Collect New Pieces",
+    "ua": "Збирати нові частинки"
+  },
+  "menu_01_txt": {
+    "en": " Exchange Play Coins",
+    "ua": " Обміняти ігрові монетки"
+  },
+  "menu_01_edge": {
+    "en": " Exchange Play Coins",
+    "ua": " Обміняти ігрові монетки"
+  },
+  "menu_02_txt": {
+    "en": "View Progress",
+    "ua": "Глянути поступ"
+  },
+  "menu_02_edge": {
+    "en": "View Progress",
+    "ua": "Глянути поступ"
+  },
+  "menu_03_txt": {
+    "en": "Back",
+    "ua": "Назад"
+  },
+  "menu_03_edge": {
+    "en": "Back",
+    "ua": "Назад"
+  },
+  "messageT_00": {
+    "en": "Met [1]!\r\n(From: [0])",
+    "ua": "Зустріч: [1]!\n(Звідки: [0])"
+  },
+  "messageT_01": {
+    "en": "Which panel do you want\r\nto take a piece from?",
+    "ua": "З якої панелі ви хочете\nузяти частинку?"
+  },
+  "nameT_metroid_u": {
+    "en": "Metroid: Other M",
+    "ua": "Metroid: Other M"
+  },
+  "nameT_m_k_u": {
+    "en": "Mario and Bowser",
+    "ua": "Маріо і Боузер"
+  },
+  "nameT_zelda_u": {
+    "en": "The Legend of Zelda",
+    "ua": "The Legend of Zelda"
+  },
+  "nameT_galaxy2_u": {
+    "en": "Super Mario Galaxy 2",
+    "ua": "Super Mario Galaxy 2"
+  },
+  "nameT_pikmin_u": {
+    "en": "Pikmin",
+    "ua": "Pikmin"
+  },
+  "nameT_kirby_u": {
+    "en": "Kirby",
+    "ua": "Kirby"
+  },
+  "nameT_newmario_u": {
+    "en": "New SUPER MARIO BROS. Wii",
+    "ua": "New SUPER MARIO BROS. Wii"
+  },
+  "nameT_donkeyreturn_u": {
+    "en": "Donkey Kong Country Returns",
+    "ua": "Donkey Kong Country Returns"
+  },
+  "nameT_starfox_u": {
+    "en": "Star Fox 64 3D",
+    "ua": "Star Fox 64 3D"
+  },
+  "nameT_zeldaocarina3d_u": {
+    "en": "The Legend of Zelda: Ocarina of Time 3D",
+    "ua": "The Legend of Zelda: Ocarina of Time 3D"
+  },
+  "nameT_mario3dland_u": {
+    "en": "SUPER MARIO 3D LAND",
+    "ua": "SUPER MARIO 3D LAND"
+  },
+  "nameT_mariocart7_u": {
+    "en": "Mario Kart 7",
+    "ua": "Mario Kart 7"
+  },
+  "nameT_rhythmheaven_u": {
+    "en": "Beat the Beat: Rhythm Paradise",
+    "ua": "Beat the Beat: Rhythm Paradise"
+  },
+  "nameT_pilotwings_u": {
+    "en": "Pilotwings Resort",
+    "ua": "Pilotwings Resort"
+  },
+  "nameT_dotmario_u": {
+    "en": "Pixel Mario",
+    "ua": "Піксель-Маріо"
+  },
+  "nothingT_no_piece_u": {
+    "en": "(None)",
+    "ua": "(Немає)"
+  },
+  "msg_panel_no_get_piece_u": {
+    "en": "There aren't any pieces that\r\nyou can take from this panel.",
+    "ua": "З цієї панелі немає частинок,\nякі ви могли б узяти."
+  },
+  "messageT_02": {
+    "en": "You chose a piece of the\r\n[0] panel!",
+    "ua": "Ви вибрали частинку\nпанелі «[0]»!"
+  },
+  "msg_panel_new_piece_u": {
+    "en": "You received a new puzzle piece!",
+    "ua": "Ви отримали нову частинку пазла!"
+  },
+  "msg_panel_choice_piece_u": {
+    "en": "The ? tiles represent pieces held by\r\nthe other player. Select one to take.",
+    "ua": "Плитки з «?» — частинки іншого\nгравця. Виберіть одну, щоб узяти."
+  },
+  "msg_panel_no_new_piece_u": {
+    "en": "It seems they don't have\r\nany new pieces for you.",
+    "ua": "Схоже, нових частинок\nдля вас у них немає."
+  },
+  "pieceT_00": {
+    "en": "New piece!",
+    "ua": "Нова частинка!"
+  },
+  "piece_sdwT_00": {
+    "en": "New piece!",
+    "ua": "Нова частинка!"
+  },
+  "pieceT_ef_00": {
+    "en": "New piece!",
+    "ua": "Нова частинка!"
+  },
+  "pieceT_01": {
+    "en": "New panel!",
+    "ua": "Нова панель!"
+  },
+  "piece_sdwT_01": {
+    "en": "New panel!",
+    "ua": "Нова панель!"
+  },
+  "pieceT_ef_01": {
+    "en": "New panel!",
+    "ua": "Нова панель!"
+  },
+  "pieceT_02": {
+    "en": "Panel complete!",
+    "ua": "Панель складено!"
+  },
+  "piece_sdwT_02": {
+    "en": "Panel complete!",
+    "ua": "Панель складено!"
+  },
+  "pieceT_ef_02": {
+    "en": "Panel complete!",
+    "ua": "Панель складено!"
+  },
+  "dialogue_txt": {
+    "en": "Oh... It seems you didn't meet\r\nanyone on the road this time.",
+    "ua": "Ой… Схоже, цього разу ви\nнікого не зустріли в дорозі."
+  },
+  "dialogue_txt_01": {
+    "en": "Try to meet as many Mii characters\r\nas you can using StreetPass!",
+    "ua": "Намагайтеся зустріти якомога\nбільше Mii через StreetPass!"
+  },
+  "dialogue_txt_02": {
+    "en": "Exchange  Play Coins\r\nfor pieces of panels\r\nyou've already started!",
+    "ua": "Міняйте  ігрові монетки\nна частинки вже початих\nпанелей!"
+  },
+  "dialogue_txt_03": {
+    "en": "You can exchange 2 Play Coins\r\nfor one piece of any panel\r\nthat you've already started.",
+    "ua": "За 2 ігрові монетки\nможна отримати одну частинку\nбудь-якої початої панелі."
+  },
+  "coin_01_txt": {
+    "en": "Use 2 Play Coins?",
+    "ua": "Витратити 2 ігрові монетки?"
+  },
+  "coin_00_txt": {
+    "en": " Exchange Play Coins",
+    "ua": " Обміняти ігрові монетки"
+  },
+  "coin_menu_00_txt": {
+    "en": "Use",
+    "ua": "Узяти"
+  },
+  "coin_menu_01_txt": {
+    "en": "Never mind",
+    "ua": "Не варто"
+  },
+  "dialogue_txt_05": {
+    "en": "Use more  Play Coins\r\nto get another piece?",
+    "ua": "Витратити ще  монеток\nі взяти ще одну частинку?"
+  },
+  "dialogue_txt_06": {
+    "en": "Sorry, it doesn't look like you\r\nhave enough  Play Coins.",
+    "ua": "На жаль, у вас бракує\n ігрових монеток."
+  },
+  "dialogue_txt_07": {
+    "en": "You've placed all the pieces you\r\ncan get using  Play Coins.",
+    "ua": "Ви поставили всі частинки, які\nможна\nотримати за  ігрові монетки."
+  },
+  "dialogue_txt_08": {
+    "en": "Use StreetPass to get\r\nthe remaining pieces!",
+    "ua": "Решту частинок здобувайте\nчерез StreetPass!"
+  },
+  "dialogue_txt_09": {
+    "en": "Pink pieces are special. You can't\r\nget them using  Play Coins!",
+    "ua": "Рожеві частинки особливі. Їх\nне здобути за  ігрові монетки!"
+  },
+  "messageT_03": {
+    "en": "Got a special puzzle piece for\r\n[0]!",
+    "ua": "Отримано особливу частинку\nпазла для [0]!"
+  },
+  "dlg_panel_newpanel_op_01_u": {
+    "en": "There's a new bonus for\r\nusing SpotPass.",
+    "ua": "Для SpotPass є\nновий бонус."
+  },
+  "dlg_panel_newpanel_op_02_u": {
+    "en": "Now, by activating SpotPass, you\r\ncan get new Puzzle Swap panels!",
+    "ua": "Тепер зі SpotPass ви можете\nотримувати нові панелі пазлів!"
+  },
+  "dlg_panel_newpanel_op_03_u": {
+    "en": "There'll be panels broken up\r\ninto even smaller pieces,",
+    "ua": "Будуть панелі, поділені\nна ще дрібніші частинки,"
+  },
+  "dlg_panel_newpanel_op_04_u": {
+    "en": "pink pieces you can't get using\r\n Play Coins, and more!",
+    "ua": "рожеві частинки, яких не купиш\nза  ігрові монетки, і не тільки!"
+  },
+  "dlg_panel_newpanel_op_05_u": {
+    "en": "These panels will be even more\r\nof a challenge than the originals.",
+    "ua": "Ці панелі складніші\nза початкові."
+  },
+  "dlg_panel_newpanel_op_06_u": {
+    "en": "Here's a little something from one\r\nof the new panels to celebrate.",
+    "ua": "З цієї нагоди — маленький\nподарунок\nз однієї з нових панелей."
+  },
+  "dlg_panel_v2_ce_00_u": {
+    "en": "This is a new panel that\r\nyou can't see yet.",
+    "ua": "Це нова панель, якої ви\nще не бачите."
+  },
+  "dlg_panel_v2_ce_01_u": {
+    "en": "It'll become available only\r\nif you use SpotPass!",
+    "ua": "Вона стане доступною\nлише зі SpotPass!"
+  },
+  "dlg_3018panel_coinpanel_full_01": {
+    "en": "Pieces from panels with a big ? on them\r\ncan't be collected using  Play Coins.",
+    "ua": "Частинки панелей із великим «?»\nне можна отримати за монетки ."
+  },
+  "dlg_3018panel_coinpanel_full_02": {
+    "en": "You'll need to use\r\nStreetPass to get them!",
+    "ua": "Їх треба здобувати\nчерез StreetPass!"
+  },
+  "result_00_txt": {
+    "en": "Current Results",
+    "ua": "Проміжний результат"
+  },
+  "result_01_txt": {
+    "en": "Travellers Met",
+    "ua": "Мандрівників"
+  },
+  "result_03_txt": {
+    "en": "New Pieces",
+    "ua": "Нові частинки"
+  },
+  "dlg_1panel_comp_u": {
+    "en": "Panel complete!\r\nCheck it out using the\r\nView Progress option!",
+    "ua": "Панель складено!\nПогляньте на неї через\n«Глянути поступ»!"
+  },
+  "dlg_panel_no_new_u": {
+    "en": "You can't get any more pieces\r\nwithout a new panel.",
+    "ua": "Без нової панелі більше\nчастинок не отримати."
+  },
+  "dlg_panel_comp_u": {
+    "en": "Congratulations!\r\nYou have collected all the pieces!",
+    "ua": "Вітаємо!\nВи зібрали всі частинки!"
+  },
+  "dlg_panel_op_01_u": {
+    "en": "Ready to try Puzzle Swap?",
+    "ua": "Готові спробувати «Збери пазл»?"
+  },
+  "dlg_panel_op_02_u": {
+    "en": "In this game, you collect\r\npuzzle pieces using StreetPass,",
+    "ua": "У цій грі ви збираєте частинки\nпазлів через StreetPass"
+  },
+  "dlg_panel_op_03_u": {
+    "en": "and use them to complete\r\npicture panels.",
+    "ua": "і складаєте з них\nкартини-панелі."
+  },
+  "dlg_panel_op_04_u": {
+    "en": "Bet you want to check\r\nthem out, don't you?",
+    "ua": "Певно, вам кортить\nна них глянути?"
+  },
+  "dlg_panel_op_05_u": {
+    "en": "Would you like to\r\nstart Puzzle Swap?",
+    "ua": "Розпочати\n«Збери пазл»?"
+  },
+  "dlg_panel_op_06_u": {
+    "en": "Well, be sure to come back to this\r\nlater when you're ready to play!",
+    "ua": "Тоді заходьте сюди пізніше,\nколи будете готові грати!"
+  },
+  "dlg_panel_op_07_u": {
+    "en": "Well, let's get you started...",
+    "ua": "Що ж, почнімо…"
+  },
+  "dlg_panel_op_08_u": {
+    "en": "Here's a puzzle piece!",
+    "ua": "Ось вам частинка пазла!"
+  },
+  "dlg_panel_op_09_u": {
+    "en": "This game uses your plaza's most\r\nrecent arrivals from StreetPass.",
+    "ua": "У грі беруть участь ті, хто щойно\nприйшов через StreetPass."
+  },
+  "dlg_panel_op_10_u": {
+    "en": "They'll show up as fellow travellers\r\nwho give you puzzle pieces!",
+    "ua": "Вони приходять як мандрівники\nй дарують вам частинки пазлів!"
+  },
+  "dlg_panel_op_11_u": {
+    "en": "Don't forget to check\r\nback regularly!",
+    "ua": "Не забувайте регулярно\nсюди заглядати!"
+  },
+  "dlg_panel_op_12_u": {
+    "en": "Panels you complete will turn into\r\na 3D image you can move around!",
+    "ua": "Складені панелі стають картинами,\nякі можна крутити в 3D!"
+  },
+  "dlg_panel_plus_op_04_u": {
+    "en": "New panels have arrived\r\nthrough SpotPass!",
+    "ua": "Через SpotPass надійшли\nнові панелі!"
+  },
+  "dlg_panel_plus_op_05_u": {
+    "en": "Now for a little something to get\r\nyou started on this panel...",
+    "ua": "А ось дещо, щоб ви почали\nскладати цю панель…"
+  },
+  "dlg_panel_plus_spotpassget_01_u": {
+    "en": "Here's some\r\nSpotPass-related news!",
+    "ua": "Ось новина\nпро SpotPass!"
+  },
+  "dlg_panel_plus_spotpassget_02_u": {
+    "en": "A new panel is now available\r\nthrough SpotPass!",
+    "ua": "Через SpotPass з'явилася\nнова панель!"
+  },
+  "dlg_panel_plus_spotpassget_03_u": {
+    "en": "We'll give you one of the\r\npieces to start you off!",
+    "ua": "Для початку даруємо\nвам одну частинку!"
+  },
+  "dlg_panel_plus_spotpassget_04_u": {
+    "en": "You can now get new panels\r\nthrough SpotPass!",
+    "ua": "Тепер ви можете отримувати\nнові\nпанелі через SpotPass!"
+  },
+  "dlg_panel_plus_spotpassget_05_u": {
+    "en": "To mark the occasion, how about a\r\nlittle something from a new panel?",
+    "ua": "З цієї нагоди — маленький\nподарунок\nз нової панелі, згода?"
+  },
+  "dlg_panel_plus_spotpassget_06_u": {
+    "en": "And another thing!",
+    "ua": "І ще одне!"
+  },
+  "dlg_choice_begin_u": {
+    "en": "Start",
+    "ua": "Почати"
+  },
+  "dlg_choice_not_begin_u": {
+    "en": "Don't Start",
+    "ua": "Не починати"
+  },
+  "cap_piece": {
+    "en": "Puzzle Swap",
+    "ua": "Збери пазл"
+  },
+  "dlg_choice_exp_coin_u": {
+    "en": "Tell me!",
+    "ua": "Розкажіть!"
+  },
+  "dlg_choice_not_exp_coin_u": {
+    "en": "No thanks",
+    "ua": "Не варто"
+  },
+  "dlg_coin_exp_piece_00_u": {
+    "en": "Want to know what\r\n Play Coins are?",
+    "ua": "Хочете дізнатися, що таке\n ігрові монетки?"
+  },
+  "dlg_coin_exp_piece_01_u": {
+    "en": " Play Coins are special coins.",
+    "ua": " Ігрові монетки — особливі\nмонетки."
+  },
+  "dlg_coin_exp_piece_02_u": {
+    "en": "You can use them in all kinds\r\nof different games.",
+    "ua": "Їх можна витрачати\nу різних іграх."
+  },
+  "dlg_coin_exp_03_u": {
+    "en": "Just put your system into\r\nSleep Mode, and take it with\r\nyou whenever you go for a walk.",
+    "ua": "Просто переведіть систему\nв режим сну й беріть її\nз собою на прогулянки."
+  },
+  "dlg_coin_exp_piece_04_u": {
+    "en": "You can get up to\r\n10 Play Coins in a day.",
+    "ua": "За день можна отримати\nдо 10 монеток ."
+  },
+  "dlg_coin_exp_piece_05_u": {
+    "en": "Take your system with\r\nyou whenever you can!",
+    "ua": "Беріть систему з собою\nякомога частіше!"
+  },
+  "zoom_info": {
+    "en": " Zoom",
+    "ua": " Масштаб"
+  },
+  "dlg_slideshow_op_01_u": {
+    "en": "Welcome to the slideshow!",
+    "ua": "Вітаємо у слайд-шоу!"
+  },
+  "dlg_slideshow_op_02_u": {
+    "en": "If you've completed any\r\nPuzzle Swap panels...",
+    "ua": "Якщо ви склали хоч одну\nпанель у «Збери пазл»…"
+  },
+  "dlg_slideshow_op_03_u": {
+    "en": "you can view them one\r\nafter another here!",
+    "ua": "тут їх можна переглянути\nодну за одною!"
+  },
+  "dlg_slideshow_op_04_u": {
+    "en": "Move the panels around and\r\nenjoy them in full 3D!",
+    "ua": "Повертайте панелі\nй милуйтеся\nними в повному 3D!"
+  },
+  "bonus_occurrence": {
+    "en": "Bonus Chance!",
+    "ua": "Бонусний шанс!"
+  },
+  "bonus_numT": {
+    "en": "You got [0] pieces!",
+    "ua": "Отримано частинок: [0]!"
+  },
+  "bonus_num_sdwT": {
+    "en": "You got [0] pieces!",
+    "ua": "Отримано частинок: [0]!"
+  }
+}

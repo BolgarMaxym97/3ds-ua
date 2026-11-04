@@ -1,0 +1,2830 @@
+{
+  "game_money_capT_00": {
+    "en": "Funds:",
+    "ua": "Кошти:"
+  },
+  "game_moneyT_01": {
+    "en": "[0]G",
+    "ua": "[0] G"
+  },
+  "game_telopT_00": {
+    "en": "Trading open!",
+    "ua": "Торги відкрито!"
+  },
+  "game_telopT_01": {
+    "en": "Trading closed!",
+    "ua": "Торги закрито!"
+  },
+  "game_stock_pl_capT": {
+    "en": "Profit/Loss",
+    "ua": "Приб./збит."
+  },
+  "game_stock_pl_00": {
+    "en": "[0]G",
+    "ua": "[0] G"
+  },
+  "game_stock_pl_01": {
+    "en": "[0]G",
+    "ua": "[0] G"
+  },
+  "game_buy_buttonT_00": {
+    "en": "\r\nBuy",
+    "ua": "\nКупити"
+  },
+  "game_sell_buttonT_00": {
+    "en": "\r\nSell",
+    "ua": "\nПродаж"
+  },
+  "game_scoreboardT": {
+    "en": "[0]G",
+    "ua": "[0] G"
+  },
+  "game_scoreboard_capT_buy": {
+    "en": "Buy",
+    "ua": "Купівля"
+  },
+  "game_scoreboard_capT_sell": {
+    "en": "Sell",
+    "ua": "Продаж"
+  },
+  "sell_capT": {
+    "en": "Portfolio",
+    "ua": "Портфель"
+  },
+  "pause_titleT": {
+    "en": "Paused",
+    "ua": "Пауза"
+  },
+  "pause_brand_capT": {
+    "en": "Currently trading:",
+    "ua": "Зараз торгується:"
+  },
+  "pause_pl_capT": {
+    "en": "Current Profit",
+    "ua": "Прибуток зараз"
+  },
+  "pause_plT": {
+    "en": "[0]G",
+    "ua": "[0] G"
+  },
+  "pause_asset_capT": {
+    "en": "Total Assets",
+    "ua": "Усього активів"
+  },
+  "pause_assetT": {
+    "en": "[0]G",
+    "ua": "[0] G"
+  },
+  "pause_info_button_choice_00": {
+    "en": "Continue",
+    "ua": "Далі"
+  },
+  "pause_info_button_choice_01": {
+    "en": "Quit Game",
+    "ua": "Вийти з гри"
+  },
+  "pause_title_confirmT": {
+    "en": "Confirm",
+    "ua": "Підтвердження"
+  },
+  "pause_warningT": {
+    "en": "If you quit, the Mii analysts\r\nin this session will leave.",
+    "ua": "Якщо вийти, Mii-аналітики\nцього сеансу підуть."
+  },
+  "pause_warning_smallT": {
+    "en": "[System:Color name=\"mgTrd_red\" ]Stock prices and your funds will reset to\r\nwhat they were before trading opened today.[/System:Color]",
+    "ua": "[System:Color name=\"mgTrd_red\" ]Ціни акцій і ваші кошти повернуться до\nстану перед сьогоднішнім відкриттям торгів.[/System:Color]"
+  },
+  "pause_info_button_choice_02": {
+    "en": "Quit!",
+    "ua": "Вийти!"
+  },
+  "pause_info_button_choice_03": {
+    "en": "Continue",
+    "ua": "Продовжити"
+  },
+  "pause_brandT_01": {
+    "en": "Quit the Day Trading Tutorial?",
+    "ua": "Вийти з навчання денної торгівлі?"
+  },
+  "pause_info_button_choice_04": {
+    "en": "Continue",
+    "ua": "Далі"
+  },
+  "pause_info_button_choice_05": {
+    "en": "Quit",
+    "ua": "Вийти"
+  },
+  "result_result_capT": {
+    "en": "◆　Day Trade Results　◆",
+    "ua": "◆　Підсумки дня　◆"
+  },
+  "result_result_capT_00": {
+    "en": "◆　Investment Results　◆",
+    "ua": "◆　Підсумки інвестицій　◆"
+  },
+  "result_pl_capT": {
+    "en": "Total profit/loss from this session:",
+    "ua": "Прибуток/збиток за сеанс:"
+  },
+  "result_plT": {
+    "en": "[0]G",
+    "ua": "[0] G"
+  },
+  "result_total_ast_capT": {
+    "en": "Total assets:",
+    "ua": "Усього активів:"
+  },
+  "result_total_astT": {
+    "en": "[0]G",
+    "ua": "[0] G"
+  },
+  "result_stock_capT": {
+    "en": "Value of currently-held stock:",
+    "ua": "Вартість акцій у портфелі:"
+  },
+  "result_stock_numT": {
+    "en": "[0]G",
+    "ua": "[0] G"
+  },
+  "result_daytrade_capT": {
+    "en": "Profit/loss from trading:",
+    "ua": "Прибуток/збиток від торгів:"
+  },
+  "result_daytrade_numT": {
+    "en": "[0]G",
+    "ua": "[0] G"
+  },
+  "result_per_t_mesT": {
+    "en": "That's an average of",
+    "ua": "У середньому це"
+  },
+  "result_per_sec_numT": {
+    "en": "[0]G",
+    "ua": "[0] G"
+  },
+  "result_per_b_mesT": {
+    "en": "earned per second!",
+    "ua": "заробітку за секунду!"
+  },
+  "result_per_b_mesT_00": {
+    "en": "lost per second...",
+    "ua": "втрат за секунду…"
+  },
+  "result_invest_stockT": {
+    "en": "[0] shares",
+    "ua": "[0] акц."
+  },
+  "result_invest_plT": {
+    "en": "[0]G",
+    "ua": "[0] G"
+  },
+  "result_invest_changeT": {
+    "en": "Trend",
+    "ua": "Тренд"
+  },
+  "result_chart_capT": {
+    "en": "Session Chart",
+    "ua": "Графік сеансу"
+  },
+  "result_buy_markT": {
+    "en": "Bought",
+    "ua": "Куплено"
+  },
+  "result_sell_markT": {
+    "en": "Sold",
+    "ua": "Продано"
+  },
+  "result_open_rateT": {
+    "en": "[0]G",
+    "ua": "[0] G"
+  },
+  "result_close_rateT": {
+    "en": "[0]G",
+    "ua": "[0] G"
+  },
+  "result_trader_rankT_00": {
+    "en": "Amateur Trader",
+    "ua": "Трейдер-аматор"
+  },
+  "result_trader_rankT_01": {
+    "en": "Competent Trader",
+    "ua": "Вправний трейдер"
+  },
+  "result_trader_rankT_02": {
+    "en": "Talented Trader",
+    "ua": "Трейдер-талант"
+  },
+  "result_trader_rankT_03": {
+    "en": "Ace Trader",
+    "ua": "Трейдер-ас"
+  },
+  "result_message_title_bonus_00": {
+    "en": "Bonus Earned",
+    "ua": "Бонус здобуто"
+  },
+  "result_message_bonus_00": {
+    "en": "You got a bonus!\r\n\"[0]\"",
+    "ua": "Ви отримали бонус!\n«[0]»"
+  },
+  "result_message_bonus_item": {
+    "en": "You got a gift!",
+    "ua": "Ви отримали подарунок!"
+  },
+  "result_unitT": {
+    "en": "Shares per unit increased!",
+    "ua": "Більше акцій у лоті!"
+  },
+  "result_unit": {
+    "en": "The number of shares per unit of\r\n[0] stock has increased!\r\n\r\n[2] shares  [3] shares",
+    "ua": "Кількість акцій у лоті\n«[0]» збільшилася!\n\n[2] акц.  [3] акц."
+  },
+  "result_unit_max": {
+    "en": "The number of shares per unit of\r\n[0] stock has increased!\r\nThis is the [System:Color name=\"mgTrd_red\" ]maximum [/System:Color]number of shares per unit.\r\n[2] shares  [System:Color name=\"mgTrd_red\" ][3] shares[/System:Color]",
+    "ua": "Кількість акцій у лоті\n«[0]» збільшилася!\nЦе [System:Color name=\"mgTrd_red\" ]максимальна [/System:Color]кількість акцій у лоті.\n[2] акц.  [System:Color name=\"mgTrd_red\" ][3] акц.[/System:Color]"
+  },
+  "result_message_title_news": {
+    "en": "Shop News",
+    "ua": "Новини магазину"
+  },
+  "result_message_news": {
+    "en": "New merchandise is\r\navailable in the shop!",
+    "ua": "У магазині з'явилися\nнові товари!"
+  },
+  "result_message_newT": {
+    "en": "New!",
+    "ua": "Нове!"
+  },
+  "result_money_room_total_ast_capT": {
+    "en": "Your total assets:",
+    "ua": "Ваші активи:"
+  },
+  "result_money_room_total_astT": {
+    "en": "[0]G",
+    "ua": "[0] G"
+  },
+  "result_money_room_restT": {
+    "en": "[System:Color name=\"mgTrd_l_blue\" ][1]G[/System:Color] to go until [0]G",
+    "ua": "До [0] G лишилося [System:Color name=\"mgTrd_l_blue\" ][1] G[/System:Color]"
+  },
+  "result_money_room_goal": {
+    "en": "Congratulations!\r\nYou've reached 100 million G!",
+    "ua": "Вітаємо!\nВи досягли 100 мільйонів G!"
+  },
+  "result_money_room_goal_00": {
+    "en": "Congratulations!\r\nYou've reached 10 billion G!",
+    "ua": "Вітаємо!\nВи досягли 10 мільярдів G!"
+  },
+  "result_money_room_goal_01": {
+    "en": "Your total assets are\r\nworth 10 million G!",
+    "ua": "Ваші активи сягнули\n10 мільйонів G!"
+  },
+  "result_money_room_goal_02": {
+    "en": "Your total assets are\r\nworth 50 million G!",
+    "ua": "Ваші активи сягнули\n50 мільйонів G!"
+  },
+  "result_rankT_00": {
+    "en": "Your rank for this session was...",
+    "ua": "Ваш ранг за цей сеанс…"
+  },
+  "company_00": {
+    "en": "Kingfinder Studios",
+    "ua": "Студія «Королешук»"
+  },
+  "company_01": {
+    "en": "Piece-by-Piece Deliveries",
+    "ua": "Доставка «Шматочок»"
+  },
+  "company_02": {
+    "en": "Conqueror Construction",
+    "ua": "«Завойовник-Буд»"
+  },
+  "company_03": {
+    "en": "Leisura Aerospace",
+    "ua": "Аерокосмос «Дозвілля»"
+  },
+  "company_04": {
+    "en": "Sparkleseed Landscaping",
+    "ua": "Ландшафти «Іскринка»"
+  },
+  "company_05": {
+    "en": "Arzodius Research Labs",
+    "ua": "Лабораторії «Арзодіус»"
+  },
+  "company_06": {
+    "en": "Poseidon Island Fisheries",
+    "ua": "Промисли «Посейдон»"
+  },
+  "company_07": {
+    "en": "Hobbiville Pharmaceuticals",
+    "ua": "Фармація «Хобівіль»"
+  },
+  "news_up_00": {
+    "en": "Performance up!",
+    "ua": "Показники ростуть!"
+  },
+  "news_up_01": {
+    "en": "New product released!",
+    "ua": "Новий продукт!"
+  },
+  "news_down_00": {
+    "en": "Performance down!",
+    "ua": "Показники падають!"
+  },
+  "play_smile_00": {
+    "en": "Rise!",
+    "ua": "Ріст!"
+  },
+  "play_smile_01": {
+    "en": "Going\r\nup!",
+    "ua": "Іде\nвгору!"
+  },
+  "play_smile_02": {
+    "en": "Increase!",
+    "ua": "Зростання!"
+  },
+  "play_smile_03": {
+    "en": "Going up\r\nin [0]!",
+    "ua": "Ріст\nчерез [0]!"
+  },
+  "play_smile_04": {
+    "en": "Rise coming\r\nin [0]!",
+    "ua": "Зросте\nчерез [0]!"
+  },
+  "play_happy_00": {
+    "en": "Sharp rise\r\nin [0]!",
+    "ua": "Стрибок\nчерез [0]!"
+  },
+  "play_happy_01": {
+    "en": "Sharp\r\nincrease!",
+    "ua": "Різкий\nріст!"
+  },
+  "play_sleep_00": {
+    "en": "Going\r\ndown!",
+    "ua": "Іде\nвниз!"
+  },
+  "play_sleep_01": {
+    "en": "Decrease!",
+    "ua": "Спад!"
+  },
+  "play_sleep_02": {
+    "en": "Drop!",
+    "ua": "Падіння!"
+  },
+  "play_sleep_03": {
+    "en": "Dropping\r\nin [0]!",
+    "ua": "Спад\nчерез [0]!"
+  },
+  "play_sleep_04": {
+    "en": "Drop\r\nin [0]!",
+    "ua": "Падіння\nчерез [0]!"
+  },
+  "play_sorrow_00": {
+    "en": "Sharp drop\r\nin [0]!",
+    "ua": "Обвал\nчерез [0]!"
+  },
+  "play_sorrow_01": {
+    "en": "Sharp\r\nfall!",
+    "ua": "Різке\nпадіння!"
+  },
+  "play_normal_up_00": {
+    "en": "Topped\r\nout!",
+    "ua": "Пік\nдосягнуто!"
+  },
+  "play_normal_up_01": {
+    "en": "Topping\r\nout in [0]!",
+    "ua": "Пік\nчерез [0]!"
+  },
+  "play_normal_down_00": {
+    "en": "Bottomed\r\nout!",
+    "ua": "На\nдні!"
+  },
+  "play_normal_down_01": {
+    "en": "Bottoming\r\nout in [0]!",
+    "ua": "Дно\nчерез [0]!"
+  },
+  "play_surprise_up_00": {
+    "en": "Good news!",
+    "ua": "Добрі новини!"
+  },
+  "play_surprise_up_01": {
+    "en": "Good news\r\nin [0]!",
+    "ua": "Добрі новини\nчерез [0]!"
+  },
+  "play_surprise_up_02": {
+    "en": "Positive\r\nnews!",
+    "ua": "Позитивні\nновини!"
+  },
+  "play_surprise_up_03": {
+    "en": "Great news\r\nincoming!",
+    "ua": "Чудові новини\nнадходять!"
+  },
+  "play_surprise_down_00": {
+    "en": "Bad news",
+    "ua": "Погані новини"
+  },
+  "play_surprise_down_01": {
+    "en": "Bad news\r\nin [0].",
+    "ua": "Погані новини\nчерез [0]."
+  },
+  "play_surprise_down_02": {
+    "en": "Negative\r\nreports",
+    "ua": "Негативні\nзвіти"
+  },
+  "play_surprise_down_03": {
+    "en": "Bad press\r\nincoming...",
+    "ua": "Погана преса\nнадходить…"
+  },
+  "play_talk_00": {
+    "en": "Might\r\ngo up?",
+    "ua": "Може\nзрости?"
+  },
+  "play_talk_01": {
+    "en": "Might go\r\ndown?",
+    "ua": "Може\nвпасти?"
+  },
+  "play_talk_02": {
+    "en": "Could\r\ngo up?",
+    "ua": "Зросте,\nмабуть?"
+  },
+  "play_talk_03": {
+    "en": "Could go\r\ndown?",
+    "ua": "Впаде,\nмабуть?"
+  },
+  "play_talk_04": {
+    "en": "A rise?",
+    "ua": "Ріст?"
+  },
+  "play_talk_05": {
+    "en": "A drop?",
+    "ua": "Спад?"
+  },
+  "play_talk_06": {
+    "en": "Might\r\nrise...",
+    "ua": "Може\nзрости…"
+  },
+  "play_talk_07": {
+    "en": "Might\r\ndrop...",
+    "ua": "Може\nвпасти…"
+  },
+  "play_news_up_down_00": {
+    "en": "Breaking news!",
+    "ua": "Терміново!"
+  },
+  "play_talk_smile_00": {
+    "en": "Going up?",
+    "ua": "Вгору?"
+  },
+  "play_talk_smile_01": {
+    "en": "Rise?",
+    "ua": "Ріст?"
+  },
+  "play_talk_happy_00": {
+    "en": "Sharp\r\nrise?",
+    "ua": "Різкий\nріст?"
+  },
+  "play_talk_happy_01": {
+    "en": "Sharp\r\nincrease?",
+    "ua": "Стрибок\nвгору?"
+  },
+  "play_talk_sleep_00": {
+    "en": "Going\r\ndown?",
+    "ua": "Вниз?"
+  },
+  "play_talk_sleep_01": {
+    "en": "Drop?",
+    "ua": "Спад?"
+  },
+  "play_talk_sorrow_00": {
+    "en": "Sharp\r\ndrop?",
+    "ua": "Різкий\nспад?"
+  },
+  "play_talk_sorrow_01": {
+    "en": "Sharp\r\nfall?",
+    "ua": "Різке\nпадіння?"
+  },
+  "play_talk_surprise_up_00": {
+    "en": "Good\r\nnews?",
+    "ua": "Добрі\nновини?"
+  },
+  "play_talk_surprise_up_01": {
+    "en": "Good\r\nreport?",
+    "ua": "Добрий\nзвіт?"
+  },
+  "play_talk_surprise_down_00": {
+    "en": "Bad\r\nnews?",
+    "ua": "Погані\nновини?"
+  },
+  "play_talk_surprise_down_01": {
+    "en": "Bad\r\nreport?",
+    "ua": "Поганий\nзвіт?"
+  },
+  "title_logoT": {
+    "en": "StreetPass Trader",
+    "ua": "Біржа StreetPass"
+  },
+  "title_logo_sdwT": {
+    "en": "StreetPass Trader",
+    "ua": "Біржа StreetPass"
+  },
+  "title_copyrightT": {
+    "en": "©2016 Nintendo  Developed by Good-Feel",
+    "ua": "©2016 Nintendo  Розробник: Good-Feel"
+  },
+  "title_pressT": {
+    "en": "PRESS ",
+    "ua": "НАТИСНІТЬ "
+  },
+  "title_textT": {
+    "en": "Make a fortune in trading stocks, with a\r\nlittle advice from your StreetPass encounters!",
+    "ua": "Розбагатійте на торгівлі акціями з невеликою\nдопомогою зустрічей StreetPass!"
+  },
+  "title_textT_main_00": {
+    "en": "Head to the trading floor to buy and sell stocks.",
+    "ua": "Ідіть на біржу купувати й продавати акції."
+  },
+  "title_textT_main_01": {
+    "en": "View your records and achievements, a glossary\r\nof trading-related terms and more.",
+    "ua": "Записи й досягнення, словник\nбіржових термінів тощо."
+  },
+  "title_textT_main_02": {
+    "en": "Buy and sell collectible items, or just\r\nview the items you've already collected.",
+    "ua": "Купуйте й продавайте колекційні предмети\nабо переглядайте зібрані."
+  },
+  "title_textT_main_03": {
+    "en": "Quit the game and\r\nreturn to the plaza.",
+    "ua": "Вийти з гри й\nповернутися на площу."
+  },
+  "title_textT_main_03_sub": {
+    "en": "Return to the main menu.",
+    "ua": "У головне меню."
+  },
+  "title_textT_main_04": {
+    "en": "View records of your trading history,\r\nor compare your stats to other top traders.",
+    "ua": "Історія торгів і порівняння\nз найкращими трейдерами."
+  },
+  "title_textT_main_05": {
+    "en": "View your earned and available bonuses.",
+    "ua": "Перегляньте здобуті й доступні бонуси."
+  },
+  "title_textT_main_06": {
+    "en": "View the merchandise you own.",
+    "ua": "Перегляньте свої товари."
+  },
+  "title_textT_main_07": {
+    "en": "Buy and sell merchandise from\r\nthe companies in the game.",
+    "ua": "Купуйте й продавайте товари\nкомпаній із гри."
+  },
+  "title_textT_main_08": {
+    "en": "Use  Play Coins to hire analysts.",
+    "ua": "Наймайте аналітиків за монетки ."
+  },
+  "title_textT_main_09": {
+    "en": "View explanations of various trading terms.",
+    "ua": "Пояснення біржових термінів."
+  },
+  "title_textT_main_lock": {
+    "en": "You can't select this yet.",
+    "ua": "Це поки не можна вибрати."
+  },
+  "title_exit": {
+    "en": "Warning",
+    "ua": "Увага"
+  },
+  "title_exit_attention_00": {
+    "en": "If you return to the plaza, the analyst you\r\nhired with  Play Coins will leave.",
+    "ua": "Якщо повернутися на площу, аналітик,\nнайнятий за монетки , піде."
+  },
+  "title_exit_attention_01": {
+    "en": "If you return to the plaza, the analysts you\r\nhired with  Play Coins will leave.",
+    "ua": "Якщо повернутися на площу, аналітики,\nнайняті за монетки , підуть."
+  },
+  "title_exit_attention_02": {
+    "en": "Return to the plaza anyway?",
+    "ua": "Усе одно повернутися на площу?"
+  },
+  "title_button_choice_00": {
+    "en": "Yes",
+    "ua": "Так"
+  },
+  "title_button_choice_01": {
+    "en": "Not yet",
+    "ua": "Ще ні"
+  },
+  "menu_main_00": {
+    "en": "Trade",
+    "ua": "Торгувати"
+  },
+  "menu_main_01": {
+    "en": "Records Room",
+    "ua": "Архів"
+  },
+  "menu_main_02": {
+    "en": "Merchandise Centre",
+    "ua": "Торговий центр"
+  },
+  "menu_main_03": {
+    "en": "Back",
+    "ua": "Назад"
+  },
+  "menu_main_04": {
+    "en": "Financial Records",
+    "ua": "Фінансові записи"
+  },
+  "menu_main_05": {
+    "en": "Bonuses",
+    "ua": "Бонуси"
+  },
+  "menu_main_06": {
+    "en": "Showroom",
+    "ua": "Шоурум"
+  },
+  "menu_main_07": {
+    "en": "Shop",
+    "ua": "Магазин"
+  },
+  "menu_main_08": {
+    "en": " Hire Analysts",
+    "ua": " Найняти аналітиків"
+  },
+  "menu_main_09": {
+    "en": "Trader Dictionary",
+    "ua": "Словник трейдера"
+  },
+  "text_button_invest": {
+    "en": "Edit Portfolio",
+    "ua": "Змінити портфель"
+  },
+  "text_button_daytrade": {
+    "en": "Day Trade",
+    "ua": "Денна торгівля"
+  },
+  "text_button_tutorial": {
+    "en": "Day Trade Tutorial",
+    "ua": "Навчання"
+  },
+  "employ_title_00": {
+    "en": "Hire Analysts",
+    "ua": "Найняти аналітиків"
+  },
+  "employ_info_00": {
+    "en": "Hire an analyst for\r\n[0] Play Coins.",
+    "ua": "Найняти аналітика\nза [0] монеток."
+  },
+  "employ_info_01": {
+    "en": "Hire [1] analysts for\r\n[0] Play Coins.",
+    "ua": "Найняти аналітиків ([1])\nза [0] монеток."
+  },
+  "employ_info_02": {
+    "en": "Return to the main menu.",
+    "ua": "У головне меню."
+  },
+  "employ_info_03": {
+    "en": "You hired an analyst!",
+    "ua": "Ви найняли аналітика!"
+  },
+  "employ_info_04": {
+    "en": "You hired [0] analysts!",
+    "ua": "Найнято аналітиків: [0]!"
+  },
+  "employ_info_05": {
+    "en": "[System:Color name=\"mgTrd_red\" ]You don't have enough  Play Coins![/System:Color]\r\nYou can hire an analyst for [0] Play Coins.",
+    "ua": "[System:Color name=\"mgTrd_red\" ]Бракує монеток ![/System:Color]\nАналітика можна найняти за [0] монеток."
+  },
+  "employ_info_06": {
+    "en": "You've got plenty of analysts!\r\nTime to go and [System:Color name=\"mgTrd_red\" ]Trade[/System:Color]!",
+    "ua": "Аналітиків удосталь!\nЧас [System:Color name=\"mgTrd_red\" ]торгувати[/System:Color]!"
+  },
+  "employ_info_07": {
+    "en": "Cancel hiring process.",
+    "ua": "Скасувати найм."
+  },
+  "employ_info_08": {
+    "en": "You can now go ahead and [System:Color name=\"mgTrd_red\" ]Trade[/System:Color]!",
+    "ua": "Тепер можна [System:Color name=\"mgTrd_red\" ]торгувати[/System:Color]!"
+  },
+  "employ_info_button_choice_00": {
+    "en": "Hire",
+    "ua": "Найняти"
+  },
+  "employ_info_button_choice_01": {
+    "en": "Hire as many as possible",
+    "ua": "Найняти якомога більше"
+  },
+  "employ_info_button_choice_02": {
+    "en": "Cancel",
+    "ua": "Назад"
+  },
+  "employ_gamecoin_capT": {
+    "en": " Play Coins",
+    "ua": "Монетки "
+  },
+  "employ_mii_num_capT": {
+    "en": "Total Analysts",
+    "ua": "Усього аналітиків"
+  },
+  "select_brand_menu_capT": {
+    "en": "◆ Trade ◆",
+    "ua": "◆ Торги ◆"
+  },
+  "select_brand_select_noteT": {
+    "en": " View analyst profiles",
+    "ua": " Профілі аналітиків"
+  },
+  "select_brand_explain_capT": {
+    "en": "Day Trade",
+    "ua": "Денна торгівля"
+  },
+  "select_brand_explainT": {
+    "en": "Listen to analyst predictions and trade\r\nshares as prices constantly fluctuate.",
+    "ua": "Слухайте прогнози аналітиків і торгуйте\nакціями, поки ціни постійно змінюються."
+  },
+  "select_brand_explain_capT_00": {
+    "en": "Edit Portfolio",
+    "ua": "Змінити портфель"
+  },
+  "select_brand_explainT_00": {
+    "en": "Buy and sell shares at the last closing\r\nprice. (Prices won't fluctuate until you\r\nbegin day trading.)",
+    "ua": "Купуйте й продавайте за ціною закриття.\n(Ціни не змінюються до початку\nденної торгівлі.)"
+  },
+  "select_brand_absence_capT": {
+    "en": "Day Trade",
+    "ua": "Денна торгівля"
+  },
+  "select_brand_absenceT": {
+    "en": "Trading is closed!\r\nUse [System:Color name=\"mgTrd_red\" ]StreetPass[/System:Color] or [System:Color name=\"mgTrd_red\" ] Play Coins[/System:Color]\r\nto gather analysts and trade again.",
+    "ua": "Торги закрито!\nЗбирайте аналітиків через [System:Color name=\"mgTrd_red\" ]StreetPass[/System:Color] або\nза [System:Color name=\"mgTrd_red\" ]монетки [/System:Color], щоб торгувати знову."
+  },
+  "select_brand_explainT_00_lock": {
+    "en": "You can't select this yet.",
+    "ua": "Це поки не можна вибрати."
+  },
+  "select_brand_explain_capT_01": {
+    "en": "Day Trade Tutorial",
+    "ua": "Навчання"
+  },
+  "select_brand_explainT_01": {
+    "en": "Practise day trading in a simulation that doesn't\r\naffect your funds or the actual prices of stocks.",
+    "ua": "Тренуйтеся на симуляції, що не впливає\nна ваші кошти й справжні ціни акцій."
+  },
+  "select_brand_cant_buy_capT": {
+    "en": "You can't afford any stocks!",
+    "ua": "Вам не по кишені жодна акція!"
+  },
+  "select_brand_cant_buyT": {
+    "en": "Sell some shares from your [System:Color name=\"mgTrd_red\" ]portfolio[/System:Color]\r\nor sell an item in the [System:Color name=\"mgTrd_red\" ]Shop[/System:Color].",
+    "ua": "Продайте акції з [System:Color name=\"mgTrd_red\" ]портфеля[/System:Color]\nабо предмет у [System:Color name=\"mgTrd_red\" ]магазині[/System:Color]."
+  },
+  "select_brand_infoT": {
+    "en": "1 unit: [1]G ([0] shares)",
+    "ua": "1 лот: [1] G ([0] акц.)"
+  },
+  "select_brand_money_capT": {
+    "en": "Funds",
+    "ua": "Кошти"
+  },
+  "select_brand_select_txtT": {
+    "en": "What would you like to do?",
+    "ua": "Що ви хочете зробити?"
+  },
+  "select_brand_ticker_txtT": {
+    "en": "[0] [1]G",
+    "ua": "[0] [1] G"
+  },
+  "analyst_prof_menu_capT": {
+    "en": "◆ Analyst Profiles ◆",
+    "ua": "◆ Профілі аналітиків ◆"
+  },
+  "analyst_prof_mii_nameT_01": {
+    "en": "Freelance Analyst",
+    "ua": "Вільний аналітик"
+  },
+  "analyst_prof_item_capT_00": {
+    "en": "Day Trade sessions",
+    "ua": "Сеанси денної торгівлі"
+  },
+  "analyst_prof_itemT_00_none": {
+    "en": "None",
+    "ua": "Немає"
+  },
+  "analyst_prof_item_capT_01": {
+    "en": "Most-traded company",
+    "ua": "Улюблена компанія"
+  },
+  "analyst_prof_itemT_01_none": {
+    "en": "N/A",
+    "ua": "—"
+  },
+  "analyst_prof_item_capT_02": {
+    "en": "Assets",
+    "ua": "Активи"
+  },
+  "analyst_prof_itemT_02": {
+    "en": "[0]G",
+    "ua": "[0] G"
+  },
+  "analyst_prof_itemT_02_none": {
+    "en": "Classified",
+    "ua": "Засекречено"
+  },
+  "daytrade_menu_capT": {
+    "en": "◆ Today's Analyst Predictions ◆",
+    "ua": "◆ Прогнози аналітиків на сьогодні ◆"
+  },
+  "daytrade_menu_capT_single": {
+    "en": "◆ Today's Analyst Predictions ◆",
+    "ua": "◆ Прогнози аналітиків на сьогодні ◆"
+  },
+  "daytrade_dt_buttonT": {
+    "en": " Start day trading!",
+    "ua": " Почати денну торгівлю!"
+  },
+  "daytrade_select_txtT": {
+    "en": "Choose a company to day trade",
+    "ua": "Виберіть компанію для денної торгівлі"
+  },
+  "invest_menu_capT": {
+    "en": "◆ Portfolio ◆",
+    "ua": "◆ Портфель ◆"
+  },
+  "invest_select_noteT": {
+    "en": " Candlestick chart",
+    "ua": " Свічковий графік"
+  },
+  "invest_select_noteT_00": {
+    "en": " Line chart",
+    "ua": " Лінійний графік"
+  },
+  "invest_select_noteT_01": {
+    "en": "Analyst prediction",
+    "ua": "Прогноз аналітика"
+  },
+  "invest_window_noteT": {
+    "en": " Detailed analyst prediction",
+    "ua": " Докладний прогноз аналітика"
+  },
+  "invest_plT": {
+    "en": "[0]G",
+    "ua": "[0] G"
+  },
+  "invest_point_markT": {
+    "en": "Performance so far",
+    "ua": "Досі"
+  },
+  "invest_point_mark_nowT": {
+    "en": "Analyst prediction",
+    "ua": "Прогноз аналітика"
+  },
+  "invest_buy_buttonT": {
+    "en": " Buy",
+    "ua": " Купівля"
+  },
+  "invest_sell_buttonT": {
+    "en": " Sell",
+    "ua": " Продаж"
+  },
+  "portfolio_title_capT": {
+    "en": "Currently Held Shares",
+    "ua": "Акції в портфелі"
+  },
+  "portfolio_stockT": {
+    "en": "[0] shares",
+    "ua": "[0] акц."
+  },
+  "portfolio_asset_capT": {
+    "en": "Total Assets",
+    "ua": "Усього активів"
+  },
+  "portfolio_assetT": {
+    "en": "[0]G",
+    "ua": "[0] G"
+  },
+  "portfolio_graph_nameT_00": {
+    "en": "Funds",
+    "ua": "Кошти"
+  },
+  "portfolio_graph_nameT_01": {
+    "en": "Items",
+    "ua": "Предмети"
+  },
+  "bonus_list_menu_capT": {
+    "en": "◆ Bonuses ◆",
+    "ua": "◆ Бонуси ◆"
+  },
+  "bonus_list_bonus_capT": {
+    "en": "Total earned bonuses",
+    "ua": "Усього здобуто бонусів"
+  },
+  "bonus_condition_00": {
+    "en": "Total assets reached [0]G",
+    "ua": "Активи сягнули [0] G"
+  },
+  "bonus_condition_02": {
+    "en": "Made [0]G per second",
+    "ua": "Заробіток [0] G за секунду"
+  },
+  "bonus_condition_03_01": {
+    "en": "Heard predictions from [0] analysts",
+    "ua": "Прогнози від [0] аналітиків"
+  },
+  "bonus_condition_05": {
+    "en": "Earned Ace Trader status for [0]",
+    "ua": "Статус «Трейдер-ас» для [0]"
+  },
+  "record_menu_capT": {
+    "en": "◆ Financial Records ◆",
+    "ua": "◆ Фінансові записи ◆"
+  },
+  "record_asset_capT": {
+    "en": "Total Assets",
+    "ua": "Усього активів"
+  },
+  "record_assetT": {
+    "en": "[0]G",
+    "ua": "[0] G"
+  },
+  "record_brand_total": {
+    "en": "Combined Records",
+    "ua": "Загальні записи"
+  },
+  "record_best_capT": {
+    "en": "Recent Trade Performance",
+    "ua": "Останні результати"
+  },
+  "record_best_numT": {
+    "en": "[0]G",
+    "ua": "[0] G"
+  },
+  "record_best_evT_00": {
+    "en": "Amateur",
+    "ua": "Аматор"
+  },
+  "record_best_evT_01": {
+    "en": "Competent",
+    "ua": "Вправний"
+  },
+  "record_best_evT_02": {
+    "en": "Talented",
+    "ua": "Талановитий"
+  },
+  "record_best_evT_03": {
+    "en": "Ace",
+    "ua": "Ас"
+  },
+  "record_item_capT_00": {
+    "en": "Total day trades",
+    "ua": "Усього денних торгів"
+  },
+  "record_item_capT_01": {
+    "en": "Total transactions",
+    "ua": "Усього угод"
+  },
+  "record_item_capT_02": {
+    "en": "Analysts met via StreetPass",
+    "ua": "Аналітиків зі StreetPass"
+  },
+  "record_item_capT_03": {
+    "en": "Assets",
+    "ua": "Активи"
+  },
+  "record_item_capT_04": {
+    "en": "Day trades",
+    "ua": "Денних торгів"
+  },
+  "record_item_capT_05": {
+    "en": "Transactions",
+    "ua": "Угод"
+  },
+  "record_item_capT_06": {
+    "en": "Highest profit per second",
+    "ua": "Рекорд за секунду"
+  },
+  "record_item_capT_07": {
+    "en": "Profit/loss with this company",
+    "ua": "Прибуток/збиток компанії"
+  },
+  "record_itemT_persec": {
+    "en": "[0]G",
+    "ua": "[0] G"
+  },
+  "record_itemT_asset": {
+    "en": "[0]G",
+    "ua": "[0] G"
+  },
+  "record_select_txtT": {
+    "en": "See records by company",
+    "ua": "Записи за компаніями"
+  },
+  "record_ranking_sec_capT": {
+    "en": "Renowned Traders",
+    "ua": "Відомі трейдери"
+  },
+  "record_button_total": {
+    "en": "Combined\r\nRecords",
+    "ua": "Загальні\nзаписи"
+  },
+  "record_parts_ranking_cap_00": {
+    "en": "Assets",
+    "ua": "Активи"
+  },
+  "record_parts_ranking_cap_01": {
+    "en": "Total day trades",
+    "ua": "Усього денних торгів"
+  },
+  "record_parts_ranking_cap_02": {
+    "en": "Day trades",
+    "ua": "Денних торгів"
+  },
+  "record_parts_ranking_cap_03": {
+    "en": "Highest profit per second",
+    "ua": "Рекорд за секунду"
+  },
+  "record_parts_ranking_cap_04": {
+    "en": "Profit/Loss",
+    "ua": "Приб./збит."
+  },
+  "record_parts_ranking_num_00": {
+    "en": "[0]G",
+    "ua": "[0] G"
+  },
+  "glossary_upper_capT": {
+    "en": "Opening price < closing",
+    "ua": "Ціна відкриття < закриття"
+  },
+  "glossary_lower_capT": {
+    "en": "Opening price > closing",
+    "ua": "Ціна відкриття > закриття"
+  },
+  "glossary_highT": {
+    "en": "Highest price",
+    "ua": "Максимум"
+  },
+  "glossary_lowT": {
+    "en": "Lowest price",
+    "ua": "Мінімум"
+  },
+  "glossary_openT": {
+    "en": "Opening price",
+    "ua": "Відкриття"
+  },
+  "glossary_closeT": {
+    "en": "Closing price",
+    "ua": "Закриття"
+  },
+  "glossary_infoT": {
+    "en": "Choose the term you'd like explained.",
+    "ua": "Виберіть термін для пояснення."
+  },
+  "glossary_word_00": {
+    "en": "Stock/Share",
+    "ua": "Акція"
+  },
+  "glossary_word_01": {
+    "en": "Share Price",
+    "ua": "Ціна акції"
+  },
+  "glossary_word_02": {
+    "en": "Day Trade",
+    "ua": "Денна торгівля"
+  },
+  "glossary_word_03": {
+    "en": "Trade",
+    "ua": "Торгувати"
+  },
+  "glossary_word_04": {
+    "en": "Stock Chart",
+    "ua": "Біржовий графік"
+  },
+  "glossary_word_05": {
+    "en": "Analyst",
+    "ua": "Аналітик"
+  },
+  "glossary_word_06": {
+    "en": "Unit",
+    "ua": "Лот"
+  },
+  "glossary_word_07": {
+    "en": "Price Fluctuation",
+    "ua": "Коливання ціни"
+  },
+  "glossary_word_08": {
+    "en": "Company",
+    "ua": "Компанія"
+  },
+  "glossary_word_09": {
+    "en": "Assets",
+    "ua": "Активи"
+  },
+  "glossary_word_10": {
+    "en": "Investment",
+    "ua": "Інвестиція"
+  },
+  "glossary_word_11": {
+    "en": "Profit/Loss",
+    "ua": "Прибуток/збиток"
+  },
+  "glossary_word_12": {
+    "en": "Candlestick Chart",
+    "ua": "Свічковий графік"
+  },
+  "glossary_word_13": {
+    "en": "High Price",
+    "ua": "Максимум"
+  },
+  "glossary_word_14": {
+    "en": "Low Price",
+    "ua": "Мінімум"
+  },
+  "glossary_word_15": {
+    "en": "Opening Price",
+    "ua": "Ціна відкриття"
+  },
+  "glossary_word_16": {
+    "en": "Closing Price",
+    "ua": "Ціна закриття"
+  },
+  "glossary_word_17": {
+    "en": "Rise",
+    "ua": "Ріст"
+  },
+  "glossary_word_18": {
+    "en": "Drop",
+    "ua": "Спад"
+  },
+  "glossary_word_19": {
+    "en": "Stock Exchange",
+    "ua": "Біржа"
+  },
+  "glossary_word_20": {
+    "en": "Listed",
+    "ua": "Лістинг"
+  },
+  "glossary_instruction_00": {
+    "en": "A portion of the value of a company\r\nthat can be bought and sold. The price\r\nconstantly fluctuates.",
+    "ua": "Частка вартості компанії, яку можна\nкупити й продати. Її ціна\nпостійно змінюється."
+  },
+  "glossary_instruction_01": {
+    "en": "The price of a share.",
+    "ua": "Ціна однієї акції."
+  },
+  "glossary_instruction_02": {
+    "en": "Trading shares over a single day.",
+    "ua": "Торгівля акціями протягом одного дня."
+  },
+  "glossary_instruction_03": {
+    "en": "Carrying out transactions involving shares.",
+    "ua": "Угоди з акціями."
+  },
+  "glossary_instruction_04": {
+    "en": "A graph showing fluctuations in share prices.",
+    "ua": "Графік змін цін акцій."
+  },
+  "glossary_instruction_05": {
+    "en": "People who read stock charts to predict future\r\nfluctuations in share prices.",
+    "ua": "Люди, що за графіками передбачають\nзміни цін акцій."
+  },
+  "glossary_instruction_06": {
+    "en": "A set amount of shares that is treated as\r\none item for the purposes of trading.",
+    "ua": "Певна кількість акцій, яку під час торгів\nвважають одним предметом."
+  },
+  "glossary_instruction_07": {
+    "en": "A change in share price.",
+    "ua": "Зміна ціни акції."
+  },
+  "glossary_instruction_08": {
+    "en": "A corporate entity whose shares\r\nare traded on the stock exchange.",
+    "ua": "Юридична особа, акції якої\nторгуються на біржі."
+  },
+  "glossary_instruction_09": {
+    "en": "The total value of everything you\r\nown (money, merchandise, etc.).",
+    "ua": "Загальна вартість усього, що у вас\nє (гроші, товари тощо)."
+  },
+  "glossary_instruction_10": {
+    "en": "Purchasing something with the intent to\r\nsell it for more than it was purchased for.",
+    "ua": "Купівля чогось із наміром продати\nдорожче, ніж купили."
+  },
+  "glossary_instruction_11": {
+    "en": "The amount of money you have compared\r\nwith how much money you started with.",
+    "ua": "Скільки у вас грошей порівняно\nз тим, скільки було на початку."
+  },
+  "glossary_instruction_12": {
+    "en": "A chart that shows a transaction period\r\nin terms of the highest and lowest points.",
+    "ua": "Графік, що показує період торгів\nчерез найвищі й найнижчі точки."
+  },
+  "glossary_instruction_13": {
+    "en": "The highest price a share attains in one period.\r\nAchieving this price is \"topping out\".",
+    "ua": "Найвища ціна акції за період.\nДосягти її — «вийти на пік»."
+  },
+  "glossary_instruction_14": {
+    "en": "The lowest price a share attains in one period.\r\nHitting this price is \"bottoming out\".",
+    "ua": "Найнижча ціна акції за період.\nДосягти її — «впасти на дно»."
+  },
+  "glossary_instruction_15": {
+    "en": "The starting price of a share.",
+    "ua": "Початкова ціна акції."
+  },
+  "glossary_instruction_16": {
+    "en": "The ending price of a share.",
+    "ua": "Кінцева ціна акції."
+  },
+  "glossary_instruction_17": {
+    "en": "An increase in share price.",
+    "ua": "Підвищення ціни акції."
+  },
+  "glossary_instruction_18": {
+    "en": "A decrease in share price.",
+    "ua": "Зниження ціни акції."
+  },
+  "glossary_instruction_19": {
+    "en": "A market where shares can be traded.",
+    "ua": "Ринок, де можна торгувати акціями."
+  },
+  "glossary_instruction_20": {
+    "en": "A listed company is one whose shares\r\nare traded on the stock exchange.",
+    "ua": "Компанія з лістингом — та, чиї акції\nторгуються на біржі."
+  },
+  "shop_menu_capT": {
+    "en": "◆ Shop ◆",
+    "ua": "◆ Магазин ◆"
+  },
+  "shop_talk_00": {
+    "en": "Come on in!\r\nWhat can I do for you today?",
+    "ua": "Заходьте!\nЧим можу допомогти?"
+  },
+  "shop_talk_00_again": {
+    "en": "What can I do for you?",
+    "ua": "Чим можу допомогти?"
+  },
+  "shop_talk_00_buy": {
+    "en": "What've you got?",
+    "ua": "Що у вас є?"
+  },
+  "shop_talk_00_sell": {
+    "en": "I wanna sell sell sell!",
+    "ua": "Хочу продавати!"
+  },
+  "shop_talk_00_cancel": {
+    "en": "Nothing. Bye!",
+    "ua": "Нічого. Бувайте!"
+  },
+  "shop_talk_01": {
+    "en": "The [0]?\r\nThat'll cost you [System:Color name=\"mgTrd_red\" ][1]G[/System:Color].",
+    "ua": "«[0]»?\nЦіна — [System:Color name=\"mgTrd_red\" ][1] G[/System:Color]."
+  },
+  "shop_talk_01_buy": {
+    "en": "I'll take it!",
+    "ua": "Беру!"
+  },
+  "shop_talk_01_sell": {
+    "en": "Uh...you can keep it.",
+    "ua": "Е-е… лишіть собі."
+  },
+  "shop_talk_02": {
+    "en": "Thanks for your business! The goods\r\nwill be delivered to you right away.",
+    "ua": "Дякую за покупку! Товар\nдоставлять негайно."
+  },
+  "shop_talk_03": {
+    "en": "I'm so sorry, but there's\r\nnothing for you to buy!",
+    "ua": "Перепрошую, але купити\nнічого не вийде!"
+  },
+  "shop_talk_04": {
+    "en": "I could probably pay you [System:Color name=\"mgTrd_red\" ][1]G [/System:Color]for that\r\n[0].",
+    "ua": "За «[0]» я, мабуть,\nдам [System:Color name=\"mgTrd_red\" ][1] G[/System:Color]."
+  },
+  "shop_talk_04_sell": {
+    "en": "Sounds good!",
+    "ua": "Згода!"
+  },
+  "shop_talk_04_cancel": {
+    "en": "I think I'll hang on to it.",
+    "ua": "Мабуть, лишу собі."
+  },
+  "shop_talk_05": {
+    "en": "Nice doing business with you. Next time,\r\nwhy don't YOU buy something from ME?",
+    "ua": "Приємно мати з вами справу. Наступного\nразу, може, ВИ щось у МЕНЕ купите?"
+  },
+  "shop_talk_06": {
+    "en": "Hmm? You don't seem to have anything to sell.",
+    "ua": "Гм? Схоже, вам нічого продати."
+  },
+  "shop_talk_07": {
+    "en": "Select the merchandise you'd like to purchase.",
+    "ua": "Виберіть товар, який хочете купити."
+  },
+  "shop_talk_08": {
+    "en": "Select the merchandise you'd like to sell.",
+    "ua": "Виберіть товар, який хочете продати."
+  },
+  "shop_talk_09": {
+    "en": "Thanks for stopping by!",
+    "ua": "Дякую, що завітали!"
+  },
+  "shop_infoT": {
+    "en": "Press  to buy",
+    "ua": " — купити"
+  },
+  "shop_infoT_sell": {
+    "en": "Press  to sell",
+    "ua": " — продати"
+  },
+  "shop_item_noneT": {
+    "en": "There's nothing you can buy.",
+    "ua": "Купити нічого."
+  },
+  "shop_item_noneT_00": {
+    "en": "You don't have anything to sell.",
+    "ua": "Продати нічого."
+  },
+  "shop_filter_txt_00": {
+    "en": "All merchandise",
+    "ua": "Усі товари"
+  },
+  "shop_filter_txt_01": {
+    "en": "Merchandise you can buy",
+    "ua": "Доступні для купівлі"
+  },
+  "shop_item_priceT": {
+    "en": "[0]G",
+    "ua": "[0] G"
+  },
+  "shop_word_capT": {
+    "en": "Shop",
+    "ua": "Магазин"
+  },
+  "shop_word_txtT": {
+    "en": "Buying things helps that company\r\ngrow - you might see more positive\r\nnewsflashes while trading!\r\n\r\n[System:Size percent=\"80\" ]Note: the effect will end if\r\nyou later sell the items[/System:Size]",
+    "ua": "Купівля допомагає компанії\nрости — під час торгів може бути\nбільше добрих новин!\n\n[System:Size percent=\"80\" ]Примітка: ефект зникне, якщо\nпізніше продати предмети[/System:Size]"
+  },
+  "staff_credit_name_000": {
+    "en": "Tomoya Sugiyama",
+    "ua": ""
+  },
+  "staff_credit_name_001": {
+    "en": "Mari Nishizaka",
+    "ua": ""
+  },
+  "staff_credit_name_002": {
+    "en": "Sulki Kim",
+    "ua": ""
+  },
+  "staff_credit_name_003": {
+    "en": "Tatsushi Watanabe",
+    "ua": ""
+  },
+  "staff_credit_name_004": {
+    "en": "Daisuke Kobayashi",
+    "ua": ""
+  },
+  "staff_credit_name_005": {
+    "en": "Takuma Miura",
+    "ua": ""
+  },
+  "staff_credit_name_006": {
+    "en": "Hiroki Komura",
+    "ua": ""
+  },
+  "staff_credit_name_007": {
+    "en": "Tatsunori Wada",
+    "ua": ""
+  },
+  "staff_credit_name_008": {
+    "en": "Erika Tsukahara",
+    "ua": ""
+  },
+  "staff_credit_name_009": {
+    "en": "Yui Namizaki",
+    "ua": ""
+  },
+  "staff_credit_name_010": {
+    "en": "Makoto Kawatori",
+    "ua": ""
+  },
+  "staff_credit_name_011": {
+    "en": "Miho Takahashi",
+    "ua": ""
+  },
+  "staff_credit_name_012": {
+    "en": "Masashi Tsuboyama",
+    "ua": ""
+  },
+  "staff_credit_name_013": {
+    "en": "Tadanori Tsukawaki",
+    "ua": ""
+  },
+  "staff_credit_name_014": {
+    "en": "Yoshiaki Sano",
+    "ua": ""
+  },
+  "staff_credit_name_015": {
+    "en": "Takeharu Umada",
+    "ua": ""
+  },
+  "staff_credit_name_016": {
+    "en": "Akihiro Juichiya",
+    "ua": ""
+  },
+  "staff_credit_name_017": {
+    "en": "Misaki Asada",
+    "ua": ""
+  },
+  "staff_credit_name_018": {
+    "en": "Tomoya Tomita",
+    "ua": ""
+  },
+  "staff_credit_name_019": {
+    "en": "Etsunobu Ebisu",
+    "ua": ""
+  },
+  "staff_credit_name_100": {
+    "en": "Kouichi Kawamoto",
+    "ua": ""
+  },
+  "staff_credit_name_101": {
+    "en": "Toyokazu Nonaka",
+    "ua": ""
+  },
+  "staff_credit_name_102": {
+    "en": "Ryusuke Niitani",
+    "ua": ""
+  },
+  "staff_credit_name_103": {
+    "en": "Yoshiaki Onishi",
+    "ua": ""
+  },
+  "staff_credit_name_104": {
+    "en": "Masahiro Shiotani",
+    "ua": ""
+  },
+  "staff_credit_name_105": {
+    "en": "Kazuyuki Gofuku",
+    "ua": ""
+  },
+  "staff_credit_name_106": {
+    "en": "Kenji Yamamoto",
+    "ua": ""
+  },
+  "staff_credit_name_107": {
+    "en": "Minako Hamano",
+    "ua": ""
+  },
+  "staff_credit_name_108": {
+    "en": "Yuto Sasaki",
+    "ua": ""
+  },
+  "staff_credit_name_109": {
+    "en": "Shingo Okamoto",
+    "ua": ""
+  },
+  "staff_credit_name_110": {
+    "en": "Tomohiro Umeda",
+    "ua": ""
+  },
+  "staff_credit_name_111": {
+    "en": "Takehiro Oyama",
+    "ua": ""
+  },
+  "staff_credit_name_112": {
+    "en": "Manabu Matumoto",
+    "ua": ""
+  },
+  "staff_credit_name_113": {
+    "en": "Kanta Yokota",
+    "ua": ""
+  },
+  "staff_credit_name_114": {
+    "en": "Masaki Mori",
+    "ua": ""
+  },
+  "staff_credit_name_115": {
+    "en": "Mario Club",
+    "ua": ""
+  },
+  "staff_credit_name_116": {
+    "en": "NOA Product Testing",
+    "ua": ""
+  },
+  "staff_credit_name_117": {
+    "en": "NOE Quality Assurance",
+    "ua": ""
+  },
+  "staff_credit_name_118": {
+    "en": "NOE Localisation",
+    "ua": ""
+  },
+  "staff_credit_name_119": {
+    "en": "NOA Localization",
+    "ua": ""
+  },
+  "staff_credit_name_120": {
+    "en": "Shinya Takahashi",
+    "ua": ""
+  },
+  "staff_credit_name_121": {
+    "en": "Tatsumi Kimishima",
+    "ua": ""
+  },
+  "staff_credit_title_000": {
+    "en": "Director",
+    "ua": "Режисер"
+  },
+  "staff_credit_title_001": {
+    "en": "Planning Director",
+    "ua": "Керівник планування"
+  },
+  "staff_credit_title_002": {
+    "en": "Planning",
+    "ua": "Планування"
+  },
+  "staff_credit_title_003": {
+    "en": "Programming Director",
+    "ua": "Керівник програмування"
+  },
+  "staff_credit_title_004": {
+    "en": "Programming",
+    "ua": "Програмування"
+  },
+  "staff_credit_title_005": {
+    "en": "Art Director",
+    "ua": "Арт-директор"
+  },
+  "staff_credit_title_006": {
+    "en": "Graphic Design",
+    "ua": "Графічний дизайн"
+  },
+  "staff_credit_title_007": {
+    "en": "Technical Design",
+    "ua": "Технічний дизайн"
+  },
+  "staff_credit_title_008": {
+    "en": "Music & Sound Effects",
+    "ua": "Музика й звукові ефекти"
+  },
+  "staff_credit_title_009": {
+    "en": "Producer",
+    "ua": "Продюсер"
+  },
+  "staff_credit_title_100": {
+    "en": "Producers",
+    "ua": "Продюсери"
+  },
+  "staff_credit_title_101": {
+    "en": "Associate Producers",
+    "ua": "Асоційовані продюсери"
+  },
+  "staff_credit_title_102": {
+    "en": "Project Management",
+    "ua": "Керування проєктом"
+  },
+  "staff_credit_title_103": {
+    "en": "Sound Director",
+    "ua": "Звукорежисер"
+  },
+  "staff_credit_title_104": {
+    "en": "Sound Coordination",
+    "ua": "Координація звуку"
+  },
+  "staff_credit_title_105": {
+    "en": "Technical Support",
+    "ua": "Технічна підтримка"
+  },
+  "staff_credit_title_106": {
+    "en": "Testing",
+    "ua": "Тестування"
+  },
+  "staff_credit_title_107": {
+    "en": "European Localisation",
+    "ua": "Європейська локалізація"
+  },
+  "staff_credit_title_108": {
+    "en": "North American Localization",
+    "ua": "Північноамериканська локалізація"
+  },
+  "staff_credit_title_109": {
+    "en": "General Producer",
+    "ua": "Генеральний продюсер"
+  },
+  "staff_credit_title_110": {
+    "en": "Executive Producer",
+    "ua": "Виконавчий продюсер"
+  },
+  "staff_credit_top_000": {
+    "en": "Developer\r\nGood-Feel Co., Ltd.",
+    "ua": "Розробник\nGood-Feel Co., Ltd."
+  },
+  "staff_credit_top_001": {
+    "en": "Nintendo",
+    "ua": "Nintendo"
+  },
+  "staff_credit_top_002": {
+    "en": "STAFF CREDITS",
+    "ua": "ТИТРИ"
+  },
+  "staff_credit_tail_000": {
+    "en": "Nintendo and Good-Feel are the authors of\r\nthis software for the purpose of copyright. \r\nAll rights reserved.\r\n© 2016 Nintendo.",
+    "ua": "Nintendo і Good-Feel є авторами цієї\nпрограми з погляду авторського права.\nУсі права захищено.\n© 2016 Nintendo."
+  },
+  "staff_credit_pressT": {
+    "en": "PRESS ",
+    "ua": "НАТИСНІТЬ "
+  },
+  "scoreboard_start_00": {
+    "en": "◆ Time to get trading. Good luck! ◆",
+    "ua": "◆ Час торгувати. Щасти! ◆"
+  },
+  "scoreboard_end_00": {
+    "en": "◆ Trading closed! See you next time! ◆",
+    "ua": "◆ Торги закрито! До зустрічі! ◆"
+  },
+  "scoreboard_holding_00": {
+    "en": "◆ You have shares to trade! ◆",
+    "ua": "◆ У вас є акції для торгівлі! ◆"
+  },
+  "scoreboard_elevator": {
+    "en": "Where would you like to go?",
+    "ua": "Куди ви хочете піти?"
+  },
+  "scoreboard_tutorial_00": {
+    "en": "◆ Day Trade Tutorial ◆",
+    "ua": "◆ Навчання денної торгівлі ◆"
+  },
+  "collection_floor_capT_00": {
+    "en": "Mii Plaza Stock Exchange",
+    "ua": "Біржа Площі Mii"
+  },
+  "collection_floor_capT_01": {
+    "en": "Roof Garden",
+    "ua": "Сад на даху"
+  },
+  "collection_floor_numT": {
+    "en": "[0]F",
+    "ua": "[0]"
+  },
+  "collection_floor_numT_00": {
+    "en": "R",
+    "ua": "Д"
+  },
+  "collection_valueT": {
+    "en": "Asset value: [0]G",
+    "ua": "Вартість: [0] G"
+  },
+  "collection_valueT_00": {
+    "en": "Cannot be sold",
+    "ua": "Не продається"
+  },
+  "collection_infoT": {
+    "en": " Details\t  Go to another floor",
+    "ua": " Докладно\t  Інший поверх"
+  },
+  "collection_item_noneT": {
+    "en": "No items on display here.",
+    "ua": "Тут нічого не виставлено."
+  },
+  "collection_button_01": {
+    "en": "R",
+    "ua": "Дах"
+  },
+  "collection_item_000": {
+    "en": "Stack of Stocks",
+    "ua": "Стос акцій"
+  },
+  "collection_item_001": {
+    "en": "Money Mountain",
+    "ua": "Гора грошей"
+  },
+  "collection_item_002": {
+    "en": "Collectible Stockbroker",
+    "ua": "Фігурка брокера"
+  },
+  "collection_item_003": {
+    "en": "Model Stock Exchange",
+    "ua": "Макет біржі"
+  },
+  "collection_item_004": {
+    "en": "Moneybags Trophy",
+    "ua": "Кубок багатія"
+  },
+  "collection_item_005": {
+    "en": "Trade-O-Matic 3000",
+    "ua": "Трейдомат 3000"
+  },
+  "collection_item_006": {
+    "en": "Market Monitor",
+    "ua": "Біржовий монітор"
+  },
+  "collection_item_007": {
+    "en": "Golden Timepiece",
+    "ua": "Золотий годинник"
+  },
+  "collection_item_008": {
+    "en": "Golden [0] Statue",
+    "ua": "Золота статуя [0]"
+  },
+  "collection_item_009": {
+    "en": "24-Carat Gold [0] Statue",
+    "ua": "Статуя [0] з 24-кар. золота"
+  },
+  "collection_item_100": {
+    "en": "Seeker's Backpack",
+    "ua": "Рюкзак шукача"
+  },
+  "collection_item_101": {
+    "en": "Souvenir Tile",
+    "ua": "Сувенірна плитка"
+  },
+  "collection_item_102": {
+    "en": "All-Seasons Art Piece",
+    "ua": "Картина «Пори року»"
+  },
+  "collection_item_103": {
+    "en": "Cuddly Bird",
+    "ua": "Плюшева пташка"
+  },
+  "collection_item_104": {
+    "en": "Golden Backpack",
+    "ua": "Золотий рюкзак"
+  },
+  "collection_item_200": {
+    "en": "Trusty Sword",
+    "ua": "Вірний меч"
+  },
+  "collection_item_201": {
+    "en": "Dependable Shield",
+    "ua": "Надійний щит"
+  },
+  "collection_item_202": {
+    "en": "Treasure Chest",
+    "ua": "Скриня скарбів"
+  },
+  "collection_item_203": {
+    "en": "Cuddly Ghost",
+    "ua": "Плюшевий привид"
+  },
+  "collection_item_204": {
+    "en": "Gilded Sword",
+    "ua": "Позолочений меч"
+  },
+  "collection_item_300": {
+    "en": "Planetary Patrol Pod",
+    "ua": "Капсула патруля"
+  },
+  "collection_item_301": {
+    "en": "Pod Fighter",
+    "ua": "Винищувач"
+  },
+  "collection_item_302": {
+    "en": "Space Pirate & Lackey",
+    "ua": "Пірат і поплічник"
+  },
+  "collection_item_303": {
+    "en": "Moustachioed Robot Captain",
+    "ua": "Вусатий робот-капітан"
+  },
+  "collection_item_304": {
+    "en": "Golden Planetary Patrol Pod",
+    "ua": "Золота капсула патруля"
+  },
+  "collection_item_400": {
+    "en": "Tin Watering Can",
+    "ua": "Бляшана лійка"
+  },
+  "collection_item_401": {
+    "en": "Gardener's Goods",
+    "ua": "Садове приладдя"
+  },
+  "collection_item_402": {
+    "en": "Ornate Planters",
+    "ua": "Вишукані вазони"
+  },
+  "collection_item_403": {
+    "en": "Gardening Buddy Figure",
+    "ua": "Фігурка садівника"
+  },
+  "collection_item_404": {
+    "en": "Golden Watering Can",
+    "ua": "Золота лійка"
+  },
+  "collection_item_500": {
+    "en": "Model Castle Set",
+    "ua": "Макет замків"
+  },
+  "collection_item_501": {
+    "en": "Toy Soldiers",
+    "ua": "Олов'яні солдатики"
+  },
+  "collection_item_502": {
+    "en": "Evil Emperor Figure",
+    "ua": "Фігурка імператора"
+  },
+  "collection_item_503": {
+    "en": "Butler Figure",
+    "ua": "Фігурка дворецького"
+  },
+  "collection_item_504": {
+    "en": "Golden Model Castle Set",
+    "ua": "Золотий макет замків"
+  },
+  "collection_item_600": {
+    "en": "Rusty Weapon",
+    "ua": "Іржава зброя"
+  },
+  "collection_item_601": {
+    "en": "Escape Kit",
+    "ua": "Набір для втечі"
+  },
+  "collection_item_602": {
+    "en": "Ghost Buddies",
+    "ua": "Друзі-привиди"
+  },
+  "collection_item_603": {
+    "en": "Assistant Super-Sleuth Figure",
+    "ua": "Фігурка помічниці"
+  },
+  "collection_item_604": {
+    "en": "Gold Weapon",
+    "ua": "Золота зброя"
+  },
+  "collection_item_700": {
+    "en": "Decent Fishing Rod",
+    "ua": "Добра вудка"
+  },
+  "collection_item_701": {
+    "en": "Stripy Fish Bath Toy",
+    "ua": "Смугаста рибка"
+  },
+  "collection_item_702": {
+    "en": "Model Cruiser",
+    "ua": "Модель катера"
+  },
+  "collection_item_703": {
+    "en": "Fishing Guide Figure",
+    "ua": "Фігурка гіда"
+  },
+  "collection_item_704": {
+    "en": "Golden Fishing Rod",
+    "ua": "Золота вудка"
+  },
+  "collection_item_800": {
+    "en": "Zombie Vaccine",
+    "ua": "Вакцина від зомбі"
+  },
+  "collection_item_801": {
+    "en": "Maximum Moxie Serum",
+    "ua": "Сироватка відваги"
+  },
+  "collection_item_802": {
+    "en": "Zombie Short Stack",
+    "ua": "Стос зомбі"
+  },
+  "collection_item_803": {
+    "en": "Scientist Figure",
+    "ua": "Фігурка науковиці"
+  },
+  "collection_item_804": {
+    "en": "Golden Zombie Vaccine",
+    "ua": "Золота вакцина"
+  },
+  "collection_explanation_000": {
+    "en": "A million G's worth of stock certificates.\r\nUnfortunately, they can't actually be used.",
+    "ua": "Акції на мільйон G.\nНа жаль, ними не можна скористатися."
+  },
+  "collection_explanation_001": {
+    "en": "Five million G in cold, hard cash - the proof of a\r\ntruly outstanding trader. You're a G-llionaire!",
+    "ua": "П'ять мільйонів G готівкою — доказ\nвидатного трейдера. Ви G-льйонер!"
+  },
+  "collection_explanation_002": {
+    "en": "Is it a bird? Is it a plane? Is it a tradeable financial\r\nasset? No, it's a super-powered stock broker!",
+    "ua": "Це птах? Це літак? Це фінансовий актив?\nНі, це суперброкер!"
+  },
+  "collection_explanation_003": {
+    "en": "This may be a perfect replica, but shouting \"Buy!\"\r\nand \"Sell!\" at it does not count as official trading.",
+    "ua": "Точна копія, але крики «Купую!» й «Продаю!»\nдо неї не вважаються справжніми торгами."
+  },
+  "collection_explanation_004": {
+    "en": "The production cost of this trophy equals 10\r\ndays of Ace-level trading. And now it's yours!",
+    "ua": "Цей кубок коштував стільки, скільки\n10 днів торгівлі на рівні аса. Тепер він ваш!"
+  },
+  "collection_explanation_005": {
+    "en": "Sell on the left screen, buy on the right, keep tabs on\r\nall your assets all the time...easy!",
+    "ua": "Продаєш на лівому екрані, купуєш на правому,\nстежиш за активами — легко!"
+  },
+  "collection_explanation_006": {
+    "en": "Never miss another price fluctuation with this high-\r\ntech TV linked directly to the stock exchange.",
+    "ua": "З цим хай-тек телевізором, підключеним до біржі,\nви не проґавите жодного коливання."
+  },
+  "collection_explanation_007": {
+    "en": "The height of trader fashion. Have you ever seen\r\nanything as fancy as those golden wings?",
+    "ua": "Вершина трейдерської моди. Бачили щось\nвишуканіше за ці золоті крильця?"
+  },
+  "collection_explanation_008": {
+    "en": "An honour afforded only to traders who manage to\r\nmake 100 million G.",
+    "ua": "Честь лише для трейдерів, що\nзаробили 100 мільйонів G."
+  },
+  "collection_explanation_009": {
+    "en": "An honour afforded only to traders who\r\nmanage to make 10 billion G.",
+    "ua": "Честь лише для трейдерів, що\nзаробили 10 мільярдів G."
+  },
+  "collection_explanation_100": {
+    "en": "A backpack bulging with two outfits for every season\r\nand every possible weather condition. Be prepared!",
+    "ua": "Рюкзак із двома комплектами одягу на кожну пору\nроку й будь-яку погоду. Будьте готові!"
+  },
+  "collection_explanation_101": {
+    "en": "Does this mean there's a puzzle somewhere\r\nthat will never be completed?",
+    "ua": "Невже десь є пазл,\nякий ніколи не складуть?"
+  },
+  "collection_explanation_102": {
+    "en": "A diorama of a snowman enjoying all four seasons at\r\nonce. Be careful with summer, buddy!",
+    "ua": "Діорама сніговика, що тішиться всіма порами\nроку одночасно. Обережно з літом, друже!"
+  },
+  "collection_explanation_103": {
+    "en": "This luxurious plushie is made of 100%\r\ncashmere. And it's machine washable, too!",
+    "ua": "Розкішна іграшка зі 100% кашеміру.\nЇї ще й можна прати в машинці!"
+  },
+  "collection_explanation_104": {
+    "en": "The money that was inside the bag when\r\nyou bought it is included in the price.",
+    "ua": "Гроші, що були в рюкзаку під час\nкупівлі, входять у ціну."
+  },
+  "collection_explanation_200": {
+    "en": "A nigh-unbreakable sword. Don't\r\nask us about the hit rate.",
+    "ua": "Майже незламний меч. Про точність\nударів краще не питайте."
+  },
+  "collection_explanation_201": {
+    "en": "Defends against all manner of attacks, but\r\nwill not protect you from poor investments.",
+    "ua": "Захищає від будь-яких атак, але не\nвід невдалих інвестицій."
+  },
+  "collection_explanation_202": {
+    "en": "A storage box best suited for only the most\r\nfashionable of hats. (Key sold separately.)",
+    "ua": "Скринька для найвишуканіших капелюхів.\n(Ключ продається окремо.)"
+  },
+  "collection_explanation_203": {
+    "en": "The tongue is adjustable, but it's also a little\r\nmoist. Analysts advise against touching it.",
+    "ua": "Язик регулюється, але трохи вологий.\nАналітики радять його не чіпати."
+  },
+  "collection_explanation_204": {
+    "en": "A masterpiece forged from 1,000 coins over 1,000\r\ndays. I'm sure it was worth it.",
+    "ua": "Шедевр, викуваний із 1000 монет за 1000 днів.\nПевно, воно того було варте."
+  },
+  "collection_explanation_300": {
+    "en": "Soars through space with 360° manoeuvrability,\r\ndispensing justice all over the galaxy.",
+    "ua": "Літає космосом із маневреністю 360°,\nнесучи справедливість усій галактиці."
+  },
+  "collection_explanation_301": {
+    "en": "A fighter that fires different ammo depending on the\r\ncolour of the pilot's clothes.",
+    "ua": "Винищувач, що стріляє різними набоями\nзалежно від кольору одягу пілота."
+  },
+  "collection_explanation_302": {
+    "en": "Holding these is said to increase your ability to sniff\r\nout hidden treasure.",
+    "ua": "Кажуть, вони допомагають винюхувати\nсховані скарби."
+  },
+  "collection_explanation_303": {
+    "en": "Comes with a free audio guide to piloting any kind of\r\nvehicle! While stocks last.",
+    "ua": "До нього безкоштовний аудіогід з керування\nбудь-яким транспортом! Поки є в наявності."
+  },
+  "collection_explanation_304": {
+    "en": "So awesomely shiny that your eyes will hurt if you\r\nstare at it too closely. Um, I mean, don't stare at it.",
+    "ua": "Так блищить, що очі болять, якщо\nдовго дивитися. Тож не дивіться."
+  },
+  "collection_explanation_400": {
+    "en": "This state-of-the-art H2O delivery system will\r\nensure that your flowers achieve maximum bloomage.",
+    "ua": "Найсучасніша система подачі H2O\nзабезпечить квітам пишне цвітіння."
+  },
+  "collection_explanation_401": {
+    "en": "A gardening diary written by a veteran in the field,\r\nplus an awesome quill pen and some stylish storage.",
+    "ua": "Садовий щоденник від ветерана справи,\nчудове перо й стильна скринька."
+  },
+  "collection_explanation_402": {
+    "en": "A set of beautiful planters designed by a famous\r\ndesigner from overseas.",
+    "ua": "Набір гарних вазонів від\nвідомого закордонного дизайнера."
+  },
+  "collection_explanation_403": {
+    "en": "A 100% faithful reproduction, from the clothes right\r\ndown to the little goatee. Of who? Who knows.",
+    "ua": "Точна копія — від одягу до\nборідки. Чия? Хтозна."
+  },
+  "collection_explanation_404": {
+    "en": "Flowers watered with this watering can will sparkle\r\nalmost as brilliantly as your stack of G!",
+    "ua": "Квіти, политі з цієї лійки, сяятимуть\nмайже як ваші стоси G!"
+  },
+  "collection_explanation_500": {
+    "en": "A model of three castles built to withstand attack.\r\nFeatures Japanese, medieval and futuristic styles.",
+    "ua": "Макет трьох неприступних замків:\nяпонський, середньовічний і футуристичний."
+  },
+  "collection_explanation_501": {
+    "en": "Create your own custom army by adjusting bows,\r\nspears, horses and troop placement.",
+    "ua": "Створіть власну армію, налаштувавши луки,\nсписи, коней і розстановку."
+  },
+  "collection_explanation_502": {
+    "en": "A legend in the construction industry.\r\nThe helmet is surprisingly fragile.",
+    "ua": "Легенда будівельної галузі.\nШолом напрочуд крихкий."
+  },
+  "collection_explanation_503": {
+    "en": "The mascot of Conqueror Construction, S.P.\r\nDo not remove monocle.",
+    "ua": "Талісман «Завойовник-Буду».\nМонокль не знімати."
+  },
+  "collection_explanation_504": {
+    "en": "Only 30cm tall but weighing in at a hefty 30kg, what\r\nbetter way to show off how fabulously rich you are?",
+    "ua": "Лише 30 см заввишки, але аж 30 кг — найкращий\nспосіб показати, який ви багатій!"
+  },
+  "collection_explanation_600": {
+    "en": "Fires electromagnetic waves that clear out ghosts in\r\na jiffy. A real trump card in the war on evil spirits!",
+    "ua": "Випромінює хвилі, що вмить розганяють привидів.\nСправжній козир у війні з нечистю!"
+  },
+  "collection_explanation_601": {
+    "en": "Helpful for those times when you're trapped in\r\na haunted maze. Happens to the best of us!",
+    "ua": "Знадобиться, якщо ви застрягли в лабіринті\nз привидами. З кожним буває!"
+  },
+  "collection_explanation_602": {
+    "en": "You wouldn't want to run into these in a dark room!\r\nOr maybe you would. I don't really know you.",
+    "ua": "Не хотілося б зустріти їх у темній кімнаті!\nА може, й хотілося б. Я вас не знаю."
+  },
+  "collection_explanation_603": {
+    "en": "This figure comes with a handy puzzle\r\ngame hint system built into it.",
+    "ua": "У цю фігурку вбудовано зручну\nсистему підказок до головоломок."
+  },
+  "collection_explanation_604": {
+    "en": "Pulling the trigger releases a solid gold coin from the\r\nbarrel! Gold coins sold separately.",
+    "ua": "Натиснете на гачок — і з дула вилетить золота\nмонета! Монети продаються окремо."
+  },
+  "collection_explanation_700": {
+    "en": "Good for beginners and experts alike! Catching fish\r\nis a breeze with this high-quality product.",
+    "ua": "Для новачків і профі! З цим якісним\nвиробом ловити рибу — просто."
+  },
+  "collection_explanation_701": {
+    "en": "Swims realistically in water!\r\nWarning: water will damage product.",
+    "ua": "Плаває у воді як справжня!\nУвага: вода пошкоджує виріб."
+  },
+  "collection_explanation_702": {
+    "en": "Floats on water like a real boat!\r\nWarning: water will damage product.",
+    "ua": "Тримається на воді як справжній!\nУвага: вода пошкоджує виріб."
+  },
+  "collection_explanation_703": {
+    "en": "The helpful tips provided by this figure are sure to\r\nhelp you catch the biggest fish!",
+    "ua": "Корисні поради від цієї фігурки допоможуть\nзловити найбільшу рибу!"
+  },
+  "collection_explanation_704": {
+    "en": "This shining golden rod is so impressive, fish will line\r\nup just so they can brag about being caught by it.",
+    "ua": "Ця золота вудка така гарна, що риба стає\nв чергу, щоб похизуватися, що її спіймали."
+  },
+  "collection_explanation_800": {
+    "en": "Includes real zombie DNA just in case there's ever an\r\noutbreak where you live! Warning: DO NOT DROP.",
+    "ua": "Містить справжню ДНК зомбі на випадок спалаху\nу вашому місті! Увага: НЕ ВПУСТІТЬ."
+  },
+  "collection_explanation_801": {
+    "en": "An energy drink for on-the-go traders. It might also\r\nmake you literally invincible, but...don't test that.",
+    "ua": "Енергетик для трейдерів у русі. Може зробити\nвас непереможним, але… не перевіряйте."
+  },
+  "collection_explanation_802": {
+    "en": "This resilient stack of zombies can be used as a\r\npillow if you aren't afraid of zombie dreams.",
+    "ua": "Цей пружний стос зомбі можна взяти за подушку,\nякщо не боїтеся зомбі-снів."
+  },
+  "collection_explanation_803": {
+    "en": "This lucky figure will improve your skills as a doctor!\r\nIf you're not a doctor, well...at least it looks nice.",
+    "ua": "Ця щаслива фігурка покращить лікарські навички!\nЯкщо ви не лікар… що ж, вона хоч гарна."
+  },
+  "collection_explanation_804": {
+    "en": "A solid-gold capsule of zombie vaccine. WARNING:\r\nDO. NOT. DROP. We cannot stress that enough.",
+    "ua": "Капсула вакцини з чистого золота. УВАГА:\nНЕ. ВПУСТІТЬ. Наголошуємо."
+  },
+  "title_intro_caption": {
+    "en": "Message",
+    "ua": "Звістка"
+  },
+  "title_intro_caption_01": {
+    "en": "Confirm",
+    "ua": "Підтвердження"
+  },
+  "title_intro_00": {
+    "en": "Welcome to StreetPass Trader!",
+    "ua": "Вітаємо в Біржі StreetPass!"
+  },
+  "title_intro_01": {
+    "en": "Buy and sell stocks with the advice\r\nof the Mii characters you've met via\r\nStreetPass, and see how much\r\nin-game money you can earn!",
+    "ua": "Купуйте й продавайте акції за порадами\nMii, зустрінутих через StreetPass,\nі дізнайтеся, скільки ігрових\nгрошей можна заробити!"
+  },
+  "title_intro_02": {
+    "en": "Are you ready to play?",
+    "ua": "Готові грати?"
+  },
+  "title_intro_answer_yes": {
+    "en": "Let's get trading!",
+    "ua": "До торгів!"
+  },
+  "title_intro_answer_no": {
+    "en": "Maybe later...",
+    "ua": "Може, пізніше…"
+  },
+  "title_intro_reaction_yes": {
+    "en": "Loving the excitement!\r\nLet's get you set up to trade!",
+    "ua": "Обожнюю цей запал!\nГотуймося до торгів!"
+  },
+  "title_intro_reaction_no": {
+    "en": "No problem! Hope to see you soon!",
+    "ua": "Нічого страшного! До зустрічі!"
+  },
+  "opening_intro_00": {
+    "en": "Welcome!",
+    "ua": "Вітаємо!"
+  },
+  "opening_intro_01": {
+    "en": "This is the world-famous\r\nMii Plaza Stock Exchange.",
+    "ua": "Це всесвітньо відома\nБіржа Площі Mii."
+  },
+  "opening_intro_02": {
+    "en": "So, kid, is this your first time trading?",
+    "ua": "Ну що, малий, торгуєш уперше?"
+  },
+  "opening_intro_03": {
+    "en": "Fantastic!",
+    "ua": "Чудово!"
+  },
+  "opening_intro_04": {
+    "en": "Right now we're running a promotion! You\r\ncan try out a [System:Color name=\"mgTrd_red\" ]day trading[/System:Color] tutorial for FREE.",
+    "ua": "Зараз у нас акція! Можна БЕЗКОШТОВНО\nпройти навчання [System:Color name=\"mgTrd_red\" ]денної торгівлі[/System:Color]."
+  },
+  "opening_intro_05": {
+    "en": "I'll walk you through the basics of trading\r\nin a risk-free simulated environment.",
+    "ua": "Я покажу основи торгівлі\nв безпечній симуляції."
+  },
+  "opening_intro_06": {
+    "en": "Oh, \"day trading\" means buying and selling\r\nshares over one day. You'll hear it a lot!",
+    "ua": "О, «денна торгівля» — це купівля й продаж\nакцій протягом дня. Почуєш це не раз!"
+  },
+  "opening_intro_07": {
+    "en": "By the way, I'm Cash Stockton. My parents\r\nreally hit the mark with that one.",
+    "ua": "До речі, я Кеш Стоктон. Батьки\nз ім'ям влучили в яблучко."
+  },
+  "opening_intro_08": {
+    "en": "And you're...",
+    "ua": "А ти…"
+  },
+  "opening_intro_09": {
+    "en": "[PLAYER_NAME], right? Gotcha.",
+    "ua": "[PLAYER_NAME], так? Зрозумів."
+  },
+  "opening_intro_10": {
+    "en": "So, whaddya say, kid?",
+    "ua": "То що скажеш, малий?"
+  },
+  "opening_intro_11": {
+    "en": "Wanna try the day trading tutorial?",
+    "ua": "Спробуєш навчання денної торгівлі?"
+  },
+  "opening_intro_tutorial_yes": {
+    "en": "Sure, I'll give it a go.",
+    "ua": "Гаразд, спробую."
+  },
+  "opening_intro_tutorial_no": {
+    "en": "Maybe later...",
+    "ua": "Може, пізніше…"
+  },
+  "opening_intro_12": {
+    "en": "You got it!",
+    "ua": "Зрозумів!"
+  },
+  "opening_intro_13": {
+    "en": "Still loving that enthusiasm. Never lose\r\nthat, kid. Let's get you started, then!",
+    "ua": "Мені подобається цей запал. Не втрачай\nйого, малий. Тоді почнімо!"
+  },
+  "opening_intro_14": {
+    "en": "How was the tutorial, kid?",
+    "ua": "Ну як навчання, малий?"
+  },
+  "opening_intro_15": {
+    "en": "You've taken your first step into\r\na larger world.",
+    "ua": "Ти зробив перший крок\nу великий світ."
+  },
+  "opening_intro_16": {
+    "en": "Trading stocks is simple really -\r\njust [System:Color name=\"mgTrd_red\" ]buy low and sell high[/System:Color]!",
+    "ua": "Торгувати акціями насправді просто —\n[System:Color name=\"mgTrd_red\" ]купуй дешево, продавай дорого[/System:Color]!"
+  },
+  "opening_intro_17": {
+    "en": "That's basically all there is to it,\r\nso don't forget it, kid!",
+    "ua": "Ось, власне, і все,\nтож не забувай, малий!"
+  },
+  "opening_intro_18": {
+    "en": "If you ever feel like refreshing yourself\r\non the basics, head on over to [System:Color name=\"mgTrd_red\" ]Trade[/System:Color].",
+    "ua": "Якщо захочеш освіжити основи,\nзаходь у розділ [System:Color name=\"mgTrd_red\" ]«Торгувати»[/System:Color]."
+  },
+  "opening_intro_19": {
+    "en": "You can participate in the\r\ntutorial there any time!",
+    "ua": "Там навчання можна\nпройти будь-коли!"
+  },
+  "opening_intro_20": {
+    "en": "Here's a little something to celebrate your\r\nfirst visit to the Mii Plaza Stock Exchange.",
+    "ua": "Ось тобі дещо на честь першого\nвізиту на Біржу Площі Mii."
+  },
+  "opening_intro_item_caption": {
+    "en": "Memento",
+    "ua": "Сувенір"
+  },
+  "opening_intro_item_00": {
+    "en": "Your first step towards\r\nbecoming a pro trader!",
+    "ua": "Твій перший крок до\nпрофесійного трейдингу!"
+  },
+  "opening_intro_item_01": {
+    "en": "Trader Badge",
+    "ua": "Значок трейдера"
+  },
+  "opening_intro_skip_00": {
+    "en": "Hey, it's your choice, kid. I'll just\r\ngive you one tip to start off.",
+    "ua": "Гей, вирішувати тобі, малий. Дам лише\nодну пораду для початку."
+  },
+  "opening_intro_skip_01": {
+    "en": "It's real simple - just [System:Color name=\"mgTrd_red\" ]buy low\r\nand sell high[/System:Color]!",
+    "ua": "Усе дуже просто — [System:Color name=\"mgTrd_red\" ]купуй дешево\nй продавай дорого[/System:Color]!"
+  },
+  "opening_intro_skip_02": {
+    "en": "That's basically all there is to it,\r\nso don't forget it, kid!",
+    "ua": "Ось, власне, і все,\nтож не забувай, малий!"
+  },
+  "opening_intro_skip_03": {
+    "en": "If you ever change your mind,\r\nhead on over to [System:Color name=\"mgTrd_red\" ]Trade[/System:Color].",
+    "ua": "Якщо передумаєш,\nзаходь у розділ [System:Color name=\"mgTrd_red\" ]«Торгувати»[/System:Color]."
+  },
+  "opening_tutor_trade_01": {
+    "en": "This is the stock trading screen.",
+    "ua": "Це екран торгівлі акціями."
+  },
+  "opening_tutor_trade_02": {
+    "en": "The basic principle of trading stocks\r\nis you gotta [System:Color name=\"mgTrd_red\" ]buy low[/System:Color] and [System:Color name=\"mgTrd_red\" ]sell high[/System:Color].",
+    "ua": "Головний принцип торгівлі акціями:\n[System:Color name=\"mgTrd_red\" ]купуй дешево[/System:Color] й [System:Color name=\"mgTrd_red\" ]продавай дорого[/System:Color]."
+  },
+  "opening_tutor_trade_03": {
+    "en": "This is a stock chart.",
+    "ua": "Це біржовий графік."
+  },
+  "opening_tutor_trade_04": {
+    "en": "Use it to make [System:Color name=\"mgTrd_red\" ]predictions [/System:Color]about whether\r\nthe share price is going to go up or down!",
+    "ua": "За ним [System:Color name=\"mgTrd_red\" ]передбачай[/System:Color], чи ціна\nакції зросте, чи впаде!"
+  },
+  "opening_tutor_trade_05": {
+    "en": "But you know what, kid? Predicting\r\nthings all by yourself is pretty tricky.",
+    "ua": "Але знаєш, малий? Передбачати\nвсе самотужки досить складно."
+  },
+  "opening_tutor_trade_06": {
+    "en": "That's where [System:Color name=\"mgTrd_red\" ]analysts[/System:Color] come in!",
+    "ua": "Тут і стануть у пригоді [System:Color name=\"mgTrd_red\" ]аналітики[/System:Color]!"
+  },
+  "opening_tutor_trade_07": {
+    "en": "For this tutorial, I've called in a few\r\nof my analyst friends to help out.",
+    "ua": "Для навчання я покликав кількох\nзнайомих аналітиків."
+  },
+  "opening_tutor_trade_08": {
+    "en": "But when you do this for real, you'll have\r\nto find your own analysts via StreetPass.",
+    "ua": "Але по-справжньому аналітиків доведеться\nшукати самому через StreetPass."
+  },
+  "opening_tutor_trade_09": {
+    "en": "Let's start by taking a look at how\r\na stock price can fluctuate.",
+    "ua": "Спершу подивимося, як може\nзмінюватися ціна акції."
+  },
+  "opening_tutor_trade_10": {
+    "en": "Uh-oh... An analyst is [System:Color name=\"mgTrd_red\" ]predicting\r\n[/System:Color]a drop in price.",
+    "ua": "Ой-ой… Аналітик [System:Color name=\"mgTrd_red\" ]передбачає\n[/System:Color]падіння ціни."
+  },
+  "opening_tutor_trade_11": {
+    "en": "Let's see how the price changes.",
+    "ua": "Подивімося, як зміниться ціна."
+  },
+  "opening_tutor_trade_12": {
+    "en": "Just as the analyst predicted, the\r\nstock's taken a bit of a dive.",
+    "ua": "Як і передбачав аналітик,\nакція трохи впала."
+  },
+  "opening_tutor_trade_13": {
+    "en": "Time to grab some shares! Press  or\r\ntouch the Buy button [System:Color name=\"mgTrd_red\" ]5 times [/System:Color]to stock up.",
+    "ua": "Час купувати! Натисни  або\nкнопку «Купити» [System:Color name=\"mgTrd_red\" ]5 разів[/System:Color]."
+  },
+  "opening_tutor_trade_14": {
+    "en": "Fantastic work, kid!\r\nYou've now got five units of stock.",
+    "ua": "Чудово, малий!\nТепер у тебе п'ять лотів акцій."
+  },
+  "opening_tutor_trade_15": {
+    "en": "You want to hold on to those\r\nuntil the price rises.",
+    "ua": "Тримай їх,\nпоки ціна не зросте."
+  },
+  "opening_tutor_trade_16": {
+    "en": "Would you look at that!\r\nThe price went up.",
+    "ua": "Ти тільки поглянь!\nЦіна зросла."
+  },
+  "opening_tutor_trade_17": {
+    "en": "Your profit went up to\r\n[System:Color name=\"mgTrd_red\" ][PROFITS]G[/System:Color]!",
+    "ua": "Твій прибуток зріс до\n[System:Color name=\"mgTrd_red\" ][PROFITS] G[/System:Color]!"
+  },
+  "opening_tutor_trade_18": {
+    "en": "This [System:Color name=\"mgTrd_red\" ]profit/loss indicator [/System:Color]shows how much\r\nyou're ahead or behind at that moment.",
+    "ua": "Цей [System:Color name=\"mgTrd_red\" ]показник прибутку/збитку [/System:Color]показує,\nскільки ти зараз у плюсі чи мінусі."
+  },
+  "opening_tutor_trade_19": {
+    "en": "Buy when the price is low and sell when\r\nthe price is high to maximise your gains.",
+    "ua": "Купуй, коли ціна низька, і продавай,\nколи висока, щоб заробити найбільше."
+  },
+  "opening_tutor_trade_20": {
+    "en": "Since we're on a nice fat profit right now,\r\ntime to sell! Press  or touch the Sell\r\nbutton [System:Color name=\"mgTrd_red\" ]5 times [/System:Color]to unload your stock.",
+    "ua": "Зараз у нас чималий прибуток,\nтож час продавати! Натисни  або\nкнопку «Продати» [System:Color name=\"mgTrd_red\" ]5 разів[/System:Color]."
+  },
+  "opening_tutor_trade_21": {
+    "en": "There! You made your first\r\n[System:Color name=\"mgTrd_red\" ][PROFITS]G[/System:Color], kid! You did good.",
+    "ua": "Ось! Ти заробив перші\n[System:Color name=\"mgTrd_red\" ][PROFITS] G[/System:Color], малий! Молодець."
+  },
+  "opening_tutor_trade_22": {
+    "en": "Let's keep an eye on the price\r\nof this stock.",
+    "ua": "Стежмо за ціною\nцієї акції."
+  },
+  "opening_tutor_trade_23": {
+    "en": "Another drop! Quick, buy\r\nanother five units!",
+    "ua": "Знову падіння! Швидко, купи\nще п'ять лотів!"
+  },
+  "opening_tutor_trade_24": {
+    "en": "Just sit on these until the\r\nprice goes up again.",
+    "ua": "Тримай їх, поки ціна\nзнову не зросте."
+  },
+  "opening_tutor_trade_25": {
+    "en": "Whoa, would you look at that?\r\nA [System:Color name=\"mgTrd_red\" ]news report [/System:Color]means big price\r\nchanges are on the way.",
+    "ua": "Ого, ти тільки глянь!\n[System:Color name=\"mgTrd_red\" ]Новини[/System:Color] означають, що ціна\nсильно зміниться."
+  },
+  "opening_tutor_trade_26": {
+    "en": "This was good news and the price\r\nwent up - but it could just as easily\r\nhave been bad news!",
+    "ua": "Новини були добрі, і ціна зросла,\nале так само могли бути\nй погані!"
+  },
+  "opening_tutor_trade_27": {
+    "en": "Let's sell these shares\r\nand make a tidy profit!",
+    "ua": "Продаймо ці акції\nй отримаймо гарний прибуток!"
+  },
+  "opening_tutor_trade_28": {
+    "en": "This time, you made [System:Color name=\"mgTrd_red\" ][PROFITS]G[/System:Color]!\r\nEven more than before!",
+    "ua": "Цього разу ти заробив [System:Color name=\"mgTrd_red\" ][PROFITS] G[/System:Color]!\nЩе більше, ніж минулого разу!"
+  },
+  "opening_tutor_trade_29": {
+    "en": "In this tutorial, the price fluctuation\r\nstopped while you were buying shares.",
+    "ua": "У навчанні ціна зупинялася,\nпоки ти купував акції."
+  },
+  "opening_tutor_trade_30": {
+    "en": "But in the real world, the share price\r\nwill stop for no-one! Act fast!",
+    "ua": "Але насправді ціна ні на кого\nне чекає! Дій швидко!"
+  },
+  "opening_tutor_trade_31": {
+    "en": "Time to see how you did in\r\nthat trading session, kid.",
+    "ua": "Час глянути, як тобі\nвдався сеанс, малий."
+  },
+  "opening_tutor_scoreboard_buy": {
+    "en": "Buy 5 units of stock.",
+    "ua": "Купіть 5 лотів акцій."
+  },
+  "opening_tutor_scoreboard_sell": {
+    "en": "Sell 5 units of stock.",
+    "ua": "Продайте 5 лотів акцій."
+  },
+  "opening_tutor_result_00": {
+    "en": "Nice work, kid. You made [System:Color name=\"mgTrd_red\" ][PROFITS]G[/System:Color]!\r\nThat's it for this tutorial.",
+    "ua": "Чудова робота, малий. Ти заробив [System:Color name=\"mgTrd_red\" ][PROFITS] G[/System:Color]!\nНа цьому навчання все."
+  },
+  "opening_tutor_result_01": {
+    "en": "Now it's time to go and get your feet\r\nwet on the trading floor! Good luck!",
+    "ua": "Тепер час спробувати себе\nв залі торгів! Щасти!"
+  },
+  "opening_outro_00": {
+    "en": "The assets of pro trader [System:Color name=\"mgTrd_red\" ]William\r\nO'Naire[/System:Color] just reached 10 billion G!",
+    "ua": "Активи профі-трейдера [System:Color name=\"mgTrd_red\" ]Вільяма\nО'Нейра[/System:Color] щойно сягнули 10 мільярдів G!"
+  },
+  "opening_outro_01": {
+    "en": "Wow... [System:Color name=\"mgTrd_red\" ]10 billion G[/System:Color]? That William O'Naire\r\nis even more aptly named than I am.",
+    "ua": "Ого… [System:Color name=\"mgTrd_red\" ]10 мільярдів G[/System:Color]? Ім'я Вільяма\nО'Нейра ще влучніше за моє."
+  },
+  "opening_outro_02": {
+    "en": "What's that, kid? You want to follow in\r\nWilliam O'Naire's footsteps?",
+    "ua": "Що, малий? Хочеш піти\nслідами Вільяма О'Нейра?"
+  },
+  "opening_outro_03": {
+    "en": "Well...I gotta be honest with you.\r\nThat could be a bit of a tall order.",
+    "ua": "Що ж… скажу чесно.\nЦе може бути заскладно."
+  },
+  "opening_outro_04": {
+    "en": "Why don't we aim for [System:Color name=\"mgTrd_red\" ]10 million[/System:Color]\r\nto start with?",
+    "ua": "Може, для початку поцілимо\nв [System:Color name=\"mgTrd_red\" ]10 мільйонів[/System:Color]?"
+  },
+  "opening_outro_05": {
+    "en": "Millions may not be as cool\r\nas billions, but you'll learn the\r\nups and downs of the market.",
+    "ua": "Мільйони, може, й не такі круті,\nяк мільярди, але так ти пізнаєш\nзлети й падіння ринку."
+  },
+  "listed_00": {
+    "en": "Everyone's talking about all the G you've\r\nbeen earning. Keep up the good work, kid!",
+    "ua": "Усі говорять про твої заробітки.\nТак тримати, малий!"
+  },
+  "listed_01": {
+    "en": "Say, kid... Notice how some analysts around\r\nhere are dressed alike? Well, if you have a\r\nlot of [System:Color name=\"mgTrd_red\" ]analysts wearing the same colour[/System:Color]...",
+    "ua": "Слухай, малий… Помітив, що деякі аналітики\nвдягнені однаково? Якщо в тебе багато\n[System:Color name=\"mgTrd_red\" ]аналітиків в одному кольорі[/System:Color]…"
+  },
+  "listed_01_01": {
+    "en": "That's usually a good sign there'll be\r\nbreaking news during your trading\r\nsession. Just a little pro tip for you!",
+    "ua": "Це зазвичай добрий знак, що під час\nсеансу будуть термінові новини.\nМаленька порада від профі!"
+  },
+  "listed_02": {
+    "en": "Looks like [System:Color name=\"mgTrd_red\" ][STOCK_NAME]\r\n[/System:Color]just got listed on the stock exchange.",
+    "ua": "Схоже, [System:Color name=\"mgTrd_red\" ][STOCK_NAME]\n[/System:Color]щойно вийшла на біржу."
+  },
+  "listed_03": {
+    "en": "You can now trade shares of\r\n[STOCK_NAME]!",
+    "ua": "Тепер можна торгувати акціями\n[STOCK_NAME]!"
+  },
+  "listed_04": {
+    "en": "Keep up the good work! Every G brings\r\nyou closer to your financial goal.",
+    "ua": "Так тримати! Кожен G наближає\nтебе до фінансової мети."
+  },
+  "listed_00_01_00": {
+    "en": "Hey kid, here's a heads-up\r\nabout the predictions that\r\nanalysts make during a session.",
+    "ua": "Гей, малий, ось підказка\nпро прогнози аналітиків\nпід час сеансу."
+  },
+  "listed_00_01_01": {
+    "en": "If an analyst's prediction is followed\r\nby a question mark, there's a chance\r\n[System:Color name=\"mgTrd_red\" ]the prediction may be wrong[/System:Color].",
+    "ua": "Якщо після прогнозу аналітика стоїть\nзнак питання, є шанс, що\n[System:Color name=\"mgTrd_red\" ]прогноз помилковий[/System:Color]."
+  },
+  "listed_00_02_00": {
+    "en": "Hey, kid, I just remembered something\r\nabout those badges some analysts wear.",
+    "ua": "Гей, малий, я згадав дещо\nпро значки на деяких аналітиках."
+  },
+  "listed_00_02_01": {
+    "en": "If an analyst is wearing one, there's\r\na good chance they'll [System:Color name=\"mgTrd_red\" ]predict breaking\r\nnews [/System:Color]during a trading session.",
+    "ua": "Якщо аналітик носить такий, він, найпевніше,\n[System:Color name=\"mgTrd_red\" ]передбачить термінові\nновини [/System:Color]під час сеансу."
+  },
+  "listed_00_03_00": {
+    "en": "Speaking of which... The next time you're\r\non the Trade screen, try touching the\r\nicon on the bottom right.",
+    "ua": "До речі… Наступного разу на екрані\nторгів торкнися значка\nвнизу праворуч."
+  },
+  "listed_00_03_01": {
+    "en": "That'll show you what shares you're\r\ncurrently holding and a breakdown\r\nof your assets. Pretty nice feature, right?",
+    "ua": "Так побачиш, які акції в тебе\nзараз є, і склад активів.\nЗручно, правда?"
+  },
+  "listed_congratulationsT": {
+    "en": "New listing!",
+    "ua": "Нова компанія!"
+  },
+  "listed_tradecenterT": {
+    "en": "Mii Plaza Stock Exchange",
+    "ua": "Біржа Площі Mii"
+  },
+  "staffroll_after_listed_00": {
+    "en": "[System:Color name=\"mgTrd_red\" ][STOCK_NAME0] [/System:Color]just got listed!\r\n\r\nYou can now trade shares of\r\n[STOCK_NAME0].",
+    "ua": "[System:Color name=\"mgTrd_red\" ][STOCK_NAME0] [/System:Color]щойно вийшла на біржу!\n\nТепер можна торгувати акціями\n[STOCK_NAME0]."
+  },
+  "staffroll_after_listed_cap_00": {
+    "en": "Listing Announcement",
+    "ua": "Нова компанія на біржі"
+  },
+  "rescue_00": {
+    "en": "Hmm? Is there a problem?",
+    "ua": "Гм? Якісь проблеми?"
+  },
+  "rescue_01": {
+    "en": "Yikes!",
+    "ua": "Ой!"
+  },
+  "rescue_02": {
+    "en": "You're running low on capital, kid. You\r\ncan't do much trading without funds!",
+    "ua": "У тебе мало капіталу, малий.\nБез коштів багато не наторгуєш!"
+  },
+  "rescue_03": {
+    "en": "Good morrow to you fine gentlefolk.\r\nLooks like you're in a spot of bother.",
+    "ua": "Доброго дня, шановні.\nСхоже, у вас скрута."
+  },
+  "rescue_04": {
+    "en": "Hey, you're...the master\r\ntrader William O'Naire!",
+    "ua": "Гей, та ви ж… майстер-трейдер\nВільям О'Нейр!"
+  },
+  "rescue_05": {
+    "en": "Astute observation, sir. So, you there - \r\na little short on funds and stocks, yes?",
+    "ua": "Влучне спостереження. Отже, ви —\nтрохи без коштів і акцій, так?"
+  },
+  "rescue_06": {
+    "en": "That is a real shame. A real, crying shame.",
+    "ua": "Яка шкода. Справжня, гірка шкода."
+  },
+  "rescue_07": {
+    "en": "I suppose there is nothing for it.\r\nHave a little pocket money on me.",
+    "ua": "Що ж, нічого не вдієш.\nОсь вам трохи кишенькових."
+  },
+  "rescue_08": {
+    "en": "Your funds increased to [System:Color name=\"mgTrd_red\" ][MONEY]G[/System:Color]!",
+    "ua": "Ваші кошти зросли до [System:Color name=\"mgTrd_red\" ][MONEY] G[/System:Color]!"
+  },
+  "rescue_09": {
+    "en": "No need to repay me. I can\r\nearn it back in 3 seconds.",
+    "ua": "Не треба повертати. Я заробляю\nце за 3 секунди."
+  },
+  "rescue_10": {
+    "en": "Well, I'm off. Busy busy busy. You know\r\nhow it is. Good luck, [PLAYER_NAME].",
+    "ua": "Ну, я пішов. Справи, справи, справи.\nСамі розумієте. Щасти, [PLAYER_NAME]."
+  },
+  "rescue_11": {
+    "en": "You really lucked out, kid! If it weren't for\r\nWilliam O'Naire, you'd be on the streets!",
+    "ua": "Тобі пощастило, малий! Якби не\nВільям О'Нейр, ти б опинився на вулиці!"
+  },
+  "rescue_12": {
+    "en": "Now you can get back to trading!",
+    "ua": "Тепер можна знову торгувати!"
+  },
+  "rescue_13": {
+    "en": "Make sure to keep better tabs on\r\nyour finances from now on!",
+    "ua": "Відтепер краще стеж\nза своїми фінансами!"
+  },
+  "rescue_cautionT": {
+    "en": "WARNING!!",
+    "ua": "УВАГА!!"
+  },
+  "rescue_caution_txtT": {
+    "en": "Insufficient funds!",
+    "ua": "Бракує коштів!"
+  },
+  "target achievement_00": {
+    "en": "Congrats on reaching\r\n[System:Color name=\"mgTrd_red\" ][ASSETS_TARGET]G[/System:Color]!",
+    "ua": "Вітаю з досягненням\n[System:Color name=\"mgTrd_red\" ][ASSETS_TARGET] G[/System:Color]!"
+  },
+  "target achievement_01": {
+    "en": "I knew you had it in\r\nyou, [PLAYER_NAME].",
+    "ua": "Я знав, що ти зможеш,\n[PLAYER_NAME]."
+  },
+  "target achievement_02": {
+    "en": "The Mii Plaza Stock Exchange\r\nwould like to give you a little\r\ngift for being so great at your job!",
+    "ua": "Біржа Площі Mii хоче\nподарувати тобі дещо\nза чудову роботу!"
+  },
+  "target achievement_03": {
+    "en": "Time to set your sights on the\r\nnext target - [System:Color name=\"mgTrd_red\" ][ASSETS_TARGET_NEXT]G[/System:Color]!",
+    "ua": "Час націлитися на\nнову мету — [System:Color name=\"mgTrd_red\" ][ASSETS_TARGET_NEXT] G[/System:Color]!"
+  },
+  "target achievement_telop": {
+    "en": "Target achieved!",
+    "ua": "Мету досягнуто!"
+  },
+  "target achievement_info_00": {
+    "en": "A gift for being so talented.",
+    "ua": "Подарунок за талант."
+  },
+  "ending_00": {
+    "en": "Congratulations, kid! Your assets are\r\nworth a whopping [System:Color name=\"mgTrd_red\" ]100 million G[/System:Color]!\r\nI knew you had it in you.",
+    "ua": "Вітаю, малий! Твої активи\nварті аж [System:Color name=\"mgTrd_red\" ]100 мільйонів G[/System:Color]!\nЯ знав, що ти зможеш."
+  },
+  "ending_01": {
+    "en": "Here's a present from the stock\r\nexchange! It's a...(drumroll please)",
+    "ua": "Ось подарунок від біржі!\nЦе… (барабанний дріб)"
+  },
+  "ending_02": {
+    "en": "[System:Color name=\"mgTrd_red\" ]Golden [PLAYER_NAME] Statue[/System:Color]!\r\nIt looks just like you!",
+    "ua": "[System:Color name=\"mgTrd_red\" ]Золота статуя [PLAYER_NAME][/System:Color]!\nСхожа на тебе як дві краплі!"
+  },
+  "ending_03": {
+    "en": "And here's a little something\r\nfrom me, kid.",
+    "ua": "А це маленький подарунок\nвід мене, малий."
+  },
+  "ending_item_caption": {
+    "en": "Present",
+    "ua": "Дарунок"
+  },
+  "ending_04": {
+    "en": "You got the\r\n[System:Color name=\"mgTrd_red\" ]Moneybags Hat[/System:Color]!",
+    "ua": "Ви отримали\n[System:Color name=\"mgTrd_red\" ]Капелюх багатія[/System:Color]!"
+  },
+  "ending_05": {
+    "en": "You heard predictions from [COUNT_MII] analysts\r\nand it took you [COUNT_PLAY] day trade sessions\r\nto get to 100 million G.",
+    "ua": "Ти вислухав прогнози [COUNT_MII] аналітиків\nй провів [COUNT_PLAY] сеансів денної торгівлі,\nщоб дійти до 100 мільйонів G."
+  },
+  "ending_06": {
+    "en": "You're truly a pro trader now!",
+    "ua": "Тепер ти справжній профі-трейдер!"
+  },
+  "ending_07": {
+    "en": "Time to set your eyes on the\r\nultimate goal... [System:Color name=\"mgTrd_red\" ]10 billion G[/System:Color]!",
+    "ua": "Час націлитися на\nнайвищу мету… [System:Color name=\"mgTrd_red\" ]10 мільярдів G[/System:Color]!"
+  },
+  "ending_10billion_00": {
+    "en": "You did it, kid! You made it to [System:Color name=\"mgTrd_red\" ]10 billion G[/System:Color]!\r\nI always knew you'd be a world-class\r\ntrader someday!",
+    "ua": "Ти зміг, малий! Ти дійшов до [System:Color name=\"mgTrd_red\" ]10 мільярдів G[/System:Color]!\nЯ завжди знав, що колись ти станеш\nтрейдером світового рівня!"
+  },
+  "ending_10billion_01": {
+    "en": "Here's a present from the stock\r\nexchange! It's a...(drumroll please)",
+    "ua": "Ось подарунок від біржі!\nЦе… (барабанний дріб)"
+  },
+  "ending_10billion_02": {
+    "en": "[System:Color name=\"mgTrd_red\" ]24-Carat Gold [PLAYER_NAME] Statue[/System:Color]!\r\nIt's even bigger and fancier than the last one!",
+    "ua": "[System:Color name=\"mgTrd_red\" ]Статуя [PLAYER_NAME] з 24-кар. золота[/System:Color]!\nЩе більша й розкішніша за попередню!"
+  },
+  "ending_10billion_03": {
+    "en": "So, I hear we have a new 10 billion G\r\ntrader in town?",
+    "ua": "Кажуть, у місті новий\nтрейдер на 10 мільярдів G?"
+  },
+  "ending_10billion_04": {
+    "en": "Wow...it's William\r\nO'Naire himself!",
+    "ua": "Ого… та це ж сам\nВільям О'Нейр!"
+  },
+  "ending_10billion_05": {
+    "en": "I heard that someone had matched my\r\nfamous feat, so I toddled down to see...",
+    "ua": "Почув, що хтось повторив мій\nвідомий подвиг, тож прийшов подивитися…"
+  },
+  "ending_10billion_06": {
+    "en": "I should have surmised it would\r\nbe you, [PLAYER_NAME].",
+    "ua": "Слід було здогадатися,\nщо це ви, [PLAYER_NAME]."
+  },
+  "ending_10billion_07": {
+    "en": "I must confess, I had an inkling that\r\nyou would reach this point eventually...",
+    "ua": "Мушу зізнатися, я передчував,\nщо колись ви цього досягнете…"
+  },
+  "ending_10billion_08": {
+    "en": "But I did not for one moment think\r\nthat it would be so soon!",
+    "ua": "Але й гадки не мав,\nщо так скоро!"
+  },
+  "ending_10billion_09": {
+    "en": "Congratulations indeed.",
+    "ua": "Щиро вітаю."
+  },
+  "ending_10billion_10": {
+    "en": "Well, I'm off. Farewell, [PLAYER_NAME].\r\nBy the way, feel free to call me Billy.",
+    "ua": "Ну, я пішов. Прощавайте, [PLAYER_NAME].\nДо речі, кличте мене просто Біллі."
+  },
+  "ending_10billion_11": {
+    "en": "Earning the praise of the fat cats AND\r\nBilly O'Naire in the same day...",
+    "ua": "Похвала від товстосумів І від\nБіллі О'Нейра за один день…"
+  },
+  "ending_10billion_12": {
+    "en": "Nice work, kid!",
+    "ua": "Чудова робота, малий!"
+  },
+  "ending_10billion_13": {
+    "en": "Where is there to go from here? I'm\r\nsure you'll find new heights to reach!",
+    "ua": "Куди тепер? Певен, ти знайдеш\nнові вершини!"
+  },
+  "ending_10billion_14": {
+    "en": "All I can say is, I wish you the best of luck!",
+    "ua": "Можу лише побажати тобі успіху!"
+  },
+  "shop_explanation_00": {
+    "en": "In this shop, you can buy and sell\r\nmerchandise of listed companies.",
+    "ua": "У цьому магазині можна купувати й продавати\nтовари компаній з біржі."
+  },
+  "shop_explanation_01": {
+    "en": "The merchandise you buy here\r\nwill be sent to the [System:Color name=\"mgTrd_red\" ]Showroom[/System:Color].",
+    "ua": "Куплені тут товари\nпотрапляють у [System:Color name=\"mgTrd_red\" ]шоурум[/System:Color]."
+  },
+  "shop_explanation_02": {
+    "en": "Additionally, buying things helps that\r\ncompany grow - you might see more\r\n[System:Color name=\"mgTrd_red\" ]positive newsflashes [/System:Color]while trading!",
+    "ua": "А ще покупки допомагають компанії\nрости — під час торгів може бути\nбільше [System:Color name=\"mgTrd_red\" ]добрих новин[/System:Color]!"
+  },
+  "shop_explanation_03": {
+    "en": "Which in turn means more chances to\r\nrack up a big profit! So buy, buy, buy!",
+    "ua": "А це означає більше шансів на великий\nприбуток! Тож купуй, купуй, купуй!"
+  },
+  "select_explanation_00": {
+    "en": "Here, analysts will offer their\r\n[System:Color name=\"mgTrd_red\" ]price fluctuation prediction[/System:Color].",
+    "ua": "Тут аналітики дають свій\n[System:Color name=\"mgTrd_red\" ]прогноз коливань ціни[/System:Color]."
+  },
+  "select_explanation_01": {
+    "en": "Let's see what they have to say.",
+    "ua": "Послухаймо, що вони скажуть."
+  },
+  "select_explanation_02": {
+    "en": "The chart represents the combined\r\nwisdom of all the analysts.",
+    "ua": "Графік відображає спільну\nмудрість усіх аналітиків."
+  },
+  "select_explanation_03": {
+    "en": "So!",
+    "ua": "Отож!"
+  },
+  "select_explanation_04": {
+    "en": "The [System:Color name=\"mgTrd_red\" ]more analysts [/System:Color]you have, the\r\n[System:Color name=\"mgTrd_red\" ]more accurate [/System:Color]the predictions will be!",
+    "ua": "Що [System:Color name=\"mgTrd_red\" ]більше аналітиків[/System:Color], то\n[System:Color name=\"mgTrd_red\" ]точніші[/System:Color] прогнози!"
+  },
+  "select_explanation_05": {
+    "en": "The same session can look very different\r\ndepending on the number of analysts.",
+    "ua": "Сеанс виглядає зовсім по-різному\nзалежно від кількості аналітиків."
+  },
+  "select_explanation_06": {
+    "en": "A lot of analysts will give you a\r\nvery detailed forecast.",
+    "ua": "Багато аналітиків дадуть\nдуже докладний прогноз."
+  },
+  "select_explanation_07": {
+    "en": "So look for a company with a lot of\r\nprice increases and earn that G!",
+    "ua": "Тож шукай компанію з частим\nростом ціни й заробляй G!"
+  },
+  "select_explanation_pict_txtT": {
+    "en": "When you have...",
+    "ua": "Коли у вас…"
+  },
+  "select_explanation_pict_capT_00": {
+    "en": "A few analysts",
+    "ua": "Мало аналітиків"
+  },
+  "select_explanation_pict_capT_01": {
+    "en": "A lot of analysts",
+    "ua": "Багато аналітиків"
+  },
+  "anytimetrade_explanation_00": {
+    "en": "You can now [System:Color name=\"mgTrd_red\" ]edit your portfolio[/System:Color]!",
+    "ua": "Тепер можна [System:Color name=\"mgTrd_red\" ]змінювати портфель[/System:Color]!"
+  },
+  "anytimetrade_explanation_01": {
+    "en": "The Edit Portfolio option lets you buy\r\nand sell shares without analyst input.",
+    "ua": "«Змінити портфель» дає змогу купувати\nй продавати акції без аналітиків."
+  },
+  "anytimetrade_explanation_02": {
+    "en": "It's handy for selling shares you didn't\r\nsell during your day trade session.",
+    "ua": "Зручно продати акції, які не встиг\nпродати під час денної торгівлі."
+  },
+  "anytimetrade_explanation_03": {
+    "en": "Or to get a jump on the price\r\ntrends ahead of a session!",
+    "ua": "Або випередити цінові\nтенденції до сеансу!"
+  },
+  "anytimetrade_explanation_04": {
+    "en": "Prices won't start fluctuating until you\r\nbegin day trading, so take your time!",
+    "ua": "Ціни не змінюються до початку\nденної торгівлі, тож не поспішай!"
+  },
+  "arrival_explanation_00": {
+    "en": "Oh, new merchandise just\r\narrived at the [System:Color name=\"mgTrd_red\" ]shop[/System:Color]!",
+    "ua": "О, в [System:Color name=\"mgTrd_red\" ]магазин[/System:Color] щойно\nпривезли нові товари!"
+  },
+  "arrival_explanation_01": {
+    "en": "Exciting stuff! Maybe you\r\nshould go and check it out.",
+    "ua": "Цікаво! Може, варто\nпіти подивитися."
+  },
+  "title_aim_00": {
+    "en": "What's up, kid!",
+    "ua": "Як справи, малий!"
+  },
+  "title_aim_01": {
+    "en": "Your total assets are worth...\r\n[ASSETS_TARGET]G.",
+    "ua": "Твої активи варті…\n[ASSETS_TARGET] G."
+  },
+  "title_aim_02": {
+    "en": "If you reach [System:Color name=\"mgTrd_red\" ][ASSETS_TARGET_NEXT]G[/System:Color],\r\nyou'll get a gift from the stock exchange\r\nfor being so great at your job!",
+    "ua": "Якщо дійдеш до [System:Color name=\"mgTrd_red\" ][ASSETS_TARGET_NEXT] G[/System:Color],\nбіржа подарує тобі дещо\nза чудову роботу!"
+  },
+  "title_aim_03": {
+    "en": "You'll get a gift from the stock exchange\r\nif you reach [System:Color name=\"mgTrd_red\" ][ASSETS_TARGET_NEXT]G[/System:Color]!",
+    "ua": "Біржа зробить подарунок,\nякщо дійдеш до [System:Color name=\"mgTrd_red\" ][ASSETS_TARGET_NEXT] G[/System:Color]!"
+  },
+  "title_aim_04": {
+    "en": "Good luck in reaching\r\n[System:Color name=\"mgTrd_red\" ][ASSETS_TARGET_NEXT]G[/System:Color]!",
+    "ua": "Щасти дійти до\n[System:Color name=\"mgTrd_red\" ][ASSETS_TARGET_NEXT] G[/System:Color]!"
+  },
+  "title_aim_05": {
+    "en": "Happy trading!",
+    "ua": "Вдалих торгів!"
+  },
+  "result_explanation_00": {
+    "en": "Good going, kid! You achieved the\r\nrank of [System:Color name=\"mgTrd_red\" ][RANK] [/System:Color]for this session.",
+    "ua": "Молодець, малий! За цей сеанс\nти отримав ранг [System:Color name=\"mgTrd_red\" ][RANK] [/System:Color]."
+  },
+  "result_explanation_01": {
+    "en": "It was a pretty good session!",
+    "ua": "Досить вдалий сеанс!"
+  },
+  "result_explanation_01_1": {
+    "en": "Wow! I've never seen such\r\nskilful day trading before!",
+    "ua": "Ого! Такої вправної денної\nторгівлі я ще не бачив!"
+  },
+  "result_explanation_02": {
+    "en": "I'd say you're ready to handle a\r\ngreater volume of shares at a time.",
+    "ua": "Гадаю, ти готовий до більших\nобсягів акцій за раз."
+  },
+  "result_explanation_03": {
+    "en": "The [System:Color name=\"mgTrd_red\" ]number of shares per unit of\r\nstock [/System:Color]has been increased!",
+    "ua": "[System:Color name=\"mgTrd_red\" ]Кількість акцій у лоті[/System:Color]\nзбільшено!"
+  },
+  "collection_open_00": {
+    "en": "Nice to meet you!\r\nI'm [System:Color name=\"mgTrd_red\" ]Cher Preiss[/System:Color].\r\n",
+    "ua": "Приємно познайомитися!\nЯ [System:Color name=\"mgTrd_red\" ]Шер Прайс[/System:Color].\n"
+  },
+  "collection_open_01": {
+    "en": "I've come to let you know that the\r\n[System:Color name=\"mgTrd_red\" ]Merchandise Centre[/System:Color] is now open!",
+    "ua": "Прийшла сказати, що\n[System:Color name=\"mgTrd_red\" ]Торговий центр[/System:Color] відкрито!"
+  },
+  "collection_open_02": {
+    "en": "I work in the shop.",
+    "ua": "Я працюю в магазині."
+  },
+  "collection_open_03": {
+    "en": "I'll be there whenever you decide to\r\npay a visit. Hope to see you soon!",
+    "ua": "Буду там, коли вирішите\nзавітати. До зустрічі!"
+  },
+  "saveload_wait_messageT": {
+    "en": "Loading... Do not turn off the power.",
+    "ua": "Завантаження… Не вимикайте живлення."
+  },
+  "staffroll_after_explanation_00": {
+    "en": "It'll take you a long time to reach 10\r\nbillion G trading such piddly amounts...",
+    "ua": "Із такими дрібними сумами до 10\nмільярдів G ти йтимеш дуже довго…"
+  },
+  "staffroll_after_explanation_01": {
+    "en": "Let's fix that!",
+    "ua": "Виправмо це!"
+  },
+  "staffroll_after_explanation_02": {
+    "en": "From now on, the amount of\r\nshares per unit will go up even\r\nmore after each session!",
+    "ua": "Відтепер кількість акцій у лоті\nзростатиме ще більше\nпісля кожного сеансу!"
+  },
+  "introduction_hide_chart_00": {
+    "en": "Hmm, looks like the analysts\r\ngot a little stumped in the\r\nmiddle there.",
+    "ua": "Гм, схоже, аналітики\nтрохи заплуталися\nпосередині."
+  },
+  "introduction_hide_chart_01": {
+    "en": "There are some companies that\r\nare just too unpredictable to...\r\num...predict.",
+    "ua": "Є компанії, надто\nнепередбачувані, щоб…\nну… передбачити."
+  },
+  "introduction_hide_chart_02": {
+    "en": "You're gonna have to use your\r\nexperience to figure this one out, kid!",
+    "ua": "Доведеться розібратися\nз досвіду, малий!"
+  }
+}

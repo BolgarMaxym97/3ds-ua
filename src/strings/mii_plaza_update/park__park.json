@@ -1,0 +1,1030 @@
+{
+  "title_park": {
+    "en": "Plaza",
+    "ua": "Площа"
+  },
+  "title_park_sdw": {
+    "en": "Plaza",
+    "ua": "Площа"
+  },
+  "title_mii_caption": {
+    "en": "Mii characters:",
+    "ua": "Mii:"
+  },
+  "title_mii_caption_sdw": {
+    "en": "Mii characters:",
+    "ua": "Mii:"
+  },
+  "title_unit_00": {
+    "en": "Over",
+    "ua": "Понад"
+  },
+  "title_unit_sdw_00": {
+    "en": "Over",
+    "ua": "Понад"
+  },
+  "announce_go_entrance_first": {
+    "en": "Looks like you have company!\r\nGo to the entrance and see!",
+    "ua": "Схоже, у вас гості!\nЗайдіть до входу й погляньте!"
+  },
+  "announce_go_entrance": {
+    "en": "You've got company! Have a look\r\nonce you've played some games!",
+    "ua": "У вас гості! Загляньте до них,\nколи пограєте в ігри!"
+  },
+  "announce_wireless_off": {
+    "en": "To use StreetPass, enable\r\nwireless communication.",
+    "ua": "Щоб користуватися StreetPass,\nувімкніть бездротовий зв'язок."
+  },
+  "annouce_hat_arrival": {
+    "en": "New goodies are available\r\nin the exchange booth.",
+    "ua": "В обмінному пункті\nз'явилися новинки."
+  },
+  "annouce_balloon_arrival": {
+    "en": "New stock is available in\r\nthe exchange booth.",
+    "ua": "В обмінному пункті\nновий асортимент."
+  },
+  "annouce_h_b_arrival": {
+    "en": "New stock is available in\r\nthe exchange booth.",
+    "ua": "В обмінному пункті\nновий асортимент."
+  },
+  "annouce_go_hatshop_00": {
+    "en": "The exchange booth\r\nis now open!",
+    "ua": "Обмінний пункт\nвідкрито!"
+  },
+  "annouce_go_hatshop_01": {
+    "en": "To celebrate, here's\r\na present for you:\r\none free plaza ticket.",
+    "ua": "З цієї нагоди ось\nвам подарунок:\nбезкоштовний квиток Площі."
+  },
+  "annouce_go_hatshop_02": {
+    "en": "Try trading it in at the\r\nexchange booth!",
+    "ua": "Обміняйте його\nв обмінному пункті!"
+  },
+  "annouce_comp_mg_ticket_00": {
+    "en": "Congratulations!\r\n\r\nYou got every plaza ticket\r\nthat can be earned by\r\nplaying games!",
+    "ua": "Вітаємо!\n\nВи отримали всі квитки Площі,\nякі можна заробити\nв іграх!"
+  },
+  "annouce_comp_mg_ticket_01": {
+    "en": "To celebrate, here's\r\na present for you:\r\nthe final plaza ticket.",
+    "ua": "З цієї нагоди ось\nвам подарунок:\nостанній квиток Площі."
+  },
+  "announce_no_ce_play": {
+    "en": "You can select this if\r\nyou activate StreetPass\r\nin Settings.",
+    "ua": "Це можна вибрати,\nякщо активувати StreetPass\nу Налаштуваннях."
+  },
+  "announce_new_plaza": {
+    "en": "Talk to the rabbit to\r\nlearn more about the\r\nnew plaza games.",
+    "ua": "Поговоріть із кроликом,\nщоб дізнатися про нові\nігри площі."
+  },
+  "announce_present_00": {
+    "en": "Oh, hey!",
+    "ua": "О, привіт!"
+  },
+  "announce_present_01": {
+    "en": "Here's a present for you:\r\n[System:Color name=\"red\" ][BALLOON_NAME][/System:Color]!",
+    "ua": "Ось вам подарунок:\n[System:Color name=\"red\" ][BALLOON_NAME][/System:Color]!"
+  },
+  "announce_present_02": {
+    "en": "You can change the speech bubble\r\nsettings in Edit Greeting.",
+    "ua": "Вікно репліки можна змінити\nв меню «Змінити вітання»."
+  },
+  "announce_play_report_00": {
+    "en": "Oh...",
+    "ua": "О…"
+  },
+  "announce_play_report_01": {
+    "en": "One more thing...",
+    "ua": "І ще одне…"
+  },
+  "announce_play_report_02": {
+    "en": "You can change your setting for\r\nsharing software-usage information\r\nanytime by going to Settings.",
+    "ua": "Параметр обміну даними\nпро використання можна\nбудь-коли змінити в Налаштуваннях."
+  },
+  "announce_quick_00": {
+    "en": "Welcome to the SwiftPlay Plaza!",
+    "ua": "Вітаємо на Швидкій площі!"
+  },
+  "announce_quick_01": {
+    "en": "It's a streamlined version\r\nof the classic plaza you\r\nknow and love.",
+    "ua": "Це спрощена версія\nвідомої та улюбленої\nкласичної площі."
+  },
+  "announce_quick_02": {
+    "en": "Whether greeting Mii characters\r\nat the plaza entrance, or hopping\r\nbetween your favourite games...",
+    "ua": "Вітати Mii біля входу\nчи перемикатися між\nулюбленими іграми…"
+  },
+  "announce_quick_03": {
+    "en": "It all just got a lot swifter!",
+    "ua": "Тепер усе набагато швидше!"
+  },
+  "announce_quick_04": {
+    "en": "It's even quicker for users with\r\nNew Nintendo 3DS systems!",
+    "ua": "А на New Nintendo 3DS —\nще швидше!"
+  },
+  "announce_quick_05": {
+    "en": "Highly recommended for\r\npeople who have hundreds\r\nof StreetPass encounters!",
+    "ua": "Радимо тим, у кого\nсотні зустрічей\nStreetPass!"
+  },
+  "announce_quick_06": {
+    "en": "You can switch between the\r\ntwo plazas by touching the icon\r\non the Touch Screen.",
+    "ua": "Перемикатися між двома\nплощами можна, торкнувшись\nзначка на сенсорному екрані."
+  },
+  "np_mii_1time": {
+    "en": "1x",
+    "ua": "1x"
+  },
+  "np_mii_time": {
+    "en": "[0]x",
+    "ua": "[0] раз."
+  },
+  "np_mii_1min": {
+    "en": "1 minute ago",
+    "ua": "1 хв тому"
+  },
+  "np_mii_min": {
+    "en": "[0] minutes ago",
+    "ua": "[0] хв тому"
+  },
+  "np_mii_1hour": {
+    "en": "1 hour ago",
+    "ua": "1 год тому"
+  },
+  "np_mii_hour": {
+    "en": "[0] hours ago",
+    "ua": "[0] год тому"
+  },
+  "np_mii_1day": {
+    "en": "Yesterday",
+    "ua": "Учора"
+  },
+  "np_mii_day": {
+    "en": "[0] days ago",
+    "ua": "[0] дн. тому"
+  },
+  "np_mii_1month": {
+    "en": "1 month ago",
+    "ua": "1 місяць тому"
+  },
+  "np_mii_month": {
+    "en": "[0] months ago",
+    "ua": "[0] міс. тому"
+  },
+  "np_mii_1year": {
+    "en": "1 year ago",
+    "ua": "1 рік тому"
+  },
+  "np_mii_year": {
+    "en": "[0] years ago",
+    "ua": "[0] р. тому"
+  },
+  "np_menu_option": {
+    "en": "Settings",
+    "ua": "Параметри"
+  },
+  "np_menu_music": {
+    "en": "Music Player",
+    "ua": "Музика"
+  },
+  "np_menu_prize": {
+    "en": "Accomplishments",
+    "ua": "Досягнення"
+  },
+  "np_menu_map": {
+    "en": "StreetPass Map",
+    "ua": "Карта StreetPass"
+  },
+  "np_menu_figure": {
+    "en": "Slideshow",
+    "ua": "Слайд-шоу"
+  },
+  "np_menu_shop": {
+    "en": "Shop",
+    "ua": "Магазин"
+  },
+  "np_menu_cap": {
+    "en": "Exchange Booth",
+    "ua": "Обмінний пункт"
+  },
+  "np_menu_cap_keep_out": {
+    "en": "Exchange Booth",
+    "ua": "Обмінний пункт"
+  },
+  "np_menu_patch": {
+    "en": "Check for Updates",
+    "ua": "Оновлення"
+  },
+  "np_menu_play": {
+    "en": "Play",
+    "ua": "Грати"
+  },
+  "np_menu_gate": {
+    "en": "Entrance",
+    "ua": "Вхід"
+  },
+  "np_build_park": {
+    "en": "Back",
+    "ua": "Назад"
+  },
+  "gate_cap_u": {
+    "en": "Careful!",
+    "ua": "Обережно!"
+  },
+  "gate_notice00_u": {
+    "en": "You haven't played all of your plaza\r\ngames with your previous guest yet.",
+    "ua": "Ви ще не зіграли всі ігри площі\nз попереднім гостем."
+  },
+  "gate_notice00_u_m": {
+    "en": "You haven't played all of your plaza\r\ngames with your previous guests yet.",
+    "ua": "Ви ще не зіграли всі ігри площі\nз попередніми гостями."
+  },
+  "gate_shelter_notice00_u": {
+    "en": "Looks like there are still games to play.",
+    "ua": "Схоже, ще є ігри, у які можна пограти."
+  },
+  "gate_notice_sub00_u": {
+    "en": "If you go to the entrance now, you won't be able\r\nto play with them until they next visit.",
+    "ua": "Якщо зараз піти до входу, з ними можна буде\nзіграти лише після їхнього наступного візиту."
+  },
+  "gate_notice_sub00_u_m": {
+    "en": "If you go to the entrance now, you won't be able\r\nto play with them until they next visit.",
+    "ua": "Якщо зараз піти до входу, з ними можна буде\nзіграти лише після їхнього наступного візиту."
+  },
+  "gate_choice_go_play_u": {
+    "en": "Play",
+    "ua": "Грати"
+  },
+  "gate_shelter_choice_go_play_u": {
+    "en": "Keep Playing",
+    "ua": "Грати далі"
+  },
+  "gate_choice_go_gate_u": {
+    "en": "Go to Entrance",
+    "ua": "До входу"
+  },
+  "gate_choice_go_shelter_u": {
+    "en": "Send to Queue",
+    "ua": "У чергу"
+  },
+  "legend_cap_play_u": {
+    "en": "Play",
+    "ua": "Грати"
+  },
+  "legend_edgeT_00": {
+    "en": "StreetPass Quest",
+    "ua": "Порятунок Mii"
+  },
+  "legend_edge_sdw_00": {
+    "en": "StreetPass Quest",
+    "ua": "Порятунок Mii"
+  },
+  "legend_edgeT_01": {
+    "en": "StreetPass Quest II",
+    "ua": "Порятунок Mii II"
+  },
+  "legend_edge_sdw_01": {
+    "en": "StreetPass Quest II",
+    "ua": "Порятунок Mii II"
+  },
+  "legend_choiceT": {
+    "en": "Back",
+    "ua": "Назад"
+  },
+  "lower_total_cec": {
+    "en": "StreetPass Hits: [0]",
+    "ua": "Зустрічей: [0]"
+  },
+  "lower_park_mii": {
+    "en": "Plaza Population: [0]",
+    "ua": "Мешканців: [0]"
+  },
+  "lower_park_mii_00": {
+    "en": "Plaza Population: 3000+",
+    "ua": "Мешканців: 3000+"
+  },
+  "lower_home_text": {
+    "en": ": Return to HOME Menu",
+    "ua": ": назад у меню HOME"
+  },
+  "lower_save_text": {
+    "en": "Saving... Don't turn off the power.",
+    "ua": "Збереження… Не вимикайте\nконсоль."
+  },
+  "lower_commandRT_00": {
+    "en": "OK",
+    "ua": "OK"
+  },
+  "lower_commandRT_01": {
+    "en": "Back",
+    "ua": "Назад"
+  },
+  "lower_commandLT_00": {
+    "en": "Select",
+    "ua": "Вибрати"
+  },
+  "lower_page_button": {
+    "en": " Switch icons",
+    "ua": " Значки"
+  },
+  "lower_play_verT": {
+    "en": "Pack [0]",
+    "ua": "Набір [0]"
+  },
+  "minigame_title_mgLegend_00": {
+    "en": "[System:Size percent=\"80\" ]StreetPass Quest[/System:Size]",
+    "ua": "[System:Size percent=\"80\" ]Порятунок Mii[/System:Size]"
+  },
+  "minigame_title_mgLegend_00_sdw": {
+    "en": "[System:Size percent=\"80\" ]StreetPass Quest[/System:Size]",
+    "ua": "[System:Size percent=\"80\" ]Порятунок Mii[/System:Size]"
+  },
+  "minigame_title_mgLegend_01": {
+    "en": "[System:Size percent=\"80\" ]StreetPass Quest I & II[/System:Size]",
+    "ua": "[System:Size percent=\"80\" ]Порятунок Mii I і II[/System:Size]"
+  },
+  "minigame_title_mgLegend_01_sdw": {
+    "en": "[System:Size percent=\"80\" ]StreetPass Quest I & II[/System:Size]",
+    "ua": "[System:Size percent=\"80\" ]Порятунок Mii I і II[/System:Size]"
+  },
+  "minigame_title_mgPiece": {
+    "en": "[System:Size percent=\"80\" ]Puzzle Swap[/System:Size]",
+    "ua": "[System:Size percent=\"80\" ]Збери пазл[/System:Size]"
+  },
+  "minigame_title_mgPiece_sdw": {
+    "en": "[System:Size percent=\"80\" ]Puzzle Swap[/System:Size]",
+    "ua": "[System:Size percent=\"80\" ]Збери пазл[/System:Size]"
+  },
+  "minigame_title_mgSht": {
+    "en": "[System:Size percent=\"80\" ]StreetPass Squad[/System:Size]",
+    "ua": "[System:Size percent=\"80\" ]Галактика StreetPass[/System:Size]"
+  },
+  "minigame_title_mgSht_sdw": {
+    "en": "[System:Size percent=\"80\" ]StreetPass Squad[/System:Size]",
+    "ua": "[System:Size percent=\"80\" ]Галактика StreetPass[/System:Size]"
+  },
+  "minigame_title_mgBtl": {
+    "en": "[System:Size percent=\"80\" ]StreetPass Battle[/System:Size]",
+    "ua": "[System:Size percent=\"80\" ]Фортеця StreetPass[/System:Size]"
+  },
+  "minigame_title_mgBtl_sdw": {
+    "en": "[System:Size percent=\"80\" ]StreetPass Battle[/System:Size]",
+    "ua": "[System:Size percent=\"80\" ]Фортеця StreetPass[/System:Size]"
+  },
+  "minigame_title_mgFlo": {
+    "en": "[System:Size percent=\"80\" ]StreetPass Garden[/System:Size]",
+    "ua": "[System:Size percent=\"80\" ]Сад StreetPass[/System:Size]"
+  },
+  "minigame_title_mgFlo_sdw": {
+    "en": "[System:Size percent=\"80\" ]StreetPass Garden[/System:Size]",
+    "ua": "[System:Size percent=\"80\" ]Сад StreetPass[/System:Size]"
+  },
+  "minigame_title_mgPzd": {
+    "en": "[System:Size percent=\"80\" ]StreetPass Mansion[/System:Size]",
+    "ua": "[System:Size percent=\"80\" ]Таємничий маєток StreetPass[/System:Size]"
+  },
+  "minigame_title_mgPzd_sdw": {
+    "en": "[System:Size percent=\"80\" ]StreetPass Mansion[/System:Size]",
+    "ua": "[System:Size percent=\"80\" ]Таємничий маєток StreetPass[/System:Size]"
+  },
+  "minigame_title_mgFsh": {
+    "en": "[System:Size percent=\"80\" ]StreetPass Fishing[/System:Size]",
+    "ua": "[System:Size percent=\"80\" ]Риболовля StreetPass[/System:Size]"
+  },
+  "minigame_title_mgFsh_sdw": {
+    "en": "[System:Size percent=\"80\" ]StreetPass Fishing[/System:Size]",
+    "ua": "[System:Size percent=\"80\" ]Риболовля StreetPass[/System:Size]"
+  },
+  "minigame_title_mgZmb": {
+    "en": "[System:Size percent=\"80\" ]StreetPass Zombies[/System:Size]",
+    "ua": "[System:Size percent=\"80\" ]Зомбі StreetPass[/System:Size]"
+  },
+  "minigame_title_mgZmb_sdw": {
+    "en": "[System:Size percent=\"80\" ]StreetPass Zombies[/System:Size]",
+    "ua": "[System:Size percent=\"80\" ]Зомбі StreetPass[/System:Size]"
+  },
+  "minigame_title_mgCar": {
+    "en": "[System:Size percent=\"80\" ]StreetPass Slot Racer[/System:Size]",
+    "ua": "[System:Size percent=\"80\" ]Слот-перегони StreetPass[/System:Size]"
+  },
+  "minigame_title_mgCar_sdw": {
+    "en": "[System:Size percent=\"80\" ]StreetPass Slot Racer[/System:Size]",
+    "ua": "[System:Size percent=\"80\" ]Слот-перегони StreetPass[/System:Size]"
+  },
+  "minigame_title_mgTrd": {
+    "en": "[System:Size percent=\"80\" ]StreetPass Trader[/System:Size]",
+    "ua": "[System:Size percent=\"80\" ]Біржа StreetPass[/System:Size]"
+  },
+  "minigame_title_mgTrd_sdw": {
+    "en": "[System:Size percent=\"80\" ]StreetPass Trader[/System:Size]",
+    "ua": "[System:Size percent=\"80\" ]Біржа StreetPass[/System:Size]"
+  },
+  "minigame_title_mgChf": {
+    "en": "[System:Size percent=\"80\" ]StreetPass Chef[/System:Size]",
+    "ua": "[System:Size percent=\"80\" ]Ресторан StreetPass[/System:Size]"
+  },
+  "minigame_title_mgChf_sdw": {
+    "en": "[System:Size percent=\"80\" ]StreetPass Chef[/System:Size]",
+    "ua": "[System:Size percent=\"80\" ]Ресторан StreetPass[/System:Size]"
+  },
+  "minigame_title_mgNja": {
+    "en": "[System:Size percent=\"80\" ]StreetPass Ninja[/System:Size]",
+    "ua": "[System:Size percent=\"80\" ]Ніндзя StreetPass[/System:Size]"
+  },
+  "minigame_title_mgNja_sdw": {
+    "en": "[System:Size percent=\"80\" ]StreetPass Ninja[/System:Size]",
+    "ua": "[System:Size percent=\"80\" ]Ніндзя StreetPass[/System:Size]"
+  },
+  "minigame_title_mgExp": {
+    "en": "[System:Size percent=\"80\" ]StreetPass Explorers[/System:Size]",
+    "ua": "[System:Size percent=\"80\" ]Експедиція StreetPass[/System:Size]"
+  },
+  "minigame_title_mgExp_sdw": {
+    "en": "[System:Size percent=\"80\" ]StreetPass Explorers[/System:Size]",
+    "ua": "[System:Size percent=\"80\" ]Експедиція StreetPass[/System:Size]"
+  },
+  "balloon_common_00": {
+    "en": "I've played this!",
+    "ua": "Я в це грав!"
+  },
+  "balloon_common_01": {
+    "en": "I've played this.",
+    "ua": "Я в це грав."
+  },
+  "balloon_common_02": {
+    "en": "I've played this game!",
+    "ua": "Я грав у цю гру!"
+  },
+  "balloon_common_03": {
+    "en": "I bought this!",
+    "ua": "Я це купив!"
+  },
+  "balloon_common_04": {
+    "en": "I own this.",
+    "ua": "У мене це є."
+  },
+  "balloon_common_05": {
+    "en": "I've got this.",
+    "ua": "Це в мене є."
+  },
+  "balloon_common_06": {
+    "en": "I have this!",
+    "ua": "У мене таке є!"
+  },
+  "balloon_common_07": {
+    "en": "I've got this!",
+    "ua": "Це в мене є!"
+  },
+  "balloon_common_08": {
+    "en": "I've played it!",
+    "ua": "Грав у це!"
+  },
+  "balloon_common_09": {
+    "en": "I've played it.",
+    "ua": "Грав у це."
+  },
+  "free_get_balloon_up_00": {
+    "en": "Offer!",
+    "ua": "Акція!"
+  },
+  "free_get_balloon_low_00": {
+    "en": "Offer!",
+    "ua": "Акція!"
+  },
+  "np_menu_birthday": {
+    "en": "StreetPass Birthdays",
+    "ua": "Календар StreetPass"
+  },
+  "np_menu_vip_room": {
+    "en": "VIP Room",
+    "ua": "VIP-кімната"
+  },
+  "np_menu_hall_of_fame": {
+    "en": "Game Vault",
+    "ua": "Сховище ігор"
+  },
+  "np_menu_page_button": {
+    "en": "Switch Icons",
+    "ua": "Значки"
+  },
+  "np_menu_mode_button": {
+    "en": "Switch Plaza",
+    "ua": "Інша площа"
+  },
+  "np_menu_scroll_button": {
+    "en": "Scroll",
+    "ua": "Прокрутка"
+  },
+  "np_menu_shelter": {
+    "en": "Queue",
+    "ua": "Черга"
+  },
+  "premium_not_cap": {
+    "en": "StreetPass Mii Plaza Premium",
+    "ua": "Преміум-площа StreetPass Mii"
+  },
+  "premium_not__euro": {
+    "en": "This feature requires\r\nStreetPass Mii Plaza Premium.",
+    "ua": "Для цього потрібна\nПреміум-площа StreetPass Mii."
+  },
+  "premium_cec_off": {
+    "en": "You won't be able to view this unless\r\nyou activate StreetPass.",
+    "ua": "Це не можна переглянути,\nпоки StreetPass не активовано."
+  },
+  "hall_dlg_cap_00": {
+    "en": "Game Vault",
+    "ua": "Сховище ігор"
+  },
+  "hall_dlg_cap_01": {
+    "en": "Adding a Title",
+    "ua": "Додавання гри"
+  },
+  "hall_dlg_cap_03": {
+    "en": "Remove from Vault",
+    "ua": "Забрати зі сховища"
+  },
+  "hall_dlg_notice_00": {
+    "en": "What do you want to add?",
+    "ua": "Що додати?"
+  },
+  "hall_dlg_notice_01": {
+    "en": "Are you sure you want\r\nto add [MINIGAME_TITLE]\r\nto the vault?",
+    "ua": "Справді додати\n[MINIGAME_TITLE]\nдо сховища?"
+  },
+  "hall_dlg_notice_02": {
+    "en": "What do you want to do?",
+    "ua": "Що ви хочете зробити?"
+  },
+  "hall_dlg_notice_03": {
+    "en": "Are you sure you want\r\nto remove [MINIGAME_TITLE]\r\nfrom the vault?",
+    "ua": "Справді забрати\n[MINIGAME_TITLE]\nзі сховища?"
+  },
+  "hall_dlg_report_00": {
+    "en": "[MINIGAME_TITLE] has been\r\nadded to the vault!",
+    "ua": "[MINIGAME_TITLE]\nдодано до сховища!"
+  },
+  "hall_dlg_report_01": {
+    "en": "[MINIGAME_TITLE] has been\r\nremoved from the vault.",
+    "ua": "[MINIGAME_TITLE]\nзабрано зі сховища."
+  },
+  "hall_dlg_report_02": {
+    "en": "This title can be found\r\nat the end of the game\r\nlist in the Mii Plaza.",
+    "ua": "Цю гру можна знайти\nв кінці списку ігор\nна Площі Mii."
+  },
+  "hall_dlg_report_03": {
+    "en": "The order in which titles\r\nappear in that list can be changed\r\nvia Settings in the plaza.",
+    "ua": "Порядок ігор у цьому списку\nможна змінити в Налаштуваннях\nплощі."
+  },
+  "hall_dlg_save_00": {
+    "en": "Saving...\r\nPlease do not turn off the power.",
+    "ua": "Збереження…\nНе вимикайте живлення."
+  },
+  "hall_dlg_item_00": {
+    "en": "Add New Title",
+    "ua": "Додати гру"
+  },
+  "hall_dlg_item_01": {
+    "en": "Back",
+    "ua": "Назад"
+  },
+  "hall_dlg_item_02": {
+    "en": "Yes",
+    "ua": "Так"
+  },
+  "hall_dlg_item_03": {
+    "en": "No",
+    "ua": "Ні"
+  },
+  "hall_dlg_item_04": {
+    "en": "Play",
+    "ua": "Грати"
+  },
+  "hall_dlg_item_05": {
+    "en": "Remove from Vault",
+    "ua": "Забрати зі сховища"
+  },
+  "hall_dlg_item_06": {
+    "en": "Yes",
+    "ua": "Так"
+  },
+  "hall_dlg_item_08": {
+    "en": "What's the Game Vault, again?",
+    "ua": "Що таке Сховище ігор?"
+  },
+  "hall_dlg_parental_ctrl_00": {
+    "en": "Access to this software is\r\nrestricted by Parental Controls.",
+    "ua": "Доступ до цієї програми\nобмежено Батьківським контролем."
+  },
+  "hall_dlg_parental_ctrl_01": {
+    "en": "Please enter your PIN to temporarily\r\nremove this restriction.",
+    "ua": "Введіть PIN, щоб тимчасово\nзняти це обмеження."
+  },
+  "hall_dlg_info_00": {
+    "en": "Well, the Game Vault...",
+    "ua": "Отже, Сховище ігор…"
+  },
+  "hall_dlg_info_01": {
+    "en": "...is a place where you can\r\nsafely store games that you've\r\nfinished playing with.",
+    "ua": "…це місце, де можна\nнадійно зберігати ігри,\nякі ви вже пройшли."
+  },
+  "hall_dlg_info_02": {
+    "en": "Games that are in the vault\r\nwon't display the ! icon.",
+    "ua": "Біля ігор у сховищі\nне буде значка «!»."
+  },
+  "hall_dlg_info_03": {
+    "en": "Also, you won't get a reminder\r\nthat you haven't played them\r\nwhenever you go to your gate.",
+    "ua": "І біля входу вам не\nнагадуватимуть, що ви\nв них ще не грали."
+  },
+  "hall_dlg_info_04": {
+    "en": "Games can be moved in\r\nand out of the vault as\r\noften as you want.",
+    "ua": "Ігри можна класти\nв сховище й забирати\nскільки завгодно."
+  },
+  "lead_to_hall_dlg_update_00": {
+    "en": "Hmm?",
+    "ua": "Га?"
+  },
+  "lead_to_hall_dlg_update_01": {
+    "en": "Looks like the rabbit has\r\nsomething to say!",
+    "ua": "Схоже, кролик хоче\nщось сказати!"
+  },
+  "lead_to_hall_talk_update_00": {
+    "en": "Hi, sorry to call you here like this!\r\nI know you're busy and all.",
+    "ua": "Привіт, вибачте, що покликав вас отак!\nЗнаю, ви зайняті."
+  },
+  "lead_to_hall_talk_update_01": {
+    "en": "But I have some news about\r\nStreetPass Mii Plaza...",
+    "ua": "Але в мене новини щодо\nПлощі StreetPass Mii…"
+  },
+  "lead_to_hall_talk_update_02": {
+    "en": "You know how the plaza gets pretty\r\nbig the more games you have?",
+    "ua": "Знаєте, площа стає чималенькою,\nколи ігор багато?"
+  },
+  "lead_to_hall_talk_update_03": {
+    "en": "That's what the Game\r\nVault is there for!",
+    "ua": "Саме для цього\nє Сховище ігор!"
+  },
+  "lead_to_hall_talk_update_04": {
+    "en": "When you've finished playing a game\r\nyou can store it safely here.",
+    "ua": "Пройдену гру можна\nнадійно сховати тут."
+  },
+  "lead_to_hall_talk_update_05": {
+    "en": "Want to try it out?",
+    "ua": "Хочете спробувати?"
+  },
+  "lead_to_hall_talk_clear_00": {
+    "en": "Congratulations on\r\nclearing [MINIGAME_TITLE]!",
+    "ua": "Вітаю з проходженням\nгри [MINIGAME_TITLE]!"
+  },
+  "lead_to_hall_talk_clear_01": {
+    "en": "By the way...",
+    "ua": "До речі…"
+  },
+  "lead_to_hall_talk_clear_02": {
+    "en": "You had fun with\r\n[MINIGAME_TITLE] right?",
+    "ua": "Вам же сподобалася\nгра [MINIGAME_TITLE]?"
+  },
+  "lead_to_hall_talk_clear_03": {
+    "en": "But it seems you're done with it now.",
+    "ua": "Але, схоже, ви її вже пройшли."
+  },
+  "lead_to_hall_talk_clear_04": {
+    "en": "Do you want to pop it in\r\nthe Game Vault?",
+    "ua": "Може, покласти її\nв Сховище ігор?"
+  },
+  "lead_to_hall_talk_clear_05": {
+    "en": "You can move it to the Game Vault!",
+    "ua": "Її можна покласти в Сховище!"
+  },
+  "lead_to_hall_talk_clear_mgBtl": {
+    "en": "World conquest!\r\nIncredible!",
+    "ua": "Ви підкорили світ!\nНеймовірно!"
+  },
+  "lead_to_hall_talk_clear_mgFlo": {
+    "en": "You are now\r\nthe floral master!",
+    "ua": "Тепер ви\nквітковий майстер!"
+  },
+  "lead_to_hall_talk_clear_mgPzd": {
+    "en": "There are no mysteries the master\r\ndetective cannot solve!",
+    "ua": "Для майстра-детектива\nне існує нерозкритих загадок!"
+  },
+  "lead_to_hall_talk_clear_mgSht": {
+    "en": "You saved the whole galaxy!",
+    "ua": "Ви врятували цілу галактику!"
+  },
+  "lead_to_hall_talk_clear_mgFsh": {
+    "en": "You're a master angler! You can catch\r\nanything!",
+    "ua": "Ви майстер-рибалка! Зловите\nбудь-що!"
+  },
+  "lead_to_hall_talk_clear_mgZmb": {
+    "en": "You've saved the world from the\r\nzombie scourge!",
+    "ua": "Ви врятували світ\nвід зомбі-напасті!"
+  },
+  "lead_to_hall_talk_clear_mgCar": {
+    "en": "You're in a slot car league\r\nof your own!",
+    "ua": "У слот-перегонах\nвам немає рівних!"
+  },
+  "lead_to_hall_talk_clear_mgTrd": {
+    "en": "You're a money-making\r\nmachine!",
+    "ua": "Ви справжня\nмашина для грошей!"
+  },
+  "lead_to_hall_talk_clear_mgChf": {
+    "en": "Your dishes are not only invigorating,\r\nthey're delicious too!",
+    "ua": "Ваші страви не лише бадьорять,\nа й смакують чудово!"
+  },
+  "lead_to_hall_talk_clear_mgNja": {
+    "en": "You're an unbeatable cannon\r\nchamp!",
+    "ua": "Ви непереможний\nчемпіон гармати!"
+  },
+  "lead_to_hall_talk_clear_mgExp": {
+    "en": "You solved one of the\r\nworld's great mysteries!",
+    "ua": "Ви розгадали одну\nз великих таємниць світу!"
+  },
+  "lead_to_hall_talk_buy_00": {
+    "en": "You've been a\r\ngreat customer.",
+    "ua": "Ви були чудовим\nпокупцем."
+  },
+  "lead_to_hall_talk_buy_01": {
+    "en": "There we go. Enjoy!",
+    "ua": "Ось так. Насолоджуйтеся!"
+  },
+  "lead_to_hall_talk_buy_02": {
+    "en": "Actually...",
+    "ua": "Власне…"
+  },
+  "lead_to_hall_talk_buy_03": {
+    "en": "About cleared games...",
+    "ua": "Щодо пройдених ігор…"
+  },
+  "lead_to_hall_talk_buy_04": {
+    "en": "Do you want to put them in the vault?",
+    "ua": "Покласти їх у сховище?"
+  },
+  "lead_to_hall_talk_yes_00": {
+    "en": "OK. Then let's go!",
+    "ua": "Гаразд. Тоді ходімо!"
+  },
+  "lead_to_hall_talk_no_00": {
+    "en": "Don't forget, you can\r\nput games in or out of\r\nthe vault here.",
+    "ua": "Не забувайте: тут можна\nкласти ігри в сховище\nі забирати їх."
+  },
+  "lead_to_hall_talk_no_01": {
+    "en": "Come back whenever you like!",
+    "ua": "Заходьте будь-коли!"
+  },
+  "lead_to_hall_talk_after_00": {
+    "en": "The vault is a great place\r\nto store your games, right?",
+    "ua": "У сховищі зручно\nзберігати ігри, правда?"
+  },
+  "lead_to_hall_talk_after_01": {
+    "en": "Move another game to the vault?",
+    "ua": "Сховати ще одну гру?"
+  },
+  "lead_to_hall_item_00": {
+    "en": "Sure!",
+    "ua": "Звісно!"
+  },
+  "lead_to_hall_item_01": {
+    "en": "Not right now...",
+    "ua": "Не зараз…"
+  },
+  "lead_to_hall_talk_info_00": {
+    "en": "Once the game is\r\nin the vault,",
+    "ua": "Коли гра\nв сховищі,"
+  },
+  "lead_to_hall_talk_info_01": {
+    "en": "...it won't display\r\nthe ! icon.",
+    "ua": "…біля неї немає\nзначка «!»."
+  },
+  "lead_to_hall_talk_info_02": {
+    "en": "...and you won't be reminded each time\r\nthat you haven't played it yet.",
+    "ua": "…і вам не нагадуватимуть щоразу,\nщо ви в неї ще не грали."
+  },
+  "lead_to_hall_talk_info_03": {
+    "en": "It's a good way to keep things\r\nclean and tidy, don't you think?",
+    "ua": "Так у всьому лад і порядок,\nправда ж?"
+  },
+  "lead_to_hall_talk_info_04": {
+    "en": "Of course, you can easily move them back!",
+    "ua": "Звісно, їх легко повернути назад!"
+  },
+  "quick_playable_start": {
+    "en": "Choose a game on the Touch Screen!",
+    "ua": "Виберіть гру на сенсорному екрані!"
+  },
+  "mode_change_loading_00": {
+    "en": "Travelling to SwiftPlay Plaza...",
+    "ua": "Перехід на Швидку площу…"
+  },
+  "mode_change_loading_01": {
+    "en": "Travelling to Classic Plaza...",
+    "ua": "Перехід на Класичну площу…"
+  },
+  "shelter_notice_00": {
+    "en": "There's someone in the queue!\r\nLet's go to the entrance.",
+    "ua": "У черзі хтось є!\nХодімо до входу."
+  },
+  "shelter_notice_pl_00": {
+    "en": "There are [0] people in the queue!\r\nLet's go to the entrance.",
+    "ua": "У черзі [0] осіб!\nХодімо до входу."
+  },
+  "shelter_notice_full_00": {
+    "en": "The queue is full.\r\nMaybe you should go to the entrance\r\nand greet some people?",
+    "ua": "Черга заповнена.\nМоже, підете до входу\nй привітаєтеся з гостями?"
+  },
+  "shelter_notice_full_01": {
+    "en": "The queue is full!\r\nWhy not go to the entrance?",
+    "ua": "Черга заповнена!\nМоже, підете до входу?"
+  },
+  "shelter_notice_empty_00": {
+    "en": "There's nobody in the queue.",
+    "ua": "У черзі нікого немає."
+  },
+  "shelter_notice_empty_01": {
+    "en": "If you haven't played all the games\r\nwith your guests yet, you can send\r\nyour new visitors to wait in the queue.",
+    "ua": "Якщо ви ще не зіграли всі ігри\nз гостями, нових відвідувачів\nможна відправити чекати в черзі."
+  },
+  "shelter_report_00": {
+    "en": "Sent your guest to the queue.\r\nThere's now one person waiting.",
+    "ua": "Гостя відправлено в чергу.\nТепер там чекає одна особа."
+  },
+  "shelter_report_sg_pl_00": {
+    "en": "Sent your guest to the queue.\r\nThere are now [1] people waiting.",
+    "ua": "Гостя відправлено в чергу.\nТепер там чекає осіб: [1]."
+  },
+  "shelter_report_pl_pl_00": {
+    "en": "Sent [0] guests to the queue.\r\nThere are now [1] people waiting.",
+    "ua": "Гостей відправлено в чергу: [0].\nТепер там чекає осіб: [1]."
+  },
+  "shelter_report_01": {
+    "en": "If you send a Mii to the queue when they're already in it,\r\nthe older version of the Mii will be replaced.",
+    "ua": "Якщо відправити в чергу Mii, який там уже є,\nстару версію Mii буде замінено."
+  },
+  "shelter_report_02": {
+    "en": "Looks like there's still just\r\none person waiting in the queue.",
+    "ua": "Схоже, у черзі досі чекає\nлише одна особа."
+  },
+  "shelter_report_zero_02": {
+    "en": "Looks like the queue is still empty.",
+    "ua": "Схоже, черга досі порожня."
+  },
+  "shelter_report_over2_02": {
+    "en": "Looks like there are still [0] people\r\nwaiting in the queue.",
+    "ua": "Схоже, у черзі досі чекає\nосіб: [0]."
+  },
+  "filter_command": {
+    "en": " Filter",
+    "ua": " Відбір"
+  },
+  "filter_dlg_common_item_return": {
+    "en": "Back",
+    "ua": "Назад"
+  },
+  "filter_dlg_common_item_none": {
+    "en": "Not Set",
+    "ua": "Не вказано"
+  },
+  "filter_dlg_top_cap": {
+    "en": "Search by...",
+    "ua": "Шукати за…"
+  },
+  "filter_dlg_top_item_00": {
+    "en": "Everyone",
+    "ua": "Усі"
+  },
+  "filter_dlg_top_item_01": {
+    "en": "Special Mii Characters",
+    "ua": "Особливі Mii"
+  },
+  "filter_dlg_top_item_02": {
+    "en": "Colour",
+    "ua": "Колір"
+  },
+  "filter_dlg_top_item_03": {
+    "en": "Gender",
+    "ua": "Стать"
+  },
+  "filter_dlg_top_item_04": {
+    "en": "Region",
+    "ua": "Регіон"
+  },
+  "filter_dlg_top_item_05": {
+    "en": "Preferred Pet",
+    "ua": "Улюблені тварини"
+  },
+  "filter_dlg_top_item_06": {
+    "en": "Hobby",
+    "ua": "Хобі"
+  },
+  "filter_dlg_top_item_07": {
+    "en": "Dream",
+    "ua": "Мрія"
+  },
+  "filter_dlg_top_item_08": {
+    "en": "Birthday",
+    "ua": "Народження"
+  },
+  "filter_dlg_top_item_09": {
+    "en": "StreetPass Hits",
+    "ua": "Зустрічей"
+  },
+  "filter_dlg_color_cap": {
+    "en": "Which Colour?",
+    "ua": "Який колір?"
+  },
+  "filter_dlg_gender_cap": {
+    "en": "Which Gender?",
+    "ua": "Яка стать?"
+  },
+  "filter_dlg_gender_item_00": {
+    "en": "Male",
+    "ua": "Чоловіча"
+  },
+  "filter_dlg_gender_item_01": {
+    "en": "Female",
+    "ua": "Жіноча"
+  },
+  "filter_dlg_region_cap": {
+    "en": "Which Region?",
+    "ua": "Який регіон?"
+  },
+  "filter_dlg_region_item_03": {
+    "en": "Your Country",
+    "ua": "Ваша країна"
+  },
+  "filter_dlg_region_item_04": {
+    "en": "Another Country",
+    "ua": "Інша країна"
+  },
+  "filter_dlg_animal_cap": {
+    "en": "Dog or Cat?",
+    "ua": "Собаки чи коти?"
+  },
+  "filter_dlg_hobby_cap": {
+    "en": "What Hobby?",
+    "ua": "Яке хобі?"
+  },
+  "filter_dlg_dream_cap": {
+    "en": "What Dream?",
+    "ua": "Яка мрія?"
+  },
+  "filter_dlg_dream_item_01": {
+    "en": "Be a prince or princess",
+    "ua": "Стати принцом чи принцесою"
+  },
+  "filter_dlg_birth_cap": {
+    "en": "Which Month?",
+    "ua": "Який місяць?"
+  },
+  "filter_dlg_birth_item_00": {
+    "en": "January",
+    "ua": "Січ."
+  },
+  "filter_dlg_birth_item_01": {
+    "en": "February",
+    "ua": "Лют."
+  },
+  "filter_dlg_birth_item_02": {
+    "en": "March",
+    "ua": "Бер."
+  },
+  "filter_dlg_birth_item_03": {
+    "en": "April",
+    "ua": "Квіт."
+  },
+  "filter_dlg_birth_item_04": {
+    "en": "May",
+    "ua": "Трав."
+  },
+  "filter_dlg_birth_item_05": {
+    "en": "June",
+    "ua": "Черв."
+  },
+  "filter_dlg_birth_item_06": {
+    "en": "July",
+    "ua": "Лип."
+  },
+  "filter_dlg_birth_item_07": {
+    "en": "August",
+    "ua": "Серп."
+  },
+  "filter_dlg_birth_item_08": {
+    "en": "September",
+    "ua": "Вер."
+  },
+  "filter_dlg_birth_item_09": {
+    "en": "October",
+    "ua": "Жовт."
+  },
+  "filter_dlg_birth_item_10": {
+    "en": "November",
+    "ua": "Лист."
+  },
+  "filter_dlg_birth_item_11": {
+    "en": "December",
+    "ua": "Груд."
+  },
+  "filter_dlg_cec_cap": {
+    "en": "How Many StreetPass Hits?",
+    "ua": "Скільки зустрічей StreetPass?"
+  },
+  "filter_dlg_cec_item_01": {
+    "en": "[0] or more",
+    "ua": "[0] і більше"
+  }
+}

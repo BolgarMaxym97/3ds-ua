@@ -1,0 +1,4234 @@
+{
+  "chf_000": {
+    "en": "StreetPass Chef",
+    "ua": "Ресторан StreetPass"
+  },
+  "chf_000_sdw": {
+    "en": "StreetPass Chef",
+    "ua": "Ресторан StreetPass"
+  },
+  "CHF_SYSTEM_B_000": {
+    "en": "Loading... Do not turn off the power.",
+    "ua": "Завантаження… Не вимикайте живлення."
+  },
+  "CHF_SYSTEM_B_001": {
+    "en": "Saving... Do not turn off the power.",
+    "ua": "Збереження… Не вимикайте живлення."
+  },
+  "chf_Title_Copyright": {
+    "en": "©2016 Nintendo  Developed by PROPE",
+    "ua": "©2016 Nintendo  Розробник: PROPE"
+  },
+  "chf_Title_Select_00": {
+    "en": "Start",
+    "ua": "Почати"
+  },
+  "chf_Title_Select_01": {
+    "en": " Get Ready",
+    "ua": " До роботи"
+  },
+  "chf_Title_Select_02": {
+    "en": "Invite",
+    "ua": "Запросити"
+  },
+  "chf_Title_Select_03": {
+    "en": "Recipe Book",
+    "ua": "Книга рецептів"
+  },
+  "chf_Title_Select_04": {
+    "en": " Return to Plaza",
+    "ua": " На площу"
+  },
+  "chf_Title_Select_05": {
+    "en": " Play Coins",
+    "ua": "Монетки "
+  },
+  "chf_Title_Select_07": {
+    "en": "Hero Times",
+    "ua": "Газета героїв"
+  },
+  "chf_Title_Select_08": {
+    "en": "Culinary Research",
+    "ua": "Кулінарні пошуки"
+  },
+  "chf_Title_Select_09": {
+    "en": "Re-Attempt\r\nPast Orders",
+    "ua": "Минулі\nзамовлення"
+  },
+  "chf_Title_Select_10": {
+    "en": "Cook\r\nFreely",
+    "ua": "Вільне\nготування"
+  },
+  "chf_Title_Select_11": {
+    "en": "Refine\r\nRecipes",
+    "ua": "Кращі\nрецепти"
+  },
+  "chf_Title_Select_12": {
+    "en": "Purchase\r\nIngredients",
+    "ua": "Купити\nінгредієнти"
+  },
+  "chf_Title_Select_13": {
+    "en": " Fridge",
+    "ua": " Холодильник"
+  },
+  "chf_Title_Select_text_00": {
+    "en": "Treat the heroes you've encountered\r\nto a feast for the ages!",
+    "ua": "Влаштуйте зустрінутим героям\nбенкет на віки!"
+  },
+  "chf_Title_Select_text_02": {
+    "en": "Use  Play Coins to invite\r\nheroes to come and dine.",
+    "ua": "Запрошуйте героїв на обід\nза монетки ."
+  },
+  "chf_Title_Select_text_03": {
+    "en": "View recipes for dishes\r\nyou've previously made.",
+    "ua": "Рецепти страв, які\nви вже готували."
+  },
+  "chf_Title_Select_text_04": {
+    "en": "Return to Plaza",
+    "ua": "На площу"
+  },
+  "chf_Title_Select_text_07": {
+    "en": "Read the latest issue\r\nof the Hero Times.",
+    "ua": "Читайте свіжий номер\n«Газети героїв»."
+  },
+  "chf_Title_Select_text_08": {
+    "en": "Experiment using spare ingredients.",
+    "ua": "Експериментуйте із залишками інгредієнтів."
+  },
+  "chf_Title_Select_text_09": {
+    "en": "Try to cook dishes that heroes\r\nhave requested in the past.",
+    "ua": "Спробуйте приготувати страви,\nякі герої замовляли раніше."
+  },
+  "chf_Title_Select_text_10": {
+    "en": "Cook new dishes from\r\nyour available ingredients.",
+    "ua": "Готуйте нові страви\nз наявних інгредієнтів."
+  },
+  "chf_Title_Select_text_11": {
+    "en": "Fine-tune the dishes\r\nin your recipe book.",
+    "ua": "Відшліфуйте страви\nз книги рецептів."
+  },
+  "chf_Title_Select_text_12": {
+    "en": "Use  Play Coins to\r\nbuy ingredients!",
+    "ua": "Купуйте інгредієнти\nза монетки !"
+  },
+  "chf_Title_Select_text_13": {
+    "en": "Store ingredients in your fridge.",
+    "ua": "Покладіть інгредієнти в холодильник."
+  },
+  "chf_Title_Select_text_14": {
+    "en": "Return to the\r\ntitle screen.",
+    "ua": "Повернутися на\nтитульний екран."
+  },
+  "chf_Title_Select_text_15": {
+    "en": "Choose [System:Color name=\"mgChf_dark_orange\" ]5 ingredients[/System:Color]\r\nto put in the fridge.",
+    "ua": "Виберіть [System:Color name=\"mgChf_dark_orange\" ]5 інгредієнтів[/System:Color],\nщоб покласти в холодильник."
+  },
+  "chf_Title_Select_text_16": {
+    "en": "[System:Color name=\"mgChf_dark_orange\" ]One ingredient [/System:Color]costs\r\n[System:Color name=\"mgChf_dark_orange\" ]2 Play Coins[/System:Color].",
+    "ua": "[System:Color name=\"mgChf_dark_orange\" ]Один інгредієнт [/System:Color]коштує\n[System:Color name=\"mgChf_dark_orange\" ]2 монетки[/System:Color]."
+  },
+  "chf_Title_Select_text_n17": {
+    "en": "Use  Play Coins to invite heroes to dine.",
+    "ua": "Запрошуйте героїв на обід за монетки ."
+  },
+  "chf_Title_Select_text_n18": {
+    "en": "View recipes for dishes you've made.",
+    "ua": "Рецепти страв, які ви готували."
+  },
+  "chf_Title_Select_text_n19": {
+    "en": "Read the latest Hero Times issue.",
+    "ua": "Читайте свіжу «Газету героїв»."
+  },
+  "chf_Title_Select_text_n20": {
+    "en": "Save ingredients in the\r\nfridge for next time!",
+    "ua": "Збережіть інгредієнти\nв холодильнику на потім!"
+  },
+  "chf_Gamecoin_Top_002": {
+    "en": "Customers waiting:",
+    "ua": "Чекають клієнтів:"
+  },
+  "chf_Gamecoin_Top_003": {
+    "en": "Invite heroes",
+    "ua": "Запросити героїв"
+  },
+  "chf_Gamecoin_Top_008": {
+    "en": "Wanderer",
+    "ua": "Мандрівник"
+  },
+  "chf_Gamecoin_Select_001": {
+    "en": "Invite one",
+    "ua": "Запросити одного"
+  },
+  "chf_Gamecoin_Select_002": {
+    "en": "Invite max",
+    "ua": "Запросити макс."
+  },
+  "chf_Gamecoin_Select_004": {
+    "en": "Purchase one",
+    "ua": "Купити один"
+  },
+  "chf_Gamecoin_Select_005": {
+    "en": "Purchase max",
+    "ua": "Купити макс."
+  },
+  "chf_System_Common_0003": {
+    "en": " OK",
+    "ua": " OK"
+  },
+  "chf_System_Common_0005": {
+    "en": " Title Menu",
+    "ua": " Головне меню"
+  },
+  "chf_System_Common_0006": {
+    "en": " Make",
+    "ua": " Готувати"
+  },
+  "chf_System_Common_0007": {
+    "en": "Start Cooking!",
+    "ua": "Готуймо!"
+  },
+  "chf_System_Common_0013": {
+    "en": " Back",
+    "ua": " Назад"
+  },
+  "chf_System_Common_0007_sdw": {
+    "en": "Start Cooking!",
+    "ua": "Готуймо!"
+  },
+  "chf_System_Common_0008": {
+    "en": "Cooking Complete!",
+    "ua": "Готово!"
+  },
+  "chf_System_Common_0008_sdw": {
+    "en": "Cooking Complete!",
+    "ua": "Готово!"
+  },
+  "chf_System_Common_0015": {
+    "en": "[0] From the Fridge",
+    "ua": "[0] з холодильника"
+  },
+  "chf_System_Common_0016": {
+    "en": "[0]'s [1]",
+    "ua": "[1] ([0])"
+  },
+  "chf_System_Common_0017": {
+    "en": " Recipe",
+    "ua": " Рецепт"
+  },
+  "chf_Cooking_Result_05": {
+    "en": "Added this dish to the Recipe Book!",
+    "ua": "Страву додано в книгу рецептів!"
+  },
+  "chf_Cooking_Result_07": {
+    "en": "Recipe updated!",
+    "ua": "Рецепт оновлено!"
+  },
+  "chf_Cooking_Result_08": {
+    "en": "Recipe complete!",
+    "ua": "Рецепт завершено!"
+  },
+  "chf_Cooking_Result_Text01": {
+    "en": "Into the recipe book it goes!",
+    "ua": "Прямо в книгу рецептів!"
+  },
+  "chf_Cooking_Result_Text02": {
+    "en": "That's an all-new creation!",
+    "ua": "Зовсім нова страва!"
+  },
+  "chf_Cooking_Result_Text03": {
+    "en": "It's ready!",
+    "ua": "Готово!"
+  },
+  "chf_Cooking_Result_Text04": {
+    "en": "All finished!",
+    "ua": "Усе готово!"
+  },
+  "chf_Cooking_Result_Text05": {
+    "en": "That's the recipe book updated!",
+    "ua": "Книгу рецептів оновлено!"
+  },
+  "chf_Cooking_Result_Text06": {
+    "en": "Nice work updating that recipe!",
+    "ua": "Чудово оновили рецепт!"
+  },
+  "chf_Cooking_Result_Text07": {
+    "en": "Looks like those ingredients\r\nweren't a great combination...",
+    "ua": "Схоже, ці інгредієнти\nне дуже поєднуються…"
+  },
+  "chf_Cooking_Result_Text08": {
+    "en": "Oopsie, that didn't go\r\naccording to plan, did it?",
+    "ua": "Ой, щось пішло\nне за планом, правда?"
+  },
+  "chf_Cooking_Result_Text09": {
+    "en": "I feel like there was\r\nsomething missing...",
+    "ua": "Здається, чогось\nбракувало…"
+  },
+  "chf_Cooking_Result_Text10": {
+    "en": "This isn't far off!\r\nJust needs a little extra...",
+    "ua": "Майже! Бракує\nзовсім трішки…"
+  },
+  "chf_Cooking_Result_Text11": {
+    "en": "Mmm, that looks pretty\r\ngood, you know!",
+    "ua": "М-м, виглядає\nдосить смачно!"
+  },
+  "chf_Cooking_Result_Text12": {
+    "en": "You did really well!\r\nThis looks so yummy!",
+    "ua": "Чудово вийшло!\nТак апетитно!"
+  },
+  "chf_Cooking_Result_Text13": {
+    "en": "This looks super delicious!\r\nA perfect dish for sure!",
+    "ua": "Виглядає суперсмачно!\nІдеальна страва!"
+  },
+  "chf_Cooking_Result_Text14": {
+    "en": "You really are a gourmet chef.\r\nThis dish is sheer perfection!",
+    "ua": "Ви справжній шеф-гурман.\nЦя страва — досконалість!"
+  },
+  "chf_Cooking_Result_Text15": {
+    "en": "Perfect AND mega-sized?!\r\nThat's quite something!",
+    "ua": "Ідеально Й мегапорція?!\nОце так!"
+  },
+  "chf_Cooking_Result_Text16": {
+    "en": "A mega-sized perfect creation!\r\nI'm not worthy!",
+    "ua": "Ідеальна мегапорція!\nЯ не гідний!"
+  },
+  "chf_Cooking_Result_Text17": {
+    "en": "An opulent and delicious\r\nfeast, fit for a legendary hero!",
+    "ua": "Розкішний і смачний бенкет,\nгідний легендарного героя!"
+  },
+  "chf_Cooking_Result_Text18": {
+    "en": "You've only gone and\r\nperfected a legend!",
+    "ua": "Ви досягли досконалості\nв легендарній страві!"
+  },
+  "chf_Cooking_Result_Text19": {
+    "en": "Incredible! It's a mega-sized\r\nlegend, refined to perfection!",
+    "ua": "Неймовірно! Легендарна\nмегапорція, ідеальна!"
+  },
+  "chf_Cooking_Result_Text20": {
+    "en": "Legendary, perfect, AND\r\na mega portion? Amazing!",
+    "ua": "Легендарна, ідеальна Й\nмегапорція? Дивовижно!"
+  },
+  "chf_Cooking_Result_Text21": {
+    "en": "Oh.\r\nBetter luck next time...",
+    "ua": "Ох.\nПощастить наступного разу…"
+  },
+  "chf_Cooking_Result_Text22": {
+    "en": "I'm sure you're just\r\nhaving a bad day...",
+    "ua": "Певно, просто\nне ваш день…"
+  },
+  "chf_Cooking_Result_Text23": {
+    "en": "You needed more\r\ningredients, I think.",
+    "ua": "Гадаю, треба було\nбільше інгредієнтів."
+  },
+  "chf_Cooking_Result_Text24": {
+    "en": "Would have been nice to\r\nhave a few more ingredients...",
+    "ua": "Варто було б мати\nще кілька інгредієнтів…"
+  },
+  "chf_Cooking_Result_Text25": {
+    "en": "This isn't far off from being\r\na piece of culinary perfection.",
+    "ua": "Ще трохи — і це була б\nкулінарна досконалість."
+  },
+  "chf_Cooking_Result_Text26": {
+    "en": "A perfect creation! ...Is what\r\nI'd say if it was slightly better.",
+    "ua": "Ідеальна страва! …Сказав би я,\nякби вона була трохи кращою."
+  },
+  "chf_Cooking_Result_Text27": {
+    "en": "The recipe for this dish has\r\nbeen completely filled out!",
+    "ua": "Рецепт цієї страви\nзаповнено повністю!"
+  },
+  "chf_Cooking_Result_Text28": {
+    "en": "Good work! The recipe for this\r\ndish has been completed.",
+    "ua": "Чудово! Рецепт цієї\nстрави завершено."
+  },
+  "chf_Cooking_Result_Text29": {
+    "en": "I've added a photo of this mega\r\nportion to the recipe book!",
+    "ua": "Я додав фото цієї мегапорції\nв книгу рецептів!"
+  },
+  "chf_Cooking_Result_Text30": {
+    "en": "A perfect mega portion!\r\nAND you completed the recipe!",
+    "ua": "Ідеальна мегапорція!\nІ рецепт завершено!"
+  },
+  "chf_Cooking_Result_Text31": {
+    "en": "Looks like you've completed\r\nthis legendary recipe!",
+    "ua": "Схоже, ви завершили\nцей легендарний рецепт!"
+  },
+  "chf_Cooking_Result_Text32": {
+    "en": "A legendary dish, using all of\r\nyour ingredients!",
+    "ua": "Легендарна страва з усіх\nваших інгредієнтів!"
+  },
+  "chf_Cooking_Result_Text33": {
+    "en": "A perfected legend AND\r\nit's a mega portion! Amazing.",
+    "ua": "Ідеальна легенда Й\nмегапорція! Дивовижно."
+  },
+  "chf_Cooking_Result_Text34": {
+    "en": "You've completed the recipe for\r\nthis legendary mega portion!",
+    "ua": "Ви завершили рецепт цієї\nлегендарної мегапорції!"
+  },
+  "chf_Cooking_Result_new": {
+    "en": "NEW!",
+    "ua": "НОВЕ!"
+  },
+  "chf_FoodName_001": {
+    "en": "Beef",
+    "ua": "Яловичина"
+  },
+  "chf_FoodName_002": {
+    "en": "Salmon",
+    "ua": "Лосось"
+  },
+  "chf_FoodName_003": {
+    "en": "Tuna",
+    "ua": "Тунець"
+  },
+  "chf_FoodName_004": {
+    "en": "Pork",
+    "ua": "Свинина"
+  },
+  "chf_FoodName_005": {
+    "en": "Tomato",
+    "ua": "Томат"
+  },
+  "chf_FoodName_006": {
+    "en": "Chicken",
+    "ua": "Курка"
+  },
+  "chf_FoodName_007": {
+    "en": "Mushrooms",
+    "ua": "Гриби"
+  },
+  "chf_FoodName_008": {
+    "en": "Flour",
+    "ua": "Мука"
+  },
+  "chf_FoodName_009": {
+    "en": "Rice",
+    "ua": "Рис"
+  },
+  "chf_FoodName_010": {
+    "en": "Potato",
+    "ua": "Картопля"
+  },
+  "chf_FoodName_011": {
+    "en": "Onion",
+    "ua": "Цибуля"
+  },
+  "chf_FoodName_012": {
+    "en": "Egg",
+    "ua": "Яйце"
+  },
+  "chf_DishName_001": {
+    "en": "Grilled Beef",
+    "ua": "Яловичина-гриль"
+  },
+  "chf_DishName_002": {
+    "en": "Grilled Pork",
+    "ua": "Свинина-гриль"
+  },
+  "chf_DishName_003": {
+    "en": "Chicken Drumsticks",
+    "ua": "Курячі ніжки"
+  },
+  "chf_DishName_004": {
+    "en": "Sautéed Tuna",
+    "ua": "Тунець соте"
+  },
+  "chf_DishName_005": {
+    "en": "Sautéed Salmon",
+    "ua": "Лосось соте"
+  },
+  "chf_DishName_006": {
+    "en": "Fried Egg",
+    "ua": "Яєчня"
+  },
+  "chf_DishName_007": {
+    "en": "Rice",
+    "ua": "Рис"
+  },
+  "chf_DishName_008": {
+    "en": "Bread",
+    "ua": "Хліб"
+  },
+  "chf_DishName_009": {
+    "en": "Sliced Tomato",
+    "ua": "Скибочки томата"
+  },
+  "chf_DishName_010": {
+    "en": "Roasted Onion",
+    "ua": "Печена цибуля"
+  },
+  "chf_DishName_011": {
+    "en": "Baked Potato",
+    "ua": "Печена картопля"
+  },
+  "chf_DishName_012": {
+    "en": "Fried Mushrooms",
+    "ua": "Смажені гриби"
+  },
+  "chf_DishName_013": {
+    "en": "Beef & Pork Set",
+    "ua": "Яловичина й свинина"
+  },
+  "chf_DishName_014": {
+    "en": "Beef & Chicken Set",
+    "ua": "Яловичина й курка"
+  },
+  "chf_DishName_015": {
+    "en": "Beef & Tuna Set",
+    "ua": "Яловичина й тунець"
+  },
+  "chf_DishName_016": {
+    "en": "Beef & Salmon Set",
+    "ua": "Яловичина й лосось"
+  },
+  "chf_DishName_017": {
+    "en": "Grilled Beef with Fried Egg",
+    "ua": "Яловичина-гриль з яєчнею"
+  },
+  "chf_DishName_018": {
+    "en": "Grilled Beef with Rice",
+    "ua": "Яловичина-гриль з рисом"
+  },
+  "chf_DishName_019": {
+    "en": "Grilled Beef with Bread",
+    "ua": "Яловичина-гриль з хлібом"
+  },
+  "chf_DishName_020": {
+    "en": "Grilled Beef with Tomato",
+    "ua": "Яловичина-гриль з томатом"
+  },
+  "chf_DishName_021": {
+    "en": "Grilled Beef with Onion",
+    "ua": "Яловичина з цибулею"
+  },
+  "chf_DishName_022": {
+    "en": "Grilled Beef with Potato",
+    "ua": "Яловичина з картоплею"
+  },
+  "chf_DishName_023": {
+    "en": "Grilled Beef with Mushrooms",
+    "ua": "Яловичина-гриль з грибами"
+  },
+  "chf_DishName_024": {
+    "en": "Pork & Chicken Set",
+    "ua": "Свинина й курка"
+  },
+  "chf_DishName_025": {
+    "en": "Pork & Tuna Set",
+    "ua": "Свинина й тунець"
+  },
+  "chf_DishName_026": {
+    "en": "Pork & Salmon Set",
+    "ua": "Свинина й лосось"
+  },
+  "chf_DishName_027": {
+    "en": "Grilled Pork with Fried Egg",
+    "ua": "Свинина-гриль з яєчнею"
+  },
+  "chf_DishName_028": {
+    "en": "Grilled Pork with Rice",
+    "ua": "Свинина-гриль з рисом"
+  },
+  "chf_DishName_029": {
+    "en": "Grilled Pork with Bread",
+    "ua": "Свинина-гриль з хлібом"
+  },
+  "chf_DishName_030": {
+    "en": "Grilled Pork with Tomato",
+    "ua": "Свинина-гриль з томатом"
+  },
+  "chf_DishName_031": {
+    "en": "Grilled Pork with Onion",
+    "ua": "Свинина з цибулею"
+  },
+  "chf_DishName_032": {
+    "en": "Grilled Pork with Potato",
+    "ua": "Свинина з картоплею"
+  },
+  "chf_DishName_033": {
+    "en": "Grilled Pork with Mushrooms",
+    "ua": "Свинина-гриль з грибами"
+  },
+  "chf_DishName_034": {
+    "en": "Chicken & Tuna Set",
+    "ua": "Курка й тунець"
+  },
+  "chf_DishName_035": {
+    "en": "Chicken & Salmon Set",
+    "ua": "Курка й лосось"
+  },
+  "chf_DishName_036": {
+    "en": "Chicken with Fried Egg",
+    "ua": "Курка з яєчнею"
+  },
+  "chf_DishName_037": {
+    "en": "Chicken with Rice",
+    "ua": "Курка з рисом"
+  },
+  "chf_DishName_038": {
+    "en": "Chicken with Bread",
+    "ua": "Курка з хлібом"
+  },
+  "chf_DishName_039": {
+    "en": "Chicken with Tomato",
+    "ua": "Курка з томатом"
+  },
+  "chf_DishName_040": {
+    "en": "Chicken with Onion",
+    "ua": "Курка з цибулею"
+  },
+  "chf_DishName_041": {
+    "en": "Chicken with Potato",
+    "ua": "Курка з картоплею"
+  },
+  "chf_DishName_042": {
+    "en": "Chicken with Mushrooms",
+    "ua": "Курка з грибами"
+  },
+  "chf_DishName_043": {
+    "en": "Tuna & Salmon Set",
+    "ua": "Тунець й лосось"
+  },
+  "chf_DishName_044": {
+    "en": "Tuna with Fried Egg",
+    "ua": "Тунець з яєчнею"
+  },
+  "chf_DishName_045": {
+    "en": "Tuna with Rice",
+    "ua": "Тунець з рисом"
+  },
+  "chf_DishName_046": {
+    "en": "Tuna with Bread",
+    "ua": "Тунець з хлібом"
+  },
+  "chf_DishName_047": {
+    "en": "Tuna with Tomato",
+    "ua": "Тунець з томатом"
+  },
+  "chf_DishName_048": {
+    "en": "Tuna with Onion",
+    "ua": "Тунець з цибулею"
+  },
+  "chf_DishName_049": {
+    "en": "Tuna with Potato",
+    "ua": "Тунець з картоплею"
+  },
+  "chf_DishName_050": {
+    "en": "Tuna with Mushrooms",
+    "ua": "Тунець з грибами"
+  },
+  "chf_DishName_051": {
+    "en": "Salmon with Fried Egg",
+    "ua": "Лосось з яєчнею"
+  },
+  "chf_DishName_052": {
+    "en": "Salmon with Rice",
+    "ua": "Лосось з рисом"
+  },
+  "chf_DishName_053": {
+    "en": "Salmon with Bread",
+    "ua": "Лосось з хлібом"
+  },
+  "chf_DishName_054": {
+    "en": "Salmon with Tomato",
+    "ua": "Лосось з томатом"
+  },
+  "chf_DishName_055": {
+    "en": "Salmon with Onion",
+    "ua": "Лосось з цибулею"
+  },
+  "chf_DishName_056": {
+    "en": "Salmon with Potato",
+    "ua": "Лосось з картоплею"
+  },
+  "chf_DishName_057": {
+    "en": "Salmon with Mushrooms",
+    "ua": "Лосось з грибами"
+  },
+  "chf_DishName_058": {
+    "en": "Fried Egg with Rice",
+    "ua": "Яєчня з рисом"
+  },
+  "chf_DishName_059": {
+    "en": "Fried Egg with Bread",
+    "ua": "Яєчня з хлібом"
+  },
+  "chf_DishName_060": {
+    "en": "Fried Egg with Tomato",
+    "ua": "Яєчня з томатом"
+  },
+  "chf_DishName_061": {
+    "en": "Fried Egg with Onion",
+    "ua": "Яєчня з цибулею"
+  },
+  "chf_DishName_062": {
+    "en": "Fried Egg with Potato",
+    "ua": "Яєчня з картоплею"
+  },
+  "chf_DishName_063": {
+    "en": "Fried Egg with Mushrooms",
+    "ua": "Яєчня з грибами"
+  },
+  "chf_DishName_064": {
+    "en": "Rice with Bread",
+    "ua": "Рис з хлібом"
+  },
+  "chf_DishName_065": {
+    "en": "Tomato with Rice",
+    "ua": "Томат з рисом"
+  },
+  "chf_DishName_066": {
+    "en": "Onion with Rice",
+    "ua": "Цибуля з рисом"
+  },
+  "chf_DishName_067": {
+    "en": "Baked Potato with Rice",
+    "ua": "Печена картопля з рисом"
+  },
+  "chf_DishName_068": {
+    "en": "Mushrooms with Rice",
+    "ua": "Гриби з рисом"
+  },
+  "chf_DishName_069": {
+    "en": "Tomato with Bread",
+    "ua": "Томат з хлібом"
+  },
+  "chf_DishName_070": {
+    "en": "Onion with Bread",
+    "ua": "Цибуля з хлібом"
+  },
+  "chf_DishName_071": {
+    "en": "Baked Potato with Bread",
+    "ua": "Печена картопля з хлібом"
+  },
+  "chf_DishName_072": {
+    "en": "Fried Mushrooms with Bread",
+    "ua": "Смажені гриби з хлібом"
+  },
+  "chf_DishName_073": {
+    "en": "Onion with Tomato",
+    "ua": "Цибуля з томатом"
+  },
+  "chf_DishName_074": {
+    "en": "Baked Potato with Tomato",
+    "ua": "Печена картопля з томатом"
+  },
+  "chf_DishName_075": {
+    "en": "Fried Mushrooms with Tomato",
+    "ua": "Смажені гриби з томатом"
+  },
+  "chf_DishName_076": {
+    "en": "Baked Potato with Onion",
+    "ua": "Картопля з цибулею"
+  },
+  "chf_DishName_077": {
+    "en": "Onion with Mushrooms",
+    "ua": "Цибуля з грибами"
+  },
+  "chf_DishName_078": {
+    "en": "Baked Potato with Mushrooms",
+    "ua": "Печена картопля з грибами"
+  },
+  "chf_DishName_079": {
+    "en": "Meatballs",
+    "ua": "Тефтелі"
+  },
+  "chf_DishName_080": {
+    "en": "Meat & Fish Hot Pot",
+    "ua": "М'ясо-рибне рагу"
+  },
+  "chf_DishName_081": {
+    "en": "Salisbury Steak",
+    "ua": "Рубаний стейк"
+  },
+  "chf_DishName_082": {
+    "en": "Beef & Rice Casserole",
+    "ua": "Запіканка з рисом"
+  },
+  "chf_DishName_083": {
+    "en": "Beef Pie",
+    "ua": "Пиріг з яловичиною"
+  },
+  "chf_DishName_084": {
+    "en": "Salisbury Steak with Veggies",
+    "ua": "Рубаний стейк з овочами"
+  },
+  "chf_DishName_085": {
+    "en": "Meat Omelette",
+    "ua": "Омлет з м'ясом"
+  },
+  "chf_DishName_086": {
+    "en": "Beef & Salmon Barbecue",
+    "ua": "Барбекю з м'яса й лосося"
+  },
+  "chf_DishName_087": {
+    "en": "Beef with Tuna Sauce",
+    "ua": "Яловичина в соусі з тунця"
+  },
+  "chf_DishName_088": {
+    "en": "Pork & Salmon Stir-Fry",
+    "ua": "Свинина з лососем стір-фрай"
+  },
+  "chf_DishName_089": {
+    "en": "Pork with Mushroom Sauce",
+    "ua": "Свинина в грибному соусі"
+  },
+  "chf_DishName_090": {
+    "en": "Chicken & Salmon Cream Stew",
+    "ua": "Рагу з куркою й лососем"
+  },
+  "chf_DishName_091": {
+    "en": "Chicken Escalopes",
+    "ua": "Курячі ескалопи"
+  },
+  "chf_DishName_092": {
+    "en": "Hashed Beef",
+    "ua": "Яловичина хаяші"
+  },
+  "chf_DishName_093": {
+    "en": "Pork Curry",
+    "ua": "Карі зі свининою"
+  },
+  "chf_DishName_094": {
+    "en": "Beef Curry",
+    "ua": "Карі з яловичиною"
+  },
+  "chf_DishName_095": {
+    "en": "Chicken Curry",
+    "ua": "Карі з куркою"
+  },
+  "chf_DishName_096": {
+    "en": "Spaghetti Bolognese",
+    "ua": "Спагеті болоньєзе"
+  },
+  "chf_DishName_097": {
+    "en": "Beef Stew",
+    "ua": "Рагу з яловичини"
+  },
+  "chf_DishName_098": {
+    "en": "Spaghetti Carbonara",
+    "ua": "Спагеті карбонара"
+  },
+  "chf_DishName_099": {
+    "en": "Meatloaf",
+    "ua": "М'ясний рулет"
+  },
+  "chf_DishName_100": {
+    "en": "Potato Croquettes",
+    "ua": "Картопляні крокети"
+  },
+  "chf_DishName_101": {
+    "en": "Pork Dumplings",
+    "ua": "Пельмені зі свининою"
+  },
+  "chf_DishName_102": {
+    "en": "Minestrone Soup",
+    "ua": "Мінестроне"
+  },
+  "chf_DishName_103": {
+    "en": "Pot-au-feu",
+    "ua": "Пот-о-фе"
+  },
+  "chf_DishName_104": {
+    "en": "Pork Sauté",
+    "ua": "Свинина соте"
+  },
+  "chf_DishName_105": {
+    "en": "Chicken Omurice",
+    "ua": "Омурайс з куркою"
+  },
+  "chf_DishName_106": {
+    "en": "Chicken Sauté",
+    "ua": "Курка соте"
+  },
+  "chf_DishName_107": {
+    "en": "Jambalaya",
+    "ua": "Джамбалая"
+  },
+  "chf_DishName_108": {
+    "en": "Lasagne",
+    "ua": "Лазанья"
+  },
+  "chf_DishName_109": {
+    "en": "Chicken Cream Stew",
+    "ua": "Вершкове рагу з куркою"
+  },
+  "chf_DishName_110": {
+    "en": "Chicken Tomato Stew",
+    "ua": "Томатне рагу з куркою"
+  },
+  "chf_DishName_111": {
+    "en": "Tuna Terrine",
+    "ua": "Терин із тунця"
+  },
+  "chf_DishName_112": {
+    "en": "Pork & Egg Stir-Fry",
+    "ua": "Свинина з яйцем вок"
+  },
+  "chf_DishName_113": {
+    "en": "Salmon Bouillabaisse",
+    "ua": "Буябес із лосося"
+  },
+  "chf_DishName_114": {
+    "en": "Sushi",
+    "ua": "Суші"
+  },
+  "chf_DishName_115": {
+    "en": "Tuna Sandwich",
+    "ua": "Сендвіч із тунцем"
+  },
+  "chf_DishName_116": {
+    "en": "Seafood Paella",
+    "ua": "Паела морська"
+  },
+  "chf_DishName_117": {
+    "en": "Pork Chop Suey",
+    "ua": "Чоп суей зі свининою"
+  },
+  "chf_DishName_118": {
+    "en": "Tuna Salad",
+    "ua": "Салат із тунцем"
+  },
+  "chf_DishName_119": {
+    "en": "Tuna Carpaccio",
+    "ua": "Карпачо з тунця"
+  },
+  "chf_DishName_120": {
+    "en": "Salmon à la Meunière",
+    "ua": "Лосось а-ля меньєр"
+  },
+  "chf_DishName_121": {
+    "en": "Salmon Omelette",
+    "ua": "Омлет із лососем"
+  },
+  "chf_DishName_122": {
+    "en": "Acqua Pazza",
+    "ua": "Аква пацца"
+  },
+  "chf_DishName_123": {
+    "en": "Salmon Stew",
+    "ua": "Рагу з лосося"
+  },
+  "chf_DishName_124": {
+    "en": "Marinated Salmon",
+    "ua": "Гравлакс"
+  },
+  "chf_DishName_125": {
+    "en": "Onion Bread",
+    "ua": "Цибулевий хліб"
+  },
+  "chf_DishName_126": {
+    "en": "Fried Rice",
+    "ua": "Смажений рис"
+  },
+  "chf_DishName_127": {
+    "en": "Vegetable Quiche",
+    "ua": "Овочевий кіш"
+  },
+  "chf_DishName_128": {
+    "en": "Crème Caramel",
+    "ua": "Крем-карамель"
+  },
+  "chf_DishName_129": {
+    "en": "Spanish Omelette",
+    "ua": "Іспанський омлет"
+  },
+  "chf_DishName_130": {
+    "en": "Hokkien Fried Rice",
+    "ua": "Смажений рис гоккієн"
+  },
+  "chf_DishName_131": {
+    "en": "Mushroom Risotto",
+    "ua": "Різото з грибами"
+  },
+  "chf_DishName_132": {
+    "en": "Pizza Margherita",
+    "ua": "Піца Маргарита"
+  },
+  "chf_DishName_133": {
+    "en": "Potato Gratin",
+    "ua": "Картопляний гратен"
+  },
+  "chf_DishName_134": {
+    "en": "French Onion Soup",
+    "ua": "Французький цибулевий суп"
+  },
+  "chf_DishName_135": {
+    "en": "Potato Salad",
+    "ua": "Картопляний салат"
+  },
+  "chf_DishName_136": {
+    "en": "Bramboračka",
+    "ua": "Бранборачка"
+  },
+  "chf_DishName_137": {
+    "en": "Chilled Potato Potage",
+    "ua": "Картопляний холодник"
+  },
+  "chf_DishName_138": {
+    "en": "Onion Rings",
+    "ua": "Цибулеві кільця"
+  },
+  "chf_DishName_139": {
+    "en": "Mushroom Pot Pie",
+    "ua": "Пиріг із грибами"
+  },
+  "chf_DishName_140": {
+    "en": "Moroccan Salad",
+    "ua": "Марокканський салат"
+  },
+  "chf_DishName_141": {
+    "en": "Roast Beef",
+    "ua": "Ростбіф"
+  },
+  "chf_DishName_142": {
+    "en": "Roast Chicken",
+    "ua": "Печена курка"
+  },
+  "chf_DishName_143": {
+    "en": "Egg Tarts",
+    "ua": "Яєчні тарти"
+  },
+  "chf_DishName_144": {
+    "en": "Tomato Risotto",
+    "ua": "Томатне різото"
+  },
+  "chf_DishName_145": {
+    "en": "Scotch Eggs",
+    "ua": "Шотландські яйця"
+  },
+  "chf_DishName_146": {
+    "en": "Fried Chicken",
+    "ua": "Смажена курка"
+  },
+  "chf_DishName_147": {
+    "en": "Beef Pho",
+    "ua": "Фо бо"
+  },
+  "chf_DishName_148": {
+    "en": "Epic Lunch",
+    "ua": "Епічний обід"
+  },
+  "chf_DishName_149": {
+    "en": "Epic Banquet",
+    "ua": "Епічний бенкет"
+  },
+  "chf_DishName_150": {
+    "en": "Failed Experiment",
+    "ua": "Невдалий експеримент"
+  },
+  "chf_Cooking_Order_Start": {
+    "en": " Start Cooking!",
+    "ua": " Готуймо!"
+  },
+  "chf_Cooking_Order_Change01": {
+    "en": "Change Order",
+    "ua": "Змінити замовлення"
+  },
+  "chf_Cooking_Order_Change02": {
+    "en": " Close",
+    "ua": " Закрити"
+  },
+  "chf_Cooking_Open_Text01": {
+    "en": "Order up! We need\r\n[0]!",
+    "ua": "Замовлення! Треба:\n[0]!"
+  },
+  "chf_Cooking_Open_Text02": {
+    "en": "New order! We need\r\n[0]!",
+    "ua": "Нове замовлення! Треба:\n[0]!"
+  },
+  "chf_Cooking_Study_Title": {
+    "en": "Touch the dish name to [System:Color name=\"mgChf_dark_orange\" ]check\r\nthe recipe [/System:Color]or [System:Color name=\"mgChf_dark_orange\" ]change the dish[/System:Color].\r\nYou can only change it once! ",
+    "ua": "Торкніться назви: [System:Color name=\"mgChf_dark_orange\" ]рецепт[/System:Color]\nабо [System:Color name=\"mgChf_dark_orange\" ]інша страва[/System:Color].\nЗмінити можна лише раз!"
+  },
+  "chf_Cooking_Study_Text": {
+    "en": "Highlighting the dish name\r\n[System:Color name=\"mgChf_dark_orange\" ]displays the recipe[/System:Color].",
+    "ua": "Виділіть назву страви,\nщоб [System:Color name=\"mgChf_dark_orange\" ]побачити рецепт[/System:Color]."
+  },
+  "chf_Dish_Name_Rating01": {
+    "en": "Mega Size!",
+    "ua": "Мегапорція!"
+  },
+  "chf_Dish_Name_Rating02": {
+    "en": "Perfect!",
+    "ua": "Ідеально!"
+  },
+  "chf_Dish_Name_Rating04": {
+    "en": "So-So",
+    "ua": "Так собі"
+  },
+  "chf_Meal_b_0002": {
+    "en": "Meal Rating",
+    "ua": "Оцінка страви"
+  },
+  "chf_Meal_b_0003": {
+    "en": "Number of Heroes",
+    "ua": "Героїв"
+  },
+  "chf_Meal_b_0004": {
+    "en": "Total Level",
+    "ua": "Сумарний рівень"
+  },
+  "chf_Cooking_Hint_00": {
+    "en": "I think we need [0] ingredients.",
+    "ua": "Здається, потрібно інгредієнтів: [0]."
+  },
+  "chf_Cooking_Hint_01": {
+    "en": "This should only require 1 ingredient.",
+    "ua": "Тут вистачить 1 інгредієнта."
+  },
+  "chf_Cooking_Theme_00": {
+    "en": "Chef's Choice",
+    "ua": "Вибір шефа"
+  },
+  "chf_Cooking_Theme_Decision_01": {
+    "en": "Excellent!",
+    "ua": "Чудово!"
+  },
+  "chf_Cooking_Theme_Decision_02": {
+    "en": "Great!",
+    "ua": "Чудово!"
+  },
+  "chf_Cooking_Theme_Decision_03": {
+    "en": "Not bad!",
+    "ua": "Непогано!"
+  },
+  "chf_Cooking_Theme_Decision_04": {
+    "en": "Interesting...",
+    "ua": "Цікаво…"
+  },
+  "chf_Cooking_Theme_Decision_05": {
+    "en": "Errm...",
+    "ua": "Е-е…"
+  },
+  "chf_DishName_Order_001": {
+    "en": "a Grilled Beef",
+    "ua": "Яловичина-гриль"
+  },
+  "chf_DishName_Order_002": {
+    "en": "a Grilled Pork",
+    "ua": "Свинина-гриль"
+  },
+  "chf_DishName_Order_003": {
+    "en": "some Chicken Drumsticks",
+    "ua": "Курячі ніжки"
+  },
+  "chf_DishName_Order_004": {
+    "en": "a Sautéed Tuna",
+    "ua": "Тунець соте"
+  },
+  "chf_DishName_Order_005": {
+    "en": "a Sautéed Salmon",
+    "ua": "Лосось соте"
+  },
+  "chf_DishName_Order_006": {
+    "en": "a Fried Egg",
+    "ua": "Яєчня"
+  },
+  "chf_DishName_Order_007": {
+    "en": "some Rice",
+    "ua": "Рис"
+  },
+  "chf_DishName_Order_008": {
+    "en": "some Bread",
+    "ua": "Хліб"
+  },
+  "chf_DishName_Order_009": {
+    "en": "a Sliced Tomato",
+    "ua": "Скибочки томата"
+  },
+  "chf_DishName_Order_010": {
+    "en": "a Roasted Onion",
+    "ua": "Печена цибуля"
+  },
+  "chf_DishName_Order_011": {
+    "en": "a Baked Potato",
+    "ua": "Печена картопля"
+  },
+  "chf_DishName_Order_012": {
+    "en": "some Fried Mushrooms",
+    "ua": "Смажені гриби"
+  },
+  "chf_DishName_Order_013": {
+    "en": "a Beef & Pork Set",
+    "ua": "Яловичина й свинина"
+  },
+  "chf_DishName_Order_014": {
+    "en": "a Beef & Chicken Set",
+    "ua": "Яловичина й курка"
+  },
+  "chf_DishName_Order_015": {
+    "en": "a Beef & Tuna Set",
+    "ua": "Яловичина й тунець"
+  },
+  "chf_DishName_Order_016": {
+    "en": "a Beef & Salmon Set",
+    "ua": "Яловичина й лосось"
+  },
+  "chf_DishName_Order_017": {
+    "en": "a Grilled Beef with Fried Egg",
+    "ua": "Яловичина-гриль з яєчнею"
+  },
+  "chf_DishName_Order_018": {
+    "en": "a Grilled Beef with Rice",
+    "ua": "Яловичина-гриль з рисом"
+  },
+  "chf_DishName_Order_019": {
+    "en": "a Grilled Beef with Bread",
+    "ua": "Яловичина-гриль з хлібом"
+  },
+  "chf_DishName_Order_020": {
+    "en": "a Grilled Beef with Tomato",
+    "ua": "Яловичина-гриль з томатом"
+  },
+  "chf_DishName_Order_021": {
+    "en": "a Grilled Beef with Onion",
+    "ua": "Яловичина з цибулею"
+  },
+  "chf_DishName_Order_022": {
+    "en": "a Grilled Beef with Potato",
+    "ua": "Яловичина з картоплею"
+  },
+  "chf_DishName_Order_023": {
+    "en": "a Grilled Beef with Mushrooms",
+    "ua": "Яловичина-гриль з грибами"
+  },
+  "chf_DishName_Order_024": {
+    "en": "a Pork & Chicken Set",
+    "ua": "Свинина й курка"
+  },
+  "chf_DishName_Order_025": {
+    "en": "a Pork & Tuna Set",
+    "ua": "Свинина й тунець"
+  },
+  "chf_DishName_Order_026": {
+    "en": "a Pork & Salmon Set",
+    "ua": "Свинина й лосось"
+  },
+  "chf_DishName_Order_027": {
+    "en": "a Grilled Pork with Fried Egg",
+    "ua": "Свинина-гриль з яєчнею"
+  },
+  "chf_DishName_Order_028": {
+    "en": "a Grilled Pork with Rice",
+    "ua": "Свинина-гриль з рисом"
+  },
+  "chf_DishName_Order_029": {
+    "en": "a Grilled Pork with Bread",
+    "ua": "Свинина-гриль з хлібом"
+  },
+  "chf_DishName_Order_030": {
+    "en": "a Grilled Pork with Tomato",
+    "ua": "Свинина-гриль з томатом"
+  },
+  "chf_DishName_Order_031": {
+    "en": "a Grilled Pork with Onion",
+    "ua": "Свинина з цибулею"
+  },
+  "chf_DishName_Order_032": {
+    "en": "a Grilled Pork with Potato",
+    "ua": "Свинина з картоплею"
+  },
+  "chf_DishName_Order_033": {
+    "en": "a Grilled Pork with Mushrooms",
+    "ua": "Свинина-гриль з грибами"
+  },
+  "chf_DishName_Order_034": {
+    "en": "a Chicken & Tuna Set",
+    "ua": "Курка й тунець"
+  },
+  "chf_DishName_Order_035": {
+    "en": "a Chicken & Salmon Set",
+    "ua": "Курка й лосось"
+  },
+  "chf_DishName_Order_036": {
+    "en": "a Chicken with Fried Egg",
+    "ua": "Курка з яєчнею"
+  },
+  "chf_DishName_Order_037": {
+    "en": "a Chicken with Rice",
+    "ua": "Курка з рисом"
+  },
+  "chf_DishName_Order_038": {
+    "en": "a Chicken with Bread",
+    "ua": "Курка з хлібом"
+  },
+  "chf_DishName_Order_039": {
+    "en": "a Chicken with Tomato",
+    "ua": "Курка з томатом"
+  },
+  "chf_DishName_Order_040": {
+    "en": "a Chicken with Onion",
+    "ua": "Курка з цибулею"
+  },
+  "chf_DishName_Order_041": {
+    "en": "a Chicken with Potato",
+    "ua": "Курка з картоплею"
+  },
+  "chf_DishName_Order_042": {
+    "en": "a Chicken with Mushrooms",
+    "ua": "Курка з грибами"
+  },
+  "chf_DishName_Order_043": {
+    "en": "a Tuna & Salmon Set",
+    "ua": "Тунець й лосось"
+  },
+  "chf_DishName_Order_044": {
+    "en": "a Tuna with Fried Egg",
+    "ua": "Тунець з яєчнею"
+  },
+  "chf_DishName_Order_045": {
+    "en": "a Tuna with Rice",
+    "ua": "Тунець з рисом"
+  },
+  "chf_DishName_Order_046": {
+    "en": "a Tuna with Bread",
+    "ua": "Тунець з хлібом"
+  },
+  "chf_DishName_Order_047": {
+    "en": "a Tuna with Tomato",
+    "ua": "Тунець з томатом"
+  },
+  "chf_DishName_Order_048": {
+    "en": "a Tuna with Onion",
+    "ua": "Тунець з цибулею"
+  },
+  "chf_DishName_Order_049": {
+    "en": "a Tuna with Potato",
+    "ua": "Тунець з картоплею"
+  },
+  "chf_DishName_Order_050": {
+    "en": "a Tuna with Mushrooms",
+    "ua": "Тунець з грибами"
+  },
+  "chf_DishName_Order_051": {
+    "en": "a Salmon with Fried Egg",
+    "ua": "Лосось з яєчнею"
+  },
+  "chf_DishName_Order_052": {
+    "en": "a Salmon with Rice",
+    "ua": "Лосось з рисом"
+  },
+  "chf_DishName_Order_053": {
+    "en": "a Salmon with Bread",
+    "ua": "Лосось з хлібом"
+  },
+  "chf_DishName_Order_054": {
+    "en": "a Salmon with Tomato",
+    "ua": "Лосось з томатом"
+  },
+  "chf_DishName_Order_055": {
+    "en": "a Salmon with Onion",
+    "ua": "Лосось з цибулею"
+  },
+  "chf_DishName_Order_056": {
+    "en": "a Salmon with Potato",
+    "ua": "Лосось з картоплею"
+  },
+  "chf_DishName_Order_057": {
+    "en": "a Salmon with Mushrooms",
+    "ua": "Лосось з грибами"
+  },
+  "chf_DishName_Order_058": {
+    "en": "a Fried Egg with Rice",
+    "ua": "Яєчня з рисом"
+  },
+  "chf_DishName_Order_059": {
+    "en": "a Fried Egg with Bread",
+    "ua": "Яєчня з хлібом"
+  },
+  "chf_DishName_Order_060": {
+    "en": "a Fried Egg with Tomato",
+    "ua": "Яєчня з томатом"
+  },
+  "chf_DishName_Order_061": {
+    "en": "a Fried Egg with Onion",
+    "ua": "Яєчня з цибулею"
+  },
+  "chf_DishName_Order_062": {
+    "en": "a Fried Egg with Potato",
+    "ua": "Яєчня з картоплею"
+  },
+  "chf_DishName_Order_063": {
+    "en": "a Fried Egg with Mushrooms",
+    "ua": "Яєчня з грибами"
+  },
+  "chf_DishName_Order_064": {
+    "en": "some Rice with Bread",
+    "ua": "Рис з хлібом"
+  },
+  "chf_DishName_Order_065": {
+    "en": "a Tomato with Rice",
+    "ua": "Томат з рисом"
+  },
+  "chf_DishName_Order_066": {
+    "en": "an Onion with Rice",
+    "ua": "Цибуля з рисом"
+  },
+  "chf_DishName_Order_067": {
+    "en": "a Baked Potato with Rice",
+    "ua": "Печена картопля з рисом"
+  },
+  "chf_DishName_Order_068": {
+    "en": "some Mushrooms with Rice",
+    "ua": "Гриби з рисом"
+  },
+  "chf_DishName_Order_069": {
+    "en": "a Tomato with Bread",
+    "ua": "Томат з хлібом"
+  },
+  "chf_DishName_Order_070": {
+    "en": "an Onion with Bread",
+    "ua": "Цибуля з хлібом"
+  },
+  "chf_DishName_Order_071": {
+    "en": "a Baked Potato with Bread",
+    "ua": "Печена картопля з хлібом"
+  },
+  "chf_DishName_Order_072": {
+    "en": "Fried Mushrooms with Bread",
+    "ua": "Смажені гриби з хлібом"
+  },
+  "chf_DishName_Order_073": {
+    "en": "an Onion with Tomato",
+    "ua": "Цибуля з томатом"
+  },
+  "chf_DishName_Order_074": {
+    "en": "a Baked Potato with Tomato",
+    "ua": "Печена картопля з томатом"
+  },
+  "chf_DishName_Order_075": {
+    "en": "Fried Mushrooms with Tomato",
+    "ua": "Смажені гриби з томатом"
+  },
+  "chf_DishName_Order_076": {
+    "en": "a Baked Potato with Onion",
+    "ua": "Картопля з цибулею"
+  },
+  "chf_DishName_Order_077": {
+    "en": "an Onion with Mushrooms",
+    "ua": "Цибуля з грибами"
+  },
+  "chf_DishName_Order_078": {
+    "en": "a Baked Potato with\r\nMushrooms",
+    "ua": "Печена картопля з грибами"
+  },
+  "chf_DishName_Order_079": {
+    "en": "some Meatballs",
+    "ua": "Тефтелі"
+  },
+  "chf_DishName_Order_080": {
+    "en": "a Meat & Fish Hot Pot",
+    "ua": "М'ясо-рибне рагу"
+  },
+  "chf_DishName_Order_081": {
+    "en": "a Salisbury Steak",
+    "ua": "Рубаний стейк"
+  },
+  "chf_DishName_Order_082": {
+    "en": "a Beef & Rice Casserole",
+    "ua": "Запіканка з рисом"
+  },
+  "chf_DishName_Order_083": {
+    "en": "a Beef Pie",
+    "ua": "Пиріг з яловичиною"
+  },
+  "chf_DishName_Order_084": {
+    "en": "a Salisbury Steak with Veggies",
+    "ua": "Рубаний стейк з овочами"
+  },
+  "chf_DishName_Order_085": {
+    "en": "a Meat Omelette",
+    "ua": "Омлет з м'ясом"
+  },
+  "chf_DishName_Order_086": {
+    "en": "a Beef & Salmon Barbecue",
+    "ua": "Барбекю з м'яса й лосося"
+  },
+  "chf_DishName_Order_087": {
+    "en": "a Beef with Tuna Sauce",
+    "ua": "Яловичина в соусі з тунця"
+  },
+  "chf_DishName_Order_088": {
+    "en": "a Pork & Salmon Stir-Fry",
+    "ua": "Свинина з лососем стір-фрай"
+  },
+  "chf_DishName_Order_089": {
+    "en": "a Pork with Mushroom Sauce",
+    "ua": "Свинина в грибному соусі"
+  },
+  "chf_DishName_Order_090": {
+    "en": "Chicken & Salmon Cream Stew",
+    "ua": "Рагу з куркою й лососем"
+  },
+  "chf_DishName_Order_091": {
+    "en": "some Chicken Escalopes",
+    "ua": "Курячі ескалопи"
+  },
+  "chf_DishName_Order_092": {
+    "en": "a Hashed Beef",
+    "ua": "Яловичина хаяші"
+  },
+  "chf_DishName_Order_093": {
+    "en": "a Pork Curry",
+    "ua": "Карі зі свининою"
+  },
+  "chf_DishName_Order_094": {
+    "en": "a Beef Curry",
+    "ua": "Карі з яловичиною"
+  },
+  "chf_DishName_Order_095": {
+    "en": "a Chicken Curry",
+    "ua": "Карі з куркою"
+  },
+  "chf_DishName_Order_096": {
+    "en": "a Spaghetti Bolognese",
+    "ua": "Спагеті болоньєзе"
+  },
+  "chf_DishName_Order_097": {
+    "en": "a Beef Stew",
+    "ua": "Рагу з яловичини"
+  },
+  "chf_DishName_Order_098": {
+    "en": "a Spaghetti Carbonara",
+    "ua": "Спагеті карбонара"
+  },
+  "chf_DishName_Order_099": {
+    "en": "a Meatloaf",
+    "ua": "М'ясний рулет"
+  },
+  "chf_DishName_Order_100": {
+    "en": "some Potato Croquettes",
+    "ua": "Картопляні крокети"
+  },
+  "chf_DishName_Order_101": {
+    "en": "some Pork Dumplings",
+    "ua": "Пельмені зі свининою"
+  },
+  "chf_DishName_Order_102": {
+    "en": "a Minestrone Soup",
+    "ua": "Мінестроне"
+  },
+  "chf_DishName_Order_103": {
+    "en": "a Pot-au-feu",
+    "ua": "Пот-о-фе"
+  },
+  "chf_DishName_Order_104": {
+    "en": "a Pork Sauté",
+    "ua": "Свинина соте"
+  },
+  "chf_DishName_Order_105": {
+    "en": "a Chicken Omurice",
+    "ua": "Омурайс з куркою"
+  },
+  "chf_DishName_Order_106": {
+    "en": "a Chicken Sauté",
+    "ua": "Курка соте"
+  },
+  "chf_DishName_Order_107": {
+    "en": "a Jambalaya",
+    "ua": "Джамбалая"
+  },
+  "chf_DishName_Order_108": {
+    "en": "a Lasagne",
+    "ua": "Лазанья"
+  },
+  "chf_DishName_Order_109": {
+    "en": "a Chicken Cream Stew",
+    "ua": "Вершкове рагу з куркою"
+  },
+  "chf_DishName_Order_110": {
+    "en": "a Chicken Tomato Stew",
+    "ua": "Томатне рагу з куркою"
+  },
+  "chf_DishName_Order_111": {
+    "en": "a Tuna Terrine",
+    "ua": "Терин із тунця"
+  },
+  "chf_DishName_Order_112": {
+    "en": "a Pork & Egg Stir-Fry",
+    "ua": "Свинина з яйцем вок"
+  },
+  "chf_DishName_Order_113": {
+    "en": "a Salmon Bouillabaisse",
+    "ua": "Буябес із лосося"
+  },
+  "chf_DishName_Order_114": {
+    "en": "some Sushi",
+    "ua": "Суші"
+  },
+  "chf_DishName_Order_115": {
+    "en": "some Tuna Sandwiches",
+    "ua": "Сендвіч із тунцем"
+  },
+  "chf_DishName_Order_116": {
+    "en": "a Seafood Paella",
+    "ua": "Паела морська"
+  },
+  "chf_DishName_Order_117": {
+    "en": "a Pork Chop Suey",
+    "ua": "Чоп суей зі свининою"
+  },
+  "chf_DishName_Order_118": {
+    "en": "a Tuna Salad",
+    "ua": "Салат із тунцем"
+  },
+  "chf_DishName_Order_119": {
+    "en": "a Tuna Carpaccio",
+    "ua": "Карпачо з тунця"
+  },
+  "chf_DishName_Order_120": {
+    "en": "a Salmon à la Meunière",
+    "ua": "Лосось а-ля меньєр"
+  },
+  "chf_DishName_Order_121": {
+    "en": "a Salmon Omelette",
+    "ua": "Омлет із лососем"
+  },
+  "chf_DishName_Order_122": {
+    "en": "an Acqua Pazza",
+    "ua": "Аква пацца"
+  },
+  "chf_DishName_Order_123": {
+    "en": "a Salmon Stew",
+    "ua": "Рагу з лосося"
+  },
+  "chf_DishName_Order_124": {
+    "en": "a Marinated Salmon",
+    "ua": "Гравлакс"
+  },
+  "chf_DishName_Order_125": {
+    "en": "some Onion Bread",
+    "ua": "Цибулевий хліб"
+  },
+  "chf_DishName_Order_126": {
+    "en": "a Fried Rice",
+    "ua": "Смажений рис"
+  },
+  "chf_DishName_Order_127": {
+    "en": "a Vegetable Quiche",
+    "ua": "Овочевий кіш"
+  },
+  "chf_DishName_Order_128": {
+    "en": "a Crème Caramel",
+    "ua": "Крем-карамель"
+  },
+  "chf_DishName_Order_129": {
+    "en": "a Spanish Omelette",
+    "ua": "Іспанський омлет"
+  },
+  "chf_DishName_Order_130": {
+    "en": "a Hokkien Fried Rice",
+    "ua": "Смажений рис гоккієн"
+  },
+  "chf_DishName_Order_131": {
+    "en": "a Mushroom Risotto",
+    "ua": "Різото з грибами"
+  },
+  "chf_DishName_Order_132": {
+    "en": "a Pizza Margherita",
+    "ua": "Піца Маргарита"
+  },
+  "chf_DishName_Order_133": {
+    "en": "a Potato Gratin",
+    "ua": "Картопляний гратен"
+  },
+  "chf_DishName_Order_134": {
+    "en": "a French Onion Soup",
+    "ua": "Французький цибулевий суп"
+  },
+  "chf_DishName_Order_135": {
+    "en": "a Potato Salad",
+    "ua": "Картопляний салат"
+  },
+  "chf_DishName_Order_136": {
+    "en": "a Bramboračka",
+    "ua": "Бранборачка"
+  },
+  "chf_DishName_Order_137": {
+    "en": "a Chilled Potato Potage",
+    "ua": "Картопляний холодник"
+  },
+  "chf_DishName_Order_138": {
+    "en": "some Onion Rings",
+    "ua": "Цибулеві кільця"
+  },
+  "chf_DishName_Order_139": {
+    "en": "a Mushroom Pot Pie",
+    "ua": "Пиріг із грибами"
+  },
+  "chf_DishName_Order_140": {
+    "en": "a Moroccan Salad",
+    "ua": "Марокканський салат"
+  },
+  "chf_DishName_Order_141": {
+    "en": "a Roast Beef",
+    "ua": "Ростбіф"
+  },
+  "chf_DishName_Order_142": {
+    "en": "a Roast Chicken",
+    "ua": "Печена курка"
+  },
+  "chf_DishName_Order_143": {
+    "en": "some Egg Tarts",
+    "ua": "Яєчні тарти"
+  },
+  "chf_DishName_Order_144": {
+    "en": "a Tomato Risotto",
+    "ua": "Томатне різото"
+  },
+  "chf_DishName_Order_145": {
+    "en": "some Scotch Eggs",
+    "ua": "Шотландські яйця"
+  },
+  "chf_DishName_Order_146": {
+    "en": "some Fried Chicken",
+    "ua": "Смажена курка"
+  },
+  "chf_DishName_Order_147": {
+    "en": "a Beef Pho",
+    "ua": "Фо бо"
+  },
+  "chf_DishName_Order_148": {
+    "en": "an Epic Lunch",
+    "ua": "Епічний обід"
+  },
+  "chf_DishName_Order_149": {
+    "en": "an Epic Banquet",
+    "ua": "Епічний бенкет"
+  },
+  "chf_Recipe_Operation": {
+    "en": "Rotate /  Change Portion",
+    "ua": "Обертати /  Змінити порцію"
+  },
+  "chf_Recipe_Operation_off": {
+    "en": "Rotate",
+    "ua": "Обертати"
+  },
+  "chf_Recipe_Dish_Filter_00": {
+    "en": "All",
+    "ua": "Усі"
+  },
+  "chf_Recipe_Dish_Filter_02": {
+    "en": "In Recipe Book",
+    "ua": "У книзі рецептів"
+  },
+  "chf_Recipe_Dish_Filter_04": {
+    "en": "Completed Recipe",
+    "ua": "Завершені рецепти"
+  },
+  "chf_Recipe_Dish_Filter_05": {
+    "en": "Incomplete Recipe",
+    "ua": "Незавершені рецепти"
+  },
+  "chf_Recipe_DishText_001": {
+    "en": "Thin slices of beef,\r\ncooked to perfection.",
+    "ua": "Тонкі скибки яловичини,\nприготовані ідеально."
+  },
+  "chf_Recipe_DishText_002": {
+    "en": "Pork belly slices, \r\ncooked to perfection.",
+    "ua": "Скибки грудинки,\nприготовані ідеально."
+  },
+  "chf_Recipe_DishText_003": {
+    "en": "Juicy legs of chicken,\r\ncooked to perfection.",
+    "ua": "Соковиті курячі ніжки,\nприготовані ідеально."
+  },
+  "chf_Recipe_DishText_004": {
+    "en": "A tuna steak,\r\ncooked to perfection.",
+    "ua": "Стейк із тунця,\nприготований ідеально."
+  },
+  "chf_Recipe_DishText_005": {
+    "en": "A fillet of salmon,\r\ncooked to perfection. ",
+    "ua": "Філе лосося,\nприготоване ідеально."
+  },
+  "chf_Recipe_DishText_006": {
+    "en": "A whole chicken egg,\r\ncooked to perfection.",
+    "ua": "Ціле куряче яйце,\nприготоване ідеально."
+  },
+  "chf_Recipe_DishText_007": {
+    "en": "Fluffy white rice.",
+    "ua": "Пухкий білий рис."
+  },
+  "chf_Recipe_DishText_008": {
+    "en": "Soft, freshly baked bread.",
+    "ua": "М'який свіжий хліб."
+  },
+  "chf_Recipe_DishText_009": {
+    "en": "A sliced whole tomato.",
+    "ua": "Нарізаний цілий томат."
+  },
+  "chf_Recipe_DishText_010": {
+    "en": "A whole roasted onion.",
+    "ua": "Ціла печена цибулина."
+  },
+  "chf_Recipe_DishText_011": {
+    "en": "A baked jacket potato.",
+    "ua": "Картопля, печена в шкірці."
+  },
+  "chf_Recipe_DishText_012": {
+    "en": "Whole mushrooms,\r\ncooked to perfection.",
+    "ua": "Цілі гриби,\nприготовані ідеально."
+  },
+  "chf_Recipe_DishText_013": {
+    "en": "Grilled beef and pork,\r\nserved together.",
+    "ua": "Яловичина-гриль і\nсвинина-гриль разом."
+  },
+  "chf_Recipe_DishText_014": {
+    "en": "Grilled beef and chicken\r\ndrumsticks, served together.",
+    "ua": "Яловичина-гриль і\nкурячі ніжки разом."
+  },
+  "chf_Recipe_DishText_015": {
+    "en": "Grilled beef and tuna\r\nsauté, served together.",
+    "ua": "Яловичина-гриль і\nтунець соте разом."
+  },
+  "chf_Recipe_DishText_016": {
+    "en": "Grilled beef and salmon\r\nsauté, served together.",
+    "ua": "Яловичина-гриль і\nлосось соте разом."
+  },
+  "chf_Recipe_DishText_017": {
+    "en": "Grilled beef served\r\nwith a fried egg.",
+    "ua": "Яловичина-гриль\nз яєчнею."
+  },
+  "chf_Recipe_DishText_018": {
+    "en": "Grilled beef served\r\nwith a side of rice.",
+    "ua": "Яловичина-гриль\nз рисом."
+  },
+  "chf_Recipe_DishText_019": {
+    "en": "Grilled beef served with\r\nfreshly baked bread.",
+    "ua": "Яловичина-гриль\nзі свіжим хлібом."
+  },
+  "chf_Recipe_DishText_020": {
+    "en": "Grilled beef served\r\nwith sliced tomato.",
+    "ua": "Яловичина-гриль\nз нарізаним томатом."
+  },
+  "chf_Recipe_DishText_021": {
+    "en": "Grilled beef served\r\nwith a roasted onion.",
+    "ua": "Яловичина-гриль\nз печеною цибулею."
+  },
+  "chf_Recipe_DishText_022": {
+    "en": "Grilled beef served\r\nwith a baked potato.",
+    "ua": "Яловичина-гриль\nз печеною картоплею."
+  },
+  "chf_Recipe_DishText_023": {
+    "en": "Grilled beef served\r\nwith whole mushrooms.",
+    "ua": "Яловичина-гриль\nз цілими грибами."
+  },
+  "chf_Recipe_DishText_024": {
+    "en": "Grilled pork and chicken\r\ndrumsticks, served together.",
+    "ua": "Свинина-гриль і\nкурячі ніжки разом."
+  },
+  "chf_Recipe_DishText_025": {
+    "en": "Grilled pork and tuna\r\nsauté, served together.",
+    "ua": "Свинина-гриль і\nтунець соте разом."
+  },
+  "chf_Recipe_DishText_026": {
+    "en": "Grilled pork and salmon\r\nsauté, served together.",
+    "ua": "Свинина-гриль і\nлосось соте разом."
+  },
+  "chf_Recipe_DishText_027": {
+    "en": "Grilled pork served\r\nwith a fried egg.",
+    "ua": "Свинина-гриль\nз яєчнею."
+  },
+  "chf_Recipe_DishText_028": {
+    "en": "Grilled pork served\r\nwith a side of rice.",
+    "ua": "Свинина-гриль\nз рисом."
+  },
+  "chf_Recipe_DishText_029": {
+    "en": "Grilled pork served with\r\nfreshly baked bread.",
+    "ua": "Свинина-гриль\nзі свіжим хлібом."
+  },
+  "chf_Recipe_DishText_030": {
+    "en": "Grilled pork served\r\nwith sliced tomato.",
+    "ua": "Свинина-гриль\nз нарізаним томатом."
+  },
+  "chf_Recipe_DishText_031": {
+    "en": "Grilled pork served\r\nwith a roasted onion.",
+    "ua": "Свинина-гриль\nз печеною цибулею."
+  },
+  "chf_Recipe_DishText_032": {
+    "en": "Grilled pork served\r\nwith a baked potato.",
+    "ua": "Свинина-гриль\nз печеною картоплею."
+  },
+  "chf_Recipe_DishText_033": {
+    "en": "Grilled pork served\r\nwith whole mushrooms.",
+    "ua": "Свинина-гриль\nз цілими грибами."
+  },
+  "chf_Recipe_DishText_034": {
+    "en": "Chicken drumsticks and\r\ntuna sauté, served together.",
+    "ua": "Курячі ніжки і\nтунець соте разом."
+  },
+  "chf_Recipe_DishText_035": {
+    "en": "Chicken drumsticks and\r\nsalmon sauté, served together.",
+    "ua": "Курячі ніжки і\nлосось соте разом."
+  },
+  "chf_Recipe_DishText_036": {
+    "en": "Chicken drumsticks\r\nserved with a fried egg.",
+    "ua": "Курячі ніжки\nз яєчнею."
+  },
+  "chf_Recipe_DishText_037": {
+    "en": "Chicken drumsticks served\r\nwith a side of rice.",
+    "ua": "Курячі ніжки\nз рисом."
+  },
+  "chf_Recipe_DishText_038": {
+    "en": "Chicken drumsticks served\r\nwith freshly baked bread.",
+    "ua": "Курячі ніжки\nзі свіжим хлібом."
+  },
+  "chf_Recipe_DishText_039": {
+    "en": "Chicken drumsticks\r\nserved with sliced tomato.",
+    "ua": "Курячі ніжки\nз нарізаним томатом."
+  },
+  "chf_Recipe_DishText_040": {
+    "en": "Chicken drumsticks\r\nserved with a roasted onion.",
+    "ua": "Курячі ніжки\nз печеною цибулею."
+  },
+  "chf_Recipe_DishText_041": {
+    "en": "Chicken drumsticks served\r\nwith a baked potato.",
+    "ua": "Курячі ніжки\nз печеною картоплею."
+  },
+  "chf_Recipe_DishText_042": {
+    "en": "Chicken drumsticks served\r\nwith whole mushrooms.",
+    "ua": "Курячі ніжки\nз цілими грибами."
+  },
+  "chf_Recipe_DishText_043": {
+    "en": "Tuna and salmon sauté,\r\nserved together.",
+    "ua": "Тунець і\nлосось соте разом."
+  },
+  "chf_Recipe_DishText_044": {
+    "en": "Tuna sauté served\r\nwith a fried egg.",
+    "ua": "Тунець соте\nз яєчнею."
+  },
+  "chf_Recipe_DishText_045": {
+    "en": "Tuna sauté served\r\nwith a side of rice.",
+    "ua": "Тунець соте\nз рисом."
+  },
+  "chf_Recipe_DishText_046": {
+    "en": "Tuna sauté served with\r\nfreshly baked bread.",
+    "ua": "Тунець соте\nзі свіжим хлібом."
+  },
+  "chf_Recipe_DishText_047": {
+    "en": "Tuna sauté served\r\nwith sliced tomato.",
+    "ua": "Тунець соте\nз нарізаним томатом."
+  },
+  "chf_Recipe_DishText_048": {
+    "en": "Tuna sauté served\r\nwith a roasted onion.",
+    "ua": "Тунець соте\nз печеною цибулею."
+  },
+  "chf_Recipe_DishText_049": {
+    "en": "Tuna sauté served\r\nwith a baked potato.",
+    "ua": "Тунець соте\nз печеною картоплею."
+  },
+  "chf_Recipe_DishText_050": {
+    "en": "Tuna sauté served with\r\nwhole mushrooms.",
+    "ua": "Тунець соте\nз цілими грибами."
+  },
+  "chf_Recipe_DishText_051": {
+    "en": "Salmon sauté served\r\nwith a fried egg.",
+    "ua": "Лосось соте\nз яєчнею."
+  },
+  "chf_Recipe_DishText_052": {
+    "en": "Salmon sauté served\r\nwith a side of rice.",
+    "ua": "Лосось соте\nз рисом."
+  },
+  "chf_Recipe_DishText_053": {
+    "en": "Salmon sauté served with\r\nfreshly baked bread.",
+    "ua": "Лосось соте\nзі свіжим хлібом."
+  },
+  "chf_Recipe_DishText_054": {
+    "en": "Salmon sauté served\r\nwith sliced tomato.",
+    "ua": "Лосось соте\nз нарізаним томатом."
+  },
+  "chf_Recipe_DishText_055": {
+    "en": "Salmon sauté served\r\nwith a roasted onion.",
+    "ua": "Лосось соте\nз печеною цибулею."
+  },
+  "chf_Recipe_DishText_056": {
+    "en": "Salmon sauté served\r\nwith a baked potato.",
+    "ua": "Лосось соте\nз печеною картоплею."
+  },
+  "chf_Recipe_DishText_057": {
+    "en": "Salmon sauté served\r\nwith whole mushrooms.",
+    "ua": "Лосось соте\nз цілими грибами."
+  },
+  "chf_Recipe_DishText_058": {
+    "en": "A fried egg served\r\nwith a side of rice.",
+    "ua": "Яєчня\nз рисом."
+  },
+  "chf_Recipe_DishText_059": {
+    "en": "A fried egg served with\r\nfreshly baked bread.",
+    "ua": "Яєчня\nзі свіжим хлібом."
+  },
+  "chf_Recipe_DishText_060": {
+    "en": "A fried egg served\r\nwith sliced tomato.",
+    "ua": "Яєчня\nз нарізаним томатом."
+  },
+  "chf_Recipe_DishText_061": {
+    "en": "A fried egg served\r\nwith a roasted onion.",
+    "ua": "Яєчня\nз печеною цибулею."
+  },
+  "chf_Recipe_DishText_062": {
+    "en": "A fried egg served\r\nwith a baked potato.",
+    "ua": "Яєчня\nз печеною картоплею."
+  },
+  "chf_Recipe_DishText_063": {
+    "en": "A fried egg served with\r\nwhole mushrooms.",
+    "ua": "Яєчня\nз цілими грибами."
+  },
+  "chf_Recipe_DishText_064": {
+    "en": "Fluffy white rice served\r\nwith freshly baked bread.",
+    "ua": "Пухкий білий рис\nзі свіжим хлібом."
+  },
+  "chf_Recipe_DishText_065": {
+    "en": "A sliced whole tomato\r\nserved with a side of rice.",
+    "ua": "Нарізаний томат\nз рисом."
+  },
+  "chf_Recipe_DishText_066": {
+    "en": "A whole roasted onion\r\nserved with a side of rice.",
+    "ua": "Печена цибулина\nз рисом."
+  },
+  "chf_Recipe_DishText_067": {
+    "en": "A baked jacket potato\r\nserved with a side of rice.",
+    "ua": "Печена картоплина\nз рисом."
+  },
+  "chf_Recipe_DishText_068": {
+    "en": "Whole mushrooms served\r\nwith a side of rice.",
+    "ua": "Цілі гриби\nз рисом."
+  },
+  "chf_Recipe_DishText_069": {
+    "en": "A sliced whole tomato served\r\nwith freshly baked bread.",
+    "ua": "Нарізаний томат\nзі свіжим хлібом."
+  },
+  "chf_Recipe_DishText_070": {
+    "en": "A whole roasted onion served\r\nwith freshly baked bread.",
+    "ua": "Печена цибулина\nзі свіжим хлібом."
+  },
+  "chf_Recipe_DishText_071": {
+    "en": "A baked jacket potato served\r\nwith freshly baked bread.",
+    "ua": "Печена картоплина\nзі свіжим хлібом."
+  },
+  "chf_Recipe_DishText_072": {
+    "en": "Whole mushrooms served\r\nwith freshly baked bread.",
+    "ua": "Цілі гриби\nзі свіжим хлібом."
+  },
+  "chf_Recipe_DishText_073": {
+    "en": "A whole roasted onion\r\nserved with sliced tomato.",
+    "ua": "Печена цибулина\nз нарізаним томатом."
+  },
+  "chf_Recipe_DishText_074": {
+    "en": "A baked jacket potato\r\nserved with sliced tomato.",
+    "ua": "Печена картоплина\nз нарізаним томатом."
+  },
+  "chf_Recipe_DishText_075": {
+    "en": "Whole mushrooms served\r\nwith sliced tomato.",
+    "ua": "Цілі гриби\nз нарізаним томатом."
+  },
+  "chf_Recipe_DishText_076": {
+    "en": "A whole roasted onion\r\nand a baked jacket potato,\r\nserved together.",
+    "ua": "Печена цибулина і\nпечена картоплина разом."
+  },
+  "chf_Recipe_DishText_077": {
+    "en": "A whole roasted onion\r\nserved with whole mushrooms.",
+    "ua": "Печена цибулина\nз цілими грибами."
+  },
+  "chf_Recipe_DishText_078": {
+    "en": "A baked jacket potato\r\nserved with whole mushrooms.",
+    "ua": "Печена картоплина\nз цілими грибами."
+  },
+  "chf_Recipe_DishText_079": {
+    "en": "A decadent dish using\r\nthree kinds of meat.",
+    "ua": "Розкішна страва з трьох\nвидів м'яса."
+  },
+  "chf_Recipe_DishText_080": {
+    "en": "A delicious stew, filled with\r\nall kinds of meat and fish.",
+    "ua": "Смачне рагу з усілякого\nм'яса й риби."
+  },
+  "chf_Recipe_DishText_081": {
+    "en": "A juicy steak formed from\r\nground meat mixed with\r\negg and onions.",
+    "ua": "Соковитий стейк із фаршу\nз яйцем і цибулею."
+  },
+  "chf_Recipe_DishText_082": {
+    "en": "A deep oven-baked dish of\r\nrice topped with a beef stew.",
+    "ua": "Запечений у духовці рис\nпід рагу з яловичини."
+  },
+  "chf_Recipe_DishText_083": {
+    "en": "A crispy pastry crust\r\nstuffed with beef.",
+    "ua": "Хрустке тісто\nз яловичиною."
+  },
+  "chf_Recipe_DishText_084": {
+    "en": "A juicy steak of ground\r\nmeat, served with tons\r\nof healthy vegetables.",
+    "ua": "Соковитий стейк із фаршу\nз купою корисних\nовочів."
+  },
+  "chf_Recipe_DishText_085": {
+    "en": "An egg dish carefully\r\nstuffed with two kinds\r\nof meat.",
+    "ua": "Омлет, ретельно\nначинений двома\nвидами м'яса."
+  },
+  "chf_Recipe_DishText_086": {
+    "en": "If you can't decide\r\nbetween meat and fish,\r\nwhy not have both?",
+    "ua": "Не можете вибрати між\nм'ясом і рибою?\nТо беріть обидва!"
+  },
+  "chf_Recipe_DishText_087": {
+    "en": "A flavourful Italian dish,\r\nbest served chilled.",
+    "ua": "Італійська страва,\nсмачна охолодженою."
+  },
+  "chf_Recipe_DishText_088": {
+    "en": "A deliciously decadent\r\nstir-fry of meat and fish.",
+    "ua": "Розкішна смажена суміш\nм'яса й риби."
+  },
+  "chf_Recipe_DishText_089": {
+    "en": "Juicy cuts of pork with a\r\ndeliciously mushroomy sauce.",
+    "ua": "Соковита свинина\nв смачному грибному соусі."
+  },
+  "chf_Recipe_DishText_090": {
+    "en": "A creamy stew,\r\nslowly simmered for\r\nmaximum flavour.",
+    "ua": "Вершкове рагу,\nщо довго томилося\nдля найкращого смаку."
+  },
+  "chf_Recipe_DishText_091": {
+    "en": "A fragrant and crispy\r\nfried chicken dish.",
+    "ua": "Ароматна й хрустка\nсмажена курка."
+  },
+  "chf_Recipe_DishText_092": {
+    "en": "A beef stew with\r\nplenty of tomatoes.",
+    "ua": "Тушкована яловичина\nз великою кількістю томатів."
+  },
+  "chf_Recipe_DishText_093": {
+    "en": "A mild Japanese-style\r\npork curry.",
+    "ua": "М'яке японське карі\nзі свининою."
+  },
+  "chf_Recipe_DishText_094": {
+    "en": "A decadent Japanese-\r\nstyle beef curry.",
+    "ua": "Розкішне японське карі\nз яловичиною."
+  },
+  "chf_Recipe_DishText_095": {
+    "en": "A spicy Japanese-style\r\nchicken curry.",
+    "ua": "Гостре японське карі\nз куркою."
+  },
+  "chf_Recipe_DishText_096": {
+    "en": "Pasta with a generous\r\nserving of beef\r\nbolognese sauce.",
+    "ua": "Паста з щедрою порцією\nсоусу болоньєзе\nз яловичиною."
+  },
+  "chf_Recipe_DishText_097": {
+    "en": "A traditional beef stew\r\nwith plenty of vegetables.",
+    "ua": "Традиційне рагу з яловичини\nз безліччю овочів."
+  },
+  "chf_Recipe_DishText_098": {
+    "en": "Pasta covered in a rich,\r\ncreamy carbonara sauce.",
+    "ua": "Паста в насиченому\nсоусі карбонара."
+  },
+  "chf_Recipe_DishText_099": {
+    "en": "A baked loaf of minced\r\nmeat, based on a classic\r\nAmerican recipe.",
+    "ua": "Запечений м'ясний рулет\nза класичним\nрецептом зі США."
+  },
+  "chf_Recipe_DishText_100": {
+    "en": "Crispy deep-fried cakes\r\nof mashed potato.",
+    "ua": "Хрусткі смажені котлетки\nз картопляного пюре."
+  },
+  "chf_Recipe_DishText_101": {
+    "en": "A Chinese dish, featuring\r\na delicious meaty filling\r\nwrapped in sticky dough.",
+    "ua": "Китайська страва:\nм'ясна начинка\nв клейкому тісті."
+  },
+  "chf_Recipe_DishText_102": {
+    "en": "An Italian tomato-based soup.",
+    "ua": "Італійський томатний суп."
+  },
+  "chf_Recipe_DishText_103": {
+    "en": "A French stew packed\r\nwith vegetables.",
+    "ua": "Французьке рагу\nз безліччю овочів."
+  },
+  "chf_Recipe_DishText_104": {
+    "en": "Thick slices of\r\nsautéed pork.",
+    "ua": "Товсті скибки\nсвинини соте."
+  },
+  "chf_Recipe_DishText_105": {
+    "en": "A Japanese dish of\r\npan-fried chicken and rice\r\nwrapped in a thin omelette.",
+    "ua": "Японська страва: курка\nз рисом, загорнута\nв тонкий омлет."
+  },
+  "chf_Recipe_DishText_106": {
+    "en": "Slices of chicken breast,\r\nsautéed to a golden brown.",
+    "ua": "Скибки курячої грудки,\nобсмажені до золотистості."
+  },
+  "chf_Recipe_DishText_107": {
+    "en": "An American-style dish\r\nof rice mixed with\r\nchicken and vegetables.",
+    "ua": "Американська страва з рису\nз куркою й овочами."
+  },
+  "chf_Recipe_DishText_108": {
+    "en": "A layered dish consisting\r\nof sheets of pasta filled\r\nwith a meaty ragu sauce.",
+    "ua": "Шарова страва з листів\nпасти й м'ясного соусу\nрагу."
+  },
+  "chf_Recipe_DishText_109": {
+    "en": "Chicken stewed in a\r\ncreamy white sauce.",
+    "ua": "Курка, тушкована\nу вершковому соусі."
+  },
+  "chf_Recipe_DishText_110": {
+    "en": "A hearty stew of tender\r\nchicken breast in a rich\r\ntomato sauce.",
+    "ua": "Ситне рагу з ніжної\nкурячої грудки в густому\nтоматному соусі."
+  },
+  "chf_Recipe_DishText_111": {
+    "en": "A colourful French dish\r\nmade from moulded fish\r\npaste and vegetables.",
+    "ua": "Яскрава французька страва\nз рибної пасти\nй овочів."
+  },
+  "chf_Recipe_DishText_112": {
+    "en": "An Asian-style dish\r\nof pork and eggs fried\r\nwith vegetables.",
+    "ua": "Азійська страва: свинина\nй яйця, смажені\nз овочами."
+  },
+  "chf_Recipe_DishText_113": {
+    "en": "A slow-cooked French\r\nseafood soup.",
+    "ua": "Французький рибний суп,\nщо довго вариться."
+  },
+  "chf_Recipe_DishText_114": {
+    "en": "A Japanese dish made from\r\nfish and vinegared rice.",
+    "ua": "Японська страва з риби\nй рису з оцтом."
+  },
+  "chf_Recipe_DishText_115": {
+    "en": "Flaked tuna in a rich\r\nmayonnaise, sandwiched\r\nbetween two slices of bread.",
+    "ua": "Тунець у густому майонезі\nміж двома скибками\nхліба."
+  },
+  "chf_Recipe_DishText_116": {
+    "en": "A Spanish dish of rice\r\nand seafood cooked in\r\na special pan.",
+    "ua": "Іспанська страва з рису\nй морепродуктів, зварена\nв особливій пательні."
+  },
+  "chf_Recipe_DishText_117": {
+    "en": "A Chinese dish made from\r\npork and mushrooms.",
+    "ua": "Китайська страва\nзі свинини й грибів."
+  },
+  "chf_Recipe_DishText_118": {
+    "en": "A salad garnished\r\nwith tuna flakes.",
+    "ua": "Салат, прикрашений\nшматочками тунця."
+  },
+  "chf_Recipe_DishText_119": {
+    "en": "A delicate Italian starter\r\nmade with fresh tuna.",
+    "ua": "Італійська закуска\nзі свіжого тунця."
+  },
+  "chf_Recipe_DishText_120": {
+    "en": "Fish dredged in flour and\r\ncooked in a rustic sauce\r\nin a classic French style.",
+    "ua": "Риба в борошні в простому\nсоусі за класичним\nфранцузьким рецептом."
+  },
+  "chf_Recipe_DishText_121": {
+    "en": "A soft omelette\r\nfilled with salmon.",
+    "ua": "М'який омлет\nз лососем."
+  },
+  "chf_Recipe_DishText_122": {
+    "en": "An Italian dish consisting\r\nof fish poached together\r\nwith tomatoes.",
+    "ua": "Італійська страва з риби,\nприпущеної разом\nз томатами."
+  },
+  "chf_Recipe_DishText_123": {
+    "en": "Salmon stewed in a\r\ncreamy white sauce.",
+    "ua": "Лосось, тушкований\nу вершковому соусі."
+  },
+  "chf_Recipe_DishText_124": {
+    "en": "Fresh salmon marinated\r\nwith vegetables in vinegar.",
+    "ua": "Свіжий лосось, маринований\nз овочами в оцті."
+  },
+  "chf_Recipe_DishText_125": {
+    "en": "Bread with onions\r\nbaked into it.",
+    "ua": "Хліб, запечений\nз цибулею."
+  },
+  "chf_Recipe_DishText_126": {
+    "en": "A Chinese dish of egg-fried\r\nrice filled with tasty morsels.",
+    "ua": "Китайський рис, смажений\nз яйцем і смаколиками."
+  },
+  "chf_Recipe_DishText_127": {
+    "en": "A vegetable-rich egg\r\ntart with a pastry crust.",
+    "ua": "Яєчний тарт із безліччю\nовочів у пісочному тісті."
+  },
+  "chf_Recipe_DishText_128": {
+    "en": "A very sweet dessert\r\nmade from eggs and milk\r\nand thickened with flour.",
+    "ua": "Дуже солодкий десерт\nз яєць і молока,\nзагущений борошном."
+  },
+  "chf_Recipe_DishText_129": {
+    "en": "A simple potato and\r\negg omelette, known\r\nas a tortilla in Spanish.",
+    "ua": "Простий омлет із картоплі\nй яєць, відомий в Іспанії\nяк тортилья."
+  },
+  "chf_Recipe_DishText_130": {
+    "en": "A rice dish with chicken\r\nand a thick, starchy sauce.",
+    "ua": "Рис із куркою\nв густому соусі."
+  },
+  "chf_Recipe_DishText_131": {
+    "en": "A rice dish packed\r\nwith mushrooms.",
+    "ua": "Рисова страва з безліччю\nгрибів."
+  },
+  "chf_Recipe_DishText_132": {
+    "en": "A simple and rustic\r\nItalian pizza.",
+    "ua": "Проста сільська\nіталійська піца."
+  },
+  "chf_Recipe_DishText_133": {
+    "en": "A creamy baked dish made\r\nwith potato and flour.",
+    "ua": "Вершкова запіканка\nз картоплі й борошна."
+  },
+  "chf_Recipe_DishText_134": {
+    "en": "A soup made from\r\nsautéed onions.",
+    "ua": "Суп із пасерованої\nцибулі."
+  },
+  "chf_Recipe_DishText_135": {
+    "en": "A salad made with\r\nalmost too much potato.",
+    "ua": "Салат майже з надлишком\nкартоплі."
+  },
+  "chf_Recipe_DishText_136": {
+    "en": "A traditional Czech\r\npotato soup.",
+    "ua": "Традиційний чеський\nкартопляний суп."
+  },
+  "chf_Recipe_DishText_137": {
+    "en": "A refreshingly creamy\r\nchilled potato soup.",
+    "ua": "Освіжний вершковий\nхолодний картопляний суп."
+  },
+  "chf_Recipe_DishText_138": {
+    "en": "Crunchy and delicious\r\nrings of fried onion.",
+    "ua": "Хрусткі й смачні\nсмажені цибулеві кільця."
+  },
+  "chf_Recipe_DishText_139": {
+    "en": "A pie filled with\r\nmushroom soup.",
+    "ua": "Пиріг із начинкою\nз грибного супу."
+  },
+  "chf_Recipe_DishText_140": {
+    "en": "A traditional Moroccan\r\nsalad with lots of tomato.",
+    "ua": "Традиційний марокканський\nсалат із купою томатів."
+  },
+  "chf_Recipe_DishText_141": {
+    "en": "A traditional beef\r\nrecipe from the UK.",
+    "ua": "Традиційна британська\nстрава з яловичини."
+  },
+  "chf_Recipe_DishText_142": {
+    "en": "An extravagant whole\r\nroast chicken.",
+    "ua": "Розкішна ціла\nпечена курка."
+  },
+  "chf_Recipe_DishText_143": {
+    "en": "A sweet confection\r\nmade from eggs.",
+    "ua": "Солодкі ласощі\nз яєць."
+  },
+  "chf_Recipe_DishText_144": {
+    "en": "A simple yet elegant dish\r\nof rice in a tomato sauce.",
+    "ua": "Проста, але вишукана страва\nз рису в томатному соусі."
+  },
+  "chf_Recipe_DishText_145": {
+    "en": "A British dish of hard-\r\nboiled eggs wrapped in\r\nbreaded sausagemeat.",
+    "ua": "Британська страва: круто\nзварені яйця в ковбасному\nфарші й паніровці."
+  },
+  "chf_Recipe_DishText_146": {
+    "en": "A crispy American\r\nchicken dish.",
+    "ua": "Хрустка американська\nстрава з курки."
+  },
+  "chf_Recipe_DishText_147": {
+    "en": "A Vietnamese soup filled\r\nwith noodles and beef.",
+    "ua": "В'єтнамський суп\nз локшиною й яловичиною."
+  },
+  "chf_Recipe_DishText_148": {
+    "en": "A monstrous meal made\r\nwith a huge number of\r\ningredients.",
+    "ua": "Велетенська страва\nз величезної кількості\nінгредієнтів."
+  },
+  "chf_Recipe_DishText_149": {
+    "en": "A meal fit for a hero!\r\nThey'll be talking about\r\nthis one for years to come!",
+    "ua": "Їжа, гідна героя!\nПро неї говоритимуть\nще багато років!"
+  },
+  "chf_Recipe_DishText_150": {
+    "en": "Oh dear. Scrape it quietly \r\ninto the bin and pretend\r\nit never happened.",
+    "ua": "Ой лишенько. Тихенько\nвикиньте це й удавайте,\nщо нічого не було."
+  },
+  "chf_Recipe_Complete": {
+    "en": "Recipes to be completed: [0]",
+    "ua": "Лишилося рецептів: [0]"
+  },
+  "chf_Recipe_Complete_02": {
+    "en": "Complete!",
+    "ua": "Завершено!"
+  },
+  "chf_News_Monster_01": {
+    "en": "Armoured ghost",
+    "ua": "Латний привид"
+  },
+  "chf_News_Monster_02": {
+    "en": "Armoured demon",
+    "ua": "Латний демон"
+  },
+  "chf_News_Monster_03": {
+    "en": "Armoured fiend",
+    "ua": "Латний лиходій"
+  },
+  "chf_News_Monster_04": {
+    "en": "Armoured archfiend",
+    "ua": "Латний архілиходій"
+  },
+  "chf_News_Monster_05": {
+    "en": "Ultimate Ghost",
+    "ua": "Головний привид"
+  },
+  "chf_News_Monster_06": {
+    "en": "Reaper cadet",
+    "ua": "Жнець-новак"
+  },
+  "chf_News_Monster_07": {
+    "en": "Reaper captain",
+    "ua": "Жнець-капітан"
+  },
+  "chf_News_Monster_08": {
+    "en": "Reaper general",
+    "ua": "Жнець-генерал"
+  },
+  "chf_News_Monster_09": {
+    "en": "Reaper commander",
+    "ua": "Жнець-командир"
+  },
+  "chf_News_Monster_10": {
+    "en": "Ghost",
+    "ua": "Привид"
+  },
+  "chf_News_Monster_11": {
+    "en": "Blue ghost",
+    "ua": "Синій привид"
+  },
+  "chf_News_Monster_12": {
+    "en": "Blood ghost",
+    "ua": "Кривавий привид"
+  },
+  "chf_News_Monster_13": {
+    "en": "Granite golem",
+    "ua": "Гранітний голем"
+  },
+  "chf_News_Monster_14": {
+    "en": "Iron golem",
+    "ua": "Залізний голем"
+  },
+  "chf_News_Monster_15": {
+    "en": "Golden golem",
+    "ua": "Золотий голем"
+  },
+  "chf_News_Monster_16": {
+    "en": "Diamond golem",
+    "ua": "Діамантовий голем"
+  },
+  "chf_News_Monster_18": {
+    "en": "Dark Emperor",
+    "ua": "Темний імператор"
+  },
+  "chf_News_Monster_19": {
+    "en": "Wandering mummy",
+    "ua": "Блукальна мумія"
+  },
+  "chf_News_Monster_20": {
+    "en": "Roaming mummy",
+    "ua": "Мандрівна мумія"
+  },
+  "chf_News_Monster_21": {
+    "en": "Marauding mummy",
+    "ua": "Хижа мумія"
+  },
+  "chf_News_Monster_22": {
+    "en": "Rampaging mummy",
+    "ua": "Шалена мумія"
+  },
+  "chf_News_Monster_23": {
+    "en": "Yellow slime",
+    "ua": "Жовтий слиз"
+  },
+  "chf_News_Monster_24": {
+    "en": "Blue slime",
+    "ua": "Синій слиз"
+  },
+  "chf_News_Monster_25": {
+    "en": "Pink slime",
+    "ua": "Рожевий слиз"
+  },
+  "chf_News_Monster_26": {
+    "en": "Green slime",
+    "ua": "Зелений слиз"
+  },
+  "chf_News_Area01_001": {
+    "en": "Near the Fort of Summoning",
+    "ua": "Біля: Форт Прикликання"
+  },
+  "chf_News_Area01_002": {
+    "en": "Fort of Summoning - Entrance",
+    "ua": "Форт Прикликання — вхід"
+  },
+  "chf_News_Area01_003": {
+    "en": "Fort of Summoning - B1F",
+    "ua": "Форт Прикликання — 1-й підвал"
+  },
+  "chf_News_Area01_004": {
+    "en": "Fort of Summoning - B1F",
+    "ua": "Форт Прикликання — 1-й підвал"
+  },
+  "chf_News_Area01_005": {
+    "en": "Fort of Summoning - B2F",
+    "ua": "Форт Прикликання — 2-й підвал"
+  },
+  "chf_News_Area01_006": {
+    "en": "Near Gloomy Grotto",
+    "ua": "Біля: Похмурий грот"
+  },
+  "chf_News_Area01_007": {
+    "en": "Gloomy Grotto - Entrance",
+    "ua": "Похмурий грот — вхід"
+  },
+  "chf_News_Area01_008": {
+    "en": "Gloomy Grotto - Entrance",
+    "ua": "Похмурий грот — вхід"
+  },
+  "chf_News_Area01_009": {
+    "en": "Gloomy Grotto - West",
+    "ua": "Похмурий грот — захід"
+  },
+  "chf_News_Area01_010": {
+    "en": "Gloomy Grotto - East",
+    "ua": "Похмурий грот — схід"
+  },
+  "chf_News_Area01_011": {
+    "en": "Gloomy Grotto - Exit",
+    "ua": "Похмурий грот — вихід"
+  },
+  "chf_News_Area01_012": {
+    "en": "Gloomy Grotto - Exit",
+    "ua": "Похмурий грот — вихід"
+  },
+  "chf_News_Area01_013": {
+    "en": "Near Mirage Tower",
+    "ua": "Біля: Вежа марева"
+  },
+  "chf_News_Area01_014": {
+    "en": "Mirage Tower - Entrance",
+    "ua": "Вежа марева — вхід"
+  },
+  "chf_News_Area01_015": {
+    "en": "Mirage Tower - Entrance",
+    "ua": "Вежа марева — вхід"
+  },
+  "chf_News_Area01_016": {
+    "en": "Mirage Tower - Ground",
+    "ua": "Вежа марева — підніжжя"
+  },
+  "chf_News_Area01_017": {
+    "en": "Mirage Tower - 1F",
+    "ua": "Вежа марева — 1-й поверх"
+  },
+  "chf_News_Area01_018": {
+    "en": "Mirage Tower - 2F",
+    "ua": "Вежа марева — 2-й поверх"
+  },
+  "chf_News_Area01_019": {
+    "en": "Mirage Tower - 2F",
+    "ua": "Вежа марева — 2-й поверх"
+  },
+  "chf_News_Area01_020": {
+    "en": "Mirage Tower - Passage",
+    "ua": "Вежа марева — перехід"
+  },
+  "chf_News_Area01_021": {
+    "en": "Mirage Tower - 3F",
+    "ua": "Вежа марева — 3-й поверх"
+  },
+  "chf_News_Area01_022": {
+    "en": "Mirage Tower - 3F",
+    "ua": "Вежа марева — 3-й поверх"
+  },
+  "chf_News_Area01_023": {
+    "en": "Mirage Tower - Summit Approach",
+    "ua": "Вежа марева — підступи до вершини"
+  },
+  "chf_News_Area01_024": {
+    "en": "Mirage Tower - Summit",
+    "ua": "Вежа марева — вершина"
+  },
+  "chf_News_Area01_025": {
+    "en": "Mirage Tower - Summit",
+    "ua": "Вежа марева — вершина"
+  },
+  "chf_News_Area02_001": {
+    "en": "Near the Plains of Adventure",
+    "ua": "Біля: Рівнини пригод"
+  },
+  "chf_News_Area02_002": {
+    "en": "Plains of Adventure - Entrance",
+    "ua": "Рівнини пригод — вхід"
+  },
+  "chf_News_Area02_003": {
+    "en": "Plains of Adventure - Exit",
+    "ua": "Рівнини пригод — вихід"
+  },
+  "chf_News_Area02_004": {
+    "en": "Near Bewitching Bog",
+    "ua": "Біля: Чарівне болото"
+  },
+  "chf_News_Area02_005": {
+    "en": "Bewitching Bog - West",
+    "ua": "Чарівне болото — захід"
+  },
+  "chf_News_Area02_006": {
+    "en": "Bewitching Bog - East",
+    "ua": "Чарівне болото — схід"
+  },
+  "chf_News_Area02_007": {
+    "en": "Ransacked Ruins - West",
+    "ua": "Сплюндровані руїни — захід"
+  },
+  "chf_News_Area02_008": {
+    "en": "Ransacked Ruins - East",
+    "ua": "Сплюндровані руїни — схід"
+  },
+  "chf_News_Area02_009": {
+    "en": "Shrine of Judgement",
+    "ua": "Святилище суду"
+  },
+  "chf_News_Area02_010": {
+    "en": "Near Merciless Mountain",
+    "ua": "Біля: Безжальна гора"
+  },
+  "chf_News_Area02_011": {
+    "en": "Merciless Mountain - West",
+    "ua": "Безжальна гора — захід"
+  },
+  "chf_News_Area02_012": {
+    "en": "Merciless Mountain - East",
+    "ua": "Безжальна гора — схід"
+  },
+  "chf_News_Area02_013": {
+    "en": "Restless Rise - South",
+    "ua": "Неспокійний схил — південь"
+  },
+  "chf_News_Area02_014": {
+    "en": "Restless Rise - North",
+    "ua": "Неспокійний схил — північ"
+  },
+  "chf_News_Area02_015": {
+    "en": "Near the Dolorous Deepwood",
+    "ua": "Біля: Скорботний праліс"
+  },
+  "chf_News_Area02_016": {
+    "en": "Dolorous Deepwood - West",
+    "ua": "Скорботний праліс — захід"
+  },
+  "chf_News_Area02_017": {
+    "en": "Dolorous Deepwood - North",
+    "ua": "Скорботний праліс — північ"
+  },
+  "chf_News_Area02_018": {
+    "en": "Dolorous Deepwood - South",
+    "ua": "Скорботний праліс — пд."
+  },
+  "chf_News_Area02_019": {
+    "en": "Dolorous Deepwood - East",
+    "ua": "Скорботний праліс — схід"
+  },
+  "chf_News_Area02_020": {
+    "en": "Near the Forest of Fright",
+    "ua": "Біля: Ліс жаху"
+  },
+  "chf_News_Area02_021": {
+    "en": "Forest of Fright - Entrance",
+    "ua": "Ліс жаху — вхід"
+  },
+  "chf_News_Area02_022": {
+    "en": "Forest of Fright - Exit",
+    "ua": "Ліс жаху — вихід"
+  },
+  "chf_News_Area02_023": {
+    "en": "Swamp of Sacrifice",
+    "ua": "Драговина жертв"
+  },
+  "chf_News_Area02_024": {
+    "en": "Near the Diabolical Altar",
+    "ua": "Біля: Диявольський вівтар"
+  },
+  "chf_News_Area02_025": {
+    "en": "Diabolical Altar - Front",
+    "ua": "Диявольський вівтар — перед"
+  },
+  "chf_News_Area02_026": {
+    "en": "Diabolical Altar - West",
+    "ua": "Диявольський вівтар — захід"
+  },
+  "chf_News_Area02_027": {
+    "en": "Diabolical Altar - East",
+    "ua": "Диявольський вівтар — схід"
+  },
+  "chf_News_Area02_028": {
+    "en": "Near the Perilous Peak",
+    "ua": "Біля: Небезпечна вершина"
+  },
+  "chf_News_Area02_029": {
+    "en": "Perilous Peak - West",
+    "ua": "Небезпечна вершина — захід"
+  },
+  "chf_News_Area02_030": {
+    "en": "Perilous Peak - East",
+    "ua": "Небезпечна вершина — схід"
+  },
+  "chf_News_Area02_031": {
+    "en": "Shrine of Shadows - West",
+    "ua": "Святилище тіней — захід"
+  },
+  "chf_News_Area02_032": {
+    "en": "Shrine of Shadows - West",
+    "ua": "Святилище тіней — захід"
+  },
+  "chf_News_Area02_033": {
+    "en": "Shrine of Shadows - East",
+    "ua": "Святилище тіней — схід"
+  },
+  "chf_News_Area02_034": {
+    "en": "Near Mount Malice",
+    "ua": "Біля: Гора злоби"
+  },
+  "chf_News_Area02_035": {
+    "en": "Mount Malice - West",
+    "ua": "Гора злоби — захід"
+  },
+  "chf_News_Area02_036": {
+    "en": "Mount Malice - East",
+    "ua": "Гора злоби — схід"
+  },
+  "chf_News_Area02_037": {
+    "en": "Near the Forest of Sorrow",
+    "ua": "Біля: Ліс печалі"
+  },
+  "chf_News_Area02_038": {
+    "en": "Forest of Sorrow - Entrance",
+    "ua": "Ліс печалі — вхід"
+  },
+  "chf_News_Area02_039": {
+    "en": "Forest of Sorrow - Exit",
+    "ua": "Ліс печалі — вихід"
+  },
+  "chf_News_Area02_040": {
+    "en": "Ominous Shrine",
+    "ua": "Зловісне святилище"
+  },
+  "chf_News_Area02_041": {
+    "en": "Sealed Passage",
+    "ua": "Запечатаний прохід"
+  },
+  "chf_News_Area02_042": {
+    "en": "Near the Castle of Darkness",
+    "ua": "Біля: Замок пітьми"
+  },
+  "chf_News_Area02_043": {
+    "en": "Castle of Darkness - Entrance",
+    "ua": "Замок пітьми — вхід"
+  },
+  "chf_News_Area02_044": {
+    "en": "Castle of Darkness - Courtyard",
+    "ua": "Замок пітьми — двір"
+  },
+  "chf_News_Area02_045": {
+    "en": "Castle of Darkness - Throne Room",
+    "ua": "Замок пітьми — тронна зала"
+  },
+  "chf_News_Area02_046": {
+    "en": "Castle of Darkness - Throne Room",
+    "ua": "Замок пітьми — тронна зала"
+  },
+  "chf_News_Area02_047": {
+    "en": "Castle of Darkness - Roof 1",
+    "ua": "Замок пітьми — дах 1"
+  },
+  "chf_News_Area02_048": {
+    "en": "Castle of Darkness - Roof 2",
+    "ua": "Замок пітьми — дах 2"
+  },
+  "chf_News_Area02_049": {
+    "en": "Near the Sky Tower",
+    "ua": "Біля: Небесна вежа"
+  },
+  "chf_News_Area02_050": {
+    "en": "Castle of Darkness - Sky Tower",
+    "ua": "Замок пітьми — небесна вежа"
+  },
+  "chf_News_Area01_001_up": {
+    "en": "Near the\r\nFort of Summoning",
+    "ua": "Біля:\nФорт Прикликання"
+  },
+  "chf_News_Area01_002_up": {
+    "en": "Fort of Summoning\r\nEntrance",
+    "ua": "Форт Прикликання\nвхід"
+  },
+  "chf_News_Area01_003_up": {
+    "en": "Fort of Summoning\r\nB1F",
+    "ua": "Форт Прикликання\n1-й підвал"
+  },
+  "chf_News_Area01_004_up": {
+    "en": "Fort of Summoning\r\nB1F",
+    "ua": "Форт Прикликання\n1-й підвал"
+  },
+  "chf_News_Area01_005_up": {
+    "en": "Fort of Summoning\r\nB2F",
+    "ua": "Форт Прикликання\n2-й підвал"
+  },
+  "chf_News_Area01_006_up": {
+    "en": "Near Gloomy Grotto",
+    "ua": "Біля:\nПохмурий грот"
+  },
+  "chf_News_Area01_007_up": {
+    "en": "Gloomy Grotto\r\nEntrance",
+    "ua": "Похмурий грот\nвхід"
+  },
+  "chf_News_Area01_008_up": {
+    "en": "Gloomy Grotto\r\nEntrance",
+    "ua": "Похмурий грот\nвхід"
+  },
+  "chf_News_Area01_009_up": {
+    "en": "Gloomy Grotto\r\nWest",
+    "ua": "Похмурий грот\nзахід"
+  },
+  "chf_News_Area01_010_up": {
+    "en": "Gloomy Grotto\r\nEast",
+    "ua": "Похмурий грот\nсхід"
+  },
+  "chf_News_Area01_011_up": {
+    "en": "Gloomy Grotto\r\nExit",
+    "ua": "Похмурий грот\nвихід"
+  },
+  "chf_News_Area01_012_up": {
+    "en": "Gloomy Grotto\r\nExit",
+    "ua": "Похмурий грот\nвихід"
+  },
+  "chf_News_Area01_013_up": {
+    "en": "Near Mirage Tower",
+    "ua": "Біля:\nВежа марева"
+  },
+  "chf_News_Area01_014_up": {
+    "en": "Mirage Tower\r\nEntrance",
+    "ua": "Вежа марева\nвхід"
+  },
+  "chf_News_Area01_015_up": {
+    "en": "Mirage Tower\r\nEntrance",
+    "ua": "Вежа марева\nвхід"
+  },
+  "chf_News_Area01_016_up": {
+    "en": "Mirage Tower\r\nGround",
+    "ua": "Вежа марева\nпідніжжя"
+  },
+  "chf_News_Area01_017_up": {
+    "en": "Mirage Tower\r\n1F",
+    "ua": "Вежа марева\n1-й поверх"
+  },
+  "chf_News_Area01_018_up": {
+    "en": "Mirage Tower\r\n2F",
+    "ua": "Вежа марева\n2-й поверх"
+  },
+  "chf_News_Area01_019_up": {
+    "en": "Mirage Tower\r\n2F",
+    "ua": "Вежа марева\n2-й поверх"
+  },
+  "chf_News_Area01_020_up": {
+    "en": "Mirage Tower\r\nPassage",
+    "ua": "Вежа марева\nперехід"
+  },
+  "chf_News_Area01_021_up": {
+    "en": "Mirage Tower\r\n3F",
+    "ua": "Вежа марева\n3-й поверх"
+  },
+  "chf_News_Area01_022_up": {
+    "en": "Mirage Tower\r\n3F",
+    "ua": "Вежа марева\n3-й поверх"
+  },
+  "chf_News_Area01_023_up": {
+    "en": "Mirage Tower\r\nSummit Approach",
+    "ua": "Вежа марева\nпідступи до вершини"
+  },
+  "chf_News_Area01_024_up": {
+    "en": "Mirage Tower\r\nSummit",
+    "ua": "Вежа марева\nвершина"
+  },
+  "chf_News_Area01_025_up": {
+    "en": "Mirage Tower\r\nSummit",
+    "ua": "Вежа марева\nвершина"
+  },
+  "chf_News_Area02_001_up": {
+    "en": "Near the\r\nPlains of Adventure",
+    "ua": "Біля:\nРівнини пригод"
+  },
+  "chf_News_Area02_002_up": {
+    "en": "Plains of Adventure\r\nEntrance",
+    "ua": "Рівнини пригод\nвхід"
+  },
+  "chf_News_Area02_003_up": {
+    "en": "Plains of Adventure\r\nExit",
+    "ua": "Рівнини пригод\nвихід"
+  },
+  "chf_News_Area02_004_up": {
+    "en": "Near Bewitching Bog",
+    "ua": "Біля:\nЧарівне болото"
+  },
+  "chf_News_Area02_005_up": {
+    "en": "Bewitching Bog\r\nWest",
+    "ua": "Чарівне болото\nзахід"
+  },
+  "chf_News_Area02_006_up": {
+    "en": "Bewitching Bog\r\nEast",
+    "ua": "Чарівне болото\nсхід"
+  },
+  "chf_News_Area02_007_up": {
+    "en": "Ransacked Ruins\r\nWest",
+    "ua": "Розорені руїни\nзахід"
+  },
+  "chf_News_Area02_008_up": {
+    "en": "Ransacked Ruins\r\nEast",
+    "ua": "Розорені руїни\nсхід"
+  },
+  "chf_News_Area02_009_up": {
+    "en": "Shrine of Judgement",
+    "ua": "Святилище суду"
+  },
+  "chf_News_Area02_010_up": {
+    "en": "Near Merciless Mountain",
+    "ua": "Біля:\nБезжальна гора"
+  },
+  "chf_News_Area02_011_up": {
+    "en": "Merciless Mountain\r\nWest",
+    "ua": "Безжальна гора\nзахід"
+  },
+  "chf_News_Area02_012_up": {
+    "en": "Merciless Mountain\r\nEast",
+    "ua": "Безжальна гора\nсхід"
+  },
+  "chf_News_Area02_013_up": {
+    "en": "Restless Rise\r\nSouth",
+    "ua": "Неспокійний схил\nпівдень"
+  },
+  "chf_News_Area02_014_up": {
+    "en": "Restless Rise\r\nNorth",
+    "ua": "Неспокійний схил\nпівніч"
+  },
+  "chf_News_Area02_015_up": {
+    "en": "Near the\r\nDolorous Deepwood",
+    "ua": "Біля:\nСкорботний праліс"
+  },
+  "chf_News_Area02_016_up": {
+    "en": "Dolorous Deepwood\r\nWest",
+    "ua": "Скорботний праліс\nзахід"
+  },
+  "chf_News_Area02_017_up": {
+    "en": "Dolorous Deepwood\r\nNorth",
+    "ua": "Скорботний праліс\nпівніч"
+  },
+  "chf_News_Area02_018_up": {
+    "en": "Dolorous Deepwood\r\nSouth",
+    "ua": "Скорботний праліс\nпівдень"
+  },
+  "chf_News_Area02_019_up": {
+    "en": "Dolorous Deepwood\r\nEast",
+    "ua": "Скорботний праліс\nсхід"
+  },
+  "chf_News_Area02_020_up": {
+    "en": "Near the\r\nForest of Fright",
+    "ua": "Біля:\nЛіс жаху"
+  },
+  "chf_News_Area02_021_up": {
+    "en": "Forest of Fright\r\nEntrance",
+    "ua": "Ліс жаху\nвхід"
+  },
+  "chf_News_Area02_022_up": {
+    "en": "Forest of Fright\r\nExit",
+    "ua": "Ліс жаху\nвихід"
+  },
+  "chf_News_Area02_023_up": {
+    "en": "Swamp of Sacrifice",
+    "ua": "Драговина жертв"
+  },
+  "chf_News_Area02_024_up": {
+    "en": "Near the\r\nDiabolical Altar",
+    "ua": "Біля:\nВівтар диявола"
+  },
+  "chf_News_Area02_025_up": {
+    "en": "Diabolical Altar\r\nFront",
+    "ua": "Вівтар диявола\nперед"
+  },
+  "chf_News_Area02_026_up": {
+    "en": "Diabolical Altar\r\nWest",
+    "ua": "Вівтар диявола\nзахід"
+  },
+  "chf_News_Area02_027_up": {
+    "en": "Diabolical Altar\r\nEast",
+    "ua": "Вівтар диявола\nсхід"
+  },
+  "chf_News_Area02_028_up": {
+    "en": "Near the\r\nPerilous Peak",
+    "ua": "Біля:\nНебезпечна вершина"
+  },
+  "chf_News_Area02_029_up": {
+    "en": "Perilous Peak\r\nWest",
+    "ua": "Небезпечна вершина\nзахід"
+  },
+  "chf_News_Area02_030_up": {
+    "en": "Perilous Peak\r\nEast",
+    "ua": "Небезпечна вершина\nсхід"
+  },
+  "chf_News_Area02_031_up": {
+    "en": "Shrine of Shadows\r\nWest",
+    "ua": "Святилище тіней\nзахід"
+  },
+  "chf_News_Area02_032_up": {
+    "en": "Shrine of Shadows\r\nWest",
+    "ua": "Святилище тіней\nзахід"
+  },
+  "chf_News_Area02_033_up": {
+    "en": "Shrine of Shadows\r\nEast",
+    "ua": "Святилище тіней\nсхід"
+  },
+  "chf_News_Area02_034_up": {
+    "en": "Near Mount Malice",
+    "ua": "Біля:\nГора злоби"
+  },
+  "chf_News_Area02_035_up": {
+    "en": "Mount Malice\r\nWest",
+    "ua": "Гора злоби\nзахід"
+  },
+  "chf_News_Area02_036_up": {
+    "en": "Mount Malice\r\nEast",
+    "ua": "Гора злоби\nсхід"
+  },
+  "chf_News_Area02_037_up": {
+    "en": "Near the\r\nForest of Sorrow",
+    "ua": "Біля:\nЛіс печалі"
+  },
+  "chf_News_Area02_038_up": {
+    "en": "Forest of Sorrow\r\nEntrance",
+    "ua": "Ліс печалі\nвхід"
+  },
+  "chf_News_Area02_039_up": {
+    "en": "Forest of Sorrow\r\nExit",
+    "ua": "Ліс печалі\nвихід"
+  },
+  "chf_News_Area02_040_up": {
+    "en": "Ominous Shrine",
+    "ua": "Зловісне святилище"
+  },
+  "chf_News_Area02_041_up": {
+    "en": "Sealed Passage",
+    "ua": "Запечатаний прохід"
+  },
+  "chf_News_Area02_042_up": {
+    "en": "Near the\r\nCastle of Darkness",
+    "ua": "Біля:\nЗамок пітьми"
+  },
+  "chf_News_Area02_043_up": {
+    "en": "Castle of Darkness\r\nEntrance",
+    "ua": "Замок пітьми\nвхід"
+  },
+  "chf_News_Area02_044_up": {
+    "en": "Castle of Darkness\r\nCourtyard",
+    "ua": "Замок пітьми\nдвір"
+  },
+  "chf_News_Area02_045_up": {
+    "en": "Castle of Darkness\r\nThrone Room",
+    "ua": "Замок пітьми\nтронна зала"
+  },
+  "chf_News_Area02_046_up": {
+    "en": "Castle of Darkness\r\nThrone Room",
+    "ua": "Замок пітьми\nтронна зала"
+  },
+  "chf_News_Area02_047_up": {
+    "en": "Castle of Darkness\r\nRoof 1",
+    "ua": "Замок пітьми\nдах 1"
+  },
+  "chf_News_Area02_048_up": {
+    "en": "Castle of Darkness\r\nRoof 2",
+    "ua": "Замок пітьми\nдах 2"
+  },
+  "chf_News_Area02_049_up": {
+    "en": "Near the\r\nSky Tower",
+    "ua": "Біля:\nНебесна вежа"
+  },
+  "chf_News_Area02_050_up": {
+    "en": "Castle of Darkness\r\nSky Tower",
+    "ua": "Замок пітьми\nнебесна вежа"
+  },
+  "chf_News_text001": {
+    "en": "Hero Times",
+    "ua": "Газета героїв"
+  },
+  "chf_News_text004": {
+    "en": "Total Progress",
+    "ua": "Загальний поступ"
+  },
+  "chf_News_Comment_A_Battle_100_01": {
+    "en": "A Narrow Victory!",
+    "ua": "Ледь-ледь перемогли!"
+  },
+  "chf_News_Comment_A_Battle_100_02": {
+    "en": "Hungry for Victory!",
+    "ua": "Голодні до перемоги!"
+  },
+  "chf_News_Comment_A_Battle_100_03": {
+    "en": "Forces of Good Narrowly Prevail!",
+    "ua": "Добро ледь переважило!"
+  },
+  "chf_News_Comment_A_Battle_100_04": {
+    "en": "A Job Well Done!",
+    "ua": "Чудова робота!"
+  },
+  "chf_News_Comment_A_Battle_100_05": {
+    "en": "A Decisive Victory!",
+    "ua": "Вирішальна перемога!"
+  },
+  "chf_News_Comment_A_Battle_100_06": {
+    "en": "A Dominating Victory!",
+    "ua": "Розгромна перемога!"
+  },
+  "chf_News_Comment_A_Battle_100_07": {
+    "en": "Sweet Taste of Victory!",
+    "ua": "Солодкий смак перемоги!"
+  },
+  "chf_News_Comment_A_Battle_100_08": {
+    "en": "Perfect Strike for the Win!",
+    "ua": "Ідеальний удар — перемога!"
+  },
+  "chf_News_Comment_A_Battle_100_09": {
+    "en": "A Perfect Mega Victory!",
+    "ua": "Ідеальна мегаперемога!"
+  },
+  "chf_News_Comment_A_Battle_100_10": {
+    "en": "Mega-Easy Win!",
+    "ua": "Мегалегка перемога!"
+  },
+  "chf_News_Comment_A_Battle_100_11": {
+    "en": "Legendary Strike for the Win!",
+    "ua": "Легендарний удар — перемога!"
+  },
+  "chf_News_Comment_A_Battle_100_12": {
+    "en": "A Legendary Victory!",
+    "ua": "Легендарна перемога!"
+  },
+  "chf_News_Comment_A_Battle_100_13": {
+    "en": "A Legendary Blow!",
+    "ua": "Легендарний удар!"
+  },
+  "chf_News_Comment_A_Battle_100_14": {
+    "en": "Overwhelming Legendary Victory!",
+    "ua": "Нищівна легендарна перемога!"
+  },
+  "chf_News_Comment_A_Battle_99_01": {
+    "en": "A Hungry Attack!",
+    "ua": "Голодна атака!"
+  },
+  "chf_News_Comment_A_Battle_99_02": {
+    "en": "Weak with Hunger?",
+    "ua": "Ослабли від голоду?"
+  },
+  "chf_News_Comment_A_Battle_99_03": {
+    "en": "On the Offensive!",
+    "ua": "У наступ!"
+  },
+  "chf_News_Comment_A_Battle_99_04": {
+    "en": "Time for a Decisive Strike!",
+    "ua": "Час для вирішального удару!"
+  },
+  "chf_News_Comment_A_Battle_99_05": {
+    "en": "Fighting on a Full Stomach!",
+    "ua": "Б'ються на ситий шлунок!"
+  },
+  "chf_News_Comment_A_Battle_99_06": {
+    "en": "Decisive Blow Struck!",
+    "ua": "Вирішальний удар!"
+  },
+  "chf_News_Comment_A_Battle_99_07": {
+    "en": "Full of Food, Full of Confidence!",
+    "ua": "Ситі й упевнені!"
+  },
+  "chf_News_Comment_A_Battle_99_08": {
+    "en": "Perfectly Powerful!",
+    "ua": "Ідеальна потуга!"
+  },
+  "chf_News_Comment_A_Battle_99_09": {
+    "en": "Time for a Mega Blow!",
+    "ua": "Час для мегаудару!"
+  },
+  "chf_News_Comment_A_Battle_99_10": {
+    "en": "Mega-Impressive Perfect Strike!",
+    "ua": "Мегавражаючий ідеальний удар!"
+  },
+  "chf_News_Comment_A_Battle_99_11": {
+    "en": "Legendary Dish for a Legendary Attack!",
+    "ua": "Легендарна страва — легендарна атака!"
+  },
+  "chf_News_Comment_A_Battle_99_12": {
+    "en": "Perfect Strike Decides Battle",
+    "ua": "Ідеальний удар вирішив бій"
+  },
+  "chf_News_Comment_A_Battle_99_13": {
+    "en": "Legendary Mega Attack!",
+    "ua": "Легендарна мегаатака!"
+  },
+  "chf_News_Comment_A_Battle_99_14": {
+    "en": "A Legendary Amount of Damage!",
+    "ua": "Легендарна шкода!"
+  },
+  "chf_News_Comment_B_Battle_100_01": {
+    "en": "Dealt [0]\r\ndamage!",
+    "ua": "Завдано\n[0] шкоди!"
+  },
+  "chf_News_Comment_A_Move_100_01": {
+    "en": "Just Made It Out!",
+    "ua": "Ледве вибралися!"
+  },
+  "chf_News_Comment_A_Move_100_02": {
+    "en": "Finally Made it Out!",
+    "ua": "Нарешті вибралися!"
+  },
+  "chf_News_Comment_A_Move_100_03": {
+    "en": "Way Out Discovered!",
+    "ua": "Вихід знайдено!"
+  },
+  "chf_News_Comment_A_Move_100_04": {
+    "en": "Goal Discovered!",
+    "ua": "Ціль знайдено!"
+  },
+  "chf_News_Comment_A_Move_100_05": {
+    "en": "Finally Made It!",
+    "ua": "Нарешті дійшли!"
+  },
+  "chf_News_Comment_A_Move_100_06": {
+    "en": "Objective Reached!",
+    "ua": "Мету досягнуто!"
+  },
+  "chf_News_Comment_A_Move_100_07": {
+    "en": "A Perfect Push!",
+    "ua": "Ідеальний ривок!"
+  },
+  "chf_News_Comment_A_Move_100_08": {
+    "en": "A Satisfied Push!",
+    "ua": "Ситий ривок!"
+  },
+  "chf_News_Comment_A_Move_100_09": {
+    "en": "A Mega Push!",
+    "ua": "Мегаривок!"
+  },
+  "chf_News_Comment_A_Move_100_10": {
+    "en": "Success Tastes Great!",
+    "ua": "Успіх смакує чудово!"
+  },
+  "chf_News_Comment_A_Move_100_11": {
+    "en": "Legendary Meal, Legendary Push!",
+    "ua": "Легендарна їжа — легендарний ривок!"
+  },
+  "chf_News_Comment_A_Move_100_12": {
+    "en": "One Step Closer!",
+    "ua": "Ще на крок ближче!"
+  },
+  "chf_News_Comment_A_Move_100_13": {
+    "en": "Legendary Dash to Goal!",
+    "ua": "Легендарний ривок до мети!"
+  },
+  "chf_News_Comment_A_Move_100_14": {
+    "en": "Legendary Dash Out!",
+    "ua": "Легендарний прорив!"
+  },
+  "chf_News_Comment_A_Move_99_01": {
+    "en": "Hungry Confusion!",
+    "ua": "Голодна плутанина!"
+  },
+  "chf_News_Comment_A_Move_99_02": {
+    "en": "Trouble Finding Way?",
+    "ua": "Не можуть знайти шлях?"
+  },
+  "chf_News_Comment_A_Move_99_03": {
+    "en": "To the Next Area!",
+    "ua": "До наступної зони!"
+  },
+  "chf_News_Comment_A_Move_99_04": {
+    "en": "To the Monarch!",
+    "ua": "До володаря!"
+  },
+  "chf_News_Comment_A_Move_99_06": {
+    "en": "Exclusive! Quest on Track!",
+    "ua": "Ексклюзив! Похід за планом!"
+  },
+  "chf_News_Comment_A_Move_99_05": {
+    "en": "Race to the Monarch!",
+    "ua": "Перегони до володаря!"
+  },
+  "chf_News_Comment_A_Move_99_07": {
+    "en": "Perfect Dash!",
+    "ua": "Ідеальний ривок!"
+  },
+  "chf_News_Comment_A_Move_99_08": {
+    "en": "Sated Advance!",
+    "ua": "Ситий поступ!"
+  },
+  "chf_News_Comment_A_Move_99_09": {
+    "en": "Mega Progress Made!",
+    "ua": "Мегапоступ!"
+  },
+  "chf_News_Comment_A_Move_99_10": {
+    "en": "Dashing on a Full Stomach!",
+    "ua": "Ривок на ситий шлунок!"
+  },
+  "chf_News_Comment_A_Move_99_11": {
+    "en": "Legendary Display of Speed!",
+    "ua": "Легендарна швидкість!"
+  },
+  "chf_News_Comment_A_Move_99_12": {
+    "en": "Legendary Food Provides Boost!",
+    "ua": "Легендарна їжа дає силу!"
+  },
+  "chf_News_Comment_A_Move_99_13": {
+    "en": "A Legendary Dash!",
+    "ua": "Легендарний ривок!"
+  },
+  "chf_News_Comment_A_Move_99_14": {
+    "en": "Legendary Dash!",
+    "ua": "Легендарний ривок!"
+  },
+  "chf_News_Comment_B_Move_100_01": {
+    "en": "Advanced\r\n[0]km!",
+    "ua": "Пройдено\n[0] км!"
+  },
+  "chf_News_Comment_C00": {
+    "en": "[0]'s Review",
+    "ua": "Відгук: [0]"
+  },
+  "chf_News_Comment_C04": {
+    "en": "[0]'s Review",
+    "ua": "Відгук: [0]"
+  },
+  "chf_News_Comment_C01": {
+    "en": "[0]'s Order",
+    "ua": "Замовлення: [0]"
+  },
+  "chf_News_Comment_C05": {
+    "en": "[0]'s Order",
+    "ua": "Замовлення: [0]"
+  },
+  "chf_News_Comment_C_00": {
+    "en": "They didn't have my order...",
+    "ua": "Мого замовлення не було…"
+  },
+  "chf_News_Comment_C_01_01": {
+    "en": "This wasn't good enough...",
+    "ua": "Це було не надто добре…"
+  },
+  "chf_News_Comment_C_01_02": {
+    "en": "This tastes like disappointment.",
+    "ua": "Це смакує розчаруванням."
+  },
+  "chf_News_Comment_C_02_01": {
+    "en": "It was just lacking something...",
+    "ua": "Чогось бракувало…"
+  },
+  "chf_News_Comment_C_02_02": {
+    "en": "It was lacking a vital ingredient...",
+    "ua": "Бракувало важливого інгредієнта…"
+  },
+  "chf_News_Comment_C_03_01": {
+    "en": "This was very decent!",
+    "ua": "Цілком пристойно!"
+  },
+  "chf_News_Comment_C_03_02": {
+    "en": "This was...pretty good, actually!",
+    "ua": "Це було… досить смачно!"
+  },
+  "chf_News_Comment_C_04_01": {
+    "en": "This was truly authentic!",
+    "ua": "Справді автентично!"
+  },
+  "chf_News_Comment_C_04_02": {
+    "en": "Exactly what I ordered! Delicious!",
+    "ua": "Саме те, що я замовив! Смакота!"
+  },
+  "chf_News_Comment_C_05_01": {
+    "en": "Truly world class!",
+    "ua": "Справжній світовий рівень!"
+  },
+  "chf_News_Comment_C_05_02": {
+    "en": "Absolutely incredible! I'm stuffed!",
+    "ua": "Неймовірно! Я наївся!"
+  },
+  "chf_News_Comment_C_06_01": {
+    "en": "That was a legendary meal.",
+    "ua": "Це була легендарна страва."
+  },
+  "chf_News_Comment_C_06_02": {
+    "en": "So this is what they call a legend!",
+    "ua": "Ось що зветься легендою!"
+  },
+  "chf_News_Comment_C_07_01": {
+    "en": "A mega-sized legendary delight!",
+    "ua": "Легендарна мегапорція!"
+  },
+  "chf_News_Comment_C_07_02": {
+    "en": "Legendary isn't the half of it!",
+    "ua": "«Легендарно» — замало сказано!"
+  },
+  "chf_Demo_Tips_001": {
+    "en": "For use with the Tips Window.",
+    "ua": ""
+  },
+  "chf_Demo_Op01_001": {
+    "en": "Chef [Name]!\r\nYou've finally arrived!",
+    "ua": "Шефе [Name]!\nНарешті ви приїхали!"
+  },
+  "chf_Demo_Op01_002": {
+    "en": "I'm [System:Color name=\"mgChf_dark_orange\" ]Geoff[/System:Color], an apprentice chef\r\nhere! It's great to meet you!",
+    "ua": "Я [System:Color name=\"mgChf_dark_orange\" ]Джефф[/System:Color], учень кухаря!\nРадий знайомству!"
+  },
+  "chf_Demo_Op01_003": {
+    "en": "Times have been hard since the\r\n[System:Color name=\"mgChf_dark_orange\" ]monsters[/System:Color] captured our monarch.",
+    "ua": "Відколи [System:Color name=\"mgChf_dark_orange\" ]почвари[/System:Color] схопили\nнашого володаря, нам непросто."
+  },
+  "chf_Demo_Op01_004": {
+    "en": "Our chefs ran away, so we're\r\nbarely able to run the place!",
+    "ua": "Кухарі розбіглися, тож ми\nледве тримаємо заклад!"
+  },
+  "chf_Demo_Op01_005": {
+    "en": "That's why it's great to have a\r\nreal chef like you here again!",
+    "ua": "Тому так добре, що тут знову\nсправжній шеф, як ви!"
+  },
+  "chf_Demo_Op01_006": {
+    "en": "Oh, look at the time! Heroes will\r\nbe arriving any minute now!",
+    "ua": "Ой, котра година! Герої\nось-ось прийдуть!"
+  },
+  "chf_Demo_Op01_007": {
+    "en": "They always stop here to eat\r\nbefore heading out on the job.",
+    "ua": "Вони завжди обідають тут,\nперш ніж іти на справу."
+  },
+  "chf_Demo_Op01_008": {
+    "en": "Our [System:Color name=\"mgChf_dark_orange\" ]food [/System:Color]gives them the energy\r\nthey need to defeat the enemy!",
+    "ua": "Наша [System:Color name=\"mgChf_dark_orange\" ]їжа [/System:Color]дає їм сили\nздолати ворога!"
+  },
+  "chf_Demo_Op01_009": {
+    "en": "You could say [System:Color name=\"mgChf_dark_orange\" ]the kingdom's[/System:Color]\r\n[System:Color name=\"mgChf_dark_orange\" ]fate[/System:Color] rests on our cooking!",
+    "ua": "Можна сказати, [System:Color name=\"mgChf_dark_orange\" ]доля[/System:Color]\n[System:Color name=\"mgChf_dark_orange\" ]королівства[/System:Color] — у наших руках!"
+  },
+  "chf_Demo_Op01_010": {
+    "en": "Anyway, come on in!\r\nI'll show you to the kitchen!",
+    "ua": "Хай там як, заходьте!\nПокажу вам кухню!"
+  },
+  "chf_Demo_Tutorial01_001": {
+    "en": "This is the kitchen. It's where\r\nwe combine [System:Color name=\"mgChf_dark_orange\" ]ingredients[/System:Color] to make\r\nthe dishes we're famous for!",
+    "ua": "Це кухня. Тут ми поєднуємо\n[System:Color name=\"mgChf_dark_orange\" ]інгредієнти[/System:Color] й готуємо\nнаші славетні страви!"
+  },
+  "chf_Demo_Tutorial01_002": {
+    "en": "There are [System:Color name=\"mgChf_dark_orange\" ]12 basic kinds[/System:Color] of\r\ningredient - you know, meat,\r\nvegetables, that kind of thing.",
+    "ua": "Є [System:Color name=\"mgChf_dark_orange\" ]12 основних видів[/System:Color]\nінгредієнтів — ну, м'ясо,\nовочі й таке інше."
+  },
+  "chf_Demo_Tutorial01_003": {
+    "en": "Now, when the heroes come\r\nto visit, they usually bring [System:Color name=\"mgChf_dark_orange\" ]their[/System:Color]\r\n[System:Color name=\"mgChf_dark_orange\" ]own ingredients[/System:Color] for us to use.",
+    "ua": "Зазвичай герої, приходячи,\nприносять [System:Color name=\"mgChf_dark_orange\" ]власні[/System:Color]\n[System:Color name=\"mgChf_dark_orange\" ]інгредієнти[/System:Color]."
+  },
+  "chf_Demo_Tutorial01_004": {
+    "en": "So normally we'd be using\r\nthose, but just for today...",
+    "ua": "Тож зазвичай готуємо з них,\nале сьогодні…"
+  },
+  "chf_Demo_Tutorial01_005": {
+    "en": "I've already prepared a set of\r\n[System:Color name=\"mgChf_dark_orange\" ]ingredients[/System:Color] for you to work with!",
+    "ua": "Я вже підготував для вас\nнабір [System:Color name=\"mgChf_dark_orange\" ]інгредієнтів[/System:Color]!"
+  },
+  "chf_Demo_Tutorial01_006": {
+    "en": "Try combining these [System:Color name=\"mgChf_dark_orange\" ]ingredients[/System:Color]\r\nto make one of our famous\r\n[System:Color name=\"mgChf_dark_orange\" ]Beef and Rice Casseroles[/System:Color]!",
+    "ua": "Поєднайте ці [System:Color name=\"mgChf_dark_orange\" ]інгредієнти[/System:Color]\nй приготуйте нашу славетну\n[System:Color name=\"mgChf_dark_orange\" ]запіканку з рисом[/System:Color]!"
+  },
+  "chf_Demo_Tutorial01_007": {
+    "en": "Making a dish is simple.\r\nJust select the [System:Color name=\"mgChf_dark_orange\" ]ingredients[/System:Color]\r\nyou want to use...",
+    "ua": "Готувати просто.\nВиберіть [System:Color name=\"mgChf_dark_orange\" ]інгредієнти[/System:Color],\nякі хочете використати…"
+  },
+  "chf_Demo_Tutorial01_008": {
+    "en": "Then once you've got them all,\r\nselect  [System:Color name=\"mgChf_dark_orange\" ]Make[/System:Color]!",
+    "ua": "А коли все зібрано,\nвиберіть  [System:Color name=\"mgChf_dark_orange\" ]Готувати[/System:Color]!"
+  },
+  "chf_Demo_Tutorial01_009": {
+    "en": "Looks like [System:Color name=\"mgChf_dark_orange\" ]fish[/System:Color] wasn't a\r\ngreat choice to include in\r\na Beef and Rice Casserole.",
+    "ua": "Схоже, [System:Color name=\"mgChf_dark_orange\" ]риба[/System:Color] не дуже\nпасує до запіканки\nз рисом."
+  },
+  "chf_Demo_Tutorial01_010": {
+    "en": "If you add [System:Color name=\"mgChf_dark_orange\" ]ingredients that don't[/System:Color]\r\n[System:Color name=\"mgChf_dark_orange\" ]work with the dish[/System:Color], you'll end\r\nup with a [System:Color name=\"mgChf_dark_orange\" ]Failed Experiment[/System:Color].",
+    "ua": "Якщо додати [System:Color name=\"mgChf_dark_orange\" ]інгредієнти, що не[/System:Color]\n[System:Color name=\"mgChf_dark_orange\" ]пасують до страви[/System:Color], вийде\n[System:Color name=\"mgChf_dark_orange\" ]Невдалий експеримент[/System:Color]."
+  },
+  "chf_Demo_Tutorial01_011": {
+    "en": "Have another go at combining\r\nthese ingredients to make a\r\n[System:Color name=\"mgChf_dark_orange\" ]Beef and Rice Casserole[/System:Color].",
+    "ua": "Спробуйте ще раз поєднати\nці інгредієнти й приготувати\n[System:Color name=\"mgChf_dark_orange\" ]запіканку з рисом[/System:Color]."
+  },
+  "chf_Demo_Tutorial01_012": {
+    "en": "Ooh, not bad! You made the\r\nright dish, but...somehow I feel\r\nthere's still [System:Color name=\"mgChf_dark_orange\" ]something missing[/System:Color].",
+    "ua": "О, непогано! Страва та, але…\nздається, тут ще\n[System:Color name=\"mgChf_dark_orange\" ]чогось бракує[/System:Color]."
+  },
+  "chf_Demo_Tutorial01_013": {
+    "en": "Try adding an extra ingredient\r\nthis time and see if you can\r\nturn it into a [System:Color name=\"mgChf_dark_orange\" ]perfect dish[/System:Color]!",
+    "ua": "Цього разу додайте ще\nодин інгредієнт — може, вийде\n[System:Color name=\"mgChf_dark_orange\" ]ідеальна страва[/System:Color]!"
+  },
+  "chf_Demo_Tutorial01_014": {
+    "en": "Oh, well done! It's a [System:Color name=\"mgChf_dark_orange\" ]Perfect[/System:Color]\r\n[System:Color name=\"mgChf_dark_orange\" ]Beef and Rice Casserole[/System:Color]!",
+    "ua": "О, молодець! Це [System:Color name=\"mgChf_dark_orange\" ]ідеальна[/System:Color]\n[System:Color name=\"mgChf_dark_orange\" ]запіканка з рисом[/System:Color]!"
+  },
+  "chf_Demo_Tutorial01_015": {
+    "en": "When you make a recipe for\r\nthe first time, it'll be added\r\nto your [System:Color name=\"mgChf_dark_orange\" ]Recipe Book[/System:Color].",
+    "ua": "Коли готуєте страву вперше,\nрецепт потрапляє\nв [System:Color name=\"mgChf_dark_orange\" ]книгу рецептів[/System:Color]."
+  },
+  "chf_Demo_Tutorial01_016": {
+    "en": "Make a [System:Color name=\"mgChf_dark_orange\" ]perfect dish[/System:Color], and the\r\nrecipe will be complete, showing\r\n[System:Color name=\"mgChf_dark_orange\" ]all the ingredients[/System:Color] you can use!",
+    "ua": "З [System:Color name=\"mgChf_dark_orange\" ]ідеальною стравою[/System:Color] рецепт\nзавершиться й покаже\n[System:Color name=\"mgChf_dark_orange\" ]усі можливі інгредієнти[/System:Color]!"
+  },
+  "chf_Demo_Tutorial01_017": {
+    "en": "Some recipes will even turn\r\ninto [System:Color name=\"mgChf_dark_orange\" ]mega-sized portions[/System:Color] if\r\nyou make them really well!",
+    "ua": "Деякі страви, як вийдуть\nдуже добре, стають\n[System:Color name=\"mgChf_dark_orange\" ]мегапорціями[/System:Color]!"
+  },
+  "chf_Demo_Tutorial01_018": {
+    "en": "At any rate, the [System:Color name=\"mgChf_dark_orange\" ]Recipe Book[/System:Color] is\r\na chef's most important tool, so\r\nbe sure to consult it regularly!",
+    "ua": "Хай там як, [System:Color name=\"mgChf_dark_orange\" ]книга рецептів[/System:Color] —\nголовний інструмент шефа,\nтож заглядайте в неї!"
+  },
+  "chf_Demo_Tutorial01_019": {
+    "en": "Oh, I put your leftover\r\n[System:Color name=\"mgChf_dark_orange\" ]ingredient [/System:Color]in the [System:Color name=\"mgChf_dark_orange\" ]fridge[/System:Color].",
+    "ua": "О, я поклав зайвий\n[System:Color name=\"mgChf_dark_orange\" ]інгредієнт [/System:Color]у [System:Color name=\"mgChf_dark_orange\" ]холодильник[/System:Color]."
+  },
+  "chf_Demo_Tutorial01_020": {
+    "en": "[System:Color name=\"mgChf_dark_orange\" ]Ingredients [/System:Color]in the [System:Color name=\"mgChf_dark_orange\" ]fridge [/System:Color]can be\r\nused another day.",
+    "ua": "[System:Color name=\"mgChf_dark_orange\" ]Інгредієнти [/System:Color]з [System:Color name=\"mgChf_dark_orange\" ]холодильника[/System:Color]\nзнадобляться іншого дня."
+  },
+  "chf_Demo_Tutorial01_021": {
+    "en": "Now then, let's open up and\r\nsee if we have any customers!",
+    "ua": "Відчиняймося!\nПогляньмо, чи є відвідувачі!"
+  },
+  "chf_Demo_Area01_001": {
+    "en": "Hey, Chef [Name]!\r\nDid you read the latest\r\n[System:Color name=\"mgChf_dark_orange\" ]Hero Times[/System:Color]?!",
+    "ua": "Гей, шефе [Name]!\nЧитали свіжу\n[System:Color name=\"mgChf_dark_orange\" ]«Газету героїв»[/System:Color]?!"
+  },
+  "chf_Demo_Area01_002": {
+    "en": "It looks like the heroes\r\nfinally defeated all of those\r\nnasty [System:Color name=\"mgChf_dark_orange\" ]monsters[/System:Color]!",
+    "ua": "Схоже, герої нарешті\nздолали всіх тих\nгидких [System:Color name=\"mgChf_dark_orange\" ]почвар[/System:Color]!"
+  },
+  "chf_Demo_Area01_003": {
+    "en": "The monarch is safe and sound!\r\nNow peace will finally return\r\nto our kingdom!",
+    "ua": "Володар живий і здоровий!\nТепер у королівство нарешті\nповернеться мир!"
+  },
+  "chf_Demo_Area01_004": {
+    "en": "Huh? What's this? An [System:Color name=\"mgChf_dark_orange\" ]extra[/System:Color]\r\n[System:Color name=\"mgChf_dark_orange\" ]edition[/System:Color] of the Hero Times?",
+    "ua": "Га? Що це? [System:Color name=\"mgChf_dark_orange\" ]Спецвипуск[/System:Color]\n«Газети героїв»?"
+  },
+  "chf_Demo_Area01_005": {
+    "en": "Oh, no...!",
+    "ua": "Ой, ні…!"
+  },
+  "chf_Demo_Area01_006": {
+    "en": "It's terrible! The [System:Color name=\"mgChf_dark_orange\" ]monsters[/System:Color] have\r\ninvaded our kingdom again...",
+    "ua": "Жах! [System:Color name=\"mgChf_dark_orange\" ]Почвари[/System:Color] знову\nвдерлися в королівство…"
+  },
+  "chf_Demo_Area01_007": {
+    "en": "And this time, they've abducted\r\nnot only the [System:Color name=\"mgChf_dark_orange\" ]monarch[/System:Color] but the\r\n[System:Color name=\"mgChf_dark_orange\" ]prince[/System:Color] and [System:Color name=\"mgChf_dark_orange\" ]princess[/System:Color] too!",
+    "ua": "І цього разу викрали не лише\n[System:Color name=\"mgChf_dark_orange\" ]володаря[/System:Color], а й\n[System:Color name=\"mgChf_dark_orange\" ]принца[/System:Color] з [System:Color name=\"mgChf_dark_orange\" ]принцесою[/System:Color]!"
+  },
+  "chf_Demo_Area01_008": {
+    "en": "Will this kingdom's troubles\r\nnever end?! Oh, but look...",
+    "ua": "Невже лихам королівства\nне буде кінця?! Але гляньте…"
+  },
+  "chf_Demo_Area01_009": {
+    "en": "Apparently the heroes have\r\nalready declared their intent\r\nto set out on a [System:Color name=\"mgChf_dark_orange\" ]rescue mission[/System:Color]!",
+    "ua": "Схоже, герої вже\nоголосили, що вирушають\nна [System:Color name=\"mgChf_dark_orange\" ]рятувальну місію[/System:Color]!"
+  },
+  "chf_Demo_Area01_010": {
+    "en": "There's only one way to make\r\nsure they give those [System:Color name=\"mgChf_dark_orange\" ]monsters[/System:Color]\r\nwhat's coming to them...",
+    "ua": "Є лише один спосіб подбати,\nщоб [System:Color name=\"mgChf_dark_orange\" ]почвари[/System:Color]\nдістали по заслузі…"
+  },
+  "chf_Demo_Area01_011": {
+    "en": "We'll have to make them the\r\ntastiest food we can muster!",
+    "ua": "Нагодувати героїв\nякнайсмачніше!"
+  },
+  "chf_Demo_Area02_001": {
+    "en": "Chef [Name]!\r\nThe heroes are setting out\r\non yet another quest!",
+    "ua": "Шефе [Name]!\nГерої вирушають\nу новий похід!"
+  },
+  "chf_Demo_Area02_002": {
+    "en": "Apparently the [System:Color name=\"mgChf_dark_orange\" ]monarch[/System:Color]'s been\r\n[System:Color name=\"mgChf_dark_orange\" ]kidnapped again[/System:Color]. Must be a\r\ntough job, ruling a kingdom...",
+    "ua": "Схоже, [System:Color name=\"mgChf_dark_orange\" ]володаря[/System:Color]\n[System:Color name=\"mgChf_dark_orange\" ]знову викрали[/System:Color]. Нелегка це\nсправа — правити краєм…"
+  },
+  "chf_Demo_Area02_003": {
+    "en": "So I guess things are going to\r\nbe pretty busy for us here, too!",
+    "ua": "Тож, мабуть, і в нас\nтут буде гаряче!"
+  },
+  "chf_Demo_Area02_004": {
+    "en": "We'll just have to keep making\r\nthe best food we can offer!",
+    "ua": "Доведеться й далі готувати\nнайкращу їжу, яку можемо!"
+  },
+  "chf_Demo_Area02_020": {
+    "en": "Chef [Name]!\r\nDid you read the [System:Color name=\"mgChf_dark_orange\" ]Hero Times[/System:Color]?",
+    "ua": "Шефе [Name]!\nЧитали [System:Color name=\"mgChf_dark_orange\" ]«Газету героїв»[/System:Color]?"
+  },
+  "chf_Demo_Area02_021": {
+    "en": "Looks like the heroes are\r\nmaking some pretty good\r\nprogress on their quest!",
+    "ua": "Схоже, герої\nдобре просуваються\nв поході!"
+  },
+  "chf_Demo_Area02_022": {
+    "en": "They managed to defeat\r\nthe fiendish [System:Color name=\"mgChf_dark_orange\" ]monster[/System:Color] holding\r\nour [System:Color name=\"mgChf_dark_orange\" ]prince[/System:Color] captive!",
+    "ua": "Вони здолали лиху\n[System:Color name=\"mgChf_dark_orange\" ]почвару[/System:Color], що тримала\nв полоні нашого [System:Color name=\"mgChf_dark_orange\" ]принца[/System:Color]!"
+  },
+  "chf_Demo_Area02_023": {
+    "en": "I'm so relieved that the [System:Color name=\"mgChf_dark_orange\" ]prince[/System:Color]\r\nis back home, safe and sound!",
+    "ua": "Як я радий, що [System:Color name=\"mgChf_dark_orange\" ]принц[/System:Color]\nвдома цілий і неушкоджений!"
+  },
+  "chf_Demo_Area02_024": {
+    "en": "Let's keep making delicious\r\nmeals to keep their spirits up!",
+    "ua": "Готуймо й далі смачну їжу,\nщоб підтримати їхній дух!"
+  },
+  "chf_Demo_Area02_030": {
+    "en": "Chef [Name]!\r\nDid you read the [System:Color name=\"mgChf_dark_orange\" ]Hero Times[/System:Color]?",
+    "ua": "Шефе [Name]!\nЧитали [System:Color name=\"mgChf_dark_orange\" ]«Газету героїв»[/System:Color]?"
+  },
+  "chf_Demo_Area02_031": {
+    "en": "Looks like the heroes are\r\nmaking some pretty good\r\nprogress on their quest!",
+    "ua": "Схоже, герої\nдобре просуваються\nв поході!"
+  },
+  "chf_Demo_Area02_032": {
+    "en": "They managed to defeat\r\nthe fiendish [System:Color name=\"mgChf_dark_orange\" ]monster[/System:Color] holding\r\nour [System:Color name=\"mgChf_dark_orange\" ]princess[/System:Color] captive!",
+    "ua": "Вони здолали лиху\n[System:Color name=\"mgChf_dark_orange\" ]почвару[/System:Color], що тримала\nв полоні нашу [System:Color name=\"mgChf_dark_orange\" ]принцесу[/System:Color]!"
+  },
+  "chf_Demo_Area02_033": {
+    "en": "It's great to hear the [System:Color name=\"mgChf_dark_orange\" ]princess[/System:Color]\r\nis back home, safe and sound!",
+    "ua": "Як чудово, що [System:Color name=\"mgChf_dark_orange\" ]принцеса[/System:Color]\nвдома ціла й неушкоджена!"
+  },
+  "chf_Demo_Area02_034": {
+    "en": "Let's keep making delicious\r\nmeals to keep their spirits up!",
+    "ua": "Готуймо й далі смачну їжу,\nщоб підтримати їхній дух!"
+  },
+  "chf_Demo_Recipe01_001": {
+    "en": "Chef [Name]!\r\nYou finally managed to fill in all\r\nthe entries in your [System:Color name=\"mgChf_dark_orange\" ]Recipe Book[/System:Color]!",
+    "ua": "Шефе [Name]!\nВи нарешті заповнили всі\nзаписи в [System:Color name=\"mgChf_dark_orange\" ]книзі рецептів[/System:Color]!"
+  },
+  "chf_Demo_Recipe01_002": {
+    "en": "Congratulations!\r\nThat's not an easy thing to do!",
+    "ua": "Вітаю!\nЦе непросто!"
+  },
+  "chf_Demo_Recipe01_003": {
+    "en": "This [System:Color name=\"mgChf_dark_orange\" ]Recipe Book[/System:Color] is a symbol\r\nof everything you've achieved...\r\nIt's a priceless treasure!",
+    "ua": "Ця [System:Color name=\"mgChf_dark_orange\" ]книга рецептів[/System:Color] — символ\nусього, чого ви досягли…\nБезцінний скарб!"
+  },
+  "chf_Demo_Recipe01_004": {
+    "en": "And thanks to you, we can\r\noffer a huge variety of menu\r\nitems to our customers!",
+    "ua": "А завдяки вам ми можемо\nзапропонувати клієнтам\nнайрізноманітніше меню!"
+  },
+  "chf_Demo_Recipe01_005": {
+    "en": "I'm sure our little establishment\r\nwill only become more popular\r\nfrom here on out!",
+    "ua": "Певен, наш маленький заклад\nвідтепер стане ще\nпопулярнішим!"
+  },
+  "chf_Demo_Recipe01_006": {
+    "en": "Oh, but it looks like there's\r\nstill room to improve the\r\n[System:Color name=\"mgChf_dark_orange\" ]Recipe Book[/System:Color] even further.",
+    "ua": "О, але, схоже, [System:Color name=\"mgChf_dark_orange\" ]книгу рецептів[/System:Color]\nможна покращити\nще більше."
+  },
+  "chf_Demo_Recipe01_007": {
+    "en": "So keep up the [System:Color name=\"mgChf_dark_orange\" ]Culinary\r\nResearch[/System:Color] and see what\r\nyou can come up with!",
+    "ua": "Тож продовжуйте [System:Color name=\"mgChf_dark_orange\" ]кулінарні\nпошуки[/System:Color] й подивіться,\nщо вийде!"
+  },
+  "chf_Demo_Recipe01_008": {
+    "en": "I'll always be here to help,\r\nif you ever need anything!",
+    "ua": "Я завжди тут, щоб допомогти,\nякщо щось знадобиться!"
+  },
+  "chf_Demo_Recipe02_001": {
+    "en": "Chef [Name]! I just happened\r\nto peek at your [System:Color name=\"mgChf_dark_orange\" ]Recipe Book[/System:Color]...",
+    "ua": "Шефе [Name]! Я випадково\nглянув у вашу [System:Color name=\"mgChf_dark_orange\" ]книгу[/System:Color]…"
+  },
+  "chf_Demo_Recipe02_002": {
+    "en": "And you've finally [System:Color name=\"mgChf_dark_orange\" ]completed[/System:Color]\r\nevery last one of the recipes!",
+    "ua": "А ви нарешті [System:Color name=\"mgChf_dark_orange\" ]завершили[/System:Color]\nусі рецепти до одного!"
+  },
+  "chf_Demo_Recipe02_003": {
+    "en": "I can't believe it!\r\nThis Recipe Book may as well\r\nbe a [System:Color name=\"mgChf_dark_orange\" ]legendary item[/System:Color] itself!",
+    "ua": "Не можу повірити!\nЦя книга рецептів сама —\nніби [System:Color name=\"mgChf_dark_orange\" ]легендарний предмет[/System:Color]!"
+  },
+  "chf_Demo_Recipe02_004": {
+    "en": "There isn't a dish in the world\r\nthat you haven't mastered!",
+    "ua": "У світі немає страви,\nякої ви б не опанували!"
+  },
+  "chf_Demo_Recipe02_005": {
+    "en": "Really, I'm honoured to be\r\nable to work alongside an\r\nincredible chef like yourself!",
+    "ua": "Справді, для мене честь\nпрацювати поруч із таким\nнеймовірним шефом!"
+  },
+  "chf_Demo_Recipe02_006": {
+    "en": "Let's keep making customers\r\nhappy for many years to come!",
+    "ua": "Тішмо клієнтів ще\nбагато років!"
+  },
+  "chf_Demo_Tutorial04_001": {
+    "en": "Oh dear... That's what we\r\ncall a [System:Color name=\"mgChf_dark_orange\" ]Failed Experiment[/System:Color].",
+    "ua": "Ой лишенько… Це\n[System:Color name=\"mgChf_dark_orange\" ]Невдалий експеримент[/System:Color]."
+  },
+  "chf_Demo_Tutorial04_002": {
+    "en": "It's what you get if you include\r\n[System:Color name=\"mgChf_dark_orange\" ]ingredients that don't fit[/System:Color] with\r\nthe recipe you're making.",
+    "ua": "Так буває, якщо додати\n[System:Color name=\"mgChf_dark_orange\" ]інгредієнти, що не пасують[/System:Color]\nдо рецепта."
+  },
+  "chf_Demo_Tutorial04_003": {
+    "en": "Try to only include\r\ningredients that will [System:Color name=\"mgChf_dark_orange\" ]go well[/System:Color]\r\n[System:Color name=\"mgChf_dark_orange\" ]with the dish at hand[/System:Color]!",
+    "ua": "Додавайте лише інгредієнти,\nщо [System:Color name=\"mgChf_dark_orange\" ]добре пасують[/System:Color]\n[System:Color name=\"mgChf_dark_orange\" ]до цієї страви[/System:Color]!"
+  },
+  "chf_Demo_Tutorial04_004": {
+    "en": "Keep an eye on your [System:Color name=\"mgChf_dark_orange\" ]Recipe[/System:Color]\r\n[System:Color name=\"mgChf_dark_orange\" ]Book[/System:Color] to keep track of what\r\ningredients will work!",
+    "ua": "Стежте за [System:Color name=\"mgChf_dark_orange\" ]книгою[/System:Color]\n[System:Color name=\"mgChf_dark_orange\" ]рецептів[/System:Color], щоб знати,\nякі інгредієнти пасують!"
+  },
+  "chf_Demo_Tutorial05_001": {
+    "en": "Oh, wow! That's a truly\r\n[System:Color name=\"mgChf_dark_orange\" ]mega-sized[/System:Color] portion!",
+    "ua": "Ого! Оце справжня\n[System:Color name=\"mgChf_dark_orange\" ]мегапорція[/System:Color]!"
+  },
+  "chf_Demo_Tutorial05_002": {
+    "en": "[System:Color name=\"mgChf_dark_orange\" ]Mega-sized portions[/System:Color] are what\r\nyou get when you take a [System:Color name=\"mgChf_dark_orange\" ]perfect[/System:Color]\r\n[System:Color name=\"mgChf_dark_orange\" ]dish[/System:Color] and make it even bigger!",
+    "ua": "[System:Color name=\"mgChf_dark_orange\" ]Мегапорції[/System:Color] виходять,\nколи [System:Color name=\"mgChf_dark_orange\" ]ідеальну[/System:Color]\n[System:Color name=\"mgChf_dark_orange\" ]страву[/System:Color] роблять іще більшою!"
+  },
+  "chf_Demo_Tutorial05_003": {
+    "en": "I've added a photo of this\r\nbeauty to your [System:Color name=\"mgChf_dark_orange\" ]Recipe Book[/System:Color]\r\nfor posterity!",
+    "ua": "Я додав фото цієї красуні\nв [System:Color name=\"mgChf_dark_orange\" ]книгу рецептів[/System:Color]\nна згадку!"
+  },
+  "chf_Demo_Tutorial05_004": {
+    "en": "Feel free to take a look\r\nat it sometime!",
+    "ua": "Можете колись\nпоглянути!"
+  },
+  "chf_Demo_Tutorial06_001": {
+    "en": "Oh, is that the latest issue\r\nof the [System:Color name=\"mgChf_dark_orange\" ]Hero Times[/System:Color]?",
+    "ua": "О, це свіжий номер\n[System:Color name=\"mgChf_dark_orange\" ]«Газети героїв»[/System:Color]?"
+  },
+  "chf_Demo_Tutorial06_002": {
+    "en": "That's the best newspaper for\r\ngetting the latest news on the\r\nheroes' progress in their quest!",
+    "ua": "Це найкраща газета, щоб\nдізнаватися свіжі новини\nпро похід героїв!"
+  },
+  "chf_Demo_Tutorial06_003": {
+    "en": "Oh, look! They've even written\r\na review of the meal we made!",
+    "ua": "О, гляньте! Тут навіть\nвідгук про нашу страву!"
+  },
+  "chf_Demo_Tutorial06_004": {
+    "en": "It looks like the [System:Color name=\"mgChf_dark_orange\" ]quality of[/System:Color]\r\n[System:Color name=\"mgChf_dark_orange\" ]the heroes' meals[/System:Color] affects\r\nhow well they fight.",
+    "ua": "Схоже, [System:Color name=\"mgChf_dark_orange\" ]якість їжі[/System:Color]\n[System:Color name=\"mgChf_dark_orange\" ]героїв[/System:Color] впливає\nна те, як вони б'ються."
+  },
+  "chf_Demo_Tutorial06_005": {
+    "en": "So let's try to make the\r\nbest food we can, to support\r\nthem in their quest!",
+    "ua": "Тож готуймо якнайсмачніше,\nщоб підтримати їх\nу поході!"
+  },
+  "chf_Demo_Tutorial07_001": {
+    "en": "Good evening! The restaurant\r\nmay be closed but there's\r\nalways work to be done!",
+    "ua": "Доброго вечора! Ресторан\nзачинено, але робота\nзавжди знайдеться!"
+  },
+  "chf_Demo_Tutorial07_002": {
+    "en": "You can do some research using\r\nleftover [System:Color name=\"mgChf_dark_orange\" ]ingredients[/System:Color] or manage\r\nthe contents of your [System:Color name=\"mgChf_dark_orange\" ]fridge.[/System:Color]",
+    "ua": "Можна поекспериментувати\nіз залишками [System:Color name=\"mgChf_dark_orange\" ]інгредієнтів[/System:Color] або\nрозібрати [System:Color name=\"mgChf_dark_orange\" ]холодильник.[/System:Color]"
+  },
+  "chf_Demo_Tutorial07_003": {
+    "en": "Any ingredients that aren't\r\nstored in the [System:Color name=\"mgChf_dark_orange\" ]fridge[/System:Color] will be\r\n[System:Color name=\"mgChf_dark_orange\" ]disposed of[/System:Color] in the morning!",
+    "ua": "Інгредієнти, яких немає\nв [System:Color name=\"mgChf_dark_orange\" ]холодильнику[/System:Color], уранці\n[System:Color name=\"mgChf_dark_orange\" ]викинуть[/System:Color]!"
+  },
+  "chf_Demo_Tutorial07_004": {
+    "en": "Which is a terrible waste, so I\r\nsuggest doing [System:Color name=\"mgChf_dark_orange\" ]culinary research[/System:Color]\r\nto use up spare ingredients!",
+    "ua": "А це страшенне марнотратство,\nтож раджу [System:Color name=\"mgChf_dark_orange\" ]кулінарні пошуки[/System:Color],\nщоб використати залишки!"
+  },
+  "chf_Demo_Tutorial07_005": {
+    "en": "Good evening! The restaurant\r\nmay be closed but there's\r\nalways work to be done!",
+    "ua": "Доброго вечора! Ресторан\nзачинено, але робота\nзавжди знайдеться!"
+  },
+  "chf_Demo_Tutorial07_006": {
+    "en": "You can do some [System:Color name=\"mgChf_dark_orange\" ]research [/System:Color]using\r\nleftover [System:Color name=\"mgChf_dark_orange\" ]ingredients[/System:Color] or manage\r\nthe contents of your [System:Color name=\"mgChf_dark_orange\" ]fridge.[/System:Color]",
+    "ua": "Можна провести [System:Color name=\"mgChf_dark_orange\" ]пошуки [/System:Color]із\nзалишками [System:Color name=\"mgChf_dark_orange\" ]інгредієнтів[/System:Color] або\nрозібрати [System:Color name=\"mgChf_dark_orange\" ]холодильник.[/System:Color]"
+  },
+  "chf_Demo_Tutorial07_007": {
+    "en": "Whew, that's a lot of [System:Color name=\"mgChf_dark_orange\" ]ingredients[/System:Color]\r\nyou have there!",
+    "ua": "Ого, скільки у вас\n[System:Color name=\"mgChf_dark_orange\" ]інгредієнтів[/System:Color]!"
+  },
+  "chf_Demo_Tutorial07_008": {
+    "en": "In the morning, any [System:Color name=\"mgChf_dark_orange\" ]ingredients[/System:Color]\r\nnot stored in the [System:Color name=\"mgChf_dark_orange\" ]fridge [/System:Color]will be\r\ndisposed of, you know.",
+    "ua": "Уранці [System:Color name=\"mgChf_dark_orange\" ]інгредієнти[/System:Color],\nяких немає в [System:Color name=\"mgChf_dark_orange\" ]холодильнику[/System:Color],\nвикинуть, знаєте."
+  },
+  "chf_Demo_Tutorial07_009": {
+    "en": "Which is a terrible waste, so I\r\nsuggest doing [System:Color name=\"mgChf_dark_orange\" ]culinary research[/System:Color]\r\nto use up spare ingredients!",
+    "ua": "А це страшенне марнотратство,\nтож раджу [System:Color name=\"mgChf_dark_orange\" ]кулінарні пошуки[/System:Color],\nщоб використати залишки!"
+  },
+  "chf_Demo_Tutorial09_001": {
+    "en": "Allow me to explain!",
+    "ua": "Дозвольте пояснити!"
+  },
+  "chf_Demo_Tutorial09_002": {
+    "en": "In this mode, you can create\r\n[System:Color name=\"mgChf_dark_orange\" ]any single dish[/System:Color] of your choice!",
+    "ua": "Тут можна приготувати\n[System:Color name=\"mgChf_dark_orange\" ]будь-яку страву[/System:Color] на вибір!"
+  },
+  "chf_Demo_Tutorial09_003": {
+    "en": "However, cooking freely\r\nis actually a bit trickier\r\nthan cooking to order!",
+    "ua": "Але вільне готування\nнасправді трохи складніше\nза готування на замовлення!"
+  },
+  "chf_Demo_Tutorial09_004": {
+    "en": "You can't create a dish\r\nunless you include [System:Color name=\"mgChf_dark_orange\" ]all[/System:Color] of\r\nthe [System:Color name=\"mgChf_dark_orange\" ]key ingredients[/System:Color]!",
+    "ua": "Страву не приготувати,\nпоки не додасте [System:Color name=\"mgChf_dark_orange\" ]усі[/System:Color]\n[System:Color name=\"mgChf_dark_orange\" ]ключові інгредієнти[/System:Color]!"
+  },
+  "chf_Demo_Tutorial09_005": {
+    "en": "On the other hand, you\r\nwon't have to serve up\r\nany Failed Experiments.",
+    "ua": "Зате не доведеться\nподавати Невдалих\nекспериментів."
+  },
+  "chf_Demo_Tutorial09_006": {
+    "en": "So feel free to try using your\r\nspare [System:Color name=\"mgChf_dark_orange\" ]ingredients[/System:Color] in all kinds\r\nof different combinations!",
+    "ua": "Тож сміливо пробуйте\nзайві [System:Color name=\"mgChf_dark_orange\" ]інгредієнти[/System:Color] в усіляких\nпоєднаннях!"
+  },
+  "chf_Demo_Tutorial09_007": {
+    "en": "If [System:Color name=\"mgChf_dark_orange\" ]ingredients [/System:Color]are running low,\r\nyou can always quickly pop\r\nback to the menu with .",
+    "ua": "Якщо [System:Color name=\"mgChf_dark_orange\" ]інгредієнтів [/System:Color]мало,\nможна швиденько вийти\nв меню кнопкою ."
+  },
+  "chf_Demo_Tutorial09_008": {
+    "en": "From there, you can buy extra\r\n[System:Color name=\"mgChf_dark_orange\" ]ingredients[/System:Color] with  [System:Color name=\"mgChf_dark_orange\" ]Play Coins[/System:Color],\r\nthen get back to researching!",
+    "ua": "Там можна докупити\n[System:Color name=\"mgChf_dark_orange\" ]інгредієнтів[/System:Color] за  [System:Color name=\"mgChf_dark_orange\" ]монетки[/System:Color],\nа потім повернутися!"
+  },
+  "chf_Demo_Tutorial09_009": {
+    "en": "So, shall we get started?",
+    "ua": "Ну що, почнімо?"
+  },
+  "chf_Demo_Tutorial10_001": {
+    "en": "Allow me to explain!",
+    "ua": "Дозвольте пояснити!"
+  },
+  "chf_Demo_Tutorial10_002": {
+    "en": "In this mode, you can try to\r\nmake dishes that the heroes\r\nhave previously ordered!",
+    "ua": "Тут можна спробувати\nприготувати страви, які\nгерої замовляли раніше!"
+  },
+  "chf_Demo_Tutorial10_003": {
+    "en": "If you successfully make a dish\r\nfor the first time, it'll be entered\r\ninto your [System:Color name=\"mgChf_dark_orange\" ]Recipe Book[/System:Color]!",
+    "ua": "Якщо страва вдасться вперше,\nвона потрапить\nв [System:Color name=\"mgChf_dark_orange\" ]книгу рецептів[/System:Color]!"
+  },
+  "chf_Demo_Tutorial10_004": {
+    "en": "You only need to include [System:Color name=\"mgChf_dark_orange\" ]at\r\nleast one[/System:Color] of the [System:Color name=\"mgChf_dark_orange\" ]key ingredients[/System:Color]\r\nto successfully make a dish!",
+    "ua": "Для успіху досить додати\n[System:Color name=\"mgChf_dark_orange\" ]хоча б один[/System:Color] із [System:Color name=\"mgChf_dark_orange\" ]ключових\nінгредієнтів[/System:Color]!"
+  },
+  "chf_Demo_Tutorial10_005": {
+    "en": "So it's an easy way to build\r\nup your repertoire of recipes!",
+    "ua": "Тож це легкий спосіб\nпоповнити запас рецептів!"
+  },
+  "chf_Demo_Tutorial10_006": {
+    "en": "Now then, shall we get started?",
+    "ua": "Ну що ж, почнімо?"
+  },
+  "chf_Demo_Tutorial11_001": {
+    "en": "Allow me to explain!",
+    "ua": "Дозвольте пояснити!"
+  },
+  "chf_Demo_Tutorial11_002": {
+    "en": "In this mode, you can attempt\r\nto [System:Color name=\"mgChf_dark_orange\" ]refine[/System:Color] recipes that are\r\nalready in your [System:Color name=\"mgChf_dark_orange\" ]Recipe Book[/System:Color]!",
+    "ua": "Тут можна спробувати\n[System:Color name=\"mgChf_dark_orange\" ]відшліфувати[/System:Color] рецепти,\nщо вже є в [System:Color name=\"mgChf_dark_orange\" ]книзі рецептів[/System:Color]!"
+  },
+  "chf_Demo_Tutorial11_003": {
+    "en": "Try to include [System:Color name=\"mgChf_dark_orange\" ]all of the\r\nkey ingredients[/System:Color] in order to\r\nmake a [System:Color name=\"mgChf_dark_orange\" ]perfect dish[/System:Color]!",
+    "ua": "Додайте [System:Color name=\"mgChf_dark_orange\" ]усі ключові\nінгредієнти[/System:Color], щоб вийшла\n[System:Color name=\"mgChf_dark_orange\" ]ідеальна страва[/System:Color]!"
+  },
+  "chf_Demo_Tutorial11_004": {
+    "en": "It's a great way to fill out the\r\ndetails in your [System:Color name=\"mgChf_dark_orange\" ]Recipe Book[/System:Color]!",
+    "ua": "Це чудовий спосіб доповнити\n[System:Color name=\"mgChf_dark_orange\" ]книгу рецептів[/System:Color]!"
+  },
+  "chf_Demo_Tutorial11_005": {
+    "en": "Well then, shall we get started?",
+    "ua": "Що ж, почнімо?"
+  },
+  "chf_Demo_Tutorial12_001": {
+    "en": "This is where you can choose\r\nwhich ingredients to store in\r\nyour [System:Color name=\"mgChf_dark_orange\" ]fridge[/System:Color]!",
+    "ua": "Тут можна вибрати, які\nінгредієнти покласти\nв [System:Color name=\"mgChf_dark_orange\" ]холодильник[/System:Color]!"
+  },
+  "chf_Demo_Tutorial12_002": {
+    "en": "Pick up to [System:Color name=\"mgChf_dark_orange\" ]5 ingredients[/System:Color]\r\nyou'd like to hang on to,\r\nthen select [System:Color name=\"mgChf_dark_orange\" ]OK[/System:Color]...",
+    "ua": "Виберіть до [System:Color name=\"mgChf_dark_orange\" ]5 інгредієнтів[/System:Color],\nякі хочете зберегти,\nі натисніть [System:Color name=\"mgChf_dark_orange\" ]OK[/System:Color]…"
+  },
+  "chf_Demo_Tutorial12_003": {
+    "en": "And they'll be stored safely\r\nin the [System:Color name=\"mgChf_dark_orange\" ]fridge [/System:Color]for later use!",
+    "ua": "І вони надійно полежать\nу [System:Color name=\"mgChf_dark_orange\" ]холодильнику [/System:Color]до потреби!"
+  },
+  "chf_Demo_Tutorial12_004": {
+    "en": "Any [System:Color name=\"mgChf_dark_orange\" ]ingredients that aren't\r\nin the fridge [/System:Color]will be\r\n[System:Color name=\"mgChf_dark_orange\" ]disposed of[/System:Color] in the morning...",
+    "ua": "[System:Color name=\"mgChf_dark_orange\" ]Інгредієнти, яких немає\nв холодильнику, [/System:Color]уранці\n[System:Color name=\"mgChf_dark_orange\" ]викинуть[/System:Color]…"
+  },
+  "chf_Demo_Tutorial12_005": {
+    "en": "So make sure to store the\r\nones you think you'll need!",
+    "ua": "Тож збережіть ті,\nякі знадобляться!"
+  },
+  "chf_Demo_Tutorial12_006": {
+    "en": "The more ingredients you\r\nhave to work with, the happier\r\nyou can make your customers!",
+    "ua": "Що більше інгредієнтів,\nто більше ви потішите\nклієнтів!"
+  },
+  "chf_Demo_Tutorial13_001": {
+    "en": "If you're short on customers,\r\nyou can invite more of them\r\nfor [System:Color name=\"mgChf_dark_orange\" ]2 Play Coins[/System:Color] apiece.",
+    "ua": "Якщо бракує клієнтів,\nїх можна запросити\nпо [System:Color name=\"mgChf_dark_orange\" ]2 монетки[/System:Color] за кожного."
+  },
+  "chf_Demo_Tutorial13_002": {
+    "en": "They'll bring [System:Color name=\"mgChf_dark_orange\" ]ingredients[/System:Color] with\r\nthem too, so you'll be able to\r\nget cooking right away!",
+    "ua": "Вони теж принесуть\n[System:Color name=\"mgChf_dark_orange\" ]інгредієнти[/System:Color], тож можна\nвідразу готувати!"
+  },
+  "chf_Demo_Tutorial15_001": {
+    "en": "Here you can buy more\r\n[System:Color name=\"mgChf_dark_orange\" ]ingredients[/System:Color] to use for the price\r\nof [System:Color name=\"mgChf_dark_orange\" ]2 Play Coins[/System:Color] apiece.",
+    "ua": "Тут можна докупити\n[System:Color name=\"mgChf_dark_orange\" ]інгредієнтів[/System:Color] по\n[System:Color name=\"mgChf_dark_orange\" ]2 монетки[/System:Color] за кожен."
+  },
+  "chf_Demo_Tutorial15_002": {
+    "en": "But remember, any ingredients\r\n[System:Color name=\"mgChf_dark_orange\" ]not stored in the fridge [/System:Color]will\r\nbe [System:Color name=\"mgChf_dark_orange\" ]disposed of[/System:Color] in the morning!",
+    "ua": "Але пам'ятайте: інгредієнти,\n[System:Color name=\"mgChf_dark_orange\" ]яких немає в холодильнику[/System:Color],\nуранці [System:Color name=\"mgChf_dark_orange\" ]викинуть[/System:Color]!"
+  },
+  "chf_Demo_Tutorial16_001": {
+    "en": "This is your [System:Color name=\"mgChf_dark_orange\" ]Recipe Book[/System:Color]!\r\nEvery dish you make is\r\nrecorded in it.",
+    "ua": "Це ваша [System:Color name=\"mgChf_dark_orange\" ]книга рецептів[/System:Color]!\nСюди записується кожна\nстрава."
+  },
+  "chf_Demo_Tutorial16_002": {
+    "en": "[System:Color name=\"mgChf_dark_orange\" ]Key ingredients[/System:Color] will glow, and\r\n[System:Color name=\"mgChf_dark_orange\" ]ingredients to avoid [/System:Color]have a\r\ncross over them.",
+    "ua": "[System:Color name=\"mgChf_dark_orange\" ]Ключові інгредієнти[/System:Color] світяться,\nа [System:Color name=\"mgChf_dark_orange\" ]небажані[/System:Color]\nперекреслено."
+  },
+  "chf_Demo_Tutorial16_003": {
+    "en": "It's an invaluable reference\r\nwhen you're choosing\r\n[System:Color name=\"mgChf_dark_orange\" ]ingredients[/System:Color] for a dish.",
+    "ua": "Безцінний довідник,\nколи вибираєте\n[System:Color name=\"mgChf_dark_orange\" ]інгредієнти[/System:Color] для страви."
+  },
+  "chf_Demo_Tutorial16_004": {
+    "en": "When you manage to make\r\na [System:Color name=\"mgChf_dark_orange\" ]perfect dish[/System:Color], the recipe\r\nis filled in completely!",
+    "ua": "Коли вдасться приготувати\n[System:Color name=\"mgChf_dark_orange\" ]ідеальну страву[/System:Color], рецепт\nзаповниться повністю!"
+  },
+  "chf_Demo_Tutorial16_005": {
+    "en": "Try to make as many different\r\ndishes as you can in order to\r\nfill up the [System:Color name=\"mgChf_dark_orange\" ]Recipe Book[/System:Color]!",
+    "ua": "Готуйте якомога більше\nрізних страв, щоб заповнити\n[System:Color name=\"mgChf_dark_orange\" ]книгу рецептів[/System:Color]!"
+  },
+  "chf_Demo_Ed_001": {
+    "en": "Chef [Name]!\r\nDid you read the [System:Color name=\"mgChf_dark_orange\" ]Hero Times[/System:Color]?",
+    "ua": "Шефе [Name]!\nЧитали [System:Color name=\"mgChf_dark_orange\" ]«Газету героїв»[/System:Color]?"
+  },
+  "chf_Demo_Ed_002": {
+    "en": "The heroes finally did it!\r\nThey defeated [System:Color name=\"mgChf_dark_orange\" ]all the monsters[/System:Color]!",
+    "ua": "Герої нарешті впоралися!\nВони здолали [System:Color name=\"mgChf_dark_orange\" ]усіх почвар[/System:Color]!"
+  },
+  "chf_Demo_Ed_003": {
+    "en": "The [System:Color name=\"mgChf_dark_orange\" ]monarch[/System:Color] is safe and sound\r\nback in the palace!",
+    "ua": "[System:Color name=\"mgChf_dark_orange\" ]Володар[/System:Color] повернувся\nв палац живий і здоровий!"
+  },
+  "chf_Demo_Ed_004": {
+    "en": "Isn't it wonderful?!",
+    "ua": "Хіба не чудово?!"
+  },
+  "chf_Demo_Ed_005": {
+    "en": "You've worked so hard. This\r\nis a victory for you as well!",
+    "ua": "Ви так старалися. Це\nі ваша перемога!"
+  },
+  "chf_Demo_Ed_006": {
+    "en": "As for me, I'm just so honoured\r\nto have worked beside you!",
+    "ua": "А для мене велика честь —\nпрацювати поруч із вами!"
+  },
+  "chf_Demo_Ed_007": {
+    "en": "Today, we'll celebrate by\r\nholding a big banquet!",
+    "ua": "Сьогодні відсвяткуймо\nвеликим бенкетом!"
+  },
+  "chf_Demo_Ed_008": {
+    "en": "Oh, Chef! To commemorate\r\nyour final victory...",
+    "ua": "О, шефе! На честь\nвашої перемоги…"
+  },
+  "chf_Demo_Ed_009": {
+    "en": "Please take this fabulous\r\n[System:Color name=\"mgChf_dark_orange\" ]Epic Banquet Hat[/System:Color]!",
+    "ua": "Прийміть цей чудовий\n[System:Color name=\"mgChf_dark_orange\" ]Капелюх-бенкет[/System:Color]!"
+  },
+  "chf_Demo_Ed_010": {
+    "en": "Feel free to show it off with\r\npride - you've earned it!",
+    "ua": "Носіть його з гордістю —\nви на нього заслужили!"
+  },
+  "chf_staff_credit004": {
+    "en": "Press ",
+    "ua": "Натисніть "
+  },
+  "chf_staff_credit005": {
+    "en": "Nintendo and PROPE are the authors \r\nof this software for the purpose of copyright. \r\nAll rights reserved.\r\n© 2016 Nintendo.",
+    "ua": "Nintendo і PROPE є авторами\nцієї програми з погляду авторського права.\nУсі права захищено.\n© 2016 Nintendo."
+  },
+  "chf_staff_credit_name001": {
+    "en": "Yuji Naka",
+    "ua": ""
+  },
+  "chf_staff_credit_name002": {
+    "en": "Yusaku Yamanaka",
+    "ua": ""
+  },
+  "chf_staff_credit_name003": {
+    "en": "Mio Masuda",
+    "ua": ""
+  },
+  "chf_staff_credit_name004": {
+    "en": "Tomonori Sakamoto",
+    "ua": ""
+  },
+  "chf_staff_credit_name005": {
+    "en": "Sakai Tatsuya",
+    "ua": ""
+  },
+  "chf_staff_credit_name006": {
+    "en": "Hidenori Oda",
+    "ua": ""
+  },
+  "chf_staff_credit_name007": {
+    "en": "Mizuho Umezu",
+    "ua": ""
+  },
+  "chf_staff_credit_name008": {
+    "en": "Honoka Suzuki",
+    "ua": ""
+  },
+  "chf_staff_credit_name009": {
+    "en": "Chika Kawaguchi",
+    "ua": ""
+  },
+  "chf_staff_credit_name010": {
+    "en": "Keita Sugahara",
+    "ua": ""
+  },
+  "chf_staff_credit_name011": {
+    "en": "Minori Hisamatsu",
+    "ua": ""
+  },
+  "chf_staff_credit_name012": {
+    "en": "Ayako Inoue",
+    "ua": ""
+  },
+  "chf_staff_credit_name013": {
+    "en": "Masataka Miura",
+    "ua": ""
+  },
+  "chf_staff_credit_name014": {
+    "en": "Nozomi Tsuruoka",
+    "ua": ""
+  },
+  "chf_staff_credit_name015": {
+    "en": "Ken Miyajima",
+    "ua": ""
+  },
+  "chf_staff_credit_name016": {
+    "en": "Risako Watanabe",
+    "ua": ""
+  },
+  "chf_staff_credit_name017": {
+    "en": "Takeshi Ichimura",
+    "ua": ""
+  },
+  "chf_staff_credit_name018": {
+    "en": "Megumi Shoji",
+    "ua": ""
+  },
+  "chf_staff_credit_name019": {
+    "en": "Tatsuya Suto",
+    "ua": ""
+  },
+  "chf_staff_credit_name020": {
+    "en": "Mari Hamada",
+    "ua": ""
+  },
+  "chf_staff_credit_name021": {
+    "en": "Kyoko Nakamura",
+    "ua": ""
+  },
+  "chf_staff_credit_name022": {
+    "en": "Nobuo Kiyota",
+    "ua": ""
+  },
+  "chf_staff_credit_name024": {
+    "en": "Kouichi Kawamoto",
+    "ua": ""
+  },
+  "chf_staff_credit_name025": {
+    "en": "Toyokazu Nonaka",
+    "ua": ""
+  },
+  "chf_staff_credit_name026": {
+    "en": "Ryusuke Niitani",
+    "ua": ""
+  },
+  "chf_staff_credit_name027": {
+    "en": "Yoshiaki Onishi",
+    "ua": ""
+  },
+  "chf_staff_credit_name028": {
+    "en": "Masahiro Shiotani",
+    "ua": ""
+  },
+  "chf_staff_credit_name029": {
+    "en": "Kazuyuki Gofuku",
+    "ua": ""
+  },
+  "chf_staff_credit_name030": {
+    "en": "Kenji Yamamoto",
+    "ua": ""
+  },
+  "chf_staff_credit_name031": {
+    "en": "Minako Hamano",
+    "ua": ""
+  },
+  "chf_staff_credit_name032": {
+    "en": "Yuto Sasaki",
+    "ua": ""
+  },
+  "chf_staff_credit_name033": {
+    "en": "Shingo Okamoto",
+    "ua": ""
+  },
+  "chf_staff_credit_name034": {
+    "en": "Tomohiro Umeda",
+    "ua": ""
+  },
+  "chf_staff_credit_name035": {
+    "en": "Takehiro Oyama",
+    "ua": ""
+  },
+  "chf_staff_credit_name036": {
+    "en": "Manabu Matumoto",
+    "ua": ""
+  },
+  "chf_staff_credit_name037": {
+    "en": "Kanta Yokota",
+    "ua": ""
+  },
+  "chf_staff_credit_name038": {
+    "en": "Masaki Mori",
+    "ua": ""
+  },
+  "chf_staff_credit_name039": {
+    "en": "Mario Club",
+    "ua": ""
+  },
+  "chf_staff_credit_name040": {
+    "en": "NOA Product Testing",
+    "ua": ""
+  },
+  "chf_staff_credit_name041": {
+    "en": "NOE Quality Assurance",
+    "ua": ""
+  },
+  "chf_staff_credit_name042": {
+    "en": "NOE Localisation",
+    "ua": ""
+  },
+  "chf_staff_credit_name043": {
+    "en": "NOA Localization",
+    "ua": ""
+  },
+  "chf_staff_credit_name044": {
+    "en": "Shinya Takahashi",
+    "ua": ""
+  },
+  "chf_staff_credit_name045": {
+    "en": "Tatsumi Kimishima",
+    "ua": ""
+  },
+  "chf_staff_credit_name047": {
+    "en": "STAFF CREDITS",
+    "ua": "ТИТРИ"
+  },
+  "chf_staff_credit_name048": {
+    "en": "Producer",
+    "ua": "Продюсер"
+  },
+  "chf_staff_credit_name049": {
+    "en": "Director",
+    "ua": "Режисер"
+  },
+  "chf_staff_credit_name050": {
+    "en": "Game Design",
+    "ua": "Геймдизайн"
+  },
+  "chf_staff_credit_name051": {
+    "en": "Program Director",
+    "ua": "Керівник програмування"
+  },
+  "chf_staff_credit_name052": {
+    "en": "Programming",
+    "ua": "Програмування"
+  },
+  "chf_staff_credit_name053": {
+    "en": "Art Director",
+    "ua": "Арт-директор"
+  },
+  "chf_staff_credit_name054": {
+    "en": "Graphic Design",
+    "ua": "Графічний дизайн"
+  },
+  "chf_staff_credit_name055": {
+    "en": "Producers",
+    "ua": "Продюсери"
+  },
+  "chf_staff_credit_name056": {
+    "en": "Associate Producers",
+    "ua": "Асоційовані продюсери"
+  },
+  "chf_staff_credit_name057": {
+    "en": "Project Management",
+    "ua": "Керування проєктом"
+  },
+  "chf_staff_credit_name058": {
+    "en": "Sound Director",
+    "ua": "Звукорежисер"
+  },
+  "chf_staff_credit_name059": {
+    "en": "Sound Coordination",
+    "ua": "Координація звуку"
+  },
+  "chf_staff_credit_name060": {
+    "en": "Technical Support",
+    "ua": "Технічна підтримка"
+  },
+  "chf_staff_credit_name061": {
+    "en": "Testing",
+    "ua": "Тестування"
+  },
+  "chf_staff_credit_name062": {
+    "en": "European Localisation",
+    "ua": "Європейська локалізація"
+  },
+  "chf_staff_credit_name063": {
+    "en": "North American Localization",
+    "ua": "Північноамериканська локалізація"
+  },
+  "chf_staff_credit_name064": {
+    "en": "General Producer",
+    "ua": "Генеральний продюсер"
+  },
+  "chf_staff_credit_name065": {
+    "en": "Executive Producer",
+    "ua": "Виконавчий продюсер"
+  },
+  "chf_staff_credit_name066": {
+    "en": "Developer PROPE Co.,Ltd.",
+    "ua": "Розробник PROPE Co.,Ltd."
+  },
+  "chf_staff_credit_name067": {
+    "en": "Puresound Inc.",
+    "ua": ""
+  },
+  "chf_staff_credit_name068": {
+    "en": "Nintendo",
+    "ua": "Nintendo"
+  },
+  "chf_staff_credit_name069": {
+    "en": "Music",
+    "ua": "Музика"
+  },
+  "chf_staff_credit_name070": {
+    "en": "Sound Effects",
+    "ua": "Звукові ефекти"
+  },
+  "chf_Window01_Text001": {
+    "en": "Sure",
+    "ua": "Так"
+  },
+  "chf_Window01_Text002": {
+    "en": "Nope",
+    "ua": "Ні"
+  },
+  "chf_Window01_Text003": {
+    "en": "Do you want to return?\r\nThe heroes will leave.",
+    "ua": "Повернутися?\nГерої підуть."
+  },
+  "chf_Window02_Text002": {
+    "en": "Welcome to StreetPass Chef!\r\nIn this game, you receive fresh\r\ningredients from visiting heroes,",
+    "ua": "Це Ресторан StreetPass!\nТут ви отримуєте свіжі\nінгредієнти від героїв-гостей"
+  },
+  "chf_Window02_Text003": {
+    "en": "and make delicious meals\r\nto support them on their quest!",
+    "ua": "й готуєте смачну їжу,\nщоб підтримати їх у поході!"
+  },
+  "chf_Window02_Text004": {
+    "en": "Ready to open up?",
+    "ua": "Готові відчинятися?"
+  },
+  "chf_Window02_Text005": {
+    "en": "Ready!",
+    "ua": "Готовий!"
+  },
+  "chf_Window02_Text006": {
+    "en": "Wait!",
+    "ua": "Стривайте!"
+  },
+  "chf_Window02_Text007": {
+    "en": "Please come again!",
+    "ua": "Заходьте ще!"
+  },
+  "chf_Window02_Text008": {
+    "en": "Time to go out there and\r\nmake culinary history!",
+    "ua": "Час творити\nкулінарну історію!"
+  },
+  "chf_Window03_Text000": {
+    "en": "Press ",
+    "ua": "Натисніть "
+  },
+  "chf_Window05_Text001": {
+    "en": "[System:Color name=\"mgChf_dark_orange\" ]Ingredients[/System:Color] not in the fridge will\r\nbe [System:Color name=\"mgChf_dark_orange\" ]disposed of [/System:Color]next [System:Color name=\"mgChf_dark_orange\" ]morning[/System:Color]!",
+    "ua": "[System:Color name=\"mgChf_dark_orange\" ]Інгредієнти[/System:Color] не з холодильника\n[System:Color name=\"mgChf_dark_orange\" ]викинуть[/System:Color] наступного [System:Color name=\"mgChf_dark_orange\" ]ранку[/System:Color]!"
+  },
+  "chf_Window05_Text002": {
+    "en": "No problem",
+    "ua": "Гаразд"
+  },
+  "chf_Window05_Text003": {
+    "en": "Oops, hang on...",
+    "ua": "Ой, стривайте…"
+  }
+}

@@ -36,6 +36,7 @@ from pathlib import Path
 sys.path.insert(0, str(Path(__file__).parent))
 import luma_hook  # noqa: E402
 import variant  # noqa: E402
+from build import TITLES  # noqa: E402
 from manual import MANUAL_APPLET_TID  # noqa: E402
 
 ROOT = Path(__file__).resolve().parent.parent
@@ -216,6 +217,17 @@ luma/titles/0004003000009802/code.ips ДО першого запуску з мо
 возить папка luma/titles/000400100002C100, а її code.ips показує титулу, що читати
 їх треба з SD-карти. Тому папку теж видаляйте тільки цілком.
 
+ПЛОЩА STREETPASS MII З ОНОВЛЕННЯМ
+Якщо на консолі встановлено останнє оновлення Площі (версія 14.7, у Площі є
+Риболовля, Сад, Таємничий маєток і Зомбі StreetPass), звичайна папка Площі йому
+не підходить: оновлення з нею не запуститься (помилка 009-8401) або впаде.
+Для нього в архіві є окремий переклад — папка plaza_update. Тоді:
+  1. Розпакуйте архів, як описано нижче в "ВСТАНОВЛЕННЯ".
+  2. Видаліть ЦІЛКОМ папку luma/titles/0004001000022800 на SD-карті.
+  3. Скопіюйте вміст plaza_update (папку luma) в корінь SD-карти.
+Якщо оновлення не встановлено, папку plaza_update просто не чіпайте.
+Застосунок "Українізатор 3DS" перевіряє це сам і ставить потрібний варіант.
+
 ОКРЕМО ПРО ГРУ ПО ЗАВАНТАЖЕННЮ, КЛАВІАТУРУ, ЗДОРОВ'Я І БЕЗПЕКУ, ШВИДКУ КАМЕРУ,
 ЕКРАН ПОМИЛКИ, 3DS MEMO, АПЛЕТ CIRCLE PAD PRO, MIIVERSE ТА ДАНІ NNID
 Перші сім читають свій romfs просто з SD-карти (dlplay_romfs.bin, swkbd_romfs.bin,
@@ -273,6 +285,25 @@ def manual_files() -> str:
             label += " (New 3DS)"
         lines.append(f"  luma/titles/{MANUAL_APPLET_TID}/romfs/{luma_hook.manual_file_name(tid):<6}      {label}")
     return "\n".join(lines)
+
+
+# A build written under an id Luma never reads, for a title that is two programs under one
+# id: the plaza with its last update installed. The installer moves the folder into place
+# when the update is on the card (the `alt` line of tools/installer_manifest.py); an archive
+# cannot look, so it carries the folder aside, under the id it is for, and README.txt says
+# when to use it.
+ALT_DIR = "plaza_update"
+ALT_FOLDERS = {
+    cfg["tids"][0]: cfg["installs_as"] for cfg in TITLES.values() if cfg.get("installs_as")
+}
+
+
+def card_path(rel: str) -> str:
+    """Where a dist/ file goes in the archive: the alternative builds into ALT_DIR."""
+    parts = rel.split("/")
+    if len(parts) > 2 and parts[:2] == ["luma", "titles"] and parts[2] in ALT_FOLDERS:
+        return "/".join([ALT_DIR, "luma", "titles", ALT_FOLDERS[parts[2]], *parts[3:]])
+    return rel
 
 
 # Where the UniStore that installs all this from the console itself is served from. It lives
@@ -362,14 +393,14 @@ def main() -> None:
         )
         with zipfile.ZipFile(archive, "w", zipfile.ZIP_DEFLATED) as zf:
             for rel, path in files.items():
-                zf.write(path, rel)
+                zf.write(path, card_path(rel))
             zf.writestr("README.txt", readme)
 
         total = sum(path.stat().st_size for path in files.values())
         print(f"{archive.name}: {len(files)} files, {total} bytes -> {archive.stat().st_size} bytes")
         for rel, path in files.items():
             from_overlay = " <- new3ds/" if model == "new3ds" and rel in overlay else ""
-            print(f"  {rel}{from_overlay}")
+            print(f"  {card_path(rel)}{from_overlay}")
 
 
 if __name__ == "__main__":

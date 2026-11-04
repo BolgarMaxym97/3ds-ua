@@ -1,0 +1,3734 @@
+{
+  "skip_a": {
+    "en": " Next",
+    "ua": " Далі"
+  },
+  "skip_a_01": {
+    "en": " Skip",
+    "ua": " Пропустити"
+  },
+  "save": {
+    "en": "Saving... Do not turn off the power.",
+    "ua": "Збереження… Не вимикайте живлення."
+  },
+  "load": {
+    "en": "Loading... Do not turn off the power.",
+    "ua": "Завантаження… Не вимикайте живлення."
+  },
+  "new_discovery": {
+    "en": "New Discovery!",
+    "ua": "Нове відкриття!"
+  },
+  "stage_001": {
+    "en": "Jungle",
+    "ua": "Джунглі"
+  },
+  "stage_002": {
+    "en": "Ancient Ruins",
+    "ua": "Давні руїни"
+  },
+  "stage_003": {
+    "en": "Snowy Peaks",
+    "ua": "Засніжені вершини"
+  },
+  "stage_004": {
+    "en": "Tropical Island",
+    "ua": "Тропічний острів"
+  },
+  "stage_005": {
+    "en": "Island of Ruins",
+    "ua": "Острів руїн"
+  },
+  "stage_006": {
+    "en": "Frozen Isle",
+    "ua": "Острів криги"
+  },
+  "stage_title": {
+    "en": "Area [COUNT]: [STAGE]",
+    "ua": "Зона [COUNT]: [STAGE]"
+  },
+  "stage_world_map": {
+    "en": "World Map",
+    "ua": "Мапа світу"
+  },
+  "stage_secret_map": {
+    "en": "Forgotten Islands",
+    "ua": "Забуті острови"
+  },
+  "stage_open": {
+    "en": "[System:Color name=\"mgExp_white\" ]New area unlocked![/System:Color]",
+    "ua": "[System:Color name=\"mgExp_white\" ]Відкрито нову зону![/System:Color]"
+  },
+  "stage_000_t_info": {
+    "en": "The entrance of the jungle\r\nshould be a good opportunity\r\nto brush up your exploring skills.",
+    "ua": "Узлісся джунглів — гарне\nмісце, щоб відточити\nнавички дослідника."
+  },
+  "stage_001_t_info": {
+    "en": "The map you acquired has\r\nled you to the deep jungle.\r\nCan you track down the\r\nancient secrets hidden there?",
+    "ua": "Знайдена мапа привела вас\nу глибину джунглів. Чи вдасться\nвідшукати давні таємниці,\nсховані там?"
+  },
+  "stage_002_t_info": {
+    "en": "Following the crystal skull's clues,\r\nyou arrive in a vast labyrinth of\r\nancient ruins. Do the answers\r\nyou seek lie somewhere within?",
+    "ua": "За підказками черепа ви\nпотрапляєте у великий лабіринт\nдавніх руїн. Чи знайдуться тут\nвідповіді, яких ви шукаєте?"
+  },
+  "stage_003_t_info": {
+    "en": "With any luck, these desolate\r\npeaks should hold the key\r\nto unraveling the mysteries\r\ndepicted in the ancient texts.",
+    "ua": "Якщо пощастить, ці пустельні\nвершини стануть ключем\nдо таємниць, описаних\nу давніх текстах."
+  },
+  "stage_001_m_info": {
+    "en": "In pursuit of alleged UFO\r\nsightings, you return to the\r\njungle in search of new leads.",
+    "ua": "Шукаючи свідчення про НЛО,\nви повертаєтеся в джунглі\nпо нові сліди."
+  },
+  "stage_002_m_info": {
+    "en": "Your quest for the mysterious\r\nmonoliths brings you back\r\nto these ancient ruins.",
+    "ua": "Пошуки таємничих монолітів\nзнову ведуть вас\nдо цих давніх руїн."
+  },
+  "stage_003_m_info": {
+    "en": "You return to these icy\r\nmountains, hoping to solve\r\nthe mystery of the monoliths\r\nonce and for all.",
+    "ua": "Ви повертаєтеся в ці крижані\nгори, сподіваючись раз\nі назавжди розгадати\nтаємницю монолітів."
+  },
+  "stage_004_t_info": {
+    "en": "Could the depths of this\r\njungle-clad island hold\r\nforgotten treasures?",
+    "ua": "Чи не ховаються в глибинах\nцього острова, вкритого\nджунглями, забуті скарби?"
+  },
+  "stage_005_t_info": {
+    "en": "Could the desolate remains\r\nof this island civilisation\r\nhold forgotten treasures?",
+    "ua": "Чи не ховаються серед\nпустельних решток цієї острівної\nцивілізації забуті скарби?"
+  },
+  "stage_006_t_info": {
+    "en": "Could the cold wastes\r\nof this snowy island hold\r\nforgotten treasures?",
+    "ua": "Чи не ховаються в холодних\nпустищах цього засніженого\nострова забуті скарби?"
+  },
+  "stage_001_f_info": {
+    "en": "Try exploring every\r\ninch of the jungle.",
+    "ua": "Спробуйте дослідити кожен\nсантиметр джунглів."
+  },
+  "stage_002_f_info": {
+    "en": "Try exploring every\r\ninch of the ruins.",
+    "ua": "Спробуйте дослідити кожен\nсантиметр руїн."
+  },
+  "stage_003_f_info": {
+    "en": "Try exploring every\r\ninch of the mountains.",
+    "ua": "Спробуйте дослідити кожен\nсантиметр гір."
+  },
+  "stage_004_f_info": {
+    "en": "Try exploring every inch\r\nof the Tropical Island.",
+    "ua": "Спробуйте дослідити кожен\nсантиметр Тропічного острова."
+  },
+  "stage_005_f_info": {
+    "en": "Try exploring every inch\r\nof the Island of Ruins.",
+    "ua": "Спробуйте дослідити кожен\nсантиметр Острова руїн."
+  },
+  "stage_006_f_info": {
+    "en": "Try exploring every inch\r\nof the Frozen Isle.",
+    "ua": "Спробуйте дослідити кожен\nсантиметр Острова криги."
+  },
+  "first_explain_000": {
+    "en": "Welcome to StreetPass Explorers!",
+    "ua": "Вітаємо в Експедиції StreetPass!"
+  },
+  "first_explain_001": {
+    "en": "Explore exotic locations using the step\r\ncount of people you meet via StreetPass.",
+    "ua": "Досліджуйте екзотичні місця за кроками\nлюдей, зустрінутих через StreetPass."
+  },
+  "first_explain_002": {
+    "en": "Ready to set off?",
+    "ua": "Готові вирушати?"
+  },
+  "first_explain_yes": {
+    "en": "Absolutely!",
+    "ua": "Звісно!"
+  },
+  "first_explain_no": {
+    "en": "Maybe later...",
+    "ua": "Може, пізніше…"
+  },
+  "first_explain_start": {
+    "en": "Righto, time to sally forth!",
+    "ua": "Гаразд, уперед!"
+  },
+  "first_explain_fiction": {
+    "en": "This game is a work of fiction.",
+    "ua": "Ця гра — вигадка."
+  },
+  "first_explain_cansel": {
+    "en": "Cold feet? Come back when\r\nyou pluck up the courage!",
+    "ua": "Злякалися? Повертайтеся,\nколи наберетеся сміливості!"
+  },
+  "title_logo": {
+    "en": "StreetPass Explorers",
+    "ua": "Експедиція StreetPass"
+  },
+  "title_logo_sdw": {
+    "en": "StreetPass Explorers",
+    "ua": "Експедиція StreetPass"
+  },
+  "title_press_start": {
+    "en": "PRESS ",
+    "ua": "НАТИСНІТЬ "
+  },
+  "title_press_start_sdw": {
+    "en": "PRESS ",
+    "ua": "НАТИСНІТЬ "
+  },
+  "title_copyright": {
+    "en": "©2016 Nintendo  Developed by ARZEST",
+    "ua": "©2016 Nintendo  Розробник: ARZEST"
+  },
+  "title_comment_000": {
+    "en": "Explore the wild frontiers with the\r\npeople you encounter via StreetPass!",
+    "ua": "Досліджуйте дикі краї з людьми,\nзустрінутими через StreetPass!"
+  },
+  "title_status_000": {
+    "en": "Play Coins:",
+    "ua": "Монетки:"
+  },
+  "title_status_001": {
+    "en": "Steps Collected:",
+    "ua": "Зібрано кроків:"
+  },
+  "title_status_002": {
+    "en": "Fellow Explorers:",
+    "ua": "Дослідників:"
+  },
+  "title_explain_home": {
+    "en": ": Return to the HOME Menu",
+    "ua": ": До меню HOME"
+  },
+  "title_walk_info": {
+    "en": "Available steps:",
+    "ua": "Доступно кроків:"
+  },
+  "title_walk_001": {
+    "en": "[System:Color name=\"mgExp_red\" ]Best: [WALK][/System:Color]",
+    "ua": "[System:Color name=\"mgExp_red\" ]Рекорд: [WALK][/System:Color]"
+  },
+  "title_walk_002": {
+    "en": "Explorers gathered:",
+    "ua": "Зібрано дослідників:"
+  },
+  "button_000": {
+    "en": "Start exploring",
+    "ua": "Почати експедицію"
+  },
+  "button_001": {
+    "en": "Continue exploring",
+    "ua": "Продовжити експедицію"
+  },
+  "button_002": {
+    "en": "Back",
+    "ua": "Назад"
+  },
+  "button_003": {
+    "en": " Recruit explorers",
+    "ua": " Найняти дослідників"
+  },
+  "button_004": {
+    "en": "Exploration Log",
+    "ua": "Журнал експедиції"
+  },
+  "button_007": {
+    "en": "Title Menu",
+    "ua": "Головне меню"
+  },
+  "button_009": {
+    "en": "Recruit",
+    "ua": "Найняти"
+  },
+  "button_010": {
+    "en": "Recruit Max",
+    "ua": "Найняти макс."
+  },
+  "button_011": {
+    "en": "Cancel",
+    "ua": "Скасувати"
+  },
+  "button_012": {
+    "en": "Yep, back to the plaza!",
+    "ua": "Так, на площу!"
+  },
+  "button_013": {
+    "en": "On second thoughts...",
+    "ua": "Хоча ні…"
+  },
+  "button_015": {
+    "en": " Back",
+    "ua": " Назад"
+  },
+  "button_016": {
+    "en": " Select",
+    "ua": " Вибрати"
+  },
+  "button_017": {
+    "en": " Start",
+    "ua": " Почати"
+  },
+  "button_018": {
+    "en": " Next",
+    "ua": " Далі"
+  },
+  "button_019": {
+    "en": "Treasures",
+    "ua": "Скарби"
+  },
+  "button_020": {
+    "en": "Photos",
+    "ua": "Фото"
+  },
+  "button_021": {
+    "en": "No",
+    "ua": "Ні"
+  },
+  "button_022": {
+    "en": "Yes",
+    "ua": "Так"
+  },
+  "button_023": {
+    "en": "Drink",
+    "ua": "Випити"
+  },
+  "button_024": {
+    "en": "Don't drink",
+    "ua": "Не пити"
+  },
+  "button_025": {
+    "en": "Give up",
+    "ua": "Здатися"
+  },
+  "button_026": {
+    "en": "Don't give up",
+    "ua": "Не здаватися"
+  },
+  "button_028": {
+    "en": "Open",
+    "ua": "Відкрию"
+  },
+  "button_029": {
+    "en": "Don't open",
+    "ua": "Не відкрию"
+  },
+  "button_031": {
+    "en": "Approach",
+    "ua": "Підійти"
+  },
+  "button_030": {
+    "en": "Stay away",
+    "ua": "Триматися подалі"
+  },
+  "button_032": {
+    "en": "Climb",
+    "ua": "Лізти"
+  },
+  "button_033": {
+    "en": "Don't climb",
+    "ua": "Не лізти"
+  },
+  "button_000_info": {
+    "en": "Explore the wild frontiers with the\r\npeople you encounter via StreetPass!",
+    "ua": "Досліджуйте дикі краї з людьми,\nзустрінутими через StreetPass!"
+  },
+  "button_001_info": {
+    "en": "Continue exploring the wild frontiers\r\nwith your fellow StreetPass explorers!",
+    "ua": "Продовжуйте досліджувати дикі краї\nз товаришами зі StreetPass!"
+  },
+  "button_002_info": {
+    "en": "Quit the game and\r\nreturn to the plaza.",
+    "ua": "Вийти з гри й\nповернутися на площу."
+  },
+  "button_003_info": {
+    "en": "Use  Play Coins\r\nto recruit explorers.",
+    "ua": "Наймайте дослідників\nза монетки ."
+  },
+  "button_004_info": {
+    "en": "View a log detailing all your\r\nadventures so far.",
+    "ua": "Журнал усіх ваших\nпригод досі."
+  },
+  "title_mes_000": {
+    "en": "Explorers, assemble!",
+    "ua": "Дослідники, до мене!"
+  },
+  "title_mes_001": {
+    "en": "What a fine group of adventuring\r\nfellows! Righto, let us venture forth!",
+    "ua": "Яка славна компанія мандрівників!\nГаразд, вирушаймо!"
+  },
+  "title_mes_010": {
+    "en": "Explorers, assemble!",
+    "ua": "Дослідники, до мене!"
+  },
+  "title_mes_011": {
+    "en": "Time to venture forth!",
+    "ua": "Час вирушати!"
+  },
+  "mission_head_s00": {
+    "en": "Mission ",
+    "ua": "Місія"
+  },
+  "mission_head_s01": {
+    "en": "Mission ",
+    "ua": "Місія"
+  },
+  "mission_head_s02": {
+    "en": "Mission",
+    "ua": "Місія"
+  },
+  "mission_head_s03": {
+    "en": "Mission",
+    "ua": "Місія"
+  },
+  "mission_head_s04": {
+    "en": "Mission",
+    "ua": "Місія"
+  },
+  "mission_head_s05": {
+    "en": "Mission",
+    "ua": "Місія"
+  },
+  "mission_head_s06": {
+    "en": "Mission",
+    "ua": "Місія"
+  },
+  "mission_quest_s00_t_01": {
+    "en": "Sir Henry's Treasure",
+    "ua": "Скарб сера Генрі"
+  },
+  "mission_quest_s01_t_01": {
+    "en": "Treasures of the Jungle\r\n[System:Size percent=\"80\" ]The Map's Mysterious Trail[/System:Size]",
+    "ua": "Скарби джунглів\n[System:Size percent=\"80\" ]Таємничий слід мапи[/System:Size]"
+  },
+  "mission_quest_s01_t_02": {
+    "en": "Treasures of the Jungle II\r\n[System:Size percent=\"80\" ]A Riddle in Crystal[/System:Size]",
+    "ua": "Скарби джунглів II\n[System:Size percent=\"80\" ]Кришталева загадка[/System:Size]"
+  },
+  "mission_quest_s01_t_03": {
+    "en": "Treasures of the Jungle III\r\n[System:Size percent=\"80\" ][System:Size percent=\"80\" ]The Crystal Takes Shape[/System:Size][/System:Size]",
+    "ua": "Скарби джунглів III\n[System:Size percent=\"80\" ][System:Size percent=\"80\" ]Кришталь набуває форми[/System:Size][/System:Size]"
+  },
+  "mission_quest_s01_t_04": {
+    "en": "Treasures of the Jungle IV\r\n[System:Size percent=\"80\" ]Find of the Century[/System:Size]",
+    "ua": "Скарби джунглів IV\n[System:Size percent=\"80\" ]Знахідка століття[/System:Size]"
+  },
+  "mission_quest_s01_t_05": {
+    "en": "Treasures of the Jungle V\r\n[System:Size percent=\"80\" ]Pieces of the Puzzle[/System:Size]",
+    "ua": "Скарби джунглів V\n[System:Size percent=\"80\" ]Шматочки головоломки[/System:Size]"
+  },
+  "mission_quest_s01_t_06": {
+    "en": "Treasures of the Jungle VI\r\n[System:Size percent=\"80\" ]The Skull is Completed[/System:Size]",
+    "ua": "Скарби джунглів VI\n[System:Size percent=\"80\" ]Череп завершено[/System:Size]"
+  },
+  "mission_quest_s02_t_01": {
+    "en": "Relics of the Ruins\r\n[System:Size percent=\"80\" ]Following the Skull's Clue[/System:Size]",
+    "ua": "Реліквії руїн\n[System:Size percent=\"80\" ]За підказкою черепа[/System:Size]"
+  },
+  "mission_quest_s02_t_02": {
+    "en": "Relics of the Ruins II\r\n[System:Size percent=\"80\" ]The Ancient Idols[/System:Size]",
+    "ua": "Реліквії руїн II\n[System:Size percent=\"80\" ]Давні ідоли[/System:Size]"
+  },
+  "mission_quest_s02_t_03": {
+    "en": "Relics of the Ruins III\r\n[System:Size percent=\"80\" ]The Many Faces of the Divine[/System:Size]",
+    "ua": "Реліквії руїн III\n[System:Size percent=\"80\" ]Численні лики божества[/System:Size]"
+  },
+  "mission_quest_s02_t_04": {
+    "en": "Relics of the Ruins IV\r\n[System:Size percent=\"80\" ]Memories of the Ancient Flood[/System:Size]",
+    "ua": "Реліквії руїн IV\n[System:Size percent=\"80\" ]Спогади про давню повінь[/System:Size]"
+  },
+  "mission_quest_s02_t_05": {
+    "en": "Relics of the Ruins V\r\n[System:Size percent=\"80\" ]Wrath of the Pantheon[/System:Size]",
+    "ua": "Реліквії руїн V\n[System:Size percent=\"80\" ]Гнів пантеону[/System:Size]"
+  },
+  "mission_quest_s02_t_06": {
+    "en": "Relics of the Ruins VI\r\n[System:Size percent=\"80\" ]The Idols' Sacred Power[/System:Size]",
+    "ua": "Реліквії руїн VI\n[System:Size percent=\"80\" ]Священна сила ідолів[/System:Size]"
+  },
+  "mission_quest_s03_t_01": {
+    "en": "Secrets of the Peaks\r\n[System:Size percent=\"80\" ]The Idols' Guidance[/System:Size]",
+    "ua": "Таємниці вершин\n[System:Size percent=\"80\" ]Дороговказ ідолів[/System:Size]"
+  },
+  "mission_quest_s03_t_02": {
+    "en": "Secrets of the Peaks II\r\n[System:Size percent=\"80\" ]Mountain Masquerade[/System:Size]",
+    "ua": "Таємниці вершин II\n[System:Size percent=\"80\" ]Гірський маскарад[/System:Size]"
+  },
+  "mission_quest_s03_t_03": {
+    "en": "Secrets of the Peaks III\r\n[System:Size percent=\"80\" ]The Seal's Enigma[/System:Size]",
+    "ua": "Таємниці вершин III\n[System:Size percent=\"80\" ]Загадка печатки[/System:Size]"
+  },
+  "mission_quest_s03_t_04": {
+    "en": "Secrets of the Peaks IV\r\n[System:Size percent=\"80\" ]Unearthing Ancient Visages[/System:Size]",
+    "ua": "Таємниці вершин IV\n[System:Size percent=\"80\" ]Давні обличчя з-під землі[/System:Size]"
+  },
+  "mission_quest_s03_t_05": {
+    "en": "Secrets of the Peaks V\r\n[System:Size percent=\"80\" ]A Glint of Gold[/System:Size]",
+    "ua": "Таємниці вершин V\n[System:Size percent=\"80\" ]Золотий проблиск[/System:Size]"
+  },
+  "mission_quest_s03_t_06": {
+    "en": "Secrets of the Peaks VI\r\n[System:Size percent=\"80\" ]The Totem Arises[/System:Size]",
+    "ua": "Таємниці вершин VI\n[System:Size percent=\"80\" ]Постання тотема[/System:Size]"
+  },
+  "mission_quest_s01_m_01": {
+    "en": "Return to the Jungle\r\n[System:Size percent=\"80\" ]A Visitor from the Peaks?[/System:Size]",
+    "ua": "Повернення в джунглі\n[System:Size percent=\"80\" ]Гість із вершин?[/System:Size]"
+  },
+  "mission_quest_s01_m_02": {
+    "en": "Return to the Jungle II\r\n[System:Size percent=\"80\" ]The Monoliths from Beyond[/System:Size]",
+    "ua": "Повернення в джунглі II\n[System:Size percent=\"80\" ]Моноліти з-поза світу[/System:Size]"
+  },
+  "mission_quest_s01_m_03": {
+    "en": "Return to the Jungle III\r\n[System:Size percent=\"80\" ]Search for the Third Monolith[/System:Size]",
+    "ua": "Повернення в джунглі III\n[System:Size percent=\"80\" ]Пошуки третього моноліту[/System:Size]"
+  },
+  "mission_quest_s02_m_01": {
+    "en": "Monoliths of the Ruins\r\n[System:Size percent=\"80\" ]Following the UFO's Trail[/System:Size]",
+    "ua": "Моноліти руїн\n[System:Size percent=\"80\" ]Слідами НЛО[/System:Size]"
+  },
+  "mission_quest_s02_m_02": {
+    "en": "Monoliths of the Ruins II\r\n[System:Size percent=\"80\" ]The Flood Connection[/System:Size]",
+    "ua": "Моноліти руїн II\n[System:Size percent=\"80\" ]Зв'язок із повінню[/System:Size]"
+  },
+  "mission_quest_s02_m_03": {
+    "en": "Monoliths of the Ruins III\r\n[System:Size percent=\"80\" ]Memories of Disaster[/System:Size]",
+    "ua": "Моноліти руїн III\n[System:Size percent=\"80\" ]Спогади про лихо[/System:Size]"
+  },
+  "mission_quest_s03_m_01": {
+    "en": "Monoliths of the Peaks\r\n[System:Size percent=\"80\" ]The End Draws Near[/System:Size]",
+    "ua": "Моноліти вершин\n[System:Size percent=\"80\" ]Кінець близько[/System:Size]"
+  },
+  "mission_quest_s03_m_02": {
+    "en": "Monoliths of the Peaks II\r\n[System:Size percent=\"80\" ]Truth in the Myth[/System:Size]",
+    "ua": "Моноліти вершин II\n[System:Size percent=\"80\" ]Правда в міфі[/System:Size]"
+  },
+  "mission_quest_s03_m_03": {
+    "en": "Monoliths of the Peaks III\r\n[System:Size percent=\"80\" ]Sir Henry Awakens[/System:Size]",
+    "ua": "Моноліти вершин III\n[System:Size percent=\"80\" ]Сер Генрі прокидається[/System:Size]"
+  },
+  "mission_quest_s01_f": {
+    "en": "Exploring the Jungle\r\n[System:Size percent=\"80\" ]Leave No Stone Unturned![/System:Size]",
+    "ua": "Дослідження джунглів\n[System:Size percent=\"80\" ]Обшукайте кожен камінь![/System:Size]"
+  },
+  "mission_quest_s02_f": {
+    "en": "Exploring the Ruins\r\n[System:Size percent=\"80\" ]Leave No Stone Unturned![/System:Size]",
+    "ua": "Дослідження руїн\n[System:Size percent=\"80\" ]Обшукайте кожен камінь![/System:Size]"
+  },
+  "mission_quest_s03_f": {
+    "en": "Exploring the Peaks\r\n[System:Size percent=\"80\" ]Leave No Stone Unturned![/System:Size]",
+    "ua": "Дослідження вершин\n[System:Size percent=\"80\" ]Обшукайте кожен камінь![/System:Size]"
+  },
+  "mission_quest_s04_t_01": {
+    "en": "Forgotten Treasures\r\nof the Tropical Island",
+    "ua": "Забуті скарби\nТропічного острова"
+  },
+  "mission_quest_s04_t_02": {
+    "en": "Forgotten Treasures\r\nof the Tropical Island",
+    "ua": "Забуті скарби\nТропічного острова"
+  },
+  "mission_quest_s04_t_03": {
+    "en": "Forgotten Treasures\r\nof the Tropical Island",
+    "ua": "Забуті скарби\nТропічного острова"
+  },
+  "mission_quest_s05_t_01": {
+    "en": "Forgotten Treasures\r\nof the Island of Ruins",
+    "ua": "Забуті скарби\nОстрова руїн"
+  },
+  "mission_quest_s05_t_02": {
+    "en": "Forgotten Treasures\r\nof the Island of Ruins",
+    "ua": "Забуті скарби\nОстрова руїн"
+  },
+  "mission_quest_s05_t_03": {
+    "en": "Forgotten Treasures\r\nof the Island of Ruins",
+    "ua": "Забуті скарби\nОстрова руїн"
+  },
+  "mission_quest_s06_t_01": {
+    "en": "Forgotten Treasures\r\nof the Frozen Isle",
+    "ua": "Забуті скарби\nОстрова криги"
+  },
+  "mission_quest_s06_t_02": {
+    "en": "Forgotten Treasures\r\nof the Frozen Isle",
+    "ua": "Забуті скарби\nКрижаного острова"
+  },
+  "mission_quest_s06_t_03": {
+    "en": "Forgotten Treasures\r\nof the Frozen Isle",
+    "ua": "Забуті скарби\nКрижаного острова"
+  },
+  "mission_quest_s04_f": {
+    "en": "Exploring the Tropical Island\r\n[System:Size percent=\"80\" ]Leave No Stone Unturned![/System:Size]",
+    "ua": "Дослідження Тропічного острова\n[System:Size percent=\"80\" ]Обшукайте кожен камінь![/System:Size]"
+  },
+  "mission_quest_s05_f": {
+    "en": "Exploring the Island of Ruins\r\n[System:Size percent=\"80\" ]Leave No Stone Unturned![/System:Size]",
+    "ua": "Дослідження Острова руїн\n[System:Size percent=\"80\" ]Обшукайте кожен камінь![/System:Size]"
+  },
+  "mission_quest_s06_f": {
+    "en": "Exploring the Frozen Isle\r\n[System:Size percent=\"80\" ]Leave No Stone Unturned![/System:Size]",
+    "ua": "Дослідження Острова криги\n[System:Size percent=\"80\" ]Обшукайте кожен камінь![/System:Size]"
+  },
+  "mission_result_s00_t_01": {
+    "en": "Sir Henry's Treasure",
+    "ua": "Скарб сера Генрі"
+  },
+  "mission_result_s01_t_01": {
+    "en": "Treasures of the Jungle",
+    "ua": "Скарби джунглів"
+  },
+  "mission_result_s01_t_02": {
+    "en": "Treasures of the Jungle",
+    "ua": "Скарби джунглів"
+  },
+  "mission_result_s01_t_03": {
+    "en": "Treasures of the Jungle",
+    "ua": "Скарби джунглів"
+  },
+  "mission_result_s01_t_04": {
+    "en": "Treasures of the Jungle",
+    "ua": "Скарби джунглів"
+  },
+  "mission_result_s01_t_05": {
+    "en": "Treasures of the Jungle",
+    "ua": "Скарби джунглів"
+  },
+  "mission_result_s01_t_06": {
+    "en": "Treasures of the Jungle",
+    "ua": "Скарби джунглів"
+  },
+  "mission_result_s02_t_01": {
+    "en": "Relics of the Ruins",
+    "ua": "Реліквії руїн"
+  },
+  "mission_result_s02_t_02": {
+    "en": "Relics of the Ruins",
+    "ua": "Реліквії руїн"
+  },
+  "mission_result_s02_t_03": {
+    "en": "Relics of the Ruins",
+    "ua": "Реліквії руїн"
+  },
+  "mission_result_s02_t_04": {
+    "en": "Relics of the Ruins",
+    "ua": "Реліквії руїн"
+  },
+  "mission_result_s02_t_05": {
+    "en": "Relics of the Ruins",
+    "ua": "Реліквії руїн"
+  },
+  "mission_result_s02_t_06": {
+    "en": "Relics of the Ruins",
+    "ua": "Реліквії руїн"
+  },
+  "mission_result_s03_t_01": {
+    "en": "Secrets of the Peaks",
+    "ua": "Таємниці вершин"
+  },
+  "mission_result_s03_t_02": {
+    "en": "Secrets of the Peaks",
+    "ua": "Таємниці вершин"
+  },
+  "mission_result_s03_t_03": {
+    "en": "Secrets of the Peaks",
+    "ua": "Таємниці вершин"
+  },
+  "mission_result_s03_t_04": {
+    "en": "Secrets of the Peaks",
+    "ua": "Таємниці вершин"
+  },
+  "mission_result_s03_t_05": {
+    "en": "Secrets of the Peaks",
+    "ua": "Таємниці вершин"
+  },
+  "mission_result_s03_t_06": {
+    "en": "Secrets of the Peaks",
+    "ua": "Таємниці вершин"
+  },
+  "mission_result_s01_m_01": {
+    "en": "Return to the Jungle",
+    "ua": "Повернення в джунглі"
+  },
+  "mission_result_s01_m_02": {
+    "en": "Return to the Jungle",
+    "ua": "Повернення в джунглі"
+  },
+  "mission_result_s01_m_03": {
+    "en": "Return to the Jungle",
+    "ua": "Повернення в джунглі"
+  },
+  "mission_result_s02_m_01": {
+    "en": "Monoliths of the Ruins",
+    "ua": "Моноліти руїн"
+  },
+  "mission_result_s02_m_02": {
+    "en": "Monoliths of the Ruins",
+    "ua": "Моноліти руїн"
+  },
+  "mission_result_s02_m_03": {
+    "en": "Monoliths of the Ruins",
+    "ua": "Моноліти руїн"
+  },
+  "mission_result_s03_m_01": {
+    "en": "Monoliths of the Peaks",
+    "ua": "Моноліти вершин"
+  },
+  "mission_result_s03_m_02": {
+    "en": "Monoliths of the Peaks",
+    "ua": "Моноліти вершин"
+  },
+  "mission_result_s03_m_03": {
+    "en": "Monoliths of the Peaks",
+    "ua": "Моноліти вершин"
+  },
+  "mission_result_s01_f": {
+    "en": "Exploring the Jungle",
+    "ua": "Дослідження джунглів"
+  },
+  "mission_result_s02_f": {
+    "en": "Exploring the Ruins",
+    "ua": "Дослідження руїн"
+  },
+  "mission_result_s03_f": {
+    "en": "Exploring the Peaks",
+    "ua": "Дослідження вершин"
+  },
+  "mission_result_s04_t_01": {
+    "en": "Forgotten Treasures: Tropical Island",
+    "ua": "Забуті скарби: Тропічний острів"
+  },
+  "mission_result_s04_t_02": {
+    "en": "Forgotten Treasures: Tropical Island",
+    "ua": "Забуті скарби: Тропічний острів"
+  },
+  "mission_result_s04_t_03": {
+    "en": "Forgotten Treasures: Tropical Island",
+    "ua": "Забуті скарби: Тропічний острів"
+  },
+  "mission_result_s05_t_01": {
+    "en": "Forgotten Treasures: Island of Ruins",
+    "ua": "Забуті скарби: Острів руїн"
+  },
+  "mission_result_s05_t_02": {
+    "en": "Forgotten Treasures: Island of Ruins",
+    "ua": "Забуті скарби: Острів руїн"
+  },
+  "mission_result_s05_t_03": {
+    "en": "Forgotten Treasures: Island of Ruins",
+    "ua": "Забуті скарби: Острів руїн"
+  },
+  "mission_result_s06_t_01": {
+    "en": "Forgotten Treasures: Frozen Isle",
+    "ua": "Забуті скарби: Острів криги"
+  },
+  "mission_result_s06_t_02": {
+    "en": "Forgotten Treasures: Frozen Isle",
+    "ua": "Забуті скарби: Крижаний острів"
+  },
+  "mission_result_s06_t_03": {
+    "en": "Forgotten Treasures: Frozen Isle",
+    "ua": "Забуті скарби: Крижаний острів"
+  },
+  "mission_result_s04_f": {
+    "en": "Exploring the Tropical Island",
+    "ua": "Дослідження Тропічного о-ва"
+  },
+  "mission_result_s05_f": {
+    "en": "Exploring the Island of Ruins",
+    "ua": "Дослідження Острова руїн"
+  },
+  "mission_result_s06_f": {
+    "en": "Exploring the Frozen Isle",
+    "ua": "Дослідження Острова криги"
+  },
+  "game_walk_01": {
+    "en": " steps",
+    "ua": " кроків"
+  },
+  "game_walk_02": {
+    "en": "[WALK] steps",
+    "ua": "[WALK] кроків"
+  },
+  "game_walk_03": {
+    "en": "[WALK] steps",
+    "ua": "[WALK] кроків"
+  },
+  "game_walk_04": {
+    "en": "[WALK] steps",
+    "ua": "[WALK] кроків"
+  },
+  "game_walk_scale": {
+    "en": "[WALK] steps",
+    "ua": "[WALK] кроків"
+  },
+  "nothing_mes_000": {
+    "en": "Must have imagined it...",
+    "ua": "Мабуть, привиділось…"
+  },
+  "nothing_mes_001": {
+    "en": "Nothing happened...",
+    "ua": "Нічого не сталося…"
+  },
+  "dropout_mes_000": {
+    "en": "Go on without me!",
+    "ua": "Ідіть без мене!"
+  },
+  "dropout_mes_001": {
+    "en": "The rest is up to you!",
+    "ua": "Далі — ви!"
+  },
+  "dropout_mes_002": {
+    "en": "I know you can do it!",
+    "ua": "Ви зможете!"
+  },
+  "dropout_mes_003": {
+    "en": "Don't give in!",
+    "ua": "Не здавайтеся!"
+  },
+  "escape_mes_000": {
+    "en": "Yikes!",
+    "ua": "Ой!"
+  },
+  "escape_mes_001": {
+    "en": "Aargh!",
+    "ua": "А-а-а!"
+  },
+  "escape_mes_002": {
+    "en": "Exit, stage left!",
+    "ua": "Тікаю!"
+  },
+  "escape_mes_003": {
+    "en": "Aaahh!",
+    "ua": "А-а-ах!"
+  },
+  "escape_mes_004": {
+    "en": "Nooo!",
+    "ua": "Ні-і-і!"
+  },
+  "escape_mes_005": {
+    "en": "Eeek!",
+    "ua": "Ой-ой!"
+  },
+  "beast_01_001": {
+    "en": "anaconda",
+    "ua": "анаконда"
+  },
+  "beast_01_002": {
+    "en": "jaguar",
+    "ua": "ягуар"
+  },
+  "beast_01_003": {
+    "en": "gorilla",
+    "ua": "горила"
+  },
+  "beast_01_004": {
+    "en": "crocodile",
+    "ua": "крокодил"
+  },
+  "beast_01_005": {
+    "en": "puma",
+    "ua": "пума"
+  },
+  "beast_01_006": {
+    "en": "Komodo dragon",
+    "ua": "комодський варан"
+  },
+  "beast_01_007": {
+    "en": "black rhinoceros",
+    "ua": "чорний носоріг"
+  },
+  "beast_01_008": {
+    "en": "hippopotamus",
+    "ua": "бегемот"
+  },
+  "beast_02_001": {
+    "en": "red river hog",
+    "ua": "річкова свиня"
+  },
+  "beast_02_002": {
+    "en": "tiger",
+    "ua": "тигр"
+  },
+  "beast_02_003": {
+    "en": "elephant",
+    "ua": "слон"
+  },
+  "beast_02_004": {
+    "en": "lion",
+    "ua": "лев"
+  },
+  "beast_02_005": {
+    "en": "hawk",
+    "ua": "яструб"
+  },
+  "beast_02_006": {
+    "en": "hyena",
+    "ua": "гієна"
+  },
+  "beast_02_007": {
+    "en": "blackbuck",
+    "ua": "гарна"
+  },
+  "beast_02_008": {
+    "en": "buffalo",
+    "ua": "буйвіл"
+  },
+  "beast_03_001": {
+    "en": "white-tailed eagle",
+    "ua": "орлан-білохвіст"
+  },
+  "beast_03_002": {
+    "en": "snow leopard",
+    "ua": "сніговий барс"
+  },
+  "beast_03_003": {
+    "en": "bear",
+    "ua": "ведмідь"
+  },
+  "beast_03_004": {
+    "en": "grizzly bear",
+    "ua": "грізлі"
+  },
+  "beast_03_005": {
+    "en": "eagle owl",
+    "ua": "пугач"
+  },
+  "beast_03_006": {
+    "en": "moose",
+    "ua": "лось"
+  },
+  "beast_03_007": {
+    "en": "wolf",
+    "ua": "вовк"
+  },
+  "beast_03_008": {
+    "en": "Siberian tiger",
+    "ua": "амурський тигр"
+  },
+  "treasure_001": {
+    "en": "Crystal Object",
+    "ua": "Кришталевий предмет"
+  },
+  "treasure_001_info": {
+    "en": "Seems to be a [System:Color name=\"mgExp_red\" ]piece of a larger structure[/System:Color]. The carving\r\nis remarkably precise for such an ancient artefact.",
+    "ua": "Схоже, це [System:Color name=\"mgExp_red\" ]частина більшої споруди[/System:Color]. Різьба\nнапрочуд точна як на такий давній артефакт."
+  },
+  "treasure_002": {
+    "en": "Companion Object",
+    "ua": "Парний предмет"
+  },
+  "treasure_002_info": {
+    "en": "A near-perfect mirror image of the [System:Color name=\"mgExp_red\" ]Crystal Object[/System:Color].\r\nThese indentations seem familiar...",
+    "ua": "Майже дзеркальна копія [System:Color name=\"mgExp_red\" ]Кришталевого предмета[/System:Color].\nЦі заглибини здаються знайомими…"
+  },
+  "treasure_003": {
+    "en": "Crystal Cheek (Right)",
+    "ua": "Кришталева вилиця (права)"
+  },
+  "treasure_003_info": {
+    "en": "Each tooth has been carefully and individually\r\ncarved. They look [System:Color name=\"mgExp_red\" ]unmistakeably human[/System:Color].",
+    "ua": "Кожен зуб старанно вирізано окремо.\nВони [System:Color name=\"mgExp_red\" ]безсумнівно людські[/System:Color]."
+  },
+  "treasure_004": {
+    "en": "Crystal Cheek (Left)",
+    "ua": "Кришталева вилиця (ліва)"
+  },
+  "treasure_004_info": {
+    "en": "The teeth exhibit a lack of symmetry that\r\nsuggests this was [System:Color name=\"mgExp_red\" ]based on a real skull[/System:Color].",
+    "ua": "Несиметричні зуби свідчать, що\nце [System:Color name=\"mgExp_red\" ]копія справжнього черепа[/System:Color]."
+  },
+  "treasure_005": {
+    "en": "Crystal Jaw",
+    "ua": "Кришталева щелепа"
+  },
+  "treasure_005_info": {
+    "en": "A piece of skull showing no damage or signs of wear.\r\nIs it [System:Color name=\"mgExp_red\" ]crystal[/System:Color], or [System:Color name=\"mgExp_red\" ]something more mysterious?[/System:Color]",
+    "ua": "Частина черепа без пошкоджень і слідів зносу.\nЦе [System:Color name=\"mgExp_red\" ]кришталь[/System:Color] чи [System:Color name=\"mgExp_red\" ]щось таємничіше?[/System:Color]"
+  },
+  "treasure_006": {
+    "en": "Crystal Cranium",
+    "ua": "Кришталеве склепіння"
+  },
+  "treasure_006_info": {
+    "en": "The final piece of the crystal skull. Who knows what\r\nwill happen when [System:Color name=\"mgExp_red\" ]all the pieces are combined[/System:Color]?",
+    "ua": "Остання частина кришталевого черепа. Хтозна,\nщо станеться, коли [System:Color name=\"mgExp_red\" ]всі частини з'єднаються[/System:Color]?"
+  },
+  "treasure_007": {
+    "en": "Eye Idol",
+    "ua": "Окатий ідол"
+  },
+  "treasure_007_info": {
+    "en": "A stone statue with large eyes. Seems to represent\r\n[System:Color name=\"mgExp_red\" ]a god that is worshipped in this region[/System:Color].",
+    "ua": "Кам'яна статуя з великими очима. Схоже, зображує\n[System:Color name=\"mgExp_red\" ]бога, якому поклоняються в цьому краї[/System:Color]."
+  },
+  "treasure_008": {
+    "en": "Double Idol",
+    "ua": "Подвійний ідол"
+  },
+  "treasure_008_info": {
+    "en": "An idol consisting of a large figure and a smaller\r\none. It looks a little like a parent and child.",
+    "ua": "Ідол із великої й меншої фігур.\nТрохи схоже на батька з дитиною."
+  },
+  "treasure_009": {
+    "en": "All-Seeing Idol",
+    "ua": "Всевидющий ідол"
+  },
+  "treasure_009_info": {
+    "en": "An idol with eyes on its body as well as its face.\r\nIt feels like nothing would escape its gaze.",
+    "ua": "Ідол з очима і на тілі, і на обличчі.\nЗдається, ніщо не сховається від його погляду."
+  },
+  "treasure_010": {
+    "en": "Hat Idol",
+    "ua": "Ідол у капелюхах"
+  },
+  "treasure_010_info": {
+    "en": "Both of these figures' heads are adorned with hats,\r\nperhaps indicating that they hold a higher status.",
+    "ua": "Голови обох фігур прикрашають капелюхи —\nможливо, це ознака високого становища."
+  },
+  "treasure_011": {
+    "en": "Pantheon Idol",
+    "ua": "Ідол пантеону"
+  },
+  "treasure_011_info": {
+    "en": "An idol depicting a multitude of gods. It feels like\r\nthere is a [System:Color name=\"mgExp_red\" ]powerful energy concealed within it[/System:Color].",
+    "ua": "Ідол із безліччю богів. Здається,\nу ньому [System:Color name=\"mgExp_red\" ]прихована могутня сила[/System:Color]."
+  },
+  "treasure_012": {
+    "en": "Ancient Idol",
+    "ua": "Прадавній ідол"
+  },
+  "treasure_012_info": {
+    "en": "An idol with a more primitive design, depicting\r\na [System:Color name=\"mgExp_red\" ]more ancient god than the other idols[/System:Color].",
+    "ua": "Ідол простішої роботи, що зображує\n[System:Color name=\"mgExp_red\" ]давнішого бога, ніж інші ідоли[/System:Color]."
+  },
+  "treasure_013": {
+    "en": "Stone Mask",
+    "ua": "Кам'яна маска"
+  },
+  "treasure_013_info": {
+    "en": "A precisely carved stone mask. Its features seem\r\n[System:Color name=\"mgExp_red\" ]oddly imbalanced for a human face[/System:Color], though...",
+    "ua": "Точно вирізана кам'яна маска. Але її риси\n[System:Color name=\"mgExp_red\" ]дивно непропорційні для людського обличчя[/System:Color]…"
+  },
+  "treasure_014": {
+    "en": "Bronze Mask",
+    "ua": "Бронзова маска"
+  },
+  "treasure_014_info": {
+    "en": "A [System:Color name=\"mgExp_red\" ]sharp-gazed mask[/System:Color] forged from bronze, a material\r\nthat should not have existed in such ancient times.",
+    "ua": "[System:Color name=\"mgExp_red\" ]Маска з пильним поглядом[/System:Color] із бронзи — матеріалу,\nякого в такі давні часи не мало бути."
+  },
+  "treasure_015": {
+    "en": "Gold Mask",
+    "ua": "Золота маска"
+  },
+  "treasure_015_info": {
+    "en": "The gold leaf has mostly peeled away\r\nfrom this once-opulent mask.",
+    "ua": "З цієї колись розкішної маски\nпозолота майже облізла."
+  },
+  "treasure_016": {
+    "en": "Warrior Mask",
+    "ua": "Маска воїна"
+  },
+  "treasure_016_info": {
+    "en": "A bronze mask that calls to mind the\r\nfearsome visage of an ancient warrior.",
+    "ua": "Бронзова маска, що нагадує\nгрізне обличчя давнього воїна."
+  },
+  "treasure_017": {
+    "en": "Perfect Gold Mask",
+    "ua": "Бездоганна золота маска"
+  },
+  "treasure_017_info": {
+    "en": "A perfectly preserved mask with\r\nall of its gold leaf intact.",
+    "ua": "Ідеально збережена маска\nз неушкодженою позолотою."
+  },
+  "treasure_018": {
+    "en": "Bizarre Bronze Mask",
+    "ua": "Химерна бронзова маска"
+  },
+  "treasure_018_info": {
+    "en": "A mask with an unnerving, bug-eyed design.\r\n[System:Color name=\"mgExp_red\" ]What could possibly have inspired it...?[/System:Color]",
+    "ua": "Маска з моторошними вирячкуватими очима.\n[System:Color name=\"mgExp_red\" ]Що могло її надихнути…?[/System:Color]"
+  },
+  "treasure_019": {
+    "en": "Ancient Rocket",
+    "ua": "Давня ракета"
+  },
+  "treasure_019_info": {
+    "en": "An ancient item that [System:Color name=\"mgExp_red\" ]resembles a modern space\r\nrocket[/System:Color]. Bound to fetch a high price at auction.",
+    "ua": "Давній предмет, що [System:Color name=\"mgExp_red\" ]нагадує сучасну космічну\nракету[/System:Color]. На аукціоні піде за великі гроші."
+  },
+  "treasure_020": {
+    "en": "Golden Aeroplane",
+    "ua": "Золотий літак"
+  },
+  "treasure_020_info": {
+    "en": "A very valuable gold sculpture. Could this ancient\r\ncivilisation have had the [System:Color name=\"mgExp_red\" ]technology to achieve flight[/System:Color]?! ",
+    "ua": "Цінна золота скульптура. Невже давня цивілізація\nмала [System:Color name=\"mgExp_red\" ]технології для польотів[/System:Color]?!"
+  },
+  "treasure_021": {
+    "en": "Stone Spacecraft",
+    "ua": "Кам'яний корабель"
+  },
+  "treasure_021_info": {
+    "en": "A curious object shaped like a [System:Color name=\"mgExp_red\" ]spacefaring\r\nvessel[/System:Color]. Unfortunately, it's worthless.",
+    "ua": "Дивний предмет у формі [System:Color name=\"mgExp_red\" ]космічного\nкорабля[/System:Color]. На жаль, нічого не вартий."
+  },
+  "treasure_022": {
+    "en": "Ancient Astronaut",
+    "ua": "Давній астронавт"
+  },
+  "treasure_022_info": {
+    "en": "A mysterious statue of [System:Color name=\"mgExp_red\" ]what looks like an astronaut[/System:Color].\r\nHistorically significant, but has little market value.",
+    "ua": "Таємнича статуя, [System:Color name=\"mgExp_red\" ]схожа на астронавта[/System:Color].\nІсторично важлива, але на ринку дешева."
+  },
+  "treasure_023": {
+    "en": "Ancient Flying Machine",
+    "ua": "Давня літальна машина"
+  },
+  "treasure_023_info": {
+    "en": "A statue of a figure [System:Color name=\"mgExp_red\" ]riding a UFO[/System:Color]. If you sold it to\r\nthe right person, it would fetch a good price.",
+    "ua": "Статуя постаті [System:Color name=\"mgExp_red\" ]верхи на НЛО[/System:Color]. Якщо продати\nпотрібній людині, отримаєте гарні гроші."
+  },
+  "treasure_024": {
+    "en": "Tablet of the Gods",
+    "ua": "Скрижаль богів"
+  },
+  "treasure_024_info": {
+    "en": "Did the gods [System:Color name=\"mgExp_red\" ]come to Earth on UFOs[/System:Color]? It's made from\r\na rare meteorite, so sell it and buy an island!",
+    "ua": "Невже боги [System:Color name=\"mgExp_red\" ]прилетіли на Землю на НЛО[/System:Color]? Зроблена\nз рідкісного метеорита — продайте й купіть острів!"
+  },
+  "treasure_025": {
+    "en": "Revelatory Statue",
+    "ua": "Статуя знамення"
+  },
+  "treasure_025_info": {
+    "en": "Studded with gemstones, this statue's value\r\nis similar to the [System:Color name=\"mgExp_red\" ]GDP of a small nation[/System:Color].",
+    "ua": "Інкрустована самоцвітами, ця статуя\nкоштує стільки, як [System:Color name=\"mgExp_red\" ]ВВП невеликої країни[/System:Color]."
+  },
+  "treasure_026": {
+    "en": "Revelatory Tablet",
+    "ua": "Скрижаль знамення"
+  },
+  "treasure_026_info": {
+    "en": "A stone tablet depicting a [System:Color name=\"mgExp_red\" ]comet coming\r\nto Earth[/System:Color] followed by a [System:Color name=\"mgExp_red\" ]spaceship[/System:Color].",
+    "ua": "Кам'яна скрижаль із [System:Color name=\"mgExp_red\" ]кометою, що летить\nдо Землі[/System:Color], а за нею — [System:Color name=\"mgExp_red\" ]космічним кораблем[/System:Color]."
+  },
+  "treasure_027": {
+    "en": "Skull of a God",
+    "ua": "Череп бога"
+  },
+  "treasure_027_info": {
+    "en": "A bizarre skull worshipped by ancient people.\r\nCould it be from an [System:Color name=\"mgExp_red\" ]alien race that visited Earth[/System:Color]?",
+    "ua": "Химерний череп, якому поклонялися давні люди.\nМожливо, це [System:Color name=\"mgExp_red\" ]прибульці, що відвідали Землю[/System:Color]?"
+  },
+  "treasure_028": {
+    "en": "Sir Henry Beaksley Statue",
+    "ua": "Статуя сера Генрі Дзьобслі"
+  },
+  "treasure_028_info": {
+    "en": "A super trendy bird-shaped statue.",
+    "ua": "Супермодна статуя у формі птаха."
+  },
+  "treasure_029": {
+    "en": "Crystal Skull",
+    "ua": "Череп із кришталю"
+  },
+  "treasure_029_info": {
+    "en": "A treasure formed from 6 crystal pieces found\r\nin the jungle. The shape is [System:Color name=\"mgExp_red\" ]eerily inhuman[/System:Color].",
+    "ua": "Скарб із 6 кришталевих частин, знайдених\nу джунглях. Його форма [System:Color name=\"mgExp_red\" ]моторошно нелюдська[/System:Color]."
+  },
+  "photo_01_01": {
+    "en": "Python",
+    "ua": "Пітон"
+  },
+  "photo_01_01_info": {
+    "en": "A big snake that hunts by ambushing\r\nand constricting its prey. Larger specimens\r\nhave been known to swallow deer whole.",
+    "ua": "Велика змія, що полює із засідки\nй душить здобич. Великі особини\nможуть проковтнути оленя цілком."
+  },
+  "photo_01_02": {
+    "en": "Jaguar",
+    "ua": "Ягуар"
+  },
+  "photo_01_02_info": {
+    "en": "A big cat with a penchant for climbing\r\ntrees. Its skull is large compared to its\r\nbody, giving it a very powerful bite.",
+    "ua": "Велика кішка, що любить лазити\nпо деревах. Череп великий порівняно\nз тілом, тож укус дуже потужний."
+  },
+  "photo_01_03": {
+    "en": "Gorilla",
+    "ua": "Горила"
+  },
+  "photo_01_03_info": {
+    "en": "A large jungle-dwelling primate with\r\nformidable muscles. Its grip strength\r\nalone can be over 500kg.",
+    "ua": "Великий примат із джунглів із\nпотужними м'язами. Лише хватка\nможе перевищувати 500 кг."
+  },
+  "photo_01_04": {
+    "en": "Squirrel Monkey",
+    "ua": "Саймірі"
+  },
+  "photo_01_04_info": {
+    "en": "A small monkey that lives in tropical\r\nrainforests. They live in groups and\r\nare great at jumping from tree to tree.",
+    "ua": "Маленька мавпа з тропічних\nлісів. Живуть зграями й чудово\nстрибають з дерева на дерево."
+  },
+  "photo_01_05": {
+    "en": "Toucan",
+    "ua": "Тукан"
+  },
+  "photo_01_05_info": {
+    "en": "A tropical bird with an unmistakeable\r\ngiant beak. Despite its size, the beak\r\nitself doesn't weigh very much.",
+    "ua": "Тропічний птах із величезним\nдзьобом. Попри розмір,\nдзьоб важить зовсім мало."
+  },
+  "photo_01_06": {
+    "en": "Crocodile",
+    "ua": "Крокодил"
+  },
+  "photo_01_06_info": {
+    "en": "A large carnivorous reptile that lives\r\nin the water. Some species can grow\r\nto be more than six metres in length.",
+    "ua": "Великий хижий плазун, що живе\nу воді. Деякі види виростають\nпонад шість метрів завдовжки."
+  },
+  "photo_01_07": {
+    "en": "Viper Boa",
+    "ua": "Удав-гадюка"
+  },
+  "photo_01_07_info": {
+    "en": "A slow-moving snake that prefers to live\r\nin tropical rainforests. Bigger ones tend to\r\nlie curled up in holes in the ground.",
+    "ua": "Повільна змія, що полюбляє тропічні\nліси. Великі особини часто лежать\nзгорнувшись у норах."
+  },
+  "photo_01_08": {
+    "en": "Orangutan",
+    "ua": "Орангутан"
+  },
+  "photo_01_08_info": {
+    "en": "A large and highly intelligent primate.\r\nIts name comes from the words for\r\n\"forest person\" in the Malay language.",
+    "ua": "Великий і дуже розумний примат.\nНазва походить від малайських слів\n«лісова людина»."
+  },
+  "photo_01_09": {
+    "en": "Macaw",
+    "ua": "Ара"
+  },
+  "photo_01_09_info": {
+    "en": "Among the largest and most colourful\r\nof all parrots, macaws are also said\r\nto be remarkably intelligent.",
+    "ua": "Серед найбільших і найбарвистіших\nпапуг ара ще й, кажуть,\nнадзвичайно розумні."
+  },
+  "photo_01_10": {
+    "en": "Ring-Tailed Coati",
+    "ua": "Носуха"
+  },
+  "photo_01_10_info": {
+    "en": "A long-tailed member of the raccoon\r\nfamily. Skilful at climbing trees, and\r\noften sleeps in the treetops.",
+    "ua": "Довгохвостий родич єнота.\nВправно лазить по деревах\nй часто спить у кронах."
+  },
+  "photo_01_11": {
+    "en": "Capybara",
+    "ua": "Капібара"
+  },
+  "photo_01_11_info": {
+    "en": "The world's largest rodent. Though\r\nit may look slow, it's actually very\r\nspeedy both in water and on land!",
+    "ua": "Найбільший гризун у світі. Хоч\nі здається повільною, вона дуже\nшвидка і у воді, і на суші!"
+  },
+  "photo_01_12": {
+    "en": "Coypu",
+    "ua": "Нутрія"
+  },
+  "photo_01_12_info": {
+    "en": "A relative of the capybara, but only\r\naround half its size. Its large front\r\nteeth are a distinctive orange colour.",
+    "ua": "Родичка капібари, але вдвічі\nменша. Великі передні зуби\nмають характерний оранжевий колір."
+  },
+  "photo_01_13": {
+    "en": "Iguana",
+    "ua": "Ігуана"
+  },
+  "photo_01_13_info": {
+    "en": "A lizard that can be found in the trees or by\r\nwater. The largest iguanas can approach two\r\nmetres in length and are great swimmers.",
+    "ua": "Ящірка, що живе на деревах чи біля води.\nНайбільші ігуани сягають майже двох\nметрів і чудово плавають."
+  },
+  "photo_01_14": {
+    "en": "Red-Eyed Tree Frog",
+    "ua": "Червоноока квакша"
+  },
+  "photo_01_14_info": {
+    "en": "A beautiful nocturnal frog that lives in\r\nrainforest trees. Its large red eyes\r\nstand out against its green body.",
+    "ua": "Гарна нічна жаба з дерев тропічних\nлісів. Великі червоні очі яскраво\nвиділяються на зеленому тілі."
+  },
+  "photo_01_15": {
+    "en": "Basilisk",
+    "ua": "Василіск"
+  },
+  "photo_01_15_info": {
+    "en": "Though not nearly as deadly as its\r\nmythological namesake, this lizard\r\ndoes have the power to run on water.",
+    "ua": "Не такий смертоносний, як міфічний\nтезко, але ця ящірка\nвміє бігати по воді."
+  },
+  "photo_01_16": {
+    "en": "Sloth",
+    "ua": "Лінивець"
+  },
+  "photo_01_16_info": {
+    "en": "True to their lazy reputation, sloths can \r\nonly move up to a sluggish 120 metres per\r\nhour, and sleep for about 20 hours a day.",
+    "ua": "Виправдовуючи славу ледарів, лінивці\nпересуваються лише 120 метрів на годину\nй сплять близько 20 годин на добу."
+  },
+  "photo_01_17": {
+    "en": "Hummingbird",
+    "ua": "Колібрі"
+  },
+  "photo_01_17_info": {
+    "en": "Among the smallest of all birds, the\r\nhummingbird can hover in mid-air to\r\nfeed on the nectar from flowers.",
+    "ua": "Одна з найменших пташок, колібрі\nвміє зависати в повітрі,\nп'ючи нектар із квітів."
+  },
+  "photo_01_18": {
+    "en": "Birdwing",
+    "ua": "Птахокрил"
+  },
+  "photo_01_18_info": {
+    "en": "A gigantic tropical butterfly named\r\nfor its birdlike flight patterns.\r\nHighly sought-after by collectors.",
+    "ua": "Велетенський тропічний метелик,\nназваний за пташиний політ.\nДуже бажаний для колекціонерів."
+  },
+  "photo_01_19": {
+    "en": "Echidna",
+    "ua": "Єхидна"
+  },
+  "photo_01_19_info": {
+    "en": "Along with its relative the platypus,\r\nthe echidna is one of the only\r\nmammals in the world to lay eggs.",
+    "ua": "Разом із родичем качкодзьобом\nєхидна — один із небагатьох ссавців\nу світі, що відкладають яйця."
+  },
+  "photo_01_20": {
+    "en": "Tamandua",
+    "ua": "Тамандуа"
+  },
+  "photo_01_20_info": {
+    "en": "A medium-sized anteater that uses\r\nits long tongue to scoop up insects at\r\nan incredible rate of 9,000 per day!",
+    "ua": "Середній мурахоїд, що довгим язиком\nзагрібає комах із неймовірною\nшвидкістю — 9000 на день!"
+  },
+  "photo_01_21": {
+    "en": "Kongamato",
+    "ua": "Конгамато"
+  },
+  "photo_01_21_info": {
+    "en": "A folklorish beast with batlike wings.\r\nRumoured to live in Southern African\r\nswamps, attacking humans in boats.",
+    "ua": "Фольклорне чудовисько з кажанячими\nкрилами. Кажуть, живе в болотах півдня\nАфрики й нападає на людей у човнах."
+  },
+  "photo_01_22": {
+    "en": "Chupacabra",
+    "ua": "Чупакабра"
+  },
+  "photo_01_22_info": {
+    "en": "A legendary bloodsucking creature\r\nwith large red eyes, deadly fangs,\r\nand sharp quills along its back.",
+    "ua": "Легендарна кровопивця з великими\nчервоними очима, смертельними іклами\nй гострими голками на спині."
+  },
+  "photo_01_23": {
+    "en": "Flying Humanoid",
+    "ua": "Летючий гуманоїд"
+  },
+  "photo_01_23_info": {
+    "en": "A mysterious man-shaped creature\r\naround three metres tall, said to fly\r\nthrough the air like a dark shadow.",
+    "ua": "Таємнича людиноподібна істота\nблизько трьох метрів заввишки, що,\nкажуть, літає, наче темна тінь."
+  },
+  "photo_01_24": {
+    "en": "Jungle UFO",
+    "ua": "НЛО в джунглях"
+  },
+  "photo_01_24_info": {
+    "en": "An unidentified flying object sighted in the\r\njungle. Seems to share some similarities\r\nwith the famous Adamski UFO photographs.",
+    "ua": "Непізнаний літальний об'єкт у джунглях.\nТрохи схожий на славетні фото\nНЛО Адамського."
+  },
+  "photo_01_25": {
+    "en": "UFO Squadron",
+    "ua": "Ескадрилья НЛО"
+  },
+  "photo_01_25_info": {
+    "en": "A group of UFOs flying in formation.\r\nThey seem to be scouring the vicinity\r\nfor something...",
+    "ua": "Група НЛО, що летить строєм.\nСхоже, вони щось шукають\nпоблизу…"
+  },
+  "photo_01_26": {
+    "en": "Landing UFO",
+    "ua": "НЛО на посадці"
+  },
+  "photo_01_26_info": {
+    "en": "A UFO landing on the planet's surface.\r\nThe area around seems deserted...",
+    "ua": "НЛО сідає на поверхню планети.\nДовкола, здається, безлюдно…"
+  },
+  "photo_01_27": {
+    "en": "Extra-Terrestrial",
+    "ua": "Інопланетянин"
+  },
+  "photo_01_27_info": {
+    "en": "A creature that seems to have come\r\nfrom another planet. The moment it\r\nnoticed us, it hid itself from sight.",
+    "ua": "Істота, що, схоже, прибула з іншої\nпланети. Щойно помітила нас,\nвідразу сховалася."
+  },
+  "photo_02_01": {
+    "en": "Red River Hog",
+    "ua": "Річкова свиня"
+  },
+  "photo_02_01_info": {
+    "en": "An omnivorous wild pig with striking\r\norange fur and short, sharp tusks.",
+    "ua": "Всеїдна дика свиня з яскравим\nрудим хутром і короткими гострими іклами."
+  },
+  "photo_02_02": {
+    "en": "Tiger",
+    "ua": "Тигр"
+  },
+  "photo_02_02_info": {
+    "en": "One of the most famous big cats in the world,\r\nfound in a variety of terrain across Asia. Strong\r\nenough to pull a large cow along the ground.",
+    "ua": "Одна з найвідоміших великих кішок,\nживе в різних куточках Азії. Досить сильний,\nщоб тягти по землі велику корову."
+  },
+  "photo_02_03": {
+    "en": "Asian Elephant",
+    "ua": "Азійський слон"
+  },
+  "photo_02_03_info": {
+    "en": "A huge forest-dwelling herbivore.\r\nAs you might expect from its size,\r\nit has a massive appetite!",
+    "ua": "Величезний лісовий травоїдний.\nЯк і годиться при такому розмірі,\nапетит у нього величезний!"
+  },
+  "photo_02_04": {
+    "en": "White Scavenger Vulture",
+    "ua": "Стерв'ятник"
+  },
+  "photo_02_04_info": {
+    "en": "A carrion-eating bird related to hawks\r\nand eagles. Known for its use of tools,\r\nsuch as using rocks to break ostrich eggs.",
+    "ua": "Птах-падальник, родич яструбів\nй орлів. Відомий умінням користуватися\nзнаряддям — розбиває камінням яйця страусів."
+  },
+  "photo_02_05": {
+    "en": "Wild Horse",
+    "ua": "Дикий кінь"
+  },
+  "photo_02_05_info": {
+    "en": "A horse born and bred in the wild,\r\nuntouched by human intervention.\r\nA rarity in the modern world.",
+    "ua": "Кінь, народжений і вирощений на волі,\nбез втручання людини.\nРідкість у сучасному світі."
+  },
+  "photo_02_06": {
+    "en": "Peacock",
+    "ua": "Павич"
+  },
+  "photo_02_06_info": {
+    "en": "A beautiful bird with a crown-like crest\r\natop its head and an elaborate tail.\r\nConsidered sacred in many societies.",
+    "ua": "Гарний птах із чубчиком-коронкою\nна голові й розкішним хвостом.\nУ багатьох культурах священний."
+  },
+  "photo_02_07": {
+    "en": "Wolf",
+    "ua": "Вовк"
+  },
+  "photo_02_07_info": {
+    "en": "A carnivorous mammal and close relative\r\nof the domestic dog. They are highly social\r\nand travel in packs.",
+    "ua": "Хижий ссавець, близький родич\nсвійського собаки. Дуже соціальні\nй мандрують зграями."
+  },
+  "photo_02_08": {
+    "en": "Ring-Necked Parakeet",
+    "ua": "Кільчастий папуга"
+  },
+  "photo_02_08_info": {
+    "en": "A bright-green tropical bird around\r\n40cm in length. Known for its ability\r\nto mimic many human words.",
+    "ua": "Яскраво-зелений тропічний птах\nблизько 40 см завдовжки. Уміє\nнаслідувати багато людських слів."
+  },
+  "photo_02_09": {
+    "en": "Argali",
+    "ua": "Архар"
+  },
+  "photo_02_09_info": {
+    "en": "A wild sheep that inhabits mountainous\r\nand desert regions, the argali feeds on\r\ngrasses and lives in herds.",
+    "ua": "Дикий баран із гір і пустель.\nАрхар їсть трави\nй живе стадами."
+  },
+  "photo_02_10": {
+    "en": "Camel",
+    "ua": "Верблюд"
+  },
+  "photo_02_10_info": {
+    "en": "Known to some as \"the ship of the desert\".\r\nThe hump on the camel's back helps keep\r\nit cool in the heat.",
+    "ua": "Дехто зве його «кораблем пустелі».\nГорб на спині допомагає верблюдові\nне перегріватися."
+  },
+  "photo_02_11": {
+    "en": "Hyrax",
+    "ua": "Даман"
+  },
+  "photo_02_11_info": {
+    "en": "Though easily mistaken for a rodent,\r\nthis tiny creature is most closely\r\nrelated to elephants and manatees!",
+    "ua": "Хоч його легко сплутати з гризуном,\nнайближчі родичі цього звірятка —\nслони й ламантини!"
+  },
+  "photo_02_12": {
+    "en": "Oryx",
+    "ua": "Орикс"
+  },
+  "photo_02_12_info": {
+    "en": "A relative of the cow that lives in\r\ndesert regions. Both males and\r\nfemales have long, slender horns.",
+    "ua": "Родич корови, що живе в пустелях.\nІ самці, і самки мають\nдовгі тонкі роги."
+  },
+  "photo_02_13": {
+    "en": "Caracal",
+    "ua": "Каракал"
+  },
+  "photo_02_13_info": {
+    "en": "A swift and agile wild cat with large\r\nears. Very secretive in nature, it is\r\ndifficult to spot one in the wild.",
+    "ua": "Швидка й спритна дика кішка з великими\nвухами. Дуже потайна, тож\nпобачити її на волі складно."
+  },
+  "photo_02_14": {
+    "en": "Fennec",
+    "ua": "Фенек"
+  },
+  "photo_02_14_info": {
+    "en": "The smallest of all foxes, and indeed\r\nof all canids in general. Its huge ears\r\nhelp to keep its body cool.",
+    "ua": "Найменша з лисиць і взагалі\nз усіх псових. Величезні вуха\nдопомагають їй не перегріватися."
+  },
+  "photo_02_15": {
+    "en": "Scimitar Oryx",
+    "ua": "Шаблерогий орикс"
+  },
+  "photo_02_15_info": {
+    "en": "A desert-dwelling relative of the cow,\r\napparently extinct in the wild. Its name\r\ncomes from its mighty curved horns.",
+    "ua": "Пустельний родич корови, що, схоже,\nвимер на волі. Назва походить\nвід могутніх вигнутих рогів."
+  },
+  "photo_02_16": {
+    "en": "Gargoyle",
+    "ua": "Гаргуля"
+  },
+  "photo_02_16_info": {
+    "en": "A mystical stone creature that can\r\nconceal itself as a decorative statue.\r\nIs it keeping watch over something...?",
+    "ua": "Містична кам'яна істота, що вміє\nмаскуватися під декоративну статую.\nЩо вона стереже…?"
+  },
+  "photo_02_17": {
+    "en": "Mongolian Death Worm",
+    "ua": "Олгой-хорхой"
+  },
+  "photo_02_17_info": {
+    "en": "A gigantic monster resembling a worm\r\nor caterpillar. Said to spew a deadly\r\npoisonous acid from its gaping maw.",
+    "ua": "Велетенське чудовисько, схоже на хробака\nчи гусінь. Кажуть, вивергає з пащі\nсмертельно отруйну кислоту."
+  },
+  "photo_02_18": {
+    "en": "Skyfish",
+    "ua": "Небесна риба"
+  },
+  "photo_02_18_info": {
+    "en": "Also known as \"rods\", these slender\r\ncreatures of folklore are said to move\r\ntoo fast for the human eye to see.",
+    "ua": "Ці тонкі фольклорні істоти, відомі\nтакож як «роди», рухаються надто\nшвидко для людського ока."
+  },
+  "photo_02_19": {
+    "en": "Ruins UFO",
+    "ua": "НЛО над руїнами"
+  },
+  "photo_02_19_info": {
+    "en": "This unidentified flying object is hovering\r\nover the site of some ancient ruins. Does\r\nit know this place?",
+    "ua": "Цей непізнаний об'єкт ширяє над\nдавніми руїнами. Невже він\nзнає це місце?"
+  },
+  "photo_02_20": {
+    "en": "Camel-Abducting UFO",
+    "ua": "НЛО-викрадач верблюдів"
+  },
+  "photo_02_20_info": {
+    "en": "This UFO seems to be lifting a camel\r\ninto the air. Perhaps it is conducting\r\nexperiments on Earth creatures...",
+    "ua": "Схоже, це НЛО піднімає в повітря\nверблюда. Може, ставить досліди\nнад земними істотами…"
+  },
+  "photo_02_21": {
+    "en": "Low-Flying UFO",
+    "ua": "Низький НЛО"
+  },
+  "photo_02_21_info": {
+    "en": "An unidentified object, flying at a\r\nremarkably low altitude. It couldn't\r\nbe...coming for us, could it...?",
+    "ua": "Непізнаний об'єкт летить напрочуд\nнизько. Невже він… по нас…?"
+  },
+  "photo_02_22": {
+    "en": "Alien in the Ruins",
+    "ua": "Прибулець у руїнах"
+  },
+  "photo_02_22_info": {
+    "en": "An extra-terrestrial standing in the\r\nmidst of the ancient ruins. Without\r\nsaying a word, it vanished from sight.",
+    "ua": "Прибулець посеред давніх руїн.\nНе мовивши ні слова,\nвін зник."
+  },
+  "photo_03_01": {
+    "en": "Steller's Sea Eagle",
+    "ua": "Орлан Стеллера"
+  },
+  "photo_03_01_info": {
+    "en": "A majestic bird that is among the\r\nlargest of all eagles. Only around\r\n5000 of them remain in the wild.",
+    "ua": "Величний птах, один із найбільших\nорлів. На волі їх лишилося\nблизько 5000."
+  },
+  "photo_03_02": {
+    "en": "Snow Leopard",
+    "ua": "Сніговий барс"
+  },
+  "photo_03_02_info": {
+    "en": "A large feline that lives high in the\r\nsnowy mountains. Unlike the four\r\nmajor big cats, it cannot roar.",
+    "ua": "Велика кішка високих засніжених гір.\nНа відміну від чотирьох великих\nкішок, не вміє ревти."
+  },
+  "photo_03_03": {
+    "en": "Brown Bear",
+    "ua": "Бурий ведмідь"
+  },
+  "photo_03_03_info": {
+    "en": "A large omnivorous bear that lives in\r\nthe northern hemisphere. Those with a\r\ntaste for meat can be very dangerous.",
+    "ua": "Великий всеїдний ведмідь північної\nпівкулі. Ті, хто розсмакував м'ясо,\nможуть бути дуже небезпечні."
+  },
+  "photo_03_04": {
+    "en": "Yak",
+    "ua": "Як"
+  },
+  "photo_03_04_info": {
+    "en": "A relative of cows that lives mostly in\r\ngrassy mountain regions. Often used\r\nby humans for transport.",
+    "ua": "Родич корови, що живе переважно\nв трав'янистих горах. Люди часто\nвикористовують його як транспорт."
+  },
+  "photo_03_05": {
+    "en": "Mouflon",
+    "ua": "Муфлон"
+  },
+  "photo_03_05_info": {
+    "en": "A wild ancestor of the modern\r\ndomestic sheep. The males have\r\nimpressive spiralling horns.",
+    "ua": "Дикий предок свійської\nвівці. Самці мають\nвражаючі закручені роги."
+  },
+  "photo_03_06": {
+    "en": "Bighorn Sheep",
+    "ua": "Товсторіг"
+  },
+  "photo_03_06_info": {
+    "en": "A species of wild sheep in which both\r\nsexes have horns. The male's horns\r\ncan exceed a metre in length.",
+    "ua": "Вид диких баранів, у якого роги мають\nобидві статі. Роги самця можуть\nбути понад метр завдовжки."
+  },
+  "photo_03_07": {
+    "en": "Elk",
+    "ua": "Вапіті"
+  },
+  "photo_03_07_info": {
+    "en": "A large species of deer. The male\r\nsheds its antlers and regrows them\r\neach year, at a rate of 2.5cm per day.",
+    "ua": "Великий олень. Самець щороку скидає\nроги й відрощує нові\nзі швидкістю 2,5 см на день."
+  },
+  "photo_03_08": {
+    "en": "Red Panda",
+    "ua": "Мала панда"
+  },
+  "photo_03_08_info": {
+    "en": "A small forest-dwelling mammal with\r\na shaggy, ringed tail. It stands up on\r\ntwo legs when looking around.",
+    "ua": "Невеликий лісовий ссавець із\nпухнастим смугастим хвостом. Озираючись,\nвстає на задні лапи."
+  },
+  "photo_03_09": {
+    "en": "White-Tailed Eagle",
+    "ua": "Орлан-білохвіст"
+  },
+  "photo_03_09_info": {
+    "en": "A large eagle with a wingspan of\r\naround 2.2 metres. Lives mainly\r\naround coasts, rivers and lakes.",
+    "ua": "Великий орел із розмахом крил\nблизько 2,2 метра. Живе переважно\nбіля узбереж, річок та озер."
+  },
+  "photo_03_10": {
+    "en": "Deer",
+    "ua": "Олень"
+  },
+  "photo_03_10_info": {
+    "en": "A herbivorous mammal that lives in\r\nforest regions. Similar to cows, its stomach\r\nis made of four separate sections.",
+    "ua": "Травоїдний ссавець лісових країв.\nЯк і в корови, шлунок у нього\nз чотирьох відділів."
+  },
+  "photo_03_11": {
+    "en": "Fox",
+    "ua": "Лисиця"
+  },
+  "photo_03_11_info": {
+    "en": "A common canid with a red coat and\r\na bushy tail. They don't form packs,\r\ninstead living in small family groups.",
+    "ua": "Звичайна руда псова з пухнастим\nхвостом. Не збираються в зграї,\nа живуть невеликими родинами."
+  },
+  "photo_03_12": {
+    "en": "Red Squirrel",
+    "ua": "Звичайна вивірка"
+  },
+  "photo_03_12_info": {
+    "en": "An omnivorous rodent that lives in the\r\ntrees. Unlike many other rodents, they\r\ndo not hibernate during the winter.",
+    "ua": "Всеїдний гризун, що живе на деревах.\nНа відміну від багатьох гризунів,\nвзимку не впадає в сплячку."
+  },
+  "photo_03_13": {
+    "en": "Serow",
+    "ua": "Серау"
+  },
+  "photo_03_13_info": {
+    "en": "A mountain-dwelling creature that's\r\nsaid to be the closest living animal to\r\nthe ancestor of all goats and sheep.",
+    "ua": "Гірська тварина, яку вважають\nнайближчою до предка\nвсіх кіз і овець."
+  },
+  "photo_03_14": {
+    "en": "Bearded Vulture",
+    "ua": "Ягнятник"
+  },
+  "photo_03_14_info": {
+    "en": "Named for the beard-like feathery\r\nbristles on its chin, this bird may be\r\nthe inspiration for the legendary roc.",
+    "ua": "Названий за бородоподібне пір'я\nна підборідді, цей птах, можливо,\nнадихнув легенду про птаха Рух."
+  },
+  "photo_03_15": {
+    "en": "Snub-Nosed Monkey",
+    "ua": "Кирпатий ринопітек"
+  },
+  "photo_03_15_info": {
+    "en": "A monkey with long golden fur.\r\nSaid to be the inspiration for the\r\nlegendary Monkey King.",
+    "ua": "Мавпа з довгою золотистою шерстю.\nКажуть, саме вона надихнула\nлегенду про Короля мавп."
+  },
+  "photo_03_16": {
+    "en": "Himalayan Tahr",
+    "ua": "Гімалайський тар"
+  },
+  "photo_03_16_info": {
+    "en": "A goat-like creature that lives in\r\nmountainous regions. Shockingly\r\ngood at blending into its environment.",
+    "ua": "Схожа на козу тварина гірських\nкраїв. Напрочуд вправно зливається\nз довкіллям."
+  },
+  "photo_03_17": {
+    "en": "Takin",
+    "ua": "Такін"
+  },
+  "photo_03_17_info": {
+    "en": "A relative of the goat that lives in\r\ngrassy mountains and valleys.\r\nHas distinctive thick, curved horns.",
+    "ua": "Родич кози, що живе в трав'янистих\nгорах і долинах. Має характерні\nтовсті вигнуті роги."
+  },
+  "photo_03_18": {
+    "en": "Coyote",
+    "ua": "Койот"
+  },
+  "photo_03_18_info": {
+    "en": "A somewhat smaller relative of the\r\nwolf. It can breed with wolves or\r\ndogs for form hybrids.",
+    "ua": "Дещо менший родич вовка.\nМоже схрещуватися з вовками\nчи собаками."
+  },
+  "photo_03_19": {
+    "en": "Grey Wolf",
+    "ua": "Сірий вовк"
+  },
+  "photo_03_19_info": {
+    "en": "A territorial canine that lives in large\r\ngroups called packs. It communicates\r\nover long distances by howling.",
+    "ua": "Територіальна псова, що живе великими\nгрупами — зграями. На великі відстані\nспілкується виттям."
+  },
+  "photo_03_20": {
+    "en": "Irish Elk",
+    "ua": "Ірландський олень"
+  },
+  "photo_03_20_info": {
+    "en": "A huge deer said to have gone extinct\r\naround the end of the last ice age.\r\nPictured in Stone Age cave paintings.",
+    "ua": "Велетенський олень, що, кажуть, вимер\nнаприкінці останнього льодовиковика.\nЗображений на печерних малюнках."
+  },
+  "photo_03_21": {
+    "en": "Mammoth Herd",
+    "ua": "Стадо мамонтів"
+  },
+  "photo_03_21_info": {
+    "en": "Relatives of the elephant, thought to\r\nhave been extinct for thousands of\r\nyears. What are they running from...?",
+    "ua": "Родичі слона, які, вважалося,\nвимерли тисячі років тому.\nВід чого вони тікають…?"
+  },
+  "photo_03_22": {
+    "en": "Yeti",
+    "ua": "Єті"
+  },
+  "photo_03_22_info": {
+    "en": "A folklorish creature said to live in\r\nthe Himalayas. It walks on two legs\r\nand is covered in thick fur.",
+    "ua": "Фольклорна істота, що, кажуть, живе\nв Гімалаях. Ходить на двох ногах\nй укрита густою шерстю."
+  },
+  "photo_03_23": {
+    "en": "Triangular UFO",
+    "ua": "Трикутний НЛО"
+  },
+  "photo_03_23_info": {
+    "en": "An unidentified flying object hovering\r\nnear the mountain peak. It almost\r\nlooks as if it were waiting for us...",
+    "ua": "Непізнаний об'єкт ширяє біля\nвершини гори. Ніби\nчекає на нас…"
+  },
+  "photo_03_24": {
+    "en": "Mothman",
+    "ua": "Людина-міль"
+  },
+  "photo_03_24_info": {
+    "en": "An unidentified creature in the shape\r\nof a man with huge wings instead of\r\narms. Its eyes are said to glow red.",
+    "ua": "Невідома істота у вигляді людини\nз величезними крилами замість рук.\nКажуть, її очі світяться червоним."
+  },
+  "photo_03_25": {
+    "en": "Crevasse UFO",
+    "ua": "НЛО в ущелині"
+  },
+  "photo_03_25_info": {
+    "en": "A UFO sighted in the depths of a\r\ncrevasse. Could it have crashed\r\nhere thousands of years ago...?",
+    "ua": "НЛО, помічений у глибині тріщини\nльодовика. Невже він розбився\nтут тисячі років тому…?"
+  },
+  "photo_03_26": {
+    "en": "Gigantic UFO",
+    "ua": "Гігантський НЛО"
+  },
+  "photo_03_26_info": {
+    "en": "A UFO of incredible size, flying near\r\nthe mountain peak. It appears to be\r\naround 600 metres in diameter.",
+    "ua": "НЛО неймовірного розміру біля\nвершини гори. Схоже, близько\n600 метрів у діаметрі."
+  },
+  "item_001": {
+    "en": "Tranquilliser Dart",
+    "ua": "Снодійний дротик"
+  },
+  "item_001_info": {
+    "en": "A dart that will [System:Color name=\"mgExp_red\" ]knock out any beast[/System:Color].\r\nIndispensable exploration equipment.",
+    "ua": "Дротик, що [System:Color name=\"mgExp_red\" ]приспить будь-якого звіра[/System:Color].\nНезамінне спорядження дослідника."
+  },
+  "item_002": {
+    "en": "Rapid-Shot Camera",
+    "ua": "Швидкісна камера"
+  },
+  "item_002_info": {
+    "en": "A high-quality camera that makes it\r\neasier to take great photos.",
+    "ua": "Якісна камера, з якою легше\nробити чудові фото."
+  },
+  "item_003": {
+    "en": "Ice Axe",
+    "ua": "Льодоруб"
+  },
+  "item_003_info": {
+    "en": "An essential exploration tool used for\r\nscaling [System:Color name=\"mgExp_red\" ]even the sheerest of icy cliffs[/System:Color].",
+    "ua": "Незамінний інструмент, щоб дертися\n[System:Color name=\"mgExp_red\" ]навіть на найкрутіші крижані скелі[/System:Color]."
+  },
+  "item_004": {
+    "en": "Ancient Compass",
+    "ua": "Давній компас"
+  },
+  "item_004_info": {
+    "en": "A mysterious compass. The [System:Color name=\"mgExp_red\" ]▲ [/System:Color]points\r\nthe way to ancient treasures.",
+    "ua": "Таємничий компас. [System:Color name=\"mgExp_red\" ]▲ [/System:Color]вказує\nшлях до давніх скарбів."
+  },
+  "item_005": {
+    "en": "[System:Color name=\"mgExp_red\" ]Mystery Drink[/System:Color]",
+    "ua": "[System:Color name=\"mgExp_red\" ]Таємничий напій[/System:Color]"
+  },
+  "item_005_info": {
+    "en": "An extreme energy drink that\r\n[System:Color name=\"mgExp_red\" ]keeps you from tiring out[/System:Color].",
+    "ua": "Екстремальний енергетик, що\n[System:Color name=\"mgExp_red\" ]не дає втомитися[/System:Color]."
+  },
+  "guide_000": {
+    "en": " Choose",
+    "ua": " Вибір"
+  },
+  "guide_001": {
+    "en": " Select",
+    "ua": " Вибрати"
+  },
+  "guide_002": {
+    "en": " Full Map",
+    "ua": " Уся мапа"
+  },
+  "guide_003": {
+    "en": " Area Map",
+    "ua": " Мапа зони"
+  },
+  "game_start_00": {
+    "en": "Righto! Off we go!",
+    "ua": "Гаразд! Рушаймо!"
+  },
+  "game_mission_start_00": {
+    "en": "Set Off!",
+    "ua": "Уперед!"
+  },
+  "game_mission_end_00": {
+    "en": "Tutorial Complete!",
+    "ua": "Навчання завершено!"
+  },
+  "game_mission_end_01": {
+    "en": "Expedition Complete!",
+    "ua": "Експедицію завершено!"
+  },
+  "game_branch_00": {
+    "en": "Choose a path with !",
+    "ua": "Виберіть шлях !"
+  },
+  "game_deadend_00": {
+    "en": "Dead end!",
+    "ua": "Глухий кут!"
+  },
+  "game_deadend_01": {
+    "en": "Dead end!",
+    "ua": "Глухий кут!"
+  },
+  "treasureget_00": {
+    "en": "You got the [COUNT] treasure from the\r\n[STAGE]: [System:Color name=\"mgExp_red\" ][TREASURE][/System:Color]",
+    "ua": "Знайдено скарб [COUNT] у зоні\n«[STAGE]»: [System:Color name=\"mgExp_red\" ][TREASURE][/System:Color]"
+  },
+  "treasureget_01": {
+    "en": "You found the [System:Color name=\"mgExp_red\" ][TREASURE][/System:Color].",
+    "ua": "Ви знайшли: [System:Color name=\"mgExp_red\" ][TREASURE][/System:Color]."
+  },
+  "treasureget_02": {
+    "en": "There's nothing inside...",
+    "ua": "Усередині нічого…"
+  },
+  "treasureget_03": {
+    "en": "You found a stone chest.",
+    "ua": "Тут кам'яна скриня."
+  },
+  "monolith_00": {
+    "en": "You found the [COUNT] monolith in the\r\n[STAGE].",
+    "ua": "Знайдено моноліт [COUNT]\nу зоні «[STAGE]»."
+  },
+  "monolith_01": {
+    "en": "You found a mysterious\r\nmonolith.",
+    "ua": "Ви знайшли таємничий\nмоноліт."
+  },
+  "monolith_02": {
+    "en": "Nothing happened.",
+    "ua": "Нічого не сталося."
+  },
+  "takephoto_00": {
+    "en": "You readied your [ITEM].",
+    "ua": "Ви приготували: [ITEM]."
+  },
+  "takephoto_01": {
+    "en": "Take a photo!",
+    "ua": "Фотографуйте!"
+  },
+  "takephoto_02_000": {
+    "en": "Did you see that?!",
+    "ua": "Бачили?!"
+  },
+  "takephoto_02_001": {
+    "en": "You couldn't get a good picture.",
+    "ua": "Гарного знімка не вийшло."
+  },
+  "takephoto_02_002": {
+    "en": "You took a picture of the\r\n[UMA]!",
+    "ua": "Ви сфотографували:\n[UMA]!"
+  },
+  "takephoto_02_003": {
+    "en": "[UMA] spotted!",
+    "ua": "Помічено: [UMA]!"
+  },
+  "takephoto_02_004": {
+    "en": "NEW",
+    "ua": "НОВЕ"
+  },
+  "drink_00_00": {
+    "en": "You got a [System:Color name=\"mgExp_red\" ]Mystery Drink[/System:Color]!",
+    "ua": "Ви отримали [System:Color name=\"mgExp_red\" ]Таємничий напій[/System:Color]!"
+  },
+  "drink_01_00": {
+    "en": "You threw away the [System:Color name=\"mgExp_red\" ]Mystery Drink[/System:Color].",
+    "ua": "Ви викинули [System:Color name=\"mgExp_red\" ]Таємничий напій[/System:Color]."
+  },
+  "drink_01_01_00": {
+    "en": "It turns out to be [System:Color name=\"mgExp_red\" ]ancient holy water[/System:Color].",
+    "ua": "Це виявилася [System:Color name=\"mgExp_red\" ]давня свята вода[/System:Color]."
+  },
+  "drink_01_01_01": {
+    "en": "Energy courses through your body!",
+    "ua": "Тілом розливається енергія!"
+  },
+  "drink_01_01_02": {
+    "en": "Your steps will decrease more slowly.",
+    "ua": "Кроки витрачатимуться повільніше."
+  },
+  "drink_01_02_00": {
+    "en": "It turns out to be [System:Color name=\"mgExp_red\" ]very old water[/System:Color].",
+    "ua": "Це виявилася [System:Color name=\"mgExp_red\" ]дуже стара вода[/System:Color]."
+  },
+  "drink_01_02_01": {
+    "en": "Your stomach feels funny...",
+    "ua": "Щось у животі бурчить…"
+  },
+  "drink_01_02_02": {
+    "en": "Your steps will decrease more quickly.",
+    "ua": "Кроки витрачатимуться швидше."
+  },
+  "itemget_01_000": {
+    "en": "Item acquired:\r\n[System:Color name=\"mgExp_red\" ][ITEM][/System:Color]",
+    "ua": "Отримано предмет:\n[System:Color name=\"mgExp_red\" ][ITEM][/System:Color]"
+  },
+  "itemget_01_001": {
+    "en": "Item acquired:\r\n[System:Color name=\"mgExp_red\" ][ITEM][/System:Color] ×[System:Color name=\"mgExp_red\" ][0][/System:Color]",
+    "ua": "Отримано предмет:\n[System:Color name=\"mgExp_red\" ][ITEM][/System:Color] ×[System:Color name=\"mgExp_red\" ][0][/System:Color]"
+  },
+  "itemget_01_002": {
+    "en": "Item acquired: [System:Color name=\"mgExp_red\" ][ITEM][/System:Color]\r\nYou drink it all up. Delicious!",
+    "ua": "Отримано: [System:Color name=\"mgExp_red\" ][ITEM][/System:Color]\nВи випили все до краплі. Смакота!"
+  },
+  "itemget_01_003": {
+    "en": "You couldn't find\r\nanything useful...",
+    "ua": "Нічого корисного\nне знайшлося…"
+  },
+  "itemget_01_004_00": {
+    "en": "[ITEM] found!",
+    "ua": "Знайдено: [ITEM]!"
+  },
+  "itemget_01_004_01": {
+    "en": "But you don't have enough space to carry it...",
+    "ua": "Але нести його нема куди…"
+  },
+  "gimmick_rock_l_000": {
+    "en": "The path is blocked.",
+    "ua": "Шлях перекрито."
+  },
+  "gimmick_rock_l_001": {
+    "en": "You made short work of the rock.",
+    "ua": "Ви швидко впоралися з каменем."
+  },
+  "gimmick_rock_l_002": {
+    "en": "Removing the rock proved an arduous task...",
+    "ua": "Прибрати камінь було важко…"
+  },
+  "gimmick_rock_l_003": {
+    "en": "Clear the way!",
+    "ua": "Розчищайте шлях!"
+  },
+  "gimmick_rock_s_000": {
+    "en": "The path is blocked.",
+    "ua": "Шлях перекрито."
+  },
+  "gimmick_rock_s_001": {
+    "en": "You made short work of the rock.",
+    "ua": "Ви швидко впоралися з каменем."
+  },
+  "gimmick_rock_s_002": {
+    "en": "Removing the rock proved an arduous task...",
+    "ua": "Прибрати камінь було важко…"
+  },
+  "gimmick_rock_s_003": {
+    "en": "Clear the way!",
+    "ua": "Розчищайте шлях!"
+  },
+  "gimmick_bush_000": {
+    "en": "The path is blocked.",
+    "ua": "Шлях перекрито."
+  },
+  "gimmick_bush_001": {
+    "en": "You swiftly chop through the thicket.",
+    "ua": "Ви швидко прорубалися крізь хащі."
+  },
+  "gimmick_bush_002": {
+    "en": "The thicket proved too thick for you.",
+    "ua": "Хащі виявилися надто густими."
+  },
+  "gimmick_bush_003": {
+    "en": "Get chopping!",
+    "ua": "Рубайте!"
+  },
+  "gimmick_rubble_000": {
+    "en": "These pillars look about\r\nready to collapse...",
+    "ua": "Ці колони ось-ось\nобваляться…"
+  },
+  "gimmick_rubble_003": {
+    "en": "Dodge!",
+    "ua": "Ухиляйтеся!"
+  },
+  "gimmick_trap_000": {
+    "en": "A strong wind suddenly started blowing.",
+    "ua": "Раптом здійнявся сильний вітер."
+  },
+  "gimmick_trap_001": {
+    "en": "You were swept away!",
+    "ua": "Вас віднесло!"
+  },
+  "gimmick_trap_003": {
+    "en": "Get down!",
+    "ua": "Пригніться!"
+  },
+  "gimmick_avalanche_000": {
+    "en": "A ball of snow came tumbling down.",
+    "ua": "Покотилася снігова куля."
+  },
+  "gimmick_avalanche_001": {
+    "en": "You got sent back the way you came...",
+    "ua": "Вас відкинуло назад…"
+  },
+  "gimmick_avalanche_003": {
+    "en": "Jump!",
+    "ua": "Скок!"
+  },
+  "gimmick_cliff_000": {
+    "en": "Looks like you can't continue.\r\nIf only you had an Ice Axe...",
+    "ua": "Схоже, далі не пройти.\nЯкби ж то льодоруб…"
+  },
+  "gimmick_cliff_001": {
+    "en": "You used the Ice Axe.",
+    "ua": "Узято льодоруб."
+  },
+  "gimmick_cliff_002": {
+    "en": "Use an Ice Axe to\r\nclimb the cliff?",
+    "ua": "Вилізти на скелю\nз льодорубом?"
+  },
+  "gimmick_beast_000": {
+    "en": "A wild [BEAST]\r\nappeared!",
+    "ua": "З'явився дикий звір:\n[BEAST]!"
+  },
+  "gimmick_beast_001": {
+    "en": "The [BEAST] got angry!",
+    "ua": "[BEAST] розлютився!"
+  },
+  "gimmick_beast_002": {
+    "en": " Shoot",
+    "ua": " Постріл"
+  },
+  "gimmick_beast_003": {
+    "en": " Aim",
+    "ua": " Приціл"
+  },
+  "gimmick_beast_006_00": {
+    "en": "You missed!",
+    "ua": "Промах!"
+  },
+  "gimmick_beast_006_01": {
+    "en": "[DROP] of your fellow explorers ran away!",
+    "ua": "Утекло дослідників: [DROP]!"
+  },
+  "gimmick_beast_007_00": {
+    "en": "The wild beast attacked!",
+    "ua": "Дикий звір напав!"
+  },
+  "gimmick_beast_007_01": {
+    "en": "[DROP] of your fellow explorers ran away!",
+    "ua": "Утекло дослідників: [DROP]!"
+  },
+  "gimmick_beast_008_00": {
+    "en": "You don't have any Tranquilliser Darts!",
+    "ua": "Немає снодійних дротиків!"
+  },
+  "gimmick_beast_008_01": {
+    "en": "[DROP] of your fellow explorers ran away!",
+    "ua": "Утекло дослідників: [DROP]!"
+  },
+  "gimmick_beast_009": {
+    "en": "The [BEAST] fell asleep!",
+    "ua": "[BEAST] заснув!"
+  },
+  "result_01_000": {
+    "en": "Total Steps:",
+    "ua": "Усього кроків:"
+  },
+  "result_01_002": {
+    "en": "Steps this session:",
+    "ua": "Кроків за сеанс:"
+  },
+  "result_02": {
+    "en": "Treasures",
+    "ua": "Скарби"
+  },
+  "result_03": {
+    "en": "Exploration Route",
+    "ua": "Маршрут експедиції"
+  },
+  "result_04": {
+    "en": "This is as far as you can go for\r\nnow. Time to catch forty winks!",
+    "ua": "Поки що далі не пройти.\nЧас трохи подрімати!"
+  },
+  "result_05": {
+    "en": "Mystery Monoliths",
+    "ua": "Таємничі моноліти"
+  },
+  "result_06": {
+    "en": "Photos Taken",
+    "ua": "Зроблено фото"
+  },
+  "hint_00_000": {
+    "en": "Go back",
+    "ua": "Назад"
+  },
+  "hint_01_001": {
+    "en": "Long trek",
+    "ua": "Довгий шлях"
+  },
+  "hint_01_002": {
+    "en": "Moderate trek",
+    "ua": "Середній шлях"
+  },
+  "hint_01_003": {
+    "en": "Short trek",
+    "ua": "Короткий шлях"
+  },
+  "hint_01_005": {
+    "en": "The light is strong.",
+    "ua": "Яскраве світло."
+  },
+  "hint_02_001": {
+    "en": "East",
+    "ua": "Схід"
+  },
+  "hint_02_002": {
+    "en": "West",
+    "ua": "Захід"
+  },
+  "hint_02_005": {
+    "en": "The light is strong.",
+    "ua": "Яскраве світло."
+  },
+  "hint_03_001": {
+    "en": "Perilous pass",
+    "ua": "Крутий перевал"
+  },
+  "hint_03_002": {
+    "en": "Mountain trail",
+    "ua": "Гірська стежка"
+  },
+  "hint_03_003": {
+    "en": "Cliff",
+    "ua": "Скеля"
+  },
+  "hint_03_004": {
+    "en": "Cave",
+    "ua": "Печера"
+  },
+  "hint_03_005": {
+    "en": "Cliff edge",
+    "ua": "Край скелі"
+  },
+  "pause_00": {
+    "en": "Give Up",
+    "ua": "Кинути"
+  },
+  "pause_01": {
+    "en": "Are you sure you\r\nwant to give up?",
+    "ua": "Справді\nздатися?"
+  },
+  "pause_02": {
+    "en": "Your fellow explorers will leave, and\r\nnext time you'll have to [System:Color name=\"mgExp_red\" ]start exploring\r\nagain on a new map[/System:Color].",
+    "ua": "Дослідники підуть, а наступного разу\nдоведеться [System:Color name=\"mgExp_red\" ]почати експедицію\nзаново на новій мапі[/System:Color]."
+  },
+  "guest_01": {
+    "en": "Recruit Explorers",
+    "ua": "Найняти дослідників"
+  },
+  "guest_02": {
+    "en": "You can recruit explorers for\r\n2 Play Coins apiece.",
+    "ua": "Кожен дослідник —\n2 монетки."
+  },
+  "guest_03": {
+    "en": "Recruit an explorer for\r\n2 Play Coins?",
+    "ua": "Найняти дослідника\nза 2 монетки?"
+  },
+  "guest_13": {
+    "en": "Recruit [VALUE] explorers for\r\n[COUNT] Play Coins?",
+    "ua": "Найняти дослідників ([VALUE])\nза [COUNT] монеток?"
+  },
+  "guest_13_1": {
+    "en": "Recruit an explorer for\r\n[COUNT] Play Coins?",
+    "ua": "Найняти дослідника\nза [COUNT] монеток?"
+  },
+  "guest_06": {
+    "en": "An explorer answered\r\nyour call.",
+    "ua": "Дослідник відгукнувся\nна ваш поклик."
+  },
+  "guest_06_lucky": {
+    "en": "Wow, look at [System:Color name=\"mgExp_red\" ]all those steps[/System:Color]!",
+    "ua": "Ого, скільки [System:Color name=\"mgExp_red\" ]кроків[/System:Color]!"
+  },
+  "guest_07": {
+    "en": "Recruit more explorers?",
+    "ua": "Найняти ще дослідників?"
+  },
+  "guest_08": {
+    "en": "Your team of explorers\r\nis increased by [COUNT].",
+    "ua": "Ваша команда поповнилася\nна [COUNT]."
+  },
+  "guest_08_lucky": {
+    "en": "Wow, look at [System:Color name=\"mgExp_red\" ]all those steps[/System:Color]!",
+    "ua": "Ого, скільки [System:Color name=\"mgExp_red\" ]кроків[/System:Color]!"
+  },
+  "guest_09": {
+    "en": "Now you're ready to\r\nstart exploring!",
+    "ua": "Тепер можна вирушати\nв експедицію!"
+  },
+  "guest_10": {
+    "en": "You can't recruit any more.\r\nTime to get exploring!",
+    "ua": "Більше найняти не можна.\nЧас досліджувати!"
+  },
+  "guest_11": {
+    "en": "Return to Plaza",
+    "ua": "На площу"
+  },
+  "guest_12": {
+    "en": "Are you sure you want to return?\r\nAny recruited explorers will leave.",
+    "ua": "Справді повернутися?\nНайняті дослідники підуть."
+  },
+  "diary_00": {
+    "en": "Exploration Log",
+    "ua": "Журнал експедиції"
+  },
+  "diary_01": {
+    "en": "Total Progress",
+    "ua": "Загальний прогрес"
+  },
+  "diary_03": {
+    "en": "Completed:",
+    "ua": "Завершено:"
+  },
+  "diary_06": {
+    "en": "Treasures",
+    "ua": "Скарби"
+  },
+  "diary_07": {
+    "en": "Photos",
+    "ua": "Фото"
+  },
+  "diary_21": {
+    "en": "No. [COUNT]: [NAME]",
+    "ua": "№ [COUNT]: [NAME]"
+  },
+  "diary_22": {
+    "en": "No. [COUNT]",
+    "ua": "№ [COUNT]"
+  },
+  "bottom_page_title_00": {
+    "en": "Select Area",
+    "ua": "Виберіть зону"
+  },
+  "bottom_page_title_01": {
+    "en": "Recruit Explorers",
+    "ua": "Найняти дослідників"
+  },
+  "bottom_page_title_02": {
+    "en": "Select Area",
+    "ua": "Виберіть зону"
+  },
+  "bottom_page_title_03": {
+    "en": "Select Records",
+    "ua": "Виберіть записи"
+  },
+  "op_000": {
+    "en": "For thousands of years, humans\r\nhave explored their planet.",
+    "ua": "Тисячі років люди\nдосліджують свою планету."
+  },
+  "op_001": {
+    "en": "But the Earth still holds many\r\nsecrets yet to uncover.",
+    "ua": "Та Земля досі приховує\nбезліч нерозкритих таємниць."
+  },
+  "op_002": {
+    "en": "A map has fallen into the hands\r\nof a certain archaeologist...",
+    "ua": "До рук одного археолога\nпотрапила мапа…"
+  },
+  "op_003": {
+    "en": "A map that could lead to\r\nuntold riches!",
+    "ua": "Мапа, що може привести\nдо незліченних багатств!"
+  },
+  "op_004": {
+    "en": "The archaeologist sets off,\r\nbound for the mysterious jungle.",
+    "ua": "Археолог вирушає\nв таємничі джунглі."
+  },
+  "ed_000": {
+    "en": "Later that night...",
+    "ua": "Пізніше тієї ночі…"
+  },
+  "ed_001": {
+    "en": "You got the Sir Henry\r\nBeaksley Hat!",
+    "ua": "Ви отримали капелюх\nсера Генрі Дзьобслі!"
+  },
+  "ed_002": {
+    "en": "Many days later, [NAME] sets off for the\r\njungle once more in search of the UFO...",
+    "ua": "Багато днів по тому [NAME] знову вирушає\nв джунглі шукати НЛО…"
+  },
+  "ed_003": {
+    "en": "Passage to the [System:Color name=\"mgExp_red\" ]Forgotten\r\nIslands[/System:Color] has opened up!",
+    "ua": "Відкрито шлях\nна [System:Color name=\"mgExp_red\" ]Забуті острови[/System:Color]!"
+  },
+  "Exp_credits_title_top": {
+    "en": "STAFF CREDITS",
+    "ua": "ТИТРИ"
+  },
+  "Exp_credits_title_000": {
+    "en": "Director",
+    "ua": "Режисер"
+  },
+  "Exp_credits_title_001": {
+    "en": "Game Design",
+    "ua": "Геймдизайн"
+  },
+  "Exp_credits_title_002": {
+    "en": "Lead Programming",
+    "ua": "Провідне програмування"
+  },
+  "Exp_credits_title_003": {
+    "en": "Programming",
+    "ua": "Програмування"
+  },
+  "Exp_credits_title_004": {
+    "en": "Art Director",
+    "ua": "Арт-директор"
+  },
+  "Exp_credits_title_005": {
+    "en": "Field Design",
+    "ua": "Дизайн локацій"
+  },
+  "Exp_credits_title_006": {
+    "en": "Graphic Design",
+    "ua": "Графічний дизайн"
+  },
+  "Exp_credits_title_007": {
+    "en": "Development Producer",
+    "ua": "Продюсер розробки"
+  },
+  "Exp_credits_title_008": {
+    "en": "Supervisor",
+    "ua": "Керівник"
+  },
+  "Exp_credits_title_009": {
+    "en": "Executive Producer",
+    "ua": "Виконавчий продюсер"
+  },
+  "Exp_credits_title_010": {
+    "en": "Director",
+    "ua": "Режисер"
+  },
+  "Exp_credits_title_011": {
+    "en": "Coordination",
+    "ua": "Координація"
+  },
+  "Exp_credits_title_012": {
+    "en": "Graphic Supervisors",
+    "ua": "Графічні супервайзери"
+  },
+  "Exp_credits_title_013": {
+    "en": "Sound Director",
+    "ua": "Звукорежисер"
+  },
+  "Exp_credits_title_014": {
+    "en": "Sound Program Support",
+    "ua": "Підтримка звукової програми"
+  },
+  "Exp_credits_title_015": {
+    "en": "Sound Coordination",
+    "ua": "Координація звуку"
+  },
+  "Exp_credits_title_016": {
+    "en": "Debug",
+    "ua": "Налагодження"
+  },
+  "Exp_credits_title_017": {
+    "en": "European Localisation",
+    "ua": "Європейська локалізація"
+  },
+  "Exp_credits_title_018": {
+    "en": "North American Localization",
+    "ua": "Північноамериканська локалізація"
+  },
+  "Exp_credits_title_019": {
+    "en": "Special Thanks",
+    "ua": "Особлива подяка"
+  },
+  "Exp_credits_title_020": {
+    "en": "General Producer",
+    "ua": "Генеральний продюсер"
+  },
+  "Exp_credits_title_021": {
+    "en": "Executive Producer",
+    "ua": "Виконавчий продюсер"
+  },
+  "Exp_credits_title_022": {
+    "en": "Technical Support",
+    "ua": "Технічна підтримка"
+  },
+  "Exp_credits_title_023": {
+    "en": "DUMMY TITLE",
+    "ua": ""
+  },
+  "Exp_credits_title_024": {
+    "en": "DUMMY TITLE",
+    "ua": ""
+  },
+  "Exp_credits_title_100": {
+    "en": "Producers",
+    "ua": "Продюсери"
+  },
+  "Exp_credits_title_101": {
+    "en": "Associate Producers",
+    "ua": "Асоційовані продюсери"
+  },
+  "Exp_credits_title_102": {
+    "en": "Project Management",
+    "ua": "Керування проєктом"
+  },
+  "Exp_credits_title_103": {
+    "en": "Sound Director",
+    "ua": "Звукорежисер"
+  },
+  "Exp_credits_title_104": {
+    "en": "Sound Coordination",
+    "ua": "Координація звуку"
+  },
+  "Exp_credits_title_105": {
+    "en": "Technical Support",
+    "ua": "Технічна підтримка"
+  },
+  "Exp_credits_title_106": {
+    "en": "Testing",
+    "ua": "Тестування"
+  },
+  "Exp_credits_title_107": {
+    "en": "European Localisation",
+    "ua": "Європейська локалізація"
+  },
+  "Exp_credits_title_108": {
+    "en": "North American Localization",
+    "ua": "Північноамериканська локалізація"
+  },
+  "Exp_credits_title_109": {
+    "en": "General Producer",
+    "ua": "Генеральний продюсер"
+  },
+  "Exp_credits_title_110": {
+    "en": "Executive Producer",
+    "ua": "Виконавчий продюсер"
+  },
+  "Exp_credits_title_200": {
+    "en": "Music",
+    "ua": "Музика"
+  },
+  "Exp_credits_title_201": {
+    "en": "Sound Effects",
+    "ua": "Звукові ефекти"
+  },
+  "Exp_credits_name_000": {
+    "en": "Satoshi Imaeda",
+    "ua": ""
+  },
+  "Exp_credits_name_001": {
+    "en": "Daisuke Hagiya",
+    "ua": ""
+  },
+  "Exp_credits_name_002": {
+    "en": "Gen Shiomi",
+    "ua": ""
+  },
+  "Exp_credits_name_003": {
+    "en": "Makoto Hara",
+    "ua": ""
+  },
+  "Exp_credits_name_004": {
+    "en": "Shinji Iseki",
+    "ua": ""
+  },
+  "Exp_credits_name_005": {
+    "en": "Koichi Watanabe",
+    "ua": ""
+  },
+  "Exp_credits_name_006": {
+    "en": "Tomoh Kondoh",
+    "ua": ""
+  },
+  "Exp_credits_name_007": {
+    "en": "Masahiro Chikaishi",
+    "ua": ""
+  },
+  "Exp_credits_name_008": {
+    "en": "Daisuke Kojima",
+    "ua": ""
+  },
+  "Exp_credits_name_009": {
+    "en": "Yoshihide Sasagawa",
+    "ua": ""
+  },
+  "Exp_credits_name_010": {
+    "en": "Yuko Oizumi",
+    "ua": ""
+  },
+  "Exp_credits_name_011": {
+    "en": "Naoki Ito",
+    "ua": ""
+  },
+  "Exp_credits_name_012": {
+    "en": "Yuno Endoh",
+    "ua": ""
+  },
+  "Exp_credits_name_013": {
+    "en": "Manabu Kusunoki",
+    "ua": ""
+  },
+  "Exp_credits_name_014": {
+    "en": "Noboru Shirasu",
+    "ua": ""
+  },
+  "Exp_credits_name_015": {
+    "en": "Naoto Ohshima",
+    "ua": ""
+  },
+  "Exp_credits_name_016": {
+    "en": "Yoji Ishii",
+    "ua": ""
+  },
+  "Exp_credits_name_017": {
+    "en": "Akihito Kato",
+    "ua": ""
+  },
+  "Exp_credits_name_100": {
+    "en": "Kouichi Kawamoto",
+    "ua": ""
+  },
+  "Exp_credits_name_101": {
+    "en": "Toyokazu Nonaka",
+    "ua": ""
+  },
+  "Exp_credits_name_102": {
+    "en": "Ryusuke Niitani",
+    "ua": ""
+  },
+  "Exp_credits_name_103": {
+    "en": "Yoshiaki Onishi",
+    "ua": ""
+  },
+  "Exp_credits_name_104": {
+    "en": "Masahiro Shiotani",
+    "ua": ""
+  },
+  "Exp_credits_name_105": {
+    "en": "Kazuyuki Gofuku",
+    "ua": ""
+  },
+  "Exp_credits_name_106": {
+    "en": "Kenji Yamamoto",
+    "ua": ""
+  },
+  "Exp_credits_name_107": {
+    "en": "Minako Hamano",
+    "ua": ""
+  },
+  "Exp_credits_name_108": {
+    "en": "Yuto Sasaki",
+    "ua": ""
+  },
+  "Exp_credits_name_109": {
+    "en": "Shingo Okamoto",
+    "ua": ""
+  },
+  "Exp_credits_name_110": {
+    "en": "Tomohiro Umeda",
+    "ua": ""
+  },
+  "Exp_credits_name_111": {
+    "en": "Takehiro Oyama",
+    "ua": ""
+  },
+  "Exp_credits_name_112": {
+    "en": "Manabu Matumoto",
+    "ua": ""
+  },
+  "Exp_credits_name_113": {
+    "en": "Kanta Yokota",
+    "ua": ""
+  },
+  "Exp_credits_name_114": {
+    "en": "Masaki Mori",
+    "ua": ""
+  },
+  "Exp_credits_name_115": {
+    "en": "Mario Club",
+    "ua": ""
+  },
+  "Exp_credits_name_116": {
+    "en": "NOA Product Testing",
+    "ua": ""
+  },
+  "Exp_credits_name_117": {
+    "en": "NOE Quality Assurance",
+    "ua": ""
+  },
+  "Exp_credits_name_118": {
+    "en": "NOE Localisation",
+    "ua": ""
+  },
+  "Exp_credits_name_119": {
+    "en": "NOA Localization",
+    "ua": ""
+  },
+  "Exp_credits_name_120": {
+    "en": "Shinya Takahashi",
+    "ua": ""
+  },
+  "Exp_credits_name_121": {
+    "en": "Tatsumi Kimishima",
+    "ua": ""
+  },
+  "Exp_credits_name_200": {
+    "en": "Kento Hasegawa",
+    "ua": ""
+  },
+  "Exp_credits_name_201": {
+    "en": "Yuuki Toujinbara",
+    "ua": ""
+  },
+  "Exp_credits_developer": {
+    "en": "Developer ARZEST Co., Ltd.",
+    "ua": "Розробник ARZEST Co., Ltd."
+  },
+  "Exp_credits_corporate": {
+    "en": "Nintendo",
+    "ua": "Nintendo"
+  },
+  "Exp_credits_sound": {
+    "en": "Designwave Co., Ltd.",
+    "ua": ""
+  },
+  "Exp_credits_copyright": {
+    "en": "Nintendo and ARZEST are the authors\r\nof this software for the purpose of copyright. \r\nAll rights reserved.\r\n\r\n© 2016 Nintendo.",
+    "ua": "Nintendo і ARZEST є авторами\nцієї програми з погляду авторського права.\nУсі права захищено.\n\n© 2016 Nintendo."
+  },
+  "Exp_credits_press_a": {
+    "en": "PRESS ",
+    "ua": "НАТИСНІТЬ "
+  },
+  "number_1": {
+    "en": "1st",
+    "ua": "№1"
+  },
+  "number_2": {
+    "en": "2nd",
+    "ua": "№2"
+  },
+  "number_3": {
+    "en": "3rd",
+    "ua": "№3"
+  },
+  "number_4": {
+    "en": "4th",
+    "ua": "№4"
+  },
+  "number_5": {
+    "en": "5th",
+    "ua": "№5"
+  },
+  "number_6": {
+    "en": "6th",
+    "ua": "№6"
+  },
+  "takephoto_02_002_new": {
+    "en": "A fine [UMA] specimen!\r\nIt was added to your [System:Color name=\"mgExp_red\" ]Exploration Log[/System:Color].",
+    "ua": "Чудовий екземпляр: [UMA]!\nДодано в [System:Color name=\"mgExp_red\" ]Журнал експедиції[/System:Color]."
+  },
+  "takephoto_02_003_new": {
+    "en": "Wow! A rare [UMA] sighting!\r\nIt was added to your [System:Color name=\"mgExp_red\" ]Exploration Log[/System:Color].",
+    "ua": "Ого! Рідкісне видовище: [UMA]!\nДодано в [System:Color name=\"mgExp_red\" ]Журнал експедиції[/System:Color]."
+  },
+  "tutorial_area_0_00": {
+    "en": "Drawn by [System:Color name=\"mgExp_red\" ]ancient mysteries[/System:Color] and untold [System:Color name=\"mgExp_red\" ]riches[/System:Color],\r\nthe intrepid [NAME] enters the jungle...",
+    "ua": "Ваблений [System:Color name=\"mgExp_red\" ]давніми таємницями[/System:Color] й [System:Color name=\"mgExp_red\" ]скарбами[/System:Color],\nдослідник [NAME] вирушає в джунглі…"
+  },
+  "tutorial_area_1_00": {
+    "en": "Let us depart post-haste,\r\n[NAME]!",
+    "ua": "Вирушаймо негайно,\n[NAME]!"
+  },
+  "tutorial_area_1_01": {
+    "en": "My name is [System:Color name=\"mgExp_red\" ]Sir Henry Beaksley[/System:Color].\r\nI'll be your fearless partner and guide!",
+    "ua": "Мене звуть [System:Color name=\"mgExp_red\" ]сер Генрі Дзьобслі[/System:Color].\nЯ ваш безстрашний напарник і гід!"
+  },
+  "tutorial_area_2_00": {
+    "en": "Now, as we all know, it's\r\ndangerous to go alone.",
+    "ua": "Ну, як усім відомо,\nіти самому небезпечно."
+  },
+  "tutorial_area_3_00": {
+    "en": "Explorers, assemble!",
+    "ua": "Дослідники, до мене!"
+  },
+  "tutorial_area_4_00": {
+    "en": "So I've gathered some explorers to\r\njoin your party! Just for today, mind.",
+    "ua": "Тож я зібрав вам кількох дослідників\nу загін! Лише на сьогодні, зважте."
+  },
+  "tutorial_area_4_01": {
+    "en": "Next time, you'll need to gather your\r\nown by meeting people via StreetPass.",
+    "ua": "Наступного разу збирайте їх самі,\nзустрічаючи людей через StreetPass."
+  },
+  "tutorial_area_5_00": {
+    "en": "We'll explore these vast lands using\r\nyour companions' total step count.",
+    "ua": "Досліджуватимемо ці простори\nза сумою кроків супутників."
+  },
+  "tutorial_area_5_01": {
+    "en": "When an explorer's step count reaches\r\n0, they'll get exhausted and leave.",
+    "ua": "Коли кроки дослідника скінчаться,\nвін виснажиться й піде."
+  },
+  "tutorial_area_6_00": {
+    "en": "Now, let's get after that [System:Color name=\"mgExp_red\" ]treasure[/System:Color]!",
+    "ua": "А тепер — по [System:Color name=\"mgExp_red\" ]скарб[/System:Color]!"
+  },
+  "tutorial_area_6_01": {
+    "en": "Explorers, sally forth!",
+    "ua": "Дослідники, уперед!"
+  },
+  "tutorial_game_start_0_00": {
+    "en": "First, take a look\r\nat the [System:Color name=\"mgExp_red\" ]map[/System:Color].",
+    "ua": "Спершу погляньте\nна [System:Color name=\"mgExp_red\" ]мапу[/System:Color]."
+  },
+  "tutorial_game_start_1_00": {
+    "en": "There is but [System:Color name=\"mgExp_red\" ]one treasure[/System:Color] hidden\r\nsomewhere in this locale.",
+    "ua": "Тут десь захований\nлише [System:Color name=\"mgExp_red\" ]один скарб[/System:Color]."
+  },
+  "tutorial_game_start_1_01": {
+    "en": "[System:Color name=\"mgExp_red\" ]Blinking marks[/System:Color] represent\r\nplaces of interest.",
+    "ua": "[System:Color name=\"mgExp_red\" ]Мерехтливі позначки[/System:Color] — це\nцікаві місця."
+  },
+  "tutorial_game_start_2_00": {
+    "en": "If you get lost out there,\r\nremember to [System:Color name=\"mgExp_red\" ]check your map[/System:Color]!",
+    "ua": "Якщо заблукаєте,\n[System:Color name=\"mgExp_red\" ]перевірте мапу[/System:Color]!"
+  },
+  "tutorial_game_start_3_00": {
+    "en": "Press  to zoom the map in or out.",
+    "ua": " — наблизити чи віддалити мапу."
+  },
+  "tutorial_game_start_4_00": {
+    "en": "The marks change appearance \r\nwhen they are off-screen.",
+    "ua": "Поза екраном позначки\nвиглядають інакше."
+  },
+  "tutorial_game_branch_0_00": {
+    "en": "Oh my, we've encountered\r\na classic fork in the road.",
+    "ua": "Ой лишенько, класичне\nроздоріжжя."
+  },
+  "tutorial_game_branch_0_01": {
+    "en": "As the fearless leader of this intrepid\r\nparty, the path we take is up to you!",
+    "ua": "Ви — безстрашний ватажок загону,\nтож шлях вибирати вам!"
+  },
+  "tutorial_game_branch_0_02": {
+    "en": "Look carefully at the paths that lie\r\nahead and make your decision.",
+    "ua": "Уважно огляньте шляхи попереду\nй ухваліть рішення."
+  },
+  "tutorial_game_branch_1_00": {
+    "en": "[System:Color name=\"mgExp_red\" ]Puddles[/System:Color] take a lot of steps to\r\nwade through, so be careful!",
+    "ua": "Щоб перейти [System:Color name=\"mgExp_red\" ]калюжу[/System:Color], треба\nбагато кроків, тож обережно!"
+  },
+  "tutorial_game_photo_0_00": {
+    "en": "Oh, what's that...? Something's\r\ncoming! [System:Color name=\"mgExp_red\" ]This is a photo op[/System:Color]!",
+    "ua": "О, що це…? Щось\nнаближається! [System:Color name=\"mgExp_red\" ]Час для фото[/System:Color]!"
+  },
+  "tutorial_game_photo_1_00": {
+    "en": "You got it! Stellar work - just\r\nlook at that framing! Sublime!",
+    "ua": "Вийшло! Блискуче — гляньте\nна кадр! Чудово!"
+  },
+  "tutorial_game_photo_2_00": {
+    "en": "I say, old bean, it looks like\r\nyour timing was a tad off...",
+    "ua": "Ох, друже, схоже, ви трохи\nне вгадали з моментом…"
+  },
+  "tutorial_game_photo_3_00": {
+    "en": "You missed the shot this time.\r\nBut it's all good practice, eh?",
+    "ua": "Знімок не вдався.\nТа це добра практика, га?"
+  },
+  "tutorial_game_beast_0_00": {
+    "en": "I sense the presence of\r\nsome kind of animal...",
+    "ua": "Відчуваю поблизу\nякусь тварину…"
+  },
+  "tutorial_game_beast_0_01": {
+    "en": "If you see a wild [System:Color name=\"mgExp_red\" ]beast[/System:Color], use the\r\n[System:Color name=\"mgExp_red\" ]Tranquilliser [/System:Color]to put it to sleep!",
+    "ua": "Побачите дикого [System:Color name=\"mgExp_red\" ]звіра[/System:Color] —\nприспіть його [System:Color name=\"mgExp_red\" ]снодійним [/System:Color]!"
+  },
+  "tutorial_game_stom_0_00": {
+    "en": "This [System:Color name=\"mgExp_red\" ]sandstorm is cursed[/System:Color]! If you don't\r\nprotect yourself, it'll blow you away!",
+    "ua": "Ця [System:Color name=\"mgExp_red\" ]піщана буря проклята[/System:Color]! Якщо\nне захиститися, вас віднесе!"
+  },
+  "tutorial_game_cliff_1_00": {
+    "en": "Hmm... If you have an [System:Color name=\"mgExp_red\" ]Ice Axe[/System:Color], you\r\nmay be able to take a shortcut.",
+    "ua": "Гм… Із [System:Color name=\"mgExp_red\" ]льодорубом[/System:Color] можна\nпіти коротшим шляхом."
+  },
+  "tutorial_game_cliff_2_00": {
+    "en": "Use that [System:Color name=\"mgExp_red\" ]Ice Axe[/System:Color],\r\non the double!",
+    "ua": "Мерщій беріть\n[System:Color name=\"mgExp_red\" ]льодоруб[/System:Color]!"
+  },
+  "tutorial_game_rock_0_00": {
+    "en": "This [System:Color name=\"mgExp_red\" ]rock[/System:Color] is blocking the path!\r\nBetter give it a good shove, eh?",
+    "ua": "Цей [System:Color name=\"mgExp_red\" ]камінь[/System:Color] перекрив шлях!\nТреба добряче штовхнути, еге ж?"
+  },
+  "tutorial_bush_0_00": {
+    "en": "We'll need everyone working together\r\nto cut through the [System:Color name=\"mgExp_red\" ]thicket[/System:Color]!",
+    "ua": "Щоб прорубатися крізь [System:Color name=\"mgExp_red\" ]хащі[/System:Color],\nтреба працювати всім разом!"
+  },
+  "goal_free_0_00_k": {
+    "en": "So, did you find anything out there?",
+    "ua": "Ну що, знайшли щось?"
+  },
+  "goal_free_0_01_k": {
+    "en": "An adventurer's work is never done!",
+    "ua": "Робота шукача пригод не має кінця!"
+  },
+  "goal_s1_t0_0_00_k": {
+    "en": "Smashing! A job well done!",
+    "ua": "Розкішно! Чудова робота!"
+  },
+  "goal_s1_t0_0_01_k": {
+    "en": "You found a Sir Henry Statue!\r\nTruly priceless!",
+    "ua": "Ви знайшли статую сера Генрі!\nСправді безцінна!"
+  },
+  "goal_s1_t0_1_00_k": {
+    "en": "But this marks just the\r\nbeginning of your adventure.",
+    "ua": "Але це лише\nпочаток вашої пригоди."
+  },
+  "goal_s1_t0_1_01_k": {
+    "en": "You must unravel the secrets\r\nof that map of yours!",
+    "ua": "Ви мусите розгадати таємниці\nсвоєї мапи!"
+  },
+  "goal_s1_t0_1_02_k": {
+    "en": "Good luck, intrepid explorer!",
+    "ua": "Щасти, безстрашний дослідник!"
+  },
+  "goal_s1_t1_0_00_k": {
+    "en": "I say, old bean!",
+    "ua": "Ох, друже!"
+  },
+  "goal_s1_t1_0_01_k": {
+    "en": "That's quite the treasure you\r\nseem to have unearthed!",
+    "ua": "Оце так скарб\nви відкопали!"
+  },
+  "goal_s1_t1_1_00_k": {
+    "en": "Why, it's so smooth and polished,\r\nI can see my own face in it!",
+    "ua": "Такий гладенький і відполірований,\nщо я бачу в ньому своє обличчя!"
+  },
+  "goal_s1_t1_1_01_m": {
+    "en": "This crystal fragment looks like\r\na piece of [System:Color name=\"mgExp_aqua\" ]something larger[/System:Color]...",
+    "ua": "Цей уламок кришталю схожий\nна частину [System:Color name=\"mgExp_aqua\" ]чогось більшого[/System:Color]…"
+  },
+  "goal_s1_t1_1_02_m": {
+    "en": "Its edges seem [System:Color name=\"mgExp_aqua\" ]more cleanly-cut[/System:Color] than\r\nshould be possible with ancient tools.",
+    "ua": "Його краї [System:Color name=\"mgExp_aqua\" ]рівніші[/System:Color], ніж можна\nзробити давніми інструментами."
+  },
+  "goal_s1_t1_1_03_m": {
+    "en": "The mystery of the map has\r\nonly led to still deeper mysteries...",
+    "ua": "Таємниця мапи привела\nлише до глибших таємниць…"
+  },
+  "goal_s1_t1_1_05_k": {
+    "en": "My instincts are telling me there\r\nare [System:Color name=\"mgExp_red\" ]more fragments[/System:Color] left to find.",
+    "ua": "Чуття підказує мені, що\nє [System:Color name=\"mgExp_red\" ]інші уламки[/System:Color]."
+  },
+  "goal_s1_t1_1_06_k": {
+    "en": "I know you have the mettle\r\nto seek them out!",
+    "ua": "Я знаю, вам стане завзяття\nїх відшукати!"
+  },
+  "goal_s1_t2_0_00_k": {
+    "en": "Why, it's the spitting image of\r\nthe fragment you found before!",
+    "ua": "Ну й ну, це ж копія уламка,\nякий ви знайшли раніше!"
+  },
+  "goal_s1_t2_0_01_k": {
+    "en": "Let's see, now...perhaps the\r\ntwo pieces fit together?",
+    "ua": "Погляньмо… може, ці дві\nчастини складаються докупи?"
+  },
+  "goal_s1_t2_1_00_m": {
+    "en": "The two cleanly-cut edges\r\nfit together perfectly.",
+    "ua": "Два рівні краї ідеально\nпасують один до одного."
+  },
+  "goal_s1_t2_1_01_m": {
+    "en": "The resulting [System:Color name=\"mgExp_aqua\" ]hollowed dome[/System:Color]\r\nseems somehow ominous...",
+    "ua": "Утворений [System:Color name=\"mgExp_aqua\" ]порожнистий купол[/System:Color]\nвиглядає якось зловісно…"
+  },
+  "goal_s1_t2_2_00_k": {
+    "en": "This shape...could it be...",
+    "ua": "Ця форма… невже…"
+  },
+  "goal_s1_t2_2_01_k": {
+    "en": "By Jove, it's a [System:Color name=\"mgExp_red\" ]skull[/System:Color]!",
+    "ua": "Та це ж [System:Color name=\"mgExp_red\" ]череп[/System:Color]!"
+  },
+  "goal_s1_t2_2_03_k": {
+    "en": "Well, this is certainly an\r\nexciting development!",
+    "ua": "Що ж, оце справді\nзахопливий поворот!"
+  },
+  "goal_s1_t2_3_00_k": {
+    "en": "Let's see if the next piece\r\nconfirms our suspicions!",
+    "ua": "Подивімося, чи наступний шматок\nпідтвердить наші здогади!"
+  },
+  "goal_s1_t3_0_00_k": {
+    "en": "Remarkable!",
+    "ua": "Надзвичайно!"
+  },
+  "goal_s1_t3_0_01_k": {
+    "en": "It's like a set of sparkling\r\ncrystal false teeth!",
+    "ua": "Наче блискучі кришталеві\nвставні зуби!"
+  },
+  "goal_s1_t3_0_02_k": {
+    "en": "Perhaps they'll come in useful\r\nwhen you're old and grey? Hoho!",
+    "ua": "Може, знадобляться на старість?\nХо-хо!"
+  },
+  "goal_s1_t3_1_00_m": {
+    "en": "The pieces of the crystal carving\r\nform the shape of a [System:Color name=\"mgExp_aqua\" ]human skull[/System:Color].",
+    "ua": "Шматки кришталевої різьби\nскладаються в [System:Color name=\"mgExp_aqua\" ]людський череп[/System:Color]."
+  },
+  "goal_s1_t3_1_01_m": {
+    "en": "Who could have carved it?\r\nAnd for what purpose?",
+    "ua": "Хто міг його вирізати?\nІ навіщо?"
+  },
+  "goal_s1_t3_2_01_k": {
+    "en": "I wonder if something will happen\r\nwhen all the pieces are united?",
+    "ua": "Цікаво, чи станеться щось,\nколи всі частини з'єднаються?"
+  },
+  "goal_s1_t4_0_00_k": {
+    "en": "Oh yes, the skull is really\r\nstarting to take shape now!",
+    "ua": "О так, череп уже справді\nнабуває форми!"
+  },
+  "goal_s1_t4_0_01_k": {
+    "en": "If we complete it, we'll have\r\nourselves the find of the century!",
+    "ua": "Якщо зберемо його, матимемо\nзнахідку століття!"
+  },
+  "goal_s1_t4_1_00_m": {
+    "en": "Four crystal fragments, found\r\nin four separate locations...",
+    "ua": "Чотири кришталеві уламки, знайдені\nв чотирьох різних місцях…"
+  },
+  "goal_s1_t4_1_01_m": {
+    "en": "Yet together, they form the\r\nshape of a single human skull.",
+    "ua": "А разом вони утворюють\nодин людський череп."
+  },
+  "goal_s1_t4_1_02_m": {
+    "en": "What could this possibly mean?",
+    "ua": "Що б це могло означати?"
+  },
+  "goal_s1_t5_0_00_k": {
+    "en": "You've found another piece, I see!\r\nQuick, let's slot it into place!",
+    "ua": "Бачу, ви знайшли ще шматок!\nШвидше ставмо його на місце!"
+  },
+  "goal_s1_t5_1_00_m": {
+    "en": "The almost-completed skull seems\r\nto give off a faint, unearthly glow.",
+    "ua": "Майже готовий череп ледь помітно\nсвітиться неземним сяйвом."
+  },
+  "goal_s1_t5_1_01_m": {
+    "en": "Can it really be made of mere crystal?\r\nOr is it something not of this world?",
+    "ua": "Невже він просто з кришталю?\nЧи це щось не з цього світу?"
+  },
+  "goal_s1_t5_2_00_k": {
+    "en": "We're almost there, old bean!",
+    "ua": "Ми майже у цілі, друже!"
+  },
+  "goal_s1_t5_2_01_k": {
+    "en": "I'd wager there's just one\r\nmore piece left to find!",
+    "ua": "Закладаюся, лишилося знайти\nостанній шматок!"
+  },
+  "goal_s1_t6_0_00_k": {
+    "en": "The big moment has arrived.",
+    "ua": "Настав великий момент."
+  },
+  "goal_s1_t6_1_00_s": {
+    "en": "We have completed the hidden artefact\r\nof the jungle, the legendary [System:Color name=\"mgExp_red\" ]crystal skull[/System:Color]!",
+    "ua": "Ми зібрали схований артефакт\nджунглів — легендарний [System:Color name=\"mgExp_red\" ]кришталевий череп[/System:Color]!"
+  },
+  "goal_s1_t6_2_00_k": {
+    "en": "But...what in the world?\r\nThis is quite the bizarre shape!",
+    "ua": "Але… що за дива?\nЯка химерна форма!"
+  },
+  "goal_s1_t6_3_00_m": {
+    "en": "The light from the crystal skull\r\nreveals some kind of [System:Color name=\"mgExp_aqua\" ]ancient writing[/System:Color]...",
+    "ua": "Світло кришталевого черепа\nвиявляє якісь [System:Color name=\"mgExp_aqua\" ]давні письмена[/System:Color]…"
+  },
+  "goal_s1_t6_3_01_k": {
+    "en": "What's this? Ancient ruins?",
+    "ua": "Що це? Давні руїни?"
+  },
+  "goal_s1_t6_3_02_k": {
+    "en": "Is the skull pointing us\r\nto our next destination?",
+    "ua": "Невже череп указує\nнаш наступний пункт?"
+  },
+  "goal_s1_t6_3_03_m": {
+    "en": "A bizarrely elongated skull...",
+    "ua": "Химерно видовжений череп…"
+  },
+  "goal_s1_t6_3_04_m": {
+    "en": "A vision of [System:Color name=\"mgExp_aqua\" ]ancient ruins[/System:Color]...",
+    "ua": "Видіння [System:Color name=\"mgExp_aqua\" ]давніх руїн[/System:Color]…"
+  },
+  "goal_s1_t6_3_05_m": {
+    "en": "And the [System:Color name=\"mgExp_aqua\" ]unusual figures[/System:Color]\r\ndepicted beside them...",
+    "ua": "І [System:Color name=\"mgExp_aqua\" ]незвичні постаті[/System:Color]\nпоряд із ними…"
+  },
+  "goal_s1_t6_3_06_m": {
+    "en": "Is the answer to all these mysteries\r\nhidden in the depths of the ruins?",
+    "ua": "Чи ховається відповідь на всі ці таємниці\nв глибинах руїн?"
+  },
+  "goal_s1_t6_3_07_k": {
+    "en": "At any rate, we should take\r\na photograph of this image.",
+    "ua": "Хай там як, варто\nсфотографувати це зображення."
+  },
+  "goal_s1_t6_4_00_k": {
+    "en": "It will surely come in useful\r\nin our adventures to come!",
+    "ua": "Воно точно знадобиться\nв майбутніх пригодах!"
+  },
+  "goal_s1_t6_5_00_k": {
+    "en": "Now, let us make haste\r\nto the ancient ruins!",
+    "ua": "А тепер мерщій\nдо давніх руїн!"
+  },
+  "goal_s2_t1_0_00_k": {
+    "en": "Gadzooks! A mysterious statue!\r\nYou've done it again, old chum!",
+    "ua": "Отакої! Таємнича статуя!\nВам знову вдалося, друзяко!"
+  },
+  "goal_s2_t1_0_01_k": {
+    "en": "But is it just me, or have we seen\r\nthis figure somewhere before?",
+    "ua": "Чи мені здається, чи ми вже\nбачили цю постать?"
+  },
+  "goal_s2_t1_1_00_m": {
+    "en": "The stone statue [System:Color name=\"mgExp_aqua\" ]closely resembled[/System:Color]\r\nthe figures revealed by the crystal skull.",
+    "ua": "Кам'яна статуя [System:Color name=\"mgExp_aqua\" ]дуже нагадувала[/System:Color]\nпостаті, які показав кришталевий череп."
+  },
+  "goal_s2_t1_1_01_m": {
+    "en": "But unlike the skull, this statue was\r\nclearly hand-crafted by ancient folk.",
+    "ua": "Але, на відміну від черепа, статую\nявно виготовили руками давніх людей."
+  },
+  "goal_s2_t1_2_00_k": {
+    "en": "I have a sneaking suspicion this\r\n[System:Color name=\"mgExp_red\" ]isn't the only statue[/System:Color] in those ruins...",
+    "ua": "Маю підозру, що в цих руїнах\nце [System:Color name=\"mgExp_red\" ]не єдина статуя[/System:Color]…"
+  },
+  "goal_s2_t2_0_00_k": {
+    "en": "Just as I thought!\r\nA second statue!",
+    "ua": "Так я й думав!\nДруга статуя!"
+  },
+  "goal_s2_t2_1_00_m": {
+    "en": "This statue depicts two figures...\r\nIs one a servant of the other?",
+    "ua": "Ця статуя зображує дві постаті…\nЧи одна служить іншій?"
+  },
+  "goal_s2_t2_1_01_m": {
+    "en": "Or are they merely two halves\r\nof one strange being?",
+    "ua": "Чи це лише дві половини\nоднієї дивної істоти?"
+  },
+  "goal_s2_t2_1_02_k": {
+    "en": "There are many ancient gods\r\ndepicted in this picture.",
+    "ua": "На цьому зображенні\nбагато давніх богів."
+  },
+  "goal_s2_t2_1_03_k": {
+    "en": "Perhaps there are many more\r\nstatues to find, as well?",
+    "ua": "Може, й статуй тут\nнабагато більше?"
+  },
+  "goal_s2_t3_0_00_k": {
+    "en": "These ancient gods all have\r\nthe most [System:Color name=\"mgExp_red\" ]piercing gazes[/System:Color]...",
+    "ua": "У всіх цих давніх богів\nтакий [System:Color name=\"mgExp_red\" ]пронизливий погляд[/System:Color]…"
+  },
+  "goal_s2_t3_0_01_k": {
+    "en": "But I'm not going to be\r\nintimidated by them, oh no!",
+    "ua": "Але мене вони не\nзалякають, о ні!"
+  },
+  "goal_s2_t3_0_03_k": {
+    "en": "Warrrk!",
+    "ua": "Кар-р-р!"
+  },
+  "goal_s2_t3_1_00_k": {
+    "en": "Good gracious! A flood!",
+    "ua": "Святі угодники! Повінь!"
+  },
+  "goal_s2_t3_1_01_k": {
+    "en": "We'll be drowned!",
+    "ua": "Ми потонемо!"
+  },
+  "goal_s2_t3_2_00_k": {
+    "en": "...Hmm?!",
+    "ua": "…Га?!"
+  },
+  "goal_s2_t3_2_01_k": {
+    "en": "What was that?!",
+    "ua": "Що це було?!"
+  },
+  "goal_s2_t3_2_02_k": {
+    "en": "Did you see it, too?!",
+    "ua": "Ви теж бачили?!"
+  },
+  "goal_s2_t3_2_03_m": {
+    "en": "A vision of a mighty [System:Color name=\"mgExp_aqua\" ]flood[/System:Color]...\r\nWas this the work of the ancient idols?",
+    "ua": "Видіння могутньої [System:Color name=\"mgExp_aqua\" ]повені[/System:Color]…\nНевже це справа давніх ідолів?"
+  },
+  "goal_s2_t3_2_04_m": {
+    "en": "Unlike the crystal skull's images,\r\nthis vision was terribly realistic.",
+    "ua": "На відміну від образів черепа,\nце видіння було страшенно реальним."
+  },
+  "goal_s2_t3_2_05_m": {
+    "en": "One thing seems clear - these\r\nidols are no mere stone statues.",
+    "ua": "Ясно одне — ці ідоли\nне просто кам'яні статуї."
+  },
+  "goal_s2_t4_0_00_k": {
+    "en": "These figures are wearing hats...\r\nThey look somehow distinguished.",
+    "ua": "Ці постаті в капелюхах…\nВиглядають якось поважно."
+  },
+  "goal_s2_t4_1_00_k": {
+    "en": "Well, here goes nothing!",
+    "ua": "Що ж, була не була!"
+  },
+  "goal_s2_t4_2_00_m": {
+    "en": "The flood appeared to engulf\r\nan entire city.",
+    "ua": "Здається, повінь поглинула\nціле місто."
+  },
+  "goal_s2_t4_2_01_m": {
+    "en": "Perhaps these very ruins are\r\nall that remains of that place...",
+    "ua": "Може, ці руїни — усе,\nщо від нього лишилося…"
+  },
+  "goal_s2_t4_3_01_k": {
+    "en": "The flood appeared as soon\r\nas I walloped the idol!",
+    "ua": "Повінь з'явилася, щойно\nя стукнув ідола!"
+  },
+  "goal_s2_t4_3_02_k": {
+    "en": "I hope I didn't bring a curse\r\ndown upon myself...",
+    "ua": "Сподіваюся, я не накликав\nна себе прокляття…"
+  },
+  "goal_s2_t5_0_00_k": {
+    "en": "What a lot of ancient gods...\r\nI feel a little intimidated.",
+    "ua": "Стільки давніх богів…\nМені трохи моторошно."
+  },
+  "goal_s2_t5_0_02_k": {
+    "en": "I bet it was these chaps who\r\ncaused that massive flood!",
+    "ua": "Б'юся об заклад, це ці хлопці\nвлаштували ту величезну повінь!"
+  },
+  "goal_s2_t5_0_03_k": {
+    "en": "Somebody must have walloped\r\nthis idol like I did with the others!",
+    "ua": "Мабуть, хтось стукнув цього\nідола, як я — інших!"
+  },
+  "goal_s2_t5_0_04_k": {
+    "en": "I'd wager my beak on it!",
+    "ua": "Ставлю на це свій дзьоб!"
+  },
+  "goal_s2_t5_0_05_m": {
+    "en": "Walloping aside, these gods do seem\r\nlikely culprits for the ancient flood.",
+    "ua": "Стукання стуканням, але ці боги справді\nсхожі на винуватців давньої повені."
+  },
+  "goal_s2_t5_0_06_m": {
+    "en": "But what reason could they have\r\nhad for destroying an entire city?",
+    "ua": "Але навіщо їм було\nзнищувати ціле місто?"
+  },
+  "goal_s2_t5_0_07_k": {
+    "en": "Handle that thing carefully, now!\r\nNo walloping, you hear?!",
+    "ua": "Обережніше з цією штукою!\nЖодного стукання, чуєте?!"
+  },
+  "goal_s2_t6_0_00_k": {
+    "en": "This idol seems different from\r\nthe others somehow...",
+    "ua": "Цей ідол чимось\nвідрізняється від інших…"
+  },
+  "goal_s2_t6_0_02_k": {
+    "en": "Could it be their leader?",
+    "ua": "Може, це їхній ватажок?"
+  },
+  "goal_s2_t6_1_00_k": {
+    "en": "What's this?",
+    "ua": "Що це?"
+  },
+  "goal_s2_t6_1_01_k": {
+    "en": "There's some kind of [System:Color name=\"mgExp_red\" ]paper[/System:Color]...",
+    "ua": "Тут якийсь [System:Color name=\"mgExp_red\" ]папір[/System:Color]…"
+  },
+  "goal_s2_t6_2_00_m": {
+    "en": "A mighty [System:Color name=\"mgExp_aqua\" ]flood[/System:Color], a frosty [System:Color name=\"mgExp_aqua\" ]peak[/System:Color]...and\r\na [System:Color name=\"mgExp_aqua\" ]mysterious shape[/System:Color] floating in the air.",
+    "ua": "Могутня [System:Color name=\"mgExp_aqua\" ]повінь[/System:Color], засніжена [System:Color name=\"mgExp_aqua\" ]вершина[/System:Color]… і\n[System:Color name=\"mgExp_aqua\" ]таємнича постать[/System:Color] у повітрі."
+  },
+  "goal_s2_t6_2_01_m": {
+    "en": "Again, the images are accompanied\r\nby ancient writings.",
+    "ua": "І знову зображення супроводжують\nдавні письмена."
+  },
+  "goal_s2_t6_2_02_m": {
+    "en": "The gods...salvation...\r\nA mighty vessel...",
+    "ua": "Боги… порятунок…\nМогутній корабель…"
+  },
+  "goal_s2_t6_2_03_m": {
+    "en": "The rest of the ancient writings\r\nare too faded to make out.",
+    "ua": "Решта давніх письмен надто\nвицвіла, щоб розібрати."
+  },
+  "goal_s2_t6_2_04_m": {
+    "en": "Did the gods who flooded the city\r\nsend a [System:Color name=\"mgExp_aqua\" ]vessel[/System:Color] to rescue its people?",
+    "ua": "Невже боги, що затопили місто,\nпослали [System:Color name=\"mgExp_aqua\" ]корабель[/System:Color] рятувати людей?"
+  },
+  "goal_s2_t6_2_05_m": {
+    "en": "Could this floating shape represent\r\nthat vessel of salvation?",
+    "ua": "Чи не той це корабель порятунку —\nця постать у повітрі?"
+  },
+  "goal_s2_t6_3_00_k": {
+    "en": "Marvellous, old bean!\r\nDeciphering ancient texts like that...",
+    "ua": "Чудово, друже!\nОтак розшифрувати давні тексти…"
+  },
+  "goal_s2_t6_3_01_k": {
+    "en": "If I didn't know better, I'd say\r\nyou were a real archaeologist!",
+    "ua": "Якби я не знав, сказав би,\nщо ви справжній археолог!"
+  },
+  "goal_s3_t1_0_00_k": {
+    "en": "This mask's gaze is almost as\r\n[System:Color name=\"mgExp_red\" ]piercing[/System:Color] as those statues...",
+    "ua": "Погляд цієї маски майже такий\nсамий [System:Color name=\"mgExp_red\" ]пронизливий[/System:Color], як у статуй…"
+  },
+  "goal_s3_t1_0_02_k": {
+    "en": "Does it represent an\r\nancient god as well?",
+    "ua": "Може, вона теж зображує\nдавнього бога?"
+  },
+  "goal_s3_t1_1_00_k": {
+    "en": "The face does\r\nlook rather similar...",
+    "ua": "Обличчя справді\nсхоже…"
+  },
+  "goal_s3_t1_2_00_m": {
+    "en": "A sacred mask, its fine crafting\r\nreminiscent of the crystal skull...",
+    "ua": "Священна маска, тонка робота якої\nнагадує кришталевий череп…"
+  },
+  "goal_s3_t1_2_01_m": {
+    "en": "Perhaps it will be the key to unravelling\r\nthe mystery of the ruined city.",
+    "ua": "Може, вона стане ключем\nдо таємниці зруйнованого міста."
+  },
+  "goal_s3_t1_2_02_m": {
+    "en": "It seems clear that this mountain hides\r\n[System:Color name=\"mgExp_aqua\" ]something[/System:Color] that survived the flood...",
+    "ua": "Схоже, ця гора приховує\n[System:Color name=\"mgExp_aqua\" ]щось[/System:Color], що пережило повінь…"
+  },
+  "goal_s3_t1_3_00_k": {
+    "en": "What did the ancient gods want\r\nwith such a chilly place, I wonder?",
+    "ua": "Цікаво, що давнім богам\nзнадобилося в такій холоднечі?"
+  },
+  "goal_s3_t1_4_00_k": {
+    "en": "Atchoo!",
+    "ua": "Апчхи!"
+  },
+  "goal_s3_t2_0_00_k": {
+    "en": "What a bizarrely-shaped head!",
+    "ua": "Яка химерна голова!"
+  },
+  "goal_s3_t2_0_01_k": {
+    "en": "It makes me want to put\r\nsomething on top of it!",
+    "ua": "Так і кортить щось\nна неї поставити!"
+  },
+  "goal_s3_t2_0_02_k": {
+    "en": "Hmmm? What's this, now...?",
+    "ua": "Гм-м? А це що…?"
+  },
+  "goal_s3_t2_0_03_k": {
+    "en": "I've uncovered some kind of\r\nstrange indentation...",
+    "ua": "Я знайшов якусь\nдивну заглибину…"
+  },
+  "goal_s3_t2_0_04_m": {
+    "en": "There are [System:Color name=\"mgExp_aqua\" ]intricate indentations[/System:Color] on\r\nboth the top and bottom of the mask.",
+    "ua": "І вгорі, і внизу маски\nє [System:Color name=\"mgExp_aqua\" ]складні заглибини[/System:Color]."
+  },
+  "goal_s3_t2_0_05_m": {
+    "en": "Are they some kind of ancient [System:Color name=\"mgExp_aqua\" ]seal[/System:Color]?",
+    "ua": "Може, це якась давня [System:Color name=\"mgExp_aqua\" ]печатка[/System:Color]?"
+  },
+  "goal_s3_t3_0_00_k": {
+    "en": "Stay alert, old bean! I do believe\r\nthere's something lurking back there!",
+    "ua": "Пильнуйте, друже! Здається,\nтам щось причаїлося!"
+  },
+  "goal_s3_t3_1_00_m": {
+    "en": "An ancient [System:Color name=\"mgExp_aqua\" ]totem pole[/System:Color], formed\r\nfrom familiar-looking masks.",
+    "ua": "Давній [System:Color name=\"mgExp_aqua\" ]тотемний стовп[/System:Color]\nіз до болю знайомих масок."
+  },
+  "goal_s3_t3_1_01_m": {
+    "en": "And beside it, a [System:Color name=\"mgExp_aqua\" ]pedestal[/System:Color] just the\r\nright size for another totem pole...",
+    "ua": "А поруч — [System:Color name=\"mgExp_aqua\" ]постамент[/System:Color] саме\nпід ще один тотем…"
+  },
+  "goal_s3_t3_1_02_k": {
+    "en": "Are you thinking what I'm thinking?\r\nLet's stack the masks we've collected!",
+    "ua": "Думаєте те саме, що й я?\nСкладімо зібрані маски!"
+  },
+  "goal_s3_t3_2_00_k": {
+    "en": "It seems we're a little short...\r\nThis totem's only half as tall!",
+    "ua": "Схоже, трохи бракує…\nТотем лише наполовину!"
+  },
+  "goal_s3_t3_2_01_k": {
+    "en": "There must be three more masks\r\nhidden out there somewhere...",
+    "ua": "Десь мають бути ще\nтри маски…"
+  },
+  "goal_s3_t4_0_00_k": {
+    "en": "Great Scott!\r\nThis... This mask...",
+    "ua": "Святі небеса!\nЦя… ця маска…"
+  },
+  "goal_s3_t4_0_01_k": {
+    "en": "It has the most impeccable style!\r\nMy heart is all aflutter!",
+    "ua": "Який бездоганний стиль!\nМоє серце тріпоче!"
+  },
+  "goal_s3_t4_1_00_k": {
+    "en": "Well, only two left!",
+    "ua": "Ну, лишилося дві!"
+  },
+  "goal_s3_t5_0_00_k": {
+    "en": "Look at the gold plating on this\r\nbeauty! It's so...it's so...SHINY!",
+    "ua": "Гляньте на позолоту цієї красуні!\nВона така… така… БЛИСКУЧА!"
+  },
+  "goal_s3_t5_1_00_k": {
+    "en": "I mean, erm...\r\nOne more to go, eh?",
+    "ua": "Тобто, е-е…\nЛишилася одна, еге ж?"
+  },
+  "goal_s3_t6_0_00_k": {
+    "en": "This may be the most intimidating\r\nface we have uncovered yet...",
+    "ua": "Це, мабуть, найгрізніше\nобличчя з усіх знайдених…"
+  },
+  "goal_s3_t6_0_01_k": {
+    "en": "But at any rate, its [System:Color name=\"mgExp_red\" ]secrets[/System:Color]\r\nwill soon be ours!",
+    "ua": "Хай там як, його [System:Color name=\"mgExp_red\" ]таємниці[/System:Color]\nскоро будуть наші!"
+  },
+  "goal_s3_t6_1_00_k": {
+    "en": "Let us hurry to the mountain\r\nwhere the totem pole awaits!",
+    "ua": "Мерщій до гори,\nде чекає тотемний стовп!"
+  },
+  "goal_c1_pre_0_00_k": {
+    "en": "Come now, quickly!\r\nStack the masks together!",
+    "ua": "Ну ж бо, швидше!\nСкладіть маски!"
+  },
+  "goal_c1_pre_1_00_k": {
+    "en": "Zounds!",
+    "ua": "Хай йому грець!"
+  },
+  "goal_c1_pre_2_00_k": {
+    "en": "This doesn't look good, old chum!\r\nLet's get outside, and quick!",
+    "ua": "Не подобається мені це, друзяко!\nМерщій назовні!"
+  },
+  "goal_c1_demo_0_00_k": {
+    "en": "Look! Over there!\r\nWhat in the world is that?!",
+    "ua": "Дивіться! Он там!\nЩо це таке?!"
+  },
+  "goal_c1_demo_1_00_k": {
+    "en": "Did you just see something\r\nflying through the air?!",
+    "ua": "Ви бачили, як щось\nпролетіло в повітрі?!"
+  },
+  "goal_c1_demo_2_00_k": {
+    "en": "Could it be the [System:Color name=\"mgExp_red\" ]vessel of salvation[/System:Color]\r\nmentioned in the ancient texts?",
+    "ua": "Невже це [System:Color name=\"mgExp_red\" ]корабель порятунку[/System:Color]\nіз давніх текстів?"
+  },
+  "goal_c1_demo_2_02_k": {
+    "en": "The masks have summoned\r\nthe vessel once again...",
+    "ua": "Маски знову\nвикликали корабель…"
+  },
+  "goal_c1_demo_2_03_k": {
+    "en": "Oh, my giddy aunt!\r\nThis is incredible!",
+    "ua": "Ох ти ж матінко!\nЦе неймовірно!"
+  },
+  "goal_c1_demo_2_04_k": {
+    "en": "So the trail of the crystal\r\nshards has brought us here.",
+    "ua": "Тож слід кришталевих уламків\nпривів нас сюди."
+  },
+  "goal_c1_demo_2_05_k": {
+    "en": "Further than any archaeologist\r\nhas come before!",
+    "ua": "Далі, ніж будь-якого\nархеолога досі!"
+  },
+  "goal_c1_demo_3_00_k": {
+    "en": "Ahem.",
+    "ua": "Кхм."
+  },
+  "goal_c1_demo_4_00_k": {
+    "en": "Let's head home!",
+    "ua": "Ходімо додому!"
+  },
+  "goal_s1_m1_0_00_k": {
+    "en": "Something just glinted!\r\nWhat could this be...?",
+    "ua": "Щось блиснуло!\nЩо б це могло бути…?"
+  },
+  "goal_s1_m1_0_01_m": {
+    "en": "Though evidently artificial, this [System:Color name=\"mgExp_aqua\" ]strange\r\nmonolith[/System:Color] seems to transcend the ages...",
+    "ua": "Хоч цей [System:Color name=\"mgExp_aqua\" ]дивний моноліт[/System:Color] явно\nрукотворний, він ніби поза часом…"
+  },
+  "goal_s1_m1_0_02_k": {
+    "en": "It's still shining...",
+    "ua": "Досі сяє…"
+  },
+  "goal_s1_m1_1_00_k": {
+    "en": "In all our jungle expeditions, we\r\nhave never seen anything like this...",
+    "ua": "За всі експедиції в джунглі\nми не бачили нічого подібного…"
+  },
+  "goal_s1_m1_1_01_m": {
+    "en": "Who created this mysterious monolith?\r\nFor what purpose was it placed here?",
+    "ua": "Хто створив цей таємничий моноліт?\nНавіщо його тут поставили?"
+  },
+  "goal_s1_m1_1_02_m": {
+    "en": "Each uncovered secret seems to\r\nonly raise more questions...",
+    "ua": "Кожна розкрита таємниця\nпороджує ще більше питань…"
+  },
+  "goal_s1_m1_1_03_k": {
+    "en": "You know, I definitely get the\r\nfeeling there are more of these.",
+    "ua": "Знаєте, я певен,\nщо таких більше."
+  },
+  "goal_s1_m1_2_00_k": {
+    "en": "Let us sally forth and discover\r\nwhere they may lie!",
+    "ua": "Вирушаймо й з'ясуймо,\nде вони!"
+  },
+  "goal_s1_m2_0_00_k": {
+    "en": "It's another one!",
+    "ua": "Ще один!"
+  },
+  "goal_s1_m2_0_01_m": {
+    "en": "This monolith is identical to the last.\r\nCould they be [System:Color name=\"mgExp_aqua\" ]one and the same[/System:Color]?",
+    "ua": "Цей моноліт такий самий.\nЧи не [System:Color name=\"mgExp_aqua\" ]той самий[/System:Color] це?"
+  },
+  "goal_s1_m2_0_02_m": {
+    "en": "Its smooth black surface seems as deep\r\nand unknowable as the ocean depths...",
+    "ua": "Його гладка чорна поверхня глибока\nй незбагненна, наче глибини океану…"
+  },
+  "goal_s1_m2_0_03_k": {
+    "en": "Did it just start shining when\r\nI moved close to it?",
+    "ua": "Він засяяв, щойно\nя наблизився?"
+  },
+  "goal_s1_m2_1_00_k": {
+    "en": "I can't imagine why it would\r\nreact to me, of all things...",
+    "ua": "Не уявляю, чому він\nреагує саме на мене…"
+  },
+  "goal_s1_m2_1_01_k": {
+    "en": "But there doesn't seem to be\r\nany kind of switch to activate it...",
+    "ua": "Але жодного перемикача,\nщоб увімкнути, не видно…"
+  },
+  "goal_s1_m2_1_02_m": {
+    "en": "With two of these [System:Color name=\"mgExp_aqua\" ]strange monoliths[/System:Color]\r\ndiscovered, a third cannot be far off...",
+    "ua": "Знайдено два [System:Color name=\"mgExp_aqua\" ]дивні моноліти[/System:Color] —\nтретій має бути десь неподалік…"
+  },
+  "goal_s1_m3_0_00_k": {
+    "en": "It's another monolith!",
+    "ua": "Ще один моноліт!"
+  },
+  "goal_s1_m3_0_01_k": {
+    "en": "Hmm? This one has [System:Color name=\"mgExp_red\" ]some kind\r\nof picture[/System:Color] on the reverse side!",
+    "ua": "Гм? На звороті цього\n[System:Color name=\"mgExp_red\" ]якийсь малюнок[/System:Color]!"
+  },
+  "goal_s1_m3_1_00_k": {
+    "en": "That bird in the middle... Perhaps\r\nit is an ancient relative of yours truly!",
+    "ua": "Птах посередині… Може,\nце мій давній родич!"
+  },
+  "goal_s1_m3_1_01_k": {
+    "en": "I feel proud to be depicted in\r\nsuch a central position... Hoho!",
+    "ua": "Я гордий, що мене зобразили\nтак по центру… Хо-хо!"
+  },
+  "goal_s1_m3_1_02_m": {
+    "en": "The illustration depicts a [System:Color name=\"mgExp_aqua\" ]bird-like\r\nfigure resting upon a monolith[/System:Color].",
+    "ua": "На малюнку — [System:Color name=\"mgExp_aqua\" ]птахоподібна постать\nна моноліті[/System:Color]."
+  },
+  "goal_s1_m3_1_03_m": {
+    "en": "It's almost as if the bird is\r\noperating it somehow...",
+    "ua": "Наче птах ним\nякось керує…"
+  },
+  "goal_s1_m3_1_04_m": {
+    "en": "It seems further research will be\r\nnecessary to solve this mystery.",
+    "ua": "Щоб розгадати цю таємницю,\nпотрібні подальші дослідження."
+  },
+  "goal_s2_m1_0_00_k": {
+    "en": "Another monolith! I knew it!",
+    "ua": "Ще один моноліт! Я так і знав!"
+  },
+  "goal_s2_m1_0_02_k": {
+    "en": "This one seems to have something\r\ndrawn on the back, as well...",
+    "ua": "На звороті цього теж,\nсхоже, щось намальовано…"
+  },
+  "goal_s2_m1_1_00_k": {
+    "en": "It appears to depict...\r\na [System:Color name=\"mgExp_red\" ]flooded jungle[/System:Color]?",
+    "ua": "Здається, тут…\n[System:Color name=\"mgExp_red\" ]затоплені джунглі[/System:Color]?"
+  },
+  "goal_s2_m1_1_01_m": {
+    "en": "The picture seems to show the pyramid\r\nfrom the jungle, [System:Color name=\"mgExp_aqua\" ]submerged in water[/System:Color].",
+    "ua": "На малюнку, схоже, піраміда\nз джунглів, [System:Color name=\"mgExp_aqua\" ]залита водою[/System:Color]."
+  },
+  "goal_s2_m1_1_02_m": {
+    "en": "But what could this [System:Color name=\"mgExp_aqua\" ]shape[/System:Color] in\r\nthe sky above represent?",
+    "ua": "Але що означає ця [System:Color name=\"mgExp_aqua\" ]постать[/System:Color]\nв небі над нею?"
+  },
+  "goal_s2_m1_1_03_k": {
+    "en": "I feel as though I have seen this\r\nimage somewhere before...",
+    "ua": "Мені здається, я вже десь\nбачив це зображення…"
+  },
+  "goal_s2_m2_0_00_k": {
+    "en": "Just how many of these monoliths\r\nare there, anyway?",
+    "ua": "Скільки ж тут\nцих монолітів?"
+  },
+  "goal_s2_m2_1_00_k": {
+    "en": "In any case, there's another\r\nillustration on the back...",
+    "ua": "Хай там як, на звороті\nще один малюнок…"
+  },
+  "goal_s2_m2_2_00_k": {
+    "en": "This one seems to show...\r\n[System:Color name=\"mgExp_red\" ]ancient ruins submerged in water[/System:Color]?",
+    "ua": "Тут, схоже…\n[System:Color name=\"mgExp_red\" ]давні руїни під водою[/System:Color]?"
+  },
+  "goal_s2_m2_2_01_m": {
+    "en": "Could this be the [System:Color name=\"mgExp_aqua\" ]flood[/System:Color] that\r\nconsumed the ruined city...?",
+    "ua": "Невже це та [System:Color name=\"mgExp_aqua\" ]повінь[/System:Color],\nщо поглинула зруйноване місто…?"
+  },
+  "goal_s2_m2_2_02_k": {
+    "en": "I don't think this is one of\r\nmy ancestors after all...",
+    "ua": "Здається, це все ж\nне мій предок…"
+  },
+  "goal_s2_m2_3_00_k": {
+    "en": "(Could it be... I was the one\r\nwho caused the flood?)",
+    "ua": "(Невже… повінь\nспричинив я?)"
+  },
+  "goal_s2_m2_3_01_k": {
+    "en": "(No... It couldn't be...)",
+    "ua": "(Ні… Не може бути…)"
+  },
+  "goal_s2_m3_0_00_k": {
+    "en": "Quickly, take a look at\r\nthe reverse of the monolith!",
+    "ua": "Швидше, гляньте\nна зворот моноліту!"
+  },
+  "goal_s2_m3_0_01_k": {
+    "en": "As I suspected...\r\nAnother illustration!",
+    "ua": "Як я й думав…\nЩе один малюнок!"
+  },
+  "goal_s2_m3_1_00_k": {
+    "en": "Ahhh...",
+    "ua": "А-а-ах…"
+  },
+  "goal_s2_m3_1_01_m": {
+    "en": "A great shape floating above a snowy\r\npeak...and again, a [System:Color name=\"mgExp_aqua\" ]bird-like figure[/System:Color].",
+    "ua": "Постать над засніженою вершиною…\nі знову [System:Color name=\"mgExp_aqua\" ]птахоподібна фігура[/System:Color]."
+  },
+  "goal_s2_m3_2_01_k": {
+    "en": "(It's all coming back...\r\nI remember now...)",
+    "ua": "(Усе повертається…\nТепер я пам'ятаю…)"
+  },
+  "goal_s2_m3_2_02_k": {
+    "en": "(I was...)",
+    "ua": "(Я був…)"
+  },
+  "goal_s2_m3_3_00_m": {
+    "en": "The final key to the monolith's secret\r\nmust lie in the mountain depicted here.",
+    "ua": "Останній ключ до таємниці монолітів\nмає бути на цій горі."
+  },
+  "goal_s3_m1_0_00_k": {
+    "en": "That makes seven...",
+    "ua": "Уже сім…"
+  },
+  "goal_s3_m1_0_01_k": {
+    "en": "Just a little further... I feel certain\r\nwe have [System:Color name=\"mgExp_red\" ]almost found them all[/System:Color]...",
+    "ua": "Ще трішки… Певен, ми\n[System:Color name=\"mgExp_red\" ]майже знайшли всі[/System:Color]…"
+  },
+  "goal_s3_m1_1_00_k": {
+    "en": "You must find the next monolith...\r\nPlease...",
+    "ua": "Знайдіть наступний моноліт…\nБудь ласка…"
+  },
+  "goal_s3_m1_1_01_m": {
+    "en": "Sir Henry is behaving very strangely...",
+    "ua": "Сер Генрі поводиться дуже дивно…"
+  },
+  "goal_s3_m2_0_00_k": {
+    "en": "That makes eight...",
+    "ua": "Уже вісім…"
+  },
+  "goal_s3_m2_1_00_k": {
+    "en": "The memories are becoming\r\nclearer now...",
+    "ua": "Спогади стають\nчіткішими…"
+  },
+  "goal_s3_m2_1_01_k": {
+    "en": "It was not I who caused\r\nthe great flood...",
+    "ua": "Це не я спричинив\nвелику повінь…"
+  },
+  "goal_s3_m2_1_02_k": {
+    "en": "Nor was it the gods...\r\nThey tried to hold the flood back...",
+    "ua": "І не боги…\nВони намагалися стримати воду…"
+  },
+  "goal_s3_m2_1_03_k": {
+    "en": "But it was not enough...\r\nI am so sorry, everyone...",
+    "ua": "Але цього було замало…\nМені так шкода, друзі…"
+  },
+  "goal_s3_m3_0_00_k": {
+    "en": "At last, the [System:Color name=\"mgExp_red\" ]final monolith[/System:Color].",
+    "ua": "Нарешті — [System:Color name=\"mgExp_red\" ]останній моноліт[/System:Color]."
+  },
+  "goal_s3_m3_1_00_k": {
+    "en": "With this, I do believe...",
+    "ua": "З цим, гадаю…"
+  },
+  "goal_s3_m3_1_01_k": {
+    "en": "Our journey is finally over...",
+    "ua": "Наша подорож нарешті скінчилася…"
+  },
+  "goal_c2_pre_0_00_k": {
+    "en": "Come now, [NAME].\r\nLet us go outside.",
+    "ua": "Ходімо, [NAME].\nВийдімо назовні."
+  },
+  "goal_c2_demo_0_00_k": {
+    "en": "Ah, how wonderful!\r\nYou are all here at last!",
+    "ua": "Ах, як чудово!\nНарешті ви всі тут!"
+  },
+  "goal_c2_demo_1_00_k": {
+    "en": "Now the vessel can\r\nfinally be restored!",
+    "ua": "Тепер корабель нарешті\nможна відновити!"
+  },
+  "goal_c2_demo_2_00_k": {
+    "en": "Thank you for bringing me\r\nall this way, [NAME].",
+    "ua": "Дякую, що довели мене\nаж сюди, [NAME]."
+  },
+  "goal_c2_demo_2_01_k": {
+    "en": "We brought civilisation to\r\nthe people of this planet.",
+    "ua": "Ми принесли цивілізацію\nлюдям цієї планети."
+  },
+  "goal_c2_demo_2_02_k": {
+    "en": "That vessel carried us here\r\nmany aeons ago.",
+    "ua": "Той корабель привіз нас сюди\nцілі епохи тому."
+  },
+  "goal_c2_demo_2_03_k": {
+    "en": "But a technical failure caused\r\nus to crash into the mountainside.",
+    "ua": "Але через технічну несправність\nми врізалися в схил гори."
+  },
+  "goal_c2_demo_2_04_k": {
+    "en": "Regrettably, the effects of our crash\r\nwere felt all over the globe.",
+    "ua": "На жаль, наслідки аварії\nвідчула вся планета."
+  },
+  "goal_c2_demo_3_00_k": {
+    "en": "We decided to attempt to take off...",
+    "ua": "Ми вирішили спробувати злетіти…"
+  },
+  "goal_c2_demo_3_01_k": {
+    "en": "...using the energy of the\r\nplanet as a power source.",
+    "ua": "…використавши енергію\nпланети як джерело живлення."
+  },
+  "goal_c2_demo_3_02_k": {
+    "en": "The [System:Color name=\"mgExp_red\" ]monoliths[/System:Color] you discovered were\r\ndesigned to gather that energy.",
+    "ua": "[System:Color name=\"mgExp_red\" ]Моноліти[/System:Color], які ви знайшли,\nмали збирати цю енергію."
+  },
+  "goal_c2_demo_3_03_k": {
+    "en": "And my task was to activate them\r\nonce the preparations were complete.",
+    "ua": "А моїм завданням було ввімкнути їх,\nколи все буде готово."
+  },
+  "goal_c2_demo_3_04_k": {
+    "en": "But when the time came, I had\r\na little trouble finding them...",
+    "ua": "Але коли настав час,\nя не зміг їх знайти…"
+  },
+  "goal_c2_demo_3_05_k": {
+    "en": "And then I went and lost my memory!",
+    "ua": "А потім ще й утратив пам'ять!"
+  },
+  "goal_c2_demo_3_06_k": {
+    "en": "But, thanks to you...",
+    "ua": "Але завдяки вам…"
+  },
+  "goal_c2_demo_3_07_k": {
+    "en": "I have finally fulfilled the duty that\r\nwas given to me all those years ago.",
+    "ua": "Я нарешті виконав обов'язок,\nданий мені колись давно."
+  },
+  "goal_c2_demo_4_01_k": {
+    "en": "Thank you for all you have done.",
+    "ua": "Дякую вам за все."
+  },
+  "goal_c2_demo_4_02_k": {
+    "en": "I fear our ways must soon part...",
+    "ua": "Боюся, наші шляхи\nскоро розійдуться…"
+  },
+  "goal_c2_demo_5_00_k": {
+    "en": "However...",
+    "ua": "Однак…"
+  },
+  "goal_c2_demo_5_01_k": {
+    "en": "Somehow, I feel certain that\r\nwe will meet again someday.",
+    "ua": "Чомусь я певен, що\nколись ми ще зустрінемося."
+  },
+  "goal_c2_demo_6_00_k": {
+    "en": "Best of luck in your\r\nfuture adventures!",
+    "ua": "Щасти вам\nв майбутніх пригодах!"
+  },
+  "intro_s01_t_0_00_k": {
+    "en": "This jungle is not\r\nfriendly to intruders.",
+    "ua": "Ці джунглі не люблять\nчужинців."
+  },
+  "intro_s01_t_0_01_k": {
+    "en": "The plant life grows so quickly\r\nthat by the time we next return...",
+    "ua": "Рослини ростуть так швидко,\nщо коли ми повернемося…"
+  },
+  "intro_s01_t_0_02_k": {
+    "en": "The paths through the undergrowth\r\nwill be completely different.",
+    "ua": "Стежки крізь хащі\nбудуть зовсім інші."
+  },
+  "intro_s01_t_0_03_k": {
+    "en": "But I know you will not give in!",
+    "ua": "Але я знаю, ви не здастеся!"
+  },
+  "intro_s02_t_0_00_k": {
+    "en": "These are the ancient ruins.",
+    "ua": "Це давні руїни."
+  },
+  "intro_s02_t_0_01_k": {
+    "en": "From the sky, the place looks\r\nlike an enormous labyrinth...",
+    "ua": "З неба це місце схоже\nна величезний лабіринт…"
+  },
+  "intro_s02_t_0_02_k": {
+    "en": "We will have to take great\r\ncare not to lose our way...",
+    "ua": "Треба дуже стерегтися,\nщоб не заблукати…"
+  },
+  "intro_s02_t_0_03_k": {
+    "en": "But I know you will track\r\ndown its secrets somehow!",
+    "ua": "Але я знаю, ви якось\nрозкриєте його таємниці!"
+  },
+  "intro_s03_t_0_00_k": {
+    "en": "This is the snowy mountain.",
+    "ua": "Це засніжена гора."
+  },
+  "intro_s03_t_0_01_k": {
+    "en": "It's so cold, I fear my beak\r\nmight be about to fall off...",
+    "ua": "Так холодно, що, боюся,\nмій дзьоб от-от відпаде…"
+  },
+  "intro_s03_t_0_02_k": {
+    "en": "It will not be easy to progress\r\nthrough such treacherous slopes...",
+    "ua": "Такими підступними схилами\nйти буде нелегко…"
+  },
+  "intro_s03_t_0_03_k": {
+    "en": "But to uncover the secret of\r\nthe flood, we have no choice!",
+    "ua": "Але щоб розкрити таємницю\nповені, вибору немає!"
+  },
+  "intro_s01_m_0_00_k": {
+    "en": "There have been sightings of a\r\n[System:Color name=\"mgExp_red\" ]strange monolith [/System:Color]in the jungle.",
+    "ua": "Кажуть, у джунглях бачили\n[System:Color name=\"mgExp_red\" ]дивний моноліт[/System:Color]."
+  },
+  "intro_s01_m_0_01_k": {
+    "en": "It seems it was sighted at the same\r\ntime we saw that ball of light.",
+    "ua": "Схоже, його помітили водночас\nз тією кулею світла."
+  },
+  "intro_s01_m_0_02_k": {
+    "en": "Perhaps finding this monolith will\r\nhelp us get to the bottom of this?",
+    "ua": "Може, цей моноліт допоможе\nдокопатися до суті?"
+  },
+  "intro_s01_m_0_03_k": {
+    "en": "We must investigate at once!",
+    "ua": "Треба негайно все з'ясувати!"
+  },
+  "intro_s02_m_0_00_k": {
+    "en": "The balls of light have been\r\nsighted in the ruins, too...",
+    "ua": "Кулі світла бачили\nй у руїнах…"
+  },
+  "intro_s02_m_0_01_k": {
+    "en": "Perhaps we will find more of\r\nthose mysterious [System:Color name=\"mgExp_red\" ]monoliths[/System:Color] there.",
+    "ua": "Може, там знайдуться ще\nтаємничі [System:Color name=\"mgExp_red\" ]моноліти[/System:Color]."
+  },
+  "intro_s02_m_0_02_k": {
+    "en": "There's nothing for it but to\r\nreturn and investigate!",
+    "ua": "Нічого не вдієш —\nтреба повертатися й шукати!"
+  },
+  "intro_s03_m_0_00_k": {
+    "en": "There must be [System:Color name=\"mgExp_red\" ]monoliths[/System:Color]\r\nhidden in the mountains too!",
+    "ua": "[System:Color name=\"mgExp_red\" ]Моноліти[/System:Color] мають бути\nй у горах!"
+  },
+  "intro_s03_m_0_01_k": {
+    "en": "Good luck, old chum.",
+    "ua": "Щасти, друзяко."
+  },
+  "intro_s03_m_0_02_k": {
+    "en": "The truth is within our reach...\r\nI can feel it!",
+    "ua": "Правда вже близько…\nЯ це відчуваю!"
+  }
+}

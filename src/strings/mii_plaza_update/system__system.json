@@ -1,0 +1,218 @@
+{
+  "title_meet_logo": {
+    "en": "StreetPass Mii Plaza",
+    "ua": "Площа StreetPass Mii"
+  },
+  "news_meet": {
+    "en": "You've got company!",
+    "ua": "У вас гості!"
+  },
+  "dlg_save_u": {
+    "en": "Saving...\r\nPlease don't turn off the power.",
+    "ua": "Збереження…\nНе вимикайте живлення."
+  },
+  "parental_warning_age": {
+    "en": "Access to this software is\r\nrestricted by Parental Controls.",
+    "ua": "Доступ до цієї програми\nобмежено Батьківським контролем."
+  },
+  "parental_warning_age_to_buy": {
+    "en": "Access to this software is\r\nrestricted by Parental Controls.",
+    "ua": "Доступ до цієї програми\nобмежено Батьківським контролем."
+  },
+  "parental_warning_number": {
+    "en": "Please enter your PIN to temporarily\r\nremove this restriction.",
+    "ua": "Введіть PIN, щоб тимчасово\nзняти це обмеження."
+  },
+  "dlg_wake_up_u": {
+    "en": "Preparing...\r\nPlease don't turn off the power.",
+    "ua": "Підготовка…\nНе вимикайте живлення."
+  },
+  "cap_patch_pre_cofirm": {
+    "en": "Please note that an internet\r\nconnection is required to\r\nperform updates.",
+    "ua": "Зверніть увагу: для оновлення\nпотрібне підключення\nдо інтернету."
+  },
+  "cap_patch_confirm": {
+    "en": "StreetPass Mii Plaza",
+    "ua": "Площа StreetPass Mii"
+  },
+  "dlg_patch_confirm_big": {
+    "en": "Update StreetPass Mii Plaza?",
+    "ua": "Оновити Площу StreetPass Mii?"
+  },
+  "dlg_patch_confirm": {
+    "en": "This will check for and download\r\nany available update data.",
+    "ua": "Буде виконано пошук і завантаження\nдоступних даних оновлення."
+  },
+  "dlg_patch_confirm_ok": {
+    "en": "Yes",
+    "ua": "Так"
+  },
+  "dlg_patch_confirm_ng": {
+    "en": "No",
+    "ua": "Ні"
+  },
+  "dlg_patch_time": {
+    "en": "Please be aware that\r\nthis may take some time.",
+    "ua": "Зверніть увагу:\nце може тривати довго."
+  },
+  "dlg_patch_no_update_pre": {
+    "en": "Hmmmm...",
+    "ua": "Хм-м-м…"
+  },
+  "dlg_patch_no_update": {
+    "en": "Seems like your plaza\r\nis up to date.",
+    "ua": "Схоже, ваша площа\nвже оновлена."
+  },
+  "dlg_patch_update": {
+    "en": "Update complete.\r\nThe software will now restart.",
+    "ua": "Оновлення завершено.\nПрограму буде перезапущено."
+  },
+  "dlg_patch_update_fail": {
+    "en": "Oops!\r\nPlease try again.",
+    "ua": "Ой!\nСпробуйте ще раз."
+  },
+  "dlg_patch_game_update": {
+    "en": "Update complete.",
+    "ua": "Оновлення завершено."
+  },
+  "dlg_spotpass_error_20_u": {
+    "en": "Please check that the SD Card\r\nis not full or write-protected.",
+    "ua": "Перевірте, чи карта SD не заповнена\nі не захищена від запису."
+  },
+  "dlg_spotpass_error_21_u": {
+    "en": "The SD Card is running\r\nout of free space.",
+    "ua": "На карті SD закінчується\nвільне місце."
+  },
+  "dlg_spotpass_error_22_u": {
+    "en": "You may wish to manage\r\nthe data on the SD Card\r\nin the System Settings.",
+    "ua": "Можливо, варто впорядкувати\nдані на карті SD\nу Налаштуваннях системи."
+  },
+  "dlg_spotpass_error_24_u": {
+    "en": "Could not access SD Card during\r\nthe last attempt to use SpotPass.",
+    "ua": "Минулого разу SpotPass не зміг\nвідкрити карту SD."
+  },
+  "dlg_spotpass_error_broken_u": {
+    "en": "SpotPass data on the SD Card was\r\ncorrupted, so it has been deleted.",
+    "ua": "Дані SpotPass на карті SD були\nпошкоджені, тому їх видалено."
+  },
+  "minigame_title_mgBtl": {
+    "en": "StreetPass Battle",
+    "ua": "Фортеця StreetPass"
+  },
+  "minigame_title_mgFlo": {
+    "en": "StreetPass Garden",
+    "ua": "Сад StreetPass"
+  },
+  "minigame_title_mgPzd": {
+    "en": "StreetPass Mansion",
+    "ua": "Таємничий маєток StreetPass"
+  },
+  "minigame_title_mgSht": {
+    "en": "StreetPass Squad",
+    "ua": "Галактика StreetPass"
+  },
+  "minigame_title_mgFsh": {
+    "en": "StreetPass Fishing",
+    "ua": "Риболовля StreetPass"
+  },
+  "minigame_title_mgZmb": {
+    "en": "StreetPass Zombies",
+    "ua": "Зомбі StreetPass"
+  },
+  "minigame_title_mgCar": {
+    "en": "StreetPass Slot Racer",
+    "ua": "Слот-перегони StreetPass"
+  },
+  "minigame_title_mgTrd": {
+    "en": "StreetPass Trader",
+    "ua": "Біржа StreetPass"
+  },
+  "minigame_title_mgChf": {
+    "en": "StreetPass Chef",
+    "ua": "Ресторан StreetPass"
+  },
+  "minigame_title_mgNja": {
+    "en": "StreetPass Ninja",
+    "ua": "Ніндзя StreetPass"
+  },
+  "minigame_title_mgExp": {
+    "en": "StreetPass Explorers",
+    "ua": "Експедиція StreetPass"
+  },
+  "saveerr_sysext_save_fail": {
+    "en": "Failed to save extra data\r\nfor StreetPass Mii Plaza.",
+    "ua": "Не вдалося зберегти додаткові\nдані Площі StreetPass Mii."
+  },
+  "saveerr_sysext_save_fail_nospace": {
+    "en": "Extra data for StreetPass\r\nMii Plaza could not be saved\r\nbecause there is not enough\r\nspace on the SD Card.",
+    "ua": "Не вдалося зберегти додаткові\nдані Площі StreetPass Mii:\nна карті SD недостатньо\nвільного місця."
+  },
+  "saveerr_minigame_no_sdcard": {
+    "en": "Could not access SD Card.",
+    "ua": "Карта SD недоступна."
+  },
+  "saveerr_minigame_save_fail": {
+    "en": "Save data could not be saved\r\nfor [GAME_TITLE].",
+    "ua": "Не вдалося зберегти дані\nгри [GAME_TITLE]."
+  },
+  "saveerr_minigame_save_fail_nospace": {
+    "en": "Save data could not be saved\r\nfor [GAME_TITLE]\r\nbecause there is not enough\r\nspace on the SD Card.",
+    "ua": "Не вдалося зберегти дані\nгри [GAME_TITLE]:\nна карті SD недостатньо\nвільного місця."
+  },
+  "saveerr_minigame_load_fail": {
+    "en": "Failed to load save data for\r\n[GAME_TITLE].",
+    "ua": "Не вдалося завантажити дані\nгри [GAME_TITLE]."
+  },
+  "saveerr_minigame_delete_fail": {
+    "en": "Failed to reset save data for\r\n[GAME_TITLE].",
+    "ua": "Не вдалося скинути дані\nгри [GAME_TITLE]."
+  },
+  "saveerr_minigame_recreate": {
+    "en": "The [GAME_TITLE]\r\nsave data was corrupted\r\nand has been reset.",
+    "ua": "Дані гри [GAME_TITLE]\nбули пошкоджені,\nтому їх скинуто."
+  },
+  "saveerr_minigame_cant_write_nospace": {
+    "en": "Could not write to the save data\r\nfor [GAME_TITLE]\r\nbecause there is not enough\r\nspace on the SD Card.\r\nReturning to the plaza.",
+    "ua": "Не вдалося записати дані\nгри [GAME_TITLE]:\nна карті SD недостатньо\nвільного місця.\nПовернення на площу."
+  },
+  "saveerr_minigame_cant_write": {
+    "en": "Could not write to the save data\r\nfor [GAME_TITLE].\r\nReturning to the plaza.",
+    "ua": "Не вдалося записати дані\nгри [GAME_TITLE].\nПовернення на площу."
+  },
+  "saveerr_minigame_create_fail_nospace": {
+    "en": "Could not create save data\r\nfor [GAME_TITLE]\r\nbecause there is not enough\r\nspace on the SD Card.\r\nReturning to the plaza.",
+    "ua": "Не вдалося створити дані\nгри [GAME_TITLE]:\nна карті SD недостатньо\nвільного місця.\nПовернення на площу."
+  },
+  "saveerr_minigame_create_fail": {
+    "en": "Could not create save data\r\nfor [GAME_TITLE].\r\nReturning to the plaza.",
+    "ua": "Не вдалося створити дані\nгри [GAME_TITLE].\nПовернення на площу."
+  },
+  "saveerr_minigame_cant_access": {
+    "en": "Could not access save data\r\nfor [GAME_TITLE].\r\nReturning to the plaza.",
+    "ua": "Не вдалося відкрити дані\nгри [GAME_TITLE].\nПовернення на площу."
+  },
+  "imgdb_err_no_sdcard": {
+    "en": "There is no SD Card inserted.",
+    "ua": "Карту SD не вставлено."
+  },
+  "imgdb_err_sdcard_write_protect": {
+    "en": "The SD Card is write-protected.",
+    "ua": "Карта SD: захист від запису."
+  },
+  "imgdb_err_no_space": {
+    "en": "Unable to save. There is not\r\nenough space on the SD Card.",
+    "ua": "Неможливо зберегти: на карті\nSD бракує місця."
+  },
+  "imgdb_err_over_image_num": {
+    "en": "Unable to save. The SD Card's\r\nphoto limit has been reached.",
+    "ua": "Зберегти неможливо: на карті\nSD досягнуто ліміту фото."
+  },
+  "imgdb_err_sdcard_not_available": {
+    "en": "Could not access SD Card.",
+    "ua": "Немає доступу до карти SD."
+  },
+  "imgdb_err_other": {
+    "en": "SD Card error.",
+    "ua": "Помилка карти SD."
+  }
+}

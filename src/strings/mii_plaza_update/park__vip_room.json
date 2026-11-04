@@ -1,0 +1,38 @@
+{
+  "dlg_no_one_00": {
+    "en": "The VIP room is\r\nempty right now.",
+    "ua": "У VIP-кімнаті\nзараз нікого немає."
+  },
+  "dlg_no_one_01": {
+    "en": "Let's go to the Plaza and invite your favourite Mii.",
+    "ua": "Ходімо на площу й запросимо улюбленого Mii."
+  },
+  "dlg_remove_00": {
+    "en": "Removed from the VIP room.",
+    "ua": "Видалено з VIP-кімнати."
+  },
+  "low_miis_num": {
+    "en": "VIPs: [0]/100",
+    "ua": "VIP: [0]/100"
+  },
+  "dlg_vip_op_00": {
+    "en": "Thank you for purchasing\r\nStreetPass Mii Plaza Premium!",
+    "ua": "Дякуємо за придбання\nПреміум-площі StreetPass Mii!"
+  },
+  "dlg_vip_op_01": {
+    "en": "Here you can...",
+    "ua": "Тут ви можете…"
+  },
+  "dlg_vip_op_02": {
+    "en": "...view all the Mii characters that you\r\nmade VIPs!",
+    "ua": "…переглянути всіх Mii, яких\nви зробили VIP-гостями!"
+  },
+  "dlg_vip_op_03": {
+    "en": "A Mii VIP will remain in your plaza even\r\nif you get lots of StreetPass encounters!",
+    "ua": "VIP-гість лишиться на площі навіть\nпісля багатьох зустрічей StreetPass!"
+  },
+  "dlg_vip_op_04": {
+    "en": "Make your favourite Mii characters into\r\nVIPs!",
+    "ua": "Зробіть улюблених Mii\nVIP-гостями!"
+  }
+}

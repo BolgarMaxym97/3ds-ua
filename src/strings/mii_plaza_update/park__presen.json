@@ -1,0 +1,2778 @@
+{
+  "presen_cmn_start_000": {
+    "en": "Hi there, [MII_NAME].",
+    "ua": "Привіт, [MII_NAME]."
+  },
+  "presen_cmn_start_first": {
+    "en": "Nice to meet you!",
+    "ua": "Дуже приємно!"
+  },
+  "presen_cmn_start_own": {
+    "en": "Nice to see you again!",
+    "ua": "Радий знову вас бачити!"
+  },
+  "presen_cmn_start_last1": {
+    "en": "Nice to see you again!",
+    "ua": "Радий знову вас бачити!"
+  },
+  "presen_cmn_start_010": {
+    "en": "Welcome to the Shop!",
+    "ua": "Вітаю в магазині!"
+  },
+  "presen_cmn_start_020": {
+    "en": "Here you can buy games\r\nusing funds from your\r\nNintendo eShop account.",
+    "ua": "Тут можна купувати ігри\nза кошти з рахунку\nNintendo eShop."
+  },
+  "presen_cmn_start_030": {
+    "en": "This one's called\r\n[GAME_TITLE].",
+    "ua": "Ця гра зветься\n[GAME_TITLE]."
+  },
+  "presen_cmn_start_031_sale": {
+    "en": "Oh, and check this out...",
+    "ua": "О, і ось погляньте…"
+  },
+  "presen_cmn_start_032_sale": {
+    "en": "There you have it.",
+    "ua": "Ось так."
+  },
+  "presen_cmn_start_033_sale": {
+    "en": "Here's some more info.",
+    "ua": "Ось іще трохи інформації."
+  },
+  "presen_cmn_start_034_sale": {
+    "en": "If you're interested, feel\r\nfree to take a look.",
+    "ua": "Якщо цікаво,\nпогляньте."
+  },
+  "presen_cmn_start_035_sale": {
+    "en": "So, about [GAME_TITLE]...",
+    "ua": "Отже, про [GAME_TITLE]…"
+  },
+  "presen_cmn_start_035_saleP": {
+    "en": "So, about [GAME_TITLE]...",
+    "ua": "Отже, про [GAME_TITLE]…"
+  },
+  "presen_cmn_start_040": {
+    "en": "It's a lot like StreetPass Quest\r\nin terms of how you advance\r\nthrough the game...",
+    "ua": "Проходиться гра майже\nяк «Порятунок Mii»…"
+  },
+  "presen_cmn_start_050": {
+    "en": "You can progress by meeting\r\nother people via StreetPass\r\nor by spending Play Coins.",
+    "ua": "Ви просуваєтеся, зустрічаючи\nлюдей через StreetPass\nабо витрачаючи ігрові монетки."
+  },
+  "presen_cmn_Q0": {
+    "en": "Would you like to see some\r\ninformation about the game?",
+    "ua": "Показати трохи\nінформації про гру?"
+  },
+  "presen_cmn_Q0_see": {
+    "en": "Yes please!",
+    "ua": "Так, звісно!"
+  },
+  "presen_cmn_Q0_buy": {
+    "en": "I want to buy it!",
+    "ua": "Хочу купити!"
+  },
+  "presen_cmn_Q0_leave": {
+    "en": "No thanks.",
+    "ua": "Ні, дякую."
+  },
+  "presen_cmn_see_000": {
+    "en": "Good thing I've got\r\nmy tablet with me.",
+    "ua": "Добре, що мій планшет\nіз собою."
+  },
+  "presen_cmn_see_010": {
+    "en": "I can show you some\r\nphotos I took.",
+    "ua": "Покажу вам кілька\nфото, які я зробив."
+  },
+  "presen_cmn_buynow_000": {
+    "en": "Wow! You're already sure\r\nyou want to buy it?",
+    "ua": "Ого! Ви вже точно\nхочете купити?"
+  },
+  "presen_cmn_buynow_010": {
+    "en": "Thank you very much!\r\nI really appreciate it!",
+    "ua": "Щиро дякую!\nДуже ціную!"
+  },
+  "presen_cmn_leave_000": {
+    "en": "Fair enough!",
+    "ua": "Гаразд!"
+  },
+  "presen_cmn_leave_010": {
+    "en": "No worries at all.",
+    "ua": "Нічого страшного."
+  },
+  "presen_cmn_leave_020": {
+    "en": "Feel free to come\r\nback any time!",
+    "ua": "Заходьте\nбудь-коли!"
+  },
+  "presen_cmn_Q1": {
+    "en": "So, want to know more?\r\nOr find out the price?\r\nI'm here to help!",
+    "ua": "То що, розповісти більше?\nЧи дізнатися ціну?\nЯ тут, щоб допомогти!"
+  },
+  "presen_cmn_Q1_more": {
+    "en": "Tell me more.",
+    "ua": "Розкажи більше."
+  },
+  "presen_cmn_Q1_buy": {
+    "en": "Price, please!",
+    "ua": "Яка ціна?"
+  },
+  "presen_cmn_Q1_leave": {
+    "en": "I'm fine, thanks.",
+    "ua": "Ні, дякую."
+  },
+  "presen_cmn_Q_final_pre": {
+    "en": "So, what's next?",
+    "ua": "То що далі?"
+  },
+  "presen_cmn_Q_final": {
+    "en": "Want to find out the price,\r\nor are you OK for now?",
+    "ua": "Дізнатися ціну,\nчи поки досить?"
+  },
+  "presen_cmn_Q_final_buy": {
+    "en": "Price, please!",
+    "ua": "Яка ціна?"
+  },
+  "presen_cmn_Q_final_leave": {
+    "en": "I'm fine, thanks.",
+    "ua": "Ні, дякую."
+  },
+  "presen_cmn_final_buy": {
+    "en": "You got it!",
+    "ua": "Зрозумів!"
+  },
+  "presen_sht_000": {
+    "en": "Here we go! Welcome\r\nto [GAME_TITLE].",
+    "ua": "Ну що ж! Ласкаво просимо\nв [GAME_TITLE]."
+  },
+  "presen_sht_010": {
+    "en": "In this game, you belong to an\r\nelite team of space police.",
+    "ua": "Ви — член елітного загону\nкосмічної поліції."
+  },
+  "presen_sht_020": {
+    "en": "Your mission is to save StreetPass\r\nGalaxy from the Gold Bone Gang.",
+    "ua": "Ваше завдання — врятувати Галактику\nStreetPass від банди Золотої Кістки."
+  },
+  "presen_sht_030": {
+    "en": "With the help of your StreetPass\r\nsquadmates, you take to the skies!",
+    "ua": "Разом із напарниками зі StreetPass\nви злітаєте в небо!"
+  },
+  "presen_sht_040": {
+    "en": "It's your job to preserve peace\r\nin the galaxy. How heroic is that?",
+    "ua": "Ваша справа — берегти мир\nу галактиці. Хіба не героїчно?"
+  },
+  "presen_sht_050": {
+    "en": "Right!",
+    "ua": "Отож!"
+  },
+  "presen_sht_060": {
+    "en": "By the way,\r\n[MII_NAME]...",
+    "ua": "До речі,\n[MII_NAME]…"
+  },
+  "presen_sht_Q2": {
+    "en": "Are you a fan of side-scrolling\r\nshooter games in general?",
+    "ua": "Ви взагалі любите шутери\nз бічною прокруткою?"
+  },
+  "presen_sht_Q2_yes": {
+    "en": "I love 'em!",
+    "ua": "Обожнюю!"
+  },
+  "presen_sht_Q2_no": {
+    "en": "Not really...",
+    "ua": "Не дуже…"
+  },
+  "presen_sht_yes2_000": {
+    "en": "That's great to hear!",
+    "ua": "Чудово!"
+  },
+  "presen_sht_no2_000": {
+    "en": "Fair enough! Everyone\r\nhas their own tastes.",
+    "ua": "Ну що ж! У кожного\nсвій смак."
+  },
+  "presen_sht_no2_010": {
+    "en": "I'll just tell you a few more\r\ndetails to give you more of\r\nan impression of the game.",
+    "ua": "Розповім ще кілька деталей,\nщоб ви краще уявили\nцю гру."
+  },
+  "presen_sht_no2_020": {
+    "en": "Now, if there's one thing this\r\ngame is not lacking in...",
+    "ua": "Якщо чого в цій грі\nне бракує, то це…"
+  },
+  "presen_sht_no2_030": {
+    "en": "It's constant action!\r\nBam-bam-bam-KABOOOM!",
+    "ua": "Безперервного екшену!\nБах-бах-бах-БАБАХ!"
+  },
+  "presen_sht_no2_040": {
+    "en": "The more you shoot, the more\r\nwild explosions you get to see.",
+    "ua": "Що більше стріляєте, то більше\nшалених вибухів бачите."
+  },
+  "presen_sht_no2_050": {
+    "en": "Simple, I know, but sometimes\r\nthat's very effective...and fun!",
+    "ua": "Просто, знаю, але іноді це\nдуже дієво… і весело!"
+  },
+  "presen_sht_070": {
+    "en": "There's one thing that I think\r\nreally sets this game apart...",
+    "ua": "Є одна річ, яка, як на мене,\nвиділяє цю гру…"
+  },
+  "presen_sht_080_telop": {
+    "en": "Every Mii encounter...\r\n\r\n",
+    "ua": "Кожна зустріч з Mii…\n\n"
+  },
+  "presen_sht_090_telop": {
+    "en": "Every Mii encounter...\r\nmakes you stronger.\r\n",
+    "ua": "Кожна зустріч з Mii…\nробить вас сильнішими.\n"
+  },
+  "presen_sht_080": {
+    "en": "The more people you bring into\r\nthe game via StreetPass,",
+    "ua": "Що більше людей ви приведете\nв гру через StreetPass,"
+  },
+  "presen_sht_090": {
+    "en": "the more powerful your\r\nship becomes!",
+    "ua": "то потужнішим стає\nваш корабель!"
+  },
+  "presen_sht_100": {
+    "en": "Your own Mii sits in the pilot\r\nseat of the main craft.",
+    "ua": "Ваш власний Mii сидить у кріслі\nпілота головного корабля."
+  },
+  "presen_sht_110": {
+    "en": "These pictures are from when\r\nI played the game, of course...",
+    "ua": "Ці знімки, звісно, з того часу,\nколи грав я…"
+  },
+  "presen_sht_120": {
+    "en": "When you play, it'll be\r\nyou sitting in there.",
+    "ua": "А коли гратимете ви,\nтам сидітимете ви."
+  },
+  "presen_sht_130": {
+    "en": "Collect two squadmates and you'll\r\nbe able to shoot in two directions.",
+    "ua": "Зберіть двох напарників — і зможете\nстріляти у двох напрямках."
+  },
+  "presen_sht_140": {
+    "en": "Collect 10 squadmates and you'll\r\nbe practically unstoppable!",
+    "ua": "Зберіть 10 напарників — і вас\nмайже не зупинити!"
+  },
+  "presen_sht_150": {
+    "en": "Having a big squad is\r\nhandy in other ways too.",
+    "ua": "Великий загін корисний\nі в іншому."
+  },
+  "presen_sht_160": {
+    "en": "The more squadmates\r\nyou have, the stronger\r\nyour defences are!",
+    "ua": "Що більше напарників,\nто міцніший\nваш захист!"
+  },
+  "presen_sht_170": {
+    "en": "If an enemy attack hits your craft,\r\none of your allies has to retreat.",
+    "ua": "Якщо ворожа атака влучить у корабель,\nодин із союзників мусить відступити."
+  },
+  "presen_sht_180": {
+    "en": "That means you have to be crafty\r\nwith your evasive manoeuvres.",
+    "ua": "Тож доведеться хитро\nухилятися від атак."
+  },
+  "presen_sht_190": {
+    "en": "As long as you've got squadmates,\r\nyou're still in the fight.",
+    "ua": "Поки у вас є напарники,\nви ще в грі."
+  },
+  "presen_sht_200": {
+    "en": "That means the bigger your squad,\r\nthe more hits you can take!",
+    "ua": "Тобто що більший загін,\nто більше ударів витримаєте!"
+  },
+  "presen_sht_210": {
+    "en": "And there you have it.",
+    "ua": "Ось так."
+  },
+  "presen_sht_Q3": {
+    "en": "So, want to know more?\r\nOr find out the price?\r\nI'm here to help!",
+    "ua": "То що, розповісти більше?\nЧи дізнатися ціну?\nЯ тут, щоб допомогти!"
+  },
+  "presen_sht_Q3_more": {
+    "en": "Tell me more.",
+    "ua": "Розкажи більше."
+  },
+  "presen_sht_Q3_buy": {
+    "en": "Price, please!",
+    "ua": "Яка ціна?"
+  },
+  "presen_sht_Q3_leave": {
+    "en": "I'm fine, thanks.",
+    "ua": "Ні, дякую."
+  },
+  "presen_sht_220": {
+    "en": "Right! Let's talk about\r\nfirepower, then.",
+    "ua": "Отож! Тепер поговорімо\nпро вогневу міць."
+  },
+  "presen_sht_230": {
+    "en": "There are 12 different weapons. Each\r\ncorresponds to a certain Mii colour.",
+    "ua": "Є 12 видів зброї. Кожен\nвідповідає певному кольору Mii."
+  },
+  "presen_sht_240": {
+    "en": "Oooh, like this one...\r\nCheck it out!",
+    "ua": "О-о, як-от ця…\nПогляньте!"
+  },
+  "presen_sht_250": {
+    "en": "There are over 10 different stages\r\nto fight your way through.",
+    "ua": "Є понад 10 різних етапів,\nякі треба пройти з боєм."
+  },
+  "presen_sht_260": {
+    "en": "Here's one of them...",
+    "ua": "Ось один із них…"
+  },
+  "presen_sht_270": {
+    "en": "Oh, and there are bosses waiting\r\nat the end of each stage. ",
+    "ua": "І в кінці кожного етапу\nна вас чекає бос."
+  },
+  "presen_sht_280": {
+    "en": "Here's another one!",
+    "ua": "Ось іще один!"
+  },
+  "presen_sht_290": {
+    "en": "There's also an extra\r\nmode that unlocks once\r\nyou clear the game.",
+    "ua": "Є й додатковий\nрежим, що відкривається\nпісля проходження."
+  },
+  "presen_sht_300": {
+    "en": "I hope I've given you a\r\ngood sense of what this\r\ngame's all about.",
+    "ua": "Сподіваюся, тепер ви\nдобре уявляєте,\nщо це за гра."
+  },
+  "presen_flo_000": {
+    "en": "OK, let me introduce you\r\nto [GAME_TITLE].",
+    "ua": "Гаразд, дозвольте\nпредставити [GAME_TITLE]."
+  },
+  "presen_flo_010": {
+    "en": "It starts with you moving into\r\na lovely house in Leafington.",
+    "ua": "Усе починається з переїзду\nв затишний будинок у Листограді."
+  },
+  "presen_flo_020": {
+    "en": "There, with Mr Mendel's help, you\r\ntry to become a Master Gardener.",
+    "ua": "Там із допомогою пана Менделя\nви прагнете стати майстром-садівником."
+  },
+  "presen_flo_030": {
+    "en": "That means growing lots of flowers with\r\npeople you meet via StreetPass.",
+    "ua": "Для цього треба виростити багато\nквітів разом із друзями зі StreetPass."
+  },
+  "presen_flo_040": {
+    "en": "You also get to decorate your garden. \r\nAren't those green fingers twitching?",
+    "ua": "А ще можна прикрашати сад.\nУже руки сверблять?"
+  },
+  "presen_flo_050": {
+    "en": "Right!",
+    "ua": "Отож!"
+  },
+  "presen_flo_060": {
+    "en": "Meeting people via StreetPass is very\r\nimportant in [GAME_TITLE].",
+    "ua": "У грі [GAME_TITLE] дуже важливо\nзустрічати людей через StreetPass."
+  },
+  "presen_flo_070_telop": {
+    "en": "Every Mii encounter...\r\n\r\n",
+    "ua": "Кожна зустріч з Mii…\n\n"
+  },
+  "presen_flo_080_telop": {
+    "en": "Every Mii encounter...\r\nhelps your plants grow.\r\n",
+    "ua": "Кожна зустріч з Mii…\nдопомагає рослинам рости.\n"
+  },
+  "presen_flo_070": {
+    "en": "That's because the more people\r\nyou meet and garden with,",
+    "ua": "Бо що більше людей ви зустрічаєте\nй садите з ними рослини,"
+  },
+  "presen_flo_080": {
+    "en": "the more your plants grow!",
+    "ua": "то краще ростуть ваші рослини!"
+  },
+  "presen_flo_090": {
+    "en": "Let me show you how\r\nthat works...",
+    "ua": "Зараз покажу,\nяк це працює…"
+  },
+  "presen_flo_100": {
+    "en": "People who visit your courtyard\r\nwater your current plant.",
+    "ua": "Гості на подвір'ї\nполивають вашу рослину."
+  },
+  "presen_flo_110": {
+    "en": "The more water a plant gets,\r\nthe faster it grows.",
+    "ua": "Що більше води отримує\nрослина, то швидше росте."
+  },
+  "presen_flo_120": {
+    "en": "And when it grows...",
+    "ua": "А коли вона виросте…"
+  },
+  "presen_flo_130": {
+    "en": "beautiful flowers bloom!",
+    "ua": "розквітають чудові квіти!"
+  },
+  "presen_flo_Q2": {
+    "en": "So, what do you think?\r\nGetting an urge to try\r\nsome gardening?",
+    "ua": "То як вам?\nЗахотілося\nпосадити щось?"
+  },
+  "presen_flo_Q2_yes": {
+    "en": "You bet!",
+    "ua": "Ще б пак!"
+  },
+  "presen_flo_Q2_no": {
+    "en": "Not really.",
+    "ua": "Не дуже."
+  },
+  "presen_flo_yes2": {
+    "en": "That's great!",
+    "ua": "Чудово!"
+  },
+  "presen_flo_Q3": {
+    "en": "Shall I pull up the price,\r\nor do you want to know\r\nsome more?",
+    "ua": "Показати ціну,\nчи хочете дізнатися\nще щось?"
+  },
+  "presen_flo_Q3_buy": {
+    "en": "Price, please!",
+    "ua": "Яка ціна?"
+  },
+  "presen_flo_Q3_more": {
+    "en": "Tell me more.",
+    "ua": "Розкажи більше."
+  },
+  "presen_flo_no2_000": {
+    "en": "I understand. Let\r\nme tell you just\r\na tiny bit more.",
+    "ua": "Розумію. Тоді\nрозповім ще\nзовсім трішки."
+  },
+  "presen_flo_140": {
+    "en": "Right!",
+    "ua": "Отож!"
+  },
+  "presen_flo_150": {
+    "en": "Once a flower blooms, you\r\ncan harvest seeds from it.",
+    "ua": "Коли квітка розквітне,\nз неї можна зібрати насіння."
+  },
+  "presen_flo_160": {
+    "en": "Here's the really cool thing\r\nabout seeds...",
+    "ua": "А тепер найцікавіше\nпро насіння…"
+  },
+  "presen_flo_170": {
+    "en": "If a visitor has a blooming\r\nplant of his or her own,",
+    "ua": "Якщо в гостя теж\nцвіте рослина,"
+  },
+  "presen_flo_180": {
+    "en": "those flowers can cross-\r\npollinate with yours!",
+    "ua": "її квіти можуть\nзапилити ваші!"
+  },
+  "presen_flo_190": {
+    "en": "You can find all sorts of breeds\r\nby crossing yours with others. ",
+    "ua": "Схрещуючи свої рослини з чужими,\nможна вивести різні сорти."
+  },
+  "presen_flo_200": {
+    "en": "You never know what your\r\nvisitors will bring over.",
+    "ua": "Ніколи не знаєш,\nщо принесуть гості."
+  },
+  "presen_flo_210": {
+    "en": "They could help you grow\r\nsomething like this.",
+    "ua": "Вони можуть допомогти\nвиростити щось таке."
+  },
+  "presen_flo_220": {
+    "en": "Or like this.",
+    "ua": "Або таке."
+  },
+  "presen_flo_230": {
+    "en": "You might even grow\r\nsomething like this!",
+    "ua": "А може, навіть\nщось таке!"
+  },
+  "presen_flo_Q4": {
+    "en": "Are you interested?",
+    "ua": "Цікаво?"
+  },
+  "presen_flo_Q4_yes": {
+    "en": "Yes, I am!",
+    "ua": "Так, цікаво!"
+  },
+  "presen_flo_Q4_no": {
+    "en": "Not really.",
+    "ua": "Не дуже."
+  },
+  "presen_flo_yes4": {
+    "en": "That's great!",
+    "ua": "Чудово!"
+  },
+  "presen_flo_Q5": {
+    "en": "Shall I pull up the price,\r\nor do you want to know\r\nsome more?",
+    "ua": "Показати ціну,\nчи хочете дізнатися\nще щось?"
+  },
+  "presen_flo_Q5_buy": {
+    "en": "Price, please!",
+    "ua": "Яка ціна?"
+  },
+  "presen_flo_Q5_more": {
+    "en": "Tell me more.",
+    "ua": "Розкажи більше."
+  },
+  "presen_flo_no4": {
+    "en": "All right then!",
+    "ua": "Що ж, гаразд!"
+  },
+  "presen_flo_Q6": {
+    "en": "Did I mention that there's\r\nlots more to do besides\r\ngrowing plants?",
+    "ua": "Я казав, що окрім\nвирощування рослин\nтут ще багато справ?"
+  },
+  "presen_flo_Q6_more": {
+    "en": "Tell me more!",
+    "ua": "Розкажи більше!"
+  },
+  "presen_flo_Q6_leave": {
+    "en": "Meh...",
+    "ua": "Е-е…"
+  },
+  "presen_flo_240": {
+    "en": "Let me introduce you to\r\na few other activities...",
+    "ua": "Розповім про ще\nкілька занять…"
+  },
+  "presen_flo_250": {
+    "en": "There's filling your journal to\r\nbecome a Master Gardener.",
+    "ua": "Можна заповнювати журнал, щоб\nстати майстром-садівником."
+  },
+  "presen_flo_260": {
+    "en": "Oh, and here's one of\r\nmy favourites...",
+    "ua": "О, а ось одне\nз моїх улюблених…"
+  },
+  "presen_flo_270": {
+    "en": "Decorating your garden plots\r\nwith plants and accessories!",
+    "ua": "Прикрашати свої ділянки\nрослинами й аксесуарами!"
+  },
+  "presen_flo_280": {
+    "en": "Visiting Leafington's shopping\r\ncentre is fun too.",
+    "ua": "Ходити в торговий центр\nЛистограда теж весело."
+  },
+  "presen_flo_290": {
+    "en": "Ms Blossom's there, and she's\r\nalways looking for help with jobs.",
+    "ua": "Там пані Квітка, якій\nзавжди потрібна допомога."
+  },
+  "presen_flo_300": {
+    "en": "It's also a great place\r\nto shop for new decorations,",
+    "ua": "А ще там зручно купувати\nнові прикраси"
+  },
+  "presen_flo_310": {
+    "en": "and invest in new areas\r\nfor your garden!",
+    "ua": "й нові ділянки\nдля саду!"
+  },
+  "presen_flo_320": {
+    "en": "See, there's lots to do\r\nbesides growing flowers.",
+    "ua": "Бачите, окрім квітів\nтут ще багато справ."
+  },
+  "presen_pzd_000": {
+    "en": "[GAME_TITLE] sends you on a\r\nspooooooky paranormal investigation.",
+    "ua": "[GAME_TITLE] — це моторошне\nпаранормальне розслідування."
+  },
+  "presen_pzd_010": {
+    "en": "You're a detective trying to solve\r\nthe mystery of a haunted house.",
+    "ua": "Ви — детектив, що розгадує\nтаємницю будинку з привидами."
+  },
+  "presen_pzd_020": {
+    "en": "Aided by your fearless young\r\nassistant, Ella Mentree,",
+    "ua": "Із допомогою безстрашної юної\nпомічниці Елли Ментрі"
+  },
+  "presen_pzd_030": {
+    "en": "you work to uncover the truth with\r\nthe help of people you meet inside.",
+    "ua": "ви шукаєте правду разом із людьми,\nяких зустрічаєте всередині."
+  },
+  "presen_pzd_040": {
+    "en": "You'll face many a foe as you try\r\nto make your way to the top floor!",
+    "ua": "На шляху до верхнього поверху\nвам трапиться чимало ворогів!"
+  },
+  "presen_pzd_050": {
+    "en": "Right!",
+    "ua": "Отож!"
+  },
+  "presen_pzd_060": {
+    "en": "In [GAME_TITLE], you explore a\r\nhuge haunted house. How, you ask?",
+    "ua": "У грі [GAME_TITLE] ви досліджуєте\nвеличезний маєток із привидами. Як саме?"
+  },
+  "presen_pzd_070_telop": {
+    "en": "You find map pieces...\r\n\r\n",
+    "ua": "Шукаєте шматки мапи…\n\n"
+  },
+  "presen_pzd_080_telop": {
+    "en": "You find map pieces...\r\nand battle monsters.\r\n",
+    "ua": "Шукаєте шматки мапи…\nі б'єтеся з почварами.\n"
+  },
+  "presen_pzd_070": {
+    "en": "Well, you've got to find pieces of\r\nthe haunted mansion's map,",
+    "ua": "Що ж, треба знаходити шматки\nмапи маєтку з привидами"
+  },
+  "presen_pzd_080": {
+    "en": "and battle the monsters you find!\r\nThat's what this game is all about.",
+    "ua": "і битися з почварами!\nОсь у чому суть гри."
+  },
+  "presen_pzd_090": {
+    "en": "...What?",
+    "ua": "…Що?"
+  },
+  "presen_pzd_Q2": {
+    "en": "You think this sounds\r\nkind of familiar?",
+    "ua": "Здається, звучить\nзнайомо?"
+  },
+  "presen_pzd_Q2_yes": {
+    "en": "Yes",
+    "ua": "Так"
+  },
+  "presen_pzd_Q2_no": {
+    "en": "No",
+    "ua": "Ні"
+  },
+  "presen_pzd_yes2_000": {
+    "en": "For sure!\r\nTotal déjà vu! ",
+    "ua": "Ще б пак!\nСуцільне дежавю!"
+  },
+  "presen_pzd_yes2_010": {
+    "en": "You explore and fight in\r\nthe other plaza games,\r\nit's true...",
+    "ua": "В інших іграх площі\nви теж досліджуєте\nй б'єтеся, це правда…"
+  },
+  "presen_pzd_yes2_020": {
+    "en": "But believe me, this\r\ngame's quite different\r\nfrom those!",
+    "ua": "Але повірте, ця гра\nзовсім не така,\nяк вони!"
+  },
+  "presen_pzd_no2_000": {
+    "en": "Well, you do explore and\r\nfight in other plaza games,\r\nbut this one's a bit different.",
+    "ua": "В інших іграх площі ви теж\nдосліджуєте й б'єтеся,\nале ця трохи інша."
+  },
+  "presen_pzd_100": {
+    "en": "For example, you pick which piece\r\nto take from each person you meet, ",
+    "ua": "Наприклад, ви вибираєте, яку частинку\nвзяти в кожної зустрінутої людини,"
+  },
+  "presen_pzd_110": {
+    "en": "and pick where each piece goes.\r\nYour path's totally up to you.",
+    "ua": "і куди її покласти.\nШлях залежить лише від вас."
+  },
+  "presen_pzd_120": {
+    "en": "The pieces you set down create\r\ndoors and corridors.",
+    "ua": "З покладених частинок\nвиходять двері й коридори."
+  },
+  "presen_pzd_130": {
+    "en": "By collecting plenty of pieces\r\nfrom your StreetPass visitors,",
+    "ua": "Збираючи багато частинок\nвід гостей зі StreetPass,"
+  },
+  "presen_pzd_140": {
+    "en": "you explore each floor of the\r\nmansion bit by bit.",
+    "ua": "ви крок за кроком досліджуєте\nкожен поверх маєтку."
+  },
+  "presen_pzd_150": {
+    "en": "Your goal's to find the stairs so\r\nyou can climb up to the next floor.",
+    "ua": "Мета — знайти сходи, щоб\nпіднятися на наступний поверх."
+  },
+  "presen_pzd_160": {
+    "en": "Oh, and this next bit's\r\nREALLY cool...",
+    "ua": "О, а ось це\nСПРАВДІ круто…"
+  },
+  "presen_pzd_170": {
+    "en": "When pieces of the same colour\r\nconnect to make a square,",
+    "ua": "Коли частинки одного кольору\nз'єднуються в квадрат,"
+  },
+  "presen_pzd_180": {
+    "en": "instead of making a corridor,\r\nyou make a whole room!",
+    "ua": "замість коридору виходить\nціла кімната!"
+  },
+  "presen_pzd_190": {
+    "en": "Rooms contain treasure chests\r\nand other nifty things too.",
+    "ua": "У кімнатах є скрині\nй інші цікаві речі."
+  },
+  "presen_pzd_200": {
+    "en": "You've got to be smart about\r\nwhere you put each piece.\r\nIt's a bit like a puzzle.",
+    "ua": "Треба з розумом вибирати,\nкуди класти частинку.\nТрохи схоже на головоломку."
+  },
+  "presen_pzd_Q3": {
+    "en": "Do you like puzzle games?",
+    "ua": "Любите головоломки?"
+  },
+  "presen_pzd_Q3_yes": {
+    "en": "Yeah!",
+    "ua": "Так!"
+  },
+  "presen_pzd_yes3": {
+    "en": "You do? Great!",
+    "ua": "Справді? Чудово!"
+  },
+  "presen_pzd_Q3_no": {
+    "en": "Not really.",
+    "ua": "Не дуже."
+  },
+  "presen_pzd_Q4": {
+    "en": "Shall I pull up the price?\r\nI can also tell you more\r\nabout the game if you like.",
+    "ua": "Показати ціну?\nЯ можу й розповісти\nпро гру більше."
+  },
+  "presen_pzd_Q4_buy": {
+    "en": "Price, please!",
+    "ua": "Яка ціна?"
+  },
+  "presen_pzd_Q4_more": {
+    "en": "Tell me more.",
+    "ua": "Розкажи більше."
+  },
+  "presen_pzd_no3": {
+    "en": "All right then!",
+    "ua": "Що ж, гаразд!"
+  },
+  "presen_pzd_Q5": {
+    "en": "Do you want to know more\r\nanyway? I can also pull\r\nup the price if you like.",
+    "ua": "Хочете все ж дізнатися\nбільше? Можу й показати\nціну."
+  },
+  "presen_pzd_Q5_more": {
+    "en": "Tell me more.",
+    "ua": "Розкажи більше."
+  },
+  "presen_pzd_Q5_buy": {
+    "en": "Price, please!",
+    "ua": "Яка ціна?"
+  },
+  "presen_pzd_Q5_leave": {
+    "en": "I'm fine, thanks.",
+    "ua": "Ні, дякую."
+  },
+  "presen_pzd_210": {
+    "en": "Right!",
+    "ua": "Отож!"
+  },
+  "presen_pzd_220": {
+    "en": "Let's talk about features\r\nthat aren't so puzzle\r\nfocused, then...",
+    "ua": "Тоді поговорімо про те,\nщо не стосується\nголоволомок…"
+  },
+  "presen_pzd_230": {
+    "en": "There are battles with all sorts of\r\nmonsters, ghosts, and creatures. ",
+    "ua": "Тут бої з різними\nпочварами, привидами й істотами."
+  },
+  "presen_pzd_240": {
+    "en": "You've gotta have quick reflexes\r\nto shoot and guard effectively.",
+    "ua": "Потрібна швидка реакція, щоб\nвлучно стріляти й захищатися."
+  },
+  "presen_pzd_250": {
+    "en": "There are lots of weapons to find.\r\nAs you use them, they power up!",
+    "ua": "Можна знайти багато зброї.\nЗ використанням вона посилюється!"
+  },
+  "presen_pzd_260": {
+    "en": "You can upgrade your favourites\r\nusing weapons you don't want.",
+    "ua": "Улюблену зброю можна покращити\nза рахунок непотрібної."
+  },
+  "presen_pzd_270": {
+    "en": "Oh, and you can team up with\r\npeople you meet via StreetPass.",
+    "ua": "І можна об'єднуватися з людьми,\nзустрінутими через StreetPass."
+  },
+  "presen_pzd_280": {
+    "en": "What's the mansion's dark secret...?\r\nWhat's waiting on the top floor...?",
+    "ua": "Яка темна таємниця маєтку…?\nЩо чекає на верхньому поверсі…?"
+  },
+  "presen_pzd_290": {
+    "en": "It's quite a mystery!\r\nPretty cool, right?",
+    "ua": "Справжня загадка!\nКруто, правда?"
+  },
+  "presen_btl_000": {
+    "en": "[GAME_TITLE] is a game that\r\nrelies on both strategy and luck.",
+    "ua": "[GAME_TITLE] — гра, де важать\nі стратегія, і удача."
+  },
+  "presen_btl_010": {
+    "en": "In it, you rule a remote\r\ncountry in a war-torn land.",
+    "ua": "Ви правите далекою країною\nв розтерзаному війною краї."
+  },
+  "presen_btl_020": {
+    "en": "With help from Wentworth,\r\nyour faithful old butler, ",
+    "ua": "З допомогою Вентворта,\nвірного старого дворецького,"
+  },
+  "presen_btl_030": {
+    "en": "you build an army via StreetPass\r\nand battle other generals.",
+    "ua": "ви збираєте армію через StreetPass\nі б'єтеся з іншими полководцями."
+  },
+  "presen_btl_040": {
+    "en": "Your ultimate goal?\r\nTo conquer the world!",
+    "ua": "Ваша кінцева мета?\nПідкорити світ!"
+  },
+  "presen_btl_050": {
+    "en": "Right!",
+    "ua": "Отож!"
+  },
+  "presen_btl_060": {
+    "en": "In [GAME_TITLE], a large army\r\nis the key to success.",
+    "ua": "У грі [GAME_TITLE] ключ\nдо успіху — велика армія."
+  },
+  "presen_btl_070_telop": {
+    "en": "Every Mii encounter...\r\n\r\n",
+    "ua": "Кожна зустріч з Mii…\n\n"
+  },
+  "presen_btl_080_telop": {
+    "en": "Every Mii encounter...\r\nmakes your army grow.\r\n",
+    "ua": "Кожна зустріч з Mii…\nпоповнює вашу армію.\n"
+  },
+  "presen_btl_070": {
+    "en": "That's where StreetPass comes in.\r\nAs you meet people via StreetPass,",
+    "ua": "Тут і стає в пригоді StreetPass.\nЗустрічаючи людей через StreetPass,"
+  },
+  "presen_btl_080": {
+    "en": "your army gains soldiers!\r\n",
+    "ua": "ви отримуєте нових солдатів!\n"
+  },
+  "presen_btl_090": {
+    "en": "Oh, but here's a tricky question\r\nfor you to puzzle over...",
+    "ua": "О, а ось вам\nхитре запитання…"
+  },
+  "presen_btl_Q2": {
+    "en": "If you meet 10 people via\r\nStreetPass, does your\r\narmy gain 10 soldiers?",
+    "ua": "Якщо зустріти через StreetPass\n10 людей, армія поповниться\n10 солдатами?"
+  },
+  "presen_btl_Q2_yes": {
+    "en": "Yes",
+    "ua": "Так"
+  },
+  "presen_btl_Q2_no": {
+    "en": "No",
+    "ua": "Ні"
+  },
+  "presen_btl_yes2_000": {
+    "en": "Good guess, but actually\r\nthat's not the case!",
+    "ua": "Гарна здогадка, але\nнасправді ні!"
+  },
+  "presen_btl_no2_000": {
+    "en": "Oho! You're a sharp one,\r\n[MII_NAME].",
+    "ua": "Ого! Та ви кмітливі,\n[MII_NAME]."
+  },
+  "presen_btl_100_telop": {
+    "en": "You get troops to match...\r\n\r\n",
+    "ua": "Солдатів стільки ж…\n\n"
+  },
+  "presen_btl_110_telop": {
+    "en": "You get troops to match...\r\ntheir plaza population.\r\n",
+    "ua": "Солдатів стільки ж…\nскільки мешканців на площі.\n"
+  },
+  "presen_btl_100": {
+    "en": "The number of soldiers you\r\nget from another person",
+    "ua": "Кількість солдатів, яку\nви отримуєте від людини,"
+  },
+  "presen_btl_110": {
+    "en": "is based on that person's\r\ncurrent plaza population.",
+    "ua": "залежить від кількості\nмешканців її площі."
+  },
+  "presen_btl_120": {
+    "en": "In other words...",
+    "ua": "Інакше кажучи…"
+  },
+  "presen_btl_130": {
+    "en": "If you meet someone via StreetPass\r\nwho has 100 people in his or her plaza,",
+    "ua": "Якщо зустріти через StreetPass когось,\nу кого на площі 100 мешканців,"
+  },
+  "presen_btl_140": {
+    "en": "the noble [MII_NAME] Kingdom\r\ngets 100 new soldiers.",
+    "ua": "шляхетне королівство [MII_NAME]\nотримає 100 нових солдатів."
+  },
+  "presen_btl_150": {
+    "en": "Someone with a plaza population of\r\n1,000 would give you 1,000 soldiers!",
+    "ua": "Людина з 1000 мешканців\nна площі дасть 1000 солдатів!"
+  },
+  "presen_btl_160": {
+    "en": "...Get it?",
+    "ua": "…Зрозуміло?"
+  },
+  "presen_btl_170": {
+    "en": "The people you meet via\r\nStreetPass have a BIG\r\neffect on your army.",
+    "ua": "Люди, зустрінуті через\nStreetPass, ДУЖЕ впливають\nна вашу армію."
+  },
+  "presen_btl_180": {
+    "en": "Oh, and this is pretty\r\ncool too...",
+    "ua": "О, а ще це\nдосить круто…"
+  },
+  "presen_btl_190": {
+    "en": "When you meet people via StreetPass\r\nwho also own [GAME_TITLE],",
+    "ua": "Коли ви зустрічаєте через StreetPass\nлюдей, у яких теж є [GAME_TITLE],"
+  },
+  "presen_btl_200": {
+    "en": "you can battle against them!",
+    "ua": "з ними можна битися!"
+  },
+  "presen_btl_210": {
+    "en": "If you win a battle,\r\nyou'll get soldiers.",
+    "ua": "Перемога в битві\nприносить солдатів."
+  },
+  "presen_btl_220": {
+    "en": "Careful, though... If you lose a fight,\r\nsome of your soldiers will run away.",
+    "ua": "Але обережно… Після поразки\nчастина солдатів утече."
+  },
+  "presen_btl_230": {
+    "en": "The most important thing is to\r\nmake as big an army as you can.",
+    "ua": "Найважливіше — зібрати\nякомога більшу армію."
+  },
+  "presen_btl_240": {
+    "en": "With a horde of troops behind you,\r\nyou can try to take over the world!",
+    "ua": "З ордою солдатів за спиною\nможна спробувати підкорити світ!"
+  },
+  "presen_btl_Q3": {
+    "en": "So, want to know more?\r\nOr find out the price?\r\nI'm here to help!",
+    "ua": "То що, розповісти більше?\nЧи дізнатися ціну?\nЯ тут, щоб допомогти!"
+  },
+  "presen_btl_Q3_more": {
+    "en": "Tell me more.",
+    "ua": "Розкажи більше."
+  },
+  "presen_btl_Q3_buy": {
+    "en": "Price, please!",
+    "ua": "Яка ціна?"
+  },
+  "presen_btl_Q3_leave": {
+    "en": "I'm fine, thanks.",
+    "ua": "Ні, дякую."
+  },
+  "presen_btl_250": {
+    "en": "You got it! Let me tell\r\nyou about some of the\r\nother features...",
+    "ua": "Зрозумів! Розповім про\nще кілька\nможливостей…"
+  },
+  "presen_btl_260": {
+    "en": "There's observing your enemies,\r\nsetting up strategic formations,",
+    "ua": "Можна стежити за ворогами,\nшикувати військо,"
+  },
+  "presen_btl_270": {
+    "en": "and predicting what your foe will do\r\nlike in a game of rock-paper-scissors.",
+    "ua": "і вгадувати хід суперника,\nяк у «камінь, ножиці, папір»."
+  },
+  "presen_btl_280": {
+    "en": "You can spy on your enemies!",
+    "ua": "Можна шпигувати за ворогами!"
+  },
+  "presen_btl_290": {
+    "en": "Fortify your castle!",
+    "ua": "Зміцнювати замок!"
+  },
+  "presen_btl_300": {
+    "en": "There are tough opponents\r\nto face, too.",
+    "ua": "Будуть і сильні\nсуперники."
+  },
+  "presen_btl_310": {
+    "en": "Will you be able to conquer all 20\r\ncountries and take over the world?",
+    "ua": "Чи зможете ви завоювати всі 20\nкраїн і підкорити світ?"
+  },
+  "presen_btl_315": {
+    "en": "Will your small band of soldiers\r\nbecome a vast and powerful army?",
+    "ua": "Чи стане ваш невеличкий загін\nвеликою й могутньою армією?"
+  },
+  "presen_btl_320": {
+    "en": "It's all up to you!\r\nHow exciting.",
+    "ua": "Усе залежить від вас!\nЯк захопливо."
+  },
+  "presen_fsh_000": {
+    "en": "[GAME_TITLE] is all about\r\npitting your wits against nature!",
+    "ua": "[GAME_TITLE] — це змагання\nкмітливості з природою!"
+  },
+  "presen_fsh_010": {
+    "en": "You become an angler and\r\nvisit the StreetPass Isles,",
+    "ua": "Ви стаєте рибалкою й\nвирушаєте на острови StreetPass,"
+  },
+  "presen_fsh_020": {
+    "en": "chill out in the natural beauty of\r\na number of different islands,",
+    "ua": "відпочиватимете серед природи\nрізних островів,"
+  },
+  "presen_fsh_030": {
+    "en": "catch various fish with the help of\r\npeople you meet via StreetPass,",
+    "ua": "ловитимете різну рибу з людьми,\nзустрінутими через StreetPass,"
+  },
+  "presen_fsh_040": {
+    "en": "and try to catch legendary\r\nmonsters on each island!",
+    "ua": "і полюєте на легендарних\nчудовиськ кожного острова!"
+  },
+  "presen_fsh_050": {
+    "en": "Very well!",
+    "ua": "Чудово!"
+  },
+  "presen_fsh_060": {
+    "en": "By the way,\r\n[MII_NAME]...",
+    "ua": "До речі,\n[MII_NAME]…"
+  },
+  "presen_fsh_Q2": {
+    "en": "Have you ever been\r\nfishing before?",
+    "ua": "Ви колись\nрибалили?"
+  },
+  "presen_fsh_Q2_yes": {
+    "en": "Sure!",
+    "ua": "Звісно!"
+  },
+  "presen_fsh_Q2_no": {
+    "en": "Never.",
+    "ua": "Ніколи."
+  },
+  "presen_fsh_070": {
+    "en": "Great! Then we can get through\r\nthis quickly.",
+    "ua": "Чудово! Тоді пройдемося\nшвиденько."
+  },
+  "presen_fsh_080": {
+    "en": "Oh, really?",
+    "ua": "О, справді?"
+  },
+  "presen_fsh_090": {
+    "en": "Let's get started with\r\nthe basics then!",
+    "ua": "Тоді почнімо\nз основ!"
+  },
+  "presen_fsh_100": {
+    "en": "Fishing in [GAME_TITLE] is...",
+    "ua": "Риболовля в грі [GAME_TITLE] — це…"
+  },
+  "presen_fsh_110": {
+    "en": "...a game of hide and seek\r\nbetween the angler and fish.",
+    "ua": "…гра в хованки між\nрибалкою й рибою."
+  },
+  "presen_fsh_120": {
+    "en": "First, you choose some bait\r\nto put on your hook.",
+    "ua": "Спершу вибираєте наживку\nдля гачка."
+  },
+  "presen_fsh_130": {
+    "en": "Then, you throw it into the water with\r\nyour rod to get the fish's attention.",
+    "ua": "Потім закидаєте її вудкою у воду,\nщоб привабити рибу."
+  },
+  "presen_fsh_140": {
+    "en": "Ooh! I felt something...",
+    "ua": "О! Щось відчув…"
+  },
+  "presen_fsh_150": {
+    "en": "I got one!",
+    "ua": "Попалася!"
+  },
+  "presen_fsh_160": {
+    "en": "Basically, that's all\r\nthere is to it! Pretty\r\neasy, right?",
+    "ua": "От і все, власне!\nДосить просто,\nправда ж?"
+  },
+  "presen_fsh_170": {
+    "en": "So!",
+    "ua": "Отож!"
+  },
+  "presen_fsh_180": {
+    "en": "[GAME_TITLE]\r\nis all about...",
+    "ua": "[GAME_TITLE] —\nце про те, що…"
+  },
+  "presen_fsh_190_telop": {
+    "en": "Every Mii encounter...\r\n\r\n",
+    "ua": "Кожна зустріч з Mii…\n\n"
+  },
+  "presen_fsh_200_telop": {
+    "en": "Every Mii encounter...\r\ngets you more fish.\r\n",
+    "ua": "Кожна зустріч з Mii…\nдає вам більше риби.\n"
+  },
+  "presen_fsh_190": {
+    "en": "The more anglers you meet\r\nvia StreetPass...",
+    "ua": "Що більше рибалок ви зустрінете\nчерез StreetPass…"
+  },
+  "presen_fsh_200": {
+    "en": "the more help you get and\r\nthe more fish you can catch!",
+    "ua": "то більше допомоги отримаєте\nй більше риби зловите!"
+  },
+  "presen_fsh_210": {
+    "en": "There's a reason for that...",
+    "ua": "І ось чому…"
+  },
+  "presen_fsh_220": {
+    "en": "You get bait from the Mii anglers\r\nyou meet via StreetPass.",
+    "ua": "Наживку дають Mii-рибалки,\nзустрінуті через StreetPass."
+  },
+  "presen_fsh_230": {
+    "en": "So...",
+    "ua": "Отже…"
+  },
+  "presen_fsh_240": {
+    "en": "The more anglers you meet via\r\nStreetPass, the more bait you get!",
+    "ua": "Що більше рибалок зустрінете через\nStreetPass, то більше наживки!"
+  },
+  "presen_fsh_250": {
+    "en": "Try to catch as many as you can!",
+    "ua": "Ловіть якомога більше!"
+  },
+  "presen_fsh_260": {
+    "en": "The StreetPass Isles are full\r\nof great spots to fish.",
+    "ua": "На островах StreetPass повно\nчудових місць для риболовлі."
+  },
+  "presen_fsh_270": {
+    "en": "Some fishing spots hold more\r\nthan just fish to catch!",
+    "ua": "У деяких місцях можна зловити\nне лише рибу!"
+  },
+  "presen_fsh_280": {
+    "en": "You might even catch the occasional\r\npiece of junk though...",
+    "ua": "Щоправда, іноді попадається\nй усякий мотлох…"
+  },
+  "presen_fsh_290": {
+    "en": "So...",
+    "ua": "Отже…"
+  },
+  "presen_fsh_300": {
+    "en": "Anglers met via StreetPass\r\ndo more for you than just\r\nhand over their bait!",
+    "ua": "Рибалки зі StreetPass\nне лише дають\nвам наживку!"
+  },
+  "presen_fsh_310": {
+    "en": "They can even help you to catch big\r\nfish that you'd struggle with alone.",
+    "ua": "Вони допоможуть витягти велику рибу,\nз якою самому важко впоратися."
+  },
+  "presen_fsh_320": {
+    "en": "As they say, many hands\r\nmake light work!",
+    "ua": "Як-то кажуть, гуртом\nі батька легше бити!"
+  },
+  "presen_fsh_330": {
+    "en": "They might even help you pull up\r\na massive legendary monster!",
+    "ua": "Вони можуть допомогти витягти навіть\nвеличезне легендарне чудовисько!"
+  },
+  "presen_fsh_340": {
+    "en": "Working together is the key to\r\nhauling up all kinds of creatures!",
+    "ua": "Разом можна витягти\nбудь-яку істоту!"
+  },
+  "presen_fsh_Q3": {
+    "en": "So, want to know more?\r\nOr find out the price?\r\nI'm here to help!",
+    "ua": "То що, розповісти більше?\nЧи дізнатися ціну?\nЯ тут, щоб допомогти!"
+  },
+  "presen_fsh_Q3_more": {
+    "en": "Tell me more.",
+    "ua": "Розкажи більше."
+  },
+  "presen_fsh_Q3_buy": {
+    "en": "Price, please!",
+    "ua": "Яка ціна?"
+  },
+  "presen_fsh_Q3_leave": {
+    "en": "I'm fine, thanks.",
+    "ua": "Ні, дякую."
+  },
+  "presen_fsh_350": {
+    "en": "Right! There's more to it than just\r\nfishing!",
+    "ua": "Отож! Тут є не лише\nриболовля!"
+  },
+  "presen_fsh_360": {
+    "en": "You can even put anything you\r\ncatch into your own aquarium.",
+    "ua": "Улов можна випустити\nу власний акваріум."
+  },
+  "presen_fsh_370": {
+    "en": "And you can even see the\r\naquariums of other anglers!",
+    "ua": "А ще можна дивитися\nакваріуми інших рибалок!"
+  },
+  "presen_fsh_380": {
+    "en": "You can improve your rods!",
+    "ua": "Можна покращувати вудки!"
+  },
+  "presen_fsh_390": {
+    "en": "You can pull up treasure chests!",
+    "ua": "Можна витягувати скрині зі скарбами!"
+  },
+  "presen_fsh_400": {
+    "en": "According to the Mii anglers that\r\nvisit you via StreetPass...",
+    "ua": "Як кажуть Mii-рибалки, що\nприходять до вас через StreetPass…"
+  },
+  "presen_fsh_410": {
+    "en": "...there are even some mysterious fish.",
+    "ua": "…тут водиться й таємнича риба."
+  },
+  "presen_fsh_420": {
+    "en": "Experiencing the highs and lows of\r\nfishing on the StreetPass Isles...",
+    "ua": "Злети й падіння риболовлі\nна островах StreetPass…"
+  },
+  "presen_fsh_430": {
+    "en": "Battling legendary monsters\r\nshrouded in mystery...",
+    "ua": "Бої з легендарними чудовиськами,\nоповитими таємницею…"
+  },
+  "presen_fsh_440": {
+    "en": "[MII_NAME], have you got what\r\nit takes to catch them all?",
+    "ua": "[MII_NAME], чи вистачить вам\nхисту зловити їх усіх?"
+  },
+  "presen_fsh_450": {
+    "en": "There's only one way to find out!",
+    "ua": "Є лише один спосіб дізнатися!"
+  },
+  "presen_zmb_000": {
+    "en": "[GAME_TITLE] is a game about\r\nsurviving a zombie outbreak!",
+    "ua": "[GAME_TITLE] — гра про виживання\nпід час навали зомбі!"
+  },
+  "presen_zmb_010": {
+    "en": "It'll be down to you to save the\r\nworld from the undead hordes!",
+    "ua": "Саме вам доведеться рятувати\nсвіт від орд живих мерців!"
+  },
+  "presen_zmb_020": {
+    "en": "You're guided along the way\r\nby the charming Dr Scarlet.",
+    "ua": "Вашою провідницею буде\nчарівна д-р Скарлет."
+  },
+  "presen_zmb_030": {
+    "en": "You'll use the hobby equipment of the\r\nMii characters you meet via StreetPass...",
+    "ua": "Ви використовуватимете речі для хобі\nMii, зустрінутих через StreetPass…"
+  },
+  "presen_zmb_040": {
+    "en": "...to bash and smash zombies\r\nin this action-packed game!",
+    "ua": "…щоб лупцювати й трощити зомбі\nв цій динамічній грі!"
+  },
+  "presen_zmb_050": {
+    "en": "You got it!",
+    "ua": "Зрозумів!"
+  },
+  "presen_zmb_060": {
+    "en": "Oh, by the way,\r\n[MII_NAME]...",
+    "ua": "До речі,\n[MII_NAME]…"
+  },
+  "presen_zmb_070": {
+    "en": "Have you set your hobby yet?",
+    "ua": "Ви вже вказали своє хобі?"
+  },
+  "presen_zmb_080": {
+    "en": "You can change it in Edit Profile\r\nin the Mii settings!",
+    "ua": "Його можна змінити в профілі\nу налаштуваннях Mii!"
+  },
+  "presen_zmb_090": {
+    "en": "So...",
+    "ua": "Отже…"
+  },
+  "presen_zmb_100": {
+    "en": "You're probably wondering why\r\nyou should set a hobby, right?",
+    "ua": "Вам, мабуть, цікаво,\nнавіщо вказувати хобі?"
+  },
+  "presen_zmb_110": {
+    "en": "Well, hobbies play a key part\r\nin beating [GAME_TITLE]!",
+    "ua": "Що ж, хобі — ключ\nдо перемоги в [GAME_TITLE]!"
+  },
+  "presen_zmb_120": {
+    "en": "Mii characters you meet via StreetPass\r\ngive you their hobby equipment.",
+    "ua": "Mii, зустрінуті через StreetPass,\nдають вам свої речі для хобі."
+  },
+  "presen_zmb_130": {
+    "en": "Then you can use it to\r\nfight the zombie hordes!",
+    "ua": "А ви можете битися ними\nз ордами зомбі!"
+  },
+  "presen_zmb_140": {
+    "en": "For example, a Mii that likes\r\ncooking will give you a frying pan.",
+    "ua": "Наприклад, Mii, що любить\nготувати, дасть сковорідку."
+  },
+  "presen_zmb_150": {
+    "en": "A music-loving Mii will\r\ngive you a boom box!",
+    "ua": "Меломан дасть\nмагнітофон!"
+  },
+  "presen_zmb_160": {
+    "en": "Or a Mii that likes taking photos\r\nwill let you use their camera!",
+    "ua": "А Mii, що любить фотографувати,\nпозичить свій фотоапарат!"
+  },
+  "presen_zmb_161": {
+    "en": "You can get a different item to\r\nuse to fight with for each hobby!",
+    "ua": "Для кожного хобі —\nсвій предмет для бою!"
+  },
+  "presen_zmb_170": {
+    "en": "And what's more, in\r\n[GAME_TITLE]...",
+    "ua": "І ще: у грі\n[GAME_TITLE]…"
+  },
+  "presen_zmb_180_telop": {
+    "en": "Every Mii encounter...\r\n\r\n",
+    "ua": "Кожна зустріч з Mii…\n\n"
+  },
+  "presen_zmb_190_telop": {
+    "en": "Every Mii encounter...\r\ngets you a weapon.\r\n",
+    "ua": "Кожна зустріч з Mii…\nдає вам зброю.\n"
+  },
+  "presen_zmb_180": {
+    "en": "...the more StreetPass\r\nencounters you have...",
+    "ua": "…що більше зустрічей\nStreetPass…"
+  },
+  "presen_zmb_190": {
+    "en": "...the more weapons you'll\r\nget to use against the zombies!",
+    "ua": "…то більше зброї\nпроти зомбі!"
+  },
+  "presen_zmb_200": {
+    "en": "You can get a variety of weapons\r\nto use against different foes!",
+    "ua": "Можна отримати різну зброю\nпроти різних ворогів!"
+  },
+  "presen_zmb_210": {
+    "en": "Also, weapons aren't just for attacking!",
+    "ua": "А ще зброя не лише для атаки!"
+  },
+  "presen_zmb_220": {
+    "en": "Having lots of weapons to use\r\nincreases your chances of survival!",
+    "ua": "Що більше зброї, то більше\nшансів вижити!"
+  },
+  "presen_zmb_230": {
+    "en": "You see, when a zombie gets the better\r\nof you, you'll lose a weapon.",
+    "ua": "Бачите, коли зомбі вас долає,\nви втрачаєте одну зброю."
+  },
+  "presen_zmb_240": {
+    "en": "To put it another way...",
+    "ua": "Інакше кажучи…"
+  },
+  "presen_zmb_250": {
+    "en": "...the more weapons you\r\nhave, the longer you'll\r\nlast against them!",
+    "ua": "…що більше у вас\nзброї, то довше ви\nпротримаєтеся!"
+  },
+  "presen_zmb_260": {
+    "en": "So, if you get lots of StreetPass\r\nencounters, you'll have less to\r\nworry about!",
+    "ua": "Тож якщо зустрічей StreetPass\nбагато, можна менше\nхвилюватися!"
+  },
+  "presen_zmb_261": {
+    "en": "The other great thing\r\nabout the weapons is...",
+    "ua": "Ще одна чудова\nриса зброї…"
+  },
+  "presen_zmb_Q2": {
+    "en": "...each one has its own\r\nsuper-duper special attack\r\nto use, as well!",
+    "ua": "…у кожної є своя\nсупер-пупер\nособлива атака!"
+  },
+  "presen_zmb_Q2_more": {
+    "en": "Tell me more!",
+    "ua": "Розкажи більше!"
+  },
+  "presen_zmb_Q2_buy": {
+    "en": "Price, please!",
+    "ua": "Яка ціна?"
+  },
+  "presen_zmb_Q2_leave": {
+    "en": "I'm fine, thanks.",
+    "ua": "Ні, дякую."
+  },
+  "presen_zmb_270": {
+    "en": "You can catch a giant fish\r\nto flatten the zombies!",
+    "ua": "Можна зловити гігантську рибу\nй розчавити нею зомбі!"
+  },
+  "presen_zmb_280": {
+    "en": "You can call up a long-distance\r\nbus to take them away!",
+    "ua": "Можна викликати міжміський\nавтобус, щоб їх вивезти!"
+  },
+  "presen_zmb_290": {
+    "en": "You can even make them...\r\ndance?!",
+    "ua": "Можна навіть змусити їх…\nтанцювати?!"
+  },
+  "presen_zmb_300": {
+    "en": "Yes, there's something\r\nfor everyone here!",
+    "ua": "Так, тут кожен знайде\nщось для себе!"
+  },
+  "presen_zmb_Q3": {
+    "en": "So, want to know more?\r\nOr find out the price?\r\nI'm here to help!",
+    "ua": "То що, розповісти більше?\nЧи дізнатися ціну?\nЯ тут, щоб допомогти!"
+  },
+  "presen_zmb_Q3_more": {
+    "en": "Tell me more.",
+    "ua": "Розкажи більше."
+  },
+  "presen_zmb_Q3_buy": {
+    "en": "Price, please!",
+    "ua": "Яка ціна?"
+  },
+  "presen_zmb_Q3_leave": {
+    "en": "I'm fine, thanks.",
+    "ua": "Ні, дякую."
+  },
+  "presen_zmb_310": {
+    "en": "Well, there's more to this\r\ngame than just bashing\r\nzombies left and right...",
+    "ua": "Що ж, у цій грі не лише\nлупцюєш зомбі\nнаправо й наліво…"
+  },
+  "presen_zmb_320": {
+    "en": "You'll have to defend a hospital...",
+    "ua": "Доведеться обороняти лікарню…"
+  },
+  "presen_zmb_330": {
+    "en": "...and protect companions you'll\r\nmeet along the way.",
+    "ua": "…і захищати супутників,\nяких зустрінете дорогою."
+  },
+  "presen_zmb_340": {
+    "en": "You might even turn into\r\na zombie yourself!",
+    "ua": "Ви навіть можете самі\nперетворитися на зомбі!"
+  },
+  "presen_zmb_350": {
+    "en": "Take a look at this! It's\r\nme, as a zombie. Yuck!",
+    "ua": "Погляньте! Це я,\nзомбі. Фу!"
+  },
+  "presen_zmb_360": {
+    "en": "Scary stuff, huh?",
+    "ua": "Страшнувато, га?"
+  },
+  "presen_zmb_370": {
+    "en": "Actually, this zombified version of me...",
+    "ua": "Власне, цей зомбі-я…"
+  },
+  "presen_zmb_380": {
+    "en": "would appear in other players'\r\n[GAME_TITLE]! Amazing, huh?",
+    "ua": "з'являтиметься в [GAME_TITLE]\nінших гравців! Дивовижно, га?"
+  },
+  "presen_zmb_390": {
+    "en": "Don't worry, you don't have\r\nto turn into a zombie, if you\r\ndon't want to.",
+    "ua": "Не хвилюйтеся: якщо\nне хочете, на зомбі\nперетворюватися не треба."
+  },
+  "presen_zmb_400": {
+    "en": "There's even more!",
+    "ua": "І це ще не все!"
+  },
+  "presen_zmb_410": {
+    "en": "You'll have to escape through\r\na burning building!",
+    "ua": "Доведеться тікати\nз палаючої будівлі!"
+  },
+  "presen_zmb_420": {
+    "en": "...and go up against huge,\r\nterrifying bosses!",
+    "ua": "…і битися з величезними\nжахливими босами!"
+  },
+  "presen_zmb_430": {
+    "en": "Yes, you'll have to\r\nface up to all kinds\r\nof thrilling challenges!",
+    "ua": "Так, на вас чекають\nнайрізноманітніші\nзахопливі випробування!"
+  },
+  "presen_zmb_440": {
+    "en": "But who ever said saving\r\nthe world from zombies\r\nwould be easy?",
+    "ua": "А хто казав, що рятувати\nсвіт від зомбі\nбуде легко?"
+  },
+  "presen_zmb_450": {
+    "en": "Yup, that's the kind of game it is!",
+    "ua": "Так, ось така це гра!"
+  },
+  "presen_premium2_010": {
+    "en": "Oh! Hello,\r\n[MII_NAME].",
+    "ua": "О! Вітаю,\n[MII_NAME]."
+  },
+  "presen_premium2_020": {
+    "en": "Let me introduce you to\r\n[GAME_TITLE].",
+    "ua": "Дозвольте представити\n[GAME_TITLE]."
+  },
+  "presen_premium2_030": {
+    "en": "It's chock-full of features that will\r\nmake StreetPass Mii Plaza...",
+    "ua": "У ній повно можливостей, які\nзроблять Площу StreetPass Mii…"
+  },
+  "presen_premium2_Q0": {
+    "en": "...even more exciting\r\nthan it was already!",
+    "ua": "…ще захопливішою,\nніж будь-коли!"
+  },
+  "presen_premium2_Q0_see": {
+    "en": "Tell me more.",
+    "ua": "Розкажи більше."
+  },
+  "presen_premium2_Q0_buy": {
+    "en": "I want to buy it!",
+    "ua": "Хочу купити!"
+  },
+  "presen_premium2_Q0_leave": {
+    "en": "Back",
+    "ua": "Назад"
+  },
+  "presen_premium2_buynow_000": {
+    "en": "Wow! You're already sure\r\nyou want to buy it?",
+    "ua": "Ого! Ви вже точно\nхочете купити?"
+  },
+  "presen_premium2_buynow_010": {
+    "en": "Thank you very much!\r\nI really appreciate it!",
+    "ua": "Щиро дякую!\nДуже ціную!"
+  },
+  "presen_premium2_buynow_020": {
+    "en": "I'm happy to be of service!",
+    "ua": "Радий допомогти!"
+  },
+  "presen_premium2_Q1": {
+    "en": "It's a good thing I've\r\ngot my tablet with me!",
+    "ua": "Добре, що мій планшет\nіз собою!"
+  },
+  "presen_premium2_Q1_quick": {
+    "en": "Keep it short, OK?",
+    "ua": "Коротко, гаразд?"
+  },
+  "presen_premium2_Q1_normal": {
+    "en": "Go on...",
+    "ua": "Розповідай…"
+  },
+  "presen_premium2_060": {
+    "en": "It's just the thing\r\nfor showing you...",
+    "ua": "Саме те, щоб\nпоказати вам…"
+  },
+  "presen_premium2_070": {
+    "en": "...all the great new features in\r\nStreetPass Mii Plaza Premium!",
+    "ua": "…усі нові можливості\nПреміум-площі StreetPass Mii!"
+  },
+  "presen_premium2_110": {
+    "en": "First up!",
+    "ua": "Перше!"
+  },
+  "presen_premium2_120": {
+    "en": "The queue lets you store extra\r\nStreetPass encounters!",
+    "ua": "Черга зберігає додаткові\nзустрічі StreetPass!"
+  },
+  "presen_premium2_130": {
+    "en": "You can still only store up to 10\r\nencounters in the usual way,",
+    "ua": "Звичайним способом можна зберегти\nне більше 10 зустрічей,"
+  },
+  "presen_premium2_140": {
+    "en": "but instead of greeting them, you can\r\nqueue them up outside the entrance!",
+    "ua": "але замість вітання їх можна\nпоставити в чергу біля входу!"
+  },
+  "presen_premium2_150": {
+    "en": "You can have up to 100 Mii characters\r\nwaiting in the queue at once!",
+    "ua": "У черзі одночасно можуть\nчекати до 100 Mii!"
+  },
+  "presen_premium2_160": {
+    "en": "Great for places where you might get a\r\nlot of StreetPass hits, like theme parks!",
+    "ua": "Зручно там, де зустрічей StreetPass\nбагато, як-от у парках розваг!"
+  },
+  "presen_premium2_Q2": {
+    "en": "Next up...",
+    "ua": "Далі…"
+  },
+  "presen_premium2_Q2_see": {
+    "en": "Tell me more.",
+    "ua": "Розкажи більше."
+  },
+  "presen_premium2_Q2_buy": {
+    "en": "I want to buy it!",
+    "ua": "Хочу купити!"
+  },
+  "presen_premium2_Q2_leave": {
+    "en": "Not interested",
+    "ua": "Не цікавить"
+  },
+  "presen_premium2_200": {
+    "en": "StreetPass Birthdays is\r\nincluded as a premium feature!",
+    "ua": "Календар StreetPass —\nтеж преміум-можливість!"
+  },
+  "presen_premium2_210": {
+    "en": "In StreetPass Birthdays,\r\nyou'll fill up a special calendar...",
+    "ua": "У Календарі StreetPass ви\nзаповнюєте особливий календар…"
+  },
+  "presen_premium2_220": {
+    "en": "...as you collect the birthdays of the\r\nMii characters you meet via StreetPass!",
+    "ua": "…збираючи дні народження Mii,\nзустрінутих через StreetPass!"
+  },
+  "presen_premium2_230": {
+    "en": "The birthdays of each Mii are marked\r\noff as you greet them at the entrance.",
+    "ua": "День народження Mii позначається,\nколи ви вітаєте його біля входу."
+  },
+  "presen_premium2_240": {
+    "en": "So, it's simple and easy to play!",
+    "ua": "Тож грати легко й просто!"
+  },
+  "presen_premium2_250": {
+    "en": "The more birthdays you\r\nmanage to collect...",
+    "ua": "Що більше днів народження\nвдасться зібрати…"
+  },
+  "presen_premium2_260": {
+    "en": "...the more plaza tickets you get!",
+    "ua": "…то більше квитків Площі!"
+  },
+  "presen_premium2_270": {
+    "en": "Try to collect all 366 days!",
+    "ua": "Зберіть усі 366 днів!"
+  },
+  "presen_premium2_280": {
+    "en": "You'll be able to earn loads of plaza\r\ntickets, just like in the other games!",
+    "ua": "Можна заробити купу квитків Площі,\nяк і в інших іграх!"
+  },
+  "presen_premium2_290": {
+    "en": "To begin with, you'll be able to\r\ncollect birthdays pretty quickly.",
+    "ua": "Спочатку дні народження\nзбираються досить швидко."
+  },
+  "presen_premium2_300": {
+    "en": "So, you'll have a nice little\r\ncollection in no time!",
+    "ua": "Тож гарна колекція\nз'явиться миттю!"
+  },
+  "presen_premium2_310": {
+    "en": "OK. So what else do we have in\r\nStreetPass Mii Plaza Premium?",
+    "ua": "Гаразд. Що ще є\nв Преміум-площі?"
+  },
+  "presen_premium2_Q3": {
+    "en": "Dont worry, there's still plenty left!",
+    "ua": "Не хвилюйтеся, ще багато чого!"
+  },
+  "presen_premium2_Q3_see": {
+    "en": "Tell me more.",
+    "ua": "Розкажи більше."
+  },
+  "presen_premium2_Q3_buy": {
+    "en": "I want to buy it!",
+    "ua": "Хочу купити!"
+  },
+  "presen_premium2_Q3_leave": {
+    "en": "Not interested",
+    "ua": "Не цікавить"
+  },
+  "presen_premium2_330": {
+    "en": "The next feature of\r\nStreetPass Mii Plaza\r\nPremium is the VIP Room!",
+    "ua": "Наступна можливість\nПреміум-площі StreetPass Mii —\nVIP-кімната!"
+  },
+  "presen_premium2_340": {
+    "en": "If you've gotten attached to\r\nany particular Mii characters...",
+    "ua": "Якщо ви прив'язалися\nдо якихось Mii…"
+  },
+  "presen_premium2_350": {
+    "en": "...you'll be able to put\r\nthem in your VIP Room.",
+    "ua": "…можна поселити їх\nу VIP-кімнаті."
+  },
+  "presen_premium2_360": {
+    "en": "If you make a Mii a VIP,\r\nthey'll stay in your plaza!",
+    "ua": "Якщо зробити Mii VIP-гостем,\nвін лишиться на вашій площі!"
+  },
+  "presen_premium2_370": {
+    "en": "They'll be there no matter how many\r\nStreetPass encounters you have!",
+    "ua": "Хоч би скільки у вас\nбуло зустрічей StreetPass!"
+  },
+  "presen_premium2_380": {
+    "en": "You can make a Special Mii a VIP!",
+    "ua": "Особливого Mii теж\nможна зробити VIP!"
+  },
+  "presen_premium2_390": {
+    "en": "If you have friends from far away,\r\nyou can make them VIPs, too!",
+    "ua": "Друзів здалеку теж можна\nзробити VIP!"
+  },
+  "presen_premium2_400": {
+    "en": "Any Mii friends that you\r\ndon't want to say goodbye\r\nto can be made VIP. Cool!",
+    "ua": "Будь-яких Mii-друзів, з якими\nне хочеться прощатися,\nможна зробити VIP. Круто!"
+  },
+  "presen_premium2_410": {
+    "en": "So, it'll be a lot easier\r\nto hire old allies again!",
+    "ua": "Тож давніх соратників буде\nнабагато легше найняти знову!"
+  },
+  "presen_premium2_420": {
+    "en": "The SwiftPlay Plaza won't have\r\nany of your old encounters in it...",
+    "ua": "На Швидкій площі не буде\nваших давніх зустрічей…"
+  },
+  "presen_premium2_430": {
+    "en": "But you can always nip back to the\r\nClassic Plaza to find them all!",
+    "ua": "Але їх усіх завжди можна знайти,\nзаскочивши на Класичну площу!"
+  },
+  "presen_premium2_440": {
+    "en": "Also...",
+    "ua": "А ще…"
+  },
+  "presen_premium2_450": {
+    "en": "If you're having trouble finding the\r\nMii characters you want to make VIPs...",
+    "ua": "Якщо важко знайти Mii,\nяких хочете зробити VIP…"
+  },
+  "presen_premium2_460": {
+    "en": "Just use the filter in the\r\nClassic Plaza!",
+    "ua": "Просто скористайтеся фільтром\nна Класичній площі!"
+  },
+  "presen_premium2_470": {
+    "en": "That's an exclusive\r\npremium feature too!",
+    "ua": "Це теж ексклюзивна\nпреміум-можливість!"
+  },
+  "presen_premium2_480": {
+    "en": "So... The next feature...",
+    "ua": "Отже… Наступна можливість…"
+  },
+  "presen_premium2_Q4": {
+    "en": "We're up to number four!",
+    "ua": "Ми дійшли до четвертої!"
+  },
+  "presen_premium2_Q4_see": {
+    "en": "Tell me more.",
+    "ua": "Розкажи більше."
+  },
+  "presen_premium2_Q4_buy": {
+    "en": "I want to buy it!",
+    "ua": "Хочу купити!"
+  },
+  "presen_premium2_Q4_leave": {
+    "en": "Not interested",
+    "ua": "Не цікавить"
+  },
+  "presen_premium2_490": {
+    "en": "The Music Player gets a\r\npower-up with StreetPass\r\nMii Plaza Premium!",
+    "ua": "Музичний програвач стає\nпотужнішим у Преміум-площі\nStreetPass Mii!"
+  },
+  "presen_premium2_500": {
+    "en": "You'll be able to choose\r\nwhich version of the BGM\r\nplays in your plaza!",
+    "ua": "Можна вибирати, яка\nверсія музики звучить\nна вашій площі!"
+  },
+  "presen_premium2_510": {
+    "en": "And there's more!",
+    "ua": "І це ще не все!"
+  },
+  "presen_premium2_520": {
+    "en": "You can listen to the music,\r\neven while in Sleep Mode!",
+    "ua": "Музику можна слухати\nнавіть у режимі сну!"
+  },
+  "presen_premium2_530": {
+    "en": "It's just the thing for people\r\nwho love listening to the\r\nStreetPass Mii Plaza's music!",
+    "ua": "Саме те для тих, хто\nлюбить слухати музику\nПлощі StreetPass Mii!"
+  },
+  "presen_premium2_Q5": {
+    "en": "And, the final feature...",
+    "ua": "І остання можливість…"
+  },
+  "presen_premium2_Q5_see": {
+    "en": "Tell me more.",
+    "ua": "Розкажи більше."
+  },
+  "presen_premium2_Q5_buy": {
+    "en": "Price, please!",
+    "ua": "Яка ціна?"
+  },
+  "presen_premium2_Q5_leave": {
+    "en": "I'm fine, thanks.",
+    "ua": "Ні, дякую."
+  },
+  "presen_premium2_540": {
+    "en": "In StreetPass Mii Plaza Premium,\r\nyou can customise greetings.",
+    "ua": "У Преміум-площі StreetPass Mii\nможна налаштовувати вітання."
+  },
+  "presen_premium2_550": {
+    "en": "With this feature...",
+    "ua": "Завдяки цьому…"
+  },
+  "presen_premium2_560": {
+    "en": "...you can make greetings\r\nat the entrance shorter,\r\nor skip them!",
+    "ua": "…вітання біля входу\nможна скоротити\nабо пропустити!"
+  },
+  "presen_premium2_570": {
+    "en": "Perfect for people who love\r\nthe Classic Plaza...",
+    "ua": "Ідеально для тих, хто любить\nКласичну площу…"
+  },
+  "presen_premium2_580": {
+    "en": "but still want to have StreetPass\r\nencounters as quickly as possible!",
+    "ua": "але хоче проходити зустрічі\nStreetPass якомога швидше!"
+  },
+  "presen_premium2_590": {
+    "en": "Well, that's about the long\r\nand short of it! I've explained\r\nall the features now.",
+    "ua": "Що ж, ось і все!\nЯ пояснив\nусі можливості."
+  },
+  "presen_premium2_600": {
+    "en": "Oh yes, you also get a shiny\r\nPremium Badge as a bonus!",
+    "ua": "А, і ще ви отримаєте блискучий\nПреміум-значок у подарунок!"
+  },
+  "presen_premium2_Q_final": {
+    "en": "Want to find out the price,\r\nor are you OK for now?",
+    "ua": "Дізнатися ціну,\nчи поки досить?"
+  },
+  "presen_premium2_quick_000": {
+    "en": "All right then!",
+    "ua": "Що ж, гаразд!"
+  },
+  "presen_premium2_quick_010": {
+    "en": "First up!",
+    "ua": "Перше!"
+  },
+  "presen_premium2_quick_015": {
+    "en": "The queue lets you store extra\r\nStreetPass encounters!",
+    "ua": "Черга зберігає додаткові\nзустрічі StreetPass!"
+  },
+  "presen_premium2_quick_020": {
+    "en": "You can still only store up to 10\r\nencounters in the usual way,",
+    "ua": "Звичайним способом можна зберегти\nне більше 10 зустрічей,"
+  },
+  "presen_premium2_quick_025": {
+    "en": "but instead of greeting them, you can\r\nqueue them up outside the entrance!",
+    "ua": "але замість вітання їх можна\nпоставити в чергу біля входу!"
+  },
+  "presen_premium2_quick_030": {
+    "en": "You can have up to 100 Mii characters\r\nwaiting in the queue at once!",
+    "ua": "У черзі одночасно можуть\nчекати до 100 Mii!"
+  },
+  "presen_premium2_quick_040": {
+    "en": "Next up...",
+    "ua": "Далі…"
+  },
+  "presen_premium2_quick_050": {
+    "en": "StreetPass Birthdays is\r\nincluded!",
+    "ua": "Календар StreetPass\nвходить у комплект!"
+  },
+  "presen_premium2_quick_060": {
+    "en": "This lets you collect birthdays from\r\nthe Mii characters you encounter.",
+    "ua": "Тут можна збирати дні народження\nзустрінутих Mii."
+  },
+  "presen_premium2_quick_070": {
+    "en": "And you can even get Plaza Tickets\r\nif you collect enough!",
+    "ua": "А зібравши достатньо, можна\nотримати квитки Площі!"
+  },
+  "presen_premium2_quick_080": {
+    "en": "The next feature is...",
+    "ua": "Наступна можливість…"
+  },
+  "presen_premium2_quick_090": {
+    "en": "The VIP room! If you make a Mii\r\na VIP, they'll always stick around...",
+    "ua": "VIP-кімната! Якщо зробити Mii\nVIP-гостем, він завжди буде поруч…"
+  },
+  "presen_premium2_quick_100": {
+    "en": "No matter how many StreetPass\r\nencounters you have!",
+    "ua": "Хоч би скільки було\nзустрічей StreetPass!"
+  },
+  "presen_premium2_quick_110": {
+    "en": "There's also a filter to help you\r\nfind older encounters more easily!",
+    "ua": "А ще є фільтр, щоб легше\nзнаходити давні зустрічі!"
+  },
+  "presen_premium2_quick_120": {
+    "en": "And there's more!",
+    "ua": "І це ще не все!"
+  },
+  "presen_premium2_quick_130": {
+    "en": "The music player gets a power-up!",
+    "ua": "Музичний програвач посилено!"
+  },
+  "presen_premium2_quick_140": {
+    "en": "You'll be able to choose\r\nwhich version of the BGM\r\nplays in your plaza!",
+    "ua": "Можна вибирати, яка\nверсія музики звучить\nна вашій площі!"
+  },
+  "presen_premium2_quick_150": {
+    "en": "You can even listen to the\r\nmusic while in Sleep Mode!",
+    "ua": "Музику можна слухати\nнавіть у режимі сну!"
+  },
+  "presen_premium2_quick_160": {
+    "en": "And finally!",
+    "ua": "І нарешті!"
+  },
+  "presen_premium2_quick_170": {
+    "en": "You can customise greetings!",
+    "ua": "Можна налаштовувати вітання!"
+  },
+  "presen_premium2_quick_180": {
+    "en": "This feature is for users\r\nof the Classic Plaza.",
+    "ua": "Ця можливість — для гравців\nна Класичній площі."
+  },
+  "presen_premium2_quick_190": {
+    "en": "You'll also get a Premium Badge\r\nas a free gift!",
+    "ua": "А ще ви безкоштовно отримаєте\nПреміум-значок!"
+  },
+  "presen_premium_prep_000": {
+    "en": "You can buy\r\nStreetPass Mii Plaza Premium here!",
+    "ua": "Тут можна купити\nПреміум-площу StreetPass Mii!"
+  },
+  "presen_premium_prep_010": {
+    "en": "Sorry, we're not ready yet!",
+    "ua": "Вибачте, ми ще не готові!"
+  },
+  "presen_premium_prep_020": {
+    "en": "Please come back after you have met\r\nsomebody via StreetPass.",
+    "ua": "Поверніться, коли зустрінете\nкогось через StreetPass."
+  },
+  "presen_3rdcmn_start_000": {
+    "en": "Hi there, [MII_NAME]!",
+    "ua": "Привіт, [MII_NAME]!"
+  },
+  "presen_3rdcmn_start_010": {
+    "en": "Welcome to the Shop!",
+    "ua": "Вітаю в магазині!"
+  },
+  "presen_3rdcmn_start_Q0": {
+    "en": "You can buy\r\n[GAME_TITLE] here!",
+    "ua": "Тут можна купити\n[GAME_TITLE]!"
+  },
+  "presen_3rdcmn_Q0_see": {
+    "en": "Go on...",
+    "ua": "Розповідай…"
+  },
+  "presen_3rdcmn_Q0_buy": {
+    "en": "I want to buy it!",
+    "ua": "Хочу купити!"
+  },
+  "presen_3rdcmn_Q0_leave": {
+    "en": "See you later.",
+    "ua": "До зустрічі."
+  },
+  "presen_3rdcmn_see_000": {
+    "en": "It's a StreetPass Mii Plaza game...",
+    "ua": "Це гра для Площі StreetPass Mii…"
+  },
+  "presen_3rdcmn_see_010": {
+    "en": "...that you can buy with your\r\nNintendo eShop funds.",
+    "ua": "…яку можна купити за кошти\nNintendo eShop."
+  },
+  "presen_3rdcmn_see_020": {
+    "en": "So far, so ordinary. But unlike the\r\ngames from Set 1 and Set 2...",
+    "ua": "Поки все звично. Але на відміну\nвід ігор із наборів 1 і 2…"
+  },
+  "presen_3rdcmn_see_030": {
+    "en": "This one's designed to be super quick\r\nto play! Just like the SwiftPlay Plaza!",
+    "ua": "Ця гра надшвидка! Зовсім\nяк Швидка площа!"
+  },
+  "presen_3rdcmn_buy_000": {
+    "en": "You're an eager one, aren't\r\nyou, [MII_NAME]!",
+    "ua": "Та ви нетерплячі,\n[MII_NAME]!"
+  },
+  "presen_3rdcmn_buy_010": {
+    "en": "It'll take just a moment to\r\nlook up the price...",
+    "ua": "За мить знайду\nціну…"
+  },
+  "presen_3rdcmn_Q1": {
+    "en": "So, want to know more?\r\nOr have you already decided?\r\nI'm here to help!",
+    "ua": "То що, розповісти більше?\nЧи ви вже вирішили?\nЯ тут, щоб допомогти!"
+  },
+  "presen_3rdsale_000": {
+    "en": "Oh, and check this out...",
+    "ua": "О, і ось погляньте…"
+  },
+  "presen_3rdsale_010": {
+    "en": "There you have it.",
+    "ua": "Ось так."
+  },
+  "presen_3rdsale_020": {
+    "en": "Here's some more info.",
+    "ua": "Ось іще трохи інформації."
+  },
+  "presen_3rdsale_030": {
+    "en": "If you're interested, feel\r\nfree to take a look.",
+    "ua": "Якщо цікаво,\nпогляньте."
+  },
+  "presen_3rdsale_040": {
+    "en": "By the way...",
+    "ua": "До речі…"
+  },
+  "presen_3rdfree_000": {
+    "en": "I've got something to\r\ntell you, [MII_NAME]!",
+    "ua": "Маю вам дещо\nсказати, [MII_NAME]!"
+  },
+  "presen_3rdfree_010": {
+    "en": "You can get either StreetPass\r\nSlot Racer or StreetPass Trader...",
+    "ua": "Можна отримати або Слот-перегони\nStreetPass, або Біржу StreetPass…"
+  },
+  "presen_3rdfree_020": {
+    "en": "...for free!\r\nAll you have to do is pick one!",
+    "ua": "…на свій вибір!\nТреба лише вибрати одну!"
+  },
+  "presen_3rdfree_Q0": {
+    "en": "Would you like to hear about\r\n[GAME_TITLE]?",
+    "ua": "Розповісти вам про\n[GAME_TITLE]?"
+  },
+  "presen_3rdfree_Q0_see": {
+    "en": "Yes please.",
+    "ua": "Так, будь ласка."
+  },
+  "presen_3rdfree_Q0_get": {
+    "en": "I want this one!",
+    "ua": "Хочу цю!"
+  },
+  "presen_3rdfree_Q0_leave": {
+    "en": "Not right now.",
+    "ua": "Не зараз."
+  },
+  "presen_3rdfree_see_000": {
+    "en": "All right then!",
+    "ua": "Що ж, гаразд!"
+  },
+  "presen_3rdfree_get_000": {
+    "en": "All right then!",
+    "ua": "Що ж, гаразд!"
+  },
+  "presen_3rdfree_get_010": {
+    "en": "I'll just get that set up for you!",
+    "ua": "Зараз усе налаштую!"
+  },
+  "presen_3rdfree_leave_000": {
+    "en": "Fair enough!",
+    "ua": "Гаразд!"
+  },
+  "presen_3rdfree_Q_final_pre": {
+    "en": "So...",
+    "ua": "Отже…"
+  },
+  "presen_3rdfree_Q_final": {
+    "en": "What do you think?",
+    "ua": "Що скажете?"
+  },
+  "presen_3rdfree_interrupt_000": {
+    "en": "Oh, but...",
+    "ua": "О, але…"
+  },
+  "presen_3rdfree_interrupt_010": {
+    "en": "Before we continue with that...",
+    "ua": "Перш ніж продовжимо…"
+  },
+  "presen_3rdfree_interrupt_020": {
+    "en": "You can get either StreetPass\r\nSlot Racer or StreetPass Trader...",
+    "ua": "Можна отримати або Слот-перегони\nStreetPass, або Біржу StreetPass…"
+  },
+  "presen_3rdfree_interrupt_030": {
+    "en": "...for free!\r\nAll you have to do is pick one!",
+    "ua": "…на свій вибір!\nТреба лише вибрати одну!"
+  },
+  "presen_3rdfree_interrupt_Q": {
+    "en": "Which one would you like?",
+    "ua": "Яку гру ви хочете?"
+  },
+  "presen_3rdfree_interrupt_Q_car": {
+    "en": "Slot Racer",
+    "ua": "Слот-перегони"
+  },
+  "presen_3rdfree_interrupt_Q_trd": {
+    "en": "Trader",
+    "ua": "Біржа"
+  },
+  "presen_3rdfree_interrupt_Q_leave": {
+    "en": "Let me think it over.",
+    "ua": "Я подумаю."
+  },
+  "presen_3rdfree_interrupt_car_000": {
+    "en": "Okay! StreetPass\r\nSlot Racer it is!",
+    "ua": "Гаразд! Отже,\nСлот-перегони StreetPass!"
+  },
+  "presen_3rdfree_interrupt_trd_000": {
+    "en": "Okay! StreetPass\r\nTrader it is!",
+    "ua": "Гаразд! Отже,\nБіржа StreetPass!"
+  },
+  "presen_trd_000": {
+    "en": "In StreetPass Trader,",
+    "ua": "У Біржі StreetPass"
+  },
+  "presen_trd_010": {
+    "en": "you'll become a pro trader, buying\r\nand selling in-game shares.",
+    "ua": "ви станете трейдером, що купує\nй продає ігрові акції."
+  },
+  "presen_trd_020": {
+    "en": "Can you amass a fortune big enough to\r\nunseat share superstar William O'Naire?",
+    "ua": "Чи зберете ви статок, щоб скинути\nбіржову зірку Вільяма О'Нейра?"
+  },
+  "presen_trd_030": {
+    "en": "You'll need the analytical powers of\r\nthe people you meet via StreetPass!",
+    "ua": "Знадобиться аналітичний хист\nлюдей, зустрінутих через StreetPass!"
+  },
+  "presen_trd_040": {
+    "en": "You can buy, sell and earn in this\r\nfast-paced stock market game!",
+    "ua": "Купуйте, продавайте й заробляйте\nв цій динамічній біржовій грі!"
+  },
+  "presen_trd_050": {
+    "en": "You got it!",
+    "ua": "Зрозумів!"
+  },
+  "presen_trd_060": {
+    "en": "So, [MII_NAME]...",
+    "ua": "Отже, [MII_NAME]…"
+  },
+  "presen_trd_Q2": {
+    "en": "Have you ever heard of stocks\r\nand shares before?",
+    "ua": "Ви колись чули\nпро акції?"
+  },
+  "presen_trd_Q2_no": {
+    "en": "Um...not really.",
+    "ua": "Е-е… не дуже."
+  },
+  "presen_trd_Q2_yes": {
+    "en": "Yes, I have.",
+    "ua": "Так, чув."
+  },
+  "presen_trd_100": {
+    "en": "Okay then! Then you probably\r\nknow what you're getting into!",
+    "ua": "Гаразд! Тоді ви, мабуть,\nзнаєте, на що йдете!"
+  },
+  "presen_trd_110": {
+    "en": "That's okay!",
+    "ua": "Нічого страшного!"
+  },
+  "presen_trd_120": {
+    "en": "I'll quickly explain what stocks and\r\nshares are all about.",
+    "ua": "Швиденько поясню,\nщо таке акції."
+  },
+  "presen_trd_130": {
+    "en": "These certificates are called \"shares\".\r\nTheir price is changing all the time!",
+    "ua": "Ці папірці звуться «акції».\nЇхня ціна постійно змінюється!"
+  },
+  "presen_trd_140": {
+    "en": "If you buy them when they're cheap\r\nand sell them when the price goes up...",
+    "ua": "Якщо купити їх дешево\nй продати, коли ціна зросте…"
+  },
+  "presen_trd_145": {
+    "en": "...then you earn money!",
+    "ua": "…ви заробите гроші!"
+  },
+  "presen_trd_150": {
+    "en": "Hopefully, a lot of money!",
+    "ua": "Сподіваюся, купу грошей!"
+  },
+  "presen_trd_155": {
+    "en": "I mean, it's not real money, of course,\r\nbut just look at all that sweet cash!",
+    "ua": "Звісно, гроші не справжні,\nале погляньте, скільки готівки!"
+  },
+  "presen_trd_160": {
+    "en": "Who knew these little pieces of paper\r\ncould make you rich. right?!",
+    "ua": "Хто б подумав, що ці папірці\nможуть зробити вас багатим, га?!"
+  },
+  "presen_trd_165": {
+    "en": "So what I'm saying is...",
+    "ua": "Отже, я веду до того, що…"
+  },
+  "presen_trd_170": {
+    "en": "[GAME_TITLE] is all about...",
+    "ua": "[GAME_TITLE] — це про…"
+  },
+  "presen_trd_180_telop": {
+    "en": "Money!",
+    "ua": "Гроші!"
+  },
+  "presen_trd_190_telop": {
+    "en": "Money!\r\nAnd lots of it!",
+    "ua": "Гроші!\nІ купу грошей!"
+  },
+  "presen_trd_180": {
+    "en": "Money!",
+    "ua": "Гроші!"
+  },
+  "presen_trd_190": {
+    "en": "And lots of it!",
+    "ua": "І купу грошей!"
+  },
+  "presen_trd_220": {
+    "en": "With real stocks, you'd spend all day\r\nwatching prices go up and down...",
+    "ua": "Зі справжніми акціями ви б цілий день\nстежили, як ціни ростуть і падають…"
+  },
+  "presen_trd_230": {
+    "en": "But in this game, it all\r\nhappens in a flash!",
+    "ua": "А в цій грі все\nвідбувається миттю!"
+  },
+  "presen_trd_240": {
+    "en": "In fact, it might almost be\r\nTOO fast to keep track of...",
+    "ua": "Власне, може статися,\nщо стежити за всім ЗАШВИДКО…"
+  },
+  "presen_trd_250": {
+    "en": "But that's where your StreetPass\r\nencounters come in!",
+    "ua": "Але тут і стануть у пригоді\nзустрічі StreetPass!"
+  },
+  "presen_trd_260": {
+    "en": "They'll offer handy\r\npredictions and hints...",
+    "ua": "Вони даватимуть корисні\nпрогнози й підказки…"
+  },
+  "presen_trd_270": {
+    "en": "Which should help you to\r\nanticipate the highs and lows!",
+    "ua": "Які допоможуть передбачити\nзлети й падіння!"
+  },
+  "presen_trd_280": {
+    "en": "The more people you bring,\r\nthe clearer the picture you'll get!",
+    "ua": "Що більше людей ви приведете,\nто ясніша буде картина!"
+  },
+  "presen_trd_290": {
+    "en": "And you know what that means...\r\nmore profit for you!",
+    "ua": "А знаєте, що це означає…\nбільше прибутку для вас!"
+  },
+  "presen_trd_Q3": {
+    "en": "So, feel like joining the ranks\r\nof the outrageously rich?",
+    "ua": "Тож хочете поповнити\nлави шалено багатих?"
+  },
+  "presen_trd_Q3_more": {
+    "en": "Hmm, tell me more.",
+    "ua": "Гм, розкажи більше."
+  },
+  "presen_trd_Q3_buy": {
+    "en": "Price, please!",
+    "ua": "Яка ціна?"
+  },
+  "presen_trd_Q3_get": {
+    "en": "Yes, I want this one!",
+    "ua": "Так, хочу цю!"
+  },
+  "presen_trd_Q3_leave": {
+    "en": "I'm fine, thanks.",
+    "ua": "Ні, дякую."
+  },
+  "presen_trd_340": {
+    "en": "The more you build up your\r\nmassive piles of cash...",
+    "ua": "Що більші гори готівки\nви назбираєте…"
+  },
+  "presen_trd_350": {
+    "en": "The more companies you'll\r\nbe able to buy shares in!",
+    "ua": "То в більшу кількість компаній\nзможете купити акції!"
+  },
+  "presen_trd_360": {
+    "en": "Each new company will bring new\r\nthemed items for you to collect...",
+    "ua": "Кожна нова компанія принесе\nнові предмети для колекції…"
+  },
+  "presen_trd_370": {
+    "en": "...and give you the opportunity\r\nto earn even faster!",
+    "ua": "…і змогу заробляти\nще швидше!"
+  },
+  "presen_trd_380": {
+    "en": "By the way, if you've played\r\na lot of games here in the Plaza...",
+    "ua": "До речі, якщо ви багато\nграли в ігри тут, на площі…"
+  },
+  "presen_trd_390": {
+    "en": "The companies might seem\r\nstrangely familiar!",
+    "ua": "Ці компанії можуть здатися\nдивно знайомими!"
+  },
+  "presen_car_000": {
+    "en": "StreetPass Slot Racer is all about\r\nthe exciting world of...",
+    "ua": "Слот-перегони StreetPass —\nце захопливий світ…"
+  },
+  "presen_car_010": {
+    "en": "...slot cars!",
+    "ua": "…слот-машинок!"
+  },
+  "presen_car_020": {
+    "en": "You can create a car of your\r\nown custom design,",
+    "ua": "Можна створити машинку\nза власним дизайном"
+  },
+  "presen_car_030": {
+    "en": "and then race it against the people\r\nyou encounter via StreetPass!",
+    "ua": "і змагатися на ній із людьми,\nзустрінутими через StreetPass!"
+  },
+  "presen_car_040": {
+    "en": "Race your way up the ranks and\r\nclaim the title of World Champion!",
+    "ua": "Пробивайтеся вгору рейтингу\nй здобудьте титул чемпіона світу!"
+  },
+  "presen_car_050": {
+    "en": "You got it!",
+    "ua": "Зрозумів!"
+  },
+  "presen_car_060": {
+    "en": "So, [MII_NAME]...",
+    "ua": "Отже, [MII_NAME]…"
+  },
+  "presen_car_Q2": {
+    "en": "Have you ever heard\r\nof slot cars before?",
+    "ua": "Ви колись чули\nпро слот-машинки?"
+  },
+  "presen_car_Q2_no": {
+    "en": "Never.",
+    "ua": "Ніколи."
+  },
+  "presen_car_Q2_yes": {
+    "en": "Actually, I have.",
+    "ua": "Взагалі-то, чув."
+  },
+  "presen_car_100": {
+    "en": "Oh really?",
+    "ua": "О, справді?"
+  },
+  "presen_car_110": {
+    "en": "I should have guessed!",
+    "ua": "Варто було здогадатися!"
+  },
+  "presen_car_120": {
+    "en": "By the way, ",
+    "ua": "До речі,"
+  },
+  "presen_car_130": {
+    "en": "The controls in this game are\r\njust like real slot car racing.",
+    "ua": "Керування в цій грі —\nяк у справжніх слот-перегонах."
+  },
+  "presen_car_140": {
+    "en": "So there's only one button: A!\r\nSimple, eh?",
+    "ua": "Тож кнопка лише одна: A!\nПросто, еге ж?"
+  },
+  "presen_car_150": {
+    "en": "Or for the authentic index\r\nfinger control experience,",
+    "ua": "А для справжнього відчуття\nкерування вказівним пальцем"
+  },
+  "presen_car_160": {
+    "en": "you can set it up to use\r\nthe R Button instead!",
+    "ua": "можна налаштувати\nкнопку R!"
+  },
+  "presen_car_165": {
+    "en": "A slot car is a minature car that\r\nruns on a track with a slot in it.",
+    "ua": "Слот-машинка — мініатюрна машинка,\nщо їде трасою з пазом."
+  },
+  "presen_car_170": {
+    "en": "Enthusiasts use them for racing.",
+    "ua": "На них влаштовують перегони."
+  },
+  "presen_car_180": {
+    "en": "They're operated by remote\r\ncontrol, but...",
+    "ua": "Вони на пульті\nкерування, але…"
+  },
+  "presen_car_190": {
+    "en": "the only thing they can\r\ndo is accelerate!",
+    "ua": "вміють лише\nприскорюватися!"
+  },
+  "presen_car_200": {
+    "en": "Don't think that makes things\r\nany simpler, though! ",
+    "ua": "Та не думайте, що від цього\nвсе простіше!"
+  },
+  "presen_car_210": {
+    "en": "You gotta keep a cool head if you're\r\ngonna win these high-speed battles!",
+    "ua": "Треба мати холодну голову, щоб\nперемагати в цих швидкісних боях!"
+  },
+  "presen_car_215": {
+    "en": "That's the gist of it.",
+    "ua": "Ось і вся суть."
+  },
+  "presen_car_220": {
+    "en": "So what I'm saying is...",
+    "ua": "Отже, я веду до того, що…"
+  },
+  "presen_car_230": {
+    "en": "[GAME_TITLE] is all about...",
+    "ua": "[GAME_TITLE] — це про…"
+  },
+  "presen_car_240_telop": {
+    "en": "Speed!",
+    "ua": "Швидкість!"
+  },
+  "presen_car_250_telop": {
+    "en": "Speed!\r\nAnd racing spirit!",
+    "ua": "Швидкість!\nІ дух перегонів!"
+  },
+  "presen_car_240": {
+    "en": "Speed!",
+    "ua": "Швидкість!"
+  },
+  "presen_car_250": {
+    "en": "And racing spirit!",
+    "ua": "І дух перегонів!"
+  },
+  "presen_car_280": {
+    "en": "The more StreetPass hits,\r\nthe more rivals you'll have!",
+    "ua": "Що більше зустрічей StreetPass,\nто більше суперників!"
+  },
+  "presen_car_290": {
+    "en": "And the more you'll be able to improve\r\nthe components of your slot car!",
+    "ua": "І то більше деталей машинки\nви зможете покращити!"
+  },
+  "presen_car_300": {
+    "en": "Hobby shop owner Nico Flame\r\nwill be cheering you on!",
+    "ua": "Власник крамниці для хобі Ніко Флейм\nвболіватиме за вас!"
+  },
+  "presen_car_310": {
+    "en": "I'm sure you've got\r\nwhat it takes...",
+    "ua": "Я певен, вам\nстане хисту…"
+  },
+  "presen_car_320": {
+    "en": "...to make it to the top!",
+    "ua": "…щоб дістатися вершини!"
+  },
+  "presen_car_330": {
+    "en": "So, remember what I said\r\nabout custom designs?",
+    "ua": "Пам'ятаєте, що я казав\nпро власний дизайн?"
+  },
+  "presen_car_340": {
+    "en": "The game lets you create a slot car\r\nto your own specifications.",
+    "ua": "У грі можна створити слот-машинку\nза власними вимогами."
+  },
+  "presen_car_350": {
+    "en": "First you choose the type of\r\nchassis you want to use.",
+    "ua": "Спершу вибираєте тип\nшасі."
+  },
+  "presen_car_360": {
+    "en": "Then, choose your parts and\r\nadjust their size and position.",
+    "ua": "Потім вибираєте деталі, їхній\nрозмір і розташування."
+  },
+  "presen_car_370": {
+    "en": "You can change the colour\r\nand shape however you like.",
+    "ua": "Колір і форму можна\nзмінювати як завгодно."
+  },
+  "presen_car_371": {
+    "en": "Why not try recreating\r\nyour own family car?",
+    "ua": "Може, відтворите\nсімейне авто?"
+  },
+  "presen_car_375": {
+    "en": "And another thing!",
+    "ua": "І ще одне!"
+  },
+  "presen_car_380": {
+    "en": "There are some special cars that\r\nyou earn rather than make.",
+    "ua": "Є й особливі машинки, які\nне створюють, а заробляють."
+  },
+  "presen_car_390": {
+    "en": "Well, I say \"cars\"... They come\r\nin all sorts of shapes and sizes!",
+    "ua": "Ну, кажу «машинки»… Вони\nнайрізноманітніших форм і розмірів!"
+  },
+  "presen_car_Q3": {
+    "en": "So, is the racetrack calling you?",
+    "ua": "То що, траса кличе?"
+  },
+  "presen_car_Q3_more": {
+    "en": "Tell me more.",
+    "ua": "Розкажи більше."
+  },
+  "presen_car_Q3_buy": {
+    "en": "Price, please!",
+    "ua": "Яка ціна?"
+  },
+  "presen_car_Q3_get": {
+    "en": "Yes! I want this one!",
+    "ua": "Так! Хочу цю!"
+  },
+  "presen_car_Q3_leave": {
+    "en": "I'm fine, thanks.",
+    "ua": "Ні, дякую."
+  },
+  "presen_car_440": {
+    "en": "Let's take a look at some\r\ncourses, then, shall we?",
+    "ua": "Тоді гляньмо\nна кілька трас?"
+  },
+  "presen_car_450": {
+    "en": "A mountain track of dizzying heights\r\nand sharp drops!",
+    "ua": "Гірська траса з карколомними\nвисотами й крутими спусками!"
+  },
+  "presen_car_460": {
+    "en": "A twisty chase between forest trees!",
+    "ua": "Петляння між деревами лісу!"
+  },
+  "presen_car_470": {
+    "en": "A super-fast course with\r\na sugary-sweet flavour!",
+    "ua": "Надшвидка траса\nз солодким присмаком!"
+  },
+  "presen_car_480": {
+    "en": "Loops! Jumps!",
+    "ua": "Петлі! Трампліни!"
+  },
+  "presen_car_490": {
+    "en": "And lots more besides!",
+    "ua": "І багато іншого!"
+  },
+  "presen_car_500": {
+    "en": "And that's the game\r\nin a nutshell!",
+    "ua": "Ось і вся гра\nкоротко!"
+  },
+  "presen_chf_000": {
+    "en": "In [GAME_TITLE],",
+    "ua": "У грі [GAME_TITLE]"
+  },
+  "presen_chf_010": {
+    "en": "You'll return to the world of\r\nStreetPass Quest...as a chef!",
+    "ua": "ви повернетеся у світ\n«Порятунку Mii»… як кухар!"
+  },
+  "presen_chf_020": {
+    "en": "Get ingredients from the heroes\r\nyou encounter via StreetPass...",
+    "ua": "Отримуйте інгредієнти від героїв,\nзустрінутих через StreetPass…"
+  },
+  "presen_chf_030": {
+    "en": "...and use them to create\r\nfabulous dishes to order!",
+    "ua": "…і готуйте з них\nчудові страви на замовлення!"
+  },
+  "presen_chf_040": {
+    "en": "This game is all about cooking dishes\r\nand serving them to hungry heroes!",
+    "ua": "Тут ви готуєте страви\nй годуєте голодних героїв!"
+  },
+  "presen_chf_050": {
+    "en": "Sure thing!",
+    "ua": "Аякже!"
+  },
+  "presen_chf_060": {
+    "en": "[GAME_TITLE] is the tale of a\r\nrestaurant.",
+    "ua": "[GAME_TITLE] — історія\nодного ресторану."
+  },
+  "presen_chf_070": {
+    "en": "A restaurant for heroes on a mission.\r\nA mission to rescue the monarch!",
+    "ua": "Ресторану для героїв на місії.\nМісії з порятунку володаря!"
+  },
+  "presen_chf_080": {
+    "en": "The food they eat here could be the\r\ndifference between victory and defeat!",
+    "ua": "Їжа, яку вони тут їдять, може\nвирішити: перемога чи поразка!"
+  },
+  "presen_chf_090": {
+    "en": "Between the ingredients\r\nthe heroes bring...",
+    "ua": "Інгредієнти,\nякі приносять герої…"
+  },
+  "presen_chf_100": {
+    "en": "And the culinary talent\r\nyou provide...",
+    "ua": "І ваш кулінарний\nталант…"
+  },
+  "presen_chf_110": {
+    "en": "Who knows what kind of\r\ndishes you'll come up with?!",
+    "ua": "Хто знає, які страви\nу вас вийдуть?!"
+  },
+  "presen_chf_120": {
+    "en": "So what I'm saying is,\r\n[GAME_TITLE] is all about...",
+    "ua": "Отже, [GAME_TITLE] —\nце про…"
+  },
+  "presen_chf_130_telop": {
+    "en": "Food!",
+    "ua": "Їжу!"
+  },
+  "presen_chf_140_telop": {
+    "en": "Food!\r\nAnd saving the world!",
+    "ua": "Їжу!\nІ порятунок світу!"
+  },
+  "presen_chf_130": {
+    "en": "Food!",
+    "ua": "Їжу!"
+  },
+  "presen_chf_140": {
+    "en": "And saving the world!",
+    "ua": "І порятунок світу!"
+  },
+  "presen_chf_170": {
+    "en": "Looks like the heroes brought us\r\nsome chicken and some onion.",
+    "ua": "Схоже, герої принесли\nкурятину й цибулю."
+  },
+  "presen_chf_180": {
+    "en": "How about a delicious roast chicken!",
+    "ua": "Як щодо смачної печеної курки!"
+  },
+  "presen_chf_190": {
+    "en": "Tuna, salmon and rice?",
+    "ua": "Тунець, лосось і рис?"
+  },
+  "presen_chf_200": {
+    "en": "Sushi time!",
+    "ua": "Час суші!"
+  },
+  "presen_chf_210": {
+    "en": "Just select the ingredients, and\r\nthe rest happens like magic!",
+    "ua": "Просто виберіть інгредієнти,\nа решта станеться як магія!"
+  },
+  "presen_chf_220": {
+    "en": "It doesn't matter if you've never\r\ncooked a day in your life!\r\n",
+    "ua": "Навіть якщо ви жодного разу\nв житті не готували!\n"
+  },
+  "presen_chf_230": {
+    "en": "The tastier the dishes\r\nyou create...",
+    "ua": "Що смачніші страви\nви приготуєте…"
+  },
+  "presen_chf_240": {
+    "en": "The more energy the heroes\r\nwill have for their adventure!",
+    "ua": "То більше сил матимуть\nгерої для пригод!"
+  },
+  "presen_chf_250": {
+    "en": "Oh, but don't worry!",
+    "ua": "О, але не хвилюйтеся!"
+  },
+  "presen_chf_260": {
+    "en": "This game won't actually affect\r\nyour progress in StreetPass Quest!",
+    "ua": "Ця гра не впливає на ваш\nпоступ у «Порятунку Mii»!"
+  },
+  "presen_chf_270": {
+    "en": "Just concentrate on making\r\nthe best food you can...",
+    "ua": "Просто зосередьтеся на тому,\nщоб готувати якнайкраще…"
+  },
+  "presen_chf_Q2": {
+    "en": "And the monarch will be\r\nrescued in no time!",
+    "ua": "І володаря врятують\nу два рахунки!"
+  },
+  "presen_chf_Q2_more": {
+    "en": "Tell me more!",
+    "ua": "Розкажи більше!"
+  },
+  "presen_chf_Q2_buy": {
+    "en": "Price, please!",
+    "ua": "Яка ціна?"
+  },
+  "presen_chf_Q2_leave": {
+    "en": "I'm fine, thanks.",
+    "ua": "Ні, дякую."
+  },
+  "presen_chf_320": {
+    "en": "Store less common ingredients in the\r\nfridge so you're ready for anything...",
+    "ua": "Зберігайте рідкісні інгредієнти\nв холодильнику про всяк випадок…"
+  },
+  "presen_chf_330": {
+    "en": "Or experiment with spare ingredients\r\nto discover delicious new recipes!",
+    "ua": "Або експериментуйте із запасами,\nщоб відкрити нові смачні рецепти!"
+  },
+  "presen_chf_340": {
+    "en": "Track the progress of the heroes'\r\nquest in the daily Hero Times.",
+    "ua": "Стежте за пригодами героїв\nу щоденній «Газеті героїв»."
+  },
+  "presen_chf_350": {
+    "en": "Of course, your cooking might\r\nnot always go quite as planned!",
+    "ua": "Звісно, готування не завжди\nйде за планом!"
+  },
+  "presen_chf_360": {
+    "en": "Experience the unsung legend\r\nbehind StreetPass Quest!",
+    "ua": "Відкрийте неоспівану легенду,\nщо стоїть за «Порятунком Mii»!"
+  },
+  "presen_chf_370": {
+    "en": "And that's the game\r\nin a nutshell!",
+    "ua": "Ось і вся гра\nкоротко!"
+  },
+  "presen_nja_000": {
+    "en": "In [GAME_TITLE], you'll defend the\r\nland using the secret ninja skill of...",
+    "ua": "У грі [GAME_TITLE] ви захищаєте край\nтаємною технікою ніндзя…"
+  },
+  "presen_nja_010": {
+    "en": "...being fired from a cannon!\r\nMakes perfect sense, right?",
+    "ua": "…політ із гармати!\nЦілком логічно, правда ж?"
+  },
+  "presen_nja_020": {
+    "en": "Enter the cannon armed with\r\nnothing but your wits,",
+    "ua": "Залазьте в гармату, озброєні\nлише кмітливістю,"
+  },
+  "presen_nja_030": {
+    "en": "and grab armaments from your\r\nStreetPass encounters as you fly!",
+    "ua": "і хапайте в польоті спорядження\nвід зустрічей StreetPass!"
+  },
+  "presen_nja_040": {
+    "en": "Give the demon army\r\na taste of ninja justice!",
+    "ua": "Дайте військові демонів\nскуштувати справедливості ніндзя!"
+  },
+  "presen_nja_050": {
+    "en": "You got it!",
+    "ua": "Зрозумів!"
+  },
+  "presen_nja_060": {
+    "en": "So what I'm saying is,\r\n[GAME_TITLE] is all about...",
+    "ua": "Отже, [GAME_TITLE] —\nце про…"
+  },
+  "presen_nja_070_telop": {
+    "en": "Courage!",
+    "ua": "Відвага!"
+  },
+  "presen_nja_080_telop": {
+    "en": "Courage!\r\nAnd ninja cannons!",
+    "ua": "Відвага!\nІ гармати ніндзя!"
+  },
+  "presen_nja_070": {
+    "en": "Courage!",
+    "ua": "Відвага!"
+  },
+  "presen_nja_080": {
+    "en": "And ninja cannons!",
+    "ua": "І гармати ніндзя!"
+  },
+  "presen_nja_100": {
+    "en": "The demon army poses a\r\nformidable challenge.",
+    "ua": "Військо демонів —\nгрізний супротивник."
+  },
+  "presen_nja_110": {
+    "en": "There's no way you'd be able\r\nto take them down alone.",
+    "ua": "Самотужки їх\nніяк не здолати."
+  },
+  "presen_nja_120": {
+    "en": "Luckily, your StreetPass ninja friends\r\nhave some scrolls to help you out!",
+    "ua": "На щастя, друзі-ніндзя зі StreetPass\nмають для вас сувої!"
+  },
+  "presen_nja_140": {
+    "en": "The scrolls will power you up\r\nso you can take on the demons.",
+    "ua": "Сувої посилять вас, щоб\nви змогли битися з демонами."
+  },
+  "presen_nja_150": {
+    "en": "So what are you waiting for?!\r\nClimb into the cannon!",
+    "ua": "То чого ви чекаєте?!\nЛізьте в гармату!"
+  },
+  "presen_nja_160": {
+    "en": "...Oh, you want to know\r\nhow to get the scrolls?",
+    "ua": "…О, хочете знати,\nяк отримати сувої?"
+  },
+  "presen_nja_170": {
+    "en": "Well, they're attached to kites.",
+    "ua": "Вони прив'язані до зміїв."
+  },
+  "presen_nja_180": {
+    "en": "All you have to do is line them up\r\ncarefully so you can grab them!",
+    "ua": "Треба лише акуратно вишикувати їх\nв ряд, щоб схопити!"
+  },
+  "presen_nja_190": {
+    "en": "Once you've got them\r\nneatly lined up...",
+    "ua": "Коли вони вишикувані\nв рівний ряд…"
+  },
+  "presen_nja_200": {
+    "en": "It's time to fire!",
+    "ua": "Час стріляти!"
+  },
+  "presen_nja_205": {
+    "en": "And...boom!",
+    "ua": "І… бабах!"
+  },
+  "presen_nja_210": {
+    "en": "Ninja transform!",
+    "ua": "Перевтілення ніндзя!"
+  },
+  "presen_nja_220": {
+    "en": "[System:Size percent=\"150\" ]Ninja transform!![/System:Size]",
+    "ua": "[System:Size percent=\"150\" ]Перевтілення ніндзя!![/System:Size]"
+  },
+  "presen_nja_230": {
+    "en": "[System:Size percent=\"170\" ]Ninja transform!!![/System:Size]",
+    "ua": "[System:Size percent=\"170\" ]Перевтілення ніндзя!!![/System:Size]"
+  },
+  "presen_nja_240": {
+    "en": "What do you mean,\r\n\"that's not a ninja\"?",
+    "ua": "Що значить\n«це не ніндзя»?"
+  },
+  "presen_nja_250": {
+    "en": "There's no point sweating\r\nthe small stuff!",
+    "ua": "Не варто перейматися\nдрібницями!"
+  },
+  "presen_nja_260": {
+    "en": "Just go with the flow and\r\ntry to slay those demons!",
+    "ua": "Просто пливіть за течією\nй бийте демонів!"
+  },
+  "presen_nja_Q2": {
+    "en": "Ready to fire, [MII_NAME]?",
+    "ua": "Готові до пострілу, [MII_NAME]?"
+  },
+  "presen_nja_Q2_buy": {
+    "en": "Price, please!",
+    "ua": "Яка ціна?"
+  },
+  "presen_nja_Q2_leave": {
+    "en": "I'm fine, thanks.",
+    "ua": "Ні, дякую."
+  },
+  "presen_exp_000": {
+    "en": "In StreetPass Explorers, grab your\r\nrucksack and set off for adventure!",
+    "ua": "В Експедиції StreetPass хапайте\nрюкзак і вирушайте в пригоди!"
+  },
+  "presen_exp_010": {
+    "en": "As an intrepid archaeologist, you'll\r\nchase after ancient mysteries,",
+    "ua": "Як безстрашний археолог,\nви розгадуватимете давні таємниці,"
+  },
+  "presen_exp_020": {
+    "en": "using the real-life step counts of\r\nyour trusty StreetPass companions.",
+    "ua": "спираючись на справжні кроки\nвірних супутників зі StreetPass."
+  },
+  "presen_exp_030": {
+    "en": "Journey deep into the heart of the\r\njungle and the depths of ruined cities,",
+    "ua": "Вирушайте в серце джунглів\nі глибини зруйнованих міст,"
+  },
+  "presen_exp_040": {
+    "en": "in a quest to discover the\r\ntruth behind the myths!",
+    "ua": "щоб дізнатися правду,\nяка ховається за міфами!"
+  },
+  "presen_exp_050": {
+    "en": "Sure thing!",
+    "ua": "Аякже!"
+  },
+  "presen_exp_060": {
+    "en": "So what I'm saying is,\r\n[GAME_TITLE] is all about...",
+    "ua": "Отже, [GAME_TITLE] —\nце про…"
+  },
+  "presen_exp_070_telop": {
+    "en": "Adventure!",
+    "ua": "Пригоди!"
+  },
+  "presen_exp_080_telop": {
+    "en": "Adventure!\r\nAnd ancient mysteries!",
+    "ua": "Пригоди!\nІ давні таємниці!"
+  },
+  "presen_exp_070": {
+    "en": "Adventure!",
+    "ua": "Пригоди!"
+  },
+  "presen_exp_080": {
+    "en": "And ancient mysteries!",
+    "ua": "І давні таємниці!"
+  },
+  "presen_exp_090": {
+    "en": "You know this number at the\r\ntop of your HOME Menu?",
+    "ua": "Бачите число вгорі\nменю HOME?"
+  },
+  "presen_exp_100": {
+    "en": "That's your daily step count.\r\nEveryone has one!",
+    "ua": "Це кількість кроків за день.\nВона є в кожного!"
+  },
+  "presen_exp_110": {
+    "en": "So, say you meet someone\r\nwith a step count of 500...",
+    "ua": "Тож якщо зустріти когось,\nхто пройшов 500 кроків…"
+  },
+  "presen_exp_120": {
+    "en": "That lets you explore\r\nfor 500 steps!",
+    "ua": "Ви зможете дослідити\n500 кроків!"
+  },
+  "presen_exp_130": {
+    "en": "But if they had a step\r\ncount of, say, 10,000...",
+    "ua": "А якщо в нього\nбуло, скажімо, 10 000…"
+  },
+  "presen_exp_140": {
+    "en": "You guessed it! You get to\r\nexplore for 10,000 steps!",
+    "ua": "Саме так! Ви досліджуватимете\n10 000 кроків!"
+  },
+  "presen_exp_150": {
+    "en": "Meet ten people like that, and\r\nyou'll be making tons of progress!",
+    "ua": "Зустріньте десять таких людей —\nі просунетеся дуже далеко!"
+  },
+  "presen_exp_160": {
+    "en": "Really makes you want to meet\r\npeople who walk a lot, huh?",
+    "ua": "Так і хочеться зустрічати тих,\nхто багато ходить, правда?"
+  },
+  "presen_exp_170": {
+    "en": "In order to unravel the mysteries\r\nat the heart of this game,",
+    "ua": "Щоб розгадати таємниці,\nякі лежать в основі цієї гри,"
+  },
+  "presen_exp_180": {
+    "en": "your exploration team is going\r\nto have to travel a long way.",
+    "ua": "вашій експедиції доведеться\nпройти довгий шлях."
+  },
+  "presen_exp_190": {
+    "en": "Through jungles, into ancient\r\nruins, up snowy mountains...",
+    "ua": "Крізь джунглі, у давні\nруїни, на засніжені гори…"
+  },
+  "presen_exp_200": {
+    "en": "Take your trusty map in hand\r\nand set off into the unknown!",
+    "ua": "Візьміть вірну мапу\nй вирушайте в невідоме!"
+  },
+  "presen_exp_210": {
+    "en": "Phew, walking all that way!",
+    "ua": "Фух, стільки пройти!"
+  },
+  "presen_exp_Q2": {
+    "en": "So, does that pique\r\nyour interest?",
+    "ua": "Ну що, зацікавило?"
+  },
+  "presen_exp_Q2_more": {
+    "en": "Tell me more!",
+    "ua": "Розкажи більше!"
+  },
+  "presen_exp_Q2_buy": {
+    "en": "Price, please!",
+    "ua": "Яка ціна?"
+  },
+  "presen_exp_Q2_leave": {
+    "en": "I'm fine, thanks.",
+    "ua": "Ні, дякую."
+  },
+  "presen_exp_260": {
+    "en": "You'll have to cut through\r\nthickets...",
+    "ua": "Доведеться продиратися\nкрізь хащі…"
+  },
+  "presen_exp_270": {
+    "en": "Fend off dangerous beasts...",
+    "ua": "Відбиватися від звірів…"
+  },
+  "presen_exp_280": {
+    "en": "Brave ancient curses...",
+    "ua": "Кидати виклик давнім прокляттям…"
+  },
+  "presen_exp_290": {
+    "en": "And climb steep, icy mountains!",
+    "ua": "І дертися на круті крижані гори!"
+  },
+  "presen_exp_300": {
+    "en": "What awaits you at the end?\r\nWell, you'll just have to see!",
+    "ua": "Що чекає в кінці?\nДоведеться побачити самим!"
+  },
+  "presen_exp_310": {
+    "en": "And that's the game\r\nin a nutshell!",
+    "ua": "Ось і вся гра\nкоротко!"
+  }
+}

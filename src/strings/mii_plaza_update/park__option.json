@@ -1,0 +1,694 @@
+{
+  "cap_ce_u": {
+    "en": "StreetPass",
+    "ua": "StreetPass"
+  },
+  "cap_entry_u": {
+    "en": "Invitations",
+    "ua": "Запрошення"
+  },
+  "cap_value_u": {
+    "en": "Ratings",
+    "ua": "Оцінки"
+  },
+  "cap_omit_u": {
+    "en": "Skip Greetings",
+    "ua": "Пропуск вітань"
+  },
+  "cap_del_sepa_greeting_u": {
+    "en": "Erase Personal Greetings",
+    "ua": "Стерти особисті вітання"
+  },
+  "cap_unconscious_u": {
+    "en": "SpotPass",
+    "ua": "SpotPass"
+  },
+  "cap_play_report_u": {
+    "en": "Sharing Usage Information",
+    "ua": "Обмін даними про використання"
+  },
+  "cap_legend_give_up_u": {
+    "en": "Give Up StreetPass Quest",
+    "ua": "Покинути «Порятунок Mii»"
+  },
+  "cap_setup_u": {
+    "en": "Settings",
+    "ua": "Параметри"
+  },
+  "cap_etc_u": {
+    "en": "Other Options",
+    "ua": "Додатково"
+  },
+  "cap_piece_give_up_u": {
+    "en": "Give Up Puzzle Swap",
+    "ua": "Кинути «Збери пазл»"
+  },
+  "dlg_mii_public00_u": {
+    "en": "Want to activate StreetPass?",
+    "ua": "Увімкнути StreetPass?"
+  },
+  "dlg_mii_public04_u": {
+    "en": "Selecting No will deactivate StreetPass.",
+    "ua": "Якщо вибрати «Ні», StreetPass буде вимкнено."
+  },
+  "dlg_setup_yes_ce_u": {
+    "en": "StreetPass has been activated!",
+    "ua": "StreetPass увімкнено!"
+  },
+  "dlg_mii_public02_u": {
+    "en": "Well, alright then.",
+    "ua": "Ну добре."
+  },
+  "dlg_mii_public03_u": {
+    "en": "Feel free to change this setting\r\nwhenever you feel like it.",
+    "ua": "Цей параметр можна змінити\nбудь-коли."
+  },
+  "dlg_mii_public01_u": {
+    "en": "This will share information about your Mii and\r\nthe software you're using with other users.",
+    "ua": "Інші користувачі бачитимуть дані про вашого Mii\nі програми, якими ви користуєтеся."
+  },
+  "dlg_setup_no_change_unconscious_u": {
+    "en": "If StreetPass isn't activated, then\r\nyou won't be able to activate\r\nSpotPass either.",
+    "ua": "Якщо StreetPass не активовано,\nто й SpotPass активувати\nне вдасться."
+  },
+  "dlg_change_no_unconscious_u": {
+    "en": "SpotPass has been deactivated!",
+    "ua": "SpotPass вимкнено!"
+  },
+  "dlg_mii_unconscious00_u": {
+    "en": "Receive notifications and content\r\nfor this title through SpotPass?",
+    "ua": "Отримувати сповіщення й вміст\nцієї програми через SpotPass?"
+  },
+  "dlg_mii_unconscious01_u": {
+    "en": "This may include promotional and advertising\r\ncontent from Nintendo and its partners.",
+    "ua": "Серед них можуть бути рекламні матеріали\nвід Nintendo та її партнерів."
+  },
+  "dlg_setup_yes_unconscious_u": {
+    "en": "SpotPass has been activated!",
+    "ua": "SpotPass увімкнено!"
+  },
+  "dlg_mii_unconscious02_u": {
+    "en": "Selecting No will deactivate SpotPass. You'll\r\nno longer get notifications for this software.",
+    "ua": "Вибір «Ні» деактивує SpotPass, і ви більше\nне отримуватимете сповіщень цієї програми."
+  },
+  "dlg_mii_entry01_u": {
+    "en": "Invite Mii characters you meet\r\nin other games to your plaza?",
+    "ua": "Запрошувати на площу Mii,\nяких ви зустрічаєте в інших іграх?"
+  },
+  "dlg_mii_entry02_u": {
+    "en": "Mii characters in your plaza may show up in other\r\ngames you play! Keep an eye out for them!",
+    "ua": "Mii з вашої площі можуть з'являтися в інших\nіграх! Тож пильнуйте!"
+  },
+  "dlg_setup_called_u": {
+    "en": "Mii characters you meet\r\nin other games will now\r\nbe invited to your plaza.",
+    "ua": "Mii, яких ви зустрічаєте\nв інших іграх, тепер\nзапрошуватимуться на площу."
+  },
+  "dlg_setup_called_02_u": {
+    "en": "You just might find your plaza\r\nfilling up with Mii characters\r\nbefore you realise it! Be sure\r\nto check back here regularly!",
+    "ua": "Ваша площа може заповнитися\nMii швидше, ніж ви\nозирнетеся! Тож заглядайте\nсюди частіше!"
+  },
+  "dlg_setup_not_called_u": {
+    "en": "Mii characters you meet\r\nin other games will not\r\nbe invited to your plaza.",
+    "ua": "Mii, яких ви зустрічаєте\nв інших іграх, не будуть\nзапрошуватися на площу."
+  },
+  "dlg_value00_u": {
+    "en": "Would you like to receive ratings\r\nfrom StreetPass Mii characters?",
+    "ua": "Отримувати оцінки\nвід Mii зі StreetPass?"
+  },
+  "dlg_value01_u": {
+    "en": "You will now receive ratings.",
+    "ua": "Ви отримуватимете оцінки."
+  },
+  "dlg_value02_u": {
+    "en": "You will not receive ratings.",
+    "ua": "Ви не отримуватимете оцінки."
+  },
+  "dlg_omit00_u": {
+    "en": "Would you like to skip greetings\r\nfrom Mii characters?",
+    "ua": "Пропускати вітання\nвід Mii?"
+  },
+  "dlg_omit01_u": {
+    "en": "Greetings will be skipped.",
+    "ua": "Вітання буде пропущено."
+  },
+  "dlg_omit02_u": {
+    "en": "Greetings will not be skipped.",
+    "ua": "Вітання не пропускатимуться."
+  },
+  "dlg_del_sepa_greeting01_u": {
+    "en": "Would you like to erase\r\nyour personal greetings?",
+    "ua": "Стерти ваші\nособисті вітання?"
+  },
+  "dlg_del_sepa_greeting03_u": {
+    "en": "Do you really want to erase\r\npersonal greetings?",
+    "ua": "Справді стерти\nособисті вітання?"
+  },
+  "dlg_del_sepa_greeting02_u": {
+    "en": "Personal greetings erased.",
+    "ua": "Особисті вітання стерто."
+  },
+  "dlg_panel_give_up_01_u": {
+    "en": "Give up your Puzzle Swap progress\r\nand reset data?",
+    "ua": "Покинути «Збери пазл»\nі скинути дані?"
+  },
+  "dlg_panel_give_up_02_u": {
+    "en": "You will lose all pieces.\r\nIs this really OK?",
+    "ua": "Усі частинки буде втрачено.\nПродовжити?"
+  },
+  "dlg_panel_give_up_03_u": {
+    "en": "You gave up on Puzzle Swap\r\nand lost all of your pieces.",
+    "ua": "Ви покинули «Збери пазл»\nі втратили всі частинки."
+  },
+  "dlg_panel_no_data_u": {
+    "en": "There is no current save\r\nfile for Puzzle Swap.",
+    "ua": "Немає збережених даних\nгри «Збери пазл»."
+  },
+  "dlg_legend2_give_up_01_u": {
+    "en": "Give up your StreetPass Quest\r\nprogress and reset data?",
+    "ua": "Покинути «Порятунок Mii»\nі скинути дані?"
+  },
+  "dlg_legend2_give_up_04_u": {
+    "en": "You won't lose any Mii accessories\r\nyou've received.",
+    "ua": "Отримані аксесуари для Mii\nне буде втрачено."
+  },
+  "dlg_legend2_give_up_02_u": {
+    "en": "You will start over again from the\r\nbeginning. Are you sure?",
+    "ua": "Гру буде розпочато заново.\nПродовжити?"
+  },
+  "dlg_legend2_give_up_03_u": {
+    "en": "You gave up on StreetPass Quest.",
+    "ua": "Ви кинули «Порятунок Mii»."
+  },
+  "dlg_legend2_no_data_u": {
+    "en": "There is no current save\r\nfile for StreetPass Quest.",
+    "ua": "Немає збережених даних\nгри «Порятунок Mii»."
+  },
+  "dlg_legend2_2nd_give_up_01_u": {
+    "en": "Give up your StreetPass Quest II\r\nprogress and reset data?",
+    "ua": "Покинути «Порятунок Mii II»\nі скинути дані?"
+  },
+  "dlg_legend2_2nd_give_up_03_u": {
+    "en": "You gave up on\r\nStreetPass Quest II.",
+    "ua": "Ви покинули\n«Порятунок Mii II»."
+  },
+  "dlg_legend2_2nd_no_data_u": {
+    "en": "There is no current save\r\nfile for StreetPass Quest II.",
+    "ua": "Немає збережених даних\nгри «Порятунок Mii II»."
+  },
+  "dlg_legend2_2nd_select_01_u": {
+    "en": "Which do you want to give up on?",
+    "ua": "Що саме ви хочете кинути?"
+  },
+  "dlg_legend2_2nd_choice_value_01_u": {
+    "en": "StreetPass Quest",
+    "ua": "Порятунок Mii"
+  },
+  "dlg_legend2_2nd_choice_value_02_u": {
+    "en": "StreetPass Quest II",
+    "ua": "Порятунок Mii II"
+  },
+  "dlg_savedata_no_access_u": {
+    "en": "Could not access the extra data\r\non the SD Card.",
+    "ua": "Не вдалося відкрити додаткові\nдані на карті SD."
+  },
+  "dlg_make_savedata_unconscious_02_u": {
+    "en": "Created extra data\r\non the SD Card.",
+    "ua": "Додаткові дані\nстворено на карті SD."
+  },
+  "dlg_flop_make_savedata_unconscious_u": {
+    "en": "Failed to create extra data\r\non the SD Card.",
+    "ua": "Не вдалося створити додаткові\nдані на карті SD."
+  },
+  "dlg_noce_u": {
+    "en": "This software cannot be used with\r\nStreetPass because StreetPass is\r\nrestricted by Parental Controls.",
+    "ua": "Ця програма недоступна\nдля StreetPass: його обмежено\nБатьківським контролем."
+  },
+  "dlg_fullbox_u": {
+    "en": "No additional titles can\r\nbe activated for use with\r\nStreetPass on this system.",
+    "ua": "На цій системі більше не можна\nактивувати програми\nдля StreetPass."
+  },
+  "dlg_fullbox_02_u": {
+    "en": "Go to StreetPass Management in\r\nthe System Settings and deactivate\r\nStreetPass for other software.",
+    "ua": "У розділі Керування StreetPass\nНалаштувань системи деактивуйте\nStreetPass для інших програм."
+  },
+  "dlg_go_set_u": {
+    "en": "Press  to return to the\r\nHOME Menu, where you can\r\ncheck the System Settings.",
+    "ua": "Натисніть , щоб повернутися\nдо меню HOME і перейти\nдо Налаштувань системи."
+  },
+  "dlg_play_report_00_u": {
+    "en": "Will you share your software-usage\r\ninformation with Nintendo? This data\r\nhelps us improve StreetPass Mii Plaza.",
+    "ua": "Надсилати Nintendo дані про\nвикористання програми? Це допоможе\nпокращити Площу StreetPass Mii."
+  },
+  "dlg_play_report_01_u": {
+    "en": "You've agreed to share your\r\nsoftware-usage information.",
+    "ua": "Ви погодилися ділитися даними\nпро використання програми."
+  },
+  "dlg_play_report_02_u": {
+    "en": "You've declined to share your\r\nsoftware-usage information.",
+    "ua": "Ви відмовилися ділитися даними\nпро використання програми."
+  },
+  "dlg_choice_do_u": {
+    "en": "Yes",
+    "ua": "Так"
+  },
+  "dlg_choice_do_not_u": {
+    "en": "No",
+    "ua": "Ні"
+  },
+  "dlg_choice_get_value_u": {
+    "en": "On",
+    "ua": "Увімк."
+  },
+  "dlg_choice_not_value_u": {
+    "en": "Off",
+    "ua": "Вимк."
+  },
+  "dlg_choice_real_delete02_u": {
+    "en": "Erase",
+    "ua": "Стерти"
+  },
+  "dlg_choice_give_up_u": {
+    "en": "Give Up",
+    "ua": "Кинути"
+  },
+  "dlg_choice_really_give_up_u": {
+    "en": "Really Give Up",
+    "ua": "Таки кинути"
+  },
+  "dlg_choice_now_this_u": {
+    "en": "Current",
+    "ua": "Поточне"
+  },
+  "dlg_choice_now_do_u": {
+    "en": "On",
+    "ua": "Так"
+  },
+  "dlg_choice_now_do_not_u": {
+    "en": "Off",
+    "ua": "Ні"
+  },
+  "dlg_choice_now_get_u": {
+    "en": "On",
+    "ua": "Увімк."
+  },
+  "dlg_choice_now_not_get_u": {
+    "en": "Off",
+    "ua": "Вимк."
+  },
+  "dlg_choice_ce_u": {
+    "en": "StreetPass",
+    "ua": "StreetPass"
+  },
+  "dlg_choice_entry_u": {
+    "en": "Invitations",
+    "ua": "Запрошення"
+  },
+  "dlg_choice_value_u": {
+    "en": "Ratings",
+    "ua": "Оцінки"
+  },
+  "dlg_choice_omit_u": {
+    "en": "Skip Greetings",
+    "ua": "Пропуск вітань"
+  },
+  "dlg_choice_etc_u": {
+    "en": "Other Options",
+    "ua": "Інше"
+  },
+  "dlg_choice_unconscious_ce_u": {
+    "en": "SpotPass",
+    "ua": "SpotPass"
+  },
+  "dlg_choice_del_sepa_greeting_u": {
+    "en": "Erase Personal Greetings",
+    "ua": "Стерти особисті вітання"
+  },
+  "dlg_choice_panel_throw_u": {
+    "en": "Give Up Puzzle Swap",
+    "ua": "Кинути «Збери пазл»"
+  },
+  "dlg_choice_legend_give_up_u": {
+    "en": "Give Up StreetPass Quest",
+    "ua": "Покинути «Порятунок Mii»"
+  },
+  "dlg_choice_play_report_u": {
+    "en": "Share Info",
+    "ua": "Ділитися"
+  },
+  "dlg_choice_back_u": {
+    "en": "Back",
+    "ua": "Назад"
+  },
+  "dlg_choice_delete_greeting_u": {
+    "en": "Erase",
+    "ua": "Стерти"
+  },
+  "givemii_caption": {
+    "en": "Distribution Function",
+    "ua": "Роздавання"
+  },
+  "givemii_start": {
+    "en": "Start distribution?",
+    "ua": "Почати роздавання?"
+  },
+  "givemii_yes": {
+    "en": "Yes",
+    "ua": "Так"
+  },
+  "givemii_no": {
+    "en": "No",
+    "ua": "Ні"
+  },
+  "givemii_now": {
+    "en": "Distribution in progress.",
+    "ua": "Роздавання триває."
+  },
+  "givemii_end": {
+    "en": "Stop distribution?",
+    "ua": "Спинити роздавання?"
+  },
+  "givemii_log": {
+    "en": "The Mii was distributed\r\nto [0] player(s).",
+    "ua": "Mii передано\n[0] гравцям."
+  },
+  "meet3_top_cap": {
+    "en": "Settings [0]",
+    "ua": "Параметри [0]"
+  },
+  "meet3_top_version": {
+    "en": "Ver. [0]",
+    "ua": "Вер. [0]"
+  },
+  "meet3_top_item_expl_00": {
+    "en": "View Intro to StreetPass",
+    "ua": "Про StreetPass"
+  },
+  "meet3_top_item_expl_01": {
+    "en": "View Intro to SpotPass",
+    "ua": "Про SpotPass"
+  },
+  "meet3_top_item_expl_02": {
+    "en": "View Intro to Game Purchasing",
+    "ua": "Про купівлю ігор"
+  },
+  "meet3_top_item_mg_give_up": {
+    "en": "Give Up [MINIGAME_TITLE]",
+    "ua": "Покинути: [MINIGAME_TITLE]"
+  },
+  "meet3_top_item_mg_delete": {
+    "en": "Delete [MINIGAME_TITLE]",
+    "ua": "Видалити: [MINIGAME_TITLE]"
+  },
+  "meet3_mg_give_up_cap": {
+    "en": "Give Up [MINIGAME_TITLE]",
+    "ua": "Покинути: [MINIGAME_TITLE]"
+  },
+  "meet3_mg_give_up_notice_00": {
+    "en": "Give up your [MINIGAME_TITLE]\r\nprogress and reset data?",
+    "ua": "Покинути гру [MINIGAME_TITLE]\nі скинути дані?"
+  },
+  "meet3_mg_give_up_annotation_00": {
+    "en": "You won't lose any Mii accessories\r\nor plaza tickets you've received.",
+    "ua": "Отримані аксесуари для Mii\nі квитки Площі не буде втрачено."
+  },
+  "meet3_mg_give_up_report": {
+    "en": "You gave up on\r\n[MINIGAME_TITLE].",
+    "ua": "Ви покинули гру\n[MINIGAME_TITLE]."
+  },
+  "meet3_mg_give_up_report_already": {
+    "en": "There is no current save\r\nfile for [MINIGAME_TITLE].",
+    "ua": "Немає збережених даних\nгри [MINIGAME_TITLE]."
+  },
+  "meet3_mg_delete_cap": {
+    "en": "Delete [MINIGAME_TITLE]",
+    "ua": "Видалити: [MINIGAME_TITLE]"
+  },
+  "meet3_mg_delete_notice_00": {
+    "en": "Are you sure you want to delete\r\nthis title from the SD Card?",
+    "ua": "Справді видалити цю гру\nз карти SD?"
+  },
+  "meet3_mg_delete_notice_01": {
+    "en": "Are you certain? This will\r\ndelete [MINIGAME_TITLE].",
+    "ua": "Ви впевнені? Гру\n[MINIGAME_TITLE] буде видалено."
+  },
+  "meet3_mg_delete_annotation_00": {
+    "en": "You can redownload it later if needed.",
+    "ua": "Її можна буде завантажити знову."
+  },
+  "meet3_mg_delete_report": {
+    "en": "[MINIGAME_TITLE]\r\nhas been deleted from\r\nthe SD Card.",
+    "ua": "Гру [MINIGAME_TITLE]\nвидалено\nз карти SD."
+  },
+  "mg_title_mgPiece": {
+    "en": "Puzzle Swap",
+    "ua": "Збери пазл"
+  },
+  "mg_title_mgLegend": {
+    "en": "StreetPass Quest",
+    "ua": "Порятунок Mii"
+  },
+  "meet3_mg_title_mgBtl": {
+    "en": "StreetPass Battle",
+    "ua": "Фортеця StreetPass"
+  },
+  "meet3_mg_title_mgFlo": {
+    "en": "StreetPass Garden",
+    "ua": "Сад StreetPass"
+  },
+  "meet3_mg_title_mgPzd": {
+    "en": "StreetPass Mansion",
+    "ua": "Таємничий маєток StreetPass"
+  },
+  "meet3_mg_title_mgSht": {
+    "en": "StreetPass Squad",
+    "ua": "Галактика StreetPass"
+  },
+  "meet4_mg_title_mgFsh": {
+    "en": "StreetPass Fishing",
+    "ua": "Риболовля StreetPass"
+  },
+  "meet4_mg_title_mgZmb": {
+    "en": "StreetPass Zombies",
+    "ua": "Зомбі StreetPass"
+  },
+  "meet5_mg_title_mgCar": {
+    "en": "StreetPass Slot Racer",
+    "ua": "Слот-перегони StreetPass"
+  },
+  "meet5_mg_title_mgTrd": {
+    "en": "StreetPass Trader",
+    "ua": "Біржа StreetPass"
+  },
+  "meet5_mg_title_mgChf": {
+    "en": "StreetPass Chef",
+    "ua": "Ресторан StreetPass"
+  },
+  "meet5_mg_title_mgNja": {
+    "en": "StreetPass Ninja",
+    "ua": "Ніндзя StreetPass"
+  },
+  "meet5_mg_title_mgExp": {
+    "en": "StreetPass Explorers",
+    "ua": "Експедиція StreetPass"
+  },
+  "etc_title_park": {
+    "en": "Plaza",
+    "ua": "Площа"
+  },
+  "etc_title_gate": {
+    "en": "Entrance",
+    "ua": "Вхід"
+  },
+  "etc_title_premium": {
+    "en": "StreetPass Mii Plaza Premium",
+    "ua": "Преміум-площа StreetPass Mii"
+  },
+  "meet4_top_item_clear_mark": {
+    "en": "Set Clear Medals",
+    "ua": "Медалі проходження"
+  },
+  "meet4_top_item_gate_omit": {
+    "en": "Skip Conversations",
+    "ua": "Пропуск розмов"
+  },
+  "meet4_top_item_swap": {
+    "en": "Rearrange Games",
+    "ua": "Переставити ігри"
+  },
+  "meet4_clear_mark_cap": {
+    "en": "Clear Medals",
+    "ua": "Медалі проходження"
+  },
+  "meet4_choice_clear_mark_notice": {
+    "en": "Do you want to put a medal\r\non games you've cleared?",
+    "ua": "Позначати медаллю\nпройдені ігри?"
+  },
+  "meet4_choice_clear_mark_on": {
+    "en": "Yes",
+    "ua": "Так"
+  },
+  "meet4_choice_clear_mark_off": {
+    "en": "No",
+    "ua": "Ні"
+  },
+  "meet4_choice_now_clear_mark_on": {
+    "en": "Yes",
+    "ua": "Так"
+  },
+  "meet4_choice_now_clear_mark_off": {
+    "en": "No",
+    "ua": "Ні"
+  },
+  "meet4_dlg_clear_mark_00": {
+    "en": "Clear medals will appear on\r\ngames you've cleared.",
+    "ua": "Пройдені ігри буде\nпозначено медалями."
+  },
+  "meet4_dlg_clear_mark_01": {
+    "en": "Clear medals will not appear\r\non games you've cleared.",
+    "ua": "Пройдені ігри не буде\nпозначено медалями."
+  },
+  "meet4_gate_omit_cap_00": {
+    "en": "Skip Conversations",
+    "ua": "Пропуск розмов"
+  },
+  "meet4_gate_omit_cap_01": {
+    "en": "Skip Number of StreetPass Hits",
+    "ua": "Пропуск кількості зустрічей"
+  },
+  "meet4_gate_omit_cap_02": {
+    "en": "Skip Recently Played Game",
+    "ua": "Пропуск останньої гри"
+  },
+  "meet4_gate_omit_cap_03": {
+    "en": "Skip Game Introductions",
+    "ua": "Пропуск представлення ігор"
+  },
+  "meet4_gate_omit_cap_04": {
+    "en": "Skip Personal Info",
+    "ua": "Пропуск особистих даних"
+  },
+  "meet4_gate_omit_cap_05": {
+    "en": "Skip Birthdays",
+    "ua": "Пропуск днів народження"
+  },
+  "meet4_choice_gate_omit_00": {
+    "en": "Skip Number of StreetPass Hits",
+    "ua": "Пропуск кількості зустрічей"
+  },
+  "meet4_choice_gate_omit_01": {
+    "en": "Skip Recently Played Game",
+    "ua": "Пропуск останньої гри"
+  },
+  "meet4_choice_gate_omit_02": {
+    "en": "Skip Game Introductions",
+    "ua": "Пропуск представлення ігор"
+  },
+  "meet4_choice_gate_omit_03": {
+    "en": "Skip Personal Info",
+    "ua": "Пропуск особистих даних"
+  },
+  "meet4_choice_gate_omit_04": {
+    "en": "Skip Birthdays",
+    "ua": "Пропуск днів народження"
+  },
+  "meet4_dlg_gate_omit_notice_00": {
+    "en": "Would you like to skip announcements\r\nfor how many StreetPass hits you get?",
+    "ua": "Не повідомляти про кількість\nзустрічей StreetPass?"
+  },
+  "meet4_dlg_gate_omit_notice_01": {
+    "en": "Would you like Mii characters you meet\r\nto skip talking about the game they\r\nplayed most recently?",
+    "ua": "Щоб Mii, яких ви зустрічаєте,\nне розповідали, у яку гру\nграли останньою?"
+  },
+  "meet4_dlg_gate_omit_notice_02": {
+    "en": "Would you like to skip\r\ngame introductions?",
+    "ua": "Пропускати\nпредставлення ігор?"
+  },
+  "meet4_dlg_gate_omit_notice_03": {
+    "en": "Would you like Mii characters you meet\r\nto skip talking about personal info?",
+    "ua": "Щоб Mii, яких ви зустрічаєте,\nне розповідали про себе?"
+  },
+  "meet4_dlg_gate_omit_notice_04": {
+    "en": "Would you like Mii characters you meet\r\nto stop giving you their birthdays?",
+    "ua": "Щоб Mii, яких ви зустрічаєте,\nне називали свій день народження?"
+  },
+  "meet4_dlg_gate_omit_00": {
+    "en": "You won't be told how many\r\nStreetPass hits you get.",
+    "ua": "Повідомлень про кількість\nзустрічей не буде."
+  },
+  "meet4_dlg_gate_omit_01": {
+    "en": "You'll be told how many\r\nStreetPass hits you get.",
+    "ua": "Ви чутимете, скільки\nзустрічей StreetPass отримали."
+  },
+  "meet4_dlg_gate_omit_02": {
+    "en": "Mii characters won't tell you what\r\ngame they played most recently.",
+    "ua": "Mii не розповідатимуть, у яку\nгру грали останньою."
+  },
+  "meet4_dlg_gate_omit_03": {
+    "en": "Mii characters will tell you what\r\ngame they played most recently.",
+    "ua": "Mii розповідатимуть, у яку\nгру грали останньою."
+  },
+  "meet4_dlg_gate_omit_unconscious_00": {
+    "en": "Also, you won't receive\r\ngame introductions.",
+    "ua": "Також не буде\nпредставлення ігор."
+  },
+  "meet4_dlg_gate_omit_unconscious_01": {
+    "en": "You'll be able to change this\r\nsetting if you set \"Skip Recently\r\nPlayed Game\" to \"Off\".",
+    "ua": "Цей параметр можна змінити, якщо\nвимкнути «Пропуск останньої\nгри»."
+  },
+  "meet4_dlg_gate_omit_04": {
+    "en": "You won't receive game introductions.",
+    "ua": "Представлення ігор не буде."
+  },
+  "meet4_dlg_gate_omit_05": {
+    "en": "You will receive game introductions.",
+    "ua": "Ігри буде представлено."
+  },
+  "meet4_dlg_gate_omit_06": {
+    "en": "Mii characters won't tell you information\r\nabout themselves.",
+    "ua": "Mii не розповідатимуть\nпро себе."
+  },
+  "meet4_dlg_gate_omit_07": {
+    "en": "Mii characters will tell you information\r\nabout themselves.",
+    "ua": "Mii розповідатимуть\nпро себе."
+  },
+  "meet4_dlg_gate_omit_08": {
+    "en": "Mii characters won't tell you their\r\nbirthday.",
+    "ua": "Mii не називатимуть свій\nдень народження."
+  },
+  "meet4_dlg_gate_omit_09": {
+    "en": "Mii characters will tell you their birthday.",
+    "ua": "Mii називатимуть дату народження."
+  },
+  "meet4_swap_cap": {
+    "en": "Rearrange Games",
+    "ua": "Переставити ігри"
+  },
+  "meet4_swap_notice_00": {
+    "en": "Pick something to move.",
+    "ua": "Виберіть, що перемістити."
+  },
+  "meet4_swap_notice_01": {
+    "en": "Where do you want to put it?",
+    "ua": "Куди це поставити?"
+  },
+  "meet4_swap_item_return": {
+    "en": "Back",
+    "ua": "Назад"
+  },
+  "meet4_swap_report": {
+    "en": "The arrangement of your plaza\r\ngames has been changed!",
+    "ua": "Порядок ігор\nна площі змінено!"
+  },
+  "meet4_premium_not_cap": {
+    "en": "StreetPass Mii Plaza Premium",
+    "ua": "Преміум-площа StreetPass Mii"
+  },
+  "meet4_premium_cec_off": {
+    "en": "You won't be able to view this unless\r\nyou activate StreetPass.",
+    "ua": "Це не можна переглянути,\nпоки StreetPass не активовано."
+  },
+  "meet4_premium_not_euro": {
+    "en": "This feature requires\r\nStreetPass Mii Plaza Premium.",
+    "ua": "Для цього потрібна\nПреміум-площа StreetPass Mii."
+  }
+}

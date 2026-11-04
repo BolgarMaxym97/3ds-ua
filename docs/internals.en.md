@@ -25,7 +25,7 @@ A folder name is the Title ID (TID) of the system title it overrides. Luma reads
 | `0004001000022200` | Activity Log | `romfs/` + `code.ips` + `exheader.bin` — LayeredFS plus a code patch |
 | `0004003000009B02` | Instruction Manual | `romfs/` + `code.ips` + `exheader.bin` — LayeredFS plus a code patch |
 | `0004003000009F02` | Friend List | `romfs/` + `code.ips` + `exheader.bin` — LayeredFS plus a code patch |
-| `0004001000022800` | StreetPass Mii Plaza | `romfs/` + `exheader.bin` — LayeredFS plus a rights patch |
+| `0004001000022800` | StreetPass Mii Plaza | `romfs/` + `exheader.bin` — LayeredFS plus a rights patch; with update 14.7, `romfs/` only and another build (see [StreetPass Mii Plaza with its update](#streetpass-mii-plaza-with-its-update)) |
 | `000400300000D102` | Mii Selector | `romfs/` + `code.ips` + `exheader.bin` — LayeredFS plus a code patch |
 | `000400300000A002` | Notifications | `romfs/` + `code.ips` + `exheader.bin` — LayeredFS plus a code patch |
 | `000400300000B902` | amiibo Settings | `romfs/` + `code.ips` + `exheader.bin` — LayeredFS plus a code patch |
@@ -1343,6 +1343,12 @@ also check that no translation opens a tag of its own, since it is spliced into 
 that no Cyrillic unit in the dump is missing a key.
 
 There is deliberately no pixel budget here - the browser lays the page out and wraps it itself.
+
+## StreetPass Mii Plaza with its update
+
+The Plaza's last update (`0004000E00022800`, v14.7.0) is a program of its own under the same program id `00022800`: 14 MB of code against 2, a romfs of its own, its texts in `.bmsm` tables rather than MSBT (see `tools/bmsm.py`). Luma reads the same `luma/titles/0004001000022800` for both, and the base build's files do not fit the update: its `exheader.bin` gives `009-8401`, its romfs crashes it. So the update's build is written under the update's own id, a folder Luma never reads, and the installer looks for the update on the card (`AM_GetTitleInfo`, version `>> 10 == 14`) and puts whichever of the two fits into `0004001000022800` - the `alt` line of the manifest. The update needs no `exheader.bin`: it has `DirectSdmc` already. The archives carry that build aside, in `plaza_update/`.
+
+The Plaza draws its big captions with fonts of its own (`font/MEET_edge.lz77` in the base, eight `font/LA4/*.bcfnt` in the update) whose Cyrillic is the Russian one. A build with the real letters (`GLYPHS=real`) adds `і І ї Ї` (copies of `i I ï Ï`), `є Є` (`э Э` mirrored) and `ґ Ґ` (copies of `г Г`) to them - `tools/text_font_glyphs.py`. The default build leaves the fonts alone: its stand-ins `i ï ε г` are in them already. The update's country and region tables live in `param/csv/`, and its `region.csv` has 73 more rows (China, Taiwan, Hong Kong, South Korea).
 
 ## What the mod does not translate
 

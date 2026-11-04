@@ -1,0 +1,62 @@
+{
+  "map_logo": {
+    "en": "StreetPass Map",
+    "ua": "Карта StreetPass"
+  },
+  "map_japan": {
+    "en": "Japan",
+    "ua": "Японія"
+  },
+  "map_newarea_info_u": {
+    "en": "New region!",
+    "ua": "Новий регіон!"
+  },
+  "map_newarea_info_u_sdw": {
+    "en": "New region!",
+    "ua": "Новий регіон!"
+  },
+  "map_newnation_info_u": {
+    "en": "New country!",
+    "ua": "Нова країна!"
+  },
+  "map_newnation_info_u_sdw": {
+    "en": "New country!",
+    "ua": "Нова країна!"
+  },
+  "map_area_total": {
+    "en": "Regions:",
+    "ua": "Регіонів:"
+  },
+  "map_area_total_back": {
+    "en": "Regions:",
+    "ua": "Регіонів:"
+  },
+  "map_no_map_gate": {
+    "en": "No map.",
+    "ua": "Карти немає."
+  },
+  "map_no_map": {
+    "en": "No map.",
+    "ua": "Карти немає."
+  },
+  "dlg_map_op_01_u": {
+    "en": "Welcome to StreetPass Map!",
+    "ua": "Вітаємо на Карті StreetPass!"
+  },
+  "dlg_map_op_02_u": {
+    "en": "You can view a special map based\r\non your StreetPass Mii Plaza\r\nprogress here.",
+    "ua": "Тут можна переглянути особливу\nкарту, яка залежить від ваших\nуспіхів на Площі StreetPass Mii."
+  },
+  "dlg_map_op_03_u": {
+    "en": "The map starts out blank, but gets\r\ncoloured in based on the regions\r\nset for Mii characters you meet!",
+    "ua": "Спершу карта порожня, але її\nрозфарбовують регіони Mii,\nяких ви зустрічаєте!"
+  },
+  "dlg_map_op_04_u": {
+    "en": "Try and meet people from as many\r\ndifferent regions as you can...",
+    "ua": "Зустрічайте людей з якомога\nбільшої кількості регіонів…"
+  },
+  "dlg_map_op_05_u": {
+    "en": "...and fill your map with colour!",
+    "ua": "…і заповнити карту кольорами!"
+  }
+}

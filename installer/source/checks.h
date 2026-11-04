@@ -42,6 +42,9 @@ void checks_run(Console *c, const Manifest *m);
 /* The remaster version of a NAND title (TMD version >> 10), as the code patches name it. */
 bool checks_title_remaster(u64 tid, u16 *remaster);
 
+/* manifest_apply_alts' probe: is this update title on the SD card, and in which build. */
+AltState checks_alt_probe(uint64_t title, uint16_t remaster, void *ctx);
+
 /* The worst of the checks that block an install, and of all of them. */
 Level checks_blocking(const Console *c);
 

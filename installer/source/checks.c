@@ -35,6 +35,16 @@ bool checks_title_remaster(u64 tid, u16 *remaster)
     return true;
 }
 
+AltState checks_alt_probe(uint64_t title, uint16_t remaster, void *ctx)
+{
+    (void)ctx;
+    AM_TitleEntry info;
+    u64 tid = title;
+    if (R_FAILED(AM_GetTitleInfo(MEDIATYPE_SD, 1, &tid, &info)))
+        return ALT_ABSENT;
+    return info.version >> 10 == remaster ? ALT_PRESENT : ALT_OTHER_BUILD;
+}
+
 void checks_run(Console *c, const Manifest *m)
 {
     memset(c, 0, sizeof(*c));

@@ -46,6 +46,7 @@ from pathlib import Path
 
 sys.path.insert(0, str(Path(__file__).parent))
 import bcfnt  # noqa: E402
+import bmsm  # noqa: E402
 import sysfont_glyphs  # noqa: E402
 import variant  # noqa: E402
 from build import TITLES, apply_homoglyphs, load_all_langs, load_homoglyphs, load_hud_glyphs, ua_text  # noqa: E402
@@ -89,6 +90,10 @@ HUD_LABEL_RE = re.compile(r"lau_(?:date|birthday|hours|minutes)|(?:month|day|wee
 # %% is a literal percent sign and must survive translation, so it is matched first;
 # a space is not part of the flags here - it would swallow the next word's first letter.
 FORMAT_RE = re.compile(r"%%|%[-+#0-9.]*(?:ls|lc|[a-zA-Z])")
+# A .bmsm placeholder the code fills in: `[0]`, `[1]`.
+PLACEHOLDER_RE = re.compile(r"\[\d+\]")
+# The button and icon glyphs of the system font's private use area (\ue000 = A, ...).
+PUA_RE = re.compile("[\ue000-\uf8ff]")
 
 
 @dataclass
@@ -458,6 +463,82 @@ def validate(
     return total, translated, problems
 
 
+def validate_bmsm(
+    name: str, charset: set[int], table: dict[str, str], widths: dict[int, int]
+) -> tuple[int, int, list[str]]:
+    """validate() for a `format: bmsm` title - the StreetPass Mii Plaza update.
+
+    The same rules, scoped by file: one id names different rows in different tables (every
+    minigame has a `title`), so a budget belongs to a row of one table, and it is the widest
+    and tallest that row is in any of the eight languages. The tags are this format's own
+    `[System:Color name="..."]`, `[0]`, `[/System:Color]`: every one a translation carries
+    has to be one that row carries in some language, and `[0]`-style placeholders - filled in
+    by the code - may be neither lost nor invented.
+    """
+    cfg = TITLES[name]
+    store = open_store(cfg, ROOT / "work" / cfg["source_tid"] / "romfs")
+    strings_dir = ROOT / "src" / "strings" / name
+    rows: dict[tuple[str, str], list[str]] = {}
+    for lang in store.languages():
+        for key, data in store.read(lang).items():
+            for label, text in bmsm.parse(data).texts().items():
+                rows.setdefault((key, label), []).append(text.replace("\r", ""))
+    slot = {
+        (key, label): text
+        for key, data in store.read(cfg["lang"][BASE_SLOT]).items()
+        for label, text in bmsm.parse(data).texts().items()
+    }
+
+    total = translated = 0
+    problems: list[str] = []
+    for json_file in sorted(strings_dir.glob("*.json")):
+        key = json_file.stem
+        for label, entry in json.loads(json_file.read_text(encoding="utf-8")).items():
+            where = f"{json_file.name}: {label}"
+            official = rows.get((key, label))
+            if official is None:
+                problems.append(f"{where}: no such row in the dump")
+                continue
+            if entry["en"] == slot.get((key, label)):
+                continue  # the slot language ships it as English: not language dependent
+            total += 1
+            ua = ua_text(entry, table)
+            if not ua:
+                if CYRILLIC_RE.search(bmsm.TAG.sub("", slot.get((key, label), ""))):
+                    problems.append(f"{where}: untranslated, the Russian text would ship")
+                continue
+            translated += 1
+            ua = ua.replace("\r", "")
+            known = set().union(*(set(bmsm.TAG.findall(text)) for text in official))
+            invented = set(bmsm.TAG.findall(ua)) - known
+            if invented:
+                problems.append(f"{where}: tags present in no official localisation: {sorted(invented)}")
+            placeholders = sorted(t for t in bmsm.TAG.findall(entry["en"]) if PLACEHOLDER_RE.fullmatch(t))
+            if sorted(t for t in bmsm.TAG.findall(ua) if PLACEHOLDER_RE.fullmatch(t)) != placeholders:
+                problems.append(f"{where}: placeholders {placeholders} not carried over exactly")
+            glyphs = sorted(ch for ch in entry["en"] if PUA_RE.fullmatch(ch))
+            if sorted(ch for ch in ua if PUA_RE.fullmatch(ch)) != glyphs:
+                problems.append(f"{where}: button glyphs {[f'U+{ord(c):04X}' for c in glyphs]} not carried over exactly")
+            rendered = bmsm.TAG.sub("", apply_homoglyphs(ua, table))
+            bad = {ch for ch in rendered if ch not in "\n\t" and ord(ch) not in charset}
+            if bad:
+                chars = " ".join(f"{ch!r} U+{ord(ch):04X}" for ch in sorted(bad))
+                problems.append(f"{where}: characters missing from the font: {chars}")
+            budget_px = cfg.get("budget_px", {}).get(f"{key}/{label}") or max(
+                pixel_width(bmsm.TAG.sub("", text), widths) for text in official
+            )
+            dst_px = pixel_width(rendered, widths)
+            if dst_px > budget_px * WIDTH_LIMIT + WIDTH_SLACK:
+                problems.append(f"{where}: {dst_px}px exceeds budget {budget_px}px")
+            budget_lines = max(text.count("\n") + 1 for text in official)
+            if ua.count("\n") + 1 > budget_lines:
+                problems.append(f"{where}: {ua.count(chr(10)) + 1} lines exceed the {budget_lines}-line maximum")
+            stranded = stranded_breaks(bmsm.TAG.sub("", ua), rendered, widths)
+            if len(stranded) >= STRANDED_LIMIT:
+                problems.append(f"{where}: {len(stranded)} lines broken early, e.g. {stranded[0]!r} - rewrap")
+    return total, translated, problems
+
+
 def validate_area(charset: set[int], table: dict[str, str], widths: dict[int, int]) -> tuple[int, list[str]]:
     """Check the country and region names of the `area` archive.
 
@@ -532,6 +613,12 @@ def validate_plaza_map(charset: set[int], table: dict[str, str], widths: dict[in
     for rel, json_name in (("country.csv", "country.json"), ("region.csv", "region.json")):
         entries = json.loads((strings / json_name).read_text(encoding="utf-8"))
         rows = {csvtab.key_of(row): row.fields for row in csvtab.load(param / rel).data_rows()}
+        # The plaza's update keeps its own copy in param/csv/, with 73 more regions (China,
+        # Taiwan, Hong Kong, South Korea) - rows the base table has no place for.
+        update = ROOT / "work" / "0004000E00022800" / "romfs" / "param" / "csv" / rel
+        if update.is_file():
+            for row in csvtab.load(update).data_rows():
+                rows.setdefault(csvtab.key_of(row), row.fields)
         budget = max(
             pixel_width(name, widths)
             for fields in rows.values()
@@ -786,12 +873,15 @@ def main() -> int:
 
     if args.outliers:
         for name in args.titles or list(TITLES):
+            if TITLES[name].get("format") == "bmsm":
+                continue  # validate_bmsm() measures every row against its own eight languages
             for line in outliers(name, table, widths):
                 print(f"{name}: {line}")
         return 0
 
     for name in args.titles or list(TITLES):
-        total, translated, problems = validate(name, charset, table, widths)
+        check = validate_bmsm if TITLES[name].get("format") == "bmsm" else validate
+        total, translated, problems = check(name, charset, table, widths)
         gap = "" if translated == total else f" ({total - translated} left)"
         print(f"{name}: {translated}/{total} translatable strings done{gap}, problems: {len(problems)}")
         for problem in problems:

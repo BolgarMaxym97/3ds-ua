@@ -23,6 +23,10 @@ skip_blocked() for why shipping it would brick the title.
 A title carrying `hud_font` also gets a patched copy of the bitmap font that draws the
 clock line on the top screen - see build_hud_font() and tools/bcfnt.py.
 
+A title carrying `text_fonts` draws captions with bitmap fonts of its own; a `real` build
+ships them with the Ukrainian letters added - see build_text_fonts() and
+tools/text_font_glyphs.py.
+
 A title carrying `hook_patch` is one Luma cannot hook on its own: next to its romfs the
 build also writes the code.ips and exheader.bin that make LayeredFS work at all. See
 tools/luma_hook.py. Those two files are mandatory for such a title - romfs alone is the
@@ -40,6 +44,7 @@ from __future__ import annotations
 
 import argparse
 import base64
+import hashlib
 import json
 import os
 import re
@@ -51,6 +56,7 @@ sys.path.insert(0, str(Path(__file__).parent))
 import area as area_mod  # noqa: E402
 import banner as banner_mod  # noqa: E402
 import bclyt  # noqa: E402
+import bmsm as bmsm_mod  # noqa: E402
 import csvtab  # noqa: E402
 import darc  # noqa: E402
 import lz10  # noqa: E402
@@ -64,6 +70,7 @@ import smdh as smdh_mod  # noqa: E402
 import news_tips  # noqa: E402
 import pane_names  # noqa: E402
 import smdh_names  # noqa: E402
+import text_font_glyphs  # noqa: E402
 import variant  # noqa: E402
 from store import open_store  # noqa: E402
 
@@ -298,10 +305,59 @@ TITLES = {
         "lang": LANG_SLOTS,
         "ref_lang": "EU_English",
         "hook_patch": True,
+        "text_fonts": ["font/MEET_edge.lz77"],
         "csv_tables": {
             "param/country.csv": "country.json",
             "param/region.csv": "region.json",
             "param/Piece2_PanelInfo.csv": "panels.json",
+        },
+    },
+    # The plaza after its last update (0004000E00022800, v14.7.0): the same program id, but
+    # a program of its own - 14 MB of code against 2, and a romfs laid out anew, its texts in
+    # the .bmsm tables of tools/bmsm.py. Nothing of `mii_plaza` above fits it: that build's
+    # exheader makes the update fail to load (009-8401) and its romfs crashes it, so the two
+    # can never be on the card together. This one is written under the update's own id, a
+    # folder Luma never reads; the installer moves it into luma/titles/0004001000022800 in
+    # place of the base build when the update is installed - the `alt` line of
+    # tools/installer_manifest.py. No exheader: the update's own already grants DirectSdmc.
+    "mii_plaza_update": {
+        "tids": ["0004000E00022800"],
+        "source_tid": "0004000E00022800",
+        "installs_as": "0004001000022800",
+        "title_remaster": 14,  # v14.7.0 = 14448, AM version >> 10 - the last one Nintendo shipped
+        "lang": LANG_SLOTS,
+        "ref_lang": "EU_English",
+        "format": "bmsm",
+        "csv_tables": {
+            "param/csv/country.csv": "country.json",
+            "param/csv/region.csv": "region.json",
+            "param/csv/Piece2_PanelInfo.csv": "panels.json",
+        },
+        "text_fonts": [
+            f"font/LA4/{name}.bcfnt"
+            for name in (
+                "cbf_std_edge", "telop_font_00", "mgBtl_telop_font", "mgChf_cbf_std_edge",
+                "mgChf_telop_font_00", "mgExp_cbf_std_edge", "mgNja_cbf_std_edge",
+                "mgNja_telop_font_00",
+            )
+        ],
+        # `<table>/<row>`: rows that are never drawn on their own. StreetPass Garden's colour
+        # words go into a sentence through [guest_color] ("Its favourite colour is red."),
+        # so their own width is no slot's width; 200px is the longest such word a line of
+        # those dialogs leaves room for.
+        "budget_px": {
+            "minigame__mgFlo/flo_contest_01_104": 200,
+            "minigame__mgFlo/flo_contest_01_105": 200,
+            "minigame__mgFlo/flo_contest_01_106": 200,
+            "minigame__mgFlo/flo_contest_01_107": 200,
+            "minigame__mgFlo/flo_contest_01_108": 200,
+            "minigame__mgFlo/flo_contest_01_109": 200,
+            "minigame__mgFlo/flo_contest_01_110": 200,
+            "minigame__mgFlo/flo_contest_01_111": 200,
+            "minigame__mgFlo/flo_contest_01_112": 200,
+            "minigame__mgFlo/flo_contest_01_113": 200,
+            "minigame__mgFlo/flo_contest_01_114": 200,
+            "minigame__mgFlo/flo_contest_01_115": 200,
         },
     },
     # Same per-language darc as Mii Maker, but the applet has no fsMountArchive of its
@@ -929,6 +985,11 @@ CSV_BUILDERS = {
     "param/country.csv": build_country_table,
     "param/region.csv": build_country_table,
     "param/Piece2_PanelInfo.csv": build_panel_table,
+    # The update moved the three into param/csv/; region.csv there has 73 more rows - China,
+    # Taiwan, Hong Kong and South Korea, which region.json carries as well.
+    "param/csv/country.csv": build_country_table,
+    "param/csv/region.csv": build_country_table,
+    "param/csv/Piece2_PanelInfo.csv": build_panel_table,
 }
 
 
@@ -1298,6 +1359,65 @@ def build_hud_font(cfg: dict, romfs: Path) -> tuple[dict[str, bytes], list[str]]
     return {rel: bcfnt.build(font)}, [f"{rel}: HUD font + {added}"]
 
 
+def build_text_fonts(cfg: dict, romfs: Path, table: dict[str, str]) -> tuple[dict[str, bytes], list[str]]:
+    """The title's own caption fonts with і ї є ґ, for a build whose text keeps them.
+
+    The default build turns those letters into homoglyphs every font here already has, so
+    it leaves the fonts alone. A `real` build prints the letters themselves, and without
+    these copies they vanish from the captions: "Вітаємо!" reads "В та мо!".
+
+    MEET_edge is LZ11, and compressing its 1.2 MB in Python takes over a minute; the result
+    depends on the source and the patcher alone, so it is kept in work/cache/ under their hash.
+    """
+    fonts = cfg.get("text_fonts")
+    if not fonts or table.get("і") != "і":
+        return {}, []
+    blobs: dict[str, bytes] = {}
+    stats: list[str] = []
+    for rel in fonts:
+        data = (romfs / rel).read_bytes()
+        compressed = rel.endswith(".lz77")
+        key = hashlib.sha1(data + Path(text_font_glyphs.__file__).read_bytes()).hexdigest()
+        cache = ROOT / "work" / "cache" / "text_fonts" / f"{key}{Path(rel).suffix}"
+        if cache.exists():
+            blobs[rel] = cache.read_bytes()
+            stats.append(f"{rel}: text font + і ї є ґ (cached)")
+            continue
+        blob, added = text_font_glyphs.patch_file(data, compressed)
+        if not added:
+            continue
+        cache.parent.mkdir(parents=True, exist_ok=True)
+        cache.write_bytes(blob)
+        blobs[rel] = blob
+        stats.append(f"{rel}: text font + {' '.join(added)}")
+    return blobs, stats
+
+
+def translate_bmsm(data: bytes, entries: dict, table: dict[str, str]) -> tuple[bytes, int, int]:
+    """One .bmsm table of the slot language with the JSON's Ukrainian put in.
+
+    The JSON is keyed by the English table's rows, and every language's table has the same
+    rows in the same order, so a key names the same row here - checked, not assumed.
+    """
+    parsed = bmsm_mod.parse(data)
+    rows = dict(parsed.keyed_rows())
+    missing = sorted(set(entries) - set(rows))
+    if missing:
+        raise SystemExit(f"bmsm: {', '.join(missing[:5])} not in the slot language's table")
+    translated = 0
+    for key, entry in entries.items():
+        if entry.get("ua"):
+            text = rows[key][bmsm_mod.TEXT]
+            # The tables break lines with CRLF; the JSON may hold plain LF. Write what the
+            # row itself uses.
+            ua = ua_text(entry, table).replace("\r\n", "\n")
+            if "\r\n" in text.value:
+                ua = ua.replace("\n", "\r\n")
+            text.value = apply_homoglyphs(ua, table)
+            translated += 1
+    return bmsm_mod.build(parsed), translated, len(entries)
+
+
 def build_title(name: str, table: dict[str, str]) -> list[str]:
     cfg = TITLES[name]
     if cfg.get("blocked"):
@@ -1329,6 +1449,10 @@ def build_title(name: str, table: dict[str, str]) -> list[str]:
         if not json_file.exists():
             continue
         entries = json.loads(json_file.read_text(encoding="utf-8"))
+        if cfg.get("format") == "bmsm":
+            updates[key], translated, total = translate_bmsm(data, entries, table)
+            stats.append(f"{key}: {translated}/{total} translated")
+            continue
         msbt = msbt_mod.parse(data)
 
         translated = 0
@@ -1353,11 +1477,12 @@ def build_title(name: str, table: dict[str, str]) -> list[str]:
     stats += csv_stats + layout_stats
     smdh_blobs, smdh_stats = build_smdh(name, cfg, romfs, table)
     hud_blobs, hud_stats = build_hud_font(cfg, romfs)
-    stats += smdh_stats + hud_stats + names_stats
+    font_blobs, font_stats = build_text_fonts(cfg, romfs, table)
+    stats += smdh_stats + hud_stats + font_stats + names_stats
     stats += manual_stats
     outputs = (
         cross_blobs | store.outputs(lang, updates) | csv_blobs | layout_blobs
-        | smdh_blobs | hud_blobs | manual_blobs
+        | smdh_blobs | hud_blobs | font_blobs | manual_blobs
     )
     written: list[str] = []
     for reader in cfg.get("ships_to", []):
@@ -1372,6 +1497,17 @@ def build_title(name: str, table: dict[str, str]) -> list[str]:
             dest.parent.mkdir(parents=True, exist_ok=True)
             dest.write_bytes(blob)
             written.append(f"{dest.relative_to(ROOT)} ({len(blob)} bytes)")
+        # dist/ is built over, not afresh: a default build after a `real` one would keep the
+        # real build's fonts, which nothing in the default text needs.
+        for rel_path in cfg.get("text_fonts", []):
+            stale = title_root(tid) / "luma" / "titles" / tid / "romfs" / rel_path
+            if rel_path not in outputs and stale.exists():
+                stale.unlink()
+                written.append(f"{stale.relative_to(ROOT)} removed (not a real-glyph build)")
+                for parent in stale.parents:
+                    if parent.name == "romfs" or any(parent.iterdir()):
+                        break
+                    parent.rmdir()
         written += write_loader_alias(cfg, {f"romfs/{rel}": blob for rel, blob in outputs.items()})
         if tid.upper() == NNID_CSS_TID:
             for build_page in (build_nnid_json, build_nnid_html):

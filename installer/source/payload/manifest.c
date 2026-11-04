@@ -1,5 +1,6 @@
 #include "manifest.h"
 
+#include <stdbool.h>
 #include <stdlib.h>
 #include <string.h>
 
@@ -121,6 +122,58 @@ int manifest_find_blob(const Manifest *m, const uint8_t sha[32])
     return -1;
 }
 
+/* ---------------------------------------------------------------- alts */
+
+#define TITLES_PREFIX "luma/titles/"
+#define TID_AT (sizeof(TITLES_PREFIX) - 1)
+
+/* The title id of a luma/titles/<TID>/... path, or false. */
+static bool path_title(const char *path, uint64_t *tid)
+{
+    if (strncmp(path, TITLES_PREFIX, TID_AT) || strlen(path) <= TID_AT + 16 || path[TID_AT + 16] != '/')
+        return false;
+    return parse_u64(path + TID_AT, 16, 16, tid) == 0;
+}
+
+static void write_tid(char *at, uint64_t tid)
+{
+    static const char hex[] = "0123456789ABCDEF";
+    for (int i = 15; i >= 0; i--, tid >>= 4)
+        at[i] = hex[tid & 0xF];
+}
+
+static void apply_alt(FileSet *set, const Alt *a, AltState state)
+{
+    size_t kept = 0;
+    for (size_t i = 0; i < set->count; i++) {
+        Entry *e = &set->entries[i];
+        uint64_t tid;
+        bool drop = false;
+        if (path_title(e->path, &tid) && tid == a->folder) {
+            drop = state != ALT_PRESENT;
+            if (!drop)
+                write_tid(e->path + TID_AT, a->target);
+        } else if (path_title(e->path, &tid) && tid == a->target) {
+            drop = state != ALT_ABSENT;
+        }
+        if (!drop)
+            set->entries[kept++] = *e;
+    }
+    set->count = kept;
+}
+
+void manifest_apply_alts(Manifest *m, AltProbe probe, void *ctx)
+{
+    for (size_t k = 0; k < m->alt_count; k++) {
+        const Alt *a = &m->alts[k];
+        AltState state = probe(a->folder, a->remaster, ctx);
+        for (int s = 0; s < SLOT_COUNT; s++)
+            for (int d = 0; d < MODEL_COUNT; d++)
+                for (int g = 0; g < GLYPHS_COUNT; g++)
+                    apply_alt(&m->sets[s][d][g], a, state);
+    }
+}
+
 /* ---------------------------------------------------------------- parse */
 
 void manifest_free(Manifest *m)
@@ -236,6 +289,14 @@ int manifest_parse(Manifest *m, const char *text, size_t len)
                 goto fail;
             nd->remaster = (uint16_t)remaster;
             m->need_count++;
+        } else if (field_is(f[0], fl[0], "alt") && n == 4) {
+            uint64_t remaster;
+            Alt *a = &m->alts[m->alt_count];
+            if (m->alt_count == ALTS_MAX || fl[1] != 16 || fl[2] != 16 || parse_u64(f[1], 16, 16, &a->folder) ||
+                parse_u64(f[2], 16, 16, &a->target) || parse_u64(f[3], fl[3], 10, &remaster) || remaster > 0xFFFF)
+                goto fail;
+            a->remaster = (uint16_t)remaster;
+            m->alt_count++;
         } else if (field_is(f[0], fl[0], "ns") && n == 3) {
             uint64_t remaster;
             if (parse_u64(f[1], fl[1], 10, &remaster) || remaster > 0xFFFF || parse_sha(f[2], fl[2], m->ns_code_sha))

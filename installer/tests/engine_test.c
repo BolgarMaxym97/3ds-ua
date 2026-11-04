@@ -25,6 +25,9 @@ static int failures;
 static const char *data_root, *config_src;
 static char sd_root[256];
 static Manifest m;
+static char *manifest_text; /* kept to parse again with another state of the Plaza update */
+static size_t manifest_len;
+static AltState plaza_update = ALT_ABSENT;
 static uint64_t unmet_folder; /* a folder whose title is "another build", 0 for none */
 static bool font_fails;       /* build_font() gives up, as on a console with another font */
 static int font_builds;       /* how often build_font() ran */
@@ -384,6 +387,52 @@ static void test_flow(void)
            "remove: external modules back off, game patching left on");
 }
 
+static AltState probe(uint64_t title, uint16_t remaster, void *ctx)
+{
+    (void)title;
+    (void)remaster;
+    (void)ctx;
+    return plaza_update;
+}
+
+/* The app parses the manifest and settles its `alt` lines once, at start. */
+static void load_manifest(AltState state)
+{
+    manifest_free(&m);
+    if (manifest_parse(&m, manifest_text, manifest_len)) {
+        fprintf(stderr, "the manifest does not parse\n");
+        exit(2);
+    }
+    plaza_update = state;
+    manifest_apply_alts(&m, probe, NULL);
+}
+
+/* StreetPass Mii Plaza's update installed after the translation, and removed again: each run
+ * leaves the build for the plaza that is on the card, and never the base build's exheader
+ * next to the update's files - that pair is error 009-8401 and a crash. */
+static void test_plaza_update(void)
+{
+    static const char *exheader = "luma/titles/0004001000022800/exheader.bin";
+    static const char *table = "luma/titles/0004001000022800/romfs/message/EU_Russian/message/park/park.bmsm";
+    static const char *base_text = "luma/titles/0004001000022800/romfs/message/EU_Russian/MEET.msbt";
+    fresh_card(true, true);
+    expect(run(OP_INSTALL, SLOT_RU, GLYPHS_DEFAULT, false, NULL) == ENGINE_OK && has(exheader) && has(base_text) &&
+               !has(table) && card_matches(SLOT_RU, GLYPHS_DEFAULT, false),
+           "plaza: without the update, the base build");
+    load_manifest(ALT_PRESENT);
+    expect(run(OP_INSTALL, SLOT_RU, GLYPHS_DEFAULT, false, NULL) == ENGINE_OK && !has(exheader) && !has(base_text) &&
+               has(table) && !has("luma/titles/0004000E00022800") && card_matches(SLOT_RU, GLYPHS_DEFAULT, false),
+           "plaza: update installed, run again - the base build goes, the update's comes in its place");
+    load_manifest(ALT_OTHER_BUILD);
+    expect(run(OP_INSTALL, SLOT_RU, GLYPHS_DEFAULT, false, NULL) == ENGINE_OK && !has(exheader) && !has(table) &&
+               !has("luma/titles/0004001000022800/romfs") && card_matches(SLOT_RU, GLYPHS_DEFAULT, false),
+           "plaza: an update of another build - nothing of the mod in the plaza's folder");
+    load_manifest(ALT_ABSENT);
+    expect(run(OP_INSTALL, SLOT_RU, GLYPHS_DEFAULT, false, NULL) == ENGINE_OK && has(exheader) && has(base_text) &&
+               !has(table) && card_matches(SLOT_RU, GLYPHS_DEFAULT, false),
+           "plaza: update deleted, run again - the base build is back");
+}
+
 static void test_one_run(void)
 {
     Job j;
@@ -732,16 +781,19 @@ int main(int argc, char **argv)
     snprintf(mpath, sizeof(mpath), "%s/manifest.txt", data_root);
     uint8_t *text;
     size_t len;
-    if (payload_read_file(mpath, &text, &len) || manifest_parse(&m, (const char *)text, len)) {
+    if (payload_read_file(mpath, &text, &len)) {
         fprintf(stderr, "cannot read %s\n", mpath);
         return 2;
     }
-    free(text);
+    manifest_text = (char *)text;
+    manifest_len = len;
+    load_manifest(ALT_ABSENT);
 
     test_lumacfg();
     test_state();
     test_flow();
     test_one_run();
+    test_plaza_update();
     test_font_kept_by_sha();
     test_foreign_ns_patch();
     test_ns_merge();
@@ -760,6 +812,7 @@ int main(int argc, char **argv)
 
     fs_remove_tree(sd_root);
     manifest_free(&m);
+    free(manifest_text);
     printf("%s\n", failures ? "FAILED" : "all passed");
     return failures ? 1 : 0;
 }

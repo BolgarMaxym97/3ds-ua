@@ -1,0 +1,838 @@
+{
+  "reget_guide_ask": {
+    "en": "Would you like to\r\nredownload it?",
+    "ua": "Завантажити\nїї знову?"
+  },
+  "reget_menu_ok": {
+    "en": "Yes please!",
+    "ua": "Так, звісно!"
+  },
+  "reget_menu_ng": {
+    "en": "Not right now...",
+    "ua": "Не зараз…"
+  },
+  "shop_eu_caption": {
+    "en": "Shop",
+    "ua": "Магазин"
+  },
+  "shop_eu_notice": {
+    "en": "Welcome to the Shop.",
+    "ua": "Вітаємо в магазині."
+  },
+  "shop_eu_notice_free": {
+    "en": "Would you like a game for free?",
+    "ua": "Хочете гру безкоштовно?"
+  },
+  "shop_eu_menu_to_buy": {
+    "en": "I want to buy a game.",
+    "ua": "Хочу купити гру."
+  },
+  "shop_eu_menu_return": {
+    "en": "Cancel",
+    "ua": "Скасувати"
+  },
+  "shop_eu_already_buy": {
+    "en": "You've already purchased\r\n[GAME_TITLE].\r\n\r\nTo play this game, go to\r\nthe main plaza area, select\r\nPlay, and then select\r\n[System:Color name=\"red\" ][GAME_TITLE][/System:Color].",
+    "ua": "Ви вже придбали\n[GAME_TITLE].\n\nЩоб пограти в цю гру,\nна головній площі виберіть\n«Грати», а потім\n[System:Color name=\"red\" ][GAME_TITLE][/System:Color]."
+  },
+  "shop_eu_already_buy_premium": {
+    "en": "You've already purchased\r\n[GAME_TITLE].\r\n\r\nYou can enjoy [System:Color name=\"red\" ]all of its features[/System:Color].",
+    "ua": "Ви вже придбали\n[GAME_TITLE].\n\nВам доступні [System:Color name=\"red\" ]усі її функції[/System:Color]."
+  },
+  "rating_caption": {
+    "en": "Age Rating Information",
+    "ua": "Вікові обмеження"
+  },
+  "open_caption": {
+    "en": "Download Complete",
+    "ua": "Завантажено"
+  },
+  "open_notice_01": {
+    "en": "You can now play\r\n[System:Color name=\"red\" ][GAME_TITLE][/System:Color].\r\n\r\n[System:Size percent=\"60\" ]Save data for this title will be stored\r\nin the extra data on the SD Card.[/System:Size]",
+    "ua": "Тепер можна грати в\n[System:Color name=\"red\" ][GAME_TITLE][/System:Color].\n\n[System:Size percent=\"60\" ]Збереження цієї гри зберігатимуться\nв додаткових даних на карті SD.[/System:Size]"
+  },
+  "open_notice_02": {
+    "en": "Also, here's a present for you:\r\nthe [System:Color name=\"red\" ][CAP_NAME][/System:Color]!",
+    "ua": "А ще ось вам подарунок:\n[System:Color name=\"red\" ][CAP_NAME][/System:Color]!"
+  },
+  "open_notice_03": {
+    "en": "And one more present:\r\nthe [System:Color name=\"red\" ][BALLOON_NAME][/System:Color]!",
+    "ua": "І ще один подарунок:\n[System:Color name=\"red\" ][BALLOON_NAME][/System:Color]!"
+  },
+  "game_title_mgBtl": {
+    "en": "StreetPass Battle",
+    "ua": "Фортеця StreetPass"
+  },
+  "game_title_mgFlo": {
+    "en": "StreetPass Garden",
+    "ua": "Сад StreetPass"
+  },
+  "game_title_mgPzd": {
+    "en": "StreetPass Mansion",
+    "ua": "Таємничий маєток StreetPass"
+  },
+  "game_title_mgSht": {
+    "en": "StreetPass Squad",
+    "ua": "Галактика StreetPass"
+  },
+  "game_title_mgFsh": {
+    "en": "StreetPass Fishing",
+    "ua": "Риболовля StreetPass"
+  },
+  "game_title_mgZmb": {
+    "en": "StreetPass Zombies",
+    "ua": "Зомбі StreetPass"
+  },
+  "game_title_premium": {
+    "en": "StreetPass Mii Plaza Premium",
+    "ua": "Преміум-площа StreetPass Mii"
+  },
+  "game_title_mgCar": {
+    "en": "StreetPass Slot Racer",
+    "ua": "Слот-перегони StreetPass"
+  },
+  "game_title_mgTrd": {
+    "en": "StreetPass Trader",
+    "ua": "Біржа StreetPass"
+  },
+  "game_title_mgChf": {
+    "en": "StreetPass Chef",
+    "ua": "Ресторан StreetPass"
+  },
+  "game_title_mgNja": {
+    "en": "StreetPass Ninja",
+    "ua": "Ніндзя StreetPass"
+  },
+  "game_title_mgExp": {
+    "en": "StreetPass Explorers",
+    "ua": "Експедиція StreetPass"
+  },
+  "game_title_group": {
+    "en": "Pack [0]",
+    "ua": "Набір [0]"
+  },
+  "price_start_pre": {
+    "en": "Right! Let me connect\r\nto the internet.",
+    "ua": "Гаразд! Зараз\nпідключуся до інтернету."
+  },
+  "price_start": {
+    "en": "It should just take a\r\nmoment to look up\r\nthe price.",
+    "ua": "Ціну буде знайдено\nза мить."
+  },
+  "price": {
+    "en": "[GAME_TITLE] costs\r\n[PRICE]. Would you\r\nlike to proceed?",
+    "ua": "[GAME_TITLE] коштує\n[PRICE]. Бажаєте\nпродовжити?"
+  },
+  "buy": {
+    "en": "Yes please!",
+    "ua": "Так, звісно!"
+  },
+  "cancel": {
+    "en": "No thanks.",
+    "ua": "Ні, дякую."
+  },
+  "not_enough": {
+    "en": "I'm low on funds!",
+    "ua": "Мені бракує коштів!"
+  },
+  "not_enough_00": {
+    "en": "Don't worry if you're a little\r\nshort on funds in your Nintendo\r\neShop account at the moment.",
+    "ua": "Не хвилюйтеся, якщо на рахунку\nNintendo eShop зараз трохи\nбракує коштів."
+  },
+  "not_enough_01": {
+    "en": "If you start the purchase\r\nprocess now,",
+    "ua": "Якщо почати\nпокупку зараз,"
+  },
+  "not_enough_02": {
+    "en": "you'll be able to add funds\r\nto your account along the\r\nway to cover the cost.",
+    "ua": "поповнити рахунок\nможна буде під час\nоформлення."
+  },
+  "not_enough_03": {
+    "en": "In a nutshell, even if you're\r\nlow on funds, you can still\r\nstart the purchase process.",
+    "ua": "Коротше кажучи, навіть коли\nкоштів бракує, покупку\nможна почати."
+  },
+  "not_enough_set_00": {
+    "en": "Don't worry if you're a little\r\nshort on funds in your Nintendo\r\neShop account at the moment.",
+    "ua": "Не хвилюйтеся, якщо на рахунку\nNintendo eShop зараз трохи\nбракує коштів."
+  },
+  "not_enough_set_01": {
+    "en": "If you start the purchase\r\nprocess now,",
+    "ua": "Якщо почати\nпокупку зараз,"
+  },
+  "not_enough_set_02": {
+    "en": "you'll be able to add funds\r\nto your account along the\r\nway to cover the cost.",
+    "ua": "поповнити рахунок\nможна буде під час\nоформлення."
+  },
+  "not_enough_set_03": {
+    "en": "In a nutshell, even if you're\r\nlow on funds, you can still\r\nstart the purchase process.",
+    "ua": "Коротше кажучи, навіть коли\nкоштів бракує, покупку\nможна почати."
+  },
+  "disconnect": {
+    "en": "Huh. I'm afraid it seems\r\nI can't contact the main\r\noffice right now.",
+    "ua": "Гм. Схоже, зараз\nне вдається зв'язатися\nз головним офісом."
+  },
+  "do_retry": {
+    "en": "I'm sorry, but please\r\ncome back another time.",
+    "ua": "Перепрошую, але\nзайдіть іншим разом."
+  },
+  "disconnect_free": {
+    "en": "The process could\r\nnot be completed.",
+    "ua": "Не вдалося\nзавершити процес."
+  },
+  "disconnect_free2": {
+    "en": "I'm sorry. Please come\r\nback another time.",
+    "ua": "Перепрошую. Заходьте\nіншим разом."
+  },
+  "cannot_download": {
+    "en": "Could not download\r\n[GAME_TITLE].",
+    "ua": "Не вдалося завантажити\n[GAME_TITLE]."
+  },
+  "cannot_download2": {
+    "en": "I'm sorry, but please\r\ncome back another time.",
+    "ua": "Перепрошую, але\nзайдіть іншим разом."
+  },
+  "leave_dont_remind": {
+    "en": "No problem. Hopefully\r\nI'll see you back here\r\nagain soon!",
+    "ua": "Нічого страшного. Сподіваюся,\nскоро побачимося\nзнову!"
+  },
+  "leave_buy": {
+    "en": "You've been a\r\ngreat customer.",
+    "ua": "Ви були чудовим\nпокупцем."
+  },
+  "already_buy": {
+    "en": "Oh, it looks like you've\r\nalready bought this one.\r\nSorry for the mix-up!",
+    "ua": "О, схоже, ви вже\nкупили цю гру.\nПерепрошую за плутанину!"
+  },
+  "set_buy01": {
+    "en": "One more thing...",
+    "ua": "І ще одне…"
+  },
+  "set1st_buy02": {
+    "en": "You can buy all the games\r\nin Pack 1 together...",
+    "ua": "Усі ігри набору 1\nможна купити разом…"
+  },
+  "set2nd_buy02": {
+    "en": "You can buy all the games\r\nin Pack 2 together...",
+    "ua": "Усі ігри набору 2\nможна купити разом…"
+  },
+  "set3rd_buy02": {
+    "en": "You can buy all the games\r\nin Pack 3 together...",
+    "ua": "Усі ігри набору 3\nможна купити разом…"
+  },
+  "set_buy03": {
+    "en": "...because we're having\r\na campaign!",
+    "ua": "…бо в нас\nакція!"
+  },
+  "setThx_buy02": {
+    "en": "Since you've already bought\r\na game from Pack 1...",
+    "ua": "Оскільки ви вже купили\nгру з набору 1…"
+  },
+  "setThx_buy03": {
+    "en": "...you're eligible for our\r\nspecial Thank You Pack.",
+    "ua": "…вам доступний особливий\nПодячний набір."
+  },
+  "setThx_buy03a": {
+    "en": "Buying all the games in Pack 2 together\r\njust became even better value!",
+    "ua": "Купити всі ігри набору 2 разом\nтепер ще вигідніше!"
+  },
+  "setThx_buy03b": {
+    "en": "You can buy all the games\r\nin Pack 2 together!",
+    "ua": "Усі ігри набору 2\nможна купити разом!"
+  },
+  "set_buy04": {
+    "en": "Do you want to learn more\r\nabout the combo pack?",
+    "ua": "Розповісти більше\nпро комплект?"
+  },
+  "set_interest_yes": {
+    "en": "Yes please!",
+    "ua": "Так, звісно!"
+  },
+  "set_interest_no": {
+    "en": "No thanks.",
+    "ua": "Ні, дякую."
+  },
+  "set_message00": {
+    "en": "This combo pack deal is\r\npretty cool.",
+    "ua": "Комплект — це\nдуже вигідно."
+  },
+  "setThx_message00": {
+    "en": "The Thank You Pack deal is\r\npretty cool.",
+    "ua": "Подячний набір — це\nдуже вигідно."
+  },
+  "set1st_message01": {
+    "en": "It lets you buy all four of\r\nthese games at once!",
+    "ua": "Він дає змогу купити всі чотири\nгри одразу!"
+  },
+  "set2nd_message01": {
+    "en": "It lets you buy both of\r\nthese games at once!",
+    "ua": "Він дає змогу купити обидві\nгри одразу!"
+  },
+  "set3rd_message01": {
+    "en": "It lets you buy all four of\r\nthese games at once!",
+    "ua": "Він дає змогу купити всі чотири\nгри одразу!"
+  },
+  "set1st_message02": {
+    "en": "Each game will be played with the Mii\r\ncharacters you meet via StreetPass!",
+    "ua": "У кожну гру ви гратимете з Mii,\nзустрінутими через StreetPass!"
+  },
+  "set1st_Q_explain": {
+    "en": "Would you like me to\r\ntell you more?",
+    "ua": "Розповісти\nдокладніше?"
+  },
+  "set2nd_message02": {
+    "en": "Each game will be played with the Mii\r\ncharacters you meet via StreetPass!",
+    "ua": "У кожну гру ви гратимете з Mii,\nзустрінутими через StreetPass!"
+  },
+  "set2nd_Q_explain": {
+    "en": "Would you like me\r\nto tell you more?",
+    "ua": "Розповісти\nдокладніше?"
+  },
+  "set3rd_message02": {
+    "en": "Each game will be played with the Mii\r\ncharacters you meet via StreetPass!",
+    "ua": "У кожну гру ви гратимете з Mii,\nзустрінутими через StreetPass!"
+  },
+  "set3rd_Q_explain": {
+    "en": "Would you like me\r\nto tell you more?",
+    "ua": "Розповісти\nдокладніше?"
+  },
+  "set_Q_explain_yes": {
+    "en": "Absolutely!",
+    "ua": "Звісно!"
+  },
+  "set_Q_explain_no": {
+    "en": "No thanks.",
+    "ua": "Ні, дякую."
+  },
+  "set_exp_sht01": {
+    "en": "StreetPass Squad is an action-\r\npacked side-scrolling shooter.",
+    "ua": "Галактика StreetPass — динамічний\nшутер із бічною прокруткою."
+  },
+  "set_exp_sht02": {
+    "en": "In this game, you belong to an\r\nelite team of space police.",
+    "ua": "Ви — член елітного загону\nкосмічної поліції."
+  },
+  "set_exp_sht03": {
+    "en": "Your mission is to save StreetPass\r\nGalaxy from the Gold Bone Gang.",
+    "ua": "Ваше завдання — врятувати Галактику\nStreetPass від банди Золотої Кістки."
+  },
+  "set_exp_sht04": {
+    "en": "With the help of your StreetPass\r\nsquadmates, you take to the skies!",
+    "ua": "Разом із напарниками зі StreetPass\nви злітаєте в небо!"
+  },
+  "set_exp_sht05": {
+    "en": "It's your job to preserve peace\r\nin the galaxy. How heroic is that?",
+    "ua": "Ваша справа — берегти мир\nу галактиці. Хіба не героїчно?"
+  },
+  "set_exp_flo01": {
+    "en": "StreetPass Garden is a game that\r\nlets you grow beautiful flowers.",
+    "ua": "Сад StreetPass — гра, у якій\nви вирощуєте чудові квіти."
+  },
+  "set_exp_flo02": {
+    "en": "It starts with you moving into\r\na lovely house in Leafington.",
+    "ua": "Усе починається з переїзду\nв затишний будинок у Листограді."
+  },
+  "set_exp_flo03": {
+    "en": "There, with Mr Mendel's help, you\r\ntry to become a Master Gardener.",
+    "ua": "Там із допомогою пана Менделя\nви прагнете стати майстром-садівником."
+  },
+  "set_exp_flo04": {
+    "en": "That means growing lots of flowers with\r\npeople you meet via StreetPass.",
+    "ua": "Для цього треба виростити багато\nквітів разом із друзями зі StreetPass."
+  },
+  "set_exp_flo05": {
+    "en": "You also get to decorate your garden. \r\nAren't those green fingers twitching?",
+    "ua": "А ще можна прикрашати сад.\nУже руки сверблять?"
+  },
+  "set_exp_btl01": {
+    "en": "StreetPass Battle is a game that\r\nrelies on both strategy and luck.",
+    "ua": "Фортеця StreetPass — гра,\nде важать і стратегія, і удача."
+  },
+  "set_exp_btl02": {
+    "en": "In it, you rule a remote\r\ncountry in a war-torn land.",
+    "ua": "Ви правите далекою країною\nв розтерзаному війною краї."
+  },
+  "set_exp_btl03": {
+    "en": "With help from Wentworth,\r\nyour faithful old butler, ",
+    "ua": "З допомогою Вентворта,\nвірного старого дворецького,"
+  },
+  "set_exp_btl04": {
+    "en": "you build an army via StreetPass\r\nand battle other generals.",
+    "ua": "ви збираєте армію через StreetPass\nі б'єтеся з іншими полководцями."
+  },
+  "set_exp_btl05": {
+    "en": "Your ultimate goal?\r\nTo conquer the world!",
+    "ua": "Ваша кінцева мета?\nПідкорити світ!"
+  },
+  "set_exp_pzd01": {
+    "en": "StreetPass Mansion sends you on a\r\nspooooooky paranormal investigation.",
+    "ua": "Таємничий маєток StreetPass —\nмоторошне розслідування."
+  },
+  "set_exp_pzd02": {
+    "en": "You're a detective trying to solve\r\nthe mystery of a haunted house.",
+    "ua": "Ви — детектив, що розгадує\nтаємницю будинку з привидами."
+  },
+  "set_exp_pzd03": {
+    "en": "Aided by your fearless young\r\nassistant, Ella Mentree,",
+    "ua": "Із допомогою безстрашної юної\nпомічниці Елли Ментрі"
+  },
+  "set_exp_pzd04": {
+    "en": "you work to uncover the truth with\r\nthe help of people you meet inside.",
+    "ua": "ви шукаєте правду разом із людьми,\nяких зустрічаєте всередині."
+  },
+  "set_exp_pzd05": {
+    "en": "You'll face many a foe as you try\r\nto make your way to the top floor!",
+    "ua": "На шляху до верхнього поверху\nвам трапиться чимало ворогів!"
+  },
+  "set_exp_fsh01": {
+    "en": "In StreetPass Fishing,",
+    "ua": "У Риболовлі StreetPass"
+  },
+  "set_exp_fsh02": {
+    "en": "you'll become an angler and visit\r\nthe StreetPass Isles,",
+    "ua": "ви рибалитимете\nна островах StreetPass,"
+  },
+  "set_exp_fsh03": {
+    "en": "chill out in the natural beauty of\r\na number of different islands,",
+    "ua": "відпочиватимете серед природи\nрізних островів,"
+  },
+  "set_exp_fsh04": {
+    "en": "catch various fish with the help of\r\npeople you meet via StreetPass,",
+    "ua": "ловитимете різну рибу з людьми,\nзустрінутими через StreetPass,"
+  },
+  "set_exp_fsh05": {
+    "en": "and try to catch legendary monsters\r\non each island!",
+    "ua": "і полюватимете на легендарних\nчудовиськ кожного острова!"
+  },
+  "set_exp_zmb01": {
+    "en": "In StreetPass Zombies,",
+    "ua": "У Зомбі StreetPass"
+  },
+  "set_exp_zmb02": {
+    "en": "you have to save the world from\r\nan outbreak of zombies!",
+    "ua": "ви маєте врятувати світ\nвід навали зомбі!"
+  },
+  "set_exp_zmb03": {
+    "en": "You're guided along the way\r\nby the charming Dr Scarlet.",
+    "ua": "Вашою провідницею буде\nчарівна д-р Скарлет."
+  },
+  "set_exp_zmb04": {
+    "en": "You also get help from hobby-loving\r\nMii characters you meet via StreetPass!",
+    "ua": "Допомагатимуть і Mii з різними\nхобі, зустрінуті через StreetPass!"
+  },
+  "set_exp_zmb05": {
+    "en": "You get zombie-bashing weapons\r\nfrom them to fight with!",
+    "ua": "Від них ви отримуєте зброю,\nщоб лупцювати зомбі!"
+  },
+  "set_exp_trd01": {
+    "en": "In StreetPass Trader,",
+    "ua": "У Біржі StreetPass"
+  },
+  "set_exp_trd02": {
+    "en": "you'll become a pro trader, buying\r\nand selling in-game shares.",
+    "ua": "ви станете трейдером, що купує\nй продає ігрові акції."
+  },
+  "set_exp_trd03": {
+    "en": "Can you amass a fortune big enough to\r\nunseat share superstar William O'Naire?",
+    "ua": "Чи зберете ви статок, щоб скинути\nбіржову зірку Вільяма О'Нейра?"
+  },
+  "set_exp_trd04": {
+    "en": "You'll need the analytical powers of\r\nthe people you meet via StreetPass!",
+    "ua": "Знадобиться аналітичний хист\nлюдей, зустрінутих через StreetPass!"
+  },
+  "set_exp_trd05": {
+    "en": "You can buy, sell and earn in this\r\nfast-paced stock market game!",
+    "ua": "Купуйте, продавайте й заробляйте\nв цій динамічній біржовій грі!"
+  },
+  "set_exp_car01": {
+    "en": "StreetPass Slot Racer is all about the\r\nexciting world of model car racing.",
+    "ua": "Слот-перегони StreetPass — це\nзахопливий світ перегонів машинок."
+  },
+  "set_exp_car02": {
+    "en": "Take control of your very own slot\r\ncar and race your way to the top!",
+    "ua": "Керуйте власною слот-машинкою\nй пробивайтеся на вершину!"
+  },
+  "set_exp_car03": {
+    "en": "There are many ways to customise your\r\ncar and tune it to your personal taste.",
+    "ua": "Машинку можна всіляко прикрашати\nй налаштовувати на свій смак."
+  },
+  "set_exp_car04": {
+    "en": "Battle the people you encounter via\r\nStreetPass in fast and furious races,",
+    "ua": "Змагайтеся в шалених перегонах\nіз суперниками зі StreetPass"
+  },
+  "set_exp_car05": {
+    "en": "and shoot for the coveted\r\ntitle of World Champion!",
+    "ua": "і боріться за омріяний\nтитул чемпіона світу!"
+  },
+  "set_exp_chf01": {
+    "en": "In StreetPass Chef,",
+    "ua": "У Ресторані StreetPass"
+  },
+  "set_exp_chf02": {
+    "en": "You'll return to the world of\r\nStreetPass Quest...as a chef!",
+    "ua": "ви повернетеся у світ\n«Порятунку Mii»… як кухар!"
+  },
+  "set_exp_chf03": {
+    "en": "Get ingredients from the heroes\r\nyou encounter via StreetPass...",
+    "ua": "Отримуйте інгредієнти від героїв,\nзустрінутих через StreetPass…"
+  },
+  "set_exp_chf04": {
+    "en": "...and use them to create\r\nfabulous dishes to order!",
+    "ua": "…і готуйте з них\nчудові страви на замовлення!"
+  },
+  "set_exp_chf05": {
+    "en": "This game is all about cooking dishes\r\nand serving them to hungry heroes!",
+    "ua": "Тут ви готуєте страви\nй годуєте голодних героїв!"
+  },
+  "set_exp_nja01": {
+    "en": "StreetPass Ninja is a game where you'll\r\nuse the secret ninja technique of...",
+    "ua": "Ніндзя StreetPass — гра, де ви\nзастосуєте таємну техніку ніндзя…"
+  },
+  "set_exp_nja02": {
+    "en": "...being fired from a cannon!\r\nMakes perfect sense, right?",
+    "ua": "…політ із гармати!\nЦілком логічно, правда ж?"
+  },
+  "set_exp_nja03": {
+    "en": "Enter the cannon armed with nothing\r\nbut your own courage,",
+    "ua": "Залазьте в гармату, озброєні\nлише власною відвагою,"
+  },
+  "set_exp_nja04": {
+    "en": "pick up armaments from the people\r\nyou encounter via StreetPass,",
+    "ua": "отримуйте спорядження від людей,\nзустрінутих через StreetPass,"
+  },
+  "set_exp_nja05": {
+    "en": "and defeat the evil demon army\r\nthat threatens the land!",
+    "ua": "і розбийте зле військо демонів,\nщо загрожує краю!"
+  },
+  "set_exp_exp01": {
+    "en": "In StreetPass Explorers, grab your\r\nrucksack and set off for adventure!",
+    "ua": "В Експедиції StreetPass хапайте\nрюкзак і вирушайте в пригоди!"
+  },
+  "set_exp_exp02": {
+    "en": "As an intrepid archaeologist, you'll\r\nchase after ancient mysteries,",
+    "ua": "Як безстрашний археолог,\nви розгадуватимете давні таємниці,"
+  },
+  "set_exp_exp03": {
+    "en": "using the real-life step counts of\r\nyour trusty StreetPass companions.",
+    "ua": "спираючись на справжні кроки\nвірних супутників зі StreetPass."
+  },
+  "set_exp_exp04": {
+    "en": "Journey deep into the heart of the\r\njungle and the depths of ruined cities,",
+    "ua": "Вирушайте в серце джунглів\nі глибини зруйнованих міст,"
+  },
+  "set_exp_exp05": {
+    "en": "in a quest to discover the\r\ntruth behind the myths!",
+    "ua": "щоб дізнатися правду,\nяка ховається за міфами!"
+  },
+  "set_message06": {
+    "en": "If you buy each game separately,\r\nhere's what each one costs...",
+    "ua": "Якщо купувати ігри окремо,\nось скільки коштує кожна…"
+  },
+  "set_message09": {
+    "en": "The four games would normally\r\nadd up to [PRICE_TOTAL]...",
+    "ua": "Разом чотири гри коштували б\n[PRICE_TOTAL]…"
+  },
+  "set1st_message10": {
+    "en": "Pack 1 costs\r\n[PRICE_DISCOUNT].",
+    "ua": "Набір 1 коштує\n[PRICE_DISCOUNT]."
+  },
+  "set2nd_message10": {
+    "en": "Pack 2 costs\r\n[PRICE_DISCOUNT].",
+    "ua": "Набір 2 коштує\n[PRICE_DISCOUNT]."
+  },
+  "setThx_message10": {
+    "en": "The Thank You Pack costs\r\n[PRICE_DISCOUNT].",
+    "ua": "Подячний набір коштує\n[PRICE_DISCOUNT]."
+  },
+  "set3rd_message10": {
+    "en": "Pack 3 costs\r\n[PRICE_DISCOUNT].",
+    "ua": "Набір 3 коштує\n[PRICE_DISCOUNT]."
+  },
+  "set_message11": {
+    "en": "That's [PRICE_OFF_RATE]% off!",
+    "ua": "Це знижка [PRICE_OFF_RATE]%!"
+  },
+  "do_set1st_buy": {
+    "en": "Do you want to place\r\nan order for Pack 1\r\nfor [PRICE_DISCOUNT]?",
+    "ua": "Замовити набір 1\nза [PRICE_DISCOUNT]?"
+  },
+  "do_set2nd_buy": {
+    "en": "Do you want to place\r\nan order for Pack 2\r\nfor [PRICE_DISCOUNT]?",
+    "ua": "Замовити набір 2\nза [PRICE_DISCOUNT]?"
+  },
+  "do_setThx_buy": {
+    "en": "Do you want to place an order\r\nfor the Thank You Pack\r\nfor [PRICE_DISCOUNT]?",
+    "ua": "Замовити Подячний набір\nза [PRICE_DISCOUNT]?"
+  },
+  "do_set3rd_buy": {
+    "en": "Do you want to place\r\nan order for Pack 3\r\nfor [PRICE_DISCOUNT]?",
+    "ua": "Замовити набір 3\nза [PRICE_DISCOUNT]?"
+  },
+  "set_buy_yes": {
+    "en": "Yes please!",
+    "ua": "Так, звісно!"
+  },
+  "set_buy_no": {
+    "en": "No thanks.",
+    "ua": "Ні, дякую."
+  },
+  "not_buy_set1": {
+    "en": "All right then.",
+    "ua": "Гаразд."
+  },
+  "not_buy_set2": {
+    "en": "Let's proceed with your\r\npurchase of that one game,\r\n[GAME_TITLE].",
+    "ua": "Тоді оформимо покупку\nоднієї гри —\n[GAME_TITLE]."
+  },
+  "prepared_free_010": {
+    "en": "You can get either StreetPass\r\nSlot Racer or StreetPass Trader...",
+    "ua": "Можна отримати або Слот-перегони\nStreetPass, або Біржу StreetPass…"
+  },
+  "prepared_free_020": {
+    "en": "...for free!\r\nAll you have to do is pick one!",
+    "ua": "…на свій вибір!\nТреба лише вибрати одну!"
+  },
+  "prepared": {
+    "en": "To find out more about this\r\ngame, select the Shop option\r\nin the main plaza area.",
+    "ua": "Щоб дізнатися про цю гру\nбільше, виберіть «Магазин»\nна головній площі."
+  },
+  "price_set1st_text": {
+    "en": "Pack 1",
+    "ua": "Набір 1"
+  },
+  "price_set2nd_text": {
+    "en": "Pack 2",
+    "ua": "Набір 2"
+  },
+  "price_set3rd_text": {
+    "en": "Pack 3",
+    "ua": "Набір 3"
+  },
+  "price_setThx_text": {
+    "en": "Thank You Pack",
+    "ua": "Подячний набір"
+  },
+  "price_set_off_rate": {
+    "en": "[PRICE_OFF_RATE]%\r\noff!",
+    "ua": "Знижка\n[PRICE_OFF_RATE]%!"
+  },
+  "balance": {
+    "en": "Balance: [BALANCE]",
+    "ua": "Баланс: [BALANCE]"
+  },
+  "book_connectable_caption": {
+    "en": "Bunny Bulletin",
+    "ua": "Кролячий вісник"
+  },
+  "book_connectable_notice": {
+    "en": "A game that you couldn't\r\nget before is now available!\r\nAre you still interested?",
+    "ua": "Гра, яку раніше не вдавалося\nотримати, тепер доступна!\nВам досі цікаво?"
+  },
+  "book_connectable_menu_ok": {
+    "en": "Yes",
+    "ua": "Так"
+  },
+  "book_connectable_menu_ng": {
+    "en": "No",
+    "ua": "Ні"
+  },
+  "redownload_00": {
+    "en": "[MII_NAME]!\r\nI've been waiting for you.",
+    "ua": "[MII_NAME]!\nЯ на вас чекав."
+  },
+  "redownload_01": {
+    "en": "So, I can see that\r\nyou've already bought\r\n[GAME_TITLE]...",
+    "ua": "Бачу, ви вже\nкупили гру\n[GAME_TITLE]…"
+  },
+  "redownload_02": {
+    "en": "However, it can't be\r\nfound on the SD Card.",
+    "ua": "Але на карті SD\nїї немає."
+  },
+  "redownload_03": {
+    "en": "So I'm afraid you can't\r\nuse it right now.",
+    "ua": "Тож, на жаль, зараз\nграти в неї не можна."
+  },
+  "redownload_04": {
+    "en": "Would you like to\r\ndownload it again?\r\n(For free, of course!)",
+    "ua": "Завантажити\nїї знову?\n(Безкоштовно, звісно!)"
+  },
+  "reminder_welcom_01": {
+    "en": "Sorry to keep you waiting,\r\n[MII_NAME]!",
+    "ua": "Вибачте, що змусив чекати,\n[MII_NAME]!"
+  },
+  "reminder_welcom_02": {
+    "en": "You were interested in\r\n[GAME_TITLE], right?",
+    "ua": "Вас же цікавила гра\n[GAME_TITLE]?"
+  },
+  "buy_glad_01": {
+    "en": "Thank you very much!",
+    "ua": "Щиро дякую!"
+  },
+  "buy_glad_02": {
+    "en": "Please wait. Just for a bit!",
+    "ua": "Зачекайте. Зовсім трошки!"
+  },
+  "buy_glad_03": {
+    "en": "Oh!",
+    "ua": "О!"
+  },
+  "buy_glad_04": {
+    "en": "Thank you very much!",
+    "ua": "Щиро дякую!"
+  },
+  "buy_glad_05": {
+    "en": "I hope you'll be very happy\r\nwith your purchase.",
+    "ua": "Сподіваюся, покупка\nвам дуже сподобається."
+  },
+  "buy_glad_06": {
+    "en": "I'll get you set up\r\nright away!",
+    "ua": "Зараз усе\nналаштую!"
+  },
+  "downloaded_01": {
+    "en": "...And that's it!\r\nDownload complete!",
+    "ua": "…От і все!\nЗавантажено!"
+  },
+  "downloaded_02": {
+    "en": "Thank you very much\r\nfor your patience.",
+    "ua": "Щиро дякую\nза терпіння."
+  },
+  "downloaded_end": {
+    "en": "I hope you enjoy your\r\npurchase!",
+    "ua": "Сподіваюся, покупка\nвам сподобається!"
+  },
+  "price_owned": {
+    "en": "(Already bought.)",
+    "ua": "(Уже куплено.)"
+  },
+  "not_own": {
+    "en": "Hmm... I can't seem\r\nto find your purchase\r\nhistory.",
+    "ua": "Гм… Не можу знайти\nісторію ваших\nпокупок."
+  },
+  "no_streetpass_01": {
+    "en": "Oh! Hello,\r\n[MII_NAME].",
+    "ua": "О! Вітаю,\n[MII_NAME]."
+  },
+  "no_streetpass_02": {
+    "en": "Please pardon the delay,\r\nbut we're not quite ready\r\nfor you yet.",
+    "ua": "Вибачте за затримку,\nале ми ще не зовсім\nготові вас прийняти."
+  },
+  "no_streetpass_03": {
+    "en": "Could you please meet\r\nsome people via StreetPass\r\nand then come back?",
+    "ua": "Зустріньтеся, будь ласка,\nз кимось через StreetPass\nі повертайтеся."
+  },
+  "buynow_set_02": {
+    "en": "There's also a combo\r\npack available for\r\nthe games.",
+    "ua": "Для цих ігор є\nще й комплект."
+  },
+  "buynow_set1st_03": {
+    "en": "You can buy all four games\r\nin Pack 1 together.",
+    "ua": "Усі чотири гри набору 1\nможна купити разом."
+  },
+  "buynow_set2nd_03": {
+    "en": "You can buy both games in\r\nPack 2 together.",
+    "ua": "Обидві гри набору 2\nможна купити разом."
+  },
+  "buynow_setThx_02": {
+    "en": "Since you've already bought\r\na game from Pack 1...",
+    "ua": "Оскільки ви вже купили\nгру з набору 1…"
+  },
+  "buynow_setThx_03": {
+    "en": "...you're eligible for our\r\nspecial Thank You Pack.",
+    "ua": "…вам доступний особливий\nПодячний набір."
+  },
+  "buynow_setThx_04a": {
+    "en": "Buying all the games in Pack 2 together\r\njust became even better value!",
+    "ua": "Купити всі ігри набору 2 разом\nтепер ще вигідніше!"
+  },
+  "buynow_setThx_04b": {
+    "en": "You can buy both games\r\nin Pack 2 together.",
+    "ua": "Обидві гри набору 2\nможна купити разом."
+  },
+  "buynow_set3rd_03": {
+    "en": "You can buy all four games\r\nin Pack 3 together.",
+    "ua": "Усі чотири гри набору 3\nможна купити разом."
+  },
+  "buynow_set_Q": {
+    "en": "Do you want to learn more\r\nabout the combo pack?",
+    "ua": "Розповісти більше\nпро комплект?"
+  },
+  "buynow_set_Q_yes": {
+    "en": "Yes please!",
+    "ua": "Так, звісно!"
+  },
+  "buynow_set_Q_yes_00": {
+    "en": "Great!",
+    "ua": "Чудово!"
+  },
+  "buynow_set_Q_no": {
+    "en": "No thanks.",
+    "ua": "Ні, дякую."
+  },
+  "buynow_set_Q_no_00": {
+    "en": "No worries. Let's proceed\r\nwith your purchase of the\r\none game you wanted.",
+    "ua": "Нічого страшного. Оформимо\nпокупку тієї однієї гри,\nяку ви хотіли."
+  },
+  "buynow_set1st_error_00": {
+    "en": "There seems to be a problem\r\nwith processing your order\r\nfor Pack 1 right now.",
+    "ua": "Схоже, зараз не вдається\nобробити ваше замовлення\nнабору 1."
+  },
+  "buynow_set2nd_error_00": {
+    "en": "There seems to be a problem\r\nwith processing your order\r\nfor Pack 2 right now.",
+    "ua": "Схоже, зараз не вдається\nобробити ваше замовлення\nнабору 2."
+  },
+  "buynow_setThx_error_00": {
+    "en": "There seems to be a problem\r\nwith processing your order\r\nfor the Thank You Pack right now.",
+    "ua": "Схоже, зараз не вдається\nобробити ваше замовлення\nПодячного набору."
+  },
+  "buynow_set3rd_error_00": {
+    "en": "There seems to be a problem\r\nwith processing your order\r\nfor Pack 3 right now.",
+    "ua": "Схоже, зараз не вдається\nобробити ваше замовлення\nнабору 3."
+  },
+  "buynow_set_error_01": {
+    "en": "I'm sorry, but please\r\ncome back another time.",
+    "ua": "Перепрошую, але\nзайдіть іншим разом."
+  },
+  "update_game_00": {
+    "en": "[MII_NAME]!\r\nI've been waiting for you.",
+    "ua": "[MII_NAME]!\nЯ на вас чекав."
+  },
+  "update_game_01": {
+    "en": "I've got updates for the\r\nsoftware you purchased.",
+    "ua": "Для придбаних вами програм\nє оновлення."
+  },
+  "update_game_02": {
+    "en": "Would you like to download\r\nall the update data?",
+    "ua": "Завантажити всі\nдані оновлення?"
+  },
+  "cannot_update_game_00": {
+    "en": "The download failed...",
+    "ua": "Не вдалося завантажити…"
+  },
+  "not_update_game_00": {
+    "en": "Until the download is complete...",
+    "ua": "Доки не завантажиться…"
+  },
+  "not_update_game_01": {
+    "en": "...you will not be able to\r\nplay purchased games.",
+    "ua": "…придбані ігри\nбудуть недоступні."
+  },
+  "not_update_game_02": {
+    "en": "I'm really sorry, but could you\r\nplease come back later?",
+    "ua": "Мені дуже прикро, але\nзайдіть, будь ласка, пізніше."
+  },
+  "notice_update_game_00": {
+    "en": "Oh...",
+    "ua": "О…"
+  },
+  "notice_update_game_01": {
+    "en": "Looks like some\r\nother plaza content\r\nneeds updating too.",
+    "ua": "Схоже, інший\nвміст площі теж\nтреба оновити."
+  },
+  "notice_update_game_02": {
+    "en": "Please wait a while\r\nwhile we get everything\r\nfixed up for you.",
+    "ua": "Зачекайте трохи,\nпоки ми все\nналаштуємо."
+  },
+  "wait": {
+    "en": "Please wait a moment.",
+    "ua": "Зачекайте хвилинку."
+  }
+}

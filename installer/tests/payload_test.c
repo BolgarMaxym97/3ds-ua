@@ -48,6 +48,67 @@ static char *with_nsdeps(const char *text, size_t len, const char *line, size_t 
     return out;
 }
 
+static AltState fixed_probe(uint64_t title, uint16_t remaster, void *ctx)
+{
+    (void)title;
+    (void)remaster;
+    return *(AltState *)ctx;
+}
+
+/* Files of one set in luma/titles/<tid>/, and whether one of them ends with `name`. */
+static size_t in_title(const FileSet *set, const char *tid, const char *name, bool *has)
+{
+    char prefix[64];
+    snprintf(prefix, sizeof(prefix), "luma/titles/%s/", tid);
+    size_t n = 0;
+    *has = false;
+    for (size_t i = 0; i < set->count; i++)
+        if (!strncmp(set->entries[i].path, prefix, strlen(prefix))) {
+            n++;
+            *has |= !strcmp(set->entries[i].path + strlen(prefix), name);
+        }
+    return n;
+}
+
+/* StreetPass Mii Plaza: the base build without its update on the card, the update's build
+ * in the same folder with it, nothing for an update of another build. */
+static void check_alts(const char *text, size_t len)
+{
+    static const char *names[] = {"absent", "present", "another build"};
+    for (AltState state = ALT_ABSENT; state <= ALT_OTHER_BUILD; state++) {
+        Manifest m;
+        if (manifest_parse(&m, text, len))
+            return;
+        manifest_apply_alts(&m, fixed_probe, &state);
+        bool ok = m.alt_count == 1 && m.alts[0].folder == 0x0004000E00022800ull &&
+                  m.alts[0].target == 0x0004001000022800ull && m.alts[0].remaster == 14;
+        char msg[256];
+        for (int s = 0; s < SLOT_COUNT; s++)
+            for (int d = 0; d < MODEL_COUNT; d++)
+                for (int g = 0; g < GLYPHS_COUNT; g++) {
+                    const FileSet *set = &m.sets[s][d][g];
+                    bool exheader, update_text, locale;
+                    size_t pseudo = in_title(set, "0004000E00022800", "locale.txt", &locale);
+                    size_t plaza = in_title(set, "0004001000022800", "exheader.bin", &exheader);
+                    in_title(set, "0004001000022800",
+                             s == SLOT_RU ? "romfs/message/EU_Russian/message/park/park.bmsm"
+                                          : "romfs/message/EU_English/message/park/park.bmsm",
+                             &update_text);
+                    ok &= pseudo == 0;
+                    if (state == ALT_ABSENT)
+                        ok &= plaza > 0 && exheader && !update_text;
+                    else if (state == ALT_PRESENT)
+                        ok &= plaza > 0 && !exheader && update_text;
+                    else
+                        ok &= plaza == 0;
+                }
+        snprintf(msg, sizeof(msg), "Mii Plaza update %s: the right build in luma/titles/0004001000022800, none under the update's id",
+                 names[state]);
+        expect(ok, msg);
+        manifest_free(&m);
+    }
+}
+
 int main(int argc, char **argv)
 {
     if (argc != 2) {
@@ -120,6 +181,8 @@ int main(int argc, char **argv)
                          set->count, locales);
                 expect(set->count > 200 && locales >= 30, msg);
             }
+
+    check_alts((const char *)text, len);
 
     clock_t start = clock();
     size_t restored = 0, bytes = 0;

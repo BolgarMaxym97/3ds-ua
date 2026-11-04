@@ -38,6 +38,7 @@ typedef struct {
 } IpsRange;
 
 #define NS_DEPS_MAX 16
+#define ALTS_MAX 4
 
 typedef struct {
     Model model;
@@ -45,6 +46,18 @@ typedef struct {
     uint64_t title;     /* the title whose build the folder's patches are for */
     uint16_t remaster;
 } Need;
+
+/* A folder built for an update, not for the title on the NAND: luma/titles/<folder> holds it
+ * in the payload, and it is installed as luma/titles/<target> - in place of that folder's
+ * own files - when the update is on the card in that build (see manifest_apply_alts). */
+typedef struct {
+    uint64_t folder;    /* the update's title id, the folder's name in the payload */
+    uint64_t target;    /* the title whose folder Luma reads for it */
+    uint16_t remaster;
+} Alt;
+
+typedef enum { ALT_ABSENT, ALT_PRESENT, ALT_OTHER_BUILD } AltState;
+typedef AltState (*AltProbe)(uint64_t title, uint16_t remaster, void *ctx);
 
 typedef struct {
     char version[16];
@@ -60,11 +73,19 @@ typedef struct {
     char upturn[32];
     FileSet sets[SLOT_COUNT][MODEL_COUNT][GLYPHS_COUNT];
     FileSet font_set;   /* the NS patch files */
+    Alt alts[ALTS_MAX];
+    size_t alt_count;
 } Manifest;
 
 /* Parse `text` (not necessarily NUL-terminated). Returns 0, or the 1-based failing line. */
 int manifest_parse(Manifest *m, const char *text, size_t len);
 void manifest_free(Manifest *m);
+
+/* Settle every `alt` against the card, in every set: the update is installed in the build the
+ * folder was made for - its files move to the target folder and the target's own files go;
+ * not installed - its files go; installed in another build - both go, the title is left
+ * as Nintendo shipped it. Call once, right after manifest_parse. */
+void manifest_apply_alts(Manifest *m, AltProbe probe, void *ctx);
 
 /* Blob index for a sha, or -1. */
 int manifest_find_blob(const Manifest *m, const uint8_t sha[32]);

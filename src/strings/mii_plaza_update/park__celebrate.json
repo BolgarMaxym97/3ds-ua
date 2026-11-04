@@ -1,0 +1,818 @@
+{
+  "dlg_congratulation_park_common_01_u": {
+    "en": "Congratulations!",
+    "ua": "Вітаємо!"
+  },
+  "dlg_congratulation_park_common_01_sdw": {
+    "en": "Congratulations!",
+    "ua": "Вітаємо!"
+  },
+  "dig_congratulation_list_01_u": {
+    "en": "Met a Mii for the first time!",
+    "ua": "Перша зустріч із Mii!"
+  },
+  "dig_congratulation_list_01_u_p": {
+    "en": "Met a Mii for the first time!",
+    "ua": "Перша зустріч із Mii!"
+  },
+  "dig_congratulation_list_02_u": {
+    "en": "Ten Mii encounters!",
+    "ua": "Десять зустрічей з Mii!"
+  },
+  "dig_congratulation_list_02_u_p": {
+    "en": "Ten Mii encounters!",
+    "ua": "Десять зустрічей з Mii!"
+  },
+  "dig_congratulation_list_03_u": {
+    "en": "50 Mii encounters!",
+    "ua": "50 зустрічей з Mii!"
+  },
+  "dig_congratulation_list_03_u_p": {
+    "en": "50 Mii encounters!",
+    "ua": "50 зустрічей з Mii!"
+  },
+  "dig_congratulation_list_04_u": {
+    "en": "100 Mii encounters!",
+    "ua": "100 зустрічей з Mii!"
+  },
+  "dig_congratulation_list_04_u_p": {
+    "en": "100 Mii encounters!",
+    "ua": "100 зустрічей з Mii!"
+  },
+  "dig_congratulation_list_05_u": {
+    "en": "500 Mii encounters!",
+    "ua": "500 зустрічей з Mii!"
+  },
+  "dig_congratulation_list_05_u_p": {
+    "en": "500 Mii encounters!",
+    "ua": "500 зустрічей з Mii!"
+  },
+  "dig_congratulation_list_06_u": {
+    "en": "777 Mii encounters!",
+    "ua": "777 зустрічей з Mii!"
+  },
+  "dig_congratulation_list_06_u_p": {
+    "en": "777 Mii encounters!",
+    "ua": "777 зустрічей з Mii!"
+  },
+  "dig_congratulation_list_07_u": {
+    "en": "1,000 Mii encounters!",
+    "ua": "1000 зустрічей з Mii!"
+  },
+  "dig_congratulation_list_07_u_p": {
+    "en": "1,000 Mii encounters!",
+    "ua": "1000 зустрічей з Mii!"
+  },
+  "dig_congratulation_list_08_u": {
+    "en": "2,000 Mii encounters!",
+    "ua": "2000 зустрічей з Mii!"
+  },
+  "dig_congratulation_list_08_u_p": {
+    "en": "2,000 Mii encounters!",
+    "ua": "2000 зустрічей з Mii!"
+  },
+  "dig_congratulation_list_09_u": {
+    "en": "3,000 Mii encounters!",
+    "ua": "3000 зустрічей з Mii!"
+  },
+  "dig_congratulation_list_09_u_p": {
+    "en": "3,000 Mii encounters!",
+    "ua": "3000 зустрічей з Mii!"
+  },
+  "dig_congratulation_list_10_u": {
+    "en": "4,000 Mii encounters!",
+    "ua": "4000 зустрічей з Mii!"
+  },
+  "dig_congratulation_list_10_u_p": {
+    "en": "4,000 Mii encounters!",
+    "ua": "4000 зустрічей з Mii!"
+  },
+  "dig_congratulation_list_11_u": {
+    "en": "5,000 Mii encounters!",
+    "ua": "5000 зустрічей з Mii!"
+  },
+  "dig_congratulation_list_11_u_p": {
+    "en": "5,000 Mii encounters!",
+    "ua": "5000 зустрічей з Mii!"
+  },
+  "dig_congratulation_list_12_u": {
+    "en": "6,000 Mii encounters!",
+    "ua": "6000 зустрічей з Mii!"
+  },
+  "dig_congratulation_list_12_u_p": {
+    "en": "6,000 Mii encounters!",
+    "ua": "6000 зустрічей з Mii!"
+  },
+  "dig_congratulation_list_13_u": {
+    "en": "7,000 Mii encounters!",
+    "ua": "7000 зустрічей з Mii!"
+  },
+  "dig_congratulation_list_13_u_p": {
+    "en": "7,000 Mii encounters!",
+    "ua": "7000 зустрічей з Mii!"
+  },
+  "dig_congratulation_list_14_u": {
+    "en": "8,000 Mii encounters!",
+    "ua": "8000 зустрічей з Mii!"
+  },
+  "dig_congratulation_list_14_u_p": {
+    "en": "8,000 Mii encounters!",
+    "ua": "8000 зустрічей з Mii!"
+  },
+  "dig_congratulation_list_15_u": {
+    "en": "9,000 Mii encounters!",
+    "ua": "9000 зустрічей з Mii!"
+  },
+  "dig_congratulation_list_15_u_p": {
+    "en": "9,000 Mii encounters!",
+    "ua": "9000 зустрічей з Mii!"
+  },
+  "dig_congratulation_list_16_u": {
+    "en": "9,999 Mii encounters!",
+    "ua": "9999 зустрічей з Mii!"
+  },
+  "dig_congratulation_list_16_u_p": {
+    "en": "9,999 Mii encounters!",
+    "ua": "9999 зустрічей з Mii!"
+  },
+  "dig_congratulation_list_17_u": {
+    "en": "Ten Mii characters\r\nin your plaza!",
+    "ua": "На площі десять Mii!"
+  },
+  "dig_congratulation_list_17_u_p": {
+    "en": "Ten Mii characters\r\nin your plaza!",
+    "ua": "На площі десять Mii!"
+  },
+  "dig_congratulation_list_18_u": {
+    "en": "50 Mii characters\r\nin your plaza!",
+    "ua": "На площі 50 Mii!"
+  },
+  "dig_congratulation_list_18_u_p": {
+    "en": "50 Mii characters\r\nin your plaza!",
+    "ua": "На площі 50 Mii!"
+  },
+  "dig_congratulation_list_19_u": {
+    "en": "100 Mii characters\r\nin your plaza!",
+    "ua": "На площі 100 Mii!"
+  },
+  "dig_congratulation_list_19_u_p": {
+    "en": "100 Mii characters\r\nin your plaza!",
+    "ua": "На площі 100 Mii!"
+  },
+  "dig_congratulation_list_20_u": {
+    "en": "500 Mii characters\r\nin your plaza!",
+    "ua": "На площі 500 Mii!"
+  },
+  "dig_congratulation_list_20_u_p": {
+    "en": "500 Mii characters\r\nin your plaza!",
+    "ua": "На площі 500 Mii!"
+  },
+  "dig_congratulation_list_21_u": {
+    "en": "1,000 Mii characters\r\nin your plaza!",
+    "ua": "На площі 1000 Mii!"
+  },
+  "dig_congratulation_list_21_u_p": {
+    "en": "1,000 Mii characters\r\nin your plaza!",
+    "ua": "На площі 1000 Mii!"
+  },
+  "dig_congratulation_list_22_u": {
+    "en": "2,000 Mii characters\r\nin your plaza!",
+    "ua": "На площі 2000 Mii!"
+  },
+  "dig_congratulation_list_22_u_p": {
+    "en": "2,000 Mii characters\r\nin your plaza!",
+    "ua": "На площі 2000 Mii!"
+  },
+  "dig_congratulation_list_23_u": {
+    "en": "3,000 Mii characters\r\nin your plaza!",
+    "ua": "На площі 3000 Mii!"
+  },
+  "dig_congratulation_list_23_u_p": {
+    "en": "3,000 Mii characters\r\nin your plaza!",
+    "ua": "На площі 3000 Mii!"
+  },
+  "dig_congratulation_list_24_u": {
+    "en": "Met a special Mii!",
+    "ua": "Зустріч з особливим Mii!"
+  },
+  "dig_congratulation_list_24_u_p": {
+    "en": "Met a special Mii!",
+    "ua": "Зустріч з особливим Mii!"
+  },
+  "dig_congratulation_list_25_u": {
+    "en": "Met a special Mii ten times!",
+    "ua": "Десять зустрічей\nз особливим Mii!"
+  },
+  "dig_congratulation_list_25_u_p": {
+    "en": "Met a special Mii ten times!",
+    "ua": "Десять зустрічей\nз особливим Mii!"
+  },
+  "dig_congratulation_list_26_u": {
+    "en": "Encountered five male Mii\r\ncharacters in a row!",
+    "ua": "П'ять зустрічей поспіль\nз Mii-чоловіками!"
+  },
+  "dig_congratulation_list_26_u_p": {
+    "en": "Encountered five male Mii\r\ncharacters in a row!",
+    "ua": "П'ять зустрічей поспіль\nз Mii-чоловіками!"
+  },
+  "dig_congratulation_list_27_u": {
+    "en": "Encountered five female Mii\r\ncharacters in a row!",
+    "ua": "П'ять зустрічей поспіль\nз Mii-жінками!"
+  },
+  "dig_congratulation_list_27_u_p": {
+    "en": "Encountered five female Mii\r\ncharacters in a row!",
+    "ua": "П'ять зустрічей поспіль\nз Mii-жінками!"
+  },
+  "dig_congratulation_list_28_u": {
+    "en": "100 Mii encounters\r\nin a single day!",
+    "ua": "100 зустрічей з Mii\nза один день!"
+  },
+  "dig_congratulation_list_28_u_p": {
+    "en": "100 Mii encounters\r\nin a single day!",
+    "ua": "100 зустрічей з Mii\nза один день!"
+  },
+  "dig_congratulation_list_29_u": {
+    "en": "Encountered Mii characters\r\nfive days in a row!",
+    "ua": "Зустрічі з Mii\nп'ять днів поспіль!"
+  },
+  "dig_congratulation_list_29_u_p": {
+    "en": "Encountered Mii characters\r\nfive days in a row!",
+    "ua": "Зустрічі з Mii\nп'ять днів поспіль!"
+  },
+  "dig_congratulation_list_30_u": {
+    "en": "Encountered Mii characters\r\nten days in a row!",
+    "ua": "Зустрічі з Mii\nдесять днів поспіль!"
+  },
+  "dig_congratulation_list_30_u_p": {
+    "en": "Encountered Mii characters\r\nten days in a row!",
+    "ua": "Зустрічі з Mii\nдесять днів поспіль!"
+  },
+  "dig_congratulation_list_31_u": {
+    "en": "First Mii encounter in a while!",
+    "ua": "Перша зустріч з Mii після\nперерви!"
+  },
+  "dig_congratulation_list_31_u_p": {
+    "en": "First Mii encounter in a while!",
+    "ua": "Перша зустріч з Mii після\nперерви!"
+  },
+  "dig_congratulation_list_32_u": {
+    "en": "First Mii encounter in ages!",
+    "ua": "Перша зустріч з Mii за купу\nчасу!"
+  },
+  "dig_congratulation_list_32_u_p": {
+    "en": "First Mii encounter in ages!",
+    "ua": "Перша зустріч з Mii за купу\nчасу!"
+  },
+  "dig_congratulation_list_33_u": {
+    "en": "Met a Mii on its birthday!",
+    "ua": "Зустріч з Mii у його день\nнародження!"
+  },
+  "dig_congratulation_list_33_u_p": {
+    "en": "Met a Mii on its birthday!",
+    "ua": "Зустріч з Mii у його день\nнародження!"
+  },
+  "dig_congratulation_list_34_u": {
+    "en": "Met Mii characters from a total\r\nof two different regions!",
+    "ua": "Зустрілися з Mii\nіз двох різних регіонів!"
+  },
+  "dig_congratulation_list_34_u_p": {
+    "en": "Met Mii characters from a total\r\nof two different regions!",
+    "ua": "Зустрілися з Mii\nіз двох різних регіонів!"
+  },
+  "dig_congratulation_list_35_u": {
+    "en": "Met Mii characters from a total\r\nof three different regions!",
+    "ua": "Зустрілися з Mii\nіз трьох різних регіонів!"
+  },
+  "dig_congratulation_list_35_u_p": {
+    "en": "Met Mii characters from a total\r\nof three different regions!",
+    "ua": "Зустрілися з Mii\nіз трьох різних регіонів!"
+  },
+  "dig_congratulation_list_36_u": {
+    "en": "Met Mii characters from a total\r\nof five different regions!",
+    "ua": "Зустрілися з Mii\nіз п'яти різних регіонів!"
+  },
+  "dig_congratulation_list_36_u_p": {
+    "en": "Met Mii characters from a total\r\nof five different regions!",
+    "ua": "Зустрілися з Mii\nіз п'яти різних регіонів!"
+  },
+  "dig_congratulation_list_37_u": {
+    "en": "Met Mii characters from a total\r\nof ten different regions!",
+    "ua": "Зустрілися з Mii\nіз десяти різних регіонів!"
+  },
+  "dig_congratulation_list_37_u_p": {
+    "en": "Met Mii characters from a total\r\nof ten different regions!",
+    "ua": "Зустрілися з Mii\nіз десяти різних регіонів!"
+  },
+  "dig_congratulation_list_38_u": {
+    "en": "Met Mii characters from a total\r\nof 20 different regions!",
+    "ua": "Зустрілися з Mii\nіз 20 різних регіонів!"
+  },
+  "dig_congratulation_list_38_u_p": {
+    "en": "Met Mii characters from a total\r\nof 20 different regions!",
+    "ua": "Зустрілися з Mii\nіз 20 різних регіонів!"
+  },
+  "dig_congratulation_list_39_u": {
+    "en": "Met Mii characters from a total\r\nof 30 different regions!",
+    "ua": "Зустрілися з Mii\nіз 30 різних регіонів!"
+  },
+  "dig_congratulation_list_39_u_p": {
+    "en": "Met Mii characters from a total\r\nof 30 different regions!",
+    "ua": "Зустрілися з Mii\nіз 30 різних регіонів!"
+  },
+  "dig_congratulation_list_40_u": {
+    "en": "Met Mii characters from a total\r\nof 50 different regions!",
+    "ua": "Зустрілися з Mii\nіз 50 різних регіонів!"
+  },
+  "dig_congratulation_list_40_u_p": {
+    "en": "Met Mii characters from a total\r\nof 50 different regions!",
+    "ua": "Зустрілися з Mii\nіз 50 різних регіонів!"
+  },
+  "dig_congratulation_list_41_u": {
+    "en": "Met Mii characters from every\r\nregion in your country!",
+    "ua": "Зустрілися з Mii з усіх\nрегіонів своєї країни!"
+  },
+  "dig_congratulation_list_41_u_p": {
+    "en": "Met Mii characters from every\r\nregion in your country!",
+    "ua": "Зустрілися з Mii з усіх\nрегіонів своєї країни!"
+  },
+  "dig_congratulation_list_42_u": {
+    "en": "Met Mii characters from a total\r\nof two different countries!",
+    "ua": "Зустрілися з Mii\nіз двох різних країн!"
+  },
+  "dig_congratulation_list_42_u_p": {
+    "en": "Met Mii characters from a total\r\nof two different countries!",
+    "ua": "Зустрілися з Mii\nіз двох різних країн!"
+  },
+  "dig_congratulation_list_43_u": {
+    "en": "Met Mii characters from a total\r\nof three different countries!",
+    "ua": "Зустрілися з Mii\nіз трьох різних країн!"
+  },
+  "dig_congratulation_list_43_u_p": {
+    "en": "Met Mii characters from a total\r\nof three different countries!",
+    "ua": "Зустрілися з Mii\nіз трьох різних країн!"
+  },
+  "dig_congratulation_list_44_u": {
+    "en": "Met Mii characters from a total\r\nof five different countries!",
+    "ua": "Зустрілися з Mii\nіз п'яти різних країн!"
+  },
+  "dig_congratulation_list_44_u_p": {
+    "en": "Met Mii characters from a total\r\nof five different countries!",
+    "ua": "Зустрілися з Mii\nіз п'яти різних країн!"
+  },
+  "dig_congratulation_list_45_u": {
+    "en": "Met Mii characters from a total\r\nof ten different countries!",
+    "ua": "Зустрілися з Mii\nіз десяти різних країн!"
+  },
+  "dig_congratulation_list_45_u_p": {
+    "en": "Met Mii characters from a total\r\nof ten different countries!",
+    "ua": "Зустрілися з Mii\nіз десяти різних країн!"
+  },
+  "dig_congratulation_list_46_u": {
+    "en": "Met three Mii characters in a row\r\nall using the same software!",
+    "ua": "Три Mii поспіль грали\nв ту саму програму!"
+  },
+  "dig_congratulation_list_46_u_p": {
+    "en": "Met three Mii characters in a row\r\nall using the same software!",
+    "ua": "Три Mii поспіль грали\nв ту саму програму!"
+  },
+  "dig_congratulation_list_47_u": {
+    "en": "Received your first\r\npersonal greeting!",
+    "ua": "Отримали перше\nособисте вітання!"
+  },
+  "dig_congratulation_list_47_u_p": {
+    "en": "Received your first\r\npersonal greeting!",
+    "ua": "Отримали перше\nособисте вітання!"
+  },
+  "dig_congratulation_list_49_u": {
+    "en": "Got three identical Puzzle Swap\r\npieces in a row with  Play Coins!",
+    "ua": "Три однакові частинки пазлу\nпоспіль за монетки !"
+  },
+  "dig_congratulation_list_49_u_p": {
+    "en": "Got three identical Puzzle Swap\r\npieces in a row with  Play Coins!",
+    "ua": "Три однакові частинки пазлу\nпоспіль за монетки !"
+  },
+  "dig_congratulation_list_50_u": {
+    "en": "Made it through a room in\r\nStreetPass Quest!",
+    "ua": "Пройшли кімнату\nв «Порятунку Mii»!"
+  },
+  "dig_congratulation_list_50_u_p": {
+    "en": "Made it through a room in\r\nStreetPass Quest!",
+    "ua": "Пройшли кімнату\nв «Порятунку Mii»!"
+  },
+  "dig_congratulation_list_51_u": {
+    "en": "Missed with a sword attack three\r\ntimes in a row in StreetPass Quest!",
+    "ua": "Тричі поспіль схибили мечем\nу «Порятунку Mii»!"
+  },
+  "dig_congratulation_list_51_u_p": {
+    "en": "Missed with a sword attack three\r\ntimes in a row in StreetPass Quest!",
+    "ua": "Тричі поспіль схибили мечем\nу «Порятунку Mii»!"
+  },
+  "dig_congratulation_list_52_u": {
+    "en": "Dealt over 50 damage in a single\r\nturn in StreetPass Quest!",
+    "ua": "Понад 50 шкоди за хід\nу «Порятунку Mii»!"
+  },
+  "dig_congratulation_list_52_u_p": {
+    "en": "Dealt over 50 damage in a single\r\nturn in StreetPass Quest!",
+    "ua": "Понад 50 шкоди за хід\nу «Порятунку Mii»!"
+  },
+  "dig_congratulation_list_53_u": {
+    "en": "Broke through a yellow shield\r\nin StreetPass Quest!",
+    "ua": "Пробили жовтий щит\nу «Порятунку Mii»!"
+  },
+  "dig_congratulation_list_53_u_p": {
+    "en": "Broke through a yellow shield\r\nin StreetPass Quest!",
+    "ua": "Пробили жовтий щит\nу «Порятунку Mii»!"
+  },
+  "dig_congratulation_list_54_u": {
+    "en": "Broke through a light-blue\r\nshield in StreetPass Quest!",
+    "ua": "Пробили блакитний щит\nу «Порятунку Mii»!"
+  },
+  "dig_congratulation_list_54_u_p": {
+    "en": "Broke through a light-blue\r\nshield in StreetPass Quest!",
+    "ua": "Пробили блакитний щит\nу «Порятунку Mii»!"
+  },
+  "dig_congratulation_list_55_u": {
+    "en": "Lit up the dark room\r\nin StreetPass Quest!",
+    "ua": "Освітили темну кімнату\nв «Порятунку Mii»!"
+  },
+  "dig_congratulation_list_55_u_p": {
+    "en": "Lit up the dark room\r\nin StreetPass Quest!",
+    "ua": "Освітили темну кімнату\nв «Порятунку Mii»!"
+  },
+  "dig_congratulation_list_56_u": {
+    "en": "Cleared StreetPass Quest!",
+    "ua": "«Порятунок Mii»\nпройдено!"
+  },
+  "dig_congratulation_list_56_u_p": {
+    "en": "Cleared StreetPass Quest!",
+    "ua": "«Порятунок Mii»\nпройдено!"
+  },
+  "dig_congratulation_list_57_u": {
+    "en": "Cleared StreetPass Quest\r\ntwice!",
+    "ua": "Пройшли «Порятунок Mii»\nдвічі!"
+  },
+  "dig_congratulation_list_57_u_p": {
+    "en": "Cleared StreetPass Quest\r\ntwice!",
+    "ua": "Пройшли «Порятунок Mii»\nдвічі!"
+  },
+  "dig_congratulation_list_58_u": {
+    "en": "Cleared StreetPass Quest\r\nfive times!",
+    "ua": "Пройшли «Порятунок Mii»\nп'ять разів!"
+  },
+  "dig_congratulation_list_58_u_p": {
+    "en": "Cleared StreetPass Quest\r\nfive times!",
+    "ua": "Пройшли «Порятунок Mii»\nп'ять разів!"
+  },
+  "dig_congratulation_list_59_u": {
+    "en": "Cleared StreetPass Quest\r\nten times!",
+    "ua": "Пройшли «Порятунок Mii»\nдесять разів!"
+  },
+  "dig_congratulation_list_59_u_p": {
+    "en": "Cleared StreetPass Quest\r\nten times!",
+    "ua": "Пройшли «Порятунок Mii»\nдесять разів!"
+  },
+  "dig_congratulation_list_60_u": {
+    "en": "Darkened the dazzling room\r\nin StreetPass Quest II!",
+    "ua": "Притемнили сліпучу кімнату\nв «Порятунку Mii II»!"
+  },
+  "dig_congratulation_list_60_u_p": {
+    "en": "Darkened the dazzling room\r\nin StreetPass Quest II!",
+    "ua": "Притемнили сліпучу кімнату\nв «Порятунку Mii II»!"
+  },
+  "dig_congratulation_list_61_u": {
+    "en": "Cooled the fiery room\r\nin StreetPass Quest II!",
+    "ua": "Остудили вогняну кімнату\nв «Порятунку Mii II»!"
+  },
+  "dig_congratulation_list_61_u_p": {
+    "en": "Cooled the fiery room\r\nin StreetPass Quest II!",
+    "ua": "Остудили вогняну кімнату\nв «Порятунку Mii II»!"
+  },
+  "dig_congratulation_list_62_u": {
+    "en": "Warmed up the icy room\r\nin StreetPass Quest II!",
+    "ua": "Зігріли крижану кімнату\nв «Порятунку Mii II»!"
+  },
+  "dig_congratulation_list_62_u_p": {
+    "en": "Warmed up the icy room\r\nin StreetPass Quest II!",
+    "ua": "Зігріли крижану кімнату\nв «Порятунку Mii II»!"
+  },
+  "dig_congratulation_list_63_u": {
+    "en": "Neutralised the poison room\r\nin StreetPass Quest II!",
+    "ua": "Знешкодили отруйну кімнату\nв «Порятунку Mii II»!"
+  },
+  "dig_congratulation_list_63_u_p": {
+    "en": "Neutralised the poison room\r\nin StreetPass Quest II!",
+    "ua": "Знешкодили отруйну кімнату\nв «Порятунку Mii II»!"
+  },
+  "dig_congratulation_list_64_u": {
+    "en": "Broke through a shadowlight\r\nshield in StreetPass Quest II!",
+    "ua": "Пробили щит світлотіні\nв «Порятунку Mii II»!"
+  },
+  "dig_congratulation_list_64_u_p": {
+    "en": "Broke through a shadowlight\r\nshield in StreetPass Quest II!",
+    "ua": "Пробили щит світлотіні\nв «Порятунку Mii II»!"
+  },
+  "dig_congratulation_list_66_u": {
+    "en": "Cleared StreetPass Quest II!",
+    "ua": "«Порятунок Mii II»\nпройдено!"
+  },
+  "dig_congratulation_list_66_u_p": {
+    "en": "Cleared StreetPass Quest II!",
+    "ua": "«Порятунок Mii II»\nпройдено!"
+  },
+  "dig_congratulation_list_67_u": {
+    "en": "Cleared StreetPass Quest II's\r\nsecret quest!",
+    "ua": "Пройшли таємний квест\n«Порятунку Mii II»!"
+  },
+  "dig_congratulation_list_67_u_p": {
+    "en": "Cleared StreetPass Quest II's\r\nsecret quest!",
+    "ua": "Пройшли таємний квест\n«Порятунку Mii II»!"
+  },
+  "dig_congratulation_list_68_u": {
+    "en": "Cleared StreetPass Quest II's\r\nsecret quest twice!",
+    "ua": "Пройшли таємний квест\n«Порятунку Mii II» двічі!"
+  },
+  "dig_congratulation_list_68_u_p": {
+    "en": "Cleared StreetPass Quest II's\r\nsecret quest twice!",
+    "ua": "Пройшли таємний квест\n«Порятунку Mii II» двічі!"
+  },
+  "dig_congratulation_list_69_u": {
+    "en": "Cleared StreetPass Quest II's\r\nsecret quest five times!",
+    "ua": "Пройшли таємний квест\n«Порятунку Mii II» 5 разів!"
+  },
+  "dig_congratulation_list_69_u_p": {
+    "en": "Cleared StreetPass Quest II's\r\nsecret quest five times!",
+    "ua": "Пройшли таємний квест\n«Порятунку Mii II» 5 разів!"
+  },
+  "dig_congratulation_list_70_u": {
+    "en": "Cleared StreetPass Quest II's\r\nsecret quest ten times!",
+    "ua": "Пройшли таємний квест\n«Порятунку Mii II» 10 разів!"
+  },
+  "dig_congratulation_list_70_u_p": {
+    "en": "Cleared StreetPass Quest II's\r\nsecret quest ten times!",
+    "ua": "Пройшли таємний квест\n«Порятунку Mii II» 10 разів!"
+  },
+  "dig_congratulation_list_71_u": {
+    "en": "Met the same Mii ten times!",
+    "ua": "Десять зустрічей з тим самим Mii!"
+  },
+  "dig_congratulation_list_71_u_p": {
+    "en": "Met the same Mii ten times!",
+    "ua": "Десять зустрічей з тим самим Mii!"
+  },
+  "dig_congratulation_list_72_u": {
+    "en": "Got your first \"fantastic\" rating!",
+    "ua": "Перша оцінка «чудово»!"
+  },
+  "dig_congratulation_list_72_u_p": {
+    "en": "Got your first \"fantastic\" rating!",
+    "ua": "Перша оцінка «чудово»!"
+  },
+  "dig_congratulation_list_73_u": {
+    "en": "Got ten \"fantastic\" ratings!",
+    "ua": "Десять оцінок «чудово»!"
+  },
+  "dig_congratulation_list_73_u_p": {
+    "en": "Got ten \"fantastic\" ratings!",
+    "ua": "Десять оцінок «чудово»!"
+  },
+  "dig_congratulation_list_74_u": {
+    "en": "Got 50 \"fantastic\" ratings!",
+    "ua": "50 оцінок «чудово»!"
+  },
+  "dig_congratulation_list_74_u_p": {
+    "en": "Got 50 \"fantastic\" ratings!",
+    "ua": "50 оцінок «чудово»!"
+  },
+  "dig_congratulation_list_75_u": {
+    "en": "Got 100 \"fantastic\" ratings!",
+    "ua": "100 оцінок «чудово»!"
+  },
+  "dig_congratulation_list_75_u_p": {
+    "en": "Got 100 \"fantastic\" ratings!",
+    "ua": "100 оцінок «чудово»!"
+  },
+  "dig_congratulation_list_77_u": {
+    "en": "Completed your first\r\nPuzzle Swap panel!",
+    "ua": "Склали першу\nпанель пазлу!"
+  },
+  "dig_congratulation_list_77_u_p": {
+    "en": "Completed your first\r\nPuzzle Swap panel!",
+    "ua": "Склали першу\nпанель пазлу!"
+  },
+  "dig_congratulation_list_78_u": {
+    "en": "Completed five\r\nPuzzle Swap panels!",
+    "ua": "Склали п'ять\nпанелей пазлу!"
+  },
+  "dig_congratulation_list_78_u_p": {
+    "en": "Completed five\r\nPuzzle Swap panels!",
+    "ua": "Склали п'ять\nпанелей пазлу!"
+  },
+  "dig_congratulation_list_79_u": {
+    "en": "Completed seven\r\nPuzzle Swap panels!",
+    "ua": "Склали сім\nпанелей пазлу!"
+  },
+  "dig_congratulation_list_79_u_p": {
+    "en": "Completed seven\r\nPuzzle Swap panels!",
+    "ua": "Склали сім\nпанелей пазлу!"
+  },
+  "dig_congratulation_list_80_u": {
+    "en": "Completed ten\r\nPuzzle Swap panels!",
+    "ua": "Склали десять\nпанелей пазлу!"
+  },
+  "dig_congratulation_list_80_u_p": {
+    "en": "Completed ten\r\nPuzzle Swap panels!",
+    "ua": "Склали десять\nпанелей пазлу!"
+  },
+  "dig_congratulation_list_81_u": {
+    "en": "Cleared StreetPass Quest with\r\nunder 30 heroes!",
+    "ua": "Пройшли «Порятунок Mii»\nменше ніж з 30 героями!"
+  },
+  "dig_congratulation_list_81_u_p": {
+    "en": "Cleared StreetPass Quest with\r\nunder 30 heroes!",
+    "ua": "Пройшли «Порятунок Mii»\nменше ніж з 30 героями!"
+  },
+  "congratulation_list_achievement": {
+    "en": "Accomplished",
+    "ua": "Досягнуто"
+  },
+  "dlg_congratulation_op_00_u": {
+    "en": "Welcome to your list\r\nof accomplishments!",
+    "ua": "Вітаємо у списку\nваших досягнень!"
+  },
+  "dlg_congratulation_op_01_u": {
+    "en": "Here, you can see all of your\r\naccomplishments to date.",
+    "ua": "Тут видно всі ваші\nдосягнення на сьогодні."
+  },
+  "dlg_congratulation_op_02_u": {
+    "en": "Why not check back every\r\nnow and then, and see\r\nhow far you've come?",
+    "ua": "Заглядайте сюди час\nвід часу й дивіться,\nскільки вже досягли!"
+  },
+  "dlg_congratulation_op_03_u": {
+    "en": "You might find some clues about\r\naccomplishments you haven't\r\ndiscovered yet, too.",
+    "ua": "Тут можуть бути й підказки\nщодо досягнень, яких\nви ще не відкрили."
+  },
+  "dlg_congratulation_op_04_u": {
+    "en": "It'll be a challenge to reach\r\nthem all, though!",
+    "ua": "Щоправда, здобути всі\nбуде непросто!"
+  },
+  "dig_congratulation_list_3rd_01_u": {
+    "en": "10,000 Mii encounters!",
+    "ua": "10 000 зустрічей з Mii!"
+  },
+  "dig_congratulation_list_3rd_01_u_p": {
+    "en": "10,000 Mii encounters!",
+    "ua": "10 000 зустрічей з Mii!"
+  },
+  "dig_congratulation_list_3rd_02_u": {
+    "en": "20,000 Mii encounters!",
+    "ua": "20 000 зустрічей з Mii!"
+  },
+  "dig_congratulation_list_3rd_02_u_p": {
+    "en": "20,000 Mii encounters!",
+    "ua": "20 000 зустрічей з Mii!"
+  },
+  "dig_congratulation_list_3rd_03_u": {
+    "en": "30,000 Mii encounters!",
+    "ua": "30 000 зустрічей з Mii!"
+  },
+  "dig_congratulation_list_3rd_03_u_p": {
+    "en": "30,000 Mii encounters!",
+    "ua": "30 000 зустрічей з Mii!"
+  },
+  "dig_congratulation_list_3rd_04_u": {
+    "en": "40,000 Mii encounters!",
+    "ua": "40 000 зустрічей з Mii!"
+  },
+  "dig_congratulation_list_3rd_04_u_p": {
+    "en": "40,000 Mii encounters!",
+    "ua": "40 000 зустрічей з Mii!"
+  },
+  "dig_congratulation_list_3rd_05_u": {
+    "en": "50,000 Mii encounters!",
+    "ua": "50 000 зустрічей з Mii!"
+  },
+  "dig_congratulation_list_3rd_05_u_p": {
+    "en": "50,000 Mii encounters!",
+    "ua": "50 000 зустрічей з Mii!"
+  },
+  "dig_congratulation_list_3rd_06_u": {
+    "en": "60,000 Mii encounters!",
+    "ua": "60 000 зустрічей з Mii!"
+  },
+  "dig_congratulation_list_3rd_06_u_p": {
+    "en": "60,000 Mii encounters!",
+    "ua": "60 000 зустрічей з Mii!"
+  },
+  "dig_congratulation_list_3rd_07_u": {
+    "en": "70,000 Mii encounters!",
+    "ua": "70 000 зустрічей з Mii!"
+  },
+  "dig_congratulation_list_3rd_07_u_p": {
+    "en": "70,000 Mii encounters!",
+    "ua": "70 000 зустрічей з Mii!"
+  },
+  "dig_congratulation_list_3rd_08_u": {
+    "en": "80,000 Mii encounters!",
+    "ua": "80 000 зустрічей з Mii!"
+  },
+  "dig_congratulation_list_3rd_08_u_p": {
+    "en": "80,000 Mii encounters!",
+    "ua": "80 000 зустрічей з Mii!"
+  },
+  "dig_congratulation_list_3rd_09_u": {
+    "en": "90,000 Mii encounters!",
+    "ua": "90 000 зустрічей з Mii!"
+  },
+  "dig_congratulation_list_3rd_09_u_p": {
+    "en": "90,000 Mii encounters!",
+    "ua": "90 000 зустрічей з Mii!"
+  },
+  "dig_congratulation_list_3rd_10_u": {
+    "en": "100,000 Mii encounters!",
+    "ua": "100 000 зустрічей з Mii!"
+  },
+  "dig_congratulation_list_3rd_10_u_p": {
+    "en": "100,000 Mii encounters!",
+    "ua": "100 000 зустрічей з Mii!"
+  },
+  "dig_congratulation_list_3rd_11_u": {
+    "en": "200,000 Mii encounters!",
+    "ua": "200 000 зустрічей з Mii!"
+  },
+  "dig_congratulation_list_3rd_11_u_p": {
+    "en": "200,000 Mii encounters!",
+    "ua": "200 000 зустрічей з Mii!"
+  },
+  "dig_congratulation_list_3rd_12_u": {
+    "en": "300,000 Mii encounters!",
+    "ua": "300 000 зустрічей з Mii!"
+  },
+  "dig_congratulation_list_3rd_12_u_p": {
+    "en": "300,000 Mii encounters!",
+    "ua": "300 000 зустрічей з Mii!"
+  },
+  "dig_congratulation_list_3rd_13_u": {
+    "en": "400,000 Mii encounters!",
+    "ua": "400 000 зустрічей з Mii!"
+  },
+  "dig_congratulation_list_3rd_13_u_p": {
+    "en": "400,000 Mii encounters!",
+    "ua": "400 000 зустрічей з Mii!"
+  },
+  "dig_congratulation_list_3rd_14_u": {
+    "en": "500,000 Mii encounters!",
+    "ua": "500 000 зустрічей з Mii!"
+  },
+  "dig_congratulation_list_3rd_14_u_p": {
+    "en": "500,000 Mii encounters!",
+    "ua": "500 000 зустрічей з Mii!"
+  },
+  "dig_congratulation_list_3rd_15_u": {
+    "en": "600,000 Mii encounters!",
+    "ua": "600 000 зустрічей з Mii!"
+  },
+  "dig_congratulation_list_3rd_15_u_p": {
+    "en": "600,000 Mii encounters!",
+    "ua": "600 000 зустрічей з Mii!"
+  },
+  "dig_congratulation_list_3rd_16_u": {
+    "en": "700,000 Mii encounters!",
+    "ua": "700 000 зустрічей з Mii!"
+  },
+  "dig_congratulation_list_3rd_16_u_p": {
+    "en": "700,000 Mii encounters!",
+    "ua": "700 000 зустрічей з Mii!"
+  },
+  "dig_congratulation_list_3rd_17_u": {
+    "en": "800,000 Mii encounters!",
+    "ua": "800 000 зустрічей з Mii!"
+  },
+  "dig_congratulation_list_3rd_17_u_p": {
+    "en": "800,000 Mii encounters!",
+    "ua": "800 000 зустрічей з Mii!"
+  },
+  "dig_congratulation_list_3rd_18_u": {
+    "en": "900,000 Mii encounters!",
+    "ua": "900 000 зустрічей з Mii!"
+  },
+  "dig_congratulation_list_3rd_18_u_p": {
+    "en": "900,000 Mii encounters!",
+    "ua": "900 000 зустрічей з Mii!"
+  },
+  "dig_congratulation_list_3rd_19_u": {
+    "en": "999,999 Mii encounters!",
+    "ua": "999 999 зустрічей з Mii!"
+  },
+  "dig_congratulation_list_3rd_19_u_p": {
+    "en": "999,999 Mii encounters!",
+    "ua": "999 999 зустрічей з Mii!"
+  },
+  "dig_congratulation_list_3rd_20_u": {
+    "en": "Got 1,000 \"fantastic\" ratings!",
+    "ua": "1000 оцінок «чудово»!"
+  },
+  "dig_congratulation_list_3rd_20_u_p": {
+    "en": "Got 1,000 \"fantastic\" ratings!",
+    "ua": "1000 оцінок «чудово»!"
+  }
+}
