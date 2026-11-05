@@ -1,0 +1,50 @@
+{
+  "_000": {
+    "en": "",
+    "ua": ""
+  },
+  "B_close": {
+    "en": "Back",
+    "ua": "Назад"
+  },
+  "B_confirm": {
+    "en": "Confirm",
+    "ua": "Підтвердити"
+  },
+  "M_title": {
+    "en": "Select a recording.",
+    "ua": "Виберіть запис."
+  },
+  "I_000": {
+    "en": "",
+    "ua": ""
+  },
+  "_100": {
+    "en": "",
+    "ua": ""
+  },
+  "SD_Invalid_00": {
+    "en": "The device inserted\nin the SD Card slot\ncannot be used.",
+    "ua": "Пристрій у слоті\nдля карт SD\nвикористати не можна."
+  },
+  "SD_Invalid_B00": {
+    "en": "OK",
+    "ua": ""
+  },
+  "SD_Remove": {
+    "en": "The SD Card has\nbeen removed.\n\nPlease turn off the power\nbefore removing SD Cards.",
+    "ua": "Карту SD вийнято.\n\nПеред тим як виймати\nкарту SD, вимикайте\nживлення."
+  },
+  "SD_Remove_B00": {
+    "en": "OK",
+    "ua": ""
+  },
+  "SD_NotFound_00": {
+    "en": "There is no SD Card\ninserted.",
+    "ua": "Карту SD\nне вставлено."
+  },
+  "SD_NotFound_B00": {
+    "en": "OK",
+    "ua": ""
+  }
+}

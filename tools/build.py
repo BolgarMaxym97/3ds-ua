@@ -287,6 +287,27 @@ TITLES = {
         "container": "msg/{lang}.LZ",
         "hook_patch": True,
     },
+    # The photo and voice-recording pickers a game opens to attach a picture or a sound
+    # (Nintendo Letter Box is one caller). The Camera applet's shape exactly: Thumb code, the
+    # flat msg/ table, a whole RomFS image off the SD card - see tools/luma_hook.py.
+    # res/HudNOTES.bcfnt is no clock line: it draws counters (digits, 秒, 枚, с), so no
+    # `hud_font`.
+    "photo_picker": {
+        "tids": ["000400300000D302"],  # pnote_ap, EUR
+        "source_tid": "000400300000D302",
+        "lang": LANG_SLOTS,
+        "ref_lang": "EU_English",
+        "container": "msg/{lang}.LZ",
+        "hook_patch": True,
+    },
+    "voice_picker": {
+        "tids": ["000400300000D402"],  # snote_ap, EUR
+        "source_tid": "000400300000D402",
+        "lang": LANG_SLOTS,
+        "ref_lang": "EU_English",
+        "container": "msg/{lang}.LZ",
+        "hook_patch": True,
+    },
     "sound": {
         "tids": ["0004001000022500"],
         "source_tid": "0004001000022500",
@@ -1360,7 +1381,7 @@ def build_hud_font(cfg: dict, romfs: Path) -> tuple[dict[str, bytes], list[str]]
 
 
 def build_text_fonts(cfg: dict, romfs: Path, table: dict[str, str]) -> tuple[dict[str, bytes], list[str]]:
-    """The title's own caption fonts with і ї є ґ, for a build whose text keeps them.
+    """The title's own caption fonts with і ї є ґ ʼ, for a build whose text keeps them.
 
     The default build turns those letters into homoglyphs every font here already has, so
     it leaves the fonts alone. A `real` build prints the letters themselves, and without
@@ -1381,7 +1402,7 @@ def build_text_fonts(cfg: dict, romfs: Path, table: dict[str, str]) -> tuple[dic
         cache = ROOT / "work" / "cache" / "text_fonts" / f"{key}{Path(rel).suffix}"
         if cache.exists():
             blobs[rel] = cache.read_bytes()
-            stats.append(f"{rel}: text font + і ї є ґ (cached)")
+            stats.append(f"{rel}: text font + і ї є ґ ʼ (cached)")
             continue
         blob, added = text_font_glyphs.patch_file(data, compressed)
         if not added:
