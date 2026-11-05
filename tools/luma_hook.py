@@ -829,7 +829,7 @@ HOOK_PATCHES: dict[str, dict] = {
     # Camera applet (the camera the HOME Menu opens on L+R), EUR, title version 2.
     # Verified working on hardware.
     #
-    # The only Thumb-compiled title in this table, which decides everything about it:
+    # The first Thumb-compiled title in this table, which decides everything about it:
     #
     #   - Luma's five signatures are ARM instruction words, so findLayeredFsSymbols() finds
     #     nothing here and never will. Planting ARM stubs would not help either - Luma hooks
@@ -861,6 +861,42 @@ HOOK_PATCHES: dict[str, dict] = {
         "stub_off": 0xCB9F0,        # .text page padding, 0xCB9F0..0xCC000
         "stub_room": 1552,
         "sites": [{"patch_at": 0x02044}, {"patch_at": 0x0CF04}],
+    },
+    # Photo picker (pnote_ap), EUR, title version 4 - the "Choose a photo." overlay a game
+    # opens to attach a picture (Nintendo Letter Box is one caller). Built from the same SDK
+    # as the Camera applet above and found the same way: Thumb code, the svcSendSyncRequest
+    # leaf at 0x5BAFC, the header helper at 0x5BB04, and FSUSER_OpenFileDirectly (0x0803,
+    # 8 normal / 4 translate words) at 0x5BD24.
+    #
+    # The wrapper has three callers. 0x1FA0 and 0xB70C pass ARCHIVE_ROMFS (`movs r3, #3`)
+    # with the same frame as the Camera applet; 0x16D90 loads its archive id from a literal
+    # and is left alone. The two FSUSER_OpenArchive callers pass 8 and 7, the third is the
+    # generic wrapper - none of them the RomFS.
+    "000400300000D302": {
+        "title": "Photo picker (pnote_ap) EUR",
+        "title_version": 4,
+        "code_sha256": "a00e1a986be9a04ebfdca5451d909a15c868ee0cb6176abef3123df7253f8787",
+        "kind": "romfs_from_sd",
+        "encoding": "thumb",
+        "image_name": "pnote_romfs.bin",
+        "stub_off": 0x98E7C,        # .text page padding, 0x98E7C..0x99000
+        "stub_room": 388,
+        "sites": [{"patch_at": 0x01F9C}, {"patch_at": 0x0B708}],
+    },
+    # Voice-recording picker (snote_ap), EUR, title version 3 - "Choose a recording.", the
+    # sound counterpart of the photo picker above, and the same shape: svcSendSyncRequest at
+    # 0x3DA98, FSUSER_OpenFileDirectly at 0xADE4, called with ARCHIVE_ROMFS from 0x1EA4 and
+    # 0xACF0 only. OpenArchive gets 8, 7 and the generic wrapper, as above.
+    "000400300000D402": {
+        "title": "Voice-recording picker (snote_ap) EUR",
+        "title_version": 3,
+        "code_sha256": "78e65f6280ca3ae157aad6c1d70966923ae023be49edb2275ae79b1ec5b4cd35",
+        "kind": "romfs_from_sd",
+        "encoding": "thumb",
+        "image_name": "snote_romfs.bin",
+        "stub_off": 0x66BEC,        # .text page padding, 0x66BEC..0x67000
+        "stub_room": 1044,
+        "sites": [{"patch_at": 0x01EA0}, {"patch_at": 0x0ACEC}],
     },
     # Software Keyboard (swkbd), EUR, title version 4. Same shape as Download Play.
     #

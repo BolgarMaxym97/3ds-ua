@@ -47,6 +47,8 @@ A folder name is the Title ID (TID) of the system title it overrides. Luma reads
 | `000400300000F602` | 3DS Memo (`memolib`) | `code.ips` + `exheader.bin` + `memolib_romfs.bin` — no LayeredFS, whole RomFS image off the SD card |
 | `000400300000CD02` | Circle Pad Pro applet (`extrapad`) | `code.ips` + `exheader.bin` + `extrapad_romfs.bin` — no LayeredFS, whole RomFS image off the SD card |
 | `0004003000009902` | Camera applet (`L`+`R`) | `code.ips` + `camera_applet_romfs.bin` — no LayeredFS, whole RomFS image off the SD card; no `exheader.bin`, the title already has `DirectSdmc` |
+| `000400300000D302` | Photo picker (`pnote_ap`) | `code.ips` + `pnote_romfs.bin` — the Camera applet's shape: Thumb code, no LayeredFS, whole RomFS image off the SD card, `DirectSdmc` already there |
+| `000400300000D402` | Voice-recording picker (`snote_ap`) | `code.ips` + `snote_romfs.bin` — the same |
 | `0004003020009D02` | New 3DS Internet Browser (`SKATER`) | `romfs/` — LayeredFS; **in the `-new3ds` archive only**, and the same files also sit in the `0004003000009D02` folder |
 | `0004001020022300` | New 3DS Health & Safety Information (`ssafe`) | `code.ips` + `exheader.bin` + `ssafe_romfs.bin` — no LayeredFS, whole RomFS image off the SD card; **in the `-new3ds` archive only**, with `code.ips` and `exheader.bin` duplicated into the `0004001000022300` folder |
 
@@ -500,6 +502,7 @@ with makerom's stock logo.
 | Download Play | ✅ translated, by replacing its whole RomFS — needs title version 3 (see below) |
 | Software Keyboard | ✅ translated, by replacing its whole RomFS — needs title version 4 (see below) |
 | Camera applet (`L`+`R`) | ✅ translated, by replacing its whole RomFS — needs title version 2 (see below) |
+| Photo / voice-recording pickers (`pnote_ap`, `snote_ap`) | ✅ translated, by replacing the whole RomFS — need title versions 4 and 3 |
 
 The last two are in the release by a different route than LayeredFS — Luma cannot hook it
 into them. Its loader ends the patch with
@@ -662,6 +665,8 @@ updated the title:
 | **Nintendo Network ID Settings (`act`)** | **3** |
 | **Camera applet (`L`+`R`)** | **2** |
 | **3DS Memo (`memolib`)** | **3** |
+| **Photo picker (`pnote_ap`)** | **4** |
+| **Voice-recording picker (`snote_ap`)** | **3** |
 | **Circle Pad Pro applet (`extrapad`)** | **4** |
 | Mii Maker (`EDIT`) | 2 |
 | **Activity Log (`PLOG`)** | **2** |

@@ -11,6 +11,8 @@ Every one of these fonts is a European font too, so the shapes are already in it
     є Є        the cells of э Э, mirrored - є is a reversed э in every Cyrillic typeface
     ґ Ґ        the cells of г Г - no upturn: an outlined bitmap gives nothing to draw it
                from, and the default build prints these two as г Г anyway
+    ʼ          the cell of ’ - the build writes U+02BC between letters (п'ять), and a font
+               without it draws its fallback glyph there: "п@яти"
 
 Mirroring keeps the advance and moves the ink: the glyph's columns run from 0 to its
 width (see bcfnt.Sheets.cell_origin), so they are reversed in place and the left bearing
@@ -39,6 +41,7 @@ DONORS: dict[str, tuple[str, bool]] = {
     "Є": ("Э", True),
     "ґ": ("г", False),
     "Ґ": ("Г", False),
+    "ʼ": ("’", False),
 }
 
 
